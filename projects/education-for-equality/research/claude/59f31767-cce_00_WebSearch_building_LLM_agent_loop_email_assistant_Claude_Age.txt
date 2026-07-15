@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: building LLM agent loop email assistant Claude Agent SDK tool use while loop arc
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:04:44 UTC
+========================================================================
+
+Search query: building LLM agent loop email assistant Claude Agent SDK tool use while loop architecture
+
+----------------------------------------
+
+Web search results for query: "building LLM agent loop email assistant Claude Agent SDK tool use while loop architecture"
+
+Links: [{"title":"Agent SDK overview - Claude Code Docs","url":"https://code.claude.com/docs/en/agent-sdk/overview"},{"title":"Tutorial: Build a tool-using agent - Claude API Docs","url":"https://platform.claude.com/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent"},{"title":"Building agents with the Claude Agent SDK | Claude","url":"https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk"},{"title":"Claude Agent SDK: Agent Loops, Tool Calls, and Multi-Step Workflows | Augment Code","url":"https://www.augmentcode.com/guides/claude-agent-sdk-agent-loops-tool-calls"},{"title":"How to Create an AI Agent with the Claude Agent SDK","url":"https://shinzo.ai/blog/how-to-create-ai-agent-claude-sdk"},{"title":"How the agent loop works - Claude API Docs","url":"https://platform.claude.com/docs/en/agent-sdk/agent-loop"},{"title":"Tracing Claude Code’s LLM Traffic: Agentic loop, sub-agents, tool use, prompts | by George Sung | Medium","url":"https://medium.com/@georgesung/tracing-claude-codes-llm-traffic-agentic-loop-sub-agents-tool-use-prompts-7796941806f5"},{"title":"Claude Agent SDK Tutorial: Create Agents Using Claude Sonnet 4.5 | DataCamp","url":"https://www.datacamp.com/tutorial/how-to-use-claude-agent-sdk"},{"title":"How to Build an AI Agent from Scratch Using Claude API (With Full Code) - DEV Community","url":"https://dev.to/dextralabs/how-to-build-an-ai-agent-from-scratch-using-claude-api-with-full-code-4b40"},{"title":"The Anatomy of an Agent Loop | Steve Kinney","url":"https://stevekinney.com/writing/agent-loops"}]
+
+I've completed the web search on building LLM agent loops with the Claude Agent SDK. Here's a summary of the key findings:
+
+## Agent Loop Architecture
+
+The Agent SDK gives you Claude with built-in tool execution. With the Client SDK, you implement a tool loop. When you start an agent, the SDK runs the same execution loop that powers Claude Code: Claude evaluates your prompt, calls tools to take action, receives the results, and repeats until the task is complete.
+
+## Core Agent Loop Pattern
+
+Every agent framework converges on the same architecture: a while loop that calls an LLM, checks if the response contains tool calls, executes them if it does, and stops if it doesn't.
+
+The SDK runs the same execution loop that powers Claude Code: Claude evaluates your prompt, calls tools to take action, receives the results, and repeats until the task is complete.
+
+## Tool Use and While Loop Execution
+
+The fix is a while loop that keeps running tools and feeding results back until stop_reason is no longer "tool_use". Each iteration runs the requested tool, appends the result to history, and asks Claude to continue.
+
+## Email Assistant Example
+
+The example of how we might build an email agent in the Claude Agent SDK. An email agent might have a separate subagent judge the tone of its drafts, to see if they fit well with the user's previous messages.
+
+## SDK Advantages Over Manual Implementation
+
+With the Client SDK, you implement a tool loop. With the Agent SDK, Claude handles it autonomously. With the Agent SDK, Claude manages that loop internally. You provide a prompt and configuration, and the SDK streams messages as Claude reasons, calls tools, observes results, and decides what to do next.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

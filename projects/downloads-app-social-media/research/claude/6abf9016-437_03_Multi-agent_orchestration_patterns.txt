@@ -1,0 +1,56 @@
+========================================================================
+AGENT RESEARCH: Multi-agent orchestration patterns
+Session: 6abf9016-437c-4e72-adb6-8c48c164b163
+Time: 2026-04-20 02:01:44 UTC
+========================================================================
+
+You are a deep-research analyst writing for a desktop AI video editor project called "Ed.it" (Electron + Python + Claude Agent SDK, building a creator-facing agent that edits videos with Gemini + FFmpeg + DaVinci Resolve MCP). Sibling docs cover frameworks (01), agent loops (02), and tools/MCP (03). You are writing the *multi-agent and orchestration* doc.
+
+**Target output:** a ~2000-2500 word markdown document, saved to `/Users/naomiivie/Social Media/Ed.it/docs/04_multi_agent_orchestration.md`. Write the file yourself via the Write tool.
+
+**Cover, concretely:**
+
+1. **Single agent vs. multi-agent — the honest tradeoff.** The default should be a single agent with good tools. Multi-agent adds latency, cost, coordination bugs. When it genuinely helps: parallelism, fresh context per task, specialized system prompts, different model tiers per role.
+
+2. **Orchestrator-worker pattern.** One coordinator agent with low-level "worker" subagents it dispatches. Claude Agent SDK's Task tool. When the parent should wait vs. fire-and-forget. Memory/context scoping — subagents get fresh context by default, good for research, bad when they need prior state.
+
+3. **Handoff pattern (OpenAI Agents SDK).** Agent A transfers control to Agent B as a tool call. Full history transfers or gets filtered. Difference from orchestrator pattern: single active agent at a time vs. parent-child tree.
+
+4. **Pipeline / chain.** Deterministic DAG where each node is an LLM call. Not really "agentic" but often the right primitive. LangGraph's bread and butter. When to prefer pipelines over agents: when the steps are known and stable.
+
+5. **Swarm / debate / consensus.** N agents argue about the same problem, judge picks best. Research-grade mostly. Note where it works (hard reasoning benchmarks) and where it doesn't (time-sensitive user-facing apps).
+
+6. **Model tiering by role.** Haiku for salience-judging and tool parameter formatting, Sonnet for tool-using workers, Opus for plans and critiques. Cost-quality math on a real workload. Why using Opus everywhere is wasteful.
+
+7. **Shared state between agents.** Three options: (a) pass everything via tool-call arguments (clean, bounded), (b) shared filesystem/DB the agents read and write (messy but scales), (c) shared memory store with explicit read/write ops (middle ground). Recommend one for Ed.it.
+
+8. **Concrete multi-agent patterns for Ed.it.**
+   - **Variation generation:** parent spawns 3 planner subagents with different style directions ("safe", "stretch", "wild"), parent scores and picks. Maps to: 1x parent + 3x parallel Task subagents + 1x judge.
+   - **Analyze → plan → render:** linear pipeline, probably doesn't need to be multi-agent — a single agent with three tools is simpler.
+   - **Style critic loop:** generator produces, critic rejects with feedback, generator retries. Separate agents or same agent with roles? (Answer: same agent usually wins unless the critic prompt is long.)
+   - **Proactive file-watcher daemon:** separate process that watches folders and nudges the main agent with synthetic user messages. Not really multi-agent — more like event-driven.
+
+9. **Coordination anti-patterns.** Subagents hallucinating each other's results. Infinite delegation chains. Parent losing track of child state. The "telephone game" where context gets lost at each handoff. Concrete guards.
+
+10. **Debugging multi-agent systems.** Why it's 10x harder than single-agent. Why you need a unified trace view (all agents on one timeline). Tools: LangSmith, Braintrust, OTEL + Jaeger, Anthropic's trace viewer, Claude Agent SDK's session logs.
+
+11. **Recommendation for Ed.it v1.** Start as a single agent. Add subagents *only* for variation generation (that's the one place parallelism is a user-visible win). Don't build handoff/swarm. Revisit at v3 if complexity demands it.
+
+**Style:** opinionated and concrete. Name frameworks by name (Claude Agent SDK Task tool, OpenAI Agents SDK handoffs, LangGraph supervisor pattern, AutoGen GroupChat). Show at least two code snippets — one orchestrator, one handoff. If two approaches conflict, pick one. Target a reader who has built a single-agent prototype and is asking "should I go multi-agent now?"
+
+**Web access may be blocked in your sandbox.** Draw on training knowledge through January 2026 and say so at the end. Don't fabricate URLs.
+
+Write the file. Return a one-sentence confirmation when done.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ae04491ecd7c874b9 (internal ID - do not mention to user. Use SendMessage with to: 'ae04491ecd7c874b9' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/6abf9016-437c-4e72-adb6-8c48c164b163/tasks/ae04491ecd7c874b9.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

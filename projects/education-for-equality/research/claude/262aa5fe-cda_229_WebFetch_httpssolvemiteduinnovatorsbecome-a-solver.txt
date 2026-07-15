@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://solve.mit.edu/innovators/become-a-solver
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-21 19:16:52 UTC
+========================================================================
+
+URL: https://solve.mit.edu/innovators/become-a-solver
+Extraction prompt: Extract the complete advice for applicants: what does it take to be selected as a Solver team? What is the selection process? Who reviews applications? What stage do you need to be at (Concept vs. Pilot vs. Growth)? What's the timeline from application to selection? What kinds of teams typically win? Quote the official guidance directly.
+
+----------------------------------------
+
+# Selection Guidance for MIT Solve Applicants
+
+## What It Takes to Be Selected
+
+Solutions must demonstrate strong alignment with Solve's mission. The organization evaluates based on: "Alignment," "Potential for Impact," "Feasibility," "Innovative Approach," "People-First Design," and later-stage criteria including "Scalability," "Partnership Potential," and "Technical Feasibility."
+
+Teams should prioritize community-centered development. As the guidance states, solutions must show "the experience, relationships, data, and knowledge to develop and deliver a successful solution."
+
+## Solution Stage Requirements
+
+Applicants can submit at multiple development phases:
+
+- **Concept:** Ideas with prototypes under development (Indigenous Communities Fellowship only)
+- **Prototype:** Initial working versions with minimal user testing
+- **Pilot:** Launched in at least one community, still iterating
+- **Growth:** Established and available across communities
+- **Scale:** Operating in multiple countries, prepared for significant expansion
+
+## Selection Process & Timeline
+
+The evaluation occurs in stages: initial staff screening, expert reviewer scoring (top 50 advance), Challenge Leadership Group judging (15 finalists selected), then virtual pitches followed by final selection. Winners are notified in July.
+
+## Application Timeline
+
+Most applicants report "several hours" completing applications. Submissions open September through November annually.
+
+## Typical Winners
+
+Solve's portfolio shows 50% women-led teams, representation across 68 countries, with 41% at growth/scale stages and 33% at pilot stage.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

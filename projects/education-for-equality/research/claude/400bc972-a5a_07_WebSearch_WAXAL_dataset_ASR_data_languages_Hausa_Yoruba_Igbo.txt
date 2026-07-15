@@ -1,0 +1,43 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: WAXAL dataset ASR data languages Hausa Yoruba Igbo TTS Nigerian which languages 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:59:40 UTC
+========================================================================
+
+Search query: WAXAL dataset ASR data languages Hausa Yoruba Igbo TTS Nigerian which languages transcribed speech
+
+----------------------------------------
+
+Web search results for query: "WAXAL dataset ASR data languages Hausa Yoruba Igbo TTS Nigerian which languages transcribed speech"
+
+Links: [{"title":"Google launches speech dataset for African languages","url":"https://techcabal.com/2026/02/02/google-joins-push-to-localise-ai-for-african-languages-with-speech-database/"},{"title":"Google Research Africa Launches WAXAL, Open Dataset Covering 21 African Languages - TechAfrica News","url":"https://techafricanews.com/2026/02/02/google-research-africa-launches-waxal-open-dataset-covering-21-african-languages/"},{"title":"(PDF) WAXAL: A Large-Scale Multilingual African Language Speech Corpus","url":"https://www.researchgate.net/publication/400415108_WAXAL_A_Large-Scale_Multilingual_African_Language_Speech_Corpus"},{"title":"The African Language Data Problem — and the Initiatives Solving It | 9jaLingo Blog","url":"https://www.9jalingo.org/blog/african-language-datasets-2026"},{"title":"WAXAL: A Large-Scale Multilingual African Language Speech Corpus","url":"https://arxiv.org/html/2602.02734v3"},{"title":"[Literature Review] WAXAL: A Large-Scale Multilingual African Language Speech Corpus","url":"https://www.themoonlight.io/en/review/waxal-a-large-scale-multilingual-african-language-speech-corpus"},{"title":"Introducing WAXAL: A New Open Dataset for African Speech Technology","url":"https://blog.google/intl/en-africa/company-news/outreach-and-initiatives/introducing-waxal-a-new-open-dataset-for-african-speech-technology/"},{"title":"Google's WAXAL Dataset Finally Gives AI African Voices","url":"https://macjordangh.com/google-waxal-african-languages-ai-dataset/"},{"title":"Language - Lacuna Fund","url":"https://lacunafund.org/datasets/language/"},{"title":"Bridging Gaps in Natural Language Processing for Yor\\`ub\\'a: A Systematic Review of a Decade of Progress and Prospects","url":"https://arxiv.org/pdf/2502.17364"}]
+
+Based on the search results, here's comprehensive information about the WAXAL dataset:
+
+## WAXAL Dataset Overview
+
+WAXAL is an open-source speech database designed to support the development of voice-based artificial intelligence for African languages. The dataset was developed over three years to empower researchers and drive the development of inclusive technology across Africa.
+
+## Languages Covered
+
+Languages included in the dataset are: Acholi, Akan, Dagaare, Dagbani, Dholuo, Ewe, Fante, Fulani (Fula), Hausa, Igbo, Ikposo (Kposo), Kikuyu, Lingala, Luganda, Malagasy, Masaaba, Nyankole, Rukiga, Shona, Soga (Lusoga), Swahili, and Yoruba.
+
+## Data Composition
+
+The collection consists of an Automated Speech Recognition (ASR) dataset containing approximately 1,250 hours of transcribed, natural speech from a diverse range of speakers, and a Text-to-Speech (TTS) dataset with over 235 hours of high-quality, single-speaker recordings.
+
+## Nigerian Languages Specifically
+
+For the three major Nigerian languages you asked about:
+
+- **ASR Data**: Languages for ASR include Acholi, Kiswahili, Luganda, Akan, Ewe, Shona, Fula, and Lingala, among others (Note: Hausa, Igbo, and Yoruba are not included in the ASR component)
+- **TTS Data**: TTS data is available for Hausa, Igbo, and Yoruba, among others.
+
+The dataset contains more than 11,000 hours of speech drawn from nearly two million individual recordings. The complete WAXAL collection is released under an open license and is available on Hugging Face.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

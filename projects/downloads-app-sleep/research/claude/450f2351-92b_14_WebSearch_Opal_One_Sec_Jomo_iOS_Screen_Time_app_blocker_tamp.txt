@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Opal One Sec Jomo iOS Screen Time app blocker tamper resistance bypass friction 
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:13 UTC
+========================================================================
+
+Search query: Opal One Sec Jomo iOS Screen Time app blocker tamper resistance bypass friction 2026
+
+----------------------------------------
+
+Web search results for query: "Opal One Sec Jomo iOS Screen Time app blocker tamper resistance bypass friction 2026"
+
+Links: [{"title":"Screen Time iOS Alternatives That Actually Work (2026) – Habit Doom","url":"https://habitdoom.com/blog/screen-time-ios-alternatives-2026"},{"title":"Opal, Forest, Freedom: 5 Screen Time Apps Ranked (2026) | Unstar","url":"https://unstar.app/blog/opal-forest-freedom-one-sec-jomo-screen-time-apps-ranked-2026"},{"title":"Opal Alternatives: 7 App Blockers Worth Switching To (2026) – Habit Doom","url":"https://habitdoom.com/blog/opal-alternatives"},{"title":"Opal vs Jomo: Two Subscriptions, One Niche — Screen Time Index","url":"https://screentimeindex.com/posts/opal-vs-jomo/"},{"title":"Screen Time Index — Every app blocker and screen-time app, actually compared","url":"https://screentimeindex.com/"},{"title":"Best iPhone App Blockers: I Tested All 6 (2026) – Habit Doom","url":"https://habitdoom.com/blog/best-app-blockers-iphone-2026"},{"title":"Best Opal Alternatives in 2026 (Free & Paid) — Rtriv","url":"https://rtriv.io/en/blog/opal-alternatives"},{"title":"Best Social Media Blocker Apps 2026: Complete Comparison Guide | unhookd | Social Media on Your Terms","url":"https://unhookd.app/blog/social-media-blocker-comparison"},{"title":"Jomo - Screen Time Blocker - App Store - Apple","url":"https://apps.apple.com/us/app/jomo-screen-time-blocker/id1609960918"},{"title":"Best iPhone App Blockers 2026: Freedom vs Opal vs AppBlock vs One Sec Compared","url":"https://www.digitalfengshuiguide.com/blog/iphone-app-blocker-guide"}]
+
+Based on the search results, here's what I found about these iOS Screen Time app blockers in 2026:
+
+## Overview of the Apps
+
+Opal offers scheduled focus sessions with analytics for $19.99/mo or $99.99/yr. One Sec provides a breathing pause before opening apps for $4.99/mo. Jomo is a cheaper scheduled blocking option at $4.99/mo.
+
+## Friction and Tamper Resistance
+
+The apps vary significantly in their approach to friction:
+
+- One Sec adds a breathing pause before you open a chosen app, betting that the friction breaks the automatic reach.
+- Jomo leans into shorter reflection prompts — a breathing pause rather than a wall.
+- Opal's device-profile enforcement is difficult to bypass, and the scheduled sessions are well-suited for professionals who need distraction-free blocks during working hours.
+
+## Bypass Vulnerabilities
+
+However, the search results reveal significant bypass issues across all three apps:
+
+Users report: "Opal block is gone the second you remove the app from Screen Time," "Jomo has a strict mode but you can still bypass it by changing the date in settings," and "Freedom on iOS is bypassable by deleting and reinstalling the app, which takes 30 seconds". Opal and Jomo offer stricter modes, but reviewers consistently find the loopholes, usually within the Screen Time permission layer that no third-party app can fully lock down on iOS.
+
+## Root Cause of Bypass Issues
+
+Third-party apps cannot enforce stronger blocks than Apple's underlying APIs allow, but they can layer enforcement Apple does not add by default.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

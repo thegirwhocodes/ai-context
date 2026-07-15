@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Anthropic Claude nonprofit program free API access 2025 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 05:00:37 UTC
+========================================================================
+
+Search query: Anthropic Claude nonprofit program free API access 2025 2026
+
+----------------------------------------
+
+Web search results for query: "Anthropic Claude nonprofit program free API access 2025 2026"
+
+Links: [{"title":"Anthropic","url":"https://www.anthropic.com/news/claude-for-nonprofits"},{"title":"How to Use Claude API Key for Free in 2026","url":"https://apidog.com/blog/how-to-use-claude-api-key-for-free-in-2025/"},{"title":"Plans & Pricing | Claude by Anthropic","url":"https://claude.com/pricing"},{"title":"What is the External Researcher Access Program? | Claude Help Center","url":"https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program"},{"title":"Claude for Nonprofits: Discounts and Connectors - NonProfit PRO","url":"https://www.nonprofitpro.com/article/claude-for-nonprofits-launches-with-sector-discounts-data-connectors-and-training/"},{"title":"Anthropic Claude API Nonprofit Discount & Pricing | One Hundred Nights","url":"https://onehundrednights.com/nonprofit-ai-discounts/anthropic-claude-api-nonprofit-discount/"},{"title":"How to Get Free Claude API Access ?","url":"https://apidog.com/blog/free-claude-api-access/"},{"title":"Free Claude API Credits 2026: Get $100,000 for Your Projects | Get AI Perks","url":"https://www.getaiperks.com/en/ai/free-claude-api-credits-2025"},{"title":"Anthropic's AI for Science Program | Claude Help Center","url":"https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program"},{"title":"How to get Claude Free APIs? 3 Ways! - CometAPI - All AI Models in One API","url":"https://www.cometapi.com/how-to-get-claude-free-api/"}]
+
+Based on the search results, here's what I found about Anthropic's Claude nonprofit program and API access options:
+
+## Claude for Nonprofits Program
+
+Claude for Nonprofits includes discounted access of up to 75% to Claude, connectors to nonprofit tools (Blackbaud, Candid, and Benevity), and a free course called AI Fluency for Nonprofits. Nonprofits are eligible for discounts of up to 75% on Team and Enterprise plans.
+
+At the discounted price, Claude for Nonprofits includes access to Claude Opus 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5, with Sonnet 4.5 being best suited for sophisticated tasks like grant writing and program analysis.
+
+## Other Free/Discounted API Access Programs
+
+Beyond nonprofits, Anthropic offers several other programs for free or discounted API access:
+
+1. **Researchers**: The External Researcher Access Program provides free API credits for researchers working on AI safety and alignment topics.
+
+2. **Scientists**: Anthropic's AI for Science Program provides free API credits to researchers in academia and nonprofit organizations working on scientific research.
+
+3. **Open-Source Maintainers**: Anthropic offers free Claude API access (up to 20x) for open-source maintainers.
+
+4. **Students**: Anthropic has launched a dedicated program offering free API credits to university students.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

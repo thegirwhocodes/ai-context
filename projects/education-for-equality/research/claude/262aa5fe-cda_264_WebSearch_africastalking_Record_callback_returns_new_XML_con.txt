@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "africastalking" "Record" callback returns new XML continues conversation exampl
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:11:07 UTC
+========================================================================
+
+Search query: "africastalking" "Record" callback returns new XML continues conversation example PHP Python Node
+
+----------------------------------------
+
+Web search results for query: ""africastalking" "Record" callback returns new XML continues conversation example PHP Python Node"
+
+Links: [{"title":"GitHub - AfricasTalkingLtd/africastalking-php: Official PHP SDK","url":"https://github.com/AfricasTalkingLtd/africastalking-php"},{"title":"africastalking/africastalking - Packagist.org","url":"https://packagist.org/packages/africastalking/africastalking"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/"},{"title":"africastalking-php/README.md at master · AfricasTalkingLtd/africastalking-php","url":"https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/README.md"},{"title":"appslabke/africastalking - Packagist","url":"https://packagist.org/packages/appslabke/africastalking"},{"title":"africastalking","url":"https://pypi.org/project/africastalking/1.1.0/"},{"title":"zepson/africastalking - Packagist","url":"https://packagist.org/packages/zepson/africastalking"},{"title":"africastalking · PyPI","url":"https://pypi.org/project/africastalking/1.1.2/"},{"title":"Programmer Level · Mobile Communication Apis","url":"https://africastalkingltd.gitbooks.io/mobile-communication-apis/content/node_js/programmer_level.html"},{"title":"africastalking-python","url":"https://pypi.org/project/africastalking/"}]
+
+Based on the search results, I found information about Africa's Talking's Record functionality in their SDKs:
+
+## Record Callback with XML Response
+
+Build voice XML when callback URL receives a POST from the voice API. Actions can be chained to create an XML string.
+
+### PHP Example
+
+In PHP, you can use `$voiceActions = $voice->messageBuilder(); $xmlresponse = $voiceActions ->getDigits($options) ->say($text) ->record() ->build();` to chain actions together for recording.
+
+### Key Recording Parameters
+
+The search results reference recording-related options including:
+- trimSilence: Boolean - Specifies whether you want to remove the initial and final parts of a recording where user was silent
+- playBeep: Boolean - Specifies whether the API should play a beep when recording starts
+
+### Voice Callbacks for Continued Conversation
+
+For any call handled, whether made to the virtual number or from the virtual number the API gateway will invoke your voice callback. When handling a call mapped to your number, the callback_url is invoked with POST params sent to your API, and you must handle a POST request on your callback_url.
+
+The documentation indicates that you can chain multiple voice actions (including `record()`) together to build XML responses that continue conversations. However, the search results don't contain detailed complete examples showing a full conversation flow with the Record action for PHP, Python, or Node.js. For more comprehensive examples, you may want to check the official Africa's Talking developer documentation at developers.africastalking.com.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

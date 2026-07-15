@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://datausa.io/profile/university/wesleyan-university
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 04:18:57 UTC
+========================================================================
+
+URL: https://datausa.io/profile/university/wesleyan-university
+Extraction prompt: How many total employees, faculty, and staff does Wesleyan University have? Return exact numbers by category.
+
+----------------------------------------
+
+# Wesleyan University Employment Summary
+
+Based on the provided data, here are the exact employee numbers by category:
+
+**Instructional Staff (434 total):**
+- Professors: 135
+- Associate professors: 119
+- Assistant professors: 116
+
+**Non-Instructional Staff (289 total):**
+- Office and Administrative Support: 114
+- Librarians, Curators, Archivists, and Academic Affairs personnel: 91
+- Business and Financial Operations: 84
+
+**Total: 723 employees** across instructional and non-instructional positions.
+
+The document notes that "Most academics at Wesleyan University are Male Professor (88), Female Assistant professor (66), and Female Associate professor (66)," providing a gender breakdown within the instructional ranks.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

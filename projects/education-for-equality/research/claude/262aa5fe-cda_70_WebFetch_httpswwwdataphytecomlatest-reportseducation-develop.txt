@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.dataphyte.com/latest-reports/education-development/sanwo-olus-splash
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 08:47:33 UTC
+========================================================================
+
+URL: https://www.dataphyte.com/latest-reports/education-development/sanwo-olus-splashy-stunt-lagos-out-of-school-children-and-the-sublime-art-of-surprise-as-showmanship/
+Extraction prompt: Extract any list of Lagos LGAs with out-of-school children numbers, any LASUBEB data, any breakdown by local government area. Extract all specific numbers and LGA names.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://www.dataphyte.com/latest-reports/education-development/sanwo-olus-splashy-stunt-lagos-out-of-school-children-and-the-sublime-art-of-surprise-as-showmanship/
+Redirect URL: http://www.dataphyte.com/latest-reports/education-development/sanwo-olus-splashy-stunt-lagos-out-of-school-children-and-the-sublime-art-of-surprise-as-showmanship
+Status: 301 Moved Permanently
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "http://www.dataphyte.com/latest-reports/education-development/sanwo-olus-splashy-stunt-lagos-out-of-school-children-and-the-sublime-art-of-surprise-as-showmanship"
+- prompt: "Extract any list of Lagos LGAs with out-of-school children numbers, any LASUBEB data, any breakdown by local government area. Extract all specific numbers and LGA names."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

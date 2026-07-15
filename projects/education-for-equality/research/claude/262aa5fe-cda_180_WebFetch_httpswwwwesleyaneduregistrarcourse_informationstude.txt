@@ -1,0 +1,71 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/registrar/course_information/student_forum.html
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:51:52 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/registrar/course_information/student_forum.html
+Extraction prompt: Capture every detail about Wesleyan Student Forums. I need verbatim where possible:
+
+1. What is a Student Forum? Definition, history, purpose
+2. Credit value — 0.5 credit, 1.0 credit, or other?
+3. Who can lead one — undergraduate eligibility, GPA requirements, class year
+4. How many can a student lead per semester / lifetime
+5. Faculty sponsor requirements — must be tenured? Any faculty? Department chair approval?
+6. Course content restrictions — any topics not allowed?
+7. Application deadlines and submission process
+8. Required documents (syllabus, reading list, etc.)
+9. Grading — Cr/U, pass/fail, letter grade
+10. Minimum and maximum enrollment
+11. Meeting frequency and duration
+12. Compensation, stipends, or any financial support for leaders
+13. Where forums meet — classroom assignment process
+14. Any examples of past forums
+15. Anything about cooking, food, hands-on / lab format courses
+16. Any restrictions on commercial activity or fundraising tied to the forum
+
+Do not summarize. Give me everything on the page.
+
+----------------------------------------
+
+# Wesleyan Student Forums: Information Available on Page
+
+Based on the webpage content provided, here is what is explicitly stated:
+
+## Definition & Basic Information
+Student Forums are "student-run group tutorials, numbered 419 or 420 and must be sponsored by a faculty member and approved by the chair of a department or program."
+
+## Credit Value
+The page states students "may count a maximum of four credits in any combination" of various categories, including "maximum of two student forum credits (419, 420)."
+
+## Enrollment Limits
+"Student forums are limited to 15 students, plus the student leaders."
+
+## Enrollment Process
+"Students should email the student leader to enroll in forums. Students will be enrolled in the forum within 2 business days of receipt of the roster from the student leader."
+
+## Audit Policy
+"Students are not permitted to audit forums."
+
+---
+
+## Information NOT Available on This Page
+
+The webpage does not contain details about:
+- Leader eligibility (GPA, class year requirements)
+- How many forums leaders can conduct
+- Specific faculty sponsor qualifications (tenure status)
+- Grading methods (Cr/U, letter grades, etc.)
+- Meeting frequency/duration
+- Compensation or stipends
+- Room assignments
+- Examples of past forums
+- Content restrictions
+- Application deadlines or submission procedures
+- Required documents
+
+**For additional details**, the page directs: "For questions about student forums, please contact the Registrar's Office" (registrar@wesleyan.edu).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

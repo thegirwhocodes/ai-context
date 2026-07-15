@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "sign language recognition" edge device on-device model compression quantization
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:24 UTC
+========================================================================
+
+Search query: "sign language recognition" edge device on-device model compression quantization TFLite 2025
+
+----------------------------------------
+
+Web search results for query: ""sign language recognition" edge device on-device model compression quantization TFLite 2025"
+
+Links: [{"title":"Dynamic Kannada Sign Language Recognition on Resource Constrained Devices | Scientific Reports","url":"https://www.nature.com/articles/s41598-026-40181-7"},{"title":"Edge deployment of LLMs and ML models: A review","url":"https://www.rohan-paul.com/p/edge-deployment-of-llms-and-ml-models"},{"title":"Beginner’s Guide to Model Compression and On-Device Speech Recognition: Quantization, Pruning, Knowledge Distillation, Low-Rank Factorization, Edge TPU Models, and Federated Learning | by Jyoti Dabass, Ph.D. | AI in Plain English | Medium","url":"https://medium.com/tech-ai-made-easy/beginners-guide-to-model-compression-and-on-device-speech-recognition-quantization-pruning-7ca2a1901270"},{"title":"Gesture Recognition Based on TFLite · Developer Portal","url":"https://developer.espressif.com/blog/2026/04/gesture-recognition-based-on-tflite/"},{"title":"Efficient Word-Level Sign Language Recognition Using ...","url":"https://www.preprints.org/frontend/manuscript/4811a76b1b1b74d42c99aedb2e067eeb/download_pub"},{"title":"From PyTorch to Android: Creating a Quantized TensorFlow Lite Model - deepsense.ai","url":"https://deepsense.ai/resource/from-pytorch-to-android-creating-a-quantized-tensorflow-lite-model/"},{"title":"Model Quantization Using TensorFlow Lite | by AI Practitioner and Writer | sclable | Medium","url":"https://medium.com/sclable/model-quantization-using-tensorflow-lite-2fe6a171a90d"},{"title":"GitHub - umitkacar/awesome-tinyml: TinyML & Edge AI: On-device inference, model quantization, embedded ML, ultra-low-power AI for microcontrollers and IoT devices. · GitHub","url":"https://github.com/umitkacar/awesome-tinyml"},{"title":"Model Compression Techniques: The Ultimate 2025 Guide","url":"https://createbytes.com/insights/model-compression-techniques-guide"},{"title":"Optimizing AI for IoT: Techniques for Model Compression and Edge Deployment","url":"https://iris.unito.it/retrieve/4330f79f-d38a-4d9a-a557-72c7a3b206a1/PHDTHESIS_Shabir_yasir_2025.pdf"}]
+
+I've completed a web search for your query on sign language recognition with edge devices, on-device models, compression, and TFLite in 2025. Here are the key findings:
+
+## Sign Language Recognition on Edge Devices
+
+Sign Language Recognition (SLR) systems have gained significant popularity in recent years, but despite the existence of various Deep Learning models to classify sign languages, the deployment of these models on resource-constrained devices remains a challenge.
+
+## Model Compression and Optimization Techniques
+
+Recent research demonstrates effective approaches to deploying SLR on edge devices. One study focused on creating a word-level custom dataset of 33 classes and trained three deep learning models (LSTM, BiLSTM, and Encoder-only Transformer) for dynamic sign language recognition, with trained models optimized using quantization techniques and converted to .tflite format for efficient deployment on resource-constrained devices like smartphones.
+
+### Quantization Results
+
+For BiLSTM, the model size was compressed to 3,862.01 KB (around 72% reduction from standard TFLite), with improved testing accuracy (95.71%), faster inference time (21.85 ms), and increased IPS at 35.97, while resource usage remained low (18% CPU, 12 MB RAM).
+
+LSTM preserved its 94.7% accuracy at a model size value of 1,254.49 KB and an IPS of 51.02, demonstrating that on-the-fly quantization can be effective for robust and stable models.
+
+## TinyML and Edge Deployment
+
+Tiny Machine Learning brings intelligence directly onto microcontrollers and low-power devices, allowing models to run locally in real time without relying on the cloud. Recent work shows S3D-Conv1D achieved 98.4% float32 accuracy, and after INT8 quantization, it retained accuracy within 0.18% while compressing nearly 4× into sub-megabyte binaries (895.9 KB).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

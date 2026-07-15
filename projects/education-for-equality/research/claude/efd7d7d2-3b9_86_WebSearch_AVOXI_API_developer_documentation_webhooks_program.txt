@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: AVOXI API developer documentation webhooks programmable voice IVR
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:59:47 UTC
+========================================================================
+
+Search query: AVOXI API developer documentation webhooks programmable voice IVR
+
+----------------------------------------
+
+Web search results for query: "AVOXI API developer documentation webhooks programmable voice IVR"
+
+Links: [{"title":"Programmable Voice API for Global Businesses | AVOXI","url":"https://www.avoxi.com/solutions/programmable-voice-api/"},{"title":"AVOXI API Docs","url":"https://www.avoxi.com/api-docs/"},{"title":"Voice API | AVOXI Glossary","url":"https://www.avoxi.com/glossary/voice-api/"},{"title":"The Enterprise Guide to Interactive Voice Response (IVR) Software","url":"https://www.avoxi.com/blog/guide-to-ivr-software/"},{"title":"AVOXI — Example Flow - Hand off call to WhatsApp message","url":"https://support.avoxi.com/flow-builder/example-flow-hand-off-call-to-whatsapp-message"},{"title":"Cloud IVR | User-friendly IVR Software for Business & Call Centers","url":"https://www.avoxi.com/cloud-communications/call-management/ivr/"},{"title":"Web App Communications for Businesses | AVOXI","url":"https://www.avoxi.com/solutions/web-application/"},{"title":"AVOXI — Webhooks","url":"https://support.avoxi.com/flow-builder/webhooks"},{"title":"IVR Demo","url":"https://developers.telnyx.com/docs/voice/programmable-voice/ivr-demo"},{"title":"Interactive Voice Response (IVR) | AVOXI Glossary","url":"https://www.avoxi.com/glossary/interactive-voice-response-ivr/"}]
+
+Based on the search results, here's what I found about AVOXI's API developer documentation, webhooks, programmable voice, and IVR:
+
+## AVOXI Programmable Voice API
+
+AVOXI allows you to implement APIs into your own customer-facing applications to tap into their global voice inventory, and the APIs are built to support Shell, Node, Javascript, Python Java, Go and C#.
+
+## Webhooks
+
+Webhooks are event-driven and exchange data in one direction, with the server sending automatic updates to the computer in real-time when an event is triggered.
+
+The webhook widget is used to make custom API calls that enable AVOXI Flow Builder to communicate with different systems by retrieving or sending data, with responses from these API calls stored in variables and referenced further in the flow to make routing decisions.
+
+## IVR and Programmable Voice
+
+With programmable voice API, businesses can use IVR systems and voice bots to handle routine inquiries, freeing up human agents for more complex issues. AVOXI Flow Builder orchestrates routing across locations, systems, and teams, allowing you to manage both complex call flows and IVR menus from one intuitive interface.
+
+## API Documentation
+
+AVOXI's library of programmable APIs includes number provisioning, orders, documentation, SIP URIs, billing, call detail records and more. The official AVOXI API documentation is available at https://www.avoxi.com/api-docs/ and https://genius.avoxi.com/api/v2/api-docs/.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

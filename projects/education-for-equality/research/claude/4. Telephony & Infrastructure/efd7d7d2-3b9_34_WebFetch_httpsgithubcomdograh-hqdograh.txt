@@ -1,0 +1,46 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/dograh-hq/dograh
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 02:40:23 UTC
+========================================================================
+
+URL: https://github.com/dograh-hq/dograh
+Extraction prompt: Extract all technical details: what telephony providers does Dograh support? What STT, TTS, and LLM providers? How does the voice call pipeline work? What's the architecture? Docker/self-hosting setup? Does it support Africa's Talking? Can it handle inbound IVR calls with recording and custom audio playback? What's the tech stack (Python, Node, etc)?
+
+----------------------------------------
+
+# Dograh AI Technical Summary
+
+## Supported Providers
+
+**Telephony:** "Built-in telephony integration like Twilio, Vonage, Vobiz, Cloudonix (easily add others)"
+
+The documentation doesn't specify Africa's Talking support, though the "easily add others" language suggests extensibility.
+
+**LLM/STT/TTS:** The platform includes "Dograh's own LLMs, STT, and TTS stack by default" with the ability to "Bring your own LLM, TTS, or STT" providers. No specific third-party integrations are listed.
+
+## Architecture & Call Pipeline
+
+Limited technical details are provided. The README mentions:
+- "Real-time Processing: Low-latency voice interactions"
+- "Modular Architecture: Swap components as needed"
+
+However, specific pipeline diagrams or call flow documentation aren't included ("Architecture diagram _(coming soon)_").
+
+## Technology Stack
+
+- **Primary Languages:** Python (55.6%) and TypeScript (41.6%)
+- **Deployment:** Docker-containerized, with docker-compose configurations provided
+- **Infrastructure:** Self-hostable or cloud-hosted at app.dograh.com
+
+## Inbound IVR Capabilities
+
+The platform supports "Inbound" calling type selection, though specifics about IVR, call recording, and custom audio playback aren't detailed in the provided content.
+
+## Self-Hosting
+
+Quick-start uses Docker Compose. Detailed deployment guides referenced but not included in this excerpt.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

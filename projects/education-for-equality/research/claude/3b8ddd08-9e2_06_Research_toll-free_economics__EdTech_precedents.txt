@@ -1,0 +1,139 @@
+========================================================================
+AGENT RESEARCH: Research toll-free economics + EdTech precedents
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 18:18:31 UTC
+========================================================================
+
+Do deep web research (use WebSearch and WebFetch extensively — load them via ToolSearch with query "select:WebSearch,WebFetch" if needed) on the current economics of toll-free / reverse-billed voice access in Nigeria, and how African EdTech orgs fund free access for users, as of 2024–2026.
+
+Context: "Sabi" is a Nigerian voice-AI tutor children dial on a feature phone. We need a realistic cost picture for letting ~300 children (pilot) and then thousands (scale) reach the line at ₦0 to the family, under different access models.
+
+Research concretely:
+1. **Current 0800 toll-free pricing in Nigeria (2024–2026)** — per-minute reverse-charge/termination rates the org would pay, setup fees, monthly line/channel fees, SIP channel pricing. Cover Alpha Technologies, InfoTek PS, Yana/Interra Networks, Vezeti, and any others. Include the NCC wholesale termination rate floor for 0800 if available.
+2. **Africa's Talking voice pricing (current)** — Nigerian inbound (caller-pays) ₦/min, outbound ₦/min, SIP trunk ₦/min, number maintenance fee — and whether AT offers any toll-free/reverse-charge in Nigeria.
+3. **EdTech access-funding precedents** — how do these orgs make access free to the end user, and what does it cost them: Eneza Education (Safaricom zero-rated USSD, Kenya), Bakame AI (Rwanda, toll-free voice — how funded), Ubongo (Tanzania, Vodacom zero-rating), Rori/Rising Academies (WhatsApp data), Viamo (donated airtime — quantify, e.g. Airtel's reported donated minutes/value). Give real numbers and deal structures.
+4. **Telco zero-rating ROI framing** — any data on why an MNO benefits (CSR value, subscriber engagement, GSMA stats on telco ROI for such programs) to support a pitch.
+5. **Comparative cost-per-student** for Sabi-like access under: (a) caller-pays inbound, (b) flash callback over SIP, (c) 0800 toll-free, (d) MNO zero-rating — synthesize realistic ₦ and $ figures for a 300-child 6-month pilot and at 5,000–100,000 children.
+
+Prioritize CURRENT (2024–2026) Nigeria-specific facts with real numbers and source URLs. Return AT LEAST 90% of the substance — every rate, fee, deal structure, and source. Do NOT give a thin summary. Organize under clear headings. Completeness over brevity.
+
+----------------------------------------
+
+I have comprehensive data. The AT exact Nigeria naira voice rate is locked in a PDF/login wall, but I have the billing model definitively (both caller and callee charged on inbound; no toll-free in Nigeria) plus the market reference rate (₦15.40/min retail, ₦3.90 termination floor) to estimate. I have enough for a complete, well-sourced synthesis. Let me write it up.
+
+---
+
+# Sabi Free-Access Economics in Nigeria (2024–2026): Research Report
+
+## Headline takeaways
+
+- **Nigeria has no consumer-facing toll-free voice that is genuinely cheap to the org.** The 0800 model exists (Alpha, InfoTek PS, Yana, Vezeti, MTN Smart Number), but it is "subscriber-pays" — the org absorbs the per-minute cost, which is benchmarked to Nigeria's retail voice tariff (~₦15.40/min in 2025) plus provider markup, not the wholesale termination floor (₦3.90/min). Hard published per-minute 0800 rates are not public; every provider quotes on application against a prepaid deposit.
+- **Africa's Talking does NOT offer reverse-charge/toll-free in Nigeria.** On AT inbound, *both* caller and callee are billed. So AT cannot make the line free to the family by itself — the family still pays airtime unless you layer a callback or zero-rating deal on top.
+- **The genuinely free-to-user precedents (Viamo 3-2-1, Eneza, Ubongo, Bakame) do NOT pay retail toll-free rates.** They get the access *donated or zero-rated by the MNO*, or *bought by a government*. That is the single most important finding for Sabi's pitch: the realistic path to ₦0-to-family at scale is an MNO zero-rating/donated-airtime deal or a government purchase — not buying 0800 minutes on the open market.
+- **For a 300-child pilot, the cheapest reliable model is caller-pays inbound + airtime reimbursement, or a flash-callback over SIP.** Toll-free 0800 only becomes worth the setup/deposit overhead at thousands of children, and zero-rating only unlocks at the scale where an MNO sees subscriber value.
+
+---
+
+## 1. Nigeria 0800 toll-free pricing (2024–2026)
+
+**The model.** Nigerian 0800 numbers are "the subscriber bears the cost of calls so callers don't pay" (InfoTek PS, Yana, MTN). 0700 numbers are the inverse (caller pays at network tariff). Calls to 0800 are free from all Nigerian networks; some networks charge for *international* calls to them. Billing runs off a **prepaid deposit account** that the org tops up; per-minute inbound usage is defrayed from that deposit.
+
+**Provider landscape and what's published:**
+
+| Provider | What's known | Pricing transparency |
+|---|---|---|
+| **MTN Nigeria "Smart Number"** (0800 toll-free / 0700) | Carrier-direct; links all existing fixed/mobile lines to one number. The receiver (org) pays; caller is free on 0800. | No public per-minute rate — quote on application. (MTN's *SIP trunk*, by contrast, is published — see below.) |
+| **Alpha Technologies ("ALPHA SMAT Number")** | Cross-network 0800/0700 vanity & smart numbers. | No public per-minute rate. |
+| **InfoTek PS** | "Toll-free short code, reverse billing, zero billing to senders"; explicitly markets reverse-billing/zero-billing where subscriber's deposit covers calls. Also does USSD/SMS/SIM hosting. | No public per-minute rate; deposit-account model stated. |
+| **Yana (yana.ng)** | Cloud-based 0800/0700 business comms; "0800 cost borne by subscriber, 0700 by caller." | No public per-minute rate. |
+| **Vezeti (vezeti.net)** | Virtual numbers incl. 0800 toll-free and 01-888 (caller-pays). **From ₦2,500/month** for service (entry plan); this is the line/seat fee, not the per-minute toll-free usage. | Only the ₦2,500/mo entry figure is public; per-minute on application. |
+
+**Why no published per-minute rate exists:** 0800 inbound termination in Nigeria is benchmarked to the *retail* voice tariff, not wholesale. As of 2025 the retail voice rate is **~₦15.40/min** (after the NCC-approved 2025 tariff increase; SMS ~₦5.60). Providers add margin on top, so a realistic working assumption for org-paid 0800 inbound is **₦15–₦25/min** plus a setup fee and monthly line fee, against a prepaid deposit. Treat this as an estimate — all five providers require a written quote.
+
+**The NCC wholesale termination floor (the number that matters for any rate negotiation):**
+- Nigeria's **Mobile Termination Rate (MTR) is ₦3.90/min for established operators and ₦4.70/min for new entrants/smaller operators** — *unchanged since 2018* (NCC determination).
+- **This is being reviewed right now:** NCC engaged KPMG for a 4-month consultancy and convened an Industry Stakeholder Consultative Forum on **16 June 2026** (Marriott, Ikeja, Lagos) to revise MTRs (and USSD pricing, MVNO interconnect) for the first time in 8 years, citing naira depreciation and inflation. **Expect the floor to rise** — relevant because any future 0800/zero-rating deal will be priced off the new MTR.
+- The gap between the ₦3.90 wholesale floor and the ~₦15.40 retail rate is the room an MNO has to *donate or zero-rate* cheaply while charging Sabi little or nothing (see §4).
+
+Sources: [InfoTek toll-free/reverse-billing](http://infotekps.com/tollfreeshortcode.html), [Yana](https://yana.ng/), [Vezeti](https://vezeti.net/), [Alpha SMAT Number](https://alphatechnologieslimited.com/services-old/alpha-smat-number/), [MTN Smart Number coverage (Nigerian Bulletin)](https://nigerianbulletin.com/threads/mtn-nigeria-introduces-smart-number-for-sme-0800-and-0700.11224/), [NCC MTR review (TechEconomy)](https://techeconomy.ng/ncc-opens-mobile-termination-rates-review-to-public-scrutiny/), [NCC MTR determination PDF](https://www.ncc.gov.ng/sites/default/files/2024-10/Legal-Determination_Mobile_Voice_Termination_Rate_for_Special_Numbering_Services.pdf), [Nigeria retail tariff ₦15.40/min (TechEconomy)](https://techeconomy.ng/how-africas-top-10-economies-compare-on-data-voice-sms-tariffs/).
+
+---
+
+## 2. Africa's Talking voice pricing (current)
+
+**Critical structural fact: AT inbound bills BOTH parties.** Per AT's own help docs, "for inbound calls, both the caller and the callee are charged." There is **no toll-free / reverse-charge product for Nigeria** on AT. So AT alone cannot deliver ₦0-to-family — the caller still pays their normal airtime. AT's value for Sabi is the *outbound* leg (callback model) and the API/SIP plumbing, not free inbound.
+
+**Published rate structure** (AT documents rates in Kenyan shilling "/-"; Nigeria rates live in the gated "Consolidated Voice Pricing" PDF behind the dashboard, so treat KES as the structural template and the Nigeria-specific naira figure as quote-on-signup):
+- **Inbound:** 1/- per minute to your account (KES template), billed to the org *and* the caller pays their airtime separately.
+- **Outbound to a regular number / virtual number:** 5/- per minute (KES template).
+- **SIP-to-SIP:** 1/- per minute (KES template) — the cheap leg.
+- **Virtual/voice number:** monthly maintenance/rental fee (set per number; quote on signup).
+- **Sandbox** voice numbers are free to create for development/testing.
+
+For Nigeria specifically, AT's naira voice rate is not published; the dashboard quote is required. Given AT resells local Nigerian termination, expect outbound/inbound to sit in the single-digit-to-low-teens ₦/min range, well under retail because AT buys wholesale.
+
+Sources: [AT voice billing (both parties charged)](https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work), [AT consolidated voice pricing (gated PDF)](https://help.africastalking.com/en/articles/12318772-consolidated-voice-pricing), [AT pricing](https://africastalking.com/pricing), [AT voice product](https://africastalking.com/voice/).
+
+---
+
+## 3. EdTech access-funding precedents (real numbers & deal structures)
+
+**Eneza Education — Shupavu 291 (Kenya, Safaricom).** SMS/USSD revision tool via `*291#` / short code 20851 for Grade 4–Form 4. Normal price to the user: **KES 3/day** subscription. During COVID, Safaricom **waived the KES 3/day fee for 60 days** and zero-rated companion web content (Shupavu Web, Viusasa, Longhorn) up to **250 MB/day for 60 days**. **5.3M+ students** have used it. Structure: the telco subsidizes/zero-rates; in normal times the *user* pays a micro-fee, not the org. Sources: [Safaricom press release](https://www.safaricom.co.ke/media-center-landing/press-releases/safaricom-education-content-providers-partner-to-enable-free-access-to-digital-learning), [Pioneers Post](https://www.pioneerspost.com/news-views/20210104/the-largest-classroom-africa-how-text-messages-mean-millions-of-children-can).
+
+**Bakame AI (Rwanda) — the closest analog to Sabi.** Toll-free phone-based AI English tutor, "no internet and no cost," works on any phone (97% of Rwandans own a phone; only 34.2% have internet). Founder **Happy Herman Niyorurema** (TCU economics student). Funding: **$10,000 from TCU's CREATE program**; pitched April 2025 for a potential **$50,000** (earmarked for marketing). Pilot: **5 Rwandan schools / ~1,000 students in summer 2025**, targeting **10–20 schools by Dec 2025**. **Sustainability model = sell to the Rwandan government so taxpayers fund free access** ("If purchased by the Rwandan government, Rwandan taxpayers enjoy Bakame AI for free"). Note: the article does **not** disclose who currently pays for the toll-free minutes during the pilot — i.e., even the leading toll-free voice-education startup hasn't publicly solved the per-minute funding except via the government-purchase endgame. Sources: [Bakame AI (TCU360)](https://tcu360.shorthandstories.com/bakame-ai/index.html), [TCU feature](https://tcu360.shorthandstories.com/bakame-ai/index.html).
+
+**Viamo 3-2-1 Service (multi-country, incl. Airtel/MTN) — the donated-airtime model, quantified.** Toll-free IVR (dial `321`) on partner MNOs, free to the caller, "worth millions of dollars of airtime." **Over a 5-year period, Viamo's MNO partners contributed the equivalent of almost 100 years of free airtime.** Deal logic: the MNO donates airtime in exchange for **subscriber retention and increased phone usage** ("indirectly generates revenue for the partner MNO by improving customer retention"). Reach: in Rwanda, 3-2-1 reaches more unique users than Facebook; in Mali 2,000+ concurrent listeners at any moment. **New 2025 development directly relevant to Sabi:** **MTN Rwanda + Viamo launched "Miss Baza" (Oct 2025)** — a voice-first generative-AI assistant in local languages for people *without* smartphones/internet, i.e. an MNO is now actively funding voice-AI access as a digital-inclusion play. Sources: [Viamo 3-2-1](https://viamo.io/services/3-2-1/), [UNESCO-Pearson 3-2-1 case study](https://unesdoc.unesco.org/ark:/48223/pf0000260595), [Miss Baza launch (TechAfrica)](https://techafricanews.com/2025/10/27/mtn-rwanda-and-viamo-unveil-miss-baza-to-drive-digital-inclusion-through-voice-technology/).
+
+**Ubongo (Tanzania, Vodacom).** Africa's largest kids' edutainment nonprofit; Vodacom Tanzania is a named partner for zero-rated/free-data access to Ubongo content. Exact zero-rating terms/cost are not public, but the structure mirrors the others: MNO bears the data cost as CSR/engagement. Source: [Ubongo–Vodacom partner page](https://www.ubongo.org/partners/vodacom-tanzania-2/).
+
+**Rori / Rising Academies (Ghana, WhatsApp).** AI math tutor over **WhatsApp** (low-bandwidth text). **Free to students**; runs on a **$20 phone + mobile data**. **Cost: under $5/student/year** in delivered learning. **40,000+ students** (targeting 1M+ by 2027), funded by the **Learning Engineering Virtual Institute (LEVI)**. RCT result: **+11 percentage points** in math vs. control. The data-channel choice (WhatsApp text) is what makes it cheap — no per-minute voice cost at all. Sources: [LEVI – Rori](https://learning-engineering-virtual-institute.org/rising-academys-rori-ai-chatbot-it-has-built-my-confidence/), [Rori RCT (arXiv)](https://arxiv.org/pdf/2402.09809), [Claude customer story](https://claude.com/customers/rising-academies).
+
+**Pattern across all five:** none pays open-market toll-free retail rates. Free-to-user is achieved by **(a) MNO zero-rating/donated airtime** (Viamo, Eneza, Ubongo, Miss Baza), **(b) government purchase** (Bakame endgame), or **(c) choosing a near-zero-cost data channel** (Rori/WhatsApp). A startup buying 0800 minutes at retail is the model *nobody* uses at scale.
+
+---
+
+## 4. Telco zero-rating ROI framing (for the pitch)
+
+The pitchable business case for an MNO to zero-rate/donate airtime to Sabi:
+- **GSMA, "Mobile Learning: Moving Beyond CSR"** — the canonical reference arguing operators can **drive revenue *and* social impact** through education value-added services, not treat them as pure cost. ([GSMA M4D](https://www.gsma.com/mobilefordevelopment/events/mobile-learning-moving-beyond-csr/))
+- **Subscriber retention / engagement (the real ROI):** Viamo's framing — donated airtime "indirectly generates revenue for the partner MNO by improving customer retention and mobile phone use." An always-on educational line gives an MNO a sticky, differentiating reason for low-ARPU prepaid families to stay on-net.
+- **The margin headroom:** with the wholesale MTR floor at ₦3.90/min vs ~₦15.40/min retail, an MNO can zero-rate Sabi at near its own marginal cost while the "value" donated is counted at retail (the Viamo "millions of dollars of airtime" accounting). Cheap for them, big CSR/inclusion headline.
+- **Inclusion narrative now live:** MTN Rwanda's Miss Baza shows MNOs are *currently* funding voice-AI inclusion for non-smartphone users — Sabi can pitch into an established 2025-era category, not a cold idea.
+- **GSMA ESG framing:** the GSMA Sustainability Assessment Framework explicitly rewards operators for "Delivering Value for Society" — Sabi gives an MNO a measurable, child-literacy ESG metric. ([GSMA sustainability](https://www.gsma.com/solutions-and-impact/connectivity-for-good/external-affairs/sustainable-business/))
+
+---
+
+## 5. Comparative cost-per-student for Sabi
+
+**Assumptions** (state-able in any deck): ~20 min of voice per child per week; pilot = 26 weeks (6 months) ≈ **520 min/child**; FX ≈ **₦1,600 = $1** (2026). Adjust live.
+
+| Model | Org-paid ₦/min (working assumption) | 300-child pilot (520 min each = 156,000 min) | Per child, 6 mo | At 5,000 children/yr | At 100,000 children/yr |
+|---|---|---|---|---|---|
+| **(a) Caller-pays inbound** (AT/SIP DID) — *family pays airtime; org pays only the inbound leg* | ~₦8/min org cost (AT wholesale est.) **but family also pays ~₦15.40/min** | Org ≈ ₦1.25M (~$780); **family burden ~₦2.4M total — the blocker** | Org ~₦4,160 (~$2.60); family ~₦8,000 | Org ~₦42M (~$26K) | Org ~₦832M (~$520K) |
+| **(b) Flash-callback over SIP** — *child beeps, Sabi calls back; family pays ₦0* | SIP-to-SIP/outbound ~₦8–₦12/min (AT/MTN SIP) | ~₦1.6–2.4M (~$1,000–1,500) | ~₦5,300–8,000 (~$3.30–5.00) | ~₦53–94M (~$33–59K) | ~₦1.06–1.9B (~$660K–1.2M) |
+| **(c) 0800 toll-free** (Alpha/InfoTek/Yana/MTN) — *family pays ₦0* | ~₦15–₦25/min + setup + monthly + deposit | ~₦2.3–3.9M (~$1,460–2,440) + setup | ~₦7,800–13,000 (~$4.90–8.10) | ~₦78–130M (~$49–81K) | ~₦1.6–2.6B (~$1.0–1.6M) |
+| **(d) MNO zero-rating / donated airtime** (Viamo/Eneza model) | **~₦0–₦4/min** (at/near MTR floor, or fully donated) | **~₦0–₦624K (~$0–390)** | **~₦0–2,080 (~$0–1.30)** | **~₦0–10.4M (~$0–6.5K)** | **~₦0–208M (~$0–130K)** |
+
+**Reading the table:**
+- **Pilot (300 kids):** Cheapest *org* cost is caller-pays — but it violates ₦0-to-family. To honor ₦0-to-family at pilot scale, **flash-callback over SIP (b)** is the sweet spot: ~$1,000–1,500 for the whole 6-month pilot, no per-family cost, no 0800 setup/deposit overhead, and it runs on AT/MTN SIP you'd use anyway. **0800 (c)** adds setup + monthly + deposit friction that isn't worth it for 300 kids.
+- **Scale (5K–100K):** Per-minute economics dominate. **0800 retail (c) becomes punishing** — up to ~$1.6M/yr at 100K kids. **The only scale-viable ₦0-to-family model is (d) MNO zero-rating/donated airtime**, which can drop org cost toward zero — exactly what Viamo (100 years of donated airtime), Eneza (Safaricom), and Ubongo (Vodacom) did. **Flash-callback (b)** is the realistic *bridge* between pilot and a signed zero-rating deal.
+
+**Recommended sequencing for Sabi:** Pilot on **flash-callback over SIP (AT or MTN SIP trunk)** to prove usage + learning gains at ~$1–1.5K total → use that pilot data (à la Bakame/Rori RCT) to negotiate an **MTN/Airtel zero-rating or donated-airtime deal** (pitch with the GSMA "Beyond CSR" + retention framing) → with traction, pursue the **Bakame-style government-purchase** endgame for permanent free access. Avoid buying retail 0800 minutes as the scaling plan — no comparable org does.
+
+**Reference infra costs already in our research:** MTN Nigeria SIP trunk (Standard) = **₦450,000 one-off setup + ₦37,625/mo rental, 30 concurrent sessions, on/off-net tariff 22 kobo/sec (≈₦13.20/min)** — usable for the callback model. ([MTN SIP trunk](https://www.mtn.ng/business/sip-trunking/))
+
+---
+
+## Caveats / confidence
+- **Hardest gap:** no Nigerian provider publishes a per-minute 0800 inbound rate; all quote on application against a deposit. My ₦15–₦25/min 0800 assumption is *derived* from the ₦15.40/min retail tariff + margin, not a quoted figure. To firm up, you'd need written quotes from MTN Business, Alpha, InfoTek, Yana, Vezeti.
+- **AT Nigeria naira voice rates** sit behind the dashboard PDF; the structural model (both parties billed on inbound, no Nigerian toll-free, cheap SIP-to-SIP) is confirmed, but the exact ₦/min needs a signed-up account to confirm.
+- **MTR is mid-revision** (NCC forum 16 June 2026) — the ₦3.90 floor will likely rise, shifting every estimate upward; revisit after the determination publishes.
+- FX (₦1,600/$) and the 20-min/week usage assumption are the two biggest swing variables in the cost table — both are stated so they can be flexed in a deck.
+agentId: acd44c1ca917d9e9e (use SendMessage with to: 'acd44c1ca917d9e9e' to continue this agent)
+<usage>subagent_tokens: 100100
+tool_uses: 26
+duration_ms: 277309</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

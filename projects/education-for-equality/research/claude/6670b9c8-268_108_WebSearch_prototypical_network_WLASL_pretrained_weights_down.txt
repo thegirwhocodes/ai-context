@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: prototypical network WLASL pretrained weights download ready inference sign lang
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:33:37 UTC
+========================================================================
+
+Search query: prototypical network WLASL pretrained weights download ready inference sign language
+
+----------------------------------------
+
+Web search results for query: "prototypical network WLASL pretrained weights download ready inference sign language"
+
+Links: [{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"},{"title":"GitHub - sumedhsp/Sign-Language-Recognition: Sign Language Recognition (I3D + Transformers) on WLASL Dataset - Computer Vision Final Project (CS-GY 6643)","url":"https://github.com/sumedhsp/Sign-Language-Recognition"},{"title":"WLASL/README.md at master · dxli94/WLASL","url":"https://github.com/dxli94/WLASL/blob/master/README.md"},{"title":"Data-Efficient American Sign Language Recognition via Few-Shot Prototypical Networks","url":"https://arxiv.org/html/2512.10562"},{"title":"sharonn18/tgcn-wlasl · Hugging Face","url":"https://huggingface.co/sharonn18/tgcn-wlasl"},{"title":"GitHub - hulianyuyy/DSTA-SLR: Dynamic Spatial-Temporal Aggregation for Skeleton-Aware Sign Language Recognition (COLING2024)","url":"https://github.com/hulianyuyy/DSTA-SLR"},{"title":"GitHub - alanjeremiah/WLASL-Recognition-and-Translation: World Level American Sign Language Recognition and Translation to Spoken Language","url":"https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"},{"title":"Word-level Deep Sign Language Recognition from Video:","url":"https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Word-level_Deep_Sign_Language_Recognition_from_Video_A_New_Large-scale_WACV_2020_paper.pdf"},{"title":"GitHub - oussamaouardini/WLASL-CLASSIFICATION: Word level american sign language video cllassification using ConvLSTM, LRCN, CNN","url":"https://github.com/oussamaouardini/WLASL-CLASSIFICATION"}]
+
+Based on the search results, I found relevant information about prototypical networks, WLASL, and pretrained weights for sign language recognition:
+
+## Prototypical Networks for WLASL
+
+Research has explored prototypical networks specifically for sign language recognition, utilizing a Few-Shot Learning paradigm with Prototypical Networks. A Few-Shot Prototypical Network framework has been proposed adapted for skeleton-based encoders that learn a semantic metric space where signs are classified based on proximity to dynamic class prototypes, integrating a Spatiotemporal Graph Convolutional Network (ST-GCN) with a novel Multi-Scale Temporal Aggregation (MSTA) module.
+
+## Pretrained Weights and Inference
+
+Several resources provide pretrained weights ready for inference on WLASL:
+
+1. **Official WLASL Repository**: To test pre-trained models, you can download WLASL pre-trained weights and unzip them into a folder I3D/archived/
+
+2. **TGCN Model on Hugging Face**: A Temporal Graph Convolutional Network (TGCN) model is available for word-level American Sign Language recognition, trained on the WLASL dataset, which implements a Temporal Graph Convolutional Network with Multi-Head Attention that processes temporal sequences of 55 body keypoints extracted from sign language videos. The repository contains 4 pre-trained model variants with Graph Convolutional Layers, Temporal Modeling, Multi-Head Attention, and Residual Connections.
+
+3. **Other Skeleton-Based Models**: Pretrained weights for skeleton-aware models on the WLASL2000 dataset are available to validate performance, which can be specified in the configuration file for testing.
+
+The main WLASL GitHub repository and Hugging Face model hub are the primary sources for accessing ready-to-use pretrained weights for sign language inference tasks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

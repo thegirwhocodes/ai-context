@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS Shortcuts Notes app audio recording export save to files automation 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 03:50:32 UTC
+========================================================================
+
+Search query: iOS Shortcuts Notes app audio recording export save to files automation 2026
+
+----------------------------------------
+
+Web search results for query: "iOS Shortcuts Notes app audio recording export save to files automation 2026"
+
+Links: [{"title":"Shortcut \"Record Audio\", how to save local - Apple Community","url":"https://discussions.apple.com/thread/252149524"},{"title":"Record and transcribe audio in Notes on iPhone - Apple Support","url":"https://support.apple.com/guide/iphone/record-and-transcribe-audio-iphbe11247b5/ios"},{"title":"record speech in apple notes? - Apple Community","url":"https://discussions.apple.com/thread/253209514"},{"title":"Where are “record audio” shortcut files s… - Apple Community","url":"https://discussions.apple.com/thread/250097944"},{"title":"What’s new in Shortcuts - Apple Support","url":"https://support.apple.com/en-us/101583"},{"title":"Voice record daily thoughts, redact with GPT4, and save to Apple Notes using Shortcuts. | Jakob Serlier's Personal Site","url":"https://jakobs.dev/voice-record-daily-notes-redact-gpt4-apple-shortcuts/"},{"title":"What’s new in Shortcuts for iOS 26, iPadOS 26, macOS 26, watchOS 26, and visionOS 26 - Apple Support","url":"https://support.apple.com/en-us/125148"},{"title":"‘Dictate a Note’ is my new favorite shortcut (and that’s saying something) - HeyDingus","url":"https://heydingus.net/blog/2024/12/dictate-a-note-is-my-new-favorite-shortcut-and-thats-saying-something"},{"title":"iOS 18: Recording Audio With Transcripts in Notes - MacRumors","url":"https://www.macrumors.com/how-to/ios-record-audio-transcribe-notes-app/"},{"title":"How to record audio and get transcripts in Notes on iOS 18 | Popular Science","url":"https://www.popsci.com/diy/how-to-record-audio-make-transcripts-iphone/"}]
+
+I've completed the web search for your query. Here's what I found:
+
+## Key Findings:
+
+**iOS Shortcuts Audio Recording and File Management:**
+In the Save File action, if you have "Ask Where to Save" set to On, when your shortcut runs, it will allow you to choose a folder in "On My iPhone" instead of iCloud Drive, making recordings stored locally rather than in the cloud.
+
+**Notes App Audio Recording (iOS 18):**
+The new audio recording tool in Notes offers more than just simple voice capture, as users record, the app automatically generates a real-time transcript. To use the feature, open the Notes app and create a new note, tap inside the note then select the paperclip icon from the menu above the keyboard, choose Record Audio from the pop-up menu, and press the red record button to start recording.
+
+**2026 Shortcuts Updates:**
+This update includes enhancements to the Shortcuts app across all platforms, including new intelligent actions and an improved editing experience, and Shortcuts on macOS now supports personal automations that can be triggered based on events such as time of day or when you take actions like saving a file to a folder.
+
+The search results show various methods for recording audio with iOS Shortcuts and saving to the Files app, as well as using the native Notes app recording feature with automatic transcription capabilities.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

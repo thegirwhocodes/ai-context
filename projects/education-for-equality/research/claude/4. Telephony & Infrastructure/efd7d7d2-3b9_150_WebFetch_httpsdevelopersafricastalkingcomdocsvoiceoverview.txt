@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/overview
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:48:35 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/overview
+Extraction prompt: How does Africa's Talking voice API work? How do you make outbound calls? How do SIP connections work? What's the voice callback flow? How do you initiate a call programmatically?
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

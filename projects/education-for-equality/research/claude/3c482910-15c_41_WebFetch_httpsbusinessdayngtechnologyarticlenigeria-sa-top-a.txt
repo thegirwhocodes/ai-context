@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://businessday.ng/technology/article/nigeria-sa-top-african-countries-with-
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-25 23:03:40 UTC
+========================================================================
+
+URL: https://businessday.ng/technology/article/nigeria-sa-top-african-countries-with-most-mobile-phone-ownership-usage/
+Extraction prompt: Extract the exact percentage of mobile phone ownership in Nigeria and any breakdown by urban/rural, Lagos, or household level. What survey or source are the numbers from? Get exact figures.
+
+----------------------------------------
+
+I cannot extract the specific percentage of mobile phone ownership in Nigeria from the provided content. While the webpage title indicates "Nigeria, SA top African countries with most mobile phone ownership, usage," the actual article text is not included in the material you provided—only the page's HTML structure, CSS styling, and JavaScript code are present.
+
+To obtain the exact figures you're seeking, you would need to:
+
+1. Access the full article at: businessday.ng/technology/article/nigeria-sa-top-african-countries-with-most-mobile-phone-ownership-usage/
+2. Review the actual article body for specific percentages and survey sources
+3. Check for any breakdowns by geography (urban/rural, Lagos) or household level
+
+The metadata shows the article was published June 19, 2025, by Chinwe Michael, but the substantive content needed to answer your question is unavailable in this dataset.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

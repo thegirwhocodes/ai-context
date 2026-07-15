@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://curriculum.eleducation.org/curriculum/ela/grade-4
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:48:48 UTC
+========================================================================
+
+URL: https://curriculum.eleducation.org/curriculum/ela/grade-4
+Extraction prompt: Extract the complete list of all modules, units, and topics for the Grade 4 ELA curriculum. List the module names and what each module covers.
+
+----------------------------------------
+
+# Grade 4 ELA Curriculum Modules
+
+Based on the webpage content, the Grade 4 ELA curriculum includes four modules:
+
+1. **ELA G4:M1 - "Poetry, Poets, and Becoming Writers"**
+   - Focuses on introducing students to poetry and developing their identities as writers
+
+2. **ELA G4:M2 - "Researching to Build Knowledge and Teach Others: Animal Defense Mechanisms"**
+   - Emphasizes research skills with content centered on how animals protect themselves
+
+3. **ELA G4:M3 - "The American Revolution"**
+   - Addresses historical content related to the founding era of the United States
+
+4. **ELA G4:M4 - "Responding to Inequality: Ratifying the 19th Amendment"**
+   - Explores themes of social justice through the lens of women's suffrage history
+
+The webpage indicates that detailed unit-level information is available through expandable sections for each module, though specific unit titles are not displayed in the provided content. All modules include downloadable materials and are currently available for implementation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

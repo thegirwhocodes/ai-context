@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google OAuth verification 2026 restricted scopes gmail.readonly CASA security as
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-30 06:26:28 UTC
+========================================================================
+
+Search query: Google OAuth verification 2026 restricted scopes gmail.readonly CASA security assessment cost timeline test mode workaround
+
+----------------------------------------
+
+Web search results for query: "Google OAuth verification 2026 restricted scopes gmail.readonly CASA security assessment cost timeline test mode workaround"
+
+Links: [{"title":"Restricted scope verification | App verification to use Google Authorization APIs | Google for Developers","url":"https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification"},{"title":"Casa verification","url":"https://groups.google.com/g/google-apps-script-community/c/XgsHT2Fr7u8"},{"title":"Google OAuth Verification & Gmail API Credentials (2026) - Unipile","url":"https://www.unipile.com/integrating-google-oauth-2-0-user-authentication-into-your-app/"},{"title":"How We Passed Google CASA Tier 2 in a Weekend (With Claude as Our Security Engineer) | Orbis Blog","url":"https://meetorbis.com/blog/how-we-passed-google-casa-tier-2-with-claude"},{"title":"How to Pass Google OAuth Verification for Workspace Add-ons (My Full 2025 Guide) | Medium","url":"https://medium.com/@info.brightconstruct/the-real-oauth-journey-getting-a-google-workspace-add-on-verified-fc31bc4c9858"},{"title":"Sensitive scope verification | App verification to use Google Authorization APIs | Google for Developers","url":"https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification"},{"title":"Google CASA – Cloud Application Security Assessment","url":"https://deepstrike.io/blog/google-casa-security-assessment-2025"}]
+
+Based on the web search results, here's comprehensive information about Google OAuth verification, restricted scopes, and CASA security assessments:
+
+## Scope Classification & Timeline
+
+Apps requesting sensitive Gmail scopes like gmail.readonly typically require 2-4 weeks for Google's full security assessment when the submission is complete. However, gmail.readonly is a restricted scope, which triggers Tier 3: a full penetration test that costs thousands of dollars and takes weeks.
+
+Importantly, gmail.modify is classified as sensitive (Tier 2), not restricted. It lets you read, draft, send, and modify labels - but critically, it does not allow permanent deletion of emails. This distinction can save significant time and cost.
+
+## CASA Security Assessment
+
+Google uses the App Defense Alliance and the cloud application security assessment framework (CASA). Apps requesting restricted scopes must complete a CASA Tier 2 security assessment in addition to Google's own review (4-12+ weeks), which is an independent security audit conducted by a Google-approved lab.
+
+Apps must be reverified for compliance and complete a security assessment at least every 12 months after your assessor's Letter of Assessment (LOA) approval date.
+
+## Cost & Assessment Changes
+
+Typical assessment costs range from a few hundred to a few thousand dollars per year depending on tier. Authorized labs such as TAC Security, Leviathan, and DEKRA handle the testing, reporting a Letter of Validation (LOV) to Google.
+
+Tier 2 self-scan is no longer an option. While this means developers will incur a cost paid to an independent assessor, Google has worked to ensure this doesn't pose an undue burden.
+
+## Workaround Strategy
+
+Choosing minimal scopes can move you from the restricted (CASA-required) track to the sensitive (free review) track, saving time and cost. Instead of requesting gmail.readonly which triggers Tier 3, developers can use gmail.modify, which is classified as sensitive (Tier 2).
+
+## Test Mode & Verification Status
+
+Until an app passes review, it is considered unverified - meaning users see a warning screen and developers are limited to 100 test users maximum.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

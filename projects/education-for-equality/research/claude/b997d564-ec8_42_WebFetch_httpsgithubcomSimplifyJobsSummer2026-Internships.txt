@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/SimplifyJobs/Summer2026-Internships
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 06:01:31 UTC
+========================================================================
+
+URL: https://github.com/SimplifyJobs/Summer2026-Internships
+Extraction prompt: List every non-technical/business/GTM/operations/product internship posted in the last 3 days (April 15-18, 2026). Include company name, role, location, and apply link. Skip software engineering roles unless they're at AI startups.
+
+----------------------------------------
+
+I appreciate your request, but I need to be transparent: **the webpage content provided doesn't contain the internship listing data you're asking for.**
+
+The page you've shared is a GitHub repository header/navigation for "Summer2026-Internships" by SimplifyJobs. It shows the repository structure (folders, file names, star count: 44.2k) but doesn't include the actual internship listings themselves.
+
+To fulfill your request for non-technical internships posted April 15-18, 2026, I would need:
+- The README.md file content
+- The actual internship list/database from the repository
+- Posts or updates from that specific date range
+
+**What you could do:**
+1. Share the README.md or main listing file content
+2. Provide the specific internship data table/list from the repository
+3. Link to the processed list on swelist.com (mentioned in the repo description)
+
+Once you share the actual internship data, I'll gladly filter for business/operations/product roles from that timeframe with the details you requested.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

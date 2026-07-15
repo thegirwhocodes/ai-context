@@ -1,0 +1,27 @@
+========================================================================
+AGENT RESEARCH: Map messaging feature contracts
+Session: 61a29b5c-91ba-46f7-accb-278fc2b06ea7
+Time: 2026-07-14 22:10:57 UTC
+========================================================================
+
+You are mapping code contracts in a Next.js App Router repo at /Users/naomiivie/cortex/cortex-web (read-only; do not edit). I need a precise, factual map of the MESSAGING/INGESTION features so another engineer can write independent acceptance tests. Focus ONLY on these areas:
+
+1. WhatsApp: app/api/integrations/whatsapp/{connect,subscribe,sync}/route.ts and any lib under lib/ or app/lib related to whatsapp/meta. How is connection status determined and reported? Is status truthful (does it reflect real credential/connection state vs hardcoded)? What does the connect flow require?
+2. iMessage: scripts/export-imessage.mjs and any ingestion route (app/api/integrations/local/import). Is ingestion repeatable/idempotent? How are records deduped on re-import?
+3. Instagram multiple accounts: app/api/integrations/instagram/* and scripts/check-multi-account-schema.mjs and scripts/export-instagram-data.mjs. Does the schema/support multiple Instagram accounts per user? How is a specific account identified?
+4. Files/Notes incremental watching: scripts/export-apple-notes.mjs, any files/notes ingestion, and desktop bridge (scripts/check-desktop-bridge-smoke.ts, app/api/integrations/local/import). Is there incremental watching (cursor/watermark/mtime) vs full re-scan?
+
+For EACH area report: exact file paths, exported function names and their signatures, the HTTP method + request/response shape of routes, any database table/schema names touched, how status is computed, and whether there is idempotency/incremental logic. Quote the specific lines (with file:line) that prove status truthfulness or idempotency. Note any place where status is faked/hardcoded/optimistic. Be concise but precise — return a structured report with file:line citations. Do not write any files.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: ae6d188d279c84638 (internal ID - do not mention to user. Use SendMessage with to: 'ae6d188d279c84638', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/61a29b5c-91ba-46f7-accb-278fc2b06ea7/tasks/ae6d188d279c84638.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

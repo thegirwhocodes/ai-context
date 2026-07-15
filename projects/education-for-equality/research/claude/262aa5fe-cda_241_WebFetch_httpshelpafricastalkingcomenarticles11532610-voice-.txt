@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/11532610-voice-sandbox
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:34:19 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/11532610-voice-sandbox
+Extraction prompt: Quote everything about configuring a voice phone number in the Africa's Talking dashboard. What is the Voice menu? What pages exist under Voice? What is a "Voice number callback URL" and how do you set it? What's the difference between an incoming call URL and an event URL? Are there detailed dashboard navigation instructions?
+
+----------------------------------------
+
+# Voice Configuration Information
+
+Based on the provided content, I can only find limited information about Voice phone number configuration.
+
+**Available Information:**
+
+The article mentions navigating to: "Log in to your Account>click on the app>Voice> Phone number>Under Voice-Phones>fill in the request form"
+
+The process involves selecting "Voice Service" as the product and choosing "Test Number" in the voice form.
+
+**Not Covered in This Document:**
+
+The webpage does not address:
+- Voice menu structure or available pages
+- Voice number callback URL configuration or definition
+- Differences between incoming call URLs and event URLs
+- Detailed dashboard navigation instructions
+
+**Recommendation:**
+
+For comprehensive configuration details about callback URLs, event URLs, and the full Voice menu structure, you would need to consult additional Africa's Talking documentation. The article suggests contacting "voice@africastalking.com for technical assistance" for further guidance.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

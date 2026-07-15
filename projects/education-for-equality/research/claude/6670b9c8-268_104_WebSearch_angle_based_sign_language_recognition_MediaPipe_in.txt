@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "angle based" sign language recognition MediaPipe invariant features joint angle
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:26:14 UTC
+========================================================================
+
+Search query: "angle based" sign language recognition MediaPipe invariant features joint angles accuracy improvement 2025
+
+----------------------------------------
+
+Web search results for query: ""angle based" sign language recognition MediaPipe invariant features joint angles accuracy improvement 2025"
+
+Links: [{"title":"Geometry-Aware Metric Learning for Cross-Lingual Few-Shot Sign Language Recognition on Static Hand Keypoints","url":"https://arxiv.org/html/2603.09213"},{"title":"3D geometric features based real-time American sign language recognition using PointNet and MLP with MediaPipe hand skeleton detection - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2665917424006731"},{"title":"Enhancing Sign Language Detection through Mediapipe and Convolutional Neural Networks (CNN)","url":"https://arxiv.org/html/2406.03729v1"},{"title":"[2603.09213] Geometry-Aware Metric Learning for Cross-Lingual Few-Shot Sign Language Recognition on Static Hand Keypoints","url":"https://arxiv.org/abs/2603.09213"},{"title":"Real-Time Norwegian Sign Language Recognition Using MediaPipe and LSTM | MDPI","url":"https://www.mdpi.com/2414-4088/9/3/23"},{"title":"Angle Based DTW for Large Vocabulary Sign Retrieval | Springer Nature Link","url":"https://link.springer.com/chapter/10.1007/978-3-032-14495-9_30"},{"title":"3D geometric features based real-time American sign language recognition using PointNet and MLP with MediaPipe hand skeleton detection","url":"https://publica.fraunhofer.de/entities/publication/72d61b15-3005-425a-bb28-3c5e8b5f1833"},{"title":"Sign Language Recognition with Multimodal Sensors and Deep Learning Methods","url":"https://www.mdpi.com/2079-9292/12/23/4827"},{"title":"SLRNet: A Real-Time LSTM-Based Sign Language Recognition System","url":"https://arxiv.org/html/2506.11154v1"},{"title":"Real-Time Recognition of American Sign Language Using Mediapipe and Machine Learning Techniques | Journal of Information Systems Engineering and Management","url":"https://jisem-journal.com/index.php/journal/article/view/9436"}]
+
+I found several relevant research papers and studies on angle-based sign language recognition using MediaPipe. Here are the key findings:
+
+## Geometry-Aware Metric Learning with Joint Angles (Most Recent, March 2026)
+
+A recent study proposes a set of 20 inter-joint angles computed from MediaPipe static hand keypoints, which are provably invariant to rotation, translation, and isotropic scaling. Because the angle embedding is intrinsically invariant to rigid transforms, it requires no spatial normalization across camera setups and is more privacy-preserving than RGB pipelines.
+
+## 3D Geometric Features and Joint Angles
+
+Research utilizing the 21 hand keypoints predicted by MediaPipe calculates additional 3D geometric features, including the angles of each finger joint, which are then subjected to deeper feature extraction using a Multilayer Perceptron (MLP).
+
+## Accuracy Improvements in Recent 2025 Studies
+
+A Norwegian Sign Language recognition system using MediaPipe and LSTM networks achieves a testing accuracy of 95%. Additionally, a study using Random Forest with MediaPipe-extracted features achieved an accuracy of 98.83%.
+
+## Angle and Magnitude Feature Extraction
+
+Using MediaPipe and OpenCV, angle and magnitude features were extracted from the detected hand and lip landmarks to improve recognition accuracy.
+
+These recent studies demonstrate that angle-based features derived from MediaPipe keypoints provide invariant, efficient representations that improve sign language recognition accuracy across different datasets and camera conditions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

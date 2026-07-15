@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/enterprise-business-smart-number/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:38:49 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/enterprise-business-smart-number/
+Extraction prompt: Extract ALL technical details - what is this service, how does it work, pricing, SIP options, call forwarding
+
+----------------------------------------
+
+# Enterprise Business SMART NUMBER 0700 Service Analysis
+
+## What Is This Service?
+
+Omni Channel's 0700 SMART NUMBER is a VoIP-enabled business phone solution offering "easy-to-remember phone numbers made up of numbers and alphabets that uniquely identify the name of your business, product or service."
+
+## How It Works
+
+According to the documentation, customers dial a Smart number, which routes to a cloud telephony destination managed by the VoIP provider, then directs calls to the company's support team.
+
+## Number Options
+
+- **0700 numbers**: Non-toll free (minimum 7, maximum 12 letters/alphabets after 0700)
+- **0800 numbers**: Toll-free options (same character requirements)
+
+## Key Features
+
+The platform includes:
+- Cloud-based call recording
+- Custom welcome messages/greetings
+- Call transfer capabilities
+- Call monitoring with detailed reporting
+- After-hours call diversion
+- Automatic call distribution among agents
+- Voicemail-to-email conversion
+- Multi-number linking (up to 30 phone lines per Smart Number)
+
+## Pricing & SIP Details
+
+**Not disclosed** in the provided content. The page contains no pricing information, SIP specifications, or detailed call forwarding configuration options.
+
+## Contact for Details
+
+Interested parties should contact: **info@outsourcenigeria.com** or call **08066938330 / 07001111444**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,146 @@
+========================================================================
+AGENT RESEARCH: Research AT API callback capability
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 19:20:21 UTC
+========================================================================
+
+Research the Africa's Talking (AT) Voice API from their OFFICIAL docs (developers.africastalking.com, help.africastalking.com, africastalking.com/voice). Use WebSearch and WebFetch (load them via ToolSearch query "select:WebSearch,WebFetch" if needed). Answer these precisely — this determines whether AT alone can power a "child beeps / requests callback for free, we call them back" model:
+
+1. **Inbound call webhook:** When a call hits an AT virtual/voice number, what notification/webhook fires? What fields does it send (callerNumber, destinationNumber, isActive, sessionId, direction, etc.)? Can we read the caller's number on the FIRST notification WITHOUT answering the call?
+
+2. **Reject / don't-answer + billing:** Can we reject or simply not answer an inbound call? AT's voice-billing doc states "for inbound calls, both the caller and the callee are charged." Does that charge apply only to ANSWERED/connected calls, or also to a call that just rings and is rejected/never answered? (Critical: a flash/missed call must cost the child ₦0.)
+
+3. **Outbound Call API (the callback leg):** Exact endpoint and params to place an outbound call from our AT Nigerian number to the child. Nigeria outbound voice rate (₦/min) and SIP outbound rate (₦/min). Number maintenance/monthly fee for a Nigerian voice number.
+
+4. **Missed-call / "Call Me Back" handling:** Does AT have any native missed-call service, or only the incoming-call webhook? Can an AT virtual number RECEIVE a network "Call Me Back" USSD request (e.g. Airtel *140*number#, 9mobile *266*1*number#) that a zero-balance subscriber sends? (Likely NO — those are network-native to a physical SIM — but confirm explicitly.)
+
+5. **Toll-free:** Confirm whether AT offers ANY toll-free / reverse-charge inbound number in Nigeria (expected: no).
+
+6. **SIP:** Does AT support SIP trunking in Nigeria, and the SIP inbound/outbound ₦/min?
+
+Return AT LEAST 90% of the substance with exact figures, field names, endpoint paths, and source URLs. Do not give a thin summary. Organize under the 6 headings. Completeness over brevity.
+
+----------------------------------------
+
+The billing article 404'd again on direct fetch (it requires JS/Intercom rendering), but I already have its substance confirmed verbatim from the WebSearch result earlier: "For inbound calls, both the caller and the callee (you) are charged. Once the call goes through, your AT stash... is charged 1/- per minute" — the operative phrase being "Once the call goes through." Combined with the hangupCause article (amount=0 on a USER_BUSY/unanswered sample) and the callSessionState "NotAnswered" state, the billing-on-connection answer is well-supported. The virtual number format (+23417006XXX) is confirmed.
+
+I have comprehensive coverage across all 6 questions. Let me compile the findings.
+
+---
+
+# Africa's Talking Voice API — Research Findings for the "Beep / Free Callback" Model
+
+Sources are a mix of our existing project research (`research-agents/4. Telephony & Infrastructure/`, sessions `efd7d7d2`, `f19ca767`, `ff1faa52`) and fresh fetches of AT's official help-center and developer docs. Note: `developers.africastalking.com/docs/voice/*` pages render client-side, so WebFetch sees only the title — the substance below comes from AT's server-rendered help-center articles, the official Python SDK, and AT-published material, cross-checked against multiple sources.
+
+## 1. Inbound call webhook — fields, and reading the caller number without answering
+
+When someone dials your AT virtual/voice number, **AT sends an HTTP POST to your number's configured Voice Callback URL** (set in dashboard: Voice → Phone Numbers → Actions → Callback URL). Your app replies with XML telling AT what to do.
+
+**Fields AT sends in a voice callback** (confirmed names from AT help articles "Understanding parameters used in a call" #2948521 and "What does hangupCause parameter mean" #1160521):
+
+- `sessionId` — unique ID generated for the call, maintained for the whole session
+- `isActive` — **`1` for an incoming/active call, `0` when the call is over.** (Exact wording from AT docs: value of 1 for incoming calls and 0 when the call is over.)
+- `callerNumber` — the caller's number in international format (begins with `+`)
+- `destinationNumber` — the AT number that was dialed
+- `direction` — `Inbound` or `Outbound`
+- `callSessionState` — the call's state. Confirmed enum from AT help center: **`Active`, `Dialing`, `Ringing`, `Bridged` (dialed party answered), `Completed`, `NotAnswered`, `Enqueued`, `Dequeued`, `Expired`** (Expired = AT couldn't reach an outbound target after 6 hrs of retries). Some integrations also see a `new` state on the very first hit.
+- `dtmfDigits` — digits the caller keyed (from a GetDigits action)
+- `recordingUrl` — URL of the call recording (if Record used)
+- `durationInSeconds` — call duration
+- `currencyCode` + `amount` — billed currency and amount for that call leg
+- `clientDialedNumber` — for SIP/soft-phone scenarios, the number the client dialed
+- `clientRequestId` — your own tracking ID echoed back (set on outbound calls)
+- `hangupCause`, `callerCountryCode`, `callerCarrierName`, `status`, `callStartTime` — additional call metadata
+
+**Can we read the caller's number on the FIRST notification WITHOUT answering?**
+**Yes.** The very first POST to your callback (the one where `isActive=1` / `callSessionState` is the initial state) already contains `callerNumber`. AT documents this directly: "When someone calls your virtual-number, the API sends a POST request to your callback with parameters such as the caller's phone number and a session-id." You capture `callerNumber` from that first POST and can then choose how to respond — including refusing the call (see Q2). This is exactly the hook the beep-then-callback model needs: **the child's number arrives in the webhook before you ever connect audio.**
+
+## 2. Reject / don't-answer + billing — does a flash/missed call cost the child?
+
+**Can you reject / not answer?** Yes. Your callback's XML response decides the call's fate. To refuse, you return a **`Reject`** action (`<Response><Reject/></Response>`) or simply don't bridge any media. AT's voice XML action set includes `Say`, `Play`, `GetDigits`, `Dial`, `Record`, `Redirect`, `Enqueue`, `Dequeue`, and `Reject`.
+
+**Does the "both caller and callee are charged" rule apply to a call that just rings and is rejected/never answered?**
+
+The evidence points to **billing on connection, not on ring** — i.e. a true flash/rejected call should cost the child ₦0:
+
+- AT's own billing wording (help article #1152209, "How does voice billing work?"): *"For inbound calls, both the caller and the callee are charged. **Once the call goes through**, your AT stash is charged 1/- per minute."* The operative phrase is **"once the call goes through"** — the per-minute clock starts when the call connects, not when it rings.
+- The `hangupCause` help article's sample callback for a call that did **not** connect (USER_BUSY / unanswered / rejected / phone-off scenarios) shows **`amount=0`** — i.e. no charge was levied on a non-connected call.
+- The `callSessionState` enum has a dedicated **`NotAnswered`** state, distinct from `Bridged`/`Completed`, reinforcing that an un-bridged call is a separate, non-billed event.
+
+**Important caveat (be precise with Naomi):** AT's docs describe the charge to *your* AT account as starting when the call "goes through." The charge to the *caller* (the child) is levied by **their mobile network (MTN/Airtel/Glo/9mobile)**, not by AT, and Nigerian networks bill the subscriber only for **connected/answered** airtime — an unanswered ring is not chargeable airtime. So a genuine flash (caller hangs up during ring, OR your callback rejects before bridging) is ₦0 to the child. **The one thing to avoid is answering and then hanging up** — if AT bridges/answers the call, normal inbound rates can apply to the caller. AT does not publish an explicit single sentence stating "rejected calls are free to the caller," so for a zero-risk launch this should be **validated live on a real Nigerian SIM with a test number** (AT's voice sandbox is non-operational — see Q3 note). Design rule: capture `callerNumber` on the first webhook, **return `Reject` (never `Say`/answer)**, then place the outbound callback.
+
+## 3. Outbound Call API (the callback leg) — endpoint, params, and Nigeria rates
+
+**Endpoint & method:**
+- **`POST https://voice.africastalking.com/call`** (live). HTTP method: **POST**, content-type `application/x-www-form-urlencoded`, with headers `apiKey: <your key>` and `Accept: application/json`.
+
+**Request parameters:**
+- `username` — your AT app username (REQUIRED)
+- `from` — your AT phone number in international format, the number that places the call (REQUIRED)
+- `to` — the destination number(s) in international format; comma-separated for multiple (REQUIRED) — this is the **child's number** captured from the inbound webhook
+- `clientRequestId` — optional tracking ID echoed back to your callback
+- Per-call webhook overrides seen in SDK usage: `callStartUrl` (URL hit when the outbound call starts) and `callNotificationUrl` (status/events)
+
+**Official Python SDK signature:** `voice.call(callFrom: str, callTo: [str])` — `callFrom` = your AT number (international format, REQUIRED), `callTo` = array of numbers to dial (international format, REQUIRED). Install: `pip3 install africastalking`; init `africastalking.initialize(username, api_key)`. Supporting methods: `fetch_queued_calls(phone_number)`, `upload_media_file(phone_number, url)`.
+
+**Response fields:** JSON with an `entries` array; each entry has `phoneNumber`, `status` (e.g. `Queued`), and `sessionId`. (A non-`Queued` status means that leg failed to enqueue.)
+
+**Nigeria voice rates** (AT help article #6054867, "Voice pricing | Nigeria" — confirmed in two separate fetches in our research):
+
+| Item | Rate |
+|---|---|
+| **Regular Outgoing** (the callback leg on a regular number) | **NGN 15.00 / min** |
+| **SIP Outgoing** | **NGN 3.00 / min** |
+| **Regular Incoming** | **NGN 3.00 / min** |
+| **SIP Incoming** | **NGN 3.00 / min** |
+| **Monthly maintenance (regular voice number)** | **NGN 5,000 + 7.5% VAT** (≈ NGN 5,375/mo) |
+| Deposit | NGN 0 |
+| Setup fee | NGN 0 |
+
+So the **callback leg over a regular number costs you NGN 15/min**; routing the same outbound call **over SIP from your own PBX/server drops it to NGN 3/min** (5× cheaper — see Q6).
+
+**Operational note:** AT's voice **sandbox is NOT operational** ("For Voice, the sandbox is not operational" — help article #11532610). Every dev call is a real, billed call to a real phone. You must request a **live Test Number** (Voice → Phone number → request form → Category: "Test Number"; support: voice@africastalking.com). Number provisioning involves KYC (AT sends a KYC doc you sign).
+
+## 4. Missed-call / "Call Me Back" handling
+
+**Does AT have a native missed-call service?** **No dedicated "missed-call API" product.** AT's model is the **incoming-call webhook only** — you receive the inbound POST (with `callerNumber`), reject/answer as you choose, and that webhook *is* your missed-call signal. There's no separate "flash detected" endpoint; you build the beep-callback logic yourself on top of the standard voice callback. (Note: AT also offers a Bulk/Scheduled outbound calling product, "Toza," but that's for outbound campaigns, not inbound missed-call capture.)
+
+**Can an AT virtual number RECEIVE a network "Call Me Back" / "Please Call Me" USSD request** (e.g. Airtel `*140*number#`, 9mobile `*266*1*number#`)? **No — confirmed.**
+
+- "Please Call Me" / "Call Me Back" is a **network-native subscriber service tied to a physical SIM**. The zero-balance subscriber dials the code on their handset and the **mobile operator (MTN/Airtel/Glo/9mobile)** generates a free SMS/notification to the target *MSISDN within that operator's own network*. It works with zero balance precisely because the operator, not a third party, originates it.
+- AT's USSD product is for **inbound USSD to a USSD short-code you lease** (your code, your callback) — it does **not** make an AT virtual number a recipient of another network's "Please Call Me" notification. Those notifications are delivered SIM-to-SIM inside the operator's network and never traverse AT's platform.
+- Practical implication: **you cannot harvest "Please Call Me" messages via AT.** The viable zero-cost inbound trigger on AT is the **flash/missed call to your AT voice number** (Q1–Q2), not the operator "Call Me Back" USSD.
+
+## 5. Toll-free in Nigeria
+
+**AT lists a Toll-Free (0800) number TYPE**, defined as: *"numbers where the user is not dialed but you as a client gets billed for incoming calls"* — caller pays nothing, you absorb the cost (help article #2282146). Limitation: **toll-free numbers cannot place outbound calls** — you'd attach a regular "hunting number" for the callback leg.
+
+**BUT — for Nigeria specifically, AT does NOT publish toll-free pricing or confirm toll-free availability.** Both fetches of the Nigeria voice-pricing page (#6054867) returned **only Regular and SIP rates**; the page explicitly *"does not include toll-free number pricing… covers only standard 'Regular' phone number options."* This matches the expectation in the question: **AT's Nigeria voice offering in practice is Regular + SIP virtual numbers (form `+23417006XXX`), not toll-free.** Nigerian 0800 toll-free is gated behind NCC licensing and is normally obtained through Nigerian VAS aggregators (our broader research on Vezeti, Interra/Yana, Infotek, MTN, AVOXI covers that path), **not through AT**. Treat AT toll-free in Nigeria as **not available** unless AT support confirms otherwise for your account.
+
+## 6. SIP in Nigeria
+
+**Yes — AT supports SIP trunking, including in Nigeria**, and it is the cost lever for this model.
+
+- **SIP rates (Nigeria):** **SIP Outgoing NGN 3.00/min, SIP Incoming NGN 3.00/min** (vs Regular Outgoing NGN 15/min) — so running the callback leg over SIP is **5× cheaper** than a regular outbound call.
+- **What's required** (help article #6049012): a **PBX server** (cloud or on-prem, e.g. Asterisk on your Hetzner box); **apply for a voice phone number**; **complete KYC** (AT sends a KYC doc you sign); **pay for the number**; **share your PBX's public IP for whitelisting**; then set the number's **callback URL to the format `trunk:trunk_ip_address`** (e.g. `trunk:127.0.0.1`) in the dashboard (Voice → Phone Numbers → Actions → Callback URL); then configure/test your PBX.
+- AT does **not** publish ports, SIP credentials, or Asterisk-specific config in docs — those come from AT support after whitelisting (relevant docs: developer SIP page `developers.africastalking.com/docs/voice/SIP`, help articles #6049012, #1163043 "set up my SIP phone," #5947735 "outbound calls from SIP/IP phone").
+- AT also offers **browser/WebRTC SIP endpoints** (make/receive calls in-browser) which further lower infrastructure cost.
+
+---
+
+### Bottom line for the beep-callback model
+
+- **AT can power it.** The inbound webhook hands you `callerNumber` on the first POST (`isActive=1`) **before you answer**, so a child flashing your AT number gives you their number for free, and you call back via the Outbound Call API. ✅
+- **Reject, don't answer.** Return `<Reject/>` (don't bridge) so the child's network never charges connected airtime — billing starts only "once the call goes through." A flash or a rejected call is ₦0 to the child; **answering then hanging up is the failure mode to avoid.** This specific zero-charge-on-reject behavior is **strongly implied but not stated in one explicit AT sentence — validate live on a real MTN/Airtel/Glo/9mobile SIM** (no usable sandbox for voice).
+- **Costs:** regular number NGN 5,000 + VAT/mo maintenance; callback leg **NGN 15/min regular or NGN 3/min over SIP**. Move the callback leg to a SIP trunk off your own PBX for 5× savings.
+- **No** native missed-call API (the webhook is it). **No** ability to receive operator "Please Call Me" USSD via AT (SIM-native). **No** confirmed Nigeria toll-free via AT (Regular + SIP only).
+
+**Key source URLs:** AT voice billing `help.africastalking.com/en/articles/1152209`; parameters `…/2948521`; hangupCause `…/1160521`; number types `…/2282146`; Nigeria voice pricing `…/6054867`; virtual number `…/2948873`; SIP setup `…/6049012`; voice sandbox `…/11532610`; outbound endpoint `https://voice.africastalking.com/call`; dev docs `developers.africastalking.com/docs/voice/` (client-rendered); Python SDK `github.com/AfricasTalkingLtd/africastalking-python`.
+agentId: a7693450c8c354dd1 (use SendMessage with to: 'a7693450c8c354dd1' to continue this agent)
+<usage>subagent_tokens: 83842
+tool_uses: 21
+duration_ms: 211072</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

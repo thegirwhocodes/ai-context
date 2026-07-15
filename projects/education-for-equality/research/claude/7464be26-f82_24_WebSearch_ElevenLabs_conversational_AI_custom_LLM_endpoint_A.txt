@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs conversational AI custom LLM endpoint API format request response 202
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:47:40 UTC
+========================================================================
+
+Search query: ElevenLabs conversational AI custom LLM endpoint API format request response 2025
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs conversational AI custom LLM endpoint API format request response 2025"
+
+Links: [{"title":"Integrate your own model | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/llm/custom-llm"},{"title":"Azure OpenAI API Key - Microsoft Q&A","url":"https://learn.microsoft.com/en-us/answers/questions/5536082/azure-openai-api-key"},{"title":"Connect Together AI to ElevenLabs Conversational AI Voice Agents","url":"https://elevenlabs.io/agents/integrations/together-ai"},{"title":"Models | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/conversational-ai/customization/llm"},{"title":"Together AI | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/conversational-ai/customization/llm/custom-llm/together-ai"},{"title":"elevenlabs-docs/fern/conversational-ai/pages/customization/custom-llm/overview.mdx at main · elevenlabs/elevenlabs-docs","url":"https://github.com/elevenlabs/elevenlabs-docs/blob/main/fern/conversational-ai/pages/customization/custom-llm/overview.mdx?plain=1"},{"title":"ElevenAgents | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/overview"},{"title":"ElevenAPI - ElevenLabs the most powerful AI audio APIs","url":"https://elevenlabs.io/developers"},{"title":"Groq Cloud | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/llm/custom-llm/groq-cloud"},{"title":"ElevenLabs | liteLLM","url":"https://docs.litellm.ai/docs/providers/elevenlabs"}]
+
+Based on the search results, here's what I found about ElevenLabs conversational AI custom LLM endpoint API:
+
+## Custom LLM Integration
+
+Custom LLM allows you to connect your conversations to your own LLM via an external endpoint. Using your own custom LLM is supported by specifying the endpoint we should make requests to and providing credentials through our secure secret storage.
+
+## API Format and Request/Response
+
+Your custom LLM will receive requests that include tools in the standard OpenAI format, meaning ElevenLabs expects endpoints that are compatible with OpenAI's API structure. 
+
+For example, when integrating providers like Together AI or Groq, the Server URL should specify the OpenAI-compatible API endpoint (e.g., https://api.together.xyz/v1).
+
+## Configuration Details
+
+When setting up a custom LLM endpoint, you typically need to:
+- Specify the Server URL (endpoint)
+- Provide a Model ID
+- Store credentials via secure secret management
+- Configure parameters like temperature, token limits, and reasoning effort
+
+## System Tools Support
+
+System tools are automatically included in the `tools` parameter of your chat completion requests when configured in your agent. This allows your custom LLM to trigger functions for controlling conversation flow.
+
+For more detailed API documentation and request/response examples, you can refer to the [official ElevenLabs documentation on custom LLM integration](https://elevenlabs.io/docs/agents-platform/customization/llm/custom-llm).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

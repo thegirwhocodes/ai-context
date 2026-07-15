@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: com.apple.mediaanalysisd Caches large storage safe to delete macOS
+Session: 527a4a9f-1c41-44f7-a1b5-a9cab0517add
+Time: 2026-06-05 20:14:23 UTC
+========================================================================
+
+Search query: com.apple.mediaanalysisd Caches large storage safe to delete macOS
+
+----------------------------------------
+
+Web search results for query: "com.apple.mediaanalysisd Caches large storage safe to delete macOS"
+
+Links: [{"title":"com.apple.mediaanalysisd Cache on Mac Using Tons of Storage? Here’s the Fix","url":"https://osxdaily.com/2025/01/08/com-apple-mediaanalysisd-cache-mac-storage-bloat-fix/"},{"title":"How To Fix com.apple.mediaanalysisd Files Filling Drive in macOS Sequoia - The Mac Observer","url":"https://www.macobserver.com/tips/how-to/com-apple-mediaanalysisd-files-filling-drive-macos-sequoia/"},{"title":"Fix mediaanalysisd storage issues - MacNative","url":"https://macnative.com/fix-mediaanalysisd-storage-issues/"},{"title":"com.apple.mediaanalysisd Cache on Mac Using Tons of Storage? Here’s the Fix | OpenText Cybersecurity Community","url":"https://community.opentextcybersecurity.com/tech-talk-7/com-apple-mediaanalysisd-cache-on-mac-using-tons-of-storage-here-s-the-fix-359802"},{"title":"com.apple.mediaanalysisd Files on Mac: Definitions and Fixes","url":"https://iboysoft.com/wiki/com-apple-mediaanalysisd-files-mac.html"},{"title":"Michael Tsai - Blog - Fixing mediaanalysisd Storage and CPU Use","url":"https://mjtsai.com/blog/2025/07/07/fixing-mediaanalysisd-storage-and-cpu-use/"},{"title":"mediaanalysisd high CPU and memory on Mac - MacSecurity","url":"https://macsecurity.net/view/671-mediaanalysisd"},{"title":"com.apple.mediaanalysisd taking space | MacRumors Forums","url":"https://forums.macrumors.com/threads/com-apple-mediaanalysisd-taking-space.2446697/"}]
+
+Based on the search results, here's what you need to know about the `com.apple.mediaanalysisd` cache files:
+
+## What It Is
+
+The com.apple.mediaanalysisd process analyzes media files in the background. It indexes objects, detects faces, and generates metadata for Photos search and smart album categorization.
+
+## Is It Safe to Delete?
+
+Yes, it's generally safe to delete. You're not deleting your photos or videos here – only analysis and cache data that macOS can rebuild. However, deleting this folder does not remove your photos. It only resets all processed data related to object detection, face recognition, and smart albums.
+
+## When to Delete It
+
+If the folder takes up more than 2GB, you may be experiencing the bug. Some users have reported up to 140 GB of mediaanalysisd cache files on their Mac, and another reported 80GB of caches.
+
+## Important Notes
+
+- You might delete the large cache folder, only to find that it has grown large again within some time.
+- It's a good idea to backup your Mac with Time Machine before committing to this operation.
+- Some users reported the problem resolving after updating to MacOS Sequoia 15.2, but there are also users who did not notice the problem until after they installed a MacOS Sequoia update.
+
+The issue primarily affects macOS Sequoia, and deleting the cache is a legitimate troubleshooting step if it's consuming excessive storage space on your Mac.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://sendchamp.com/voice
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:06:11 UTC
+========================================================================
+
+URL: https://sendchamp.com/voice
+Extraction prompt: What voice API features does Sendchamp offer? Does it support IVR, custom audio playback, recording, webhooks? What is the pricing for Nigeria voice calls?
+
+----------------------------------------
+
+# Sendchamp Voice API Features & Pricing
+
+## Supported Features
+
+Based on the page content, Sendchamp's Voice API supports:
+
+- **Programmatic Voice**: "Build scalable voice solutions with use case like Interactive Voice Response (IVR), Contact Center, Conferencing, Alerts & Notifications"
+- **Virtual Numbers**: Purchase virtual numbers for calling and receiving calls from customers
+- **Voice Messaging**: General voice communication capabilities for engaging customers
+
+The page does not explicitly detail support for custom audio playback, recording, or webhooks in the visible content.
+
+## Pricing Information
+
+Unfortunately, **specific pricing details are not provided** on this page. The content mentions:
+
+- "We offer the best rates for Voice services" and "allow you to pay in your local currency"
+- A call-to-action encouraging visitors to "Start for free" or "Talk To Sales"
+
+For current pricing, particularly for Nigeria voice calls, you would need to contact their sales team via the Calendly link or sign up for an account to view rates.
+
+## Next Steps
+
+To get detailed pricing and confirm feature availability, visit the [pricing page](/pricing) or contact their sales team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

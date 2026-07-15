@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Groq API pricing 2026 student academic free tier limits
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 09:22:38 UTC
+========================================================================
+
+Search query: Groq API pricing 2026 student academic free tier limits
+
+----------------------------------------
+
+Web search results for query: "Groq API pricing 2026 student academic free tier limits"
+
+Links: [{"title":"Is there a free tier and what are its limits? - FAQs - Groq Community","url":"https://community.groq.com/t/is-there-a-free-tier-and-what-are-its-limits/790"},{"title":"Groq On-Demand Pricing for Tokens-as-a-Service | Groq is fast, low cost inference.","url":"https://groq.com/pricing"},{"title":"GroqCloud Developer Tier: Fast, Affordable API Access for Devs | Groq is fast, low cost inference.","url":"https://groq.com/blog/developer-tier-now-available-on-groqcloud"},{"title":"Demystifying Groq API Pricing: What's Free and What's Not? - Oreate AI Blog","url":"https://www.oreateai.com/blog/demystifying-groq-api-pricing-whats-free-and-whats-not/58dc439169f5cb7278f2cc8eca5b493d"},{"title":"Free tier - Forum - Groq Community","url":"https://community.groq.com/t/free-tier/419"},{"title":"How does Groq's pricing work? - FAQs - Groq Community","url":"https://community.groq.com/t/how-does-groqs-pricing-work/58"},{"title":"AI API Pricing Comparison (2026): Grok vs Gemini vs GPT-4o vs Claude | IntuitionLabs","url":"https://intuitionlabs.ai/articles/ai-api-pricing-comparison-grok-gemini-openai-claude"},{"title":"LLM API Pricing (March 2026) — GPT-5.4, Claude, Gemini, DeepSeek & 30+ Models Compared | TLDL | TLDL - The AI Digest","url":"https://www.tldl.io/resources/llm-api-pricing-2026"},{"title":"Groq is fast, low cost inference.","url":"https://groq.com/"},{"title":"A complete guide to Groq pricing in 2025","url":"https://www.eesel.ai/blog/groq-pricing"}]
+
+Based on the search results, here's what I found about Groq API pricing in 2026:
+
+## General Pricing Structure
+
+Groq has three different billing tiers available to all users: Free, Developer, and Enterprise, using a pay-as-you-go model charging per token consumed.
+
+## Free Tier
+
+When you sign up at console.groq.com, you get access to a Free tier with no credit card required. The Free tier lets you use GroqCloud and call supported models, but your usage is capped by rate limits (requests/tokens per minute or per day).
+
+## Developer Tier
+
+The GroqCloud Developer Tier offers up to 10x rate limits and 25% cost discounts.
+
+## Student/Academic Free Tier
+
+The search results do not contain specific information about dedicated student or academic free tier limits for Groq API in 2026. However, the general free tier is available to all users with no credit card required, subject to rate limits.
+
+For the most current and detailed information about specific rate limits and any student-specific pricing programs, I recommend checking Groq's official pricing page at groq.com/pricing or their community documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

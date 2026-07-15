@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2900701-implementing-an-interactive-
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:20 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2900701-implementing-an-interactive-voice-response-ivr-system
+Extraction prompt: VERBATIM quote: how does Africa's Talking handle interactive voice response (IVR)? Specifically — can the same call session support multiple back-and-forth turns? Show the EXACT XML pattern for: greeting → user responds → server responds with new audio → user responds again → etc. Quote every code example. Does the IVR mechanism use Record, GetDigits, or something else? Can recordings (not just DTMF digits) be processed mid-call to drive the next response?
+
+----------------------------------------
+
+# Response Based on Available Content
+
+The provided help center article does not contain the specific technical details you're requesting.
+
+The article states that IVR "works with dmtf (dual-tone multi-frequency) codes which identify the various phone keys" and explains that IVR is "a telephony menu system that allows for interaction with callers through dialing different phone keys."
+
+However, the document **does not include**:
+- XML patterns or code examples for multi-turn call flows
+- Specific information about Record vs. GetDigits functionality
+- Technical details about processing voice recordings mid-call
+- Session management patterns for back-and-forth interactions
+
+The article only provides setup prerequisites and directs readers to "Voice documentation" and contact the voice team at voice@africastalking.com for detailed implementation guidance. To answer your specific technical questions about multi-turn IVR mechanics and code patterns, you would need to consult the actual Voice API documentation or contact Africa's Talking directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/11532610-voice-sandbox
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 04:24:50 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/11532610-voice-sandbox
+Extraction prompt: What does this article say about voice sandbox testing? Can you test voice in sandbox? What are the steps?
+
+----------------------------------------
+
+# Voice Sandbox Testing Information
+
+**Can you test in sandbox?**
+No. According to the article: "For Voice, the sandbox is not operational."
+
+**Alternative for testing:**
+Instead of sandbox testing, you must obtain a live test number. Here are the steps:
+
+1. Log into your Account
+2. Click on your app
+3. Navigate to Voice > Phone number
+4. Go to Voice-Phones section
+5. Fill in the request form with these details:
+   - Product section: Voice Service
+   - Country: Select your country
+   - Category: Select "Test Number"
+6. Agree to the terms
+
+**Additional support:**
+For technical assistance, contact voice@africastalking.com
+
+The key takeaway is that Africa's Talking doesn't offer a functional sandbox environment for Voice—you'll need to request a live test number instead.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

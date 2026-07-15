@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/overview
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 19:12:00 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/overview
+Extraction prompt: Walk through the COMPLETE Africa's Talking Voice API model. Specifically: (1) For INBOUND voice calls (a user dials our AT number), does our application need an API key to receive the call? Or does AT just POST to our webhook URL regardless? (2) What is the API key actually used for — outbound calls, SMS, USSD, account API access? (3) Is there any path where the API key is required at runtime DURING an inbound call (e.g., to call AT's API mid-call to manipulate the call, transfer, hangup, etc.)? (4) What's the auth model for AT's voice webhook itself — does AT sign the incoming POST, or is the webhook entirely public? (5) What about the SIP trunk path vs the webhook path — do they differ in auth requirements? Quote the docs verbatim.
+
+----------------------------------------
+
+I appreciate your detailed questions about Africa's Talking Voice API authentication, but I'm unable to provide the specific answers you're seeking.
+
+**The problem:** You've shared only a page header ("Documentation | Africa's Talking") with no actual documentation content. To answer your five technical questions about:
+
+1. API key requirements for inbound calls
+2. API key use cases (outbound vs. inbound)
+3. Runtime API key needs during call manipulation
+4. Webhook signature verification
+5. SIP trunk vs. webhook auth differences
+
+—I would need the actual Voice API documentation excerpts from Africa's Talking.
+
+**What I can suggest:** Check Africa's Talking's official Voice API documentation directly, looking specifically for sections on:
+- Authentication & API keys
+- Webhook configuration & security
+- Inbound call handling
+- SIP integration (if applicable)
+
+These sections would contain the verbatim details and technical specifications needed to answer your questions accurately and with proper quotation.
+
+If you can share the relevant documentation text, I'd be happy to analyze it and provide the targeted responses you need.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

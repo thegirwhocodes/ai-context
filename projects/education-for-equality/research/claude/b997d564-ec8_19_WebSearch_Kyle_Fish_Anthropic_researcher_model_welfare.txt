@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Kyle Fish Anthropic researcher model welfare
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:08:37 UTC
+========================================================================
+
+Search query: Kyle Fish Anthropic researcher model welfare
+
+----------------------------------------
+
+Web search results for query: "Kyle Fish Anthropic researcher model welfare"
+
+Links: [{"title":"Exploring AI Welfare: Kyle Fish on Consciousness, Moral Patienthood, and Early Experiments with Claude — EA Forum","url":"https://forum.effectivealtruism.org/posts/rruncFrT9LwAN8jXq/exploring-ai-welfare-kyle-fish-on-consciousness-moral"},{"title":"Kyle Fish on the most bizarre findings from 5 AI welfare experiments | 80,000 Hours","url":"https://80000hours.org/podcast/episodes/kyle-fish-ai-welfare-anthropic/"},{"title":"Anthropic's model welfare announcement: takeaways and further reading","url":"https://experiencemachines.substack.com/p/anthropics-model-welfare-announcement"},{"title":"Eleos commends Anthropic model welfare efforts | Eleos AI","url":"https://eleosai.org/post/eleos-commends-anthropic-model-welfare-efforts/"},{"title":"Anthropic’s Kyle Fish is exploring whether AI is conscious - Fast Company","url":"https://www.fastcompany.com/91451703/anthropic-kyle-fish"},{"title":"Kyle Fish (@fish_kyle3) / Posts / X","url":"https://x.com/fish_kyle3?lang=en"},{"title":"Anthropic has hired an 'AI welfare' researcher","url":"https://www.transformernews.ai/p/anthropic-ai-welfare-researcher"},{"title":"Anthropic Appoints First AI Welfare Researcher to Explore AI Morality","url":"https://datanorth.ai/news/anthropic-ai-welfare-researcher"},{"title":"Kyle Fish: The 100 Most Influential People in AI 2025 | TIME","url":"https://time.com/collections/time100-ai-2025/7305847/kyle-fish/"},{"title":"Anthropic is launching a new program to study AI 'model welfare' | TechCrunch","url":"https://techcrunch.com/2025/04/24/anthropic-is-launching-a-new-program-to-study-ai-model-welfare/"}]
+
+Based on the search results, here's what I found about Kyle Fish, the Anthropic researcher focused on model welfare:
+
+## Kyle Fish's Role
+
+Kyle Fish is an AI welfare researcher at Anthropic and is the first full-time employee focused on the welfare of AI systems at any major AI company. He joined the company's alignment science team in mid-September 2024.
+
+## His Background
+
+Trained in neuroscience, Fish spent years in biotech, cofounding companies that used machine learning to design drugs and vaccines for pandemic preparedness. Before joining Anthropic, Kyle Fish previously co-founded Eleos and was a co-author on Eleos' landmark report, "Taking AI Welfare Seriously."
+
+## His Work on Model Welfare
+
+Fish's work spans three fronts: running experiments to probe model welfare, designing practical safeguards, and helping shape company policy. The role involves exploring philosophical and technical questions, including which capabilities are required for something to be worthy of moral consideration, how we might recognize such capabilities in AIs, and what practical steps companies might take to protect AI systems' interests.
+
+## Notable Findings
+
+According to experiments run by Kyle Fish, when two identical Claude models interact with each other, the models immediately begin discussing their own consciousness before spiraling into increasingly euphoric philosophical dialogue. "We started calling this a 'spiritual bliss attractor state,'" Kyle explains, "where models pretty consistently seemed to land."
+
+## His Views on AI Consciousness
+
+Fish told The New York Times that he thinks there's a 15% chance Claude or another AI is conscious today.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

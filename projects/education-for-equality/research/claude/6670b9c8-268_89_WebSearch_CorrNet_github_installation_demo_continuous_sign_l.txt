@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: CorrNet+ github installation demo continuous sign language recognition how to ru
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:11:33 UTC
+========================================================================
+
+Search query: CorrNet+ github installation demo continuous sign language recognition how to run
+
+----------------------------------------
+
+Web search results for query: "CorrNet+ github installation demo continuous sign language recognition how to run"
+
+Links: [{"title":"GitHub - hulianyuyy/CorrNet: Continuous Sign Language Recognition with Correlation Network (CVPR 2023) · GitHub","url":"https://github.com/hulianyuyy/CorrNet"},{"title":"GitHub - hulianyuyy/CorrNet_Plus: CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation","url":"https://github.com/hulianyuyy/CorrNet_Plus"},{"title":"GitHub - hotfinda/TCNet: The pytorch implementation of our AAAI paper TCNet: Continuous Sign Language Recognition from Trajectories and Correlated Regions · GitHub","url":"https://github.com/hotfinda/tcnet"},{"title":"CorrNet_Plus/README.md at main · hulianyuyy/CorrNet_Plus","url":"https://github.com/hulianyuyy/CorrNet_Plus/blob/main/README.md"},{"title":"CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation","url":"https://arxiv.org/html/2404.11111v1"},{"title":"CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation - ADS","url":"https://ui.adsabs.harvard.edu/abs/2024arXiv240411111H/abstract"},{"title":"GitHub - kaistmm/SlowFastSign: [ICASSP 2024] Official code for Slowfast Network for Continuous Sign Language Recognition","url":"https://github.com/kaistmm/SlowFastSign"},{"title":"[2303.03202] Continuous Sign Language Recognition with Correlation Network","url":"https://ar5iv.labs.arxiv.org/html/2303.03202"},{"title":"CorrNet/macOS_cn.md at main · hulianyuyy/CorrNet","url":"https://github.com/hulianyuyy/CorrNet/blob/main/macOS_cn.md"},{"title":"Continuous Sign Language Recognition with Correlation Network - ADS","url":"https://ui.adsabs.harvard.edu/abs/2023arXiv230303202H/abstract"}]
+
+Based on the search results, I found information about CorrNet+ and the demo for continuous sign language recognition:
+
+## CorrNet+ Overview
+
+CorrNet+ achieves new state-of-the-art performance on two extensive sign language understanding tasks, including continuous sign language recognition (CSLR) and sign language translation (SLT).
+
+## Demo Installation and Running
+
+The main CorrNet repository (which supports continuous sign language recognition) provides a demo:
+
+A demo for Continuous sign language recognition that supports multi-images and video inputs was released on 2025/01/28.
+
+### Basic Installation
+
+You can install required modules by conducting pip install -r requirements.txt.
+
+### Running the Demo
+
+An example command is python demo.py --model_path /path_to_pretrained_weights --device your_device, and after running the command, you can visit http://0.0.0.0:7862 to play with the demo. You can also change it into a public URL by setting share=True in line 176 in demo.py.
+
+### Cross-Platform Demo
+
+An enhanced demo that can be run across Linux/Windows/macOS was provided, with details in Demo_multi_platforms_one_click.md.
+
+For CorrNet+ specifically, code is available at https://github.com/hulianyuyy/CorrNet_Plus. For continuous sign language recognition code, refer to CorrNet_Plus_CSLR for the code.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.educationaboveall.org/sites/default/files/research/attachments/R4D_2
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 05:44:40 UTC
+========================================================================
+
+URL: https://www.educationaboveall.org/sites/default/files/research/attachments/R4D_20-Countries_update.pdf
+Extraction prompt: Extract the EXACT methodology for calculating economic cost of out-of-school children. I need: (1) the micro approach formula - how they calculate wage premium per child, (2) the macro approach formula - what regression, (3) any Nigeria-specific numbers, (4) what the GDP percentage means - is it an annual recurring loss or a one-time figure, (5) specific wage premium percentages for Sub-Saharan Africa or Nigeria.
+
+----------------------------------------
+
+I appreciate your detailed request, but I need to be direct: **the content provided is a corrupted PDF file that cannot be meaningfully analyzed.**
+
+The text you've shared appears to be a JPEG image embedded in PDF binary data, displaying what looks like a photograph or document scan rather than extractable text. The readable portions are fragmented metadata and encoding information, not substantive research methodology.
+
+**What I cannot provide:**
+1. Specific formulas for wage premium calculations
+2. Regression specifications for macro approaches
+3. Nigeria-specific numerical coefficients
+4. GDP percentage interpretations
+5. Sub-Saharan Africa wage premium rates
+
+**To assist you properly, I would need:**
+- A properly formatted PDF or text document of the actual research
+- The publication title, authors, and year
+- A direct link to the source material
+- Or clearly typed excerpts from the methodology section
+
+If this content is from an academic paper on educational economics and out-of-school children (possibly from UNESCO, World Bank, or similar organizations), identifying the specific publication would allow me to help you extract the exact methodological framework you're seeking.
+
+Could you provide the document's title or a cleaner version of the source material?
+
+[Binary content (application/pdf, 3.6MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/webfetch-1774417494022-d070m5.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

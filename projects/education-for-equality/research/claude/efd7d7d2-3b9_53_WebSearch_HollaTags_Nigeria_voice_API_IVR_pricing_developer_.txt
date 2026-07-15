@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: HollaTags Nigeria voice API IVR pricing developer documentation
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:40 UTC
+========================================================================
+
+Search query: HollaTags Nigeria voice API IVR pricing developer documentation
+
+----------------------------------------
+
+Web search results for query: "HollaTags Nigeria voice API IVR pricing developer documentation"
+
+Links: [{"title":"Voice API: IVR, Inbound DID, Voice Broadcast | HollaTags","url":"https://hollatags.com/voice/"},{"title":"HollaTags - Platform & APIs for SMS, Voice, USSD & Billing","url":"https://hollatags.com/"},{"title":"HollaTags | User Guide | Messaging Platform and APIs for SMS, Voice & USSD","url":"https://sms.hollatags.com/howto"},{"title":"Introduction | HollaTags API","url":"https://docs.hollatags.com/"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Developer | HollaTags","url":"https://hollatags.com/developer/"},{"title":"Carrier Connections for SMS, Voice, USSD & Billing | HollaTags","url":"https://hollatags.com/company/"},{"title":"How to Use Interactive Voice Response (IVR) for Marketing, Sales and Support | HollaTags","url":"https://hollatags.com/ivr-for-marketing-sales-support/"},{"title":"HollaTags (HollaTags) · GitHub","url":"https://github.com/hollatags"},{"title":"HollaTags - Crunchbase Company Profile & Funding","url":"https://www.crunchbase.com/organization/hollatags"}]
+
+Based on the search results, here's what I found about HollaTags Nigeria:
+
+## Overview
+
+HollaTags provides Messaging Platforms and APIs for communication on mobile via VOICE, SMS, USSD and Mobile Value Added Services. HollaTags is duly licensed by the Nigerian Communication Commission (NCC) to provide SMS, IVR and USSD based services with Telecommunication companies in Nigeria.
+
+## Voice API & IVR
+
+HollaTags Voice API Technology allows developers create faultless call logic for any application, software, browser, or existing system and also attune it to their special needs. The platform supports various use cases including:
+- Delivering OTP and 2-Factor Authentication tokens securely via phone calling for bank payment authorisations
+- Local Inbound DID Numbers for receiving calls directly to your personal numbers or routed to your application
+- Interactive Voice Response (IVR) script integration to allow callers to serve themselves
+
+## Developer Documentation
+
+The documentation is broken into two main parts based on connection protocol - HTTP (POST/GET) or SMPP. Developers can access documentation at docs.hollatags.com and through the developer portal.
+
+## Pricing
+
+Unfortunately, the search results did not contain specific pricing information for HollaTags' Voice API or IVR services. For pricing details, you may need to contact HollaTags directly through their website or reach out to their sales team.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

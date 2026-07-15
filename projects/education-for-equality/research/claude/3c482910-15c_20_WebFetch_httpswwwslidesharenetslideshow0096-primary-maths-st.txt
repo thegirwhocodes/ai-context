@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.slideshare.net/slideshow/0096-primary-maths-stage-4-scheme-of-worktc
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:55:48 UTC
+========================================================================
+
+URL: https://www.slideshare.net/slideshow/0096-primary-maths-stage-4-scheme-of-worktcm142594958docx/261924556
+Extraction prompt: Extract ALL learning objective codes and descriptions from this Stage 4 Mathematics scheme of work. List every 4N, 4G, 4S objective with full text.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

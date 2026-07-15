@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: how AI API companies grew OpenAI ElevenLabs Deepgram Twilio pricing developer ad
+Session: 595110e2-994d-47c5-b45a-ffce04a28bd4
+Time: 2026-07-04 17:33:12 UTC
+========================================================================
+
+Search query: how AI API companies grew OpenAI ElevenLabs Deepgram Twilio pricing developer adoption 2025
+
+----------------------------------------
+
+Web search results for query: "how AI API companies grew OpenAI ElevenLabs Deepgram Twilio pricing developer adoption 2025"
+
+Links: [{"title":"AI Voice Agent Cost in 2026: Pricing Models, Vendor Comparison, and How to Budget","url":"https://www.yesworkflow.com/blog/ai-voice-agent-cost"},{"title":"AI Voice Agent Cost Calculator 2026: Free Per-Minute Pricing + Latency Tool (14 Platforms)","url":"https://softcery.com/ai-voice-agents-calculator"},{"title":"AI Voice Agent Pricing 2026: Per-Minute Cost of 10 Platforms Compared | Famulor Blog","url":"https://www.famulor.io/blog/ai-voice-agent-pricing-2026-what-10-platforms-actually-cost-per-minute"},{"title":"Top Voice AI Agents for 2026: The Ultimate Buyer’s Guide","url":"https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide"},{"title":"Best AI Voice Agents 2026: 11 Platforms Ranked & Tested | Arahi AI","url":"https://arahi.ai/blog/best-ai-voice-agents"},{"title":"Retell AI vs. Synthflow vs. Twilio Voice Assistants","url":"https://www.retellai.com/resources/sub-second-latency-voice-assistants-benchmarks"},{"title":"8 Best Voice AI Providers for 2026 (Tested and Ranked) | Retell AI","url":"https://www.retellai.com/blog/best-voice-ai-providers"},{"title":"Twilio Pricing 2026: Plans, Free Credits & Startup Discounts | Get AI Perks","url":"https://www.getaiperks.com/en/ai/twilio-pricing-startup-credits"},{"title":"Top 9 AI Voice Agents for Business (2026) — Complete Guide | LuMay","url":"https://www.lumay.ai/blogs/top-9-ai-voice-agents-for-business"},{"title":"10 Best Twilio Alternatives in 2026 (Tested & Reviewed) - Brilo AI | AI Phone & Voice Agent For Businesses","url":"https://www.brilo.ai/resources/twilio-alternatives"}]
+
+Based on the search results, here's a comprehensive overview of how AI API companies like OpenAI, ElevenLabs, Deepgram, and Twilio have grown in 2025-2026:
+
+## Market Growth
+
+The voice AI agents market hit $2.4 billion in 2024 and is projected to reach $47.5 billion by 2034, growing at 34.8% per year. More specifically, production voice AI grew 340% in 2025.
+
+## Pricing Models
+
+These companies have adopted tiered pricing strategies, particularly in the voice AI space:
+
+**ElevenLabs**: Scale Plan: $330/month (2M credits). Business Plan: $1,320/month (11M credits). Pricing: From $0.12/minute on conversational plans. Voice clones and custom voices cost extra.
+
+**Deepgram**: Real-time STT engine optimized for low latency and high accuracy. PAYG promo $0.0048/min mono, $0.0058/min multilingual.
+
+**Twilio**: Real Twilio bills include: Phone numbers: $1.15-$15/month per local number, $2/month for toll-free and for AI voice agents (think OpenAI Realtime + Twilio Media Streams), expect $0.018-$0.06/min effective once you bundle voice cost + AI inference.
+
+## Developer Adoption Growth
+
+Production voice agent deployments grew 340% year-over-year across 500+ organizations in 2025. Developer adoption has been driven by platforms offering flexibility: Vapi is the platform most serious voice engineering teams end up on. It exposes every knob — model choice (GPT, Claude, Gemini, Groq), voice provider (ElevenLabs, Cartesia, Deepgram, PlayHT), telephony, and latency tuning — behind a clean API.
+
+The competitive landscape features tiered pricing from $0.05-$0.35 per minute depending on provider combinations, with companies like Vapi providing $0.05/minute base price with no minimum commitment making it accessible for prototyping and production.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

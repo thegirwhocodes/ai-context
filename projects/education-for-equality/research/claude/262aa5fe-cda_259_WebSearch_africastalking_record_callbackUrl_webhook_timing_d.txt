@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "africastalking" record callbackUrl webhook timing "during call" OR "after call"
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:07 UTC
+========================================================================
+
+Search query: "africastalking" record callbackUrl webhook timing "during call" OR "after call" interactive in-call conversation IVR
+
+----------------------------------------
+
+Web search results for query: ""africastalking" record callbackUrl webhook timing "during call" OR "after call" interactive in-call conversation IVR"
+
+Links: [{"title":"Callback URLS | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150832-callback-urls"},{"title":"How do I configure my callback URL? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callback-url"},{"title":"How do I debug my callback URL ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2219978-how-do-i-debug-my-callback-url"},{"title":"Implementing an Interactive Voice Response (IVR) System | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2900701-implementing-an-interactive-voice-response-ivr-system"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"africastalking/africastalking - Packagist.org","url":"https://packagist.org/packages/africastalking/africastalking"},{"title":"Understanding parameters used in a call | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2948521-understanding-parameters-used-in-a-call"},{"title":"Callback URL responses | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150813-callback-url-responses"},{"title":"What is a callback URL? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2189463-what-is-a-callback-url"},{"title":"Handling a Call Session","url":"https://developers.africastalking.com/docs/voice/handle_calls"}]
+
+I've performed the web search for information about Africa's Talking record callbackUrl webhook timing in relation to call recording and IVR systems. The search returned several relevant results from the Africa's Talking help center and documentation.
+
+Based on the search results, here's what I found:
+
+**Recording Callback URL:**
+The callbackUrl parameter is used to forward the results of the Recording action, indicating that callbacks occur after the recording is completed.
+
+**IVR System:**
+Interactive Voice Response (IVR) is a telephony menu system that allows for interaction with callers through dialing different phone keys using dual-tone multi-frequency codes, where each key or set of keys leads callers to certain information or new interactions.
+
+**In-Call Interaction:**
+The GetDigits element with a callbackUrl parameter captures user input during the call, suggesting that callbacks can occur during the call for handling interactive input.
+
+The search results show that Africa's Talking supports both during-call callbacks (for handling user input through GetDigits) and post-call callbacks (for recording results), enabling interactive in-call conversation scenarios through IVR systems.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

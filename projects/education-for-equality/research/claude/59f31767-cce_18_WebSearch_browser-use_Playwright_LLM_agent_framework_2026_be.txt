@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: browser-use Playwright LLM agent framework 2026 best way to build web automation
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-05 18:03:21 UTC
+========================================================================
+
+Search query: browser-use Playwright LLM agent framework 2026 best way to build web automation agent
+
+----------------------------------------
+
+Web search results for query: "browser-use Playwright LLM agent framework 2026 best way to build web automation agent"
+
+Links: [{"title":"GitHub - browser-use/browser-use: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.","url":"https://github.com/browser-use/browser-use"},{"title":"Develop Browser Agents: Integrating LLMs,Playwright,Browser-Use and Web-UI | by KailashPathak | Medium","url":"https://kailash-pathak.medium.com/develop-intelligent-browser-agents-integrating-llms-playwright-browser-use-and-web-ui-ac0836af520b"},{"title":"Browser Automation AI Agents: Playwright vs Stagehand","url":"https://www.digitalapplied.com/blog/browser-automation-ai-agents-playwright-stagehand-2026"},{"title":"Build an AI Browser Agent With LLMs, Playwright, Browser-Use","url":"https://dzone.com/articles/build-ai-browser-agent-llms-playwright-browser-use"},{"title":"Playwright for Browser Automation in AI Agents: From Accessibility Trees to Agent Loops | ByteTunnels","url":"https://bytetunnels.com/posts/playwright-for-browser-automation-in-ai-agents/"},{"title":"Browser Use vs Stagehand vs Playwright MCP Compared (2026) | Aaron's Generative AI Feeds","url":"https://fp8.co/articles/Browser-Use-vs-Stagehand-vs-Playwright-MCP-AI-Agent-Browser-Automation"},{"title":"Stagehand vs Browser Use vs Playwright: AI Browser Automation Compared (2026) | NxCode","url":"https://www.nxcode.io/resources/news/stagehand-vs-browser-use-vs-playwright-ai-browser-automation-2026"},{"title":"Browser Tools for AI Agents Part 1: Playwright, Puppeteer, and Why Your Agent Picked Playwright - DEV Community","url":"https://dev.to/stevengonsalvez/browser-tools-for-ai-agents-part-1-playwright-puppeteer-and-why-your-agent-picked-playwright-k71"},{"title":"Playwright and Playwright MCP: A Field Guide for Agentic Browser Automation | by Adnan Masood, PhD. | Medium","url":"https://medium.com/@adnanmasood/playwright-and-playwright-mcp-a-field-guide-for-agentic-browser-automation-f11b9daa3627"},{"title":"Agent Browser vs Puppeteer & Playwright | Webfuse","url":"https://www.webfuse.com/blog/agent-browser-vs-puppeteer-and-playwright"}]
+
+Based on the search results, here's what the current landscape looks like for building web automation agents with Browser-Use, Playwright, and LLM frameworks in 2026:
+
+## Key Findings
+
+### Browser Use Framework
+Browser Use is an open-source Python framework that turns any LLM into a web-browsing agent, built on Playwright and providing a complete agent loop where the LLM observes the current page state, plans the next action, executes it through Playwright, and verifies the result. It supports any LLM provider (OpenAI, Anthropic, Google, local models) and handles complex scenarios like multi-tab browsing, file uploads and downloads, persistent authentication, and custom action injection.
+
+### Recent Evolution
+Interestingly, in early 2026, Browser Use – the most popular open-source AI browser agent framework – announced it was dropping Playwright entirely and moving to direct Chrome DevTools Protocol (CDP) communication. Browser Use moved from CDP to Playwright's API after hitting screenshot crashes and dialog handling bugs.
+
+### Best Approaches for 2026
+
+Playwright + Claude is the default self-hosted runtime approach, paying only for LLM API calls, with the addition of Browserbase if anti-bot evasion becomes a bottleneck.
+
+For different use cases:
+- **Complex workflows**: Browser Use provides a complete agent loop (observe → plan → act → verify) with built-in LLM orchestration, supporting multi-tab navigation, file handling, and persistent browser sessions across any LLM provider.
+- **Developer-friendly automation**: Stagehand reduces browser automation to three primitives — `act()` for actions, `extract()` for structured data, `observe()` for page analysis — making it the most developer-friendly option for targeted scraping and form filling.
+- **MCP integration**: Playwright MCP exposes browser automation as standardized MCP tools, letting any MCP-compatible agent (Claude Code, Cline, custom agents) control a browser without framework-specific code.
+
+### Hybrid Approach
+Many production systems use Playwright for the 80% of steps that are predictable and Stagehand or Browser Use for the 20% that require AI understanding, giving you speed, reliability, and flexibility.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

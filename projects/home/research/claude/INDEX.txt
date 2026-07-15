@@ -1,0 +1,52 @@
+RESEARCH INDEX
+Generated: 2026-05-05 08:12:23
+Files: 47
+========================================================================
+
+067ce19c-fb4_00_Session_retention_settings_in_Claude_Code.txt  [2KB]  AGENT RESEARCH: Session retention settings in Claude Code
+067ce19c-fb4_01_Empirical_methods_deep-dive.txt  [3KB]  AGENT RESEARCH: Empirical methods deep-dive
+067ce19c-fb4_02_PWT_variables_for_OOSC_paper.txt  [3KB]  AGENT RESEARCH: PWT variables for OOSC paper
+067ce19c-fb4_03_Novel_angles_for_OOSC_growth_paper.txt  [3KB]  AGENT RESEARCH: Novel angles for OOSC growth paper
+067ce19c-fb4_04_Milan__Burnett_legitimacy_check.txt  [3KB]  AGENT RESEARCH: Milan & Burnett legitimacy check
+067ce19c-fb4_05_Robust_growth_controls_for_SSA.txt  [3KB]  AGENT RESEARCH: Robust growth controls for SSA
+067ce19c-fb4_06_Wesleyan_Economics_prizes.txt  [3KB]  AGENT RESEARCH: Wesleyan Economics prizes
+067ce19c-fb4_07_WDI_data_check_Nigeria_OOSC.txt  [3KB]  AGENT RESEARCH: WDI data check Nigeria OOSC
+067ce19c-fb4_08_Live_MB_citation_check.txt  [3KB]  AGENT RESEARCH: Live M&B citation check
+067ce19c-fb4_09_Live_Wesleyan_Econ_prizes_scrape.txt  [3KB]  AGENT RESEARCH: Live Wesleyan Econ prizes scrape
+067ce19c-fb4_10_LIVE_paper_methodologies_deep-dive.txt  [3KB]  AGENT RESEARCH: LIVE paper methodologies deep-dive
+067ce19c-fb4_11_LIVE_PWTWDI_variables_catalog.txt  [3KB]  AGENT RESEARCH: LIVE PWT/WDI variables catalog
+067ce19c-fb4_12_LIVE_novel_angles_literature_scan.txt  [3KB]  AGENT RESEARCH: LIVE novel angles literature scan
+067ce19c-fb4_13_LIVE_growth_controls_literature.txt  [3KB]  AGENT RESEARCH: LIVE growth controls literature
+56183a9f-64d_00_Claude_Code_resume_flag_info.txt  [2KB]  AGENT RESEARCH: Claude Code resume flag info
+a8c4235a-461_00_Extract_Nigeria_batch_A_events.txt  [4KB]  AGENT RESEARCH: Extract Nigeria batch A events
+a8c4235a-461_01_Extract_Nigeria_batch_B_events.txt  [4KB]  AGENT RESEARCH: Extract Nigeria batch B events
+a8c4235a-461_02_Extract_SA_batch_A_events.txt  [4KB]  AGENT RESEARCH: Extract SA batch A events
+a8c4235a-461_03_Extract_SA_batch_B_events.txt  [4KB]  AGENT RESEARCH: Extract SA batch B events
+a8c4235a-461_04_Extract_Ethiopia_batch_A_events.txt  [4KB]  AGENT RESEARCH: Extract Ethiopia batch A events
+a8c4235a-461_05_Extract_Ethiopia_batch_B_events.txt  [4KB]  AGENT RESEARCH: Extract Ethiopia batch B events
+a8c4235a-461_06_Extract_Ethiopia_batch_C.txt  [3KB]  AGENT RESEARCH: Extract Ethiopia batch C
+a8c4235a-461_07_Extract_Ethiopia_batch_D.txt  [3KB]  AGENT RESEARCH: Extract Ethiopia batch D
+a8c4235a-461_08_Extract_Ethiopia_batch_E.txt  [3KB]  AGENT RESEARCH: Extract Ethiopia batch E
+a8c4235a-461_09_Nigeria_batch_C.txt  [2KB]  AGENT RESEARCH: Nigeria batch C
+a8c4235a-461_10_Nigeria_batch_D.txt  [2KB]  AGENT RESEARCH: Nigeria batch D
+a8c4235a-461_11_Nigeria_batch_E.txt  [2KB]  AGENT RESEARCH: Nigeria batch E
+a8c4235a-461_12_Nigeria_batch_F.txt  [2KB]  AGENT RESEARCH: Nigeria batch F
+a8c4235a-461_13_Nigeria_batch_G.txt  [2KB]  AGENT RESEARCH: Nigeria batch G
+a8c4235a-461_14_Nigeria_batch_H.txt  [2KB]  AGENT RESEARCH: Nigeria batch H
+a8c4235a-461_15_Nigeria_batch_I.txt  [2KB]  AGENT RESEARCH: Nigeria batch I
+a8c4235a-461_16_Nigeria_batch_J.txt  [2KB]  AGENT RESEARCH: Nigeria batch J
+a8c4235a-461_17_Nigeria_batch_K.txt  [2KB]  AGENT RESEARCH: Nigeria batch K
+a8c4235a-461_18_Nigeria_batch_L.txt  [2KB]  AGENT RESEARCH: Nigeria batch L
+a8c4235a-461_19_Ethiopia_batch_F.txt  [2KB]  AGENT RESEARCH: Ethiopia batch F
+a8c4235a-461_20_Ethiopia_batch_G.txt  [2KB]  AGENT RESEARCH: Ethiopia batch G
+a8c4235a-461_21_Ethiopia_batch_H.txt  [2KB]  AGENT RESEARCH: Ethiopia batch H
+a8c4235a-461_22_Ethiopia_batch_I.txt  [2KB]  AGENT RESEARCH: Ethiopia batch I
+a8c4235a-461_23_Ethiopia_batch_J.txt  [2KB]  AGENT RESEARCH: Ethiopia batch J
+a8c4235a-461_24_Ethiopia_batch_K.txt  [2KB]  AGENT RESEARCH: Ethiopia batch K
+a8c4235a-461_25_Ethiopia_batch_L.txt  [2KB]  AGENT RESEARCH: Ethiopia batch L
+a8c4235a-461_26_Ethiopia_batch_M.txt  [2KB]  AGENT RESEARCH: Ethiopia batch M
+a8c4235a-461_27_Ethiopia_batch_N.txt  [2KB]  AGENT RESEARCH: Ethiopia batch N
+a8c4235a-461_28_Ethiopia_batch_O.txt  [2KB]  AGENT RESEARCH: Ethiopia batch O
+a8c4235a-461_29_Ethiopia_WSJ_extraction.txt  [3KB]  AGENT RESEARCH: Ethiopia WSJ extraction
+f0d5c8f2-b76_00_Research_what_drives_startup_growth_to_unicorn.txt  [20KB]  AGENT RESEARCH: Research what drives startup growth to unicorn
+f0d5c8f2-b76_01_Research_architecture_for_multi-startup_agent.txt  [25KB]  AGENT RESEARCH: Research architecture for multi-startup agent

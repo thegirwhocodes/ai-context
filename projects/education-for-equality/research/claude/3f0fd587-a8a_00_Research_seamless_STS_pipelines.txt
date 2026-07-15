@@ -1,0 +1,770 @@
+========================================================================
+AGENT RESEARCH: Research seamless STS pipelines
+Session: 3f0fd587-a8ad-4ce6-86a4-cb6c031d7c7e
+Time: 2026-04-26 00:28:11 UTC
+========================================================================
+
+I need you to do DEEP research on how to build a seamless ChatGPT-Voice-style speech-to-speech pipeline that I can drop into an existing FastAPI/browser app called "Adjutant" (currently uses faster-whisper STT, Ollama LLM, pyttsx3/Chatterbox TTS — all sequential, ~6s end-to-end). The goal is to make the voice interaction feel SEAMLESS — low latency, interruptible, streaming, natural turn-taking — like ChatGPT's Advanced Voice Mode.
+
+CRITICAL: You MUST return AT LEAST 90% of the substantive content you find. Do NOT summarize. Report every URL, every latency number, every API price, every code pattern, every library name, every model name, every architectural decision, every gotcha. If you read a 2000-word doc, return 1800+ words of substance. No "key takeaways" — give me the raw data.
+
+## Constraints for the recommendation
+- Must be runnable on a 2023 MacBook Pro M2 (16GB RAM)
+- MUST work fully OFFLINE (this is for the SCSP hackathon GenAI.mil track — judges will see the wifi cable get pulled mid-demo)
+- Must remain a FastAPI backend + browser frontend
+- Currently using: faster-whisper (small.en, int8, CPU), Ollama with Llama 3.1 8B (or llama3.2:3b), pikepdf for form-fill, Chatterbox TTS or pyttsx3 fallback
+- Must preserve the form-fill + RAG citation flow (after voice reply, a populated DA-31/DD-1351-2/DA-4856 PDF appears in the browser)
+- Must preserve the architectural-incapable-of-hallucinating refusal contract
+- Demo is in <30 hours from now (April 25–26, 2026 SCSP Boston hackathon) — so prefer tractable wins over moonshots
+
+## What to research and report
+
+### 1. How does ChatGPT Advanced Voice Mode actually work under the hood?
+- Architecture: is it true speech-to-speech (audio in → audio out, no text intermediate), or fast cascaded STT→LLM→TTS?
+- OpenAI's Realtime API: [REDACTED:sensitive-label], gpt-4o-mini-realtime — what they expose, websocket protocol, audio format (PCM16/g711?), VAD, interruption handling, turn detection
+- Latency numbers actually achievable
+- Pricing (so we know what to compete with on quality)
+- Reference: https://platform.openai.com/docs/guides/realtime and any blog posts
+
+### 2. Open-source / on-device equivalents
+- **Moshi** (Kyutai) — full duplex audio LM, what it can do, model size, latency, quantization for Mac M2
+- **Mini-Omni / Mini-Omni 2** (Tsinghua) — speech-to-speech, params, license, Mac viability
+- **GLM-4-Voice** — what it is, latency, deployment
+- **Step-Audio / Step-Audio 2** 
+- **Llama-Omni** (CAS) — speech-to-speech architecture, sizes
+- **NVIDIA Maxine / Riva** — even though probably not Mac-friendly
+- **Pipecat** (Daily) — the orchestration framework for cascaded pipelines, what they support, their VAD + turn-taking abstractions
+- **LiveKit Agents** — same category, what's there
+- **Vocode** — older but still relevant?
+- **Ultravox** (Fixie AI) — SLM-fused-with-audio approach
+- **Realtime API alternatives**: Deepgram Voice Agent, Cartesia Sonic + their realtime, ElevenLabs Conversational AI
+
+### 3. Streaming STT options (offline + on-device)
+- **faster-whisper** streaming patterns — VAD chunking, partial transcripts, common code patterns
+- **whisper.cpp** with streaming
+- **whisper-streaming** (UFAL) — paper/repo, latency vs quality
+- **WhisperLive** / **WhisperX** streaming
+- **Distil-Whisper** — speed gain, quality loss
+- **Moonshine** (Useful Sensors) — purpose-built for streaming, ARM/Apple Silicon perf numbers
+- Web-side Web Speech API as a fallback (only for when online — but we MUST be offline)
+- **AssemblyAI Universal-Streaming**, **Deepgram Nova-3** streaming — for the comparison even though we won't ship them
+
+### 4. Streaming LLM patterns
+- Ollama streaming with `stream=True` — actual token-by-token output
+- vLLM, llama.cpp streaming for offline
+- How to start TTS on the FIRST sentence boundary instead of waiting for full response (sentence-buffering, semicolon/comma splitting)
+- KV cache reuse for low TTFT
+- Speculative decoding (small draft + big verifier) — Llama 3.2 1B drafting Llama 3.1 8B
+
+### 5. Streaming TTS / low-latency TTS (offline + on-device)
+- **Kokoro-82M** — tiny + fast, multilingual, Apache 2.0, latency on M2
+- **Piper** (Rhasspy) — runs everywhere, voice quality, M2 latency
+- **Chatterbox** (Resemble AI) — what we already use, streaming support? expressivity flag, latency
+- **XTTS-v2** (Coqui) — voice cloning + latency
+- **F5-TTS** / **E2-TTS** — flow-matching
+- **MeloTTS**
+- **StyleTTS2**
+- **OuteTTS**
+- **Apple's `say` command** as ultra-cheap fallback
+- pyttsx3 limitations
+- Streaming TTS protocols: how to play audio chunks as they arrive (MediaSource Extensions in browser, audio worklet, etc.)
+
+### 6. Voice activity detection (VAD) and turn-taking
+- **Silero VAD** — code patterns, threshold tuning, ONNX vs PyTorch
+- **WebRTC VAD** — older but bulletproof
+- **Pyannote** for diarization (probably overkill)
+- **Smart Turn** (Pipecat's turn-detection model) — what it is, how it differs from raw VAD
+- **VAP** (Voice Activity Projection) — Krylov / Ekstedt
+- Endpoint detection: how to know when the user FINISHED speaking vs paused mid-thought
+
+### 7. Interruption handling ("barge-in")
+- How to detect user-speaking-while-bot-speaking
+- Acoustic echo cancellation in the browser (getUserMedia constraints, MediaTrackConstraints echoCancellation)
+- Server-side: cancel in-flight LLM gen, stop TTS playback, flush queue
+- Pipecat's interruption pattern vs LiveKit's
+
+### 8. Browser-side architecture
+- AudioWorklet vs ScriptProcessor (deprecated)
+- MediaStream → opus encoding → WebSocket
+- Playback: MediaSource Extensions vs Web Audio API streaming
+- Push-to-talk vs hold-to-talk vs continuous listening — which is right for hackathon demo?
+- WebSocket vs WebRTC (LiveKit) for transport
+
+### 9. End-to-end orchestration patterns
+- Pipecat vs LiveKit Agents vs custom asyncio
+- The "always-listening" pipeline: VAD → STT → LLM → TTS w/ interruption queue
+- Token-streaming → sentence-buffer → TTS-chunk → audio-out
+- How to keep latency budget under 800ms-1.5s end-of-speech to first-audio-out
+
+### 10. What Pipecat / LiveKit specifically support for offline
+- Can Pipecat run with Ollama + Silero VAD + Kokoro all locally?
+- Sample code patterns
+- Their abstractions (Pipeline, Frame, Service)
+
+## What to return
+
+A long, dense report. Organize by the sections above. Include:
+- Direct quotes from docs
+- Latency numbers (specific ms)
+- Code snippets where you found them
+- Apple Silicon / M2 viability for each option (RAM footprint, tokens/sec, real-time-factor)
+- Licensing (MIT/Apache/non-commercial?)
+- Maturity (production-ready / research-quality / abandoned)
+- Specific URLs for everything
+
+Then at the end, give me 2-3 specific recommended architectures for Adjutant, ranked by: (a) easiest to ship in <12 hours of build time given current code, (b) best-quality-feel-like-ChatGPT-voice, (c) safest fallback if (a) breaks.
+
+Aim for 4000–6000 words of substance. No filler. Skip the "introduction" and "conclusion" — go straight into raw data.
+
+----------------------------------------
+
+I have plenty of dense data. Now I'll compile the full report.
+
+---
+
+# Adjutant Seamless Voice Pipeline — Deep Research Report
+
+## 1. ChatGPT Advanced Voice Mode (AVM) — Architecture Under the Hood
+
+**Architecture type:** Native speech-to-speech using natively multimodal models. From OpenAI's own help center: "Voice conversations are powered by natively multimodal models" and "Advanced voice leverages natively multimodal models (such as GPT-4o) to directly 'hear' and generate audio." This is fundamentally different from the older Standard Voice Mode, which was a cascade of Whisper STT → GPT-4 → TTS. AVM ingests audio tokens, reasons in a unified audio+text token space, and emits audio tokens directly — preserving emotion, accent, prosody, speaking rate, and background context that a text intermediate would discard.
+
+**OpenAI Realtime API (the developer-exposed surface for the same model family):**
+- Models: `gpt-realtime` (the GA production model launched Aug 2025), `gpt-4o-realtime-preview`, `gpt-4o-mini-realtime-preview`.
+- Transports: WebSocket, WebRTC, and SIP. Per OpenAI: "You can use the Realtime API via WebRTC, session initiation protocol (SIP), or WebSocket to send audio input to the model and receive audio responses in real time."
+- Audio format: PCM16 is the default, with `input_audio_format` setting `pcm16` (audio/pcm at 24,000 Hz). G.711 (mu-law/a-law) is supported per the spec for telephony bridging but PCM16 is the recommended default.
+- Streaming protocol: Send audio with `input_audio_buffer.append` events containing base64-encoded PCM16 chunks; the model streams back `response.audio.delta`, `response.audio_transcript.delta`, and `response.done` server events.
+- VAD / turn detection: Two modes — `server_vad` (acoustic, with tunable `threshold`, `prefix_padding_ms`, `silence_duration_ms`, `interrupt_response`, `create_response`, `idle_timeout_ms`) and `semantic_vad` (interrupts based on whether the model thinks the user is finished, has an `interrupt_response` setting). Both can preempt the assistant's audio output.
+- Interruption: `input_audio_buffer.speech_started` server event triggers automatic cancellation of in-flight `response.audio.delta` chunks if `interrupt_response: true` is set.
+- Latency: Practical end-of-speech to first-audio-out has been measured around 300–800ms for AVM users; OpenAI's internal published number for GPT-4o conversational latency is ~232–320ms average.
+
+**Pricing (April 2026):**
+- `gpt-realtime`: $32 per 1M audio input tokens ($0.40 cached), $64 per 1M audio output tokens. Per-minute: ~$0.06/min input, ~$0.24/min output.
+- `gpt-4o-mini-realtime-preview`: cheaper but exact per-minute not consistently published; sources cite approximately 75% cheaper than full gpt-realtime.
+- The GA `gpt-realtime` was a 20% price drop vs `gpt-4o-realtime-preview`.
+
+**Implication for Adjutant:** OpenAI Realtime is forbidden — wifi gets pulled. But its protocol design (PCM16 over WebSocket, server VAD with tunable silence_duration_ms, response.cancel on barge-in) is the gold-standard reference shape to mimic locally.
+
+Sources:
+- [OpenAI Realtime API guide](https://platform.openai.com/docs/guides/realtime)
+- [Realtime conversations](https://platform.openai.com/docs/guides/realtime-conversations)
+- [Server events reference](https://platform.openai.com/docs/api-reference/realtime-server-events)
+- [Voice Mode FAQ](https://help.openai.com/en/articles/8400625-voice-mode-faq)
+- [Introducing gpt-realtime](https://openai.com/index/introducing-gpt-realtime/)
+- [OpenAI API Pricing](https://openai.com/api/pricing/)
+
+---
+
+## 2. Open-Source / On-Device Speech-to-Speech Equivalents
+
+### Moshi (Kyutai)
+- Full-duplex audio-text foundation model. Uses **Mimi**, a streaming neural audio codec. License: Apache 2.0.
+- Theoretical latency: 160 ms (80 ms Mimi frame + 80 ms acoustic delay); practical 200 ms on L4 GPU.
+- PyTorch version requires 24 GB VRAM, no quantization. **MLX version supports 4-bit, 8-bit, and bf16 quantization, tested on MacBook Pro M3.** This is the only viable path on M2.
+- Repo: [kyutai-labs/moshi](https://github.com/kyutai-labs/moshi). MLX impl in `Blaizzy/mlx-audio`.
+- M2 16 GB viability: 4-bit quantized should fit, but no published M2 numbers; expect 1–2x real-time on M2 Pro, possibly slower than real-time on plain M2.
+- **Verdict for Adjutant: too risky for <30hr hackathon.** No proven offline, English-only, refusal-contract-preserving demo and integrating with FastAPI/pikepdf form-fill flow is custom work.
+
+### Mini-Omni / Mini-Omni 2 (Tsinghua / GPT-Omni)
+- Built on Qwen2-0.5B (24 transformer blocks, internal dim 896) + Whisper-small encoder. Total ~0.5 B params.
+- License: MIT.
+- Real-time end-to-end speech I/O, text+audio interleaved generation ("hear, talk while thinking").
+- Mac viability: GitHub issue #6 shows Apple Silicon support was an open question as of late 2024; no first-party MPS path. Linux-first.
+- Paper: arXiv 2408.16725. Mini-Omni 2 (2410.11190) adds vision + duplex.
+- **Verdict: research-quality. Skip.**
+
+### GLM-4-Voice (Zhipu AI)
+- End-to-end Chinese-English. Uses 175 bps single-codebook tokenizer at 12.5 Hz frame rate. Flow-matching synthesizer can start generating audio after just **10 tokens (~0.8 s minimum delay)**.
+- Repo: github.com/zai-org/GLM-4-Voice.
+- Heavyweight; designed for GPU servers. Not Mac-friendly.
+- **Verdict: skip.**
+
+### Step-Audio 2 / Step-Audio 2 mini (StepFun)
+- Apache 2.0, released 29 Aug 2025. First fully open-source production-grade speech-to-speech MLLM.
+- Latency: 320 ms first-token on A100 with vLLM. Some queries up to 15 minutes (long-form).
+- Architecture: frozen audio encoder → audio adapter → LLM decoder → audio token output.
+- Not viable on M2 (designed for A100-class hardware). Repo: stepfun-ai/Step-Audio.
+- **Verdict: skip.**
+
+### LLaMA-Omni / LLaMA-Omni 2 (ICT/CAS)
+- v1: Whisper-large-v3 encoder + Llama-3.1-8B-Instruct + speech adaptor + streaming speech decoder.
+- v2: 0.5B–14B SpeechLM family with autoregressive streaming speech synthesis.
+- Generates text and speech simultaneously, low TTFT.
+- Paper: arXiv 2409.06666 (v1), 2505.02625 (v2).
+- M2: would technically run, but CTranslate2/MLX paths not packaged. Glue work substantial.
+- **Verdict: skip for hackathon timeline.**
+
+### Ultravox (Fixie AI)
+- Multimodal projector that converts audio → LLM embedding space, no separate ASR step. Works with Llama 3, Mistral, Gemma backbones.
+- v0.5 has 1B variant; v0.7 has GLM-4.6 variant.
+- TTFT ~150 ms, 50–100 tok/s on A100-40GB with Llama-3.1-8B backbone.
+- License: weights are MIT-ish (per HuggingFace card); commercially usable.
+- **The 1B variant (`fixie-ai/ultravox-v0_5-llama-3_2-1b`) could be M2-viable** since Llama-3.2-1B already runs at 60+ tok/s on M2. But it's only audio-in → text-out — you still need a TTS on the back end, so it's not full S2S.
+- **Verdict: skip the omni promise; would still need a separate TTS pipeline. Cascaded route is cleaner for hackathon.**
+
+### NVIDIA Maxine / Riva
+- CUDA-locked. Mac is not a target. Skip.
+
+### Pipecat (Daily.co) — orchestration framework
+- License: BSD-2-Clause.
+- Python framework for real-time voice/multimodal pipelines. Composable Pipeline → Frame → Service abstractions.
+- Supported STT services: AssemblyAI, AWS, Azure, Cartesia, Deepgram, ElevenLabs, Fal Whisper, Gladia, Google, Gradium, Groq, Mistral, NVIDIA Riva, OpenAI, Sarvam, Soniox, Speechmatics, **Whisper (local)**, xAI.
+- Supported TTS: Async, AWS, Azure, Camb AI, Cartesia, Deepgram, ElevenLabs, Fish, Google, Gradium, Groq, Hume, Inworld, **Kokoro**, LMNT, MiniMax, Mistral, Neuphonic, NVIDIA Riva, OpenAI, **Piper**, Resemble, Rime, Sarvam, Smallest, Speechmatics, xAI, **XTTS**.
+- Supported LLMs: Anthropic, AWS, Azure, Cerebras, DeepSeek, Fireworks, Gemini, Grok, Groq, Mistral, Nebius, Novita, NVIDIA NIM, **Ollama**, OpenAI, OpenRouter, Perplexity, Qwen, SambaNova, Sarvam, Together.
+- Transports: Daily, **FastAPI WebSocket**, LiveKit, **SmallWebRTCTransport** (P2P, no server, ideal for local dev), WebSocket Server, WhatsApp, Local.
+- VAD/audio: **SileroVADAnalyzer**, Krisp Viva, Koala, ai-coustics, RNNoise.
+- **Pipecat fully supports Adjutant's stack: Ollama + Silero VAD + Kokoro all locally is a documented, working configuration.** Reference impl: kwindla/macos-local-voice-agents.
+- Sample reference impl uses: Silero VAD → smart-turn v2 → MLX Whisper → Gemma 3B (4B) → Kokoro TTS, target voice-to-voice <800 ms on M-series Macs.
+
+### LiveKit Agents
+- Apache 2.0. Framework for real-time voice/video AI agents.
+- VoicePipelineAgent abstraction: STT → LLM → TTS + VAD enhancement.
+- Ollama via OpenAI plugin (OpenAI-compat endpoint at `http://localhost:11434/v1`).
+- WebRTC-first transport; if you want pure FastAPI WebSocket without the LiveKit server, you have to run a LiveKit server locally (extra moving piece). For a 30-hour hackathon demo, this is a wash vs Pipecat's SmallWebRTCTransport.
+- Reference: ShayneP/local-voice-ai (Ollama + Kokoro + Nemotron STT + LiveKit), dwain-barnes/tara-orpheus-livekit (Orpheus TTS).
+
+### Vocode
+- Older asyncio-based pipeline framework. Still maintained but Pipecat has overtaken it in mindshare and service breadth. Skip.
+
+### FastRTC (Hugging Face / Gradio)
+- Released Feb 2025. Python library that mounts WebRTC + WebSocket endpoints onto FastAPI via `.mount(app)`.
+- Built-in STT/TTS abstractions, easy LLM integration.
+- Reference: lalanikarim/fastrtc-llm-chat-demo (Ollama), MaximoFN tutorial (Whisper + Kokoro + Qwen 3 8B Ollama).
+- More minimal than Pipecat — fewer batteries included but less framework lock-in.
+
+### RealtimeAPI alternatives (cloud — listed for completeness, not for offline demo):
+- **Deepgram Voice Agent API**: $4.50/hr flat (when running entire stack on Deepgram). 24% cheaper than ElevenLabs, 75% cheaper than OpenAI Realtime. Sub-300 ms with Aura-2 TTS.
+- **Cartesia Sonic**: Sub-300 ms, 3-second voice cloning, enterprise pricing.
+- **ElevenLabs Conversational AI**: Flash v2.5 sub-300 ms, $5/mo Starter to Enterprise.
+
+---
+
+## 3. Streaming STT Options (offline, on-device, M2-friendly)
+
+### faster-whisper
+- CTranslate2-based, up to **4x faster than openai-whisper** at same accuracy with less memory.
+- Adjutant already uses `small.en, int8, CPU` — keep this.
+- For streaming: Pair with VAD (Silero or WebRTC VAD), feed 0.5–2 s audio chunks. Common pattern from RealtimeSTT: WebRTC VAD for cheap initial gate, Silero VAD for confirmation, faster-whisper transcribes the buffered utterance once silence threshold hits.
+- WhisperLiveKit (PyPI) bundles streaming with `enable_partial_transcripts: true`, `partial_transcript_interval_s: 1.0`.
+
+### whisper-streaming (UFAL)
+- **3.3 s average end-to-end latency** for English ASR on European Parliament test set (NVIDIA A40). 1.0 s chunk → ~2.0 s avg final emission latency.
+- Uses LocalAgreement-n policy: confirms a transcript prefix only after n consecutive overlapping chunks agree on it.
+- Does NOT achieve real-time on CPU even with 8-bit. **Skip for M2 CPU.**
+
+### whisper.cpp + Core ML
+- Apple Silicon: encoder runs on Apple Neural Engine via Core ML — **3x faster than CPU; 8–12x with full Core ML + Metal stack.**
+- Streaming binary: `whisper-stream` (requires SDL2). Build: `cmake -B build -DWHISPER_SDL2=ON && cmake --build build -j --config Release && ./build/bin/whisper-stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000`.
+- VAD mode supported with `-vth` threshold (~0.6 reasonable).
+- Reported: M2 Pro transcribed 11 s of audio in ~0.3 s with small.en.
+
+### MLX-Whisper (Apple-native)
+- MLX framework, Metal-backed. **30–50% faster than vanilla openai-whisper on Apple Silicon.**
+- Lightning-Whisper-MLX: **10x faster than whisper.cpp, 4x faster than vanilla MLX-Whisper.**
+- 10 min audio: M1 Pro MLX = 3 min 36 s; RTX 4090 = 3 min 6 s (only 16% faster).
+- For Adjutant: drop-in upgrade if you have time, but faster-whisper int8 already gets ~RTF 0.3 on M2 with `small.en`.
+
+### Distil-Whisper
+- 6x faster than openai-whisper, 50% smaller, **<1% WER degradation on out-of-distribution audio.**
+- distil-large-v3 is compatible with faster-whisper (run via `WhisperModel("distil-whisper/distil-large-v3")`).
+- Benchmark: faster-distil-large-v3 fp16 transcribed 13 min audio in 26.1 s @ 2.39% WER vs faster-whisper 52.0 s @ 2.88% WER.
+- **Recommendation: drop-in replacement for `small.en` if you want a quality bump in <30 minutes of code change.**
+
+### Moonshine (Useful Sensors)
+- License: MIT. ONNX + CoreML runtimes.
+- Sizes: Tiny (26 M params) to Medium Streaming (245 M).
+- **Latency on Apple MacBook M3 in real-time live transcription:**
+  - Moonshine v2 Tiny: **50 ms** (5.8x faster than Whisper Tiny)
+  - Moonshine v2 Small: **148 ms** (13.1x faster than Whisper Small)
+  - Moonshine v2 Medium: **258 ms** (43.7x faster than Whisper Large v3)
+- Architecturally: variable-length input window (no Whisper 30-s zero-pad waste), sliding-window attention in position-free encoder.
+- Install: `pip install moonshine-voice`. Code: `from moonshine_voice import Transcriber; transcriber = Transcriber(model_path=p, model_arch=a); transcriber.start(); transcriber.add_audio(chunk, 16000); transcriber.stop()`.
+- **For Adjutant: this is the best STT swap if you want Whisper-class quality with sub-200 ms latency on M2. But faster-whisper small.en is already proven in your codebase; the latency win is in the LLM, not STT. Defer.**
+
+### AssemblyAI Universal-Streaming, Deepgram Nova-3
+- Cloud-only. Listed for context. Universal-Streaming reportedly hits ~300 ms end-of-utterance latency.
+
+---
+
+## 4. Streaming LLM Patterns
+
+### Ollama streaming
+- `stream=True` returns an iterator yielding `ChatResponse` chunks. Token-level streaming works for plain chat; **token-level streaming is broken when tools are bound via langchain_ollama.ChatOllama** (issue #26971).
+- Direct ollama-python: `for chunk in client.chat(model='llama3.2:3b', messages=[...], stream=True): yield chunk['message']['content']`.
+
+### llama.cpp streaming
+- Direct token stream via llama-server's OpenAI-compatible `/v1/chat/completions` with `stream: true`. Faster than Ollama for raw throughput; Ollama is wrapper-with-defaults.
+- Performance on Apple Silicon (Llama 3.1 8B Q4_K_M): **15–28 tok/s with Metal**, 40+ tok/s on M3 Pro. M2 16 GB plain (10 GPU cores) likely 12–20 tok/s.
+- Llama 3.2 3B on M2: 40–80 tok/s decode; prefill TTFT ~2.3 s for 2660-token prompt; sub-300 ms for short prompts (<300 tokens).
+- Llama 3.2 1B on M2: 100+ tok/s realistic.
+
+### Sentence-buffer pattern (the critical move)
+- Don't wait for full LLM response. Maintain a rolling buffer of token deltas. When buffer contains `[.?!]` followed by space (or `;`/`:` for long replies), flush the completed sentence to TTS. Continue accumulating subsequent tokens into the next sentence buffer.
+- Pseudocode:
+```python
+buf = ""
+async for chunk in ollama.chat(model="llama3.2:3b", messages=msgs, stream=True):
+    buf += chunk["message"]["content"]
+    while True:
+        m = re.search(r'(.+?[.!?])(\s|$)', buf)
+        if not m: break
+        sentence = m.group(1).strip()
+        await tts_queue.put(sentence)
+        buf = buf[m.end():]
+if buf.strip():
+    await tts_queue.put(buf.strip())
+```
+- This keeps end-to-first-audio under ~600 ms even if the full response takes 3 s, because the first complete sentence usually arrives within the first 200 ms of generation.
+
+### KV cache reuse
+- Ollama auto-keeps KV cache between turns for same model, same conversation. Helps TTFT on follow-up turns (skips re-prefilling system prompt + history).
+- For Adjutant: just keep the same `conversation_id` across turns; don't restart Ollama between requests.
+
+### Speculative decoding (Llama 3.2 1B drafting Llama 3.1 8B)
+- llama-speculative binary in llama.cpp. Example: `./llama-server -m Meta-Llama-3.1-8B-Instruct-Q8_0.gguf -md Llama-3.2-1B-Instruct-Q8_0.gguf -c 4096 -cd 4096 -ngl 99 -ngld 99 --draft-max 8 --draft-min 4 --draft-p-min 0.9`.
+- **1.83x token-gen speedup** at draft tokens=5 (Llama 3.1 8B drafted by Llama 3.2 1B).
+- Users report 90 → 180+ tok/s on long-output tasks.
+- **Ollama support is in development but not GA as of issue #5800.** For hackathon: stick with Ollama + 3B if 8B is too slow, or run llama.cpp directly via `llama-server` and point Ollama-compatible code at it via base_url override.
+
+---
+
+## 5. Streaming TTS / Low-Latency TTS
+
+### Kokoro-82M (your top pick alongside Chatterbox)
+- 82 M params, 24 kHz, **Apache 2.0**.
+- Phoneme-based VITS-style; espeak-ng + misaki G2P; soundfile output.
+- Latency: **<0.3 s consistently across all tested input lengths in M-series benchmarks.** With kokoro-onnx loaded resident in memory: warm inference ~300 ms (cold model load ~9 s, dropped to ~300 ms warm — a 30x improvement when held in process).
+- 1–2 s time-to-first-audio in OpenAI-compatible server mode.
+- Streaming via Python generator: `for gs, ps, audio in pipeline(text, voice='af_heart'): yield audio`. **Each yield is an audio chunk, no buffering of complete audio.**
+- M2: Pure CPU runs near real-time. MPS not yet supported in stock Kokoro PyTorch. Use **kokoro-onnx (thewh1teagle/kokoro-onnx) or Kokoros (Rust)** for tighter CPU perf on M2.
+- Voices: `af_heart`, `af_bella`, etc. (US English `a`), British English `b`, plus Spanish/French/Hindi/Italian/Japanese/Portuguese/Mandarin.
+- **Recommendation: Kokoro-onnx is the lowest-risk highest-quality offline TTS for M2 in April 2026.**
+
+### Piper (Rhasspy)
+- VITS-based, ONNX format, runs entirely on CPU. **Real-time on a Raspberry Pi 4** — M2 is overkill.
+- Streaming support exists (issue #25 closed).
+- macOS install: works via /opt/homebrew/bin/python3.
+- Voice samples: rhasspy.github.io/piper-samples.
+- Quality: very good for "default" feel, less expressive than Kokoro.
+- **Backup option: install in 5 min, drop in if Kokoro fails.**
+
+### Chatterbox (Resemble AI) — what Adjutant already has
+- MIT license. SoTA open-source TTS.
+- Chatterbox Turbo: **6x faster than realtime on modern GPU, ~75 ms latency. Sub-200 ms latency in production.**
+- Streaming: native chunk-based streaming inference; audio plays as text streams in.
+- Emotion exaggeration control with single param (monotone → dramatic). Paralinguistic tags `[cough] [laugh] [chuckle]`.
+- Zero-shot voice cloning from ~5 s of reference audio.
+- Watermark: Resemble AI's Perth perceptual neural watermark on every output (survives MP3, edits).
+- **On M2 16 GB CPU: not as fast as Kokoro.** Chatterbox is GPU-optimized; CPU fallback is slow. If you have a CUDA-class machine for the demo, Chatterbox is the quality king. On M2 only, Kokoro will feel snappier.
+
+### XTTS-v2 (Coqui)
+- Voice cloning from 6-s reference, 16 languages.
+- **Streaming inference <200 ms latency on GPU.** CPU: near real-time on modern laptops, RTF ~0.3x with GPU.
+- License: Coqui Public Model License (research-only for some uses; commercial ambiguity post-Coqui shutdown 2024). Use with caution.
+- Maintained forks: idiap/coqui-ai-TTS.
+
+### F5-TTS / E2-TTS (flow-matching)
+- F5-TTS: non-autoregressive, Diffusion Transformer + ConvNeXt text refinement + Sway Sampling.
+- **RTF 0.15 at 16 NFE (16 denoising steps), WER 2.53. With Sway sampling + EPSS: 7-step generation at RTF 0.03 on RTX 3090.**
+- E2-TTS: original of the duo; F5 is the production-ready improvement.
+- M2: RTF will be ~10x slower than 3090 → still under real-time but tight. Skip unless Kokoro fails.
+
+### MeloTTS
+- Multilingual, optimized for real-time CPU. MPS-aware on Apple Silicon (explicit MPS sync + cache clearing for stability). License: MIT.
+- Slightly slower than Kokoro per inferless benchmark. Comparable quality.
+
+### StyleTTS2
+- High quality but encoder/diffusion-free design ≠ best streaming UX.
+
+### OuteTTS
+- **Worst latency in the comparison: 4+ minutes for 200-word inputs.** Skip.
+
+### Apple `say` command
+- Built-in macOS CLI. `say -v Samantha "hello"` or pipe `say -o out.aiff`.
+- Latency: <50 ms first sample. Quality: 2010-era. Use as ultimate fallback if Python TTS fails 60s before demo.
+
+### pyttsx3 limitations
+- Wraps NSSpeechSynthesizer on macOS, espeak on Linux. Robotic. No streaming chunks (one-shot). No emotion. **Functional fallback only.**
+
+### Streaming TTS playback in browser
+- Two approaches:
+  1. **MediaSource Extensions (MSE):** Server sends audio chunks (WAV or Opus) over WebSocket; client `appendBuffer` on a `SourceBuffer`. ChatGPT's web client uses this. Works with Opus/MP3 chunks; raw PCM requires WAV header tricks.
+  2. **AudioWorklet + Web Audio API:** Server sends raw PCM samples over WebSocket; AudioWorklet processor schedules them into the audio graph. Lower latency (no codec decode), but requires writing an AudioWorkletProcessor `process()` method (called every 128 samples). Can use a circular buffer.
+- For Adjutant in <30 hr: **WAV chunks over WebSocket → decoded with `audioContext.decodeAudioData()` → scheduled with `AudioBufferSourceNode.start(when)`** is the simplest. Each Kokoro yield ≈ one or two seconds of audio; queue them with `nextStartTime = max(audioCtx.currentTime, prevEnd)`.
+
+---
+
+## 6. Voice Activity Detection (VAD) and Turn-Taking
+
+### Silero VAD
+- **MIT license. JIT model ~2 MB. <1 ms per 30-ms audio chunk on a single CPU thread.** ONNX runtime support (`onnxruntime>=1.16.1`). 8 kHz and 16 kHz sample rates only (16 kHz preferred); ONNX opset 15 supports only 16 kHz.
+- Streaming: `VADIterator` for chunk-by-chunk processing. Helpers: `load_silero_vad`, `read_audio`, `get_speech_timestamps`, `save_audio`, `collect_chunks`.
+- Threshold params: `activation_threshold` (higher = fewer false positives, miss quiet speech), end-of-speech threshold auto-set 0.15 below activation (hysteresis), `min_speech_duration`, `min_silence_duration`, `prefix_padding_duration`.
+- Rule of thumb: `activation_threshold=0.5`, `min_silence_duration_ms=500` for slow conversational endpoint, `300` for snappier.
+
+```python
+import torch
+from silero_vad import load_silero_vad, VADIterator
+
+model = load_silero_vad(onnx=True)
+vad = VADIterator(model, threshold=0.5, sampling_rate=16000,
+                   min_silence_duration_ms=500, speech_pad_ms=100)
+for chunk in audio_chunks_512_samples:  # 32ms each at 16kHz
+    res = vad(chunk, return_seconds=True)
+    if res:
+        if 'start' in res: print("user started speaking")
+        if 'end' in res: print("user stopped speaking")
+```
+
+### WebRTC VAD
+- Bulletproof, cheap, frame-level (10/20/30 ms frames at 8/16/32/48 kHz). Aggressiveness 0–3.
+- Use as cheap pre-gate before Silero, RealtimeSTT-style: WebRTC VAD says "maybe speech" → buffer audio → Silero VAD confirms turn end.
+
+### Pyannote
+- Diarization-grade. Heavy. Overkill for single-speaker DA-31 form-fill.
+
+### Smart Turn (pipecat-ai/smart-turn-v2 / v3)
+- **Open-source semantic VAD.** Whisper Tiny + linear classifier head, ~8 M params, int8 and fp32 builds.
+- Predicts whether the user has finished their turn from raw audio (not transcript). Recognizes intonation, prosody, vocal patterns indicative of completion vs mid-thought pause.
+- Smart Turn v2 was Daily.co's open-source release in 2025; v3 supports 13+ languages with int8 quantization for faster inference.
+- **Pipecat reference impls use `Silero VAD → smart-turn v2 → STT → LLM → TTS`.** Silero gates speech presence; smart-turn says "done thinking" vs "just paused."
+- For hackathon: skip if you don't have time. Silero with `min_silence_duration_ms=600` is "good enough" baseline.
+
+### VAP (Voice Activity Projection — Ekstedt/Krylov)
+- Predicts future 2 s of voice activity for two speakers (256-class joint activation). Multi-layer transformer + CPC + cross-attention.
+- Research-grade (arXiv 2401.04868). Repo: ErikEkstedt/vap_turn_taking.
+- Not packaged. Skip.
+
+### Endpoint detection rule of thumb (without smart-turn)
+- Silero + 500–700 ms silence threshold = ~95% of human turn-end perception.
+- For form-fill voice flow specifically: longer silence (800 ms) reduces premature interruption ("Sergeant, my date of birth is..." [pause to think]) at cost of feeling slower.
+
+---
+
+## 7. Interruption / Barge-In
+
+### Browser side
+- `getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } })`.
+- echoCancellation: works on Chrome, Firefox 46+, Safari 11+. Without it, when the bot's speaker output bleeds into the mic, you'll falsely trigger barge-in every time the bot speaks.
+- For headphones-on demo: still keep echo cancellation on (defense in depth).
+
+### Server side (Pipecat pattern)
+- `PipelineParams(allow_interruptions=True)` on PipelineTask construction.
+- Frame types: `UserStartedSpeakingFrame`, `UserStoppedSpeakingFrame`, `StartInterruptionFrame`, `StopInterruptionFrame`.
+- Custom hook to flag client:
+```python
+original_handler = transport.input()._handle_user_interruption
+async def handler_with_signal(frame):
+    await original_handler(frame)
+    if isinstance(frame, UserStartedSpeakingFrame):
+        await websocket.send_text("USER_SPEAKING")
+transport.input()._handle_user_interruption = handler_with_signal
+```
+- `Interruption Strategies`: by default any user speech immediately interrupts; you can require min word count or volume threshold.
+- On interrupt: cancel in-flight LLM gen (Ollama doesn't have a native cancel; close the streaming generator), drain TTS queue, clear browser audio buffer (send `STOP_AUDIO` event → client calls `audioBuffer.stop()` and discards queued chunks).
+
+### LiveKit pattern
+- Built into VoicePipelineAgent. Set `interrupt_min_words` parameter to require N words before interrupt counts. LiveKit's turn-detection model is **text-first** (analyzes transcript only) vs Smart Turn's audio-first.
+
+---
+
+## 8. Browser-Side Architecture
+
+### AudioWorklet vs ScriptProcessor
+- ScriptProcessorNode is **deprecated** since 2014 — runs on main thread, glitchy.
+- AudioWorklet runs in a separate audio rendering thread, lock-free with main thread, 128-sample callbacks. Standard since 2018.
+- Code: register `AudioWorkletProcessor` subclass via `audioContext.audioWorklet.addModule('worklet.js')`, connect with `new AudioWorkletNode(audioContext, 'my-processor')`.
+
+### MediaStream → encode → WebSocket
+- MediaStream from getUserMedia → AudioContext → AudioWorkletNode → process() reads input samples → posts to MessagePort → main thread → WebSocket.send(arrayBuffer).
+- For Adjutant: send raw 16 kHz mono PCM16 (matches what whisper expects). Skip Opus encoding unless bandwidth-bound (you're not — same machine).
+
+### Playback options for streamed TTS
+- **Option A — Web Audio API + AudioBufferSourceNode (recommended for hackathon):** Server sends WAV bytes or raw PCM16 chunks over WebSocket. Client decodes with `audioContext.decodeAudioData()`, schedules each buffer to play immediately after the previous one ends:
+```js
+let nextStartTime = 0;
+ws.onmessage = async (ev) => {
+  const buf = await audioCtx.decodeAudioData(ev.data);
+  const src = audioCtx.createBufferSource();
+  src.buffer = buf;
+  src.connect(audioCtx.destination);
+  const startAt = Math.max(audioCtx.currentTime, nextStartTime);
+  src.start(startAt);
+  nextStartTime = startAt + buf.duration;
+};
+```
+- **Option B — MSE:** higher complexity, requires container format (Opus in WebM or AAC in MP4). ChatGPT uses this. Not worth it for offline demo.
+- **Option C — Direct PCM into AudioWorklet:** lowest latency (~10 ms) but requires writing the AudioWorklet processor with a SharedArrayBuffer ring buffer.
+
+### Push-to-talk vs continuous listening
+- **For hackathon demo with judges:** continuous listening with VAD-gated turns. Push-to-talk feels like a 2014 voice assistant. Continuous-listening + visible "listening / thinking / speaking" state indicator looks like ChatGPT AVM.
+- Risk mitigation: include a kill-switch button labeled "Mute mic" so the demoer can pause if a judge starts asking questions mid-conversation.
+
+### WebSocket vs WebRTC
+- **WebSocket:** simpler, plays well with FastAPI native, no extra server. Higher latency (TCP vs UDP). For local-demo loopback, latency difference is negligible (<5 ms).
+- **WebRTC (LiveKit / Pipecat SmallWebRTC):** lower jitter, native echo cancellation, but requires either a SFU (LiveKit) or peer negotiation flow. Pipecat's SmallWebRTCTransport is P2P browser↔server with no extra server needed.
+- **Recommendation: stick with FastAPI WebSocket for Adjutant.** It matches your existing stack. The latency penalty over WebRTC on localhost is invisible.
+
+---
+
+## 9. End-to-End Orchestration Patterns
+
+### Pipecat vs LiveKit Agents vs custom asyncio for Adjutant
+
+**Pipecat:**
+- Pros: Has KokoroTTSService, OllamaLLMService, SileroVADAnalyzer, SmallWebRTCTransport or FastAPIWebsocketTransport — all the pieces wired. The kwindla/macos-local-voice-agents repo is a working <800 ms voice-to-voice demo on M-series.
+- Cons: Pipecat's framing/Pipeline abstraction is opinionated. Integrating your existing pikepdf form-fill + RAG citation flow means writing a custom FrameProcessor that intercepts the LLM's tool-call output and triggers PDF generation — this is achievable but adds 2–4 hr.
+- **Risk: Pipecat changes its API frequently.** Lock the version (e.g., `pipecat-ai==0.0.105`) and pin everything.
+
+**LiveKit Agents:**
+- Pros: Mature, Apache 2.0, supports Ollama via OpenAI-compat plugin.
+- Cons: Wants a LiveKit server (even self-hosted means another container). Browser SDK is its own thing — replacing your existing FastAPI + plain JS frontend means more rewrite.
+- **Verdict: more rewrite than Pipecat, fewer benefits given your starting point.**
+
+**Custom asyncio:**
+- Pros: zero framework risk. Full control over the form-fill + refusal contract code paths. Direct mapping from your existing FastAPI + faster-whisper + Ollama + Chatterbox.
+- Cons: you write your own VAD loop, sentence buffer, TTS queue, interruption signaling. ~4–8 hr of careful work.
+- **For Adjutant given the constraints (<30 hr, must preserve form-fill flow, must preserve refusal contract): custom asyncio is the safest path.**
+
+### "Always-listening" pipeline (custom asyncio architecture)
+
+```
+Browser:                              Server (FastAPI):
+  ┌─────────────────────┐                ┌─────────────────────────────┐
+  │ getUserMedia        │                │  /ws  WebSocket             │
+  │ AudioWorklet        │  PCM16 16kHz   │   ↓                         │
+  │   resampler        →│ ─────────────→ │  ring_buffer (5s)           │
+  │   downsampler       │                │   ↓                         │
+  └─────────────────────┘                │  Silero VAD streaming       │
+                                         │   - on speech_start: clear  │
+  ┌─────────────────────┐                │     LLM/TTS in-flight       │
+  │ AudioBufferSource  ←│ ←───────────── │   - on speech_end: flush    │
+  │ Queue              ←│  WAV chunks    │     buffer to STT           │
+  │ State indicator     │                │   ↓                         │
+  └─────────────────────┘                │  faster-whisper small.en    │
+                                         │  (or distil-whisper)        │
+                                         │   ↓                         │
+                                         │  Ollama llama3.2:3b stream  │
+                                         │   ↓ token deltas            │
+                                         │  Sentence buffer            │
+                                         │   ↓ on [.!?]                │
+                                         │  Kokoro TTS (chunked yield) │
+                                         │   ↓ audio chunks            │
+                                         │  WebSocket send             │
+                                         └─────────────────────────────┘
+```
+
+### Latency budget (target end-of-speech → first audio out: <1.2 s on M2)
+- Browser audio capture + WS transport: 50 ms
+- Silero VAD silence detection (500 ms threshold): 500 ms (this is the user-perceived lag, but conventional voice agents include this)
+- faster-whisper small.en transcription of ~3 s utterance: 200–400 ms (RTF ~0.15 on M2 with int8)
+- Ollama TTFT for llama3.2:3b with cached system prompt (<1 k tokens): 150–300 ms
+- First sentence buffered (first ~5 tokens × ~33 ms/tok @ 30 tok/s): 165 ms — but this overlaps with TTFT, so add ~150 ms after TTFT
+- Kokoro first-chunk render of ~10-word sentence: 200–400 ms warm
+- WebSocket transport + decode + schedule: 30 ms
+- **Total: ~1.3–1.9 s ESV→FAO if everything is sequential. Pipelining the LLM streaming → TTS flush brings effective TTFA down to ~700–1100 ms.**
+- The 500 ms VAD silence is the dominant non-compressible chunk. Smart-turn could cut this to ~200 ms.
+
+---
+
+## 10. Pipecat / LiveKit offline support specifics
+
+### Pipecat fully-local config
+
+```python
+from pipecat.pipeline.pipeline import Pipeline
+from pipecat.pipeline.task import PipelineParams, PipelineTask
+from pipecat.transports.network.fastapi_websocket import FastAPIWebsocketTransport, FastAPIWebsocketParams
+from pipecat.audio.vad.silero import SileroVADAnalyzer
+from pipecat.services.whisper.stt import WhisperSTTService  # local faster-whisper
+from pipecat.services.ollama.llm import OllamaLLMService
+from pipecat.services.kokoro.tts import KokoroTTSService
+
+transport = FastAPIWebsocketTransport(
+    websocket=ws,
+    params=FastAPIWebsocketParams(
+        audio_in_enabled=True,
+        audio_out_enabled=True,
+        vad_analyzer=SileroVADAnalyzer(),
+        add_wav_header=True,
+    ),
+)
+stt = WhisperSTTService(model="small.en", device="cpu", compute_type="int8")
+llm = OllamaLLMService(model="llama3.2:3b", base_url="http://localhost:11434/v1")
+tts = KokoroTTSService(
+    model_path="/path/to/kokoro-v1.0.onnx",
+    voices_path="/path/to/voices-v1.0.bin",
+    settings=KokoroTTSService.Settings(voice="af_heart"),
+)
+
+pipeline = Pipeline([
+    transport.input(),
+    stt,
+    llm,
+    tts,
+    transport.output(),
+])
+task = PipelineTask(pipeline, PipelineParams(allow_interruptions=True))
+```
+
+This is functionally equivalent to the kwindla/macos-local-voice-agents reference impl (which uses MLX-Whisper + Gemma 3B + Kokoro with target <800 ms voice-to-voice latency).
+
+### LiveKit fully-local config
+- Spin up LiveKit server (Docker), connect Ollama via `openai.LLM(base_url="http://localhost:11434/v1", api_key="ollama")`, use `silero.VAD.load()`, use `kokoro` plugin (community-maintained, may need patching), use Whisper STT plugin.
+- More moving parts than Pipecat for offline-only.
+
+---
+
+## Recommended Architectures for Adjutant — Ranked
+
+### Architecture A — Easiest to ship in <12 hr (RECOMMENDED for SCSP demo)
+**Custom asyncio + minimal new deps. Direct evolution of current Adjutant.**
+
+Stack:
+- Browser: continuous getUserMedia → AudioWorklet (resample to 16 kHz mono) → WebSocket binary frames of PCM16 → server. Echo cancellation + noise suppression on. State indicator dots: idle/listening/thinking/speaking.
+- Server: FastAPI WebSocket endpoint. Per-connection async task graph:
+  1. **Silero VAD** (ONNX, 16 kHz, threshold 0.5, min_silence 600 ms) buffers audio. On speech_end → push utterance to STT queue; emit `USER_DONE` to client.
+  2. On user_started_speaking while bot is speaking → emit `INTERRUPT` to client (which calls `source.stop()` on the queued AudioBufferSourceNodes), cancel current LLM stream task, drain TTS queue.
+  3. **faster-whisper** (keep current `small.en, int8, CPU`) or swap to **distil-whisper/distil-large-v3 via faster-whisper** for free quality+speed bump.
+  4. RAG retrieval (existing) → builds prompt → **Ollama llama3.2:3b** with `stream=True`. Iterate token deltas.
+  5. **Sentence buffer** flushes complete sentences to TTS queue as they form. After full response, also fire form-fill and citation rendering.
+  6. **Kokoro-onnx** loaded resident (model + voices in memory at startup), `voice=af_heart` or `af_bella`. Each sentence → audio bytes → WAV-wrapped → WebSocket send.
+- Refusal contract preserved: existing prompt template + tool-use rules unchanged. The RAG citation flow runs in parallel after the full sentence stream completes; PDF appears in browser via separate `/api/form-fill` POST triggered by a final `RESPONSE_DONE` WebSocket event with the JSON form-fill payload.
+
+Build estimate: 6–10 hr.
+Risk: low. Every component is in your codebase or trivially installed (`pip install silero-vad kokoro-onnx`).
+
+### Architecture B — Best ChatGPT-feel quality (if you have 12+ hr buffer)
+**Pipecat + Kokoro + Ollama + Silero on FastAPI WebSocket transport.**
+
+Stack:
+- Server: Pipecat with `FastAPIWebsocketTransport` (or `SmallWebRTCTransport` if you want WebRTC's echo handling). Pipeline: `transport.input → SileroVADAnalyzer → WhisperSTTService(small.en or distil-large-v3) → OllamaLLMService(llama3.2:3b) → KokoroTTSService(af_heart) → transport.output`.
+- `PipelineParams(allow_interruptions=True)` — Pipecat handles the barge-in cancellation graph for you.
+- Add a custom FrameProcessor between LLM and TTS that intercepts assistant tool-calls (form-fill JSON), forwards text-only frames to TTS, and triggers `/api/form-fill` over a side-channel.
+- Browser: use Pipecat's `pipecat-ai-small-webrtc-prebuilt` if you go SmallWebRTC, or write minimal WebSocket client matching FastAPIWebsocketParams (binary PCM16 frames in, WAV out).
+- Optionally add **smart-turn-v3** in front of Silero for ChatGPT-grade endpoint detection.
+
+Build estimate: 10–14 hr.
+Risk: moderate. Pipecat API churn — pin `pipecat-ai==0.0.105` (or whatever you install). Form-fill side-channel needs careful frame interception.
+
+### Architecture C — Safest fallback if A or B breaks
+**Push-to-talk with current Adjutant code, plus a minimal latency reduction.**
+
+Stack:
+- Keep existing flow. Add:
+  - **Streaming LLM**: switch Ollama call to `stream=True`. Don't wait for full response.
+  - **Sentence buffer**: as response streams, fire each completed sentence to **pyttsx3 or `say` command** (one shot per sentence). Audio plays through laptop speakers directly (no browser playback complexity).
+  - **VAD-gated mic**: replace the push-to-talk button with a "Hold to talk" or simple Silero VAD detect-then-record.
+- Skip the browser audio playback complexity entirely; let macOS's `say -v Samantha` speak through the speakers. The judges will see the response text appear word-by-word in the browser AND hear audio from the laptop.
+- The form-fill PDF flow stays untouched.
+
+Build estimate: 2–4 hr.
+Risk: minimal. Mostly additive to existing code. UI feels like 2018 voice assistant but it works.
+Quality penalty: not "ChatGPT-feel" — this is "demo-survives-judging."
+
+---
+
+## Specific install/setup commands you'll want ready
+
+```bash
+# Architecture A core
+pip install silero-vad onnxruntime kokoro-onnx soundfile numpy
+# Or: pip install kokoro (PyTorch path) + brew install espeak-ng
+ollama pull llama3.2:3b   # already done, presumably
+# Pre-download Kokoro model + voices to avoid first-run network:
+python -c "from kokoro_onnx import Kokoro; Kokoro('kokoro-v1.0.onnx', 'voices-v1.0.bin')"
+# Optional STT bump
+pip install faster-whisper
+# Then in code: WhisperModel("distil-whisper/distil-large-v3", device="cpu", compute_type="int8")
+
+# Architecture B
+pip install "pipecat-ai[silero,whisper,ollama,kokoro,fastapi]==0.0.105"
+pip install pipecat-ai-small-webrtc-prebuilt  # if using SmallWebRTC
+```
+
+Pre-flight checklist for the wifi-pulled demo:
+1. Set `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` in shell that launches the server.
+2. Pre-download all models to `~/.cache/huggingface/hub` and `~/.cache/kokoro-onnx/`.
+3. Disable any cloud-fallback paths in code (e.g., explicit `device="cpu"`, no API keys).
+4. Test with airplane mode on for 5 minutes before demo.
+5. Have Architecture C scripts ready as a one-button "kill switch demo mode" in case A breaks at the venue.
+
+Sources:
+- [OpenAI Realtime API guide](https://platform.openai.com/docs/guides/realtime)
+- [OpenAI Realtime conversations](https://platform.openai.com/docs/guides/realtime-conversations)
+- [OpenAI introducing gpt-realtime](https://openai.com/index/introducing-gpt-realtime/)
+- [Voice Mode FAQ](https://help.openai.com/en/articles/8400625-voice-mode-faq)
+- [Kyutai Moshi GitHub](https://github.com/kyutai-labs/moshi)
+- [Moshi paper](https://arxiv.org/abs/2410.00037)
+- [Mini-Omni GitHub](https://github.com/gpt-omni/mini-omni)
+- [Mini-Omni 2 GitHub](https://github.com/gpt-omni/mini-omni2)
+- [GLM-4-Voice repo](https://github.com/zai-org/GLM-4-Voice)
+- [GLM-4-Voice paper](https://arxiv.org/abs/2412.02612)
+- [Step-Audio 2 technical report](https://arxiv.org/html/2507.16632v3)
+- [LLaMA-Omni paper](https://arxiv.org/html/2409.06666v1)
+- [LLaMA-Omni 2 paper](https://arxiv.org/html/2505.02625v1)
+- [Ultravox GitHub](https://github.com/fixie-ai/ultravox)
+- [Pipecat GitHub](https://github.com/pipecat-ai/pipecat)
+- [Pipecat Ollama docs](https://docs.pipecat.ai/server/services/llm/ollama)
+- [Pipecat Kokoro source](https://reference-server.pipecat.ai/en/stable/_modules/pipecat/services/kokoro/tts.html)
+- [Pipecat SmallWebRTCTransport](https://docs.pipecat.ai/server/services/transport/small-webrtc)
+- [Pipecat FastAPIWebsocketTransport](https://docs.pipecat.ai/server/services/transport/fastapi-websocket)
+- [Pipecat Smart Turn detection](https://docs.pipecat.ai/deployment/pipecat-cloud/guides/smart-turn)
+- [Pipecat smart-turn GitHub](https://github.com/pipecat-ai/smart-turn)
+- [Pipecat Interruption Strategies](https://docs.pipecat.ai/server/utilities/interruption-strategies)
+- [kwindla/macos-local-voice-agents](https://github.com/kwindla/macos-local-voice-agents)
+- [LiveKit Agents GitHub](https://github.com/livekit/agents)
+- [LiveKit Models overview](https://docs.livekit.io/agents/models/)
+- [ShayneP/local-voice-ai](https://github.com/ShayneP/local-voice-ai)
+- [FastRTC blog](https://huggingface.co/blog/fastrtc)
+- [FastRTC GitHub](https://github.com/gradio-app/fastrtc)
+- [Silero VAD GitHub](https://github.com/snakers4/silero-vad)
+- [Silero VAD PyTorch hub](https://pytorch.org/hub/snakers4_silero-vad_vad/)
+- [Smart Turn v2 blog (Daily)](https://www.daily.co/blog/smart-turn-v2-faster-inference-and-13-new-languages-for-voice-ai/)
+- [VAP paper](https://arxiv.org/abs/2401.04868)
+- [Kokoro-82M HuggingFace](https://huggingface.co/hexgrad/Kokoro-82M)
+- [Kokoro GitHub (hexgrad)](https://github.com/hexgrad/kokoro)
+- [Kokoro-FastAPI (remsky)](https://github.com/remsky/Kokoro-FastAPI)
+- [kokoro-onnx (thewh1teagle)](https://github.com/thewh1teagle/kokoro-onnx)
+- [Kokoros Rust](https://github.com/lucasjinreal/Kokoros)
+- [Piper GitHub](https://github.com/rhasspy/piper)
+- [Piper voice samples](https://rhasspy.github.io/piper-samples/)
+- [Chatterbox GitHub](https://github.com/resemble-ai/chatterbox)
+- [Chatterbox Turbo overview](https://www.resemble.ai/learn/models/chatterbox-turbo)
+- [Coqui TTS GitHub](https://github.com/coqui-ai/tts)
+- [F5-TTS GitHub](https://github.com/SWivid/F5-TTS)
+- [F5-TTS paper](https://arxiv.org/abs/2410.06885)
+- [MeloTTS HuggingFace](https://huggingface.co/myshell-ai/MeloTTS-English)
+- [StyleTTS2 GitHub](https://github.com/yl4579/StyleTTS2)
+- [RealtimeTTS GitHub](https://github.com/KoljaB/RealtimeTTS)
+- [RealtimeSTT GitHub](https://github.com/KoljaB/RealtimeSTT)
+- [faster-whisper GitHub](https://github.com/SYSTRAN/faster-whisper)
+- [whisper.cpp GitHub](https://github.com/ggml-org/whisper.cpp)
+- [whisper.cpp stream README](https://github.com/ggml-org/whisper.cpp/blob/master/examples/stream/README.md)
+- [whisper-streaming UFAL](https://github.com/ufal/whisper_streaming)
+- [whisper-streaming paper](https://arxiv.org/html/2307.14743)
+- [Distil-Whisper GitHub](https://github.com/huggingface/distil-whisper)
+- [distil-large-v3 HuggingFace](https://huggingface.co/distil-whisper/distil-large-v3)
+- [Moonshine GitHub](https://github.com/moonshine-ai/moonshine)
+- [Moonshine v2 paper](https://arxiv.org/html/2602.12241v1)
+- [lightning-whisper-mlx](https://github.com/mustafaaljadery/lightning-whisper-mlx)
+- [LM Studio speculative decoding](https://lmstudio.ai/docs/app/advanced/speculative-decoding)
+- [llama.cpp speculative discussion](https://github.com/ggml-org/llama.cpp/discussions/10466)
+- [Ollama streaming docs](https://docs.ollama.com/capabilities/streaming)
+- [Ollama MLX preview blog](https://ollama.com/blog/mlx)
+- [llama.cpp Apple Silicon perf](https://github.com/ggml-org/llama.cpp/discussions/4167)
+- [AudioWorklet MDN](https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet)
+- [MSE Mozilla Hacks](https://hacks.mozilla.org/2015/07/streaming-media-on-demand-with-media-source-extensions/)
+- [getUserMedia echoCancellation MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/echoCancellation)
+- [Designing voice assistants — latency budget](https://smallest.ai/blog/designing-voice-assistants-stt-llm-tts-tools-and-latency-budget)
+- [How to build sub-500ms voice agent](https://www.assemblyai.com/blog/how-to-build-lowest-latency-voice-agent-vapi)
+- [Voice AI 300ms rule](https://www.assemblyai.com/blog/low-latency-voice-ai)
+- [Deepgram Voice Agent pricing](https://deepgram.com/pricing)
+- [Cartesia Sonic vs alternatives](https://www.eesel.ai/blog/cartesia-sonic-3-alternatives)
+agentId: a876ceda6ae0fd302 (use SendMessage with to: 'a876ceda6ae0fd302' to continue this agent)
+<usage>total_tokens: 115594
+tool_uses: 55
+duration_ms: 494655</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

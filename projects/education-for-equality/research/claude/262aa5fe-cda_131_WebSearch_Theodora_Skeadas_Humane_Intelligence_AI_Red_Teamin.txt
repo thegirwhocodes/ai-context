@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Theodora Skeadas Humane Intelligence AI Red Teaming research
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-04-22 15:51:59 UTC
+========================================================================
+
+Search query: Theodora Skeadas Humane Intelligence AI Red Teaming research
+
+----------------------------------------
+
+Web search results for query: "Theodora Skeadas Humane Intelligence AI Red Teaming research"
+
+Links: [{"title":"The Work of AI Red Teaming: Automation and the Human Infrastructure","url":"https://humane-intelligence.org/wp-content/uploads/2025/11/The-Work-of-AI-Red-Teaming-Automation-and-the-Human-Infrastructure.pdf"},{"title":"Human Expertise for AI Red-Teaming and Scalable Evaluation - Microsoft Research","url":"https://www.microsoft.com/en-us/research/publication/human-expertise-for-ai-red-teaming-and-scalable-evaluation/"},{"title":"Theodora Skeadas | King's College London","url":"https://www.kcl.ac.uk/people/theodora-skeadas"},{"title":"Theodora Skeadas - DoorDash King's College London","url":"https://www.linkedin.com/in/theodora-skeadas/"},{"title":"How to Enter the Responsible Tech and AI Job Market: Theodora Skeadas, HKS MPP 2016, BA 2012 – Harvard FAS | Mignone Center for Career Success","url":"https://careerservices.fas.harvard.edu/blog/2026/03/16/how-to-enter-the-responsible-tech-and-ai-job-market-theodora-skeadas-hks-mpp-2016-ba-2012/"},{"title":"Reflecting on three of my favorite red teaming events from this past year - Humane Intelligence Humane Intelligence","url":"https://humane-intelligence.org/post/reflecting-on-three-of-my-favorite-red-teaming-events-from-this-past-year/"},{"title":"Red Teaming Artificial Intelligence for Social Good The PLAYBOOK","url":"https://humane-intelligence.org/wp-content/uploads/2025/09/Playbook_RedTeaming-AI-SocialGood.pdf"},{"title":"Events - Humane Intelligence Humane Intelligence","url":"https://humane-intelligence.org/get-involved/events/"},{"title":"Ask What Your Country Can Do For You: Towards a Public Red Teaming Model Presented at the Conference on Applied Machine Learning in Information Security (CAMLIS) RED Workshop, 2025.","url":"https://arxiv.org/html/2510.20061v1"},{"title":"Red Teaming Generative AI in Classrooms and Beyond | TechPolicy.Press","url":"https://www.techpolicy.press/red-teaming-generative-ai-in-classrooms-and-beyond/"}]
+
+Based on the web search results, here's what I found about Theodora Skeadas and her work in AI red teaming with Humane Intelligence:
+
+## Who is Theodora Skeadas
+
+Theodora Skeadas is a public policy strategist and thought leader at the forefront of technology ethics, platform governance, and responsible AI. She currently works as Community Policy Manager at DoorDash, where she develops and implements trust and safety policies to protect users at scale. She is also Head of Red Teaming at Humane Intelligence, a nonprofit committed to collaborative red teaming and improving the safety of generative AI systems.
+
+She is a part-time PhD student at King's College London Department of War Studies, exploring the relationship between online and offline harms.
+
+## Her Red Teaming Research
+
+As Head of Red Teaming at Humane Intelligence, she develops hands-on, measurable methods of real-time assessments of societal impact of AI models.
+
+## Key Red Teaming Initiatives
+
+Theodora has led several notable red teaming initiatives through Humane Intelligence:
+
+1. **Nationwide Red Teaming Exercise**: Humane Intelligence, supported by the U.S. National Institute of Standards and Technology (NIST), conducted a nationwide AI red-teaming exercise to test and evaluate generative AI systems' robustness, security, and ethical implications. This event was open to U.S.-based individuals and model developers.
+
+2. **Asia-Pacific Initiative**: Humane Intelligence, in collaboration with IMDA Singapore and global leaders like Anthropic, AWS, Cohere, Google, and Meta, launched the first regional AI safety red teaming challenge in Asia. Participants from nine countries, including sociologists, linguists, and cultural experts, red teamed four large language models to spot biases and stereotypes. This groundbreaking initiative addresses gaps in AI safety evaluations, which often focus on Western contexts.
+
+3. **Gender-Based Violence Focus**: Humane Intelligence partnered with UNESCO in Paris for a red-teaming exercise on Technology-Facilitated Gender-Based Violence (TFGBV). The event aimed to identify vulnerabilities in generative AI models and explore their potential misuse in perpetuating bias, discrimination, and violence against women and girls.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,109 @@
+========================================================================
+AGENT RESEARCH: Verify PostCompact hook exists
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 05:27:33 UTC
+========================================================================
+
+I need to verify: does the PostCompact hook ACTUALLY exist in Claude Code? A previous agent told me it does, but when I tested it, the hook output did not appear in my context after compaction.
+
+Please search the actual Claude Code documentation thoroughly. What are the EXACT hook event types that exist? Is PostCompact one of them? Is there any hook that fires on compaction?
+
+Also check: does stdout from hooks actually get injected into Claude's context? Or only stderr? What exactly happens with hook output?
+
+----------------------------------------
+
+Perfect. I now have the official documentation. Let me provide you with a definitive answer.
+
+## Verification Complete: PostCompact DOES Exist
+
+**Yes, PostCompact is a real hook event in Claude Code.** Your previous agent was correct. However, the reason you didn't see the output in your context after compaction is likely due to how hook output is handled.
+
+## The Exact Hook Event Types
+
+Claude Code has **22 official hook events** (not 12):
+
+1. SessionStart
+2. InstructionsLoaded
+3. UserPromptSubmit
+4. PreToolUse
+5. PermissionRequest
+6. PostToolUse
+7. PostToolUseFailure
+8. Notification
+9. SubagentStart
+10. SubagentStop
+11. Stop
+12. StopFailure
+13. TeammateIdle
+14. TaskCompleted
+15. ConfigChange
+16. WorktreeCreate
+17. WorktreeRemove
+18. **PreCompact** ← fires before compaction
+19. **PostCompact** ← fires after compaction
+20. Elicitation
+21. ElicitationResult
+22. SessionEnd
+
+## Hooks That Fire on Compaction
+
+Two hooks fire during the compaction process:
+
+- **PreCompact**: Runs BEFORE context compaction starts
+- **PostCompact**: Runs AFTER context compaction completes
+
+Both hooks support matchers for `manual` (user-triggered `/compact`) or `auto` (automatic context window compaction).
+
+## Hook Output: stdout vs stderr Behavior (Critical)
+
+This is where the confusion likely lies. **Hook output does NOT automatically appear in Claude's context for most events:**
+
+| Exit Code | Behavior |
+|-----------|----------|
+| **Exit 0** | For `UserPromptSubmit` and `SessionStart` hooks: stdout IS added to Claude's context. For all other events (including `PostCompact`): stdout is shown only in **verbose mode** (`Ctrl+O`), NOT in the regular context. |
+| **Exit 2** | Stderr is fed back to Claude as error feedback (blocking). |
+| **Other codes** | Stderr appears in verbose mode only. |
+
+## Why Your PostCompact Hook Output Disappeared
+
+If you configured a `PostCompact` hook with exit code 0, the stdout output would NOT be injected into Claude's context automatically. It would only be visible in verbose mode.
+
+To actually re-inject context after compaction, you have two options:
+
+**Option 1: Use SessionStart hook with "compact" matcher** (recommended)
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Your context reminder here...'"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+`SessionStart` hooks with exit code 0 DO inject stdout into Claude's context. The matcher `"compact"` ensures it only runs after compaction.
+
+**Option 2: Use PostCompact with JSON output**
+
+If you want to use `PostCompact` directly, you'd need to return JSON with a structured decision field (though the documentation examples don't show context injection for PostCompact, so SessionStart with the "compact" matcher is the official pattern).
+
+## Source
+
+[Claude Code Hooks reference documentation](https://code.claude.com/docs/en/hooks.md) and [Hooks guide](https://code.claude.com/docs/en/hooks-guide.md)
+agentId: a6ed32ea857f399df (use SendMessage with to: 'a6ed32ea857f399df' to continue this agent)
+<usage>total_tokens: 31386
+tool_uses: 4
+duration_ms: 36291</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

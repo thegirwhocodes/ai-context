@@ -1,0 +1,38 @@
+========================================================================
+AGENT RESEARCH: Live M&B citation check
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 19:19:48 UTC
+========================================================================
+
+**You have web access this time** — use WebSearch and WebFetch aggressively.
+
+Verify **Milan, T. and Burnett, N. (2014). "Exclusion from Education: The Economic Cost of Out-of-School Children in 20 Countries"** Results for Development.
+
+Tasks:
+1. Search Google Scholar (`scholar.google.com/scholar?q=...`) for the exact title — report **current citation count** as of today. Try multiple queries to surface fragmented entries.
+2. Fetch the R4D landing page: `https://r4d.org/resources/exclusion-education-economic-cost-school-children-20-countries/` — confirm it's still hosted, get the publication date, find the full PDF URL.
+3. Fetch Nicholas Burnett's bio (likely at R4D, UNESCO, or his LinkedIn) — confirm his role as UNESCO Assistant Director-General for Education (years served).
+4. Search for the **CSEA/IDRC Nigeria-specific application** of this methodology: `https://www.associatesforchange.org/new-reports-2022/Economic Costs of OOSC by Nigeria.pdf` — fetch it and confirm the Nigeria figures (7.83% micro / 13.03% macro / $40B / $56B).
+5. Search Google Scholar for these stronger alternatives and report current citation counts:
+   - "Hanushek Woessmann 2015 Universal Basic Skills" (book)
+   - "Hanushek Woessmann 2012 Do better schools lead to more growth"
+   - "Psacharopoulos Patrinos 2018 Returns to Investment in Education Decennial Review"
+   - "Wodon 2018 Missed Opportunities High Cost Not Educating Girls"
+6. Search for any **Nigeria-specific recent (2020+) empirical papers on OOSC and growth** that aren't already in her notes. Report anything new and notable.
+
+UPDATE the existing file at `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/04_milan_burnett_legitimacy.md` with your live findings — preserve the structure but replace cached numbers with verified ones.
+
+Report a 250-word summary including the actual citation counts you found.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a5084647724138fcf (internal ID - do not mention to user. Use SendMessage with to: 'a5084647724138fcf' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a5084647724138fcf.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

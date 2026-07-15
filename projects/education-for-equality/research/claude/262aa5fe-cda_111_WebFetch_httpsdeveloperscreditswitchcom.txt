@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.creditswitch.com/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-04-06 21:54:43 UTC
+========================================================================
+
+URL: https://developers.creditswitch.com/
+Extraction prompt: Does Creditswitch offer USSD-PUSH (network-initiated / mobile-terminated USSD)? List all USSD-related APIs, especially any that push messages to a phone without user initiating. Include pricing, endpoints, and technical details.
+
+----------------------------------------
+
+# Creditswitch USSD Capabilities
+
+Based on the provided documentation, I can confirm that Creditswitch offers USSD services. However, **the specific details you requested are not included** in this overview page.
+
+## What's Available
+
+The documentation references a "[USSD](../pages/ussd)" section in the API menu, indicating dedicated USSD functionality exists. The navigation mentions this as a standalone service offering.
+
+## What's Missing
+
+The excerpt provided does **not contain**:
+- Information distinguishing between user-initiated vs. network-initiated (push) USSD
+- Pricing details
+- API endpoints
+- Technical specifications
+- Whether mobile-terminated USSD is supported
+
+## Recommendation
+
+To get comprehensive details about USSD-PUSH capabilities, pricing, and endpoints, you would need to:
+1. Access the full USSD documentation page referenced in the navigation
+2. Contact Creditswitch support at support@creditswitch.com with "CSW API: USSD-PUSH" in the subject line
+
+The overview confirms USSD is a service offering but reserves detailed specifications for the dedicated service documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

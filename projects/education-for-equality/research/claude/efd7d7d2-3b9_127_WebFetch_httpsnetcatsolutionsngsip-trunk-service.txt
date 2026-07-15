@@ -1,0 +1,58 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://netcatsolutions.ng/sip-trunk-service/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:38:50 UTC
+========================================================================
+
+URL: https://netcatsolutions.ng/sip-trunk-service/
+Extraction prompt: Extract ALL details in simple English: pricing, how to sign up, what you get, SIP trunk specs, Nigerian phone numbers, toll-free, how calls are routed, any technical specs, contact info
+
+----------------------------------------
+
+# SIP Trunk Service - Netcat Technology Solutions
+
+## Overview
+Netcat Technology offers SIP trunk services enabling businesses to make and receive calls via internet-based virtual connections rather than traditional phone lines.
+
+## Key Features & Services
+
+**Virtual Numbers Available:**
+- Local, national, and toll-free numbers
+- DID (Direct Inward Dial) numbers across multiple countries
+- Licensed virtual numbers that avoid spam classification
+
+**Technical Specifications:**
+- "Low Latency SIP Gateway" with in-country RTP media and SIP signalling routing
+- Compatible with major IP PBX systems: 3CX, Yeastar, Shoretel, FreePBX, Mitel, Asterisk, and others
+- Supports Microsoft Teams direct routing integration
+- SMS and WhatsApp API capabilities
+
+## How It Works
+
+Incoming calls to your DID number route directly to designated agents or extensions, eliminating need for traditional IVR systems. Calls can be routed to remote workers and team members through dedicated extensions.
+
+## Business Benefits
+
+- Significant cost reduction on long-distance and international calls
+- Direct call routing to preferred agents
+- Remote work capability
+- Improved customer retention and satisfaction
+
+## Support & Partnerships
+
+- "3CX Silver Partner" certified in Nigeria
+- 24/7 Nigerian-based helpdesk support
+- Free agent training provided
+- "100% Uptime Guarantee"
+
+## Contact Information
+
+- Phone: +234 809 148 7643 or +234 815 596 2922
+- Address: 5 Adepele Street, Ikeja, Lagos, Nigeria
+- Website: netcatsolutions.ng
+
+**Pricing and signup details are not specified on this page.**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

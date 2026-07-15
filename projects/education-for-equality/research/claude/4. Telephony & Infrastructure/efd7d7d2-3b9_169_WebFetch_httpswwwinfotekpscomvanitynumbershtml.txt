@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.infotekps.com/vanitynumbers.html
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-13 08:37:57 UTC
+========================================================================
+
+URL: https://www.infotekps.com/vanitynumbers.html
+Extraction prompt: Find all pricing information - monthly fees, per-minute rates, setup costs for 0800 toll-free numbers. Extract any specific numbers/rates.
+
+----------------------------------------
+
+# Pricing Information for 0800 Vanity Numbers
+
+Based on the provided web page content, **no specific pricing information is available**. The page does not include:
+
+- Monthly fees
+- Per-minute rates
+- Setup costs
+- Any other pricing details
+
+The page describes the features and benefits of 0700 and 0800 vanity number services but omits all cost information. To obtain pricing, the page directs visitors to contact sales via:
+
+- Email: info@infotekps.com
+- Phone: +2348132878945
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

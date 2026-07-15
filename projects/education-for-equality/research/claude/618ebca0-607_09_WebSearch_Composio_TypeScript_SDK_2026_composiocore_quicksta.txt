@@ -1,0 +1,52 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Composio TypeScript SDK 2026 @composio/core quickstart authorize toolkit execute
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-30 06:53:14 UTC
+========================================================================
+
+Search query: Composio TypeScript SDK 2026 @composio/core quickstart authorize toolkit execute tool connected account OAuth Node.js
+
+----------------------------------------
+
+Web search results for query: "Composio TypeScript SDK 2026 @composio/core quickstart authorize toolkit execute tool connected account OAuth Node.js"
+
+Links: [{"title":"GitHub - ComposioHQ/composio: Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action. · GitHub","url":"https://github.com/composiohq/composio"},{"title":"Quickstart | Composio","url":"https://docs.composio.dev/docs/quickstart"},{"title":"Composio MCP by ComposioHQ | AI Tool Integrations","url":"https://www.augmentcode.com/mcp/composio"},{"title":"Installation & Quick Start | ComposioHQ/composio | DeepWiki","url":"https://deepwiki.com/ComposioHQ/composio/1.2-installation-and-quick-start"},{"title":"Composio · GitHub","url":"https://github.com/composiohq"},{"title":"@composio/core - npm","url":"https://www.npmjs.com/package/@composio/core"},{"title":"ComposioHQ/composio | DeepWiki","url":"https://deepwiki.com/ComposioHQ/composio"},{"title":"Welcome | Composio","url":"https://docs.composio.dev/docs"},{"title":"Our next generation SDKs | Composio","url":"https://docs.composio.dev/docs/migration-guide/new-sdk"},{"title":"Changelog - Apr 23, 2026 | Composio Changelog | Composio","url":"https://docs.composio.dev/docs/changelog/2026/04/23"}]
+
+Based on the web search results, here's what I found about the Composio TypeScript SDK 2026:
+
+## Overview
+
+The TypeScript SDK provides a modern, type-safe way to interact with Composio's services and is designed for both Node.js and browser environments, offering full TypeScript support with comprehensive type definitions.
+
+## Installation & Setup
+
+The @composio/core package can be installed using npm, yarn, or pnpm with `npm install @composio/core`. The TypeScript SDK requires Node.js 18+ with npm, pnpm, or bun.
+
+Basic initialization looks like:
+```typescript
+import { Composio } from '@composio/core';
+const composio = new Composio({ apiKey: 'your-api-key' });
+```
+
+## Core Features
+
+The core Composio SDK allows users to interact with the Composio Platform and provides a powerful and flexible way to manage and execute tools, handle authentication, and integrate with various platforms and frameworks.
+
+The SDK includes functionality to list, retrieve, and execute tools, organize and manage collections of tools (toolkits), create and manage event triggers, configure authentication providers, and manage third-party service connections.
+
+## Authentication & Connected Accounts
+
+If a tool requires authentication (e.g., Gmail OAuth), Composio returns an auth URL, and the user authenticates via a Connect Link with Composio managing the tokens.
+
+The Composio SDK provides a powerful way to manage third-party service connections through Connected Accounts, allowing you to authenticate with various services and maintain those connections.
+
+## Framework Integration
+
+Composio has official provider packages for both OpenAI Agents and Anthropic Claude, with TypeScript installations of @composio/openai-agents or @composio/anthropic.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

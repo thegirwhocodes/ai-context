@@ -1,0 +1,43 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: TTS text to speech lowest latency real-time under 100ms 2025
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 11:18:21 UTC
+========================================================================
+
+Search query: TTS text to speech lowest latency real-time under 100ms 2025
+
+----------------------------------------
+
+Web search results for query: "TTS text to speech lowest latency real-time under 100ms 2025"
+
+Links: [{"title":"Top Fastest Text-to-Speech APIs in 2025 - Smallest.ai","url":"https://smallest.ai/blog/fastest-text-to-speech-apis"},{"title":"GitHub - KoljaB/RealtimeTTS: Converts text to speech in realtime · GitHub","url":"https://github.com/KoljaB/RealtimeTTS"},{"title":"[2509.15969] VoXtream: Full-Stream Text-to-Speech with Extremely Low Latency","url":"https://arxiv.org/abs/2509.15969"},{"title":"Speaking of Voxtral | Mistral AI","url":"https://mistral.ai/news/voxtral-tts"},{"title":"Picovoice/tts-latency-benchmark: Text-to-Speech ...","url":"https://github.com/Picovoice/tts-latency-benchmark"},{"title":"The Best Open-Source Text-to-Speech Models in 2026","url":"https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models"},{"title":"Real-Time TTS API for Low-Latency Speech Streaming | Respeecher","url":"https://www.respeecher.com/real-time-tts-api"},{"title":"Why we built our low-latency Text-to-Speech","url":"https://www.speechmatics.com/company/articles-and-news/why-we-built-our-low-latency-text-to-speech"},{"title":"TTS Latency Report 2025: Google vs. Microsoft voices | BOTfriends","url":"https://botfriends.de/en/blog/tts-latency-benchmark-2025-google-vs-microsoft-voices-fuer-phonebots/"},{"title":"Lightning: Fastest Text-to-Speech Model by Smallest.ai - Smallest.ai","url":"https://smallest.ai/blog/lightning-fastest-text-to-speech-model-by-smallestai"}]
+
+Based on the search results, here are the key findings about TTS systems achieving lowest latency real-time performance under 100ms in 2025:
+
+## Top Ultra-Low Latency TTS Solutions
+
+**Smallest AI Lightning Model**
+Smallest AI's Lightning API leads the industry with sub-100ms speech synthesis. Lightning can generate 10 seconds of natural-sounding audio in just 100 milliseconds, with a real-time factor (RTF) of 0.01.
+
+**VoXtream**
+VoXtream achieves the lowest initial delay among publicly available streaming TTS at 102 ms on GPU, making it just slightly above the 100ms threshold.
+
+**Fish Audio S2 Pro**
+The hosted API achieves approximately 100ms TTFA (Time to First Audio) on a single H200 GPU with SGLang.
+
+**Mistral Voxtral TTS**
+Voxtral TTS features very low latency for time-to-first-audio, and human evaluations show that Voxtral TTS achieves superior naturalness compared to ElevenLabs Flash v2.5 while maintaining similar Time-to-First-Audio (TTFA).
+
+**Speechmatics Streaming TTS**
+Speechmatics delivers speech with latency under 150 milliseconds without sacrificing naturalness.
+
+## Key Performance Metrics
+
+Ultra-fast APIs operate under 100ms latency, ensuring smooth and near-instant voice synthesis. These solutions are particularly designed for live conversations (e.g., AI-powered call centers, voice assistants), real-time accessibility solutions (e.g., screen readers), and interactive applications (e.g., gaming, virtual assistants).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

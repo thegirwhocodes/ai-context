@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://marketplace.visualstudio.com/items?itemName=Fultonmarketaistudio.claude-
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:52 UTC
+========================================================================
+
+URL: https://marketplace.visualstudio.com/items?itemName=Fultonmarketaistudio.claude-code-voice
+Extraction prompt: What does the Claude Code Voice VS Code extension do? Does it require API keys? How does it integrate with Claude Code? Is it free? Does it work on macOS?
+
+----------------------------------------
+
+# Claude Code Voice Extension Overview
+
+## Functionality
+The extension provides "Voice-enabled Claude Code Chat Interface for VS Code with native mic recording and TTS." It enables spoken interaction with Claude through microphone input and text-to-speech responses.
+
+## API Key Requirements
+The documentation states you need an "Active Claude API or subscription," indicating API credentials are necessary for operation.
+
+## Claude Code Integration
+The extension integrates with Claude Code CLI, which must be installed separately from Anthropic. It works as a chat interface layer within VS Code, allowing you to interact with Claude's capabilities directly in your editor.
+
+## Cost
+The extension itself is listed as **Free** on the marketplace, though using Claude's services requires an active API account or paid subscription.
+
+## macOS Compatibility
+While the documentation mentions "Windows/WSL Support" as a specific feature, it also references keyboard shortcuts using "Cmd+Shift+C on Mac," suggesting macOS compatibility exists. However, the page doesn't explicitly confirm full macOS support—it emphasizes Windows and WSL functionality.
+
+**Note:** With only 1,077 installs and zero ratings, this is a less established extension compared to other Claude integrations in the marketplace.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

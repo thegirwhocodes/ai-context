@@ -1,0 +1,116 @@
+========================================================================
+AGENT RESEARCH: Solve AT turn latency
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:38 UTC
+========================================================================
+
+You are fixing ONE problem in the "Education for Equality / Sabi" codebase (a voice-phone AI tutor for Nigerian kids). Repo: /Users/naomiivie/Education for Equality/curriculum-app (Next.js 16 on Vercel — this carries production Africa's Talking voice traffic).
+
+PROBLEM: The AT voice loop is too slow (~5-6s per turn; greeting ~9s). Cause: the AT routes use `callSabi(...)` which calls Claude Haiku (~4s), while a much faster path `callSabiVoiceFast(...)` (Cerebras llama-3.3-70b ~0.1s, Groq fallback, Claude last resort) already exists and is only used on the Twilio path.
+
+YOUR TASK: Read these files fully:
+- app/api/sabi/at/incoming/route.ts
+- app/api/sabi/at/recording/route.ts
+- lib/voice/sabi-shared.ts (study callSabi vs callSabiVoiceFast — signatures, behavior, fallbacks)
+
+Then design the EXACT change to make the AT greeting + each turn use callSabiVoiceFast (with safe fallback to callSabi). Confirm callSabiVoiceFast handles empty messages (greeting) and returns the same shape. Identify any risk (Cerebras/Groq reliability, error handling, whether callSabiVoiceFast already falls back to Claude).
+
+OUTPUT (do NOT edit any files, do NOT deploy): Return concrete `old_string` → `new_string` edit pairs (exact text copied from the files) for each change, the file path for each, a 1-line risk assessment, and the expected latency improvement. Be precise enough that I can apply your edits verbatim.
+
+----------------------------------------
+
+I have read all three files fully. Here is the precise change design.
+
+## Confirmation of behavior
+
+`callSabiVoiceFast(messages, studentId)`:
+- **Empty messages (greeting):** Yes, handled identically to `callSabi` — lines 550-553 substitute `[{ role: "user", content: "Hi, I want to learn!" }]` when `messages.length === 0`.
+- **Same return shape:** Yes — both return `Promise<string>`.
+- **Already falls back to Claude:** Yes — Cerebras → Groq → `callSabi(messages, studentId, true)` (line 590). So the worst case is identical to the current behavior, just with two fast attempts in front.
+- **Signature difference:** `callSabiVoiceFast` takes only `(messages, studentId)` — no `isVoice` flag (it always uses `VOICE_SYSTEM_ADDENDUM`, which is exactly what the AT routes want since they all pass `true`).
+
+Because `callSabiVoiceFast` internally falls back to `callSabi` on failure, no extra try/catch wrapper is needed at the call sites — the safe fallback is built in.
+
+---
+
+## Edits
+
+### File 1: `/Users/naomiivie/Education for Equality/curriculum-app/app/api/sabi/at/incoming/route.ts`
+
+**Edit 1a — import:**
+
+old_string:
+```
+import { findOrCreateStudentByPhone, callSabi } from "@/lib/voice/sabi-shared";
+```
+new_string:
+```
+import { findOrCreateStudentByPhone, callSabiVoiceFast } from "@/lib/voice/sabi-shared";
+```
+
+**Edit 1b — greeting call (line 115):**
+
+old_string:
+```
+    // Generate greeting via Claude
+    const greeting = await callSabi([], student.id, true);
+```
+new_string:
+```
+    // Generate greeting via fast voice LLM (Cerebras → Groq → Claude)
+    const greeting = await callSabiVoiceFast([], student.id);
+```
+
+---
+
+### File 2: `/Users/naomiivie/Education for Equality/curriculum-app/app/api/sabi/at/recording/route.ts`
+
+**Edit 2a — import:**
+
+old_string:
+```
+import { callSabi } from "@/lib/voice/sabi-shared";
+```
+new_string:
+```
+import { callSabiVoiceFast } from "@/lib/voice/sabi-shared";
+```
+
+**Edit 2b — the two response calls (lines 141 and 143). These are distinct lines; apply as two separate edits or one block.** Both occur in the same if/else:
+
+old_string:
+```
+      sabiResponse = await callSabi(wrapUpMessages, studentId, true);
+    } else {
+      sabiResponse = await callSabi(messages, studentId, true);
+    }
+```
+new_string:
+```
+      sabiResponse = await callSabiVoiceFast(wrapUpMessages, studentId);
+    } else {
+      sabiResponse = await callSabiVoiceFast(messages, studentId);
+    }
+```
+
+That block captures both `callSabi` invocations in the recording route in one unique match.
+
+---
+
+## Risk assessment
+
+Low — `callSabiVoiceFast` already falls back to the exact same `callSabi(messages, studentId, true)` path on any Cerebras/Groq failure or empty response, so the worst case equals current behavior; the only added risk is the per-provider 10s `AbortSignal.timeout` (line 48) stacking if both fast providers hang, but each has its own timeout and both routes have `maxDuration = 60`, leaving ample headroom.
+
+## Expected latency improvement
+
+Per turn LLM time drops from ~4s (Claude Haiku) to ~0.1s (Cerebras) when Cerebras succeeds, or ~0.6s (Groq) on fallback — roughly **3.5-4s saved per turn**, bringing turns from ~5-6s toward ~1.5-2.5s and the greeting from ~9s toward ~5s (the remaining time being STT/TTS/upload, which these edits do not touch).
+
+One note: `CEREBRAS_API_KEY` and `GROQ_API_KEY` must be present in the curriculum-app Vercel env for the speedup to engage; if neither is set, it silently falls through to Claude (no regression, but also no improvement). Worth verifying those env vars exist in production before expecting the gain.
+agentId: aa2de6018edf8d6e1 (use SendMessage with to: 'aa2de6018edf8d6e1' to continue this agent)
+<usage>subagent_tokens: 40928
+tool_uses: 3
+duration_ms: 25433</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: vLLM concurrent users Llama 3.1 8B H100 throughput tokens per second batch
+Session: 960e5418-9a1d-4bd7-9a3c-ad6a4afc5227
+Time: 2026-06-29 16:41:13 UTC
+========================================================================
+
+Search query: vLLM concurrent users Llama 3.1 8B H100 throughput tokens per second batch
+
+----------------------------------------
+
+Web search results for query: "vLLM concurrent users Llama 3.1 8B H100 throughput tokens per second batch"
+
+Links: [{"title":"Benchmarking Llama 3.1 8B Instruct on Nvidia H100 and A100 chips with the vLLM Inferencing Engine | Ori","url":"https://www.ori.co/blog/benchmarking-llama-3.1-8b-instruct-on-nvidia-h100-and-a100-chips-with-the-vllm-inferencing-engine"},{"title":"Performance of Llama 3.1 8B AI Inference using vLLM on ND-H100-v5 | Microsoft Community Hub","url":"https://techcommunity.microsoft.com/blog/azurehighperformancecomputingblog/performance-of-llama-3-1-8b-ai-inference-using-vllm-on-nd-h100-v5/4448355"},{"title":"vLLM v0.6.0: 2.7x Throughput Improvement and 5x Latency Reduction | vLLM Blog","url":"https://blog.vllm.ai/2024/09/05/perf-update.html"},{"title":"vLLM vs Ollama 2026: 9x Throughput Gap, 172K Stars [Tested]","url":"https://tech-insider.org/vllm-vs-ollama-2026/"},{"title":"Inference performance of Llama 3.1 8B using vLLM across various GPUs and CPUs | Microsoft Community Hub","url":"https://techcommunity.microsoft.com/blog/azurehighperformancecomputingblog/inference-performance-of-llama-3-1-8b-using-vllm-across-various-gpus-and-cpus/4448420"},{"title":"Local LLM Performance: What Tokens-Per-Second to Expect From Your Hardware","url":"https://inventivehq.com/blog/local-llm-performance-what-to-expect"},{"title":"Inference Benchmarking of Large Language Models on AI ...","url":"https://arxiv.org/pdf/2411.00136"},{"title":"LLM Inference Engines: vLLM vs LMDeploy vs SGLang","url":"https://aimultiple.com/inference-engines"},{"title":"A Quick Guide to vLLM for Fast AI Inference","url":"https://www.hyperstack.cloud/blog/case-study/what-is-vllm-a-guide-to-quick-inference"}]
+
+Based on the search results, here are the key findings for vLLM performance with Llama 3.1 8B on H100:
+
+## Throughput and Concurrent Users
+
+For the H100, 16 concurrent requests achieves optimal throughput with a maximum throughput of 8.01 tokens per second.
+
+## Batch Processing Impact
+
+The throughput increases significantly with batching. When vLLM processes many requests concurrently with continuous (in-flight) batching, it reads each weight from memory once and reuses it across every sequence in the batch, shifting the workload from bandwidth-bound toward compute-bound, allowing per-request tok/s to stay roughly the same while aggregate throughput can climb 10–20x before compute saturates.
+
+## Inference Optimization
+
+vLLM uses PagedAttention (which is inspired by virtual memory and paging techniques used in operating systems), to manage the KV cache using blocks/pages, allowing vLLM to efficiently and dynamically utilize HBM memory and minimize memory fragmentation.
+
+## Performance Comparison with Other Engines
+
+Recent benchmarks comparing multiple inference engines show competitive performance. For Llama 3.1 8B batch inference on H100, vLLM (optimized with FlashInfer) provides a solid baseline, while the C++-native architectures of SGLang and LMDeploy unlock an additional 29% in throughput.
+
+The performance characteristics vary significantly based on whether you're measuring single-stream decode or batch inference scenarios, with batch processing showing dramatically higher aggregate throughput.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/1361037-how-do-i-generate-an-api-key
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:28:39 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/1361037-how-do-i-generate-an-api-key
+Extraction prompt: Quote the EXACT step-by-step instructions for generating an API key. What is the verification code field for? After clicking Generate, what happens next — does the key appear on screen, or do you have to check email, or something else? What if the page just shows the Generate button again after clicking?
+
+----------------------------------------
+
+# API Key Generation Instructions
+
+## Step-by-Step Process
+
+For **Production/Live Users:**
+
+1. "Log into your account and got to your App dashboard"
+2. "Click on Settings(on the menu on your left)"
+3. "Click on API Key"
+4. "Enter your password and click **Generate**"
+5. "Copy the API Key generated and paste it in your code or record it somewhere safe for later use because you will not see it from the dashboard on subsequent visits."
+
+For **Sandbox Users**, the process is identical except you first "click on the orange **Go To Sandbox App** button."
+
+## Important Notes
+
+The document does not mention a verification code field.
+
+Regarding what happens after clicking Generate: The instructions state you should "Copy the API Key generated" immediately. The page indicates the key displays at that moment, and you must save it then because "you will not see it from the dashboard on subsequent visits."
+
+The guide recommends waiting "about 3 minutes before testing it."
+
+There is no mention of what occurs if only the Generate button reappears without displaying a key.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

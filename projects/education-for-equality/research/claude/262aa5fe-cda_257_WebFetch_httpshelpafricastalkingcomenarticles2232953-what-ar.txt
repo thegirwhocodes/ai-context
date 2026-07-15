@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2232953-what-are-the-africa-s-talkin
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 16:46:39 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2232953-what-are-the-africa-s-talking-api-endpoints
+Extraction prompt: List ALL Africa's Talking API endpoints. Particularly: any endpoint for fetching call recordings (after a Record action), any endpoint for fetching call history with recording URLs, any endpoint for downloading a recording by call session ID. Quote verbatim. Include both Live and Sandbox URLs.
+
+----------------------------------------
+
+# Africa's Talking API Endpoints
+
+Based on the provided documentation, here are all listed endpoints:
+
+**Airtime**
+- Live: `https://api.africastalking.com/version1/airtime/send`
+- Sandbox: `https://api.sandbox.africastalking.com/version1/airtime/send`
+
+**SMS**
+- Live: `https://api.africastalking.com/version1/messaging`
+- Sandbox: `https://api.sandbox.africastalking.com/version1/messaging`
+
+**Voice**
+- Live: `https://voice.africastalking.com/call`
+- Sandbox: `https://voice.sandbox.africastalking.com/call`
+
+**Payments**
+- B2C Live: `https://payments.africastalking.com/mobile/b2c/request`
+- B2C Sandbox: `https://payments.sandbox.africastalking.com/mobile/b2c/request`
+- B2B Live: `https://payments.africastalking.com/mobile/b2b/request`
+- B2B Sandbox: `https://payments.sandbox.africastalking.com/mobile/b2b/request`
+- Checkout Live: `https://payments.africastalking.com/mobile/checkout/request`
+- Checkout Sandbox: `https://payments.sandbox.africastalking.com/mobile/checkout/request`
+
+**Notable Finding:** The documentation does not include endpoints for fetching call recordings, retrieving call history with recording URLs, or downloading recordings by session ID. These capabilities are not covered in the provided help article.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

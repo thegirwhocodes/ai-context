@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Kimi K2" vs Claude Sonnet Opus coding agent comparison
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:43:12 UTC
+========================================================================
+
+Search query: "Kimi K2" vs Claude Sonnet Opus coding agent comparison
+
+----------------------------------------
+
+Web search results for query: ""Kimi K2" vs Claude Sonnet Opus coding agent comparison"
+
+Links: [{"title":"Kimi K2 vs. Claude 4 Sonnet: what you should pick for agentic coding - Composio","url":"https://composio.dev/blog/kimi-k2-vs-claude-4-sonnet-what-you-should-pick-for-agentic-coding"},{"title":"Kimi k2.5 vs. Claude Opus 4.5: The 2026 Agentic AI Showdown","url":"https://vertu.com/lifestyle/kimi-k2-5-vs-claude-opus-4-5-why-this-open-source-giant-is-the-new-king-of-agentic-ai/"},{"title":"I Tested Kimi K2.5 with Claude Code (1-Trillion Parameters, 8x Cheaper Than Opus) | by Joe Njenga | Jan, 2026 | Medium","url":"https://medium.com/@joe.njenga/i-tested-kimi-k2-5-with-claude-code-1-trillion-parameters-8x-cheaper-than-opus-8d4f9e9c7b4d"},{"title":"Four Giants, One Winner: Kimi K2.5 vs GPT-5.2 vs Claude Opus 4.5 vs Gemini 3 Pro Comparison | by Cogni Down Under | Jan, 2026 | Medium","url":"https://medium.com/@cognidownunder/four-giants-one-winner-kimi-k2-5-vs-gpt-5-2-vs-claude-opus-4-5-vs-gemini-3-pro-comparison-38124c85d990"},{"title":"Qwen 3 Coder vs. Kimi K2 vs. Claude 4 Sonnet: Coding comparison - Composio","url":"https://composio.dev/blog/qwen-3-coder-vs-kimi-k2-vs-claude-4-sonnet-coding-comparison"},{"title":"Kimi K2 vs Claude 4 Opus (Reasoning): Model Comparison","url":"https://artificialanalysis.ai/models/comparisons/kimi-k2-vs-claude-4-opus-thinking"},{"title":"GPT-5.1 Codex vs. Claude 4.5 Sonnet vs. Kimi K2 Thinking : Tested the best models for agentic coding - Composio","url":"https://composio.dev/blog/kimi-k2-thinking-vs-claude-4-5-sonnet-vs-gpt-5-codex-tested-the-best-models-for-agentic-coding"},{"title":"Claude Opus 4.5 (Reasoning) vs Kimi K2: Model Comparison","url":"https://artificialanalysis.ai/models/comparisons/claude-opus-4-5-thinking-vs-kimi-k2"},{"title":"Kimi K2.5 vs Claude Sonnet 4.5: Model Comparison & Pricing 2026 | LLMx Blog","url":"https://llmx.de/blog/kimi-k2-5-vs-claude-sonnet-4-5-model-comparison-2026/"},{"title":"Claude Sonnet 4 vs Kimi K2 vs Gemini 2.5 Pro: Which AI actually ships production code? | Forge Code","url":"https://forgecode.dev/blog/kimi-k2-vs-sonnet-4-vs-gemini-2.5-pro/"}]
+
+Based on the search results, here's a comprehensive comparison of Kimi K2 vs Claude Sonnet/Opus for coding agent work:
+
+## Performance & Reliability
+
+Claude Sonnet 4 consistently gave the most complete and reliable implementations across all tests, while Kimi K2 has strong coding and writes great UI code, but it's painfully slow and often gets stuck or produces non-functional code.
+
+Kimi K2 has a very low output of tokens per second, around 34.1, significantly slower than Claude Sonnet 4, which is around 91.3.
+
+## Speed Comparison
+
+Most tasks were done in under 5–7 minutes with Claude Sonnet 4, making it substantially faster than Kimi K2 for coding tasks.
+
+## Complex Tool Integration
+
+For tool-heavy and complex prompts like MCP + Composio, Claude Sonnet 4 is far ahead in both quality and structure. It was the only one that got it right on the first try.
+
+## Cost Considerations
+
+Kimi k2.5 is currently the world's most powerful open-source agentic model, outperforming Claude Opus 4.5 and GPT-5.2 in key autonomous benchmarks, and it offers significant cost savings. However, on standard benchmarks, Kimi K2.5 is competitive with Claude Sonnet 4.5, trailing by 4-6 percentage points. Against Opus 4.5, the gap widens to 10-14 points.
+
+## Bottom Line
+
+If you're optimising for speed and reliability, Claude Sonnet 4 is the clear winner. If you're looking for cost-effective solutions with relatively excellent outputs, Qwen3 Coder and Kimi K2 are great options, but be prepared for longer wait times.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

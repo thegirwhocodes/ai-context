@@ -1,0 +1,53 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://elevenlabs.io/enterprise
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 04:04:41 UTC
+========================================================================
+
+URL: https://elevenlabs.io/enterprise
+Extraction prompt: Describe the visual design in detail: layout, colors, background, dark/light theme, typography, card design, gradients, glows, how enterprise features and pricing tiers are presented, what makes it look premium and expensive
+
+----------------------------------------
+
+# Visual Design Analysis
+
+Based on the provided CSS stylesheet, here's the design system in detail:
+
+## Color Palette & Theme
+The design uses a **light theme** with an "eggshell" background (`#FDFCFC`). The color system includes:
+- **Neutrals**: Ranging from `#F2F2F2` (light) to `#1C1C1C` (dark)
+- **Accent colors**: Blues, greens, purples, oranges, and teals for emphasis
+- **Overlay system**: Semi-transparent dark and light overlays for depth
+
+## Typography Hierarchy
+The system implements **multiple font families**:
+- Display fonts use "Waldenburg FH" (bold, large sizes up to 6.25rem)
+- Headings use "Waldenburg" (light-weight, ranging 1.125rem-3.75rem)
+- Body text uses "Inter" (regular weight, optimized for readability)
+- UI elements use smaller sizes with increased letter-spacing for prominence
+
+As the stylesheet notes: "font-family:var(--f-body-01-font-family)"
+
+## Layout & Spacing
+The design employs a **12-column grid system** with responsive breakpoints (sm, md, lg, xl, xxl, xxxl). Spacing variables include outer gutters (1.25rem-4rem) and inner gutters (0.5rem-1.25rem) that adapt by viewport.
+
+## Card & Component Design
+Premium presentation through:
+- **Rounded corners** (ranging 5px to 50% for full circles)
+- **Border treatments** (1-4px solid borders in neutral tones)
+- **Subtle shadows** via CSS variables (though specific values are abstracted)
+- **Gradient backgrounds** supporting linear gradients in multiple directions
+
+## Premium Visual Indicators
+Sophistication is conveyed through:
+- **Opacity variations** for layered depth (`rgba` colors with controlled transparency)
+- **Grid-based alignment** ensuring visual precision
+- **Consistent spacing ratios** creating rhythm
+- **Typography scale** with distinct weights for hierarchy
+- **Smooth animations** (mentions of transitions, transforms)
+
+The system prioritizes **cleanliness and restraint**—premium without excessive ornamentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

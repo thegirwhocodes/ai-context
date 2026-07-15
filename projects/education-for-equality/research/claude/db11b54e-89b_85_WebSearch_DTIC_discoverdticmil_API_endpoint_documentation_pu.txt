@@ -1,0 +1,33 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTIC discover.dtic.mil API endpoint documentation public records JSON
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:25 UTC
+========================================================================
+
+Search query: DTIC discover.dtic.mil API endpoint documentation public records JSON
+
+----------------------------------------
+
+Web search results for query: "DTIC discover.dtic.mil API endpoint documentation public records JSON"
+
+Links: [{"title":"Defense Technical Information Center","url":"https://discover.dtic.mil/"},{"title":"Products and Services – Defense Technical Information Center","url":"https://discover.dtic.mil/products-services/"},{"title":"Technical Reports – Defense Technical Information Center","url":"https://discover.dtic.mil/technical-reports/"},{"title":"DTIC","url":"https://www.dtic.mil/"},{"title":"Defense Technical Information Center | LinkedIn","url":"https://www.linkedin.com/company/defense-technical-information-center"},{"title":"DTIC Registration – Defense Technical Information Center","url":"https://discover.dtic.mil/dtic-registration/"},{"title":"About – Defense Technical Information Center - dtic.mil","url":"https://discover.dtic.mil/about/"},{"title":"DTIC Submissions – Defense Technical Information Center","url":"https://discover.dtic.mil/submit-documents/"},{"title":"R&E Gateway Search - DTIC","url":"https://search.dtic.mil/"},{"title":"Defense Technical Information Center (DTIC) | USAGov","url":"https://www.usa.gov/agencies/defense-technical-information-center"}]
+
+Based on the search results, I found limited specific information about a public API endpoint for discover.dtic.mil. Here's what I found:
+
+For indexing DTIC's collection of unclassified and unlimited Technical Reports, the sitemap is available at https://apps.dtic.mil/sitemap.xml. This suggests that DTIC provides machine-readable access to their public records through standard web indexing mechanisms.
+
+The public can access nearly 1 million unclassified documents, including many that are full-text and downloadable, through the DTIC website. However, the search results don't include detailed API endpoint documentation for programmatic JSON access to DTIC records.
+
+To find comprehensive API documentation, you may want to:
+- Check if DTIC provides an API developers guide or documentation portal directly on their website
+- Look for GitHub repositories or developer documentation pages
+- Contact DTIC directly through their official website for information on API access and any JSON endpoints available for public records
+
+The search results indicate DTIC maintains public collections but don't show explicit RESTful API endpoint documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

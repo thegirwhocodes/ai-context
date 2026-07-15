@@ -1,0 +1,63 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/Hamzah-Luqman/signVLM
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:12:04 UTC
+========================================================================
+
+URL: https://github.com/Hamzah-Luqman/signVLM
+Extraction prompt: Extract ALL setup information: installation steps, requirements.txt contents, how to run inference, pretrained weight download links, what inputs it accepts, Python version, PyTorch version, CUDA requirements, supported platforms. Everything needed to get this running.
+
+----------------------------------------
+
+# SignVLM Setup Information
+
+## Installation Requirements
+
+**Environment Setup:**
+- Conda-based installation with PyTorch 1.9.0
+- CUDA 11.1 with cuDNN 8.0.5
+- Python 3.9
+
+**Command:**
+```
+conda create -n pt1.9.0cu11.1_official -c pytorch -c conda-forge pytorch=1.9.0=py3.9_cuda11.1_cudnn8.0.5_0 cudatoolkit torchvision av
+```
+
+## Dependencies
+
+The repository specifies these packages:
+- PyTorch 1.9.0
+- TorchVision
+- av (for video processing)
+
+## Input Requirements
+
+**Data Format:**
+Videos must be organized as a list file containing:
+```
+<video_path> <label_integer>
+```
+
+Where labels range from 0 to `num_classes - 1`. Paths can be relative to a specified data root directory.
+
+## Pretrained Weights
+
+**CLIP Backbone:**
+Download required from the ["CLIP official repository"](https://github.com/openai/CLIP/blob/d50d76daa670286dd6cacf3bcd80b5e4823fc8e1/clip/clip.py#L30) and provide via `--backbone_path` argument.
+
+## Execution
+
+Training/evaluation scripts exist in the `/scripts` folder. Users must configure:
+- `--backbone_path`
+- `--train_list_path`
+- `--val_list_path`
+- `--num_classes`
+- `--data_root` (optional)
+
+Additional parameters available via help messages in the scripts.
+
+**Note:** No pretrained model weights or inference scripts are provided in the repository—only training infrastructure is documented.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

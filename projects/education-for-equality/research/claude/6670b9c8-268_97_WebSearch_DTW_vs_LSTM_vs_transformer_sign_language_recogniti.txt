@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTW vs LSTM vs transformer sign language recognition accuracy comparison small d
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:25:55 UTC
+========================================================================
+
+Search query: DTW vs LSTM vs transformer sign language recognition accuracy comparison small dataset
+
+----------------------------------------
+
+Web search results for query: "DTW vs LSTM vs transformer sign language recognition accuracy comparison small dataset"
+
+Links: [{"title":"Empowering turkish sign language recognition with dynamic time warping and decision trees | Signal, Image and Video Processing","url":"https://link.springer.com/article/10.1007/s11760-025-04890-2"},{"title":"Continuous sign language recognition algorithm based on object detection and variable-length coding sequence | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-78319-0"},{"title":"Sign language recognition using modified deep learning network and hybrid optimization: a hybrid optimizer (HO) based optimized CNNSa-LSTM approach | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-76174-7"},{"title":"Promoting Sign Language Awareness: A Deep Learning Web Application for Sign Language Recognition | Proceedings of the 2024 8th International Conference on Deep Learning Technologies","url":"https://dl.acm.org/doi/10.1145/3695719.3695723"},{"title":"Sign Language Recognition with Transformer Networks","url":"https://aclanthology.org/2020.lrec-1.737.pdf"},{"title":"Continuous sign language recognition algorithm based on object detection and variable-length coding sequence - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11555120/"},{"title":"Video-Based Sign Language Recognition via ResNet and LSTM Network","url":"https://www.mdpi.com/2313-433X/10/6/149"},{"title":"Using LSTM to translate Thai sign language to text in real time | Discover Artificial Intelligence | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s44163-024-00113-8"},{"title":"A novel deep transformer based CvT model for sign language recognition in visual communication | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-31558-1"},{"title":"Deepsign: Sign Language Detection and Recognition Using Deep Learning","url":"https://www.mdpi.com/2079-9292/11/11/1780"}]
+
+Based on my search results, here's a comparison of DTW, LSTM, and Transformer approaches for sign language recognition, particularly relevant to small datasets:
+
+## Accuracy Comparison
+
+DTW combined with decision trees achieved 78% accuracy, outperforming LSTM with 68% accuracy on Turkish sign language recognition. This demonstrates that simpler methods like DTW can be competitive, especially on smaller datasets.
+
+## Performance on Different Dataset Sizes
+
+Transformers require less computation time and are less prone to overfitting than 3D CNNs, which is particularly important for sign language datasets that are typically smaller than action recognition datasets.
+
+Despite improvements achieved with LSTM models through feature selection and tuning, their performance on test sets lagged behind that of transformer-based and CNN-based models.
+
+## Model Strengths and Weaknesses
+
+LSTM and other deep learning approaches demonstrated the ability to handle sequential gesture variations and extract meaningful spatial features; however, they often struggled with dynamic signs, occlusions, and high intra-class variability.
+
+Transformer models consistently reported superior performance, better feature generalization, and enhanced capability to capture long-range dependencies across sign sequences.
+
+## Key Considerations for Small Datasets
+
+LSTMs can be operationally expensive and prone to overfitting, especially when working with sparse data. This suggests that for small datasets, DTW or transformers might be preferable alternatives to standard LSTM approaches.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/getsentry/sentry-for-ai/blob/main/skills/sentry-nextjs-sdk/SK
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 20:42:52 UTC
+========================================================================
+
+URL: https://github.com/getsentry/sentry-for-ai/blob/main/skills/sentry-nextjs-sdk/SKILL.md
+Extraction prompt: Output the entire SKILL.md document verbatim. Include every step, every file path, every code block, every config snippet, every env var, every command. Don't summarize.
+
+----------------------------------------
+
+# Sentry Next.js SDK Skill Document Summary
+
+This comprehensive guide provides a structured approach to implementing Sentry error monitoring in Next.js applications. The document is organized into four operational phases:
+
+## Core Phases
+
+**Phase 1: Detection** involves scanning the project to understand the Next.js version, routing architecture (App Router vs Pages Router), existing Sentry presence, and build tooling.
+
+**Phase 2: Recommendations** proposes feature coverage, with error monitoring and tracing as mandatory components, while session replay, logging, profiling, AI monitoring, crons, and metrics are suggested as optional enhancements based on project characteristics.
+
+**Phase 3: Guidance** offers two implementation paths: an interactive wizard or manual configuration. The manual approach requires creating four configuration files:
+- `instrumentation-client.ts` for browser runtime
+- `sentry.server.config.ts` for Node.js runtime  
+- `sentry.edge.config.ts` for edge runtime
+- `instrumentation.ts` as the server-side registration hook
+
+Additional setup involves creating error boundary files (`global-error.tsx` for App Router or updating `pages/_error.tsx` for Pages Router), wrapping the Next.js config with `withSentryConfig()`, and configuring source map uploads via authentication tokens.
+
+**Phase 4: Cross-Linking** suggests pairing frontend setup with corresponding backend SDKs to enable distributed tracing across your full stack.
+
+## Key Configuration Elements
+
+The document specifies required environment variables, sampling rates (100% in development, 10% in production for traces), and session replay settings. Source map configuration is emphasized as essential for production readability.
+
+A verification section confirms proper implementation by testing error capture across client, server, and edge runtimes within the Sentry dashboard.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

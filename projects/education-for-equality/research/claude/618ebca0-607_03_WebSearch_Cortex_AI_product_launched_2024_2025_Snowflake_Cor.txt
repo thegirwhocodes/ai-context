@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Cortex" AI product launched 2024 2025 Snowflake Cortex company
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-30 00:17:43 UTC
+========================================================================
+
+Search query: "Cortex" AI product launched 2024 2025 Snowflake Cortex company
+
+----------------------------------------
+
+Web search results for query: ""Cortex" AI product launched 2024 2025 Snowflake Cortex company"
+
+Links: [{"title":"Nov 04, 2025: Cortex AI Functions (General availability) | Snowflake Documentation","url":"https://docs.snowflake.com/en/release-notes/2025/other/2025-11-04-cortex-aisql-operators-ga"},{"title":"Snowflake Introduces Cortex AISQL and SnowConvert AI: Analytics Rebuilt for the AI Era","url":"https://www.snowflake.com/en/news/press-releases/snowflake-introduces-cortex-aisql-and-snowconvert-ai-analytics-rebuilt-for-the-ai-era/"},{"title":"Snowflake Unveils Cortex Code, An AI Coding Agent That Drastically Increases Productivity by Understanding Your Enterprise Data Context","url":"https://www.snowflake.com/en/news/press-releases/snowflake-unveils-cortex-code-an-ai-coding-agent-that-drastically-increases-productivity-by-understanding-your-enterprise-data-context/"},{"title":"Snowflake Cortex AI | AI Data Cloud","url":"https://www.snowflake.com/en/product/features/cortex/"},{"title":"Snowflake Unveils Cortex AI for Financial Services: Enterprise-Ready AI Built to Scale","url":"https://www.snowflake.com/en/news/press-releases/snowflake-unveils-cortex-ai-for-financial-services--enterprise-ready-ai-built-to-scale/"},{"title":"Snowflake launches new AI tools, unveils OpenAI partnership | TechTarget","url":"https://www.techtarget.com/searchdatamanagement/news/366638535/Snowflake-launches-new-AI-tools-unveils-OpenAI-partnership"},{"title":"Snowflake debuts Cortex Code, an AI agent that understands enterprise data context | InfoWorld","url":"https://www.infoworld.com/article/4126224/snowflake-debuts-cortex-code-an-ai-agent-that-understands-enterprise-data-context.html"},{"title":"Snowflake Expands Snowflake Intelligence and Cortex Code to Power the Control Plane for the Agentic Enterprise","url":"https://www.snowflake.com/en/news/press-releases/snowflake-expands-snowflake-intelligence-and-cortex-code-to-power-the-control-plane-for-the-agentic-enterprise/"},{"title":"Snowflake Build: the 4 biggest announcements on Cortex AI and more | VentureBeat","url":"https://venturebeat.com/data-infrastructure/snowflake-build-the-4-biggest-announcements-on-cortex-ai-and-more"},{"title":"Snowflake unveils 'Cortex Code,' a new AI coding agent","url":"https://finance.yahoo.com/video/snowflake-unveils-cortex-code-ai-080053831.html"}]
+
+Based on the search results, here's information about Snowflake's Cortex AI products launched in 2024-2025:
+
+## Key Cortex AI Product Launches
+
+**Cortex AI Suite Overview:**
+Snowflake Cortex AI has enabled customers to build and deploy advanced AI models, apps, and agents within the security perimeter of the AI Data Cloud.
+
+**Recent Major Launches:**
+
+1. **Cortex AI Functions (November 2025):** Snowflake announced the general availability of Cortex AI Functions, delivering production-ready AI capabilities within the Snowflake SQL engine. These functions enable text, image, audio, and video intelligence without external services or data movement.
+
+2. **Cortex AISQL (June 2025):** Cortex AISQL marks the next leap forward by leveraging generative AI to create powerful new query capabilities, effectively turning every data analyst into an AI engineer. Cortex AISQL is powered by leading models from Anthropic, Meta, Mistral, OpenAI, and others.
+
+3. **Cortex Code (February 2026):** Cortex Code is a data-native AI coding agent that automates and accelerates end-to-end enterprise development, with an agent that deeply understands and operates within enterprise data context. Since launching in November 2025, Cortex Code has seen rapid adoption, with more than 50 percent of customers now actively leveraging it.
+
+4. **Snowflake Intelligence (November 2024):** Snowflake Intelligence enables users to create 'data agents' that could answer questions related to structured and unstructured data on the platform but also take action across third-party platforms like Salesforce and Google Workspace.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

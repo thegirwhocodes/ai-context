@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: FocusMe LeechBlock RescueTime Focus app blocker Mac technical architecture how b
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:36 UTC
+========================================================================
+
+Search query: FocusMe LeechBlock RescueTime Focus app blocker Mac technical architecture how blocks work
+
+----------------------------------------
+
+Web search results for query: "FocusMe LeechBlock RescueTime Focus app blocker Mac technical architecture how blocks work"
+
+Links: [{"title":"10 Best Focus Apps to Block Distractions (2026)","url":"https://www.asianefficiency.com/productivity/10-powerful-apps-help-maintain-laser-focus/"},{"title":"Boost Your Productivity. Try the Best Blocker and Productivity App","url":"https://focusme.com/"},{"title":"9 Best Website Blocker in 2026 (Tested & Compared)","url":"https://focusme.com/blog/best-website-blocker-for-increasing-productivity/"},{"title":"Answers to Common Questions for the best web blocker | FocusMe","url":"https://focusme.com/faq/"},{"title":"Best Website Blocker for Mac: 12 Tested Picks for 2026","url":"https://www.chronoid.app/blog/best-website-blocker-for-mac"},{"title":"Best FocusMe Alternative for Mac (Free) — 2026 | Focuh | Focuh","url":"https://www.focuh.com/alternative/focusme-alternative"},{"title":"Distraction Blocker: How It Works | FocusMe","url":"https://focusme.com/how-it-works/"},{"title":"Focus vs FocusMe — Comparing Website Blockers - HeyFocus","url":"https://heyfocus.com/blog/focus-vs-focusme/"},{"title":"The 12 Best App Blocker Apps for Enterprise Use in 2026 | WhatPulse Professional Blog","url":"https://whatpulse.pro/blog/2026-02-23-app-blocker-apps"},{"title":"Website Blocker for Windows & Mac — Block Distracting Sites - FocusMe","url":"https://focusme.com/website-blocker/"}]
+
+Based on my web search, here's what I found about how these focus apps work on Mac, with emphasis on technical architecture:
+
+## FocusMe - Technical Architecture
+
+FocusMe is a desktop focus app that blocks websites at the system level — across all browsers, with no extension required. Rather than relying on browser extensions, FocusMe runs in the background and monitors which websites or applications you are using (information is only stored locally on your PC), and when you visit a blocked site or application, FocusMe detects it and can take action such as closing the website or application.
+
+Once activated, Enforced Mode cannot be stopped, bypassed, or disabled until your schedule ends, combined with random character challenges, stop delays, and plan hardening — the most tamper-resistant blocker available.
+
+## LeechBlock NG
+
+LeechBlock NG is a free browser extension that supports up to 30 different "block sets" with independent schedules and time limits. The extension modifies browser behavior to block or redirect pages matching user-defined rules.
+
+## RescueTime
+
+RescueTime is primarily a time tracking tool that also has some blocking features. It automatically tracks every app and website you use and gives you detailed productivity reports, scores, and trends. Its "FocusTime" feature can block distracting sites during focus sessions.
+
+## Focus App
+
+Focus is designed specifically for Mac users while FocusMe is available for Mac, Windows, and Android. Focus is a formidable website blocker with advanced platform-specific features.
+
+The key technical difference is that system-level blockers like FocusMe work across all browsers without extensions, while browser-based tools like LeechBlock operate within specific browsers only.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,178 @@
+========================================================================
+AGENT RESEARCH: Explore current app architecture
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 07:55:34 UTC
+========================================================================
+
+Explore the Dactyl ASL translation app at /Users/naomiivie/asl-translation-glasses/app/. I need to understand:
+
+1. Read app.py fully — how are the MJPEG video feeds currently served? What routes exist? What's the Flask/SocketIO setup?
+2. Read templates/dashboard.html — how does the frontend consume the video feeds? What img tags, what JS?
+3. Read templates/glasses.html and templates/audience.html — do they also load video feeds?
+4. Check requirements.txt for current dependencies
+5. Check if aiortc is already installed: look in venv/lib/python3.12/site-packages/ for aiortc
+
+Be thorough — report the exact MJPEG generator functions, route definitions, and frontend img/video tags. Also report the SocketIO events being used."
+
+----------------------------------------
+
+Excellent! Now let me generate my comprehensive report:
+
+## Comprehensive Analysis of Dactyl ASL Translation App
+
+---
+
+### 1. **app.py — Flask/SocketIO Setup & Video Routes**
+
+**Flask Configuration:**
+- **App setup:** Line 30-32: Flask app with SECRET_KEY `'dactyl-2026'` and SocketIO configured with CORS enabled (`cors_allowed_origins="*"`) and threading async mode
+- **Global state dictionary:** Lines 126-135: Tracks `running`, `mode` ('sign' or 'fingerspell'), `last_sign`, `last_confidence`, `last_speech`, `last_translation`, `sentence_buffer`, `fingerspell_word`
+
+**Video Routes:**
+
+| Route | Generator | MJPEG Boundary | Purpose |
+|-------|-----------|---|---------|
+| `/video/signing` | `gen_signing_feed()` | `multipart/x-mixed-replace; boundary=frame` | Deaf person's annotated keypoints + raw frame |
+| `/video/speaking` | `gen_speaking_feed()` | `multipart/x-mixed-replace; boundary=frame` | Hearing person's live camera or mirrored signing frame |
+
+**MJPEG Generator Functions** (Lines 388-407):
+
+```python
+def gen_signing_feed():
+    while True:
+        with _signing_lock:
+            jpg = _signing_jpeg
+        if jpg is None:
+            time.sleep(0.05)
+            continue
+        yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + jpg + b'\r\n')
+        time.sleep(0.033)  # ~30fps delivery rate
+
+def gen_speaking_feed():
+    while True:
+        with _speaking_lock:
+            jpg = _speaking_jpeg
+        if jpg is None:
+            time.sleep(0.05)
+            continue
+        yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + jpg + b'\r\n')
+        time.sleep(0.033)
+```
+
+**Key JPEG encoding threads:**
+- **`_signing_jpeg_thread()`** (Lines 177-187): Encodes the **annotated keypoints frame** (or raw if no annotations) to JPEG on a dedicated thread at ~30fps. Uses the raw signing camera
+- **`_speaking_camera_thread()`** (Lines 152-174): In single-camera mode, mirrors the signing frame to JPEG at 50ms intervals. In dual-camera mode, captures the second camera.
+
+---
+
+### 2. **Templates: Dashboard.html Video Consumption**
+
+**All img src tags in dashboard.html:**
+
+1. **Line 536** (Demo tab, left card — hearing person views signing):
+   ```html
+   <img src="/video/signing" alt="Signing camera feed">
+   ```
+
+2. **Line 553** (Demo tab, right card — deaf person's AR glasses view):
+   ```html
+   <img src="/video/speaking" alt="Speaking camera feed"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+   ```
+
+3. **Line 584** (Glasses tab — full-screen simulated glasses):
+   ```html
+   <img src="/video/speaking" alt="Glasses POV"
+        onerror="this.style.display='none'">
+   ```
+
+4. **Line 622** (Audience tab, left pane — deaf person signing):
+   ```html
+   <img src="/video/signing" alt="Signing feed">
+   ```
+
+**Critical observation:** Dashboard does NOT use `<video>` tags, only `<img>` tags pointing to MJPEG streams. Browsers automatically handle MJPEG streaming from `<img src>` when the response is `multipart/x-mixed-replace`.
+
+---
+
+### 3. **Templates: Glasses.html Video Consumption**
+
+**glasses.html** (Lines 1-98):
+- **No video feeds at all** — this is a text-only display for the deaf person
+- Shows captions from speech via `socket.on('glasses_update')` (Line 77)
+- Shows confirmation of what they signed via `socket.on('asl_detected')` (Line 86)
+- No `<img src>` tags, no video feeds
+
+---
+
+### 4. **Templates: Audience.html Video Consumption**
+
+**audience.html** (Lines 1-126):
+- **Line 86:** `<img src="/video/signing" alt="Signing feed">` — left pane
+- **No second video feed** — right pane (hearing person speaks) displays a speaker emoji instead (line 96: `<span style="font-size:40px;">&#127911;</span>`)
+- Uses `socket.on('proj_update')` to update sign/speech translations
+
+---
+
+### 5. **Requirements.txt**
+
+**Location:** `/Users/naomiivie/asl-translation-glasses/app/requirements.txt`
+
+```
+flask
+flask-socketio
+anthropic
+opencv-python
+mediapipe
+SpeechRecognition
+pyaudio
+pyttsx3
+python-dotenv
+numpy
+dtw-python
+edge-tts
+```
+
+**Status:** **aiortc is NOT installed** (confirmed — no `aiortc*` directories found in venv site-packages)
+
+---
+
+### 6. **SocketIO Events**
+
+**Emitted from server to clients:**
+
+| Event | Data Payload | Purpose |
+|-------|--------------|---------|
+| `asl_detected` | `{sign, confidence, mode, raw_sign, source}` | ASL sign recognition result |
+| `signing_status` | `{active, frames}` | Real-time signing detection status |
+| `speech_cleaned` | `{text}` | Cleaned speech text (Claude-cleaned) |
+| `glasses_update` | `{text}` | Speech text for AR glasses display |
+| `speech_raw` | `{text}` | Raw speech-to-text output |
+| `proj_update` | `{type: 'sign'/'speech', text}` | Audience projection update |
+| `mode_changed` | `{mode}` | Mode switch notification (sign/fingerspell) |
+| `status` (on connect) | `{running, mode, tgcn_vocab}` | Initial connection handshake |
+
+**Received from clients:**
+- `connect` — SocketIO default
+
+**Lines in app.py:**
+- Line 32: SocketIO initialization
+- Lines 489-495: `@socketio.on('connect')` handler
+- Lines 229, 235, 266-271, 335, 342-345, 347-352, 377-378: Various `socketio.emit()` calls throughout ASL detection loop and speech callback
+
+---
+
+### Summary Table
+
+| Component | Type | Count | Status |
+|-----------|------|-------|--------|
+| **Flask Routes** | HTTP | 8 | Active (/video/signing, /video/speaking, /, /glasses, /audience, /start, /stop, /clear, /mode, /status) |
+| **MJPEG Generators** | Python functions | 2 | `gen_signing_feed()`, `gen_speaking_feed()` |
+| **SocketIO Events (server→client)** | Events | 7+ | `asl_detected`, `signing_status`, `speech_cleaned`, `glasses_update`, `speech_raw`, `proj_update`, `mode_changed` |
+| **Frontend img tags** | HTML | 4 | All pointing to `/video/signing` or `/video/speaking` |
+| **Threading** | Threads | 4 core + detection | Camera threads, JPEG encoder, ASL detection loop, speech listener |
+| **aiortc** | Package | — | **NOT INSTALLED** |
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

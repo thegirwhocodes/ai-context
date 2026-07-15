@@ -1,0 +1,38 @@
+========================================================================
+AGENT RESEARCH: Gov & policy education A-players for Sabi
+Session: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+Time: 2026-07-15 18:46:49 UTC
+========================================================================
+
+You are researching REAL, NAMED people who could unlock GOVERNMENT & INSTITUTIONAL partnerships for an African edtech nonprofit in Nigeria.
+
+CONTEXT — the company: "Sabi" by Education for Equality. A voice-AI literacy & numeracy tutor over ordinary PHONE CALLS to Nigerian children (Africa's Talking telephony, feature phones). Pre-pilot. The core go-to-market is to be adopted by the LAGOS STATE government to reach public-school children — via LASUBEB (Lagos State Universal Basic Education Board), UBEC (Universal Basic Education Commission, federal), and the state SUBEBs — with the model EKOEXCEL/NewGlobe used. One government deal = hundreds of thousands of kids. The founder needs a "Government & Institutional Partnerships" leader/advisor with real relationships inside Nigerian basic-education bureaucracy.
+
+YOUR TASK: Produce a detailed shortlist of 10–15 REAL, NAMED individuals who have navigated or led Nigerian basic-education government partnerships and could be a Gov Partnerships hire, advisor, or door-opener. Focus on:
+- Current/former leaders of LASUBEB, UBEC, Lagos State Ministry of Education, EkoEXCEL program leadership, Lagos State Government education advisers.
+- The Education Partnership Centre (TEP) Nigeria leadership (they broker gov-edtech partnerships).
+- Nigerian education-policy figures, ex-commissioners of education, ex-SUBEB chairs.
+- Development-sector education leaders working with Nigerian government: World Bank Nigeria education team, FCDO PLANE/TEACH programs, USAID Nigeria education, UNICEF Nigeria education, Global Partnership for Education Nigeria.
+- Known education reform advocates / EdTech-gov brokers in Nigeria.
+
+For EACH person return, in full (do NOT summarize):
+1. Full name + current exact title & organization + relevant gov-education role/relationships.
+2. Why they specifically could open the LASUBEB/UBEC/Lagos door for Sabi.
+3. Whether they fit as hire vs. advisor vs. board vs. door-opener.
+4. How to reach them / warm-path hints (LinkedIn, orgs, public roles, events).
+5. Fit/risk notes (e.g., civil-service conflict-of-interest, current government position).
+
+Use WebSearch/WebFetch extensively. Prioritize people ACTIVE 2025–2026. Real names only with source URLs; flag anything unverified. End with a "Sources" list.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: abc67f401a6bcc1e7 (internal ID - do not mention to user. Use SendMessage with to: 'abc67f401a6bcc1e7', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/c46a7821-57d5-46ff-9dac-304ed0ef2cbc/tasks/abc67f401a6bcc1e7.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

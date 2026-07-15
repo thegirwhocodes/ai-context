@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: train custom TTS Nigerian English accent fine-tune XTTS Coqui African speech dat
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:14:01 UTC
+========================================================================
+
+Search query: train custom TTS Nigerian English accent fine-tune XTTS Coqui African speech data AfriSpeech WAXAL 2026
+
+----------------------------------------
+
+Web search results for query: "train custom TTS Nigerian English accent fine-tune XTTS Coqui African speech data AfriSpeech WAXAL 2026"
+
+Links: [{"title":"ⓍTTS - TTS 0.22.0 documentation","url":"https://docs.coqui.ai/en/latest/models/xtts.html"},{"title":"TTS 0.22.0 documentation - Coqui-TTS","url":"https://docs.coqui.ai/en/dev/models/xtts.html"},{"title":"GitHub - coqui-ai/TTS: 🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production","url":"https://github.com/coqui-ai/TTS"},{"title":"TTS/docs/source/models/xtts.md at dev · coqui-ai/TTS","url":"https://github.com/coqui-ai/TTS/blob/dev/docs/source/models/xtts.md"},{"title":"coqui-tts · PyPI","url":"https://pypi.org/project/coqui-tts/"},{"title":"coqui/XTTS-v2 · Hugging Face","url":"https://huggingface.co/coqui/XTTS-v2"},{"title":"1000 African Voices: Advancing inclusive multi-speaker multi-accent speech synthesis","url":"https://arxiv.org/html/2406.11727v1"},{"title":"1000 African Voices: Advancing inclusive multi-speaker multi-accent speech","url":"https://www.isca-archive.org/interspeech_2024/ogun24_interspeech.pdf"},{"title":"XTTS: a Massively Multilingual Zero-Shot Text-to-Speech Model","url":"https://arxiv.org/html/2406.04904v1"},{"title":"Scalable Controllable Accented TTS","url":"https://arxiv.org/html/2508.07426v1"}]
+
+Based on the search results, I found relevant information about training custom TTS models with Nigerian English and African accents using XTTS and related approaches:
+
+## XTTS Fine-tuning for African Accents
+
+Coqui has created a Gradio demo that implements the whole fine-tuning pipeline for XTTS_v2 GPT encoder training, enabling users to preprocess audio files and train the XTTS GPT encoder with the processed data. To make XTTS_v2 fine-tuning more accessible for users without good GPUs, Coqui provides a Google Colab Notebook.
+
+## African Speech Data and Research
+
+XTTS (version 2, 750 M parameters) was trained on a dataset of over 16k hours comprising 16 languages including English, and the models were fine-tuned on training sets with only the GPT module fine-tuned.
+
+Recent research demonstrates practical application of this approach: South Africans and West Africans rated generated utterances with regional accents, though generated accents do not always match the reference accent—for example, generated speech in Afrikaans accent may sound like Zulu, and Igbo generated accent may sound like Yoruba.
+
+## Accent-Specific Fine-tuning Methods
+
+Researchers have fine-tuned XTTS-v2 with accent labels inferred via geolocation, producing speech with better accent fidelity compared to XTTS-v2 fine-tuned on self-reported accent labels.
+
+The search results mention AfriSpeech as a referenced dataset in the academic literature but don't provide specific details about WAXAL 2026 or integration strategies specific to Nigerian English accents.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

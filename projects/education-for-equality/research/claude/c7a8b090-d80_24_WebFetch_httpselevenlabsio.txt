@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://elevenlabs.io
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:28:49 UTC
+========================================================================
+
+URL: https://elevenlabs.io
+Extraction prompt: Describe how ElevenLabs structures their multiple products (Voices, Agents, Dubbing, etc) on their landing page. How do they present different product lines on one page? What's the navigation structure? How do they differentiate between developer/API products and end-user products? Describe the visual design, animations, transitions, and what makes each product section feel distinct.
+
+----------------------------------------
+
+I appreciate your question, but I need to be transparent: the content you've provided is almost entirely CSS and Tailwind framework code. It contains styling utilities, design tokens, and configuration—but no actual page content, product descriptions, navigation structure, or layout information about ElevenLabs' landing page.
+
+To accurately describe how ElevenLabs structures their products, differentiates product lines, organizes navigation, and implements visual design choices, I would need:
+
+- **HTML markup** showing the actual page structure
+- **Text content** describing each product (Voices, Agents, Dubbing, etc.)
+- **Navigation elements** and their hierarchy
+- **Component structure** that reveals layout decisions
+- **Animation/transition definitions** (the CSS you shared contains classes but no applied context)
+
+The CSS alone tells me they use:
+- Grid and flexbox layouts with custom spacing
+- Responsive breakpoints (sm, md, lg, xl, xxl, xxxl)
+- Custom color palettes and typography scales
+- Animation classes (fade-in, pulse, spin)
+- Various component patterns (cards, sliders, reveals)
+
+But without the actual HTML and page structure, I cannot describe how ElevenLabs uses these tools to present their product ecosystem. If you can share the rendered page content or HTML structure, I'd be happy to provide the detailed analysis you're seeking.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

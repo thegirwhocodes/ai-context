@@ -1,0 +1,45 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: GDELT Nigeria news events API tutorial Python 2026 download
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:30:22 UTC
+========================================================================
+
+Search query: GDELT Nigeria news events API tutorial Python 2026 download
+
+----------------------------------------
+
+Web search results for query: "GDELT Nigeria news events API tutorial Python 2026 download"
+
+Links: [{"title":"GitHub - alex9smith/gdelt-doc-api: A Python client for the GDELT 2.0 Doc API · GitHub","url":"https://github.com/alex9smith/gdelt-doc-api"},{"title":"newsfeed · PyPI","url":"https://pypi.org/project/newsfeed/"},{"title":"gdeltPyR | Python based framework to retreive Global Database of Events, Language, and Tone (GDELT) version 1.0 and version 2.0 data.","url":"https://linwoodc3.github.io/gdeltPyR/"},{"title":"gdelt · PyPI","url":"https://pypi.org/project/gdelt/"},{"title":"GitHub - Cyclododecene/newsfeed: Newsfeed based on GDELT Project · GitHub","url":"https://github.com/Cyclododecene/newsfeed"},{"title":"GDELT Cloud Documentation - Global News Event Analytics API","url":"https://docs.gdeltcloud.com/quickstart"},{"title":"GDELT Tutorial - A Random Walk","url":"https://jfking50.github.io/gdelt/"},{"title":"GitHub - linwoodc3/gdeltPyR: Python based framework to retreive Global Database of Events, Language, and Tone (GDELT) version 1.0 and version 2.0 data.","url":"https://github.com/linwoodc3/gdeltPyR"},{"title":"Working with GDELT in Python: A Quick Tutorial – The GDELT Project","url":"https://blog.gdeltproject.org/working-with-gdelt-in-python-a-quick-tutorial/"},{"title":"The GDELT Project","url":"https://www.gdeltproject.org/"}]
+
+I found several resources related to GDELT and Python tutorials for working with news events data. Here's a summary of the search results:
+
+## Key Resources:
+
+**Python Libraries for GDELT:**
+
+A Python client for the GDELT 2.0 Doc API allows for simpler, small-scale analysis of news coverage without dealing with complexities of downloading raw files.
+
+gdeltPyR is a Python-based framework to access and analyze GDELT 1.0 or 2.0 data in Python Pandas dataframes, where users can enter a single date, date range, or individual dates and return tidy data sets.
+
+**Tutorial Resources:**
+
+- James Houghton has a quick tutorial for loading and working with the GDELT event database in Python (available on the GDELT Project blog)
+- A tutorial demonstrates how to pull data from the GDELT database, efficiently extract data from specified locations with event codes, and display results interactively
+
+**Nigeria-Specific Examples:**
+
+The GDELT Analysis Service TimeMapper Visualizer allows searching the GDELT event database for events matching search criteria, with examples showing all events in Nigeria in Spring 2014.
+
+**Command-Line Tools:**
+
+The newsfeed CLI tool provides a convenient way to query GDELT databases and download full text articles from the command line.
+
+These resources should help you get started with accessing GDELT data for Nigeria using Python APIs and tutorials.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.voice.intron.io/docs/index/introduction
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:43:48 UTC
+========================================================================
+
+URL: https://docs.voice.intron.io/docs/index/introduction
+Extraction prompt: Report the full substance of this page: what products/endpoints does the Intron Voice API offer (file transcription, streaming, TTS, etc.), how does authentication work, what account types or access levels are mentioned (especially "integrator" accounts), what are the steps to get started, what endpoints and parameters are documented (especially any file upload sync transcription endpoint), rate limits, pricing, supported languages/accents, and any links to other doc pages. Return the actual content in detail, not a summary.
+
+----------------------------------------
+
+# Intron Voice API Documentation Analysis
+
+## Products/Endpoints Offered
+
+The platform provides four main service categories:
+
+1. **STT Widget**: "Quick and easy integration using our pre-built widget. Perfect for rapid deployment in web applications."
+
+2. **Speech-to-Text File Uploads**: "Direct API access for custom implementations with audio files uploads."
+
+3. **Speech-to-Text Streaming**: "Direct API access for custom implementations using streaming."
+
+4. **Text-to-Speech**: "Convert text to natural-sounding speech with our TTS API."
+
+Specific STT endpoints documented include: Streaming, Upload File Sync, Upload File, and Get File Status. TTS endpoints include: Upload Text, Get Text Status, TTS Generate, and TTS Streaming.
+
+## Authentication
+
+Users must obtain API credentials by:
+1. Signing into voice.intron.io
+2. Navigating to the developers tab
+3. Copying their API key with the instruction: "Keep this secure and never expose it in client-side code."
+
+## Account Types/Access Levels
+
+No specific account types or "integrator" tier levels are mentioned on this page.
+
+## Key Features Highlighted
+
+The documentation emphasizes "African Accent Optimization: Best-in-class speech recognition optimized for African accents and regional dialects" along with applications in healthcare, call centers, legal, and biometrics sectors.
+
+## Missing Information
+
+Rate limits, pricing, detailed endpoint parameters, and specific supported languages/accents listings are not included on this introductory page but are referenced as separate documentation sections.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

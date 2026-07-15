@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Viamo 3-2-1 service infrastructure how many servers million calls per day IVR sc
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 06:56:42 UTC
+========================================================================
+
+Search query: Viamo 3-2-1 service infrastructure how many servers million calls per day IVR scaling
+
+----------------------------------------
+
+Web search results for query: "Viamo 3-2-1 service infrastructure how many servers million calls per day IVR scaling"
+
+Links: [{"title":"Africa: Viamo Mobile's IVR Services Offer a Two-Way Communications Channel Across Africa At Scale - Mobile Operator Partnerships Key - allAfrica.com","url":"https://allafrica.com/stories/201711200371.html"},{"title":"Digital X Solution: Viamo 3-2-1 Platform - UNDP","url":"https://digitalx.undp.org/catalogs/viamo-3-2-1-platform.html"},{"title":"3-2-1 Service: case study by UNESCO-Pearson Initiative for Literacy","url":"https://unesdoc.unesco.org/ark:/48223/pf0000260595"},{"title":"Calling for Change: The 3-2-1 Service in Bangladesh","url":"https://solve.mit.edu/challenges/tiger-challenge-international/solutions/14947"},{"title":"Viamo 3-2-1 Platform - Digital X Solution","url":"https://digitalx.undp.org/viamo-3-2-1-platform_1.html"},{"title":"Tech team delivers vital information to people in developing countries, remote areas through cellphone games | CBC News","url":"https://www.cbc.ca/news/canada/saskatoon/viamo-3-2-1-service-1.5454944"},{"title":"The Viamo Platform | Reach Millions with Your Message","url":"https://viamo.io/services/viamo-platform/"},{"title":"Service 3-2-1 - Odess","url":"https://www.odess.io/en/initiative/service-3-2-1/"},{"title":"#Viamo - Digital Made Easy","url":"https://viamo.io/"},{"title":"Viamo | Devex","url":"https://www.devex.com/organizations/viamo-120482"}]
+
+Based on the search results, here's the information about Viamo's 3-2-1 service infrastructure:
+
+## Call Capacity and Scale
+
+The Viamo platform can handle 1 million calls a day, demonstrating significant IVR scaling capabilities for managing high volumes of concurrent voice interactions.
+
+## User Reach
+
+The service has achieved impressive scale metrics:
+- As of 2021, the platform reached 35M+ users with over 3 million Monthly Active Users, of which 81% are repeat users who spent 100M+ minutes each month listening to key messages
+- As of 2018, Viamo's 3-2-1 Service was in 16 countries, with more than 8 million unique mobile subscribers
+
+## Infrastructure and Technology
+
+Viamo has developed an IVR platform with technical integrations (E1 or SIP) with mobile network operators in 20 countries in Africa and Asia. The specific details regarding the exact number of servers supporting this infrastructure are not provided in the available sources.
+
+The search results don't contain specific information about the total number of physical servers in Viamo's infrastructure. If you need more detailed technical specifications about server architecture and deployment, you may want to contact Viamo directly or check their technical documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

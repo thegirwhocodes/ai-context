@@ -1,0 +1,50 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Composio vs Nango managed authentication Gmail Slack Calendar OAuth for develope
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-30 06:26:29 UTC
+========================================================================
+
+Search query: Composio vs Nango managed authentication Gmail Slack Calendar OAuth for developers self-host free tier
+
+----------------------------------------
+
+Web search results for query: "Composio vs Nango managed authentication Gmail Slack Calendar OAuth for developers self-host free tier"
+
+Links: [{"title":"7 best Nango alternatives for AI agents and API integrations (2026) | Composio","url":"https://composio.dev/content/nango-alternatives-ai-agents"},{"title":"Best AI agent integration platforms (2026): comparison for developers | Composio","url":"https://composio.dev/content/ai-agent-integration-platforms"},{"title":"Composio vs Nango: a developer's comparison for production AI agent integrations (2026) | Nango Blog","url":"https://nango.dev/blog/composio-vs-nango/"},{"title":"Best Authentication Platforms for AI Agents and MCP Servers in 2026 - MarkTechPost","url":"https://www.marktechpost.com/2026/05/25/best-authentication-platforms-for-ai-agents-and-mcp-servers-in-2026/"},{"title":"AI agent authentication platforms: buyer's guide and comparison (2026) | Composio","url":"https://composio.dev/content/ai-agent-authentication-platforms"},{"title":"Best Composio alternatives for AI agent integrations in 2026 | Nango Blog","url":"https://nango.dev/blog/composio-alternatives/"},{"title":"4 Best AI Agent Authentication platforms to consider in 2026 🔐 - DEV Community","url":"https://dev.to/composiodev/4-best-ai-agent-authentication-platforms-to-consider-in-2026-32o8"},{"title":"6 Best Composio Alternatives for Enterprise AI Agent Governance | MintMCP Blog","url":"https://www.mintmcp.com/blog/best-composio-alternatives"},{"title":"Composio vs Nango: Agent Tools vs API Auth Infrastructure — AgentPatch","url":"https://agentpatch.ai/blog/composio-vs-nango/"},{"title":"Best Composio Alternatives for AI Agent Tool Calling (2026)","url":"https://www.scalekit.com/blog/composio-alternatives"}]
+
+Based on the web search results, here's a comprehensive comparison of Composio vs Nango for managed authentication with Gmail, Slack, Calendar OAuth integration:
+
+## Key Differences
+
+**Architecture & Focus:**
+Composio manages the full tool and auth layer across a large integration catalog; Nango manages auth infrastructure and leaves tool design to the developer.
+
+More specifically, Composio provides pre-built agent tools, while Nango provides API auth infrastructure - different layers of the stack for different needs.
+
+**Pre-built Tools:**
+Composio supports 500+ integrations across developer tools, CRMs, communication platforms, productivity software, and internal systems. Composio ships a catalog of around 1,000 pre-built tools wrapped behind a single hosted MCP URL, with managed OAuth across the supported toolkits.
+
+In contrast, All of Nango's pre-built tools are open source, and you can copy an existing tool, modify it to fit your use case using Claude Code or any AI Coding agent, and deploy it to your account.
+
+## Self-Hosting & Free Tier
+
+**Nango** offers flexibility for self-hosting. Nango lets you write integration logic as TypeScript functions that live in your own repo, version-controlled and CI/CD-native, with full API request/response observability and the ability to self-host for data residency requirements.
+
+**Composio** provides a generous free tier for developers, with paid plans that scale with connections and tool executions based on usage.
+
+## Security Considerations
+
+A critical concern: In May 2026, Composio had a security incident in which an attacker achieved arbitrary code execution in the sandbox runtime, with around 5,242 connections compromised.
+
+## Use Case Recommendations
+
+Pick Nango if your AI agent is a core part of a product you ship to customers, or if you want the headroom to customize tools, run data syncs, and webhooks as you scale. Pick Composio if your agent is a personal or internal productivity tool and the pre-built catalog covers everything you need.
+
+For production requirements: For agents spanning many production SaaS tools where pre-built connectors and observability matter more than auth customization, Composio reduces time-to-production. For code-first teams that need data sync alongside OAuth, Nango provides the most infrastructure control.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

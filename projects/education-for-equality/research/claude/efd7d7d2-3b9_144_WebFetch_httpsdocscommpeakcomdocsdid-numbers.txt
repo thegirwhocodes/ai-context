@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/docs/did-numbers
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:27:02 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/docs/did-numbers
+Extraction prompt: What DID number types are available? Does CommPeak offer Nigerian numbers? Toll-free numbers for Nigeria? What countries have toll-free? List everything about DID numbers, types, and availability.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

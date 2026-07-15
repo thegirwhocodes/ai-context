@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/handle_calls
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:45 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/handle_calls
+Extraction prompt: VERBATIM: Show how Africa's Talking handles a multi-turn call session. Specifically: when does the server's callback URL get called? Just once per call, or repeatedly during a single call (after each Record, after each GetDigits)? Can the server return new XML on each callback to continue the same call session? Quote all examples and explanation.
+
+----------------------------------------
+
+I appreciate your detailed request, but I'm unable to provide the specific information you're asking for. The web page content provided only shows a title ("Documentation | Africa's Talking") without the actual documentation text that would explain callback behavior during multi-turn call sessions.
+
+To answer your questions about:
+- When callback URLs are invoked during calls
+- Whether callbacks occur after each Record or GetDigits action
+- Whether servers can return new XML to continue sessions
+
+...I would need access to the actual documentation content describing Africa's Talking's call flow architecture. 
+
+**Recommendation:** Visit Africa's Talking's official documentation directly at their website to locate sections covering:
+1. Call flow and callback mechanisms
+2. XML handling for multi-turn sessions
+3. Record and GetDigits action documentation
+
+This will give you the authoritative, complete explanation with proper examples for implementing multi-turn call sessions.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

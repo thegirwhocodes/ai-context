@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mycharisma.com/spiritled-living/supernaturaldreams/a-guide-to-interpret-
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-17 02:29:47 UTC
+========================================================================
+
+URL: https://mycharisma.com/spiritled-living/supernaturaldreams/a-guide-to-interpret-symbols-in-dreams/
+Extraction prompt: Extract ALL dream symbols listed and their meanings. Get EVERY symbol, its biblical reference, and its interpretation. Get as much raw content as possible. This is for training data.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,101 @@
+========================================================================
+AGENT RESEARCH: Research VoiceMode mic throttling
+Session: a4ea39cd-2bd1-4931-94a8-310dccbcb03d
+Time: 2026-06-27 18:57:45 UTC
+========================================================================
+
+I need deep research on what could throttle / pause / block the microphone in a specific setup. Don't summarize — return 90%+ of the substantive content (exact error messages, file paths, env vars, config keys, GitHub issue numbers, version numbers, exact phrasing from docs).
+
+THE SETUP:
+- macOS (Darwin 25, M-series Mac)
+- User is running Claude Code CLI (binary at `/Users/naomiivie/.local/bin/claude`, v2.1.92+)
+- Claude Code is launched inside Google Antigravity's integrated terminal (and sometimes inside Terminal.app launched from Antigravity)
+- VoiceMode MCP plugin is installed (mbailey/voicemode), invoked via `/voicemode:converse`
+- Uses local Whisper (whisper.cpp) for STT and local Kokoro for TTS — no API keys
+- A multi-session "conch" lock exists at `~/.voicemode/conch` that serializes mic access between sessions
+- Env vars in play: `VOICEMODE_CONCH_ENABLED=true`, `VOICEMODE_CONCH_TIMEOUT=45`, `VOICEMODE_CONCH_LOCK_EXPIRY=180`
+- The user reports the mic was being "throttled" during voice sessions with Claude inside Antigravity
+
+THE QUESTION: What specifically could cause the mic to feel throttled, slow, blocked, or unresponsive in this exact setup? I want the full list of plausible causes with evidence.
+
+CANDIDATE CAUSES TO INVESTIGATE (please research each):
+
+1. **VoiceMode conch lock contention** — what behavior does the conch lock produce when another session holds it? Does the user see a queue/wait/silent-mic state? What logs/messages indicate it? Look at the mbailey/voicemode GitHub repo (https://github.com/mbailey/voicemode) for source code / docs about conch behavior, especially `wait_for_conch=true/false`, `VOICEMODE_CONCH_TIMEOUT`, and `VOICEMODE_CONCH_LOCK_EXPIRY`. Any known bugs about stuck locks?
+
+2. **Antigravity-specific microphone bugs** — read https://github.com/Kilo-Org/kilocode/issues/5518 (mic discovery fails in Antigravity) and search GitHub/web for other Antigravity mic issues. Does Antigravity hold the mic exclusively? Does its WebRTC layer interfere with terminal mic access?
+
+3. **macOS TCC (microphone permission) edge cases** — when Claude Code CLI runs in Antigravity's integrated terminal vs Terminal.app, which process is asked for mic permission? Is there a known issue where the wrong parent process gets the permission grant, leading to silent failures or audio dropouts? Look up `tccutil`, `sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db` patterns, and "macOS mic permission Electron parent process" issues.
+
+4. **Whisper.cpp / Kokoro performance throttling** — does whisper.cpp / kokoro running locally on macOS get throttled by macOS power management, thermal throttling, or Metal/MPS contention with another app? Specifically when Antigravity (an Electron app with its own AI features) is also running, does it compete for GPU/CPU?
+
+5. **Audio routing issues** — Bluetooth/AirPods sample rate changes, CoreAudio device switching, `audiounit` errors. Does voicemode/portaudio handle device switches mid-session?
+
+6. **VAD (voice activity detection) thresholds** — VoiceMode uses VAD to decide when speech ends. If thresholds are too sensitive, mic feels throttled because it stops listening too soon. What are VoiceMode's VAD env vars? (e.g. silence threshold, min/max recording duration)
+
+7. **Antigravity holding the mic via WebRTC for its own voice features** — does Antigravity itself try to use the mic for any feature? If yes, does it lock it exclusively on macOS?
+
+8. **Multiple VoiceMode sessions** — the user runs multiple project-specific voice sessions (E4E, cortex-web, devsync, adjutant) with per-project voices. If two are running, the conch serializes them. Could this cause the perception of throttling?
+
+For each candidate cause, return:
+- What it is, in detail
+- Exact symptoms it would cause
+- How to confirm/diagnose (specific commands, log paths, env vars)
+- The fix or workaround
+- Source URLs (GitHub issues, docs, blog posts)
+
+DO NOT summarize. Return raw content with quotes, error messages, version numbers, line numbers from source code if you can find them. Use WebSearch and WebFetch aggressively. Try at least 10 different search queries.
+
+----------------------------------------
+
+The research is complete. Here's the report relayed to the user.
+
+# E4E voice-mic throttling — research report
+
+The agent confirmed your "throttled mic" feeling is actually **several stackable problems**, not one cause. Three findings stand out before the 8-cause breakdown:
+
+## Most important new findings (not in your prompt)
+
+1. **You have TWO Antigravity bundles installed**, each with its own bundle ID and its own TCC microphone grant requirement:
+   - `/Applications/Antigravity.app` → `com.google.antigravity` v2.0.6, `NSMicrophoneUsageDescription = "This app needs access to the microphone"`
+   - `/Applications/Antigravity IDE.app` → `com.google.antigravity-ide` v2.0.4, `NSMicrophoneUsageDescription = "An application in Antigravity IDE wants to use the Microphone."`
+   This is the documented v2.0 self-hijack ([discuss.ai.google.dev/t/.../146158](https://discuss.ai.google.dev/t/fix-for-antigravity-2-0-hijacking-the-ide-and-how-to-restore-your-lost-settings-extensions-for-windows-user/146158)): *"Electron loads resources based on directory location. Because the 2.0 update dumps its files into the exact same folder as the IDE, the newly added 2.0 app.asar completely hijacks the original Antigravity IDE executable."* Whichever bundle TCC treats as the "responsible process" determines whether your grant applies — and the spawned shell/Python child of Claude Code can silently inherit the wrong one.
+
+2. **Your `~/.voicemode/voicemode.env` is out of sync with upstream defaults.** Your file: `VOICEMODE_CONCH_TIMEOUT=45`, `VOICEMODE_CONCH_LOCK_EXPIRY=180`. Upstream `voice_mode/config.py` lines 589/598: both `300`. Your env wins (it's loaded), but your `MULTI-SESSION.md` and `CLAUDE.md` document a 45/180 world while upstream is 300/300. The shorter `CONCH_TIMEOUT=45` means a queued session **gives up after 45 s** if another holds the conch — and returns `"Timed out waiting for conch (45s). <holder> is still speaking. You can request a callback instead with conch_mode=callback."` That looks exactly like "mic was throttled."
+
+3. **Your actual perf bottleneck is TTS first-byte latency, not the mic.** From `/Users/naomiivie/.voicemode/logs/events/voicemode_events_2026-06-18.jsonl`: `ttfa_ms: 62766.3` (62.7 s to first audio for one Kokoro reply), `44544.8`, `11392.3`. Recording itself was prompt (3.3 s, 5.99 s, 11 s, 23 s `RECORDING_END` events firing within seconds of `TTS_PLAYBACK_END`). STT was fine (`STT_COMPLETE request_time_ms: 1650, 3272, 1078, 813`). The mic is fast; the silence after you speak is **Kokoro cold-start**.
+
+## The 8 causes (full content)
+
+The complete writeup — including verbatim source code from `voice_mode/conch.py`, `converse.py`, `config.py`, GitHub issue numbers, all env vars, diagnostic commands, all 30+ source URLs, and fix steps — is saved at:
+
+`/private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/a4ea39cd-2bd1-4931-94a8-310dccbcb03d/scratchpad/research_output.md` (57 KB, 771 lines)
+
+Headline findings per cause:
+
+- **CAUSE 1 (Conch contention)**: Source code from `voice_mode/conch.py`, `conch_queue.py`, `converse.py:1812-1835`. Two-layer liveness (kernel flock + on-disk `held` marker). Acquisition polls every 0.5 s, gives up at `CONCH_TIMEOUT`. Event types: `CONCH_ACQUIRE`, `CONCH_RELEASE`, `CONCH_BLOCKED`, `CONCH_WAIT_START/END`, `CONCH_DEAD_HOLDER_CLEARED`. Verbatim timeout string included.
+- **CAUSE 2 (Antigravity bugs)**: v2.0 bundle hijack thread, multi-voice-input regression on `Antigravity 1.23.2 / Electron 39.2.3 / Chromium 142.0.7444.175 / Node 22.21.1 / Darwin arm64 25.4`, Kilo-Org issue #5518 (Windows mic enumeration). Ctrl+M is Antigravity's record toggle — will fight VoiceMode.
+- **CAUSE 3 (TCC edge cases)**: Responsible-process chain `launchd → Antigravity → terminal → zsh → claude → voice-mode → sounddevice → PortAudio → CoreAudio`. References Microsoft vscode#307364 and t3code#728 for the silent-deny pattern. Full `tccutil reset Microphone <bundle>` recipe. `sqlite3` query for TCC.db `kTCCServiceMicrophone` rows. RMS=0.0 silent-deny test snippet.
+- **CAUSE 4 (Whisper/Kokoro throttling)**: M3 Pro thermal throttle 24→18 t/s after 12 min at 100 °C. Kokoro on MPS has unsupported ops (`aten::angle`) forcing per-op CPU fallback. Kokoro memory leak (hexgrad/kokoro#152) mitigated by `VOICEMODE_KOKORO_MAX_REQUESTS=25`. App Nap: `defaults write NSGlobalDomain NSAppSleepDisabled -bool YES`. Pre-warm Kokoro at session start to kill 62 s TTFA.
+- **CAUSE 5 (Audio routing)**: AirPods force A2DP→HSP profile switch when mic activates → 16 kHz mono. `PaErrorCode -9985 "Device unavailable"`. macOS Tahoe `coreaudiod` corruption with nuclear-option kill recipe. VoiceMode uses `sd.InputStream(samplerate=24000)` per `converse.py:1077`.
+- **CAUSE 6 (VAD)**: Uses `webrtcvad` (NOT silero). Defaults: `VAD_AGGRESSIVENESS=3` (raised from 2 in GH-248), `SILENCE_THRESHOLD_MS=1000`, `MIN_RECORDING_DURATION=0.5`, `INITIAL_SILENCE_GRACE_PERIOD=1`. Three-state machine. GH-248, GH-256 (silent disable on setuptools≥81 removing `pkg_resources`), GH-62, GH-103, GH-4, GH-106, GH-211, GH-485 catalogued. Tuning recipe for "stops cutting me off": `VAD_AGGRESSIVENESS=2`, `SILENCE_THRESHOLD_MS=1200`, `MIN_RECORDING_DURATION=2.0`.
+- **CAUSE 7 (Antigravity WebRTC)**: macOS CoreAudio admits multi-client input (no exclusive lock). Antigravity's native voice (Ctrl+M) uses `getUserMedia({audio: true})` with Chromium's `echoCancellation/autoGainControl/noiseSuppression` defaults — processing applied to shared device. Orange-dot-stuck Electron `MediaStream` cleanup bug. OverSight recommended for live tracking.
+- **CAUSE 8 (Multi-session)**: FIFO conch queue: `~/.voicemode/conch.queue.d/NNNNNN-<session>.json`, `conch.queue.seq` counter, `conch.grant` hint. `CONCH_HOLD_EXPIRY=10s` for between-turns, `CONCH_MCP_WAIT_CAP=25s` MCP-side cap. `voicemode conch status` shows full queue.
+
+## Order of operations to actually fix the throttled feeling
+
+1. **Delete one of the two Antigravity bundles**, then `tccutil reset Microphone com.google.antigravity` and `…com.google.antigravity-ide`, relaunch, click Allow.
+2. **Fix the env-file drift** — either bump `VOICEMODE_CONCH_TIMEOUT/LOCK_EXPIRY` to 300 (upstream defaults) or update `MULTI-SESSION.md`/`CLAUDE.md` to reflect 45/180.
+3. **Pre-warm Kokoro** at session start (junk `curl` to `http://localhost:8880/v1/audio/speech`) to kill the 62 s TTFA cold start — this is the loudest contributor to "feels slow."
+4. **Tune VAD** if cutting off: `VAD_AGGRESSIVENESS=2`, `SILENCE_THRESHOLD_MS=1200`, `MIN_RECORDING_DURATION=2.0`.
+5. **Close other voice sessions** before starting an E4E one.
+6. **Pin MacBook mic as default input** — never AirPods.
+
+Full content with every command, every URL, every code snippet, and every error message verbatim is at the scratchpad path above if you want to read the whole thing.
+agentId: a346ea7d599cf31fe (use SendMessage with to: 'a346ea7d599cf31fe', summary: '<5-10 word recap>' to continue this agent)
+<usage>subagent_tokens: 86626
+tool_uses: 9
+duration_ms: 758034</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

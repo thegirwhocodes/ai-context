@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://app.agihouse.org/events/agent-for-defense-and-gov-20250329
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:11:39 UTC
+========================================================================
+
+URL: https://app.agihouse.org/events/agent-for-defense-and-gov-20250329
+Extraction prompt: List all winners, prize tiers, tracks, judges, sponsors, and project descriptions from this March 2025 SCSP × AGI House hackathon in Washington DC. What did winning projects build?
+
+----------------------------------------
+
+I appreciate your request, but the web page content provided only contains "AGI House" as a header with no additional information about the March 2025 SCSP × AGI House hackathon.
+
+To provide the details you're asking for—winners, prize tiers, tracks, judges, sponsors, and project descriptions—I would need access to the full webpage content that contains this hackathon information.
+
+Could you please share the complete webpage content or provide a link to the hackathon details?
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vezeti.net/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-13 08:41:15 UTC
+========================================================================
+
+URL: https://vezeti.net/
+Extraction prompt: Find all pricing information for 0800 toll-free numbers - monthly fees, per-minute rates, setup costs. Extract any specific numbers.
+
+----------------------------------------
+
+# Pricing Information for Vezeti Services
+
+Based on the webpage content provided, I found limited specific pricing details for 0800 toll-free numbers. Here's what is available:
+
+## Home Advantage Telephone Line
+The page mentions: **"For as low as ₦2,500/month"** for their HomeAdvantage Telephone line service, which is described as ideal for smart-home owners needing a landline with desktop phone functionality.
+
+## Business Plus Plan
+The content includes references to a Business Plus plan with pricing calculations based on three billing cycles:
+- Monthly option
+- 6-month option  
+- Annual option
+
+However, **specific per-minute rates, setup costs, and detailed 0800 toll-free pricing are not clearly displayed** in the extracted content. The page appears to use a dynamic pricing calculator (referenced in the JavaScript code) that generates costs based on selected options like:
+- Number of DIDs
+- Extensions
+- CRM features
+
+**Recommendation:** To obtain complete 0800 toll-free number pricing, you would need to visit the Vezeti website directly or use their pricing calculator tool, as detailed rates are not fully presented in the static page content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

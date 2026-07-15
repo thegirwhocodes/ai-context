@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Anthropic Claude API audio input transcription base64 input_audio 2026
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:58:45 UTC
+========================================================================
+
+Search query: Anthropic Claude API audio input transcription base64 input_audio 2026
+
+----------------------------------------
+
+Web search results for query: "Anthropic Claude API audio input transcription base64 input_audio 2026"
+
+Links: [{"title":"Voice dictation - Claude Code Docs","url":"https://code.claude.com/docs/en/voice-dictation"},{"title":"Feature request: Audio input support in Messages API · Issue #1198 · anthropics/anthropic-sdk-python","url":"https://github.com/anthropics/anthropic-sdk-python/issues/1198"},{"title":"Anthropic-ai/Claude-Audio · Hugging Face","url":"https://huggingface.co/Anthropic-ai/Claude-Audio"},{"title":"Claude AI Voice Mode 2026: Multilingual Support, Push-to-Talk & Dictation Limits — Weesper Neon Flow Blog","url":"https://weesperneonflow.ai/en/blog/2026-02-23-claude-ai-voice-mode-2026-features-vs-dedicated-dictation/"},{"title":"Transcribe an audio file with Deepgram & use Anthropic to prepare interview questions! | Claude Cookbook","url":"https://platform.claude.com/cookbook/third-party-deepgram-prerecorded-audio"},{"title":"Anthropic Academy: Claude API Development Guide \\ Anthropic","url":"https://www.anthropic.com/learn/build-with-claude"},{"title":"GitHub - unclecode/claudet: Add voice input capability to Claude.ai using Transformers.js and Groq API · GitHub","url":"https://github.com/unclecode/claudet"},{"title":"Can Claude Transcribe Audio & Video? Yes | Speak AI","url":"https://speakai.co/integrations/claude/"},{"title":"claude-cookbooks/multimodal/how_to_transcribe_text.ipynb at main · anthropics/claude-cookbooks","url":"https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/how_to_transcribe_text.ipynb"},{"title":"Build a Fast & Scalable Voice Assistant with Claude in Python","url":"https://picovoice.ai/blog/add-voice-to-claude/"}]
+
+Based on the search results, here's what I found regarding Anthropic's Claude API and audio input:
+
+## Current State of Claude API Audio Support
+
+The Claude API currently accepts text and images (JPEG, PNG, GIF, WebP) but not raw audio. Passing base64/hex of WAV in a text block only gives the model a string of data; it has no audio modality to perceive tone, timbre, or meaning from the waveform.
+
+## Voice Features in Claude Products
+
+Anthropic launched voice input and output for Claude on iOS and Android in May 2025, then expanded the experience to web. As of the June 2026 Help Center update, Claude AI voice mode features include a full conversational interface with the ability to speak naturally, receive a spoken reply, and switch between voice and text in the same chat.
+
+However, voice dictation streams recorded audio to Anthropic's servers for transcription, and audio is not processed locally.
+
+## Workarounds for Transcription
+
+Currently, developers using the Claude API for audio handling typically rely on third-party transcription services. For example, some use Deepgram or other speech-to-text providers to transcribe audio first, then send the transcript text to Claude's API.
+
+The search results indicate that native audio input as a first-class modality (similar to how images are handled) is not yet available in the Messages API as of the search date.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw connect WhatsApp setup tutorial 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 05:45:31 UTC
+========================================================================
+
+Search query: OpenClaw connect WhatsApp setup tutorial 2026
+
+----------------------------------------
+
+Web search results for query: "OpenClaw connect WhatsApp setup tutorial 2026"
+
+Links: [{"title":"WhatsApp - OpenClaw","url":"https://docs.openclaw.ai/channels/whatsapp"},{"title":"OpenClaw Tutorial: Installation to First Chat Setup | Codecademy","url":"https://www.codecademy.com/article/open-claw-tutorial-installation-to-first-chat-setup"},{"title":"Build a WhatsApp AI Assistant with OpenClaw & Bright Data","url":"https://brightdata.com/blog/ai/openclaw-with-bright-data"},{"title":"OpenClaw (Clawdbot) Tutorial: Control Your PC from WhatsApp | DataCamp","url":"https://www.datacamp.com/tutorial/moltbot-clawdbot-tutorial"},{"title":"OpenClaw 🦞 Deploy Guide","url":"https://zeabur.com/templates/VTZ4FX"},{"title":"OpenClaw WhatsApp Setup: Connect, Authenticate, and Avoid Session Drops - Macaron","url":"https://macaron.im/blog/openclaw-whatsapp-setup"},{"title":"An overview of the OpenClaw (formerly Clawd Bot) WhatsApp integration","url":"https://www.eesel.ai/blog/clawd-bot-whatsapp-integration"},{"title":"📱 Connect OpenClaw to Telegram & WhatsApp | Complete Setup Guide 2026","url":"https://gist.github.com/ashio-git/b8236b92bdc9591ad29bb7dfdf20c025"},{"title":"OpenClaw and WhatsApp production setup: Security + phone numbers - LumaDock","url":"https://lumadock.com/tutorials/openclaw-whatsapp-production-setup"},{"title":"OpenClaw Installation Guide - Complete Setup Tutorial 2026","url":"https://openclawinstall.buzz/"}]
+
+I found comprehensive information about OpenClaw WhatsApp setup. Here are the key details from the search results:
+
+## OpenClaw WhatsApp Setup Overview
+
+OpenClaw is an open-source personal AI assistant that runs directly on your devices and lets you build a personal AI assistant that integrates with popular platforms like WhatsApp, Telegram, Slack, Discord, Signal, and iMessage.
+
+## Basic Setup Steps
+
+1. **Configure WhatsApp Channel**: Configure WhatsApp in ~/.openclaw/openclaw.json and run openclaw channels login to scan the QR code (Linked Devices).
+
+2. **QR Code Connection**: You will be shown a QR code to connect the agent. Open WhatsApp, select the QR code option, go to the "SCAN CODE" section, and frame the QR code with your camera.
+
+3. **Set Up Your Gateway**: The only step left is to install and run the OpenClaw gateway so you can interact with your AI assistant directly on WhatsApp. The OpenClaw Gateway is the always-on process that manages the Baileys/Telegram connection and acts as the control and event plane for OpenClaw.
+
+## Phone Number Requirements
+
+WhatsApp requires a real mobile number for verification. VoIP and virtual numbers are usually blocked. The ideal setup is a spare/old Android phone + eSIM, left on Wi-Fi and power, and linked via QR.
+
+## Testing Your Setup
+
+If you open WhatsApp and check the chat with yourself, you should see the test message delivered.
+
+The official OpenClaw documentation and several recent tutorial sources provide additional configuration options for controlling who can message your bot and managing security settings.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

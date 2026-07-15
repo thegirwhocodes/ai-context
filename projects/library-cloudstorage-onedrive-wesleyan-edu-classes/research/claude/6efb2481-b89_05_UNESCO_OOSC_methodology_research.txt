@@ -1,0 +1,82 @@
+========================================================================
+AGENT RESEARCH: UNESCO OOSC methodology research
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 21:54:50 UTC
+========================================================================
+
+I'm advising a Wesleyan undergraduate economics student writing an empirical paper on Nigeria's out-of-school children. She's using UNESCO's Global Education Monitoring Report VIEW (GEM VIEW) modeled estimates of out-of-school rates (OOSC) and wants to understand the methodology AND validate the data against an alternative construction (100 minus net enrollment rate from World Bank WDI).
+
+Please research three things in depth:
+
+## PART 1: UNESCO GEM VIEW Methodology
+
+The data source is at https://www.unesco.org/en/education/view/outofschool/estimates and was developed jointly by UNESCO Institute for Statistics (UIS) and the GEM Report.
+
+I need you to thoroughly explain:
+
+1. **What's the underlying statistical model?** Specifically:
+   - Is it a Bayesian hierarchical model? Frequentist?
+   - What's the imputation method for missing data?
+   - How does it combine administrative data with household surveys (DHS, MICS)?
+   - Does it use machine learning, smoothing splines, or structural assumptions?
+   - What's the temporal smoothing approach (Kalman filter? LOESS? Ad hoc?)
+   - What are the 90% uncertainty intervals based on?
+
+2. **Data inputs**:
+   - Which administrative sources (UIS member-state submissions)?
+   - Which household surveys (DHS, MICS, NLSS, etc.)?
+   - How are inconsistencies between admin and survey resolved?
+   - For Nigeria specifically: which surveys are anchoring the estimates?
+
+3. **Documentation links**:
+   - Find the actual technical methodology documents (UIS Information Paper, GEM Report background paper)
+   - Cite specific titles, URLs, authors
+   - Recent peer-reviewed validation papers
+
+## PART 2: World Bank WDI Net Enrollment Rate (SE.PRM.NENR)
+
+Compare to the UNESCO OOSC:
+
+1. **What does WDI's SE.PRM.NENR actually measure?**
+   - Net enrollment rate definition
+   - Adjusted vs unadjusted versions
+   - Which UN agencies feed this back to WDI
+   - How it differs from gross enrollment (SE.PRM.ENRR)
+
+2. **Coverage for Nigeria specifically**:
+   - What years does WDI have NER data for Nigeria?
+   - Same gap problem as the OOSC SE.PRM.UNER.ZS series?
+   - Is the underlying source UIS too?
+
+3. **Conceptual relationship**:
+   - Is OOSC rate ≡ 100 − NER, or are there subtle differences?
+   - Are there primary-age children IN secondary school that complicate the math?
+   - What's the typical gap between (100−NER) and the UNESCO OOSC for African countries?
+
+## PART 3: Validation Approach
+
+For the student's paper, what's the right way to:
+
+1. Compare the UNESCO GEM VIEW OOSC estimate to (100 − WDI NER) for Nigeria
+2. Document any discrepancies in a transparent way
+3. Justify using UNESCO GEM VIEW as the primary measure (which she's doing)
+
+Provide concrete recommendations:
+- Should she report a correlation coefficient between the two series?
+- A plot overlaying them?
+- A robustness check using each measure?
+
+Provide 8-10 high-quality citations focused on the methodology papers. Goal: a defensible footnote/methods paragraph the student can drop into her paper to justify the data choice.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a341b626c3cfa872a (internal ID - do not mention to user. Use SendMessage with to: 'a341b626c3cfa872a' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/40423c8d-b591-4ba0-b3a0-679be1ba2c1d/tasks/a341b626c3cfa872a.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

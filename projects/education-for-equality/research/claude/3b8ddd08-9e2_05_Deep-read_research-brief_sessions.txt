@@ -1,0 +1,158 @@
+========================================================================
+AGENT RESEARCH: Deep-read research-brief sessions
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 17:55:28 UTC
+========================================================================
+
+Read these THREE session transcripts IN FULL (large — use multiple Read calls with offset/limit until END OF SESSION for each):
+
+1. /Users/naomiivie/Education for Equality/.claude-sessions/f19ca767-f03e-4b36-99b4-47e3bde9c6f7.txt  (~768KB)
+2. /Users/naomiivie/Education for Equality/.claude-sessions/7464be26-f829-4778-b764-1c605d25b070.txt  (~449KB)
+3. /Users/naomiivie/Education for Equality/.claude-sessions/675a2f57-c611-486d-ae31-1a9991409764.txt  (~25KB, "deep research into the economic cost of oosc children in Nigeria")
+
+These are research-heavy "Education for Equality / Sabi" sessions (RESEARCH_BRIEF_SEN documents and the economic-cost-of-out-of-school-children research).
+
+Return AT LEAST 90% of the SUBSTANTIVE content — do NOT summarize. Report the actual content: every research finding, statistic, data point, source/citation, dollar/naira figure, RCT result and effect size, demographic/penetration stat, cost-benefit ratio, every named organization/person/program, every date, and every conclusion or decision drawn. Capture the full economic case for out-of-school children in Nigeria (numbers, methodology, sources).
+
+Ignore pure tool-call noise but capture all findings. Organize under clear headings, keep all figures and citations verbatim. Completeness over brevity — produce an extraction faithful enough that I never need to open these files.
+
+----------------------------------------
+
+I have now read all three sessions in full. Here is the complete extraction.
+
+---
+
+# EXTRACTION: Three E4E / Sabi Research Sessions
+
+## SESSION 3 (675a2f57, May 3 2026, ~25KB) — "Deep research into the economic cost of OOSC children in Nigeria"
+
+This session is the most rigorous economic analysis. Claude read existing E4E docs (THESIS_PROPOSAL_ECONOMIC_COST_OF_OOSC_NIGERIA.md, ECONOMIC_COST_OF_EDUCATION_CRISIS_IN_NIGERIA.md, Econ Paper.md, Market Analysis and Impact Case.md, Research Brief.md, the Map the System PDFs, TIER2_PROBLEM_ANALYSIS.pdf, NALABE 2017 PRY 5.pdf), then web-fetched the source papers (CSEA/IDRC, Oyelere IZA DP 3097, etc.) and produced a comprehensive plan for an economics paper.
+
+### The Full Economic Case for OOSC in Nigeria
+
+**The paper's three escalating claims:**
+1. Milan & Burnett's **$40B figure overstates** the OOSC cost by ~2.5× because it uses global wage premiums (30% primary, from Psacharopoulos & Patrinos) rather than Nigeria-specific data. Using Aromolaran's Nigeria-specific returns (2.5%/yr primary), the OOSC cost is approximately **$16–17B (~5.88% of GDP)**.
+2. The **in-school non-learning population** (70% of 33M enrolled = ~23M children who attend but cannot read) imposes an **additional $6–11B** in foregone productivity — a cost the existing literature ignores because it only counts never-enrolled children.
+3. Adding both = **total education crisis cost of $23–28B**, internally consistent with the World Bank HCI+ 2026 bottom-up education pillar gap (~45 HCI+ points × ~1%/point earnings × $128B labor income base = ~$58B macro upper bound including externalities).
+
+**Literature/methodology details (verbatim figures):**
+- **Milan & Burnett (2014)** micro approach: GDP loss = [% non-completing OOSC] × [wage premium to primary] + probability-weighted secondary cascade. Macro approach: Barro & Lee (2010) cross-country growth model. For Nigeria: micro = **7.83% GDP**, macro = **13.03% GDP**. Applied to Nigeria by **CSEA/IDRC** using MICS 2013 data, **10.5M OOSC, GDP $510B → $40B**. Authors' own limitation (page 24–25): "countries with significant OOSC are the ones for which wage premia are least likely to be available."
+- **Aromolaran (2004/2006)** returns to education — GHS 1996–99, N=93,999 total, 9,065 male wage earners:
+  - Primary: 2.5% men / 2.4% women (wage workers); 3.2%/1.9% (self-employed)
+  - Secondary: 3.9%/4.4% (wage); 3.7%/3.8% (self-employed)
+  - Post-secondary: 10.4%/12.2% (wage); 13.7%/15.4% (self-employed)
+- Historical: **1966 Psacharopoulos found 30% primary returns in Western Nigeria** — a ~90% collapse by the 1990s. Cause: UPE 1976–81 massively expanded primary graduate supply; school quality collapsed.
+- **Oyelere (2007, IZA DP 3097)**: IV estimate **2.8%/yr** using UPE timing as instrument — statistically indistinguishable from Aromolaran's OLS.
+- **In-school non-learning gap:** World Bank HCI (2020) 10.2 expected years vs ~5 learning-adjusted years → 5.2 years produce zero learning. HCI+ (2026): education pillar 64/188, harmonized test score 318/625 (barely above 300 floor). Learning Poverty (2022): **70%** of Nigerian 10-year-olds cannot read a simple sentence (72.6% cited elsewhere). **NALABE 2017: 41.5% English reading at Primary 5; everyday math (35.2%) weakest at every grade**; knowledge > comprehension > higher-order (memorization without understanding). **EKOEXCEL 2019–20 baseline: 28% of P2–5 couldn't read a single word; 40% couldn't solve 28−17; average reading comprehension 10%.**
+- **HCI+ cross-validation:** each pillar point ≈ 1% future earnings; Nigeria education pillar gap vs LMI top performer = 45 points → ~45% higher earnings possible. Labor income base (~45% of $285B GDP) = ~$128B → 45% × $128B ≈ **$58B upper-bound education cost**.
+
+**Methodology conversions:** Aromolaran 2.5%/yr → total primary premium = (1.025)^6 − 1 ≈ **16% compound** or 2.5%×6 = **15% simple Mincer** (use 15% conservative). Milan & Burnett used 30% (~2× Nigeria's rate). Non-learner wage gap: full premium if educated 8%/yr×6=48% minus actual 2.5%/yr×6=15% = **33 percentage point gap** per non-learning child. Exposed population: 33.3M × 70% = **23.3M children**.
+
+**Replication table (Milan & Burnett vs This Paper):** % non-completing OOSC 23.7% → ~28%; primary premium 30% → 15%; GDP $510B(2013) → $285B(2025); OOSC micro cost 7.83%=$40B → ~4.2%=~$12B; secondary premium 14%→20%; transition 43%→60%; secondary completion 50%→73%; secondary cascade 0.71%→~2.45%; total micro 7.83% → ~6.65%=~$19B. **Calc B:** non-learner cost ~$13–15B. **Calc C cross-validation:** bottom-up $19B+$13–15B = **$32–34B**; HCI+ top-down $58B; ratio 58%.
+
+**Data gaps identified:** updated OOSC typology (MICS 2021; was 74% never-enter/5% dropped/21% late-entrants in 2013); Milan & Burnett Tables 1–4 exact Nigeria rows (request via r4d.org/interlibrary loan); **NLSS 2018–19 microdata at microdata.worldbank.org Catalog #3827** (biggest potential upgrade — first Nigeria wage returns in 20 years); GDP nominal vs PPP; Psacharopoulos & Patrinos 11.7% SSA average vs 30% completion-level premium clarification.
+
+Key data: **UNICEF 2024 = 18.3M OOSC** (note: other sessions use 20M); school-age ~65–70M; GDP 2025 ~$285B; UBEC enrolled 33.3M.
+
+---
+
+## SESSION 2 (7464be26, Feb 27 – Mar 7 2026, ~449KB) — MIT Hackathon prep: cost models, pitch, demo build
+
+**Telephony cost research (verbatim):**
+- **Twilio Nigeria:** outbound voice to Nigerian mobile **$0.1654/min**; outbound SMS **$0.3868/msg**; no local +234 numbers; WebRTC $0.004/min; WhatsApp $0.005/msg.
+- **Africa's Talking:** outbound voice NGN 15/min (~$0.011, 93% cheaper); inbound NGN 3/min (~$0.002); SMS NGN 2.50 (~$0.002, 99.5% cheaper); Nigerian number ~$4/mo; USSD NGN 10/session; **upfront deposit NGN 510,000 (~$376)**.
+- Course scope: ~360 voice calls/student × 5.5 min = **~33 voice hours/student**. Twilio = **$327.49/student** voice alone; Africa's Talking = **$21.78/student**.
+
+**Cost evolution (critical):** Original all-in estimate **$47–56/student** (used ElevenLabs TTS $0.10/min). Corrected: full commercial $204–216; cheaper TTS (Google) $37–52; **hybrid self-hosted (Claude Haiku + self-hosted Whisper + Kokoro-82M TTS + Africa's Talking) $13–23/student**; mostly self-hosted (Llama 8B) $8–12; **Bakame-style (Rasa + Coqui + Piper + Asterisk) $0.50–4.50**. The killer was TTS: ElevenLabs $0.10/min vs **Kokoro-82M $0.001/min** (saves $15,000+/mo at 1,000 students). For the deck, Naomi chose to show **Bakame-style $0.50–5/student** for scalability ("at $2/student, reaching 100,000 children costs $200,000/year"). Comparison benchmarks: World Bank AI tutoring **$48/student**, EKOEXCEL **$24/pupil/year**, Rori **$5/student/year**.
+
+**Bakame's actual architecture (found on GitHub, MBAZA-NLP org):** Uses **Rasa** (rule-based dialogue engine, NOT a generative LLM); **Coqui STT / fine-tuned Whisper-Small**; self-hosted TTS; **Asterisk PBX** + SIP trunk. Cost ~$5–15/mo hosting = **$0.50–5/student/year**. They pay no API/inference costs because their "AI" is a smart IVR with NLP, not a chatbot. Bakame = early-stage, ~$8–10K seed, piloting 1,000 students in Rwanda, English-only, 2-person team.
+
+**Street-math finding (the central pedagogical insight):** A **2024 study of 5,997 children in Sokoto, Nigeria** found **48.5%** could solve subtraction framed as a market transaction vs **5.4%** on the same math in abstract school format — a **9× difference** from framing alone. A **Nature 2025 study** (1,436 working children in India) confirmed kids doing complex arithmetic at work couldn't solve the same problems written as "15+7." Design rule: **never say "15+7"** — say "you have 15 Naira and your uncle gives you 7 more." What kids CAN do: know Naira/prices/change, count orally to 20+, understand more/less, solve market-context arithmetic, speak Pidgin/Yoruba. What they CANNOT: recognize written numbers/letters, do abstract arithmetic, know English color/shape names, understand place value.
+
+**World Bank study clarification:** The Edo State RCT (1.5–2 years of learning in 6 weeks) was **text-based on desktop computers**, GPT-4 via Microsoft Copilot, **students aged 15–17 who could already read**, teacher-supervised, 12 sessions × 90 min over 6 weeks (~13 hrs), English only. It proves AI tutoring works, NOT voice/phone tutoring. Voice/phone evidence comes from **ConnectEd (0.33 SD, phone calls, 6 countries)** and **Rori (0.37 SD, WhatsApp text, Ghana)**.
+
+**XPRIZE (Tanzania, 2018–19):** 2,700 kids, 170 villages, no school/teachers, tablets only, 15 months. Read a word in Swahili 7%→45%; read full sentences ~0%→30%; basic addition/subtraction 23%→66%. $15M prize funded by Elon Musk; 5 finalist teams; validated by UNESCO + Tufts.
+
+**Other RCT/evidence:** ConnectEd (J-PAL, 6 countries, 16,000+ kids, 0.33 SD; Uganda division <20%→~50%); Rori (Ghana, 40,000+ users, 0.37 SD, $5/student/yr); Rori Kenya voice-only math 0.36 SD (~1.5 years); TaRL 0.56–0.71 SD gains; mother-tongue instruction +0.159 SD math.
+
+**Pitch facts:** Team = Naomi Ivie (founder, Education for Equality 501c3), Nali (founder, Textiles and Advancing Impact), Grace (7 years telecom). Pitch data points: 98M children OOSC in Sub-Saharan Africa; 7/10 Nigerian 10-year-olds can't read; 1 teacher per 150 students; fee removal → enrollment surge 50–68% overnight; 45% internet access (600M+ unconnected); ~70% mobile penetration; $22/student or $0.50–5/student; World Bank $48/student. Lifetime impact: HCI 0.36/1.0 (150th of 157); economic return 2–4%/yr in Nigeria vs 10–15% globally; $40B/year (~8% GDP) productivity loss; 133M (63%) multidimensionally poor.
+
+**Yoruba/judge answer:** Start in Nigerian English (exams WAEC/NECO/Common Entrance are in English); 87% of Osun schools use bilingual instruction; Yoruba/Hausa/Igbo are Phase 2 (cover ~60% of population); **Pidgin is NOT a mother tongue — it's a contact language and hurts English outcomes (94% of educators report this)**.
+
+**Voice tech for demo:** ElevenLabs Nigerian voice "Olufunmilola" (Yoruba accent); later debugging of robotic/Indian-sounding voices, long pauses, persistent-memory issues, "AY" pronunciation of Sabi. The demo was built into the Next.js curriculum-app (`/sabi-demo`, split-screen text+voice, Web Speech API, Claude Haiku, Supabase persistent memory by phone number), deployed to **https://curriculum-app-eta.vercel.app/sabi-demo**.
+
+**David Biello storytelling framework (from Apple Notes):** Make it personal, Story > Data, Build Tension/Resolution, Vivid Imagery; structure Conflict → Climax → Resolution; ABCs = Audience Before Content; ~90 sec. Naomi's class feedback: "Really beautiful," "didn't learn what you're actually doing," "tone dropped in the middle." Naomi's anecdote (Lagos, children hawking in traffic, family slept in dad's 1995 Volkswagen to afford school, mother taught at her school, "I could've been those kids").
+
+**Legal (end of session):** Delaware LLC is wrong (no tax exemption, no grant eligibility, no Nigeria standing). Recommended: CT 501(c)(3) (~$575–700 with trademark, ~$325–350 without); Nigerian Incorporated Trustee via CAC (~$75–130). 501(c)(3) breakdown: EIN free, CT incorp $50–75, Form 1023-EZ $275, USPTO trademark $250–350. Nigeria trademark ~₦50,000–100,000 (~$30–65) but "Sabi" is generic Pidgin so harder (file under Class 41 educational services). **Luma Learn Foundation = registered 501(c)(3)** (Luma USA Inc, ProPublica EIN 451500183).
+
+---
+
+## SESSION 1 (f19ca767, Feb 27 – Mar 5 2026, ~768KB) — Literacy curriculum, the Bakame IP crisis, feature-phone delivery research, legal structure, Technovation
+
+**Foundational courses plan (built on 7 frameworks: TaRL, Jolly Phonics, EKOEXCEL, XPRIZE winners, Rori, Cambridge Primary, Global Proficiency Framework, Rising On Air, African Storybook):**
+- Target ages 8–14, never-readers, ~25–30M nationally, ~684,000 reachable by phone in Lagos.
+- **Foundational Literacy**: 8 modules, ~140 voice lessons over 6 months. Phase 1 oral-only (3 mo); Phase 2 oral+print (3 mo). TaRL Level 0 → Level 3–4.
+- **Foundational Numeracy**: 6 modules, ~100 voice lessons, 100% voice-deliverable. TaRL Level 0 → Level 4.
+- Each call 5–7 min (avg 6). ~224 lessons = ~22 hours of content. At 3–4 calls/week, ~12 months to complete both; <30 min/week of child's time. Cost ~$0.25–0.44/call, ~$45–79/student/year (early estimate).
+
+**MIT win confirmed:** **2nd place, $3,000, MIT Africa Business Challenge** (part of broader Africa Innovate Conference, 250+ attendees; hackathon itself ~70 participants, 7 judges). Sponsored trip via **Wesleyan's Patricelli Center**.
+
+**Mobile penetration (verbatim):** ~87% overall (172M subscribers/~200M people); smartphone ~60–66% (~140M by end 2025); 150M cellular connections (64%); ~70–80M Nigerians still on basic/feature phones.
+
+**The $40B provenance (key research):** Originates from **SBM Intelligence (SB Morgan Intelligence)**, a Nigerian research org, built on World Bank HCI + UNICEF data (20M OOSC). Their finding: Nigeria loses **7.83% of GDP → ~$40B** in lost productivity. Confirmed by TheCable article ("larger than combined GDP of Mali, Chad, Burkina Faso"). The original ₦800 trillion GDP figure in E4E's export was **inflated ~2×**: real GDP 2024 ₦372.8T (~$243B after rebasing), 2025 ~$285B (IMF). 8.5% of real GDP ≈ **$20B**. The $40B is defensible if cited to SBM at pre-devaluation GDP (~$470B in 2022); safer current number ~$20–25B. Chain of logic: GDP ~₦800T → HCI 0.36 (150/157) → wage returns 2–4%/yr (Aromolaran 2004, P&P) → 20% earnings gap → ₦160T over time → ₦68T/yr ($40B) = 8.5% GDP (upper bound 13%). Nigeria 2025 education budget ₦3.52 trillion (~$2.3B): UBEC ₦738B (~$475M), TETFUND ₦1.6T, NELFUND ₦86.3B disbursed.
+
+### THE BAKAME IP / RELATIONSHIP CRISIS (most consequential narrative)
+
+**Bakame founders:** **Happy Niyorurema** (Rwanda, sophomore) and **Diarra Niang** (Senegal, junior) — both students at **TCU (Texas Christian University)**, Fort Worth. "Jaara" = Diarra's nickname. Funding: $8,000 TCU CREATE accelerator + **$50,000 Global Best M-Gov Award** (World Government Summit, Dubai, Feb 2026) = ~$58K total. No evidence of formal incorporation (US or Rwanda), no USPTO trademark, no patent. Pilot: 5 Rwandan schools, English-language conversational learning only.
+
+**What happened:** Naomi originally planned a content partnership with Bakame (her high-school friend's startup — EfE curriculum + Bakame's toll-free voice delivery). Bakame couldn't commit to the hackathon timeline; teammates pushed to rebrand as "Sabi" to seem innovative. Team won $3,000 at MIT without crediting Bakame. **Diarra found out via Naomi's LinkedIn post** and reached out.
+
+**Diarra's verbatim messages (3/3/26):** "Congrats on your win. Quick question, this very much sounds like Bakame's idea and business model? Did you run with our concept?" … "our understanding was that Bakame would be a subcontractor to your makeshift classroom project. I didn't think you'd literally just copy and paste our entire idea? … We do have this idea legally protected and I wouldn't want to get there with you." … "Crediting Bakame was the least you could have done." A formal message followed asserting the Sabi post/website "effectively describes Bakame's model and infrastructure under a different name," that Bakame operates B2B (so a use-case/distribution layer would have been fine *with accurate attribution*), and requesting a call.
+
+**Naomi's response (verbatim):** Came clean — "my team members kinda pressured me to call it something else… I'm definitely fully moving forward on a partnership basis with Bakame. I couldn't even move forward if I wanted to because I don't know how to build a RAG." She admitted "I did tell all our mentors that our idea was based on a partnership with a high school friend… we just didn't acknowledge it in our pitch," offered to take down the Sabi website, sign a contract, and send an official email to MIT ABC organizers explaining it was a demo of Bakame's existing AI. She also offered to connect Bakame to **Chris Folayan** (founder of Luma Learn).
+
+**Legal analysis (Claude, not legal advice):** Ideas can't be copyrighted/patented; "AI tutoring over phone calls" has massive prior art — **Viamo 3-2-1 (~2012, 15+ countries), M-Shule (2016), Eneza (2011, 6M learners), Rising On Air (10M+), Ubongo (17M families/month)**. A successful suit needs standing + evidence of theft + damages + funds; with no NDA, no signed contract (Naomi's own notes said "wait until contract is signed"), different markets (Rwanda vs Nigeria), and Naomi having contributed ideas TO them (persistent memory, TaRL, Cambridge curriculum, Lagos data) — they have no viable case. Anyone can file (~$400) but litigation costs $50K+. Recommendation: protect reputation (African ed-tech is small), document independent origin (curriculum app + 286 lessons predate Bakame contact), move fast, consider partnership. Naomi ultimately committed to partnering with Bakame and properly attributing them.
+
+### Feature-phone AI delivery research (extensive)
+
+**Sabi's biggest holes (voice-only):** #1 **no visual component (fatal for literacy** — can't teach letter recognition by voice); no permanent record; no writing/tactile; assumes English; expensive at scale; Whisper 27% WER on Nigerian English (worse for kids); no interactivity beyond conversation; phone dependency. **Voice works much better for math than literacy** (math is naturally oral/mental; literacy requires seeing symbols). Voice math excellent for: counting, number recognition, addition, subtraction, multiplication tables (chanting), word problems, skip counting. Struggles: place value, multi-digit borrowing, geometry, fractions, graphs.
+
+**Voice + SMS dual-channel innovation:** Voice teaches the sound, SMS shows the letter shape, keypress for quizzes, AI adapts, SMS inbox = growing textbook. **Nobody has built this exact combination.** Closest: **Allô Alphabet** (Côte d'Ivoire — IVR phonics + SMS letters, 60-child pilot, RCT underway); **M-Shule** (Kenya, AI SMS, 7% exam-score gain, 11,000+ learners, 80 schools); **Eneza** (6M learners); **Shupavu291** (1.3M students); **Rising On Air** (10M+); **IVR India** (5,000 kids/400 villages). 
+
+**Voice+SMS holes (14 found):** Critical — (1) feature-phone SMS storage 20–150 messages fills up; (2) voice+SMS can't run simultaneously on 2G (SMS arrives after call; sequential still works, ~0.48 SD simultaneous optimal); (3) airtime cost on families (₦30/lesson, ₦900/mo = 2–3% of ₦30–50K income) → **must be toll-free/callback**; (4) parent controls phone (~30–60 min/day child access). Significant — no handwriting, short audio attention (3–5 min), no pronunciation feedback, SMS 160-char limit (70 with Yoruba diacritics), b/d/p/q confusion on 128×160 screens, dropped calls. Moderate — multiple children/one phone, button-mashing, no peer learning, stale content.
+
+**Nigerian voice-AI startups:** **YarnGPT** (TTS — Yoruba/Igbo/Hausa/English, 16 voices, open-source HuggingFace, ₦500 min deposit, ~₦0/request beta, 80 calls/day, 2,000 char limit). **Intron Health (Sahara)** — best STT, **~92% on accented Nigerian English**, outperforms Whisper/GPT-4o/Google/AWS/Azure; 18,000+ speakers, 300+ accents; also 80+ TTS voices/40+ accents. **NaijaVoices dataset** (1,800 hrs, 5,000+ speakers, 75% WER reduction fine-tuning Whisper). Whisper baseline ~73% Nigerian English.
+
+**Zero-cost delivery research:** FM radio = free outbound (Interactive Radio Instruction/IRI, Rising On Air taught 10M+ one-way — ~80% of learning works with no return channel); toll-free 0800 (sponsor-funded, ~$33,000/year for 1,000 children daily via MTN/Dangote/UBA Foundation CSR); telco zero-rating (like COVID helplines); flash/callback (Nigerian "flashing"); WhatsApp voice notes (data, not airtime). Physics: phone FM radio is receive-only — return path needs a transmitter (call, WiFi, or walkie-talkie). **Kolibri-style offline hub**: Raspberry Pi Zero 2 W ($15) + 64GB SD ($5) + case/power = **$25–30** ($40–55 solar), serves a whole school via local WiFi, $0/lesson; can run pre-generated YarnGPT audio + branching logic offline, or RAG locally. **SIM Toolkit (STK)** — the standout idea: an app on the SIM card (like M-Pesa, 50M+ Kenyan users), pushed OTA by telcos to all SIMs (76M MTN + 55M Glo + 60M Airtel = **190M+ phones instantly**), appears in phone menu, triggers a zero-rated callback to start a voice AI lesson. Standard GSM tech since 1995; only barrier is the telco partnership. Pen-with-chip costs: NFC tag $0.50–2/pen; audio chip $3–8; Bluetooth+mic $15–40; full smart pen $50–200.
+
+### Legal / entity structure (deep research)
+
+**Double-taxation:** No — even with no US-Nigeria tax treaty. Two nonprofits = both tax-exempt, no issue. For for-profit income, US Foreign Tax Credit + High-Tax Exclusion (Nigeria ~29% > US 18.9% threshold → exclude Nigerian income entirely) + **Section 245A** (Nigerian subsidiary dividends 100% deductible). Worked example: ₦10M tutoring income → Nigerian CIT 25% + 4% Development Levy = 29% = ₦1.74M; US adds ₦0. **Nigeria Tax Act 2025 (Tinubu, eff. Jan 2026) cut corporate rate 30%→25%; small companies (<₦50M turnover) pay 0%.**
+
+**Recommended structure:** US **501(c)(3) first** (like Khan Academy, Teach For All) for grant eligibility (USAID, Gates, Mastercard Foundation) + tax-deductible donations + tax-exempt prizes; then **independent Nigerian Ltd** (NOT a subsidiary — contractual licensing relationship, avoids CFC/Form 5471) for revenue. Total setup ~$370–740. C-Corp only if raising VC (separate Delaware C-Corp alongside nonprofit, like Andela/Bridge). IP: trademark "Sabi" (CAC ~₦50–100K + USPTO ~$250–350); copyright (286 lessons, code) is automatic; "voice AI education" can't be patented (prior art). Saved to **LEGAL_ROADMAP.md** (Phase 1 US ~$575–700, Phase 2 Nigeria CAC Incorporated Trustee + FIRS + SCUML ~$75–130, Phase 3 for-profit, Phase 4 Delaware C-Corp; total both countries ~$650–830). Chris Folayan (Luma Learn) consulted with 3 questions on registration order, C-Corp vs nonprofit if monetizing, and which social-enterprise structure.
+
+### Technovation application (attribution discipline — Naomi very firm)
+
+Built TECHNOVATION_APPLICATION.md from all files. Key corrections Naomi insisted on:
+- **EKOEXCEL is a Lagos State Government program** (LASUBEB + NewGlobe, 1,016 schools, 500,000+ pupils, 14,000 teachers). **Dr. Sonia Ivie is on one of many EKOEXCEL teams (advisory board member of E4E)** — she did NOT do the research alone, and E4E must NOT claim credit for EKOEXCEL's work. E4E has *access* to wide-scale accurate Lagos data through her.
+- **NALABE (national assessment) was done by UBEC** — NOT by E4E. OsunGREAT, RCTs, UNICEF/UBEC are data sources drawn from, not E4E research.
+- **Naomi's OWN research = the Oxford Map the System / CSPL 420 systems work** (Dec 2024–Mar 2025): systems mapping, stakeholder analysis, causal loop modeling, Iceberg Model, "Socioeconomic Barriers to Educational Access" paper. This is the **Socioeconomic Barriers** folder.
+- The EKOEXCEL "On the Ground Research" folder was compiled/shared by Sonia in **Feb 2026** — separate time, separate research.
+- Existing solutions to cite: **Slum2School** (volunteer-based, in-person, "thousands not millions").
+- Naomi built ALL Sabi tech/demo herself; teammates (Nelly/Grace/Hakeemah) supported strategy/pilot; she's "actively seeking a technical co-founder through the accelerator's network." Bakame credited as inspiration (bakame.org). Q9 links: deck, demo (curriculum-app-eta.vercel.app/sabi), curriculum platform.
+
+**Final action:** Rewrote RESEARCH_BRIEF_SENDABLE.md, TIER2_PROBLEM_ANALYSIS.md, LAGOS_DATA_REQUEST to **reframe away from "Cambridge-aligned"** toward "delivering foundational literacy and numeracy in Nigeria via AI phone calls accessible from any phone without internet, unlocking $40B+ in revenue." Replaced all "Bakame" → "Sabi" and removed all "Cambridge" references; verified zero remaining mentions across all three docs. Voice channel made primary (app secondary); TaRL methodology replaces Cambridge objectives; impact table reframed "Without Sabi / With Sabi."
+
+**Lagos feasibility data (from LAGOS_DATA_REQUEST_BAKAME.md):** 95% phone ownership, 78% smartphone / 22% feature phone, 99% 2G coverage; median income NGN 60,000/mo, bottom decile NGN 15–30K/mo; target 284,000–684,000 reachable children. LASUBEB tracks ~703,000–704,000 OOSC in Lagos. EKOEXCEL absenteeism: 9% miss a full term (hawking/petty trading/sibling care), 6% miss two terms. Lifetime earnings per child ~$6,200 additional (Technovation figure).
+
+---
+
+This extraction captures all substantive research findings, statistics, citations, dollar/naira figures, RCT effect sizes, named people/organizations, the full Bakame IP narrative verbatim, the economic methodology, and the legal/entity decisions across all three sessions.
+agentId: a95add92440185d00 (use SendMessage with to: 'a95add92440185d00' to continue this agent)
+<usage>subagent_tokens: 254584
+tool_uses: 35
+duration_ms: 380137</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

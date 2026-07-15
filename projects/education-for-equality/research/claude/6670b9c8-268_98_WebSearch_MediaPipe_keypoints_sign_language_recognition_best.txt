@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: MediaPipe keypoints sign language recognition best approach small dataset few-sh
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:25:53 UTC
+========================================================================
+
+Search query: MediaPipe keypoints sign language recognition best approach small dataset few-shot learning 2025
+
+----------------------------------------
+
+Web search results for query: "MediaPipe keypoints sign language recognition best approach small dataset few-shot learning 2025"
+
+Links: [{"title":"Full article: MP-GestLSTM: real time gesture detection using MediaPipe and LSTM","url":"https://www.tandfonline.com/doi/full/10.1080/21642583.2025.2587853"},{"title":"Geometry-Aware Metric Learning for Cross-Lingual Few-Shot Sign Language Recognition on Static Hand Keypoints","url":"https://arxiv.org/html/2603.09213"},{"title":"Enhancing Sign Language Detection through Mediapipe and Convolutional Neural Networks (CNN)","url":"https://arxiv.org/html/2406.03729v1"},{"title":"An integrated mediapipe-optimized GRU model for Indian sign language recognition | Scientific Reports","url":"https://www.nature.com/articles/s41598-022-15998-7"},{"title":"Automatic sign language to text translation using MediaPipe and transformer architectures - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0925231225010938"},{"title":"GitHub - gabguerin/Sign-Language-Recognition--MediaPipe-DTW · GitHub","url":"https://github.com/gabguerin/Sign-Language-Recognition--MediaPipe-DTW"},{"title":"MediaPipe‐LSTM‐Enhanced Framework for Real‐Time Dynamic Sign Language Recognition in Inclusive Communication Systems - Anithadevi - 2025 - Engineering Reports - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/full/10.1002/eng2.70142"},{"title":"MediaPipe’s Landmarks with RNN for Dynamic Sign Language Recognition","url":"https://www.mdpi.com/2079-9292/11/19/3228"},{"title":"INDIAN SIGN LANGUAGE RECOGNITION USING MEDIAPIPE HOLISTIC Kaushal Goyal","url":"https://arxiv.org/pdf/2304.10256"},{"title":"Transformer-Based Isolated Sign Language Recognition Pipeline with Mediapipe Hand-Pose Keypoints by Muhammad Tasnimsyamim Abdul Raki, Amaan Izhar, Nurul Japar, Marvin Chin Yi Kai :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5766993"}]
+
+Based on the search results, here's what recent research shows about MediaPipe keypoints for sign language recognition with small datasets and few-shot learning approaches in 2025:
+
+## Key Approaches for Small Datasets
+
+**Few-Shot Learning with Geometry-Aware Methods:**
+A geometry-aware approach proposes using 20 inter-joint angles computed from MediaPipe static hand keypoints, which are provably invariant to rotation, translation, and isotropic scaling. On multiple datasets including LIBRAS and Arabic, the angle representation paired with an MLP encoder consistently achieves the highest accuracy, with the largest gains over normalized raw coordinates appearing on Arabic (+25.3 percentage points at 5-shot) and LIBRAS (+12.9 percentage points).
+
+**Temporal Models for Dynamic Signs:**
+MediaPipe keypoints can be extracted and used to train an LSTM-based custom model called MP-GestLSTM, which achieved validation accuracy of 93.75% and testing accuracy of 94.38%. RNN models such as GRU, LSTM, and Bi-directional LSTM address the issue of frame dependency in sign movement.
+
+**Transformer-Based Approaches:**
+Recent Transformer-based pipelines address challenges through dynamic onset trimming to remove irrelevant idle frames at the beginning of video sequences and horizontal flip augmentation, which effectively mitigates handedness bias and significantly boosts recognition accuracy.
+
+## Data Augmentation & Preprocessing
+
+The approach for processing sign language videos includes keypoint extraction using MediaPipe, normalization of these keypoints, data augmentation techniques, and the development of the sign language translation model.
+
+These methods suggest that for small datasets, using geometric representations (angles rather than raw coordinates) combined with few-shot learning frameworks like Prototypical Networks shows promise for achieving strong performance with limited training data.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,173 @@
+========================================================================
+AGENT RESEARCH: Write Supabase schema migration
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:53 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app.
+
+PROBLEM: Three database objects are used by the code but exist in NO committed SQL file, so recreating the Supabase project (which already happened once via pause) risks silent failures. They are:
+- table `sabi_active_calls` (used by lib/voice/call-state.ts) — columns: call_sid (PK/unique), student_id, phone_number, messages jsonb default '[]', started_at, updated_at
+- table `sabi_sms_log` (used by lib/voice/sms.ts) — columns: phone_number, direction, message, sms_type, channel, expected_answer, actual_answer, is_correct, student_id, created_at (+ id)
+- column `sabi_students.phone_number` (used by findOrCreateStudentByPhone in lib/voice/sabi-shared.ts)
+- the Supabase Storage bucket `sabi-audio` (must be PUBLIC; used by lib/voice/audio-storage.ts)
+
+YOUR TASK: Read lib/voice/call-state.ts, lib/voice/sms.ts, lib/voice/audio-storage.ts, lib/voice/sabi-shared.ts (the parts touching these objects), and the existing supabase-*.sql files in the repo root to match their conventions (types, RLS style). Then author a single idempotent migration file `supabase-sabi-telephony.sql` with CREATE TABLE IF NOT EXISTS / ALTER TABLE ADD COLUMN IF NOT EXISTS for all the above, correct column types inferred from the code, sensible indexes (e.g., on call_sid, phone_number), RLS matching the other Sabi tables, and a note/SQL for creating the public sabi-audio storage bucket (storage.buckets insert + policy, or a dashboard instruction if SQL can't create buckets).
+
+OUTPUT (do NOT edit/create files, do NOT deploy): the FULL exact content of supabase-sabi-telephony.sql, plus the bucket-creation steps. Make column types match how the code reads/writes them.
+
+----------------------------------------
+
+I now have everything I need. Key conventions observed:
+- UUID PKs via `gen_random_uuid()`, `TIMESTAMPTZ DEFAULT NOW()`, JSONB with `'[]'`/`'{}'` defaults
+- Sabi tables rely on the **service-role key bypassing RLS** (no policies), matching the `lesson_completions` pattern which explicitly `DISABLE ROW LEVEL SECURITY`
+- `CREATE TABLE IF NOT EXISTS` / `ALTER TABLE ... ADD COLUMN IF NOT EXISTS` idempotency
+- One important gotcha: `findOrCreateStudentByPhone` inserts a student with **only** `phone_number` set, but `supabase-sabi-schema.sql` declares `browser_id TEXT UNIQUE NOT NULL`. A phone-only insert would violate that NOT NULL constraint — the migration must drop the NOT NULL on `browser_id`.
+
+Here is the analysis and the complete file content.
+
+---
+
+## Column types inferred from the code
+
+**`sabi_active_calls`** (call-state.ts): `call_sid` (text, PK/unique — upserted on, queried by `.eq`), `student_id` (uuid, nullable — FK to sabi_students, set to null on create), `phone_number` (text), `messages` (jsonb default `'[]'`), `started_at` (timestamptz, ISO string written), `updated_at` (timestamptz, used by `cleanupExpiredCalls` `.lt` filter).
+
+**`sabi_sms_log`** (sms.ts): `id` (uuid PK — `question.id` read back, used in `.eq("id", ...)`), `phone_number` (text), `direction` (text: "outbound"/"inbound"), `message` (text), `sms_type` (text), `channel` (text: "at"/"twilio"), `expected_answer` (text, nullable), `actual_answer` (text, nullable — `.is(..., null)` filter), `is_correct` (boolean, nullable), `student_id` (uuid nullable FK), `created_at` (timestamptz — ordered by).
+
+**`sabi_students.phone_number`** (sabi-shared.ts): text, must be unique-ish for lookup; needs an index. Must allow inserting a student with only `phone_number`, so `browser_id` NOT NULL must be relaxed.
+
+**`sabi-audio` bucket**: must be PUBLIC (getPublicUrl used for AT `<Play>`); service role bypasses RLS for upload/remove.
+
+---
+
+## FULL exact content of `supabase-sabi-telephony.sql`
+
+```sql
+-- Sabi Telephony: call state, SMS log, phone-based students, audio storage
+-- Idempotent migration. Run in Supabase Dashboard > SQL Editor.
+--
+-- Recreates the 3 DB objects (+ 1 storage bucket) that the voice code depends on
+-- but that were never committed to a SQL file:
+--   - table  sabi_active_calls   (lib/voice/call-state.ts)
+--   - table  sabi_sms_log        (lib/voice/sms.ts)
+--   - column sabi_students.phone_number  (lib/voice/sabi-shared.ts)
+--   - bucket sabi-audio (PUBLIC)          (lib/voice/audio-storage.ts)
+--
+-- RLS note: like sabi_students / sabi_sessions / lesson_completions, these tables
+-- are only ever touched server-side with the SUPABASE_SERVICE_ROLE_KEY, which
+-- bypasses RLS. We DISABLE ROW LEVEL SECURITY explicitly (matching
+-- supabase-lesson-completions.sql) so the service role works and no anon client
+-- can reach the rows.
+
+-- ---------------------------------------------------------------------------
+-- 1. sabi_students.phone_number  (used by findOrCreateStudentByPhone)
+-- ---------------------------------------------------------------------------
+-- Phone is the production student identifier (browser_id was the demo identifier).
+ALTER TABLE sabi_students
+  ADD COLUMN IF NOT EXISTS phone_number TEXT;
+
+-- findOrCreateStudentByPhone() inserts a student with ONLY phone_number set,
+-- but the original schema declared browser_id TEXT UNIQUE NOT NULL. A phone-only
+-- insert would violate that NOT NULL. Relax it so phone-based students are valid.
+ALTER TABLE sabi_students
+  ALTER COLUMN browser_id DROP NOT NULL;
+
+-- Fast + unique lookup by phone. Partial unique index ignores NULLs so existing
+-- browser_id-only (demo) students without a phone don't collide.
+CREATE UNIQUE INDEX IF NOT EXISTS idx_sabi_students_phone_number
+  ON sabi_students(phone_number)
+  WHERE phone_number IS NOT NULL;
+
+-- ---------------------------------------------------------------------------
+-- 2. sabi_active_calls  (per-call conversation state; serverless-safe store)
+-- ---------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS sabi_active_calls (
+  call_sid     TEXT PRIMARY KEY,
+  student_id   UUID REFERENCES sabi_students(id) ON DELETE SET NULL,
+  phone_number TEXT,
+  messages     JSONB NOT NULL DEFAULT '[]',
+  started_at   TIMESTAMPTZ DEFAULT NOW(),
+  updated_at   TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- call_sid is the PK (already indexed). updated_at index speeds cleanupExpiredCalls().
+CREATE INDEX IF NOT EXISTS idx_sabi_active_calls_updated_at
+  ON sabi_active_calls(updated_at);
+
+ALTER TABLE sabi_active_calls DISABLE ROW LEVEL SECURITY;
+
+-- ---------------------------------------------------------------------------
+-- 3. sabi_sms_log  (outbound/inbound SMS log + practice-answer tracking)
+-- ---------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS sabi_sms_log (
+  id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  student_id      UUID REFERENCES sabi_students(id) ON DELETE SET NULL,
+  phone_number    TEXT NOT NULL,
+  direction       TEXT NOT NULL DEFAULT 'outbound',  -- 'outbound' | 'inbound'
+  message         TEXT,
+  sms_type        TEXT DEFAULT 'general',            -- 'general'|'summary'|'practice'|'reminder'
+  channel         TEXT,                              -- 'at' | 'twilio'
+  expected_answer TEXT,                              -- set for practice questions
+  actual_answer   TEXT,                              -- filled in when student replies
+  is_correct      BOOLEAN,                           -- result of checkPracticeAnswer
+  created_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- checkPracticeAnswer() filters by phone_number + sms_type + direction + actual_answer IS NULL,
+-- ordered by created_at DESC. This composite index covers that hot path.
+CREATE INDEX IF NOT EXISTS idx_sabi_sms_log_lookup
+  ON sabi_sms_log(phone_number, sms_type, direction, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_sabi_sms_log_student_id
+  ON sabi_sms_log(student_id);
+
+ALTER TABLE sabi_sms_log DISABLE ROW LEVEL SECURITY;
+
+-- ---------------------------------------------------------------------------
+-- 4. sabi-audio storage bucket  (PUBLIC; serves TTS audio to Africa's Talking <Play>)
+-- ---------------------------------------------------------------------------
+-- Create the bucket (idempotent). public = true so getPublicUrl() returns a URL
+-- that AT can fetch without auth.
+INSERT INTO storage.buckets (id, name, public)
+VALUES ('sabi-audio', 'sabi-audio', true)
+ON CONFLICT (id) DO UPDATE SET public = true;
+
+-- Allow anyone to READ objects in this bucket (needed for AT to download the audio).
+-- Uploads/deletes go through the service role, which bypasses these policies.
+DROP POLICY IF EXISTS "sabi_audio_public_read" ON storage.objects;
+CREATE POLICY "sabi_audio_public_read"
+  ON storage.objects FOR SELECT
+  USING (bucket_id = 'sabi-audio');
+
+SELECT 'sabi telephony schema (calls, sms_log, phone_number, sabi-audio bucket) ready!' AS status;
+```
+
+---
+
+## Bucket-creation steps (if the SQL in section 4 fails)
+
+Section 4 creates the bucket via SQL, which works in most Supabase projects. If your project restricts `storage.buckets` / `storage.objects` writes from the SQL editor (some do), create it from the dashboard instead:
+
+1. Supabase Dashboard → **Storage** → **New bucket**
+2. Name: `sabi-audio`
+3. Toggle **Public bucket** = ON
+4. Create. No additional policies are required for uploads/deletes (the server uses `SUPABASE_SERVICE_ROLE_KEY`, which bypasses RLS); public read is granted automatically for a public bucket, so the `sabi_audio_public_read` policy in section 4 is only needed if you keep the bucket private.
+
+---
+
+## Key findings / caveats
+
+1. **Hidden bug surfaced:** `findOrCreateStudentByPhone` (sabi-shared.ts:425-429) inserts a student with only `phone_number`, but `supabase-sabi-schema.sql` declares `browser_id TEXT UNIQUE NOT NULL`. On a freshly recreated Supabase project this insert would **fail with a NOT NULL violation**. The migration drops that NOT NULL — this is required for phone-based registration to work at all.
+2. **No RLS by design.** All Sabi tables are service-role-only (confirmed by the comment in audio-storage.ts and the `lesson_completions` precedent). I matched that with `DISABLE ROW LEVEL SECURITY` rather than adding policies, to keep behavior consistent with the existing committed schema.
+3. **FK on-delete:** I used `ON DELETE SET NULL` for `student_id` in both new tables (both columns are written as nullable in the code) rather than `CASCADE`, so deleting a student doesn't wipe call/SMS history.
+4. Relevant files: `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/{call-state,sms,audio-storage,sabi-shared}.ts` and the existing `/Users/naomiivie/Education for Equality/curriculum-app/supabase-sabi-schema.sql`, `supabase-sabi-v2.sql`, `supabase-lesson-completions.sql`.
+
+I did not create, edit, or deploy any files, as instructed.
+agentId: af9c73a58b321e2c6 (use SendMessage with to: 'af9c73a58b321e2c6' to continue this agent)
+<usage>subagent_tokens: 45524
+tool_uses: 9
+duration_ms: 64939</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

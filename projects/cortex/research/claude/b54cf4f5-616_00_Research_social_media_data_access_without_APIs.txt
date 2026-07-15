@@ -1,0 +1,134 @@
+========================================================================
+AGENT RESEARCH: Research social media data access without APIs
+Session: b54cf4f5-6161-4b3b-906b-2a2fccce959d
+Time: 2026-03-24 19:44:32 UTC
+========================================================================
+
+Research how people access social media data (messages, comments, DMs) WITHOUT using official APIs. The user is building a personal AI agent called Cortex that ingests all of a user's digital data to train a per-user LoRA model. They want to know if there are ways to get social media data similar to how Sabi (their voice AI tutor) connects to telephony — by building on top of the underlying protocols/infrastructure rather than going through official API gatekeepers.
+
+Specifically research:
+
+1. **Data export/takeout approaches** — GDPR/CCPA data export rights (Instagram, Facebook, WhatsApp, GroupMe, iMessage). Can you programmatically request and parse these exports? What format do they come in?
+
+2. **Browser automation / scraping** — Tools like Playwright, Puppeteer, browser extensions that can extract DMs/messages/comments from logged-in sessions. What are the legal and practical considerations? Companies like Clay, Bardeen, PhantomBuster — how do they do it?
+
+3. **Protocol-level access** — Are there underlying protocols (like XMPP for old Facebook Messenger, Matrix bridges, etc.) that allow direct access to messaging platforms without going through the official API? Similar to how Sabi uses SIP/Asterisk for telephony instead of Twilio's API.
+
+4. **Local device access** — Reading iMessage from SQLite database on Mac, WhatsApp local backup files, Instagram data stored locally. How do apps like Beeper, Nothing Chats, AirMessage access iMessage?
+
+5. **Open source tools/libraries** — Any existing projects that do this? (e.g., facebook-chat-api, [REDACTED:sensitive-label], whatsapp-web.js, mautrix bridges)
+
+6. **Legal/ToS considerations** — What's actually legal here? CFAA implications, ToS violations, GDPR right to data portability. How do companies like Beeper justify their approach?
+
+7. **The telephony analogy** — Sabi connects to telephony via Asterisk/SIP (open protocols). Which social media platforms have similar open protocol underpinnings that could be leveraged?
+
+Focus on practical, currently-working approaches. Give real project names, GitHub repos, and specific technical details. Be honest about what's risky/likely to break vs what's stable.
+
+----------------------------------------
+
+The research is complete and saved to `/Users/naomiivie/cortex/SOCIAL_MEDIA_DATA_ACCESS_RESEARCH.md`. Here is the full summary:
+
+---
+
+## The Honest Answer to Your Core Question
+
+Sabi connects to telephony via Asterisk/SIP because telephony is built on **open, standardized, regulated protocols**. Social media is fundamentally different -- these are private, proprietary, closed systems. There is no "SIP for Instagram DMs." But there ARE working approaches across a spectrum of risk and reliability.
+
+---
+
+## 7 Areas Researched
+
+### 1. Data Export/Takeout (GDPR/CCPA)
+
+The **cleanest legal path**. Under GDPR Article 20 and CCPA, users have a legal right to their data in machine-readable format.
+
+- **Instagram:** JSON export includes full DM history (`messages.json`), comments, likes, contacts. Manual request, takes up to 48 hours.
+- **Facebook:** JSON export organized as `/Inbox/<chat>/message_1.json` with sender, content, timestamps, reactions.
+- **WhatsApp:** Per-chat text export or full account data request (takes ~3 days). Better to access local backups.
+- **GroupMe:** Has an "Export My Data" button PLUS a **fully open developer API** with personal access tokens at dev.groupme.com. This is the easiest win.
+- **iMessage:** No export tool. Only local database access (see below).
+
+**Cortex strategy:** Build parsers for each format. User manually exports + uploads. Legally bulletproof.
+
+### 2. Browser Automation / Scraping
+
+PhantomBuster, Bardeen, and Clay all carefully **avoid private messages** -- they only scrape public data. Key legal design: "the user is performing the action, we're just a tool."
+
+For Cortex, the **browser extension approach** is strongest: user installs a Chrome extension, extension reads DMs from the page within the user's own browser session, sends data to Cortex. Avoids headless browser detection. This is how Bardeen works.
+
+Playwright/Puppeteer work technically but face bot detection (Cloudflare, DataDome), frequent DOM changes, and rate limiting.
+
+### 3. Protocol-Level Access
+
+**Matrix bridges (mautrix)** are the closest analog to Sabi's Asterisk/SIP approach. Tulir Asokan's bridges reverse-engineer platform protocols and act as "puppets" logging in as the user:
+
+- **mautrix-whatsapp** -- uses whatsmeow (Go library that reverse-engineers WhatsApp's WebSocket protocol). Active and maintained.
+- **mautrix-meta** -- bridges Facebook Messenger AND Instagram DMs. v26.02 released Feb 2026. The most important tool for Cortex.
+- **Slidge** -- Python XMPP bridges for WhatsApp, Signal, Telegram, Discord, and 5 other platforms. WhatsApp gateway updated Jan 2026.
+
+**whatsmeow** (github.com/tulir/whatsmeow) is the foundation library -- talks directly to WhatsApp's WebSocket servers, no browser needed. This is as close to "protocol-level access" as exists for WhatsApp.
+
+### 4. Local Device Access
+
+**iMessage on Mac** is the most reliable non-API approach:
+- SQLite database at `~/Library/Messages/chat.db`
+- Tables: `message`, `handle`, `chat`, `attachment` plus join tables
+- Requires Full Disk Access permission
+- macOS Ventura+ encodes messages as hex blobs in `attributedBody` (decodable)
+- Tools: imessage_reader (Python), pymessage-lite, or direct SQL
+
+**How Beeper accessed iMessage:** Mac relay (reads chat.db and forwards) OR reverse-engineered Apple's protocol (Apple blocked this within days). Beeper no longer supports iMessage. Nothing Chats was a security disaster (unencrypted messages on Firebase).
+
+**WhatsApp local backups:** Android stores encrypted SQLite (`msgstore.db.crypt15`) on SD card. WhatsApp-Chat-Exporter can decrypt and export to JSON. iOS has `ChatStorage.sqlite` accessible from iTunes backups.
+
+### 5. Open Source Tools/Libraries
+
+**Tier 1 (actively maintained, production-quality):**
+- `whatsapp-web.js` -- Node.js, updated March 2026
+- `whatsmeow` -- Go, direct protocol access
+- `instagrapi` -- Python Instagram API, supports DMs (WARNING: devs say "more suited for testing/research," account bans common)
+- `mautrix-meta` -- Go, FB Messenger + Instagram bridge
+
+**Tier 2 (working but riskier):**
+- `instagram-private-api` -- Node.js/TS, npm v1.46.1 (last published ~2 years ago, still used)
+- `slidge-whatsapp` -- XMPP gateway, updated Jan 2026
+- `WhatsApp-Chat-Exporter` -- parses local backup files to JSON
+
+### 6. Legal/ToS Considerations
+
+- **Reading your own data exports = legal right** (GDPR/CCPA)
+- **Reading your own iMessage/WhatsApp from your own device = your property**
+- **Using unofficial APIs on your own account = ToS violation (civil, not criminal), risk of account ban**
+- **Scraping public data = likely legal (hiQ v. LinkedIn), but hiQ still settled for $500K**
+- **Reverse-engineering for interoperability = legal in most jurisdictions (DMCA exemptions)**
+
+**Cortex's best legal position:** Data exports (bulletproof) > local device access (bulletproof) > user-initiated browser extension (strong) > self-hosted bridges (moderate) > server-side scraping (weakest)
+
+### 7. The Telephony Analogy
+
+| Closest to SIP/Asterisk | Most Walled Garden |
+|---|---|
+| Email (SMTP/IMAP) | iMessage |
+| GroupMe (has real API) | Instagram |
+| Telegram (Bot API + MTProto) | Facebook Messenger |
+| Matrix (open federated protocol) | WhatsApp (reverse-engineered only) |
+
+---
+
+## Recommended Build Order for Cortex
+
+**Phase 1 (low risk, do now):** GroupMe API integration, iMessage chat.db reader, data export parsers (Instagram JSON, Facebook JSON, WhatsApp text)
+
+**Phase 2 (medium risk, after MVP):** WhatsApp via whatsapp-web.js, browser extension for Instagram/Facebook DMs, Telegram Bot API
+
+**Phase 3 (higher risk, later):** mautrix-meta bridge for Instagram + Facebook, mautrix-whatsapp bridge, Signal via signald
+
+Full research with all GitHub repos, technical details, and code examples saved to `/Users/naomiivie/cortex/SOCIAL_MEDIA_DATA_ACCESS_RESEARCH.md`.
+agentId: a9a259048e3569222 (use SendMessage with to: 'a9a259048e3569222' to continue this agent)
+<usage>total_tokens: 113847
+tool_uses: 43
+duration_ms: 3132678</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

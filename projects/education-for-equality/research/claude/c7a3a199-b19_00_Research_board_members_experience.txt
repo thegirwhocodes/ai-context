@@ -1,0 +1,99 @@
+========================================================================
+AGENT RESEARCH: Research board members' experience
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-03-31 16:35:38 UTC
+========================================================================
+
+I need to find the years of professional experience for several Nigerian professionals. Search the web for each of these people and determine approximately how many years of professional experience they have:
+
+1. Joshua Ivie — Head of Innovation at Bluechip Technologies, formerly Head of Operations at Voltron Capital. How many years of tech/innovation experience?
+2. Richard Ivie — Executive Director, Corruption Observatory & Public Awareness Initiative (Lagos). ISO 37001 anti-bribery governance expert. LAUTECH graduate. How many years of governance/compliance experience?
+3. Barrister Adejoke Ogunlewe — Principal Associate at Koriat Law, NGO/nonprofit law, children's rights, member of Federal Government Working Committee on National Development Agenda. How many years of legal experience?
+4. Rhoda Odigboh — CEO of Kizazi, former NewGlobe Regional Director of Academics managing EKOEXCEL and EdoBEST, trained 14,000+ educators. Approximately 20 years in education - confirm this.
+
+Also: The user mentioned a "former Minister of Education for Nigeria" is connected to them through their church community. Search for who the recent former Ministers of Education in Nigeria were — names like Adamu Adamu, Chukwuemeka Nwajiuba, Tahir Mamman, etc. I need the name but the user never provided it in previous sessions. Just list recent former ministers so we know the candidates.
+
+Return: each person's name, title/role, and estimated years of experience.
+
+----------------------------------------
+
+Good, I can see that the PCE application mentions "Nigeria's former Minister of Education is connected through our church community" but doesn't name them. Now I have all the information I need. Let me compile the results.
+
+Here are the findings for each person:
+
+---
+
+## 1. Joshua Ivie
+**Title:** Head of Innovation, Bluechip Technologies
+**Previous roles:** Head of Product Strategy and Senior Software Engineer at Bluechip Technologies; Head of Operations at Voltron Capital; Co-founder & COO at The Cross Platform (managed IT services); Co-founder & CTO at Life Online (advertising/marketing tech)
+**Education:** Bachelor of Engineering, Covenant University (Ota, Nigeria)
+
+**Estimated years of experience:** Approximately **8-10 years** of tech/innovation experience. His career spans co-founding The Cross Platform and Life Online, then moving to Voltron Capital, then progressing through multiple roles at Bluechip Technologies (Senior Software Engineer, Head of Product Strategy, Head of Innovation). He also published research at Covenant University in 2019. Based on a Covenant University B.Eng. (likely graduating around 2015-2017 given the 2019 conference paper timeline) and the progression through 4+ organizations with increasing seniority, ~8-10 years is a reasonable estimate. Exact LinkedIn dates are behind a login wall and could not be verified.
+
+---
+
+## 2. Richard Ivie
+**Title:** Executive Director, Corruption Observatory & Public Awareness Initiative (Lagos)
+**Credentials:** ISO Governance Expert, Anti-Corruption Practitioner; member of ISO TC 278 (ISO 37001 anti-bribery management systems), ISO TC 309 (ISO 31000 governance of organizations), and Chair of the verification and validation subcommittee NIS 901 (Nigeria good governance standard). Trained 200+ executives in compliance.
+**Education:** Ladoke Akintola University of Technology (LAUTECH)
+
+**Estimated years of experience:** The exact career start date could not be confirmed via public web sources. Based on the level of seniority (Executive Director of an organization, Chair of an ISO subcommittee for Nigerian governance standards, 200+ executives trained, media appearances as quoted expert), a reasonable estimate is **10-15+ years** in governance/compliance. The Corruption Observatory's CAC registration number (CAC/IT/84193) suggests it has been operating for a meaningful period, and the depth of ISO committee involvement indicates long-standing expertise.
+
+---
+
+## 3. Barrister Adejoke Ogunlewe
+**Title:** Principal Associate, Koriat Law
+**Other roles:** Managing Partner at Ogunlewe & Ogunlewe LP; Executive Director at Phenomenal African Woman (PAW) Foundation; Pioneer Legal Officer & In-House Counsel at House of Freedom Nigeria; former associate at Petrave & Associates Law Firm (Lagos); Member of Federal Government Working Committee on National Development Agenda 2021-2025
+**Education:** LLB from Olabisi Onabanjo University (OOU), BL from Nigerian Law School, LLM (Master of Laws), ACIArb (Chartered Institute of Arbitrators)
+**Specialties:** NGO/nonprofit law, children's rights, human rights defense, SME advisory, compliance
+
+**Estimated years of experience:** Her Koriat Law profile notes "5 years as in-house counsel" (at House of Freedom), plus she has worked at Petrave & Associates, founded/ran Ogunlewe & Ogunlewe LP, and is now Principal Associate at Koriat Law, plus serves on a Federal Government committee. Given the career progression across 4+ law firms/organizations plus advanced qualifications (LLM, ACIArb), a reasonable estimate is **10-15 years** of legal experience. Exact call-to-bar year is not publicly available.
+
+---
+
+## 4. Rhoda Odigboh
+**Title:** CEO, Kizazi
+**Previous roles:** Regional Director of Academics at NewGlobe (oversaw EKOEXCEL and EdoBEST, trained 14,000+ educators and school leaders); Director of Academics at Bridge International Academies (63 community schools across Lagos and Osun States, joined 2018); 2016 Tony Elumelu Entrepreneurship Program Fellow; classroom teacher in Lagos (career start)
+**Education:** B.Sc.Ed. in Early Childhood Education (2007-2011); PhD candidate in Curriculum Theory at University of Lagos (2023-2027)
+**Board positions:** Vice President of Professional Association of Curriculum Theorists in Nigeria (PACTPiN); Board member at Let Cerebral Palsy Kids Learn Foundation; Board member at AIFA Reading Society
+**Impact at Kizazi:** Oversees initiatives serving 35,000+ students directly, reaching 2 million+ children through government adoption in India, Sierra Leone, and Armenia
+
+**Confirmed: ~20 years of experience.** Her Kizazi bio explicitly states "nearly 20 years of experience driving large-scale education transformation across Africa." Her B.Ed. was 2007-2011, and she began as a classroom teacher in Lagos before that or immediately after, which aligns with approximately 15-19 years since starting teaching. The "nearly 20 years" figure from her official bio is accurate as of 2026.
+
+---
+
+## 5. Recent Former Ministers of Education in Nigeria
+
+| Minister | Period | Notes |
+|----------|--------|-------|
+| **Adamu Adamu** | 2015-2023 | Longest-serving Minister of Education. Journalist and politician from Bauchi State. Served under President Buhari. |
+| **Chukwuemeka Nwajiuba** | 2019-2022 | **Minister of State** for Education (junior minister alongside Adamu Adamu). Resigned April 2022 to run for president. Lawyer, PhD from University of Jos. From Imo State. |
+| **Tahir Mamman** | 2023-2024 | Professor of law. Appointed by President Tinubu. Known for the controversial 18-year minimum age for university admission policy. |
+| **Dr. Tunji Alausa** | 2024-present | Current Minister of Education (as of March 2026). Nephrologist by training, previously Minister of State for Health. Appointed October 2024. |
+
+The most likely candidates for "former Minister of Education connected through our church community" would be **Adamu Adamu** (Muslim, less likely for a church connection), **Chukwuemeka Nwajiuba** (Christian, from Imo State -- more plausible for a church community connection), or **Tahir Mamman** (Muslim, less likely). Given the church connection, **Chukwuemeka Nwajiuba** (Minister of State for Education 2019-2022) is the most likely candidate, though this is inference -- Naomi would need to confirm.
+
+---
+
+Sources:
+- [Joshua Ivie - LinkedIn](https://www.linkedin.com/in/joshuaoivie/)
+- [Joshua Ivie - ZoomInfo](https://www.zoominfo.com/p/Joshua-Ivie/3784560712)
+- [Joshua Ivie - ResearchGate](https://www.researchgate.net/profile/Joshua-Ivie)
+- [Richard Ivie - LinkedIn](https://www.linkedin.com/in/richard-ivie/)
+- [Corruption Observatory](https://corruptionobservatory.com/)
+- [Adejoke Ogunlewe - Koriat Law](https://koriatlaw.com/adejoke-ogunlewe-2/)
+- [Ogunlewe & Ogunlewe - Our Team](https://ogunleweandogunlewe.com/our-team/)
+- [Adejoke Ogunlewe - ZoomInfo](https://www.zoominfo.com/p/Adejoke-Ogunlewe/9185442239)
+- [Rhoda Odigboh - Kizazi](https://www.kizazi.org/rhoda-odigboh/)
+- [Rhoda Odigboh - LinkedIn](https://www.linkedin.com/in/rhoda-odigboh-4949ab56/)
+- [Nigeria Ministers of Education - Wikipedia](https://en.wikipedia.org/wiki/List_of_education_ministers_of_Nigeria)
+- [Chukwuemeka Nwajiuba - Wikipedia](https://en.wikipedia.org/wiki/Chukwuemeka_Nwajiuba)
+- [Dr. Tunji Alausa - Independent](https://independent.ng/who-is-dr-tunji-alausa-nigerias-31st-minister-of-education/)
+agentId: af1807b8a44e02a6a (use SendMessage with to: 'af1807b8a44e02a6a' to continue this agent)
+<usage>total_tokens: 47309
+tool_uses: 41
+duration_ms: 228630</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

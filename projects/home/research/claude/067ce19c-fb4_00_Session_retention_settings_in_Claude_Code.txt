@@ -1,0 +1,47 @@
+========================================================================
+AGENT RESEARCH: Session retention settings in Claude Code
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 02:47:56 UTC
+========================================================================
+
+What setting in Claude Code controls how long session JSONL files are retained before being archived/deleted from `~/.claude/projects/<project>/`? The user has a session from March 5 that they wanted to resume with `claude --resume <session-id>` but got "No conversation found" — only a `session_context.txt` summary remains in `sessions/<id>/`, the live `.jsonl` was removed.
+
+Specifically I need to know:
+1. The exact settings.json key name (e.g., is it `cleanupPeriodDays`?) and where in the settings hierarchy it lives
+2. The default retention period
+3. How to set it to "never delete" or a very long retention (e.g., a year+)
+4. Whether there's a way to recover a session whose JSONL has already been pruned (if no, say so explicitly — don't speculate)
+
+Keep the answer under 200 words. The user is a student who lost a key conversation and wants to prevent it happening again.
+
+----------------------------------------
+
+**Session Retention Settings:**
+
+1. **Setting name**: `cleanupPeriodDays` (top-level in settings.json)
+2. **Default**: 30 days
+3. **To prevent deletion**: Set `cleanupPeriodDays` to a very high number (e.g., `365` for a year, or `3650` for 10 years)
+
+Add this to your `~/.claude/settings.json`:
+```json
+{
+  "cleanupPeriodDays": 365
+}
+```
+
+**Recovery**: Unfortunately, once the JSONL is deleted, **it cannot be recovered**—the `session_context.txt` summary is what remains after cleanup. The conversation data is permanently lost.
+
+To prevent this in future:
+- Increase `cleanupPeriodDays` now
+- Export important sessions with `claude export <session-id>` before they age out
+- Consider setting it to 365+ days for long-term student projects
+
+Your March 5 session is unrecoverable, but this will protect future conversations.
+agentId: a3b66472a5116ab9d (use SendMessage with to: 'a3b66472a5116ab9d' to continue this agent)
+<usage>total_tokens: 15461
+tool_uses: 2
+duration_ms: 11130</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: sign language translation bidirectional English to ASL avatar generation 2025 20
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:17:39 UTC
+========================================================================
+
+Search query: sign language translation bidirectional English to ASL avatar generation 2025 2026
+
+----------------------------------------
+
+Web search results for query: "sign language translation bidirectional English to ASL avatar generation 2025 2026"
+
+Links: [{"title":"Bidirectional Translation of ASL and English Using Machine Vision and CNN and Transformer Networks | MDPI","url":"https://www.mdpi.com/2073-431X/15/1/20"},{"title":"GenASL: Generative AI-powered American Sign Language avatars | Artificial Intelligence","url":"https://aws.amazon.com/blogs/machine-learning/genasl-generative-ai-powered-american-sign-language-avatars/"},{"title":"SignAvatar - Generate Sign Language from Speech using AI","url":"https://www.signavatar.org/"},{"title":"Speak2Sign3D: A Multi-modal Pipeline for English Speech ...","url":"https://arxiv.org/pdf/2507.06530"},{"title":"(PDF) Special issue: Sign language translation and avatar technology","url":"https://www.researchgate.net/publication/352224534_Special_issue_Sign_language_translation_and_avatar_technology"},{"title":"AI Sign Language Avatar Redefines Accessibility | MultiLingual","url":"https://multilingual.com/ai-sign-language-avatar/"},{"title":"SLTAT Sign Language Translation and Avatar Technology","url":"http://sltat.cs.depaul.edu/"},{"title":"Gesture talks real-time sign language recognition and ...","url":"https://journalwjaets.com/sites/default/files/fulltext_pdf/WJAETS-2025-0593.pdf"},{"title":"Signapse | AI Sign Language Translator | Translate ASL & BSL","url":"https://www.signapse.ai/"},{"title":"Special issue on sign language translation and avatar technology | Universal Access in the Information Society | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s10209-023-01014-w"}]
+
+I've completed a web search on sign language translation, bidirectional English to ASL, and avatar generation for 2025-2026. Here are the key findings:
+
+## Recent Developments in Bidirectional Sign Language Translation
+
+**Advanced AI-Powered Systems**
+
+A real-time, bidirectional system for translating American Sign Language (ASL) to and from English uses computer vision and transformer-based models to enhance accessibility for deaf and hard of hearing users.
+
+**Avatar Generation Technologies**
+
+GenASL is a generative artificial intelligence (AI)-powered solution that translates speech or text into expressive ASL avatar animations, bridging the gap between spoken and written language and sign language. The backend process has three steps: process the input audio to English text, translate the English text to an ASL gloss, and generate an ASL avatar video from the ASL gloss.
+
+**3D Avatar Approaches**
+
+A system translates spoken English into 3D animated American Sign Language (ASL), with speech first converted to text using Whisper. 3D avatar modeling can ensure accurate hand gestures and facial expressions for accurate and meaningful translation.
+
+**Recent System Implementations**
+
+The proposed system, Gesture Link, enables real-time, bidirectional communication between deaf and hearing individuals using advanced AI technologies, consisting of two main modules: speech-to-sign and sign-to-text.
+
+**Commercial Deployments**
+
+Silence Speaks will bring real-time, AI-powered sign language announcements to over 250 train stations, with commuters able to scan a QR code and receive up-to-date information in BSL via video.
+
+These developments represent significant progress in accessibility technology, addressing longstanding communication barriers between deaf and hearing communities.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

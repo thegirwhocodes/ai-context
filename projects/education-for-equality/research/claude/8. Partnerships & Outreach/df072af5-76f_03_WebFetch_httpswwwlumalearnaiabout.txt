@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.lumalearn.ai/about
+Session: df072af5-76fc-44e6-b1bf-5d7598aaf5ba
+Time: 2026-03-10 21:58:36 UTC
+========================================================================
+
+URL: https://www.lumalearn.ai/about
+Extraction prompt: Get all details about Luma Learn: what it does, team, mission, how it works, pricing, impact numbers, technology, target market, countries, languages supported
+
+----------------------------------------
+
+# Luma Learn Overview
+
+## What It Does
+Luma Learn is an education technology platform delivering personalized, AI-powered support through WhatsApp. It serves three user groups: learners receive academic support, teachers get tools for lesson planning and administration, and parents gain resources to guide their children's education.
+
+## Mission & Vision
+The organization aims to "make learning simple, accessible and affordable for every learner in Africa." Their core belief centers on how access to quality education transforms individuals and entire communities by breaking cycles of poverty.
+
+## Target Market & Geographic Focus
+Currently operating in South Africa with expansion goals across the African continent. The platform specifically addresses rural areas where students have school access but lack quality educational resources.
+
+## Key Impact Numbers
+The webpage mentions serving "150K+ students" across South Africa, demonstrating significant scale in their current market.
+
+## Technology & Approach
+The platform uses WhatsApp as the primary interface, enabling 24/7 accessibility. The technology enhances existing school systems rather than replacing them, working alongside traditional institutions.
+
+## Team & Background
+Luma describes their team as "diverse backgrounds in business, engineering, and entrepreneurship." The organization was founded in 2023 with headquarters indicated in South Africa.
+
+## Pricing
+The service is free to users—the platform explicitly states it's "free homework help" accessible via WhatsApp.
+
+## Languages Supported
+The webpage content provided doesn't specify which languages are supported beyond the English interface shown.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "apps.dtic.mil/sti/citations" pdf full text URL pattern accession AD
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:51:40 UTC
+========================================================================
+
+Search query: "apps.dtic.mil/sti/citations" pdf full text URL pattern accession AD
+
+----------------------------------------
+
+Web search results for query: ""apps.dtic.mil/sti/citations" pdf full text URL pattern accession AD"
+
+Links: [{"title":"TR_redirect – Defense Technical Information Center - DTIC","url":"https://discover.dtic.mil/tr_redirect/"},{"title":"AD1041749.pdf - dtic.mil","url":"https://apps.dtic.mil/sti/pdfs/AD1041749.pdf"},{"title":"ADA512853.pdf - DTIC","url":"https://apps.dtic.mil/sti/pdfs/ADA512853.pdf"},{"title":"Defense Technical Information Center","url":"https://apps.dtic.mil/sti/citations/ADA414520"},{"title":"ABSTRACTION AND PATTERN CLASSIFICATION,","url":"https://apps.dtic.mil/sti/citations/AD0607500"},{"title":"Allocating Air Force Career Field Accession Targets - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA418239.pdf"},{"title":"Artificial Intelligence and National Security - DTIC","url":"https://apps.dtic.mil/sti/citations/AD1170086"},{"title":"Department of Defense International Science and Technology ...","url":"https://apps.dtic.mil/sti/citations/AD1118108"},{"title":"Intelligent Tutoring Systems: Past, Present, and Future. - DTIC","url":"https://apps.dtic.mil/sti/citations/ADA280011"},{"title":"Radar Absorbing Materials - Mechanisms and Materials - DTIC","url":"https://apps.dtic.mil/sti/citations/ADA215068"}]
+
+Based on the search results, here's what I found regarding the URL pattern for DTIC documents:
+
+To fix an outdated full text/PDF hyperlink: take the accession number or alphanumeric code at the end of the outdated hyperlink ending in .pdf, add an AD capitalized, then add to the end of the link.
+
+The search results demonstrate the pattern with several examples:
+- Full text PDFs use the format: `https://apps.dtic.mil/sti/pdfs/AD[ACCESSION_NUMBER].pdf`
+- Citation pages use the format: `https://apps.dtic.mil/sti/citations/AD[ACCESSION_NUMBER]`
+
+For example:
+- PDF: `https://apps.dtic.mil/sti/pdfs/AD1041749.pdf`
+- Citation: `https://apps.dtic.mil/sti/citations/AD1170086`
+
+The accession numbers typically follow the "AD" prefix (which stands for "Accession Document"), followed by a numeric code that identifies the specific document in the DTIC system.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

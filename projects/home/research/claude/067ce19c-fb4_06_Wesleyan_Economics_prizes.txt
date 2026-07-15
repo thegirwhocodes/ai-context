@@ -1,0 +1,50 @@
+========================================================================
+AGENT RESEARCH: Wesleyan Economics prizes
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 16:51:02 UTC
+========================================================================
+
+A Wesleyan University undergraduate (junior, Econ major, considering thesis) wants to know which Wesleyan Economics Department prizes her Econ 349 term paper could be eligible for, and what the senior thesis pathway looks like.
+
+Research the Wesleyan Economics Department's prizes and thesis program. Use the official Wesleyan Econ Dept page (wesleyan.edu/econ) and any awards/news pages. Cover:
+
+**Prizes — for each one:**
+1. Name and full description
+2. Eligibility criteria (year, GPA, course requirements)
+3. Selection process (faculty nominated? application? committee review?)
+4. Subject restrictions (econometrics? any topic?)
+5. Recent winners (last 2-3 years if listed)
+6. Whether her term paper (econometric study of Nigerian OOSC and growth) would be eligible
+
+Specific prizes to find:
+- **Lebergott-Lovell Prize** (best econometric paper of the year — primary target)
+- **Plukas Prize** (thesis-to-publication funding with faculty co-author)
+- **Wilde Prize** (overall excellence in economics)
+- **Hallowell Prize** (best social science senior, all departments)
+- **Horace White Fellowship** (top econ students, ~13 seniors + ~3 juniors)
+- Any other Econ Dept prizes you find
+
+**Senior thesis program:**
+- Eligibility (B+ in econ, B cumulative)
+- Pathways (full thesis ECON 409+410 vs one-semester ECON 410 expansion of a 300-level paper)
+- Evaluation process (3 readers, anonymous)
+- Honors levels (No Honors / Honors / High Honors / University Honors nomination)
+- Timeline (when to declare, when to enroll)
+- Strategy: how does she position her Econ 349 term paper as a thesis pilot?
+
+Save your output to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/06_wesleyan_econ_prizes.md`.
+
+Report a 200-word summary and confirm file written.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ab5b1b5ddbaa49012 (internal ID - do not mention to user. Use SendMessage with to: 'ab5b1b5ddbaa49012' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/ab5b1b5ddbaa49012.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

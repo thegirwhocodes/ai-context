@@ -1,0 +1,36 @@
+========================================================================
+AGENT RESEARCH: Sabi problem and use case research
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:23:12 UTC
+========================================================================
+
+Read EVERY file in these E4E folders and return AT LEAST 90% of the substantive content — every stat, every demographic figure, every quote from field research, every name, every date. Do NOT summarize.
+
+Folders to read (all files, including subfolders):
+1. /Users/naomiivie/Education for Equality/1. The Problem/ — the learning crisis, market analysis, Lagos demographics, the "why Sabi exists" data
+2. /Users/naomiivie/Education for Equality/9. On the Ground/ — field reports, NALABE assessments, EKOEXCEL deployment data, real Nigeria implementation evidence
+3. /Users/naomiivie/Education for Equality/10. Bakame/ — Bakame's lesson design + how Sabi's approach compares, what works in voice education on the ground
+
+Plus read these specific research-agent topic folders that are likely relevant to Sabi's usefulness:
+- /Users/naomiivie/Education for Equality/research-agents/1. The Problem/ (sample 10-15 most substantive files)
+- /Users/naomiivie/Education for Equality/research-agents/2. The Solution/ (sample 10-15 most substantive files)
+- /Users/naomiivie/Education for Equality/research-agents/9. On the Ground/ (read all)
+
+Skip any file whose name starts with "WebSearch_" or "WebFetch_" — those are bulky raw search dumps. Read the synthesized .md files, the field reports, the assessments, the lesson design docs.
+
+Goal: produce a comprehensive dossier on Sabi's USE CASES (specific user personas — out-of-school child, struggling enrolled student, adult learner, market woman; specific learning scenarios — phonemic awareness lesson, Naira market math, spaced-repetition recall) and the PROBLEM-SOLUTION FIT (what's broken in Nigerian education today that Sabi addresses, with hard numbers from NALABE, EKOEXCEL, World Bank, UBEC).
+
+Return content in markdown sections organized by theme. Every data point matters — this is for the founder of Sabi to use in a deep research document.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a2a393446bb721534 (internal ID - do not mention to user. Use SendMessage with to: 'a2a393446bb721534' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/a2a393446bb721534.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

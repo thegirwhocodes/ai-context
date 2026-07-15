@@ -1,0 +1,51 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.retellai.com
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:24:19 UTC
+========================================================================
+
+URL: https://www.retellai.com
+Extraction prompt: Describe any animations, moving elements, scroll effects, transitions, marquees, floating elements, particle effects, hover interactions that make this site feel premium and polished. What specific moving parts does the landing page have?
+
+----------------------------------------
+
+# Retell AI Landing Page Animation Analysis
+
+## Premium Motion Elements
+
+The Retell AI homepage employs sophisticated animations that create a polished, high-end experience:
+
+**Scroll-Triggered Animations**
+- Elements use visibility controls that activate based on scroll position, with blur effects applied as users navigate ("visibility: hidden !important" until triggered)
+- Hero content features progressive reveal patterns coordinated with page scrolling
+
+**Hero Section Dynamics**
+- The main banner background transitions smoothly via "clip-path 1s ease" when users interact with the page
+- Hero title applies blur filtering ("filter: blur(10px); transition: filter 0.5s ease") as scroll progresses, creating depth perception
+
+**Navigation & Dropdown Effects**
+- Dropdowns animate with "grid-template-rows 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000)" for elegant expansion/collapse
+- Overlay opacity transitions smoothly when menus open, maintaining visual hierarchy
+
+**Interactive Demo Interface**
+- The product demo grid reorganizes via "grid-template-columns 0.8s cubic-bezier(0.380, 0.005, 0.215, 1)" when transitioning between steps
+- Form elements fade and slide with staggered timing effects
+
+**Marquee Scrolling**
+- Continuous animated scrolling carousels use "marquee-left" and "marquee-right" keyframe animations at varying speeds (50s-100s durations)
+- Content loops seamlessly with "animation-direction: reverse" effects
+
+**Button & Interactive States**
+- Hover effects trigger "buttonTextBlur" animation, creating dynamic visual feedback
+- Expand buttons reveal hidden labels via grid-column transitions
+
+**Modal & Carousel Controls**
+- Modals transition with combined visibility and opacity changes over 0.5s
+- Swiper carousel pagination and progress bars update in real-time during interactions
+
+**Testimonial Stack**
+- Case study cards layer with transform offsets (staggered "translateY" values) for parallax-like depth at desktop resolutions
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

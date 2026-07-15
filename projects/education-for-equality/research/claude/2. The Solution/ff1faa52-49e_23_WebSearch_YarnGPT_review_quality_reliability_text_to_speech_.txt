@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT review quality reliability text to speech Nigerian
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:23:18 UTC
+========================================================================
+
+Search query: YarnGPT review quality reliability text to speech Nigerian
+
+----------------------------------------
+
+Web search results for query: "YarnGPT review quality reliability text to speech Nigerian"
+
+Links: [{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"Inside YarnGPT: The text-to-speech model built for Nigerian languages","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"How Azeez, Unilag’s student built a Nigerian accent AI text-to-speech model - Businessday NG","url":"https://businessday.ng/bd-weekender/article/how-azeez-unilags-student-built-a-nigerian-accent-ai-text-to-speech-model/"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"Azeez Saheed unveils YarnGPT: A Nigerian-accented text-to-speech AI | Techpression","url":"https://techpression.com/azeez-saheed-unveils-yarngpt"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Announcing YarnGPT: A Text to Speech Model for Nigerian ...","url":"https://www.linkedin.com/posts/azeez-saheed_ive-never-been-this-nervous-in-my-life-activity-7397649988308238336-yeV9"},{"title":"YarnGPT: AI Voice Model Built for Nigerian Accents | by Olushola | TechCompass | Medium | Tech Compass","url":"https://medium.com/techcompass/yarngpt-the-first-ai-voice-model-built-for-nigerian-accents-295c13f37241"},{"title":"Nigerian Accent Text-to-Speech | AI Voice Generator Online | Easy-Peasy.AI","url":"https://easy-peasy.ai/text-to-speech/nigerian"}]
+
+Based on the search results, here's what I found about YarnGPT:
+
+## Overview
+
+YarnGPT turns text into Nigerian-accented speech in seconds, supporting Igbo, Yoruba, and Hausa, while redefining AI accessibility in Nigeria. The platform has 19k+ users and converts 1.2 billion tokens per month.
+
+## Quality
+
+Unlike many TTS models that rely on complex external adapters, YarnGPT uses pure language modelling to deliver high-quality speech synthesis, making it both efficient and impactful. It provides 24kHz high-quality audio output. The model can generate audio on its own but is better when using a voice to prompt the model, with about 11 voices supported by default (6 males and 5 females).
+
+## Reliability & Limitations
+
+However, there are important limitations to consider. The model may not capture the full diversity of Nigerian accents and could exhibit biases based on the training dataset, and a lot of the text the model was trained on were automatically generated which could impact performance. Training data includes auto-generated content and the model may not capture all Nigerian accent variations.
+
+## Development
+
+Saheed Azeez, a University of Lagos student, built an artificial intelligence text-to-speech model with Nigerian accent called YarnGPT. The model was trained on a dataset of publicly available Nigerian movies, podcasts (using subtitle-audio pairs) and open source Nigerian-related audio data on Huggingface.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

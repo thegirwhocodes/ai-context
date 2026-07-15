@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.plivo.com/pricing/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:49:56 UTC
+========================================================================
+
+URL: https://www.plivo.com/pricing/
+Extraction prompt: What are ALL the pricing details shown on this page? Especially for Nigeria. Include: voice call rates (inbound and outbound), phone number costs, SMS rates, and any other pricing. List everything visible on the page. Does Plivo offer Nigerian phone numbers? Nigerian toll-free numbers?
+
+----------------------------------------
+
+# Plivo Pricing - Nigeria Inquiry
+
+Based on the webpage content provided, **specific pricing details for Nigeria are not displayed on this pricing page**. The page shows:
+
+## What's Visible:
+- A country selector dropdown showing "United States" as the default
+- Generic pricing structure mentioning "Professional" (pay-as-you-go) and "Enterprise" tiers
+- Placeholder pricing for various channels (Voice, SMS, WhatsApp, etc.)
+
+## Key Limitation:
+The page uses dynamic pricing that loads based on selected country. The content shows: *"Select your location to see pricing"* via the country dropdown. Since Nigeria wasn't pre-selected or displayed in the visible content, specific Nigerian rates for voice calls, SMS, or phone numbers aren't shown.
+
+## What You'd Need to Do:
+To see Nigeria-specific pricing, you would need to:
+1. Use the country dropdown selector on the actual website
+2. Choose Nigeria
+3. The page would then dynamically load Nigerian rates
+
+## Regarding Nigerian Phone Numbers:
+The visible content doesn't explicitly confirm whether Plivo offers Nigerian local or toll-free numbers. The page indicates phone number availability varies by country, but Nigeria-specific availability requires checking through the live dropdown selector or contacting their sales team.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

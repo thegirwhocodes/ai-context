@@ -1,0 +1,52 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:32:52 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/
+Extraction prompt: Find any client logos, testimonials, pricing details, or additional services information. Also check if they mention SIP trunking, API, webhooks, or call forwarding to external systems
+
+----------------------------------------
+
+# Outsource Nigeria - Service Analysis
+
+## Client Logos
+The page displays **30+ client logos** including:
+- Major brands: Jumia, PepsiCo, Burger King, Dodo Pizza
+- Financial services: CRED, Azipay, NSIA
+- Healthcare: IMC, NSIA-LUTH, Malteser
+- Tech/e-commerce: Gloopro, Umba, Carrygo
+- Organizations: SEC, ICAN, IRC
+
+## Services Offered
+
+**Core Outsourcing Solutions:**
+- "Recruitment Process Outsourcing" for talent acquisition
+- Business Process Outsourcing (BPO)
+- "Customer Experience Solutions"
+- Call Center & Customer Service Representatives
+- Sales Excellence Solutions
+- Virtual Assistant services
+
+**Staffing across 14+ industries:** Manufacturing, Agriculture, Aviation, Construction, Telecommunications, Hospitality, Logistics, Retail, Renewable Energy, Oil & Gas, and more.
+
+## Technology & Integration Features
+
+**Not Found:** The page contains no mentions of:
+- SIP trunking
+- API or webhooks
+- Call forwarding to external systems
+- CRM integration details (though CRM software is listed as a service)
+
+The site emphasizes their **0700 Smart Business Numbers** and **0800 Toll-Free Numbers** but technical integration specifications are absent.
+
+## Pricing
+**No pricing details** are publicly displayed on this page.
+
+## Testimonials
+**None** are featured on the homepage.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

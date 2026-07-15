@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" sub-Saharan Africa population-similar middle-income economy
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:12:45 UTC
+========================================================================
+
+Search query: "synthetic control" sub-Saharan Africa population-similar middle-income economy
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" sub-Saharan Africa population-similar middle-income economy"
+
+Links: [{"title":"A counterfactual analysis of the impact of stock market absence on economic growth in selected Sub-Saharan African countries | Humanities and Social Sciences Communications","url":"https://www.nature.com/articles/s41599-026-07120-3"},{"title":"Sub-Saharan Africa - ISS African Futures","url":"https://futures.issafrica.org/geographic/regions/sub-saharan-africa/"},{"title":"Sub-Saharan Africa","url":"https://www.dni.gov/index.php/gt2040-home/gt2040-5-year-regional-outlooks/sub-saharan-africa"},{"title":"Sub-Saharan Africa: Economic overview | AHDB","url":"https://ahdb.org.uk/trade-and-policy/export-opps/regions/africa/macroeconomics"},{"title":"How does Population Growth Affect Economic Growth in African Countries? An Empirical Analysis by Marc Till, Owen Graham :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5605690"},{"title":"Economics: Sub-Saharan Africa | CFR Education","url":"https://education.cfr.org/learn/reading/economics-sub-saharan-africa"},{"title":"Sub-Saharan Africa: The Essentials - Economics: Sub-Saharan Africa | CFR Education","url":"https://education.cfr.org/learn/learning-journey/sub-saharan-africa-essentials/economics-sub-saharan-africa"},{"title":"Africa Overview: Development news, research, data","url":"https://www.worldbank.org/en/region/afr/overview"},{"title":"Sub Saharan Africa: Steady Growth Amid Fiscal Challenges","url":"https://www.imf.org/en/blogs/articles/2025/11/18/sub-saharan-africa-steady-growth-amid-fiscal-challenges"},{"title":"Structural Adjustment’s Complex Legacy in Sub-Saharan Africa – Michigan Journal of Economics","url":"https://sites.lsa.umich.edu/mje/2024/04/29/structural-adjustments-complex-legacy-in-sub-saharan-africa/"}]
+
+Based on the web search results, I found relevant information about the synthetic control method applied to sub-Saharan African countries:
+
+## Synthetic Control Method in Sub-Saharan Africa
+
+The synthetic control method (SCM) is being used to estimate the counterfactual GDP per capita that countries would have experienced had they established a stock market during specific periods. 
+
+A recent study examined nine sub-Saharan African countries and found that the absence of stock markets resulted in substantial losses for most countries, including Burundi, the Democratic Republic of Congo, Comoros, Guinea, Gambia, Liberia, Madagascar, and Mauritania. However, the lack of a stock market had no significant effect on Ethiopia.
+
+## Sub-Saharan Africa's Economic Composition
+
+Regarding middle-income economies in the region, sub-Saharan Africa consists of 48 countries: 23 low-income countries, 18 lower middle-income countries, six upper middle-income countries, and one high-income economy (the island state of Seychelles).
+
+The search results indicate that the synthetic control method is being applied to analyze economic policy impacts in sub-Saharan Africa, particularly in understanding how specific institutional changes (like stock market establishment) affect economic growth outcomes across countries with different income levels and populations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

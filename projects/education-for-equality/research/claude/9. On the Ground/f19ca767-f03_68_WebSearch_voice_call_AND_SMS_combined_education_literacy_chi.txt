@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "voice call" AND "SMS" combined education literacy children low-income phone-bas
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:21:50 UTC
+========================================================================
+
+Search query: "voice call" AND "SMS" combined education literacy children low-income phone-based
+
+----------------------------------------
+
+Web search results for query: ""voice call" AND "SMS" combined education literacy children low-income phone-based"
+
+Links: [{"title":"Why Simple Voice Technology Still Matters for Digital Inclusion - ICTworks","url":"https://www.ictworks.org/why-simple-voice-technology-still-matters-for-digital-inclusion/"},{"title":"Calls, SMS, and radio: How pre-internet tech helps low-income children’s schooling in India’s lockdown · Global Voices","url":"https://globalvoices.org/2020/08/07/calls-sms-and-radio-how-pre-internet-tech-helps-low-income-childrens-schooling-in-indias-lockdown/"},{"title":"The Use of SMS and Other Mobile Phone-based Messaging to Support Education at Scale: A Synthesis of Recent Evidence | Proceedings of the Tenth ACM Conference on Learning @ Scale","url":"https://dl.acm.org/doi/10.1145/3573051.3596172"},{"title":"Supporting early childhood development remotely: Experimental evidence from SMS messages - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0304387823001578"},{"title":"Is SMS Really the Solution for Change? Not for Most Poor People - SMS, Voice, WhatsApp, and Airtime Campaigns in 200+ Countries","url":"https://www.engagespark.com/blog/sms-really-solution-change-voice-calls-are-for-most-poor-people/"},{"title":"Practical lessons for phone-based assessments of learning - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7380711/"},{"title":"Calls, SMS, and radio: How pre-internet tech helps low-income children's schooling in India's lockdown | Qrius","url":"https://qrius.com/calls-sms-and-radio-how-pre-internet-tech-helps-low-income-childrens-schooling-in-indias-lockdown/"},{"title":"After a decade and over of SMS-based solutions, we realize we may have missed something…","url":"https://esoko.com/sms-vs-voice-based-solutions/"},{"title":"Education | MobileActive.org","url":"https://www.mobileactive.org/issue-categories/education-page-4/"},{"title":"International Review of Research in Open and Distance Learning","url":"https://files.eric.ed.gov/fulltext/EJ881581.pdf"}]
+
+Based on the web search results, here's what I found regarding voice calls and SMS combined for education, literacy, and children in low-income contexts:
+
+## Phone-Based Education for Low-Income Children
+
+A non-profit organization in India provides low-cost education to over 5,000 children in 400 villages through non-internet-based technologies including voice calls, SMS, and radio. The organization uses voice calls, interactive voice response (IVR), and SMS to teach educational modules.
+
+During COVID-19 lockdowns, students from remote areas and low-income families who lacked internet access faced tremendous challenges, as only a quarter of Indian households have internet access. The system operates in two ways: "Pull Calling" where parents call a number or send SMS to access daily learning modules, and "Push Calling" where the organization offers daily 1-2 minute IVR-based calls and tailored SMS modules.
+
+## Effectiveness for Low-Literacy Populations
+
+Voice calls can enable anyone in a low-income country to access education in their local language over a voice call. Farmers struggle to read SMS messages due to poor eyesight, lower literacy levels, small keypads, and rarely scroll beyond the first screen of an SMS.
+
+## SMS and Learning Outcomes
+
+A randomized field experiment in Costa Rica found that providing parents of preschool students with regular text messages offering ways to engage their children in educational activities resulted in cognitive skills 0.11–0.12 standard deviations higher than the control group after 15 weeks.
+
+Higher levels of device ownership and lower connectivity requirements are key reasons why mobile learning may have potential to support education at scale in low-income contexts.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

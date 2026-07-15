@@ -1,0 +1,48 @@
+========================================================================
+AGENT RESEARCH: LIVE novel angles literature scan
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 19:22:05 UTC
+========================================================================
+
+**You have full WebSearch and WebFetch access. Search live literature.**
+
+Context: Wesleyan Econ 349 term paper on "The Economic Cost of Out-of-School Children in Nigeria" — Nigeria-only ARDL bounds testing, 1990-2023, with PWT human-capital index as primary education variable.
+
+Brainstorm and rank 5-7 **novel empirical angles** the student could take, each ranked by novelty × feasibility for an undergraduate paper (8-10 pages, ~10 days, Stata, public data).
+
+For each angle:
+1. The hypothesis in one sentence
+2. Augmented regression specification (interaction terms, etc.)
+3. Identification strategy (FE, IV, lag, interaction)
+4. Data requirements (PWT + WDI sufficient?)
+5. Why it's novel — what gap in the literature, with **at least 2 live citations** you verified
+6. Risks/limitations
+
+Specific angles to evaluate (search current literature for each — has anyone done this for Nigeria? for SSA? what would be new?):
+
+- **Oil-rents × education interaction** (resource curse weakening education's growth payoff)
+- **Gender-gap angle** (does the male-female enrollment gap predict growth beyond enrollment levels)
+- **Convergence-speed interaction** (does education accelerate Solow convergence)
+- **Threshold effects** (Hansen 1999 xthreg — minimum education level for growth)
+- **Subnational state variation** (Nigerian states cross-section)
+- **Health-vs-education horse race** (HIV, life expectancy, schooling)
+- **Conflict interaction** (Boko Haram era as natural experiment)
+
+For each angle, search Google Scholar for "Nigeria + [angle keywords]" and "Sub-Saharan Africa + [angle keywords]" 2018-2026 — report what's been done recently and what gap remains.
+
+The student is Nigerian and has personal access to NALABE 2017 + EKOEXCEL data via her mother's E4E nonprofit. Flag synergies.
+
+Pick a winner with reasoning. Save to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/03_novel_angles.md` (overwrite). Report 200-word summary + 5+ URLs verified.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a233dcfa53dd693c6 (internal ID - do not mention to user. Use SendMessage with to: 'a233dcfa53dd693c6' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a233dcfa53dd693c6.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

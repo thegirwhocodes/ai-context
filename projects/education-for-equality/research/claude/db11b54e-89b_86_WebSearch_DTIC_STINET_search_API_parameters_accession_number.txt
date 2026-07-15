@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTIC STINET search API parameters accession number full text PDF
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:25 UTC
+========================================================================
+
+Search query: DTIC STINET search API parameters accession number full text PDF
+
+----------------------------------------
+
+Web search results for query: "DTIC STINET search API parameters accession number full text PDF"
+
+Links: [{"title":"TR_redirect – Defense Technical Information Center - DTIC","url":"https://discover.dtic.mil/tr_redirect/"},{"title":"(R) - Searching DTIC Collections","url":"https://www.loc.gov/flicc/Exemplars/DTIC/DTIC-DTICCollTips.pdf"},{"title":"dtic stinet","url":"https://www.loc.gov/flicc/Exemplars/DTIC/DTIC-STINET.PDF"},{"title":"The Scientific and Technical Information Network (STINET ...","url":"https://apps.dtic.mil/sti/tr/pdf/ADA189750.pdf"},{"title":"What is DTIC? - Ask a Librarian","url":"https://usnwc.libanswers.com/faq/10336"},{"title":"DTIC (Defense Technical Information Center)","url":"https://libraries.slu.edu/search/databases/dblink.php?page=stinet"},{"title":"DTIC Publications","url":"https://deps.org/DEPSpages/DTICdigests.html"},{"title":"A Profile of the Defense Technical Information Center - dtic.mil","url":"https://apps.dtic.mil/sti/tr/pdf/ADA433957.pdf"},{"title":"DTIC Online: Public Technical Reports - Databases - UW-Madison Libraries","url":"https://search.library.wisc.edu/database/UWI12561"},{"title":"Defense Technical Information Center : [website] : preserving knowledge, connecting people, inspiring innovation in SearchWorks catalog","url":"https://searchworks.stanford.edu/view/8435055"}]
+
+Based on the search results, here's what I found about DTIC STINET search API parameters:
+
+## DTIC Citation Access by Accession Number
+
+To find a specific citation by accession number, you can take the accession number and add it to the end of the link: https://apps.dtic.mil/sti/citations/ (for example, https://apps.dtic.mil/sti/citations/ADA540204).
+
+## STINET Database Overview
+
+STINET is DTIC's flagship Scientific and Technical Information Network and one of DoD's largest repositories of scientific and technical information. Public STINET is available to the public, free of charge, and provides access to citations of unclassified, unlimited reports describing research efforts and other scientific and technical information held by DTIC.
+
+Private STINET is a password-protected, value-added service for individuals who have registered with DTIC, offering online full-text versions of unclassified, unlimited documents, while STINET offers unclassified, unlimited full text documents in its Full Text Collection from September 1998 to present.
+
+The search results provided information about accessing documents via accession number and general STINET features, but don't contain detailed API parameter documentation. For comprehensive API documentation, you may need to consult DTIC's official API documentation or developer resources directly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

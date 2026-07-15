@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: huggingface whisper fine-tuned Nigerian English AfriSpeech download model 2025 2
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:58:28 UTC
+========================================================================
+
+Search query: huggingface whisper fine-tuned Nigerian English AfriSpeech download model 2025 2026
+
+----------------------------------------
+
+Web search results for query: "huggingface whisper fine-tuned Nigerian English AfriSpeech download model 2025 2026"
+
+Links: [{"title":"intronhealth/afrispeech-whisper-medium-all · Hugging Face","url":"https://huggingface.co/intronhealth/afrispeech-whisper-medium-all"},{"title":"NCAIR1/NigerianAccentedEnglish · Hugging Face","url":"https://huggingface.co/NCAIR1/NigerianAccentedEnglish"},{"title":"rishabbahal/whisper-small-nigerian-accent · Hugging Face","url":"https://huggingface.co/rishabbahal/whisper-small-nigerian-accent"},{"title":"Seyfelislem/afrispeech_large_A100 · Hugging Face","url":"https://huggingface.co/Seyfelislem/afrispeech_large_A100"},{"title":"WhisperSpeech/WhisperSpeech · Hugging Face","url":"https://huggingface.co/WhisperSpeech/WhisperSpeech"},{"title":"openai/whisper-large-v3 · Hugging Face","url":"https://huggingface.co/openai/whisper-large-v3"},{"title":"openai/whisper-large · Hugging Face","url":"https://huggingface.co/openai/whisper-large"},{"title":"Daily Papers - Hugging Face","url":"https://huggingface.co/papers?q=AfriSpeech-200"},{"title":"MediBeng Whisper Tiny: A Fine-Tuned Code-Switched Bengali-English Translator for Clinical Applications","url":"https://www.medrxiv.org/content/10.1101/2025.04.25.25326406.full.pdf"},{"title":"Whisper · Hugging Face","url":"https://huggingface.co/docs/transformers/model_doc/whisper"}]
+
+Based on the search results, here are the fine-tuned Whisper models available for Nigerian English and AfriSpeech on Hugging Face:
+
+## Key Models Found:
+
+1. **NigerianAccentedEnglish (NCAIR1)** - A breakthrough automatic speech recognition (ASR) model specifically designed for Nigerian Accented English, fine-tuned on Whisper Small architecture. This model is part of an initiative by Awarri Technologies and the Federal Ministry of Communications, Innovation and Digital Economy.
+
+2. **rishabbahal/whisper-small-nigerian-accent** - This model is a fine-tuned version of openai/whisper-small on the Nigerian accented english dataset.
+
+3. **intronhealth/afrispeech-whisper-medium-all** - Fine-tuned on the AfriSpeech-200 dataset, specifically designed for African accents, this model offers enhanced performance for speech recognition tasks on African languages.
+
+4. **Seyfelislem/afrispeech_large_A100** - This model is a fine-tuned version of openai/whisper-large-v2 on the afrispeech-200 dataset.
+
+All of these models are downloadable from Hugging Face's model hub. You can access them directly by visiting their respective repositories and using the Hugging Face `transformers` library to load and use them.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

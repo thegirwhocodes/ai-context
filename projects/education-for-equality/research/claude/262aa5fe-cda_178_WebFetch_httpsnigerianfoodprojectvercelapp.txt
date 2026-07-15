@@ -1,0 +1,124 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://nigerianfoodproject.vercel.app
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:51:21 UTC
+========================================================================
+
+URL: https://nigerianfoodproject.vercel.app
+Extraction prompt: This is a Nigerian food preorder website. I need EVERY DETAIL — read carefully and capture ALL of it:
+
+1. Full menu — list every dish, price, description, sides, customizations
+2. The full ordering flow — every step, every field, every button
+3. Delivery information — locations, prices, schedule, frequency
+4. Pickup info — location, times, days
+5. Payment methods and any handles
+6. Contact info — phone numbers, emails
+7. About / mission section if any
+8. The visual design — colors, fonts, photos, logos
+9. Any FAQ or policies
+10. Footer content
+11. Any text about who runs it, how it works, fulfillment timing
+12. Mobile vs desktop differences if observable
+13. Form fields, validation, required vs optional items
+14. Any other features, links, social media
+
+Do not summarize. Give me the verbatim content where possible.
+
+----------------------------------------
+
+# Campus Food Preorder Form - Complete Details
+
+## MENU ITEMS & PRICING
+
+| Dish | Price | Description |
+|------|-------|-------------|
+| White Rice and Stew | $12.00 | "Fluffy white rice served with our signature Nigerian tomato stew" |
+| White Rice and Ofada Stew | $15.00 | "White rice paired with traditional Ofada stew - a spicy, palm oil-based stew" |
+| White Rice and Stew with Plantains | $15.00 | "White rice with tomato stew, served with sweet fried plantains" |
+| White Rice and Ofada Stew with Plantains | $17.00 | "Ultimate combination - white rice with spicy Ofada stew and sweet fried plantains" |
+| Pounded Yam and Egusi Soup | $17.00 | "Traditional pounded yam served with Egusi soup (melon seeds and spinach stew)" |
+| White Rice, Stew, and Beans | $12.00 | "Hearty combination...nutritious and satisfying" |
+| Jollof and Plantain | $15.00 | "Traditional Nigerian Jollof rice with sweet fried plantains" |
+
+## ORDERING FLOW
+
+**Step 1 - User Information (Required fields marked \*):**
+- Full Name \*
+- Email Address \*
+- Phone Number \* ("Make sure this is correct so we can contact you")
+- Student ID (Optional)
+
+**Step 2 - Menu Selection:**
+Each dish has +/- quantity buttons; delivery option noted: "Want to add delivery for only $3 more?"
+
+**Step 3 - Pickup/Delivery:**
+- Pickup Location: "330 High Street Exley Basement (Down the Stairs)"
+- Note: "Pickup times will be determined for this weekend/next week and sent out via email"
+- Delivery option available if not selecting pickup
+
+**Step 4 - Payment & Special Instructions:**
+- Payment Method selection (required)
+- Payment Confirmation Number (optional)
+- Special Instructions field for dietary restrictions/requests
+
+## DELIVERY INFORMATION
+
+- **Fee:** $3 per location
+- **Policy:** "Your delivery fee only applies once per location. Multiple items to the same location = $3 total"
+- **Schedule:** Weekly delivery; specific times announced via email
+- **Missing locations:** "Don't see your location? Let us know where you live"
+- **Contact for locations:** 860-436-7048
+
+## PICKUP DETAILS
+
+- **Location:** 330 High Street Exley Basement (Down the Stairs)
+- **Schedule:** Times determined weekly, sent via email
+- **Days:** "This weekend/next week"
+
+## PAYMENT METHODS
+
+**Zelle:** 3479751327
+
+**CashApp:** $naomiivie1
+
+**Instructions:**
+1. Complete order
+2. Send payment via Zelle or CashApp
+3. "Include your name and order details in the payment memo"
+4. Confirmation sent to provided email upon receipt
+
+## CONTACT INFORMATION
+
+- **Phone:** 860-436-7048
+- **Email:** Confirmation sent to user-provided address
+
+## POST-ORDER COMMUNICATION
+
+- Email confirmation with order details
+- Delivery schedule announcements
+- Pickup location details via email
+- "Fresh preparation - Your order will be made fresh on delivery day"
+
+## FORM FIELDS SUMMARY
+
+**Required (\*):** Full Name, Email, Phone, Pickup/Delivery Location, Payment Method
+
+**Optional:** Student ID, Payment Confirmation Number, Special Instructions
+
+## VISUAL/BRANDING ELEMENTS
+
+- Emoji usage: 🍛 (rice bowl), 💡 (lightbulb), 💳 (credit card), 💚 (heart), 💸 (money), 📋 (clipboard), ✅ (checkmark), ❌ (X), 🎉 (celebration), 📧 (email), 📅 (calendar), 📍 (location pin), 🛒 (shopping cart)
+- Tagline: "Authentic, made-to-order meals prepared fresh for busy students"
+- Mission: "Fresh Daily"
+
+## ADDITIONAL FEATURES
+
+- Keyboard shortcuts available (↑↓←→, Home, End, PgUp/PgDn)
+- Navigation: "Place Another Order," Back/Next buttons
+- Total price calculation displayed ($0.00 initial)
+- Success/error message states shown
+- Note: "These prices are subject to change"
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

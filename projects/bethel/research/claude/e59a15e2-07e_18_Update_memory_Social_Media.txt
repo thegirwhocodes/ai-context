@@ -1,0 +1,31 @@
+========================================================================
+AGENT RESEARCH: Update memory: Social Media
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:27:27 UTC
+========================================================================
+
+You are updating the memory system for the Social Media project at "/Users/naomiivie/Downloads/App/Social Media".
+
+TASK: Read ALL session transcripts, then create memory files.
+
+STEPS:
+1. Read "/Users/naomiivie/Downloads/App/Social Media/.claude-sessions/INDEX.txt" and all session .txt files. For files over 100KB, read first 300 lines and last 100 lines.
+2. Read existing memory at ~/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/memory/MEMORY.md.
+3. CREATE memory files covering what this project is about, tech stack, what was built, Naomi's vision, design preferences, current status.
+4. Every file MUST have frontmatter: name, description, type, sessions.
+5. UPDATE MEMORY.md index.
+
+Write files with the Write tool.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a17a9a04fe3426497 (internal ID - do not mention to user. Use SendMessage with to: 'a17a9a04fe3426497' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-bethel/e59a15e2-07e1-441a-b5e1-74b37c995b59/tasks/a17a9a04fe3426497.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

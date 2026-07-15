@@ -1,0 +1,138 @@
+========================================================================
+AGENT RESEARCH: Research single-network + free-SIM + embedded mktg
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 20:03:10 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed). Context: "Sabi" is a Nigerian voice-AI tutor for out-of-school kids, starting a small pilot. We're considering concentrating the ENTIRE pilot on ONE mobile network (e.g. Glo) and handing pilot families FREE SIMs, to exploit that network's free on-net zero-balance triggers and to align incentives. Research how advantageous this is, who's done it, and whether to strike an embedded-marketing / sponsorship deal with the MNO from the start.
+
+Cover:
+1. **Strategic advantages of a single-network + free-SIM pilot:** on-net free triggers (Beep/Call-Me-Back), simpler ops, ability to negotiate one MNO, data/measurement, zero-rating leverage. Trade-offs (coverage gaps, family already has another SIM, dual-SIM behavior).
+2. **The incentive alignment — why an MNO benefits:** new subscriber acquisition (each free SIM = a new line + NIN-registered subscriber), ARPU growth as families top up, retention/churn reduction (Viamo's 16% churn data), CSR/ESG, data. Quantify if possible. Why would Glo/MTN/Airtel WANT to give free SIMs + airtime to a children's literacy program?
+3. **Precedents — who has done single-network / free-SIM / telco-education programs:** STADIO Connect (MVNO on MTN, free SIMs to students), Eneza+Safaricom, Ubongo+Vodacom, Viamo's exclusive single-MNO-per-country model, MomConnect, Safaricom DigiSchool / Instant Schools (Vodafone), Airtel/UNICEF school connectivity, India Jio education, any free-SIM education giveaways in Nigeria. What worked, at what stage, deal structure.
+4. **Embedded marketing / sponsorship from the START:** could the MNO fund the SIMs + airtime + zero-rating in exchange for (a) branding ("Glo teaches Nigeria to read"), (b) embedded ads inside lessons (e.g. branded Naira word-problems / airtime-recharge mentions), (c) subscriber acquisition, (d) CSR metrics? How is this structured? Precedents for ad/sponsor-funded free edtech. Is it realistic at PILOT stage or only at scale? (Note: we already have EMBEDDED_MARKETING_RESEARCH.md on in-lesson ads — focus here on the MNO-partnership structure.)
+5. **Recommendation:** is single-network + free-SIM + an MNO sponsorship a smart pilot move, or premature? Which network (Glo vs MTN vs Airtel) and why.
+
+Return AT LEAST 90% of substance with figures, named programs/precedents with stage + deal structure, and source URLs. Organize by the 5 points. Completeness over brevity.
+
+----------------------------------------
+
+I now have everything needed across all five points, plus several precedents the user didn't even name (Bayanihan SIM Philippines, Vodafone Instant Schools, Airtel-UNICEF, Eastern Cape e-learning SIMs). The "16% churn" figure the user referenced does not appear as a documented public Viamo stat — I confirmed this across multiple targeted searches and will flag it honestly. I have enough to deliver a complete, well-sourced report.
+
+---
+
+# Single-Network + Free-SIM + MNO Sponsorship for the Sabi Pilot — Research Findings
+
+**Bottom line up front:** A single-network, free-SIM pilot is a genuinely strong operational and measurement move, and there are real precedents. But a *funded sponsorship deal from an MNO at pilot stage* is the part that's premature — sponsorship money follows proof, not the other way around. The right play is to go single-network and self-fund the SIMs/airtime for a small pilot, while *structuring the pilot so the MNO's incentives are visible* and using the pilot results to land the sponsorship at scale. On network choice, the conventional answer is MTN (coverage), but there's a contrarian case for **Glo** that's unusually strong right now — detailed in Point 5.
+
+One honesty note up front: I could **not** verify the "Viamo 16% churn" figure as a documented public Viamo statistic. Multiple targeted searches did not surface it. What *is* documented is that Viamo's telco value proposition is customer segmentation/demographic data and content-driven engagement, and the *industry-wide* churn-reduction numbers from value-added services are real (10–14% range; up to 30% ARPU lift). Treat "16%" as needing a primary source before you put it in a pitch deck.
+
+---
+
+## 1. Strategic advantages of single-network + free-SIM (and the trade-offs)
+
+**The on-net free triggers are real and substantial on Glo specifically:**
+
+- **Glo CUG (Closed User Group, "POLCOM"):** FREE 24/7 calls and SMS between all members of the group, anywhere in the country. One account can register **up to 50 members**. Monthly fee ₦500 (first month free). This is the single most important finding for your model — if every pilot family's SIM is in *one Sabi CUG*, on-net calls among them are free, and you control the cost structure centrally. Calls outside CUG drop to ~20 kobo/sec. ([Campus Times](https://campustimesng.com/glo-closed-user-group-cug-subscription-services/), [Median Nigeria](https://www.medianigeria.com/what-to-know-about-glo-cug/))
+- **Beep/Flash/Missed-call ("beeping"):** Costs the caller nothing because the call never connects — 20–30% of all calls in sub-Saharan Africa are intentional misses. A child can "beep" Sabi's number with zero balance, and Sabi calls back. This is the canonical zero-cost trigger for the population you're serving. ([LIRNEasia](https://lirneasia.net/2007/09/missed-calls-beeping-flashing-a-universal-strategy/), [Wikipedia: Missed call](https://en.wikipedia.org/wiki/Missed_call))
+- **Recharge bonuses (Glo):** 15% airtime bonus on every e-top-up ≥₦200; Yakata up to 2,200% bonus; Overload Reloaded lets bonus airtime be used for Glo-to-Glo calls 10pm–8am. These let a small top-up stretch much further *on-net*. ([Glo](https://www.gloworld.com/ng/glo-independence-day-double-celebration-offer), [SubBase](https://subbase.com.ng/blog/glo-get-15-extra-airtime-on-every-e-top-up/))
+
+**Other single-network advantages:**
+- **Simpler ops:** one set of APNs, one short-code/number regime, one billing relationship, one technical integration (E1/SIP) — Viamo integrates per-operator via E1 or SIP, so each added MNO is real engineering work.
+- **One negotiation:** you can actually get a meeting and a deal with one MNO; you cannot meaningfully negotiate with four at pilot scale.
+- **Clean measurement:** all CDRs (call detail records), call durations, and engagement data sit with one operator — far easier to prove impact and to give the MNO a clean attribution story.
+- **Zero-rating leverage:** concentrating volume on one network makes a zero-rating ask (see Point 4) concrete and easy for the MNO to scope.
+
+**Trade-offs you must weigh:**
+- **Coverage gaps:** Glo is the weakest of the big three on network quality — 45 major outages Jan–May 2025, download speeds ~2× slower than MTN, only 13,800 km fibre vs MTN's 31,972 km, and rural insecurity hampering its towers. For out-of-school kids who are disproportionately *rural*, this is the central risk of choosing Glo. ([TechCabal](https://techcabal.com/2025/07/16/glo-subscriber-loss-opens-door-for-9mobile-comeback/), [Punch](https://punchng.com/glo-nigeria-leading-infrastructure-expansion-in-telecom-sector/))
+- **Family already has a SIM / dual-SIM behavior:** **66% of Nigerian phones are dual-SIM** (highest in the world). This cuts both ways: a free Sabi SIM does *not* require the family to abandon their existing line — it just goes in slot 2. That's good for adoption but means your "new subscriber" claim to the MNO is softer (it's an additional line, often lightly used, not a switched primary line). ([GeoPoll](https://www.geopoll.com/blog/mobile-penetration-nigeria/), [Guardian NG](https://guardian.ng/business-services/why-multi-sim-ownership-is-increasing-in-nigeria/))
+- **NIN registration friction:** Every SIM must be NIN-linked. Many out-of-school children and poor rural families may lack NINs — this is *the* operational blocker (it's literally what cost Glo 43M subscribers when enforcement hit). You may need to register SIMs under a parent/guardian NIN, which has its own implications.
+
+---
+
+## 2. Why an MNO actually benefits (the incentive alignment)
+
+**Subscriber acquisition.** Each free SIM = a new NIN-registered, activated line. With 66% dual-SIM, you're realistically adding *secondary* lines, but operators still count and value gross adds — and for Glo specifically, which is *hemorrhaging* subscribers (lost ~21,000 internet users/day Dec 2024–May 2025, market share at a record-low 11.9–12.3%), net adds are existentially valuable right now. ([TechCabal: market share](https://techcabal.com/2025/05/27/glo-market-share-falls-to-a-record-low-of-11-9/))
+
+**ARPU growth as families top up.** Nigerian ARPU is low but rising fast post-2025 tariff hike: **MTN Nigeria ARPU ~$3.60** (up ~66% in 2025), **Airtel Nigeria ~$2.10** (up ~24% YoY). The thesis: a family that gets a free SIM for their child's education forms a habit, tops up for other uses, and becomes a real revenue line. Even at $2/month ARPU, a cohort of a few thousand retained lines is a measurable revenue contribution against near-zero incremental cost (the airtime is on-net, which costs the operator close to nothing in marginal terms). ([TechCabal: ARPU](https://techcabal.com/2025/08/20/nigeria-telcos-arpu-rises-31-percent/))
+
+**Retention / churn reduction.** This is the strongest *strategic* argument and the one with the best industry evidence (even if the specific Viamo "16%" isn't sourceable):
+- GSMA Intelligence: operators offering value-added services saw **up to 30% ARPU increase** from higher retention/engagement.
+- Free streaming/bundled free services cut churn ~**10%**; loyalty + usage alerts ~**14%**. ([Enable3](https://enable3.io/blog/telecom-loyalty-programs), [PortaOne/GSMA](https://blog.portaone.com/vas-opportunities-in-telecom/))
+- A literacy service is *stickier* than streaming: a parent will not switch the SIM their child is learning on. That's a defensible churn-reduction story to pitch.
+
+**Data / segmentation.** Viamo's documented telco value is exactly this: *"Viamo's relationship with network operators grants it the benefit of having access to customers' demographic information,"* and operators disclose geographic location so usage can be mapped. ([Borgen Project](https://borgenproject.org/viamos-services/)) Flip it: you can offer the MNO a clean, consented dataset on an underserved youth segment they otherwise can't reach.
+
+**CSR/ESG.** This is the real near-term currency. Airtel Africa Foundation deployed **$6.2M in its first year** and committed **$57M** total to education; it supported **64 zero-rated learning platforms reaching 11M+ learners** and connected 3,296 schools across 13 countries. MTN and Glo run comparable foundations. A children's-literacy program is *exactly* the kind of headline a telco foundation wants. ([UNICEF](https://www.unicef.org/press-releases/airtel-africa-and-unicef-announce-multi-million-dollar-partnership-scale-digital), [MSME Africa](https://msmeafricaonline.com/airtel-africa-foundation-commits-6-2m-to-education-digital-and-financial-inclusion-across-africa/))
+
+---
+
+## 3. Precedents — who has done single-network / free-SIM / telco-education programs
+
+| Program | Network / structure | Free SIM? | Stage it worked at | Deal structure |
+|---|---|---|---|---|
+| **STADIO Connect** (SA) | MVNO **on MTN** (via megsApp back-to-back with MTN) | **Yes** — free SIM/eSIM per student, preloaded **300MB non-expiry data, R10 airtime, 10 SMS** | Launched 2025, scaling from campus → distance learners → family/friends | STADIO *became* an MVNO; zero-rating its own platforms (Canvas, myStadio). Closest analog to "concentrate on one network + free SIM." ([Telecompaper](https://www.telecompaper.com/news/south-african-mvno-stadio-connect-for-students-and-university-staff-launches-on-mtn-network--1539351), [ITWeb](https://www.itweb.co.za/article/new-mvno-from-stadio-targets-students/KPNG878NmKQq4mwD)) |
+| **Eneza Education** (Kenya) | **Safaricom** (single MNO; Safaricom is an **early equity investor**) | No free SIM, but **60-day free waiver**; service is on-net SMS/USSD | Scaled to **5.3M+ users**; partnership since 2013 | Safaricom gives **discounted SMS rates** (a VAS for the telco), markets the product, **collects payment** via airtime/M-Pesa (revenue share on the $0.10/week / KES 3/day sub). Won Best Mobile Innovation for Education, MWC 2019. This is the textbook telco-edu VAS deal. ([FINCA](https://finca.org/why-we-invested-eneza-education), [Pioneers Post](https://www.pioneerspost.com/news-views/20210104/the-largest-classroom-africa-how-text-messages-mean-millions-of-children-can), [Disrupt Africa](https://disruptafrica.com/2016/03/21/kenyas-eneza-education-rolls-out-e-learning-product-with-safaricom/)) |
+| **Viamo 3-2-1** (16+ countries incl. Nigeria) | **Originally exclusive single-MNO per country**, now multi-operator | Toll-free to user | **50M calls in last 12 months**, 27M+ people | Viamo's trade: *it creates the content and provides it free to the telco's subscribers; "it doesn't cost the operators anything and helps them segment their customer base."* Operators **advertise Viamo's content to their subscribers.** The single-MNO-exclusive model is precisely the structure you're considering — and Viamo started there. ([Viamo](https://viamo.io/services/3-2-1/), [Borgen](https://borgenproject.org/viamos-services/)) |
+| **Vodafone Instant Schools** (DRC, Ghana, Kenya, Lesotho, Mozambique, Tanzania) | Vodafone/subsidiaries, **zero-rated** | No SIM giveaway; **zero data charges** for customers | **1.7M+ users**; content w/ Learning Equality | Vodafone Foundation funds; customers of Vodafone subsidiaries pay **no data** to access. Pure zero-rating CSR model. ([Vodafone Foundation](https://foundation.vodafone.com/news/vodafone-foundation/instantschools-forafrica)) |
+| **Airtel Africa + UNICEF** (13 countries) | Airtel, zero-rated platforms + school connectivity | No consumer SIM giveaway | **3,296 schools, 2M+ learners, 64 zero-rated platforms, 11M+ learners** | $57M Airtel commitment / $6.2M Foundation Y1. Connectivity + zero-rating CSR. ([TechAfrica](https://techafricanews.com/2024/11/20/airtel-africa-unicef-partnership-connects-1500-schools-to-internet-across-13-nations/)) |
+| **Ubongo + Vodacom Tanzania** | Vodacom Foundation | No (broadcast/event "Building Brains Tour" 2024) | Established edutainment org | Foundation-sponsored outreach, not a SIM/zero-rate model — included for completeness. ([Ubongo](https://www.ubongo.org/partners/vodacom-tanzania/)) |
+| **MomConnect** (SA, Praekelt) | **All 4 SA operators**, zero-rated SMS/USSD/WhatsApp | No | **~5M mothers**, 95%+ of public facilities | Gov-funded; runs across all operators free to user. Shows the *multi*-operator alternative works for health, but required government backing. ([Wikipedia](https://en.wikipedia.org/wiki/MomConnect)) |
+| **Bayanihan SIM** (Philippines, DICT) | Government, multi-telco | **Yes** — **1M free SIMs, 25GB/mo data for 1 year**, targeting 5M people incl. students/families | Piloted 2025, scaling | ₱3B government-funded free-SIM-for-education-and-livelihood. The clearest *free-SIM-to-families* precedent globally. ([GMA](https://www.gmanetwork.com/news/topstories/nation/950668/dict-1m-sim-cards-students-teachers-remote-areas-2026/story/), [Business Mirror](https://businessmirror.com.ph/2025/07/08/schools-in-gidas-get-free-sim-cards/)) |
+| **Eastern Cape e-learning SIMs** (SA, ISASA) | Free SIMs to matric students | **Yes** | Provincial pilot | Free e-learning SIM cards distributed to Grade 12 learners. ([ISASA](https://www.isasa.org/free-e-learning-sim-cards-for-eastern-cape-matrics/)) |
+
+**What the precedents teach:**
+- **Free-SIM-to-families** is real but is almost always **government- or foundation-funded** (Bayanihan, Eastern Cape), or done by an entity that *became its own MVNO* (STADIO). No one found it commercially sensible for an MNO to give a tiny pilot free SIMs on pure commercial terms.
+- **Single-MNO exclusivity** is the *starting* structure (Viamo's original 3-2-1, Eneza/Safaricom) that later broadens. Starting single-network is well-trodden.
+- The **VAS + revenue-share + discounted-rates + telco-collects-payment** model (Eneza/Safaricom) is the most replicable commercial structure if you ever charge.
+
+---
+
+## 4. Embedded marketing / MNO sponsorship from the start
+
+**What the MNO can plausibly fund:** SIMs + on-net airtime + zero-rating + branding + CSR reporting. Precedent for each piece exists (STADIO zero-rates its platforms; Vodafone/Airtel zero-rate learning content; Viamo gets free distribution + operators *advertise its content*).
+
+**Structuring options, by realism at pilot stage:**
+
+- **(a) Branding ("Glo teaches Nigeria to read"):** Most realistic ask. Telco foundations *want* this headline. Low cost to them, pure CSR/PR value. Achievable even at pilot stage **if** you frame it as a foundation/CSR grant, not a marketing line-item.
+- **(b) Embedded ads inside lessons (branded Naira word-problems, airtime-recharge mentions):** You already have `EMBEDDED_MARKETING_RESEARCH.md` on this. On the *MNO-partnership* side: this is the natural quid-pro-quo for sponsorship — the MNO funds free airtime, and lesson content uses Glo-branded scenarios ("Ada has ₦200 Glo airtime…"). But be cautious: NCC's Internet Code of Practice and consumer-protection regs, plus child-protection norms, make *advertising to children* sensitive. Keep it soft (brand presence, financial-literacy scenarios) rather than hard calls-to-purchase. Realistic only once you have a relationship — not a cold pilot ask.
+- **(c) Subscriber acquisition as the commercial justification:** This is what you *lead with* to the commercial (not foundation) side of the MNO — especially Glo, given its subscriber crisis. But at *pilot* scale (hundreds of families) the gross-add numbers are too small to move a commercial team. It only becomes a real commercial pitch at scale (tens of thousands of lines).
+- **(d) CSR/ESG metrics:** The most fundable channel today. Airtel Foundation's $6.2M and Vodafone/Airtel zero-rating CSR show the budget exists and the reporting appetite is high. Package the pilot as "X children, Y hours of literacy instruction, Z% reading-gain — attributable to [MNO]."
+
+**Zero-rating is permitted but gated in Nigeria:** The NCC Internet Code of Practice allows zero-rating **only with prior NCC approval and only to further universal access** — preferential prioritization is forbidden. A children's-literacy zero-rating is a *textbook* "universal access" justification, so it's approvable, but it's a regulatory step, not a handshake. ([Templars/NCC](https://www.templars-law.com/app/uploads/2024/01/TEL24_Chapter-15_Nigeria.pdf), [ICLG Nigeria 2026](https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/nigeria))
+
+**Realistic at pilot stage?** Branding + a modest CSR/foundation grant covering SIMs and a block of on-net airtime: **yes, plausibly.** Embedded paid ads, zero-rating approval, and a commercial subscriber-acquisition deal: **scale-stage**, because they need either regulatory process or numbers you won't have yet. The honest sequencing: *foundation/CSR grant now → commercial + zero-rating deal after pilot data.*
+
+---
+
+## 5. Recommendation
+
+**Go single-network. Self-fund (or CSR-grant-fund) the free SIMs for the pilot. Do NOT bank on a commercial MNO sponsorship before you have data — but structure the pilot so the MNO can see its incentives, and pitch the CSR/foundation arm now for SIMs + airtime + branding.**
+
+Rationale: every documented free-SIM-to-families program was government/foundation-funded or self-funded via MVNO; commercial MNO sponsorship reliably *follows* proof of engagement (Eneza got equity investment *after* traction; Viamo gets free distribution *because* it brings content + segmentation value). A pilot's gross-adds are too small for a commercial deal, but perfectly sized for a CSR grant and a "powered by" headline.
+
+**Which network — the contrarian recommendation is Glo, with one big caveat:**
+
+- **The case FOR Glo:** (1) **CUG gives you free on-net calls for up to 50 members per group** — directly exploitable for a closed pilot cohort, and the single best cost lever found. (2) Glo is **desperate for subscribers** (record-low 11.9–12.3% share, lost 43M subs, bleeding ~21k/day) — which means your free-SIM gross-adds and a retention/CSR story land *much* harder there than at MTN, and Glo is the most likely to say yes to a sponsorship/branding deal to generate good news. (3) Glo is **Nigerian-owned (Adenuga)** with a domestic-pride brand — "Glo teaches Nigeria to read" is on-brand for them.
+- **The caveat AGAINST Glo:** network quality is its weakness — 2× slower than MTN, frequent outages, weak rural fibre. For a **voice** product serving **rural** out-of-school kids, call reliability is mission-critical. This is the one thing that could sink a Glo pilot.
+
+**So the decision rule:**
+- If your pilot is **urban/peri-urban** (Lagos, Abuja, where Glo has densified) → **Glo** is the smart, leverageable choice: best free-call mechanics + most motivated partner.
+- If your pilot is **rural** → default to **MTN** for coverage reliability (52% share, best fibre/coverage, STADIO chose MTN for its MVNO), and accept a harder sponsorship conversation. Airtel is the strong middle option with the most *demonstrated* education-CSR spend ($57M commitment, UNICEF partnership) if you want a partner with an existing edu-program machine to plug into.
+
+**Concrete next steps implied by the research:**
+1. **Run a Glo coverage check** at your actual pilot sites before committing (Glo's quality is location-dependent; it's fine in Lagos/Abuja, risky rurally).
+2. **Approach the foundation/CSR arm first**, not the commercial team — ask for SIMs + a block of on-net airtime + branding, framed as CSR with a reading-outcomes report.
+3. **Set up a single Sabi CUG** for the cohort to zero out on-net call costs.
+4. **Solve the NIN problem** explicitly (guardian-NIN registration) — it's the real operational blocker, and it's what already gutted Glo's base.
+5. **Find a primary source for the "16% churn" claim** before using it; lean on the defensible GSMA VAS numbers (10–30%) and the *stickiness* argument instead.
+
+**Key files/sources for the pitch:** Glo CUG mechanics ([Campus Times](https://campustimesng.com/glo-closed-user-group-cug-subscription-services/)); STADIO free-SIM model ([Telecompaper](https://www.telecompaper.com/news/south-african-mvno-stadio-connect-for-students-and-university-staff-launches-on-mtn-network--1539351)); Eneza/Safaricom VAS deal ([FINCA](https://finca.org/why-we-invested-eneza-education)); Viamo telco-value framing ([Borgen](https://borgenproject.org/viamos-services/), [Viamo](https://viamo.io/services/3-2-1/)); Airtel CSR scale ([UNICEF](https://www.unicef.org/press-releases/airtel-africa-and-unicef-announce-multi-million-dollar-partnership-scale-digital)); Nigeria ARPU/share/dual-SIM ([TechCabal ARPU](https://techcabal.com/2025/08/20/nigeria-telcos-arpu-rises-31-percent/), [TechCabal Glo share](https://techcabal.com/2025/05/27/glo-market-share-falls-to-a-record-low-of-11-9/), [GeoPoll](https://www.geopoll.com/blog/mobile-penetration-nigeria/)); NCC zero-rating rules ([ICLG Nigeria](https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/nigeria)).
+agentId: a7a5ee023ed2237fd (use SendMessage with to: 'a7a5ee023ed2237fd' to continue this agent)
+<usage>subagent_tokens: 96297
+tool_uses: 30
+duration_ms: 429098</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

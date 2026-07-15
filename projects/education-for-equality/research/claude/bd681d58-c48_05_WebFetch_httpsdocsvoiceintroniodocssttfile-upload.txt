@@ -1,0 +1,66 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.voice.intron.io/docs/stt/file-upload
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:44:25 UTC
+========================================================================
+
+URL: https://docs.voice.intron.io/docs/stt/file-upload
+Extraction prompt: Report the full substance of this page: exact endpoint URLs (sync and async), HTTP method, auth header format, all request parameters (file field name like audio_file_blob, audio_file_name, use_diarization, use_language_asr_input, use_category), response shape and fields, error codes and meanings (especially 403 permission denied / integrator account), file size/duration limits, and account requirements. Return actual content in detail, not a summary.
+
+----------------------------------------
+
+# Intron Voice API - Upload File Endpoint Details
+
+## Endpoint URLs
+
+**Async Upload (Primary):**
+`POST https://infer.voice.intron.io/file/v1/upload`
+
+The documentation mentions a synchronous variant exists at `/docs/stt/file-upload-sync` but does not provide its URL in the visible content.
+
+## Authentication
+
+"All requests require a Bearer token in the Authorization header:" formatted as `Authorization: Bearer [REDACTED:bearer-token]`
+
+## Required Headers
+
+| Header | Value |
+|--------|-------|
+| Authorization | Bearer YOUR_API_KEY |
+| Content-Type | multipart/form-data |
+
+## Request Parameters (form-data)
+
+**Required:**
+- `audio_file_name` (String): "non-unique file name"
+- `audio_file_blob` (String): "url to a readable file"
+
+**Optional Post-Processing:**
+- `use_diarization` (TRUE/FALSE, default: FALSE)
+- `use_template_id` (String): custom prompt ID
+- `use_category` (String): file_category_general, file_category_telehealth, file_category_procedure, file_category_call_center, file_category_legal, file_category_meeting_notes
+- `use_language_asr_input` (String): language code, default "en"
+
+## Supported File Formats
+
+.wav, .mp3, .mp4, .m4a, .ogg, .webm, .flac
+
+## Response Structure
+
+The documentation shows two response states but does not provide the actual JSON schema. It indicates "Response on upload" and "Response when file processsing completed" exist but the exact field names and structure are truncated in the provided content.
+
+## Post-Processing Options
+
+These "only apply to English transcriptions" and vary by category. For example, telehealth category supports: `get_summary`, `get_entity_list`, `get_treatment_plan`, `get_soap_note`, `get_clerking`, `get_icd_codes`, `get_suggestions`, `get_differential_diagnosis`, `get_followup_instructions`, `get_practice_guidelines` (all TRUE/FALSE, default FALSE).
+
+## Rate Limits
+
+"60 requests per minute" with retry headers included in responses.
+
+## Limitations Not Documented
+
+The provided content does not specify file size limits, audio duration limits, error codes (including 403 permission denied), or specific account requirement details.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

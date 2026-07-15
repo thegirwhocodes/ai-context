@@ -1,0 +1,42 @@
+========================================================================
+AGENT RESEARCH: ASL glasses competition landscape
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:16:28 UTC
+========================================================================
+
+Do thorough web research on the competitive landscape and market for ASL/sign language translation technology, including but not limited to glasses. I need the full picture of what exists.
+
+Search for:
+1. "sign language translation" app device 2025 2026 market
+2. "ASL interpreter" AI technology startup funding
+3. "deaf communication technology" glasses wearable 2025 2026
+4. SignAll company ASL translation status 2025 2026
+5. XRAI Glass sign language features 2025 2026
+6. Google sign language AI translation 2025 2026
+7. Apple sign language accessibility features 2025 2026
+8. Meta Ray-Ban sign language ASL translation
+9. "sign language avatar" AR glasses
+
+Cover:
+- Every company working on sign language translation (not just glasses — phones, tablets, wearables too)
+- Big tech efforts (Google, Apple, Meta, Microsoft)
+- Startup landscape and funding rounds
+- Market size estimates for deaf/HoH communication technology
+- Regulatory/accessibility requirements (ADA, etc.)
+- Consumer vs enterprise/institutional markets
+- What's actually shipping vs vaporware
+
+Report the full competitive picture.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: af73d47a5452a6dc5 (internal ID - do not mention to user. Use SendMessage with to: 'af73d47a5452a6dc5' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/6670b9c8-268f-4d5d-9a78-fc867a7b761c/tasks/af73d47a5452a6dc5.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

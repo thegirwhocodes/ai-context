@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Sign-Speak ASL translation technical approach how it works photorealistic signer
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:24:51 UTC
+========================================================================
+
+Search query: Sign-Speak ASL translation technical approach how it works photorealistic signer architecture
+
+----------------------------------------
+
+Web search results for query: "Sign-Speak ASL translation technical approach how it works photorealistic signer architecture"
+
+Links: [{"title":"AI Sign Language Translation: Ready for Education? - Artificial intelligence","url":"https://nationalcentreforai.jiscinvolve.org/wp/2025/09/16/ai-sign-language-translation-ready-for-education/"},{"title":"Signapse's Sign Language Translation using Generative AI: Achieving Photo-Realism and Accuracy| Signapse AI","url":"https://www.signapse.ai/post/signapses-sign-language-translation-using-generative-ai-achieving-photo-realism-and-accuracy"},{"title":"Towards AI-driven Sign Language Generation with Non-manual Markers","url":"https://arxiv.org/html/2502.05661"},{"title":"Sign-Speak Interpreting Service - Digital Accessibility Services – Syracuse University","url":"https://itsaccessibility.syr.edu/sign-speak-interpreting-service/"},{"title":"Bridging the Silence: Building a Real-Time Sign Language Translator (Part 1) - DEV Community","url":"https://dev.to/_iametornam/bridging-the-silence-building-a-real-time-sign-language-translator-part-1-1b8l"},{"title":"Towards AI-driven Sign Language Generation with Non-manual Markers | Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems","url":"https://dl.acm.org/doi/10.1145/3706598.3713855"},{"title":"Breaking Barriers in AI Sign Language Translation: Signapse's Journey from Concept to Reality| Signapse AI","url":"https://www.signapse.ai/post/breaking-barriers-in-ai-sign-language-translation-signapses-journey-from-concept-to-reality"},{"title":"Text2Sign: Towards Sign Language Production Using Neural Machine Translation and Generative Adversarial Networks | International Journal of Computer Vision | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s11263-019-01281-2"},{"title":"How AI Transforms Accessibility: Automatic British Sign Language Translation| Signapse AI","url":"https://www.signapse.ai/post/how-does-our-ai-technology-work"},{"title":"Signapse | AI Sign Language Translator | Translate ASL & BSL","url":"https://www.signapse.ai/"}]
+
+Based on the search results, here's what I found about Sign-Speak's ASL translation technical approach and how photorealistic signer architecture works:
+
+## Sign-Speak Overview
+
+Sign-Speak is a Deaf-led company based in the US providing AI American Sign Language (ASL) translation tools. Using only a camera, Sign-Speak translates American Sign Language (ASL) to spoken or written English and turns speech or text into lifelike signing via a digital avatar.
+
+## Key Technical Capabilities
+
+Sign-Speak's service is unique in that they can readily translate between sign, text and audio, which means they can offer an automated interpreting service. According to their website, this can interpret live conversations using a generated photorealistic signer.
+
+## Photorealistic Signer Architecture
+
+While the search results don't provide detailed technical specifications of Sign-Speak's specific architecture, they reference a research prototype that demonstrates the general approach used in modern ASL translation systems:
+
+A prototype consists of three components: Module 1: English Text to ASL Representations, which leverages a Large Language Model (GPT-4o) to translate an English sentence into English-based ASL glosses and to detect linguistic information relevant to non-manual markers; Module 2: ASL Representations to Skeletal Pose Sequence, which takes the LLM outputs and employs a Motion Matching approach to synthesize a skeletal pose sequence; and Module 3: Skeletal Pose Sequence to ASL Signed Video, which generates signed video frames representing a photorealistic ASL signer.
+
+Module 3 uses a UNet-like model, which given an individual signer's appearance and style (Signer ID), transforms the skeletal pose sequence into signing frames.
+
+The search results indicate that Sign-Speak's system focuses on delivering accessible ASL translation for real-time communication, though specific proprietary technical details about their exact architecture are not publicly detailed in these sources.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

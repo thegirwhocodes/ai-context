@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Cold Turkey" "Frozen Turkey" bypass how does it prevent uninstall admin passwor
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:48:24 UTC
+========================================================================
+
+Search query: "Cold Turkey" "Frozen Turkey" bypass how does it prevent uninstall admin password
+
+----------------------------------------
+
+Web search results for query: ""Cold Turkey" "Frozen Turkey" bypass how does it prevent uninstall admin password"
+
+Links: [{"title":"Cold Turkey - User Guide","url":"https://getcoldturkey.com/support/user-guide/"},{"title":"How to Bypass Cold Turkey Blocker: Simple Methods & Tips - Phan Eats","url":"https://phaneats.com/how-to-get-around-cold-turkey-blocker/"},{"title":"Cold Turkey - Support","url":"https://getcoldturkey.com/support/"},{"title":"Cold Turkey - Reinstall Instructions","url":"https://getcoldturkey.com/support/reinstall-instructions/"}]
+
+Based on the search results, here's what I found about how Cold Turkey and Frozen Turkey prevent uninstallation:
+
+## Locked Blocks Prevention
+
+A locked block will prevent the uninstaller from working (fails when you click Next). Locking your block will make the uninstaller fail when you click "Next" and will also block your browser until you enable the extension again.
+
+## Frozen Turkey
+
+Frozen Turkey is a type of block that you can use to lock, log off or shutdown your computer. Frozen Turkey can be set to lock, log off or shutdown your computer.
+
+## Admin Password Protection
+
+While the search results mention that keeping admin rights secure is important: don't give others admin access if you want blocks to remain effective, the results don't provide specific technical details about how Cold Turkey uses admin passwords to prevent uninstallation during active blocks.
+
+Cold Turkey has protection against uninstallation during active blocks, and Safe Mode is usually required to bypass it.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

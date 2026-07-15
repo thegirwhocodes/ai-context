@@ -1,0 +1,70 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.google.com/workspace/calendar/api/guides/configure-mcp-server
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 05:19:06 UTC
+========================================================================
+
+URL: https://developers.google.com/workspace/calendar/api/guides/configure-mcp-server
+Extraction prompt: I need the exact, copy-pasteable configuration for connecting Cursor (or any MCP client) to Google's official remote Calendar MCP server. Specifically: (1) the full URL of the MCP endpoint, (2) the exact JSON to put in ~/.cursor/mcp.json — both with and without OAuth client ID/secret if there's a difference, (3) which Google Cloud APIs/services need to be enabled, (4) what scopes are required, (5) the OAuth flow steps. Quote the doc exactly where possible.
+
+----------------------------------------
+
+# Google Calendar MCP Server Configuration for Cursor
+
+## (1) MCP Endpoint URL
+```
+https://calendarmcp.googleapis.com/mcp/v1
+```
+
+## (2) JSON Configuration
+
+The documentation doesn't provide a Cursor-specific example. Based on the "Others" section guidance, here's the structure:
+
+```json
+{
+  "mcpServers": {
+    "calendar": {
+      "httpUrl": "https://calendarmcp.googleapis.com/mcp/v1",
+      "oauth": {
+        "enabled": true,
+        "clientId": "YOUR_OAUTH_CLIENT_ID",
+        "clientSecret": "[REDACTED:clientsecret]",
+        "scopes": [
+          "https://www.googleapis.com/auth/calendar.calendarlist.readonly",
+          "https://www.googleapis.com/auth/calendar.events.freebusy",
+          "https://www.googleapis.com/auth/calendar.events.readonly"
+        ]
+      }
+    }
+  }
+}
+```
+
+Note: The doc only shows explicit `settings.json` structure for Gemini CLI. For other clients, you'll need to consult Cursor's MCP documentation.
+
+## (3) Required Google Cloud APIs/Services
+
+- **Google Calendar API** (`calendar-json.googleapis.com`)
+- **Google Calendar MCP API** (`calendarmcp.googleapis.com`)
+
+Enable via:
+```bash
+gcloud services enable calendar-json.googleapis.com calendarmcp.googleapis.com --project=PROJECT_ID
+```
+
+## (4) Required OAuth Scopes
+
+Per the documentation: `"https://www.googleapis.com/auth/calendar.calendarlist.readonly"`, `"https://www.googleapis.com/auth/calendar.events.freebusy"`, `"https://www.googleapis.com/auth/calendar.events.readonly"`
+
+## (5) OAuth Client Setup
+
+1. Create OAuth 2.0 credentials in Google Cloud Console as **Web application**
+2. Add redirect URI: `https://claude.ai/api/mcp/auth_callback` (adapt for your client)
+3. Configure OAuth consent screen with these scopes
+4. Use generated Client ID/Secret in your config
+
+The documentation notes: "The Google Calendar MCP server uses OAuth 2.0 for authentication and authorization."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

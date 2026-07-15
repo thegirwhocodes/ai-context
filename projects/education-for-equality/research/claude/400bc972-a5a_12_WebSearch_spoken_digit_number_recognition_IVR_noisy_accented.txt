@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: spoken digit number recognition IVR noisy accented speech telephony small model 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:13:10 UTC
+========================================================================
+
+Search query: spoken digit number recognition IVR noisy accented speech telephony small model 2025
+
+----------------------------------------
+
+Web search results for query: "spoken digit number recognition IVR noisy accented speech telephony small model 2025"
+
+Links: [{"title":"Smart IVR: How AI is Modernizing IVR Systems in 2026 - Smallest.ai","url":"https://smallest.ai/blog/smart-ivr-how-ai-is-modernizing-ivr-systems-in-2026"},{"title":"Best Speech to Text Models 2026: Real-Time Agent Comparison","url":"https://nextlevel.ai/best-speech-to-text-models/"},{"title":"Speech Recognition System: A Complete 2026 Guide - Reverie","url":"https://reverieinc.com/blog/speech-recognition-system/"},{"title":"What Is Interactive Voice Response (IVR)? 2026 Guide","url":"https://www.parloa.com/knowledge-hub/what-is-interactive-voice-response-ivr/"},{"title":"Top 10 AI Voice and Speech Technologies Dominating 2025 (TTS, STT, Voice Cloning)","url":"https://ts2.tech/en/top-10-ai-voice-and-speech-technologies-dominating-2025-tts-stt-voice-cloning/"},{"title":"List of speech recognition software — Grokipedia","url":"https://grokipedia.com/page/List_of_speech_recognition_software"},{"title":"5 Best Speech to Text Models in 2026 : Accuracy, Latency, Cost | Retell AI","url":"https://www.retellai.com/blog/best-speech-to-text-models"}]
+
+Based on the web search results, here's what I found about spoken digit number recognition, IVR systems, and handling noisy/accented speech in telephony with small models in 2025:
+
+## Key Challenges in Telephony Speech Recognition
+
+ASR models trained on clean studio audio degrade significantly on telephony audio, background noise, accented speech, or callers using speakerphone. Individual models can struggle with spoken numbers, as they may be transcribed differently by different models.
+
+## Performance Under Real-World Conditions
+
+WER can jump to 30–50% for strongly accented speech versus 2–8% for native speakers on the same model. Background noise, telephony compression, and overlapping speakers compound the challenge — accuracy can drop from 92% on clean headsets to 65% on mobile calls.
+
+## Solutions for Noisy and Accented Speech
+
+The fix is not a better model in isolation; it is a model specifically trained and evaluated on telephony-grade audio. Models built for voice activity detection and trained on noisy audio (like Deepgram's Nova-3 Medical or noise-robust Conformer architectures) significantly outperform generic models in these conditions.
+
+Low-fidelity channels, such as compressed IVR or mobile calls, can be enhanced using signal processing techniques to preserve speech clarity without introducing latency.
+
+## Recent Models for IVR (2025-2026)
+
+Deepgram Nova-3, released in early 2025, is purpose-built for real-time voice agents. In 2025-2026 independent benchmarks focused on contact center use cases, specialized vendors such as Deepgram often outperformed other providers in both accuracy and latency.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

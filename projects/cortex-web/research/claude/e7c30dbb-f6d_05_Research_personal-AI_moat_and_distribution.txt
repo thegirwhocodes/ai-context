@@ -1,0 +1,29 @@
+========================================================================
+AGENT RESEARCH: Research personal-AI moat and distribution
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:46:05 UTC
+========================================================================
+
+Research how successful (and failed) PERSONAL-AI / personal-data products built their MOAT, DISTRIBUTION, and USER TRUST — for a founder building Cortex, a personal AI that ingests all your data (email, calendar, messages, notes) and acts as you. Use WebSearch + WebFetch on credible sources (company blogs, founder interviews, reputable tech press, teardowns). Every claim followed by a source URL.
+
+Cover, concretely and cited:
+1. The WEDGE: how products got their first foothold by nailing ONE high-frequency painful job before expanding — Superhuman (email), Granola (meeting notes), Rewind/Limitless (recall), Notion AI, Mem. What was the single magic moment?
+2. The MOAT: where defensibility actually came from — switching cost from accumulated personal context/data, not the model. Evidence that "it knows me + starting over is unthinkable" is the real lock-in. Any data on retention/lock-in.
+3. TRUST & PRIVACY as the gate to "connect your whole life": how products positioned privacy (on-device/local vs cloud), and cases where a privacy FREAKOUT hurt adoption (e.g., Rewind/Microsoft Recall backlash). What earned trust.
+4. ONBOARDING / progressive trust: did winners ask for everything up front or earn scopes one at a time? Time-to-first-value patterns. Evidence either way.
+5. Why dead personal-AI products DIED (distribution? trust? no wedge? thin moat?). Concrete post-mortems if findable.
+
+Return a dense, structured, cited bullet list of patterns + evidence, each with a source URL. Mark weak-sourced/anecdotal claims "unverified." Be honest and specific — this informs a real go-to-market + product-defensibility strategy. No fluff.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a4e8f778c1059f2f5 (internal ID - do not mention to user. Use SendMessage with to: 'a4e8f778c1059f2f5', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/a4e8f778c1059f2f5.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

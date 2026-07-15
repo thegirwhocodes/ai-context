@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.associatesforchange.org
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 05:31:52 UTC
+========================================================================
+
+URL: https://www.associatesforchange.org
+Extraction prompt: What is Associates for Change? What do they do? Are they a research organization? Who are their partners and funders? What countries do they work in? Are they credible? List any major partnerships, funders, or publications mentioned.
+
+----------------------------------------
+
+# Associates for Change: Organization Overview
+
+## What They Do
+Associates for Change (AfC) is a research and consulting firm specializing in social policy analysis and international development. According to their website, they work "with a range of clients from around the African and Asian region on issues of education, poverty reduction, public reforms, gender and HIV/AIDS."
+
+## Organization Type
+Yes, they are primarily a research organization. Their core services include operational research, policy analysis, evaluations, social assessments, and organizational development consulting.
+
+## Geographic Focus
+They operate primarily across Africa and Asia, with demonstrated work in West Africa (Ghana, Nigeria, Sierra Leone) and broader African regions.
+
+## Key Areas of Expertise
+- Educational research and program evaluation
+- Gender equity and girls' education
+- Early childhood development
+- Social accountability initiatives
+- Pro-poor agriculture
+- Child rights and social protection
+- HIV/AIDS research
+
+## Partners and Funders Mentioned
+- **IDRC** (International Development Research Centre) - multiple education projects
+- **GPEKIX** - collaborative education initiatives
+- Centre for the Study of the Economies of Africa (CSEA)
+- Dalan Development Consultants
+- Complementary Education Agency
+- Education Out Loud (Gender Learning Collaborative)
+
+## Credibility Indicators
+- Recent award: 2024 Community Development Award
+- Active publications and blog contributions to international education platforms
+- Ongoing partnerships with established development organizations
+- Recent projects spanning 2022-2026
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

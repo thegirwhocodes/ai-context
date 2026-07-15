@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/call-center-solutions/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:37:49 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/call-center-solutions/
+Extraction prompt: Find any technical details about how their phone system works - SIP, VoIP, cloud PBX, call forwarding, API, how calls are routed to customers
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

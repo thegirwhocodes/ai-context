@@ -1,0 +1,55 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.patricelli.center/stories/nva2026
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-21 23:18:46 UTC
+========================================================================
+
+URL: https://www.patricelli.center/stories/nva2026
+Extraction prompt: List every student entrepreneur/founder mentioned in this article about the 2026 New Venture Awards winners at Wesleyan's Patricelli Center. For each one, give me: their full name, their venture's name, and a one-sentence description of what the venture does. Include every finalist, winner, and mentioned person.
+
+----------------------------------------
+
+# 2026 New Venture Awards Participants
+
+## Grand Prize Winners
+
+**Naomi Ivie '27 — Sabi**
+"a free AI tutor that teaches Nigeria's 41 million out-of-school children to read" through mobile phone calls.
+
+**Aviva Schnitzer '28 & Malia Apor '28 — HerWay Recruiting**
+Provides mentorship and educational workshops specifically designed for female student-athletes navigating the recruitment process.
+
+## Finalists (Receiving $5,000)
+
+**Minji Woo '26 — Guardian**
+Mobile voice scam protection that alerts seniors and their families when manipulation is detected during calls.
+
+**Marc Esposito '26 — Silver**
+Community platform coordinating crisis response through mutual aid networks and civic technology connections.
+
+**Wesley Tan '26 — WellPrepped Labs**
+Educational platform offering personalized college admissions support including mentor matching and opportunity discovery.
+
+**Ugochukwu Osondu '26 — Rydar**
+Transportation platform in Africa providing real-time visibility and navigation for informal commuting systems.
+
+## Semi-Finalists (Receiving $1,500)
+
+**Tamiraa Sanjaajav '27 — The Nomadvocate Project**
+Civic education program connecting Mongolian students across rural and urban provinces through workshops and political literacy training.
+
+**Milo Chamberlin '26 — M&V Dairy Farms**
+Holstein dairy cooperative in Tanzania pairing high-yield assets with women's leadership development and income opportunities.
+
+**Sam Pohlman '26 — Jam Scsh, Inc.**
+Artist-centric music platform enabling live streaming and fan communities where creators retain all donation revenue.
+
+**Graham Johnson '27 — Fuzz Media**
+Production company creating documentary and commercial content focused on emerging artists and underrepresented narratives.
+
+**Macie Carlos '27 — Play It Forward**
+Student initiative redistributing used athletic gear to increase equitable sport access while reducing textile waste.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

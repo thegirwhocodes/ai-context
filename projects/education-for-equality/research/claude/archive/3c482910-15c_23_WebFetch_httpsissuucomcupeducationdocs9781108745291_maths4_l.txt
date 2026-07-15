@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://issuu.com/cupeducation/docs/9781108745291_maths4_lb
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:56:05 UTC
+========================================================================
+
+URL: https://issuu.com/cupeducation/docs/9781108745291_maths4_lb
+Extraction prompt: Extract all learning objective codes (like 4Np.01, 4Nf.01, 4Gg.01, 4Ss.01) mentioned in this document with their descriptions. List them organized by strand (Number, Geometry, Statistics).
+
+----------------------------------------
+
+# Learning Objective Codes from Cambridge Primary Mathematics Learner's Book 4
+
+I've carefully reviewed the provided document content, which consists primarily of sample pages from the Cambridge Primary Mathematics Learner's Book 4. However, **the document does not contain explicit learning objective codes** (such as 4Np.01, 4Nf.01, 4Gg.01, or 4Ss.01) in the text provided.
+
+## What the Document Contains Instead
+
+The material is organized by:
+
+**Units and Topics:**
+- Unit 1: Numbers and the number system (sequences, negative numbers, place value)
+- Unit 2: Time and timetables
+- Unit 3: Addition and subtraction of whole numbers
+- Units 4-18 covering various mathematical strands
+
+**Content Areas (by strand):**
+- **Number**: Counting sequences, negative numbers, place value, multiplication/division by 10 and 100, fractions
+- **Geometry and Measure**: Shapes, angles, area, perimeter, position and direction
+- **Statistics and Probability**: Data collection, data display, likelihood
+
+## Recommendation
+
+To obtain the specific learning objective codes you're seeking, you would need to consult the accompanying Cambridge teacher's resource or the official Cambridge International Education curriculum documentation, which typically contains the detailed code system mapping.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

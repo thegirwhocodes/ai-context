@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/writing/who-we-are.html
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 06:02:12 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/writing/who-we-are.html
+Extraction prompt: Extract the mission, values, and stated philosophy of the Writers Room / Writing Workshop at Wesleyan. What language do they use to describe themselves?
+
+----------------------------------------
+
+# Writers Room Mission, Values, and Philosophy
+
+Based on the webpage content provided, the Writers Room does not explicitly state a formal mission statement or organizational philosophy document. However, their approach can be inferred from staff descriptions and program offerings.
+
+## Values and Approach
+
+The Writers Room emphasizes:
+
+**Support for diverse writing**: They highlight support across "essays and research papers to emails and applications," suggesting an inclusive approach to all writing needs.
+
+**Student-centered mentorship**: Staff describe themselves as soundboards and guides. One tutor notes, "I'm here to be a soundboard, have a conversation built off your thoughts, and understand your writing process to find, support, and strengthen your voice."
+
+**Multilingual inclusion**: The program dedicates significant resources to multilingual writers, with specialized fellows and tutors marked as "Multilingual Specialists," suggesting they value linguistic diversity.
+
+**Writing as self-expression and advocacy**: Multiple tutors mention viewing "writing is such a useful tool for bridging academia and advocacy" and emphasize that "there are so many forms of writing that exist, and that we can all figure out these various ways to express ourselves."
+
+## Language Used
+
+The Writers Room describes itself primarily through action-oriented language—collaboration, support, and empowerment—rather than formal mission statements visible on this page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

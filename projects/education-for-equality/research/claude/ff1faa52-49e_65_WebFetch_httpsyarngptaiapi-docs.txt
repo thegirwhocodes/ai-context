@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai/api-docs
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 11:50:13 UTC
+========================================================================
+
+URL: https://yarngpt.ai/api-docs
+Extraction prompt: Extract the full API documentation: endpoints, authentication, request/response formats, pricing, and any usage examples. Is this service currently active and functional?
+
+----------------------------------------
+
+# YarnGPT API Documentation Extract
+
+## Authentication
+All requests require a Bearer token in the Authorization header: `Authorization: Bearer [REDACTED:bearer-token]`
+
+## Endpoint
+**Text-to-Speech (TTS)**
+- **URL:** `POST https://yarngpt.ai/api/v1/tts`
+
+## Request Parameters
+
+| Parameter | Type | Required | Details |
+|-----------|------|----------|---------|
+| text | string | Yes | "The text to be converted to speech. Max 2000 characters." |
+| voice | string | No | Character voice selection; defaults to Idera |
+| response_format | string | No | Audio format (mp3, wav, opus, flac); defaults to mp3 |
+
+## Available Voices
+16 voice options including Idera, Emma, Zainab, Osagie, Wura, Jude, Chinenye, Tayo, Regina, Femi, Adaora, Umar, Mary, Nonso, Remi, and Adam—each with distinct tonal qualities.
+
+## Usage Examples
+The documentation provides implementations in cURL and Python, demonstrating file streaming and error handling.
+
+## Service Status
+**Functionally Active:** The page includes Google Analytics tracking, configuration settings, and rate-limiting details ("80/day" for TTS API). However, the site requires user authentication, and no explicit "operational" status indicator appears in the provided content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/dxli94/WLASL
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:36:56 UTC
+========================================================================
+
+URL: https://github.com/dxli94/WLASL
+Extraction prompt: Extract ALL accuracy numbers and benchmark results: every model tested on WLASL, their top-1 and top-5 accuracy on each subset (WLASL100, WLASL300, WLASL1000, WLASL2000). Include the leaderboard/table if there is one. Every number.
+
+----------------------------------------
+
+# WLASL Benchmark Results
+
+I've reviewed the provided GitHub repository content, but **no accuracy numbers or benchmark results are included** in the extracted web page.
+
+The README contains sections titled "Training and Testing" with instructions for running I3D and Pose-TGCN models, but it does not provide:
+
+- Top-1 or top-5 accuracy metrics
+- Performance results on WLASL100, WLASL300, WLASL1000, or WLASL2000
+- Any leaderboard or results table
+- Comparative model performance data
+
+The document focuses on dataset description, download instructions, and code implementation guidance rather than empirical results. To find benchmark accuracies, you would need to access the actual research paper ("Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison") or check the project homepage at dxli94.github.io/WLASL, which is referenced but not included in the extracted content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

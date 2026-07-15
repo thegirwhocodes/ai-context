@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Apache Guacamole AWS WorkSpaces clipboard paste Mac not working permission
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:16:14 UTC
+========================================================================
+
+Search query: Apache Guacamole AWS WorkSpaces clipboard paste Mac not working permission
+
+----------------------------------------
+
+Web search results for query: "Apache Guacamole AWS WorkSpaces clipboard paste Mac not working permission"
+
+Links: [{"title":"Frequently Asked Questions - Apache Guacamole®","url":"https://guacamole.apache.org/faq/"},{"title":"Copy/Paste is Not working b/n workspaces-local computer | AWS re:Post","url":"https://repost.aws/questions/QUATK6LuOIS8yoWfoLMFQSnA/copy-paste-is-not-working-b-n-workspaces-local-computer"},{"title":"How to copy paste text on euclid guacamole web windows? - Levich Computing Resources","url":"https://levich-computing.ccny.cuny.edu/knowledge/guacamole_copy_paste/"},{"title":"Copy/paste doesn't work from client machine to remote- ...","url":"https://lists.apache.org/thread/w98tlow0968mgklf64q1tn5dm76zx25g"},{"title":"Apache Guacamole / Discussion / Help: 0.9.7 - Any way to copy/cut/paste directly in browser without client screen?","url":"https://sourceforge.net/p/guacamole/discussion/1110834/thread/3ffa2bb2/"},{"title":"How to use Guacamole to copy and paste text or files in ...","url":"https://community.microstrategy.com/s/article/How-to-Use-Guacamole-to-Copy-and-Paste-Text-or-File-in-MicroStrategy-on-AWS?language=en_US"},{"title":"KB464089: How to use Guacamole to copy and paste text or files in MicroStrategy on AWS","url":"https://community.strategy.com/article/How-to-Use-Guacamole-to-Copy-and-Paste-Text-or-File-in-MicroStrategy-on-AWS"},{"title":"Using Web Shell and Desktop on Atmosphere","url":"https://cyverse.github.io/atmosphere-guides/guacamole_user_guide.html"},{"title":"[GUACAMOLE-24] Directly integrate local clipboard - ASF Jira","url":"https://issues.apache.org/jira/browse/GUACAMOLE-24"},{"title":"Re: Guacamole 1.5.3 - Copy and Paste Issue on Mac via VNC (inside the session)","url":"https://www.mail-archive.com/user@guacamole.apache.org/msg12177.html"}]
+
+Based on the search results, here's what I found regarding clipboard paste issues with Apache Guacamole, AWS WorkSpaces, and Mac permission problems:
+
+## Browser Clipboard Permissions
+
+The reason that you cannot directly copy/paste is that most browsers have strict control of clipboard access. Browsers vary in their level of support for the Clipboard API, and the following browsers are known to support clipboard access: Google Chrome version 66 and later, Microsoft Edge version 79 or later (via the Asynchronous Clipboard API) Mozilla Firefox 63 or later (write to clipboard only) and IE10 and IE11 (via the older, synchronous version of the API).
+
+## Mac-Specific Issues
+
+For Mac users connecting via VNC through Guacamole, there may be key mapping issues. When trying to use Command-C within the VNC session, the Command key may appear to be unresponsive and produce a 'c' character instead.
+
+## Workarounds
+
+The Clipboard text area functions as an interface between the remote clipboard and local clipboard, where text from the local clipboard can be pasted into the text area, and the text is sent to the remote clipboard.
+
+For AWS WorkSpaces specifically (outside the Guacamole context), client logs can be found in ~/Library/"Application Support"/"Amazon Web Services"/"Amazon WorkSpaces"/logs (Mac).
+
+If you're experiencing specific permission issues, you may need to grant clipboard access permissions when prompted by your browser, particularly when using Chrome or newer browsers that support the Clipboard API.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

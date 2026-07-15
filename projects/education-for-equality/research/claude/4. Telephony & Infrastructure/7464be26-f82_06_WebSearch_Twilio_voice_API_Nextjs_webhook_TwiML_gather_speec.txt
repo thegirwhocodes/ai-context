@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Twilio voice API Next.js webhook TwiML gather speech transcription implementatio
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:04:30 UTC
+========================================================================
+
+Search query: Twilio voice API Next.js webhook TwiML gather speech transcription implementation 2025
+
+----------------------------------------
+
+Web search results for query: "Twilio voice API Next.js webhook TwiML gather speech transcription implementation 2025"
+
+Links: [{"title":"Using Twilio’s Real-Time Transcriptions Service in Node.js | Twilio","url":"https://www.twilio.com/en-us/blog/developers/tutorials/product/twilio-real-time-transcriptions-service-nodejs"},{"title":"TwiML™ Voice: | Twilio","url":"https://www.twilio.com/docs/voice/twiml/gather"},{"title":"Transcribe Phone Calls in Real-Time using Node.js with AssemblyAI, and Twilio | Twilio","url":"https://www.twilio.com/en-us/blog/phone-call-transcription-assemblyai-twilio-node"},{"title":"Server-side quickstart for Programmable Voice | Twilio","url":"https://www.twilio.com/docs/voice/quickstart/server"},{"title":"Live Transcribing Phone Calls Using Twilio Media Streams and Google Speech-to-Text | Twilio","url":"https://www.twilio.com/en-us/blog/live-transcribing-phone-calls-using-twilio-media-streams-and-google-speech-text"},{"title":"Using Google Cloud Speech-to-Text to transcribe your Twilio calls in real-time | Google Cloud Blog","url":"https://cloud.google.com/blog/topics/partners/using-google-cloud-speech-to-text-to-transcribe-your-twilio-calls-in-real-time"},{"title":"TwiML™ for Programmable Voice | Twilio","url":"https://www.twilio.com/docs/voice/twiml"},{"title":"Twilio Real-Time Transcriptions now generally available | Twilio","url":"https://www.twilio.com/en-us/changelog/twilio-real-time-transcriptions-now-generally-available"},{"title":"Building smart voice applications: A developer’s guide in Node.js | Twilio","url":"https://www.twilio.com/en-us/blog/build-smart-voice-applications"},{"title":"Voice API | Twilio","url":"https://www.twilio.com/en-us/voice/api"}]
+
+I've found comprehensive information about Twilio voice API integration with speech transcription and webhooks. Here's what the search results reveal about implementation in 2025:
+
+## Key Implementation Approaches
+
+### Real-Time Transcriptions Service
+
+Twilio now offers real-time transcriptions that arrive during the call via webhooks in a Node.js application. Deepgram is available as a second provider option for developers for speech-to-text transcription, alongside Google Speech-to-Text.
+
+### TwiML Gather Verb with Speech Recognition
+
+The `<Gather>` verb in TwiML is used to collect input during a call, which could include speech, digits pressed on the keypad, or both. Between March and June 2025, Twilio is updating speech models for Gather speech-to-text with three choices: setting no speechModel, setting a generic speechModel with language, or setting a specific STT provider and speech model.
+
+When speech input is included, Twilio includes SpeechResult and Confidence parameters, where Confidence contains a confidence score between 0.0 and 1.0, with higher scores indicating greater accuracy potential.
+
+### Webhook Implementation
+
+The statusCallbackUrl attribute specifies where Twilio should send transcription events such as transcription-content or transcription-stopped. In a production setting, developers replace pause instructions with actual call logic such as `<Gather>` to collect user input or interactive voice response (IVR) menus.
+
+### Media Streams Alternative
+
+For more advanced transcription pipelines, developers can use the Media Streams API to stream voice call audio to a WebSocket server, which then passes audio to a transcription service like AssemblyAI to get text back live.
+
+### Compliance & Features
+
+Real-Time Transcriptions using webhooks is HIPAA Eligible and PCI-compliant for safeguarding sensitive interactions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

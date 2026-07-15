@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://openknowledge.worldbank.org/entities/publication/8c011df6-2134-4da6-8f40
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:38:46 UTC
+========================================================================
+
+URL: https://openknowledge.worldbank.org/entities/publication/8c011df6-2134-4da6-8f40-160ce2cf37a4
+Extraction prompt: Extract the methodology for how HCI+ calculates earnings losses per pillar. Is the total earnings deficit (like Nigeria's 111%) additive across pillars? Can you decompose it into education's share, health's share, and employment's share? What are the specific weights or formulas used?
+
+----------------------------------------
+
+I cannot extract the requested methodology for HCI+ earnings loss calculations from the provided content. The webpage appears to be primarily composed of CSS styling code and configuration files for the "Open Knowledge Repository" interface, with no substantive information about HCI+ (Human Capital Index Plus) calculations, earnings deficit decomposition, or specific weighting formulas across education, health, and employment pillars.
+
+To obtain this information, you would need to access actual HCI+ documentation or methodology papers from the source organization (likely the World Bank), rather than this UI/styling content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

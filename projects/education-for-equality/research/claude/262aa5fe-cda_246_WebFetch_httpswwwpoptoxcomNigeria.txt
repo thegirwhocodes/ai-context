@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.poptox.com/Nigeria
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 19:21:50 UTC
+========================================================================
+
+URL: https://www.poptox.com/Nigeria
+Extraction prompt: Verify exactly how to make a free call from a US browser to a Nigerian mobile number right now. Does it require any signup, download, microphone permission, or country verification? Can the calling user be in the US? How many free calls per day per IP/user? What's the country code format expected for the Nigerian number? Quote the actual flow steps from the page.
+
+----------------------------------------
+
+# PopTox Free Calling to Nigeria - Key Details
+
+**No Signup Required Initially:**
+"We will never ask for your credit card information or ask you to sign up first. Simple enter the number and start calling right away!"
+
+**US-Based Users Can Call:**
+Yes, the service is browser-based and works from any location with internet, including the US.
+
+**Call Limits:**
+A notification states: "Sorry, you can only call the same number upto 5 times a day for free."
+
+**Technical Requirements:**
+The platform operates entirely through a web browser like Chrome—no app download needed. The page mentions a microphone permission is implied through standard VoIP operation, though not explicitly detailed.
+
+**Nigerian Number Format:**
+The page doesn't specify the exact country code format for Nigerian numbers.
+
+**Actual Flow Steps:**
+The page shows a calling interface with these elements:
+- A dropdown to select the destination country
+- A field to enter the phone number
+- A "CALL" button to initiate the connection
+- A "HANGUP" button to end calls
+
+**Important Caveat:**
+After 5 free daily calls to the same number, users must either "sign up or share us now for additional calls."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

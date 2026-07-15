@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Asterisk drop and callback different carrier cost arbitrage SIP REFER limitation
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 07:49:05 UTC
+========================================================================
+
+Search query: Asterisk drop and callback different carrier cost arbitrage SIP REFER limitation
+
+----------------------------------------
+
+Web search results for query: "Asterisk drop and callback different carrier cost arbitrage SIP REFER limitation"
+
+Links: [{"title":"Asterisk Call Routing Problems Fixing: Complete Guide (2025)","url":"https://kingasterisk.com/asterisk-call-routing-problems/"},{"title":"SIP REFER support in Asterisk - Asterisk SIP - Asterisk Community","url":"https://community.asterisk.org/t/sip-refer-support-in-asterisk/79362"},{"title":"Call drops after 15mins Asterisk-SBC-IMS Scenario - Asterisk SIP - Asterisk Community","url":"https://community.asterisk.org/t/call-drops-after-15mins-asterisk-sbc-ims-scenario/99548"},{"title":"Incoming calls drop after 30 minutes - Asterisk SIP - Asterisk Community","url":"https://community.asterisk.org/t/incoming-calls-drop-after-30-minutes/99062"},{"title":"SIP Trunking ⋆ Asterisk","url":"https://www.asterisk.org/products/sip-trunk/"},{"title":"Asterisk Forums • View topic - Call being dropped after 15 minutes [RESOLVED]","url":"http://forums.asterisk.org/viewtopic.php?f=1&t=84482"},{"title":"[Question] Behaviour change of SIP REFER handling - #3 by satskiy - General Help - FreePBX Community Forums","url":"https://community.freepbx.org/t/question-behaviour-change-of-sip-refer-handling/108381/3"},{"title":"SIP REFER issue - Asterisk Support - Asterisk Community","url":"https://community.asterisk.org/t/sip-refer-issue/35541"},{"title":"Sip refer - Asterisk Support - Asterisk Community","url":"https://community.asterisk.org/t/sip-refer/13364"},{"title":"Asterisk billing - VoIP-Info","url":"https://www.voip-info.org/asterisk-billing/"}]
+
+I've performed the web search for your query about Asterisk drop and callback with different carrier cost arbitrage and SIP REFER limitations. 
+
+The search results returned information about various Asterisk-related topics including:
+
+1. **Asterisk call routing problems** - General troubleshooting for call drops and routing issues
+2. **SIP REFER support in Asterisk** - Technical discussions about whether Asterisk properly supports SIP REFER over SIP trunks, with some users reporting that Asterisk sends RE-INVITE instead of REFER for call transfers
+3. **Call drops after specific timeframes** - Issues with calls dropping after 15-30 minutes, often related to SIP retransmission and qualification settings
+4. **CDR (Call Detail Record) issues with transfers** - When transfers come into play through SIP REFER, it is very likely that you will end up with incorrect and misleading CDR data
+5. **Billing and callback systems** - Information about Asterisk billing solutions that include callback functionality
+
+However, the search results don't contain specific information about the particular arbitrage strategy you're asking about (using different carriers for drop and callback to exploit cost differences) or detailed technical limitations of this approach. The results do indicate that SIP REFER handling can be problematic in Asterisk, which could be relevant to such a strategy, but the specific cost arbitrage use case isn't directly addressed in these results.
+
+Would you like me to perform additional searches for more specific information about this topic?
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.alwaysactivemobile.co.za/wp-content/uploads/2019/06/Always-Active-Mo
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:26:21 UTC
+========================================================================
+
+URL: https://www.alwaysactivemobile.co.za/wp-content/uploads/2019/06/Always-Active-Mobile-NI-USSD-API.pdf
+Extraction prompt: Extract ALL details about Network-Initiated USSD (USSD Push) API. How does it work? Can it be triggered during an active voice call? What are the parameters? What is the technical flow? Any limitations?
+
+----------------------------------------
+
+# Network-Initiated USSD (USSD Push) API
+
+## Overview
+The USSD Push API enables servers to initiate USSD sessions toward mobile subscribers without requiring the subscriber to first dial a USSD code.
+
+## How It Works
+The API allows "pushing" USSD messages to users by sending an HTTP request containing subscriber details and message content to the service provider's endpoint.
+
+## Technical Parameters
+Based on the document, a typical request includes:
+- **Username & Password**: Authentication credentials
+- **MSISDN**: Mobile subscriber number (e.g., 27821231234)
+- **Message**: The USSD prompt text
+- **ID**: Request identifier for tracking
+- **Request Type**: Specifies interaction mode (e.g., "prompt")
+
+**Example endpoint format:**
+```
+http://ussd.domain.co.za/push/?username=test&password=test&msisdn=27821231234&message=test%20message&id=12345&requesttype=prompt
+```
+
+## Voice Call Limitations
+The document does not explicitly address whether USSD Push can be triggered during active voice calls. This represents a potential technical constraint worth investigating with your service provider.
+
+## Key Consideration
+The API appears designed for server-initiated communication rather than interactive real-time dialogs, suggesting it functions best for one-way notifications or menu-driven interactions initiated by backend systems.
+
+[Binary content (application/pdf, 395.6KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/webfetch-1774923982731-nb61ij.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cerebras inference API pricing Llama 3.1 8B per token cost 2026
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 06:55:30 UTC
+========================================================================
+
+Search query: Cerebras inference API pricing Llama 3.1 8B per token cost 2026
+
+----------------------------------------
+
+Web search results for query: "Cerebras inference API pricing Llama 3.1 8B per token cost 2026"
+
+Links: [{"title":"Llama 3.1 8B - Cerebras Inference","url":"https://inference-docs.cerebras.ai/models/llama-31-8b"},{"title":"Cerebras","url":"https://www.cerebras.ai/pricing"},{"title":"Introducing Cerebras Inference: AI at Instant Speed - Cerebras","url":"https://www.cerebras.ai/blog/introducing-cerebras-inference-ai-at-instant-speed"},{"title":"Llama 3.1 405B now runs at 969 tokens/s on Cerebras Inference - Cerebras","url":"https://www.cerebras.ai/blog/llama-405b-inference"},{"title":"Cerebras - Intelligence, Performance & Price Analysis | Artificial Analysis","url":"https://artificialanalysis.ai/providers/cerebras"},{"title":"Cerebras Launches the World’s Fastest AI Inference - Cerebras","url":"https://www.cerebras.ai/press-release/cerebras-launches-the-worlds-fastest-ai-inference"},{"title":"Cheapest Hugging Face Inference for Llama 3.1 405B (2026) - AI Pricing Master","url":"https://www.aipricingmaster.com/blog/Cheapest-Hugging-Face-Inference"},{"title":"Cerebras Introduces Inference Service, Touting Speed and Cost Benefits - BigDATAwire","url":"https://www.bigdatawire.com/this-just-in/cerebras-introduces-inference-service-touting-speed-and-cost-benefits/"},{"title":"Llama 3.1 8B: API Provider Performance Benchmarking & Price Analysis | Artificial Analysis","url":"https://artificialanalysis.ai/models/llama-3-1-instruct-8b/providers"},{"title":"Cerebras launches fastest available AI inference at low cost ...","url":"https://www.eenewseurope.com/en/cerebras-launches-fastest-available-ai-inference-at-low-cost/"}]
+
+Based on the search results, here's the pricing information for Cerebras Inference API for Llama 3.1 8B:
+
+## Cerebras Inference API Pricing - Llama 3.1 8B
+
+Llama 3.1 8B and 70B models are priced at 10 cents and 60 cents per million tokens on Cerebras's Developer Tier.
+
+### Per-Token Cost Breakdown:
+The most affordable model on Cerebras by blended price is Llama 3.1 8B at $0.10 per 1M tokens (3:1 input to output ratio).
+
+### Performance:
+Cerebras inference delivers 1,800 tokens per second for Llama3.1 8B, making it significantly faster than competitors.
+
+### Pricing Tiers:
+Cerebras has made its inference service available across three competitively priced tiers: Free, Developer, and Enterprise. The Developer Tier provides users with an API endpoint at a fraction of the cost of alternatives in the market, with Llama 3.1 8B and 70B models priced at 10 cents and 60 cents per million tokens, respectively.
+
+The pricing structure appears to remain consistent as of 2026 based on the most recent information available in the search results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

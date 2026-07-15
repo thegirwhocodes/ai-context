@@ -1,0 +1,79 @@
+========================================================================
+AGENT RESEARCH: Research agent memory systems
+Session: 3ca6f6d6-cc8f-48a7-ae98-043f8bea4484
+Time: 2026-04-20 01:45:10 UTC
+========================================================================
+
+Deep research task — I'm building an AI agent that needs to feel like it "knows" the user over time (like Sana AI or Claude with memory). Research memory systems for AI agents and return implementation-ready findings.
+
+Specifically investigate:
+
+1. **Memory architectures for LLM agents (2026 state of the art)**:
+   - Short-term (conversation history, context window management)
+   - Working memory (current task state)
+   - Long-term (user preferences, style, history)
+   - Episodic (specific past events/edits)
+   - Semantic (general facts about the user)
+   - How are these typically combined in production agents?
+
+2. **Vector DB options for local desktop apps**:
+   - ChromaDB, LanceDB, Qdrant, Weaviate, pgvector, sqlite-vec, Turso
+   - Which ones work fully embedded (no separate server)?
+   - Which is best for an Electron/Python desktop app?
+   - Memory footprint, speed, sync/replication options
+   - Embedding models to pair with them (OpenAI text-embedding-3-small, Voyage, local alternatives like BGE)
+
+3. **Structured memory patterns** — when to use a SQL DB vs a vector DB:
+   - SQLite for structured facts (user name, preferences, past edits, scores)
+   - Vector DB for fuzzy retrieval (past edits similar to this one, style examples)
+   - Hybrid retrieval (filter by SQL, rank by vector similarity)
+
+4. **Memory write policies** — when should an agent save something?
+   - After every turn vs selective
+   - LLM-judged salience ("is this worth remembering?")
+   - Explicit user commands ("remember this")
+   - Decay/expiration for outdated facts
+   - Contradictions: what happens when new info conflicts with old?
+
+5. **Memory read policies** — how much to inject into context?
+   - RAG retrieval strategies (top-k, MMR, re-ranking)
+   - Always-load vs query-load
+   - Token budget management
+   - Summarization of old memories
+
+6. **Production examples** — how do these products actually implement memory?
+   - ChatGPT's memory feature (OpenAI's approach, what's public)
+   - Claude projects + memory tool
+   - Mem.ai, Rewind.ai architecture
+   - Letta (formerly MemGPT) — self-editing agent memory
+   - Sana AI's context layer
+
+7. **Style learning specifically** — how do you learn that "Naomi prefers warm cinematic edits, bold captions, worship content, 45-60s clips"?
+   - Explicit: ask the user
+   - Implicit: observe choices over time
+   - When they pick version B over A 10 times, save "prefers style of B"
+   - Feature extraction from past outputs
+
+8. **Concrete schema recommendations** — if I'm building this in SQLite + a local vector DB, what tables/collections should I have? Give me an actual schema with columns/fields.
+
+Context: desktop AI video editing agent. Single user (Naomi) for MVP. Needs to remember:
+- Who she is (Christian creator, worship content, studio gear, past projects)
+- Her style preferences (LUTs, caption styles, pacing, music)
+- Her projects/folders (what's in each, when touched)
+- Past edits (what she accepted, what she rejected)
+- Conversation history
+
+Return ~1000-1500 words with concrete schemas, library recommendations, and implementation patterns. No "memory is important" fluff.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a40d3fa76edefcca1 (internal ID - do not mention to user. Use SendMessage with to: 'a40d3fa76edefcca1' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484/tasks/a40d3fa76edefcca1.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

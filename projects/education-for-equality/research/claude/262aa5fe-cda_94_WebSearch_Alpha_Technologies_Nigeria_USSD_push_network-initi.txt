@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Alpha Technologies Nigeria USSD push network-initiated NCC VAS aggregator alphat
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:29:34 UTC
+========================================================================
+
+Search query: Alpha Technologies Nigeria USSD push network-initiated NCC VAS aggregator alphatechnologieslimited
+
+----------------------------------------
+
+Web search results for query: "Alpha Technologies Nigeria USSD push network-initiated NCC VAS aggregator alphatechnologieslimited"
+
+Links: [{"title":"Dedicated and Shared USSD Solutions in Nigeria","url":"https://infotekps.com/ussd.html"},{"title":"Overview of Nigeria’s Value-Added Services (VAS) Market - Affiliate Dragons","url":"https://affdragons.com/overview-of-nigerias-value-added-services-vas-market/"},{"title":"Telecom - Upperlink Limited","url":"https://upperlink.ng/telecoms/"},{"title":"Nigeria's NCC Unveils The VAS Aggregator License Framework - Nigeria's NCC Unveils The VAS Aggregator License Framework - Tekedia Forum - Tekedia","url":"https://www.tekedia.com/forum/topic/nigerias-ncc-unveils-the-vas-aggregator-license-framework/"},{"title":"https://ncc.gov.ng/sites/default/files/2025-07/Ind...","url":"https://ncc.gov.ng/sites/default/files/2025-07/Individual_licensing_all.csv"},{"title":"Understanding Value Added Services (VAS) Licensing in Nigeria -","url":"https://terraincore.ng/understanding-value-added-services-vas-licensing-in-nigeria/"},{"title":"https://www.ncc.gov.ng/sites/default/files/2025-11...","url":"https://www.ncc.gov.ng/sites/default/files/2025-11/List-of-Individual-Licensees-All_5.csv"},{"title":"NCC issues 10 new VAS licences in 2019, projects market to hit $500 million","url":"https://nairametrics.com/2019/12/24/ncc-issues-10-new-vas-licences-in-2019-projects-market-to-hit-500-million/"},{"title":"Telecommunications: Guide on How to Obtain Value Added Services License in Nigeria - Adeola Oyinlade & Co","url":"https://www.adeolaoyinlade.com/en/telecommunications-guide-on-how-to-obtain-value-added-services-license-in-nigeria/"},{"title":"Value Added Service Aggregator License | NCC","url":"https://ncc.gov.ng/media-center/public-notices/value-added-service-aggregator-license"}]
+
+Based on my search results, I found information about Alpha Technologies Limited in Nigeria's VAS regulatory landscape:
+
+Alpha Technologies Limited is licensed by Nigeria's NCC for Value Added Services SNS (Special Numbering Service), located at Oide Place, 1B, Imam Agusto Close, Off Olosa Street, V/I, Lagos, with a license valid from 01/12/2020 to 30/11/2025.
+
+The search results provide context about Nigeria's VAS ecosystem. USSD communications can be initiated as either USSD-PUSH (Mobile Terminated & Provider Originated) or USSD-PULL (Mobile Originated & Provider Terminated). The VAS value chain is structured as: Content Developer ⇒ Content Service Provider ⇒ VAS Aggregator ⇒ Mobile Network Operator.
+
+While Alpha Technologies Limited appears in the NCC licensing database with a Value Added Services SNS license (not as a VAS Aggregator), the search results show it operates within Nigeria's regulated VAS framework overseen by the Nigerian Communications Commission.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

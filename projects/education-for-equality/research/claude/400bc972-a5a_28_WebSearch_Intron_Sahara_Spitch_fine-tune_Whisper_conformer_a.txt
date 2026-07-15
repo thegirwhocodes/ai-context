@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Intron Sahara Spitch fine-tune Whisper conformer architecture African accent tra
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:15:39 UTC
+========================================================================
+
+Search query: Intron Sahara Spitch fine-tune Whisper conformer architecture African accent training approach technical
+
+----------------------------------------
+
+Web search results for query: "Intron Sahara Spitch fine-tune Whisper conformer architecture African accent training approach technical"
+
+Links: [{"title":"Sahara V2 » Intron Voice AI","url":"https://www.intron.io/sahara-v2/"},{"title":"Intron Africa-centric Voice AI Accelerates Delivery of Justice, Patient Care, and Customer Experiences with New Sahara Models","url":"https://www.appsafrica.com/intron-africa-centric-voice-ai-accelerates-delivery-of-justice-patient-care-and-customer-experiences-with-new-sahara-models/"},{"title":"AfriSpeech-MultiBench: A Verticalized Multidomain Multicountry Benchmark Suite for African Accented English ASR","url":"https://arxiv.org/pdf/2511.14255"},{"title":"Intron unveils Sahara v2 to expands African voice AI to 57 Languages - Businessday NG","url":"https://businessday.ng/technology/article/intron-unveils-sahara-v2-to-expands-african-voice-ai-to-57-languages/"},{"title":"AI startup Intron expands speech recognition to 57 languages","url":"https://techcabal.com/2026/03/05/intron-expands-sahara-to-57-languages/"},{"title":"Intron Launches Voice AI for Africa with 24 Languages – IT News Africa – African Business Technology News","url":"https://www.itnewsafrica.com/2026/03/intron-launches-voice-ai-for-africa-with-24-languages/"},{"title":"Intron launches Sahara-v2, a voice AI model supporting 24 new African languages - Technext","url":"https://technext24.com/2026/03/05/intron-launches-sahara-v2-voice-ai-model/"},{"title":"Voice AI » Intron Voice AI","url":"https://www.intron.io/"},{"title":"Sahara Demo » Intron Voice AI","url":"https://www.intron.io/sahara-demo/"}]
+
+Based on the search results, here's what I found about Intron's Sahara speech recognition models and their approach to African accent training:
+
+## Overview
+
+Intron Sahara v2 is a production-ready suite of speech recognition models built specifically for African languages, African accents, and African realities.
+
+## Training Approach and Dataset
+
+Sahara v2 is trained on over 14 million audio clips spanning 50,000 hours of speech from more than 40,000 speakers across 30 African countries. The model was developed using recordings captured in real-world environments such as clinics, courts, call centres and busy streets to better reflect how Africans actually speak.
+
+Sahara is built on a proprietary dataset of more than 3.5 million audio clips from over 18,000 speakers across 30+ countries, powered by Intron's patented AccentMix algorithm and years of focused R&D.
+
+## Accent and Language Coverage
+
+Intron's speech-to-text models recognise over 300 distinct African accents and dialects, from Ghanaian English to Zulu-inflected speech. Sahara v2 introduces 24 additional African languages, including Hausa, Swahili, Zulu, Yoruba, Igbo, Twi, Kinyarwanda and Xhosa, among others, expanding support to 57 languages and more than 500 African English accents.
+
+## Performance Comparisons
+
+Sahara-v2 performs strongly when evaluated against leading speech models, including Gemini-3, Azure, ElevenLabs, GPT-4-audio, and Whisper, consistently outperforming them across accuracy, robustness, and domain reliability. Specifically, it performs over 64% better on African names, locations, and organizations (AFRINAMES) compared to models such as Gemini-3 and Azure.
+
+The search results don't provide specific technical details about the conformer architecture or fine-tuning methodology used in Spitch/Sahara models, but they confirm the overall approach focuses on native African speech patterns rather than adapting global models after the fact.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

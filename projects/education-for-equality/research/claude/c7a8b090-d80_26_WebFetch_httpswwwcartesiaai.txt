@@ -1,0 +1,51 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.cartesia.ai
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:33:52 UTC
+========================================================================
+
+URL: https://www.cartesia.ai
+Extraction prompt: Describe the FULL page structure top to bottom: what sections exist, how products are organized, navigation links, hero text, any tabbed sections, any scroll animations or moving elements described in the HTML, how different audiences (developers vs enterprise) are addressed, card layouts, and the overall flow of the page. Include any actual text content you can see.
+
+----------------------------------------
+
+# Cartesia Sonic-3 Page Structure Overview
+
+## Header Navigation
+Top bar includes: Models (Agents), Solutions, Resources (Pricing, Contact Sales), Sign In, and Start for Free CTA.
+
+## Hero Section
+Large headline: "Voice AI like you've never heard before" with description positioning Sonic-3 as the only streaming TTS with laughter and emotion. Dual CTAs (Try for Free, Contact Sales).
+
+## Interactive Demo Section
+Audio player showcasing a concierge scenario with emotion tags and laughter. Dropdown menu switches between use cases: Concierge, Customer Support, Companion, Gaming, Logistics. Language selector defaults to English.
+
+## Feature Showcase (Numbered Claims)
+Five callout sections highlight:
+- Natural laughter capability
+- Excited vocal delivery
+- Emotional range (sadness)
+- 42-language support with Hindi example
+- Human-like speech patterns with audio example
+
+## Performance Section
+Contrasts Sonic's latency against "human conversational response threshold." Emphasizes ultra-low latency with worldwide consistency (San Francisco to Tokyo). Notes performance benefits for broader stack efficiency.
+
+## Industry Applications
+Healthcare highlighted with description about scheduling and patient experience. Mentions "Curated voices for conversation" spanning personas and instant voice cloning in 10 seconds.
+
+## Global Language Coverage
+Maps showing 40+ languages covering 95% globally. Specific European language grid displayed (Dutch, French, German, Italian, etc.).
+
+## Developer-Focused Section
+Addresses both audiences with: API endpoints, SDKs, Playground browser testing, and enterprise certifications (SOC 2 Type II, HIPAA, PCI Level 1).
+
+## Social Proof/Customer Testimonials
+Repeating carousel of executive quotes from ServiceNow, GoodCall, Maven AGI, Daily, Quora, Together, and Tavus praising latency and quality.
+
+## Footer
+Comprehensive navigation: Models (Sonic, Ink, Agents), Solutions by use case and industry, Regional offices, Resources (Blog, Docs, Pricing), and Legal links.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

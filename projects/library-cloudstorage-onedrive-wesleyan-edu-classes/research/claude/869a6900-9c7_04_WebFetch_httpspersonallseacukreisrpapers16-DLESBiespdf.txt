@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://personal.lse.ac.uk/reisr/papers/16-DLESBies.pdf
+Session: 869a6900-9c7e-4841-946b-0e701aa75e93
+Time: 2026-04-28 18:01:58 UTC
+========================================================================
+
+URL: https://personal.lse.ac.uk/reisr/papers/16-DLESBies.pdf
+Extraction prompt: Summarize the formal model of the sovereign-bank diabolic loop in Brunnermeier et al. Explain: (1) the exact mechanism of how a banking crisis transmits to sovereign default and vice versa, (2) the role of cross-border holdings of sovereign debt in breaking or amplifying the loop, (3) the ESBies proposal — how diversification across sovereigns + tranching breaks the loop, (4) how foreign demand for safe sovereign assets matters, (5) any equations or formal conditions for when the diabolic loop equilibrium exists.
+
+----------------------------------------
+
+I appreciate your request, but I must be transparent: the content you've provided appears to be a corrupted or improperly encoded PDF file. The text consists primarily of binary data, compressed streams, and garbled characters that don't form coherent academic prose about the Brunnermeier et al. sovereign-bank diabolic loop model.
+
+To provide an accurate summary of their formal framework, I would need access to:
+- The actual published paper (likely "The Sovereign-Bank Diabolic Loop and ESBies" or related work)
+- Properly decoded text without compression artifacts
+- Clear mathematical notation and model specifications
+
+**What I cannot do:**
+Extract meaningful information about their mechanism, cross-border holdings analysis, ESBies proposal details, or formal equilibrium conditions from corrupted source material.
+
+**What would help:**
+- A properly formatted PDF or text file
+- A DOI or publication link
+- The paper title and authors
+- Specific page numbers if citing a book chapter
+
+If you have access to a clean version of the Brunnermeier et al. paper, I'd be glad to summarize the diabolic loop mechanism, ESBies architecture, and formal conditions with proper attribution and character-limited quotes.
+
+[Binary content (application/pdf, 903.2KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/869a6900-9c7e-4841-946b-0e701aa75e93/tool-results/webfetch-1777399356059-f4sr1i.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

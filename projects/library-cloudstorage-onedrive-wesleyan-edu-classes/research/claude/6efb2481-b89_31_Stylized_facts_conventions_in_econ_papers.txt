@@ -1,0 +1,49 @@
+========================================================================
+AGENT RESEARCH: Stylized facts conventions in econ papers
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 00:56:21 UTC
+========================================================================
+
+I'm writing an undergraduate empirical economics term paper that introduces a "new" variable to the cross-country growth-regression literature: a 100−GER (gross enrollment ratio) non-enrollment proxy as the key regressor in a Mankiw-Romer-Weil-style augmented Solow regression on a Sub-Saharan African panel. The paper is for Wesleyan's Econ 349 (Economic Growth, Prof. David Kuenzel) and is due tomorrow.
+
+I want to understand the standard practice in econometric and empirical-economics papers for presenting "stylized facts" about a new or key variable — that is, the descriptive material that motivates and frames the empirical analysis BEFORE the regression results. Please report concisely on:
+
+1. **What is a "stylized facts" section/treatment, exactly?** Define it. How does it differ from a "summary statistics" table? Are they the same thing or different?
+
+2. **What's typically included?** For each item, briefly describe:
+   - Summary statistics tables (mean, SD, min, max, N) — broken out by subgroup or pooled?
+   - Time-series plots
+   - Scatter plots with notable observations labeled
+   - Histograms / kernel-density plots
+   - Cross-tabulations
+   - Correlation matrices
+   - Maps (when relevant for geographic variation)
+
+3. **Famous examples** of papers that introduce a new variable and lead with stylized facts. The Jones (2016) "Facts of Economic Growth" paper is the canonical reference for cross-country growth — please characterize its style. Also Kaldor's six stylized facts (1957). For cross-country empirics: Mankiw-Romer-Weil (1992)? Hall-Jones (1999)? Acemoglu-Johnson-Robinson (2001)? Hanushek-Woessmann (2012)?
+
+4. **Where in the paper does this material live?** Beginning of the Data section, separate "Stylized Facts" section, embedded in the Introduction, or as figures only at the end?
+
+5. **How many graphs is normal?** I noted in earlier research that MRW (1992) has only 1 figure. What's the modern convention — 0, 1, 2, 3+ figures for an 8-10 page empirical paper?
+
+6. **For my specific case** — a paper showing that Nigeria's out-of-school rate causally suppresses growth — what are the 2–3 most defensible "stylized facts" charts/tables I should include? For example:
+   - Nigeria's OOSC over time vs SSA average?
+   - Nigeria's GDP growth over time vs SSA average?
+   - A scatterplot of period-averaged OOSC vs growth across SSA countries, with Nigeria highlighted?
+   - A summary stats table comparing Nigeria to the rest of the SSA panel?
+
+7. **Practical recommendations for an undergrad term paper** with 8-10 pages and tight word budget — should I prioritize a summary stats table OR a chart? Both? Neither (just describe in prose)?
+
+Report in under 700 words. Be concrete and prescriptive. Cite specific papers and their stylized-facts practices. End with a clear "do this, not that" recommendation for my paper.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ac822cee95e7e0796 (internal ID - do not mention to user. Use SendMessage with to: 'ac822cee95e7e0796' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/91e12c77-89b6-4b15-88f2-bc4fbadd518b/tasks/ac822cee95e7e0796.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

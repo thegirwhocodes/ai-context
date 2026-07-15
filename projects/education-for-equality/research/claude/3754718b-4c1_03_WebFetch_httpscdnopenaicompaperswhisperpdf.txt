@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cdn.openai.com/papers/whisper.pdf
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:43:17 UTC
+========================================================================
+
+URL: https://cdn.openai.com/papers/whisper.pdf
+Extraction prompt: Summarize how Whisper was trained: total hours of audio, sources of the training data, sample rate, mel spectrogram config (n_mels, hop length, window), architecture (encoder-decoder, layers, params by size), training objective, batch size and steps, GPU hours/compute, tokenizer, and any augmentation used. Focus on the recipe someone would need to fine-tune Whisper on a new accent/domain.
+
+----------------------------------------
+
+I appreciate your request, but I need to be transparent: the content you've provided appears to be a PDF file in raw binary/encoded format, not readable text. The data shows PDF structure markers (objects, streams, compression) rather than human-readable content about Whisper's training methodology.
+
+To provide the summary you're asking for—covering Whisper's training hours, data sources, audio configuration, architecture details, training objectives, computational requirements, and fine-tuning guidance—I would need:
+
+1. **Actual readable text** from Whisper documentation or the original research paper
+2. **The Whisper paper** (likely "Robust Speech Recognition via Large-Scale Weak Supervision" from OpenAI)
+3. **Official technical documentation**
+
+If you can provide the content in text format or share the source document, I'd be happy to create a concise summary adhering to your constraints (125-character quote limits, proper attribution, etc.).
+
+Would you like to share the readable version of this document?
+
+[Binary content (application/pdf, 837.2KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/3754718b-4c14-45a6-a55b-f8ad00fbff62/tool-results/webfetch-1784072598860-g6sltx.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

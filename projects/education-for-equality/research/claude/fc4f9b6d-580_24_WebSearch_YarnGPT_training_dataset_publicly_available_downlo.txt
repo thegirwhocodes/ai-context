@@ -1,0 +1,33 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT training dataset publicly available download saheedniyi HuggingFace Nige
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:51:25 UTC
+========================================================================
+
+Search query: YarnGPT training dataset publicly available download saheedniyi HuggingFace Nigerian audio
+
+----------------------------------------
+
+Web search results for query: "YarnGPT training dataset publicly available download saheedniyi HuggingFace Nigerian audio"
+
+Links: [{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"saheedniyi/YarnGPT-local · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT-local"},{"title":"YarnGPT - a saheedniyi Collection","url":"https://huggingface.co/collections/saheedniyi/yarngpt-678875c9c32e0054cf63caf9"},{"title":"Huggingface","url":"https://huggingface.co/saheedniyi/YarnGPT/resolve/main/README.md?download=true"},{"title":"saheedniyi/YarnGPT2 · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Saheedniyi (@saheedniyi_02) / X","url":"https://x.com/saheedniyi_02?lang=en"},{"title":"benjaminogbonna/nigerian_common_voice_dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset"},{"title":"Update README.md · saheedniyi/YarnGPT at 32db593","url":"https://huggingface.co/saheedniyi/YarnGPT/commit/32db59389bbe90f1ceaecf59476de6bda1b723cc"}]
+
+Based on the search results, here's what I found about YarnGPT's training dataset:
+
+YarnGPT was trained on a dataset of publicly available Nigerian movies, podcasts (using subtitle-audio pairs), and open source Nigerian-related audio data on Hugging Face. Audio files were preprocessed and resampled to 24Khz and tokenized using wavtokenizer.
+
+The model by saheedniyi is available on Hugging Face at `saheedniyi/YarnGPT`. However, the search results don't indicate that the actual training dataset itself is publicly available for direct download. Instead, the model weights and code are available through:
+
+- **Hugging Face Model Hub**: https://huggingface.co/saheedniyi/YarnGPT
+- **GitHub Repository**: https://github.com/saheedniyi02/yarngpt
+
+The model was finetuned from HuggingFaceTB/SmolLM2-360M.
+
+If you're looking to download the training dataset specifically, it may not be publicly released as a separate downloadable package. You might want to check the GitHub repository or contact the creator directly for more information about accessing the raw training data.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "EarthKit Agent" geopolitical warning investigation SCSP hackathon github
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:46 UTC
+========================================================================
+
+Search query: "EarthKit Agent" geopolitical warning investigation SCSP hackathon github
+
+----------------------------------------
+
+Web search results for query: ""EarthKit Agent" geopolitical warning investigation SCSP hackathon github"
+
+Links: [{"title":"EarthKit · GitHub","url":"https://github.com/EarthKit"},{"title":"GitHub - global-agent-hackathon/global-agent-hackathon-may-2025: A month-long, open-source AI Agent Hackathon — open to all builders and dreamers working on agents, RAG, tool use, and multi-agent systems.","url":"https://github.com/global-agent-hackathon/global-agent-hackathon-may-2025"},{"title":"Special Competitive Studies Project · GitHub","url":"https://github.com/scspai"},{"title":"GitHub - JessSanChen/SpectreRedTeaming: The Air Force's LLM is supposedly very secure... and we got it to make a few bombs. Agentic LLM jailbreaker. SCSP x AGI House Hackathon Grand Prize Winner. · GitHub","url":"https://github.com/JessSanChen/SpectreRedTeaming"},{"title":"km-Scale Hackathon | HK25 homepage","url":"https://digital-earths-global-hackathon.github.io/hk25/"},{"title":"Hackathon - SCSP","url":"https://www.scsp.ai/hackathon/"},{"title":"Global Hackathon | Oxford, UK","url":"https://digital-earths-global-hackathon-uk.github.io/"},{"title":"Global Hackathon | Hamburg, DE","url":"https://digital-earths-global-hackathon.github.io/hamburg-node/"},{"title":"EarthKit Agent: Geoverification Multi-Modal Agent Tool | by CyberRaya | Medium","url":"https://medium.com/@CyberRaya/earthkit-agent-geoverification-multi-modal-agent-tool-b9d588b1a49f"},{"title":"Digital Earths – Global Hackathon – Digital Earths global hackathon 2025","url":"https://digital-earths-global-hackathon.github.io/"}]
+
+Based on the search results, here's what I found:
+
+**EarthKit Agent Overview:**
+
+The EarthKit Agent is a multi-modal AI tool that optimizes geolocation and verification tasks by combining real-time data integration and automates processes such as building Overpass Turbo queries, analyzing street view and satellite imagery, and performing initial geo-guessing.
+
+**How It Works:**
+
+For geolocation, the user runs a multi-modal agent that takes in a piece of media, and at each step, reasons about the investigative process and executes actions to gather information about the geolocation of the media. When a conclusion is reached, a critic determines whether the conclusion is confident enough to be used for a geolocation task. If so, a result is returned to the user.
+
+**Technical Details:**
+
+The tool processes images through the GeoClip repository as well as Google Lens, and makes use of additional tools like Google Places to verify the location of the image as well as obtaining coordinates.
+
+**Access:**
+
+The tool is accessible at https://agent.earthkit.app/.
+
+However, the search results don't contain specific information about a geopolitical warning investigation or details about its presentation at the SCSP hackathon. The results do show that the Special Competitive Studies Project (SCSP) had an AGI House Hackathon 2025 focused on building AI-driven solutions for national competitiveness, but no specific EarthKit project details related to geopolitical warnings appear in these results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

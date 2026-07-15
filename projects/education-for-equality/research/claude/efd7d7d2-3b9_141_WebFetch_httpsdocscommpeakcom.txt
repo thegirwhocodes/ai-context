@@ -1,0 +1,66 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:26:18 UTC
+========================================================================
+
+URL: https://docs.commpeak.com
+Extraction prompt: What sections/pages are available in CommPeak's documentation? List all navigation links and topics covered.
+
+----------------------------------------
+
+# CommPeak Documentation Navigation Overview
+
+## Main Product Categories
+
+CommPeak's documentation hub organizes resources around six primary products:
+
+1. **Dialer** - "Master your outbound campaigns. Everything you need to set up, optimize, and troubleshoot your dialing operations."
+
+2. **TextPeak** - Messaging and SMS tools with setup, automation, Inbox, and integration guides
+
+3. **Cloud PBX** - Phone system documentation covering setup and customization
+
+4. **Portal** - MyCommPeak account navigation and control center features
+
+5. **PBX Stats** - Call data reporting and analytics capabilities
+
+6. **LookUp** - Number information API references and integration guides
+
+## Additional Documentation Topics
+
+The hub includes supplementary sections for:
+- SMS Service
+- VoIP Service
+- DID Numbers
+- Speech-to-Text
+- Softphone
+- Affiliates/Reseller programs
+
+## Key Navigation Sections
+
+**Main Areas:**
+- Documentation
+- API Reference
+- Changelog
+- Status Page
+
+**Portal Features Covered:**
+- Account creation and onboarding
+- SIP account configuration
+- Caller ID management
+- Number reputation checks
+- Identities and verification
+
+**CommPeak Dialer Topics:**
+- Navigation and search functionality
+- Dashboard access
+- Messaging channels
+- WhatsApp and VoIP integration
+- Inbox management
+
+The documentation maintains version control and recently released v1.7.5 with enhanced accuracy across portal, dialer, and SMS service sections.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

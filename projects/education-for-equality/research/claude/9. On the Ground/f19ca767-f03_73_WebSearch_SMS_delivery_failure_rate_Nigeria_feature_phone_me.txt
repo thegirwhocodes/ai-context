@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SMS delivery failure rate Nigeria feature phone message not received reliability
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:24:05 UTC
+========================================================================
+
+Search query: SMS delivery failure rate Nigeria feature phone message not received reliability
+
+----------------------------------------
+
+Web search results for query: "SMS delivery failure rate Nigeria feature phone message not received reliability"
+
+Links: [{"title":"SMS Delivery Reports Guide | Understanding Analytics & Metrics","url":"https://www.bulksmsnigeria.com/resources/sms-delivery-reports"},{"title":"SMS Delivery and Deliverability: All you need to know","url":"https://textgrid.com/blog/sms-delivery-and-deliverability/"},{"title":"Best Bulk SMS Providers in Nigeria (2026 Comparison)","url":"https://arkesel.com/best-bulk-sms-providers-in-nigeria/"},{"title":"What is SMS Delivery or Deliverability? | Twilio","url":"https://www.twilio.com/docs/glossary/what-is-sms-delivery-deliverability"},{"title":"Nigeria Bulk SMS | Best Bulk SMS & SMS API Provider in Nigeria","url":"https://nigeriabulksms.com/"},{"title":"Nigeria: SMS Guidelines | Twilio","url":"https://www.twilio.com/en-us/guidelines/ng/sms"},{"title":"How to Check Bulk SMS Delivery Reports on Nigeria Bulk SMS","url":"https://nigeriabulksms.com/blog/bulk-sms-delivery-reports/"},{"title":"Bulk SMS Delivery in Africa: Key Challenges and Insights","url":"https://africala.net/blog/top-challenges-in-bulk-sms-delivery-in-africa/"},{"title":"Case Studies: Successful Bulk SMS Campaigns in Nigeria - arkesel.com","url":"https://arkesel.com/case-studies-successful-bulk-sms-campaigns-in-nigeria/"},{"title":"Nigeria SMS Pricing 2025: MTN, Airtel, Twilio & Bulk SMS Costs | Sent Resources | Sent","url":"https://www.sent.dm/en/resources/sms-pricing/nigeria-sms-pricing"}]
+
+I've completed a web search for SMS delivery failure rates in Nigeria focusing on feature phones and message reliability. Here are the key findings:
+
+## SMS Delivery Rates in Nigeria
+
+Delivery success rates to Nigeria typically range from 85–95% depending on carrier relationships and routing quality. This means failure rates would generally be between 5-15%, depending on the SMS provider and service quality.
+
+## Acceptable Failure Rate Standards
+
+An acceptable failure rate is 5% or less. Below 90% delivery rate indicates significant issues that need investigation.
+
+## Common Reasons for SMS Delivery Failures in Nigeria
+
+Several factors contribute to SMS delivery failures:
+
+- In Nigeria, delivery challenges are particularly pronounced in areas with poor network coverage, where message delivery can be inconsistent or delayed.
+
+- Poor network coverage, switched-off mobile phones, full SMS inboxes, roaming phones, invalid phone numbers, networks that don't support status reports, or spam suspicion can cause delivery failures.
+
+- Carrier policies or recipient preferences cause automatic message filtration or spam classification, with messages containing certain keywords, URLs, or non-verified sender IDs being more likely to be blocked.
+
+## Feature Phone Considerations
+
+While the search results don't specifically address feature phone failure rates, messages might not be delivered due to issues like full memory, coding errors, temporary network disconnection, or lack of support for certain message types or characters by the recipient's phone.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

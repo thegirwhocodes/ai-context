@@ -1,0 +1,40 @@
+========================================================================
+AGENT RESEARCH: Recover all Kai requirements + Sabi pipeline
+Session: 34417be3-713b-4e15-be5c-22ff8ad7f137
+Time: 2026-06-19 17:24:37 UTC
+========================================================================
+
+You are recovering the COMPLETE set of product requirements Naomi has ever stated for "Kai" (her AI productivity/pomodoro agent), and documenting how the "Sabi" pipeline is architected so Kai's agent can be built the same way. Do NOT edit anything. Produce one consolidated report with file:line citations.
+
+READ THESE SOURCES (skim transcripts — prioritize Naomi's own statements of intent, not assistant messages; cap effort, summarize, never dump raw transcripts):
+
+1. /Users/naomiivie/kai/AGENTS.md and /Users/naomiivie/kai/CLAUDE.md — extract every stated requirement and every explicit DON'T.
+2. All of /Users/naomiivie/kai/docs/*.md — especially BUSINESS_PLAN.md, RESEARCH.md, IMPLEMENTATION_PLAN.md, AI_MUSIC_AND_SPOTIFY_RESEARCH.md, BRAND_VISUAL_RESEARCH.md, ADS_AND_TESTING_RESEARCH.md, ALEXA.md, COMPETITIVE_AND_ARCHITECTURE_REVIEW.md, PRODUCTIVITY_STATS_RESEARCH.md if present.
+3. /Users/naomiivie/kai/README.md.
+4. Session transcripts where Naomi described what she wants Kai to do. Use `rg` to search, then read only the most relevant hits:
+   - /Users/naomiivie/.codex/sessions/  (look for Kai-related sessions; known thread IDs: 019eb76f-525d-7770-801e-9867427e6423 and 019ecd67-72b3-7931-8a21-fda97d0299b1)
+   - /Users/naomiivie/Education for Equality/.claude-sessions/
+   - /Users/naomiivie/kai/.claude-sessions/ if it exists
+   Search for terms like: kai, pomodoro, music, spotify, voice, "hey kai", flocus, study, background, calendar, agent, prompt.
+5. THE SABI PIPELINE: explore /Users/naomiivie/Education for Equality (this is the "Sabi"/Education for Equality project). Summarize its AGENT ARCHITECTURE so it can be replicated: entry points, how it calls the LLM (which SDK/model, streaming?), the tool/function-calling pattern, how the agent loop is structured, how integrations are wired, how the system prompt is built, and any orchestration/pipeline stages. Identify the concrete reusable pattern Naomi means by "set up like Sabi."
+
+OUTPUT a structured report:
+A. CONSOLIDATED KAI REQUIREMENTS — grouped by area (Product/UX & visual, Agent behavior/prompt, Calendar, Email, Music, Voice/Alexa, Internet, Study experience, Business/Brand). Each a crisp bullet. Flag explicit DON'Ts separately (e.g. no anime, no fake "energy dip" claims, no odd durations).
+B. THE SABI PIPELINE — architecture summary + the specific pattern to replicate for Kai's agent, with file references.
+C. WHAT NAOMI HAS ASKED FOR THAT IS NOT YET BUILT (gaps), especially around music, multi-user, study experience, and the agent prompt.
+D. ANYTHING about how Naomi wants the agent to behave/sound/feel (voice, tone, personality).
+
+Keep it tight and well-organized. Cite paths. Do not touch /Users/naomiivie/kai/src/lib/music or MusicPanel — I am reading those myself.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a5d8524263894008e (internal ID - do not mention to user. Use SendMessage with to: 'a5d8524263894008e' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-kai/34417be3-713b-4e15-be5c-22ff8ad7f137/tasks/a5d8524263894008e.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

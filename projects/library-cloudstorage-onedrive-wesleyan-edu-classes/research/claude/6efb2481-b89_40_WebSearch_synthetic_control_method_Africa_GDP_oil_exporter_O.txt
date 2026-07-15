@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control method" Africa GDP "oil exporter" OR "resource curse"
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:39:02 UTC
+========================================================================
+
+Search query: "synthetic control method" Africa GDP "oil exporter" OR "resource curse"
+
+----------------------------------------
+
+Web search results for query: ""synthetic control method" Africa GDP "oil exporter" OR "resource curse""
+
+Links: [{"title":"Does the resource curse exist? Evidence from oil discovery and production in Ghana - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0301420725000017"},{"title":"Resource curse and growth challenges in MENA oil exporter countries: A case for governance reforms in the post Arab Spring uprisings context - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S1757780223000070"},{"title":"Can the resource curse be avoided? An empirical examination of the nexus between crude oil price and economic growth | SN Business & Economics | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s43546-021-00179-x"},{"title":"A regional resource curse? A synthetic-control approach to oil extraction in Basilicata, Italy","url":"https://ideas.repec.org/a/eee/ecolec/v185y2021ics0921800921000999.html"},{"title":"Refining the Oil Curse - Yu-Ming Liou, Paul Musgrave, 2014","url":"https://journals.sagepub.com/doi/abs/10.1177/0010414013512607"},{"title":"The resource curse exorcised: Evidence from a panel of countries - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0304387815000450"},{"title":"Francesco Caselli Power Struggles and the Natural Resource Curse Working paper","url":"http://eprints.lse.ac.uk/4926/1/pwer_struggles_and_the_natural_resource_curse_LSERO.pdf"},{"title":"Effects of oil export revenue on economic growth in Nigeria: A time varying analysis of resource curse - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0301420717301344"},{"title":"Was the resource boom more akin to a resource curse for Africa?","url":"https://blogs.worldbank.org/en/developmenttalk/was-resource-boom-more-akin-resource-curse-africa"},{"title":"A regional resource curse? A synthetic-control approach to oil extraction in Basilicata, Italy - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S0921800921000999"}]
+
+I found relevant research combining the synthetic control method with analysis of African oil exporters and the resource curse. Here are the key findings:
+
+## Synthetic Control Method Applications
+
+The synthetic control approach has been used to examine oil discovery and production impacts, finding that oil discovery and production have a positive impact on economic growth but a negative impact on the reduction of unemployment through a crowding out effect.
+
+One study comparing Ghana (which discovered oil in 2007) to 40 other sub-Saharan African countries without such discoveries over the period 1998–2018 employed this methodology. The synthetic control method compares actual trends of development indicators with a counterfactual created by taking a weighted average of trends of other regions—a 'synthetic' comparison unit.
+
+## Resource Curse Evidence in Africa
+
+Discoveries of oil in countries like Angola and Nigeria have produced little to no effect and even sometimes negative effects on economic growth. In actual real per capita growth terms, non-renewable resource producers did no better during the commodity boom than economies lacking non-renewable resources, despite vastly more favorable external terms of trade.
+
+The synthetic control method has been noted as among the first quasi-experimental approaches to study the resource curse in a cross-country setting, allowing for causal analysis for individual countries.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

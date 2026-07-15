@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://humancapital.worldbank.org/hciplus/methodology/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:33:34 UTC
+========================================================================
+
+URL: https://humancapital.worldbank.org/hciplus/methodology/
+Extraction prompt: Extract the methodology for how the HCI+ translates pillar scores into earnings losses. How is the 111% calculated? Is it additive across pillars - meaning can you add up education's contribution + health's contribution + employment's contribution to get 111%? What are the weights for each pillar? How does a pillar score translate to percentage of earnings lost?
+
+----------------------------------------
+
+I cannot extract the methodology you're requesting from the provided web page content. The page appears to be a loading interface for the World Bank's HCI+ tool, containing only:
+
+- Schema markup describing the tool
+- Analytics/tracking code
+- JavaScript initialization code for a SvelteKit application
+
+The actual methodology documentation—including how pillar scores translate to earnings losses, the 111% calculation, pillar weights, and scoring mechanisms—is not present in this content snippet.
+
+To find this information, you would need to:
+1. Visit the full Methodology page on the World Bank HCI+ website
+2. Consult their technical documentation or user guides
+3. Contact the World Bank directly for detailed methodology documentation
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

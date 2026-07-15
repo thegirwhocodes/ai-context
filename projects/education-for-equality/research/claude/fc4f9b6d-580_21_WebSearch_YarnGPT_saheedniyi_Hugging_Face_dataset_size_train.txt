@@ -1,0 +1,30 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT saheedniyi Hugging Face dataset size training hours audio
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:48:55 UTC
+========================================================================
+
+Search query: YarnGPT saheedniyi Hugging Face dataset size training hours audio
+
+----------------------------------------
+
+Web search results for query: "YarnGPT saheedniyi Hugging Face dataset size training hours audio"
+
+Links: [{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Text-to-speech datasets · Hugging Face","url":"https://huggingface.co/learn/audio-course/en/chapter6/tts_datasets"},{"title":"saheedniyi/YarnGPT-local · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT-local"},{"title":"Choosing a dataset - Hugging Face Audio Course","url":"https://huggingface.co/learn/audio-course/en/chapter5/choosing_dataset"},{"title":"facebook/data2vec-audio-large-100h · Hugging Face","url":"https://huggingface.co/facebook/data2vec-audio-large-100h"},{"title":"Datasets · Hugging Face","url":"https://huggingface.co/docs/datasets/index"},{"title":"Datasets – Hugging Face","url":"https://huggingface.co/datasets"},{"title":"esb/datasets · Datasets at Hugging Face","url":"https://huggingface.co/datasets/esb/datasets"},{"title":"A Complete Guide to Audio Datasets","url":"https://huggingface.co/blog/audio-datasets"}]
+
+Based on the search results, here's what I found about YarnGPT by saheedniyi:
+
+## Dataset and Training Information
+
+YarnGPT was trained on a dataset of publicly available Nigerian movies, podcasts (using subtitle-audio pairs) and open source Nigerian-related audio data on Huggingface, with audio files preprocessed and resampled to 24Khz and tokenized using wavtokenizer.
+
+However, the search results do not contain specific information about the exact dataset size or training hours for the YarnGPT model. The Hugging Face model card for saheedniyi/YarnGPT does not appear to include these detailed metrics in the publicly available information returned by the search.
+
+YarnGPT is a Nigerian-Accented English Text-to-Speech Model that was released in 2025. For more detailed specifications about dataset size and training hours, you would need to check the full model card directly on the Hugging Face Hub at https://huggingface.co/saheedniyi/YarnGPT.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude computer use browser automation 2026 capabilities build agent that contro
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-05 18:03:20 UTC
+========================================================================
+
+Search query: Claude computer use browser automation 2026 capabilities build agent that controls browser
+
+----------------------------------------
+
+Web search results for query: "Claude computer use browser automation 2026 capabilities build agent that controls browser"
+
+Links: [{"title":"Claude Computer Use: What $20/Mo Actually Gets You [2026]","url":"https://tech-insider.org/anthropic-claude-computer-use-agent-2026/"},{"title":"Claude can now control your computer. This changes everything (and not for the better).","url":"https://medium.com/@codeai/claude-can-now-control-your-computer-this-changes-everything-and-not-in-a-fun-way-7d73e3dd7995"},{"title":"Computer use tool - Claude API Docs","url":"https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool"},{"title":"Claude Code Q1 2026 Update Roundup: Every Feature That Actually Matters | MindStudio","url":"https://www.mindstudio.ai/blog/claude-code-q1-2026-update-roundup"},{"title":"Computer Use Agents 2026: Claude vs OpenAI vs Gemini","url":"https://www.digitalapplied.com/blog/computer-use-agents-2026-claude-openai-gemini-matrix"},{"title":"Use Claude Code with Chrome (beta) - Claude Code Docs","url":"https://code.claude.com/docs/en/chrome"},{"title":"Building a Claude Desktop Automation Agent: Beyond the Browser to Native Applications | CallSphere Blog","url":"https://callsphere.ai/blog/building-claude-desktop-automation-agent-beyond-browser-native-applications"},{"title":"Automate Browser Tasks with Claude Code and the Playwright MCP Server | MindStudio","url":"https://www.mindstudio.ai/blog/automate-browser-tasks-claude-code-playwright"},{"title":"Claude Can Now Control Your Computer: What It Means for Work Automation | Petr Vojáček","url":"https://petrvojacek.cz/en/blog/claude-computer-use/"},{"title":"Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku \\ Anthropic","url":"https://www.anthropic.com/news/3-5-models-and-computer-use"}]
+
+Based on the search results, here's comprehensive information about Claude's computer use and browser automation capabilities in 2026:
+
+## Claude Computer Use Overview
+
+Computer use is a beta feature that enables Claude to interact with desktop environments. It can open applications, navigate menus, click buttons, type text, browse the web, manage files, fill out forms, and execute complex multi-step workflows across different applications.
+
+## How It Works
+
+Unlike traditional automation tools that rely on APIs or pre-built connectors, Claude literally looks at the screen through screenshots, interprets what it sees, and takes action. Claude Computer Use is not a separate product; it is a tool Anthropic exposes through the standard Messages API. The developer passes in a computer use tool definition, Claude returns a structured action (click coordinates, key sequence, scroll direction), the runtime executes it, and the updated screenshot comes back on the next turn.
+
+## Current Availability (2026)
+
+As of March 2026, Claude Computer Use is available for macOS desktops in research preview. Anthropic has confirmed that Windows support is planned but has not announced a specific release date. Based on Anthropic's release cadence, Windows support is expected by Q3 2026.
+
+## Browser Automation Capabilities
+
+Claude Code integrates with the Claude in Chrome browser extension to give you browser automation capabilities from the CLI or the VS Code extension. Connect Claude Code to your Chrome browser to test web apps, debug with console logs, automate form filling, and extract data from web pages.
+
+## Building Browser-Controlling Agents
+
+Computer Use allows Claude Code to interact with graphical interfaces: clicking buttons, filling forms, reading visual content, navigating web applications. It works by taking screenshots, reasoning about what's on screen, and issuing mouse and keyboard actions.
+
+For web automation specifically, there's also Playwright integration: Claude Code automation with Playwright CLI lets Claude navigate pages, click elements, fill forms, take screenshots, extract data, and handle authenticated sessions. It does this by connecting Claude to a running browser instance through a Model Context Protocol (MCP) server.
+
+## Safety Measures
+
+Anthropic has implemented multiple safety layers including user halt commands, prompt-injection scanning, security vulnerability detection, and Constitutional AI alignment.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

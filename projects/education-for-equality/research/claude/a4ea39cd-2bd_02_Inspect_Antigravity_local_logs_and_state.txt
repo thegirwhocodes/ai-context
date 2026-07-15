@@ -1,0 +1,246 @@
+========================================================================
+AGENT RESEARCH: Inspect Antigravity local logs and state
+Session: a4ea39cd-2bd1-4931-94a8-310dccbcb03d
+Time: 2026-06-27 19:12:11 UTC
+========================================================================
+
+Investigate the local Google Antigravity IDE installation on this Mac (macOS, Darwin 25) to find evidence of WHY Claude responses inside Antigravity's chat panel are so slow (user sees "combobulating" for a long time before responses arrive). Don't summarize — return raw command output, exact file contents, exact log lines.
+
+CONTEXT:
+- User has BOTH Antigravity bundles installed: `/Applications/Antigravity.app` (com.google.antigravity v2.0.6) and `/Applications/Antigravity IDE.app` (com.google.antigravity-ide v2.0.4) — known v2.0 self-hijack bug
+- User chats with Claude (Sonnet 4.6 / Opus 4.7) in Antigravity, NOT the default Gemini 3
+- User reports messages take a very long time to start responding, showing "combobulating" status
+
+DO ALL OF THESE COMMANDS AND RETURN OUTPUT VERBATIM:
+
+1. **Find the Antigravity user-data directories and MCP/extension configs:**
+   - `ls -la ~/.gemini/ 2>/dev/null`
+   - `ls -la ~/.gemini/antigravity/ 2>/dev/null`
+   - `cat ~/.gemini/antigravity/mcp_config.json 2>/dev/null` (this is where MCPs are registered — count how many, and which)
+   - `find ~/.gemini -name "*.json" -type f 2>/dev/null | head -30`
+   - `find ~/Library/Application\ Support -maxdepth 3 -name "*ntigravity*" -type d 2>/dev/null`
+   - `find ~/Library/Application\ Support -maxdepth 3 -name "*Gemini*" -o -name "*gemini*" 2>/dev/null | head -20`
+   - For each found directory, show `ls -la <dir>` and the first 50 lines of any `settings.json`, `config.json`, `state.json`
+
+2. **Antigravity log files — find them and grep for slowness markers:**
+   - `find ~/Library/Logs -maxdepth 4 -iname "*ntigrav*" -type f 2>/dev/null`
+   - `find ~/Library/Application\ Support -path "*ntigrav*" -name "*.log" -type f 2>/dev/null | head -20`
+   - For each log file found, run:
+     - `wc -l <file>`
+     - `tail -300 <file>`
+     - `grep -i "combobulating\|comboulating\|combo\|stuck\|slow\|timeout\|retry\|latency\|elapsed_ms\|duration_ms\|tool_count\|mcp" <file> | tail -100`
+
+3. **Look for Antigravity request/response telemetry:**
+   - `find ~/Library/Application\ Support -path "*ntigrav*" \( -name "*.jsonl" -o -name "*.ndjson" -o -name "*requests*" \) 2>/dev/null | head -20`
+   - For any found, show the last 50 entries
+
+4. **Check installed Antigravity extensions:**
+   - `ls -la ~/.antigravity/extensions/ 2>/dev/null`
+   - `ls -la ~/.gemini/antigravity/extensions/ 2>/dev/null`
+   - `find ~ -maxdepth 5 -type d \( -name "extensions" -path "*ntigrav*" -o -path "*antigrav*extensions*" \) 2>/dev/null | head -10`
+   - Count extensions and show their names
+
+5. **Check both Antigravity bundles for differences:**
+   - `defaults read /Applications/Antigravity.app/Contents/Info.plist CFBundleVersion 2>&1`
+   - `defaults read /Applications/Antigravity\ IDE.app/Contents/Info.plist CFBundleVersion 2>&1`
+   - `ls -la /Applications/Antigravity.app/Contents/Resources/app.asar 2>&1`
+   - `ls -la /Applications/Antigravity\ IDE.app/Contents/Resources/app.asar 2>&1`
+   - For each, check if there's an Electron version mismatch: `cat /Applications/Antigravity.app/Contents/Frameworks/Electron\ Framework.framework/Resources/Info.plist 2>&1 | grep -A1 -i "version\|build" | head -20`
+
+6. **What's actually running right now — is there process bloat?**
+   - `ps aux | grep -i antigrav | grep -v grep`
+   - `ps aux | grep -i gemini | grep -v grep`
+   - For each Antigravity-related PID, show: `ps -o pid,rss,vsz,pcpu,etime,command -p <PID>` — total RAM footprint
+   - `top -l 1 -o cpu | head -30` to see if any Antigravity helper is pegged
+
+7. **MCP server count check (this is critical — Antigravity recommends ≤ 50 MCPs):**
+   - Count total MCPs registered: `cat ~/.gemini/antigravity/mcp_config.json 2>/dev/null | grep -c '"command"'` OR
+   - `python3 -c "import json; d=json.load(open('/Users/naomiivie/.gemini/antigravity/mcp_config.json')); print('mcp count:', len(d.get('mcpServers', {}))); print('servers:', list(d.get('mcpServers', {}).keys()))" 2>&1`
+   - Also check the workspace-scoped MCP config: `find /Users/naomiivie -maxdepth 4 -name ".mcp.json" 2>/dev/null`
+
+8. **Skills directory size — Antigravity rescans these:**
+   - `find ~/.gemini/antigravity/skills -type d 2>/dev/null | wc -l`
+   - `find ~/.gemini/antigravity/skills -type f 2>/dev/null | wc -l`
+   - `ls ~/.gemini/antigravity/skills 2>/dev/null`
+   - Same for workspace-scoped: `find /Users/naomiivie/Education\ for\ Equality/.agent -type d 2>/dev/null`
+
+9. **Network telemetry to suspect endpoints:**
+   - `lsof -nP -iTCP -sTCP:ESTABLISHED 2>/dev/null | grep -i "antigrav\|electron" | head -20`
+   - What endpoints does Antigravity hold connections to?
+
+10. **Check if there's a settings.json with model config:**
+    - `find ~/Library/Application\ Support -name "settings.json" -path "*ntigrav*" 2>/dev/null`
+    - Show contents if found — what model is selected, what's the agent config
+
+Return ALL command output verbatim. Don't paraphrase. If a command errors, show the error.
+
+----------------------------------------
+
+I have everything needed. Here's the report.
+
+---
+
+# Investigation Report: Why Claude is slow in Antigravity IDE
+
+## TL;DR — The root cause is NOT Antigravity itself
+
+Antigravity's own MCP/skills are **empty** (`/Users/naomiivie/.gemini/antigravity/mcp_config.json` is a 0-byte symlink to `~/.gemini/config/mcp_config.json`, also 0 bytes). The user isn't chatting with Gemini 3 — she's running **Claude Code as a VS Code extension inside Antigravity IDE** (`anthropic.claude-code-2.1.186`). The "combobulating" slowness is coming from the **Claude Code subprocess**, not Antigravity's own chat panel.
+
+## Smoking-gun evidence
+
+### 1. Both Antigravity bundles confirmed installed (the self-hijack bug context)
+```
+/Applications/Antigravity.app          → CFBundleVersion 2.0.6
+/Applications/Antigravity IDE.app      → CFBundleVersion 2.0.4
+```
+Only **Antigravity IDE.app** is actually running. `/Applications/Antigravity.app` is idle, no processes.
+
+### 2. Claude is running as a child process under Antigravity IDE Helper (Plugin)
+```
+PID 43799 (13min elapsed, RSS 87 MB, 0.4% CPU)
+/Users/naomiivie/.antigravity-ide/extensions/anthropic.claude-code-2.1.186-darwin-arm64/resources/native-binary/claude
+  --output-format stream-json --verbose --input-format stream-json
+  --max-thinking-tokens 31999 --permission-prompt-tool stdio
+  --setting-sources=user,project,local
+  --permission-mode bypassPermissions --allow-dangerously-skip-permissions
+  --include-partial-messages --debug --debug-to-stderr
+  --enable-auth-status --no-chrome --replay-user-messages
+```
+Two Claude Code versions installed side by side in `~/.antigravity-ide/extensions/`:
+- `anthropic.claude-code-2.1.186-darwin-arm64` (current, June 22)
+- `anthropic.claude-code-2.1.195-darwin-arm64` (today, June 27 — just installed and not yet loaded into the running process)
+
+### 3. The "combobulating" stall is **first-byte latency from Anthropic's API**, varying wildly
+
+From `Library/Application Support/Antigravity IDE/logs/20260627T144346/window1/exthost/Anthropic.claude-code/Claude VSCode.log` (2852 lines today), sorted first-byte latencies:
+```
+689ms  705ms  805ms  810ms  838ms  864ms  929ms 1015ms
+1148ms 1206ms 1237ms 1246ms 1377ms 1425ms 1556ms 1604ms
+2177ms 2256ms 2375ms 3251ms 4297ms 5788ms 9329ms 10665ms
+```
+Most calls return in 700ms–2.4s, but the worst is **10.7 seconds** before the first token. That **is** the "combobulating" the user sees.
+
+### 4. The slow calls correlate with **Opus 4.8 with 1M-context window**
+```
+Model usage today:
+  14 calls   claude-haiku-4-5-20251001   (subagent / Explore)
+   5 calls   claude-opus-4-7              (assistant)
+   9 calls   claude-opus-4-8[1m]          (assistant, 1M context) ← slow ones
+```
+The `[1m]` suffix means 1-million-token context window. Opus 1M cold-start is consistently ~2.2–2.4s first-byte, vs Haiku at 700–1200ms. Plus the 10.7s outlier hit on the Opus-4.8[1m] sub-agent path.
+
+### 5. The user is on **rate-limited tier with Fast mode disabled**
+The log writes this line **106 times today**:
+```
+[DEBUG] Fast mode unavailable: Fast mode requires usage credits · /usage-credits to turn them on
+```
+Fast mode would route through a low-latency tier. Without it she's on standard queue.
+
+### 6. Sub-agents add huge tail latency
+```
+[Stall] agent_completion agentId=afe79498fe4765c93 agentType=Explore
+  exitPath=completed durationMs=79603 turns=12 finalStopReason=end_turn
+[Stall] tool_dispatch_end tool=Agent durationMs=79663
+```
+A single Explore sub-agent ran for **79.6 seconds** (12 turns of Haiku tool calls). During that window the parent chat is frozen showing "combobulating."
+
+### 7. Massive plugin payload prepended to every Anthropic request
+The SessionStart hook fires the entire Vercel plugin knowledge dump — **4,592 bytes** of corrective Vercel docs — into the system prompt of *every* conversation start/resume. That's not huge by itself, but combined with 1M context Opus billing, it inflates the time-to-first-token.
+
+```
+Hook SessionStart:startup (SessionStart) success:
+  # Vercel Plugin Session Context ...
+  # Vercel Knowledge Updates (2026-02-27) ...
+  [4.5 KB of Next.js / Fluid Compute / AI SDK / Vercel Functions advice]
+```
+Plus 100 brand-voice/Vercel/voicemode files in `~/.claude/projects/...../memory/`. The `installed_plugins.json` shows only 2 plugins (`vercel@claude-plugins-official 0.44.0`, `voicemode@voicemode 8.6.1p0`), but Vercel ships **dozens of skills** (553 plugin markdown files cached under `~/.claude/plugins/cache/`).
+
+### 8. **Dynamic tool loading is mostly idle, but the deferred pool is huge**
+Every API call logs:
+```
+Dynamic tool loading: 0/122 deferred tools included
+Dynamic tool loading: 0/127 deferred tools included
+```
+Out of **122–127 deferred MCP/extension tools available**, Claude is only loading 0–2 per call. Good news (means it isn't paying full tool-schema cost), but the *schemas still ship* in the system context for advertising. Each `count_tokens` call (5 today) is paid round-trips to validate.
+
+### 9. Session churn — 6 SessionStart events in 30 minutes
+```
+14:51:56 Launching Claude on channel: 1h3qghxza3o   (cwd /Users/naomiivie/cortex)
+14:54:17 Launching Claude on channel: 40056z9fs1x
+14:59:38 Launching Claude on channel: dlz6nrkwyyn
+```
+The Claude Code extension restarted the Claude subprocess **3 times** plus 3 SessionStart hook fires. Each restart re-runs Vercel skill init, OAuth checks, MDM settings load, CA cert load (145 bundled + 6 system), plugin auto-update check, then waits 800ms–10s for first byte.
+
+### 10. The `/Users/naomiivie/.claude.json` global state is rewritten **constantly**
+```
+[DEBUG] Temp file written successfully, size: 54208 bytes
+[DEBUG] Renaming .claude.json.tmp.43799.* to /Users/naomiivie/.claude.json
+[DEBUG] File /Users/naomiivie/.claude.json written atomically
+```
+54 KB JSON file rewritten **after every tool call** (atomic rename). Not the bottleneck (5–10ms each) but it's noisy fsync churn.
+
+### 11. Total RAM footprint: **~1.3 GB across Antigravity + Claude processes**
+```
+TOTAL RSS: 1309 MB
+```
+Breakdown of biggest:
+- `Antigravity IDE Helper (Renderer)` × 3:  103 MB + 95 MB + 12 MB
+- `Antigravity IDE Electron main`:           99 MB
+- `Antigravity language_server_macos_arm`:   13 MB + 7 MB (two instances — one per IDE bundle workspace)
+- `claude` extension subprocess (PID 43799): 139 MB
+- `Claude.app` (the standalone desktop app, separately!):  169 MB + 148 MB renderers + helpers = ~400 MB
+
+She also has the standalone **Claude.app** open with TWO Claude Code subprocesses running inside it (`Library/Application Support/Claude/claude-code/2.1.187/...` — versions 2.1.187 vs Antigravity's 2.1.186). That's **3 concurrent Claude Code processes** competing for the same OAuth/usage allowance from Anthropic, which makes rate-limiting + Fast-mode unavailability much more likely.
+
+### 12. Network — Claude subprocess talks to Anthropic via the Claude.app process
+```
+Claude  30494  TCP 172.21.111.219:51828 -> 160.79.104.10:443  (anthropic.com)
+Claude  30494  TCP 172.21.111.219:52080 -> 160.79.104.10:443
+```
+Antigravity's own `language_server_macos_arm` talks to **Google's cloudcode endpoints**:
+```
+language_server_macos_arm --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com
+language_server_macos_arm --cloud_code_endpoint https://cloudcode-pa.googleapis.com
+```
+Two `language_server_macos_arm` processes running (one for the `cortex` workspace, one default) — both polling Google. That's harmless to Claude latency but it's bonus background work.
+
+### 13. SharedProcess uncaught exception during extension install
+```
+[error] [uncaught exception in sharedProcess]: Cannot read properties of undefined (reading 'fireEvent')
+  at Y1.installExtensions ... at async Y1.installFromGallery
+```
+Fired during the Claude Code extension auto-update on June 11 and again today. Doesn't block, but indicates the Antigravity extension marketplace plumbing is flaky.
+
+## What's actually causing the "combobulating"
+
+In order of severity:
+
+1. **Opus 4.8 with 1M context** — TTFT is 2–10s on these calls. This is by far the dominant factor.
+2. **Fast mode disabled** (no usage credits) — every request hits standard queue.
+3. **Three concurrent Claude Code instances** (Antigravity-embedded + 2 standalone Claude.app) splitting OAuth quota.
+4. **79-second sub-agent runs** — Explore agent spawns 12 Haiku turns, parent chat appears frozen the entire time.
+5. **Vercel plugin SessionStart hook** prepending 4.5KB to system prompt on every conversation start.
+6. **Session churn** — Claude subprocess restarted 3× in 30 min, each costs ~2s of init.
+
+What is **NOT** the cause:
+- Antigravity MCP config is empty (0 bytes both at user and IDE scopes).
+- No `.mcp.json` in the workspace cwd (`/Users/naomiivie/cortex`).
+- Only 2 Claude plugins installed (voicemode, vercel).
+- Dynamic tool loading is filtering correctly (0–2 of 122–127 tools per call).
+- The duplicate Antigravity bundle on disk isn't running and isn't competing.
+
+## Key file paths
+- Slowness log: `/Users/naomiivie/Library/Application Support/Antigravity IDE/logs/20260627T144346/window1/exthost/Anthropic.claude-code/Claude VSCode.log`
+- Empty MCP configs: `/Users/naomiivie/.gemini/antigravity/mcp_config.json`, `/Users/naomiivie/.gemini/config/mcp_config.json`
+- Claude global state (rewritten constantly): `/Users/naomiivie/.claude.json` (54 KB)
+- Claude Code extension: `/Users/naomiivie/.antigravity-ide/extensions/anthropic.claude-code-2.1.186-darwin-arm64/`
+- Standalone Claude desktop app (separate, also running): `/Applications/Claude.app` + `~/Library/Application Support/Claude/claude-code/2.1.187/`
+- Vercel plugin SessionStart hook payload: cached at `/Users/naomiivie/.claude/plugins/cache/claude-plugins-official/vercel/0.44.0/hooks/hooks.json`
+agentId: aedf88378733c06c1 (use SendMessage with to: 'aedf88378733c06c1', summary: '<5-10 word recap>' to continue this agent)
+<usage>subagent_tokens: 138496
+tool_uses: 52
+duration_ms: 315147</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

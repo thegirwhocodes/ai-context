@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://scsp222.substack.com/p/recapping-the-ai-expo-for-national
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:19:15 UTC
+========================================================================
+
+URL: https://scsp222.substack.com/p/recapping-the-ai-expo-for-national
+Extraction prompt: Extract everything about SCSP's recap of the AI+ Expo: attendance, programming, hackathon results and winners, demo highlights, named speakers, exhibitor highlights, deal/partnership announcements. What went well, what got attention, what made winning teams stand out?
+
+----------------------------------------
+
+# AI Expo for National Competitiveness Recap
+
+## Attendance & Scale
+The event drew **over 10,000 attendees, 150 exhibitors, and 440 speakers** across two days in Washington, DC. The expo featured 16 stages and multiple specialized venues.
+
+## Key Programming & Speakers
+Senior government officials participated prominently, including:
+- National Security Advisor Jake Sullivan
+- Secretary of Commerce Gina Raimondo
+- Chairman of the Joint Chiefs of Staff General C.Q. Brown, Jr.
+- Senate Majority Leader Chuck Schumer
+
+International representation included the UK Chief of the Defence Staff and officials from Singapore and the Philippines.
+
+## Notable Elements
+**Demos & Exhibits**: Companies showcased robots, drones, and software. OpenAI demonstrated ChatGPT capabilities, while Palantir's IC2 technology and Google DeepMind offerings were on display. The Department of Energy and National Labs exhibited.
+
+**Talent Marketplace**: The expo included career development opportunities and educational pathways for professionals at all levels.
+
+**Bookstore**: Over 100 books were displayed with author conversations, including David Sanger discussing his work on U.S.-China relations.
+
+## Outcomes
+The organizers characterized the event as "a catalyst for collective action" that bridged cutting-edge innovation with national security concerns. Upcoming video content from speakers will be published on SCSP's YouTube channel.
+
+**No hackathon results, winners, or partnership announcements were mentioned in this document.**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

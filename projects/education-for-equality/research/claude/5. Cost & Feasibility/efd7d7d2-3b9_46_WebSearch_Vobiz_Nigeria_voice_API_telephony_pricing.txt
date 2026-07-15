@@ -1,0 +1,33 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vobiz Nigeria voice API telephony pricing
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:06 UTC
+========================================================================
+
+Search query: Vobiz Nigeria voice API telephony pricing
+
+----------------------------------------
+
+Web search results for query: "Vobiz Nigeria voice API telephony pricing"
+
+Links: [{"title":"Vobiz | SIP Trunk, Voice API & Programmable Telephony for AI","url":"https://vobiz.ai/"},{"title":"Vobiz Docs — API Documentation for Voice & Telephony","url":"https://www.docs.vobiz.ai/"},{"title":"Programmable Voice Pricing in Nigeria | Twilio","url":"https://www.twilio.com/en-us/voice/pricing/ng"},{"title":"Vobiz API Documentation","url":"https://www.docs.vobiz.ai/integrations"},{"title":"Voice API Pricing in Nigeria | Plivo","url":"https://www.plivo.com/voice/pricing/ng/"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Voice API Pricing - Flexible pricing","url":"https://telnyx.com/pricing/voice-api"},{"title":"15 Best VoIP Providers in Nigeria for International Calls","url":"https://frejun.com/top-15-voice-over-ip-providers-in-nigeria-for-international-calling/"},{"title":"Sendchamp - Voice API Platform & Pricing","url":"https://sendchamp.com/voice"},{"title":"The Best VoIP Intercom Phone Providers in Nigeria for 2025 | RapidBTS","url":"https://rapidbts.ng/voip-providers-nigeria/"}]
+
+Based on the search results, I found information about Vobiz's voice API and telephony services:
+
+Vobiz offers SIP trunk, voice API, and programmable telephony for voice AI. The service includes instant DIDs, WebRTC, and voice agents, and you can start free.
+
+However, the search results do not contain specific pricing details for Vobiz Nigeria's voice API telephony services. The documentation and main website pages that appeared in the results focus on features and integration capabilities rather than displaying detailed pricing information. 
+
+To find current pricing, you would likely need to:
+- Visit the Vobiz website directly at https://vobiz.ai/
+- Check their pricing page (which wasn't fully captured in these search results)
+- Contact their sales team for Nigeria-specific pricing
+
+The results do show that you would need to add funds to your Vobiz account to enable outbound calls and number provisioning, but exact rates were not available in these search results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

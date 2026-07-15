@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: real-time sign language recognition low latency architecture streaming inference
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 11:50:00 UTC
+========================================================================
+
+Search query: real-time sign language recognition low latency architecture streaming inference continuous recognition 2026
+
+----------------------------------------
+
+Web search results for query: "real-time sign language recognition low latency architecture streaming inference continuous recognition 2026"
+
+Links: [{"title":"Efficient Word-Level Sign Language Recognition Using ...","url":"https://www.preprints.org/frontend/manuscript/4811a76b1b1b74d42c99aedb2e067eeb/download_pub"},{"title":"Real-Time American Sign Language Interpretation Using Deep Learning and Keypoint Tracking","url":"https://www.mdpi.com/1424-8220/25/7/2138"},{"title":"Real-Time Sign Language Recognition and Translation Using MediaPipe and LSTM-Based Deep Learning","url":"https://www.researchgate.net/publication/394250427_Real-Time_Sign_Language_Recognition_and_Translation_Using_MediaPipe_and_LSTM-Based_Deep_Learning"},{"title":"From pixels to letters: A high-accuracy CPU-real-time American Sign Language detection pipeline - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2666827025000337"},{"title":"Sign language recognition using modified deep learning network and hybrid optimization: a hybrid optimizer (HO) based optimized CNNSa-LSTM approach | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-76174-7"},{"title":"An explainable hybrid CNN–transformer model for sign language recognition on edge devices using adaptive fusion and knowledge distillation | Scientific Reports","url":"https://www.nature.com/articles/s41598-026-38478-8"},{"title":"A dual-stream deep learning framework for continuous sign language recognition to enhance communication accessibility in the Ha’il region | Scientific Reports","url":"https://www.nature.com/articles/s41598-026-38912-x"},{"title":"GitHub - SomyanshAvasthi/Sign-Language-Detection-using-CNN-Architecture: A real-time sign language recognition system that accurately interprets hand gestures, ensuring seamless communication accessibility and inclusivity. · GitHub","url":"https://github.com/SomyanshAvasthi/Sign-Language-Detection-using-CNN-Architecture"},{"title":"Real-Time Arabic Sign Language Recognition Using a Hybrid Deep Learning Model","url":"https://www.mdpi.com/1424-8220/24/11/3683"},{"title":"Toward Low-Latency End-to-End Voice Agents for Telecommunications Using Streaming ASR, Quantized LLMs, and Real-Time TTS","url":"https://arxiv.org/html/2508.04721v1"}]
+
+Based on the search results, here's what I found regarding real-time sign language recognition with low latency architecture and streaming inference:
+
+## Recent Advances in Real-Time Sign Language Recognition (2026)
+
+### Edge Deployment and Low-Latency Architectures
+
+TinyMSLR is an explainable, lightweight framework designed for isolated-sign classification on resource-constrained devices, combining a ConvNeXt-Tiny encoder for fine-grained local visual cues with a Swin Transformer encoder for long-range spatio-temporal context and an adaptive fusion gate to balance both streams.
+
+S3D-Conv1D is a spatiotemporal architecture for isolated word-level sign language recognition tailored for TinyML deployment that factorizes spatial and temporal processing into lightweight two-dimensional convolutions followed by one-dimensional convolution layers, eliminating recurrent dependencies and ensuring deterministic, MCU-compatible computation.
+
+### Performance Metrics for Continuous Recognition
+
+For continuous sign language recognition, recent systems demonstrate significant performance improvements. A dual-stream framework achieves an average latency of 32 ms per frame and an inference throughput of approximately 31 frames per second when running on a single RTX A6000 GPU. This framework is significantly lighter than transformer-based CSLR models, requiring only about 76 GFLOPs and 28.7 million parameters compared to models that frequently require more than 120 GFLOPs.
+
+### Real-Time ASL Recognition Systems
+
+A real-time American Sign Language interpretation system integrates deep learning with keypoint tracking by combining the YOLOv11 model for gesture recognition with MediaPipe for precise hand tracking to achieve high accuracy in identifying ASL alphabet letters in real time. The computational complexity is 6.5 GFLOPs per inference.
+
+### IoT and Mobile Deployment
+
+A hybrid framework for real-time sign language recognition tailored to IoT-enabled environments integrates a Long Short-Term Memory network for static gesture recognition and a 3D Convolutional Neural Network for dynamic gesture recognition, implemented on a Raspberry Pi device using MediaPipe for landmark extraction to support low-latency, on-device inference.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

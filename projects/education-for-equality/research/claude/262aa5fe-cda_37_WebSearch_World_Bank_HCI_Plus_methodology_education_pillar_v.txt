@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: World Bank HCI Plus methodology education pillar vs health pillar vs employment 
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:25:31 UTC
+========================================================================
+
+Search query: World Bank HCI Plus methodology education pillar vs health pillar vs employment pillar breakdown contribution percentage
+
+----------------------------------------
+
+Web search results for query: "World Bank HCI Plus methodology education pillar vs health pillar vs employment pillar breakdown contribution percentage"
+
+Links: [{"title":"Human Capital","url":"https://www.worldbank.org/en/publication/human-capital"},{"title":"Human Capital Index - Our World in Data","url":"https://ourworldindata.org/grapher/human-capital-index-in-2018"},{"title":"GitHub - worldbank/HCI-Plus: Repository of Code and Data for the World bank Human Capital Index Plus (HCI+) · GitHub","url":"https://github.com/worldbank/HCI-Plus"},{"title":"What is the Human Capital Index Plus | World Bank","url":"https://humancapital.worldbank.org/hciplus/"},{"title":"Human Capital Index - Wikipedia","url":"https://en.wikipedia.org/wiki/Human_Capital_Index"},{"title":"Glossary | DataBank","url":"https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/HD.HCI.OVRL"},{"title":"The World Bank Human Capital Index: A Guide Aart Kraay","url":"https://openknowledge.worldbank.org/server/api/core/bitstreams/92a39786-3d5d-5a28-9e73-ec6b7ea42eff/content"},{"title":"Human Capital Index Plus - World Bank Data Catalog","url":"https://datacatalog.worldbank.org/search/dataset/0067030/human-capital-index-plus"},{"title":"The Human Capital Project: Frequently Asked Questions","url":"https://www.worldbank.org/en/publication/human-capital/brief/the-human-capital-project-frequently-asked-questions"},{"title":"Policy Research Working Paper 8593 Methodology for a World Bank Human","url":"https://thedocs.worldbank.org/en/doc/841571538503209726-0140022018/render/HCIMethodologyPaper14Sept2018.pdf"}]
+
+Based on the search results, I can provide you with information about the World Bank HCI Plus methodology structure, though the specific percentage breakdown contribution of each pillar was not found in these results.
+
+## HCI Plus Structure
+
+The Human Capital Index Plus (HCI+) converts health, education, and labor market indicators into a common metric of expected lifetime productivity, measured as the expected contribution to log earnings.
+
+The HCI Plus comprises three main components:
+
+1. **Health Component**: The health component captures the productivity effects of surviving to working age and achieving adequate early-life physical growth, using two proxies: Adult survival rate (ages 15–60) and Share of children under age 5 who are not stunted.
+
+2. **Education Component**: Education outcomes related to schooling, including learning-adjusted years of schooling and tertiary education.
+
+3. **On-the-Job Learning Component**: The On-the-Job Learning Component measures human capital accumulation after age 18 from work experience.
+
+## Weighting Methodology
+
+Each of the eleven components in the HCI+ is weighted based on research linking it to earnings impact. Additionally, the additive structure of the HCI+ allows the index to be decomposed by pillar (health, education, on-the-job learning) and by individual components within each pillar.
+
+However, the specific percentage contribution breakdown for each pillar was not available in the search results. For detailed percentage weightings, you may need to consult the official World Bank HCI Plus Methodology Note or the technical documentation available on their Open Knowledge Repository.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

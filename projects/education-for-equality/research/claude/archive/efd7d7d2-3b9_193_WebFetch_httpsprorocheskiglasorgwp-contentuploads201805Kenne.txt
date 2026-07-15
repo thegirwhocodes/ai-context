@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://prorocheskiglas.org/wp-content/uploads/2018/05/Kenneth-E.-Hagin-How-You-
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-16 23:53:44 UTC
+========================================================================
+
+URL: https://prorocheskiglas.org/wp-content/uploads/2018/05/Kenneth-E.-Hagin-How-You-Can-be-Led-by-the-Spirit-of-God.pdf
+Extraction prompt: Extract the FULL content of this book. I need:
+1. Complete table of contents / chapter list
+2. His teaching on the "inward witness" — the #1 way God leads believers
+3. His teaching on the "inward voice" / still small voice
+4. His teaching on the voice of the Holy Spirit
+5. His teaching on visions and dreams as guidance
+6. The hierarchy of how God leads (4 methods)
+7. His warnings about wrong ways to seek guidance
+8. His 4 steps to train the human spirit
+9. Direct quotes and scripture references
+Extract as much text as possible.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

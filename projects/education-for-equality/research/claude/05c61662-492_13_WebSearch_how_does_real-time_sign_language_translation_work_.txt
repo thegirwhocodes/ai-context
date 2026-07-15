@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: how does real-time sign language translation work without delay streaming CTC tr
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 11:50:17 UTC
+========================================================================
+
+Search query: how does real-time sign language translation work without delay streaming CTC transformer continuous 2025 2026
+
+----------------------------------------
+
+Web search results for query: "how does real-time sign language translation work without delay streaming CTC transformer continuous 2025 2026"
+
+Links: [{"title":"Bidirectional Translation of ASL and English Using Machine Vision and CNN and Transformer Networks | MDPI","url":"https://www.mdpi.com/2073-431X/15/1/20"},{"title":"Enhanced sign language translation using three stream multimodal occlusion resilient transformer | Discover Computing | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s10791-025-09772-2"},{"title":"SignEdgeLVM transformer model for enhanced sign language translation on edge devices | Discover Computing","url":"https://link.springer.com/article/10.1007/s10791-025-09509-1"},{"title":"Bridging the Silence: Building a Real-Time Sign Language Translator (Part 1) - DEV Community","url":"https://dev.to/_iametornam/bridging-the-silence-building-a-real-time-sign-language-translator-part-1-1b8l"},{"title":"AutoSign: Direct Pose-to-Text Translation for Continuous Sign Language","url":"https://openaccess.thecvf.com/content/ICCV2025W/MSLR/papers/Johnny_AutoSign_Direct_Pose-to-Text_Translation_for_Continuous_Sign_Language_Recognition_ICCVW_2025_paper.pdf"},{"title":"ADAT novel time-series-aware adaptive transformer architecture for sign language translation | Scientific Reports","url":"https://www.nature.com/articles/s41598-026-36293-9"},{"title":"Adaptive Transformer-Based Deep Learning Framework for Continuous Sign Language Recognition and Translation","url":"https://www.mdpi.com/2227-7390/13/6/909"},{"title":"Continuous Sign Language Recognition through a Context-Aware Generative Adversarial Network - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8038055/"},{"title":"Improvement in Sign Language Translation Using Text CTC Alignment","url":"https://arxiv.org/html/2412.09014v3"},{"title":"Improvement in Sign Language Translation Using Text ...","url":"https://aclanthology.org/2025.coling-main.219.pdf"}]
+
+Based on the search results, here's how real-time sign language translation works with modern streaming approaches:
+
+## Core Architecture
+
+Real-time bidirectional systems for translating sign language use computer vision and transformer-based models to enhance accessibility for deaf and hard of hearing users.
+
+## Processing Streaming Input
+
+The Transformer looks at a sliding window of keypoint frames and learns the temporal relationships between them. This approach enables processing of continuous video streams without requiring complete sentences.
+
+## Handling Variable-Length Sequences
+
+Because the system deals with continuous streams without explicit word boundaries, the model is trained using Connectionist Temporal Classification (CTC) loss, and a CTC decoder (using either fast greedy search or more accurate beam search) collapses probabilities into a discrete sequence of glosses.
+
+CTC enables sign language transformers to align variable-length sign videos with text without precise timing labels, allowing end-to-end recognition and translation with strong performance.
+
+## Modern Improvements for Real-Time Performance
+
+Recent 2025-2026 approaches address streaming latency:
+
+- An Adaptive Transformer architecture combines convolutional feature extraction, log-sparse self-attention, and an adaptive gating mechanism to efficiently model both short- and long-range temporal dependencies in sign language sequences.
+
+- The Adaptive Masking module dynamically removes redundant video frame representations, improving temporal alignment, while the Local Clip Self-Attention module learns hierarchical representations at both local clip and full-video levels using a refined self-attention mechanism.
+
+## End-to-End Translation
+
+Sign language glosses need to be translated into grammatically correct spoken language, which is achieved by routing the gloss sequence through a Large Language Model (LLM).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

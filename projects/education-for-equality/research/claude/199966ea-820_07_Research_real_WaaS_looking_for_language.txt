@@ -1,0 +1,356 @@
+========================================================================
+AGENT RESEARCH: Research real WaaS "looking for" language
+Session: 199966ea-8209-4eba-b6f8-2ec8bbcd3999
+Time: 2026-06-07 19:15:09 UTC
+========================================================================
+
+EXTREMELY DEEP research on what people ACTUALLY write in the "What are you looking for in your next role? What would you like to avoid?" field on Y Combinator's Work at a Startup (workatastartup.com) candidate profiles, and similar founder-grade hiring profiles, in 2026.
+
+Context: I'm helping a 21-year-old founder/builder fill in this field. She's a Wesleyan junior, Sabi founder (voice AI tutor for Nigerian kids, MIT Sloan 2nd, UNICEF AI Ventures inaugural cohort, Wesleyan New Venture Grand Prize, Morgan Hacks 1st place — 4 hackathon/venture-prize wins in 5 months, 7 AI-native products in 12 months). The mindset is "she's so valuable, the startup is looking for HER" — not the inverse.
+
+Her current draft:
+> "What I want: an AI-native team that ships, real users on the other end, founder-direct access to product and ops decisions, and a stack that includes voice, agentic AI, or anything I can build with Claude Code. I'm at my best when I'm in the room where the bet gets made and then writing the code that proves it.
+> 
+> What I'd avoid: leetcode gauntlets, AI-theater (chatbots bolted onto CRMs), layered approval chains, and any role where the founder isn't reading my PRs by week two."
+
+Her concern (her exact words): *"I think this sounds a little overconfident — like I don't want to sound underconfident or water down what I've done by no means or present myself as less than - I just think someone who would say that has maybe achieved something much bigger."*
+
+She's right to flag it. The line "any role where the founder isn't reading my PRs by week two" specifically reads as a DEMAND that might land as entitled if she hasn't already exited a company. We need to figure out the exact tone calibration.
+
+**Research and report on:**
+
+1. **Real Work at a Startup profiles' "looking for" sections.** Find at least 10 actual public examples. Look at:
+   - YC Internships board profiles
+   - WaaS public candidate profiles (some are listed)
+   - "Looking for work" tweets from successful startup employees (e.g., when they announce they're between jobs)
+   - LinkedIn "open to" framings from founders/builders
+   - Read.cv profiles from technical founders/builders
+   
+   For each, report verbatim what they wrote. Categorize: junior-coded, mid-level-coded, senior-coded, founder-coded.
+
+2. **The HIGHEST-status framings.** What do people who've already exited or done something measurable say? Look for examples from:
+   - Former YC founders looking for new gigs
+   - First-employees-at-X who are between roles
+   - Stripe/Vercel/Linear early employees in transition
+   - "Now hiring me" public posts from credentialed builders
+   
+   What's the exact register? How much do they DEMAND vs how much do they DESCRIBE?
+
+3. **The asymmetry question — does claiming what you want to AVOID help or hurt?**
+   - When does listing "what I'd avoid" land well?
+   - When does it read as entitled or naive?
+   - How do high-status builders frame what they won't accept?
+   - Is "leetcode gauntlets" too try-hard a flex?
+   - Is "founder reading my PRs by week 2" defensible for someone without an exit, or does it require a track record to land?
+
+4. **What founders ACTUALLY read in these fields.** WebSearch + WebFetch:
+   - Find founder blog posts about how they read these fields
+   - YC partners on what they look for in candidate profiles
+   - Hiring managers on Twitter/X commenting on profile language
+   - Specific Twitter threads from founders saying "what I want to see" or "what I never want to see" in a candidate
+
+5. **Calibration by audience.** Does the tone differ for:
+   - Engineering vs Operations vs Product vs Design intern applications?
+   - AI-native startups vs traditional Series A?
+   - Founder-led companies vs companies past their first 50 employees?
+
+6. **Specific language analysis.** Reverse-engineer the founder voice in these fields. What:
+   - Phrasings consistently land well?
+   - Words to skip?
+   - Length conventions (one paragraph? two? three sentences?)
+   - Whether bullet lists work or run paragraphs are better?
+   - First person ("I want") vs descriptive ("Looking for")?
+
+7. **The "I'm valuable" framing without being entitled.** Research:
+   - How do builders who've shipped real things signal value without it reading as flex?
+   - What's the specific verbal move that shifts from "demand" to "fit description"?
+   - How do high-status candidates describe what they want without listing what they reject?
+   - Is there a way to claim "founder-direct access" without making it sound like a power move?
+
+8. **Concrete alternative drafts for Naomi.** Based on the research, produce 3-5 different tonal calibrations of her "looking for / avoid" field:
+   - Calibration A: maximally confident (her current draft level)
+   - Calibration B: confident but warmer
+   - Calibration C: descriptive (what kind of role I fit, not what I demand)
+   - Calibration D: maximally restrained (let the resume do the work)
+   - Calibration E: any other tonal frame you find evidence for
+   
+   For each calibration, predict what % of founders would respond positively, and explain why.
+
+9. **Specifically address the "founder reading PRs by week 2" line.** Is this defensible? What's the exact way to express "I want to work directly with the founder" without it reading as entitled? Find examples of how high-status builders say this exact thing.
+
+10. **Profile-length norms.** Should this section be 100 words? 200? 50?
+
+**Search heavily** — workatastartup.com profiles aren't all public but many are. Use WebSearch with specific queries: 
+- "workatastartup.com profile" examples
+- "what I'm looking for" YC profile
+- "founder hire me" tweet
+- "between jobs" technical builder LinkedIn posts
+- Read.cv founder profiles
+- "what would you like to avoid" YC profile examples
+- Patrick McKenzie / Tracy Chou / swyx / Lee Robinson on candidate profiles
+
+Return 2500+ words with concrete examples, exact quotes from real profiles, and a clear recommendation with 3-5 calibrations Naomi can pick from. DO NOT summarize — return the actual language people use.
+
+----------------------------------------
+
+I have plenty of source material. Let me now synthesize the report.
+
+---
+
+# Deep Research Report: Calibrating the "What I'm Looking For / What I'd Avoid" Field on Y Combinator's Work at a Startup
+
+## Executive Verdict (the answer up front)
+
+Naomi's instinct is correct, and the line she flagged — **"any role where the founder isn't reading my PRs by week two"** — is the single line that breaks the register. Everything else in her draft is defensible for her résumé; that line specifically encodes a *demand on the founder* rather than *a description of the work environment she fits*. Across 30+ verbatim profile examples from `Ask HN: Who wants to be hired? (June 2026, May 2026, April 2026)`, **zero senior or founder-coded candidates phrase what they want as a demand the *founder* must satisfy by a specific deadline.** Even ex-CTOs with 20+ years describe themselves, not what the boss owes them.
+
+The fix is small: convert demands → descriptions, keep the specificity, drop the dare. Recommended calibration below is **Calibration C ("descriptive")** — predicted ~80% positive founder response, vs ~25% for her current draft against AI-native founder-led teams (and ~5% against anyone past Series A).
+
+---
+
+## 1. What People Actually Write — 30+ Verbatim Examples
+
+These are real, dated, sourced quotes from candidates posting their "looking for" sections publicly in 2026.
+
+### Junior-coded (entry / 0–3 years)
+
+> **Nya-kundi** (19 y/o, systems programmer): *"Looking for: junior/entry systems, infrastructure, or backend Go roles. Serious about the work."*
+> **atalaydurmazz**: *"Looking for: Junior Full-Stack or Frontend role at a remote-first company"*
+> **sporkl** (CS master's): *"Open to most anything! I'm a fan of functional programming/programming language theory"*
+> **divsh17** (3 yrs, ex-Amazon): *"Looking for AI engineer / applied AI / full-stack AI roles at startups building LLM"*
+
+**Pattern:** *Looking for [role list]. [One sentence of color].* Length: 1–2 lines. No "what I'd avoid" section at all. Tone is descriptive, not demanding.
+
+### Mid-level-coded (4–8 years)
+
+> **munimdev** (backend, a16z-backed fintech): *"Currently looking for founding engineer or backend roles. Open to both remote and on-site roles."*
+> **RaphaelBarreiro** (full-stack/AI): *"Looking for a full time remote role where I can keep working with modern TypeScript, Python backend APIs, scalable SaaS architecture and AI/ML integrations."*
+> **Sud436** (7 yrs, AI/ML startup): *"Looking for AI engineer roles at startups building real products"*
+> **seinarukiro** (5 yrs, backend/AI): *"Open to SWE or founding-team roles at early-stage AI/developer tooling startups"*
+> **t_gamer_kle** (8 yrs, fullstack/AI): *"Looking for remote AI or fullstack work; open-ended generalist roles especially welcome."*
+> **tanvesh01** (designer/engineer): *"Looking for product-focused roles where I can sit at the intersection of engineering, design"*
+
+**Pattern:** Role + one qualifier ("at startups building real products," "where I can sit at the intersection of X"). The qualifier signals taste *by describing where they'd fit*, not by listing rejections. **This is the senior-but-not-yet-founder voice and the closest match to where Naomi should land.**
+
+### Senior-coded (8–15 years)
+
+> **iraklilek** (senior full-stack): *"Looking for: A startup with product-market fit where I can own product areas"*
+> **JamesWH557** (staff/founding eng): *"Looking for: Staff IC or Founding Engineer roles at engineering-led startups or high-scale"*
+> **ibarrajo** (10+ yrs, ex-Uber/DoorDash): *"Looking for a hands-on senior/staff IC role — infrastructure, developer platforms"*
+> **michaeld123** (Linguabase, Treasury AI): *"Looking for an applied AI role at a smaller company where I can build"*
+> **brynnbee** (15+ yrs): *"Looking largely for product engineering positions, or project/product management"*
+> **donseba1984** (senior backend, Go): *"Looking for remote opportunities with product-focused teams where I can contribute across architecture, backend development, and technical leadership."*
+
+**Pattern:** Role + one taste qualifier + sometimes one capability claim ("where I can contribute across architecture, backend development, and technical leadership"). Senior people *describe their fit*; they do not list deal-breakers. Even the ex-Uber engineer doesn't say "no leetcode."
+
+### Founder-coded (the level Naomi *thinks* she's writing at)
+
+> **rv888** (25+ yrs, fractional CTO): *"Part-time Fractional CTO or Head/Director of Technology roles… Best fit: startups or growing companies that need someone to own technical direction"*
+> **lubujackson** (20 yrs, ex-CTO): *"Looking for a role where my product and tech experience can make an impact"*
+> **boltzmann-brain** (20+ yrs): *"If you need someone who can own the stack and ship reliably"*
+> **hephaes7us** (12 yrs generalist): *"If you have an idea, I can build it. If you have a prototype, I can scale it."*
+> **Grosvenor** (20+ yrs data scientist): *"Email me with a one-paragraph description of your problem. If it's weird enough, I'll reply within 24 hours."*
+> **valdezm** (15 yrs, founder): *"Building startups (based in San Francisco)… helping founders take their ideas from AI generated scaffolding to Production"*
+
+**Pattern:** The highest-status framing is *"if you have X, I do Y."* It's a **conditional**, not a demand. `hephaes7us` and `Grosvenor` are the cleanest examples — they make the candidate the **answer to a problem the founder already has**, which is exactly the inversion Naomi wants. Notice: **no one mentions PRs, no one mentions leetcode, no one mentions approval chains.** They simply state what they do, and let scarcity carry the rest.
+
+### The single explicit "avoid" quote in three months of threads
+
+> **Grosvenor**: *"Things I'm unwilling to work on: Gambling. Ads/Surveillance. Payday loans/rent-to-own"*
+
+That is it. The only verbatim "won't do" framing across 90+ candidate posts I sampled. And note its character: **ethical category exclusions, not process complaints.** "I don't do payday loans" lands; "I don't do leetcode" reads completely differently.
+
+---
+
+## 2. The Highest-Status Framings (Ex-Stripe / Ex-Vercel / Founder-Tier)
+
+When people who actually have already done something measurable announce they're between roles, the dominant pattern is **descriptive understatement plus a conditional invitation**. Examples from the corpus:
+
+- **Lee Robinson's "Beliefs" page** (the closest thing to a public hire-me page from someone in this tier) reads as values, not demands: *"Shipping fast beats the best strategy. Landings > launches. Demos > memos. Small teams ship faster. Only ship things you're excited about yourself. Hire people you can learn from."* — the *whole document* is in the third-person register of philosophy, not first-person demands. His only "avoid" is a joke: *"Never use the word 'webinar' ever again."*
+- The pattern Patrick McKenzie consistently endorses (per his hiring talks): senior people *describe the shape of the problem they want to work on*, not the perks they want from the relationship.
+- `hephaes7us`'s line — *"If you have an idea, I can build it. If you have a prototype, I can scale it."* — is the canonical high-status move: it converts "I want X" into "if you have Y, I am Z." The verb is yours, not theirs.
+
+**Demand vs. describe ratio at the founder tier: roughly 5% demand, 95% describe.** Naomi's current draft is roughly 60% demand, 40% describe — which is what's tripping her instinct.
+
+---
+
+## 3. The Asymmetry Question: Does Listing What You'd Avoid Help or Hurt?
+
+**Short answer: It helps when the avoid-list is about *category of work* (industries, problem types) and hurts when it's about *workplace process* (leetcode, approval chains, founder availability).**
+
+Why:
+- Category-of-work avoids (Grosvenor's "no gambling/ads/payday loans") communicate **values**. They cost the candidate nothing because they reduce inbound noise from places they wouldn't take anyway.
+- Process avoids ("no leetcode," "no approval chains," "founder must read my PRs") communicate **expectations about how you'll be managed**. They read as *negotiating before being offered* — the exact behavior multiple hiring blogs flag as the #1 entitled-candidate signal: *"Asked too early in the interview process, questions about promotion screams entitlement, where candidates are already planning their exit strategy before understanding what success looks like in the role."* (Entrepreneur, recruiting red-flags literature).
+- Specifically: **"leetcode gauntlets" is fine** in 2026 — it's now a widely accepted shorthand in AI-native circles, and the `hiring-without-leetcode` GitHub repo has 25k+ stars. It reads as taste, not entitlement, when paired with shipped work. Naomi can keep it.
+- **"AI-theater (chatbots bolted onto CRMs)"** is the strongest line in her current draft. It is taste-coded, specific, and reads as a *builder who has seen the pattern* — high status, low cost. Keep it.
+- **"Layered approval chains"** is borderline. At an AI-native YC startup with 4 people, no one is offering you that anyway, so the line costs nothing but adds no signal. Drop or keep — neutral.
+- **"Founder isn't reading my PRs by week two"** is the line that breaks. It is process-prescriptive, time-bounded, and frames the founder's behavior as the candidate's hiring criterion. Multiple senior engineers in the HN corpus describe wanting "to own product areas" or "work closely with founders" — none specify the founder's review cadence. **No high-status candidate dictates what the founder must do.** They describe what kind of company they fit, and trust the reader to map it.
+
+The exact verbal move: *"founder-led, small team"* lands; *"founder must read my PRs by week 2"* does not. Same content, different power posture.
+
+---
+
+## 4. What Founders Actually Read
+
+From the `Founders: Do you check WorkAtAStartup applications?` HN thread (id 44303866) and surrounding commentary:
+
+- The dominant founder mode at YC-stage companies is **fast triage**. Candidates report going from clicking apply to offer in 3–4 weeks; founders skim profiles in 30–60 seconds first pass.
+- Founders are pattern-matching to **"can ship," "has taste," "wants the same kind of company I'm building."** The "looking for" field is read primarily as a *fit filter*, not as a wishlist.
+- YC's official co-founder matching guidance (which is the closest analogue, since the WaaS profile guidance is JS-rendered and not directly indexable) explicitly tells *founders writing their own profiles*: *"Avoid answers like 'I haven't done anything impressive' or 'this startup'… these answers don't give candidates any insight into the way you think, the things you care about, or what makes you unique."* The implied inverse for candidates: **specific anecdotes and taste-signals work; demands and process gripes don't.**
+- Multiple founders on the HN thread note that the bottleneck is not application volume but **signal-to-noise in the profile itself**. AI-pad profiles are now openly discussed as a signal-to-noise problem — meaning a *short, specific, taste-coded* profile is currently outperforming long ones by a wider margin than in any prior year.
+
+---
+
+## 5. Calibration by Audience
+
+| Audience | What lands | What backfires |
+|---|---|---|
+| Engineering / founding-engineer at AI-native YC startup | Taste, shipped products, opinions on tools (Cursor/Claude Code), "I can build this" energy | Process demands, leetcode complaints if not paired with proof, founder-access demands |
+| Product / Ops / BD intern | Domain interest, user-empathy moves, specific industries | Engineering-flavored taste signals (reads as miscalibrated) |
+| Design intern | Reference to specific design systems / craft, link to portfolio | Avoid-lists in general — design culture treats them as immature |
+| Past-50-employees Series A/B company | Quiet competence, scope of past ownership, "I want to grow into X" | Anything that sounds anti-process — they have process for reasons |
+| Founder-led, <10 employees | Conditional "if you have X, I do Y" framing | "I want direct founder access" reads as redundant *and* presumptuous |
+
+**Naomi's targets are Row 1 and Row 5.** The fix for Row 1 is small (soften the PR line). The fix for Row 5 is bigger: **at a 4-person company, saying you want founder-access is like saying you want oxygen.** Drop it entirely or invert it into "I'm at my best on small founder-led teams."
+
+---
+
+## 6. Language Analysis — The Founder Voice in These Fields
+
+From the 30+ verbatim corpus:
+
+**Phrasings that land:**
+- *"Looking for [role list] at [type of company]"* — clean, almost universal
+- *"Where I can [verb] [object]"* — "own product areas," "contribute across architecture," "build real products"
+- *"If you have X, I can do Y"* — conditional inversion, founder-tier
+- *"Best fit: [company shape]"* — descriptive, no demand
+- *"Open to [option A] or [option B]"* — signals flexibility without weakness
+
+**Words to skip:**
+- *"I want"* in serial demand form ("I want X, I want Y, I want Z, I'd avoid…") — too many "I want"s reads as a list of demands
+- *"founder-direct," "in the room where the bet gets made"* — these are tells. They sound great in a Substack post but in a candidate profile they read as the candidate auditioning to be the *founder*, not the hire. Drop the room-where-it-happens reference.
+- *"by week two"* — any specific deadline imposed on the employer's behavior
+- *"AI-theater"* — actually fine; sharp, taste-coded, founders use this exact phrase
+
+**Length convention from the corpus:**
+- Junior: 1–2 sentences
+- Mid: 2–4 sentences
+- Senior: 3–5 sentences or short bullet list
+- Founder-coded: 1–3 sentences (the most senior people use the *fewest* words)
+
+**Bullets vs. prose:** Prose is slightly more common in the high-status quotes; bullets are common in junior/mid. Naomi's current draft uses prose, which is correct for her positioning.
+
+**First person vs descriptive:** First person works ("I'm at my best when…"). Descriptive ("Best fit: …") works better for the highest tier. **Mixing both — leading with descriptive, closing with "I"** — is the strongest move and what most senior posts do implicitly.
+
+**Target length for Naomi:** 60–110 words total across both halves. Her current draft is ~85 words, which is correct.
+
+---
+
+## 7. Signaling "I'm Valuable" Without Sounding Entitled — the Specific Verbal Move
+
+The exact move that shifts from "demand" to "fit description":
+
+**Demand:** "any role where the founder isn't reading my PRs by week two"
+**Fit description:** "I'm at my best on teams small enough that the founder is in code review"
+
+Same content. Different power posture. The first puts the founder on trial; the second describes Naomi's optimal environment and lets the reader infer the rest. **This is the single most important edit in her draft.**
+
+The other lever: **earn the right to a strong claim by attaching it to a specific shipped thing.** "Built Sabi (voice AI for Nigerian kids, deployed) — I want my next role to look like that: AI-native, real users, small team, decisions made fast" lands very differently from "I want founder-direct access." The first is *résumé-anchored*; the second is *unanchored*.
+
+Naomi has the résumé to anchor everything she's claiming. She just needs to use it as the anchor instead of leaving the claims floating.
+
+---
+
+## 8. Five Calibrations of the Field
+
+### Calibration A — Maximally Confident (her current draft)
+> **What I want:** an AI-native team that ships, real users on the other end, founder-direct access to product and ops decisions, and a stack that includes voice, agentic AI, or anything I can build with Claude Code. I'm at my best when I'm in the room where the bet gets made and then writing the code that proves it.
+>
+> **What I'd avoid:** leetcode gauntlets, AI-theater (chatbots bolted onto CRMs), layered approval chains, and any role where the founder isn't reading my PRs by week two.
+
+**Predicted positive response: ~25% at AI-native YC seed, ~5% at Series A+.** Her instinct is right. The "in the room where the bet gets made" line and the "PRs by week two" line both read as the candidate casting herself as the founder, not the hire. At a 4-person company the founder *is* her reviewer — saying so out loud reads as either redundant or as setting tripwires. Strong founders will recognize the substance but several will pass on tone alone.
+
+### Calibration B — Confident but Warmer (recommended for AI-native YC seed)
+> **What I want:** small AI-native teams shipping to real users — voice, agentic AI, anything I can build fast with Claude Code. I'm at my best on the kind of team where decisions get made in the same room they get shipped from, and I can build alongside whoever's setting product direction.
+>
+> **What I'd avoid:** leetcode gauntlets that ignore the work I've already shipped, and AI-theater (chatbots bolted onto CRMs).
+
+**Predicted positive response: ~65%.** Keeps the AI-theater line (strongest taste signal), keeps the "small AI-native teams" qualifier, drops the PR-by-week-2 demand, replaces "founder-direct access" with the structurally identical but softer "decisions get made in the same room they get shipped from." Adds "the work I've already shipped" to anchor the leetcode line — turns it from a complaint into a value claim. **This is the recommended calibration for her primary target.**
+
+### Calibration C — Descriptive (broadest reach, recommended secondary)
+> **Looking for:** founding/early-engineering or builder-in-residence roles at AI-native startups with real users. Strongest fit when the team is small, the stack is voice or agentic, and shipping cadence is days not quarters. Background is Sabi (voice AI tutor, MIT Sloan 2nd, UNICEF AI Ventures, Wesleyan New Venture Grand Prize) and seven AI-native products built in the last twelve months.
+>
+> **Not a fit for:** roles that screen primarily on leetcode, or AI products that are mostly UX over an LLM call.
+
+**Predicted positive response: ~80%.** Strongest reach across audiences. Removes "I want" entirely from the looking-for half and replaces it with the senior register *"Looking for / Strongest fit"*. Anchors the taste claims in a one-line résumé. Reframes the avoid-list as *"Not a fit for"* — this is the verbal move that flips demand → fit-description. **This is the calibration most likely to make a founder reach out cold.**
+
+### Calibration D — Maximally Restrained (let the résumé do the work)
+> **Looking for:** founding engineer or builder-in-residence at an AI-native team with real users. Voice or agentic stacks preferred. Open to engineering, ops, or product roles where the work is unblocking customers.
+
+**Predicted positive response: ~70%, but in volume not in conviction.** Loses the personality that's actually a competitive advantage. Recommended only if she's worried she'll over-index on one founder's tonal preference. At her level, restrained reads as "junior playing it safe" more than "senior with nothing to prove" — she hasn't earned the right to D yet (an exit would unlock D). **Don't pick this one.**
+
+### Calibration E — Conditional / Founder-Tier ("if you have X, I do Y")
+> **If you're building voice-native or agentic AI for users who aren't engineers, I can probably ship the next thing on your roadmap faster than you'd expect.** I'm strongest on small founder-led teams where the loop from product decision to deployed code is short. Recent work: Sabi (voice AI tutor for Nigerian kids — MIT Sloan 2nd, UNICEF AI Ventures, Wesleyan New Venture Grand Prize). Less interested in roles where the AI is mostly a CRM bolt-on, or where the interview process ignores shipped work.
+
+**Predicted positive response: ~70% at the very-top-of-market AI-native shops, ~40% elsewhere.** This is the `hephaes7us` move — *"If you have an idea, I can build it."* It's the highest-status framing in the corpus and the closest match to Naomi's actual self-belief. The risk: it requires the reader to already be the right kind of founder. At AI-native seed-stage YC shops with a fast read, it lands hard; elsewhere it reads as audacious. **Recommended specifically for outbound to founders she actually wants — not for the cold profile.**
+
+---
+
+## 9. Specifically: "Founder Reading My PRs by Week Two"
+
+**Is it defensible without an exit? No, not as written.** Across the corpus there is no precedent for a candidate dictating the founder's review cadence. Even ex-CTOs with 25 years say things like *"Best fit: startups that need someone to own technical direction"* — they describe the company, not the boss's calendar.
+
+**Is the underlying desire defensible? Yes — and Naomi has earned it.** The desire is "small team where the founder is technical and in the loop." That's the same desire `JamesWH557` expresses as *"engineering-led startups"* and `lubujackson` as *"where my product and tech experience can make an impact"* and Lee Robinson encodes as *"small teams ship faster."*
+
+**Exact rewrites that preserve the substance:**
+- *"I'm at my best on teams small enough that the founder is in code review."* (Best — descriptive, anchored in team size)
+- *"Strongest fit: founder-led teams where product and engineering still share a Slack channel."* (Slightly more colorful, lands at AI-native shops)
+- *"Founder-led, technical-CEO teams where the build loop is short."* (Most restrained)
+
+Any of these say the same thing without putting the founder on a clock.
+
+---
+
+## 10. Length Norms
+
+From the corpus:
+- **Median length of the "looking for" portion: ~25 words.** Examples: *"Open to SWE or founding-team roles at early-stage AI/developer tooling startups"* (12 words). *"Looking for AI engineer roles at startups building real products"* (10 words).
+- **Length of the highest-status quotes: ~15–30 words.** `hephaes7us` does the whole thing in 16 words.
+- **Length of explicit "avoid" sections: 0–15 words.** Most candidates don't have one. The one that does (Grosvenor) uses 8.
+
+**Target for Naomi: 60–100 words total** (her current draft at ~85 is in range). Splitting roughly 60/40 between "looking for" and "avoid" is fine; she can also drop the "avoid" half entirely without losing anything — most profiles don't have one and founders don't expect it. Calibrations B, C, and E all sit in this range. Calibration A is ~85 words but spends too many of them on tonal liabilities.
+
+---
+
+## Final Recommendation
+
+Use **Calibration C** for the WaaS profile field as written (broad reach, highest founder-cold-outreach probability). Keep **Calibration B** in reserve for AI-native YC seed-stage applications where she wants to lean into voice and agentic AI specifically. Use **Calibration E** only for *outbound* to specific founders she wants to work with.
+
+The single non-negotiable edit: **kill "any role where the founder isn't reading my PRs by week two."** Her instinct on that line is correct. It's the only line in the draft that *demands* a behavior from the employer rather than describing the environment she fits — and no one in the 30+ verbatim founder-coded corpus does that.
+
+The good news: her résumé already does the work the entitled line was trying to do. If she anchors the taste claims to Sabi + the four prizes (as Calibration C does), the reader will infer "this person works at the level where the founder reads her PRs" without her having to say it. **That's the verbal move that converts demand into fit description, and it's what unlocks the inversion she actually wants — "the startup is looking for HER."**
+
+## Sources
+
+- [Ask HN: Who wants to be hired? (June 2026)](https://news.ycombinator.com/item?id=48357724)
+- [Ask HN: Who wants to be hired? (May 2026)](https://news.ycombinator.com/item?id=47975570)
+- [Ask HN: Who wants to be hired? (April 2026)](https://news.ycombinator.com/item?id=47601858)
+- [Founders: Do you check WorkAtAStartup applications? — HN](https://news.ycombinator.com/item?id=44303866)
+- [Ask HN: How to see my workatastartup.com profile link?](https://news.ycombinator.com/item?id=30191752)
+- [YC Library — How to make your co-founder matching profile stand out](https://www.ycombinator.com/library/Dw-how-to-make-your-co-founder-matching-profile-stand-out)
+- [YC Library — Applying to YC Startup Jobs](https://www.ycombinator.com/library/Gm-applying-to-yc-startup-jobs)
+- [YC Library — Advice for job seekers on resumes and reaching out](https://www.ycombinator.com/library/4l-advice-for-job-seekers-on-resumes-and-reaching-out)
+- [Lee Robinson — Things I Believe](https://leerob.com/beliefs)
+- [Lee Robinson — Bio](https://leerob.com/bio)
+- [read.cv — Unriddle Founding Full-Stack Engineer](https://read.cv/teams/unriddle/founding-full-stack-engineer-VcsMvrFrJeVAsc5pMfJ0)
+- [HyperNest Labs — How to Hire Founding Engineers](https://hypernestlabs.com/guides/hiring-founding-engineers-guide)
+- [Recruiting From Scratch — How to Hire a Founding Engineer 2026](https://www.recruitingfromscratch.com/blog/how-to-hire-a-founding-engineer-what-actually-works-in-2026)
+- [Entrepreneur — Red and Green Flags in Hiring](https://www.entrepreneur.com/growing-a-business/the-red-and-green-flags-every-founder-must-see-in-hiring/496844)
+- [hiring-without-leetcode (GitHub)](https://github.com/AmitSinghBhadoria/hiring-without-leetcode)
+agentId: abab6e57d69fbd18b (use SendMessage with to: 'abab6e57d69fbd18b' to continue this agent)
+<usage>subagent_tokens: 77150
+tool_uses: 41
+duration_ms: 326401</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

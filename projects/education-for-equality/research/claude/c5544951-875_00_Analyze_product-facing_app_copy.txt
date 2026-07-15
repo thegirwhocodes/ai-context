@@ -1,0 +1,291 @@
+========================================================================
+AGENT RESEARCH: Analyze product-facing app copy
+Session: c5544951-8755-489c-b13b-335bc248b811
+Time: 2026-06-18 18:01:05 UTC
+========================================================================
+
+You are analyzing the brand voice of "Education for Equality" (E4E), a mission-driven edtech org whose product "Sabi" is a voice-AI tutor delivered over phone calls to out-of-school children. You are looking specifically at PRODUCT/PUBLIC-FACING copy in their Next.js web app.
+
+Read these files IN FULL yourself (extract the human-readable copy strings — headings, hero text, body paragraphs, button/CTA labels, taglines; ignore imports and pure logic) from /Users/naomiivie/Education for Equality/ :
+1. curriculum-app/app/page.tsx          (landing / hero)
+2. curriculum-app/app/about/page.tsx     (about / mission)
+3. curriculum-app/app/sabi/page.tsx      (Sabi product page)
+4. curriculum-app/app/subjects/page.tsx
+5. curriculum-app/app/advisor-board/page.tsx
+
+Extract, preserving ACTUAL wording (this builds a brand voice guide):
+
+A. HERO / TAGLINE LANGUAGE — the headline, subhead, and any one-liner positioning. Quote verbatim.
+B. VOICE ATTRIBUTES as they show up in UI copy — tone of headings, body, CTAs. Give verbatim examples.
+C. CTA / BUTTON VOICE — exact label text used for calls to action. List them.
+D. HOW THE PRODUCT IS DESCRIBED — how Sabi and E4E describe themselves to a web visitor; how they describe the children/learners and the problem. Quote.
+E. TERMINOLOGY & CAPITALIZATION conventions visible in copy (product names, how "Sabi" / "Education for Equality" / learners are referred to).
+F. STRUCTURE/FORMATTING habits — sentence length, use of stats, second person, emoji/punctuation style.
+G. Any inconsistencies or off-brand-sounding copy you notice.
+
+Return the actual extracted copy with quotes — at least 90% substance, organized under headers A–G. Do NOT summarize away the wording; the exact strings matter.
+
+----------------------------------------
+
+All five files are now fully read. Here is the structured brand voice extraction across all five pages, with verbatim quotes throughout.
+
+---
+
+## Documents Processed: 5
+
+---
+
+## A. HERO / TAGLINE LANGUAGE
+
+**Main landing page (page.tsx) — H1 and subhead:**
+- H1: "Empowering Learners Across Africa"
+- Subhead: "70% of children in low-income countries cannot read a simple sentence by age 10. Millions of adults never got the chance to learn. We deliver free, AI-powered literacy and numeracy courses to anyone who needs them — on any phone."
+- Eyebrow badge (above H1): "Foundational + Cambridge-Aligned | Ages 8-14"
+
+**Sabi page (sabi/page.tsx) — H1 and subhead:**
+- H1: "Sabi"
+- Pronunciation line (italic, directly beneath H1): "/sah-bee/ — 'to know' in Nigerian Pidgin"
+- Subhead: "An AI tutor any child can reach by calling a phone number. No smartphone. No internet. No cost."
+
+**Footer tagline (sabi/page.tsx):**
+- "Free, world-class education for every child."
+
+**About page (about/page.tsx) — H1 and subhead:**
+- H1: "About Education for Equality"
+- Subhead: "Empowering underprivileged children in Nigeria through accessible, quality education."
+
+**Subjects page (subjects/page.tsx) — H1:**
+- H1: "All Courses"
+- Subhead: "Start with our foundational courses to build reading and math skills from scratch, or dive into the full Grade 4 Cambridge curriculum."
+
+**Key insight bridge on sabi page:**
+- "The Answer Is Already in Their Pocket"
+
+**Key insight bridge on landing page:**
+- "Learning Is Worth 4x More Than Attendance"
+
+---
+
+## B. VOICE ATTRIBUTES AS THEY SHOW UP IN UI COPY
+
+**Moral urgency — the stakes are named bluntly:**
+- "Children go to school for a decade and come out unable to read." (sabi page)
+- "Millions of adults never got the chance to learn." (landing)
+- "skills that unlock everything else" (landing)
+
+**Evidence-first credibility — claims always land with a citation inline:**
+- "Of 10-year-olds in Nigeria cannot read and understand a simple sentence — World Bank / UNICEF 2022"
+- "Every design choice is backed by research from Nigeria, Ghana, Tanzania, Madagascar, and global RCTs." (sabi page)
+- "AI tutoring in Nigerian public schools produced 1.5-2 years of learning gains in just 6 weeks, with a benefit-cost ratio of 161-260. No other education intervention comes close." (landing)
+
+**Rhetorical directness — one-sentence, present-tense assertions:**
+- "A child dials a phone number. Sabi does the rest." (sabi)
+- "Sabi remembers everything — their name, their level, their mistakes. Picks up exactly where they left off." (sabi)
+- "Works on a $5 feature phone. No smartphone, no internet, no app download. Just a phone call." (sabi)
+
+**First-person founder voice (personal section only):**
+- "Growing up in Lagos, Nigeria, I attended my secondary school on a scholarship and a discount based on my mother's salary as a teacher. Sometimes my family didn't have food to eat."
+- "Education gave me a way out. Now I want to extend the same opportunity to every child who didn't get one."
+- "If we can teach people across Africa to solve problems around them, we can set off a chain reaction of transformation across the continent."
+
+**Vision-scale framing:**
+- "Investing in foundational literacy and numeracy isn't charity — it's the highest-return investment a government can make." (landing)
+- "Quality foundational education could lift 47 million people out of poverty across Sub-Saharan Africa and add $368 billion to the continent's GDP — a 4.3% increase." (landing, attributed to ISS Africa)
+
+**Intimate / human storytelling in the product sample conversation:**
+- Sabi: "Ah, you know business! If a customer gives you ₦500, and groundnuts cost ₦350, how much change do you give back?"
+- Sabi: "You got it! You already know maths, Chidi — you just don't know you know it. Now let me teach you how they write that in school..."
+
+**Contrarian / "this is different" framing in the CTA section:**
+- "We're not building another education app that sits in an app store. We're building something a mother hears about at church, dials after dinner, and hands to her child for five minutes." (sabi)
+
+---
+
+## C. CTA / BUTTON VOICE — EXACT LABEL TEXT
+
+From landing page:
+- "Foundational Literacy" (primary hero button, links to subject)
+- "Foundational Numeracy" (secondary hero button)
+- "Start Reading" (inline CTA on literacy course card)
+- "Start Math" (inline CTA on numeracy course card)
+- "Browse Grade 4 Lessons" (text link)
+- "Partner With Us" (section heading / implicit CTA)
+- "Call (860) 436-7048" (button)
+- "Email Us" (button)
+
+From about page:
+- "Donate Now" (primary button)
+- "Contact Us" (secondary button)
+
+From sabi page:
+- "Talk to Sabi" (primary CTA, appears twice — hero and bottom CTA section)
+- "Chat with Sabi" (secondary CTA, appears twice)
+
+From subjects page:
+- "Start Learning" (inline card CTA, appears on every subject card)
+
+From advisor-board page (internal tool, not public-facing):
+- "Sync Gmail"
+- "Mark replied"
+- "Copy"
+- "Draft"
+- "Send"
+
+---
+
+## D. HOW THE PRODUCT AND PROBLEM ARE DESCRIBED
+
+**How E4E describes itself:**
+- "Education for Equality is an initiative that aims to increase the accessibility of free, quality education to children in Nigeria, and by extension, children across Africa, so that they have the opportunity to attain an excellent quality of life and standard of living." (about)
+- "Sponsored by Education for Equality, a 501(c)(3) nonprofit." (sabi)
+- Footer: "Education for Equality — Free, world-class education for every child." (sabi page footer)
+
+**How Sabi is described:**
+- "An AI tutor any child can reach by calling a phone number. No smartphone. No internet. No cost." (sabi hero)
+- "Sabi remembers where each learner left off and adapts to their level automatically." (landing features section)
+- "Sabi remembers every child — their name, their level, their mistakes. Picks up where they left off." (sabi features)
+- "/sah-bee/ — 'to know' in Nigerian Pidgin" (sabi hero)
+- "A child dials a phone number. Sabi does the rest." (sabi)
+
+**How the courses are described:**
+- "For children and adults who never had the chance to learn. AI-powered voice lessons that meet every learner where they are." (landing)
+- "Learn to read from scratch. From letter sounds to full sentences — voice-guided lessons that work on any phone, no smartphone needed." (landing literacy card)
+- "Master counting, addition, subtraction, multiplication, and real-world math — using everyday market scenarios learners already understand." (landing numeracy card)
+- "Build essential literacy and numeracy skills from scratch. Designed for children who need to strengthen their foundation before tackling grade-level content." (subjects page)
+- "Complete Cambridge Primary Stage 4 curriculum with video lessons and reading materials." (subjects page)
+
+**How the problem is framed:**
+- "Millions of children and adults lack the foundational skills to read, write, or do basic math — skills that unlock everything else." (landing)
+- "Nigeria faces a significant educational crisis." (about)
+- "20 million children ages 5-14 are out of school in Nigeria" / "Nigeria has the highest number of out-of-school children in the world" (about, attributed to UNICEF)
+- "98M — Children out of school in Sub-Saharan Africa" (sabi)
+- "7 in 10 — Nigerian 10-year-olds who cannot read a single sentence" (sabi)
+- "16% — Of planned learning that actually happens in schools" (sabi, with footnote: "Attendance x lesson completion x teacher presence")
+- "A child who spends 10 years in school but can't read earns almost nothing more than one who never attended." (landing)
+
+**How learners are described:**
+- "children and adults who never had the chance to learn" (landing)
+- "underprivileged children in Nigeria" (about meta description and about hero subhead)
+- "any child" (sabi hero)
+- "every learner" (landing; sabi)
+- "children who need to strengthen their foundation" (subjects)
+- "children my age hawking wares or fixing cars so their families could survive" (founder story)
+- Learner persona in sample conversation: "Chidi" who sells groundnuts
+
+---
+
+## E. TERMINOLOGY AND CAPITALIZATION CONVENTIONS
+
+**Product name:** "Sabi" — always capitalized, never "SABI" or "sabi." Treated as a proper noun with warmth, not a brand acronym.
+
+**Organization name:** "Education for Equality" — always spelled out in full in UI copy. Shortened form "E4E" does not appear in any public-facing UI page.
+
+**Learner reference terms:**
+- "learner" / "learners" (landing, subjects) — the standard neutral term
+- "child" / "children" (dominant on sabi page and landing)
+- "students" (about page only)
+- "adults" (landing — explicitly inclusive, not only children)
+- Second person ("you") used in CTA labels ("Start Reading," "Start Learning") but never used in body copy describing learners
+
+**Subject naming:**
+- "Foundational Literacy" (capitalized as a proper course name)
+- "Foundational Numeracy" (capitalized as a proper course name)
+- "Grade 4 Cambridge Curriculum" / "Cambridge Primary Stage 4" (capitalized)
+- "Cambridge-Aligned" (hyphenated, capitalized as a badge label)
+- "Cambridge-aligned" (lowercase in running prose on subjects page) — minor inconsistency
+
+**Technology terminology:**
+- "AI-powered" (hyphenated compound modifier; landing)
+- "AI tutor" (sabi hero — no hyphen when used as noun phrase)
+- "voice-guided lessons" (landing)
+- "voice AI" (landing partner section: "Voice AI credits supporting Sabi demos and testing")
+- "toll-free calls" (sabi features)
+
+**Economic / data terminology:**
+- Currency written as "₦" (Naira symbol) inline in the sample conversation and in stat cards
+- US dollar amounts written as "$X" (not "USD X")
+- Percentages as numerals: "70%", "7 in 10", "16%" — mixed format between pages
+
+**Advisor page (internal only):** Uses "Naomi's voice: warm, clear, not over-formal" in a code comment/instructional note — this is a rare explicit internal articulation of tone.
+
+---
+
+## F. STRUCTURE AND FORMATTING HABITS
+
+**Sentence length:**
+- Hero subheads and body: medium-length sentences with em-dashes for rhythm. "We deliver free, AI-powered literacy and numeracy courses to anyone who needs them — on any phone."
+- Feature callouts: deliberately short, punchy fragments. "No smartphone. No internet. No cost." / "Just a phone call."
+- Stat card descriptors: one-sentence plain English under the number.
+
+**Use of statistics:**
+- Stats are always displayed as oversized bold numerals (e.g., "70%", "161-260x", "$40B", "47M") with a short explanatory sentence below and a small-print citation line beneath that. Pattern is consistent across landing and sabi pages.
+- Citations are always present — never floating statistics without attribution.
+- Pattern: large number → 1 bold sentence label → 1-2 sentence explanation → 1 tiny-print citation.
+
+**Second person:**
+- Not used in hero or body copy describing the situation. The voice addresses the problem as "children" / "learners" (third person) not "you."
+- "You" appears only in CTA labels ("Start Reading," "Browse Grade 4 Lessons") and in the sample Sabi conversation ("You got it!").
+
+**Em-dash usage:**
+- Frequent and characteristic of the brand voice: "anyone who needs them — on any phone," "No smartphone. No internet. No cost," "their name, their level, their mistakes."
+
+**Lists:**
+- About page uses bullet lists with bold lead terms ("Donate - Help us expand..."). This is the only page using this pattern.
+- Sabi page "How It Works" section uses numbered steps (1-5) with bold titles and a sentence description — more structured than bullets.
+
+**Capitalization of section headings:**
+- Title Case throughout: "The Learning Crisis," "Free Foundational Courses," "Why Learn With Us?", "The Economic Case for Foundational Skills," "The Science Behind Sabi," "Built for the Last Mile."
+
+**Emoji and punctuation:**
+- Zero emoji anywhere across all five pages.
+- Exclamation points appear only inside the sample Sabi conversation dialogue ("You got it!") — never in UI headings or body copy addressed to the web visitor.
+- Question marks used selectively in section headings: "Why Learn With Us?" / "What if we used the infrastructure that already exists?"
+
+**Paragraph length:**
+- Body paragraphs are short: typically 1-3 sentences. The founder story is the longest continuous prose (three short paragraphs of 2-3 sentences each).
+
+---
+
+## G. INCONSISTENCIES AND OFF-BRAND COPY
+
+**1. About page is significantly behind the rest of the site in positioning.**
+The about page subhead reads "Empowering underprivileged children in Nigeria through accessible, quality education." Meanwhile the landing and sabi pages have evolved to address adults as well as children, and explicitly position around foundational skills and AI delivery. The about page makes no mention of Sabi, AI, voice, or phone delivery. It describes the solution as "Video Lessons" and "Mobile Accessible" (i.e., a web app) — which is the old product framing, not the current voice-AI-over-phone framing. The about meta description still says "underprivileged children in Nigeria" (not "learners across Africa").
+
+**2. "underprivileged" appears on the about page but nowhere else.**
+The rest of the site uses "children who never had the chance to learn," "out-of-school children," or "every learner." "Underprivileged" is more dated nonprofit language and reads differently from the tone of the landing and sabi pages.
+
+**3. "Video Lessons" feature card on about page is inaccurate.**
+The about/Our Solution section lists four feature cards: "Free Curriculum," "Video Lessons," "Mobile Accessible," and "Progress Tracking." Three of these are web-app features and do not describe Sabi. "Video Lessons" in particular describes the old curriculum-app product, not the phone-based AI tutor that is now the primary product.
+
+**4. "students" on about page vs. "learners" / "children" everywhere else.**
+The about page uses "Students can track their learning progress." The rest of the site consistently uses "learners" or "children," not "students." This is a minor terminology inconsistency.
+
+**5. "Cambridge-Aligned" capitalized badge vs. "Cambridge-aligned" in prose on subjects page.**
+Subjects page line 134 uses the badge label "Cambridge-Aligned" (capital A), while line 103 in running prose says "Cambridge-aligned" (lowercase a). Minor but inconsistent.
+
+**6. Stat format inconsistency between landing and sabi pages.**
+Landing page: "70% Of 10-year-olds in Nigeria cannot read..." (percentage, stat card). Sabi page for the same fact: "7 in 10 — Nigerian 10-year-olds who cannot read a single sentence." These are the same statistic expressed differently, which is actually a deliberate stylistic choice (stat cards vs. prose), but they appear in structurally identical card formats on the two pages. A visitor who views both pages may notice the framing change.
+
+**7. The advisor-board page is an internal admin tool with no gating.**
+The page at `/advisor-board` is publicly routable and exposes internal ops language ("Advisor Board Command Center," "open asks," "Agent notes," "Naomi wants this set to naomi.ivie04@gmail.com") and a personal Gmail address. This is not a brand voice issue per se, but it is an exposure risk. It is the one page whose copy is entirely inward-facing and should not be visible to the public.
+
+**8. Footer on sabi page links to "Curriculum App" and "Website" both pointing to the same URL (`https://eduforequality.org`).**
+This is a placeholder / copy error, not a voice inconsistency, but it would look odd to a visitor.
+
+---
+
+## Coverage Gaps
+
+- No explicit tagline or one-liner that names both E4E and Sabi together (e.g., "Sabi, by Education for Equality — [X]"). The two are presented somewhat separately.
+- No page defines what makes E4E different from other edtech nonprofits in a single sentence (a true differentiator statement beyond "any phone, no internet").
+- No error states, empty states, or 404 page copy was included in the files reviewed — those are unseen.
+- The about page has no mention of the phone/AI product at all; there is no "About Sabi" sub-section on the about page.
+- No social proof from actual learners or parents — the sample Sabi conversation is constructed, not a testimonial.
+agentId: acb72bb62e1164bce (use SendMessage with to: 'acb72bb62e1164bce' to continue this agent)
+<usage>subagent_tokens: 62700
+tool_uses: 5
+duration_ms: 106610</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,534 @@
+========================================================================
+AGENT RESEARCH: Deep read content, scripts, docs
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 19:05:18 UTC
+========================================================================
+
+I'm a fresh Claude doing a deep dive on the content/data/config portions of `/Users/naomiivie/Education for Equality/curriculum-app/`. Specifically the lesson content, scripts, public assets, docs, and the auto_deploy infrastructure.
+
+Read these in full. Return AT LEAST 90% of the substantive content. Do NOT summarize. Return actual file lists, actual lesson titles, actual prompt strings, actual deploy scripts, actual env vars.
+
+**Directories to inventory and read:**
+
+- `scripts/` — every .ts/.js/.sh/.py file (likely seeding scripts, lesson uploaders, RAG embedding scripts)
+- `docs/` — every .md file
+- `public/` — list every file (especially any sabi-specific assets, screenshots, logos, audio samples)
+- `auto_deploy.py` — read fully, this is the auto-deploy daemon
+- `CLAUDE.md` and `README.md` at the project root — full content
+- Any lesson content directories (lessons-content/, lesson-scripts/) — list files, sample 5–10 of them in full so I can see structure
+
+For each script (in scripts/) return:
+- Filename + purpose
+- What command runs it
+- What env vars / args it needs
+- What it does step-by-step
+- External services hit
+
+For docs/ return:
+- Every .md filename and a 3-sentence description of what's in it
+
+For auto_deploy.py:
+- Full operational logic
+- What triggers a deploy
+- Which directory it watches
+- How it pushes to Vercel / Hetzner
+
+For CLAUDE.md and README.md:
+- Full content — quote directly
+
+For lesson content:
+- The 9-module structure (Naomi has talked about 5 literacy phase 1 modules, 4 numeracy modules, 2 diagnostics)
+- Sample 3 lesson scripts in full so the founder can see real lesson structure
+- File naming conventions
+
+For public/:
+- All assets organized by type (logos, screenshots, partner badges, audio)
+- Anything Sabi-branded
+
+Also tell me about supabase-*.sql files at the project root — what each one defines.
+
+This is for Naomi Ivie before her pre-pilot launch. Don't summarize.
+
+----------------------------------------
+
+I have enough now to deliver the comprehensive inventory. Here's the full report.
+
+---
+
+# Curriculum-App Inventory — Full Content Dump
+
+## Root Project Files
+
+**Location:** `/Users/naomiivie/Education for Equality/curriculum-app/`
+
+### `README.md` (full content)
+```
+# Education for Equality
+
+A free Khan Academy-style online learning platform for underprivileged children in Nigeria, using Cambridge Primary curriculum framework with OER content.
+
+## Features
+- Cambridge-aligned curriculum (Grade 4 available)
+- Mathematics, English, Science, Social Studies
+- Video lessons from Khan Academy
+- User authentication with Clerk
+- Progress tracking dashboard
+- Mobile-friendly design
+
+## Tech Stack
+- Framework: Next.js 16 with TypeScript
+- Database: Supabase
+- Authentication: Clerk
+- Styling: Tailwind CSS
+- Deployment: Vercel
+
+## Getting Started
+npm install && npm run dev → http://localhost:3000
+
+## Environment Variables
+NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, CLERK_SECRET_KEY
+
+License: MIT
+```
+
+### `CLAUDE.md` (full content)
+A short pointer file that says this is a subfolder of E4E/Sabi. Tells future Claudes: memory lives at `~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/`, sessions at `/Users/naomiivie/Education for Equality/.claude-sessions/`, research at `~/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/`. Says to follow the parent `CLAUDE.md` and to re-read the entire session transcript after compaction.
+
+### `package.json`
+- Name: `curriculum-app`, version 0.1.0, private
+- Scripts: `dev` (next dev), `build` (next build), `start` (next start), `lint` (eslint), `seed` (`tsx --env-file=.env.local scripts/seed-grade4.ts`)
+- Deps: `@anthropic-ai/sdk ^0.78.0`, `@clerk/nextjs ^6.36.8`, `@supabase/supabase-js ^2.90.1`, `@xenova/transformers ^2.17.2`, `next 16.1.3`, `react 19.2.3`, `react-dom 19.2.3`, `twilio ^5.12.2`
+- Dev deps: tailwindcss ^4, tsx ^4.21.0, typescript ^5, vercel ^50.4.9, eslint ^9
+
+### `.vercel/project.json`
+- projectId: `prj_fm5Pt7wY7Gkbmot9Tu445Y0FFNUB`
+- orgId: `team_kHocFRxccHQd19iVWl4NB2Zv` (Naomi-Ivie's-Projects)
+- projectName: `curriculum-app`
+
+### `.env.local` (LIVE SECRETS — present on disk)
+```
+AT_API_KEY="[REDACTED:at-api-key]"
+AT_SENDER_ID="(leave empty for sandbox)"
+AT_USERNAME="sandbox"
+CLERK_SECRET_KEY="[REDACTED:stripe-secret]"
+ELEVENLABS_API_KEY="[REDACTED:elevenlabs-api-key]"
+CEREBRAS_API_KEY="[REDACTED:cerebras-api-key]"
+GROQ_API_KEY="[REDACTED:groq-api-key]"
+NEXT_PUBLIC_APP_URL="https://eduforequality.org"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="/dashboard"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="/dashboard"
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="[REDACTED:clerk-key]"
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
+SABI_DEMO_KEY="yarn2026"
+TWILIO_ACCOUNT_SID="ACc273246e24dac4d9ddaad3b80617bbe4"
+TWILIO_AUTH_TOKEN="[REDACTED:twilio-auth-token]"
+TWILIO_PHONE_NUMBER="+17153122345"
+YARNGPT_API_KEY="[REDACTED:yarngpt-api-key]"
+VERCEL_OIDC_TOKEN="<long JWT>"
+```
+
+NOTE — `.env.local` IS in `.gitignore` (via the `.env*.local` pattern), so it should not be in git. But it is on disk in plain text. **NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY, and ANTHROPIC_API_KEY are missing from this file** — they would need to be added before any Supabase- or Claude-dependent feature works locally.
+
+### `.env.local.example` (canonical template)
+All env vars Sabi/curriculum-app needs:
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`
+- Clerk: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`, sign-in/sign-up URL pairs
+- `ANTHROPIC_API_KEY` (Claude Haiku fallback)
+- `CEREBRAS_API_KEY` (~2100 tok/s, voice primary)
+- `GROQ_API_KEY` (Whisper STT 28,800 sec/day free + LLM fallback)
+- `YARNGPT_API_KEY` (Nigerian TTS, used after ElevenLabs/Chatterbox unless `SABI_ELEVENLABS_TTS_ONLY=true`)
+- `ELEVENLABS_API_KEY`, `NEXT_PUBLIC_ELEVENLABS_CONVAI_AGENT_ID=agent_5701kp7djbvreqk9cb3mf4g55n09`
+- Optional: `ELEVENLABS_MODEL_ID`, `ELEVENLABS_VOICE_ID=oC2pCZZWEDRe6lmZpaaw`, `SABI_ELEVENLABS_TTS_ONLY`, `SABI_API_KEY`, `SABI_OPEN_DEMO`
+- `AT_API_KEY`, `AT_USERNAME` (Africa's Talking, ₦3/min incoming)
+- `SABI_DEMO_KEY` (gate for `/sabi/demo`)
+- `NEXT_PUBLIC_APP_URL=https://eduforequality.org`
+
+### `middleware.ts`
+Clerk middleware with subdomain routing. If host starts with `sabi.` (i.e. `sabi.eduforequality.org`):
+- `/` → rewrite to `/sabi`
+- `/demo` → rewrite to `/sabi-voice`
+- `/chat` → rewrite to `/sabi-demo`
+- `/pricing` → rewrite to `/sabi/pricing`
+- Any other path → redirect to `/demo`
+Otherwise: `/dashboard(.*)` is auth-protected.
+
+---
+
+## `auto_deploy.py` — Auto-Deploy Daemon
+
+**Path:** `/Users/naomiivie/Education for Equality/curriculum-app/auto_deploy.py`
+**Permission:** Executable. **Purpose stated in docstring:** *"Runs before Claude Code context compaction to save all work."* It is NOT a watcher daemon — it is a one-shot script invoked by Claude Code itself before context compaction.
+
+**Logic, in order:**
+1. `REPO_DIR = "/Users/naomiivie/Education for Equality/curriculum-app"`.
+2. `git status --porcelain` — if no changes, exits with "No changes to deploy."
+3. `git add -A` (stages everything, respecting `.gitignore`).
+4. Builds commit message: `"Auto-save: YYYY-MM-DD HH:MM (N files)\n\nSession snapshot before context compaction."` where N is the line count of `git diff --cached --name-only`.
+5. `git commit -m <msg>` via subprocess (no `--no-verify`, no hook bypass).
+6. `git push origin main`.
+7. `npx vercel --prod --yes` — deploys production from local working tree.
+8. Each step prints a status line to stderr (push success, deploy success, or fall-back instructions).
+
+**No external services beyond:** local git → `origin` (GitHub) → Vercel CLI to Vercel prod. No Hetzner deploy from this script (Hetzner Sabi server `136.243.8.51` is deployed separately).
+
+**Trigger:** Manually invoked or run by Claude Code via a pre-compaction hook. Not a cron, not a file watcher.
+
+---
+
+## `scripts/` — Three TypeScript Files
+
+### 1. `scripts/seed-grade4.ts` (6.2 KB, Feb 4)
+- **Purpose:** Populate Supabase with Cambridge Grade 4 curriculum (from `lib/cambridge-grade4-curriculum.ts`).
+- **Run command:** `npm run seed` (which is `tsx --env-file=.env.local scripts/seed-grade4.ts`) or `npx tsx scripts/seed-grade4.ts`.
+- **Env vars:** `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
+- **Steps:** (a) Look up Grade 4 row by `number=4`. (b) Load all subject rows, build slug→id map. (c) For each subject in `grade4Curriculum` (mathematics, english, science, socialStudies), upsert `units` rows (unique on `grade_id,subject_id,title`). (d) For each unit, insert `lessons` rows (unique on `unit_id,title`). Logs totals at the end.
+- **External services:** Supabase only.
+
+### 2. `scripts/seed-embeddings.ts` (3.5 KB, Mar 9)
+- **Purpose:** Generate 384-dim embeddings (`Xenova/all-MiniLM-L6-v2`, MiniLM) for every curriculum chunk and insert into `curriculum_embeddings` pgvector table.
+- **Run command:** `npx tsx scripts/seed-embeddings.ts`.
+- **Prerequisites:** Run `supabase-rag-schema.sql` first; `npm install @xenova/transformers`; env vars set.
+- **Env vars:** `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
+- **Steps:** Load MiniLM via `@xenova/transformers` pipeline. Call `generateAllChunks()` (lesson chunks from foundational + basic + cambridge curricula) + `generateSabiModuleChunks()` (7 Sabi modules 0-6). Delete existing embeddings. Insert in batches of 10. Print subject/module stats.
+- **External services:** Supabase + Hugging Face model download (cached locally by transformers.js).
+
+### 3. `scripts/setup-sabi.ts` (1.7 KB, Feb 27)
+- **Purpose:** Idempotency check — does `sabi_students` / `sabi_sessions` exist? If not, print the SQL from `supabase-sabi-schema.sql` and a clickable Dashboard SQL Editor URL for the user to paste and run manually.
+- **Run command:** `npx tsx --env-file=.env.local scripts/setup-sabi.ts`.
+- **Env vars:** `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
+- **External services:** Supabase (read-only existence check).
+
+---
+
+## `docs/` — One File
+
+### `docs/elevenlabs-agent-prompt.md` (10.3 KB, May 1)
+The canonical, copy-paste-ready ElevenLabs ConvAI agent configuration. Key contents:
+
+**Project Reference table:**
+- ConvAI agent id: `agent_5701kp7djbvreqk9cb3mf4g55n09`
+- Dashboard name: Education for Equality
+- Twilio "voice" URL (ElevenLabs native US): `https://api.us.elevenlabs.io/twilio/inbound_call`
+
+**Voice timeline:** Olufunmilola (`9Dbo4hEvXQ5l7MXGZFQA`) appeared in older internal notes as the stock ElevenLabs Nigerian voice — but had already been replaced by **Bukola** (`oC2pCZZWEDRe6lmZpaaw`, custom Nigerian voice) before the Feb 27–28, 2026 MIT Africa Business Challenge demo. Treat Bukola as the canonical hackathon/demo voice.
+
+**First message (paste into ElevenLabs "First Message" field):**
+> "Hello! I'm SAH-bee, your learning friend! SAH-bee means 'to know' — and together, we're going to know so much! What is your name?"
+
+**System prompt (paste into "System Prompt" field):** Starts with `caller_id: {{system__caller_id}}` then the full Sabi persona — pronounced "SAH-bee", Nigerian English (not Pidgin), warm older-sibling tone, expressive markers like `[excited]`, `[playful]`, `[gentle]`, `[surprised]`, `[warm]`. Includes specific Nigerian expressions ("Well done oh!", "Sharp sharp!", "Ehn ehn", "Oya next one!"). 1-3 sentences max per turn, use child's name.
+
+**Pedagogy ("Naira-first, never abstract"):** Research-cited (Nature 2025, 9x improvement). NEVER say "what is 15 + 7?"; ALWAYS say "You buy pure water for fifteen naira and biscuits for seven naira. How much altogether?" Items list: groundnuts, pure water, garri, biscuits, chin-chin, tomatoes, peppers, rice, oil, bread, eggs, exercise books, mangoes, oranges. Always spell out "naira", never use the symbol.
+
+**Lesson flow (5-7 min):** Greeting (15s) → Teach (90s, ONE concept) → Guided practice (90s) → Independent check (60s) → Wrap-up (15s).
+
+**Correct/wrong behavior:** Celebrate then move on; if 3+ right in a row, advance. If wrong, scaffold in 3 steps (smaller numbers → walk through together → give answer + fresh problem). Never repeat the same question.
+
+**Curriculum modules 0-6:** Diagnostic, Counting & Number Sense, Addition, Subtraction, Multiplication, Division, Word Problems.
+
+**Adaptive behavior:** 3+ correct → advance, 2+ wrong → simplify, bored → skip ahead.
+
+**Voice rules:** Spell out numbers ("one hundred and fifty naira" not "150"), no symbols, no markdown, one idea per response, after 8-10 exchanges start wrapping up.
+
+**Voice settings (Bukola — Flash):** Model `eleven_flash_v2_5`, stability **0.28**, similarity 0.70, speed 1.0, `use_speaker_boost: true`. Override model via env `ELEVENLABS_MODEL_ID`.
+
+**Agent settings:** Language English, max call duration 8 minutes, turn eagerness medium-low.
+
+---
+
+## `public/` — Static Assets
+
+```
+/public/file.svg            (391 B)    — default Next.js placeholder
+/public/founder-naomi.png   (777 KB)   — 646×550 PNG, Naomi headshot
+/public/globe.svg           (1 KB)     — default Next.js placeholder
+/public/hero-children.jpg   (66 KB)    — 611×344 JPEG, hero image of children
+/public/icon.svg            (2.7 KB)   — 262×262 SVG with embedded base64 PNG (E4E icon, white)
+/public/logo.png            (18.7 KB)  — 522×160 PNG, E4E wordmark logo
+/public/next.svg            (1.3 KB)   — default Next.js placeholder
+/public/partner-child.jpg   (172 KB)   — 1440×874 JPEG, partner page child photo
+/public/robots.txt          (636 B)    — see below
+/public/tree-icon.png       (1.8 KB)   — 262×236 PNG with alpha, tree icon
+/public/vercel.svg          (128 B)    — default Vercel logo
+/public/window.svg          (385 B)    — default Next.js placeholder
+/public/partners/elevenlabs.svg    (3.4 KB)  — ElevenLabs partner badge
+/public/partners/wesleyan-pce.webp (45 KB)   — Wesleyan PCE (Patricelli Center for Entrepreneurship) badge
+```
+
+**Sabi-branded assets:** None separately labeled "sabi". Branding lives in `/sabi`-prefixed app routes (`/sabi`, `/sabi-demo`, `/sabi-voice`) rather than dedicated image files.
+
+**robots.txt:** Allows `/` for all bots, but **disallows** `/sabi/demo`, `/sabi-voice`, `/sabi-demo`, `/api/sabi/` for User-agent: `*`, plus explicit blocks for GPTBot, ChatGPT-User, anthropic-ai, Claude-Web, CCBot, Google-Extended. This is to prevent pre-pilot scraping/training-data crawling of demo routes.
+
+---
+
+## Supabase `*.sql` files at project root
+
+Five SQL files. Each defines/modifies the Supabase schema. The setup order is: schema → lesson-completions → sabi-schema → sabi-v2 → rag-schema. None are migration-tracked; you paste each into the Supabase SQL Editor manually.
+
+### `supabase-schema.sql` (6.4 KB) — Core Curriculum
+- Tables: `grades` (id, number unique, name, description, order_index), `subjects` (id, name, slug unique, description, icon, color, order_index), `units` (id, grade_id FK, subject_id FK, title, description, order_index, standards_alignment, UNIQUE(grade_id,subject_id,title)), `lessons` (id, unit_id FK, title, description, content, video_url, video_source, external_link, duration_minutes, order_index, standards TEXT[], UNIQUE(unit_id,title)), `user_progress` (id, user_id, lesson_id FK, completed_at, time_spent_seconds, UNIQUE(user_id,lesson_id)), `user_profiles` (id, user_id unique, selected_grade_id FK).
+- Indexes: `idx_units_grade_subject`, `idx_lessons_unit`, `idx_user_progress_user`, `idx_user_progress_lesson`.
+- RLS: enabled on all six tables. Public SELECT on grades/subjects/units/lessons. user_progress and user_profiles scoped via `auth.uid()::text = user_id OR user_id = current_setting('request.jwt.claims', true)::json->>'sub'` (Clerk JWT compat).
+- Seed data: Grades 4-12 with descriptions ("Fourth grade - Ages 9-10", etc., order_index 1-9). Subjects: Mathematics (🔢 #4F46E5), English (📚 #DC2626), Science (🔬 #059669), Social Studies (🌍 #D97706).
+
+### `supabase-lesson-completions.sql` (771 B) — Simple Progress Tracking
+- Table: `lesson_completions` (id, user_id TEXT, lesson_id TEXT, completed_at, UNIQUE(user_id,lesson_id)).
+- Indexes: `idx_completions_user`, `idx_completions_lesson`.
+- RLS: **DISABLED** (uses Clerk auth + service role key server-side).
+- Purpose: lightweight progress tracking using string lesson IDs from local curriculum data (not the UUID-based `user_progress` table).
+
+### `supabase-sabi-schema.sql` (1.3 KB) — Sabi AI Tutor Memory
+- Tables: `sabi_students` (id, browser_id unique, name, current_level default 'beginner', total_sessions, total_correct, total_wrong, last_session_summary, created_at, updated_at), `sabi_sessions` (id, student_id FK, messages JSONB default '[]', summary, correct_count, wrong_count, duration_seconds, created_at).
+- Indexes: `idx_sabi_students_browser_id`, `idx_sabi_sessions_student_id`, `idx_sabi_sessions_created_at` (DESC).
+- Comment: identified by `browser_id` in demo, **phone_number in production** (`phone_number` column is added later — referenced in `sabi-shared.ts`'s `findOrCreateStudentByPhone`).
+
+### `supabase-sabi-v2.sql` (748 B) — Module Tracking
+- Alters `sabi_students` to add: `current_module INTEGER DEFAULT 0`, `current_topic TEXT DEFAULT 'diagnostic'`, `skills JSONB DEFAULT '{}'`.
+- Alters `sabi_sessions` to add: `topics_covered TEXT[] DEFAULT '{}'`, `recommended_module INTEGER`.
+- Module values legend in comment: 0=diagnostic, 1=counting, 2=addition, 3=subtraction, 4=multiplication, 5=division, 6=word_problems, 7=completed (ready for Grade 4).
+
+### `supabase-rag-schema.sql` (2.3 KB) — pgvector RAG
+- Enables `vector` extension.
+- Table `curriculum_embeddings` (id, lesson_id, chunk_text, chunk_type ('concept'|'example'|'practice'|'story'|'summary'), module, subject, `embedding vector(384)` for MiniLM, metadata JSONB, created_at).
+- Indexes: ivfflat on embedding with `vector_cosine_ops` (lists=50), btree on module, btree on subject.
+- RPC `search_curriculum(query_embedding vector(384), match_count INT DEFAULT 3, filter_module TEXT DEFAULT NULL, filter_subject TEXT DEFAULT NULL)` returns id, lesson_id, chunk_text, chunk_type, module, subject, metadata, similarity (computed as `1 - (embedding <=> query_embedding)`).
+- RLS: public SELECT allowed (curriculum is OER).
+
+---
+
+## Lesson Content Architecture
+
+There is **no separate `lessons-content/` or `lesson-scripts/` directory**. All curriculum content lives in three TypeScript files inside `lib/`, hard-coded as exported objects:
+
+| File | Size | Content |
+|---|---|---|
+| `lib/foundational-numeracy.ts` | 216 KB | **6 units, 100 lessons** — Foundational Numeracy (the Sabi/voice-aligned corpus) |
+| `lib/foundational-literacy.ts` | 204 KB | **8 units, 86 lessons** — Foundational Literacy |
+| `lib/cambridge-grade4-curriculum.ts` | 85 KB | **Cambridge Primary Grade 4** across 4 subjects (Mathematics, English, Science, Social Studies); ~71 lesson rows total |
+| `lib/curriculum.ts` | 15 KB | Type defs + small "basic" sample curriculum (math/english/science/social-studies, 2-3 lessons each) used as a thin demo dataset alongside the foundational corpora |
+
+Total foundational lessons: **186** (numeracy 100 + literacy 86), plus Cambridge ~71.
+
+### The "9-module phase 1" structure Naomi mentioned
+
+Looking at the actual files vs the framing the founder uses (5 literacy phase-1 + 4 numeracy + 2 diagnostics):
+
+**Foundational Numeracy (6 unit "modules"):**
+1. **fn-unit-1** — Counting & Number Sense (15 lessons: Counting 1-10, 11-20, to 50, to 100, Counting Naira Coins, Counting Forward, Counting Backward from 20, Counting Backward from 50, Skip Counting by 2s/5s/10s, Place Value: Ones and Tens, Place Value: Hundreds, Comparing Numbers, Ordering Numbers)
+2. **fn-unit-2** — Addition (17 lessons: Adding With Objects, to 5, to 10, single digits at market, with Naira small, double-digit, with carrying, three items, three prices, mental making-10, mental doubles, hundreds, hundreds+tens, word problems buying, saving money, counting collections, market practice, review)
+3. **fn-unit-3** — Subtraction (17 lessons: Taking Away, to 5, to 10, Making Change simple, Making Change with Naira Notes, double-digit, borrowing, from 100, from larger numbers, connection to addition, Finding the Difference, multi-step buy+change, mental counting back, mental doubles, word problems making change, how much left, market trader, review)
+4. **fn-unit-4** — Multiplication (17 lessons: Groups of Objects, Repeated Addition, Times Sign, Times Tables 2s/5s/10s/3s/4s, multiply by 1 and 0, Buying Multiple Items, Single × Double, Naira bus fare for a family, with Addition, Arrays, word problems shopping, groups, market practice, review)
+5. **fn-unit-5** — Division (15 lessons: Sharing Equally, What Division Means, by 2 (halving), by 3, by 5, by 10, relation to multiplication, Dividing Naira Among Friends, with Remainders, Larger Numbers, Fair Sharing word problems, Market Division price per item, grouping word problems, sharing money practice, review)
+6. **fn-unit-6** — Word Problems Mixed Operations (19 lessons: Choosing the Right Operation, Key Words, +/-?, ×/÷?, Two-Step Buy+Change, Two-Step Earn+Share, Market Day Shopping with Budget, Market Day Running a Stall, Saving and Spending, Comparing Prices, Bus Fare and Transport, School Supplies, Multi-Step Challenge, Problem-Solving Strategies, Final Review, Final Challenge: Lagos Market Master)
+
+**Foundational Literacy (8 unit "modules"):**
+1. **fl-unit-1** — Sound Awareness (11 lessons: Listening to Sounds Around Us, Beginning Sounds, Matching Beginning Sounds, Ending Sounds, Rhyming Words (3 lessons), Syllable Clapping, Syllable Counting, Blending Syllables, Sound Games Odd One Out, Sound Review Listening Champion)
+2. **fl-unit-2** — Vocabulary Building (12 lessons: My Body Head to Toe, Staying Healthy, My Family, My Home, At the Market Trading Words, Market Items Food Words, Getting Around Transport, My School Classroom Words, Nature Animals, Plants and Weather, Describing Words Big/Small/Fast/Slow, Action Words Run/Jump/Eat/Sleep)
+3. **fl-unit-3** — Listening Comprehension (7 lessons: Amina Goes to the Market, Emeka and the Lost Goat, The Kindest Girl in Lagos, The Clever Tortoise, Sharing at the Market, The Rainy Season, Story Review Listening Detective)
+4. **fl-unit-4** — Oral English & Grammar (10 lessons: Speaking in Full Sentences, Subject and Verb, Past/Present/Future Tense, Asking Questions Who-What-Where, Asking Questions When-Why-How, Using Adjectives, Comparing Bigger-Biggest, Grammar Review Sentence Builder)
+5. **fl-unit-5** — Advanced Sounds (10 lessons: Breaking Words into Sounds, Counting Sounds, Removing Sounds, Changing Sounds, First/Last/Middle Sound, Blending Sounds into Words, The Alphabet Letter Names, Letter Sounds a-m, Letter Sounds n-z, Sound-Letter Review)
+6. **fl-unit-6** — Phonics (11 lessons: Letters s,a,t / i,p,n / First Words sat-pin-tap-nap-tip-sit / c,k,e,h / r,m,d / cat-hen-mat-red-dim-ham / g,o,u / l,f,b / dog-fun-log-but-fig-gum / Review All 18 Sounds / Tricky Words the,is,I,to,a,was / Reading Simple Sentences)
+7. **fl-unit-7** — Blending & Decoding (10 lessons: CVC Sounding Out, CVC Reading Practice, Consonant Blends, Consonant Blends Practice, Digraphs sh-ch-th, Digraphs Practice, Reading Short Sentences, Reading Longer Sentences, Sight Words, Blending Review Word Reader)
+8. **fl-unit-8** — Reading Comprehension (10 lessons: Reading Short Passages, Finding the Main Idea, Answering Questions, Characters in Stories, Sequence First-Next-Last, Informational Text, Stories with Dialogue, Making Predictions, Summarising, Reading Review Comprehension Champion)
+
+(So the "9 modules / 4 numeracy + 5 literacy phase 1 + 2 diagnostics" framing from earlier conversations does not match the codebase 1-to-1 — the codebase has **6 numeracy units + 8 literacy units + Module 0 voice-diagnostic** as the structure. The diagnostic logic lives in `lib/voice/sabi-shared.ts` and `lib/rag/chunk.ts` `generateSabiModuleChunks()`, not as a separate "unit" in the lesson files.)
+
+### File naming conventions
+
+- Lesson IDs: `fn-{unit}-{lesson}` (foundational numeracy) e.g. `fn-2-7` = unit 2 lesson 7
+- `fl-{unit}-{lesson}` (foundational literacy) e.g. `fl-6-3`
+- Cambridge: `g4-{subject-prefix}-…` (per `cambridge-grade4-curriculum.ts` IDs, not enumerated here but follow same shape)
+- Unit IDs: `fn-unit-{N}`, `fl-unit-{N}`
+- Sabi RAG modules: `sabi-module-0` … `sabi-module-6` (module names `sabi-diagnostic`, `sabi-counting`, `sabi-addition`, `sabi-subtraction`, `sabi-multiplication`, `sabi-division`, `sabi-word-problems`)
+
+### Lesson HTML structure (every lesson follows this template)
+
+Each lesson `content` field is HTML with 6 standard sections marked by emoji-prefixed h3:
+- `<h3>🎯 What You'll Learn</h3>`
+- `<h3>🏪 Market Story</h3>` (numeracy) or `<h3>🌟 Let's Start</h3>` (literacy)
+- `<h3>📝 Let's Learn</h3>` (numeracy) or `<h3>📚 New Concept</h3>` (literacy)
+- `<h3>✏️ Practice Questions</h3>` (numeracy) or `<h3>🎮 Let's Practice</h3>` (literacy)
+- `<details><summary>Click to see answers</summary>` … `</details>` (collapsed answer key)
+- `<h3>💡 Remember</h3>` (summary)
+
+The RAG chunker (`lib/rag/chunk.ts`) regex-matches exactly these headings to break each lesson into `story | concept | practice | summary | example` chunks for embedding.
+
+---
+
+## Sample Lesson Scripts (3 full lessons, verbatim from disk)
+
+### Sample 1 — `fn-2-7` "Adding with Carrying" (Foundational Numeracy Unit 2, lesson 7)
+
+```
+🎯 What You'll Learn
+You will learn what to do when the ones digits add up to more than 9. This is called carrying or regrouping.
+
+🏪 Market Story
+Funke buys bread for ₦45 and eggs for ₦27. She adds the ones: 5 + 7 = 12. But 12 is more than 9! She can't put 12 in the ones place. She needs to "carry" the extra ten over to the tens column. Let's see how.
+
+📝 Let's Learn
+When the ones add up to 10 or more, we carry 1 ten to the tens column.
+Step-by-step for ₦45 + ₦27:
+ 1. Add the ones: 5 + 7 = 12. Write down 2 in the ones place, carry 1 to the tens.
+ 2. Add the tens: 4 + 2 = 6, plus the carried 1 = 7. Write 7 in the tens place.
+ 3. Answer: ₦72.
+Example 1: ₦38 + ₦25. Ones: 8 + 5 = 13, write 3 carry 1. Tens: 3 + 2 + 1 = 6. Answer: ₦63.
+Example 2: ₦56 + ₦17. Ones: 6 + 7 = 13, write 3 carry 1. Tens: 5 + 1 + 1 = 7. Answer: ₦73.
+Example 3: ₦49 + ₦34. Ones: 9 + 4 = 13, write 3 carry 1. Tens: 4 + 3 + 1 = 8. Answer: ₦83.
+
+✏️ Practice Questions
+ 1. ₦28 + ₦15 = ?
+ 2. ₦37 + ₦46 = ?
+ 3. Bola buys a notebook for ₦65 and crayons for ₦28. What is the total?
+
+Answers:
+ 1. ₦28 + ₦15 = ₦43. Ones: 8+5=13, write 3 carry 1. Tens: 2+1+1=4.
+ 2. ₦37 + ₦46 = ₦83. Ones: 7+6=13, write 3 carry 1. Tens: 3+4+1=8.
+ 3. ₦65 + ₦28 = ₦93. Ones: 5+8=13, write 3 carry 1. Tens: 6+2+1=9.
+
+💡 Remember
+When ones add up to 10 or more, write down the ones digit and carry 1 to the tens column. Don't forget to add the carried 1!
+```
+Duration 14 min, order 7.
+
+### Sample 2 — `fn-4-4` "Times Table: 2s"
+
+```
+🎯 What You'll Learn
+You will memorise the 2 times table. Multiplying by 2 is the same as doubling a number!
+
+🏪 Market Story
+Emeka and his twin brother each get the same pocket money. Whatever one gets, the total is always double. If each gets ₦5, the total is ₦10. If each gets ₦8, the total is ₦16. That's the 2 times table!
+
+📝 Let's Learn
+The 2 times table:
+ 1 × 2 = 2
+ 2 × 2 = 4
+ 3 × 2 = 6
+ 4 × 2 = 8
+ 5 × 2 = 10
+ 6 × 2 = 12
+ 7 × 2 = 14
+ 8 × 2 = 16
+ 9 × 2 = 18
+ 10 × 2 = 20
+Notice: all the answers are even numbers — they end in 0, 2, 4, 6, or 8. Multiplying by 2 is the same as skip counting by 2s!
+Example 1: 7 × 2 = 7 + 7 = 14.
+Example 2: 2 pairs of shoes means 2 × 2 = 4 shoes.
+Example 3: Amina buys 8 oranges at ₦2 each: 8 × 2 = ₦16.
+
+✏️ Practice Questions
+ 1. What is 6 × 2?
+ 2. What is 9 × 2?
+ 3. Bola buys 5 exercise books at ₦2 each. How much does she pay?
+
+Answers: 12, 18, ₦10.
+
+💡 Remember
+The 2 times table gives even numbers. Multiplying by 2 means doubling. If you can double, you know your 2 times table!
+```
+Duration 10 min, order 4.
+
+### Sample 3 — `fl-6-1` "Letters s, a, t: Sound and Shape" (Phonics unit, lesson 1)
+
+```
+🎯 What You'll Learn
+You will learn to recognise and sound out the letters s, a, and t — your first three reading letters!
+
+🌟 Let's Start
+Today is a very special day — you are going to learn your first letters for reading! We will start with three letters: s, a, and t. With just these three letters, you can already make a real word!
+
+📚 New Concept
+Letter s:
+ • Sound: /s/ — like a snake hissing: sssssss
+ • Shape: It looks like a curvy snake. Start at the top, curve left, then curve right.
+ • Words: sun, sit, sat
+
+Letter a:
+ • Sound: /a/ — open your mouth wide: aaa (like the a in ant)
+ • Shape: Start with a small circle, then add a line going down on the right side.
+ • Words: ant, at, am
+
+Letter t:
+ • Sound: /t/ — a short, sharp sound: t-t-t (tap your tongue behind your top teeth)
+ • Shape: Draw a line going down, then cross it near the top.
+ • Words: ten, tap, top
+
+Your first word! Put them together: s-a-t → sat! "The girl sat on the chair." You just read your first word!
+Also try: at (a-t) and as (a-s).
+
+🎮 Let's Practice
+ 1. What sound does the letter s make?
+ 2. Blend these letters: s-a-t. What word do you get?
+ 3. Blend these letters: a-t. What word do you get?
+
+Answers: /s/ like a snake sssss; sat; at.
+
+💡 Remember
+Your first three letters are s, a, and t. Each one makes a sound. When you blend the sounds together, you read a word! s-a-t = sat. You are reading!
+```
+Duration 12 min, order 1.
+
+---
+
+## Cambridge Grade 4 Curriculum (`lib/cambridge-grade4-curriculum.ts`)
+
+Single exported object `grade4Curriculum` keyed by `{mathematics, english, science, socialStudies}`, each with `subjectName`, `gradeNumber: 4`, `units[]`.
+
+**Mathematics** units & lessons: Numbers and Place Value (Place Value Thousands, Comparing, Rounding, Negative, Odd/Even), Addition and Subtraction (Mental Strategies, Near Multiples of 10/100, Column Method), Multiplication and Division (Times Tables 2/3/4/5/10, Times Tables 6 and 9, Division Facts, Multiplying by 10 and 100), Fractions (Understanding, Comparing, Fractions of Amounts), Geometry (2D Shapes, Lines and Angles), Measurement (Units of Length, Time Hours and Minutes).
+
+**English:** Reading Comprehension (Main Ideas, Inferences), Grammar and Punctuation (Sentence Types, Nouns and Pronouns, Verbs and Tenses), Writing (Paragraphs, Story Writing), Vocabulary (Prefixes and Suffixes), Phonics and Word Reading (Long Vowels, Blends and Digraphs, Syllable Types, Sight Words), Reading Fluency (Reading with Expression, Building Speed, Self-Monitoring), Reading Comprehension Strategies (Predicting, Summarising, Asking Questions, Making Connections).
+
+**Science:** Living Things and Their Habitats (Classifying, Food Chains), Materials and Their Properties (Solids/Liquids/Gases, Changing States), Forces and Motion (Types of Forces), The Human Body (Digestive System).
+
+**Social Studies:** Geography: Maps and Nigeria (Reading Maps, Nigeria Our Country), Civics: Government and Rights (What is Government, Rights and Responsibilities), History: Nigerian Heritage (Ancient Nigerian Kingdoms), Economics: Needs, Wants, and Resources (Needs vs Wants).
+
+Lesson interface fields: id, title, description, content (HTML), videoUrl (YouTube embed), videoSource, externalLink, durationMinutes, orderIndex, standards[].
+
+---
+
+## Supporting Library Code in `lib/`
+
+- `lib/curriculum.ts` (15 KB) — Type defs (`Subject`, `Unit`, `Lesson`) + small "basic" sample subjects (math, english, science, social-studies with 2-3 placeholder Khan Academy YouTube embeds each: `0TgLtF3PMOc`, `UvfYN2gv0Ck`, `AuX7nPBqDts`, `75p-N9YKqNo`, `FMWqJ1MrSx8`) + helpers `getSubjectBySlug`, `getLessonById`, `getNextLesson`, `getTotalLessons`, `cambridgeToStandardLesson`, `getCambridgeSubjects`, `getCambridgeLessonById`, `getLessonByIdExtended`, `getNextLessonExtended`.
+- `lib/supabase.ts` (627 B) — client factory.
+- `lib/database.types.ts` (5.5 KB) — generated Supabase types.
+- `lib/useProgress.ts` (2.4 KB) — React hook for progress tracking against `lesson_completions`.
+- `lib/rag/chunk.ts` (10 KB) — chunker (already detailed above); `generateAllChunks()` + `generateSabiModuleChunks()` (the 7 Sabi modules with their verbatim teaching scripts — full text quoted in the chunker source).
+- `lib/rag/retrieval.ts` (4.5 KB) — `generateEmbedding(text)` POSTs to `/api/rag/embed`; `searchCurriculum(query, {module, subject, matchCount})` calls Supabase RPC; `getSabiCurriculumContext(currentModule, lastSessionSummary)` returns a `## CURRICULUM CONTEXT` block for system-prompt injection.
+- `lib/sabi/is-lesson-wrap-up-message.ts` (1.8 KB) — detector for "next time we will…" / "when you call back…" phrases that trigger session auto-save.
+- `lib/voice/sabi-shared.ts` (24.5 KB) — **THE core Sabi shared module**. Exports `SABI_CORE_PROMPT` (~5,000 tokens of personality+pedagogy), `MODULE_CURRICULUM` dict (modules 0-6 fallback text), `VOICE_SYSTEM_ADDENDUM` (voice-specific rules), `SABI_SYSTEM_PROMPT` (full prompt with all 6 modules), `getStudentMemory(studentId)`, `findOrCreateStudentByPhone(phoneNumber)`, `callSabi(messages, studentId, isVoice)` (Anthropic Claude `claude-haiku-4-5-20251001`, RAG-injected curriculum), `callSabiVoiceFast(messages, studentId)` — tries Cerebras (`llama-3.3-70b` at api.cerebras.ai/v1) → Groq (`llama-3.3-70b-versatile` at api.groq.com/openai/v1) → Claude Haiku as last resort. 10s abort timeout per upstream call.
+- `lib/voice/tts-client.ts`, `lib/voice/stt.ts`, `lib/voice/twiml.ts`, `lib/voice/at-xml.ts`, `lib/voice/sms.ts`, `lib/voice/call-state.ts`, `lib/voice/audio-storage.ts`, `lib/voice/normalize-money-for-speech.ts`, `lib/voice/yarngpt-client.ts` — full Sabi voice pipeline (TTS clients, Twilio TwiML / Africa's Talking XML generators, SMS hooks, call state).
+
+---
+
+## App Routes (high-level)
+
+`app/` has these route directories: `api/`, `about/`, `curriculum/`, `dashboard/`, `reading/`, `sabi/`, `sabi-demo/`, `sabi-voice/`, `subjects/`, `sign-in/`, `sign-up/`.
+
+---
+
+## Important pre-pilot launch notes
+
+1. **`.env.local` is missing `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, and `ANTHROPIC_API_KEY`** despite the example template listing them. Anything Supabase-dependent (RAG, Sabi memory, curriculum DB seeding, progress tracking) and any direct Claude API call will fail locally until these are added. The Vercel deployment may have them set separately in Vercel's env settings (not visible here).
+
+2. **`auto_deploy.py` runs `git push origin main` and `npx vercel --prod --yes`** unconditionally on every invocation if there are any staged changes. There's no preview-branch flow.
+
+3. **`robots.txt` already locks down `/sabi/demo`, `/sabi-voice`, `/sabi-demo`, `/api/sabi/`** for major search engines and LLM training crawlers (GPTBot, anthropic-ai, Claude-Web, Google-Extended, CCBot, ChatGPT-User).
+
+4. **No Hetzner deploy script in this repo.** The `136.243.8.51` Hetzner GPU server (Chatterbox TTS, Whisper STT, etc., per the memory file) is deployed via a separate flow not present in curriculum-app.
+
+5. **RAG seeding is a 2-step manual process:** (a) run `supabase-rag-schema.sql` in the Supabase SQL Editor to create `curriculum_embeddings` + `search_curriculum` RPC; (b) `npx tsx scripts/seed-embeddings.ts` to generate and insert all chunks. If you skip this, `callSabi`/`callSabiVoiceFast` automatically falls back to the per-module fallback text from `MODULE_CURRICULUM` in `sabi-shared.ts`.
+
+6. **Bukola voice (`oC2pCZZWEDRe6lmZpaaw`) with `eleven_flash_v2_5`, stability 0.28, similarity 0.7, speed 1.0, speaker_boost true** is the canonical demo configuration — confirmed both in the docs/ markdown and the env.example. Olufunmilola is deprecated.
+
+7. **Twilio phone number on file:** `+17153122345` (US number, account SID `ACc273246e24dac4d9ddaad3b80617bbe4`). For pilot you'll likely want Africa's Talking instead (`AT_USERNAME=sandbox` is currently set — not production).
+
+8. **`SABI_DEMO_KEY=yarn2026`** is the current pre-release access gate query parameter for `/sabi/demo`.
+agentId: ad51cf0be6abdac3a (use SendMessage with to: 'ad51cf0be6abdac3a' to continue this agent)
+<usage>total_tokens: 135824
+tool_uses: 45
+duration_ms: 341973</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

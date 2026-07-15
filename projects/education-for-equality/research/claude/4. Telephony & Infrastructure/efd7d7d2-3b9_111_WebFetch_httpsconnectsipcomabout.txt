@@ -1,0 +1,54 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/about/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:58:14 UTC
+========================================================================
+
+URL: https://connectsip.com/about/
+Extraction prompt: Find any client logos, customer testimonials, case studies, team info, company history, or evidence they have real customers
+
+----------------------------------------
+
+# ConnectSIP: Customer Evidence & Company Information
+
+## Client Logos
+The page displays logos for several companies that trust ConnectSIP:
+- Jiji Nigeria
+- Hygeia HMO
+- Allianz
+- Farmcity
+- Klasha
+
+## Company Information
+
+**Mission:** "to empower businesses with clear, secure, and affordable communication solutions that fuel growth, enhance customer trust, and support long-term success"
+
+**Core Values:**
+- Reliability
+- Competence
+- Innovation
+- Customer Commitment
+- Fairness and Transparency
+- Speed and Quality Service Delivery
+
+## Why Choose ConnectSIP
+
+The company highlights these service features:
+- Fast Service Activation/Provisioning
+- Quality HD Calls
+- 27/7 Customer care
+- No hidden fees or Billing
+- Guaranteed uptime
+- Affordable & Reliable
+- Full Self Service Portal
+- Online Recharge For Payments
+
+## Additional Details
+
+The company emphasizes their foundation: "built on 360° integrity, promoting an excellent work place relationship, ethics to our employees so they can in turn deliver the desired service commitment & Quality of Experience (QoE) to our customers."
+
+**Note:** The page does not include team information, company history, or customer testimonials.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

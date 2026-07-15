@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://proquest.libguides.com/tdmstudio/exportdata
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:14:15 UTC
+========================================================================
+
+URL: https://proquest.libguides.com/tdmstudio/exportdata
+Extraction prompt: What are all the methods to export data, scripts, or notebooks from TDM Studio? Is there any API or external/local access? Can the Jupyter notebook be run from outside TDM Studio's environment? What is the size/quota limit and what format restrictions exist?
+
+----------------------------------------
+
+# TDM Studio Export Capabilities
+
+Based on the provided content, **only limited export information is available**. The page states that "For each dataset, you can export the emotion data as well as the metadata," with three specific file types mentioned:
+
+- **documentmetadata** file
+- **emotion_docs** file (document-level emotion probabilities)
+- **emotion_time** file (time-aggregated emotion probabilities)
+
+## What's Not Addressed
+
+The source material does **not contain information** about:
+- API access or external connectivity options
+- Whether Jupyter notebooks can be executed outside TDM Studio
+- File format specifications for exports
+- Storage limits or quota restrictions
+- Availability of raw scripts or code downloads
+
+To obtain details on these topics, you would need to consult additional TDM Studio documentation or contact ProQuest support directly, as this LibGuides page focuses specifically on sentiment analysis data export rather than broader technical specifications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

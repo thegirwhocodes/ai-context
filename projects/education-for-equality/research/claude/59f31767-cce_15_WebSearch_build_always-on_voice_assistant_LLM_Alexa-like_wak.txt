@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: build always-on voice assistant LLM Alexa-like wake word conversation architectu
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-05 18:03:21 UTC
+========================================================================
+
+Search query: build always-on voice assistant LLM Alexa-like wake word conversation architecture 2026
+
+----------------------------------------
+
+Web search results for query: "build always-on voice assistant LLM Alexa-like wake word conversation architecture 2026"
+
+Links: [{"title":"Build a Fully Offline Voice Assistant in 2026: Whisper + LLM + Piper (Step-by-Step)","url":"https://www.promptquorum.com/power-local-llm/build-local-voice-assistant-2026"},{"title":"Build a Private Local AI Voice Assistant (2026 Guide) - Botmonster Tech","url":"https://botmonster.com/smart-home/build-private-local-ai-voice-assistant-2026/"},{"title":"Build a Local Voice Assistant with Whisper + Ollama (2026)","url":"https://www.aimadetools.com/blog/local-voice-assistant-whisper-ollama/"},{"title":"Raspberry Pi 5 Offline Voice AI: No Cloud, Sub-2s Latency (2026) | Patrick Hughes","url":"https://bmdpat.com/blog/raspberry-pi-5-local-voice-ai-2026"},{"title":"Build an AI Voice Agent running entirely on-device","url":"https://picovoice.ai/cookbook/llm-voice-ai-agent-assistant/"},{"title":"Wake Word Detection Guide 2026: Complete Technical Overview","url":"https://picovoice.ai/blog/complete-guide-to-wake-word/"},{"title":"Building a Local Voice Assistant: Whisper + LLM + TTS | local-llm.net","url":"https://www.local-llm.net/guides/local-voice-assistant/"},{"title":"Self-Hosted Voice Assistant With Home Assistant [2026 Guide]","url":"https://www.kunalganglani.com/blog/self-hosted-voice-assistant-home-assistant-2026-guide"}]
+
+Based on the search results, here's what I found about building always-on voice assistant architectures with LLMs in 2026:
+
+## Core Architecture
+
+Every voice assistant runs the same five-step pipeline, whether it ships from Amazon or you build it yourself, and getting the architecture right before you write code is important. The flow starts with a wake word detector listening for your trigger phrase, and when it fires, it hands a short audio buffer to a speech-to-text (STT) engine like faster-whisper running Whisper v3.
+
+## Key Components
+
+A fully offline voice assistant combines three main components: whisper.cpp for speech-to-text, a local LLM (Llama 3.1 8B, Phi-4, or Mistral 7B via Ollama) for reasoning, and Piper TTS for speech output.
+
+For wake word detection specifically, you can add a wake word detector like OpenWakeWord or Porcupine to make the assistant always-listening without running Whisper continuously. Porcupine Wake Word enables always-on, hands-free activation for the voice agent, listening continuously with minimal CPU and battery usage.
+
+## Conversation Architecture
+
+The current approach sends each prompt in isolation, but wrapping it with a conversation history that passes previous exchanges to Ollama enables context-aware responses. A key optimization is streaming TTS output while the LLM is still generating rather than waiting for the full response, starting to speak the first sentence as soon as it's complete, which drops perceived latency to 8-12 seconds.
+
+## Latency Performance
+
+The end-to-end latency on a desktop GPU setup is 1–2 seconds, comparable to Alexa or Google Assistant, while on a Raspberry Pi 5, it is 5–8 seconds — usable for hands-free queries, not conversational.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

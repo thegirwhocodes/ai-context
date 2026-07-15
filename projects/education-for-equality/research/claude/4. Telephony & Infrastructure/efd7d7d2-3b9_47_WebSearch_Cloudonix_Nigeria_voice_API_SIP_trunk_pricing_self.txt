@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cloudonix Nigeria voice API SIP trunk pricing self-hosted
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:06 UTC
+========================================================================
+
+Search query: Cloudonix Nigeria voice API SIP trunk pricing self-hosted
+
+----------------------------------------
+
+Web search results for query: "Cloudonix Nigeria voice API SIP trunk pricing self-hosted"
+
+Links: [{"title":"Voice APIs, SIP Trunking, AI Voice Trunking | Cloudonix","url":"https://cloudonix.com/"},{"title":"AI Voice Agent Trunking, Connect to Anything | Cloudonix","url":"https://cloudonix.com/agentic-voice-trunking/"},{"title":"ReTell.ai SIP Trunking | Cloudonix Developer Resources","url":"https://developers.cloudonix.com/Documentation/aiAgentsServices/Provider/ReTell.ai"},{"title":"Ultra Elastic SIP Trunking | Cloudonix","url":"https://cloudonix.com/programmable-voice/"},{"title":"Simple Pricing with No Surprises, The way you like it | Cloudonix","url":"https://cloudonix.com/pricing/"},{"title":"VAPI.ai SIP Trunking | Cloudonix Developer Resources","url":"https://developers.cloudonix.com/Documentation/aiAgentsServices/Provider/VAPI.ai"},{"title":"Voice Application Verbs | Cloudonix Developer Resources","url":"https://developers.cloudonix.com/Documentation/voiceApplication/Verbs"},{"title":"Voice API Pricing - Flexible pricing","url":"https://telnyx.com/pricing/voice-api"},{"title":"Cloudonix Developer Resources","url":"https://developers.cloudonix.com/integrations/telephonyIntegration/Provider/VAPI.ai"},{"title":"Ultra Elastic SIP Trunking | Cloudonix","url":"https://www.cloudonix.com/call-transfers/"}]
+
+Based on the search results, here's what I found about Cloudonix voice API, SIP trunk pricing, and self-hosting capabilities:
+
+## Cloudonix Overview
+
+Cloudonix is an agnostic infrastructure capable of connecting with any SIP platform. Their Ultra Elastic SIP trunks work worldwide with local service providers.
+
+## Pricing
+
+Cloudonix pricing is based on simplicity and transparency, with simple-to-understand packages designed for each stage of your business. The search results mention that custom packages are available if the standard packages don't fit all customers' needs, and you can contact their sales staff for options requiring more sessions per month, concurrent calls, or AI minutes.
+
+## Self-Hosted Capabilities
+
+Cloudonix strongly believes customers should use their own SIP interconnects without paying for additional phone numbers or call minutes, and connecting PBX systems (vendor or open-source products) to Cloudonix is simple and fast.
+
+Cloudonix Voice Applications can be hosted on standard web servers or implemented in any web service technology and can be deployed on various hosting platforms, from classic stand-alone web server software like Apache and Nginx through various hosting environments such as Heroku and AWS Lambda, or even hosted directly on the Cloudonix platform itself using Container Applications.
+
+## Nigeria-Specific Information
+
+The search results did not contain specific information about Nigeria-specific pricing or services. You may want to contact Cloudonix's sales team directly for region-specific pricing details.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

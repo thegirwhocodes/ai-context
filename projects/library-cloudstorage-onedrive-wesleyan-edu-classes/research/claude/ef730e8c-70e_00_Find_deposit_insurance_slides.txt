@@ -1,0 +1,28 @@
+========================================================================
+AGENT RESEARCH: Find deposit insurance slides
+Session: ef730e8c-70ec-4498-bee1-27a554427a78
+Time: 2026-04-14 18:23:33 UTC
+========================================================================
+
+Find a file related to "deposit insurance" slides in the user's classes directory. Look for PDFs, PowerPoints, or similar files. Search in /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/ for files with "deposit" or "insurance" or slide numbering like "(11)" in the filename. Also check for Econ course folders.
+
+----------------------------------------
+
+Perfect! I found the file you're looking for.
+
+**File Location:**
+`/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #11 S26 Moodle.pdf`
+
+This is the deposit insurance slides file from Econ 333 - Financial Intermediation, taught by Professor Ryuichiro Izumi. The lecture covers:
+
+1. Deposit insurance in practice (including U.S. history and the FDIC)
+2. Introducing a deposit insurance fund into the Diamond-Dybvig model
+3. Modifying the consumption function c₂(e)
+4. Determining fund size requirements
+5. Measurement exercises related to deposit insurance
+
+The slides include detailed coverage of the FDIC (Federal Deposit Insurance Corporation), its history since 1933, deposit insurance limits, how the FDIC operates, and international comparisons of deposit insurance systems around the world.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

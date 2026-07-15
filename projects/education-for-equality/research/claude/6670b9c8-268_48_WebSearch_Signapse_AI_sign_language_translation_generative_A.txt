@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Signapse AI sign language translation generative AI photo-realistic how it works
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:24:53 UTC
+========================================================================
+
+Search query: Signapse AI sign language translation generative AI photo-realistic how it works technical pipeline
+
+----------------------------------------
+
+Web search results for query: "Signapse AI sign language translation generative AI photo-realistic how it works technical pipeline"
+
+Links: [{"title":"Signapse's Sign Language Translation using Generative AI: Achieving Photo-Realism and Accuracy| Signapse AI","url":"https://www.signapse.ai/post/signapses-sign-language-translation-using-generative-ai-achieving-photo-realism-and-accuracy"},{"title":"Signapse | AI Sign Language Translator | Translate ASL & BSL","url":"https://www.signapse.ai/"},{"title":"How AI Transforms Accessibility: Automatic British Sign Language Translation| Signapse AI","url":"https://www.signapse.ai/post/how-does-our-ai-technology-work"},{"title":"The Signapse Roadmap: Our Journey To AI BSL Translation| Signapse AI","url":"https://www.signapse.ai/post/the-signapse-ai-roadmap-our-journey-to-human-level-sign-language-translation"},{"title":"Breaking Barriers in AI Sign Language Translation: Signapse's Journey from Concept to Reality| Signapse AI","url":"https://www.signapse.ai/post/breaking-barriers-in-ai-sign-language-translation-signapses-journey-from-concept-to-reality"},{"title":"Try with AI: Fast & Accurate AI-Powered BSL Translation Tool| Signapse AI","url":"https://www.signapse.ai/post/introducing-try-with-ai-a-game-changer-in-bsl-translation"},{"title":"Signapse - Localazy trusted partner for your multilingual projects","url":"https://localazy.com/partnerships/signapse"},{"title":"Soulmates Ventures – Signapse","url":"https://www.soulmatesventures.com/case/signapse/"},{"title":"Signapse - AI Sign Language Translation","url":"https://signlapse.vercel.app/"},{"title":"Signapse secures £2M Seed for AI Sign Language translation - Tech.eu","url":"https://tech.eu/2024/06/05/signapse-secures-ps2m-seed-for-ai-sign-language-tanslation/"}]
+
+Based on the search results, here's an overview of Signapse AI's sign language translation technology:
+
+## Technology Overview
+
+Signapse uses Generative Adversarial Networks (GANs) to create photo-realistic sign language videos. Their photo-realistic digital signer uses world-leading Computer Vision technology to generate a BSL video that is indistinguishable from a human signer.
+
+## Technical Pipeline
+
+Signapse's translation process operates in two main steps:
+
+1. **Text to Gloss**: Signapse performs automatic Sign Language translation using two steps; 1) Text to Gloss translates from Written Text (e.g. English) to Sign Language grammar and syntax (e.g. BSL). This step uses a written form of sign language grammar called Gloss, which lists the signs used in BSL order and utilises BSL linguistic constructs of Directional Verbs and Non-Manual Features.
+
+2. **Gloss to Video**: Signapse produces sign language videos by blending between different glosses, with the digital signer calculating the positioning and direction of the glosses to ensure the video is smooth and understandable. This approach allows it to create seamless and realistic videos, converting diverse recordings into a consistent high-quality appearance.
+
+## Data Infrastructure
+
+The company collects examples of each gloss using a high-quality capture studio with ~30 cameras. Their Deaf BSL-native translators have recorded ~12,000 glosses, complete with Directional Verbs (~40 versions of each verb!) and Non-Manual Features.
+
+## Key Advantages
+
+GANs make the videos more appealing to Deaf users by generating videos that look like they were made by real people signing, rather than relying on Motion Capture-based graphical avatars.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

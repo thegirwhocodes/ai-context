@@ -1,0 +1,345 @@
+========================================================================
+AGENT RESEARCH: Analyze pitch & messaging corpus
+Session: c5544951-8755-489c-b13b-335bc248b811
+Time: 2026-06-18 18:00:56 UTC
+========================================================================
+
+You are analyzing the brand voice of "Education for Equality" (E4E), a mission-driven edtech organization. Its flagship product is "Sabi" — a voice-AI tutor delivered over basic phone calls to teach literacy/numeracy to out-of-school children in Nigeria and beyond.
+
+Read these files IN FULL (read them yourself, do not skim) from /Users/naomiivie/Education for Equality/ :
+1. "11. Documentation/custom-gpt-partner-pack/E4E_PARTNER_KNOWLEDGE.md"  (canonical self-description)
+2. "6. Pitch & Applications/SABI_SLIDE_DECK.md"
+3. "6. Pitch & Applications/PITCH_INTRO_ANECDOTE.md"
+4. "6. Pitch & Applications/Presentation Hook.md"
+5. "6. Pitch & Applications/LINKEDIN_POST_MIT_ABC.md"
+6. "6. Pitch & Applications/UNICEF_VENTURE_FUND_APPLICATION.md"
+7. "6. Pitch & Applications/TECHNOVATION_APPLICATION.md"
+8. "6. Pitch & Applications/PCE_NVA_APPLICATION.md"
+
+Extract, with HIGH FIDELITY (this is for building a brand voice guide — preserve actual language, do not summarize away the texture):
+
+A. VOICE ATTRIBUTES — the personality traits that come through (e.g. urgent, hopeful, evidence-driven, plainspoken, warm). For each, give 2-3 VERBATIM quotes from the docs that demonstrate it, with which file it came from.
+
+B. TONE PATTERNS — how the tone shifts between contexts (storytelling/anecdote vs. data/evidence vs. ask/call-to-action). Quote examples.
+
+C. SIGNATURE TERMINOLOGY & PHRASES — recurring words, framings, and named concepts (e.g. how they refer to Sabi, the children, the problem, the mission). Note any consistent capitalization or naming conventions. List terms they clearly EMBRACE.
+
+D. WORDS/FRAMINGS THEY AVOID — anything notable by its absence or any explicit "we don't say X" guidance (e.g. avoiding savior framing, avoiding jargon, attribution rules about partners like EKOEXCEL or Bakame).
+
+E. SENTENCE & STRUCTURE STYLE — sentence length, rhythm, use of statistics, use of second person, rhetorical devices, formatting habits.
+
+F. KEY MESSAGES / VALUE PROPS — the 3-6 core claims they repeat across documents, quoted.
+
+G. AUDIENCE — who each doc is speaking to (funders, partners, the public, judges) and how voice adapts per audience.
+
+Return the actual extracted content with quotes and file attributions — at least 90% substance, NOT a thin summary. Organize under the headers A–G above.
+
+----------------------------------------
+
+All eight documents are now read in full. Here is the structured extraction:
+
+---
+
+# Education for Equality — Brand Voice Analysis
+
+Documents Processed: 8
+- E4E_PARTNER_KNOWLEDGE.md (canonical self-description / partner-facing)
+- SABI_SLIDE_DECK.md (MIT Africa Hackathon pitch deck)
+- PITCH_INTRO_ANECDOTE.md (story-first presentation script)
+- Presentation Hook.md (hook/opener fragment)
+- LINKEDIN_POST_MIT_ABC.md (public social media)
+- UNICEF_VENTURE_FUND_APPLICATION.md (funder application)
+- TECHNOVATION_APPLICATION.md (accelerator application)
+- PCE_NVA_APPLICATION.md (university grant application)
+
+---
+
+## A. VOICE ATTRIBUTES
+
+**1. Urgent without hysteria — the crisis is real and quantified, not merely alarming**
+
+The writing never dials up emotional panic for its own sake. Urgency arrives via compacted statistics, then pivots immediately to what is being done. Every document contains a version of this move: state the scale, anchor it to a human moment, then redirect to agency.
+
+- "18.3 million out-of-school children — the highest number in the world." — UNICEF_VENTURE_FUND_APPLICATION
+- "The question is not whether this can be fixed. The question is how fast we can reach them." — SABI_SLIDE_DECK (Slide 14), PITCH_INTRO_ANECDOTE (Slide 4)
+- "Nigeria loses $40 billion annually — more than Ghana's entire GDP — because its schools don't teach." — SABI_SLIDE_DECK (Slide 1 spoken)
+
+**2. Evidence-driven to a rigorous, almost prosecutorial degree**
+
+No claim in any document floats without a citation. The TECHNOVATION_APPLICATION even has a full source-verification table. The framing is always: here is the claim, here is who proved it, here is the study. This gives the voice weight and credibility that is distinguishable from advocacy language.
+
+- "A World Bank RCT demonstrated that AI tutoring like this produces 1.5-2 years of learning gains in just six weeks." — UNICEF_VENTURE_FUND_APPLICATION
+- "A Nature 2025 study found Nigerian children solve arithmetic 9x more often when framed as market transactions vs abstract math (48.5% vs 5.4%)." — TECHNOVATION_APPLICATION
+- "Benefit-cost ratio of AI tutoring: 161-260 (World Bank) — the highest of any education intervention measured." — SABI_SLIDE_DECK (Slide 9)
+
+**3. Plainspoken, grounded — conspicuously avoids nonprofit puffery**
+
+The partner knowledge file explicitly lists hype words to avoid ("revolutionary," "solves education," "guaranteed outcomes"). The actual documents honor this. Complex things are described simply. Nothing is dressed up.
+
+- "Sabi is not a concept. It is live at sabi.eduforequality.org" — UNICEF_VENTURE_FUND_APPLICATION
+- "We're not building another education app that sits in an app store. We're building something a mother hears about at church, dials after dinner, and hands to her child for five minutes." — SABI_SLIDE_DECK (Slide 14)
+- "Just a call." — PCE_NVA_APPLICATION (appears multiple times as a deliberate brevity flourish)
+
+**4. Personal and grounded in lived experience — founder voice is the moral authority**
+
+The founder's Lagos childhood appears in multiple documents as the bridge between the statistics and the reader's empathy. The personal story is never embellished; it is used sparingly but consistently to earn the right to speak about the crisis.
+
+- "I grew up in Lagos, Nigeria. My mother is a teacher — I attended school on a scholarship tied to her salary. Some days we didn't have food. Every morning on the way to school, I saw children my age hawking groundnuts in traffic so their families could survive. I knew there was no difference between me and them except opportunity." — PCE_NVA_APPLICATION
+- "Growing up in Lagos, Nigeria, I attended school on a scholarship tied to my mother's salary as a teacher. Sometimes we didn't have food. Every day on the way to school, I saw children my age hawking groundnuts in traffic or fixing cars so their families could survive. I knew there was no difference between me and them." — SABI_SLIDE_DECK (Slide 1 spoken)
+- "Education gave me a way out. I want to give every child who didn't get one." — SABI_SLIDE_DECK (Slide 1), PCE_NVA_APPLICATION (nearly identical in both)
+
+**5. Warm toward children, cold-eyed toward the system**
+
+When describing learners, language is patient, specific, and humanizing. When describing the school system, language is exacting and unsparing — "structurally broken," "the system counts them as educated. They are not."
+
+- "You are not unusual. You are the majority." — PITCH_INTRO_ANECDOTE (Slide 1)
+- "The school building isn't failing them. The learning is." — PITCH_INTRO_ANECDOTE (Slide 3)
+- "The system will count you as 'educated.' You will not be." — PITCH_INTRO_ANECDOTE (Slide 1)
+
+**6. Self-aware about what has and hasn't been proven (epistemic honesty)**
+
+This runs explicitly through the partner knowledge file and implicitly through every application. The voice distinguishes between "designed around evidence-backed principles" and "proven at scale." It is notably unusual for a startup or nonprofit pitch to make this distinction so cleanly.
+
+- "The evidence should be presented carefully. It supports the plausibility and design logic of Sabi, but it does not mean Sabi itself has already been proven at scale." — E4E_PARTNER_KNOWLEDGE
+- "Safe claim: Sabi is designed around evidence-backed principles such as Teaching at the Right Level, phonics-based foundational literacy, oral practice, and frequent short learning interactions. Unsafe claim: Sabi is proven to close learning gaps at scale." — E4E_PARTNER_KNOWLEDGE
+- "The core product works. Now we need to make its impact provable." — UNICEF_VENTURE_FUND_APPLICATION
+
+**7. Confident, not boastful — the product does the bragging**
+
+The voice states accomplishments (MIT 2nd place, $3K, 472 lessons, working demo) without inflating them. The ask is clear and the credentials are named but not over-celebrated.
+
+- "Education for Equality is woman-led, open source, and already recognized: we won 2nd place at the MIT Africa Business Challenge." — UNICEF_VENTURE_FUND_APPLICATION
+- "The core product works. Now we need to make its impact provable." — UNICEF_VENTURE_FUND_APPLICATION
+- "Live now." — TECHNOVATION_APPLICATION (one of the most minimalist confidence moves in the corpus)
+
+---
+
+## B. TONE PATTERNS
+
+**Pattern 1: Storytelling / Anecdote — immersive, second-person, sensory, slow-burn**
+
+The pitch intro and slide deck opener use a very specific structure: put the reader inside a child's body, build concrete specifics (the 5am wake time, the 40-minute walk, 80 students, no textbooks), hold the tension for a full paragraph, then shatter it with the revelation that "you are not unusual, you are the majority." The tone is novelistic and controlled.
+
+- "Imagine you're 10 years old in Lagos, Nigeria. You wake up at 5 AM. You walk 40 minutes to school because your family can't afford the bus fare. When you arrive, your classroom has 80 students and one teacher — who teaches every subject, because there's no one else. Today, she isn't here. She wasn't here yesterday either." — PITCH_INTRO_ANECDOTE (Slide 1)
+- "Next month, your mother pulls you out of school for the term. She needs you to sell groundnuts at the market so the family can eat. When you come back three months later, the class has moved on." — PITCH_INTRO_ANECDOTE (Slide 1)
+
+**Pattern 2: Data / Evidence — compressed, tabular, source-cited, calibrated**
+
+When the tone shifts to evidence, it uses tables, one-liners, and tight annotations. The data is never dumped raw — it's filtered through a controlling frame ("This is not a story. This is 33 million children.") and then closed with a one-line synthesis. The evidence sections read like a well-edited court brief.
+
+- "This is not a story. This is 33 million children." — PITCH_INTRO_ANECDOTE (Slide 2)
+- "Only 16% of planned learning actually happens." — SABI_SLIDE_DECK (Slide 3, one-liner)
+- "Learning is worth 4x more than attendance. A child who can't read after 10 years of school earns almost the same as one who never went." — SABI_SLIDE_DECK (Slide 4, one-liner)
+
+**Pattern 3: Ask / Call-to-Action — declarative, short, no qualifications**
+
+The closes strip away all complexity. The ask sections go short, direct, and imperative. Full stops after single clauses. The product is presented as already existing and accessible.
+
+- "The question is not whether this can be fixed. The question is how fast we can reach them." — SABI_SLIDE_DECK (Slide 14), PITCH_INTRO_ANECDOTE (Slide 4)
+- "Education gave me a way out. I want to give that to every child who didn't get one. That's what Education for Equality is." — SABI_SLIDE_DECK (Slide 1)
+- "Woman-led. Open source. Nigeria-built. Ready now." — UNICEF_VENTURE_FUND_APPLICATION (four-word sentence fragments as a staccato close)
+- "Try Sabi live: https://sabi.eduforequality.org" — PCE_NVA_APPLICATION, TECHNOVATION_APPLICATION
+
+**Pattern 4: Product description — procedural, feature-listed, friction-obsessed**
+
+When describing what Sabi actually does, the tone shifts to almost journalistic specificity. Every barrier removed is named explicitly. The design shows the writer thinking about every objection a skeptic might raise.
+
+- "No smartphone needed — works on any $5 phone. No internet needed — runs on basic mobile towers. No cost to the family — toll-free. Persistent memory — knows your name, your level, your mistakes." — SABI_SLIDE_DECK (Slide 7)
+- "No smartphone, no internet, no app — just a call." — PCE_NVA_APPLICATION
+
+---
+
+## C. SIGNATURE TERMINOLOGY & PHRASES
+
+**Named concepts and how they are always rendered:**
+
+- **Sabi** — always capitalized, always defined on first use as meaning "to know" in Nigerian Pidgin. "Sabi ('to know' in Nigerian Pidgin)" — SABI_SLIDE_DECK, UNICEF_VENTURE_FUND_APPLICATION. Never "the Sabi app" or "our app." Always "Sabi" as a person or entity.
+- **Education for Equality** — full name on formal uses; abbreviated as "E4E" only in internal files, never in external pitch materials
+- **Teaching at the Right Level / TaRL** — always spelled out in full on first use, then abbreviated TaRL. Cited as "proven across 7 African countries (J-PAL)"
+- **foundational literacy and numeracy** — the standard descriptor for what is being taught; never "basic reading and math" or "elementary skills"
+- **access-first** — partner knowledge file lists this as a preferred term
+- **voice-first** — likewise listed; used to describe Sabi's design philosophy
+- **learning crisis** / **the crisis** — how the problem is named; never "education gap" or "literacy gap"
+- **out-of-school children** — the specific humanitarian term used; not "dropouts" or "unenrolled kids"
+- **learning poverty** — used when citing World Bank framing ("learning poverty" not "illiteracy" in policy-facing docs)
+- **market transactions / market context / Nigerian context** — when explaining the pedagogical approach, this framing appears consistently
+- **the 33 million** — the shorthand for all enrolled Nigerian public school children; becomes a motif in the anecdote deck
+- **the 20 million / 18.3 million** — the out-of-school count; cited as "the world's highest"
+- **$40 billion** — Nigeria's annual GDP loss from under-education; always anchored with the comparator "more than Ghana's entire GDP"
+- **flash callback** / **the child beeps, Sabi calls back** — the technical mechanism described in accessible terms (PCE_NVA_APPLICATION)
+- **toll-free** — consistently used to emphasize no cost to the family
+- **any phone / any $5 phone / basic phone** — the access claim always uses one of these phrasings; "feature phone" used for technical specificity
+
+**Recurring phrasal constructions:**
+
+- "No smartphone. No internet. No app." — appears as a tricolon in multiple docs, always stripped to fragments (UNICEF_VENTURE_FUND_APPLICATION, PCE_NVA_APPLICATION)
+- "A child dials a number, and..." — the canonical description of how Sabi works (SABI_SLIDE_DECK, UNICEF_VENTURE_FUND_APPLICATION, LINKEDIN_POST_MIT_ABC)
+- "[X] — the world's [superlative]" — used consistently to frame Nigeria's education crisis in global terms without hyperbole: "the highest number in the world," "the highest of any education intervention measured"
+- "1.5-2 years of learning gains in 6 weeks" — the single most-repeated evidentiary phrase, cited from the World Bank Edo State RCT in every document that discusses the evidence base
+- "at their actual level, not their grade level" — appears in multiple documents as the articulation of TaRL philosophy
+
+---
+
+## D. WORDS/FRAMINGS THEY AVOID
+
+**Explicit avoidance list from E4E_PARTNER_KNOWLEDGE:**
+- "revolutionary"
+- "solves education"
+- "AI teacher replacement"
+- "guaranteed outcomes"
+- "fully accredited" (unless accreditation actually exists)
+- "Cambridge-accredited" (only "Cambridge-aligned" is safe)
+- "proven to close learning gaps at scale" (too strong for the current stage)
+
+**Savior framing — absent by design**
+
+There is no language anywhere of E4E or Sabi "rescuing" or "saving" children. The frame is access and delivery, not rescue. The children are depicted as capable and eager learners being failed by a broken system, not as victims requiring charity. The Chidi dialogue in the slide deck makes this explicit: "You already know maths, Chidi — you just don't know you know it." — SABI_SLIDE_DECK (Slide 8)
+
+**"App" as the primary product descriptor — avoided**
+
+The slide deck's closing line is an explicit rejection: "We're not building another education app that sits in an app store." The word "app" is used only to contrast Sabi against what it is not.
+
+**"AI teacher" framing — avoided**
+
+Sabi is described as a tutor, not a teacher replacement. The partner knowledge file explicitly flags "AI teacher replacement" as an unsafe claim. In every document, the word used is "tutor" (voice AI tutor, AI voice tutor, patient tutor on the phone).
+
+**Bakame attribution in external materials**
+
+The partner knowledge file and the PCE application both acknowledge Bakame as a reference point, but public pitch docs carefully limit how Bakame is described. Bakame appears as "the closest comparable" with clear differentiation ("rule-based dialogue" vs. Sabi's "full language model"). The LINKEDIN_POST_MIT_ABC post references "@Sabi AI" as a partner but has a note saying it was not published and is on hold pending formalization. There is no mention of Bakame in the public-facing LinkedIn post.
+
+**Passive framing for EKOEXCEL data — careful attribution**
+
+EKOEXCEL is cited as a source of data and a precedent, not as a direct partnership. The slide deck references "Dr. Sonia Ivie (EKOEXCEL staff)" in the Technovation application but the partner knowledge doc flags that Sonia has left EKOEXCEL. In pitch materials, EKOEXCEL is treated as a comparator and evidence source, not a named partner.
+
+---
+
+## E. SENTENCE & STRUCTURE STYLE
+
+**Sentence length: deliberate alternation between compression and expansion**
+
+Story sections use long, immersive sentences that accumulate detail ("Your classroom has 80 students and one teacher — who teaches every subject, because there's no one else. Today, she isn't here. She wasn't here yesterday either."). Then the punch lands short ("You are not unusual. You are the majority."). The rhythm is set up to shock.
+
+Evidence and close sections run short by default. Fragments are used deliberately: "Live now." "Just a call." "Woman-led. Open source. Nigeria-built. Ready now."
+
+**Statistics: always contextualized, never raw**
+
+No statistic appears without either a source citation or a human anchor. The TECHNOVATION_APPLICATION even appends a full source-verification table. The characteristic move is stat + source + consequence: "70% of Nigerian 10-year-olds cannot read a simple sentence (World Bank 2022). Children sit in classrooms for a decade and come out unable to read." — PCE_NVA_APPLICATION
+
+**Second person in storytelling**
+
+The pitch intro and slide deck opener are fully written in second person ("you wake up," "your classroom," "your mother pulls you out"). This is a deliberate choice to close the empathy gap between the reader/judge and the child being described.
+
+**Tabular presentation of data**
+
+Every pitch deck slide that carries evidence uses tables with three columns: intervention/claim | data/figure | source. This is consistent across the MIT deck, the PITCH_INTRO_ANECDOTE, and the TECHNOVATION application source verification table.
+
+**Rhetorical devices:**
+- Anaphora: "No smartphone. No internet. No app." / "Woman-led. Open source. Nigeria-built. Ready now."
+- Tricolon: the three-barrier removal phrases appear in multiple documents
+- The rhetorical turn ("But we know what works." — PITCH_INTRO_ANECDOTE Slide 4): problem block, then pivot with a one-line opener before the solution block
+- Parenthetical specificity: numbers in parentheses after claims serve as real-time citations without breaking sentence flow
+
+**Formatting habits:**
+- Bold used for key statistics within tables (always bolded in the table, not inline in prose)
+- One-liners at the bottom of each slide as the "carry-out" line — the single sentence judges/funders will remember
+- Headers are neutral nouns or brief questions ("The Learning Crisis," "The Infrastructure Collapse," "Kids Want to Learn. The Schools Just Aren't There.")
+- Bullet lists in product description sections; tables in evidence sections; prose paragraphs in story and ask sections
+
+---
+
+## F. KEY MESSAGES / VALUE PROPS
+
+The following six claims appear across at least three of the eight documents and are clearly the core messaging pillars:
+
+**1. The problem is catastrophic and quantified**
+"Nigeria has 18.3 million out-of-school children — the highest number in the world. Of those who do attend school, 70% of 10-year-olds cannot read a simple sentence." — UNICEF_VENTURE_FUND_APPLICATION, PCE_NVA_APPLICATION, TECHNOVATION_APPLICATION, SABI_SLIDE_DECK (all cite World Bank 2022 + UNICEF 2024)
+
+**2. The existing solutions fail the children who need them most, because they require smartphones and internet**
+"The edtech solutions that could teach their children to read — Khan Academy, uLesson, Rori AI — all require smartphones and data. So the children who need help most are the ones no technology can reach." — PCE_NVA_APPLICATION. Also: "Khan Academy and similar apps require smartphones, internet, data, and reading ability — excluding those who need help most." — TECHNOVATION_APPLICATION
+
+**3. The infrastructure already exists — the phone**
+"600 million people have no internet. But 70% have a phone. What if we used the infrastructure that already exists?" — SABI_SLIDE_DECK (Slide 6). "The infrastructure to reach every child already exists — it's a phone call." — PCE_NVA_APPLICATION. "95% of Lagos households own a phone." — Multiple documents.
+
+**4. The pedagogy is evidence-backed, not invented**
+"AI tutoring in schools (World Bank RCT): 1.5-2 years of learning in 6 weeks / $48/student... WhatsApp math tutor (Rori AI RCT): 1 extra year of learning / $5/student/yr... EKOEXCEL: Non-readers: 38% → 12%" — SABI_SLIDE_DECK (Slide 9), PITCH_INTRO_ANECDOTE (Slide 4). "Sabi is designed around evidence-backed principles such as Teaching at the Right Level, phonics-based foundational literacy, oral practice, and frequent short learning interactions." — E4E_PARTNER_KNOWLEDGE
+
+**5. The cost advantage is radical — 10x to 100x cheaper**
+"$0.50-5 Per Student. 10-100x Cheaper Than Any Alternative." — SABI_SLIDE_DECK (Slide 10 title). "At scale — even just 5,000 children — that drops to $0.41 per student per course." — PCE_NVA_APPLICATION. "Lagos State already spends ~$24/pupil/yr for EKOEXCEL. We deliver comparable impact at 1/5 to 1/50 of that cost." — SABI_SLIDE_DECK (Slide 12)
+
+**6. Distribution is nearly free — a phone number spreads itself**
+"Compare distribution effort: Education app — Buy smartphone ($50+), buy data, download app, create account. Sabi — Hear a phone number. Call it." — SABI_SLIDE_DECK (Slide 11). "Unlike an app, distribution cost is near zero — a teacher tells parents, a pastor announces it at church, one WhatsApp message in a parents' group, and a phone number spreads itself." — PCE_NVA_APPLICATION
+
+---
+
+## G. AUDIENCE
+
+**E4E_PARTNER_KNOWLEDGE — Implementation partners and technical partners**
+This document is tonally neutral and instructional. It is the only document with an explicit "avoid / embrace" vocabulary list. It addresses a reader who will be building or implementing something, not donating or judging. Language is functional, not persuasive. It answers anticipated partner questions directly (child data protection, accent handling, TaRL mechanics). Savior language is entirely absent.
+
+**SABI_SLIDE_DECK — Hackathon judges (MIT Africa Business Challenge)**
+Audience is analytical and entrepreneurially-minded; they want to see a real product, a real market, and a clear unit economics story. The voice is most energized and performative here — this is the only document with explicit stage directions ("Voice builds throughout — never drops in the middle"). The Biello framework note reveals the slide deck was deliberately constructed using narrative-first methodology. Evidence density is high; humor and warmth appear in the Chidi dialogue (Slide 8).
+
+**PITCH_INTRO_ANECDOTE — Live pitch audiences / judges**
+Written for maximum empathy before data. The second-person immersive opening is deployed most fully here. The tone is closest to literary nonfiction. The pivot from story to data ("This is not a story. This is 33 million children.") is the key rhetorical move.
+
+**Presentation Hook.md — Early-stage working notes**
+Fragmentary working draft; the audience is the founder's own working memory. Shows the intended arc without full articulation.
+
+**LINKEDIN_POST_MIT_ABC — Professional public / network**
+Most personal in register. The opening ("I haven't posted on LinkedIn in over two years. But this felt worth breaking the silence for.") establishes authenticity and momentousness. The voice is quieter, more confessional, less data-dense. Thanks are given to named individuals. The call-to-action is soft: "If you're working in ed-tech, voice AI, or African development, I'd love to connect." Note: this post was drafted but held pending partnership formalization.
+
+**UNICEF_VENTURE_FUND_APPLICATION — Institutional funder (UNICEF Blockchain Ventures)**
+The audience is technically literate and impact-focused. The voice adds blockchain-specific framing without abandoning the core message. It introduces new vocabulary not in other docs ("tamper-proof impact ledger," "on-chain verifiable learning credentials," "chronic trust deficit in development funding") to meet the funder's specific priorities. The summary close returns to the house style: "Woman-led. Open source. Nigeria-built. Ready now."
+
+**TECHNOVATION_APPLICATION — Accelerator selection committee**
+This is the most direct and least performative of the application documents. Answers are capped at 100-200 words and structured as Q&A. The voice is concise and efficient. The technical stack details appear here more than anywhere else (Claude API, Twilio, ElevenLabs, Next.js, Supabase, Vercel, Whisper, Intron Health, YarnGPT). The audience is assumed to understand product-building, so less time is spent explaining; more is spent on specifics.
+
+**PCE_NVA_APPLICATION — University grant committee (Wesleyan PCE)**
+This is the most personally intimate of the external documents. The founder's story is told in full. The relationship to the funder is named directly ("Shiv Soin and Ahmed Badr at PCE — Shiv personally encouraged me to apply"). The budget section is the most granular anywhere ($1,200 GPU server, $275 501(c)(3) filing, $2,000 travel to Lagos). The voice adapts to a reader who may not know Nigeria education policy and who is evaluating a student entrepreneur, so more context is provided on the founder's personal journey and credibility. Notably, the AI use statement appears only in this document — signaling the committee cares about academic integrity.
+
+---
+
+## Conflicts Detected
+
+**1. Sonia Ivie's current role**
+- TECHNOVATION_APPLICATION (Q5): "Sonia Ivie (Director of Schools, EKOEXCEL/NewGlobe — 1,016 schools, 500,000 pupils)" — described as currently active
+- TECHNOVATION_APPLICATION (Q7): "Sonia Ivie (Director of Schools, EKOEXCEL)" — same
+- PCE_NVA_APPLICATION (Q2): "Dr. Sonia Ivie, is Director of Schools at EKOEXCEL/NewGlobe" — same
+- E4E_PARTNER_KNOWLEDGE: Explicitly flags "Sonia has left EKOEXCEL, so documents should not describe her as currently at EKOEXCEL unless independently updated and verified."
+Recommendation: All external documents describing Sonia in a current EKOEXCEL role are out of date. Use "former Director of Schools, EKOEXCEL/NewGlobe" or "20+ years in Nigerian education, former EKOEXCEL" in any future applications.
+
+**2. Lesson count varies across documents**
+- SABI_SLIDE_DECK (Slide 13): "286+ lessons"
+- PCE_NVA_APPLICATION (Q3): "472 lessons"
+- UNICEF_VENTURE_FUND_APPLICATION: "8 literacy modules (~140 calls) and 6 numeracy modules (~100 calls)" (implies ~240 total)
+Recommendation: The 472-lesson figure (PCE, March-April 2026) is the most recent. Use that in future materials and verify against the actual curriculum-app database before submission.
+
+**3. MIT ABC reference in LinkedIn post mentions "@Sabi AI" as a partner with a live link**
+- LINKEDIN_POST_MIT_ABC: references Sabi AI (sabi.online) as if a partnership exists or is formalized
+- The file's own notes say "Wait until Sabi partnership contract is signed before reposting" and "Original post was published and deleted"
+Recommendation: Do not republish or model external materials on the framing in this post until the Sabi AI partnership is formally closed and documented.
+
+**4. Cost-per-student figures vary**
+- SABI_SLIDE_DECK: "$0.50-5 per student"
+- UNICEF_VENTURE_FUND_APPLICATION: "$0.24-2.44 per student per year"
+- PCE_NVA_APPLICATION: "$18.16 per student per course" (pilot), "$0.41 per student per course at scale"
+These are not contradictions — they reflect different cost models (pilot vs. scale, with vs. without telco partnerships) — but they need context in any document that uses them or readers will experience apparent inconsistency. Recommendation: Always specify what cost model is being cited (pilot / scale / with zero-rating) and align to one primary figure per document.
+
+---
+
+## Coverage Gaps
+
+- **Visual / design voice** — No guidance on color, photography, or visual register. Brand voice guide should address how imagery is selected (e.g., no poverty-porn imagery of children, no stock-Africa imagery).
+- **Social media voice (non-LinkedIn)** — Instagram handle exists (@_educationforequality) but no content or voice guidance is documented. LinkedIn post is the only social-register sample and was never published.
+- **Failure / risk framing** — No document provides a template for how E4E discusses what hasn't worked, setbacks, or limitations other than in the epistemic-honesty section of the partner doc. The brand voice guide should address this.
+- **Partner/government voice** — Documents aimed at telcos (MTN, Airtel, Glo), Lagos State government, or CcHub do not yet exist. The vocabulary and tone for sovereign/commercial-partner conversations is not covered.
+- **Child-facing / Sabi voice** — The Chidi dialogue (SABI_SLIDE_DECK Slide 8) is the only example of Sabi's own voice. The partner knowledge doc describes principles (warm, specific praise, no shame, Nigerian English, one question at a time) but there is no voice sample library or extended example set.
+- **Media / press voice** — No press release, media kit, or journalist-facing language exists in the analyzed corpus.
+agentId: a25ea044186fcdd4b (use SendMessage with to: 'a25ea044186fcdd4b' to continue this agent)
+<usage>subagent_tokens: 57871
+tool_uses: 9
+duration_ms: 191854</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

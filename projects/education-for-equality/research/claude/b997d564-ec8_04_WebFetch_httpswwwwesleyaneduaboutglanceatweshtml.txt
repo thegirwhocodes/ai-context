@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/about/glanceatwes.html
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 04:18:56 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/about/glanceatwes.html
+Extraction prompt: How many faculty and how many staff does Wesleyan University have? Return exact numbers.
+
+----------------------------------------
+
+# Faculty and Staff Numbers at Wesleyan University
+
+Based on the provided webpage content, Wesleyan University has **450+ full-time faculty members**. 
+
+However, the document does not contain information about the total number of staff members employed by the university.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

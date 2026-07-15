@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vonage voice API Nigeria phone number available buy local virtual number
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:00:50 UTC
+========================================================================
+
+Search query: Vonage voice API Nigeria phone number available buy local virtual number
+
+----------------------------------------
+
+Web search results for query: "Vonage voice API Nigeria phone number available buy local virtual number"
+
+Links: [{"title":"Which countries does Vonage have numbers in? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204015043-Which-countries-does-Vonage-have-numbers-in"},{"title":"Voice Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011761808-Voice-Numbers-Features-Overview"},{"title":"Phone Numbers | Vonage","url":"https://www.vonage.com/communications-apis/phone-numbers/"},{"title":"How to purchase a number for your Virtual Agent? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/14299821185948-How-to-purchase-a-number-for-your-Virtual-Agent"},{"title":"Vonage API Developer","url":"https://developer.vonage.com/en/voice/voice-api/concepts/numbers"},{"title":"How can I handle inbound calls to my voice-enabled virtual number? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204015313-How-can-I-handle-inbound-calls-to-my-voice-enabled-virtual-number"},{"title":"Vonage Residential | Answer | Vonage Virtual Numbers","url":"https://support.vonage.com/articles/answer/Vonage-Virtual-Numbers-848"},{"title":"Can I use virtual phone numbers to register Vonage accounts? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/10519538387356-Can-I-use-virtual-phone-numbers-to-register-Vonage-accounts"},{"title":"Vonage Phone Numbers | KPN Developer","url":"https://developer.kpn.com/products/vonage-phone-numbers-api"},{"title":"How to Add a Long Virtual Number To Your Account – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/215174158-How-to-Add-a-Long-Virtual-Number-To-Your-Account"}]
+
+Based on the search results, here's what I found about Vonage's voice API and Nigeria phone numbers:
+
+## General Vonage Voice API Capabilities
+
+The Vonage API platform offers phone numbers in more countries than any other provider, and Vonage's Phone Numbers API offers several programmable number types for customer communication, such as virtual phone numbers, toll free numbers and short codes.
+
+Voice numbers can make and receive phone calls, and you can instantly provision virtual phone numbers to send or receive text messages and phone calls.
+
+## Purchasing Virtual Numbers
+
+For less than one dollar, your application can programmatically acquire local phone numbers from across the globe with a simple API call.
+
+## Nigeria-Specific Information
+
+However, the search results provided do not contain specific information about whether Nigeria is currently supported for voice numbers or virtual number provisioning through Vonage's Voice API. To get accurate information about Nigeria phone number availability, you would need to:
+
+1. Check Vonage's official supported countries list directly on their API documentation
+2. Contact a Vonage Account Manager for on-demand requests, as numbers available for purchase upon request require contacting your Account Manager, and on-demand requests can take up to 3 weeks to fulfill
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

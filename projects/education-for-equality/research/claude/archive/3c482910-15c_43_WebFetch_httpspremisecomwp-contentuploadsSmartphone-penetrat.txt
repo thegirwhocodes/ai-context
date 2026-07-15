@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://premise.com/wp-content/uploads/Smartphone-penetration-Nigeria.pdf
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-26 19:26:24 UTC
+========================================================================
+
+URL: https://premise.com/wp-content/uploads/Smartphone-penetration-Nigeria.pdf
+Extraction prompt: Extract ALL data about mobile phone ownership, smartphone penetration, and feature phone ownership in Nigeria, especially any Lagos-specific or urban data. Include exact percentages, sample sizes, and survey methodology.
+
+----------------------------------------
+
+I appreciate your request, but I must clarify that the content provided appears to be a PDF file encoded in binary/compressed format rather than readable text. The document shows PDF structure markers (like "%PDF-1.4", stream objects, etc.) but the actual content is not legible as plain text in this format.
+
+To properly extract data about mobile phone ownership, smartphone penetration, and feature phone usage in Nigeria, I would need:
+
+1. **A readable text version** of this document, or
+2. **The PDF converted to plain text**, or
+3. **A direct link** to the source material
+
+From the metadata visible in the PDF header, I can see this relates to "SP penetration V4" and contains references to sources like:
+- World Foundation's Rural Report
+- World Economics (Nigeria median age data)
+- Statista (smartphone forecast data)
+- GSMA Intelligence
+
+However, without access to the actual readable content, I cannot extract the specific percentages, sample sizes, methodologies, or Lagos-specific statistics you've requested.
+
+**Could you provide the document in a readable text format so I can accurately identify and quote the exact data you need?**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

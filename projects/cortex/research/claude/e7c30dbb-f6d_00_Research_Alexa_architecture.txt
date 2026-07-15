@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research Alexa architecture
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:03:39 UTC
+========================================================================
+
+Research how Amazon Alexa is actually architected end-to-end, for an engineering report. Use WebSearch + WebFetch on authoritative sources (Amazon Science, AWS docs, Alexa Voice Service / AVS docs, reputable engineering writeups, papers). I need FACTUAL, CITED findings — every claim followed by a source URL.
+
+Cover specifically:
+1. The two-stage pipeline: on-device WAKE-WORD detection vs. CLOUD-side ASR (speech-to-text) + NLU (intent/slots) + dialog management + TTS. What runs locally on the device vs. in the cloud, and WHY (latency, bandwidth, privacy, cost).
+2. Why the wake word ("Alexa") specifically must run locally/on-device and always-on, while everything after the wake word streams to the cloud.
+3. The Alexa Voice Service (AVS) architecture — how a device captures audio after the wake word, how it buffers/streams audio up, the request/response/directive model.
+4. Endpointing — how Alexa knows the user stopped speaking (end-of-utterance detection).
+5. Barge-in / interruption handling (user talking over Alexa).
+6. Any concrete numbers: typical wake-word model size/footprint, latency budgets, false-accept/false-reject framing.
+
+Return a structured, dense bullet list of verified facts, each with a source URL and a one-line note on source authority. Flag anything you could only find on low-quality sources as "unverified." Do NOT pad — just the cited facts an engineer needs.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a842d013c0b5777aa (internal ID - do not mention to user. Use SendMessage with to: 'a842d013c0b5777aa', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/a842d013c0b5777aa.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

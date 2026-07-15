@@ -1,0 +1,191 @@
+========================================================================
+AGENT RESEARCH: Search all conversation history
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-18 02:19:11 UTC
+========================================================================
+
+Search through ALL conversation history files in /Users/naomiivie/.claude/projects/ directories. I need to find EVERYTHING about the user - their personality, preferences, interests, skills, background, faith, school, projects, goals, tech stack, apps they've built, music they make, etc.
+
+Search these directories:
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Spheres-Mac---Version-1-0-Dec-2025/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Rings-Version-2-1--Multi-device-Jan-2025/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Portfolio-Website/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Dream-Manager-/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Notes-Manager/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Class-on-Time/
+- /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-InMeeting/
+
+Also check /Users/naomiivie/.claude/projects/ for any other directories I may have missed.
+
+For each conversation file (.jsonl), extract:
+1. Any personal details about the user (name, age, school, major, interests, faith)
+2. What projects/apps they've built and what those apps do
+3. Their technical skills and tools they use
+4. Their goals, dreams, aspirations
+5. Their personality traits and communication style
+6. Music, worship, creative interests
+7. Content creation plans
+8. Any other personal context
+
+Read at least the first 200 and last 200 lines of each JSONL file to get the key context. Focus on user messages and assistant summaries.
+
+Return a comprehensive profile of EVERYTHING you find about this user. Be thorough and detailed.
+
+----------------------------------------
+
+Now I have a comprehensive picture. Let me compile everything into the final profile.
+
+Here is the comprehensive profile based on everything found across all conversation histories:
+
+---
+
+## COMPREHENSIVE USER PROFILE: NAOMI IVIE
+
+### Identity & Background
+- **Full Name**: Naomi Ivie
+- **Email**: nivie@wesleyan.edu
+- **Phone**: +1 (667) 415 5712
+- **School**: Wesleyan University (Connecticut)
+- **Status**: International student (from Nigeria)
+- **GitHub**: thegirwhocodes
+- **Instagram**: @_educationforequality (for her nonprofit)
+- **Self-description**: "A girl in her 20s who loves Jesus"
+
+### Family
+The Ivie family is Nigerian and deeply accomplished:
+- **Dr. Sonia Ivie** (Mother) -- Education Advisor. 20+ years in Nigerian education. Director of Schools at EKOEXCEL/NewGlobe, managing 1,016 schools and 500,000+ pupils. Trained 14,000+ educators. Has direct relationships with Lagos State education board (LASUBEB). Also a researcher on Lagos special schools.
+- **Joshua Ivie** (Family member, likely brother) -- Technical Advisor. Head of Innovation at Bluechip Technologies (400+ employees, 9 African countries). Enterprise software architect.
+- **Richard Ivie** (Family member, likely brother/relative) -- Governance Advisor. Executive Director at Corruption Observatory. ISO 37001 anti-bribery governance expert.
+- **Amber Bretz** -- Team member on Education for Equality
+
+### Academics (Spring 2026 Semester)
+- **Econ 241** -- Money & Banking (Mishkin textbook)
+- **Econ 333** -- Financial Intermediation
+- **Econ 349** -- Economic Growth (Solow Model)
+- **QAC 386** -- Text Mining (Python, pandas, regex, OpenAI API)
+- **COMP 211** -- Computer Science (C programming, data structures, structs, linked lists) -- taken Fall 2025
+- Uses OneDrive (wesleyan.edu) for class files
+- Uses Tactiq for auto-transcribing class recordings
+
+### Faith & Spirituality (Central to who she is)
+- **Deeply, passionately Christian**. Faith is not a side interest -- it is the organizing principle of her life.
+- She describes God as "just love... so cutesy... He just wants love for us."
+- She is "currently literally basking in the love of God" and says "He's been telling me to post about Him."
+- She reads the Bible in New King James Version, studying it deeply and chronologically.
+- She spends break times between Pomodoro sessions "spending time with the Lord."
+- She wrote an original Christian guitar song with the lyric: "King of all my life, I will sacrifice."
+- Her Instagram bio: "Jesus loves you so much! I am who I am by His Grace (Romans 8:16-17). Student | Christian | rest, self-improvement, lifestyle"
+- She wants to share talking-head videos about "what God's been teaching me."
+- Her app Spheres has a "subtly Christian-influenced, truth-based framework without being preachy" design philosophy, with biblical grounding (Luke 5:16, Hebrews 10:25, the Mary/Martha paradigm, etc.)
+- She wants to build a **Chronological Bible app** that reorders scripture so that, for example, David's psalms appear right after the corresponding events in his life. She finds the prophets and exilic literature particularly interesting.
+
+### Projects & Apps Built
+
+**1. Education for Equality / Sabi (Her flagship project)**
+- Nonprofit founder. Mission: "Free, world-class education for every child in Nigeria/Africa via technology."
+- **Two channels**: (a) Curriculum App -- Khan Academy-style web platform with 286+ Grade 4 lessons, Cambridge-aligned; (b) Sabi -- AI voice tutor via phone calls for feature-phone users, no internet needed
+- "Sabi" means "to know" in Nigerian Pidgin
+- Won **2nd place at the MIT Africa Business Challenge ($3,000)** -- Feb 2026
+- Received **$1,200 grant from Wesleyan University**
+- Applied to **UNICEF Venture Fund** ($100K equity-free), **Harvard Innovation Labs**, **Technovation AI Ventures**, **CcHub/Mastercard EdTech Fellowship**
+- Tech stack: Next.js 16, TypeScript, Tailwind CSS, Supabase, Clerk auth, Vercel, FastAPI, Whisper STT, Claude Haiku, Chatterbox Turbo TTS (with Naomi's own cloned voice), Ollama Llama 3.1, Hetzner GPU server (RTX 4000)
+- Live at: https://eduforequality.org and https://sabi.eduforequality.org
+- Team at MIT hackathon: Naomi + Grace (7yr telecom) + Nali (Textiles Advancing Impact)
+
+**2. Spheres -- Smart Life Manager (macOS app)**
+- A comprehensive life management/productivity app with dark liquid glass UI
+- Tech: SwiftUI, SwiftData, CloudKit, Claude API integration
+- Features: 5 main views (Home, Spheres, Schedule, Inbox, Mind/AI chat), energy intelligence, smart scheduling, AI-powered onboarding, values-based personalization
+- Includes a psychological model with biblical grounding -- 4 dimensions (Renewal, Expression, Care Focus, Time Horizon), 6 archetypes, 7 life areas
+- Has a Spotify-inspired adaptive profile algorithm using Thompson Sampling
+- Private GitHub repo: thegirwhocodes/spheres-app
+- Has auto-update system and auto-deploy to GitHub
+
+**3. Rings (predecessor to Spheres)**
+- An earlier life management app, evolved into Spheres
+- Multi-device version (v2.1) with CloudKit sync
+- Used Supabase for friends data sync
+
+**4. Cortex (conceptual/in-development)**
+- Vision for an agentic LLM system -- a personal AI that creates and manages "spheres" itself
+- Researching how to give AI agents access to personal data (social media, etc.)
+- Concept of building "actual LLMs from scratch per user" with RAG, retraining monthly
+
+**5. Chronological Bible App** (planned)
+- Bible in chronological order (NKJV), with psalms placed next to the events that inspired them, prophetic passages placed in historical context
+- Combined with dream management and notes management
+
+**6. Dream Manager App** (planned/in progress)
+
+**7. Notes Manager App** (planned/in progress)
+
+**8. Sleep App** (in progress)
+- Connected to the Social Impact Fellowship calendar
+
+**9. Class on Time** (built)
+- iOS app to help get to class on time from 330 High Street (her address at Wesleyan)
+- Features: countdown alerts at 25 min, 15 min, 10 min before class; voice announcements; cute walking character animation showing the journey; "arrived" notification
+- Theme: "smart student helper, cute theme"
+
+**10. InMeeting** (planned)
+
+**11. Portfolio Website** (planned)
+
+### Technical Skills & Tools
+- **Languages**: Swift/SwiftUI, Python, TypeScript/JavaScript, C, SQL, HTML/CSS
+- **Frameworks**: Next.js, FastAPI, SwiftData, CloudKit, Tailwind CSS
+- **AI/ML**: Claude API (Haiku, Sonnet), OpenAI API, Whisper STT, custom TTS (Chatterbox, YarnGPT), RAG with pgvector, Ollama
+- **Databases**: Supabase (PostgreSQL), SwiftData, SQLite
+- **Infrastructure**: Vercel, Hetzner GPU servers, Docker, nginx, Let's Encrypt, Ubuntu
+- **Tools**: Xcode, VS Code with Claude Code, GitHub (CLI), DaVinci Resolve (video editing), GarageBand
+- **Other**: Clerk auth, EventKit (Apple Calendar), Google Calendar OAuth, Africa's Talking telephony
+
+### Music & Creative Interests
+- **Plays guitar** and sings
+- **Writes original Christian music** -- e.g., "King of all my life, I will sacrifice"
+- Planning a **home recording studio** setup: Focusrite Scarlett Solo + Audio-Technica AT2020 + Samson Q2U + Sony MDR-7506 (~$380) + DJI Osmo Pocket 3 for video
+- Uses GarageBand for music production
+- Researching Submagic-style viral editing for content
+
+### Content Creation Plans
+- Wants to create **talking-head videos** about what God has been teaching her
+- Wants to build a **personal brand** as a young Christian woman
+- Researching color theory, consistent branding, caption styles, fonts
+- Planning Instagram and YouTube content
+- Interested in professional editing workflows (DaVinci Resolve, Submagic-style captions)
+- Her content identity: Christian faith-centered, authentic, warm
+
+### Personality & Communication Style
+- **Energetic and passionate** -- writes in an urgent, stream-of-consciousness style with typos, abbreviations, and enthusiasm ("PLEASEEEE", "bruh", "bro", "in detailllll")
+- **Ambitious beyond her years** -- founding a nonprofit, applying to UNICEF, pitching at MIT, planning multiple apps simultaneously
+- **Deeply mission-driven** -- everything circles back to her faith and serving underserved children
+- **Impatient/fast-moving** -- frequently interrupts Claude mid-task, changes direction, asks for things in parallel
+- **Budget-conscious** -- always looking for the cheapest option (spring break trips, studio equipment, server costs)
+- **Pomodoro method** -- works in 25-min intervals, 5-min breaks (spends breaks with God), 15-min long breaks every 2 hours
+- **Prefers comprehensive explanations** with examples
+- **Lives at 330 High Street**, Wesleyan University campus
+
+### Goals & Aspirations
+- **Immediate**: Get Sabi to pilot stage with 150 students in Lagos; expand curriculum to Grades 5-9; secure grant funding ($100K+ from UNICEF, CcHub)
+- **Medium-term**: Scale Education for Equality to serve millions of children across Nigeria and Africa
+- **Personal**: Record and post Christian content (music + talking-head videos); build her personal brand; build all her life management apps
+- **Career**: Applied for AlphaSights client services internship; applied for Patricelli Center Social Impact Fellowship at Wesleyan
+- **Long-term vision**: "Free, world-class education for every child" -- using AI and voice technology to reach the 18.3 million out-of-school children in Nigeria
+- **Legal**: Working on incorporating Education for Equality as a US 501(c)(3) nonprofit (CT incorporation) + Nigerian CAC registration
+
+### Additional Context
+- Uses **OpenClaw** (self-hosted AI) on Mac and Oracle Cloud Ubuntu server with Moonshot Kimi K2.5, attempting WhatsApp integration
+- Looked into **Nigerian yam** grocery options near campus -- she misses Nigerian food
+- Planned a **low-budget spring break trip** to Florida with 2 other students
+- Her schedule philosophy: "This is a break, so I don't want it to be... a production period of time, this should be a restful period of time. But I still want to do these things."
+agentId: aa93334d9017f94e3 (use SendMessage with to: 'aa93334d9017f94e3' to continue this agent)
+<usage>total_tokens: 100761
+tool_uses: 62
+duration_ms: 586990</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

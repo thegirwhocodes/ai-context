@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner dedicated GPU server largest VRAM 2026 GEX130 GEX131 A100 H100 pricing
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 07:05:50 UTC
+========================================================================
+
+Search query: Hetzner dedicated GPU server largest VRAM 2026 GEX130 GEX131 A100 H100 pricing
+
+----------------------------------------
+
+Web search results for query: "Hetzner dedicated GPU server largest VRAM 2026 GEX130 GEX131 A100 H100 pricing"
+
+Links: [{"title":"High performance dedicated GPU server - Hetzner GEX131","url":"https://www.hetzner.com/dedicated-rootserver/gex131/"},{"title":"Hetzner introduces new GPU server for demanding AI workloads","url":"https://www.hetzner.com/pressroom/gpu-server-gex130/"},{"title":"GPU Server GEX130 > hetzner.com, #128305","url":"https://www.whtop.com/plans/hetzner.com/128305"},{"title":"Hetzner Cloud for AI Projects — Complete GPU Server Setup & Cost Breakdown 2026 - DEV Community","url":"https://dev.to/jangwook_kim_e31e7291ad98/hetzner-cloud-for-ai-projects-complete-gpu-server-setup-cost-breakdown-2026-58i4"},{"title":"Find cheap dedicated servers with AMD & Intel CPUs","url":"https://www.hetzner.com/dedicated-rootserver/gex130/"},{"title":"Hetzner Cloud for AI Projects Complete GPU Server Setup & Cost Breakdown 2026 - by Dev To","url":"https://www.webnuz.com/article/2026-04-04/Hetzner%20Cloud%20for%20AI%20Projects%20%20Complete%20GPU%20Server%20Setup%20&%20Cost%20Breakdown%202026"},{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"Hetzner Cloud for AI Projects — Complete GPU Server Setup & Cost Breakdown 2026","url":"https://effloow.com/articles/hetzner-cloud-ai-gpu-server-guide-2026"},{"title":"Hetzner presents gpu server GEX131 with NVIDIA RTX PRO™ 6000 Blackwell Max-Q","url":"https://www.hetzner.com/pressroom/new-gex131/"},{"title":"Hetzner introduces GPU server for AI training | Hacker News","url":"https://news.ycombinator.com/item?id=41646163"}]
+
+Based on the search results, here's what I found about Hetzner's dedicated GPU servers:
+
+## GPU Server Models
+
+**GEX130:**
+- Features an Intel Xeon Gold 5412U 24-Core CPU and NVIDIA RTX 6000 Ada Generation Graphics Card with 48 GB of GDDR6 ECC graphics memory
+- Base configuration includes two 1.92 TB Gen4 Datacenter Edition NVMe SSDs and 128 GB of DDR5 ECC registered RAM
+- Priced at €838.00 per month or €1.3429 per hour, plus a one-time setup fee of €79.00
+
+**GEX131:**
+- Dedicated GPU server with NVIDIA RTX PRO 6000 Blackwell Max-Q
+- Features 96 GB of graphics memory and 5th generation Tensor Cores
+
+## Regarding A100/H100 GPUs
+
+Hetzner does not currently offer GPU servers with NVIDIA H100, as their GEX servers use NVIDIA RTX GPUs.
+
+The GEX131 with 96 GB of VRAM appears to be Hetzner's largest GPU server offering in terms of graphics memory.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

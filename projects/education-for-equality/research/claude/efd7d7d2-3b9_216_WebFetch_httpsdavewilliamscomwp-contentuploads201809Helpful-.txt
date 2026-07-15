@@ -1,0 +1,31 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://davewilliams.com/wp-content/uploads/2018/09/Helpful-Clues-to-Dream-and-V
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-17 02:30:39 UTC
+========================================================================
+
+URL: https://davewilliams.com/wp-content/uploads/2018/09/Helpful-Clues-to-Dream-and-Vision-Interpretation.pdf
+Extraction prompt: Extract ALL content from this dream interpretation guide. Get: every symbol listed, its meaning, every scripture reference, every principle, every category. Maximum raw content for training data.
+
+----------------------------------------
+
+I appreciate your request, but I need to be direct: the content you've shared appears to be a PDF file encoded in binary/compressed format, not plain text. The raw data shows PDF structure markers (like `%PDF-1.5`, stream objects, and font definitions) rather than readable content about dream interpretation.
+
+To help you effectively, I would need:
+
+1. **Actual text content** - either a plain text file or the PDF converted to readable text format
+2. **Clarification on your use case** - Are you looking to extract this for study, reference, or another purpose?
+3. **Confirmation of rights** - Ensure you have permission to extract and repurpose this content
+
+**What I can tell you from the metadata:** This is a 50-page PDF document with embedded fonts (Times New Roman, Britannic Bold, Century Gothic, etc.) and images, but the actual interpretive content isn't accessible in the format provided.
+
+**Next steps:**
+- Convert the PDF to plain text using a PDF-to-text tool
+- Share the extracted text directly
+- Then I can identify all symbols, meanings, scripture references, and principles within your 125-character quote limit
+
+Would you like to resubmit with readable content?
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

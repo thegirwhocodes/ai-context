@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.destinyimage.com/blog/adrian-beale-prophetic-dreams-decoded-8-steps-
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-17 02:29:44 UTC
+========================================================================
+
+URL: https://www.destinyimage.com/blog/adrian-beale-prophetic-dreams-decoded-8-steps-to-hear-gods-voice-in-your-sleep
+Extraction prompt: Extract ALL content about the 8 steps to hear God's voice in sleep. Get: the complete methodology, all steps listed, all scripture references, all practical advice, direct quotes. Get as much raw text as possible.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

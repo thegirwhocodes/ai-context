@@ -1,0 +1,264 @@
+========================================================================
+AGENT RESEARCH: Research audio ad CPM rates Africa
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-04-01 01:18:27 UTC
+========================================================================
+
+Search the web for specific pricing data on audio advertising and embedded marketing in African markets:
+
+1. What is the CPM (cost per thousand impressions) for audio ads in Nigeria / Africa? Look for radio ad rates, podcast ad rates, IVR ad rates, and mobile audio ad rates.
+2. What does MTN Ads charge per impression or per thousand impressions for their advertising platform in Africa?
+3. What do Nigerian radio stations charge for ad spots? What's the rate per 30-second or 10-second spot?
+4. What do brands typically pay for product placement in educational content in developing markets?
+5. What does Viamo charge sponsors for branded content in their 3-2-1 IVR platform?
+6. What do podcast/audio platforms charge for pre-roll or mid-roll audio ads globally and in Africa specifically?
+7. Any data on what brands pay Ubongo, Rising Academies, or Eneza for sponsorships?
+
+I need actual numbers — CPM rates, per-spot rates, sponsorship deal sizes. Not just "brands pay per impression" but HOW MUCH per impression.
+
+Return all findings with specific numbers and sources.
+
+----------------------------------------
+
+Now I have enough data to compile a comprehensive response. Here is everything I found, organized by your questions:
+
+---
+
+## 1. CPM (Cost Per Thousand Impressions) for Audio Ads in Nigeria / Africa
+
+### Programmatic Audio Ads (Global Benchmarks)
+- **Standard run-of-network (RON)**: $5-$15 CPM globally
+- **Tier 3 markets (Nigeria, India)**: $1.50-$4.00 CPM -- significantly lower than developed markets
+- **Nigeria specifically**: The global average CPM is $6.59; Nigeria sits at the bottom at **$1.50 CPM** for general digital advertising
+
+### Podcast/Audio Ad CPM by Placement (Global)
+- **Pre-roll (30 sec)**: $15-$25 CPM
+- **Mid-roll host-read (60 sec)**: $25-$50 CPM
+- **Post-roll**: $10-$20 CPM
+- **Host-read 30-sec spot**: $18-$22 CPM
+- **Host-read 60-sec spot**: $24-$28 CPM
+- **Custom sponsored segments**: up to $150 CPM
+- **Average across all verticals**: $25.46 CPM (down 2% from $25.96)
+
+### South Africa Audio Advertising (via iono.fm -- the main podcast platform)
+- **Floor price**: R200 CPM (~$12 USD)
+- **Average**: R400 CPM (~$24 USD)
+- **Range**: R250-R1,000 CPM ($15-$60 USD)
+- **Business podcast**: R550 CPM (~$33 USD)
+- **Technology podcast**: R450 CPM (~$27 USD)
+- **Radio stream pre-roll**: R350 CPM (~$21 USD)
+- **Minimum campaign budget**: R5,000 ($300 USD) per publisher
+
+### Mobile Display CPM in Africa (for comparison)
+- **Nigeria**: $0.30-$1.50 CPM (Facebook/Meta), $1-$5 CPM (programmatic display)
+- **Kenya**: ~$0.50 CPM (AdSense)
+- **South Africa**: ~$1.00 CPM (AdSense), R5-R12.50 CPM for social media display
+
+### Radio Ad Rates -- see Question 3 below
+
+### IVR Ad Rates
+No publicly available CPM data exists for IVR-based advertising anywhere in the world. This is an emerging format. The closest comparison is the IVR system cost itself: $0.05-$0.10 per minute for the platform, or $0.15-$2.00 per call fully loaded. Advertising within IVR is typically sold on a per-campaign or sponsorship basis, not CPM.
+
+---
+
+## 2. MTN Ads Pricing
+
+**MTN Ads does NOT publish CPM rates publicly.** Here is what is known:
+
+- **Scale**: 100M+ monthly impressions across digital platforms (Ayoba app, captive portals, SMS)
+- **CTR**: 4.4% click-through rate (vs. 0.3% industry average -- 14.7x better)
+- **Ad formats**: SMS, "Please Call Me" messages (South Africa), display on Ayoba, captive portal banners, zero-rated landing pages
+- **Targeting**: Demographics, technographics, geolocation using MTN's first-party subscriber data
+- **Feature phone compatible**: Device-agnostic campaigns
+- **Billing models supported**: CPM, CPC, CPD (cost per day)
+- **Clients**: Unilever Nigeria, WHO, First Bank, BETKing, Old Mutual
+- **Contact for pricing**: mtnsales@alephholding.com
+
+**Best estimate based on comparable platforms**: Given that Facebook CPM in Nigeria is $0.30-$1.50, and MTN Ads delivers a 14.7x higher CTR with first-party telco data targeting, MTN Ads likely charges a premium -- estimated **$2-$8 CPM** for display/SMS, possibly higher for premium placements. But this is an inference, not a published rate.
+
+**Airtel Ads** (launched as Africa's first integrated telco DSP) similarly does not publish rates. Their scale: 27 billion weekly impressions, 23.5M in-app daily impressions, 200M+ daily SMS notifications.
+
+**Vodacom (South Africa)**: Published a rate card PDF but CPM rates are listed as "pricing on request." Their "Please Call Me" service generates 20M messages/day and carries text ads, but rates are negotiated.
+
+---
+
+## 3. Nigerian Radio Station Advertising Rates
+
+### SoundCity Radio (published rate card -- Lagos, Abuja, Enugu, Port Harcourt, Kano)
+
+| Duration | Single Station | Syndicated (All Locations) |
+|----------|---------------|---------------------------|
+| **15 sec** | N11,200 (~$7) | N27,943 (~$17) |
+| **30 sec** | N14,700 (~$9) | N35,443 (~$22) |
+| **45 sec** | N15,598 (~$10) | N41,316 (~$26) |
+| **60 sec** | N18,555 (~$12) | N48,165 (~$30) |
+
+### General Nigerian Radio Market
+- **30-second spot**: N8,500-N40,000 (~$5-$25) depending on station, time, location
+- **60-second jingle**: ~N100,000 (~$63) at premium stations
+- **Program sponsorship** (10-60 min): N98,000-N1,000,000+ ($61-$625+) depending on program and market
+- **Peak time** (6am-11am, evening drive): rates are 50-100% higher than off-peak (11am-3pm)
+- **Agency-negotiated rates**: Can be 30% lower than direct station rates
+
+### Kenyan Radio Rates (for comparison)
+- **30-second prime morning drive**: KSh 30,000-50,000 ($230-$385)
+- **30-second off-peak**: KSh 15,000-25,000 ($115-$192)
+- **Hope Media**: KSh 25,200/30-sec ($194)
+- **Volume discounts**: 10-15% weekly, 20-25% monthly
+
+### Nigeria Total Radio Ad Market
+- **Total market size**: $50.1M in traditional radio advertising (2025 forecast)
+
+---
+
+## 4. Product Placement in Educational Content -- Developing Markets
+
+There is very little published pricing data specifically for product placement in educational content in developing markets. Here is what exists:
+
+### Global Product Placement Pricing (for context)
+- **Scripted network TV**: $1M+ ad buy minimum, plus low-six to seven-figure integration fees
+- **General product placement**: $50,000-$1,000,000+ depending on medium
+- **Most product placements are unpaid** -- brands loan/give products to reduce production costs
+- **Branded content produces 86% brand recall** and is 22x more effective than traditional ads (Nielsen)
+
+### Africa-Specific Branded Education Examples with Known Costs
+- **Lifebuoy (Unilever) handwashing program**: EUR 30M multi-year campaign across South Africa, Ethiopia, India, Indonesia, Vietnam -- covers curriculum integration, school kits, board games. They halved cost-per-contact over time but exact per-student cost is not disclosed
+- **Airtel-UNICEF education partnership**: $57M over 5 years across 13 African countries -- this is zero-rating/infrastructure, not branded content per se
+- **GSMA Innovation Fund grants for edtech**: $200K per company (e.g., ScholarX/LearnAM)
+- **Mastercard Foundation EdTech Fellowship**: Up to $100K equity-free per startup
+
+### The Relevant Model for Sabi
+Product placement in voice-based education (like "If Amina has 3 packets of Indomie noodles...") has no established market rate because it barely exists yet. The closest analog is radio sponsorship (N98,000-N1M per program) or podcast sponsorship ($25-$50 CPM for mid-roll host-read). The fact that this is an unpriced market is actually an opportunity -- Sabi would be defining the rate.
+
+---
+
+## 5. Viamo Pricing for Sponsored/Branded Content
+
+**Viamo does not publicly disclose pricing for sponsors or advertisers.** Here is what is confirmed:
+
+- **3-2-1 IVR service**: Completely donor-funded (USAID, DFID, GIZ, World Bank, UN agencies)
+- **MNO contributions**: Telcos provide free airtime (Airtel alone contributed $3.2M retail value; across all partners, $12 billion cumulative in free minutes)
+- **Revenue model**: Donors pay Viamo for content creation and operations; MNOs absorb call costs for subscriber retention/ARPU/brand benefits
+- **Digital marketing arm**: Viamo sells IVR-based campaigns to brands for demand generation, lead capture, voucher distribution, brand awareness surveys
+- **Services**: Targeted mass messaging, IVR advertising, SMS, inbound call lines
+- **Reach**: 50M calls received in 12 months; operates in 20+ markets
+- **Contact**: viamo.io -- pricing is provided through custom proposals from their sales team
+
+Viamo's commercial arm is essentially a B2B marketing agency using their IVR/SMS infrastructure. They do not sell on a CPM basis -- campaigns are priced as custom packages.
+
+---
+
+## 6. Podcast/Audio Pre-roll and Mid-roll Rates
+
+### Global Rates (2025-2026)
+| Format | CPM Range |
+|--------|-----------|
+| Pre-roll (15-30 sec, pre-recorded) | $15-$30 |
+| Pre-roll (host-read, 30 sec) | $18-$25 |
+| Mid-roll (host-read, 60 sec) | $25-$50 |
+| Post-roll | $10-$20 |
+| Custom branded segment | Up to $150 |
+
+### Africa-Specific (South Africa only -- no published Nigeria/Kenya podcast CPM data)
+| Format | CPM (ZAR) | CPM (USD) |
+|--------|-----------|-----------|
+| Floor price | R200 | $12 |
+| Average | R400 | $24 |
+| Radio stream pre-roll | R350 | $21 |
+| Tech podcast | R450 | $27 |
+| Business podcast | R550 | $33 |
+
+### Africa Audio Ad Market Context
+- Nigeria podcast listenership grew 222% between 2021-2022
+- No established podcast CPM marketplace in Nigeria or East Africa yet
+- South Africa is the only African market with published audio ad CPM rates (via iono.fm)
+- Digital audio is expected to grow from 22% programmatic in 2025 to 46% by 2030
+
+---
+
+## 7. Ubongo, Rising Academies, and Eneza -- Sponsorship Data
+
+### Ubongo
+- **Total revenue (2018)**: $1.3M, of which:
+  - 83% grants (HDIF, Templeton Foundation, Grand Challenges Canada, Omidyar Network)
+  - 4.3% B2B sales and licensing
+  - **1.8% advertising and sponsorship** (~$23,400 in absolute terms)
+  - 0.5% B2B royalties
+- **LEGO Foundation grant**: $27.8M for Akili Family program (from Build a World of Play Challenge -- DKK 900M / $117M total pool)
+- **Corporate sponsors**: Development organizations pay to co-create content (e.g., UN for human rights episodes, Malaria No More for health episodes)
+- **Revenue model**: Primarily licensing to telecoms (who offer Ubongo content as VAS) + SMS interaction fees + character licensing
+
+### Rising Academies
+- **Series A**: $4.25M led by Klett Group
+- **Rising On Air (radio scripts)**: 100% donor-funded, Creative Commons license
+- **Cost per learner**: $0.03/learner/year
+- **No corporate sponsorship revenue disclosed** -- entirely grant/donor funded for their free content
+
+### Eneza Education
+- **2023 revenue**: $3.5M with 10.2M customers
+- **Revenue model**: Almost entirely carrier billing (users pay KSh 10/week via airtime)
+- **Total funding raised**: $1.8M in investment (acquired by Knowledge Platform in October 2024)
+- **Investors**: FINCA Ventures, GSMA, Mastercard Foundation
+- **No significant corporate sponsorship revenue disclosed** -- revenue is from user subscriptions via carrier billing
+
+### Comparative Education Sponsorship Deals (for scale reference)
+
+| Organization | Deal | Amount |
+|-------------|------|--------|
+| LEGO Foundation -> Ubongo | Akili Family grant | $27.8M |
+| LEGO Foundation -> Sesame Workshop | Rohingya/Syria crisis | $100M |
+| LEGO Foundation -> IRC (PlayMatters, Ethiopia/Uganda) | Learning through play | $100M |
+| Airtel + UNICEF | 13-country education partnership | $57M over 5 years |
+| PNC Bank -> Sesame Workshop | "Grow Up Great" (15-year partnership) | Not disclosed (multi-million) |
+| Sesame Workshop total annual revenue | All sources | $187M (2023) |
+| Sesame Workshop - US government portion | CPB grants | <$5M/year (~4%) |
+| MTN Foundation Nigeria | Scholarships (2013-2024) | NGN 2.5B (~$1.6M) |
+| MTN -> 3MTT program | Technical talent training | NGN 3B (~$1.9M) |
+
+---
+
+## Summary: Key Numbers for Your Revenue Model
+
+For Sabi's embedded marketing/audio advertising revenue projections, the most relevant benchmarks are:
+
+1. **Audio CPM in Nigeria will be low**: $1.50-$4.00 CPM for programmatic, far below the $15-$50 global podcast range
+2. **Radio spots in Nigeria are cheap**: N8,500-N40,000 ($5-$25) per 30-second spot
+3. **Telco ad platforms (MTN Ads, Airtel Ads) don't publish CPM** but likely charge $2-$8 CPM given the market
+4. **IVR advertising has no established CPM** -- this is white space that Sabi would be defining
+5. **Corporate education sponsorships in Africa range wildly**: from $23K (Ubongo's ad revenue) to $57M (Airtel-UNICEF) -- it depends entirely on scale and the sponsor's objectives
+6. **Viamo's model is donor-funded, not ad-funded** -- sponsors don't pay per impression; donors fund operations and telcos absorb call costs
+7. **The richest pricing data is from South Africa** (R200-R550 CPM for audio ads) -- Nigeria lags behind in established audio ad pricing
+
+Sources:
+- [CPM Rates for Programmatic Audio Ads - MonetizePros](https://monetizepros.com/ad-sales/cpm-rates-for-programmatic-audio-ads/)
+- [Podcast Advertising Rates 2025 - Ad Results Media](https://www.adresultsmedia.com/news-insights/how-much-do-podcast-ads-cost/)
+- [Podcast Advertising CPM Benchmarks - Podscan](https://podscan.fm/blog/podcast-advertising-rates-cpm-benchmarks-2025)
+- [Meta Ads CPM Benchmarks by Country 2026](https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026)
+- [Facebook Advertising Cost in Nigeria 2026](https://360hub.club/facebook-advertising-cost-in-nigeria/)
+- [MTN Ads Platform](https://ads.mtn.com/)
+- [MTN Ads - Telco-Driven Advertising in Africa](https://ads.mtn.com/telco-driven-advertising-the-future-of-targeted-marketing-in-africa/)
+- [Airtel Africa Launches Airtel Ads](https://communicationsafrica.com/commerce/airtel-africa-launches-airtel-ads)
+- [SoundCity Radio Advert Rates PDF](https://soundcity.tv/wp-content/uploads/SOUNDCITY-RADIO-ADVERT-RATES.pdf)
+- [Nigerian Radio Advertising Rates - AllNetts](https://www.allnetts.com/Radio.php)
+- [Radio Advertising Rates Nigeria - Alternative Adverts](https://alternativeadvert.com/blog/radio-adverts-rates-lagos-nigeria/)
+- [Radio Advertising in Kenya 2026](https://marketing.ke/radio-advertising-in-kenya/)
+- [iono.fm Audio Ad Booking](https://support.iono.fm/docs/booking-audio-ads)
+- [7 Best CPM Ad Networks in Nigeria](https://publishergrowth.com/blog-details/7-best-cpm-ad-networks-in-nigeria)
+- [Viamo 3-2-1 Platform](https://viamo.io/services/3-2-1/)
+- [Viamo Digital Marketing](https://viamo.io/services/digital-marketing/)
+- [Ubongo Revenue - How We Made It In Africa](https://www.howwemadeitinafrica.com/how-tanzanias-ubongo-media-built-a-business-by-making-maths-cool/46814/)
+- [Ubongo $27.8M LEGO Award](https://www.africa-newsroom.com/press/africas-biggest-classroom-ubongo-receives-a-278-million-dollar-award-from-lego-foundation-global-challenge?lang=en)
+- [Eneza Education Revenue - GetLatka](https://getlatka.com/companies/eneza-education)
+- [Rising Academies Series A](https://www.risingacademies.com/risingnews/series-a-ta5ea)
+- [LEGO Foundation $100M to IRC](https://www.rescue.org/press-release/lego-foundation-awards-us100-million-grant-international-rescue-committee-bring)
+- [Sesame Workshop Funding - Hollywood Reporter](https://www.hollywoodreporter.com/news/general-news/sesame-street-gets-funding-how-it-went-broke-1183032/)
+- [Vodacom Digital Advertising Rate Card](https://www.vodacombusiness.co.za/resource-file/lppjq2hh0rg4npdzlbcz9x/digital-advertising-rate-card.pdf)
+- [Nigeria Traditional Radio Advertising Market - Statista](https://www.statista.com/outlook/amo/advertising/audio-advertising/traditional-radio-advertising/nigeria)
+agentId: a327be8023d8180cd (use SendMessage with to: 'a327be8023d8180cd' to continue this agent)
+<usage>total_tokens: 68014
+tool_uses: 42
+duration_ms: 495641</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

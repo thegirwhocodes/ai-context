@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude subscription pricing 2026 Pro Max $20 $200 features comparison
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 20:04:54 UTC
+========================================================================
+
+Search query: Claude subscription pricing 2026 Pro Max $20 $200 features comparison
+
+----------------------------------------
+
+Web search results for query: "Claude subscription pricing 2026 Pro Max $20 $200 features comparison"
+
+Links: [{"title":"Claude Pro pricing in 2026: Everything you need to know | eesel AI","url":"https://www.eesel.ai/blog/claude-pro-pricing"},{"title":"Claude Pricing in 2026 for Individuals, Organizations, and Developers","url":"https://www.finout.io/blog/claude-pricing-in-2026-for-individuals-organizations-and-developers"},{"title":"Plans & Pricing | Claude by Anthropic","url":"https://claude.com/pricing"},{"title":"Claude Code Pricing 2026: Plans, Token Costs, and Real Usage Estimates - Verdent Guides","url":"https://www.verdent.ai/guides/claude-code-pricing-2026"},{"title":"Claude Pricing Explained: Subscription Plans & API Costs | IntuitionLabs","url":"https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"},{"title":"Claude Code Pricing 2026: Free Credits, API Costs & Max Plan Explained | NxCode","url":"https://www.nxcode.io/resources/news/claude-code-pricing-2026-free-api-costs-max-plan"},{"title":"Claude Code Pricing 2026: Complete Plans & Cost Guide","url":"https://www.finout.io/blog/claude-code-pricing-2026"},{"title":"Claude AI Subscription Plans 2026: Free, Pro, Max, Team | Lorka AI","url":"https://www.lorka.ai/knowledge-hub/claude-ai-pricing-plans"},{"title":"Claude Code Pricing in 2026: Every Plan Explained (Pro, Max, API & Teams) - SSD Nodes","url":"https://www.ssdnodes.com/blog/claude-code-pricing-in-2026-every-plan-explained-pro-max-api-teams/"},{"title":"Is Claude Code going to cost $100/month? Probably not—it’s all very confusing","url":"https://simonwillison.net/2026/apr/22/claude-code-confusion/"}]
+
+Based on the search results, here's a comprehensive overview of Claude subscription pricing in 2026:
+
+## Claude Subscription Tiers
+
+The standard Claude Pro plan costs $20 per month, or $17 per month if you choose to be billed annually. Anthropic offers an annual option for the standard Pro plan at $17 per month (billed as $200 upfront).
+
+Max starts at $100/month for 5x more usage than Pro, or $200/month for 20x, and adds priority access to new features and models. As of 2026, the higher Max tiers ($100 and $200) are only available on a monthly basis to allow for more flexibility as usage needs evolve.
+
+## Features Comparison
+
+**Pro Plan ($20/month):**
+Pro includes Claude Code in the terminal, file creation and code execution, unlimited projects, Google Workspace integration, remote MCP connectors, and extended reasoning models.
+
+**Max Plans ($100-$200/month):**
+Max adds priority access to new features and models. Max 20x ($200/month) is the top individual tier with 20x Pro usage. At this level, rate limits stop being a practical concern for most full-day development work.
+
+## Usage and Pricing Context
+
+This parallel usage multiplies the token burn rate, making the 20x capacity of the Max plan a necessity rather than a luxury for high-output teams. The $200 Max 20x subscription effectively acts as a "buffet" for these heavy users, providing a predictable monthly cost that is often much more cost-effective than paying the API directly at full usage.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

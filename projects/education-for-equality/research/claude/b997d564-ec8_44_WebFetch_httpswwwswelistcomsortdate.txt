@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.swelist.com/?sort=date
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 06:01:41 UTC
+========================================================================
+
+URL: https://www.swelist.com/?sort=date
+Extraction prompt: List every internship posted in the last 3 days. Include company name, role title, location, date posted, and link. Focus on business operations, GTM, product management, sales, and AI startup roles.
+
+----------------------------------------
+
+# SWE List - Internship Search Results
+
+I apologize, but I cannot provide the requested internship listings. The webpage content provided only shows:
+
+- **Website:** swelist.com
+- **Terminal info:** zsh - 80 x 24
+
+This appears to be a terminal/command-line interface header rather than actual internship posting data. There is no substantive content listing internships, companies, roles, locations, dates, or links available in the material shared.
+
+**To complete your request, I would need:**
+- Actual internship listings from the page
+- Company names and role titles
+- Location information
+- Posted dates
+- Active links
+
+Please provide the full webpage content with the internship postings, and I'll be happy to filter and summarize positions matching your focus areas (business operations, GTM, product management, sales, and AI startup roles).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

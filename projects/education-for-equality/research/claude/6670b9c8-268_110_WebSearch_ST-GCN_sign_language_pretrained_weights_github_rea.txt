@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ST-GCN sign language pretrained weights github ready to use skeleton keypoint
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:33:37 UTC
+========================================================================
+
+Search query: ST-GCN sign language pretrained weights github ready to use skeleton keypoint
+
+----------------------------------------
+
+Web search results for query: "ST-GCN sign language pretrained weights github ready to use skeleton keypoint"
+
+Links: [{"title":"GitHub - amorim-cleison/st-gcn-sl: Spatial Temporal Graph Convolutional Networks for Sign Language (ST-GCN-SL) Recognition","url":"https://github.com/amorim-cleison/st-gcn-sl"},{"title":"GitHub - 1zgh/st-gcn: ST-GCN-5-25 · GitHub","url":"https://github.com/1zgh/st-gcn"},{"title":"1 Sign Language Recognition via Skeleton-Aware Multi-Model Ensemble","url":"https://www.researchgate.net/publication/355222125_Sign_Language_Recognition_via_Skeleton-Aware_Multi-Model_Ensemble/fulltext/61694055039ba268443f24b1/Sign-Language-Recognition-via-Skeleton-Aware-Multi-Model-Ensemble.pdf"},{"title":"Skeleton Aware Multi-modal Sign Language Recognition","url":"https://openaccess.thecvf.com/content/CVPR2021W/ChaLearn/papers/Jiang_Skeleton_Aware_Multi-Modal_Sign_Language_Recognition_CVPRW_2021_paper.pdf"},{"title":"GitHub - firework8/Awesome-Skeleton-based-Action-Recognition: A curated paper list of awesome skeleton-based action recognition. · GitHub","url":"https://github.com/firework8/Awesome-Skeleton-based-Action-Recognition"},{"title":"Sign Language Recognition via Skeleton-Aware Multi-Model Ensemble | alphaXiv","url":"https://www.alphaxiv.org/overview/2110.06161v1"},{"title":"GitHub - jackyjsy/CVPR21Chal-SLR: This repo contains the official code of our work SAM-SLR which won the CVPR 2021 Challenge on Large Scale Signer Independent Isolated Sign Language Recognition. · GitHub","url":"https://github.com/jackyjsy/CVPR21Chal-SLR"},{"title":"SKELETON-BASED SIGN LANGUAGE RECOGNITION USING A DUAL-STREAM SPATIO-TEMPORAL DYNAMIC GRAPH CONVOLUTIONAL NETWORK","url":"https://arxiv.org/html/2509.08661v1"},{"title":"How to Perform Action Recognition on Keypoints with ST-GCN++ | Datature Blog","url":"https://datature.io/blog/how-to-perform-action-recogition-on-keypoints-with-stgcnn"},{"title":"SignFormer-GCN: Continuous sign language translation using spatio-temporal graph convolutional networks - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11828366/"}]
+
+Based on the web search results, I found several relevant resources for ST-GCN-based sign language recognition with pretrained weights:
+
+## Key Resources Found:
+
+### 1. **ST-GCN-SL Repository** (Direct Sign Language Implementation)
+The ST-GCN-SL (Spatial Temporal Graph Convolutional Networks for Sign Language) repository provides pretrained weights that can be downloaded, and it appears to be available on GitHub at `amorim-cleison/st-gcn-sl`.
+
+### 2. **SAM-SLR (Skeleton-Aware Multi-Modal Sign Language Recognition)**
+The official SAM-SLR code won the CVPR 2021 Challenge on Large Scale Signer Independent Isolated Sign Language Recognition. The skeleton modality can be trained, finetuned and tested using code in the SL-GCN/ folder, with instructions to prepare skeleton data into four streams (joint, bone, joint_motion, bone motion). Pretrained models for all modalities are provided to reproduce submitted results, available at `jackyjsy/CVPR21Chal-SLR` on GitHub.
+
+### 3. **Standard ST-GCN for Action Recognition**
+The original ST-GCN repository provides pretrained model weights that can be downloaded by running a script, with models also available from GoogleDrive or BaiduYun.
+
+### 4. **Working Pipeline Details**
+The ST-GCN-SL model is the first to apply ST-GCN to sign language recognition, and the skeleton-based approaches use keypoint extraction from videos before feeding them into the graph convolutional networks.
+
+These repositories should provide ready-to-use pretrained weights and inference code for skeleton keypoint-based sign language recognition using ST-GCN architectures.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

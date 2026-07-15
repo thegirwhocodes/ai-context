@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.daily.co/guides/products/dial-in-dial-out/transfers
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 16:36:57 UTC
+========================================================================
+
+URL: https://docs.daily.co/guides/products/dial-in-dial-out/transfers
+Extraction prompt: How does mid-call SIP transfer work between different carriers? What's the user-side experience — does the caller hear a beep, dead air, or does the transfer happen seamlessly? Is the call dropped and re-established, or is the audio path maintained? Any mention of latency or time gaps?
+
+----------------------------------------
+
+# SIP Transfer User Experience
+
+The documentation provided doesn't address user-side experience details like audio continuity, beeps, dead air, or latency during transfers.
+
+The guide focuses on technical mechanics: "the original SIP connection remains anchored to Daily. Both the original and the new call connections stay active during the transfer." However, it doesn't describe what callers actually hear or whether the audio path is maintained continuously.
+
+The documentation explains that in SIP REFER scenarios, "Daily drops out of the signalling and media path and the originating SIP address directly connects to the target destination," but again, no caller experience details are provided.
+
+**Bottom line:** For specifics about call quality, latency, or perceptual continuity during transfers between carriers, you'd need to contact Daily support directly or consult additional documentation not included here.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

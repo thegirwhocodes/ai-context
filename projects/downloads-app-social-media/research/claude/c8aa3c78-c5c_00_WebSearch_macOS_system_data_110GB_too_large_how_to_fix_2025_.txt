@@ -1,0 +1,49 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: macOS system data 110GB too large how to fix 2025 2026
+Session: c8aa3c78-c5c9-4c6d-89e7-e4fac7cbd5d3
+Time: 2026-03-17 20:08:54 UTC
+========================================================================
+
+Search query: macOS system data 110GB too large how to fix 2025 2026
+
+----------------------------------------
+
+Web search results for query: "macOS system data 110GB too large how to fix 2025 2026"
+
+Links: [{"title":"Mac System Data is large - Apple Community","url":"https://discussions.apple.com/thread/253667048"},{"title":"What To Do if macOS System Data is Huge/Large - The Mac Observer","url":"https://www.macobserver.com/macos/fix-macos-system-data-huge/"},{"title":"Mac \"System Data\" Too Large? 10 Ways to Clear It (2026)","url":"https://www.drbuho.com/how-to/clear-system-storage-mac"},{"title":"Huge System Data Filling Storage on Your Mac? 7 Possible Fixes","url":"https://osxdaily.com/2025/05/14/huge-system-data-on-mac-why-how-fix/"},{"title":"How to clear System Data on Mac: An ultimate guide [2026]","url":"https://macpaw.com/how-to/clear-system-storage-mac"},{"title":"My Mac System file is 260 GB. I can't figure out why it's so big! | VI-CONTROL","url":"https://vi-control.net/community/threads/my-mac-system-file-is-260-gb-i-cant-figure-out-why-its-so-big.153818/"},{"title":"Why Mac System Data gets so large","url":"https://cleanmymac.com/blog/why-system-storage-takes-so-much-space"},{"title":"System data taking up 115GB - Apple Community","url":"https://discussions.apple.com/thread/254588225"},{"title":"Mac System Data is large: What to do?","url":"https://setapp.com/how-to/macos-system-data-large"},{"title":"System Data taking up a large amount of storage | Mac-Forums | Fix Mac iPhone iPad | Buying Tips | iOS OS Help","url":"https://www.mac-forums.com/threads/system-data-taking-up-a-large-amount-of-storage.379624/"}]
+
+Based on the search results, here's what you need to know about fixing a 110GB macOS System Data issue:
+
+## What's Normal?
+
+The default size of macOS system is 12 GB, which implies that around 12GB of system data is normal. In 2026, healthy system data usually sits at 12-25 GB on macOS Tahoe, Sequoia, Sonoma, or Ventura. So 110GB is definitely too large.
+
+## Common Causes
+
+The culprit is typically old app caches, local Time Machine snapshots, or leftover temp files from updates. Here are specific issues to check:
+
+1. **Mail logging**: If Apple Mail is used and Mail logging is enabled, it can continuously generate logs you don't need. If large, delete everything in that folder, empty the Trash, and make sure to disable the option for Mail Logging in Connection Doctor to prevent this again.
+
+2. **Time Machine snapshots**: macOS keeps a copy of your backup on your startup drive in case the external drive isn't available when you need to restore files. Snapshots grow in size based on the amount of data you deleted, and are accounted for in System Data storage space. They can be VERY large.
+
+3. **Screen saver videos**: With macOS Sonoma and later, downloaded 4K screen saver videos can take up to 20 GB of storage in System Data.
+
+## Solutions
+
+**Quick fixes:**
+- Sometimes a simple restart fixes the problem, or rebooting the Mac into Safe Mode may remedy the issue — one user reported their System Data shrunk from 365GB to 45GB after booting into Safe Mode.
+- Try updating your Mac, as installing the latest macOS update can clear out old system files and refresh your System Data automatically.
+
+**Manual cleanup:**
+- Press Command-Space, enter Disk Utility, and open it. Choose your Macintosh HD - Data volume. In the Disk Utility menu, click View > Show APFS snapshots. Select the snapshots you want to remove and click the "–" button.
+- Screen saver videos are stored at /Library/Application Support/com.apple.idleassetsd/Customer.
+
+**Third-party tools:**
+CleanMyMac is a favorite tool for clearing unnecessary system junk, and running its Cleanup tool once a week is the most effective way to prevent system storage from growing uncontrollably.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

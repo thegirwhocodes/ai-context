@@ -1,0 +1,234 @@
+========================================================================
+AGENT RESEARCH: Edtech field staff + safeguarding
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 17:26:51 UTC
+========================================================================
+
+Research how education/edtech organizations and NGOs working with children structure their field-staff / community-coordinator / field-officer roles and the CHILD SAFEGUARDING requirements that funders demand. This is to benchmark a contract for a Lagos "Regional Coordinator" who recruits schools, talks to parents, distributes materials, and administers learning assessments to children.
+
+Cover:
+- How African edtech orgs and large education programs staff and contract their on-the-ground field teams. Look specifically at: NewGlobe / Bridge International / EKOEXCEL, Rori AI / ConnectEd / Eneza Education / M-Shule / Ubongo, Teaching at the Right Level (TaRL) / Pratham / J-PAL field operations, One Acre Fund (famous for field-officer model). What field officers/coordinators actually do, how they're paid, supervised, and reported against.
+- What a "field coordinator"/"program coordinator" job scope and deliverables look like in these orgs; daily reporting norms; data collection responsibilities.
+- CHILD SAFEGUARDING: what a safeguarding policy and safeguarding contract clauses must contain for an org working with children — Code of Conduct, PSEA (protection from sexual exploitation and abuse), background/police checks (and the Nigerian reality of obtaining them), reporting obligations, mandatory training, the "do no harm" principle. What funders (Gates, Mastercard Foundation, UNICEF, World Bank, USAID-type, Global Fund) REQUIRE in safeguarding before they fund — Keeping Children Safe standards, the funder safeguarding due-diligence checklist.
+- Data protection / child data handling in fieldwork: consent from parents/guardians, minimizing and securing children's assessment data.
+- Ethics of administering assessments to children (informed consent, IRB/ethics considerations for pilots that may be published as research/RCT).
+
+Return AT LEAST 90% of the substantive content you find — every standard/framework name, every funder requirement, every real org example and how they actually do it, every policy element. Do NOT give a short summary; write the full detailed reference. Cite sources inline (URLs).
+
+----------------------------------------
+
+I now have thorough, citable coverage across every domain requested. I'll synthesize the full reference report.
+
+---
+
+# Benchmarking a Lagos "Regional Coordinator" Contract: Field-Staff Models & Child Safeguarding Requirements
+
+A detailed reference for Education for Equality, covering (A) how comparable orgs staff/contract/pay/supervise field teams, (B) the field-coordinator job scope and reporting norms, (C) child safeguarding standards and contract clauses, (D) what funders require before they fund, (E) data protection for children's fieldwork, and (F) ethics of assessing children. All sources cited inline.
+
+---
+
+## A. How African edtech orgs and large education programs staff their field teams
+
+### One Acre Fund — the canonical "field officer" model
+One Acre Fund (1AF) is the most-studied field-officer operation in African development and the closest structural analog to a "Regional Coordinator who recruits and serves on the ground."
+
+**What field officers do:** Field officers are "the first line of contact between One Acre Fund and farmers." Across a season they: (1) at the start of the season, teach prospective participants about the program and help them enroll; (2) deliver trainings on best practices; (3) monitor progress in the field; and (4) collect repayments. (https://oneacrefund.org/careers/applying-one-acre-fund/what-we-look)
+
+**Recruitment process (rigorous, multi-stage — worth mirroring):** 1AF advertises to local residents, screens applications against requirements, then runs: (1) a first interview with a basic aptitude test; (2) a second round with practical assessments including role-plays and mock trainings; (3) a third round before an interview panel; and (4) a training boot camp where the successful candidates are trained on the duties of the role and how to perform them. (https://oneacrefund.org/careers/applying-one-acre-fund/what-we-look)
+
+**Supervision / hierarchy:** Field officers sit at the base of a tiered field structure — Field Officer → Assistant Field Director → Field Director → Senior Field Director, with Field Operations Specialists leading recruitment, selection and onboarding for the director levels. (https://oneacrefund.org/vacancies/drc-field-operations-specialist)
+
+**Pay philosophy:** 1AF uses a standardized job-grading system; "everyone in the same job level and location, regardless of nationality, earns comparable pay and has the same opportunities to advance." This matters for a contract: pay is benchmarked to job level and location, not negotiated ad hoc. (https://www.glassdoor.com/Salary/One-Acre-Fund-Salaries-E319345.htm)
+
+**Takeaway for E4E:** the 1AF model says a field coordinator role should have (a) a structured selection process with a practical/role-play component, (b) onboarding training before deployment, (c) a defined supervisor and reporting line, and (d) seasonal cyclical deliverables (recruit → train → monitor → collect data).
+
+### NewGlobe / Bridge International Academies / EKOEXCEL (Lagos-relevant)
+NewGlobe is the parent company; its programs include Bridge International Academies, EdoBEST, and **EKOEXCEL** — the Lagos State Government statewide program to transform ECCDE and primary education in all Lagos State public schools, focused on supporting public-school teachers and raising learning outcomes. (https://www.bridgeinternationalacademies.com/about/; https://en.wikipedia.org/wiki/Bridge_International_Academies)
+
+The on-the-ground community-facing role at Bridge is the **Community Engagement Associate** (Bridge advertises this on LinkedIn/Jobvite). Bridge's program teams "develop outreach strategies aimed at increasing enrollment in all Bridge Community programs" — i.e., the community-engagement function is explicitly enrollment-and-outreach focused (school/pupil recruitment, parent contact, marketing). (https://ke.linkedin.com/jobs/view/bridge-international-academies-jobs-community-engagement-associate-at-bridge-191798211; https://bridge.ac.ke/work-with-us/) Note: I could not retrieve the verbatim full JD (the LinkedIn posting 404'd and Bridge gates its recruitment portal at recruitment.bridge.ac.ke), so treat the Community Engagement Associate scope as outreach/enrollment-led rather than quoting line items.
+
+**Takeaway for E4E:** the role title that maps to "recruits schools, talks to parents, distributes materials" in the Bridge/NewGlobe world is "Community Engagement Associate" — an outreach/enrollment role with enrollment targets, distinct from instructional staff.
+
+### Pratham / TaRL / J-PAL / ASER — the assessment-administration model
+This is the most relevant cluster for the "administers learning assessments to children" part of your role.
+
+**TaRL methodology and the assessor's job:** Pratham pioneered Teaching at the Right Level (TaRL). The model "begins by assessing children using simple 1-on-1 tests," then groups them by learning level rather than age/grade, after which an instructor runs short interactive activities to move children up levels. The one-on-one assessment is the entry point of the whole method. (https://www.pratham.org/about/teaching-at-the-right-level/; https://palnetwork.org/teaching-at-the-right-level/)
+
+**Evidence base:** Since 2001 Pratham has partnered with J-PAL to evaluate TaRL; six randomized evaluations across seven Indian states found TaRL "consistently effective when implemented systematically," producing "some of the largest effect sizes recorded in education research." (https://www.povertyactionlab.org/page/teaching-right-level-tarl-webinar-series; https://pratham.org.uk/user-content/uploads/2019/12/J-PAL-Evaluation-Summaries-of-Pratham-Programs.pdf)
+
+**ASER field model — directly applicable to how you train and deploy an assessor:** Pratham facilitated the first national ASER (Annual Status of Education Report) in 2005. The ASER assessment process is the template for low-cost one-on-one child assessment:
+- **Three-tier training cascade:** field investigators are trained at district-level workshops by master trainers, who were trained at state-level workshops run by ASER Centre state teams. (https://asercentre.org/wp-content/uploads/2022/12/ASER-Survey-Training-Guidelines.pdf)
+- **Training content:** classroom sessions in the relevant regional language (day 1), a pilot field visit to practice the real survey in nearby villages (day 2), and a quiz on the survey process where every participant is ideally expected to score >70% to confirm understanding (day 3). (https://asercentre.org/wp-content/uploads/2022/12/ASER-Survey-Training-Guidelines.pdf)
+- **Deployment unit:** a pair of volunteers is assigned to each sampled village and works together to survey ~20 households over two days. (Pairing matters — it's both a quality and a child-safeguarding control.)
+- **Rapport requirement:** volunteers are explicitly trained to "build rapport with children to create a relaxed and encouraging environment." The basic ASER survey tracks enrollment for ages 3–16 and assesses reading, arithmetic and English for ages 5–16. (https://img.asercentre.org/docs/.../frequentlyaskedquestionsaboutaser.pdf; https://img.asercentre.org/docs/.../ASER_2022_AssessmentTasks.pdf)
+
+**Takeaway for E4E:** anyone administering assessments to children should (a) be trained on a standardized protocol and pass a competency check before going to the field, (b) ideally not be alone with a child (pairing / presence of a teacher or guardian), and (c) be trained on rapport/child-friendly conduct as an explicit job requirement, not an afterthought.
+
+### Eneza Education, M-Shule, Ubongo (African edtech delivery models)
+These are largely **remote/tech-delivery** models rather than heavy field-staff models, which is useful context for scoping how much "field" work your role actually needs:
+- **Eneza Education:** virtual tutor delivering lessons, assessments, and individualized feedback over SMS on basic feature phones, no internet required; >10M learners since 2012 across Kenya, Rwanda, Côte d'Ivoire, Ghana, Sierra Leone. Largely channel-delivered, not field-staff delivered. (https://www.enezaeducation.com/; https://www.unesco.org/en/dtc-financing-toolkit/eneza-education)
+- **M-Shule:** AI/SMS platform that organizations (partners) use to run structured learning programs across SMS, WhatsApp, Telegram and web — i.e., M-Shule positions itself as the *platform* partners run programs on, with the field/community engagement done by the partner orgs (schools, refugee programs, health/livelihoods orgs). (https://mshule.com/)
+- **Ubongo:** edu-cartoons via TV and basic mobile phones; reaches >1.2M homes in East Africa weekly. Media-delivery, minimal field staff. (https://www.ubongo.org/10-startups-focused-on-transforming-education-in-africa/)
+
+**Takeaway:** the pure-tech African edtechs do very little field staffing — the field-officer burden (and therefore the safeguarding burden) is heaviest precisely when, like E4E, you put a human in front of children to recruit, distribute and assess. That makes your Regional Coordinator contract a higher-risk role than a typical edtech hire, and it should be drafted accordingly.
+
+---
+
+## B. Field/program-coordinator job scope, deliverables, reporting norms
+
+Synthesizing across 1AF, Bridge's Community Engagement Associate, and ASER, a defensible "Regional Coordinator" scope is:
+
+**Core duties (map directly to your description):**
+- School recruitment / enrollment outreach (Bridge Community Engagement Associate model — outreach to increase enrollment).
+- Parent/guardian engagement, including obtaining consent (see §E).
+- Distribution of learning materials (logistics + inventory accountability).
+- Administering learning assessments one-on-one to children using a standardized protocol (ASER/TaRL model).
+
+**Deliverables / targets:** enrollment/recruitment targets (number of schools, number of pupils), distribution counts, and assessment-completion counts with data quality standards. 1AF's grading system and Bridge's enrollment-outreach framing both imply quantified, periodically reviewed targets rather than open-ended effort.
+
+**Reporting norms / data-collection responsibilities:**
+- 1AF field officers carry continuous data-collection duties (progress monitoring, repayment collection) across the cycle — the field role is inherently a data role.
+- ASER field investigators are accountable to a strict protocol, with quality controlled via the three-tier cascade and a competency quiz.
+- Funder reporting cadence: serious safeguarding concerns must be reported on tight timelines (Mastercard: within **72 hours** — see §D). Build a defined reporting cadence into the contract: routine activity reporting (e.g., weekly/per-visit), data submission standards, and an immediate/escalation path for any safeguarding incident.
+
+**Supervision:** a named supervisor / reporting line (1AF's tiered Field Director structure). For a small org, the Regional Coordinator should report to a designated person at E4E who is also the safeguarding focal point or has a clear line to one.
+
+---
+
+## C. Child safeguarding — what the policy and the contract clauses must contain
+
+### The governing standard: Keeping Children Safe (KCS) International Child Safeguarding Standards
+KCS's standards "help organisations meet the responsibilities set out in the UN Convention on the Rights of the Child (UNCRC) to protect children from harm caused by their staff, activities, operations and partners." There are **four standards: Policy, People, Procedures, Accountability.** (https://www.keepingchildrensafe.global/international-child-safeguarding-standards/)
+
+**Standard 1 — POLICY:**
+- The org develops a policy describing its commitment to preventing and responding appropriately to harm to children, reflecting children's protection rights under the UNCRC.
+- The policy is approved by the org's management body and applies to all staff and associates.
+- The policy is publicised appropriately, promoted and distributed widely — including to children and caregivers. (https://www.keepingchildrensafe.global/international-child-safeguarding-standards/)
+
+**Standard 2 — PEOPLE:**
+- Designate key staff at different levels (including director level) as safeguarding "focal points" with clearly defined roles.
+- Recruitment processes have robust child-safeguarding measures in place (this is where vetting/background checks live).
+- Written guidelines for appropriate and inappropriate behaviour of adults toward children, and of children toward other children (the Code of Conduct).
+- Guidelines for engaging partners, communities and children on safeguarding. (same URL)
+
+**Standard 3 — PROCEDURES:**
+- Local mapping exercises to identify the legal, social-welfare and child-protection arrangements available (so you know where to report locally).
+- Child-safeguarding risk assessments and mitigation integrated into existing risk processes at all levels.
+- Safeguarding integrated into existing systems: strategic planning, budgeting, recruitment, programme/cycle management, performance management, procurement, partner agreements.
+- A locally appropriate reporting-and-responding process for incidents and concerns. (same URL)
+
+**Standard 4 — ACCOUNTABILITY:**
+- Implementation is regularly monitored.
+- Progress, performance and lessons learnt are reported to key stakeholders and in annual reports.
+- Learning from real cases informs policy review.
+- Policies/practices reviewed at regular intervals and **formally evaluated by an external evaluator/auditor every three years.** (same URL)
+
+### The Code of Conduct + PSEA core principles (IASC Six Core Principles, 2002)
+A safeguarding code of conduct for staff working with children must, at minimum, embed the **IASC Six Core Principles** (the universal PSEA baseline funders expect):
+1. Sexual exploitation and abuse by workers constitute gross misconduct and are grounds for termination of employment.
+2. Sexual activity with children (under 18) is prohibited regardless of local age of majority or consent; mistaken belief about the child's age is not a defense.
+3. Exchange of money, employment, goods or services for sex (including sexual favours or other humiliating/degrading/exploitative behaviour) is prohibited — including exchanging assistance that is due to beneficiaries.
+4. Sexual relationships between workers and beneficiaries are strongly discouraged given inherently unequal power dynamics.
+5. A worker who develops concerns/suspicions about SEA by a fellow worker (any agency) must report via established reporting mechanisms.
+6. Workers must create and maintain an environment that prevents SEA and promotes the code of conduct; managers at all levels have particular responsibility to support systems that maintain it.
+(https://psea.interagencystandingcommittee.org/resources/iasc-six-core-principles-relating-sexual-exploitation-and-abuse)
+
+These six are what UNICEF, World Bank, USAID and most UN-aligned funders treat as the PSEA floor (UNICEF explicitly reaffirms PSEA under the UN Secretary-General's Bulletin ST/SGB/2003/13 and the IASC Six Core Principles — https://www.unicef.org/media/171641/file/UNICEF_Policy_on_%20Safeguarding_June%202025.pdf.pdf).
+
+### USAID's concrete partner requirements (good template for your HR file)
+USAID requires implementing partners to:
+- Have/implement **publicly available standards, policies or procedures** prohibiting employees, agents, interns or anyone with access/contact to beneficiaries from engaging in exploitation, sexual abuse, child abuse and child neglect (new AIDAR clause 752.222-7x). (https://www.federalregister.gov/documents/2024/02/28/2024-03848/...)
+- Maintain **codes of conduct that include all child-safeguarding core principles** and require each subawardee/subcontractor to ensure personnel adhere to them (ADS 303 / AIDAR clause 752.7037).
+- Produce **HR materials** that include an organizational and individual commitment to compliance, including **codes of conduct signed by each employee**, training materials, HR policies/handbooks, and contracts/grants with consultants.
+- For newer awards: **establish minimum standards for preventing and responding to covered violations; develop and implement a compliance plan; and report alleged violations and the actions taken in response.** (https://2017-2020.usaid.gov/PreventingSexualMisconduct/Partners/Child-Safeguarding/Best-Practices; https://usaid.gov/safeguarding-and-compliance/partners/child-safeguarding/FAQs)
+
+### Background / police checks — and the Nigerian reality
+Best-practice safeguarding (KCS Standard 2 "robust recruitment measures"; USAID/funder vetting) calls for criminal-record checks on anyone with access to children. In Nigeria this means the **Police Character Certificate (PCC)**, also called Police Clearance Certificate, issued by the Nigeria Police Force (NPF):
+- It "certifies that the holder has no criminal background in Nigeria" — an official NPF statement of criminal record or its absence. (https://www.npf.gov.ng/news/details/17; https://www.resolutionlawng.com/how-to-obtain-police-character-certificate-in-lagos-nigeria/)
+- **How to obtain it:** primarily online via the **POSSAP portal** (https://possap.gov.ng), or in person at the Federal CID in Ikoyi, Lagos, any state command CID, or Abuja HQ. The applicant completes a form, provides fingerprints (the police can also run the check using fingerprints already captured for BVN or NIN), pays a fee, and the check is run. (https://possap.gov.ng/; https://www.resolutionlawng.com/...)
+- **Processing time:** "a few days to a few weeks." Certificates are now issued electronically and emailed/downloadable.
+- **Critical limitation:** the PCC is **valid for only three months after issuance** and is largely oriented toward immigration/overseas-employment use. (https://ngembassy.info/page/police-character-certificate)
+
+**Practical implication for the contract:** require a fresh PCC (issued within the last ~3 months) as a condition of engagement, budget time for the few-days-to-few-weeks turnaround, and — because the PCC is point-in-time and short-validity — pair it with additional safeguarding controls that don't depend on a single certificate: reference checks, the signed code of conduct, mandatory training, a no-one-alone-with-a-child rule, and a probationary/supervised period. (KCS treats robust recruitment as one layer among People + Procedures + Accountability, not a single check.)
+
+### Other mandatory policy elements
+- **Mandatory training:** KCS People + Mastercard ("train staff and associates regularly") + USAID (training materials in HR file) all require safeguarding training as a condition of working with children. Make completion a contractual condition precedent to field deployment.
+- **Reporting obligations:** a clear, locally appropriate reporting/response process (KCS Standard 3), a duty on every worker to report suspicions (IASC Principle 5), and a defined external timeline (Mastercard's 72 hours; USAID's disclosure obligations).
+- **"Do no harm" / survivor-centred response:** funders frame response as confidential, constructive and **survivor-centred** (Mastercard's stated process). Build this language into the policy.
+- **Designated focal point:** name a safeguarding focal point at director level (KCS Standard 2).
+
+---
+
+## D. What funders REQUIRE in safeguarding due diligence before they fund
+
+**Mastercard Foundation** (most explicit and most relevant to an African education startup): It "will collaborate with the prospective partner organization to conduct a high-level due diligence process that will review the partner organization's governance, conflict of interest, **child and youth safeguarding policies**, and audited financial statements." At proposal stage it runs deeper due diligence via a detailed organizational questionnaire covering operational/financial capacity, program risks and compliance risks. Its safeguarding standard for partners mirrors KCS's four pillars:
+- **Policy:** maintain a safeguarding policy outlining commitments to preventing harm, how concerns will be responded to, and behaviour expectations for staff and participants.
+- **People:** safe recruitment and vetting practices; clearly defined safeguarding roles/focal points; regular training of staff and associates.
+- **Procedures:** incident reporting/response; risk assessments; **processes to manage data, images and digital engagement**, and to plan safe events/digital sessions/interactions with participants.
+- **Accountability:** monitor progress against commitments; ensure sub-partners/sub-contractors follow safeguarding measures; regularly review and update.
+- **Reporting:** **serious concerns reported within 72 hours**; the Foundation follows a confidential, constructive, survivor-centred process.
+(https://mastercardfdn.org/en/safeguarding-for-program-partners-and-implementers; https://mastercardfdn.org/en/program-development-guide/)
+
+**Gates Foundation:** before a grant is awarded the Foundation conducts due diligence "to ensure that the applicant is capable of carrying out the project, safeguarding grant funds and reporting accurately," plus confirms tax-exempt status, structures the partnership, and assesses risk. (https://www.gatesfoundation.org/about/how-we-work; https://docs.gatesfoundation.org/documents/expenditure-responsibility-guidelines.pdf)
+
+**UNICEF / Education Cannot Wait:** as part of grant approval QA, **all prospective grantees must specify in their applications how they manage risks of harm to children, vulnerable adults and the environment**; civil-society partners are additionally assessed under a **PSEA assessment framework.** UNICEF defines safeguarding as inclusive of PSEA and anchors it in the SG's Bulletin (ST/SGB/2003/13) and the IASC Six Core Principles. (https://www.educationcannotwait.org/about-us/accountability; https://www.unicef.org/media/171641/file/UNICEF_Policy_on_%20Safeguarding_June%202025.pdf.pdf)
+
+**World Bank:** the **Environmental and Social Framework (ESF)** applies to all Investment Project Financing since 1 Oct 2018 and is the Bank's vehicle for addressing **SEA/SH (sexual exploitation, abuse, and sexual harassment).** Risks are managed across the whole project lifecycle; mitigation is documented in the **Environmental and Social Commitment Plan (ESCP)**, part of the legal agreement. Procurement requirements assess bidders'/contractors' competence to meet SEA/SH obligations and embed those obligations in contract conditions; the ESF requires **grievance mechanisms** for both workers and the public, with measures to prevent harassment/intimidation/exploitation. Relevant standards: ESS1, ESS2, ESS4, ESS5, ESS7, ESS10. (https://thedocs.worldbank.org/en/doc/.../ESF-Good-Practice-Note-on-Addressing-SEA-SH...pdf; https://www.worldbank.org/en/projects-operations/products-and-services/brief/prevention-of-gender-based-violence-contractor-accountability-and-disqualification)
+
+**USAID-type donors:** require partners to hold publicly available safeguarding standards prohibiting exploitation/sexual abuse/child abuse/neglect; signed codes of conduct per employee; flow-down to subawardees/subcontractors; a compliance plan; and mandatory disclosure/reporting of violations (ADS 303; AIDAR 752.7037 and new 752.222-7x). (https://www.federalregister.gov/documents/2024/02/28/2024-03848/...; https://2017-2020.usaid.gov/PreventingSexualMisconduct/Partners/Child-Safeguarding/Best-Practices)
+
+**Common denominator across all funders (the de-facto checklist):** (1) a written, board-approved safeguarding/PSEA policy; (2) embedded IASC Six Core Principles / code of conduct signed by every worker; (3) safe recruitment + vetting (including criminal checks); (4) mandatory training; (5) named focal point(s); (6) a reporting/response mechanism with a defined timeline and survivor-centred handling; (7) flow-down to sub-partners; (8) data/image-handling procedures; (9) monitoring + periodic external review.
+
+---
+
+## E. Data protection / child data handling in fieldwork (Nigeria NDPA 2023)
+
+The **Nigeria Data Protection Act 2023 (NDPA)** directly governs the assessment data your coordinator will collect from children:
+- **Child = under 18** (raised to align with the Child Rights Act; previously 13 under earlier frameworks). (https://fpf.org/blog/nigerias-new-data-protection-act-explained/; https://www.aluko-oyebode.com/insights/child-data-protection-in-nigeria/)
+- **Explicit parental/guardian consent required** to process a child's personal data, with **consent-verification mechanisms** and **age-verification mechanisms where feasible** (government-issued ID is deemed acceptable). (https://fpf.org/...)
+- **Exceptions** allow processing without parental consent where necessary to protect the child's vital interests; **for purposes of education**, medical or social care undertaken by/under a professional owing a duty of confidentiality; or for court proceedings. (The "education" exception exists but is narrow — do not rely on it as a substitute for parental consent in a recruit/assess/publish pipeline.) (https://fpf.org/...)
+- **Lawful bases (six):** consent; contract performance; legal obligation; vital interests; public-interest/official authority; legitimate interests. (https://fpf.org/...)
+- **Security obligations:** controllers/processors must implement security measures (pseudonymization, encryption, periodic risk assessments), proportionate to data sensitivity and retention period. (https://fpf.org/...)
+- **Breach notification:** notify the Commission within **72 hours** where the breach likely risks data subjects' rights; notify affected data subjects without undue delay in plain language. (https://fpf.org/...)
+- **Other obligations:** registration if the entity is of "major importance," appointing a Data Protection Officer (for major-importance entities), Data Protection Impact Assessments for high-risk processing, pre-collection transparency notices, and written agreements ensuring processor compliance. (https://fpf.org/...)
+- **Data-subject rights** include access, correction/erasure, restriction, objection, portability, and withdrawal of consent at any time. (https://fpf.org/...)
+
+**Contract implications:** the coordinator must (a) obtain documented parental/guardian consent (ideally with ID-based verification) before assessing any child; (b) collect only the minimum data needed (data minimization); (c) handle/store assessment data securely (encryption, no unsecured personal devices, no posting children's images or data); (d) follow a breach-escalation path; and (e) be bound by confidentiality. Mastercard's safeguarding standard separately requires "processes to manage data, images, and digital engagement" — so this is both a legal and a funder requirement.
+
+---
+
+## F. Ethics of administering assessments to children (consent, assent, IRB/RCT)
+
+If E4E's pilot may be published as research/RCT (which is plausible given the TaRL/J-PAL evidence-base ambition), the assessment work crosses into human-subjects research and triggers ethics-review obligations:
+
+- **Dual requirement — parental consent AND child assent:** ethics guidelines recommend that **parents (or another proxy) provide legal consent**, while **children are involved through providing assent**. (https://pmc.ncbi.nlm.nih.gov/articles/PMC3973992/; https://bmcmedethics.biomedcentral.com/articles/10.1186/1472-6939-15-22)
+- **IRB/ethics-board duty on assent:** under the US Common Rule framing (45 CFR / 21 CFR Part 50), "the IRB must determine that adequate provisions are made for soliciting the assent of the children," and the local ethics committee should set a minimum age of consent and the types of studies children below the age of majority may consent to. (https://pmc.ncbi.nlm.nih.gov/articles/PMC6307601/)
+- **Competence-based consent:** children judged competent (able to understand, retain, weigh information and decide) may consent for themselves — but in practice for primary-age children you use parental consent + child assent. (https://bmcmedethics.biomedcentral.com/articles/10.1186/1472-6939-15-22)
+- **Low-income-setting challenges to plan for:** high illiteracy, less-common languages, and cultural variation in how assent is understood mean consent/assent must be delivered orally, in the local language (Yoruba/Nigerian Pidgin as relevant), and adapted — not a one-page English form. (https://pmc.ncbi.nlm.nih.gov/articles/PMC6307601/; https://link.springer.com/article/10.1186/s12910-019-0369-7)
+
+**Practical implication:** if results may be published, get **ethics-board / IRB approval before data collection** (a Nigerian institutional ethics committee or the National Health Research Ethics Committee equivalent for behavioural research), use **written informed parental consent + documented child assent**, deliver both in the local language, and pre-register/structure the assessment as research from the outset. Even if you don't publish, the consent + assent + ethics-review posture is the safest baseline and aligns with both the safeguarding "do no harm" principle and funder expectations.
+
+---
+
+## Bottom line — what to put in the Regional Coordinator contract & policy
+
+1. **Job scope:** school recruitment + parent engagement + materials distribution + standardized one-on-one assessment, with quantified targets and a defined supervisor/reporting line (1AF + Bridge + ASER model).
+2. **Condition-precedent vetting:** fresh Nigerian Police Character Certificate (within ~3 months, via POSSAP), reference checks, signed code of conduct, completed safeguarding training — all before field deployment.
+3. **Code of conduct** embedding the IASC Six Core Principles, with the "sexual activity with under-18s is prohibited regardless of local consent age" clause and mandatory-reporting duty.
+4. **No-one-alone-with-a-child** control (ASER pairing / guardian or teacher present) and child-friendly conduct as an explicit requirement.
+5. **Reporting:** duty to report all safeguarding concerns immediately to a named focal point; serious concerns escalated within 72 hours (Mastercard standard); survivor-centred, confidential handling; "do no harm."
+6. **Data protection (NDPA):** documented parental/guardian consent with ID verification before assessing any child; data minimization; secure storage/encryption; confidentiality; no posting of children's data/images; breach escalation.
+7. **Research ethics (if publishing):** ethics-board/IRB approval before collection; parental consent + child assent in local language.
+8. **Org-level:** a board-approved safeguarding/PSEA policy across the four KCS pillars (Policy/People/Procedures/Accountability), a named director-level focal point, sub-partner flow-down, and a commitment to periodic review (external every ~3 years) — this is the package every major funder's due diligence (Mastercard, Gates, UNICEF, World Bank, USAID) screens for.
+
+**Key sources:** KCS Standards (keepingchildrensafe.global); IASC Six Core Principles (psea.interagencystandingcommittee.org); Mastercard Foundation safeguarding (mastercardfdn.org); UNICEF Safeguarding Policy June 2025 (unicef.org); World Bank ESF SEA/SH GPN (worldbank.org); USAID child safeguarding (usaid.gov / federalregister.gov); Nigeria PCC (npf.gov.ng / possap.gov.ng); NDPA 2023 (fpf.org / cert.gov.ng); One Acre Fund (oneacrefund.org); Pratham/TaRL/J-PAL (pratham.org, povertyactionlab.org); ASER training (asercentre.org); pediatric research ethics (PMC/BMC Medical Ethics).
+
+One gap worth flagging: I could not retrieve the verbatim Bridge "Community Engagement Associate" JD (LinkedIn 404, recruitment portal gated) or exact 1AF field-officer salary figures — those would need a direct portal pull if you want line-item benchmarks for pay and duties.
+agentId: a9b5f33e6b4e30585 (use SendMessage with to: 'a9b5f33e6b4e30585' to continue this agent)
+<usage>subagent_tokens: 62303
+tool_uses: 23
+duration_ms: 317257</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

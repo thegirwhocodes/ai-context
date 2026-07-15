@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Nigeria economic site:nber.org OR site:repec.org OR site:ssr
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:29:04 UTC
+========================================================================
+
+Search query: "synthetic control" Nigeria economic site:nber.org OR site:repec.org OR site:ssrn.com
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Nigeria economic site:nber.org OR site:repec.org OR site:ssrn.com"
+
+Links: [{"title":"The impact of export restrictions on production: a synthetic control approach","url":"https://ideas.repec.org/p/ehl/lserod/123307.html"},{"title":"The Impact of Restrictions to Export on Production: A synthetic controls approach","url":"https://ideas.repec.org/p/sad/wpaper/124.html"},{"title":"Synthetic Control Method: A tool for comparative case studies in economic history","url":"https://ideas.repec.org/a/bla/jecsur/v37y2023i2p409-445.html"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, and ...","url":"https://conference.nber.org/confer/2021/SI2021/Abadie_2021.pdf"},{"title":"The Economic Costs of Diplomatic Conflict","url":"https://ideas.repec.org/p/bok/wpaper/2025.html"},{"title":"Assessing Economic Liberalization Episodes: A Synthetic Control Approach","url":"https://ideas.repec.org/a/tpr/restat/v95y2013i3p983-1001.html"},{"title":"Synthetic Control Estimator: A Tool for Comparative Case Studies in Economic History by David Gilchrist, Thomas Emery, Nuno Garoupa, Rok Spruk :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560757"},{"title":"Does inflation targeting matter for international trade? A synthetic control analysis","url":"https://ideas.repec.org/a/spr/empeco/v63y2022i5d10.1007_s00181-022-02221-9.html"},{"title":"Synthetic Control Methods For Comparative Case Studies","url":"https://www.nber.org/system/files/working_papers/w12831/w12831.pdf"},{"title":"Effects of payments for watershed services policy on economic growth: a case study based on the synthetic control method","url":"https://ideas.repec.org/a/spr/endesu/v23y2021i2d10.1007_s10668-020-00699-w.html"}]
+
+I've completed the web search for "synthetic control" Nigeria economic studies. The search returned academic papers from REPEC and SSRN repositories that discuss synthetic control methods and their applications to economic analysis.
+
+Here are the key findings from the search results:
+
+## Overview of Results
+
+The Synthetic Control Method (SCM) has become a widely used tool in both identifying and estimating the causal impact of policies, shocks, and interventions of interest on economic and social outcomes.
+
+## Relevant Studies Found
+
+Several academic papers were identified in the search results:
+
+1. **General Methodology Papers**: "Synthetic Control Method: A tool for comparative case studies in economic history," was published in the Journal of Economic Surveys in April 2023.
+
+2. **Economic Liberalization Study**: One study used the synthetic control method to investigate the impact of economic liberalization on real GDP per capita in a worldwide sample of countries, finding that liberalizing the economy had a positive effect in most regions, but more recent liberalizations, in the 1990s and mainly in Africa, had no significant impact.
+
+3. **Nigeria-Specific Reference**: "Optimal Tariffs with Smuggling: A Spatial Analysis of Nigerian Rice Policy Options" was presented at the 2015 International Association of Agricultural Economists Conference.
+
+The search results show that while synthetic control methods are widely applied to economic analysis, the specific combination of "synthetic control" with "Nigeria economic" studies in these repositories is limited, with most Nigeria-related content focusing on agricultural policy rather than broader economic applications.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

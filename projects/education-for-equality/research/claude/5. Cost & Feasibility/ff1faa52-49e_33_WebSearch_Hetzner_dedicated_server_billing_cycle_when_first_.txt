@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner dedicated server billing cycle when first invoice charged 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 03:06:24 UTC
+========================================================================
+
+Search query: Hetzner dedicated server billing cycle when first invoice charged 2026
+
+----------------------------------------
+
+Web search results for query: "Hetzner dedicated server billing cycle when first invoice charged 2026"
+
+Links: [{"title":"Billing system at Hetzner - Hetzner Docs","url":"https://docs.hetzner.com/general/billing-and-account-management/billing-at-hetzner/billing-system-hetzner/"},{"title":"FAQ - Hetzner Docs","url":"https://docs.hetzner.com/cloud/billing/faq/"},{"title":"Payment Overview - Hetzner Docs","url":"https://docs.hetzner.com/general/billing-and-account-management/billing-at-hetzner/payment-overview/"},{"title":"Hetzner billing cycle — LowEndTalk","url":"https://lowendtalk.com/discussion/166095/hetzner-billing-cycle"},{"title":"Billing - Hetzner Docs","url":"https://docs.hetzner.com/cloud/billing/"},{"title":"Changes to billing system for October 2024 - Hetzner Docs","url":"https://docs.hetzner.com/general/others/changes-to-billing-system-for-october-2024/"},{"title":"How to Get Hetzner Invoices and Receipts | Updated for 2026","url":"https://tailride.so/from/hetzner"},{"title":"Invoicing - Hetzner Docs","url":"https://docs.hetzner.com/konsoleh/general/administration/billing/"},{"title":"Hetzner Invoices for 2 months (AX51) — LowEndTalk","url":"https://lowendtalk.com/discussion/173549/hetzner-invoices-for-2-months-ax51"},{"title":"Hetzner billing model change — LowEndSpirit","url":"https://lowendspirit.com/discussion/7432/hetzner-billing-model-change"}]
+
+Based on the search results, here's what I found about Hetzner dedicated server billing cycles and when the first invoice is charged:
+
+## First Invoice Timing
+
+Billing begins when Hetzner gives you access to a product. For dedicated servers specifically, you will receive the invoice in the billing month AFTER you use the product.
+
+## Retro-Active Billing
+
+Hetzner uses pro-rated billing where you pay AFTER you use the services. More specifically, each invoice contains the services for the entire previous month.
+
+## Invoice Generation Schedule
+
+Since April 2024, Hetzner sends out invoices throughout the month to even out the total volume of invoices and provide faster response times to billing support requests. The system automatically picks the specified invoice date; you cannot pick a date of your choice.
+
+## Payment Terms
+
+Invoices are due immediately, and you must pay within five days for your first invoice or within ten days for all following invoices.
+
+The key takeaway is that Hetzner's billing is retroactive, so you'll be invoiced in the month following your service usage, with the specific invoice date depending on your account's automatically assigned billing day.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

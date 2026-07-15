@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://upperlink.ng/telecoms/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:31:51 UTC
+========================================================================
+
+URL: https://upperlink.ng/telecoms/
+Extraction prompt: Extract ALL details about Upperlink's telecom services. Do they offer USSD push / network-initiated USSD? Do they have direct MNO gateway access? What USSD capabilities do they have? Do they serve banks with OTP push? Any mention of NI-USSD, MT-USSD, USSD during calls?
+
+----------------------------------------
+
+# Upperlink Telecoms - USSD & Telecom Capabilities
+
+Based on the webpage content provided, here's what's documented about their telecom services:
+
+## Confirmed Capabilities
+
+**General Service Scope:**
+"Access to FinTech and VAS Applications from Telcos via sms, voice, USSD, web/internet bearers" is mentioned as their primary function.
+
+**Testing Infrastructure:**
+They offer a "Sandbox Service: Test platform for USSD, sms applications," indicating USSD application support exists.
+
+**Service Offerings:**
+- Deployment of Fintech & VAS Services
+- Platform As A Service – Telecoms connectivity services
+- Bulk SMS capabilities
+- Government VAS Services deployment
+
+## Not Specified in Content
+
+The webpage does **not explicitly detail**:
+- Whether they offer USSD push (network-initiated/NI-USSD) specifically
+- Direct MNO gateway access arrangements
+- MT-USSD (Mobile Terminated) capabilities
+- USSD during calls functionality
+- Bank OTP push services
+
+## Notable Detail
+
+The content mentions they have "signed business MoU with VAS Aggregators, to integrate to the Telcom networks through our VPN integration with any Aggregator," suggesting they work through aggregator channels rather than direct MNO connections, but this isn't explicitly confirmed.
+
+**Recommendation:** Contact their developer team or sales for specific technical specifications on USSD variants and banking integrations.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

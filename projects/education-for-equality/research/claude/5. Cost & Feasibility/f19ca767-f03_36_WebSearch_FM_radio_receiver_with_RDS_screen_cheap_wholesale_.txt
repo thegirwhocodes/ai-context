@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: FM radio receiver with RDS screen cheap wholesale cost manufacturing
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 04:19:30 UTC
+========================================================================
+
+Search query: FM radio receiver with RDS screen cheap wholesale cost manufacturing
+
+----------------------------------------
+
+Web search results for query: "FM radio receiver with RDS screen cheap wholesale cost manufacturing"
+
+Links: [{"title":"Adafruit Stereo FM Transmitter with RDS/RBDS Breakout - Si4713 : Adafruit Industries, Unique & fun DIY electronics and kits","url":"https://www.adafruit.com/product/1958"},{"title":"Remote Controlled Stereo FM Radio With RDS Using ESP ...","url":"https://www.electronicsforu.com/electronics-projects/diy-stereo-fm-radio"},{"title":"FM Radio Receiver DIY Kit with Display and RDS (26967)","url":"https://www.universal-solder.ca/product/fm-radio-receiver-diy-kit-with-display-and-rds/"},{"title":"RDS and Stereo Coder Integrated For FM Broadcasting","url":"https://www.aareff.com/en/kits-and-modules/rds-and-fm-stereo-coder/"},{"title":"Radio Data System - Wikipedia","url":"https://en.wikipedia.org/wiki/Radio_Data_System"},{"title":"RDS Encoders for FM radio - ABC of FM AM DAB+ DRM radio transmitters","url":"https://www.pcs-electronics.com/product-category/rds-encoders/"},{"title":"Portable RDS Radios for sale | eBay","url":"https://www.ebay.com/b/Portable-RDS-Radios/96954/bn_1649483"},{"title":"GitHub - thomastech/PixelRadio: PixelRadio is a FM Radio Transmitter with RDS (Radio Data System) capabilities. It was developed for holiday \"Pixel\" displays and house projection installations. · GitHub","url":"https://github.com/thomastech/PixelRadio"},{"title":"fm transmitter rds products for sale | eBay","url":"https://www.ebay.com/b/fm-transmitter-rds/bn_7024763225"},{"title":"RDS Encoders and Decoders for Broadcast, Podcast, Streaming, Audio Studios, Radio Stations","url":"https://bswusa.com/shop-by-category/rds-encoders-and-decoders/"}]
+
+Based on the search results, here's what I found about FM radio receivers with RDS and screens:
+
+## DIY Kits and Affordable Options
+
+There are FM radio receiver DIY kits available with LCD displays based on the RDA5807 chip that include an LED VU-meter and built-in amplifier with speaker. The frequency is shown on a blue backlit 1602 LCD screen.
+
+## Design Approaches
+
+An affordable and portable battery-operated IR remote controlled stereo FM radio with RDS message display can be designed using modules like the ESP-01, which provides a cost-effective alternative. Such designs typically comprise components including a voltage regulator, FM stereo module like the RDA5807M FM stereo module, an IR remote receiver, and an OLED display like the SSD1306.
+
+## RDS Technology Overview
+
+Radio Data System (RDS) is a communications protocol standard for embedding small amounts of digital information in conventional FM radio broadcasts, standardizing information such as time, station identification and program information.
+
+The search results show various options ranging from complete DIY kits to component-based solutions for building affordable FM receivers with RDS display capabilities. For wholesale/manufacturing cost details specific to bulk production, the search results don't provide detailed pricing information, but they do indicate that RDA5807M modules and simple OLED/LCD displays are the typical components used in budget-friendly designs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

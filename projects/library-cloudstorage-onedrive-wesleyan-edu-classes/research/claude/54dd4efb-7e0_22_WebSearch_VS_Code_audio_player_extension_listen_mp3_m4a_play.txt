@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: VS Code audio player extension listen mp3 m4a playback
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 05:48:43 UTC
+========================================================================
+
+Search query: VS Code audio player extension listen mp3 m4a playback
+
+----------------------------------------
+
+Web search results for query: "VS Code audio player extension listen mp3 m4a playback"
+
+Links: [{"title":"VS Code Music Player Extension","url":"https://marketplace.visualstudio.com/items?itemName=MedamKowsik.vs-music-player"},{"title":"audio-preview - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=sukumo28.wav-preview"},{"title":"GitHub - sukumo28/vscode-audio-preview: VS Code extension that allows you to preview and play audio files.","url":"https://github.com/sukumo28/vscode-audio-preview"},{"title":"Media Player - Visual Studio Code Extension","url":"https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-media-player"},{"title":"vscode-audio-preview/package.json at main · sukumo28/vscode-audio-preview","url":"https://github.com/sukumo28/vscode-audio-preview/blob/main/package.json"},{"title":"Mediaplayer - Visual Studio Code","url":"https://marketplace.visualstudio.com/items?itemName=sirkane.vscode-mediaplayer"},{"title":"MusicPlayer - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=magicalcosmos.music-player"},{"title":"vscode-gmusic - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=nbdeg.vscode-gmusic"},{"title":"GitHub - swdotcom/swdc-vscode-musictime: A VS Code extension to discover the most productive music to listen to as you code","url":"https://github.com/swdotcom/swdc-vscode-musictime"},{"title":"GitHub - sir-kain/vscode-mediaplayer: Mediaplayer extention for VS Code","url":"https://github.com/sir-kain/vscode-mediaplayer"}]
+
+Based on the search results, here are several VS Code audio player extensions that support mp3 and m4a playback:
+
+## Audio Preview Extension (Recommended)
+
+The audio-preview extension allows you to play and preview audio files in VS Code, supporting wav, mp3, ogg, aac, flac, and more. It specifically supports audio files including wav, mp3, aac, ogg, flac, opus, and m4a. This extension is available on the Visual Studio Marketplace under the name `sukumo28.wav-preview`.
+
+## Other Audio Player Extensions
+
+1. **VS Music Player** - An extension that allows coders to enjoy music directly in VS Code instead of using another app
+
+2. **Media Player** - An extension to control media players like Spotify or VLC directly from the editor
+
+3. **Mediaplayer** - An extension that allows you to code by listening to sounds inside VS Code, supporting podcasts and YouTube
+
+The audio-preview extension appears to be the most straightforward option if you specifically need to play mp3 and m4a files directly within VS Code.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

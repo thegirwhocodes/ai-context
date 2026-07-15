@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: CorrNet+ sign language recognition fine-tune custom dataset tutorial 2026
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 06:31:08 UTC
+========================================================================
+
+Search query: CorrNet+ sign language recognition fine-tune custom dataset tutorial 2026
+
+----------------------------------------
+
+Web search results for query: "CorrNet+ sign language recognition fine-tune custom dataset tutorial 2026"
+
+Links: [{"title":"GitHub - hulianyuyy/CorrNet: Continuous Sign Language Recognition with Correlation Network (CVPR 2023) · GitHub","url":"https://github.com/hulianyuyy/CorrNet"},{"title":"GitHub - hulianyuyy/CorrNet_Plus: CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation","url":"https://github.com/hulianyuyy/CorrNet_Plus"},{"title":"CorrNet_Plus/README.md at main · hulianyuyy/CorrNet_Plus","url":"https://github.com/hulianyuyy/CorrNet_Plus/blob/main/README.md"},{"title":"CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation","url":"https://arxiv.org/html/2404.11111v1"},{"title":"[2404.11111] CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation","url":"https://arxiv.org/abs/2404.11111"},{"title":"CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation | alphaXiv","url":"https://www.alphaxiv.org/abs/2404.11111v1"},{"title":"Continuous Sign Language Recognition with Correlation Network","url":"https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_Continuous_Sign_Language_Recognition_With_Correlation_Network_CVPR_2023_paper.pdf"},{"title":"CorrNet+: Sign Language Recognition and Translation via Spatial-Temporal Correlation - ADS","url":"https://ui.adsabs.harvard.edu/abs/2024arXiv240411111H/abstract"},{"title":"CorrNet+: Sign Language Recognition and Translation via ...","url":"https://arxiv.org/pdf/2404.11111"},{"title":"GitHub - hotfinda/TCNet: The pytorch implementation of our AAAI paper TCNet: Continuous Sign Language Recognition from Trajectories and Correlated Regions","url":"https://github.com/hotfinda/TCNet"}]
+
+Based on the web search results, here's what I found about CorrNet+ for sign language recognition:
+
+## CorrNet+ Overview
+
+CorrNet+ is an unified model with superior performance on both continuous sign language recognition and sign language translation tasks by using only RGB inputs. CorrNet+ explicitly identifies body trajectories across multiple frames by employing a correlation module and an identification module to build human body trajectories.
+
+## Performance
+
+On the continuous sign language cognition task, CorrNet+ achieves superior performance on PHOENIX14, PHOENIX14-T, CSL-Daily and CSL datasets. CorrNet+ surpasses previous methods equipped with resource-intensive pose-estimation networks or pre-extracted heatmaps for hand and facial feature extraction, and compared with CorrNet, achieves a significant performance boost across all benchmarks while halving the computational overhead.
+
+## Code and Resources
+
+Code is available at https://github.com/hulianyuyy/CorrNet_Plus. An update on 2025/01/28 released a demo for Continuous sign language recognition that supports multi-images and video inputs.
+
+Unfortunately, the search results don't contain a specific tutorial for fine-tuning CorrNet+ on custom datasets from 2026. The GitHub repository would be your best resource for implementation details and instructions on adapting the model to custom datasets.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

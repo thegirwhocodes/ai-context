@@ -1,0 +1,46 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://infotekps.com/ussd.html
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:32:33 UTC
+========================================================================
+
+URL: https://infotekps.com/ussd.html
+Extraction prompt: Extract ALL details about InfoTek's USSD services. Do they offer USSD push / network-initiated? Dedicated vs shared codes? Pricing? Direct MNO access? Any technical capabilities mentioned?
+
+----------------------------------------
+
+# InfoTek USSD Services Summary
+
+## Service Types
+InfoTek offers both **dedicated and shared USSD solutions**:
+- Dedicated codes: Clients obtain approval from NCC, then InfoTek integrates into all four GSM networks
+- Shared codes: "We have available codes that can be leased. Contact us for leasing details."
+
+## Push/Pull Capabilities
+The company supports both directions: "The initiation of the communication can either be USSD-PUSH (Mobile Terminated & Provider Originated) or a USSD-PULL"
+
+## Pricing Structure
+Costs include:
+- Code setup fee (all 4 networks)
+- Leasing fees (for shared codes)
+- VPN/SMPP/server/gateway configuration
+- Per-network integration costs
+- API/routing fees
+- Annual telecom support
+- Custom app development
+
+**Reverse billing pricing**: Sessions billed per second; volume-based rates require direct contact ("Please Call")
+
+## Technical Capabilities
+- Real-time, session-oriented protocol with 182-character message limit
+- HTTP API connection between gateway and applications
+- Compatible with feature and smartphones
+- No internet required for end users
+- Faster than SMS with near-instant delivery
+
+## Direct MNO Access
+The page doesn't explicitly state direct MNO relationships; instead, integration occurs "into all four (4) GSM network" after client obtains NCC approval.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

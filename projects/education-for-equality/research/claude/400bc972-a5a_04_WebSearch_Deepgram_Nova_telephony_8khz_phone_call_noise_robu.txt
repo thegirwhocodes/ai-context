@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Deepgram Nova telephony 8khz phone call noise robustness benchmark independent
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:34:39 UTC
+========================================================================
+
+Search query: Deepgram Nova telephony 8khz phone call noise robustness benchmark independent
+
+----------------------------------------
+
+Web search results for query: "Deepgram Nova telephony 8khz phone call noise robustness benchmark independent"
+
+Links: [{"title":"Noise-Robust Speech Recognition Techniques: Benchmark to Production Guide","url":"https://deepgram.com/learn/noise-robust-speech-recognition-techniques"},{"title":"Best Transcription APIs for Developers 2026 (12 Tested) | VexaScribe","url":"https://novascribe.ai/compare/best-transcription-api-for-developers"},{"title":"Speech-to-Text API Benchmarks: Accuracy, Speed, and Cost Compared","url":"https://deepgram.com/learn/speech-to-text-benchmarks"},{"title":"Best Speech to Text Models 2026: Real-Time Agent Comparison","url":"https://nextlevel.ai/best-speech-to-text-models/"},{"title":"Noise-Robust Speech Recognition: 2025 Methods & Best Practices","url":"https://deepgram.com/learn/noise-robust-speech-recognition-methods-best-practices"},{"title":"Speech Recognition in 2026: Whisper vs Gemini vs AssemblyAI vs Deepgram | CodeSOTA | CodeSOTA","url":"https://www.codesota.com/guides/speech-recognition"},{"title":"Introducing Nova-3: Setting a New Standard for AI-Driven Speech-to-Text","url":"https://deepgram.com/learn/introducing-nova-3-speech-to-text-api"},{"title":"Handling 8khz audio originating from a phone · deepgram · Discussion #973","url":"https://github.com/orgs/deepgram/discussions/973"},{"title":"Introducing Nova-2: The Fastest, Most Accurate Speech-to-Text API","url":"https://deepgram.com/learn/nova-2-speech-to-text-api"}]
+
+Based on the search results, here's what I found regarding Deepgram Nova's telephony performance at 8kHz with noise robustness benchmarks:
+
+## Telephony-Specific Performance
+
+Narrowband telephony at 8 kHz sampling adds another 8-12% absolute WER degradation compared to wideband audio. This represents a significant challenge for any speech recognition system operating at this sample rate.
+
+## Independent Benchmark Results
+
+Deepgram Nova-3 (purpose-built on contact-center data), AssemblyAI Universal-1, and Speechmatics Enhanced consistently outperform Whisper on 8kHz telephony audio with noise and overlap. Additionally, for call centers specifically, Deepgram's Nova-3 phonecall model is the standard pick.
+
+## Overall Accuracy in Production
+
+Deepgram Nova-3 achieves a median WER of 6.84% on streaming audio and 5.26% on batch audio across 2,703 production audio files spanning nine domains (medical, finance, drive-thru, ATC, voicemail, and more).
+
+## Noise Robustness Training
+
+Deepgram's Nova-3 model delivers 90%+ accuracy in challenging acoustic conditions with sub-300ms latency, trained specifically on production audio scenarios including background noise, accents, and overlapping speakers.
+
+The search results show that independent evaluations confirm Deepgram Nova-3's strong performance on 8kHz telephony audio with noise, particularly compared to competitors like Whisper.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.khi.org/articles/variations-in-internet-access-across-kansas/
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-19 15:09:08 UTC
+========================================================================
+
+URL: https://www.khi.org/articles/variations-in-internet-access-across-kansas/
+Extraction prompt: Extract the broadband gap percentage for EVERY Kansas county mentioned. I need a complete table of county name and the % of households without high-speed internet or the broadband gap percentage. List all counties you can find with their specific numbers.
+
+----------------------------------------
+
+# Kansas Internet Access Data by County
+
+Based on my review of the article, **no specific county-level broadband gap percentages are provided**. The document presents data only at regional levels, not individual counties.
+
+## Available Regional Data
+
+The article identifies these regions with inadequate internet access rates:
+
+- **Flint Hills region**: 46.4% lacked adequate access
+- **Southeast Johnson County**: 7.7% lacked adequate access
+- **Topeka**: 25.2% lacked both device and high-speed internet
+- **Wyandotte County**: 6.7% lacked high-speed internet (without device)
+- **Southwest Kansas**: 6.7% lacked high-speed internet (without device)
+- **Brown, Jackson, Osage, Shawnee (excluding Topeka), and Wabaunsee counties combined**: 33.6% had device but lacked high-speed internet
+
+## Overall State Finding
+
+"Three in 10 (29.8 percent or 884,700) Kansans did not have adequate internet access."
+
+The article uses regional groupings rather than county-by-county breakdowns, making a complete county-level table impossible from this source.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

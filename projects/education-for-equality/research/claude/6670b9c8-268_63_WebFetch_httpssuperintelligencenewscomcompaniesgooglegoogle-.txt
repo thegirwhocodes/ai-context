@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://superintelligencenews.com/companies/google/google-signgemma-ai-model/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:28 UTC
+========================================================================
+
+URL: https://superintelligencenews.com/companies/google/google-signgemma-ai-model/
+Extraction prompt: Extract ALL technical details about SignGemma: architecture specifics, model size, how the vision transformer works, what facial expressions and motion features it captures, training methodology, accuracy benchmarks, latency numbers, deployment details, TFLite package details. Every technical detail.
+
+----------------------------------------
+
+# SignGemma Technical Details Analysis
+
+Based on the provided article, here are the technical specifics disclosed:
+
+## Architecture Foundation
+SignGemma is "built atop **Google's Gemini Nano framework**" and leverages compact, on-device processing capabilities.
+
+## Core Components
+The system combines two key AI elements:
+- **Vision Transformer**: Processes visual input including "**hand shapes, facial expressions, and motion**"
+- **Language Model**: Generates corresponding English text or synthesized speech output
+
+## Training Data
+The model was trained using "**more than 10,000 hours of annotated American Sign Language (ASL) video**" paired with English transcripts.
+
+## Performance Metrics
+Google reports "**translation speeds under 200 milliseconds**" on select devices, though the article notes "**independent verification of these performance claims is still pending**."
+
+## Deployment
+- Operates on smartphones, tablets, and laptops
+- Processes data locally without cloud dependency
+- Available through TensorFlow Lite package in developer preview
+- Includes sample integration code on GitHub and hosted API access
+
+## Limitations Acknowledged
+Known constraints include lower performance in poor lighting conditions and challenges with regional sign variations and non-manual markers.
+
+**Note:** The article provides limited granular technical details. Specific model size, layer counts, parameter numbers, and detailed accuracy benchmarks are not disclosed in this source material.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigerian speech to text STT startup Yoruba Hausa Igbo Pidgin accurate ASR 2025 2
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:04 UTC
+========================================================================
+
+Search query: Nigerian speech to text STT startup Yoruba Hausa Igbo Pidgin accurate ASR 2025 2026
+
+----------------------------------------
+
+Web search results for query: "Nigerian speech to text STT startup Yoruba Hausa Igbo Pidgin accurate ASR 2025 2026"
+
+Links: [{"title":"Inside YarnGPT: The text-to-speech model built for Nigerian languages","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"Yorùbá Text-to-Speech","url":"https://www.ttsyoruba.com/"},{"title":"NeurIPS Accent-Aware Text-to-Speech for Nigerian English: Building Inclusive Voice AI from Community-Curated Data","url":"https://neurips.cc/virtual/2025/133733"},{"title":"African & Celtic ST track - IWSLT","url":"https://iwslt.org/2026/african-celtic"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"Fine-Tuning DeepSpeech Speech-To-Text Model for Nigerian English and Yoruba-English Code-Switched Speech","url":"https://journalajrcos.com/index.php/AJRCOS/article/view/737"},{"title":"African languages for AI: the project that’s gathering a huge new dataset","url":"https://www.polity.org.za/article/african-languages-for-ai-the-project-thats-gathering-a-huge-new-dataset-2025-10-17"},{"title":"GitHub - estheroduntan/SPEECH_RECOGNITION_YORUBA: This is a project that deals with the transcription of a local language named Yoruba from the South West, Nigeria, Africa generated in .txt file and transcribed into .wav file for a Text To Speech Task","url":"https://github.com/estheroduntan/SPEECH_RECOGNITION_YORUBA"},{"title":"[2010.11123] Towards End-to-End Training of Automatic Speech Recognition for Nigerian Pidgin","url":"https://arxiv.org/abs/2010.11123"},{"title":"ÌròyìnSpeech: A multi-purpose Yorùbá Speech Corpus","url":"https://arxiv.org/html/2307.16071v2"}]
+
+The search results reveal several initiatives and projects focused on speech recognition and text-to-speech for Nigerian languages in 2025-2026:
+
+## Key Projects and Research
+
+**YarnGPT:** YarnGPT turns text into Nigerian-accented speech in seconds, supporting Igbo, Yoruba, and Hausa, while redefining AI accessibility in Nigeria.
+
+**Academic Research:** Speech-to-Text (STT) systems still struggle with recognizing non-Western English accents and code-switched speech common in Nigeria, with researchers adapting Mozilla's DeepSpeech 0.9.3 model using a custom dataset of 118 minutes. This work was published in 2025.
+
+**Data Collection Initiative:** Through Data Science Nigeria, speech is being collected in five widely spoken languages – Bambara, Hausa, Igbo, Nigerian Pidgin and Yoruba.
+
+**Nigerian Pidgin Research:** A speech recognition system customized for Nigerian Pidgin English achieved a word error rate (WER) of 29.6% on the test set using the Wav2Vec2 XLSR-53 architecture.
+
+**Speech-to-Speech Translation Track:** The IWSLT 2026 African & Celtic track includes official language direction from the three source languages (Hausa, Igbo, Yorùbá) into English.
+
+**Yorùbá Speech Corpus:** The ÌròyìnSpeech corpus was created for Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) tasks, with about 42 hours of speech data recorded by 80 volunteers in-house, and 6 hours on Mozilla Common Voice platform.
+
+These initiatives demonstrate significant progress in developing accurate ASR systems for Nigerian languages in 2025-2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

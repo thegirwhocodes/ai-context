@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.ecfr.gov/reader-aids/ecfr-developer-resources/rest-api-interactive-d
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:51:31 UTC
+========================================================================
+
+URL: https://www.ecfr.gov/reader-aids/ecfr-developer-resources/rest-api-interactive-documentation
+Extraction prompt: Extract the full eCFR REST API endpoint list with parameters. I specifically need: how to fetch full Title 32 XML, all sub-endpoints (versioner, structure, search, admin, agencies, corrections), example URLs, rate limits, auth requirements.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://www.ecfr.gov/reader-aids/ecfr-developer-resources/rest-api-interactive-documentation
+Redirect URL: https://unblock.federalregister.gov/
+Status: 302 Found
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "https://unblock.federalregister.gov/"
+- prompt: "Extract the full eCFR REST API endpoint list with parameters. I specifically need: how to fetch full Title 32 XML, all sub-endpoints (versioner, structure, search, admin, agencies, corrections), example URLs, rate limits, auth requirements."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

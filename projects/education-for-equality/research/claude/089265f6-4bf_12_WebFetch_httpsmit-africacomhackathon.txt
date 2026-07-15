@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mit-africa.com/hackathon/
+Session: 089265f6-4bf8-426a-96dc-cfa234d1df07
+Time: 2026-02-26 19:05:45 UTC
+========================================================================
+
+URL: https://mit-africa.com/hackathon/
+Extraction prompt: Extract ALL details: hackathon theme, dates, deadlines, submission requirements, judging criteria, prizes, format (in-person vs virtual), tracks/categories, what teams need to demo, team size, eligibility, and any other relevant participation details.
+
+----------------------------------------
+
+# Competition - MIT Sloan Africa Business Club
+
+I've reviewed the webpage content provided, but unfortunately, **the page contains primarily styling code and metadata rather than actual event details**. The visible content shows:
+
+- **Page Title:** "Competition - MIT Sloan Africa Business Club"
+- **URL:** https://mit-africa.com/hackathon/
+- **Organization:** MIT Sloan Africa Business Club
+
+## Missing Information
+
+The extracted HTML/CSS does not include the substantive competition details you're seeking, such as:
+
+- Hackathon dates and deadlines
+- Submission requirements and format
+- Judging criteria and evaluation process
+- Prize details
+- Event structure (virtual/in-person)
+- Competition tracks or categories
+- Team composition rules
+- Eligibility requirements
+- Deliverables specifications
+
+## Recommendation
+
+To obtain complete hackathon details, you would need to:
+
+1. **Visit the live website directly** at https://mit-africa.com/hackathon/
+2. **Contact the MIT Sloan Africa Business Club** via their social channels:
+   - Twitter: @mitsloanabc
+   - LinkedIn: MIT Sloan Africa Business Club group
+   - Instagram: @mitsloanabc
+
+The page structure suggests comprehensive event information exists, but it wasn't captured in the technical markup provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

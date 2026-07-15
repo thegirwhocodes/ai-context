@@ -1,0 +1,80 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/hkjarral/Asterisk-AI-Voice-Agent
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:34:04 UTC
+========================================================================
+
+URL: https://github.com/hkjarral/Asterisk-AI-Voice-Agent
+Extraction prompt: Describe the full architecture of this Asterisk AI Voice Agent. How does it connect Asterisk to a Python AI pipeline? What protocols does it use (AGI, ARI, AudioSocket)? What's in the dialplan? How does audio flow? What Docker setup is used?
+
+----------------------------------------
+
+# Asterisk AI Voice Agent Architecture Overview
+
+## Core Connection Model
+
+The system bridges Asterisk/FreePBX to an AI pipeline using **ARI (Asterisk REST Interface)** and **Stasis** dialplan application. When a call enters the `from-ai-agent` context, it's routed to the Stasis app called "asterisk-ai-voice-agent," which hands control to the Python engine running in Docker.
+
+## Transport Protocols
+
+Two transport modes are supported:
+
+1. **AudioSocket** (default) – "Asterisk-native" direct audio streaming between Asterisk and the AI engine
+2. **ExternalMedia RTP** – Legacy RTP-based fallback with file playback robustness
+
+The README notes the system supports "Dual Transport Support: AudioSocket (default in `config/ai-agent.yaml`) and ExternalMedia RTP."
+
+## Dialplan Configuration
+
+A minimal dialplan entry looks like:
+```
+[from-ai-agent]
+exten => s,1,NoOp(Asterisk AI Voice Agent)
+same => n,Set(AI_PROVIDER=google_live)
+same => n,Set(AI_CONTEXT=sales-agent)
+same => n,Stasis(asterisk-ai-voice-agent)
+same => n,Hangup()
+```
+
+Channel variables (`AI_PROVIDER`, `AI_CONTEXT`) allow per-call provider overrides without restarting the engine.
+
+## Audio Flow
+
+1. **Ingress**: Asterisk captures caller audio via AudioSocket
+2. **STT Stage**: Local or cloud speech-to-text converts audio to text
+3. **LLM Stage**: Language model generates contextual response
+4. **TTS Stage**: Text-to-speech produces audio output
+5. **Egress**: Audio streams back to caller (or falls back to file playback if streaming unavailable)
+
+The architecture is "Streaming-First Downstream: Streaming playback when possible, with automatic fallback to file playback for robustness."
+
+## Docker Deployment
+
+The system uses separate containers for modularity:
+
+- **`admin_ui`** – Web dashboard (port 3003) for configuration
+- **`ai_engine`** – Main Python orchestrator (port 15000 health endpoint)
+- **`local_ai_server`** – Optional container for on-premises STT/LLM/TTS backends
+
+Compose files include:
+- `docker-compose.yml` (default cloud-based)
+- `docker-compose.gpu.yml` (NVIDIA GPU overlay for local LLM acceleration)
+- `docker-compose.local-core.yml` (fully local topology)
+
+## Provider Pipeline Architecture
+
+The system implements a "modular pipeline architecture" allowing independent selection of three components:
+
+- **STT providers**: Whisper, Faster-Whisper, Vosk, Deepgram, Google
+- **LLM providers**: OpenAI, Google Live, Deepgram, Ollama, Telnyx
+- **TTS providers**: OpenAI, Google, ElevenLabs, Kokoro, Piper
+
+Six production configurations are pre-built (OpenAI Realtime, Google Live, Deepgram, ElevenLabs, Local Hybrid, Telnyx).
+
+## State & Observability
+
+The engine maintains call state via `SessionStore` for typed, centralized tracking. Built-in **Call History** logs per-call interactions for debugging; optional `/metrics` scraping supports observability stacks.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

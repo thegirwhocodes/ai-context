@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.plivo.com/voice/pricing/ng/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:50:14 UTC
+========================================================================
+
+URL: https://www.plivo.com/voice/pricing/ng/
+Extraction prompt: What are the EXACT per-minute voice call rates for Nigeria? Inbound and outbound. Local numbers, toll-free numbers, mobile numbers. List every rate shown. Does Plivo offer Nigerian phone numbers (local or toll-free)?
+
+----------------------------------------
+
+# Nigeria Voice Pricing Information
+
+Based on the webpage content provided, **Nigeria is not listed among Plivo's supported countries for voice services**.
+
+The page displays pricing for specific countries including the United States, Canada, India, and several others, but Nigeria does not appear in the country selection dropdown or pricing tables.
+
+## Key Finding:
+The webpage includes a geolocation check that states: "Our services are not available in your country." This restriction applies to nations outside Plivo's supported service areas.
+
+## What's Not Available:
+- No per-minute rates for inbound or outbound calls to/from Nigeria
+- No Nigerian local or toll-free phone numbers offered
+- No mobile number pricing for Nigeria
+
+**Recommendation:** To confirm current Nigeria service availability or inquire about future support, contact Plivo's sales team directly through their platform.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/johnmatthewtennant/mcp-voice-hooks
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:41 UTC
+========================================================================
+
+URL: https://github.com/johnmatthewtennant/mcp-voice-hooks
+Extraction prompt: How does mcp-voice-hooks work? Installation steps, requirements (any API keys?), does it use browser-based speech recognition? How do you set it up with Claude Code? Does it work on macOS?
+
+----------------------------------------
+
+# mcp-voice-hooks Overview
+
+## How It Works
+The tool leverages "the new Claude Code hooks to deliver voice input to Claude while it works," enabling continuous two-way conversation. It handles speech recognition and text-to-speech through browser capabilities, requiring no API keys or downloads.
+
+## Requirements
+- Claude Code 2.1.69 or later
+- macOS (for system text-to-speech functionality)
+- Chrome or Safari browsers
+
+## Installation Steps
+1. Install Claude Code via npm
+2. Add configuration to a Claude Code settings file (`~/.claude/settings.json` or `.claude/settings.local.json`)
+3. Restart Claude Code to enable the plugin
+
+The setup references "an MCP server plugin for voice input and output in Claude Code."
+
+## Browser-Based Speech Recognition
+Yes—the system uses built-in browser speech recognition. Chrome provides full support, while Safari works with some limitations regarding high-quality voices. Edge has compatibility issues on Apple Silicon.
+
+## macOS Compatibility
+Fully supported. The tool includes Mac-specific features like system text-to-speech with downloadable Siri voices and bash integration for testing voice output.
+
+## API Keys
+No external API keys are needed since processing happens locally in the browser.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

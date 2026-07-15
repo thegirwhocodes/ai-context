@@ -1,0 +1,66 @@
+========================================================================
+AGENT RESEARCH: Why XFA still exists
+Session: 3f0fd587-a8ad-4ce6-86a4-cb6c031d7c7e
+Time: 2026-04-26 13:25:45 UTC
+========================================================================
+
+Deep research for the Adjutant project. Return AT LEAST 90% substantive content. NO summarization. Aim for 2500+ words of raw data with verbatim URLs and quotes.
+
+The user asked the deep historical question: **"Why does the Army even have XFA forms if they don't use it [in IPPS-A]?"** The dissonance is: armypubs.army.mil ships DA-31, DA-4856 etc. as XFA-only PDFs that no non-Adobe viewer can render — yet the Army's own modern systems (IPPS-A, DTS) generate fresh layouts and don't use the XFA template at all. Why does the legacy XFA file still exist? Why hasn't the Army migrated armypubs to flat AcroForm or HTML?
+
+## Research questions
+
+### 1. XFA's history — why was it ever used
+- When did Adobe LiveCycle / XFA become the DoD/Army standard for forms?
+- Adobe LiveCycle Forms ES contracts with the Army — public records (2003-2013 era)
+- The LiveCycle Designer tool — was it the only practical authoring path for "smart" forms with calculations and dynamic flows?
+- The DA Forms Management program (DA Pam 25-30) — how does it choose form formats?
+- What problems did XFA solve in 2005-2010 that flat AcroForm couldn't? (Dynamic calculations, conditional sections, JavaScript-driven validation, digital signatures)
+- DoD eSign / digital-signature requirements that drove XFA adoption — DoD CIO memos
+
+### 2. XFA's deprecation — what changed
+- ISO 32000-2 (PDF 2.0, 2017) deprecated dynamic XFA. Quote the exact spec language
+- Adobe's announcement that XFA is being phased out — when and where
+- Acrobat / Reader DC removing XFA support — what version, what year
+- Mozilla, Chrome, Apple all explicitly NOT supporting XFA — their public statements
+
+### 3. The Army's "we still ship XFA" inertia
+- DA Pam 25-30 / Army Publishing Directorate publishing standards — what does it allow?
+- Has APD ever published a flat AcroForm version of DA-31 or DA-4856? When?
+- Why APD hasn't migrated: ATO costs of changing form template? Compatibility with existing IPPS-A imports? Bureaucratic inertia?
+- AEM Forms migration plans inside DoD — public RFPs / CRS reports
+- The AEM Forms-rendered "v1.02ES" variants of some forms (e.g. HIARNG mirror of DA-4856) — proof that AEM Forms migration is partially in progress?
+
+### 4. The legal/audit dimension
+- Are XFA forms still legally accepted as authoritative versions of DA-31 today? Quote any 2024-2026 Army policy
+- AR 25-30 references on official form copies
+- If Adjutant generates a flat-rebuilt DA-31 (not the XFA), does it still satisfy AR 600-8-10's "use DA Form 31" requirement? Look for the exact regulatory language about whether a FORMAT-equivalent reproduction is acceptable
+- Forms 5 USC 552 (e.g. paperwork reduction act) implications
+
+### 5. Other XFA holdouts in government
+- IRS Forms (2025-era) — still XFA?
+- DoL, DHS, FEMA — XFA usage rates
+- State governments — California, New York DMV
+- Foreign militaries — Canadian Forces, UK MoD
+- This contextualizes whether the Army is uniquely behind or this is a pan-government issue
+
+### 6. The actual cost of XFA migration
+- What would it cost the Army to convert all 1500+ DA forms from XFA to flat AcroForm + IPPS-A-renderable? Find cost estimates, GAO/CRS analyses
+- Is anyone in the Army's CIO advocating for this?
+
+## Output
+
+Long dense report. End with a "demo answer" — when a judge asks "why doesn't the Army just fix the XFA problem upstream instead of you building Adjutant?", a 4-sentence credible answer with sources.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a0e65617c62bff17d (internal ID - do not mention to user. Use SendMessage with to: 'a0e65617c62bff17d' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/3f0fd587-a8ad-4ce6-86a4-cb6c031d7c7e/tasks/a0e65617c62bff17d.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,72 @@
+========================================================================
+AGENT RESEARCH: Research voice-driven email UX patterns
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-08 16:40:13 UTC
+========================================================================
+
+Research voice-driven, one-email-at-a-time email triage UX patterns. Goal: inform a build plan for Naomi's "voice email app" — a jet-black, minimalist, hands-free email reviewer where the AI reads emails aloud, the user speaks back ("reply with X", "skip", "archive", "say it more casual"), and the AI drafts/sends. Current stack is Next.js 15 + Web app (not native), so browser-based STT/TTS is preferred.
+
+Specific things to find:
+1. **Web Speech API** — current support for SpeechRecognition (STT) and SpeechSynthesis (TTS) in Chrome/Safari/Firefox. Limitations? Streaming? Latency? Mobile?
+2. **Browser TTS quality** — is it good enough to feel calm/non-anxiety-inducing, or does it sound robotic? Do we need ElevenLabs/OpenAI TTS for quality?
+3. **Voice email products that exist** — Superhuman voice mode, Sanebox, Spike's voice features, Voicea, Otter for email, Apple Mail Siri integration. What do they actually do? What's their loop?
+4. **Latency budget for "feels alive" voice UX** — what's the cap from end-of-user-speech to start-of-AI-speech that feels natural?
+5. **Wake-word vs push-to-talk vs always-listening** — what's the right pattern for an email triage session?
+
+Report concisely (under 600 words) — bullets of concrete patterns + names of any libraries/APIs worth adopting (e.g. is OpenAI Realtime API a fit? Vercel AI SDK voice helpers?). Don't need exhaustive citations — just signal the user can act on. This research will go into a plan I propose to Naomi over voice for her approval.
+
+----------------------------------------
+
+## Research Summary: Voice-Driven Email Triage UX
+
+### 1. **Web Speech API (STT/TTS) Reality**
+- **Chrome/Edge**: Full SpeechRecognition support, server-based (requires internet)
+- **Safari**: TTS works well (esp. on-device neural voices: Arya, Jenny, Guy—no longer robotic), but SpeechRecognition has significant mobile latency issues
+- **Firefox**: No native SpeechRecognition; TTS works but limited
+- **Verdict**: Browser SpeechRecognition is fragile across platforms. For production, **offload to OpenAI Realtime API** (handles STT + TTS streaming with <600ms end-to-end latency).
+
+### 2. **Browser TTS Quality**
+Apple's on-device neural voices (iOS 18, macOS) are **genuinely non-robotic** and feel calm/natural. However, for truly polished email reading, ElevenLabs or OpenAI TTS produces studio-grade narration that builds trust. Native browser TTS works for MVP but may feel impersonal for calm, hands-free email consumption.
+
+### 3. **Existing Voice Email Products**
+- **Superhuman**: Voice recognition for hands-free triage (business plan, $40/user/mo)
+- **Spike**: Chat-like interface; no dedicated voice mode yet
+- **SaneBox**: Auto-archive + AI reply; no voice
+- **Apple Mail + Siri**: Basic voice commands (limited scope)
+- **None yet do true "AI reads + user speaks back" in a cohesive loop** — this is a gap Naomi can own.
+
+### 4. **Latency Budget for "Feels Alive"**
+- **<300ms**: Natural human conversation rhythm
+- **300–600ms**: Acceptable; still feels responsive
+- **600–1000ms**: Noticeable pause; tolerable for email context (not call-center calls)
+- **>1000ms**: Disrupts flow
+- **Recommended target**: <600ms (first-audio from end-of-user-speech) ← OpenAI Realtime API delivers this at scale.
+
+### 5. **Wake-Word vs. Push-to-Talk**
+- **Push-to-Talk**: Simplest for MVP (visual tap/hold button), lower privacy concerns, predictable activation
+- **Wake-Word**: More hands-free; requires on-device detection (Picovoice/Porcupine) to avoid privacy + latency issues
+- **For email triage**: **Push-to-talk is the right choice** — users consciously engage per email, no false activations, feels intentional
+
+---
+
+### **Build Plan Recommendations**
+1. **STT/TTS**: Use **OpenAI Realtime API** (WebSocket streaming, <600ms latency, best-in-class voice quality)
+2. **UI Pattern**: One-email-at-a-time card → **Push-to-talk button** → user speaks reply intent ("reply casually", "archive", "skip") → AI drafts/acts
+3. **Stack**: Next.js 15 + Vercel AI SDK (handles streaming) + OpenAI Realtime client library
+4. **Voice Quality**: OpenAI's TTS for email reading (sounds trusted + calm), user STT via Realtime
+5. **No wake-word needed** — push-to-talk keeps friction low and intentional
+
+**Key Fit**: OpenAI Realtime API is purpose-built for this. Vercel AI SDK has streaming helpers but doesn't replace Realtime's audio streaming codec. This is your competitive edge vs. Gmail/Superhuman.
+
+Sources:
+- [Web Speech API — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+- [300ms rule for voice AI](https://www.assemblyai.com/blog/low-latency-voice-ai)
+- [OpenAI Realtime API](https://developers.openai.com/api/docs/guides/realtime)
+- [OpenAI voice agents at scale](https://openai.com/index/delivering-low-latency-voice-ai-at-scale/)
+- [Next.js Realtime integration guide](https://dev.to/lonare/how-to-create-a-conversational-ai-voice-agent-with-openai-realtime-api-a-step-by-step-guide-for-1j50)
+- [Wake word detection 2026](https://picovoice.ai/blog/complete-guide-to-wake-word/)
+- [Superhuman voice features](https://www.jotform.com/ai/agents/superhuman-alternatives/)
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

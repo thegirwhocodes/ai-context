@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: bedtime app blocker enforce sleep schedule macOS phone lock wake time cannot byp
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:30 UTC
+========================================================================
+
+Search query: bedtime app blocker enforce sleep schedule macOS phone lock wake time cannot bypass
+
+----------------------------------------
+
+Web search results for query: "bedtime app blocker enforce sleep schedule macOS phone lock wake time cannot bypass"
+
+Links: [{"title":"SlumberLock-Sleep App Blocker App - App Store","url":"https://apps.apple.com/us/app/slumberlock-sleep-app-blocker/id6756604262"},{"title":"Bedtime App Blocker: FrogSleep - App Store - Apple","url":"https://apps.apple.com/us/app/bedtime-app-blocker-frogsleep/id6748830877"},{"title":"ScrollLock: App Blocker - App Store - Apple","url":"https://apps.apple.com/ca/app/scrolllock-app-blocker/id6760436903"},{"title":"Bedtime - Limit Screen Time for Android & iOS","url":"https://familytime.io/features/bed-time.html"},{"title":"Anyway of locking out my phone after a certain time so that I will go to bed? | MacRumors Forums","url":"https://forums.macrumors.com/threads/anyway-of-locking-out-my-phone-after-a-certain-time-so-that-i-will-go-to-bed.1600842/"},{"title":"How to Lock Your Phone at Night So You Can't Use It (A Strict Bedtime Mode That Actually Works) — Sleep Lock Blog","url":"https://sleeplock.app/blog/how-to-lock-your-phone-at-night-so-you-cant-use-it/"}]
+
+Based on the search results, here are several bedtime app blockers and sleep schedule enforcement tools available:
+
+## Dedicated Bedtime App Blockers
+
+**NemuLock** - Set your bedtime, and Nemlock will block distracting apps like social media and videos. It requires macOS 14.0 or later and a Mac with Apple M1 chip or later.
+
+**FrogSleep** - Locks your screen before bedtime so you have to put your phone down.
+
+**Scroll Lock** - Blocks distracting apps during your sleep schedule, with custom bedtime and wake time schedule.
+
+**Sleep Lock** - Blocks distracting apps during your sleep window with no account required and no tracking.
+
+**FamilyTime** - Has a Bedtime screen lock feature that automatically wakes up devices in the mornings, with devices waking up automatically according to the wake-up time you pre-set.
+
+## Built-in Option
+
+For iPhone, Screen Time's Downtime feature is the closest built-in tool, where you set your start and end times and during Downtime most apps will be greyed out and show a lock icon, though phone calls and explicitly allowed apps will still work.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,67 @@
+========================================================================
+AGENT RESEARCH: Research embedded marketing models
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-03-31 23:01:45 UTC
+========================================================================
+
+Do extremely thorough web research on embedded marketing models, specifically:
+
+1. **What is embedded marketing / branded content integration?** How do companies embed marketing into educational content, entertainment, apps, and services? What are the industry-standard models?
+
+2. **Telco-sponsored education programs** — Find every example you can of mobile network operators (MTN, Airtel, Safaricom, Vodacom, Orange, Glo, etc.) sponsoring or embedding marketing into educational services in Africa or developing markets. How do these deals work? What does the telco get? What does the education provider get? Revenue share models, zero-rating agreements, branded content deals.
+
+3. **Zero-rating for CSR** — How do telcos use zero-rating (making certain services free to users) as a CSR strategy? Examples from Facebook Free Basics, Wikipedia Zero, Airtel Zero, etc. What did those deals look like commercially?
+
+4. **Branded educational content** — Examples of brands embedding their products/services naturally into educational material. Think "MTN teaches you to count using MTN airtime bundles" or "Safaricom M-Pesa math problems." Any examples of this in practice?
+
+5. **Revenue models for free-to-user educational services** — How do services that are free to end users (especially in developing markets) generate revenue? Sponsorship, branded content, data licensing, government contracts, donor funding?
+
+6. **Specific deal structures** — What are typical revenue share percentages between content providers and telcos? What does a zero-rating agreement actually look like commercially? Who pays whom?
+
+7. **Audio/radio advertising in education** — Since Sabi is voice-based, research how radio education programs or IVR systems have incorporated sponsor messages. Rising Academies, Eneza Education, Shupavu291, Ubongo, etc.
+
+8. **Metrics telcos care about** — What KPIs do telcos track when evaluating CSR/education partnerships? Subscriber retention, brand perception, regulatory goodwill, churn reduction?
+
+Search extensively — use multiple search queries, follow links, find case studies, white papers, GSMA reports, and real-world examples. I need enough detail to build a comprehensive understanding of how embedded marketing works in this space.
+
+Return ALL findings in full detail — do not summarize, do not cut short. Include specific numbers, percentages, deal structures, company names, and sources wherever possible.
+
+----------------------------------------
+
+Research complete. Here is the full findings document, saved to `/Users/naomiivie/Education for Equality/research-agents/5. Cost & Feasibility/EMBEDDED_MARKETING_RESEARCH.md`.
+
+---
+
+## Summary of Key Findings
+
+### 1. Embedded Marketing / Branded Content Integration
+
+Product placement is a $23 billion industry. The most relevant models for Sabi are: **sponsored content** (brand pays for content that aligns with its values), **branded educational content** (brand creates genuinely useful education featuring its products -- e.g., Safaricom's M-PESA financial literacy kit teaches money management using M-PESA, Lifebuoy's EUR 30M handwashing program embeds their soap brand into school curricula in 5+ countries), and **edutainment integration** (Sesame Street model where corporate sponsors like PNC Bank, Sanlam, LEGO Foundation fund specific educational segments).
+
+### 2. Telco-Sponsored Education Programs
+
+The biggest deal found: **Airtel-UNICEF $57M partnership** across 13 African countries (zero-rated education platforms, school connectivity, teacher training). **Viamo's 3-2-1 service** is the closest model to Sabi -- operating in 16 countries, completely free IVR education via toll-free short codes, with MNOs absorbing airtime costs worth $12 billion in cumulative free minutes. Airtel alone contributed the equivalent of 25 years of free airtime ($3.2M retail value). **Safaricom + Eneza (Shupavu291)** uses carrier billing at KSh 10/week with a tiered revenue share. **Vodacom Siyakha** reached 7.5M users with zero-rated education content in South Africa.
+
+### 3. Zero-Rating Commercial Structure
+
+Three models: (a) Telco absorbs cost as CSR/retention (Wikipedia Zero -- no money changed hands, operators volunteered; Vodacom e-School), (b) Content provider pays telco for sponsored data (Zando paying Vodacom, Facebook Free Basics), (c) Advertising-supported (MTN Ads zero-rated campaigns -- 100M+ impressions/month, 4.4% CTR). Nigerian telcos are currently reluctant due to post-devaluation financial pressure, but NCC is pushing them to zero-rate education -- it is a recommendation, not yet a binding regulation.
+
+### 4. Revenue Share Percentages
+
+**Nigeria**: Standard VAS split is 60% MNO / 40% content provider (NCC-negotiated). MTN Nigeria generated NGN 70B+ in VAS revenue in 2021. **Kenya (Safaricom)**: Published PRS rate card shows IVR revenue shares from 75% content provider / 25% Safaricom at low price points (KSh 5-25/min) down to 50/50 at KSh 70/min. At the price points relevant to education, content providers keep MORE of the revenue.
+
+### 5. Why Telcos Care
+
+Viamo has proven that when education services mature in a market, 5-8% of the operator's subscriber base uses them regularly. Benefits: reduced churn (increasing retention by 5% = 25-95% profit increase per Bain), higher ARPU from engagement, regulatory goodwill (NCC pushing for education zero-rating), competitive differentiation, PR value. Acquiring a new telecom subscriber costs 5-7x retaining an existing one. Average global telco churn is 26%; in African prepaid markets it ranges 20-70%.
+
+### 6. Implications for Sabi
+
+The optimal revenue model combines: (a) donor/grant funding, (b) telco CSR partnership where MNO absorbs call costs in exchange for branding (Viamo model), and (c) embedded marketing where brands pay for natural product mentions in lesson scripts ("If Amina has 3 packets of Indomie noodles..."). Pre-lesson sponsor tags (5-10 seconds), branded math problems, and branded modules ("The MTN Counting Module") are all viable based on industry precedent. Voice is low bandwidth (cheaper to zero-rate than data), feature phone reach is unique, and NCC regulatory tailwind is real.
+agentId: a65c31988013eae1f (use SendMessage with to: 'a65c31988013eae1f' to continue this agent)
+<usage>total_tokens: 117192
+tool_uses: 88
+duration_ms: 2857750</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

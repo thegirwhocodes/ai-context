@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.technovation.org/ai-ventures-accelerator/
+Session: 86c89090-9d07-4f5c-ac46-50629db75b25
+Time: 2026-03-16 19:46:53 UTC
+========================================================================
+
+URL: https://www.technovation.org/ai-ventures-accelerator/
+Extraction prompt: What are the exact team requirements? Can solo founders apply? What does the program say about team size, team composition, and whether they match solo founders with others? What's the deadline?
+
+----------------------------------------
+
+# AI Ventures Accelerator Team Requirements
+
+## Team Size & Composition
+The program states: "teams of 2-4 preferred, solo founders also welcome." While collaborative teams are encouraged, individual applicants are permitted to participate.
+
+## Solo Founder Support
+Yes, solo founders can apply. The FAQ clarifies that "Individual applicants can be matched with others to form teams during the program." This matching process happens after acceptance.
+
+## Team Composition Details
+The program "strongly encourage[s] you to find co-founders before applying" and welcomes "recent graduates, students, budding entrepreneurs, and anyone with a strong interest in AI and technology problem-solving." Teams should ideally have "complementary team members with a variety of skills and expertise."
+
+All participants must be women aged 19-24 and reside in either a UNICEF Program Country or the United States.
+
+## Application Deadline
+**March 4, 2026 at 11:59 ET** is the application deadline for the inaugural cohort.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

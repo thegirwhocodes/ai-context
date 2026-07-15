@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://iridescentsupport.zendesk.com/hc/en-us/articles/48857460693267-What-is-A
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-23 01:40:10 UTC
+========================================================================
+
+URL: https://iridescentsupport.zendesk.com/hc/en-us/articles/48857460693267-What-is-AIVA
+Extraction prompt: What does the AIVA program require teams to submit at the end of the 12-week program (around June 2026)? What are the deliverables, the rubric, the format of the submission, and the deadline?
+
+----------------------------------------
+
+The server returned HTTP 403 Forbidden.
+
+The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provided fetch tool) instead of WebFetch.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,58 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.hearview.ai/blogs/news/which-smart-glasses-are-best-for-the-deaf-and
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:28:08 UTC
+========================================================================
+
+URL: https://www.hearview.ai/blogs/news/which-smart-glasses-are-best-for-the-deaf-and-hard-of-hearing-a-2025-review-of-caption-glasses
+Extraction prompt: Extract the full comparison of all smart glasses reviewed for deaf/HoH users. Include: product names, features, prices, pros/cons, which ones have sign language support vs just captioning. Full details on every product compared.
+
+----------------------------------------
+
+# Smart Glasses Comparison for Deaf and Hard of Hearing Users
+
+## Products Reviewed
+
+### **Hearview**
+**Features:** Real-time captions with 95% accuracy across accents, supports up to 10 speakers with labels, transcription and translation in 30+ languages, noise-cancellation technology
+
+**Considerations:** Requires Bluetooth pairing to phone and network connectivity for saving subtitles. Captions display only on right lens; left-eye version in development.
+
+**Positioning:** "focused on doing one thing incredibly well—clean, precise, and easy-to-read live captions"
+
+---
+
+### **Captify**
+**Features:** Designed specifically for hearing loss, noise cancellation, multiple language support, phone connectivity
+
+**Cons:** Battery life concerns for all-day wear at events or conferences
+
+---
+
+### **XRAI Glass**
+**Features:** Captioning and translation software for compatible AR glasses like XREAL
+
+**Cons:** Experience depends on third-party hardware; larger frame sizes; requires smartphone for processing and power
+
+---
+
+### **Xander Glasses**
+**Features:** Standalone functionality—all capabilities built into the glasses themselves, no phone dependency required
+
+**Cons:** Significantly higher cost than alternatives, "several hundred dollars more"
+
+---
+
+### **SubLinq**
+**Features:** Real-time transcription, translation, teleprompting, "Deaf Mode" specifically for deaf/hard of hearing users, multi-language support, custom display options
+
+**Cons:** Comprehensive feature set may dilute focus; described as specialized add-on rather than purpose-built solution
+
+---
+
+## Note on Sign Language Support
+**The article does not discuss sign language support for any of these products.** All reviewed devices focus exclusively on caption-based communication rather than ASL or other sign language features.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

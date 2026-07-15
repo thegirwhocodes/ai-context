@@ -1,0 +1,33 @@
+========================================================================
+AGENT RESEARCH: Web research Viamo identity handling
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-29 20:35:11 UTC
+========================================================================
+
+Do deep WEB research on Viamo (the "3-2-1 Service", formerly VOTO Mobile) and comparable voice/IVR/SMS-for-development organisations, focused on ONE question for an edtech product: how do they handle USER IDENTITY and personalization on SHARED, BASIC phones — where one phone number is used by multiple people (e.g., a family or several children)?
+
+Cover Viamo in depth first (3-2-1 Service across African countries, MNO partnerships, call-flow/menu design, registration or lack of it, whether/how it personalizes per user, languages, scale). Then comparable orgs: Eneza Education and M-Shule (SMS tutoring, Kenya), GeoPoll, Ubongo, Bakame AI (Rwanda voice tutor — the closest peer), Rori (AI math tutor), Human Network International / HNI, Farm Radio International, and any notable IVR education/health/agriculture programs in Africa or India (e.g., IVR tutoring, Gram Vaani, Awaaz De).
+
+For EACH org, extract CONCRETELY with source URLs:
+1. How they identify a user on a basic phone — anonymous/menu-driven, registration-based, SIM/number-as-identity, PIN, or name-profile?
+2. How they handle SHARED phones / multiple users per number — ask "who are you?", profiles, PINs, separate registrations, or treat the number as one user?
+3. Returning-user recognition and personalization — do they remember you and resume progress?
+4. Call-flow / menu / navigation UX for low-literacy users and children — how they keep it simple, language selection, voice-prompt design, session length.
+5. Any documented lessons or failures about shared-phone identity / mis-identification in these programs.
+
+Return AT LEAST 90% of substance — concrete designs, examples, numbers, quotes, and SOURCE URLs for every claim. Use multiple searches and fetch primary sources (Viamo.io, research papers, GSMA reports, J-PAL/3ie evaluations, case studies).
+
+Finally, assess this specific design we're considering for Sabi and say whether it matches or diverges from what these orgs do, and what to borrow or avoid: "Sabi greets the caller with a best-guess name; if it's wrong, the child corrects it and Sabi creates a NEW learner profile for that person; and once a phone has multiple learners, Sabi asks 'who am I speaking to?' at the start of every call before continuing." Be concrete and opinionated in that assessment.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a88b51e0f14c1a10f (internal ID - do not mention to user. Use SendMessage with to: 'a88b51e0f14c1a10f', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/3b8ddd08-9e23-4598-83dd-60902b9107f3/tasks/a88b51e0f14c1a10f.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

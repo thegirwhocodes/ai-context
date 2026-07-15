@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow
+Session: a8c172f1-a7d4-4624-8ac2-b31c78a6f870
+Time: 2026-05-11 02:55:19 UTC
+========================================================================
+
+URL: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
+Extraction prompt: How do GitHub Actions scheduled (cron) workflows work? What are the limits, frequency caps, supported cron syntax, when are they delayed/skipped, and how to handle authentication for jobs that hit external services? ≤350 words.
+
+----------------------------------------
+
+# GitHub Actions Scheduled Workflows
+
+## How They Work
+
+GitHub Actions scheduled workflows use the `schedule` event with POSIX cron syntax. As documented, "the `schedule` event allows you to trigger a workflow at a scheduled time." Workflows execute on the default branch only, using the latest commit available at execution time.
+
+## Frequency and Limits
+
+The minimum interval between scheduled workflow runs is **5 minutes**. This represents GitHub's lowest supported frequency for automation tasks.
+
+## Cron Syntax Support
+
+Scheduled workflows use standard POSIX cron format with five fields representing minute, hour, day of month, month, and day of week. GitHub supports operators including asterisks (any value), commas (lists), hyphens (ranges), and forward slashes (step values). Notably, "GitHub Actions does not support the non-standard syntax `@yearly`, `@monthly`, `@weekly`, `@daily`, `@hourly`, and `@reboot`."
+
+You can optionally specify an IANA timezone for scheduling, with automatic adjustments during daylight saving time transitions.
+
+## Delays and Skipping
+
+GitHub acknowledges that "the `schedule` event can be delayed during periods of high loads of GitHub Actions workflow runs." High-load periods typically occur at hourly boundaries, potentially causing job queuing or dropping.
+
+Additionally, in public repositories, "scheduled workflows are automatically disabled when no repository activity has occurred in 60 days." Disabled workflows require manual re-enablement.
+
+## Authentication Considerations
+
+The documentation notes that "notifications for scheduled workflows are sent to the user who last modified the cron syntax in the workflow file." For Enterprise Managed Users, scheduled workflows require the associated actor account to have active status—suspended or deleted accounts will prevent execution.
+
+Workflows can access `GITHUB_TOKEN` (with default permissions) and other repository secrets for authentication to external services, enabling integration with third-party APIs and deployment platforms.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,58 @@
+========================================================================
+AGENT RESEARCH: Research best native app architecture
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-18 05:16:23 UTC
+========================================================================
+
+Research what frameworks and architectures the best premium Bible, journaling, and AI chat apps are built with in 2025-2026. Specifically:1. What is Glorify built with? (premium Bible app, gold+navy, VC-backed)
+2. What is YouVersion built with?
+3. What is Day One journal built with?
+4. What are premium AI chat apps (ChatGPT mobile, Claude mobile) built with?
+5. What is Bear Notes built with?
+6. What about Dreamnl (Christian dream journal)?
+
+Also research:
+- React Native / Expo vs Swift/Kotlin native vs Flutter for a premium-feeling app with:
+  - E-reader quality Bible reading (custom fonts, themes, auto-hiding chrome)
+  - Smooth journal/note editing
+  - AI chat interface
+  - Glassmorphic effects, animations
+  - Offline support
+  - On-device ML inference (CoreML/MLX)
+
+- Can React Native/Expo achieve truly native-feeling animations and performance for a reader app?
+- What do people recommend for a small team building a premium iOS+Android app in 2026?
+
+Search the web for real answers. I need to know if Expo/React Native is the RIGHT choice or if we should use something else. Be honest about tradeoffs.
+
+----------------------------------------
+
+Here is the summary of findings, written to `/Users/naomiivie/bethel/research/BETHEL_TECH_STACK_RESEARCH.md`:
+
+---
+
+**The key finding: Every premium Bible, journaling, writing, and AI chat app is built natively.**
+
+- **Glorify**: Fully native -- Swift/SwiftUI (iOS), Kotlin (Android), Node.js/MongoDB backend. Built by Tapptitude specifically for premium polish.
+- **YouVersion**: Native SwiftUI + Jetpack Compose with Kotlin Multiplatform for shared business logic (networking, caching, auth). The "best of both worlds" approach.
+- **Bear Notes**: Fully native Swift (AppKit/UIKit), Apple-only. Small team (~5-8), Apple Design Award winner.
+- **Day One**: Native Swift. Acquired by Automattic.
+- **ChatGPT & Claude mobile**: Both appear to be native (deep platform integration, job postings, performance characteristics).
+- **Dreamnl**: Likely cross-platform (solo dev shipping iOS+Android simultaneously) -- but also not in the "premium" tier.
+
+**React Native/Expo in 2026 is genuinely good** -- the New Architecture (Fabric, JSI, TurboModules) is production-ready, Reanimated 3 delivers 60fps animations, Skia enables GPU rendering, and Expo now supports SwiftUI primitives directly. Glassmorphism, offline SQLite, and even on-device ML (via ExecuTorch/CoreML backend) are all possible.
+
+**But the honest tradeoffs for Bethel's specific needs:**
+1. **Text rendering** -- React Native cannot match native TextKit 2 for e-reader quality typography (ligatures, hyphenation, widows/orphans control)
+2. **Rich text editing** -- RN's weakest area; no equivalent to native text editing stacks that Bear and Day One use
+3. **The "last 5%" of polish** -- possible but requires significantly more effort than native
+
+**The recommendation**: If Bethel's vision is truly premium (Glorify-level), the most aligned path is **iOS-first in Swift/SwiftUI, then Android via Kotlin with shared logic via KMP** (the YouVersion model). If budget forces cross-platform, React Native/Expo is viable but will require constant polish work and custom native modules for the reader and editor.
+agentId: af11c296bde062647 (use SendMessage with to: 'af11c296bde062647' to continue this agent)
+<usage>total_tokens: 34027
+tool_uses: 27
+duration_ms: 716703</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

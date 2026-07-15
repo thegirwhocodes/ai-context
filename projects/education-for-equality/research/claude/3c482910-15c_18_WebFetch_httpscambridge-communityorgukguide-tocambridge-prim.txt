@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cambridge-community.org.uk/guide-to/cambridge-primary/english/
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:55:36 UTC
+========================================================================
+
+URL: https://cambridge-community.org.uk/guide-to/cambridge-primary/english/
+Extraction prompt: Extract ALL Stage 4 learning objectives listed on this page. List every objective code and its full description for reading, writing, speaking and listening.
+
+----------------------------------------
+
+I've reviewed the provided web page content, which consists primarily of CSS styling code and HTML structure for the Cambridge Primary English guide website. However, the actual Stage 4 learning objectives content is not included in the text provided.
+
+The document appears to be a template or framework page that references sections like "Introduction," "Curriculum Framework," "Pedagogy," and "Assessment," but the specific learning objective codes and descriptions are not present in the extracted content.
+
+**To obtain the Stage 4 learning objectives, you would need to:**
+
+1. Access the full page content from the Curriculum Framework section
+2. Navigate to the stage-specific learning objectives area
+3. Extract the detailed objective codes and their corresponding descriptions for each skill domain (reading, writing, speaking, listening)
+
+If you can provide the actual curriculum content (not just the styling and structural code), I'd be happy to extract and organize all Stage 4 objectives as requested.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

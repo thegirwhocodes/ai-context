@@ -1,0 +1,321 @@
+========================================================================
+AGENT RESEARCH: Research aiortc WebRTC Flask
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 07:55:39 UTC
+========================================================================
+
+Search the web and codebase for WebRTC + Flask + OpenCV integration patterns. Specifically:
+
+1. Search for the aiortc library — check if there are examples of Flask + aiortc + OpenCV camera streaming
+2. Look at https://github.com/supersjgk/LiveStream-WebRTC-Flask-OpenCV structure if accessible
+3. Search for any WebRTC-related code already in /Users/naomiivie/asl-translation-glasses/
+4. Check if aiortc works with Flask-SocketIO or needs a separate signaling approach
+5. Research: can aiortc send MediaTrack from OpenCV frames? What's the pattern?
+
+Report: what Python packages are needed, what the signaling flow looks like, and what frontend JS is required for WebRTC video reception."
+
+----------------------------------------
+
+Perfect! Now I have comprehensive information. Let me compile the report based on all the research and codebase analysis.
+
+## Research Report: WebRTC + Flask + OpenCV Integration Patterns
+
+### 1. Current Codebase State
+Your ASL translation glasses project (`/Users/naomiivie/asl-translation-glasses/app/app.py`) currently uses:
+- **Flask** with **Flask-SocketIO** for signaling and real-time communication
+- **OpenCV** (cv2) for camera capture and frame processing
+- **MJPEG over HTTP** for video streaming (not WebRTC)
+- Multi-threaded architecture with frame buffers and JPEG pre-encoding
+
+The current approach streams pre-encoded JPEG frames via HTTP endpoints (`/video/signing`, `/video/speaking`) rather than true peer-to-peer WebRTC.
+
+### 2. Python Packages Required
+
+**Core WebRTC Stack:**
+- `aiortc` — WebRTC implementation for Python (async/await based)
+- `av` (PyAV) — Audio/video frame handling (dependency of aiortc)
+- `aiohttp` — Recommended web framework (better asyncio integration than Flask)
+- `python-socketio` — For signaling (already in your stack)
+
+**Optional but useful:**
+- `opencv-python` or `opencv-python-headless` — Already in your requirements
+- `numpy` — Already present
+
+**Critical note:** aiortc is **asyncio-native** and works best with aiohttp, not Flask. Flask's threading model can create compatibility issues with aiortc's async RTCPeerConnection. Flask-SocketIO with `async_mode='threading'` (which you're using) is a partial workaround but may have performance/reliability issues at scale.
+
+### 3. MediaTrack Pattern: Converting OpenCV Frames to WebRTC
+
+The standard pattern for streaming OpenCV camera frames via WebRTC with aiortc uses **VideoStreamTrack** or **VideoTransformTrack**:
+
+**Basic VideoStreamTrack Pattern (for capturing raw camera):**
+```python
+from aiortc import VideoStreamTrack
+from av import VideoFrame
+import cv2
+
+class CameraVideoTrack(VideoStreamTrack):
+    def __init__(self, camera_index=0):
+        super().__init__()
+        self.cap = cv2.VideoCapture(camera_index)
+        
+    async def recv(self):
+        ret, frame = self.cap.read()
+        if not ret:
+            return None
+        # Convert BGR (OpenCV) to RGB for WebRTC
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # Create VideoFrame from numpy array
+        video_frame = VideoFrame.from_ndarray(frame_rgb, format="rgb24")
+        return video_frame
+```
+
+**VideoTransformTrack Pattern (for processing frames):**
+```python
+from aiortc import MediaStreamTrack, VideoStreamTrack
+from av import VideoFrame
+import cv2
+
+class VideoTransformTrack(MediaStreamTrack):
+    def __init__(self, track):
+        super().__init__()
+        self.track = track
+        self.kind = "video"
+        
+    async def recv(self):
+        frame = await self.track.recv()
+        # Convert to OpenCV format
+        img = frame.to_ndarray(format="bgr24")
+        
+        # Process with OpenCV (e.g., edge detection)
+        edges = cv2.Canny(img, 100, 200)
+        # Convert back to BGR and create VideoFrame
+        edges_bgr = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
+        new_frame = VideoFrame.from_ndarray(edges_bgr, format="bgr24")
+        # Preserve timing information
+        new_frame.pts = frame.pts
+        new_frame.time_base = frame.time_base
+        return new_frame
+```
+
+**Key conversion methods:**
+- `frame.to_ndarray(format="bgr24")` — Convert WebRTC frame to OpenCV-compatible numpy array
+- `VideoFrame.from_ndarray(array, format="bgr24")` — Convert numpy array back to WebRTC frame
+- **Must preserve `pts` and `time_base`** for proper frame timing
+
+### 4. Signaling Flow
+
+WebRTC signaling establishes the peer connection via SDP (Session Description Protocol) and ICE candidates. Flask-SocketIO can handle this, though aiohttp is recommended.
+
+**Complete signaling flow:**
+
+```
+Client (Browser)                Server (Python)
+    |                              |
+    |------ createOffer -------->  |
+    |                          setRemoteDescription
+    |                          createAnswer
+    |<----- answer + ICE ------    |
+    |                              |
+    |<-- ICE candidates --------   |
+    |---- ICE candidates -------->  |
+    |                              |
+    |===== SRTP encrypted =======  |
+    |<---- Video/Audio stream ---  |
+```
+
+**Flask-SocketIO signaling example:**
+
+```python
+from flask import Flask, render_template
+from flask_socketio import SocketIO, emit, send
+from aiortc import RTCPeerConnection
+
+app = Flask(__name__)
+socketio = SocketIO(app)
+
+pcs = {}  # Track active peer connections
+
+@socketio.on('offer')
+def on_offer(data):
+    """Browser sends WebRTC offer"""
+    offer_sdp = data['sdp']
+    
+    pc = RTCPeerConnection()
+    pcs[request.sid] = pc
+    
+    # Set remote offer
+    await pc.setRemoteDescription(RTCSessionDescription(sdp=offer_sdp, type="offer"))
+    
+    # Create answer
+    answer = await pc.createAnswer()
+    await pc.setLocalDescription(answer)
+    
+    # Send answer back
+    emit('answer', {
+        'sdp': pc.localDescription.sdp,
+        'type': 'answer'
+    })
+
+@socketio.on('ice-candidate')
+def on_ice_candidate(data):
+    """Browser sends ICE candidates"""
+    pc = pcs.get(request.sid)
+    if pc:
+        candidate = RTCIceCandidate(**data['candidate'])
+        await pc.addIceCandidate(candidate)
+
+@socketio.on('connect')
+def on_connect():
+    """New peer connection initiated"""
+    pass
+```
+
+### 5. Frontend JavaScript Requirements
+
+The client-side JavaScript must:
+1. Create an RTCPeerConnection
+2. Exchange SDP (offer/answer)
+3. Collect and exchange ICE candidates
+4. Handle the video stream
+
+**Minimal WebRTC client example:**
+
+```javascript
+const config = {
+    iceServers: [
+        { urls: ['stun:stun.l.google.com:19302'] }
+    ]
+};
+
+const pc = new RTCPeerConnection(config);
+const socket = io();
+
+// Listen for video tracks from server
+pc.addEventListener('track', (event) => {
+    const video = document.querySelector('video');
+    video.srcObject = event.streams[0];
+});
+
+// Send ICE candidates to server
+pc.addEventListener('icecandidate', (event) => {
+    if (event.candidate) {
+        socket.emit('ice-candidate', {
+            candidate: event.candidate.toJSON()
+        });
+    }
+});
+
+// Handle ICE connection state
+pc.addEventListener('connectionstatechange', () => {
+    console.log('Connection state:', pc.connectionState);
+});
+
+// Initiate offer
+async function startConnection() {
+    const offer = await pc.createOffer();
+    await pc.setLocalDescription(offer);
+    
+    socket.emit('offer', {
+        sdp: pc.localDescription.sdp,
+        type: 'offer'
+    });
+}
+
+// Receive answer
+socket.on('answer', async (data) => {
+    const answer = new RTCSessionDescription({
+        sdp: data.sdp,
+        type: 'answer'
+    });
+    await pc.setRemoteDescription(answer);
+});
+
+// Receive ICE candidates
+socket.on('ice-candidate', async (data) => {
+    const candidate = new RTCIceCandidate(data.candidate);
+    await pc.addIceCandidate(candidate);
+});
+
+startConnection();
+```
+
+### 6. Flask-SocketIO + aiortc Compatibility Notes
+
+**Challenges:**
+- aiortc is async-first (asyncio), Flask is synchronous
+- Flask-SocketIO's `async_mode='threading'` works but isn't truly async
+- Better approach: Use aiohttp + python-socketio instead
+
+**Workaround for Flask:**
+- Use `asyncio.new_event_loop()` in threads
+- Or run aiortc RTCPeerConnection logic in separate asyncio loop in background threads
+- Many production examples use aiohttp instead of Flask
+
+**Flask with aiortc requires:**
+```python
+import asyncio
+from aiortc import RTCPeerConnection
+
+# Create loop in separate thread
+loop = asyncio.new_event_loop()
+thread = threading.Thread(target=asyncio.set_event_loop, args=(loop,), daemon=True)
+thread.start()
+
+# Use loop.call_soon_threadsafe() to schedule async work
+```
+
+### 7. Reference Repository Structure
+
+The supersjgk/LiveStream-WebRTC-Flask-OpenCV repository demonstrates the pattern:
+- **Python 37.6%**, **JavaScript 41.6%**, **HTML 20.8%**
+- Uses: Flask + aiortc + OpenCV
+- Key files: `server.py`, `requirements.txt`, `templates/index.html`, `static/main.js`
+- Captures frames with OpenCV, sends via aiortc MediaTrack, receives in browser
+
+### 8. Recommended Architecture for Your Use Case
+
+Given your current Flask-SocketIO setup and the ASL translation workload:
+
+**Option A (Minimal change):** Keep MJPEG HTTP streaming (current approach)
+- **Pros:** Simple, proven, no async complexity
+- **Cons:** Not true P2P, may have latency
+
+**Option B (Recommended upgrade):** Hybrid approach
+- Use Flask-SocketIO for signaling (your existing setup)
+- Stream annotated frames via aiortc VideoStreamTrack in separate thread
+- ML processing remains on signing camera thread (current design)
+- JPEG encoding thread continues as-is
+
+**Option C (Full refactor):** aiohttp + aiortc
+- Native asyncio support
+- Better performance
+- Requires rewriting Flask routes/views
+- More complex but most "correct" WebRTC implementation
+
+---
+
+## Sources:
+- [GitHub - supersjgk/LiveStream-WebRTC-Flask-OpenCV](https://github.com/supersjgk/LiveStream-WebRTC-Flask-OpenCV)
+- [Building a Live Streaming App using Flask, OpenCV and WebRTC](https://medium.com/@supersjgk/building-a-live-streaming-app-using-flask-opencv-and-webrtc-8cc8b521fa44)
+- [Python WebRTC basics with aiortc - DEV Community](https://dev.to/whitphx/python-webrtc-basics-with-aiortc-48id)
+- [How can I connect my OpenCV videocapture to webrtc?](https://github.com/aiortc/aiortc/issues/147)
+- [Sending opencv frame to webrtc](https://github.com/aiortc/aiortc/issues/447)
+- [aiortc documentation](https://aiortc.readthedocs.io/)
+- [Advanced WebRTC Python: Unleashing Real-Time Communication](https://dev.to/bhavyajain/advanced-webrtc-python-unleashing-real-time-communication-22nn)
+- [Build your first WebRTC app with Python and React](https://www.100ms.live/blog/webrtc-python-react)
+- [GitHub - tanmayrauth/video-conferencing-flask-webrtc](https://github.com/tanmayrauth/video-conferencing-flask-webrtc)
+- [Signaling Server for WebRTC](https://getstream.io/resources/projects/webrtc/basics/signaling-server/)
+- [Build a Peer-to-Peer Signaling Client](https://getstream.io/resources/projects/webrtc/basics/signaling-client/)
+- [RTCPeerConnection: icecandidate event - MDN](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event)
+- [RTCPeerConnection - MDN](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection)
+- [Getting started with peer connections | WebRTC](https://webrtc.org/getting-started/peer-connections)
+- [Issues with AioRTC Async and Flask](https://github.com/aiortc/aiortc/discussions/1088)
+- [How to use AioRTC with just Async / Loop / Threading calls](https://github.com/aiortc/aiortc/issues/792)
+- [How to Build AIORTC WebRTC App with Python?](https://www.videosdk.live/developer-hub/media-server/aiortc-webrtc)
+- [Building a python webrtc backend with aiortc - Preste AI](https://www.preste.ai/post/building-a-python-webrtc-backend-with-aiortc-1)
+- [VideoTransformTrack in aiortc](https://webrtc.link/en/articles/aiortc-python-webrtc-library/)
+- [How to Build a Simple Python Video Stream Server with aiortc?](https://dev.to/generatecodedev/how-to-build-a-simple-python-video-stream-server-with-aiortc-3mo1)
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

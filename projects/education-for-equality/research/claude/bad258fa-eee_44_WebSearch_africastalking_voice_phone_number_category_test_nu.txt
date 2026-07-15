@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "africastalking" voice "phone number" category "test number" "SIP phone" documen
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:19 UTC
+========================================================================
+
+Search query: "africastalking" voice "phone number" category "test number" "SIP phone" documentation
+
+----------------------------------------
+
+Web search results for query: ""africastalking" voice "phone number" category "test number" "SIP phone" documentation"
+
+Links: [{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/voice/SIP"},{"title":"What do I need to set up a SIP trunk connection? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection"},{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"How do I set up my SIP phone? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1163043-how-do-i-set-up-my-sip-phone"},{"title":"How does voice billing work? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work"},{"title":"What types of voice phone numbers are available ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"GitHub - Africastalking-Voice/africastalking_freshdesk_app: Africastalking plugin for Freshdesk","url":"https://github.com/Africastalking-Voice/africastalking_freshdesk_app"},{"title":"What you need to build a Call-Center | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2900658-what-you-need-to-build-a-call-center"}]
+
+I've found relevant documentation about Africa's Talking Voice API, SIP phones, and phone numbers. Here's what the search results show:
+
+## SIP Phone Setup
+
+Once the SIP number is mapped to your account, you can use your credentials to register it on your softphone. For Zoiper you also have to change a few settings.
+
+## Voice Phone Number Types
+
+SIP uses the internet and the client's account is billed for incoming and outgoing calls. Africa's Talking offers several types of voice phone numbers including SIP, virtualized physical lines, toll-free, and premium numbers.
+
+## SIP Trunk Connection
+
+Using SIP trunks, Africa's Talking can connect to your Private Branch System (PBX) and allow you to make and receive voice calls. To set up the trunk, you apply for a voice phone number, sign a KYC document, pay for the phone number, and share your trunk's IP address for whitelisting.
+
+## Outbound Calls
+
+You can make calls to SIP addresses using the Africa's Talking API, with examples like test.user@ke.sip.africastalking.com.
+
+The official documentation is available at the Africa's Talking developers portal and help center, which provide more detailed guides on setup and configuration.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

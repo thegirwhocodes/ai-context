@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/writing/Current%20resources%20for%20students/mentor-pro
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 06:02:14 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/writing/Current%20resources%20for%20students/mentor-program.html
+Extraction prompt: Extract the philosophy and structure of the Writing Mentor Program. What kind of work do mentors do, and what values does the program emphasize?
+
+----------------------------------------
+
+# The Writing Mentor Program: Philosophy and Structure
+
+## Core Philosophy
+
+The program emphasizes **personalized, collaborative support** for student writers. It operates on the belief that regular peer mentorship builds confidence and develops sustainable writing practices. As one participant noted, "The Writing Mentor Program ignited a new sense of initiative" and helped her realize the importance of seeking help proactively.
+
+## Program Structure
+
+- **Frequency**: Weekly 45-minute sessions throughout the semester (beginning week three, ending at reading period)
+- **Format**: Students enroll in a .25 credit tutorial with consistent mentor pairings
+- **Cost**: All services are free
+
+## Mentor Work and Values
+
+Mentors address diverse writing challenges across all disciplines and ability levels, including:
+- Ideation and brainstorming
+- Essay organization and paragraph structure
+- Grammar and sentence clarity
+- Time management and writing processes
+- Building confidence in writing
+
+The program particularly emphasizes **accessibility and approachability**, positioning mentors as peer collaborators rather than authority figures. By design, the program values **consistency and commitment**, expecting mentees to engage regularly even without pressing assignments, recognizing that ongoing collaboration itself strengthens writing development.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

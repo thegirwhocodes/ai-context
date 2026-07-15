@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: RDS2 FM radio images data transmission enhanced capabilities
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 04:19:43 UTC
+========================================================================
+
+Search query: RDS2 FM radio images data transmission enhanced capabilities
+
+----------------------------------------
+
+Web search results for query: "RDS2 FM radio images data transmission enhanced capabilities"
+
+Links: [{"title":"RDS2 Milestones - RDS Forum - Radio Data System","url":"https://www.rds.org.uk/2010/RDS2Milestones.htm"},{"title":"Radio Data System - Wikipedia","url":"https://en.wikipedia.org/wiki/Radio_Data_System"},{"title":"Your Guide to FM RDS: What Is It, and How Does It Work? - Media Realm","url":"https://www.mediarealm.com.au/articles/fm-rds-radio-data-system-guide/"},{"title":"RDS2","url":"https://grokipedia.com/page/rds2"},{"title":"What’s New With RDS2? - Radio World","url":"https://www.radioworld.com/tech-and-gear/whats-new-with-rds2"},{"title":"Why RDS2? - RDS Forum - Radio Data System","url":"https://www.rds.org.uk/2010/WhyRDS2.htm"},{"title":"What is RDS Radio/What Does RDS Mean on a Radio?","url":"https://www.radio4all.org/what-is-rds-radio/"},{"title":"Radio Data System (RDS) - Signal Identification Wiki","url":"https://www.sigidwiki.com/wiki/Radio_Data_System_(RDS)"},{"title":"Radio Station Guide: Send Text and Images to Car Dashboards","url":"https://www.mediarealm.com.au/articles/radio-station-car-dashboard-sending-metadata-guide/"},{"title":"Radio France Displays RDS2 File Transfer - Radio World","url":"https://www.radioworld.com/global/radio-france-displays-rds2-file-transfer"}]
+
+Based on the web search results, here's what I found about RDS2 FM radio images and data transmission with enhanced capabilities:
+
+## Overview
+
+RDS2 is an advanced extension of the Radio Data System (RDS), a communications protocol standard for embedding digital information in conventional FM radio broadcasts, designed to significantly increase data capacity while maintaining full backward compatibility with existing RDS implementations.
+
+## Enhanced Data Transmission Capabilities
+
+RDS2 uses three additional subcarriers, to allow for a higher bitrate (maximum 4750 bits per second), and thus transmission of additional data such as images. More specifically, RDS2 employs three extra subcarriers at 66.5 kHz, 71.25 kHz, and 78.5 kHz, each modulated with phase-shift keying to transmit enhanced data streams, including images, text, and files up to 163 KB via the RDS2 File Transfer (RFT) protocol introduced in 2018.
+
+## Key Applications
+
+RDS2 utilizes additional subcarriers in the FM multiplex to enable richer applications such as synchronized slideshows, electronic program guides, and file transfers, without altering the core analog FM transmission technology. Key operational features include support for Open Data Applications (ODAs) such as station logos, synchronized slideshows, and linking FM audio to IP streams, all encoded in UTF-8 for international compatibility.
+
+## Practical Demonstrations
+
+Radio France created a live demo on its FIP radio channel during the 2019 European Radio Show in Paris in partnership with WorldCast Systems and Caméon, using a specially designed RDS2 prototype portable radio application and showed music cover art with a fully synchronized display mode for the music on air.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

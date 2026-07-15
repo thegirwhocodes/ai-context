@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Norway oil Mideksa "natural resources"
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:11:11 UTC
+========================================================================
+
+Search query: "synthetic control" Norway oil Mideksa "natural resources"
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Norway oil Mideksa "natural resources""
+
+Links: [{"title":"The economic impact of natural resources$ Torben K. Mideksa n","url":"https://jmaurit.github.io/anvendt_macro/artikler/mideksa_jeem.pdf"},{"title":"The Nordic Model and the Oil Nation","url":"https://ideas.repec.org/p/hal/wpaper/hal-01402143.html"},{"title":"The economic impact of natural resources | Request PDF","url":"https://www.researchgate.net/publication/256935286_The_economic_impact_of_natural_resources"},{"title":"The economic impact of natural resources","url":"https://ideas.repec.org/a/eee/jeeman/v65y2013i2p277-289.html"},{"title":"1 The Norwegian oil bonanza and the Scandinavian Model","url":"https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2557882/Manuscript.pdf?sequence=2"},{"title":"The Nordic model and the oil nation Roberto Iacono CWED Working Paper Series","url":"http://cwed2.org/Data/CWED2_WP_05_2016.pdf"},{"title":"Avoiding the resource curse the case Norway - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0301421513009348"},{"title":"Norway","url":"https://www.eia.gov/international/analysis/country/nor"},{"title":"Norway’s way of preserving ecology as an oil-producing country - EST","url":"https://esthinktank.com/2025/04/21/norways-way-of-preserving-ecology-as-an-oil-producing-country/"},{"title":"Oil and gas environmental protection laws in Norway - Lexology","url":"https://www.lexology.com/library/detail.aspx?g=171e6c62-e670-49e4-9a9a-9ddff616e251"}]
+
+I found several relevant results about the synthetic control method applied to Norway's oil economy by Torben K. Mideksa. Here's what the search revealed:
+
+## Research Overview
+
+Torben K. Mideksa's research explores the economic impact of natural resource endowment using quantitative comparative case study methodology, focusing on the Norwegian economy due to the availability of good quality data to examine the impact of petroleum endowment.
+
+## Key Findings
+
+Mideksa (2013) examined the economic impact of petroleum endowments on Norway's economy, with findings indicating that the impact varied annually but remained consistently positive and substantial. More specifically, Mideksa (2013) contends that since 1974, 20% of the annual GDP per capita increase in Norway was due to the natural endowment of oil and gas.
+
+## Synthetic Control Methodology
+
+A synthetic control unit constructed by weighting Nordic countries that resemble the economy of Norway without being oil producers provides the most reliable comparison unit to estimate the causal effects. The panel plots the evolution of per capita income of the actual and synthetic unit from 1951 to 2007, with the economy and its synthetic counterpart being similar in terms of GDP per capita prior to the treatment, and with such a good fit for 18 consecutive years, it is plausible to assume that the synthetic unit can serve as a good comparison unit.
+
+The search results include academic papers and policy documents that detail Mideksa's methodology and findings regarding Norway's economic performance following its emergence as a major oil exporter.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

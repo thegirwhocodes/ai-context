@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs conversational AI "system__caller_id" custom LLM dynamic variables sy
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:23:10 UTC
+========================================================================
+
+Search query: ElevenLabs conversational AI "system__caller_id" custom LLM dynamic variables system prompt
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs conversational AI "system__caller_id" custom LLM dynamic variables system prompt"
+
+Links: [{"title":"Dynamic variables | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/personalization/dynamic-variables"},{"title":"Overrides | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/personalization/overrides"},{"title":"Personalization | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/personalization"},{"title":"ElevenAgents | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/overview"},{"title":"Client tools | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/tools/client-tools"},{"title":"Prompting guide | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/best-practices/prompting-guide"},{"title":"Server tools | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/tools/server-tools"},{"title":"System tools | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/tools/system-tools"},{"title":"Integrate your own model | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/llm/custom-llm"},{"title":"ElevenLabs — How to Prompt a Conversational AI System","url":"https://elevenlabs.io/blog/how-to-prompt-a-conversational-ai-system"}]
+
+Based on the search results, I found relevant information about your query regarding ElevenLabs conversational AI and the specific topics you mentioned:
+
+## Dynamic Variables and System Variables
+
+Dynamic variables allow you to inject runtime values into your agent's messages, system prompts, and tools, enabling you to personalize each conversation with user-specific data without creating multiple agents.
+
+### System__caller_id and Related Variables
+
+The system__caller_id variable represents the caller's phone number (for voice calls only), and is part of a set of system variables that also includes system__called_number (destination phone number), system__call_duration_secs (call duration in seconds), system__time (current time in specified timezone), system__timezone (user-provided timezone), and system__conversation_id (ElevenLabs' unique conversation identifier).
+
+### Custom Variables Restriction
+
+Custom dynamic variables cannot use the reserved system__ prefix.
+
+## Dynamic Variables in System Prompts and Custom LLM
+
+You can define runtime values using {{ var_name }} syntax to personalize your agent's messages, system prompts, and tools. This syntax allows you to incorporate dynamic variables directly into your system prompt configuration.
+
+## Secret Dynamic Variables
+
+Secret dynamic variables are indicated to ElevenAgents that these should only be used in dynamic variable headers and never sent to an LLM provider as part of an agent's system prompt or first message, and are recommended for auth tokens or private IDs that should not be sent to an LLM.
+
+The search results provide the official ElevenLabs documentation on these topics, particularly from their platform customization and personalization guides.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

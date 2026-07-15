@@ -1,0 +1,51 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/naomiivie/ai-context/scripts/hook_context.py",
+            "timeout": 45,
+            "statusMessage": "Refreshing private recovery context"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/naomiivie/ai-context/scripts/hook_context.py",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "matcher": "manual|auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/naomiivie/ai-context/scripts/hook_context.py",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/naomiivie/ai-context/scripts/hook_context.py",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

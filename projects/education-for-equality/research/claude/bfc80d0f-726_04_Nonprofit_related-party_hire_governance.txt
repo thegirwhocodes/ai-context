@@ -1,0 +1,268 @@
+========================================================================
+AGENT RESEARCH: Nonprofit related-party hire governance
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 17:27:03 UTC
+========================================================================
+
+Research how to make a paid role for a FOUNDER'S FAMILY MEMBER (the founder's mother) defensible and compliant at a startup/nonprofit — i.e., related-party / conflict-of-interest governance. The org is "Education for Equality," intending to become a US 501(c)(3) and register a Nigerian entity; right now it's pre-incorporation. The founder wants to pay her mother as a Lagos Regional Coordinator. Be concrete and exhaustive.
+
+Cover:
+- US 501(c)(3) rules on insider/related-party transactions: "disqualified persons," the founder's family as disqualified persons, the private inurement doctrine, IRS "excess benefit transactions" and intermediate sanctions (IRC §4958) — the excise taxes (the 25% and 200% tiers, the 10% on org managers), and what triggers them.
+- The "rebuttable presumption of reasonableness" — the three steps: (1) approval by an independent body/board without conflict, (2) reliance on appropriate comparability data (fair market value), (3) contemporaneous documentation. Exactly how an org documents a related-party comp decision to be safe.
+- IRS Form 990 disclosure of family relationships and related-party transactions (Schedule L, Part IV questions); conflict-of-interest policy that the IRS expects (the sample COI policy in the 1023 instructions); recusal requirements.
+- How this is handled BEFORE a board exists (pre-incorporation) — what a careful founder does now so it's clean later (document fair-market basis, arm's-length terms, get it ratified by the board once formed).
+- Funder/grant perspective: how foundations and grantmakers view nepotism / related-party staff, what they require (disclosure, COI policy), and how to avoid it tanking grant due diligence.
+- How startups (for-profit) handle hiring a founder's family member and what investors think.
+- Nigeria angle if any: related-party/connected-person rules under CAMA 2020 for a Nigerian company, and nonprofit (Incorporated Trustees) governance norms.
+
+Return AT LEAST 90% of the substantive content — every statute/section number, every percentage, every procedural step, every disclosure form. Do NOT summarize to headlines; write the full detail. Cite sources inline (URLs).
+
+----------------------------------------
+
+I now have exhaustive, well-sourced coverage across all seven areas. Synthesizing the full report.
+
+---
+
+# Making a Paid Role for the Founder's Mother (Lagos Regional Coordinator) Defensible and Compliant — Full Governance Research
+
+Bottom line up front: This is doable and routine, but the founder's mother is a textbook "disqualified person" / "interested person" under US 501(c)(3) law, so her pay must be (a) reasonable / at fair market value, (b) approved by people who are NOT her or under her control, and (c) documented contemporaneously. Do that and you build the IRS "rebuttable presumption of reasonableness," which shifts the burden of proof to the IRS. Skip it and you risk excise taxes (25% → 200%), manager penalties, grant-due-diligence failure, and in the worst case revocation for private inurement. Below is the complete detail with statutes, sections, percentages, dollar thresholds, and procedural steps.
+
+---
+
+## 1. US 501(c)(3) rules on insider / related-party transactions
+
+### 1a. The private inurement doctrine (the absolute rule)
+Section 501(c)(3) itself requires that "no part of the net earnings" of the organization may "inure to the benefit of any private shareholder or individual." This is the private inurement prohibition.
+
+- It applies to **insiders** — persons in a position to influence or control the organization's assets, e.g., founders, directors, officers, key employees. The founder is an insider, and so, by relationship, is conduct that channels org earnings to the founder's family.
+- It is **absolute / per se**: "even minimal or incidental private inurement is a violation." There is **no de minimis exception**.
+- **Consequence:** failure of the operational test → the IRS can **revoke** 501(c)(3) status. Revocation means losing the ability to receive tax-deductible donations and the org's income becoming subject to federal corporate income tax.
+- Common inurement examples that map directly to this situation: **excessive compensation for insiders**, below-market loans to insiders, buying goods/services from insiders at inflated rates.
+- Sources: https://www.irs.gov/charities-non-profits/charitable-organizations/inurement-private-benefit-charitable-organizations · https://charitylawyerblog.com/2024/09/23/private-inurement-benefit/ · https://nonprofitlawblog.com/private-benefit-rules-part-ii-private-inurement-doctrine/
+
+Note: paying a family member a **reasonable** salary for **actual services** is NOT inurement. Inurement is about *excess* — paying above fair value, or paying for no real work. So the entire compliance game is proving the pay is reasonable and the work is real.
+
+### 1b. The private benefit doctrine (broader, secondary)
+Distinct from inurement, the private benefit doctrine applies to *anyone* (not just insiders) and is **not** absolute — incidental private benefit is permitted if it is insubstantial and secondary to the public good, assessed both qualitatively and quantitatively. Relevant only as a backstop here; the mother is an insider's family member, so inurement/§4958 is the live issue. (Same sources as above.)
+
+### 1c. Disqualified persons — who they are (IRC §4958)
+IRC §4958 imposes excise taxes on "excess benefit transactions" between an **applicable tax-exempt organization** (a 501(c)(3) or 501(c)(4)) and a **disqualified person**. Source: https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions · 26 U.S.C. §4958: https://www.law.cornell.edu/uscode/text/26/4958
+
+- **Disqualified person** = any person who was, **at any time during the 5-year period ending on the date of the transaction** (the "lookback period"), in a position to **exercise substantial influence** over the affairs of the organization (IRC §4958(f), §4958(f)(1)(A)).
+- Categories **deemed** to have substantial influence: voting members of the governing body; presidents/CEOs/COOs; treasurers/CFOs; **founders**; and **substantial contributors**.
+- **The founder is a disqualified person.** Therefore, under §4958(f)(1)(B), so is a **member of the founder's family**.
+- Also disqualified: **35%-controlled entities** — entities in which disqualified persons own more than 35% of the voting power / profits / beneficial interest (§4958(f)(3)).
+
+### 1d. Family members of a disqualified person (the critical definition for the mother)
+§4958 defines family by reference to **IRC §4946(d)**, but **broadened**. Source: https://www.law.cornell.edu/uscode/text/26/4946 · https://www.irs.gov/charities-non-profits/charitable-organizations/member-of-the-family
+
+- **§4946(d) base definition** — family includes **only**: the individual's **spouse, ancestors, children, grandchildren, great-grandchildren, and the spouses of children, grandchildren, and great-grandchildren.** ("Ancestors" includes **parents** and grandparents.)
+- **§4958 expansion** — for excess-benefit purposes, family **also** includes the individual's **brothers and sisters (whole or half blood) and their spouses.**
+- **Application:** the founder's **mother is an "ancestor"** → she is squarely a family member → she is a **disqualified person** with respect to the organization. (Note: under the narrower §4946 list, aunts/uncles/cousins are *not* family; but parents/mother always are.)
+
+### 1e. Excess benefit transaction — what triggers the tax
+An **excess benefit transaction** is one in which an economic benefit is provided by the org, **directly or indirectly**, to or for the use of a disqualified person, and **the value of the economic benefit exceeds the value of the consideration** the org receives (IRC §4958(c)). Source: https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions-excess-benefit-transactions
+
+- For compensation, the "excess" is any amount paid **above reasonable compensation** for the services actually rendered.
+- **Reasonable compensation** = the amount that would **ordinarily be paid for like services by like enterprises (taxable or tax-exempt) under like circumstances**, valued as of the date the comp arrangement is made.
+
+### 1f. The excise taxes / intermediate sanctions (IRC §4958)
+Two tiers on the disqualified person, plus a manager tax. Source: https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions-excise-taxes · 26 U.S.C. §4958
+
+- **First-tier tax — 25%** of the excess benefit, on the **disqualified person** who received it (§4958(a)(1)).
+- **Second-tier tax — 200%** of the excess benefit, on the disqualified person, **if the transaction is not "corrected" within the taxable period** (§4958(b)).
+  - **Taxable period** = from the date of the transaction until the **earlier** of (i) the date the IRS mails a notice of deficiency, or (ii) the date the first-tier tax is assessed (§4958(f)(5)).
+  - **Correction** = "undoing the excess benefit to the extent possible" and restoring the org to at least the financial position it would have been in had the disqualified person dealt at arm's length — i.e., the person **pays the excess back** (with interest). There is a **90-day correction period** to abate the 200% tax if corrected after assessment.
+- **Manager tax — 10%** of the excess benefit, on any **organization manager** who participated, **capped at $20,000 per transaction** (§4958(a)(2), §4958(d)(2)).
+  - **Organization manager** = any officer, director, or trustee, or anyone with similar powers/responsibilities.
+  - Triggered **only if all three**: (1) the 25% tax is imposed on the disqualified person, (2) the manager **knowingly** participated (actual knowledge of facts making it an EBT), and (3) participation was **willful and not due to reasonable cause.**
+- These are reported/paid on **Form 4720**.
+- §4958 is an **"intermediate" sanction** — a penalty short of revocation. But the IRS can still revoke for inurement in egregious cases, *and* impose §4958 taxes; they are not mutually exclusive.
+
+---
+
+## 2. The "Rebuttable Presumption of Reasonableness" — the safe harbor (Treas. Reg. §53.4958-6)
+
+This is the mechanism that protects the org and the mother. If all three steps are met, the IRS **presumes** the compensation is reasonable; the burden shifts to the IRS to produce contrary evidence to rebut it. Source (full reg): https://www.law.cornell.edu/cfr/text/26/53.4958-6 · https://www.irs.gov/charities-non-profits/charitable-organizations/rebuttable-presumption-intermediate-sanctions
+
+### Step 1 — Approval in advance by an authorized body with NO conflict of interest (§53.4958-6(c)(1))
+- **Authorized body** (§53.4958-6(c)(1)(i)) = the **governing body** (board), OR a **committee** of the board (as state law permits), OR other parties authorized by the board under specified procedures.
+- A member who answers questions and then **recuses** (leaves debate and the vote) is **not counted** in the reviewing body (§53.4958-6(c)(1)(ii)).
+- A member has a **conflict of interest** (and must be excluded) if they (§53.4958-6(c)(1)(iii)):
+  - **(A)** are the disqualified person participating in / benefiting from the arrangement, **or that person's family member** → *the mother herself cannot be on the approving body, and neither can the founder (her child), because the founder is her family member;*
+  - **(B)** are in an **employment relationship subject to the direction or control** of the disqualified person;
+  - **(C)** receive compensation or payments **subject to approval by** the disqualified person;
+  - **(D)** have a **material financial interest** affected by the transaction;
+  - **(E)** approve a transaction providing benefits to someone who **reciprocally** approves benefits to them.
+- **Practical takeaway:** the body that approves the mother's salary must consist of people who are not the mother, not the founder, and not under either's control or pay.
+
+### Step 2 — Reliance on appropriate comparability data / fair market value (§53.4958-6(c)(2))
+- General standard: the body must have **information sufficient to determine whether the compensation in its entirety is reasonable.** Acceptable data:
+  - compensation paid by **similarly situated organizations (taxable and tax-exempt)** for functionally comparable positions;
+  - the **availability of similar services in the geographic area** (here: Lagos / regional coordinator roles in Nigeria);
+  - **current compensation surveys** compiled by independent firms;
+  - **actual written offers** from similar institutions competing for the services.
+- **Special rule for small organizations (§53.4958-6(c)(2)(ii)):** if the org has **annual gross receipts (including contributions) of less than $1 million**, the body satisfies the data requirement by relying on data on compensation paid by **THREE comparable organizations** in the **same or similar communities** for **similar services.** *Education for Equality will be well under $1M, so the minimum is 3 comparables.*
+  - Small-org gross receipts may be **averaged over the three prior years** (§53.4958-6(c)(2)(iii)), and controlled entities' receipts are aggregated.
+
+### Step 3 — Contemporaneous documentation (§53.4958-6(c)(3))
+- The written record (minutes) must state:
+  - **(A)** the **terms** of the transaction approved and the **date** of approval;
+  - **(B)** the **members present** during debate and **who voted**;
+  - **(C)** the **comparability data obtained and relied upon, and how it was obtained**;
+  - **(D)** any **actions by conflicted members** (e.g., that the mother/founder left the room).
+- **(§53.4958-6(c)(3)(ii))** If the comp is set **outside the range** of the comparability data, the minutes must record the **basis for that determination.**
+- **Timing ("concurrently") rule:** records must be prepared **before the later of (a) the next meeting of the authorized body, or (b) 60 days after the final action.** Beyond that, the documentation is not "contemporaneous."
+
+### How to document a related-party comp decision to be safe — concrete checklist
+1. Recuse the mother **and** the founder (her child) from the discussion and vote; note their departure in the minutes.
+2. Gather **≥3 comparables** for "Regional Coordinator / program coordinator" roles in Lagos / Nigeria (salary surveys from NGO-sector sources, written offers, or local market data). Keep the source documents.
+3. Have the **independent members** review the data and set the salary **within the comparable range**; if outside, write down why.
+4. Minute everything per (A)–(D) above, including the data and how it was obtained.
+5. Finalize the minutes **within 60 days / before the next meeting.**
+6. Keep the comparables and minutes on file permanently (this is your evidence if ever audited or diligenced).
+
+---
+
+## 3. Form 990 disclosure: family relationships, related-party transactions, COI policy, recusal
+
+### 3a. Core Form 990, Part VI (Governance)
+Source: https://www.irs.gov/instructions/i990 · https://candid.org/blogs/what-form-990-says-about-a-nonprofit-common-misconceptions-forms-990/
+- **Part VI, Line 2** asks whether any officer/director/trustee/key employee had a **family relationship or business relationship** with any other such person. A founder + mother both in leadership/staff roles is exactly what this captures → you must answer **Yes** and explain.
+- **Part VI, Line 12** asks whether the org has a **written conflict of interest policy**, whether **officers/directors/key employees are required to annually disclose** interests that could give rise to conflicts, and whether the org **regularly and consistently monitors and enforces** compliance. (The IRS expects all three.)
+- Part VI also asks (Line 15) whether the process for determining compensation of top management/officers included **review and approval by independent persons, comparability data, and contemporaneous substantiation** — i.e., it asks you to confirm you followed the rebuttable-presumption process.
+
+### 3b. Schedule L — Transactions with Interested Persons
+Source: https://www.irs.gov/instructions/i990sl · https://www.irs.gov/charities-non-profits/form-990-filing-tips-schedule-l-transactions-with-interested-persons
+- **Part I — Excess Benefit Transactions:** reports any §4958 excess benefit transactions with disqualified persons (you do NOT want to ever report here).
+- **Part II — Loans** to/from interested persons (incl. salary advances, split-dollar life insurance).
+- **Part III — Grants or Assistance** to interested persons (any amount; e.g., scholarships).
+- **Part IV — Business Transactions with Interested Persons.**
+- **"Interested person"** (Parts II–IV) includes: current/former officers, directors, trustees, key employees; **founders**; **substantial contributors** (Schedule B, generally $5,000+); **their family members**; and **35%-controlled entities**; (Part III also adds grant-selection-committee members).
+- **"Family member"** for Schedule L tracks the broad §4958 set: **spouse, ancestors (parents/grandparents), siblings (whole/half) and their spouses, children, grandchildren, great-grandchildren, and spouses of children/grandchildren/great-grandchildren.**
+- **Part IV reporting thresholds** — report a business transaction with an interested person if **any** of these is met:
+  - (a) **aggregate** payments during the year between org and interested person **exceeded $100,000**;
+  - (b) a **single transaction** exceeded the **greater of $10,000 or 1% of the org's total revenue**;
+  - (c) **compensation to a family member** of a current/former officer/director/trustee/key employee **exceeded $10,000** (whether or not reported elsewhere) — *this is the line that captures the mother's salary if she's family of an officer/director and isn't herself a listed officer/key employee;*
+  - (d) a **joint venture** where the org invested **≥$10,000** and the org's and the interested person's profit/capital interest **each exceeds 10%** at some point in the year.
+- **Practical takeaway:** the mother's compensation will very likely be disclosed on Schedule L (the **$10,000 family-compensation threshold** is low). Disclosure is normal and fine — the danger is an *undisclosed* related-party deal, not a disclosed, reasonable one.
+
+### 3c. The conflict-of-interest policy the IRS expects — Form 1023 Appendix A Sample COI Policy
+Source: https://www.irs.gov/instructions/i1023 · https://www.irs.gov/charities-non-profits/form-1023-purpose-of-conflict-of-interest-policy · sample text: https://www.fredla.org/wp-content/uploads/2016/01/sample-conflict_of_interest-policy.pdf · annotated: https://www.ncfp.org/download/conflicts-interest-irs-sample-policy-annotated-grantmakers-0
+
+The IRS includes a model COI policy in the Form 1023 instructions (Appendix A). It is not mandatory verbatim, but adopting it (or close to it) is strongly expected. Structure:
+- **Article I — Purpose:** protect the org's interest when a transaction might benefit a private interest of an officer/director; supplements (does not replace) applicable laws on nonprofits/charities.
+- **Article II — Definitions:** **Interested Person** (any director, principal officer, or member of a committee with board-delegated powers who has a direct/indirect **financial interest**); **Financial Interest** (an ownership/investment interest, a compensation arrangement, or a potential ownership/compensation arrangement with the org or with any entity/individual the org is transacting with).
+- **Article III — Procedures:**
+  - **(a) Duty to Disclose** the financial interest and all material facts to the directors/committee.
+  - **(b) Determining whether a conflict exists:** after disclosure and answering questions, **the interested person leaves the meeting** while the board/committee discusses and votes on whether a conflict exists.
+  - **(c) Addressing the conflict:** the interested person may make a presentation but **must leave the meeting during the discussion of, and the vote on, the transaction**; the board considers/investigates **alternative transactions** not producing a conflict; if no reasonable alternative, the board determines by **majority vote of the disinterested directors** whether the transaction is in the org's best interest, for its own benefit, and **fair and reasonable.**
+  - **(d) Violations:** if the board has reason to believe a member failed to disclose, it informs the member and gives a chance to explain; if it finds intentional non-disclosure, it takes **appropriate disciplinary and corrective action.**
+- **Article IV — Records of Proceedings:** minutes must contain the **names of persons who disclosed** or were found to have a financial interest, the nature of the interest, any determination of whether a conflict existed, **and the names of persons present for discussions/votes, the content of the discussion (incl. alternatives considered), and a record of the vote.**
+- **Article V — Compensation:** a voting member of the board **who receives compensation** from the org **may not vote** on matters pertaining to that member's compensation; the same restriction applies to committee members and to anyone whose comp is being decided — they **may not vote and must not be present** for the discussion/vote (they may provide information).
+- **Article VI — Annual Statements:** each director/officer/committee member signs an annual statement affirming they received the policy, read it, agree to comply, and understand the org is charitable and must engage primarily in exempt activities.
+- **Article VII — Periodic Reviews:** to ensure the org operates consistent with charitable purposes and doesn't engage in inurement/private benefit — including periodic review of whether **compensation arrangements are reasonable, based on competent survey data, and the result of arm's-length bargaining.**
+- **Article VIII — Use of Outside Experts:** the org may use outside advisors in conducting periodic reviews; this does not relieve the board of its responsibility.
+
+### 3d. Recusal requirement (the single most load-bearing procedural rule here)
+Across §53.4958-6, the 1023 sample policy, and the §4958 manager rules: the mother (the interested person) and the founder (her family member) **must not be present for, and must not vote on, the decision setting the mother's compensation.** The independent members decide; the recusal is recorded in the minutes.
+
+---
+
+## 4. Handling this BEFORE a board exists (pre-incorporation)
+
+Key fact: **the §4958 / inurement standards apply before and after the IRS recognizes 501(c)(3) status.** Compensation paid during the startup phase is **evaluated retroactively using the same standards** as for an established org. There is no "we weren't incorporated yet" excuse. Sources: https://form1023.org/can-you-pay-yourself-in-a-nonprofit · https://modventuresllc.com/can-the-founder-of-a-nonprofit-receive-a-salary/ · https://charitylawyerblog.com/2023/05/11/how-should-your-nonprofit-set-the-compensation-of-its-executives/
+
+What a careful founder does **now**, pre-incorporation, to make it clean later:
+1. **Write a real job description** for the Lagos Regional Coordinator — defined duties, deliverables, hours. The role must be a bona fide need with actual services rendered (this is what defeats inurement; pay-for-no-work is the classic violation).
+2. **Build the fair-market-value file now:** collect **≥3 comparables** for a comparable coordinator role in Lagos/Nigeria (NGO salary surveys, local market data, written quotes). Keep the documents.
+3. **Set the salary within that range** and put it in **arm's-length written terms** (an offer letter / contract: title, scope, salary, term, who she reports to).
+4. **Recruit independent directors before you finalize/ratify** — the IRS expects "enough independent board members to provide real oversight," and state law sets a minimum number of directors. Avoid a board that is just the founder + mother.
+5. **Once the board is formed, formally RATIFY** the arrangement following the full rebuttable-presumption process: independent members only (mother and founder recused), review of the comparability data, vote, and contemporaneous minutes within 60 days. Ratification minutes should reference the pre-incorporation start and confirm the terms were and remain reasonable.
+6. **Adopt the COI policy** (1023 Appendix A) at the first board meeting and have everyone sign the annual statement.
+7. Keep total founder + family compensation modest relative to budget early on — optics and inurement risk both scale with how large insider pay is versus program spending.
+
+---
+
+## 5. Funder / grant perspective: nepotism and related-party staff in due diligence
+
+How foundations view it and what they require. Sources: https://cof.org/content/conflicts-interest-and-form-1023 · https://www.ncfp.org/download/conflicts-interest-irs-sample-policy-annotated-grantmakers-0 · https://www.se4nonprofits.com/blog/qa-156-who-is-considered-a-family-member-under-nonprofit-conflict-of-interest-rules · https://giddingsconsulting.com/blog/conflict-of-interest-policy-nonprofit/ · https://www.citrincooperman.com/In-Focus-Resource-Center/Strengthening-Grantmaking-Through-Comprehensive-Due-Diligence
+
+- **Funders check for a written COI policy in grant applications.** Institutional funders **review the Form 990 carefully** as standard due diligence (and charity-rating sites base ratings on 990 data). They look at Part VI (Lines 2, 12) and Schedule L.
+- **Having the policy is the minimum; funders/IRS expect you to enforce it** — through **annual disclosures, documented discussions in minutes, and recusal** when conflicts arise.
+- **Family member is broadly defined** in good policies (immediate family — children, parents, siblings, spouses — plus household members and significant others). Best practice is to **apply the same COI review to extended family too**, even though §4946 doesn't count aunts/uncles/cousins, because related-party deals are "highly sensitive and often give rise to the perception of a conflict of interest."
+- **Nepotism doesn't disqualify you — concealment and unreasonable pay do.** The way to keep it from tanking diligence:
+  1. **Proactively disclose** the family relationship in the application narrative (don't make the funder discover it).
+  2. Show the **COI policy + recusal + comparability documentation** — i.e., demonstrate the rebuttable-presumption process was followed.
+  3. Show the role is **substantive and the pay is market-rate** (the comparables file).
+  4. Have **independent board members** who approved it — independence of the board is the thing funders scrutinize most for founder-led orgs.
+  5. Consider a **separate nepotism policy** for staff (some orgs keep board COI and staff nepotism policies separate).
+
+Foundations themselves maintain nepotism policies, COI questionnaires, and recusal/record-keeping for their own grants (e.g., Gates Foundation, Mott, MacArthur) — they expect grantees to mirror that discipline.
+
+---
+
+## 6. For-profit startups: hiring a founder's family member and what investors think
+
+Sources: https://learn.marsdd.com/article/all-in-the-family-nepotism-in-your-company/ · https://www.hrmorning.com/articles/family-hiring-nepotism-hr-playbook/ · https://www.cakeequity.com/blog/investor-ready-cap-table · https://www.naspp.com/blog/what-do-investors-look-for-on-your-cap-table · https://www.indexventures.com/rewarding-talent/founders-investors-and-employees
+
+- Hiring family is common and rising (small businesses employing an adult child of the owner are up >50% since 2018), but investors treat it as a **risk flag** to be managed, not an automatic problem.
+- **What investors scrutinize:**
+  - The **cap table** is one of the first diligence documents — they look at how equity/control is split among founders, employees, prior investors. A family member holding meaningful equity or a key role they're unqualified for is a red flag (signals governance/"alignment" risk).
+  - **Role legitimacy and market-rate comp** — is the family member actually qualified and paid like any other hire?
+  - **Concentration / control risk** — too much equity or control among the founder's family suggests "unwillingness to share risk and reward" and weak independent oversight.
+- **Risks investors worry about:** skill gaps, blurred personal/professional lines, conflicts that demoralize non-family staff, and "more companies have foundered because of marital dissolution / family fallout than I care to remember."
+- **What good practice looks like (mirrors the nonprofit answer):** **solid documentation is the safety net** — clear job description, market-rate compensation, normal performance management, and ideally the hire reviewed/approved by someone other than the related founder (a co-founder or board member). Disclose it to investors up front.
+- Net: for-profits don't have §4958 excise taxes, but the *governance hygiene* investors expect is the same — documented, arm's-length, market-rate, independently reviewed.
+
+---
+
+## 7. Nigeria angle — CAMA 2020
+
+### 7a. For a Nigerian company (if E4E registers a limited company there)
+Connected-person and related-party rules under the Companies and Allied Matters Act 2020. Sources: https://www.mondaq.com/nigeria/directors-and-officers/1060466/relationships-and-scrutinisations-the-companies-and-allied-matters-act-2020-and-transfer-pricing-in-nigeria · https://medium.com/@me_consult/powers-duties-and-liabilities-of-directors-under-cama-2020-fb3c3796b8a9 · CAMA full text: https://www.cac.gov.ng/wp-content/uploads/2020/12/CAMA-NOTE-BOOK-FULL-VERSION.pdf
+
+- **Section 303(1) — Duty to disclose interest:** a director who is "in any way, whether directly or indirectly, interested in a transaction or proposed transaction with the company" must **immediately declare the nature of the interest in writing to the directors**, specifying the particulars, and **must do so before the director profits** from the transaction.
+- **Section 305 — General/fiduciary duties:** duty to act in good faith and in the best interests of the company; to consider the company's employees, members, and (per CAMA) community/environmental impact.
+- **Section 306 — Conflict of interest:** a director must **not allow personal interest to conflict with duties to the company**; the duties include the duty **not to make secret profits** or compete with the company. These provisions are designed to prevent "sweetheart deals" or force them into arm's-length terms / disclosure.
+- **Section 312(8) — "Connected person":** a person is connected with a director if they are: (a) that director's **spouse, child or step-child (including illegitimate child)**; (b) a **body corporate** with which the director is associated; (c) a person acting as **trustee of a trust** whose beneficiaries include the director, spouse, children/step-children, or an associated body corporate; or (d) a **partner** of the director or of any connected person.
+  - *Important nuance for the mother:* §312(8)'s list of connected persons (spouse, child/step-child, etc.) does **not** expressly list a director's **parent/mother**. So if the founder is a director of a Nigerian *company*, the mother is not automatically a "connected person" under §312(8) — but the §303 duty to disclose any **direct or indirect** interest still applies, and prudent governance treats parent transactions as related-party.
+- **Financial-statement disclosure:** company accounts must disclose any transaction/arrangement entered into for a person who was a director or **connected with a director**, agreements to enter such transactions, and any other transaction in which a director had a **direct or indirect material interest** — i.e., related-party transactions get spotlighted in the accounts.
+
+### 7b. For a Nigerian nonprofit (Incorporated Trustees — CAMA Part F, the likely structure)
+This is the more relevant Nigerian vehicle for E4E. Sources: https://360solicitors.wordpress.com/2021/01/23/incorporated-trustees-under-the-new-companies-and-allied-matters-act-cama-2020/ · https://nnngo.org/compliance-guide-for-part-f-of-companies-and-matter-acts-cama/ · https://www.bsum.edu.ng/journals/law/vol12n2/files/11.pdf
+
+- **Minimum two trustees** (Sections 823–826); a registered association must have a **constitution** (Section 827) specifying name, objects, member contributions, fund-disbursement procedures, and accounting/auditing.
+- **No-profit-to-members rule (Section 838):** the **income and assets must be applied solely to promote the association's objects, and no portion may be paid or transferred, directly or indirectly, to a member by way of dividend, profit, or bonus.**
+  - **Express exception:** the prohibition **permits "bona fide payment to officers or servants of the association who have rendered actual services"** — i.e., **reasonable remuneration for real work is allowed.** Trustees may receive salaries, and council members may be reimbursed for expenses or paid rent for premises leased to the association.
+  - *Application:* paying the mother as Lagos Regional Coordinator is **permissible** under Part F **only if** it is bona fide payment for **actual services** at a **reasonable** amount — same substantive standard as the US "reasonable compensation" test.
+- **CAC oversight (Section 839):** the Corporate Affairs Commission can **suspend trustees and appoint interim managers** where the association's affairs are run **fraudulently or there is mismanagement of funds**, for protection of property, or in the public interest (subject to court order). This is a real enforcement teeth for self-dealing by trustees.
+- **Filing:** biennial **statement of affairs** (Form **CAC/IT 05**, Section 845) and **annual returns** filed between **1 July–31 December** (Form **CAC/IT 04**, Section 848).
+- **Governance norm:** even though Part F doesn't contain a §4958-style excise-tax regime, the combination of (838) no-private-benefit + (839) CAC suspension power means the **same disciplines apply**: document that the mother's pay is for actual services, set it at a reasonable/market rate, and have trustees who are not the beneficiary approve it. Best practice (per NGO-sector guidance, e.g., NNNGO) is to adopt a written **conflict-of-interest policy and constitution provisions** requiring trustee disclosure and recusal.
+
+---
+
+## Synthesis: the single playbook that satisfies all jurisdictions and funders
+
+The US §4958 rebuttable-presumption process happens to satisfy CAMA's "bona fide reasonable remuneration" standard and funders' due-diligence expectations simultaneously. Do all of this:
+
+1. **Bona fide role:** real job description, real duties, real deliverables for the Lagos Regional Coordinator.
+2. **Comparability file:** ≥3 comparable Lagos/Nigeria coordinator salaries; set pay within range. (Under $1M gross receipts, 3 comparables is the regulatory minimum.)
+3. **Arm's-length written contract** at market rate.
+4. **Independent approval:** mother AND founder recused; independent directors/trustees decide and vote.
+5. **Contemporaneous minutes** within 60 days, recording terms, date, who voted, the comparability data and how obtained, and the recusals.
+6. **COI policy** (Form 1023 Appendix A) adopted; annual signed disclosure statements; same recusal discipline in the Nigerian Incorporated Trustees constitution.
+7. **Disclose proactively** — on Form 990 Part VI Line 2 (family relationship) and Schedule L Part IV ($10k family-comp threshold), in the Nigerian accounts, and in grant applications.
+8. **Pre-incorporation:** build the comparables file and arm's-length terms now; **ratify** through the full process once the independent board exists.
+
+Key sources (primary law): 26 U.S.C. §4958 (https://www.law.cornell.edu/uscode/text/26/4958); 26 U.S.C. §4946 (https://www.law.cornell.edu/uscode/text/26/4946); Treas. Reg. §53.4958-6 (https://www.law.cornell.edu/cfr/text/26/53.4958-6); IRS Intermediate Sanctions (https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions); IRS Schedule L Instructions (https://www.irs.gov/instructions/i990sl); IRS Form 1023 Instructions / Appendix A (https://www.irs.gov/instructions/i1023); CAMA 2020 full text (https://www.cac.gov.ng/wp-content/uploads/2020/12/CAMA-NOTE-BOOK-FULL-VERSION.pdf).
+
+One caveat worth flagging to the user: I could not parse a few IRS PDFs (the CPE article and the COF foundations PDF) directly because WebFetch can't read those binary PDFs — but the substance from those documents was confirmed via the statute, the CFR regulation, and multiple clean secondary sources, so the figures and section numbers above are corroborated. This is research, not legal advice; before finalizing, a nonprofit attorney should bless the comparables and the ratification minutes.
+agentId: afae91eadfcb076eb (use SendMessage with to: 'afae91eadfcb076eb' to continue this agent)
+<usage>subagent_tokens: 69296
+tool_uses: 29
+duration_ms: 353516</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

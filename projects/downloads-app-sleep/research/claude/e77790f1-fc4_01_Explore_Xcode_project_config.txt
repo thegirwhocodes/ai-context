@@ -1,0 +1,158 @@
+========================================================================
+AGENT RESEARCH: Explore Xcode project config
+Session: e77790f1-fc44-416a-b46f-7434599f1ba9
+Time: 2026-06-05 20:19:32 UTC
+========================================================================
+
+Explore the Xcode project configuration for the app at /Users/naomiivie/Downloads/App/Sleep/.
+
+Read /Users/naomiivie/Downloads/App/Sleep/ShutdownApp.xcodeproj/project.pbxproj and report:
+1. What targets exist (app targets, test targets, extension targets) and their names
+2. For each target: the bundle identifier (PRODUCT_BUNDLE_IDENTIFIER), deployment target / SDK (macOS vs iOS), and which source files belong to it
+3. Code signing / development team settings (DEVELOPMENT_TEAM)
+4. Entitlements files referenced and any App Groups, iCloud/CloudKit, FamilyControls capabilities
+5. Whether there's ONE project with both a macOS and iOS target, or how the two apps relate
+6. Any embedded app extensions and how they're wired
+
+Also read /Users/naomiivie/Downloads/App/Sleep/ShutdownApp/ShutdownApp.entitlements and any other .entitlements files you can find under the repo.
+
+Be concrete. Quote exact identifier strings and build setting values. Do NOT edit anything. Return a structured summary.
+
+----------------------------------------
+
+Perfect. Now I have all the information I need. Let me compile the comprehensive report.
+
+## Xcode Project Configuration Summary
+
+### Project Overview
+Single Xcode project (`ShutdownApp.xcodeproj`) containing **ONE macOS app and ONE iOS app**, along with test targets and app extensions.
+
+---
+
+### Targets
+
+#### 1. **ShutdownApp** (macOS App Target)
+- **Product Type:** `com.apple.product-type.application`
+- **Product Name:** `ShutdownApp.app` (display name: "Sleep Well")
+- **Bundle Identifier:** `com.sleep.ShutdownApp`
+- **Platform/SDK:** macOS (project-level `SDKROOT = macosx`)
+- **Deployment Target:** macOS 14.0 (`MACOSX_DEPLOYMENT_TARGET = 14.0`)
+- **Development Team:** Not explicitly set in target build settings (inherits from project or Xcode defaults)
+- **Code Signing:** `CODE_SIGN_STYLE = Automatic`
+- **Entitlements File:** `ShutdownApp/ShutdownApp.entitlements`
+
+**Source Files Included:**
+- ShutdownAppApp.swift
+- ContentView.swift
+- AmbientView.swift
+- CountdownView.swift
+- ShutdownManager.swift
+- JailbreakManager.swift
+- QuotesProvider.swift
+- SettingsView.swift
+- Assets.xcassets (resources)
+
+---
+
+#### 2. **SleepWelliOS** (iOS App Target)
+- **Product Type:** `com.apple.product-type.application`
+- **Product Name:** `SleepWelliOS.app`
+- **Bundle Identifier:** `com.sleepwell.ios`
+- **Platform/SDK:** iOS (`SDKROOT = iphoneos`)
+- **Deployment Target:** iOS 16.0 (`IPHONEOS_DEPLOYMENT_TARGET = 16.0`)
+- **Target Devices:** iPhone & iPad (`TARGETED_DEVICE_FAMILY = "1,2"`)
+- **Development Team:** `DEVELOPMENT_TEAM = 7RTTC5R7ZQ` (both Debug & Release)
+- **Code Signing:** `CODE_SIGN_STYLE = Automatic`
+- **Entitlements File:** None referenced (no entitlements file in project)
+
+**Source Files:**
+Uses `PBXFileSystemSynchronizedRootGroup` - files automatically discovered from the `SleepWelliOS/` directory. Includes:
+- SleepWelliOSApp.swift
+- ContentView.swift
+- Managers/ (ScheduleManager.swift, AppBlockerModel.swift, AuthorizationManager.swift)
+- Shared/ (PassManager.swift, QuotesProvider.swift, Extensions.swift)
+- Views/ (AmbientView.swift, SettingsView.swift, AppSelectionView.swift, OnboardingView.swift, etc.)
+- Assets.xcassets
+
+---
+
+#### 3. **SleepWelliOSTests** (Unit Test Target)
+- **Product Type:** `com.apple.product-type.bundle.unit-test`
+- **Bundle Identifier:** `com.sleepwell.ios.tests`
+- **Platform/SDK:** iOS (`SDKROOT = iphoneos`)
+- **Deployment Target:** iOS 16.0
+- **Development Team:** `DEVELOPMENT_TEAM = 7RTTC5R7ZQ`
+- **Test Host:** `$(BUILT_PRODUCTS_DIR)/SleepWelliOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SleepWelliOS`
+- **Uses:** `PBXFileSystemSynchronizedRootGroup` for automatic source discovery
+
+---
+
+#### 4. **SleepWelliOSUITests** (UI Test Target)
+- **Product Type:** `com.apple.product-type.bundle.ui-testing`
+- **Bundle Identifier:** `com.sleepwell.ios.uitests`
+- **Platform/SDK:** iOS (`SDKROOT = iphoneos`)
+- **Deployment Target:** iOS 16.0
+- **Development Team:** `DEVELOPMENT_TEAM = 7RTTC5R7ZQ`
+- **Test Target:** `SleepWelliOS` (depends on)
+- **Uses:** `PBXFileSystemSynchronizedRootGroup` for automatic source discovery
+
+---
+
+### Code Signing & Development Team
+- **iOS targets (all 3):** Development Team `7RTTC5R7ZQ`, `CODE_SIGN_STYLE = Automatic`
+- **macOS target (ShutdownApp):** No explicit `DEVELOPMENT_TEAM` set in target configs; inherits from project defaults or Xcode
+
+---
+
+### Entitlements & Capabilities
+
+**Only ONE entitlements file found:**
+
+#### `/Users/naomiivie/Downloads/App/Sleep/ShutdownApp/ShutdownApp.entitlements`
+(Used by macOS **ShutdownApp** target via `CODE_SIGN_ENTITLEMENTS = ShutdownApp/ShutdownApp.entitlements`)
+
+**Capabilities Defined:**
+```xml
+<key>com.apple.security.app-sandbox</key>      <false/>
+<key>com.apple.security.automation.apple-events</key>  <true/>
+```
+
+- **App Sandbox:** Disabled (sandbox disabled)
+- **Apple Events Automation:** Enabled
+- **No App Groups, iCloud, CloudKit, or FamilyControls defined**
+
+**iOS targets:** No entitlements files referenced (will use auto-generated entitlements if needed)
+
+---
+
+### App Extensions Found
+The project contains references to three app extension directories (though they may not be fully integrated as targets in the current .pbxproj):
+
+1. **ShieldActionExtension/** → `SleepWellShieldAction.swift`
+2. **DeviceActivityMonitorExtension/** → `SleepWellMonitor.swift`
+3. **ShieldConfigurationExtension/** → `SleepWellShieldConfig.swift`
+
+**Note:** These extensions are present as source files in the repo but do NOT appear as targets in the `PBXNativeTarget` section of `project.pbxproj`. They may be:
+- Added as separate app extension targets in an upcoming update
+- Referenced but not yet fully configured in the Xcode project
+- Left for future integration with Screen Time/Family Controls APIs
+
+---
+
+### Relationship Between macOS and iOS Apps
+This is **ONE PROJECT with TWO SEPARATE PLATFORMS:**
+
+| Aspect | ShutdownApp (macOS) | SleepWelliOS (iOS) |
+|--------|-------|---------|
+| **Platform** | macOS 14.0+ | iOS 16.0+ |
+| **Bundle ID** | `com.sleep.ShutdownApp` | `com.sleepwell.ios` |
+| **Dev Team** | Not explicit | `7RTTC5R7ZQ` |
+| **Purpose** | System shutdown utility ("Sleep Well") | Sleep schedule blocker + monitoring |
+| **Entitlements** | Apple Events automation | None |
+| **Code Sharing** | Some files duplicated (QuotesProvider, Views) | Primary iOS implementation |
+
+**Conclusion:** Two distinct apps with overlapping functionality, built from a single Xcode project. Code duplication suggests potential opportunity for a shared framework, but currently they maintain separate source hierarchies.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

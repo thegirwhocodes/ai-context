@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:17:35 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Extraction prompt: Quote VERBATIM all Nigeria voice pricing. Include EVERY rate: inbound, outbound, SIP-to-SIP, SIP-to-PSTN, virtual number monthly fee, production number setup fee. Show every rate in NGN and USD.
+
+----------------------------------------
+
+The server returned HTTP 404 Not Found.
+
+The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provided fetch tool) instead of WebFetch.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,62 @@
+========================================================================
+AGENT RESEARCH: Research video agent + Instagram access
+Session: 3ca6f6d6-cc8f-48a7-ae98-043f8bea4484
+Time: 2026-04-20 01:44:51 UTC
+========================================================================
+
+Deep research task — I'm building an AI video editing agent for social media creators. Research the state of the art and answer two very specific questions.
+
+**Part 1: State of the art in AI video editing agents (2026)**
+
+Research every serious player and return a detailed landscape:
+
+1. **Submagic** — how does their AI actually work? Architecture? What models? How do they generate viral-style captions? Pricing?
+
+2. **Opus Clip** — they turn long videos into short clips. How does their "virality score" work? What signals do they use (face detection, speech energy, hook detection)?
+
+3. **Vizard / Veed / Captions.ai / Descript** — all have some AI video features. What's each one's "wow" moment? What do they do that feels agentic vs scripted?
+
+4. **Runway ML / Pika / Sora / Luma** — these are for video GENERATION not editing, but do they have editing agent features? Act-One, Aleph, etc.?
+
+5. **Research papers + open-source projects (2024-2026)**:
+   - Any recent papers on automated video editing / highlight selection / narrative understanding?
+   - LongVU, Video-ChatGPT, PLLaVA, VideoLLaMA, Gemini's video understanding
+   - Open-source: PySceneDetect, auto-editor, shotcut, etc.
+   - What's the SOTA for "understand a 30-minute video and pull the best 60 seconds"?
+
+6. **Virality / retention scoring** — is there real research on predicting video retention? What signals actually matter (hook quality, pacing, caption density, face presence, emotion peaks)?
+
+**Part 2: Instagram video access — how to LEGALLY get user's Instagram videos into the app**
+
+The user wants the agent to eventually be able to access/edit videos on the user's Instagram. Research:
+
+1. **Instagram Graph API (Meta)** — what does it allow? Can you read a user's own media (Reels, posts)? Download URLs? App review requirements? Rate limits? What permissions/scopes are needed?
+
+2. **Instagram Basic Display API** — was deprecated in Dec 2024. What replaced it?
+
+3. **Instagram Content Publishing API** — can you UPLOAD videos to a user's Instagram? Which accounts (Business/Creator required)? OAuth flow?
+
+4. **Third-party: Facebook/Meta Business SDK, Ayrshare, Buffer API, Later API** — any of these make Instagram access easier?
+
+5. **What you CANNOT do** — scraping, unofficial APIs, personal account access without Business conversion. What's the legal/TOS line?
+
+6. **Practical flow for a desktop app**: OAuth in browser → token stored locally → app fetches user's videos → edits → posts back. What's realistic? What are the gotchas (app review, Business account requirement, token expiry)?
+
+7. **Alternatives** — if Instagram API is too restrictive for a scrappy MVP, can the user just manually download their own videos and drop them into the app? What's the friction?
+
+Context: the product is "Lumina" — a desktop AI agent for creators. MVP launches for one creator (the user herself, Christian content on Instagram). Later scales to other creators. Budget is $0 for MVP.
+
+Return ~1200-1800 words of dense, practical research with specific API endpoints, rate limits, and realistic timelines for each path. Include direct URLs to official docs.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a5f0eb794e7bf68a5 (internal ID - do not mention to user. Use SendMessage with to: 'a5f0eb794e7bf68a5' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484/tasks/a5f0eb794e7bf68a5.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,63 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://raw.githubusercontent.com/getsentry/sentry-for-ai/main/skills/sentry-nex
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 20:43:06 UTC
+========================================================================
+
+URL: https://raw.githubusercontent.com/getsentry/sentry-for-ai/main/skills/sentry-nextjs-sdk/SKILL.md
+Extraction prompt: Return the complete RAW file content. Every code block, every config file, every command, verbatim. Do not summarize anything. Include the full text of instrumentation-client.ts, sentry.server.config.ts, sentry.edge.config.ts, instrumentation.ts, global-error.tsx, and next.config wrapping. Also include all withSentryConfig options, all environment variables, and the verification test code.
+
+----------------------------------------
+
+# Sentry Next.js SDK Setup Guide
+
+Based on the documentation provided, here's how to integrate Sentry into a Next.js application:
+
+## Quick Start
+
+The recommended approach is using the interactive wizard:
+
+```bash
+npx @sentry/wizard@latest -i nextjs
+```
+
+This handles login, org/project selection, SDK installation, and configuration file creation automatically.
+
+## Manual Setup Overview
+
+If you prefer manual configuration, the process involves four key files:
+
+**1. Browser Runtime** (`instrumentation-client.ts`):
+Initializes Sentry for client-side error tracking with session replay at 10% of sessions and 100% for error sessions.
+
+**2. Server Runtime** (`sentry.server.config.ts`):
+Configures Node.js server-side monitoring with local variable inclusion for better debugging context.
+
+**3. Edge Runtime** (`sentry.edge.config.ts`):
+Sets up error handling for Vercel Edge Functions and middleware.
+
+**4. Registration** (`instrumentation.ts`):
+Dispatches initialization to the appropriate config based on runtime environment, and "automatically captures all unhandled server-side request errors" (requires version 8.28.0+).
+
+## Error Boundary Configuration
+
+- **App Router**: Create `app/global-error.tsx` with the `"use client"` directive
+- **Pages Router**: Update `pages/_error.tsx` to call `Sentry.captureUnderscoreErrorException()`
+
+## Build Configuration
+
+Wrap your `next.config.ts` with `withSentryConfig()`, specifying organization slug, project slug, and authentication token for source map uploads.
+
+## Essential Environment Variables
+
+- `NEXT_PUBLIC_SENTRY_DSN` — client-side (public)
+- `SENTRY_DSN` — server/edge (private)
+- `SENTRY_AUTH_TOKEN` — source map upload authentication
+
+## Verification
+
+Test by throwing an error in a server action or client component; it should appear in your Sentry dashboard within ~30 seconds.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

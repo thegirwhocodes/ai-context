@@ -1,0 +1,50 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/page/api-reference
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 09:14:51 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/page/api-reference
+Extraction prompt: Extract all API endpoints, SIP trunk configuration details, voice API capabilities, call control features, outbound calling API, DID management
+
+----------------------------------------
+
+# CommPeak API Reference - Key Capabilities
+
+Based on the provided documentation, here's what I found:
+
+## Available APIs
+
+The page lists **7 primary API categories**:
+
+1. **Dialer API** - "Integrate voice calling into your app. Make, receive, manage calls."
+
+2. **TextPeak API** - Handles SMS messaging with send/receive capabilities
+
+3. **Cloud PBX API** - "Build powerful cloud-based phone systems"
+
+4. **Portal API** - "Access and manage CommPeak's portal functionalities programmatically"
+
+5. **PBX Stats API** - "Access real-time and historical PBX statistics"
+
+6. **LookUp API** - "Perform efficient and accurate lookups on various data points"
+
+7. **SMS Service API** - "Send and receive SMS messages globally"
+
+## Notable Gaps
+
+The landing page **does not provide detailed endpoint specifications, authentication methods, request/response formats, or specific SIP trunk configuration parameters**. For comprehensive technical details on:
+
+- Exact REST/SOAP endpoint URLs
+- SIP trunk setup procedures
+- Call control feature specifications
+- DID management workflows
+- Outbound calling parameters
+
+You would need to access the full API reference documentation linked at: `https://docs.commpeak.com/reference`
+
+The page functions as an overview portal rather than a technical specification document.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

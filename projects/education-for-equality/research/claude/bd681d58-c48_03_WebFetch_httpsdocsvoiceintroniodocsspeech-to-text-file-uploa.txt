@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.voice.intron.io/docs/speech-to-text-file-uploads/upload-file-sync
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:44:03 UTC
+========================================================================
+
+URL: https://docs.voice.intron.io/docs/speech-to-text-file-uploads/upload-file-sync
+Extraction prompt: Report the full substance: exact endpoint URL, HTTP method, auth header format, all request parameters (file field name, audio_file_name, use_diarization, language/model parameters), response shape, error codes and their meanings (especially 403 permission denied / integrator account), file limits, and anything about who can use this endpoint or account requirements. Return actual content in detail.
+
+----------------------------------------
+
+# Response
+
+Based on the provided content, I cannot fulfill your request. The web page shows a **404 error** indicating that the requested documentation page does not exist. 
+
+The page displays:
+- A navigation menu with links to various API sections (STT API, TTS API, Voice Bots API)
+- A message stating "We couldn't find the page"
+
+**No substantive technical information is available** on this page regarding:
+- Endpoint URLs or HTTP methods
+- Authentication headers
+- Request parameters
+- Response schemas
+- Error codes or their meanings
+- File limits or account requirements
+
+To obtain the API documentation details you're seeking, you would need to access an actual documentation page from the Intron Voice API, rather than this error page. The sidebar navigation suggests checking sections like `/docs/stt/streaming`, `/docs/tts/tts-generate`, or `/docs/voicebot/workflow` for relevant endpoint specifications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

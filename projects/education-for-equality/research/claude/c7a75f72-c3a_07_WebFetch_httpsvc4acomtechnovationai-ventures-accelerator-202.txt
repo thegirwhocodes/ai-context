@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vc4a.com/technovation/ai-ventures-accelerator-2026/
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-23 01:40:44 UTC
+========================================================================
+
+URL: https://vc4a.com/technovation/ai-ventures-accelerator-2026/
+Extraction prompt: What is the exact format and content of the final submission at the end of the 12-week AIVA program? What deliverables (pitch deck, video, business plan, prototype demo) are required, and what is the deadline for the Top 10 application/submission?
+
+----------------------------------------
+
+The server returned HTTP 403 Forbidden.
+
+The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provided fetch tool) instead of WebFetch.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

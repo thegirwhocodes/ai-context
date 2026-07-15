@@ -1,0 +1,159 @@
+========================================================================
+AGENT RESEARCH: Audit voice-email UI
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-09 03:07:18 UTC
+========================================================================
+
+Read every UI file in /Users/naomiivie/cortex/voice-email and write a brutal, specific audit of what's NOT startup-quality. Files to read in full:
+
+- app/globals.css
+- app/layout.tsx
+- app/page.tsx (the landing, signed-out vs signed-in branches)
+- app/voice-email-client.tsx (the main conversational UI)
+- app/digest/page.tsx
+- app/digest/digest-client.tsx
+- components/orb.tsx
+- components/wave-visualizer.tsx
+- components/use-tts.ts (just the speak() / cancel() patterns — relevant to UI feel)
+- components/use-voice.ts (same)
+
+For each file/component, list 2-5 specific weaknesses against this bar: "EXTREMELY smart, human-like, startup-quality, like Linear/Granola/Sublime quality." Be ruthless. Include things like:
+- Typography that's functional but not distinctive
+- Spacing/rhythm that's safe rather than confident
+- Motion that's basic CSS animations rather than feeling alive
+- Copy that's clear but bland
+- Color that's monochromatic to a fault
+- Components that look hand-rolled vs polished
+- Missing micro-interactions / transitions / states
+- Lack of any memorable visual signature
+
+Then, for each, propose ONE specific concrete change (not vague — name the property, the easing curve, the new typography weight, the exact copy). Don't be diplomatic — Naomi explicitly said "your UI updates are not good enough."
+
+Output under 1200 words. Goes to me to combine with external research into a final redesign plan.
+
+----------------------------------------
+
+---
+
+## BRUTAL UI AUDIT: Voice Email
+
+### globals.css
+**Weaknesses:**
+1. **Monochrome-to-a-fault palette** — purple accent, white, grays. No secondary color system, no warm/cool contrast. Feels like a placeholder theme.
+2. **Animations are mechanical** — `orb-breath` (5.5s ease-in-out) and `orb-pulse-glow` are smooth but uninspiring. No easing curves that feel "alive" (no custom cubic-bezier with asymmetric snap).
+3. **Orb gradients look hand-rolled** — radial-gradient stacks are functional but lack the subtlety of a professionally-designed light model. Compare Linear's orbs: they feel like they're _inside_ glass, not painted on it.
+4. **Typography has no hierarchy** — font-display and font-sans are both Inter, so no visual separation. Weights are 400/500/600; no 700 for emphasis.
+
+**Fix:** Replace the accent with a dual-tone (e.g., #A78BFA + #34D399 + #F59E0B in strategic spots). Add `font-display: "Sohne"` (or "Grotesk" via Vercel Fonts) for hero text. Change `orb-listen-core` animation to `cubic-bezier(0.16, 1, 0.3, 1)` for snappier response. Introduce a true shadow system in CSS (`--shadow-sm`, `--shadow-lg`) instead of relying on blur.
+
+---
+
+### layout.tsx
+**Weaknesses:**
+1. **ClerkProvider appearance is barebones** — just `dark` theme, no custom colors. Clerk UI will clash with your carefully-tuned palette.
+2. **No font optimization** — Inter is imported but no `display: "swap"` and no system font fallback strategy for fast first paint.
+3. **No metadata beyond title/description** — no Twitter card, no theme-color, no favicons. Looks unfinished.
+
+**Fix:** Add `display="swap"` to the Inter import. Set `<meta name="theme-color" content="#000000" />` in metadata. Wire Clerk colors: `appearance={{ baseTheme: dark, variables: { colorPrimary: "#A78BFA" } }}`.
+
+---
+
+### page.tsx
+**Weaknesses:**
+1. **Landing copy is generic** — "The smart, reliable email friend you wish you had." Could be any product. Zero personality, zero specificity.
+2. **Hero layout uses hard breakpoints** — `text-4xl sm:text-5xl`. No gradual scaling. A startup-quality hero would fluidly scale from mobile to desktop with `clamp()`.
+3. **Pill indicators at the bottom feel amateur** — three colored dots with labels. Visual weight is wrong (dots are too small). Reads like a feature checklist, not a design statement.
+4. **Button has no haptic/visual feedback on hover** — `btn-primary` only changes background, no shadow lift or scale.
+
+**Fix:** Rewrite headline to something with a voice (e.g., "One email at a time, by voice. No more inbox dread."). Change `text-4xl sm:text-5xl` to `text-[clamp(2rem, 5vw, 3.5rem)]`. Replace dot indicators with 3-column grid of icon+label cards with subtle hover elevation (`hover:shadow-lg hover:translate-y-[-2px]`). Add button shadow and scale: `hover:shadow-xl hover:scale-[1.02]`.
+
+---
+
+### voice-email-client.tsx
+**Weaknesses:**
+1. **Status text is blank and clinical** — "Listening…", "Thinking…", "You're caught up." No animation, no flourish. Feels robotic.
+2. **Hint text at bottom is a footnote** — "Tap to start" in tiny gray text. Should be prominent and change dynamically with oomph.
+3. **Tier pills and sender text are cramped** — `mt-7 flex items-center gap-3` with no breathing room. No background container to make it a card.
+4. **Error state is underdesigned** — red text on black with no icon or visual containment. Doesn't feel intentional.
+5. **No transition on stage changes** — jumping between idle → thinking → speaking feels jarring. No staggered fade-ins for different elements.
+
+**Fix:** Wrap status text in a container with `min-h-[6rem]` and add a subtle slide-up animation on change. Make hint text uppercase, bold (`font-semibold`), and rotate through encouraging copy ("Listening closely…", "Almost there…", "One more…"). Add a background pill around tier + sender: `bg-bg-elevated rounded-lg px-4 py-2`. Wrap errors in a red-tinted card (`bg-error/10 border border-error/30`). Add `stagger` delay to children fades.
+
+---
+
+### digest/page.tsx
+**Weaknesses:**
+1. **Unauthenticated fallback is a throwaway** — one centered card with "Sign in" button. No visual hierarchy, no context.
+2. **Zero visual distinction from voice-email-client** — users don't know they're in a different section until the layout reflows.
+
+**Fix:** Add a hero section above sign-in prompt. Use the orb icon (smaller). Headline: "Your daily digest." Explain what users will see. Add a progress bar or activity indicator showing how many emails are being processed (even if it's a skeleton loader).
+
+---
+
+### digest/digest-client.tsx
+**Weaknesses:**
+1. **Sections are plain cards with no visual rhythm** — every section is `bg-bg-surface border border-border rounded-xl p-6`. Repetitive. No alternating layouts, no color accent.
+2. **Typography is flat** — section headings are `text-sm uppercase tracking-wider`. No size variation between "Last 24 hours" (summary) and "What needs you" (signal). Hierarchy is broken.
+3. **Lists have no visual tension** — bullet points are plain `<li>` with borders. No hover states. No way to interact or take action.
+4. **Stats grid is utilitarian** — 5 columns, each with a number and label. Could be a sparkline, a bar chart, or a mini dashboard. Numbers alone are boring.
+5. **Swept section is intentionally faded** (`opacity-60`) but doesn't feel intentional, just dimmed.
+
+**Fix:** Alternate section backgrounds: Summary card stays `bg-bg-surface`, then "What needs you" gets a subtle accent background (`bg-gradient-to-br from-accent/5 to-transparent`). Make headings `text-lg font-semibold` for signal, `text-xs uppercase` for sections. Add hover effect to list items: `hover:bg-bg-elevated rounded-lg px-2 py-1 transition-all`. Replace stats grid with a simple bar chart (use SVG or a canvas lib like Recharts). Rename "Swept" to "Auto-filed" and add a success icon instead of opacity.
+
+---
+
+### orb.tsx
+**Weaknesses:**
+1. **Component is trivial** — just a div wrapper. All the work is in CSS. This is fine, but the orb itself looks "rendered" rather than "physical."
+2. **No fallback or error state** — if CSS animations fail, it's just a static gradient.
+
+**Fix:** Add a subtle particle/glow effect using `<svg>` inside for extra depth. Render concentric SVG circles that pulse independently. Or: add `box-shadow: 0 0 80px rgba(167, 139, 250, 0.2)` dynamically based on `mode` to create a physical halo.
+
+---
+
+### wave-visualizer.tsx
+**Weaknesses:**
+1. **Wave bars are too uniform in size** — 14 bars, all the same width and gap. Looks like a stock equalizer component, not custom.
+2. **Transition is linear** — `transition: height 100ms cubic-bezier(0.22, 1, 0.36, 1)` is snappy but the bars don't decelerate naturally. Should feel more "bouncy."
+3. **No spectral spread** — all bars sample the voice band equally. A pro visualizer would boost lower frequencies (bass) for visual oomph.
+4. **Color is static** — purple bars on dark background. Could shift hue based on energy levels (red hot when loud).
+
+**Fix:** Vary bar widths: `width: ${2 + i % 3}px` for subtle rhythm. Change easing to `cubic-bezier(0.17, 0.67, 0.83, 0.67)` (ease-out-bounce approximation). Sample lower frequency bins with 1.3x boost in height calculation. Add dynamic color: `background: ${level > 0.8 ? '#EF4444' : '#A78BFA'}` for "hot" feedback.
+
+---
+
+### use-tts.ts
+**Weaknesses:**
+1. **Fallback chain is invisible to user** — switching from ElevenLabs to browser TTS silently. No visual feedback that audio switched sources (voice quality drops but UI doesn't indicate why).
+2. **No playback speed control** — `rate: 1.0` is locked. Can't adjust for accessibility or preference.
+3. **Autoplay unlock pattern is byzantine** — three parallel unlock strategies (AudioContext, silent audio, SpeechSynthesis warmup). Works but feels hacky, not designed.
+4. **No per-sentence progress** — long TTS blocks don't show where you are in the text.
+
+**Fix:** Emit a visual indicator when fallback happens (e.g., tooltip: "Using device voice"). Add playback speed buttons (0.75x, 1x, 1.25x) in the UI. Simplify unlock to one pattern: `navigator.mediaSession.playbackState = "playing"` + one AudioContext resume. Add a progress bar under the status text that fills as TTS plays.
+
+---
+
+### use-voice.ts
+**Weaknesses:**
+1. **Interim transcripts are shown raw** — `voice.partial` updates constantly but has no visual styling to distinguish from final text. Could confuse users about what's "locked."
+2. **No visual mic feedback** — listening starts but there's no indicator that the browser is actually grabbing audio (different from the wave bars).
+3. **Error messages are generic** — "SpeechRecognition not available", "network error". Could be friendly.
+
+**Fix:** Style interim transcripts in lighter text (`text-text-secondary italic opacity-75`). Add a small mic icon that glows when listening (use an SVG with a pulse animation). Replace error strings with user-friendly copy ("Didn't catch that—try again?" instead of "network error").
+
+---
+
+## SUMMARY FOR REDESIGN
+
+**This UI is well-structured and functional but lacks:**
+1. **Character** — copy, color, typography are all safe. No voice.
+2. **Motion** — animations are smooth but mechanical. No personality in easing.
+3. **Depth** — flat cards, no shadows, no layering. Doesn't feel "premium."
+4. **Micro-interactions** — buttons don't delight, lists don't reward exploration, states aren't celebrated.
+5. **Visual system** — colors and spacing feel arbitrary, not intentional. No design tokens, no rhythm.
+
+**Target:** Aim for the craft of Linear, Granola, Sublime, or Vercel's own dashboards. Those products make every pixel intentional and every interaction feel like a conversation, not a transaction.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

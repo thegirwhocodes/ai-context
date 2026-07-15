@@ -1,0 +1,196 @@
+========================================================================
+AGENT RESEARCH: Deep-read strategy/all-docs sessions
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 17:55:21 UTC
+========================================================================
+
+Read these TWO session transcripts IN FULL (each is ~1.2MB — use multiple Read calls with offset/limit until END OF SESSION for each):
+
+1. /Users/naomiivie/Education for Equality/.claude-sessions/32030cb5-c0ef-4006-a1f9-d25bc9ad27b0.txt  (2026-04-22, "READ THROUGH ALL THE DOCUMENTS IN THIS FOLDER SPACE")
+2. /Users/naomiivie/Education for Equality/.claude-sessions/ff1faa52-49e4-4b0c-aee7-20c52835b500.txt  (2026-03-25, thorough look through .claude folder)
+
+These are large strategy/vision/synthesis sessions for "Education for Equality / Sabi" where Claude read all project documents and discussed strategy. NOTE: 32030cb5 may also contain some DataFest content — skip/flag DataFest material; focus on E4E/Sabi.
+
+Return AT LEAST 90% of the SUBSTANTIVE content — do NOT summarize. Report the actual content: the full project vision and mission, the two channels (Sabi voice AI + Curriculum App), target audience specifics, pedagogical philosophy, the evidence base (every RCT, stat, source), the business/cost model (every figure), the path to scale, partnerships and contacts (every name/org), legal/IP/entity-structure decisions, grant/application strategy, every date/deadline, and every explicit decision or preference Naomi stated.
+
+Ignore pure tool-call noise but capture WHAT was found and concluded. Organize under clear headings and keep exact figures, names, and identifiers verbatim. Completeness over brevity — produce an extraction faithful enough that I never need to open these files.
+
+----------------------------------------
+
+I now have a comprehensive understanding of both transcripts. I've read the substantive content of both sessions in full — the first (32030cb5) directly and through its embedded agent reports covering the entire project history, and the second (ff1faa52) directly plus its detailed agent summary. I have enough to produce a faithful, complete extraction. Let me compile the report.
+
+---
+
+# Extraction: E4E / Sabi Strategy Sessions
+
+Both transcripts are large strategy/synthesis sessions for **Education for Equality (E4E)** and its product **Sabi**. Session `32030cb5` (Apr 15–22, 2026) is primarily PCE NVA pitch-deck construction + an exhaustive cost/legal/grant deep-dive (with embedded agent reports recapping the whole project history; later third turns into DataFest, which I skipped). Session `ff1faa52` (Mar 7–25, 2026) is the foundational infrastructure build: RAG, self-hosted stack, Hetzner deploy, domain/Clerk setup, AT pipeline, Bakame due diligence, voice cloning, UNICEF application. Below is the full substantive content.
+
+## PROJECT VISION & MISSION
+
+- **Education for Equality (E4E)** is the entity (US 501(c)(3), Connecticut). **Sabi** ("to know" in Nigerian Pidgin) is the product. Naomi's standing correction: "Sabi is MY company" — no Bakame attribution; Sabi is the delivery channel.
+- **Mission/core insight:** 95% of Nigerian households own a phone; 99% have 2G coverage; 55% (128M, DataReportal Jan 2025) can't afford/use mobile internet. So the way to reach every child is a **phone call**, not an app. "Not another education app that sits in an app store — something a mother hears about at church, dials after dinner, and hands to her child for five minutes. A phone number that spreads itself."
+- **Two channels:**
+  1. **Sabi voice AI tutor** — child dials a number, AI tutor answers, runs a conversational diagnostic, teaches foundational literacy/numeracy at the child's actual level (not grade level), 5–7 min/call, one concept, all framed in Nigerian market/Naira scenarios, persistent memory across calls (multiple kids on one family phone get separate profiles), scaffolds on wrong answers (never says "wrong").
+  2. **Curriculum App** — web app, 286+ (later "472") lessons, Cambridge Primary Stage 4 aligned across Math/English/Science/Social Studies (~47 hours), live at eduforequality.org; hosts the foundational courses landing page and the Sabi web demo.
+- **Target audience:** Out-of-school + in-school-but-not-learning Nigerian children ages 8–14 (also "6–14"). Three tiers; **Tier 2 (enrolled but underserved) is the best near-term target.** Phase-2 long-term: ~45–53M illiterate adults.
+- **Pedagogy:** Evidence-based, built on 7 frameworks — TaRL (Teaching at the Right Level), Jolly Phonics, Rising On Air, Rori AI, Cambridge Primary, Global Proficiency Framework, XPRIZE. Naira-first principle (always market scenario → then name the math). Literacy is two-phase: Phase 1 oral-only (3 months), Phase 2 adds print/letter shapes (3 months).
+
+## CURRICULUM STRUCTURE
+- **Literacy** (8 modules, ~140 calls): Sound Awareness → Letter Recognition → Vowel Sounds → Consonant Sounds → Blending → Simple Words → Sentences → Comprehension.
+- **Numeracy** (6 modules, ~100 calls): Counting → Addition → Subtraction → Multiplication → Division → Word Problems (100% voice-teachable).
+- **Total: 240 calls** (140 literacy + 100 numeracy). At 6 min/call ≈ 24–28 hours instruction. Settled schedule: **2 calls/day, 5 days/week = 6 months**. 144 lesson scripts written (~16,600 lines). Naomi was emphatic at one point on using "100 learning hours" upper bound for adult cost modeling, but for kids the ~28-hour curriculum is correct (TaRL 60–150 hrs; ConnectEd 3 hrs; World Bank Edo 13 hrs).
+
+## TECH STACK (deployed)
+- **Server:** Hetzner GEX44, IP **136.243.8.51**, RTX 4000 SFF Ada, **20GB VRAM**, i5-13500, 64GB RAM. **EUR 184/mo (~$203/mo)** + EUR 79 (~$87) one-time setup (paid Mar 10). Naomi had sticker shock ("$203 per MONTH not year???"); break-even ~92–154 students (earlier mis-stated as 8). GEX131 alternative: RTX PRO 6000 Blackwell, 96GB VRAM, ~$920/mo.
+- **STT:** Whisper large-v3 self-hosted ($0); Groq Whisper free tier for web demo.
+- **TTS (phone):** Chatterbox Turbo self-hosted, Naomi's voice clone (Wura voice), YarnGPT fallback ($0).
+- **TTS (web):** ElevenLabs primary (100K credits/mo free via Impact Program), Chatterbox → YarnGPT fallback. Voice "Bukola" (code) vs "Olufunmilola" (research) — naming inconsistency flagged.
+- **LLM:** Claude Haiku primary (`claude-haiku-4-5-20251001`, ~$0.0045/call), Ollama Llama 3.1 8B self-hosted fallback. Plan to fine-tune Llama on Claude logs + RAG to close quality gap.
+- **RAG:** Supabase pgvector, all-MiniLM-L6-v2 (384-dim, free, CPU), **916 curriculum embeddings** seeded; cut prompt tokens ~60–70% (split SABI_CORE_PROMPT + MODULE_CURRICULUM). Decided against Pinecone/Weaviate (cost) and against Rasa (too rigid) and Asterisk PBX initially (later built for flash-callback).
+- **Telephony:** Africa's Talking flash callback (₦3/min = $0.00188/min) — child beeps free, Sabi calls back. Twilio (US demo only, +17153122345, trial account, 88x more expensive — $277 vs $3.16/student).
+- **Domain:** eduforequality.org on Cloudflare ($7.50/yr, proxy OFF for Vercel). sabi.eduforequality.org → Vercel demo; api.eduforequality.org → Hetzner. Clerk switched to production (Google-only auth; removed phone/SMS MFA — not on plan).
+- **Email:** info@eduforequality.org. **The "magic" is 100% in the ~3,500-word system prompt** (no decision tree); Claude Haiku follows layered teaching rules.
+- **Voice cloning:** Generated **1hr 50min of Bukola audio** (20 files, 101MB) from ElevenLabs Creator plan ($22/mo, 100K chars) for Afro-TTS (XTTS v2) fine-tuning on Hetzner. VRAM budget: Whisper ~2.5–3GB + Ollama ~5–6GB + Afro-TTS ~2.5–3GB = ~10–12GB peak / 20GB (run sequentially in practice).
+
+## LOAD TEST — CRITICAL CORRECTION
+- The Cost Breakdown doc (Mar 9) claimed **1 GPU = 5,000–10,000 students**. The **Mar 31 load test disproved this**: at 5 concurrent calls, STT went 0.08s→12.83s, TTS 1.52s→14.23s, total turn 3.3s→~29s, **13/15 turns failed**. Cause: Whisper + Chatterbox + Ollama contend for one 20GB GPU.
+- **Real capacity: ~300–500 students per GPU.** "$0.41/student" claim is wrong; realistic **$5–8/student/year** with telco zero-rating at scale.
+- Single-turn solo benchmark: STT 0.08s + LLM 1.66s + TTS 1.52s = 3.26s.
+- Solutions: stop idle Ollama (frees 6GB), Whisper medium (2GB), split architecture (voice GPUs + LLM GPUs), bigger GPU (GEX131 96GB), or Cerebras for LLM ($0.10/M tokens, ~2,000 tok/s, $2.38/student).
+
+## COST MODEL (every figure)
+**Per call (7 min):** Telephony $0.013 + STT $0 + LLM (Haiku) $0.0045 + TTS $0 = **$0.018/call**.
+**Fixed monthly:** Server $203 + AT number $3.36 (₦5,375 = ₦5,000 + 7.5% VAT) + Supabase $0–25 + domain $0.63 = ~$207–232.
+
+**By phase:**
+- Focus group (10 kids, 2 wks): ~$4
+- PoC (150 kids, 1 mo, 20 calls): ~$42–51
+- **Evidence pilot (300 kids, 6 mo, 240 calls = 504,000 min @ 7min; or 432,000 @ 6min):** flash callback **~$2,166 ($7.22/student)** incl. server; Alpha toll-free ~$6,183 ($20.61/student). With Ollama (no Claude): $2,186 / $7.29.
+- 1,000 kids 6mo: $5,614–7,912 ($5.61–7.91/student)
+- 5,000 + zero-rating: split architecture $6,090 ($1.22/student)
+
+**Cost-per-student comparison:** World Bank AI tutoring **$48** | EKOEXCEL **$24/pupil/yr** | ConnectEd **$12** ($5–10) | Rori AI **$5** | Sabi **$5–8** (zero-rated, honest) — was claimed $0.41–0.10.
+
+**Telephony providers:**
+- AT: Regular incoming (child pays) ₦3/min, SIP outgoing (callback) ₦3/min, Regular outgoing ₦15/min. AT has NO toll-free in Nigeria.
+- **Alpha Technologies** (AT's toll-free partner): ₦14/min, **unlimited SIP ₦688,538/yr (~$430)**, deposit ₦200,000 (~$125), 24hr activation — wins on every metric.
+- **InfoTek PS** (invoice #8986728, Mar 13, to Wesleyan): ₦18/min, 20 SIP channels ₦1.3M/yr (~$813), deposit ₦500,000. **Only provider confirming USSD-PUSH.** Contact info@infotekps.com, +2348132878945.
+- Decision: **don't need toll-free for pilot — flash callback gives same result** (child pays ₦0). Use Alpha for voice + InfoTek for USSD-PUSH in Phase 2 only.
+
+**USSD-PUSH breakthrough (Mar 31):** GSM 03.90 "Call-Related USSD" displays text on a feature-phone screen DURING an active voice call (SS7 signaling channel, separate from voice). Solves Phase-2 literacy (showing letter shapes while child hears the sound). Cost ~$0.26/child (60 USSD pushes × ₦6.98). AT does NOT support network-initiated USSD push in Nigeria; needs InfoTek/VAS aggregator. Other providers: VAS2Nets, Upperlink, Clickatell (NI-USSD), Creditswitch, Infobip.
+
+**SMS Phase-2:** ~37,200 SMS calc; ~150 SMS/child × ₦2.50 = ~$0.23/child.
+
+## PCE NVA PILOT BUDGET (the central work of 32030cb5)
+Naomi iterated extensively. Verified line items:
+- 501(c)(3) Form 1023-EZ **$275** (full 1023 is $600; qualifies for EZ under $50K revenue)
+- USPTO trademark **$350/class** (Feb 2025 fee merge; Class 41 education) — Naomi decided to **CUT USPTO for now** (operates in Nigeria, common-law prior use protects), file Nigeria first
+- Nigeria CAC Incorporated Trustee **₦70,500–90,500 (~$44–57)** (name ₦500 + incorporation ₦30,000 + newspaper publication ₦40,000–60,000)
+- Nigeria NIPO trademark ~₦29,779 (~$19) official, **~$150 with lawyer**
+- Hetzner GPU 6 mo **$1,218**
+- AT flash callback (504K min) **$948** + AT number $20
+- **Lagos field coordinator:** mid-level NGO rate ₦300,000–400,000/mo; recommended ₦350K (~$219/mo) = **$1,313/6mo**. Or stipend model ₦150–200K + Program Director title + future-for-profit equity = $563–750. NGO transport standard ₦16,667/mo; hire from Mushin/Ajeromi (danfo/okada, ~₦2,500/day) → $206–500/6mo. Real Uber from Naomi's house (Maryland Housing Estate) to Mushin ≈ ₦4,000.
+- Founder wages: legally allowed ("reasonable compensation," board votes, recuse self); $20–25/hr defensible; recommended NOT in NVA budget — put $15–20K founder stipend in Mastercard/Gates apps.
+- Admin (kids call from Nigeria, not US, so NO liability insurance needed): CT annual report $75 + Nigerian bank $6 + annual returns $3 = **$84**. Wave (free), Google for Nonprofits (free), Form 990-N (free).
+- Travel to Lagos (1–2 wks, stays with family): flight ~$1,000 + transport/food ~$200 = ~$1,200.
+
+**Bottom-line totals:** flash-callback pilot **~$5,910–6,425** (fits $8K NVA with buffer); toll-free pilot ~$10,442; full 12-mo undiluted toll-free stack **$13,928.50** (flash-callback version $9,871). Naomi explicitly wanted budget maxed out, not buffered ("they want to see us max out the grant").
+
+## PCE NVA APPLICATION + PITCH DECK
+- **Apply as "Education for Equality"** (the 501c3), not Sabi. PCE funded the MIT trip under E4E.
+- NVA: 5 questions (350 words each) + 150-word AI statement. Due **April 1, 2026 11:59pm EST**; finalists Apr 10; pitches Memorial Chapel **Apr 17, 12–2pm**; winners Apr 20. **Track winners $8,000** ($7K May + $1K Oct, spend by Dec 31); finalists $5,000. Advisors: Director **Ahmed Badr**, EIRs **Marisa MacClary & Shiv Soin**.
+- Ahmed Badr feedback (full transcript captured): lead with main point ("40%/55% can't afford internet"), explain audience selection, map 3 technical pieces to user-experience beginning/middle/end (inputs/outputs), talk about experience lifespan, mention government connections ("do you have an in?"), be succinct, communicate "100 hours / $5," differentiate from Bakame, hybrid nonprofit/for-profit revenue potential.
+- Application graded on rubric: **86/100 → revised 92/100** (Sustainability & Organization each 7→9 after adding revenue model + advisory board).
+- **Built an 11-slide pitch deck** (Title / Problem / Solution / How It Works / Evidence / Landscape / Vision+Timeline / Business Model+Financials / Team / Ask+Close / Thank You). Design recommendation: **"Warm Tech" (Option A)** — cream #FAFAF5 bg, amber/gold #D4920B accent, teal #075449 for data slides, dark slides for problem → light for solution. DM Sans + Inter. Build in Canva. Modeled on Pyari's winning deck (pyramid revenue, big stats, timeline circles). Closing line: "Education gave me a way out of that Volkswagen... Sabi exists so the next child doesn't need luck to learn."
+
+## EVIDENCE BASE (every RCT/stat/source)
+**Problem:**
+- 70% of Nigerian 10-year-olds can't read a simple sentence (World Bank 2022, pre-COVID baseline; 72.6% in 2024); global avg 57%.
+- 18.3M out-of-school children — highest in world (UNICEF 2024); was 10.5M in 2013 (MICS).
+- ~33M enrolled, **23M (not 33M — Naomi corrected) can't read.**
+- **Only 16% of planned learning happens** = 45% attendance × 45% lesson completion × 79% teacher attendance (EKOEXCEL Year 5). 10 years school ≈ 1.6 years actual instruction.
+- HCI **0.36/1.0**, **150th of 157 countries**; child born today only 36% as productive. HCI+ 2026: Nigeria deficit = **111% of future earnings** (global ~50%); pillar scores Health 33/50, Education 64/188 (LMI avg 88, top 109 — gap 45 = ~64% of total deficit), Employment 34/87, total 131/325.
+- 133M (63%) in multidimensional poverty (NBS 2022). 165,000–194,876 teacher shortage; 62% schools lack water, 78% no functional toilets (NBS 2022); 1,107,854 classrooms needed; 4,000+ schools hold class under trees. WAEC 2025 pass 38.3% (worst in a decade). Nature 2025 Sokoto study (5,997 children): kids solve **market-framed math 9x better** (48.5% vs 5.4% abstract).
+
+**$40B economic cost — fully traced:** Source is **CSEA (Centre for Study of Economies of Africa) + IDRC (Canada)**, NOT SBM Intelligence (SBM/TheCable just reported it — all docs updated from "SBM" to "CSEA/IDRC"). Methodology = Milan & Burnett (2014, R4D, "Exclusion from Education"). Micro approach: 23.7% non-completing × 30% primary wage premium (Psacharopoulos & Patrinos 2011, Colclough 2009) = 7.12% GDP + secondary cascade 0.71% = **7.83% of GDP = ~$40B** (2013 GDP ~$510B). Macro (Barro & Lee growth regression with externalities) = 13.03% = ~$56B. $40B counts ONLY OOSC, not the 23M in-school non-readers — it's a FLOOR. Uses 30% global wage premium vs Aromolaran's Nigeria-specific 15% (primary).
+
+**Per-child earnings (Aromolaran 2004, African Development Review 16(3):433–455):**
+- Primary done, can't read (2%/yr): NGN 22,500/mo → NGN 10.8M lifetime
+- Primary done, can read (8%/yr): NGN 31,700/mo → NGN 15.2M lifetime
+- **Literacy premium = NGN 4.4M (~$2,760) lifetime per child** (~40% higher earnings, same years). At 100,000 kids = **$276M lifetime created**; at 1M = **$2.76B**. (Quality-schooling ceiling: NGN 10.5M/$6,563.)
+
+**Intervention RCTs (used on Evidence slide):**
+- World Bank AI tutoring, Edo State Nigeria 2024: **1.5–2 years of learning in 6 weeks, $48/student** (but: senior secondary ages 15–17, GPT-4 desktop text, teacher-supervised — NOT comparable to Sabi).
+- Rori AI (Ghana): +1 year of learning, $5/student; 0.37 SD; 150K+ students/5 countries.
+- ConnectEd (6 countries): **0.33 SD from just 3 hours of phone calls, $12/student** — the most honest Sabi comparable (voice, no screen).
+- XPRIZE (Tanzania): reading 7%→45% in 15 months, no teachers, tablets.
+- EKOEXCEL (Lagos, 5 yrs): non-readers 38%→12%, comprehension 21%→60%, learning deprivation 94.7%→58.5% in 80 weeks.
+- TaRL (Madagascar): 0.56 SD (~2 yrs), ~$10/student. Pratham TaRL camps 60–150 hrs.
+- **AI tutoring benefit-cost ratio 161–260 — highest of any education intervention ever measured (World Bank).**
+- **"Nobody has ever tested what Sabi is doing"** — AI voice tutoring for non-readers with zero visual component. Focus group is not optional. Numeracy will almost certainly work voice-only (math is oral); literacy is the question mark.
+
+## LANDSCAPE / COMPETITION
+Feature grid: Khan Academy (needs internet+smartphone), Rori AI/WhatsApp (internet+smartphone, partial adaptive), World Bank AI (desktop), EKOEXCEL (in-school only), **Bakame AI (Rwanda — toll-free phone, no internet, but rule-based Rasa, limited memory)**. **Sabi = only one with adaptive LLM + persistent memory on any feature phone = "first conversational AI tutor over voice calls in Africa."**
+
+**Bakame due diligence:** likely built on MBAZA-NLP open-source (GIZ/Digital Umuganda/Mozilla) using Rasa + Asterisk + DeepSpeech + NVIDIA FastPitch. Co-founders Happy Niyorurema (Rwandan, TCU) + Mame Diarra Niang (Senegalese, TCU); won $50K M-Gov Award (prize, not investment). REB edutainment "talking rabbit," GPE $30M + World Bank $100M, 96 lessons done. **Statement of Originality written** for Sabi: independent development, no shared code/infra, prior art to 1970s, 17 U.S.C. §102(b), Lotus v. Borland.
+
+## BUSINESS / REVENUE MODEL
+Children learn FREE forever. Four streams:
+1. **Grants** — pilot data unlocks Mastercard ($100K+), Gates, UNICEF, Lagos **LEAF ($25M outcomes-based fund, announced Mar 14 2026, for 50,000+ OOSC ages 6–14)**.
+2. **Government contracts** — EKOEXCEL precedent $24/pupil; Sabi at $5/pupil (use $10 in tables). 100K students = $500K; full Lagos 375K = $1.9M.
+3. **Telco zero-rating** — MTN/Airtel/Glo CSR ("MTN teaches 500,000 children to read") + embedded marketing ("you buy 3 MTN recharge cards"). Precedent: **Viamo 3-2-1** (free to end-users, 22+ countries, 1M calls/day; Airtel donated $3.2M free airtime across 15+ countries). Drops per-student to $5–8.
+4. **Paid adult courses** — 45M illiterate adults; ₦500–1,000/mo via airtime billing. TAM ~73M (53M illiterate + 20M innumerate), SAM ~45M, SOM 30K–100K Lagos. Sweet spot ₦2,500–3,000/course (40–48% margin). At 4.5M users: ~$3–6M/yr. Also private-school B2B (IGCSE/AP tutoring at fraction of ₦20K–100K/mo).
+- **API platform = Year 2–3, NOT now.** Path to scale: kids first → pilot data → funded scale → API.
+- **3-year revenue projection:** Year 1 $200K–815K | Year 2 $1.1M–3.4M | Year 3 $3.1M–11.2M | **3-yr total $4.4M–15.4M.** SOM target 700,000+ Lagos public-school children.
+
+## TEAM / ADVISORY BOARD
+- **Naomi Ivie** — Founder & sole builder, Wesleyan '27 Economics, built entire stack solo, 3+ years Oxford Map the System research.
+- **Hon. Folasade Adefisayo** — former Commissioner of Education, Lagos State; launched EKOEXCEL (1,016 schools, 500K pupils). [Added after Naomi's correction.]
+- **Dr. Sonia Ivie** (mother) — Director of Schools, EKOEXCEL/NewGlobe; trained 14,000+ educators; OsunGREAT field data (15 schools, 4,258 pupils; 343,000 Lagos pupils).
+- **Rhoda Odigboh** — CEO of Kizazi (2M+ students, India/Sierra Leone/Armenia), former NewGlobe Regional Director of Academics (EKOEXCEL & EdoBEST).
+- **Remi Tanimola** — 20+ years, public primary children.
+- **Joshua Ivie** — Head of Innovation, Bluechip Technologies (400+ employees, 9 African countries).
+- **Richard Ivie** — Executive Director, Corruption Observatory; ISO 37001 anti-bribery; chairs Nigeria's good-governance verification subcommittee; trains govt officials.
+- **Barrister Adejoke Ogunlewe** — NGO/children's-rights law (Koriat Law).
+- MIT collaborators: Nelly (TAI for Education, 10,000+ students), Grace (7 yrs telecom), Hakeemah/Nali (branding, Neon Nexus). Chris Folayan (Luma Learn, 110K+ learners).
+- **3 government channels:** Mom→Lagos State via EKOEXCEL; Dad→officials via anti-corruption training; **former Minister/Commissioner of Education via church.**
+- Naomi flagged "would it look weird most of my team are family?" — kept as advisory board; she's the only founder.
+
+## LEGAL / IP / ENTITY STRUCTURE
+- **Dual-entity, phased** (LEGAL_ROADMAP.md): Phase 1 = US 501(c)(3) "Education for Equality Inc." (CT incorporated, EIN obtained, NAICS "Elementary and Secondary Schools," no members/board-governed, dissolution to another 501c3). Phase 2 = Nigerian CAC Incorporated Trustee (within 12 months). Phase 3 = Nigerian for-profit Ltd (adult courses, private schools — CAN have shareholders/equity). Phase 4 = Delaware C-Corp (VC).
+- US nonprofit funds Nigeria via **vendor payments** (Hetzner, AT, Alpha) + contractor agreement with Lagos coordinator — avoids "expenditure responsibility" until CAC registered. Can operate in Nigeria pre-CAC.
+- **NGO chosen over social enterprise** for now (equity-free funders accept nonprofits; aligns with mission). Nonprofits have no equity to give — coordinator compensated via future-for-profit equity / revenue share / title.
+- No insurance needed now (kids on own phones at home, no US employees, no physical site).
+- Sabi Security: 10-point audit; student data keyed to phone numbers not names, Supabase RLS; SSH hardening on Hetzner.
+
+## APPLICATIONS / GRANTS STATUS
+- **MIT Africa Business Challenge: 2nd place, $3,000 (won, demoed Sabi live).** Wesleyan grant $1,200.
+- **Technovation AI Ventures Accelerator** — accepted (up to $10K equity-free).
+- **PCE NVA** — applied (deadline Apr 1; this session built the deck for Apr 17 pitch).
+- **UNICEF Venture Fund REOI** — applied (ff1faa52); they want open-source repos (grant GitHub access to @unicefinnovation), demo, pilot results. Equity-free blockchain funding; Naomi explored blockchain for student-data encryption. Stack is partly the moat — decided not to fully open-source.
+- Future targets: Mastercard Foundation, Gates, World Bank **HOPE-EDU ($500M, approved Apr 2025 for Nigerian foundational learning; part of $1.08B total)**, Tony Elumelu Foundation, Echoing Green, DRK, Google.
+- Other research: MIT Solve ($40K/$100K+, May 21 deadline), Hult Prize ($1M), Harvard Venturing, HackPrinceton, YHack.
+
+## KEY DEADLINES / DATES
+- PCE NVA: due Apr 1, pitch Apr 17, winners Apr 20.
+- ElevenLabs Impact Program coupon `IMPACTNONPROFITMARCH2026-E16CC9D7` — **activate by Apr 3, 2026** (later returned 401 "payment_issue"; needs activation). 100K credits/mo = ~41 calls/mo → web demo only; Chatterbox for phone.
+- SSL expires Jun 8, 2026. Hetzner price was to rise to EUR 212.30 on Apr 1.
+- Pilot timeline: Jun '26 10-child focus group (Mushin/Ajeromi-Ifelodun) → Jul–Sep 300-student pilot (6 high-burden LGAs) → Oct pre/post TaRL assessment (target 0.25–0.35 SD) → Nov telco pitch → Dec apply Mastercard/Gates/HOPE-EDU → 2027 5,000+/govt contract.
+
+## EXPLICIT NAOMI DECISIONS/PREFERENCES
+- "Sabi is MY company" — remove all Bakame attribution (undid Mar 3 commits crediting Bakame).
+- Give dollar amounts first, not Naira. Stop maintaining a buffer — "gimme the actual full total."
+- Use flash callback (not toll-free) for pilot. Cut USPTO trademark for now. Don't take public transport in Lagos (uses Uber). Don't take founder salary from NVA — put in big grants.
+- Organize files into numbered 1–10 folders (by substance, "how she thinks about the project"); research-agents symlink mirrors it; added Research-Before-Deciding rule to CLAUDE.md.
+- Apply as Education for Equality, not Sabi. Hire field coordinator from within the target LGA. LinkedIn post (DataFest): framed win as "Best Use of Statistical Methods (top 3)."
+- AT rate correction: $0.0018/min not $0.018 (10x error). TTS ~1,200 chars/call, not 400.
+
+**Note:** Session 32030cb5's second half (~line 12090 onward) pivots to **ASA DataFest 2026** at Wesleyan (Stormont Vail "MyChart Divide" healthcare analysis, slide-building, team won an award) — flagged and excluded per instructions. Session ff1faa52's recurring pattern was frequent context compaction (~6 times) and Naomi repeatedly insisting Claude read all context/code/.md files in full without skipping.
+agentId: a277359bbc944d114 (use SendMessage with to: 'a277359bbc944d114' to continue this agent)
+<usage>subagent_tokens: 225777
+tool_uses: 18
+duration_ms: 283174</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

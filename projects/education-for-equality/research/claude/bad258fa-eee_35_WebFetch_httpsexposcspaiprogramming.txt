@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://expo.scsp.ai/programming/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:18:58 UTC
+========================================================================
+
+URL: https://expo.scsp.ai/programming/
+Extraction prompt: List the full programming for the 2026 AI+ Expo: tracks, panels, named speakers, sessions, special events. What are the main themes? Who is keynoting?
+
+----------------------------------------
+
+# 2026 AI+ Expo Programming Overview
+
+Based on the provided content, **detailed programming information is limited**. The page indicates "The 2026 agenda is now live!" with a link to view it, but the specific tracks, panels, sessions, and keynote speakers are not included in this excerpt.
+
+## What Is Available:
+
+**Featured Elements:**
+- Drone Arena Competition (May 7-9)
+- AI+ Expo Hackathon (multi-city competition)
+- AI+ Careers Stage
+- AI+ Expo Bookstore with author discussions
+
+**Confirmed Speakers:**
+The page lists 100+ speakers across government, industry, and academia, including:
+- Noubar Afeyan (Moderna/Flagship Pioneering)
+- Paul Atkins (SEC Chairman)
+- Kevin McCarthy (Former House Speaker)
+- Anne Neuberger (a16z/Former Deputy National Security Advisor)
+- Multiple tech executives from Google, OpenAI, NVIDIA, and others
+
+**Main Themes** (inferred from speaker profiles):
+Government/regulatory policy, semiconductors, cybersecurity, AI ethics, geopolitics, and workforce development.
+
+**To find complete programming details**, you would need to visit the linked agenda page at expo.scsp.ai/agenda/, as this overview page does not provide session-level breakdowns, keynote assignments, or specific track information.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,14 @@
+RESEARCH INDEX
+Generated: 2026-05-11 14:13:03
+Files: 9
+========================================================================
+
+a8c172f1-a7d_00_Hunt_for_reusable_credentials.txt  [7KB]  AGENT RESEARCH: Hunt for reusable credentials
+a8c172f1-a7d_01_Cute_commitment_app_UI_research.txt  [4KB]  AGENT RESEARCH: Cute commitment app UI research
+a8c172f1-a7d_02_Industry_research_on_key_features.txt  [5KB]  AGENT RESEARCH: Industry research on key features
+a8c172f1-a7d_03_WebFetch_httpsvercelcomdocscron-jobsusage-and-pricing.txt  [3KB]  WEBFETCH RESEARCH: WebFetch: https://vercel.com/docs/cron-jobs/usage-and-pricing
+a8c172f1-a7d_04_WebFetch_httpsvercelcomdocsmonorepos.txt  [11KB]  WEBFETCH RESEARCH: WebFetch: https://vercel.com/docs/monorepos
+a8c172f1-a7d_05_WebFetch_httpsvercelcomdocsdeployment-protection.txt  [11KB]  WEBFETCH RESEARCH: WebFetch: https://vercel.com/docs/deployment-protection
+a8c172f1-a7d_06_WebFetch_httpsvercelcomdocsprojectsenvironment-variables.txt  [9KB]  WEBFETCH RESEARCH: WebFetch: https://vercel.com/docs/projects/environment-variables
+a8c172f1-a7d_07_WebFetch_httpsdocsgithubcomenactionswriting-workflowschoosin.txt  [3KB]  WEBFETCH RESEARCH: WebFetch: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow
+a8c172f1-a7d_08_Deep_research_Go_landing_page.txt  [5KB]  AGENT RESEARCH: Deep research: Go landing page

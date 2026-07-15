@@ -1,0 +1,340 @@
+========================================================================
+AGENT RESEARCH: Research email prioritization
+Session: 0d91dd3c-6d8d-4983-b72b-a1df57377021
+Time: 2026-03-18 08:13:07 UTC
+========================================================================
+
+Research how the best email clients and AI email agents determine which emails are important vs not important. I need concrete, well-researched approaches — not vague ideas.
+
+Search the web for:
+
+1. **How Gmail's Priority Inbox works** — what signals does it use? (sender importance, open rates, reply rates, labels, stars, interaction history)
+
+2. **How Superhuman, Shortwave, Spark, and other smart email clients prioritize** — what's their approach? Do they use AI? What signals?
+
+3. **How AI email agents (Lindy AI, Fyxer AI, SaneBox, etc.) classify email importance** — what's state of the art?
+
+4. **Academic research on email triage/prioritization** — any papers on predicting which emails need a reply?
+
+5. **Specific signals that predict importance:**
+   - Sender relationship (how often you email them, do you reply to them)
+   - Whether you've replied to similar emails before
+   - Email content (questions directed at you, deadlines, action items)
+   - Thread activity (are others waiting on you)
+   - Time sensitivity (mentions of dates, "urgent", "ASAP")
+   - Whether the sender is in your contacts
+   - Whether it's a newsletter/marketing vs personal
+   - CC vs TO (are you the primary recipient)
+   - Email length and format
+
+6. **Classification categories** — what's the best way to categorize? Binary (important/not)? Tiers (urgent, needs reply, FYI, skip)? Gmail uses "important" flag — is that enough?
+
+7. **The "needs reply" problem specifically** — how do you determine if an email needs a reply vs is just informational? This is the key question for Cortex's email agent.
+
+8. **Personalization** — how does importance change per user? A professor's email is critical for a student but not for a CEO.
+
+Return specific, actionable findings with sources. I need enough detail to design a proper email prioritization system.
+
+----------------------------------------
+
+Now I have comprehensive research. Here is the full synthesis:
+
+---
+
+# Email Prioritization & Importance Detection: Research Findings
+
+## 1. How Gmail's Priority Inbox Works
+
+Google published the foundational paper ["The Learning Behind Gmail Priority Inbox"](https://research.google.com/pubs/archive/36955.pdf) (Aberdeen, Pacovsky, Slater, 2010). The core approach:
+
+**Model**: Per-user logistic regression that predicts the probability a user will act on an email. A global model provides a baseline, and individual per-user models are layered on top, updated continuously.
+
+**Signals used** (three broad categories):
+
+- **Social features**: Who sent it, how often you email them, how often you reply to them, how quickly you respond, whether you've emailed them directly before vs. being on a group thread. Prior sender-recipient interaction history is the single strongest signal group.
+- **Content features**: Keywords in subject and body (e.g., "urgent," "deadline," "meeting"), email length, presence of questions, whether the email has attachments.
+- **User action features**: Which emails the user reads, replies to, stars, labels, archives, or deletes. These past actions form the implicit training signal -- no explicit "important/not important" labeling is required, though manual corrections are incorporated as feedback.
+
+**Key architectural decisions**:
+- The model trains on implicit signals (user actions), not explicit labels
+- Logistic regression was chosen because it produces a smooth ranking function and scales to hundreds of millions of users
+- The model handles non-stationary data (user behavior changes over time)
+- Training data is noisy: users sometimes ignore important emails and read unimportant ones
+
+**Source**: [Google Research Paper](https://research.google.com/pubs/archive/36955.pdf), [O'Reilly Machine Learning for Email (Ch. 4)](https://www.oreilly.com/library/view/machine-learning-for/9781449314835/ch04.html)
+
+---
+
+## 2. How Smart Email Clients Prioritize
+
+### Superhuman
+- **Split Inbox**: Divides inbox into sections (Important, Other, or custom splits). Users can create custom splits by sender, label, or AI-powered criteria.
+- **Auto Labels**: AI-powered labels applied to every incoming email. Built-in labels include Marketing, Pitch (cold outreach), and Social (social network notifications). The key action-oriented labels are:
+  - **"Needs Response"** -- emails requiring your reply
+  - **"Awaiting Reply"** -- emails you sent that haven't been answered
+  - **"FYI"** -- informational, no action needed
+- **Auto-follow-up**: If you reply to an email seeking a response and don't get one, Superhuman surfaces it and can auto-draft a follow-up in your voice.
+- Labels are based on content, subject, sender, and recipients. The system learns and improves over time.
+
+**Source**: [Superhuman Auto Labels](https://help.superhuman.com/hc/en-us/articles/40127432866323-Auto-Labels), [Superhuman Split Inbox](https://help.superhuman.com/hc/en-us/articles/38458483333907-Custom-Split-Inbox), [TechCrunch](https://techcrunch.com/2025/02/19/superhuman-introduces-ai-powered-categorization-to-reduce-spammy-emails-in-your-inbox/)
+
+### Shortwave
+- **AI Filters**: Instead of static rules (subject contains X), you describe what you want in natural language ("emails from investors about funding") and the AI matches incoming mail.
+- **Bundles**: Groups low-priority mail (newsletters, social updates) automatically into collapsed bundles.
+- **To-Dos**: Separates actionable emails from the main inbox flow into a dedicated task system.
+
+**Source**: [Zapier Shortwave vs Superhuman](https://zapier.com/blog/shortwave-vs-superhuman/)
+
+### Spark
+- **Smart Inbox**: Automatically categorizes into three buckets:
+  - **People** -- real human correspondence
+  - **Newsletters** -- marketing/subscription content
+  - **Notifications** -- automated system emails
+- This three-way split is simple but effective at reducing cognitive load.
+
+**Source**: [Superhuman Blog on Spark](https://blog.superhuman.com/spark-ai/)
+
+### Fyxer AI
+- **Eight smart categories** applied automatically to every email:
+  - **To Respond** -- needs your reply
+  - **FYI** -- informational only
+  - **Awaiting Reply** -- you're waiting on someone
+  - **Marketing** -- promotional content
+  - **Actioned** -- already dealt with
+  - (Plus others for meetings, notifications, etc.)
+- **Dynamic re-categorization**: When you reply to a "To Respond" email, it automatically becomes "Awaiting Reply." When a thread wraps up, it becomes "Actioned."
+- Scans the most recent 300 emails on signup to learn patterns.
+
+**Source**: [Fyxer Categorization Handbook](https://support.fyxer.com/en/articles/13107658-fyxer-email-categorization-handbook), [Fyxer Help Center](https://support.fyxer.com/en/articles/10857248-understanding-how-fyxer-ai-categorizes-your-emails-in-outlook)
+
+---
+
+## 3. How AI Email Agents Classify Importance
+
+### SaneBox
+- **Architecture**: Operates at the IMAP level. Does NOT read email body content -- analyzes only headers and metadata (sender, subject, recipient list, timestamps).
+- **Training**: Scans 4-6 weeks of email headers on signup to learn patterns. Learns from which senders you reply to, how quickly, and how frequently.
+- **Folders**:
+  - **Inbox** -- important, keep here
+  - **SaneLater** -- not urgent, review later
+  - **SaneNews** -- newsletters
+  - **SaneBlackHole** -- never see again
+  - **SaneNoReplies** -- emails you sent that got no response
+- **Feedback loop**: Moving an email between folders trains the model. Reaches high accuracy within the first week.
+- **Privacy advantage**: Header-only analysis means no email content is read by their servers.
+
+**Source**: [SaneBox Help](https://www.sanebox.com/help/155-how-does-sanebox-work), [SaneBox Help: Training](https://www.sanebox.com/help/186-how-does-sanebox-determine-trainings)
+
+### Lindy AI
+- More of an AI agent platform than a classifier. Lets you build custom email triage workflows with no-code AI agents. Can filter, draft, respond, and schedule based on custom rules and AI reasoning.
+
+**Source**: [Lindy AI Email Management](https://www.lindy.ai/tools/ai-email-management)
+
+---
+
+## 4. Academic Research on Email Triage
+
+### Key Papers
+
+**"The Learning Behind Gmail Priority Inbox"** (Aberdeen et al., 2010)
+- Per-user logistic regression predicting probability of user action
+- Hundreds of features across social, content, and behavioral categories
+- [Paper](https://research.google.com/pubs/archive/36955.pdf)
+
+**"Characterizing and Predicting Enterprise Email Reply Behavior"** (Yang et al., SIGIR 2017)
+- Studied enterprise email at scale
+- Found four factors most predictive of reply: (1) history of communication with sender, (2) whether sender is internal vs external to organization, (3) size of recipient group, (4) content features
+- Smaller recipient groups get more replies. Internal senders get more replies.
+- [Paper](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/sigir17a_email.pdf)
+
+**"Email Reply Prediction: A Machine Learning Approach"** (various authors)
+- Achieved 0.72 accuracy on reply-needed classification using features: bag of words, temporal info, user-specific metadata
+- Features: sender domain, CC/BCC fields, subject content, email body, time of day, day of week
+- [SpringerLink](https://link.springer.com/chapter/10.1007/978-3-642-02559-4_13)
+
+**"Detecting Emails Containing Requests for Action"** (Lampert, Dale, Paris -- NAACL-HLT 2010)
+- Specifically tackled the "does this email need a reply" problem
+- Used email zoning (ZEBRA) to segment emails into structural zones and only analyze relevant zones for request detection
+- Used SVMs for classification
+- Defined "request" broadly: questions needing informational response count as requests since they place an obligation on the recipient
+- [ACL Anthology](https://aclanthology.org/N10-1142/)
+
+**"A Content-Based Approach to Email Triage Action Prediction"** (2019)
+- Formulated triage as a recommendation problem
+- Used content-based representation of users via their past emails
+- [arXiv](https://arxiv.org/abs/1905.01991)
+
+**Stanford CS229 Project: "Predicting Expected Email Response Times"**
+- Used metadata and content features to predict not just whether someone will reply, but how long it will take
+- [Paper](https://cs229.stanford.edu/proj2017/final-reports/5223760.pdf)
+
+---
+
+## 5. Specific Signals That Predict Importance (Ranked by Predictive Power)
+
+Based on the research, here are the signals ordered roughly by how predictive they are:
+
+### Tier 1: Strongest Signals
+| Signal | Why It Works |
+|--------|-------------|
+| **Sender-recipient interaction history** | How often you email each other, reply rate, reply speed. This is consistently the #1 predictor across all research. |
+| **Whether you're in TO vs CC** | TO = action expected from you. CC = FYI. This is a strong structural signal. |
+| **Sender is internal vs external** | Internal/known senders get far higher reply rates. |
+| **Recipient count** | Emails sent to 1-2 people get replies; emails to 20 people don't. Inverse relationship with importance to any individual. |
+
+### Tier 2: Strong Signals
+| Signal | Why It Works |
+|--------|-------------|
+| **Whether you've replied to similar emails before** | Past behavior predicts future behavior. |
+| **Email contains questions directed at you** | Direct questions ("Can you...?", "What do you think about...?") signal a reply is expected. |
+| **Thread position** | Being the last person who needs to respond in a thread. Others are waiting on you. |
+| **Sender is in your contacts / address book** | Known vs unknown sender. |
+| **Time sensitivity cues** | "ASAP," "by Friday," "deadline," dates in near future. |
+
+### Tier 3: Useful Supporting Signals
+| Signal | Why It Works |
+|--------|-------------|
+| **Email length and format** | Short personal emails need replies more than long newsletters. HTML-heavy = likely marketing. |
+| **Presence of action items** | "Please review," "Can you approve," "Let me know." |
+| **List-Unsubscribe header** | If present, it's a newsletter/marketing email, not personal. |
+| **Precedence header** | "bulk" or "list" = automated. |
+| **Attachments** | Emails with attachments are more likely to need action. |
+| **Time of day / day of week** | Business hours emails from colleagues are higher priority than weekend marketing blasts. |
+| **Subject line patterns** | "[FYI]", "Re:", "Fwd:", "Newsletter", "Weekly digest" are strong categorical signals. |
+
+---
+
+## 6. Best Classification Categories
+
+Based on what the best products actually ship, the consensus is NOT binary (important/not). Here is the recommended tier system:
+
+### Recommended: Action-Based Categories (what Fyxer and Superhuman converge on)
+
+| Category | Definition | Example |
+|----------|-----------|---------|
+| **Needs Reply** | You need to respond to this email | A colleague asks for your input |
+| **FYI** | Informational, no action needed | Meeting notes, status update |
+| **Awaiting Reply** | You replied/sent something and are waiting on them | Follow-up tracking |
+| **Notification** | Automated system email | GitHub notification, Slack digest |
+| **Newsletter / Marketing** | Subscription or promotional content | Company blog, product announcement |
+
+**Why this works better than binary**:
+- Binary "important/not" loses the crucial distinction between "needs your action" and "is interesting but doesn't need a reply"
+- The "Awaiting Reply" category is a separate axis -- it tracks your outbound obligations, not inbound
+- Newsletters and notifications are distinct from low-priority human mail
+
+**Why NOT more than 5-6 categories**:
+- More categories = more classification errors
+- Users can't hold more than ~5 mental buckets
+- The marginal value of distinguishing "urgent reply" from "reply today" is low -- time sensitivity is better handled as a flag/attribute on the "Needs Reply" category rather than a separate bucket
+
+### Optional enhancement: Priority within "Needs Reply"
+Within the "Needs Reply" bucket, you could add urgency scoring (high/medium/low) based on time-sensitivity cues, sender importance, and thread age. But keep the top-level categories simple.
+
+---
+
+## 7. The "Needs Reply" Problem
+
+This is the hardest and most valuable classification problem. Here is what the research says:
+
+### Structural signals (cheap, no LLM needed):
+- **TO vs CC**: If you're in CC, reply probability drops dramatically
+- **Recipient count**: 1 recipient = high reply likelihood. 10+ = low.
+- **Thread position**: Are you the last person addressed? Is the thread waiting on you?
+- **Prior interaction**: Do you typically reply to this sender?
+
+### Content signals (requires NLP/LLM):
+- **Direct questions**: "Can you...?", "What do you think?", "Are you available?"
+- **Action verbs directed at recipient**: "Please review," "Approve this," "Send me"
+- **Deadlines**: "By Friday," "Before the meeting," "ASAP"
+- **Conditional language**: "If you could...," "Would you mind..."
+- **Email zoning**: The Lampert et al. paper showed that request-bearing content clusters in specific zones of an email (not the signature, not the forwarded content, not the greeting). Zoning the email first and only analyzing the "new content" zone improves accuracy.
+
+### What makes this hard:
+- **Implicit requests**: "FYI, the client is unhappy" -- no explicit question, but clearly expects action
+- **Social obligations**: "Thanks for the great presentation!" -- technically doesn't need a reply, but social norms say reply
+- **Context dependence**: The same email from your boss vs. from a stranger has completely different reply obligations
+- **Thread context**: A reply that says "Sounds good!" at the end of a thread means the thread is resolved. The same words at the beginning might be ambiguous.
+
+### Practical approach for Cortex:
+With access to Claude, you can use an LLM to classify "needs reply" with a prompt that considers the email content, sender relationship (from your user profile and interaction history), and thread context. This will outperform traditional ML approaches significantly. The LLM can handle implicit requests, social context, and nuance that feature-engineering cannot.
+
+---
+
+## 8. Personalization
+
+Research confirms that importance is deeply personal. Key findings:
+
+**"Modeling Personalized Email Prioritization"** (ResearchGate) found that personalized models built from each user's social network and interaction patterns significantly outperform global models.
+
+**Gmail's approach**: A global model provides a baseline (newsletters are low priority for everyone), but per-user models layer on individual patterns. This two-tier approach is the standard.
+
+### What drives personalization for Cortex:
+
+| Personalization Factor | How to Implement |
+|----------------------|-----------------|
+| **Sender importance varies by user** | Build a per-user sender importance score from interaction history (reply rate, reply speed, email frequency) |
+| **Role context** | A professor's email matters to a student but not a CEO. The User Profile (which Cortex already builds) captures this. |
+| **Communication patterns** | Some users reply to everything; others only reply to direct asks. The model must learn the user's baseline. |
+| **Domain/organization** | Emails from your own organization are almost always more important than external cold outreach. |
+| **Explicit feedback** | When the user approves or skips an email in Cortex's email agent, that's direct training signal. |
+
+### The Cortex advantage:
+Because Cortex builds a deep User Profile and accumulates Memory facts, you have something no other email client has: a rich understanding of the user's life context. You know who their boss is, what projects they're working on, who their close contacts are, and what they care about. This context should feed directly into importance scoring.
+
+---
+
+## Actionable Recommendations for Cortex's Email Agent
+
+1. **Use 5 categories**: Needs Reply, FYI, Awaiting Reply, Notification, Newsletter/Marketing.
+
+2. **Layer the classification**:
+   - **Layer 1 (cheap, header-only)**: Newsletter detection via List-Unsubscribe header, notification detection via noreply@ sender, automated system patterns. This filters out ~50-60% of emails without touching content.
+   - **Layer 2 (metadata features)**: Sender interaction history, TO vs CC, recipient count, sender domain (internal vs external). This handles another ~20-30%.
+   - **Layer 3 (LLM classification)**: For remaining emails from real humans, use Claude Haiku to classify: "Given this email content, sender relationship, and thread context, does this need a reply from the user?" Include the user profile for context.
+
+3. **Build sender importance scores**: For each user, maintain a score per sender based on reply rate, reply speed, email frequency, and whether the sender appears in the user profile.
+
+4. **Track "Awaiting Reply" separately**: After the user sends an email through Cortex, monitor whether a response comes back. Surface unanswered threads after a configurable delay.
+
+5. **Use explicit feedback**: Every time the user approves, edits, skips, or dismisses an email in the email agent, record that as a training signal for future prioritization.
+
+6. **Present one email at a time** (which you're already planning) with the category visible, and let the user's actions implicitly train the system.
+
+---
+
+## Sources
+
+- [The Learning Behind Gmail Priority Inbox (Google Research Paper)](https://research.google.com/pubs/archive/36955.pdf)
+- [O'Reilly: Machine Learning for Email, Ch. 4 - Priority Inbox](https://www.oreilly.com/library/view/machine-learning-for/9781449314835/ch04.html)
+- [Superhuman Auto Labels](https://help.superhuman.com/hc/en-us/articles/40127432866323-Auto-Labels)
+- [Superhuman Custom Split Inbox](https://help.superhuman.com/hc/en-us/articles/38458483333907-Custom-Split-Inbox)
+- [TechCrunch: Superhuman AI-Powered Categorization](https://techcrunch.com/2025/02/19/superhuman-introduces-ai-powered-categorization-to-reduce-spammy-emails-in-your-inbox/)
+- [Zapier: Shortwave vs Superhuman](https://zapier.com/blog/shortwave-vs-superhuman/)
+- [Fyxer Categorization Handbook](https://support.fyxer.com/en/articles/13107658-fyxer-email-categorization-handbook)
+- [Fyxer: How It Organizes Your Inbox](https://support.fyxer.com/en/articles/10857248-understanding-how-fyxer-ai-categorizes-your-emails-in-outlook)
+- [SaneBox: How It Works](https://www.sanebox.com/help/155-how-does-sanebox-work)
+- [SaneBox: How It Determines Trainings](https://www.sanebox.com/help/186-how-does-sanebox-determine-trainings)
+- [Lindy AI Email Management](https://www.lindy.ai/tools/ai-email-management)
+- [Characterizing and Predicting Enterprise Email Reply Behavior (SIGIR 2017)](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/sigir17a_email.pdf)
+- [Email Reply Prediction: A Machine Learning Approach (SpringerLink)](https://link.springer.com/chapter/10.1007/978-3-642-02559-4_13)
+- [Detecting Emails Containing Requests for Action (ACL 2010)](https://aclanthology.org/N10-1142/)
+- [A Content-Based Approach to Email Triage Action Prediction (arXiv 2019)](https://arxiv.org/abs/1905.01991)
+- [Stanford CS229: Predicting Expected Email Response Times](https://cs229.stanford.edu/proj2017/final-reports/5223760.pdf)
+- [Personalized Email Prioritization Based on Content and Social Network Analysis (ResearchGate)](https://www.researchgate.net/publication/220628896_Personalized_Email_Prioritization_Based_on_Content_and_Social_Network_Analysis)
+- [Modeling Personalized Email Prioritization (ResearchGate)](https://www.researchgate.net/publication/221613742_Modeling_personalized_email_prioritization_Classification-based_and_regression-based_approaches)
+- [NLP Model to Classify Email Intent (Medium)](https://medium.com/@ashwithashettyyy/from-inbox-chaos-to-order-creating-an-nlp-model-to-classify-email-intent-3f6bcbd3d5cd)
+- [Detecting Requests for Action (PDF)](https://aclanthology.org/N10-1142.pdf)
+- [How Gmail Marks Mail Important (UMA Technology)](https://umatechnology.org/how-gmail-marks-mail-important-for-the-priority-inbox/)
+- [Smart Email Categorization Guide (Trimbox)](https://www.trimbox.io/blog/smart-email-categorization)
+- [Email Categorization Best Practices (EmailTree AI)](https://emailtree.ai/blog/bringing-order-email-categorization-and-labeling-best-practices/)
+- [List-Unsubscribe Header (Mailtrap)](https://mailtrap.io/blog/list-unsubscribe-header/)
+- [Precedence and Auto-Submitted Headers (Email Almanac)](https://reviewmyemails.com/emailalmanac/esp-and-infrastructure/message-mechanics-mime-attachments-list-unsubscribe/precedence-bulk-auto-submitted-headers)
+agentId: a125a9844f856e5c5 (use SendMessage with to: 'a125a9844f856e5c5' to continue this agent)
+<usage>total_tokens: 32338
+tool_uses: 18
+duration_ms: 522534</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

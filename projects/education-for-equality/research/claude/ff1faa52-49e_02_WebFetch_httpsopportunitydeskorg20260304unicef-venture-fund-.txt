@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://opportunitydesk.org/2026/03/04/unicef-venture-fund-2026/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-08 22:07:56 UTC
+========================================================================
+
+URL: https://opportunitydesk.org/2026/03/04/unicef-venture-fund-2026/
+Extraction prompt: What are the exact eligibility requirements? Do applicants need to be a registered company? What countries are eligible? What's the application process? What do they look for? Any details about registration requirements for the applying entity.
+
+----------------------------------------
+
+# UNICEF Venture Fund 2026 - Eligibility Requirements
+
+## Registration & Company Status
+Yes, applicants must be registered companies. The fund requires entities to be "Registered as a private company at the time of the Innovation Fund award (projected: 3 months from submission)."
+
+## Eligible Countries
+Startups must be "registered in a UNICEF programme country." The page does not specify which countries qualify as UNICEF programme countries.
+
+## Key Eligibility Criteria
+Mandatory requirements include:
+
+- **Open Source Commitment**: Solutions must use approved licenses—"GNU General Public license, MIT or BSD" for software, CERN/MIT/TAPR for hardware, or CC-BY for design
+- **Proven Concept**: "An existing prototype of the open source solution with promising results from initial pilots"
+- **Social Impact**: The solution must have "potential to positively impact the lives of the most vulnerable children"
+- **Data Generation**: Must be "generating publicly exposed real-time data that is measurable"
+
+## Application Process
+Applicants submit via a JotForm application link. The funding period runs 12-18 months, with awards of "up to US$100,000 in ETH, BTC or USDC" plus technical mentorship.
+
+**Deadline:** March 10, 2026
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

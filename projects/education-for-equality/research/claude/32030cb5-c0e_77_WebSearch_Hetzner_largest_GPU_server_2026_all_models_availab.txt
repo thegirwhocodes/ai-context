@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner largest GPU server 2026 all models available dedicated
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 07:11:21 UTC
+========================================================================
+
+Search query: Hetzner largest GPU server 2026 all models available dedicated
+
+----------------------------------------
+
+Web search results for query: "Hetzner largest GPU server 2026 all models available dedicated"
+
+Links: [{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"High performance dedicated GPU server - Hetzner GEX131","url":"https://www.hetzner.com/dedicated-rootserver/gex131/"},{"title":"GEX44","url":"https://www.hetzner.com/dedicated-rootserver/gex44/"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"GPU Server – Possible configurations and add-ons - Hetzner Docs","url":"https://docs.hetzner.com/robot/dedicated-server/server-lines/gpu-server/"},{"title":"Hetzner presents gpu server GEX131 with NVIDIA RTX PRO™ 6000 Blackwell Max-Q","url":"https://www.hetzner.com/pressroom/new-gex131/"},{"title":"Hetzner Cloud for AI Projects — Complete GPU Server Setup & Cost Breakdown 2026 - DEV Community","url":"https://dev.to/jangwook_kim_e31e7291ad98/hetzner-cloud-for-ai-projects-complete-gpu-server-setup-cost-breakdown-2026-58i4"},{"title":"5 Dedicated GPU Server Providers [2026] | Cherry Servers","url":"https://www.cherryservers.com/blog/top-dedicated-server-providers-with-gpu"},{"title":"Hetzner introduces new GPU server for demanding AI workloads","url":"https://www.hetzner.com/pressroom/gpu-server-gex130/"},{"title":"Hetzner Cloud for AI Projects — Complete GPU Server Setup & Cost Breakdown 2026","url":"https://effloow.com/articles/hetzner-cloud-ai-gpu-server-guide-2026"}]
+
+Based on the search results, here's what I found about Hetzner's largest GPU servers available in 2026:
+
+## Current Hetzner GPU Server Models
+
+Hetzner currently offers three dedicated GPU server models:
+
+### 1. **GEX131** (Largest/Most Powerful)
+At the heart of the system lies the NVIDIA RTX PRO™ 6000 Blackwell Max-Q GPU with ultra-fast 96 GB GDDR7 ECC graphics memory. The Intel® Xeon® Gold 5412U, a powerful 24-core processor from the "Sapphire Rapids" generation, processes up to 48 threads simultaneously thanks to hyper-threading, with support for DDR5 ECC memory and state-of-the-art Intel virtualization technologies. The GEX131 is available in our data centers in Nuremberg (NBG1) and Falkenstein (FSN1).
+
+### 2. **GEX130**
+An Intel® Xeon® Gold 5412U 24-Core "Sapphire Rapids" CPU and an NVIDIA RTX™️ 6000 Ada Generation Graphics Card with 48 GB of GDDR6 ECC graphics memory, giving users enormous processing capacity ideal for speedy and efficient data analysis.
+
+### 3. **GEX44** (Budget-Friendly)
+The GEX44 houses a powerful NVIDIA RTX™ 4000 SFF Ada-Generation graphics card with 20 GB of GDDR6 ECC GPU memory.
+
+## Key Limitation
+Hetzner's GEX servers each have one GPU and cannot be configured with multiple GPUs.
+
+The **GEX131 with 96GB VRAM is the largest/most powerful** GPU server currently available from Hetzner.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

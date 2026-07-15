@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.hackprinceton.com/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-08 22:48:54 UTC
+========================================================================
+
+URL: https://www.hackprinceton.com/
+Extraction prompt: What are the specific prize amounts? Grand prize? List all prize categories and dollar amounts. When is the event?
+
+----------------------------------------
+
+Based on the provided web page content, I cannot find specific information about prize amounts, grand prize details, or prize categories. The page content shows navigation elements and mentions "HackPrinceton" with a "Y2K desktop-OS experience" theme, but does not include pricing or reward information.
+
+The only date visible is "Mon, Mar 2, 10:43 PM," though it's unclear if this represents the actual event date or merely a timestamp on the page.
+
+To find prize information and confirmed event dates, you would need to visit the full HackPrinceton website or check their Devpost page, which is referenced in the navigation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

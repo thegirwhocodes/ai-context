@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.ncc.gov.ng/sites/default/files/2024-10/Legal-Determination_Mobile_Vo
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-13 08:41:14 UTC
+========================================================================
+
+URL: https://www.ncc.gov.ng/sites/default/files/2024-10/Legal-Determination_Mobile_Voice_Termination_Rate_for_Special_Numbering_Services.pdf
+Extraction prompt: Extract the termination rates for 0800 toll-free numbers. What are the per-minute or per-second rates? What do MNOs charge for terminating calls to 0800 numbers?
+
+----------------------------------------
+
+I cannot extract termination rates for 0800 toll-free numbers from the provided content. The document appears to be a PDF file containing binary-encoded image and font data rather than readable text about telecommunications pricing.
+
+To obtain information about 0800 number termination rates charged by Mobile Network Operators (MNOs), you would need to:
+
+1. Access actual regulatory filings or tariff documents from telecommunications authorities
+2. Contact MNOs directly for their current termination rate schedules
+3. Consult published industry reports on telecommunications interconnection rates
+
+If you have a different document with specific rate information, please provide it in a readable format.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking USSD push notification network-initiated during active voice ca
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:25:59 UTC
+========================================================================
+
+Search query: Africa's Talking USSD push notification network-initiated during active voice call API documentation
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking USSD push notification network-initiated during active voice call API documentation"
+
+Links: [{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/ussd/notifications"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking · GitHub","url":"https://github.com/AfricasTalkingLtd"},{"title":"What are the Africa's Talking API endpoints ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2232953-what-are-the-africa-s-talking-api-endpoints"},{"title":"africastalking - npm","url":"https://www.npmjs.com/package/africastalking"},{"title":"How To: Send Data and Receive Reports using Africa’s Talking APIs | by SylviaJebet | Africa's Talking","url":"https://blog.africastalking.com/how-to-send-data-and-receive-reports-using-africas-talking-apis-512720fe4d80?gi=dde0866a18fc"},{"title":"SMS API - Developer Documentation - Africa's Talking","url":"https://developers.africastalking.com/docs/sms/overview"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Countries supported by Africa's Talking USSD API and Pricing","url":"https://helloduty.com/blogs/countries-supported-by-africas-talking-ussd-api"},{"title":"USSD API – Build mobile apps accessible everywhere | Africa’s Talking","url":"https://africastalking.com/ussd-api"}]
+
+I found some results for Africa's Talking APIs, but the specific documentation page for USSD push notifications with network-initiated calls appears in the first search result. Let me search more specifically for the network-initiated voice call feature during active USSD sessions.
+
+Links: [{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking · GitHub","url":"https://github.com/AfricasTalkingLtd"},{"title":"Countries supported by Africa's Talking USSD API and Pricing","url":"https://helloduty.com/blogs/countries-supported-by-africas-talking-ussd-api"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/"},{"title":"USSD API - Mobile Apps Accessible Everywhere","url":"https://africastalking.com/ussd"},{"title":"Africa’s Talking – Pricing","url":"https://africastalking.com/pricing"},{"title":"USSD API – Build mobile apps accessible everywhere | Africa’s Talking","url":"https://africastalking.com/ussd-api"},{"title":"Africa's Talking USSD | Platform API USSD Service","url":"https://docs.ushahidi.com/platform-api-ussd-service/supported-ussd-providers/africas-talking-ussd"},{"title":"What are the Africa's Talking API endpoints ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2232953-what-are-the-africa-s-talking-api-endpoints"}]
+
+Based on my web search results, I found information about Africa's Talking APIs and USSD services. The search results show that Africa's Talking provides USSD, Voice, SMS, and other communication APIs, with documentation available at their developers portal.
+
+However, the specific documentation page you're looking for regarding "USSD push notification network-initiated during active voice call API" doesn't appear in the search results I retrieved. 
+
+The search results indicate:
+
+- Africa's Talking provides tutorials, code samples, API reference, SDKs and other resources for their APIs through their developers portal
+- They offer powerful SMS, USSD, Voice, Airtime and Mobile Data APIs
+- USSD push requests can be initiated with the `InitiateUssdPushRequest` method that accepts a phone number and menu text
+
+For the specific documentation you're seeking, I recommend:
+1. Visiting https://developers.africastalking.com directly for their complete API documentation
+2. Checking the USSD notifications documentation page at https://developers.africastalking.com/docs/ussd/notifications
+3. Reviewing their Voice API documentation alongside USSD features
+
+The combination of network-initiated voice calls during active USSD sessions may be a specialized feature that requires direct consultation of their official API documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

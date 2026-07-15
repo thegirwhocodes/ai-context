@@ -1,0 +1,7 @@
+.DS_Store
+*.tmp
+*.lock
+__pycache__/
+*.pyc
+restore-test/
+local-logs/

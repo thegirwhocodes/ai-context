@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner dedicated GPU server RTX 4090 RTX 6000 Ada A100 48GB VRAM pricing 2026
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-30 22:25:52 UTC
+========================================================================
+
+Search query: Hetzner dedicated GPU server RTX 4090 RTX 6000 Ada A100 48GB VRAM pricing 2026
+
+----------------------------------------
+
+Web search results for query: "Hetzner dedicated GPU server RTX 4090 RTX 6000 Ada A100 48GB VRAM pricing 2026"
+
+Links: [{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"Hetzner introduces GPU server for AI training | Hacker News","url":"https://news.ycombinator.com/item?id=41646163"},{"title":"Pricing | Runpod","url":"https://www.runpod.io/pricing"},{"title":"5 Dedicated GPU Server Providers [2026] | Cherry Servers","url":"https://www.cherryservers.com/blog/top-dedicated-server-providers-with-gpu"},{"title":"10 Best GPU Hosting Providers in 2025","url":"https://www.databasemart.com/blog/best-gpu-hosting-providers"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"NVIDIA RTX 4090 for AI & Training: Cloud Pricing and Best Options (2026) - Fluence","url":"https://www.fluence.network/blog/nvidia-rtx-4090/"},{"title":"Best GPU server hosting [Top 4 for 2026]","url":"https://www.liquidweb.com/gpu/best-gpu-server-hosting/"},{"title":"7 cheapest cloud GPU providers in 2026 | Blog — Northflank","url":"https://northflank.com/blog/cheapest-cloud-gpu-providers"},{"title":"Hetzner GPU Cloud | Compare & Launch with Shadeform","url":"https://www.shadeform.ai/clouds/hetzner"}]
+
+Based on the search results, here's what I found about Hetzner's dedicated GPU server pricing and offerings:
+
+## Hetzner GPU Server Models and Pricing
+
+Hetzner has GPU servers such as the GEX44 and GEX130 models, equipped with NVIDIA GPUs like the RTX 4000 SFF Ada-Generation and RTX 6000 Ada Generation.
+
+### Pricing (2026)
+Pricing for the GEX44 starts at €184 (about $191) per month, while the high-performance GEX130 is available at €838 (about $870) per month.
+
+### GPU Specifications
+
+**GEX44:** The GEX44 houses a powerful NVIDIA RTX 4000 SFF Ada-Generation graphics card with 20 GB of GDDR6 ECC GPU memory.
+
+**GEX131:** The GEX131 offers the power needed for complex processes with the NVIDIA RTX PRO 6000 Blackwell Max-Q GPU. 96 GB of graphics memory and 5th generation Tensor Cores deliver maximum AI performance with FP4 and DLSS 4.
+
+## Additional Hetzner Features
+
+Current GPU options include NVIDIA RTX 4000 SFF Ada and RTX 6000 Ada, paired with modern CPUs and NVMe storage. Traffic is unlimited on a 1 Gbit/s port, with an optional 10G uplink for higher throughput.
+
+**Note:** The search results indicate that Hetzner currently offers RTX 4000 SFF Ada and RTX 6000 Ada models, but I did not find specific pricing information for RTX 4090, RTX 6000 Ada with A100 48GB VRAM configurations, or other specific variants you mentioned in your query.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

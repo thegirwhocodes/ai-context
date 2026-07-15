@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: UNESCO GEM Report VIEW out-of-school children methodology technical paper Bayesi
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:03:17 UTC
+========================================================================
+
+Search query: UNESCO GEM Report VIEW out-of-school children methodology technical paper Bayesian model
+
+----------------------------------------
+
+Web search results for query: "UNESCO GEM Report VIEW out-of-school children methodology technical paper Bayesian model"
+
+Links: [{"title":"2026 GEM Report: Access and equity | Global Education Monitoring Report","url":"https://www.unesco.org/gem-report/en"},{"title":"Methods – GEM Report VIEW","url":"https://education-estimates.org/out-of-school/methods/"},{"title":"Out-of-school rate | Global Education Monitoring Report","url":"https://www.unesco.org/gem-report/en/view/outofschool"},{"title":"Out-of-school estimates | Global Education Monitoring Report","url":"https://www.unesco.org/gem-report/en/view/outofschool/estimates"},{"title":"Out of school – GEM Report VIEW","url":"https://education-estimates.org/out-of-school/"},{"title":"Data – GEM Report VIEW","url":"https://education-estimates.org/out-of-school/data/"},{"title":"UNESCO Conference on Education Data and Statistics Session 1 7–9 February 2024","url":"https://www.uis.unesco.org/sites/default/files/medias/fichiers/2025/08/EDS-10-Integration-EN.pdf"},{"title":"GEM Report VIEW – Visualizing Indicators of Education for the ...","url":"https://education-estimates.org/"},{"title":"Monitoring - 2023 GEM Report - UNESCO","url":"https://gem-report-2023.unesco.org/monitoring-7/"},{"title":"244M children won’t start the new school year | Global Education Monitoring Report","url":"https://www.unesco.org/gem-report/en/articles/244m-children-wont-start-new-school-year"}]
+
+Based on the web search results, I found relevant information about the UNESCO GEM Report VIEW methodology for estimating out-of-school children. Here are the key findings:
+
+## Bayesian Model Methodology
+
+The GEM Report team has developed a Bayesian hierarchical model that constructs underlying out-of-school rate curves for cohorts over time, with curves smoothed over time such that changes in cohort behavior is meaningful but gradual.
+
+## Data Sources
+
+The data used to estimate out-of-school rates separates into two broad categories: administrative enrollment counts provided by the UNESCO Institute of Statistics (UIS), which collects single-age enrollment counts from Ministries of Education combined with population estimates from the UN World Population Prospects, Eurostat, and SingStat; and survey-based data including Demographic and Health Surveys (DHS), Multiple Indicator Cluster Surveys (MICS), country-specific household surveys, and population censuses.
+
+## Model Output and Aggregation
+
+The model produces out-of-school rates for country-age-years, and after extracting these values, age-specific out-of-school rates are aggregated by level using population estimates, with additional aggregations by region, income, and other groups, then multiplied by corresponding population estimates to produce estimates of the number of out-of-school children.
+
+## Technical Background
+
+The developed model is a Bayesian hierarchical model inspired by the approach used to estimate health indicators but adapted to the education context. A technical background paper is available for download from the GEM Report VIEW data section.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

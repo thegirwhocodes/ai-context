@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: USSD push API send text to phone during active call Africa mobile operator VAS a
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:26:01 UTC
+========================================================================
+
+Search query: USSD push API send text to phone during active call Africa mobile operator VAS aggregator
+
+----------------------------------------
+
+Web search results for query: "USSD push API send text to phone during active call Africa mobile operator VAS aggregator"
+
+Links: [{"title":"USSD API - Mobile Apps Accessible Everywhere","url":"https://africastalking.com/ussd"},{"title":"Bulk SMS | SMS, USSD, Survey, Mobile Payments Gateway in East Africa | VasPro","url":"https://www.vaspro.co/ussd.html"},{"title":"Serverless USSD with Africa’s Talking — Part 1 - BFA Global","url":"https://bfaglobal.com/insights/serverless-ussd-with-africas-talking-part-1/"},{"title":"Ussd Menu, USSD API & Ussd Gateway Service | Beem","url":"https://beem.africa/ussd-api/"},{"title":"Serverless USSD with Africa's Talking — Part 1","url":"https://medium.com/f4life/serverless-ussd-with-africas-talking-62c97ef91fdd"},{"title":"Regional USSD | Chat Commerce Platform Guide","url":"https://guides.clickatell.com/chat-commerce-platform/platform-capabilities/messaging-channels/regional-ussd"},{"title":"USSD - InterVAS Limited","url":"https://www.intervas.com/ussd/"},{"title":"USSD API – Build mobile apps accessible everywhere | Africa’s Talking","url":"https://africastalking.com/ussd-api"},{"title":"USSD STK Solutions - Interact with Customers | Hypermedia Systems","url":"https://hyperms.com/ussd-stk-solutions/"},{"title":"Top 5 Use Cases for Short Codes in Africa's Digital Economy","url":"https://mobulkafrica.pro/top-5-use-cases-for-short-codes-in-africas-digital-economy/"}]
+
+I've performed a web search for your query about USSD push API and sending text to phones during active calls through African mobile operators and VAS aggregators. Here are the key findings:
+
+## USSD Push API Overview
+
+USSD Push (also known as Network-Initiated or Mobile Terminating USSD) is when the application starts the USSD session on the handset, as opposed to mobile-initiated USSD where users dial the short code themselves.
+
+## Major VAS Aggregators in Africa
+
+Several platforms provide USSD API services across African mobile operators:
+
+1. **Africa's Talking** - Their USSD gateway is built to handle thousands of concurrent API requests at any one time, and they provide shared USSD codes on Safaricom, Airtel and Telkom in some countries, and on Airtel, Yas, Vodacom and Halotel in others.
+
+2. **Beem** - Supports over 150 Mobile Networks across Africa & the World.
+
+3. **VasPro** - Offers USSDs, rewards, airtime, and mobile payment solutions in Africa.
+
+4. **Mobulk Africa** - Powers over 40 million SMS/USSD interactions monthly, using short codes across East, West, and Southern Africa.
+
+## How USSD Integration Works
+
+A USSD gateway is a routing server that directs information sent from a mobile phone to a third party application, and an application can register with a gateway so that when information is passed to a short-code it is forwarded to a URL via a HTTP POST request.
+
+However, the search results don't specifically address sending text messages **during an active call** through these APIs. This may require more specialized functionality or direct MNO integration that isn't covered in the general USSD documentation available.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

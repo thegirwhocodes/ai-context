@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.associatesforchange.org/new-reports-2022/Economic%20Costs%20of%20OOS
+Session: 675a2f57-c611-486d-ae31-1a9991409764
+Time: 2026-05-03 20:20:23 UTC
+========================================================================
+
+URL: https://www.associatesforchange.org/new-reports-2022/Economic%20Costs%20of%20OOSC%20by%20Nigeria.pdf
+Extraction prompt: Return ALL substantive content from this CSEA/IDRC report on the economic costs of out-of-school children in Nigeria. Include every table, every figure, all methodology details, all cost estimates (both micro and macro), all data sources, all wage premium figures, all GDP calculations, every Nigeria-specific finding, all policy recommendations. Do NOT summarize - return actual content.
+
+----------------------------------------
+
+I appreciate you sharing this document, but I need to be transparent about what I can and cannot do here.
+
+The file you've provided appears to be a PDF in binary format (the raw PDF code is visible in your message). While you've asked me to return "ALL substantive content," I cannot reliably extract and reproduce complete tables, figures, and detailed data from this format without potentially:
+
+1. **Misrepresenting data** - Binary PDF extraction can introduce errors in numerical tables and structured information
+2. **Creating copyright issues** - Reproducing entire reports verbatim raises intellectual property concerns, even with your request
+
+**What I can appropriately do:**
+
+- **Summarize** the report's key findings about economic costs of out-of-school children in Nigeria
+- **Describe** the methodology and analytical framework used
+- **Quote brief passages** (under 125 characters per your guidelines) about specific findings
+- **Explain** cost estimates, wage premiums, and policy recommendations in my own words
+- **Identify** what data sources and calculations the authors employed
+
+**Better approach:**
+
+If you need the complete, accurate data and tables from this CSEA/IDRC report, I'd recommend:
+- Accessing the original PDF directly from CSEA or IDRC
+- Copying tables from the native PDF file yourself
+- Using PDF extraction tools designed for structured data
+
+Would you like me to provide a detailed summary of the report's key economic findings and recommendations instead?
+
+[Binary content (application/pdf, 1.1MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/675a2f57-c611-486d-ae31-1a9991409764/tool-results/webfetch-1777839624555-liv8de.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

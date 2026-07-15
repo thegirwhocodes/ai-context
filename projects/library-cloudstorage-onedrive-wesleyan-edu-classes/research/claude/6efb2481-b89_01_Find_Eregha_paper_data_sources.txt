@@ -1,0 +1,155 @@
+========================================================================
+AGENT RESEARCH: Find Eregha paper data sources
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-05 22:36:09 UTC
+========================================================================
+
+Find the specific data sources used in this paper:
+
+**Eregha, Perekunah B., Roland I. Irughe, and Joel Edafe (2018). "Education and Economic Growth: Empirical Evidence from Nigeria," Managing Global Transitions, 16(1), pp. 59-77.**
+
+Also published as AERC Research Paper No. 407 (2020).
+
+Try to access the full paper at these URLs:
+- https://aercafrica.org/wp-content/uploads/2020/11/Research-Paper-407.pdf
+- https://www.researchgate.net/publication/325838955_Education_and_Economic_Growth_Empirical_Evidence_from_Nigeria
+- https://ideas.repec.org/a/mgt/youmgt/v16y2018i1p59-77.html
+
+I need to know SPECIFICALLY:
+
+1. What was their dependent variable? (Real GDP? Real GDP growth? Real GDP per capita?)
+2. What were ALL their independent variables and how were they measured?
+3. For EACH variable, what was the EXACT data source? E.g.:
+   - "Primary enrollment rate" — from World Bank WDI? UNESCO? Nigeria CBN?
+   - "Real GDP" — from CBN Statistical Bulletin? Penn World Table? World Bank?
+4. What time period did they cover (start year and end year)?
+5. How many observations did they have?
+6. What econometric method (FMOLS, DOLS, ARDL, etc.) and why?
+
+Report specifics — I need to know exactly which Nigerian/international data sources they pulled from so a student can replicate or improve on their methodology.
+
+----------------------------------------
+
+I have all the information I need from the methodology section (page 26) and the empirical results. Here is the comprehensive breakdown.
+
+# Eregha, Irughe & Edafe (2018/2020) — Data Sources Breakdown
+
+**Paper:** "Education and Economic Growth: Empirical Evidence from Nigeria" — published in *Managing Global Transitions* 16(1) and republished as **AERC Research Paper No. 407** (Nov 2020). The AERC version lists author order as Irughe, Eregha, Edafe.
+
+PDF location: `/tmp/aerc_paper_407.pdf`
+
+---
+
+## 1. Dependent Variable(s) — There are THREE separate models
+
+The study runs three parallel regressions, each with a different dependent variable (all in **per capita** terms, all logged):
+
+| Variable name in paper | What it is | Code |
+|---|---|---|
+| **Real GDP per capita** (logged) | Overall economic growth proxy | `log(RGDPPC)` |
+| **Non-oil GDP per capita** (logged) | Non-oil sector growth | `log(NOGDPPC)` |
+| **Oil GDP per capita** (logged) | Oil sector growth | `log(OILGDPPC)` |
+
+So the answer is **NOT** real GDP growth rate — it's the **log of real GDP per capita** (and per-capita versions of oil/non-oil GDP). The paper somewhat confusingly calls this "growth," but the regressors are levels of log per-capita GDP.
+
+---
+
+## 2. Independent Variables and How They Were Measured
+
+From the model specification (Equations 8 and 9, p. 25) and the data description (p. 26):
+
+| Variable | Code | Measurement |
+|---|---|---|
+| Primary school enrolment rate | `PRYENRL` | Enrolment rate (gross) |
+| Secondary school enrolment rate | `SECENRL` | Enrolment rate (gross) |
+| Tertiary school enrolment rate | `TERENRL` | Enrolment rate (gross) |
+| Secondary school completion rate | `SECCOMP` | Completion rate (used as alternative model — replaces enrolment rates) |
+| Capital formation (logged) | `log(KFM)` | Used as proxy for capital stock because **no capital-stock data exist for Nigeria** (Note 4 of the paper) |
+| Time trend | `t` | Linear time trend, included to capture productivity/TFP |
+
+Note: They could not get **primary or tertiary completion rates** for Nigeria, so completion-rate models use only secondary completion (Note 3, p. 34).
+
+Two equations:
+- **Eq. 8:** log(Y) = ψ₀ + ψ₁·PRYENRL + ψ₂·SECENRL + ψ₃·TERENRL + Xβ + μ (enrolment-rate model)
+- **Eq. 9:** log(Y) = α₀ + α₂·SECCOMP + Xβ + μ (completion-rate model)
+
+---
+
+## 3. EXACT Data Sources (this is the critical part)
+
+The paper's data-source statement is on **page 26** (and reaffirmed in the abstract). It is brief but explicit:
+
+> *"The data cover the period 1970–2013 and were extracted from the **CBN Statistical Bulletin** and the **Nigerian Bureau of Statistics**."*
+
+The abstract adds:
+
+> *"Data for the study were sourced from **Central Bank of Nigeria Annual Bulletins** and the **Nigerian Bureau of Statistics**, as well as from the **World Bank** for the period 1970–2013."*
+
+**The paper does NOT provide a variable-by-variable source table.** This is a real weakness for replication. The references list confirms three statistical-source citations:
+
+- Central Bank of Nigeria (CBN). 2010. *Statistical Bulletin*, various issues. Abuja: Central Bank of Nigeria.
+- National Bureau of Statistics (NBS). 2010. *National Literacy Survey*. Abuja: NBS.
+- World Bank. 2013. *World Development Indicators, 2013*. Washington, D.C.
+
+So the three sources are **CBN Statistical Bulletin**, **NBS**, and **World Bank WDI (2013 edition)** — but the paper does not pin specific variables to specific sources.
+
+**Best inference for a replicator** (based on standard Nigerian-empirics practice and what each agency publishes):
+
+| Variable | Most likely source |
+|---|---|
+| Real GDP per capita, oil GDP, non-oil GDP | **CBN Statistical Bulletin** (CBN reports oil vs. non-oil GDP disaggregation; WDI does not) |
+| Capital formation (gross fixed capital formation) | **CBN Statistical Bulletin** or **World Bank WDI** |
+| Primary / secondary / tertiary enrolment rates | **World Bank WDI** (Table 1 on p. 8 of the paper sources enrolment data explicitly to "World Bank, World Development Indicators, 2013") |
+| Secondary completion rate | **NBS** or **WDI** (paper does not specify) |
+| Population (for per-capita conversion) | CBN or WDI |
+
+The Table 1 source line ("Source: World Bank, World Development Indicators, 2013") is the only explicit per-table attribution — and it covers enrolment.
+
+---
+
+## 4. Time Period
+
+**1970–2013** (44 annual observations, though see below).
+
+---
+
+## 5. Number of Observations
+
+The paper does **not** explicitly state N. With 1970–2013 annual data, that's **44 observations** maximum, reduced to ~43 after first-differencing for unit-root tests. The paper does not report a sample size in any results table — another replication gap.
+
+---
+
+## 6. Econometric Method
+
+**Fully Modified OLS (FMOLS)** and **Dynamic OLS (DOLS)** as the primary estimators (p. 26, Eq. 10 and 11). The paper says FMOLS and DOLS results were similar, so **only FMOLS is reported** in the results tables (Note 6, p. 34).
+
+**Why these methods?** From p. 5 and p. 26:
+- The variables are I(1) (non-stationary in levels, stationary in first differences) — confirmed by ADF and Phillips-Perron unit-root tests (Table 6, p. 27)
+- Engle-Granger residual cointegration test confirmed long-run relationships in all six model specifications (Table 7, p. 28)
+- FMOLS/DOLS correct for serial correlation and endogeneity of regressors that standard OLS cannot handle in cointegrated long-run relationships (citing Pedroni 1996, 2004)
+- The authors explicitly criticize prior Nigerian studies for using only error-correction OLS
+
+**Pre-tests used:**
+- ADF unit-root test (with and without trend)
+- Phillips-Perron unit-root test (with and without trend)
+- Engle-Granger residual-based single-equation cointegration test
+
+**Software:** EViews 7 (noted under Table 6).
+
+---
+
+## Replication Notes for a Student
+
+1. **CBN Statistical Bulletin** — free, downloadable from cbn.gov.ng. The 2018 or later edition will give 1970-onward time series for real GDP, oil GDP, non-oil GDP, gross fixed capital formation, and population.
+2. **World Bank WDI** — free at data.worldbank.org. Search "Nigeria" for: `SE.PRM.ENRR` (primary enrolment), `SE.SEC.ENRR` (secondary), `SE.TER.ENRR` (tertiary), `SE.SEC.CMPT.ZS` (lower-secondary completion).
+3. **NBS** — nigerianstat.gov.ng. Used for the 2010 National Literacy Survey (which doesn't appear to feed into the regressions directly — it's cited in background discussion).
+4. **Gap to improve on:** the paper never says which data point came from where. A student who builds an explicit variable-source-vintage table immediately advances the methodology.
+5. **Other improvement avenues:** They use only secondary completion (no primary/tertiary completion); they have no capital-stock series; they use a linear time trend as a TFP proxy; they don't report N or any standard-error robustness; sample ends at 2013 (extending to 2023 with structural-break tests around the 2014 oil-price collapse and 2016 recession is a natural extension).
+agentId: a18ef81c2b9cf87cf (use SendMessage with to: 'a18ef81c2b9cf87cf' to continue this agent)
+<usage>total_tokens: 49525
+tool_uses: 4
+duration_ms: 389467</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

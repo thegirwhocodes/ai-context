@@ -1,0 +1,43 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: RunPod Lambda Labs H100 A100 monthly pricing 2026 dedicated GPU
+Session: 960e5418-9a1d-4bd7-9a3c-ad6a4afc5227
+Time: 2026-06-29 16:41:15 UTC
+========================================================================
+
+Search query: RunPod Lambda Labs H100 A100 monthly pricing 2026 dedicated GPU
+
+----------------------------------------
+
+Web search results for query: "RunPod Lambda Labs H100 A100 monthly pricing 2026 dedicated GPU"
+
+Links: [{"title":"GPU Cloud Pricing | Per-Second H100, A100, RTX | Runpod","url":"https://www.runpod.io/pricing"},{"title":"GPU Cloud Pricing 2026: H100 from $1.03/hr, B200 from $2.12/hr (15+ providers) | Spheron Blog","url":"https://www.spheron.network/blog/gpu-cloud-pricing-comparison-2026/"},{"title":"GPU Cloud Pricing Comparison 2026: Lambda, RunPod, Vast.ai, AWS Live Rates","url":"https://altstreet.investments/tools/gpu/gpu-price-comparison"},{"title":"Cloud GPU Pricing 2026: A100 $1.99/hr, H100 $3.29/hr+ | SynpixCloud","url":"https://www.synpixcloud.com/blog/cloud-gpu-pricing-comparison-2026"},{"title":"RunPod vs Lambda Labs vs CoreWeave: GPU Cloud Pricing","url":"https://www.buildmvpfast.com/blog/gpu-cloud-cost-comparison-runpod-lambda-labs-coreweave-2026"},{"title":"GPU Cloud Pricing Comparison (June 2026) | RunPod, Lambda Labs, Modal","url":"https://www.buildmvpfast.com/api-costs/gpu"},{"title":"Runpod GPU pricing: A complete breakdown and platform comparison | Blog — Northflank","url":"https://northflank.com/blog/runpod-gpu-pricing"},{"title":"Lambda Labs Pricing 2026: Plans, Costs & Comparison - Lambda Labs | CheckThat.ai","url":"https://checkthat.ai/brands/lambda-labs/pricing"},{"title":"H100 Rental Prices Compared: $1.49-$6.98/hr Across 15+ Cloud Providers (2026) | IntuitionLabs","url":"https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison"}]
+
+Based on the search results, here's what I found about RunPod and Lambda Labs GPU pricing for H100 and A100 in 2026:
+
+## RunPod Pricing (2026)
+
+RunPod's H100 PCIe starts at $1.99/hr on-demand, with H100 SXM running $2.69/hr. A100 80GB ranges from $1.19-1.39/hr depending on configuration.
+
+To estimate monthly costs for dedicated GPU usage, multiply the hourly rate by 730 hours (average hours per month):
+- **H100 PCIe**: ~$1,453/month ($1.99/hr × 730)
+- **H100 SXM**: ~$1,964/month ($2.69/hr × 730)
+- **A100 80GB**: ~$868-$1,014/month ($1.19-$1.39/hr × 730)
+
+## Lambda Labs Pricing (2026)
+
+H100 SXM starts at $4.29/hr for a single GPU and falls to $3.99/GPU/hr in 8-GPU configs, while H100 PCIe is $3.29/hr. A100 80GB SXM in 8-GPU systems is $2.79/GPU/hr, while A100 PCIe instances are listed at $1.99/hr.
+
+Monthly estimates:
+- **H100 PCIe**: ~$2,402/month ($3.29/hr × 730)
+- **H100 SXM (single)**: ~$3,132/month ($4.29/hr × 730)
+- **A100 80GB SXM (8-GPU config)**: ~$2,036/month ($2.79/hr × 730)
+- **A100 PCIe**: ~$1,453/month ($1.99/hr × 730)
+
+RunPod offers significantly lower hourly rates for both GPUs, while Lambda Labs provides pre-configured ML environments and zero egress fees.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

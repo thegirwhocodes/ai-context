@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner RTX 4090 dedicated GPU server pricing 2026 monthly
+Session: 960e5418-9a1d-4bd7-9a3c-ad6a4afc5227
+Time: 2026-06-29 16:41:14 UTC
+========================================================================
+
+Search query: Hetzner RTX 4090 dedicated GPU server pricing 2026 monthly
+
+----------------------------------------
+
+Web search results for query: "Hetzner RTX 4090 dedicated GPU server pricing 2026 monthly"
+
+Links: [{"title":"Hetzner Cloud for AI: GPU Server Setup and Cost Guide 2026 — Effloow","url":"https://effloow.com/articles/hetzner-cloud-ai-gpu-server-guide-2026"},{"title":"Hetzner introduces GPU server for AI training | Hacker News","url":"https://news.ycombinator.com/item?id=41646163"},{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"Hetzner Cloud VPS Pricing Calculator (Jun 2026)","url":"https://costgoat.com/pricing/hetzner"},{"title":"RTX 4090 Cloud Pricing: Compare 14+ Providers (2026)","url":"https://getdeploying.com/gpus/nvidia-rtx-4090"},{"title":"5 Best GPU Dedicated Server Providers 2026 | VPS SOS","url":"https://vpssos.com/5-best-gpu-dedicated-server-2026/"},{"title":"Hetzner | Review, Pricing & Alternatives","url":"https://getdeploying.com/hetzner"},{"title":"Price Dedicated Server Addons - Hetzner Docs","url":"https://docs.hetzner.com/robot/dedicated-server/dedicated-server-hardware/price-server-addons/"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"Hetzner Cloud for AI Projects Complete GPU Server Setup & Cost Breakdown 2026 - by Dev To","url":"https://www.webnuz.com/article/2026-04-04/Hetzner%20Cloud%20for%20AI%20Projects%20%20Complete%20GPU%20Server%20Setup%20&%20Cost%20Breakdown%202026"}]
+
+Based on the search results, I found information about Hetzner's GPU server offerings for 2026, though it's important to note that Hetzner does not currently offer RTX 4090 dedicated GPU servers. Instead, here's what Hetzner offers:
+
+## Hetzner GPU Server Options (2026)
+
+Hetzner's dedicated GPU server is the GEX44 with an NVIDIA RTX 4000 SFF Ada GPU priced at €184/month. Using the mid-June 2026 exchange rate of approximately €1 = $1.15, this converts to roughly $211 USD per month.
+
+Additionally, Hetzner offers the GEX131 with the NVIDIA RTX PRO 6000 Blackwell Max-Q GPU featuring 96 GB of graphics memory and 5th generation Tensor Cores.
+
+## Important Clarification
+
+Hetzner's GEX servers each have one GPU and cannot be configured with multiple GPUs. If you're specifically looking for RTX 4090 options, Hetzner does not currently offer this GPU model in their dedicated server lineup.
+
+For RTX 4090 availability, other providers may offer this GPU through cloud instances with different pricing models, but Hetzner's focus is on their RTX 4000 Ada and RTX PRO 6000 Blackwell offerings for dedicated GPU servers.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

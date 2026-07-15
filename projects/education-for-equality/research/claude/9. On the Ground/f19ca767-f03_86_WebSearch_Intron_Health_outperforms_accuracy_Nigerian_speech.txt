@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Intron Health "outperforms" accuracy Nigerian speech recognition word error rate
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:32 UTC
+========================================================================
+
+Search query: Intron Health "outperforms" accuracy Nigerian speech recognition word error rate compared Whisper Google
+
+----------------------------------------
+
+Web search results for query: "Intron Health "outperforms" accuracy Nigerian speech recognition word error rate compared Whisper Google"
+
+Links: [{"title":"Intron Sahara ASR » Intron Voice AI","url":"https://www.intron.io/"},{"title":"Nigerian AI startup Intron Health raises $1.6M to strengthen its African languages speech recognition tool - Africa Business Communities","url":"https://africabusinesscommunities.com/tech-24/nigerian-ai-startup-intron-health-raises-1.6m-to-strengthen-its-african-languages-speech-recognition-tool/"},{"title":"Gladia - Word error rate (WER): Definition, & can you trust this metric?","url":"https://www.gladia.io/blog/what-is-wer"},{"title":"African AI Startup Intron Health Outperforms Global Tech Giants in Voice Recognition Technology – TechEstate","url":"https://techestate.io/2025/07/03/african-ai-startup-intron-health-outperforms-global-tech-giants-in-voice-recognition-technology/"},{"title":"How Intron Health, A Nigerian AI Startup, Is Transforming Healthcare In Africa Using Speech-to-text Technology - Carecode Digital Health Hub","url":"https://www.carecodedigital.com/how-intron-health-a-nigerian-ai-startup-is-transforming-healthcare-in-africa-using-speech-to-text-technology/"},{"title":"How Nigeria’s Intron Health is bridging the gap in speech recognition for minorities in healthcare - Disrupt Africa","url":"https://disruptafrica.com/2024/08/13/how-nigerias-intron-health-is-bridging-the-gap-in-speech-recognition-for-minorities-in-healthcare/"},{"title":"How Intron Health Is Using AI To Transform Healthcare In Africa","url":"https://carecityonline.com/intron-health-speech-to-text-technology/"},{"title":"Measuring the Accuracy of Automatic Speech Recognition Solutions | ACM Transactions on Accessible Computing","url":"https://dl.acm.org/doi/full/10.1145/3636513"},{"title":"Measuring the Accuracy of Automatic Speech Recognition Solutions","url":"https://arxiv.org/html/2408.16287v1"},{"title":"Α Benchmarking of IBM, Google and Wit Automatic Speech ...","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7256403/"}]
+
+Based on the search results, I found relevant information about Intron Health's speech recognition performance. Here's what the search revealed:
+
+## Intron Health's Speech Recognition Performance
+
+Intron Health launched Sahara, a speech recognition model trained on thousands of hours of proprietary audio from 18,000+ speakers across 300+ non-native English accents from 30+ African countries. The company claims it outperforms OpenAI's Whisper, GPT-4o Transcribe, Nvidia Canary, Google Speech-to-Text, AWS Transcribe, and Azure Speech across the board.
+
+The startup has developed Africa's first clinical speech recognition platform, which it claims boasts up to 92% accuracy rate on medical terminology with heavy accents.
+
+## Comparison Against Major Speech Recognition Systems
+
+Sahara demonstrates superior performance on accented English speech in a pan-African context across multiple industries (health, finance, legal, academia, etc) and domains with impressive robustness to background noise, intonations, and domain-specific vocabulary.
+
+The platform achieved an impressive 92% accuracy rate for medical terminology – even when processing heavily accented speech.
+
+The search results show that Intron Health positions itself as outperforming major global tech companies' speech recognition systems specifically for Nigerian and African accents, particularly in medical and specialized terminology transcription.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

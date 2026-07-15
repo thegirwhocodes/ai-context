@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://hackprinceton-fall-2025.devpost.com/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-08 22:49:29 UTC
+========================================================================
+
+URL: https://hackprinceton-fall-2025.devpost.com/
+Extraction prompt: List all prize categories and their amounts/values. What is the grand prize? First place? What are the track prizes? List everything with dollar amounts.
+
+----------------------------------------
+
+# HackPrinceton Fall 2025 Prize Categories
+
+## Overall/Grand Prize
+**Best Overall Hack** (Amplitude, Anthropic, OpenAI): 3 winners receive Nintendo Switch 2 + Mario Kart bundle per member, $100 Visa Gift Card with internship opportunity at Amplitude, and OpenAI credits ($10K, $5K, $1K respectively for top three).
+
+## Track Prizes
+- **Healthcare**: 3D Printer + internship at Daylight Health
+- **Business & Enterprise**: $3,000 cash + Bose speaker
+- **Sustainability**: Drone
+- **Education & Entertainment**: Projector
+
+## Specialty Prizes
+- **Best Rookie Hack**: Polaroid + film
+- **Best Hardware Hack**: NVIDIA Jetson Orin Nano Developer Kit
+- **Amazon Practical AI**: $1,000 ($125/$75/$50 per person by placement)
+- **Capital One Financial**: $1,000
+- **Y Combinator**: YC interviews/office hours
+- **X API**: $15,000 credits (3 winners)
+- **xAI Grok**: $15,000 credits (3 winners)
+- **Knot API**: $850 total ($500/$250/$100)
+- **Dedalus**: $850 total
+- **Photon**: $500-$1,000 mixed prizes
+
+**Total Prize Pool**: $17,000+
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

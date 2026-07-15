@@ -1,0 +1,90 @@
+========================================================================
+AGENT RESEARCH: Research govt edtech contract pricing
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-04-01 07:17:09 UTC
+========================================================================
+
+Search the web extensively for government pricing of education technology contracts, specifically:
+
+1. **What do governments pay per student for edtech programs?** Find actual contract values, per-pupil costs, and pricing models for government edtech procurement in:
+   - Nigeria (EKOEXCEL/NewGlobe, UBEC programs, state-level contracts)
+   - Other African countries (Kenya, South Africa, Rwanda, Ghana, Tanzania)
+   - India (government edtech contracts, DIKSHA platform, state-level)
+   - Global (US, UK, developing countries)
+
+2. **What do governments pay for AI tutoring specifically?** Any government contracts for AI-based tutoring, chatbot tutoring, or adaptive learning platforms. Per-student pricing.
+
+3. **What did these specific programs cost per student?**
+   - EKOEXCEL (Lagos, NewGlobe) — per pupil per year
+   - EdoBEST (Edo State, NewGlobe) — per pupil per year  
+   - Mindspark/EI (India) — government pricing
+   - Pratham/TaRL — per student cost when government-funded
+   - ConveGenius PAL (India) — government pricing
+   - World Bank AI tutoring (Edo State) — per student
+   - Rori AI — per student when sold to governments
+   - EIDU (Kenya) — per student
+   - Eneza/Shupavu — per student cost
+   - Bridge International Academies — per pupil government contracts
+   - Rising Academies — per student cost
+
+4. **How do governments structure edtech contracts?** Per-student/per-year? Lump sum? Performance-based? Outcomes-based? What's the typical contract length?
+
+5. **What's the World Bank HOPE-EDU $500M fund paying per student?** Any breakdown of how that $500M is allocated across 29M children?
+
+6. **Global benchmarks — what do governments spend per student on supplementary education programs?** Not total education spend, but specifically supplementary/remedial/tutoring programs.
+
+7. **Any published RFPs or procurement documents** for government edtech in Nigeria or Africa?
+
+I need actual dollar amounts per student, contract sizes, and pricing structures. Search thoroughly. Return ALL findings with sources.
+
+----------------------------------------
+
+The research is complete and saved to `/Users/naomiivie/Education for Equality/GOVERNMENT_EDTECH_PRICING_RESEARCH.md`. Here is a summary of the key findings:
+
+---
+
+## Key Findings
+
+### 1. What governments pay per student for edtech programs
+
+The range is enormous depending on context:
+
+- **$0.03/student** -- Rising On Air radio lessons (broadcast, not personalized)
+- **$1.55/student/subject/year** -- Mindspark in India at government scale (Rs 130)
+- **$5/student** -- Rori AI WhatsApp math tutor (marginal cost)
+- **$5/year** -- Eneza/Shupavu via carrier billing (consumer-paid, not government)
+- **$11/student/year** -- EIDU in Kenya (smartphone-based, government implementation)
+- **$15/student/year** -- Khanmigo in US school districts (was $60, dropped to $35, now $15)
+- **$19/student (implied)** -- HOPE-EDU Nigeria ($552M / 29M children, multi-year, includes infrastructure)
+- **$48/student for 6 weeks** -- World Bank AI tutoring pilot in Edo State (GPT-4 via Copilot)
+- **$60-100/student/year** -- NewGlobe government programs in Liberia (full managed service)
+- **$124/student/year projected** -- World Bank AI tutoring scaled to full academic year
+- **$1,000-3,000/student/year** -- US high-dosage tutoring programs
+
+### 2. Nigeria-specific baseline
+
+Nigeria's government spends only **~$25/pupil/year** total on primary education. EKOEXCEL and EdoBEST operate at significantly higher per-pupil budgets through state and World Bank funding, but exact NewGlobe contract values are not publicly disclosed.
+
+### 3. The World Bank Edo AI Tutoring Pilot is Sabi's best comparable
+
+At **$48/student for 6 weeks** ($124/year projected), it used GPT-4 in computer labs and achieved a 161-260x benefit-cost ratio. Sabi does the same thing via phone calls without requiring computer labs, internet, or smartphones -- making it radically cheaper.
+
+### 4. Sabi's positioning
+
+At **$0.24-2.44/student/year** at scale, Sabi would be the cheapest AI tutoring program globally. Recommended B2G pricing: **$5-15/student/year** in Phase 2 (with pilot data), dropping to **$2-5/student/year** at scale.
+
+### 5. Contract structures
+
+Governments use: per-student/per-year (most common for edtech), results-based financing (HOPE-EDU), large block grants via World Bank/GPE (multi-year), and telco CSR partnerships (zero cost to government). Outcomes-based contracting is a growing trend in the US.
+
+### 6. No published Nigerian edtech software RFPs found
+
+Government edtech procurement in Nigeria happens primarily through direct partnerships (EKOEXCEL model) or World Bank project frameworks, not open competitive tenders for software services.
+agentId: aa2507b3335a6e45b (use SendMessage with to: 'aa2507b3335a6e45b' to continue this agent)
+<usage>total_tokens: 98585
+tool_uses: 63
+duration_ms: 1543676</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

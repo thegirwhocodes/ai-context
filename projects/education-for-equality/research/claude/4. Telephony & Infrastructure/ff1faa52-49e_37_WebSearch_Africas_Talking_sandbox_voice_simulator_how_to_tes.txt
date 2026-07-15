@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking sandbox voice simulator how to test voice calls virtual number
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 04:24:38 UTC
+========================================================================
+
+Search query: Africa's Talking sandbox voice simulator how to test voice calls virtual number
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking sandbox voice simulator how to test voice calls virtual number"
+
+Links: [{"title":"How do I get started on the Africa's Talking Sandbox? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-africa-s-talking-sandbox"},{"title":"Voice Sandbox | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/11532610-voice-sandbox"},{"title":"Sandbox | Africa's Talking","url":"https://simulator.africastalking.com/"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/simulator"},{"title":"SandBox Set Up · Mobile Communication Apis","url":"https://africastalkingltd.gitbooks.io/mobile-communication-apis/content/sandbox-set-up.html"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"GitHub - AfricasTalkingLtd/africastalking-php: Official PHP SDK","url":"https://github.com/AfricasTalkingLtd/africastalking-php"}]
+
+Based on the search results, here's what I found about Africa's Talking sandbox and voice testing:
+
+## Key Points About Voice Testing
+
+For Voice, the sandbox is not operational. This is an important limitation to understand - Africa's Talking Voice API doesn't work in sandbox mode, and every call you make during development will be a real call that costs real money and rings a real phone.
+
+## Getting a Test Number
+
+Instead of using a simulator, the process is automated: Log in to your Account>click on the app>Voice> Phone number>Under Voice-Phones>fill in the request form>(Product section)>Voice Service>Country> agree to terms>Category>select "Test Number" on the voice form. You will be issued with a live number to use in the production account for a 2 weeks test period after which it will be removed.
+
+## Creating Virtual Numbers
+
+For development purposes, to create a virtual voice number use this link: https://sandbox.africastalking.com/voice/create. Manage all the call interaction from a webhook you set up here: https://sandbox.africastalking.com/voice/phones.
+
+## Testing Environment
+
+The interactions with these resources occur in the SIMULATOR: https://simulator.africastalking.com:1517/ and NOT the HANDSET for all development and tests on the sandbox.
+
+The important takeaway is that while other Africa's Talking services (SMS, USSD, etc.) have sandbox simulators, voice calls require real phone numbers and incur actual costs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

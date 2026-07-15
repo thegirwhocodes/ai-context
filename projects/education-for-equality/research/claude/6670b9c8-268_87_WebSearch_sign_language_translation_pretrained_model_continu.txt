@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: sign language translation pretrained model continuous CSLR open source weights d
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 19:19:28 UTC
+========================================================================
+
+Search query: sign language translation pretrained model continuous CSLR open source weights download 2024 2025
+
+----------------------------------------
+
+Web search results for query: "sign language translation pretrained model continuous CSLR open source weights download 2024 2025"
+
+Links: [{"title":"GitHub - hulianyuyy/CorrNet: Continuous Sign Language Recognition with Correlation Network (CVPR 2023) · GitHub","url":"https://github.com/hulianyuyy/CorrNet"},{"title":"Towards Online Continuous Sign Language Recognition and Translation - ACL Anthology","url":"https://aclanthology.org/2024.emnlp-main.619/"},{"title":"Towards Online Continuous Sign Language Recognition ...","url":"https://aclanthology.org/2024.emnlp-main.619.pdf"},{"title":"Towards Online Continuous Sign Language Recognition and Translation","url":"https://arxiv.org/pdf/2401.05336"},{"title":"Continuous Sign Language Recognition with Adapted Conformer via Unsupervised Pretraining","url":"https://arxiv.org/html/2405.12018v1"},{"title":"Leveraging Frozen Pretrained Written Language Models for Neural Sign Language Translation | MDPI","url":"https://www.mdpi.com/2078-2489/13/5/220"},{"title":"SignVLM: a pre-trained large video model for sign language recognition - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12453763/"},{"title":"GitHub - ZechengLi19/Awesome-Sign-Language: Paper list of sign language, including sign language recognition(SLR), sign language translation(SLT) and other work. Quick start your awesome work with us!! 🤟🤟🤟","url":"https://github.com/ZechengLi19/Awesome-Sign-Language"},{"title":"UNI-SIGN: TOWARD UNIFIED SIGN LANGUAGE UN","url":"https://openreview.net/pdf/b769e431ddd7c8f48751bd22d3df5c4710df3624.pdf"},{"title":"A Comparative Study of RGB-based Continuous Sign Language Recognition","url":"https://openaccess.thecvf.com/content/ICCV2025W/MSLR/papers/Alyami_A_Comparative_Study_of_Continuous_Sign_Language_Recognition_Techniques_ICCVW_2025_paper.pdf"}]
+
+Based on the web search results, here are the key findings about sign language translation pretrained models with open source weights available for download in 2024-2025:
+
+## Key Projects with Open Source Code and Models
+
+CorrNet released CorrNet+, an unified model with superior performance on both continuous sign language recognition and sign language translation tasks by using only RGB inputs, with a demo for continuous sign language recognition supporting multi-images and video inputs released in January 2025.
+
+The "Towards Online Continuous Sign Language Recognition and Translation" paper (EMNLP 2024) provides code and models available at https://github.com/FangyunWei/SLRT.
+
+## Recent Pretrained Model Approaches
+
+SignVLM is a pretrained large vision model proposed for sign language recognition to address the issue of lacking annotated datasets.
+
+Uni-Sign is a unified sign language understanding model where robust SLU capabilities integrated during large-scale pre-training are transferred to downstream tasks including CSLR and SLT.
+
+ConSignformer is a multi-modal pipelined framework adapted from the Conformer model for CSLR, with unsupervised pretraining performed on Indian Sign Language pose data, creating a sign language agnostic Conformer model practicable for diverse sign languages.
+
+## Available Open Source Resources
+
+Recent 2024-2025 models with code availability include works from EMNLP 2024 on online CSLR/SLT and KD-MSLRT (AAAI 2025) for lightweight sign language recognition.
+
+These projects provide downloadable pretrained weights and open source implementations suitable for continuous sign language recognition and translation tasks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: USDC USDT March 2023 redemption USDT inflow USDC outflow stablecoin run safe hav
+Session: 869a6900-9c7e-4841-946b-0e701aa75e93
+Time: 2026-04-28 19:00:25 UTC
+========================================================================
+
+Search query: USDC USDT March 2023 redemption USDT inflow USDC outflow stablecoin run safe haven
+
+----------------------------------------
+
+Web search results for query: "USDC USDT March 2023 redemption USDT inflow USDC outflow stablecoin run safe haven"
+
+Links: [{"title":"The Fed - In the Shadow of Bank Runs: Lessons from the Silicon Valley Bank Failure and Its Impact on Stablecoins","url":"https://www.federalreserve.gov/econres/notes/feds-notes/in-the-shadow-of-bank-run-lessons-from-the-silicon-valley-bank-failure-and-its-impact-on-stablecoins-20251217.html"},{"title":"Stablecoin Risks: Some Warning Bells - Bank Policy Institute","url":"https://bpi.com/stablecoin-risks-some-warning-bells/"},{"title":"USDC | Powering global finance. Issued by Circle.","url":"https://www.circle.com/usdc"},{"title":"Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment","url":"https://www.mdpi.com/2674-1032/3/4/30"},{"title":"USDC Stablecoin Depegs, Crypto Market Goes Haywire After Silicon Valley Bank Collapses","url":"https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-and-crypto-market-go-haywire-after-silicon-valley-bank-collapses"},{"title":"USDC (cryptocurrency) - Wikipedia","url":"https://en.wikipedia.org/wiki/USDC_(cryptocurrency)"},{"title":"USDC Stablecoin Depegs From $1; Circle Says Operations Are Normal","url":"https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-depegs-from-1-circle-says-operations-are-normal"},{"title":"Transparency & Stability | Circle","url":"https://www.circle.com/transparency"},{"title":"Is USDC a Good Investment? (2026) | CoinLedger","url":"https://coinledger.io/learn/is-usdc-a-good-investment"},{"title":"USDC vs USDT & What's the Difference Between Stablecoins","url":"https://changelly.com/blog/usdc-vs-usdt/"}]
+
+Based on the web search results, here's what happened with USDC and USDT in March 2023 regarding the stablecoin dynamics you asked about:
+
+## The Crisis Trigger
+
+In March 2023, Circle, the issuer of USDC, announced that it was unable to access a portion of its dollar reserves held as deposits at Silicon Valley Bank (SVB). Specifically, Circle was unable to withdraw $3.3 billion of USDC reserves from SVB (around 8% of total reserves).
+
+## The Run and Flight to Safety
+
+This announcement precipitated a surge in redemption requests by holders of USDC, causing the stablecoin to lose its peg against the dollar. The run on USDC started on March 9, when investors doubted Circle's ability to access its deposits at SVB, causing the price of USDC to trade as low as $0.87 per coin.
+
+## The Safe Haven Shift
+
+During the depeg, investors demonstrated a preference for transferring their holdings from USDC to Tether (USDT) or fiat currency. This represents the flight to safety behavior you mentioned, with investors moving away from the compromised USDC to USDT (perceived as more stable) or exiting to fiat entirely.
+
+## Resolution
+
+USDC's price on the secondary market recovered sharply after the Federal Reserve's backstop announcement on Sunday, and fully recovered once Circle began processing redemptions on Monday, March 13.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

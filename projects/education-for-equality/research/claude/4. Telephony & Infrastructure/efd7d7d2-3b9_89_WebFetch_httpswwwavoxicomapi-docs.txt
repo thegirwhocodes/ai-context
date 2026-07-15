@@ -1,0 +1,50 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.avoxi.com/api-docs/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:00:39 UTC
+========================================================================
+
+URL: https://www.avoxi.com/api-docs/
+Extraction prompt: What API endpoints does AVOXI offer? Is there programmable voice control — play audio, record, gather input via API? Or is it just number management, billing, and call logs? List all API capabilities.
+
+----------------------------------------
+
+# AVOXI API Capabilities
+
+Based on the documentation provided, AVOXI offers the following API endpoints:
+
+## Available Endpoints
+
+**Provisioning/Number Management:**
+- Countries list
+- Destinations (forwarding options by country/number type)
+- Document types for compliance
+- Inventory search (available numbers)
+- Number types supported
+- Products/pricing by location
+- Order placement for new numbers
+
+## Notable Limitation
+
+The documentation shown focuses exclusively on **number provisioning and inventory management**. There is **no evidence of programmable voice control features** such as:
+- Audio playback capabilities
+- Call recording via API
+- DTMF input gathering
+- IVR control
+- Real-time call manipulation
+
+## Related Services Mentioned
+
+While not detailed in the API docs excerpt, AVOXI's platform supports:
+- "Voice Analytics" and "Call Insights"
+- "Call Recording"
+- "Call Routing" and "IVR"
+- "SIP Trunks" integration
+
+However, these appear to be **managed features rather than programmable APIs** based on the available documentation. The API documentation cuts off before detailing any voice control endpoints that might exist beyond the provisioning section shown.
+
+For comprehensive programmable voice capabilities, you would need to contact AVOXI support or access additional documentation sections.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

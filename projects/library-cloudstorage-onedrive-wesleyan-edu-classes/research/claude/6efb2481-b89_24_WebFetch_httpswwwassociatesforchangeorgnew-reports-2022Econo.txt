@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.associatesforchange.org/new-reports-2022/Economic%20Costs%20of%20OOS
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 23:25:04 UTC
+========================================================================
+
+URL: https://www.associatesforchange.org/new-reports-2022/Economic%20Costs%20of%20OOSC%20by%20Nigeria.pdf
+Extraction prompt: Extract: (1) Full author names and date, (2) the exact $40B and $56B figures and how they were calculated, (3) what wage premium they used for Nigeria specifically, (4) data source for OOSC and wage premium, (5) whether they cite Aromolaran, (6) whether they used Nigeria-specific Mincerian estimates or generic SSA averages, (7) confidence intervals or sensitivity analysis
+
+----------------------------------------
+
+I cannot extract the requested information from this document. The content provided is a PDF file in raw binary/encoded format (FlateDecode stream), not readable text. To extract details about:
+
+1. Author names and dates
+2. The $40B and $56B figures and calculations
+3. Nigeria-specific wage premiums
+4. Data sources for OOSC and wage estimates
+5. Citations to Aromolaran
+6. Mincerian estimates used
+7. Confidence intervals or sensitivity analysis
+
+I would need the PDF to be either converted to text format or the actual readable content to be provided. The encoded stream you've shared cannot be parsed for specific numerical claims, methodology details, or citations.
+
+If you have access to the PDF, please share the extracted text version instead, and I'll be able to identify these specific details accurately.
+
+[Binary content (application/pdf, 1.1MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/6efb2481-b890-4754-95b7-49de6ac05f9b/tool-results/webfetch-1778282844895-61jqm8.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

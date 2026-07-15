@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Brazil oil discovery GDP 2024 method donors
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:21:39 UTC
+========================================================================
+
+Search query: "synthetic control" Brazil oil discovery GDP 2024 method donors
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Brazil oil discovery GDP 2024 method donors"
+
+Links: [{"title":"The effect of oil discovery in Brazil: A synthetic control approach - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0301420724004008"},{"title":"The effect of oil discovery in Brazil: A synthetic control approach","url":"https://ideas.repec.org/a/eee/jrpoli/v92y2024ics0301420724004008.html"},{"title":"The effect of oil discovery in Brazil: A synthetic control approach | Request PDF","url":"https://www.researchgate.net/publication/380313224_The_effect_of_oil_discovery_in_Brazil_A_synthetic_control_approach"},{"title":"A tale of oil production collapse - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S0301420724004112"},{"title":"How Much Should We Trust Synthetic Control Estimates?","url":"https://nicholasdecker.substack.com/p/how-much-should-we-trust-synthetic"},{"title":"Synthetic oil – Nick Ford","url":"https://www.nickford.com/papers/synthetic-oil/"},{"title":"BRAZILIAN OIL & GAS REPORT 2023/2024 TRENDS AND RECENT DEVELOPMENTS","url":"https://www.epe.gov.br/sites-en/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-197/topico-205/BOR_2023_2024.pdf"},{"title":"Policy or Circumstances? A Synthetic Control Method for Evaluating Brazil’s Economic Boom Under Lula","url":"https://www.mdpi.com/2227-7099/13/7/197"},{"title":"Brazil’s Oil Production Keeps Growing","url":"https://finance.yahoo.com/news/brazil-oil-production-keeps-growing-220000690.html"},{"title":"Brazil’s Oil Production Keeps Growing | OilPrice.com","url":"https://oilprice.com/Energy/Energy-General/Brazils-Oil-Production-Keeps-Growing.html"}]
+
+Based on the search results, here's what I found about the synthetic control method applied to Brazil's oil discovery and GDP:
+
+## Study Overview
+
+A study applies the synthetic control method to assess the impact of Brazil's pre-salt oil discovery on GDP. The study explores the economic impact of Brazil's discovery in 2006 of significant deepwater pre-salt oil reserves, employing a synthetic control approach using counterfactual data from comparable nations to estimate the influence on Brazil's real per capita GDP for 2006–2014.
+
+## Key Findings
+
+The research provides evidence that the discovery of Brazil's pre-salt oil reserves in 2006 had a positive, albeit temporary, impact on national income, finding an increase in real GDP per capita of approximately USD 100 annually from 2006 to 2014. During the peak growth period of 2008–2012, GDP per capita rose by around $448 annually—a 3.9% increase from the 2006 baseline.
+
+## Donor Pool
+
+The four countries most similar to Brazil in terms of predictors are Peru, Mexico, and South Africa. The synthetic control methodology requires comparison countries to create a counterfactual scenario.
+
+## Methodological Approach
+
+The research refrains from employing a training period to mitigate potential arbitrariness, instead opting for a single optimization process. It introduces an oil rent variable to minimize the impact of oil prices on economic growth and incorporates a control variable to capture the impact of commodity shares on Brazilian GDP.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

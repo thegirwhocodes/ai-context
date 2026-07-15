@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: always-on AI agent that speaks proactively desktop companion product 2026 (not j
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-03 17:19:51 UTC
+========================================================================
+
+Search query: always-on AI agent that speaks proactively desktop companion product 2026 (not just voice assistant) novel
+
+----------------------------------------
+
+Web search results for query: "always-on AI agent that speaks proactively desktop companion product 2026 (not just voice assistant) novel"
+
+Links: [{"title":"Microsoft launches Scout: the ‘autopilot’ that never sleeps - ITdaily","url":"https://itdaily.com/news/software/microsoft-scout-autopilot/"},{"title":"Microsoft Scout Turns AI Into a Governed Workplace Worker: Copilot Next Arrives at Build 2026 - Windows News","url":"https://windowsnews.ai/article/microsoft-scout-turns-ai-into-a-governed-workplace-worker-copilot-next-arrives-at-build-2026.421976"},{"title":"Microsoft Unveils Scout at Build 2026: The Always-On AI Agent for Microsoft 365 Governance - Windows News","url":"https://windowsnews.ai/article/microsoft-unveils-scout-at-build-2026-the-always-on-ai-agent-for-microsoft-365-governance.421943"},{"title":"What Is Microsoft Scout? The Always-On Autopilot Agent for Microsoft 365","url":"https://www.2tolead.com/insights/what-is-microsoft-scout-the-always-on-autopilot-agent-for-microsoft-365"},{"title":"Build 2026: Microsoft Unveils Windows Agent Stack with AI PCs, Copilot Scout, and Solara Framework - Windows News","url":"https://windowsnews.ai/article/build-2026-microsoft-unveils-windows-agent-stack-with-ai-pcs-copilot-scout-and-solara-framework.421877"},{"title":"Kneron Unveils AI PC Companion at COMPUTEX 2026, Introducing Emotionally Intelligent Computing","url":"https://natlawreview.com/press-releases/kneron-unveils-ai-pc-companion-computex-2026-introducing-emotionally"},{"title":"Razer AVA: 3D Hologram AI Companion | Razer United States","url":"https://www.razer.com/razer-ava"},{"title":"Studioglobal","url":"https://www.studioglobal.ai/discover/answers/what-did-microsoft-announce-at-build-2026-6a1f732930d991f583c739b9"},{"title":"Microsoft Scout Explained: How always on, autonomous agents are redefining the future of AI","url":"https://robquickenden.blog/2026/06/what-is-microsoft-scout/"}]
+
+Based on the search results, here are the novel always-on AI agent desktop companion products announced or coming in 2026:
+
+## Microsoft Scout
+
+Microsoft introduced Scout at Build 2026, a personal work agent that lives within Microsoft 365 applications and is always on. Scout falls under a new category of AI assistants called 'Autopilots' that don't just work on demand, but are active around the clock.
+
+Scout is an always-on, autonomous AI assistant that proactively manages your inbox, calendar, meetings, and coordination work without waiting for a prompt. Scout proactively surfaces insights, flags risks, and even performs approved actions—like adjusting sharing permissions on sensitive documents or archiving stale Teams channels—all within defined governance boundaries set by IT administrators.
+
+Scout is a background agent that understands your workflow, monitors files, calendar, and emails, and suggests or automates tasks. It can proactively remind you to finalize a report if it detects an approaching deadline and sees the draft hasn't been touched in three days.
+
+Scout will be available first to Microsoft's Frontier early-access program, with rollout to wider audiences expected in late 2026.
+
+## Razer AVA
+
+Razer AVA is a 24/7 AI companion designed to live right alongside you, powered by Razer Inference Control Plane with a dynamic personality that learns and evolves based on your interactions. AVA is brought to life as an animated 5.5" 3D hologram or a character on your desktop screen, using human-like vision and audio sensing for full contextual awareness. Razer AVA is expected to launch in the second half of 2026.
+
+## Kneron AI PC Companion
+
+Kneron's AI PC Companion technology is designed to deliver real-time on-device AI interaction, emotionally intelligent and context-aware assistance, continuous personalized memory across sessions, localized AI processing without cloud dependency, and proactive workflow and productivity recommendations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

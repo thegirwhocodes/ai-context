@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://helloduty.com/country/nigeria
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:14:09 UTC
+========================================================================
+
+URL: https://helloduty.com/country/nigeria
+Extraction prompt: What are the specific prices for Nigeria USSD, SMS, and voice calls through Africa's Talking or other providers? Any details on setup costs, per-minute rates, or session costs.
+
+----------------------------------------
+
+# Nigeria Communication Service Pricing
+
+Based on the HelloDuty pricing guide, here are the specific rates for Nigeria:
+
+## SMS
+- **Per SMS sent:** NGN 5.8
+- **Brand name setup:** Free
+- **Two-way SMS setup:** Free
+
+## WhatsApp
+- **Per 24-hour conversation session:** USD 0.0516
+- **Setup cost:** Free
+
+## USSD
+- **Shared code (monthly):** NGN 53,750
+- **Dedicated code setup:** NGN 225,000
+- **Dedicated code (monthly):** NGN 70,000
+- **Usage - postpaid (per dial):** NGN 2.0
+- **Usage - prepaid (per dial):** NGN 4.89
+
+## Voice/IVR
+- **Virtual phone number (monthly):** NGN 5,000
+- **Virtual phone number setup:** Free
+- **Incoming calls (per second):** NGN 0.12
+- **Outgoing calls (per second):** NGN 0.32
+
+**Note:** The document does not reference Africa's Talking specifically. These are HelloDuty's published rates for Nigeria services.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

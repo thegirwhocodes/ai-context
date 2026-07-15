@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.aiexpertmagazine.com/ai-expo-hackathon-2026-everything-you-need-to-k
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:14:29 UTC
+========================================================================
+
+URL: https://www.aiexpertmagazine.com/ai-expo-hackathon-2026-everything-you-need-to-know/
+Extraction prompt: What does this article say about past SCSP/AI+ Expo hackathon winners, what wins, judging patterns, and what the 2026 hackathon expects? List specific past winning projects if mentioned.
+
+----------------------------------------
+
+# AI+ Expo Hackathon 2026: Past Winners and Judging Information
+
+Based on the article provided, **no specific information is given about past SCSP/AI+ Expo hackathon winners, previous winning projects, or detailed judging patterns.**
+
+The article does mention that:
+
+- "Past hackathon participants often receive offers from government contractors, defense tech startups, and the sponsoring AI companies themselves."
+
+- Regarding 2026 judging criteria: "Applications will be evaluated on technical merit, feasibility, security considerations, and alignment with national security mission needs."
+
+- Past challenge topics have included "automated intelligence report summarization, disinformation detection, and secure AI-assisted decision support," though these are described generally rather than as actual winning submissions.
+
+The article is primarily forward-looking, focused on what to expect at the 2026 event rather than documenting the history or outcomes of previous hackathons in this series. For detailed information about past winners and specific projects, you would need to consult additional sources or the official hackathon website.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

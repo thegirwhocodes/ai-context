@@ -1,0 +1,45 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw install guide 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 02:58:55 UTC
+========================================================================
+
+Search query: OpenClaw install guide 2026
+
+----------------------------------------
+
+Web search results for query: "OpenClaw install guide 2026"
+
+Links: [{"title":"OpenClaw Tutorial: Installation to First Chat Setup | Codecademy","url":"https://www.codecademy.com/article/open-claw-tutorial-installation-to-first-chat-setup"},{"title":"How to Run OpenClaw with DigitalOcean | DigitalOcean","url":"https://www.digitalocean.com/community/tutorials/how-to-run-openclaw"},{"title":"Install - OpenClaw","url":"https://docs.openclaw.ai/install"},{"title":"openclaw - npm","url":"https://www.npmjs.com/package/openclaw"},{"title":"OpenClaw Installation Guide 2026 | Docker, npm, GitHub","url":"https://openclaw-ai.online/installation/"},{"title":"OpenClaw - Install Openclaw in 5 Minutes: Fast, Secure Setup Guide 2026","url":"https://openclawagi.com/install-openclaw-in-5-minutes-fast-secure-setup-guide-2026/"},{"title":"OpenClaw Installation & Integration Guide 2026: Complete Setup for WhatsApp, Telegram, Discord & Browser Relay - From Zero to Personal AI Assistant: Installation, Integration & Browser Automation | AI Free API","url":"https://www.aifreeapi.com/en/posts/openclaw-installation-guide"},{"title":"How to Install OpenClaw: Step-by-Step Guide (Formerly ClawdBot / MoltBot)","url":"https://blog.promptlayer.com/how-to-install-openclaw-step-by-step-guide-formerly-clawdbot-moltbot/"},{"title":"How to Install OpenClaw (For Beginner): Setup, VPS & Hosting","url":"https://boostedhost.com/blog/en/how-to-install-openclaw-get-started-guide/"},{"title":"Releases · openclaw/openclaw","url":"https://github.com/openclaw/openclaw/releases/"}]
+
+Here are the search results for OpenClaw install guide 2026:
+
+## Installation Methods
+
+OpenClaw (formerly known as Clawdbot and Moltbot) offers three primary installation methods:
+
+### NPM/Global Installation (Recommended)
+Install with a single command (npm install -g openclaw@latest), run the onboarding wizard (openclaw onboard), and start chatting with AI from any messaging platform. This method requires Node.js version 22 or higher installed on your system, and it works seamlessly on macOS, Linux, and Windows through WSL2.
+
+### One-Liner Installation
+The installer script is the recommended way to install OpenClaw. It handles Node detection, installation, and onboarding in one step.
+
+### Docker Installation
+OpenClaw supports Docker-based installations. You can run OpenClaw in a Docker container for isolated execution with the command: docker run -d --name openclaw \ -v ~/.openclaw:/root/.openclaw \ -p 18789:18789 \ ghcr.io/openclaw/openclaw:latest
+
+## System Requirements
+
+Runtime: Node.js 22.12.0 or later (npm, pnpm, or bun) Platforms: macOS, Linux, Windows (via WSL2; strongly recommended)
+
+## Setup Expectations
+
+A truly useful, always-on agent often involves a dedicated machine or VM and some terminal work. Installation can be quick, but tuning and troubleshooting may take time.
+
+For additional details and platform-specific guides, you can visit the official OpenClaw documentation and installation guides found in the search results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

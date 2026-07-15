@@ -1,0 +1,582 @@
+========================================================================
+AGENT RESEARCH: Research soldier-profile data sources
+Session: 0e17b9dd-fd49-407b-a86a-9cd1fff442b8
+Time: 2026-04-26 20:03:10 UTC
+========================================================================
+
+Deep research: where does a U.S. Army soldier's personal identity data actually live on their computer (or accessible to it), and how can a local AI assistant ingest that data to auto-populate forms like the DA-31 (leave), DD-1351-2 (travel voucher), and DA-4856 (counseling)?
+
+The use case: Adjutant is a voice-first, fully offline AI assistant for Army paperwork (built for SCSP Hackathon Boston 2026, GenAI.mil track). Right now SGT Chen has to dictate her name, rank, unit, SSN, emergency contact, etc. every time she files a form. We want to make it so she only needs to say "file ten days of leave starting June 3" and Adjutant fills in the rest from a profile it already knows. Need concrete answers on where that profile data lives and how we can get to it.
+
+Research the following — concrete details, file paths, formats, real product names, real APIs:
+
+A) **Authoritative Army personnel data sources** (where is "the truth" about a soldier?):
+- IPPS-A (Integrated Personnel and Pay System – Army) — the master personnel record. Web app at ipps-a.army.mil. Does it expose any export / XML / JSON / PDF formats a soldier can download? Any soldier-self-service portal that lets you download "your record"?
+- DEERS (Defense Enrollment Eligibility Reporting System) via milConnect — what can a soldier download about themselves?
+- ERB (Enlisted Record Brief) and ORB (Officer Record Brief) — the standard "everything about you" PDF every soldier carries. Where do they print/download from? What fields appear on it? Is it parseable (consistent layout)?
+- DA Form 2A (Personnel Qualification Record, Part 1) and DA Form 2-1 (Part 2) — legacy but still used. What do they contain?
+- DD Form 93 (Record of Emergency Data) — emergency contact info. Usually CAC-protected via myPay or similar.
+- Soldier Talent Profile (in IPPS-A's ATAP) — the "LinkedIn for soldiers" profile.
+- DA Form 705 (ACFT scorecard), DA-3349 (physical profile), DA-2823 (sworn statement) — what soldier-identity data do they contain?
+
+B) **Where this data physically lands on a soldier's computer:**
+- Government-furnished equipment (GFE laptop / Toughbook): standard install paths, where IPPS-A web cache lives, where downloaded PDFs go, where Outlook .pst files for AKO/Army 365 sit
+- Personal device (iPhone, Android, personal MacBook): is there an "Army" app that stores anything locally?
+- Browser caches for IPPS-A / DTS / milConnect (Chrome/Edge default download locations)
+- The CAC card: PIV middleware (ActivClient on Windows, OpenSC on Mac/Linux) — what data is exposed via the PIV interface? Name? EDIPI? DODID? Email cert? Can we read it from JavaScript / a native helper?
+- iPhone Wallet / Apple Wallet — does the Army issue digital ID cards as Wallet passes? Are they readable via PassKit?
+- Microsoft Authenticator / Outlook profile files — where are the soldier's email signature, name, and contact info stored?
+
+C) **Real soldier-AI / soldier-profile apps and how they handle this:**
+- Nett Warrior — chest-mounted Samsung running Android. How does the EUD know the soldier's identity? Manual entry? Pulled from ATAK PRC import?
+- ATAK / TAK — does it have a "user profile" file? Where does it live (e.g., `/sdcard/atak/Databases/`)?
+- IVAS / HoloLens military variant — how does it identify the wearer?
+- CAC SSO browsers — what data do they expose to the loaded pages?
+- Milnerva, Ask Sage, CamoGPT — do any of them auto-import soldier profile data?
+- ATAP (Army Talent Alignment Process) and ACT (Army Career Tracker) — do they expose XML/JSON exports?
+
+D) **Standard file formats + paths a profile-aware app should look for:**
+- Where would WE store an Adjutant profile.json on macOS, Linux, Windows? (Standard: `~/Library/Application Support/Adjutant/profile.json` on macOS, `~/.config/adjutant/profile.json` on Linux, `%APPDATA%/Adjutant/profile.json` on Windows)
+- Should we use OS keychain for sensitive fields (SSN, EDIPI)? Keychain Access on macOS, Secret Service on Linux, Credential Manager on Windows
+- Should the file be encrypted at rest? With what (libsodium, OS keychain, age, GnuPG)?
+- For a CONFIRM step before each form: do we hash the SSN or store last-4 only? What's the right sensitive-field strategy?
+
+E) **Practical ingestion paths for Adjutant:**
+- Drag-and-drop a PDF onto the page → parse the ERB/ORB → populate the profile (which library? pdfplumber? pypdf+regex? Tesseract OCR if scanned?)
+- Read the soldier's Outlook signature via .pst parse to grab name + unit
+- Native helper script that reads the CAC card via OpenSC `pkcs15-tool` and exports name + EDIPI to a JSON file
+- A "Profile" tab in the Adjutant web UI where soldier types it in once, stored locally
+- Read from a soldier-managed .json file in a known location (like `~/.adjutant/profile.json`)
+
+F) **Privacy/compliance considerations:**
+- DoD policy on storing PII on GFE — can we store a profile.json containing SSN on a personal Mac? On a GFE Windows machine? What's the actual rule?
+- HIPAA-adjacent rules for medical data (DA-3349 physical profile)
+- CUI marking — does an Adjutant profile file need a CUI marking?
+- For an offline product, what's the right disclosure? "Your profile lives only on this laptop, never transmitted, encrypted at rest"?
+
+G) **What the actual ERB/ORB/DA-2A file contains (as fields we could auto-populate from):**
+- Full legal name
+- Rank / paygrade (E-1 through O-10)
+- Branch and MOS / AOC
+- DODID / EDIPI (10-digit DoD identifier)
+- SSN (last 4 only on most modern docs)
+- DOB
+- Date of rank
+- BASD (Basic Active Service Date)
+- ETS (Expiration Term of Service)
+- PEBD (Pay Entry Basic Date)
+- Component (RA/USAR/ARNG)
+- Current unit / UIC (Unit Identification Code)
+- Component / installation
+- Home of record
+- Civilian education
+- Military education (PME, schools)
+- Awards
+- Languages
+- Security clearance
+- Marital status, dependents
+- Emergency contact (next of kin) — usually on DD-93, not ERB
+
+For each field above, note: which Adjutant-supported form (DA-31, DD-1351-2, DA-4856) needs it, so we know which fields are highest priority.
+
+Return at least 2000 words. Concrete file paths, real app names, real registry keys, real environment variables. Cite sources where you can find them. The output feeds an implementation plan: we want to ship a `~/.adjutant/profile.json` schema, a profile-import flow, and an integration into `adjutant/llm.py`'s extract_form_data() so the LLM is told "the soldier's static identity is [json]; just fill in what's NEW from the voice request."
+
+----------------------------------------
+
+I have everything I need. Let me write the comprehensive deep-research response.
+
+---
+
+# Adjutant Profile-Awareness: Where Soldier Identity Data Lives & How to Ingest It
+
+Below is the full implementation-ready research dossier. It maps every authoritative Army personnel source, every place that data physically lands on a soldier's machine, every realistic ingestion path for Adjutant, and the privacy/CUI rules you cannot ignore. Recommendations at the end.
+
+---
+
+## A) Authoritative Army personnel data sources — where "the truth" lives
+
+### IPPS-A (Integrated Personnel and Pay System – Army) — the master record
+
+**URL:** `https://my.ippsa.army.mil` (CAC-protected SSO via EAMS-A)
+**Auth:** CAC required, using EAMS-A federation
+**What it replaced:** TOPMIS, eMILPO, RLAS, SIDPERS, DJMS-RC, and ultimately the legacy ERB
+
+**Soldier Self-Service homepage tiles** (per IPPS-A Self-Service User Guide v4, Dec 2025):
+- **Personal Details** — name, picture, rank, MOS, two addresses (Home Address + Mailing Address), phone numbers, marital status
+- **Soldier Talent Profile (STP)** — the modern "everything about you" view; replaces the ERB
+- **Documents** — list view; ERB and STP downloadable as PDF from here
+- **Member Self-Service** — the umbrella container for record updates via PARs (Personnel Action Requests)
+
+**Export formats actually exposed to soldiers:**
+- The STP and ERB are PDF only. There is NO public XML/JSON export endpoint. To "save" your record, you open it in IPPS-A in Microsoft Edge, hit Print, and "Save as PDF."
+- IPPS-A is built on PeopleSoft; under the hood there is an API used by the Leader's Dashboard, but no soldier-facing API.
+
+**Practical implication for Adjutant:** the realistic ingestion path is "soldier exports STP/ERB to PDF, drags it into Adjutant, we parse." There is no direct programmatic pull.
+
+### ERB (Enlisted Record Brief) and ORB (Officer Record Brief)
+
+The ERB is being phased out and replaced by the STP inside IPPS-A. Both still exist in the IPPS-A Documents tile and are served as PDF. Layout is consistent across the Army (it is generated by IPPS-A from PeopleSoft fields), which makes it parseable with regex against text extracted by `pdfplumber` or `pypdf`.
+
+**Standard ERB sections / fields:**
+- ADMINISTRATIVE DATA: Name (Last, First MI), DODID/EDIPI, SSN (last 4), date of birth, race/ethnicity, sex, marital status, religion, citizenship
+- ASSIGNMENT INFORMATION: current unit, UIC, station, AOC/MOS, duty title, date arrived (DAS), projected stabilization date
+- SERVICE DATA: PEBD (Pay Entry Basic Date), BASD (Basic Active Service Date), DOR (Date of Rank), ETS (Expiration Term of Service), component (RA / USAR / ARNG)
+- PERSONAL/FAMILY: number of dependents, family member names (sometimes redacted to last initial)
+- FOREIGN LANGUAGE: language code, listening/reading scores
+- SECURITY DATA: clearance level (SECRET / TS / TS-SCI), eligibility date, investigation type, date of last investigation
+- ASSIGNMENTS (history): every PCS, with from/to UIC and dates
+- AWARDS AND DECORATIONS: full list with dates
+- MILITARY EDUCATION: PME schools (BLC, ALC, SLC, MLC), course completions
+- CIVILIAN EDUCATION: degrees, school, year, GPA
+- AWARDS AND DEPLOYMENTS: combat deployments, campaign credits
+
+### Soldier Talent Profile (STP) — IPPS-A's "LinkedIn for soldiers"
+
+The STP is the modern record. Same data domains as the ERB, plus:
+- **Talents and skills:** self-reported skills, certifications, civilian qualifications, ASVAB sub-scores
+- **Career preferences:** preferred installations, schools desired
+- **Knowledge/Skills/Behaviors (KSBs)**
+
+Same PDF export path as the ERB, same parse strategy.
+
+### DA Form 2A / DA Form 2-1 (Personnel Qualification Records)
+
+Legacy paper forms. DA-2A is "Personnel Qualification Record Part I" (administrative section: identity, security, qualifications). DA-2-1 is Part II (assignment history, awards). Replaced operationally by ERB, but still appear in legal/HR proceedings. Same fields as ERB's first half.
+
+### DD Form 93 — Record of Emergency Data
+
+**Source of truth:** stored inside iPERMS (Interactive Personnel Electronic Records Management System), routed in/out through milConnect.
+**Update path:** soldier visits unit S-1 to update; the form lives in the soldier's personnel file in iPERMS, from which HRC's Casualty and Mortuary Affairs Operation Division pulls casualty notification data.
+**Access:** soldier can view via DPRIS in milConnect (`https://milconnect.dmdc.osd.mil`) → "Correspondence/Documentation" → "Defense Personnel Records Information."
+**Fields critical for Adjutant:**
+- Section 1 (Emergency Contact): person to be notified in case of emergency (PNOK), secondary next of kin, name/address/phone of spouse/parents/children
+- Section 2 (Benefits): designation of unpaid pay/allowance beneficiaries
+
+### DEERS via milConnect
+
+`https://milconnect.dmdc.osd.mil` — DMDC's portal. CAC or DS Logon authenticated.
+**What it serves:** TRICARE eligibility, ID card status, dependent enrollment, DD-93 view, contact info.
+**Export format:** none structured. PDFs only. There is no soldier-facing XML/JSON. The DMDC/DEERS Support Office is `1-800-538-9552`.
+
+### Other forms with identity payloads
+
+- **DA Form 705 (ACFT scorecard)** — name, rank, unit, DODID, age category, gender; useful only as a fallback identity sniff
+- **DA Form 3349 (physical profile)** — name, rank, SSN/DODID, unit, MOS, profile type, restrictions; medically sensitive (HIPAA-adjacent)
+- **DA Form 2823 (sworn statement)** — name, rank, organization, location, date
+
+### Army Career Tracker (ACT) and ATAP
+
+- **ACT:** self-development tool; pulls from IPPS-A, no API for soldiers
+- **ATAP (Army Talent Alignment Process):** the assignment marketplace that consumes the STP; same data domain as STP, no soldier-export
+
+---
+
+## B) Where this data physically lands on a soldier's computer
+
+### CAC card (THE MOST RELIABLE SOURCE)
+
+The CAC is the single richest, always-present, programmatically-readable identity source on a soldier's GFE. It carries three certificates (Identity/PIV-Auth, Email/Signature, Encryption) plus the PIV containers.
+
+**Subject CN of DoD Human End Entity certificates** (per DoD PKI NIPRNet Cert Profile):
+```
+CN=LAST.FIRST.MIDDLE.EDIPI
+```
+Example: `CN=CHEN.SOFIA.M.1234567890,OU=USA,OU=PKI,OU=DoD,O=U.S. Government,C=US`
+
+**Subject Alternative Name (SAN) extension contains:**
+- **UPN:** `EDIPI@mil` (the 10-digit DoD ID followed by `@mil`)
+- **Email:** `firstname.m.lastname.mil@mail.mil` (or `@army.mil` post-DoD365 migration)
+- **FASC-N:** Federal Agency Smart Credential Number (binary, encodes agency + person ID)
+
+**Programmatic read paths:**
+- **Windows (with ActivClient):** PKCS#11 via `acpkcs211.dll`, or via `CertEnumCertificatesInStore` against the user's `MY` store after CAC insertion populates it. PowerShell snippet circulating in the SCCM community uses `Get-ChildItem Cert:\CurrentUser\My` and parses `Subject` and `Extensions['2.5.29.17']` (SAN).
+- **macOS / Linux (OpenSC):** `pkcs15-tool -D` lists tokens; `pkcs15-tool --read-certificate <id>` dumps the cert; `openssl x509 -text -noout` extracts CN + SAN. Per the OpenSC US-PIV wiki, `pkcs11-tool --module opensc-pkcs11.so --list-objects` enumerates certificates including the PIV-Auth cert which carries the EDIPI in SAN-UPN.
+- **Browser-side:** the loaded site sees the cert (TLS client auth), but JavaScript cannot read it directly. A native helper (Adjutant's local agent) is required.
+
+**This is the cleanest path for Adjutant** — a 50-line Python script using `python-pkcs11` or shelling to `pkcs15-tool` will give us authoritative `name` + `EDIPI` + `email` with no soldier typing.
+
+### IPPS-A web cache / downloaded PDFs
+
+**Edge default download location (Windows GFE):** `%USERPROFILE%\Downloads\`
+**Chrome on macOS:** `~/Downloads/`
+**File names:** IPPS-A generates `STP_<EDIPI>_<YYYYMMDD>.pdf` and similar predictable patterns for the ERB.
+
+The web cache itself (in `%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache`) is encrypted blobs by default and not realistically scrapeable; we should NOT attempt to mine the browser cache. The download folder is the right surface.
+
+### Outlook / Army 365 profile
+
+GFE laptops typically run Outlook. The signature block, OST/PST files, and address book hold the soldier's display name + unit + email + DSN phone.
+
+- **Outlook signature files (Windows):** `%APPDATA%\Microsoft\Signatures\<signaturename>.htm` (and `.txt`, `.rtf`)
+- **OST cache:** `%LOCALAPPDATA%\Microsoft\Outlook\<email>.ost`
+- **PST archive:** `%USERPROFILE%\Documents\Outlook Files\<email>.pst`
+- **Profile registry:** `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Profiles\Outlook\<long-key>` — contains DisplayName, SMTP address, EWS URL
+
+A signature file parse alone gets us "Sofia M. Chen / SGT, USA / Bravo Company, 1-504th PIR / DSN 432-XXXX / sofia.m.chen.mil@army.mil." Cheap, reliable, no privileges needed.
+
+### Personal device
+
+There is no Army-issued app on personal iPhones/Androids that stores authoritative profile data locally that we can read. The "milConnect" mobile app and "ArmyIgnitED" exist but expose web views, not local storage.
+
+**Apple Wallet:** as of November 2025, Apple introduced Digital ID via U.S. passport — but **not military CAC**. There is no Apple Wallet pass for the DoD ID card in 2026. Cannot rely on PassKit for a soldier's identity.
+
+### Microsoft Authenticator
+
+Stores OAuth tokens for Army 365. Not directly readable by an external app, but the Authenticator account list shows the soldier's `@army.mil` email, which is recoverable via accessibility APIs on macOS — not a path I'd recommend.
+
+---
+
+## C) Real soldier-AI / soldier-profile apps and how they handle profile data
+
+### Nett Warrior EUD
+
+The Nett Warrior End User Device is an Android handheld (Samsung S20-Tactical, currently transitioning to S22) tied to the AN/PRC-154 Rifleman Radio. It runs **ATAK** as the primary app. **There is no automatic identity provisioning.** The soldier (or unit comms NCO) manually configures:
+- Callsign
+- Team color and role (Rifleman, SAW Gunner, Squad Leader, etc.)
+- Self-marker icon
+
+So even the most operational Army soldier-side software requires manual identity entry. This is the bar Adjutant has to beat — and we can.
+
+### ATAK / CivTAK
+
+- **User profile config path** (Android): `Settings > Callsign and Device Preferences`
+- **Internal storage paths:** maps in `Internal storage/atak/imagery/`, overlays in `Internal storage/atak/overlays/`, mission packages in `Internal storage/atak/mission_packages/`
+- **Preferences XML** (where callsign + team are persisted): typically under `/sdcard/atak/Databases/` — but not reliably documented in CivTAK manuals. The encryption passphrase is set via the same Settings menu.
+- The lesson for Adjutant: ATAK treats identity as "first-run setup, then never again." That's the UX pattern we want.
+
+### IVAS / HoloLens (Soldier Touchpoint)
+
+Wearer ID is provisioned via Azure AD on the device's setup. The device's identity is derived from the user's CAC sign-in to the laptop that paired it. No exposed local API.
+
+### Ask Sage (Army Enterprise LLM Workspace)
+
+Per docs.asksage.ai: CAC login via the cArmy Cloud, IL5-accredited for CUI. Account settings store name + email — populated automatically from CAC SAN at first login. Does NOT expose an export of the soldier's profile.
+
+### CamoGPT
+
+Hosted at `https://camogpt.ai.army.mil/camogpt`. NIPRNet, IL5, CUI-authorized. CAC SSO. Same model: identity comes from the cert at login, not from the soldier typing it. **No soldier-profile auto-import for forms.**
+
+### Milnerva, "WriteMyNCOER," etc.
+
+Web-based NCOER writing tools. They auto-fill from a soldier-provided ERB upload — exactly the pattern Adjutant should adopt for forms.
+
+---
+
+## D) Where Adjutant should store the profile (file paths + encryption strategy)
+
+Use platform-native conventions. The cleanest cross-platform Python is `platformdirs.user_data_dir("Adjutant", "Adjutant")`:
+
+| Platform | Profile path |
+|---|---|
+| macOS | `~/Library/Application Support/Adjutant/profile.json` |
+| Linux | `$XDG_DATA_HOME/adjutant/profile.json` (defaults to `~/.local/share/adjutant/profile.json`) |
+| Windows | `%APPDATA%\Adjutant\profile.json` (typically `C:\Users\<user>\AppData\Roaming\Adjutant\profile.json`) |
+
+Per the XDG Base Directory Specification: config in `$XDG_CONFIG_HOME` (`~/.config`), data in `$XDG_DATA_HOME` (`~/.local/share`), state in `$XDG_STATE_HOME` (`~/.local/state`), cache in `$XDG_CACHE_HOME` (`~/.cache`). The profile is "user data," so `data_dir` is correct, not `config_dir`.
+
+A simpler convention (used by `gh`, `aws`, `kubectl`) is `~/.adjutant/profile.json` — single dotfile dir, works everywhere, no platformdirs dependency. **For a hackathon demo, this is the right call.** For a productized version, use platformdirs.
+
+### Sensitive-field strategy (SSN, full DODID, dependents)
+
+Do not store full SSN in the JSON. The actual Army standard on modern forms is "last 4 only." Match it.
+
+**Schema split:**
+1. `profile.json` — non-sensitive: name, rank, unit, MOS, DSN phone, email, home base, last4 SSN, last4 DODID
+2. **OS keychain** — full SSN, full DODID, emergency contact details. Store via `keyring` library:
+   - macOS: Keychain Access (`security` CLI under the hood)
+   - Linux: SecretService via libsecret / GNOME Keyring / KWallet
+   - Windows: Credential Manager
+   - Service name: `adjutant`, account: `<edipi>:ssn` etc.
+
+`keyring.set_password("adjutant", "ssn", "123-45-6789")` and `keyring.get_password("adjutant", "ssn")`. Cross-platform, no encryption code to write, native OS prompt at retrieval if the user enabled per-app prompts.
+
+**If you want file-level encryption instead of keychain:** use libsodium's `crypto_secretstream` API via `pynacl` — passphrase-derived key with `crypto_pwhash_str_alg(ARGON2ID13)`, then encrypt the JSON. But keychain is simpler and gives you per-app ACL for free.
+
+**For voice CONFIRM step before PDF write:** read full SSN from keychain, speak only the last 4 ("Confirming SSN ending in 6789"), then write last 4 to the PDF. Never speak the full SSN.
+
+---
+
+## E) Practical ingestion paths for Adjutant — ranked
+
+**Recommended order by effort vs. value:**
+
+1. **CAC parse via OpenSC native helper** (5 minutes of work, gives name + EDIPI + email authoritatively):
+   ```python
+   import subprocess, re
+   out = subprocess.check_output(["pkcs15-tool", "--read-certificate", "01"]).decode()
+   cert_text = subprocess.check_output(["openssl", "x509", "-text", "-noout"], input=out, text=True)
+   m = re.search(r"Subject:.*?CN=([A-Z]+)\.([A-Z]+)\.([A-Z]?)\.?(\d{10})", cert_text)
+   last, first, mi, edipi = m.groups()
+   ```
+   On Windows, equivalent via `Get-ChildItem Cert:\CurrentUser\My | Where-Object {$_.Subject -like '*OU=DoD*'}` from a PowerShell helper.
+
+2. **PDF drag-and-drop of ERB / STP** (covers 90% of fields in one shot):
+   - Use **pypdf** for AcroForm extraction if it's a fillable PDF: `reader.get_fields()` returns a dict of field-name → value. `pdfplumber` accesses the same via `pdf.doc.catalog["AcroForm"].resolve()["Fields"]`.
+   - For the IPPS-A-generated ERB/STP (text-PDF, not a form), use `pdfplumber.extract_text()` and regex against the known section headers ("ADMINISTRATIVE DATA", "SERVICE DATA", etc.).
+   - If the PDF is scanned (rare for IPPS-A output), fall back to `pytesseract` with the GFE's bundled Tesseract.
+
+3. **Outlook signature parse** (Windows GFE, two-line script):
+   ```python
+   import os, re
+   sig_dir = os.path.expandvars(r"%APPDATA%\Microsoft\Signatures")
+   for f in os.listdir(sig_dir):
+       if f.endswith(".txt"):
+           text = open(os.path.join(sig_dir, f)).read()
+           # parse name/rank/unit/email
+   ```
+
+4. **Manual entry via a Profile tab in Adjutant's web UI** (always-available fallback). One-time form, stored to `~/.adjutant/profile.json`, sensitive fields go to keychain.
+
+5. **Soldier-managed JSON** at `~/.adjutant/profile.json` — power-user path; soldier writes/edits manually. Document the schema in `adjutant/docs/profile-schema.md`.
+
+**What we should NOT do:** scrape browser cache, hook IPPS-A's PeopleSoft endpoints (would require CAC re-auth and is brittle), or attempt to read DPRIS programmatically (no public API, would violate ToS).
+
+---
+
+## F) Privacy / compliance — the hard rules
+
+### The headline rule
+
+**DoD policy requires PII to reside ONLY on Government Furnished Equipment (GFE). It must never be stored on personal devices.** This comes from DoDI 5400.11 and is reinforced by every annual Cyber Awareness Challenge.
+
+PII is a category of CUI under DoDI 5200.48 ("Controlled Unclassified Information"), issued 6 March 2020.
+
+**What this means concretely for Adjutant:**
+
+- A `~/.adjutant/profile.json` containing SSN, EDIPI, or emergency contact info on a **personal MacBook** is technically a policy violation if the soldier is acting in their official capacity.
+- The same file on a **GFE Windows laptop** is acceptable IF it's encrypted at rest and CUI-marked.
+
+### CUI marking requirements
+
+Per DoDI 5200.48, CUI markings on unclassified DoD documents must include "CUI" in the banner and footer. For our purposes:
+- Generated PDFs (the filled DA-31 etc.) should carry "CUI" in header and footer when they contain PII
+- The `profile.json` is itself CUI; if persisted, it should carry an internal marking field: `{"cui_marking": "CUI//PRIV", ...}`
+- Per the Cyber Awareness Challenge guidance: CUI/PII must be encrypted on mobile devices and when emailed; all internal and removable storage including laptops must be properly marked and secured
+
+### Right disclosure for an offline product
+
+For Adjutant's first-run screen (text the user sees and clicks to accept):
+
+> **Adjutant runs entirely on this laptop. Your profile, your voice, and your filled forms never leave this device. Sensitive fields (SSN, DoD ID, emergency contact) are stored in the operating system keychain — not in plain files. The forms Adjutant generates are marked CUI//PRIV and remain in your local Downloads folder until you choose to send them. You are responsible for handling those PDFs in accordance with DoDI 5200.48 and your unit's information-protection guidance.**
+
+### Medical data (DA-3349 physical profile)
+
+DA-3349 is military medical information. It's NOT covered by HIPAA the way civilian medical records are, because DoD is a covered entity under a specific Privacy Rule carve-out — but it IS protected health information under DoDM 6025.18. For Adjutant scope: don't ingest DA-3349 at all in V1. The forms we support (DA-31, DD-1351-2, DA-4856) don't need profile data. Punt medical until V2.
+
+---
+
+## G) Field-by-field profile schema mapped to Adjutant's three forms
+
+Marked which form needs which field, and the priority for V1.
+
+| Profile field | Source of truth | DA-31 (leave) | DD-1351-2 (travel) | DA-4856 (counseling) | V1 priority |
+|---|---|---|---|---|---|
+| `name_last` | CAC SAN, ERB, STP | YES (Block 2) | YES (Block 2) | YES (Part I) | P0 |
+| `name_first` | CAC SAN, ERB, STP | YES | YES | YES | P0 |
+| `name_middle` | CAC SAN, ERB | YES | YES | YES | P0 |
+| `rank` (e.g., E-5) | ERB, STP, IPPS-A Personal Details | YES (Block 4) | YES (Block 3) | YES | P0 |
+| `pay_grade` (alias) | ERB | -- | -- | -- | P0 |
+| `dodid` (10-digit EDIPI) | CAC SAN-UPN, ERB | YES (Block 3) | YES (Block 4) | optional | P0 |
+| `ssn_last4` | ERB, DD-93 | optional (often DODID instead) | YES if no DODID | optional | P0 |
+| `ssn_full` (KEYCHAIN ONLY) | DEERS, ERB | rarely required | sometimes | no | P1 |
+| `email` (army.mil) | CAC SAN-RFC822, Outlook profile | optional | optional | optional | P0 |
+| `unit_name` (Bravo Co, 1-504 PIR) | ERB Assignment, IPPS-A | YES (Block 8 organization) | YES (Block 11 org) | YES (Part I organization) | P0 |
+| `uic` (e.g., WAUAA0) | ERB, STP | rarely | sometimes | no | P2 |
+| `duty_station` (Fort Bragg) | ERB, IPPS-A address | YES (station portion of Block 8) | YES (home base, Block 6a / 11) | YES | P0 |
+| `home_address` | DEERS, IPPS-A Personal Details | -- | YES (Block 6 mailing) | -- | P1 |
+| `dsn_phone` / `commercial_phone` | Outlook signature, ERB | YES (Block 8 phone) | YES (Block 7) | -- | P0 |
+| `mos` / `aoc` (e.g., 11B) | ERB, STP | -- | -- | -- | P2 (DA-31 has no MOS field, but useful context for LLM) |
+| `component` (RA/USAR/ARNG) | ERB, STP | -- | -- | -- | P2 |
+| `dor` (Date of Rank) | ERB, STP | -- | -- | -- | P3 |
+| `basd` (Basic Active Service Date) | ERB | -- | -- | -- | P3 |
+| `pebd` (Pay Entry Basic Date) | ERB | -- | -- | -- | P3 |
+| `ets` (Expiration Term of Service) | ERB | indirect (terminal leave eligibility) | -- | -- | P2 |
+| `home_of_record` | ERB | -- | sometimes | -- | P2 |
+| `marital_status` | DEERS, ERB | -- | -- | -- | P3 |
+| `dependents_count` | DEERS, DD-93 | -- | -- | -- | P3 |
+| `emergency_contact_name` (KEYCHAIN) | DD-93 | YES (Block 11 emergency_contact) | -- | -- | P1 |
+| `emergency_contact_phone` (KEYCHAIN) | DD-93 | bundled with above | -- | -- | P1 |
+| `security_clearance` | ERB, STP | -- | -- | -- | P3 |
+| `civilian_education` | ERB, STP | -- | -- | -- | P3 |
+| `military_education` | ERB, STP | -- | -- | -- | P3 |
+| `awards` | ERB, STP | -- | -- | -- | P3 |
+| `language` | ERB, STP | -- | -- | -- | P3 |
+
+**P0 (ship for hackathon):** name (last/first/mi), rank, dodid, ssn_last4, unit_name, duty_station, dsn_phone, email
+**P1 (next sprint):** ssn_full (keychain), emergency_contact (keychain), home_address
+**P2/P3:** the rest
+
+---
+
+## Concrete Recommendations for Adjutant
+
+### 1) `~/.adjutant/profile.json` schema (V1)
+
+```json
+{
+  "schema_version": 1,
+  "cui_marking": "CUI//PRIV",
+  "last_updated": "2026-04-25",
+  "soldier": {
+    "name_last": "CHEN",
+    "name_first": "SOFIA",
+    "name_middle": "M",
+    "rank": "E-5",
+    "rank_title": "SGT",
+    "dodid": "1234567890",
+    "ssn_last4": "6789",
+    "email": "sofia.m.chen.mil@army.mil",
+    "phone_dsn": "432-1234",
+    "phone_commercial": "910-555-1234"
+  },
+  "unit": {
+    "name": "B Co, 1-504 PIR",
+    "uic": "WAUAA0",
+    "duty_station": "Fort Bragg, NC",
+    "duty_station_address": "2175 Reilly Rd, Fort Bragg, NC 28310"
+  },
+  "service": {
+    "component": "RA",
+    "mos": "11B",
+    "basd": "2018-07-15",
+    "ets": "2027-07-14"
+  }
+}
+```
+
+Sensitive fields (`ssn_full`, `emergency_contact_*`) live in the OS keychain under service `adjutant`, retrieved on demand by `pdf_fill.py` only at form-write time.
+
+### 2) Profile loader module (`adjutant/profile.py`)
+
+```python
+from pathlib import Path
+import json
+import keyring
+
+PROFILE_PATH = Path.home() / ".adjutant" / "profile.json"
+
+def load_profile() -> dict:
+    if not PROFILE_PATH.exists():
+        return {}
+    return json.loads(PROFILE_PATH.read_text())
+
+def get_sensitive(field: str) -> str | None:
+    return keyring.get_password("adjutant", field)
+
+def set_sensitive(field: str, value: str) -> None:
+    keyring.set_password("adjutant", field, value)
+```
+
+### 3) Integration into `extract_form_data()` (`adjutant/llm.py`)
+
+The cleanest pattern: pass the profile as a JSON block in the prompt and tell the LLM "these are static facts; only fill in what is NEW from the voice request." This collapses what the LLM has to invent.
+
+Add to `FORM_EXTRACTION_PROMPT` in `prompts.py`:
+
+```
+SOLDIER STATIC PROFILE (use for any field not specified in the voice request):
+{profile_json}
+
+If a profile field can fill a schema field directly (name → name, rank → rank, etc.),
+use the profile value. The voice request supplies only what's NEW
+(dates, locations, purpose, leave type). Never override a profile value with a guess.
+```
+
+Then in `extract_form_data()`:
+
+```python
+from adjutant.profile import load_profile
+
+def extract_form_data(query, chunks, schema):
+    profile = load_profile()
+    profile_for_prompt = json.dumps(profile.get("soldier", {}) | profile.get("unit", {}), indent=2)
+    prompt = FORM_EXTRACTION_PROMPT.format(
+        form_id=schema["form_id"],
+        schema=schema_for_prompt,
+        query=query,
+        context=_format_context(chunks),
+        today=_today(),
+        profile_json=profile_for_prompt,  # NEW
+    )
+    # ...rest unchanged
+```
+
+This is a 10-line change in `llm.py`, a 10-line change in `prompts.py`, plus the new `profile.py` module. After this, "file ten days of leave starting June 3" produces a complete DA-31 with name, rank, DODID, unit, duty station, phone, and email all filled, plus the dates from the voice request.
+
+### 4) Profile-import flow (in priority order)
+
+- **Day-1 demo path:** "Profile" tab in the Adjutant web UI. Soldier types it in once. Stored to `~/.adjutant/profile.json`. SSN-full and emergency contact go to keychain via the same form.
+- **Day-2:** Add a "Drag your STP here" upload. Server-side `pypdf` + regex parses the standard sections, returns a confirm screen.
+- **Day-3:** Native CAC helper. Ship a `scripts/cac_import.py` that runs `pkcs15-tool` (macOS/Linux) or `Get-ChildItem Cert:\CurrentUser\My` (Windows PowerShell), parses CN + SAN-UPN, prefills `name_last`, `name_first`, `name_middle`, `dodid`, `email`. Soldier reviews + confirms.
+
+---
+
+## Key file paths referenced (for the implementation plan)
+
+- `/Users/naomiivie/adjutant/adjutant/llm.py` — `extract_form_data()` is at line 187, modify there
+- `/Users/naomiivie/adjutant/adjutant/prompts.py` — `FORM_EXTRACTION_PROMPT` at line 60, add `{profile_json}` slot
+- `/Users/naomiivie/adjutant/adjutant/forms.py` — schemas already define `name`, `rank`, `ssn`, `unit`, `duty_station`; LLM-facing keys map cleanly to profile keys
+- `/Users/naomiivie/adjutant/adjutant/pdf_fill.py` — needs to call `keyring.get_password("adjutant", "ssn_full")` if a form requires full SSN (rare)
+- New: `/Users/naomiivie/adjutant/adjutant/profile.py` — load/save profile + keychain wrapper
+- New: `/Users/naomiivie/adjutant/scripts/cac_import.py` — native helper
+- New: `~/.adjutant/profile.json` — runtime location (per-user, outside the repo)
+
+---
+
+## Sources
+
+- [IPPS-A Self-Service User Guide v4 (Dec 2025)](https://ipps-a.army.mil/Portals/129/Documents/IPPS-A_Self%20Service%20Guide_202512.pdf)
+- [IPPS-A Soldier Self-Service Data Preparedness Guide](https://home.army.mil/okinawa/4816/2743/6306/Soldier_Self_Service_Data_Guide_May_20.pdf)
+- [IPPS-A Soldier's Guide (1st Infantry Division)](https://media.defense.gov/2023/Jan/30/2003152503/-1/-1/0/IPPS-A_SOLDIERSGUIDE.PDF)
+- [IPPS-A Job Aid: Update Personnel Records](https://ipps-a.army.mil/Portals/129/Documents/Job%20Aid_Update%20Personnel%20Records_20250624.pdf)
+- [Where to download your Soldier Talent Profile (MilGears KB)](https://solutionsforinformationdesignllc.livehelpnow.net/39619/kb/article/135747/where-can-i-download-my-army-solider-talent-profile-stp)
+- [How to access ERB/ORB (MilGears KB)](https://solutionsforinformationdesignllc.livehelpnow.net/39619/kb/article/105817/how-do-i-get-my-enlisted-records-brief-erb-or-officer-record-brief-orb)
+- [Open Your STP in IPPS-A using Microsoft Edge (Recruiting Command)](https://recruiting.army.mil/Portals/15/STPwGT2.pdf)
+- [Enlisted Record Brief overview (LegalClarity)](https://legalclarity.org/where-can-i-find-my-enlisted-record-brief-erb/)
+- [DD Form 93 official PDF (DoD ESD)](https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0093.pdf)
+- [milConnect homepage](https://milconnect.dmdc.osd.mil/)
+- [DPRIS Overview (milConnect)](https://milconnect.dmdc.osd.mil/milconnect/help/topics/dpris-overview.htm)
+- [iPERMS Access (HRC)](https://www.hrc.army.mil/content/10932)
+- [DD Form 1351-2 official PDF (DoD ESD)](https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1351-2.pdf)
+- [DD Form 1351-2 instructions (DFAS Rome)](https://www.dfas.mil/Portals/98/Documents/Military%20Members/travelpay/armyactivedty/howto/Attachment%202%20DD%20Form%201351-2%20Travel%20Voucher%20Instructions.pdf)
+- [DA Form 4856 (Army Pubs)](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1026753)
+- [DA Form 4856 fillable template](https://www.iowanationalguard.com/wp-content/uploads/2024/01/DA-4856-Counseling-From.pdf)
+- [DA Form 31 Overview (Citizen Soldier Resource Center)](https://www.part-time-commander.com/da-form-31-overview/)
+- [DA Form 31 Instructions (Course Sidekick)](https://www.coursesidekick.com/accounting/236305)
+- [DoD PKI NIPRNet Certificate and CRL Profile](https://dl.dod.cyber.mil/wp-content/uploads/pki-pke/pdf/unclass-dod_pki_nipr_cert_profiles.pdf)
+- [DoD CAC PIV End-Point Implementation Guide v2.1.1](https://www.cac.mil/Portals/53/Documents/CAC_End_Point_Implementation_Guide_v2.1.1(2010.4.2).pdf)
+- [OpenSC US-PIV Wiki](https://github.com/OpenSC/OpenSC/wiki/US-PIV)
+- [MilitaryCAC PIV Activation Page](https://militarycac.com/PIV.htm)
+- [How to Extract UPN from CAC Certificate (F5 DevCentral)](https://community.f5.com/kb/technicalarticles/how-to-extract-the-upn-from-a-digital-certificate-on-a-cac-card-using-f5-apm/291498)
+- [Using PowerShell to Retrieve CAC Information](https://sccmf12twice.com/using-powershell-to-retrieve-cac-information/)
+- [Nett Warrior - Wikipedia](https://en.wikipedia.org/wiki/Nett_Warrior)
+- [Nett Warrior gets new EUD (Army.mil)](https://www.army.mil/article/107811/nett_warrior_gets_new_end_user_device)
+- [ATAK 5.3 Software User Manual](https://static1.squarespace.com/static/5404b7d2e4b0feb6e5d9636b/t/6756e0a435922f074199ba09/1733746857539/ATAK+5.3+Software+User+Manual.pdf)
+- [CivTAK / ATAK Documentation Hub](https://www.civtak.org/documentation/)
+- [Ask Sage Documentation - FAQs](https://docs.asksage.ai/docs/faq/faq.html)
+- [Army CAMO GPT (Tradewind AI)](https://www.tradewindai.com/army-camo-gpt)
+- [Army launches Army Enterprise LLM Workspace](https://www.army.mil/article/285537/army_launches_army_enterprise_llm_workspace_the_revolutionary_ai_platform_that_wrote_this_article)
+- [DLA PII Users Guide](https://www.dla.mil/portals/104/documents/generalcounsel/foia/foia_piiusersguide_1504.pdf)
+- [Safeguarding PII (Army RMDA)](https://www.rmda.army.mil/privacy/PII/PII-protecting.html)
+- [DoD CUI Program Portal](https://www.dodcui.mil/)
+- [DON CIO: CUI Marking Requirements for Documents Containing PII](https://www.doncio.navy.mil/ContentView.aspx?id=14154)
+- [August AT Awareness Month: Control CUI (Army.mil)](https://www.army.mil/article/269082/august_is_antiterrorism_awareness_month_know_how_to_properly_control_disseminate_cui)
+- [Cyber Awareness Challenge - Information Security PDF (DISA)](https://dl.dod.cyber.mil/wp-content/uploads/trn/online/disa_cac_2022_final_web/pdf/DISA_CAC2022_InformationSecurity.pdf)
+- [pdfplumber GitHub](https://github.com/jsvine/pdfplumber)
+- [pypdf forms documentation](https://pypdf.readthedocs.io/en/stable/user/forms.html)
+- [pdfminer.six AcroForm extraction howto](https://pdfminersix.readthedocs.io/en/latest/howto/acro_forms.html)
+- [Python keyring on PyPI](https://pypi.org/project/keyring/)
+- [keyring documentation](https://keyring.readthedocs.io/)
+- [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir/latest/)
+- [XDG Base Directory (Arch Wiki)](https://wiki.archlinux.org/title/XDG_Base_Directory)
+- [libsodium documentation](https://doc.libsodium.org/)
+- [Libsodium secretstream (file encryption)](https://libsodium.gitbook.io/doc/secret-key_cryptography/secretstream)
+- [Apple introduces Digital ID (Apple Newsroom, Nov 2025)](https://www.apple.com/newsroom/2025/11/apple-introduces-digital-id-a-new-way-to-create-and-present-an-id-in-apple-wallet/)
+agentId: a2a62387037031e7a (use SendMessage with to: 'a2a62387037031e7a' to continue this agent)
+<usage>total_tokens: 97598
+tool_uses: 40
+duration_ms: 1021176</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

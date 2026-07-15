@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq upload audio video API automation Zapier iPhone 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:17:04 UTC
+========================================================================
+
+Search query: Tactiq upload audio video API automation Zapier iPhone 2026
+
+----------------------------------------
+
+Web search results for query: "Tactiq upload audio video API automation Zapier iPhone 2026"
+
+Links: [{"title":"Tactiq Integrations | Connect Your Apps with Zapier","url":"https://zapier.com/apps/tactiq/integrations"},{"title":"Tactiq integration for Zapier | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/10575233-tactiq-integration-for-zapier"},{"title":"How to upload video, audio, and transcripts to Tactiq | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9546387-how-to-upload-video-audio-and-transcripts-to-tactiq"},{"title":"5 ways to automate Tactiq with Zapier | Zapier","url":"https://zapier.com/blog/automate-tactiq/"},{"title":"Tactiq MCP Server - MCP AI | Zapier","url":"https://zapier.com/mcp/tactiq"},{"title":"Tactiq ChatGPT (OpenAI) Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/chatgpt"},{"title":"The 7 Best Tactiq Alternatives in 2023 [Free & Paid]","url":"https://fireflies.ai/blog/best-tactiq-alternatives-in-2023/"},{"title":"Tactiq AI by Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/ai"},{"title":"Tactiq.io | AI Workflow Integrations","url":"https://tactiq.io/ai-workflow/ai-workflow-integrations"},{"title":"Tactiq Webhooks by Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/webhook"}]
+
+Based on the search results, here's what I found about Tactiq's upload capabilities, API, and automation with Zapier:
+
+## Uploading Audio and Video
+
+You can record a meeting using a voice recorder or mobile app, then upload the file to Tactiq. Large audio or video files may take up to 2 hours to process.
+
+## Zapier Integration and Automation
+
+Tactiq integrates with 8,000 other apps on Zapier, enabling various automation workflows. You can automatically add records to your tool of choice each time Tactiq generates a new transcript, such as automatically uploading transcripts to Google Drive or Dropbox.
+
+Zapier triggers when a meeting transcript is ready. Some advanced automation options include:
+- Linking Tactiq to ChatGPT to summarize key action points from the transcript and then automatically adding these to your Notion database.
+- Sending transcripts to a designated Slack channel for team review.
+
+## API and Webhooks
+
+When Tactiq generates a meeting transcript, Zapier sends the transcript data to a designated webhook to route information to a specific database or application automatically.
+
+Regarding the iPhone-specific and 2026-specific aspects of your query, the search results don't contain information about iPhone app functionality or recent 2026 developments for Tactiq.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

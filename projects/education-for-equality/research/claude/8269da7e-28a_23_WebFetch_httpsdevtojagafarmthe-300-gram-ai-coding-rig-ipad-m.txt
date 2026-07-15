@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dev.to/jagafarm/the-300-gram-ai-coding-rig-ipad-mini-claude-code-anywher
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 21:05:02 UTC
+========================================================================
+
+URL: https://dev.to/jagafarm/the-300-gram-ai-coding-rig-ipad-mini-claude-code-anywhere-e1o
+Extraction prompt: What is the complete setup for iPad mini + Claude Code? Every tool, every step, every limitation. Does VoiceMode work over this setup? What terminal app is used? Any tips specific to this workflow?
+
+----------------------------------------
+
+Tool permission request failed: Error: Tool permission stream closed before response received
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

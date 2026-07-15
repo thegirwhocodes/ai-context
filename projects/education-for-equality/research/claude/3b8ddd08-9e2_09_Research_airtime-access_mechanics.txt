@@ -1,0 +1,159 @@
+========================================================================
+AGENT RESEARCH: Research airtime-access mechanics
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 18:17:55 UTC
+========================================================================
+
+Do deep web research (use WebSearch and WebFetch extensively — load them via ToolSearch with query "select:WebSearch,WebFetch" if needed) on HOW top organizations let low-income/zero-balance users in Africa access voice/SMS/IVR services for free or via airtime, and the exact commercial + technical MECHANICS behind it.
+
+Context: "Sabi" is a Nigerian voice-AI tutor children dial on any feature phone; the org needs children to reach the line at ₦0 cost to the family. We need to understand exactly how the leaders do it.
+
+For EACH of these organizations, find the precise access mechanism — is it a zero-rated shortcode, a toll-free number, reverse-billing/premium, sponsored airtime, or airtime rewards? WHO pays the telco, and how does a user with zero airtime balance reach the service?
+- **Viamo (3-2-1 Service)** — how is it zero-rated, what's the deal with MTN/Airtel/Orange, do users dial a shortcode or a number, who funds the airtime, what scale.
+- **engageSPARK** — IVR + airtime top-up rewards; how the airtime API/incentive works, pricing.
+- **VOTO Mobile / Viamo origins, GeoPoll, Arifu, Eneza Education / Shupavu291 (Kenya, Safaricom), Ubongo (Tanzania, Vodacom), M-Shule** — access + funding mechanism for each.
+- **Airtime-reward / top-up APIs**: Reloadly, Africa's Talking Airtime API, Termii airtime, Telgea — how they work, pricing, how an org credits a user's phone after an action.
+
+Also research the GENERAL mechanisms themselves so we understand the toolkit: (1) zero-rating (how an MNO technically/commercially zero-rates a number or shortcode), (2) reverse-billing / toll-free (callee pays), (3) sponsored airtime / airtime incentives, (4) "call-me-back"/please-call-me free messages, (5) USSD-session funding.
+
+Prioritize CURRENT (2024–2026) and Africa/Nigeria-specific facts with real numbers, costs, and named programs. Return AT LEAST 90% of the substance you find — every figure, mechanism, org, deal structure, cost, and source URL. Do NOT give me a thin summary. Organize under clear headings with sources. Completeness over brevity.
+
+----------------------------------------
+
+All four agents returned thorough findings. The research is comprehensive. Here is the full synthesis.
+
+---
+
+# How Top Orgs Give ₦0-Balance African Users Free Voice/SMS/IVR Access — Mechanisms, Deals, and Numbers
+
+There are essentially **five access mechanisms** in the toolkit, and every leading org uses one (or a blend). The core structural truth: **a zero-balance child only reaches a service when someone other than the child has pre-funded the channel.** That funder is either (a) the MNO itself (retention play), (b) a sponsor/NGO/brand (reverse-billing), or (c) a donor paying for content while the MNO donates the airtime. The one exception that charges the user (Eneza) proves the rule.
+
+---
+
+## PART A — THE ORGANIZATIONS (who pays the telco, and how)
+
+### 1. Viamo "3-2-1 Service" — the gold standard for free IVR at scale
+
+**Access:** Dial a short code into Viamo's IVR menu. The brand is "3-2-1" and the code is often literally **`321`** (e.g. Madagascar/Airtel) — but **it is per-MNO, not universal**: in **Rwanda on MTN the code is `845`**. (No evidence found for the "528/8228" codes in our prior notes — only 845 confirmed as a non-321 code.)
+
+**Who pays the telco — and this is the key insight:** **The MNO waives the charge and eats the airtime cost.** It is NOT a donor airtime payment. The operator is repaid in **customer retention** — proven: in Madagascar, 3-2-1 users are **16% less likely to churn** to a competitor and spend more time on-air. Viamo signs an **exclusive agreement with one MNO per country**; that operator gets the loyalty upside in exchange for donating "millions of dollars of airtime."
+
+**The four-partner model / money flow:**
+- **Donors/content orgs pay Viamo ~$40,000 per content topic** to build and host audio content.
+- **The MNO donates the call delivery (airtime).**
+- **The user pays ₦0.**
+- Roles: Content partners (UNICEF, WHO, CRS) + Government partners + Communication partners (the MNOs, who donate airtime) + Resource partners (funders who pay cash).
+
+**Technical landing:** Calls land on Viamo's IVR via **E1 (TDM trunk) or SIP** integrations behind the operator's zero-rated shortcode, across ~20 countries. ~90% of usage is IVR/voice.
+
+**Confirmed MNO partners:** Orange, Airtel, MTN, Vodacom, Tigo, Grameenphone (Bangladesh, 74M subs). Madagascar = Airtel (flagship, since 2010); Rwanda = MTN (code 845, 2018, Kinyarwanda); **Nigeria = CRS-sponsored content**, free to partner-MNO subscribers.
+
+**Funders named:** USAID, UK DFID, Sweden's SIDA (original 3-2-1 resource partners); **Gates Foundation ($4,020,321 in Nov 2022 / 41 months; $178,375 in 2021 for Pakistan; a separate ~$4.3M gender+health grant through 2025)**; UNICEF, WFP, World Bank, Global Innovation Fund, Johns Hopkins CCP.
+
+**Origin:** VOTO Mobile (founded 2012, Kumasi, Ghana at KNUST, by Mark Boots + Louis Dorval) merged in **2017** with HNI (which launched 3-2-1 in 2010 under David McAfee) to form **Viamo**, a Canadian PBC.
+
+**Scale (grew over time):** 2017: 8M users / 80M inquiries. 2021: 35M+ users, 3M+ monthly actives, 66 languages, 100M+ minutes/month, 19 countries. 2022 (10-yr): 24M+ engaged that year, 1.3 billion minutes, 22 countries, 270M+ people with free on-demand access, 250+ partners. **16 countries have signed 3-2-1 agreements** (incl. Nigeria, Ghana, Tanzania, Rwanda, DRC).
+
+### 2. Ubongo (Tanzania) — rides Viamo's 3-2-1 on Vodacom
+
+TV/radio-first edutainment for kids 3–14. Mobile reach is via **Viamo's 3-2-1 IVR on Vodacom Tanzania** — kids call a **toll-free shortcode**, free to the caller, listen to literacy/numeracy songs; plus live SMS answers during TV broadcasts. **Vodacom partnership + content sponsors (UNICEF/WHO/Gates model) absorb the cost.** Education was the #2 most-consumed topic on Tanzania 3-2-1 (just 3% behind health). Won the 2019 Next Billion EdTech Prize.
+
+### 3. Eneza Education / Shupavu291 (Kenya) — the ONE that charges the user
+
+**Access:** Dial **`*291#`** OR text **`START` to shortcode `20851`** on Safaricom. SMS/USSD lessons, quizzes, "Ask-a-Teacher," offline Wikipedia.
+
+**Pricing — paid in airtime, NOT free:** **KES 10 (~$0.10)/week** (or KES 3/day) deducted from Safaricom airtime. **A zero-balance student CANNOT reach it** — they need at least the sub fee in airtime.
+
+**Operator deal:** Safaricom partner since 2013 — a **revenue-share / billing-integration deal**: Safaricom markets it, collects payment via billing APIs (airtime deduction), takes a cut, remits the balance to Eneza. Strategy: partner with enough MNOs to cover ≥70% combined market share per country.
+
+**Expansions:** Côte d'Ivoire ("iEduk," revenue-share with Orange CI + MTN, June 2018, GSMA-grant-backed, 27,545 users by Mar 2020); Ghana (MTN Apr 2017, +Airtel/Tigo Dec 2017). **Free access only happened temporarily** — Safaricom waived charges for 60 days during COVID (Apr 2020). Scale: ~4.9M registered, ~600K active subs; investors include Safaricom Spark Fund, FINCA Ventures.
+
+### 4. GeoPoll — free-to-user surveys + pays users in airtime
+
+**Reach:** **Zero-rated SMS shortcode** (free to receive/reply) + **IVR call-out** (GeoPoll calls them, no cost to respondent). **Incentive:** on completion, **<$0.50 equivalent in local airtime deposited directly to the respondent's account.** **Who pays:** research client pays GeoPoll; GeoPoll covers messaging/airtime via **85+ MNO partnerships**. Reverse-billed + airtime-reward model. Scale: 250M+ subscriber database, 5M+ active panel.
+
+### 5. Arifu (Kenya/East Africa) — free via sponsor-paid reverse-billing
+
+**Access:** Text **`BIZZ` to shortcode `22744`**, or WhatsApp **+254 701 716962**; also Messenger/Telegram. **Free to the learner — "all content is sponsored by partners," accessible "whether or not they have internet or airtime."** Mechanically a **toll-free/zero-rated, reverse-billed shortcode** (incoming SMS billed to the enterprise client, not the user — works at ₦0 balance). **Sponsors:** financial-service providers, agribusinesses, NGOs, MNOs — e.g. Unilever "Jaza Duka," **MTN Group "MoMo Coach."** Scale: 1.2M+ learners; 20,000 micro-retailers in Nigeria.
+
+### 6. M-Shule (Kenya) — SMS, sponsor/enterprise-paid
+
+**Access:** Register by SMS; adaptive SMS micro-lessons (also WhatsApp/Telegram/web). **"No airtime, data plans, smartphones or computers required" — free to learner.** Cost borne by program buyer (NGO/private sector) at **$2–5/learner/month**; needs MNO support but no named operator revenue-share deal — consistent with **reverse-billed/enterprise-paid shortcode**. Scale: ~23,000 learners, 1M+ messages.
+
+### 7. Rori (Rising Academies) — the outlier: user pays data
+
+AI math tutor (Claude-powered) over **WhatsApp** (low-bandwidth). Tutoring is free, **but NOT zero-rated — the learner bears WhatsApp data** (needs ~$20 smartphone + connection). No operator subsidy. RCT: +11 percentage points in math (~+0.3 SD). 100K–150K students; Ghana/Sierra Leone/Nigeria/Kenya/Rwanda/Liberia/Gambia. **Trades universal feature-phone reach for richer conversation** — the opposite of Sabi's design.
+
+---
+
+## PART B — AIRTIME-REWARD / TOP-UP APIs (the "sponsored airtime" toolkit)
+
+**General mechanism:** Org pre-funds a wallet → user completes an action → API auto-detects operator from the phone number and pushes a pinless prepaid top-up (<5s) → org's wallet is debited at a **discount below face value** (the discount is the org's margin/savings; user gets full face value).
+
+**Evidence it works (RCT, Bangladesh+Uganda IVR surveys):** a promised **$0.60–$1.35 airtime reward lifted IVR survey participation by ~10–19 percentage points** (BD 28.4%→39.3%, UG 40.9%→59.9%).
+
+| Provider | Model | Nigeria/Africa specifics |
+|---|---|---|
+| **Reloadly** | Best general-purpose. 170+ countries, 800+ operators, auto operator-detection, <5s, free sandbox, no minimums. Commission = your margin: send $10 at 15% commission → wallet debited only $8.50, user gets $10. Global 6–15%. | **Nigeria discounts: MTN 3%, Glo 5%, Airtel 4%** (9mobile on request). Failed txns not charged. |
+| **Africa's Talking Airtime API** | Same discount-as-margin model. Africa-native; pairs with their voice/SMS/USSD. | **Nigeria: min ₦50, max ₦5,000 per send.** Kenya tiered 4–6% by volume; Uganda flat 3%; Tanzania 1.5–2.75%. Nigeria % is portal-gated. |
+| **engageSPARK** | **The only one with airtime built INTO IVR/SMS survey flows as a one-click completion reward** — no glue code. Pay in USD, user gets local currency. 165+ countries. But buyer-pays-the-USD-rate (no pass-through discount). | Platform fees on top: SMS from $0.02; voice from $0.00/min (recv $0.005/min + $75 setup); WhatsApp $0.017; plus monthly subscription. |
+| **Local Nigerian VTU APIs** | Naira-native, cheapest FX, Nigeria-only. | VTpass (MTN/Glo/Airtel/9mobile endpoints), eBills (~3% airtime discount), VTU.ng, Cowrie (open-source). ~2–3% typical. |
+| **Termii / Sendchamp** | **Not confirmed as airtime providers** — first-party pricing pages don't list airtime distribution. Treat as SMS/OTP, not airtime-incentive. |
+| **Telgea / Telna / Airalo** | **Out of scope** — enterprise eSIM/connectivity for international teams, no African airtime-incentive capability. |
+
+**Sponsored airtime vs zero-rating:** sponsored airtime works across ALL operators via one API (no carrier deal) and gives a tangible reward, but cost scales linearly per user and you pay even if they spend it elsewhere. Zero-rating is frictionless (user does nothing) but needs per-MNO deals and raises net-neutrality concerns.
+
+---
+
+## PART C — THE GENERAL TELECOM MECHANISMS (Nigeria-specific toolkit)
+
+### 1. Zero-rating a shortcode / USSD code
+- **NCC allocation:** application ₦1,000 + processing ₦10,000; the code itself is **free** (1-yr renewable); requires a **VAS License**. Operators are legally obligated to connect NCC-allocated short codes.
+- **Aggregator cost (Africa's Talking):** *Shared USSD* — free setup, **₦53,750/mo**. *Dedicated USSD* — NCC ₦11,500 + AT integration **₦200,000** + **₦70,000/mo** + per-operator connection fees (MTN ₦500,000; 9mobile financial ₦770,000).
+- **How the user pays ₦0:** the enterprise signs a **postpaid/sponsored-session contract** (AT minimum: **100,000 sessions**) and absorbs the per-session cost. There's no single "zero-rating contract" — it's implemented as a VAS/postpaid reverse-billed session agreement per MNO.
+
+### 2. Toll-free / freephone (0800) — THE KEY VOICE MECHANISM
+- **0800 = toll-free, callee-pays.** The org owning the number is billed per-minute; "callers pay ₦0.00." (Contrast 0700 = caller pays.) It's a special VAS-SNS range, NCC-regulated, separate from mobile prefixes.
+- **THE CRITICAL ANSWER — can a ₦0-balance prepaid line dial 0800? → YES.** Confirmed: *"Toll-free emergency numbers work without airtime; prepaid users with zero balance can still make calls to toll-free numbers."* (Emergency codes 112, 767 too.) **Caveat:** the zero-balance guarantee is reliable only for **properly NCC/VAS-SNS-provisioned** toll-free numbers — you must confirm each MNO lifts its zero-balance outbound-call bar for your specific number.
+- **Provisioning:** via VAS-SNS licensed aggregators (InfoTek, Outsource Nigeria, Alpha Technologies). Needs CAC docs, TIN, proof of address. **Voice 0800 per-minute pricing is quote-only** (not published) — that's the remaining gap requiring a direct provider quote.
+
+### 3. Reverse-billing (SMS/USSD)
+- Toll-free shortcode = MO reverse-billed to the enterprise; general public not billed. **Real Nigerian costs (InfoTek):** setup **₦450,000** + 5% VAT; up to 16 weeks to provision; **₦65,000/mo**; min escrow 1,000,000 SMS @ ₦1.20 each; per-MO: MTN 5 credits, Airtel 7.5, Glo 5, 9mobile 7.
+
+### 4. "Call Me Back" / "Please Call Me" free flash messages
+- Free at ₦0 balance, **same-network only**, daily limits (MTN ~5/day, 24-hr expiry):
+  - **MTN:** `*133*1*number#` / `*133*2*number#`
+  - **Airtel:** `*140*number#`
+  - **9mobile:** `*266*1*number#`
+  - **Glo:** beep/missed-call mechanism
+- **Sponsored-ad precedent (South Africa):** the "Please Call Me" message carried ad payloads — Makate's team estimated it generated R70 billion for Vodacom. **For Sabi:** best used as a *free trigger* (child pings the line → service calls back on a sponsored/toll-free leg), NOT a content carrier (Nigerian PCM text is operator-fixed + same-network).
+- Note: MTN "Zero Credit Call" is borrow-on-credit (user still pays), NOT free.
+
+### 5. USSD-session funding & NCC rules
+- Standard banking USSD = **₦6.98/session** (up to 120s). After a ₦250bn bank-telco debt dispute, from **18 June 2025** USSD banking charges are deducted from the user's **airtime** (End-User Billing), with a per-session consent prompt.
+- **Non-banking USSD can still be made free** via the postpaid/sponsored model (Mechanism 1) — the route for a sponsored USSD menu a zero-balance child could use.
+
+### 6. Sponsored / zero-rated data
+- **MTN Sponsored Data** — enterprises can "give customers zero-rated access to your apps." **MTN "Sponsored Call"** is the most relevant template: user dials a zero-rated short code, listens to an ad without being billed, then gets **data/airtime rewards** — "user pays ₦0, sponsor pays, user even gets rewarded."
+- **MTN Free Basics** (Facebook + curated sites incl. Wikipedia/BBC) exists despite net-neutrality controversy (India banned it 2016; SA zero-rated educational sites instead).
+- **NCC educational zero-rating directive (4 March 2026):** NCC committed to publish a list of credible EdTech platforms and **zero-rate them**, with operators (via ALTON) absorbing foregone revenue. **Status mid-2026: announced/engagement stage, not yet operational** — but a directly named pathway Sabi/E4E should pursue.
+
+---
+
+## BOTTOM LINE FOR SABI (₦0-balance child must reach the line)
+
+1. **The Viamo model is the proven blueprint:** secure an **exclusive single-MNO partnership** where the operator zero-rates a shortcode and donates the airtime, repaid by retention (Madagascar proved 16% churn reduction) — while donors fund content (~$40k/topic). Land calls via **SIP/E1** behind the free code.
+2. **Cleanest near-term voice path:** a properly VAS-SNS-provisioned **0800 toll-free number** — confirmed that ₦0-balance prepaid lines CAN dial toll-free in Nigeria (verify each MNO lifts the outbound bar for your number). Org is billed per-minute (quote-only pricing).
+3. **Free trigger + sponsored callback:** child sends a free **"Call Me Back" (`*133*2*#`)**, Sabi calls back on its toll-free/sponsored leg.
+4. **Pursue the NCC educational zero-rating list** (Mar 2026 directive) — purpose-built for exactly this.
+5. **Airtime rewards** (Reloadly/Africa's Talking, Nigeria MTN 3%/Glo 5%/Airtel 4%, ₦50–₦5,000/send) can incentivize engagement — RCT-proven +10–19pp participation lift.
+
+**Key gaps:** exact per-minute NGN pricing for voice 0800 (quote-only), Africa's Talking's exact Nigeria airtime discount %, and the specific MNO behind 3-2-1 in Ghana/Tanzania (Tanzania confirmed Vodacom via Ubongo). Source URLs are inline throughout the agent findings above.
+agentId: a6cc2ec893a538c7f (use SendMessage with to: 'a6cc2ec893a538c7f' to continue this agent)
+<usage>subagent_tokens: 78593
+tool_uses: 5
+duration_ms: 473722</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

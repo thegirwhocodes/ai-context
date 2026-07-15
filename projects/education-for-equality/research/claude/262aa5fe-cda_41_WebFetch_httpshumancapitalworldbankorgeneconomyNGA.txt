@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://humancapital.worldbank.org/en/economy/NGA
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:31:30 UTC
+========================================================================
+
+URL: https://humancapital.worldbank.org/en/economy/NGA
+Extraction prompt: Extract ALL pillar scores for Nigeria HCI+ - education pillar, health pillar, employment pillar. Extract the breakdown showing how much each pillar contributes to the total score or to the 111% earnings deficit. Extract any specific numbers for learning-adjusted years of schooling, adult survival, stunting, tertiary completion, labor force participation.
+
+----------------------------------------
+
+# Nigeria HCI+ Pillar Scores - Not Available
+
+Based on the webpage content provided, **specific pillar scores and breakdowns for Nigeria's HCI+ are not displayed**. 
+
+The page shows:
+- A reference to "Human Capital Index Plus (HCI+)" as a metric
+- Navigation to sections for "Human Capital Index," "Indicators," "Benchmark," and "Insights"
+- Configuration data for interactive components that would load these metrics dynamically
+
+However, the actual numerical values for the three pillars (education, health, employment) and their individual contributions are **not included in the static HTML content**. These data appear to be populated dynamically through API calls to World Bank's data endpoints.
+
+To access Nigeria's specific pillar scores and component breakdowns, you would need to:
+1. Visit the interactive dashboard at the actual webpage
+2. Navigate to the benchmark or indicator sections where comparisons display
+3. Download the country brief PDF referenced in the page
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

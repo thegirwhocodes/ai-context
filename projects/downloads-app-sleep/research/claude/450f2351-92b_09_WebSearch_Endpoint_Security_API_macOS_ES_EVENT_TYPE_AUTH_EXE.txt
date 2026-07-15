@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Endpoint Security" API macOS ES_EVENT_TYPE_AUTH_EXEC block application launch d
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:55 UTC
+========================================================================
+
+Search query: "Endpoint Security" API macOS ES_EVENT_TYPE_AUTH_EXEC block application launch distraction blocker
+
+----------------------------------------
+
+Web search results for query: ""Endpoint Security" API macOS ES_EVENT_TYPE_AUTH_EXEC block application launch distraction blocker"
+
+Links: [{"title":"Endpoint Security In a macOS World | Huntress","url":"https://www.huntress.com/blog/endpoint-security-in-a-macos-world"},{"title":"ES_EVENT_TYPE_AUTH_EXEC | Apple Developer Documentation","url":"https://developer.apple.com/documentation/endpointsecurity/es_event_type_auth_exec"},{"title":"A demo of using Apple's EndpointSecurity framework - tested on macOS Monterey 12.2.1 (21D62) · GitHub","url":"https://gist.github.com/Omar-Ikram/8e6721d8e83a3da69b31d4c2612a68ba"},{"title":"Endpoint Security questions | Apple Developer Forums","url":"https://developer.apple.com/forums/thread/122380"},{"title":"Endpoint Security | Apple Developer Documentation","url":"https://developer.apple.com/documentation/endpointsecurity"},{"title":"5. Endpoint Security Overview","url":"https://github.com/redcanaryco/mac-monitor/wiki/5.-Endpoint-Security-Overview"},{"title":"Introduction to the Apple Endpoint Security Framework","url":"https://research.meekolab.com/introduction-to-the-apple-endpoint-security-framework"},{"title":"Endpoint Security | Apple Developer Forums","url":"https://developer.apple.com/forums/tags/endpointsecurity/?sortBy=oldest"},{"title":"Build an Endpoint Security app - WWDC20 - Videos - Apple Developer","url":"https://developer.apple.com/videos/play/wwdc2020/10159/"},{"title":"mac-monitor: Understanding Endpoint Security Framework Events on macOS - Gogola Nexus","url":"https://sebastiangogola.me/mac-monitor-understanding-endpoint-security-framework-events-on-macos/"}]
+
+Based on the search results, here's information about using macOS Endpoint Security API with `ES_EVENT_TYPE_AUTH_EXEC` to block application launches:
+
+## Blocking Application Execution
+
+The `ES_EVENT_TYPE_AUTH_EXEC` event allows your application to take action against a process before it executes, potentially blocking a process from executing.
+
+## How It Works
+
+When your application receives messages from the client, if it is an auth event, you can handle those cases by queuing up the messages and handling them based on conditions set by the application. Because all of this is handled without leaving the kernel, if your application is set up to block that process, it can be halted before executing.
+
+## Authorization Response
+
+Clients can respond with `ES_AUTH_RESULT_DENY` to prevent the action or `ES_AUTH_RESULT_ALLOW` to allow it.
+
+## Implementation Example
+
+You can use a simple string comparison on the new process that will be executing, then compare that signing ID to the one that you want to block. By looking at the event-specific data in the event union and pulling out the signing_id data, you can compare that to the signing_id_to_block, and if they're equal, you can respond with the `es_respond_auth_result` API to deny it.
+
+## Key Considerations
+
+It is recommended that your ES clients perform as little work as possible in their event handler block, typically meaning you shouldn't perform a lot of I/O or large CPU-intensive tasks.
+
+This approach would be suitable for building a distraction blocker that prevents specific applications from launching based on criteria like signing ID, file path, or other process characteristics.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

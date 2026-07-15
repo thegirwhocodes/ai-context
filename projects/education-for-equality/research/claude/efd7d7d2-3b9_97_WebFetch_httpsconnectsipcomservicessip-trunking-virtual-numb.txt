@@ -1,0 +1,57 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/services/sip-trunking-virtual-numbers/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:26:21 UTC
+========================================================================
+
+URL: https://connectsip.com/services/sip-trunking-virtual-numbers/
+Extraction prompt: What SIP trunking services and virtual numbers does ConnectSIP offer? Pricing, toll-free 0800 numbers, per-minute rates, inbound/outbound rates, Nigerian local numbers, features, API access? List everything on this page.
+
+----------------------------------------
+
+# ConnectSIP SIP Trunking & Virtual Numbers Services
+
+Based on the webpage content provided, here's what ConnectSIP offers:
+
+## Core Services
+
+**SIP Trunking Products:**
+- SIP Trunks (standard offering)
+- "SIP Lite" - described as a "two-channel SIP service" ideal for small businesses
+- "SIP Unlimited" - designed for businesses with high call volumes or seasonal demand
+
+**Virtual Phone Numbers:**
+- Nigerian virtual phone numbers
+- The page mentions "Toll-Free Numbers" in the footer services list
+
+## Key Features Listed
+
+ConnectSIP highlights these benefits:
+- "Easy to integrate"
+- "High scalability"
+- "Lower operating costs"
+- "Unified communications"
+- "Reliable and exceptional call quality"
+
+## Notable Capabilities
+
+- Number porting ("keep your existing phone numbers")
+- Web portal management
+- Quick channel addition for scaling
+- Cost savings (mentions "up to 60% cost savings")
+- Disaster recovery options
+
+## Missing Information
+
+**Not specified on this page:**
+- Specific pricing details
+- Per-minute rates (inbound/outbound)
+- API access information
+- 0800 number availability
+- Detailed feature comparisons
+
+For complete pricing and technical specifications, the page directs visitors to contact sales or visit their portal.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

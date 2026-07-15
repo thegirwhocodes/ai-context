@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 08:12:31 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Extraction prompt: What are the exact voice pricing rates for Nigeria? List all rates: inbound, outbound, SIP, number rental, etc. Include the currency and exact amounts.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

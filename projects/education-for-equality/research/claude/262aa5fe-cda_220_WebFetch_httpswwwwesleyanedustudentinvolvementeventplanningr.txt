@@ -1,0 +1,53 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/studentinvolvement/eventplanningresources/Events%20with
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 03:54:06 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/studentinvolvement/eventplanningresources/Events%20with%20Food,%20Food%20Sales%20and%20Prep.html
+Extraction prompt: Extract the full text of Wesleyan's policy on student food sales, food preparation, and food events. What approvals are required? What forms? Who signs off? What's allowed and not allowed? Quote directly. What kitchens can students use? What's the difference between "bake sale" approval and "hot food sale" approval? Are there exemptions for cultural houses or program houses?
+
+----------------------------------------
+
+# Wesleyan Student Food Event Policy Summary
+
+## Required Approvals & Process
+
+All food fundraisers and events must be "registered, and have the space/table reserved through WesNest." Requests need "at least five business days prior to the planned event." The Director of Usdan University Center consults with Bon Appétit and the Middletown Health inspector to determine if activities may proceed. "Events may not proceed until all permissions are received."
+
+## Required Forms & Documentation
+
+Students must submit a **Food Preparation Waiver** and provide:
+- Complete ingredient lists
+- Storage details (pre-use and post-preparation)
+- Transportation methods
+- Sales procedures (packaging, serving)
+- Pricing and revenue projections
+- "signed waiver indicating the Bon Appétit management company is not responsible" (121 chars)
+
+## What's Allowed vs. Prohibited
+
+**Generally Acceptable:** Pre-packaged items and baked goods "do not typically present a problem."
+
+**Prohibited items include:**
+- Coffee sales or food service competition
+- Alcohol-containing items
+- "events where food preparation would occur within the Usdan University Center" (77 chars)
+- Potentially hazardous foods failing health guidelines
+- Items duplicating Campus Dining offerings
+
+## Kitchen Access
+
+The policy does **not specify which kitchens students may use**. It only notes groups may coordinate "co-sponsored activities" through Bon Appétit at Usdan.
+
+## Bake Sale vs. Hot Food Distinctions
+
+The document treats both similarly—both "will still be run through the same screening." Hot foods face stricter scrutiny due to refrigeration/temperature requirements.
+
+## Cultural/Program House Exemptions
+
+**No exemptions mentioned** for cultural or program houses.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

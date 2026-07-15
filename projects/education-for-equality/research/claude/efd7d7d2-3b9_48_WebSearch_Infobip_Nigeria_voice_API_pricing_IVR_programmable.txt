@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Infobip Nigeria voice API pricing IVR programmable voice calls
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:05 UTC
+========================================================================
+
+Search query: Infobip Nigeria voice API pricing IVR programmable voice calls
+
+----------------------------------------
+
+Web search results for query: "Infobip Nigeria voice API pricing IVR programmable voice calls"
+
+Links: [{"title":"Voice API: Talk with Customers Worldwide - Infobip","url":"https://www.infobip.com/voice"},{"title":"Interactive Voice Response (IVR)","url":"https://www.infobip.com/docs/voice-and-video/interactive-voice-response-ivr"},{"title":"Pricing - Infobip","url":"https://www.infobip.com/pricing"},{"title":"Infobip Voice Calls","url":"https://www.infobip.com/docs/voice-and-video/calls"},{"title":"Voice and Video","url":"https://www.infobip.com/docs/voice-and-video"},{"title":"Voice pricing - Infobip","url":"https://www.infobip.com/voice/pricing"},{"title":"Voice - Infobip API","url":"https://www.infobip.com/docs/api/channels/voice"},{"title":"Infobip Documentation Hub","url":"https://www.infobip.com/docs/voice-and-video/getting-started"},{"title":"Get started guide: Voice - Infobip","url":"https://www.infobip.com/guides/get-started-guide/voice"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"}]
+
+Based on the search results, here's what I found about Infobip's voice API services:
+
+## Infobip Voice API Overview
+
+Infobip Voice helps you create trust and deliver impactful experiences with every call. The platform offers several voice capabilities:
+
+### Key Features
+
+Infobip's services include Voice Messages (allowing delivery of text-to-speech or audio files in calls), IVR (facilitating the creation of inbound or outbound Interactive Voice Response scenarios), Click-to-Call, and Number Masking.
+
+IVR can be used to initiate outbound calls to one or more destination numbers (landline or mobile), or to receive inbound calls to your Voice number from your end users (Inbound IVR).
+
+### Add-on Features
+
+Add-on features include Recording (for capturing voice and video calls), Automated Machine Detection, Text to Speech and Speech to Text, and Conferencing and Media Streaming.
+
+### Pricing Information
+
+Unfortunately, the search results don't contain specific pricing details for Nigeria or detailed per-minute rates. The pricing page mentions that Infobip works with customers to build customizable pricing options that work for their specific business and goals. They display average prices across all supported networks for each country, with per-network pricing available in Portal, and the exact price may vary based on the destination country, network, and applicable discounts.
+
+For specific Nigeria pricing details, you would need to contact Infobip directly or check their pricing portal.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

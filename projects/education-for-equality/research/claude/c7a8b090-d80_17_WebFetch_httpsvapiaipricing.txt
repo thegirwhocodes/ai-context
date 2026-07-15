@@ -1,0 +1,46 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vapi.ai/pricing
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 04:04:18 UTC
+========================================================================
+
+URL: https://vapi.ai/pricing
+Extraction prompt: Describe the visual design of this pricing page in detail: layout, colors, background, typography, card design, hover effects, spacing, dark/light theme, any gradients or glows, how tiers are displayed, CTA button styles, what makes it look premium/startup-like
+
+----------------------------------------
+
+# Vapi Pricing Page Design Analysis
+
+Based on the available code structure, here's what can be determined about the visual design:
+
+## Theme & Color Scheme
+The page implements a **dark theme** with classes like `"bg-base-bg-main"` and `"text-base-bg-alt"`, suggesting a sophisticated dark background with contrasting text colors typical of modern SaaS products.
+
+## Layout & Structure
+- **Hero section** with "Pricing" label and heading: "Simple, scalable pricing"
+- **Responsive grid system** with breakpoints (sm, md, lg) indicating mobile-first design
+- **Max-width constraint** at 92rem for content centering, creating breathing room
+- **PricingTable component** for tier display with **PricingProvider** wrapper
+
+## Typography
+- Large heading with responsive sizing (3xl on mobile → 6xl on desktop)
+- Tracking/letter-spacing adjustments (`tracking-[-0.8px]`) for premium aesthetic
+- Monospace font for labels (`font-mono`) on the "Pricing" tag
+
+## Visual Elements
+- **Dotted background pattern** ("dotted-bg" class) adding visual interest
+- **Border dividers** (`border-base-800`) separating sections
+- **Brand primary color** accent on the section label
+
+## Premium Indicators
+The implementation suggests a **startup-focused, developer-friendly aesthetic** through:
+- Clean spacing with generous padding
+- Minimal, geometric borders
+- Technical typography choices
+- Dark theme evoking innovation and modernity
+
+The actual gradient effects, card shadows, and hover states require CSS inspection to fully describe.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

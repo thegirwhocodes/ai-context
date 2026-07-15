@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.dograh.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 02:39:59 UTC
+========================================================================
+
+URL: https://www.dograh.com/
+Extraction prompt: Extract everything about Dograh - what it does, how it works, pricing, features, supported providers, telephony integration, open source details, and how voice AI agents are built on it. Is it self-hosted? What STT/TTS/LLM does it use?
+
+----------------------------------------
+
+# Dograh: Open Source Voice AI Platform
+
+## What It Does
+Dograh is an open-source alternative to Vapi designed for building AI voice agents. The platform enables creation of conversational AI systems for customer interactions, outbound calling, real estate lead generation, and automated phone systems without requiring coding expertise.
+
+## Key Features
+
+**Core Capabilities:**
+- "No-Code Agent Builder" with drag-and-drop interface and visual flow designer
+- "Natural Language Processing" for context and intent understanding
+- Real-time analytics and conversation monitoring
+- Multi-language support (30+ languages)
+- "24/7 Availability" for handling inquiries around the clock
+- Voice customization with multiple profiles
+- Intelligent routing to human agents for complex queries
+- Telephony integration for phone-based interactions
+
+## Architecture & Deployment
+
+**Self-Hosted Option:**
+Dograh is fully open-source ("100% FOSS") with all code publicly available. The platform emphasizes "data privacy and full control over their voice agents" through self-deployable infrastructure, avoiding vendor lock-in.
+
+**Deployment Speed:**
+Agents can be deployed "in under 10 minutes" from concept to live deployment.
+
+## Specific Technical Details
+The webpage does not disclose which specific STT (speech-to-text), TTS (text-to-speech), or LLM providers Dograh uses. This information would require consulting their documentation or GitHub repository.
+
+## Availability
+- Cloud version: app.dograh.com
+- GitHub repository available for self-hosting
+- Documentation: docs.dograh.com
+- Slack community for support
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

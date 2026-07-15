@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.intervas.com/ussd/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:31:52 UTC
+========================================================================
+
+URL: https://www.intervas.com/ussd/
+Extraction prompt: Extract ALL details about IntarvAS / InterVAS USSD services. Do they offer USSD push / network-initiated USSD? Do they have SS7 or direct MNO USSD gateway access? What USSD capabilities? Any mention of NI-USSD, MT-USSD, push USSD?
+
+----------------------------------------
+
+# InterVAS USSD Services Analysis
+
+## Service Overview
+InterVAS offers USSD (Unstructured Supplementary Service Data) as a mobile communication solution. The service is described as "a global system for mobile (GSM) communication technology that is used to send text between a mobile phone and an application program."
+
+## USSD Capabilities Mentioned
+The page highlights these features:
+- Customized USSD menus for business needs
+- No internet connection required
+- Web service integration capability
+- Two-way communication functionality
+- Multi-network compatibility across mobile operators
+
+## Network-Initiated USSD (Push/NI-USSD)
+**No evidence found.** The documentation makes no mention of NI-USSD, MT-USSD, push USSD, or network-initiated capabilities. All references emphasize "mobile initiated dialog" and subscriber-initiated interactions.
+
+## Direct MNO Access & SS7
+**No disclosure provided.** The page does not specify whether InterVAS operates direct USSD gateways, has SS7 connections, or maintains relationships with specific mobile network operators for backend access.
+
+## Integration Method
+InterVAS states their "USSD API will enable you to connect to the our USSD Server/Gateway using XML language via HTTP protocol" via POST requests, positioning themselves as a proxy service rather than disclosing underlying network infrastructure details.
+
+**Conclusion:** The available content focuses on consumer-facing USSD applications (payments, voting, surveys) without technical disclosure of advanced capabilities like push USSD or direct operator connectivity.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

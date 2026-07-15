@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cmustatistics.github.io/data-repository/psychology/cmu-sleep.html
+Session: eb50331f-9214-40a8-a4d4-8fc277231856
+Time: 2026-05-31 18:41:44 UTC
+========================================================================
+
+URL: https://cmustatistics.github.io/data-repository/psychology/cmu-sleep.html
+Extraction prompt: Find the direct download URL for the CSV file of this dataset. Also list all column names and what each variable represents.
+
+----------------------------------------
+
+# CMU Sleep Dataset - Download URL and Variables
+
+## Direct Download URL
+https://cmustatistics.github.io/data-repository/data/cmu-sleep.csv
+
+## Column Names and Descriptions
+
+| Variable | Description |
+|----------|-------------|
+| subject_id | Unique participant identifier |
+| study | Study number (1-5, representing different universities/semesters) |
+| cohort | Cohort codename for the subject |
+| demo_race | Binary racial categorization (0=underrepresented, 1=non-underrepresented) |
+| demo_gender | Gender identity (0=male, 1=female) |
+| demo_firstgen | First-generation college student status (0=no, 1=yes) |
+| bedtime_mssd | Bedtime variability measured in hours |
+| TotalSleepTime | Average nightly sleep duration in minutes |
+| midpoint_sleep | Average sleep midpoint in minutes after 11 pm |
+| frac_nights_with_data | Proportion of nights with recorded Fitbit data |
+| daytime_sleep | Average non-nighttime sleep in minutes |
+| cum_gpa | Cumulative GPA prior to the study term |
+| term_gpa | End-of-term GPA for the studied semester |
+| term_units | Course unit load for the term |
+| Zterm_units_ZofZ | Standardized course load relative to cohort |
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

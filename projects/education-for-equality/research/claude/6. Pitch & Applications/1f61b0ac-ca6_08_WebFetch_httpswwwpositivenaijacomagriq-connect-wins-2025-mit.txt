@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.positivenaija.com/agriq-connect-wins-2025-mit-africa-business-challe
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:56:16 UTC
+========================================================================
+
+URL: https://www.positivenaija.com/agriq-connect-wins-2025-mit-africa-business-challenge/
+Extraction prompt: Extract all details about the 2025 winning team and other placing teams. What made them win? What did judges value?
+
+----------------------------------------
+
+# 2025 MIT Africa Business Challenge Winners
+
+## First Place: AgriQ-Connect ($5,000)
+
+**Team Composition:**
+- Mariam Hamzat (PhD, Marine and Environmental Sciences)
+- Qudus Rafiu (PhD, Chemical Engineering)
+- Toheeb Obidara (PhD, Chemical Engineering)
+- Azeez Akinyemi (PhD, Chemical Engineering)
+
+**Their Solution:**
+AgriQ-Connect developed an agricultural technology addressing post-harvest losses across sub-Saharan Africa. The innovation combines a Tinder-like marketplace connecting farmers directly with processing companies, plus an AI-integrated silo enabling real-time crop monitoring. This tackles an estimated $4 billion in annual post-harvest losses.
+
+**Why They Won:**
+The team secured both first place and the Audience Choice Award, suggesting judges valued the practical scalability and sustainability of their approach to a genuine continental challenge.
+
+## Other Finalists
+
+**Second Place: Charted AI ($3,000)**
+- AI-powered bookkeeping solution for East African SMEs
+
+**Third Place: MamaCare ($1,000)**
+- AI voice hotline providing medical guidance and appointment scheduling for mothers in Nigeria
+
+## Competition Context
+The hackathon drew over 1,000 applicants across 26 institutions, with 13 teams ultimately competing from prestigious universities including Harvard, MIT, Yale, and Dartmouth.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

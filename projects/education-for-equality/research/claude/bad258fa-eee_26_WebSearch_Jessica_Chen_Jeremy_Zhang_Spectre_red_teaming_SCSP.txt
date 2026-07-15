@@ -1,0 +1,26 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Jessica Chen Jeremy Zhang Spectre red teaming SCSP grand prize AGI House
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:13:05 UTC
+========================================================================
+
+Search query: Jessica Chen Jeremy Zhang Spectre red teaming SCSP grand prize AGI House
+
+----------------------------------------
+
+Web search results for query: "Jessica Chen Jeremy Zhang Spectre red teaming SCSP grand prize AGI House"
+
+Links: [{"title":"GitHub - JessSanChen/SpectreRedTeaming: The Air Force's LLM is supposedly very secure... and we got it to make a few bombs. Agentic LLM jailbreaker. SCSP x AGI House Hackathon Grand Prize Winner. · GitHub","url":"https://github.com/JessSanChen/SpectreRedTeaming"},{"title":"Speaker - Jessica Chen | Author | Speaker | Emmy Winner","url":"https://jessicachenpage.com/speaker/"},{"title":"Jessica Chen - Stealth Startup | LinkedIn","url":"https://www.linkedin.com/in/jessica-j-chen/"},{"title":"Jessica Chen | Partner | White & Case LLP","url":"https://www.whitecase.com/people/jessica-chen"},{"title":"Jessica Chen: Global Communication Expert, Emmy-Award Winning Journalist, Bestselling Author, Founder & CEO of Soulcast Media","url":"https://www.gravityspeakers.com/speakers/jessica-chen"},{"title":"Juexiao Zhang","url":"https://juexzz.github.io/"},{"title":"How I Won DEF CON’s Generative AI Red-Teaming Challenge | Center for Security and Emerging Technology","url":"https://cset.georgetown.edu/article/how-i-won-def-cons-generative-ai-red-teaming-challenge/"},{"title":"Chen Bo Calvin Zhang","url":"https://calvincbzhang.github.io/"},{"title":"GitHub - OSU-NLP-Group/GUI-Agents-Paper-List: Building a comprehensive and handy list of papers for GUI agents · GitHub","url":"https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List"},{"title":"Who We Are - SCSP","url":"https://www.scsp.ai/about/who-we-are-2/"}]
+
+Based on the search results, here's what I found:
+
+Jessica Chen and Jeremy Zhang won the Grand Prize of the SCSP x AGI House Hackathon in Alexandria, VA with a $25,000 cash prize. They developed an agentic LLM jailbreaking architecture using the Air Force's NIPRGPT as a proof of concept, which they called "Spectre."
+
+The project is documented on GitHub, where their work presents an agentic AI approach to jailbreaking LLM models.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

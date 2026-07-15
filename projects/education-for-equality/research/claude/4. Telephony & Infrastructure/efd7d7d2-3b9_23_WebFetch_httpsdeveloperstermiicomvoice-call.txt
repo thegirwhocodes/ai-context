@@ -1,0 +1,22 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.termii.com/voice-call
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:35:09 UTC
+========================================================================
+
+URL: https://developers.termii.com/voice-call
+Extraction prompt: Extract all technical details about Termii's voice call API. What does it support? Is it limited to OTP only, or can it handle IVR, voice AI, custom audio playback, recording callbacks, and real-time voice conversations? What are the request/response formats?
+
+----------------------------------------
+
+I've reviewed the provided web page content, which consists primarily of CSS styling, normalize.css rules, and Tailwind utility classes from the Termii Developers documentation page.
+
+**Finding**: The content provided does not contain technical documentation about Termii's voice call API. The page source includes only frontend styling frameworks and layout utilities—no API specifications, endpoint details, request/response formats, or feature descriptions are present.
+
+To extract information about Termii's voice call API capabilities (including whether it supports OTP-only functionality versus IVR, voice AI, custom audio playback, recording callbacks, and real-time conversations), you would need to access the actual API documentation pages rather than this stylesheet-heavy page source.
+
+**Recommendation**: Check Termii's dedicated API documentation sections or endpoint reference guides to find specific details about voice call functionality, supported parameters, and use cases.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

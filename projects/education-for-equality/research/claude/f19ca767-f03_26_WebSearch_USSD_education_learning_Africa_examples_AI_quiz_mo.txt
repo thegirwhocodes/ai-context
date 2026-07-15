@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: USSD education learning Africa examples AI quiz mobile 2025
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 02:41:01 UTC
+========================================================================
+
+Search query: USSD education learning Africa examples AI quiz mobile 2025
+
+----------------------------------------
+
+Web search results for query: "USSD education learning Africa examples AI quiz mobile 2025"
+
+Links: [{"title":"African schools gear up for the AI revolution | UN News","url":"https://news.un.org/en/story/2025/01/1159621"},{"title":"Leveraging AI to Advance Science and Computing Education across Africa: Challenges, Progress and Opportunities","url":"https://arxiv.org/html/2402.07397v2"},{"title":"From Commitment to Action: Advancing the use of AI in education in Africa through regional collaboration and knowledge-sharing | GPEKIX","url":"https://www.gpekix.org/blog/commitment-action-advancing-use-ai-education-africa-through-regional-collaboration-and"},{"title":"Leveraging AI to Support Access, Equality and Inclusion","url":"https://edtechbooks.org/ai_in_education/leveraging_ai_to_support_learners_in_underserved_regions_and_economically_developing_countries"},{"title":"Education in the age of artificial intelligence","url":"https://unesdoc.unesco.org/ark:/48223/pf0000387029_eng"},{"title":"AI and the future of learning | Africa Renewal","url":"https://africarenewal.un.org/en/magazine/ai-and-future-learning"},{"title":"The cultural cost of AI in Africa’s education systems | UNESCO","url":"https://www.unesco.org/en/articles/cultural-cost-ai-africas-education-systems"},{"title":"Quiz Yourself: How Is AI Reshaping K-12 Career and Technical Education?","url":"https://www.edweek.org/technology/quiz-yourself-how-is-ai-reshaping-k-12-career-and-technical-education/2025/12"},{"title":"Using AI Tools to Improve Education Access in Africa - Right for Education","url":"https://rightforeducation.org/2025/05/28/using-ai-tools-to-improve-education-access-in-africa/"},{"title":"Mobile-First in Africa: Education, Birth Registration, Banking - InfoQ","url":"https://www.infoq.com/articles/mobile-first-africa-education-banking/"}]
+
+Based on the search results, here's what I found about USSD education learning, AI quiz platforms, and mobile learning in Africa:
+
+## Key Examples of AI-Powered Education in Africa
+
+In Africa, two prominent learning platforms—Daptio and Eneza Education—harness AI to enhance educational accessibility, with Eneza Education having over 860,000 subscribers and delivering lessons and assessments through web communication or SMS messages, offering quizzes and an "Ask-A-Teacher" feature.
+
+Nigerian edtech company uLesson uses AI-powered analytics to monitor learners' progress and deliver targeted content through mobile devices, while in Kenya, M-Shule utilizes SMS-based AI technology to reach students without access to smartphones or the internet.
+
+## USSD Technology for Education
+
+Unlike SMS messages, USSD messages create a real-time connection during a USSD session with the connection remaining open, allowing two-way exchange of data without the latency usually experienced with SMS-based services, making USSD more responsive. Both SMS and USSD work across all phones and network carriers, even in rural areas not covered by 3G.
+
+## AI Quiz and Learning Platforms
+
+Notable African AI education tools include SuaCode (an AI-powered app for learning to code), Kwame (a bilingual AI teaching assistant), and Brilla AI (an AI contestant for the National Science and Maths Quiz competition).
+
+Luma Learn is an AI-powered tutor platform with over 10,000 learners, offering tutoring in multiple languages including Swahili and IsiZulu.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

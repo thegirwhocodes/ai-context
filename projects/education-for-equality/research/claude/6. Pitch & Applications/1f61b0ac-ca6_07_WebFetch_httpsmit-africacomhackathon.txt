@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mit-africa.com/hackathon/
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:56:15 UTC
+========================================================================
+
+URL: https://mit-africa.com/hackathon/
+Extraction prompt: Extract ALL details about the MIT Africa Business Challenge hackathon - judging criteria, rules, format, timeline, themes, prizes, what they're looking for in winners, eligibility. Everything.
+
+----------------------------------------
+
+# MIT Sloan Africa Business Club Competition
+
+I've reviewed the provided webpage content, which appears to be primarily composed of CSS styling, configuration code, and structural markup from a WordPress website using the Astra theme and Elementor page builder.
+
+**Unfortunately, the content provided does not contain specific details about the hackathon/competition itself.** The page appears to be a landing page template, but the actual competition information—such as judging criteria, rules, format, timeline, themes, prizes, eligibility requirements, or what organizers seek in winners—is not present in the extracted text.
+
+To obtain comprehensive competition details, you would need to:
+
+1. **Visit the full webpage directly** at https://mit-africa.com/hackathon/
+2. **Contact MIT Sloan Africa Business Club** through their social channels (Twitter, LinkedIn, Instagram listed as @mitsloanabc)
+3. **Request additional documentation** that may contain competition guidelines
+
+The extracted content only confirms the page exists as a competition landing page for the MIT Sloan Africa Business Club but lacks substantive competition specifications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

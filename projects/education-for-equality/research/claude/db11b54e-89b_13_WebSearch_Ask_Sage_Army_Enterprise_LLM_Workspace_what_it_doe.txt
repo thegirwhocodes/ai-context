@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Ask Sage" Army Enterprise LLM Workspace what it does features 2026
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:06:12 UTC
+========================================================================
+
+Search query: "Ask Sage" Army Enterprise LLM Workspace what it does features 2026
+
+----------------------------------------
+
+Web search results for query: ""Ask Sage" Army Enterprise LLM Workspace what it does features 2026"
+
+Links: [{"title":"Army launches Army Enterprise LLM Workspace, the revolutionary AI platform that wrote this article | Article | The United States Army","url":"https://www.army.mil/article/285537/army_launches_army_enterprise_llm_workspace_the_revolutionary_ai_platform_that_wrote_this_article"},{"title":"Department of War - Ask Sage - Generative AI Platform","url":"https://www.asksage.ai/who-we-serve/department-of-war/"},{"title":"Army’s New AI/LLM Tools Boost Productivity | AFCEA International","url":"https://www.afcea.org/signal-media/armys-new-ai/llm-tools-boost-productivity"},{"title":"Ask Sage Partners with DoD CDAO and U.S. Army to Provide Unlimited Access to Generative AI Across Combatant Commands, Joint Staff, and Office of the Secretary of Defense - Ask Sage - Generative AI Platform","url":"https://www.asksage.ai/press-release/ask-sage-partners-with-dod-cdao-and-u-s-army-to-provide-unlimited-access-to-generative-ai-across-combatant-commands-joint-staff-and-office-of-the-secretary-of-defense/"},{"title":"Defense Industrial Base - Ask Sage - Generative AI Platform","url":"https://www.asksage.ai/who-we-serve/defense-industrial-base/"},{"title":"Army Unveils Generative AI Platform","url":"https://www.executivegov.com/articles/army-generative-ai-platform-launch"},{"title":"Army Rolls Out New AI Workspace Platform – MeriTalk","url":"https://www.meritalk.com/articles/army-rolls-out-new-ai-workspace-platform/"},{"title":"Ask Sage lands $10m Pentagon AI deal to power secure generative models","url":"https://business-news-today.com/ask-sage-lands-10m-pentagon-ai-deal-to-power-secure-generative-models-across-u-s-army-and-dod/"},{"title":"Five Essential Facts on Army's Enterprise LLM ...","url":"https://www.facebook.com/ArmyCIO/posts/five-essential-facts-on-armys-enterprise-llm-the-army-enterprise-llm-workspace-i/1169379415230466/"},{"title":"Army Enterprise LLM Workspace: A cutting-edge AI tool for ...","url":"https://www.linkedin.com/posts/andifehl_army-launches-army-enterprise-llm-workspace-activity-7328961444618657792-jd1h"}]
+
+Based on the search results, here's what Ask Sage and the Army Enterprise LLM Workspace do and their key features:
+
+## What It Does
+
+The Army Enterprise LLM Workspace is a generative AI tool hosted within the Army's cArmy Cloud, supported by Ask Sage's Impact Level 5 software-as-a-service. It's deployed across IL5 environments and accessible to soldiers, civilians, and contractors through the cArmy Cloud.
+
+## Key Features
+
+The platform is CUI accredited, which ensures compliance with security standards for sensitive information, features a lower barrier to entry through Software-as-a-service capability that eliminates the need for complex installations, and is free for 30 days to allow immediate access for eligible users with CAC registration.
+
+The platform leverages technologies such as Azure OpenAI Gov, Mistral, LLM3A.3.3, AWS Bedrock Gov, Google Gemini and several open-source LLMs.
+
+The SaaS-based nature allows soldiers and Army civilians to access the system without complex installations, with registration streamlined via common access cards for quick and secure onboarding.
+
+## Proven Impact
+
+The Army was able to update 300,000 personnel descriptions in a week using Army Enterprise LLM Workspace, whereas reviewing each description manually would have taken roughly 50,000 hours.
+
+The Army awarded Ask Sage an indefinite-delivery, indefinite-quantity contract with a $49 million ceiling and a five-year ordering period.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

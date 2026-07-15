@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://curriculum-app-eta.vercel.app/subjects/foundational-numeracy
+Session: d72670bf-85b5-4729-87b1-b37da6093927
+Time: 2026-03-05 04:07:14 UTC
+========================================================================
+
+URL: https://curriculum-app-eta.vercel.app/subjects/foundational-numeracy
+Extraction prompt: Describe everything on this page - what courses/units/lessons are listed, how they're structured, what the learning path looks like, any descriptions or metadata shown.
+
+----------------------------------------
+
+# Foundational Numeracy Course Overview
+
+## Course Structure
+This comprehensive mathematics program from Education for Equality targets ages 8-14, comprising **6 units with 100 total lessons** spanning approximately 1,210 minutes of instruction.
+
+## Learning Pathway
+
+**Unit 1: Counting & Number Sense** (15 lessons)
+Develops foundational skills using Nigerian market contexts. Learners progress from counting 1-10 with groundnuts to understanding place value with hundreds, comparing, and ordering numbers.
+
+**Unit 2: Addition** (18 lessons)
+Builds from concrete object manipulation through abstract problem-solving. Topics include adding with carrying, mental strategies like "making 10," and real-world applications involving Naira currency.
+
+**Unit 3: Subtraction** (18 lessons)
+Mirrors addition's progression but focuses on take-away and making change scenarios. Includes borrowing techniques and word problems about market transactions.
+
+**Unit 4: Multiplication** (18 lessons)
+Introduces repeated addition and equal groups before advancing to times tables (2s, 3s, 4s, 5s, 10s) and multi-digit multiplication with practical shopping contexts.
+
+**Unit 5: Division** (15 lessons)
+Teaches fair sharing and grouping principles, progressing to division facts and problems involving remainders and real money distribution.
+
+**Unit 6: Word Problems—Mixed Operations** (16 lessons)
+Integrates all four operations through authentic scenarios like "Market Day: Shopping with a Budget" and multi-step challenges.
+
+## Pedagogical Approach
+Lessons consistently anchor mathematics to Nigerian cultural contexts—groundnuts, Naira notes, market stalls, and transport costs—making abstract concepts tangible and relevant.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

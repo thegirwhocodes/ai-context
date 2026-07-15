@@ -1,0 +1,65 @@
+========================================================================
+AGENT RESEARCH: Deep research on synthetic control method
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:19:49 UTC
+========================================================================
+
+I need a deep, practical research dossier on the Synthetic Control Method (SCM) for an empirical economics paper / senior thesis on Nigeria's out-of-school children and GDP growth. The paper currently uses a two-way fixed-effects panel of 47 Sub-Saharan African countries (2000–2024) with a Nigeria-specific interaction term, yielding β = −0.125 (p = 0.003). We attempted SCM three times during the analysis and all three runs failed (Nigeria sits outside the donor pool's convex hull when matching on PWT log GDP per capita; pre-treatment RMSPE was 0.38–0.40 and post-treatment gaps came out the wrong direction with placebo p > 0.85). I want to use this research either to: (a) salvage SCM as a robustness check in the paper if possible by today's noon deadline; or (b) frame it as future work for a senior thesis extension. Be honest about which is realistic.
+
+Please report on the following in depth:
+
+1. **The SCM method itself** — Abadie & Gardeazabal (2003), Abadie, Diamond & Hainmueller (2010, 2015). Cite the key papers. Explain the optimization (minimize pre-treatment RMSPE over convex combinations of donor units), the placebo/permutation inference (Abadie et al. 2010 placebo test, leave-one-out test), and the standard reporting (treated vs synthetic trajectory plot, RMSPE-ratio test).
+
+2. **The convex hull problem** — what it means when the treated unit is "outside" the convex hull of donors. Why does this make SCM fail? How is it diagnosed? What does the literature say to do about it? (Doudchenko-Imbens "interpretable elastic net," Athey-Imbens augmented SCM, Ben-Michael-Feller-Rothstein 2021 Augmented SCM that allows extrapolation.)
+
+3. **Recent methodological developments** that might address our problem:
+   - **Augmented SCM** (Ben-Michael, Feller & Rothstein 2021, JASA) — bias-correction via ridge regression on a SCM residual; allows extrapolation outside the convex hull.
+   - **Synthetic DID** (Arkhangelsky, Athey, Hirshberg, Imbens & Wager 2021, AER) — combines SCM weights with DID time-period weights; works for staggered treatment and panels.
+   - **Generalized SCM / matrix-completion** (Athey, Bayati, Doudchenko, Imbens & Khosravi 2021, JASA).
+   - **Penalized SCM** (Abadie & L'Hour 2021).
+
+4. **When SCM is and isn't appropriate**:
+   - Single-unit treatment with a clear treatment date
+   - Long pre-treatment period for fit (usually ≥10 obs)
+   - Pre-treatment outcome variation comparable to donor pool variation
+   - Stable economic structure (no time-varying confounders not in the donor pool)
+
+5. **Nigeria-specific challenges for SCM**:
+   - Oil dependence makes Nigeria structurally different from most SSA donors
+   - The 2014 oil-price collapse is a candidate "treatment" but it hit all oil exporters
+   - The 1976 UPE program is a candidate "treatment" but pre-1970 outcome data are weak
+   - The Boko Haram insurgency starting ~2009 affects specific LGAs not the whole country
+
+6. **Applications to education-growth**: have economists used SCM to identify the growth effect of education policies? Specifically interested in:
+   - Universal primary education programs (Uganda 1997, Kenya 2003, Tanzania, Ethiopia, etc.)
+   - Any Nigeria-focused SCM applications
+
+7. **Empirical implementations in Stata and Python**:
+   - `synth` package in Stata (Abadie et al.)
+   - `synth_runner` for placebo tests (Galiani-Quistorff)
+   - `pysyncon` and `SyntheticControlMethods` Python packages
+   - Augmented SCM via `augsynth` R package (no Stata equivalent)
+
+8. **For the Nigerian thesis extension**: 
+   - What would a credible SCM design look like? (Treatment date = 2009 Boko Haram intensification? 2014 oil collapse? 1976 UPE?)
+   - Donor pool: SSA non-oil exporters? Lower-middle-income economies? ECOWAS?
+   - Outcome: log GDP per capita or growth rate?
+   - Period structure: annual or 5-year?
+   - Pre-treatment matching variables?
+
+9. **Honest assessment**: Given a Wesleyan undergrad term paper due in 2 hours from now and a senior thesis 18 months out, which makes more sense to pursue? My existing two-way FE result (β = −0.125 *** identified through SSA-wide interaction) is already publishable-grade. Is the marginal value of forcing SCM into the paper greater than just framing it as future work?
+
+Report in roughly 1000–1200 words. Be specific about which papers to cite, give pseudocode where helpful, and end with a clear "for your paper today, do X; for your thesis, do Y" recommendation.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a437ff404a1ed112e (internal ID - do not mention to user. Use SendMessage with to: 'a437ff404a1ed112e' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/91e12c77-89b6-4b15-88f2-bc4fbadd518b/tasks/a437ff404a1ed112e.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

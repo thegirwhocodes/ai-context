@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/datasets/benjaminogbonna/nigerian_accented_english_datase
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:42:45 UTC
+========================================================================
+
+URL: https://huggingface.co/datasets/benjaminogbonna/nigerian_accented_english_dataset
+Extraction prompt: What is this dataset? How many hours of audio, how many samples/rows, how many speakers? Sample rate and format (WAV/MP3/FLAC, 16kHz/8kHz)? Is it phone/telephony audio or studio recordings? Adult or children speakers? Which Nigerian languages/accents? What is the license and can it be used to fine-tune Whisper commercially? How is it structured — are there transcripts, speaker IDs, splits? Show a sample row if possible.
+
+----------------------------------------
+
+# Nigerian Accented English Dataset Overview
+
+**Dataset Size & Composition:**
+The dataset contains "about 8 hours of audio recordings featuring speakers from various regions of Nigeria." The page indicates it has between 1K-10K samples based on the size category filter, though exact row count isn't specified.
+
+**Audio Technical Details:**
+Audio files are in MP3 format with a 48kHz sampling rate. The dataset structure shows audio is "automatically decoded and resampled" for processing.
+
+**Speaker & Language Information:**
+The dataset features "speakers from various regions of Nigeria, capturing the rich diversity of Nigerian accents." It's labeled for both English and Afrikaans languages, though the primary focus is Nigerian English speakers. Age demographics (adult/children) aren't specified. Speaker identifiers are tracked via `client_id` fields.
+
+**Recording Type:**
+No explicit distinction between studio or telephony audio is provided.
+
+**Structure & Content:**
+Each sample includes: client ID, audio path, transcribed sentence, accent label, locale (en), and segment field. "A typical data point comprises the path to the audio file and its sentence."
+
+**License & Commercial Use:**
+Licensed under Apache 2.0. However, I cannot advise on commercial Whisper fine-tuning legality—consult legal counsel for licensing questions.
+
+**Data Splits:**
+Divided into dev, train, and test sets.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

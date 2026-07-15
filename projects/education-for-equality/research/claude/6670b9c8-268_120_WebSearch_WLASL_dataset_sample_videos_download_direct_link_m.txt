@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: WLASL dataset sample videos download direct link mp4 ASL signs
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 04:06:34 UTC
+========================================================================
+
+Search query: WLASL dataset sample videos download direct link mp4 ASL signs
+
+----------------------------------------
+
+Web search results for query: "WLASL dataset sample videos download direct link mp4 ASL signs"
+
+Links: [{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"},{"title":"WLASL (World Level American Sign Language) Video","url":"https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed"},{"title":"GitHub - Vancelot11/WLASL: Dataset proposed in WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\"","url":"https://github.com/Vancelot11/WLASL"},{"title":"Sign Language Dataset (WLASL Videos)","url":"https://www.kaggle.com/datasets/waseemnagahhenes/sign-language-dataset-wlasl-videos"},{"title":"WLASL Word-Level American Sign Language Dataset for ASL.","url":"https://gts.ai/dataset-download/wlasl-world-level-american-sign-language-video/"},{"title":"Voxel51/WLASL · Datasets at Hugging Face","url":"https://huggingface.co/datasets/Voxel51/WLASL"},{"title":"WLASL-2000 Resized","url":"https://gts.ai/dataset-download/wlasl-2000-resized/"},{"title":"WLASL: Word-Level ASL Video Dataset","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl-video-dataset"},{"title":"GitHub - oussamaouardini/WLASL-CLASSIFICATION: Word level american sign language video cllassification using ConvLSTM, LRCN, CNN","url":"https://github.com/oussamaouardini/WLASL-CLASSIFICATION"}]
+
+Based on the search results, here's what I found about accessing WLASL dataset sample videos:
+
+## Official Sources for WLASL Dataset Videos
+
+The WLASL dataset is described in "Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison". WLASL is the largest video dataset for Word-Level American Sign Language (ASL) recognition, which features 2,000 common different words in ASL.
+
+### How to Download Videos
+
+The official repository includes sample code demonstrating how to download data samples (video_downloader.py). The main options for accessing the dataset are:
+
+1. **GitHub Repository**: You can clone the official repository for downloading, and it's suggested to read the README before using the dataset.
+
+2. **Pre-processed Videos**: Pre-processed videos for the full WLASL dataset are available on request by submitting a video request and agreeing to terms of use through a Google Form. You will get links to the missing videos within 7 days.
+
+3. **Kaggle**: WLASL datasets are also available on Kaggle (though the search results show access redirects).
+
+### Important Licensing Information
+
+All the WLASL data is intended for academic and computational use only, and no commercial usage is allowed. You must read and agree with the Computational Use of Data Agreement (C-UDA) terms before using the dataset.
+
+For direct assistance, you can contact dongxu.li@anu.edu.au for help with downloading issues.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

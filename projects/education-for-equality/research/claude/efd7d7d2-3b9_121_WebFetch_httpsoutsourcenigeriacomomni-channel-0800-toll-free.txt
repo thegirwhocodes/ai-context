@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/omni-channel-0800-toll-free-phone-numbers/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:37:25 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/omni-channel-0800-toll-free-phone-numbers/
+Extraction prompt: Extract EVERY detail about the 0800 toll-free service: pricing, how to sign up, SIP forwarding, call routing to external systems, deposit amounts, per-minute costs, technical specs, API, webhooks, how calls are delivered to the customer
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ASA DataFest Wesleyan judging criteria past winners examples
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-17 23:01:35 UTC
+========================================================================
+
+Search query: ASA DataFest Wesleyan judging criteria past winners examples
+
+----------------------------------------
+
+Web search results for query: "ASA DataFest Wesleyan judging criteria past winners examples"
+
+Links: [{"title":"Wesleyan Team Honored for “Best Innovation” at 2017 DataFest","url":"https://newsletter.blogs.wesleyan.edu/2017/04/10/wesleyan-team-honored-for-best-innovation-at-2017-datafest/"},{"title":"2016 DataFest – QAC DataFest","url":"https://datafest.blogs.wesleyan.edu/past-events/2016-datafest/"},{"title":"QAC DataFest","url":"https://datafest.blogs.wesleyan.edu/"},{"title":"Winners – ASA DataFestTM","url":"https://dukestatsci.github.io/datafest/winners.html"},{"title":"University Teams Take Home Two DataFest Awards – The Wesleyan Argus","url":"https://wesleyanargus.com/2017/04/13/university-teams-take-home-two-datafest-awards/"},{"title":"Students Compete at Wesleyan’s First DataFest – The Wesleyan Argus","url":"https://wesleyanargus.com/2016/04/11/students-compete-at-wesleyans-first-datafest/"},{"title":"Wesleyan Team Wins ‘Best Data Story’ at 6th Annual DataFest","url":"https://www.wesleyan.edu/about/news/2023/04/wesleyan-team-wins-best-data-story-at-6th-annual-datafest.html"},{"title":"DataFest 2024 wraps up! - Wesleyan University","url":"https://datafest.blogs.wesleyan.edu/2024/04/29/datafest-2024-wraps-up/"},{"title":"Wesleyan Team Wins Prize for “Best User Insight” at DataFest","url":"https://newsletter.blogs.wesleyan.edu/2018/04/11/wesleyan-team-wins-prize-for-best-user-insight-at-datafest/"},{"title":"ASA DataFest@Duke! | Statistical Science","url":"https://stat.duke.edu/events/asa-datafestduke"}]
+
+Based on the search results, here's what I found about ASA DataFest at Wesleyan:
+
+## Award Categories and Past Winners
+
+Recent award categories at DataFest 2024 included Best Data Story, Best Data Insight, Best Data Visualization, and Best Data-Driven Recommendation. Previous years have featured award categories including Best Pattern Detection, Best Data Preparation, Best Innovation, and Best in Show.
+
+Some specific past winners include:
+- In 2017, the Wesleyan team "Data Baes" won "Best Innovation," while "Anscombe's Quartet" from Yale won Best-in-Show, and "Unsupervised Leopards" from Lafayette and Wesleyan received an award for "Best Data Preparation"
+- At the 2024 DataFest, "Manolis's Mavericks" from Wesleyan won Best Data Story, and "Desirable Goats" also from Wesleyan won Best Data Insight
+
+## Judging and Competition Format
+
+Each team is allowed a few minutes and no more than two slides to impress a panel of judges. The judging panel typically includes data scientists, research analysts and biostatisticians from major companies like Boehringer-Ingelheim, Pfizer, and The Brattle Group.
+
+The search results don't provide explicit detailed judging criteria documentation, but they do show what judges have valued in winning teams based on their feedback.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

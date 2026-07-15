@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-03 22:08:45 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Extraction prompt: What is the voice call pricing for Nigeria? Cost per minute? Any free tier?
+
+----------------------------------------
+
+# Voice Call Pricing for Nigeria
+
+Based on Africa's Talking's pricing documentation:
+
+**Call Costs Per Minute:**
+- Regular Outgoing: NGN 15.00
+- SIP Outgoing: NGN 3.00
+- Regular Incoming: NGN 3.00
+- SIP Incoming: NGN 3.00
+
+**Monthly Maintenance:** "NGN 5000 + 7.5%VAT" for regular phone numbers
+
+**Free Tier:** There is no free tier mentioned. The service requires a monthly maintenance fee with no deposit or setup charges listed.
+
+The pricing structure distinguishes between regular phone lines and SIP (Session Initiation Protocol) connections, with SIP offering significantly lower per-minute rates for outgoing calls.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

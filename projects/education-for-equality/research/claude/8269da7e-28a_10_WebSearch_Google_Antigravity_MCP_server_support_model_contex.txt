@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Antigravity MCP server support model context protocol
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:36:48 UTC
+========================================================================
+
+Search query: Google Antigravity MCP server support model context protocol
+
+----------------------------------------
+
+Web search results for query: "Google Antigravity MCP server support model context protocol"
+
+Links: [{"title":"Connect Google Antigravity IDE to Google’s Data Cloud services | Google Cloud Blog","url":"https://cloud.google.com/blog/products/data-analytics/connect-google-antigravity-ide-to-googles-data-cloud-services"},{"title":"Agentic Automation in Google Workspace: Bridging Antigravity and Gemini 3.0 · GitHub","url":"https://gist.github.com/tanaikech/da7deaad19f75db0fd473e84e856529e"},{"title":"Use MCP servers | Google Cloud Data Agent Kit extension for Antigravity | Google Cloud Documentation","url":"https://docs.cloud.google.com/data-cloud-extension/antigravity/use-mcp-servers"},{"title":"Antigravity Editor: MCP Integration","url":"https://antigravity.google/docs/mcp"},{"title":"Known issues | Google Cloud MCP servers | Google Cloud Documentation","url":"https://docs.cloud.google.com/mcp/known-issues"},{"title":"Google Antigravity Documentation","url":"https://antigravity.google/docs/mcp?authuser=5"},{"title":"Design-to-Code with Antigravity and Stitch MCP | Google Codelabs","url":"https://codelabs.developers.google.com/design-to-code-with-antigravity-stitch"},{"title":"Google Antigravity: When Code Writes Itself While You Just Watch | FastMCP","url":"https://fastmcp.me/blog/google-antigravity-when-code-writes-itself-while-you-just-watch"},{"title":"How to Use MCP Servers in Antigravity (Setup Guide 2026)","url":"https://antigravity.codes/blog/antigravity-mcp-tutorial"},{"title":"Postman's MCP Server Now Works With Google Antigravity IDE | Postman Blog","url":"https://blog.postman.com/postmans-mcp-server-now-works-with-google-antigravity-ide/"}]
+
+Based on the search results, here's what I found about Google Antigravity's MCP server support:
+
+## Overview
+
+Antigravity supports the Model Context Protocol (MCP), a standard that allows the editor to securely connect to your local tools, databases, and external services.
+
+## Key Features
+
+With Model Context Protocol (MCP) servers powered by MCP Toolbox for Databases now available within Antigravity, you can securely connect your AI agents to services like AlloyDB for PostgreSQL, BigQuery, Spanner, Cloud SQL, Looker and others within Google's Data Cloud.
+
+Model Context Protocol (MCP) standardizes how large language models (LLMs) and AI applications or agents connect to external data sources.
+
+## Server Types
+
+Antigravity supports both:
+- Local MCP servers that typically run on your local machine and use the standard input and output streams (stdio) for communication
+- Remote MCP servers that run on the service's infrastructure and offer an HTTP endpoint to AI applications for communication
+
+## Getting Started
+
+Open the MCP Store panel within the "..." dropdown at the top of the editor's side panel and select any of the supported servers from the list and click Install. You can also modify the mcp_config.json configuration file located at ~/.gemini/antigravity/mcp_config.json, which has a single mcpServers object where you define each server you want to connect to.
+
+## Known Limitations
+
+Antigravity doesn't support the MCP OAuth specifications, which prevents you from using a client ID and secret, so you can't authenticate to the MCP server.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

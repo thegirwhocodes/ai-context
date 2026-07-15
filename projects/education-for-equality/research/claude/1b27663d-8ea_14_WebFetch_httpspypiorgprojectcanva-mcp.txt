@@ -1,0 +1,66 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://pypi.org/project/canva-mcp/
+Session: 1b27663d-8ea5-4b35-8186-373ddb166724
+Time: 2026-04-15 22:22:16 UTC
+========================================================================
+
+URL: https://pypi.org/project/canva-mcp/
+Extraction prompt: Get the full installation instructions, what tools/capabilities it provides, what authentication is needed, and how to configure it with Claude. Get every detail.
+
+----------------------------------------
+
+# Canva MCP Server - Installation & Configuration Guide
+
+## Installation
+
+Install via pip with this command:
+```
+pip install canva-mcp
+```
+
+**Requirements:** Python 3.10 or higher, plus a Canva Pro or Teams account with Connect API access.
+
+## Authentication Setup
+
+1. Create an OAuth app at [developers.canva.com](https://www.canva.com/developers/apps)
+2. Obtain your `CANVA_CLIENT_ID` and `CANVA_CLIENT_SECRET`
+3. On first use, the MCP opens a browser for Canva OAuth authentication
+4. Tokens automatically save to `~/.canva_tokens.json` and refresh as needed
+
+## Claude Desktop Configuration
+
+Add this to your `~/.claude.json` file:
+
+```json
+{
+  "mcpServers": {
+    "canva": {
+      "command": "python",
+      "args": ["-m", "canva_mcp.server"],
+      "env": {
+        "CANVA_CLIENT_ID": "your-client-id",
+        "CANVA_CLIENT_SECRET": "[REDACTED:canva-client-secret]"
+      }
+    }
+  }
+}
+```
+
+## Key Tools Provided
+
+The package includes 20+ tools across these categories:
+
+- **Designs:** Create, list, retrieve, and delete designs
+- **Assets:** Upload and manage media library items
+- **Brand Templates:** Access templates with autofill capability for personalized designs
+- **Export:** Convert designs to PDF, PNG, JPG, GIF, MP4, or PPTX
+- **Folders & Comments:** Organize work and add design feedback
+- **User Profile:** Retrieve account information
+
+## Supported Design Types
+
+Presentations, documents, social posts (Instagram/Facebook/YouTube), posters, business cards, logos, and letter/A4 documents.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

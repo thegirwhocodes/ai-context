@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs expressive mode conversational AI beta 2026
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:21:32 UTC
+========================================================================
+
+Search query: ElevenLabs expressive mode conversational AI beta 2026
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs expressive mode conversational AI beta 2026"
+
+Links: [{"title":"Introducing Expressive Mode for ElevenAgents","url":"https://elevenlabs.io/blog/introducing-expressive-mode"},{"title":"Expressive mode | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode"},{"title":"Eleven v3: Most Expressive AI TTS Model Launched","url":"https://elevenlabs.io/blog/eleven-v3"},{"title":"Eleven Labs Release Notes - February 2026 Latest Updates - Releasebot","url":"https://releasebot.io/updates/eleven-labs"},{"title":"Free AI Voice Generator & Voice Agents Platform | ElevenLabs","url":"https://elevenlabs.io/"},{"title":"ElevenLabs Launches Expressive Mode for AI Voice Agents After $500M Raise","url":"https://bitcoinethereumnews.com/tech/elevenlabs-launches-expressive-mode-for-ai-voice-agents-after-500m-raise/"},{"title":"Elevenlabs","url":"https://elevenlabs.io/agents/expressive-mode"},{"title":"ElevenLabs Launches Expressive Mode for AI Voice Agents After $500M Raise | MEXC News","url":"https://www.mexc.com/news/695038"},{"title":"Eleven v3 — Most Expressive AI Voice Model","url":"https://elevenlabs.io/v3"},{"title":"Expressive Mode for ElevenAgents: Emotion-Aware Voice AI - SuperGok","url":"https://supergok.com/expressive-mode-for-elevenagents/"}]
+
+Based on the search results, here's what I found about ElevenLabs' Expressive Mode for conversational AI:
+
+## Overview
+
+ElevenLabs introduced Expressive Mode for ElevenAgents - voice agents so expressive, they blur the line between AI and human conversations. ElevenLabs rolled out Expressive Mode for its ElevenAgents platform on February 10, giving enterprise customers emotionally intelligent voice agents that can adapt tone in real-time during customer interactions.
+
+## Key Features
+
+Expressive Mode gives teams unprecedented control over tone - so agents can de-escalate, reassure, and guide conversations to a clear resolution, even under pressure.
+
+The feature is built on two main components:
+
+1. **Eleven v3 Conversational**: Eleven v3 Conversational is ElevenLabs' most emotionally intelligent, context-aware Text to Speech model, built on Eleven v3 and optimized for real-time dialogue.
+
+2. **Improved Turn-Taking System**: A new turn-taking system provides better-timed responses with fewer interruptions. The new turn-taking system uses real-time signals from the industry-leading transcription model Scribe v2 Realtime, to infer emotion from how something is said and better determine when an agent should speak, pause, or wait.
+
+## Language Support & Capabilities
+
+Expressive Mode scales emotional nuance across 70+ languages, improving delivery in languages and dialects where nuance previously lagged, such as Hindi.
+
+The feature appears to be fully launched rather than in beta as of February 2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

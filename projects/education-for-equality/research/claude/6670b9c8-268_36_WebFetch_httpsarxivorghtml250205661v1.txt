@@ -1,0 +1,128 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://arxiv.org/html/2502.05661v1
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:28:12 UTC
+========================================================================
+
+URL: https://arxiv.org/html/2502.05661v1
+Extraction prompt: Extract ALL technical details from this paper on AI-driven sign language generation with non-manual markers. Include: full approach, architecture, how facial expressions and non-manual markers are generated, evaluation with Deaf participants, accuracy metrics, datasets, limitations, and key findings. Be exhaustive.
+
+----------------------------------------
+
+# AI-Driven Sign Language Generation with Non-Manual Markers: Technical Overview
+
+## System Architecture
+
+The prototype employs a modular three-stage pipeline converting English text to photorealistic ASL video:
+
+**Module 1: Text-to-ASL Representation**
+- Uses GPT-4o with few-shot prompting (1,494 in-context examples from ASLLRP dataset)
+- Dual tasks: (1) English-to-gloss translation, (2) linguistic feature detection
+- Detects yes/no questions, wh-questions, conditionals, and negation
+- Vocabulary constrained to 3,915 word-gloss pairs
+- Multi-prompting approach to handle token limits
+
+**Module 2: Gloss-to-Skeletal Pose**
+- Motion Matching technique selecting from dictionary of 12,681 pose sequences
+- Optimization minimizes "economy of motion" using weighted Euclidean distance across body parts
+- Expression blending augments facial features post-stitching
+- Eyebrow adjustments for question types and negation markers
+- Linear blending with 20-frame transitions between signs
+
+**Module 3: Pose-to-Video Frames**
+- U-Net architecture with Imagen-style encoder/decoder
+- Conditioned on signer identity for visual consistency
+- Enhanced rasterization: convex polygons per body part, color-coded fingers, orientation-based hand shading
+- Three-loss training: frame-level L1, hand-specific L1, and LPIPS perceptual loss
+- Automated quality filtering using optical flow and pose tracking validation
+
+## Non-Manual Marker Generation
+
+The system generates non-manual cues through:
+- **Eyebrow movements**: Raised for yes/no questions and conditionals; furrowed for negation
+- **Zero-shot classification** of linguistic features from English text
+- Post-hoc expression blending rather than end-to-end integration
+- Holistic facial adjustment without directional gaze variation
+
+## Evaluation Metrics and Performance
+
+**Text-to-Gloss Translation:**
+- BLEU-4: 0.276 (80% of 1,843 sentence pairs with preprocessing)
+- ROUGE-L: 0.664
+- METEOR: 0.560
+- Ablation studies examined preprocessing, example quantity, vocabulary constraints, and grammar rules
+
+**Linguistic Feature Detection:**
+- Yes/no questions: precision 0.98, recall 0.93
+- Wh-questions: precision 0.93, recall 0.98
+- Negation: precision 0.79, recall 1.00 (false positives on negative sentiment)
+- Conditionals: precision 0.95, recall 0.05 (severe underfitting)
+
+**Video Generation (Module 3):**
+- L1: 2.83E-05 (proposed vs. 31.71E-05 baseline)
+- PSNR: 23.346 dB
+- SSIM: 0.864
+- FVD (Fréchet Video Distance): 173.78
+
+## Datasets
+
+**ASLLRP (Module 1):**
+- 2,119 English-gloss pairs (1,843 after cleaning)
+- Continuous and isolated videos
+- Detailed manual/non-manual annotations
+- Trimmed to isolated utterances
+
+**How2Sign (Module 3):**
+- 35K high-resolution clips
+- 16K+ word token vocabulary
+- 60K training frames, 15K test frames
+- 13 distinct signer identities
+
+## User Study with DHH Participants
+
+**Demographics:** 30 Deaf/Hard-of-Hearing signers, primarily ASL-fluent
+
+**Section 1 (Visual/Motion Quality):**
+- Compared AI (Annotations), Video Retargeting, and raw human videos
+- Evaluated understandability, visual quality, naturalness on 5-point scales
+- 3 videos per type per participant
+
+**Section 2 (Translation Quality):**
+- Compared AI (Annotations), AI w/o Expr, AI (Full), Raw Video
+- 21 videos across 6 sentence types (wh-questions, yes/no questions, statements, conditionals, negation, fingerspelling)
+- Participants provided English translations then rated semantic similarity, grammar quality, facial expression accuracy
+- Repeated evaluation to assess expression blending impact
+
+**Key Findings:**
+- Participants understood content frequently but rated signing quality lower than human signers
+- Expression blending improved comprehension for questions
+- Interest in potential use cases: doctor's offices, video conversations, in-person interactions
+
+## Limitations and Challenges
+
+**Acknowledged Constraints:**
+- Temporal consistency issues in video generation
+- Limited non-manual marker coverage (primarily eyebrows)
+- "Economy of motion" selection ignores semantic sign variation
+- Conditional statement detection failure (5% recall)
+- Negative sentiment confusion with negation markers
+- Small dataset size (1,843 sentence pairs)
+- Context-free sentence processing only
+- No handling of sign classifiers or complex linguistic structures
+- Anthropomorphic uncanny valley effects despite photorealism
+
+**Technical Gaps:**
+- Lacks directional gaze and head tilt variation
+- Single neutral pose for fingerspelling non-dominant hand
+- Manual data cleaning and ground truth correction required
+- Vocabulary constraints limit spontaneous expression
+
+## Key Insights
+
+The research demonstrates that LLM-based few-shot prompting substantially outperforms prior neural machine translation approaches (0.276 vs. 0.002-0.124 BLEU-4), though "significant room for improvement remains." The modular architecture enables component replacement as technology advances. Critical findings emphasize that "larger, high-quality, comprehensive ASL datasets" are essential, along with authentic DHH community collaboration throughout development rather than post-hoc evaluation.
+
+Human-centered findings revealed tension between technical advancement and user acceptance: participants appreciated improved visual fidelity but maintained skepticism about signing naturalness compared to human signers, suggesting "quality and overcoming technical limitations could increase acceptance among DHH individuals."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: prompt injection email AI agent security guardrails untrusted email content atta
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:04:44 UTC
+========================================================================
+
+Search query: prompt injection email AI agent security guardrails untrusted email content attack mitigation
+
+----------------------------------------
+
+Web search results for query: "prompt injection email AI agent security guardrails untrusted email content attack mitigation"
+
+Links: [{"title":"Mitigating The Risk of Prompt Injection for AI Agents on Databricks | Databricks Blog","url":"https://www.databricks.com/blog/mitigating-risk-prompt-injection-ai-agents-databricks"},{"title":"AI Agents & Prompt Injection: The Security Crisis You Cannot Ignore - Flutteris","url":"https://flutteris.com/en/blog/injection"},{"title":"AI security: Defending against prompt injection and unsafe actions","url":"https://www.redhat.com/en/blog/ai-security-defending-against-prompt-injection-and-unsafe-actions"},{"title":"Securing Amazon Bedrock Agents: A guide to safeguarding against indirect prompt injections | Artificial Intelligence","url":"https://aws.amazon.com/blogs/machine-learning/securing-amazon-bedrock-agents-a-guide-to-safeguarding-against-indirect-prompt-injections/"},{"title":"LlamaFirewall: An open source guardrail system for building secure AI   agents","url":"https://arxiv.org/pdf/2505.03574"},{"title":"CausalArmor: Efficient Indirect Prompt Injection Guardrails via Causal Attribution","url":"https://arxiv.org/pdf/2602.07918"},{"title":"Securing AI Agents Against Prompt Injection Attacks","url":"https://arxiv.org/pdf/2511.15759"}]
+
+The search results provide comprehensive information on prompt injection attacks against AI agents handling untrusted email content and mitigation strategies:
+
+## Attack Mechanism
+
+Prompt injections involve malicious instructions hidden in contexts like websites, translation tasks, or emails, designed to manipulate the model into unintended behavior. The raw email body (controlled by anyone who can send you an email) can be passed directly to the LLM as untrusted content exposure. The model cannot distinguish policy from content unless you enforce boundaries, and prompt injection succeeds when systems treat external content as if it were a trusted control input.
+
+## Limitations of Prompting-Based Defenses
+
+There is no known method that provides 100% protection against prompt injection, and OpenAI, Anthropic, and Google have all acknowledged this. The "Attacker Moves Second" paper showed that prompting-based defenses collapsed to 95-99% attack success rates under adaptive conditions, and even training-based methods failed at 96-100%.
+
+## Recommended Mitigation Approaches
+
+AI Gateway guardrails such as safety filtering and PII detection can be applied to either the input or output of an agent (or both). Specialized LLMs like Llama Protection models have been fine-tuned to detect prompt injections, toxic content, or code interpreter abuse.
+
+Architectural defenses for indirect prompt injection include trust labeling of context, instruction hierarchy enforcement (treating retrieved content as evidence, never orders), and context isolation (presenting retrieved text in quoted/boxed form).
+
+The only approaches showing real promise are architectural (like CaMeL) — treating the LLM as untrusted and building deterministic guardrails around it.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

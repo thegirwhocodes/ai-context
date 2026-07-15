@@ -1,0 +1,22 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.tactiq.io/en/articles/9546387-how-to-upload-video-audio-and-transcr
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:34:49 UTC
+========================================================================
+
+URL: https://help.tactiq.io/en/articles/9546387-how-to-upload-video-audio-and-transcripts-to-tactiq
+Extraction prompt: Can you upload files from OneDrive, Google Drive, or other cloud storage directly to Tactiq? Or do you have to upload from your local device? Look for any mention of cloud storage import, OneDrive, Google Drive, Dropbox, or similar.
+
+----------------------------------------
+
+# Cloud Storage Import to Tactiq
+
+Based on the provided documentation, **there is no mention of direct cloud storage integration** with OneDrive, Google Drive, Dropbox, or similar services.
+
+The article only specifies the upload method: "Drag and drop your file, or select `Choose file`." This indicates uploads come from your local device only.
+
+The documentation does not address cloud storage import capabilities, so you would need to contact Tactiq support or check their current feature set to confirm whether this functionality has been added since this help article was last updated.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

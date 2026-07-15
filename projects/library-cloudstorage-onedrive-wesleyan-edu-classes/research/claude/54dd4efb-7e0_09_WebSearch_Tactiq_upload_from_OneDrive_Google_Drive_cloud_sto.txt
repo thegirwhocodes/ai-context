@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq upload from OneDrive Google Drive cloud storage import
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:34:34 UTC
+========================================================================
+
+Search query: Tactiq upload from OneDrive Google Drive cloud storage import
+
+----------------------------------------
+
+Web search results for query: "Tactiq upload from OneDrive Google Drive cloud storage import"
+
+Links: [{"title":"Tactiq integration for Google Drive | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/10379011-tactiq-integration-for-google-drive"},{"title":"How to set up Google Drive integration | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9643393-how-to-set-up-google-drive-integration"},{"title":"iCloud vs. Google Drive vs. OneDrive (Comparison Guide)","url":"https://tactiq.io/learn/icloud-vs-google-drive-vs-onedrive"},{"title":"Google Drive | Tactiq Help Center","url":"https://help.tactiq.io/en/collections/10791824-google-drive"},{"title":"Tactiq Google Drive Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/google-drive"},{"title":"Tactiq.io - Update Google Drive Documents After Meetings","url":"https://tactiq.io/ai-workflow/ai-workflow-integrations/google-drive"},{"title":"Upload new Tactiq transcripts to Google Drive files when meeting transcript is ready","url":"https://zapier.com/apps/google-drive/integrations/tactiq/1808881/upload-new-tactiq-transcripts-to-google-drive-files-when-meeting-transcript-is-ready"},{"title":"Import other cloud files using OneDrive - Microsoft Support","url":"https://support.microsoft.com/en-us/office/import-other-cloud-files-using-onedrive-0e769bf6-934f-46f5-b57e-032d41210343"},{"title":"GitHub - mehmetsefabalik/onedrive-to-gcs: Transfer files from Microsoft OneDrive to Google Cloud Storage","url":"https://github.com/mehmetsefabalik/onedrive-to-gcs"},{"title":"Building a workflow to auto-send meeting summaries and transcripts to Google Drive | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/11493278-building-a-workflow-to-auto-send-meeting-summaries-and-transcripts-to-google-drive"}]
+
+Based on the search results, here's what I found about Tactiq's cloud storage integration capabilities:
+
+## Tactiq Cloud Storage Support
+
+Tactiq allows you to save transcripts and AI summaries to Google Drive for easy sharing in Google Docs or across your Google Workspace tools. You can also upload meeting notes to OneDrive so your content stays connected to Microsoft Teams and your Microsoft Office apps.
+
+## Setting Up Integrations
+
+To set up Google Drive integration, scroll down to the Storage section and find Google Drive then click Connect. Sign in with your Google account and click Continue and click Allow to grant Tactiq the necessary permissions.
+
+## Export and Import Options
+
+You can export Tactiq transcripts and upload them to Google Drive, iCloud Drive, OneDrive, or Dropbox for storage and sharing. You can download your transcript and upload it to any cloud storage provider you prefer.
+
+## Automation Workflows
+
+For automated workflows, when a meeting transcript is ready in Tactiq, the system will swiftly upload this important document to your Google Drive. This automation can be set up through integrations like Zapier.
+
+The search results indicate that Tactiq supports native integrations with both Google Drive and OneDrive, allowing you to automatically save and store your meeting transcripts in these cloud services.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: macOS System Data storage large what is normal 2025 reduce
+Session: 527a4a9f-1c41-44f7-a1b5-a9cab0517add
+Time: 2026-06-05 20:14:22 UTC
+========================================================================
+
+Search query: macOS System Data storage large what is normal 2025 reduce
+
+----------------------------------------
+
+Web search results for query: "macOS System Data storage large what is normal 2025 reduce"
+
+Links: [{"title":"System data taking up 115GB - Apple Community","url":"https://discussions.apple.com/thread/254588225"},{"title":"Mac System Data is large: What to do?","url":"https://setapp.com/how-to/macos-system-data-large"},{"title":"System Data taking up a large amount of storage | Mac-Forums | Fix Mac iPhone iPad | Buying Tips | iOS OS Help","url":"https://www.mac-forums.com/threads/system-data-taking-up-a-large-amount-of-storage.379624/"},{"title":"How to clear System Data on Mac: An ultimate guide [2026]","url":"https://macpaw.com/how-to/clear-system-storage-mac"},{"title":"Huge System Data Filling Storage on Your Mac? 7 Possible Fixes","url":"https://osxdaily.com/2025/05/14/huge-system-data-on-mac-why-how-fix/"},{"title":"Mac \"System Data\" Too Large? 10 Ways to Clear It (2026)","url":"https://www.drbuho.com/how-to/clear-system-storage-mac"},{"title":"What To Do if macOS System Data is Huge/Large - The Mac Observer","url":"https://www.macobserver.com/macos/fix-macos-system-data-huge/"},{"title":"Why Mac System Data gets so large","url":"https://cleanmymac.com/blog/why-system-storage-takes-so-much-space"},{"title":"Why System Data ate your Mac storage – and the safest ways to remove it","url":"https://www.macworld.com/article/676493/how-to-delete-system-data-mac.html"},{"title":"Mac System Data is large - Apple Community","url":"https://discussions.apple.com/thread/253667048"}]
+
+Based on the search results, here's what you need to know about macOS System Data storage:
+
+## What's Normal
+
+In 2026, healthy system data Mac storage usually sits at 12-25 GB on macOS Tahoe, Sequoia, Sonoma, or Ventura. More specifically, typically, it is around 12 GB, but depending on usage, anything between 15 and 30 GB can also be normal.
+
+However, system data over 30GB usually means there's something worth cleaning, with the culprit typically being old app caches, local Time Machine snapshots, or leftover temp files from updates. If it exceeds 50 GB, it's worth investigating.
+
+## What System Data Includes
+
+System Data includes all types of data that do not fall into other categories of storage: Applications, Documents, iCloud Drive, iOS files, Photos, etc., along with other system files, downloaded items, and cache.
+
+## How to Reduce It
+
+Sometimes your Mac builds up an unnecessary amount of System files due to a bug, but most of the time it's a normal part of how the operating system works. Some effective methods to reduce System Data include:
+
+- Deleting old Time Machine snapshots, iOS backups, .dmg files, and clearing caches while avoiding core system files.
+- Emptying the Trash on your Mac can also help reduce System Data.
+- Simply restarting your Mac can often resolve some of the issues you may be experiencing.
+
+It's recommended to back up your Mac before deleting anything categorized as System Data, as some files in this category are essential to macOS, and deleting the wrong files can cause instability, data loss, or even prevent your Mac from booting properly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

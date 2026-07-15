@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" "Nigeria" treated unit case study published
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:12:57 UTC
+========================================================================
+
+Search query: "synthetic control" "Nigeria" treated unit case study published
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" "Nigeria" treated unit case study published"
+
+Links: [{"title":"RUNOFF HYDROGRAPHS USING SNYDER AND SCS SYNTHETIC UNIT HYDROGRAPH METHODS: A CASE STUDY OF SOUTH WEST NIGERIA | Request PDF","url":"https://www.researchgate.net/publication/312013022_RUNOFF_HYDROGRAPHS_USING_SNYDER_AND_SCS_SYNTHETIC_UNIT_HYDROGRAPH_METHODS_A_CASE_STUDY_OF_SOUTH_WEST_NIGERIA"},{"title":"AN UPDATE ON THE SYNTHETIC CONTROL METHOD AS A TOOL TO UNDERSTAND STATE","url":"https://www.urban.org/sites/default/files/2022-05/An%20Update%20on%20the%20Synthetic%20Control%20Method%20as%20a%20Tool%20to%20Understand%20State%20Policy.pdf"},{"title":"Comparative Politics and the Synthetic Control Method Alberto Abadie","url":"https://economics.mit.edu/sites/default/files/publications/Comparative%20Politics%20and%20the%20Synthetic%20Control.pdf"},{"title":"10 Synthetic Control – <span style='font-weight: 700'>Causal Inference</span><br/> <i style='color: #00b7ff'>The Mixtape</i>","url":"https://mixtape.scunning.com/10-synthetic_control"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, ...","url":"https://www.aeaweb.org/content/file?id=12409"},{"title":"Synthetic Control Methods For Comparative Case Studies","url":"https://www.nber.org/system/files/working_papers/w12831/w12831.pdf"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, and ...","url":"https://conference.nber.org/confer/2021/SI2021/Abadie_2021.pdf"},{"title":"Synthetic Control Estimator: A Tool for Comparative Case Studies in Economic History by David Gilchrist, Thomas Emery, Nuno Garoupa, Rok Spruk :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560757"},{"title":"Synthetic Difference-in-Differences Estimation","url":"https://docs.iza.org/dp15907.pdf"},{"title":"Revisiting the Synthetic Control Estimator∗ Bruno Ferman† Cristine Pinto‡","url":"https://www.cemmap.ac.uk/wp-content/legacy/uploads/Ferman%20and%20Pinto%20-%20revisiting%20the%20SC.pdf"}]
+
+Based on the search results, I found information about the synthetic control method as a research tool, but the results primarily focus on the methodology itself and prominent applications (such as studies on German reunification, California's tobacco control program, and Basque Country terrorism). 
+
+The search results do not appear to contain specific published case studies using the synthetic control method with Nigeria as a treated unit. The first result discusses synthetic unit hydrographs (a different methodological approach) applied to Nigerian watersheds, which is not related to the econometric synthetic control method being discussed in your query.
+
+To find a published case study using the synthetic control method with Nigeria as the treated unit, you might want to:
+
+1. Search academic databases like Google Scholar, JSTOR, or ResearchGate with more specific keywords
+2. Look for papers that apply synthetic control to Nigerian policy interventions, economic shocks, or reforms
+3. Check recent working papers from NBER, IZA, or similar repositories that might feature Nigeria-specific applications
+
+The synthetic control method is a method developed in Abadie and Gardeazabal (2003) and popularized in Abadie, Diamond, and Hainmueller (2010), which evaluates treatments when there is only one treated unit, typically a city, county, state, or other region, and no readily available control unit, but the search results I found don't include Nigeria-specific applications.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

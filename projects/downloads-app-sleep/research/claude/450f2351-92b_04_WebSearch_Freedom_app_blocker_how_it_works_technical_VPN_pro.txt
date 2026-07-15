@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Freedom app blocker how it works technical VPN proxy DNS system extension archit
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:35 UTC
+========================================================================
+
+Search query: Freedom app blocker how it works technical VPN proxy DNS system extension architecture
+
+----------------------------------------
+
+Web search results for query: "Freedom app blocker how it works technical VPN proxy DNS system extension architecture"
+
+Links: [{"title":"Freedom Privacy Questions and Answers | Freedom Help Center","url":"https://support.freedom.to/en/articles/1347493-freedom-privacy-questions-and-answers"},{"title":"The Freedom Profile (VPN) Explained | Freedom Help Center","url":"https://support.freedom.to/en/articles/8283287-the-freedom-profile-vpn-explained"},{"title":"How to Configure Freedom Blocker for Content Blocking | Tech Lockdown","url":"https://www.techlockdown.com/articles/freedom-blocker-setup"},{"title":"How Freedom Blocks Apps and Websites on iOS | Freedom Help Center","url":"https://support.freedom.to/en/articles/14596751-how-freedom-blocks-apps-and-websites-on-ios"},{"title":"Freedom for iOS FAQ | Freedom Help Center","url":"https://support.freedom.to/en/articles/1347476-freedom-for-ios-faq"},{"title":"Freedom: App & Website Blocker - Apps on Google Play","url":"https://play.google.com/store/apps/details?id=to.freedom.android2&hl=en_US"},{"title":"Freedom app review: does blocking websites and apps actually work? — Blok","url":"https://www.blok.so/resources/freedom-app-review-does-blocking-websites-and-apps-actually-work"},{"title":"Your Freedom - VPN, tunneling, anonymization, anti-censorship. Windows/Mac/Linux/Android","url":"https://www.your-freedom.net/"},{"title":"Freedom Browser Extension | Freedom Help Center","url":"https://support.freedom.to/en/articles/1347519-freedom-browser-extension"}]
+
+Based on the search results, here's how Freedom app blocker works from a technical perspective:
+
+## Overall Architecture
+
+Freedom uses three main approaches to block distractions: Host file blocking on Mac and Windows by modifying your computer's host file to redirect blocked websites to localhost; VPN-based blocking on iOS and Android by creating a local VPN to filter internet traffic; and app termination on desktop by forcibly quitting and preventing launching of blocked programs.
+
+## VPN/Proxy System
+
+When your traffic passes through the blocking proxy/local VPN, no logs are created, stored, saved, or transmitted, and the blockers look for matches on the websites accessed and make real-time block/no-block decisions. Freedom uses Apple's Network Extensions technology to install a "Limited VPN" that blocks content on your phone where it is fast and secure and never sent to servers, and while the Freedom Profile uses VPN technology, it is not a VPN because it never connects to a remote service and never sends your traffic off the phone.
+
+## Privacy & Data Handling
+
+The purpose of syncs is to send your blocklist to the device and to inform it when a session starts or ends, and Freedom does not upload any personal data from the clients to the Freedom.to service.
+
+## Multi-Platform Syncing
+
+A key feature is session syncing - start a 2-hour focus session on your phone and it automatically activates on all your other devices too.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

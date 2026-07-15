@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: stablecoin USDC USDT depeg SVB March 2023 Circle reserves emerging market retail
+Session: 869a6900-9c7e-4841-946b-0e701aa75e93
+Time: 2026-04-28 18:31:24 UTC
+========================================================================
+
+Search query: stablecoin USDC USDT depeg SVB March 2023 Circle reserves emerging market retail loss insurance gap
+
+----------------------------------------
+
+Web search results for query: "stablecoin USDC USDT depeg SVB March 2023 Circle reserves emerging market retail loss insurance gap"
+
+Links: [{"title":"Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment","url":"https://www.mdpi.com/2674-1032/3/4/30"},{"title":"Stablecoins: A Deep Dive into Valuation and Depegging September 2023","url":"https://www.spglobal.com/content/dam/spglobal/corporate/en/images/general/special-editorial/stablecoinsadeepdiveintovaluationanddepegging.pdf"},{"title":"Stablecoin USDC breaks dollar peg after firm reveals it has $3.3 billion in SVB exposure","url":"https://www.cnbc.com/2023/03/11/stablecoin-usdc-breaks-dollar-peg-after-firm-reveals-it-has-3point3-billion-in-svb-exposure.html"},{"title":"Crypto Market Reaction to Silicon Valley Bank and USDC Depeg","url":"https://www.chainalysis.com/blog/crypto-market-usdc-silicon-valley-bank/"},{"title":"The Fed - In the Shadow of Bank Runs: Lessons from the Silicon Valley Bank Failure and Its Impact on Stablecoins","url":"https://www.federalreserve.gov/econres/notes/feds-notes/in-the-shadow-of-bank-run-lessons-from-the-silicon-valley-bank-failure-and-its-impact-on-stablecoins-20251217.html"},{"title":"Explaining the 2023 USDC Depeg | Cybrid","url":"https://cybrid.xyz/blog/2023-usdc-depeg-explained"},{"title":"USDC vs. USDT: Which Stablecoin Should You Choose? | Chainless","url":"https://chainless.finance/en/blog/usdc-vs-usdt"},{"title":"USDC Depeg: A Timeline of The Event and Its Impact - Pintu Academy","url":"https://pintu.co.id/en/academy/post/usdc-depeg-event"},{"title":"Que es un stablecoin: guia completa USDT, USDC, DAI (2026) | DEXTools News","url":"https://www.dextools.io/tutorials/what-is-a-stablecoin-complete-guide-2026-es"},{"title":"Stablecoin Risks: Some Warning Bells - Bank Policy Institute","url":"https://bpi.com/stablecoin-risks-some-warning-bells/"}]
+
+I've completed a web search on the March 2023 stablecoin depeg event related to SVB. Here are the key findings:
+
+## Summary of Results
+
+**The SVB Crisis and USDC Depeg:**
+
+On 11 March 2023, the collapse of Silicon Valley Bank (SVB) highlighted the critical dependence of stablecoins, such as USD Coin (USDC), on traditional banking systems for their reserves. USDC issuer Circle had $3.3 billion deposited with Silicon Valley Bank, which represented roughly 8% of the dollars backing USDC.
+
+**Market Impact:**
+
+By 2am on March 11, just a few hours after Circle's announcement, USDC's value had plummeted to $0.87. During the depeg, investors demonstrated a preference for transferring their holdings from USDC to Tether (USDT) or fiat currency.
+
+**Circle's Reserves:**
+
+As a private company at the time, Circle was not subject to public disclosure requirements; however, subsequent filing with the Securities and Exchange Commission stated that Circle's total stockholders' equity as of December 31, 2023, was $0.34 billion, representing just over a tenth of the $3.3 billion reserves held at SVB.
+
+**Resolution:**
+
+The FDIC, recognizing the broader implications of the situation, made an exceptional decision to waive the standard $250,000 insurance limit on deposits at SVB. This move ensured the security of Circle's $3.3 billion, and USDC rapidly regained its $1 peg.
+
+The search results primarily cover the SVB crisis, USDC/USDT dynamics, and Circle's reserves but do not contain extensive information about emerging market impacts, retail losses, or insurance gaps as mentioned in your search query.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

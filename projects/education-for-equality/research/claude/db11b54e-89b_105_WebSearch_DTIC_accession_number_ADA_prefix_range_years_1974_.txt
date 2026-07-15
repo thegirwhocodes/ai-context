@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTIC accession number "ADA" prefix range years 1974 2010 transition
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:31:12 UTC
+========================================================================
+
+Search query: DTIC accession number "ADA" prefix range years 1974 2010 transition
+
+----------------------------------------
+
+Web search results for query: "DTIC accession number "ADA" prefix range years 1974 2010 transition"
+
+Links: [{"title":"Technical Reports – Defense Technical Information Center","url":"https://discover.dtic.mil/technical-reports/"},{"title":"Major Range and Test Facility Base - DTIC","url":"https://apps.dtic.mil/sti/html/tr/ADA270372/index.html"},{"title":"TR_redirect – Defense Technical Information Center - DTIC","url":"https://discover.dtic.mil/tr_redirect/"},{"title":"DTIC ADA290871: Department of Defense Unclassified Controlled Nuclear Information (DoD UCNI). Change 1. : Defense Technical Information Center : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/DTIC_ADA290871"},{"title":"Full text of \"DTIC ADA049378: AGARD Index of Publications 1974-1976\"","url":"https://archive.org/stream/DTIC_ADA049378/DTIC_ADA049378_djvu.txt"},{"title":"Declassified AD Document Index","url":"https://apps.dtic.mil/sti/citations/ADA016500"},{"title":"DTIC ADA243946: Military Forces in Transition : Defense Technical Information Center : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/DTIC_ADA243946"},{"title":"(R) - Searching DTIC Collections","url":"https://www.loc.gov/flicc/Exemplars/DTIC/DTIC-DTICCollTips.pdf"},{"title":"Dtic","url":"https://apps.dtic.mil/sti/pdfs/ADA258462.pdf"},{"title":"Access to and Dissemination of Restricted Data. Change 3.","url":"https://apps.dtic.mil/sti/html/tr/ADA290898/index.html"}]
+
+Based on the search results, I can provide you with some information about DTIC accession numbers with the "ADA" prefix:
+
+DTIC AD numbers begin with prefixes including AD0, ADA, ADB, ADP or ADC, followed by digits.
+
+The search results show examples of ADA-prefixed accession numbers being used across various time periods. For instance, the search results contain references to documents from 1974 onwards (such as an "AGARD Index of Publications 1974-1976" with accession number ADA049378) through to documents from the 1990s and beyond, showing that the ADA prefix was in use during the period you're inquiring about.
+
+However, the search results do not contain specific information about the exact year range when the ADA prefix was used (1974-2010), nor do they provide details about any transition from the ADA prefix system to other systems. To get more detailed information about the specific transition timeline and which accession number prefixes were used for different time periods, you would likely need to contact DTIC directly or consult their official documentation on accession numbering systems.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

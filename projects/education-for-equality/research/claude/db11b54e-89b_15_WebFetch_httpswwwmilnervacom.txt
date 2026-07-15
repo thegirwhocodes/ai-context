@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.milnerva.com/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:06:30 UTC
+========================================================================
+
+URL: https://www.milnerva.com/
+Extraction prompt: What does Milnerva do? What's the product? What military forms or regulations does it cover? Does it do voice input or only text? Pricing? Who built it?
+
+----------------------------------------
+
+# Milnerva Overview
+
+**What it does:** Milnerva is an AI-powered writing assistant designed to help military personnel create professional documents quickly. The platform uses artificial intelligence to transform user input into regulation-compliant content.
+
+**Products covered:** The tool handles NCOERs (Noncommissioned Officer Evaluation Reports), OERs (Officer Evaluation Reports), counseling statements, awards, memorandums, and citations.
+
+**Input methods:** The platform accepts text input. Users can "write naturally" and the AI converts their words into Army-approved English. There's no mention of voice input capabilities on this page.
+
+**Pricing:** A free tier exists with limitations. Paid plans cost $10/month to cover AI usage costs. New users receive a 7-day trial of the paid version.
+
+**Creator:** Milnerva was built by a former Soldier. The name combines "military" and "Minerva" (Roman goddess of wisdom and warfare).
+
+**Additional details:** The service has 20,000+ active users and has generated over 24,000 documents. It uses OpenAI's models, primarily GPT-4.1, with more complex tasks handled by o3 models. An iOS mobile app is available; Android is in development.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Gmail API OAuth scopes full mailbox access send read agent integration 2026
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:04:45 UTC
+========================================================================
+
+Search query: Gmail API OAuth scopes full mailbox access send read agent integration 2026
+
+----------------------------------------
+
+Web search results for query: "Gmail API OAuth scopes full mailbox access send read agent integration 2026"
+
+Links: [{"title":"Choose Gmail API scopes | Google for Developers","url":"https://developers.google.com/workspace/gmail/api/auth/scopes"},{"title":"Best Email API Providers in 2026: Compare 6 Sync APIs - Unipile","url":"https://www.unipile.com/email-api-providers/"},{"title":"Gmail API Scopes Explained: Choose the Right Permissions for Your App - Unipile","url":"https://www.unipile.com/gmail-api-scopes-guide/"},{"title":"Email API Guide for Developers: Sync, OAuth & Code (2026) - Unipile","url":"https://www.unipile.com/email-api-guide/"},{"title":"Gmail API Send Email: Python & Node.js Examples (2026) - Unipile","url":"https://www.unipile.com/gmail-api-send-email-a-comprehensive-guide-for-developers/"},{"title":"Gmail API Limits for AI Agents | Nylas CLI","url":"https://cli.nylas.com/guides/why-gmail-api-breaks-ai-agents"},{"title":"OAuth 2.0 Scopes for Google APIs | Google for Developers","url":"https://developers.google.com/identity/protocols/oauth2/scopes"},{"title":"How to set Gmail OAuth for ONLY READ? - Questions - n8n Community","url":"https://community.n8n.io/t/how-to-set-gmail-oauth-for-only-read/144805"}]
+
+Here are the search results for Gmail API OAuth scopes with a focus on full mailbox access, send, read, and agent integration in 2026:
+
+## Key Findings:
+
+**OAuth Scope Categories:**
+Gmail API scopes are categorized as non-sensitive (smallest scope of authorization), sensitive (providing access to specific Google user data), or restricted (providing wide access to Google user data).
+
+**Common Scopes for Mailbox Access:**
+The sensitive scopes `mail.read` and `mail.send` require Google's security review before your app can go to production with real users. The principle of minimum access recommends requesting only the Gmail API permissions your app actually needs to avoid unnecessary verification overhead and protect user trust.
+
+**Verification Requirements:**
+The hard part of Gmail API integration is passing Google's OAuth verification review, which is mandatory before requesting sensitive scopes like `gmail.modify` or `gmail.send`, and reviews take 2-8 weeks and require a CASA Tier 2 or 3 security assessment. Restricted Gmail API scopes require yearly re-certification, and if you miss the renewal window, Google can revoke your app's production access.
+
+**Agent Integration in 2026:**
+The Gmail API requires 9 discrete setup steps before an AI agent can make its first API call, and Google's OAuth consent screen involves selecting scopes and submitting for verification review that can take several weeks.
+
+**Security and Limitations:**
+Free Gmail accounts can send up to 500 emails per day, while Google Workspace accounts get 2,000 per day.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

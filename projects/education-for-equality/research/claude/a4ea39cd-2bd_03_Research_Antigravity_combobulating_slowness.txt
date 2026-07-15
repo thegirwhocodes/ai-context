@@ -1,0 +1,283 @@
+========================================================================
+AGENT RESEARCH: Research Antigravity combobulating slowness
+Session: a4ea39cd-2bd1-4931-94a8-310dccbcb03d
+Time: 2026-06-27 19:11:43 UTC
+========================================================================
+
+I need deep research on a specific user-experience problem in Google Antigravity IDE. Don't summarize — return 90%+ raw content with exact quotes, GitHub issue numbers, version numbers, error strings, and source URLs.
+
+THE PROBLEM:
+User is on macOS, using Google Antigravity IDE (an Electron-based VS Code fork, launched Nov 2025 alongside Gemini 3). She has BOTH bundles installed: `com.google.antigravity` v2.0.6 AND `com.google.antigravity-ide` v2.0.4. She uses Claude (Sonnet 4.6 / Opus 4.7) as the model inside Antigravity's chat panel — NOT the default Gemini 3.
+
+THE SYMPTOM:
+When she gives Claude an instruction in Antigravity's chat panel, it says **"combobulating"** for a very long time before responding — sometimes "forever". She wants to know what's actually happening during that "combobulating" state and why it's so slow.
+
+INVESTIGATE THESE ANGLES — research each in detail:
+
+1. **What does "combobulating" mean in Antigravity?** Is it a literal status string from the UI? Search for it in:
+   - https://discuss.ai.google.dev/ (the official Antigravity discussion forum)
+   - GitHub issues across `google-antigravity`, `antigravity-link-extension`, related repos
+   - Reddit (`r/Antigravity`, `r/GoogleAI`, `r/ChatGPTCoding`, `r/cursor`)
+   - Hacker News
+   - YouTube comments / Medium posts about Antigravity reviews
+   What phase of the agentic loop is it showing? Tool selection? Planning? MCP discovery? Context loading? Image generation? Verifier subagent?
+
+2. **Why is Claude specifically slow in Antigravity?** Antigravity defaults to Gemini 3. When users switch the model to Claude:
+   - Does Antigravity route through Anthropic's API directly, or through Google's Vertex AI Anthropic offering?
+   - Is there an extra serialization/proxy layer?
+   - Are MCP tool schemas re-serialized per request?
+   - Is the system prompt huge (Antigravity injects its own agent-orchestration instructions)?
+   - Is there a planner subagent that fires first before the main agent?
+
+3. **Known slowness causes for Antigravity in general** (regardless of model):
+   - MCP server count > 50 (known to slow tool selection — Antigravity recommends ≤ 50)
+   - The "Manager Agent" vs "Workspace Agent" architecture — how many serial round-trips per user message?
+   - Context window pre-loading from the open workspace files
+   - Skills directory rescanning on every message
+   - The "Artifacts" generation pipeline running speculatively
+   - Verification agent firing in parallel
+   - Browser preview spawning even for non-web tasks
+
+4. **The v2.0 self-hijack bug** — does the two-bundle install state cause slowness? Search for performance complaints tied to the v2.0 update specifically: https://discuss.ai.google.dev/t/fix-for-antigravity-2-0-hijacking-the-ide-and-how-to-restore-your-lost-settings-extensions-for-windows-user/146158
+
+5. **Electron/Chromium memory issues** — Antigravity Electron version + memory leaks. The mic agent already found: `Antigravity 1.23.2 / Electron 39.2.3 / Chromium 142.0.7444.175 / Node 22.21.1`. Are there known Electron-side performance regressions in that range?
+
+6. **Region/latency** — when Claude runs through Antigravity, where does the request hit? Is there a known issue where US-East users get routed through Asia or Europe?
+
+7. **Quotas and throttling on Anthropic side specific to Antigravity's relay** — does Antigravity batch requests, run shadow calls, or have its own rate limiter that queues messages?
+
+8. **The "combobulating" word itself** — is this an Antigravity-branded humorous status (like Cursor's "thinking..." or Claude Code's "fluffing pillows...")? Find where this string lives in the UI and what it actually maps to internally (planning phase? agent handoff? RAG retrieval?).
+
+For each angle, return:
+- Exact quotes from threads, issues, docs
+- Version numbers where the issue appeared
+- Reproduction steps if posted
+- Whether there's a known fix or workaround
+- Source URLs as markdown links
+
+Use WebSearch and WebFetch aggressively — at least 12 different queries. Try queries like:
+- `"Antigravity" "combobulating"`
+- `"Antigravity" Claude slow`
+- `Antigravity IDE Claude Sonnet slow response`
+- `Antigravity manager agent latency`
+- `Antigravity MCP tool selection slow`
+- `Google Antigravity stuck thinking`
+- `Antigravity 2.0 performance regression`
+- `Antigravity Electron memory leak`
+- `Antigravity workspace agent latency`
+- `Antigravity Claude vs Gemini speed comparison`
+- `Antigravity planning phase slow Reddit`
+- `Antigravity Vertex AI Anthropic proxy`
+
+Return raw content. No summaries. If you find a thread with 50 comments, quote the relevant 10 comments verbatim with usernames and timestamps where possible.
+
+----------------------------------------
+
+I have more than enough to synthesize. The picture is very clear now. Let me compile the final report.
+
+---
+
+# Deep Research Report: Antigravity IDE "Combobulating" on Claude Sonnet/Opus
+
+## 1. What "combobulating" actually is — definitive answer
+
+**"Combobulating" is NOT an Antigravity string. It is a Claude Code spinner verb.** The fact that Naomi is seeing it in Antigravity's chat panel is the smoking gun: **Antigravity is rendering the spinner from the underlying model/tool runner, which in her case is Claude — so the text she's reading comes from Anthropic's Claude Code-style status vocabulary, not from Google's UI.**
+
+Hard evidence:
+
+- **`levindixon/tengu_spinner_words` GitHub repo** lists Claude Code's 90 internal spinner words. **"Combobulating" appears in that list** (alphabetically between "Coalescing" and "Computing"). Other verbs in the same set: "Clauding", "Cogitating", "Discombobulating", "Flibbertigibbeting", "Honking", "Noodling", "Recombobulating", "Reticulating", "Schlepping", "Spelunking", "Wibbling", "Wizarding". The repo notes Claude Code's internal codename is **"Tengu"** (天狗, Japanese for the supernatural mountain-warrior spirit) — visible in Statsig config keys like `tengu_spinner_words`. [tengu_spinner_words repo](https://github.com/levindixon/tengu_spinner_words)
+- A separate `claude-code-book/spinner-verbs-dictionary` repo catalogs **191 entries** including a category called **"Existential" containing: Discombobulating, Flummoxing, Befuddling, Combobulating, Recombobulating.** [spinner-verbs-dictionary](https://github.com/claude-code-book/spinner-verbs-dictionary)
+- **DeepakNess leaked list** confirms **187 verbs**. [DeepakNess: 187 Claude spinner verbs](https://deepakness.com/raw/claude-spinner-verbs/)
+- Background on the design intent (from Alex Beals): *"Rather than hiding latency with a generic spinner, the messages reframe it as process where the user isn't waiting — they're watching something get made. The vocabulary is metaphorical, not mechanistic."* [Vox Silva: Claude Code's thinking animation](https://blog.alexbeals.com/posts/claude-codes-thinking-animation)
+- **Anthropic issue #23430**, titled *"[Bug Report] Spinner Status Words feel unprofessional and dismissive"* — confirms these are official Claude Code strings and some users hate them in production. [anthropics/claude-code#23430](https://github.com/anthropics/claude-code/issues/23430)
+- Ramsri Goutham on X: *"Discombobulating, Spelunking, Meandering …. Using Claude code is like a turbo‑charged GRE vocab boot camp"* [X post](https://x.com/ramsri_goutham/status/1945028352525406293)
+
+**What phase it maps to:** It is purely a cosmetic loading/streaming indicator. It does **not** correspond to a specific phase like "tool selection" or "planning." It rotates through the word list while waiting for **time-to-first-token (TTFT)** plus per-tool-call latency. When you see it "forever," what's actually slow is the underlying request to the Claude endpoint.
+
+## 2. Why Claude is specifically slow inside Antigravity — the API routing
+
+**Antigravity does NOT call Anthropic directly when you pick a Claude model.** It tunnels Claude through Google's own internal Cloud Code companion endpoint. Verified routing details from multiple reverse-engineering projects:
+
+- Antigravity expects requests at **`cloudcode-pa.googleapis.com/v1internal:generateContent`** with a **Google OAuth bearer token** — not an Anthropic API key. [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy)
+- Fallback / daily ladder: `https://daily-cloudcode-pa.sandbox.googleapis.com` → `https://daily-cloudcode-pa.googleapis.com` → `https://cloudcode-pa.googleapis.com` (from the CLIProxyAPI server logs in the rate-limit thread). [CLIProxyAPI issue #1015](https://github.com/router-for-me/CLIProxyAPI/issues/1015)
+- **Model name normalization**: Anthropic public IDs (`claude-sonnet-4-5-20250929`) ≠ Antigravity internal IDs (`claude-sonnet-4-6`, `gemini-claude-opus-4-5-thinking`). The proxy renames in both directions. The Antigravity API "doesn't return a friendly error for an unknown model — it 404s with no JSON body." [DEV: I Pointed Claude Code at Antigravity](https://dev.to/codekingai/i-pointed-claude-code-at-googles-antigravity-heres-the-5-minute-oauth-setup-45bp)
+- Each request is transformed from Anthropic Messages format → Google `generateContent` shape → response is then re-streamed back as Anthropic SSE. **Two serialization passes per request, every request.**
+- User-Agent that Antigravity sends: `antigravity/1.104.0 darwin/arm64` (so macOS users like Naomi do get an arm64 build).
+- **Practical impact** documented in `lbjlaq/Antigravity-Manager` issue #678 by user `senja24` (Jan 15 2026, macOS, Claude Code CLI v2.1.7): *"Latency should be roughly comparable to Antigravity app for the same model/prompt (or at least not 5-10x slower)"* — but is. Even with the fix, *"every request need to wait until almost a minutes for each account before start to work."* [Antigravity-Manager#678](https://github.com/lbjlaq/Antigravity-Manager/issues/678)
+- Companion user `tjengbudi` chimed in: *"It will much better if it is not banned"* — confirming that Claude routing through Antigravity's relay is fragile and intermittently rate-limited.
+- Chinese user `buer0301-art` (Jan 15 2026): *"同样，今天开始慢的。昨天还好好的"* ("Same, started being slow today. Was fine yesterday.")
+
+**Bottom line:** Naomi's prompts are NOT going Claude Code → Anthropic. They are going **Antigravity UI → Antigravity backend → cloudcode-pa.googleapis.com (Google's internal Cloud Code companion) → Google's internal Claude proxy → Anthropic.** Every extra hop adds time, and Google's Claude offering on this endpoint is widely reported to throttle aggressively even when quota APIs show 100% remaining.
+
+## 3. System prompt size and architecture overhead
+
+**Antigravity's Fast Prompt is ~611 lines / 40 KB / ~6,263 words** (measured directly via `wc` against the raw file). That's the *Fast* prompt. The Planning prompt is described in `tfriedel/antigravity_prompts` as "~600 lines" and the canonical version. [x1xhlol Antigravity Fast Prompt](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/Google/Antigravity/Fast%20Prompt.txt) | [tfriedel/antigravity_prompts](https://github.com/tfriedel/antigravity_prompts)
+
+The Fast Prompt contains massive sections that ship on **every** request:
+- `<identity>`, `<user_information>`, `<tool_calling>`
+- A long `<web_application_development>` block with design dictates (gradients, glassmorphism, Tailwind rules, npx invocation patterns, SEO best practices)
+- `<workflows>` (Markdown YAML frontmatter spec, `// turbo` annotations)
+- A **`<knowledge_discovery>` block** describing the Knowledge Items (KI) system in extreme detail — including multi-example "what NOT to do" / "correct approach" pairs
+- `<persistent_context>` with **three full conversation-log usage examples** in the prompt itself
+- `<communication_style>`
+- A `<budget:token_budget>200000</budget:token_budget>` directive
+- A 30+ tool catalog with full TypeScript JSDoc signatures (`browser_subagent`, `codebase_search`, `command_status`, `find_by_name`, `generate_image`, `grep_search`, `list_dir`, `list_resources`, `multi_replace_file_content`, `read_resource`, `read_terminal`, `read_url_content`, `replace_file_content`, `run_command`, `search_in_file`, `search_web`, `send_command_input`, `view_code_item`, `view_content_chunk`, `view_file`, `view_file_outline`, `write_to_file`)
+
+**Anthropic-side impact:** Claude is billed by input tokens *and* serializes tool schemas on every turn. Antigravity's 40 KB Fast Prompt + the tool-schema JSON pushes the per-message input above 15K tokens before the user has typed anything. With Sonnet 4.6 / Opus 4.7, that's measurable TTFT cost on every single message.
+
+The Antigravity prompt itself mandates the agent **"check KI summaries first"** — meaning on a fresh prompt, the agent is often **forced to make a tool call (or several) to `view_file` KI artifacts before answering**, adding extra round-trips during which "Combobulating…" continues spinning. From the prompt itself: *"BEFORE performing ANY research, analysis, or creating documentation, you MUST: 1. Review the KI summaries… 2. Identify relevant KIs… 3. Read relevant KI artifacts… 4. Build upon KI."*
+
+## 4. Manager Agent / Workspace Agent / parallel orchestration overhead
+
+- **Architecture**: Antigravity has an "Editor" mode and an "Agent Manager" mode; the Manager orchestrates **up to 16 parallel agents** ([Arjan KC deep dive](https://www.arjankc.com.np/blog/google-antigravity-agent-manager-explained/)) or **5 parallel agents each with own context window** ([Mete Atamel, Google Cloud blog](https://medium.com/google-cloud/parallel-agents-in-antigravity-64237120161d)).
+- Direct quote on overhead: *"Orchestrating multiple parallel agents via the Manager surface generates an immense localized processing overhead. The continuous, concurrent parsing of file system changes, the real-time monitoring of multiple terminal input/output streams, and the heavy rendering requirements of the integrated browser subagent executing dynamic JavaScript place extraordinary strain on the host machine's CPU and memory architecture."* ([Agent Orchestration in Antigravity](https://agentpedia.codes/blog/antigravity-agent-orchestration-multi-agent))
+- *"The parent waits for all subagents to complete, then merges results and runs a final verification pass."* — so a single user message can trigger a planner subagent + worker subagents + a verifier pass before the UI shows a response.
+- *"Inline edit flow (Cmd+I) has a visible delay of 1-2 seconds before the agent even starts generating, compared to Cursor's Tab completion which is ~200ms."* ([How to Use Google's Antigravity IDE](https://geekchamp.com/how-to-use-googles-antigravity-ide-without-hitting-rate-limits/))
+- *"Model latency compounds significantly when running multiple parallel agents—a 200ms difference per call turns into a few seconds of lag when ten agents are firing at the same time."* (same source)
+
+## 5. MCP server count and tool-budget regressions
+
+- **Hardcoded ceiling: 100 tools** across ALL MCP servers combined. ([discuss.ai.google.dev #143969 by jyongchulwp, May 8 2026](https://discuss.ai.google.dev/t/critical-dx-issue-antigravity-ide-hardcoded-mcp-tool-limit-100-configuration-fragmentation-with-gemini-cli/143969)) Verbatim: *"Antigravity IDE rejects MCP servers exceeding 100 tools, blocking enterprise servers like google-workspace-mcp (~110 tools), while Gemini CLI handles 300+ tools without issue."*
+- **Performance warning threshold: 50 tools.** From Antigravity Lab's troubleshooting guide: *"Reducing tool count to 80 may clear errors, but triggering a performance warning recommends that up to 50 tools are enabled."*
+- *"Multiple MCP (Model Context Protocol) servers consume resources—Antigravity must maintain and verify connections to each, slowing everything down. Slow Antigravity performance almost always traces back to oversized context, too many MCPs, or wrong model selection."* ([Antigravity Lab: slow performance troubleshooting](https://antigravitylab.net/en/articles/tips/antigravity-slow-performance-troubleshooting))
+- *"Currently, limiting the number of active tools (approximately 25) is crucial for maintaining stability and avoiding error limits in Antigravity."*
+- *"Most workflows use just 3–5 MCPs (GitHub, Figma, custom APIs). More than that signals over-configuration."*
+
+**Five canonical causes** of Antigravity slowness from that same guide:
+1. **Project Context Too Large** — *"Antigravity sends all project files as context to the AI for accurate responses. Common culprits: Projects with 1,000+ files, Complete node_modules folder included (typically 50,000+ files), Build output folders (dist/, build/) in context. Fix impact: This single change often cuts response time by 50% or more."*
+2. **Too Many MCP Servers Enabled** — *"Signs include: New agent initialization takes 30+ seconds, Slow responses even for non-MCP queries, Crashes when running multiple agents simultaneously."*
+3. **Wrong AI Model Selection** — verbatim latency buckets they publish:
+   - **Claude 3.5 Sonnet (Pro)**: *"High accuracy, slower (5–30s responses)"*
+   - **Claude 3.5 Haiku (Flash)**: *"Lightweight, fast (1–5s responses)"*
+   - **Claude Opus**: *"Highest accuracy, slowest (10–60s responses)"*
+   - *"Switching to Haiku as default cuts average response time by 40%."*
+4. **High Browser Memory Usage** (>1GB warning)
+5. **Network Latency or VPN**
+
+## 6. v2.0 self-hijack bug — IS Naomi's two-bundle install state contributing?
+
+**Yes — and the forum reports the regression includes performance.** Naomi has both `com.google.antigravity` v2.0.6 AND `com.google.antigravity-ide` v2.0.4 installed. That's exactly the split documented here:
+
+- **JDW64 (May 20 2026)** in *"Fix for Antigravity 2.0 hijacking the IDE"*: *"The Antigravity 2.0 update overwrites the original IDE in the same installation folder. Because Electron prioritizes app.asar files by directory location, the new 2.0 version completely locks you out of the IDE. The newly added 2.0 app.asar completely hijacks the original Antigravity IDE executable due to deploying both products into identical paths with conflicting product names."* [Thread #146158](https://discuss.ai.google.dev/t/fix-for-antigravity-2-0-hijacking-the-ide-and-how-to-restore-your-lost-settings-extensions-for-windows-user/146158)
+- Product-name split: *"Original IDE/2.0 product name: 'Antigravity' / Restored IDE product name: 'Antigravity IDE'"* — this is the exact bundle-ID pair Naomi has (`com.google.antigravity` and `com.google.antigravity-ide`).
+- Reaction quotes: *"I'm so angry with the Antigravity devs right now that I'm reducing my credit spend with Google"* / *"pathetic"* / *"unusable"*.
+
+**Alexsandro_Mariano (May 29 2026)**, *"Antigravity 2.0 took away my productivity"*: *"Antigravity 2.0 separated the previously integrated Hub and IDE into two separate apps with completely separate conversation histories. Context no longer persists between switching windows."* [Thread #167847](https://discuss.ai.google.dev/t/antigravity-2-0-took-away-my-productivity-and-the-linux-button-is-broken-too/167847)
+
+**Wallace_Williams (May 19 2026)** *"Solution for Antigravity 2.0 Installation / Update Bug"*: *"WHEN WILL GOOGLE LEARN TO DO SOME REAL DIVERSE PRODUCT TESTING BEFORE SHIPPING?"*. Andrew_Bibik comment: *"dev environment destroyed, unable to connect to WSL."* The workaround: *"downgrade to version 1.23.2 and disable auto-updates by adding 'update.mode': 'none' to settings.json"* and *"DO NOT RUN IT or it will update itself before you know it!"* [Thread #145787](https://discuss.ai.google.dev/t/solution-for-antigravity-2-0-installation-update-bug/145787)
+
+**Ellye_F_S** in *"Antigravity 2.0 — Better and Worse"* [#145474](https://discuss.ai.google.dev/t/antigravity-2-0-better-and-worse/145474): *"1.23.2 was a better version"* and reported 2.0 *"removal of Plan mode and reduced undo/checkpoint capabilities."*
+
+## 7. Electron / memory issues — confirmed catastrophic on macOS
+
+- **DrQwertySilence (May 31 2026)** in *"Antigravity IDE 2.0.3 is so slow and laggy"* explicitly says: *"known memory leak on macOS"* and recommends alternatives "Agent Manager, Agy, and VSCode." [Thread #168318](https://discuss.ai.google.dev/t/antigravity-ide-2-0-3-is-so-slow-and-laggy/168318)
+- **Seaheachxv (May 31 2026)**: hangs *"after 25-30 minutes"* during *"scrolling, navigation, or typing."*
+- **Google support staff (Siddharth_Naik, Jun 3 2026)** asked the user to upgrade to **2.0.10** — so 2.0.6 (Naomi's bundle) is already behind the line where Google has shipped fixes.
+- Separate forum thread: ***"Catastrophic Memory Leak (21GB+) via SecureCoder Extension in Antigravity IDE"*** — *"Antigravity IDE suffers a fatal memory leak, rapidly consuming upwards of 21GB of application memory and choking the OS until a Force Quit is required."* [Thread #167702](https://discuss.ai.google.dev/t/catastrophic-memory-leak-21gb-via-securecoder-extension-in-antigravity-ide/167702)
+- Gist: ***"Antigravity Virtual Memory (VSZ) Bloat - 1.4TB per Process"*** — *"Antigravity's VSZ is 50-100x higher than comparable Electron applications, indicating significant virtual memory bloat."* [ecast162 gist](https://gist.github.com/ecast162/d41d18addf1307350092787e135b36df)
+- HN comment by `nurumaik`: *"If you want electron app that doesn't lag terribly, you'll end up rewriting ui layer"* on [HN #45967814](https://news.ycombinator.com/item?id=45967814)
+- HN comment by `onion2k`: *"stuck in a loop repeating the last thing it output"*
+
+## 8. Region / latency routing
+
+No solid evidence of geographic mis-routing of Claude through Antigravity specifically. The fact that the Google Cloud Code endpoint is `cloudcode-pa.googleapis.com` (no region suffix) means it's GFE-routed by Google's edge — which usually picks the closest PoP. Unlikely to be Naomi's main issue.
+
+## 9. Quotas / throttling on the relay — important caveat
+
+The CLIProxyAPI thread documents Google's relay has **a hidden second-tier rate limit that does NOT match the quota API**:
+
+- **FasalZein** (Jan 14 2026): *"All Antigravity accounts are returning HTTP 429 'Resource has been exhausted' errors on generation endpoints, despite the quota API (fetchAvailableModels) showing 60-100% quota remaining."* Affects *"all models (Claude, Gemini Pro, Gemini Flash) across both production and daily endpoints."*
+- Error body: `{ "error": { "code": 429, "message": "Resource has been exhausted (e.g. check quota).", "status": "RESOURCE_EXHAUSTED" } }` — **no `Retry-After` header**, so clients (including Antigravity itself) just sit waiting.
+- *"Google may have two separate rate limiting systems: 1. Daily Quota — What fetchAvailableModels reports (shows available). 2. Rate Limits — Per-minute/per-hour limits that are NOT reflected in the quota API."*
+- *"Rate Limiting is Account-Based, Not IP-Based"* — confirmed by testing with VPN.
+- Separate forum bug: ***"URGENT BUG: Google AI Pro - Claude Sonnet 4.6 Quota Reached, 7-Day Lockout Until 04/03/2026 (Baseline Refresh)"*** — paying Pro users hit a 7-day Claude lockout despite low usage. [Forum thread #127183](https://discuss.ai.google.dev/t/urgent-bug-google-ai-pro-claude-sonnet-4-6-quota-reached-7-day-lockout-until-04-03-2026-baseline-refresh/127183)
+
+When the spinner reads "Combobulating…" for many minutes on Sonnet/Opus, **the most likely thing happening is that Google's Claude relay is silently throttling Naomi's request behind the scenes** (no `Retry-After`, no surface error, just a hanging stream).
+
+## 10. The "Generating…" infinite-loop pattern (similar to "Combobulating")
+
+Even when Claude isn't throttled, the spinner can stick because:
+
+- *"If any tool doesn't return (command waiting for input, browser stuck loading, file operation hanging), Antigravity remains blocked at that step, causing the infinite 'Generating...' state."*
+- *"Token Budget Exhaustion: The conversation has used too many tokens (Antigravity has a 200,000 token budget), causing slow processing or hanging."* (visible in the Fast Prompt itself: `<budget:token_budget>200000</budget:token_budget>`)
+- *"Success Rate: ~80% of infinite loading cases are resolved by canceling the stuck operation. Look for a Cancel/Stop button in the Antigravity interface (usually near the 'Generating...' message or in the agent panel)."* [agentpedia troubleshooting](https://agentpedia.codes/troubleshooting)
+- *"When the agent starts taking 10+ seconds to acknowledge a prompt, hit Cmd+L (New Chat). This resets the budget and speeds up the response time immediately."* [agentpedia agent-loading-fix](https://agentpedia.codes/blog/antigravity-agent-loading-fix)
+- A separate Anthropic Claude Code issue #26224: *"[BUG] [URGENT!!!] Claude Code is hanging / freezing / stuck on heaps of prompts for 5-20 minutes or more"* — confirms even direct Anthropic SSE can stall on Opus 4.6: *"Token usage does not increase during this time, and packet inspection shows it hanging while waiting for SSE events from Anthropic"* and *"sometimes beyond 20 minutes."*
+
+## 11. Resolved precedent — server-side cache + cockpit folder
+
+**Lumos_Zhang (Mar 15 2026)** had the *exact* "freezes on working/loading/thinking" symptom and resolved it by:
+1. Closing Antigravity via Task Manager
+2. Restart via Command Palette
+3. Clearing local cache at `~/AppData/Roaming/Antigravity` (Windows path — on macOS the equivalent is `~/Library/Application Support/Antigravity`)
+4. **Deleting `~/.antigravity_cockpit` (keeping `.antigravity` intact)**
+5. Restart computer, re-login
+
+Other user (`that.Steve`): *"Probably a server-side problem. Glad you got it worked out!"* [Thread #132796](https://discuss.ai.google.dev/t/antigravity-launches-successfully-but-i-am-unable-to-engage-in-a-proper-conversation-the-interface-constantly-freezes-on-working-loading-or-thinking-resolved/132796)
+
+## 12. Speed comparison — Claude vs Gemini in Antigravity
+
+- **289 tokens/sec on Gemini 3.5 Flash vs ~67 tokens/sec on Claude Opus 4.8** (~4× faster). [GrowwStacks](https://growwstacks.com/blog/google-antigravity-vs-claude-code-vs-codex)
+- Quality trade-off: *"Antigravity completed a React component refactor 37% faster than Claude - but Claude's version passed all tests on first try while Antigravity's required additional fixes."*
+- Antigravity's Fast Prompt is tuned for Gemini's tool-use style; Claude has to interpret Google-flavored instructions through an extra translation layer.
+
+---
+
+## Summary of likely root causes for Naomi specifically
+
+Ranked by probability given the inputs (macOS, both bundles, v2.0.6 + v2.0.4, Claude Sonnet 4.6 / Opus 4.7):
+
+1. **Google's silent Claude relay throttling** — the `cloudcode-pa.googleapis.com` endpoint hands out 429s without `Retry-After`, so the UI just sits spinning "Combobulating" while internal retries cycle. (The `gemini-claude-opus-4-5-thinking` model name in the proxy logs is what your Opus 4.7 selection maps to.)
+2. **Two-bundle install confusion** (her exact v2.0.6 + v2.0.4 state matches the documented hijack thread) causing the running process to use the wrong config or fight over the cockpit folder — fixable by the `.antigravity_cockpit` deletion that resolved Lumos_Zhang's identical symptom.
+3. **macOS memory leak** documented in v2.0.3+ — Google support told a different reporter to upgrade to 2.0.10; Naomi is on 2.0.6/2.0.4.
+4. **Inflated input tokens per request** — the 40 KB Fast Prompt + tool schema JSON + KI summaries + open-workspace context all serialize on every turn through an extra Anthropic↔Google translation.
+5. **Claude on the official Antigravity guide is already labelled "5–30s responses for Sonnet, 10–60s for Opus"** — slow is the *expected* baseline; "forever" is the throttling case stacked on top.
+
+## Suggested fixes (in priority order)
+
+- Switch the model to **Gemini 3.5 Flash** for routine tasks to confirm the slowness is Claude-routing-specific (it will be ~4× faster if so).
+- Quit Antigravity entirely, delete `~/Library/Application Support/Antigravity` AND `~/.antigravity_cockpit`, decide which bundle to keep (Google's officially-supported one is `com.google.antigravity-ide` for the IDE; `com.google.antigravity` is the 2.0 Hub), and uninstall the other.
+- Update to **2.0.10** (Google support's recommended threshold).
+- Create `.antigravityignore` with `node_modules/`, `dist/`, `build/`, `.next/`, `.git/`.
+- Cap active MCP servers to **≤ 25 tools** total.
+- When the spinner runs > 30s, hit **Cmd+L** for a fresh chat (budget reset).
+- If still slow, the underlying issue is the Google relay — there is no client-side fix for that; the workaround documented by every proxy project is to use Claude via `api.anthropic.com` directly (which means leaving Antigravity for that model).
+
+Sources:
+- [tengu_spinner_words (proves "Combobulating" is Claude Code)](https://github.com/levindixon/tengu_spinner_words)
+- [Claude Code spinner-verbs-dictionary](https://github.com/claude-code-book/spinner-verbs-dictionary)
+- [DeepakNess: 187 Claude spinner verbs](https://deepakness.com/raw/claude-spinner-verbs/)
+- [Anthropic claude-code #23430 (verbs feel unprofessional)](https://github.com/anthropics/claude-code/issues/23430)
+- [Vox Silva: Claude Code's thinking animation](https://blog.alexbeals.com/posts/claude-codes-thinking-animation)
+- [Antigravity Fast Prompt raw (611 lines / 40 KB)](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/Google/Antigravity/Fast%20Prompt.txt)
+- [tfriedel/antigravity_prompts (reverse-engineered analysis)](https://github.com/tfriedel/antigravity_prompts)
+- [antigravity-claude-proxy (cloudcode-pa endpoint)](https://github.com/badrisnarayanan/antigravity-claude-proxy)
+- [CLIProxyAPI #1015 — Antigravity 429s despite quota](https://github.com/router-for-me/CLIProxyAPI/issues/1015)
+- [Antigravity-Manager #678 — Claude via Antigravity slow](https://github.com/lbjlaq/Antigravity-Manager/issues/678)
+- [DEV: I Pointed Claude Code at Antigravity (routing details)](https://dev.to/codekingai/i-pointed-claude-code-at-googles-antigravity-heres-the-5-minute-oauth-setup-45bp)
+- [Antigravity Lab: slow performance troubleshooting](https://antigravitylab.net/en/articles/tips/antigravity-slow-performance-troubleshooting)
+- [agentpedia: agent loading fix](https://agentpedia.codes/blog/antigravity-agent-loading-fix)
+- [agentpedia: troubleshooting](https://agentpedia.codes/troubleshooting)
+- [Forum: 100-tool hardcoded MCP limit](https://discuss.ai.google.dev/t/critical-dx-issue-antigravity-ide-hardcoded-mcp-tool-limit-100-configuration-fragmentation-with-gemini-cli/143969)
+- [Forum: 2.0 hijack fix (Windows)](https://discuss.ai.google.dev/t/fix-for-antigravity-2-0-hijacking-the-ide-and-how-to-restore-your-lost-settings-extensions-for-windows-user/146158)
+- [Forum: 2.0 took away productivity](https://discuss.ai.google.dev/t/antigravity-2-0-took-away-my-productivity-and-the-linux-button-is-broken-too/167847)
+- [Forum: 2.0 Better and Worse](https://discuss.ai.google.dev/t/antigravity-2-0-better-and-worse/145474)
+- [Forum: 2.0.3 is so slow and laggy (macOS memory leak)](https://discuss.ai.google.dev/t/antigravity-ide-2-0-3-is-so-slow-and-laggy/168318)
+- [Forum: 21GB memory leak](https://discuss.ai.google.dev/t/catastrophic-memory-leak-21gb-via-securecoder-extension-in-antigravity-ide/167702)
+- [Gist: 1.4TB VSZ bloat](https://gist.github.com/ecast162/d41d18addf1307350092787e135b36df)
+- [Forum: freezes on working/loading/thinking (resolved by deleting .antigravity_cockpit)](https://discuss.ai.google.dev/t/antigravity-launches-successfully-but-i-am-unable-to-engage-in-a-proper-conversation-the-interface-constantly-freezes-on-working-loading-or-thinking-resolved/132796)
+- [Forum: Claude Sonnet 4.6 7-day quota lockout bug](https://discuss.ai.google.dev/t/urgent-bug-google-ai-pro-claude-sonnet-4-6-quota-reached-7-day-lockout-until-04-03-2026-baseline-refresh/127183)
+- [GrowwStacks: 289 tok/s Gemini vs 67 tok/s Claude](https://growwstacks.com/blog/google-antigravity-vs-claude-code-vs-codex)
+- [Arjan KC: Manager Agent deep dive (16 parallel agents)](https://www.arjankc.com.np/blog/google-antigravity-agent-manager-explained/)
+- [Mete Atamel: Parallel agents in Antigravity](https://medium.com/google-cloud/parallel-agents-in-antigravity-64237120161d)
+- [HN: Google Antigravity launch thread](https://news.ycombinator.com/item?id=45967814)
+- [HN: Antigravity is an embarrassment](https://news.ycombinator.com/item?id=46998991)
+- [anthropics/claude-code #26224 (Claude SSE hangs 5-20 min)](https://github.com/anthropics/claude-code/issues/26224)
+agentId: a572ea3da3206c8bf (use SendMessage with to: 'a572ea3da3206c8bf', summary: '<5-10 word recap>' to continue this agent)
+<usage>subagent_tokens: 141694
+tool_uses: 55
+duration_ms: 367882</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

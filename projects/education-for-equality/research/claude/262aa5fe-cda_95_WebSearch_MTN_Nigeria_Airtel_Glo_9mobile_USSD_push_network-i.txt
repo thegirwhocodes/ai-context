@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: MTN Nigeria Airtel Glo 9mobile USSD push network-initiated API NI-USSD VAS provi
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:29:35 UTC
+========================================================================
+
+Search query: MTN Nigeria Airtel Glo 9mobile USSD push network-initiated API NI-USSD VAS provider
+
+----------------------------------------
+
+Web search results for query: "MTN Nigeria Airtel Glo 9mobile USSD push network-initiated API NI-USSD VAS provider"
+
+Links: [{"title":"USSD: List of USSD Codes For Mobile Network Operators in Nigeria – MTN, Airtel, Glo, 9mobile [Updated] - Jumiabot Networks","url":"https://jumiabot.com/ussd-list-of-new-ussd-codes-for-mobile-network-operators-in-nigeria-updated/"},{"title":"New USSD Code For MTN, Airtel, Glo & 9mobile | NCC New Policy • Network Palava","url":"https://networkpalava.com.ng/2023/05/new-ussd-code-for-mtn-airtel-glo-9mobile.html"},{"title":"Navigating the NIN-SIM Linkage: A Guide for Nigerian Mobile Users - NCC Consumer Portal","url":"https://consumer.ncc.gov.ng/articles/84-navigating-the-nin-sim-linkage-a-guide-for-nigerian-mobile-users"},{"title":"USSD CODE FOR ALL MOBILE NETWORKS IN NIGERIA","url":"https://fctemis.org/notes/12153_USSD%20CODE%20FOR%20ALL%20MOBILE%20NETWORKS%20IN%20NIGERIA.pdf"},{"title":"Updated List of New USSD Codes for Mobile Operators in Nigeria","url":"https://prestmit.io/blog/updated-list-of-new-ussd-codes-for-mobile-operators-in-nigeria"},{"title":"Popular USSD Codes in Nigeria in 2024","url":"https://helloduty.com/blogs/popular-ussd-codes-in-nigeria-in-2024"},{"title":"Nigeria Telecoms.. There are four (4) major phone… | by Victor Ikomi | Medium","url":"https://medium.com/@veeikomi/nigeria-telecoms-6e3f915acebb"},{"title":"Full List of Glo USSD Code for Transfer, Airtime, OTP & More","url":"https://logicsecurity.ng/full-list-of-glo-ussd-code-for-transfer-airtime-otp-more/"},{"title":"Here is a list of all the new USSD codes for MTN, Airtel and Glo - Technext","url":"https://technext24.com/2023/05/30/the-new-ussd-codes-for-mtn-airtel-glo/"},{"title":"Demystifying NIN Code Linkage for MTN, Glo, Airtel, or 9Mobile: A Comprehensive Guide - Shelaf","url":"https://www.shelaf.net/demystifying-nin-code-linkage/"}]
+
+The search results provide information about USSD codes in Nigeria but don't contain specific details about network-initiated USSD (NI-USSD), push USSD, VAS providers, or related APIs. Here's what the search found:
+
+## USSD in Nigeria - General Overview
+
+USSD is a short command codes or quick codes that facilitate interaction between a user and a service provider, and are communication protocols that mobile operators like MTN, GLO, AIRTEL and 9mobile use to provide quick services to their customers.
+
+## Unified USSD Code Framework
+
+Nigerian mobile network operators are implementing a new USSD code framework that requires all providers to use a unified code format, replacing their individual codes, with the Nigerian Communications Commission setting a deadline of May 17, 2023, for this implementation.
+
+The NCC standardized USSD codes across all networks so that Glo, MTN, Airtel, and 9mobile all use the same codes for essential functions such as airtime recharge, data purchase, balance checks, and borrowing services.
+
+**Note:** The search results don't contain information about network-initiated USSD (NI-USSD), push USSD APIs, or VAS (Value-Added Services) provider specifications. To find technical documentation on these specific topics, you may need to search directly with the Nigerian telecom regulatory bodies (NCC), contact the individual network operators' developer documentation, or look for telecom API specifications from these providers.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

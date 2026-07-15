@@ -1,0 +1,33 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "apps.dtic.mil" "AD1" accession number range latest 2025
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:31:11 UTC
+========================================================================
+
+Search query: "apps.dtic.mil" "AD1" accession number range latest 2025
+
+----------------------------------------
+
+Web search results for query: ""apps.dtic.mil" "AD1" accession number range latest 2025"
+
+Links: [{"title":"TR_redirect – Defense Technical Information Center - DTIC","url":"https://discover.dtic.mil/tr_redirect/"},{"title":"unclassified ad number - DTIC","url":"https://apps.dtic.mil/sti/pdfs/ADB019525.pdf"},{"title":"DTIC","url":"https://www.dtic.mil/"},{"title":"Dtic","url":"https://apps.dtic.mil/sti/pdfs/AD1062280.pdf"},{"title":"Allocating Air Force Career Field Accession Targets - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA418239.pdf"},{"title":"Weather as a Force Multiplier: Owning the Weather in 2025","url":"https://apps.dtic.mil/sti/citations/ADA333462"},{"title":"DTIC Registration – Defense Technical Information Center","url":"https://discover.dtic.mil/dtic-registration/"},{"title":"Technical Reports – Defense Technical Information Center","url":"https://discover.dtic.mil/technical-reports/"},{"title":"Defense Technical Information Center - Wikipedia","url":"https://en.wikipedia.org/wiki/Defense_Technical_Information_Center"},{"title":"Defense Technical Information Center","url":"https://discover.dtic.mil/"}]
+
+Based on the search results, I found some relevant information about DTIC's apps.dtic.mil platform and accession numbers, but the results don't contain specific information about the latest AD1 accession number range for 2025.
+
+Here's what I found:
+
+To find a specific citation by accession number on DTIC, you can take the accession number and add it to the end of a link (for example, ADA540204 would be accessed via https://apps.dtic.mil/sti/citations/ADA540204).
+
+The search results show examples of various accession number formats (ADA, ADB, AD1) being used in DTIC's system, and DTIC's collection of unclassified and unlimited Technical Reports can be indexed via the sitemap at https://apps.dtic.mil/sitemap.xml.
+
+However, the search results do not contain specific information about the current range of AD1 accession numbers or what the latest 2025 accession numbers are. To find this detailed information, you may need to:
+- Browse DTIC's sitemap directly
+- Contact DTIC directly for accession number range information
+- Search the discover.dtic.mil portal for current technical reports
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

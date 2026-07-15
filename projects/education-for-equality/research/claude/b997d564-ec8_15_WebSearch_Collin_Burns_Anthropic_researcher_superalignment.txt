@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Collin Burns Anthropic researcher superalignment
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:08:35 UTC
+========================================================================
+
+Search query: Collin Burns Anthropic researcher superalignment
+
+----------------------------------------
+
+Web search results for query: "Collin Burns Anthropic researcher superalignment"
+
+Links: [{"title":"Collin Burns","url":"https://collinpburns.com/"},{"title":"Automated Weak-to-Strong Researcher","url":"https://alignment.anthropic.com/2026/automated-w2s-researcher/"},{"title":"Collin Burns - Anthropic | LinkedIn","url":"https://www.linkedin.com/in/collin-burns/"},{"title":"Collin Burns","url":"https://scholar.google.com/citations?user=JGS2xjkAAAAJ&hl=en"},{"title":"Unsupervised Elicitation - Alignment Science Blog","url":"https://alignment.anthropic.com/2025/unsupervised-elicitation/"},{"title":"Jan Leike","url":"https://jan.leike.name/"},{"title":"Collin Burns on Alignment Research And Discovering Latent Knowledge Without Supervision — EA Forum","url":"https://forum.effectivealtruism.org/posts/KmmDHAhPmzFDFsdB4/collin-burns-on-alignment-research-and-discovering-latent"},{"title":"Weak to Strong Generalization - Video | OpenAI Forum","url":"https://forum.openai.com/public/videos/weak-to-strong-generalization-2024-replay"},{"title":"Collin Burns (@CollinBurns4) / X","url":"https://x.com/collinburns4?lang=en"},{"title":"Collin Burns | FAR.AI","url":"https://www.far.ai/about/people/collin-burns"}]
+
+Based on the search results, here's what I found about Collin Burns and his work in superalignment:
+
+## Overview
+
+Collin Burns is an AI researcher at Anthropic. Previously he worked at OpenAI, and before that he was a PhD student at Berkeley.
+
+## Research Focus
+
+Burns' research centers on superalignment challenges. He has introduced a new unsupervised algorithm for eliciting skills from pretrained language models, addressing the key alignment problem of how to align superhuman models whose behavior humans cannot reliably supervise.
+
+One of his major contributions is his work on weak-to-strong generalization. His paper "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision" was published at ICML 2024 as an oral presentation. For the ultimate superalignment problem, humans will have to supervise models much smarter than them, and his work studies an analogous problem: using weak small models to supervise strong large models.
+
+## Additional Work
+
+His unsupervised algorithm for Llama 3 pretrained models matches the performance of fine-tuning on dataset labels and outperforms crowdsourced human labels across three benchmarks: GSM8k-verification, TruthfulQA, and Alpaca reward modeling.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

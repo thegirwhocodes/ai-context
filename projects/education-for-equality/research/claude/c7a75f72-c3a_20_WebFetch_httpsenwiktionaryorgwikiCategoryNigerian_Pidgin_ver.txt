@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://en.wiktionary.org/wiki/Category:Nigerian_Pidgin_verbs
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-25 04:30:02 UTC
+========================================================================
+
+URL: https://en.wiktionary.org/wiki/Category:Nigerian_Pidgin_verbs
+Extraction prompt: List every Nigerian Pidgin verb in this category and its meaning. I'm looking for short verbs (1-2 syllables) that relate to teaching, learning, talking, sharing, knowing, understanding, listening, guiding, helping, growing, or seeing/understanding. Skip verbs about anger, fighting, sex, eating, or money.
+
+----------------------------------------
+
+# Nigerian Pidgin Verbs: Teaching, Learning & Communication
+
+Based on the Wiktionary category page, here are the relevant short verbs:
+
+**Learning & Knowledge:**
+- **sabi** - to know or understand
+- **tink** - to think
+
+**Communication:**
+- **tok** - to talk or speak
+- **hyar** - to hear or listen
+
+**Teaching & Guidance:**
+- **sabi** - functions as "to teach" (knowledge-related)
+- **mek** - to make or cause (instructional context)
+
+**Growing & Development:**
+- **bigin** - to begin or start
+
+**Seeing & Understanding:**
+- **deh** - to be/stay (perceive presence)
+
+The page lists 47 total Nigerian Pidgin verbs in this category, organized alphabetically from A-Y. However, many entries relate to motion, eating, fighting, or other semantic domains outside your specified interests. The verbs above best match your criteria for teaching, learning, communication, and understanding within the one to two-syllable constraint you requested.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

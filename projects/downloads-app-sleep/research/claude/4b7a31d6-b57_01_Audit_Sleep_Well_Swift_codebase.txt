@@ -1,0 +1,34 @@
+========================================================================
+AGENT RESEARCH: Audit Sleep Well Swift codebase
+Session: 4b7a31d6-b579-4a4a-a44c-63b602b3158c
+Time: 2026-06-18 18:46:15 UTC
+========================================================================
+
+Do a thorough code-quality and correctness audit of a native Apple app at /Users/naomiivie/Downloads/App/Sleep. It is a Swift app with these targets:
+- ShutdownApp/  → the macOS app ("Sleep Well")
+- SleepWelliOS/ → the iOS/iPadOS app
+- DeviceActivityMonitorExtension/, ShieldConfigurationExtension/, ShieldActionExtension/ → iOS Screen Time extensions
+- Shared logic duplicated between ShutdownApp/ and SleepWelliOS/Shared/ (SyncedStore.swift, UnlockAgentClient.swift, QuotesProvider.swift)
+
+Read ALL the .swift files (ignore the build/ directory). Focus on:
+1. Correctness bugs and race conditions — especially in ShutdownApp/ShutdownManager.swift (bedtime trigger logic, day-change detection, persisted trigger state), SyncedStore.swift (iCloud NSUbiquitousKeyValueStore + App Group UserDefaults sync), ScheduleManager.swift (DeviceActivity scheduling, the "heartbeat" workaround, 20-activity limit), and SleepWellMonitor.swift.
+2. The unlock-bypass surface: this app's WHOLE POINT is that you can't easily get past the block. Find every way a user could trivially bypass the lock (quit the app, kill a process, toggle a setting, delete the app, change the clock, etc.) and whether the code defends against it.
+3. Code duplication between the Mac and iOS copies of shared files — are they actually in sync or have they drifted? Diff them conceptually.
+4. Networking/security in UnlockAgentClient.swift — how it talks to the Sage backend, error handling, fail-safe vs fail-open behavior.
+5. Swift/SwiftUI quality issues: forced unwraps, main-thread violations, retain cycles, @State/@Published misuse, error handling.
+6. Anything broken, half-finished, or TODO.
+
+For each finding give: file:line, severity (critical/high/medium/low), what's wrong, and a concrete fix. Be specific and quote code. Prioritize the bypass-surface and correctness findings. Return a structured report — do not edit any files.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a4c2c884012a70b9c (internal ID - do not mention to user. Use SendMessage with to: 'a4c2c884012a70b9c' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Downloads-App-Sleep/4b7a31d6-b579-4a4a-a44c-63b602b3158c/tasks/a4c2c884012a70b9c.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

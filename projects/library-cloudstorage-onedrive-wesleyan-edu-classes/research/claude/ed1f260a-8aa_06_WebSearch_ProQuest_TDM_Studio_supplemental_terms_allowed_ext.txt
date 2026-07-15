@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ProQuest TDM Studio supplemental terms allowed external connections internet acc
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:14:25 UTC
+========================================================================
+
+Search query: ProQuest TDM Studio supplemental terms allowed external connections internet access
+
+----------------------------------------
+
+Web search results for query: "ProQuest TDM Studio supplemental terms allowed external connections internet access"
+
+Links: [{"title":"Supplemental Terms of Use – TDM Studio","url":"https://about.proquest.com/en/about/supplemental-terms-of-use-tdm-studio/"},{"title":"TDM Studio","url":"https://about.proquest.com/en/products-services/TDM-Studio/"},{"title":"Home - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio"},{"title":"Home - ProQuest TDM Studio - Research Guides at Syracuse University Libraries","url":"https://researchguides.library.syr.edu/pqtdm"},{"title":"Home - Text and Data Mining with TDM Studio - CMU LibGuides at Carnegie Mellon University","url":"https://guides.library.cmu.edu/TDMStudio"},{"title":"ProQuest TDM Studio - Text Mining - Research Guides at Columbia University","url":"https://guides.library.columbia.edu/text-mining/proquest-tdm-studio"},{"title":"ProQuest TDM Studio ~ Home","url":"https://tdmstudio.proquest.com/"},{"title":"Using the Workbench - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio/features"},{"title":"ProQuest TDM Studio - Text Analysis - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/penntdm/tdm-studio"},{"title":"Create a TDM Studio Account - ProQuest TDM Studio Guide - Library Guides at University of Washington Libraries","url":"https://guides.lib.uw.edu/tdmstudio/register"}]
+
+Based on the search results, I found relevant information about ProQuest TDM Studio's supplemental terms and external connections/internet access:
+
+## Supplemental Terms and Internet Access
+
+The supplemental terms apply to use of TDM Studio and any output therefrom, in addition to the standard Terms and Conditions and applicable Product Service Terms.
+
+Regarding external connections and internet access, TDM Studio does not require IP Authentication and can be accessed from anywhere – while working from home or on campus. This indicates that the platform allows remote internet access without geographic restrictions.
+
+For the Workbench environment specifically, the virtual machine provisioned by ProQuest has 16gb of RAM, 100gb of hard drive space, and 4 CPUs, and only allows 15mb of downloads per week to prevent downloading datasets.
+
+The search results contain the ProQuest supplemental terms page, but the specific details about whether external connections to the internet are allowed within the TDM Studio environment were not fully detailed in the available search results. For comprehensive information on external connection policies, you may want to consult the full supplemental terms document directly on ProQuest's website or contact their support team.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,9 @@
+RESEARCH INDEX
+Generated: 2026-06-29 15:27:38
+Files: 4
+========================================================================
+
+34417be3-713_00_Map_Kais_current_architecture.txt  [3KB]  AGENT RESEARCH: Map Kai's current architecture
+34417be3-713_01_WebSearch_Christian_lofi_instrumental_Spotify_playlist_opens.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Christian lofi instrumental Spotify playlist open.spotify.com/playlist
+34417be3-713_02_Recover_all_Kai_requirements__Sabi_pipeline.txt  [4KB]  AGENT RESEARCH: Recover all Kai requirements + Sabi pipeline
+d3d14989-ffd_00_Launch_tech-stack_research.txt  [33KB]  AGENT RESEARCH: Launch tech-stack research

@@ -1,0 +1,49 @@
+========================================================================
+AGENT RESEARCH: Build memory: Classes
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:38:00 UTC
+========================================================================
+
+Build memory for the Classes project.
+
+1. Read ~/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/MEMORY.md
+2. Read "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/.claude-sessions/INDEX.txt"
+3. Read the 10 most recent session .txt files (for files over 100KB, read first 300 lines and last 100 lines)
+
+Then CREATE memory files at ~/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/:
+- user_naomi_academic.md (type: user) — courses, professors, study habits, explanation preferences
+- project_courses.md (type: project) — all 4 courses: Econ 241, Econ 333, Econ 349, QAC 386, professor names, textbooks
+- project_academic_status.md (type: project) — exams taken, assignments, what's coming up
+- feedback_academic.md (type: feedback) — how she wants homework formatted, explanation style
+- reference_academic.md (type: reference) — professor emails, textbook names, course links
+
+Every file needs frontmatter: name, description, type, sessions: [list of session IDs].
+UPDATE MEMORY.md index. Write files with Write tool.
+
+----------------------------------------
+
+Done. Here is what was created at `/Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/`:
+
+**6 files total:**
+
+1. **MEMORY.md** -- Updated index linking to all 5 memory files with short descriptions.
+
+2. **user_naomi_academic.md** (type: user) -- Naomi's academic identity at Wesleyan, all 4 courses listed, study habits (uses Claude as primary study partner, records classes with Tactiq/Apple Notes, studies via lecture walkthroughs and mock exams), and explanation preferences (beginner-level, analogy-heavy, no LaTeX, use Unicode math, research before answering).
+
+3. **project_courses.md** (type: project) -- Full details on all 4 courses: Econ 241 (Prof. Imai, Mishkin textbook), Econ 333 (Diamond-Dybvig model focus, lectures 1-6 covered), Econ 349 (Prof. Kuenzel, Jones & Vollrath textbook, all key readings listed), QAC 386 (Google Colab, OpenAI API under QAC386 org). Includes complete folder structure and topics covered per course.
+
+4. **project_academic_status.md** (type: project) -- Tracks completed work: Econ 241 Exam 1 (March 2), Econ 349 PS2 and term paper proposal (Nigeria education/GDP topic), QAC 386 HW1, Econ 333 lectures 1-6. Notes upcoming items like the Econ 349 progress report (April 15).
+
+5. **feedback_academic.md** (type: feedback) -- Key preferences extracted from sessions: explain like she knows nothing about finance, show all workings, remove AI-sounding language from submissions, use only class-taught functions, don't claim inability to find files, always research before giving rapid-fire instructions.
+
+6. **reference_academic.md** (type: reference) -- Quick-lookup table for professors (Imai, Kuenzel), textbook titles and file paths, OneDrive paths, tool configurations (Colab secrets key name, Tactiq setup, OpenClaw server IP), and key readings for Econ 349 and 333.
+
+All files include frontmatter with name, description, type, and session ID lists drawn from the 40 sessions in the index.
+agentId: aeefcf35ef5fee841 (use SendMessage with to: 'aeefcf35ef5fee841' to continue this agent)
+<usage>total_tokens: 99378
+tool_uses: 28
+duration_ms: 217553</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

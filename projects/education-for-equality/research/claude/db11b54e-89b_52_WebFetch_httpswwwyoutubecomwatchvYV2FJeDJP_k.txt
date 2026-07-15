@@ -1,0 +1,25 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.youtube.com/watch?v=YV2FJeDJP_k
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:03 UTC
+========================================================================
+
+URL: https://www.youtube.com/watch?v=YV2FJeDJP_k
+Extraction prompt: From the video description and any visible captions: list every team, project, and winner mentioned for the SCSP AI+ Expo Hackathon. Include any specific demos shown.
+
+----------------------------------------
+
+I cannot provide the requested information about teams, projects, and winners from the SCSP AI+ Expo Hackathon based on the content provided.
+
+The webpage excerpt shown contains only YouTube's footer navigation and legal links (About, Press, Copyright, Terms, Privacy, etc.). It does not include the video description, captions, or any details about the hackathon event itself.
+
+To gather the information you're seeking, you would need to:
+- Access the full YouTube video page with its complete description
+- Review any visible captions or transcripts from the video
+- Check for linked resources or timestamps highlighting specific teams and winners
+
+If you can provide the actual video description or transcript content, I'd be happy to extract and summarize the hackathon details following your guidelines.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

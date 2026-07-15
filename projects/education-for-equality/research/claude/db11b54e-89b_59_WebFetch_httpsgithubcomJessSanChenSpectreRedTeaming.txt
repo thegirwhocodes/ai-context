@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/JessSanChen/SpectreRedTeaming
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:48 UTC
+========================================================================
+
+URL: https://github.com/JessSanChen/SpectreRedTeaming
+Extraction prompt: Quote the README in full. What did Spectre actually do? What tech stack? What dataset? How did they jailbreak NIPRGPT? What was the demo to judges? What patterns made this win?
+
+----------------------------------------
+
+Based on the GitHub page content provided, I can only offer limited information, as the full README wasn't included in the excerpt:
+
+**What's explicitly stated:**
+
+The repository describes itself as "Agentic AI approach to jailbreaking LLM models" by Jessica Chen and Jeremy Zhang. It notes they "had a bit of fun using the Air Force's NIPRGPT as a proof of concept for our agentic LLM jailbreaking architecture" and won "$25,000 cash prize" at the SCSP x AGI House Hackathon.
+
+**What I cannot answer from this content:**
+
+- The complete README text (it's referenced but not fully provided)
+- Specific technical implementation details
+- Dataset information
+- Exact jailbreaking methodology
+- Judge demonstration specifics
+- Success patterns/winning factors
+
+**Tech stack indicators only:**
+
+The page shows language breakdowns: Python (58.7%), JavaScript (23.2%), CSS (9.7%), and HTML (8.4%), suggesting a Python backend with a JavaScript/web frontend, but specific frameworks or libraries aren't detailed in the excerpt.
+
+To fully answer your questions about methodology, datasets, demo content, and what made this winning approach distinctive, I would need the actual README.md file content, which wasn't completely included in what you provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

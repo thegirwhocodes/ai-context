@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.voice.intron.io/docs/index/introduction
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 17:42:49 UTC
+========================================================================
+
+URL: https://docs.voice.intron.io/docs/index/introduction
+Extraction prompt: How does one get an integrator account or API access for Intron Voice? What account tiers exist, how do you get an API/access key with permission for the file upload sync transcription endpoint, and is there a sales/contact/request-access process? Report everything about authentication, account types, and getting access.
+
+----------------------------------------
+
+# Intron Voice API Access Information
+
+Based on the documentation provided, here's what's available about account access:
+
+## Getting an Account
+
+The documentation indicates you need to "sign in to your account" at voice.intron.io, but it **does not explain** how to create an account initially or detail any sign-up process.
+
+## Account Tiers
+
+The provided content contains **no information** about different account tiers, pricing levels, or feature variations.
+
+## API Key Access
+
+Once logged in, the process is straightforward:
+
+1. Navigate to your "developers tab" at voice.intron.io/v2/developers
+2. "Copy your API key. Keep this secure and never expose it in client-side code"
+
+The documentation emphasizes security but provides no details about key permissions or scope restrictions specific to endpoints like file upload sync.
+
+## Contact & Support
+
+The only support contact mentioned is: **voice@intron.io**
+
+The documentation states: "If you have any questions or need assistance, our support team is available" at this email address.
+
+## Notable Gap
+
+The documentation lacks critical details about the initial account creation process, account tier structures, permission management, or a formal sales/access request workflow. Users interested in API access would need to contact support directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

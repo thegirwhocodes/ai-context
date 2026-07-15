@@ -1,0 +1,100 @@
+========================================================================
+AGENT RESEARCH: Research ChatGPT/ElevenLabs voice UX latency tricks
+Session: 3f0fd587-a8ad-4ce6-86a4-cb6c031d7c7e
+Time: 2026-04-26 02:00:19 UTC
+========================================================================
+
+I need DEEP research on the techniques ChatGPT Voice (Advanced Voice Mode) and ElevenLabs Conversational AI use to make their browser-based voice chat feel low-latency and visually alive. I'll be using these findings to upgrade an existing FastAPI + WebSocket + AudioWorklet voice pipeline (Adjutant — fully offline on a MacBook M2). Return AT LEAST 90% of the substantive content you find — every URL, every API name, every technique, every code snippet, every latency number, every browser API. NO summarization. If you find a 2000-word article, return 1800+ words of substance.
+
+## Constraints I'm working with
+- Must remain runnable fully OFFLINE on a 2023 MacBook Pro M2 16GB
+- FastAPI WebSocket backend, vanilla JS frontend with AudioWorklet
+- Currently uses: Silero VAD (server-side), faster-whisper small.en, Ollama llama3.2:3b streaming, Kokoro-onnx TTS
+- Already implements: streaming sentence-buffer flush, async TTS, single thinking-cue pre-rendered audio
+- Cannot use cloud APIs, cannot use OpenAI Realtime API, cannot use ElevenLabs API at runtime
+
+## Research targets — return everything you find on each
+
+### A. ChatGPT Advanced Voice Mode in-browser UX
+- The animated pulsing circle / orb / blob / sphere — what is the visual element? canvas? SVG? CSS? WebGL?
+- Is the pulsing driven by user mic input level, bot output level, or both?
+- What's the actual API used to drive amplitude — Web Audio AnalyserNode? getByteFrequencyData? getByteTimeDomainData? Resolution? RAF loop?
+- How is latency made to feel low even when the model takes 1-2s to respond — visual prefetch? state animation? echo of user voice?
+- Anything specific to the new GPT-4o realtime web client (released 2024): DOM structure, web component, what's visible in dev tools
+- Sources: ChatGPT iOS/Android/web reverse engineering posts, OpenAI engineering blog, anyone who's looked at the network panel
+
+### B. ElevenLabs Conversational AI in-browser UX
+- Their public widget: what's the visual? Their `react-voice-widget` / `convai` package
+- How does the widget pulse? Web Audio AnalyserNode patterns
+- Latency claims: ElevenLabs marketing says "sub-300ms" — what tricks make this real on the client side?
+- Their websocket protocol shape (audio chunks, event types) — does it differ from OpenAI's Realtime?
+- Their `flash` model and `turbo` model — what ARE these?
+
+### C. Web Audio API patterns for live audio visualization
+- AnalyserNode setup: `fftSize`, `smoothingTimeConstant`, `minDecibels`, `maxDecibels`
+- Sample code for: amplitude-driven scale animation (`getByteTimeDomainData`), frequency-driven bars (`getByteFrequencyData`), spectral centroid orb
+- requestAnimationFrame patterns for 60fps audio-visual sync
+- Common visualizer libraries: `wavesurfer.js`, `p5.js`, `three.js`+audio, custom canvas
+- Breath/onset detection from amplitude envelope
+- Connecting AnalyserNode to BOTH input (mic) and output (bot speaker) simultaneously
+
+### D. Latency reduction tricks specifically for cascaded voice pipelines
+The ChatGPT-feel low-latency tricks I haven't fully implemented yet:
+
+1. **Streaming STT** — getting partial transcripts WHILE the user is still speaking, not waiting for end-of-turn. Whisper isn't a true streaming model but tricks include:
+   - Sliding-window streaming (overlap chunks every 250ms, decode each window, merge with LocalAgreement)
+   - whisper.cpp `--step` flag, faster-whisper streaming patterns
+   - Showing partial transcript in UI immediately to make it FEEL fast even if STT-final is 1-2s away
+   - Specific repos: `whisper-streaming` (UFAL), `whisper-online`, `WhisperLive`, `WhisperKit` streaming
+
+2. **Predictive prefetching** — does ChatGPT/ElevenLabs start the LLM call before the user has fully stopped talking, using partial transcripts? "Speculative replies"?
+
+3. **Server-side semantic VAD** — Pipecat's smart-turn-v3, OpenAI's `semantic_vad` mode in Realtime API — predicting end-of-utterance from prosody before silence threshold hits
+
+4. **Streaming TTS chunk-overlap** — instead of synthesizing whole sentences, synthesizing 20-token chunks and crossfading at the boundary. ElevenLabs does this with their flash model. Kokoro patterns?
+
+5. **WebRTC vs WebSocket** — does WebRTC actually help on localhost or is the latency identical? Where's the lossy benefit?
+
+6. **HTTP/2 push of pre-rendered acknowledgement audio** — start playing "..." before any synthesis happens
+
+7. **Browser Audio playback latency** — `audioCtx.outputLatency`, `AudioWorklet` scheduling vs `AudioBufferSourceNode.start(when)` precision
+
+8. **Parallel pipelines** — running STT and partial-LLM-prediction in parallel as transcript grows, rather than sequential STT→LLM→TTS
+
+### E. Modern voice-AI demo repos worth studying
+- `livekit/agents` browser demos
+- `pipecat-ai/pipecat` reference frontend
+- `openai/openai-realtime-console` — OpenAI's own browser demo for the Realtime API. What does its visualizer/orb look like? What audio API does it use?
+- Vapi demos
+- `daily-co/vapi-web-sdk`
+- `cartesia-ai` voice agent demos
+- Any open-source clones: `ChatGPT-clone`, `ElevenLabs-clone` projects
+- Sesame's CSM browser interface
+- Hume AI's EVI browser interface
+
+### F. Specific tricks the current Adjutant pipeline could adopt TONIGHT
+What single changes would make the biggest perceived-latency improvement, ranked:
+1. By impact on perceived UX
+2. By implementation effort
+
+Cite GitHub code where possible. Be specific.
+
+## Output format
+Long dense report. Quote URLs verbatim. Quote code snippets. Include latency numbers. NO summary. NO conclusion. Skip introduction. Aim for 4000+ words of raw data.
+
+----------------------------------------
+
+<persisted-output>
+Output too large (59KB). Full output saved to: /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/3f0fd587-a8ad-4ce6-86a4-cb6c031d7c7e/tool-results/toolu_01GD4ik1KaZpHZ8jhDCVqgWX.json
+
+Preview (first 2KB):
+[
+  {
+    "type": "text",
+    "text": "I have enough material. I have full ground truth for ElevenLabs (orb shader, WebSocket protocol, Avatar.tsx volume scaling), OpenAI Realtime Console (visualizer), Hume EVI (WebGL particles), LiveKit (BarVisualizer + useMultibandTrackVolume), Pipecat (Smart Turn v3 + preemptive_generation), Whisper streaming, latency optimization. Let me write the comprehensive report now.\n\n---\n\n# Voice-AI In-Browser UX & Latency Research Dossier — for Adjutant\n\nBelow is a long, dense, code-quoting report. Sources are inline as URLs verbatim, in addition to a sources block at the end.\n\n---\n\n## A. ChatGPT Advanced Voice Mode — what's actually happening in-browser\n\nOpenAI has not published deep technical docs for the live chatgpt.com/voice client, but their open-source `openai-realtime-console` is the reference implementation that ships with the Realtime API and almost certainly shares its audio plumbing with the production app. The full source is on the `websockets` branch at https://github.com/openai/openai-realtime-console/tree/websockets and the relevant files are in `src/lib/wavtools/`.\n\n**The visualizer is plain Canvas 2D, not WebGL, not SVG.** Two `<canvas>` refs (`clientCanvasRef`, `serverCanvasRef`) — one for mic input, one for assistant audio. From `src/pages/ConsolePage.tsx`:\n\n```tsx\nconst clientCanvasRef = useRef<HTMLCanvasElement>(null);\nconst serverCanvasRef = useRef<HTMLCanvasElement>(null);\n// ...\nuseEffect(() => {\n  let isLoaded = true;\n  const wavRecorder = wavRecorderRef.current;       // mic\n  const wavStreamPlayer = wavStreamPlayerRef.current; // bot speaker\n  let clientCtx: CanvasRenderingContext2D | null = null;\n  let serverCtx: CanvasRenderingContext2D | null = null;\n\n  const render = () => {\n    if (isLoaded) {\n      if (clientCanvas) {\n        clientCtx = clientCtx || clientCanvas.getContext('2d');\n        clientCtx.clearRect(0, 0, clientCanvas.width, clientCanvas.height);\n        const res
+...
+</persisted-output>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

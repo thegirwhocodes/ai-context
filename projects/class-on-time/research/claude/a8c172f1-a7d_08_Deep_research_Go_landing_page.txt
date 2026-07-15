@@ -1,0 +1,59 @@
+========================================================================
+AGENT RESEARCH: Deep research: Go landing page
+Session: a8c172f1-a7d4-4624-8ac2-b31c78a6f870
+Time: 2026-05-11 04:06:19 UTC
+========================================================================
+
+Naomi is rebranding her commitment-device app from "Class on Time" to **"Go"**. The new positioning is **"Uber but for walking — to class"**. The core mechanic stays the same: connect your calendar, the app routes you to walk to class 30 minutes early, charges you $100 via Apple Pay or your bank if you're late.
+
+She needs a single-page marketing landing page at https://go-place.vercel.app that feels like a real startup product — NOT a student personal project. The current rewrite (which I just shipped) is too warm/blog-feel. She wants something with the polish of Uber/Lyft/Linear/Stripe.
+
+Do deep research and return a concrete design brief I can implement in Next.js + Tailwind. Cover these axes with specific cited references:
+
+**1. Hero patterns for navigation/transit apps** (target ~250 words)
+Study Uber, Lyft, Citymapper, Komoot, AllTrails, Pikmin Bloom (their web), Strava, Niantic in general. What does the hero look like? Map background? Big "Where to?" input? Phone-screenshot tilted? Side-by-side product-shot + text? What's the optimal pattern for "Go" where the product IS a walking journey with a deadline + financial stake? Note: she has Mapbox tokens so we *could* embed a real interactive Mapbox map in the hero.
+
+**2. Color & typography for an Uber-but-walking brand** (~200 words)
+Uber went monochrome black/white. Lyft uses bright pink/purple. Citymapper uses bright blue/cyan. Pikmin Bloom uses pastels. Beeminder uses yellow/red. For Go, which palette signals "honest commitment device" + "walking" + "campus" + "fun" all at once? Recommend a specific palette (3-5 hex codes). For type: Inter? Söhne? Geist? GT America? Recommend a heading/body pair with rationale.
+
+**3. The single-word "Go" brand challenge** (~150 words)
+"Go" is generic to the point of being a UX problem — no SEO, no obvious logo. How do other ultra-short-name startups handle it (X, Lyft, Lime, Bolt, Hopper, Uber itself which is a single word, Cash App, Notion which is one word, Linear, Arc)? Logomark options for "Go" — an arrow? footsteps? a sprite? Specific recommendation.
+
+**4. Trust signals for an app that charges $100** (~150 words)
+What does Beeminder, StickK, Forfeit, Stickk, Habitica do to signal "we will actually take your money but it's fair"? On a landing page specifically: testimonials, FAQ patterns, dollar-amount-visible counters, screenshot of a real charge. Naomi has no users yet so she can't show real testimonials. What's the right framing for a 0-user pre-launch landing?
+
+**5. Concrete design brief** (~300 words)
+End with a section-by-section spec for the new landing:
+- Hero: exact layout, copy direction, visual element (map? phone shot? animation?)
+- Nav: structure
+- "How it works" — what visual treatment beats numbered cards?
+- Pricing/honesty section: what beats a pricing table for a $0-but-$100-penalty model?
+- FAQ: what's the right tone, are accordions correct?
+- Footer: minimal? maximal?
+
+For each section give: specific layout in words ("3-col grid", "60/40 split", etc), specific copy direction, and 1-2 reference URLs you cite.
+
+**6. Animation & motion guidance** (~150 words)
+Walking journey is inherently motion. Should the landing use scroll-triggered animation? Lottie? CSS-only transforms? Reference Stripe's product pages (heavy motion), Vercel's (subtle motion), Linear's (clipped motion). Pick one and justify.
+
+**Strict requirements:**
+- ≤1500 words total
+- Cite real URLs for every claim
+- Be opinionated. "Use X. Don't use Y." Not "could consider..."
+- Include direct color hex codes, font names, exact CSS values where relevant
+- If WebFetch and WebSearch are denied, say so at top and proceed from training-data knowledge with caveats — but still be specific
+
+End with: "Top 3 things to copy from the references" — your sharpest 3 recommendations.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a79ac2d5abe19205c (internal ID - do not mention to user. Use SendMessage with to: 'a79ac2d5abe19205c' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Class-on-Time/90e269fa-81be-46c8-b626-4d4be9914be2/tasks/a79ac2d5abe19205c.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

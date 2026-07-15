@@ -1,0 +1,132 @@
+========================================================================
+AGENT RESEARCH: Deep research: how to build AI agents
+Session: 3ca6f6d6-cc8f-48a7-ae98-043f8bea4484
+Time: 2026-04-20 01:58:01 UTC
+========================================================================
+
+Deep research task — return ~5,000 words of dense, practical, current (2026) research on HOW PEOPLE ACTUALLY BUILD AI AGENTS. This is research output for a product plan, not a tutorial. Write it as if you're writing a chapter of a book for a smart builder.
+
+I'm building "Ed.it" — a desktop AI video editing agent for content creators (think Sana AI meets CapCut). I need to understand the full state-of-the-art of how builders are constructing agents in 2026, so I can make informed architecture decisions.
+
+Cover EVERY one of these angles in depth. Do not skip or summarize — this needs to be comprehensive:
+
+## 1. The ReAct loop (and its evolution)
+- Original ReAct (Yao et al., 2022) — thought/action/observation loop
+- How it's evolved: ReWOO, Reflexion, Tree of Thoughts, Plan-and-Execute
+- What the 2026 consensus pattern is (plan → act → reflect → revise)
+- Where ReAct breaks down (long horizons, multi-step tool chains)
+- How modern agent frameworks implement it under the hood
+
+## 2. Tool use and function calling
+- How tool calling actually works at the API level (JSON schema, OpenAI-style function calling, Anthropic's tool_use blocks, Gemini's function_declarations)
+- Parallel tool calls vs sequential
+- Tool call validation / retry loops
+- MCP (Model Context Protocol) as the interop standard
+- Dynamic vs static tool sets
+- Tool call streaming (delta/partial JSON)
+- Safety: sandboxing tools, permission prompts, audit logs
+
+## 3. Memory systems (brief — my primary research covered this, just the agent-building angle)
+- Short-term (context window), working memory (scratchpad), long-term (vector + SQL)
+- MemGPT / Letta self-editing memory
+- Memory as a tool call ("memory.write(...)", "memory.read(...)")
+- The balance: always-load core vs query-on-demand
+
+## 4. Orchestration patterns
+- Single agent with many tools
+- Multi-agent (orchestrator + workers, router + specialists)
+- Handoff pattern (OpenAI Agents SDK style)
+- Graph-based (LangGraph nodes + edges + cycles + checkpointing)
+- Swarm pattern (agents as mesh)
+- When to use which
+
+## 5. Planning
+- How agents decompose goals into steps
+- Explicit planners (planner agent writes a plan, executor agent executes)
+- Implicit planning (LLM just thinks step-by-step inline)
+- Plan storage + revision (replanning on failure)
+- HTN (hierarchical task networks) making a comeback?
+
+## 6. Reflection and self-correction
+- Reflexion pattern (write down what went wrong, try again)
+- Self-consistency (generate multiple, pick best)
+- Critic/actor patterns
+- LLM-as-judge for scoring agent outputs
+- When reflection adds value vs wastes tokens
+
+## 7. Human-in-the-loop
+- Interrupt + resume
+- Approval gates for risky actions
+- LangGraph interrupts / HITL
+- UI patterns for HITL (Cursor's "Accept/Reject", Claude Code permission prompts)
+
+## 8. State and durability
+- Stateful vs stateless agents
+- Checkpointing (LangGraph checkpointer, Temporal-style durable execution)
+- Replay and time-travel debugging
+- Session persistence (Claude Agent SDK sessions, OpenAI previous_response_id)
+
+## 9. Streaming and UI
+- SSE streaming of tokens, tool calls, reasoning
+- Vercel AI SDK's streamText / useChat pattern
+- Rendering tool calls in the UI as they happen
+- "Visible reasoning" as a trust-builder (Cursor, Claude Code)
+
+## 10. Evaluation and testing
+- Unit tests for agents (tricky — stochastic)
+- Eval harnesses (LangSmith, Braintrust, Inspect)
+- Golden task sets
+- LLM-as-judge evals
+- Trace-based debugging
+
+## 11. Cost and latency
+- Prompt caching (Anthropic, OpenAI)
+- Model routing (Haiku/Mini for cheap turns, Sonnet/4o for hard turns)
+- Batch API for async work
+- Context window management
+
+## 12. Production gotchas
+- Prompt injection defense
+- Infinite loops
+- Tool misuse / hallucinated tool calls
+- Rate limits
+- Error handling / retries
+- Token budget overruns
+- Context window overflow
+
+## 13. Real-world patterns from shipped products
+- Cursor / Claude Code (coding agents)
+- Devin (autonomous SWE)
+- Browser agents (Browser Use, Operator, Comet)
+- Voice agents (Retell, Vapi)
+- Sana/Glean (knowledge workspace agents)
+- What they do well, what they don't
+
+## 14. Frameworks snapshot (brief)
+- Claude Agent SDK — the new default for ops-heavy agents
+- OpenAI Agents SDK — handoff-centric
+- LangGraph — graph + state
+- Vercel AI SDK — UI-first
+- Mastra, Inngest AgentKit, AutoGPT, BabyAGI (historical note)
+
+## 15. The "from scratch" path
+- What it looks like to build an agent without a framework
+- Just a while loop + LLM + tool call handler + memory functions
+- When this is the right choice (simpler, more control)
+
+Write it in a confident, opinionated voice. Use specific examples. Include actual code snippets where illuminating (Python or TypeScript, short). Make concrete recommendations. Avoid generic "AI is amazing" filler.
+
+Target length: 5,000 words (plus or minus 500 is fine). Return as structured markdown with H2/H3 headings I can drop directly into a doc.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ab14ac17892e657b9 (internal ID - do not mention to user. Use SendMessage with to: 'ab14ac17892e657b9' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484/tasks/ab14ac17892e657b9.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

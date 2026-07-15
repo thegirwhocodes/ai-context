@@ -1,0 +1,84 @@
+========================================================================
+AGENT RESEARCH: Test memory: bethel folder
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 02:32:08 UTC
+========================================================================
+
+You are simulating a BRAND NEW Claude session in /Users/naomiivie/bethel. You have never seen this project before. You know nothing.
+
+Follow these steps exactly:
+1. Read /Users/naomiivie/bethel/CLAUDE.md
+2. Follow its instructions — read .claude-sessions/INDEX.txt, then read the most recent transcript
+3. Also check if memory files exist at ~/.claude/projects/-Users-naomiivie-bethel/memory/MEMORY.md and read them
+
+After doing all of that, answer: "What is this project and what are we working on?" 
+
+Be specific — names, architecture decisions, tech stack, what was last discussed. If you can't answer confidently, say so.
+
+End your response with a verdict: PASS (system works, you know what's going on) or FAIL (you're lost).
+
+----------------------------------------
+
+I now have a thorough understanding of the project. Here is my answer:
+
+---
+
+## What is this project and what are we working on?
+
+**Bethel** ("House of God," from Genesis 28) is a mobile app built by **Naomi Ivie** -- a Wesleyan University student who also founded E4E/Sabi (an ed-tech platform). Bethel treats Bible reading, dream journaling, and AI-powered interpretation as one connected spiritual journey.
+
+### Core Vision
+Dreams are words from God that need stewarding, not just journaling. No existing app combines chronological Bible reading + dream journal + AI interpretation + personal notes. The design ethos is "opening a premium leather journal by candlelight" -- luxury tech like Arc Browser or Apple Books, zero religious iconography, never a "church app."
+
+### Tech Stack
+- **Expo / React Native + TypeScript** (chosen so Naomi can hot-reload on her phone)
+- **Supabase** with pgvector for backend and RAG embeddings
+- **Clerk** for auth
+- **LoRAX** on a dedicated Hetzner GEX44 server (separate from Sabi) for serving the Bethel LoRA
+
+### 4-Layer AI Architecture
+1. **Personal Context RAG** -- user's dream journal, past interpretations, personal symbol dictionary
+2. **Bethel LoRA** -- fine-tuned adapter on Phi-3.5 Mini (or possibly Qwen3-4B), trained on Bible + Hagin + Kuhlman + Jackson + Virkler + dream frameworks (~8,500 training examples)
+3. **Biblical Knowledge Base RAG** -- full NKJV (31,102 verses) in pgvector with 384-dim embeddings
+4. **Claude Haiku fallback** for complex reasoning
+
+### 5 Tabs
+Home | Bible | Journal | Bethel AI | Profile
+
+### Key Mandates
+- The LLM decides everything -- no hardcoded algorithms for dream resurfacing/interpretation
+- Per-user LoRA training is non-negotiable (for power users with 500+ dreams, later)
+- Bible (NKJV) is ground truth; theological philosophy grounded like Hagin, warm like Kuhlman
+- Free, no ads, no subscriptions
+
+### What was last worked on (session ending 2026-03-19 ~02:31 UTC)
+The previous session was massive (521 messages). Claude:
+1. Read all 7 research documents and two prior conversation logs thoroughly
+2. Wrote a comprehensive app plan at `/Users/naomiivie/bethel/BETHEL_APP_PLAN.md`
+3. Discussed server infrastructure (recommendation: separate Hetzner GEX44 for Bethel, ~$200/mo, not sharing with Sabi)
+4. Taught Naomi about LoRA training on her Mac with MLX and about LoRAX serving
+5. Initialized the Expo project and built the initial app structure -- theme system (`lib/theme.ts`), Supabase client, moon phase utility, root layout, tab navigation, and all 5 tab screens (home, bible, journal, bethel AI, profile)
+6. Set up a session transcript system (`.claude-sessions/` with auto-export hooks), memory files, and scripts for cross-machine portability (OneDrive sync, `bootstrap.py`)
+7. Stress-tested the memory/session system: 87 PASS, 0 FAIL
+
+The session ended after verifying the memory and session infrastructure works. The app scaffolding is in place but the real feature implementation (Bible reader, dream journal, AI chat, etc.) has not yet begun.
+
+### Design System
+- Colors: Gold `#D4A853`, Base `#0C0C14`, Lavender `#A78BFA`, Teal `#5EEAD4`, Off-white text `#E8E4DE`
+- Font: Literata for Bible text, system font for UI
+- Three reading themes: Midnight, Warm Night, OLED
+- Glassmorphism for floating elements, abstract mood picker (no emoji), Bethel avatar is a gold stone/pillar
+
+---
+
+**Verdict: PASS**
+
+The system works. Between `CLAUDE.md` directing me to session transcripts, the memory files providing curated context, and the full session transcript capturing every decision and conversation turn, I have a clear and specific picture of who Naomi is, what Bethel is, the architecture, the tech stack, the design system, what was built, and where we left off.
+agentId: a38eadb06a9ab6254 (use SendMessage with to: 'a38eadb06a9ab6254' to continue this agent)
+<usage>total_tokens: 38793
+tool_uses: 13
+duration_ms: 98393</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

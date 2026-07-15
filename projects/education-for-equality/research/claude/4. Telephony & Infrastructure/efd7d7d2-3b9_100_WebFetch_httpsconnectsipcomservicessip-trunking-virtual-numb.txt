@@ -1,0 +1,46 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/services/sip-trunking-virtual-numbers/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:30:07 UTC
+========================================================================
+
+URL: https://connectsip.com/services/sip-trunking-virtual-numbers/
+Extraction prompt: Extract all details about SIP trunking plans, pricing, features, virtual numbers, toll-free numbers, setup fees, and any technical specifications (codecs, concurrent channels, etc.)
+
+----------------------------------------
+
+# SIP Trunking Plans & Pricing - ConnectSIP
+
+Based on the webpage content provided, here's what's available:
+
+## SIP Trunking Plans
+
+ConnectSIP offers three main service tiers:
+
+1. **SIP Trunking (Standard)** - Full-featured solution for businesses of all sizes with flexible channel scaling
+
+2. **SIP Lite** - "A bite-sized, two-channel SIP service that's ideal for small businesses" needing to replace PSTN lines before the 2025 deadline
+
+3. **SIP Unlimited** - Designed for organizations with high call volume, "ideal for businesses with seasonal surges in demand, or large call centers and offices that need to manage hundreds of channels"
+
+## Key Features
+
+- Easy integration and high scalability
+- Lower operating costs compared to traditional phone lines
+- Crystal-clear call quality and reliability
+- Unified communications capabilities
+- "New channels can be added in a few clicks"
+- Seamless number porting (keep existing numbers)
+
+## Pricing & Technical Details
+
+**Unfortunately, specific pricing, setup fees, codec specifications, and concurrent channel limits are not disclosed** in this webpage content. Visitors are encouraged to contact ConnectSIP directly at **+1-505-053-6871** or use their online contact form for personalized quotes.
+
+## Contact Information
+- **Phone:** +1-505-053-6871
+- **Email:** [email protected]
+- **Portal:** my.connectsip.com
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

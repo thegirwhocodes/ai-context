@@ -1,0 +1,46 @@
+========================================================================
+AGENT RESEARCH: Test memory: E4E folder
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 02:32:11 UTC
+========================================================================
+
+Task given to agent: You are simulating a BRAND NEW Claude session in "/Users/naomiivie/Education for Equality". You have never seen this project before. You know nothing.
+
+Follow these steps exactly:
+1. Read "/Users/naomiivie/Education for Equality/CLAUDE.md"
+2. Follow its instructions — read .claude-sessions/INDEX.txt, then read the most recent 1-2 transcripts (just the first 200 lines of each to save time)
+3. Check if memory files exist at ~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/MEMORY.m
+
+----------------------------------------
+
+I now have a thorough understanding. Here is my answer:
+
+---
+
+**What is this project and what are we working on?**
+
+**Education for Equality** is a nonprofit organization founded by Naomi Ivie (Wesleyan University student) that aims to provide free, world-class education to every child in Nigeria/Africa. It addresses a dire crisis: 20M+ out-of-school children in Nigeria (the highest globally), where 70% of 10-year-olds cannot read a simple sentence, and 12 years of schooling produces earnings lower than zero-education equivalents in other countries.
+
+The project delivers learning through **two channels**:
+
+1. **Curriculum App** (web, for smartphone users) -- A Khan Academy-style Next.js platform live at eduforequality.org with Grade 4 complete (286+ lessons, ~47 hours across Math/English/Science/Social Studies). Cambridge-aligned, mobile-first, PWA-ready.
+
+2. **Sabi** (voice AI, for feature phone users) -- The voice delivery channel. "Sabi" means "to know" in Nigerian Pidgin. It is an AI tutor that teaches foundational literacy and numeracy via phone calls -- no internet, no smartphone, no reading ability required. It targets ages 8-14 (never-readers), runs 5-7 minute calls 3-5x/week, and uses adaptive branching with student memory per phone number. The pipeline is: child masters foundations via Sabi voice calls, then transitions to the Curriculum App.
+
+**Sabi's tech stack** (deployed on a Hetzner GPU server at sabi.eduforequality.org): Africa's Talking for telephony, Whisper large-v3 for STT, Claude Haiku for the LLM brain, Chatterbox Turbo for emotion-aware TTS (cloned from Naomi's own voice), FastAPI backend, Supabase for state, with Ollama Llama 3.1 8B as LLM fallback.
+
+**Recent milestones**: Won 2nd place at MIT Africa Business Challenge ($3,000) in Feb 2026. Sabi GPU server deployed March 10, 2026. Chatterbox Turbo TTS (with Naomi's voice) deployed March 13. UNICEF Venture Fund application submitted ($100K equity-free). Next priority is the CcHub/Mastercard EdTech Fellowship application (deadline March 30, 2026).
+
+**Where we left off**: The most recent sessions (March 7-18, 2026) involved deep project review, Sabi server deployment and hardening, Chatterbox TTS integration with emotion-aware synthesis, Nigerian English STT optimization, cost modeling, research briefs, grant applications, and Lagos pilot planning for Q4 2026.
+
+Memory files exist and are comprehensive at `~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/MEMORY.md`.
+
+PASS
+agentId: a357f25293557c68d (use SendMessage with to: 'a357f25293557c68d' to continue this agent)
+<usage>total_tokens: 23728
+tool_uses: 5
+duration_ms: 50150</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Whisper large-v3 GPU concurrent streams capacity RTX 4090 A100 inference
+Session: 960e5418-9a1d-4bd7-9a3c-ad6a4afc5227
+Time: 2026-06-29 16:41:14 UTC
+========================================================================
+
+Search query: Whisper large-v3 GPU concurrent streams capacity RTX 4090 A100 inference
+
+----------------------------------------
+
+Web search results for query: "Whisper large-v3 GPU concurrent streams capacity RTX 4090 A100 inference"
+
+Links: [{"title":"Self-Host Faster-Whisper on GPU Cloud: Production Deployment Guide for Real-Time ASR (2026) | Spheron Blog","url":"https://www.spheron.network/blog/faster-whisper-gpu-cloud-production-deployment-guide/"},{"title":"whisper large v3 gpu…","url":"https://itctshop.com/whisper-large-v3-gpu-requirements/"},{"title":"Benchmarking Results · openai/whisper · Discussion #530","url":"https://github.com/openai/whisper/discussions/530"},{"title":"Whisper for Real-Time Transcription: GPU Requirements & Setup GIGAGPU","url":"https://gigagpu.com/whisper-for-real-time-transcription-gpu/"},{"title":"Performance benchmark of different GPUs · openai/whisper · Discussion #918","url":"https://github.com/openai/whisper/discussions/918"},{"title":"GitHub - TheStageAI/TheWhisper: Optimized Whisper models for streaming and on-device use · GitHub","url":"https://github.com/TheStageAI/TheWhisper"},{"title":"OpenAI Whisper Performance on Nvidia RTX 4090 - Oliver Wehrens","url":"https://owehrens.com/whisper-performance-on-nvidia-rtx-4090/"},{"title":"GPU Memory Sizing Guide for LLM Inference","url":"https://www.runpod.io/articles/guides/gpu-memory-sizing-guide-for-llm-inference"},{"title":"TheStageAI/Elastic-whisper-large-v3-turbo · Hugging Face","url":"https://huggingface.co/TheStageAI/Elastic-whisper-large-v3-turbo"},{"title":"RTX 4090 NVLink Support, Specs, VRAM, and AI Performance","url":"https://www.runpod.io/articles/guides/nvidia-rtx-4090"}]
+
+Based on the search results, here's what I found about Whisper large-v3 GPU concurrent streams capacity for RTX 4090 and A100:
+
+## RTX 4090 Capacity
+
+The RTX 4090 has 24GB VRAM and becomes a constraint for production with 20+ concurrent streams. More specifically, the RTX 4090 can handle 10+ concurrent live streams with low latency if managed correctly using a task queue like Celery or Redis.
+
+For context on the RTX 4090's performance: with insanely-fast-whisper (utilizing Flash Attention 2), the RTX 4090 can transcribe audio at 70x-100x real-time speed.
+
+## A100 Capacity
+
+While specific concurrent stream numbers for large-v3 on A100 weren't detailed in the results, for production with 20+ concurrent streams, VRAM becomes the constraint, and the H100 SXM5 makes sense when you need 500+ simultaneous sessions. The A100's 80GB of VRAM gives it significantly more capacity than the 4090's 24GB for concurrent workloads.
+
+## Optimization Strategy
+
+INT8 quantization uses ~3GB VRAM for large-v3 vs ~6GB at FP16, cutting memory in half with no meaningful WER regression on clean audio. This is a key factor in maximizing concurrent stream capacity on either GPU.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

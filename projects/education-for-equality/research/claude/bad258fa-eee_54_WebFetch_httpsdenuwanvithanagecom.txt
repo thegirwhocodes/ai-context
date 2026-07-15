@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://denuwanvithanage.com/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:54:48 UTC
+========================================================================
+
+URL: https://denuwanvithanage.com/
+Extraction prompt: Extract Denuwan Vithanage's full bio, research interests, current projects, education history, publications, conferences, hobbies, location, photos, personal background. Anything that gives me a sense of who he is as a person and what he cares about.
+
+----------------------------------------
+
+# Denuwan Vithanage: Profile Summary
+
+## Professional Identity
+Denuwan is a PhD candidate in atomic, molecular, and optical (AMO) physics at Wesleyan University. He describes himself as a "Physicist. Engineer. Problem Solver" who excels at converting theoretical physics into practical applications.
+
+## Research & Expertise
+His technical foundation spans experimental physics—building external cavity diode lasers, performing laser-induced fluorescence spectroscopy, and designing magneto-optical traps for rubidium atoms. He's equally proficient in computational work, using molecular collision simulations and Bose-Einstein condensate modeling. He actively uses AI tools for code optimization and data interpretation.
+
+## Educational Path
+- **BSc**: Physics & Computer Science, University of Peradeniya (2011-2015)
+- **MS**: Medical Physics, Post-Graduate Institute of Science (2015-2018)
+- **MS**: Physics, Miami University (2018-2020)
+- **PhD**: In progress at Wesleyan (2020-present)
+
+## Leadership & Community Engagement
+He founded and leads the Wesleyan Optica Student Chapter and mentors veterans through the Warrior-Scholar Project. Additional roles include teaching assistant responsibilities and senior buddy coordinator for international students.
+
+## Digital & Communication Skills
+He builds WordPress websites and creates Sinhala-language educational videos for the Ceylon Life platform, demonstrating strong science communication abilities.
+
+## Personal Philosophy
+His motto captures his approach: "Stay curious. Stay humble. Keep building."
+
+*Note: The blog section appears inactive; specific publications and conference details require accessing linked portfolio pages.*
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

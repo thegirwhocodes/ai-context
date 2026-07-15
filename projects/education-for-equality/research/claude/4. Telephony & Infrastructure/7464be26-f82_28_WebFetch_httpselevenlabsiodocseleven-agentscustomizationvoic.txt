@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:21:45 UTC
+========================================================================
+
+URL: https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode
+Extraction prompt: How do you enable expressive mode? What are the exact steps, settings, and configuration options? What model does it use? Any code or API parameters needed?
+
+----------------------------------------
+
+# Enabling Expressive Mode
+
+**Model Used:** Eleven v3 Conversational TTS model
+
+**Steps to Enable:**
+
+1. Navigate to your agent configuration in the ElevenLabs dashboard
+2. Go to the **Agent Voice** tab
+3. Select **V3 Conversational** as your Text to Speech model
+4. Expressive mode activates automatically with this selection
+
+**Configuration Options:**
+
+The primary configuration happens through your system prompt. Add instructions to "steer how the agent adapts its tone," using either broad guidance or specific triggers. For example:
+
+> "When a user sounds frustrated or upset, respond in a calm, reassuring tone."
+
+You can also embed expressive tags directly in LLM outputs like `[laughs]`, `[whispers]`, `[sighs]`, `[slow]`, or `[excited]` to control delivery for approximately 4-5 words.
+
+**Additional Tuning:**
+
+Pair expressive mode with the turn-eagerness setting to adjust responsiveness in your conversation flow configuration.
+
+**API/Code:**
+
+The documentation provided does not include specific API parameters or code examples for enabling expressive mode programmatically.
+
+**Cost:** No additional charge—pricing matches other ElevenLabs TTS models at $0.08 per minute.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

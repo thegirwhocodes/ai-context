@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.yarngpt.co/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:00:18 UTC
+========================================================================
+
+URL: https://www.yarngpt.co/
+Extraction prompt: What is YarnGPT? Is it a TTS API? What are the pricing details? What Nigerian voices/accents does it support? Is there an API or SDK available? Any free tier?
+
+----------------------------------------
+
+# YarnGPT Overview
+
+Based on the webpage content provided, here's what I can tell you:
+
+**What is it?**
+YarnGPT is described as "the fastest growing Nigerian Text-to-Speech AI Model" and "#1 for Nigerian Languages" with 19,000+ users converting 1.2 billion tokens monthly.
+
+**TTS API & Pricing:**
+The page doesn't provide specific pricing details or confirm whether it operates as an API service. It mentions a "free trial" option but doesn't outline tier structures or costs.
+
+**Supported Voices/Accents:**
+The content doesn't specify which particular Nigerian languages, dialects, or voice options are available.
+
+**API/SDK Availability:**
+No information about API access or software development kits appears in this material. A GitHub repository is referenced, but details about developer tools aren't included here.
+
+**Free Tier:**
+A free trial is mentioned, though the terms and limitations remain unspecified on this page.
+
+**Next Steps:**
+To get comprehensive answers about pricing, supported languages, API documentation, and free tier specifics, you'd need to visit the full website, check the GitHub repository, or contact their support channels (Discord, GitHub, or X/@YarnGPT_ai).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

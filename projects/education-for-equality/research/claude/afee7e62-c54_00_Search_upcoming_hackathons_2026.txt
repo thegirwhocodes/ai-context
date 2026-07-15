@@ -1,0 +1,211 @@
+========================================================================
+AGENT RESEARCH: Search upcoming hackathons 2026
+Session: afee7e62-c541-4167-af05-d964ec40c4a2
+Time: 2026-04-04 20:54:27 UTC
+========================================================================
+
+Search for upcoming hackathons in spring/summer 2026 that would be relevant for a social impact / edtech startup. The project is "Education for Equality" — an AI voice tutor called Sabi that teaches Nigerian children literacy and numeracy via phone calls. It was built by Naomi Ivie, a Wesleyan University student. They won 2nd place at the MIT Africa Business Challenge hackathon in February 2026.
+
+Please search for:
+1. Upcoming college hackathons with cash prizes (Yale, Harvard, Princeton, Columbia, etc.) — spring/summer 2026
+2. Social impact / EdTech hackathons 2026
+3. Africa-focused innovation competitions 2026
+4. Any AI for social good competitions with prize money
+
+For each, include: name, date, prize amount, deadline to apply, eligibility, and URL if available.
+
+Today's date is April 4, 2026. Focus on events coming up in the next 6 months.
+
+----------------------------------------
+
+I now have comprehensive data across all four categories. Note that some competitions have passed their deadlines already (Fowler GSIC, Africa Prize 2026, VivaTech, FINCA, Hack-Nation, Technovation submission). Let me compile a clean, organized, actionable report with accurate eligibility flags for Naomi.
+
+---
+
+Here is a comprehensive list of upcoming and active hackathons and competitions relevant to Education for Equality / Sabi, organized by category. Today is April 4, 2026 — deadlines that have already passed are noted clearly so you can skip them.
+
+---
+
+## Category 1: College Hackathons with Cash Prizes
+
+### YHack — Yale University
+- **Date:** Spring 2026 (specific date not publicly confirmed yet)
+- **Prize:** ~$1,000 Best Overall, $500 Most Creative, $500 Best API track
+- **Deadline to apply:** Registration open on yhack.org (rolling)
+- **Eligibility:** College students, teams of 1–4, all skill levels welcome
+- **URL:** [yhack.org](https://www.yhack.org/) / [Devpost](https://yhack-2026.devpost.com/)
+- **Notes:** Social impact is a judging criterion. 600+ participants on Yale campus.
+
+### HackPrinceton Spring 2026
+- **Date:** April 17–19, 2026 (36 hours) — happening in TWO WEEKS
+- **Prize:** Historically $25K+ in prizes (2026 specifics not yet published)
+- **Deadline to apply:** Check [hackprinceton.com](https://www.hackprinceton.com/) — likely already open
+- **Eligibility:** College students, 600 students invited, Princeton campus
+- **URL:** [hackprinceton.com](https://www.hackprinceton.com/)
+- **Notes:** Run by Princeton Entrepreneurship Club. Apply immediately if interested — this is imminent.
+
+### HackHarvard 2026
+- **Date:** Typically held in October — likely October 2026 (2025 edition was Oct 3–5)
+- **Prize:** Sponsor-specific prizes across multiple tracks (exact 2026 figures not yet announced)
+- **Deadline to apply:** Applications typically open in September
+- **Eligibility:** Undergraduate students, all backgrounds; projects must be original to the hackathon weekend
+- **URL:** [hhuh.io](https://hhuh.io/)
+- **Notes:** Has a "Hack 4 Impact" social good track. Strong candidate for fall 2026.
+
+### TreeHacks — Stanford University
+- **Date:** February 2026 (already passed — 12th annual edition just wrapped)
+- **Prize:** $500,000 awarded in 2026 edition (largest collegiate hackathon in the US)
+- **Notes:** Already occurred. Watch for 2027 applications opening fall 2026. Naomi's 2nd-place MIT win is a strong credential for a future TreeHacks application.
+
+---
+
+## Category 2: Social Impact / EdTech Competitions
+
+### African Union — Innovating Education in Africa (IEA) 2026
+- **Deadline:** April 30, 2026 at 11:00 PM EAT — less than 4 weeks away
+- **Prize:** Up to $50,000 in grants (3 winners selected from 50 shortlisted → 10 pitches → 5 finalists → 3 grant recipients)
+- **Eligibility:** Citizens of AU member states (Nigeria qualifies); registered organization; must own the innovation; proven results; past winners cannot reapply
+- **Focus areas:** EdTech, AI & robotics, basic/secondary education, TVET/skills development — PERFECT fit for Sabi
+- **URL:** [African Union IEA 2026](https://opportunitiesforyouth.org/2026/04/02/apply-now-african-union-call-for-submissions-up-to-50000-grants-for-edtech-tvet-ai-and-skills-development/)
+- **Notes:** This is one of the most relevant opportunities available right now. Apply ASAP — deadline in 26 days.
+
+### Orange Social Ventures Prize (OSVP) 2026 — Africa & Middle East
+- **Deadline:** May 10, 2026
+- **Prize:** €25,000 (1st), €15,000 (2nd), €10,000 (3rd), €20,000 International Women's Prize
+- **Eligibility:** Entrepreneurs from the 17 countries where Orange operates in Africa/Middle East (includes Nigeria); education projects are specifically highlighted
+- **URL:** [OSVP 2026](https://menterprise.africa/opportunities/orange-social-ventures-prize-2026/) / apply at POESAM.Orange.com
+- **Notes:** Orange is a major telecom operator — highly strategic alignment with Sabi's phone-based model. Education + AI + social impact = strong match. Strong candidate.
+
+### Nigeria Startup Innovation Challenge 2026
+- **Deadline:** May 31, 2026
+- **Prize:** Over ₦100 million in prizes (~$65K USD equivalent): 1st place ₦5M cash + ₦4M AWS credits + ₦1M mentorship; 2nd place ₦3M cash; 3rd place ₦2M cash
+- **Eligibility:** Nigerians, other Africans, and non-Africans building for the African market; needs working prototype or MVP (Sabi qualifies); EduTech is an eligible sector
+- **URL:** [techbuild.africa listing](https://techbuild.africa/startup-innovation-challenge-2026-%E2%82%A6100m/) / [Opportunity Desk](https://opportunitydesk.org/2026/03/30/startup-innovation-challenge-2026/)
+- **Notes:** Naomi's Nigerian focus + working prototype makes this a strong fit.
+
+### iF Social Impact Prize 2026
+- **Round 1 Deadline:** May 20, 2026 | **Round 2 Deadline:** August 19, 2026
+- **Prize:** €50,000 per round (€100,000 total annually)
+- **Eligibility:** Companies, NGOs, social enterprises, entrepreneurs — projects must align with UN SDGs and be design-related; established projects only (no student concepts accepted)
+- **URL:** [ifdesign.com](https://ifdesign.com/en/if-social-impact-prize)
+- **Notes:** The "no student concepts" rule is a potential barrier depending on how E4E is structured. If registered as a social enterprise, it may qualify. Check carefully.
+
+### Global EdTech Startup Awards (GESAwards) 2026
+- **Deadline:** September 15, 2026
+- **Prize:** Cash rewards, investor access, media exposure, and stage time at Bett Arena London; part of a network of 9,000+ startups across 130+ countries
+- **Eligibility:** EdTech startups worldwide; ideally have a product already in market (Sabi qualifies)
+- **URL:** [globaledtechawards.org](https://www.globaledtechawards.org/)
+- **Notes:** No cash amount specified upfront, but this is the largest global EdTech-specific competition. High visibility value regardless of prize.
+
+### Learning Engineering Tools Competition 2026
+- **Deadline:** October 15, 2025 (already passed for 2026 cycle)
+- **Prize:** $50K–$300K depending on track/stage; K-12 track open worldwide
+- **URL:** [tools-competition.org](https://tools-competition.org/)
+- **Notes:** Deadline passed for this cycle. Monitor for 2027 — the K-12 track with global eligibility and up to $300K is very relevant to Sabi.
+
+### Fowler Global Social Innovation Challenge 2026
+- **Global Finals:** May 1–3, 2026, University of San Diego
+- **Application deadline:** February 6, 2026 (already closed)
+- **Prize:** Share of $100,000+ in funding
+- **Notes:** Deadline passed. Strong candidate for 2027 — requires enrolled student co-founder (Naomi qualifies as Wesleyan student).
+
+---
+
+## Category 3: Africa-Focused Innovation Competitions
+
+### Africa Prize for Engineering Innovation 2026 — Royal Academy of Engineering
+- **Stage 1 Application Deadline:** September 23, 2025 (already closed)
+- **Final Event:** October 2026, Johannesburg
+- **Prize:** £50,000 (winner), £10,000 (3 runners-up), part of £85,000 fund
+- **Eligibility:** Sub-Saharan Africa citizen, based in Sub-Saharan Africa, 18+; Naomi is based in the US so likely ineligible
+- **URL:** [africaprize.raeng.org.uk](https://africaprize.raeng.org.uk/about-the-prize/how-to-apply/)
+- **Notes:** Application deadline already passed, and residency requirement likely disqualifies Naomi. Monitor for 2027.
+
+### VivaTech AfricaTech Award 2026
+- **Application Deadline:** February 16, 2026 (already closed)
+- **Award Ceremony:** June 17–20, 2026, Paris (VivaTech)
+- **Prize:** Visibility + spotlight at VivaTech global event; requires $150K+ in funding raised
+- **Notes:** Already closed, and the $150K funding raised requirement is a barrier for early-stage E4E.
+
+### FINCA Ventures Prize Competition 2026
+- **Deadline:** April 10, 2026 (already passed — 6 days ago)
+- **Prize:** Up to $100,000 grant; fully funded trip to San Francisco for finalists
+- **Eligibility:** At least one African founder; for-profit; post-revenue; operational under 5 years; active in Sub-Saharan Africa
+- **Focus:** Sustainable Agriculture / Fintech — not EdTech, so likely not a strong fit anyway
+- **URL:** [finca.org/finca-ventures-prize](https://finca.org/finca-ventures-prize)
+
+---
+
+## Category 4: AI for Social Good Competitions
+
+### AI for Good Innovation Factory Grand Finale 2026 — ITU/UN
+- **Event Date:** July 7–10, 2026, Geneva (AI for Good Global Summit)
+- **Prize:** $20,000 cash (top startup); 4 winners total
+- **Application:** Rolling — check [aiforgood.itu.int/innovate-for-impact](https://aiforgood.itu.int/innovate-for-impact/) for current application window
+- **Eligibility:** Startups with scalable, innovative AI solutions for global challenges; UN-backed platform
+- **URL:** [aiforgood.itu.int](https://aiforgood.itu.int/event/ai-for-good-innovation-factory-grand-finale-2026/)
+- **Notes:** This is extremely strong alignment — UN platform, AI for social good, global stage, Geneva in July. Naomi should look at this closely.
+
+### USAII AI NextGen Challenge 2026
+- **Event Date:** June 20–21, 2026, Atlanta, Georgia
+- **Prize:** Up to $25,000 per team ($100,000 total pool)
+- **Eligibility:** Students; top 250 selected to form 50 teams of 5; solve real-world problems using AI
+- **URL:** [usaii.org](https://www.usaii.org/about-united-states-artificial-intelligence-institute/ai-nextgen-challenge-2026)
+- **Notes:** Student-focused, US-based event in June — good timing. Check registration status now.
+
+### Hack-Nation Global AI Hackathon 2026
+- **Event Date:** April 25–26, 2026
+- **Registration Deadline:** March 21, 2026 (already closed)
+- **Prize:** $3,500 cash + $160,000 in API credits (OpenAI, Cursor, Lovable)
+- **Notes:** Registration already closed. MIT-ecosystem affiliated.
+
+### IJCAI-ECAI 2026 — AI for Good Track (Call for Papers)
+- **Event:** International Joint Conference on AI, 2026
+- **Type:** Academic paper / project submission — not a startup competition
+- **URL:** [2026.ijcai.org](https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-ai4good/)
+- **Notes:** More academic in nature; relevant if Naomi wants to publish research on Sabi's learning outcomes.
+
+---
+
+## Priority Action List (By Urgency)
+
+| Competition | Deadline | Prize | Fit |
+|---|---|---|---|
+| African Union IEA 2026 | April 30, 2026 | Up to $50,000 | Excellent — EdTech, AI, Africa |
+| HackPrinceton Spring 2026 | ~Now | $25K+ historical | Good — general hackathon, US |
+| Orange OSVP 2026 | May 10, 2026 | €25K–€45K | Excellent — Africa telecom + EdTech |
+| Nigeria Startup Innovation Challenge | May 31, 2026 | ₦100M+ (~$65K) | Strong — Nigerian EdTech + MVP |
+| iF Social Impact Prize (Rd 1) | May 20, 2026 | €50,000 | Good if structured as social enterprise |
+| USAII AI NextGen Challenge | June 20–21 event | $25K/team | Good — student AI, US |
+| AI for Good Innovation Factory | July 7–10 event | $20,000 | Excellent — UN AI for social good |
+| GESAwards 2026 | Sept 15, 2026 | TBD + visibility | Strong long-term play |
+
+Sources:
+- [YHack Spring 2026](https://www.yhack.org/)
+- [YHack Devpost](https://yhack-2026.devpost.com/)
+- [HackPrinceton](https://www.hackprinceton.com/)
+- [HackHarvard](https://hhuh.io/)
+- [TreeHacks 2026](https://treehacks-2026.devpost.com/)
+- [African Union IEA 2026 — Opportunities for Youth](https://opportunitiesforyouth.org/2026/04/02/apply-now-african-union-call-for-submissions-up-to-50000-grants-for-edtech-tvet-ai-and-skills-development/)
+- [African Union IEA 2026 — Applyscholars](https://applyscholars.com/iea-2026-grants-2026/)
+- [Orange OSVP 2026](https://menterprise.africa/opportunities/orange-social-ventures-prize-2026/)
+- [Nigeria Startup Innovation Challenge 2026](https://techbuild.africa/startup-innovation-challenge-2026-%E2%82%A6100m/)
+- [iF Social Impact Prize 2026](https://ifdesign.com/en/if-social-impact-prize)
+- [Global EdTech Startup Awards](https://www.globaledtechawards.org/)
+- [Learning Engineering Tools Competition](https://tools-competition.org/)
+- [Fowler GSIC 2026](https://www.fowlergsic.org/)
+- [Africa Prize — Royal Academy of Engineering](https://africaprize.raeng.org.uk/about-the-prize/how-to-apply/)
+- [VivaTech AfricaTech Award 2026](https://opportunitydesk.org/2026/01/13/africatech-award-2026/)
+- [FINCA Ventures Prize 2026](https://finca.org/finca-ventures-prize)
+- [AI for Good Innovation Factory 2026](https://aiforgood.itu.int/event/ai-for-good-innovation-factory-grand-finale-2026/)
+- [USAII AI NextGen Challenge 2026](https://www.usaii.org/about-united-states-artificial-intelligence-institute/ai-nextgen-challenge-2026)
+- [Hack-Nation Global AI Hackathon 2026](https://opportunitiesforyouth.org/2026/04/02/hack-nation-global-ai-hackathon-2026-build-innovate-and-compete-for-30000-in-prizes/)
+- [Ignite64 Global AI Hackathon 2026](https://hackathon2026.i64.in/)
+agentId: a021626f14adef44b (use SendMessage with to: 'a021626f14adef44b' to continue this agent)
+<usage>total_tokens: 43469
+tool_uses: 26
+duration_ms: 188626</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

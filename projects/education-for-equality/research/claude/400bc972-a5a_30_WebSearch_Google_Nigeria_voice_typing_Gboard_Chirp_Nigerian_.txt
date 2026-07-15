@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Nigeria voice typing Gboard Chirp Nigerian English Yoruba how trained spe
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:16:54 UTC
+========================================================================
+
+Search query: Google Nigeria voice typing Gboard Chirp Nigerian English Yoruba how trained speech recognition accuracy
+
+----------------------------------------
+
+Web search results for query: "Google Nigeria voice typing Gboard Chirp Nigerian English Yoruba how trained speech recognition accuracy"
+
+Links: [{"title":"Google Announces 15 More African Languages Across Voice Search, Talk-To-type On Gboard And Dictation On Translate | africa.com","url":"https://africa.com/google-announces-15-more-african-languages-across-voice-search-talk-to-type-on-gboard-and-dictation-on-translate/"},{"title":"Google adds Hausa, Igbo, Yoruba, 12 other African languages, to Voice Search and Translate dictation","url":"https://techpoint.africa/2024/10/29/google-hausa-igbo-yoruba-search"},{"title":"Google announces more African languages across voice search, talk-to-type on Gboard and dictation on translate - Expression Africa","url":"https://expression.africa/google-announces-more-african-languages-across-voice-search-talk-to-type-on-gboard-and-dictation-on-translate/"},{"title":"Africa Gains Inclusive Language Access with Google’s Voice and Text Tools","url":"https://thebounce.net/the-grid/africa-gains-inclusive-language-access-with-googles-voice-and-text-tools/"},{"title":"Google announces 15 more African languages across Voice Search, talk-to-type on Gboard and dictation on Translate - Digital Street","url":"https://www.digitalstreetsa.com/google-announces-15-more-african-languages-across-voice-search-talk-to-type-on-gboard-and-dictation-on-translate/"},{"title":"Google Adds Chichewa And 14 New African Languages To Voice Search, Gboard, And Translate – The Zambian Observer","url":"https://zambianobserver.com/google-adds-chichewa-and-14-new-african-languages-to-voice-search-gboard-and-translate/"},{"title":"Africa’s digital decade: AI upskilling and expanding speech technology","url":"https://blog.google/company-news/inside-google/around-the-globe/google-africa/africas-digital-decade/"},{"title":"Google Voice Search — Grokipedia","url":"https://grokipedia.com/page/Google_Voice_Search"},{"title":"Use advanced voice typing features - Gboard Help","url":"https://support.google.com/gboard/answer/11197787?hl=en"}]
+
+Based on the search results, I found comprehensive information about Google's voice typing expansion for Nigerian languages on Gboard. Here are the key findings:
+
+## Nigerian Languages Support
+
+Yoruba, Hausa, Igbo, and Nigerian Pidgin are among the latest languages added to Voice Search and Gboard's talk-to-type features. These languages are spoken by an estimated 129 million people, or around 60% of Nigeria's population.
+
+## Training and Technology
+
+This language extension has been made possible by advances in AI, specifically multilingual speech recognition – which converts speech into text. The AI model learns languages in the way a child would – learning to associate certain speech sounds with the specific sequences of character in the written form.
+
+Multilingual speech recognition models are trained on data from multiple languages, and then are able to transcribe speech into text in any of those languages.
+
+## Chirp and Accuracy Enhancement
+
+Variants like Chirp further enhance accuracy, speed, and language detection for low-resource languages, building on end-to-end architectures to scale beyond previous multilingual limits.
+
+## Development and Scale
+
+The update — built by Google Speech with the Research team in Accra — will enable around 300 million more Africans to use their voice to interact with the web.
+
+The search results indicate that while Google hasn't publicly disclosed specific accuracy percentages for Nigerian English or Yoruba voice typing, the company has employed advanced multilingual speech recognition with Chirp variants to improve performance for these lower-resource languages.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

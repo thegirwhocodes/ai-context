@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/registrar/calendars/Academic%20Calendar.html
+Session: 8ed50497-de41-4084-975c-5736fee0e009
+Time: 2026-02-24 01:54:37 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/registrar/calendars/Academic%20Calendar.html
+Extraction prompt: What are the spring break 2026 dates for Wesleyan University?
+
+----------------------------------------
+
+I cannot provide the specific spring break 2026 dates based on the content provided. While the page references "Current: 2025-2026" academic calendar and mentions a "Next Year: 2026-2027" calendar, the actual detailed dates are not included in the text shown.
+
+To find spring break 2026 dates, you would need to visit the linked academic calendar pages, such as the "2025-2026" calendar at `webapps.wesleyan.edu/new_academic_calendar/current` or contact the Registrar's Office directly at registrar@wesleyan.edu or 860-685-2810.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

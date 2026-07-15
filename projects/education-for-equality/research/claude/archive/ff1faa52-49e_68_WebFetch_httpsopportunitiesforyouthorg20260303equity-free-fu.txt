@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://opportunitiesforyouth.org/2026/03/03/equity-free-funding-for-blockchain-
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 00:47:54 UTC
+========================================================================
+
+URL: https://opportunitiesforyouth.org/2026/03/03/equity-free-funding-for-blockchain-startups-unicef-venture-fund-opens-applications-for-2026-cohort/
+Extraction prompt: What are the full eligibility criteria? What countries are eligible? What stage must startups be at? What is the exact deadline? Is there a non-blockchain UNICEF Venture Fund? What is the application link?
+
+----------------------------------------
+
+# UNICEF Venture Fund - Blockchain Cohort Information
+
+Based on the webpage content provided, I can only locate **minimal details** about this opportunity:
+
+## What's Available
+The page confirms: **"The UNICEF Venture Fund has opened applications for its next Blockchain Ventures cohort, inviting early-stage startups from emerging markets to access"** [content cuts off here]
+
+## What's NOT Available
+Unfortunately, the webpage content provided does not include:
+
+- **Full eligibility criteria** - Not specified in the excerpt
+- **Specific eligible countries** - Only mentions "emerging markets" generally
+- **Startup stage requirements** - Not detailed
+- **Application deadline** - Not provided
+- **Information about non-blockchain funds** - Not covered
+- **Direct application link** - Not included
+
+## Recommendation
+To obtain complete details, you would need to:
+1. Visit the full UNICEF Venture Fund website directly
+2. Contact UNICEF via the email listed: contact@opportunitiesforyouth.org
+3. Call the phone number provided: +44 7477 494455
+
+The article appears to be a summary/announcement rather than a comprehensive guide with all application specifics.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

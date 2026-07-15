@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/jumamiller/AT
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 20:31:32 UTC
+========================================================================
+
+URL: https://github.com/jumamiller/AT
+Extraction prompt: Find any working Record XML example. What attribute name does AT use on the Record element for the callback URL? Show the exact XML or PHP/JS code that builds it. What is the parameter name on the POST body that AT sends back containing the recording URL?
+
+----------------------------------------
+
+# Africa's Talking Record XML - Not Found
+
+Based on the provided GitHub repository content, there is **no working Record XML example** present. The documentation covers USSD registration flows and voice call handling with `GetDigits` and `Dial` elements, but does not include any `Record` element implementation.
+
+The content demonstrates voice callbacks using:
+- `GetDigits` with `callbackUrl` attribute
+- `Dial` with `phoneNumbers` attribute
+
+However, there is no example showing:
+- The Record element's callback attribute name
+- How the recording URL is returned in the POST response
+
+To answer your specific questions about the Record element's callback attribute and parameter name, you would need to consult the [Africa's Talking API documentation](https://africastalking.com/voice/api) directly, as it is not covered in this repository's README.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

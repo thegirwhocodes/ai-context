@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Sam Bowman Anthropic researcher AI safety research focus
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:47 UTC
+========================================================================
+
+Search query: Sam Bowman Anthropic researcher AI safety research focus
+
+----------------------------------------
+
+Web search results for query: "Sam Bowman Anthropic researcher AI safety research focus"
+
+Links: [{"title":"Sam Bowman","url":"https://sleepinyourhat.github.io/"},{"title":"The Checklist: What Succeeding at AI Safety Will Involve - Sam Bowman","url":"https://sleepinyourhat.github.io/checklist/"},{"title":"Sam Bowman - Anthropic | LinkedIn","url":"https://www.linkedin.com/in/sr-bowman/"},{"title":"Why Anthropic believes its latest model is too dangerous to release","url":"https://www.understandingai.org/p/why-anthropic-believes-its-latest"},{"title":"Sam Bowman - Member Of Technical Staff at Anthropic | The Org","url":"https://theorg.com/org/anthropic/org-chart/sam-bowman"},{"title":"Samuel R. Bowman","url":"https://scholar.google.com/citations?user=kV9XRxYAAAAJ&hl=en"},{"title":"The Checklist: What Succeeding at AI Safety Will Involve","url":"https://www.lesswrong.com/posts/mGCcZnr4WjGjqzX5s/the-checklist-what-succeeding-at-ai-safety-will-involve"},{"title":"Sam Bowman — AI Alignment Forum","url":"https://www.alignmentforum.org/users/sbowman"},{"title":"Sam Bowman's Post - Senior Software Security Engineer","url":"https://www.linkedin.com/posts/sr-bowman_anthropic-senior-software-security-engineer-activity-7044383910406828032-Wia8"},{"title":"As artificial intelligence develops, how do we stay in charge? | by NYU Center for Data Science | Medium","url":"https://nyudatascience.medium.com/as-artificial-intelligence-develops-how-do-we-stay-in-charge-b53794d710"}]
+
+Based on the search results, here's what I found about Sam Bowman:
+
+## Role at Anthropic
+
+Sam Bowman works on technical AI safety at Anthropic. More specifically, he leads a technical AI safety research group at Anthropic with a broad and long-term mandate.
+
+## Research Focus
+
+The central question of Sam Bowman's career has been what neural networks can do with language, and he studies neural network models for natural language understanding. His AI safety research at Anthropic has several key focuses:
+
+1. **Mechanistic Interpretability**: One of Anthropic's main distinguishing safety research bets is a deep effort into mechanistic interpretability to produce evidence about safety, with major successes potentially forming high-confidence pieces of a safety case.
+
+2. **Model Evaluations and Oversight**: His responsibilities at Anthropic include managing AI safety and evaluations research teams.
+
+3. **Alignment and Control**: His work addresses how to ensure AI developers can steer the behavior of deployed AI systems and how to manage risks as systems become more powerful.
+
+## Academic Background
+
+Bowman is on long-term leave from New York University, where he is officially an Associate Professor of Data Science and Computer Science.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

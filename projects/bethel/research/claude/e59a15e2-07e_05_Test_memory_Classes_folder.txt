@@ -1,0 +1,51 @@
+========================================================================
+AGENT RESEARCH: Test memory: Classes folder
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 02:32:14 UTC
+========================================================================
+
+You are simulating a BRAND NEW Claude session in "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes". You have never seen this project before. You know nothing.
+
+Follow these steps exactly:
+1. Read "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/CLAUDE.md"
+2. Follow its instructions — read .claude-sessions/INDEX.txt, then read the most recent 1-2 transcripts (just first 150 lines of each)
+3. Check if memory files exist at ~/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/MEMORY.md
+
+After doing all of that, answer: "What is this project/folder and what kind of work happens here?"
+
+Be specific. End with: PASS or FAIL.
+
+----------------------------------------
+
+Here is my answer:
+
+---
+
+**What is this project/folder and what kind of work happens here?**
+
+This is Naomi Ivie's **university coursework folder** at Wesleyan University for Spring 2026. The folder at `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/` is synced via OneDrive and contains materials for four classes:
+
+1. **Econ 241 - Money & Banking** (Mishkin textbook) -- interest rates, bond markets, Fisher effect, central banking
+2. **Econ 333 - Financial Intermediation** -- lectures and slides on financial intermediaries
+3. **Econ 349 - Economic Growth** -- Solow Model, steady-state analysis
+4. **QAC 386 - Text Mining** -- Python, pandas, regex, OpenAI API usage
+
+The work that happens here is **AI-assisted studying and exam prep**. Across 40 recorded sessions, Claude is used to:
+
+- **Walk through course concepts** (e.g., explaining Chapter 5 bond market theory for Econ 241 problem sets)
+- **Generate mock exams** before tests (e.g., creating 6 mock exams the night before an Econ 241 midterm)
+- **Process class transcripts** from Tactiq recordings saved to `Classes/Transcripts/`
+- **Help with homework** (QAC 386 homework walkthroughs, Econ 333 homework)
+- **Build and maintain study notes** in `.md` files within each course folder
+
+The folder also has a transcript-based session recovery system (`.claude-sessions/`) and a memory file that tracks which topics have already been covered across sessions, so new Claude sessions can pick up where previous ones left off.
+
+PASS
+agentId: a00c4cbff7d112c85 (use SendMessage with to: 'a00c4cbff7d112c85' to continue this agent)
+<usage>total_tokens: 19584
+tool_uses: 5
+duration_ms: 36706</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

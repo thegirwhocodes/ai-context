@@ -1,0 +1,254 @@
+========================================================================
+AGENT RESEARCH: Research DaVinci color grading API
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-18 03:57:10 UTC
+========================================================================
+
+Search the web for the correct way to apply a warm golden color grade to video in DaVinci Resolve via the Python scripting API. I need specific information on:
+
+1. What are the correct CDL (ASC CDL) values for a warm golden look that works well on dark skin tones? Not too red, not too orange — warm golden like golden hour.
+
+2. How to properly use SetCDL in DaVinci Resolve Python API — what are the exact parameter ranges and what does each one do (Slope, Offset, Power, Saturation)?
+
+3. Are there better alternatives to CDL for color grading via the API? Can I set Color Wheels (Lift/Gamma/Gain), Color Temperature, Tint, or other primary correction values programmatically?
+
+4. How to set specific color correction values like Temperature, Contrast, Highlights, Shadows via the Resolve scripting API?
+
+5. What DaVinci Resolve API methods exist for color grading beyond SetCDL? Check the Resolve 20.x scripting documentation.
+
+6. How to apply a LUT file (.cube) to a specific node via the API — I have custom .cube LUT files already exported.
+
+Return specific code examples and exact parameter values.
+
+----------------------------------------
+
+Now I have all the information needed. Here is the comprehensive answer.
+
+---
+
+Here is everything I found across the DaVinci Resolve scripting API documentation and color grading references.
+
+---
+
+## 1. ASC CDL Parameters: What Each One Does
+
+The CDL math is applied in **SOP order** (Slope, then Offset, then Power):
+
+```
+output = (input * Slope + Offset) ^ Power
+```
+
+| Parameter | Default | Typical Range | What It Controls |
+|-----------|---------|---------------|------------------|
+| **Slope** | `1.0` | `0.0 - 2.0` | Multiplier (like Gain). Scales the image. Primarily affects highlights/brighter values. Pivot is at black (0). |
+| **Offset** | `0.0` | `-1.0 - 1.0` | Addition (like Lift). Shifts the entire tonal range up or down. Primarily affects shadows/blacks. |
+| **Power** | `1.0` | `0.0 - 4.0` | Exponent (like Gamma). Non-linear. Primarily affects midtones. Values < 1.0 brighten mids, values > 1.0 darken mids. |
+| **Saturation** | `1.0` | `0.0 - 2.0` | Applied after SOP. Uses Rec.709 luminance weighting. 0.0 = grayscale, 1.0 = no change, 2.0 = double saturation. |
+
+Each of Slope, Offset, and Power takes **three values** (R G B), allowing per-channel control.
+
+---
+
+## 2. CDL Values for a Warm Golden Look (Flattering on Dark Skin)
+
+There is no single published "golden hour CDL preset." However, based on the math and color grading principles, here is a starting point that pushes warm without going orange. The key is: Red highest, Green slightly below Red, Blue pulled down -- with the R-G gap being **smaller** than the G-B gap to avoid orange and stay golden:
+
+```python
+# Warm Golden Hour CDL - Starting Point
+# Tune to taste based on your footage exposure and color space
+
+golden_cdl = {
+    "NodeIndex": "1",
+    # Slope (Gain/Highlights) - subtle warmth, pull blue down
+    "Slope":      "1.05 1.00 0.88",
+    # Offset (Lift/Shadows) - add warmth to shadows gently
+    "Offset":     "0.02 0.01 -0.02",
+    # Power (Gamma/Midtones) - slightly warm mids, keep skin luminous
+    "Power":      "0.96 0.98 1.06",
+    # Saturation - slight boost
+    "Saturation": "1.10"
+}
+```
+
+**Why these values work for dark skin tones:**
+- The Slope keeps Red and Green close together (1.05 vs 1.00) which prevents orange. The blue pulldown (0.88) creates the warmth.
+- The Offset adds a tiny warm shift to the shadows without crushing them or adding too much red.
+- The Power value for blue (1.06) darkens blue midtones slightly, adding golden warmth to the midrange where skin tones live. Red power < 1.0 (0.96) gently brightens red midtones, keeping dark skin luminous rather than muddy.
+- Saturation at 1.10 is a gentle boost -- dark skin tones look best with moderate saturation, not heavy.
+
+**More aggressive golden variant:**
+```python
+golden_strong = {
+    "NodeIndex": "1",
+    "Slope":      "1.10 1.02 0.80",
+    "Offset":     "0.03 0.015 -0.03",
+    "Power":      "0.94 0.97 1.10",
+    "Saturation": "1.15"
+}
+```
+
+---
+
+## 3. SetCDL -- Complete Usage
+
+```python
+import DaVinciResolveScript as dvr
+
+resolve = dvr.scriptapp("Resolve")
+pm = resolve.GetProjectManager()
+project = pm.GetCurrentProject()
+timeline = project.GetCurrentTimeline()
+
+# Get the current clip (must be on Color page)
+clip = timeline.GetCurrentVideoItem()
+
+# Apply CDL to node 1
+success = clip.SetCDL({
+    "NodeIndex":   "1",
+    "Slope":       "1.05 1.00 0.88",
+    "Offset":      "0.02 0.01 -0.02",
+    "Power":       "0.96 0.98 1.06",
+    "Saturation":  "1.10"
+})
+
+print(f"SetCDL result: {success}")
+```
+
+**Important notes:**
+- All values are passed as **strings**, not floats.
+- NodeIndex is **1-based** (since Resolve v16.2.0+).
+- The clip must exist on the timeline, and Resolve must be open.
+
+---
+
+## 4. SetLUT -- Applying a .cube LUT File via API
+
+```python
+# Get number of nodes on the clip
+num_nodes = clip.GetNumNodes()
+print(f"Clip has {num_nodes} nodes")
+
+# Option A: Absolute path to your .cube file
+success = clip.SetLUT(1, "/Users/naomiivie/Downloads/App/Social Media/LUTs/WarmGolden.cube")
+
+# Option B: Relative path (if the .cube is in Resolve's LUT search paths)
+success = clip.SetLUT(1, "WarmGolden.cube")
+
+# If Resolve doesn't find the LUT, refresh the LUT list first:
+project.RefreshLUTList()
+success = clip.SetLUT(1, "WarmGolden.cube")
+
+print(f"SetLUT result: {success}")
+```
+
+**Key detail:** The `lutPath` can be absolute or relative. Relative paths are resolved against Resolve's custom LUT paths or master LUT path. If you just added new .cube files, call `project.RefreshLUTList()` first.
+
+---
+
+## 5. All Color Grading API Methods on TimelineItem
+
+Here is the **complete list** of color-grading-related methods available on `TimelineItem` objects as of Resolve 20.x:
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `SetCDL(cdl_map)` | Bool | Apply ASC CDL values to a node |
+| `SetLUT(nodeIndex, lutPath)` | Bool | Apply a LUT (.cube, etc.) to a node |
+| `GetLUT(nodeIndex)` | String | Get the relative LUT path on a node |
+| `GetNumNodes()` | int | Get the number of nodes in the clip's node graph |
+| `GetNodeLabel(nodeIndex)` | String | Get the label of a node |
+| `CopyGrades([tgtTimelineItems])` | Bool | Copy the current clip's grade to other clips |
+| `ApplyArriCdlLut()` | Bool | Apply ARRI CDL and LUT embedded in the clip |
+| `ApplyGradeFromDRX(path, gradeMode, item1, item2, ...)` | Bool | Apply a grade from a .drx still file |
+
+`ApplyGradeFromDRX` grade modes:
+- `0` = No keyframes
+- `1` = Source Timecode aligned
+- `2` = Start Frames aligned
+
+---
+
+## 6. What You CANNOT Do via the API (Important Limitations)
+
+The DaVinci Resolve scripting API **does not expose** direct control of:
+
+- Color Wheels (Lift / Gamma / Gain)
+- Color Temperature / Tint sliders
+- Contrast, Pivot, Highlights, Shadows, Midtone Detail
+- HSL Qualifier settings
+- Curves
+- Color Warper
+- Individual primary correction parameters
+- Adding or deleting nodes programmatically
+- Enabling/disabling nodes
+
+**These controls only exist in the GUI.** The API's color grading surface is limited to CDL, LUT, and DRX grade application.
+
+---
+
+## 7. Workarounds for Full Color Control
+
+Since the API is limited, here are practical workarounds:
+
+### Workaround A: Use a .cube LUT (Best option)
+Pre-bake your warm golden look into a .cube LUT file (you said you have these), then apply via API:
+
+```python
+# Apply your custom golden hour LUT to node 1
+clip.SetLUT(1, "/path/to/your/GoldenHour_DarkSkin.cube")
+```
+
+### Workaround B: Use DRX grade files
+Set up your grade manually in Resolve (with all the Temperature, Contrast, Wheels adjustments you want), save it as a still (.drx), then apply via API:
+
+```python
+# Apply a saved grade from a .drx file
+timeline.ApplyGradeFromDRX(
+    "/path/to/WarmGolden.drx",
+    0,  # gradeMode: no keyframes
+    clip
+)
+```
+
+### Workaround C: CDL on one node + LUT on another
+Use a multi-node approach -- CDL for basic correction on node 1, LUT for the creative look on node 2:
+
+```python
+# Node 1: CDL for exposure/balance correction
+clip.SetCDL({
+    "NodeIndex":   "1",
+    "Slope":       "1.05 1.00 0.88",
+    "Offset":      "0.02 0.01 -0.02",
+    "Power":       "0.96 0.98 1.06",
+    "Saturation":  "1.10"
+})
+
+# Node 2: LUT for creative look
+clip.SetLUT(2, "/path/to/GoldenCreative.cube")
+```
+
+This requires the clip to already have at least 2 nodes in its node graph.
+
+---
+
+## Summary
+
+The Resolve Python API gives you three tools for color grading: **SetCDL**, **SetLUT**, and **ApplyGradeFromDRX**. For a warm golden look, your best bet is either applying your existing .cube LUT files via `SetLUT()`, or using the CDL values above as a starting point and tweaking per-clip. There is no way to set Temperature, Contrast, Color Wheels, or other primary correction sliders programmatically -- those require manual GUI work or pre-saved DRX grades.
+
+Sources:
+- [Resolve API Readme - ResolveDevDoc](https://resolvedevdoc.readthedocs.io/en/latest/readme_resolveapi.html)
+- [DaVinci Resolve Scripting API Doc v20.3 - GitHub Gist](https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8)
+- [Scripting API - DaVinci Resolve Wiki](https://wiki.dvresolve.com/developer-docs/scripting-api)
+- [Unofficial DaVinci Resolve Scripting Documentation](https://deric.github.io/DaVinciResolve-API-Docs/)
+- [DaVinci Resolve Scripting API Documentation - X-Raym](https://extremraym.com/cloud/resolve-scripting-doc/)
+- [ASC CDL In-Depth - Pomfort](https://pomfort.com/article/an-in-depth-look-at-asc-cdl-based-color-controls/)
+- [ASC CDL - Wikipedia](https://en.wikipedia.org/wiki/ASC_CDL)
+- [Color Decision List Explained - Lowepost](https://lowepost.com/courses/blog/color-decision-list-explained-r30/)
+- [DaVinci Resolve Automation Scripts - GitHub](https://github.com/nobphotographr/davinci-resolve-automation)
+agentId: a955b3dc8c36ddd73 (use SendMessage with to: 'a955b3dc8c36ddd73' to continue this agent)
+<usage>total_tokens: 24638
+tool_uses: 15
+duration_ms: 440147</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

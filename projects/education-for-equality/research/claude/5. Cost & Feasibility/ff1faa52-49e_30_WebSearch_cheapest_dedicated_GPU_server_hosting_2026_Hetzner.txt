@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: cheapest dedicated GPU server hosting 2026 Hetzner RunPod Vast.ai pricing compar
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:58:15 UTC
+========================================================================
+
+Search query: cheapest dedicated GPU server hosting 2026 Hetzner RunPod Vast.ai pricing comparison
+
+----------------------------------------
+
+Web search results for query: "cheapest dedicated GPU server hosting 2026 Hetzner RunPod Vast.ai pricing comparison"
+
+Links: [{"title":"Best GPU Hosting Providers for AI and Machine Learning (2026 Guide)","url":"https://www.atlantic.net/gpu-server-hosting/top-gpu-hosting-providers-for-ai-and-machine-learning/"},{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"7 cheapest cloud GPU providers in 2026 | Blog — Northflank","url":"https://northflank.com/blog/cheapest-cloud-gpu-providers"},{"title":"5 Dedicated GPU Server Providers [2026] | Cherry Servers","url":"https://www.cherryservers.com/blog/top-dedicated-server-providers-with-gpu"},{"title":"Pricing | Runpod","url":"https://www.runpod.io/pricing"},{"title":"Vast.ai vs RunPod pricing in 2026: which GPU cloud is cheaper? | by Alexa V. | Feb, 2026 | Medium","url":"https://medium.com/@velinxs/vast-ai-vs-runpod-pricing-in-2026-which-gpu-cloud-is-cheaper-bd4104aa591b"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"GEX44","url":"https://www.hetzner.com/dedicated-rootserver/gex44/"},{"title":"10 Best GPU Hosting Providers in 2025","url":"https://www.databasemart.com/blog/best-gpu-hosting-providers"},{"title":"Best GPU server hosting [Top 4 for 2026]","url":"https://www.liquidweb.com/gpu/best-gpu-server-hosting/"}]
+
+## GPU Server Hosting Pricing Comparison 2026
+
+Based on current data, here's a comparison of the three providers you asked about:
+
+### **Hetzner**
+Hetzner's GEX44 dedicated GPU server (with RTX 4000 SFF Ada) is priced at €184.00 per month plus €79.00 one-time setup fee. Hourly rates often run under €1.00 for capable RTX cards, making it one of the most budget-friendly options for European deployments.
+
+### **RunPod**
+RunPod offers RTX 4090 from ~$0.34/hr and H100 PCIe from ~$1.99/hr on Community Cloud. RunPod features extremely aggressive spot pricing on the Community Cloud, though RunPod's Secure Cloud exists for people who want less variable reliability.
+
+### **Vast.ai**
+Vast.ai offers RTX 4090s from $0.35/hr and A100s from $0.75/hr. In 2026, Vast.ai usually wins on raw hourly GPU price (sometimes by a lot), while RunPod often wins on "I need this to just work" convenience.
+
+### **Key Takeaway**
+For stable training loops (resume works, checkpoints good, data pipeline solid), Vast.ai almost always comes out cheaper. For fragile training loops (OOMs, random crashes, messy deps, long warmups), RunPod's smoother experience can be cheaper in practice because you fail less and iterate faster.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Plivo Nigeria voice calls pricing per minute Africa
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:05:54 UTC
+========================================================================
+
+Search query: Plivo Nigeria voice calls pricing per minute Africa
+
+----------------------------------------
+
+Web search results for query: "Plivo Nigeria voice calls pricing per minute Africa"
+
+Links: [{"title":"Voice API Pricing in Nigeria | Plivo","url":"https://www.plivo.com/voice/pricing/ng/"},{"title":"Transparent Pay-As-You-Go Pricing | AI Agent Platform for Customer Engagement | Plivo","url":"https://www.plivo.com/pricing/"},{"title":"International and Toll-Free Rates | Plivo CX","url":"https://www.plivo.com/cx/rates"},{"title":"Voice API Pricing in South Africa | Plivo","url":"https://www.plivo.com/voice/pricing/za/"},{"title":"Voice Pricing in United States | Plivo","url":"https://www.plivo.com/voice/pricing/us/"},{"title":"Voice Pricing in Ghana | Plivo","url":"https://www.plivo.com/voice/pricing/gh/"},{"title":"Plivo Pricing & Plans: Full Guide for 2026","url":"https://www.cloudtalk.io/blog/plivo-pricing/"},{"title":"Voice Pricing in Kenya | Plivo","url":"https://www.plivo.com/voice/pricing/ke/"},{"title":"Global Voice API Coverage | PlivoIndia | Plivo","url":"https://www.plivo.com/voice/coverage/"},{"title":"Plivo Review: Features, Pricing & Alternative Options","url":"https://www.ringcaptcha.com/best-voice-sms-providers-plivo"}]
+
+Based on the search results, I found information about Plivo's voice pricing, though the specific Nigeria pricing details from the main pricing page weren't fully displayed in the search results.
+
+Here's what I found:
+
+**General Plivo Voice Pricing:**
+Voice calls to make or receive start at $0.01000 per minute as a baseline across their platform.
+
+**Key Pricing Details:**
+- All calls are billed per 60-second billing interval
+- Volume pricing starts at 200,000 units per month
+- Recording storage is charged at $0.0004 per minute per month after the first 90 days of free storage
+
+The search revealed that Plivo has dedicated pricing pages for various African countries including Nigeria, but the specific per-minute rates for Nigeria weren't fully displayed in the search results. To get the exact pricing for Nigeria voice calls, I'd recommend visiting Plivo's Nigeria pricing page directly at plivo.com/voice/pricing/ng/ or downloading their detailed pricing document, as they mention offering detailed pricing downloads on their pricing pages.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,385 @@
+========================================================================
+AGENT RESEARCH: Synthetic control research for Nigeria OOSC paper
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-09 01:35:18 UTC
+========================================================================
+
+RESEARCH TASK ONLY — DO NOT WRITE OR EDIT ANY FILES. Return a written report.
+
+## Context
+
+I'm helping a Wesleyan undergraduate (Naomi Ivie) finalize an econometric term paper for ECON 349 (Economic Growth, Prof. David Kuenzel) titled **"The Economic Cost of Out-of-School Children in Nigeria"** — due May 14, 2026, currently May 8. The paper targets the Wesleyan Lebergott-Lovell Prize for the best undergraduate econometric paper of the year.
+
+The paper's current empirical strategy is a **two-way fixed-effects panel** of 45–47 Sub-Saharan African countries × 8 three-year periods (2000–2024), based on the augmented Solow framework of Mankiw-Romer-Weil (1992):
+
+```
+Δlog(GDP_pc)_it = α_i + γ_t + β₁·OOSC_it + β₂·(OOSC_it × Nigeria_i)
+                + β₃·Investment_it + β₄·PopGrowth_it + ε_it
+```
+
+Headline result: Nigeria-specific coefficient β₁ + β₂ = **−0.124 (p<0.001)**, identical in SSA-wide and ECOWAS subsamples, robust across primary-vs-Total OOSC, UNESCO-vs-100-GER measurement, and 3-vs-5-year averaging. Out-of-school data: UNESCO GEM Report VIEW Bayesian estimates (UIS-GEM Report 2022). Other variables: World Bank WDI + Penn World Table 11.0.
+
+The student is interested in adding **synthetic control method** (or a related "synthetic" technique) to her paper as an additional empirical strategy. She used the term "synthetic effects" — likely meaning the Abadie-Diamond-Hainmueller synthetic control method, or possibly the synthetic difference-in-differences approach of Arkhangelsky et al. (2021).
+
+## What I need from you
+
+A focused research report (2,000–3,500 words) covering:
+
+### 1. The methodology landscape — which "synthetic" technique fits her paper?
+
+Survey and compare the relevant variants:
+- **Synthetic Control Method (SCM)** — Abadie & Gardeazabal (2003); Abadie, Diamond & Hainmueller (2010, 2015); Abadie (2021 JEL review)
+- **Synthetic Difference-in-Differences (SDID)** — Arkhangelsky, Athey, Hirshberg, Imbens & Wager (2021 AER)
+- **Generalized Synthetic Control (GSC)** — Xu (2017, *Political Analysis*); fect package
+- **Augmented SCM** — Ben-Michael, Feller & Rothstein (2021 JASA)
+- Less directly relevant but worth flagging: matrix completion, factor models for treatment effects (Athey et al. 2021)
+
+For each, explain in plain English: what problem does it solve, what data requirements, what's the identifying assumption, what's the typical output (gap plot, weights, etc.).
+
+### 2. Application design — how would Naomi structure this for Nigeria?
+
+The hard question: synthetic control requires a clearly-defined **treatment** with a clear **pre-period** and **post-period**. Nigeria has always been high-OOSC — there's no clean "treatment" event. Three feasible framings, evaluate each:
+
+**Framing A — 2014 oil-price collapse as treatment event.** Build a synthetic Nigeria from non-oil-dependent SSA donors that matches Nigeria's pre-2014 GDP path; compare actual vs synthetic Nigeria post-2014 to isolate how oil-dependence-cum-low-human-capital amplified the shock. The "OOSC story" is that Nigeria's foundational human-capital deficit prevented the diversification that would have insulated it from the oil shock.
+
+**Framing B — Compulsory primary education adoption (the Universal Basic Education Act 1999) as treatment.** Build a synthetic Nigeria from SSA donors that did *not* adopt similar legislation. But Nigeria's UBE Act famously underdelivered, so this might actually identify a *null* or *negative* effect. Discuss whether that helps or hurts the paper.
+
+**Framing C — EKOEXCEL roll-out in Lagos State as a sub-national treatment** (synthetic control across Nigerian states with Lagos as treated and other states as donors). Naomi has unique data access through her mother's role at LASUBEB but state-level GDP data is sparse. Discuss feasibility.
+
+For each framing, give:
+- Defensibility of treatment definition
+- Donor pool composition
+- Pre-treatment match window length
+- Predictor variables to weight on
+- Statistical inference approach (placebo permutation tests, etc.)
+- What the gap plot would actually show
+
+Pick a recommended framing with reasoning.
+
+### 3. Implementation in Stata or R
+
+The student uses Stata on a Wesleyan VM and Python locally. Identify:
+- Stata: `synth` package (Abadie et al.), `synth_runner` (Galiani & Quistorff 2017 *Stata Journal*), `sdid` package
+- R: `Synth`, `synthdid`, `gsynth` (Xu 2017), `augsynth` (Ben-Michael et al.), `tidysynth`
+- Provide a minimal code skeleton for whichever framing is recommended
+
+### 4. Section draft for the paper
+
+Sketch a 1–2 paragraph addition to the paper proposing the synthetic-control extension (probably as a Section 5.6 "Robustness — Synthetic Control" or as a forward-looking thesis chapter in §7 Conclusion). It should be honest about what synthetic control adds versus the panel result and what its limitations are.
+
+### 5. Critical assessment — should she actually do this?
+
+Be honest:
+- Time cost: she has 6 days until submission. Is this realistically doable?
+- Marginal value: does this strengthen the paper enough to justify the effort?
+- Risk: if the synthetic control gives a *different* answer than the panel (e.g., a smaller or insignificant Nigeria-specific effect), how should she handle that?
+- Alternative: would she be better served polishing the existing panel results, completing §6.3, §6.4, §7, and the presentation?
+
+If your honest assessment is "skip this for the term paper, save it for the senior thesis," say so explicitly with reasoning. Naomi is also planning to extend this paper into a Wesleyan senior thesis next year — synthetic control would be a natural thesis chapter.
+
+### 6. References
+
+Full citation list of all papers and software you cite, formatted academically. Aim for 12–20 sources.
+
+## Style
+
+- Write for an undergraduate who has taken intermediate econometrics but not graduate-level treatment-effect courses. Explain technical terms.
+- Don't pad. If a section is short because the answer is short, leave it short.
+- Be candid about trade-offs. Naomi can handle being told a method isn't worth the effort if that's true.
+- Cite specific papers with page numbers or section references where useful.
+- Do NOT touch any files — I will integrate your findings into the paper myself.
+
+----------------------------------------
+
+# Synthetic Control Methods for "The Economic Cost of Out-of-School Children in Nigeria"
+
+## Research Report for Naomi Ivie, ECON 349 Term Paper
+
+---
+
+## 1. The Methodology Landscape
+
+The "synthetic control" family is a set of related techniques for estimating the causal effect of a treatment (a policy, shock, or event) on a single unit or small group of units, by constructing a weighted combination of untreated "donor" units that mimics the treated unit's pre-treatment trajectory. Below are the relevant variants.
+
+### 1.1 Classical Synthetic Control Method (SCM)
+
+**Origin:** Abadie & Gardeazabal (2003, *AER*) introduced SCM to study the economic cost of Basque terrorism. Abadie, Diamond & Hainmueller (2010, *JASA*) formalized it for California's Proposition 99 tobacco-control law, and ADH (2015, *AJPS*) extended it to West German reunification. Abadie (2021, *JEL*) is the canonical methodological review.
+
+**Plain-English idea:** You have one treated unit (Nigeria) and many untreated units (the "donor pool"). You compute a weighted average of the donor units — with weights summing to 1 and constrained to be non-negative — that best approximates the treated unit's pre-treatment outcome path and a chosen set of pre-treatment predictors. The post-treatment trajectory of this weighted "synthetic Nigeria" is your counterfactual: what Nigeria would have looked like absent the treatment. The treatment effect is the gap between actual and synthetic.
+
+**Data requirements:** A balanced panel with a clear pre/post treatment date, a single (or small set of) treated unit(s), and a sizable donor pool of untreated units. Abadie (2021, p. 396) suggests the pre-period should be "long enough" for a credible match — typically 8+ pre-treatment periods.
+
+**Identifying assumption:** "Convex hull" / "no anticipation / no interference" — the treated unit's counterfactual lies in the convex hull of donor units; donors are not themselves affected by the treatment (SUTVA); and the pre-treatment match captures the relevant unobserved heterogeneity.
+
+**Output:** (i) A weights table (which donors and how much), (ii) a "gap plot" showing actual minus synthetic over time, (iii) placebo tests (apply SCM to each donor as if it were treated and rank the treated unit's gap).
+
+### 1.2 Synthetic Difference-in-Differences (SDID)
+
+**Origin:** Arkhangelsky, Athey, Hirshberg, Imbens & Wager (2021, *AER*).
+
+**Plain-English idea:** SDID combines DID and SCM. Like DID, it uses time fixed effects (no longer requiring exact pre-period match in levels). Like SCM, it puts more weight on donor units that resemble the treated unit. It also weights pre-treatment *time periods* differently (recent pre-periods get more weight). It's more robust than vanilla SCM when no good level-match exists, and more credible than DID when parallel trends is suspect.
+
+**Data requirements:** Same panel structure as SCM, but tolerates shorter pre-periods and works with multiple treated units more naturally.
+
+**Identifying assumption:** A weakened parallel-trends-after-reweighting; formal asymptotics in Arkhangelsky et al. (2021, §4).
+
+**Output:** Point estimate of average treatment effect on the treated (ATT), standard errors via jackknife/placebo/bootstrap, optional event-study-style trajectories.
+
+### 1.3 Generalized Synthetic Control (GSC)
+
+**Origin:** Xu (2017, *Political Analysis*); the `gsynth` / `fect` R packages.
+
+**Plain-English idea:** Instead of solving SCM's quadratic optimization problem, GSC fits an interactive fixed-effects (factor) model on the control units and uses it to impute missing post-treatment outcomes for the treated. This handles multiple treated units and staggered timing gracefully.
+
+**Data requirements:** Panel data with at least moderate T; allows multiple treated units and varying treatment timings.
+
+**Identifying assumption:** An interactive fixed-effects DGP with a finite number of latent factors (Bai 2009).
+
+**Output:** ATT estimates, period-by-period effects, parametric and bootstrap CIs.
+
+### 1.4 Augmented SCM (ASCM)
+
+**Origin:** Ben-Michael, Feller & Rothstein (2021, *JASA*).
+
+**Plain-English idea:** Vanilla SCM can fail when the treated unit lies *outside* the convex hull of donors (Nigeria might — it's an outlier on size, oil dependence, and OOSC simultaneously). ASCM augments SCM with a bias-correction term from a ridge regression, like the doubly-robust analogues in the matching literature. It's a safety net for the "Nigeria is not a typical SSA country" problem.
+
+**Output:** Same as SCM plus a bias correction; weights can be (slightly) negative.
+
+### 1.5 Worth Flagging Briefly
+
+- **Matrix completion methods** (Athey, Bayati, Doudchenko, Imbens & Khosravi 2021, *JASA*): treat counterfactual estimation as a missing-data problem.
+- **Factor-model approaches** (Gobillon & Magnac 2016, *REStat*): closely related to GSC.
+
+These are graduate-level and not necessary for an undergraduate term paper.
+
+---
+
+## 2. Application Design — Three Framings for Nigeria
+
+The fundamental challenge: SCM requires a *treatment event*, but Nigeria's OOSC condition is chronic, not episodic. Naomi's panel β₁ + β₂ identifies the *correlation* between OOSC and growth controlling for fixed effects; SCM needs to identify a *shock* whose effect is amplified or muted by the OOSC condition. Below are three framings.
+
+### Framing A — 2014 Oil-Price Collapse as Treatment
+
+**Logic:** In June 2014, Brent oil prices collapsed from ~$110 to ~$50 over 18 months. Nigeria's GDP contracted in 2016 — its first recession in 25 years. The argument: Nigeria's foundational human-capital deficit (proxied by OOSC) prevented the structural diversification that would have insulated it from the shock. Compare actual Nigeria post-2014 to a synthetic Nigeria built from SSA donors that *also* experienced the oil shock (or, alternatively, that *didn't* — see donor-pool discussion).
+
+- **Defensibility:** Strong. June 2014 is a sharp, exogenous, well-documented shock. It is widely used in the macro literature (Baffes, Kose, Ohnsorge & Stocker 2015 World Bank).
+- **Donor pool:** Two options. **(A1)** Other oil exporters in SSA (Angola, Gabon, Republic of Congo, Equatorial Guinea, Chad, Sudan) — match on oil-export share and ask "what made Nigeria's response worse?" The OOSC story is the answer. Problem: tiny donor pool (5–6 units), each idiosyncratic. **(A2)** Non-oil SSA economies — synthetic Nigeria captures "what if Nigeria had been a non-oil economy." Problem: this conflates oil-dependence with human capital.
+- **Pre-period match:** 2000–2014 (15 years) is comfortable.
+- **Predictors:** GDP per capita lags, investment/GDP, population growth, OOSC rate, oil rents/GDP, manufacturing share, trade openness.
+- **Inference:** Permutation/placebo tests across donor pool (Abadie, Diamond & Hainmueller 2010, §V); RMSPE ratio test.
+- **Gap plot would show:** Actual vs. synthetic GDP per capita, 2000–2024. The treatment effect is the post-2014 gap. If the gap is large and negative, that is consistent with "low human capital amplified the oil shock." But the gap is *not* a direct estimate of the OOSC channel — it's the joint effect of everything that distinguishes Nigeria from its donors.
+
+**Verdict:** Most defensible treatment, but the OOSC interpretation is indirect. Best paired with a mediation argument — show that synthetic Nigeria's pre-2014 OOSC rate was lower than Nigeria's, then attribute the resilience differential to that gap. This is a stretch and would need careful framing.
+
+### Framing B — Universal Basic Education Act 1999 as Treatment
+
+**Logic:** Nigeria's UBE Act made primary education compulsory and free, with implementation rolling out from 2000. Treat 1999/2000 as the treatment date. Build synthetic Nigeria from SSA donors that did *not* adopt comparable legislation in that window.
+
+- **Defensibility:** Weaker. Many SSA countries adopted similar reforms in roughly the same window (e.g., Kenya's FPE 2003, Tanzania's PEDP 2002, Uganda's UPE 1997, Ghana's fCUBE 1996). Identifying a clean control group is hard. Pre-period for a 1999 treatment is also short given UNESCO OOSC data starts in the early 2000s.
+- **Donor pool:** Theoretically SSA countries without compulsory primary legislation in 1995–2005. In practice, most SSA countries did *something* — true non-adopters are few and probably non-comparable (failed states, conflict zones).
+- **Pre-period match:** ~5 years (1995–1999) is too short for credible SCM.
+- **Predictors:** GDP per capita, OOSC, investment, demographics, conflict indicators.
+- **Inference:** Placebo tests, but power is limited with such a short pre-period.
+- **Gap plot would likely show:** A null or modestly positive long-run effect, given Nigeria's UBE famously underdelivered (Humphreys & Crawfurd 2014; World Bank 2015). A null result is publishable in a senior thesis but is hard to motivate as the centerpiece of a term paper that argues OOSC is *costly*.
+
+**Verdict:** Conceptually closer to the paper's thesis but empirically weak. Short pre-period, contaminated donor pool, likely null result that muddies the headline. Not recommended.
+
+### Framing C — EKOEXCEL Sub-National
+
+**Logic:** EKOEXCEL is the Lagos State personalized-instruction reform launched in 2019 by LASUBEB, where Naomi's mother works. Use Lagos as treated and other Nigerian states as donors.
+
+- **Defensibility:** Sharpest treatment definition of the three. 2019 launch, well-documented.
+- **Donor pool:** 35 other Nigerian states + FCT. Big enough for SCM.
+- **Pre-period match:** ~5 years if you can get state-level annual data back to 2014. This is the binding constraint.
+- **Data feasibility:** **Severe problem.** Nigerian state-level GDP is sparse and poorly measured. The National Bureau of Statistics publishes state GDP irregularly (the most recent comprehensive release was 2017, with partial updates since). Education outcomes (NESG, NDHS) are surveyed every 3–5 years and rarely state-stratified at the granularity SCM needs. Naomi's LASUBEB access might unlock Lagos data, but the donor states' data will not match.
+- **Outcome variable would not be GDP** — it would have to be a learning outcome (test scores, transition rates) measured for Lagos *and* a comparable set of other states in pre/post years. Possible but data-collection-heavy.
+- **Predictors:** Pre-period learning outcomes, enrollment, teacher density, urbanization.
+- **Inference:** Permutation across 35 donor states — adequate power.
+- **Gap plot would show:** Lagos learning trajectories vs. synthetic Lagos. If EKOEXCEL works, a positive post-2019 gap.
+
+**Verdict:** Excellent thesis topic; impossible in 6 days. Data assembly alone is a multi-month project. Save for the senior thesis.
+
+### Recommended Framing
+
+**If — and only if — Naomi adds an SCM extension to the term paper, use Framing A (2014 oil shock).** Reasoning: the treatment is sharp and well-known, donor pool is workable, data already exist in WDI/PWT, and it complements rather than competes with the panel result. The honest framing is: *"The panel identifies the average growth cost of OOSC across SSA and a Nigeria-specific differential. SCM provides a complementary single-country narrative: Nigeria's pre-2014 human-capital deficit predicts a sharper post-2014 growth shortfall than its oil-exporting peers."*
+
+That said — see §5 below — my recommendation is to *not* add this to the term paper.
+
+---
+
+## 3. Implementation
+
+### Stata
+
+- `synth` (Abadie, Diamond & Hainmueller; SSC install) — classical SCM.
+- `synth_runner` (Galiani & Quistorff 2017, *Stata Journal*) — wrapper for placebo inference and multiple treated units.
+- `sdid` (Clarke, Pailañir, Athey & Imbens 2024, *Stata Journal*) — synthetic DID.
+- `allsynth` (Wiltshire 2022) — adds bias-correction (Ben-Michael et al. ASCM-style).
+
+### R
+
+- `Synth` (Abadie, Diamond & Hainmueller) — original.
+- `tidysynth` (Dunford 2021) — modern tidyverse interface, easier plots.
+- `synthdid` (Hirshberg) — SDID.
+- `gsynth` / `fect` (Xu) — generalized SC and counterfactual estimators.
+- `augsynth` (Ben-Michael, Feller & Rothstein) — augmented SCM.
+
+### Minimal Stata Skeleton — Framing A
+
+```stata
+* Setup: panel of SSA countries, annual 2000-2024
+ssc install synth, all
+ssc install synth_runner
+
+xtset country_id year
+
+* Nigeria = treated unit; treatment year = 2014
+* Outcome: log GDP per capita (PWT 11.0)
+synth log_gdppc ///
+    log_gdppc(2000) log_gdppc(2005) log_gdppc(2010) log_gdppc(2013) ///
+    oosc_total inv_share popgrowth oil_rents_gdp trade_open ///
+    , trunit(566) trperiod(2014) ///        // 566 = ISO numeric for Nigeria
+      xperiod(2000(1)2013) mspeperiod(2000(1)2013) ///
+      figure keep(synth_nigeria_oil) replace
+
+* Placebo tests
+synth_runner log_gdppc ///
+    log_gdppc(2000) log_gdppc(2005) log_gdppc(2010) log_gdppc(2013) ///
+    oosc_total inv_share popgrowth oil_rents_gdp trade_open ///
+    , trunit(566) trperiod(2014) gen_vars
+single_treatment_graphs
+effect_graphs
+```
+
+### Minimal R Skeleton — Same Framing with `tidysynth`
+
+```r
+library(tidysynth)
+library(dplyr)
+
+ssa_panel <- read.csv("ssa_panel_2000_2024.csv")
+
+nigeria_synth <- ssa_panel %>%
+  synthetic_control(outcome = log_gdppc,
+                    unit    = country,
+                    time    = year,
+                    i_unit  = "Nigeria",
+                    i_time  = 2014,
+                    generate_placebos = TRUE) %>%
+  generate_predictor(time_window = 2000:2013,
+                     oosc        = mean(oosc_total, na.rm = TRUE),
+                     inv         = mean(inv_share,  na.rm = TRUE),
+                     pop         = mean(popgrowth,  na.rm = TRUE),
+                     oil         = mean(oil_rents_gdp, na.rm = TRUE)) %>%
+  generate_predictor(time_window = 2000, lagged_gdp_2000 = log_gdppc) %>%
+  generate_predictor(time_window = 2007, lagged_gdp_2007 = log_gdppc) %>%
+  generate_predictor(time_window = 2013, lagged_gdp_2013 = log_gdppc) %>%
+  generate_weights(optimization_window = 2000:2013) %>%
+  generate_control()
+
+nigeria_synth %>% plot_trends()
+nigeria_synth %>% plot_differences()
+nigeria_synth %>% plot_placebos()
+nigeria_synth %>% plot_mspe_ratio()
+nigeria_synth %>% grab_signficance()       # MSPE-ratio p-value
+nigeria_synth %>% grab_unit_weights()
+```
+
+`tidysynth` is faster to learn than `Synth` and produces publication-ready ggplot output. If Naomi already has the SSA panel constructed for the FE regressions, the data work is mostly done — perhaps a half-day of reshaping.
+
+---
+
+## 4. Section Draft
+
+> **§5.6 Robustness — Synthetic Control Estimates**
+>
+> The two-way fixed-effects panel of §5.1 identifies an average growth cost of out-of-school children across Sub-Saharan Africa and a Nigeria-specific differential, but it does not isolate Nigeria's counterfactual growth trajectory. To complement the panel, I apply the synthetic control method (Abadie, Diamond & Hainmueller 2010; Abadie 2021) to the 2014 oil-price collapse as a natural experiment. The collapse was an exogenous global shock that affected all SSA oil exporters; Nigeria's foundational human-capital deficit — captured by its persistently elevated OOSC rate — should have constrained the structural diversification that would otherwise have buffered the shock. I construct a synthetic Nigeria from a donor pool of [N] SSA economies, weighted to match Nigeria's 2000–2013 trajectory of log GDP per capita, investment share, population growth, oil rents, and trade openness. Donor weights concentrate on [countries]; the pre-treatment RMSPE is [X]. Post-2014, actual Nigerian GDP per capita falls [X log points] below the synthetic counterfactual by 2024, with placebo permutation p-value [X].
+>
+> The SCM estimate is not a direct measurement of the OOSC channel; it captures the joint effect of every dimension on which Nigeria differs from its donors post-2014. Read alongside the panel result, however, it tells a consistent story: in a fully-diversified counterfactual economy (one whose pre-2014 human-capital stock supported tradable manufacturing), the 2014 shock would have been substantially less costly. The panel gives the average, the synthetic gives the narrative.
+
+If Naomi does not run SCM for this paper, a forward-looking sentence in §7 Conclusion is sufficient:
+
+> Future work will extend this analysis to a synthetic-control framework, treating Nigeria's 2014 oil shock as a natural experiment and isolating the role of pre-existing human-capital deficits in shaping the post-shock recovery.
+
+---
+
+## 5. Critical Assessment — Should She Actually Do This?
+
+**My honest recommendation: do not add SCM to the term paper. Save it for the senior thesis.**
+
+Reasoning:
+
+**Time cost.** Six days to submission. A credible SCM extension involves: (i) re-shaping the SSA panel for `synth`/`tidysynth` (half day), (ii) running the baseline SCM and donor-weight diagnostics (half day), (iii) placebo permutation tests and inference (half day), (iv) interpreting and writing up results (one full day), (v) revising in response to whatever the SCM actually shows (unbounded). That's 3–4 days of focused work, leaving 2 days for §6.3, §6.4, §7, the presentation, and final polish. This is not impossible but it crowds out the things that *guarantee* a strong submission.
+
+**Marginal value.** The panel results are already strong: β₁ + β₂ = −0.124, p < 0.001, robust across multiple subsamples and measurement choices. Reviewers of an undergraduate econometrics prize will reward depth and rigor on the existing strategy more than a hastily-added second method. Adding a *well-executed* SCM would help; adding a *rushed* SCM that the student cannot fully defend in the presentation would hurt.
+
+**Risk.** The SCM may give a different answer. Plausibly:
+- If synthetic Nigeria *outperforms* actual Nigeria post-2014 by something close to 12% over a decade, the methods agree and the paper looks great.
+- If synthetic Nigeria *underperforms* (Nigeria did better than expected), the paper has an awkward inconsistency to explain in 24 hours.
+- If Nigeria lies outside the donor-convex-hull (likely — it is enormous and oil-heavy), SCM weights may concentrate on 1–2 donors, RMSPE will be poor, and the result will be uninterpretable. ASCM would help but adds another method to learn.
+
+A good faculty reader (Kuenzel) will ask why the two methods give different point estimates if they do, and the only honest answer — "they identify different estimands" — is correct but requires careful exposition that takes time to write.
+
+**Better uses of the remaining six days, ranked:**
+
+1. **Finish §6.3, §6.4, and §7.** Whatever gaps remain are guaranteed to be read; SCM is a bonus.
+2. **Tighten the identification narrative in §5.** Reviewers reward clear thinking on why the FE model identifies what you say it identifies (selection on unobservables, reverse causality discussion).
+3. **A serious mediation analysis using existing panel data** — show that controlling for sector composition (manufacturing/services/agriculture shares) attenuates β₂, supporting the structural-transformation channel. This is a 1-day robustness check that uses tools she already has and directly speaks to the OOSC mechanism.
+4. **Polish the presentation.** The Lebergott-Lovell prize committee weighs the oral defense; a clean 12-minute talk on a tight result beats a confused talk on a sprawling result.
+5. **Only then, if time remains, sketch SCM as a forward-looking thesis chapter in §7.** A two-sentence statement of intent costs nothing and signals methodological awareness.
+
+**For the senior thesis next year**, SCM (Framing A, oil shock) and possibly Framing C (EKOEXCEL, with proper data assembly over the summer) become natural and important chapters. SCM would also let her engage with the SDID literature, which is becoming standard in development economics. Done well, an SCM chapter alone could be a job-market-paper-quality piece of the thesis.
+
+**Tactical suggestion:** in §7 of the term paper, add three sentences: (i) an SCM extension would treat the 2014 oil shock as a natural experiment, (ii) using the OOSC differential to interpret post-shock divergence between Nigeria and oil-exporting peers, (iii) this is the planned first chapter of the senior thesis. This costs ~30 minutes of writing time, signals research maturity, and preserves the option without the risk.
+
+---
+
+## 6. References
+
+Abadie, A. (2021). "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects." *Journal of Economic Literature* 59(2): 391–425.
+
+Abadie, A., Diamond, A., & Hainmueller, J. (2010). "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." *Journal of the American Statistical Association* 105(490): 493–505.
+
+Abadie, A., Diamond, A., & Hainmueller, J. (2015). "Comparative Politics and the Synthetic Control Method." *American Journal of Political Science* 59(2): 495–510.
+
+Abadie, A., & Gardeazabal, J. (2003). "The Economic Costs of Conflict: A Case Study of the Basque Country." *American Economic Review* 93(1): 113–132.
+
+Arkhangelsky, D., Athey, S., Hirshberg, D. A., Imbens, G. W., & Wager, S. (2021). "Synthetic Difference-in-Differences." *American Economic Review* 111(12): 4088–4118.
+
+Athey, S., Bayati, M., Doudchenko, N., Imbens, G., & Khosravi, K. (2021). "Matrix Completion Methods for Causal Panel Data Models." *Journal of the American Statistical Association* 116(536): 1716–1730.
+
+Baffes, J., Kose, M. A., Ohnsorge, F., & Stocker, M. (2015). "The Great Plunge in Oil Prices: Causes, Consequences, and Policy Responses." World Bank Policy Research Note PRN/15/01.
+
+Bai, J. (2009). "Panel Data Models with Interactive Fixed Effects." *Econometrica* 77(4): 1229–1279.
+
+Ben-Michael, E., Feller, A., & Rothstein, J. (2021). "The Augmented Synthetic Control Method." *Journal of the American Statistical Association* 116(536): 1789–1803.
+
+Clarke, D., Pailañir, D., Athey, S., & Imbens, G. (2024). "Synthetic Difference-in-Differences Estimation." *The Stata Journal* 24(1): 14–53.
+
+Dunford, E. (2021). "tidysynth: A Tidy Implementation of the Synthetic Control Method." R package, CRAN.
+
+Galiani, S., & Quistorff, B. (2017). "The synth_runner Package: Utilities to Automate Synthetic Control Estimation Using synth." *The Stata Journal* 17(4): 834–849.
+
+Gobillon, L., & Magnac, T. (2016). "Regional Policy Evaluation: Interactive Fixed Effects and Synthetic Controls." *Review of Economics and Statistics* 98(3): 535–551.
+
+Humphreys, S., & Crawfurd, L. (2014). "Review of the Literature on Basic Education in Nigeria: Issues of Access, Quality, Equity and Impact." EDOREN, Abuja.
+
+Mankiw, N. G., Romer, D., & Weil, D. N. (1992). "A Contribution to the Empirics of Economic Growth." *Quarterly Journal of Economics* 107(2): 407–437.
+
+Wiltshire, J. C. (2022). "allsynth: Synthetic Control Bias-Corrections Utilities for Stata." Working paper, University of Mississippi.
+
+Xu, Y. (2017). "Generalized Synthetic Control Method: Causal Inference with Interactive Fixed Effects Models." *Political Analysis* 25(1): 57–76.
+
+---
+
+## Bottom Line
+
+For the May 14 submission: write the three-sentence forward-looking note in §7 and skip the actual SCM. Spend the six days completing §6.3, §6.4, §7, a sector-composition mediation robustness check, and the presentation. For next year's senior thesis: Framing A (oil shock) is your first chapter, and Framing C (EKOEXCEL) is the empirical core if you can assemble the state-level data over the summer.
+agentId: a7f81a0e0be80daba (use SendMessage with to: 'a7f81a0e0be80daba' to continue this agent)
+<usage>total_tokens: 23620
+tool_uses: 0
+duration_ms: 144831</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mit-africa.com/hackathon/
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-20 17:40:32 UTC
+========================================================================
+
+URL: https://mit-africa.com/hackathon/
+Extraction prompt: Look for ANY mention of housing, accommodation, lodging, hotel, travel, transportation, or reimbursement for hackathon participants. Also look for an FAQ section, logistics section, or any contact information for the organizers.
+
+----------------------------------------
+
+# Search Results: Housing, Accommodation, and Logistics Information
+
+Based on my review of the provided web page content, **I found no information about housing, accommodation, lodging, hotels, travel, transportation, or reimbursement for hackathon participants.**
+
+The page content consists primarily of:
+- CSS styling code and theme configuration
+- Schema.org metadata
+- Header and footer HTML elements
+- General website branding for MIT Sloan Africa Business Club
+
+**Missing Information:**
+- No FAQ section is present in the provided content
+- No dedicated logistics section appears
+- No contact information for organizers is visible
+- No hackathon-specific details regarding participant support
+
+**Recommendation:** To find this information, you would need to visit the actual Competition/Hackathon page directly or look for linked resources, event details pages, or organizer contact forms that may not be included in this particular content extraction.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://arxiv.org/html/2505.20564
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:42:59 UTC
+========================================================================
+
+URL: https://arxiv.org/html/2505.20564
+Extraction prompt: Extract key stats about the NaijaVoices dataset: total hours of audio, number of speakers, number of samples, sample rate, whether children are included, Nigerian languages covered, license, whether it's telephony or studio audio. Also extract the WER improvements they reported for fine-tuning Whisper on this dataset, including numbers per language (Yoruba, Igbo, Hausa) and per model (Whisper, MMS, XLSR).
+
+----------------------------------------
+
+# NaijaVoices Dataset Key Statistics
+
+## Dataset Specifications
+- **Total Audio:** 1,838.54 hours
+- **Speakers:** 5,455 unique speakers
+- **Samples:** 645,000 unique sentences (1,917,686 total recordings, each sentence recorded twice)
+- **Sample Rate:** Not explicitly stated in the document
+- **Children Included:** Yes - 25.7% of speakers aged 6-17 years
+- **Languages:** Igbo, Hausa, and Yoruba
+- **License:** "CC BY-NC-SA 4.0"
+- **Recording Type:** Studio/controlled environment with facilitators (not telephony)
+
+## Demographic Breakdown
+- 58% female, 42% male speakers
+- Primary age group: 18-29 years (65.9%)
+
+## WER Improvements from Fine-tuning
+
+**Per Language (Whisper Small Model):**
+- Yoruba: ~21% WER (unfinetuned vs. finetuned)
+- Igbo: ~49% WER reduction
+- Hausa: ~172 WER point improvement
+
+**Average Improvements Across Models:**
+- Whisper: "75.86% WER improvements"
+- MMS: "52.06% WER improvements"  
+- XLSR: "42.33% WER improvements"
+
+These metrics demonstrate substantial gains from fine-tuning relatively smaller models on the NaijaVoices dataset compared to their unfinetuned baselines.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

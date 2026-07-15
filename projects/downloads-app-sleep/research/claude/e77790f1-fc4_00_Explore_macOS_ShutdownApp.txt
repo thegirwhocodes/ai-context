@@ -1,0 +1,429 @@
+========================================================================
+AGENT RESEARCH: Explore macOS ShutdownApp
+Session: e77790f1-fc44-416a-b46f-7434599f1ba9
+Time: 2026-06-05 20:19:18 UTC
+========================================================================
+
+Explore the macOS app code in /Users/naomiivie/Downloads/App/Sleep/ShutdownApp/ (all .swift files: AmbientView.swift, SettingsView.swift, ShutdownManager.swift, ShutdownAppApp.swift, JailbreakManager.swift, QuotesProvider.swift, CountdownView.swift, ContentView.swift) plus ShutdownApp.entitlements.
+
+For EACH file report:
+1. Its purpose and the main types/views it defines
+2. Key properties, state, persistence (UserDefaults keys, App Group usage)
+3. How blocking/shutdown is triggered and enforced
+4. The "pass"/"key" system (how many tries, reset logic)
+5. Any TODOs, stubs, incomplete logic, or hardcoded placeholders
+6. Whether it references iCloud/CloudKit sync, multi-device, email, or any "agent"/AI features (likely none)
+
+Be concrete with file:line references and short code excerpts. Do NOT edit anything. Return a structured summary.
+
+----------------------------------------
+
+Now I'll compile the detailed analysis of each file:
+
+## Structured Exploration Report: Sleep Well macOS App
+
+### File-by-File Analysis
+
+---
+
+### **1. AmbientView.swift**
+**Purpose:** Displays a calming ambient/blocking screen with time, motivational quotes, and pass usage interface.
+
+**Main Types/Views:**
+- `AmbientView` (struct): Primary blocking UI view
+- Ambient background with radial gradient orbs (lines 24-49)
+- Breathing circle animation effect (lines 77-92)
+
+**Key Properties & State:**
+- `@EnvironmentObject shutdownManager, jailbreakManager`: Environmental dependencies
+- `@State currentQuote: Quote`: Current displayed quote
+- `@State quoteOpacity, timeString, breatheScale`: Animation states
+- `timeString`: Updated via timer every 1 second (line 13)
+- `quoteTimer`: Updates quotes every 12 seconds (line 14)
+
+**Pass System:**
+- Displays `jailbreakManager.passesRemaining` count (line 155)
+- Button "Use Pass to Exit" calls `onUsePass()` callback (lines 145-177)
+- Button disabled when passes = 0 (line 177)
+- Shows reset time: `jailbreakManager.timeUntilReset` (line 179)
+
+**Lock Status Display:**
+- Shows lock icon and countdown if `shutdownManager.isLocked` (lines 107-116)
+- Displays `lockTimeRemaining` (line 111)
+
+**Animations:**
+- Breathing effect: scale animates 1.0 to 1.08 over 4s (line 209-211)
+- Quote fade transition: 0.8s easeInOut (line 195-196)
+
+**TODOs/Incomplete:**
+- None identified; appears complete
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **2. SettingsView.swift**
+**Purpose:** Configuration interface for schedule, lock, passes, and app settings.
+
+**Main Types/Views:**
+- `SettingsView` (struct): Main settings panel
+- `LockStatusBanner`, `InfoRow`, `SettingsSection`: Reusable components
+- `enum LockDuration`: Options from 1 day to 1 month (lines 19-35)
+
+**Key Properties & Persistence:**
+- `@AppStorage("blockStartHour"), blockStartMinute, wakeHour, wakeMinute` (AppStorage-backed)
+- Schedule settings passed to `shutdownManager.setBlockStartTime()`, `setWakeTime()` (lines 255-256)
+- Launch at login: `shutdownManager.isLaunchAtLoginEnabled` and `enableLaunchAtLogin()` (lines 343, 396)
+
+**Lock Feature:**
+- Lock duration picker (lines 146-150)
+- Alert confirmation on "Enable Lock" button (lines 398-406)
+- Calls `shutdownManager.enableLock(until: lockDate)` with calculated end date (lines 401-402)
+- Settings disabled visually when locked: `.disabled(shutdownManager.isLocked)` (lines 198, 207, 234, 243)
+- Opacity reduced to 0.6 when locked (lines 271, 346)
+
+**Pass Display:**
+- Shows remaining passes as 3 circles (lines 284-290)
+- Displays `jailbreakManager.timeUntilReset` (line 299)
+- Non-interactive display in settings
+
+**TODOs/Incomplete:**
+- Line 359: "Test Section (Remove after testing)" - "Start Blocking Now" button for manual testing
+- Test button calls `shutdownManager.startCountdown()` (line 367)
+- Likely intended to be removed before release
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+- Uses `ServiceManagement` for launch-at-login (line 2)
+
+---
+
+### **3. ShutdownManager.swift**
+**Purpose:** Core blocking state machine, schedule enforcement, lock persistence, and trigger logic.
+
+**Main Types/Classes:**
+- `enum BlockingState`: idle, warning, countdown, blocking (lines 6-11)
+- `class ShutdownManager: ObservableObject`: Main manager class
+
+**Key Properties & Persistence:**
+- `@Published currentState: BlockingState` (line 14)
+- `@AppStorage` for schedule: blockStartHour/Minute, wakeHour/Minute (lines 35-38)
+- `@Published isLocked`, `lockEndDate` (lines 31-32)
+- **Lock persistence file:** `~/.sleepwell/.lock` (lines 51-61)
+  - Stored as JSON: `isLocked`, `lockEndDate` (timestamp), schedule times (lines 128-139)
+  - Survives app deletion (line 50)
+- **Trigger state:** UserDefaults keys (lines 46-48):
+  - `"lastTriggerDate"`: Tracks when blocking was last triggered
+  - `"hasTriggeredToday"`: Prevents double-triggering per day
+  - Resets at midnight (lines 234-237)
+
+**Blocking/Shutdown Triggering:**
+- `checkTime()` (lines 224-277): Runs every 10 seconds via timer (line 184)
+- Checks if current time is in blocking period (overnight-aware logic, lines 245-252)
+- Handles overnight blocking: e.g., 22:00 to 06:00 (lines 206-212, 246-251)
+- On trigger: `startCountdown()` → 3-second countdown → `startBlocking()` (lines 281-302)
+- Automatically ends blocking at wake time: `endBlocking()` checks `isCurrentlyInBlockingHours` (lines 340-348)
+- `checkIfCurrentlyBlocking()` (lines 192-222): On app launch, checks if already in blocking period
+
+**Pass System:**
+- Passes are managed by `JailbreakManager`, not here
+- `cancelBlocking()` stops countdown and returns to idle (lines 324-331)
+- Does NOT reset `hasTriggeredToday` when using a pass (line 329-330 comment): prevents re-triggering same day
+
+**Lock Feature:**
+- `enableLock(until date)` (lines 110-114): Sets lock and persists to file
+- `checkLockStatus()` (lines 116-125): Checks expiry on each timer tick (line 186)
+- Lock prevents settings changes: `setBlockStartTime()`, `setWakeTime()` guarded by `!isLocked` (lines 352-365)
+- Settings disabled when locked in UI (multiple places in SettingsView)
+
+**TODOs/Incomplete:**
+- Line 304-322: `beginCountdown()` marked as duplicate, kept for compatibility but unused
+- No other obvious stubs
+
+**State Transitions:**
+```
+idle → (checkTime triggers) → countdown (3s) → blocking → (checkTime at wake time) → idle
+                                    ↓ (usePass)
+                                  idle
+```
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+- Uses `AppKit` for NSNotification (line 3)
+- Uses `ServiceManagement` for SMAppService (line 4)
+
+---
+
+### **4. ShutdownAppApp.swift**
+**Purpose:** App entry point, window management, fullscreen blocking enforcement, and quit prevention.
+
+**Main Types/Classes:**
+- `@main struct ShutdownAppApp: App`: SwiftUI app root
+- `class AppDelegate: NSApplicationDelegate`: Window and blocking enforcement
+  - Manages fullscreen window display/hide (lines 116-159)
+  - Blocks app quit with Cmd+Q (lines 170-176)
+
+**Key Properties & Behaviors:**
+- StateObjects: `shutdownManager`, `jailbreakManager` (lines 8-9)
+- Three scenes: main WindowGroup, Settings, MenuBarExtra (lines 12-35)
+
+**Blocking/Fullscreen Enforcement:**
+- `observeBlockingState()` (lines 100-114): Listens to `BlockingStateChanged` notification
+- `updateWindowVisibility()` (lines 116-124): Shows fullscreen if state != .idle
+- `showFullscreenWindow()` (lines 126-150):
+  - Window level set to `.screenSaver` (line 131) - above all other windows
+  - Collection behavior: `[.canJoinAllSpaces, .fullScreenAuxiliary, .stationary]` (line 132)
+  - Presentation options block: Mission Control, desktop switching, app switching, Cmd+Q, logout (lines 140-147)
+- `hideMainWindow()` (lines 152-159): Restores normal UI
+
+**Quit Prevention:**
+- `applicationShouldTerminate()` (lines 170-176): Returns `.terminateCancel` if state != .idle
+- Blocks Cmd+Q during blocking (effective enforcement)
+
+**Launch at Login:**
+- `forceEnableLaunchAtLogin()` (lines 58-69): Always ensures launch-at-login is enabled (line 63)
+- Overrides user's toggle preference to always run on login
+
+**Mac Sleep/Wake Handling:**
+- Observes `NSWorkspace.didWakeNotification` and `willSleepNotification` (lines 71-87)
+- On wake: calls `shutdownManager.checkIfCurrentlyBlocking()` (line 92) to catch missed blocking
+
+**Menu Bar:**
+- `MenuBarExtra` shows: blocked times, passes, lock status, enable/disable toggle (lines 179-319)
+- During blocking: "Use Pass & Quit" button (lines 288-300)
+- Normal mode: standard "Quit" button (lines 304-314)
+
+**TODOs/Incomplete:**
+- Line 55: "Force enable launch at login" - comment suggests intentional override of user preference
+- `handleSleep()` (lines 95-98) is a no-op: "Nothing special needed - app keeps running"
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **5. JailbreakManager.swift**
+**Purpose:** Manages weekly pass allocation and reset logic.
+
+**Main Types/Classes:**
+- `class JailbreakManager: ObservableObject`: Pass system manager
+- `@Published passesRemaining, passesUsedThisWeek` (lines 5-6)
+
+**Pass System (3 per week):**
+- `passesPerWeek = 3` (line 8)
+- `usePass()` (lines 18-30): Appends current Date to `passesUsedThisWeek`, decrements `passesRemaining`, persists
+- Returns `true` if pass used successfully, `false` if out of passes
+- Pass usage recorded: `passesUsedThisWeek.append(Date())` (line 25)
+
+**Reset Logic (Weekly - Sunday midnight):**
+- `checkAndResetIfNewWeek()` (lines 40-69): Called on `usePass()` and init
+- Calculates start of current week (Sunday) (lines 44-57):
+  ```
+  weekday = calendar.component(.weekday, from: now)  // 1=Sun, 2=Mon, etc.
+  daysSinceSunday = weekday - 1
+  startOfWeek = today - daysSinceSunday days
+  ```
+- Compares stored `lastWeekReset` date to `startOfWeek` (line 62)
+- If reset date is before current week's Sunday → `resetPasses()` (line 63)
+- First run: sets reset date to start of week (lines 65-67)
+
+**Pass Persistence:**
+- UserDefaults keys (lines 9-10):
+  - `"passesUsedThisWeek"`: Encoded JSON array of Date objects
+  - `"lastWeekReset"`: Date of last reset
+- `loadPassesFromStorage()` (lines 78-84): Decodes JSON array of dates on init
+- `savePassesToStorage()` (lines 86-90): Encodes array after each use
+
+**Reset Time Display:**
+- `nextResetDate` (lines 92-111): Calculates next Sunday midnight
+  ```
+  daysUntilSunday = 7 - (weekday - 1)
+  nextSunday = today + daysUntilSunday days
+  ```
+- `timeUntilReset` (lines 113-119): Formatted human-readable string (e.g., "in 4 days")
+
+**Testing Methods:**
+- `resetPassesForTesting()` (lines 33-38): Clears all passes, resets counter to 3
+- Sets `lastWeekReset` to now (line 37)
+
+**TODOs/Incomplete:**
+- Line 17: "PRODUCTION: 3 passes per week" - suggests this was tunable during dev
+- No hardcoded test values in production code
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **6. QuotesProvider.swift**
+**Purpose:** Static collection of motivational quotes displayed on blocking screen.
+
+**Main Types/Classes:**
+- `struct Quote: Identifiable, Equatable`: Quote model (lines 3-11)
+- `class QuotesProvider`: Quote repository (line 13+)
+
+**Quote Collection (41 quotes):**
+- King David wisdom (9 quotes, lines 15-24)
+- King Solomon wisdom (5 quotes, lines 26-31)
+- Jesus (3 quotes, lines 33-36)
+- Apostles (4 quotes, lines 38-42)
+- Moses (2 quotes, lines 44-46)
+- Prophets (2 quotes, lines 48-50)
+- C.S. Lewis (3 quotes, lines 52-55)
+- Charles Spurgeon (2 quotes, lines 57-59)
+- Tim Keller (2 quotes, lines 61-63)
+- John Piper (2 quotes, lines 65-67)
+- Other biblical/Christian wisdom (8 quotes, lines 69-82)
+
+**Methods:**
+- `randomQuote()` (lines 84-86): Returns random quote or first if empty
+- `allQuotes()` (lines 88-90): Returns complete list
+
+**Theme:**
+- All quotes are Christian/biblical themed, focused on rest, trust, and God's care
+- Aligned with app's "sleep well" spiritual wellness positioning
+
+**TODOs/Incomplete:**
+- None; static data only
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **7. CountdownView.swift**
+**Purpose:** 3-second countdown display before blocking screen activates.
+
+**Main Types/Views:**
+- `struct CountdownView: View`: Countdown UI
+- Animated ring and large number display
+
+**State/Animation:**
+- `@State scale, opacity, ringProgress, pulseScale` (lines 8-11)
+- Ring progress: updates from 1.0 → 0.33 over 3 seconds (line 161)
+- Number scale pulse: shrinks/grows on each tick (lines 150-157)
+- Pulsing background ring: scales 1.0 → 1.08 continuously (line 145)
+
+**Pass Button:**
+- Same UI as AmbientView: "Use Pass to Cancel" with remaining count (lines 94-127)
+- Disabled when passes = 0 (line 126)
+- Calls `onUsePass()` callback (line 95)
+
+**Reset Time Display:**
+- Shows `jailbreakManager.timeUntilReset` (line 128)
+
+**Animations on Appearance:**
+- Spring scale-in: response 0.5, damping 0.7 (line 138)
+- Opacity fade-in: 0 → 1 (line 139)
+- Pulse animation loops continuously (line 144-146)
+- On each countdown tick: scale animates down then back up (lines 150-157)
+
+**TODOs/Incomplete:**
+- None; appears complete
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **8. ContentView.swift**
+**Purpose:** Root view orchestrator that switches between hidden, countdown, and ambient blocking states.
+
+**Main Types/Enums:**
+- `enum AppState`: hidden, ambient, countdown, blocking (lines 3-8)
+- `struct ContentView: View`: State switcher
+- `struct ParticleView: View`: Subtle animated particles background
+- `struct Particle`: Particle data model (lines 128-133)
+
+**State Management:**
+- `@EnvironmentObject shutdownManager, jailbreakManager` (lines 11-12)
+- `@State appState: AppState` (line 13)
+- Observes `shutdownManager.$currentState` to update appState (lines 64-77)
+  ```
+  .idle → .hidden
+  .warning → .ambient
+  .countdown → .countdown
+  .blocking → .blocking
+  ```
+
+**Pass Integration:**
+- Both CountdownView and AmbientView receive `onUsePass` callback (lines 40-46, 50-57)
+- Callback: checks `jailbreakManager.usePass()` return, then calls `shutdownManager.cancelBlocking()`
+
+**Particle Animation:**
+- 50 particles in background (line 102)
+- Opacity: 0.1 to 0.5, varies with sine wave (line 115)
+- Y position cycles: wraps top-to-bottom (lines 117-121)
+- Updated every 0.05s (line 85)
+- Opacity set to 0.3 on ParticleView (line 31)
+
+**TODOs/Incomplete:**
+- Line 78-79: Comment notes fixed a duplicate observer issue that was causing double-triggering
+- Appears fully resolved now
+
+**Color Utilities:**
+- `Color(hex:)` extension (lines 136-160): Parses hex color codes with alpha
+- Handles 3, 6, and 8-digit hex formats
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+### **9. ShutdownApp.entitlements**
+**Purpose:** App sandbox and capability configuration.
+
+**Entitlements:**
+- `com.apple.security.app-sandbox`: **DISABLED** (set to `false`, line 6)
+  - App runs **unsandboxed** with full system access
+  - Allows aggressive blocking (process switching, quit blocking)
+- `com.apple.security.automation.apple-events`: **ENABLED** (line 8)
+  - Allows AppleScript/automation (not actively used in code)
+
+**Security Implications:**
+- No sandbox = direct access to disable desktop switching, hide menu bar, block Cmd+Q
+- Required to prevent users from bypassing the blocker via Finder/System Prefs
+
+**TODOs/Incomplete:**
+- None; configuration is intentional for blocking enforcement
+
+**References:**
+- No iCloud, CloudKit, email, or AI agent features
+
+---
+
+## Cross-File Summary
+
+**Blocking Flow:**
+1. Timer checks every 10s if current time is in blocking period
+2. On match → `startCountdown()` → 3-second countdown animation
+3. After 3s → `startBlocking()` → fullscreen ambient view
+4. User can `usePass()` (3 per week) to exit, or wait until wake time
+5. At wake time → automatic `endBlocking()`
+
+**Pass System:**
+- **3 per week**, reset every Sunday at midnight
+- Tracked in UserDefaults as array of usage dates
+- `checkAndResetIfNewWeek()` compares stored reset date to current week's Sunday
+
+**Lock Feature:**
+- Prevents settings changes for 1–30 days
+- Persisted to `~/.sleepwell/.lock` (survives uninstall)
+- Lock expiry checked every 10s
+
+**No Cloud/Multi-Device/AI Features:**
+- All data local (UserDefaults + file system)
+- No CloudKit, iCloud Sync, email, or agent/AI integration
+- Single-device only
+
+**Enforcement:**
+- Unsandboxed app (no sandbox restrictions)
+- Window level `.screenSaver` blocks desktop/Mission Control
+- Cmd+Q blocked via `applicationShouldTerminate()`
+- Launch-at-login forced enabled (can't disable)
+- Sleep/wake detection re-checks blocking state
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

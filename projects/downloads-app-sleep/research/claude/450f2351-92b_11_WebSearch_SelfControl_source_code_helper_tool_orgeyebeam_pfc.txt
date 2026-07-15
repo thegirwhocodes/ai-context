@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SelfControl source code helper tool org.eyebeam pfctl anchor firewall rules bloc
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:11 UTC
+========================================================================
+
+Search query: SelfControl source code helper tool org.eyebeam pfctl anchor firewall rules block domain
+
+----------------------------------------
+
+Web search results for query: "SelfControl source code helper tool org.eyebeam pfctl anchor firewall rules block domain"
+
+Links: [{"title":"journal/nix/pfctl-self-control-unblock.md at master · lawrencejones/journal","url":"https://github.com/lawrencejones/journal/blob/master/nix/pfctl-self-control-unblock.md"},{"title":"How to remove Self Control - Ashley Connor’s Blog","url":"https://www.ashleyconnor.co.uk/til/2022-11-26-how-to-remove-self-control"},{"title":"SelfControl not working in Terminal · Issue #443 · SelfControlApp/selfcontrol","url":"https://github.com/SelfControlApp/selfcontrol/issues/443"},{"title":"selfcontrol/org.eyebeam.SelfControl.plist at master · SelfControlApp/selfcontrol","url":"https://github.com/SelfControlApp/selfcontrol/blob/master/org.eyebeam.SelfControl.plist"},{"title":"Running SelfControl from the Terminal (Version 3.x)","url":"https://github.com/SelfControlApp/selfcontrol/wiki/Running-SelfControl-from-the-Terminal-(Version-3.x)"},{"title":"A Lack of SelfControl | Tranquilapps Blog","url":"https://tranquilapps.wordpress.com/2009/03/31/a-lack-of-selfcontrol/"},{"title":"FAQ · SelfControlApp/selfcontrol Wiki · GitHub","url":"https://github.com/SelfControlApp/selfcontrol/wiki/FAQ"},{"title":"SelfControl breaks Pow · Issue #265 · SelfControlApp/selfcontrol","url":"https://github.com/SelfControlApp/selfcontrol/issues/265"}]
+
+Based on the search results, I found relevant information about SelfControl's source code implementation regarding firewall rules and domain blocking:
+
+## SelfControl Helper Tool and Firewall Configuration
+
+The SelfControl helper command-line tool is located inside the SelfControl.app bundle at SelfControl.app/Contents/MacOS/org.eyebeam.SelfControl, and when a block is started, the command-line tool is copied to /Library/PrivilegedHelperTools/org.eyebeam.SelfControl.
+
+## Firewall Rules with pfctl Anchors
+
+eyebeam.org is the name under which SelfControl runs and it has created and configured a pfctl anchor. Anchors contain a set of rules that can control packet forwarding.
+
+When SelfControl is active, there is roughly one firewall rule per blocked domain under the org.eyebeam anchor. The root pf config file includes a load anchor "org.eyebeam" from "/etc/pf.anchors/org.eyebeam" entry.
+
+The firewall rules system allows SelfControl to block access to specific domains at the network level using macOS's built-in packet filter (pf) framework, with the anchor mechanism providing organization and management of these blocking rules.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

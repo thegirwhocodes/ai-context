@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dhsprogram.com/publications/publication-FR395-DHS-Final-Reports.cfm
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-26 19:27:19 UTC
+========================================================================
+
+URL: https://dhsprogram.com/publications/publication-FR395-DHS-Final-Reports.cfm
+Extraction prompt: Find any data or table numbers related to mobile phone or telephone ownership in Nigerian households. Look for percentages by urban/rural, by state (especially Lagos), and any feature phone vs smartphone breakdown.
+
+----------------------------------------
+
+# Mobile Phone Ownership Data in Nigeria DHS 2024
+
+I cannot provide the specific data you requested based on the webpage content available. The page shown is only a **publication summary/landing page** for the Nigeria DHS 2024 Final Report, not the actual report content itself.
+
+The page contains:
+- Publication metadata and download link
+- Abstract describing report scope
+- Citation information
+- Navigation elements
+
+To find mobile phone and telephone ownership statistics by urban/rural areas, states (including Lagos), and device types (feature phones vs. smartphones), you would need to:
+
+1. **Download the full PDF report** using the link provided: [Nigeria DHS, 2024 - Final Report (PDF, 23,270 KB)](/pubs/pdf/FR395/FR395.pdf)
+
+2. **Use the DHS data tools** listed on the page:
+   - [STATcompiler](https://statcompiler.com)
+   - [DHS API](https://api.dhsprogram.com)
+   - [IPUMS-DHS](https://www.idhsdata.org/)
+
+3. **Search the Survey Questions Database** at the link provided to identify relevant questions about phone ownership
+
+These tools typically contain detailed tables and cross-tabulations by demographic characteristics that would answer your query.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,51 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.hollatags.com/#api-endpoint
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:41:41 UTC
+========================================================================
+
+URL: https://docs.hollatags.com/#api-endpoint
+Extraction prompt: List ALL API endpoints and capabilities. Does HollaTags have voice API endpoints? IVR? Call control? Or is it just SMS and USSD? List every single endpoint and feature documented on this page.
+
+----------------------------------------
+
+# HollaTags API Endpoints and Capabilities
+
+Based on the provided documentation excerpt, here's what is explicitly documented:
+
+## Documented Capabilities
+
+The platform supports three primary communication channels:
+- **SMS**
+- **USSD**
+- **Voice**
+
+## Connection Protocols
+
+Two integration methods are available:
+1. **HTTP** (POST/GET requests)
+2. **SMPP** (recommended for high-volume customers)
+
+## Specific Endpoints Mentioned
+
+- HTTP API base: `https://sms.hollatags.com/api/`
+- SMS endpoint: `https://docs.hollatags.com/sms/send`
+- SMPP specification documentation available
+
+## SMPP-Specific Documentation
+
+The page references support for:
+- Authentication configuration
+- Connection setup
+- Supported Protocol Data Units (PDUs)
+- Sample client configurations
+
+## Important Limitation
+
+**This excerpt does not provide comprehensive endpoint details.** While the documentation mentions "SMS, USSD & Voice functionalities," the provided content lacks specifics about voice API endpoints, IVR capabilities, or detailed call control features. The page appears to be an introduction directing users to more detailed documentation pages not included in this excerpt.
+
+To obtain a complete list of all endpoints and features, you would need to access the full documentation at the referenced URLs.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

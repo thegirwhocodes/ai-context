@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Intron Voice API "integrator account" access key Sahara ASR developer
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 17:42:49 UTC
+========================================================================
+
+Search query: Intron Voice API "integrator account" access key Sahara ASR developer
+
+----------------------------------------
+
+Web search results for query: "Intron Voice API "integrator account" access key Sahara ASR developer"
+
+Links: [{"title":"Sahara V2 » Intron Voice AI","url":"https://www.intron.io/sahara-v2/"},{"title":"Introduction - Intron Voice API Documentation","url":"https://docs.voice.intron.io/docs/index/introduction"},{"title":"Voice AI » Intron Voice AI","url":"https://www.intron.io/"},{"title":"Intron Voice AI — Voice AI Technology | Voice AI Space","url":"https://www.voiceaispace.com/tool/intron-voice-ai"},{"title":"Intron Launches Voice AI for Africa with 24 Languages – IT News Africa – African Business Technology News","url":"https://www.itnewsafrica.com/2026/03/intron-launches-voice-ai-for-africa-with-24-languages/"},{"title":"Intron launches Sahara-v2, a voice AI model supporting 24 new African languages - Technext","url":"https://technext24.com/2026/03/05/intron-launches-sahara-v2-voice-ai-model/"},{"title":"Intron launches new voice AI service “Sahara v2” | The Kenyan Wallstreet | The Kenyan Wallstreet","url":"https://kenyanwallstreet.com/intron-launches-new-voice-ai-service-sahara-v2"},{"title":"Intron unveils Sahara v2 to expands African voice AI to 57 Languages - Businessday NG","url":"https://businessday.ng/technology/article/intron-unveils-sahara-v2-to-expands-african-voice-ai-to-57-languages/"},{"title":"Handle User Input with ASR - API Code","url":"https://developer.vonage.com/en/voice/voice-api/code-snippets/handle-user-input/handle-user-input-with-asr"},{"title":"About » Intron Voice AI","url":"https://www.intron.io/about/"}]
+
+Based on the search results, I found relevant information about Intron Voice API and Sahara ASR for developers. Here's what I found:
+
+## Intron Voice API Access
+
+To access the Intron Voice API, developers should navigate to voice.intron.io and sign in to their account, then go to the developers tab to find their API credentials.
+
+## Sahara ASR Platform
+
+Sahara-v2 is available now for developers, enterprises, and organizations across Africa. Developers can integrate Sahara-v2 using the new streamlined widget or deploy with full offline support.
+
+The model is accessible through APIs designed for both real-time and asynchronous deployment, with integration reportedly possible in as little as five minutes.
+
+## Developer Support
+
+If you have any questions or need assistance, the support team is available at voice@intron.io.
+
+However, the search results do not contain specific information about "integrator account" types or specific access key details. For detailed information about different account types and access key generation procedures, you may need to consult the full Intron Voice API documentation directly at docs.voice.intron.io or contact their support team.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

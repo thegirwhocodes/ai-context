@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/actions/record
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 20:00:28 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/actions/record
+Extraction prompt: Show the EXACT XML format for the Record element. Include all attributes (finishOnKey, maxLength, playBeep, trimSilence, callbackUrl) with their exact names and what callback fields are POSTed back when recording completes. Also: does the Record element need finishOnKey OR a maxLength to terminate? What happens if the user is silent for the entire maxLength? What's the silence timeout? Quote the docs verbatim.
+
+----------------------------------------
+
+I don't have access to the actual Africa's Talking documentation content. The page header you provided only shows "Documentation | Africa's Talking" without the detailed technical specifications you're requesting.
+
+To get the exact XML format for the Record element, all attributes, callback fields, termination requirements, and silence timeout information, you'll need to:
+
+1. Visit the Africa's Talking documentation directly at their developer portal
+2. Look for their USSD or Voice API documentation sections covering the Record element
+3. Check their XML specification guides
+
+I cannot provide verbatim quotes or specific technical details without access to the actual documentation source material. If you can share the relevant documentation excerpt, I'd be happy to help analyze it within the constraints you've outlined.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

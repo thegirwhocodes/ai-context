@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: historical out-of-school children data 1960 UNESCO archives net enrollment rate 
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:36:16 UTC
+========================================================================
+
+Search query: historical out-of-school children data 1960 UNESCO archives net enrollment rate primary
+
+----------------------------------------
+
+Web search results for query: "historical out-of-school children data 1960 UNESCO archives net enrollment rate primary"
+
+Links: [{"title":"School enrollment, primary (% gross) | Data","url":"https://data.worldbank.org/indicator/SE.PRM.ENRR"},{"title":"Share of children in primary school age who are in school - Our World in Data","url":"https://ourworldindata.org/grapher/primary-enrollment-selected-countries"},{"title":"School enrollment, primary (% net) | Data","url":"https://data.worldbank.org/indicator/SE.PRM.NENR"},{"title":"Adjusted net enrollment rate, primary (% of primary school age children) | Data","url":"https://data.worldbank.org/indicator/SE.PRM.TENR"},{"title":"A century of progress in access to primary education - Our World in Data","url":"https://ourworldindata.org/data-insights/a-century-of-progress-in-access-to-primary-education"},{"title":"Children out of school, primary | Data","url":"https://data.worldbank.org/indicator/SE.PRM.UNER"},{"title":"Children out of school (% of primary school age) | Data","url":"https://data.worldbank.org/indicator/SE.PRM.UNER.ZS"},{"title":"School enrollment rates - by level of education and gender - Our World in Data","url":"https://ourworldindata.org/grapher/school-enrolment"},{"title":"Out-of-school estimates | UNESCO","url":"https://www.unesco.org/en/education/view/outofschool/estimates"},{"title":"Primary-school-age children who are out of school by world region - Our World in Data","url":"https://ourworldindata.org/grapher/out-of-school-children-of-primary-school-age-by-world-region"}]
+
+Based on the search results, here's what I found regarding historical out-of-school children data and primary enrollment rates from UNESCO archives:
+
+## Available UNESCO Data
+
+Datasets on estimated school enrollment ratios from 1820 to 2010 and estimated educational attainment for the total, female, and male populations from 1870 to 2010 are available in five-year intervals for 111 countries. However, the UNESCO Institute for Statistics (UIS) provides free access to data for all UNESCO countries and regional groupings from 1970 to the most recent year available.
+
+## Out-of-School Data Coverage
+
+UNESCO's out-of-school comparison page is designed to facilitate the comparison of out-of-school values and trends across countries and across key groups of countries from 2000 onwards.
+
+## Key Finding
+
+The search results indicate that while historical enrollment data dating back to the 1800s exists in some datasets, **UNESCO's publicly accessible out-of-school data begins around 2000**, not 1960. The specific 1960 data you're seeking from UNESCO archives may require accessing specialized historical datasets or contacting the UNESCO Institute for Statistics directly, as the standard public databases don't extend that far back for out-of-school statistics.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

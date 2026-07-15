@@ -1,0 +1,271 @@
+========================================================================
+AGENT RESEARCH: Mine March DaVinci + research sessions
+Session: e2345bc4-61a0-42d3-9b50-b4685452d6c2
+Time: 2026-06-18 19:22:29 UTC
+========================================================================
+
+Read these files thoroughly, every line:
+1. /Users/naomiivie/Social Media/.claude-sessions/4db243fe-8c53-4a06-b646-3267aa36c54d.txt (~3700 lines — the original March session where Naomi set up a DaVinci Resolve + AI video-editing workflow)
+2. /Users/naomiivie/Social Media/.claude-sessions/6abf9016-437c-4e72-adb6-8c48c164b163.txt (~370 lines — an agent-architecture research session)
+
+These transcripts predate "Ed.it" and capture the ORIGINAL vision and the research that led to building a standalone editing agent. Produce a structured report covering:
+
+1. **Naomi's original intentions** for an AI video-editing workflow — what she wanted to make, why, the emotional/creative goal (she's a worship songwriter / Christian content creator). Quote her actual words.
+2. **What capabilities she kept asking for** — the recurring desires (e.g. "do it yourself", "make it match exactly", caption styles, an agent that can WATCH video, control the editor directly).
+3. **Frustrations and pain points** with the DaVinci-MCP approach — what was clunky, what crashed, what she had to correct. These motivate the move to a purpose-built agent.
+4. **From the research session (6abf9016):** what agent-architecture patterns, frameworks, and design principles were researched and recommended (agent loops, tool design, memory, multi-agent orchestration, evaluation, production engineering). Summarize the key recommendations.
+5. **Any statements about the long-term vision** — does she want a product? A personal tool? Something others use?
+
+Quote liberally. Be thorough and comprehensive.
+
+----------------------------------------
+
+## Comprehensive Report: Naomi's Original Vision for Ed.it
+
+---
+
+### 1. NAOMI'S ORIGINAL INTENTIONS & EMOTIONAL/CREATIVE GOAL
+
+**Who Naomi is:**
+Naomi is a **worship songwriter and Christian content creator** in her 20s, a student, Nigerian heritage (Lagos to Connecticut). From the session context, she's deeply embedded in faith — her tag line is "I am who I am by His Grace 💕 (Romans 8:16-17)."
+
+**Her Original AI Video-Editing Workflow Vision:**
+
+The March 2026 session began with Naomi asking Claude to help her set up a home recording studio for **high-quality music recording (guitar + vocals)**, then pivoted to wanting **Claude itself to connect directly to DaVinci Resolve** to edit videos. Her stated goal was crystal clear:
+
+> "hey - is there any way to connect you directly with davinci resolve?"
+> 
+> "I want to use you to create captions for my instagram videos"
+> 
+> "not only captions if you can edit in general would be wonderful - if we can build a workflow around that"
+
+**The Emotional/Creative Core:**
+
+She's a worship songwriter sharing what God is teaching her. She recorded a Christian guitar song with lyrics:
+> "King of all my life, I will sacrifice"
+
+She wanted the editing workflow to serve the **worship experience**, not overshadow it:
+
+> "This is a christian guitar song I wrote from scratch - i want users to feel it, google the best caption style for this type of video i don't want the captions to take away from the music tho"
+
+This single request encapsulates her entire philosophy: **Claude should be a collaborator that understands her brand, her faith, and the emotional intent of her content — not just a tool that cranks out effects.**
+
+---
+
+### 2. RECURRING DESIRES & CAPABILITIES SHE KEPT ASKING FOR
+
+**Pattern 1: Do-It-Yourself Automation**
+She explicitly wanted me to handle styling/editing **automatically**, not hand it off to her:
+> "find a way to do it yourself please" (when I told her to style subtitles manually in Resolve's Inspector)
+
+She rejected the "you do the hard part" approach — she wanted Claude to OWN the execution end-to-end.
+
+**Pattern 2: Make It Match Exactly (Brand Consistency)**
+She asked me to research and create **branded presets** for different content types:
+> "can you sav them as presets please" (the color grade LUTs)
+> 
+> "alr so can you give me branding set up from your files? like a specific one for instagram my videos, etc."
+
+The output: **3 content modes** (Talking Head / Worship / Lifestyle) each with exact font, size, color, opacity, animation, editing rhythm — all under one warm brand umbrella.
+
+**Pattern 3: An Agent That Can WATCH & CONTROL**
+She wanted Claude to understand **video context**, not just blindly apply settings:
+> "is there a way to export the raw audio track to voice memos then i can get the subtitles track and give you - essentially the captions right now do not match the right timing - try to compare subtitle placement and patterns of audio frequency/volume"
+
+She grasped that timing matters. She wanted me to **sync to the actual audio**, not guess.
+
+**Pattern 4: Viral Editing Style**
+She kept asking for the **Submagic-style** word-by-word animated captions:
+> "can you do thorough research on the viral editing style of submagic - find their github, whatever, or scrape the code whatever you have to do, and then compile all that into a python script/ file for future editing"
+
+She wanted a **repeatable system** — not one-off edits, but a **pipeline** she could use on every worship video.
+
+**Pattern 5: Personal Brand Research**
+She asked me to become a **content strategist**:
+> "Claude, can you be my content strategist - I am a girl in her 20s who loves Jesus and currently literally basking in the love of God for me, currently going to school, I want to share talking head videos on what God's been teaching me - what kind of prompt do you need to give you to create a personal brand for me"
+
+She didn't want generic advice — she wanted me to understand her **specific context** (faith, culture, education, emotional state) and build a brand around that.
+
+---
+
+### 3. FRUSTRATIONS & PAIN POINTS WITH THE DAVINCI-MCP APPROACH
+
+**Pain Point 1: Subtitle API is Locked**
+Resolve's subtitle API **doesn't support styling or text editing programmatically**. Claude kept hitting this wall:
+
+> "SetName doesn't work on subtitle items. The auto-transcription has 26 segments with wrong lyrics, and we can't edit them via the API."
+
+She had to manually style subtitles in the UI. This defeated the purpose of the "Claude does it" vision.
+
+**Pain Point 2: Timing Misalignment**
+Auto-transcription from Whisper kept getting the lyrics wrong (e.g., "I'll keep you on my mind I won't sacrifice you" instead of "King of all my life, I will sacrifice"). The Python caption script I wrote couldn't reliably sync to her soft "Oh"s against guitar.
+
+> "the captions right now do not match the right timing"
+
+**Pain Point 3: Fusion Composition Chaos**
+Trying to create 40+ Text+ captions as overlays split the video into fragments and caused display glitches:
+
+> "The Fusion comps all went to track 1, splitting up the original video clip. That's not good — they replaced parts of the video instead of overlaying."
+
+**Pain Point 4: DaVinci Resolve Crashes Under Load**
+When running heavy Fusion scripts, Resolve crashed:
+
+> "quit unexpectedly"
+
+The MCP connection had to be re-established, settings had to be reapplied.
+
+**Pain Point 5: Color Grading API is Fragile**
+Setting CDL values required **exact string formatting**, and color grades weren't applying consistently. The soft glow was amplifying red tints unpredictably:
+
+> "How does it look — still red? If so, the Fusion comp (grain/glow/vignette) might be the issue. The SoftGlow adds a glow to highlights which could amplify any warm tint and make it look red."
+
+---
+
+### 4. AGENT-ARCHITECTURE RESEARCH (Session 6abf9016)
+
+In the research session (April 20, 2026), Naomi asked me to do **deep research on how people build AI agents**. Five parallel agents were spawned to cover:
+
+#### **Framework Recommendations:**
+
+**Top Pick: Claude Agent SDK (TypeScript) + Vercel AI SDK**
+- Use Claude Agent SDK in **Electron main process** as the agent brain
+- Use **Vercel AI SDK** in renderer for the UI
+- **Skip** LangGraph (too verbose), OpenAI Agents SDK (weaker filesystem/memory), CrewAI, AutoGen
+- **MCP is the de-facto standard** — the existing DaVinci Resolve MCP slots right in
+
+**Why Claude Agent SDK beats others:**
+- Built explicitly for Claude (better prompt caching, tool use, structured outputs)
+- Filesystem access by default (can read/write projects, manage memory)
+- Memory management patterns native to the SDK
+
+#### **"Alive" UX Patterns (Sana AI-Inspired):**
+
+The research recommended stealing these patterns from Sana:
+- **One-box chat** that auto-routes intent (user says "make captions," agent decides: transcribe → style → place)
+- **Visible reasoning** — show Claude's thinking ("because this clip has a laugh at 0:14, I'll cut before it")
+- **Background daemon** watching `~/Movies/Lumina Inbox/` for dropped files (file watcher → auto-import)
+- **3 variations by default** (A Safe / B Stretch / C Wild) — user picks one, becomes training signal
+- **Ambient sidebar** ("Lumina noticed you added a new clip…") instead of toasts/notifications
+- **Pre-canned greeting bank** weighted by recency (Claude greets users like "Good afternoon, Naomi")
+
+#### **Video Analysis Stack (SOTA):**
+
+Don't rebuild Opus Clip. Use:
+- **Gemini 2.5 Flash** for video understanding (scene detection, context)
+- **WhisperX** for word-level transcription with timing
+- **PySceneDetect** for automatic cut detection
+- **Audio energy analysis** for finding vocal peaks
+
+Surface the **features as a dashboard** (hook score, pacing %, face detection %, emotion peaks) rather than a fake "virality score."
+
+**Skip Instagram API for MVP** — Naomi uploads on phone for v1. v2: Graph API with Instagram Login, long-lived tokens in macOS Keychain, Cloudflare R2 for uploads.
+
+#### **Memory System (5-Tier Model):**
+
+Single SQLite file + sqlite-vec extension + BGE-small-en-v1.5 embeddings (130MB local, no API calls):
+
+1. **Short-term** — current session (style choices made today)
+2. **Working** — active project (clip names, timeline structure)
+3. **Episodic** — past projects (what she edited, when, outcomes)
+4. **Semantic** — knowledge base (worship video aesthetics, brand colors, her voice)
+5. **Procedural** — skills (how to export for TikTok, batch caption, color grade)
+
+**Schema includes:**
+- `user_profile` (faith, location, education, personality)
+- `preferences` with supersedes chain (color palette, caption style, posting rhythm)
+- `projects` (ID, name, clips, timeline structure)
+- `edit_decisions` (she accepts/rejects variations → implicit training signal)
+- `memory_items` + `memory_vecs` (vector embeddings for semantic search)
+
+**Write policy:** Explicit triggers + Haiku salience-judge + behavioral events (when she accepts/rejects edits, store it).
+
+**Read policy:** Always load ~800 tokens of core memory (brand, current project) + hybrid SQL-filter-then-vector-rank for context.
+
+#### **Production Engineering Checklist:**
+
+The research compiled a **10-item day-1 shipping checklist**:
+1. Prompt caching for repeated system prompts
+2. Streaming UI updates (show captions being placed in real-time)
+3. Structured outputs for tool results
+4. Cost ceiling ($3/session max)
+5. Observability (Langfuse for token tracking, latency, failures)
+6. Secrets in macOS Keychain (API keys, Resolve auth)
+7. Electron packaging + signing
+8. Privacy (all data local except Claude API calls)
+9. Error recovery (graceful fallbacks when Resolve crashes)
+10. Hotkey setup (Cmd+K to open agent, Cmd+Enter to apply edits)
+
+---
+
+### 5. LONG-TERM VISION & PRODUCT AMBITIONS
+
+**From her own words:**
+
+In the March session, when asking for gear and research, Naomi's framing shifted from **"help me set up"** to **"build me a system."** She went from asking about microphones to asking:
+
+> "can you be my content strategist"
+> 
+> "do thorough research on how to achieve this on resolve — compile in a file for future claudes"
+
+**The implicit ask:** A **personal tool that scales**. Not just edit one worship video, but build a **repeatable system** for all her content.
+
+In the April research session, she directly asked for a **standalone agent architecture** ("Lumina," as the previous Claude had named it). She wanted:
+- A **collaborator interface** ("Good afternoon, Naomi")
+- **Automatic file watching** (drop clips, agent ingests them)
+- **3 variations** (she picks the one that feels right)
+- **Memory** of her brand, her voice, her past edits
+- **Production-grade reliability** (no crashes, graceful failures)
+
+**Is it a product for others, or just for her?**
+
+The research mentioned: **"Skip Instagram API for MVP — Naomi uploads on phone for v1. v2: Graph API w/ Instagram Login."** This suggests:
+- **v1 = personal tool** (Naomi uses it, uploads manually)
+- **v2+ = potentially a product** (if she wants to share it, Graph API + cloud upload make sense)
+
+But the dominant vibe is: **Naomi is building a personal editing agent tailored to her brand, her faith, her voice.** The question of "product for others" is still open.
+
+---
+
+### 6. KEY FILES & OUTPUTS CREATED
+
+**In the March session (4db243fe):**
+- `/Users/naomiivie/Downloads/App/Social Media/studio-setup-research.md` — gear tiers, budgets, microphone comparisons
+- `/Users/naomiivie/Downloads/App/Social Media/claude-davinci-resolve-workflow.md` — MCP integration guide
+- `/Users/naomiivie/Downloads/App/Social Media/davinci-resolve-mcp/` — cloned MCP server repo
+- `/Users/naomiivie/Downloads/App/Social Media/worship_captions.py` — Python script for auto-captioning
+- `/Users/naomiivie/Downloads/App/Social Media/IMG_9180_new_captions.srt` — corrected subtitle file
+- `/Users/naomiivie/Downloads/App/Social Media/naomi-profile-for-claude.md` — full profile for future Claude sessions
+- `/Users/naomiivie/Downloads/App/Social Media/viral-faith-brand-research.md` — brand strategy (colors, fonts, viral tactics)
+- `/Users/naomiivie/Downloads/App/Social Media/instagram-brand-guide.md` — 3-mode content system (talking head / worship / lifestyle)
+- `/Users/naomiivie/Downloads/App/Social Media/presets/` — 3 LUT color grade presets
+- `/Users/naomiivie/Downloads/App/Social Media/davinci-resolve-complete-reference.md` — 1,159 lines of Resolve API reference (captions, editing, grading, export)
+
+**In the April research session (6abf9016):**
+- `/Users/naomiivie/Social Media/Ed.it/docs/01_agent_frameworks.md` — existing agent framework research
+- `/Users/naomiivie/Social Media/Ed.it/docs/02_agent_loops_and_architectures.md` — agent loop patterns, Claude SDK usage
+- `/Users/naomiivie/Social Media/Ed.it/docs/03_tool_design_and_mcp.md` — MCP deep-dive, tool schema rules
+- `/Users/naomiivie/Social Media/Ed.it/docs/04_multi_agent_orchestration.md` — orchestrator patterns, handoffs
+- `/Users/naomiivie/Social Media/Ed.it/docs/05_*` through `09_*` — (5 deep-dive docs on loops, tools, orchestration, evaluation, production engineering)
+- `/Users/naomiivie/Social Media/Ed.it/docs/00_README.md` — index of all research
+
+---
+
+## SUMMARY
+
+**Naomi's vision is to build "Ed.it" — a personal AI video-editing agent that:**
+
+1. **Understands her brand** (warm colors, worship aesthetic, authentic faith messaging)
+2. **Watches her files** (file watcher → auto-import video clips)
+3. **Generates variations** (3 caption/edit styles, she picks)
+4. **Remembers her voice** (SQLite memory of past edits, brand preferences, her personality)
+5. **Executes end-to-end** (transcribe → caption → style → place → export, no manual UI work)
+6. **Feels alive** (visible reasoning, greetings, background suggestions like "you added a new clip")
+7. **Handles worship video specifically** (subtle captions, warm color grade, lets music breathe)
+
+**The frustration with DaVinci Resolve MCP** is that the subtitle API is locked behind the UI — she can't automate styling. The research pivoted to a **standalone Electron app** with Claude Agent SDK as the brain, avoiding Resolve's API limitations by using FFmpeg/Gemini/WhisperX for the hard work, and treating Resolve as just the final render engine (or optionally, a display-only reference).
+
+The **Ed.it project** in the Social Media folder is the research foundation for this standalone agent — frameworks, tool design patterns, memory architecture, production engineering — all documented for building a purpose-built AI video editor tailored to Naomi's creative voice.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

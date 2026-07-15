@@ -1,0 +1,31 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.tcu.edu/news/2026/serving-all-corners-of-the-world-students-claim-gl
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 19:42:46 UTC
+========================================================================
+
+URL: https://www.tcu.edu/news/2026/serving-all-corners-of-the-world-students-claim-global-prize-for-ai-innovation.php
+Extraction prompt: What prize did Bakame AI win? How much money? Any details about the company structure, registration, or legal status? What is the prize amount from the World Government Summit or M-Gov award?
+
+----------------------------------------
+
+# Bakame AI Prize and Company Details
+
+## Prize Won
+Bakame AI won the **Global Best M-Gov Award in Dubai**. However, the article does not specify the monetary value of this prize.
+
+## Company Structure and Legal Status
+The article contains no information about:
+- Company registration details
+- Legal business structure
+- Incorporation status
+- Financial specifics beyond the initial $8,000 grant
+
+## Funding Details
+The only funding mentioned is an **$8,000 grant from TCU's CREATE program**, which the co-founders received as initial capital to develop their concept.
+
+The article focuses primarily on the platform's mission and technology rather than business or financial specifics. For detailed information about Bakame AI's corporate structure or prize details, you would need to consult additional sources beyond this news article.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

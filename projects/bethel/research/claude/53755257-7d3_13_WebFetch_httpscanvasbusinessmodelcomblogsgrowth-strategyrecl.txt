@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://canvasbusinessmodel.com/blogs/growth-strategy/reclaim-ai-growth-strategy
+Session: 53755257-7d3a-471d-9294-085caf5ec916
+Time: 2026-03-29 20:41:20 UTC
+========================================================================
+
+URL: https://canvasbusinessmodel.com/blogs/growth-strategy/reclaim-ai-growth-strategy
+Extraction prompt: Extract Reclaim.ai's complete growth strategy, customer acquisition tactics, freemium model details, viral loops, and how they attract individual users. Include any specific metrics or numbers.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://canvasbusinessmodel.com/blogs/growth-strategy/reclaim-ai-growth-strategy
+Redirect URL: https://businessmodelcanvastemplate.com/blogs/growth-strategy/reclaim-ai-growth-strategy
+Status: 301 Moved Permanently
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "https://businessmodelcanvastemplate.com/blogs/growth-strategy/reclaim-ai-growth-strategy"
+- prompt: "Extract Reclaim.ai's complete growth strategy, customer acquisition tactics, freemium model details, viral loops, and how they attract individual users. Include any specific metrics or numbers."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

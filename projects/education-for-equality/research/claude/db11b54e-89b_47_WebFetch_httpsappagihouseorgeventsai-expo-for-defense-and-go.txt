@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://app.agihouse.org/events/ai-expo-for-defense-and-gov-20250602
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 22:50:37 UTC
+========================================================================
+
+URL: https://app.agihouse.org/events/ai-expo-for-defense-and-gov-20250602
+Extraction prompt: List every winner, winning team, project name, prize amount, and track from this hackathon event. Include team member names if shown. Quote project descriptions verbatim.
+
+----------------------------------------
+
+I appreciate your request, but the web page content provided only contains the title "AGI House" with no additional information about hackathon winners, teams, projects, prizes, or tracks.
+
+To provide the comprehensive list you're looking for, I would need the full web page content that includes:
+- Winner names and team compositions
+- Project names and descriptions
+- Prize amounts
+- Track categories
+
+Could you please share the complete web page content so I can extract this information according to your specifications?
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

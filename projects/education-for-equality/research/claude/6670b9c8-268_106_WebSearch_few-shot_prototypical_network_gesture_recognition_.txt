@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: few-shot prototypical network gesture recognition simple implementation pytorch 
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:33:36 UTC
+========================================================================
+
+Search query: few-shot prototypical network gesture recognition simple implementation pytorch hours tutorial
+
+----------------------------------------
+
+Web search results for query: "few-shot prototypical network gesture recognition simple implementation pytorch hours tutorial"
+
+Links: [{"title":"GitHub - orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch: Implementation of Prototypical Networks for Few Shot Learning (https://arxiv.org/abs/1703.05175) in Pytorch · GitHub","url":"https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch"},{"title":"GitHub - ahmetgunduz/Real-time-GesRec: Real-time Hand Gesture Recognition with PyTorch on EgoGesture, NvGesture, Jester, Kinetics and UCF101","url":"https://github.com/ahmetgunduz/Real-time-GesRec"},{"title":"Few shot classification with Prototypical Networks","url":"https://apoorvnandan.github.io/2020/12/14/prototypical-networks/"},{"title":"GitHub - yinboc/prototypical-network-pytorch: A re-implementation of \"Prototypical Networks for Few-shot Learning\"","url":"https://github.com/yinboc/prototypical-network-pytorch"},{"title":"GitHub - fabiopk/RT_GestureRecognition: Real time gesture recognition using PyTorch","url":"https://github.com/fabiopk/RT_GestureRecognition"},{"title":"GitHub - fabian57fabian/prototypical-networks-few-shot-learning: Pytorch implementation of prototypical networks in few shot learning","url":"https://github.com/fabian57fabian/prototypical-networks-few-shot-learning"},{"title":"Your Own Few-Shot Classification Model Ready in 15mn ...","url":"https://data-ai.theodo.com/en/technical-blog/your-few-shot-model-15mn-pytorch"},{"title":"Post-stroke hand gesture recognition via one-shot transfer learning using prototypical networks | Journal of NeuroEngineering and Rehabilitation | Springer Nature Link","url":"https://link.springer.com/article/10.1186/s12984-024-01398-7"},{"title":"GitHub - HSarwat/Few-Shot-Proto-TL: This is a repo for the paper titled Post-Stroke Hand Gesture Recognition via One-Shot Transfer Learning using Prototypical Networks","url":"https://github.com/HSarwat/Few-Shot-Proto-TL"},{"title":"Prototypical-Networks-for-Few-shot-Learning-PyTorch/src/prototypical_batch_sampler.py at master · orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch","url":"https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch/blob/master/src/prototypical_batch_sampler.py"}]
+
+Here are the search results for your query about few-shot prototypical networks for gesture recognition with PyTorch implementation:
+
+**Key Implementations Found:**
+
+1. A simple implementation of Prototypical Networks for Few Shot Learning in PyTorch is available on GitHub (orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch). Prototypical Networks are trained to embed samples features in a vectorial space, where samples for a subset of classes are selected and sent through the model, and prototypes are computed as the barycentre coordinates in the vectorial space for each class.
+
+2. Another simple implementation of prototypical networks in few shot learning is available (fabian57fabian/prototypical-networks-few-shot-learning).
+
+3. A detailed blog post tutorial on few-shot classification with Prototypical Networks that includes implementation details with code examples.
+
+**Application to Gesture Recognition:**
+
+Several PyTorch-based projects for gesture recognition exist, including PyTorch implementation of real-time hand gesture detection and classification using convolutional neural networks. More specifically, prototypical networks have been used for one-shot transfer learning for hand gesture recognition, with class prototypes obtained from the mean of the support set mapped to positions in the embedding space, and classes for new samples chosen using a distance function to identify the closest class prototype.
+
+These repositories and tutorials provide practical PyTorch implementations that could serve as a foundation for gesture recognition with few-shot prototypical networks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,52 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.hetzner.com/dedicated-rootserver/matrix-gpu/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-30 22:26:10 UTC
+========================================================================
+
+URL: https://www.hetzner.com/dedicated-rootserver/matrix-gpu/
+Extraction prompt: Extract ALL GPU server models, their specs (GPU model, VRAM, CPU, RAM, storage), and their monthly prices. I need every tier they offer.
+
+----------------------------------------
+
+# Hetzner GPU Server Models
+
+Based on the webpage content, Hetzner offers two GPU server models in their GEX-line:
+
+## GEX44
+**Purpose:** "for AI inference"
+
+**Specifications:**
+- GPU: NVIDIA RTX™ 4000 SFF Ada Generation
+- vRAM: 20 GB GDDR6
+- CPU: Intel® Core™ i5-13500 (6 Performance Cores, 8 Efficient Cores)
+- RAM: 64 GB DDR4
+- Tensor Performance: 306.8 TFLOPS
+
+**Pricing:** The exact monthly price is not displayed in the provided content (shown as "max/mo." and "/hr" without values).
+
+**Setup Fee:** Listed as "once" without a specific amount.
+
+---
+
+## GEX131
+**Purpose:** "for AI training"
+
+**Specifications:**
+- GPU: NVIDIA RTX PRO™ 6000 Blackwell Max-Q
+- vRAM: 96 GB GDDR7
+- CPU: Intel® Xeon® Gold 5412U (24 Cores)
+- RAM: 256 GB DDR5 ECC
+- Tensor Performance: 3511 TFLOPS
+
+**Pricing:** Described as "starting from" with specific values not visible in the provided content.
+
+**Setup Fee:** Listed as "once" without specification.
+
+---
+
+**Note:** Storage specifications are not detailed on this page. The website indicates these servers are "100% Green Electricity" powered and GDPR-compliant, located in European data centers.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

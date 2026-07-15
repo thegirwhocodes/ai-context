@@ -1,0 +1,31 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.flynumber.com/products/virtual-phone-number/nigeria
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:34:48 UTC
+========================================================================
+
+URL: https://www.flynumber.com/products/virtual-phone-number/nigeria
+Extraction prompt: Find details about: who pays for calls (caller or number owner), toll-free options, whether the number owner can absorb call costs, inbound call billing, any mention of reverse billing or caller-pays-nothing models
+
+----------------------------------------
+
+# Call Cost Coverage Analysis
+
+Based on the provided content, here's what's specified about who pays for calls:
+
+## Incoming Calls
+The number owner receives calls at **no cost**. The service includes "Unlimited incoming minutes on VoIP calls to your Nigerian number."
+
+## Outgoing Calls
+The number owner bears costs when making calls:
+- "For a low per min rate you can forward the Nigeria calls to any regular phone number"
+- Outgoing calls made through the phone system incur "a low per minute rate"
+
+## Caller-Pays Model
+The content does **not** mention reverse billing, toll-free options, or any mechanism where callers absorb the costs of reaching a Nigerian FlyNumber. Standard calling conventions appear to apply: inbound calls reach the number owner free of charge, while outbound calls incur per-minute charges to the account holder.
+
+The pricing structure emphasizes that owners benefit from "call like a local, pay like a local" rates, suggesting outbound savings rather than caller-cost absorption.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

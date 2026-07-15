@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Anthropic Claude API pricing per million tokens Opus Sonnet Haiku 2026
+Session: 50605635-b544-4e75-9092-60153c86773c
+Time: 2026-06-22 18:22:42 UTC
+========================================================================
+
+Search query: Anthropic Claude API pricing per million tokens Opus Sonnet Haiku 2026
+
+----------------------------------------
+
+Web search results for query: "Anthropic Claude API pricing per million tokens Opus Sonnet Haiku 2026"
+
+Links: [{"title":"Anthropic API Pricing in 2026: Complete Guide — Models, Caching, Batch & Optimization","url":"https://www.finout.io/blog/anthropic-api-pricing"},{"title":"Pricing - Claude API Docs","url":"https://platform.claude.com/docs/en/about-claude/pricing"},{"title":"Claude API Pricing 2026: Opus 4.8, Sonnet 4.6, Haiku 4.5 Costs","url":"https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration"},{"title":"Anthropic API Pricing 2026: Official Token Rates for Every Claude Model","url":"https://pecollective.com/tools/anthropic-api-pricing/"},{"title":"Claude API Pricing 2026: Latest Anthropic Costs for Opus, Sonnet, Haiku","url":"https://evolink.ai/blog/claude-api-pricing-guide-2026"},{"title":"Anthropic Claude API Pricing In 2026: Every Model, Token Rate, And Cost Lever","url":"https://www.cloudzero.com/blog/claude-api-pricing/"},{"title":"Claude API Pricing (March 2026): Opus $5/M Tokens, Sonnet $3, Haiku $0.25 | TLDL | TLDL","url":"https://www.tldl.io/resources/anthropic-api-pricing"},{"title":"Current Anthropic Claude API Pricing 2026: Opus, Sonnet & Haiku Costs - DevTk.AI","url":"https://devtk.ai/en/blog/claude-api-pricing-guide-2026/"},{"title":"Anthropic Claude API Pricing 2026 - Silicon Data — GPU Performance Data for Companies","url":"https://www.silicondata.com/use-cases/anthropic-claude-api-pricing-2026/"},{"title":"Claude API Pricing: Haiku 4.5, Sonnet 4.6, and Opus 4.7 (April 2026) | BenchLM.ai","url":"https://benchlm.ai/blog/posts/claude-api-pricing"}]
+
+Based on the search results, here's the current Anthropic Claude API pricing for 2026:
+
+## Current Generation Models (2026 Pricing)
+
+**Claude Opus 4.8** (released May 28, 2026) — $5.00 input / $25.00 output per million tokens
+
+**Claude Sonnet 4.6** — $3.00 input / $15.00 output per million tokens
+
+**Claude Haiku 4.5** — $1.00 input / $5.00 output per million tokens
+
+## Key Pricing Features
+
+Batch processing is 50% cheaper across all models. Prompt caching cuts cached input cost by 90%.
+
+Opus 4.8, Opus 4.7, and Sonnet 4.6 support 1M token context at flat rates with no surcharge.
+
+## Additional Notes
+
+Fast Mode is $10/$50 per million tokens (down from $30/$150 on Opus 4.7).
+
+The prices are billed separately for input and output tokens, with output tokens consistently costing 5x the input token rate across all current models.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

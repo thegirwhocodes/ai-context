@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://ourworldindata.org/grapher/primary-enrollment-selected-countries.csv
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:37:02 UTC
+========================================================================
+
+URL: https://ourworldindata.org/grapher/primary-enrollment-selected-countries.csv
+Extraction prompt: Get the data — list whether Nigeria is included. If yes, show Nigeria's data for years 1960-1985.
+
+----------------------------------------
+
+# Nigeria Data Check
+
+Yes, Nigeria is included in the dataset. However, the provided content appears to be truncated and does not display Nigeria's data for the 1960-1985 period you requested.
+
+The data excerpt ends mid-Iceland entries with "[Content truncated due to length...]" before reaching Nigeria's entries alphabetically. To access Nigeria's net primary education enrollment rates for 1960-1985, you would need to view the complete, untruncated dataset.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

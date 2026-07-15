@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.avoxi.com/solutions/programmable-voice-api/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:00:25 UTC
+========================================================================
+
+URL: https://www.avoxi.com/solutions/programmable-voice-api/
+Extraction prompt: What programmable voice capabilities does AVOXI offer? Can you control calls via API — play audio, record, gather DTMF, route calls? Is there webhook-driven call control like Twilio/AT? Or is it just number provisioning and call forwarding? What exactly can developers do?
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

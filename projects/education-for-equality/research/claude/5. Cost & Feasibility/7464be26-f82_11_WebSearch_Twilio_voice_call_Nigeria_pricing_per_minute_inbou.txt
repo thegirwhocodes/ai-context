@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Twilio voice call Nigeria pricing per minute inbound outbound 2025
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:13:36 UTC
+========================================================================
+
+Search query: Twilio voice call Nigeria pricing per minute inbound outbound 2025
+
+----------------------------------------
+
+Web search results for query: "Twilio voice call Nigeria pricing per minute inbound outbound 2025"
+
+Links: [{"title":"Programmable Voice Pricing in Nigeria | Twilio","url":"https://www.twilio.com/en-us/voice/pricing/ng"},{"title":"Pricing: Voice Resource | Twilio","url":"https://www.twilio.com/docs/voice/pricing"},{"title":"How Much Will My Voice Application Cost per Minute?","url":"https://help.twilio.com/articles/223179868"},{"title":"Programmable Voice Pricing in United States | Twilio","url":"https://www.twilio.com/en-us/voice/pricing/us"},{"title":"Twilio rates in 2025 - Callin","url":"https://callin.io/twilio-rates/"},{"title":"Twilio Pricing | Twilio","url":"https://www.twilio.com/en-us/pricing"},{"title":"Twilio phone call pricing - pricing - pricing explained - Callin","url":"https://callin.io/twilio-phone-call-pricing-pricing-pricing-explained/"},{"title":"Twilio call pricing in 2025 - Callin","url":"https://callin.io/twilio-call-pricing/"},{"title":"Pricing: Messaging Countries resource | Twilio","url":"https://www.twilio.com/docs/messaging/api/pricing"},{"title":"Twilio Pricing: A Comprehensive Guide | Capterra","url":"https://www.capterra.com/p/180158/Twilio-Communications-Platform/pricing/"}]
+
+Based on the search results, I found information about Twilio's voice call pricing structure, though the results don't provide specific Nigeria-only pricing details. Here's what I found:
+
+## General Twilio Voice Pricing Structure
+
+Twilio's voice call pricing starts at $0.0085/min to receive and $0.014/min to make a call. However, rates vary based on geographic location, call direction (inbound or outbound), with costs differing significantly between domestic and international calls.
+
+For reference, in the United States, inbound calls typically range from $0.0085 to $0.022 per minute, while outbound calls can cost between $0.013 and $0.030 per minute.
+
+## Accessing Nigeria-Specific Pricing
+
+The search results indicate that Twilio has country-specific pricing pages (including one for Nigeria at twilio.com/en-us/voice/pricing/ng), but the specific per-minute rates for Nigeria inbound and outbound calls are not displayed in the search results. To get the exact Nigeria pricing for 2025, you would need to:
+
+1. Visit Twilio's Nigeria-specific pricing page directly at: https://www.twilio.com/en-us/voice/pricing/ng
+2. Contact Twilio sales for the most current Nigeria rates
+3. Use Twilio's Pricing API to query the specific rates for Nigerian phone numbers
+
+The pricing varies significantly by country and call type, so checking Twilio's official Nigeria pricing page would provide the most accurate and up-to-date information.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

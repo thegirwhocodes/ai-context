@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: GenAI.mil applications portfolio Department of Defense generative AI tools soldi
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:05:50 UTC
+========================================================================
+
+Search query: GenAI.mil applications portfolio Department of Defense generative AI tools soldiers
+
+----------------------------------------
+
+Web search results for query: "GenAI.mil applications portfolio Department of Defense generative AI tools soldiers"
+
+Links: [{"title":"The War Department Unleashes AI on New GenAI.mil Platform > U.S. Department of War > Release | U.S. Department of War","url":"https://www.war.gov/News/Releases/Release/Article/4354916/the-war-department-unleashes-ai-on-new-genaimil-platform/"},{"title":"Pentagon rolls out GenAI platform to all personnel, using Google's Gemini - Breaking Defense","url":"https://breakingdefense.com/2025/12/pentagon-rolls-out-genai-platform-to-all-personnel-using-googles-gemini/"},{"title":"DOD initiates large-scale rollout of commercial AI models and emerging agentic tools | DefenseScoop","url":"https://defensescoop.com/2025/12/09/genai-mil-platform-dod-commercial-ai-models-agentic-tools-google-gemini/"},{"title":"U.S. military to use Google Gemini for new AI platform","url":"https://www.axios.com/2025/12/09/pentagon-google-gemini-genai-military-platform"},{"title":"Chief Digital and Artificial Intelligence Office Selects Google Cloud's AI to Power GenAI.mil - Dec 9, 2025","url":"https://www.googlecloudpresscorner.com/2025-12-09-Chief-Digital-and-Artificial-Intelligence-Office-Selects-Google-Clouds-AI-to-Power-GenAI-mil"},{"title":"Pentagon uses GenAI.mil to create 100K agents | DefenseScoop","url":"https://defensescoop.com/2026/04/23/pentagon-uses-genai-mil-to-create-agents/"},{"title":"U.S. Launches Own Military AI With Google Gemini to Boost Army-Wide AI Adoption","url":"https://www.armyrecognition.com/news/army-news/2025/u-s-launches-own-military-ai-with-google-gemini-to-boost-army-wide-ai-adoption"},{"title":"Bringing ChatGPT to GenAI.mil | OpenAI","url":"https://openai.com/index/bringing-chatgpt-to-genaimil/"},{"title":"ChatGPT will be available to 3 million military users on GenAI.mil - Breaking Defense","url":"https://breakingdefense.com/2026/02/chatgpt-will-be-available-to-3-million-military-users-on-genai-mil/"},{"title":"GenAI.mil Makes Debut as DOW Pushes Commercial AI at Scale | GovCIO Media & Research","url":"https://govciomedia.com/genai-mil-makes-debut-as-dow-pushes-commercial-ai-at-scale/"}]
+
+Based on the search results, here's what I found about GenAI.mil and the Department of Defense's generative AI applications portfolio:
+
+## Overview of GenAI.mil
+
+The War Department announced the launch of Google Cloud's Gemini for Government as the first of several frontier AI capabilities to be housed on GenAI.mil, the department's new bespoke AI platform. The platform is meant to make generative AI tools available to all three million military and civilian personnel.
+
+## Platform Launch and Rollout
+
+By the end of 2025, 3 million employees, warfighters, and contractors were given AI access on their desktop. The tech has since been adopted by the Army, Navy, Marines, Air Force and Space Force as their preferred enterprise system.
+
+## Available Tools
+
+GenAI launched with Google's Gemini, then added xAI's Grok, and is deploying ChatGPT. The Pentagon's Chief Digital and Artificial Intelligence Office (CDAO) currently has contracts with four frontier AI companies: Anthropic, xAI, OpenAI and Google.
+
+## Use Cases for Soldiers and Personnel
+
+The first wave of use cases includes summarizing lengthy policy documents, generating compliance checklists, drafting correspondence, analyzing imagery and video, and automating routine staff processes. Pentagon employees can use Gemini to conduct deep research, format documents and even analyze video or imagery in unprecedented speed.
+
+## Agentic AI Development
+
+Defense officials recently used the Pentagon's enterprise-wide generative artificial intelligence platform to create 100,000 agents amid a broader push by department leadership to speed up AI adoption.
+
+## Data Security
+
+All of the tools available on GenAI.mil are certified for Controlled Unclassified Information (CUI) and Impact Level 5 (IL5) — meaning they're secure and approved for operational use by the department.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

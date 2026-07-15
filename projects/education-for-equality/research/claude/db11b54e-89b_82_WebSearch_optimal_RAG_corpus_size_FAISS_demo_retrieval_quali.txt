@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: optimal RAG corpus size FAISS demo retrieval quality vs quantity 2026
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:44:26 UTC
+========================================================================
+
+Search query: optimal RAG corpus size FAISS demo retrieval quality vs quantity 2026
+
+----------------------------------------
+
+Web search results for query: "optimal RAG corpus size FAISS demo retrieval quality vs quantity 2026"
+
+Links: [{"title":"To Memorize or to Retrieve: Scaling Laws for RAG-Considerate Pretraining","url":"https://arxiv.org/html/2604.00715"},{"title":"Critique of RAG at scale: the Curse of Dimensionality and why retrieval engineering is being skipped - Glen Rhodes","url":"https://glenrhodes.com/critique-of-rag-at-scale-the-curse-of-dimensionality-and-why-retrieval-engineering-is-being-skipped-2/"},{"title":"Enhance RAG System with FAISS and Hugging Face","url":"https://www.myscale.com/blog/implementing-semantic-cache-rag-system-faiss-hugging-face/"},{"title":"Vector Databases for Efficient RAG: A First Look at FAISS and Redis | by Sergio Perez Rodriguez | Medium","url":"https://medium.com/@sergiopr89/vector-databases-for-efficient-rag-a-first-look-at-faiss-and-redis-b18314cd30b6"},{"title":"Simple RAG (Retrieval-Augmented Generation) Implementation Using FAISS and OpenAI | by Yash Paliwal | Medium","url":"https://medium.com/@yashpaliwal42/simple-rag-retrieval-augmented-generation-implementation-using-faiss-and-openai-2a74775b17c3"},{"title":"rag-knowledge-graph/faiss/demo.ipynb at main · cristianleoo/rag-knowledge-graph","url":"https://github.com/cristianleoo/rag-knowledge-graph/blob/main/faiss/demo.ipynb"},{"title":"Retrieval-Augmented Generation (RAG) with LangChain and FAISS | by Alex Rodrigues | Medium","url":"https://medium.com/@alexrodriguesj/retrieval-augmented-generation-rag-with-langchain-and-faiss-a3997f95b551"},{"title":"Building RAG using Gemma & Faiss Vector DB","url":"https://www.kaggle.com/code/youssef19/building-rag-using-gemma-faiss-vector-db"},{"title":"Part 1 - Build an ArXiv RAG search system w FAISS","url":"https://www.kaggle.com/code/vbookshelf/part-1-build-an-arxiv-rag-search-system-w-faiss"},{"title":"How to Deploy RAG Pipelines with Faiss and LangChain on a Cloud GPU","url":"https://www.runpod.io/articles/guides/deploying-rag-pipelines-faiss-langchain-cloud-gpu"}]
+
+Based on the search results, here's what I found about optimal RAG corpus size, FAISS, and the quality vs. quantity tradeoff:
+
+## Key Finding: Quality vs. Quantity in RAG
+
+Retrieval quality degrades predictably and mathematically as corpus size grows. This is a critical consideration when designing RAG systems.
+
+## Practical Guidance on Scaling
+
+If you're building a RAG system that will eventually exceed 10,000 documents, you need to plan for this from the start, which means hybrid retrieval with tuned BM25 weights, a reranking stage using a cross-encoder, metadata filtering, and a real offline evaluation harness with precision and recall metrics measured at target corpus size, not demo size.
+
+A common mistake is that most teams use a vanilla FAISS index or whatever their vector database defaults to, feed in full documents chunked at 512 tokens, and call it done, which leads to degradation at scale.
+
+## Improving Retrieval at Scale
+
+Reranking alone can recover a large portion of the precision you lose at scale, where a cross-encoder reranker takes the top 50 retrieved chunks and re-scores them with full attention.
+
+## Recent Research on Corpus Size
+
+Recent 2026 research examining RAG scaling uses a retrieval setup with a fixed FAISS index constructed from a held-out corpus with size equivalent to 20% of the max pretraining tokens, and tests across multiple corpus sizes to study the scaling relationship between model size, corpus size, and performance.
+
+The takeaway: there's no single "optimal" size—rather, the quality of your retrieval degrades with larger corpora unless you implement proper engineering practices like reranking, hybrid retrieval, and careful evaluation at scale.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

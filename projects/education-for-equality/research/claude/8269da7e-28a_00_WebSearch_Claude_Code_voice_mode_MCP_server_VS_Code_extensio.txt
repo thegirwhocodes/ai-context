@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Code voice mode MCP server VS Code extension
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:25 UTC
+========================================================================
+
+Search query: Claude Code voice mode MCP server VS Code extension
+
+----------------------------------------
+
+Web search results for query: "Claude Code voice mode MCP server VS Code extension"
+
+Links: [{"title":"Use Claude Code in VS Code - Claude Code Docs","url":"https://code.claude.com/docs/en/vs-code"},{"title":"Claude VS Code MCP Integration","url":"https://lobehub.com/mcp/kodachiqube-claude-vscode-mcp"},{"title":"VoiceMode MCP - Voice Mode for Claude Code","url":"https://getvoicemode.com/"},{"title":"GitHub - tjx666/vscode-mcp: MCP server for Claude Code/VSCode/Cursor/Windsurf to use editor self functionality. ⚡ Get real-time LSP diagnostics, type information, and code navigation for AI coding agents without waiting for slow tsc/eslint checks.","url":"https://github.com/tjx666/vscode-mcp"},{"title":"GitHub - johnmatthewtennant/mcp-voice-hooks: MCP server plugin for voice input and output in Claude Code · GitHub","url":"https://github.com/johnmatthewtennant/mcp-voice-hooks"},{"title":"Add and manage MCP servers in VS Code","url":"https://code.visualstudio.com/docs/copilot/customization/mcp-servers"},{"title":"GitHub - malvex/mcp-server-vscode: Give Claude Code direct access to VS Code's code navigation, error checking, and debugging tools through the Model Context Protocol. · GitHub","url":"https://github.com/malvex/mcp-server-vscode"},{"title":"Can Claude Code VS Code Extension Connect to MCP Servers? (Current Limitations Explained) | BSWEN","url":"https://docs.bswen.com/blog/2026-04-23-claude-code-extension-mcp-servers/"},{"title":"Voice Mode for Claude Code - Install MCP Server","url":"https://lobehub.com/mcp/mbailey-voice-mcp"},{"title":"Claude Code Voice - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=Fultonmarketaistudio.claude-code-voice"}]
+
+Based on the search results, here's what I found about Claude Code voice mode, MCP servers, and VS Code extensions:
+
+## Voice Mode for Claude Code
+
+Voice Mode MCP brings natural voice conversations to Claude Code and other AI coding assistants. There are several implementations available:
+
+1. **VoiceMode MCP**: Built on the Model Context Protocol (MCP), it provides a clean, reliable interface for adding voice capabilities to your AI workflows.
+
+2. **mcp-voice-hooks**: Voice Mode for Claude Code allows you to have a continuous two-way conversation with Claude Code, hands-free, using the new Claude Code hooks to deliver voice input to Claude while it works.
+
+3. **voice-mcp**: A Model Context Protocol (MCP) server that enables voice interactions with Claude and other LLMs, requiring only an OpenAI API key and microphone/speakers.
+
+## MCP Servers and VS Code Extension
+
+An important limitation to note: The Claude Code VS Code extension cannot connect to MCP servers, as MCP functionality works in CLI but is not supported in the VS Code extension. However, when the VS Code extension is active, it runs a local MCP server that the CLI connects to automatically, allowing the CLI to open diffs in VS Code's native diff viewer, read selections for @-mentions, and execute cells in Jupyter notebooks.
+
+## Claude Code Voice Extension
+
+There's a VS Code extension called Claude Code Voice that provides a voice-enabled Claude Code chat interface with native mic recording and text-to-speech.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

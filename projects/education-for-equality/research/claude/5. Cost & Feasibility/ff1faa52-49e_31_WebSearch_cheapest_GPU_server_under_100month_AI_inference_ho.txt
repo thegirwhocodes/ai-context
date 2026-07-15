@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: cheapest GPU server under $100/month AI inference hosting 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:58:30 UTC
+========================================================================
+
+Search query: cheapest GPU server under $100/month AI inference hosting 2026
+
+----------------------------------------
+
+Web search results for query: "cheapest GPU server under $100/month AI inference hosting 2026"
+
+Links: [{"title":"Rent GPUs | Vast.ai","url":"https://vast.ai/"},{"title":"7 cheapest cloud GPU providers in 2026 | Blog — Northflank","url":"https://northflank.com/blog/cheapest-cloud-gpu-providers"},{"title":"TensorDock — Easy & Affordable Cloud GPUs","url":"https://www.tensordock.com/"},{"title":"AI and Cloud Infrastructure Provider | Runpod","url":"https://www.runpod.io/"},{"title":"Cheapest Cloud GPUs: Where AI Teams Save on Compute","url":"https://www.clarifai.com/blog/cheapest-cloud-gpus"},{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"},{"title":"Top 12 Cloud GPU Providers for AI and Machine Learning in 2026","url":"https://www.runpod.io/articles/guides/top-cloud-gpu-providers"},{"title":"RTX 3090 for AI: The Best Value GPU for Local LLM Hosting in 2026 | Local AI Ops - Self-Hosted AI and Local LLM Guides","url":"https://localaiops.com/posts/rtx-3090-for-ai-the-best-value-gpu-for-local-llm-hosting/"},{"title":"Best GPU Hosting Providers for AI and Machine Learning (2026 Guide)","url":"https://www.atlantic.net/gpu-server-hosting/top-gpu-hosting-providers-for-ai-and-machine-learning/"},{"title":"Affordable dedicated servers and VPS with GPU","url":"https://hostkey.com/dedicated-servers/cheap-gpu/"}]
+
+Based on the search results, here are the best options for GPU servers under $100/month for AI inference hosting in 2026:
+
+## Serverless/Spot Pricing Options (Easiest for <$100/month)
+
+RunPod's serverless platform allows you to deploy a text generation API with minimal costs—combined with caching, you could spend under $100/month. RunPod's Community Cloud pricing includes RTX 4090 from ~$0.34/hr and H100 PCIe from ~$1.99/hr.
+
+Vast.ai offers high-performance cloud GPUs at low cost for AI and machine learning, with flexible pricing, fast setup, and global availability. Vast.ai is a price-driven marketplace with large third-party supply that can be 5–6× cheaper than traditional clouds depending on host/region.
+
+## Cost-Saving Strategies
+
+Spot instance markets can reduce prices by 70-90% if you're okay with interruptions. Thunder Compute, Northflank and RunPod offer some of the most affordable A100 and H100 rentals.
+
+## Traditional Cloud Pricing Context
+
+For reference on standard pricing, CPU instances start at $2.70/month for small workloads, with GPU support including NVIDIA A100 40GB at $1.42/hr, A100 80GB at $1.76/hr, H100 at $2.74/hr.
+
+## Key Recommendation
+
+For reliably staying under $100/month for AI inference, RunPod operates a dual model with a "Secure Cloud" (datacenter reliability) and a "Community Cloud" (cheaper, peer-provided GPUs), making it incredibly popular for hobbyists and agile teams.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

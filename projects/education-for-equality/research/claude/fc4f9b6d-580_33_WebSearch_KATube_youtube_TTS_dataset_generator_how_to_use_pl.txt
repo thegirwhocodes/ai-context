@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: KATube youtube TTS dataset generator how to use playlist audio subtitle alignmen
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 09:22:44 UTC
+========================================================================
+
+Search query: KATube youtube TTS dataset generator how to use playlist audio subtitle alignment
+
+----------------------------------------
+
+Web search results for query: "KATube youtube TTS dataset generator how to use playlist audio subtitle alignment"
+
+Links: [{"title":"GitHub - freds0/katube: KATube is a tool to automate the process of creating datasets for training Text-To-Speech (TTS) and Speech-To-Text (STT) models. From a list of YouTube playlists or YouTube channels, KATube will generate dataset with audios and texts.","url":"https://github.com/freds0/katube"},{"title":"youtube-tts-data-generator · PyPI","url":"https://pypi.org/project/youtube-tts-data-generator/"},{"title":"GitHub - hetpandya/youtube_tts_data_generator: A python library to generate speech dataset from Youtube videos","url":"https://github.com/hetpandya/youtube_tts_data_generator"},{"title":"GitHub - ryanrudes/YTTTS: The YouTube Text-To-Speech dataset is comprised of waveform audio extracted from YouTube videos alongside their English transcriptions","url":"https://github.com/ryanrudes/YTTTS"},{"title":"katube/selection.py at main · freds0/katube","url":"https://github.com/freds0/katube/blob/main/selection.py"},{"title":"youtube-tts-data-generator - Python package | Snyk","url":"https://snyk.io/advisor/python/youtube-tts-data-generator"},{"title":"audio-datasets · GitHub Topics · GitHub","url":"https://github.com/topics/audio-datasets"},{"title":"GitHub - skbose/yt-tts-forge: Your go-to repository for training cutting-edge Text-to-Speech (TTS) models using rich, diverse data sourced from YouTube. Unlock the power of natural-sounding speech synthesis by leveraging our comprehensive collection of YouTube data. Train your TTS models with ease and precision, revolutionizing the way voice is synthesized from text.","url":"https://github.com/skbose/yt-tts-forge"},{"title":"GitHub - gokhaneraslan/tts-dataset-generator: With this tool you can create custom TTS dataset from video or audio. · GitHub","url":"https://github.com/gokhaneraslan/tts-dataset-generator"},{"title":"GitHub - zldzmfoq12/VCtube: A pakage for crawling audio from Youtube · GitHub","url":"https://github.com/zldzmfoq12/VCtube"}]
+
+Based on the search results, here's comprehensive information about KATube and how to use it for creating TTS datasets:
+
+## What is KATube?
+
+KATube is a tool to automate the process of creating datasets for training Text-To-Speech (TTS) and Speech-To-Text (STT) models. From a list of YouTube playlists or YouTube channels, KATube will generate dataset with audios and texts.
+
+## How Audio-Subtitle Alignment Works
+
+KATube downloads all audios with their respective subtitles, segments the audios, performing audio-text alignment using the external tool AENEAS. From this alignment, KATube will segment the audio, according to the sentences created.
+
+## Playlist Processing
+
+To use KATube with playlists:
+
+1. Configure the file "input/playlists_id.txt" and check the settings in the "config.py" file.
+
+## Data Quality Validation
+
+KATube includes a validation step to ensure dataset quality. The external STT will generate a transcript of the segmented audio. So, you can compare the sentence with the transcript using the levenshtein distance, and thus have a guarantee that the audio really matches the text of the sentence.
+
+## Related Tools
+
+If you're looking for alternatives, there's also the `youtube_tts_data_generator` package. You create a YTSpeechDataGenerator instance, create a '.txt' file that contains a list of YouTube videos that contains speeches, and call generator.prepare_dataset('links.txt'), which will take care about creating your dataset, creating a metadata file and trimming silence from the audios.
+
+For more detailed documentation and code examples, you can check the official GitHub repositories for both KATube and youtube_tts_data_generator.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

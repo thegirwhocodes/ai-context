@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-s
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:43 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection
+Extraction prompt: What does Africa's Talking require to set up a SIP trunk connection? Full step-by-step requirements including KYC documents, IP whitelisting, pricing, PBX requirements, and any timeline.
+
+----------------------------------------
+
+# SIP Trunk Setup Requirements at Africa's Talking
+
+## Prerequisites
+You must have "A PBX server (on cloud or on premise)" to establish the connection.
+
+## Step-by-Step Setup Process
+
+1. **Apply for a voice phone number** through Africa's Talking
+
+2. **Complete KYC verification** - The provider shares documentation that requires your signature
+
+3. **Payment** - You pay for the phone number according to their pricing structure at africastalking.com/pricing
+
+4. **Submit PBX details** - You provide your trunk's IP address so the company can add it to their whitelist for security
+
+5. **Configure callback URL** - Once whitelisted, update your number's callback URL from your dashboard using the format: "trunk:trunk_ip_address" (example: trunk:127.0.0.1)
+
+6. **Test your setup** - Configure your PBX system and conduct testing
+
+The documentation doesn't specify a timeline for completion, though whitelisting appears to be a gating step before you can proceed with PBX configuration.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

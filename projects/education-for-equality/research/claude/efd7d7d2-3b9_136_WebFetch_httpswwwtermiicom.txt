@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.termii.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 09:51:04 UTC
+========================================================================
+
+URL: https://www.termii.com/
+Extraction prompt: Find ALL services offered - especially voice calls, SIP trunking, inbound calls, Nigerian phone numbers, IVR, toll-free. Is this a full voice/telephony platform or just messaging/OTP?
+
+----------------------------------------
+
+# Termii Services Analysis
+
+Based on the provided web content, **Termii is primarily a messaging and customer engagement platform**, not a full voice/telephony service.
+
+## Confirmed Services:
+
+**Messaging Channels:**
+- SMS
+- WhatsApp
+- Email
+- Voice (mentioned but not detailed)
+- TOTP (Time-based One-Time Password)
+
+**Key Products:**
+1. **Switch** - OTP delivery and AI-powered message routing
+2. **Engage** - Campaign management and workflow automation
+3. **Assist** - Customer support and ticket management
+
+## What's NOT Clearly Offered:
+
+The documentation does not provide evidence of:
+- SIP trunking capabilities
+- Inbound call infrastructure
+- Nigerian phone number provisioning
+- IVR (Interactive Voice Response) systems
+- Toll-free number services
+
+## Verdict:
+
+Termii appears to be "an AI-native multi-channel messaging API" focused on verification codes, notifications, and customer engagement rather than a comprehensive voice/telephony platform. While voice is mentioned as a channel, the platform emphasizes delivery intelligence and routing optimization for message-based communications. For complete service details regarding voice capabilities or phone number provisioning, you would need to contact their sales team or consult their full product documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

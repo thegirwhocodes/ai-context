@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Diamond Dybvig model international investors foreign capital open economy bank r
+Session: 869a6900-9c7e-4841-946b-0e701aa75e93
+Time: 2026-04-28 18:03:04 UTC
+========================================================================
+
+Search query: Diamond Dybvig model international investors foreign capital open economy bank run model two countries
+
+----------------------------------------
+
+Web search results for query: "Diamond Dybvig model international investors foreign capital open economy bank run model two countries"
+
+Links: [{"title":"Diamond–Dybvig model - Wikipedia","url":"https://en.wikipedia.org/wiki/Diamond%E2%80%93Dybvig_model"},{"title":"A Simple Exposition of the Diamond-Dybvig Model","url":"https://www.richmondfed.org/~/media/richmondfedorg/publications/research/economic_quarterly/2007/spring/pdf/diamond.pdf"},{"title":"Bank Runs, Deposit Insurance, and Liquidity","url":"https://ideas.repec.org/a/ucp/jpolec/v91y1983i3p401-19.html"},{"title":"Bank Runs, Deposit Insurance, and Liquidity | Journal of Political Economy: Vol 91, No 3","url":"https://www.journals.uchicago.edu/doi/10.1086/261155"},{"title":"Banks and Liquidity Creation: A Simple Exposition of the Diamond-Dybvig Model | Richmond Fed","url":"https://www.richmondfed.org/publications/research/economic_quarterly/2007/spring/diamond"},{"title":"Bank Runs and Liquidity Crises: Insights from the Diamond-Dybvig Model - CFA Institute Enterprising Investor","url":"https://blogs.cfainstitute.org/investor/2025/02/24/bank-runs-and-liquidity-crises-insights-from-the-diamond-dybvig-model/"},{"title":"38 10.6 The Diamond-Dybvig Model","url":"https://econ.berkeley.edu/sites/default/files/course-homepage/2016-11-15/lecture-notes/Notes%20for%2011-17-2016.pdf"},{"title":"Bank Runs and Liquidity Crises: Insights from the Diamond-Dybvig Model | CFA Institute Daily Browse","url":"https://blogs.cfainstitute.org/blog/2025/02/24/bank-runs-and-liquidity-crises-insights-from-the-diamond-dybvig-model/"},{"title":"(PDF) Banks and Liquidity Creation: A Simple Exposition of the Diamond-Dybvig Model","url":"https://www.academia.edu/31001739/Banks_and_Liquidity_Creation_A_Simple_Exposition_of_the_Diamond_Dybvig_Model"},{"title":"1 Notes on the Diamond-Dybvig Model","url":"https://users.econ.umn.edu/~tkehoe/classes/DiamondDybvigModel.pdf"}]
+
+I've performed the web search on the Diamond-Dybvig model with focus on international investors, foreign capital, and open economy aspects. Here are the key findings:
+
+## Diamond-Dybvig Model Overview
+
+The Diamond–Dybvig model views bank runs as a type of self-fulfilling prophecy: each depositor's incentive to withdraw funds depends on what they expect other depositors to do. At the heart of this phenomenon is the Diamond-Dybvig Model, a foundational framework that explains how banks' role in transforming illiquid assets into liquid liabilities makes them inherently vulnerable.
+
+## International and Open Economy Extensions
+
+The search results indicate that researchers have extended the Diamond-Dybvig framework to international settings. A model was developed in which financial crises in emerging markets may occur when domestic banks are internationally illiquid, with runs on domestic deposits that may interact with foreign creditor panics, depending on the maturity of the foreign debt and the possibility of international default. 
+
+Financial liberalization and increased inflows of foreign capital, especially if short term, can aggravate the illiquidity of banks and increase their vulnerability.
+
+## Policy Solutions
+
+Diamond and Dybvig argue that a better way of preventing bank runs is deposit insurance backed by the government or central bank, and sufficient deposit insurance can eliminate the possibility of bank runs.
+
+The search results show extensions of the basic Diamond-Dybvig framework to analyze international banking crises with foreign capital flows and creditor panic dynamics in open economies, though specific models with two countries were not highlighted in these particular results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

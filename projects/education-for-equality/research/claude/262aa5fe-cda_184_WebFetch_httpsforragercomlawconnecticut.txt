@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://forrager.com/law/connecticut/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:52:32 UTC
+========================================================================
+
+URL: https://forrager.com/law/connecticut/
+Extraction prompt: What does Connecticut's cottage food law specifically say about allowed foods? Can you sell cooked meals like jollof rice, stew, beans, pounded yam, soups, prepared meat dishes? Or are only non-TCS (non-temperature-controlled) foods like baked goods allowed? What are TCS foods vs non-TCS? Can prepared hot meals be legally sold in Connecticut by an unlicensed home cook? Include the actual statute references and specifically address whether Nigerian dishes like jollof rice, stew, egusi, ofada would be allowed.
+
+----------------------------------------
+
+# Connecticut Cottage Food Law: Allowed Foods Analysis
+
+## What the Law Permits
+
+Based on Connecticut's cottage food law (PA 18-141), **only non-perishable, non-potentially hazardous foods are allowed**. The statute specifically permits:
+
+**Allowed categories:**
+- Bread and baked goods
+- Candy and confections
+- Condiments (honey, syrups, vinegars)
+- Dry goods (cereals, pasta, spices)
+- Preserves (jams, jellies)
+- Snacks (popcorn, granola, crackers)
+
+## Prohibited Foods (Including Prepared Meals)
+
+The law explicitly prohibits:
+- "Perishable baked goods"
+- "Low-acid canned foods"
+- "Sauces"
+- "Meat jerkies"
+
+**The key restriction:** Only "non-potentially hazardous" foods are allowed—"Most foods that don't need to be refrigerated (foods without meat, cheese, etc.) are considered non-potentially hazardous."
+
+## Your Specific Questions
+
+**Nigerian dishes and prepared meals:** Jollof rice, stew, beans, pounded yam, soups, egusi, ofada, and prepared meat dishes would **all be prohibited** because they:
+- Require refrigeration
+- Contain meat or other potentially hazardous ingredients
+- Are perishable
+
+These are temperature-controlled safety (TCS) foods requiring commercial kitchen licensing.
+
+**Bottom line:** Connecticut's law restricts home food operations to shelf-stable items only. No prepared hot meals or cooked dishes are permitted under this law.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

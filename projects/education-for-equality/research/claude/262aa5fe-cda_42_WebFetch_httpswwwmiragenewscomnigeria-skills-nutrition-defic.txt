@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.miragenews.com/nigeria-skills-nutrition-deficits-slash-future-161886
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:33:31 UTC
+========================================================================
+
+URL: https://www.miragenews.com/nigeria-skills-nutrition-deficits-slash-future-1618861/
+Extraction prompt: Extract EVERY specific number for Nigeria mentioned in this article. I need: the HCI+ overall score, each pillar score (education, health, employment), the 111% figure, the 20% labor earnings figure, any breakdown of how much education vs health vs employment contributes to the 111%, learning-adjusted years of schooling, test scores, tertiary completion, adult height trends, gender gap numbers. Extract EVERYTHING with numbers.
+
+----------------------------------------
+
+# Nigeria Specific Numbers from World Bank Report
+
+**HCI+ Overall Score & Pillars:**
+- Overall HCI+ score: 131 points
+- Education pillar: 64 points
+- Gender gap: 6-point difference (females 128, males 134)
+
+**Economic Impact:**
+- Future earnings deficit: 111% of future labor earnings
+- Potential earnings increase from 12 years schooling: "about 20% over the long term"
+- If gender gap closed: 3% increase in future earnings
+
+**Education Metrics:**
+- Tertiary completion rate: 11.3%
+- Student test scores in 2025: "one point below those of 2010"
+
+**Health & Nutrition:**
+- Early learning engagement impact: "jumping from about 20% to over 50%" in child development readiness
+- Stunting reduction from interventions: "6-percentage point reduction in stunting"
+
+**Employment & Labor Force:**
+- Women out of labor force: "around 50%"
+- Youth neither studying nor working: "around 20%"
+
+**Comparative Context:**
+- Nigeria's score versus Sub-Saharan Africa average: 131 vs 127
+- Education pillar versus lower middle-income median: 64 vs 88
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

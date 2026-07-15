@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: EqualyzAI VoiceBridge feature phone IVR Nigerian voice code-switching how built 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:07 UTC
+========================================================================
+
+Search query: EqualyzAI VoiceBridge feature phone IVR Nigerian voice code-switching how built model
+
+----------------------------------------
+
+Web search results for query: "EqualyzAI VoiceBridge feature phone IVR Nigerian voice code-switching how built model"
+
+Links: [{"title":"EqualyzAI – Voice-first Agentic AI for Africa","url":"https://equalyz.ai/"},{"title":"Interactive Voice Response - IVR","url":"https://www.twilio.com/docs/voice/interactive-voice-response"},{"title":"8 Best IVR Solutions in 2026: Tested and Ranked | Retell AI","url":"https://www.retellai.com/blog/best-ivr-solutions"},{"title":"What Is Interactive Voice Response (IVR)? Benefits & Setup","url":"https://www.nextiva.com/blog/interactive-voice-response-ivr.html"},{"title":"Interactive Voice Response (IVR): What is & How [2026]","url":"https://www.yeastar.com/voip-phone-system-feature/interactive-voice-response/"},{"title":"14 Essential Modern IVR Features for Efficient Call Centers - Voice.ai","url":"https://voice.ai/hub/ai-voice-agents/ivr-features/"},{"title":"What is IVR Voice Technology? A Step-By-Step Explanation - Voice.ai","url":"https://voice.ai/hub/ai-voice-agents/ivr-voice/"},{"title":"IVR System for Contact Centers | Dialpad","url":"https://www.dialpad.com/features/interactive-voice-response/"},{"title":"VoiceAgents - Talk to Your Customers in Any Nigerian Language","url":"https://www.usevoiceagent.ai/"},{"title":"What Is Interactive Voice Response (IVR)? | IBM","url":"https://www.ibm.com/think/topics/interactive-voice-response"}]
+
+I found some information about EqualyzAI, but the search results don't contain specific details about how the VoiceBridge feature handles phone IVR with Nigerian voice code-switching or the technical model behind it. Let me search more specifically for EqualyzAI VoiceBridge technical details.
+
+Links: [{"title":"EqualyzAI – Voice-first Agentic AI for Africa","url":"https://equalyz.ai/"},{"title":"EqualyzAi launches to bring AI chatbot solutions to over 75 African language speaker","url":"https://technext24.com/2025/02/22/equalyzai-launches-ai-african-language/"},{"title":"Gladia - Code Switching in Speech Recognition: ASR Guide 2026","url":"https://www.gladia.io/blog/what-is-code-switching-in-speech-recognition"},{"title":"Blog | Code Switching Voice in 2026: The Complete Voice AI Guide","url":"https://www.awaaz.ai/blog/code-switching-voice-ai-guide"},{"title":"Prompting the Hidden Talent of Web-Scale Speech Models for Zero-Shot   Task Generalization","url":"https://arxiv.org/pdf/2305.11095"},{"title":"Code-switching Speech Recognition Under the Lens: Model- and Data-Centric Perspectives","url":"https://arxiv.org/pdf/2509.24310"}]
+
+Based on my search results, I can provide you with information about EqualyzAI's VoiceBridge and their approach to handling Nigerian voice code-switching:
+
+## EqualyzAI VoiceBridge Overview
+
+VoiceBridge is an IVR-based system that lets users contribute speech over feature phones with no internet required. It's designed for collecting new voice datasets, and serves as the foundation that makes their other products possible, and is available to researchers and NGOs building their own African language datasets.
+
+## Code-Switching Approach
+
+EqualyzAI has built their voice AI stack specifically to handle code-switching as a core feature. They built a voice AI stack for the African linguistic and infrastructure reality: low-resource languages, code-switching as default, bandwidth constraints, and populations who access voice services through feature phones, and not just smartphones.
+
+Their models are trained on naturally mixed speech, English-Pidgin, Yoruba-English, the way people actually talk. The team started building the solutions from the ground up, engaging the everyday speakers of local languages to collect data that is truly reflective of how they use the language, how they communicate, the code-mixing they use, the augmentation, the code-switching that they use, etc.
+
+VoiceMaker, their text-to-speech and transcription product, turns text into natural speech in Yoruba, Igbo, Hausa, and Pidgin, and transcribes multilingual audio with code-switching support.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

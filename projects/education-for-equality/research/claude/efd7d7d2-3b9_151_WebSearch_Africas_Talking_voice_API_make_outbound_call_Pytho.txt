@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking voice API make outbound call Python SDK
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:50:11 UTC
+========================================================================
+
+Search query: Africa's Talking voice API make outbound call Python SDK
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking voice API make outbound call Python SDK"
+
+Links: [{"title":"GitHub - AfricasTalkingLtd/africastalking-python: Official Python SDK","url":"https://github.com/AfricasTalkingLtd/africastalking-python"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/"},{"title":"africastalking-python","url":"https://pypi.org/project/africastalking/"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking · GitHub","url":"https://github.com/AfricasTalkingLtd"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"africastalking · PyPI","url":"https://pypi.org/project/africastalking/1.1.0/"},{"title":"africastalking 2.0 on PyPI - Libraries.io - security & maintenance data for open source software","url":"https://libraries.io/pypi/africastalking"},{"title":"AfricastalkingGateway 2.0 on PyPI - Libraries.io - security & maintenance data for open source software","url":"https://libraries.io/pypi/AfricastalkingGateway"},{"title":"Voice API – Build smart voice-based solutions easily | Africa’s Talking","url":"https://africastalking.com/voice-api"}]
+
+Based on the search results, here's information about Africa's Talking Voice API and making outbound calls with the Python SDK:
+
+## Overview
+
+The SDK provides convenient access to the Africa's Talking APIs to python apps. The SDK provides convenient access to the Africa's Talking APIs to python apps.
+
+## Installation
+
+You can install the package with `pip3 install africastalking` for Python 3.8.x or higher.
+
+## Basic Setup
+
+Initialize the SDK by calling africastalking.initialize(username, api_key). For sandbox, the app username is ALWAYS sandbox, though you should use your actual username and API key for production.
+
+## Voice API Features
+
+You can build a virtual call centre by automating inbound and outbound calls hence streamlining your customers' call experiences. You can record your call sessions into an MP3 file that you can retrieve and play later, which will prove useful when conducting surveys or ensuring quality of service in call centres.
+
+## Important Note About Sandbox Mode
+
+Africa's Talking Voice API doesn't work in sandbox mode. Every call you make during development will be a real call that costs real money and rings a real phone.
+
+## Resources
+
+For complete documentation and code examples on making outbound calls, you can check the official repositories and documentation at GitHub (AfricasTalkingLtd/africastalking-python) and the Africa's Talking developer portal at developers.africastalking.com.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

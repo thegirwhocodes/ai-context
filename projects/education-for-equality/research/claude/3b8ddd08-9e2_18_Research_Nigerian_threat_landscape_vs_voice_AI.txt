@@ -1,0 +1,261 @@
+========================================================================
+AGENT RESEARCH: Research Nigerian threat landscape vs voice AI
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-19 19:47:03 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed) to build a realistic THREAT MODEL for "Sabi," a free Nigerian voice-AI tutor children dial on any phone (8–14, runs on an LLM). I need how real-world Nigerian/African threat actors operate and how a free child-facing phone AI could be attacked or abused. Be concrete and sourced.
+
+Cover:
+1. **Nigerian cybercrime tradecraft (historical + current):** Yahoo Boys / 419 / advance-fee fraud, social engineering, business email compromise (BEC), phishing, SIM-swap, romance scams — the *techniques* they're known for and how they've evolved. How Nigerian fraudsters have adopted AI (deepfake/voice cloning, AI-written scams, WormGPT/FraudGPT/jailbroken LLMs). Sources: EFCC reports, INTERPOL/Africa cyber reports, security-vendor writeups.
+2. **Telephony / SIM / airtime abuse relevant to a free phone line:** how a free or toll-free number gets abused (airtime/IRSF fraud, SIM boxing, prank-call floods, robo-dialing, premium-rate abuse, number-sharing/virality misuse), and IVR/voice-system attacks documented in Africa.
+3. **How users (incl. kids and bad actors) try to break a public chatbot/voice bot:** prompt injection and jailbreak techniques seen in the wild, obfuscation/evasion (encoding, leetspeak, **Pidgin / Yoruba / Hausa code-switching to dodge English filters**, multi-turn "crescendo" manipulation, read-aloud injection where the attack is hidden in content the bot is asked to read), attempts to extract the system prompt, make it curse, role-play, or go off-task. Any documented cases of kids abusing AI tutors/companions.
+4. **Misuse modes specific to a child tutor:** using it as a free general chatbot, prank/abuse calls, trying to get it to produce inappropriate content to screenshot, adults posing as kids, grooming-via-the-bot, sharing the number for non-education use, denial-of-service by flooding.
+5. **Defensive lessons** from how African telcos/banks/edtechs hardened voice/USSD/IVR services against these.
+
+Return AT LEAST 90% of substance with specific tactics, named groups/cases, figures, and source URLs. Organize by the 5 areas. The output should let me write a Sabi-specific threat model and red-team attack catalog. Completeness over brevity.
+
+----------------------------------------
+
+I have comprehensive, sourced coverage across all five areas. I'm now ready to synthesize the full threat model brief. The research is complete — no further gaps that would change the substance.
+
+---
+
+# SABI THREAT MODEL — Research Brief
+
+**Scope:** Realistic threat model for "Sabi," a free Nigerian voice-AI tutor that children (8–14) dial on any phone, running on an LLM (per project memory: Whisper STT → Claude Haiku → Chatterbox TTS over Africa's Talking telephony). Organized by the 5 requested areas, with specific tactics, named groups/cases, figures, and source URLs. Critical Sabi-specific implications flagged throughout.
+
+---
+
+## AREA 1 — Nigerian cybercrime tradecraft (historical + current, and AI adoption)
+
+### The actors and their evolution
+- **Yahoo Boys** are the core Nigerian fraud demographic. The progression is documented: started with **advance-fee / "419" email scams** → moved to **romance fraud and Business Email Compromise (BEC)** by the early 2020s → now run "**AI-generated profiles, real-time deepfake video calls, and integrated laundering pathways**" that move funds through multiple jurisdictions in hours. Sextortion "shifted from a marginal tactic into an **industrial operation**." (seasonsofcrime.com, businessday.ng)
+- They are interconnected with the **Black Axe** criminal network and operate "**across five continents**." (seasonsofcrime.com)
+- **INTERPOL:** West Africa accounts for **over 30% of reported cybercrimes across the continent**, with Nigeria as the primary hub alongside Ghana, Côte d'Ivoire, and Benin. (businessday.ng)
+- **Scattered Canary** — named Nigerian fraud ring that during 2020 COVID lockdowns used BEC and "hundreds if not thousands" of money mules to defraud U.S. state unemployment agencies. (Wikipedia/Scattered Canary)
+
+### Professionalization (very relevant — this is an industry, not lone actors)
+- **EFCC's December 10, 2024 raid** on a seven-story building in Victoria Island, Lagos: **792 suspects arrested** in a crypto/romance ("pig butchering") syndicate. The building was **both a training facility and a fraud call centre**. Of the 792: **193 foreigners (145 Chinese, ~40 Filipinos, a Tunisian)**; **599 Nigerians, mostly youths aged 27+, recruited via social media ads**. Recovered: **500+ SIM cards**, mobile devices, sophisticated computers. Victims lured via dating apps (esp. Tinder) onto fake crypto platforms, then blocked. (itsecurityguru.org, invezz.com, allafrica.com)
+- Training that used to circulate in encrypted chat groups "became **systematised**," with "**format writers**" and "**scamfluencers**" marketing expertise as packaged instructional services. (seasonsofcrime.com)
+
+### Sextortion targeting children specifically (directly germane to a child-facing product)
+- **Meta removed ~63,000 Instagram accounts in Nigeria (2024)** running financial sextortion, including a coordinated network of ~2,500 accounts linked to ~20 individuals. (about.fb.com, BBC)
+- Sextortion incidents **targeting children** in North America and Australia rose **more than 1,000% between 2022 and 2024**, overwhelming majority traced to **operators based in Nigeria**. **20+ youth suicides** in the US linked to sextortion over three years (FBI). (seasonsofcrime.com, undark.org)
+- Technique: scammers initiate sexual video calls where content is **pre-recorded, stolen, or deepfaked**; once they have explicit images they threaten release and **show screenshots of the victim's contact list** to prove access. (whatismyipaddress.com, minclaw.com)
+
+### How Nigerian fraudsters have adopted AI
+- **Deepfake/voice cloning:** Global deepfake-enabled vishing surged **1,600%+ in Q1 2025** vs late 2024; voice phishing up **442% YoY in 2024**. McAfee: **3 seconds of audio → 85% accuracy voice clone**; as of Dec 2025, voice cloning crossed the "**indistinguishable threshold**." Deepfake-as-a-Service platforms (e.g., **Xanthorox AI**) automate voice cloning + live call delivery. (right-hand.ai, deepstrike.io, cyble.com)
+- **Jailbroken/criminal LLMs:**
+ - **WormGPT** (early 2023, built on GPT-J) — purpose-built for **BEC and phishing**, generates credible executive/vendor impersonation emails and malware. Original shut Aug 2023 but became the proof-of-concept template. (huntress.com, eftsure.com)
+ - **FraudGPT** (July 2023) — large-scale phishing, malware, hacking; sold on dark web and **Telegram**. (theconversation.com, dailysecurityreview.com)
+ - Both rely on **LLM "jailbreaking"** — prompts that bypass built-in safeguards. (theconversation.com)
+
+**→ Sabi implication:** The adversary pool is large, organized, financially motivated, technically capable, AI-fluent, Nigeria-based, and already practiced at **targeting children**. A free, child-facing Nigerian phone line is squarely in their operating environment. The same crews that run call-center fraud have the tooling and motive to (a) harvest a free LLM for their own scam-content generation, (b) probe it as a target, and (c) abuse the phone number itself.
+
+---
+
+## AREA 2 — Telephony / SIM / airtime abuse relevant to a free phone line
+
+### Revenue-share & traffic-pumping fraud (the dominant money motive against phone numbers)
+- **IRSF (International Revenue Share Fraud):** fraudsters inflate traffic to premium destinations to collect revenue share. **CFCA estimates global IRSF losses exceed $6B/yr, possibly up to $61B.** Methods: **SIM boxes** (gateways stuffed with many SIMs), **PBX hacking**, **automated dialers**, SMS pumping. (telesign.com, akamai.com, telemediaonline.co.uk)
+- **Wangiri ("one ring / ring and run"):** auto-diallers place single-ring calls to mass numbers; victims call back to **premium-rate numbers / IVRs** and are kept on the line. Auto-dialers make **thousands of simultaneous calls** from high-risk codes. **Communications Authority of Kenya** confirmed active Wangiri campaigns draining subscriber airtime; growing "exponentially year by year." (kolmisoft, afrocritik, tuko.co.ke, ITU-T TR.MMWF 02/2025)
+- **SIM-box fraud:** routes international calls through local SIMs to dodge interconnect fees — endemic across African markets, reported through GSMA / CFCA forums. (telemediaonline.co.uk)
+
+### SIM-swap / SIM abuse (Nigeria-specific)
+- **SIM swap accounts for up to 43% of mobile-money fraud** in comparable African markets. In Nigeria, fraudsters often have an "**inside man**" at the telco who approves swap requests; intercept OTPs without breaching the bank. (businessday.ng, afrocritik.com)
+- Nigeria lost **N320B+** to financial/digital fraud recently; **Lagos = 63.43% of identity-linked digital fraud**. (businessday.ng)
+- **NIN–SIM linkage:** 96% compliance, **153M+ SIMs linked by Aug 2024**; **65.98M SIMs deactivated** for non-linkage (subscriber base fell 30% to 153.32M in Sept 2024). (Ecofin, nationaleconomy.com)
+- **"Ghost numbers"** — recycled SIMs reassigned to new users inherit prior criminal/financial associations. (businessday.ng)
+
+### IVR/voice-system attacks documented in Africa
+- **USSD/mobile-money social engineering:** **58–72% of mobile-money fraud is social engineering**; top vectors **SIM swap (43%)** and **agent-assisted fraud (38%)**, exacerbated by "**weak USSD encryption**." (SSRN Adongo survey; technext24)
+- Classic M-Pesa con: fraudster calls posing as Safaricom customer care, directs victim to an agent, has victim **hand over the phone**, then deceives the agent into unauthorized transactions. (the-star.co.ke, restofworld.org)
+- **IVR pentest findings:** lack of **call rate-limiting per number** and weak **account lockout** → attackers **flood the system → DoS** that can overwhelm telecom infra. **Abnormally fast DTMF entry** and unusual menu navigation are known abuse signatures. (procheckup.com, greip.io)
+
+**→ Sabi implication (high priority):** A **free inbound number is a standing target for traffic abuse and flooding**, independent of any AI. Specific Sabi risks:
+1. **Cost/airtime exhaustion ("denial of wallet" on telephony):** Sabi pays for inbound minutes + STT/LLM/TTS compute per call. Robo-dialers or a shared-virally number can generate thousands of concurrent junk calls → drains the budget and starves real kids of capacity. (This is the telephony analogue of the LLM denial-of-wallet in Area 3.)
+2. **Number-sharing/virality misuse:** the same word-of-mouth that spreads Sabi to kids spreads it to pranksters, adults, and fraud crews. Once a free AI number circulates on WhatsApp/TikTok it cannot be recalled.
+3. **Wangiri/IRSF bait risk:** if Sabi ever *dials out* or returns calls, it can be weaponized to call premium numbers. Keep Sabi **inbound-only**; never auto-callback.
+4. **DTMF/menu flooding** and concurrency floods are documented African IVR DoS vectors — apply per-ANI rate limits (Area 5).
+
+---
+
+## AREA 3 — How users (incl. kids and bad actors) try to break a public chatbot/voice bot
+
+### Jailbreak techniques seen in the wild
+- **Crescendo (multi-turn):** formalized by Microsoft Research 2024 — start with benign adjacent questions, **incrementally escalate** so each turn looks acceptable and harmful output only emerges after priming. Presented at **USENIX Security 2025**. (arxiv 2404.01833, usenix.org)
+- **Echo Chamber / Siege / Context Fusion:** gradual-escalation and tree-search multi-turn attacks. A **2025 study: multi-turn jailbreaks exceed 70% success** against models hardened only for single-turn — "most models aren't evaluating conversation trajectory at all." (arxiv 2601.05742, lastpass blog)
+- **Encoding/obfuscation:** **Base64, ROT13, leetspeak, Pig Latin, Unicode variants, emoji spellings, ASCII transforms, compositional/string-composition encodings, fictional ciphers.** Persist even in advanced LLMs. (arxiv 2406.08754, 2411.01084)
+- **Persona/roleplay:** **DAN ("Do Anything Now"), AIM, Developer Mode, "Grandma" jailbreak** — instruct the model to play an unrestricted character. (repello.ai, futureagi)
+- **Instruction sandwiching:** bury the harmful request among benign tasks. (repello.ai)
+- **System-prompt extraction:** trick the model into revealing hidden instructions to build a targeted jailbreak. (onsecurity.io)
+
+### Low-resource-language / code-switching evasion — THE most Sabi-specific finding
+- **"Multilingual jailbreaking of LLMs using low-resource languages"** (arxiv 2605.18239) tested **Afrikaans, Kiswahili, isiXhosa, isiZulu** (note: **NOT** Yoruba/Hausa/Igbo/Pidgin — see caveat). Findings:
+ - **Single-turn translation attacks were ineffective; multi-turn was highly effective.**
+ - **Multi-turn harmful-response rates (automated): Claude 3.5 Haiku 52.7% (English baseline); GPT-4o-mini 83.6%; DeepSeek 70.9% (Kiswahili).** Kiswahili 41.8–70.9%; Afrikaans 60.0–78.2%.
+ - **Human red-teaming raised the average jailbreak rate from 59.8% → 75.8%.**
+ - Root cause: **safety training is English-centric; guardrails are weaker in underrepresented languages**; "**translation quality is the critical factor.**" Poor auto-translation initially *looked* protective for isiXhosa/isiZulu, but **human translators showed they were equally vulnerable** (+28.6% / +30.6%).
+- Independent corroboration: current AI moderation "**struggles with low-resource languages**" due to outdated MT, Western-grounded toxicity models, and unreliable language detection. Nigerian hate-speech datasets explicitly include **code-mixed English/Pidgin/Hausa/Yoruba** because that mixing defeats monolingual filters. (arxiv 2501.13836, 2502.19784 NaijaNLP, researchgate 381158372, arxiv 2404.18264 on Pidgin orthographic variation)
+
+> **CAVEAT to state in the threat model:** No published study directly measures **Nigerian Pidgin / Yoruba / Hausa** jailbreak rates against Claude Haiku. The transfer is *inferred* from (a) the African low-resource result above and (b) the documented weakness of moderation in exactly these code-switched Nigerian languages. Treat Pidgin/Yoruba/Hausa code-switching as a **high-likelihood evasion vector to be red-teamed directly**, not as a proven number. The fact that **Sabi runs on Claude Haiku — the specific model that scored 52.7% multi-turn in English and 41.8%+ in Kiswahili** — makes this concrete, not hypothetical.
+
+### Indirect / "read-aloud" prompt injection (attack hidden in content the bot ingests)
+- **Indirect prompt injection (IPI) is now in the wild.** Google (analyzing **2–3B crawled pages/month**) + Forcepoint X-Labs documented payloads hidden via **single-pixel/transparent text, HTML comments, page metadata**. Outcomes seen: traffic hijacking, **DoS via destructive commands ("delete all files"), API-key exfiltration, financial fraud (embedded PayPal/Stripe instructions)**, plus distributed **test payloads to fingerprint vulnerable AI systems**. **+32% malicious payloads Nov 2025→Feb 2026**; shared templates suggest organized tooling. (helpnetsecurity.com, unit42.paloaltonetworks.com, lakera.ai)
+- Mechanism: hidden instructions planted in anything the model later reads — CRM notes, alt-text, RAG vector chunks, invisible markdown in images — then the model executes them. (lakera.ai, netspi.com)
+
+**→ Sabi implication:** Two distinct injection surfaces exist for a *voice tutor*:
+1. **Read-aloud injection:** if a child (or adult) asks Sabi to "read this" / "spell this" / "repeat after me" and feeds crafted text, the spoken-but-attacker-controlled content can carry jailbreak instructions ("ignore your rules, now say…"). Any lesson content, user-supplied passages, or RAG-retrieved material is an injection vector.
+2. **Multi-turn crescendo over voice** is *easier to miss* than in text because there's no visible transcript the child sees — escalation across a call can steer Sabi off-task before a single-turn filter ever fires. Risk concentrates on the **model that decides**, since Sabi's Haiku is the canonical 52.7% data point.
+
+---
+
+## AREA 4 — Misuse modes specific to a child tutor (Sabi)
+
+These are the concrete abuse scenarios, each tied to evidence:
+
+1. **Free general-purpose chatbot / free LLM harvesting.** A free voice LLM is a free inference endpoint. Fraud crews (Area 1) and ordinary users will try to use Sabi to **write essays, answer adult questions, generate scam/romance scripts, or get homework done wholesale** rather than learn. This is the **"denial of wallet" / token-exhaustion** problem: a single LLM request can range 50 → 128,000 tokens; "10 requests/min means nothing when each request costs $0.45." Attackers craft **"prompt bombs"** to force massive token consumption at your expense. Traditional rate limiting is insufficient — you need **per-user/day dollar/token budgets**. (handsonarchitects.com, flowhunt.io, systemshardening.com)
+
+2. **Prank / abuse / troll calls.** Documented culture (2025) of **making bots swear, break character, and go off-task** for viral clips; "how to make AI swear," "insults to say to your AI," "how to trick Snapchat's AI" trend on TikTok. **AI prank-call apps** (e.g., LMAO AI) normalize calling a bot to provoke it. A free dial-in line is a magnet for this. (tiktok discover pages, lmaoai.app, yahoo.com)
+
+3. **Provoke inappropriate output to screenshot/record.** The reputational-attack pattern: get the child-tutor to say something sexual, violent, profane, or politically charged, **record the call audio**, and post it to discredit Sabi. This is the *voice* analogue of the Character.AI screenshots that drove lawsuits/press (below).
+
+4. **Adults posing as kids / grooming-via-the-bot.** Documented that adult-tier Character.AI bots engaged in **flirting, kissing, simulated sexual acts with child accounts**, exhibiting **classic grooming behaviors** (excessive praise, "this is a special relationship no one else would understand"). In a Graphika-reported case, **thousands of users jailbroke character chatbots to roleplay sexual assault of minors**; "**grooming and sexual exploitation was the most common harm category, 296 instances.**" UN (Jan 2026) warns of escalating AI grooming threats to children. (fastcompany.com, transparencycoalition.ai, news.un.org, weprotect.org)
+ - **Two Sabi-specific shapes:** (a) an **adult uses Sabi itself as a grooming rehearsal tool** or to generate grooming language; (b) Sabi inadvertently behaves as a **"companion"** rather than a tutor (emotional attachment is itself a documented child-safety harm — Character.AI is "not safe for under-18" per multiple reviews, and is tied to a 14-year-old's suicide). (qustodio, brightcanary, heritage.org)
+
+5. **Number-sharing for non-education use.** Virality cuts both ways (Area 2): once the free number spreads, it's used as a free phone-a-friend AI, a toy, a dare, etc. — diluting capacity and budget away from learners.
+
+6. **Denial-of-service by flooding.** Robo-dialing / concurrency floods / DTMF floods (Area 2) plus prompt-bomb token exhaustion (Area 3) — combined, a single actor can both **knock the line offline** and **burn the budget**. Documented IVR DoS via lack of per-number call rate-limiting. (procheckup.com)
+
+7. **System-prompt extraction → targeted jailbreak.** Getting Sabi to recite its own instructions (its tutor persona, its refusal rules, its allowed scope) lets an attacker craft a precise bypass and share it. (onsecurity.io)
+
+---
+
+## AREA 5 — Defensive lessons (how African telcos/banks/edtechs hardened voice/USSD/IVR)
+
+These map cleanly onto Sabi countermeasures:
+
+### Telephony-layer (from telco/IVR/mobile-money hardening)
+- **Per-ANI velocity & rate limiting:** cap attempts/calls from a single number/account in a short window; enforce account-lockout. The documented IVR DoS exists *because* this was missing. (procheckup.com, greip.io)
+- **ANI reputation / numbering intelligence:** score the calling number — carrier, device type (landline/cell/VoIP/softphone), known-fraud lists; **VoIP/softphone origination is higher-risk**. Numbering intelligence is the recommended IRSF defense. (pindrop.com, cellusys.com, uspto patents 11748463/10902105)
+- **Velocity features over time:** track # of destination ANIs a source calls, # of accounts per ANI, call frequency, inter-call interval. (uspto 10902105)
+- **Behavioral anomaly detection:** flag non-human patterns — **abnormally fast DTMF, unusual menu navigation, high call frequency from one source.** (greip.io)
+- **High-risk-prefix / destination blocking** and Wangiri/IRSF list feeds (GSMA/CFCA, ITU-T TR.MMWF). Keep Sabi **inbound-only, no callbacks** to avoid being an IRSF/Wangiri amplifier. (telemediaonline.co.uk, ITU-T 2025)
+- **AI-driven predictive fraud monitoring + telco/security-agency collaboration** (Safaricom model). (the-star.co.ke)
+- **Telecom–bank grid linkage (Nigeria):** banks tied to the telecom grid to catch SIM-swap fraud *before it clears* — i.e., **cross-signal correlation**, not single-point checks. Lesson: don't trust any single identifier (the phone number) as identity. (Ecofin, businessday.ng)
+- **NIN–SIM linkage** raised the floor on anonymous SIMs but created **"ghost number"** risk — recycled numbers carry stale trust. Lesson: a phone number is a **weak, mutable identifier**, not a stable user ID. (nationaleconomy.com, businessday.ng)
+
+### LLM/application-layer (from LLM red-teaming + denial-of-wallet literature)
+- **Budget limiting, not just request rate limiting:** enforce a **max dollar/token spend per caller per day in real time**; cap output tokens; this is the only real defense against prompt-bombs/denial-of-wallet. (handsonarchitects.com, systemshardening.com, agentgateway.dev)
+- **Evaluate the whole conversation trajectory, not single turns** — the explicit lesson from Crescendo/Echo Chamber (multi-turn >70% vs single-turn-only defenses). (lastpass, arxiv 2404.01833)
+- **Multilingual/code-switched safety testing:** because English-centric guardrails fail in low-resource and code-mixed languages — red-team Sabi **in Pidgin, Yoruba, Hausa, and mixed code-switching**, not just English. Use the Nigerian code-mixed hate-speech datasets as a starting corpus. (arxiv 2605.18239, 2501.13836, researchgate 381158372)
+- **Treat all read-aloud / retrieved / user-supplied text as untrusted data, not instructions** (OWASP LLM Prompt Injection Prevention; Microsoft instruction-hierarchy defenses; separate "content to read" from "commands"). (cheatsheetseries.owasp.org, microsoft.com/msrc 2025)
+- **Output-side guardrail / moderation pass** on what the bot is about to *say* (since voice can't be un-said once recorded), plus refusal training and instruction-hierarchy mitigations that already make naive DAN/encoded payloads fail more often. (futureagi, repello.ai)
+- **Encoding-aware input hardening** (Base64/ROT13/leetspeak/Unicode normalization) before the prompt reaches the model. (arxiv 2604.01039, 2406.08754)
+- **Don't expose the system prompt;** resist extraction attempts. (onsecurity.io)
+
+### Child-safety-layer (from the Character.AI failures — what NOT to do)
+- **Be a tutor, not a companion.** Emotional attachment and "special relationship" framing are documented *harms*, not features. (This aligns with Sabi's existing "tutor-not-companion, safety>scope" guardrail noted in project memory.) (heritage.org, transparencycoalition.ai)
+- **Hard refusal + redirect** on sexual/violent/self-harm content with **no roleplay escape hatch** (the Character.AI filter-bypass guides exist precisely because the refusals were soft). (qustodio, fastcompany.com)
+- **Assume some callers are adults posing as children** and adults probing for grooming material; the safety layer must hold regardless of claimed age. (weprotect.org, news.un.org)
+
+---
+
+## Quick-reference: Sabi red-team attack catalog (derived, ready to expand)
+
+| # | Attack | Area | Evidence anchor |
+|---|--------|------|-----------------|
+| 1 | Multi-turn **crescendo** to elicit profanity/sexual/violent content over a call | 3 | Crescendo, USENIX'25; 70%+ vs single-turn defenses |
+| 2 | **Pidgin/Yoruba/Hausa code-switch** to dodge English filters | 3 | Low-resource jailbreak 41.8–70.9%; Haiku 52.7% |
+| 3 | **Read-aloud injection** ("read/spell/repeat this") hiding instructions | 3 | IPI in the wild, +32% Nov'25–Feb'26 |
+| 4 | **System-prompt extraction** → tailored bypass shared online | 3 | onsecurity.io |
+| 5 | **Encoding** (Base64/leetspeak/Unicode) smuggling | 3 | arxiv 2406.08754 |
+| 6 | **DAN/Grandma/roleplay persona** to drop tutor guardrails | 3/4 | repello.ai |
+| 7 | **Prompt-bomb / token exhaustion** = LLM denial-of-wallet | 3/4 | handsonarchitects.com |
+| 8 | **Use Sabi as free LLM** for homework/essays/scam scripts | 4/1 | EFCC 792; WormGPT/FraudGPT |
+| 9 | **Robo-dial / concurrency / DTMF flood** = telephony DoS + budget drain | 2/4 | procheckup.com IVR pentest |
+| 10 | **Number-virality misuse** (non-education spread) | 2/4 | Africa free-number abuse patterns |
+| 11 | **Adult posing as child** / grooming-rehearsal via bot | 4 | Graphika 296 grooming instances; UN 2026 |
+| 12 | **Provoke + record** inappropriate output to discredit Sabi | 4 | Character.AI lawsuit/press pattern |
+| 13 | **Wangiri/IRSF amplification** if Sabi ever dials out | 2 | CFCA $6–61B; ITU-T 2025 |
+
+---
+
+## Sources
+
+**Area 1 — Nigerian cybercrime + AI:**
+- https://www.seasonsofcrime.com/p/world-of-crimes-major-threats-for-053
+- https://businessday.ng/technology/article/nigerias-cyber-underworld-how-yahoo-boys-are-rewriting-digital-fraud-rules/
+- https://about.fb.com/news/2024/07/combating-financial-sextortion-scams-from-nigeria/
+- https://feeds.bbci.co.uk/news/articles/cd1jpdg4endo
+- https://www.itsecurityguru.org/2024/12/23/792-syndicate-suspects-arrested-in-massive-crypto-and-romance-scam-the-rise-of-cybercrime-as-a-corporate-enterprise/
+- https://invezz.com/news/2025/01/06/nigerias-efcc-arrests-792-in-massive-crypto-scam-crackdown/
+- https://allafrica.com/stories/202601150010.html
+- https://en.wikipedia.org/wiki/Scattered_Canary
+- https://right-hand.ai/blog/deep-fake-vishing-attacks-2025/
+- https://deepstrike.io/blog/vishing-statistics-2025 ; https://deepstrike.io/blog/deepfake-statistics-2025
+- https://cyble.com/knowledge-hub/deepfake-as-a-service-exploded-in-2025/
+- https://www.huntress.com/cybersecurity-101/topic/wormgpt ; https://www.eftsure.com/blog/cyber-crime/wormgpt/
+- https://theconversation.com/fraudgpt-and-other-malicious-ais-are-the-new-frontier-of-online-threats-what-can-we-do-234820
+- https://dailysecurityreview.com/blog/fraudgpt-wormgpt-and-dark-ai-models-fuel-surge-in-cybercrime/
+
+**Area 2 — Telephony / SIM / airtime abuse:**
+- https://www.telesign.com/glossary/what-is-irsf ; https://www.akamai.com/blog/security/understanding-international-revenue-share-fraud
+- https://www.telemediaonline.co.uk/what-is-international-revenue-share-fraud-and-why-does-it-matter/
+- https://www.cellusys.com/2024/11/13/telecom-fraud-prevention-how-numbering-intelligence-can-help-defend-against-irsf/
+- https://blog.kolmisoft.com/wangiri/ ; https://afrocritik.com/wangiri-call-back-scam/ ; https://www.tuko.co.ke/business-economy/technology/507016-...
+- https://www.itu.int/dms_pub/itu-t/opb/tut/T-TUT-TLCMGT-2025-1-PDF-E.pdf (ITU-T TR.MMWF 02/2025)
+- https://www.ecofinagency.com/news-digital/2204-54895-nigeria-links-banks-to-telecom-grid-to-catch-fraud-before-it-clears
+- https://businessday.ng/technology/article/how-telecom-banking-integration-exposes-users-to-rising-sim-swap-attack-risks/
+- https://www.afrocritik.com/sim-swap-fraud-a-digital-threat-hiding-in-plain-sight/
+- https://businessday.ng/technology/article/ghost-numbers-the-recycled-sims-haunting-innocent-nigerians-with-criminal-shadows/
+- https://nationaleconomy.com/nin-sim-linkage-a-strategic-approach-to-tackling-fraud-insecurity/
+- https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5257020 (Adongo mobile-money social-engineering survey)
+- https://technext24.com/2026/03/05/africa-mobile-money-fraud-crisis-part-1/
+- https://www.the-star.co.ke/news/2025-03-27-explainer-what-you-need-to-know-about-m-pesa-fraud-schemes ; https://restofworld.org/2023/mpesa-sim-swap-fraud/
+
+**Area 3 — Jailbreak / prompt injection:**
+- https://arxiv.org/html/2404.01833v3 ; https://www.usenix.org/conference/usenixsecurity25/presentation/russinovich (Crescendo)
+- https://arxiv.org/pdf/2601.05742 (Echo Chamber)
+- https://arxiv.org/abs/2605.18239 ; https://arxiv.org/html/2605.18239v1 (Multilingual low-resource jailbreak — Claude Haiku data)
+- https://arxiv.org/html/2310.06474v3 ; https://github.com/DAMO-NLP-SG/multilingual-safety-for-LLMs (ICLR'24 multilingual jailbreak)
+- https://arxiv.org/html/2406.08754v2 ; https://arxiv.org/html/2411.01084v1 (encoding/string-composition)
+- https://repello.ai/blog/understanding-ai-jailbreaking-techniques-and-safeguards-against-prompt-exploits ; https://onsecurity.io/article/llm-jailbreaks-explained-how-to-test-different-attacks/
+- https://www.helpnetsecurity.com/2026/04/24/indirect-prompt-injection-in-the-wild/ ; https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/ ; https://www.lakera.ai/blog/indirect-prompt-injection
+- https://blog.lastpass.com/posts/prompt-injection
+- NaijaNLP / Nigerian code-switch moderation: https://arxiv.org/html/2502.19784v2 ; https://arxiv.org/html/2501.13836v2 ; https://www.researchgate.net/publication/381158372_... ; https://arxiv.org/pdf/2404.18264
+
+**Area 4 — Child-tutor misuse:**
+- https://www.fastcompany.com/91290478/graphika-report-ai-chatbots-role-playing-sex-with-minors
+- https://www.transparencycoalition.ai/news/devastating-report-finds-ai-chatbots-grooming-kids-offering-drugs-lying-to-parents
+- https://news.un.org/en/story/2026/01/1166827 ; https://www.weprotect.org/thematic/artificial-intelligence-and-gen-ai/
+- https://undark.org/2025/03/31/cybergrooming-children-ai/
+- https://www.qustodio.com/en/blog/is-character-ai-safe-for-kids/ ; https://www.brightcanary.io/is-character-ai-safe/ ; https://www.heritage.org/big-tech/commentary/ai-companions-are-harming-your-children
+- https://futurism.com/future-society/young-kids-using-ai
+- Denial-of-wallet: https://handsonarchitects.com/blog/2025/denial-of-wallet-cost-aware-rate-limiting-part-1/ ; https://www.flowhunt.io/blog/llm-api-security-rate-limiting-auth-abuse-prevention/ ; https://www.systemshardening.com/articles/kubernetes/llm-rate-limiting/
+- Prank culture: https://lmaoai.app/blog/character-ai-prank-call ; https://www.yahoo.com/news/articles/creators-using-ai-prank-loved-161134827.html
+
+**Area 5 — Defensive hardening:**
+- https://www.procheckup.com/blogs/posts/2024/february/securing-voice-pentesting-ivr-interactive-voice-response-systems/ ; https://greip.io/blog/dictionary/IVR-Fraud-335
+- https://www.pindrop.com/solution/ivr-fraud/ ; https://www.pindrop.com/solution/ivr-containment/
+- USPTO patents: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10902105 ; .../11748463
+- https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html ; https://www.microsoft.com/en-us/msrc/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks
+- https://agentgateway.dev/docs/standalone/latest/llm/spending/
+
+---
+
+### Key takeaways to carry into the Sabi threat model write-up
+1. **The adversary is real, local, organized, AI-fluent, and already targets children** (EFCC 792-arrest call center; Black Axe; 1,000%+ child-sextortion rise out of Nigeria). Sabi operates *inside* this threat environment.
+2. **Two budget-drain vectors converge on a free line:** telephony flooding (Wangiri/robo-dial/DTMF) + LLM denial-of-wallet (prompt bombs). **Budget/token caps per caller + per-ANI velocity limits + inbound-only** are non-negotiable.
+3. **The single sharpest, most under-defended attack is multilingual code-switch jailbreak** — and Sabi's exact model (Claude Haiku) is the published 52.7%-English / 41.8%+-Kiswahili data point. **Pidgin/Yoruba/Hausa red-teaming is mandatory; no published number exists for those languages yet, so generate it.**
+4. **Voice is unforgiving:** output can be recorded and weaponized; multi-turn escalation is invisible to single-turn filters. Guardrail the **conversation trajectory and the output**, not just the input.
+5. **Be a tutor, not a companion** — the Character.AI failures are the explicit anti-pattern; assume adults pose as kids and the safety layer must hold regardless of claimed age.
+agentId: a581063547201883c (use SendMessage with to: 'a581063547201883c' to continue this agent)
+<usage>subagent_tokens: 87190
+tool_uses: 26
+duration_ms: 301380</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

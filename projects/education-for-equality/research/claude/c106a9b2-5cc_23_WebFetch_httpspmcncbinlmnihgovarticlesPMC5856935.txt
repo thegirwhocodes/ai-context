@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://pmc.ncbi.nlm.nih.gov/articles/PMC5856935/
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 17:50:11 UTC
+========================================================================
+
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5856935/
+Extraction prompt: Extract all data on mobile phone ownership, phone sharing, who answers calls, response rates, demographics, and household phone behavior in rural Nigeria. I need specific statistics and percentages.
+
+----------------------------------------
+
+# Mobile Phone Ownership and Usage in Rural Nigeria: Key Data
+
+## Call Outcomes (N=349 attempts)
+- **Successfully reached participant**: 110 (31.5%)
+- **Did not ring**: 123 (35.2%)
+- **Rang, no answer**: 28 (8.0%)
+- **Answered by someone else**: 88 (25.2%)
+
+## Gender Disparities
+- **Male participants reached**: 68/133 (51.1%)
+- **Female participants reached**: 42/216 (19.4%)
+- Difference statistically significant (P<.001)
+
+## Phone Sharing Patterns
+Among the 88 calls answered by non-participants:
+- **Answered by someone who knew participant**: 67/81 (82.7%)
+- **Women's calls answered by husbands**: 37/68 (54.4%)
+- **Men's calls answered by spouses**: 3/13 (23.1%)
+- **Called wrong numbers**: 14/81 (17.3%)
+
+## Demographics
+- **Total participants**: 349 (216 female, 133 male)
+- **Age range**: 18-75 years (mean: 27 years)
+- **Predominant age group**: 21-30 years (57.6%)
+
+## Key Finding
+"Self-reported access to mobile phones in rural and low-income areas in north-central Nigeria is higher than actual access," indicating significant gaps between ownership claims and functional access.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

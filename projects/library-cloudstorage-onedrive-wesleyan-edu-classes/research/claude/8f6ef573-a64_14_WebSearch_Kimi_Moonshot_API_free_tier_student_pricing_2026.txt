@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Kimi Moonshot API free tier student pricing 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 04:09:01 UTC
+========================================================================
+
+Search query: Kimi Moonshot API free tier student pricing 2026
+
+----------------------------------------
+
+Web search results for query: "Kimi Moonshot API free tier student pricing 2026"
+
+Links: [{"title":"Kimi AI Pricing (Moonshot Official Plans) - Kimi","url":"https://kimi-ai.chat/pricing/"},{"title":"Is Kimi K2 API Pricing Really Worth the Hype for Developers in 2026","url":"https://apidog.com/blog/kimi-k2-api-pricing/"},{"title":"Kimi API Pricing Calculator & Cost Guide (Feb 2026)","url":"https://costgoat.com/pricing/kimi-api"},{"title":"Model Inference Pricing Explanation - Kimi API - Moonshot AI","url":"https://platform.moonshot.ai/docs/pricing/chat"},{"title":"Kimi AI Pricing 2026: Plans, Membership Cost & API Token Rates","url":"https://kimik2ai.com/pricing/"},{"title":"Kimi K2 - Advanced AI Model by Moonshot AI","url":"https://kimi-k2.com/pricing"},{"title":"Moonshot","url":"https://platform.moonshot.ai/docs/pricing/tools"},{"title":"Kimi K2 0711 API Pricing 2026 - Costs, Performance & Providers","url":"https://pricepertoken.com/pricing-page/model/moonshotai-kimi-k2"},{"title":"Kimi K2.5: Complete Guide to Moonshot's AI Model | Codecademy","url":"https://www.codecademy.com/article/kimi-k-2-5-complete-guide-to-moonshots-ai-model"},{"title":"Kimi K2.5 Free API. How to use Kimi K2.5 API for free? | by Mehul Gupta | Data Science in Your Pocket | Jan, 2026 | Medium","url":"https://medium.com/data-science-in-your-pocket/kimi-k2-5-free-api-b4ce65a14dd3"}]
+
+Based on the search results, here's what I found about Kimi Moonshot API pricing in 2026:
+
+## Consumer App vs. API Pricing
+
+It's important to note that the consumer membership and the developer API are separate, with membership being for using Kimi's own apps/interfaces with a human user.
+
+## API Pricing
+
+API pricing sits at $0.60 per million input tokens and $2.50 per million output tokens. Additionally, cached tokens cost only $0.15/M vs $0.60/M for K2 models, and caching is automatic with no configuration needed.
+
+## Consumer Membership Plans
+
+The free tier (Adagio) provides no cost and unlimited basic conversations, though only a small number of "Deep Research" queries and OK Computer agent tasks are allowed under free usage.
+
+For paid plans, Andante (Paid Basic Membership) costs approximately $19 USD/month (international).
+
+## Free API Access Alternative
+
+Notably, Kimi K2.5 is a powerful multimodal open-source model, and NVIDIA currently provides free access through both chat and API, with an API key generation process that is smooth, instant, and requires no payment details.
+
+**Regarding student pricing specifically:** The search results don't mention any dedicated student pricing tier for either the consumer app or API as of 2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

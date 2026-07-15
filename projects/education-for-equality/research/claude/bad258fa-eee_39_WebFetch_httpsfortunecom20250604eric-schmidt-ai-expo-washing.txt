@@ -1,0 +1,53 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://fortune.com/2025/06/04/eric-schmidt-ai-expo-washington-dc-openai-tesla-d
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:19:13 UTC
+========================================================================
+
+URL: https://fortune.com/2025/06/04/eric-schmidt-ai-expo-washington-dc-openai-tesla-drones-military/
+Extraction prompt: Extract everything about the 2025 AI+ Expo: who attended, what the atmosphere was like, what got demoed, what the hackathon Phase 2 looked like, named speakers and their topics, exhibitor highlights, key quotes from speakers, and the overall narrative arc of the event. Include details on the hackathon stage, drone arena, military presence, defense contractor exhibits.
+
+----------------------------------------
+
+# 2025 AI+ Expo Summary
+
+## Event Overview
+The AI+ Expo for National Competitiveness, held in Washington D.C. at the Walter E. Washington Convention Center, was organized by Eric Schmidt's Special Competitive Studies Project (SCSP). The event drew thousands of attendees including military officials, tech executives, policymakers, students, and defense contractors.
+
+## Atmosphere & Setting
+The venue featured an energetic, fair-like environment with drones flying overhead, competing pitches about "next generation of warfighters," and panels focused on winning the "AI innovation race." Lines to enter stretched around the building. The event was free to attend, though protesters gathered outside chanting anti-genocide messaging during Schmidt's keynote.
+
+## Key Attendees & Speakers
+- **Eric Schmidt**: Former Google CEO and SCSP cofounder delivered the keynote address
+- **Condoleezza Rice**: Took the stage as a speaker
+- **Ylli Bajraktari**: SCSP president and CEO discussed bringing together private sector, academia, and government
+- **Mississippi Governor Tate Reeves**: Gave a keynote publicizing his state's AI data center investments
+
+## Major Exhibitors & Demos
+- **Tesla**: Showcased self-driving technology demonstrations
+- **OpenAI**: Promoted its o3 reasoning model, newly deployed on a Los Alamos supercomputer
+- **Lockheed Martin**: Staged live demonstrations
+- **Defense tech companies**: Distributed promotional materials
+- **International Committee of the Red Cross**: Featured a booth asking "Does AI make wars better or worse?"
+
+## Schmidt's Vision & Key Concepts
+Schmidt outlined a hypothetical military redesign featuring:
+- Two layers of drone systems (ISR and bomber drones)
+- AI-networked, unjammable communication systems
+- Defensive drone swarms protecting U.S. assets
+- An agile, software-driven military structure
+
+He also discussed "Mutual AI Malfunction," a doctrine preventing one nation from achieving permanent AI dominance.
+
+## Notable Quotes
+Schmidt stated: "I would have two layers of drones...the ISR drones would observe, and they would immediately dispatch the bomber" and expressed desire for government investment in domestic drone companies present at the event.
+
+## Student & Critical Perspectives
+A College of William and Mary student studying international relations characterized the current moment as "supposed to be a sobering" one, citing Ukraine's successful drone deployments against Russian military installations.
+
+## Broader Narrative
+The expo functioned as Schmidt's platform to normalize an integrated worldview linking artificial intelligence, business, geopolitics, and national defense as interconnected reshaping forces for American strategy.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,67 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/louisjoecodes/elevenlabs-twilio-i-o
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:35:58 UTC
+========================================================================
+
+URL: https://github.com/louisjoecodes/elevenlabs-twilio-i-o
+Extraction prompt: Extract the complete README with all setup steps for integrating ElevenLabs Conversational AI with Twilio. How does it work? What code is needed? What's the architecture? How to configure the agent? How to set system prompt? What environment variables are needed?
+
+----------------------------------------
+
+# ElevenLabs Conversational AI + Twilio Integration Guide
+
+## Overview
+
+This JavaScript repository enables seamless integration between ElevenLabs Conversational AI agents and Twilio for handling inbound and outbound calls with custom parameters.
+
+## How It Works
+
+The system architecture connects three main components:
+1. **Make.com** - Triggers calls with custom data
+2. **Twilio** - Manages telephony using TwiML to pass variables
+3. **WebSocket Server** - Relays parameters to the ElevenLabs agent
+
+The documentation notes: *"The WebSocket server accesses these variables and passes them to the ElevenLabs agent"* for personalized interactions.
+
+## Key Capabilities
+
+- Handle inbound calls from users
+- Initiate outbound calls programmatically
+- Pass custom parameters (names, prompts) for tailored conversations
+- Integrate with Make.com for dynamic data from sources like Google Sheets
+
+## Required Environment Variables
+
+```
+ELEVENLABS_AGENT_ID
+ELEVENLABS_API_KEY
+TWILIO_ACCOUNT_SID
+TWILIO_AUTH_TOKEN
+TWILIO_PHONE_NUMBER
+```
+
+## Authentication Requirements
+
+Custom parameters require authenticated requests. The setup involves:
+1. Configuring agent settings for Twilio compatibility
+2. Enabling authentication in conversation configuration
+3. Toggling "Enable Authentication" in ElevenLabs settings
+
+## Setup Steps
+
+1. Create `.env` file with credentials
+2. Run `npm install`
+3. Execute `npm start`
+
+## Available Scripts
+
+The repository includes incremental examples: unauthenticated calls, authenticated calls, and calls with custom parameters for both inbound and outbound scenarios.
+
+**Resources:**
+- [ElevenLabs Twilio Documentation](https://elevenlabs.io/docs/conversational-ai/guides/conversational-ai-twilio)
+- [Authenticated Requests Guide](https://elevenlabs.io/docs/conversational-ai/customization/conversation-configuration)
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

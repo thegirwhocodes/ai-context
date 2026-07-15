@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: free news API article archive academic research Nigeria text mining bulk downloa
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:30:23 UTC
+========================================================================
+
+Search query: free news API article archive academic research Nigeria text mining bulk download
+
+----------------------------------------
+
+Web search results for query: "free news API article archive academic research Nigeria text mining bulk download"
+
+Links: [{"title":"Sources - Text Mining Resources - Research Guides at Princeton University","url":"https://libguides.princeton.edu/textmining/sources"},{"title":"Acquiring text - Text Mining - Research Guides at University of Minnesota Minneapolis","url":"https://libguides.umn.edu/text-mining"},{"title":"News Content for Text Mining - News Sources - Research Guides at University of Michigan Library","url":"https://guides.lib.umich.edu/news/textmining"},{"title":"Resources - Text Mining and AI Research Resources - Library Guides at UC Berkeley","url":"https://guides.lib.berkeley.edu/c.php?g=491766&p=11032309"},{"title":"News - Text Data Mining - LibGuides at University of Texas at Austin","url":"https://guides.lib.utexas.edu/c.php?g=1414647&p=10487655"},{"title":"APIs - Scholarly Resources - Finding Data & Statistics - LibGuides at University of California San Diego","url":"https://ucsd.libguides.com/data-statistics/apis"},{"title":"GitHub - olivettigroup/article-downloader: Uses publisher APIs to programmatically retrieve scientific journal articles for text mining. · GitHub","url":"https://github.com/olivettigroup/article-downloader"},{"title":"APIs for Scholarly Research - Data and Statistics - LibGuides at UVa Library","url":"https://guides.lib.virginia.edu/c.php?g=515084&p=10046079"},{"title":"Text and data mining | Elsevier","url":"https://www.elsevier.com/about/open-science/research-data/text-and-data-mining"},{"title":"Newspapers & Magazines - Text Mining and AI Research Resources - Library Guides at UC Berkeley","url":"https://guides.lib.berkeley.edu/c.php?g=491766&p=7826271"}]
+
+I found several resources for free news APIs and text mining for academic research. Here are the key options:
+
+## Free News APIs
+
+An API service allows you to query online news sources from the past month including major publications such as the New York Times, ABC News, and Al Jazeera, with a free API key available.
+
+The Chronicling America API provides access to information about historic U.S. newspapers and millions of digitized newspaper pages with OCR data available for bulk download.
+
+The New York Times API allows programmatic access to New York Times data for non-commercial purposes, with ten public APIs including Archive, Article Search, Books, Community, Geographic, Most Popular, Semantic, Times Newswire, TimesTags, and Top Stories.
+
+## Text Mining for Academic Research
+
+Media Cloud is an open source and open data platform for storing, retrieving, visualizing, and analyzing online news, and is newly multi-platform, using connected API keys to allow for retrieving, visualizing, and analyzing content from various social media platforms.
+
+There is a Python tool for downloading/updating/maintaining a repository of all PLOS XML article files, which can be used instead of web scraping.
+
+## Note on Nigeria-Specific Resources
+
+The search results provided don't contain specific information about Nigerian news APIs or archives. For Nigeria-specific research, you may want to search for dedicated Nigerian news sources or contact academic institutions in Nigeria for access to local news archives.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

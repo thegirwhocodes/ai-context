@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: social determinants of health SDOH research priorities 2026 clinical outcomes
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 00:01:37 UTC
+========================================================================
+
+Search query: social determinants of health SDOH research priorities 2026 clinical outcomes
+
+----------------------------------------
+
+Web search results for query: "social determinants of health SDOH research priorities 2026 clinical outcomes"
+
+Links: [{"title":"Social Determinants of Health (SDOH) | About CDC | CDC","url":"https://www.cdc.gov/about/priorities/why-is-addressing-sdoh-important.html"},{"title":"Embracing complexity and innovation to tackle the social determinants of health - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12931545/"},{"title":"Social Determinants of Health - Healthy People 2030 | odphp.health.gov","url":"https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health"},{"title":"Social Determinants of Health | Public Health Gateway | CDC","url":"https://www.cdc.gov/public-health-gateway/php/about/social-determinants-of-health.html"},{"title":"Advancing social determinants of health research and practice: Data, tools, and implementation - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11975782/"},{"title":"April 2022 REPORT 1 HP-2022-12 Addressing Social Determinants of Health:","url":"https://aspe.hhs.gov/sites/default/files/documents/e2b650cd64cf84aae8ff0fae7474af82/SDOH-Evidence-Review.pdf"},{"title":"Social Determinants of Health: The Impact of This Overlooked ...","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12224330/"},{"title":"Impact of hospital and health system initiatives to address Social Determinants of Health (SDOH) in the United States: a scoping review of the peer-reviewed literature | BMC Health Services Research | Springer Nature Link","url":"https://link.springer.com/article/10.1186/s12913-025-12494-2"},{"title":"April 1, 2022 HP-2022-12 Addressing Social Determinants of Health:","url":"https://aspe.hhs.gov/sites/default/files/documents/6ba4bbb2e9c9551355a6926f023f1585/SDOH-Evidence-Review.pdf"},{"title":"Social Determinants of Health Literature Summaries - Healthy People 2030 | odphp.health.gov","url":"https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries"}]
+
+Based on the web search results, here's what I found regarding social determinants of health (SDOH) research priorities and clinical outcomes:
+
+## Key Definitions and Impact
+
+Social determinants of health (SDOH) are the nonmedical factors that influence health outcomes, encompassing the conditions in which people are born, grow, work, live, worship, and age. SDOH have been shown to have a greater influence on health than either genetic factors or access to healthcare services.
+
+## Impact on Clinical Outcomes
+
+On average, clinical care impacts only 20 percent of county-level variation in health outcomes, while SDOH affect as much as 50 percent of health outcomes. Socioeconomic factors alone may account for 47 percent of health outcomes.
+
+## Current Research Priorities and Approaches
+
+Recent research is focusing on several key areas:
+
+- **Data Integration and Technology**: Advances in artificial intelligence (AI) and the proliferation of real-world data (RWD), such as electronic health records (EHRs) and administrative claims data, have created unique opportunities to develop innovative approaches that address these social factors, ultimately improving health outcomes and equity.
+
+- **Hospital and Health System Initiatives**: Nearly half of initiatives addressed multiple SDOH domains, focusing on Social & Community Context, Economic Stability, and Neighborhood & Built Environment. However, process, clinical, and social outcomes were unevenly prioritized, with only 10% of studies addressing all three outcome types.
+
+- **Future Research Recommendations**: Future initiatives should prioritize universal SDOH screening and address broader, community-wide needs, with a focus on upstream interventions that impact entire communities.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

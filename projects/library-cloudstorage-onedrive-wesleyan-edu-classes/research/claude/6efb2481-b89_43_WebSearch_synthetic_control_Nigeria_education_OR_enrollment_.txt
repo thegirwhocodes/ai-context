@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Nigeria education OR enrollment OR "human capital" empirical
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:42:06 UTC
+========================================================================
+
+Search query: "synthetic control" Nigeria education OR enrollment OR "human capital" empirical paper
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Nigeria education OR enrollment OR "human capital" empirical paper"
+
+Links: [{"title":"Educational Enrollment and Human Capital Development in Nigeria by Abubakar Sule, Alih Yusuf, Ojonimi Umaru :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4942473"},{"title":"Education and Economic Growth: Empirical Evidence from ...","url":"https://aercafrica.org/wp-content/uploads/2020/11/Research-Paper-407.pdf"},{"title":"(PDF) EDUCATIONAL ENROLMENT AND HUMAN CAPITAL DEVELOPMENT IN NIGERIA","url":"https://www.researchgate.net/publication/341378919_EDUCATIONAL_ENROLMENT_AND_HUMAN_CAPITAL_DEVELOPMENT_IN_NIGERIA"},{"title":"Education enrolment rate vs employment rate: Implications for sustainable human capital development in Nigeria - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0738059321000389"},{"title":"Human Capital and Development in Nigeria Paper | PDF | Economic Development | Human Capital","url":"https://www.scribd.com/doc/55771056/Human-Capital-and-Development-in-Nigeria-Paper"},{"title":"Human Capital Development and Economic Growth in ...","url":"https://ijrjournal.com/index.php/ijr/article/download/736/647/661"},{"title":"(PDF) Human Capital and Educational Investment in Nigeria: Problems and Opportunities","url":"https://www.academia.edu/120935700/Human_Capital_and_Educational_Investment_in_Nigeria_Problems_and_Opportunities"},{"title":"(PDF) Human Capital Development and Economic Growth in Nigeria","url":"https://www.researchgate.net/publication/333907318_Human_Capital_Development_and_Economic_Growth_in_Nigeria"},{"title":"(PDF) An Empirical Analysis of Human Capital Investment and Economic Growth in Nigeria","url":"https://www.academia.edu/28667003/An_Empirical_Analysis_of_Human_Capital_Investment_and_Economic_Growth_in_Nigeria"},{"title":"University education and its impact on human capital ...","url":"https://oajournals.fupress.net/index.php/sf/article/download/12783/12254/19350"}]
+
+I've searched for research on synthetic control methodology applied to Nigeria's education, enrollment, or human capital. The search results primarily returned empirical papers studying education and human capital in Nigeria, but I notice that **the specific combination of "synthetic control" methodology with Nigeria education research does not appear prominently in these results**.
+
+The results do contain several relevant empirical papers on Nigeria's education and human capital:
+
+- Studies investigating the effect of education enrollment (primary, secondary & tertiary) on human capital development in Nigeria
+
+- Research covering data from 1970–2013 examining primary school enrollment rate, secondary school enrollment rate, and tertiary school enrollment rate
+
+- Empirical evidence suggesting a long-run link in Nigeria between labor force, physical capital investment, human capital creation (proxied by enrollment in educational institutions), and economic growth
+
+However, **none of these papers explicitly mention using synthetic control methodology**, which is a specific quasi-experimental technique used to estimate causal effects by creating a weighted combination of control units. 
+
+If you're specifically looking for papers that use synthetic control methods to study education policy changes in Nigeria, you may need to search more specialized databases (like NBER, RePEc, or Google Scholar) or refine your search to look for papers on specific Nigerian education policies and their synthetic control-based evaluations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

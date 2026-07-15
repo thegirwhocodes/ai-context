@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vonage NCCO webhook call control play record gather IVR Nigeria
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:00:50 UTC
+========================================================================
+
+Search query: Vonage NCCO webhook call control play record gather IVR Nigeria
+
+----------------------------------------
+
+Web search results for query: "Vonage NCCO webhook call control play record gather IVR Nigeria"
+
+Links: [{"title":"What Is An NCCO – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/13206826369564-What-Is-An-NCCO"},{"title":"NCCOs - Vonage Go SDK Docs","url":"https://vonage.github.io/vonage-go-sdk/examples/ncco"},{"title":"Vonage NCCO Examples | ncco-examples","url":"https://nexmo-community.github.io/ncco-examples/"},{"title":"Vonage API Developer","url":"https://developer.vonage.com/en/voice/voice-api/webhook-reference"},{"title":"Vonage NCCO - API Reference","url":"https://developer.vonage.com/en/voice/voice-api/ncco-reference"},{"title":"Vonage NCCO API Guide","url":"https://developer.vonage.com/en/voice/voice-api/concepts/call-control-objects"},{"title":"How to Build an IVR using Node-RED and the Nexmo APIs","url":"https://developer.vonage.com/en/blog/interactive-voice-response-node-red-dr"},{"title":"Best Practices for Contact Center with Vonage Voice API and Client SDK","url":"https://developer.vonage.com/en/blog/best-practices-for-contact-center-with-vonage-voice-api-and-client-sdk"},{"title":"Voice Documentation | KPN Developer","url":"https://developer.kpn.com/documentation/vonage-voice-api-documentation"},{"title":"How do I record a certain part of the call using Voice API? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/235528528-How-do-I-record-a-certain-part-of-the-call-using-Voice-API"}]
+
+Based on the search results, here's what I found about Vonage NCCO webhook call control:
+
+## What is NCCO?
+
+NCCO (Nexmo Call Control Object) is the format for describing the various actions that will take place during a call. NCCOs define actions like audio playback, call recording, or IVR, executed during a call.
+
+## Key Actions Supported
+
+The NCCO framework supports several important actions:
+
+- **Play**: Audio playback is supported
+- **Record**: Record actions will record your call, with code snippets available for examples of how to authenticate and download the finished recording after the call. Additionally, when the recording completes, Vonage sends a webhook containing the recording URL so that you can download the file.
+- **Gather/Input**: Dual Tone Multi Frequency (DTMF), is a form of signaling used by phone systems to transmit the digits 0-9 and the * and # characters.
+
+## IVR Applications
+
+This scripting of call logic allows for flexible and sophisticated voice applications, from simple notifications to complex interactive systems.
+
+## Webhook Integration
+
+A Nexmo Call Control Object (NCCO) is a JSON array that you use to control the flow of a Voice API call. The system operates through webhook endpoints that return NCCO instructions to control call behavior.
+
+Note: While the search results cover the general NCCO features and capabilities, they don't specifically address Nigeria-related configurations or requirements.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

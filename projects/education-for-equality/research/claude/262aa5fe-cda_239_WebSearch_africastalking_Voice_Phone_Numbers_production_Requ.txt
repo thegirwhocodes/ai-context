@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "africastalking" Voice "Phone Numbers" production "Request Number" Nigeria callb
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:33:53 UTC
+========================================================================
+
+Search query: "africastalking" Voice "Phone Numbers" production "Request Number" Nigeria callback configuration
+
+----------------------------------------
+
+Web search results for query: ""africastalking" Voice "Phone Numbers" production "Request Number" Nigeria callback configuration"
+
+Links: [{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Voice Sandbox | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/11532610-voice-sandbox"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Home | Africa's Talking Help Center","url":"https://help.africastalking.com/en/"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice/"},{"title":"africastalking - npm","url":"https://www.npmjs.com/package/africastalking"},{"title":"Implementing an Interactive Voice Response (IVR) System | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2900701-implementing-an-interactive-voice-response-ivr-system"},{"title":"Africa’s Talking – Pricing","url":"https://africastalking.com/pricing"},{"title":"What types of voice phone numbers are available ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available"}]
+
+I've found search results related to Africa's Talking Voice API and phone number management. Here are the key findings:
+
+## Voice Phone Numbers
+
+Toll-Free (0800), Premium Numbers (0900) and virtualized numbers do not make outgoing calls but the regular numbers attached to them (also known as hunting numbers) can make the outgoing calls.
+
+## Requesting Phone Numbers
+
+To request a number, you will go to your app dashboard and under Voice->Request pick regular number.
+
+## Callback Configuration
+
+A callback URL is important if you want to know what is happening with your calls - this is where Africa's Talking POSTs details of a call. To use callback, you need to configure your callback, top up your account and proceed to make calls.
+
+## Production Setup
+
+You will be issued with a live number to use in the production account for a 2 weeks test period after which it will be removed.
+
+## Nigeria-Specific Information
+
+The search results reference Nigeria in the context of Africa's Talking services, and USSD push currently works in Nigeria only and requires you to have registered a callback URL in your account.
+
+For more detailed technical assistance, you can reach out to voice@africastalking.com for technical assistance.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

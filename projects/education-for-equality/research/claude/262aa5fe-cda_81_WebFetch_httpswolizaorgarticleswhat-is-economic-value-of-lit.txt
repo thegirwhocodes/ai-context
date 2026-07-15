@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://wol.iza.org/articles/what-is-economic-value-of-literacy-and-numeracy/lon
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 00:32:42 UTC
+========================================================================
+
+URL: https://wol.iza.org/articles/what-is-economic-value-of-literacy-and-numeracy/long
+Extraction prompt: Extract ALL specific wage premium percentages for literacy and numeracy COMBINED. What is the total earnings increase when someone has both foundational literacy AND numeracy? Any figures broken down for developing countries. Any specific percentages, dollar amounts, or standard deviation effects.
+
+----------------------------------------
+
+# Wage Premium Analysis: Literacy and Numeracy Combined
+
+## Key Findings
+
+The document does **not provide a combined wage premium figure** for literacy AND numeracy together. Instead, it reports separate returns:
+
+### Individual Skill Premiums
+
+**Numeracy alone:** "a one standard deviation increase in numeracy skills is associated with a 20% wage premium for workers" across OECD countries (2015-2019 data).
+
+**Literacy alone:** "an additional standard deviation in literacy skills attracted a wage premium of around 14%" for UK workers aged 34 in 2004.
+
+### Cross-Country Variation
+
+The premium varies dramatically: "in eight countries the wage premium is below 15% but in nine countries it is above 21%." Chile shows the highest at "nearly 37%" for numeracy.
+
+## Developing Countries
+
+The article mentions that PIAAC data "can now be used to offer a perspective on the returns to skills in developing countries" but provides **no specific percentage figures** for developing nations. One reference cites work examining "skill achievement and returns in developing countries" but detailed results aren't included in this summary.
+
+## Limitations
+
+The document emphasizes this is **correlational, not causal** evidence, and addresses measurement error concerns rather than providing combined premium calculations.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

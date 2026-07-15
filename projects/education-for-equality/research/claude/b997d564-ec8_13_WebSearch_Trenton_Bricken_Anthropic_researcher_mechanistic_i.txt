@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Trenton Bricken Anthropic researcher mechanistic interpretability
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:49 UTC
+========================================================================
+
+Search query: Trenton Bricken Anthropic researcher mechanistic interpretability
+
+----------------------------------------
+
+Web search results for query: "Trenton Bricken Anthropic researcher mechanistic interpretability"
+
+Links: [{"title":"On the Biology of a Large Language Model","url":"https://transformer-circuits.pub/2025/attribution-graphs/biology.html"},{"title":"Trenton Bricken","url":"https://www.trentonbricken.com/"},{"title":"Trenton Bricken (@TrentonBricken) ...","url":"https://twitter.com/trentonbricken?lang=en"},{"title":"How Does Claude 4 Think? — Sholto Douglas & Trenton Bricken","url":"https://www.dwarkesh.com/p/sholto-trenton-2"},{"title":"Anthropic Open-Sources Tool to Trace the \"Thoughts\" of Large Language Models - InfoQ","url":"https://www.infoq.com/news/2025/06/anthropic-circuit-tracing/"},{"title":"Trenton Bricken","url":"https://scholar.google.com/citations?user=CP6aLusAAAAJ&hl=en"},{"title":"Circuits Updates - January 2024","url":"https://transformer-circuits.pub/2024/jan-update/index.html"},{"title":"TrentBrick (Trenton Bricken) · GitHub","url":"https://github.com/TrentBrick"},{"title":"Is RL + LLMs enough for AGI? — Sholto Douglas & Trenton Bricken","url":"https://podcasts.apple.com/us/podcast/is-rl-llms-enough-for-agi-sholto-douglas-trenton-bricken/id1516093381?i=1000709488338"},{"title":"Trading places: What happens when neuroscience turns into machine learning, and machine learning turns into neuroscience? | The Transmitter: Neuroscience News and Perspectives","url":"https://www.thetransmitter.org/the-big-picture/trading-places-what-happens-when-neuroscience-turns-into-machine-learning-and-machine-learning-turns-into-neuroscience/"}]
+
+Based on the search results, here's what I found about Trenton Bricken as an Anthropic researcher focused on mechanistic interpretability:
+
+## Overview
+
+Trenton Bricken researches mechanistic interpretability at Anthropic. He is a researcher at Anthropic with a background in Machine Learning, Neuroscience, and Computational Biology, and holds the position of Member of Technical Staff at Anthropic.
+
+## Research Contributions
+
+Trenton Bricken has been a leading researcher on several major mechanistic interpretability projects:
+
+1. **Attribution Graphs & Circuit Tracing**: Bricken is listed as a lead contributor on research applying attribution graphs to study Claude 3.5 Haiku. His research into circuit tracing is a key contribution to LLM mechanistic interpretability, focused on understanding the core units of computation inside an LLM.
+
+2. **Dictionary Learning**: Bricken was a key author on "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning" in October 2024, and co-authored "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet" in May 2024.
+
+3. **Interpretability Tools**: Bricken has developed an "Interpretability Agent," a version of Claude equipped with interpretability tools that can discover hidden model behaviors.
+
+## Impact
+
+Bricken's work has been cited by 2,380 researchers, indicating significant influence in the field.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

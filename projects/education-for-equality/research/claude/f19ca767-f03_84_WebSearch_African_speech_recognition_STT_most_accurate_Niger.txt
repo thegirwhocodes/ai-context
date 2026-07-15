@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: African speech recognition STT most accurate Nigerian languages Whisper alternat
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:19 UTC
+========================================================================
+
+Search query: African speech recognition STT most accurate Nigerian languages Whisper alternative 2025 2026
+
+----------------------------------------
+
+Web search results for query: "African speech recognition STT most accurate Nigerian languages Whisper alternative 2025 2026"
+
+Links: [{"title":"Best open source speech-to-text (STT) model in 2026 (with benchmarks) | Blog — Northflank","url":"https://northflank.com/blog/best-open-source-speech-to-text-stt-model-in-2026-benchmarks"},{"title":"Benchmarking Automatic Speech Recognition Models for African Languages","url":"https://arxiv.org/html/2512.10968v1"},{"title":"Automatic Speech Recognition (ASR) for African Low-Resource Languages: A Systematic Literature Review","url":"https://arxiv.org/html/2510.01145v1"},{"title":"The Top Open Source Speech-to-Text (STT) Models in 2025","url":"https://modal.com/blog/open-source-stt"},{"title":"Speech-to-text benchmarks 2025 | Soniox","url":"https://soniox.com/benchmarks"},{"title":"Best Speech-to-Text APIs in 2026: A Comprehensive Comparison Guide","url":"https://deepgram.com/learn/best-speech-to-text-apis-2026"},{"title":"Top 6 speech to text AI solutions in 2026 - Fingoweb","url":"https://www.fingoweb.com/blog/top-6-speech-to-text-ai-solutions-in-2026/"},{"title":"Benchmarking Top Open-Source Speech Recognition Models (2025)","url":"https://www.shunyalabs.ai/blog/benchmarking-top-open-source-speech-recognition-models"},{"title":"The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages","url":"https://arxiv.org/html/2505.20564"},{"title":"[2512.10968] Benchmarking Automatic Speech Recognition Models for African Languages","url":"https://www.arxiv.org/abs/2512.10968"}]
+
+Based on the web search results, here's what I found regarding African speech recognition, STT accuracy for Nigerian languages, and Whisper alternatives:
+
+## Key Findings for African Speech Recognition
+
+### General African Language ASR Status
+
+Automatic speech recognition (ASR) for African languages remains constrained by limited labeled data, and large pre-trained systems such as Whisper, XLS-R, MMS, and W2v-BERT have expanded access to ASR technology, but their comparative behavior in African low-resource contexts has not been studied in a unified and systematic way.
+
+### Best Performing Models for African Languages
+
+MMS and W2v-BERT are more data efficient in very low-resource regimes, XLS-R scales more effectively as additional data becomes available, and Whisper demonstrates advantages in mid-resource conditions.
+
+### Nigerian Languages Specifically
+
+For Nigerian languages, the NaijaVoices dataset is a 1,800-hour speech-text dataset with 5,000+ speakers that achieved 75.86% WER improvements for Whisper, 52.06% for MMS, and 42.33% for XLSR through finetuning experiments. This dataset focuses on Igbo, Hausa, and Yoruba languages.
+
+### Whisper Alternatives
+
+Top alternatives to Whisper mentioned for 2025-2026 include:
+
+- Granite Speech 3.3 (IBM) – 8B parameters with WER ~ 5.85%, Apache 2.0 license
+- Whale – Large-scale multilingual ASR achieving ~2.4% WER on Librispeech, outperforming Whisper large-v3
+- OpenAI's Whisper Large V3 remains the gold standard for multilingual speech recognition with 1.55 billion parameters and support for 99+ languages
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

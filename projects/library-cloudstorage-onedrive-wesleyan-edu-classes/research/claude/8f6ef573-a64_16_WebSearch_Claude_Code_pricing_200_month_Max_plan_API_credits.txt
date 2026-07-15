@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Code pricing $200 month Max plan API credits 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 04:24:11 UTC
+========================================================================
+
+Search query: Claude Code pricing $200 month Max plan API credits 2026
+
+----------------------------------------
+
+Web search results for query: "Claude Code pricing $200 month Max plan API credits 2026"
+
+Links: [{"title":"Using Claude Code with your Pro or Max plan | Claude Help Center","url":"https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan"},{"title":"Claude Code Pricing | ClaudeLog","url":"https://claudelog.com/claude-code-pricing/"},{"title":"Claude AI Pricing 2026: The Ultimate Guide to Plans, API Costs, and Limits","url":"https://www.glbgpt.com/hub/claude-ai-pricing-2026-the-ultimate-guide-to-plans-api-costs-and-limits/"},{"title":"Claude Pricing Explained: Subscription Plans & API Costs | IntuitionLabs","url":"https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"},{"title":"Plans & Pricing | Claude by Anthropic","url":"https://claude.com/pricing"},{"title":"Claude Code Pricing 2026: Costs, Plans & Top Alternatives | Articles | o-mega","url":"https://o-mega.ai/articles/claude-code-pricing-2026-costs-plans-and-alternatives"},{"title":"Claude Code Pricing: Pro, Max & API Cost Breakdown for 2026","url":"https://www.thecaio.ai/blog/claude-code-pricing-guide"},{"title":"Claude Code: Rate limits, pricing, and alternatives | Blog — Northflank","url":"https://northflank.com/blog/claude-rate-limits-claude-code-pricing-cost"},{"title":"Claude code pricing: How to save money","url":"https://blog.promptlayer.com/claude-code-pricing-how-to-save-money/"},{"title":"Claude Code Pricing: Pro vs Max vs API (2026) — LaunchKit","url":"https://launchkit.tech/blog/claude-code-pricing-guide"}]
+
+Based on the search results, here's what I found regarding Claude Code pricing in 2026:
+
+## Claude Code Pricing Plans
+
+Claude Code offers multiple subscription tiers: the Pro plan at $20 per month (or $17 if you choose annual billing), and Max plans at $100 for 5× usage or $200 for 20×.
+
+## Max Plan Details
+
+The Max plan at $200 provides 20× Pro usage and adds full Opus 4.5, priority access, and memory features.
+
+## API Credits with Claude Code
+
+If you want to use API credits through Claude Code, usage will be billed at standard API rates (distinct from Pro/Max Plan pricing). If auto-reload is enabled in your Console account, additional credits will be automatically added when your balance runs low.
+
+## API Pricing Models
+
+For developers using the API directly, Sonnet 4.5 costs $3 input and $15 output for requests up to 200K tokens, and above 200K tokens, rates double ($6/$22.50).
+
+The $200 Max plan is positioned as the premium tier for power users who need unrestricted access and want to avoid hitting usage limits during intensive development work.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

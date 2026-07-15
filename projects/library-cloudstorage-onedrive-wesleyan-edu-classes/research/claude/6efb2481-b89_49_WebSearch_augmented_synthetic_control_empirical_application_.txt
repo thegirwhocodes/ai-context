@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "augmented synthetic control" empirical application country GDP convex hull
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:11:30 UTC
+========================================================================
+
+Search query: "augmented synthetic control" empirical application country GDP convex hull
+
+----------------------------------------
+
+Web search results for query: ""augmented synthetic control" empirical application country GDP convex hull"
+
+Links: [{"title":"[1811.04170] The Augmented Synthetic Control Method","url":"https://arxiv.org/abs/1811.04170"},{"title":"NBER WORKING PAPER SERIES THE AUGMENTED SYNTHETIC CONTROL METHOD","url":"https://www.nber.org/system/files/working_papers/w28885/w28885.pdf"},{"title":"The Augmented Synthetic Control Method∗","url":"https://arxiv.org/pdf/1811.04170"},{"title":"The Augmented Synthetic Control Method: Journal of the American Statistical Association: Vol 116 , No 536 - Get Access","url":"https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1929245"},{"title":"The Augmented Synthetic Control Method","url":"https://ideas.repec.org/p/arx/papers/1811.04170.html"},{"title":"The Augmented Synthetic Control Method: Journal of the American Statistical Association: Vol 116, No 536","url":"https://www.tandfonline.com/doi/abs/10.1080/01621459.2021.1929245"},{"title":"The augmented synthetic control method in public health and biomedical research - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10981189/"},{"title":"The Augmented Synthetic Control Method | NBER","url":"https://www.nber.org/papers/w28885"},{"title":"The Augmented Synthetic Control Method","url":"https://www.personal.soton.ac.uk/cz1y20/Reading_Group/mlts-2023/week16/Augmented_Synthetic_Control_Method.pdf"},{"title":"The Augmented Synthetic Control Method* | Request PDF","url":"https://www.researchgate.net/publication/351593613_The_Augmented_Synthetic_Control_Method"}]
+
+Based on the search results, here's what I found about augmented synthetic control with empirical applications involving country GDP and convex hull considerations:
+
+## The Augmented Synthetic Control Method
+
+Augmented SCM uses an outcome model to estimate the bias due to imperfect pretreatment fit and then de-biases the original SCM estimate. The main proposal, which uses ridge regression as the outcome model, directly controls pre-treatment fit while minimizing extrapolation from the convex hull.
+
+## Key Role of the Convex Hull
+
+Ridge ASCM improves the pre-treatment fit relative to SCM alone by allowing for negative weights and extrapolating away from the convex hull. When the treated unit is in the convex hull of the control units so the SCM weights exactly balance the lagged outcomes, the Ridge ASCM and SCM weights are identical. When SCM weights do not achieve exact balance, the Ridge ASCM solution will use negative weights to extrapolate from the convex hull of the control units.
+
+## Empirical Applications with Country GDP
+
+The search results include an empirical application examining trade effects across countries. Using Eurostat data on 15 EU countries from 1995-2015, researchers estimated that euro adoption increased bilateral trade by 24% on average, but effects range from -12% to +68% across eurozone pairs. This example demonstrates how augmented synthetic control methods are applied in cross-country economic analyses where pre-treatment fit challenges are relevant.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

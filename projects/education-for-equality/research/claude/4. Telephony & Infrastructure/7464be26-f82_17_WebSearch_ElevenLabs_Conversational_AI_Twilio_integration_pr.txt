@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs Conversational AI Twilio integration pricing 2026
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:32:52 UTC
+========================================================================
+
+Search query: ElevenLabs Conversational AI Twilio integration pricing 2026
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs Conversational AI Twilio integration pricing 2026"
+
+Links: [{"title":"Connect Twilio to ElevenLabs Conversational AI Voice Agents","url":"https://elevenlabs.io/agents/integrations/twilio"},{"title":"Integrate ElevenLabs Voices with Twilio's ConversationRelay | Twilio","url":"https://www.twilio.com/en-us/blog/integrate-elevenlabs-voices-with-twilios-conversationrelay"},{"title":"ElevenAgents | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/overview"},{"title":"Conversational AI for AI texting and calling | Twilio","url":"https://www.twilio.com/en-us/products/conversational-ai"},{"title":"ElevenLabs — We cut our pricing for Conversational AI","url":"https://elevenlabs.io/blog/we-cut-our-pricing-for-conversational-ai"},{"title":"Conversational AI Agent Platform for Real-Time Voice & Chat","url":"https://elevenlabs.io/conversational-ai"},{"title":"Build a Twilio Voice + ElevenLabs Agents Integration | Twilio","url":"https://www.twilio.com/en-us/blog/developers/tutorials/integrations/build-twilio-voice-elevenlabs-agents-integration"},{"title":"ElevenLabs Integration for Twilio","url":"https://elevenlabs.io/use-cases/twilio"},{"title":"Twilio native integration | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/phone-numbers/twilio-integration/native-integration"},{"title":"Conversational AI Integrations","url":"https://elevenlabs.io/agents/integrations"}]
+
+Based on the search results, here's what I found about ElevenLabs Conversational AI Twilio integration pricing for 2026:
+
+## Pricing
+
+ElevenLabs recently cut their pricing for Conversational AI, with calls now starting at 10 cents per minute — an ~50% discount across Starter, Creator and Pro plans. Calls are 8 cents per minute on an annual business plan and can go lower on Enterprise plans. 
+
+Important note: The above prices do not include LLM costs. ElevenLabs is currently absorbing those fees though will eventually pass those costs on.
+
+## Integration Features
+
+ElevenLabs Conversational AI can connect with your Twilio telephony to automate and enhance customer calls using your current Twilio numbers. This native integration enables AI-driven handling of both inbound and outbound calls on Twilio's platform without any changes to your existing phone infrastructure.
+
+Key capabilities include: AI-powered conversations on every call, real-time voice processing with sub-second response times, global scale with enterprise-grade reliability, and seamless integration with your existing Twilio setup.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

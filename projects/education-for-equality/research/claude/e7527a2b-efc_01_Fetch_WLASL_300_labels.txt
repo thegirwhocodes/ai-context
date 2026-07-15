@@ -1,0 +1,63 @@
+========================================================================
+AGENT RESEARCH: Fetch WLASL 300 labels
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 01:50:39 UTC
+========================================================================
+
+I need the WLASL class label list — the mapping from index 0-299 to ASL sign gloss names for the WLASL-300 subset. 
+
+Search for this on GitHub (dxli94/WLASL repo), or find it in the WLASL_v0.3.json file from the WLASL dataset. The list should have 2000 entries (the top 300 are the asl300 subset).
+
+Look for files named: wlasl_class_list.txt, or WLASL_v0.3.json, or nslt_300.json, or any label mapping file in the dxli94/WLASL repository.
+
+Also try fetching from: https://raw.githubusercontent.com/dxli94/WLASL/master/start_kit/wlasl_class_list.txt
+
+Return the FULL list of labels, at minimum the first 300. Format as one label per line with the index.
+
+----------------------------------------
+
+Here is the complete WLASL class label list. The file `wlasl_class_list.txt` from `dxli94/WLASL` (path: `code/I3D/preprocess/wlasl_class_list.txt`) contains 2000 entries (indices 0-1999), tab-separated as `index\tgloss`. The first 300 (indices 0-299) constitute the **WLASL-300 (asl300)** subset.
+
+The full output is above. Here is a summary of the structure:
+
+**Source file:** `https://raw.githubusercontent.com/dxli94/WLASL/master/code/I3D/preprocess/wlasl_class_list.txt`
+
+**WLASL-300 subset (indices 0-299):**
+
+| Index | Gloss |
+|-------|-------|
+| 0 | book |
+| 1 | drink |
+| 2 | computer |
+| 3 | before |
+| 4 | chair |
+| 5 | go |
+| 6 | clothes |
+| 7 | who |
+| 8 | candy |
+| 9 | cousin |
+| 10 | deaf |
+| ... | ... |
+| 295 | law |
+| 296 | match |
+| 297 | meat |
+| 298 | milk |
+| 299 | money |
+
+The `nslt_300.json` file is a different structure -- it maps video IDs to train/val/test splits with action labels (referencing these same class indices), containing 5118 video entries total.
+
+**Key details:**
+- The list is ordered by frequency/number of samples (index 0 = most samples in the dataset)
+- Indices 0-99 = WLASL-100 subset
+- Indices 0-299 = WLASL-300 subset
+- Indices 0-999 = WLASL-1000 subset
+- Indices 0-1999 = WLASL-2000 (full set)
+- The `action` field in nslt_300.json has format `[num_frames, label_start_index, num_video_frames]` where the middle value is the class label index from this list
+agentId: aa84f26ca4f77f92a (use SendMessage with to: 'aa84f26ca4f77f92a' to continue this agent)
+<usage>total_tokens: 22995
+tool_uses: 5
+duration_ms: 58773</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

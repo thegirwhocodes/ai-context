@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Barro Lee 2010 "new data set" educational attainment growth model NBER working p
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 05:43:47 UTC
+========================================================================
+
+Search query: Barro Lee 2010 "new data set" educational attainment growth model NBER working paper
+
+----------------------------------------
+
+Web search results for query: "Barro Lee 2010 "new data set" educational attainment growth model NBER working paper"
+
+Links: [{"title":"A New Data Set of Educational Attainment in the World, 1950-2010 | NBER","url":"https://www.nber.org/papers/w15902"},{"title":"Barro-Lee Educational Attainment Dataset","url":"http://barrolee.com/"},{"title":"A new data set of educational attainment in the world, 1950–2010","url":"https://ideas.repec.org/a/eee/deveco/v104y2013icp184-198.html"},{"title":"A New Data Set of Educational Attainment in the World, 1950-2010","url":"https://ideas.repec.org/p/nbr/nberwo/15902.html"},{"title":"A New Data Set of Educational Attainment in the World, 1950-2010 by Robert J. Barro, Jong-Wha Lee :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1591325"},{"title":"Barro, R.J. and Lee, J.-W. (2010) A New Data Set of Educational Attainment in the World, 1950-2010. NBER Working Paper No. 15902. - References - Scientific Research Publishing","url":"https://www.scirp.org/reference/referencespapers?referenceid=2667278"},{"title":"A new data set of educational attainment in the world, 1950–2010 - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0304387812000855"},{"title":"Data | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/Data.html"},{"title":"Barro, R.J. and Lee, J.W.L. (2010) A New Data Set of Education Attainment in the World, 1950-2010. NBER Working Paper No.15902.National Bureau of Economic Research, 104, 184-198. - References - Scientific Research Publishing","url":"https://www.scirp.org/(S(351jmbntvnsjt1aadkposzje))/reference/referencespapers.aspx?referenceid=1748576"},{"title":"Barro-Lee Educational Attainment Dataset | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/"}]
+
+I found the Barro-Lee 2010 NBER working paper you were searching for. Here are the key details:
+
+**Paper Information:**
+The paper is "A New Data Set of Educational Attainment in the World, 1950-2010," NBER Working Paper No. 15902, published in April 2010 by Robert J. Barro and Jong-Wha Lee.
+
+**Dataset Overview:**
+The panel data set on educational attainment has been updated for 146 countries from 1950 to 2010, with data disaggregated by sex and by 5-year age intervals.
+
+**Methodology:**
+The authors improved the accuracy of estimation by using information from consistent census data, disaggregated by age group, along with new estimates of mortality rates and completion rates by age and education level.
+
+**Key Findings:**
+The authors used these new data to investigate how output relates to the stock of human capital, measured by overall years of schooling as well as by the composition of educational attainment of workers at various levels of education, and found that schooling has a significantly positive effect on output. After controlling for the simultaneous determination of human capital and output using the 10-year lag of parents' education as an instrument variable, the estimated rate-of-return to an additional year of schooling ranges from 5% to 12%.
+
+The paper is available through NBER at https://www.nber.org/papers/w15902.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

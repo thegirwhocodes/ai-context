@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://getvoicemode.com/
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:39 UTC
+========================================================================
+
+URL: https://getvoicemode.com/
+Extraction prompt: What is VoiceMode for Claude Code? How does it work, what are the requirements (API keys, dependencies), and how do you install it? Is it free or paid? Does it work on macOS with VS Code?
+
+----------------------------------------
+
+# VoiceMode for Claude Code: Overview
+
+**What it is:**
+VoiceMode MCP enables "natural voice conversations Claude Code and other AI coding assistants" through the Model Context Protocol, allowing voice interactions instead of just text.
+
+**How it works:**
+It integrates with Claude Desktop or Claude Code to process voice input via your microphone and provide audio responses through speakers or headphones. You can use OpenAI's speech services or self-hosted alternatives.
+
+**Requirements:**
+- OpenAI API key (or self-hosted Whisper for speech-to-text and Kokoro for text-to-speech)
+- Microphone and speakers
+- Python 3.10+
+- Runs on Linux, macOS, or Windows (WSL)
+
+**Installation options:**
+1. Claude Code plugin via marketplace
+2. Python installer using `uvx` command-line tool
+
+**Cost:**
+The software itself is MIT licensed (free and open-source), but using OpenAI's speech services incurs API costs.
+
+**macOS + VS Code compatibility:**
+The documentation specifies it "Runs on: Linux • macOS • Windows (WSL)" and works with Claude Desktop/Code, but the page doesn't explicitly confirm VS Code compatibility—only Claude Code integration is mentioned.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

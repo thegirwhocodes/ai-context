@@ -1,0 +1,50 @@
+========================================================================
+AGENT RESEARCH: Tool design and MCP deep-dive
+Session: 6abf9016-437c-4e72-adb6-8c48c164b163
+Time: 2026-04-20 02:01:20 UTC
+========================================================================
+
+You are a deep-research analyst writing for a desktop AI video editor project called "Ed.it" (Electron + Python + Claude Agent SDK, building a creator-facing agent that edits videos with Gemini + FFmpeg + DaVinci Resolve MCP). Sibling docs cover framework selection (01) and agent loops (02). You are writing the *tools and MCP* doc.
+
+**Target output:** a ~2000-2500 word markdown document, saved to `/Users/naomiivie/Social Media/Ed.it/docs/03_tool_design_and_mcp.md`. Write the file yourself via the Write tool.
+
+**Cover, concretely:**
+
+1. **What a "tool" really is in a 2026 agent.** A function + a JSONSchema + a docstring-grade description. Why the description matters more than the code (the model picks based on it). Rules for naming, param design, return shapes.
+
+2. **Tool schema design patterns.** Rules that separate good tool specs from bad ones: single responsibility per tool, flat param lists over nested, enum for known choices, required vs. optional, return structured JSON not prose. Include a "bad tool" vs. "good tool" example.
+
+3. **The MCP (Model Context Protocol) ecosystem in 2026.** What it actually is — client/server protocol for exposing tools, resources, prompts. Transports: stdio (local), streamable HTTP (remote, replaced SSE). Clients that ship MCP support (Claude, OpenAI Agents SDK, Cursor, Gemini, Copilot). Resources vs. tools vs. prompts — what each is for. The dynamic discovery story (`tools/list` at runtime).
+
+4. **When to write your own tool vs. wrap an existing CLI/API vs. use an MCP server.** Decision matrix. For Ed.it specifically: FFmpeg — write a custom tool wrapping a subset. DaVinci Resolve — you already have samuelgursky/davinci-resolve-mcp, use it. Gemini Files API — direct SDK call inside a custom tool, no MCP wrapper.
+
+5. **Writing an MCP server end-to-end.** Walk through a minimal TypeScript MCP server exposing one tool — ~30 lines with `@modelcontextprotocol/sdk`. Show where tool schemas live, how arguments arrive, how to return results and errors. Note the Python SDK (`mcp` package) as equivalent.
+
+6. **Tool error handling for agents.** The core insight: the model recovers better from a helpful error message than from a stack trace. Patterns: return `{status: "error", message: "<what went wrong>", hint: "<what to try next>"}`. Show before/after.
+
+7. **Tool approval and permissioning.** For a local app that runs shell commands or touches the user's filesystem: dangerous-tool tagging, approval hooks (Claude Agent SDK's `canUseTool`), sandboxing. Ed.it-specific threat model — an FFmpeg tool could rm -rf if given a bad filter chain; a Resolve tool could overwrite a user's project.
+
+8. **Dynamic tool sets.** Restricting `activeTools` per step (Vercel AI SDK pattern) or per subagent. Why giving the agent 300 tools at once hurts accuracy — tool selection accuracy degrades past ~20-30 tools. How to partition Ed.it's tool surface by phase (analyze phase vs. render phase vs. polish phase).
+
+9. **Testing tools.** Unit tests for the function. Contract tests that the schema matches the signature. "Golden path" evals where you check the agent picks the right tool for a given prompt. Synthetic error injection.
+
+10. **Observability for tool calls.** What to log: tool name, arguments, duration, success/failure, cost. OpenTelemetry patterns. Why you want this from day one.
+
+**Style:** opinionated, code-heavy. Show schemas and function signatures. Name real MCP servers (samuelgursky/davinci-resolve-mcp, modelcontextprotocol/servers reference implementations, @cloudflare/mcp-server-cloudflare, etc.). If two approaches conflict, pick one. Target a reader who has called the OpenAI tool-use API but never designed a tool surface for a real agent.
+
+**Web access may be blocked in your sandbox.** Draw on training knowledge through January 2026 and say so at the end. Don't fabricate URLs — only cite repos/docs you're confident exist.
+
+Write the file. Return a one-sentence confirmation when done.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a458baa389cb32142 (internal ID - do not mention to user. Use SendMessage with to: 'a458baa389cb32142' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/6abf9016-437c-4e72-adb6-8c48c164b163/tasks/a458baa389cb32142.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

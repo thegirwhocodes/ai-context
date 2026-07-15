@@ -1,0 +1,32 @@
+RESEARCH INDEX
+Generated: 2026-07-15 11:57:08
+Files: 27
+========================================================================
+
+0d91dd3c-6d8_00_Research_email_prioritization.txt  [23KB]  AGENT RESEARCH: Research email prioritization
+0d91dd3c-6d8_Research_email_prioritization.txt  [21KB]  AGENT RESEARCH: Research email prioritization
+18649100-960_00_Map_current_cortex_codebase_state.txt  [11KB]  AGENT RESEARCH: Map current cortex codebase state
+18649100-960_01_Confirm_Claude_Code_in_desktop_app.txt  [6KB]  AGENT RESEARCH: Confirm Claude Code in desktop app
+61a29b5c-91b_00_Map_messaging_feature_contracts.txt  [3KB]  AGENT RESEARCH: Map messaging feature contracts
+61a29b5c-91b_01_Map_calendaractionsalways-on_contracts.txt  [3KB]  AGENT RESEARCH: Map calendar/actions/always-on contracts
+61a29b5c-91b_02_Map_relationshipsattentionmemory_contracts.txt  [3KB]  AGENT RESEARCH: Map relationships/attention/memory contracts
+7e45b89a-bcd_00_Research_voice-driven_email_UX_patterns.txt  [6KB]  AGENT RESEARCH: Research voice-driven email UX patterns
+7e45b89a-bcd_01_Agent_frameworks__AI_SDK_research.txt  [13KB]  AGENT RESEARCH: Agent frameworks + AI SDK research
+7e45b89a-bcd_02_Agent_theory_and_Cortex_applicability.txt  [14KB]  AGENT RESEARCH: Agent theory and Cortex applicability
+7e45b89a-bcd_03_Anthropic-native_agent_patterns.txt  [17KB]  AGENT RESEARCH: Anthropic-native agent patterns
+7e45b89a-bcd_04_Map_Sabi_trainingRAG_architecture.txt  [13KB]  AGENT RESEARCH: Map Sabi training/RAG architecture
+7e45b89a-bcd_05_Find_LoRA_Bethel-vs-Cortex_discussion.txt  [12KB]  AGENT RESEARCH: Find LoRA Bethel-vs-Cortex discussion
+7e45b89a-bcd_06_Audit_voice-email_UI.txt  [11KB]  AGENT RESEARCH: Audit voice-email UI
+7e45b89a-bcd_07_2026_AI-app_UI_deep_research.txt  [21KB]  AGENT RESEARCH: 2026 AI-app UI deep research
+7e7962d0-dfa_00_WebSearch_SaaS_onboarding_OAuth_connect_account_drop-off_red.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: SaaS onboarding OAuth connect account drop-off reduce friction "aha moment" pers
+7e7962d0-dfa_01_WebSearch_premium_onboarding_UX_best_practices_AI_assistant_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: premium onboarding UX best practices AI assistant product 2026 activation time-t
+7e7962d0-dfa_02_WebSearch_AI_personal_assistant_onboarding_learns_you_showin.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: AI personal assistant onboarding "learns you" showing user their own data first
+7e7962d0-dfa_03_WebFetch_httpsproductledcomblogai-onboarding.txt  [4KB]  WEBFETCH RESEARCH: WebFetch: https://productled.com/blog/ai-onboarding
+b54cf4f5-616_00_Research_social_media_data_access_without_APIs.txt  [9KB]  AGENT RESEARCH: Research social media data access without APIs
+e7c30dbb-f6d_00_Research_Alexa_architecture.txt  [3KB]  AGENT RESEARCH: Research Alexa architecture
+e7c30dbb-f6d_01_Research_wake-word_KWS_tech.txt  [3KB]  AGENT RESEARCH: Research wake-word KWS tech
+e7c30dbb-f6d_02_Research_buildable_wake-word_options.txt  [3KB]  AGENT RESEARCH: Research buildable wake-word options
+e7c30dbb-f6d_03_Research_browser_constraints_and_tradeoffs.txt  [3KB]  AGENT RESEARCH: Research browser constraints and tradeoffs
+e7c30dbb-f6d_04_Research_lean_codedata_architecture.txt  [3KB]  AGENT RESEARCH: Research lean code/data architecture
+e7c30dbb-f6d_05_Research_personal-AI_moat_and_distribution.txt  [3KB]  AGENT RESEARCH: Research personal-AI moat and distribution
+e7c30dbb-f6d_06_Research_Tauri_wrapper_architecture.txt  [3KB]  AGENT RESEARCH: Research Tauri wrapper architecture

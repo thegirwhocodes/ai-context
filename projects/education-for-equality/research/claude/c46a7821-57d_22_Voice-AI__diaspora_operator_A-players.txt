@@ -1,0 +1,44 @@
+========================================================================
+AGENT RESEARCH: Voice-AI & diaspora operator A-players
+Session: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+Time: 2026-07-15 18:46:59 UTC
+========================================================================
+
+You are researching REAL, NAMED people in AFRICAN VOICE-AI / SPEECH-TECH and DIASPORA STARTUP OPERATORS who could help an African edtech nonprofit level up on technology and scaling.
+
+CONTEXT — the company: "Sabi" by Education for Equality. A voice-AI literacy & numeracy tutor over ordinary PHONE CALLS to Nigerian children. The hardest technical problem is speech recognition (STT) for children's Nigerian-accented English over noisy 8kHz telephone lines. The founder is the solo technical builder; she needs (a) potential ML/speech advisors or engineers, and (b) diaspora/accelerator operators who have scaled African tech ventures and could be advisors, board members, or senior operators.
+
+YOUR TASK: Produce a detailed shortlist of 12–18 REAL, NAMED individuals across two groups:
+
+GROUP A — African voice-AI / speech / NLP leaders (potential tech advisors/engineers):
+- Founders/leaders of Intron Health, Awarri, Spitch, EqualyzAI, Lelapa AI, ViaBridge/VoiceBridge — the Nigerian/African speech & language-AI startups.
+- Masakhane (African NLP research collective) leading researchers.
+- Data Science Nigeria (DSN) leadership.
+- Notable Nigerian ML/speech researchers at Google, Meta, universities working on African-language ASR.
+
+GROUP B — Diaspora / accelerator operators who scaled African ventures (potential advisors/board/senior operators):
+- Founders/operators from Andela, Flutterwave, Paystack, Moniepoint, uLesson, Chipper Cash alumni networks who now advise/invest.
+- Nigerian YC / Techstars founders known as ecosystem builders.
+- HNG Internship / Ingressive for Good leadership (talent-pipeline builders).
+
+For EACH person return, in full (do NOT summarize):
+1. Full name + current exact title & organization + relevant background.
+2. Why they specifically fit Sabi (voice-AI expertise, or scaling experience, or talent networks).
+3. Whether they fit as advisor vs. engineer/hire vs. board vs. connector.
+4. How to reach them / warm-path hints (LinkedIn, Twitter/X, communities, events).
+5. Fit/risk notes.
+
+Use WebSearch/WebFetch extensively. Prioritize people ACTIVE 2025–2026. Real names only with source URLs; flag anything unverified. End with a "Sources" list.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: a5cc988b434673991 (internal ID - do not mention to user. Use SendMessage with to: 'a5cc988b434673991', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/c46a7821-57d5-46ff-9dac-304ed0ef2cbc/tasks/a5cc988b434673991.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

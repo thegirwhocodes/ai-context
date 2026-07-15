@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: how to win ASA DataFest 48 hour competition strategy tips past winners
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 03:09:03 UTC
+========================================================================
+
+Search query: how to win ASA DataFest 48 hour competition strategy tips past winners
+
+----------------------------------------
+
+Web search results for query: "how to win ASA DataFest 48 hour competition strategy tips past winners"
+
+Links: [{"title":"How I Won UCLA DataFest: Insider Tips & Tricks | by Rikesh Patel | Medium","url":"https://medium.com/@rikesh.data/10-steps-to-winning-asa-datafest-b782c886aa0d"},{"title":"ASA DataFest in a Box","url":"https://ww2.amstat.org/education/datafest/datafestinabox.cfm"},{"title":"How to win and succeed at ASA DataFest! | by Chelsea Lee | Medium","url":"https://medium.com/@leechelseahaosin/how-to-succeed-and-win-at-asa-datafest-7e6f47429e9e"},{"title":"UGA ASA DataFest 2026 | Department of Statistics","url":"https://www.stat.uga.edu/events/content/2025/uga-asa-datafest-2026-0"},{"title":"Previous DataFest Challenges","url":"https://ww2.amstat.org/education/datafest/previous.cfm"},{"title":"ASA DataFest at UCLA | LinkedIn","url":"https://www.linkedin.com/company/asa-datafest-at-ucla"},{"title":"ASA DataFest | UNC Statistics & Operations Research","url":"https://stor.unc.edu/outreach/asa-datafest/"},{"title":"ASA DataFestTM","url":"https://dukestatsci.github.io/datafest/"},{"title":"ASA Datafest 2024 | School of Mathematical and Statistical Sciences","url":"https://math.asu.edu/datafest-2024"},{"title":"DataFest | Chapman University","url":"https://www.chapman.edu/scst/conferences-and-events/datafest.aspx"}]
+
+Based on the search results, here are strategy tips and insights from past ASA DataFest winners:
+
+## Team Composition & Roles
+
+Favor high compatibility over just recruiting MVPs. A recommended team mix includes 2 coders, 2 business-minded consultants, and 1 powerful speaker. The coders can focus on technical analysis and visuals, the business people can design simpler graphs while fulfilling the vision of answering business questions with insight and domain expertise, and the speaker can tackle continuous research, finalize the presentation, and compose the narrative the data tells.
+
+## Focus on Insights Over Complexity
+
+DataFest is like an idea tank, not a test of how many lines of code you can push out. This suggests that winning teams prioritize meaningful insights over technical complexity.
+
+## Time Management Considerations
+
+Someone will likely have to sacrifice half their day to clean the dataset. Plan accordingly for the necessary data preparation phase.
+
+## Key Success Factors
+
+The 48-hour time limit is thrilling and presents an extreme challenge for analytical ability, familiarity with data manipulation, and communication skills, with intensive immersion in teamwork.
+
+## Presentation Strategy
+
+After two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. This highlights the importance of concise, impactful presentations.
+
+## Prize Categories
+
+Prizes are given for Best in Show, Best Visualization, and Best Use of External Data. Understanding these categories can help teams tailor their approach accordingly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

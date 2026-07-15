@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS 18 19 Photos app Videos album sort by duration where is option
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:56:58 UTC
+========================================================================
+
+Search query: iOS 18 19 Photos app Videos album sort by duration where is option
+
+----------------------------------------
+
+Web search results for query: "iOS 18 19 Photos app Videos album sort by duration where is option"
+
+Links: [{"title":"Sorting Videos by File Size & Duration - Apple Community","url":"https://discussions.apple.com/thread/256183630"},{"title":"Filter and sort photos and videos in albums on iPhone - Apple Support","url":"https://support.apple.com/guide/iphone/filter-and-sort-photos-and-videos-in-albums-iph9463b0c24/ios"},{"title":"How do I sort videos by length of time or… - Apple Community","url":"https://discussions.apple.com/thread/7220031"},{"title":"3 Tested Methods to Find Large Videos on iPhone For Easy Cleanup","url":"https://www.insanelymac.com/blog/find-large-videos-on-iphone/"},{"title":"iOS 18: How to Customize and Reorder the Photos App - MacRumors","url":"https://www.macrumors.com/how-to/ios-customize-reorder-photos-app/"},{"title":"Don't let iOS 18's radically redesigned Photos app throw you for a loop","url":"https://www.cultofmac.com/how-to/new-photos-app-ios-18"},{"title":"iOS 18’s Photos app got a lot better when I made this one quick fix - 9to5Mac","url":"https://9to5mac.com/2025/03/21/ios-18s-photos-app-got-a-lot-better-when-i-made-this-one-quick-fix/"},{"title":"iOS 18: How to Customize and Reorder the Photos App | MacRumors Forums","url":"https://forums.macrumors.com/threads/ios-18-how-to-customize-and-reorder-the-photos-app.2438082/"},{"title":"How to Find and Delete Large Videos on iPhone (iOS 18)","url":"https://www.handyrecovery.com/find-large-videos-on-iphone/"},{"title":"Sorting photos and videos - Apple Community","url":"https://discussions.apple.com/thread/255574461"}]
+
+Based on the search results, here's what I found regarding sorting videos by duration in iOS 18/19 Photos app:
+
+## Current Limitation
+
+You cannot sort photos/videos on an iPhone by file size or duration. iOS 18 does not include a simple "sort by size" option for videos, and this limitation persists even in the latest versions.
+
+## Available Sorting Options
+
+In iOS 18, you can sort by Date Captured, which lists them by when the images were taken. However, there is no built-in native option to sort videos specifically by duration in the Photos app's Videos album.
+
+## Workarounds
+
+If you need to find large or long videos, here are some alternatives:
+
+1. **Storage Settings**: Navigate to Settings > General > iPhone Storage for a storage overview, though it does not specifically show videos by size.
+
+2. **Third-Party Apps**: PowerPhotos ($40) offers many enhancements to Photos, including list views of albums that can be sorted by file size.
+
+3. **Shortcuts App**: The Shortcuts app, which comes preinstalled on iPhones starting with iOS 13, is a built-in automation tool that allows you to create commands, including features for working with videos stored in the Photos app.
+
+Unfortunately, there is no native "sort by duration" option in the iOS 18/19 Photos app for the Videos album.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

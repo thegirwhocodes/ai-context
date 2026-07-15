@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://propheticbibleschool.com/the-gift-of-prophetic-dreams/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-17 02:29:46 UTC
+========================================================================
+
+URL: https://propheticbibleschool.com/the-gift-of-prophetic-dreams/
+Extraction prompt: Extract ALL content about prophetic dreams. Get: the complete teaching, all scripture references, types of prophetic dreams, how to interpret them, practical steps, any frameworks. Get as much raw text as possible.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

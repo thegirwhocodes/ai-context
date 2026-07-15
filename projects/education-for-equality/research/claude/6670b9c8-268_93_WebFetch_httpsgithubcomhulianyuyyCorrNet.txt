@@ -1,0 +1,100 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/hulianyuyy/CorrNet
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:12:03 UTC
+========================================================================
+
+URL: https://github.com/hulianyuyy/CorrNet
+Extraction prompt: Extract ALL setup information: installation steps, requirements, how to run the demo, pretrained weight download links, supported platforms (especially macOS), what inputs the demo accepts (webcam? video? images?), Python version, PyTorch version, CUDA requirements. Everything needed to get this running.
+
+----------------------------------------
+
+# CorrNet Setup & Installation Guide
+
+## Prerequisites & Requirements
+
+**Python & Framework:**
+- PyTorch >= 1.13 (required for ctcdecode compatibility)
+- Python 3.x (version not explicitly specified)
+
+**Key Dependencies:**
+- ctcdecode==0.4 (Linux only; alternative: pyctcdecode for cross-platform support)
+- Dependencies listed in `requirements.txt`
+- Optional: sclite from Kaldi for evaluation
+
+**Install Requirements:**
+```
+pip install -r requirements.txt
+```
+
+## Platform Support
+
+**Supported Systems:**
+- Linux
+- Windows  
+- macOS (Apple Silicon/Intel) - recent updates added macOS support via `macOS_cn.md` and `macOS_en.md`
+
+**Platform-Specific Notes:**
+- "ctcdecode is only supported on the Linux platform"
+- Enhanced cross-platform demo available in `Demo_multi_platforms_one_click.md`
+
+## Running the Demo
+
+**Basic Command:**
+```
+python demo.py --model_path /path_to_pretrained_weights --device your_device
+```
+
+**Demo Parameters:**
+- `model_path`: Path to pretrained weights
+- `device`: GPU device (default: 0)
+- `language`: 'phoenix' or 'csl' (default: 'phoenix')
+- `max_frames_num`: Maximum frames sampled (default: 360)
+
+**Access:** "visit `http://0.0.0.0:7862` to play with the demo"
+
+## Demo Input Types
+
+The demo accepts:
+- **Video files**
+- **Image sequences** (extracted frames)
+- **Webcam input** (implied by web interface)
+
+## Pretrained Model Downloads
+
+**PHOENIX2014:**
+- Dev WER: 18.8% | Test WER: 19.4%
+- [Baidu Drive](https://pan.baidu.com/s/1DIGts18fdh4Fdw_y7ZQ6XA) (passwd: skd3)
+- [Google Drive](https://drive.google.com/file/d/1Xt_4N-HjEGlVyrMENydsxNtpVMSg5zDb/view?usp=share_link)
+
+**PHOENIX2014-T:**
+- Dev WER: 18.9% | Test WER: 20.5%
+- [Baidu Drive](https://pan.baidu.com/s/1osUDzpPhKPDavxyvqOrVfQ) (passwd: deuq)
+- [Google Drive](https://drive.google.com/file/d/1c_wNHYMqCbqRE5KqrQL1P6chOw5VBS6Q/view?usp=share_link)
+
+**CSL-Daily:**
+- Dev WER: 30.6% | Test WER: 30.1%
+- [Baidu Drive](https://pan.baidu.com/s/1WzNltivGRbfV33wkM4rzjg) (passwd: u2iv)
+- [Google Drive](https://drive.google.com/file/d/1-aSKPe9cVkvHeiJuyQm3HlZ5u63CI-mm/view?usp=share_link)
+
+## Inference Command
+
+```
+python main.py --config ./config/baseline.yaml --device your_device --load-weights path_to_weight.pt --phase test
+```
+
+## Training
+
+```
+python main.py --config ./config/baseline.yaml --device your_device
+```
+
+Configure dataset in `./config/baseline.yaml` line 3 (options: phoenix2014/phoenix2014-T/CSL/CSL-Daily)
+
+## CUDA Requirements
+
+Not explicitly detailed; inferred PyTorch standard CUDA support applies.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigerian text to speech TTS startup local languages Yoruba Hausa voice AI compan
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:04 UTC
+========================================================================
+
+Search query: Nigerian text to speech TTS startup local languages Yoruba Hausa voice AI company
+
+----------------------------------------
+
+Web search results for query: "Nigerian text to speech TTS startup local languages Yoruba Hausa voice AI company"
+
+Links: [{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"Home","url":"https://www.ttsyoruba.com/"},{"title":"Inside YarnGPT: The text-to-speech model built for Nigerian languages","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"African Languages Text to Speech - Abena AI","url":"https://abena.mobobi.com/playground/tts/"},{"title":"NeurIPS Accent-Aware Text-to-Speech for Nigerian English: Building Inclusive Voice AI from Community-Curated Data","url":"https://neurips.cc/virtual/2025/133733"},{"title":"Top Nigerian English text to speech voices | Listen2It","url":"https://www.getlisten2it.com/text-to-speech-voices/nigerian-english"},{"title":"AI is learning to speak African languages, thanks to these startups | TechCabal","url":"https://techcabal.com/2025/07/17/african-ai-startups/"},{"title":"Awarri | Contribute to LangEasy","url":"https://www.awarri.com/langeasy"},{"title":"Nigerian Text to Speech - Create AI Voice Content","url":"https://podcastle.ai/ai-voices/nigerian-text-to-speech"},{"title":"Nigerian Accent Text-to-Speech | AI Voice Generator Online | Easy-Peasy.AI","url":"https://easy-peasy.ai/text-to-speech/nigerian"}]
+
+Based on my search results, here are the key Nigerian text-to-speech startups and companies working with local languages like Yoruba and Hausa:
+
+## Major Nigerian TTS Startups
+
+**YarnGPT** - YarnGPT turns text into Nigerian-accented speech in seconds, supporting Igbo, Yoruba, and Hausa.
+
+**Intron** - Starting with Yoruba, the team has since added Hausa, Igbo, Nigerian-accented English and, after demand from East Africa, Amharic. Those rails now power everything from multilingual customer-support hotlines to Nollywood studios that generate synthetic dialogue instead of hiring voice actors.
+
+**Abena AI** - Generate natural-sounding audio in Twi, Ghana Pidgin, Yoruba, Swahili, Hausa, Ewe and more with Abena AI.
+
+## Community Projects
+
+**TTSYoruba** - This is an experiment in finding out whether speech synthesis is possible in an African language. Yorùbá is the natural first choice because the TTS machine was created to support a Yorùbá Names Dictionary at YorubaName.com.
+
+**LangEasy** - LangEasy allows users to record audio samples by translating English sentences into Nigerian languages such as Yoruba, Hausa, Igbo, Pidgin, and Ibibio.
+
+## Research and Applications
+
+A multilingual text-to-speech system tailored for Nigerian-accented English, built on the StyleTTS2 architecture and trained on a community-curated dataset spanning the three major Nigerian ethnic groups: Yoruba, Igbo, and Hausa has been developed through academic research.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

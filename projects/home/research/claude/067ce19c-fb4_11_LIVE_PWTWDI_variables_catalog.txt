@@ -1,0 +1,44 @@
+========================================================================
+AGENT RESEARCH: LIVE PWT/WDI variables catalog
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 19:21:50 UTC
+========================================================================
+
+**You have full WebSearch and WebFetch access. Verify variable codes against live sources.**
+
+Build a definitive catalog of variables for a Nigeria-only ARDL growth regression on out-of-school children.
+
+Tasks:
+1. Fetch the PWT 11.0 documentation: `https://www.rug.nl/ggdc/productivity/pwt/` and the user guide PDF if linked. Confirm the exact variable codes and definitions: `rgdpna`, `rgdpe`, `cgdpe`, `pop`, `emp`, `hc`, `csh_i`, `rnna`, `labsh`, `delta`, `rtfpna`, `avh`. Note any variables added or renamed in version 11.0 vs 10.x.
+2. Fetch the human capital methodology page (Feenstra, Inklaar & Timmer 2015) — confirm `hc = exp(φ(s))` formula and the Mincerian piecewise returns (13.4% / 10.1% / 6.8% per year of primary/secondary/tertiary).
+3. Fetch the World Bank WDI databank for each indicator below and confirm the code is current:
+   - `SE.PRM.UNER.ZS` — Out-of-school primary
+   - `SE.PRM.ENRR` — Gross primary enrollment
+   - `NY.GDP.PCAP.KD.ZG` — GDP per capita growth
+   - `NY.GDP.PETR.RT.ZS` — Oil rents % GDP
+   - `NE.GDI.TOTL.ZS` — Gross capital formation
+   - `NE.TRD.GNFS.ZS` — Trade openness
+   - `FP.CPI.TOTL.ZG` — Inflation
+   - `SP.DYN.LE00.IN` — Life expectancy
+   - `SP.POP.GROW` — Population growth
+   - `RL.EST` — Rule of Law (WGI)
+   - `BX.KLT.DINV.WD.GD.ZS` — FDI inflows
+   - `FS.AST.PRVT.GD.ZS` — Domestic credit
+4. Note: the parent session already did a live API check confirming `SE.PRM.UNER.ZS` has only 10 obs for Nigeria with a 12-year gap. The replay's `07_wdi_data_check.md` has the full table — read it for context.
+
+For each variable: code, full name, unit, expected coverage for Nigeria 1990-2023 (from the WDI documentation), why it matters for this paper. Cite actual URLs you fetched.
+
+Save to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/02_pwt_wdi_variables.md` (overwrite). Report 200-word summary + URLs verified.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a1d507a49eae5964a (internal ID - do not mention to user. Use SendMessage with to: 'a1d507a49eae5964a' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a1d507a49eae5964a.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

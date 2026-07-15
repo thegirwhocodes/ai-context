@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://groq.com/pricing
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 09:22:49 UTC
+========================================================================
+
+URL: https://groq.com/pricing
+Extraction prompt: What are the exact pricing tiers? What are the rate limits for the free tier? Is there a student or academic or nonprofit discount? What does the Developer tier cost? What are the Whisper/STT specific limits and pricing?
+
+----------------------------------------
+
+# Groq Pricing Tiers and Details
+
+Based on the provided content, here's what I found:
+
+## Pricing Tiers
+The page doesn't explicitly name "tiers" like "Free," "Pro," etc. Instead, it presents:
+- **Free/Developer Access**: "Get started for free" with a free API key via console.groq.com
+- **Developer Plan**: Available for self-service upgrade from the free tier
+- **Enterprise Solutions**: Custom pricing requiring direct inquiry
+
+## Free Tier Rate Limits
+The content **does not specify rate limits** for the free tier. It only mentions that free users can "Get started for free and upgrade as your needs grow."
+
+## Academic/Student/Nonprofit Discounts
+**No discounts are mentioned** for students, academics, or nonprofits in this pricing page.
+
+## Developer Plan Cost
+**The Developer Plan pricing is not disclosed** on this page. The content states you can "upgrade to our Developer Plan yourself" but doesn't show the cost.
+
+## Whisper/STT Pricing & Limits
+- **Whisper V3 Large**: $0.111/hour transcribed (217x speed factor)
+- **Whisper Large v3 Turbo**: $0.04/hour transcribed (228x speed factor)
+- **Important limit**: "Audio is billed at a minimum of 10s per request"
+
+For detailed pricing or enterprise needs, Groq directs visitors to contact them via their Enterprise Access page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

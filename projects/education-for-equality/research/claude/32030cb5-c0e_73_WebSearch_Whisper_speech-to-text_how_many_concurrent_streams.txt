@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Whisper speech-to-text how many concurrent streams per GPU T4 A10 RTX 4000 bench
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 06:56:43 UTC
+========================================================================
+
+Search query: Whisper speech-to-text how many concurrent streams per GPU T4 A10 RTX 4000 benchmark
+
+----------------------------------------
+
+Web search results for query: "Whisper speech-to-text how many concurrent streams per GPU T4 A10 RTX 4000 benchmark"
+
+Links: [{"title":"Performance benchmark of different GPUs · openai/whisper · Discussion #918","url":"https://github.com/openai/whisper/discussions/918"},{"title":"Benchmarks for T4 & V100 GPUs, comparison with human captioning, and deep dive on non-deterministic output · openai/whisper · Discussion #395","url":"https://github.com/openai/whisper/discussions/395"},{"title":"Benchmarking Results · openai/whisper · Discussion #530","url":"https://github.com/openai/whisper/discussions/530"},{"title":"Comparing NVIDIA GPUs for AI: T4 vs A10","url":"https://www.baseten.co/blog/comparing-nvidia-gpus-for-ai-t4-vs-a10/"},{"title":"Confusing Benchmark results 4080 Super vs A10 vs H100 · openai/whisper · Discussion #2142","url":"https://github.com/openai/whisper/discussions/2142"},{"title":"Confusing Benchmark results Running whisper on 4080 Super vs A10 vs H100 - 🤗Transformers - Hugging Face Forums","url":"https://discuss.huggingface.co/t/confusing-benchmark-results-running-whisper-on-4080-super-vs-a10-vs-h100/83170"},{"title":"OpenAI Whisper Audio Transcription Benchmarked on 18 GPUs: Up to 3,000 WPM | Tom's Hardware","url":"https://www.tomshardware.com/news/whisper-audio-transcription-gpus-benchmarked"},{"title":"OpenAI Whisper Benchmark Nvidia Tesla T4 / A100 - Oliver Wehrens","url":"https://owehrens.com/openai-whisper-benchmark-on-nvidia-tesla-t4-a100/"},{"title":"What is the Best Speech-to-Text Models Available and Which GPU Should I Deploy it on? | AI FAQ | Jarvis Labs","url":"https://jarvislabs.ai/ai-faqs/what-is-the-best-speech-to-text-model-available-and-which-gpu-should-i-deploy-it-on"},{"title":"Benchmarking OpenAI's Whisper Transcription","url":"https://earningscall.biz/blog/benchmarking-whisper"}]
+
+Based on the search results, I found some relevant information about Whisper transcription performance on the GPUs you mentioned, though specific concurrent stream data is limited.
+
+## Key Findings:
+
+**Performance Comparisons:**
+The RTX 3080 performed better than the A10G and the T4, with the 3080 finishing the WhisperX large-v3 model transcription in roughly 68% of the time it took the A10G, and 50% of the time it took the T4.
+
+**Concurrent Streams:**
+The search results mention some discussion about concurrent streaming capacity, but with limited specific benchmarks. One discussion mentions that an A100 could potentially transcribe 5 or 6 audio sources in parallel in real-time with the medium model.
+
+**RTX 4000 and T4 Context:**
+The results show general performance discussions about these GPUs with Whisper, but they don't provide specific data about concurrent stream limits per GPU model for the T4, A10, or RTX 4000 series.
+
+## Note:
+
+The search results don't contain comprehensive benchmark data specifically quantifying the exact number of concurrent streams each GPU can handle. For the most accurate concurrent streaming benchmarks for your specific use case, you may need to consult NVIDIA's official documentation or conduct your own benchmarking tests, as this information appears to be highly dependent on model size, batch settings, and specific inference framework configurations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

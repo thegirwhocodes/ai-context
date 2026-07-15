@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Intron Health Nigerian speech recognition how built data collection 500 accents 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:04 UTC
+========================================================================
+
+Search query: Intron Health Nigerian speech recognition how built data collection 500 accents Sahara method clinical
+
+----------------------------------------
+
+Web search results for query: "Intron Health Nigerian speech recognition how built data collection 500 accents Sahara method clinical"
+
+Links: [{"title":"Nigerian AI startup Intron Health raises $1.6M to strengthen its African languages speech recognition tool - Africa Business Communities","url":"https://africabusinesscommunities.com/tech-24/nigerian-ai-startup-intron-health-raises-1.6m-to-strengthen-its-african-languages-speech-recognition-tool/"},{"title":"Intron Health develops speech recognition for African accents","url":"https://btw.media/all/tech-trends/intron-health-develops-speech-recognition-for-african-accents/"},{"title":"How Intron Health, A Nigerian AI Startup, Is Transforming Healthcare In Africa Using Speech-to-text Technology - Carecode Digital Health Hub","url":"https://www.carecodedigital.com/how-intron-health-a-nigerian-ai-startup-is-transforming-healthcare-in-africa-using-speech-to-text-technology/"},{"title":"AI startup Intron expands speech recognition to 57 languages","url":"https://techcabal.com/2026/03/05/intron-expands-sahara-to-57-languages/"},{"title":"How Intron Health Is Using AI To Transform Healthcare In Africa","url":"https://carecityonline.com/intron-health-speech-to-text-technology/"},{"title":"Intron AfriSpeech-200 Automatic Speech Recognition Challenge 🎙️ - Win $5 000 USD","url":"https://zindi.africa/competitions/intron-afrispeech-200-automatic-speech-recognition-challenge"},{"title":"Intron Health | LinkedIn","url":"https://ng.linkedin.com/company/intron-inc"},{"title":"AfriSpeech-MultiBench: A Verticalized Multidomain Multicountry Benchmark Suite for African Accented English ASR","url":"https://arxiv.org/pdf/2511.14255"},{"title":"Advancing African-Accented Speech Recognition: Epistemic Uncertainty-Driven Data Selection for Generalizable ASR Models","url":"https://arxiv.org/pdf/2306.02105"},{"title":"1000 African Voices: Advancing inclusive multi-speaker multi-accent   speech synthesis","url":"https://arxiv.org/pdf/2406.11727"}]
+
+Based on the search results, here's what I found about Intron Health's Nigerian speech recognition technology:
+
+## How It Was Built
+
+Intron Health was launched in 2020 by Tobi Olatunji and helps healthcare workers digitize medical records by converting speech into text. The startup has developed Africa's first clinical speech recognition platform, which boasts up to 92% accuracy rate on medical terminology with heavy accents.
+
+## Data Collection & Scale
+
+Sahara v2 supports more than 500 distinct African accents, and was built using more than 14 million audio clips totaling over 50,000 hours from more than 40,000 speakers across 30 African countries. Earlier versions were trained on 3.5 million audio clips (16,000 hours) from over 18,000 contributors, representing 29 countries and 288 accents.
+
+## The Sahara Method
+
+Intron expanded its speech recognition platform, Sahara, to support 57 languages, adding 24 new ones as it deepens its push into healthcare, legal, financial services, and telecom. The company curated datasets of African voices, combining publicly available datasets with their in-house collection.
+
+## Clinical Applications
+
+The platform helps doctors across Nigeria, Ghana, Kenya, South Africa and Uganda complete documentation seven times faster, significantly accelerating the adoption of Electronic Health Records (EHR).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

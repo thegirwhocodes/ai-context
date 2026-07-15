@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://tactiq.io/audio-to-text/voice-to-text-iphone
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:34:00 UTC
+========================================================================
+
+URL: https://tactiq.io/audio-to-text/voice-to-text-iphone
+Extraction prompt: Look for any information about iOS Shortcuts, Siri, automation, automatic upload, or any way to connect iPhone recordings directly to Tactiq without manual upload
+
+----------------------------------------
+
+# iOS Integration Information
+
+Based on the webpage content provided, there is **no information about iOS Shortcuts, Siri, automation, automatic upload, or direct iPhone recording integration** with Tactiq.
+
+The page mentions that users can "install the Tactiq extension on your iPhone or simply upload the recording file," but this indicates a manual upload process rather than automated connection methods.
+
+The only voice-to-text functionality described relates to iPhone's native feature: "Just open any app where you can type, tap the microphone icon on your keyboard, and start speaking."
+
+For details about iOS automation features or direct Tactiq integration with iPhone recording tools, you would need to check the Help Center or contact their support team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

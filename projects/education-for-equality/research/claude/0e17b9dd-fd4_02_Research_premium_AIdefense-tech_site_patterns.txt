@@ -1,0 +1,465 @@
+========================================================================
+AGENT RESEARCH: Research premium AI/defense-tech site patterns
+Session: 0e17b9dd-fd49-407b-a86a-9cd1fff442b8
+Time: 2026-04-26 01:50:47 UTC
+========================================================================
+
+Do deep web research on the visual + interaction design patterns of premium AI startup and defense-tech marketing websites in 2025-2026. The output is feeding into a redesign of a defense-tech AI product landing page (Adjutant — voice-first, fully offline AI assistant for Army paperwork, building for the SCSP hackathon, Boston, GenAI.mil track).
+
+Concretely study these reference sites — fetch them, read transcripts/case studies/awwwards/Mobbin write-ups about them, and report what makes them feel premium:
+
+A) AI / agent / LLM tooling marketing sites:
+- sana.ai (Sana Agents) — huge type, persistent response panes
+- linear.app — typography rhythm, gradient meshes, scroll story
+- vercel.com — geometry, code samples as design objects
+- anthropic.com — editorial, restrained
+- openai.com (the marketing pages, not chat)
+- harvey.ai — legal-AI brand voice
+- glean.com — enterprise AI brand
+- writer.com — enterprise AI marketing
+- mintlify.com — docs-as-design
+- raycast.com — product in product
+
+B) Defense / military / industrial brands:
+- anduril.com — the gold standard for defense brand work, deeply study this
+- shield.ai
+- palantir.com
+- saronic.com
+- helsing.ai
+- skydio.com
+- saildrone.com
+- rebellion.com (Rebellion Defense)
+
+C) High-craft editorial / e-commerce reference (for tactility):
+- milieuskin.com
+- aplat.com
+- onsen.dev
+- exo.inc
+- igloo.inc
+
+For each site or pattern category, return CONCRETE design takeaways I can implement in HTML/CSS/JS. Be specific:
+
+1. **Typography systems**: which sans-serifs they use (named — Söhne, Inter Display, GT America, Neue Haas Grotesk, NB International, ABC Diatype, etc.), hierarchy (display sizes, body, mono), letter-spacing tightening at large sizes, italic serif accent treatment, mixed-case vs all-caps, text-balance/text-wrap usage.
+
+2. **Color systems**: actual palette tokens (cream, off-black, gold, OD green, oxide red, prussian blue, etc.), how they use a single accent color across the page, when they use full-bleed color sections vs not.
+
+3. **Layout patterns**: hero composition (split, centered, full-bleed video), grid systems they reuse, section-spacing rhythm, sticky-on-scroll tricks, scroll-triggered transitions between sections, marquees / tickers.
+
+4. **Interaction patterns**: scroll-driven animations (specific examples — does the hero crossfade? does text mask reveal?), magnetic cursors, persistent overlay panels, hover micro-interactions, video-on-scroll, WebGL canvas tricks, parallax depth, view-transitions API usage, scroll-snap usage. Note which are tasteful vs tacky.
+
+5. **Proof devices for AI products**: how do they show the product live without it feeling like a demo gimmick — embedded chat panels, animated waveform, mock-conversation overlays, real-time data tickers, "trusted by" logo strips.
+
+6. **Defense-specific brand cues**: Anduril uses bold geometric serif (their "Lattice" wordmark), warm neutrals + saturated accents, hero video of hardware-in-environment, technical diagrams with measurement annotations, classified-document framing (REDACTED bars, callsign typography, monospace coordinates). What other patterns appear across Shield AI, Palantir, Saronic, Helsing?
+
+7. **Website-product fit**: critique whether each company's marketing site actually communicates what their product does, fast. Which sites force you to scroll three screens before knowing what the company sells, and which give you the answer in one glance? Where on the spectrum should an offline-AI-for-Army-paperwork site land?
+
+Return your findings as a long, actionable spec — at least 2000 words — that I can use to refine the Adjutant landing page. Do NOT summarize. Return the actual content per the project's "no summaries from agents" rule. Every concrete typeface, color, spacing value, animation pattern you find should appear in the report.
+
+----------------------------------------
+
+Excellent — Shield AI uses dark mode standard, "war-tested wisdom" voice. I have everything I need. Let me write the comprehensive spec now.
+
+---
+
+# Adjutant Landing Page — Premium Defense-Tech AI Visual & Interaction Design Spec
+
+Research synthesized from direct fetches and design write-ups across the reference set. Where data was extracted verbatim it is quoted. Where I'm extrapolating to give you implementable defaults I say so.
+
+---
+
+## 1. TYPOGRAPHY SYSTEMS — concrete typeface picks and how the leaders use them
+
+### What each reference actually uses
+
+- **Anduril.com** — sole typeface is **Helvetica Now Display** (Monotype). One family, varied weights only. Confirmed via Fonts In Use and the Typ.io scrape of their CSS: `.header-1` is `Helvetica Now Display` at `font-weight: 700; font-size: 49px;`; body classes use the same family at `font-weight: 500; 28px` and `font-weight: 400; 21px`. All text is `color: #000`, `font-style: normal`, `text-transform: none`. They do not pair a serif. The brand decision (Yashas Mitta's team) was a Silicon Valley product-first reframe of the defense category — Helvetica Now reads as "respects the old, builds with the new."
+- **Anthropic.com** — **Styrene** (Berton Hasebe / Commercial Type) for headlines and subheadings + **Tiempos** (Klim Type Foundry) for body. The Styrene/Tiempos pairing is the canonical "warm humanist sans + literary serif" combo. Tiempos shows up almost exclusively in body — it makes the marketing feel like reading a New Yorker article, not a SaaS page.
+- **OpenAI.com** — historically **Söhne** (Klim) for blog/marketing, **Söhne Mono** for code, **Signifier** (Klim) for research papers as body. **Feb 2025 rebrand** introduced **OpenAI Sans**, a custom typeface by **ABC Dinamo** (Berlin), 5 weights with italics, "subtle imperfections to counteract robotic precision." Studio Dumbar (Rotterdam) on the broader identity. The tell: a custom face, not just a license — that's the move when you want the brand to be unmistakable in three letterforms.
+- **Vercel** — **Geist Sans** + **Geist Mono** (custom, by Vercel based on Swiss principles). Type scale exposed as Tailwind tokens: `text-heading-72/64/56/48/40/32/24/20/16/14`, `text-button-16/14/12`, `text-label-20/18/16/14/13/12` (with mono variants at 14/13/12), `text-copy-24/20/18/16/14/13` (with mono variant at 13). `Subtle` and `Strong` modifiers via nested `<strong>` — a clean way to do de-emphasis without spawning 40 tokens. Color palette is essentially `#000` and `#FFF` with semantic gray steps; "aggressive reduction" is their stated philosophy.
+- **Linear.app** — **Inter** for body, **Inter Display** for headings. Dark gray sans on near-black. Linear's distinct "look" comes less from the typeface than from the gradient-mesh + soft-motion treatment around it.
+- **Glean.com** — **PolySans** (primary, "soft-edge ink trap feature"), **DM Sans** (fallback). Brighter color story than the defense field — see colors below.
+- **Raycast** — **Inter** for type, signature red accent on otherwise dark UI.
+- **Linear/Vercel/Raycast** are all using either `Inter` or a very-Inter-shaped custom (Geist). Inter is essentially the default for "premium developer SaaS in 2025/2026." It is correct for Adjutant if your audience is more soldier-meets-sysadmin than soldier-meets-warfighter.
+
+### What this means for Adjutant — concrete picks
+
+You have three respectable directions. Pick one and commit.
+
+**Direction A — Anduril clone, defense-establishment register.** Helvetica Now Display only, weights 400/500/700, set black on white. Pair with `Söhne Mono` or `JetBrains Mono` for spec readouts. This is the most "defense-credentialed" choice — it telegraphs "we know who reads this." The risk: Helvetica Now is a paid Monotype license; `Inter Display` is a free near-substitute for prototyping.
+
+**Direction B — Software product register, lean Linear/Vercel.** `Inter Display` (heads) + `Inter` (body) + `JetBrains Mono` (code/spec). Free. Reads as "this is a serious SaaS that happens to be for defense." Pairs better with the offline/AI claim — soldiers who download productivity apps will feel familiar instantly.
+
+**Direction C — Editorial defense, Anthropic-style.** A geometric sans (Söhne, or `Switzer` as a free near-substitute) for display + a serif (Tiempos, or free `Source Serif 4`) for body and key sentences. This is the rarest move in defense and would distinguish Adjutant. The italic serif accent treatment (one italic phrase mid-body in serif) reads as confident and human — exactly what Helsing's "protect fragile things" flower work tries to achieve.
+
+### Type-scale defaults you can use today
+
+Modeled after Geist's exposed scale, condensed. All values are `clamp()` candidates for fluid responsive sizing.
+
+```
+display-xl  : 96px / 0.95 / -0.04em  (hero "Adjutant")
+display-lg  : 72px / 1.00 / -0.035em (section heads)
+display-md  : 56px / 1.05 / -0.03em
+display-sm  : 40px / 1.10 / -0.02em
+heading-lg  : 32px / 1.15 / -0.015em
+heading-md  : 24px / 1.25 / -0.01em
+heading-sm  : 20px / 1.30 / -0.005em
+body-lg     : 18px / 1.55 /  0
+body-md     : 16px / 1.60 /  0
+body-sm     : 14px / 1.55 /  0
+caption     : 13px / 1.45 /  0.005em (uppercase eyebrows)
+mono-md     : 14px / 1.50 /  0
+mono-sm     : 12px / 1.45 /  0.01em
+```
+
+### Letter-spacing tightening at large sizes
+
+Every premium site you listed tightens tracking as type grows. Anduril's headline `font-weight: 700; font-size: 49px` would pair with roughly `letter-spacing: -0.02em`. At 96px display sizes you want `-0.035em` to `-0.04em`. Inter Display, Geist, and Söhne all are designed assuming this. Do **not** ship 96px display type at default tracking — it looks like a Bootstrap demo.
+
+### `text-wrap: balance` and `text-wrap: pretty`
+
+Use `text-wrap: balance` on every `<h1>`, `<h2>`, eyebrow, and CTA. Browser-supported through Chromium up to 6 lines, Firefox up to 10. Use `text-wrap: pretty` on body paragraphs — note the perf cost (only the last 4 lines matter), so apply to specific marketing prose blocks, not every `<p>`.
+
+### Mixed-case vs all-caps
+
+- **All-caps** uppercase 12–13px tracked +0.05em to +0.1em is the "callsign / eyebrow / section label" treatment. Anduril uses this. Saronic uses it for the capability list `001`–`007`. Defense audiences read uppercase as credibility, not shouting, when used sparingly.
+- **Sentence case** for headlines. Anthropic, OpenAI, Linear, Vercel all set their hero in sentence case. Title case is dated.
+- **Italic serif accent** — one italic word or phrase in a body sentence, set in your serif, is the Anthropic move. e.g. "Adjutant works *anywhere*. No signal required."
+
+### Mono usage
+
+- Spec sheets, coordinates, version strings, file paths, command examples, "callsign" treatments. Söhne Mono, Geist Mono, JetBrains Mono, IBM Plex Mono are the credible picks. **JetBrains Mono is free and reads correctly.**
+- Pair size: mono should be ~85% of the visual size of the sans next to it (mono runs visually larger at the same px).
+
+---
+
+## 2. COLOR SYSTEMS — actual palette tokens with hex values
+
+### Confirmed hex values from research
+
+- **Glean** — Primary Blue `#343CED`, Bright Green `#D8FD49`, Oatmeal `#F6F3EB`, Black `#000000`, White `#FFFFFF`. A single saturated blue + a single chartreuse accent + warm cream + B&W. This is the cleanest documented enterprise-AI palette I pulled.
+- **Anduril** (per Awwwards / Fonts In Use) — `#000000` and `#FFFFFF` with "the only color contribution comes from their products in their different environments." Photography of hardware-in-environment carries the color. They don't paint sections in brand color; they let golden-hour drone footage do it.
+- **Igloo Inc** (Awwwards Site of the Year 2025) — only **two declared colors**, `#B6BAC5` and `#383E4E`. A cool blue-gray and a deep slate. Proves you can win Site of the Year on a two-color palette if the WebGL is good.
+- **Linear** — dark base, gradient meshes built from blue→cyan→pink→white sequences (`#08AEEA`, `#2AF598`, `#B5FFFC`, `#FF5ACD`, `#FFFFFF`). The accent is the gradient itself, layered with blur.
+- **Vercel** — pure `#000000` / `#FFFFFF` + a stepped gray scale + minimal semantic accents (success, warning, error). "Right-click to copy raw values" in the docs interface.
+- **OpenAI** — black wordmark, white background, very limited palette additions in 2025 rebrand.
+- **Shield AI** — dark mode is the default theme for all UIs per their own design write-up; "industry standard aviation practices influence how colors are used."
+
+### "Defence Dun" — the field tendency
+
+The Anduril vs. Helsing head-to-head names this directly: both companies (and most of the field) sit in **"the industry standard beige, cream, and black palette"**. James Clark calls it Defence Dun and complains: "you could swap either brand around with little effort. So far, so dull." This is your opportunity. **If Adjutant uses anything other than Defence Dun, it will stand out at the SCSP hackathon's GenAI.mil track without being unprofessional.**
+
+### Recommended palette for Adjutant
+
+Pick a small, named palette with one accent. Don't paint the page in brand color — paint *one* surface or one stroke, and let typography + product imagery do the rest. Two options:
+
+**Palette A — "Field Operations" (warmer, Anduril-adjacent)**
+```
+--bg-paper      : #F4F1EA  (warm cream — borrowed from Aplat / Defence Dun done right)
+--bg-canvas     : #FAF8F2  (lighter cream surface)
+--ink-primary   : #0E0F0D  (off-black, never pure black — feels less digital)
+--ink-secondary : #4A4A46  (warm gray for body)
+--ink-mute      : #8A8A82  (captions, monospace metadata)
+--rule          : #D9D5C8  (hairlines, dividers)
+--accent        : #B8412B  (oxide red — single accent, reserved for active state, links, key stats)
+--ok            : #4F6B3B  (OD green for "operational" / status pills)
+```
+
+**Palette B — "Operations Center" (cool, Lattice-adjacent)**
+```
+--bg-base       : #0B0D10  (near-black, slight blue cast)
+--bg-elevated   : #15181C
+--ink-primary   : #ECEEF0
+--ink-secondary : #9CA3AF
+--ink-mute      : #5C6470
+--rule          : #1E2228
+--accent        : #E0B341  (signal amber — military readout convention)
+--ok            : #5FBE7D
+--warn          : #E98146
+--alert         : #D24545
+```
+
+A is the editorial-defense choice (matches an Anthropic / Helsing register). B is the product-cockpit choice (matches Anduril Lattice / Shield AI). For a hackathon judged at GenAI.mil, **B reads more credibly to military judges** because it visually matches the actual command-and-control software they use. A reads more credibly to design-savvy civilians.
+
+### Single-accent discipline
+
+Glean's palette uses Bright Green (#D8FD49) on a Primary Blue (#343CED) base — but the hero only uses the green in two places: the active CTA and one chart highlight. **Anduril uses zero brand-color washes.** The pattern across all premium sites: one accent, used three or four times per page, never as a section background. Resist the urge to paint a section bright orange to "feel energetic."
+
+### Full-bleed color sections — when
+
+Used by Linear, Vercel, Raycast for *product feature panes* (a single colored panel showing a screenshot or animation). Used by Anduril for *photo-driven hero/sub-hero panels* — the whole panel is a hero photo at 100vh, not a brand color. **Do not use full-bleed color washes for marketing copy sections** unless you're Glean and your brand is "delight."
+
+---
+
+## 3. LAYOUT PATTERNS
+
+### Hero compositions in the wild
+
+- **Linear** — centered headline in dark mode, single subhead, two CTAs ("Issue tracking is dead" announcement strip above as "1.0" eyebrow). Background: subtle gradient mesh + product UI screenshot floating below. Hero copy: *"The product development system for teams and agents."*
+- **Vercel** — centered headline, single subhead, dual CTA, then a code snippet rendered as a design object below. The snippet IS the hero visual: `import { streamText } from 'ai'`. Hero copy: *"Build and deploy on the AI Cloud."*
+- **Harvey** — *video* background, centered headline. Hero copy: *"Practice Made Perfect."* — three words. Defensible because the audience (BigLaw partners) responds to confidence, not feature lists.
+- **Raycast** — centered headline + subhead + two download CTAs + version string + brew install option. Hero copy: *"Your shortcut to everything."* + *"A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable."*
+- **Glean** — split feel; copy left, illustrated agent character + bento UI panels right. Hero copy: *"Work AI that works for all."*
+- **Saronic** — coordinate-system overlay (`X = 0 Y = 0`) and the hero copy *"Redefining maritime superiority"* with the seven numbered capabilities `001`–`007` (Launch / Maneuver / Perceive / Communicate / Execute / Enable / Recover) acting as the next scroll panel. The numbered list is the secondary hero — a clean, military-readable structure.
+- **Saildrone** — three-word hero: *"Detect. Deter. Dominate."* with vessels labeled `4001` and `4002` in the background. Stat strip: *"12+ years of operations. 2.5 million nautical miles sailed. 65,000 days at sea."*
+- **Shield AI** — hero photography of an aircraft + tagline *"Earth is our runway"* / *"Autonomy. Faster."* — two- and three-word hero copy.
+- **Anduril** — hero is hardware-in-environment video.
+
+### Recommended hero composition for Adjutant
+
+- **Three-word headline.** Adjutant deserves the Saildrone/Shield AI / Harvey treatment. Examples: *"Paperwork. Eliminated. Offline."* / *"Voice-first. Always offline."* / *"Soldier-grade AI. No signal."* The reference set is unanimous: defense and AI both reward economy.
+- **Single-line subhead** under it, ~20–24px, body weight, secondary ink. State *exactly* what the product does in one sentence: "An offline AI assistant that fills out DA-31, DD-1351-2, and DA-4856 by voice, in the field." Soldiers should know what it does without scrolling. (See section 7 — website-product fit.)
+- **One primary CTA**: "Request a demo" or "Get briefing." Optional secondary "Watch 60-second demo" (text link, not button).
+- **Background**: pick one — (a) full-bleed video of a soldier dictating a form on a phone in a barracks/field setting, captioned with the form name appearing as a typed monospace overlay, OR (b) a product screenshot with an animated waveform pinned to the bottom edge showing the live transcription. Option (b) is the "Vercel code-snippet-as-hero-visual" pattern adapted for voice.
+- **Eyebrow above headline**: `001 / SCSP HACKATHON · APRIL 2026` in 12px mono uppercase, tracked +0.08em, in `--ink-mute`. This is the Saronic move and it instantly signals "this is built by people who understand military design conventions."
+
+### Grid system
+
+- **8-px base, 4-px substep.** Standard. All major refs sit on this.
+- **12-column desktop / 6-column tablet / 4-column mobile** with `--col-gap: 24px desktop / 16px mobile`.
+- **Section padding**: `--section-y: 120px desktop, 80px tablet, 64px mobile`. Anduril and Linear both use very generous vertical breathing room (~120–160px between major sections); Vercel runs slightly tighter (~96px) because they pack more.
+- **Max content width**: 1280px hard cap, 1120px for prose-heavy sections. Centered.
+- **Edge gutters**: `clamp(24px, 5vw, 96px)`.
+
+### Section-spacing rhythm
+
+Anduril, Linear, and Anthropic all use the same rhythm: massive vertical air around each section heading, then tighter spacing within the section. A reusable rule: `padding-block: var(--section-y); padding-block-start: calc(var(--section-y) * 1.25);` — i.e., the top of each section is 25% larger than the bottom. This creates a clear "new chapter" beat as you scroll.
+
+### Sticky-on-scroll
+
+- **Sticky nav** that gains a backdrop-blur background after the user scrolls past the hero. (Linear, Anthropic, Vercel.)
+- **Sticky section headings** that pin during their section and unpin when the next arrives. Used by Linear and Vercel for product feature columns. CSS: `position: sticky; top: 80px;` on a column inside a `display: grid` with the right column being the scrolling content.
+- **Sticky on right column, scrolling on left** — the "story panel" pattern. Linear's product sections do exactly this: the visual stays put, the bullet copy scrolls.
+
+### Marquees / tickers
+
+Use marquees only for **logo strips** (customer logos / partner logos, infinite scroll) and **technical readouts** (a one-line ticker of facts: `MODELS: WHISPER · CLAUDE HAIKU · CHATTERBOX TTS · LATENCY: 600MS · WORKS OFFLINE`). Modern CSS: pure CSS marquee via `animation: scroll var(--dur) linear infinite;` on a duplicated child — no JS. Tasteful when the speed is **slow** (40s+ per loop) and the type is **mono**. Fast horizontal text scrollers feel cheap.
+
+---
+
+## 4. INTERACTION PATTERNS — what's tasteful vs tacky in 2026
+
+### Scroll-driven animations (CSS-native, no JS)
+
+The 2025/2026 baseline is **CSS Scroll-Driven Animations** with `animation-timeline: scroll()` and `animation-timeline: view()`. Examples extracted from Chrome's case studies:
+
+```css
+/* Sticky bar that animates in on scroll past hero */
+.top-bar {
+  animation: toggleBar linear both;
+  animation-timeline: scroll();
+  animation-range: 20px 70px;
+}
+@keyframes toggleBar {
+  to { height: 48px; backdrop-filter: blur(16px); }
+}
+
+/* Card fly-in on enter */
+.card {
+  animation: animate-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+@keyframes animate-in {
+  0%   { opacity: 0; transform: translateY(10%); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+```
+
+Tokopedia's case study reports **"~80% reduction in lines of code"** versus JS scroll handlers, and the work runs off the main thread (no jank). Use this for the entire reveal-on-scroll system. Skip GSAP unless you specifically need ScrollSmoother.
+
+### Scroll-snap
+
+Use `scroll-snap-type: y mandatory` only for **dedicated full-bleed slide sections** (Anduril does this for product showcase). Do not snap the entire page — it makes the page feel hostile. A useful pattern: snap inside a `100vh` panel that contains 4 sub-panels (vehicle profile shots, e.g.), then release back to natural scroll.
+
+### View Transitions API
+
+Use `view-transition-name` on the hero word "Adjutant" so when you click into a sub-page (e.g., `/security`), the wordmark crossfades smoothly into the sub-page header. As of 2025 Chrome supports this fully across same-document and cross-document navigations. Same-document: free win. Cross-document: requires `@view-transition { navigation: auto; }`.
+
+### Hero crossfade + text mask reveal
+
+Linear's product sections do a stacked crossfade: as you scroll, two product screenshots crossfade by `opacity` driven by `animation-timeline: view()` on a wrapper. Combined with `mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);` on the visual, the image *materializes from nothing* as it enters the viewport. Tasteful.
+
+Text mask reveal: split the headline into spans, each with `clip-path: inset(0 100% 0 0);` and animate `clip-path: inset(0 0 0 0);` driven by view timeline. Each word reveals left-to-right as the user scrolls into the section.
+
+### Magnetic cursors / custom cursors
+
+**Tacky.** Skip. They feel 2018. The only respectable cursor work in 2026 is a *cursor proximity* effect on a button (the button subtly nudges 4–8px toward the cursor when within 60px). Linear does this well; everyone else who tries it overdoes it.
+
+### Persistent overlay panels
+
+This is Sana.ai's signature move — a "response pane" that stays pinned right while the marketing copy scrolls left. Vercel does similar with a sticky terminal panel during the AI Gateway section. **For Adjutant**: a persistent right-side panel showing a *live, animated waveform + transcript filling out a form* is the single highest-leverage interaction you could build. It tells the entire product story without a single feature bullet.
+
+Implementation: `display: grid; grid-template-columns: 1fr 1fr;` with right column `position: sticky; top: 0; height: 100vh;` containing a small mock device frame. As left column copy scrolls past three feature blocks, the right panel transitions through three corresponding form-fill states. Use `IntersectionObserver` on the left blocks to drive the right state.
+
+### Hover micro-interactions
+
+- Button hover: 120ms `transform: translateY(-1px)` + 6% darker background. No more.
+- Link hover: animate the underline width from 0% to 100% via `background-image: linear-gradient(currentColor, currentColor); background-size: 0 1px; background-position: 0 100%; background-repeat: no-repeat;` then `:hover { background-size: 100% 1px; }`. Used by Anthropic and Linear. Tasteful, accessible.
+- Card hover: `transform: translateY(-2px); box-shadow: 0 12px 32px -8px rgba(0,0,0,0.18);` over 200ms ease-out.
+- **Don't** rotate, scale, or skew on hover. Don't 3D-tilt. Don't ever.
+
+### Video on scroll
+
+Pattern: load a `<video muted playsinline preload="metadata">`, autoplay when 50% in viewport via IntersectionObserver, pause when leaving. Do not loop hero videos at full volume. **Add captions visible by default** — defense audiences often can't unmute. Anduril and Saildrone both do silent autoplaying hero video with no captions, because the video is mood, not information. If your video conveys information (Adjutant transcript filling a form), captions on by default.
+
+### WebGL canvas tricks
+
+Igloo Inc (Awwwards Site of the Year 2025) is the high-water mark: WebGL particle simulation, custom VDB volume data exporter, chromatic aberration on transitions, SDF text scrambles. For Adjutant, **don't.** WebGL on a defense-AI marketing page reads as "this is a design exercise." The trade for premium polish without WebGL: use CSS `mix-blend-mode: difference` between two layers, or `backdrop-filter: blur(...)` on a colored overlay, to get richness without a 4MB shader bundle.
+
+### Parallax depth
+
+Use 1–2 layers of subtle parallax (~10–20% offset) on the hero only. CSS-only via `transform: translate3d(0, calc(var(--scroll-y) * -0.1), 0);` driven by a `--scroll-y` custom property updated in JS. Don't parallax body sections — it desyncs the reading experience.
+
+### Tasteful vs tacky checklist
+
+| Pattern | Tasteful | Tacky |
+|---|---|---|
+| Scroll-snap full-bleed showcase | ✅ | when applied to whole page |
+| Sticky right pane with synchronized state | ✅ | when state changes are jumpy |
+| Marquee logo strip, slow | ✅ | fast horizontal text marquee |
+| View Transitions API | ✅ | gratuitous page-flip transitions |
+| Hover lift on buttons (1px) | ✅ | hover scale + glow + tilt |
+| Crossfade on scroll | ✅ | every element fading in |
+| Custom cursor | ✕ always tacky | |
+| WebGL particles for hero | only if site is *about* the visual | always for defense-AI |
+| Magnetic buttons | one or two, max | every button |
+
+---
+
+## 5. PROOF DEVICES FOR AI PRODUCTS — how to show product live without it feeling demo-y
+
+### The patterns I observed
+
+- **Linear** — embeds **actual issue cards** as design objects (ENG-2085, ENG-2092, etc.) with timeline visualizations. Not a screenshot — rendered HTML/SVG that participates in the page's design language.
+- **Vercel** — renders a **real code block** as the hero visual: `import { streamText } from 'ai'; const result = streamText({ model: 'openai/gpt-5.4', prompt: 'Why is the sky blue?' })`. The code IS the marketing.
+- **Glean** — **interactive use-case tabs**: Engineering / Customer Support / Sales / People / IT, each tab swaps the hero illustration to show that role's workflow. One hero, five products. The tabs are the proof.
+- **Harvey** — **three customer-quote testimonials** with named GCs and senior partners (Deutsche Telekom, Reed Smith, Syngenta), plus four video case studies. Trust is built by who, not what.
+- **Sana.ai** — **persistent response pane** on the right of the page that updates as you scroll. The agent appears to be live-thinking next to the marketing copy.
+- **Mintlify** — **logo strip of customers** (Anthropic, Perplexity, X, Kalshi) plus "2M+ Monthly active developers" as the single proof stat.
+- **OpenAI** — historically shows model output snippets with monospace formatting. Less now.
+
+### For Adjutant specifically
+
+Recommended proof stack, in scroll order:
+
+1. **Hero**: animated waveform + monospace live transcript on the right (or below), text materializing as if dictated. Below that, the form (DA-31) being filled in real time. **This is the entire product in one frame.** Three-second loop on a video with no autoplay sound.
+2. **"Trusted by" / "Built for" strip** below the fold: `BUILT FOR · U.S. ARMY · ARNG · USAR` in mono uppercase. (Even if no formal partnerships yet, factual capability statements work: "Built for SCSP Hackathon · GenAI.mil track" reads honestly.)
+3. **Form-by-form interactive tabs**: one tab per form (DA-31, DD-1351-2, DA-4856) — each shows a 6-second loop of voice→form. This is the Glean pattern adapted.
+4. **A single number**: `0 SECONDS OF SIGNAL REQUIRED.` — set in display-xl. The Saildrone "12+ years / 2.5M nm / 65,000 days" stat treatment but with the offline claim.
+5. **Architecture diagram** (after the proof loop): a small monospace block-diagram showing on-device pipeline (mic → Whisper → Claude Haiku → form schema → PDF). This is for the soldier-engineers and acquisitions evaluators who need to know the stack.
+6. **Single quote** treatment: pick one early user (even a teammate or hackathon mentor) and run their quote at 32–40px display weight, mid-page, with their rank + unit + photo. Harvey's testimonial pattern.
+
+**What NOT to do:** do not embed a chatbot widget where the user can prompt your live system on the marketing page. It will fail in front of judges. Show recorded interaction loops with hand-written transcripts that look real.
+
+---
+
+## 6. DEFENSE-SPECIFIC BRAND CUES
+
+### What the field actually does
+
+- **Anduril** — Helvetica Now wordmark inverted-A pommel; black/white only; hero video of hardware in environment (drones in golden hour, Sentry towers in desert); "Rebuild the arsenal" campaign aesthetic that "echoes WW2 posters and Cold War artistic renditions"; irreverent recruitment ("Don't work at Anduril"); full company reframe as "Silicon Valley product-first" inside defense.
+- **Helsing** — H wordmark by Spin design; landscape imagery (land/sea/air as territories); flower imagery for internal comms (the "fragile thing to protect" metaphor); intellectual register, not emotional; per the head-to-head: "European ambivalence toward defense" reflected in restraint.
+- **Palantir** — historically uses "transparent system using quadrants of the screen for navigation rather than a typical nav bar... inspired by imaginative interfaces found in intelligence and military technologies." (per Fictive Kin's case study).
+- **Saronic** — coordinate-system overlay (`X = 0 Y = 0`) at top and bottom of viewport, which references targeting/navigation interfaces; numbered capability list `001`–`007`; "Built in Texas" footer marker.
+- **Shield AI** — dark mode default; "war-tested wisdom" brand line; aircraft hero photography; "Heroic Sage" archetype per their agency case study.
+- **Saildrone** — three-word hero "Detect. Deter. Dominate."; vessels labeled with `4001`/`4002` callsigns; capability nav uses verbs (Maritime Domain Awareness, Undersea Detection); credentials stat strip.
+- **Skydio** — "America's leading drone manufacturer," Made-in-USA emphasis, supply-chain provenance copy as a brand axis.
+
+### The full set of defense-cred design tokens
+
+These are the patterns to mix-and-match:
+
+1. **Callsign typography** — alphanumeric IDs (`4001`, `ENG-2085`-style) in monospace next to product names. Saildrone, Linear (different domain, same trick), Saronic.
+2. **Coordinate annotations** — `X = 0 Y = 0` or `LAT 42.3601 / LON -71.0589` in a corner. Saronic.
+3. **Numbered capability lists** — `001 LAUNCH / 002 MANEUVER / 003 PERCEIVE`. Saronic. Reads as a checklist a soldier could memorize.
+4. **Verb-first capability nav** — "Detect. Deter. Dominate." / "Launch / Maneuver / Perceive". Saildrone, Saronic.
+5. **Mono spec readouts** — `RANGE: 130 NM · ENDURANCE: 14 DAYS · SENSORS: EO/IR · SAR · COMMS: X / KU / SATCOM`. Saildrone product cards.
+6. **Verbal credentials over visual badges** — "12+ years of operations. 2.5 million nautical miles sailed. 65,000 days at sea." instead of certification icons. Replaces the SaaS "SOC2 / GDPR" row with operational truth.
+7. **Made-in-USA / origin lines** — Skydio leans on this hard. "Built in Texas" — Saronic. For Adjutant: "Built in [city] · Open to U.S. service members."
+8. **Hero video of hardware-in-environment** — Anduril, Skydio, Saildrone. The hardware on terrain, not in studio. For Adjutant: a phone in a soldier's hand outdoors, not on a desk.
+9. **Technical diagrams with measurement annotations** — Anduril does this on product pages with cutaway-style line drawings. The aesthetic borrows from technical-illustration plates: thin line, sans-serif label, lead line to a point.
+10. **Classified-document framing — REDACTED bars** — used **sparingly** in the field (mostly recruitment, almost never in product marketing). Ill-advised for Adjutant: implies you handle classified data. Skip unless making a recruitment-style social asset.
+11. **Patriotism / mission language** — Anduril leans hard into this; Helsing leans away. For Adjutant on a U.S. Army hackathon, lean toward Anduril's register. "Built for the soldier, on the soldier's time" beats "AI-enabled administrative workflows."
+
+### The cross-industry observation
+
+The Anduril vs. Helsing piece is brutal about it: *"you could swap either brand around with little effort. So far, so dull."* The industry sameness is your wedge. **The single most distinguishing move Adjutant can make**: pick *one* unmistakable visual signature (the live-waveform-filling-a-form panel; the numbered form list; the off-grid origin photography) and let it carry the brand. Don't try to do all of cues 1–11 above. Pick three and execute them perfectly.
+
+---
+
+## 7. WEBSITE-PRODUCT FIT — does the site tell you what the product is in one glance?
+
+I scored each reference on the question "How long until I know what this company sells?"
+
+- **Vercel** — *"Build and deploy on the AI Cloud."* Above the fold. **One glance: yes.**
+- **Linear** — *"The product development system for teams and agents."* + *"Purpose-built for planning and building products. Designed for the AI era."* **One glance: yes.**
+- **Raycast** — *"Your shortcut to everything."* + *"A collection of powerful productivity tools all within an extendable launcher."* **One glance: yes.**
+- **Glean** — *"Work AI that works for all."* + *"Give every employee an AI Assistant and Agents that put your company's knowledge to work."* **One glance: yes.**
+- **Mintlify** — *"The Intelligent Knowledge Platform"* — vague. Subhead helps: *"create and maintain world-class documentation built for both humans and AI."* **One glance: half.**
+- **Harvey** — *"Practice Made Perfect."* — opaque without context. Subhead: *"Today's top law firms and in-house legal teams trust Harvey to elevate their craft."* You learn it's for lawyers, not what it does. **One glance: no — but the audience is partners who already know.**
+- **Anthropic** — historically very restrained, almost editorial. **One glance: no — ambient, chosen.**
+- **Anduril** — *"Transforming U.S. Defense Capabilities with Advanced Technology."* **One glance: yes — defense tech, that's it.** Then product names do the work below the fold.
+- **Helsing** — *"Artificial intelligence to protect our democracies."* **One glance: yes** — but per the critique, the messaging is intellectual rather than operational.
+- **Shield AI** — *"Earth is our runway."* + *"Autonomy. Faster."* **One glance: poetic but unclear.** Better at register than clarity.
+- **Saronic** — *"Redefining maritime superiority."* **One glance: maritime defense, yes.**
+- **Saildrone** — *"Detect. Deter. Dominate."* + vessels in background. **One glance: yes — naval autonomous.**
+- **Sana** — typography-led, slower reveal. **One glance: no.**
+
+### Where Adjutant should land
+
+The defense-tech audience for SCSP/GenAI.mil is a mix of (a) acquisitions/program officers who scan for capability claims, (b) soldiers/operators who want to see the thing working, (c) investors/civilians who want to understand the wedge. **You need to land on "one glance: yes."**
+
+The recommended hero formula:
+
+```
+[eyebrow]   001 / SCSP HACKATHON · APRIL 2026 · BOSTON
+[headline]  Paperwork. Done by voice. Offline.
+[subhead]   Adjutant is a fully offline AI assistant that fills out
+            DA-31, DD-1351-2, and DA-4856 from a soldier's voice.
+            No signal required.
+[CTA]       Request a demo →
+[secondary] Watch 60-second demo
+```
+
+All three intent groups now know what it is in 5 seconds. The body of the page is allowed to breathe, get editorial, do the proof loops, and earn premium status. The hero does the job.
+
+The Vercel/Linear/Glean cluster of "premium AI marketing" all do exactly this: a clear, declarative top, then a long, well-spaced narrative below. That balance — operational clarity at the top, editorial polish below — is the winning formula for defense-tech-AI in 2025/2026 and where Adjutant should land.
+
+---
+
+## 8. THE FINAL ASSEMBLY — what to ship for Adjutant
+
+If you implement the following, you will have a landing page that holds up next to Anduril and Vercel without needing WebGL or a six-week build.
+
+**Stack picks**
+- Type: `Inter Display` (heads, free) + `Inter` (body, free) + `JetBrains Mono` (mono, free). Upgrade to `Söhne` + `Söhne Mono` if you want the OpenAI register and have the budget.
+- Color: Palette B (Operations Center) — `#0B0D10` base, `#ECEEF0` ink, `#E0B341` signal-amber accent. Or Palette A (Field Operations) cream/oxide if you want to stand out.
+- Grid: 8px base, 12-col, 1280px max, `clamp(24px, 5vw, 96px)` gutters.
+- Animation: CSS Scroll-Driven Animations (`animation-timeline: view()`), View Transitions API, no GSAP unless you need ScrollSmoother.
+- Type-scale: as listed in section 1.
+
+**Sections in order**
+1. Sticky nav (logo, 3 links, demo CTA), gains `backdrop-filter: blur(12px)` after scroll.
+2. Hero: eyebrow + 3-line declarative headline (`text-wrap: balance`) + 2-line subhead + primary CTA + secondary text link + waveform/transcript visual on right (sticky for next scroll).
+3. Three-form tabs (DA-31 / DD-1351-2 / DA-4856) with synchronized form-fill loop on the right pane.
+4. Single big stat: `0 SECONDS OF SIGNAL REQUIRED.` set in display-xl with a one-sentence explanation.
+5. Architecture readout: monospace block diagram of pipeline + named models.
+6. Single testimonial / quote at 32–40px, with rank/unit/photo.
+7. "Built for" strip in mono uppercase.
+8. Footer with `BUILT IN [CITY] · TEAM CHARLIE MIKE · SCSP HACKATHON · APRIL 2026`.
+
+**One unmistakable signature**
+Pick one of: (a) the persistent right-pane waveform-and-form-fill, (b) the numbered form-list `001 / 002 / 003` like Saronic, (c) the coordinate overlay `X=0 Y=0` corner annotations. **Pick one.** Don't do all three.
+
+---
+
+## Sources
+
+Direct fetches — Linear (sana page), Vercel, Harvey, Glean, Writer, Mintlify, Raycast, Saildrone, Saronic, Exo, Aplat, Yashas Mitta portfolio, Helsing AI surface, Awwwards Anduril & Igloo, Igloo case study, Refs.gallery Igloo, Substack Anduril vs Helsing, Loftlyy Glean, Fonts In Use Anduril & OpenAI, Typ.io anduril.com CSS scrape, Web Designer Depot OpenAI rebrand, Type.today Anthropic Styrene article, Harvey design blog, Harvey design system rebuild blog, Glean brand resources, Vercel Geist colors & typography, Klim Type Foundry Söhne, Alliance Interactive 60-defense-website roundup, Chrome scroll-driven animations case studies, Prismic 50 CSS scroll effects.
+agentId: a00c306ddfec7340e (use SendMessage with to: 'a00c306ddfec7340e' to continue this agent)
+<usage>total_tokens: 115101
+tool_uses: 91
+duration_ms: 823343</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

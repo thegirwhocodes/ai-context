@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT TTS GitHub model architecture how trained Nigerian accent voice
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:30:03 UTC
+========================================================================
+
+Search query: YarnGPT TTS GitHub model architecture how trained Nigerian accent voice
+
+----------------------------------------
+
+Web search results for query: "YarnGPT TTS GitHub model architecture how trained Nigerian accent voice"
+
+Links: [{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"How this UNILAG student built an AI model with local accent","url":"https://techpoint.africa/insight/how-unilag-student-created-yarngpt-ai/"},{"title":"How Azeez, Unilag’s student built a Nigerian accent AI text-to-speech model - Businessday NG","url":"https://businessday.ng/bd-weekender/article/how-azeez-unilags-student-built-a-nigerian-accent-ai-text-to-speech-model/"},{"title":"Azeez Saheed unveils YarnGPT: A Nigerian-accented text-to-speech AI | Techpression","url":"https://techpression.com/azeez-saheed-unveils-yarngpt"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"YarnGPT is a text-to-speech model for Nigerian languages ...","url":"https://www.facebook.com/MalamIromba1/videos/yarngpt-is-a-text-to-speech-model-for-nigerian-languages-and-accents-developed-b/1878804665986921/"},{"title":"YarnGPT | PromptLayer Models","url":"https://www.promptlayer.com/models/yarngpt/"},{"title":"Ngadou/nigerian_accent_tts_en · Hugging Face","url":"https://huggingface.co/Ngadou/nigerian_accent_tts_en"}]
+
+Based on the web search results, here's comprehensive information about YarnGPT:
+
+## Model Architecture
+
+YarnGPT uses a pure language modeling approach built on pure language modeling without external adapters. It utilizes the WavTokenizer for audio processing and implements a sophisticated training regime with AdamW optimizer, linear scheduling with warmup, and specific hyperparameters optimization.
+
+## Training Details
+
+The model was trained on a dataset of publicly available Nigerian movies, podcasts (using the subtitle-audio pairs) and open source Nigerian-related audio data on Huggingface, with audio files preprocessed and resampled to 24kHz and tokenized using wavtokenizer.
+
+The training was conducted on an A100 GPU over 5 epochs with a batch size of 4. The model operates at 24kHz sample rate.
+
+## Nigerian Accent Voice
+
+YarnGPT2b is a text-to-speech (TTS) and automatic speech recognition (ASR) model designed to synthesize Nigerian-accented languages (Yoruba, Igbo, Hausa, and English). It supports 11 distinct voices (6 male and 5 female).
+
+## GitHub Repository
+
+The GitHub repository at github.com/saheedniyi02/yarngpt provides installation instructions and code examples for using the model.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

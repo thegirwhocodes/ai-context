@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: edgerunner ai offline LLM corpus update synchronization military air-gapped depl
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:00:37 UTC
+========================================================================
+
+Search query: edgerunner ai offline LLM corpus update synchronization military air-gapped deployment
+
+----------------------------------------
+
+Web search results for query: "edgerunner ai offline LLM corpus update synchronization military air-gapped deployment"
+
+Links: [{"title":"Newsroom | EdgeRunner Achieves GPT-5 Level Performance in Key Military Tasks While Running Locally On-Device","url":"https://www.edgerunnerai.com/news/edgerunner-achieves-gpt-5-level-performance-in-key-military-tasks-while-running-locally-on-device"},{"title":"EdgeRunner AI","url":"https://www.edgerunnerai.com/"},{"title":"EdgeRunner AI lands $17.5M to build air-gapped LLMs for offline edge AI | Edge Infrastructure Review","url":"https://www.edgeir.com/edgerunner-ai-lands-17-5m-to-build-air-gapped-llms-for-offline-edge-ai-20250509"},{"title":"Defense Acquisition University: EdgeRunner - On Device Military Specific AI","url":"https://www.waru.edu/sites/default/files/2025-04/EdgeRunner%20DAU%20Deck%204.16_0.pdf"},{"title":"News | EdgeRunner AI","url":"https://www.edgerunnerai.com/news"},{"title":"EdgeRunner AI","url":"https://www.linkedin.com/company/edgerunner-ai"},{"title":"Product | EdgeRunner AI","url":"https://www.edgerunnerai.com/product"},{"title":"Living in the Edge — Our Investment in EdgeRunner AI","url":"https://www.madrona.com/edgerunner-ai-air-gapped-on-device-agents/"},{"title":"EdgeRunner Achieves GPT-5 Level Performance For Key Military Tasks While Running Locally On-Device","url":"https://www.businesswire.com/news/home/20251112202469/en/EdgeRunner-Achieves-GPT-5-Level-Performance-For-Key-Military-Tasks-While-Running-Locally-On-Device"},{"title":"Newsroom | No Cloud, No Problem – EdgeRunner Delivers the Fastest On-Device AI Behind Enemy Lines","url":"https://www.edgerunnerai.com/news/no-cloud-no-problem-edgerunner-delivers-the-fastest-on-device-ai-behind-enemy-lines"}]
+
+I've completed the web search for your query. Here are the key findings about EdgeRunner AI's offline LLM capabilities for military air-gapped deployments:
+
+## Overview
+EdgeRunner 20B is a new model that matches GPT-5 task performance on four military test sets while running completely air-gapped on an edge device. EdgeRunner AI raised $17.5M, including a $12M Series A led by Madrona Ventures, to develop air-gapped, on-device AI for military and enterprise use.
+
+## Core Capabilities
+EdgeRunner has architected its platform from the beginning to run completely air-gapped on-device, bringing the power of military-specific LLMs directly to workstations, laptops, or smartphones without relying on network connectivity. The platform uses open-source Large Language Models (LLMs) optimized for local devices and offers features like chat, Q&A, translation, transcription, and tool integrations.
+
+## Military Training and Deployment
+EdgeRunner leveraged its Supervised Fine Tuning data creation pipeline to generate 1.6M training examples using LLMs to summarize military documentation, generating question-answer pairs chunkwise, with evaluation of quality pairs.
+
+## Offline Optimization
+EdgeRunner's GGUF-based compression strategies reduce models to less than 30% of original size while preserving approximately 98.5% of original quality, allowing deployment on low-power edge devices and mobile devices.
+
+The search results focus on EdgeRunner's general capabilities but don't provide specific technical details about corpus update synchronization mechanisms.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

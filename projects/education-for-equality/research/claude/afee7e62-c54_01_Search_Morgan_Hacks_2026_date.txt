@@ -1,0 +1,25 @@
+========================================================================
+AGENT RESEARCH: Search Morgan Hacks 2026 date
+Session: afee7e62-c541-4167-af05-d964ec40c4a2
+Time: 2026-04-04 20:58:08 UTC
+========================================================================
+
+Search for "Morgan Hacks" hackathon 2026 - when is it, what are the dates, prizes, registration deadline, and URL. This is likely a hackathon at Morgan State University. Today is April 4, 2026. Report in under 100 words.
+
+----------------------------------------
+
+The search results already provided the key details. Here is the summary:
+
+**MorganHacks 2026** — April 11-12, 2026 at Morgan State University. Up to $15,000 in prizes across five themed tracks. 200+ hackers expected. Registration and details at [morganhacks.com](https://www.morganhacks.com/).
+
+Sources:
+- [MorganHacks 2026](https://www.morganhacks.com/)
+- [MorganHacks - Morgan State University Events](https://events.morgan.edu/event/morganhacks)
+agentId: ae8cfb8a704b5425b (use SendMessage with to: 'ae8cfb8a704b5425b' to continue this agent)
+<usage>total_tokens: 13445
+tool_uses: 4
+duration_ms: 18892</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qwen3-TTS 0.6B huggingface model natural language prompt voice style
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 06:47:50 UTC
+========================================================================
+
+Search query: Qwen3-TTS 0.6B huggingface model natural language prompt voice style
+
+----------------------------------------
+
+Web search results for query: "Qwen3-TTS 0.6B huggingface model natural language prompt voice style"
+
+Links: [{"title":"Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"},{"title":"Qwen/Qwen3-TTS-12Hz-0.6B-Base · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base"},{"title":"GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. · GitHub","url":"https://github.com/QwenLM/Qwen3-TTS"},{"title":"GitHub - DarioFT/ComfyUI-Qwen3-TTS: A ComfyUI custom node suite for Qwen3-TTS, supporting 1.7B and 0.6B models, Custom Voice, Voice Design, Voice Cloning and Fine-Tuning. · GitHub","url":"https://github.com/DarioFT/ComfyUI-Qwen3-TTS"},{"title":"Qwen3-TTS Family is Now Open Sourced: Voice Design, ...","url":"https://qwen.ai/blog?id=qwen3tts-0115"},{"title":"Qwen3-TTS Demo - a Hugging Face Space by Qwen","url":"https://huggingface.co/spaces/Qwen/Qwen3-TTS"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation - DEV Community","url":"https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-Base · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base"}]
+
+Based on the search results, here's comprehensive information about the Qwen3-TTS 0.6B model and its natural language prompt voice style capabilities:
+
+## Overview
+
+The Qwen3-TTS 0.6B CustomVoice variant is based on the 12Hz tokenizer and supports 9 premium timbres while allowing for fine-grained style control over target voices via natural language instructions across 10 major languages.
+
+## Natural Language Voice Control
+
+The model adapts tone, rhythm, and emotional expression based on natural language instructions (e.g., "Speak in a very happy tone"). The models feature strong contextual understanding, enabling adaptive control of tone, speaking rate, and emotional expression based on instructions and text semantics.
+
+## Key Features
+
+The model supports speech generation driven by natural language instructions, allowing for flexible control over multi-dimensional acoustic attributes. The model is optimized for streaming generation, achieving end-to-end synthesis latency as low as 97ms.
+
+## Usage
+
+For the custom voice models, you call generate_custom_voice, passing text along with language, speaker, and optional instruct parameters. The model supports synthesis across Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish, and Italian.
+
+## Comparison with Larger Model
+
+The 1.7B models have stronger emotion control than 0.6B models. This suggests the 0.6B variant is a more lightweight option suitable for resource-constrained environments while still providing natural language-based voice style control.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

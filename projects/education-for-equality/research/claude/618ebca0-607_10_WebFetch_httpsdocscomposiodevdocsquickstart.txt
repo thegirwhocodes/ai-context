@@ -1,0 +1,68 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.composio.dev/docs/quickstart
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-30 06:53:42 UTC
+========================================================================
+
+URL: https://docs.composio.dev/docs/quickstart
+Extraction prompt: Extract the exact TypeScript code for: (1) initializing Composio with apiKey, (2) authorizing/connecting a user to a toolkit like Gmail (the OAuth connect flow — function names, how the redirect/connect URL is returned, how to wait for connection), (3) fetching tools for a user with the Anthropic provider (@composio/anthropic), (4) executing a tool / passing tools to Claude. Include exact method names like composio.toolkits.authorize, composio.tools.get, composio.tools.execute, userId/entityId parameters, and any AuthConfig/connected account concepts.
+
+----------------------------------------
+
+# TypeScript Composio Integration Guide
+
+Based on the documentation provided, here's the exact pattern for TypeScript integration:
+
+## 1. Initialize Composio with API Key
+
+```typescript
+import { Composio } from "@composio/core";
+
+const composio = new Composio();
+const userId = "user_123";
+const session = await composio.create(userId);
+```
+
+The API key is configured via environment variables (`.env`), not passed directly to the constructor.
+
+## 2. OAuth Connect Flow
+
+**The documentation does not include specific authorization/OAuth connection methods.** The quickstart shows session creation but omits toolkit authorization details like `composio.toolkits.authorize()` or connect URL retrieval functions you requested.
+
+## 3. Fetch Tools with Anthropic Provider
+
+```typescript
+import { Composio } from "@composio/core";
+import { ClaudeAgentSDKProvider } from "@composio/claude-agent-sdk";
+
+const composio = new Composio({ 
+  provider: new ClaudeAgentSDKProvider() 
+});
+const session = await composio.create(userId);
+const tools = await session.tools();
+```
+
+## 4. Pass Tools to Claude
+
+```typescript
+const customServer = createSdkMcpServer({
+  name: "composio",
+  version: "1.0.0",
+  tools: tools,
+});
+
+const options = {
+  mcpServers: { composio: customServer },
+  permissionMode: "bypassPermissions" as const,
+};
+
+for await (const stream of query({ prompt: input, options: queryOptions })) {
+  // Process response
+}
+```
+
+**Note:** Methods like `composio.tools.execute()`, `composio.toolkits.authorize()`, and connected account management are not detailed in the provided documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

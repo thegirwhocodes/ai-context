@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://hollatags.com/voice/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:23 UTC
+========================================================================
+
+URL: https://hollatags.com/voice/
+Extraction prompt: What voice API services does HollaTags offer? IVR, inbound DID, voice broadcast? What is the pricing? Do they support Nigeria? Do they support custom audio, recording, webhooks for building interactive voice applications?
+
+----------------------------------------
+
+# HollaTags Voice API Services
+
+Based on the webpage content, HollaTags offers the following voice services:
+
+**Services Offered:**
+- IVR (Interactive Voice Response)
+- Inbound DID Numbers
+- Voice Broadcast
+- Voice OTP and 2-Factor Authentication
+- Text-to-Speech
+- Outbound and inbound calling functionality
+
+**Geographic Support:**
+HollaTags is based in "21A, Oluwakayode Jacobs Crescent, Lekki Phase 1, Lagos - Nigeria" and appears to serve Nigeria and the broader African market.
+
+**Pricing:**
+The page does not specify detailed pricing information. It directs interested parties to "Talk to Sales" for pricing inquiries.
+
+**Advanced Features:**
+The webpage mentions developers can "create faultless call logic for any application" and customize "voice-calling workflows using IVR." However, the content does not explicitly detail whether they support custom audio, recordings, or webhooks. To confirm these technical capabilities, you would need to contact their sales team or review their developer API documentation at sms.hollatags.com/developer.
+
+**Next Steps:**
+Contact HollaTags via their [contact form](https://hollatags.com/contact-support/) or email hello@hollatags.com for specific technical specifications and pricing.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

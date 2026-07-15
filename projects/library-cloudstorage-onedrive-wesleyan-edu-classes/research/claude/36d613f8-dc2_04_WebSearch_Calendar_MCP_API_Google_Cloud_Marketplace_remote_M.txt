@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Calendar MCP API" Google Cloud Marketplace remote MCP setup
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 05:18:29 UTC
+========================================================================
+
+Search query: "Calendar MCP API" Google Cloud Marketplace remote MCP setup
+
+----------------------------------------
+
+Web search results for query: ""Calendar MCP API" Google Cloud Marketplace remote MCP setup"
+
+Links: [{"title":"Configure the Calendar MCP server | Google Calendar | Google for Developers","url":"https://developers.google.com/workspace/calendar/api/guides/configure-mcp-server"},{"title":"GitHub - nspady/google-calendar-mcp: MCP integration for Google Calendar to manage events. · GitHub","url":"https://github.com/nspady/google-calendar-mcp"},{"title":"MCP Reference: calendarmcp.googleapis.com | Google Calendar | Google for Developers","url":"https://developers.google.com/workspace/calendar/api/v3/reference/mcp"},{"title":"Configure the Google Workspace MCP servers | Google for Developers","url":"https://developers.google.com/workspace/guides/configure-mcp-servers"},{"title":"GitHub - deciduus/calendar-mcp: This project implements a Python-based MCP (Model Context Protocol) server that acts as an interface between Large Language Models (LLMs) and the Google Calendar API. It enables LLMs to perform calendar operations via natural language requests. · GitHub","url":"https://github.com/deciduus/calendar-mcp"},{"title":"Announcing official MCP support for Google services | Google Cloud Blog","url":"https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services"},{"title":"GitHub - rsc1102/Google_Calendar_MCP: Model Context Protocol (MCP) server that integrates with the Google Calendar API · GitHub","url":"https://github.com/rsc1102/Google_Calendar_MCP"},{"title":"How to connect Google calendar to MCP: enterprise guide | MintMCP Blog","url":"https://www.mintmcp.com/blog/connect-google-calendar-with-mcp"},{"title":"Google MCP Server | Conare","url":"https://conare.ai/marketplace/mcp/google-mcp"},{"title":"Google Cloud MCP servers overview | Google Cloud Documentation","url":"https://docs.cloud.google.com/mcp/overview"}]
+
+I found comprehensive information about Calendar MCP API and remote MCP setup. Here are the key findings:
+
+## Google Calendar MCP Overview
+
+Google Calendar offers a remote Model Context Protocol (MCP) server that allows AI agents to securely interact with Google Calendar data. By configuring the Google Calendar MCP server, you enable AI applications like Gemini CLI, Claude, or IDEs to perform actions in Google Calendar.
+
+## Core Capabilities
+
+The Google Calendar MCP server provides a standardized way for AI agents to read data like listing calendars and retrieving events, and take action like creating, updating, and deleting events.
+
+## Remote MCP Setup
+
+Google has released fully-managed, remote MCP servers where Google's existing API infrastructure is now enhanced to support MCP, providing a unified layer across all Google and Google Cloud services, allowing developers to point their AI agents to a globally-consistent and enterprise-ready endpoint.
+
+## Configuration Requirements
+
+To use the Google Calendar MCP server, you must enable it in your Google Cloud project and then configure your MCP client to connect to it. The Google Calendar MCP server uses OAuth 2.0 for authentication and authorization, and you must configure the OAuth consent screen before you can create an OAuth client ID.
+
+## Available Tools
+
+The Calendar MCP server provides 8 tools including create_event, delete_event, get_event, list_calendars, list_events, respond_to_event, suggest_time, and update_event.
+
+The search results include official Google documentation, GitHub implementations, and enterprise deployment guides for setting up Calendar MCP in various configurations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://app.tactiq.io/#/
+Session: 9769868f-55d5-45b1-9481-1a8f7281a0b3
+Time: 2026-02-18 01:23:46 UTC
+========================================================================
+
+URL: https://app.tactiq.io/#/
+Extraction prompt: Check if this page has transcript content or if it requires login
+
+----------------------------------------
+
+# Analysis: Tactiq Page Content
+
+Based on the provided code, this appears to be a **landing/marketing page, not a transcript page**.
+
+## Key Findings:
+
+**No Transcript Content Present:** The page contains only initialization scripts and styling for:
+- Datadog analytics (`DD_RUM`)
+- Google Tag Manager
+- Typeform widgets
+- Intercom chat support
+
+**Login Requirement Status:** The page does not display any transcript content or login form in the provided source. This is a landing page promoting Tactiq's service: "The #1 Live Captions Recorder for Google Meet and Zoom"
+
+**Conclusion:** To access actual transcripts, users would need to navigate to a different page or log into the application itself. This particular page is designed for marketing and engagement purposes, not content delivery.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

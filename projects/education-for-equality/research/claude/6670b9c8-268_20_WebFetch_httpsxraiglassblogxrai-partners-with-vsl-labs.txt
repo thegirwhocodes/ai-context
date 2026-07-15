@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://xrai.glass/blog/xrai-partners-with-vsl-labs/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:32 UTC
+========================================================================
+
+URL: https://xrai.glass/blog/xrai-partners-with-vsl-labs/
+Extraction prompt: Extract all details about the XRAI and VSL Labs partnership: what it does for sign language, how it works, technical approach, timeline, features, pricing, availability. Full details.
+
+----------------------------------------
+
+# XRAI and VSL Labs Partnership Summary
+
+## What It Does
+The partnership integrates real-time generative AI sign language interpretation with audio-to-subtitle conversion. Users gain "dual-mode access, allowing them to engage deeply with conversations through both visual sign language and real-time subtitles."
+
+## How It Works
+The collaboration combines two technologies:
+1. **VSL Labs' Technology**: Provides real-time generative AI sign language interpretation
+2. **XRAI Glass**: Delivers instantaneous audio-to-subtitle conversion
+
+This fusion creates seamless communication options for deaf and hard of hearing individuals.
+
+## Technical Approach
+The partnership focuses on bridging spoken and sign languages through AI-powered interpretation, enabling simultaneous display of both subtitles and sign language rendering.
+
+## Timeline, Pricing & Availability
+**No specific information provided.** The announcement (September 17, 2024) describes this as a "groundbreaking collaboration" and "pioneering venture" without disclosing launch dates, pricing, or availability details.
+
+## Key Quotes
+- Dan Scarfe (XRAI CEO): "We hope our collaboration will empower the deaf and hard of hearing communities further, providing them with unprecedented tools."
+- Tal Meged (VSL Labs CEO): "This partnership is a significant step towards making communication more inclusive and accessible."
+
+## Goals
+The partners aspire to "break down language barriers" and create "a future where seamless understanding and communication transcend linguistic divides."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

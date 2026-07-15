@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "GitHub" hackathon SCSP defense gov submission winner README 2025
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:14:31 UTC
+========================================================================
+
+Search query: "GitHub" hackathon SCSP defense gov submission winner README 2025
+
+----------------------------------------
+
+Web search results for query: ""GitHub" hackathon SCSP defense gov submission winner README 2025"
+
+Links: [{"title":"GitHub - yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025: This is the Port Sentinel team's submission to the SCSP and AGI House Hackathon (Mar. 2025)!","url":"https://github.com/yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025"},{"title":"GitHub - JessSanChen/SpectreRedTeaming: The Air Force's LLM is supposedly very secure... and we got it to make a few bombs. Agentic LLM jailbreaker. SCSP x AGI House Hackathon Grand Prize Winner. · GitHub","url":"https://github.com/JessSanChen/SpectreRedTeaming"},{"title":"Special Competitive Studies Project · GitHub","url":"https://github.com/scspai"},{"title":"Hackathon - SCSP","url":"https://www.scsp.ai/hackathon/"},{"title":"The AI+ Expo | Hackathon","url":"https://expo.scsp.ai/hackathon/"},{"title":"hackathon-winner · GitHub Topics · GitHub","url":"https://github.com/topics/hackathon-winner"},{"title":"GitHub - yli12313/AI-Expo-Hackathon-2025: This is the Project Perception team's submission to the SCSP and AGI House AI Expo Hackathon - Washington D.C. (Jun. 2025)!","url":"https://github.com/yli12313/AI-Expo-Hackathon-2025"},{"title":"GitHub - amahjoor/Hackathons: compiled list of recurring hackathons. · GitHub","url":"https://github.com/amahjoor/Hackathons"},{"title":"AI Agents for Defense & Gov Hackathon @Washington DC ...","url":"https://app.agihouse.org/events/scsp-agi-hackathon-20241115"},{"title":"For the Love of Code: a summer hackathon for joyful, ridiculous, and wildly creative projects - The GitHub Blog","url":"https://github.blog/open-source/for-the-love-of-code-2025/"}]
+
+Based on the search results, I found relevant information about the SCSP and defense/gov hackathon submissions:
+
+## SCSP x AGI House Hackathon 2025 Grand Prize Winner
+
+The grand prize winner of the SCSP x AGI House Hackathon in Alexandria, VA was SpectreRedTeaming, which won $25,000. The winning project demonstrated an agentic LLM jailbreaker using the Air Force's LLM, with the repository located at [JessSanChen/SpectreRedTeaming](https://github.com/JessSanChen/SpectreRedTeaming).
+
+## Other Notable Submissions
+
+There were other notable submissions to the hackathon as well:
+
+1. **Port Sentinel Team**: This team did not win the hackathon but put in a winning effort. Their submission focused on combining port city vulnerability scanning with maritime port digital twin visualization to provide security insights for port infrastructure.
+
+2. **Project Perception Team**: This team submitted to the SCSP and AGI House AI Expo Hackathon in Washington D.C. in June 2025.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

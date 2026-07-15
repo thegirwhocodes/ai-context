@@ -1,0 +1,164 @@
+========================================================================
+AGENT RESEARCH: Solve Supabase free-tier pause
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:44 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app (Next.js on Vercel). 
+
+PROBLEM: The Supabase project is on the FREE tier, which auto-PAUSES after ~7 days of inactivity. It already paused once and took the entire phone product down (DNS NXDOMAIN, every call failed) until manually resumed. During a live pilot this is unacceptable.
+
+YOUR TASK: Design TWO things:
+1. A Vercel Cron job that pings Supabase regularly (e.g., a tiny query) to keep the project warm and never pause. Read curriculum-app/vercel.json if it exists (else propose one), and any existing app/api/cron routes. Produce: the exact vercel.json cron config (Vercel cron syntax) and the full content of a new route file (e.g., app/api/cron/keepalive/route.ts) that does a trivial authenticated Supabase read and returns ok. Note Vercel cron auth (CRON_SECRET / Authorization header) best practice.
+2. The recommendation + exact steps for moving to a paid Supabase tier (Pro ~$25/mo) so this is permanently solved, and how that interacts with the cron.
+
+Also: confirm whether a free-tier keep-alive cron is actually sufficient (Supabase's pause policy is about inactivity — a periodic query counts as activity). Verify against Supabase docs.
+
+OUTPUT (do NOT edit files, do NOT deploy): exact vercel.json content/edit, the full keepalive route file content, the cron auth approach, and the paid-tier recommendation. Ready to apply.
+
+----------------------------------------
+
+I have everything confirmed. The keep-alive signal must be an actual **database query** (not just an HTTP hit on the dashboard). Here is the complete, ready-to-apply design.
+
+---
+
+## Verification: is a free-tier keep-alive cron actually sufficient?
+
+Yes, with one important caveat. Supabase's official policy ([Production Checklist](https://supabase.com/docs/guides/deployment/going-into-prod)): *"We may pause applications on the Free Plan that exhibit low activity in a 7-day period to save on server resources."* The pause is driven by **database inactivity**, and a periodic query **counts as activity**. Dashboard visits do **not** count — it must hit the Postgres database. So the keepalive route must do a real `select`, which the design below does.
+
+Caveat to flag for a live pilot: the keepalive is a real safety net, but it's a workaround, not a guarantee. If a deploy breaks, the cron is disabled, or Vercel has an outage spanning >7 days of no other DB traffic, the project can still pause. For a **live pilot where downtime = every call failing**, the cron should be treated as belt-and-suspenders behind the Pro upgrade, which is the only thing Supabase actually *guarantees* won't pause ([docs](https://supabase.com/docs/guides/troubleshooting/pausing-pro-projects-vNL-2a): *"Upgrade to Pro to guarantee that we won't pause your project for inactivity"*).
+
+---
+
+## 1. The keep-alive cron
+
+### `vercel.json` (create at `curriculum-app/vercel.json` — none exists today)
+
+```json
+{
+  "crons": [
+    {
+      "path": "/api/cron/keepalive",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}
+```
+
+Notes on the schedule:
+- `0 6 * * *` = once daily at 06:00 UTC. The pause window is 7 days, so daily gives a huge margin (a missed run never gets close to 7 days).
+- Vercel cron schedules run in **UTC**. Daily cadence is supported on all plans including Hobby (Hobby is limited to once-per-day per cron, which this respects). If on Pro, you could go more frequent, but daily is plenty here.
+- Path must be the route path, no domain.
+
+### New route file — full content: `curriculum-app/app/api/cron/keepalive/route.ts`
+
+This does a trivial authenticated DB read against the real `sabi_students` table (used 16× elsewhere in the app, so it's guaranteed to exist) using `head: true` + `count` so **no rows are transferred** — it's the cheapest possible query that still touches Postgres.
+
+```typescript
+import { NextResponse } from "next/server";
+import { createServerClient } from "@/lib/supabase";
+
+// Always run dynamically; never cache. This must hit Postgres on every invocation.
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+export async function GET(request: Request) {
+  // --- Auth: only Vercel Cron (or someone with CRON_SECRET) may trigger this ---
+  const authHeader = request.headers.get("authorization");
+  if (
+    process.env.CRON_SECRET &&
+    authHeader !== `Bearer ${process.env.CRON_SECRET}`
+  ) {
+    return new NextResponse("Unauthorized", { status: 401 });
+  }
+
+  try {
+    const supabase = createServerClient();
+
+    // Cheapest real DB touch: count-only HEAD query, transfers zero rows but
+    // forces a Postgres round-trip, which is what Supabase counts as "activity".
+    const { error, count } = await supabase
+      .from("sabi_students")
+      .select("*", { count: "exact", head: true });
+
+    if (error) {
+      console.error("[keepalive] Supabase query failed:", error.message);
+      return NextResponse.json(
+        { ok: false, error: error.message },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({
+      ok: true,
+      pinged: "sabi_students",
+      count: count ?? 0,
+      ts: new Date().toISOString(),
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "unknown error";
+    console.error("[keepalive] unexpected error:", message);
+    return NextResponse.json({ ok: false, error: message }, { status: 500 });
+  }
+}
+```
+
+It uses the existing `createServerClient()` from `lib/supabase.ts` (service-role), so RLS can't silently make the query a no-op against the DB.
+
+### Cron auth approach (best practice)
+
+Vercel automatically sends `Authorization: Bearer <CRON_SECRET>` on every cron invocation **if** a `CRON_SECRET` env var is set on the project. Best practice:
+
+1. Generate a strong secret: `openssl rand -hex 32`
+2. Add it as a Vercel env var (Production, and Preview if you want previews protected):
+   - `vercel env add CRON_SECRET production`
+   - paste the generated value
+3. The route above rejects any request whose `Authorization` header doesn't match. Without this, the route is a public unauthenticated endpoint anyone could hammer.
+4. **One gotcha specific to this repo:** there is a `middleware.ts` (Clerk). Confirm `/api/cron/keepalive` is not forced through Clerk auth — if Clerk's middleware protects all routes, the cron's `Bearer CRON_SECRET` header won't satisfy Clerk and you'll get a redirect/401 before the route runs. The `middleware.ts` matcher/public-routes config should list `/api/cron/(.*)` (or the api path) as public. (I did not edit it; flagging because it will bite otherwise.)
+
+Note: `CRON_SECRET` is checked only `if` it's set, so the route still works the first deploy before you add the secret — but **add the secret** so it isn't world-open.
+
+---
+
+## 2. Recommendation: move to Supabase Pro (the real fix)
+
+**Recommendation: upgrade to Pro (~$25/mo per project, includes $10 compute credits).** For a live pilot where a pause means every phone call fails with NXDOMAIN, the cron alone is not acceptable as the *only* defense — Pro is the only option Supabase contractually guarantees won't pause for inactivity. $25/mo is trivial against pilot reliability. ([pricing](https://www.metacto.com/blogs/the-true-cost-of-supabase-a-comprehensive-guide-to-pricing-integration-and-maintenance), [Pro pause docs](https://supabase.com/docs/guides/troubleshooting/pausing-pro-projects-vNL-2a))
+
+### Exact steps to upgrade
+1. Go to the Supabase dashboard → select the project (or its org).
+2. Settings → **Billing** (org-level billing) → **Change subscription plan**.
+3. Select **Pro** (~$25/mo). Add a payment method if none on file.
+4. Confirm. The Pro guarantee against inactivity pausing applies immediately; no redeploy or DB migration needed.
+5. (Optional but recommended for a pilot) In project Settings → **Add-ons / Compute**, confirm compute size; the base Pro instance is fine for a pilot. Pro also enables **daily backups** and **7-day PITR-eligible** retention — valuable during a pilot.
+
+Note: the project must currently be **active (resumed)**, not paused, to change the plan. If it's paused, resume it first from the dashboard, then upgrade.
+
+### How Pro interacts with the cron
+- On Pro, the inactivity-pause risk **goes away entirely**, so the cron is no longer load-bearing.
+- **Keep the cron anyway** — it costs nothing (one tiny HEAD query/day) and doubles as a cheap uptime/health canary: if it starts returning 500s in logs, you get early warning that Supabase is unreachable before users hit failed calls. You can route its failures to Sentry (already installed in this repo) for alerting.
+- No conflict: the cron just makes a normal query; Pro doesn't change its behavior.
+
+---
+
+## Summary of what to apply
+
+1. **Create** `curriculum-app/vercel.json` with the `crons` block above.
+2. **Create** `curriculum-app/app/api/cron/keepalive/route.ts` with the full content above.
+3. **Set** `CRON_SECRET` (`openssl rand -hex 32`) as a Vercel env var.
+4. **Verify** `middleware.ts` exempts `/api/cron/(.*)` from Clerk (flagged risk — check before relying on it).
+5. **Upgrade Supabase to Pro** (~$25/mo) — the permanent guarantee; keep the cron as a health canary.
+
+I made no file edits and did not deploy, per the task. The only items needing your accounts are step 3 (env var), step 5 (paid upgrade — confirm before charging), and verifying step 4.
+
+Sources:
+- [Supabase Production Checklist / pause policy](https://supabase.com/docs/guides/deployment/going-into-prod)
+- [Supabase: Pausing Pro-Projects (Pro = no inactivity pause)](https://supabase.com/docs/guides/troubleshooting/pausing-pro-projects-vNL-2a)
+- [Supabase pricing breakdown ($25 Pro)](https://www.metacto.com/blogs/the-true-cost-of-supabase-a-comprehensive-guide-to-pricing-integration-and-maintenance)
+agentId: afdc4727a16af6baf (use SendMessage with to: 'afdc4727a16af6baf' to continue this agent)
+<usage>subagent_tokens: 33477
+tool_uses: 9
+duration_ms: 83706</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

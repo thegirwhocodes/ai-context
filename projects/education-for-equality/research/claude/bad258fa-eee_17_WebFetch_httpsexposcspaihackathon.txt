@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://expo.scsp.ai/hackathon/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:12:20 UTC
+========================================================================
+
+URL: https://expo.scsp.ai/hackathon/
+Extraction prompt: List all past SCSP AI+ Expo hackathon winners, their projects, tracks, prize amounts, and any details about what won. Include 2024 and 2025 results. What are the recurring themes among winning projects?
+
+----------------------------------------
+
+# Past AI+ Expo Hackathon Winners
+
+Based on the provided webpage content, **I cannot provide information about past hackathon winners, their projects, or prize results** for 2024 and 2025.
+
+The webpage focuses exclusively on the **2026 hackathon** details, including:
+- Four competition tracks (Cloud Laboratories, Electric Grid Optimization, Wargaming, and GenAI.mil)
+- Prize structure ($10,000 first place, $5,000 second, $2,500 third per track)
+- Schedule and logistics
+
+The page does reference "Previous AI Expos" in its navigation menu and links to a "past events" section, but the actual historical results, winner names, project descriptions, or prize amounts from 2024-2025 competitions are **not included in this document**.
+
+To obtain that historical information, you would need to access the past events page or contact the organizers directly at hack@scsp.ai or events@scsp.ai.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

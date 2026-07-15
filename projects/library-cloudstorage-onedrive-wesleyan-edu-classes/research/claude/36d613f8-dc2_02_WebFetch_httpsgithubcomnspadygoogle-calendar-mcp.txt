@@ -1,0 +1,53 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/nspady/google-calendar-mcp
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 05:00:55 UTC
+========================================================================
+
+URL: https://github.com/nspady/google-calendar-mcp
+Extraction prompt: Give me the exact, current setup steps for using this MCP server with Cursor. I need: (1) installation method (npx vs install), (2) the exact JSON block to paste into Cursor's mcp.json, (3) how to get the Google OAuth credentials file, (4) where the credentials file should live, (5) any environment variables needed, (6) how to run the first-time auth flow. Quote the README precisely.
+
+----------------------------------------
+
+# Cursor Setup for Google Calendar MCP
+
+## 1. Installation Method
+The README recommends **npx** as the primary approach: `"Use with npx (Recommended)"` for Cursor users.
+
+## 2. Cursor Configuration JSON
+Add this to your Cursor `mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "google-calendar": {
+      "command": "npx",
+      "args": ["@cocal/google-calendar-mcp"],
+      "env": {
+        "GOOGLE_OAUTH_CREDENTIALS": "/path/to/your/gcp-oauth.keys.json"
+      }
+    }
+  }
+}
+```
+
+## 3. Getting Google OAuth Credentials
+Follow these steps from the Google Cloud Setup section:
+- Create a project in Google Cloud Console
+- Enable the Google Calendar API
+- Create OAuth 2.0 credentials selecting `"Desktop app"` as the application type
+- Download the credentials JSON file
+- Add your email as a test user in the OAuth consent screen
+
+## 4. Credentials File Location
+Store the file at an absolute path you can reference in the config above (e.g., `~/.config/google-calendar-mcp/gcp-oauth.keys.json`)
+
+## 5. Environment Variables
+Only `GOOGLE_OAUTH_CREDENTIALS` is required for npx users. The README states: `"When using npx, you **must** specify the credentials file path"`
+
+## 6. First-Time Authentication
+The README instructs: `"Ask Claude to authenticate with the Google Calendar MCP server (e.g., 'Authenticate with Google Calendar'). This step is required before using any calendar tool"`
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

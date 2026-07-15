@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SelfControl app Mac how it works technical PF firewall pfctl kernel blocklist
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:34 UTC
+========================================================================
+
+Search query: SelfControl app Mac how it works technical PF firewall pfctl kernel blocklist
+
+----------------------------------------
+
+Web search results for query: "SelfControl app Mac how it works technical PF firewall pfctl kernel blocklist"
+
+Links: [{"title":"SelfControl App Review: Is It Worth It in 2026?","url":"https://www.browwwser.com/resources/selfcontrol-app-review-2026/"},{"title":"SelfControl","url":"https://selfcontrolapp.com/"},{"title":"GitHub - SelfControlApp/selfcontrol: :skull: Mac app to block your own access to distracting websites etc for a predetermined period of time. It can not be undone by the app or by a restart – you must wait for the timer to run out.","url":"https://github.com/SelfControlApp/selfcontrol/"},{"title":"SelfControl for Mac App Review, Tutorial & Windows Alternative","url":"https://www.cisdem.com/resource/selfcontrol.html"},{"title":"FAQ · SelfControlApp/selfcontrol Wiki · GitHub","url":"https://github.com/selfcontrolapp/selfcontrol/wiki/faq"},{"title":"Running SelfControl from the Terminal","url":"https://github.com/SelfControlApp/selfcontrol/wiki/Running-SelfControl-from-the-Terminal"},{"title":"SelfControl For Mac App Review and Tutorial - FindFocus","url":"https://findfocus.net/selfcontrol-app/"},{"title":"I boosted my productivity on Mac with SelfControl, because I don't have any","url":"https://www.xda-developers.com/boosted-productivty-mac-selfcontrol-because-dont-have-any/"}]
+
+Based on the search results, here's comprehensive information about how SelfControl works technically on macOS:
+
+## How SelfControl Works
+
+SelfControl is a standalone macOS app that blocks access to websites you specify by adding domains to a blocklist, setting a timer (up to 24 hours), and hitting start.
+
+## Technical Implementation
+
+The blocking works at the macOS packet filter firewall level (/etc/pf.conf), where SelfControl writes rules that drop DNS requests and TCP connections to blocked domains at the OS level.
+
+## Irreversible Timer
+
+Once the timer starts, the block cannot be undone. The firewall rules persist at the OS level until the timer expires—deleting the app, restarting your Mac, or reinstalling macOS will not remove the block.
+
+## Scope of Blocking
+
+Because SelfControl modifies the macOS firewall, it blocks domains across every browser and every app, with blocked sites not redirecting to a warning page but the request being killed before it starts.
+
+## Blocklist Configuration
+
+There are no category presets like "block all social media"—if you want to block 15 sites, you're adding 15 domains manually, though you can save your blocklist for reuse. The app has two modes: Blocklist mode where only specified websites are blocked, and Allowlist mode where the entire Internet is blocked except websites added to the Allowlist.
+
+## Additional Technical Details
+
+The source code is on GitHub, so anyone can audit it. SelfControl is a free and open-source application for macOS.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

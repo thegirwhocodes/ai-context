@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai/api-docs
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:00:52 UTC
+========================================================================
+
+URL: https://yarngpt.ai/api-docs
+Extraction prompt: What are the API endpoints? What voices/languages are available? What's the request format? Any rate limits mentioned?
+
+----------------------------------------
+
+# YarnGPT API Summary
+
+**API Endpoint:**
+The documentation specifies one main endpoint: "POST https://yarngpt.ai/api/v1/tts" for text-to-speech conversion.
+
+**Available Voices:**
+The system offers 16 distinct voice options including Idera, Emma, Zainab, Osagie, Wura, Jude, Chinenye, Tayo, Regina, Femi, Adaora, Umar, Mary, Nonso, Remi, and Adam. Each has its own character—ranging from melodic and gentle to bold and resonant.
+
+**Request Format:**
+The TTS endpoint accepts JSON with three parameters: `text` (required, max 2000 characters), `voice` (optional, defaults to Idera), and `response_format` (optional, supporting mp3, wav, opus, or flac formats).
+
+**Rate Limits:**
+The documentation mentions "80/day" for TTS API access, along with separate daily limits for media processing (8/day), URL extraction (100/day), and chunked audio (120/day). All requests require Bearer token authentication via the Authorization header.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

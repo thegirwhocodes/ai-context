@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://hack-nation.devpost.com/rules
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 07:19:25 UTC
+========================================================================
+
+URL: https://hack-nation.devpost.com/rules
+Extraction prompt: What are the submission rules? Can participants use pre-existing code, projects, or IP? Must the project be built from scratch during the hackathon? What are the exact requirements on project origination?
+
+----------------------------------------
+
+I cannot answer your question about submission rules and requirements for pre-existing code based on the provided content. 
+
+The webpage shows a link to "[Rules](https://hack-nation.devpost.com/rules)" in the navigation menu, but the actual rules content is not included in the material provided. To learn whether participants can use pre-existing code, projects, or IP—and what the exact project origination requirements are—you would need to visit that Rules page directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

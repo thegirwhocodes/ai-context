@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: human-in-the-loop approval gate AI agent send email draft never auto-send confir
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:05:04 UTC
+========================================================================
+
+Search query: human-in-the-loop approval gate AI agent send email draft never auto-send confirmation pattern best practice
+
+----------------------------------------
+
+Web search results for query: "human-in-the-loop approval gate AI agent send email draft never auto-send confirmation pattern best practice"
+
+Links: [{"title":"Build a Human-in-the-Loop Email Agent | Nylas CLI","url":"https://cli.nylas.com/guides/build-human-in-loop-email-agent"},{"title":"AI Agent Human-in-the-Loop Patterns for Critical Decisions | CallSphere Blog","url":"https://callsphere.ai/blog/ai-agent-human-in-the-loop-patterns-critical-decisions"},{"title":"Human-in-the-Loop AI Agents: How to Design Approval Workflows for Safe and Scalable Automation - StackAI · AI Agents for the Enterprise","url":"https://www.stackai.com/insights/human-in-the-loop-ai-agents-how-to-design-approval-workflows-for-safe-and-scalable-automation"},{"title":"Tool Approval and Human-in-the-Loop in Microsoft Agent Framework","url":"https://www.devleader.ca/2026/03/11/tool-approval-and-humanintheloop-in-microsoft-agent-framework"},{"title":"Building a ‘Human-in-the-Loop’ Approval Gate for Autonomous Agents - Booboone.com","url":"https://booboone.com/building-a-human-in-the-loop-approval-gate-for-autonomous-agents/"},{"title":"Building a 'Human-in-the-Loop' Approval Gate for Autonomous Agents - geekfence.com","url":"https://geekfence.com/building-a-human-in-the-loop-approval-gate-for-autonomous-agents/"},{"title":"Building a 'Human-in-the-Loop' Approval Gate for Autonomous Agents - MachineLearningMastery.com","url":"https://machinelearningmastery.com/building-a-human-in-the-loop-approval-gate-for-autonomous-agents/"},{"title":"Human-in-the-Loop for AI Agents: Draft→Approve→Execute","url":"https://pub.towardsai.net/human-in-the-loop-for-ai-agents-draft-approve-execute-c7fe0b72b0af"}]
+
+Based on the search results, here are the key findings on human-in-the-loop approval gates for AI agents sending email drafts:
+
+## Core Pattern
+
+An approval gate is a review script that lists pending drafts, shows each one, and waits for the reviewer to type approve, edit, or reject—with no draft sending without explicit approval. A human-in-the-loop email agent is an AI workflow where the model reads incoming mail, classifies it by urgency, and drafts replies, but a human must approve each draft before it sends, with the agent never firing a reply on its own.
+
+## Why This Matters
+
+Per Gartner's 2024 AI Impact Radar, 85% of enterprises will require human oversight for AI-generated external communications by 2026. AI email agents need human approval because LLMs hallucinate, leak context, and lack judgment about tone. Even well-crafted agents can hallucinate recipient addresses or include incorrect information in automated messages, and showing the draft before sending catches these errors before they reach external parties.
+
+## Best Practices
+
+The cron handles the repetitive parts (classify, draft, send) while the human handles the judgment call (approve or reject). The agent generates a draft (email, report, analysis), and the human edits it before it goes out, with the agent learning from the edits over time, reducing the amount of human modification needed—a pattern that works well because humans are faster at editing than creating from scratch.
+
+A key anti-pattern to avoid: approval spam occurs when the agent asks for permission to write the subject line, then asks for permission to draft the body, then asks for permission to select the audience.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

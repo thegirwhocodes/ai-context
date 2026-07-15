@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Antigravity IDE VS Code fork extensions compatibility
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:36:49 UTC
+========================================================================
+
+Search query: Google Antigravity IDE VS Code fork extensions compatibility
+
+----------------------------------------
+
+Web search results for query: "Google Antigravity IDE VS Code fork extensions compatibility"
+
+Links: [{"title":"Getting Started with Google Antigravity | Google Codelabs","url":"https://codelabs.developers.google.com/getting-started-google-antigravity"},{"title":"Google Antigravity IDE: Setup Guide (2026) - Petronella Cybersecurity News","url":"https://petronellatech.com/blog/google-antigravity-ide-setup-guide-2026"},{"title":"Google's Antigravity IDE Sparks Forking Debate -- Visual Studio Magazine","url":"https://visualstudiomagazine.com/articles/2025/11/21/googles-antigravity-ide-sparks-forking-debate.aspx"},{"title":"Google Antigravity supports VS Code extensions, but I found myself needing fewer of them","url":"https://www.xda-developers.com/switched-from-vs-code-to-google-antigravity-dont-need-half-extensions/"},{"title":"Antigravity VS Code Setup Guide: Build a Practical AI IDE Workflow | Jimmy Song","url":"https://jimmysong.io/blog/antigravity-vscode-style-ide/"},{"title":"Setting up Google Antigravity (Coming from VSCode) | AppSoftware","url":"https://www.appsoftware.com/blog/setting-up-google-antigravity-coming-from-vscode"},{"title":"I ditched VS Code and Cursor for Google’s Antigravity, and I am not going back","url":"https://www.xda-developers.com/ditched-vs-code-cursor-google-antigravity-not-going-back/"},{"title":"VS Code × Antigravity Migration Guide — Seamlessly Transition Your Dev Environment to an AI IDE | Antigravity Lab","url":"https://antigravitylab.net/en/articles/editor/vscode-antigravity"},{"title":"Why I Switched From VS Code to Antigravity (and I’m Not Going Back) - DEV Community","url":"https://dev.to/fedtti/why-i-switched-from-vs-code-to-antigravity-and-im-not-going-back-2ml2"},{"title":"Google Antigravity: Enhanced VS Code Fork","url":"https://createaiagent.net/tools/google-antigravity/"}]
+
+Based on the search results, here's what I found about Google Antigravity IDE and VS Code fork extensions compatibility:
+
+## Overview
+Antigravity forks the open-source Visual Studio Code (VS Code) foundation but radically alters the user experience to prioritize agent management over text editing.
+
+## Extension Compatibility
+
+Since Antigravity is a VS Code fork, compatibility is high. Most extensions from the VS Code marketplace work without modification, though extensions that depend on VS Code-specific APIs may have edge cases.
+
+Most widely used VS Code extensions install and function normally, including formatters, linters, Git tooling, container support, and testing frameworks.
+
+## Important Limitations
+
+However, there are some notable restrictions:
+
+- **Microsoft Proprietary Extensions**: The C# Dev Kit extension cannot be used in Google Antigravity. Like Cursor (Anysphere's AI IDE), Antigravity is a fork of VS Code and is therefore considered a third-party IDE and so not licensed to use the C# Dev Kit.
+
+- **Extension Registry**: Antigravity does not use the official registry of extensions: it uses one managed by the Eclipse Foundation called Open VSX Registry.
+
+- **Marketplace Access**: Because Antigravity is a fork rather than the official Microsoft distribution, access to the VS Code Marketplace may not be fully equivalent in all regions or configurations. In cases where direct marketplace access is restricted, extensions need to be installed via alternative registries or VSIX files.
+
+## Recommendation
+While most VS Code extensions work, some report syntax highlighting gaps and extension compatibility issues. Test your critical extensions before migrating.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

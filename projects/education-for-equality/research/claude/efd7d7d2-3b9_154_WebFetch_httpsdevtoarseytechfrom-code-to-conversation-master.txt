@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voi
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:51:04 UTC
+========================================================================
+
+URL: https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8
+Extraction prompt: How do you make outbound calls with Africa's Talking Voice API? Show the Python code for initiating a call. What callback URL format is used? How does the call flow work for outbound calls?
+
+----------------------------------------
+
+# Making Outbound Calls with Africa's Talking Voice API
+
+## Basic Call Initiation
+
+The article demonstrates outbound calls using **PHP**, not Python. Here's the core approach:
+
+```php
+$voice = $AT->voice();
+$results = $voice->call([
+    'from' => $from,        // AT-assigned number
+    'to'   => $to,          // Recipient's number
+    'callStartUrl' => 'https://yourdomain.com/voice/start'
+]);
+```
+
+**Key requirement:** Phone numbers must use international format (e.g., "+256707758612").
+
+## Callback URL Structure
+
+The article specifies that callback URLs follow this pattern:
+
+> "callStartUrl" => 'https://yourdomain.com/ivr/welcome'
+
+Additional webhook types include `callNotificationUrl` for status updates. Callbacks receive POST data containing parameters like `callerNumber`, `isActive`, and `callSessionState`.
+
+## Outbound Call Flow
+
+1. **Initiation**: Application calls the Voice API with recipient details
+2. **Queuing**: Call enters Africa's Talking's queue with status "Queued"
+3. **Webhook Trigger**: System invokes your callStartUrl endpoint
+4. **Response Handling**: Webhook returns XML instructions (Say, GetDigits, etc.)
+5. **Notification**: Call completion triggers callNotificationUrl for logging
+
+The article emphasizes this requires **live credentials**—sandbox mode doesn't support voice calls, and every call incurs real costs.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

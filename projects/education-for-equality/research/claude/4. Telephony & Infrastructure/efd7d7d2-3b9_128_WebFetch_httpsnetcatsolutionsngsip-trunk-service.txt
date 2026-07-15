@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://netcatsolutions.ng/sip-trunk-service/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:45:17 UTC
+========================================================================
+
+URL: https://netcatsolutions.ng/sip-trunk-service/
+Extraction prompt: Find ANY integration instructions, setup guides, SIP credentials format, server addresses, ports, codecs, configuration steps, or technical documentation links
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

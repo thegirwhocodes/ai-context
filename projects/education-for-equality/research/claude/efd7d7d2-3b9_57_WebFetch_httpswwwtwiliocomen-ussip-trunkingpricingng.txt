@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.twilio.com/en-us/sip-trunking/pricing/ng
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:09:00 UTC
+========================================================================
+
+URL: https://www.twilio.com/en-us/sip-trunking/pricing/ng
+Extraction prompt: What are Twilio's SIP trunking rates for Nigeria? Per-minute pricing for inbound and outbound calls.
+
+----------------------------------------
+
+# Twilio SIP Trunking Rates for Nigeria
+
+Based on Twilio's pricing page for Nigeria, here are the current SIP trunking rates:
+
+## Termination (Outbound) Pricing
+
+**Standard Nigeria routes:**
+- Nigeria: **$0.1728/min**
+- Nigeria - Globacom: **$0.1728/min**
+- Nigeria - Mobile: **$0.1614/min**
+
+The page indicates these are "Starting at $0.1614/min" for the general Nigeria termination route.
+
+## Phone Numbers
+
+International numbers (since domestic voice-enabled numbers aren't currently available in Nigeria) start at **$1.15/month**.
+
+## Additional Features
+
+The service includes several features at no extra cost: unlimited call concurrency and secure trunking. Optional add-ons include call recording ($0.0025/min) and SIP Insights Advanced Features ($0.0024/min).
+
+The pricing follows a pay-as-you-go model with no contracts or channel limits, and volume discounts are available for enterprise customers.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

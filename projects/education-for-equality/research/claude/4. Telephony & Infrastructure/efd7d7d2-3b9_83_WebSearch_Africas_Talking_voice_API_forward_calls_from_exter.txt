@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking voice API forward calls from external number toll-free number f
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:53:10 UTC
+========================================================================
+
+Search query: Africa's Talking voice API forward calls from external number toll-free number forwarding to AT virtual number
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking voice API forward calls from external number toll-free number forwarding to AT virtual number"
+
+Links: [{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Voice API – Build smart voice-based solutions easily | Africa’s Talking","url":"https://africastalking.com/voice-api"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/"},{"title":"What you need to build a Call-Center | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2900658-what-you-need-to-build-a-call-center"},{"title":"How does voice billing work? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work"},{"title":"What types of voice phone numbers are available ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available"},{"title":"African Virtual Phone Numbers | Africa Toll Free Numbers & Local DID","url":"https://www.avoxi.com/africa-virtual-phone-numbers/"},{"title":"Africa's Talking Voice - Connectors | Microsoft Learn","url":"https://learn.microsoft.com/en-us/connectors/africastalkingvoice/"}]
+
+Based on the search results, here's what I found about Africa's Talking Voice API related to your query:
+
+## Call Forwarding and Virtual Numbers
+
+Africa's Talking Voice API allows you to direct incoming and outgoing calls to a virtual phone provider or your company's private network. You can send a caller to another phone number or agent when needed, such as for wrong recipients or transfers to different departments.
+
+## Virtual Number Functionality
+
+To build applications with the service, you need a Virtual-number, which you can request through your dashboard - this will be the number that people call. When someone calls your virtual-number, the API sends a POST request to your callback with parameters such as the caller's phone number and a session-id.
+
+## Toll-Free Numbers
+
+When a person dials your virtual number, they are charged normal call rates for calling unless you have a toll-free number. Toll Free numbers are where the user is not charged but you as a client gets billed for incoming calls.
+
+The search results show that Africa's Talking Voice API supports call forwarding to virtual numbers and offers toll-free options, though the specific technical implementation details for forwarding external calls would require consulting their official API documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

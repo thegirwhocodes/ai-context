@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: macOS Screen Time API app blocker Sequoia FamilyControls DeviceActivity Sonoma a
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:32 UTC
+========================================================================
+
+Search query: macOS Screen Time API app blocker Sequoia FamilyControls DeviceActivity Sonoma app category shield 2026
+
+----------------------------------------
+
+Web search results for query: "macOS Screen Time API app blocker Sequoia FamilyControls DeviceActivity Sonoma app category shield 2026"
+
+Links: [{"title":"A Developer’s Guide to Apple’s Screen Time APIs (FamilyControls, ManagedSettings, DeviceActivity) | by Julius Brussee | Medium","url":"https://medium.com/@juliusbrussee/a-developers-guide-to-apple-s-screen-time-apis-familycontrols-managedsettings-deviceactivity-e660147367d7"},{"title":"Screen Time Technology Frameworks | Apple Developer Documentation","url":"https://developer.apple.com/documentation/screentimeapidocumentation"},{"title":"Managed Settings | Apple Developer Forums","url":"https://developer.apple.com/forums/tags/managed-settings?page=2&sortBy=oldest"},{"title":"SwiftUI Tutorial: iOS App Blocker with Screen Time APIs | by JC | Medium","url":"https://medium.com/@jc_builds/building-a-powerful-ios-app-blocker-with-screen-time-apis-the-complete-guide-f6272bd00fc4"},{"title":"Difficulty blocking and scheduling with the Screen Time API","url":"https://developer.apple.com/forums/thread/766772"},{"title":"Using Screen Time API to block apps for a specified time","url":"http://pedroesli.com/2023-11-13-screen-time-api/"},{"title":"ScreenTime API on non-Family Shari… | Apple Developer Forums","url":"https://developer.apple.com/forums/thread/681780"},{"title":"Family Controls | Apple Developer Forums","url":"https://developer.apple.com/forums/tags/family-controls?page=2"},{"title":"Screen Time API. Hello, in this article I will share… | by Ezgi Üstünel | Medium","url":"https://medium.com/@ezgiustunel/screen-time-api-d1110751d2ce"},{"title":"GitHub - kingstinct/react-native-device-activity: Provides direct access to Apples Screen Time, Device Activity and Shielding APIs · GitHub","url":"https://github.com/kingstinct/react-native-device-activity"}]
+
+Based on the search results, here's comprehensive information about the macOS Screen Time API and related app blocking features:
+
+## Screen Time API Frameworks
+
+ManagedSettings sets up the actual block, while DeviceActivity controls when that block is turned on and off. The main frameworks are FamilyControls, ManagedSettings, and DeviceActivity.
+
+## Key Components
+
+**FamilyControls:** FamilyControls is your gateway to understanding what the user wants to manage, providing authorization—the mechanism to request permission from the user to manage their app and web activity. FamilyControls provides UI components (FamilyActivityPicker) that allow users to easily select specific applications, categories of applications (like "Social Media" or "Games"), and websites.
+
+**ManagedSettings:** ManagedSettings is the enforcer framework that lets you define the actual rules once you know what the user wants to restrict. ManagedSettings lets you shield apps & websites by preventing selected apps from being launched or shielding specific web domains in Safari.
+
+**DeviceActivity:** DeviceActivity determines when the rules defined in ManagedSettings should be active, allowing you to schedule restrictions by defining specific time intervals during which the restrictions are enforced.
+
+## Authorization Requirements
+
+Before writing code using these APIs, you need special permission from Apple—an entitlement. You must apply for the com.apple.developer.family-controls entitlement through Apple's developer portal.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

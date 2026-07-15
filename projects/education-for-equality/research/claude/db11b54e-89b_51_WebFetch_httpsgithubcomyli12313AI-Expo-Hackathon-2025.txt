@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/yli12313/AI-Expo-Hackathon-2025
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:01 UTC
+========================================================================
+
+URL: https://github.com/yli12313/AI-Expo-Hackathon-2025
+Extraction prompt: What was the project Project Perception built? What problem did it solve? What tech stack? Was the team a winner? Quote the README in detail. Include any team member names.
+
+----------------------------------------
+
+# Project Perception: AI Expo Hackathon Submission
+
+## What It Built
+Project Perception is "a video analysis platform designed for interrogation and surveillance scenarios" that leverages computer vision to analyze video content.
+
+## Problem Solved
+The platform addresses the need for automated analysis of human behavior in video by detecting emotions, eye blinks, and objects simultaneously, providing investigators and analysts with insights they might miss manually.
+
+## Key Features
+- Real-time emotion detection via webcam
+- Automated video upload and analysis capabilities
+- Object recognition using YOLOv8
+- Video playback and historical review
+- AI chatbot for querying results
+
+## Technology Stack
+The backend uses "Python 3.12, Flask, OpenCV, DeepFace, YOLOv8 (ultralytics), Torch, Pandas, NumPy, OpenAI API" with a frontend built on "HTML5, CSS3...Vanilla JavaScript, Font Awesome."
+
+## Team Members
+- Joshua John
+- Yue (Michelle) Lei
+- Yingquan Li
+
+## Competition Status
+The README does not indicate whether the team won. It states they "tried really hard and built a cool project; we will try hard again next time"—suggesting the submission was completed but results weren't documented in this repository.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

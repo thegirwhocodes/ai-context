@@ -1,0 +1,51 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signglasses.com/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:24 UTC
+========================================================================
+
+URL: https://www.signglasses.com/
+Extraction prompt: Extract ALL information about this product: what it does, how it works technically, pricing, availability, features, who made it, founding date, team background, supported languages, hardware specs. Be exhaustive.
+
+----------------------------------------
+
+# SignGlasses Product Overview
+
+## What It Does
+SignGlasses provides "smart glasses with sign language interpreting and captioning." The platform delivers real-time interpretation and captions directly through wearable technology, enabling communication access across education, workplace, and venue settings.
+
+## How It Works Technically
+- **Display Method**: "Interpretation or captions are displayed over your environment following your every glance"
+- **Connectivity Options**: "Stream interpretation live, or save pre-recorded media on device for synced interpretation without Wi-Fi"
+- **Hardware**: Cutting-edge smart glasses that can be configured with prescription lenses if needed
+- **Portability**: Lightweight design enabling diverse settings
+
+## Features
+- Two-way communication (users can sign back to interpreters)
+- Platform includes scheduling tools, user management, interpreter network, and study tools
+- Works via SignGlasses app or preferred video conferencing platforms
+- Customizable captions (size, color preferences)
+- Instant transcript generation
+
+## Services Offered
+**Interpreting Services**: Certified interpreters covering educational, business, medical, and legal settings with background checks and compliance assurance
+
+**Captioning Services**: Industry-leading captioners for education, corporate events, web conferencing, and live streams with effortless platform integration
+
+## Pricing & Availability
+No pricing information provided in source material.
+
+## Team, Founding, Background
+No specific founding date, team credentials, or company background disclosed in the available content.
+
+## Supported Languages
+Not specified in source material.
+
+## Hardware Specifications
+- Optional prescription lenses
+- Lightweight and portable design
+- No detailed technical specifications provided
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

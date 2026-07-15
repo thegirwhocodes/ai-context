@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Canva Connect API create presentation slides programmatically 2026
+Session: 1b27663d-8ea5-4b35-8186-373ddb166724
+Time: 2026-04-15 22:21:21 UTC
+========================================================================
+
+Search query: Canva Connect API create presentation slides programmatically 2026
+
+----------------------------------------
+
+Web search results for query: "Canva Connect API create presentation slides programmatically 2026"
+
+Links: [{"title":"How to use Canva's APIs - Canva Help Center","url":"https://www.canva.com/help/canva-api/"},{"title":"Canva Connect APIs - Canva Connect APIs Documentation","url":"https://www.canva.dev/docs/connect/"},{"title":"Create design - Designs - Canva Connect APIs Documentation","url":"https://www.canva.dev/docs/connect/api-reference/designs/create-design/"},{"title":"Smarter design, connected content: Canva’s biggest API update yet","url":"https://www.canva.com/newsroom/news/new-apis-data-connectors/"},{"title":"This self-hosted presentation tool does everything Canva does, and it costs nothing","url":"https://www.xda-developers.com/self-hosted-free-presentation-tool-does-everything-canva-does/"},{"title":"AI Presentation Maker: Create presentations with AI | Canva","url":"https://www.canva.com/create/ai-presentations/"},{"title":"The 2026 Guide to AI Presentation Makers: Gamma, Tome, Beautiful.ai & Canva | Nerd Level Tech","url":"https://nerdleveltech.com/the-2026-guide-to-ai-presentation-makers-gamma-tome-beautifulai-canva"},{"title":"Create a presentation with Canva AI - Canva Help Center","url":"https://www.canva.com/help/using-magic-presentations/"},{"title":"Top 7 Alternatives to Gamma for AI Presentations in 2026 | 2Slides Blog","url":"https://2slides.com/blog/best-gamma-alternatives-ai-presentations-2026"},{"title":"Canva","url":"https://www.canva.com/developers/reach-beyond/"}]
+
+## Search Results for Canva Connect API Presentation Slides 2026
+
+Based on the web search results, here's what I found about using Canva's Connect API to create presentation slides programmatically:
+
+### Canva Connect APIs Overview
+
+The Connect APIs enable third-party developers to programmatically access and embed key Canva capabilities off-platform. Anyone can use the Connect APIs free of charge to build integrations that will bring Canva functionality into another platform, system, or tool.
+
+### Creating Presentations Programmatically
+
+With an integration you can upload your assets to Canva, programmatically create designs for your users to edit, and then export the finished designs back to your system. A presentation lets you create and collaborate for presenting to an audience.
+
+### Advanced Features
+
+Developers can build apps that programmatically read and update the layout and contents of a Canva design, including the size, position, and structure of individual elements, which allows apps to help users align content, adjust layouts, provide design feedback, or apply suggested edits with a single click. Additionally, with Data Connectors, apps can now bring data into Canva from external data sources like CRMs and spreadsheets, supporting dynamic content like charts, personalization at scale, and new ways to guide users through the creative process.
+
+### Getting Started
+
+You can follow the Quickstart to get started with a Canva-created app that demonstrates some of the main API features, and Canva has created a Starter Kit repository that includes an example web app which demonstrates some of the Connect APIs' main features.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

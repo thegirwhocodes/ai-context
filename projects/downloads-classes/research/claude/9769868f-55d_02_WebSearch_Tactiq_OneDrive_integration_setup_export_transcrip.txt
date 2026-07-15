@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq OneDrive integration setup export transcripts 2026
+Session: 9769868f-55d5-45b1-9481-1a8f7281a0b3
+Time: 2026-02-18 01:43:09 UTC
+========================================================================
+
+Search query: Tactiq OneDrive integration setup export transcripts 2026
+
+----------------------------------------
+
+Web search results for query: "Tactiq OneDrive integration setup export transcripts 2026"
+
+Links: [{"title":"Tactiq Integrations | Tactiq Help Center","url":"https://help.tactiq.io/en/collections/3091175-tactiq-integrations"},{"title":"How to download your Tactiq meeting transcript | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9784666-how-to-download-your-tactiq-meeting-transcript"},{"title":"Tactiq Pricing Review 2026: Plans, Limits, and The Best Alternative","url":"https://meetgeek.ai/blog/tactiq-pricing"},{"title":"OneDrive Version History: What it is & How to Use it","url":"https://tactiq.io/learn/onedrive-version-history-what-it-is-how-to-use-it"},{"title":"How to download your meeting report in Tactiq | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9710168-how-to-download-your-meeting-report-in-tactiq"},{"title":"Tactiq.io - AI Meeting Transcripts for Google Meet, Zoom & Teams","url":"https://tactiq.io/"},{"title":"How to upload video, audio, and transcripts to Tactiq | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9546387-how-to-upload-video-audio-and-transcripts-to-tactiq"},{"title":"Tactiq Pricing: Start with 10 Free Monthly Transcripts","url":"https://tactiq.io/buy"},{"title":"How To Guides | Tactiq Help Center","url":"https://help.tactiq.io/en/collections/3100542-how-to-guides"},{"title":"My Honest Tactiq AI Review & 5 Better Alternatives (2026) - tl;dv","url":"https://tldv.io/blog/tactiq-alternatives/"}]
+
+Based on the search results, here's what I found about Tactiq's OneDrive integration and exporting transcripts:
+
+## OneDrive Integration Setup
+
+Tactiq allows you to connect your OneDrive account so Tactiq can save your transcripts and AI outputs directly to your storage. After connecting OneDrive, you can control how transcripts are saved by opening the OneDrive settings under Integration and turning on "Automatically save after meeting."
+
+## How It Works
+
+Tactiq saves meeting transcripts directly to OneDrive as Word files, and OneDrive handles version tracking as notes are updated, summaries are added, or follow-ups are written. This keeps meeting records accurate over time without manual downloads, duplicate files, or copy-paste work.
+
+## Exporting Transcripts
+
+To download a transcript, go to the transcript page and choose one of the download options at the top. You can export your transcript as either a PDF or a text file. Both formats include the meeting name, date, duration, speaker names, highlights, and the full transcript.
+
+Tactiq also supports using Workflows with OneDrive to automatically send transcripts and AI outputs from your workflows to OneDrive.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

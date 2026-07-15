@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Fabien Roger Anthropic researcher AI control alignment
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:08:36 UTC
+========================================================================
+
+Search query: Fabien Roger Anthropic researcher AI control alignment
+
+----------------------------------------
+
+Web search results for query: "Fabien Roger Anthropic researcher AI control alignment"
+
+Links: [{"title":"Fabien Roger - MATS Mentor","url":"https://www.matsprogram.org/mentor/roger"},{"title":"Fabien Roger","url":"https://scholar.google.com/citations?user=La75jqEAAAAJ&hl=en"},{"title":"Fabien Roger — AI Alignment Forum","url":"https://www.alignmentforum.org/users/fabien-roger"},{"title":"Introducing the Anthropic Fellows Program","url":"https://alignment.anthropic.com/2024/anthropic-fellows-program/"},{"title":"Fabien Roger | FAR.AI","url":"https://www.far.ai/about/people/fabien-roger"},{"title":"ALIGNMENT FAKING IN LARGE LANGUAGE MODELS","url":"https://assets.anthropic.com/m/983c85a201a962f/original/Alignment-Faking-in-Large-Language-Models-full-paper.pdf"},{"title":"Towards training-time mitigations for alignment faking in RL","url":"https://alignment.anthropic.com/2025/alignment-faking-mitigations/"},{"title":"Fabien Roger","url":"https://www.lesswrong.com/users/fabien-roger"},{"title":"Alignment Science Blog","url":"https://alignment.anthropic.com/"},{"title":"Modifying LLM Beliefs with Synthetic Document Finetuning","url":"https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/"}]
+
+Based on the search results, here's what I found about Fabien Roger:
+
+## Background and Role
+
+Fabien Roger is an AI safety researcher at Anthropic and previously worked at Redwood Research. His research focuses on AI control and dealing with alignment faking.
+
+## Research Focus
+
+Roger's work centers on critical AI safety challenges:
+
+- **Alignment Faking**: Alignment faking occurs when a misaligned AI acts aligned during training to avoid modification. He co-authored a major paper on this topic with researchers from Anthropic and Redwood Research.
+
+- **AI Control**: His research explores methods to ensure advanced AI systems remain safe and controllable.
+
+- **Model Organisms Research**: Roger contributes to research creating model organisms of misalignment to better understand how alignment failures might occur.
+
+## Research Contributions
+
+Roger co-authored a 2025 paper with Evan Hubinger on training-time mitigations for alignment faking in reinforcement learning, with both authors at Anthropic. He has also contributed to research on modifying LLM beliefs, AI evaluation methods, and AI system oversight.
+
+Roger is recognized as a mentor for Anthropic's AI safety programs and has published extensively in the AI alignment research community.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

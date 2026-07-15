@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner GEX44 GPU dedicated server price 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-07 22:31:17 UTC
+========================================================================
+
+Search query: Hetzner GEX44 GPU dedicated server price 2026
+
+----------------------------------------
+
+Web search results for query: "Hetzner GEX44 GPU dedicated server price 2026"
+
+Links: [{"title":"GEX44","url":"https://www.hetzner.com/dedicated-rootserver/gex44/"},{"title":"GPU Server GEX44 > hetzner.com, #128304, EUR 184.00/mo.","url":"https://www.whtop.com/plans/hetzner.com/128304"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"GPU Server – Possible configurations and add-ons - Hetzner Docs","url":"https://docs.hetzner.com/robot/dedicated-server/server-lines/gpu-server/"},{"title":"German data center giant hikes prices up to 37% starting April 1 — Hetzner cites rising hardware costs for price increases | Tom's Hardware","url":"https://www.tomshardware.com/tech-industry/hetzner-to-raise-prices-by-up-to-37-percent-from-april-1"},{"title":"Best GPU server hosting [Top 4 for 2026]","url":"https://www.liquidweb.com/gpu/best-gpu-server-hosting/"},{"title":"Why Is Hetzner Raising Cloud Prices in 2026 — and What Should You Do Before April? - PUPUWEB","url":"https://pupuweb.com/why-is-hetzner-raising-cloud-prices-in-2026-and-what-should-you-do-before-april/"},{"title":"Make a giant leap forward with the new GPU server GEX44","url":"https://www.hetzner.com/news/new-gpu-server/"},{"title":"GEX44 (Nvidia RTX 4000) Dedicated Server from Hetzner (hetzner.com)","url":"https://looking.house/companies/hetzner-com/dedicated-servers/gex44-nvidia-rtx-4000"},{"title":"Server with GPU: for your AI and machine learning projects.","url":"https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"}]
+
+Based on the search results, here's the pricing information for the Hetzner GEX44 GPU dedicated server in 2026:
+
+## Current Pricing
+
+As of February 13, 2026, the GEX44 GPU Server from Hetzner is priced at EUR 184.00 per month, with a one-time setup fee of EUR 79.00.
+
+## Important Price Increase Coming
+
+However, there's a significant price increase scheduled: GPU server pricing on the GEX44 will jump from €182.30 to €212.30 starting April 1, 2026. This represents approximately a 16.4% increase from the current pricing.
+
+## Server Specifications
+
+The GEX44 features a powerful NVIDIA RTX 4000 SFF Ada generation graphics card with 20 GB GDDR6 ECC graphics memory, making it suitable for AI and machine learning workloads.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

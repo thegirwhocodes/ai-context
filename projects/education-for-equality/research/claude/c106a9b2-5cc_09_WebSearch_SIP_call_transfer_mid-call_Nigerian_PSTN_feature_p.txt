@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SIP call transfer mid-call Nigerian PSTN feature phone auto-answer carrier hando
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 07:49:03 UTC
+========================================================================
+
+Search query: SIP call transfer mid-call Nigerian PSTN feature phone auto-answer carrier handoff latency
+
+----------------------------------------
+
+Web search results for query: "SIP call transfer mid-call Nigerian PSTN feature phone auto-answer carrier handoff latency"
+
+Links: [{"title":"SIP and PSTN Transfers - Daily | API documentation","url":"https://docs.daily.co/guides/products/dial-in-dial-out/transfers"},{"title":"SIP Call Transfer and Call Forwarding Supplementary Services - Cisco","url":"https://www.cisco.com/c/en/us/td/docs/ios/12_2/12_2y/12_2yt11/feature/guide/ftsipcal.html"},{"title":"Configuring Call Transfer and Forward > Cisco CallManager Express VoIP Call Processing Features | Cisco Press","url":"https://www.ciscopress.com/articles/article.asp?p=401648&seqNum=9"},{"title":"Causes of Dialer Latency and How to Minimize Your Delay | Bearworks","url":"https://www.bearworks.com/post/causes-of-dialer-latency-and-how-to-minimize-your-delay"},{"title":"SIP-based call handoff technique between networks","url":"https://inventions.techventures.columbia.edu/technologies/sip-based-call--M08-094"},{"title":"Call Transfer via SIP REFER | Twilio","url":"https://www.twilio.com/docs/sip-trunking/call-transfer"},{"title":"SIP Trunking | PSTN Calling From Any Phone System | Coeo Solutions","url":"https://www.coeosolutions.com/solutions/cloud-communication/sip-trunking/"},{"title":"Nigeria SIP Trunking | Global Call Forwarding","url":"https://www.globalcallforwarding.com/sip-trunking/nigeria-sip-trunking/"},{"title":"RFC 5589 - Session Initiation Protocol (SIP) Call Control - Transfer","url":"https://datatracker.ietf.org/doc/html/rfc5589"},{"title":"International SIP Trunking: Guide to Global Call Connectivity for Businesses","url":"https://rockydialer.com/blog/international-sip-trunking-guide-to-global-call-connectivity/"}]
+
+I've completed the web search for your query about SIP call transfer mid-call Nigerian PSTN feature phone auto-answer carrier handoff latency. Here's what I found:
+
+## Key Findings:
+
+**SIP Call Transfer Mechanisms:**
+SIP extensions such as REFER and Replaces are used to provide a number of transfer services including blind transfer, consultative transfer, and attended transfer. The SIP Call Transfer feature introduces the ability of SIP gateways to initiate attended call transfers, beginning when the originator establishes a call with the recipient, and the user uses hookflash to get a second dial tone and then enters the final-recipient's number.
+
+**Carrier Handoff and Latency:**
+High Post Dial Delay (PDD) can indicate slow carrier handoff. Check carrier latency metrics: Look at Answer-Seizure Ratio (ASR) and Average Call Setup Time (ACST) in carrier logs, and monitor SIP signaling delays using sngrep or Wireshark.
+
+**Nigerian PSTN Context:**
+Nigeria SIP trunking services offer high-definition voice calls with low latency and jitter, compatibility with both on-premise and cloud-based PBX systems, and local Nigerian caller ID support.
+
+**International Call Flow Challenges:**
+For a SIP provider to offer high quality service they must have strong interconnects with local carriers in every country they serve, and if a provider has poor domestic termination partners users will experience dropped calls when the hand off between the international network and the local network fails.
+
+The search results cover general SIP transfer mechanisms and latency considerations, though specific information about feature phone auto-answer behavior on Nigerian PSTN networks was not extensively detailed in the available sources.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,337 @@
+========================================================================
+AGENT RESEARCH: Research tools for sharing Flask app
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 11:38:19 UTC
+========================================================================
+
+I have a Flask web app running on localhost:5001 that streams video via WebRTC and uses SocketIO for real-time events. I need to share it publicly without modifying the code.
+
+Research ALL apps/software/services that can expose a local Flask app to the internet or help demo it remotely. Categories:
+
+**1. Tunneling services (expose localhost to public URL):**
+- ngrok (free/paid tiers, latency, WebSocket support)
+- Cloudflare Tunnel / cloudflared (free quick tunnels, named tunnels)
+- Tailscale Funnel (permanent URL, but has network interception issues on macOS)
+- bore (Rust-based, self-hosted option)
+- localtunnel (npm)
+- Serveo (SSH-based)
+- Pinggy
+- localhost.run
+- Telebit
+- PageKite
+- Expose (Laravel-based but works for any HTTP)
+- LocalXpose
+- Loophole
+
+For each: free tier limits, WebSocket support, latency, ease of setup, macOS compatibility.
+
+**2. Reverse proxy / VPS deployment (run it on a server):**
+- Deploy Flask to a $5 VPS (DigitalOcean, Vultr, Hetzner) with nginx reverse proxy
+- Railway.app
+- Render.com
+- Fly.io
+- Replit
+- PythonAnywhere
+
+The app needs camera access which only works locally, so research which of these could work as a tunnel relay (signaling only, with WebRTC video going P2P).
+
+**3. Screen sharing / streaming alternatives:**
+- OBS + YouTube/Twitch stream of the demo
+- Discord screen share
+- Zoom screen share
+- Google Meet
+- Loom recording
+- Can any of these show the localhost dashboard to remote viewers?
+
+**4. Mobile access tools:**
+- Can phones on the same WiFi access http://LOCAL_IP:5001 directly?
+- Any apps that make this easier (like Fing, or specific browser settings)?
+
+**5. QR code generators:**
+- Tools to generate a QR code for the public URL so demo attendees can scan and view
+
+Give me a clear ranked recommendation for: "I want someone across the room (or across the internet) to see my Dactyl dashboard live, without touching the code."
+
+----------------------------------------
+
+I'll research all of these categories thoroughly. This is a general technical question unrelated to the E4E project, so I'll skip the project context recovery and go straight to the research.
+
+Let me start by understanding your setup better, then I'll compile a comprehensive analysis.
+
+**Research complete. Here is the full breakdown:**
+
+---
+
+# Exposing a Local Flask + WebRTC + SocketIO App Publicly
+
+## 1. Tunneling Services (Expose localhost to a public URL)
+
+### ngrok — The Default Choice
+- **Free tier**: 1 static domain (e.g., `your-name.ngrok-free.app`), 20 connections/minute rate limit, 1 online agent. No bandwidth cap listed but throttled on free.
+- **Paid**: Starts at $8/mo ("Personal") for 3 static domains, no rate-limit pain, custom domains, IP restrictions.
+- **WebSocket/SocketIO support**: Full support. ngrok passes WebSocket upgrade headers correctly. SocketIO works out of the box.
+- **WebRTC**: Works for signaling (SocketIO). The actual media goes P2P via ICE/STUN/TURN, so ngrok only needs to relay the signaling channel — which it does fine.
+- **Latency**: Typically 30-80ms added (US servers). Negligible for signaling; doesn't affect media since WebRTC media is P2P.
+- **macOS**: Native binary, `brew install ngrok`, works immediately. No kernel extensions or network interception.
+- **Setup**: `ngrok http 5001` — one command, gives you a public URL in 2 seconds.
+- **Gotcha**: Free tier shows an interstitial "ngrok" warning page on first visit. Paid removes it. You can also pass `ngrok http 5001 --domain your-name.ngrok-free.app` to use your free static domain.
+
+### Cloudflare Tunnel (cloudflared) — Best Free Option for Persistent Use
+- **Quick tunnels (free, no account)**: `cloudflared tunnel --url http://localhost:5001` — gives a random `*.trycloudflare.com` URL. No sign-up required. No rate limits documented. URL changes every time you restart.
+- **Named tunnels (free with Cloudflare account)**: Permanent subdomain on your domain, managed via dashboard. Requires a domain on Cloudflare (free plan works).
+- **WebSocket support**: Full native support. Cloudflare explicitly supports WebSocket proxying.
+- **SocketIO**: Works. You may need to set the `--http2-origin` flag or ensure polling transport works (SocketIO tries polling first, then upgrades to WS). Generally fine out of the box.
+- **WebRTC signaling**: Works perfectly for the signaling channel.
+- **Latency**: Cloudflare's edge network means very low latency (often under 30ms to nearest PoP). Better than ngrok for global audiences.
+- **macOS**: `brew install cloudflared`. No kernel extensions, no network interception.
+- **Setup**: One command for quick tunnel. ~5 minutes for named tunnel with a Cloudflare account.
+- **Gotcha**: Quick tunnel URLs are long random strings. Named tunnels require owning a domain.
+
+### Tailscale Funnel — Worst Choice for Your Use Case
+- **What it does**: Exposes a Tailscale node to the public internet via `https://your-machine.tail-net-name.ts.net`.
+- **Free tier**: 3 users, 100 devices. Funnel is included.
+- **WebSocket support**: Works through HTTPS proxy.
+- **macOS problems**: Tailscale on macOS uses a userspace networking mode or system extension. Known issues with network interception — it can interfere with other VPN software, and Funnel specifically requires the Tailscale daemon to intercept traffic on ports 443/8443/10000 only. You cannot pick port 5001.
+- **Setup**: Requires installing Tailscale, logging in, enabling Funnel in ACLs, then `tailscale funnel 5001`. More steps than ngrok/cloudflared.
+- **Verdict**: Avoid. Over-engineered for a demo, macOS issues are real, port restrictions are annoying.
+
+### bore — Lightweight, Self-Hosted
+- **What it is**: Rust-based tunneling tool. You can use the public server (`bore.pub`) or self-host.
+- **Free**: Fully free and open source. Public relay at `bore.pub` has no documented limits.
+- **WebSocket support**: Passes raw TCP, so yes — WebSocket upgrade works.
+- **Setup**: `brew install bore-cli`, then `bore local 5001 --to bore.pub`. Gives you `bore.pub:RANDOM_PORT`.
+- **Downsides**: No HTTPS (raw TCP only on public server). No custom domains. Random port number. WebRTC camera access requires HTTPS in modern browsers — so bore alone won't work for the camera page unless the viewer uses `localhost` or you add your own TLS termination.
+- **Verdict**: Not suitable for WebRTC apps that need HTTPS for `getUserMedia()`.
+
+### localtunnel (npm) — Simple but Unreliable
+- **Setup**: `npx localtunnel --port 5001`. Gives `*.loca.lt` URL.
+- **Free**: Completely free, open source, public relay.
+- **WebSocket support**: Yes, but flaky. Known SocketIO issues with long-polling fallback.
+- **Reliability**: The public server (`loca.lt`) frequently goes down or is overloaded. Connection drops are common.
+- **HTTPS**: Yes, provides HTTPS URL.
+- **Verdict**: Fine for a 5-minute test. Not reliable enough for a demo.
+
+### Serveo — SSH-Based, Zero Install
+- **Setup**: `ssh -R 80:localhost:5001 serveo.net`. No software to install at all.
+- **Free**: Completely free.
+- **WebSocket support**: Supported.
+- **HTTPS**: Yes, provides HTTPS URL.
+- **Reliability**: The service has had extended outages (was down for months in 2020-2021). Currently operational but no SLA.
+- **macOS**: Works anywhere SSH works — fully compatible.
+- **Verdict**: Great for emergencies when you can't install anything. Don't rely on it.
+
+### Pinggy — Newer, Reliable
+- **Setup**: `ssh -p 443 -R0:localhost:5001 a.pinggy.io`. No install needed.
+- **Free tier**: 60-minute session limit, then URL changes. 1 Mbps bandwidth. Random subdomain.
+- **Paid**: $2.50/mo for persistent URLs, higher bandwidth.
+- **WebSocket support**: Yes, full support.
+- **HTTPS**: Yes.
+- **macOS**: SSH-based, works everywhere.
+- **Verdict**: Good alternative to Serveo with better uptime. Free tier's 60-minute limit is tight for a demo.
+
+### localhost.run — SSH-Based, Minimal
+- **Setup**: `ssh -R 80:localhost:5001 localhost.run`
+- **Free**: Yes, but URLs rotate. Rate limited.
+- **WebSocket**: Supported.
+- **Verdict**: Similar to Serveo. Works in a pinch. Not for anything critical.
+
+### Telebit — Discontinued/Unmaintained
+- **Status**: The GitHub repo hasn't been updated since 2020. Public relay may not be operational.
+- **Verdict**: Skip.
+
+### PageKite — Old but Stable
+- **Setup**: Python-based. `pagekite.py 5001 your-name.pagekite.me`
+- **Free**: 31-day trial, then paid (~$3/mo for 2.5GB/month).
+- **WebSocket**: Supported.
+- **macOS**: Works via Python.
+- **Verdict**: Unnecessarily complex for a demo. ngrok/cloudflared are strictly better.
+
+### Expose (Beyond Code) — Laravel Ecosystem
+- **What it is**: PHP-based tunneling, primarily designed for Laravel Valet.
+- **Free**: Open source, self-hostable. Public relay requires subscription ($10/mo).
+- **WebSocket**: Supported.
+- **Verdict**: Wrong ecosystem. Skip unless you're already a Laravel user.
+
+### LocalXpose — Feature-Rich Alternative
+- **Setup**: Download binary, `loclx tunnel http --to localhost:5001`
+- **Free**: 5 tunnels, random subdomains, 50 connections.
+- **Paid**: $6/mo for custom domains, more connections.
+- **WebSocket**: Supported.
+- **HTTPS**: Yes.
+- **macOS**: Binary available.
+- **Verdict**: Viable but no advantage over ngrok. Smaller company, less documentation.
+
+### Loophole — Privacy-Focused
+- **Setup**: Binary download, `loophole http 5001`
+- **Free**: Basic tunnels, random subdomain.
+- **WebSocket**: Supported.
+- **HTTPS**: Yes, with automatic TLS.
+- **Verdict**: Works but tiny user base. Less battle-tested.
+
+---
+
+## 2. Reverse Proxy / VPS Deployment
+
+### Important Note for Your App
+Your app uses the local camera via `getUserMedia()`. This means the **browser accessing the camera must be on the machine with the camera**. A VPS deployment would only work if:
+- The VPS hosts the **signaling server** (Flask + SocketIO)
+- The **camera client** runs on your local machine's browser and connects to the signaling server
+- The **viewer client** connects to the signaling server and receives video via WebRTC P2P
+
+If your app is designed this way (camera browser -> signaling server -> viewer browser), then VPS deployment works. If the Flask app itself tries to access the camera (server-side), that won't work remotely.
+
+For a tunnel approach, this is moot — Flask stays on your laptop where the camera is, and the tunnel just exposes the URL.
+
+### $5 VPS + nginx (DigitalOcean / Vultr / Hetzner)
+- **Cost**: $4-6/mo.
+- **Setup time**: 30-60 minutes (provision VPS, install Python/nginx, configure SSL with Let's Encrypt, deploy code, set up systemd service).
+- **WebSocket with nginx**: Requires specific config (`proxy_set_header Upgrade`, `proxy_set_header Connection "upgrade"`). Well-documented but easy to miss.
+- **Best for**: Production deployment, not quick demos.
+
+### Railway.app
+- **Free tier**: $5 trial credit, then pay-as-you-go (~$5/mo for a small app).
+- **WebSocket**: Supported natively.
+- **Deploy**: `railway up` from your repo. Auto-detects Python, builds, deploys.
+- **Caveat**: No local camera access. Only works if signaling-only architecture.
+
+### Render.com
+- **Free tier**: Free for web services (750 hours/mo), but free instances spin down after 15 min idle (30-second cold start).
+- **WebSocket**: Supported.
+- **Deploy**: Connect GitHub repo, auto-deploy.
+- **Caveat**: Same camera limitation. Free tier cold starts are bad for live demos.
+
+### Fly.io
+- **Free tier**: 3 shared-cpu VMs, 160GB outbound.
+- **WebSocket**: Full support, excellent global edge network.
+- **Deploy**: `fly launch`, detects Python, deploys. Slightly more setup than Railway.
+- **Caveat**: Same camera limitation.
+
+### Replit
+- **Free tier**: Limited compute, apps sleep after inactivity.
+- **WebSocket**: Supported but can be flaky behind Replit's proxy.
+- **Verdict**: Not suitable for WebRTC demos. Too many proxy layers.
+
+### PythonAnywhere
+- **Free tier**: One web app, no custom domains, **no WebSocket support on free tier**. WebSocket requires paid plan ($5/mo+) and even then it's behind a proxy that can cause issues.
+- **Verdict**: Bad choice for SocketIO/WebRTC apps. Skip.
+
+---
+
+## 3. Screen Sharing / Streaming Alternatives
+
+These bypass the "expose the app" problem entirely — you just show your screen.
+
+### OBS + YouTube/Twitch
+- **How**: Run OBS, capture your browser window showing `localhost:5001`, stream to YouTube Live or Twitch.
+- **Latency**: YouTube Live has 3-15 second delay (ultra-low latency mode ~3s). Twitch ~2-5s.
+- **Viewer interaction**: Viewers see your screen but cannot interact with the app. View-only.
+- **Best for**: Large audiences who just need to watch. Good for recorded demos.
+
+### Discord Screen Share
+- **How**: Start a Discord call/server voice channel, share your screen, select the browser window.
+- **Latency**: ~200-500ms. Very good for live demos.
+- **Viewer interaction**: View-only, but viewers can talk to you.
+- **Quality**: Up to 720p on free, 1080p/60fps with Nitro.
+- **Best for**: Small group demos (up to 25 viewers in a server stream, more with Stage).
+
+### Zoom Screen Share
+- **How**: Start a Zoom meeting, share screen, select browser.
+- **Latency**: ~150-300ms.
+- **Viewer interaction**: View-only screen, but attendees can speak/chat.
+- **Quality**: Good, adaptive bitrate.
+- **Best for**: Professional demos, investor pitches, up to 100 free (40-min limit on free).
+
+### Google Meet
+- **How**: Start a Meet, present your screen.
+- **Latency**: ~200-400ms.
+- **Free**: Up to 100 participants, 60-minute limit.
+- **Best for**: Quick demos with Google Workspace users.
+
+### Loom
+- **How**: Record your screen, share the link.
+- **Latency**: N/A — it's a recording, not live.
+- **Free**: 25 videos, 5 min each on free. Paid for unlimited.
+- **Best for**: Asynchronous demos, sending a video to someone who can't attend live.
+
+### Can these show localhost? 
+**Yes, all of them.** You're sharing your screen/window, so whatever you see on `localhost:5001`, they see. The remote viewer never accesses the URL directly — they see your screen pixels.
+
+---
+
+## 4. Mobile Access on Same WiFi
+
+### Direct LAN Access
+- **How**: Find your Mac's local IP (`ifconfig en0` or System Settings > Wi-Fi > Details > IP Address). Then anyone on the same WiFi goes to `http://YOUR_IP:5001`.
+- **Flask requirement**: Your Flask app must bind to `0.0.0.0`, not `127.0.0.1`. Check your `app.run()` call — it needs `host='0.0.0.0'`. If you're using `flask run`, set `--host=0.0.0.0`.
+- **Camera access on mobile**: Modern browsers require HTTPS for `getUserMedia()`. Over plain HTTP on a LAN IP, the browser will block camera access. This is fine if the phone is just **viewing** the stream (not sending its own camera). If the phone needs to access its own camera, you need HTTPS.
+- **macOS firewall**: System Settings > Network > Firewall — make sure it allows incoming connections on port 5001, or turn it off temporarily.
+
+### Helpful Apps
+- **Fing**: Network scanner app (iOS/Android). Shows all devices on your WiFi with IPs. Useful to verify the phone and laptop are on the same network.
+- **No special browser settings needed** — just type the IP:port in Safari/Chrome on the phone.
+
+### HTTPS on LAN (if camera access needed on mobile)
+- Use `mkcert` to create a locally-trusted certificate: `brew install mkcert && mkcert -install && mkcert YOUR_IP`. Then configure Flask/gunicorn to use the cert. The phone would need to trust the CA (install `mkcert`'s root CA on the phone), which is fiddly.
+- Easier alternative: Use ngrok/cloudflared, which give you HTTPS automatically, and the phone accesses the public URL.
+
+---
+
+## 5. QR Code Generators
+
+Once you have a public URL (from ngrok, cloudflared, etc.), generate a QR code:
+
+### Command-line (instant, no internet needed)
+- `brew install qrencode` then `qrencode -o qr.png "https://your-url.ngrok-free.app"` — creates a PNG.
+- `qrencode -t UTF8 "https://your-url.ngrok-free.app"` — prints the QR code directly in your terminal. Perfect for quick demos.
+
+### Python (already have Python since you run Flask)
+- `pip install qrcode[pil]` then `python -c "import qrcode; qrcode.make('https://your-url').save('qr.png')"`
+
+### Web-based
+- `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=YOUR_URL` — paste URL, get QR image. No sign-up.
+- `chart.googleapis.com` (deprecated but still works).
+
+### In-app
+- You could add a `/qr` route to your Flask app that auto-generates a QR code of its own public URL. But you said no code changes, so skip this.
+
+---
+
+## Ranked Recommendations
+
+### For "someone across the room" (same WiFi):
+
+**1. Direct LAN access** — `http://YOUR_MAC_IP:5001` (if Flask binds `0.0.0.0`). Zero setup. Instant. No internet needed. Use `qrencode -t UTF8` to print a QR code in terminal for them to scan.
+
+**2. ngrok** — if LAN access doesn't work (corporate WiFi isolation, firewall issues), `ngrok http 5001` gives an HTTPS URL in 2 seconds. Show QR code. Works even if WiFi blocks device-to-device traffic.
+
+### For "someone across the internet":
+
+| Rank | Tool | Why | Setup Time |
+|------|------|-----|------------|
+| **1** | **ngrok** | One command, HTTPS, WebSocket works, SocketIO works, static free domain, battle-tested. The interstitial page on free tier is the only downside. | 30 seconds |
+| **2** | **Cloudflare quick tunnel** | `cloudflared tunnel --url http://localhost:5001`. Free, no account needed, no interstitial, great latency. URL is ugly but functional. | 30 seconds |
+| **3** | **Pinggy** | `ssh -p 443 -R0:localhost:5001 a.pinggy.io`. Zero install, works from any terminal. 60-min free limit. | 10 seconds |
+| **4** | **Serveo** | `ssh -R 80:localhost:5001 serveo.net`. Zero install. But unreliable uptime history. | 10 seconds |
+| **5** | **Screen share (Zoom/Discord/Meet)** | If all else fails or if viewers don't need to interact with the app themselves. | 1 minute |
+
+### My top recommendation for your exact case:
+
+**Use Cloudflare quick tunnel.** Here's why:
+
+1. Your app uses WebRTC (P2P video) + SocketIO (signaling). The tunnel only needs to relay the signaling — video goes P2P. Cloudflare handles this perfectly.
+2. No account needed, no interstitial warning page (unlike ngrok free tier).
+3. HTTPS out of the box (required for `getUserMedia()` camera access).
+4. Cloudflare's edge network means low latency globally.
+5. One command: `cloudflared tunnel --url http://localhost:5001`
+
+**Fallback**: If `cloudflared` gives any trouble with SocketIO, use ngrok (`ngrok http 5001`). ngrok's SocketIO compatibility is the most documented and battle-tested.
+
+**For the QR code**: After getting the URL, run `brew install qrencode && qrencode -t UTF8 "THE_URL"` to print it right in your terminal. Attendees scan and they're in.
+agentId: a7f37bd502ca673b0 (use SendMessage with to: 'a7f37bd502ca673b0' to continue this agent)
+<usage>total_tokens: 17081
+tool_uses: 0
+duration_ms: 113919</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://openknowledge.worldbank.org/server/api/core/bitstreams/f30196fb-9a71-464
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:39:23 UTC
+========================================================================
+
+URL: https://openknowledge.worldbank.org/server/api/core/bitstreams/f30196fb-9a71-4644-81e6-ed8fbc181870/content
+Extraction prompt: Find Nigeria's specific data. I need: (1) the breakdown of the 111% earnings deficit into education, health, and employment pillars - how much does each contribute? (2) Nigeria's education pillar score and what it means in terms of earnings loss. (3) Any chart or table showing the decomposition of Nigeria's HCI+ score by pillar.
+
+----------------------------------------
+
+I appreciate your request, but I need to be direct: **the content provided is a PDF document in binary/encoded format, not readable text**. The material shows PDF file structure markers and compressed data streams, not the actual human-readable content of the document.
+
+To help you find Nigeria's specific HCI+ data regarding:
+1. The 111% earnings deficit breakdown by pillar (education, health, employment)
+2. Nigeria's education pillar score and earnings loss implications
+3. Decomposition charts/tables by pillar
+
+I would need:
+- **The actual readable text content** of the document, or
+- **A direct link** to the PDF that I could reference, or
+- **A text export** of the relevant sections
+
+**What I can suggest:**
+If this is a World Bank Human Capital Index report, these decomposition breakdowns are typically found in:
+- Country-specific fact sheets or briefs
+- Technical appendices with pillar-by-pillar scoring tables
+- Visualization sections with bar charts showing the contribution of each pillar to overall HCI scores
+
+Could you provide the document in a more accessible format, or clarify which specific World Bank HCI report this is from?
+
+[Binary content (application/pdf;charset=UTF-8, 2.8MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/webfetch-1774413568130-lha7ks.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

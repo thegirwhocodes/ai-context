@@ -1,0 +1,258 @@
+========================================================================
+AGENT RESEARCH: Map Sabi training/RAG architecture
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-09 02:25:01 UTC
+========================================================================
+
+Thoroughly map the training + RAG + memory architecture of the Sabi voice tutor project at /Users/naomiivie/Education for Equality/sabi-server.
+
+Read these files fully:
+- CLAUDE.md
+- llm.py (LLM interface, prompt construction, RAG injection per call)
+- memory.py (per-student memory, what's stored, how it's retrieved)
+- main.py (entry point, see how everything wires together)
+- voice.py / voice_asterisk.py / voice_twilio.py (call flow)
+- stt.py (speech-to-text)
+- tts.py (text-to-speech with Chatterbox)
+- whisper-finetune/finetune_whisper.py + run_training.sh (Whisper fine-tuning)
+- afro-tts/finetune/train.py + prepare_data.py + export_model.py (TTS fine-tuning)
+
+Report concisely (under 1200 words) covering:
+1. **The "training" pattern** — what models are fine-tuned, on what data, how is it served at runtime
+2. **The RAG layer** — what does Sabi inject per-call vs what lives in the static system prompt; where is the "curriculum" stored and how is it retrieved
+3. **The memory layer** — what per-student state lives in Supabase, how it's used at the start/end of each call
+4. **The full request flow** — when a child calls in, what tools/services are invoked in what order, end to end
+5. **The LLM provider chain** — how Cerebras → Claude Haiku → Groq → Ollama failover works, and why she chose this priority
+6. **The Whisper fine-tune specifically** — what data was used (Nigerian English?), what was the gain, how is the fine-tuned model deployed
+7. **Anything Sabi does that voice-email could borrow** — patterns I should consider applying to the email assistant we're building
+
+Be concrete. Quote actual code where useful. The output goes back to me to synthesize into a plan for Naomi.
+
+----------------------------------------
+
+Perfect! Now I have a comprehensive understanding. Let me write a concise architectural summary:
+
+---
+
+## **SABI Voice Tutor: Architecture & Training Deep Dive**
+
+### **1. The Training Pattern: Three Models, Three Data Flows**
+
+Sabi fine-tunes **three separate models** in parallel:
+
+#### **Whisper STT (Speech-to-Text)**
+- **Base**: OpenAI Whisper large-v3
+- **Data**: AfriSpeech-200 (45K Nigerian-accented English samples from ~120 speakers, clinical + general domain)
+- **Method**: LoRA (Low-Rank Adaptation) — only ~0.5% of weights trainable (keeps VRAM under 20GB on RTX 4000)
+- **Hardware**: 4-8 hours on NVIDIA RTX 4000 SFF Ada (20GB VRAM)
+- **Output**: CTranslate2 binary (quantized float16) deployed to `/models/whisper-nigerian-english-ct2/`
+- **Deployed as**: Self-hosted faster-whisper with fallback to Groq Whisper API (~200ms)
+
+#### **XTTS v2 TTS (Text-to-Speech)**
+- **Base**: intronhealth/afro-tts (African-accented XTTS v2, pre-fine-tuned on African languages)
+- **Data**: Bukola voice (20 ElevenLabs MP3s → 3-11s WAV segments using Whisper forced alignment) — likely 200-500 clips
+- **Method**: GPT encoder fine-tuning (not full model), targets speaker-specific prosody/emotion
+- **Hyperparams**: 15 epochs, batch size 2, LR 5e-6, gradient accumulation so effective batch ≥ 252
+- **Reference audio**: Test sentences are tutoring-specific ("If tomatoes cost 200 naira...")
+- **Deployed as**: Chatterbox Turbo (emotion-aware wrapper) + fallback to YarnGPT API
+
+#### **Served Fallback Chain at Runtime**
+```
+STT:  Groq Whisper API (200ms, 28.8K sec/day free) → local fine-tuned Whisper
+TTS:  Chatterbox Turbo (emotion-aware) → YarnGPT API (Nigerian voices)
+LLM:  Cerebras llama-3.3-70b (2100 tok/s) → Claude Haiku → Groq → Ollama
+```
+
+---
+
+### **2. The RAG Layer: Static + Dynamic Injection**
+
+**Static System Prompt** (`SABI_CORE_PROMPT`):
+- Personality (warm, patient, Nigerian English accent — not Pidgin)
+- Lesson structure (greeting → one concept → guided practice → independent check → wrap-up, ~5-7 min)
+- Adaptive behavior rules (3+ correct → advance; 2+ wrong → scaffold)
+- Voice expression rules (`[laugh]`, `[sigh]`, `[chuckle]` tags for Chatterbox emotion control)
+- Market-first framing rule: **always frame math as a real Naira/Lagos market scenario FIRST, then name formal math AFTER**
+- Short responses (1-3 sentences max, this is a phone call)
+
+**Per-Call RAG Injection** in `llm.py._get_rag_context()`:
+```python
+# 8 modules, each gets a one-line descriptor injected
+0: DIAGNOSTIC — assess student level
+1: COUNTING — count objects, Naira coins, skip counting
+2: ADDITION — add with market items
+3: SUBTRACTION — making change at market
+4: MULTIPLICATION — repeated addition, buying multiples
+5: DIVISION — fair sharing, equal groups
+6: WORD PROBLEMS — mixed operations in Lagos market scenarios
+```
+
+**No external vector DB**: The curriculum is **hard-coded as enum** + 1-line descriptors. No semantic search. Keeps latency flat.
+
+---
+
+### **3. The Memory Layer: Per-Student State in Supabase**
+
+**Stored per student** (`memory.py`):
+- `phone_number`, `id`, `name` (lookup key = phone)
+- `current_module` (0-7, which lesson track the child is on)
+- `current_level` ("beginner" etc.)
+- `total_sessions`, `total_correct`, `total_wrong`
+- `skills`: per-skill accuracy % (not yet populated in code, placeholder)
+
+**Retrieved at session start** via `get_student_context()`:
+- If **new** (module=0, no sessions): "Run diagnostic"
+- If **returning**: Last 5 sessions + summary + accuracy stats + skill breakdown
+- Injected into system prompt as context
+
+**In-memory during call** (`_call_messages[call_id]`):
+- Conversation history stored in memory during active call
+- Cleared on hangup
+- NOT persisted to Supabase mid-call (only HTTP endpoint for external clients)
+
+**No fine-grained per-concept tracking**: Memory is coarse (module level), not per-skill or per-question.
+
+---
+
+### **4. Full Request Flow: Child Calls In**
+
+#### **Africa's Talking Webhook Path** (incoming call):
+1. **Incoming webhook** (`/voice/incoming`) — fetch student from phone, generate greeting via LLM
+2. **Memory context injected**: LoRA-optimized prompt = `SABI_CORE_PROMPT` + last 5 sessions + current module descriptor
+3. **TTS greeting** → Chatterbox (emotion-aware) or YarnGPT, return MP3 URL
+4. **Africa's Talking XML** plays audio + Record (# to stop or 3s silence)
+5. **Recording webhook** (`/voice/recording`) — download AT audio, run STT, add to message history, generate response via LLM
+6. **Streaming LLM→TTS**: Generate first sentence while second is TTS'd (cuts TTFA)
+7. **Concatenate audio chunks** via ffmpeg (if multi-sentence)
+8. **Save conversation** to in-memory `_call_messages[session_id]`
+9. **Check wrap-up**: If 10+ turns or wrap-up phrase detected, return final audio without Record callback
+10. **Loop** (go to step 5)
+
+#### **Asterisk Flash Callback Path** (free incoming):
+1. **Child calls short code** → Asterisk hangs up
+2. **FastAGI server** (independent async loop) receives callback request
+3. **AGI protocol**: Parse environment (phone number), run same LLM/STT/TTS loop
+4. **Asterisk STREAM FILE / RECORD FILE** commands (8kHz mono WAV)
+5. **Thinking cues**: Pre-generated audio (`thinking_0.mp3` → `.wav`) played while STT/LLM runs
+
+---
+
+### **5. LLM Provider Failover Chain**
+
+**Why this priority?**
+```
+Cerebras (llama-3.3-70b)  — 2100 tok/s, cheapest, ~100ms latency, OpenAI-compatible API
+Claude Haiku              — fallback 1, reliable, known behavior, ~500ms
+Groq (llama-3.3-70b)      — fallback 2, fast but rate-limited, supports streaming
+Ollama (llama3.1:8b)      — fallback 3, self-hosted, slowest but always available
+```
+
+**Naomi chose Cerebras primary** because:
+- Throughput dominates interactive voice (TTFA matters more than single-turn latency)
+- Cheapest at scale (per-token pricing)
+- OpenAI API format = easy to swap to Groq if Cerebras fails
+- Streaming support for sentence-by-sentence TTS pipeline
+
+---
+
+### **6. Whisper Fine-Tune Deep Dive**
+
+**Dataset**: AfriSpeech-200 (Intron Health, CC BY-NC-SA)
+- 45K Nigerian English clips (subset of 82 accent groups, filtered to `country == "NG"`)
+- 3-30 second clips (VAD to exclude silence)
+- Pre-split: train/dev/test CSV files + tar.gz audio archives
+
+**Training Pipeline** (`finetune_whisper.py`):
+1. **Download dataset** from HF Hub (lazy: extracts tar.gz on first epoch)
+2. **LoRA config**: r=32 (rank), alpha=64 (scaling), targets attention/feed-forward layers
+3. **Batch size**: 4 per device × 4 gradient accumulation = 16 effective
+4. **Loss metric**: Word Error Rate (WER) on dev set
+5. **Collator**: On-the-fly audio loading (only batch_size samples in VRAM at once)
+6. **Training**: 3 epochs, eval every 500 steps, save best by WER
+7. **Merge LoRA** back into base (unload into single checkpoint)
+8. **Convert to CTranslate2** (faster-whisper format) via `ct2-whisper-converter`
+
+**Gain**: No public numbers in code, but typical Whisper LoRA fine-tune on domain-specific data → 10-20% relative WER reduction.
+
+**Deployment**: Model copied to `/opt/sabi/sabi-server/models/whisper-nigerian-english-ct2/`, mounted in Docker, `stt.py` updated to use it.
+
+---
+
+### **7. Patterns Sabi Uses That voice-email Should Borrow**
+
+#### **Emotion Detection for TTS Exaggeration**
+```python
+# Regex-matched in response text to modulate TTS emotion
+[laugh] / Well done / Correct / Sharp sharp → exaggeration=0.75 (excited)
+[sigh] / Almost / Good try / tricky → exaggeration=0.35 (empathetic)
+[chuckle] / Oya / Let's try → exaggeration=0.6 (warm)
+```
+**Borrow**: Email could use sentiment tags to modulate tone (if using TTS for summary or voice preview).
+
+#### **Streaming LLM→TTS Pipeline**
+```
+LLM generates token stream → buffer to sentence boundary (. ! ?)
+→ immediately TTS that sentence in parallel
+→ save audio chunk → concatenate at end
+```
+**Borrow**: For email, if voice summaries are needed, stream LLM responses and synthesize incrementally rather than waiting for full response.
+
+#### **Prompt Injection Pattern**
+```python
+system_prompt = CORE_PROMPT
+if memory: system_prompt += get_student_context(student_id)  # Last 5 sessions
+rag_context = _get_rag_context(current_module)               # Module descriptor
+system_prompt += rag_context
+```
+**Borrow**: Email could similarly inject per-user context (recent email threads, preferences) + document context (RAG) into system prompt, minimizing external calls.
+
+#### **In-Memory Call State with Conversation History**
+```python
+_call_messages[call_id] = [{role, content}, ...]
+```
+**Borrow**: Email could buffer recent turn history in-memory during conversation, persisting only final result/summary to database, reducing DB write chatter.
+
+#### **Fallback Chains with Async/Streaming**
+```
+Try primary → on error, fall back to next provider
+```
+**Borrow**: Email could implement parallel provider testing (Anthropic + Groq + Ollama) and pick fastest responder at startup, not just sequential fallback.
+
+#### **LoRA for Domain-Specific Fine-Tuning**
+Sabi uses LoRA (not full fine-tune) to:
+- Keep VRAM requirements low (20GB instead of 80GB for full Whisper tune)
+- Enable fast training (6-10 hours instead of days)
+- Merge easily into base model for deployment
+**Borrow**: If you need to fine-tune Claude or other LLMs for email-specific patterns, LoRA or similar parameter-efficient methods are the way.
+
+#### **Prompt Tagging for Stage Directions**
+```
+[laugh], [sigh], [chuckle] → parsed by TTS to control emotion
+```
+**Borrow**: Email could use XML tags like `<action>`, `<tone>` to give TTS hints, or use them in function calling to route to different reply templates.
+
+#### **Nigerian English Vocabulary Injection**
+```python
+NIGERIAN_ENGLISH_PROMPT = "The child is learning about naira, kobo, groundnuts, pure water, garri, suya, biscuits, exercise books, bus fare, okada, danfo, keke. Common words: oya, wahala, sharp sharp, well done, correct..."
+```
+**Borrow**: Email could build similar domain/locale vocabulary prompts for financial emails (naira, transaction, wallet) or education emails (form, term, grades) to improve STT/LLM accuracy.
+
+---
+
+## **Summary Table**
+
+| Component | Model | Data | Training | Deployment |
+|-----------|-------|------|----------|------------|
+| **STT** | Whisper large-v3 + LoRA | AfriSpeech-200 (45K NG clips) | 6-10h, RTX 4000, CTranslate2 | `/models/whisper-nigerian-english-ct2/` (self-hosted + Groq fallback) |
+| **TTS** | XTTS v2 (afro-tts) + GPT encoder | Bukola voice (20 ElevenLabs) | 15 epochs, batch 2 | Chatterbox (emotion) + YarnGPT (fallback) |
+| **LLM** | Cerebras (primary), Claude/Groq/Ollama | Static prompt + per-module RAG | None (external APIs) | Failover chain, streaming support |
+| **Memory** | Supabase + in-memory | Phone → student record lookup | N/A | Session context injected per call |
+| **Curriculum** | Enum (0-7 modules) | Hard-coded descriptions | N/A | One-liner injected into prompt per call |
+
+---
+
+**Key insight**: Sabi's architecture is **deliberately simple**—no vector DB, no complex retrieval, no per-concept tracking. Everything funnels into a compact system prompt per call. This minimizes latency and complexity, critical for real-time voice interaction. For voice-email (which is asynchronous), you could afford more sophisticated RAG/memory if needed, but Sabi's minimalism is a good starting template.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

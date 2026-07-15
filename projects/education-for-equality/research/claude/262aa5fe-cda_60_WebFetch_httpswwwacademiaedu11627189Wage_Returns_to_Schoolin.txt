@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.academia.edu/11627189/Wage_Returns_to_Schooling_in_Nigeria
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 05:49:08 UTC
+========================================================================
+
+URL: https://www.academia.edu/11627189/Wage_Returns_to_Schooling_in_Nigeria
+Extraction prompt: Extract ALL specific wage return percentages from this paper. I need: (1) the exact return per year of primary schooling for men and women separately, (2) the exact return per year of secondary schooling, (3) the exact return per year of post-secondary, (4) any total wage premium figures (not per-year but total for completing a level), (5) what data source they used (General Household Survey year?), (6) the sample size, (7) whether these are Mincerian returns or something else.
+
+----------------------------------------
+
+# Wage Returns to Schooling in Nigeria - Key Figures
+
+Based on the available content, here are the extracted wage return percentages:
+
+## Return Rates by Education Level
+
+**Primary Education:**
+- Men: 2.5%
+- Women: 2.4%
+
+**Secondary Education:**
+- Range cited: 2.5-4.4%
+
+**Post-Secondary Education:**
+- Men: 10.4%
+- Women: 12.2%
+- Younger workers (men): 12.7%
+- Younger workers (women): 13.8%
+
+## Data Source
+The study utilized "the General Household Survey for Nigeria" as stated in the abstract. The specific year(s) of the survey data are not clearly specified in the extracted content.
+
+## Sample Details
+Sample size information is not provided in the accessible portions of this document.
+
+## Return Type
+The abstract and key takeaways reference "private returns to schooling" but do not explicitly confirm whether these are Mincerian returns or another econometric specification in the visible sections.
+
+**Note:** The content provided is primarily metadata, abstract, and FAQ sections. Full methodological details would require access to the complete paper body.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

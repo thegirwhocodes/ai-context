@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/services/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:53:49 UTC
+========================================================================
+
+URL: https://connectsip.com/services/
+Extraction prompt: List all services offered. Look for any mention of API, webhooks, programmable voice, developer tools, or SIP trunk technical specs (codecs, protocols, integration methods)
+
+----------------------------------------
+
+# ConnectSIP Services Summary
+
+## Core Services Offered
+
+ConnectSIP provides three main unified communication solutions:
+
+1. **SIP Trunking + Virtual Numbers** - "Instantly expand your business reach with reliable SIP trunks and local virtual numbers."
+
+2. **Cloud Hosted PBX** - Features include call routing, IVR, voicemail-to-email, and remote access capabilities without requiring hardware infrastructure.
+
+3. **Enterprise Contact Centre** - Delivers "real-time call monitoring, and seamless integrations" for support and sales teams.
+
+## Additional Offerings
+
+- Virtual phone numbers
+- Toll-free numbers
+- 3CX solutions
+- Hosted PBX systems
+
+## Technical Details & Developer Resources
+
+**No mention found.** The webpage does not provide information about:
+- APIs or webhooks
+- Programmable voice capabilities
+- Developer tools or SDKs
+- SIP trunk technical specifications (codecs, protocols)
+- Integration methods
+- Rate limits or configuration options
+
+**Support resources available:** Call rates, FAQs, complaints handling, payment channels, and a blog are listed, but the actual technical documentation is not included in the provided content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

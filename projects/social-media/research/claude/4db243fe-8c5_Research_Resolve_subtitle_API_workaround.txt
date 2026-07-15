@@ -1,0 +1,189 @@
+========================================================================
+AGENT RESEARCH: Research Resolve subtitle API workaround
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-18 03:34:23 UTC
+========================================================================
+
+Task given to agent: Search the web for workarounds to programmatically style subtitles in DaVinci Resolve via the scripting API (Python). The problems I'm facing:
+
+1. `SetName()` returns False on subtitle timeline items — can't change subtitle text via API
+2. `SetProperty()` with FontFamily, FontSize, FontColor all return False — can't style subtitles via API
+3. SRT files imported via `MediaPool.AppendToTimeline()` always append AFTER existing content instead of at the playhead position
+4. `CreateSubtitlesFromAudio
+
+----------------------------------------
+
+I now have comprehensive results. Here is the full summary of findings.
+
+---
+
+## DaVinci Resolve Scripting API -- Subtitle Workarounds
+
+### Problem 1: `SetName()` returns False on subtitle items / Can't edit subtitle text
+
+**Status: Known API limitation. No direct fix.**
+
+The subtitle track in Resolve has extremely limited scripting support. `SetName()` on subtitle timeline items does not work -- it's designed for timeline names, not subtitle caption text. There is no `SetCaptionText()` or equivalent method in the API as of Resolve 20.3.
+
+Additionally, in Resolve 20.2 there was a **regression** where `GetName()` on subtitle items started returning the generic string `"Subtitle"` instead of the actual caption text. This was reportedly fixed in **20.2.1**, restoring read-only access to subtitle text via `GetName()`. But **writing** subtitle text via the API remains unsupported.
+
+**Workaround: Use Text+ on a video track instead of the subtitle track entirely.** (See below.)
+
+---
+
+### Problem 2: `SetProperty()` with FontFamily/FontSize/FontColor returns False
+
+**Status: Known API limitation. Subtitle properties are not writable via the API.**
+
+`GetProperty()` on subtitle items only exposes transform-related keys (Opacity, ZoomX, ZoomY, Pan, etc.) -- not font styling properties. There is no API support for setting font, size, or color on subtitle track items.
+
+**Workaround: Use Text+ (Fusion Title) clips instead.** Text+ nodes in Fusion expose all styling as scriptable parameters (`StyledText`, `Font`, `Size1`, `Color1`, etc.) that you can set via the Fusion comp API.
+
+---
+
+### Problem 3: SRT imported via `AppendToTimeline()` appends at end, not playhead
+
+**Solution: Use the `recordFrame` parameter in the clipInfo dictionary.**
+
+When calling `MediaPool.AppendToTimeline([{clipInfo}])`, you can specify `recordFrame` to control placement:
+
+```python
+current_tc = timeline.GetCurrentTimecode()
+# Convert timecode to frame number
+clip_info = {
+    "mediaPoolItem": srt_media_pool_item,
+    "startFrame": 0,
+    "endFrame": duration,
+    "trackIndex": target_track,
+    "recordFrame": target_frame_number  # <-- this controls WHERE it lands
+}
+media_pool.AppendToTimeline([clip_info])
+```
+
+The `recordFrame` parameter sets the timeline position where the clip is inserted, overriding the default "append at end" behavior.
+
+---
+
+### Problem 4: `CreateSubtitlesFromAudio()` produces wrong transcription, can't edit
+
+**Status: No API method to edit subtitle text after creation.**
+
+There is no `SetCaptionText()` or equivalent. The built-in speech-to-text is limited in accuracy and language coverage.
+
+**Workaround: Use external transcription + Text+ pipeline.** Tools like [AutoSubs](https://github.com/tmoroney/auto-subs) use Whisper (or other models) for transcription and then inject styled Text+ clips into the timeline, bypassing the subtitle track entirely.
+
+---
+
+### The Master Workaround: Text+ Instead of Subtitle Track
+
+The most viable approach is to **abandon the subtitle track** and use **Fusion Text+ clips on a video track** instead. Multiple open-source tools implement this:
+
+#### 1. **Resolve-OpenCaptions** (recommended -- most actively maintained)
+- GitHub: [david-ca6/Resolve-OpenCaptions](https://github.com/david-ca6/Resolve-OpenCaptions)
+- Free, open-source, multi-track subtitle-to-Text+ tool
+- Takes `.srt` files + a Text+ template and creates a full Text+ caption track
+- Supports up to 6 SRT files with different templates on separate tracks
+- Requires DaVinci Resolve 19+ and Python 3.10+
+- Also has a companion tool [Resolve_TextPlus2SRT](https://github.com/david-ca6/Resolve_TextPlus2SRT) to **export** Text+ back to SRT
+
+#### 2. **Rraz0rR/DaVinci-Resolve-Subtitle-to-TextPlus**
+- GitHub: [Rraz0rR/DaVinci-Resolve-Subtitle-to-TextPlus](https://github.com/Rraz0rR/DaVinci-Resolve-Subtitle-to-TextPlus)
+- Converts existing subtitle track items to Text+ clips
+- Template-based: style one Text+ object, it applies to all
+- Preserves timing and enabled/disabled states
+
+#### 3. **atmosfar/srt_to_textplus**
+- GitHub: [atmosfar/srt_to_textplus](https://github.com/atmosfar/srt_to_textplus)
+- Generates TextPlus nodes in a Fusion composition with keyframe animations synced to SRT timing
+- Runs externally (Python 2.7)
+
+#### 4. **AutoSubs** (full pipeline: transcription + styling)
+- GitHub: [tmoroney/auto-subs](https://github.com/tmoroney/auto-subs)
+- AI-powered transcription (Whisper) + subtitle editor + DaVinci Resolve integration
+- Speaker diarization, per-speaker styling (fill/outline/border)
+- Runs as a Resolve workspace script
+- Does NOT work with the Mac App Store version of Resolve
+
+---
+
+### How to Place Text+ on a Specific Video Track
+
+The key trick discovered on the Blackmagic forum:
+
+1. **`InsertFusionTitleIntoTimeline()` is useless** -- it accepts no clipInfo parameters (no track control, no position control).
+
+2. **The workaround**: Create a Text+ generator in the timeline manually, drag it into the Media Pool, then use `AppendToTimeline()` with full clipInfo:
+
+```python
+clip_info = {
+    "mediaPoolItem": text_plus_media_pool_item,
+    "startFrame": 0,
+    "endFrame": duration_in_frames,
+    "trackIndex": 3,           # specific video track
+    "recordFrame": start_frame, # specific timeline position
+    "mediaType": 1              # 1 = video only
+}
+media_pool.AppendToTimeline([clip_info])
+```
+
+3. After placing the clip, get the timeline item and modify the Fusion comp:
+```python
+item = timeline.GetItemListInTrack("video", 3)[index]
+comp = item.GetFusionCompByIndex(1)
+text_plus = comp.FindToolByID("TextPlus")
+text_plus.StyledText = "Your subtitle text"
+text_plus.Font = "Arial"
+text_plus.Size1 = 0.05
+# etc.
+```
+
+---
+
+### DaVinci Resolve MCP Server
+
+There is an MCP server for Resolve at [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp) that exposes the full Resolve scripting API including a Fusion comp tool with 20+ actions (add/delete/find nodes, set parameters, manage keyframes, TextPlus support). This could be used alongside Claude to orchestrate subtitle workflows via natural language.
+
+---
+
+### Subtitle Format Styling (.ass / .dfxp)
+
+- **SRT**: Styling tags are stripped on import. Any font/color/position data is lost.
+- **DFXP/TTML**: Supported for import/export, but Resolve still applies its own track-level styling and ignores inline style attributes from the file.
+- **ASS**: Not natively supported for import. Must be converted to SRT first, losing all styling.
+- **Bottom line**: No subtitle file format preserves styling through Resolve's import pipeline. The Text+ workaround remains the only way to get full programmatic style control.
+
+---
+
+### Summary
+
+| Problem | Direct API Fix? | Best Workaround |
+|---|---|---|
+| Can't set subtitle text | No | Use Text+ clips + Fusion API |
+| Can't style subtitles | No | Use Text+ clips + Fusion API |
+| SRT appends at end | Yes | Use `recordFrame` in clipInfo |
+| Bad auto-transcription | No | Use external Whisper via AutoSubs |
+| Place on specific track | Partial | `AppendToTimeline` with `trackIndex` + `recordFrame` on a Media Pool Text+ item |
+
+Sources:
+- [Blackmagic Forum: Script Hack - Append Fusion Title with clipInfo](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=190118)
+- [Blackmagic Forum: 20.2 Subtitle text no longer accessible](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=227118)
+- [Blackmagic Forum: How to get subtitle caption via python script](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=114570)
+- [DaVinci Resolve Scripting API Doc v20.3 (GitHub Gist)](https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8)
+- [Resolve API Documentation (ResolveDevDoc)](https://resolvedevdoc.readthedocs.io/en/latest/readme_resolveapi.html)
+- [Scripting API Wiki](https://wiki.dvresolve.com/developer-docs/scripting-api)
+- [AutoSubs - GitHub](https://github.com/tmoroney/auto-subs)
+- [Resolve-OpenCaptions - GitHub](https://github.com/david-ca6/Resolve-OpenCaptions)
+- [DaVinci-Resolve-Subtitle-to-TextPlus - GitHub](https://github.com/Rraz0rR/DaVinci-Resolve-Subtitle-to-TextPlus)
+- [srt_to_textplus - GitHub](https://github.com/atmosfar/srt_to_textplus)
+- [davinci-resolve-mcp - GitHub](https://github.com/samuelgursky/davinci-resolve-mcp)
+- [We Suck Less: Subtitling with Text+/Fusion](https://www.steakunderwater.com/wesuckless/viewtopic.php?t=4317)
+- [We Suck Less: DaVinci Resolve API Managing Timeline Elements](https://www.steakunderwater.com/wesuckless/viewtopic.php?t=6468)
+- [Blackmagic Forum: Import formatted subtitles with positioning](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=220873)
+agentId: a67702d9061074d22 (use SendMessage with to: 'a67702d9061074d22' to continue this agent)
+<usage>total_tokens: 29602
+tool_uses: 19
+duration_ms: 190871</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

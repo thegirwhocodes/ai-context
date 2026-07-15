@@ -1,0 +1,54 @@
+========================================================================
+AGENT RESEARCH: Research agent frameworks 2026
+Session: 3ca6f6d6-cc8f-48a7-ae98-043f8bea4484
+Time: 2026-04-20 01:44:14 UTC
+========================================================================
+
+Deep research task — I'm designing a super-intelligent AI video editing agent (think Sana AI for creators) and need to choose the right agent framework/architecture. Research the current (2026) state of AI agent frameworks and return a detailed comparison.
+
+Specifically investigate:
+
+1. **Claude Agent SDK** — Anthropic's official SDK for building agents. What are its strengths? Built-in features (subagents, memory, tool use, file system access, MCP support, hooks, slash commands)? Real-world examples? Cost profile? When is it the right choice?
+
+2. **OpenAI Agents SDK** — OpenAI's agent framework. Tool use, handoffs, tracing, guardrails. Strengths vs Claude SDK?
+
+3. **LangGraph** — graph-based agent orchestration. Stateful agents, checkpointing, human-in-the-loop. Good for complex multi-step pipelines?
+
+4. **Vercel AI SDK** — for frontend-heavy agent UX (streaming, tool calls in browser). Good for the "chat-style" agent UI?
+
+5. **CrewAI / AutoGen / LlamaIndex Agents** — are any of these still relevant in 2026, or have they been superseded?
+
+6. **MCP (Model Context Protocol)** — the user already has a DaVinci Resolve MCP server running. How does MCP fit into modern agent architectures? Can agents dynamically discover and use MCP servers?
+
+7. **Hybrid approach** — can you combine e.g. Claude Agent SDK (for the brain) + Vercel AI SDK (for the UI streaming) + MCP (for tool access)? What's the recommended stack for a conversational agent with memory, file watching, and video editing capabilities?
+
+Context about what I'm building: a desktop app (Electron-wrapped) that watches the user's file system, greets them proactively, understands their creator style over time, takes a raw video + prompt and outputs edited short-form content. It needs to:
+- Feel conversational (chat interface)
+- Remember the user across sessions (persistent memory)
+- Proactively notice new files and suggest edits
+- Generate 3 variations and pick the best (iteration loop)
+- Call tools: Gemini Files API (video analysis), FFmpeg (rendering), DaVinci Resolve MCP (optional)
+- Run 100% locally except for LLM API calls
+
+For EACH framework, give me:
+- Core architecture (how agents are defined, tool use model)
+- Memory/state handling
+- Streaming support for UI
+- Best-fit use case
+- Gotchas / limitations
+- Direct Anthropic docs URL or github repo
+
+Recommend a specific stack for my use case with reasoning. Return ~800-1200 words of dense, technical content — no fluff, no generic "AI agents are powerful" intros.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ae4199ef3f170e338 (internal ID - do not mention to user. Use SendMessage with to: 'ae4199ef3f170e338' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484/tasks/ae4199ef3f170e338.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://expo.scsp.ai/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:18:54 UTC
+========================================================================
+
+URL: https://expo.scsp.ai/
+Extraction prompt: Extract everything about the AI+ Expo 2026: dates, location, sponsors, attendance numbers, featured speakers, agenda highlights, the Drone Arena Competition, the Exchange, exhibitor list. What's new for 2026 vs prior years? Who is attending? What is the Phase 2 hackathon presentation environment?
+
+----------------------------------------
+
+# AI+ Expo 2026 Overview
+
+## Event Details
+**Dates:** May 7-9, 2026
+**Location:** Walter E. Washington Convention Center, Washington, D.C.
+**Theme:** "Celebrating 250 Years of American Innovation"
+
+## Attendance & Purpose
+The expo convenes "20,000 government officials, academic experts, and industry leaders" focused on building American technological competitiveness. The event emphasizes breakthroughs in cybersecurity, robotics, energy, and partnership development between research and real-world applications.
+
+## Sponsors
+Major sponsors include: Microsoft, Lockheed Martin, NVIDIA, OpenAI, AWS, AMD, IBM, Google, Qualcomm, Accenture, IonQ, and others across technology, defense, and academia sectors.
+
+## Programming Offerings
+- Featured speakers and agenda sessions
+- Saturday programming
+- The Exchange (networking platform)
+- Hackathon competition
+- Drone Arena Competition
+- Show floor exhibitions
+
+## Limited Information
+The webpage does not provide:
+- Specific featured speaker names
+- Detailed agenda highlights
+- Hackathon Phase 2 presentation environment details
+- Complete exhibitor list (links to external portal)
+- Comparison with prior year changes
+
+For comprehensive details on speakers, specific agenda items, and hackathon logistics, you would need to access linked sections or contact the organizers at events@scsp.ai.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

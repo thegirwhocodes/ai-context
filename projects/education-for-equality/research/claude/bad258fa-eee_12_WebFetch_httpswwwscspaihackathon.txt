@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.scsp.ai/hackathon/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:11:58 UTC
+========================================================================
+
+URL: https://www.scsp.ai/hackathon/
+Extraction prompt: List all past SCSP hackathon winners, project names, teams, prize amounts, and what the projects did. Also extract the complete list of past events with dates and locations. What patterns emerge from winning projects?
+
+----------------------------------------
+
+# SCSP Hackathon Information Request
+
+Based on the provided web page content, I cannot fulfill your request for the following reasons:
+
+**Missing Information:**
+The webpage does not contain details about past hackathon winners, project names, teams, prize amounts, or project descriptions. The page focuses on promoting the current "Code What Counts" hackathon event with "$70,000+ in prize value" across San Francisco, DC, and Boston.
+
+**What IS Available:**
+The only concrete event details mentioned are:
+- Event name: "ai+expo hackathon"
+- Duration: "3 days"
+- Prize pool: "$70,000+"
+- Locations: San Francisco, DC, Boston
+- Call-to-action buttons for applying and learning more
+
+**Pattern Analysis:**
+Without historical data on winning projects, I cannot identify patterns regarding project themes, success factors, or recurring challenge types.
+
+**Recommendation:**
+To obtain the information you're seeking, you would need to:
+1. Visit the dedicated hackathon page linked in the content
+2. Contact the organization directly at info@scsp.ai
+3. Check their news/press releases section for past event summaries
+
+The current webpage appears designed as a landing page directing participants toward application and registration rather than archiving historical results.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

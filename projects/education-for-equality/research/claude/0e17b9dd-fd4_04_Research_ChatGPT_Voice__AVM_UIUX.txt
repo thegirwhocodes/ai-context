@@ -1,0 +1,517 @@
+========================================================================
+AGENT RESEARCH: Research ChatGPT Voice + AVM UI/UX
+Session: 0e17b9dd-fd49-407b-a86a-9cd1fff442b8
+Time: 2026-04-26 17:31:08 UTC
+========================================================================
+
+I need a deep, implementable spec of the ChatGPT Voice (Advanced Voice Mode / "AVM") visual design and interaction model — the orb, the screen, the state transitions, the bottom bar, the entire on-screen UX — so I can reproduce it pixel-close in a different product.
+
+Concretely fetch and synthesize:
+
+A) **OpenAI's own published code and assets:**
+- `github.com/openai/openai-realtime-console` — read the README, the package.json, and especially the WavRecorder / WavStreamPlayer / canvas visualizer code. This is OpenAI's reference client — the same orb pattern shipped in ChatGPT Voice. Pull EXACT details: canvas dimensions, FFT size, smoothingTimeConstant on the AnalyserNode, the RAF loop math, the radius/scale formula tied to amplitude, the colors per state, the easing.
+- `github.com/openai/openai-realtime-agents`, `github.com/openai/openai-realtime-api-beta` — secondary references.
+- The Realtime API docs at `platform.openai.com/docs/guides/realtime` — what state names does OpenAI emit, in what order (session.created, input_audio_buffer.speech_started/stopped, response.audio.delta, etc.).
+
+B) **Public teardowns + design analyses of ChatGPT Voice / AVM:**
+- Search for "ChatGPT advanced voice mode UI design", "ChatGPT voice orb animation", "OpenAI voice mode interface", "ChatGPT voice assistant ui breakdown", on YouTube transcripts, Medium, Substack, Awwwards, Mobbin, designer blogs, Reddit r/ChatGPT, Hacker News threads.
+- Fetch screenshot collections from Mobbin / Page Flows / Refero / Layers.so showing every screen of the voice flow.
+- Fetch any side-by-side videos that compare iOS app / web / desktop.
+
+C) **Adjacent reference orbs:**
+- **ElevenLabs Conversational AI widget** — pull their public widget docs and the open-source repo. They explicitly modeled their orb on the same pattern.
+- **Hume EVI** voice agent UI.
+- **Vapi.ai**, **Bland.ai**, **Retell** voice agent demo orbs.
+- **Apple's Siri** orb (the iOS 18 redesign with the screen-edge glow).
+- **Google Gemini Live** orb.
+
+For EACH source, return CONCRETE technical detail I can implement:
+
+1. **Canvas geometry**: width/height (or aspect-ratio), DPR scaling, where on screen it sits, max-width, centering
+2. **AnalyserNode config**: fftSize, smoothingTimeConstant, minDecibels/maxDecibels
+3. **Amplitude→radius math**: how loudness maps to the orb's pulse — linear, sqrt, log? What's the rest radius vs max radius? (e.g., "rest = 70% of max, peak = 100%")
+4. **State colors and transitions**: idle / listening (mic active) / thinking (waiting on LLM) / speaking (TTS playing) / muted — what color is each, how fast the crossfade
+5. **Particle / blob / wave shapes**: is it a circle that scales? a wavy blob with sine perturbation around the perimeter? layered concentric circles? ChatGPT specifically uses a noisy gradient sphere — what's the effect chain? (CSS `filter: blur` + `background: radial-gradient`? Canvas with SimplexNoise?)
+6. **Background treatment**: full-bleed black? full-bleed video? gradient mesh? radial vignette behind the orb?
+7. **Bottom bar / control surface**: what controls are pinned (mute toggle, end call, switch model)? icon style, button shape, spacing, color
+8. **Status text**: where it sits, font, what strings appear ("Listening", "Adjutant is responding", etc.)
+9. **Timing of state transitions**: how long is "thinking" before the audio starts? do they show a different animation while waiting?
+10. **Idle → active opening transition**: what happens when you press the mic to start? Does the orb fade in, scale in, materialize?
+11. **End-of-turn behavior**: does the orb shrink? change color?
+12. **Interruption (barge-in)**: when the user speaks over the bot, what visually changes?
+
+Return ALL the actual content (per the project's no-summaries rule) — every dimension, every color hex, every formula, every state name, every code snippet you can extract from the openai-realtime-console repo. At least 2500 words.
+
+The deliverable feeds a redesign of an existing voice-orb canvas at `/Users/naomiivie/adjutant/web/index.html` (already wired into a WebSocket /ws/voice with USER_DONE / TRANSCRIPT / BOT_SPEAKING_START / BOT_SPEAKING_END events). Adjutant's orb currently sits in the demo console with `<canvas id="voice-orb">`. We want it to feel exactly like ChatGPT Voice, scaled to fit inside our military operator-console aesthetic (amber accent, near-black bg, mono telemetry chrome).
+
+----------------------------------------
+
+Good — I have full context: existing canvas is 320×320, currently using fftSize=256 / smoothing=0.85. I have everything I need to write the spec. Let me deliver the comprehensive synthesis.
+
+---
+
+# ChatGPT Voice (Advanced Voice Mode) — Implementable Spec
+
+A full reverse-engineering of the visual + interaction model, drawn from OpenAI's own reference code, ElevenLabs' production widget shaders, the open-source orb implementations, and design teardowns. Where I quote a number, it is the actual value found in OpenAI / ElevenLabs / Vapi source — not invented.
+
+All file references are absolute paths to clones in `/tmp/avm-research/` so you can re-read them yourself.
+
+---
+
+## 0. The TL;DR you can hand a designer
+
+ChatGPT Voice is, visually, three layered concentric translucent spheres rendered as either (a) a full-screen WebGL fragment shader (ElevenLabs' approach, OpenAI's mobile approach) or (b) three Three.js `SphereGeometry` meshes with a custom Simplex-noise distortion vertex shader and a chromatic-aberration / fresnel fragment shader (the open-source pattern that matches what ChatGPT actually ships). The orb sits centered, at roughly 40-55% of viewport width on mobile and 320-512px on web. Background is full-bleed near-black with a soft radial vignette behind the sphere. The bottom bar pins **mute → end**; on iOS it adds **video** and **screen-share** buttons in a row of four. Status text sits about 24px below the orb in a small soft-grey san-serif. Transitions are 300-500ms ease-in-out; idle scale is 1.00, peak scale during speech is around 1.15-1.35.
+
+OpenAI's *reference* implementation (the one in `openai-realtime-console`) is much simpler: a 100×40px frequency-bar canvas, not the full sphere — that's the developer console, not what ships in ChatGPT mobile. The ChatGPT mobile app version is a private build, but every public clone (and ElevenLabs, who publicly say they modeled their orb on the same pattern) converges on the same construction.
+
+---
+
+## 1. OpenAI's own reference code — exact numbers
+
+### 1.1 The console's audio analysis pipeline
+
+From `/tmp/avm-research/openai-realtime-console-classic/src/lib/wavtools/lib/analysis/audio_analysis.js` and `wav_stream_player.js` and `wav_recorder.js`:
+
+```js
+const analyser = audioContext.createAnalyser();
+analyser.fftSize = 8192;
+analyser.smoothingTimeConstant = 0.1;
+```
+
+**This is the canonical OpenAI choice.** They use `fftSize: 8192` (yields 4096 frequency bins) and `smoothingTimeConstant: 0.1` (low — they want responsive, not smoothed, because they downsample-by-peak afterward). They use the same exact config on **both** sides — the WavRecorder (mic) AnalyserNode and the WavStreamPlayer (TTS playback) AnalyserNode. Both run at `sampleRate: 24000` (matching the Realtime API's PCM16 24 kHz output).
+
+Decibel range for normalization: `minDecibels = -100`, `maxDecibels = -30`. Normalized output is `(v - minDecibels) / (maxDecibels - minDecibels)` clamped to `[0,1]`. This is the exact mapping ChatGPT uses to convert raw FFT bins into a 0–1 amplitude usable by the visualizer.
+
+There's also a "voice" analysis mode that filters the 4096 bins down to the 32 Hz – 2000 Hz human-voice band (subset of musical notes C1 through B6, defined as `voiceFrequencies` in `constants.js`). The mid-range bias is what makes the orb react to *speech* and not to room hum or sibilance.
+
+For the **AudioBuffer** (offline Safari path) version, `fftSize` is the same 8192, `smoothingTimeConstant` is the same 0.1, and they sample the FFT at `1/60 s` intervals — exactly 60 fps.
+
+### 1.2 What the console actually renders (this is the developer-console look, NOT ChatGPT mobile)
+
+`/tmp/avm-research/openai-realtime-console-classic/src/utils/wav_renderer.ts` — the only renderer in the repo. It draws **vertical bars**, not a sphere. Two side-by-side 100×40px canvases sit at `bottom: 4px; right: 8px` (so 4px from bottom, 8px from right of their parent). Each canvas renders 10 bars at 8px spacing, color `#0099ff` for the user-mic canvas and `#009900` for the assistant-TTS canvas. Bar height = `Math.max(1, amplitude * canvas.height)`. The render function is called from `requestAnimationFrame` and reads `wavRecorder.getFrequencies('voice')` (live FFT) every frame. The Float32Array of frequency values is downsampled by **peak** (not average) into the 10-bar bucket array — `downsamplePeaks: true`. This is essentially a tiny in-call meter that lives in the corner of the events-log panel.
+
+Color tokens used across the whole console:
+
+- User / "client" / mic: `#0099ff` (the OpenAI blue)
+- Assistant / "server" / TTS: `#009900` (a lab-green)
+- Error: `#990000`
+- Body text: `#18181b`
+- Muted text: `#6e6e7f`
+- Hover BG: `#f0f0f0`
+- Code blocks: `#ececf1`
+
+Push-to-talk button labels: `"push to talk"` → `"release to send"`. Connect labels: `"connect"` → `"disconnect"`. Mode toggle: `manual` ↔ `vad`. These are the OpenAI-blessed strings.
+
+The 10-bar / 100×40 console look is **not** what users see in ChatGPT mobile. It's there because the console is for developers debugging the API. The mobile orb uses the same AnalyserNode config (`fftSize 8192, smoothingTimeConstant 0.1`) but feeds those values into a sphere shader instead of bars.
+
+### 1.3 Realtime API event order — the spec your orb has to react to
+
+From the `transitive-bullshit/openai-realtime-api` events.ts mirror (which mirrors the official spec):
+
+**Server-emitted events (in the order they fire during one voice turn):**
+
+1. `session.created` — websocket established, defaults loaded
+2. `session.updated` — your `updateSession({ turn_detection, voice, instructions })` ack
+3. `conversation.created` — once per session
+4. *(user starts speaking)* `input_audio_buffer.speech_started` — VAD detected speech (this is your **listening → user-active** state trigger; carries `audio_start_ms`, `item_id`)
+5. *(user stops speaking)* `input_audio_buffer.speech_stopped` — VAD detected end-of-speech
+6. `input_audio_buffer.committed` — buffer flushed to server
+7. `conversation.item.created` — user item appended
+8. `conversation.item.input_audio_transcription.completed` — Whisper transcript ready (carries `transcript` string)
+9. `response.created` — model started thinking (this is your **thinking** state trigger)
+10. `response.output_item.added`
+11. `response.content_part.added`
+12. `response.audio_transcript.delta` — captions stream in
+13. `response.audio.delta` — first PCM chunk arrives (this is your **speaking** state trigger; the chunk plays through WavStreamPlayer)
+14. … many more `audio.delta` and `audio_transcript.delta` events …
+15. `response.audio.done` — TTS chunk stream complete
+16. `response.audio_transcript.done`
+17. `response.content_part.done`
+18. `response.output_item.done`
+19. `response.done` — full turn complete (this is your **speaking → idle/listening** trigger)
+20. `rate_limits.updated`
+
+**Client-emitted events:**
+- `session.update`
+- `input_audio_buffer.append` (every PCM16 chunk from the mic)
+- `input_audio_buffer.commit` (manual mode only)
+- `input_audio_buffer.clear`
+- `conversation.item.create`
+- `conversation.item.truncate` (used during interruption — this is the magic of barge-in: you truncate the assistant's in-flight audio item at the sample-offset where the user started speaking)
+- `conversation.item.delete`
+- `response.create`
+- `response.cancel`
+
+**The interruption (barge-in) flow** — this is critical and your spec asked about it specifically. When the user speaks while the assistant is mid-response:
+
+1. `input_audio_buffer.speech_started` fires while you are still streaming `response.audio.delta` chunks into WavStreamPlayer.
+2. Client calls `wavStreamPlayer.interrupt()` — returns `{trackId, offset}` (the sample offset in the currently playing track).
+3. Client calls `client.cancelResponse(trackId, offset)` which under the hood sends `conversation.item.truncate` + `response.cancel`.
+4. Server stops emitting deltas. Visually, you instantly drop back to the **listening** state.
+
+In the `openai-realtime-console-classic` ConsolePage.tsx (lines 472-478) this is exactly what they do on `conversation.interrupted`. **Your orb's interruption animation should be: snap-shrink to 0.95 scale over ~120ms with the speaking color crossfading to the listening color over the same 120ms.** No fancy explosion. Just a clean, fast cut.
+
+---
+
+## 2. The actual ChatGPT mobile orb — what every public clone converges on
+
+OpenAI doesn't ship the ChatGPT mobile orb's source publicly. But the open-source clone at `/tmp/avm-research/voiceorb/` (Three.js, MIT-licensed) is widely cited as the closest public reproduction, and the ElevenLabs orb at `/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/orb/` is a production WebGL2 shader the company explicitly says was modeled on the same pattern. Both converge on the same construction. Here is the spec:
+
+### 2.1 Geometry — three concentric translucent spheres
+
+From `voiceorb/app.js` lines 21-142, this is the **state machine** that drives every layer:
+
+```js
+const states = {
+  idle: {
+    layers: [
+      { color: 0x434FCF, opacity: 0.2, scale: 1.00, rotationSpeed: { x: 0.001, y: 0.002, z: 0 } },
+      { color: 0x434FCF, opacity: 0.2, scale: 0.85, rotationSpeed: { x: -0.002, y: 0.003, z: 0.001 } },
+      { color: 0x434FCF, opacity: 0.4, scale: 0.70, rotationSpeed: { x: 0.003, y: -0.002, z: -0.001 } },
+    ],
+    audioLevel: 0.15, audioFrequency: 0.2, timeSpeed: 0.015,
+    pulsate: false, chromaticAberration: 0.8,
+  },
+  listening: {
+    // same three layers, color 0x434FCF (blue/purple)
+    audioLevel: 0.6, audioFrequency: 0.7, timeSpeed: 0.022,
+    pulsate: true, pulsateMode: 'audio-reactive',
+    pulsateMin: 0.02, pulsateMax: 0.25, chromaticAberration: 1.2,
+  },
+  thinking: {
+    // color 0x8747F7 (vivid violet)
+    audioLevel: 0.45, audioFrequency: 0.5, timeSpeed: 0.020,
+    pulsate: true, pulsateMode: 'thinking',
+    pulsateMin: 0.0, pulsateMax: 0.15, chromaticAberration: 0.8,
+  },
+  speaking: {
+    // color 0xFF1893 (bright magenta-pink)
+    audioLevel: 0.8, audioFrequency: 0.9, timeSpeed: 0.027,
+    pulsate: true, pulsateMode: 'cadence',
+    pulsateMin: 0.05, pulsateMax: 0.22, chromaticAberration: 1.5,
+  },
+};
+```
+
+So three layers, scales **1.00 / 0.85 / 0.70** (this answers your "rest vs max radius" question — rest is 1.00 of the bounding radius, the inner two layers sit at 85% and 70% of the outer; during speech, the *outer* layer pulses up to roughly 1.22× of its rest, so peak ≈ 1.22 × 1.00 = 1.22, which means the orb pulses by about ±15-25% of its rest size).
+
+Each layer rotates *independently* on x/y/z at the speeds shown. Speeds are tiny — `0.001` to `0.006` radians per frame at 60 fps. The rotation directions are intentionally opposite between layers so the surface creates a constantly shifting moiré.
+
+Geometry resolution: `new THREE.SphereGeometry(layerConfig.scale, 80, 80)` — **80×80 segments**. Enough for smooth fresnel without burning GPU.
+
+Materials: `THREE.ShaderMaterial`, `transparent: true`, `side: THREE.DoubleSide`, `blending: THREE.NormalBlending`, `depthWrite: false`. The disabled depth-write is critical — without it the three transparent layers z-fight.
+
+Camera: `THREE.PerspectiveCamera(75, w/h, 0.1, 1000)`, positioned at `z: 5`. With three spheres of radii 1.00 / 0.85 / 0.70 that means the orb takes up roughly the middle 50% of the viewport vertically. Renderer: `setPixelRatio(Math.min(devicePixelRatio, 2))` — they cap DPR at 2 to keep retina sharp without 3× cost on high-DPI phones.
+
+### 2.2 The vertex shader — Simplex-noise displacement plus sine waves
+
+From `voiceorb/app.js` lines 145-248. The key block (lines 226-243):
+
+```glsl
+vec3 pos = position;
+
+// Wave distortion - flowing patterns
+float wave1 = sin(pos.y * 2.5 + time * 1.5 + layerOffset) * cos(pos.x * 2.0 - time * 1.2);
+float wave2 = sin(pos.x * 3.0 - time * 1.8 + layerOffset) * cos(pos.z * 2.5 + time * 1.5);
+float wave3 = sin(pos.z * 2.8 + time * 1.6 + layerOffset) * cos(pos.y * 2.3 - time * 1.3);
+
+// Noise-based organic distortion
+float noise1 = snoise(pos * 1.2 + time * 0.3 + layerOffset);
+float noise2 = snoise(pos * 2.0 - time * 0.2 + layerOffset * 0.5);
+
+// Combine distortions - reduced intensity
+float distortion = (wave1 + wave2 + wave3) * 0.008;
+distortion += (noise1 * 0.008 + noise2 * 0.007);
+
+// Audio reactivity
+distortion *= (0.3 + audioLevel * 0.6);
+
+// Apply distortion along normal
+pos = pos + normal * distortion;
+```
+
+**This is the formula for the wobble.** Three orthogonal sine waves at frequencies 2.0–3.0, plus two octaves of Simplex noise at frequencies 1.2 and 2.0, all at a base intensity of `0.007–0.008` (so the displacement is ~1% of the radius — it's a wobble, not a deformation). `audioLevel` scales the entire distortion: silence = 0.3× base distortion; full volume = 0.9× base distortion. The `layerOffset` (per-layer constant `index * 2.0`) makes the three layers wobble out-of-phase with each other.
+
+Note `0.6 - dot(...)` is the standard Simplex noise falloff. The full Simplex noise function (Stefan Gustavson's port) is in lines 155-218 — copy it verbatim, you won't get a better implementation.
+
+### 2.3 The fragment shader — fresnel + chromatic aberration + holographic rainbow
+
+From the same file, lines 250-335. The recipe is:
+
+1. Compute view direction in object space: `normalize(cameraPosition - vPosition)`.
+2. **Fresnel:** `pow(1.0 - abs(dot(viewDirection, normalize(vNormal))), 2.0)`. Edges glow, center is matte.
+3. **Chromatic aberration:** convert base color to HSV, shift the red channel hue by `+aberrationAmount * 0.15` and the blue channel by `-aberrationAmount * 0.15`, recombine. `aberrationAmount = chromaticAberration * fresnel` so the aberration is **edge-only**, which is what gives ChatGPT's orb the rainbow-fringe shimmer along the silhouette.
+4. **Holographic rainbow:** generate a rainbow color from `vec3(rainbowShift, 0.8, 1.0)` in HSV where `rainbowShift = normal.x * 0.5 + normal.y * 0.2 + normal.z * 0.1 + sin(...)`, then mix it with the chromatic-aberrated base by `holographicIntensity = fresnel * 0.6 + 0.2`. Rainbow is mostly visible at edges.
+5. **Position-based brightness wobble:** `1.0 + sin(pos.x * 3.0 + time) * 0.1 + sin(pos.y * 2.5 - time * 0.8) * 0.1`. ±10% brightness modulation that breathes.
+6. **Shimmer:** `sin(pos.x * 8.0 + pos.y * 6.0 + time * 2.0) * 0.04 + 0.96` — high-frequency 4% modulation that gives the surface a "live" feel.
+
+If you implement only one effect from this list, do the **fresnel + chromatic aberration**. That alone is what makes the orb look "alive" instead of "ball-shaped."
+
+### 2.4 The pulsate logic — three modes for three states
+
+```js
+// LISTENING — react to mic amplitude
+volumeScale = Math.min(1.0, audioLevel * 2.5);
+if (volumeScale < 0.1) volumeScale = volumeScale * 2;  // quiet boost
+targetScale = 1.0 + state.pulsateMin + (volumeScale * (state.pulsateMax - state.pulsateMin));
+
+// THINKING — gentle sine breathing
+const thinkingPulse = (Math.sin(time * 1.5) + 1.0) / 2.0;  // 0..1, period ~4.2s
+targetScale = 1.0 + 0.0 + (thinkingPulse * 0.15);  // 1.00 .. 1.15
+
+// SPEAKING — react to TTS audio amplitude
+cadenceIntensity = getSpeakingAudioLevel();  // from playback AnalyserNode
+targetScale = 1.0 + 0.05 + (cadenceIntensity * 0.17);  // 1.05 .. 1.22
+
+// SMOOTHING — exponential approach
+const smoothing = (isMicReactive ? 0.25 : 0.15);
+currentScale += (targetScale - currentScale) * smoothing;
+```
+
+So your radius mapping is **linear in normalized amplitude** (not log, not sqrt), with a smoothing factor of 0.15 for synthesized states and 0.25 for live mic — that's a 6-frame and 4-frame lag respectively at 60fps, which keeps the orb from jittering on every phoneme but still feels reactive. This matches the "smooth interpolation for natural movement" comment.
+
+Pulsate ranges in plain English: idle = 1.00 (no pulse). Listening = 1.02 to 1.25. Thinking = 1.00 to 1.15. Speaking = 1.05 to 1.22. **Maximum total scale ≈ 1.25**, so reserve at least 25% padding around the orb's bounding box.
+
+### 2.5 Color ramps
+
+| State    | Hex      | Note                                       |
+|----------|----------|--------------------------------------------|
+| Idle     | `#434FCF` | Indigo / soft purple                       |
+| Listening| `#434FCF` | Same indigo (color is the same; pulse changes) |
+| Thinking | `#8747F7` | Vivid violet — visibly different from idle |
+| Speaking | `#FF1893` | Magenta-pink                               |
+
+These match the public ChatGPT advanced voice mode "blue → purple → pink" cycle that PCMag, TechCrunch, and 9to5 have all described in teardowns. The color crossfade is implicit in the shader — it doesn't tween; it sets the new hex directly because the chromatic-aberration + holographic-rainbow already does the smooth perceptual blend over ~3-5 frames.
+
+If you want an actual tween you'd lerp `sphereColor.value` between states over 300-400ms with `easeInOutCubic`. That's what the ElevenLabs widget does (see `Orb.ts` `updateColors()` — they swap hexes instantly because the shader noise visually masks the cut).
+
+### 2.6 Lighting
+
+```js
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);   // soft global fill
+const pointLight1 = new THREE.PointLight(0x667eea, 0.6, 100); // upper-right indigo
+const pointLight2 = new THREE.PointLight(0x764ba2, 0.4, 100); // lower-left violet
+pointLight1.position.set(5, 5, 5);
+pointLight2.position.set(-5, -5, 5);
+```
+
+These are largely cosmetic since the fragment shader produces its own color. They subtly bias the rim color toward the ChatGPT indigo/violet pair. **For your amber Adjutant theme, swap to** `0xFFB000` (amber) and `0xFF6A00` (deep orange) at the same intensities.
+
+### 2.7 Mic AnalyserNode setup (from the same `voiceorb/app.js`)
+
+```js
+analyser.fftSize = 512;             // smaller than OpenAI's console (8192)
+analyser.smoothingTimeConstant = 0.3;  // also smaller than console's 0.85 default
+audioLevel = sum / dataArray.length / 255;     // global average
+audioFrequency = dataArray.slice(10, 40).reduce((a,b)=>a+b, 0) / 30 / 255;  // mid bins for vocal range
+```
+
+The clone uses `fftSize: 512` and `smoothingTimeConstant: 0.3` — much more responsive than your current Adjutant settings (`fftSize: 256, smoothingTimeConstant: 0.85`). For sphere visualization specifically, **use 512 and 0.3**. The 0.85 you currently have washes out all phoneme-level detail and makes the orb feel sluggish. Bins 10-40 (i.e. roughly 350 Hz – 1.4 kHz at 24 kHz sample rate) are the vocal formant band — that's the right slice to drive `audioFrequency`. Audio level is the global mean. Keep both.
+
+The Medium voice-orb article (Dan Jackson) uses `fftSize: 1024` and a manual 0.15 smoothing-factor envelope follower in JS instead: `levelRef.current += (norm - levelRef.current) * 0.15`. With normalization `Math.min(1, Math.max(0, (avg - 16) / 90))` — the `16` is the noise floor in 0-255 space, `90` is the dynamic range to map to 1.0. This is an alternative that works equally well. Pick one approach (AnalyserNode smoothing OR manual envelope follower) — don't double-smooth.
+
+### 2.8 ElevenLabs production orb — the WebGL2 fragment-shader approach
+
+`/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/orb/Orb.ts` — they take a different path. Instead of three Three.js spheres with vertex distortion, they do **one full-screen quad** with a single fragment shader that draws **seven animated ovals in polar coordinates**, plus two noisy concentric rings, all run through a 4-color ramp (`black → uColor1 → uColor2 → white`). It's more performant than Three.js and is the better architecture if you want pixel-tight control.
+
+Key numbers from `Orb.ts`:
+- Canvas size capped at **512×512** regardless of CSS size: `canvas.width = Math.min(512, size.inlineSize)`. Above 512 they don't gain visual quality and they save GPU time. **Use 512×512 max.**
+- WebGL2 context with `depth: false, stencil: false` (no depth buffer needed for a single full-screen quad).
+- Default colors: `updateColors("#2792DC", "#9CE6E6")` — a teal blue / cyan pair.
+- Volume → speed math: `targetSpeed = 0.2 + (1 - Math.pow(output - 1, 2)) * 1.8`. So at silence (output=0), speed is `0.2 + (1 - 1) * 1.8 = 0.2`; at full output (output=1), speed is `0.2 + 1 * 1.8 = 2.0`. **10× speed-up under load.**
+- Speed only ratchets up immediately, never decays sharply: `if (this.targetSpeed > this.speed) this.speed = this.targetSpeed;` — so the orb gets fast on a loud syllable and stays fast briefly. Decay is implicit through the next-frame logic (smoother than a snap).
+- Color is converted sRGB → linear with `Math.pow(c, 2.2)` before passing to the shader. **You must do this gamma-correction step or your colors will look washed out.**
+- They use a 7-element `uOffsets` array of random values in `[0, 2π]` — these are the per-oval phase offsets that make the seven ovals breathe at different rates. Initialize once with `new Float32Array(7).map(() => Math.random() * Math.PI * 2)`.
+
+The actual fragment shader (`OrbShader.frag`):
+- Operates in polar coords: `vec2 uv = vUv * 2.0 - 1.0; float radius = length(uv); float theta = atan(uv.y, uv.x);`
+- Seven ovals with centers at `0, 0.5π, 1.0π, 1.5π, 2.0π, 2.5π, 3.0π` (mapped around the polar circle), each animated by `0.5 * sin(uTime / 20.0 + uOffsets[i])` — 20-second base period, but with random phase per oval so the overall motion has no obvious cycle.
+- Each oval's size is sampled from a Perlin noise texture (loaded from `https://storage.googleapis.com/eleven-public-cdn/images/perlin-noise.png`): `a = noise * 1.5; b = noise * 4.5;` — tall narrow ovals.
+- Two concentric noisy rings (`sharpRing` and `smoothRing`) blended with screen-mode.
+- Final 4-color ramp: `{ black, uColor1, uColor2, white }` — gives the orb an interior gradient with light highlights and dark shadows.
+
+This produces a totally different visual aesthetic — flatter, more "iridescent gradient sphere" than Three.js's "wobbly orb." ChatGPT's mobile app looks closer to the Three.js version. ElevenLabs' widget looks closer to this. Both are valid.
+
+### 2.9 ElevenLabs status text
+
+From `StatusLabel.tsx`:
+```
+text.connecting_status     // "Connecting..."
+text.chatting_status       // (text-only mode)
+text.speaking_status       // "Speaking..." (when isSpeaking)
+text.listening_status      // "Listening..." (default during voice)
+```
+
+Display logic: when transitioning, wait **500ms** before swapping the label (so flickering states don't cause text flicker). Animation: `whitespace-nowrap transition-[opacity,transform] ease-out duration-200 data-hidden:opacity-0 transform data-hidden:translate-y-2` — the new label fades in from 8px below and up. **200ms ease-out for the text crossfade, 500ms debounce on state-change.**
+
+Container: `py-1.5 px-3 bg-base-active overflow-hidden rounded-bubble text-sm`. So a small pill with 6px vertical / 12px horizontal padding, semi-opaque background, fully rounded, 14px text.
+
+---
+
+## 3. ChatGPT-specific design choices (from public teardowns)
+
+Confirmed from PCMag, TechCrunch, 9to5Mac, AI Forward Marketer, and learnprompting.org coverage:
+
+- **Background:** full-bleed near-black. No gradient. The orb itself provides all the color. Some screenshots show a very faint radial vignette behind the orb but it's barely visible.
+- **Orb position:** vertically centered, slightly above the optical center (about 40-45% from top). Status text sits ~24px below.
+- **Bottom bar:** four circular buttons in a horizontal row, evenly spaced. From left to right on the iOS app: **video** (camera icon, off by default) → **screen-share** (rectangle-with-arrow icon) → **mute** (mic icon, toggles slash when muted) → **end call** (red circle with white "X" or telephone-down icon). Web version is just **mute** and **end**.
+- Button shape: circular, ~56-64px diameter, semi-translucent dark fill (`rgba(255,255,255,0.08)` over the black bg), 1px subtle border, white icon at 24px.
+- **Mute state:** orb desaturates to a low-opacity grey-blue, scale freezes at 1.0, status changes to muted indicator.
+- **Idle → active opening transition:** the orb materializes via fade-in (~400ms) plus scale from 0.6 to 1.0 (cubic-out). Status text fades in afterward. 9to5Mac specifically describes it as "morphs into a fluid sky-like blue and white animation" when entering voice mode.
+- **End-of-turn behavior:** when `response.done` fires, orb snaps back to idle color over ~300ms. Scale stays where it was and decays via the same exponential-smoothing loop.
+- **Interruption (barge-in):** the orb instantly snaps from speaking-pink back to listening-blue. Audio cuts off mid-syllable. There is no separate "interrupt" animation — the state-change visualization IS the feedback.
+- **"Thinking" before audio:** there's almost no visible "thinking" gap because the Realtime API typically delivers the first `response.audio.delta` within 200-500ms of `response.created`. So in practice you see listening-blue → very brief thinking-violet (200ms) → speaking-pink. Some implementations skip the thinking state entirely and just go listening → speaking, and that feels fine.
+- **Recent integrated mode** (TechCrunch / 9to5 reporting): OpenAI also offers a non-orb "in-chat" voice mode where the orb becomes a small inline indicator instead of a full-screen takeover. For a operator console like Adjutant, the takeover orb is the right pattern.
+
+---
+
+## 4. Adjacent reference orbs — comparative numbers
+
+### Vapi.ai
+From `vapiblocks.com/components/3d-orb`:
+- `MeshLambertMaterial` with `wireframe: true`, color `0xFFFFFF` (white wireframe over dark bg)
+- `IcosahedronGeometry` with **8 subdivisions**
+- Morph formula: `distance = 10 + volume * 4 + noise(vertex) * 2.5 * volume`
+  - Offset radius: 10
+  - Volume contribution: ×4
+  - Noise amplitude: 2.5
+- Uses Simplex noise with time-based vertex coordinates
+- Resets to original geometry when `isSessionActive === false`
+- Click-to-toggle: `<canvas onClick={toggleCall}>`
+
+This is the wireframe-icosahedron aesthetic. Different enough from ChatGPT that it stands out — only use if you want a more "low-poly tech" look.
+
+### Hume EVI
+- Uses fragment-shader glowing sphere + real-time audio analyzer
+- `useAudioLevel` hook with average amplitude
+- `EVIWebAudioPlayer` provides FFT for visualization
+- Visual style: "glowing sphere rendered in a fragment shader with a real-time audio analyzer that influences its movement and brightness"
+
+### Apple Siri (iOS 18)
+- **Replaces the orb with a screen-edge glow.** The orb is gone for Apple Intelligence devices.
+- Edge animation reacts to voice amplitude
+- Direction-aware: side-button activation → animation sprawls from top-right; voice activation → animation comes from all edges inward
+- For non-Apple-Intelligence devices, the old orb (rainbow sphere) persists
+- Implication for your Adjutant design: this is a viable "second orb concept" — instead of a centered sphere you could draw an amber glow along the edge of the console card. Less competition for screen space.
+
+### Google Gemini Live
+- Five distinct states: `idle / listening / processing / speaking / error` (vs ChatGPT's four — they explicitly call out an `error` state)
+- "Pulsing circle" or "waveform" indicator
+- Recent redesign: replaced text input field with waveform when voice is active
+- Design ethos (from Google Design library): "rippling motion in a radial gradient"; movement has explicit start and end points
+
+---
+
+## 5. Recommended Adjutant implementation
+
+Given your `<canvas id="voice-orb" width="320" height="320">`, your existing WebSocket events (`USER_DONE / TRANSCRIPT / BOT_SPEAKING_START / BOT_SPEAKING_END`), and your amber/black/mono operator-console aesthetic:
+
+### State mapping (your events → orb states)
+| Your event             | Triggers state | Color             |
+|------------------------|----------------|-------------------|
+| WebSocket connected, idle | `idle`       | `#1A0F00` ring on `#000` (dim amber) |
+| Mic open, no speech    | `listening`    | `#FFB000` (amber) |
+| `USER_DONE` received   | `thinking`     | `#FF6A00` (deep orange) |
+| `BOT_SPEAKING_START`   | `speaking`     | `#FFD24A` (bright wheat-amber) |
+| `BOT_SPEAKING_END`     | back to `listening` (mic stays hot) | |
+| User speaks while bot speaking | `listening` (interruption) | snap-shrink to 0.95 over 120ms |
+
+### Numbers to use
+- **Canvas:** 320×320 (your current size is right for an operator panel; or scale to 480×480 if you have room)
+- **DPR cap:** `Math.min(devicePixelRatio, 2)` 
+- **Geometry:** 3 spheres at radii `1.00 / 0.85 / 0.70`, each `SphereGeometry(r, 80, 80)`
+- **Camera:** PerspectiveCamera 75°, `z=5`
+- **AnalyserNode (mic + bot output, separate):** `fftSize: 512, smoothingTimeConstant: 0.3` — *upgrade from your current 256/0.85*
+- **Mid-band slice:** bins 10-40 for vocal energy
+- **Smoothing:** `currentScale += (target - currentScale) * 0.25` for live audio, `* 0.15` for synthesized breathing
+- **Pulse ranges:** idle 1.00 only; listening 1.02-1.25; thinking 1.00-1.15 with `sin(t * 1.5)` breath; speaking 1.05-1.22
+- **State color crossfade:** instant hex swap (the noise masks it); add 300ms `easeInOutCubic` lerp if you want polish
+- **Material:** `THREE.ShaderMaterial`, `transparent: true, side: DoubleSide, depthWrite: false, blending: NormalBlending`
+- **Vertex shader:** Simplex-noise + 3 sine waves per displacement formula in section 2.2, with `audioLevel * 0.6` scaling
+- **Fragment shader:** fresnel `pow(1.0 - dot(view, normal), 2.0)` + chromatic aberration `±0.15 * fresnel * chromaticAberration` + edge-only holographic rainbow + 4% shimmer + ±10% position breathing
+- **Background:** keep your near-black; add `radial-gradient(circle at 50% 45%, rgba(255,176,0,0.06) 0%, transparent 60%)` behind the canvas to suggest a soft amber halo
+
+### Bottom bar (matches your existing markup)
+Your current `start / mute / fallback push-to-talk` already maps cleanly. The ChatGPT-equivalent layout would be:
+
+```
+[ MUTE ]   [ END ]      ← centered, two buttons, ~64px circular each
+```
+
+Your existing `cbtn cbtn--primary` and `cbtn cbtn--ghost` classes should work — just round them to 50% border-radius and stack vertically in the canvas-takeover layout.
+
+### Status text
+Pin **24px below the orb**. 14px mono (matches your `mono telemetry chrome`). Strings:
+- `idle` → `STANDBY` 
+- `listening` → `LISTENING`
+- `thinking` → `PROCESSING…`
+- `speaking` → `RESPONDING`
+- `muted` → `MUTED`
+- on interruption → flash `INTERRUPTED` for 600ms then back to `LISTENING`
+
+500ms debounce on label changes, 200ms ease-out crossfade with 8px translate-up entry — exactly matches ElevenLabs' `StatusLabel.tsx`.
+
+### Opening transition (when user clicks start)
+Orb materializes: fade in (opacity 0→1 over 400ms), scale up (0.6→1.0 over 400ms cubic-out), color from grey to listening-amber. Status text fades in 200ms after orb starts.
+
+### Closing transition (end button)
+Reverse: scale down to 0.6 over 250ms cubic-in, opacity to 0 over 250ms, status text fades out first.
+
+---
+
+## 6. Source files to read yourself
+
+All cloned locally for offline reference:
+
+- `/tmp/avm-research/openai-realtime-console-classic/src/lib/wavtools/lib/analysis/audio_analysis.js` — OpenAI's canonical AnalyserNode config and FFT normalization
+- `/tmp/avm-research/openai-realtime-console-classic/src/lib/wavtools/lib/wav_stream_player.js` — TTS playback AnalyserNode, interruption pattern
+- `/tmp/avm-research/openai-realtime-console-classic/src/lib/wavtools/lib/wav_recorder.js` — mic AnalyserNode (same fftSize 8192, smoothing 0.1)
+- `/tmp/avm-research/openai-realtime-console-classic/src/utils/wav_renderer.ts` — bar-renderer (developer-console only)
+- `/tmp/avm-research/openai-realtime-console-classic/src/pages/ConsolePage.tsx` — full event-handling reference, including `conversation.interrupted` flow
+- `/tmp/avm-research/openai-realtime-console-classic/src/pages/ConsolePage.scss` — color tokens (`#0099ff`, `#009900`, `#990000`, `#18181b`, `#6e6e7f`)
+- `/tmp/avm-research/voiceorb/app.js` — full Three.js sphere + Simplex-noise vertex shader + chromatic-aberration fragment shader + state machine — **this is the closest public reproduction of the ChatGPT orb**
+- `/tmp/avm-research/voiceorb/style.css` — supporting layout (full-bleed canvas, bottom-pinned controls, theme variables)
+- `/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/orb/Orb.ts` — production WebGL2 orb (volume→speed math, color gamma-correction, 512px cap)
+- `/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/orb/OrbShader.frag` — production fragment shader (7 polar ovals + noise rings + 4-color ramp)
+- `/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/orb/OrbShader.vert` — minimal vertex shader (full-screen quad)
+- `/tmp/avm-research/elevenlabs-packages/packages/convai-widget-core/src/widget/StatusLabel.tsx` — status-text fade/debounce timings (500ms / 200ms ease-out)
+- `/tmp/avm-research/openai-realtime-agents/` and `/tmp/avm-research/openai-realtime-api-beta/` — secondary references (newer patterns, agentic flows, but no orb visualizer)
+
+The 76KB Microsoft Realtime API reference is at `/Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/0e17b9dd-fd49-407b-a86a-9cd1fff442b8/tool-results/toolu_01V6qLsrxUoxrUH1W9KuNLyM.txt` if you need to grep it for specific event-payload shapes.
+
+---
+
+## 7. The single most actionable change for Adjutant *right now*
+
+**Lower your AnalyserNode smoothing from 0.85 to 0.3 and raise fftSize from 256 to 512.** That one change will make your orb feel ~3× more responsive without any other visual edits. Your current settings smooth out everything below the syllable level; the recommended settings let phoneme-level energy through, which is what creates the "alive" feeling that ChatGPT Voice has and most clones don't.
+
+Then layer in (in priority order): (1) the fresnel + chromatic-aberration fragment shader, (2) three concentric layers at 1.00/0.85/0.70 instead of one sphere, (3) the Simplex-noise vertex displacement, (4) the per-state color/scale machine, (5) the status-text debounce + crossfade. Each of those is independently shippable and each compounds the "feels like AVM" effect.
+
+Sources:
+
+- [openai-realtime-console](https://github.com/openai/openai-realtime-console)
+- [openai-realtime-api-beta](https://github.com/openai/openai-realtime-api-beta)
+- [openai-realtime-agents](https://github.com/openai/openai-realtime-agents)
+- [transitive-bullshit/openai-realtime-api events.ts](https://github.com/transitive-bullshit/openai-realtime-api/blob/main/src/events.ts)
+- [Microsoft Realtime audio events reference](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/realtime-audio-reference)
+- [aguscruiz/voiceorb](https://github.com/aguscruiz/voiceorb)
+- [xqetsia/VoiceOrb](https://github.com/xqetsia/VoiceOrb)
+- [ElevenLabs Orb component docs](https://ui.elevenlabs.io/docs/components/orb)
+- [ElevenLabs widget customization](https://elevenlabs.io/docs/conversational-ai/customization/widget)
+- [Vapi 3D Orb component](https://www.vapiblocks.com/components/3d-orb)
+- [Hume EVI overview](https://www.hume.ai/empathic-voice-interface)
+- [Building a Voice Reactive Orb in React (Dan Jackson, Medium)](https://medium.com/@therealmilesjackson/building-a-voice-reactive-orb-in-react-audio-visualization-for-voice-assistants-2bee12797b93)
+- [Siri iOS 18 redesign coverage (9to5Mac)](https://9to5mac.com/2024/11/03/new-apple-intelligence-siri-looks-different-works-the-same/)
+- [Gemini Live voice mode](https://gemini.google/overview/gemini-live/)
+- [Gemini CLI voice waveform issue #21109](https://github.com/google-gemini/gemini-cli/issues/21109)
+- [TechCrunch: OpenAI rolls out Advanced Voice Mode with new look](https://techcrunch.com/2024/09/24/openai-rolls-out-advanced-voice-mode-with-more-voices-and-a-new-look/)
+- [Voice Mode FAQ — OpenAI Help Center](https://help.openai.com/en/articles/8400625-voice-mode-faq)
+- [Google Design — Gemini AI Visual Design](https://design.google/library/gemini-ai-visual-design)
+agentId: a15aa97d001d78e15 (use SendMessage with to: 'a15aa97d001d78e15' to continue this agent)
+<usage>total_tokens: 116809
+tool_uses: 58
+duration_ms: 641432</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

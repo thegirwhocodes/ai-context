@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developer.vonage.com/en/home
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:00:41 UTC
+========================================================================
+
+URL: https://developer.vonage.com/en/home
+Extraction prompt: What voice API capabilities does Vonage offer? List all voice-related features: IVR, webhooks, call control, recording, audio playback, text-to-speech, SIP, websockets. Does Vonage support Nigerian phone numbers (local or toll-free)? What countries do they support for phone numbers?
+
+----------------------------------------
+
+# Vonage Voice API Capabilities
+
+Based on the webpage content, Vonage offers these voice features:
+
+- **Send smart voice notifications**
+- **Create IVRs and Voice Bots**
+- **Speech to text and WebSockets**
+- **Text to Speech with over 50+ languages**
+- **Embed calls in web and mobile apps**
+- **Web & Mobile (iOS, Android) SDKs**
+
+The page specifically mentions the Voice API enables developers to "connect people around the world and automate voice interactions using AI technologies."
+
+## Nigerian Phone Number Support
+
+**The webpage does not provide information about Nigerian phone number support or a complete list of supported countries.** While the content discusses general geographic reach and references "leveraging mobile networks" globally, it does not specify which individual nations are supported for phone numbers or telecommunications services.
+
+To determine Nigerian number availability, you would need to consult Vonage's detailed pricing pages, documentation, or contact their sales team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: africastalking voice Record element callbackUrl maxLength finishOnKey Say partia
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 20:59:52 UTC
+========================================================================
+
+Search query: africastalking voice Record element callbackUrl maxLength finishOnKey Say partial recording XML example
+
+----------------------------------------
+
+Web search results for query: "africastalking voice Record element callbackUrl maxLength finishOnKey Say partial recording XML example"
+
+Links: [{"title":"Record","url":"https://developers.africastalking.com/docs/voice/actions/record"},{"title":"africastalking/africastalking - Packagist.org","url":"https://packagist.org/packages/africastalking/africastalking"},{"title":"voice helpers · Issue #15 · AfricasTalkingLtd/africastalking-node.js","url":"https://github.com/AfricasTalkingLtd/africastalking-node.js/issues/15"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/voice/handle_calls"},{"title":"GitHub - AfricasTalkingLtd/africastalking-php: Official PHP SDK","url":"https://github.com/AfricasTalkingLtd/africastalking-php"},{"title":"Build a Interactive Voice Response (IVR) application with Africa's Talking, HapiJS, Docker and Heroku","url":"https://anthonylimo.hashnode.dev/build-a-interactive-voice-response-ivr-application-with-africas-talking-hapijs-docker-and-heroku-ck2ufbsji005j1es1dn46h7k6"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"africastalking-php/src/Voice.php at master · AfricasTalkingLtd/africastalking-php","url":"https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/src/Voice.php"},{"title":"africastalking-php/README.md at master · AfricasTalkingLtd/africastalking-php","url":"https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/README.md"},{"title":"Say (Text-to-Speech)","url":"https://developers.africastalking.com/docs/voice/actions/say"}]
+
+Based on the search results, here's information about Africa's Talking Voice Record element:
+
+## Record Element Parameters
+
+The Record action has parameters including `finishOnKey` (the key which will terminate the action of recording) and `maxLength` (the maximum amount of time in seconds a recording should take).
+
+Additionally, the `callbackUrl` parameter is used to forward the results of the Recording action.
+
+## XML Example Structure
+
+Based on the code examples in the search results, here's how the Record element with parameters is constructed. The Record element builds with attributes like `finishOnKey`, `maxLength`, and `callBackUrl`.
+
+A typical XML structure for the Record element would look like:
+
+```xml
+<Record finishOnKey="#" maxLength="30" callbackUrl="https://yourdomain.com/recording-callback" />
+```
+
+## Say Element Integration
+
+The Record element can be combined with other voice actions. For example, Say elements can be nested within other voice actions with attributes like `voice: 'woman'`, allowing you to provide voice prompts before or alongside recording.
+
+For more detailed documentation and additional parameters, you can visit the official Africa's Talking voice API documentation at developers.africastalking.com.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

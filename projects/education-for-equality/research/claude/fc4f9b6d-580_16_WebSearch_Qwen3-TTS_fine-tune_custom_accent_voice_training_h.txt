@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qwen3-TTS fine-tune custom accent voice training howto guide 2026
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:14:24 UTC
+========================================================================
+
+Search query: Qwen3-TTS fine-tune custom accent voice training howto guide 2026
+
+----------------------------------------
+
+Web search results for query: "Qwen3-TTS fine-tune custom accent voice training howto guide 2026"
+
+Links: [{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation | by cheng zhang | Jan, 2026 | Medium","url":"https://medium.com/@zh.milo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1a2efca05cd6"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation - DEV Community","url":"https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6"},{"title":"Qwen3-TTS Fine-tuning Complete Guide: Train Your Own Voice Model from Scratch - Mozi's website","url":"https://mozi1924.com/article/qwen3-tts-finetuning-en/"},{"title":"GitHub - DarioFT/ComfyUI-Qwen3-TTS: A ComfyUI custom node suite for Qwen3-TTS, supporting 1.7B and 0.6B models, Custom Voice, Voice Design, Voice Cloning and Fine-Tuning. · GitHub","url":"https://github.com/DarioFT/ComfyUI-Qwen3-TTS"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice ...","url":"https://curateclick.com/blog/2026-qwen3-tts-full-guide"},{"title":"Qwen3-TTS Voice Cloning Guide 2026: Reference Audio, Voice Design & Accent Tips","url":"https://ocdevel.com/blog/20260302-qwen-tts-voice-cloning"},{"title":"GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. · GitHub","url":"https://github.com/QwenLM/Qwen3-TTS"},{"title":"High‑Quality Long‑Form TTS with Qwen3 Open‑Weight Models | by Gary A. Stafford | Data Science Collective | Mar, 2026 | Medium","url":"https://garystafford.medium.com/high-quality-long-form-tts-with-qwen3-open-weight-models-cdd6e3d00df0"},{"title":"New language adaptation · QwenLM/Qwen3-TTS · Discussion #189","url":"https://github.com/QwenLM/Qwen3-TTS/discussions/189"}]
+
+I found comprehensive information about Qwen3-TTS fine-tuning with custom accent voice training for 2026. Here's a summary of the key findings:
+
+## Fine-Tuning Capability
+
+The base models (Qwen3-TTS-12Hz-1.7B-Base and 0.6B-Base) are designed for fine-tuning, with official documentation mentioning single-speaker fine-tuning support, with multi-speaker fine-tuning coming in future updates.
+
+## Practical Fine-Tuning Tools
+
+There is a step-by-step guide for using the Qwen3-TTS Easy Finetuning tool to build a stable, natural, and accent-free multilingual voice model. The process automates the entire pipeline: audio segmentation, automatic transcription (ASR), data cleaning, encoding, and training.
+
+A computer with an NVIDIA GPU is recommended (with VRAM ≥ 8GB; fine-tuning the 1.7B model requires ≥ 16GB).
+
+## Accent Fine-Tuning Approach
+
+For accent adaptation, fine-tuning using phoneme sequences works better for languages rich in homographs, requiring a g2p model first, and since the standard G2P model is closer to English language, it required less training steps to learn the accent.
+
+## Resources
+
+The Qwen3-TTS-EasyFinetuning project repository is available at https://github.com/mozi1924/Qwen3-TTS-EasyFinetuning, and fine-tuning functionality is available to train custom voice models using your own dataset (folder of .wav + .txt files).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

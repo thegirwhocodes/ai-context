@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://academicjournals.org/journal/IJEL/article-full-text/1F0EB5564993
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:13:10 UTC
+========================================================================
+
+URL: https://academicjournals.org/journal/IJEL/article-full-text/1F0EB5564993
+Extraction prompt: Extract the key findings about Nigerian Pidgin English's influence on educational outcomes. What does the research conclude about whether Pidgin helps or hurts learning? Any specific data on comprehension, test scores, or age groups.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

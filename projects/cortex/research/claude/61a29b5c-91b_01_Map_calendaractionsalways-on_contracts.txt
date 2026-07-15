@@ -1,0 +1,26 @@
+========================================================================
+AGENT RESEARCH: Map calendar/actions/always-on contracts
+Session: 61a29b5c-91ba-46f7-accb-278fc2b06ea7
+Time: 2026-07-14 22:11:05 UTC
+========================================================================
+
+You are mapping code contracts in a Next.js App Router repo at /Users/naomiivie/cortex/cortex-web (read-only; do not edit). I need a precise, factual map of the CALENDAR, ACTION-APPROVAL, and ALWAYS-ON features so another engineer can write independent acceptance tests. Focus ONLY on these:
+
+1. Always-on event processing: app/api/assistant-loop/run/route.ts, app/api/cron/* (sync-all, daily-briefing, memory-maintenance, monthly-retrain, weekly-profile), and any event/ledger table (look for cortex_events). How are events processed on a schedule? What guarantees always-on behavior? Is there a cron config (vercel.json / vercel.ts)?
+2. Calendar proposal -> approval -> receipt: app/api/integrations/calendar/{connect,callback,sync}/route.ts, app/api/day-plan, app/api/actions/*, and any "proposal" concept. Trace the full lifecycle: how is a calendar change proposed, how is it approved, and what receipt/confirmation is produced? Where does an actual calendar write happen (if any) and is it gated behind explicit approval?
+3. Action approval state machine: app/api/actions/route.ts, app/api/actions/[id]/approve/route.ts, app/api/actions/[id]/reject/route.ts, app/api/tasks/[id]/route.ts and lib for actions. What are the possible states of an action? What transitions are allowed? Is there a state column/enum? What prevents an action from executing without approval? Quote the state values and transition guards with file:line.
+
+For EACH area report: exact file paths, exported function names + signatures, HTTP method + request/response shape, DB table/column/enum names, the state machine states and allowed transitions, and the exact lines proving approval-gating. Cite file:line for every claim. Flag anywhere an action could execute without explicit approval. Be precise and structured. Do not write any files.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: abca64fe92592f97f (internal ID - do not mention to user. Use SendMessage with to: 'abca64fe92592f97f', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/61a29b5c-91ba-46f7-accb-278fc2b06ea7/tasks/abca64fe92592f97f.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

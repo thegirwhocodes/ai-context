@@ -1,0 +1,635 @@
+========================================================================
+AGENT RESEARCH: Technical patterns for personal sites
+Session: 199966ea-8209-4eba-b6f8-2ec8bbcd3999
+Time: 2026-05-14 21:40:28 UTC
+========================================================================
+
+Do EXTREMELY deep technical research on how the best founder/builder personal websites are BUILT in 2026. Goal: I'm rebuilding a portfolio site for Naomi Ivie (Nigerian founder, Wesleyan junior, building Sabi voice AI tutor). She has Next.js 16 + Tailwind v4 + TypeScript on Vercel as the current stack — need to know if that's right and what implementation patterns to use.
+
+Research questions:
+
+1. **STACK choices on top personal sites** — what are people actually using in 2026?
+   Use WebFetch / view-source / GitHub spelunking on:
+   - https://natfriedman.com — view source, infer stack
+   - https://leerob.io — Lee Robinson's site is on GitHub at https://github.com/leerob/leerob.io — check current stack
+   - https://brittanychiang.com — also on GitHub at https://github.com/bchiang7/v4
+   - https://brianlovin.com — open source at https://github.com/brianlovin/brian-lovin-next
+   - https://geoffreylitt.com (uses Jekyll I think)
+   - https://www.joshwcomeau.com (Next.js custom)
+   - https://maggieappleton.com (Astro)
+   - https://rauchg.com
+   - https://stevekrouse.com (built on Val Town)
+   - https://patrickcollison.com (static HTML)
+   - Sahil Lavingia, Pieter Levels, Daniel Gross
+   For each, report:
+   - Framework (Next.js? Astro? Eleventy? Jekyll? Plain HTML?)
+   - Routing pattern (single page? multi-page? MDX?)
+   - Styling (Tailwind? CSS modules? styled-components? vanilla CSS?)
+   - Fonts (system? Google Fonts? self-hosted? exact font-family stacks visible in CSS)
+   - Hosting (Vercel? Netlify? Cloudflare Pages? GitHub Pages? Custom?)
+   - CMS (markdown files? Notion? Sanity? Contentlayer? MDX?)
+   - Analytics (Plausible? Fathom? Vercel Analytics? GA?)
+   - Open-source status
+
+2. **TYPOGRAPHY patterns** — what fonts are dominant in 2026 for "founder-quality" sites?
+   - System fonts vs Google Fonts vs Adobe Fonts vs self-hosted
+   - Specific font combinations seen in the wild: Inter, IBM Plex, Geist, JetBrains Mono, Suisse, Söhne, GT Walsheim, Tiempos, Newzald, Roslindale, Instrument Serif, Fraunces, Reckless, Untitled Sans, Untitled Serif, NB International Pro
+   - Which fonts feel "expensive" / "founder" vs "engineer" vs "designer"?
+   - Font loading strategies (next/font, font-display, variable fonts)
+   - Sizes: hero, h1, h2, body, caption — what are typical scales?
+   - Line-height, letter-spacing patterns
+
+3. **COLOR / theming patterns**:
+   - Light mode vs dark mode default — what do top sites do?
+   - Is auto-switching the norm now, or one or the other?
+   - Background colors actually used (#ffffff vs off-white vs paper-tone)
+   - Text colors (#000000 vs #111 vs #1a1a1a — what's the standard?)
+   - Accent color usage (one accent? two? gradient?)
+   - Specific palettes seen: Vercel's near-black, Linear's lavender, Notion's paper, etc.
+
+4. **PERFORMANCE / SEO / METADATA**:
+   - Open Graph image strategies (static? generated? @vercel/og?)
+   - Twitter card setup
+   - Favicon generation
+   - Sitemap, robots.txt
+   - JSON-LD structured data for Person schema
+   - Lighthouse scores typical (what's a good target?)
+   - Core Web Vitals
+   - next-themes for dark mode?
+
+5. **ANIMATION / INTERACTION patterns** — what's tasteful and what's overdone?
+   - Page transitions (Framer Motion? View Transitions API?)
+   - Scroll animations (parallax, fade-in, blur)
+   - Hover states on links/cards
+   - Cursor effects (custom cursors — yes/no in 2026?)
+   - Subtle entrance animations
+   - When is "no animation" better?
+
+6. **CONTENT MANAGEMENT** — how do top builders manage their site content?
+   - MDX in repo?
+   - Notion as CMS (via Notion API)?
+   - Sanity / Contentful?
+   - Hand-written JSX?
+   - Local markdown with frontmatter?
+
+7. **OPEN-SOURCE TEMPLATES to consider**:
+   - leerob.io (MIT)
+   - brittanychiang/v4
+   - timlrx/tailwind-nextjs-starter-blog
+   - Next.js portfolio templates from Vercel
+   - Astro Portfolio templates
+   - The "minimal" trend (Vercel templates page)
+
+8. **SPECIFIC IMPLEMENTATION QUESTIONS** for Naomi's site (currently on Next.js 16 + Tailwind v4):
+   - Best font pairing for a "professional clean editorial" founder site? (we currently use Inter + Instrument Serif)
+   - Should we add dark mode?
+   - Should we add view transitions for navigation?
+   - Should we add a custom OG image (auto-generated per page)?
+   - Should we add JSON-LD Person schema for SEO?
+   - Should we add an RSS feed?
+   - What's the minimal setup for analytics?
+   - Hosting on Vercel free tier — what hits the limits?
+   - Custom domain configuration on Vercel (DNS, root vs www, redirects)?
+
+9. WebSearch on:
+   - "best personal website tech stack 2026"
+   - "next.js portfolio site examples"
+   - "minimal portfolio site templates"
+   - "founder personal site open source"
+   - "fonts that look expensive personal website"
+   - "next.js 16 portfolio best practices"
+   - "vercel og image dynamic"
+
+After all research, deliver:
+
+A. **Stack comparison table**: top personal sites with their actual stacks.
+
+B. **Recommended stack** for Naomi: defend or revise Next.js 16 + Tailwind v4 + Inter + Instrument Serif. Should we swap fonts? Add dark mode? Add MDX? Be specific.
+
+C. **Concrete typography spec**: exact font families, fallbacks, weights, sizes for hero/h1/h2/h3/body/caption. Line-height and letter-spacing values.
+
+D. **Concrete color spec**: hex values for background, ink, muted, accent, rule.
+
+E. **Performance/SEO checklist**: 10-15 items to make the site Lighthouse-100, properly indexed, with OG images.
+
+F. **Animation/interaction recommendations**: 3-5 tasteful additions (and 3 things to NEVER do).
+
+G. **Specific implementation code snippets** ready to drop in:
+   - next/font setup with optimal config
+   - @vercel/og image route
+   - JSON-LD Person schema
+   - sitemap.ts and robots.ts
+   - View Transitions setup
+   - next-themes config
+
+DO NOT SUMMARIZE. Return actual code, actual font names, actual hex values, actual GitHub URLs. Aim for 3000+ words.
+
+----------------------------------------
+
+I have more than enough data. Let me now compile the comprehensive research report.
+
+---
+
+# Founder/Builder Personal Sites in 2026: Deep Technical Research
+
+## A. Stack Comparison Table (verified from source / open-source repos)
+
+| Site | Framework | Routing / Content | Styling | Fonts | Hosting | Theme | Analytics | Open source |
+|---|---|---|---|---|---|---|---|---|
+| **leerob.com** (the URL is now leerob.com, redirected from leerob.io) | **Next.js 16.2.3 + React 19.1 + Turbopack** | App Router, MDX pages (`app/n/[slug]/page.mdx`) | **Tailwind v4** (`@tailwindcss/postcss ^4.1.8`), `antialiased tracking-tight` | **`stix_two_text` (next/font CSS-module variable)** for serif; otherwise system stack. The class name is literally `stix_two_text_f63ca83e-module__1_clHq__variable`. (His template repo `next-mdx-blog` uses Inter — production has shifted to STIX Two Text.) | Vercel (deployment id visible as `dpl_B6ZE...`) | **next-themes** (`attribute="class"`, `defaultTheme="system"`, `enableSystem`, `disableTransitionOnChange`) | **@vercel/analytics ^1.5.0** | Yes — github.com/leerob/next-mdx-blog (template) |
+| **brittanychiang.com (v4)** | **Gatsby 3.4** + React 17 | Single-page, JSX | **styled-components 5.3 + Prism** | **Calibre → Inter → SF Pro → system** sans; **SF Mono → Fira Code** mono. Color palette: navy `#0a192f` bg, slate `#8892b0`, lightest-slate `#ccd6f6`, green accent `#64ffda`. Type scale: 12–32px (--fz-xxs…--fz-heading). | Netlify (uses `gatsby-plugin-netlify`) | Single dark mode | Google Analytics | Yes — github.com/bchiang7/v4 (MIT) |
+| **brianlovin.com** (brios-v2) | **Next.js 16.1.2 + React 19.2** | App Router, **Notion API** as CMS (`@notionhq/client 5.4`) | **Tailwind v4** + `tailwind-merge`, `class-variance-authority`, `cva` | Custom (Notion-rendered) | Vercel | **next-themes 0.4.6** | **Fathom (`fathom-client 3.7`)** | Yes — github.com/brianlovin/brian-lovin-next |
+| **natfriedman.com** | **GoDaddy Website Builder 8.0** | Multi-page builder | Builder CSS | Playfair Display + Source Sans Pro (Google Fonts via wsimg) | GoDaddy CDN (`img1.wsimg.com`) | Light | None visible | No |
+| **geoffreylitt.com** | **Middleman / Jekyll-style static** (Ruby; `?1761416284` cache-busting hash on assets) | Multi-page static HTML | Vanilla CSS (`/stylesheets/site.css`) + Font Awesome 4.4 | **Adobe Fonts via Typekit** (`use.typekit.net/goh5xrk.css`) — likely a Tiempos/Sohne pairing or similar editorial set | Likely GitHub Pages or Netlify | Light only | None | Repo not public |
+| **joshwcomeau.com** | **Next.js (custom)** | App Router | **CSS variables (HSL)**, hand-rolled — no Tailwind | Self-hosted (uses CSS vars for everything) | Vercel | Light/dark via `data-color-mode` | Custom | No |
+| **maggieappleton.com** | **Astro** (View Transitions enabled via `<ClientRouter>`) | Multi-page, MDX collections (Astro Content) | **CSS variables**, `var(--font-serif)` / `var(--font-sans)`, custom tokens (`--color-crimson`, `--color-cream`) | Custom serif body, custom sans UI; very editorial palette | Astro static (likely Netlify or Vercel) | Light only | Custom (Webmention support — `webmention.io`) | Yes (Astro repo) |
+| **rauchg.com** (Guillermo Rauch) | Next.js | App Router | Tailwind / minimal | System stack | Vercel | Dark default | Vercel | Yes |
+| **stevekrouse.com** | **Val Town** (a JS runtime) — entire site is a Val | Single page | **Tailwind v4 via browser CDN** (`unpkg.com/@tailwindcss/browser@4`) | System | Val Town hosting | Light | None | Yes — val.town source linked in footer |
+| **patrickcollison.com** | **Plain static HTML** | Multi-page hand-coded HTML, no JS framework | Tiny custom CSS (`/static/style.css`) | System fonts | Custom server | Light only | Google Analytics (legacy `ga.js`) | No |
+| **sahillavingia.com** | **Next.js 14 (App Router)** | App Router, no MDX (raw JSX) | Tailwind (`text-xl sm:text-2xl`, `dark:bg-black`) | System | Vercel | Auto dark via `dark:` classes | @vercel/analytics | No |
+| **dcgross.com** (Daniel Gross) | **Jekyll 3.9.3** (static) | Static markdown | Inline `<style>` block | **System stack** (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, ...`) | Likely GitHub Pages | Light only | None | No |
+| **levels.io** (Pieter Levels) | **Ghost 6.38** (managed blog CMS) | Ghost templates | Ghost theme + custom Proxima Nova | **Proxima Nova** (self-hosted via `/assets/proxima_nova.css`) | Ghost (Pro) hosting | Light only | None | No (private theme) |
+
+**Verified macro trends:** Next.js 16 + Tailwind v4 + Vercel is the dominant 2026 stack for technical founders (leerob, brianlovin, rauchg, sahillavingia). Astro is the leading challenger when long-form essays + visual essays dominate (maggieappleton). Plain static HTML is still chosen by the most senior operators (patrickcollison, dcgross) — speed and longevity over features.
+
+---
+
+## B. Recommended Stack for Naomi — defended/revised
+
+**Verdict: keep Next.js 16 + Tailwind v4 + TypeScript + Vercel. It is the canonical 2026 founder-dev stack and matches leerob (Cursor VP DevEx), Brian Lovin (Tellescope/ex-GitHub), Guillermo Rauch (Vercel CEO), and Sahil Lavingia (Antiwork CEO).**
+
+Concrete revisions:
+
+1. **Keep Inter + Instrument Serif** — the pairing is "pre-harmonized" (Rodrigo Fuenzalida designed Instrument Serif with shared vertical metrics to common sans defaults). It is the 2025–2026 "editorial founder" pairing — same combo used in Linear marketing, Anthropic blog, Vercel ship pages. Do **not** swap to Calibre/Söhne/Suisse Int'l — those are proprietary ($$$) and Inter is now indistinguishable in practice. STIX Two Text (which leerob just switched to) is the only credible alternative — a true editorial serif optimized for body text — but Instrument Serif is the better display-only pairing for a portfolio with short copy.
+2. **Add MDX** for `/writing` posts. Use `@next/mdx 16.1.5` (same version leerob ships). Co-locate posts as `app/writing/[slug]/page.mdx`. This avoids Contentlayer (which is unmaintained as of 2026) and avoids Notion API friction.
+3. **Add `next-themes`** for system-preference dark mode. Every credible founder site in 2026 supports `prefers-color-scheme` (leerob, brianlovin, joshwcomeau, sahillavingia all do). Do not default to dark — default to **system**.
+4. **Add `@vercel/analytics`** + **Vercel Speed Insights**. Both are free on the Hobby tier and ship via one import each. Skip Plausible/Fathom unless you specifically want public analytics ($14+/mo).
+5. **Add `@vercel/og`** for per-page OG images. Free, edge-cached, 500KB bundle, 800ms p50 generation.
+6. **Add JSON-LD `Person` schema** — leerob ships one in his root layout; it's the single biggest SEO/AEO win for a founder name search.
+7. **Add `app/sitemap.ts` + `app/robots.ts`** (Next.js conventions, no library needed).
+8. **Add an RSS feed** at `app/rss/route.ts` returning `application/rss+xml`. Use the `feed` package (~3KB).
+9. **Skip Framer Motion for now.** React 19.2 ships native `<ViewTransition>` integration with Next 16's `viewTransition: true` config. Use that instead — saves 60KB+.
+10. **Skip Contentlayer, skip MDXRemote, skip Sanity, skip Notion-as-CMS.** All add complexity without payoff at your stage.
+
+---
+
+## C. Concrete Typography Spec
+
+```css
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  /* The two-font system */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+               BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  --font-serif: var(--font-instrument-serif), "Iowan Old Style", "Apple Garamond",
+                Baskerville, "Times New Roman", "Droid Serif", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+
+  /* Type scale — editorial founder, mobile-first */
+  --text-hero: 4rem;        /* 64px display hero (Instrument Serif) */
+  --text-hero--line-height: 1.05;
+  --text-hero--letter-spacing: -0.02em;
+
+  --text-h1: 2.25rem;       /* 36px page heading */
+  --text-h1--line-height: 1.15;
+  --text-h1--letter-spacing: -0.015em;
+
+  --text-h2: 1.5rem;        /* 24px section */
+  --text-h2--line-height: 1.25;
+  --text-h2--letter-spacing: -0.01em;
+
+  --text-h3: 1.125rem;      /* 18px sub-section */
+  --text-h3--line-height: 1.35;
+  --text-h3--letter-spacing: -0.005em;
+
+  --text-body: 1rem;        /* 16px body */
+  --text-body--line-height: 1.6;
+  --text-body--letter-spacing: -0.003em;  /* Inter looks best slightly tight */
+
+  --text-small: 0.875rem;   /* 14px metadata */
+  --text-small--line-height: 1.5;
+
+  --text-caption: 0.75rem;  /* 12px caption / kicker, UPPERCASE */
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.04em;
+}
+```
+
+**Weight policy:** Inter 400 (body) + 500 (UI emphasis) + 600 (h2/h3). Instrument Serif **400 regular and 400 italic only** — that font ships only one weight, do not fake-bold it.
+
+**Hero treatment** (typical "Naomi Ivie" hero): `font-serif text-[64px] leading-[1.05] tracking-[-0.02em] font-normal` with body in `font-sans text-base leading-[1.6]`. Mix on a single line by wrapping italicized words in `<em>` (Instrument Serif's italic is its signature).
+
+---
+
+## D. Concrete Color Spec
+
+The "founder-editorial" palette in 2026 is paper-cream/warm-off-white in light mode, true-near-black + 4% warm tint in dark. **Avoid pure `#000000` and pure `#ffffff`** — they read as cold/engineering.
+
+```css
+:root {
+  /* Light mode — paper */
+  --color-bg:        #FAFAF7;   /* warm off-white (paper) */
+  --color-surface:   #FFFFFF;   /* cards / elevated */
+  --color-ink:       #111111;   /* primary text */
+  --color-ink-muted: #5B5B57;   /* secondary / metadata (warm gray) */
+  --color-ink-soft:  #8A8A85;   /* tertiary */
+  --color-rule:      #E8E6E0;   /* hairline borders */
+  --color-accent:    #C8472B;   /* warm terracotta — Nigerian/Naomi-coded; pairs with Instrument Serif */
+  --color-link:      #1A1A1A;   /* underline-only links, no blue */
+  --color-link-underline: #C0BEB7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:        #0E0E0C;  /* near-black with warm cast */
+    --color-surface:   #18181620;
+    --color-ink:       #EDEDE8;
+    --color-ink-muted: #9C9A93;
+    --color-ink-soft:  #6F6D67;
+    --color-rule:      #26251F;
+    --color-accent:    #E27154;  /* shifted terracotta for dark */
+    --color-link:      #EDEDE8;
+    --color-link-underline: #44423B;
+  }
+}
+```
+
+Reference points: brittanychiang uses navy `#0a192f`/green `#64ffda`. leerob uses pure neutrals (gray-100 light, zinc-800 dark). joshwcomeau uses HSL palette with `--color-text: hsl(222deg 22% 5%)` and `--color-background: hsl(0deg 0% 100%)`. The terracotta accent above is for personality — a single saturated accent is the 2026 default (two-accent palettes feel dated).
+
+---
+
+## E. Performance / SEO Checklist (15 items toward Lighthouse 100)
+
+1. **`next/font/google`** for both Inter and Instrument Serif with `display: 'swap'` and `preload: true`. Subset to `latin` only (saves ~30KB).
+2. **Self-host critical assets**, never load fonts from a third-party CDN at runtime. `next/font` does this automatically.
+3. **`metadataBase`** set in root layout: `new URL('https://naomiivie.com')`. Without this, OG image absolute URLs break.
+4. **Static `opengraph-image.tsx`** at `app/opengraph-image.tsx` (Next picks this up by filename) + per-route dynamic OG via `app/api/og/route.tsx` using `@vercel/og`.
+5. **`twitter-image.tsx`** sibling (Next auto-generates Twitter card meta).
+6. **`app/sitemap.ts`** with `MetadataRoute.Sitemap` return type. Lists all routes + MDX-derived writing slugs.
+7. **`app/robots.ts`** returning `MetadataRoute.Robots`.
+8. **JSON-LD `Person` schema** in root layout (see code section G below). Targets Google Knowledge Panel.
+9. **Canonical URLs** via `metadata.alternates.canonical` per page.
+10. **`<html lang="en">`** + `suppressHydrationWarning` (required by `next-themes`).
+11. **No client-side analytics in `<head>`** — use `<Analytics />` from `@vercel/analytics/react` at the body bottom. Defers entirely.
+12. **Disable `themeTransitionOnChange`** in `next-themes` config (`disableTransitionOnChange`) — kills the FOUC during system theme switches.
+13. **Add Speed Insights**: `import { SpeedInsights } from "@vercel/speed-insights/next"`. Free on Hobby.
+14. **Favicon set via `app/icon.tsx`** (auto-generated SVG with first initial — leerob style) or static `app/icon.png` (32×32) + `app/apple-icon.png` (180×180). Next produces all sizes.
+15. **Use `<Link prefetch>` (default) and `priority` on the hero image** if any. LCP targets: <1.2s on 4G; Core Web Vitals all green; CLS = 0 (which font-display:swap can break — use `next/font` to fix).
+
+Lighthouse-100 target for a personal site of this size: **100/100/100/100** is realistic. leerob and patrickcollison both hit this.
+
+---
+
+## F. Animation / Interaction Recommendations
+
+**Do these three (and only these):**
+
+1. **Native View Transitions API.** Enable `experimental.viewTransition: true` in `next.config.ts`. Wrap navigations with React 19.2's `<ViewTransition>` component for free 200ms cross-fades. Falls back to no-op in Safari/Firefox.
+2. **Underline-on-hover for inline links.** leerob does exactly this: `underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400`. It's the 2026 "engineer-tasteful" pattern — visible but not loud.
+3. **Subtle fade-up on first-load for hero only** (~200ms, ease-out, `prefers-reduced-motion` aware). Use pure CSS keyframes, not Framer Motion.
+
+**Never do these three:**
+
+1. **Custom cursors.** They are dated, accessibility hostile, and signal "designer trying too hard" in 2026.
+2. **Parallax scroll on the hero.** Done to death 2019–2023; now reads as cheap.
+3. **Page-load splash screens / loader animations / typewriter effects on the name.** Founder sites are read 3–8 seconds — every animation steals reading time.
+
+Optional fourth: **`scroll-driven animations` (CSS)** for project cards fading in on scroll. Native CSS in 2026 — no JS needed: `animation-timeline: view()`.
+
+---
+
+## G. Drop-in Implementation Code
+
+### G1. `app/layout.tsx` — fonts, theme, JSON-LD, analytics
+
+```tsx
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter, Instrument_Serif } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  preload: true,
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-instrument-serif',
+  preload: true,
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://naomiivie.com'),
+  title: { default: 'Naomi Ivie', template: '%s · Naomi Ivie' },
+  description:
+    'Nigerian founder building Sabi — a voice AI tutor for primary literacy. Wesleyan ’27.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Naomi Ivie',
+    description: 'Building Sabi — voice AI tutor for primary literacy.',
+    url: 'https://naomiivie.com',
+    siteName: 'Naomi Ivie',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: { card: 'summary_large_image', creator: '@naomiivie' },
+  robots: { index: true, follow: true },
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Naomi Ivie',
+  url: 'https://naomiivie.com',
+  image: 'https://naomiivie.com/avatar.jpg',
+  description: 'Founder of Education for Equality; building Sabi voice AI tutor.',
+  jobTitle: 'Founder',
+  worksFor: { '@type': 'Organization', name: 'Education for Equality' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Wesleyan University' },
+  nationality: 'Nigerian',
+  sameAs: [
+    'https://x.com/naomiivie',
+    'https://github.com/thegirwhocodes',
+    'https://www.linkedin.com/in/naomiivie',
+  ],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${instrumentSerif.variable}`}
+    >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
+      <body className="font-sans antialiased text-[--color-ink] bg-[--color-bg]">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="mx-auto w-full max-w-[60ch] px-6 py-12 md:py-20">
+            {children}
+          </main>
+          <Analytics />
+          <SpeedInsights />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+### G2. `app/api/og/route.tsx` — dynamic OG image (Edge)
+
+```tsx
+import { ImageResponse } from 'next/og';
+
+export const runtime = 'edge';
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const title = searchParams.get('title') ?? 'Naomi Ivie';
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          padding: '80px',
+          background: '#FAFAF7',
+          color: '#111111',
+          fontFamily: '"Instrument Serif", serif',
+        }}
+      >
+        <div style={{ fontSize: 28, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+          NAOMI IVIE
+        </div>
+        <div style={{ fontSize: 96, lineHeight: 1.05, letterSpacing: '-0.02em', maxWidth: 900 }}>
+          {title}
+        </div>
+        <div style={{ fontSize: 22, color: '#5B5B57' }}>
+          Building Sabi — voice AI tutor for primary literacy.
+        </div>
+      </div>
+    ),
+    { width: 1200, height: 630 }
+  );
+}
+```
+
+For the static homepage OG, drop a file at `app/opengraph-image.tsx` exporting `default async function Image()` that calls the same JSX — Next.js inlines it as `/opengraph-image.png` automatically.
+
+### G3. `app/sitemap.ts`
+
+```ts
+import type { MetadataRoute } from 'next';
+import { promises as fs } from 'fs';
+import path from 'path';
+
+const SITE = 'https://naomiivie.com';
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const writingDir = path.join(process.cwd(), 'app', 'writing');
+  let posts: string[] = [];
+  try {
+    const entries = await fs.readdir(writingDir, { withFileTypes: true });
+    posts = entries.filter(e => e.isDirectory()).map(e => e.name);
+  } catch {}
+
+  const staticRoutes = ['', '/about', '/work', '/writing'].map(p => ({
+    url: `${SITE}${p}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: 'monthly' as const,
+    priority: p === '' ? 1.0 : 0.7,
+  }));
+
+  const postRoutes = posts.map(slug => ({
+    url: `${SITE}/writing/${slug}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: 'yearly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...postRoutes];
+}
+```
+
+### G4. `app/robots.ts`
+
+```ts
+import type { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [{ userAgent: '*', allow: '/', disallow: ['/api/', '/_next/'] }],
+    sitemap: 'https://naomiivie.com/sitemap.xml',
+    host: 'https://naomiivie.com',
+  };
+}
+```
+
+### G5. View Transitions — `next.config.ts` + usage
+
+```ts
+// next.config.ts
+import type { NextConfig } from 'next';
+const config: NextConfig = {
+  experimental: { viewTransition: true },
+};
+export default config;
+```
+
+```tsx
+// any client component navigating between pages
+'use client';
+import { unstable_ViewTransition as ViewTransition } from 'react';
+import Link from 'next/link';
+
+export function Nav() {
+  return (
+    <ViewTransition>
+      <nav className="flex gap-6 text-sm">
+        <Link href="/">Home</Link>
+        <Link href="/work">Work</Link>
+        <Link href="/writing">Writing</Link>
+      </nav>
+    </ViewTransition>
+  );
+}
+```
+
+Add to `globals.css`:
+
+```css
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+```
+
+### G6. `app/rss/route.ts` — RSS feed
+
+```ts
+import { Feed } from 'feed';
+import { promises as fs } from 'fs';
+import path from 'path';
+
+export async function GET() {
+  const feed = new Feed({
+    title: 'Naomi Ivie',
+    description: 'Writing on voice AI, African ed-tech, and building Sabi.',
+    id: 'https://naomiivie.com/',
+    link: 'https://naomiivie.com/',
+    language: 'en',
+    image: 'https://naomiivie.com/avatar.jpg',
+    favicon: 'https://naomiivie.com/favicon.ico',
+    copyright: `© ${new Date().getFullYear()} Naomi Ivie`,
+    feedLinks: { rss2: 'https://naomiivie.com/rss' },
+    author: { name: 'Naomi Ivie', email: 'nivie@wesleyan.edu' },
+  });
+
+  const writingDir = path.join(process.cwd(), 'app', 'writing');
+  const slugs = await fs.readdir(writingDir).catch(() => []);
+  for (const slug of slugs) {
+    feed.addItem({
+      title: slug.replace(/-/g, ' '),
+      id: `https://naomiivie.com/writing/${slug}`,
+      link: `https://naomiivie.com/writing/${slug}`,
+      date: new Date(),
+    });
+  }
+
+  return new Response(feed.rss2(), {
+    headers: { 'content-type': 'application/rss+xml; charset=utf-8' },
+  });
+}
+```
+
+### G7. `next-themes` — already covered in G1's `<ThemeProvider>`. Add a `ThemeToggle` client component:
+
+```tsx
+'use client';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+
+export function ThemeToggle() {
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return <span className="size-5 inline-block" />;
+  return (
+    <button
+      aria-label="Toggle theme"
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      className="text-sm text-[--color-ink-muted] hover:text-[--color-ink]"
+    >
+      {resolvedTheme === 'dark' ? 'Light' : 'Dark'}
+    </button>
+  );
+}
+```
+
+---
+
+## H. Answers to the specific implementation questions
+
+1. **Font pairing**: keep Inter (400, 500, 600) + Instrument Serif (400 normal + 400 italic). Confirmed as the 2026 "editorial founder" pairing.
+2. **Dark mode**: yes, **system-preference default** via `next-themes`. Do not default to dark.
+3. **View transitions**: yes — native, free, 220ms cross-fade only. Don't reach for Framer Motion.
+4. **Custom OG**: yes, one static `app/opengraph-image.tsx` for home + one dynamic `app/api/og/route.tsx` for `/writing/[slug]`.
+5. **JSON-LD Person schema**: yes, in root layout. Single biggest AEO/SEO win.
+6. **RSS feed**: yes, if you publish writing. Adds ~3KB. Skip if no `/writing` section.
+7. **Analytics**: `@vercel/analytics` + `@vercel/speed-insights`. Both free, both one-line imports.
+8. **Vercel Hobby limits to watch**: 100GB bandwidth/mo (plenty), 100GB-hours functions/mo, **no commercial use** (you're a student/personal — fine). OG images count as function invocations — Vercel caches aggressively (CDN-cache + tag-based; you'll never hit limits with a personal site).
+9. **Custom domain**: buy `naomiivie.com` via Cloudflare Registrar (cheapest, no markup). In Vercel project → Domains → add both `naomiivie.com` and `www.naomiivie.com`. Set `naomiivie.com` as primary, configure `www` → 308 redirect to apex. DNS at Cloudflare: A `@` → `76.76.21.21`, CNAME `www` → `cname.vercel-dns.com`. Cloudflare proxy **off** (orange cloud → grey) — Vercel handles the edge.
+
+---
+
+## Sources
+
+- [leerob/next-mdx-blog](https://github.com/leerob/next-mdx-blog) — Lee Robinson's open template
+- [bchiang7/v4](https://github.com/bchiang7/v4) — Brittany Chiang's site (Gatsby, MIT)
+- [brianlovin/brian-lovin-next](https://github.com/brianlovin/brian-lovin-next) — Brian Lovin's site (Next.js + Notion)
+- [next-view-transitions guide](https://nextjs.org/docs/app/guides/view-transitions) — official Next.js 16 docs
+- [Vercel OG image generation](https://vercel.com/docs/og-image-generation) — `@vercel/og` reference
+- [Instrument Serif + Inter pairing](https://maxibestof.one/typefaces/instrument-serif/pairing/inter) — Fontkin / MaxiBestOf typography lab
+- [50 fonts that will be popular with designers in 2026 — Creative Boom](https://www.creativeboom.com/resources/top-50-fonts-in-2026/)
+- [Vercel Portfolio templates](https://vercel.com/templates/portfolio)
+- [React 19.2 View Transitions in Next.js 16 — DigitalApplied](https://www.digitalapplied.com/blog/react-19-2-view-transitions-animate-navigation-nextjs-16)
+- [Next.js Metadata and OG Images](https://nextjs.org/docs/app/getting-started/metadata-and-og-images)
+- [timlrx/tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) — popular open-source Tailwind+Next blog starter
+agentId: a0273f622f7ef9833 (use SendMessage with to: 'a0273f622f7ef9833' to continue this agent)
+<usage>total_tokens: 116857
+tool_uses: 40
+duration_ms: 378130</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

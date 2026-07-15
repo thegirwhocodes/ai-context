@@ -1,0 +1,37 @@
+========================================================================
+AGENT RESEARCH: Update memory: Classes
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:27:17 UTC
+========================================================================
+
+You are updating the memory system for the Classes project at "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes".
+
+TASK: Read session transcripts and create memory files.
+
+STEPS:
+1. Read "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/.claude-sessions/INDEX.txt"
+2. Read the 10 most recent/largest session .txt files. For huge files (>100KB), read first 300 lines and last 100 lines.
+3. Read existing memory at ~/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/MEMORY.md.
+4. CREATE memory files:
+   - user_naomi_academic.md — her courses, professors, study habits, preferences for explanations (type: user)
+   - project_courses.md — all 4 courses with details: Econ 241, Econ 333, Econ 349, QAC 386, professor names, textbooks, topics covered (type: project)
+   - project_academic_status.md — current state: exams taken, assignments done, what's coming up, grades mentioned (type: project)
+   - feedback_academic.md — how she wants homework formatted (not look AI-generated), explanation style preferences (type: feedback)
+   - reference_academic.md — professor emails, office hours, course links, textbook names (type: reference)
+5. Every file MUST have frontmatter: name, description, type, sessions.
+6. UPDATE MEMORY.md index.
+
+Write files with the Write tool.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a55f02d2149ce5e18 (internal ID - do not mention to user. Use SendMessage with to: 'a55f02d2149ce5e18' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-bethel/e59a15e2-07e1-441a-b5e1-74b37c995b59/tasks/a55f02d2149ce5e18.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

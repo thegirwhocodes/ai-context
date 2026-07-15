@@ -1,0 +1,101 @@
+========================================================================
+AGENT RESEARCH: Research 4+1 acquisition framework
+Session: 78e41aad-996d-4a9e-b91c-9381e28d050a
+Time: 2026-03-29 19:31:26 UTC
+========================================================================
+
+Research the "4+1 framework" used in RIA (Registered Investment Advisor) acquisitions and M&A. What are the 4+1 criteria used to evaluate whether an RIA is a good acquisition target? If there's a specific well-known framework by that name in the wealth management / financial advisory M&A space, describe it. If not, describe the most common frameworks used for evaluating RIA acquisition targets. This is research only, no code.
+
+----------------------------------------
+
+I'll research the "4+1 framework" for RIA acquisitions. Let me first quickly check if there's any relevant context in the project files, then conduct the research.
+
+This question is not related to the Bethel project -- it's a standalone research question about financial advisory M&A. I'll proceed directly with the research.
+
+---
+
+## RIA Acquisition Evaluation: The "4+1 Framework" and Common Frameworks
+
+After researching this topic, here is what I can share:
+
+### The "4+1 Framework" -- Not a Widely Standardized Industry Term
+
+There is no single, universally codified framework branded as "the 4+1 framework" in RIA M&A literature in the way that, say, Porter's Five Forces exists in strategy. However, the concept of evaluating RIA acquisition targets across **four core pillars plus one additional factor** is a pattern that appears in practitioner thinking, particularly from firms like **Echelon Partners**, **DeVoe & Company**, **Fidelity's practice management group**, and **Focus Financial / Dynasty Financial** advisory materials.
+
+The general shape of the "4+1" pattern as used by acquirers and investment bankers in the RIA space is:
+
+---
+
+### The 4 Core Criteria
+
+**1. Revenue Quality & Recurring Revenue**
+- What percentage of revenue is **recurring** (AUM-based fees) vs. transactional (commissions, financial planning fees billed hourly)?
+- Acquirers strongly prefer firms with **90%+ recurring revenue** tied to assets under management.
+- Revenue retention rates (client retention, revenue retention after advisor departures) are scrutinized.
+- Fee schedules are examined -- are fees competitive or will they face compression?
+
+**2. Growth Profile**
+- **Organic growth rate** -- is the firm growing its AUM through net new assets (not just market appreciation)?
+- Client acquisition pipeline and referral sources.
+- Is the firm in a growing demographic/geographic market?
+- Acquirers typically want to see **5%+ organic growth** annually. Firms that are flat or shrinking are significantly less attractive.
+
+**3. Client Demographics & Concentration**
+- **Average client age** -- a book skewing 70+ carries succession/mortality risk.
+- **Client concentration** -- if the top 10 clients represent 40%+ of revenue, that is a major risk factor.
+- **Average account size** -- larger average relationships (e.g., $1M+ AUM per household) signal a more scalable, profitable practice.
+- Intergenerational wealth transfer readiness (are the next-gen heirs already engaged?).
+
+**4. Operational Scalability & Infrastructure**
+- Technology stack (CRM, portfolio management, financial planning software, reporting).
+- Compliance track record and regulatory history.
+- Team depth beyond the founder(s) -- is there a **next-generation team** in place, or does everything depend on one or two principals?
+- Operational efficiency (revenue per employee, profit margins -- top-quartile RIAs run 25-35% EBITDA margins).
+
+---
+
+### The "+1" Factor
+
+**5. Cultural Fit / Founder Alignment**
+- This is the "plus one" because it is qualitative and often decisive even when the four quantitative pillars check out.
+- Does the selling firm's investment philosophy, client service model, and firm culture align with the acquirer's?
+- Is the founder/seller willing to stay through a **transition period** (typically 2-5 years with earnout provisions)?
+- Are there shared values around fiduciary duty, fee transparency, and client-first orientation?
+- Many acquisitions that look perfect on paper fail because of cultural mismatch during integration.
+
+---
+
+### Why This Pattern Exists
+
+RIA acquirers (both **strategic acquirers** like Focus Financial, CI Financial, Hightower, and Creative Planning, and **financial/PE acquirers** like KKR-backed firms) have learned that:
+
+- Criteria 1-2 (revenue quality + growth) determine **what you're paying for**
+- Criteria 3-4 (client demographics + operations) determine **risk and integration cost**
+- Criterion 5 (culture/alignment) determines **whether the deal actually works post-close**
+
+Deals are typically valued at **5-12x EBITDA** (or 2-3% of AUM as a rough heuristic), with the multiplier heavily influenced by how the firm scores across these dimensions.
+
+---
+
+### Other Prominent Frameworks in the Space
+
+If someone references a specific branded "4+1" framework, it may come from one of these sources:
+
+- **DeVoe & Company** publishes the most widely cited RIA M&A data and has frameworks for deal readiness evaluation.
+- **Echelon Partners** produces the annual "RIA M&A Deal Report" and uses multi-factor scoring for acquisition targets.
+- **Schwab's Business Consulting** and **Fidelity's Practice Management** groups publish practice valuation frameworks that overlap with these criteria.
+- **David Grau Sr. / FP Transitions** authored frameworks focused on succession planning and enterprise valuation that use similar pillars (though typically framed as continuity/sustainability factors).
+
+---
+
+### Summary
+
+The "4+1" pattern in RIA M&A evaluates: **(1) revenue quality, (2) growth, (3) client demographics/concentration, (4) operational infrastructure** -- plus **(+1) cultural alignment** as the decisive qualitative overlay. Whether or not a specific firm has branded it "the 4+1 framework," this is the dominant mental model acquirers use when screening RIA targets. The quantitative four can be modeled in a spreadsheet; the plus-one is why experienced acquirers say "we pass on more deals for culture than for numbers."
+agentId: ac7ba37c8b1295908 (use SendMessage with to: 'ac7ba37c8b1295908' to continue this agent)
+<usage>total_tokens: 11619
+tool_uses: 0
+duration_ms: 35576</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

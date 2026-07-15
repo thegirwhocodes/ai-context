@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: sign language non-manual markers facial expression recognition AI challenge
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:55 UTC
+========================================================================
+
+Search query: sign language non-manual markers facial expression recognition AI challenge
+
+----------------------------------------
+
+Web search results for query: "sign language non-manual markers facial expression recognition AI challenge"
+
+Links: [{"title":"Towards AI-driven Sign Language Generation with Non-manual Markers | Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems","url":"https://dl.acm.org/doi/10.1145/3706598.3713855"},{"title":"Towards AI-driven Sign Language Generation with Non-manual Markers","url":"https://arxiv.org/html/2502.05661v1"},{"title":"MICHAEL et al.: RECOGNITION OF NON-MANUAL MARKERS IN SEGMENTED ASL 1","url":"https://www.bu.edu/asllrp/bmvc_final.pdf"},{"title":"Artificial Intelligence Technologies for Sign Language - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8434597/"},{"title":"Understanding Non-Manual Markers in American Sign Language - Oreate AI Blog","url":"https://www.oreateai.com/blog/understanding-nonmanual-markers-in-american-sign-language/bc67bf1893c6af54e6e7c6bc370c0142"},{"title":"Towards AI-Driven Sign Language Generation with Non-Manual Markers - Apple Machine Learning Research","url":"https://machinelearning.apple.com/research/ai-sign-language-generation"},{"title":"[2502.05661] Towards AI-driven Sign Language Generation with Non-manual Markers","url":"https://arxiv.org/abs/2502.05661"},{"title":"Evaluation of Manual and Non-manual Components for ...","url":"https://aclanthology.org/2020.lrec-1.745.pdf"},{"title":"A Comprehensive Review of Sign Language Recognition","url":"https://arxiv.org/pdf/2204.03328"},{"title":"Non-manual grammatical marker recognition based on multi-scale, spatio-temporal analysis of head pose and facial expressions - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0262885614000468"}]
+
+I've completed the web search for your query on sign language non-manual markers facial expression recognition and AI challenges. Here are the key findings:
+
+## Overview of Non-Manual Markers in Sign Language
+
+Sign languages combine manual markers—such as hand movements, orientation, and location—with non-manual markers, including facial expressions, head movements, and other body language, to create grammatical structures and convey meaning.
+
+## AI and Recognition Challenges
+
+Challenges remain, particularly in handling non-manual markers (e.g., eyebrow movements) and achieving high-quality outputs with temporal consistency. Facial expression may be involved in distinguishing signs, further complicating the recognition task.
+
+Non-manual markers can indicate critical information, such as a head shake accompanying a sign to denote negation, raised eyebrows and a distinct facial expression to form conditional clauses or emphasize the topic of a sentence or raised eyebrows and a forward head tilt to signal a yes/no question.
+
+## Recent Progress in Recognition Systems
+
+Recent research has developed automated systems to tackle this challenge. An automatic recognition system for non-manual grammatical markers in American Sign Language (ASL) based on a multi-scale, spatio-temporal analysis of head pose and facial expressions has been proposed. Additionally, one approach achieved around 80% accuracy at identifying specific moments when a marker appears during signing sequences—a significant step toward enhancing ASL-to-English translation technologies.
+
+## Current Limitations and Solutions
+
+One method involves learning a dictionary of facial expressions to match each gloss, which enhances visual realism but does not convey additional meaning. This approach often applies the same expression uniformly across sentences, overlooking the contextual nuances of facial expressions and normalizing signers' faces to face forward, neglecting the subtleties conveyed by directional gaze.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

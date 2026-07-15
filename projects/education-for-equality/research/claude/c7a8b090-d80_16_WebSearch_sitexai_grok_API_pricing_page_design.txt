@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: site:x.ai grok API pricing page design
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 04:04:02 UTC
+========================================================================
+
+Search query: site:x.ai grok API pricing page design
+
+----------------------------------------
+
+Web search results for query: "site:x.ai grok API pricing page design"
+
+Links: [{"title":"Models and Pricing | xAI Docs","url":"https://docs.x.ai/developers/models"},{"title":"xAI — Creators of Grok, the AI Chatbot","url":"https://x.ai/api"},{"title":"AI API Pricing Comparison (2026): Grok vs Gemini vs GPT-4o vs Claude | IntuitionLabs","url":"https://intuitionlabs.ai/articles/ai-api-pricing-comparison-grok-gemini-openai-claude"},{"title":"xAI pricing explained: A complete guide for 2025","url":"https://www.eesel.ai/blog/xai-pricing"},{"title":"Grok API Pricing Calculator & Cost Guide (Mar 2026)","url":"https://costgoat.com/pricing/grok-api"},{"title":"xAI Grok API Pricing 2026: Complete Guide, Comparison & Calculator - Grok API Pricing Guide with Free Credits & Cost Calculator | AI Free API","url":"https://www.aifreeapi.com/en/posts/xai-grok-api-pricing"},{"title":"Grok 4.1 Fast - API Pricing & Providers | OpenRouter","url":"https://openrouter.ai/x-ai/grok-4.1-fast"},{"title":"xAI Grok API Pricing: Every Model, Cost, and Context Window Compared (2026)","url":"https://mem0.ai/blog/xai-grok-api-pricing"},{"title":"Grok API Pricing Calculator | xAI Cost Estimator","url":"https://flowlyn.com/tools/grok-api-pricing-calculator"},{"title":"Grok 4 Fast API Pricing 2026 - Costs, Performance & Providers","url":"https://pricepertoken.com/pricing-page/model/xai-grok-4-fast"}]
+
+Based on the search results, I found information about xAI's Grok API pricing page and pricing structure:
+
+## Grok API Pricing Overview
+
+All prices are per million tokens, with full pricing found on xAI's documentation.
+
+### Key Pricing Tiers
+
+xAI's Grok API pricing starts at $0.20 per million input tokens for the budget-friendly Grok 4.1 Fast model and goes up to $3/$15 per million for the flagship Grok 4. Grok 4.1 Fast costs $0.20/M input tokens and $0.50/M output tokens.
+
+### Free Credits and Promotions
+
+As of January 2026, new users receive $25 in free promotional credits upon signup, with an additional $150/month available through the data sharing program.
+
+### Additional Features
+
+Web Search, X Search, Code Execution, and Document Search cost $5 per 1,000 calls. The Batch API lets you process large volumes of requests asynchronously at 50% of standard pricing.
+
+### Subscription Access
+
+Grok Basic comes included if you're an X Premium+ subscriber, while SuperGrok requires a separate subscription for about $30 a month.
+
+The pricing page emphasizes xAI's competitive position, particularly through the industry's largest context window at 2 million tokens.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

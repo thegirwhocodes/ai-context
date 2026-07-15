@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/saheedniyi02/yarngpt
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:24:18 UTC
+========================================================================
+
+URL: https://github.com/saheedniyi02/yarngpt
+Extraction prompt: How many stars, forks, and open issues does this repo have? When was the last commit? What does the README say about limitations, quality, and production readiness? Is there a YarnGPT v2? What model architecture is it based on?
+
+----------------------------------------
+
+# YarnGPT Repository Analysis
+
+**Repository Stats:**
+- **Stars:** 334
+- **Forks:** 114
+- **Open Issues:** 6
+- **Last Commit:** January 20, 2025 (main branch, commit 8bb0eb2)
+
+**README Limitations Section:**
+The documentation acknowledges three key constraints: "English to Nigerian-accented English only," the model "May not capture all Nigerian accent variations," and "Training data includes auto-generated content."
+
+**Model Architecture:**
+YarnGPT is based on "HuggingFaceTB/SmolLM2-360M" and trained for "5 epochs on A100 GPU" using Nigerian media sources. It uses a "Pure language modeling approach" rather than external adapters.
+
+**Version Information:**
+The repository references "YarnGPT2" in code examples, indicating this is version 2 of the model. The training incorporated "2000+ hours of Nigerian audio" data.
+
+**Production Readiness:**
+The README doesn't explicitly address production readiness. The acknowledged limitations—single accent variation and auto-generated training data—suggest this remains a specialized research/demonstration project rather than enterprise-grade software.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

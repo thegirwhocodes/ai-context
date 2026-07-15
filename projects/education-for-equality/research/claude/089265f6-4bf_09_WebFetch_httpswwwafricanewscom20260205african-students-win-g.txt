@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.africanews.com/2026/02/05/african-students-win-global-prize-for-ai-e
+Session: 089265f6-4bf8-426a-96dc-cfa234d1df07
+Time: 2026-02-26 19:04:51 UTC
+========================================================================
+
+URL: https://www.africanews.com/2026/02/05/african-students-win-global-prize-for-ai-education-system-without-internet/
+Extraction prompt: Extract all details about Bakame AI: how it works, what it teaches, who founded it, contact info, technology, partnerships, countries deployed in.
+
+----------------------------------------
+
+# Bakame AI: Information from Article
+
+Based on the provided content, here's what I found about this AI education system:
+
+## Founders
+- **Happy Niyorurema** and **Mame Niang** from Texas Christian University developed the system.
+
+## How It Works
+The system delivers educational content via standard voice calls rather than requiring internet or smartphones. As one founder explained: "you can use even the most basic phone."
+
+## Technology
+The creators built "our own AI (large language model), but instead of putting it on the web, we deployed it on telephony."
+
+## Problem It Addresses
+Approximately 2.9 billion people, predominantly in the Global South, lack internet access, limiting their educational opportunities.
+
+## Deployment & Expansion
+- **Current**: Pilot program operating in Rwanda
+- **Planned expansion**: Senegal, Zambia, and other African countries
+
+## Recognition
+The innovation received the Global Best M-Gov Award at the World Government Summit in Dubai (concluded February 2026).
+
+---
+
+**Note**: The article does not provide specific information about contact details, formal partnerships, or the system's official name or branding beyond the context presented.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs conversational AI custom LLM Twilio phone number dynamic variables ca
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:22:26 UTC
+========================================================================
+
+Search query: ElevenLabs conversational AI custom LLM Twilio phone number dynamic variables caller
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs conversational AI custom LLM Twilio phone number dynamic variables caller"
+
+Links: [{"title":"Twilio personalization | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/customization/personalization/twilio-personalization"},{"title":"Connect Twilio to ElevenLabs Conversational AI Voice Agents","url":"https://elevenlabs.io/agents/integrations/twilio"},{"title":"Building AI-Powered Phone Calls with Twilio and ElevenLabs in Go | by Kuba | Medium","url":"https://medium.com/@kczpl/building-ai-powered-phone-calls-with-twilio-and-elevenlabs-in-go-f18c169ce699"},{"title":"Build a Twilio Voice + ElevenLabs Agents Integration | Twilio","url":"https://www.twilio.com/en-us/blog/developers/tutorials/integrations/build-twilio-voice-elevenlabs-agents-integration"},{"title":"Integrate ElevenLabs Voices with Twilio's ConversationRelay | Twilio","url":"https://www.twilio.com/en-us/blog/integrate-elevenlabs-voices-with-twilios-conversationrelay"},{"title":"Dynamic variables | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/customization/personalization/dynamic-variables"},{"title":"Twilio Personalization — ElevenLabs Documentation","url":"https://elevenlabs.io/docs/conversational-ai/guides/twilio/dynamic-calls"},{"title":"GitHub - nibodev/elevenlabs-twilio-i-o: A JavaScript repository for integrating ElevenLabs Conversational AI agents with Twilio to handle both inbound and outbound calls. This integration supports sending custom parameters for personalised conversations.","url":"https://github.com/nibodev/elevenlabs-twilio-i-o"},{"title":"Register Twilio calls | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/phone-numbers/twilio-integration/register-call"},{"title":"ElevenAgents | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/overview"}]
+
+The web search results provide comprehensive information about integrating ElevenLabs conversational AI with Twilio phone numbers using dynamic variables and custom LLM capabilities. Here's what I found:
+
+## Key Integration Points
+
+ElevenLabs Conversational AI can be connected with Twilio telephony to automate and enhance customer calls using your current Twilio numbers.
+
+## Dynamic Variables and Caller Information
+
+When receiving inbound Twilio calls, you can dynamically fetch conversation initiation data through a webhook, which allows you to customize your agent's behavior based on caller information and other contextual data.
+
+ElevenLabs provides system variables including the caller's phone number (system__caller_id), destination phone number (system__called_number), and call duration in seconds, specifically for voice calls.
+
+## Implementation with Custom Parameters
+
+Your webhook must return a JSON response containing the initiation data for the agent, and the dynamic_variables field must contain all dynamic variables defined for the agent.
+
+When receiving inbound Twilio calls, you can dynamically fetch conversation initiation data through a webhook, which allows you to customize your agent's behavior based on caller information and other contextual data.
+
+## Custom LLM Integration
+
+Twilio's ConversationRelay service allows you to integrate Speech-to-Text (STT), Text-to-Speech (TTS) and AI Large Language Models (LLMs) with your Twilio Voice Applications, handling the complexities of synchronous voice calls.
+
+The search results show that you can pass custom parameters through TwiML and WebSocket connections to personalize conversations based on caller data and context.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

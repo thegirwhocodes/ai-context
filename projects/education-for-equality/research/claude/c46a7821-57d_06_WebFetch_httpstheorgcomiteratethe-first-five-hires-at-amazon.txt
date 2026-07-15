@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://theorg.com/iterate/the-first-five-hires-at-amazon
+Session: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+Time: 2026-07-15 18:04:40 UTC
+========================================================================
+
+URL: https://theorg.com/iterate/the-first-five-hires-at-amazon
+Extraction prompt: Extract every specific detail about Amazon's first five hires: who they were, their names, their prior jobs/companies, how Bezos found and recruited each one, what roles they took, and any quotes about the hiring philosophy. Return all specifics verbatim.
+
+----------------------------------------
+
+# Amazon's First Five Hires
+
+**1. Shel Kaphan - VP of Research & Development**
+- Prior role: Worked at Kaleida Labs (Apple/IBM joint venture)
+- Recruitment: Connected to Bezos through his network in Santa Cruz (1994); the two "interviewed each other, and decided it would be a good fit"
+- Role: Programmed the earliest website version; advanced to CTO
+- Current status: Retired from engineering; runs Kaphan Foundation in Seattle
+
+**2. Paul Davis - Developer**
+- Prior role: Computer Science and Engineering Department at University of Washington
+- Recruitment: Hired by Kaphan as his first engineering team member
+- Role: Led backend development of first Amazon.com iteration
+- Tenure: Approximately one year; left in 1996
+- Current status: Founder of Linux Audio Systems
+
+**3. Tom Scohonhoff - Technical Program Manager**
+- Background: Fresh college graduate with computer science degree
+- Recruitment: Joined in 1995 as fifth employee
+- Role: Led entire customer service department initially; personally delivered packages to post office
+- Tenure: Left in 2001
+- Current status: Program manager at Microsoft
+
+**4. Nicholas Lovejoy - Recruiting and Operations**
+- Prior role: High school math teacher in Seattle; previously worked at D.E. Shaw hedge fund with Bezos
+- Recruitment: Recruited from teaching position
+- Role: Credited with proposing packing tables for warehouses
+- Tenure: Left 1998; rejoined September 2016 for Amazon Transportation Services
+
+**5. Mike Hanlon - Business Development and Operations**
+- Prior roles: Seventh employee (1995-1997) managing real estate and telecom; later software engineer developing finance and customer service applications
+- Tenure: Left in 2001
+- Current status: Founder and CEO of Abett (HR/benefits SaaS platform)
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

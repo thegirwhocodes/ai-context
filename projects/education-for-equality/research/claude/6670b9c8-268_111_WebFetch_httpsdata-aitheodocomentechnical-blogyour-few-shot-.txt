@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://data-ai.theodo.com/en/technical-blog/your-few-shot-model-15mn-pytorch
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:34:07 UTC
+========================================================================
+
+URL: https://data-ai.theodo.com/en/technical-blog/your-few-shot-model-15mn-pytorch
+Extraction prompt: Extract ALL details from this tutorial: how long does it take to implement a prototypical network, what code is needed, how many lines, dependencies, training time, accuracy, step-by-step process. Everything about making this fast.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://data-ai.theodo.com/en/technical-blog/your-few-shot-model-15mn-pytorch
+Redirect URL: https://www.theodo.com/en-fr/blog
+Status: 301 Moved Permanently
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "https://www.theodo.com/en-fr/blog"
+- prompt: "Extract ALL details from this tutorial: how long does it take to implement a prototypical network, what code is needed, how many lines, dependencies, training time, accuracy, step-by-step process. Everything about making this fast."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

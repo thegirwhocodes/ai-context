@@ -1,0 +1,57 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://lunacal.ai/compare/calendly-alternative
+Session: 53755257-7d3a-471d-9294-085caf5ec916
+Time: 2026-03-29 20:40:36 UTC
+========================================================================
+
+URL: https://lunacal.ai/compare/calendly-alternative
+Extraction prompt: Extract all competitor names, their pricing, key differentiators, and how they acquire individual customers. Include any details about free tiers, lifetime deals, marketing tactics, and growth strategies.
+
+----------------------------------------
+
+# Calendly Alternatives: Competitors Analysis
+
+## Competitor Overview
+
+| Tool | Pricing | Key Differentiator | Target Customer |
+|------|---------|-------------------|-----------------|
+| **Lunacal** | Free plan + $9/mo | "Brand-first booking pages" with rich content cards | Agencies, consultants, creators |
+| **Acuity Scheduling** | Free trial + $16/mo | Intake forms, payments, client history | Service businesses with paid appointments |
+| **Cal.com** | Free plan + $15/mo | Open-source, self-hosting option available | Developers, custom implementations |
+| **Doodle** | Free plan + $6.95/mo | Group poll scheduling without account requirements | Committee-style, multi-person coordination |
+| **HubSpot Meetings** | Free plan + $20/mo | CRM-native scheduling with auto-logging | Sales teams already in HubSpot |
+| **Koalendar** | Free forever + $6.99/mo | Simple UI with unlimited booking pages | Solo operators, small teams |
+| **Reclaim.ai** | Free plan + $10/mo | AI-powered time blocking for focus protection | Knowledge workers, calendar optimization |
+| **Setmore** | Free plan + $12/mo | Simple staff scheduling, strong free tier | Small service businesses |
+| **Microsoft Bookings** | Free (M365 included) + $6/mo | Teams/Outlook native integration | Microsoft 365 organizations |
+| **TidyCal** | Free plan + $29 one-time | Lifetime deal model, Apple calendar support | Budget-conscious solo users |
+
+## Acquisition & Growth Strategies
+
+**Free/Freemium Model Usage:**
+- Most competitors employ free tiers to enable self-serve onboarding
+- Lunacal, Koalendar, and Setmore emphasize free plans with unlimited basic features
+- Cal.com's open-source positioning drives developer adoption
+
+**Pricing Differentiation:**
+- TidyCal uniquely offers "one-time purchase option for lifetime access" via AppSumo
+- HubSpot leverages existing CRM user base for scheduling expansion
+- Microsoft Bookings bundles with 365 subscriptions
+
+**Customer Acquisition Channels:**
+- Content marketing evident through detailed comparison guides
+- Third-party review platforms (G2, Trustpilot, Reddit) mentioned extensively
+- Integration partnerships (Zoom, Google Meet, Teams auto-links)
+
+**Key Marketing Claims:**
+- Lunacal emphasizes "fast support experience" and human agents
+- Acuity highlights "mature scheduling controls and client management"
+- Koalendar stresses usability and "smooth sync between calendars"
+
+## Notable Market Positioning
+
+The analysis suggests Calendly faces pressure from specialized competitors: Cal.com attracts power users valuing control, Acuity captures service businesses needing payments, while HubSpot leverages CRM stickiness. Reclaim.ai targets a distinct use case (focus time protection) rather than direct scheduling competition.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

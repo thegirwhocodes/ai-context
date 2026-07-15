@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Raspberry Pi sign language translation glasses project DIY open source
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:53 UTC
+========================================================================
+
+Search query: Raspberry Pi sign language translation glasses project DIY open source
+
+----------------------------------------
+
+Web search results for query: "Raspberry Pi sign language translation glasses project DIY open source"
+
+Links: [{"title":"Sign language translation glasses - Raspberry Pi","url":"https://www.raspberrypi.com/news/sign-language-translation-glasses/"},{"title":"These Raspberry Pi-powered glasses translate sign language into speech | Tom's Hardware","url":"https://www.tomshardware.com/raspberry-pi/these-raspberry-pi-powered-glasses-translate-sign-language-into-speech"},{"title":"These Raspberry Pi-powered glasses translate sign language into speech","url":"https://www.inkl.com/news/these-raspberry-pi-powered-glasses-translate-sign-language-into-speech"},{"title":"Turning Sign Language into Speech with 3D Printed Glasses - 3D Printing","url":"https://3dprinting.com/news/turning-sign-language-into-speech-with-3d-printed-glasses/"},{"title":"RASPBERRY PI BASED SMART GLASSES USING PYTHON FOR VISUALLY IMPAIRED PEOPLE – IJSREM","url":"https://ijsrem.com/download/raspberry-pi-based-smart-glasses-using-python-for-visually-impaired-people/"},{"title":"SIGN LANGUAGE TRANSLATOR | Hackaday.io","url":"https://hackaday.io/project/116282-sign-language-translator"},{"title":"Raspberry Pi Translates Speech to Sign Language with Robotic Hand | Tom's Hardware","url":"https://www.tomshardware.com/news/raspberry-pi-deaf-link"},{"title":"Sign Language Translator - Hackster.io","url":"https://www.hackster.io/coderscafe/sign-language-translator-b7fab5"},{"title":"You can now translate sign language automatically with these amazing Raspberry Pi glasses","url":"https://www.xda-developers.com/translate-sign-language-automatically-raspberry-pi-glasses/"},{"title":"sign-language-translation · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language-translation?o=desc&s=updated"}]
+
+Based on the web search results, here's what I found about Raspberry Pi sign language translation glasses projects:
+
+## Main Project Overview
+
+A maker named Nekhil created a pair of glasses using Raspberry Pi that can help the wearer understand sign language. The camera module captures the movements of the signer's hands, while the Raspberry Pi processes the data using machine learning and translates the gestures into spoken words, with a speaker delivering these out loud.
+
+## Hardware Components
+
+The project originally considered using a Raspberry Pi 5, but due to size constraints, the maker chose the smaller Raspberry Pi Zero 2 W. This choice of board is priced at $15. The Raspberry Pi Zero 2 W is connected to a Camera Module V3, positioned in the front center of the glasses frame.
+
+## Technology Stack
+
+The platform holding together the design is VIAM, an open-source tool oriented toward smart machine projects. The project uses VIAM's machine learning model vision service with TensorFlow Lite models, specifically using a YOLOv8 model.
+
+## Open Source Availability
+
+Nekhil has shared all the code behind this project on GitHub, and the creator has listed all the hardware, code, and instructions on Hackster.
+
+## Current Limitations
+
+Although American Sign Language (ASL) is a vast language with many signs for words and phrases, this system is designed to recognize only letters for spelling.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

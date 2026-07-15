@@ -1,0 +1,247 @@
+========================================================================
+AGENT RESEARCH: Verify Sentry + graceful degradation
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:23:21 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app (Next.js 16 on Vercel).
+
+CONTEXT: Sentry was just added (@sentry/nextjs). Files: instrumentation.ts, instrumentation-client.ts, sentry.server.config.ts, sentry.edge.config.ts, app/global-error.tsx, next.config.ts (wrapped with withSentryConfig), middleware.ts (excludes /monitoring). The Sentry DSN is set as an env var (NEXT_PUBLIC_SENTRY_DSN / SENTRY_DSN). The AT routes have Sentry.setTags(...) added.
+
+TWO things to solve:
+1. VERIFY the Sentry setup is correct and will actually capture errors from the serverless AT webhook routes — including that events FLUSH before the Vercel function returns (serverless functions can exit before async sends complete). Read all the Sentry config files + the AT routes. Confirm tracesSampleRate, the DSN wiring, and whether withSentryConfig will build cleanly without a SENTRY_AUTH_TOKEN (source-map upload should be skippable). Flag anything that would silently no-op.
+2. GRACEFUL DEGRADATION: today, if Supabase or a provider is down, a caller hears the generic "I'm sorry, something went wrong." Design better resilience for the AT routes: capture the real error to Sentry, and where possible degrade gracefully (e.g., a softer "let's try again in a moment" with a re-record, or AT <Say> fallback) instead of a hard dead-end. Read app/api/sabi/at/incoming/route.ts and recording/route.ts error handling.
+
+OUTPUT (do NOT edit files, do NOT deploy): (a) a verification verdict on the Sentry setup with any exact fixes needed (old_string→new_string), citing the @sentry/nextjs serverless flushing requirement; (b) concrete improvements for graceful degradation as exact edits. Evidence-based and ready to apply.
+
+----------------------------------------
+
+This confirms the build is safe without an auth token — the bundler plugin simply skips upload (and `silent: !process.env.CI` keeps it quiet). I now have full verification. Let me write up the findings.
+
+## Verification & Resilience Report — Sabi AT Routes + Sentry
+
+### Part (a): Sentry setup verification
+
+**Verdict: The setup is broadly correct and will build cleanly without `SENTRY_AUTH_TOKEN`, but it has ONE critical silent no-op: the AT webhook routes will NOT send error events to Sentry, because every error path is caught and converted to XML — nothing ever reaches the auto-instrumented wrapper that calls `captureException` + flush.**
+
+What's confirmed good:
+- **DSN wiring** — `process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN` on server/edge, `NEXT_PUBLIC_SENTRY_DSN` on client. Correct.
+- **`tracesSampleRate`** — `1.0` dev / `0.2` prod across all three configs. Reasonable.
+- **Build without auth token** — verified in SDK source: `getBuildPluginOptions.js` sets `sourcemaps.disable = true` when the token is absent (`skipSourcemapsUpload`), and `silent: !process.env.CI` suppresses output locally. `withSentryConfig` will build cleanly; you just lose readable stack traces until a token is added. No failure.
+- **`onRequestError = Sentry.captureRequestError`** in `instrumentation.ts` — correct for Next 16, catches *uncaught* server errors.
+- **Serverless flush IS handled by the SDK** — verified in `wrapRouteHandlerWithSentry.js`: on a thrown error it calls `core.captureException(...)` then `responseEnd.waitUntil(responseEnd.flushSafelyWithTimeout())`, and `responseEnd.js` uses `core.vercelWaitUntil(task)`. So for errors that *propagate out of the handler*, flushing before function exit is automatic. No manual `Sentry.flush()` is needed for those.
+
+**The critical gap (silent no-op):**
+The three AT routes (`incoming`, `recording`, `events`) wrap their entire body in `try/catch` and **return a valid `NextResponse` from the catch block**. Because nothing is rethrown, the SDK's auto-wrapper never sees the error → `captureException` is never called → `waitUntil(flush)` is never scheduled. The `Sentry.setTags(...)` calls run, but with no event to attach them to, they accomplish nothing. `consoleLoggingIntegration` will forward the `console.error` lines as *logs*, but you get no *error events*, no stack traces, no alerting, no grouping. This defeats the entire point of adding Sentry to these routes.
+
+Note also: `Sentry.setTags`/`setContext` set on the **isolation scope** are fine within one invocation, but if you only fix this by adding `captureException` you must also ensure the manual flush runs, since a hand-captured event in a serverless catch block is NOT covered by the wrapper's auto-flush. Per `@sentry/nextjs` serverless semantics, a manually-captured event needs an explicit `await Sentry.flush(timeout)` (or `vercelWaitUntil`) before the function returns, or the event is lost when the Lambda freezes.
+
+**Exact fix — capture + flush in each catch block.** For `incoming/route.ts`:
+
+```
+  } catch (error) {
+    console.error(
+      "AT incoming error:",
+      error instanceof Error ? error.message : error
+    );
+```
+→
+```
+  } catch (error) {
+    Sentry.captureException(error);
+    await Sentry.flush(2000);
+    console.error(
+      "AT incoming error:",
+      error instanceof Error ? error.message : error
+    );
+```
+
+For `recording/route.ts`, same edit on its outer catch (line 187-191):
+```
+  } catch (error) {
+    console.error(
+      "AT recording error:",
+```
+→
+```
+  } catch (error) {
+    Sentry.captureException(error);
+    await Sentry.flush(2000);
+    console.error(
+      "AT recording error:",
+```
+
+For `events/route.ts` (line 234-238) — this one is most important to instrument because it swallows everything and returns `{ ok: true }`, so DB/Claude/SMS failures are currently invisible:
+```
+  } catch (error) {
+    console.error(
+      "AT events error:",
+      error instanceof Error ? error.message : error
+    );
+    return NextResponse.json({ ok: true }); // Don't fail the webhook
+  }
+```
+→
+```
+  } catch (error) {
+    Sentry.captureException(error);
+    await Sentry.flush(2000);
+    console.error(
+      "AT events error:",
+      error instanceof Error ? error.message : error
+    );
+    return NextResponse.json({ ok: true }); // Don't fail the webhook
+  }
+```
+
+`flush(2000)` is comfortably inside `maxDuration` (60s / 30s). `Sentry.flush` is confirmed exported (verified via `node -e`).
+
+Secondary (non-blocking) note: `instrumentation-client.ts` uses `environment: process.env.NEXT_PUBLIC_VERCEL_ENV` while server/edge use `process.env.VERCEL_ENV`. On Vercel, `VERCEL_ENV` is not exposed to the browser bundle, so the client must use the `NEXT_PUBLIC_` prefixed copy — this is correct *only if* `NEXT_PUBLIC_VERCEL_ENV` is actually set in the Vercel project env (it is not automatic the way `VERCEL_ENV` is). If it's unset, client events land in `"development"`. Worth verifying that env var exists; otherwise client-side environment tagging silently defaults to development.
+
+### Part (b): Graceful degradation
+
+Current behavior is actually already partially layered (TTS has YarnGPT→ElevenLabs→AT `<Say>` fallback, and empty/low-confidence speech triggers a re-record). The real dead-ends are: **(1) the outer catch in `incoming` hangs up vs. inviting a retry**, and **(2) the outer catch in `recording` hangs up** instead of letting the child retry, and **(3) failures inside the happy path before TTS (Supabase `createCallState`, `callSabi`/Claude, `findOrCreateStudentByPhone`) fall straight to the hard outer catch** rather than degrading.
+
+The single highest-value, lowest-risk improvement: **make the outer catches re-record-and-retry instead of hang-up**, with softer copy. A child who hears "let's try that again in a moment" and gets another `<Record>` prompt has a path forward; a hangup is a dead end.
+
+**Exact edit — `incoming/route.ts` outer catch** (currently plays then implicitly ends with no `<Record>`):
+
+```
+  } catch (error) {
+    Sentry.captureException(error);
+    await Sentry.flush(2000);
+    console.error(
+      "AT incoming error:",
+      error instanceof Error ? error.message : error
+    );
+
+    // Try to play an error message via TTS
+    try {
+      const audio = await synthesizeSpeech(
+        "I'm sorry, something went wrong. Please try calling again in a moment."
+      );
+      const audioUrl = await uploadAudio(audio, `error_${Date.now()}.mp3`);
+      return new NextResponse(
+        `<?xml version="1.0" encoding="UTF-8"?><Response><Play url="${audioUrl}"/></Response>`,
+        { headers: xmlHeaders() }
+      );
+    } catch {
+      // Last resort — use AT's built-in <Say> (Google TTS, free)
+      return new NextResponse(
+        createSayAndHangupResponse(
+          "I'm sorry, something went wrong. Please try calling again in a moment."
+        ),
+        { headers: xmlHeaders() }
+      );
+    }
+  }
+```
+→
+```
+  } catch (error) {
+    Sentry.captureException(error);
+    await Sentry.flush(2000);
+    console.error(
+      "AT incoming error:",
+      error instanceof Error ? error.message : error
+    );
+
+    // Soft degrade: invite the caller to speak again instead of dead-ending.
+    // A generic session id keeps the recording callback wired even when the
+    // upstream lookup/greeting failed.
+    const softText =
+      "Hi! I'm Sabi. I'm having a little trouble right now — let's try again. Say hello when you're ready.";
+    const fallbackCallback =
+      (process.env.NEXT_PUBLIC_APP_URL || "https://eduforequality.org") +
+      `/api/sabi/at/recording?session=${encodeURIComponent(
+        // reuse the AT session id if we parsed one; else a synthetic id
+        (typeof sessionId === "string" && sessionId) || `err_${Date.now()}`
+      )}&student=`;
+
+    try {
+      const audio = await synthesizeSpeech(softText);
+      const audioUrl = await uploadAudio(audio, `error_${Date.now()}.mp3`);
+      return new NextResponse(
+        createPlayAndRecordResponse(audioUrl, fallbackCallback),
+        { headers: xmlHeaders() }
+      );
+    } catch {
+      // Last resort — AT's built-in <Say> (Google TTS, free), still with a re-record
+      return new NextResponse(
+        createSayAndRecordResponse(softText, fallbackCallback),
+        { headers: xmlHeaders() }
+      );
+    }
+  }
+```
+
+Caveat to flag for application: `sessionId` is declared with `const` *inside* the `try` block in `incoming`, so it is not in scope in the catch. To use it in the fallback callback as above, hoist its declaration: change line 34-37 area so `let sessionId = "";` is declared **before** the `try`, then assign inside. If you'd rather not touch scoping, drop the `sessionId` reference and just use `err_${Date.now()}` — the re-record still works; only cross-turn state continuity is lost, which is already lost in an error anyway.
+
+**Exact edit — `recording/route.ts` outer catch** (currently plays-and-hangs-up). `sessionId`/`studentId` ARE already in scope here (declared at top, lines 48-49), so the callback can be rebuilt cleanly:
+
+```
+    // Try TTS error message, fall back to AT's <Say> (Google TTS)
+    try {
+      const audio = await synthesizeSpeech(
+        "I'm sorry, something went wrong. Please call back and we can continue where we left off."
+      );
+      const audioUrl = await uploadAudio(audio, `error_${Date.now()}.mp3`);
+      return new NextResponse(createPlayAndHangupResponse(audioUrl), {
+        headers: xmlHeaders(),
+      });
+    } catch {
+      // Last resort — AT's built-in <Say> (Google TTS, free)
+      return new NextResponse(
+        createSayAndHangupResponse(
+          "I'm sorry, something went wrong. Please call back and we can continue where we left off."
+        ),
+        { headers: xmlHeaders() }
+      );
+    }
+```
+→
+```
+    // Soft degrade: let the child try again in-call instead of hanging up.
+    const retryText =
+      "Hmm, I didn't catch that — my fault. Let's try once more. Go ahead.";
+    const retryCallback =
+      (process.env.NEXT_PUBLIC_APP_URL || "https://eduforequality.org") +
+      `/api/sabi/at/recording?session=${encodeURIComponent(
+        sessionId
+      )}&student=${encodeURIComponent(studentId)}`;
+
+    try {
+      const audio = await synthesizeSpeech(retryText);
+      const audioUrl = await uploadAudio(audio, `error_${Date.now()}.mp3`);
+      return new NextResponse(
+        createPlayAndRecordResponse(audioUrl, retryCallback),
+        { headers: xmlHeaders() }
+      );
+    } catch {
+      // Last resort — AT's built-in <Say> (Google TTS, free), still re-recording
+      return new NextResponse(
+        createSayAndRecordResponse(retryText, retryCallback),
+        { headers: xmlHeaders() }
+      );
+    }
+```
+
+Note one judgment call: an *infinite* retry loop is possible if the underlying outage persists (e.g., Supabase down → every recording POST fails → re-record → fail again). That's still strictly better than a hangup, but if you want a bounded loop, add a `&retries=N` query param incremented on the error callback and hang up gracefully after 2-3 attempts. I'd flag this as an optional follow-up rather than block the fix.
+
+**Optional deeper degradation (flag, not required now):** the happy-path failures most likely to bite in production per your memory (Supabase being down) are `createCallState`/`getCallState`/`addMessage`. Right now any of those throwing drops the whole call to the outer catch. A more graceful design is a stateless fallback: if `getCallState` throws in `recording`, still run STT→Claude with just the single current utterance (the route already has this exact fallback shape at line 118-120 for the *empty-state* case) and skip persistence, so the conversation continues degraded-but-alive while Supabase is down. That's a larger change; the catch-block edits above are the safe, ready-to-apply baseline.
+
+### Summary of what to apply
+1. Add `Sentry.captureException(error); await Sentry.flush(2000);` to all three AT route outer catch blocks (this is the load-bearing Sentry fix — without it the routes capture nothing).
+2. Convert both `incoming` and `recording` outer catches from play/hangup to play/re-record with softer copy (graceful degradation).
+3. Hoist `sessionId` to `let` before the `try` in `incoming` if you want session continuity in its fallback (optional).
+4. Verify `NEXT_PUBLIC_VERCEL_ENV` is set in Vercel, or client events mis-tag as development.
+
+No files were edited and nothing was deployed, per instructions.
+agentId: a254d27f2ce0a9ada (use SendMessage with to: 'a254d27f2ce0a9ada' to continue this agent)
+<usage>subagent_tokens: 53953
+tool_uses: 22
+duration_ms: 116923</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Awarri Nigerian accented English speech recognition Whisper model huggingface mo
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 20:24:06 UTC
+========================================================================
+
+Search query: Awarri Nigerian accented English speech recognition Whisper model huggingface model id NCAIR
+
+----------------------------------------
+
+Web search results for query: "Awarri Nigerian accented English speech recognition Whisper model huggingface model id NCAIR"
+
+Links: [{"title":"NCAIR1/NigerianAccentedEnglish · Hugging Face","url":"https://huggingface.co/NCAIR1/NigerianAccentedEnglish"},{"title":"NCAIR1/N-ATLaS · Hugging Face","url":"https://huggingface.co/NCAIR1/N-ATLaS"},{"title":"NCAIR1/Yoruba-ASR · Hugging Face","url":"https://huggingface.co/NCAIR1/Yoruba-ASR"},{"title":"rishabbahal/whisper-small-nigerian-accent · Hugging Face","url":"https://huggingface.co/rishabbahal/whisper-small-nigerian-accent"},{"title":"codeceejay/HIYACCENT_Wav2Vec2 · Hugging Face","url":"https://huggingface.co/codeceejay/HIYACCENT_Wav2Vec2"},{"title":"NCAIR1/Hausa-ASR · Hugging Face","url":"https://huggingface.co/NCAIR1/Hausa-ASR"},{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"openai/whisper-large · Hugging Face","url":"https://huggingface.co/openai/whisper-large"},{"title":"openai/whisper-large-v3 · Hugging Face","url":"https://huggingface.co/openai/whisper-large-v3"},{"title":"openai/whisper-tiny · Hugging Face","url":"https://huggingface.co/openai/whisper-tiny"}]
+
+Based on the search results, I found relevant information about Awarri and Nigerian accented English speech recognition models:
+
+## Key Findings
+
+The primary model is a breakthrough automatic speech recognition (ASR) model specifically designed for Nigerian Accented English, fine-tuned on Whisper Small architecture, powered by Awarri Technologies and an initiative of the Federal Ministry of Communications, Innovation and Digital Economy.
+
+**HuggingFace Model ID:** The model is called "NigerianAccentedEnglish" and was released by Awarri Technologies in partnership with the Federal Government of Nigeria. The HuggingFace model ID is **NCAIR1/NigerianAccentedEnglish**.
+
+**Governance:** Governance and oversight are led by the Federal Ministry of Communications, Innovation, and Digital Economy, in collaboration with the National Centre for Artificial Intelligence & Robotics (NCAIR).
+
+## Additional Models
+
+Awarri Technologies also released N-ATLaS (Nigeria – Automatic Transcription and Language Systems), consisting of four Automatic Speech Recognition (ASR) models and one Text Large Language Model (LLM) for Nigerian languages (Yoruba, Hausa, Igbo, and Nigerian-accented English).
+
+The models are available on Hugging Face under the NCAIR1 organization account.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

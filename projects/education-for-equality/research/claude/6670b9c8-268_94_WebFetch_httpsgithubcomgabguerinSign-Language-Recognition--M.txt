@@ -1,0 +1,78 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/gabguerin/Sign-Language-Recognition--MediaPipe-DTW
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:12:57 UTC
+========================================================================
+
+URL: https://github.com/gabguerin/Sign-Language-Recognition--MediaPipe-DTW
+Extraction prompt: Extract ALL details: how it works, what DTW matching does, how reference signs are recorded, accuracy achieved, dependencies, how to run it, file structure, what datasets it supports. Everything.
+
+----------------------------------------
+
+# Sign Language Recognition - MediaPipe & DTW Implementation
+
+## How It Works
+
+This system recognizes sign language gestures by extracting hand landmarks and comparing temporal patterns. Here's the workflow:
+
+**Landmark Extraction**: MediaPipe's Holistic Model extracts keypoints from hands, pose, and face. Currently, the implementation focuses on hand landmarks only.
+
+**Feature Representation**: Rather than using raw coordinates, the system creates "invariant to orientation and scale" features by computing angles between hand joint connections, making it robust to different positions and sizes.
+
+**Temporal Matching**: Dynamic Time Warping (DTW) compares the recorded sign's angle sequences against reference signs in the dataset, measuring similarity despite variations in execution speed.
+
+## What DTW Matching Does
+
+DTW is described as "widely used for computing time series similarity." It aligns two sequences of varying lengths to find the optimal correspondence, enabling recognition of signs performed at different speeds. The system computes DTW distances between the input gesture and all reference signs, then applies voting logic—only outputting predictions above a confidence threshold.
+
+## Reference Sign Recording
+
+**Process**: 
+- Videos organized hierarchically: `data/videos/[SignName]/[video_files].mp4`
+- System extracts HandModel features (joint angles) from each frame
+- Stores temporal sequences of feature vectors for both hands
+- Creates SignModel objects representing complete sign gestures
+
+A helper script (`yt_download.py`) downloads French sign videos from YouTube links specified in `yt_links.csv`, with ffmpeg handling video processing.
+
+## Accuracy & Performance
+
+The README notes the current dataset is "insufficient to obtain good results," explicitly encouraging users to expand it. No specific accuracy metrics are provided—results depend heavily on dataset size and quality.
+
+## Dependencies
+
+Required packages installable via: `pip install -r requirements.txt`
+
+Key libraries: MediaPipe (landmark extraction), OpenCV (video/webcam processing), DTW implementation library
+
+## How to Run
+
+```
+1. pip install -r requirements.txt
+2. Populate data/videos/ with reference sign videos (or run python yt_download.py)
+3. python main.py
+4. Press 'r' key during webcam feed to record and recognize signs
+```
+
+## File Structure
+
+```
+├── data/
+│   └── videos/          # Reference sign videos organized by name
+├── models/              # Likely contains HandModel, SignModel classes
+├── utils/               # Utility functions
+├── main.py             # Main execution script
+├── sign_recorder.py    # SignRecorder class for live recognition
+├── webcam_manager.py   # Webcam handling
+├── yt_download.py      # YouTube dataset downloader
+├── requirements.txt
+└── README.md
+```
+
+## Dataset Support
+
+Accepts MP4 video files. Example provides French signs ("Hello," "Thanks"). System is language-agnostic—any sign language can be added by following the folder structure convention.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

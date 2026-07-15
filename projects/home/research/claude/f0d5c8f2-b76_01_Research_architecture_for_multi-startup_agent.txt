@@ -1,0 +1,278 @@
+========================================================================
+AGENT RESEARCH: Research architecture for multi-startup agent
+Session: f0d5c8f2-b768-4db3-b921-790c021bd587
+Time: 2026-04-29 03:26:48 UTC
+========================================================================
+
+I'm designing an AI agent that monitors multiple startups in parallel and continuously works to grow them toward unicorn outcomes. Research the technical architecture and engineering patterns required to actually build this. Be concrete and opinionated.
+
+Cover:
+
+1. **Long-running, stateful, multi-tenant agent architecture**: How do you build an agent that runs continuously over weeks/months across N tenants (startups), each with isolated context, memory, and tool access? What are the proven patterns? Look at: LangGraph's persistence model, Temporal/Inngest for durable workflows, Claude Agent SDK's session/memory model, OpenAI's Assistants/Agents API state model, Letta (formerly MemGPT) for long-term agent memory, Mem0, Zep. Compare them on: durability, multi-tenancy, observability, cost.
+
+2. **Data ingestion layer**: A real "watch over a startup" agent needs read access to: financial data (Stripe, QuickBooks, Brex, Mercury, bank feeds), product analytics (Mixpanel, Amplitude, PostHog, Segment), CRM (HubSpot, Salesforce, Attio), comms (Slack, email, Linear, Notion), code (GitHub), people (Carta, Rippling, Gusto), web (Google Analytics, Search Console). What integration platforms exist? Merge.dev, Nango, Paragon, Finch (HR/payroll), Plaid (banking), Codat (accounting). Costs, coverage, build vs buy.
+
+3. **The "operator brain" — how to encode playbooks**: How do you turn the kind of judgment-based playbooks used by top venture studios into something an agent can execute? Patterns: rule-based monitors + LLM judgment, evals/scorecards, structured "weekly review" workflows, the "agent constitution" pattern, retrieval over a curated playbook library. Look at how Harvey, Hebbia, Sierra, Decagon actually structure their domain knowledge — papers, blog posts, podcast interviews with their teams.
+
+4. **Human-in-the-loop and trust**: For an agent advising a founder on growth-critical decisions, what HITL patterns work? Approval queues, "ask the agent" pull model vs "agent pushes recommendations" push model, how to handle high-stakes recommendations (hiring, pricing, fundraising). How do successful AI products in high-stakes domains (Harvey for law, Abridge for medicine) handle this?
+
+5. **Evaluation**: How do you even know the agent is working? Outcomes are lagging by years (unicorn or not). What proxy evals work? Look at: forecasting evals, decision-quality evals, A/B-able interventions, the "would a top operator have done this?" eval.
+
+6. **Cost and scaling**: For an agent that runs continuously across N startups with deep context, cost can explode. Patterns to manage: prompt caching (Anthropic), tiered model use (Haiku for monitoring, Sonnet for analysis, Opus for hard decisions), batching, async/scheduled runs vs always-on, summarization/compaction for long contexts.
+
+7. **Suggested concrete architecture**: At the end, propose a pragmatic v0 architecture for this product. What do you build first? What do you NOT build? What's the smallest valuable version (one startup, one function — say, a "weekly metrics review" agent — and grow from there)?
+
+Cite specific tools, papers, and blog posts with URLs. Return ~2000-3000 words. Be opinionated; flag where you're guessing.
+
+----------------------------------------
+
+# Architecting an AI Agent That Grows Startups Toward Unicorn Outcomes
+
+This is a real engineering problem disguised as a product one. The hard parts aren't "call an LLM in a loop" — they're durability, integration sprawl, encoded judgment, and evaluation under multi-year feedback latency. Below is what I'd actually build, with strong opinions and explicit flags where I'm guessing.
+
+---
+
+## 1. Long-Running, Stateful, Multi-Tenant Agent Architecture
+
+**The core insight:** An agent that runs for weeks across N startups is not an "agent framework" problem — it's a **durable workflow** problem with LLM calls embedded inside it. Treat the LLM as a stateless function and put all state in a real database and a real workflow engine.
+
+### Proven patterns, opinionated comparison
+
+**Temporal (https://temporal.io) / Inngest (https://www.inngest.com) / Restate (https://restate.dev):** This is where I'd start. Temporal gives you durable execution: every step is checkpointed, retries are automatic, workflows survive process restarts and can sleep for months. Inngest is the lighter-weight, serverless-native version with a much faster onramp. Both treat "wait 7 days, then run weekly review" as a first-class primitive. Temporal has a strong AI agents story now (https://temporal.io/blog/what-are-durable-execution-agents). I'd bet on Inngest for v0 and Temporal once you're scaling past ~50 tenants.
+
+**LangGraph (https://langchain-ai.github.io/langgraph/concepts/persistence/):** Their persistence model (checkpointers + thread-scoped state, plus their newer "Store" for cross-thread memory) is genuinely good for graph-shaped agent logic. The catch: LangGraph's durability is fine for hours-to-days runs but you still want a real workflow engine wrapping it for week+ horizons. Use LangGraph **inside** a Temporal/Inngest activity, not as a replacement for one.
+
+**Claude Agent SDK (https://docs.claude.com/en/api/agent-sdk/overview):** Strong on tool use, subagents, and the file-system-as-memory pattern (CLAUDE.md, working directories per session). Anthropic's "Building effective agents" post (https://www.anthropic.com/research/building-effective-agents) and their context-engineering writeup (https://www.anthropic.com/news/context-engineering-for-ai-agents) are required reading. Session memory is per-conversation; for multi-tenant long-horizon you layer your own store on top.
+
+**OpenAI Assistants/Agents API + Responses API:** The Assistants API is being deprecated in favor of the Responses API + Agents SDK. State model is thread-based; fine for chatbots, weak for "watch this startup for 6 months." I wouldn't build the durable layer on top of OpenAI's primitives.
+
+**Letta / MemGPT (https://www.letta.com, paper: https://arxiv.org/abs/2310.08560):** Hierarchical memory (core, archival, recall) with self-edits. Conceptually the right shape for "agent that knows a startup deeply." In practice it's still maturing and you may end up reimplementing parts. Worth using as a memory **service** behind your agent rather than as the whole framework.
+
+**Mem0 (https://mem0.ai, https://github.com/mem0ai/mem0) / Zep (https://www.getzep.com, paper "Graphiti": https://arxiv.org/abs/2501.13956):** These are memory layers, not agent frameworks. Mem0 is simpler (vector + extraction); Zep's Graphiti builds a temporal knowledge graph, which is the right abstraction for "what was MRR last month vs now, and what changed." Zep is what I'd pick if startup-state-over-time is central — and it is, for this product.
+
+### Recommendation
+
+- **Workflow/durability:** Inngest (v0) → Temporal (scale).
+- **Per-tenant agent loop:** Claude Agent SDK or LangGraph, run inside workflow steps.
+- **Memory:** Postgres (source of truth for facts) + Zep (temporal knowledge graph) + object storage for raw artifacts. Skip pure vector DBs as the primary memory; use them only for retrieval over playbook library.
+- **Multi-tenancy:** One workflow per tenant, hard isolation at the database row + tool-credential level. Never share a context window across tenants; the cost of one cross-tenant leak is existential.
+- **Observability:** Langfuse (https://langfuse.com) or Arize Phoenix (https://phoenix.arize.com) for traces + evals. Plus Temporal/Inngest's own UI for workflow state.
+
+---
+
+## 2. Data Ingestion Layer
+
+This is where the project will actually live or die. There is no "the unified API for startup data" — you will integrate dozens of sources, and each category has 1-3 winners.
+
+### Build vs buy, by category
+
+**Banking / financial data → Plaid (https://plaid.com), Teller (https://teller.io).** Plaid is the default. Pricing is per-connected-account-per-month, ~$0.30–$1.50 depending on product (Auth, Transactions, Balance, Liabilities). Buy.
+
+**Accounting → Codat (https://codat.io), Rutter (https://rutter.com), Merge (https://merge.dev).** QuickBooks, Xero, NetSuite. Codat is the deepest; Merge is broader and cheaper but shallower per-integration. For QuickBooks specifically, the direct API is fine. Buy Merge or Codat.
+
+**Payments → direct Stripe API.** No unified-API layer needed; almost every startup uses Stripe. Build direct.
+
+**Banking-for-startups (Brex, Mercury, Ramp):** Each has its own API. No unifier covers all three well. Build direct, ~1-2 days each.
+
+**HR / payroll → Finch (https://tryfinch.com), Merge.** Finch is purpose-built for payroll/HR (Gusto, Rippling, ADP, Justworks). Buy Finch — building this yourself is a multi-quarter project.
+
+**Cap table → Carta API, Pulley, AngelList Stack.** No unifier. Carta's API access is gated and expensive. Often founders will just upload a CSV; don't over-engineer this in v0.
+
+**Product analytics → Segment (https://segment.com) as the funnel, or direct Mixpanel/Amplitude/PostHog APIs.** If the startup already runs Segment, you get everything for free. Otherwise direct APIs are straightforward. PostHog has the cleanest API. Build direct.
+
+**CRM → Merge (https://merge.dev/categories/crm), Nango (https://nango.dev), Paragon (https://useparagon.com).** HubSpot, Salesforce, Attio, Pipedrive. Merge's CRM unified model is decent for basic "deals, contacts, accounts." For anything custom-object-heavy (Salesforce), you want direct. Buy Merge for v0; expect to drop to direct for power users.
+
+**Comms → Slack API direct, Gmail/Outlook via Nylas (https://www.nylas.com) or direct Google/Microsoft Graph.** Nango covers the OAuth dance well. Build direct via Nango's auth layer.
+
+**Code → GitHub API direct, GitLab/Bitbucket as needed.** Build direct.
+
+**Project tracking → Linear API, Notion API, Jira via Merge.** Build direct for Linear/Notion (clean APIs), Merge for Jira.
+
+**Web → Google Analytics 4 (Data API), Search Console API, [REDACTED:sensitive-label] direct.** Build direct.
+
+### Opinion
+
+Use **Nango** (https://nango.dev, open-source friendly, ~$1k–$5k/mo at startup scale) as your **OAuth/sync infrastructure** for the long tail of integrations, **Merge** for CRM + accounting + ticketing unified models, **Finch** for HR/payroll, **Plaid** for banking, and direct APIs for the 10-15 sources that matter most (Stripe, GitHub, Slack, Linear, GA4, Mixpanel/PostHog/Amplitude, HubSpot, Notion).
+
+Expect total integration cost at ~$3k–$10k/mo per ~50 tenants. The bigger cost is engineering: budget 1 FTE for 6 months just to harden ingestion, schema normalization, and incremental sync. dlt (https://dlthub.com) is worth knowing about as an open-source alternative for the long tail.
+
+Store everything in a **bronze/silver/gold lakehouse pattern**: raw API responses in S3 (bronze), normalized per-source tables in Postgres or DuckDB (silver), tenant-level "startup state" facts in a curated schema the agent reads from (gold). The agent should almost never hit raw APIs at decision time — it queries gold.
+
+---
+
+## 3. The "Operator Brain" — Encoding Playbooks
+
+This is the hard, defensible part. Every framework problem has a solution; encoding judgment doesn't.
+
+### Patterns that work
+
+**Layered: deterministic monitors → LLM judgment → escalation.** Don't ask an LLM "is this startup healthy?" Ask SQL: "is net new MRR < 0 for two consecutive weeks?" Then ask the LLM to interpret and propose actions. Anthropic's "Building effective agents" (https://www.anthropic.com/research/building-effective-agents) makes this case explicitly: workflows beat agents until you actually need open-ended reasoning.
+
+**Playbook library with retrieval.** Curate ~50–200 named playbooks ("PLG conversion drop diagnostic," "Series A pre-pitch readiness review," "first sales hire scorecard"). Each is a structured doc: trigger conditions, inputs needed, decision tree, expected output, examples. At runtime, retrieve the 1-3 relevant playbooks and load them into context. This is the **same shape as Harvey's "workflows"** (https://www.harvey.ai/blog/introducing-harvey-workflows) and Sierra's "agent skills."
+
+**Agent constitution / spec.** A persistent system-prompt-level document defining values, escalation rules, what's never autonomous, tone, and limits. Anthropic's Claude constitution and OpenAI's Model Spec (https://model-spec.openai.com) are the references. Sierra has written about this pattern (https://sierra.ai/blog/sierra-agent-os).
+
+**Structured weekly/monthly review workflows.** Don't run open-ended agents on a 6-month timeline. Run **scheduled, structured rituals**: Monday metrics review, Wednesday hiring check-in, Friday cash/runway update, monthly strategic memo. Each is a typed workflow with defined inputs and outputs. The agent's continuous "watching" is implemented as cron + event triggers, not a literal infinite loop.
+
+**Evals as specifications.** Write the eval **before** the playbook. "For this scenario, a great operator would recommend X, an OK one Y, a bad one Z." Then the playbook is whatever passes the eval. This is how Hebbia (https://www.hebbia.com), Harvey, and Sierra describe their internal loop in interviews — see Hebbia CEO George Sivulka (https://www.latent.space/p/hebbia) and Harvey's engineering posts (https://www.harvey.ai/blog).
+
+**Decagon and Sierra** specifically structure domain knowledge as: (a) a knowledge base / RAG layer, (b) typed workflows / skills with explicit inputs/outputs, (c) a guardrails / policy layer, (d) a learning loop where customer-specific edge cases get distilled back into workflows. See Decagon's posts (https://decagon.ai/blog) and Bret Taylor's writeups on Sierra's Agent OS.
+
+### Opinion
+
+Hire one ex-venture-studio operator (or partner with one) and spend the first 3 months **just writing playbooks** in a structured format with paired evals. The agent is mostly retrieval + execution over that library. Don't try to LLM-reason your way to operator judgment from scratch — encode the judgment.
+
+I'm guessing here, but I'd bet the playbook library is the actual moat, and the agent infrastructure is commoditized within 18 months.
+
+---
+
+## 4. Human-in-the-Loop and Trust
+
+For founder-facing growth advice, **push** is dangerous and **pull** is underused.
+
+### Patterns
+
+**Tiered autonomy by stakes.** Decide per-action-class:
+- **Auto-execute, log:** drafting weekly digests, pulling reports, reminding about overdue tasks.
+- **Draft + one-click approve:** outbound investor updates, candidate outreach, pricing experiments.
+- **Recommend + human decides:** hiring decisions, fundraising timing, major pricing changes, layoffs. Agent never executes; it produces a memo with options, evidence, and a recommendation.
+- **Never autonomous:** legal commitments, wire transfers, public communications, compensation changes.
+
+**Approval queues with context.** Every recommendation comes with: trigger (what monitor fired), evidence (the actual data), reasoning trace, alternatives considered, confidence, what would change the recommendation. Linear-style inbox UI.
+
+**Pull-mode "ask the agent."** The single highest-trust UX: a Slack/email interface where founder asks "should we raise prices on the enterprise tier?" and gets a memo back grounded in their data. This is **Harvey's primary UX for law** (https://www.harvey.ai) and **Hebbia's for finance**. Both deliberately avoid autonomous actions in favor of being a force-multiplier for the human.
+
+**Push-mode is for monitoring, not decisions.** "MRR dropped 8% week-over-week, here's a 1-page diagnostic" is good push. "I recommend you fire your VP Sales" is not.
+
+**Calibration is a trust feature.** Show confidence intervals and track agent calibration over time ("our recommendations have been right 73% of the time on revenue forecasts within 10%"). Abridge (https://www.abridge.com, https://www.abridge.com/blog) in medicine and Harvey in law both publish quality benchmarks publicly to build trust — copy this.
+
+**Citations, always.** Every claim links to source data. Hebbia's whole pitch is "every sentence has a citation." Build this from day one; retrofitting is painful.
+
+### Opinion
+
+Default everything to draft + approve in v0. Earn autonomy per-action-class through measured calibration. The product that pushes a "fire your CTO" recommendation in v0 is the product that gets sued.
+
+---
+
+## 5. Evaluation
+
+Outcomes are lagging by 5-10 years, so direct outcome evals are useless. You need a battery of proxies.
+
+### Proxy evals that actually work
+
+**Forecasting evals.** Have the agent forecast 30/90-day metrics (MRR, burn, headcount, churn) and score against actuals. Tetlock-style Brier scores. This is the cleanest signal you'll get, and it's available in weeks not years. See Phil Tetlock's work (https://goodjudgment.com) and Karpathy on this for AI evals.
+
+**Decision-quality evals via expert panels.** Curate a panel of 3-5 ex-operators. Blind-rate agent recommendations vs. ground-truth "what we'd recommend." Track agreement rate over time. Expensive but real. This is essentially what Harvey does with lawyers (https://www.harvey.ai/blog/big-law-bench).
+
+**Backtest on historical startups.** Hardest but most valuable: ingest 6-12 months of historical data from a known-outcome startup (with consent) and run the agent week-by-week. Compare its recommendations to what was actually done and to outcomes. Bias-laden but informative.
+
+**A/B-able interventions.** For tactical decisions (subject lines, pricing tier copy, candidate sourcing channels), run actual experiments. The agent is hypothesis generator + analyst.
+
+**"Would a top operator have done this?" rubric.** A scored rubric run by a human reviewer on a sample of outputs each week. 1-5 on: data accuracy, reasoning quality, action specificity, prioritization, tone. This is your day-to-day quality bar.
+
+**Process evals.** Did the agent retrieve the right playbook? Did it pull the right data? Did it cite correctly? Did it escalate when it should have? These are cheap, automated, and catch regressions fast. Use Langfuse or Phoenix for this.
+
+**Adversarial / red-team evals.** "Founder is panicking and asks for a layoff plan in a month where revenue is fine but pipeline looks weak" — agent should not just comply. Test for over-compliance, hallucinated data, cross-tenant leakage, prompt injection via ingested email/Slack content. Simon Willison's prompt injection writeups (https://simonwillison.net/tags/prompt-injection/) are the canonical reference.
+
+### Opinion
+
+Forecasting + process evals + weekly human rubric is the v0 stack. Backtest and expert panel come at v1 once you have volume.
+
+I'm guessing here, but I think within a year there will be a public benchmark for "operator judgment" the way there's now BigLawBench for legal. Build your internal one anyway.
+
+---
+
+## 6. Cost and Scaling
+
+Naive math: agent reads 50k tokens of startup context, runs 10 times a day across 100 startups = 50M tokens/day input on Sonnet ≈ $150/day per startup or $15k/mo for 100 tenants. That's the wrong way to do it.
+
+### Patterns
+
+**Prompt caching (https://docs.claude.com/en/docs/build-with-claude/prompt-caching).** Anthropic's prompt caching gives ~10x cost reduction and ~85% latency reduction on cached prefix. Structure prompts so the stable parts (constitution, playbook library, tenant profile, recent state summary) are the prefix and the volatile parts (current question, recent events) are the suffix. This alone can be a 5-10x cost win.
+
+**Tiered model routing.**
+- **Haiku 4.5:** monitoring, classification, "is this event interesting?", drafting boilerplate. ~$1/$5 per Mtok.
+- **Sonnet 4.5:** weekly reviews, most analysis, writing memos. ~$3/$15 per Mtok.
+- **Opus 4.x:** strategic decisions, hard reasoning, ambiguous situations. ~$15/$75 per Mtok.
+
+A good ratio is roughly 80% Haiku tokens, 18% Sonnet, 2% Opus by volume.
+
+**Async + scheduled, never always-on.** There is no reason to "always be running." Event-triggered (data change, founder message, Slack mention) + scheduled (daily/weekly rituals) covers everything. Idle cost should be near-zero.
+
+**Summarization / compaction.** Maintain a rolling **tenant state document** updated weekly: "Acme Co — current MRR $80k, growing 12% MoM, runway 14mo, key risks X/Y/Z, last 4 weeks summary..." 2-5k tokens. The agent reads this, not the full history. Anthropic's context-engineering post covers compaction patterns. Letta/MemGPT-style hierarchical memory is the same idea.
+
+**Batching.** Anthropic Batch API is 50% cheaper for non-urgent work (https://docs.claude.com/en/api/messages-batches). All weekly/monthly reviews and most monitoring should run batched.
+
+**Retrieval over stuffing.** Don't put the whole playbook library in context. Retrieve 1-3 relevant playbooks per task. Don't load all of Slack; load the threads that matched a query.
+
+**Embeddings + cheap re-ranking** for search across the tenant corpus. Voyage or OpenAI embeddings, BM25 + dense hybrid, cohere or a small model for re-rank.
+
+### Opinion
+
+With caching + tiering + scheduled-only + compaction, you can get to **$50–$200 per tenant per month** in inference cost for a deeply-engaged agent. That's a fine unit economic at any reasonable price point.
+
+---
+
+## 7. Concrete v0 Architecture
+
+### What to build first
+
+**Product scope:** One startup at a time (your own first), one ritual: **the Monday metrics review.** Agent ingests Stripe + accounting + product analytics + GitHub + Slack, produces a 1-page Monday memo with: KPIs vs targets, deltas, anomalies, 3 prioritized questions for the founder, draft answers to each.
+
+That's it. No autonomous actions, no recommendations on hiring, no fundraising advice. Just: high-quality, cited, weekly metrics review the founder actually reads.
+
+### Stack
+
+- **Workflow engine:** Inngest. One workflow per tenant, scheduled weekly + event-triggered.
+- **Agent runtime:** Claude Agent SDK with Sonnet 4.5 default, Haiku 4.5 for monitoring, Opus for the synthesis step of the weekly memo.
+- **Ingestion:**
+  - Stripe direct
+  - QuickBooks via Merge.dev
+  - GitHub direct
+  - Slack direct
+  - Mixpanel/PostHog direct (whichever the tenant uses)
+  - Plaid for bank feeds (v0.5)
+  - Nango for OAuth + the long tail
+- **Storage:** Postgres for everything (tenant config, normalized data, agent state, memos). S3 for raw API responses. Pinecone or pgvector for playbook retrieval. Skip Zep/Letta in v0; revisit at v1.
+- **Memory:** Per-tenant `state.md` document in Postgres, updated at end of each weekly run by the agent itself. ~3k tokens.
+- **Playbooks:** ~10 hand-authored, in-repo as Markdown with YAML frontmatter (trigger, inputs, output schema). Loaded into a small RAG index.
+- **HITL:** Slack DM as the surface. Memo posts to a `#agent` channel. Founder can reply with questions; agent responds in thread.
+- **Evals:** Langfuse for traces. Weekly human review rubric (you, scoring 1-5 on five dimensions). Forecasting eval: agent forecasts next-week MRR; you log actuals.
+- **Observability:** Inngest UI + Langfuse + a simple admin dashboard showing per-tenant: last run, token spend, memo quality score.
+
+### What to NOT build in v0
+
+- Multi-tenant infra. Run on one tenant. Hardcode it. Earn the right to multi-tenant.
+- Autonomous actions. Read-only.
+- Fancy memory architectures (Letta, Zep, Mem0). A markdown file in Postgres is enough.
+- Custom integration framework. Use Merge + Nango + direct APIs.
+- A frontend. Slack is the frontend.
+- Hiring/fundraising/strategic recommendations. Metrics review only.
+- Vector DB as primary store. Postgres + pgvector.
+- Fine-tuning. Prompt engineering + retrieval gets you 95% there.
+
+### Growth path
+
+1. **v0 (months 1-3):** Monday metrics review for 1 startup (yours).
+2. **v0.5 (months 3-6):** Add 3 friendly design partners. Add Wednesday hiring check-in and Friday cash review. Build playbook library to ~25 entries. Start forecasting eval.
+3. **v1 (months 6-12):** Pull-mode "ask the agent" via Slack. Multi-tenant infra. Approval-queue UI for draft outbound (investor updates, candidate outreach). Backtest eval.
+4. **v2 (year 2):** Opinionated push recommendations on tactical decisions. Expert review panel. Public benchmark.
+5. **v3+:** Earn autonomy per-action-class as calibration data accumulates.
+
+### Where I'm guessing
+
+- **Operator playbook library is the moat.** Plausible but unproven; could be that agent infra commoditization actually destroys this and the moat is distribution + data access.
+- **Forecasting evals predict decision quality.** Reasonable but not established. Could be that good forecasters are bad advisors.
+- **$50–$200 per tenant per month is achievable.** Depends heavily on tenant data volume; high-volume Slack/email could blow this up 5x.
+- **Founders want a memo, not a dashboard.** I believe this strongly but it's a UX bet.
+- **Inngest scales fine to 100s of tenants for this workload.** Likely true, but Temporal is the safer bet if you're confident you'll cross 1000+.
+
+The single most important thing: **start narrow, get to a memo a founder actually reads every Monday, and let everything else grow from that proof.** Most agent products fail because they try to do everything in v0; the ones that work picked one ritual and nailed it.
+agentId: ad4e4a789ea5c3740 (use SendMessage with to: 'ad4e4a789ea5c3740' to continue this agent)
+<usage>total_tokens: 19826
+tool_uses: 0
+duration_ms: 145644</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

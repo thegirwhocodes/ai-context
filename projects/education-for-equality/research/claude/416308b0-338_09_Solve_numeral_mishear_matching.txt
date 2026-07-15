@@ -1,0 +1,339 @@
+========================================================================
+AGENT RESEARCH: Solve numeral mishear matching
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:38 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi" (voice math tutor for Nigerian kids). Repos: /Users/naomiivie/Education for Equality/curriculum-app (production, TypeScript) and /Users/naomiivie/Education for Equality/sabi-server (Python, has answer_matcher.py).
+
+PROBLEM: Whisper mishears children's spoken numbers in Nigerian English ("seven"→"heaven", "three"→"tree", "four"→"for"). sabi-server/answer_matcher.py was built to fuzzy-match these (WORD_TO_NUM with Nigerian mispronunciations, extract_number, match_answer) but is UNUSED. The Vercel/curriculum-app side has NO equivalent — the LLM judges answers directly, so mishears corrupt the lesson.
+
+YOUR TASK:
+1. Read sabi-server/answer_matcher.py fully (the WORD_TO_NUM map, extract_number, match_answer logic).
+2. Read curriculum-app/lib/voice/sabi-shared.ts to understand where/how answers flow (callSabi / the system prompt) and lib/voice/stt.ts.
+3. Design a lightweight TypeScript port — a helper like lib/voice/answer-matcher.ts — that normalizes likely Nigerian-numeral mishears in the STT transcript BEFORE it's sent to the LLM (e.g., a transcript-cleanup pass mapping "tree"→"three", "for/fo"→"four", "heaven"→"seven" only in numeric contexts), OR document why a prompt-level instruction is safer. Choose the approach least likely to corrupt legitimate words (e.g., don't blindly replace "for").
+
+OUTPUT (do NOT edit files, do NOT deploy): the full content of a proposed new TS helper file (or exact edits), where to call it in the recording route, the safety reasoning, and a risk rating. Concrete and ready to apply.
+
+----------------------------------------
+
+I have everything I need. Here is the complete proposal.
+
+---
+
+## Analysis
+
+**The problem flow:** Groq Whisper (`stt.ts`) returns raw text → that text is appended to the message history verbatim → `callSabi()` sends it to the LLM, which judges the math answer directly. When Whisper mishears "three" as "tree" or "seven" as "heaven", the LLM either marks a correct child wrong, or gets confused. The Python `answer_matcher.py` was built to fix exactly this but never ported to the TS side.
+
+**Why I chose transcript normalization over a prompt-level instruction (and over porting `match_answer`):**
+
+1. **Porting `match_answer` doesn't fit the architecture.** `match_answer` needs a list of `expected_answers` to compare against. The TS side is conversational — the LLM generates the questions dynamically (market scenarios, scaffolded follow-ups), so there is no `expected_answers` list available at the recording route. We can't deterministically score; we can only clean the input.
+
+2. **A prompt-level instruction is unreliable for this.** Telling the LLM "the child may have been misheard, mentally substitute homophones" makes it guess and can cause it to "correct" a genuinely wrong answer into a right one (e.g., child says "tree" meaning they don't know, LLM assumes "three"). It also burns tokens every turn and is non-deterministic. A narrow deterministic pre-pass is auditable and cheap.
+
+3. **Transcript normalization is the safest, smallest change** — but only if it is **context-gated** so it never corrupts legitimate words. This is the core safety concern the task flags ("don't blindly replace 'for'").
+
+**The safety design — context-gated replacement.** The danger words are real English words: `for`, `to`, `tree`, `ate`, `won`, `sick`, `oh`, `heaven`. Blindly replacing them wrecks normal sentences ("I want **to** count" → "I want **2** count"). So the normalizer only fires a substitution when the token sits in a **numeric context**:
+
+- The utterance is **short** (child answers are typically 1-4 words: "tree", "for naira", "is heaven"), AND/OR
+- A neighboring token is itself a number/number-word/digit/"naira"/"plus"/"equals", OR
+- The token is the **entire** (or near-entire) utterance.
+
+Ambiguous homophones (`to`, `for`, `ate`, `oh`, `won`, `tree`, `sick`, `heaven`) require numeric context. Unambiguous mishears that are not real words (`sevin`, `tirteen`, `nain`, `fife`, `tin`-as-standalone) can be mapped more freely. I keep the output as a **word** (e.g., "tree"→"three"), not a digit, so it reads naturally to the LLM and never collides with currency/quantity formatting.
+
+---
+
+## Proposed new file: `curriculum-app/lib/voice/answer-matcher.ts`
+
+```typescript
+/**
+ * Nigerian-English numeral mishear normalizer for Whisper STT output.
+ *
+ * PROBLEM: Groq Whisper mis-transcribes Nigerian children's spoken numbers
+ * ("three" -> "tree", "seven" -> "heaven", "four" -> "for/fo"). The raw
+ * transcript is then sent to the LLM, which judges the math answer directly,
+ * so a mishear corrupts the lesson.
+ *
+ * APPROACH: a small, CONTEXT-GATED cleanup pass that runs on the transcript
+ * BEFORE it is appended to the conversation and sent to the LLM. It only
+ * rewrites a token to its intended number-word when the token sits in a
+ * numeric context, so legitimate words ("I want to count", "for me") are
+ * never touched.
+ *
+ * Ported/adapted from sabi-server/answer_matcher.py (WORD_TO_NUM map).
+ * We output WORDS (e.g. "tree" -> "three"), not digits, so the result reads
+ * naturally to the LLM and never collides with "naira"/quantity formatting.
+ */
+
+// Canonical number words Whisper gets right — used as "numeric context" anchors.
+const REAL_NUMBER_WORDS = new Set<string>([
+  "zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+  "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+  "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty",
+  "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "hundred",
+  "thousand",
+]);
+
+// Tokens that signal we are in a math/number context (besides actual numbers).
+const NUMERIC_CONTEXT_WORDS = new Set<string>([
+  "naira", "kobo", "plus", "minus", "add", "added", "take", "times",
+  "equals", "equal", "is", "make", "makes", "left", "change", "altogether",
+  "total", "and",
+]);
+
+/**
+ * SAFE mishears: NOT valid English words on their own, so substituting them
+ * can never corrupt a legitimate sentence. These are replaced unconditionally.
+ */
+const UNCONDITIONAL_MISHEARS: Record<string, string> = {
+  // pronunciation spellings Whisper sometimes emits
+  wan: "one",
+  tu: "two",
+  tri: "three",
+  fo: "four",
+  fife: "five",
+  fi: "five",
+  sik: "six",
+  sevin: "seven",
+  ait: "eight",
+  nain: "nine",
+  elevin: "eleven",
+  twelf: "twelve",
+  tirteen: "thirteen",
+  forteen: "fourteen",
+  fiftin: "fifteen",
+  sixtin: "sixteen",
+  seventin: "seventeen",
+  eightin: "eighteen",
+  nintin: "nineteen",
+  twenti: "twenty",
+  tweny: "twenty",
+  tirty: "thirty",
+  foty: "forty",
+  fifti: "fifty",
+};
+
+/**
+ * AMBIGUOUS mishears: each is ALSO a real English word. Only substitute when
+ * the token sits in a numeric context (see isNumericContext). Maps the
+ * misheard token -> intended number word.
+ */
+const CONDITIONAL_MISHEARS: Record<string, string> = {
+  tree: "three",
+  for: "four",   // careful: "for me", "for you"
+  to: "two",     // careful: "I want to count"
+  too: "two",
+  heaven: "seven",
+  ate: "eight",  // careful: "I ate food"
+  sick: "six",   // careful: "I am sick"
+  won: "one",    // careful: "I won"
+  tin: "ten",    // careful: "tin of milk" (rare for kids, but possible)
+  oh: "zero",    // only when reading digits, e.g. "five oh" = 50; keep cautious
+};
+
+// Words we never coerce even in numeric context — too destructive / too common.
+// (kept empty for now; "oh" handled below with extra restraint)
+
+const PUNCT = /[^\w\s]/g;
+
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(PUNCT, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function isNumberLike(tok: string): boolean {
+  if (/^\d+$/.test(tok)) return true;
+  if (REAL_NUMBER_WORDS.has(tok)) return true;
+  // already-normalized conditional/unconditional targets are number words
+  return false;
+}
+
+/**
+ * A token is in numeric context if:
+ *  - the whole utterance is very short (<= 3 tokens) — typical of an answer, OR
+ *  - an adjacent token is a number / number-word / a math-context word.
+ */
+function isNumericContext(
+  tokens: string[],
+  i: number,
+  totalTokens: number
+): boolean {
+  if (totalTokens <= 3) return true;
+
+  const prev = tokens[i - 1];
+  const next = tokens[i + 1];
+  for (const neighbor of [prev, next]) {
+    if (!neighbor) continue;
+    if (isNumberLike(neighbor)) return true;
+    if (NUMERIC_CONTEXT_WORDS.has(neighbor)) return true;
+  }
+  return false;
+}
+
+export interface NormalizeResult {
+  /** Cleaned text to send onward to the LLM. */
+  text: string;
+  /** True if any substitution was made (useful for logging/telemetry). */
+  changed: boolean;
+  /** List of [from, to] substitutions made, for debugging. */
+  substitutions: Array<[string, string]>;
+}
+
+/**
+ * Normalize likely Nigerian-numeral mishears in an STT transcript.
+ * Conservative by design: only rewrites in numeric contexts for ambiguous
+ * homophones; rewrites non-word mishears unconditionally.
+ */
+export function normalizeNumberMishears(raw: string): NormalizeResult {
+  if (!raw || !raw.trim()) {
+    return { text: raw, changed: false, substitutions: [] };
+  }
+
+  // Tokenize for analysis, but rebuild from the ORIGINAL string so we keep
+  // the child's original casing/punctuation for non-number tokens.
+  const lowerTokens = tokenize(raw);
+  const total = lowerTokens.length;
+  const subs: Array<[string, string]> = [];
+
+  // Build a lowercase->replacement decision per position.
+  const replacements: (string | null)[] = lowerTokens.map((tok, i) => {
+    if (Object.prototype.hasOwnProperty.call(UNCONDITIONAL_MISHEARS, tok)) {
+      return UNCONDITIONAL_MISHEARS[tok];
+    }
+    if (Object.prototype.hasOwnProperty.call(CONDITIONAL_MISHEARS, tok)) {
+      // Extra restraint for "oh": only when an adjacent token is a digit/number
+      // word (digit-reading), never just because the utterance is short.
+      if (tok === "oh") {
+        const prev = lowerTokens[i - 1];
+        const next = lowerTokens[i + 1];
+        const adjNumber =
+          (prev && isNumberLike(prev)) || (next && isNumberLike(next));
+        return adjNumber ? CONDITIONAL_MISHEARS[tok] : null;
+      }
+      if (isNumericContext(lowerTokens, i, total)) {
+        return CONDITIONAL_MISHEARS[tok];
+      }
+    }
+    return null;
+  });
+
+  // Apply replacements over the lowercased token stream (children's answers are
+  // spoken; casing is not load-bearing for the LLM's judgment).
+  const out = lowerTokens.map((tok, i) => {
+    const rep = replacements[i];
+    if (rep && rep !== tok) {
+      subs.push([tok, rep]);
+      return rep;
+    }
+    return tok;
+  });
+
+  const text = out.join(" ");
+  return {
+    text: subs.length ? text : raw, // return original untouched if no change
+    changed: subs.length > 0,
+    substitutions: subs,
+  };
+}
+```
+
+---
+
+## Where to call it
+
+In both routes, immediately after `transcribeAudio()` and after the empty/low-confidence guard, normalize `sttResult.text` before it is used to build the message history.
+
+### `app/api/sabi/at/recording/route.ts`
+
+Add the import (line 13 area):
+
+```typescript
+import { transcribeAudio } from "@/lib/voice/stt";
+import { normalizeNumberMishears } from "@/lib/voice/answer-matcher";
+```
+
+Then, right after the low-confidence guard block (after line 112, before line 114 "Get conversation history"):
+
+```typescript
+    // 3b. Normalize Nigerian-English numeral mishears before the LLM sees it
+    const cleaned = normalizeNumberMishears(sttResult.text);
+    if (cleaned.changed) {
+      console.log(
+        `[answer-matcher] "${sttResult.text}" -> "${cleaned.text}"`,
+        cleaned.substitutions
+      );
+    }
+    const childText = cleaned.text;
+```
+
+Then change line 116 and the fallback on line 120 to use `childText` instead of `sttResult.text`:
+
+```typescript
+    const updatedState = await addMessage(sessionId, "user", childText);
+
+    const messages = (
+      updatedState?.messages ||
+      state?.messages || [{ role: "user" as const, content: childText }]
+    ).map((m) => ({ ... }));
+```
+
+### `app/api/sabi/voice-chat/route.ts`
+
+Add the import (line 3 area):
+
+```typescript
+import { transcribeAudio } from "@/lib/voice/stt";
+import { normalizeNumberMishears } from "@/lib/voice/answer-matcher";
+```
+
+Then after the low-confidence guard (after line 65), before building `updatedMessages`:
+
+```typescript
+    // Normalize Nigerian-English numeral mishears before the LLM judges it
+    const cleaned = normalizeNumberMishears(sttResult.text);
+    const childText = cleaned.text;
+
+    // 2. Add user message to history
+    const updatedMessages = [
+      ...messages,
+      { role: "user" as const, content: childText },
+    ];
+```
+
+One note: the JSON response still returns the **original** `sttResult.text` as `transcript` (the browser test UI shows what Whisper actually heard, which is correct for debugging). Only the LLM-facing copy is normalized. The same is true in the AT route — `call-state` stores `childText`, which is what you want for accurate session summaries.
+
+I deliberately did **not** add it to `stt/route.ts` — that's a raw transcription endpoint with no LLM judging; normalizing there would hide the raw Whisper output from any consumer.
+
+---
+
+## Safety reasoning summary
+
+- **Unconditional substitutions are safe** because the source tokens (`sevin`, `tirteen`, `nain`, `fo`, `tu`...) are not valid English words — they can't appear in a legitimate sentence.
+- **Conditional substitutions** (`for`, `to`, `tree`, `ate`, `sick`, `won`, `heaven`, `tin`) only fire when (a) the utterance is ≤3 tokens (overwhelmingly the shape of a child's numeric answer) **or** (b) a neighboring token is a number/number-word/"naira"/"plus"/"equals". "I want **to** count more" (5 tokens, neighbors "want"/"count") is left untouched; "**to**" alone or "**to** naira" is fixed.
+- **`oh`→`zero`** has the tightest gate: only when adjacent to an actual number (digit-reading like "five oh"), never on short-utterance grounds, because "oh" as an interjection is extremely common.
+- **Output is a word, not a digit**, so it never interferes with the voice addendum's "say {amount} naira" formatting or with currency parsing.
+- **No-op safety:** if nothing matches, the original string is returned byte-for-byte (`text: subs.length ? text : raw`).
+
+## Risk rating
+
+**LOW.** Pure, dependency-free string function; additive (two import lines + a few lines per route); the only behavioral change is on tokens that are misheard numerals in numeric contexts. The realistic worst case is a rare false-positive on a borderline short non-numeric utterance (e.g., child says "for" meaning "for me" as a complete 1-word reply) — which is already an ambiguous transcript the LLM would struggle with anyway. No data-loss risk (raw transcript still surfaced/loggable), no latency impact, no external calls. Recommend keeping the `console.log` of substitutions for the first pilot so real mishear patterns can be reviewed and the maps tuned from actual call data.
+
+**Files referenced:**
+- `/Users/naomiivie/Education for Equality/sabi-server/answer_matcher.py` (source logic)
+- `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/answer-matcher.ts` (proposed new file)
+- `/Users/naomiivie/Education for Equality/curriculum-app/app/api/sabi/at/recording/route.ts` (call site 1)
+- `/Users/naomiivie/Education for Equality/curriculum-app/app/api/sabi/voice-chat/route.ts` (call site 2)
+- `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/stt.ts` (transcript source; intentionally not modified)
+
+No files were edited or deployed, per your instructions.
+agentId: aa5ba88cad302cfd6 (use SendMessage with to: 'aa5ba88cad302cfd6' to continue this agent)
+<usage>subagent_tokens: 50386
+tool_uses: 7
+duration_ms: 95442</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

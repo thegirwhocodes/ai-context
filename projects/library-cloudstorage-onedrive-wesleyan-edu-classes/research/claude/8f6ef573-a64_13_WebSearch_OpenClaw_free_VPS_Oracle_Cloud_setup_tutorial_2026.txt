@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw free VPS Oracle Cloud setup tutorial 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:47:24 UTC
+========================================================================
+
+Search query: OpenClaw free VPS Oracle Cloud setup tutorial 2026
+
+----------------------------------------
+
+Web search results for query: "OpenClaw free VPS Oracle Cloud setup tutorial 2026"
+
+Links: [{"title":"Self-Host OpenClaw on a Free VPS — Complete 2026 Setup Guide | Cognio Labs","url":"https://cognio.so/clawdbot/self-hosting"},{"title":"Oracle Cloud - OpenClaw","url":"https://docs.openclaw.ai/platforms/oracle"},{"title":"OpenClaw Deploy Cost Guide: Build Your Personal AI Assistant for $0-8/month | WenHao Yu","url":"https://yu-wenhao.com/en/blog/2026-02-01-openclaw-deploy-cost-guide/"},{"title":"How to Run Claude Code on VPS: Complete OpenClaw Setup Guide (2026) | Claude 5 Hub","url":"https://claude5.com/news/how-to-run-claude-code-on-vps-with-openclaw"},{"title":"VPS Deployment | openclaw/openclaw | DeepWiki","url":"https://deepwiki.com/openclaw/openclaw/13.2-vps-deployment"},{"title":"OpenClaw: docs/vps.md | Fossies","url":"https://fossies.org/linux/openclaw/docs/vps.md"},{"title":"How to Run OpenClaw with DigitalOcean | DigitalOcean","url":"https://www.digitalocean.com/community/tutorials/how-to-run-openclaw"},{"title":"Stop Watching OpenClaw Install Tutorials — This Is How You Actually Tame It | by Shane Collins | Activated Thinker | Feb, 2026 | Medium","url":"https://medium.com/activated-thinker/stop-watching-openclaw-install-tutorials-this-is-how-you-actually-tame-it-f3416f5d80bc"},{"title":"OpenClaw Installation Guide - Complete Setup Tutorial 2026","url":"https://openclawinstall.buzz/"},{"title":"Openclaw on Oracle's Free Tier: Always-On AI for $0/month | Ryan Shook","url":"https://ryanshook.org/blog/posts/openclaw-on-oracle-free-tier-always-on-ai-for-free/"}]
+
+I found several comprehensive resources about OpenClaw setup on Oracle Cloud's free VPS tier. Here's what I found:
+
+## Key Resources
+
+You can self-host OpenClaw with Ollama for $0/month using Oracle Cloud's Always Free tier (4 ARM CPUs, 24 GB RAM, 200 GB storage). Complete setup walks you through provisioning your server to running local AI models behind a secure HTTPS reverse proxy.
+
+## Official Documentation
+
+The official OpenClaw docs cover Oracle Cloud deployment including instance creation, connection setup, Tailscale installation, OpenClaw configuration, gateway setup, and security lockdown.
+
+## Notable Guides
+
+1. **Cognio Labs** - A complete 2026 setup guide for running your own AI assistant for $0/month with Docker, Ollama, Nginx, and SSL on Oracle Cloud's free ARM tier.
+
+2. **Cost Guide** - Oracle Cloud free tier is described as the best free option—but be prepared to migrate if needed. There's a known risk that without PAYG upgrade, some users report accounts terminated without warning—the recommendation is to add a credit card and upgrade to PAYG.
+
+3. **Ryan Shook's Guide** - Oracle's Always Free tier provides 4 ARM cores and 24GB RAM for $0/month with no trials or expiration—just free infrastructure that runs 24/7.
+
+For smooth operation, use at least 2 vCPU + 2GB RAM, though OpenClaw doesn't need much—2 OCPU + 4 GB RAM works great, or max it out at 4 OCPU + 24 GB, which is all free.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

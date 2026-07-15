@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Lee Lee 2016 long-run educational attainment 1820 2010 dataset download primary 
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:36:44 UTC
+========================================================================
+
+Search query: Lee Lee 2016 long-run educational attainment 1820 2010 dataset download primary enrollment
+
+----------------------------------------
+
+Web search results for query: "Lee Lee 2016 long-run educational attainment 1820 2010 dataset download primary enrollment"
+
+Links: [{"title":"Lee and Lee Long-Run Education Dataset | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/DataLeeLee.html"},{"title":"Long-term Data | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/LongTermData.html"},{"title":"Human capital in the long run Jong-Wha Lee ⁎, Hanol Lee","url":"http://piketty.pse.ens.fr/files/LeeLee2016.pdf"},{"title":"Barro-Lee Educational Attainment Dataset","url":"http://barrolee.com/"},{"title":"Human capital in the long run | Request PDF","url":"https://www.researchgate.net/publication/303739208_Human_capital_in_the_long_run"},{"title":"Lee and Lee Long-Run Education Dataset | Barro-Lee Educational Attainment Dataset","url":"http://barrolee.com/?p=124"},{"title":"BarroLeeDataSet/LongTermData.md at master · barrolee/BarroLeeDataSet","url":"https://github.com/barrolee/BarroLeeDataSet/blob/master/LongTermData.md"},{"title":"Long-term Data | Barro-Lee Educational Attainment Dataset","url":"http://barrolee.com/?page_id=115"},{"title":"Share of the population with at least some formal education - Our World in Data","url":"https://ourworldindata.org/grapher/population-having-attained-at-least-basic-education"},{"title":"Data Set on Long-term Educational Attainment by Country | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/OUPdownload.html"}]
+
+Based on the search results, I found information about the Lee and Lee 2016 long-run educational attainment dataset:
+
+The Lee and Lee 2016 dataset accompanies the paper "Human Capital in the Long Run," published in the Journal of Development Economics, vol. 122, pp. 147-169.
+
+**Dataset Coverage:**
+The dataset includes full data sets on estimated school enrollment ratios from 1820 to 2010 and estimated educational attainment for the total, female and male populations from 1870 to 2010, with estimates available in five-year intervals for 111 countries.
+
+**Download Location:**
+You can download the list of variables and countries in this education dataset, and download full data sets on estimated school enrollment ratios from 1820 to 2010 and estimated educational attainment from the Barro-Lee dataset websites. The primary download pages are located at:
+- https://barrolee.github.io/BarroLeeDataSet/LongTermData.html
+- http://barrolee.com/?page_id=115
+
+**Additional Features:**
+Data sources of census/survey enrollment ratios and years of school establishment are also available, and figures for trend in school enrollments and total years of schooling, disaggregated by education level and gender, are available for individual countries.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

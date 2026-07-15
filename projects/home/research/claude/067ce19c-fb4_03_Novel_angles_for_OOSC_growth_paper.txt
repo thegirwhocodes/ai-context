@@ -1,0 +1,44 @@
+========================================================================
+AGENT RESEARCH: Novel angles for OOSC growth paper
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 16:50:29 UTC
+========================================================================
+
+A Wesleyan Econ 349 student is writing an empirical paper on "The Economic Cost of Out-of-School Children in Nigeria." She wants creative angles that build on existing work — Kuenzel "grades up for well-founded and creative analysis."
+
+Brainstorm and rank 5-7 **novel empirical angles** she could pursue, ranked by (a) novelty and (b) feasibility for an undergraduate term paper (8-10 pages, ~30 days, Stata, public data). For each angle:
+
+1. **The angle in one sentence**
+2. **The regression specification** — what variables go in, including any interaction terms
+3. **Identification strategy** — what makes this causal-ish (FE, IV, lag, interaction)
+4. **Data requirements** — is this feasible with PWT + WDI alone?
+5. **Why it's novel** — what gap in the literature does it fill?
+6. **Risks/limitations**
+
+Strong candidates to evaluate:
+- Oil-dependence interaction (does education matter less when oil rents are high?)
+- Gender gap angle (does the male-female enrollment gap predict growth beyond levels?)
+- Convergence-speed interaction (does education accelerate Solow convergence?)
+- Threshold effects (Hansen 1999 xthreg — minimum education level for growth?)
+- Subnational variation (Nigerian states cross-section)
+- Health-vs-education horse race (HIV, life expectancy, schooling)
+- Conflict interaction (Boko Haram era as natural experiment)
+
+Pick a winner with clear reasoning. The student is Nigerian, has personal access to NALABE 2017 and EKOEXCEL data via her mother's E4E work — flag any angles that synergize with that.
+
+Save your output to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/03_novel_angles.md`.
+
+Use Google Scholar / web search for related work. Report back with a 200-word summary and confirm file written.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ac8902118a5505e0c (internal ID - do not mention to user. Use SendMessage with to: 'ac8902118a5505e0c' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/ac8902118a5505e0c.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

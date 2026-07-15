@@ -1,0 +1,44 @@
+========================================================================
+AGENT RESEARCH: Build memory: Cortex
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:37:54 UTC
+========================================================================
+
+Build memory for the Cortex project.
+
+1. Read ~/.claude/projects/-Users-naomiivie-cortex/memory/MEMORY.md and all files it references
+2. Read /Users/naomiivie/cortex/.claude-sessions/INDEX.txt
+3. Read ALL session .txt files in /Users/naomiivie/cortex/.claude-sessions/ (there's only 1)
+
+Then CREATE/UPDATE memory files at ~/.claude/projects/-Users-naomiivie-cortex/memory/:
+- project_cortex_vision.md — what Cortex is, the 3-layer architecture, Naomi's vision
+- project_cortex_tech.md — Next.js, Supabase, Clerk, Claude API, LoRA pipeline, Vercel
+- project_cortex_status.md — what's built (37+ routes, Gmail sync, streaming chat, etc), what's pending
+- feedback_cortex.md — her corrections/preferences for this project
+
+Every file needs frontmatter: name, description, type, sessions: [list of session IDs].
+UPDATE MEMORY.md index. Write files with Write tool.
+
+----------------------------------------
+
+Done. Here is what was created/updated at `/Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/memory/`:
+
+**Created:**
+- `project_cortex_vision.md` — The 3-layer architecture (Roots/Interface/Action), per-user LoRA vision, Naomi's key pushbacks about LLMs vs RAG, the 4-layer query flow, Spheres predecessor context, business plans
+- `project_cortex_tech.md` — Full tech stack (Next.js 15, Supabase pgvector, Clerk, Claude API), all 12 database tables, LoRA pipeline details (Qwen3-4B, RunPod, LoRAX), integrations built, cron jobs, external services configured, design system
+- `feedback_cortex.md` — Four critical corrections (don't dismiss LoRA, no algorithms instead of LLMs, research before coding, email agent has pending feedback), design preferences, working style notes
+
+**Updated:**
+- `project_cortex_status.md` — Expanded with full detail: 37+ routes, Gmail syncing with 1000+ chunks, streaming chat with markdown, action engine routes, stats bar, disk space issue at end of session, all pending items
+- `MEMORY.md` — Reorganized index with all 7 files properly categorized (User, Project, Feedback)
+- `user_naomi.md`, `feedback_email_agent.md`, `feedback_plan_first.md` — Added `sessions:` frontmatter
+
+All files reference session `0d91dd3c-6d8d-4983-b72b-a1df57377021` (the only session).
+agentId: a2c0ad243ebaaa6a6 (use SendMessage with to: 'a2c0ad243ebaaa6a6' to continue this agent)
+<usage>total_tokens: 76198
+tool_uses: 25
+duration_ms: 238342</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

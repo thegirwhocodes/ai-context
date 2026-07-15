@@ -1,0 +1,464 @@
+========================================================================
+AGENT RESEARCH: Simulate Chrome view of Adjutant landing page
+Session: 0e17b9dd-fd49-407b-a86a-9cd1fff442b8
+Time: 2026-04-26 01:51:06 UTC
+========================================================================
+
+Simulate viewing the Adjutant landing page in Chrome and report on its website-product fit. The site lives at /Users/naomiivie/adjutant/web/. Do this:
+
+1. **Read every file in /Users/naomiivie/adjutant/web/**: index.html, styles.css, marketing.js, app.js, audio_worklet.js. Read each one fully.
+
+2. **Mentally render the page top-to-bottom** as a Chrome user would see it on a 14-inch MacBook Air at 1440×900 — describe what's on screen for each scroll position (hero, marquee, problem stats, demo console, pipeline, forms, wow moment, comparison matrix, claims, persona, CTA, footer).
+
+3. **Identify website-product fit issues** — does a first-time visitor know within 5 seconds what Adjutant is, who it's for, why it's different? List every friction point: confusing copy, weak hero, hidden CTA, jargon-without-context, sections that bury the value prop, layouts that compete with each other, fonts that don't match the brand, missing proof points, broken mental model. Be brutal — this is a defense-tech AI product targeting MIT Lincoln Lab judges (Mohindra, Liu) and Air Force CDTO (Stuart Wagner). It needs to land within ONE screen.
+
+4. **Compare to reference**: how does it stack up against anduril.com, sana.ai, linear.app, palantir.com, milieuskin.com? Where does Adjutant feel less premium? Cite specific sections.
+
+5. **Run a "Chrome heuristic audit"**:
+   - Is the title tag good?
+   - Is the meta description good?
+   - Is there a favicon? (check `<link rel="icon">`)
+   - Are there OG image tags pointing to a real asset?
+   - Does the page work without JS (does the demo console gracefully degrade)?
+   - Are the CTAs distinct (primary vs secondary)?
+   - Is the visual hierarchy correct (most important thing biggest)?
+   - Is the marquee scroll-jacking attention away from the hero CTA?
+   - Are there sections that should be merged or reordered?
+   - Are there any dead links (e.g., `href="https://github.com"` instead of a real repo)?
+   - Color contrast WCAG AA on all body copy?
+
+6. **Look for technical browser-rendering issues**: does any section need `overflow-x: hidden` because of marquee? Does the cursor dot block clicks? Does the magnetic-button transform conflict with the reveal-on-scroll transform? Will Safari handle backdrop-filter? Are there any `:hover` states with no `:focus-visible` equivalent?
+
+7. **Simulate the SCSP-judge experience**: Mohindra hits the URL on his laptop. He has 90 seconds. Walk through what he sees, what he reads, what he clicks, and at what moment he decides this team is or isn't serious. What's missing for him? An eval table? A "Mohindra-targeted" hallucination demo callout? A live latency meter?
+
+8. **Concrete fixes to implement**: a numbered list of specific HTML/CSS edits — file path, line range, the change, the why. Format like a punch list. Be exhaustive — at least 25 items.
+
+Return at least 2500 words. No summaries. Cite specific selectors, class names, line numbers, and copy verbatim from the files.
+
+----------------------------------------
+
+All five files read in full. Now I'll do the website-product-fit audit.
+
+---
+
+# Adjutant Landing Page — Website-Product Fit Audit
+
+## 1. Mental Render at 1440×900 Chrome on a 14-inch MacBook Air
+
+The MacBook Air 14 (M3, 2024) viewport at default scaling is roughly **1440 × 900 CSS pixels** (sometimes 1496 × 967 depending on display setting). I'll walk top-to-bottom assuming 1440×900.
+
+### Scroll position 0 — first paint (above the fold)
+
+A grain-overlay film sits over a near-black canvas (`--ink: #0a0a0a`) with a subtle olive-green radial glow at the top center (`radial-gradient(ellipse 80% 50% at 50% -10%, rgba(107,142,35,0.08), transparent 60%)`). A 8-px white cursor dot is invisible until pointer movement (`opacity: 0` until `.active`).
+
+**Top nav** (fixed, blurred backdrop, three-column grid):
+- Left: `▌` olive mark + the wordmark "Adjutant" in sans 1.18rem.
+- Center: six links — `Problem · Demo · Pipeline · Forms · Compare · Offline` in 0.88rem paper-2.
+- Right: a pale paper-colored pill button "Try it →".
+
+**Hero chrome row** (top of hero, monospace caps 0.78rem, ash gray):
+- Left: blinking olive dot · `CHARLIE MIKE / SCSP HACKATHON · BOSTON 2026 / GENAI.MIL TRACK`.
+- Right: `Checking network…` badge (replaced on JS load by "Online (Adjutant doesn't need it)" or "OFFLINE — still working").
+
+**Hero title** (`var(--t-4xl)` clamps from 4.5rem → 11rem, here it'll resolve at ~10rem because 12vw of 1440 = 172.8px = 10.8rem, so 10.8rem):
+```
+Speak it.
+Sign it.
+Move out.       ← italic serif "Iowan Old Style", color paper-2
+```
+The third line is in italic serif, lighter weight, with a different family — distinct visual register.
+
+**Hero lede** (1.4–1.75rem clamp, paper-2):
+> "A voice-first, fully offline AI assistant for the Army's **bureaucratic tail.** Speak the way you'd speak to your S1. Adjutant cites the regulation by section, fills the actual DA-form PDF, and never touches the internet."
+
+**CTAs**: pill "Run the live demo ▶" (paper background, ink text) + "View source ↗" (ghost, transparent with `--rule-2` border).
+
+**Hero spec-sheet strip** (4-col grid, top-rule above):
+- Pipeline: `STT · RAG · LLM · PDF · TTS`
+- Models: `Whisper · Llama 3.2 · Kokoro 82M`
+- Footprint: `~3 GB resident · M1/M2 Air-class`
+- Network: `required: ~~yes~~ none`
+
+But **here's the rendering problem at 1440×900**: the `.hero` is `min-height: 100vh` with `padding: clamp(7rem, 14vh, 11rem) ... clamp(3rem, 7vh, 5rem)` and `flex-direction: column; justify-content: space-between`. Top padding at 14vh of 900px = 126px. Bottom padding 7vh = 63px. The hero content stack is:
+- `hero__chrome` (~24px)
+- `hero__title` with margins clamp(2.5rem, 8vh, 5rem) top + clamp(1.5rem, 4vh, 2.5rem) bottom — at 900px, 8vh = 72px = ~4.5rem and 4vh = 36px = 2.25rem; title itself is 3 lines × 0.92 × ~10.8rem ≈ 28rem (~448px)
+- `hero__lede` (~3 lines × ~2.5rem ≈ 7.5rem ≈ 120px)
+- `hero__ctas` (~3rem with margin-bottom clamp(2rem, 6vh, 4rem) = 54px)
+- `hero__sheet` (4-col, ~5rem)
+
+Stack height: 24 + 72 + 448 + 36 + 120 + 54 + 60 = **~814px** of content + 126 top + 63 bottom + the `space-between` distribution = **the hero overflows 100vh on a 1440×900 laptop**. The CTAs and especially the spec-sheet strip will be clipped or pushed below the fold. The "Run the live demo" button — the only thing the judge needs to click — likely sits AT the fold or just below it.
+
+Worse: `data-reveal` items start invisible (`opacity: 0; transform: translateY(28px)`) and only animate in when IntersectionObserver fires. The hero CTAs, lede, and sheet are all `data-reveal`, so they will **fade in 900ms after first paint**. For the first ~1 second, the user sees only the hero chrome strip + the title (which is also `data-reveal`, so even the title is invisible at first paint).
+
+There's a `hero__scroll` indicator pinned `position: absolute; right: var(--grid-pad); bottom: clamp(1rem, 3vh, 2rem)` saying "scroll" with an animated dripping line.
+
+### Scroll position ~900px — marquee + start of problem
+
+The marquee strip — full bleed, height ~64px, `overflow: hidden`:
+- Pinned label left: amber dot · `CORPUS · 16,301 chunks indexed locally`
+- Track scrolls left infinitely at 60s linear: `AR 600-8-10 · Leaves & Passes · JTR 2025-06 · Joint Travel Regulations · ...`
+
+Then `§ 01 · The problem` eyebrow in amber 0.78rem caps. H2 reads:
+> "The bureaucratic tail of the military **significantly drains mission readiness.**"
+
+Sub-text mentions SCSP's GenAI.mil brief, the Pentagon "not everyone is sitting in a nice, cushy, air-conditioned office" pull-quote.
+
+### Scroll ~1700px — three stat cards
+
+Three-column stats grid in a rounded outline:
+- `12.5h` — Average workday for Army company leader. Longer than 96% of all American workers. — RAND 2019
+- `3–4×12` — Monthly reports/company. One full week, every month. — Modern War Institute · West Point
+- `$23.4B/yr` — 3M service members × 6 hrs/wk × $25/hr loaded = recoverable mission-readiness labor. — Adjutant TAM model · 2026
+
+### Scroll ~2400px — Demo console
+
+Eyebrow `§ 02 · Live, on this machine`. Title "Talk to it. **Watch it cite. Watch it fill.**" Sub: "Hit start. Say 'I need to file leave for ten days starting June 3...'"
+
+Then the console card: rounded 22px, dark, with a macOS traffic-light header (red/amber/green dots) + `adjutant.local · /ws/voice` + `100% LOCAL` pill. Below the bar, a tier-status row: HOT / WARM / COLD pills with LED dots polling every 2s via `/health`.
+
+Console body is a 2-column grid: left = mic area (state indicator dot + label "Press start to begin", Start/Mute buttons, transcript box, hint, push-to-talk fallback); right = reply pane (hidden until backend fires events).
+
+### Scroll ~3500px — Pipeline (5 stages)
+
+5-column grid (`grid-template-columns: repeat(5, 1fr)`) on desktop. Stages 01–05: STT (faster-whisper · small.en · int8), RAG (FAISS · MiniLM-L6 · threshold 0.35), LLM (llama3.2 · 3B · Ollama), PDF fill (pikepdf · reportlab overlay), TTS (Kokoro-82M · ONNX · af_heart · 24 kHz).
+
+### Scroll ~4400px — Forms supported (3 cards)
+
+`§ 04 · Forms supported`. 3-column form-card grid: DA-31, DD-1351-2, DA-4856. Each has a form ID monospace + AR/JTR cite, a title, descriptive copy, monospace metadata list.
+
+### Scroll ~5200px — Wow moment
+
+Centered, large `wow__quote` (3rem–5.5rem). The quote spans 3 lines (one per `<span>`). Below: `→ One voice request. **Three filled PDFs.**` Then the form pills: `DD-1351-2 + DA-4856 + DA-31`. Then the caption mentioning `_infer_forms` classifier.
+
+### Scroll ~6100px — Comparison matrix
+
+`§ 06 · The unfilled cell`. Title: "Every other tool sits in **at most two columns of this matrix.**" Sub paragraph mentions EdgeRunner $12M Series A.
+
+The matrix table: row headers = Voice I/O, Offline, Cites Reg by section, Auto-fills DA-form PDF, End-to-end persona flow, Hands-free. Column headers = GenAI.mil, CamoGPT, Ask Sage, Milnerva, SergeantAI, EdgeRunner, **Adjutant** (highlighted olive). All competitors have mostly em-dashes; Adjutant column is solid green checks.
+
+### Scroll ~6800px — Architectural claims
+
+`§ 07 · Architectural claims`. Three claim cards: Architecturally offline / Architecturally cited / Architecturally refuses. The third one explicitly name-checks Mohindra's hallucination probe.
+
+### Scroll ~7400px — Persona
+
+`§ 08 · Persona`. SGT Maya Chen card: rank E-5 photo placeholder (diagonal-stripe gradient + olive radial), name 5.5rem, role line, bio paragraph, voice-query/Adjutant-returns dl.
+
+### Scroll ~8100px — Final CTA
+
+Massive 5xl text: "Speak it. / Sign it. / **Move out.**" (last line italic serif olive). Two large pills: "Run the live demo ▶" + "Source on GitHub ↗".
+
+### Scroll ~8800px — Footer
+
+Small mono row: `▌Adjutant · v0.1` left, `Charlie Mike · SCSP Hackathon Boston · GenAI.mil track · April 2026` right. Sub-row: build credit + tech stack list + "The Sabi voice pipeline, ported."
+
+---
+
+## 2. Website-Product Fit — Friction Points
+
+### 2.1 The 5-second test — does the visitor know what Adjutant is?
+
+**Mostly yes, but with caveats.** The hero gives:
+- Title: "Speak it. Sign it. Move out." — this is brand voice, NOT product positioning. A military judge will get the rhythm. A non-military judge (e.g., Mohindra, who's MIT Lincoln Lab civilian-side) will read it as flavor without understanding what the product does until they hit the lede.
+- Lede: "voice-first, fully offline AI assistant for the Army's bureaucratic tail" — this is the actual proposition and it's good, but it's buried under a 3-line poetic stack and is `data-reveal` invisible at first paint.
+
+**Failure mode**: at 1440×900, the `data-reveal` opacity-0 starts the title invisible. First paint = blank near-black with only the nav and the `CHARLIE MIKE / SCSP HACKATHON · BOSTON 2026 / GENAI.MIL TRACK` strip visible. The user sees a blank page for ~900ms while reveal animations stagger in. That's a third of the 5-second budget gone before they read a single word.
+
+### 2.2 Hero owns three voices — they fight
+
+Three competing semantic systems are stacked in the hero:
+1. **Military spec-sheet voice** (mono caps amber/ash): `CHARLIE MIKE / SCSP HACKATHON · BOSTON 2026 / GENAI.MIL TRACK` — implies internal/insider context.
+2. **Dramatic poetry voice** (sans + italic serif accent): "Speak it. / Sign it. / *Move out.*" — implies brand tagline.
+3. **Engineering brief voice**: the spec-sheet (Pipeline / Models / Footprint / Network) — implies technical depth.
+
+Three voices ≠ three pieces of evidence. They compete. A first-time visitor doesn't know whether Adjutant is a polished consumer brand, a hackathon project, or an enterprise infra tool. Linear.app picks ONE voice (premium product), Anduril picks ONE voice (defense gravitas), Sana picks ONE voice (productivity-AI confidence). Adjutant picks three.
+
+### 2.3 The "View source" CTA goes to `https://github.com`
+
+**Both** secondary CTAs in `index.html` (lines 78 and 616) link to `href="https://github.com"` — the literal homepage of GitHub.com. Click and you land on GitHub's marketing page, not on the Adjutant repo. This is a credibility-killing dead link that a judge WILL click (the GenAI.mil judges value open-source and self-hostability — that's the whole selling pitch).
+
+### 2.4 The marquee competes with the hero CTA
+
+The marquee starts immediately below the hero (`scroll ~900px`), with a 60s-loop horizontal scroll inside its `overflow: hidden` container. On a 1440×900 laptop, when the user is still finishing reading the hero, they see motion at the bottom of their viewport — that motion will visually pull attention DOWN, away from the "Run the live demo" CTA. The CTA is the most important element on the page; the marquee is a credibility flourish. They're fighting for the same eyeballs at the same moment.
+
+Worse: because `marquee__track` uses `padding-left: 22rem` to clear the pinned label, on smaller widths the entire track stays right of viewport-center until the scroll catches up. The visual entry of the first regulation chip is delayed.
+
+### 2.5 The demo console doesn't say "click here to demo"
+
+Inside the console, the only affordance is a state row (a 14-px dot) and "Press start to begin" — the actual mic-grant CTA is the "Start voice ●" button. But it's labeled like a transport control, not a "DEMO" call-out. A judge with 90 seconds will scroll past unless they already understand they're meant to interact.
+
+### 2.6 The pipeline section is informationally dense but visually flat
+
+5 stages × 4 lines of mono-monotone copy each = 20 chunks of similar visual weight. There's no progression diagram, no arrows between stages, no latency timeline. For a defense-tech audience that's used to architecture diagrams, this reads as a wall of bullet points where it should read as a flow.
+
+### 2.7 The wow moment is buried at scroll ~5200px
+
+The "one voice request → three filled PDFs" is the single most differentiated demo moment. It comes after pipeline + forms + (interactive demo). By the time a 90-second judge gets there, they may have already decided. This should be a hero secondary panel or right after the demo console.
+
+### 2.8 Comparison matrix — every cell that isn't "us" is em-dash
+
+Look at the matrix: the GenAI.mil / CamoGPT / Ask Sage / Milnerva / SergeantAI columns have em-dashes for nearly every row. This reads as "we cherry-picked the comparison." A real eval table would have nuance — e.g., GenAI.mil DOES do retrieval-grounded generation, just not from local Army regs. CamoGPT DOES cite sources in its response, just not section-anchored. Em-dashes everywhere look like the author didn't actually use the competitor tools.
+
+The `partial` cells DO try to give nuance ("generic", "one AR", "listens", "tactical") — those are good. But 20+ em-dashes look like a hit-piece, not an evaluation.
+
+### 2.9 No live latency meter
+
+The pipeline copy says "Total ESV→FAO ≤ 1.4 s on M2." But there's no live readout. A defense-tech AI demo NEEDS a wall-clock latency meter visible during the demo — Mohindra and Liu's first question will be "how fast." The tier-status pills show latency for HOT/WARM/COLD via `/health` polling, but there's no end-to-end ESV→FAO clock in the UI.
+
+### 2.10 No proof of provenance / no eval table
+
+For the GenAI.mil track + Lincoln Lab judges, the make-or-break is: do you actually KNOW your answers are right? The page says "architecturally cited" and "architecturally refuses" but shows no eval numbers. No "% of queries that retrieve correct AR section," no "false-refusal rate," no benchmark against GenAI.mil's hosted answer. The claims section asserts these properties but doesn't prove them.
+
+### 2.11 Persona is fictional but presented as real
+
+`PERSONNEL FILE · 2026-04-25` framing + "SGT Maya Chen · 82nd Airborne · Fort Bragg" + a placeholder photo (CSS gradient with "E-5" rank tag) reads as a record. But there's no disclaimer that she's a composite. For a defense audience, that's risky — they will immediately wonder if she's real.
+
+The bigger problem: **a persona section here is a B2B-marketing-deck pattern.** Anduril doesn't have a persona section. Palantir doesn't. Linear doesn't. Sana has user logos. The persona feels like a UX-class artifact, not a defense-tech proof point.
+
+### 2.12 The footer says "Built on a 2025 8 GB MacBook Air M1" but title says "2026"
+
+`PERSONNEL FILE · 2026-04-25` (line 578) and `SCSP Hackathon Boston · GenAI.mil track · April 2026` (line 629) say 2026, but `Built on a 2025 8 GB MacBook Air M1` (line 632) says 2025. Today's date per the system reminder IS 2026-04-25, so the persona-file date is correct, but a M1 MacBook Air was a 2020 model. There is no "2025 8 GB MacBook Air M1." This will get pedantic-attention from any hardware-aware judge.
+
+### 2.13 No favicon, no OG image asset
+
+The `<head>` has no `<link rel="icon">`. Chrome will show a blank page-icon in the tab — this looks unfinished. The OG tags exist but reference no `og:image` (line 9-11 only set title/description/type). Sharing the URL on Slack/Teams/Twitter will produce a no-image card. Defense-tech audiences share links — this matters.
+
+### 2.14 No JS = no demo console
+
+The demo's mic button, tier status, and reply pane are all wired in `app.js`. With JS disabled (or while JS loads on a slow connection), the demo console renders but does nothing — the Start button is unbound, the reply panel is `hidden` and stays hidden. There's no "JS required for demo" notice. Not a deal-breaker for Mohindra's MacBook, but a static-render issue.
+
+The reveal-on-scroll animation also fails open: every `data-reveal` element STARTS at `opacity: 0` via CSS, and only `marketing.js`'s IntersectionObserver flips them to `.in`. **If JS fails to load, the entire page is invisible.** That's catastrophic for a demo URL — the noscript fallback should set `[data-reveal] { opacity: 1; transform: none; }`.
+
+### 2.15 Fonts don't match the brand
+
+`--sans` falls back to `ui-sans-serif, -apple-system, BlinkMacSystemFont, "Inter"...` — this means on a Mac it renders SF Pro, on a non-Mac with no Inter it falls back to Helvetica Neue/Arial. Anduril and Linear ship custom display faces. Sana uses an explicit Söhne (or Söhne-like) display. Adjutant uses system fonts. This will read as "fast" but never as "premium." The italic serif `--serif: "Iowan Old Style", "Charter", "Georgia"...` is a beautiful fallback choice on macOS — Iowan Old Style is system-installed — but on Windows/Chrome it falls back to Georgia, which is far less elegant.
+
+### 2.16 Color contrast — borderline on body copy
+
+`--paper-2: #d2cdc1` on `--ink-2: #0f0f0e` — that's 14.7:1, well past WCAG AA.
+`--ash: #8a847a` on `--ink: #0a0a0a` — that's 8.4:1, fine.
+`--ash-2: #5a554c` on `--ink: #0a0a0a` — that's 4.5:1, **right at the WCAG AA threshold** for normal text. The footer uses `--ash` for `.foot__meta` (fine) but `--ash-2` shows up in `.matrix td.no` (em-dash cells, where contrast doesn't matter much). The bigger issue: `.sheet dd s { color: var(--ash-2); }` — that's the strikethrough "yes" inside `required: ~~yes~~ none`. Hard to read.
+`.hero__scroll` uses `var(--ash)` 0.78rem caps — fine but small.
+
+The amber on dark ink (`--amber: #d4a85a` on `--ink: #0a0a0a`) is 9:1 — fine.
+
+### 2.17 Cursor-dot z-index 60, pointer-events: none
+
+`.cursor-dot { z-index: 60; pointer-events: none; }` — good, it doesn't block clicks. But `.grain { z-index: 50; pointer-events: none; mix-blend-mode: overlay; }` — fine.
+
+### 2.18 Magnetic button + reveal transform conflict
+
+The magnetic effect in `marketing.js` lines 90-101 sets `el.style.transform = translate(...)` directly via inline style. The reveal animation sets `transform: translateY(28px)` → `translateY(0)` via the `.in` class. **Both compete for the same `transform` property.** When a `data-magnetic` button is also `data-reveal` (e.g., the hero CTAs are `data-reveal` on the parent `.hero__ctas`, but the buttons themselves are `data-magnetic` — that's safe — BUT the nav `.nav__cta` is `data-magnetic` and gets a hover-pull transform that competes with `:hover { transform: translateY(-2px) }` from `.btn:hover`).
+
+Specifically: on the nav CTA, hover triggers BOTH `.btn:hover { transform: translateY(-2px); }` AND the magnetic mousemove handler that sets `style.transform = translate(...)`. The inline style wins (specificity), so the `translateY(-2px)` lift is killed during magnetic-pull and reappears on mouseleave. Visually janky.
+
+### 2.19 No `:focus-visible` styles
+
+Search the CSS for `:focus-visible` — there are zero. There are no `:focus` outlines either. Default browser focus rings will appear, but they'll look like a bug on this dark theme. WCAG 2.4.7 requires visible focus. Keyboard nav is broken-looking.
+
+### 2.20 Backdrop-filter Safari support
+
+`.nav { backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: ... }` — good, the `-webkit-` prefix is included. Safari 9+ supports it. No issue.
+
+### 2.21 Smooth scroll + magnetic + reveal = jank on mid-range hardware
+
+Three concurrent animation systems run during scroll: (a) `data-reveal` IntersectionObserver fires opacity transitions; (b) the hero parallax in `marketing.js` line 142-160 does `transform: translate3d(0, ${y * 0.18}px, 0)` on the hero title every scroll frame; (c) the marquee runs a 60s linear infinite animation. On the demo M1 8GB MBA the page tests on, this is probably fine. On Mohindra's machine (unknown), if there are any other tabs open, this could hitch.
+
+### 2.22 Section that should be merged/reordered
+
+- **Wow moment + Forms supported** should be combined or wow should come first. Forms is the dry "here's what we support"; wow is "look what one query does." Lead with wow, then expand into the form catalog.
+- **Pipeline + Architectural claims** should be merged. The 5-stage pipeline is *what runs*; the 3 claims are *why it matters*. Right now claims comes after the matrix — the visitor reads architecture, then forms, then a wow moment, then a competitor hit-list, then the why-it-matters. Bring claims forward to right after pipeline, and put the matrix later as the "kill shot."
+- **Persona** should either be cut or moved up to right after the problem. As placed, it competes with the final CTA for closing energy.
+
+---
+
+## 3. Comparison to Reference Sites
+
+### vs. anduril.com
+Anduril leads with cinematic full-bleed video, a 1-line declarative tagline, and a single primary CTA. Adjutant has 3 lines, a spec strip, two CTAs, and a marquee — 5+ visual elements competing in the first viewport. Anduril feels like infrastructure; Adjutant feels like a portfolio piece.
+
+### vs. sana.ai
+Sana opens with a clean H1, a sub, ONE pill CTA, and a single product-screenshot below the fold. Adjutant opens with three voice systems fighting. Sana's copy is product-led ("AI for the way you work"); Adjutant's title is brand-led poetry that requires translation.
+
+### vs. linear.app
+Linear ships tight typography (custom Inter Display variant), a precise color system, and a hero that resolves in 600ms. Adjutant uses system Inter (fallback chain), and the hero is invisible at first paint due to `data-reveal`. Linear's CTA hierarchy is unmistakable — primary is filled, secondary is text-only outline. Adjutant's primary (paper) and secondary (ghost border) are visually distinct but the GitHub link being broken sabotages the secondary completely.
+
+### vs. palantir.com
+Palantir lays out long-form essay-style sections with disciplined eyebrows. The Adjutant eyebrows (`§ 01 · The problem`) borrow this register and execute it well. The closer comparison: Palantir spec-sheets technical claims with PROOF (case-study links, named programs). Adjutant claims without proof.
+
+### vs. milieuskin.com
+Milieu's edge is tactility — micro-interactions, magnetic buttons, cursor systems. Adjutant has all three, but they're "off the shelf" implementations. Milieu ties them to the brand (skin / touch / sensorial) so they feel meaningful. Adjutant's cursor dot, magnetic buttons, and grain overlay all read as "premium template" rather than "Adjutant's identity." The grain is good — it ties to printed-paperwork register. The magnetic buttons don't tie to anything tactical. Cut the magnets, double down on the grain.
+
+---
+
+## 4. Chrome Heuristic Audit (concrete pass/fail)
+
+| Check | Status | Notes |
+|---|---|---|
+| Title tag | OK | `Adjutant — voice-first, fully offline AI for Army paperwork` is good. Maybe too long for tab display (clipped) but readable as social-share. |
+| Meta description | OK | 198 chars, descriptive, hits the keywords. |
+| Favicon | **MISSING** | No `<link rel="icon">` anywhere. Tab icon is blank. |
+| OG image | **MISSING** | `og:title`, `og:description`, `og:type` present (lines 9-11). No `og:image` — social shares will be image-less. |
+| OG site_name | Missing | Not blocking but nice to have. |
+| Twitter card | Missing | No `name="twitter:card"` tag. |
+| Canonical | Missing | No `<link rel="canonical">`. |
+| Works without JS | **NO** | Every `data-reveal` element is opacity-0 in CSS and only flipped to `.in` by JS. With JS disabled, the entire page is invisible. Demo console is unbound. |
+| Preload styles | OK | Line 12 preloads `/web/styles.css`. |
+| Distinct CTAs | Mostly OK | Primary (paper bg) vs ghost (border) is clear. But the GitHub CTA being broken nullifies one of two. |
+| Visual hierarchy | OK | Title is biggest, lede next, CTAs prominent. |
+| Marquee scroll-jacking | **YES** | Marquee starts immediately below hero — competes with CTA. |
+| Sections to merge | Several | See section 2.22 above. |
+| Dead links | **YES** | `href="https://github.com"` × 2 (lines 78 and 616). |
+| Color contrast WCAG AA | Borderline | `--ash-2` on `--ink` is 4.5:1. Strikethrough "yes" in spec-sheet is hard to read. |
+| Focus-visible | **MISSING** | Zero `:focus-visible` selectors in CSS. |
+| Reduced-motion respect | OK | `[data-reveal]`, marquee animation, smooth-scroll, hero parallax all check `prefers-reduced-motion`. |
+| Lang attr | OK | `<html lang="en">`. |
+| Charset / viewport | OK | Both present. |
+| Theme color | OK | `<meta name="theme-color" content="#0a0a0a">`. |
+
+---
+
+## 5. Browser-Rendering Issues
+
+- **`overflow-x: hidden` on body** — already set on line 86. The marquee `overflow: hidden` is also set. Magnetic-button transforms can't push elements off-canvas because they're contained in their grid cells. Safe.
+- **Cursor dot blocking clicks** — `pointer-events: none` is set (line 113). Safe.
+- **Magnetic transform vs `.btn:hover { transform: translateY(-2px) }`** — conflict on the nav CTA. The inline style from magnetic wins; the lift-on-hover is killed during pull. Visually noticeable.
+- **Magnetic transform vs reveal `transform: translateY(28px) → 0`** — only conflicts when an element has BOTH `data-magnetic` AND `data-reveal`. Looking at the file: no element has both directly. The nav CTA has `data-magnetic` only. The hero CTAs have `data-magnetic` (lines 74, 78) and their *parent* `.hero__ctas` has `data-reveal`. No conflict because they're on different elements. **Safe.**
+- **Safari backdrop-filter** — supported with `-webkit-` prefix.
+- **`.grain` `mix-blend-mode: overlay`** — works in all modern browsers but combined with `position: fixed` and `z-index: 50` it sits over everything including the cursor dot UNLESS dot has higher z-index. Dot is z-60 — wins. OK.
+- **Hero parallax + reveal** — hero title has `data-reveal` AND gets `style.transform = translate3d(0, ${y * 0.18}px, 0)` from parallax. If the user scrolls before reveal completes, the inline parallax transform overrides the reveal transform and the title may pop in mid-translation. Edge case — only visible if user starts scrolling within 900ms of load.
+- **Reveal `will-change: opacity, transform`** on every `[data-reveal]` — there are ~30+ of these. `will-change` on too many elements creates GPU layers and burns memory. Should only apply briefly during the transition.
+- **Pipeline `repeat(5, 1fr)` at 1440px** — 5 columns × ~250px each is tight but workable. Each stage card is ~200px with padding, copy fits. At 1100px breakpoint it switches to 2-col, which leaves stage 5 alone in row 3. Awkward orphan.
+
+---
+
+## 6. Mohindra's 90-Second Journey
+
+**0–3s** — URL loads. Tab icon is blank. He sees a near-black page with a thin nav bar, the spec strip "CHARLIE MIKE / SCSP HACKATHON · BOSTON 2026 / GENAI.MIL TRACK" in mono caps, and… nothing. The hero title and lede are still in opacity-0 reveal-stagger. Screen is mostly empty.
+
+**3–6s** — Reveal animations complete. The poetry stack ("Speak it. / Sign it. / Move out.") appears. He reads it, parses it as brand-tagline, has not yet learned what the product is. Reads the lede: "voice-first, fully offline AI assistant for the Army's bureaucratic tail." OK — he gets it: voice + offline + Army paperwork.
+
+**6–12s** — Eyes drop to the spec-sheet strip: STT/RAG/LLM/PDF/TTS · Whisper/Llama/Kokoro · ~3GB · "required: ~~yes~~ none". He's an MIT Lincoln Lab judge — this lands. He thinks "OK they actually built this." The marquee starts moving — he reads "AR 600-8-10 · Leaves & Passes" and gets that the corpus is real Army regs.
+
+**12–18s** — He clicks "Run the live demo" in the nav (or hero), smooth-scrolls to the demo console. Sees the macOS-window chrome, "100% LOCAL" pill, HOT/WARM/COLD tier pills. He's interested. He clicks "Start voice."
+
+**18–25s** — Mic permission dialog. He grants it. The state indicator turns blue ("Listening…"). He says "What's the leave policy?" The transcript shows. Backend round-trips. Reply pane appears with citation. **This is the moment.** If the citation is real (AR 600-8-10 ¶ 4-3 with verbatim quote) and the audio plays in <2s, he's sold. If it lags or hallucinates, he's gone.
+
+**25–60s** — He scrolls past pipeline (skims the 5 model names), past forms (notes DA-31/DD-1351-2/DA-4856), HITS the wow moment ("one voice request → three filled PDFs"). This is the punchline. He now knows: nobody else does this.
+
+**60–80s** — He hits the comparison matrix. Reads the column headers. Sees that the only "yes" cells are in the Adjutant column. Initially this feels strong but on second glance the em-dashes everywhere look cherry-picked.
+
+**80–90s** — He reaches the architectural-claims section. Reads "Architecturally refuses" — sees his own name ("Mohindra's hallucination probe is answered with a panel, not a promise"). **This is a calculated flex.** It will land if he reads it as confidence; it will backfire if he reads it as parasocial. Most likely it lands because the surrounding architecture is real.
+
+He scrolls back up, clicks "View source ↗" — lands on github.com homepage. **Game over.** He closes the tab.
+
+### What's missing for him
+
+1. **A live latency meter** — wall-clock ESV→FAO milliseconds visible during the demo. Lincoln Lab judges think in ms.
+2. **An eval table** — even a small one. % retrieval-correct, % refusal-correct, comparison vs hosted LLM on the same prompts.
+3. **A real GitHub repo link** — the broken link is the single biggest credibility kill on the page.
+4. **A "why this is hard" callout** — the grounded-citation problem is technically deep; the page asserts it's hard but doesn't explain WHY a hosted LLM can't do it.
+5. **A signed-PDF-screenshot** above the fold — show the actual filled DA-31 in the hero. Right now the only way to see a filled form is to do the demo.
+6. **Concrete Mohindra/Liu/Wagner moment** — name the judges, show them their hallucination test passes. Or remove the parasocial line entirely.
+
+---
+
+## 7. Concrete Fix Punch List
+
+### Critical (do today)
+
+1. **Fix dead GitHub links.** `index.html` lines 78 and 616 — replace `href="https://github.com"` with the actual repo URL (e.g., `https://github.com/<user>/adjutant`) or remove the CTAs until the repo is public.
+
+2. **Add favicon.** Add `<link rel="icon" type="image/svg+xml" href="/web/favicon.svg">` and `<link rel="alternate icon" href="/web/favicon.ico">` after line 11 in `index.html`. Use the `▌` mark in OD green on ink. Without this, the tab is blank.
+
+3. **Add OG image.** Generate a 1200×630 social card with the title "Speak it. Sign it. Move out." + the spec-sheet strip on a dark background. Add `<meta property="og:image" content="/web/og-card.png">` after line 11. Add `<meta name="twitter:card" content="summary_large_image">` and `<meta name="twitter:image" content="/web/og-card.png">`.
+
+4. **Add noscript fallback for reveal.** In `styles.css` after line 141, add a `<noscript>` style block in `index.html` head that overrides `[data-reveal] { opacity: 1; transform: none; }`. Or set the default in CSS to opacity:1 and only apply opacity:0 when `html.js` is set by an inline script. Currently if JS fails to load, the entire page is invisible.
+
+5. **Fix the hero overflow at 1440×900.** `styles.css` lines 225-235 — reduce `padding: clamp(7rem, 14vh, 11rem) ... clamp(3rem, 7vh, 5rem)` to `clamp(5.5rem, 10vh, 8rem) ... clamp(2rem, 4vh, 3rem)`. Cap `--t-4xl` at `clamp(4rem, 9vw, 8rem)` so the 3-line title fits. Currently the spec-sheet strip is below the fold on common laptop sizes.
+
+### High priority
+
+6. **Cut hero `data-reveal`** on the title, lede, and CTAs (`index.html` lines 60, 66, 73). Above-the-fold content should NEVER be reveal-staggered — visitors arrive and see a blank screen. Reveal-on-scroll is for content the user scrolls TO, not content they LAND ON.
+
+7. **Add a live latency badge** to the console header. After line 181 in `index.html`, add `<span class="console__latency mono"><span id="latency-ms">—</span> ms · ESV→FAO</span>`. Wire it in `app.js` to track timestamps from `BOT_SPEAKING_START` minus `USER_DONE`.
+
+8. **Add `:focus-visible` styles.** Append to `styles.css`:
+```css
+:focus-visible { outline: 2px solid var(--od-2); outline-offset: 3px; border-radius: 4px; }
+.btn:focus-visible { outline-offset: 4px; }
+.nav__links a:focus-visible::after { right: 0; }
+```
+Without these, keyboard nav has no visible focus indicator on a dark theme.
+
+9. **Add an eval mini-table** as section `§ 02.5 · Eval`. A 4-row table: "Retrieval correctness · 92% (n=120)", "Refusal correctness · 98% (n=40 OOC queries)", "End-to-end ESV→FAO · 1.2s p50 / 1.6s p95", "Form-fill accuracy · 94% (n=60 voice queries)". Use real numbers from your testing — even rough ones. This is what Lincoln Lab judges look for.
+
+10. **Move the wow moment** above the pipeline section. Reorder `index.html`: section--problem → section--demo → section--wow → section--pipeline → section--forms → section--compare → section--claims → section--persona → section--cta. Wow is the differentiator and should follow the demo immediately.
+
+11. **Reword the matrix `partial` cells** to defuse cherry-pick perception. Replace em-dashes with concrete one-liners. E.g., GenAI.mil's "Voice I/O" cell: `text-only` instead of `—`. CamoGPT's "Cites Reg by section": `paragraph-level` instead of `generic`. Specificity reads as honest comparison.
+
+12. **Fix the magnetic + hover transform conflict** on the nav CTA. In `marketing.js`, replace `el.style.transform = translate(...)` with `el.style.setProperty('--magnet-x', x * STRENGTH + 'px'); el.style.setProperty('--magnet-y', y * STRENGTH + 'px')`. Then in CSS:
+```css
+.nav__cta { transform: translate(var(--magnet-x, 0), var(--magnet-y, 0)); }
+.nav__cta:hover { /* keep no transform */ }
+```
+This composites cleanly without inline-style stomping.
+
+13. **Remove "View source ↗" entirely** if the repo isn't public. Replace the second hero CTA with `Watch 60s demo ▶` linking to a Loom/YouTube video, or `Read the architecture doc →` linking to a hosted PDF. A judge with 90 seconds may not have time to clone a repo.
+
+### Medium priority
+
+14. **Pause marquee on hover.** Append `.marquee:hover .marquee__track { animation-play-state: paused; }` to `styles.css`. Lets the user actually read the regulation list when interested.
+
+15. **Push the marquee down by ~80px.** In `styles.css` line 403-410, add `margin-top: 4rem;` to give the hero CTA breathing room. The current zero-margin start makes it visually "stuck" to the hero.
+
+16. **Slow the marquee.** 60s linear is too fast for reading regs. Bump to `marquee 90s linear infinite` (line 438) so the corpus list is legible.
+
+17. **Replace the persona placeholder with a real photo or remove the section.** The CSS-gradient "E-5" tile reads as unfinished. Either commission a real composite portrait, or replace the persona section with three named-soldier voice-test transcripts. The persona pattern is for B2B SaaS marketing — defense audiences don't expect it.
+
+18. **Rewrite the "2025 8 GB MacBook Air M1" footer.** `index.html` line 632 — there's no such product. Either say "M1 MacBook Air, 8 GB, 2020" or just "8 GB MacBook Air." Hardware-aware judges will catch this.
+
+19. **Add `og:url` and `og:site_name`.** After line 11: `<meta property="og:url" content="https://adjutant.local/">` and `<meta property="og:site_name" content="Adjutant">`.
+
+20. **Add a JSON-LD schema block** in `<head>` describing Adjutant as a SoftwareApplication for Google's knowledge graph. Optional but cheap.
+
+21. **Limit `will-change`.** In `styles.css` line 134, drop `will-change: opacity, transform;` from `[data-reveal]`. Add it dynamically in JS only during the transition window. 30+ promoted layers waste GPU memory.
+
+22. **Tone down the `--ash-2` strikethrough** in the hero spec-sheet. `styles.css` line 323 — change `color: var(--ash-2)` to `color: var(--rust); opacity: 0.7` so the "yes → none" beat reads as struck-through but still legible. Currently it's 4.5:1 contrast — borderline AA.
+
+23. **Pause hero parallax once the title leaves the viewport.** `marketing.js` line 142-160 — the parallax handler always runs. Add a guard: `if (window.scrollY > window.innerHeight) return;` to stop after the hero is offscreen.
+
+24. **Prefetch /health in advance.** In `index.html`, after line 12: `<link rel="preconnect" href="/">` and `<link rel="prefetch" href="/health">`. The first tier-status poll happens on `app.js` execution; preconnecting cuts the first-paint latency.
+
+25. **Add a "Skip to demo" link** as the first focusable element. Right after `<body>`, add `<a href="#demo" class="skip-link">Skip to demo</a>` with CSS that hides it off-screen except on focus. Standard accessibility pattern + a power-user shortcut.
+
+26. **Replace `Try it →` nav CTA copy with `Demo`.** "Try it" is vague consumer-product language. "Demo" is what defense buyers click.
+
+27. **Add a tier-status legend tooltip.** The `HOT / WARM / COLD` pills above the demo console are jargon. Add `title="..."` attributes explaining each tier, OR add a one-line caption `<p class="tier-caption">HOT = on-device · WARM = on-base intranet · COLD = cloud (FedRAMP)</p>` so visitors don't have to guess.
+
+28. **Add a real "kill the wifi" demo affordance.** The page promises offline operation. Add a button in the demo console: `<button id="kill-wifi-sim">Simulate offline</button>` that triggers `window.dispatchEvent(new Event("offline"))` and visibly flips the badge. The judge then sees the system continue working.
+
+29. **Add a screenshot of a filled DA-31 PDF** in the hero or right after the wow moment. A static `<img src="/web/da31-filled-redacted.png">` showing the actual rendered PDF removes the need to perform the demo to see the output.
+
+30. **Cut one of the two hero ctas if the GitHub link can't be made real.** A single primary CTA always converts better than two competing ones. Linear, Stripe, Vercel all use one primary + a tertiary text link.
+
+---
+
+## Files referenced
+- `/Users/naomiivie/adjutant/web/index.html` (641 lines)
+- `/Users/naomiivie/adjutant/web/styles.css` (1308 lines)
+- `/Users/naomiivie/adjutant/web/marketing.js` (180 lines)
+- `/Users/naomiivie/adjutant/web/app.js` (376 lines)
+- `/Users/naomiivie/adjutant/web/audio_worklet.js` (54 lines)
+
+## Headline takeaways
+
+The site is well-engineered and visually disciplined. Three things sabotage it for the SCSP-judge use case: (1) `href="https://github.com"` × 2 is a credibility-killing dead link; (2) `data-reveal` on the hero title/lede/CTAs leaves the page invisible for ~900ms after first paint; (3) no eval table, no live latency meter, no real GitHub link — three of the four things a Lincoln Lab judge needs to see in 90 seconds. The wow moment at scroll position ~5200px is the strongest single asset; it should be at scroll ~3500px right after the demo. Remove the persona section unless a real soldier photo can replace the CSS-gradient placeholder. Add a favicon and og:image — the social-share preview is currently broken.
+agentId: adcb32b41f7c38dfd (use SendMessage with to: 'adcb32b41f7c38dfd' to continue this agent)
+<usage>total_tokens: 75385
+tool_uses: 6
+duration_ms: 452937</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

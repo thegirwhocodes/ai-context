@@ -1,0 +1,50 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 09:09:37 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/
+Extraction prompt: Find API documentation, SIP configuration guides, integration instructions, webhooks, developer resources - extract everything technical
+
+----------------------------------------
+
+# CommPeak Documentation & Developer Hub - Technical Resources
+
+## API & Integration Resources
+
+**API Documentation Available:**
+- Comprehensive API references organized by product (Dialer, TextPeak, Cloud PBX, Portal, etc.)
+- "Check Out Our APIs by Products" section with swagger specifications
+- Developer Hub accessible at `/page/api-reference`
+
+## SIP Configuration Guides
+
+The documentation covers several VoIP setup topics:
+- "Configuring SIP Accounts" for establishing connections
+- "Adding SIP Accounts" for account management
+- "SIP Account Authentication" with standard and JWT-based methods
+- "Enabling JWT Authentication for SIP Account" for advanced security
+
+## Webhooks & Developer Integration
+
+**Key Developer References:**
+- Working with Webhooks documentation includes notes on WhatsApp Business stream integration
+- "If the WhatsApp Business stream is selected, the structure of the messages API is updated to include conversation data" for both inbound and outbound messages
+
+## WebRTC Integration
+
+Documentation available for "Integrating WebRTC Phone into Web Pages Using CommPeak" with step-by-step implementation guidance.
+
+## Additional Technical Resources
+
+- Messaging channel configuration (GSM vs. Unicode encoding specifications)
+- Caller ID management and Dynamic Caller ID Rules
+- Contact center reporting through "PBX Stats" section
+- SMS/messaging API implementation guides across multiple product lines
+
+**Access Point:** Status dashboard and API references via `commpeakstatus.com` and dedicated developer documentation sections.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

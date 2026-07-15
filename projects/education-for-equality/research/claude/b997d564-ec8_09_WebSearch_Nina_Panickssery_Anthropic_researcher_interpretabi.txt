@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nina Panickssery Anthropic researcher interpretability
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:48 UTC
+========================================================================
+
+Search query: Nina Panickssery Anthropic researcher interpretability
+
+----------------------------------------
+
+Web search results for query: "Nina Panickssery Anthropic researcher interpretability"
+
+Links: [{"title":"Nina Panickssery","url":"https://scholar.google.com/citations?user=6-_i-jsAAAAJ&hl=en"},{"title":"Nina Panickssery - Researcher, Anthropic","url":"https://openreview.net/profile?id=~Nina_Rimsky1"},{"title":"Nina Panickssery | OpenReview","url":"https://openreview.net/profile?id=~Nina_Panickssery1"},{"title":"Nina Panickssery - MATS Program Alumni","url":"https://www.matsprogram.org/alumni/nina-panickssery"},{"title":"What I'm working on - by Nina Panickssery","url":"https://ninapanickssery.substack.com/p/what-im-working-on"},{"title":"Research - Nina Panickssery","url":"https://ninapanickssery.com/research"},{"title":"Nina Panickssery","url":"https://ninapanickssery.com/"},{"title":"About me - Wes Gurnee","url":"https://wesg.me/"},{"title":"Anthropic Fellows Program — AI Safety @ Anthropic | Accel Job Board","url":"https://jobs.accel.com/companies/anthropic/jobs/74048365-anthropic-fellows-program-ai-safety"},{"title":"Anthropic Fellows Program - Anthropic | London","url":"https://www.simplyhired.co.uk/job/pHBZPYf3JEE2F_R1v39IvelWPKD0-HTMZC-Gx5U1H_D7M-yl0ZMAgA"}]
+
+Based on the search results, here's what I found about Nina Panickssery:
+
+Nina Panickssery is a researcher at Anthropic (since 2023) with expertise in deep learning and machine learning interpretability. Her research focuses on language models, AI alignment, AI interpretability, and ML safety.
+
+Before transitioning to ML research, she worked as a software engineer at Stripe and studied Biomedical Engineering at Imperial College London.
+
+**Research Focus:**
+
+She has published notable work including "Steering Llama 2 via Contrastive Activation Addition," which won an Outstanding Paper Award at ACL 2024, and has co-authored papers on many-shot jailbreaking and refusal in language models. One of her projects aims to improve understanding of sycophancy in language models by finding a "sycophancy vector" in an LLM's latent space.
+
+**Collaboration:**
+
+She collaborates with AI safety researchers through MATS, SPAR, and the Anthropic Fellows Program. She is also listed as a mentor for the Anthropic Fellows Program.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

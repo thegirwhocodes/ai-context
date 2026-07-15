@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.hollatags.com/sms/send
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:41:51 UTC
+========================================================================
+
+URL: https://docs.hollatags.com/sms/send
+Extraction prompt: What API endpoints are available? Is there any voice API? List all endpoints visible on this page or linked from it. Look for any voice, IVR, or call-related endpoints.
+
+----------------------------------------
+
+# API Endpoints Analysis
+
+## Available Endpoint
+Based on the provided documentation, only **one endpoint** is visible:
+
+- **POST** `https://sms.hollatags.com/api/send` - for sending SMS messages
+
+## Voice/IVR/Call APIs
+No voice, IVR, or call-related endpoints are documented on this page. The content exclusively covers SMS functionality. The documentation mentions a callback URL reference linking to another section ("See `<https://docs.hollatags.com/send/callback>`"), but that linked page content is not provided, so I cannot confirm whether voice APIs exist elsewhere in their documentation.
+
+**Conclusion:** This page presents only SMS capabilities with no voice or telephony call features.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

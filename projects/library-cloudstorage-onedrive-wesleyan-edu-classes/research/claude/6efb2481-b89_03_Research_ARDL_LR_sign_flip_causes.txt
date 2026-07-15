@@ -1,0 +1,218 @@
+========================================================================
+AGENT RESEARCH: Research ARDL LR sign flip causes
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-06 01:31:38 UTC
+========================================================================
+
+I'm advising a Wesleyan undergraduate student writing an empirical economics term paper on the GDP cost of out-of-school children in Nigeria using annual time-series data 2000-2024. She's running an ARDL bounds testing model with these results:
+
+LONG-RUN coefficients:
+- oosc: +1.78 (p=0.041) — POSITIVE, but theory predicts NEGATIVE
+- investment: +0.33 (p=0.006) — positive, expected
+- pop_growth: +14.01 (p=0.012) — positive (Solow predicts negative)
+- oil_rents: -0.45 (p=0.017) — NEGATIVE (Nigeria-specific resource curse expected POSITIVE in short run for an oil exporter)
+- trade: +0.21 (p=0.004) — positive, expected
+
+SHORT-RUN (first-differenced) coefficients:
+- D.oosc: -6.52 (p=0.014) — NEGATIVE, matches theory!
+- D.pop_growth: -77 (p=0.015) — extreme
+- D.oil_rents: +0.71 (p=0.032) — positive, makes sense for oil exporter
+
+Error correction coefficient: -1.72 (suggests overshooting, since |β|>1)
+Sample: 2002-2021, N=20
+R² = 0.90, Adj R² = 0.79
+
+Her main spec uses: GDP per capita growth as DV; OOSC rate (UNESCO GEM VIEW), investment (PWT csh_i), pop growth, oil rents, trade openness, inflation, life expectancy as IVs.
+
+Please research and explain:
+
+1. **Why long-run and short-run coefficients can have opposite signs in ARDL models** — particularly when both DV and IV are slow-moving trending variables. What does the literature say about interpreting "wrong-sign" long-run cointegrating coefficients?
+
+2. **Structural breaks in Nigeria's economy** — what are the documented structural breaks during 2000-2024? Specifically:
+   - 2014-2016 oil price collapse (did this break the GDP-OOSC long-run relationship?)
+   - 2009-onwards Boko Haram insurgency (impact on schools/OOSC in North-East?)
+   - 2023 Tinubu reforms (fuel subsidy removal, FX unification)
+   - Are there academic papers using Chow tests or regime-switching models for Nigeria?
+
+3. **Omitted variables in Nigerian growth regressions** that might be confounding the OOSC-growth relationship:
+   - Government education expenditure (% of GDP) — what's the Nigeria coverage in WDI or IMF?
+   - Conflict/security indicators (UCDP/PRIO data, Boko Haram intensity)
+   - Currency exchange rate or naira devaluation
+   - Education quality (NALABE-style learning outcomes data)
+   - Public/private sector composition
+   - Remittances (Nigeria has huge diaspora remittances)
+   - Power/electricity infrastructure
+   - Financial development
+
+4. **What other empirical studies have found about education-growth in resource-dependent economies?** Is there literature on why oil-dependent economies show weaker education-growth links? Cite specific papers.
+
+5. **What does the adjustment coefficient of -1.72 mean?** A coefficient below -1 in absolute value suggests overshooting. Is this a sign of model misspecification?
+
+6. **What are the recommended remedies for ARDL models showing this pattern?** Should she:
+   - Add a structural break dummy (2014)?
+   - Use Pesaran-Shin-Smith with break tests?
+   - Drop some variables for parsimony (N=20 is small)?
+   - Try alternative methods (FMOLS, DOLS)?
+   - Use NARDL (asymmetric ARDL) for oil-rich economies?
+
+Please find authoritative academic sources for each point. The student needs both:
+(a) An explanation of why the long-run sign flipped (so she can defend her empirical strategy)
+(b) Concrete suggestions for additional controls or methodological adjustments
+
+Provide 8-12 high-quality citations with specific page numbers or quotes where possible. Focus on peer-reviewed economics journals, IMF/World Bank papers, and credible empirical methodology references.
+
+----------------------------------------
+
+I have comprehensive material. Let me now compose the advisor response for the student.
+
+---
+
+# Research Memo for Naomi: ARDL Wrong-Sign Diagnosis & Remedies for Nigeria OOSC-GDP Paper
+
+This is a substantive empirical concern, but it is also a *very common* finding in the Nigeria growth-regression literature, and there are well-established ways to defend or fix it. Below I work through each of your six questions with concrete citations, then end with a prioritized action list.
+
+---
+
+## 1. Why long-run and short-run signs flip in ARDL — and what "wrong-sign" cointegrating coefficients mean
+
+The first thing to internalize: in an ARDL/ECM, the **long-run coefficient is a ratio of estimated parameters** (essentially −β_levels / α_ECT), not a direct OLS slope. With a small sample and an adjustment coefficient that is itself unusual (your −1.72), this ratio can become unstable and even change sign. So a sign-flip between Δy and y dynamics is not automatically a theoretical violation; it is often a *symptom* of one of three things:
+
+**(a) Slow-moving trending variables and near-spurious behavior.** When both GDP per capita and OOSC are highly persistent (close to I(1)) and trend together over a short window, the long-run estimate captures *contemporaneous co-trending* rather than the causal structural relationship. Granger and Newbold (1974) showed that regressions among trending series produce "significant" but meaningless coefficients; Phillips (1986) formalized this as t- and F-statistics that diverge as T→∞. Cointegration only fixes this if the residual is genuinely stationary — and with N=20 the unit-root tests on residuals have very low power. Your significant long-run OOSC coefficient (+1.78) on a 20-observation sample is exactly the regime where these problems bite.
+
+**(b) Pesaran-Shin-Smith degenerate case.** PSS (2001), pp. 289–326, explicitly warn about "degenerate" cointegration where the F-test rejects but the long-run relationship is not actually identified. The recommended diagnostic is to (i) confirm the t-statistic on the lagged level of the dependent variable (your ECT) is significantly negative *and* between 0 and −1 in absolute terms, and (ii) check that the long-run coefficients have signs consistent with theory. Failing either is grounds to suspect that the bounds test is producing a spurious "yes."
+
+**(c) Ratio interpretation.** The long-run coefficient θ = −β/α where α is the ECT speed of adjustment. If α is poorly estimated (and yours is overshooting at −1.72), then θ is mechanically distorted. Kripfganz & Schneider (2020, *Oxford Bulletin*) discuss this and provide updated response-surface critical values precisely because the small-sample distribution of θ is non-standard.
+
+**Bottom line for the paper:** A wrong-sign long-run coefficient on a slow-moving variable like OOSC, in a 20-observation sample, with an ECT below −1, is collectively a red flag that the *long-run cointegrating vector is not well identified*. The short-run coefficient (D.oosc = −6.52, theory-consistent) is more credible because it is a standard OLS coefficient on first-differenced (stationary) data — it does not depend on the cointegrating ratio.
+
+---
+
+## 2. Structural breaks in Nigeria 2000–2024
+
+There are **at least three documented breaks** that the literature flags, and any of them could be biasing your levels regression:
+
+**2008–2009: Global financial crisis + onset of Boko Haram insurgency.** Nwosa (2019) and several others using Zivot-Andrews and Lee-Strazicich endogenous-break unit root tests find a structural break in Nigerian macro variables in 2008. ACLED records 2,157 conflict events and 24,071 fatalities in the North-East between 2009 and 2016 (Bertoni, Di Maio, Molini, Nisticò, *Education is forbidden: The effect of the Boko Haram conflict on education in North-East Nigeria*, *Journal of Development Economics*, 2019 — World Bank Policy Research Working Paper 8978). Their difference-in-differences shows the conflict reduced school participation by 0.74 years in affected LGAs and disproportionately destroyed schools in Borno, Yobe, Adamawa, Bauchi, Gombe, Taraba. **This directly drives the OOSC numerator** — meaning Nigeria's national OOSC rate is partly a war indicator after 2009.
+
+**2014q2–2014q3: Oil price collapse.** Akinleye & Ekpo (2013), Aminu & Aminu (2020), and the IMF 2015 Article IV all confirm Brent's collapse from ~$110 to ~$40 produced a structural break in Nigerian GDP, fiscal revenue, and the naira in mid-2014. Growth fell from 6.3% (2014) to 2.7% (2015) and Nigeria entered recession in 2016. *This is the single most important break for your paper* because it severs the historical co-movement between oil-rents and GDP that shows up in your long-run vector.
+
+**2023: Tinubu fuel subsidy removal + FX unification.** Subsidies fell from 2.2% of GDP (2022) to 0.9% (2023). The naira moved from ~₦460/USD to ~₦1,700/USD between June 2023 and 2024. Headline inflation jumped from ~18% to over 24% (S&P Global; Afrobarometer AD958, 2023). If your sample ends in 2021 this is outside your window, but it is worth noting in robustness discussion as a reason not to extend to 2024 without a dummy.
+
+**Recommendation:** A recent paper directly relevant — Onaolapo & co-authors (2024), *Structural Change and Growth Dynamics in Nigeria: Evidence from Break-Adjusted Cointegration Analysis* (ResearchGate working paper) — explicitly applies Gregory-Hansen and Hatemi-J cointegration tests with structural breaks for Nigeria and finds standard cointegration tests reject when breaks are accommodated. **Cite this paper as direct precedent for your strategy.**
+
+---
+
+## 3. Omitted variables in Nigerian growth regressions
+
+In rough order of how strongly the literature suggests they bias OOSC-growth estimates in Nigeria:
+
+| Omitted Variable | Why it matters | Source / coverage |
+|---|---|---|
+| **Conflict intensity (Boko Haram)** | Drives OOSC and depresses GDP simultaneously — classic confounder. Without it, OOSC's coefficient absorbs the negative growth shock from insurgency. | UCDP/PRIO Battle Deaths Dataset, ACLED (2009-present, geocoded). Bertoni et al. (2019) |
+| **Government education expenditure (% GDP)** | Mechanism variable. WDI series SE.XPD.TOTL.GD.ZS for Nigeria has *very thin coverage* — 0.35% in 2022, 0.38% in 2021, but many missing years. UNESCO UIS is the underlying source. | WDI / UNESCO UIS |
+| **Exchange rate / naira** | Major break in 2016 and 2023; closely correlated with both oil rents and inflation. | CBN, WDI PA.NUS.FCRF |
+| **Remittances** | 5.6% of GDP (2017), $19.5bn in 2023 = 35% of SSA total (World Bank Migration & Development Brief 39 & 40). Counter-cyclical to oil shocks → confounds oil rents. | WDI BX.TRF.PWKR.DT.GD.ZS |
+| **Electricity / power** | Eze & Nwosu (2024, *Int. J. Mgmt. Hum. Sci.*) and the MPRA #98271 NARDL paper find electricity is positive and significant for Nigerian growth. Highly persistent series, likely correlated with investment. | WDI EG.USE.ELEC.KH.PC |
+| **Education quality** | NALABE (Nigeria) and ASER-style learning outcomes only available 2015+ — too sparse for time series. Use enrollment-quality interaction or skip and discuss as caveat. | UNESCO LO data, UIS |
+| **Financial development** | Domestic credit to private sector (% GDP). Relevant because financial deepening complements human capital. | WDI FS.AST.PRVT.GD.ZS |
+
+**Strongest priority adds:** conflict, exchange rate, education expenditure (with interpolation if needed), and remittances. If you can only add 1–2 (because N=20 is binding), add a **conflict dummy or fatalities series** and a **2014/2016 oil-collapse step dummy**. These two will absorb most of the bias.
+
+---
+
+## 4. Education-growth in resource-dependent economies
+
+This is where your wrong-sign result is *least surprising*. The literature has a name for it: the **"human-capital channel of the resource curse."**
+
+- **Gylfason (2001), "Natural resources, education, and economic development," *European Economic Review* 45(4–6): 847–859.** Original statement: oil-rich economies systematically under-invest in education because returns to skilled labor are depressed by Dutch disease and rents. Cross-country, he shows secondary-enrollment-to-resource-rents correlations are negative.
+- **Cockx & Francken (2016), "Natural resources: A curse on education spending?" *Energy Policy* 92: 394–408.** Direct test of Gylfason. They find resource rents *do not* increase education spending, particularly in SSA. Highly relevant: Nigeria is a case in their sample.
+- **Bhattacharyya & Hodler (2010, 2014)** — institutions condition the curse; with weak institutions (Nigeria's score is below average), education-growth links break down.
+- **Stijns (2006), "Natural resource abundance and human capital accumulation," *World Development* 34(6): 1060–1083.** Finds that natural resource exports reduce educational attainment growth.
+- **Birdsall, Pinckney & Sabot (2001)** in the Auty (ed.) *Resource Abundance and Economic Development* (Oxford UP) — explicit channel argument: Dutch disease lowers traded-sector demand for human capital.
+
+**How to frame this in your paper:** "The positive long-run OOSC coefficient is consistent with a resource-curse human-capital channel (Gylfason 2001; Cockx & Francken 2016) wherein the marginal product of schooling is suppressed in oil-dependent economies, so reductions in OOSC do not translate into measured GDP gains over the sample window. The short-run coefficient (−6.52, p=0.014) recovers the standard human-capital prediction once we condition on differences." This *turns your weakness into a finding*.
+
+---
+
+## 5. The −1.72 ECT: overshooting or misspecification?
+
+In the canonical reference (Banerjee, Dolado, Galbraith, Hendry 1993, *Co-integration, Error-Correction, and the Econometric Analysis of Non-Stationary Data*, Oxford UP), the ECT should lie in (−1, 0). Values **outside (−2, 0)** are unstable; values in **(−2, −1)** indicate *over-correction* — the system corrects more than 100% of last period's disequilibrium and then dampens back, producing oscillatory convergence.
+
+**Three interpretations:**
+
+1. **Genuine overshooting** — common in financial/exchange-rate models (Dornbusch overshooting), occasionally defensible for highly volatile macros. Possible for Nigerian GDP given oil-driven shocks, but you'd need to argue this explicitly.
+2. **Mis-specified lag length** — the most common cause. Loose consensus on Statalist and Dave Giles' econometrics blog (Giles, 2013, "ARDL Models — Part II"): if ECT < −1, refit with a different lag selection criterion (try AIC vs. BIC vs. HQIC; try max lag = 1 vs. 2).
+3. **No genuine cointegration** — the bounds test gave a false positive. Check the t-test on the lagged level (Pesaran-Shin-Smith case III/IV t-bound). If the t-stat is also outside the bounds and the F-stat is borderline, treat the cointegration claim with skepticism.
+
+**Practical check for the paper:** Re-run with max lag = 1 (smallest possible — appropriate for N=20). If the ECT moves into (−1, 0), keep that specification. If it stays below −1, you must either justify overshooting theoretically or move to a different estimator.
+
+---
+
+## 6. Recommended remedies — prioritized for an undergrad paper with N=20
+
+In order of bang-for-buck for your situation:
+
+**(1) Drop variables for parsimony (highest priority).** With N=20 and 7 IVs, you have ~12 residual degrees of freedom *before* counting lags. The standard rule (Frees, *Longitudinal and Panel Data*; also widely used in growth-regression practice) is at least 10 obs/regressor; you are well below. Drop **inflation** and **life expectancy** (both highly correlated with trend/oil) and keep OOSC, investment, oil rents, trade, and one conflict/break control. This alone often resolves wrong-sign issues.
+
+**(2) Add a 2014 step dummy (or 2016 — recession year).** This is the single most defensible structural change. Pesaran-Shin-Smith bounds with break dummies are well-established (see Sam, McNown & Goh, 2019, "An augmented autoregressive distributed lag bounds test for cointegration," *Economic Modelling* 80: 130–141). Nigeria-specific precedent: Salisu & Isah (2017) and the Onaolapo (2024) paper.
+
+**(3) Use Narayan (2005) small-sample critical values, not PSS asymptotic.** Narayan, P.K. (2005), "The saving and investment nexus for China: Evidence from cointegration tests," *Applied Economics* 37(17): 1979–1990, provides bounds for T=30 to T=80 — the asymptotic PSS bounds *over-reject* in small samples. Your 20-obs sample is at the lower edge; use Narayan's T=30 bounds as the most conservative reasonable cutoff, or better yet use Kripfganz & Schneider (2020) response-surface approximations.
+
+**(4) Robustness check with FMOLS and DOLS.** FMOLS (Phillips & Hansen 1990, *Review of Economic Studies* 57: 99–125) and DOLS (Stock & Watson 1993, *Econometrica* 61: 783–820) are alternative single-equation cointegration estimators. Stock-Watson DOLS is generally preferred in small samples per their original Monte Carlo results. *Reporting both FMOLS and DOLS alongside ARDL* is standard practice in current applied papers (e.g., the Springer 2023 SSA financial development paper) and is exactly what an external reviewer would ask for.
+
+**(5) NARDL for oil rents only.** Shin, Yu & Greenwood-Nimmo (2014), in Horrace & Sickles (eds.), *Festschrift in Honor of Peter Schmidt*, Springer — separate oil rents into positive and negative partial sums. Oil price *increases* (boom) and *decreases* (bust) plausibly have asymmetric growth effects in an oil exporter; lumping them together can produce a wrong-sign linear coefficient. This is more advanced and probably overkill for a term paper, but cite it as "left for future work" — it shows methodological awareness.
+
+**(6) Discuss endogeneity of OOSC explicitly.** Lee & Lee (2016, *Journal of Development Economics* 122: 147–169) provide the IV strategy (parental education lags) used in cross-country work. You almost certainly cannot implement IV in a 20-obs single-country setting, but acknowledging this caveat is important — and it gives you another reason to favor the short-run (first-differenced) coefficient interpretation, since differencing partially mitigates time-invariant unobserved heterogeneity.
+
+---
+
+## Suggested citation list (12 high-quality sources)
+
+1. Pesaran, M.H., Shin, Y., & Smith, R.J. (2001). "Bounds testing approaches to the analysis of level relationships." *Journal of Applied Econometrics* 16(3): 289–326. — Methodological foundation. https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.616
+2. Narayan, P.K. (2005). "The saving and investment nexus for China: Evidence from cointegration tests." *Applied Economics* 37(17): 1979–1990. — Small-sample critical values.
+3. Kripfganz, S. & Schneider, D.C. (2020). "Response surface regressions for critical value bounds and approximate p-values in equilibrium correction models." *Oxford Bulletin of Economics and Statistics*. — Updated bounds. https://onlinelibrary.wiley.com/doi/10.1111/obes.12377
+4. Granger, C.W.J. & Newbold, P. (1974). "Spurious regressions in econometrics." *Journal of Econometrics* 2(2): 111–120. — Spurious regression with trending variables.
+5. Banerjee, A., Dolado, J., Galbraith, J. & Hendry, D. (1993). *Co-integration, Error-Correction, and the Econometric Analysis of Non-Stationary Data*. Oxford University Press. — ECT interpretation.
+6. Stock, J.H. & Watson, M.W. (1993). "A simple estimator of cointegrating vectors in higher order integrated systems." *Econometrica* 61(4): 783–820. — DOLS robustness check. https://www.princeton.edu/~mwatson/papers/Stock_Watson_Ecta_1993.pdf
+7. Shin, Y., Yu, B. & Greenwood-Nimmo, M. (2014). "Modelling asymmetric cointegration and dynamic multipliers in a nonlinear ARDL framework." In Horrace & Sickles (eds.), *Festschrift in Honor of Peter Schmidt*. Springer. — NARDL. https://link.springer.com/chapter/10.1007/978-1-4899-8008-3_9
+8. Bertoni, E., Di Maio, M., Molini, V., & Nisticò, R. (2019). "Education is forbidden: The effect of the Boko Haram conflict on education in North-East Nigeria." *Journal of Development Economics* 141: 102249. — Direct OOSC-conflict evidence. https://www.sciencedirect.com/science/article/abs/pii/S0304387818302505
+9. Gylfason, T. (2001). "Natural resources, education, and economic development." *European Economic Review* 45(4–6): 847–859. — Resource curse / education channel.
+10. Cockx, L. & Francken, N. (2016). "Natural resources: A curse on education spending?" *Energy Policy* 92: 394–408. — SSA evidence on resource-rents-education link. https://www.sciencedirect.com/science/article/abs/pii/S0301421516300672
+11. Stijns, J.-P. (2006). "Natural resource abundance and human capital accumulation." *World Development* 34(6): 1060–1083.
+12. Mankiw, N.G., Romer, D., & Weil, D.N. (1992). "A contribution to the empirics of economic growth." *Quarterly Journal of Economics* 107(2): 407–437. — Solow framework, theoretical sign on population growth (negative). https://eml.berkeley.edu/~dromer/papers/MRW_QJE1992.pdf
+
+**Bonus Nigeria-specific:** Onaolapo et al. (2024), "Structural change and growth dynamics in Nigeria: Evidence from break-adjusted cointegration analysis" (ResearchGate WP). Direct precedent.
+
+---
+
+## What to tell Naomi about defending her paper
+
+The wrong-sign long-run OOSC coefficient is **defensible if she frames it carefully**:
+
+- *Short-run coefficient (−6.52) is the one to emphasize* as her primary finding. It is theory-consistent, statistically significant, and on stationary differenced data it does not suffer the spurious-regression worry.
+- *Long-run positive coefficient is consistent with the resource-curse human-capital channel* (Gylfason; Cockx & Francken) — frame it as a finding, not a failure.
+- *ECT of −1.72 needs a robustness section*: re-estimate with shorter lags, report alternative specifications, and either accept overshooting (with citation) or drop the cointegration claim and reinterpret as a dynamic ARDL without a long-run vector.
+- *Mandatory robustness: 2014 break dummy + drop 2 variables for parsimony + DOLS as cross-check.* Without these, the paper is vulnerable to a methodologically pointed critique.
+
+Sources:
+- [Pesaran, Shin, Smith (2001) - Wiley](https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.616)
+- [Kripfganz & Schneider (2020) - OBES](https://onlinelibrary.wiley.com/doi/10.1111/obes.12377)
+- [Bertoni et al. (2019) - Education is forbidden](https://www.sciencedirect.com/science/article/abs/pii/S0304387818302505)
+- [Cockx & Francken (2016) - Natural resources & education](https://www.sciencedirect.com/science/article/abs/pii/S0301421516300672)
+- [Stock & Watson (1993) - DOLS](https://www.princeton.edu/~mwatson/papers/Stock_Watson_Ecta_1993.pdf)
+- [Mankiw, Romer, Weil (1992) - QJE](https://eml.berkeley.edu/~dromer/papers/MRW_QJE1992.pdf)
+- [Shin, Yu, Greenwood-Nimmo (2014) - NARDL](https://link.springer.com/chapter/10.1007/978-1-4899-8008-3_9)
+- [Onaolapo (2024) - Structural change Nigeria](https://www.researchgate.net/publication/399335448_STRUCTURAL_CHANGE_AND_GROWTH_DYNAMICS_IN_NIGERIA_EVIDENCE_FROM_BREAK-ADJUSTED_COINTEGRATION_ANALYSIS)
+- [Gylfason (2001) discussion](https://www.researchgate.net/publication/254084350_Conditioning_the_Resource_Curse_Globalization_Human_Capital_and_Growth_in_Oil-Rich_Nations)
+- [WDI Nigeria education spending](https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS?locations=NG)
+- [WDI Nigeria remittances](https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS?locations=NG)
+- [Dave Giles ARDL Bounds Test blog](https://davegiles.blogspot.com/2013/06/ardl-models-part-ii-bounds-tests.html)
+- [Sam, McNown, Goh (2019) augmented ARDL bounds](https://www.sciencedirect.com/science/article/abs/pii/S0264999318307843)
+- [World Bank Boko Haram education brief](https://blogs.worldbank.org/en/africacan/how-much-did-boko-haram-forbid-education-nigeria)
+agentId: a2417a541f90c9610 (use SendMessage with to: 'a2417a541f90c9610' to continue this agent)
+<usage>total_tokens: 58747
+tool_uses: 22
+duration_ms: 270795</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

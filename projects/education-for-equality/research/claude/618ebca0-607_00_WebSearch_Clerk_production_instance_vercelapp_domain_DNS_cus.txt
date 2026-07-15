@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Clerk production instance vercel.app domain DNS custom domain requirement 2026
+Session: 618ebca0-6074-45c8-9893-1bd5ec214293
+Time: 2026-06-29 23:37:46 UTC
+========================================================================
+
+Search query: Clerk production instance vercel.app domain DNS custom domain requirement 2026
+
+----------------------------------------
+
+Web search results for query: "Clerk production instance vercel.app domain DNS custom domain requirement 2026"
+
+Links: [{"title":"Deploying a Clerk app to Vercel - Deployment | Clerk Docs","url":"https://clerk.com/docs/guides/development/deployment/vercel"},{"title":"Deploy your Clerk app to production - Deployment | Clerk Docs","url":"https://clerk.com/docs/guides/development/deployment/production"},{"title":"Troubleshooting domains","url":"https://vercel.com/docs/domains/troubleshooting"},{"title":"Change domain or subdomain - Deployment | Clerk Docs","url":"https://clerk.com/docs/guides/development/deployment/changing-domains"},{"title":"How to take your Clerk application to production","url":"https://clerk.com/blog/how-to-take-your-clerk-app-to-prod"},{"title":"Ultimate guide for deploying Google OAuth using Clerk+Next.js+Vercel | by Chirag Gupta | Medium","url":"https://medium.com/@chirag_9121/ultimate-guide-for-deploying-google-oauth-using-clerk-next-js-vercel-c586c943949c"},{"title":"Vercel + Clerk auth - Help - Vercel Community","url":"https://community.vercel.com/t/vercel-clerk-auth/1751"},{"title":"Instances / Environments - Development | Clerk Docs","url":"https://clerk.com/docs/guides/development/managing-environments"},{"title":"Setting up a custom domain","url":"https://vercel.com/docs/domains/set-up-custom-domain"}]
+
+Based on the search results, here's what I found regarding Clerk production instances and Vercel.app domains:
+
+## Custom Domain Requirement for Production
+
+You cannot use a *.vercel.app domain for production when deploying a Clerk application. It is currently not possible to use Clerk production API keys with your host's provided preview domain like *.vercel.app.
+
+## DNS Configuration Requirements
+
+For production deployments, you will need to be able to add DNS records on your domain. Clerk uses DNS records to provide session management and emails verified from your domain. To see what DNS records you need, navigate to the Domains page in the Clerk Dashboard.
+
+## Production Instance Setup
+
+Production instances prioritize security and isolation. They require HTTPS, and each instance must use its own credentials for identity providers. Rather than relying on cross-domain redirects, Clerk authenticates users directly on your domain using DNS records, reducing the risk of cross-site scripting attacks and improving user trust.
+
+## Key Steps for Production Deployment
+
+1. The first step in going to production is securing a custom domain. This is the address where users will access your app, and it's also how Clerk will verify the authenticity of authentication requests.
+
+2. It can take up to 48hrs for DNS records to fully propagate.
+
+The documentation confirms that as of 2026, you must own and configure a custom domain with proper DNS records to deploy a Clerk production instance, regardless of whether you're using Vercel or another hosting provider.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

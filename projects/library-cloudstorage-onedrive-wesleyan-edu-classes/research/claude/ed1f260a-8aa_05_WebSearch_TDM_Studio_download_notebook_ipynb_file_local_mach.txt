@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "TDM Studio" download notebook ipynb file local machine workbench
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:14:25 UTC
+========================================================================
+
+Search query: "TDM Studio" download notebook ipynb file local machine workbench
+
+----------------------------------------
+
+Web search results for query: ""TDM Studio" download notebook ipynb file local machine workbench"
+
+Links: [{"title":"GitHub - Brown-University-Library/socsci_tdm_studio: Notebooks and resources for utilizing ProQuest TDM Studio + other text and data mining resources · GitHub","url":"https://github.com/Brown-University-Library/socsci_tdm_studio"},{"title":"Using the Jupyter Notebook - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio/jupyternotebook"},{"title":"TDM Studio Workbench Quick Start Guide","url":"https://pq-static-content.proquest.com/collateral/media2/documents/tdmstudio-qsg.pdf"},{"title":"How to download a .ipynb file from GitHub and run it on my local machine - Quora","url":"https://www.quora.com/How-do-I-download-a-ipynb-file-from-GitHub-and-run-it-on-my-local-machine"},{"title":"ProQuest TDM Studio - Text Analysis - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/penntdm/tdm-studio"},{"title":"TDM Studio HOWTOs - Text Mining - Research Guides at Columbia University","url":"https://guides.library.columbia.edu/text-mining/tdm-studio-howtos"},{"title":"Notebooks: part 3, places to use .IPYNB files, even without Jupyter","url":"https://jhoneill.github.io/misc/2020/09/29/Notebooks3.html"},{"title":"ProQuest TDM Studio - Text Mining - Research Guides at Columbia University","url":"https://guides.library.columbia.edu/text-mining/proquest-tdm-studio"},{"title":"GitHub - tdm-project/tdm-notebooks · GitHub","url":"https://github.com/tdm-project/tdm-notebooks"},{"title":"Import and export notebooks - Amazon SageMaker Unified Studio","url":"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/export-share-notebooks.html"}]
+
+Based on the search results, here's information about downloading notebook (.ipynb) files from TDM Studio to your local machine:
+
+## Downloading Notebooks from TDM Studio
+
+You can download the notebook locally from the GitHub repo, and it can be tricky to copy and paste text/code into Workspace, so uploading the entire .ipynb file into the environment through Workspace's upload functionality is recommended.
+
+## Working with .ipynb Files Locally
+
+If you want to work with downloaded TDM Studio notebooks on your local machine, here are the general approaches:
+
+1. **Running Jupyter Locally**: You can clone the repo containing the ipynb notebook, go to the path where the ipynb is cloned, and open Jupyter notebook to see the file using the command `jupyter notebook $filename`.
+
+2. **Uploading to TDM Studio Workbench**: You can upload scripts or any type of file to the Jupyter environment by following the Upload instructions.ipynb file in the Jupyter notebook.
+
+## TDM Studio Workbench Environment
+
+When using the actual TDM Studio workbench, TDMStudio workbench is a virtual Windows machine deployed and controlled by ProQuest that loads your selected datasets automatically into that environment.
+
+The search results indicate that while TDM Studio notebooks can be downloaded locally, the workbench is primarily designed to be used within ProQuest's virtual environment where your datasets are pre-loaded.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

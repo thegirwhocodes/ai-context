@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT Nigerian TTS how built architecture training data Azeez Saheed UNILAG 20
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:30:02 UTC
+========================================================================
+
+Search query: YarnGPT Nigerian TTS how built architecture training data Azeez Saheed UNILAG 2025
+
+----------------------------------------
+
+Web search results for query: "YarnGPT Nigerian TTS how built architecture training data Azeez Saheed UNILAG 2025"
+
+Links: [{"title":"How this UNILAG student built an AI model with local accent","url":"https://techpoint.africa/2025/02/04/how-unilag-student-created-yarngpt-ai"},{"title":"Blazing the Trail: UNILAG Mech. Engineering Student Builds Text-to-Speech Model - University Of Lagos","url":"https://unilag.edu.ng/blazing-the-trail-unilag-mech-engineering-student-builds-text-to-speech-model/"},{"title":"How Azeez, Unilag’s student built a Nigerian accent AI text-to-speech model - Businessday NG","url":"https://businessday.ng/bd-weekender/article/how-azeez-unilags-student-built-a-nigerian-accent-ai-text-to-speech-model/"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"Azeez Saheed unveils YarnGPT: A Nigerian-accented text-to-speech AI | Techpression","url":"https://techpression.com/azeez-saheed-unveils-yarngpt"},{"title":"Saheed Azeez: UNILAG student behind unique text-to-speech AI model – The Sun Nigeria","url":"https://thesun.ng/saheed-azeez-unilag-student-behind-unique-text-to-speech-ai-model/"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"UNILAG Student Develops YarnGPT, an AI That Speaks in a Nigerian Accent - Nigerian Best Magazine","url":"https://nigerianbest.com.ng/unilag-student-develops-yarngpt-an-ai-that-speaks-in-a-nigerian-accent/"},{"title":"Blazing the Trail: UNILAG Mech. Engineering Student Builds Text-to-Speech Model","url":"https://kolaking.substack.com/p/blazing-the-trail-unilag-mech-engineering"}]
+
+Based on the search results, here's comprehensive information about YarnGPT, the Nigerian TTS model created by Azeez Saheed from UNILAG:
+
+## Overview
+YarnGPT is a text-to-speech AI model that can read text aloud in a Nigerian accent. Saheed Azeez, a final year student of Mechanical Engineering at the University of Lagos, has successfully built this model.
+
+## Architecture
+YarnGPT is a text-to-speech model designed to synthesize Nigerian-accented English leveraging pure language modelling without external adapters or complex architectures. Azeez took a language model called SmolLM2-360M from Hugging Face and added speech functionality to it, a process that involved major algorithmic changes.
+
+## Training Process
+This process was made possible by a wave tokenizer, using resources from Hugging Face, Oute AI, and other Nigerian repositories. The final-year Mechanical Engineering student had to spend $50 to train the model, and the training took three days.
+
+## Training Data
+The major chunk of data used in this project was data from movies – their audio and transcriptions. Audio files were preprocessed and resampled to 24Khz and tokenized using wavtokenizer, from publicly available Nigerian movies, podcasts (using subtitle-audio pairs) and open source Nigerian-related audio data on Hugging Face.
+
+## Capabilities
+The model could not only pronounce English in a Nigerian accent but could also read Nigerian languages—Hausa, Igbo, and Yoruba.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================
