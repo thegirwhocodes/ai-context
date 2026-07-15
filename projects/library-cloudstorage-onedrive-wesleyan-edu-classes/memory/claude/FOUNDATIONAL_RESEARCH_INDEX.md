@@ -1,6 +1,6 @@
 # Foundational Research Index
-Generated: 2026-07-14 21:37:45
-Scanned: 2244 files, 193 sessions, 59 major builds
+Generated: 2026-07-15 17:04:13
+Scanned: 2244 files, 195 sessions, 68 major builds
 
 ## E4E / Sabi `3c482910` | 2026-02-04 | 48 files
 Folders: -Users-naomiivie-Education-for-Equality
@@ -54,6 +54,75 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_46_WebFetch_httpswwwstatcompilercomen.txt
 - `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_47_WebSearch_sitestatcompilercom_OR_sitedhsprogramcom_Nigeria_m.txt
 
+## Classes `54dd4efb` | 2026-02-18 | 29 files
+Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
+- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
+- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
+- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
+- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
+- `02:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
+- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
+- `02:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
+- `03:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
+- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
+- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
+- `03:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
+- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_20_WebSearch_Antigravity_VS_Code_extension_document_viewer.txt
+- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_21_WebSearch_VS_Code_voice_recording_extension_microphone_audio.txt
+- `05:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_22_WebSearch_VS_Code_audio_player_extension_listen_mp3_m4a_play.txt
+
+## Classes `19b3e1b6` | 2026-02-18 | 32 files
+Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
+- `01:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
+- `02:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
+- `02:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
+- `03:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
+- `03:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
+- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_00_WebSearch_Happy_Herman_Niyorurema_TCU_email.txt
+- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_01_WebSearch_cheapest_second_hand_office_chair_near_me_Facebook.txt
+- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_02_WebSearch_best_cheap_hands-free_social_media_recording_camer.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_03_WebSearch_Facebook_Marketplace_office_chair_Connecticut_Midd.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_04_WebSearch_eBay_Insta360_GO_2_used_cheap_buy_now.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_05_WebSearch_eBay_GoPro_Hero_9_used_cheap_under_100.txt
+
 ## E4E / Sabi `1f61b0ac` | 2026-02-18 | 44 files
 Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
 
@@ -101,6 +170,53 @@ Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Education-for-Equa
 - `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_12_WebSearch_MIT_Africa_Business_Challenge_2026_hackathon_housi.txt
 - `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_13_WebFetch_httpsmit-africacomhackathon.txt
 - `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_14_WebFetch_httpscalendarmitedueventmit-africa-business-challen.txt
+
+## Classes `2647beef` | 2026-02-18 | 32 files
+Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
+- `01:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
+- `02:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
+- `02:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
+- `03:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
+- `03:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
+- `05:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_20_WebSearch_Antigravity_VS_Code_extension_document_viewer.txt
+- `05:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_21_WebSearch_VS_Code_voice_recording_extension_microphone_audio.txt
+- `05:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_22_WebSearch_VS_Code_audio_player_extension_listen_mp3_m4a_play.txt
+- `17:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_00_WebFetch_httpsinnovationlabsharvardedueventsventuring-harvar.txt
+- `04:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2647beef-45e_00_WebSearch_originate_to_distribute_model_diagram_ABCP_structu.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2647beef-45e_01_WebSearch_presentation_headlines_slide_title_complete_senten.txt
+
+## Classes `d5d0c714` | 2026-02-24 | 7 files
+Folders: -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_00_WebSearch_Wesleyan_University_spring_break_2026_dates.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_03_WebSearch_cheapest_spring_break_Florida_budget_2026_students.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_02_WebSearch_cheapest_Airbnb_Florida_spring_break_2026_under_50.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_01_WebSearch_cheapest_flights_Connecticut_to_Florida_March_2026.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_05_WebSearch_Megabus_Greyhound_bus_Connecticut_to_Florida_cheap.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_04_WebFetch_httpswwwwesleyaneduregistrarcalendarsAcademic20Cale.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_06_WebSearch_hostel_Florida_spring_break_cheapest_20_night_2026.txt
 
 ## E4E / Sabi `089265f6` | 2026-02-25 | 41 files
 Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
@@ -474,6 +590,175 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `22:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_06_WebSearch_Airtel_Africa_Foundation_Nigeria_director_leadersh.txt
 - `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_08_WebSearch_free_curriculum_review_organizations_foundational_.txt
 - `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_07_WebSearch_Teaching_at_the_Right_Level_TaRL_curriculum_review.txt
+
+## Classes `6efb2481` | 2026-03-05 | 165 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_02_WebSearch_Nigeria_mobile_phone_penetration_rate_2025_2026.txt
+- `19:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_03_WebSearch_MIT_Africa_Business_Challenge_2026_attendees_parti.txt
+- `19:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_04_WebSearch_best_LinkedIn_post_format_2025_2026_tips_engagemen.txt
+- `19:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_05_WebSearch_Azeez_Akinyemi_AgrIQ_Connect_Nigeria.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_06_WebSearch_Luma_Learn_Chris_Folayan_AI_tutor_countries.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_08_WebSearch_MIT_Africa_Business_Challenge_2026_organizing_team.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_09_WebSearch_Map_the_System_Oxford_competition_2025_2026.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_07_WebSearch_Nigeria_20_million_out_of_school_children_UNICEF_2.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_10_WebSearch_Nigeria_70_children_public_schools_cannot_read_wri.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_11_WebSearch_Nigeria_mobile_penetration_87_2025.txt
+- `20:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_12_WebSearch_educationforequalityorg_domain_available.txt
+- `20:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_13_WebFetch_httpseducationforequalityorg.txt
+- `21:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_14_WebSearch_Nigeria_adult_population_2025_mobile_money_users_e.txt
+- `21:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_15_WebSearch_Nigeria_working_age_adults_employed_2025_how_many_.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_17_WebSearch_social_enterprise_vs_nonprofit_vs_B-corp_edtech_Af.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_16_WebSearch_Google_early_days_corporate_structure_before_IPO_i.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_18_WebSearch_Khan_Academy_nonprofit_structure_early_days_how_Sa.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_19_WebSearch_dual_structure_nonprofit_and_for-profit_social_ent.txt
+- `21:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_20_WebSearch_Nigeria_education_budget_spending_2025_UBEC_federa.txt
+- `21:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_21_WebSearch_Nigeria_GDP_2025_naira_trillion_USD_World_Bank.txt
+- `21:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_22_WebSearch_SBM_Intelligence_Nigeria_40_billion_education_prod.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_23_WebSearch_Africas_Talking_API_pricing_free_tier_voice_calls_.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_24_WebSearch_Africas_Talking_free_sandbox_voice_call_cost_per_m.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_25_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `02:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_26_WebSearch_USSD_education_learning_Africa_examples_AI_quiz_mo.txt
+- `02:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_27_WebSearch_Bakameonline_Sabi_AI_voice_tutoring_Africa.txt
+- `02:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_28_WebSearch_Bakame_AI_Sabi_voice_tutor_toll-free_Rwanda_educat.txt
+- `02:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_29_WebSearch_deliver_images_pictures_to_basic_phones_without_in.txt
+- `02:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_30_WebSearch_MMS_multimedia_message_basic_feature_phone_no_inte.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_31_WebFetch_httpscurriculum-app-etavercelappsabi-demo.txt
+- `03:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6c9f77c4-2f9_00_WebSearch_cost_to_produce_smart_pen_with_chip_2025_2026_manu.txt
+- `03:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6c9f77c4-2f9_01_WebSearch_digital_pen_with_embedded_chip_production_cost_BOM.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_32_WebSearch_cost_to_manufacture_smart_pen_with_chip_embedded_2.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_33_WebSearch_NFC_chip_pen_manufacturing_cost_per_unit_bulk_whol.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_34_WebSearch_low_power_FM_community_radio_transmitter_cost_Nige.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_35_WebSearch_FM_RDS_Radio_Data_System_technical_specifications_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_36_WebSearch_FM_radio_receiver_with_RDS_screen_cheap_wholesale_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_37_WebSearch_RDA5807M_FM_receiver_module_wholesale_bulk_price_A.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_38_WebSearch_Interactive_Radio_Instruction_IRI_Africa_literacy_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_39_WebSearch_RDS2_FM_radio_images_data_transmission_enhanced_ca.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_40_WebSearch_USSD_session_cost_Nigeria_Africas_Talking_per_sess.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_41_WebSearch_USSD_literacy_education_Africa_delivery_mobile_fea.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_42_WebSearch_USB_phone_charger_with_speaker_manufacturer_cost_w.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_43_WebSearch_SIM_toolkit_STK_app_education_Africa_push_content_.txt
+- `04:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_44_WebSearch_blockchain_data_protection_children_personal_data_.txt
+- `04:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_45_WebSearch_blockchain_vs_traditional_encryption_data_protecti.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_47_WebSearch_foundational_literacy_pedagogy_phonics_instruction.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_46_WebSearch_Jolly_Phonics_Nigeria_letter_order_teaching_sequen.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_49_WebSearch_teaching_reading_to_non-readers_audio_voice_instru.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_48_WebSearch_TaRL_teaching_at_the_right_level_literacy_methodol.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_52_WebSearch_science_of_reading_five_pillars_phonemic_awareness.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_51_WebSearch_synthetic_phonics_lesson_structure_steps_explicit_.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_50_WebSearch_Rising_on_Air_radio_literacy_lesson_script_structu.txt
+- `04:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_53_WebSearch_Jolly_Phonics_7_groups_letter_order_s_a_t_i_p_n_wh.txt
+- `04:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_54_WebSearch_phonemic_awareness_activities_oral_only_no_print_p.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_55_WebSearch_tactile_kinesthetic_letter_learning_writing_tracin.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_57_WebSearch_multisensory_phonics_instruction_touch_trace_sand_.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_56_WebSearch_can_children_learn_to_read_without_writing_handwri.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_58_WebSearch_Nigerian_children_English_language_proficiency_rur.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_59_WebSearch_voice_AI_speech_recognition_Nigerian_accent_childr.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_60_WebSearch_literacy_instruction_children_who_dont_speak_Engli.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_61_WebSearch_Bakame_AI_voice_tutor_language_Kinyarwanda_local_l.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_63_WebSearch_Lagos_Nigeria_children_English_language_proficienc.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_62_WebSearch_Lagos_state_language_spoken_children_schools_Engli.txt
+- `05:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_65_WebSearch_EKOEXCEL_Lagos_language_instruction_Yoruba_English.txt
+- `05:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_64_WebSearch_Lagos_out-of-school_children_language_demographics.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_67_WebSearch_SMS_voice_callback_literacy_education_system_devel.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_66_WebSearch_SMS_text_message_literacy_instruction_reading_deve.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_69_WebSearch_IVR_interactive_voice_response_education_literacy_.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_68_WebSearch_voice_call_AND_SMS_combined_education_literacy_chi.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_70_WebSearch_Allo_Alphabet_Cte_dIvoire_IVR_SMS_literacy_phonics.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_71_WebSearch_Eneza_Education_M-Shule_SMS_learning_results_liter.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_73_WebSearch_SMS_delivery_failure_rate_Nigeria_feature_phone_me.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_72_WebSearch_USSD_voice_callback_latency_delay_Africas_Talking_.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_75_WebSearch_children_sharing_parent_phone_learning_access_barr.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_74_WebSearch_SMS_inbox_storage_limit_feature_phone_Nokia_maximu.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_76_WebSearch_child_attention_span_phone_call_audio_learning_8_y.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_77_WebSearch_airtime_cost_barrier_Nigeria_poor_families_childre.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_78_WebSearch_dual_coding_theory_audio_text_simultaneous_NOT_sim.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_82_WebSearch_Nigerian_text_to_speech_TTS_startup_local_language.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_81_WebSearch_Nigerian_speech_to_text_STT_startup_Yoruba_Hausa_I.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_79_WebSearch_YarnGPT_Nigerian_TTS_text_to_speech_pricing_API_co.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_80_WebFetch_httpsyarngptaiapi-docs.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_83_WebFetch_httpsyarngptaipricing.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_85_WebSearch_Intron_Health_Nigerian_speech_AI_TTS_STT_pricing_A.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_84_WebSearch_African_speech_recognition_STT_most_accurate_Niger.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_86_WebSearch_Intron_Health_outperforms_accuracy_Nigerian_speech.txt
+- `19:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_88_WebSearch_Bakame_AI_startup_registration_Rwanda_voice_educat.txt
+- `19:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_87_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_company_in.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_89_WebSearch_Bakame_AI_registered_company_LLC_corporation_trade.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_90_WebSearch_Bakame_AI_50000_prize_award_2026.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_92_WebSearch_Bakame_AI_World_Government_Summit_Dubai_M-Gov_awar.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_91_WebFetch_httpstmsearchusptogovsearchsearch-resultsquerybakam.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_93_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_94_WebFetch_httpsdallasinnovatescomeight-tcu-student-ventures-s.txt
+- `19:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_95_WebSearch_World_Government_Summit_M-Gov_award_2026_prize_mon.txt
+- `03:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_96_WebSearch_EKOEXCEL_Lagos_Nigeria_education_program.txt
+- `04:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_00_WebFetch_httpscurriculum-app-etavercelappsabi.txt
+- `04:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_02_WebFetch_httpscurriculum-app-etavercelappsubjectsfoundationa.txt
+- `04:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_01_WebFetch_httpscurriculum-app-etavercelappsubjectsfoundationa.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_00_Find_Nigeria_OOSC_data_sources.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_01_Find_Eregha_paper_data_sources.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_02_Research_Nigeria_oil-cycle_confounding.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_03_Research_ARDL_LR_sign_flip_causes.txt
+- `16:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_04_State-level_Nigeria_OOSC__GDP_data_search.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_05_UNESCO_OOSC_methodology_research.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_06_WebFetch_httpswwwunescoorgeneducationviewoutofschoolestimate.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_07_WebSearch_UNESCO_GEM_Report_VIEW_out-of-school_children_meth.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_08_WebFetch_httpseducation-estimatesorgout-of-schoolmethods.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_09_WebFetch_httpsdataworldbankorgindicatorSEPRMNENRlocationsNG.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_11_WebSearch_out-of-school_rate_Bayesian_hierarchical_model_GEM.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_10_WebFetch_httpswwwunescoorgeneducationviewoutofschool.txt
+- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_12_WebFetch_httpswwwunescoorggem-reportsitesdefaultfilesmediasf.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_13_WebSearch_historical_out-of-school_children_data_1960_UNESCO.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_14_WebSearch_Barro_Lee_educational_attainment_dataset_1950_coun.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_15_WebFetch_httpsbarroleegithubioBarroLeeDataSetLongTermDatahtm.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_16_WebFetch_httpsourworldindataorgdata-insightsa-century-of-pro.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_18_WebSearch_Lee_Lee_2016_long-run_educational_attainment_1820_.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_17_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
+- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_19_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
+- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_20_WebFetch_httpsbarroleegithubioBarroLeeDataSetDataLeeLeehtml.txt
+- `23:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_21_Wage_premium_methodology_research.txt
+- `23:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_22_WebSearch_56_billion_Nigeria_out-of-school_children_GDP_cost.txt
+- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_24_WebFetch_httpswwwassociatesforchangeorgnew-reports-2022Econo.txt
+- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_23_WebSearch_CSEA_Economic_and_Social_Costs_out-of-school_Niger.txt
+- `01:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_25_WebSearch_Thomas_Burnett_2014_wage_premium_30_Psacharopoulos.txt
+- `01:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_26_WebFetch_httpsdocsizaorgdp3097pdf.txt
+- `01:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_27_Synthetic_control_research_for_Nigeria_OOSC_paper.txt
+- `02:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_28_Why_1970_panel_flips_Nigeria_positive.txt
+- `21:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_29_Non-linearity_in_education-growth_regressions.txt
+- `00:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_30_MRW_paper_style_and_structure.txt
+- `00:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_31_Stylized_facts_conventions_in_econ_papers.txt
+- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_32_Deep_research_on_synthetic_control_method.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_33_SCM_papers_for_Nigeria_SSA_and_oil_exporters.txt
+- `05:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_34_WebSearch_synthetic_control_method_Nigeria_Boko_Haram_OR_oil.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_35_WebSearch_synthetic_control_Nigeria_economic_sitenberorg_OR_.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_36_WebSearch_synthetic_control_Boko_Haram_Nigeria_conflict_econ.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_37_WebFetch_httpsdocuments1worldbankorgcurateden168241636640474.txt
+- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_38_WebSearch_spillover_economic_effects_Boko_Haram_synthetic_co.txt
+- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_39_WebSearch_synthetic_control_Universal_Primary_Education_Ugan.txt
+- `05:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_40_WebSearch_synthetic_control_method_Africa_GDP_oil_exporter_O.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_41_WebSearch_Does_the_resource_curse_exist_Ghana_synthetic_cont.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_42_WebFetch_httpsmpraubuni-muenchende1270641MPRA_paper_127064pd.txt
+- `05:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_43_WebSearch_synthetic_control_Nigeria_education_OR_enrollment_.txt
+- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_44_WebSearch_synthetic_control_Nigeria_GDP_economic_growth_work.txt
+- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_45_WebSearch_synthetic_control_oil_curse_OR_oil_discovery_GDP_p.txt
+- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_46_Deep_SCM_literature_for_hard_cases.txt
+- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_47_WebSearch_synthetic_control_Iran_sanctions_GDP_oil_donor_poo.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_48_WebSearch_synthetic_control_Norway_oil_Mideksa_natural_resou.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_49_WebSearch_augmented_synthetic_control_empirical_application_.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_50_WebSearch_synthetic_control_Venezuela_OR_Saudi_Arabia_oil_ec.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_51_WebSearch_synthetic_control_Dutch_disease_OR_resource_curse_.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_52_WebSearch_synthetic_difference-in-differences_application_co.txt
+- `21:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_53_WebSearch_synthetic_control_Brazil_oil_discovery_GDP_2024_me.txt
+- `21:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_54_WebSearch_synthetic_control_Nigeria_oil_GDP_per_capita_or_gr.txt
+- `21:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_55_WebSearch_synthetic_control_Nigeria_Boko_Haram_OR_oil_OR_Nai.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_56_WebSearch_synthetic_control_donor_pool_selection_criteria_si.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_57_WebFetch_httpsconferencenberorgconfer2021SI2021Abadie_2021pd.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_58_WebSearch_Abadie_2021_JEL_donor_pool_interpolation_bias_simi.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_59_WebSearch_synthetic_control_Africa_OR_developing_country_don.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_60_WebSearch_synthetic_control_Nigeria_currency_devaluation_OR_.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_61_WebSearch_synthetic_control_SSRN_OR_repec_Nigeria_economic_s.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_62_WebSearch_synthetic_control_sub-Saharan_Africa_population-si.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_63_WebSearch_synthetic_control_Nigeria_treated_unit_case_study_.txt
+- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_64_WebSearch_synthetic_control_Algeria_OR_Iraq_OR_Libya_OR_Indo.txt
 
 ## E4E / Sabi `ff1faa52` | 2026-03-07 | 79 files
 Folders: -Users-naomiivie-Education-for-Equality
@@ -1954,6 +2239,12 @@ Folders: -Users-naomiivie-Downloads-App-Rings-Version-2-1--Multi-device-Jan-2025
 - `20:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afee7e62-c54_00_Search_upcoming_hackathons_2026.txt
 - `20:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afee7e62-c54_01_Search_Morgan_Hacks_2026_date.txt
 
+## Classes `ef730e8c` | 2026-04-11 | 2 files
+Folders: -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ef730e8c-70e_00_Find_deposit_insurance_slides.txt
+- `02:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ef730e8c-70e_01_Find_CRRA_c1_c2_formulas_in_Econ_333.txt
+
 ## E4E / Sabi `1b27663d` | 2026-04-14 | 48 files
 Folders: -Users-naomiivie-Education-for-Equality
 
@@ -3083,6 +3374,127 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_25_WebSearch_call_answer_rate_OR_pickup_rate_Africa_Sub-Saharan.txt
 - `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_24_WebSearch_Nigeria_caller_ID_stranger_danger_child_safety_tea.txt
 
+## Classes `869a6900` | 2026-04-28 | 54 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `20:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_05_Research_soldier-profile_data_sources.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_02_WebSearch_Wesleyan_Writers_Room_Writing_Workshop_peer_tutor_.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_01_WebSearch_Wesleyan_University_Ford_Fellowship_writing_semina.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_00_WebSearch_Lauren_Silber_Wesleyan_Assistant_Director_Academic.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_04_WebFetch_httpswesleyanarguscom20250923office-hours-lauren-si.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_03_WebFetch_httpswwwwesleyaneduwritingwho-we-arehtml.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_05_WebFetch_httpswwwwesleyaneduwritingCurrent20resources20for20.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_09_WebSearch_SIP_call_transfer_mid-call_Nigerian_PSTN_feature_p.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_06_WebSearch_two-leg_call_hangup_callback_latency_seconds_Afric.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_07_WebSearch_Asterisk_drop_and_callback_different_carrier_cost_.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_08_WebSearch_Viamo_3-2-1_IVR_callback_model_toll-free_Africa_us.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_11_WebSearch_post_dial_delay_Nigeria_mobile_network_call_setup_.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_13_WebSearch_flash_callback_missed_call_callback_model_Africa_e.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_12_WebSearch_feature_phone_auto-answer_Nokia_Itel_Tecno_basic_p.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_10_WebFetch_httpsdocsdailycoguidesproductsdial-in-dial-outtrans.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_15_WebSearch_Nigeria_phone_scam_fear_unknown_caller_do_not_pick.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_14_WebSearch_Nigeria_call_answer_rate_unknown_number_pickup_per.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_16_WebSearch_Nigeria_phone_sharing_children_household_low-incom.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_18_WebSearch_truecaller_Nigeria_spam_call_statistics_percentage.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_17_WebSearch_Nigerian_children_phone_use_8-14_picking_up_calls_.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_21_WebSearch_Nigeria_419_scam_phone_fraud_kidnap_call_wangiri_a.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_20_WebSearch_Eneza_OR_Viamo_OR_Rori_AI_Africa_edtech_IVR_call_p.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_19_WebSearch_Nigeria_mobile_phone_ownership_children_rural_Lago.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_22_WebFetch_httpsnairametricscom20240312nigerias-scam-epidemic-.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_23_WebFetch_httpspmcncbinlmnihgovarticlesPMC5856935.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_25_WebSearch_call_answer_rate_OR_pickup_rate_Africa_Sub-Saharan.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_24_WebSearch_Nigeria_caller_ID_stranger_danger_child_safety_tea.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_01_WebSearch_diabolic_loop_bank_sovereign_nexus_Brunnermeier_ES.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_00_WebSearch_cross-border_deposit_insurance_international_fundi.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_02_WebSearch_European_deposit_insurance_scheme_EDIS_funding_mec.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_03_WebSearch_Diamond_Dybvig_deposit_insurance_funding_governmen.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_04_WebFetch_httpspersonallseacukreisrpapers16-DLESBiespdf.txt
+- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_06_WebSearch_foreign_holdings_US_Treasury_debt_deposit_insuranc.txt
+- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_05_WebSearch_FDIC_orderly_liquidation_Treasury_repayment_uninsu.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_09_WebSearch_lender_of_last_resort_repayment_Bagehot_collateral.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_08_WebSearch_Diamond_Dybvig_model_international_investors_forei.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_07_WebSearch_FDIC_reinsurance_private_deposit_insurance_proposa.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_10_WebSearch_IMF_SDR_new_arrangements_to_borrow_financial_safet.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_12_WebSearch_GENIUS_Act_stablecoin_yield_prohibition_interest_h.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_11_WebSearch_stablecoin_emerging_markets_dollar_demand_Argentin.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_14_WebSearch_stablecoin_deposit_insurance_FDIC_pass-through_pro.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_13_WebSearch_dollar_safe_asset_demand_emerging_market_retail_Ca.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_16_WebSearch_stablecoin_USDC_USDT_depeg_SVB_March_2023_Circle_r.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_17_WebSearch_remittance_fees_emerging_market_dollar_stablecoin_.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_15_WebSearch_Argentina_blue_dollar_rate_cepo_capital_controls_r.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_18_WebSearch_stablecoin_yield_emerging_market_user_reward_excha.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_22_WebSearch_stablecoin_demand_US_Treasury_yields_impact_lower_.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_19_WebSearch_dollar_smile_empirical_safe_haven_flight_to_qualit.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_20_WebSearch_stablecoin_emerging_market_deposit_drain_banking_s.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_21_WebSearch_stablecoin_Treasury_demand_Bessent_yield_curve_imp.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_24_WebSearch_retail_dollarization_deposit_outflow_Latin_America.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_23_WebSearch_USDC_USDT_March_2023_redemption_USDT_inflow_USDC_o.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_25_WebSearch_FDIC_moral_hazard_deposit_insurance_bank_risk_taki.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_26_WebSearch_retail_T-bill_access_foreign_nationals_TreasuryDir.txt
+
+## Classes `36d613f8` | 2026-04-30 | 59 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_02_WebSearch_Wesleyan_Writers_Room_Writing_Workshop_peer_tutor_.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_01_WebSearch_Wesleyan_University_Ford_Fellowship_writing_semina.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_00_WebSearch_Lauren_Silber_Wesleyan_Assistant_Director_Academic.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_04_WebFetch_httpswesleyanarguscom20250923office-hours-lauren-si.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_03_WebFetch_httpswwwwesleyaneduwritingwho-we-arehtml.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_05_WebFetch_httpswwwwesleyaneduwritingCurrent20resources20for20.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_09_WebSearch_SIP_call_transfer_mid-call_Nigerian_PSTN_feature_p.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_06_WebSearch_two-leg_call_hangup_callback_latency_seconds_Afric.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_07_WebSearch_Asterisk_drop_and_callback_different_carrier_cost_.txt
+- `07:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_08_WebSearch_Viamo_3-2-1_IVR_callback_model_toll-free_Africa_us.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_11_WebSearch_post_dial_delay_Nigeria_mobile_network_call_setup_.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_13_WebSearch_flash_callback_missed_call_callback_model_Africa_e.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_12_WebSearch_feature_phone_auto-answer_Nokia_Itel_Tecno_basic_p.txt
+- `16:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_10_WebFetch_httpsdocsdailycoguidesproductsdial-in-dial-outtrans.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_15_WebSearch_Nigeria_phone_scam_fear_unknown_caller_do_not_pick.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_14_WebSearch_Nigeria_call_answer_rate_unknown_number_pickup_per.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_16_WebSearch_Nigeria_phone_sharing_children_household_low-incom.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_18_WebSearch_truecaller_Nigeria_spam_call_statistics_percentage.txt
+- `17:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_17_WebSearch_Nigerian_children_phone_use_8-14_picking_up_calls_.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_21_WebSearch_Nigeria_419_scam_phone_fraud_kidnap_call_wangiri_a.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_20_WebSearch_Eneza_OR_Viamo_OR_Rori_AI_Africa_edtech_IVR_call_p.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_19_WebSearch_Nigeria_mobile_phone_ownership_children_rural_Lago.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_22_WebFetch_httpsnairametricscom20240312nigerias-scam-epidemic-.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_23_WebFetch_httpspmcncbinlmnihgovarticlesPMC5856935.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_25_WebSearch_call_answer_rate_OR_pickup_rate_Africa_Sub-Saharan.txt
+- `17:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_24_WebSearch_Nigeria_caller_ID_stranger_danger_child_safety_tea.txt
+- `18:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_01_WebSearch_diabolic_loop_bank_sovereign_nexus_Brunnermeier_ES.txt
+- `18:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_00_WebSearch_cross-border_deposit_insurance_international_fundi.txt
+- `18:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_02_WebSearch_European_deposit_insurance_scheme_EDIS_funding_mec.txt
+- `18:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_03_WebSearch_Diamond_Dybvig_deposit_insurance_funding_governmen.txt
+- `18:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_04_WebFetch_httpspersonallseacukreisrpapers16-DLESBiespdf.txt
+- `18:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_06_WebSearch_foreign_holdings_US_Treasury_debt_deposit_insuranc.txt
+- `18:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_05_WebSearch_FDIC_orderly_liquidation_Treasury_repayment_uninsu.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_09_WebSearch_lender_of_last_resort_repayment_Bagehot_collateral.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_08_WebSearch_Diamond_Dybvig_model_international_investors_forei.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_07_WebSearch_FDIC_reinsurance_private_deposit_insurance_proposa.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_10_WebSearch_IMF_SDR_new_arrangements_to_borrow_financial_safet.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_12_WebSearch_GENIUS_Act_stablecoin_yield_prohibition_interest_h.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_11_WebSearch_stablecoin_emerging_markets_dollar_demand_Argentin.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_14_WebSearch_stablecoin_deposit_insurance_FDIC_pass-through_pro.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_13_WebSearch_dollar_safe_asset_demand_emerging_market_retail_Ca.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_16_WebSearch_stablecoin_USDC_USDT_depeg_SVB_March_2023_Circle_r.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_17_WebSearch_remittance_fees_emerging_market_dollar_stablecoin_.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_15_WebSearch_Argentina_blue_dollar_rate_cepo_capital_controls_r.txt
+- `18:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_18_WebSearch_stablecoin_yield_emerging_market_user_reward_excha.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_22_WebSearch_stablecoin_demand_US_Treasury_yields_impact_lower_.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_19_WebSearch_dollar_smile_empirical_safe_haven_flight_to_qualit.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_20_WebSearch_stablecoin_emerging_market_deposit_drain_banking_s.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_21_WebSearch_stablecoin_Treasury_demand_Bessent_yield_curve_imp.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_24_WebSearch_retail_dollarization_deposit_outflow_Latin_America.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_23_WebSearch_USDC_USDT_March_2023_redemption_USDT_inflow_USDC_o.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_25_WebSearch_FDIC_moral_hazard_deposit_insurance_bank_risk_taki.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_26_WebSearch_retail_T-bill_access_foreign_nationals_TreasuryDir.txt
+- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_00_WebSearch_Google_Apps_Script_web_app_add_guest_to_calendar_e.txt
+- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_01_WebSearch_Google_Apps_Script_doGet_doPost_web_app_deploy_exe.txt
+- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_02_WebFetch_httpsgithubcomnspadygoogle-calendar-mcp.txt
+- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
+- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
+- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
+
 ## E4E / Sabi `7fb8b03f` | 2026-05-01 | 6 files
 Folders: -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
 
@@ -3092,6 +3504,24 @@ Folders: -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
 - `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
 - `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
 - `05:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
+
+## Classes `QAC proj` | 2026-05-01 | 14 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `04:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_00_WebSearch_Google_Apps_Script_web_app_add_guest_to_calendar_e.txt
+- `04:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_01_WebSearch_Google_Apps_Script_doGet_doPost_web_app_deploy_exe.txt
+- `05:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_02_WebFetch_httpsgithubcomnspadygoogle-calendar-mcp.txt
+- `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
+- `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
+- `05:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
+- `01:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_147_WebSearch_sabiai_company_website_voice_AI_tutor.txt
+- `01:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_148_WebSearch_sabi_Bakame_Africa_voice_AI_education_startup_comp.txt
+- `01:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_149_WebSearch_sabi_Nigeria_startup_company_trademark_e-commerce_.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_150_WebSearch_trusted_by_logo_section_website_UX_best_practices_.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_151_WebSearch_trusted_by_logo_bar_nonprofit_website_grayscale_co.txt
+- `02:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_152_WebSearch_naming_former_employer_advisor_bio_startup_mislead.txt
+- `02:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_153_WebSearch_advisors_include_former_from_startup_website_credi.txt
+- `02:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_154_WebSearch_bakameai_website_partners_supported_by_funded_by_l.txt
 
 ## E4E / Sabi `afba417e` | 2026-05-02 | 52 files
 Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
@@ -3861,46 +4291,11 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
 - `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
 
-### Classes `54dd4efb-7e0` | 2026-02-18 | 23 files
-
-- `01:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
-- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
-- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
-- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
-- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
-- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
-- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
-- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
-- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
-- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
-- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
-- `02:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
-- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
-- `02:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
-- `03:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
-- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
-- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
-- `03:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
-- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
-- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
-- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_20_WebSearch_Antigravity_VS_Code_extension_document_viewer.txt
-- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_21_WebSearch_VS_Code_voice_recording_extension_microphone_audio.txt
-- `05:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_22_WebSearch_VS_Code_audio_player_extension_listen_mp3_m4a_play.txt
-
 ### Classes `2eb61026-a83` | 2026-02-20 | 3 files
 
 - `16:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_00_WebSearch_Lila_Sayre_Wesleyan_Hasbro_LinkedIn.txt
 - `16:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_01_WebSearch_Lila_Sayre_Hasbro.txt
 - `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_02_WebSearch_Lila_Sayre_LinkedIn_finance.txt
-
-### Classes `19b3e1b6-0b2` | 2026-02-20 | 6 files
-
-- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_00_WebSearch_Happy_Herman_Niyorurema_TCU_email.txt
-- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_01_WebSearch_cheapest_second_hand_office_chair_near_me_Facebook.txt
-- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_02_WebSearch_best_cheap_hands-free_social_media_recording_camer.txt
-- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_03_WebSearch_Facebook_Marketplace_office_chair_Connecticut_Midd.txt
-- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_04_WebSearch_eBay_Insta360_GO_2_used_cheap_buy_now.txt
-- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_05_WebSearch_eBay_GoPro_Hero_9_used_cheap_under_100.txt
 
 ### Classes `8ed50497-de4` | 2026-02-24 | 7 files
 
@@ -4134,45 +4529,6 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_01_Production_engineering_patterns.txt
 - `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_01_Production_engineering_patterns.txt
 
-### Classes `869a6900-9c7` | 2026-04-28 | 27 files
-
-- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_01_WebSearch_diabolic_loop_bank_sovereign_nexus_Brunnermeier_ES.txt
-- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_00_WebSearch_cross-border_deposit_insurance_international_fundi.txt
-- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_02_WebSearch_European_deposit_insurance_scheme_EDIS_funding_mec.txt
-- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_03_WebSearch_Diamond_Dybvig_deposit_insurance_funding_governmen.txt
-- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_04_WebFetch_httpspersonallseacukreisrpapers16-DLESBiespdf.txt
-- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_06_WebSearch_foreign_holdings_US_Treasury_debt_deposit_insuranc.txt
-- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_05_WebSearch_FDIC_orderly_liquidation_Treasury_repayment_uninsu.txt
-- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_09_WebSearch_lender_of_last_resort_repayment_Bagehot_collateral.txt
-- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_08_WebSearch_Diamond_Dybvig_model_international_investors_forei.txt
-- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_07_WebSearch_FDIC_reinsurance_private_deposit_insurance_proposa.txt
-- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_10_WebSearch_IMF_SDR_new_arrangements_to_borrow_financial_safet.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_12_WebSearch_GENIUS_Act_stablecoin_yield_prohibition_interest_h.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_11_WebSearch_stablecoin_emerging_markets_dollar_demand_Argentin.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_14_WebSearch_stablecoin_deposit_insurance_FDIC_pass-through_pro.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_13_WebSearch_dollar_safe_asset_demand_emerging_market_retail_Ca.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_16_WebSearch_stablecoin_USDC_USDT_depeg_SVB_March_2023_Circle_r.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_17_WebSearch_remittance_fees_emerging_market_dollar_stablecoin_.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_15_WebSearch_Argentina_blue_dollar_rate_cepo_capital_controls_r.txt
-- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_18_WebSearch_stablecoin_yield_emerging_market_user_reward_excha.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_22_WebSearch_stablecoin_demand_US_Treasury_yields_impact_lower_.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_19_WebSearch_dollar_smile_empirical_safe_haven_flight_to_qualit.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_20_WebSearch_stablecoin_emerging_market_deposit_drain_banking_s.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_21_WebSearch_stablecoin_Treasury_demand_Bessent_yield_curve_imp.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_24_WebSearch_retail_dollarization_deposit_outflow_Latin_America.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_23_WebSearch_USDC_USDT_March_2023_redemption_USDT_inflow_USDC_o.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_25_WebSearch_FDIC_moral_hazard_deposit_insurance_bank_risk_taki.txt
-- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_26_WebSearch_retail_T-bill_access_foreign_nationals_TreasuryDir.txt
-
-### Classes `36d613f8-dc2` | 2026-04-30 | 6 files
-
-- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_00_WebSearch_Google_Apps_Script_web_app_add_guest_to_calendar_e.txt
-- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_01_WebSearch_Google_Apps_Script_doGet_doPost_web_app_deploy_exe.txt
-- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_02_WebFetch_httpsgithubcomnspadygoogle-calendar-mcp.txt
-- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
-- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
-- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
-
 ### Classes `ed1f260a-8aa` | 2026-05-01 | 22 files
 
 - `03:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_01_WebSearch_ProQuest_TDM_Studio_API_programmatic_access_Jupyte.txt
@@ -4235,74 +4591,6 @@ Folders: -Users-naomiivie-Education-for-Equality
 - `20:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_04_WebFetch_httpsdocsizaorgdp3097pdf.txt
 - `20:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_06_WebFetch_httpswwwacademiaedu11627192Estimates_of_Mincerian_r.txt
 - `20:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_05_WebSearch_Psacharopoulos_Patrinos_2004_2011_returns_to_inves.txt
-
-### Classes `6efb2481-b89` | 2026-05-05 | 65 files
-
-- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_00_Find_Nigeria_OOSC_data_sources.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_01_Find_Eregha_paper_data_sources.txt
-- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_02_Research_Nigeria_oil-cycle_confounding.txt
-- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_03_Research_ARDL_LR_sign_flip_causes.txt
-- `16:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_04_State-level_Nigeria_OOSC__GDP_data_search.txt
-- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_05_UNESCO_OOSC_methodology_research.txt
-- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_06_WebFetch_httpswwwunescoorgeneducationviewoutofschoolestimate.txt
-- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_07_WebSearch_UNESCO_GEM_Report_VIEW_out-of-school_children_meth.txt
-- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_08_WebFetch_httpseducation-estimatesorgout-of-schoolmethods.txt
-- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_09_WebFetch_httpsdataworldbankorgindicatorSEPRMNENRlocationsNG.txt
-- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_11_WebSearch_out-of-school_rate_Bayesian_hierarchical_model_GEM.txt
-- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_10_WebFetch_httpswwwunescoorgeneducationviewoutofschool.txt
-- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_12_WebFetch_httpswwwunescoorggem-reportsitesdefaultfilesmediasf.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_13_WebSearch_historical_out-of-school_children_data_1960_UNESCO.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_14_WebSearch_Barro_Lee_educational_attainment_dataset_1950_coun.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_15_WebFetch_httpsbarroleegithubioBarroLeeDataSetLongTermDatahtm.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_16_WebFetch_httpsourworldindataorgdata-insightsa-century-of-pro.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_18_WebSearch_Lee_Lee_2016_long-run_educational_attainment_1820_.txt
-- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_17_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
-- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_19_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
-- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_20_WebFetch_httpsbarroleegithubioBarroLeeDataSetDataLeeLeehtml.txt
-- `23:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_21_Wage_premium_methodology_research.txt
-- `23:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_22_WebSearch_56_billion_Nigeria_out-of-school_children_GDP_cost.txt
-- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_24_WebFetch_httpswwwassociatesforchangeorgnew-reports-2022Econo.txt
-- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_23_WebSearch_CSEA_Economic_and_Social_Costs_out-of-school_Niger.txt
-- `01:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_25_WebSearch_Thomas_Burnett_2014_wage_premium_30_Psacharopoulos.txt
-- `01:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_26_WebFetch_httpsdocsizaorgdp3097pdf.txt
-- `01:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_27_Synthetic_control_research_for_Nigeria_OOSC_paper.txt
-- `02:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_28_Why_1970_panel_flips_Nigeria_positive.txt
-- `21:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_29_Non-linearity_in_education-growth_regressions.txt
-- `00:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_30_MRW_paper_style_and_structure.txt
-- `00:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_31_Stylized_facts_conventions_in_econ_papers.txt
-- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_32_Deep_research_on_synthetic_control_method.txt
-- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_33_SCM_papers_for_Nigeria_SSA_and_oil_exporters.txt
-- `05:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_34_WebSearch_synthetic_control_method_Nigeria_Boko_Haram_OR_oil.txt
-- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_35_WebSearch_synthetic_control_Nigeria_economic_sitenberorg_OR_.txt
-- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_36_WebSearch_synthetic_control_Boko_Haram_Nigeria_conflict_econ.txt
-- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_37_WebFetch_httpsdocuments1worldbankorgcurateden168241636640474.txt
-- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_38_WebSearch_spillover_economic_effects_Boko_Haram_synthetic_co.txt
-- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_39_WebSearch_synthetic_control_Universal_Primary_Education_Ugan.txt
-- `05:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_40_WebSearch_synthetic_control_method_Africa_GDP_oil_exporter_O.txt
-- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_41_WebSearch_Does_the_resource_curse_exist_Ghana_synthetic_cont.txt
-- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_42_WebFetch_httpsmpraubuni-muenchende1270641MPRA_paper_127064pd.txt
-- `05:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_43_WebSearch_synthetic_control_Nigeria_education_OR_enrollment_.txt
-- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_44_WebSearch_synthetic_control_Nigeria_GDP_economic_growth_work.txt
-- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_45_WebSearch_synthetic_control_oil_curse_OR_oil_discovery_GDP_p.txt
-- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_46_Deep_SCM_literature_for_hard_cases.txt
-- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_47_WebSearch_synthetic_control_Iran_sanctions_GDP_oil_donor_poo.txt
-- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_48_WebSearch_synthetic_control_Norway_oil_Mideksa_natural_resou.txt
-- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_49_WebSearch_augmented_synthetic_control_empirical_application_.txt
-- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_50_WebSearch_synthetic_control_Venezuela_OR_Saudi_Arabia_oil_ec.txt
-- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_51_WebSearch_synthetic_control_Dutch_disease_OR_resource_curse_.txt
-- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_52_WebSearch_synthetic_difference-in-differences_application_co.txt
-- `21:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_53_WebSearch_synthetic_control_Brazil_oil_discovery_GDP_2024_me.txt
-- `21:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_54_WebSearch_synthetic_control_Nigeria_oil_GDP_per_capita_or_gr.txt
-- `21:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_55_WebSearch_synthetic_control_Nigeria_Boko_Haram_OR_oil_OR_Nai.txt
-- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_56_WebSearch_synthetic_control_donor_pool_selection_criteria_si.txt
-- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_57_WebFetch_httpsconferencenberorgconfer2021SI2021Abadie_2021pd.txt
-- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_58_WebSearch_Abadie_2021_JEL_donor_pool_interpolation_bias_simi.txt
-- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_59_WebSearch_synthetic_control_Africa_OR_developing_country_don.txt
-- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_60_WebSearch_synthetic_control_Nigeria_currency_devaluation_OR_.txt
-- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_61_WebSearch_synthetic_control_SSRN_OR_repec_Nigeria_economic_s.txt
-- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_62_WebSearch_synthetic_control_sub-Saharan_Africa_population-si.txt
-- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_63_WebSearch_synthetic_control_Nigeria_treated_unit_case_study_.txt
-- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_64_WebSearch_synthetic_control_Algeria_OR_Iraq_OR_Libya_OR_Indo.txt
 
 ### Class on Time `a8c172f1-a7d` | 2026-05-10 | 9 files
 
