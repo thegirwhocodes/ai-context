@@ -387,6 +387,7 @@ def export_curated() -> int:
 
 
 FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
+REDACTION_MARKER_RE = re.compile(r"\[REDACTED:([^\]]+)\]")
 
 
 def read_archive_meta(path: Path) -> dict[str, str]:
@@ -408,6 +409,37 @@ def read_archive_meta(path: Path) -> dict[str, str]:
             value = raw.strip()
         data[key] = str(value)
     return data
+
+
+def archive_redaction_counts() -> Counter[str]:
+    """Count markers in the durable archive, independent of deleted raw sources."""
+    counts: Counter[str] = Counter()
+    if not PROJECTS.is_dir():
+        return counts
+    for path in PROJECTS.rglob("*"):
+        if not path.is_file() or path.name == "INDEX.md":
+            continue
+        try:
+            counts.update(REDACTION_MARKER_RE.findall(path.read_text(encoding="utf-8", errors="replace")))
+        except OSError:
+            continue
+    return counts
+
+
+def archive_curated_count() -> int:
+    """Count durable memory/research files rather than files copied in this run."""
+    count = 0
+    if not PROJECTS.is_dir():
+        return count
+    for path in PROJECTS.rglob("*"):
+        if not path.is_file():
+            continue
+        parts = path.relative_to(PROJECTS).parts
+        if len(parts) >= 3 and parts[1] == "memory":
+            count += 1
+        elif len(parts) >= 3 and parts[1] == "research" and parts[2] != "codex-subagents":
+            count += 1
+    return count
 
 
 def generate_indexes(records: list[dict[str, Any]], curated_count: int) -> dict[str, Any]:
@@ -452,16 +484,18 @@ def generate_indexes(records: list[dict[str, Any]], curated_count: int) -> dict[
         atomic_write(PROJECTS / project / "INDEX.md", "\n".join(index) + "\n")
     atomic_write(REPO / "RECOVERY.md", "\n".join(recovery) + "\n")
 
+    durable_redactions = archive_redaction_counts()
+    durable_curated_count = archive_curated_count()
     manifest = {
         "generated_at": now_iso(),
         "project_count": len(grouped),
         "record_count": len(all_records),
         "projects": project_summaries,
-        "curated_files_copied": curated_count,
-        "redactions": dict(sorted(REDACTOR.counts.items())),
+        "curated_files_copied": durable_curated_count,
+        "redactions": dict(sorted(durable_redactions.items())),
     }
     atomic_write(REPO / "MANIFEST.json", json.dumps(manifest, indent=2, sort_keys=True) + "\n")
-    atomic_write(REPO / "REDACTION_REPORT.json", json.dumps({"generated_at": now_iso(), "counts": dict(sorted(REDACTOR.counts.items()))}, indent=2, sort_keys=True) + "\n")
+    atomic_write(REPO / "REDACTION_REPORT.json", json.dumps({"generated_at": now_iso(), "counts": dict(sorted(durable_redactions.items()))}, indent=2, sort_keys=True) + "\n")
     return manifest
 
 
