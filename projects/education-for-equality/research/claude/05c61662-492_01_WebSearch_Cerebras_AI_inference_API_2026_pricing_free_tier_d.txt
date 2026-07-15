@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cerebras AI inference API 2026 pricing free tier developer
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 04:09:10 UTC
+========================================================================
+
+Search query: Cerebras AI inference API 2026 pricing free tier developer
+
+----------------------------------------
+
+Web search results for query: "Cerebras AI inference API 2026 pricing free tier developer"
+
+Links: [{"title":"Cerebras","url":"https://www.cerebras.ai/pricing"},{"title":"Cerebras Free Tier 2026 — Free Models, Credits & Limits | Price Per Token","url":"https://pricepertoken.com/endpoints/cerebras/free"},{"title":"Cerebras Inference: Now Available via Pay Per Token","url":"https://www.cerebras.ai/blog/cerebras-inference-now-available-via-pay-per-token"},{"title":"Every Free AI API in 2026: The Complete Guide to Zero-Cost Inference | Awesome Agents","url":"https://awesomeagents.ai/tools/free-ai-inference-providers-2026/"},{"title":"Cerebras - Cline","url":"https://docs.cline.bot/provider-config/cerebras"},{"title":"Cerebras Introduces Inference Service, Touting Speed and Cost Benefits - BigDATAwire","url":"https://www.hpcwire.com/bigdatawire/this-just-in/cerebras-introduces-inference-service-touting-speed-and-cost-benefits/"},{"title":"Cerebras offers free 1M tokens per day inference tier, beats ...","url":"https://www.linkedin.com/posts/adam-holter-b5334327a_cerebras-just-dropped-a-free-1m-tokens-per-activity-7376925874203361280-WAUc"},{"title":"Cerebras Inference Review 2026: Features &... | ThePlanetTools.ai","url":"https://theplanettools.ai/tools/cerebras-inference"},{"title":"Cerebras Free Tier: 1 Million Tokens/Day Guide (2026)","url":"https://aicreditmart.com/ai-credits-providers/cerebras-free-tier-1-million-tokens-day-guide-2026/"},{"title":"Unlocking the Future: Cerebras AI Pricing and Performance - Oreate AI Blog","url":"https://www.oreateai.com/blog/unlocking-the-future-cerebras-ai-pricing-and-performance/2f88f1ce779145f8d338ef864b601d17"}]
+
+Based on the search results, here's what I found about Cerebras AI inference API pricing and free tier for developers in 2026:
+
+## Free Tier
+
+Cerebras's free tier includes Llama 3.3 70B, Qwen3 32B, Qwen3 235B, and OpenAI's open-source GPT-OSS 120B with 30 requests per minute and 1 million tokens per day. The free tier requires no credit card, and there is no waitlist.
+
+## Developer Tier Pricing
+
+The Developer Tier provides an API endpoint at competitive pricing, with Llama 3.1 8B and 70B models priced at 10 cents and 60 cents per million tokens, respectively. You can start building for as little as $10 with no contracts.
+
+## Specialized Developer Plans
+
+Cerebras offers a plan allowing up to 24 million tokens/day ($48/day worth of value) ideal for indie devs, simple agentic workflows, and weekend projects. They also offer a plan with up to 120 million tokens/day ($240/day worth of value) ideal for full-time development, IDE integrations, code refactoring, and multi-agent systems.
+
+## Key Features
+
+Cerebras runs inference on their wafer-scale engine, which they claim delivers 20x faster throughput than NVIDIA GPUs, making it particularly suitable for speed-critical applications and agentic workflows.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

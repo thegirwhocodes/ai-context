@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Alex Tamkin Anthropic researcher societal impacts
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:48 UTC
+========================================================================
+
+Search query: Alex Tamkin Anthropic researcher societal impacts
+
+----------------------------------------
+
+Web search results for query: "Alex Tamkin Anthropic researcher societal impacts"
+
+Links: [{"title":"Alex Tamkin","url":"https://www.alextamkin.com/"},{"title":"Alex Tamkin - Anthropic | LinkedIn","url":"https://www.linkedin.com/in/alextamkin/"},{"title":"Alex Tamkin: Which Economic Tasks are Performed with AI? — Stanford Digital Economy Lab","url":"https://digitaleconomy.stanford.edu/event/alex-tamkin/"},{"title":"Alex Tamkin: Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations - Stanford Digital Economy Lab","url":"https://digitaleconomy.stanford.edu/event/alex-tamkin-which-economic-tasks-are-performed-with-ai-evidence-from-millions-of-claude-conversations/"},{"title":"Alex Tamkin","url":"https://scholar.google.com/citations?user=7W8ustwAAAAJ&hl=en"},{"title":"Alex Tamkin | FAR.AI","url":"https://www.far.ai/about/people/alex-tamkin"},{"title":"Alex Tamkin's research works | Stanford University and other places","url":"https://www.researchgate.net/scientific-contributions/Alex-Tamkin-2174246110"},{"title":"Alex Tamkin | FAR.AI","url":"https://far.ai/author/alex-tamkin/"},{"title":"Alex Tamkin (@alextamkin.bsky.social)","url":"https://bsky.app/profile/alextamkin.bsky.social"},{"title":"AI and Jobs: Measuring Impact and Building New Assessment Tools | American Enterprise Institute - AEI","url":"https://www.aei.org/events/ai-and-jobs-measuring-impact-and-building-new-assessment-tools/"}]
+
+Based on the search results, here's what I found about Alex Tamkin and his work on societal impacts:
+
+## Background
+
+Alex Tamkin is a researcher at Anthropic. He completed his PhD in Computer Science at Stanford, advised by Noah Goodman, where he was an Open Philanthropy AI Fellow.
+
+## Research Focus
+
+He's interested in how we can understand and improve the real-world impacts of AI systems. His research spans several key areas:
+
+**Economic Impact Analysis**: Some of his recent projects include tracking the economic impacts of AI systems through the Anthropic Economic Index and several follow-up reports, and developing new interfaces for human-AI collaboration including Claude Artifacts.
+
+**Privacy-Preserving Usage Analysis**: Tamkin developed Clio (Claude insights and observations), a privacy-preserving platform that uses AI assistants themselves to analyze and surface aggregated usage patterns across millions of conversations, without the need for human reviewers to read raw conversations.
+
+**Task-Level AI Usage**: He analyzed over four million Claude.ai conversations through the lens of tasks and occupations in the U.S. Department of Labor's O*NET Database, and found that AI usage primarily concentrates in software development and writing tasks, which together account for nearly half of all total usage.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

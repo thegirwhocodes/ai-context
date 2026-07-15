@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS 18 Notes app record audio automatic transcript how it works exactly
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 03:54:40 UTC
+========================================================================
+
+Search query: iOS 18 Notes app record audio automatic transcript how it works exactly
+
+----------------------------------------
+
+Web search results for query: "iOS 18 Notes app record audio automatic transcript how it works exactly"
+
+Links: [{"title":"iOS 18: Recording Audio With Transcripts in Notes - MacRumors","url":"https://www.macrumors.com/how-to/ios-record-audio-transcribe-notes-app/"},{"title":"How to record and transcribe audio directly in iOS 18's Notes app","url":"https://appleinsider.com/inside/ios-18/tips/how-to-record-audio-and-create-transcripts-in-notes-in-ios-18"},{"title":"iOS 18: Recording Audio With Transcripts in Notes | MacRumors Forums","url":"https://forums.macrumors.com/threads/ios-18-recording-audio-with-transcripts-in-notes.2437017/"},{"title":"How to Record & Generate Live Transcriptions in Notes: iOS 18, iPadOS 18, macOS 15 - The Mac Observer","url":"https://www.macobserver.com/ios/record-generate-live-transcriptions-notes-ios-18-ipados-macos-15/"},{"title":"Record, summarize, and transcribe audio with Apple Notes on iOS 18","url":"https://appleinsider.com/articles/24/06/13/record-summarize-and-transcribe-audio-with-apple-notes-on-ios-18"},{"title":"Record and transcribe audio in Notes on iPhone - Apple Support","url":"https://support.apple.com/guide/iphone/record-and-transcribe-audio-iphbe11247b5/ios"},{"title":"How to record audio and get transcripts in Notes on iOS 18 | Popular Science","url":"https://www.popsci.com/diy/how-to-record-audio-make-transcripts-iphone/"},{"title":"How to record audio and create transcripts in Notes in iOS 18 - iOS Discussions on AppleInsider Forums","url":"https://forums.appleinsider.com/discussion/238906/how-to-record-audio-and-create-transcripts-in-notes-in-ios-18"},{"title":"How to use audio transcriptions in iOS 18 - 9to5Mac","url":"https://9to5mac.com/2024/08/01/audio-transcription-in-ios-18-how-to/"},{"title":"How to Record Audio and Create Transcripts in Notes in iOS 18 - AppleMagazine","url":"https://applemagazine.com/record-audio-transcripts-ios-18/"}]
+
+Based on the search results, here's how iOS 18 Notes app automatic audio transcription works:
+
+## How It Works
+
+As users record, the app automatically generates a real-time transcript, making it easier to review and search through recorded content. If you start recording while the transcription view is showing, you'll see the text update in real time as you talk.
+
+## The Process
+
+To access the feature:
+1. In the tools bar at the bottom of the screen, select the paperclip icon > Record Audio.
+2. To the left of the record button is a "word bubble" button with quote marks in it. Tapping that button will provide a real-time transcript of the audio.
+
+Alternatively, you can wait until the recording is done, and tap the Done button to the right of the record button to generate a transcript. The full transcript will then appear in a new window, with an audio block in gray and the first couple of lines of the transcript along with a "play" button.
+
+## Important Details
+
+The big change compared to the previous Voice Memos app is that Notes can now also provide a written transcript of what was said, if you are using an iPhone 12 or later. Additionally, it currently only supports English, but Apple will likely bring support for additional languages in a future update.
+
+Apple's Notes app handles everything on-device — meaning that no sensitive data is transmitted in the process.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

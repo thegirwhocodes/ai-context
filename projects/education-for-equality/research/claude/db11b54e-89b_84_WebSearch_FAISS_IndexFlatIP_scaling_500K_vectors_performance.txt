@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: FAISS IndexFlatIP scaling 500K vectors performance MacBook M1 latency
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:44:28 UTC
+========================================================================
+
+Search query: FAISS IndexFlatIP scaling 500K vectors performance MacBook M1 latency
+
+----------------------------------------
+
+Web search results for query: "FAISS IndexFlatIP scaling 500K vectors performance MacBook M1 latency"
+
+Links: [{"title":"Faiss runs very slowly on M1 Mac · Issue #2386 · facebookresearch/faiss","url":"https://github.com/facebookresearch/faiss/issues/2386"},{"title":"Measuring Average Latency with FAISS on Apple M1 | DataScienceTribe","url":"https://www.datasciencebyexample.com/2024/07/07/measure-average-latency-with-faiss-vector-store/"},{"title":"Performance issue in IndexFlatIP · Issue #4121 · facebookresearch/faiss","url":"https://github.com/facebookresearch/faiss/issues/4121"},{"title":"`faiss.IndexFlatIP` is 18x slower than `torch.mm` on CPU (conda-forge installation) · Issue #2499 · facebookresearch/faiss","url":"https://github.com/facebookresearch/faiss/issues/2499"},{"title":"Faiss Indexing For Large Datasets | Restackio","url":"https://www.restack.io/p/vector-database-answer-faiss-indexing-large-datasets-cat-ai"},{"title":"Facebook AI and the Index Factory | Pinecone","url":"https://www.pinecone.io/learn/series/faiss/composite-indexes/"},{"title":"Nearest Neighbor Indexes for Similarity Search | Pinecone","url":"https://www.pinecone.io/learn/series/faiss/vector-indexes/"},{"title":"Scaling Semantic Search with FAISS: Challenges and Solutions for Billion-Scale Datasets | by Devesh Bajaj | Medium","url":"https://medium.com/@deveshbajaj59/scaling-semantic-search-with-faiss-challenges-and-solutions-for-billion-scale-datasets-1cacb6f87f95"},{"title":"How to make Faiss run faster · facebookresearch/faiss Wiki","url":"https://github.com/facebookresearch/faiss/wiki/How-to-make-Faiss-run-faster"},{"title":"FAISS and Milvus Speed Benchmarking (Flat and HNSW) · milvus-io/milvus · Discussion #4939","url":"https://github.com/milvus-io/milvus/discussions/4939"}]
+
+Based on the search results, here are key findings about FAISS IndexFlatIP scaling with 500K vectors on MacBook M1:
+
+## Performance on M1 MacBook
+
+IndexFlatIP has been demonstrated to be slightly faster than IndexFlatL2 when using faiss-cpu on an M1 chip with vector dimensionality of 100. However, when running FAISS on a Mac with an M1 processor, users have achieved an average latency of around 7 milliseconds for 1000 searches.
+
+## Performance Limitations
+
+There are documented performance issues with IndexFlatIP on CPU-based systems. IndexFlatIP doesn't seem to use parallelization correctly, with custom flat implementations being 2x to 3x faster than IndexFlatIP. Additionally, on CPU, faiss.IndexFlatIP is ~18x slower than using PyTorch operations (torch.mm and torch.topk) when running on an index of 2M documents of dimension 768.
+
+## Scaling Considerations
+
+IndexFlatIP is a brute-force index that performs exhaustive searches using inner product and serves as a baseline, while it guarantees accuracy, it may not be the most efficient for large datasets due to its high computational cost. Flat indexes are 100% accurate but have completely unoptimized search-speeds, which fits smaller index use-cases or scenarios where search-time is irrelevant.
+
+For 500K vectors specifically, you may experience latency challenges with IndexFlatIP on M1, particularly if coming from GPU environments like Colab.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

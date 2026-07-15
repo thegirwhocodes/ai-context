@@ -1,0 +1,42 @@
+========================================================================
+AGENT RESEARCH: Cute commitment app UI research
+Session: a8c172f1-a7d4-4624-8ac2-b31c78a6f870
+Time: 2026-05-11 01:42:23 UTC
+========================================================================
+
+Research UI/UX references for a mobile commitment-device app called "Class on Time." I need design inspiration to copy.
+
+**The app:** Reads my calendar, alerts me when it's time to walk to class so I arrive 30 minutes early. If I'm late, it charges me $100 via Apple Pay / ACH. There's a Pokemon-Go-style cartoon 3D map (Mapbox Standard style with `lightPreset: dusk`, low-poly trees) with a sprite avatar of me walking. Visual taste: cute, child-like, playful — NOT adult-looking Uber/Apple-Maps vibe.
+
+**Five things to research, each ≤ 100 words:**
+
+1. **Commitment device apps** — Beeminder, StickK, Forfeit, Punish.app, Cold Turkey. How do they visually communicate "you committed money to this"? What's the screen that shows your stake on the line? Onboarding flow for the "if I fail, I lose $X" framing?
+
+2. **Cute sprite-on-map apps** — Pokemon Go, Pikmin Bloom, Monster Hunter Now, Wizards Unite (RIP), Niantic stuff broadly. How do they render the user as a character on a real map? Character customization? Idle animations while user is stationary?
+
+3. **Morning check-in / standup UIs** — Apps that ask "what are you doing today?" each morning. Habitica, Streaks, Productive, Way of Life, Sunsama. How do they present the day's commitments? Quick yes/no per item? Voice input variants if any?
+
+4. **Walking navigation UIs** — Apple Maps walking mode, Citymapper, Google Maps walking, NavTime, Komoot. How do they show ETA + countdown to "leave now"? Notification card design that fires when it's time to head out? Anything that uses a friendly mascot or pet-like avatar?
+
+5. **Voice-confirmation flows** — Apps where you confirm things by speaking aloud instead of tapping. Forfeit (UK accountability), Stickk variants, journaling apps like Stoic / Replika, kid-learning apps like Khan Academy Kids. How does the recording UI work? Big record button? Auto-stop? Show transcript after?
+
+For each: name 2-4 apps, describe the relevant screen in concrete UI terms (colors, fonts, layout, motion), and say what's worth stealing for Class on Time. Include direct screenshot/blog/video URLs you find.
+
+**Strict constraints on the output:**
+- Total response ≤ 800 words.
+- Use direct, opinionated language ("steal this," "skip this") — not academic surveys.
+- If you find something visually exceptional, note it explicitly.
+- Don't pad. Don't summarize the prompt back to me.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a65236054c62c5d96 (internal ID - do not mention to user. Use SendMessage with to: 'a65236054c62c5d96' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Class-on-Time/9a4ad3d3-5a05-48fc-9151-13ae8b0b40fb/tasks/a65236054c62c5d96.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

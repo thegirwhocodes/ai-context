@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cartesia.ai/pricing
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 08:38:39 UTC
+========================================================================
+
+URL: https://cartesia.ai/pricing
+Extraction prompt: Give me ALL pricing details. What are the tiers? How much per character or per second? What are the concurrent stream limits? Any free tier? Any nonprofit/education discounts? What's included in each plan?
+
+----------------------------------------
+
+I cannot provide the pricing details you've requested. The web page content provided consists almost entirely of CSS styling code, font definitions, and HTML structure markup. 
+
+The actual pricing information—such as tier names, per-character or per-second costs, concurrent stream limits, free tier availability, or nonprofit discounts—is not present in this document excerpt. To access Cartesia's pricing details, you would need to visit their pricing page directly or contact their sales team.
+
+If you can provide the actual text content from their pricing page (rather than the underlying code), I'd be happy to summarize the offerings for you.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

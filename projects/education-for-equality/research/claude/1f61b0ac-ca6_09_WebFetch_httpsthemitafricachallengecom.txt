@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://themitafricachallenge.com/
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:56:41 UTC
+========================================================================
+
+URL: https://themitafricachallenge.com/
+Extraction prompt: Extract ALL details - judging criteria, format, themes for 2026, what they're looking for, rules, timeline, mentor info, any details about the education track specifically.
+
+----------------------------------------
+
+# MIT Africa Business Challenge 2025 - Extracted Details
+
+## Available Information
+
+Based on the webpage content provided, here's what can be confirmed:
+
+**Event Details:**
+- **Dates:** February 28 – March 1, 2025
+- **Prize Pool:** $15,000 total
+- **Application Status:** "Apply now" button available
+
+**Key Features Mentioned:**
+The challenge offers "guidance from top entrepreneurs, investors, and experts from MIT's Martin Trust Center for Entrepreneurship," networking with professionals and investors, and platform exposure.
+
+**Background:**
+The initiative evolved from pitch competitions at the MIT Africa Innovate Conference (in its 14th year) and draws inspiration from MIT's 100K, Solve, and HackMIT competitions.
+
+**Application Pool:**
+Nearly 90 applications received from top-tier students across East Coast universities.
+
+## Information NOT Found
+
+The webpage does not contain:
+- Specific judging criteria
+- Detailed competition format/rules
+- 2026 themes or planning details
+- Specific mentor profiles
+- Educational track specifics
+- Complete timeline/deadlines
+- Eligibility requirements
+- Submission format guidelines
+
+**Recommendation:** Contact the organizers directly using the "contact now" link on the webpage for comprehensive details on judging, rules, and specialized tracks.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cold Turkey macOS Windows registry service kernel driver launchd how prevent pro
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:55 UTC
+========================================================================
+
+Search query: Cold Turkey macOS Windows registry service kernel driver launchd how prevent process kill
+
+----------------------------------------
+
+Web search results for query: "Cold Turkey macOS Windows registry service kernel driver launchd how prevent process kill"
+
+Links: [{"title":"How to Kill a Stubborn Process in MacOS: Fixing When kill -9 Isn’t Working","url":"https://www.w3tutorials.net/blog/how-to-kill-a-process-in-macos/"},{"title":"Kickstarting and tearing down with launchctl – The Eclectic Light Company","url":"https://eclecticlight.co/2019/08/27/kickstarting-and-tearing-down-with-launchctl/"}]
+
+Based on the search results, here's what I found relevant to your query:
+
+**macOS launchd Protection:**
+
+If a process is a background service managed by launchd, kill -9 may only terminate it temporarily because launchd will restart it. To stop it permanently, you should use launchctl instead.
+
+**Preventing Process Termination on macOS:**
+
+Critical system processes like kernel_task are protected and cannot be killed. Additionally, stubborn processes can be tied to kernel extensions (kexts) or modern system extensions (used in macOS 10.15+).
+
+**Kernel and System Protection:**
+
+launchd is second only to the kernel itself in importance to macOS and is responsible for launching services and other processes.
+
+The search results provide information about macOS process management and launchd, but don't specifically address Cold Turkey or Windows registry/service kernel driver aspects of your query. If you need more specific information about Cold Turkey's protection mechanisms or Windows kernel-level process protection, I'd recommend searching for those topics separately.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

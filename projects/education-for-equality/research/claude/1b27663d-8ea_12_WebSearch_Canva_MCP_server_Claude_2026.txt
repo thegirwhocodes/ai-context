@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Canva MCP server Claude 2026
+Session: 1b27663d-8ea5-4b35-8186-373ddb166724
+Time: 2026-04-15 22:21:21 UTC
+========================================================================
+
+Search query: Canva MCP server Claude 2026
+
+----------------------------------------
+
+Web search results for query: "Canva MCP server Claude 2026"
+
+Links: [{"title":"Connect AI assistants to Canva with the AI Connector - Canva Help Center","url":"https://www.canva.com/help/mcp-agent-setup/"},{"title":"Dev MCP server - Canva Apps SDK Documentation","url":"https://www.canva.dev/docs/apps/mcp-server/"},{"title":"Canva MCP Integration with Claude Code | Composio","url":"https://composio.dev/toolkits/canva/framework/claude-code"},{"title":"Create on-brand Canva designs directly inside Claude","url":"https://www.canva.com/newsroom/news/claude-ai-connector/"},{"title":"Harishgarg","url":"https://mcp.harishgarg.com/use/canva/mcp-server/with/claude-code"},{"title":"canva-mcp · PyPI","url":"https://pypi.org/project/canva-mcp/"},{"title":"Dev MCP server - Canva Connect APIs Documentation","url":"https://www.canva.dev/docs/connect/mcp-server/"},{"title":"Design smarter than ever with Canva’s AI Connector","url":"https://www.canva.com/ai-connector/"},{"title":"Connect Claude Code to tools via MCP - Claude Code Docs","url":"https://code.claude.com/docs/en/mcp"},{"title":"Actions you can take in AI assistants connected to Canva MCP - Canva Help Center","url":"https://www.canva.com/help/mcp-canva-usage/"}]
+
+Based on the search results, here's what I found about the Canva MCP server and Claude integration in 2026:
+
+## Overview
+The Canva Dev Model Context Protocol (MCP) server provides AI-powered development assistance for Canva apps and integrations. By connecting your preferred MCP client (such as Cursor, Claude Desktop, or other compatible tools) to canva.dev, you can access specialized tools and documentation to enhance your development workflow.
+
+## Key Features and Capabilities
+
+**AI Connector Integration:** You can connect AI assistants like Claude, ChatGPT, and Cursor to Canva. Once connected, your AI assistant can create designs with Canva AI, autofill templates, find existing designs, and export them as PDFs or images.
+
+**Recent Enhancement (January 2026):** Canva is expanding the Canva x Claude AI connector with on-brand design generation, making it easier for teams to create polished, brand-ready Canva designs directly inside an AI conversation. Starting today, our community can apply their Brand Kit when generating designs with Claude, ensuring AI-created presentations follow their brand colours, fonts, and voice help from the first draft.
+
+## Claude Code Support
+
+Cursor or Claude Code are recommended for active development because of their superior feedback mechanisms. Claude Code fully supports MCP integration. You get structured tool calling, message history handling, and model orchestration while Tool Router takes care of discovering and serving the right Canva tools.
+
+## Current Status
+MCP tools are currently only available in Agent mode.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

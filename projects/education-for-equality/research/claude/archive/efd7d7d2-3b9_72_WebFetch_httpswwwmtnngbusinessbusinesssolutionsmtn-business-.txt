@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.mtn.ng/business/businesssolutions/mtn-business-call-assist-faq/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 05:29:13 UTC
+========================================================================
+
+URL: https://www.mtn.ng/business/businesssolutions/mtn-business-call-assist-faq/
+Extraction prompt: How do you buy/register for an MTN 0800 toll-free number? What is the full process, requirements, pricing, and how long does it take? What is a Company Virtual Number? What are all the details about the service?
+
+----------------------------------------
+
+# MTN Call Assist: Toll-Free Numbers and Company Virtual Numbers
+
+Based on the FAQ provided, here's what I found:
+
+## Toll-Free Number Support
+
+The service does support toll-free numbers. According to the documentation: **"Yes, this is possible as long as the toll free number is a GSM number."**
+
+## Company Virtual Number (CVN)
+
+A Company Virtual Number is the central contact point for your business. The FAQ explains that **"This number will serve as the central switch number for the subscribing customer. When their customers call this number, the Call Assist prompt plays back and directs the caller to the department they desire to reach."**
+
+The CVN is automatically provided during registration.
+
+## Getting Started
+
+**The registration process involves:**
+- Placing an order online or through an Account Partner
+- Making payment (ATM card, airtime, or cheque)
+- Receiving login credentials and service details via email
+
+**Processing time:** Orders placed online with ATM cards or airtime are fulfilled immediately, with confirmation sent via email.
+
+## Note
+
+The document doesn't provide specific pricing for toll-free numbers separately, only general Call Assist subscription costs. For detailed pricing on 0800 toll-free numbers specifically, you'd need to contact MTN directly at the support channels listed in the FAQ.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,41 @@
+========================================================================
+AGENT RESEARCH: Research child-AI-tutor safety guardrails
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-19 17:08:32 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed) on safety guardrails specifically for a CHILD-FACING AI voice tutor. Context: "Sabi" is a voice AI tutor for Nigerian children aged 8–14, delivered over phone calls, running on Claude Haiku. It teaches foundational literacy/numeracy. I need concrete, implementable guardrail requirements and patterns.
+
+Cover:
+1. **Child-safety requirements & regulation:** COPPA (US), GDPR-K / age-appropriate design code (UK ICO), Nigeria NDPA 2023 and child data, what data you must NOT collect from minors, and child-safeguarding standards (IASC Six Core Principles, keeping-children-safe). What an AI talking to kids must and must not do.
+2. **The hard cases an AI tutor MUST handle correctly — with the recommended response pattern for each:**
+   - A child discloses abuse, neglect, or danger ("my uncle hurts me")
+   - A child expresses self-harm or suicidal ideation
+   - A child is in immediate danger / emergency
+   - Grooming-style manipulation or attempts to get personal info / meet up
+   - Sexual content, violence, hate, profanity from or to the child
+   - A child asks for medical, legal, or dangerous-activity advice
+   - Off-topic / non-educational requests (keep it a tutor, not a general chatbot)
+   What does the literature/industry recommend for crisis handling, mandatory-reporting-style escalation, and "stay in role" deflection — for a tool that has NO human in the loop in real time?
+3. **Age-appropriateness & tone:** reading level, no scary/explicit content, positive/non-judgmental ("never say wrong"), cultural sensitivity (Nigerian context), avoiding bias.
+4. **What other child-edtech AI products do:** Khan Academy Khanmigo guardrails, Synthesis Tutor, Google "Read Along"/Bolo, Amira Learning, Duolingo, any documented AI-tutor safety designs; lessons from failures (e.g. Character.AI teen-safety lawsuits, Snapchat My AI). What guardrails they ship.
+5. **A concrete RED-TEAM / STRESS-TEST list** for a child voice tutor: 30–50 specific adversarial prompts/scenarios across categories (jailbreak, system-prompt extraction, off-topic, crisis disclosure, inappropriate content, PII extraction, prompt injection, bias, hallucinated facts in lessons) that I should test the guardrails against, with the expected safe behavior for each.
+
+Return AT LEAST 90% of the substance with specific requirements, response patterns, named products, and source URLs. Organize under the 5 headings. Completeness over brevity — I will build directly from this.
+
+----------------------------------------
+
+<persisted-output>
+Output too large (50.5KB). Full output saved to: /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/3b8ddd08-9e23-4598-83dd-60902b9107f3/tool-results/toolu_01QUF278z4qRPGEdLc4zgJx7.json
+
+Preview (first 2KB):
+[
+  {
+    "type": "text",
+    "text": "I now have comprehensive, implementable material across all five areas, including directly-applicable detail (Anthropic's minor-serving guidance, Amira's closed-loop pattern, the KIDBench 4Cs taxonomy and 6-point rubric, FTC crisis patterns, and Nigeria crisis lines). I have enough to write a complete, build-ready report. Let me compile it.\n\n---\n\n# Safety Guardrails for Sabi — a Child-Facing AI Voice Tutor on Claude Haiku\n\nResearch compiled June 2026. Organized under your 5 headings. Where a requirement is directly load-bearing for Sabi (phone-delivered, no real-time human, Claude Haiku, Nigerian kids 8–14), I've flagged it. Sources are listed inline and consolidated at the end.\n\nA framing note up front: the single most important architectural decision the literature points to is that **Sabi is a *tutor*, not a *companion***. Every lawsuit and regulatory action below (Character.AI, Snapchat My AI, the FTC inquiry, California SB 243) targets *open-ended companion chat*. A tightly-scoped tutor that stays in role and refuses to be a general chatbot sidesteps the entire highest-risk category. Design for that.\n\n---\n\n## 1. Child-Safety Requirements & Regulation\n\n### COPPA (US) — the baseline even if you launch in Nigeria\n\nCOPPA governs operators that collect personal info from children under 13. The FTC's amended COPPA Rule took effect **June 23, 2025**, and it matters specifically for AI:\n\n- **Voiceprints are now \"personal information.\"** The amended Rule expands the definition of personal information to include **biometric identifiers — voiceprints and facial templates**. For a *voice* tutor this is the headline: a child's voice recording can itself be regulated biometric data. ([Loeb & Loeb](https://www.loeb.com/en/insights/publications/2025/05/childrens-online-privacy-in-2025-the-amended-coppa-rule), [State of Surveillance](https://stateofsurveillance.org/news/coppa-2026-new-rules-children-privacy-biometric-da
+...
+</persisted-output>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

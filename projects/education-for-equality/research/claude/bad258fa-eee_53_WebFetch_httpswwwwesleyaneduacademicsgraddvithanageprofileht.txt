@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/academics/grad/dvithanage/profile.html
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:54:47 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/academics/grad/dvithanage/profile.html
+Extraction prompt: Extract everything about Denuwan Vithanage's academic profile: research focus, advisor, lab, year in PhD program, prior education, publications, awards, hometown, anything personal about him.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://www.wesleyan.edu/academics/grad/dvithanage/profile.html
+Redirect URL: http://www.wesleyan.edu/about/directory/profile.html?id=dvithanage
+Status: 301 Moved Permanently
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "http://www.wesleyan.edu/about/directory/profile.html?id=dvithanage"
+- prompt: "Extract everything about Denuwan Vithanage's academic profile: research focus, advisor, lab, year in PhD program, prior education, publications, awards, hometown, anything personal about him."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

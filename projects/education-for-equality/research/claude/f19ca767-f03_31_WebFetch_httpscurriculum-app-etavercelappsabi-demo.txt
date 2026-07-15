@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://curriculum-app-eta.vercel.app/sabi-demo
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 03:40:48 UTC
+========================================================================
+
+URL: https://curriculum-app-eta.vercel.app/sabi-demo
+Extraction prompt: Does this page mention Bakame AI anywhere? Look for 'Bakame' or 'created by' in the text.
+
+----------------------------------------
+
+No, this page does not mention Bakame AI anywhere. The content describes "Education for Equality," a free online learning platform for underprivileged children in Nigeria, with no reference to Bakame AI or creator attribution beyond the organization itself.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

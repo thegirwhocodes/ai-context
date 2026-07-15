@@ -1,0 +1,492 @@
+========================================================================
+AGENT RESEARCH: Research AI video analysis tools
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-18 05:15:58 UTC
+========================================================================
+
+Task given to agent: Research the current state (2025-2026) of AI tools that can WATCH/ANALYZE video content and provide frame-level information back to another AI or automation pipeline. I need tools that could:
+
+1. **Watch a video and describe what's happening frame by frame** - scene detection, speaker identification, facial expressions, actions, pauses in speech, silence detection
+2. **Identify edit points** - where to cut pauses, dead air, "ums", repeated takes
+3. **Analyze audio + video together** - sync capti
+
+----------------------------------------
+
+Now I have comprehensive data on all the requested tools. Here are the raw, detailed findings:
+
+---
+
+# AI Video Analysis & Automation Tools -- Raw Research Findings (2025-2026)
+
+---
+
+## 1. GOOGLE GEMINI VIDEO UNDERSTANDING API
+
+**What it does:** The single most capable tool for direct video understanding. Gemini processes video natively -- you upload the video file directly and it analyzes both the visual frames AND the audio track simultaneously. It samples at 1 FPS by default (customizable), processes audio at 1Kbps single channel, and can handle videos up to 1 hour (1M context) or 3 hours at low resolution (or 2 hours with 2M context models). It performs speaker identification/diarization with second-level timestamps, facial expression and emotion detection, scene description, action detection, object tracking, and can connect all of this to a precise timeline.
+
+**Gemini 2.5 Pro specifically:** State-of-the-art on video understanding benchmarks, surpassing GPT-4.1. First natively multimodal model that uses audio-visual information seamlessly with code. Can generate transcripts with speaker diarization and second-level timestamps.
+
+**Gemini 3 (Preview):** Introduces `media_resolution` parameter for granular control over vision processing -- higher resolution reads fine text and small details but costs more tokens.
+
+**API availability:** Fully available via Google AI Studio (Gemini Developer API) and Vertex AI. Upload via the File API for videos > 20MB or > 1 minute. Files expire after 48 hours.
+
+**Token math for video:**
+- Default resolution: ~258 tokens/frame, ~300 tokens/second of video
+- Low resolution: ~66 tokens/frame, ~100 tokens/second of video
+- A 10-minute video at default = ~180,000 tokens input
+
+**Pricing (per 1M tokens, input/output):**
+- Gemini 2.0 Flash: $0.10 / $0.40
+- Gemini 2.5 Flash: $0.30 / $2.50
+- Gemini 3 Flash Preview: $0.50 / $3.00
+- Gemini 2.5 Pro: $1.25 / $10.00
+- Gemini 3 Pro Preview: $2.00 / $12.00
+- Batch API: 50% discount on all models
+- Context caching: up to 90% savings
+
+**Cost example:** A 10-minute video (~180K tokens) with Gemini 2.5 Flash = ~$0.054 input + output cost. With 2.5 Pro = ~$0.225 input.
+
+**DaVinci Resolve integration:** You would call the Gemini API from a Python script, get structured JSON back (timestamps, scene descriptions, speaker IDs, edit points), then use that data to generate an EDL/XML or drive DaVinci Resolve's scripting API directly. This is the most promising pipeline for frame-level video analysis feeding into Resolve.
+
+Sources:
+- [Gemini Video Understanding Docs](https://ai.google.dev/gemini-api/docs/video-understanding)
+- [Gemini 2.5 Video Understanding Blog](https://developers.googleblog.com/en/gemini-2-5-video-understanding/)
+- [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing)
+- [Vertex AI Video Understanding](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/video-understanding)
+- [Video Analysis Pipeline with Vertex AI](https://oneuptime.com/blog/post/2026-02-17-how-to-build-a-video-content-analysis-pipeline-with-vertex-ai-video-intelligence-and-gemini/view)
+
+---
+
+## 2. GOOGLE VIDEO INTELLIGENCE API (Separate from Gemini)
+
+**What it does:** A dedicated ML API specifically for shot change detection, label detection (objects, activities, locations), object tracking, and text detection in video. Not a generative model -- it returns structured annotations.
+
+**Key feature for your use case:** SHOT_CHANGE_DETECTION returns frame-accurate timecodes of every cut/transition in a video. This is purpose-built for identifying edit points.
+
+**API availability:** Fully available via Google Cloud. REST API and client libraries in Python, Java, Node.js, Go.
+
+**Pricing:**
+- First 1,000 minutes/month FREE
+- Label detection: $0.10/minute beyond free tier
+- Shot change detection: FREE when used with label detection
+- Object tracking: $0.15/minute
+
+**DaVinci Resolve integration:** Returns JSON with start/end timestamps for each shot. Trivially converted to EDL or fed into Resolve's Python scripting API.
+
+Sources:
+- [Video Intelligence Pricing](https://cloud.google.com/video-intelligence/pricing)
+- [Shot Change Detection Docs](https://docs.cloud.google.com/video-intelligence/docs/feature-shot-change)
+
+---
+
+## 3. OPENAI GPT-4o / GPT-4.1 VIDEO ANALYSIS
+
+**What it does:** GPT-4o and GPT-4.1-mini can analyze video by processing extracted frames (NOT native video input). You must extract frames yourself (2-4 FPS recommended), send them as images along with a transcript. GPT-4.1-mini's 1M token context window can hold a large number of frames for a full video.
+
+**Key limitation:** No native video processing. No audio analysis in the vision pipeline -- you must transcribe audio separately (e.g., with Whisper) and send as text alongside frames. Frame sampling loses motion dynamics.
+
+**What it's good for:** Scene description, visual content classification, identifying on-screen text, analyzing compositions. Research shows 0.5 FPS sampling with max 30 frames works for classification tasks.
+
+**API availability:** Fully available. Send images as base64 or URLs in the chat completions API.
+
+**Pricing:** Standard GPT-4o/4.1 token pricing. Image tokens vary by resolution (detail: low = 85 tokens, detail: high = up to 1105 tokens per 512x512 tile).
+
+**DaVinci Resolve integration:** Same pattern as Gemini -- extract frames with ffmpeg, send to API, get structured analysis back, generate EDL/timeline data. More manual pipeline setup required than Gemini since you handle frame extraction yourself.
+
+Sources:
+- [OpenAI Cookbook: Video Understanding](https://cookbook.openai.com/examples/gpt_with_vision_for_video_understanding)
+- [Azure Video Analysis with GPT-4o](https://github.com/Azure-Samples/video-analysis-with-gpt-4o)
+
+---
+
+## 4. CLAUDE (ANTHROPIC) VISION -- VIDEO ANALYSIS
+
+**What it does:** Claude has NO native video or audio input. It processes images only (up to 100 images per API request). For video analysis, you must extract frames and send them as individual images. No audio processing at all.
+
+**Claude Code's Video Skill:** There is a Claude Code skill that automates the frame extraction + analysis pipeline. It uses a background processing hook that extracts frames and parses transcripts, then feeds them to Claude for analysis. This is a wrapper, not native capability.
+
+**Key limitation:** The most limited of the three major LLMs for video work. No audio, no native video, requires external frame extraction. Best used as a reasoning/analysis layer on top of data extracted by other tools.
+
+**DaVinci Resolve integration:** Could serve as the "brain" that receives structured data from other analysis tools (Whisper transcripts, PySceneDetect cut lists, Gemini descriptions) and makes editing decisions, outputting commands for Resolve's scripting API.
+
+Sources:
+- [Claude Vision Docs](https://platform.claude.com/docs/en/build-with-claude/vision)
+- [Video Analyzer Claude Code Skill](https://mcpmarket.com/tools/skills/video-analyzer)
+
+---
+
+## 5. TWELVE LABS VIDEO UNDERSTANDING API
+
+**What it does:** Purpose-built video understanding platform with two foundation models:
+- **Marengo** (embeddings): Converts video into searchable vector representations across speech, text, audio, and visuals simultaneously. Enables natural language search across video content ("find the moment where the speaker raises their hand").
+- **Pegasus** (generative): Generates text descriptions of video content, understands spatial relationships and temporal events, creates summaries and custom reports.
+
+**Key capabilities:** Natural language video search, scene-level understanding, spatial relationship detection, temporal event narration, image-to-video search, dynamic video-to-text generation.
+
+**API availability:** Fully self-serve REST API. Also available via Amazon Bedrock. Models being upgraded -- Marengo 2.7 auto-reindexing to Marengo 3.0 in mid-March 2026.
+
+**Pricing:**
+- Free tier: 600 minutes of video indexing
+- Developer plan: Pay-as-you-go starting at $0.033/minute for indexing
+- Infrastructure fee applies for embedding storage and search
+
+**DaVinci Resolve integration:** You index a video, then query it via API to find specific moments, get timestamps and descriptions. Output can be converted to EDL/timeline markers. The search capability is unique -- no other tool lets you say "find where the speaker looks confused" and get back precise timestamps.
+
+Sources:
+- [Twelve Labs Platform](https://www.twelvelabs.io/)
+- [Twelve Labs Pricing](https://www.twelvelabs.io/pricing)
+- [Twelve Labs + Frame.io Integration](https://www.twelvelabs.io/blog/twelve-labs-and-frame-io)
+- [Platform Overview Docs](https://docs.twelvelabs.io/docs/resources/platform-overview)
+
+---
+
+## 6. RUNWAY ML
+
+**What it does:** Primarily a video GENERATION platform (Gen-4, Gen-4.5), not video analysis. Their API is focused on generating video from text/images, not analyzing existing video.
+
+**Aleph (July 2025):** In-video editing system that understands video context and spatial relationships, enabling edits through prompts. But this is for generated/edited video, not analysis of raw footage.
+
+**API availability:** API available for video generation. No documented video analysis/scene detection API endpoints.
+
+**DaVinci Resolve integration:** Not directly relevant for analysis pipelines. Could be used for generating B-roll or fill content that gets imported into Resolve, but doesn't help with watching/analyzing existing video.
+
+Sources:
+- [Runway API Docs](https://docs.dev.runwayml.com/)
+- [Runway Gen-4.5](https://runwayml.com/research/introducing-runway-gen-4.5)
+
+---
+
+## 7. DESCRIPT AI EDITING ENGINE
+
+**What it does:** Text-based video editing with extensive AI automation. Key capabilities:
+- Transcription with word-level timing
+- Automatic filler word removal ("um", "uh", "like", "you know")
+- Silence removal (Descript 3.7+)
+- Studio Sound (AI audio enhancement)
+- Voice cloning (AI Speakers / Regenerate)
+- Underlord AI agent: executes multi-step editing tasks from natural language
+- "Find Good Clips" AI for identifying viral-worthy segments
+- Batch editing (20 videos at once)
+- Video generation via Veo 3.1 and Sora 2
+
+**API availability:** API access available on request (not fully public/self-serve). Zapier and Make integrations available for workflow automation. V50 (late 2025) added enterprise-grade API automation.
+
+**Critical for your pipeline:** Descript exports timelines to DaVinci Resolve (also Premiere Pro and FCP). This makes it a viable rough-cut/assembly tool that feeds directly into Resolve.
+
+**Pricing:** Subscription-based. Free tier available. Paid plans from ~$24/month (Pro) to enterprise pricing. API access requires contacting sales.
+
+Sources:
+- [Descript Guide 2026](https://aitoolsdevpro.com/ai-tools/descript-guide/)
+- [Descript Features](https://www.pippit.ai/resource/descript-ai)
+- [Descript Pricing](https://meetgeek.ai/blog/descript-pricing)
+
+---
+
+## 8. CAPCUT AI EDITING
+
+**What it does:** Powerful consumer-facing AI editing with auto captions, text-to-speech, AI avatars, script-to-video, Long-Video-to-Shorts auto-clipping, advanced motion tracking. Commerce Pro tier integrates with Shopify/TikTok Shop.
+
+**API availability:** NO PUBLIC API as of March 2026. The "Open Platform" only allows building plugins that run inside the CapCut editor -- no server-side endpoints. You cannot programmatically create videos or integrate CapCut into automated pipelines.
+
+**DaVinci Resolve integration:** None. No export to professional NLE formats, no API, no automation pathway.
+
+Sources:
+- [CapCut API Status 2026](https://samautomation.work/capcut-api/)
+- [CapCut Review 2026](https://max-productive.ai/ai-tools/capcut/)
+
+---
+
+## 9. WHISPERX (Whisper + Forced Alignment)
+
+**What it does:** Extends OpenAI's Whisper with precise word-level timestamps via forced alignment using Wav2Vec2.0 phoneme models. Key capabilities:
+- Word-level timestamps with sub-50ms accuracy via CTC-based forced alignment
+- Speaker diarization (who is speaking when)
+- Batch inference for faster processing
+- Word Error Rate < 5%, Diarization Error Rate ~8%
+- Multi-language support
+
+**How it works:** Whisper transcribes in parallel, then WhisperX applies Dynamic Time Warping on Wav2Vec2.0 phoneme recognition to produce precise per-word timestamps.
+
+**API availability:** Open source (GitHub: m-bain/whisperX). Run locally or on your own infrastructure. No hosted API -- you self-host.
+
+**DaVinci Resolve integration:** Output word-level timestamps as JSON/SRT. These timestamps are precise enough for word-by-word animated captions. Can be used to generate EDLs marking silence gaps, filler words, or specific spoken phrases. Feed directly into Resolve's scripting API to place subtitle clips on the timeline.
+
+Sources:
+- [WhisperX GitHub](https://github.com/m-bain/whisperX)
+- [WhisperX Paper](https://www.isca-archive.org/interspeech_2023/bain23_interspeech.pdf)
+- [WhisperX Pipeline Tutorial](https://www.marktechpost.com/2025/10/02/how-to-build-an-advanced-voice-ai-pipeline-with-whisperx-for-transcription-alignment-analysis-and-export/)
+
+---
+
+## 10. CRISPERWHISPER (Verbatim Transcription + Filler Detection)
+
+**What it does:** A Whisper variant specifically designed for VERBATIM transcription -- it transcribes every word exactly as spoken, INCLUDING filler words. Key differentiator: it explicitly detects and labels "uh" vs "um" with precise timestamps, and detects pauses.
+
+**Technical approach:** Uses Dynamic Time Warping on Whisper cross-attention scores for word-level timestamps, plus a retokenization process for consistent pause detection. Specialized AttentionLoss feature improves timestamp accuracy.
+
+**Why this matters for your use case:** This is the best tool for detecting edit points in spoken content. It gives you precise timestamps for every "um", "uh", pause, and hesitation -- exactly the data you need to auto-remove dead air and filler words.
+
+**API availability:** Open source (GitHub: nyrahealth/CrisperWhisper). Self-hosted only.
+
+**DaVinci Resolve integration:** Output JSON with word-level timestamps including filler markers. Write a script that converts filler word timestamps into cut points, generates an EDL, and imports into Resolve. Or use Resolve's scripting API to directly place cuts.
+
+Sources:
+- [CrisperWhisper GitHub](https://github.com/nyrahealth/CrisperWhisper)
+- [CrisperWhisper Paper](https://arxiv.org/abs/2408.16589)
+
+---
+
+## 11. PYSCENEDETECT
+
+**What it does:** Open-source Python library and CLI for detecting scene boundaries/shot changes in video. Detection methods:
+- **detect-adaptive:** Uses HSL colorspace diffs with rolling average, two-pass algorithm. Best for reducing false positives from camera movement.
+- **detect-content:** Fast cuts based on frame content changes.
+- **detect-threshold:** Fades in/out detection.
+
+**Output formats:**
+- CMX 3600 EDL via `save-edl` command (directly compatible with DaVinci Resolve)
+- CSV with HH:MM:SS.nnn timestamps
+- Can split video into individual scene clips automatically
+
+**API availability:** Open source, pip installable (`pip install scenedetect`). Python library API for programmatic use. CLI for quick analysis.
+
+**DaVinci Resolve integration:** DIRECT -- exports CMX 3600 EDL which Resolve imports natively via File > Import AAF, EDL, XML. Also generates timestamps that can be used with Resolve's Python scripting API.
+
+Sources:
+- [PySceneDetect Home](https://www.scenedetect.com/)
+- [PySceneDetect GitHub](https://github.com/Breakthrough/PySceneDetect)
+- [PySceneDetect CLI Docs](https://www.scenedetect.com/docs/latest/cli.html)
+
+---
+
+## 12. FFMPEG SILENCE DETECTION PIPELINE
+
+**What it does:** FFmpeg's built-in `silencedetect` and `silenceremove` audio filters detect and remove silence from video/audio. The `silencedetect` filter outputs timestamps of silence periods, which can be processed by scripts.
+
+**Key tools in the ecosystem:**
+- `ffmpeg -af silencedetect=noise=-30dB:d=0.5` -- detects silence below -30dB lasting > 0.5 seconds
+- `silenceremove` filter -- removes silence in-stream
+- Multiple open-source wrappers: silencecut-ffmpeg, silence-speedup, Remsi
+
+**Limitation:** Requires manual threshold tuning for noise floor. Different environments/microphones need different settings. Not "intelligent" -- purely amplitude-based, doesn't understand speech vs. intentional pauses.
+
+**API availability:** FFmpeg is open source. Rendi (docs.rendi.dev) offers a hosted FFmpeg API with silence detection/removal as a service.
+
+**DaVinci Resolve integration:** ffmpeg outputs silence timestamps as text. Parse with a script, generate EDL with cuts at silence boundaries, import into Resolve. Or use Resolve's scripting API to place cuts directly.
+
+Sources:
+- [FFmpeg + Python Silence Trim](https://dev.to/dak425/automatically-trim-silence-from-video-with-ffmpeg-and-python-2kol)
+- [Rendi FFmpeg API - Silence Detection](https://docs.rendi.dev/silence-detection-removal)
+- [Vivek Haldar - Dead Air Removal](https://vivekhaldar.com/articles/automatically-edit-out-silence-dead-air-from-videos/)
+- [silencecut-ffmpeg GitHub](https://github.com/beenotung/silencecut-ffmpeg)
+
+---
+
+## 13. AUBIO & LIBROSA (Beat/Onset Detection)
+
+**Aubio:** C library (with Python bindings) for extracting musical meaning from audio -- tempo detection, beat tracking, pitch detection, onset detection. Optimized for speed and real-time processing. Limitation: struggles with MP3 format accuracy.
+
+**Librosa:** Python library for music information retrieval. `librosa.beat.beat_track()` provides dynamic programming beat tracking. `librosa.onset.onset_detect()` identifies transient events (note attacks, beat drops). Handles MP3, OGG, FLAC, M4A formats.
+
+**For your use case:** These detect beat drops in music and vocal onsets -- critical for timing zoom punches and caption emphasis to musical hits. Feed beat timestamps into your caption animation system to sync visual emphasis with audio energy.
+
+**API availability:** Both open source. Aubio: pip install aubio. Librosa: pip install librosa.
+
+**DaVinci Resolve integration:** Extract beat/onset timestamps, convert to timeline markers or cut points, feed into Resolve via scripting API or EDL.
+
+Sources:
+- [Aubio GitHub](https://github.com/aubio/aubio)
+- [Librosa Beat Track Docs](https://librosa.org/doc/main/generated/librosa.beat.beat_track.html)
+
+---
+
+## 14. SUBMAGIC (Word-by-Word Animated Captions API)
+
+**What it does:** The reference implementation for "viral-style" captions. Generates animated word-by-word highlighted captions with emoji integration, Magic Zooms (automated zoom effects on emphasis), B-roll insertion, transitions, background music, hook clips, and subtitles -- all in one API call.
+
+**API availability:** Launched July 2025. Available on Business plan only ($69/month or $41/month annually). Includes 100 API minutes/month. Max 30-minute video per project. REST API. Integrates with Zapier, Make, n8n, Google Drive for no-code automation.
+
+**DaVinci Resolve integration:** Submagic processes and renders the final video with captions baked in. It does NOT output edit data (EDL/XML/timestamps) for you to recreate in Resolve. You'd use Submagic for the final captioned output, not as an analysis tool feeding Resolve. However, you could use its approach as a reference and build your own system using WhisperX timestamps + Resolve's Fusion page for word-by-word caption animations.
+
+Sources:
+- [Submagic API](https://www.submagic.co/api)
+- [Submagic Pricing](https://www.submagic.co/pricing)
+- [Submagic API How-To](https://care.submagic.co/en/article/how-to-use-submagics-api-jbyav2/)
+
+---
+
+## 15. ZAPCAP (Alternative Captions API)
+
+**What it does:** Similar to Submagic -- automated AI captions with styling. Uses OpenAI Whisper for transcription (50+ languages). API-first design.
+
+**API availability:** Self-serve API on Pro ($20/month) and Agency+ ($40/month) plans. Usage-based: $0.10/minute. Approximately 7x cheaper than Submagic per minute.
+
+**DaVinci Resolve integration:** Same limitation as Submagic -- renders final video, doesn't export edit data to Resolve.
+
+Sources:
+- [ZapCap API](https://zapcap.ai/api/)
+- [ZapCap Pricing](https://zapcap.ai/pricing/)
+- [ZapCap vs Submagic](https://zapcap.ai/blog/submagic-api/)
+
+---
+
+## 16. OPUS CLIP
+
+**What it does:** AI-powered long-to-short video repurposing. Identifies viral-worthy moments, generates clips with captions and hooks. Virality scoring algorithm.
+
+**API availability:** Requires a sales call before API access. NOT self-serve. Enterprise-focused.
+
+**DaVinci Resolve integration:** No documented export to NLE formats or EDL output. Designed as an end-to-end solution, not a pipeline component.
+
+Sources:
+- [Opus Clip vs Vizard Comparison](https://vizard.ai/alternatives/opus)
+
+---
+
+## 17. VIZARD AI
+
+**What it does:** AI video clipping platform. Auto-detects engaging moments, generates clips with captions, supports 30+ languages, multi-platform aspect ratio optimization. Speaker boundary detection is notably superior to Opus Clip (cleaner entry/exit points, better handling of fast speaker exchanges).
+
+**API availability:** Fully self-serve API included with all paid plans. No separate API subscription. Supports upload from URLs, YouTube, Google Drive, Vimeo, StreamYard. Free plan: 60 credits/month. Creator: $14.50/month. Business: $19.50/month.
+
+**DaVinci Resolve integration:** Not documented. Designed as end-to-end rendering, not a data source for NLE pipelines.
+
+Sources:
+- [Vizard API](https://vizard.ai/api)
+- [Vizard API Docs](https://docs.vizard.ai/docs/introduction)
+- [Vizard Pricing](https://vizard.ai/pricing)
+
+---
+
+## 18. REAP VIDEO
+
+**What it does:** AI video repurposing with full Automation API. Clipping, captions (98+ languages), reframing to multiple aspect ratios, AI dubbing (80+ languages), scheduling.
+
+**API availability:** Fully documented Automation API. Programmatic uploads, project creation, clip generation, captions, dubbing, reframes via REST endpoints. Free plan: 60 credits/month.
+
+**DaVinci Resolve integration:** Not documented for EDL/XML export. But the Automation API could potentially be used as a preprocessing step before manual Resolve import.
+
+Sources:
+- [Reap Video](https://www.reap.video/pricing)
+- [Reap Automation API](https://www.reap.video/blog/top-ai-clipping-tools-in-2026)
+
+---
+
+## 19. CLEANVOICE AI (Podcast Audio Cleanup API)
+
+**What it does:** Removes silence, filler sounds ("um", "uh"), mouth sounds, stuttering, coughs from audio/video. Multi-language filler detection. Single API call returns cleaned audio + transcription + summaries + timestamps.
+
+**API availability:** Full REST API with SDK. Developer-friendly onboarding (API key from dashboard, sample code provided). Pricing: Free trial (30 min), Pay-as-you-go ($11/5 hours), Subscription ($11/month for 10 hours, up to $90/month for 100 hours). Credits valid 2 years.
+
+**DaVinci Resolve integration:** Returns cleaned audio file + timestamps. You could use the timestamps to generate an EDL marking where cuts were made, then apply the same edit in Resolve to maintain video sync. Or use the cleaned audio as a replacement track in Resolve.
+
+Sources:
+- [Cleanvoice API Docs](https://docs.cleanvoice.ai/)
+- [Cleanvoice Pricing](https://cleanvoice.ai/pricing/)
+- [Cleanvoice Audio Editing API](https://cleanvoice.ai/audio-editing-api/)
+
+---
+
+## 20. TIMEBOLT (Silence & Filler Removal)
+
+**What it does:** Waveform-based silence detection and jump cut automation. Removes silence with 0.01-second precision. AI-powered UMCHECK removes filler words. Processes locally (no cloud upload). Can jump-cut an hour of video in 13 seconds.
+
+**API availability:** No documented public API. However, exports edits as .json files and supports export to Premiere, Final Cut Pro, and DaVinci Resolve.
+
+**DaVinci Resolve integration:** DIRECT -- TimeBolt can export edit data directly to DaVinci Resolve format. This is one of the few tools with explicit Resolve export support.
+
+Sources:
+- [TimeBolt](https://www.timebolt.io/)
+- [TimeBolt Pricing](https://www.timebolt.io/pricing)
+
+---
+
+## 21. AUPHONIC (Audio Post-Production API)
+
+**What it does:** Automatic audio post-production including silence/filler cutting, leveling, noise reduction. Cuts "ah", "uhm", "mh" in multiple languages.
+
+**API availability:** Full REST API + Zapier integration for workflow automation.
+
+**DaVinci Resolve integration:** Processes and returns cleaned audio. Could be used as an audio preprocessing step before Resolve import.
+
+Sources:
+- [Auphonic](https://auphonic.com/)
+
+---
+
+## 22. MCP SERVERS FOR DAVINCI RESOLVE
+
+Three major MCP server implementations exist:
+
+**samuelgursky/davinci-resolve-mcp:** MCP server providing tools for video editing, color grading, and media management in Resolve. One of the most popular implementations.
+
+**apvlv/davinci-resolve-mcp:** MCP server for interacting with DaVinci Resolve AND Fusion (the compositing/effects engine).
+
+**jenkinsm13/resolve-mcp:** 215+ tools covering the complete DaVinci Resolve Scripting API v20.3. Control every aspect of Resolve from Claude, ChatGPT, or any MCP-compatible AI assistant. This is the most comprehensive.
+
+**video-creator/ffmpeg-mcp:** MCP server wrapping ffmpeg for video editing via AI dialogue.
+
+**These are directly relevant to your pipeline** -- they allow an AI assistant to directly manipulate DaVinci Resolve projects, place cuts, add effects, manage timelines, and execute complex editing operations.
+
+Sources:
+- [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp)
+- [apvlv/davinci-resolve-mcp](https://github.com/apvlv/davinci-resolve-mcp)
+- [jenkinsm13 resolve-mcp on Lobehub](https://lobehub.com/mcp/jenkinsm13-resolve-mcp)
+
+---
+
+## 23. OPENTIMELINEIO (OTIO)
+
+**What it does:** Open-source API and interchange format for editorial timeline information, maintained by the Academy Software Foundation. A modern EDL replacement with a full Python API for reading, writing, and manipulating editorial data.
+
+**Format support:** Reads/writes Final Cut Pro XML, AAF, CMX 3600 EDL, FCPXML, and its own native .otio format. Plugin system for additional format adapters.
+
+**Why it matters:** This is the glue layer between AI analysis tools and DaVinci Resolve. Instead of manually generating EDL strings, you can programmatically build a timeline in OTIO (with clips, cuts, transitions, markers) and export to whatever format Resolve needs.
+
+**API availability:** Open source, pip installable (`pip install opentimelineio`). Python and C++ APIs.
+
+**DaVinci Resolve integration:** Export OTIO timelines as CMX 3600 EDL, AAF, or FCPXML, all of which Resolve imports natively via `ImportTimelineFromFile()`.
+
+Sources:
+- [OpenTimelineIO GitHub](https://github.com/AcademySoftwareFoundation/OpenTimelineIO)
+- [OpenTimelineIO Docs](https://opentimelineio.readthedocs.io/en/latest/)
+- [OpenTimelineIO on PyPI](https://pypi.org/project/OpenTimelineIO/)
+
+---
+
+## 24. DAVINCI RESOLVE SCRIPTING API
+
+**The receiving end of the pipeline.** Key facts:
+
+- **Languages:** Python (3.10 in Studio 18+) and Lua
+- **Headless mode:** Launch with `-nogui` flag, all scripting APIs still work. This enables fully automated server-side editing.
+- **Timeline import:** `ImportTimelineFromFile()` accepts AAF, EDL, XML, FCPXML, DRT, ADL formats
+- **External scripting:** Set `RESOLVE_SCRIPT_API`, `RESOLVE_SCRIPT_LIB`, `PYTHONPATH` environment variables to run scripts from any external process
+- **Workflow plugins:** JavaScript APIs for asset management and automation system integration
+- **What you can control:** Project creation, media pool management, timeline creation/editing, color grading, rendering, marker placement, clip trimming, effects
+
+Sources:
+- [Unofficial Resolve API Docs](https://deric.github.io/DaVinciResolve-API-Docs/)
+- [Resolve Scripting API v20.3](https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8)
+- [ResolveDevDoc](https://resolvedevdoc.readthedocs.io/en/latest/readme_resolveapi.html)
+
+---
+
+## RECOMMENDED PIPELINE ARCHITECTURE
+
+Based on all findings, the optimal pipeline for your use case:
+
+1. **Audio analysis layer:** CrisperWhisper (filler word detection + verbatim timestamps) + WhisperX (speaker diarization + word alignment) + Librosa/Aubio (beat/onset detection)
+2. **Video analysis layer:** Gemini 2.5 Pro (scene description, facial expressions, actions, emotions) + PySceneDetect (shot boundary detection) + Google Video Intelligence API (label detection)
+3. **Silence/dead air detection:** ffmpeg silencedetect + CrisperWhisper pause detection
+4. **Decision engine:** An LLM (Gemini or Claude) that receives all the above data and makes editing decisions
+5. **Timeline construction:** OpenTimelineIO to build the edit programmatically
+6. **Execution:** DaVinci Resolve MCP server (jenkinsm13, 215+ tools) OR Resolve's native Python scripting API in headless mode
+agentId: a7a7a861b47fd83d7 (use SendMessage with to: 'a7a7a861b47fd83d7' to continue this agent)
+<usage>total_tokens: 46288
+tool_uses: 31
+duration_ms: 730766</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

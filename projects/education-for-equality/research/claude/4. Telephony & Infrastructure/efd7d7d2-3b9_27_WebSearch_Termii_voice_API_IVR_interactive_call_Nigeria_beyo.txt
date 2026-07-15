@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii voice API IVR interactive call Nigeria beyond OTP 2026
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:55:24 UTC
+========================================================================
+
+Search query: Termii voice API IVR interactive call Nigeria beyond OTP 2026
+
+----------------------------------------
+
+Web search results for query: "Termii voice API IVR interactive call Nigeria beyond OTP 2026"
+
+Links: [{"title":"Voice Call","url":"https://developers.termii.com/voice-call"},{"title":"AI-Powered Messaging & Customer Engagement Platform - Termii","url":"https://termii.com/"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"About Termii (communications API) — History & Brand Facts - Verito Digital","url":"https://veritodigital.com/termii-communications-api-2/"},{"title":"Voice Token - Termii | Developers","url":"https://developers.termii.com/voice-token"},{"title":"Programmable Voice API – Global Voice Calls, IVR & Call Automation | SMSala","url":"https://smsala.com/programmable-voice-api/"},{"title":"⚡️Termii Voice OTP is now Live! - Termii-com changelog","url":"https://headwayapp.co/termii-com-changelog/termii-voice-otp-is-now-live!-205853"},{"title":"Termii Alternative | The alternative to Termii API - Sendchamp","url":"https://sendchamp.com/best-termii-alternative"},{"title":"NEW: Termii Voice OTP. A Reliable way to verify/authenticate… | by Termii Inc. | Medium","url":"https://termii.medium.com/new-termii-voice-otp-286f196131a2"},{"title":"Termii is making global communications easy for businesses by modernizing how businesses and customers engage each other in emerging markets. We serve 26,000 businesses that send over 1.9 billion messages and calls to end customers globally. Our omni-channel platform, equipped with API capabilities, supports messaging across SMS, voice, email, and USSD channels. Additionally, our eSIM API platform enables seamless voice calls and global data connectivity in over 180 countries. | YASR","url":"https://www.yasr.org/2025/termii-group"}]
+
+Based on the search results, here's what I found about Termii's Voice API:
+
+## Current Capabilities
+
+Termii's voice call API enables you to send messages from your application through the voice channel to a phone number. However, only one-time-passwords (OTP) are allowed for now and these OTPs cannot be verified using their Verify Token API.
+
+## About Termii
+
+Termii is a Nigerian-founded communication platform as a service (CPaaS) company founded in 2017 by Gbolade Emmanuel and Ayomide Awe. The company serves 26,000 businesses that send over 1.9 billion messages and calls to end customers globally, with an omni-channel platform supporting messaging across SMS, voice, email, and USSD channels.
+
+## Interactive Voice Response (IVR)
+
+It's worth noting that while Termii's voice capabilities are currently limited to OTP delivery, other providers like Africa's Talking offer Interactive Voice Response (IVR) functionality that can be built into support workflows. However, the search results do not show that Termii has announced plans to expand beyond OTP functionality to offer full IVR and interactive call features as of 2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

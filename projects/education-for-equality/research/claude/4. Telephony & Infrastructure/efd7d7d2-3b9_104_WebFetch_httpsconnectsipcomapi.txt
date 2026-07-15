@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/api/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:53:42 UTC
+========================================================================
+
+URL: https://connectsip.com/api/
+Extraction prompt: Find any API documentation, endpoints, developer resources, or programmable voice features
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

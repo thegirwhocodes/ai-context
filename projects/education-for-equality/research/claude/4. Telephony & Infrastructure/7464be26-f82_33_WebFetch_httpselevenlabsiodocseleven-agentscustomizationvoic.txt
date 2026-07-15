@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:23:50 UTC
+========================================================================
+
+URL: https://elevenlabs.io/docs/eleven-agents/customization/voice/expressive-mode
+Extraction prompt: Does expressive mode work with Flash v2.5? Or only V3 Conversational? What are all the supported models? How do you enable it exactly - is there a toggle? Show all steps and settings.
+
+----------------------------------------
+
+# Expressive Mode Compatibility
+
+**Supported Models:** Expressive mode works exclusively with Eleven v3 Conversational. The documentation does not mention Flash v2.5 or other models supporting this feature.
+
+**Enabling Expressive Mode:**
+
+According to the guide, there is no separate toggle. Instead, "Expressive mode is enabled by default when you select Eleven v3 Conversational as your agent's TTS model."
+
+**Setup Steps:**
+
+1. Navigate to your agent configuration in the ElevenLabs dashboard
+2. Go to the **Agent Voice** tab
+3. Select **V3 Conversational** as your Text to Speech model
+4. Expressive mode activates automatically with this selection
+5. Optionally, add tone guidance to your system prompt to direct emotional delivery
+
+The documentation emphasizes that this model is "the most emotionally intelligent, context-aware Text to Speech model available in ElevenAgents" and maintains the same pricing as other ElevenLabs TTS options ($0.08 per minute).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

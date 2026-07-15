@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.yahoo.com/news/kansas-broadband-internet-disparities-persist-1530007
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-19 15:09:40 UTC
+========================================================================
+
+URL: https://www.yahoo.com/news/kansas-broadband-internet-disparities-persist-153000705.html
+Extraction prompt: Extract every Kansas county name with its broadband gap percentage from this article. Include any county mentioned with a specific % of households lacking high-speed internet, broadband, or computer access.
+
+----------------------------------------
+
+# Kansas County Broadband and Technology Access Data
+
+Based on the article, here are the Kansas counties mentioned with their digital access gaps:
+
+## Broadband Access (% without high-speed internet):
+- Johnson: 5%
+- Riley: 9.5%
+- Sedgwick: 10.7%
+- Wallace: 11.8%
+- Shawnee: 17.2%
+- Marshall: 16.9%
+- Neosho: 19.6%
+- Gove: 24.2%
+- Lincoln: 26.2%
+- Jewell: 22.8%
+
+## Computer Ownership (% without computer/device):
+- Riley: 2.4%
+- Johnson: 2.8%
+- Sedgwick: 4.9%
+- Gove: 10.2%
+- Wallace: 10%
+- Marshall: 12%
+- Neosho: 12%
+- Lincoln: 14.3%
+- Jewell: 15.7%
+- Shawnee: 7.6%
+
+The article notes these disparities correlate with income, education, and geographic factors, with rural communities experiencing greater infrastructure challenges.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

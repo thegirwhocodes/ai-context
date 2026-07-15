@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq API transcript export integration 2026
+Session: 9769868f-55d5-45b1-9481-1a8f7281a0b3
+Time: 2026-02-18 01:05:18 UTC
+========================================================================
+
+Search query: Tactiq API transcript export integration 2026
+
+----------------------------------------
+
+Web search results for query: "Tactiq API transcript export integration 2026"
+
+Links: [{"title":"Tactiq.io - AI Meeting Transcripts for Google Meet, Zoom & Teams","url":"https://tactiq.io/"},{"title":"Tactiq Integration for Workable | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/10436797-tactiq-integration-for-workable"},{"title":"Transcribe Meetings in Real-Time with Tactiq","url":"https://tactiq.io/transcribe"},{"title":"Tactiq Pricing: Start with 10 Free Monthly Transcripts","url":"https://tactiq.io/buy"},{"title":"My Honest Tactiq AI Review & 5 Better Alternatives (2026) - tl;dv","url":"https://tldv.io/blog/tactiq-alternatives/"},{"title":"Tactiq API - Docs, SDKs & Integration","url":"https://apitracker.io/a/tactiq-io"},{"title":"Tactiq Pricing Review 2026: Plans, Limits, and The Best Alternative","url":"https://meetgeek.ai/blog/tactiq-pricing"},{"title":"Free Speech-to-Text Chrome Extension - Tactiq","url":"https://tactiq.io/speech-to-text"},{"title":"Tactiq Integrations | Tactiq Help Center","url":"https://help.tactiq.io/en/collections/3091175-tactiq-integrations"},{"title":"Summarize meetings with ChatGPT","url":"https://tactiq.io/features/summarize-meetings-with-chatgpt"}]
+
+Based on the web search results, here's what I found about Tactiq API transcript export integration in 2026:
+
+## Transcript Export Capabilities
+
+Tactiq can turn live transcriptions into a range of documents and formats using PDF or TXT export to automate documentation, content for knowledge bases, and task briefs. Users can export transcripts to Google Doc, Notion, Slack or PDF.
+
+## Integration Support
+
+Tactiq is a browser extension that automatically transcribes Zoom and Google Meet meetings to your Google Drive, Quip, Notion or other platforms. The platform supports multiple integrations including:
+
+- OneDrive for saving transcripts and AI outputs directly to storage, with Workflows automation capabilities
+- Pipedrive integration for automatically saving and organizing meeting transcripts, with the ability to link transcripts to Pipedrive contacts
+- Confluence integration for storing transcripts and sharing highlights
+- Google Drive integration for automatically storing and organizing meeting transcripts
+- HubSpot integration for sending meeting details, conversations, and transcripts to HubSpot leads
+
+## Integration Depth
+
+However, it's worth noting that while Tactiq can share transcripts to various tools, the integration depth is limited - with CRMs, you can't use Tactiq to automatically fill out the correct fields, requiring manual copying and pasting instead.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

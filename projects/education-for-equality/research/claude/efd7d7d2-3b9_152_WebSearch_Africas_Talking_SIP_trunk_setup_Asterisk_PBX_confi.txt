@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking SIP trunk setup Asterisk PBX configuration 2025 2026
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:50:11 UTC
+========================================================================
+
+Search query: Africa's Talking SIP trunk setup Asterisk PBX configuration 2025 2026
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking SIP trunk setup Asterisk PBX configuration 2025 2026"
+
+Links: [{"title":"Asterisk SIP Trunk Setup: Learn How To Configure Asterisk With Our Step-By-Step Guide","url":"https://didlogic.com/setup/setup-guides/asterisk-based/asterisk-setup/"},{"title":"Asterisk: Configure an Asterisk IP trunk | Telnyx Help Center","url":"https://support.telnyx.com/en/articles/1130628-asterisk-configure-an-asterisk-ip-trunk"},{"title":"What do I need to set up a SIP trunk connection? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection"},{"title":"How to set up a SIP trunk in the Asterisk PBX - beardy's blog","url":"https://www.beardy.se/how-to-set-up-a-sip-trunk-in-the-asterisk-pbx"},{"title":"User Manual - IP PBX Configuration - Asterisk | GoTrunk","url":"https://gotrunk.com/docs/ippbxconfiguration/asterisk/"},{"title":"Asterisk PBX for use with VoIPtalk Setup Guide (SIP Trunk)","url":"https://www.voiptalk.org/products/asterisk-sip-trunk-setup.html"},{"title":"Configuring an Asterisk Credentials Trunk | Telnyx Help Center","url":"https://support.telnyx.com/en/articles/1130676-configuring-an-asterisk-credentials-trunk"},{"title":"User Manual - IP PBX Configuration - AsteriskPJSIPv18 | GoTrunk","url":"https://gotrunk.com/docs/ippbxconfiguration/asteriskpjsipv18/"},{"title":"Solved - SIP Trunk With pbx Asterisk | 3CX Forums","url":"https://www.3cx.com/community/threads/sip-trunk-with-pbx-asterisk.126567/"},{"title":"Asterisk PBX SIP Trunk Configuration | VoiceHost","url":"https://www.voicehost.co.uk/help/asterisk-pbx-sip-trunk-configuration"}]
+
+Based on the web search results, here's what I found regarding Africa's Talking SIP trunk setup with Asterisk PBX configuration:
+
+## Africa's Talking SIP Trunk Setup
+
+Using SIP trunks, Africa's Talking can connect to your Private Branch System (PBX) and allow you to make and receive voice calls.
+
+### Key Requirements for Setup
+
+To establish a SIP trunk connection with Africa's Talking, you'll need:
+
+1. A PBX server (on cloud or on premise)
+2. Apply for a voice phone number, sign a KYC document that Africa's Talking shares with you, and pay for the phone number
+3. Share your trunk's (PBX) IP address for whitelisting, and once your IP address is whitelisted, you can change your number's callback URL from the dashboard
+
+### Callback URL Configuration
+
+The basic format for the callback URL is trunk:trunk_ip_address (e.g., trunk:127.0.0.1)
+
+The search results provide general information about the Africa's Talking SIP trunk requirements, though they don't include detailed Asterisk-specific configuration examples for their service. For the most up-to-date and detailed Asterisk configuration steps specific to Africa's Talking, I recommend consulting their official support documentation directly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

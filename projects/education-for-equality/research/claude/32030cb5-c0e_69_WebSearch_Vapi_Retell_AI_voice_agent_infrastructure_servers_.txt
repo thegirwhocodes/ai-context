@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vapi Retell AI voice agent infrastructure servers concurrent calls scaling archi
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 06:56:24 UTC
+========================================================================
+
+Search query: Vapi Retell AI voice agent infrastructure servers concurrent calls scaling architecture
+
+----------------------------------------
+
+Web search results for query: "Vapi Retell AI voice agent infrastructure servers concurrent calls scaling architecture"
+
+Links: [{"title":"Vapi AI Review 2026: Pricing, Features & Top Alternative | Retell AI","url":"https://www.retellai.com/blog/vapi-ai-review"},{"title":"Voice AI Agents for Business: ElevenLabs vs Vapi vs Retell","url":"https://www.digitalapplied.com/blog/voice-ai-agents-business-elevenlabs-vapi-retell-bland"},{"title":"A Comparison Between Vapi and Other Voice AI Platforms","url":"https://www.walturn.com/insights/a-comparison-between-vapi-and-other-voice-ai-platforms"},{"title":"Retell AI vs Vapi: The Future of AI Voice Interfaces","url":"https://www.aiagentmanual.com/blog/retell-ai-vs-vapi"},{"title":"Vapi vs Retell: Find the Best Alternative for AI Phone Agents","url":"https://www.retellai.com/comparisons/retell-vs-vapi"},{"title":"Vapi - Build Advanced Voice AI Agents","url":"https://vapi.ai/"},{"title":"Vapi AI Review for Developers Building Real-Time Voice Agents - Voice.ai","url":"https://voice.ai/hub/ai-voice-agents/vapi-ai/"},{"title":"VAPI - Voice AI Tool","url":"https://www.voiceaispace.com/tool/vapi"},{"title":"11 Voice Agent Platforms Compared: Vapi, Ultravox, Retell, Bland, ElevenLabs, Deepgram, and More","url":"https://softcery.com/lab/choosing-the-right-voice-agent-platform-in-2025"},{"title":"Vapi AI: Pricing, Features & Alternatives In 2025","url":"https://www.openmic.ai/blog/vapi-ai-pricing-features-alternatives-in-2025"}]
+
+Based on the web search results, here's what I found about Vapi and Retell AI's voice agent infrastructure, servers, concurrent calls scaling, and architecture:
+
+## Vapi Infrastructure and Scalability
+
+Vapi's infrastructure scales automatically from 10 concurrent calls to 10,000+ without provisioning changes. More aggressively, Vapi offers a scalable infrastructure capable of handling over a million concurrent calls, making it suitable for large-scale operations.
+
+Vapi processes 62 million monthly calls with 99.99% SLA, and achieves sub-500ms latency with 99.9% uptime and the ability to scale to millions of calls in minutes.
+
+## Architecture Approach
+
+Rather than building its own voice models, Vapi provides an orchestration layer that connects 14+ text-to-speech providers, multiple STT engines, and any LLM through a single API, with the value proposition being flexibility where you choose the best provider for each component and Vapi handles coordination, failover, and telephony infrastructure.
+
+Vapi utilizes WebRTC streaming, the same protocol used by Google Meets and Microsoft Teams, ensuring the lowest latency and highest fault tolerance with high-quality, real-time audio streaming.
+
+## Comparison with Retell AI
+
+While both platforms handle thousands of concurrent calls, Retell AI's architecture is optimized for ultra-high-volume applications like call centers and enterprise support, while Vapi is more suited for SMBs and multi-tenant SaaS applications.
+
+Retell AI supports unlimited concurrent call capacity allowing one agent to manage anything from dozens to thousands of calls in real time, whereas Vapi's scalability is more restrictive and often gated behind higher-tier plans.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

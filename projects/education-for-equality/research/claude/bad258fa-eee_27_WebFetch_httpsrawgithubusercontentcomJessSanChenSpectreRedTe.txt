@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://raw.githubusercontent.com/JessSanChen/SpectreRedTeaming/main/README.md
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:14:13 UTC
+========================================================================
+
+URL: https://raw.githubusercontent.com/JessSanChen/SpectreRedTeaming/main/README.md
+Extraction prompt: Extract the full README content for SpectreRedTeaming. What was their architecture? What jailbreak technique did they use? How did they describe the demo? What was the multi-agent design?
+
+----------------------------------------
+
+# Spectre Red Teaming - Content Analysis
+
+Based on the provided webpage content, here's what can be extracted:
+
+## Project Overview
+The project is described as an "Agentic AI approach to jailbreaking LLM models" by Jessica Chen and Jeremy Zhang. It won the grand prize ($25,000) at the SCSP x AGI House Hackathon in Alexandria, VA.
+
+## Demonstrated Target
+The team used "the Air Force's NIPRGPT as a proof of concept" for their work.
+
+## What's Not Detailed
+Unfortunately, the provided excerpt doesn't contain sufficient information to answer your specific questions about:
+- **Architecture details** - Not explained in this content
+- **Specific jailbreak technique** - Not described beyond the general "agentic AI approach"
+- **Demo description** - Only mentioned that they "had a bit of fun" but specifics aren't provided
+- **Multi-agent design** - Not detailed in this excerpt
+
+The page appears to be a brief introduction or announcement rather than a complete README documentation. To answer your questions comprehensively, you would need access to the full project repository or documentation, which isn't included in the provided content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

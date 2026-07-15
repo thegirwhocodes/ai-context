@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: dedicated GPU server largest VRAM available rent monthly 2026 192GB 256GB multi-
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 07:11:21 UTC
+========================================================================
+
+Search query: dedicated GPU server largest VRAM available rent monthly 2026 192GB 256GB multi-GPU
+
+----------------------------------------
+
+Web search results for query: "dedicated GPU server largest VRAM available rent monthly 2026 192GB 256GB multi-GPU"
+
+Links: [{"title":"Rent GPUs | Vast.ai","url":"https://vast.ai/"},{"title":"Affordable GPU Servers | Own Hardware, VPS & Dedicated GPUs","url":"https://www.databasemart.com/gpu-server/"},{"title":"B200 Cloud Pricing: Compare 22+ Providers (2026)","url":"https://getdeploying.com/gpus/nvidia-b200"},{"title":"Rent a Dedicated Server With GPU - A Complete Guide 2026","url":"https://www.colocrossing.com/blog/when-to-rent-a-dedicated-server-with-gpu/"},{"title":"GPU Server Hosting & GPU VPS | Dedicated AI GPUs – GPU Mart","url":"https://www.gpu-mart.com/"},{"title":"Pricing | Runpod","url":"https://www.runpod.io/pricing"},{"title":"Dedicated Servers with 256GB of RAM | HOSTKEY","url":"https://hostkey.com/dedicated-servers/256gb-ram/"},{"title":"GPU Dedicated Server Hosting | Rent GPU Server for AI & HPC","url":"https://www.gpu-mart.com/gpu-dedicated-server"},{"title":"Dedicated Server Price in 2026: Full Cost Breakdown (Monthly & Annual) | Cherry Servers","url":"https://www.cherryservers.com/blog/dedicated-server-price"},{"title":"Custom GPU dedicated servers","url":"https://hostkey.com/gpu-dedicated-servers/"}]
+
+Based on the search results, here's what I found regarding dedicated GPU servers with high VRAM available for monthly rental in 2026:
+
+## GPU Options and Pricing
+
+A single-GPU server rented for a full month typically costs $570-$1,307 for an A100, $1,533-$2,847 for an H100, and $2,750+ for an H200. The B200 with 192GB of VRAM can usually run 70B-class models with headroom.
+
+## Major GPU Server Rental Providers
+
+Several providers offer dedicated GPU server rentals:
+- Vast.ai provides high-performance cloud GPUs for AI, machine learning, deep learning, and rendering.
+- GPU Mart offers enterprise GPU hosting and rental with dedicated GPU servers with stable uptime and full control.
+- HOSTKEY rents high-performance GPU servers for AI, HPC, and deep learning with powerful NVIDIA GPUs and flexible plans.
+- RunPod offers GPU cloud computing at up to 80% less than hyperscalers.
+
+The search results indicate that the H200 and B200 GPUs with 192GB VRAM are among the largest VRAM options currently available for rental, though specific multi-GPU 256GB configuration pricing wasn't detailed in these results. You may need to contact providers directly for custom multi-GPU configurations exceeding 192GB total VRAM.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

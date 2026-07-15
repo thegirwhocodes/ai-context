@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:41 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Extraction prompt: Extract the full Nigeria voice pricing table — every category, every rate per minute, monthly maintenance fees, setup fees, KYC requirements. Compare regular incoming, toll-free incoming, SIP incoming, premium rated, and outbound rates. Include all currency figures (NGN and USD).
+
+----------------------------------------
+
+# Nigeria Voice Pricing Summary
+
+Based on the provided documentation, here's the available pricing information for Africa's Talking voice services in Nigeria:
+
+## Phone Number Costs
+- **Deposit:** NGN 0
+- **Setup Fee:** NGN 0
+- **Monthly Maintenance:** "NGN 5000 + 7.5%VAT"
+
+## Local Call Rates (per minute)
+| Call Type | Rate |
+|-----------|------|
+| Regular Outgoing | NGN 15.00 |
+| SIP Outgoing | NGN 3.00 |
+| Regular Incoming | NGN 3.00 |
+| SIP Incoming | NGN 3.00 |
+
+## Limitations
+The source document does not include pricing for:
+- Toll-free incoming calls
+- Premium rated numbers
+- USD equivalent rates
+- KYC (Know Your Customer) requirements or fees
+
+Only the four call categories listed above appear in the current pricing table. For comprehensive pricing including toll-free and premium options, you would need to contact Africa's Talking directly or consult additional documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

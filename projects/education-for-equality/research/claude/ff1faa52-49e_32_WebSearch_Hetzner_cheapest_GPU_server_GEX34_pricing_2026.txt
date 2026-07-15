@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner cheapest GPU server GEX34 pricing 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:59:56 UTC
+========================================================================
+
+Search query: Hetzner cheapest GPU server GEX34 pricing 2026
+
+----------------------------------------
+
+Web search results for query: "Hetzner cheapest GPU server GEX34 pricing 2026"
+
+Links: [{"title":"GPU Server – Possible configurations and add-ons - Hetzner Docs","url":"https://docs.hetzner.com/robot/dedicated-server/server-lines/gpu-server/"},{"title":"Why Is Hetzner Raising Cloud Prices in 2026 — and What Should You Do Before April? - PUPUWEB","url":"https://pupuweb.com/why-is-hetzner-raising-cloud-prices-in-2026-and-what-should-you-do-before-april/"},{"title":"Hetzner Price Adjustment - Hetzner Docs","url":"https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/"},{"title":"Günstige Dedicated Server, Cloud & Hosting aus Deutschland","url":"https://www.hetzner.com/"},{"title":"Hetzner to Significantly Raise Cloud and Server Prices in 2026 - HostingJournalist.com","url":"https://hostingjournalist.com/news/hetzner-to-significantly-raise-cloud-and-server-prices-in-2026"},{"title":"Hetzner presents a GPU server for trained AI models","url":"https://www.hetzner.com/pressroom/new-gpu-server/"},{"title":"Hetzner | Review, Pricing & Alternatives","url":"https://getdeploying.com/hetzner"},{"title":"Hetzner whacks prices again as memory costs bite – Fudzilla.com","url":"https://fudzilla.com/hetzner-whacks-prices-again-as-memory-costs-bite/"},{"title":"German data center giant hikes prices up to 37% starting April 1 — Hetzner cites rising hardware costs for price increases | Tom's Hardware","url":"https://www.tomshardware.com/tech-industry/hetzner-to-raise-prices-by-up-to-37-percent-from-april-1"},{"title":"GEX44","url":"https://www.hetzner.com/dedicated-rootserver/gex44/"}]
+
+Based on the search results, I found information about Hetzner's GPU server pricing for 2026, though the specific GEX34 model wasn't found. Here's what I discovered:
+
+## GEX44 GPU Server Pricing (2026)
+
+The search results primarily reference the **GEX44**, which appears to be Hetzner's main GPU server offering. GPU server pricing on the GEX44 jumps from €182.30 to €212.30, reflecting the April 1, 2026 price increase announcement.
+
+More specifically, the GEX44 jumps from €182.30 to €212.30 (monthly pricing, excluding VAT).
+
+## About the GEX44
+
+The GEX44 GPU server utilises the powerful NVIDIA RTX 4000 SFF Ada generation graphics card with 20 GB GDDR6 ECC graphics memory, an Intel Core i5-13500 processor, 64 GB DDR4 RAM and two fast 1.92 TB Gen3 NVMe SSDs.
+
+## Note on GEX34
+
+I didn't find specific information about a **GEX34** model in the search results. The documentation mentions GEX server models but primarily focuses on the GEX44. You may want to check Hetzner's official website directly for information about the GEX34 specifically, or it's possible this model designation may not currently exist in their lineup.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

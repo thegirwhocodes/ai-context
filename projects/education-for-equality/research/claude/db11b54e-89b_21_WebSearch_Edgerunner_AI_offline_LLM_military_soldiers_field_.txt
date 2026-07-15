@@ -1,0 +1,50 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Edgerunner AI offline LLM military soldiers field deployed product features
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:06:46 UTC
+========================================================================
+
+Search query: Edgerunner AI offline LLM military soldiers field deployed product features
+
+----------------------------------------
+
+Web search results for query: "Edgerunner AI offline LLM military soldiers field deployed product features"
+
+Links: [{"title":"A Warfighter’s ‘Digital Adjutant’: EdgeRunner Unveils Offline AI Assistant","url":"https://thedefensepost.com/2026/04/06/ai-offline-assistant-edgerunner/"},{"title":"Newsroom | EdgeRunner Achieves GPT-5 Level Performance in Key Military Tasks While Running Locally On-Device","url":"https://www.edgerunnerai.com/news/edgerunner-achieves-gpt-5-level-performance-in-key-military-tasks-while-running-locally-on-device"},{"title":"EdgeRunner AI","url":"https://www.edgerunnerai.com/"},{"title":"Former Army officer develops offline AI for military use as Pentagon funds tech giants","url":"https://www.foxbusiness.com/technology/former-army-officer-develops-offline-ai-military-use-pentagon-funds-tech-giants"},{"title":"Product | EdgeRunner AI","url":"https://www.edgerunnerai.com/product"},{"title":"Living in the Edge — Our Investment in EdgeRunner AI","url":"https://www.madrona.com/edgerunner-ai-air-gapped-on-device-agents/"},{"title":"News | EdgeRunner AI","url":"https://www.edgerunnerai.com/news"},{"title":"EdgeRunner Funded $12M to Bring Offline AI to the Battlefield","url":"https://www.funded.com/blog/2025/05/edgerunner-funded-12m-to-bring-offline-ai-to-the-battlefield/"},{"title":"Seattle startup Edgerunner AI raises $12M to help military use AI — without the internet","url":"https://www.geekwire.com/2025/seattle-startup-edgerunner-ai-raises-12m-to-help-military-use-ai-without-the-internet/"},{"title":"Industries | EdgeRunner AI","url":"https://www.edgerunnerai.com/industries"}]
+
+Based on the search results, here's comprehensive information about EdgeRunner AI and its military offline LLM product features:
+
+## Overview
+
+EdgeRunner AI is pushing military artificial intelligence into disconnected environments with a new tool designed to support tactical operations without relying on constant connectivity. EdgeRunner AI is the first in the world to operationalize GPT-5–class capability entirely on-device for the military and for Denied, Degraded, Intermittent, and Limited (DDIL) use cases.
+
+## Core Technology
+
+EdgeRunner has taken LLMs, compressed them, and fine-tuned them on military data, making them so small that they can live on a chip, and they don't require big data center servers to host them. EdgeRunner 20B is a model that matches GPT-5 task performance on four military test sets while running completely air-gapped on an edge device.
+
+## Deployment Capabilities
+
+EdgeRunner runs directly on laptops, mobile devices, vehicles, and edge hardware - with or without connectivity - enabling AI in disconnected, remote, and contested environments. EdgeRunner AI models can rest right on military armour or equipment, including battery packs, laptops or phones.
+
+## Product Models
+
+EdgeRunner offers models like EdgeRunner Tactical-7B, a hyper efficient military LLM for on-device deployment with laptops, tablets, and smartphones that runs on as little as 8GB+ VRAM.
+
+## Training Data
+
+EdgeRunner AI, in partnership with Meta, is trained on over 30 billion tokens, or words, of military doctrine, military history both in and outside the United States, military tactics, training manuals, field manuals and philosophy.
+
+## Key Features
+
+Data stays on devices, secure and private, and users never send data to a 3rd party. The system leverages GPU/NPU when available but can fall back on CPU only, only requires 8GB of VRAM, and works on any OS.
+
+The platform listens to and transcribes meetings and interactions, answers questions and offers insights, and is multimodal, understanding information contained in images.
+
+EdgeRunner AI is currently live on an overseas deployment with United States Special Operations.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

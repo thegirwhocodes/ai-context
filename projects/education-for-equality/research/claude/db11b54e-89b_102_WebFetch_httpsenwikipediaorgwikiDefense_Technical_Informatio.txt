@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://en.wikipedia.org/wiki/Defense_Technical_Information_Center
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:31:10 UTC
+========================================================================
+
+URL: https://en.wikipedia.org/wiki/Defense_Technical_Information_Center
+Extraction prompt: When did DTIC start collecting documents? What's the historical timeline? How many documents are in each era (Cold War, post-Cold War, modern)? Any stats on collection size by decade?
+
+----------------------------------------
+
+# DTIC Document Collection Timeline
+
+Based on the Wikipedia article, here's what's documented about DTIC's collection history:
+
+**Collection Start:**
+DTIC traces its origins to June 1945 when the "Air Documents Research Center (ADRC)" was established as "a joint effort of the US Air Force, US Navy, and the United Kingdom's Royal Air Force." The center was "established to build a single collection of captured German aeronautical research."
+
+**Early Collection Focus:**
+The initial task involved sorting documents into three categories: those useful for the Pacific theater, those of immediate intelligence interest, and those valuable for future research.
+
+**Collection Growth:**
+After relocating to Wright Field in Ohio and being renamed the Air Documents Division, the organization eventually broadened its mission in 1948 "to include collecting, processing, and disseminating technical information." By the 1950s, ASTIA (the renamed organization) was developing "library catalog systems to organize its growing holdings."
+
+**Missing Data:**
+Unfortunately, the article provides **no specific statistics** about:
+- Total document counts by era
+- Collections broken down by Cold War, post-Cold War, or modern periods
+- Size metrics by decade
+
+The R&E Gateway is mentioned as holding "over 4.7 million science and technology records," but this represents current holdings without historical breakdowns.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

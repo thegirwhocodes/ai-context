@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.tomorrowsworldtoday.com/technology/ces-2026-worlds-first-ai-powered-
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:27:24 UTC
+========================================================================
+
+URL: https://www.tomorrowsworldtoday.com/technology/ces-2026-worlds-first-ai-powered-ar-translation-glasses-set-to-debut/
+Extraction prompt: Extract ALL details about the CES 2026 AR translation glasses: company name, product specs, supported languages, sign language features if any, pricing, availability, technical approach. Full details.
+
+----------------------------------------
+
+# CES 2026 AR Translation Glasses: Key Details
+
+## Company & Product
+**Company:** LLVision (founded 2014)
+**Product Name:** Leion Hey2
+**CEO:** Dr. Wu Fei
+
+## Core Features
+- Purpose-built for AI-powered, real-time translation
+- Designed to "prioritize fundamental human connection over entertainment or digital immersion"
+- Provides real-time visual "subtitle" display within user's field of vision
+- Enables eye contact maintenance during conversations
+
+## Technical Approach
+The article does not specify:
+- Supported languages
+- Technical architecture details
+- Processing method (on-device vs. cloud)
+
+## Sign Language & Accessibility
+The glasses underwent a research project with Erasmus University titled "AR Smart Glasses Empowering the Hearing-Impaired," which won the AIS Impact Award. However, specific sign language support features are not detailed.
+
+## Pricing & Availability
+**Not disclosed** in the article
+
+## Market Performance (First Generation)
+- Leion Hey (generation 1) shipped over 30,000 units globally
+- Users average 150 minutes daily use
+
+## CES 2026 Details
+- **Unveiling:** January 2026
+- **Location:** Las Vegas Convention Center, Central Hall, Booth 15453
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,86 @@
+========================================================================
+AGENT RESEARCH: Stress test: fresh E4E Claude
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 04:16:58 UTC
+========================================================================
+
+You are a BRAND NEW Claude opening in "/Users/naomiivie/Education for Equality". You know NOTHING about this project.
+
+Follow the CLAUDE.md instructions exactly. Read it first, then do whatever it tells you for basic context recovery. Do NOT skip steps. Do NOT take shortcuts. Follow the instructions literally.
+
+After you've completed context recovery, tell the user:
+1. What this project is
+2. The most important things that have happened  
+3. Current status and what's next
+
+Then end with: how many tool calls did context recovery take, and did the CLAUDE.md instructions work clearly? PASS or FAIL.
+
+----------------------------------------
+
+I now have a thorough understanding of the project. Let me provide my context recovery report.
+
+---
+
+## Context Recovery Report
+
+### 1. What This Project Is
+
+**Education for Equality** is a nonprofit organization founded by Naomi Ivie (Wesleyan University student) that aims to deliver free, world-class education to Nigeria's 20M+ out-of-school children. It operates through two channels:
+
+- **Sabi** (primary channel): An AI voice tutor accessible via basic phone calls -- no smartphone, internet, or reading ability required. Children dial in and Sabi teaches foundational literacy (8 modules, ~140 calls) and numeracy (6 modules, ~100 calls) through adaptive, patient voice interactions. The name means "to know" in Nigerian Pidgin. Target cost: $0.24-2.44/student/year at scale.
+
+- **Curriculum App** (secondary channel): A Khan Academy-style web platform with Grade 4 content (286+ lessons across Math, English, Science, Social Studies), live at eduforequality.org. Children who master basics via Sabi transition here.
+
+### 2. Most Important Things That Have Happened
+
+1. **MIT Africa Business Challenge (Feb 27-28, 2026)**: Won 2nd place and $3,000. Built Sabi from scratch in one night for the hackathon.
+
+2. **Self-hosted GPU infrastructure deployed (Mar 7-13)**: Hetzner server (RTX 4000 Ada, 20GB VRAM) running Whisper STT + Claude Haiku LLM + Chatterbox Turbo TTS (with Naomi's own voice, zero-shot cloned from 29-second recording) + Ollama Llama 3.1 8B fallback. Live at sabi.eduforequality.org.
+
+3. **240+ voice lesson scripts written**: 9 modules covering literacy Phase 1 (5 modules) and numeracy (4 modules), plus 2 diagnostic assessments.
+
+4. **Bakame AI tension resolved**: After discovering Bakame (a similar Rwandan voice education startup), IP tension arose. Naomi decided to proceed independently -- no NDA was signed, different markets, ideas aren't copyrightable. All Bakame references removed from documents.
+
+5. **Multiple grant applications submitted**: UNICEF Venture Fund ($100K, submitted Mar 10), Technovation AI Ventures ($10K, submitted Mar 4), Harvard Innovation Labs (Feb 18).
+
+6. **Copyright protection**: SABI_COPYRIGHT_BRIEF.md prepared for Nigerian Copyright Commission, trimmed to protect trade secrets.
+
+7. **TTS voice pipeline evolution**: Went from ElevenLabs (Bukola, too Hausa-sounding) to Afro-TTS fine-tuning attempt to finally deploying Chatterbox Turbo with Naomi's own cloned voice.
+
+### 3. Current Status and What's Next
+
+**Built and live:**
+- Curriculum App with Grade 4 content on Vercel
+- Sabi GPU server with full voice pipeline
+- Sabi web demo at /sabi-voice
+- 240 lesson scripts across 9 modules
+
+**Immediate next deadline:**
+- **CcHub/Mastercard EdTech Fellowship application -- due March 30, 2026** ($100K equity-free)
+
+**Key pending work:**
+- Remaining lesson scripts (Literacy Phase 2 modules 6-8, Numeracy modules 5-6)
+- Script engine (lightweight Python parser for lesson scripts -- designed but not finished)
+- Answer matcher (started, not completed)
+- Toll-free calling solution (Africa's Talking doesn't offer toll-free in Nigeria)
+- 501(c)(3) registration (~$325-350)
+- CMO hire at Wesleyan
+- Lagos pilot planned for Q4 2026
+
+**Awaiting results:** UNICEF Venture Fund, Technovation AI Ventures, Harvard Innovation Labs
+
+---
+
+### Context Recovery Metrics
+
+**Tool calls for context recovery: 16** (1 CLAUDE.md read + 1 Glob + 1 INDEX read + 8 memory file reads + 2 agent research reads + multiple session transcript reads across several parallel batches)
+
+**Did the CLAUDE.md instructions work clearly? PASS.** The instructions were clear and systematic. The 3-step process (memory files for session IDs, index for last 5 sessions, then memory-referenced sessions not in the last 5) worked well for structured recovery. One minor issue: the CLAUDE.md has three duplicated "Context Recovery (basic)" sections with slightly different content (the third adds step 6 about grep), which could be consolidated. But functionally, the instructions were unambiguous and led to thorough recovery.
+agentId: a5fab677298f69c56 (use SendMessage with to: 'a5fab677298f69c56' to continue this agent)
+<usage>total_tokens: 81739
+tool_uses: 32
+duration_ms: 137604</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

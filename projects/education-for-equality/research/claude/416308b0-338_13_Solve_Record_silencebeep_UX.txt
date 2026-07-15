@@ -1,0 +1,170 @@
+========================================================================
+AGENT RESEARCH: Solve Record silence/beep UX
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:38 UTC
+========================================================================
+
+You are fixing ONE problem in the "Education for Equality / Sabi" voice-phone product (Africa's Talking Voice API, Next.js). Repo: /Users/naomiivie/Education for Equality/curriculum-app.
+
+PROBLEM: After Sabi's greeting plays, the child sits in silence. The AT `<Record>` element is built in lib/voice/at-xml.ts as:
+`<Record finishOnKey="#" maxLength="10" trimSilence="true" callBackUrl="..." playBeep="false"/>`
+With finishOnKey="#" and no silence-based auto-stop and playBeep="false", a child who speaks for 2s then stops must wait the full 10s (maxLength) or press #, with no audio cue telling them to talk. This feels broken to a kid.
+
+YOUR TASK: 
+1. Determine, from Africa's Talking's OFFICIAL Voice <Record> documentation, the EXACT supported attributes and their semantics — especially whether there's a silence/`timeout` attribute that ends the recording automatically a few seconds after the caller stops speaking, valid ranges for maxLength, and what playBeep does. Use web search/fetch against developers.africastalking.com and the official AT PHP SDK on GitHub (raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/src/Voice.php) to be authoritative — quote the exact attribute names/casing.
+2. Read lib/voice/at-xml.ts (createPlayAndRecordResponse + createSayAndRecordResponse).
+3. Design the BEST <Record> config for a young child: auto-end shortly after they stop speaking, a beep so they know when to talk, sensible maxLength. Keep callBackUrl (capital B,U) — that was just fixed and MUST stay.
+
+OUTPUT (do NOT edit files, do NOT deploy): exact `old_string`→`new_string` edit pairs for at-xml.ts, the authoritative AT attribute names/semantics you confirmed (with source URLs), and a risk note (e.g., if a silence-timeout attr isn't supported, say so and give the best alternative). Be exact.
+
+----------------------------------------
+
+I now have everything authoritative. Let me compile the answer with exact edit pairs.
+
+## Findings
+
+### Authoritative AT `<Record>` attributes (confirmed)
+
+Confirmed across the official docs page and three official AT SDKs (PHP, Node, README). Exact casing matters.
+
+| Attribute | Casing | Official semantics | Source |
+|---|---|---|---|
+| `finishOnKey` | `finishOnKey` | "Key which will terminate the action of recording." Max 1 char; SDK default `#`. | docs + PHP/Node SDK |
+| `maxLength` | `maxLength` | "Maximum amount of time in **seconds** a recording should take." Numeric positive integer. | docs + SDKs |
+| `timeout` | `timeout` | "**Timeout (in seconds) for getting a recording from a user.**" Numeric positive integer. | PHP README + PHP `Voice.php::buildRecord` + Node `actionbuilder.js` |
+| `trimSilence` | `trimSilence` | Boolean — "remove the initial and final parts of a recording where user was silent." | docs + SDKs |
+| `playBeep` | `playBeep` | Boolean — "play a **beep when recording starts**." | docs + SDKs |
+| `callbackUrl` | `callBackUrl` (your code) / `callbackUrl` (docs+SDK) | "URL to forward the results of the Recording action." | docs + SDKs |
+
+**Sources:**
+- Record action docs: https://developers.africastalking.com/docs/voice/actions/record
+- PHP SDK `buildRecord`: https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/src/Voice.php
+- PHP SDK README (attribute prose): https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/README.md
+- Node SDK action builder (Joi schema with `timeout`): https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-node.js/master/lib/actionbuilder.js
+
+### Key conclusions
+
+1. **`timeout` IS a real, supported `<Record>` attribute.** The PHP SDK's `buildRecord` emits `timeout="..."` and validates it numeric; the Node SDK's Joi schema declares `timeout: Joi.number().integer().positive()`. It is the per-action time budget (in seconds) for capturing the recording — i.e. how long AT waits before giving up. Combined with `trimSilence`, this is the mechanism that ends the partial recording without forcing the child to wait the full `maxLength` or press `#`.
+
+2. **Important nuance / risk:** AT does **not** document a dedicated "end recording N seconds after the caller stops speaking" silence-detection attribute. `trimSilence` only *trims silent sections from the saved file* — it does **not** auto-stop the live recording. The honest reality is: with AT's partial `<Record>`, the recording ends when (a) `finishOnKey` is pressed, (b) `maxLength` is reached, or (c) `timeout` elapses. There is no per-utterance voice-activity auto-stop. So for a child who can't press `#`, the practical lever is to **lower `maxLength`** so the wait after they stop talking is short and tolerable, and **add `timeout`** as a safety cap, and **enable `playBeep`** so they know when to talk.
+
+3. **The docs' canonical "partial recording" form nests `<Say>`/`<Play>` INSIDE `<Record>`** (`<Record ...><Say>...</Say></Record>`). Your current code uses the separate-sibling form (`<Play/>` then `<Record/>`), which also works (it's the "play then record" flow). No change needed there — keeping siblings is fine and is what's deployed; I'm only changing the `<Record>` attributes.
+
+4. `playBeep="false"` is the direct cause of "no audio cue to talk." Set it to `true`.
+
+5. Keep `callBackUrl` (capital B, U) exactly — per your instruction it was just fixed and must stay. (Note: AT docs/SDK use `callbackUrl`, but your deployed/working code uses `callBackUrl` and you confirmed that is the correct working casing — do not touch it.)
+
+### Recommended config for a young child
+
+- `playBeep="true"` — audible cue so the child knows to start talking.
+- `maxLength="6"` — short enough that the post-speech wait is bearable (down from 10s). A young child's answer is a few seconds; 6s gives room without a long dead-air tail.
+- `timeout="4"` — gives up ~4s if the child says nothing at all, so the loop advances instead of hanging.
+- `finishOnKey="#"` — kept (harmless; an adult can still short-circuit).
+- `trimSilence="true"` — kept; trims dead air off the saved clip before it hits STT.
+
+---
+
+## Exact edits for `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/at-xml.ts`
+
+**Edit 1 — `createPlayAndRecordResponse` defaults (lines 31-32):**
+
+old_string:
+```
+  const maxLength = options?.maxLength ?? 10;
+  const finishOnKey = options?.finishOnKey ?? "#";
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Play url="${escapeXml(audioUrl)}"/>
+    <Record finishOnKey="${escapeXml(finishOnKey)}" maxLength="${maxLength}" trimSilence="true" callBackUrl="${escapeXml(callbackUrl)}" playBeep="false"/>
+</Response>`;
+```
+
+new_string:
+```
+  const maxLength = options?.maxLength ?? 6;
+  const finishOnKey = options?.finishOnKey ?? "#";
+  const timeout = options?.timeout ?? 4;
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Play url="${escapeXml(audioUrl)}"/>
+    <Record finishOnKey="${escapeXml(finishOnKey)}" maxLength="${maxLength}" timeout="${timeout}" trimSilence="true" callBackUrl="${escapeXml(callbackUrl)}" playBeep="true"/>
+</Response>`;
+```
+
+**Edit 2 — `createPlayAndRecordResponse` signature (line 29):**
+
+old_string:
+```
+  options?: { maxLength?: number; finishOnKey?: string }
+```
+
+new_string:
+```
+  options?: { maxLength?: number; finishOnKey?: string; timeout?: number }
+```
+
+**Edit 3 — `createSayAndRecordResponse` defaults + element (lines 61-71):**
+
+old_string:
+```
+  const maxLength = options?.maxLength ?? 10;
+  const finishOnKey = options?.finishOnKey ?? "#";
+  const voice = options?.voice ?? "en-US-Wavenet-F";
+
+  const spokenText = normalizeMoneyForSpeech(text);
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="${escapeXml(voice)}">${escapeXml(spokenText)}</Say>
+    <Record finishOnKey="${escapeXml(finishOnKey)}" maxLength="${maxLength}" trimSilence="true" callBackUrl="${escapeXml(callbackUrl)}" playBeep="false"/>
+</Response>`;
+```
+
+new_string:
+```
+  const maxLength = options?.maxLength ?? 6;
+  const finishOnKey = options?.finishOnKey ?? "#";
+  const timeout = options?.timeout ?? 4;
+  const voice = options?.voice ?? "en-US-Wavenet-F";
+
+  const spokenText = normalizeMoneyForSpeech(text);
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="${escapeXml(voice)}">${escapeXml(spokenText)}</Say>
+    <Record finishOnKey="${escapeXml(finishOnKey)}" maxLength="${maxLength}" timeout="${timeout}" trimSilence="true" callBackUrl="${escapeXml(callbackUrl)}" playBeep="true"/>
+</Response>`;
+```
+
+**Edit 4 — `createSayAndRecordResponse` signature (line 59):**
+
+old_string:
+```
+  options?: { maxLength?: number; finishOnKey?: string; voice?: string }
+```
+
+new_string:
+```
+  options?: { maxLength?: number; finishOnKey?: string; timeout?: number; voice?: string }
+```
+
+---
+
+### Risk note
+
+- **No true voice-activity auto-stop exists in AT `<Record>`.** Confirmed: there is no documented "stop N seconds after the caller goes quiet" attribute. `trimSilence` only trims the saved file; it does not end the live capture. The best available approximation is the combination above: short `maxLength` (bounds the post-speech tail), `timeout` (handles total silence), and `playBeep` (cue). The child will still experience up to ~`maxLength` of trailing wait after they finish if they don't press `#`. If even 6s feels too long in testing, lower `maxLength` to `4-5`; the trade-off is risking cutting off a slow or rambling child mid-answer.
+- **`timeout` is SDK-confirmed but not shown in the docs page's prose/examples** (only `finishOnKey`/`maxLength`/`trimSilence`/`playBeep`/`callbackUrl` appear there). It is honored by AT's official PHP and Node SDKs, so it's safe to emit — but if AT's gateway were to reject unknown attributes, `timeout` is the one to drop. Worst case, removing `timeout` leaves a still-improved config (short `maxLength` + `playBeep="true"`). The `maxLength` and `playBeep` changes alone fix the core "silent/feels broken" problem.
+- **Do not change `callBackUrl` casing** — left exactly as-is per instruction, even though AT's own docs/SDK spell it `callbackUrl`.
+- **`maxLength`/`timeout` units are seconds**, integers, positive — values 6 and 4 are well within valid range.
+
+No files were edited and nothing was deployed, as instructed.
+agentId: ae9fafcd2b634d415 (use SendMessage with to: 'ae9fafcd2b634d415' to continue this agent)
+<usage>subagent_tokens: 41364
+tool_uses: 21
+duration_ms: 179850</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

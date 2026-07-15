@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "call answer rate" OR "pickup rate" Africa Sub-Saharan health intervention IVR m
+Session: c106a9b2-5cca-4546-b6a0-7ad44fd1fc2f
+Time: 2026-04-28 17:50:21 UTC
+========================================================================
+
+Search query: "call answer rate" OR "pickup rate" Africa Sub-Saharan health intervention IVR mobile callback
+
+----------------------------------------
+
+Web search results for query: ""call answer rate" OR "pickup rate" Africa Sub-Saharan health intervention IVR mobile callback"
+
+Links: [{"title":"Exploring barriers to IVR surveys and the effectiveness of human follow-up calls: insights from a mixed methods study in Uganda - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12413760/"},{"title":"Full article: Evaluating a phone-based Interactive Voice Response system for reducing misinformation and improving malaria literacy","url":"https://www.tandfonline.com/doi/full/10.1080/02681102.2024.2414193"},{"title":"Leveraging interactive voice response technology to mitigate COVID-19 risk in refugee settlements in Uganda: Lessons learned implementing “Dial-COVID” a toll-free mobile phone symptom surveillance and information dissemination tool - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC9870132/"},{"title":"Voice IVR Survey Guide for NGOs: Best Practices to Make Your Voice Campaign a Success - SMS, Voice, WhatsApp, and Airtime Campaigns in 200+ Countries","url":"https://www.engagespark.com/guides/ultimate-guide-interactive-voice-response-ivr-social-impact-programs/"},{"title":"Using an Interactive Voice Response Survey to Assess Patient Satisfaction in Ethiopia: Development and Feasibility Study - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11892327/"},{"title":"A Gamified Digital Mental Health Intervention Across Six Sub-Saharan African Countries: A Cross-Sectional Evaluation of a Large-Scale Implementation","url":"https://www.mdpi.com/1660-4601/22/8/1281"},{"title":"JMIR mHealth and uHealth - Automated and Interviewer-Administered Mobile Phone Surveys in Burkina Faso: Sociodemographic Differences Among Female Mobile Phone Survey Respondents and Nonrespondents","url":"https://mhealth.jmir.org/2020/7/e17891"},{"title":"JMIR Formative Research - User Perceptions and Experiences of an Interactive Voice Response Mobile Phone Survey Pilot in Uganda: Qualitative Study","url":"https://formative.jmir.org/2020/12/e21671"},{"title":"Telephone hotlines for infectious disease outbreaks in Africa: A review and qualitative study - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11321129/"},{"title":"Evaluating phone call follow-ups in Sub-Saharan Africa: A systematic review and meta-analysis | PLOS One","url":"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0334894"}]
+
+I've completed the web search for your query about call answer rates, pickup rates, and health interventions using IVR and mobile callbacks in Sub-Saharan Africa. Here are the key findings:
+
+## Response Rates and Call Pickup
+
+In Uganda, an IVR survey achieved a 1.9% response rate through initial random digit dialing, while human call center follow-ups (CATI) achieved 11.8%, and post-CATI IVR surveys achieved 44.9% response rates. IVR completion rates of 1.9% are comparable to other low and middle-income countries where IVR response ranges between 0.5% and 3.3%.
+
+Response rates for IVR surveys in Mozambique and Zimbabwe were 9% and 8%, respectively, while a more recent random digit dialing survey in Ghana had a response rate of 21%.
+
+## Impact of Human Callback Interventions
+
+Those who spoke with a call center agent were significantly more likely to complete follow-up IVR surveys, with post-CATI IVR samples showing marked improvement in contact and response rates compared to initial IVR.
+
+## Key Health Interventions Using IVR
+
+Research in Sub-Saharan Africa has deployed IVR for multiple health purposes:
+
+- An assessment of the 3-2-1 IVR Service in Burkina Faso evaluated its effectiveness for improving health literacy and promoting effective disease management among internally displaced persons as part of a comprehensive initiative for underserved communities.
+
+- The "Dial-COVID" platform used interactive voice response in ten languages to track COVID-19 symptoms and disseminate health information in refugee settlements in Uganda.
+
+- Digital MindSKILLZ, an IVR-based intervention, demonstrated reach in delivering mental health information to over 425,000 users across six sub-Saharan African countries, with most users under 25 and from rural areas.
+
+## General Benefits of IVR
+
+Typical automated call surveys achieve 25-75% response rates, while SMS surveys typically achieve only 5-15% response rates.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

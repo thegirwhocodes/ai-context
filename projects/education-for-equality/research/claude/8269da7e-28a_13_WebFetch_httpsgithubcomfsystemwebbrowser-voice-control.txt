@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/fsystemweb/browser-voice-control
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:37:10 UTC
+========================================================================
+
+URL: https://github.com/fsystemweb/browser-voice-control
+Extraction prompt: What does this browser voice control do for Antigravity? How is it installed? Does it provide both speech-to-text and text-to-speech? Does it work with Claude in Antigravity?
+
+----------------------------------------
+
+# Browser Voice Control for Antigravity
+
+**What it does:**
+This skill enables hands-free, voice-driven browser interfaces. It teaches agents to build "fully hands-free, voice-driven browser interfaces using the native Web Speech API" with command patterns for scrolling, clicking, searching, and form filling.
+
+**Installation for Antigravity:**
+Users can install it at workspace scope (project-specific) or global scope:
+- Workspace: `mkdir -p .agent/skills/browser-voice-control` then copy files
+- Global: `mkdir -p ~/.gemini/antigravity/skills/browser-voice-control` then copy files
+
+After copying, restart the agent session so Antigravity rescans the skills directory.
+
+**Speech capabilities:**
+Yes, it provides both directions:
+- **Speech-to-text**: The Web Speech API recognizes spoken voice commands
+- **Text-to-speech**: "Read the page" command uses `SpeechSynthesis` to read visible text aloud
+
+**Claude compatibility:**
+The documentation notes this skill works with "Claude Code, Gemini CLI, Google Antigravity, Cursor" and mentions it's "compatible with Claude." However, the specific content doesn't explicitly confirm whether Claude itself (Claude.ai) integrates with Antigravity's skill system—only that the skill supports multiple agent platforms following the open SKILL.md standard.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

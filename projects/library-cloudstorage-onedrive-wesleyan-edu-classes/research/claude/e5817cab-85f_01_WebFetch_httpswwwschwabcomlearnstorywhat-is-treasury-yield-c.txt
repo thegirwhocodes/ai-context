@@ -1,0 +1,22 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.schwab.com/learn/story/what-is-treasury-yield-curve
+Session: e5817cab-85f5-45f5-84e9-98e429f8e00c
+Time: 2026-03-02 17:21:33 UTC
+========================================================================
+
+URL: https://www.schwab.com/learn/story/what-is-treasury-yield-curve
+Extraction prompt: Find any image URLs of yield curve diagrams or graphs showing normal upward sloping, flat, and inverted yield curves. Give me the direct image URLs.
+
+----------------------------------------
+
+Based on the content provided, there are no image URLs for yield curve diagrams or graphs available on this page. The webpage only contains:
+
+1. A Schwab logo reference
+2. An error message: "We're sorry, but we were unable to authorize your request"
+3. A customer service phone number and reference code
+
+The page does not include any yield curve visualizations or related financial charts.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

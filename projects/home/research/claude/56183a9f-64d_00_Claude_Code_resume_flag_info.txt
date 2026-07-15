@@ -1,0 +1,64 @@
+========================================================================
+AGENT RESEARCH: Claude Code resume flag info
+Session: 56183a9f-64d0-4e7e-a672-4ac2777d42bb
+Time: 2026-05-03 03:34:39 UTC
+========================================================================
+
+How does the `claude --resume` flag work in Claude Code CLI? What does it do, what options does it show, and how does the user interact with it? Keep the answer concise and practical.
+
+----------------------------------------
+
+Perfect! Here's what the `--resume` flag does:
+
+## `claude --resume` Overview
+
+**What it does:** Opens an interactive session picker to browse and resume previous Claude Code conversations in your project.
+
+**Entry points:**
+- `claude --resume` (no args) - Opens the session picker
+- `claude --resume <name>` - Resumes a named session directly
+- `claude --continue` - Resumes the most recent session (no picker)
+- `/resume` - Switch sessions from within an active session
+
+## Session Picker Options & Interaction
+
+When you run `claude --resume`, you get an interactive picker with these keyboard shortcuts:
+
+| Action | Key |
+|--------|-----|
+| Navigate | `↑` / `↓` |
+| Expand/collapse groups | `→` / `←` |
+| Resume selected | `Enter` |
+| Preview content | `Space` |
+| Rename session | `Ctrl+R` |
+| Search/filter | `/` or any character |
+| Show all worktrees | `Ctrl+W` |
+| Show all projects | `Ctrl+A` |
+| Filter by git branch | `Ctrl+B` |
+| Exit | `Esc` |
+
+## What's shown
+
+Each row displays:
+- Session name (if set) or summary/first prompt
+- Time since last activity
+- Message count
+- Git branch
+
+Forked sessions appear grouped under their root session—expand with `→` to see branches.
+
+## Key behaviors
+
+- **Search**: Paste a PR URL to find the session that created it
+- **Multi-worktree**: Default shows sessions from current worktree; `Ctrl+W` widens to all
+- **Naming**: Set names with `-n` flag at startup, `/rename`, or `Ctrl+R` in picker for easy resumption
+
+This makes it practical to juggle multiple parallel tasks without losing conversation history.
+agentId: a5866996a409dca1e (use SendMessage with to: 'a5866996a409dca1e' to continue this agent)
+<usage>total_tokens: 16980
+tool_uses: 3
+duration_ms: 10090</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

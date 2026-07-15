@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.verint.com/blog/top-10-best-practices-for-optimizing-post-call-inter
+Session: b5587e6f-5062-42da-aa0f-3cbcf946cb06
+Time: 2026-07-07 19:57:56 UTC
+========================================================================
+
+URL: https://www.verint.com/blog/top-10-best-practices-for-optimizing-post-call-interaction-surveys-using-ivr/
+Extraction prompt: List all specific, actionable best practices for maximizing IVR post-call survey completion rates. Focus especially on: (1) how and when to invite the caller to the survey to avoid them hanging up, (2) whether to announce the survey before or after the interaction, (3) keeping the prompt short, (4) any technique to secure caller commitment before the survey begins. Quote concrete tactics and any numbers.
+
+----------------------------------------
+
+# IVR Post-Call Survey Best Practices for Maximizing Completion
+
+Based on the article, here are the actionable tactics:
+
+## Timing & Invitation Method
+
+The article recommends **two approaches** to avoid caller abandonment:
+
+1. **Ask permission during the call**: "Asking customers if they'd like to leave feedback at the end of the call. If they say yes, agents can direct them to the IVR survey"
+
+2. **Pre-announcement strategy**: "Provide a recorded message at the beginning of the call letting customers know that if they stay on the line following the call, they will have an opportunity to leave feedback"
+
+**Critical caveat**: Don't require upfront commitment. The piece warns against having "people press a button at the beginning of the call to do a survey at the end" since callers haven't yet experienced the interaction.
+
+## Keeping Surveys Concise
+
+**Ask fewer than 5 questions** to prevent fatigue and encourage completion. The author emphasizes that customers are "taking time out of their busy lives" and should receive "survey fatigue" avoidance through brevity.
+
+## No Callback Approach
+
+Avoid requesting callbacks: don't "ask for a customer's number to call back later—again, you want the feedback while it's fresh." This maintains response momentum and captures authentic sentiment immediately post-interaction.
+
+The article does not provide specific completion rate percentages or quantified results for these tactics.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

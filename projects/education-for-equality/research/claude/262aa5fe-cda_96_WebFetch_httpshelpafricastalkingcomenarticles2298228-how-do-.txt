@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2298228-how-do-i-get-a-ussd-code-in-
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:29:52 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2298228-how-do-i-get-a-ussd-code-in-nigeria
+Extraction prompt: Extract ALL details about getting a USSD code in Nigeria through Africa's Talking. What networks are supported? Is network-initiated USSD (push) supported? What are the costs? What documentation is needed? Any mention of dedicated vs shared codes?
+
+----------------------------------------
+
+# Getting a USSD Code in Nigeria Through Africa's Talking
+
+## Supported Networks
+Africa's Talking offers USSD services on four major Nigerian networks: "MTN, Airtel, Glo and 9mobile."
+
+## Code Types
+The service provides two options:
+
+**Shared USSD Code:** "Getting set up on our shared USSD is cost free, however there is a monthly maintenance fee of NGN 53,750 (Exclusive of 7.5% VAT)." Setup takes approximately one business day.
+
+**Dedicated Codes:** These are raised across all telcos with higher associated costs.
+
+## Costs (Dedicated Codes)
+- Regulatory charge: ₦11,500 (paid via Remita)
+- Integration fee to Africa's Talking: ₦200,000
+- Monthly maintenance: ₦70,000 + 7.5% VAT
+- MTN connection fee: ₦500,000
+- 9mobile connection fee (financial institutions): ₦770,000
+- Minimum session requirements vary by network
+
+## Required Documentation
+KYC requirements include: "Certificate of Incorporation," "Letter of request," and "Valid Form Of ID (Int'l Passport, Voter's Card, Driver's License, National ID)." Submit these to info@africastalking.com.
+
+## Network-Initiated USSD
+The documentation makes no mention of push/network-initiated USSD capabilities.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

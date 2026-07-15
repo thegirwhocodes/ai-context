@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.unesco.org/en/education/view/outofschool
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:04:09 UTC
+========================================================================
+
+URL: https://www.unesco.org/en/education/view/outofschool
+Extraction prompt: Extract the Bayesian hierarchical model methodology used for the out-of-school estimates. Specifically: model specification, smoothing approach, treatment of administrative vs survey data, uncertainty intervals computation. Find link to technical methodology paper.
+
+----------------------------------------
+
+# Out-of-School Estimates Methodology
+
+The webpage provides limited technical details about the Bayesian hierarchical model. Here's what's available:
+
+## Model Overview
+The page indicates that "the UIS and the GEM Report have developed a statistical model to estimate out-of-school rates" but does not elaborate on the Bayesian hierarchical specification, smoothing techniques, or uncertainty interval calculations within the main content.
+
+## Data Sources Addressed
+The methodology consolidates two primary data types:
+- **Administrative data**: "student enrollment by age and sex, collected and disseminated by Ministries of Education"
+- **Survey data**: "Household surveys typically include questions regarding the attendance status of children and young people"
+
+The approach aims to "consolidate out-of-school rate information from a variety of sources and produce complete and coherent estimates."
+
+## Technical Documentation
+**Link to detailed methodology paper:**
+[Technical background paper - PDF](https://www.unesco.org/gem-report/sites/default/files/medias/fichiers/2022/08/OOS_Proposal.pdf)
+
+The webpage directs readers to this external technical document for complete methodological specifications, model structure, smoothing approaches, and uncertainty quantification procedures. The main webpage focuses on presenting findings rather than technical implementation details.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

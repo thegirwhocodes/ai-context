@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: confirmation loop error handling ASR voice bot design uncertain transcription re
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:53 UTC
+========================================================================
+
+Search query: confirmation loop error handling ASR voice bot design uncertain transcription repeat back children education
+
+----------------------------------------
+
+Web search results for query: "confirmation loop error handling ASR voice bot design uncertain transcription repeat back children education"
+
+Links: [{"title":"Voice AI Error Handling & Resilience: Enterprise Architecture Guide","url":"https://stablekernel.com/blogs/blog-voice-ai-error-handling-resilience-guide"},{"title":"The Ultimate Guide to ASR, STT & TTS for Voice Agents | Hamming AI Blog","url":"https://hamming.ai/blog/the-ultimate-guide-to-asr-stt-tts-for-voice-agents"},{"title":"Transcribing Children's Speech: ASR Performance and Obtaining Reliable Orthographic Transcriptions","url":"https://arxiv.org/pdf/2605.28833"},{"title":"Error-preserving Automatic Speech Recognition of Young English Learners'   Language","url":"https://arxiv.org/pdf/2406.03235"},{"title":"Voice-Controlled Scratch for Children with (Motor) Disabilities","url":"https://arxiv.org/pdf/2603.28246"},{"title":"User-Initiated Repetition-Based Recovery in Multi-Utterance Dialogue   Systems","url":"https://arxiv.org/pdf/2108.01208"},{"title":"Usefulness of Automatic Speech Recognition Assessment of Children With Speech Sound Disorders: Validation Study","url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11775490/"},{"title":"User Interaction Patterns and Breakdowns in Conversing with LLM-Powered Voice Assistants","url":"https://arxiv.org/html/2309.13879v2"},{"title":"Utterance-Level Methods for Identifying Reliable ASR-Output for Child Speech","url":"https://arxiv.org/pdf/2604.19801"}]
+
+Based on the search results, here are key findings related to confirmation loop error handling in ASR voice bot design for children's education:
+
+## Error Handling and Confirmation Strategies
+
+ASR misrecognition occurs when speech recognition converts spoken input into incorrect text, including simple transcription errors or dangerous plausible substitutions such as "cancel" being interpreted as "schedule." The three-attempts rule means that after three failed attempts to understand or resolve an issue, the system should offer an escape path such as human handoff instead of continuing the retry loop.
+
+Recognition errors can be mitigated by detecting that an error has occurred, after which the virtual assistant might initiate a recovery strategy such as asking clarifying questions or asking the user to repeat a certain part of the request.
+
+## Handling Uncertain Transcription
+
+The ASR model may have been nearly certain about most words and deeply uncertain about one, but WER cannot distinguish a high-confidence error from a borderline decision. Traditional methods to measure the reliability of ASR output rely on confidence estimation, but confidence estimation techniques may be unreliable in scenarios with high degrees of uncertainty or ambiguous speech patterns, which is often the case in child speech.
+
+## Children-Specific Challenges
+
+Commercial ASR engines continue to underperform with children's speech, with key challenges including higher acoustic variability, shifting formant frequencies due to vocal tract development, and irregular pronunciation. The core challenge for ASR systems in educational settings is not only to transcribe the speech but to make sure that the errors made by language learners are transcribed faithfully, which is needed to provide language learners with corrective feedback, a key component of foreign language development.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

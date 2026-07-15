@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigeria VAS aggregator NI-USSD "network initiated" USSD gateway direct MNO SS7 M
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:32:11 UTC
+========================================================================
+
+Search query: Nigeria VAS aggregator NI-USSD "network initiated" USSD gateway direct MNO SS7 MTN Airtel provider
+
+----------------------------------------
+
+Web search results for query: "Nigeria VAS aggregator NI-USSD "network initiated" USSD gateway direct MNO SS7 MTN Airtel provider"
+
+Links: [{"title":"Dedicated and Shared USSD Solutions in Nigeria","url":"https://infotekps.com/ussd.html"},{"title":"Which companies provide USSD gateway services in Nigeria? - Quora","url":"https://www.quora.com/Which-companies-provide-USSD-gateway-services-in-Nigeria"},{"title":"USSD Gateway","url":"https://grokipedia.com/page/ussd_gateway"},{"title":"USSD Gateway - Wikipedia","url":"https://en.wikipedia.org/wiki/USSD_Gateway"},{"title":"SS7 USSD Center | USSD gateway | USSD platform - Netfors","url":"https://www.netfors.com/ss7_ussd_center/"},{"title":"What is USSD - MMI Code - CsPsProtocol - Simplified Tutorials","url":"https://www.cspsprotocol.com/ussd/"},{"title":"What is USSD Gateway","url":"https://www.mobius-software.com/documentation/Mobius+USSD+Gateway/What+is+USSD+Gateway+"},{"title":"USSD Gateway: Interactive Services for GSM and 4G | Enghouse Networks","url":"https://www.enghousenetworks.com/products/infrastructure-security/vas-in-one/ussd-gateway/"},{"title":"Overview of Nigeria’s Value-Added Services (VAS) Market - Affiliate Dragons","url":"https://affdragons.com/overview-of-nigerias-value-added-services-vas-market/"},{"title":"Creditswitch | Technology Power House","url":"https://www.creditswitch.com/"}]
+
+Based on the search results, here's what I found about Nigeria's USSD and VAS ecosystem:
+
+## USSD Gateway Technology
+
+Key USSD operations include ProcessUnstructuredSS-Request for mobile-initiated sessions and UnstructuredSS-Request or UnstructuredSS-Notify for network-initiated interactions, enabling both user-driven (e.g., dialing *123#) and operator-triggered dialogues. Interoperability for USSD gateways relies on the Mobile Application Part (MAP) protocol, transported over SS7 or its IP-based successor SIGTRAN, to facilitate communication between core network elements like the Home Location Register (HLR) or Visitor Location Register (VLR).
+
+## Nigeria's Mobile Operators
+
+Nigeria's mobile sector is served by four major mobile network operators (MNOs): MTN Nigeria, Airtel Nigeria, Globacom (Glo), and 9mobile. MTN is the clear market leader with about 52% subscriber share (over 90 million customers), followed by Airtel with ~34%. Glo has around 12% and 9mobile under 2% by 2025. All Telcos - MTN, Glo, Airtel & Etisalat provide USSD gateways.
+
+## VAS Aggregators and Ecosystem Structure
+
+The Nigerian Communications Commission (NCC) recognizes four segments in the VAS value chain: the MNOs, the VAS aggregators who connect to all the operators, the content or application service providers, and the developers of the actual content and platforms. The NCC issues VAS licenses (for content services) and separate Aggregator licenses.
+
+## Direct MNO Gateway Options
+
+If you're looking for a USSD short code service, you can get it from the telcos (complex to get) or work with VAS service providers.
+
+The search results don't contain specific information about "NI-USSD" as a particular standard or about direct SS7/MTN/Airtel provider specifications unique to Nigeria, but they do confirm that both network-initiated and mobile-initiated USSD operate through SS7/MAP protocols across Nigerian MNOs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research subject-split in RCT ed programs
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-29 19:51:44 UTC
+========================================================================
+
+You are researching how RCT-backed phone/voice/edtech education programs structure and SEQUENCE literacy vs numeracy delivery, to inform Sabi — a voice AI tutor that Nigerian children aged 8–14 call for roughly 5–7 minutes of literacy + 5–7 minutes of numeracy per day. A PM needs evidence to decide: one combined call (both subjects with a short break) vs two separate calls vs alternating days; how to sequence the subjects; and the attention-span budget.
+
+Read relevant files under /Users/naomiivie/Education for Equality/research-agents/ — prioritize folders "2. The Solution", "3. The Evidence", "9. On the Ground", and "10. Bakame". The folder is a symlink to ~/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/. Skip files whose names start with WebSearch_ or WebFetch_ unless nothing else covers the topic. Look for: EKOEXCEL, NALABE, ConnectEd (Botswana/Youth Impact phone tutoring), Rori AI (math via WhatsApp), TaRL / Teaching at the Right Level, Pratham, World Bank / J-PAL RCTs, IVR education, Bakame (Rwanda voice tutor).
+
+Report CONCRETELY — return at LEAST 90% of the substance, NOT a summary. Every stat, program design detail, dosage, session length, finding, quote, and source filename. Answer:
+1. SUBJECT SPLIT: How do these programs split literacy vs numeracy (separate sessions, combined, alternating days, single-subject focus)? What does the evidence say about each and what drove the design?
+2. ATTENTION SPAN & SESSION LENGTH: Evidence on how long an 8–14yo sustains a phone/voice lesson; optimal segment length; total daily dosage; value of breaks. Quote actual numbers (e.g., ConnectEd phone-call tutoring was ~20 min/week — give the real figures).
+3. SEQUENCING & FATIGUE: How do programs order subjects within a day/across days? Evidence on combined-session fatigue vs separate-session dropout/reliability?
+4. ROUTING / LEVELING: How do programs decide what a child works on next (TaRL placement, adaptivity, mastery gating)?
+5. NIGERIA LOGISTICS: phone sharing, when children are free (out-of-school kids 8am–12pm, in-school 3–8pm), airtime — anything affecting reliably delivering two subjects per day.
+Return concrete findings with source filenames. Be exhaustive; quote the actual data — the PM will form strategy from this.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a1b8a8bcaf2c91340 (internal ID - do not mention to user. Use SendMessage with to: 'a1b8a8bcaf2c91340', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/871c4cab-479f-4ab1-9381-028da84aa1b7/tasks/a1b8a8bcaf2c91340.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

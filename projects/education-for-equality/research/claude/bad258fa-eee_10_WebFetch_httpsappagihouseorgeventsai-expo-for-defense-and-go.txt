@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://app.agihouse.org/events/ai-expo-for-defense-and-gov-20250602
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:11:41 UTC
+========================================================================
+
+URL: https://app.agihouse.org/events/ai-expo-for-defense-and-gov-20250602
+Extraction prompt: List winners, tracks, prize amounts, judges, sponsors, and project descriptions for the AI+ Expo Hackathon June 2025 hosted by SCSP. What were the winning projects and what did they build?
+
+----------------------------------------
+
+I appreciate your question, but I'm unable to provide the information you're requesting. The web page content provided only shows "AGI House" with no details about the AI+ Expo Hackathon, winners, tracks, prize amounts, judges, sponsors, or project descriptions.
+
+To answer your question about the June 2025 hackathon hosted by SCSP, I would need access to web content that actually contains that information. The current source material doesn't include any of these details.
+
+If you have a link to the full hackathon results page or event information, please share it and I'd be happy to help summarize the winners and their projects according to your guidelines.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

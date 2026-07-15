@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Sanjeev Mohindra" MIT Lincoln Lab AI defense bio research
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:29:36 UTC
+========================================================================
+
+Search query: "Sanjeev Mohindra" MIT Lincoln Lab AI defense bio research
+
+----------------------------------------
+
+Web search results for query: ""Sanjeev Mohindra" MIT Lincoln Lab AI defense bio research"
+
+Links: [{"title":"Sanjeev Mohindra | MIT Lincoln Laboratory","url":"https://www.ll.mit.edu/biographies/sanjeev-mohindra"},{"title":"Lincoln Laboratory hosts inaugural workshop on artificial intelligence for national security | MIT Lincoln Laboratory","url":"https://www.ll.mit.edu/news/lincoln-laboratory-hosts-inaugural-workshop-artificial-intelligence-national-security"},{"title":"Sanjeev Mohindra - Cornell University - Lexington, Massachusetts, United States | LinkedIn","url":"https://www.linkedin.com/in/smohindra/"},{"title":"Dr. Sanjeev Mohindra | ILP","url":"https://ilp.mit.edu/node/50073"},{"title":"Research – DAF-MIT AI ACCELERATOR","url":"https://aia.mit.edu/research/"},{"title":"NAE Website - Sanjeev Mohindra","url":"https://www.nae.edu/340173/Sanjeev-Mohindra"},{"title":"AIS Electronic Library (AISeL) - Hawaii International Conference on System Sciences 2018 (HICSS-51): XLab: Early Indications & Warnings from Open Source Data with Application to Biological Threat","url":"https://aisel.aisnet.org/hicss-51/da/decision_support_for_complex_networks/2/"},{"title":"Sanjeev Mohindra | IEEE Xplore Author Details","url":"https://ieeexplore.ieee.org/author/37659276500"},{"title":"Sanjeev Mohindra - MIT Technology Licensing Office","url":"https://tlo.mit.edu/inventors/sanjeev-mohindra"},{"title":"Technologies for Reliable AI Test and Evaluation | Proceedings of the AAAI Symposium Series","url":"https://ojs.aaai.org/index.php/AAAI-SS/article/view/27679"}]
+
+Based on the search results, here's what I found about Sanjeev Mohindra:
+
+## Background and Current Role
+
+Dr. Sanjeev Mohindra is a senior staff member of the ISR and Tactical Systems Division at MIT Lincoln Laboratory. He leads the AI Technology Group at MIT Lincoln Laboratory, advancing artificial intelligence that strengthens national security.
+
+## Research Interests and Expertise
+
+Mohindra's research interests lie in the area of scalable AI, AI engineering, big data, and distributed computing. His work focuses on making AI reliable and secure for defense applications. Under a program funded by the Chief Digital and AI Office (CDAO), he is developing a library to simplify the AI test and evaluation process by providing user- and developer-friendly interfaces for composing T&E workflows.
+
+## Education and Prior Experience
+
+He received a PhD degree from Cornell University and a BTech degree from the Indian Institute of Technology in Delhi, India. Before coming to MIT Lincoln Laboratory, he worked with a startup developing smart storage technology with computing close to the hardware. Prior to that, he worked at Arthur D. Little, Inc. in a technology consulting role.
+
+## Research Leadership
+
+Sanjeev Mohindra is leader of the Artificial Intelligence Technology Group, and he serves as MIT Lincoln Laboratory Lead on multiple research projects including the DAF-MIT AI Accelerator initiatives.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

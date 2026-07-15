@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "TDM Studio" copy paste workbench keyboard shortcut Mac Cmd+V
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:16:25 UTC
+========================================================================
+
+Search query: "TDM Studio" copy paste workbench keyboard shortcut Mac Cmd+V
+
+----------------------------------------
+
+Web search results for query: ""TDM Studio" copy paste workbench keyboard shortcut Mac Cmd+V"
+
+Links: [{"title":"Mac keyboard shortcuts - Apple Support","url":"https://support.apple.com/en-us/102650"},{"title":"Cmd + M on Mac (minimize) no longer works due to default keybinding for `workbench.action.showAllEditors` - Bug Reports - Cursor - Community Forum","url":"https://forum.cursor.com/t/cmd-m-on-mac-minimize-no-longer-works-due-to-default-keybinding-for-workbench-action-showalleditors/148343"},{"title":"Keyboard shortcuts in Terminal on Mac - Apple Support","url":"https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac"},{"title":"Keyboard shortcuts for Visual Studio Code","url":"https://code.visualstudio.com/docs/getstarted/keybindings"},{"title":"Mac Keyboard Shortcuts all Mac users should know","url":"https://www.danrodney.com/mac/"},{"title":"Keyboard shortcuts for macOS","url":"https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"},{"title":"Keyboard shortcuts on your Mac - Apple Support","url":"https://support.apple.com/guide/imac/keyboard-shortcuts-apd194062a6d/mac"},{"title":"Keyboard shortcuts for Studio on macOS – Help Center","url":"https://helpcenter.woodwing.com/hc/en-us/articles/360040134932-Keyboard-shortcuts-for-Studio-on-macOS"},{"title":"Mac keyboard shortcuts: Your guide to power computing | Cult of Mac","url":"https://www.cultofmac.com/how-to/mac-keyboard-shortcuts"},{"title":"Some Mac keyboard shortcuts does not work in the new Terminal Editor after being moved with `workbench.action.moveEditorTo<Side>Group` until the terminal editor has been unfocused and focused again · Issue #183268 · microsoft/vscode","url":"https://github.com/microsoft/vscode/issues/183268"}]
+
+The search results don't contain specific information about TDM Studio's copy paste workbench keyboard shortcut for Mac Cmd+V. The results primarily show information about general Mac keyboard shortcuts, VS Code workbench shortcuts, and other applications' shortcuts, but nothing specific to "TDM Studio."
+
+Let me try a more specific search:
+
+Links: [{"title":"Home - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio"},{"title":"ProQuest TDM Studio - Text Analysis - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/penntdm/tdm-studio"},{"title":"TDM Studio HOWTOs - Text Mining - Research Guides at Columbia University","url":"https://guides.library.columbia.edu/text-mining/tdm-studio-howtos"},{"title":"Home - Text and Data Mining with TDM Studio - CMU LibGuides at Carnegie Mellon University","url":"https://guides.library.cmu.edu/TDMStudio"},{"title":"ProQuest TDM Studio - Text Mining - Research Guides at Columbia University","url":"https://guides.library.columbia.edu/text-mining/proquest-tdm-studio"},{"title":"GitHub - Brown-University-Library/socsci_tdm_studio: Notebooks and resources for utilizing ProQuest TDM Studio + other text and data mining resources · GitHub","url":"https://github.com/Brown-University-Library/socsci_tdm_studio"},{"title":"TDM Studio | Emory Libraries","url":"https://libraries.emory.edu/business/research-learning/databases/tdm-studio"},{"title":"Export Data - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio/exportdata"},{"title":"ProQuest TDM Studio: A Text and Data Mining Solution","url":"https://www.researchgate.net/publication/367816357_ProQuest_TDM_Studio_A_Text_and_Data_Mining_Solution"},{"title":"Introduction - Database: ProQuest TDM (Text Data Mining) - LibGuides at Brown University","url":"https://libguides.brown.edu/ProQuestTDM"}]
+
+Based on the search results, I found information about TDM Studio, which is a text and data mining solution from ProQuest built for students and researchers looking to run analysis of large text datasets. The platform includes a Workbench Dashboard for large-scale custom analysis with Python or R.
+
+However, I was unable to find specific information about the keyboard shortcut Cmd+V for copy/paste functionality in the TDM Studio workbench on Mac in the search results. The results primarily contained general documentation about using TDM Studio, its features, and how to access it through various university libraries, but did not include detailed keyboard shortcut documentation for the workbench interface.
+
+For specific keyboard shortcuts in TDM Studio, you may want to:
+1. Check the official ProQuest TDM Studio documentation available within the Jupyter Notebook environment
+2. Contact your institution's library support team
+3. Visit the ProQuest TDM Studio help center directly
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

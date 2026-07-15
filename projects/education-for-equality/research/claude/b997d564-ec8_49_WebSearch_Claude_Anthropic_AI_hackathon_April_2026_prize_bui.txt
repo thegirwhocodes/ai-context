@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Anthropic AI hackathon April 2026 prize builder agent
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 07:04:50 UTC
+========================================================================
+
+Search query: Claude Anthropic AI hackathon April 2026 prize builder agent
+
+----------------------------------------
+
+Web search results for query: "Claude Anthropic AI hackathon April 2026 prize builder agent"
+
+Links: [{"title":"Claude Hackathon 2026 Columbia X NYU: #Claude - Devpost","url":"https://claude-hackathon-2026.devpost.com/"},{"title":"Anthropic Hackathon Winner's Claude Code Config Revealed","url":"https://open.substack.com/pub/aidisruption/p/anthropic-hackathon-winners-claude"},{"title":"Anthropic Claude 2 Hackathon: Build with Claude 2 - Devpost","url":"https://claude2hackathon.devpost.com/"},{"title":"Claude Builder Club Hackathon with NBC | Campus Calendar","url":"https://calendar.gatech.edu/event/2026/04/18/claude-builder-club-hackathon-nbc"},{"title":"Anthropic London Hackathon: Participants will get API access to the latest Claude models, learn from our prompt engineers, and connect with leading industry judges. #BuildWithClaude - Devpost","url":"https://anthropiclondon.devpost.com/"},{"title":"Claude Builder Club · Hackathon 2026","url":"https://www.claudebuildersmcgill.ca/hackathon"},{"title":"Students host Claude hackathon, promoting the product on campus | Yale Daily News","url":"https://yaledailynews.com/articles/students-host-claude-hackathon-promoting-the-product-on-campus"},{"title":"GitHub - affaan-m/everything-claude-code: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. · GitHub","url":"https://github.com/affaan-m/everything-claude-code"},{"title":"Claude Builders Club Hackathon: Claude Meets Code: Let’s Build! - Devpost","url":"https://claude-builders-club-hackathon.devpost.com/"},{"title":"Anthropic hackathons spotlight new Claude AI projects at UT Austin and UMass | ETIH EdTech News | — EdTech Innovation Hub","url":"https://www.edtechinnovationhub.com/news/anthropic-backed-claude-builder-clubs-highlight-new-student-projects-across-us-campuses"}]
+
+Based on the search results, I found information about several Claude Anthropic AI hackathons happening in April 2026:
+
+## Claude Hackathon 2026 (Columbia X NYU)
+
+The hackathon offers $3,000 in Anthropic credits plus cash prizes across the Grand Prize and sponsor challenges, along with Claude merch, live mentorship with rolling office hours, and judges from big tech. 
+
+Eligible Columbia/NYU students can receive $25 in Claude API credits by applying via Google Form by Friday, April 10.
+
+### Judging Criteria
+
+Judges evaluate technical implementation by assessing API usage depth, code quality, and whether the architecture goes beyond a basic chatbot wrapper into more sophisticated patterns like tool use or agentic workflows.
+
+For problem and impact, teams should clearly identify their user, the pain point, and why the solution matters, with a credible path to adoption valued over a flashy demo.
+
+## Other April 2026 Claude Hackathons
+
+Georgia Tech is hosting a Claude Builder Club Hackathon on April 18, 2026, sponsored by Anthropic and open to all Georgia Tech students, with NBC filming the event to showcase participants' skills.
+
+Additionally, an "Everything Claude Code" prize-winning agent system was built at the Claude Code Hackathon (Cerebral Valley x Anthropic, Feb 2026), showing the variety of Anthropic-backed hackathon events happening this year.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

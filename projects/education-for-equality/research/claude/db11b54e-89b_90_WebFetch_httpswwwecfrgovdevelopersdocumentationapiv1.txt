@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.ecfr.gov/developers/documentation/api/v1
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:47 UTC
+========================================================================
+
+URL: https://www.ecfr.gov/developers/documentation/api/v1
+Extraction prompt: Extract the full list of REST API endpoints, their parameters, and return formats. Focus on: how to fetch full Title 32 (National Defense), full Title 48 (FAR), and how versioner endpoints work. Include any rate limits, auth requirements, and example URLs.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://www.ecfr.gov/developers/documentation/api/v1
+Redirect URL: https://unblock.federalregister.gov/
+Status: 302 Found
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "https://unblock.federalregister.gov/"
+- prompt: "Extract the full list of REST API endpoints, their parameters, and return formats. Focus on: how to fetch full Title 32 (National Defense), full Title 48 (FAR), and how versioner endpoints work. Include any rate limits, auth requirements, and example URLs."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

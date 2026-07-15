@@ -1,0 +1,138 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/sharonn18/tgcn-wlasl
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:34:09 UTC
+========================================================================
+
+URL: https://huggingface.co/sharonn18/tgcn-wlasl
+Extraction prompt: Extract ALL details: what this model does, how to use it for inference, what inputs it expects, number of classes, accuracy, how to download and run it, dependencies, is it ready to use immediately. Everything.
+
+----------------------------------------
+
+# TGCN Model for WLASL - Complete Details
+
+## What This Model Does
+A **Temporal Graph Convolutional Network (TGCN) with Multi-Head Attention** for recognizing American Sign Language (ASL) words from pose keypoints. Processes temporal sequences of 55 body keypoints extracted from sign language videos.
+
+## Model Variants
+
+| Model | Classes | Hidden Size | Stages | Checkpoint |
+|-------|---------|-------------|--------|-----------|
+| asl100 | 100 | 64 | 20 | `checkpoints/asl100/pytorch_model.bin` |
+| asl300 | 300 | 256 | 24 | `checkpoints/asl300/pytorch_model.bin` |
+| asl1000 | 1000 | 256 | 24 | `checkpoints/asl1000/pytorch_model.bin` |
+| asl2000 | 2000 | 256 | 24 | `checkpoints/asl2000/pytorch_model.bin` |
+
+## Input Format
+
+- **Shape**: `(batch_size, 55, num_samples * 2)`
+  - `batch_size`: Number of samples
+  - `55`: MediaPipe pose keypoints
+  - `num_samples * 2`: Temporal frames × (x, y) coordinates
+  - **Default**: (batch_size, 55, 100) for 50 frames
+- **Keypoints**: MediaPipe pose format (normalized x, y coordinates)
+
+## Dependencies
+
+```bash
+pip install torch torchvision numpy
+pip install huggingface_hub
+```
+
+## How to Download and Use
+
+### Option 1: Using Helper Function
+```python
+from load_from_huggingface import load_tgcn_from_hf
+
+repo_id = "sharonn18/tgcn-wlasl"
+model, config = load_tgcn_from_hf(repo_id, model_size="asl2000")
+model.eval()
+```
+
+### Option 2: Manual Loading
+```python
+import torch
+from tgcn_model import GCN_muti_att
+from configs import Config
+from huggingface_hub import hf_hub_download
+
+# Download checkpoint and config
+checkpoint_path = hf_hub_download(
+    repo_id="sharonn18/tgcn-wlasl",
+    filename="checkpoints/asl2000/pytorch_model.bin"
+)
+
+config_path = hf_hub_download(
+    repo_id="sharonn18/tgcn-wlasl",
+    filename="checkpoints/asl2000/config.ini"
+)
+
+# Load config
+config = Config(config_path)
+
+# Initialize model
+model = GCN_muti_att(
+    input_feature=config.num_samples * 2,  # 100
+    hidden_feature=config.hidden_size,      # 256
+    num_class=2000,
+    p_dropout=config.drop_p,               # 0.3
+    num_stage=config.num_stages            # 24
+)
+
+# Load weights
+checkpoint = torch.load(checkpoint_path, map_location='cpu')
+state_dict = checkpoint.get('state_dict', checkpoint)
+model.load_state_dict(state_dict, strict=False)
+model.eval()
+```
+
+## Inference
+
+```python
+import torch
+
+# Create input: (batch_size, 55, 100)
+x = torch.randn(1, 55, 100)  # 1 sample, 55 keypoints, 50 frames × 2 coords
+
+# Get predictions
+output = model(x)
+predictions = torch.softmax(output, dim=1)
+top_1_class = torch.argmax(predictions, dim=1)
+```
+
+## Model Performance
+
+- **Top-1 Accuracy**: >85%
+- **Top-3 Accuracy**: >90%
+- **Top-5 Accuracy**: >92%
+
+(Varies by model variant and test split)
+
+## Ready to Use Immediately?
+
+**YES** - Pre-trained weights are included. The model is immediately usable for inference without additional training. Simply download the checkpoint and run inference on your keypoint data.
+
+## Architecture Features
+
+- Graph Convolutional Layers (spatial keypoint relationships)
+- Temporal Modeling (frame sequence dynamics)
+- Multi-Head Attention (keypoint importance learning)
+- Residual Connections (deep network training support)
+
+## Training Details
+
+- **Dataset**: WLASL
+- **Optimizer**: Adam
+- **Learning Rate**: 0.0003 (asl2000), 0.001 (asl100)
+- **Batch Size**: 64
+- **Epochs**: 200
+- **Dropout**: 0.3
+- **Frames per Video**: 50
+
+## License
+MIT
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

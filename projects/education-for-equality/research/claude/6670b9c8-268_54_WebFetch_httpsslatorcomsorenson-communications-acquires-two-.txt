@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://slator.com/sorenson-communications-acquires-two-ai-sign-language-interpr
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:25:37 UTC
+========================================================================
+
+URL: https://slator.com/sorenson-communications-acquires-two-ai-sign-language-interpreting-tech-startups/
+Extraction prompt: Extract ALL details about Sorenson's acquisition of OmniBridge and Hand Talk: technical details about both companies, how OmniBridge works, how Hand Talk works, what Sorenson plans to do with them, executive quotes, technical capabilities. Full details.
+
+----------------------------------------
+
+# Sorenson Communications Acquisition Details
+
+## Companies Acquired
+Sorenson Communications has acquired two AI sign language interpreting startups: **Hand Talk** and **OmniBridge**.
+
+## Hand Talk
+**Technical Capabilities:**
+Hand Talk uses artificial intelligence and digital avatars to deliver automated sign language translation. The technology is designed for translating website content and other platforms where dynamic, interactive communication isn't essential but accessibility is critical.
+
+**Scale:** Part of the combined portfolio with over 9 million app downloads and more than 1,000 websites using their plugins.
+
+**Leadership:** CEO Ronaldo Tenorio will join Sorenson post-deal.
+
+## OmniBridge
+**Technical Capabilities:**
+OmniBridge employs computer vision models to capture and translate sign language into text or speech. Its product enables bidirectional, real-time conversations between English speakers and American Sign Language users—ideal for live, interactive settings requiring immediate communication.
+
+**Scale:** Contributes to the combined 250,000+ monthly active users across both companies.
+
+**Leadership:** Co-founder Adam Munder will join Sorenson post-deal.
+
+## Sorenson's Strategic Vision
+CEO Paget Alves stated: "Interpreters supported by the power of AI will mean better interpretation... increasing accuracy of real-time interpretation and providing more immediate support."
+
+He emphasized these technologies "are not here to replace interpreters but to fill gaps where human interpreters may not be available, ensuring consistent, 24/7 accessibility."
+
+**Context:** Sorenson employs thousands of ASL experts handling 140+ million conversations annually.
+
+**Financial Terms:** Not disclosed.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

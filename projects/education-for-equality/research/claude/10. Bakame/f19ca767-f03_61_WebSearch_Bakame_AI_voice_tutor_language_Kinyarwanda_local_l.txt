@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Bakame AI voice tutor language Kinyarwanda local language not English Africa
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:09:41 UTC
+========================================================================
+
+Search query: Bakame AI voice tutor language Kinyarwanda local language not English Africa
+
+----------------------------------------
+
+Web search results for query: "Bakame AI voice tutor language Kinyarwanda local language not English Africa"
+
+Links: [{"title":"MBAZA-NLP · GitHub","url":"https://github.com/MBAZA-NLP"},{"title":"mbazaNLP (Mbaza NLP)","url":"https://huggingface.co/mbazaNLP"},{"title":"mbazaNLP/bakame-chatbot-kinyarwanda · Hugging Face","url":"https://huggingface.co/mbazaNLP/bakame-chatbot-kinyarwanda"},{"title":"Kinyarwanda AI","url":"https://lingvanex.com/services/kinyarwanda-ai/"},{"title":"Voice technology infrastructure for artificial intelligence engine in Rwanda’s local language (Kinyarwanda) | BMZ Digital.Global","url":"https://www.bmz-digital.global/en/digitalzentren/voice-technology-infrastructure-for-artificial-intelligence-engine-in-rwandas-local-language-kinyarwanda/"},{"title":"Kinyarwanda language - There's An AI For That®","url":"https://theresanaiforthat.com/s/kinyarwanda+language/"},{"title":"Practice Kinyarwanda conversation with a native AI✨","url":"https://langbuddy.ai/practice/kinyarwanda"},{"title":"mbazaNLP/common-voice-kinyarwanda-english-dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/mbazaNLP/common-voice-kinyarwanda-english-dataset"},{"title":"Languages on Speakable | Kinyarwanda","url":"https://gospeakable.webflow.io/languages/kinyarwanda"},{"title":"Translate Kinyarwanda YouTube videos • Gooey.AI • Gooey.AI","url":"https://gooey.ai/speech/translate-kinyarwanda-youtube-videos-wz6tu9by37wv/"}]
+
+Based on the search results, I found information about Bakame and AI voice tutoring for Kinyarwanda:
+
+Bakame is a voice and text chatbot with a rasa-based model in Kinyarwanda. It's part of a community working on Natural Language Processing (NLP) for Kinyarwanda and other low-resource languages, with work on Kinyarwanda automatic speech recognition (ASR), Text-to-Speech (TTS), and semantic chatbots.
+
+The technology builds on developments from the Mbaza COVID-19 Chatbot by a consortium of partners including GIZ, Digital Umuganda, Arxia, Mozilla and RISA.
+
+This represents an important effort to provide AI technology in a local African language (Kinyarwanda) from Rwanda, rather than relying solely on English language models. The project emphasizes making artificial intelligence accessible in native languages for communities in East Africa.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

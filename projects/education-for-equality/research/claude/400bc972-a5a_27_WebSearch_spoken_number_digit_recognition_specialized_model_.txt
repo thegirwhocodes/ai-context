@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: spoken number digit recognition specialized model telephony robust noisy connect
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:15:39 UTC
+========================================================================
+
+Search query: spoken number digit recognition specialized model telephony robust noisy connected digits ASR accuracy
+
+----------------------------------------
+
+Web search results for query: "spoken number digit recognition specialized model telephony robust noisy connected digits ASR accuracy"
+
+Links: [{"title":"Robust Persian Digit Recognition in Noisy Environments Using Hybrid   CNN-BiGRU Model","url":"https://arxiv.org/pdf/2412.10857"},{"title":"Robust Recognition of Persian Isolated Digits in Speech using Deep Neural Network","url":"https://arxiv.org/html/2412.10857v1"},{"title":"Rejection of non-digit strings for connected digit speech recognition","url":"https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5613037"},{"title":"Enhancing Phone Customer Service with ASR Customization | NVIDIA Technical Blog","url":"https://developer.nvidia.com/blog/enhancing-phone-customer-service-with-asr-customization/"},{"title":"Connected digit recognition based on improved acoustic resolution - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0885230883710028"},{"title":"A Robust Speaker Independent Speech Recognizer for Isolated Hindi Digits","url":"https://www.researchgate.net/publication/271306139_A_Robust_Speaker_Independent_Speech_Recognizer_for_Isolated_Hindi_Digits"},{"title":"Evaluating and Improving the Robustness of Speech Command Recognition Models to Noise and Distribution Shifts","url":"https://arxiv.org/pdf/2507.23128"}]
+
+The search results provide comprehensive information on specialized models for spoken digit recognition in telephony applications. Here are the key findings:
+
+## Recognition Models and Accuracy
+
+A hybrid structure combining residual convolutional neural network and bidirectional gated recurrent unit has been designed for speaker-independent digit recognition, with recognition accuracy of 98.53%, 96.10%, and 95.9% for training, validation, and test respectively.
+
+Historical approaches included hidden Markov models (HMMs) and MLP neural networks achieving 99.1% accuracy for discrete and 83.7% for continuous numbers, and Gaussian mixture models with Delta-Delta MFCC feature extraction achieving 99.3% accuracy in Arabic digit recognition.
+
+## Robustness in Noisy Environments
+
+A critical challenge is noise robustness. An LSTM-based network achieved 91.7% accuracy in noise-free conditions but dropped to an average of 69.22% when various noises were added. More advanced methods show better performance—proposed hybrid methods exhibit an average performance improvement of 26.88% over phoneme unit-based LSTM methods for Persian numbers in noisy environments.
+
+## Telephony Applications
+
+Automatic recognition of spoken connected digit strings has become important in the telephone industry, with telephone numbers and credit card numbers being examples of connected digits. Specialized word models have been designed specifically for connected digit recognition.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

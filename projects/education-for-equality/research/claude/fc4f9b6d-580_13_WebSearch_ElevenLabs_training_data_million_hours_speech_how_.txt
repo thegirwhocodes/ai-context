@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs training data million hours speech how built foundational TTS model a
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:14:00 UTC
+========================================================================
+
+Search query: ElevenLabs training data million hours speech how built foundational TTS model architecture technical
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs training data million hours speech how built foundational TTS model architecture technical"
+
+Links: [{"title":"Models | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/models"},{"title":"Text to Speech | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/capabilities/text-to-speech"},{"title":"Eleven v3: Most Expressive AI TTS Model Launched","url":"https://elevenlabs.io/blog/eleven-v3"},{"title":"Text to Speech (TTS) API - ElevenLabs","url":"https://elevenlabs.io/text-to-speech-api"},{"title":"Aimuse","url":"https://aimuse.blog/article/2025/06/06/elevating-voices-a-deep-dive-into-elevenlags-v3-text-to-speach"},{"title":"Open-source tools for integrating tts in conversational AI","url":"https://elevenlabs.io/blog/exploring-open-source-tools-for-integrating-text-to-speech-in-conversational-ai"},{"title":"Text-to-Speech | elevenlabs/elevenlabs-docs | DeepWiki","url":"https://deepwiki.com/elevenlabs/elevenlabs-docs/2.1-text-to-speech"},{"title":"ElevenLabs | Vapi","url":"https://docs.vapi.ai/providers/voice/elevenlabs"},{"title":"What Is ElevenLabs + How To Use It [2026 Tutorial]","url":"https://www.voiceflow.com/blog/elevenlabs"},{"title":"Text-to-Speech | elevenlabs/elevenlabs-python | DeepWiki","url":"https://deepwiki.com/elevenlabs/elevenlabs-python/4.1-text-to-speech"}]
+
+Based on the web search results, here's what I found about ElevenLabs' training data and TTS model architecture:
+
+## Training Data
+
+The training dataset reportedly surpasses one million hours, enabling nuanced inflections and cleaner silences.
+
+## Model Architecture
+
+ElevenLabs uses a larger multilingual acoustic model paired with a higher-fidelity vocoder. Additionally, the model's architecture includes multiple layers of neural networks that allow it to understand and replicate the complex patterns found in natural speech.
+
+However, it's important to note that ElevenLabs hasn't open-sourced the full architecture, so the detailed technical specifications are not publicly available. The information about the architecture comes from public benchmarks and analyses rather than official technical documentation from ElevenLabs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

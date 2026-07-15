@@ -1,0 +1,50 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: how to build TTS training dataset from YouTube movies subtitles audio extraction
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 09:22:21 UTC
+========================================================================
+
+Search query: how to build TTS training dataset from YouTube movies subtitles audio extraction pipeline 2026
+
+----------------------------------------
+
+Web search results for query: "how to build TTS training dataset from YouTube movies subtitles audio extraction pipeline 2026"
+
+Links: [{"title":"GitHub - ryanrudes/YTTTS: The YouTube Text-To-Speech dataset is comprised of waveform audio extracted from YouTube videos alongside their English transcriptions","url":"https://github.com/ryanrudes/YTTTS"},{"title":"youtube-tts-data-generator · PyPI","url":"https://pypi.org/project/youtube-tts-data-generator/"},{"title":"GitHub - hetpandya/youtube_tts_data_generator: A python library to generate speech dataset from Youtube videos","url":"https://github.com/hetpandya/youtube_tts_data_generator"},{"title":"GitHub - freds0/katube: KATube is a tool to automate the process of creating datasets for training Text-To-Speech (TTS) and Speech-To-Text (STT) models. From a list of YouTube playlists or YouTube channels, KATube will generate dataset with audios and texts.","url":"https://github.com/freds0/katube"},{"title":"How I Built a Dataset of 10,000 YouTube Transcripts for LLM Fine-Tuning | by Niceculuvs | Feb, 2026 | Medium","url":"https://medium.com/@nice2culuvs/how-i-built-a-dataset-of-10-000-youtube-transcripts-for-llm-fine-tuning-6d42b4be3122"},{"title":"View youtube-tts-data-gener… on Snyk Open Source Advisor","url":"https://snyk.io/advisor/python/youtube-tts-data-generator"},{"title":"GitHub - terrafying/yt-tts: scrape youtube to build TTS model training dataset","url":"https://github.com/terrafying/yt-tts"},{"title":"GitHub - deeplearningcafe/animespeechdataset: Dataset Generation for Language Model Training and Text-to-Speech Synthesis from Anime Subtitles · GitHub","url":"https://github.com/deeplearningcafe/animespeechdataset"},{"title":"GitHub - souvikg544/TTS_Data_Maker: Text to speech is an emerging zone of AI. This repository helps to create a dataset with audio and transcripts for personalized text to speech .","url":"https://github.com/souvikg544/TTS_Data_Maker"},{"title":"How I Built a Dataset of 10,000 YouTube Transcripts for LLM Fine-Tuning - PromptZone - Leading AI Community for Prompt Engineering and AI Enthusiasts","url":"https://www.promptzone.com/nuco_z_270906fb0e460592db/how-i-built-a-dataset-of-10000-youtube-transcripts-for-llm-fine-tuning-22nk"}]
+
+Based on the search results, here's comprehensive information about building TTS training datasets from YouTube movies subtitles with audio extraction pipelines:
+
+## Key Approaches and Tools
+
+### 1. **Pre-built Python Libraries**
+
+The `youtube_tts_data_generator` library allows you to create a YTSpeechDataGenerator instance and prepare a dataset from YouTube videos with subtitles by calling `prepare_dataset('links.txt')`, which handles dataset creation, metadata file generation, and silence trimming.
+
+KATube is a tool to automate dataset creation for TTS and Speech-to-Text models from YouTube playlists or channels, generating datasets with both audio and text.
+
+### 2. **Data Processing Pipeline**
+
+The typical workflow involves these steps:
+
+Download both audio and captions from YouTube videos, extract subtitles and corresponding audio clips from .srt files, and organize them into subdirectories containing both text files with the spoken phrases and corresponding audio waveforms.
+
+The pipeline downloads audios with their respective subtitles, segments the audios, performs audio-text alignment using the external tool AENEAS, and segments the audio according to the sentences created.
+
+### 3. **Quality Considerations**
+
+Start with manually-uploaded subtitles, as they're significantly more accurate than auto-generated ones. Quality filtering is essential, as approximately 22% of auto-generated transcripts are too noisy to use.
+
+### 4. **Bulk Extraction**
+
+Tools like YTVidHub let you paste entire playlist or channel URLs and extract all subtitles in bulk as SRT, VTT, or clean TXT files, which saves significant time when processing 50+ playlists.
+
+### 5. **Audio Validation**
+
+KATube can validate text using an external Speech-to-Text tool (such as AWS, Google, or Azure) which generates a transcript of the segmented audio, allowing comparison using Levenshtein distance to verify audio matches the text.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

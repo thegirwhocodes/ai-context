@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Code remote SSH iPad iPhone terminal a-shell ish 2026
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 21:04:37 UTC
+========================================================================
+
+Search query: Claude Code remote SSH iPad iPhone terminal a-shell ish 2026
+
+----------------------------------------
+
+Web search results for query: "Claude Code remote SSH iPad iPhone terminal a-shell ish 2026"
+
+Links: [{"title":"Claude Code Mobile: iPhone, Android & SSH (2026) | Sealos Blog","url":"https://sealos.io/blog/claude-code-on-phone/"},{"title":"Remote Claude Code: programing like it was the early 2000s | Harper Reed's Blog","url":"https://harper.blog/2026/01/05/claude-code-is-better-on-your-phone/"},{"title":"Running Claude Code from iPhone via SSH + tmux - DEV Community","url":"https://dev.to/shimo4228/running-claude-code-from-iphone-via-ssh-tmux-4c10"},{"title":"Moshi — SSH & MOSH Terminal for Claude Code & AI Agents","url":"https://getmoshi.app/"},{"title":"Control Claude Code from iPhone with SSH + Zellij (Free)","url":"https://tonydehnke.com/blog/claude-code-iphone-ssh-zellij/"},{"title":"Remote AI Coding with Claude Code and ShellHub - DEV Community","url":"https://dev.to/gustavosbarreto/remote-ai-coding-with-claude-code-and-shellhub-25"},{"title":"3 Ways to Run Claude Code from Your Phone (2026) - Zilliz blog","url":"https://zilliz.com/blog/3-easiest-ways-to-use-claude-code-on-your-mobile-phone"},{"title":"Claude Code Remote Control: Run Your Terminal from Your Phone (2026 Guide) | NxCode","url":"https://www.nxcode.io/resources/news/claude-code-remote-control-mobile-terminal-handoff-guide-2026"},{"title":"Control Claude Code Remotely with Zero-Friction SSH Tunnels","url":"https://midgarcorp.cc/blog/claude-code-remote-ssh-tunnel/"},{"title":"iPhone Claude full stack dev - no VPN, no remote desktop","url":"https://blog.rchase.com/iphone-claude-full-stack-dev-no-vpn-no-remote-desktop/"}]
+
+I found comprehensive information about running Claude Code remotely on iOS and iPad devices. Here are the key findings:
+
+## Official Support
+
+In October 2025, Anthropic made a significant announcement: Claude Code became officially available inside the Claude iOS app, marking the first native mobile integration for the tool. Additionally, as of March 2026, Anthropic also offers an official Claude app for Android.
+
+## Remote Control Feature
+
+On February 25, 2026, Anthropic shipped Remote Control — the ability to kick off a coding task in your terminal, put your laptop in your bag, and keep full control from your phone.
+
+## SSH-Based Access Methods
+
+For developers who prefer terminal-based workflows, several approaches are popular:
+
+- **SSH + Tailscale + Terminal Clients**: To operate Claude Code on your Mac from an iPhone, the trio of Tailscale + Termius + tmux is all you need, with no VPS required.
+
+- **SSH + Session Persistence**: You can run Claude Code remotely from your iPhone or iPad via SSH, with sessions persisting even when you disconnect—allowing you to pick up exactly where you left off.
+
+- **Mosh Protocol**: MOSH handles network switching (Wi-Fi → cellular) gracefully, keeping your Claude Code session alive even when connectivity is intermittent.
+
+## Terminal Applications
+
+Popular SSH clients for iOS include Termius, Blink Shell, and specialized apps like Moshi designed for Claude Code workflows.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

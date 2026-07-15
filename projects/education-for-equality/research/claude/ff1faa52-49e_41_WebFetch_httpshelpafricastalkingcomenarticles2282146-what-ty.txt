@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-nu
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 04:44:50 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available
+Extraction prompt: List all voice number types, what each one does, pricing differences, and which is best for receiving inbound calls from users who shouldn't be charged
+
+----------------------------------------
+
+# Voice Phone Number Types
+
+Based on Africa's Talking documentation, here are the available voice number options:
+
+## Number Types
+
+**Toll Free (0800)**
+"These are numbers where the user is not dialed but you as a client gets billed for incoming calls." Callers reach you at no cost to them.
+
+**Premium (0900)**
+"Numbers where the client is billed above normal rates and Client's account billed for incoming calls." Higher revenue-sharing option for inbound traffic.
+
+**Regular**
+"The user is billed normal call rates and the Client's account billed for incoming and outgoing calls." Standard bidirectional calling with normal pricing.
+
+**SIP**
+"Uses the internet Client's account is billed for incoming and outgoing calls." Internet-based calling solution.
+
+**Virtualized Physical Lines**
+"Billed normal call rates Client's account billed for incoming and outgoing calls." Traditional-style lines with standard pricing.
+
+## Best for Free Inbound Calls
+
+**Toll-free numbers are optimal** when you want users to call without charges. The client absorbs all costs, removing barriers to contact. However, toll-free lines cannot initiate outbound calls—you'd need attached regular "hunting numbers" for that functionality.
+
+For pricing details, consult Africa's Talking' [voice pricing page](https://africastalking.com/voice#pricing).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

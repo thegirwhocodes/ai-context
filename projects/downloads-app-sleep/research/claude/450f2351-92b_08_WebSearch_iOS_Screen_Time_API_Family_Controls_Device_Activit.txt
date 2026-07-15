@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS Screen Time API Family Controls Device Activity ManagedSettingsStore how app
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:56 UTC
+========================================================================
+
+Search query: iOS Screen Time API Family Controls Device Activity ManagedSettingsStore how apps like Freedom Opal block
+
+----------------------------------------
+
+Web search results for query: "iOS Screen Time API Family Controls Device Activity ManagedSettingsStore how apps like Freedom Opal block"
+
+Links: [{"title":"A Developer’s Guide to Apple’s Screen Time APIs (FamilyControls, ManagedSettings, DeviceActivity) | by Julius Brussee | Medium","url":"https://medium.com/@juliusbrussee/a-developers-guide-to-apple-s-screen-time-apis-familycontrols-managedsettings-deviceactivity-e660147367d7"},{"title":"Screen Time Technology Frameworks | Apple Developer Documentation","url":"https://developer.apple.com/documentation/screentimeapidocumentation"},{"title":"Using Screen Time API to block apps for a specified time","url":"http://pedroesli.com/2023-11-13-screen-time-api/"},{"title":"SwiftUI Tutorial: iOS App Blocker with Screen Time APIs | by JC | Medium","url":"https://medium.com/@jc_builds/building-a-powerful-ios-app-blocker-with-screen-time-apis-the-complete-guide-f6272bd00fc4"},{"title":"Parental Control - ScreenTime API iOS - Mobile App Development Services","url":"https://www.folio3.com/mobile/blog/screentime-api-ios/"},{"title":"Family Controls | Apple Developer Forums","url":"https://developer.apple.com/forums/tags/family-controls"},{"title":"Apple’s Screen Time API has some major issues | riedel.wtf","url":"https://riedel.wtf/state-of-the-screen-time-api-2024/"},{"title":"Meet the Screen Time API - WWDC21 - Videos - Apple Developer","url":"https://developer.apple.com/videos/play/wwdc2021/10123/"},{"title":"Screen time API can be disabled ea… | Apple Developer Forums","url":"https://developer.apple.com/forums/thread/727291"}]
+
+Based on the search results, here's what I found about how apps like Freedom and Opal use iOS Screen Time APIs to block content:
+
+## How Apps Block Using Screen Time APIs
+
+ManagedSettings is the enforcement framework that allows apps to define rules to shield apps and websites - preventing selected apps from being launched or shielding specific web domains in Safari.
+
+The blocking process involves three key frameworks working together:
+
+1. **FamilyControls & Authorization**: Family Controls prevents access to the Screen Time API without guardian approval, and once approved, the app cannot be removed without guardian approval.
+
+2. **ManagedSettingsStore for Blocking**: Apps assign applicationTokens, categoryTokens, and webDomainTokens from FamilyActivitySelection to the shield's corresponding properties.
+
+3. **DeviceActivity for Scheduling**: Defining rules in ManagedSettings doesn't automatically activate them - you need DeviceActivity to tell the system when to pay attention to the ManagedSettingsStore.
+
+## Known Vulnerabilities
+
+Notably, users can toggle off access to screen restrictions, and the issue persists that this toggle isn't behind the restrictions passcode. This has been identified as a significant flaw in apps like Freedom, where users can simply toggle off the access to screen restrictions without requiring the parent's approval.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

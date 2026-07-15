@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 04:45:00 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+Extraction prompt: What is the full pricing for Nigeria voice? Include toll-free pricing, regular pricing, setup fees, monthly fees, per-minute rates for all number types.
+
+----------------------------------------
+
+# Nigeria Voice Pricing Summary
+
+Based on the Africa's Talking Help Center documentation, here's the complete pricing structure for Nigeria:
+
+## Phone Numbers
+- **Deposit:** NGN 0
+- **Setup Fee:** NGN 0
+- **Monthly Maintenance:** "NGN 5000 + 7.5%VAT"
+
+## Local Charges (Per Minute Rates)
+| Call Type | Cost |
+|-----------|------|
+| Regular Outgoing | NGN 15.00 |
+| SIP Outgoing | NGN 3.00 |
+| Regular Incoming | NGN 3.00 |
+| SIP Incoming | NGN 3.00 |
+
+**Note:** The documentation provided does not include toll-free number pricing. The information covers only standard "Regular" phone number options with the charges listed above.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

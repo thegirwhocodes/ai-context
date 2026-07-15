@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iPhone Photos app sort videos by size largest file 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:55:32 UTC
+========================================================================
+
+Search query: iPhone Photos app sort videos by size largest file 2026
+
+----------------------------------------
+
+Web search results for query: "iPhone Photos app sort videos by size largest file 2026"
+
+Links: [{"title":"How to Sort Videos by Size on iPhone and See the Largest Files","url":"https://www.cleverfiles.com/howto/sort-videos-by-size-on-iphone.html"},{"title":"How to Sort or Search photos and videos by File Size on iPhone/iPad - HashPhotos","url":"https://www.hashphotos.app/howto/sort-by-filesize/"},{"title":"3 Tested Methods to Find Large Videos on iPhone For Easy Cleanup","url":"https://www.insanelymac.com/blog/find-large-videos-on-iphone/"},{"title":"Sorting Videos by File Size & Duration - Apple Community","url":"https://discussions.apple.com/thread/256183630"},{"title":"Sort Photos by File Size on iPhone and iPad","url":"https://exifviewerapp.com/sort-photos-by-file-size-on-iphone-and-ipad/"},{"title":"Sort by size on iCloud.com: SOLVED! - Apple Community","url":"https://discussions.apple.com/thread/255700033"},{"title":"How to Find and Delete Large Videos on iPhone - FilterGrade","url":"https://filtergrade.com/find-delete-large-videos-iphone/"},{"title":"Filter and sort photos and videos in albums on iPhone - Apple Support (SG)","url":"https://support.apple.com/en-sg/guide/iphone/iph9463b0c24/ios"},{"title":"How to Find and Delete Large Videos on iPhone (iOS 18)","url":"https://www.handyrecovery.com/find-large-videos-on-iphone/"},{"title":"How can I sort my photos by size - Apple Community","url":"https://discussions.apple.com/thread/252693594"}]
+
+Based on the search results, here's what I found about sorting videos by size in the iPhone Photos app:
+
+## Current Limitations
+
+Apple's Photos app doesn't let users sort videos by size on iPhone, and even in iOS 26, there is no simple "sort by size" option for videos. Apple gives you options to sort media by date (newest to oldest or vice versa), organize by albums, or filter by favorites, but there's no built-in way to see which videos are taking up the most storage.
+
+## Manual Workaround
+
+As a basic workaround, you can open the Photos app on the iPhone, go to the Media Type section and find Videos, then select a video and tap the info button to check details, like the file size.
+
+## Alternative Methods
+
+Since the native Photos app lacks this feature, there are several workarounds:
+
+1. **Third-Party Cleaner Apps**: Cleaner apps like Clever Cleaner have a "Heavies" feature that automatically sorts all your videos by file size and shows you exactly how much storage each one occupies.
+
+2. **Duration as a Proxy**: You can sort videos by length on iPhone as a proxy for finding large files - in the Videos album, tap the three-dot menu icon in the top right corner and choose to sort by duration.
+
+3. **Files App**: You can open the Files app on an iPhone, look at the top corner and tap the three dots to reveal sorting choices, and choose "By Size" to arrange files starting with the largest.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/actions/record
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:00 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/actions/record
+Extraction prompt: EXACT VERBATIM quote of the Record element documentation. Specifically: (1) Does AT actually call the callbackUrl/callBackUrl while the call is still active, or only after call ends? (2) Can you respond with another XML response when the callback fires, to continue the conversation in the same call? (3) Are there working examples showing interactive in-call recording with continued dialog? Quote the docs verbatim — every attribute, every example.
+
+----------------------------------------
+
+I appreciate your detailed question, but I need to be transparent: the web page content provided only shows a title ("Documentation | Africa's Talking") with no actual documentation text or examples included.
+
+To answer your three specific questions about the Record element—particularly regarding:
+1. Callback timing (during vs. after call)
+2. XML response capabilities during callbacks
+3. Working interactive examples
+
+—I would need the actual documentation content to quote verbatim and enforce the 125-character limit you've requested.
+
+**I'd recommend:**
+- Visiting Africa's Talking's documentation directly at their site
+- Searching for "Record element" in their API docs
+- Looking for sections on "callbackUrl" behavior and examples
+
+If you can share the actual documentation text, I'll be happy to extract the exact quotes and answer your questions precisely.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

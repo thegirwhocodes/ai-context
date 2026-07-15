@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yana.ng/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-13 08:37:56 UTC
+========================================================================
+
+URL: https://yana.ng/
+Extraction prompt: Find all pricing information - monthly fees, per-minute rates, setup costs for 0800 toll-free numbers. Extract any specific numbers/rates.
+
+----------------------------------------
+
+# Pricing Information for Yana Services
+
+Based on the provided web page content, **no specific pricing information is available**. The page does not contain:
+
+- Monthly fees
+- Per-minute rates
+- Setup costs
+- Service pricing for any offerings
+
+The website lists services (vanity numbers, short codes, CRM, PBX, and call center solutions) but directs interested parties to "Contact Us" or "Click here to get started" rather than displaying rates.
+
+To obtain pricing details for 0800 toll-free numbers or other Yana services, you would need to contact them directly via:
+- **Email:** info@yana.ng
+- **Phone:** 07002201010
+- **Location:** Ground Floor, B.O.A Plaza, Independence Avenue, Central Business District, Abuja, Nigeria
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

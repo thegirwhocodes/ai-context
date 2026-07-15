@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/src/Voice.ph
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-08 20:00:55 UTC
+========================================================================
+
+URL: https://github.com/AfricasTalkingLtd/africastalking-php/blob/master/src/Voice.php
+Extraction prompt: Find the exact XML format produced by the record() method. What XML tag does it emit? What attributes does it set on that tag (especially the callback URL attribute name — is it `callbackUrl`, `callback`, or something else)? Show the actual code that builds the Record XML.
+
+----------------------------------------
+
+# Record XML Format Analysis
+
+Based on the `buildRecord()` method in the Voice.php file:
+
+**XML Tag:** `<Record />`
+
+**Callback URL Attribute Name:** `callBackUrl` (capital B, capital U)
+
+**Actual Code Building the Record XML:**
+
+The method constructs the Record tag starting at line 422:
+```php
+$recordString = '<Record';
+// ... conditionally adds attributes ...
+if (!empty($callBackUrl)) {
+    $getDigitsString .= ' callBackUrl="'. $callBackUrl .'"';
+}
+$recordString .= ' />';
+```
+
+**Note:** There appears to be a bug in the code. When adding the `callBackUrl` attribute, the code incorrectly appends to `$getDigitsString` instead of `$recordString`, which would cause the callback URL attribute to be lost in the final output.
+
+The method also supports optional attributes: `finishOnKey`, `maxLength`, `timeout`, `trimSilence`, and `playBeep`.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

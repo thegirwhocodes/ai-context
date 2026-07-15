@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://innovationlabs.harvard.edu/events/venturing-harvard-x-cusi-innovators-mi
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-18 17:05:07 UTC
+========================================================================
+
+URL: https://innovationlabs.harvard.edu/events/venturing-harvard-x-cusi-innovators-mixer
+Extraction prompt: Describe what this Harvard leadership experience / event is about. What is the Venturing Harvard x CUSI Innovators Mixer? What are its goals, who is it for, what kind of participants are they looking for? What is CUSI? What is Venturing Harvard? Include all relevant details about the event.
+
+----------------------------------------
+
+# Venturing@Harvard x CUSI Innovators Mixer
+
+## Event Overview
+
+This is a monthly networking mixer bringing together innovators and entrepreneurs from Harvard and surrounding universities in the Greater Boston area. The February 25, 2026 event will be held in-person at the Harvard Innovation Labs (125 Western Avenue, Allston) at 4:30 PM.
+
+## Purpose & Goals
+
+The mixer aims to foster connection and collaboration among builders at various entrepreneurial stages. According to the event description, it's designed as "an idea exchange" where participants can "build relationships that move ventures forward—over food and drinks."
+
+## Target Audience & Participants
+
+The event welcomes the full Harvard community and is open to anyone interested in innovation, including:
+- People exploring new business ideas
+- Active venture builders
+- Founders seeking co-founders or advisors
+- Individuals wanting to join startup teams
+- Peers interested in entrepreneurship
+
+The organizers describe seeking participants with "shared curiosity" who appreciate "an open, welcoming community."
+
+## What is Venturing@Harvard?
+
+Venturing@Harvard is a recurring monthly meetup and networking series hosted across different Harvard campus locations, co-sponsored by multiple university programs including the Innovation Labs and the Lemann Program on Creativity and Entrepreneurship.
+
+## What is CUSI?
+
+CUSI stands for Cross University Student Innovators—a partner organization collaborating with Harvard Innovation Labs to expand the mixer's reach beyond Harvard to other area universities.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

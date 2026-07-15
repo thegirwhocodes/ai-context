@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research browser constraints and tradeoffs
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:04:13 UTC
+========================================================================
+
+Research the practical CONSTRAINTS and TRADEOFFS of running an always-listening wake word ("Hey Cortex") in a web browser vs a native/mobile app, for an engineering report's recommendation section. Use WebSearch + WebFetch on authoritative sources (MDN, Chrome developer docs, web.dev, Picovoice docs, OS background-audio docs). Cite every claim with a source URL.
+
+Cover specifically:
+1. Browser microphone constraints: does getUserMedia/mic access persist, does the browser TAB have to stay open and/or focused for continuous mic capture, what happens when the tab is backgrounded (throttling of timers/AudioContext), can a normal web page listen in the background at all. Cite MDN/Chrome.
+2. Permissions/UX: mic permission prompts, persistent permission, secure-context (HTTPS) requirement, autoplay/user-gesture requirements to start audio.
+3. Battery/CPU cost of always-on mic + a continuously running small neural net in a browser tab.
+4. On-device vs cloud PRIVACY: which approaches keep audio fully local (Porcupine, openWakeWord) vs send audio to a server (browser SpeechRecognition in Chrome), and why on-device wake word matters for privacy.
+5. What a NATIVE app (macOS SwiftUI / iOS / Android) unlocks that a browser cannot: true background listening, OS-level always-on, lower power, system mic access. Note iOS/Android background-audio + mic restrictions too (they are NOT unlimited).
+6. Cost/licensing comparison at a high level: Porcupine (commercial, free tier) vs openWakeWord (free, Apache/MIT) — confirm licenses.
+
+Return a dense, structured, cited bullet list. Mark weak-sourced claims "unverified." Be concrete and honest about the real-world limits.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a8225a75ff07561f5 (internal ID - do not mention to user. Use SendMessage with to: 'a8225a75ff07561f5', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/a8225a75ff07561f5.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

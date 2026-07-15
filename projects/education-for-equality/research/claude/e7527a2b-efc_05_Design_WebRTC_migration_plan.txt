@@ -1,0 +1,508 @@
+========================================================================
+AGENT RESEARCH: Design WebRTC migration plan
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 07:58:46 UTC
+========================================================================
+
+Design an implementation plan for migrating a Flask app from MJPEG video streaming to WebRTC using aiortc.
+
+**Current architecture:**
+- Flask + Flask-SocketIO (async_mode='threading') on port 5001
+- 2 camera threads capture OpenCV frames, pre-encode to JPEG, store in global buffers
+- 2 MJPEG generator functions yield pre-encoded JPEG bytes via Flask Response
+- Routes: /video/signing and /video/speaking serve multipart/x-mixed-replace streams
+- Dashboard HTML uses <img src="/video/signing"> and <img src="/video/speaking"> (4 total across tabs, but 2 are in hidden tabs with src removed)
+- SocketIO handles: asl_detected, signing_status, speech_cleaned, glasses_update, proj_update, mode_changed events
+- ASL detection loop processes frames from the signing camera, runs TGCN + DTW + NMM
+
+**Problem:**
+- MJPEG streams freeze when browser tab loses focus (browser kills the HTTP connection)
+- When served through Cloudflare tunnel, MJPEG is very slow (3-6MB/s uncompressed JPEG through relay server)
+- Each MJPEG stream holds a persistent HTTP connection, causing thread exhaustion
+
+**Goal:**
+- Replace MJPEG with WebRTC for the video feeds
+- Keep Flask-SocketIO for signaling AND for all existing ASL/speech events
+- Video should go peer-to-peer (not through tunnel)
+- Camera capture threads and ASL detection loop stay the same
+- The only thing changing is how video gets to the browser
+
+**Key constraints:**
+1. aiortc is asyncio-based, Flask is threaded — need to bridge this
+2. Camera frames are already in OpenCV format (numpy arrays) — need to convert to av.VideoFrame
+3. Must work with the existing SocketIO events (don't break ASL detection, speech captions, etc.)
+4. The signing camera feed shows the ANNOTATED frame (with MediaPipe landmarks drawn)
+5. The speaking camera feed shows the raw frame from the second camera
+6. Must still work on localhost without a tunnel (WebRTC to self)
+
+**Files to modify:**
+- app.py — add WebRTC signaling routes, replace MJPEG generators
+- templates/dashboard.html — replace <img src="/video/..."> with <video> + WebRTC JS
+- templates/audience.html — same change for its video feed
+- requirements.txt — add aiortc
+
+**The approach should:**
+1. Run aiortc's asyncio event loop in a background thread
+2. Use Flask-SocketIO for WebRTC signaling (offer/answer/ICE candidate exchange)
+3. Create custom VideoStreamTrack classes that read from the existing frame buffers
+4. Keep all camera threads, detection loop, speech listener unchanged
+5. Frontend creates RTCPeerConnection, sends offer via SocketIO, receives video tracks
+
+Design the full implementation plan with specific code patterns for each file.
+
+----------------------------------------
+
+Good. I now have full understanding of the architecture. Here is the complete implementation plan.
+
+---
+
+## Implementation Plan: MJPEG to WebRTC Migration via aiortc
+
+### Architecture Overview
+
+The migration replaces the two MJPEG HTTP streaming routes (`/video/signing`, `/video/speaking`) with WebRTC peer connections negotiated over the existing SocketIO transport. Everything else stays identical: camera threads, frame buffers, ASL detection loop, speech listener, all SocketIO events.
+
+The core challenge is that aiortc is asyncio-based while Flask+SocketIO runs in threaded mode. The solution is a dedicated asyncio event loop running in its own daemon thread, with thread-safe bridges to the existing frame buffers.
+
+### File-by-File Plan
+
+---
+
+#### 1. `requirements.txt` -- Add aiortc
+
+Add one line:
+```
+aiortc
+```
+
+aiortc pulls in `av` (PyAV) and `aioice` as transitive dependencies. `av` provides `av.VideoFrame` which is needed to convert numpy arrays.
+
+---
+
+#### 2. `app.py` -- WebRTC Signaling + AsyncIO Bridge
+
+**What to remove:**
+- The `gen_signing_feed()` generator function (lines 388-396)
+- The `gen_speaking_feed()` generator function (lines 399-407)
+- The `/video/signing` route (lines 426-429)
+- The `/video/speaking` route (lines 432-437)
+- The `_signing_jpeg_thread` function (lines 177-187) and its thread startup (line 504) -- JPEG encoding for MJPEG is no longer needed
+
+**What to keep completely unchanged:**
+- `_signing_camera_thread()` -- still captures raw frames into `latest_raw_frame`
+- `_speaking_camera_thread()` -- still captures frames into `latest_speaking_frame` (but can stop encoding JPEG since WebRTC handles its own encoding; keep `_speaking_jpeg` encoding only if you want MJPEG fallback)
+- `asl_detection_loop()` -- reads from `latest_raw_frame`, writes to `latest_annotated_frame`, emits SocketIO events
+- `on_speech_detected()` -- unchanged
+- All existing SocketIO event handlers
+- All existing HTTP routes (`/`, `/glasses`, `/audience`, `/start`, `/stop`, `/clear`, `/mode/<mode>`, `/status`)
+
+**What to add:**
+
+**(a) AsyncIO event loop in a background thread:**
+
+At module level, after the existing imports and before any route definitions, add:
+
+```python
+import asyncio
+from aiortc import RTCPeerConnection, RTCSessionDescription, RTCIceCandidate
+from aiortc.contrib.media import MediaStreamTrack
+from av import VideoFrame
+
+# Dedicated asyncio loop for aiortc
+_rtc_loop = asyncio.new_event_loop()
+_peer_connections = set()  # Track for cleanup
+
+def _run_rtc_loop():
+    asyncio.set_event_loop(_rtc_loop)
+    _rtc_loop.run_forever()
+
+threading.Thread(target=_run_rtc_loop, daemon=True).start()
+```
+
+This loop runs forever in a daemon thread. All aiortc operations are scheduled onto it using `asyncio.run_coroutine_threadsafe(_rtc_loop, coro)`.
+
+**(b) Custom VideoStreamTrack classes:**
+
+These subclass `MediaStreamTrack` and override `recv()` to return frames from the existing thread-safe buffers. Each call to `recv()` must return an `av.VideoFrame` with correct timestamps.
+
+```python
+class SigningVideoTrack(MediaStreamTrack):
+    kind = "video"
+
+    def __init__(self):
+        super().__init__()
+        self._start = time.time()
+        self._frame_count = 0
+
+    async def recv(self):
+        # Pace at ~30fps
+        self._frame_count += 1
+        target_time = self._start + self._frame_count / 30
+        wait = target_time - time.time()
+        if wait > 0:
+            await asyncio.sleep(wait)
+
+        # Read from existing buffer (thread-safe via lock)
+        with _signing_lock:
+            frame = latest_annotated_frame if latest_annotated_frame is not None else latest_raw_frame
+        
+        if frame is None:
+            # Black frame fallback
+            frame = np.zeros((480, 640, 3), dtype=np.uint8)
+
+        # Convert BGR (OpenCV) -> RGB -> av.VideoFrame
+        rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        video_frame = VideoFrame.from_ndarray(rgb, format="rgb24")
+        video_frame.pts = self._frame_count
+        video_frame.time_base = fractions.Fraction(1, 30)
+        return video_frame
+```
+
+An identical `SpeakingVideoTrack` class reads from `latest_speaking_frame` (with `_speaking_lock`). In single-camera mode, it falls back to `latest_raw_frame` just like the current `_speaking_camera_thread` does.
+
+Add `import fractions` to the imports.
+
+**(c) SocketIO signaling handlers:**
+
+Three new SocketIO events handle the WebRTC negotiation:
+
+```python
+@socketio.on('webrtc_offer')
+def handle_offer(data):
+    """Client sends SDP offer, server creates answer with video tracks."""
+    feed = data.get('feed')  # 'signing' or 'speaking'
+    sdp = data['sdp']
+    
+    async def _create_answer():
+        pc = RTCPeerConnection()
+        _peer_connections.add(pc)
+        
+        @pc.on("connectionstatechange")
+        async def on_state():
+            if pc.connectionState in ("failed", "closed"):
+                _peer_connections.discard(pc)
+        
+        # Add the appropriate video track
+        if feed == 'signing':
+            pc.addTrack(SigningVideoTrack())
+        else:
+            pc.addTrack(SpeakingVideoTrack())
+        
+        offer = RTCSessionDescription(sdp=sdp['sdp'], type=sdp['type'])
+        await pc.setRemoteDescription(offer)
+        answer = await pc.createAnswer()
+        await pc.setLocalDescription(answer)
+        
+        return {
+            'sdp': pc.localDescription.sdp,
+            'type': pc.localDescription.type,
+        }
+    
+    future = asyncio.run_coroutine_threadsafe(_create_answer(), _rtc_loop)
+    answer = future.result(timeout=10)  # Block Flask thread until done
+    emit('webrtc_answer', {'feed': feed, 'sdp': answer})
+
+
+@socketio.on('webrtc_ice')
+def handle_ice(data):
+    """Client sends ICE candidate."""
+    # With aiortc, ICE candidates are typically bundled in the SDP.
+    # This handler exists for trickle ICE if needed.
+    pass
+
+
+@socketio.on('disconnect')
+def on_disconnect_cleanup():
+    # Peer connections are cleaned up via connectionstatechange callbacks
+    pass
+```
+
+Key design decision: The `future.result(timeout=10)` call blocks the Flask SocketIO handler thread until the asyncio coroutine completes. This is safe because SocketIO with `async_mode='threading'` allocates a thread per event, and WebRTC negotiation takes milliseconds. The alternative (callback-based) would be more complex for no benefit.
+
+**(d) Cleanup on shutdown:**
+
+Add a cleanup function that closes all peer connections:
+
+```python
+import atexit
+
+@atexit.register
+def _cleanup_rtc():
+    async def _close_all():
+        for pc in list(_peer_connections):
+            await pc.close()
+    asyncio.run_coroutine_threadsafe(_close_all(), _rtc_loop).result(timeout=5)
+```
+
+**(e) Simplify camera threads:**
+
+The `_signing_jpeg_thread` (lines 177-187) can be removed entirely since WebRTC encodes its own video (VP8/H264). The `_speaking_camera_thread` can also stop encoding JPEGs -- just store raw frames:
+
+In `_speaking_camera_thread`, change lines 160-163 and 168-171 to just store the raw frame without `cv2.imencode`. The `_speaking_jpeg` global is no longer needed.
+
+However, if you want a graceful fallback for clients that cannot do WebRTC, keep the MJPEG routes and JPEG encoding as-is. The recommendation is to remove them since the goal is full replacement.
+
+**(f) Optional: STUN configuration for non-localhost:**
+
+For WebRTC to work through NAT (e.g., when the server is on LAN and browser is remote), configure STUN:
+
+```python
+from aiortc import RTCConfiguration, RTCIceServer
+
+RTC_CONFIG = RTCConfiguration(
+    iceServers=[RTCIceServer(urls=["stun:stun.l.google.com:19302"])]
+)
+```
+
+Then use `RTCPeerConnection(configuration=RTC_CONFIG)` instead of bare `RTCPeerConnection()`.
+
+For localhost operation, no STUN is needed -- aiortc will use host candidates.
+
+---
+
+#### 3. `templates/dashboard.html` -- WebRTC Client JS
+
+**What to remove:**
+- All `<img src="/video/signing">` elements (lines 536, 584, 622 in different tabs)
+- All `<img src="/video/speaking">` elements (lines 553, 584)
+
+**What to replace them with:**
+- `<video>` elements with `autoplay playsinline muted` attributes
+
+Specifically:
+
+Line 536: Replace `<img src="/video/signing" alt="Signing camera feed">` with:
+```html
+<video id="video-signing-demo" autoplay playsinline muted></video>
+```
+
+Line 553-554: Replace the `<img src="/video/speaking"...>` with:
+```html
+<video id="video-speaking-demo" autoplay playsinline muted
+       style="display:none"
+       onloadedmetadata="this.style.display='block'; this.nextElementSibling.style.display='none'"></video>
+```
+
+Line 584 (glasses tab): Replace `<img src="/video/speaking"...>` with:
+```html
+<video id="video-speaking-glasses" autoplay playsinline muted></video>
+```
+
+Line 622 (audience tab): Replace `<img src="/video/signing"...>` with:
+```html
+<video id="video-signing-audience" autoplay playsinline muted></video>
+```
+
+**New JavaScript** (replace or augment the existing `<script>` block):
+
+Add a `connectWebRTC(feed, videoElementId)` function:
+
+```javascript
+function connectWebRTC(feed, videoElementId) {
+    const pc = new RTCPeerConnection({
+        iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+    });
+
+    pc.ontrack = (event) => {
+        const el = document.getElementById(videoElementId);
+        if (el) el.srcObject = event.streams[0];
+    };
+
+    // We only receive video, but must add a transceiver to get it
+    pc.addTransceiver('video', { direction: 'recvonly' });
+
+    pc.createOffer().then(offer => {
+        return pc.setLocalDescription(offer);
+    }).then(() => {
+        // Wait for ICE gathering to complete (simplifies exchange)
+        return new Promise(resolve => {
+            if (pc.iceGatheringState === 'complete') {
+                resolve();
+            } else {
+                pc.onicegatheringStatechange = () => {
+                    if (pc.iceGatheringState === 'complete') resolve();
+                };
+            }
+        });
+    }).then(() => {
+        socket.emit('webrtc_offer', {
+            feed: feed,
+            sdp: {
+                sdp: pc.localDescription.sdp,
+                type: pc.localDescription.type,
+            }
+        });
+    });
+
+    socket.on('webrtc_answer', (data) => {
+        if (data.feed === feed) {
+            pc.setRemoteDescription(new RTCSessionDescription(data.sdp));
+        }
+    });
+
+    return pc;
+}
+```
+
+Key design decisions in this JS:
+- **Wait for ICE gathering to complete before sending the offer.** This avoids trickle ICE, which simplifies the signaling to a single offer/answer exchange. aiortc also gathers all candidates before responding.
+- **`addTransceiver('video', { direction: 'recvonly' })`** tells the browser we want to receive video but not send any. This is critical -- without it, the offer won't include a video media section.
+- **`autoplay playsinline muted`** on the video elements ensures the browser plays the stream without user interaction (Chrome requires `muted` for autoplay).
+
+**Tab switching logic update:**
+
+The current tab switching code (lines 752-758) does nothing special for video. With WebRTC, streams continue flowing even when the tab panel is hidden via `display: none` -- this is one of the key advantages over MJPEG.
+
+However, to save bandwidth, you could optionally disconnect WebRTC for hidden tabs. The simpler approach: connect all feeds on page load and let them run. WebRTC is efficient enough that two VP8 streams at 640x480@30fps use roughly 1-2 Mbps total (vs 3-6 MB/s for MJPEG).
+
+**Initialization on page load:**
+
+After the `socket.on('connect')` handler, add:
+
+```javascript
+socket.on('connect', () => {
+    document.getElementById('status-pill').classList.add('live');
+    document.getElementById('status-text').textContent = 'Connected';
+    
+    // Connect WebRTC feeds
+    connectWebRTC('signing', 'video-signing-demo');
+    connectWebRTC('speaking', 'video-speaking-demo');
+    connectWebRTC('signing', 'video-signing-audience');
+    // Glasses tab uses speaking feed
+    connectWebRTC('speaking', 'video-speaking-glasses');
+});
+```
+
+This creates 4 peer connections (2 signing, 2 speaking) -- one per `<video>` element. Each peer connection gets its own `VideoStreamTrack` instance on the server, but they all read from the same shared frame buffers, so the overhead is minimal (just VP8 encoding per connection).
+
+If you want to reduce encoding overhead, an optimization is to encode once and fan out, but that requires a more complex architecture. For a demo with 1-2 browser tabs, 4 connections is fine.
+
+**Reconnection handling:**
+
+WebRTC connections can drop. Add reconnection logic:
+
+```javascript
+function connectWebRTC(feed, videoElementId) {
+    // ... existing code ...
+    
+    pc.onconnectionstatechange = () => {
+        if (pc.connectionState === 'failed' || pc.connectionState === 'disconnected') {
+            pc.close();
+            setTimeout(() => connectWebRTC(feed, videoElementId), 2000);
+        }
+    };
+    
+    return pc;
+}
+```
+
+---
+
+#### 4. `templates/audience.html` -- Same WebRTC Changes
+
+The standalone audience page (line 86-87) has `<img src="/video/signing">`. Replace with:
+
+```html
+<video id="video-signing-aud" autoplay playsinline muted
+       style="width:100%;height:100%;object-fit:cover"></video>
+```
+
+Add the same `connectWebRTC` function and SocketIO-based initialization. The audience page already loads `socket.io.min.js` (line 7), so add the WebRTC JS after the existing `<script>` block at line 104:
+
+```javascript
+// WebRTC connection for audience view
+function connectWebRTC(feed, videoElementId) {
+    // Same implementation as dashboard.html
+}
+
+socket.on('connect', () => {
+    connectWebRTC('signing', 'video-signing-aud');
+});
+```
+
+Since audience.html is a standalone page (not tabbed), it only needs one connection for the signing feed.
+
+---
+
+### Threading Model Summary
+
+After migration, the thread layout is:
+
+| Thread | Purpose | Changed? |
+|--------|---------|----------|
+| Main thread | Flask + SocketIO server | No |
+| `_signing_camera_thread` | Captures frames from signing camera | No |
+| `_speaking_camera_thread` | Captures frames from speaking camera | Simplified (remove JPEG encoding) |
+| `_signing_jpeg_thread` | Encodes annotated frame to JPEG | **Removed** |
+| `asl_detection_loop` | MediaPipe + TGCN + DTW + NMM | No |
+| `listen_continuously` | Speech recognition via microphone | No |
+| **`_run_rtc_loop` (NEW)** | asyncio event loop for all aiortc operations | **New** |
+
+The aiortc event loop thread handles all peer connections, ICE negotiation, and VP8 encoding internally. VP8 encoding happens inside aiortc's pipeline on this loop's thread pool.
+
+### Data Flow (After Migration)
+
+```
+Camera hardware
+    |
+    v
+_signing_camera_thread  -->  latest_raw_frame (numpy, BGR)
+    |                              |
+    |                    asl_detection_loop reads it
+    |                              |
+    |                              v
+    |                    latest_annotated_frame (numpy, BGR, with MediaPipe landmarks)
+    |                              |
+    v                              v
+_speaking_camera_thread    SigningVideoTrack.recv()
+    |                        reads latest_annotated_frame
+    |                        converts BGR -> RGB -> av.VideoFrame
+    v                        aiortc encodes to VP8
+latest_speaking_frame             |
+    |                             v
+    v                    WebRTC media channel --> Browser <video>
+SpeakingVideoTrack.recv()
+    reads latest_speaking_frame
+    converts BGR -> RGB -> av.VideoFrame
+    aiortc encodes to VP8
+         |
+         v
+    WebRTC media channel --> Browser <video>
+```
+
+### Potential Issues and Mitigations
+
+1. **VP8 encoding CPU load.** aiortc encodes VP8 in software. At 640x480@30fps, this uses roughly 15-25% of one core per stream. With 4 peer connections, that is up to 4 encode threads. Mitigation: reduce resolution or framerate for additional connections, or share a single encode and fan out (requires custom relay track, not worth the complexity for a demo).
+
+2. **`fractions.Fraction` import.** The `time_base` on `av.VideoFrame` must be a `fractions.Fraction`, not a float. Missing this causes a runtime error.
+
+3. **Color space.** OpenCV frames are BGR. `av.VideoFrame.from_ndarray` with `format="rgb24"` expects RGB. The `cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)` conversion is mandatory.
+
+4. **ICE gathering timeout.** The JS waits for ICE gathering to complete before sending the offer. On some networks, this can take several seconds. The 10-second timeout in `future.result(timeout=10)` on the server side accommodates this.
+
+5. **Multiple `webrtc_answer` listeners.** Each call to `connectWebRTC` adds a new `socket.on('webrtc_answer')` listener. Since each checks `data.feed === feed`, this works, but with 4 connections for 2 feeds, both signing connections will both try to process the same answer. Fix: use a unique connection ID (e.g., `data.conn_id`) in the signaling messages. Add a `conn_id = str(uuid4())` on the client, pass it in the offer, and echo it back in the answer. Then filter on `conn_id` instead of `feed`.
+
+6. **macOS camera permissions.** No change from current -- the app already accesses cameras via OpenCV.
+
+7. **Localhost operation.** WebRTC to localhost works out of the box. aiortc generates host ICE candidates (127.0.0.1), and the browser accepts them. No STUN needed for this case, but including STUN is harmless and enables LAN/remote access.
+
+### Implementation Sequence
+
+1. Add `aiortc` to `requirements.txt` and `pip install` it.
+2. Add the asyncio loop thread, `VideoStreamTrack` subclasses, and SocketIO signaling handlers to `app.py`.
+3. Remove the MJPEG generators, routes, and `_signing_jpeg_thread`.
+4. Simplify `_speaking_camera_thread` to stop JPEG encoding (just store raw frames).
+5. Update `dashboard.html`: replace `<img>` with `<video>`, add WebRTC JS.
+6. Update `audience.html`: same changes.
+7. Test on localhost with both cameras.
+8. Test through Cloudflare tunnel (video should now be peer-to-peer, bypassing the tunnel for media while signaling still goes through it).
+
+### Critical Files for Implementation
+- `/Users/naomiivie/asl-translation-glasses/app/app.py`
+- `/Users/naomiivie/asl-translation-glasses/app/templates/dashboard.html`
+- `/Users/naomiivie/asl-translation-glasses/app/templates/audience.html`
+- `/Users/naomiivie/asl-translation-glasses/app/requirements.txt`
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

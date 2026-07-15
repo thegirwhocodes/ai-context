@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vas2nets.com
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:31:49 UTC
+========================================================================
+
+URL: https://vas2nets.com
+Extraction prompt: Extract ALL details about VAS2Nets services. Do they offer USSD push / network-initiated USSD? Do they have SS7 access? What USSD services do they provide? Do they connect directly to Nigerian MNOs? What is their USSD gateway capability? Any mention of NI-USSD, MT-USSD, push USSD, or USSD during voice calls?
+
+----------------------------------------
+
+# VAS2Nets USSD Services Analysis
+
+Based on the webpage content provided, here's what can be determined about their USSD offerings:
+
+## Confirmed Services
+VAS2Nets lists **"Shortcode"** and **"USSD"** as distinct service offerings in their product menu, indicating they provide USSD services.
+
+## Information NOT Found
+The webpage contains **no specific details** regarding:
+
+- USSD push/network-initiated USSD capabilities
+- SS7 access or infrastructure
+- Direct MNO connections for USSD delivery
+- Gateway specifications (NI-USSD, MT-USSD, or push USSD)
+- USSD during voice call functionality
+- Technical architecture or routing methods
+
+## What IS Documented
+The company holds relevant authorizations:
+- NCC licensing as "value added service provider using short codes"
+- CBN certification as a Payment Solution Service Provider (PSSP)
+
+## Conclusion
+While VAS2Nets advertises USSD services, this webpage provides no technical specifications about their USSD gateway capabilities, delivery methods, or network integration details. Contacting them directly via their "Get in Touch" page would be necessary to obtain such information.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

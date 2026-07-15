@@ -1,0 +1,108 @@
+========================================================================
+AGENT RESEARCH: Deep-read recent June sessions
+Session: 206a510c-15a9-493c-871b-756300bdb015
+Time: 2026-06-07 19:21:11 UTC
+========================================================================
+
+Read these session transcript files fully, start to finish, in chunks (do not skip the middle, do not stop early):
+1. `/Users/naomiivie/Education for Equality/.claude-sessions/262aa5fe-cda2-4ed7-a392-fae7f4a7f583.txt` (~1.5MB, dated June 6 2026 — this is the biggest/most recent)
+2. `/Users/naomiivie/Education for Equality/.claude-sessions/59f31767-cced-4a634-b634-035568bd5da7.txt` (~94KB, June 5) — NOTE if path is wrong, the correct file is `59f31767-cced-4a634-b634-035568bd5da7.txt`; if not found use `59f31767-cced-4a634-b634-035568bd5da7`. Actually the correct filename is `59f31767-cced-4a634-b634-035568bd5da7.txt` — if that errors, list the directory `/Users/naomiivie/Education for Equality/.claude-sessions/` and find the file starting with `59f31767`.
+3. The file starting with `4c119a40` in that same directory (~16KB, June 6).
+4. The file starting with `3d2ba6a5` (~63KB, June 5) and `416308b0` (~52KB, June 6).
+
+Context: These recent sessions appear to be about an "email-agent" that lives at `/Users/naomiivie/bethel/email-agent/`, plus possibly the Bethel iOS app (a Bible + dream journal + AI app). I need to understand what the MOST RECENT work was.
+
+Report back in detail:
+1. What is the "email-agent" — what does it do, what was built, current state? Is it related to the Bethel Bible app or a totally separate project that just happens to live in the bethel/ folder?
+2. Was ANY work done on the Bethel Bible/dream iOS app (Swift) in these recent sessions? If so, what?
+3. What was the LAST thing being worked on / the most recent plan or unfinished task across these sessions?
+4. Any plans stated as "next we'll do X" that were left unfinished.
+5. Quote Naomi's (the user's) exact words for intent/plans/frustration.
+
+Be thorough and specific with what you find. Your report is the only thing that survives.
+
+----------------------------------------
+
+I now have a complete picture. The unlock-gatekeeper feature (June 5, 16:27-16:29) was built and tested (the audit log shows 3 real test verdicts: a ceiling-deny, an entertainment-deny, and an evidence-backed challenge). It was likely built during the Kai/Sleep Well session (3d2ba6a5, which had email-agent's server.py open and ran 17:33-20:46 — but the unlock files predate that at 16:27). It connects the email-agent's Gmail-evidence capability to the "Sleep Well" bedtime lock. Everything is uncommitted (only "Initial commit" exists, email-agent fully untracked).
+
+I have everything needed for a thorough report.
+
+---
+
+## Report: Bethel `email-agent` + recent session work
+
+### 1. What the "email-agent" is
+
+A **personal, voice-first AI email agent for Naomi** that lives at `/Users/naomiivie/bethel/email-agent/`. Tagline from its own docs: *"Claude is the brain. It runs on a loop, reads your Gmail, triages it, and leaves good replies waiting in your Drafts — in your voice, never sent without you."* Design principle repeated everywhere: **"Autonomous on judgment. Gated on consequence."**
+
+**Relationship to the Bethel Bible app: essentially none — it's a separate project that just lives inside the `bethel/` folder.** The build session (`59f31767`) opened with Naomi voice-dictating "open a space for me in bethel the terminal claude code," and Claude noted: *"This is the Bethel dream-journaling app, but the email agent is a new thing. I'll create a dedicated workspace for it inside the Bethel folder."* So it was deliberately nested in `bethel/` as a convenient home, not as a Bethel feature.
+
+It is the **continuation/evolution of the Cortex personal-AI idea** (Cortex's stated MVP was "a Gmail email agent"). Over the sessions it grew a nickname/identity: **"Sage."**
+
+**What's built (all confirmed working against Naomi's live `nivie@wesleyan.edu` inbox, 29k+ messages):**
+- **Desktop dashboard** — React+Vite frontend (`localhost:1420`) + FastAPI backend (`localhost:8765`, `desktop/backend/server.py`). Claude (Haiku for triage, Opus for drafting) classifies the inbox into Needs-Reply / Opportunities 🎯 / Deals 🛍️ / FYI / Escalate / Junk, with a one-line "why" per email. Opportunities explain *why each job fits her background* (consulting/finance/PM/tech).
+- **✨ Draft button** — Claude writes a reply in her voice, saves to Gmail Drafts, never sends. Tested live.
+- **Archive/cleanup** — `gmail.modify` OAuth token authorized (`oauth/token.json`); 200 promotional emails archived (reversible).
+- **🎙️ "Sage" voice cockpit** (`desktop/voice/sage.py`) — Alexa-style loop: Whisper STT (`:2022`) → Claude Opus 4.8 → Kokoro TTS (`:8880`, voice `af_sky`), with tools `get_inbox`/`archive`/`draft_reply`. Built and proven (it spoke + recorded), but **local Whisper is painfully slow (~60s/turn) on her 8GB M1 Air**.
+- **🌐 Handshake browser agent** (`desktop/browser/handshake.py`) — uses `browser-use` + Chromium to *prepare* an internship application (fills fields, attaches the right resume version, drafts short answers) and **stops before Submit**. Compiles; needs a supervised first run + her Handshake login.
+- **The original v1 TS scaffold** (`src/agent.ts`, `tools.ts`, `guardrails.ts`) — the dual-LLM/CaMeL-inspired safety design (untrusted email only hits a no-tools summarizer; the send-gate is code, not a prompt; there is literally no `sendEmail()`).
+- **Safety/escalation works** — it surfaced a genuinely important buried email: a **$7,000 NVA grant payment** from the Patricelli Center with a lapsing deadline (`WHAT_YOU_MISSED.md`), escalated rather than acted on. Naomi confirmed the $7k landed.
+
+**The newest feature — a "Sleep Well unlock gatekeeper"** (`prompts/unlock-gatekeeper.md` + `/api/verify-unlock` in `server.py`, files dated **June 5, 16:27**, the most recent code in the project). This repurposes Sage as a bedtime-lock gatekeeper: after her chosen bedtime her devices lock; to unlock early she must convince Sage, who searches her **real Gmail for evidence** that the reason is genuinely urgent (a real deadline/interview), and returns grant/challenge/deny with a weekly hard cap of 3. It has an append-only audit log (`unlock-audit.jsonl`) showing 3 real test verdicts (a ceiling-deny, an entertainment-request deny, and an evidence-backed challenge for an econ problem set). Note: this gatekeeper feature is **not documented in any of the five transcripts I read** — it appears to have been built in a separate session (likely tied to the "Kai"/Sleep Well pomodoro work), but it lives in and reuses the email-agent's Gmail plumbing.
+
+### 2. Was any work done on the Bethel Bible/dream iOS (Swift) app?
+
+**No.** None of these recent (June) sessions touched the Bethel Bible/dreams app. Across all transcripts, Bethel-the-Bible-app appears only as **background project inventory** (e.g. the efd7d7d2 recap: *"Bethel — Bible + Dreams + Notes app, extensive theological research done, Expo project created but no app code yet"*). Its status remains: extensive theological research saved in `bethel/research/`, an Expo project shell, **no app code written**. Also note the platform never moved to Swift in any session I read — it's still described as an Expo/React Native project (the memory note about "Swift native" predates these sessions and wasn't acted on here).
+
+### 3. The LAST thing being worked on
+
+The **email-agent / Sage**, specifically. The build session `59f31767` (June 2–5) ended **mid-test of the Sage voice loop** on June 5 at 20:12 UTC — Sage was generating its greeting and Claude was waiting for Naomi to speak; the session log just cuts off there. The most-recently-modified files are `PRODUCT_DIRECTION.md` (June 5, 17:02) and the unlock-gatekeeper feature (June 5, 16:27).
+
+The final June 6 session (`4c119a40`) was **pure navigation** — Naomi trying to relocate which session built the email agent ("hey which session were we building the email agent?"), with Claude clarifying session IDs/folders, opening the project in Antigravity, and creating a symlink shortcut to the portfolio session. No building happened there; it ended with Claude offering to make the same shortcuts for the email-agent and internship-hunt sessions.
+
+### 4. Stated "next we'll do X" / unfinished tasks
+
+From `PRODUCT_DIRECTION.md`, `desktop/README.md`, `README.md`, and the session end-states:
+- **Make Sage usable today** — wire **cloud STT** (Deepgram/OpenAI Whisper API) since local Whisper is too slow on the 8GB Air. (Blocked: no OpenAI key in her credential trove.)
+- **Wake word "Hey Sage"** (Porcupine/OpenWakeWord) for true always-on.
+- **Wrap the dashboard in a Tauri shell** for a real `.app` icon — deferred because Rust compiles are heavy on 8GB (planned for the future Mac mini).
+- **First supervised run of the Handshake browser agent** on a real posting (held back from the 8GB machine — Chromium would push it into heavy swapping).
+- **⭐ Naomi's June 5 voice requirement (in `PRODUCT_DIRECTION.md`):** the agent should run on **all her devices, synced — "think Apple"** (Mac, iPhone, iPad). Revised plan: turn the backend into a hosted service (Mac mini or cloud), make the dashboard a responsive **PWA**, add per-device voice, optionally native iOS apps later.
+- **Voice few-shots from her Sent folder**, per-contact memory, decide digest cadence, move up autonomy tiers (currently Tier 1, draft-only).
+- **Commit the work** — Claude flagged that the entire email-agent is **uncommitted**: the `bethel` repo has only `19ef300 "Initial commit"` and `git ls-files email-agent` returns 0 files. Nothing is version-controlled yet.
+
+A recurring real-world thread throughout `59f31767`: Naomi's **8GB M1 MacBook Air is maxed out** (swapping ~8GB constantly), which is the actual blocker for voice + browser. Claude advised a **used 16GB M1 Mac mini (~$450) run headless off the Air + a ~$70 external SSD**; this hardware decision was discussed at length but not resolved/purchased.
+
+### 5. Naomi's exact words (intent / plans / frustration)
+
+Intent / vision:
+- *"open a spcae for me in bethel the terminal claude code"* (the dictated kickoff)
+- *"is the email agent complete? What does its body look like - maybe it can be like Alexa tbh - just a black screen and it talks to me, does the digest you said, we have a conversation - what are the things claude cna do? maybe we can attach some of claude's capabiliteis to it - for example there are things in my browser I want to do - do deep research into what it takes to build an agent that does such things"*
+- *"do all"* (greenlighting the Draft button + voice loop + browser layer all at once)
+- (via voice, paraphrased in `PRODUCT_DIRECTION.md`) the agent must run on **all her devices, synced, "think Apple."**
+
+Wanting to continue / locate the work (June 6):
+- *"hey which session were we building the email agent?"*
+- *"no in bethel - most recently - is that this? 59f31767"*
+- *"tell me for all the sessions - I want to continue work"*
+- *"Continue from where you left off."*
+- *"can you rename it portfolio sess so I can locate it"*
+
+Frustration (mostly with voice/latency and the hardware):
+- *"alos the mic didn;t open"*
+- *"it's taking much longer than before - it never loaded that's why I clicked the cancel button"*
+- *"bro continue why taking so long"*
+- *"okay whatever let's just continue the emial agent"* (after a long hardware-shopping tangent)
+- *"if we test will my computer crash?"*
+
+---
+
+**Key file paths:** `/Users/naomiivie/bethel/email-agent/` (root), with `desktop/backend/server.py` (the live backend incl. triage, draft-reply, and the verify-unlock gatekeeper), `desktop/frontend/src/App.tsx` (dashboard), `desktop/voice/sage.py` (voice cockpit), `desktop/browser/handshake.py` (browser agent), `prompts/about-naomi.md` + `prompts/system.md` + `prompts/unlock-gatekeeper.md` (the agent's brain), and the docs `README.md`, `ARCHITECTURE.md`, `RESEARCH.md`, `VISION_PERSONAL_AGENT.md`, `PRODUCT_DIRECTION.md`, `WHAT_YOU_MISSED.md`. The actual build transcript is `/Users/naomiivie/Education for Equality/.claude-sessions/59f31767-cced-4a64-b634-035568bd5da7.txt` (filed under E4E only because that's where Claude Code was launched).
+agentId: a113decc136445f6a (use SendMessage with to: 'a113decc136445f6a' to continue this agent)
+<usage>subagent_tokens: 144997
+tool_uses: 28
+duration_ms: 192167</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

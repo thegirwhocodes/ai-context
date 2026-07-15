@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.engagespark.com/pricing/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:59 UTC
+========================================================================
+
+URL: https://www.engagespark.com/pricing/
+Extraction prompt: What are engageSPARK's pricing plans? Especially voice IVR pricing for Nigeria or Africa. Include all plan tiers, per-minute costs, and any details about callback/missed call features.
+
+----------------------------------------
+
+# engageSPARK Pricing Information
+
+I cannot provide specific details about engageSPARK's pricing plans, voice IVR costs for Nigeria/Africa, or callback/missed call feature pricing based on the content provided.
+
+The webpage content you shared consists primarily of HTML, CSS, and JavaScript code from the Divi theme framework. While the page is titled "Pricing - SMS, Voice, WhatsApp, and Airtime Campaigns in 200+ Countries," the actual pricing data, plan tiers, and per-minute rates are not included in the code snippet you provided.
+
+**To find this information, you would need to:**
+- Visit the full pricing page directly at engageSPARK's website
+- Contact their sales team for region-specific pricing details
+- Check their documentation or pricing tables on the live website
+
+The metadata confirms they offer SMS, Voice, WhatsApp, and Airtime services globally, but specific pricing details aren't available in the source you shared.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

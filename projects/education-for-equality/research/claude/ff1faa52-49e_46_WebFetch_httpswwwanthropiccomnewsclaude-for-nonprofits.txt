@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.anthropic.com/news/claude-for-nonprofits
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 05:00:51 UTC
+========================================================================
+
+URL: https://www.anthropic.com/news/claude-for-nonprofits
+Extraction prompt: Does Claude for Nonprofits include API access? Or is it just the Team/Enterprise chat plans? What exactly is included? What's the discount?
+
+----------------------------------------
+
+# Claude for Nonprofits: What's Included
+
+Based on the announcement, Claude for Nonprofits focuses on **chat/collaboration tools rather than API access**. Here's what's included:
+
+## The Three Main Components
+
+1. **Discounted Plans**: Up to 75% off Team and Enterprise plans (chat-based products)
+2. **Nonprofit Tool Connectors**: Integrations with Benevity, Blackbaud, and Candid
+3. **Free Training**: "AI Fluency for Nonprofits" course
+
+## What You Get at the Discounted Price
+
+Access to three Claude models:
+- **Claude Opus 4.6** — highest intelligence for complex tasks
+- **Claude Sonnet 4.5** — suited for grant writing and program analysis
+- **Claude Haiku 4.5** — faster performance with near-frontier capability
+
+## Plan Details
+
+The **Team plan** targets smaller organizations needing shared projects and organizational knowledge. The **Enterprise plan** suits larger nonprofits requiring additional security and administrative controls.
+
+## The Bottom Line
+
+The offering targets organizations using Claude's chat interface collaboratively. There's no mention of API pricing discounts—this package is designed around the existing Team and Enterprise chat products that nonprofits can use for internal workflows, grant writing, and donor engagement.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

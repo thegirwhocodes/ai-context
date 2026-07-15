@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ONNX Runtime LSTM inference speed Python faster than PyTorch sign language 2025
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 11:18:21 UTC
+========================================================================
+
+Search query: ONNX Runtime LSTM inference speed Python faster than PyTorch sign language 2025
+
+----------------------------------------
+
+Web search results for query: "ONNX Runtime LSTM inference speed Python faster than PyTorch sign language 2025"
+
+Links: [{"title":"Does ONNX increase inference efficiency compared to pytorch model? - deployment - PyTorch Forums","url":"https://discuss.pytorch.org/t/does-onnx-increase-inference-efficiency-compared-to-pytorch-model/194980"},{"title":"ONNX vs PyTorch Speed: In-Depth Performance Comparison","url":"https://dev-kit.io/blog/machine-learning/onnx-vs-pytorch-speed-comparison"},{"title":"🚀 Make Your Models Fly: ONNX Runtime Latency Gains for Pytorch | by Manevaish | Medium","url":"https://medium.com/@manevaish17/make-your-models-fly-onnx-runtime-latency-gains-for-pytorch-with-9e26d645889e"},{"title":"onnxruntime inference is around 5 times slower than pytorch when using GPU · Issue #10303 · microsoft/onnxruntime","url":"https://github.com/microsoft/onnxruntime/issues/10303"},{"title":"Make your model faster on CPU using ONNX - UbiOps - AI model serving, orchestration & training","url":"https://ubiops.com/make-your-model-faster-on-cpu-using-onnx/"},{"title":"ONNX Runtime | Home","url":"https://onnxruntime.ai/"},{"title":"From PyTorch to ONNX: How Performance and Accuracy Compare | by Claudia Yao | Medium","url":"https://medium.com/@claudia.yao2012/from-pytorch-to-onnx-how-performance-and-accuracy-compare-a6f4747c1171"},{"title":"Run The Deep Learning Model 4~5x Faster with ONNX Runtime | by ardiantovn | Medium","url":"https://medium.com/@ardiantovn/run-the-deep-learning-model-4-5x-faster-with-onnx-runtime-760db96cabdb"},{"title":"9x Model Serving Performance Without Changing Hardware","url":"https://martynassubonis.substack.com/p/optimize-for-speed-and-savings-high"},{"title":"AI Inference Acceleration with Python ONNX Runtime: Deploying Models on Edge Devices 2025","url":"https://johal.in/ai-inference-acceleration-with-python-onnx-runtime-deploying-models-on-edge-devices-2025/"}]
+
+I've completed the web search for your query. The search results show general information about ONNX Runtime and PyTorch inference speed comparisons, but they don't include specific results about sign language applications or LSTM-specific benchmarks in 2025.
+
+Here are the key findings from the search:
+
+**General ONNX Runtime Performance Benefits:**
+- Most users see 2x–10x faster inference with ONNX Runtime on CPU
+- For a batch size of 1, ONNX Runtime averages an inference time of 24.17 ms, while PyTorch records 30.39 ms
+- ONNX serving in Python handles approximately 7.18 times more requests per second than torch-serving (255.53 vs. 35.62 requests/sec)
+
+**Edge Device Performance:**
+- Against PyTorch Mobile, ONNX Runtime clocks 2.5x faster inference (12ms vs 30ms on Jetson) due to fused kernels, with memory usage halved (45MB vs 120MB) via INT8 quantization
+
+However, the search results do not contain specific benchmarks comparing ONNX Runtime LSTM inference speed versus PyTorch for sign language applications or any 2025 studies focused on this particular use case.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

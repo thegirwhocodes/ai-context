@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: netcatsolutions.ng SIP trunk setup guide Asterisk configuration Nigeria
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:46:50 UTC
+========================================================================
+
+Search query: netcatsolutions.ng SIP trunk setup guide Asterisk configuration Nigeria
+
+----------------------------------------
+
+Web search results for query: "netcatsolutions.ng SIP trunk setup guide Asterisk configuration Nigeria"
+
+Links: [{"title":"SIP Trunking with Asterisk: A Beginner's Guide - ConnectSIP","url":"https://connectsip.com/sip-tunking-asterisk/"},{"title":"Asterisk SIP Trunk Setup: Learn How To Configure Asterisk With Our Step-By-Step Guide","url":"https://didlogic.com/setup/setup-guides/asterisk-based/asterisk-setup/"},{"title":"[asterisk-users] Sip trunk between Asterisk and Mitel 3300 ICP","url":"https://lists.digium.com/pipermail/asterisk-users/2007-July/191630.html"},{"title":"SIP Trunk service","url":"https://netcatsolutions.ng/sip-trunk-service/"},{"title":"Asterisk: Configure an Asterisk IP trunk | Telnyx Help Center","url":"https://support.telnyx.com/en/articles/1130628-asterisk-configure-an-asterisk-ip-trunk"},{"title":"SIP Trunk Configuration - Asterisk - Help Center","url":"https://support.sip.us/hc/en-us/articles/201914177-SIP-Trunk-Configuration-Asterisk"},{"title":"Asterisk config sip.conf - VoIP-Info","url":"https://www.voip-info.org/asterisk-config-sipconf/"},{"title":"Step by Step How to setup SIP trunks in Asterisk? | DIDforSale : DIDforSale","url":"https://www.didforsale.com/step-by-step-how-to-setup-sip-trunks-in-asterisk"},{"title":"User Manual - IP PBX Configuration - Asterisk | GoTrunk","url":"https://gotrunk.com/docs/ippbxconfiguration/asterisk/"},{"title":"Local asterisk and SIP trunk - Asterisk Support - Asterisk Community","url":"https://community.asterisk.org/t/local-asterisk-and-sip-trunk/97608"}]
+
+Based on the search results, I found information about netcatsolutions.ng and their SIP trunk services:
+
+## Netcat Solutions SIP Trunk Service for Asterisk
+
+Netcat Technology PBX SIP Trunking is field-tested with almost every IP PBX vendor on the market, including 3CX, Yeastar, Shoretel, FreePBX, Mitel, Asterisk, Elastix, NEC, Panasonic, and many more.
+
+### Key Features and Benefits
+
+Netcat allows you to connect your PBX to their local SIP Trunk while keeping all RTP media and SIP signalling in-country, which reduces latency and jitter in the voice, with quality voice termination guaranteed.
+
+The service provides your business with a local presence through national, toll-free, and local virtual numbers using their SIP Trunk service, with DID numbers allowing your company to make outbound calls and receive calls, while calls from external PSTN/GSM numbers are directed to your DID number when called.
+
+### Additional Services
+
+Netcat delivers the service, reliability and quality businesses demand at a price that makes sense, helping to cut down phone bills and improve customer experience.
+
+However, the search results don't contain a detailed step-by-step configuration guide specific to netcatsolutions.ng. For specific setup instructions tailored to their service, you would need to visit their website directly or contact their support team.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://sorenson.com/newsroom/enterprise/sorenson-acquires-omnibridge-and-hand-t
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:29:06 UTC
+========================================================================
+
+URL: https://sorenson.com/newsroom/enterprise/sorenson-acquires-omnibridge-and-hand-talk-to-develop-automated-sign-language-translation-capabilities/
+Extraction prompt: Extract ALL details from this press release: acquisition terms, what OmniBridge and Hand Talk do, technical details, timeline, product plans, quotes from executives, strategic rationale. Full content.
+
+----------------------------------------
+
+# Sorenson Communications Acquires OmniBridge and Hand Talk
+
+## Acquisition Overview
+Sorenson Communications has acquired OmniBridge and Hand Talk to accelerate innovation in AI-driven automated sign language translation capabilities.
+
+## Company Descriptions
+
+**OmniBridge**: Details about OmniBridge's specific services are not provided in the available content.
+
+**Hand Talk**: A company specializing in automated sign language translation technology.
+
+## Acquisition Details
+
+**Financial Terms**: No acquisition price or financial terms are disclosed in the press release excerpt.
+
+**Timeline**: The announcement was published January 23, 2025, with the last modification dated January 28, 2026.
+
+## Strategic Rationale
+The acquisitions represent Sorenson's effort to develop automated sign language translation capabilities, expanding beyond their existing Video Remote Interpreting (VRI), CaptionCall, and Sorenson VRS product lines.
+
+## Executive Quotes
+No executive quotes are included in the provided webpage content.
+
+## Technical Details & Product Plans
+Specific technical implementation details, product development timelines, or integration plans are not outlined in the available material.
+
+## Additional Information
+- Author: Andrea Castro
+- Article Type: NewsArticle (per schema markup)
+- Sorenson's existing focus areas: VRS services, captioning solutions, and enterprise interpreting services across education, healthcare, and other sectors
+
+*Note: The full press release content appears truncated in the source material provided.*
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw Clawdbot amazing automations what can it do examples reddit twitter
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:28:37 UTC
+========================================================================
+
+Search query: OpenClaw Clawdbot amazing automations what can it do examples reddit twitter
+
+----------------------------------------
+
+Web search results for query: "OpenClaw Clawdbot amazing automations what can it do examples reddit twitter"
+
+Links: [{"title":"OpenClaw — Personal AI Assistant","url":"https://openclaw.ai/"},{"title":"OpenClaw (Clawdbot) Tutorial: Control Your PC from WhatsApp | DataCamp","url":"https://www.datacamp.com/tutorial/moltbot-clawdbot-tutorial"},{"title":"GitHub - VoltAgent/awesome-openclaw-skills: The awesome collection of OpenClaw Skills. Formerly known as Moltbot, originally Clawdbot.","url":"https://github.com/VoltAgent/awesome-openclaw-skills"},{"title":"OpenClaw use cases: 25 ways to automate work and life","url":"https://www.hostinger.com/tutorials/openclaw-use-cases"},{"title":"From Clawdbot to OpenClaw: When Automation Becomes a Digital Backdoor by Lucie Cardiet","url":"https://www.vectra.ai/blog/clawdbot-to-moltbot-to-openclaw-when-automation-becomes-a-digital-backdoor"},{"title":"GitHub - openclaw/openclaw: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞","url":"https://github.com/clawdbot/clawdbot"},{"title":"A sane but extremely bull case on Clawdbot / OpenClaw | Brandon Wang","url":"https://brandon.wang/2026/clawdbot"},{"title":"What is OpenClaw? Your Open-Source AI Assistant for 2026 | DigitalOcean","url":"https://www.digitalocean.com/resources/articles/what-is-openclaw"},{"title":"How to Set Up Openclaw (Previously Clawdbot / Moltbot) — Step by Step guide to setup a personal bot | by Nikhil | Neural Notions | Jan, 2026 | Medium","url":"https://medium.com/modelmind/how-to-set-up-clawdbot-step-by-step-guide-to-setup-a-personal-bot-3e7957ed2975"},{"title":"I Used Clawdbot (OpenClaw) for 6 Hours so You Don't Have to Buy a Mac Mini - #108","url":"https://theagilevc.substack.com/p/i-used-clawdbot-openclaw-for-6-hours"}]
+
+Based on the search results, here's what OpenClaw (formerly known as Clawdbot and Moltbot) can do with amazing automations:
+
+## What is OpenClaw?
+
+OpenClaw is a self-hosted AI agent that connects messaging apps like WhatsApp and Telegram to a coding agent running on your desktop. It gained significant attention with 60,000+ GitHub stars in 72 hours.
+
+## Key Automation Examples from Reddit and Twitter
+
+### Task & Calendar Automation
+Every 15 minutes, OpenClaw looks through new text messages, and if it finds you've made a specific promise about doing something tomorrow, it will create a calendar event for you the next day when you're free. If specific plans are being made, it will automatically drop a "hold" onto your calendar so you don't double book yourself.
+
+### Email & Productivity
+Users can control Gmail, Calendar, WordPress, and Hetzner from Telegram. OpenClaw can automate tasks from Todoist and independently assess how it can help in the background.
+
+### Web Automation & Data Integration
+OpenClaw can log into reservation platforms like Resy and OpenTable, and look through calendars to find evenings when people are both free while checking restaurant availability.
+
+### Smart Home & Health Integration
+Users have had OpenClaw write custom meditations, then have automatic text-to-speech, combining with generated ambient audio to make personalized, custom meditations.
+
+### Social Media & Research
+OpenClaw can conduct real-time research on X/Twitter, track replies to posts, and draft responses.
+
+### File Management
+OpenClaw can search files, run shell commands, execute Python scripts, generate reports, control smart home devices, manage calendars, and automate workflows.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

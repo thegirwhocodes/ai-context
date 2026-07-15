@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cal.com open source scheduling growth strategy Product Hunt community 2025 2026
+Session: 53755257-7d3a-471d-9294-085caf5ec916
+Time: 2026-03-29 20:40:39 UTC
+========================================================================
+
+Search query: Cal.com open source scheduling growth strategy Product Hunt community 2025 2026
+
+----------------------------------------
+
+Web search results for query: "Cal.com open source scheduling growth strategy Product Hunt community 2025 2026"
+
+Links: [{"title":"Cal.com: Scheduling infrastructure for absolutely everyone | Product Hunt","url":"https://www.producthunt.com/products/cal"},{"title":"The best scheduling software in 2026 | Product Hunt","url":"https://www.producthunt.com/categories/scheduling"},{"title":"How this open-source Calendly alternative rocketed to Product of the Day | Product Hunt","url":"https://www.producthunt.com/stories/how-this-open-source-calendly-alternative-rocketed-to-product-of-the-day"},{"title":"Cal.com | Open Scheduling Infrastructure","url":"https://cal.com/about"},{"title":"GitHub - calcom/cal.com: Scheduling infrastructure for absolutely everyone. · GitHub","url":"https://github.com/calcom/cal.com"},{"title":"Cal.com Review: Is this Open-Source Scheduling Tool Worth Your Time? - Maple Metric","url":"https://maplemetric.com/cal-com-review/"},{"title":"Open Source Scheduling - Custom Features Guide | Cal.com | Cal.com - Scheduling Software for Online Bookings","url":"https://cal.com/blog/open-source-scheduling-empower-your-team-with-customizable-features"},{"title":"18-year-old raises $32m to build opensource calendar called Cal.com","url":"https://getlatka.com/blog/18-year-old-raises-32m-to-build-opensource-version-of-calendly/"},{"title":"Engineering in 2026 and Beyond | Cal.com - Scheduling Software for Online Bookings","url":"https://cal.com/blog/engineering-in-2026-and-beyond"},{"title":"Implementation Blueprint: Strategically Rolling Out Open Source Scheduling Solutions | Cal.com - Open Scheduling Infrastructure","url":"https://cal.com/blog/implementation-blueprint-strategically-rolling-out-open-source-scheduling-solutio"}]
+
+Based on the search results, here's what I found about Cal.com's open source scheduling growth strategy and Product Hunt community engagement:
+
+## Cal.com Overview
+
+Cal.com is described as "The open source Calendly alternative" that allows users to "Self host it, or have it hosted." The platform stands out for open-source, embeddable scheduling with APIs, workflows, and team routing for product teams and marketplaces.
+
+## Growth Strategy
+
+Cal.com aims to empower the next generation to build scheduling applications on top of the platform, similar to how WordPress built an entire ecosystem around its open core. To grow and finance their team, they've launched a hosted plan while also allowing users to self-host the entire codebase.
+
+Cal.com has ambitious plans to propel the platform to be a critical part of remote human-to-human connections, with a goal to connect 1 billion people by 2031.
+
+## Product Hunt Community
+
+Thanks to the huge traction gained during their Product Hunt launch, they've been working hard to improve the product with the help of the community. On the 15th of each month, on the anniversary of their Product Hunt, they release version updates and announce new funding support, which generates media coverage and social media spikes in new customers.
+
+## 2025-2026 Focus
+
+Cal.com's engineering organization consists of five core teams including consumer, enterprise, and platform-focused teams, plus a Community Team responsible for quickly reviewing PRs from the open source community.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

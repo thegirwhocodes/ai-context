@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Pose-TGCN WLASL100 WLASL2000 accuracy top-1 specific numbers benchmark graph con
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:37:23 UTC
+========================================================================
+
+Search query: Pose-TGCN WLASL100 WLASL2000 accuracy top-1 specific numbers benchmark graph convolutional
+
+----------------------------------------
+
+Web search results for query: "Pose-TGCN WLASL100 WLASL2000 accuracy top-1 specific numbers benchmark graph convolutional"
+
+Links: [{"title":"Word-Level American Sign Language (WLASL)","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl"},{"title":"WLASL: Word-Level ASL Video Dataset","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl-video-dataset"},{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"Enhancing Word-Level Translation of American Sign Language Using Modified","url":"https://cs231n.stanford.edu/2024/papers/enhancing-word-level-translation-of-american-sign-language-using.pdf"},{"title":"sharonn18/tgcn-wlasl · Hugging Face","url":"https://huggingface.co/sharonn18/tgcn-wlasl"},{"title":"Word-level Deep Sign Language Recognition from Video:","url":"https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Word-level_Deep_Sign_Language_Recognition_from_Video_A_New_Large-scale_WACV_2020_paper.pdf"},{"title":"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison - Paper Detail","url":"https://deeplearn.org/arxiv/112140/word-level-deep-sign-language-recognition-from-video:-a-new-large-scale-dataset-and-methods-comparison"},{"title":"A Comprehensive Study on Word-Level ASL Recognition: WLASL Dataset and Methods Comparison - Studocu","url":"https://www.studocu.vn/vn/document/truong-dai-hoc-bach-khoa-ha-noi/nhap-mon-hoc-may-va-khai-pha-du-lieu/word-level-deep-sign-language-recognition-from-video-a-new-large-scale-dataset-and-methods-comparison/79641511"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"},{"title":"[PDF] Hand Pose Guided 3D Pooling for Word-level Sign Language Recognition | Semantic Scholar","url":"https://www.semanticscholar.org/paper/Hand-Pose-Guided-3D-Pooling-for-Word-level-Sign-Hosain-Santhalingam/4414fb6c1639370aeb7488dca35f53741520e7f1"}]
+
+Based on the search results, here are the specific benchmark numbers for Pose-TGCN on the WLASL dataset:
+
+## Pose-TGCN Top-1 Accuracy Results
+
+Pose-TGCN attains ~55.43% top-1 on WLASL100.
+
+For a more detailed breakdown across different WLASL subsets, here are the complete results:
+
+Pose-TGCN achieves 55% top-1 accuracy on WLASL100, 38% on WLASL300, 34% on WLASL1000, and 23% on WLASL2000.
+
+## Key Context
+
+Pose-TGCN is a Pose-based Temporal Graph Convolutional Network that captures spatial and temporal dependencies in signer kinematics.
+
+The results show a clear performance degradation as vocabulary size increases, which is a well-documented challenge in sign language recognition. Temporal augmentation (speed jittering or resampling) is crucial for pose-based methods, highlighting important considerations for achieving optimal performance with this architecture.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

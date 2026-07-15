@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: WAXAL Google dataset African languages ASR TTS speech
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:30:49 UTC
+========================================================================
+
+Search query: WAXAL Google dataset African languages ASR TTS speech
+
+----------------------------------------
+
+Web search results for query: "WAXAL Google dataset African languages ASR TTS speech"
+
+Links: [{"title":"Google Research Africa Launches WAXAL, Open Dataset Covering 21 African Languages - TechAfrica News","url":"https://techafricanews.com/2026/02/02/google-research-africa-launches-waxal-open-dataset-covering-21-african-languages/"},{"title":"Google AI Releases WAXAL: A 24-Language African Speech Dataset for ASR and TTS • Dev|Journal","url":"https://earezki.com/ai-news/2026-03-17-google-ai-releases-waxal-a-multilingual-african-speech-dataset-for-training-automatic-speech-recognition-and-text-to-speech-models/"},{"title":"Google Launches WAXAL African Languages Dataset | Let's Data Science","url":"https://letsdatascience.com/news/google-launches-waxal-african-languages-dataset-b1ae1933"},{"title":"Introducing WAXAL: A New Open Dataset for African Speech Technology","url":"https://blog.google/intl/en-africa/company-news/outreach-and-initiatives/introducing-waxal-a-new-open-dataset-for-african-speech-technology/"},{"title":"WAXAL: Google Releases 2,400 Hours of Speech Data for 27 African Languages – ToKnow.ai","url":"https://toknow.ai/posts/waxal-google-african-language-speech-dataset-27-languages/"},{"title":"Google AI Releases WAXAL: A Multilingual African Speech Dataset for Training Automatic Speech Recognition and Text-to-Speech Models - MarkTechPost","url":"https://www.marktechpost.com/2026/03/17/google-ai-releases-waxal-a-multilingual-african-speech-dataset-for-training-automatic-speech-recognition-and-text-to-speech-models/"},{"title":"google/WaxalNLP · Datasets at Hugging Face","url":"https://huggingface.co/datasets/google/WaxalNLP"},{"title":"WAXAL: A large-scale open resource for African language speech technology","url":"https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology/"},{"title":"WAXAL: A Large-Scale Multilingual African Language Speech Corpus","url":"https://arxiv.org/pdf/2602.02734"},{"title":"WAXAL: A Large-Scale Multilingual African Language Speech Corpus","url":"https://arxiv.org/html/2602.02734v3"}]
+
+Based on the search results, here's what I found about WAXAL:
+
+## Overview
+
+WAXAL is a large-scale, openly accessible speech dataset that covers 27 Sub-Saharan African languages spoken by over 100 million speakers across more than 26 countries. The name comes from the Wolof word for "speak," and the dataset was developed over three years to empower researchers and drive the development of inclusive technology across Africa.
+
+## Dataset Contents
+
+The initial release features approximately 1,846 hours of transcribed natural speech for automatic speech recognition (ASR) and over 565 hours of high-fidelity recordings for text-to-speech (TTS).
+
+**ASR Component:** The ASR portion was collected using image-prompted speech, where speakers were shown images and asked to describe what they saw in their native language, which is a more natural setup than simple prompted reading.
+
+**TTS Component:** The TTS side is designed around controlled recording conditions, phonetically balanced scripts, and cleaner single-speaker audio suited for synthesis.
+
+## Languages and Coverage
+
+The collection features both ASR and TTS data for languages such as Acholi, Kiswahili, Luganda, Akan, and Ewe; ASR data for Shona, Fula, and Lingala; and TTS data for Hausa, Igbo, and Yoruba, among others.
+
+## Funding and Access
+
+The datasets were acquired through partnerships with Makerere University, The University of Ghana, Digital Umuganda, Media Trust, Loud and Clear, and AIMS Senegal, funded by Google and the Gates Foundation under an agreement to make the dataset openly accessible.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

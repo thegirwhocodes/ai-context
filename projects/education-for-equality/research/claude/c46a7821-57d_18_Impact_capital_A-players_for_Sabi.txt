@@ -1,0 +1,36 @@
+========================================================================
+AGENT RESEARCH: Impact capital A-players for Sabi
+Session: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+Time: 2026-07-15 18:45:53 UTC
+========================================================================
+
+You are researching REAL, NAMED people (not organizations in the abstract) who could take an African edtech nonprofit to the next level as FUNDERS or capital connectors.
+
+CONTEXT — the company: "Sabi" by Education for Equality. A voice-AI literacy & numeracy tutor delivered over ordinary PHONE CALLS (works on feature phones, via Africa's Talking telephony) to Nigerian children. Currently pre-pilot. The plan: run a 200,000-child randomized controlled trial (RCT) with the Lagos State government (LASUBEB/UBEC), prove learning gains, then raise $3–6M to scale to millions of kids across Nigeria. Structured as a US 501(c)(3) nonprofit (owns the IP) + a future Nigerian entity. Founder is a solo technical builder (Wesleyan student, Nigerian heritage). Won 2nd place at the MIT Africa Business Challenge.
+
+YOUR TASK: Produce a detailed shortlist of 10–15 REAL, NAMED individuals in the IMPACT-CAPITAL world who could fund or unlock funding for Sabi at the $3–6M scale-up stage. Focus on:
+- Named program officers / directors / partners at foundations that fund African education & edtech at scale: e.g., Gates Foundation, Mastercard Foundation (esp. their Nigeria/education teams), Imaginable Futures (Omidyar), Jacobs Foundation, Lemann Foundation, LEGO Foundation, Echoing Green, Draper Richards Kaplan, Mulago Foundation, the ELMA Foundation, Human Capital / Big Win Philanthropy.
+- Named partners/principals at Africa-focused VCs & impact funds that back edtech/education: TLcom, Verod, Future Africa, Ingressive Capital, Aruwa, Acumen (esp. Acumen's education work), Novastar, Kaleo, ELMA, Jasper Ridge.
+- Notable individual angels / operator-investors known for backing African education ventures.
+
+For EACH person return, in full (do NOT summarize — give the actual detail):
+1. Full name + current exact title & organization.
+2. Why they specifically fit Sabi (what they've funded before, their thesis, any Nigeria/education/voice/phone-based-learning angle).
+3. What they would unlock (grant size range, network, credibility, board potential).
+4. How to reach them / warm-path hints (accelerators they run, application windows, public email/Twitter/LinkedIn if known, events they attend).
+5. Any specific fit or risk notes.
+
+Use WebSearch/WebFetch extensively. Prioritize people ACTIVE in 2025–2026. Return real names with sources (URLs). If you can't verify a name, say so rather than inventing. End with a "Sources" list of URLs.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: a88759823aa3dfafb (internal ID - do not mention to user. Use SendMessage with to: 'a88759823aa3dfafb', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/c46a7821-57d5-46ff-9dac-304ed0ef2cbc/tasks/a88759823aa3dfafb.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

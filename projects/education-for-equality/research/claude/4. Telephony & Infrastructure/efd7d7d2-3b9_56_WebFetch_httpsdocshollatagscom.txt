@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.hollatags.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:57 UTC
+========================================================================
+
+URL: https://docs.hollatags.com/
+Extraction prompt: What voice API features does HollaTags support? IVR, custom audio playback, recording, webhooks, call control? How does their voice API work — what are the endpoints, webhook structure, and capabilities? Is there XML/JSON for call control like Africa's Talking?
+
+----------------------------------------
+
+Based on the provided content, I cannot answer your questions about HollaTags' voice API features, endpoints, webhook structures, or call control capabilities.
+
+The documentation excerpt mentions that HollaTags enables "SMS, USSD & Voice functionalities" but provides no technical details about voice-specific features. The content focuses exclusively on HTTP and SMPP protocols for SMS/USSD, with no information about IVR, audio playback, recording, webhooks, call control, or XML/JSON structures for voice services.
+
+To get answers about their voice API, you would need to contact their support team at help@hollatags.com or access the complete documentation beyond what's shown here.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

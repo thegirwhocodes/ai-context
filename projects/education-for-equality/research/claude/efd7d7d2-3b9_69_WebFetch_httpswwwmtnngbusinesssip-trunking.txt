@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.mtn.ng/business/sip-trunking/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 05:26:36 UTC
+========================================================================
+
+URL: https://www.mtn.ng/business/sip-trunking/
+Extraction prompt: What are the exact pricing details for MTN SIP Trunking? Specifically: does the ₦0.22/sec (22k/sec) tariff apply to toll-free 0800 inbound calls? What are all the pricing tiers, setup fees, monthly fees, and per-second/per-minute rates? Is there any distinction between inbound toll-free rates and regular SIP rates?
+
+----------------------------------------
+
+# MTN SIP Trunking Pricing Details
+
+Based on the provided content, here's what is explicitly stated:
+
+## Standard Plan Pricing
+
+- **One-off setup fee:** ₦450,000
+- **Monthly rental fee (30 concurrent sessions):** ₦37,625
+- **Tariff (On/Off Net):** "22k/sec"
+
+## Additional Sessions
+
+The document lists tiered pricing for extra sessions:
+- 5 Sessions: ₦7,095/month
+- 10 Sessions: ₦13,760/month
+- 15 Sessions: ₦20,210/month
+- 20 Sessions: ₦26,338/month
+- 25 Sessions: ₦32,143/month
+
+## Important Limitations
+
+The content does **not** specify:
+- Whether the 22k/sec rate applies differently to toll-free 0800 numbers versus regular calls
+- Any distinction between inbound toll-free rates and standard rates
+- Whether pricing varies based on call direction (inbound vs. outbound)
+
+The documentation indicates "Pricing is split into a one-off setup fee and a monthly rental fee" based on concurrent sessions, but lacks granular detail on tariff variations by call type. For toll-free specific pricing, you would need to contact MTN directly at letstalk.ng@mtn.com.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

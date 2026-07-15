@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://expo.scsp.ai/hackathon/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 22:50:09 UTC
+========================================================================
+
+URL: https://expo.scsp.ai/hackathon/
+Extraction prompt: List every named winner, winning team, winning project, prize amount, track, and judge from the AI+ Expo hackathon (2024 and 2025 editions). Include any partner names, sponsor names, and links to project repos. Quote names and project descriptions verbatim.
+
+----------------------------------------
+
+# AI+ Expo Hackathon Winners Information
+
+Based on the webpage content provided, **no information about winners, winning teams, projects, prize amounts, tracks, or judges from the 2024 and 2025 hackathon editions is available**.
+
+The page describes the **2026 hackathon** scheduled for April 25-26, 2026, with details about four competition tracks:
+
+1. Cloud Laboratories
+2. Electric Grid Optimization
+3. Wargaming
+4. GenAI.mil
+
+The page references "Previous AI Expos" but does not include specific winner details, project repositories, or judge information for any past events. To find this information, you would need to access the "Previous AI Expos" section linked on their website or contact the event organizers at hack@scsp.ai.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

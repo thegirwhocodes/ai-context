@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: MediaPipe hand landmarks LSTM ASL sign recognition pretrained model python simpl
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:12:57 UTC
+========================================================================
+
+Search query: MediaPipe hand landmarks LSTM ASL sign recognition pretrained model python simple real-time webcam github
+
+----------------------------------------
+
+Web search results for query: "MediaPipe hand landmarks LSTM ASL sign recognition pretrained model python simple real-time webcam github"
+
+Links: [{"title":"MediaPipe’s Landmarks with RNN for Dynamic Sign Language Recognition","url":"https://www.mdpi.com/2079-9292/11/19/3228"},{"title":"GitHub - aqua1907/Gesture-Recognition: ASL language recognition using pre-trained MediaPipe models","url":"https://github.com/aqua1907/Gesture-Recognition"},{"title":"Mediapipe and CNNs for Real-Time ASL Gesture Recognition Rupesh Kumar","url":"https://arxiv.org/pdf/2305.05296"},{"title":"American Sign Language Recognition for Alphabets Using MediaPipe and LSTM - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S1877050922021378"},{"title":"Full article: MP-GestLSTM: real time gesture detection using MediaPipe and LSTM","url":"https://www.tandfonline.com/doi/full/10.1080/21642583.2025.2587853"},{"title":"SLRNet: A Real-Time LSTM-Based Sign Language Recognition System","url":"https://arxiv.org/html/2506.11154v1"},{"title":"LSTM-Based Recognition of Sign Language","url":"https://dl.acm.org/doi/fullHtml/10.1145/3675888.3676105"},{"title":"Enhancing Sign Language Detection through Mediapipe and Convolutional Neural Networks (CNN)","url":"https://arxiv.org/html/2406.03729v1"},{"title":"GitHub - ts42a/asl-landmark-classifier: # ASL Alphabet Recognition (MediaPipe Landmarks + Classical ML) Real-time American Sign Language (ASL) alphabet (A–Z) recognition using MediaPipe hand landmarks (63D) and classical machine learning.","url":"https://github.com/ts42a/asl-landmark-classifier/tree/main"},{"title":"(PDF) MediaPipe’s Landmarks with RNN for Dynamic Sign Language Recognition","url":"https://www.researchgate.net/publication/364279614_MediaPipe's_Landmarks_with_RNN_for_Dynamic_Sign_Language_Recognition"}]
+
+Based on the web search results, here are relevant resources and information about MediaPipe hand landmarks with LSTM for ASL sign recognition:
+
+## Key Research and Projects
+
+SLRNet is a real-time system that recognizes dynamic hand gestures using MediaPipe Holistic landmark extraction and LSTM networks, processing live video streams via webcam to classify ASL letters and words. The code and dataset are available at https://github.com/Khushi-739/SLRNet
+
+MP-GestLSTM is a lightweight LSTM-based model trained on a custom MP-Gest dataset comprising 800 videos across 20 ASL word-level classes, designed as a webcam-based system for real-time gesture classification.
+
+Research has combined MediaPipe framework with RNN models including LSTM for dynamic sign language recognition, with GRU, LSTM, and Bi-directional LSTM provided for DSL recognition.
+
+## GitHub Repositories
+
+A GitHub project based on Google's MediaPipe Hands uses hand landmarks detected via BlazePalm Detector to extract 2-D or 3-D coordinates of hand positions.
+
+The asl-landmark-classifier is a machine learning system for ASL alphabet recognition using MediaPipe hand landmarks (63D) and classical machine learning, with real-time recognition capabilities.
+
+## Accuracy Results
+
+Hand gesture recognition using LSTM has achieved 99% accuracy on 26 ASL alphabets. Other models achieved accuracy of more than 99% on dynamic sign language recognition tasks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

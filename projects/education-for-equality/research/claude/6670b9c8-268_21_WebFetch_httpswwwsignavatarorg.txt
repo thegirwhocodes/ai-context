@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signavatar.org/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:53 UTC
+========================================================================
+
+URL: https://www.signavatar.org/
+Extraction prompt: Extract ALL technical details about SignAvatar: what it does, how it works, who built it, technical approach, supported sign languages, accuracy, demo availability, pricing. Full details.
+
+----------------------------------------
+
+# SignAvatar Technical Details
+
+## What It Does
+SignAvatar is an AI-powered sign language translation system that converts speech announcements into visual sign language and 30+ written languages in real-time for public transportation hubs and airports.
+
+## How It Works
+The system operates as "a software layer on top of the PA software that receives audio feeds from any PA system through standard audio interfaces." It translates announcements into text and sign language within 3-4 seconds, with no hardware modifications required to existing PA systems.
+
+## Supported Languages & Sign Languages
+- **Written Languages:** 30+ including Spanish, German, French, and Turkish
+- **Sign Languages:** American Sign Language (ASL), International Sign Language, with plans for regional variants (LSQ, Libras)
+
+## Display Platforms
+Announcements appear on:
+- FIDS/GIDS airport screens
+- Wi-Fi captive portals
+- Browser pages within airport/airline apps
+- QR code or URL access
+- No special software or user registration needed
+
+## Builders & Partnerships
+Founded by AI engineers and Deaf leaders. Backed by Bosch, Microsoft, NVIDIA, Google for Startups, and others.
+
+## Implementation Timeline
+Approximately 6 weeks for typical deployment workflow.
+
+## Pricing & Demo
+The page does not specify pricing details. No demo pricing or availability information is provided on the page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

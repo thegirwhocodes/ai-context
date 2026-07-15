@@ -1,0 +1,59 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Gemini API JSON mode python 2026 simple structured output free tier rate limits
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 07:35:33 UTC
+========================================================================
+
+Search query: Gemini API JSON mode python 2026 simple structured output free tier rate limits
+
+----------------------------------------
+
+Web search results for query: "Gemini API JSON mode python 2026 simple structured output free tier rate limits"
+
+Links: [{"title":"Generate structured output (like JSON and enums) using the Gemini API | Firebase AI Logic","url":"https://firebase.google.com/docs/ai-logic/generate-structured-output"},{"title":"Structured Output and JSON Mode | google-gemini/cookbook | DeepWiki","url":"https://deepwiki.com/google-gemini/cookbook/4.4-structured-output-and-json-mode"},{"title":"Rate limits | Gemini API | Google AI for Developers","url":"https://ai.google.dev/gemini-api/docs/rate-limits"},{"title":"Google Gemini Tutorial: Structured Outputs with Instructor - Instructor","url":"https://python.useinstructor.com/integrations/google/"},{"title":"How to consistently output JSON with the Gemini API using controlled generation | by Polong Lin | Google Cloud - Community | Medium","url":"https://medium.com/google-cloud/how-to-consistently-output-json-with-the-gemini-api-using-controlled-generation-887220525ae0"},{"title":"Improving Structured Outputs in the Gemini API","url":"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-structured-outputs/"},{"title":"Truncated responses despite being under limits - Gemini API - Google AI Developers Forum","url":"https://discuss.ai.google.dev/t/truncated-responses-despite-being-under-limits/87898"},{"title":"Building Real-Time Voice Agents: Gemini 2.5 Live API, FastAPI, and Queue-Based Concurrency Tutorial","url":"https://lablab.ai/ai-tutorials/building-voice-agents-gemini-live-fastapi"},{"title":"The good, the bad, and the ugly of Gemini’s structured outputs – Dylan Castillo","url":"https://dylancastillo.co/posts/gemini-structured-outputs.html"},{"title":"Structured output | Generative AI on Vertex AI | Google Cloud Documentation","url":"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output"}]
+
+Based on the search results, here's what I found about Gemini API JSON mode, Python structured output, and free tier rate limits:
+
+## JSON Mode and Structured Output in Python
+
+The Gemini API supports two levels of structured output control: JSON Mode (setting response_mime_type to enforce JSON-formatted responses without schema constraints) and Schema-Constrained Output (combining response_mime_type with response_schema to enforce specific data structures using TypedDict definitions).
+
+For Python specifically, the SDK automatically parses schema-constrained responses with the response.parsed attribute providing a dictionary matching the TypedDict schema structure, ready for immediate use without manual JSON parsing.
+
+JSON Schema support has been added to all actively supported Gemini models, enabling libraries like Pydantic (Python) to work out-of-the-box with the Gemini API.
+
+## Free Tier Rate Limits
+
+The free tier allows 1,500 requests per day with 1 million tokens per request, and you can build and test production applications without hitting rate limits.
+
+For more detailed rate limit information, rate limits depend on a variety of factors such as your usage tier and can be viewed in Google AI Studio, and as your tier and account status change over time, your rate limits will automatically update.
+
+## Simple Example
+
+Here's a basic Python example using the Gemini API with structured output:
+
+```python
+import google.generativeai as genai
+from pydantic import BaseModel
+
+class User(BaseModel):
+    name: str
+    age: int
+
+client = genai.Client()
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Extract: Jason is 25 years old",
+    config=genai.types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_schema=User
+    )
+)
+```
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

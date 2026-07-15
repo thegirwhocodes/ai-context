@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/ResembleAI/chatterbox-turbo
+Session: 296c88b8-ddfe-4a6e-9eca-0eaa089bcb55
+Time: 2026-03-13 04:43:07 UTC
+========================================================================
+
+URL: https://huggingface.co/ResembleAI/chatterbox-turbo
+Extraction prompt: Is this model gated/restricted or fully public? Can it be downloaded without a HuggingFace token?
+
+----------------------------------------
+
+# Chatterbox-Turbo Model Access
+
+Based on the webpage content, **this model appears to be fully public and does not require a Hugging Face token** for download.
+
+## Evidence:
+
+1. **No gating mentioned**: The page contains no restrictions, access gates, or token requirements in the model documentation.
+
+2. **Public installation**: The installation instructions are straightforward and public:
+   ```bash
+   pip install chatterbox-tts
+   ```
+
+3. **Open-source**: The model is explicitly described as "open-source" and references the public GitHub repository:
+   ```
+   https://github.com/resemble-ai/chatterbox
+   ```
+
+4. **MIT License**: The model card clearly states `License: mit`, which is a permissive open-source license.
+
+5. **Direct code examples**: The page provides complete, unrestricted usage examples showing how to load and use the model:
+   ```python
+   from chatterbox.tts_turbo import ChatterboxTurboTTS
+   model = ChatterboxTurboTTS.from_pretrained(device="cuda")
+   ```
+
+**Conclusion**: You can download and use this model without requiring a Hugging Face authentication token. It's freely available as an open-source project.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

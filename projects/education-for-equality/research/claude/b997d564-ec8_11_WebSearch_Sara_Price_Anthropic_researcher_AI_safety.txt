@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Sara Price Anthropic researcher AI safety
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:47 UTC
+========================================================================
+
+Search query: Sara Price Anthropic researcher AI safety
+
+----------------------------------------
+
+Web search results for query: "Sara Price Anthropic researcher AI safety"
+
+Links: [{"title":"Sara Price - Anthropic | LinkedIn","url":"https://www.linkedin.com/in/sara-price-310757b2/"},{"title":"Sara Price - Personal Website","url":"https://sbp354.github.io/"},{"title":"Sara Price","url":"https://scholar.google.com/citations?user=OrdOvlgAAAAJ&hl=en"},{"title":"Sara Price on X: \"The Anthropic Fellows program is one of the best ways to get hands on safety research experience. I got into AI safety research through fellowships like this and am incredibly grateful that I did. I strongly encourage anyone interested in impactful alignment research to apply!\" / X","url":"https://x.com/sprice354_/status/1999290872622657892"},{"title":"Sara Price Email & Phone Number | AI Safety and Alignment Researcher - ContactOut","url":"https://contactout.com/sara-price-94447"},{"title":"Anthropic AI Safety Fellow","url":"https://aijobs.ai/index.php/job/anthropic-ai-safety-fellow"},{"title":"Anthropic hiring Anthropic Fellows Program — AI Safety • Remote (Work from Home) | Himalayas","url":"https://himalayas.app/companies/anthropic/jobs/anthropic-fellows-program-ai-safety?pos=8"},{"title":"Petri: An open-source auditing tool to accelerate AI safety ...","url":"https://www.anthropic.com/research/petri-open-source-auditing"},{"title":"Sara Price (@sprice354_) / Posts / X","url":"https://x.com/sprice354_"},{"title":"Job Application for Anthropic Fellows Program — AI Safety at Anthropic","url":"https://job-boards.greenhouse.io/anthropic/jobs/5183044008"}]
+
+Based on the search results, here's information about Sara Price, an AI safety researcher at Anthropic:
+
+## Background and Current Role
+
+Sara Price is an AI alignment and safety researcher based in the Bay Area who has been working in machine learning since 2016 and switched to AI alignment work at the beginning of 2024 while participating in the Machine Learning Alignment Theory & Scholars (MATS) program. She is currently a Member of Technical Staff at Anthropic in San Francisco.
+
+## Research Focus
+
+Her recent work has focused on adversarial robustness of multimodal LLMs, studying novel attacks that exploit the stochastic nature of LLM outputs in conjunction with their sensitivity to variations in continuous input spaces such as audio or vision modalities.
+
+## Notable Research Contributions
+
+Sara Price co-authored "Future Events as Backdoor Triggers: Investigating Temporal Vulnerabilities in LLMs" (2024), which investigates whether current LLMs distinguish between past and future events and trains them to behave differently when encountering future events, building on Anthropic's original Sleeper Agents paper by studying deceptive models with more complex triggers.
+
+She is also a co-author on Petri (Parallel Exploration of Risky Interactions), an open-source auditing tool designed to accelerate AI safety research.
+
+## Role at Anthropic
+
+Sara Price is listed as a potential mentor in Anthropic's Fellows Program for AI Safety research. She got into AI safety research through fellowships and encourages others interested in alignment research to apply to such programs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

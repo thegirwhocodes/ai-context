@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Antigravity" IDE install MCP server configuration settings
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:36:50 UTC
+========================================================================
+
+Search query: "Antigravity" IDE install MCP server configuration settings
+
+----------------------------------------
+
+Web search results for query: ""Antigravity" IDE install MCP server configuration settings"
+
+Links: [{"title":"Google Antigravity: How to add custom MCP server to improve Vibe Coding | by Tarun Jain | Google Developer Experts | Medium","url":"https://medium.com/google-developer-experts/google-antigravity-custom-mcp-server-integration-to-improve-vibe-coding-f92ddbc1c22d"},{"title":"n8n-mcp/docs/ANTIGRAVITY_SETUP.md at main · czlonkowski/n8n-mcp","url":"https://github.com/czlonkowski/n8n-mcp/blob/main/docs/ANTIGRAVITY_SETUP.md"},{"title":"How to Use MCP Servers in Antigravity (Setup Guide 2026)","url":"https://antigravity.codes/blog/antigravity-mcp-tutorial"},{"title":"How to connect MCP servers with Google Antigravity to maximize productivity | Composio","url":"https://composio.dev/content/howto-mcp-antigravity"},{"title":"github-mcp-server/docs/installation-guides/install-antigravity.md at main · github/github-mcp-server","url":"https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-antigravity.md"},{"title":"Connect Google Antigravity IDE to Google’s Data Cloud services | Google Cloud Blog","url":"https://cloud.google.com/blog/products/data-analytics/connect-google-antigravity-ide-to-googles-data-cloud-services"},{"title":"Antigravity Editor: MCP Integration","url":"https://antigravity.google/docs/mcp"},{"title":"Connecting Figma MCP Server with Google Antigravity | Figma Forum","url":"https://forum.figma.com/ask-the-community-7/connecting-figma-mcp-server-with-google-antigravity-48325"},{"title":"Antigravity - Klavis AI","url":"https://www.klavis.ai/docs/knowledge-base/use-mcp-server/antigravity"},{"title":"How can I add MCP to Antigravity? Encountering issues with integration - Ask the Community - Palantir Developer Community","url":"https://community.palantir.com/t/how-can-i-add-mcp-to-antigravity-encountering-issues-with-integration/5492"}]
+
+Based on the search results, here's information about installing and configuring MCP servers in Google Antigravity IDE:
+
+## Installation Steps
+
+Click on Agent session and select the "..." dropdown at the top of the editor's side panel, then select MCP Servers where you will find the MCP Store.
+
+To add a custom MCP server, select Manage MCP Servers at the top of the MCP store and then click on View raw config in the main tab.
+
+## Configuration File Location
+
+The mcp_config.json file is located at:
+- Windows: C:\Users\<USERNAME>\.gemini\antigravity\mcp_config.json
+- macOS/Linux: ~/.gemini/antigravity/mcp_config.json
+
+## Configuration Settings
+
+Modify the mcp_config.json with your custom MCP server configuration. 
+
+For HTTP-based servers, Antigravity requires serverUrl for HTTP-based MCP servers (rather than "url" used in other tools).
+
+A typical configuration structure includes the mcpServers object with server details such as command, args, and environment variables. Antigravity recommends keeping total enabled tools under 50 for optimal performance.
+
+After making changes, close and reopen Antigravity for the changes to take effect.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

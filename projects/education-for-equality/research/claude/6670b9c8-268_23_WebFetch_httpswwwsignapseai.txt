@@ -1,0 +1,59 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signapse.ai/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:50 UTC
+========================================================================
+
+URL: https://www.signapse.ai/
+Extraction prompt: Extract ALL info: what Signapse does, how it works, who founded it, funding raised, clients, pricing, technical approach (avatar generation? neural? motion capture?), supported languages, current deployments. Be exhaustive.
+
+----------------------------------------
+
+# Signapse: AI Sign Language Translation Platform
+
+## What Signapse Does
+Signapse provides "AI-powered sign language translation software providing real-time BSL and ASL translation" for broadcasts, digital content, events, and transport announcements. The company specializes in making audio-visual content accessible to deaf communities.
+
+## Products
+
+**SignStream API**: Real-time translator for "live, embedded, and scalable sign language translation" that generates videos on-demand. Users can test it at ai.signapse.com by typing sentences.
+
+**SignStudio Platform**: A video translation service enabling "seamless BSL and ASL sign language translations" for post-production content with customizable digital signers.
+
+**Transport Solutions**: Digital signage displaying "BSL and ASL" announcements for transit systems, generating "over 5,000 BSL train announcements daily throughout the UK."
+
+## Technical Approach
+The translation process involves:
+1. Large library of qualified sign language videos
+2. AI selects appropriate video combinations based on content
+3. AI blends videos with natural transitions and grammar accuracy
+4. Integration into final content
+
+The company uses "photo-realistic" generative AI but doesn't specify if avatars are synthetic, motion-captured, or human video compilations (disclaimer notes: "Not all videos are synthetic videos").
+
+## Supported Languages
+- British Sign Language (BSL)
+- American Sign Language (ASL) – recently launched for enterprise scale
+
+## Notable Clients & Deployments
+Network Rail, CVS, Northern Trains, South Western Railway, Clemson University, Transport for All, National Rail, airports, universities, NHS England, and 20+ other organizations across transport, education, and corporate sectors.
+
+## Founders & Team
+Described as "Deaf and hearing entrepreneurs, engineers, and researchers" but specific founder names not listed in content.
+
+## Funding & Recognition
+No funding amounts disclosed. Awards include:
+- Bupa eco-disruptive 2024 Shortlist
+- 2025 Slator Language AI 50 Under 50 Winner
+- IAGi Accelerator 2025 Shortlist
+- Zinemaldia Startup Challenge 2025 European Finalist
+
+## Pricing
+SignStudio has a monthly pricing tier (specific rates not detailed in content).
+
+## Location
+Cambridge, UK (St John's Innovation Centre)
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

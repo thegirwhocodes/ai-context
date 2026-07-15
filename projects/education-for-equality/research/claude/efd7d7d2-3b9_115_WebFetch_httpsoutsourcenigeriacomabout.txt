@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/about/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:30:18 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/about/
+Extraction prompt: Find company history, team, clients, evidence of legitimacy, how long they've been operating, any case studies or testimonials
+
+----------------------------------------
+
+# Outsource Nigeria Company Profile
+
+## Company History & Operations
+Outsource Nigeria has been operating since its inception (website indicates content from 2017), specializing in outsourced manpower solutions. The organization maintains "2 state-of-the-art offices in Lagos, Nigeria" and has trained "over 15,000 graduates on critical skills in information system and process automation."
+
+## Core Business Focus
+The company describes itself as "a full-service Human Resources agency, specializing in providing outsourced turnkey manpower solutions to growing companies." Services span recruitment process outsourcing, business process outsourcing, customer experience solutions, and call center operations.
+
+## Team & Expertise
+The website notes that "each of our seasoned executives brings a unique background and level of expertise in multiple disciplines and industries." Their vertical experience includes energy, technology, advertising, travel, retail, manufacturing, healthcare, and telecommunications sectors.
+
+## Key Values & Mission
+**Mission:** "Accelerate growth by simplifying and personalizing interactions that build deep engagement between people and brands."
+
+**Vision:** "To be an independent, sustainably profitable and globally focused firm, known for helping people and businesses succeed."
+
+## Contact Information
+- **Location:** 35A Bode Thomas Street, Surulere, Lagos
+- **Phone:** 08066938330, 07001111444
+- **Email:** info@outsourcenigeria.com
+
+*Note: The webpage lacks detailed case studies, client testimonials, or specific historical milestones beyond the founding period.*
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

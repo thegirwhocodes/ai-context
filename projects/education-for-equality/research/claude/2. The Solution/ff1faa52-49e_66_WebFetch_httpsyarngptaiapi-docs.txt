@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai/api-docs
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-10 20:56:22 UTC
+========================================================================
+
+URL: https://yarngpt.ai/api-docs
+Extraction prompt: Extract the EXACT voice names/IDs from the available voices list. I need the exact string values to pass in the API request, not just display names. Also extract the exact parameter names for the request body (is it 'format' or 'response_format'?).
+
+----------------------------------------
+
+# YarnGPT API Voice Names and Parameters
+
+## Exact Voice Names (for `voice` parameter):
+- Idera
+- Emma
+- Zainab
+- Osagie
+- Wura
+- Jude
+- Chinenye
+- Tayo
+- Regina
+- Femi
+- Adaora
+- Umar
+- Mary
+- Nonso
+- Remi
+- Adam
+
+## Request Body Parameters:
+The documentation specifies these exact parameter names:
+- `text` (required)
+- `voice` (optional)
+- `response_format` (optional) — not "format"
+
+The audio format options are: `mp3`, `wav`, `opus`, or `flac`, with `mp3` as the default.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

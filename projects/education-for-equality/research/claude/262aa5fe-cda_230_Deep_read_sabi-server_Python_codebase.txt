@@ -1,0 +1,64 @@
+========================================================================
+AGENT RESEARCH: Deep read sabi-server Python codebase
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 18:59:06 UTC
+========================================================================
+
+I'm a fresh Claude doing a deep dive on the sabi-server Python codebase at `/Users/naomiivie/Education for Equality/sabi-server/`. This is a FastAPI voice AI tutor server for Nigerian children — STT (Whisper) → LLM (Claude Haiku + Ollama fallback) → TTS (ElevenLabs + Chatterbox + YarnGPT fallback chain) called via phone (Africa's Talking + Twilio).
+
+Read these files in full and return AT LEAST 90% of the substantive content. Do NOT summarize. Return actual function signatures, route paths, data flow, third-party integrations, environment variables, fallback chains, lesson handling, every detail.
+
+**Files to read:**
+- `main.py` — FastAPI app entry
+- `voice.py` — Africa's Talking voice handler  
+- `voice_twilio.py` — Twilio voice handler
+- `voice_asterisk.py` — Asterisk SIP handler
+- `llm.py` — Claude/Ollama LLM wrapper
+- `stt.py` — Whisper STT
+- `tts.py` — TTS fallback chain
+- `memory.py` — student/call state persistence
+- `answer_matcher.py` — fuzzy answer matching
+- `secret_loader.py` — env/secrets handling
+- `normalize_money_for_speech.py` — text preprocessing
+- `load_test.py` — load testing
+- `Dockerfile` and `docker-compose.yml`
+- `nginx.conf` and `nginx-init.conf`
+- `server-setup.sh`
+- `requirements.txt`
+
+For EACH file, return:
+- File purpose (1 line)
+- All function/class signatures
+- All HTTP routes (path + method + what it does)
+- All env vars / secrets referenced
+- All third-party services called (URLs/SDKs)
+- All file I/O paths
+- Any TODOs, FIXMEs, or commented-out code that signals direction
+- Any inline comments explaining "why"
+
+For the deploy/config files (Dockerfile, docker-compose, nginx, requirements.txt):
+- Every service, port, volume mount, env var declaration
+- Every Python dependency with version pin
+- Every nginx route/proxy rule
+- The complete server-setup.sh script summary
+
+End with a one-page architecture diagram in text — how a phone call flows from telco → server → STT → LLM → TTS → back to telco, with which file handles each step.
+
+This is for Naomi Ivie, the solo founder, who's about to launch the pre-pilot with 10 kids and wants a fresh-eyes review of what's actually there.
+
+----------------------------------------
+
+<persisted-output>
+Output too large (51.8KB). Full output saved to: /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/toolu_011448kxGx6arpmWSqfJ9ksL.json
+
+Preview (first 2KB):
+[
+  {
+    "type": "text",
+    "text": "I now have everything I need. Here is the deep-dive return on the sabi-server codebase.\n\n---\n\n# sabi-server — Full Codebase Deep Dive\n\n## Top-level layout\n\n`/Users/naomiivie/Education for Equality/sabi-server/`\n\nSource files: `main.py`, `voice.py`, `voice_twilio.py`, `voice_asterisk.py`, `llm.py`, `stt.py`, `tts.py`, `memory.py`, `answer_matcher.py`, `secret_loader.py`, `normalize_money_for_speech.py`, `load_test.py`.\nConfig: `Dockerfile`, `docker-compose.yml`, `nginx.conf`, `nginx-init.conf`, `server-setup.sh`, `requirements.txt`, `.env.example`, `.gitignore`, `CLAUDE.md`.\nSubdirs: `asterisk/`, `chatterbox-tts/`, `afro-tts/`, `whisper-finetune/`, `voice-auditions/`, `audio_cache/` (created at runtime).\nVoice sample WAVs at root: `naomi_test_intro.wav`, `naomi_test_praise.wav`, `naomi_test_correction.wav`, `wura_test_long.wav`, `chatterbox_test_gentle_correction.wav`, `chatterbox_test_praise.wav`, `chatterbox_test_sabi_laugh.wav`.\n\n---\n\n## `main.py` — FastAPI entry point and orchestration\n\n**Purpose:** FastAPI app factory; mounts STT/TTS/LLM/memory on `app.state`, registers AT + Twilio routers, runs AGI server, exposes /stt /tts /llm /process-turn /asterisk/flash /health.\n\n**Module-level constants and helpers:**\n- `CHATTERBOX_URL = os.getenv(\"CHATTERBOX_URL\", \"http://localhost:8001\")`\n- `AUDIO_DIR = Path(\"audio_cache\")` (created on import)\n- `THINKING_CUES = [\"Hmm...\", \"Okay...\", \"Let me see...\", \"Ah...\", \"Right...\"]`\n- `def detect_exaggeration(text: str) -> float` — regex-detects emotion in LLM text and returns Chatterbox exaggeration:\n  - laugh/`!!`/\"Well done\"/\"Correct\"/\"Yes!\"/\"Great\"/\"Excellent\"/\"Sharp sharp\" → 0.75\n  - sigh/\"Almost\"/\"Good try\"/\"tricky\"/\"Let me help\" → 0.35\n  - chuckle/\"Oya\"/\"Let's try\"/\"ready\" → 0.6\n  - default 0.5\n- `async def synthesize_chatterbox(text, output_path) -> bool` — POSTs to `{CHATTERBOX_URL}/tts` with `{text[:2000], forma
+...
+</persisted-output>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

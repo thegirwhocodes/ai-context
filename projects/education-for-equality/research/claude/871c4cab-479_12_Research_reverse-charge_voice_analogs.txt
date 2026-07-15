@@ -1,0 +1,183 @@
+========================================================================
+AGENT RESEARCH: Research reverse-charge voice analogs
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-18 20:02:42 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed). Context: "Sabi" is a Nigerian voice-AI tutor children dial; we want the child to pay ₦0 WITHOUT using a 0800 toll-free number (toll-free is too expensive at ~₦14/min). Question: is there ANY reverse-charge / "collect call" / bill-the-other-party mechanism — even remotely — usable for our voice use case in Nigeria, OTHER than toll-free?
+
+Research and assess each, with how it works, whether it exists in Nigeria, cost, and feasibility for a small org:
+1. **Voice reverse-billing** — does any Nigerian carrier or VAS aggregator let the *content provider/callee* be billed for a normal inbound voice call (not an 0800 number)? Premium/short-code voice with reverse billing?
+2. **"Sponsored Call" products** — e.g. MTN "Sponsored Call" (user dials a zero-rated short code, listens to an ad, sponsor pays, user may be rewarded). Confirm details, who pays, eligibility, any African precedent. Similar operator "zero-rated call" or "free call to short code" products.
+3. **Collect-call / reverse-charge voice** — does it exist on any Nigerian network today? Internationally, how do modern equivalents work (operator-assisted collect, 0800, "bill-to-third-party")?
+4. **USSD-triggered callback** — is dialing a USSD code free on a ₦0 line in Nigeria (post-2025 NCC end-user-billing rules)? Could a free USSD code trigger a server callback (reverse-charge-like)? 
+5. **Missed-call / "flash" + callback as the de-facto reverse-charge** — confirm this is the real-world African substitute for collect calls (caller pays ₦0, org pays the callback). Any "missed-call-as-a-service" platforms (e.g. ZipDial, India) that productized this.
+6. **Reverse-billed SMS/USSD content** (the org pays for the user's message) — relevant only as a trigger channel.
+7. **Direct carrier billing / airtime billing** — billing the SERVICE to the user's airtime (the opposite of what we want, but note it).
+8. Any other creative reverse-charge mechanism (WebRTC/data callback, "call me" web button, sponsored-airtime, beep-to-callback bots).
+
+Conclude: realistically, is anything beyond (a) toll-free and (b) flash/callback able to give caller-₦0 for voice in Nigeria? Return AT LEAST 90% of substance with figures, product names, and source URLs. Organize by mechanism. Completeness over brevity.
+
+----------------------------------------
+
+I now have comprehensive coverage of every mechanism the user asked about, drawn from both the deep existing project research and fresh confirmations. I have enough to write a complete, well-organized report. Let me compile it.
+
+---
+
+# Reverse-charge / caller-₦0 voice mechanisms for Sabi in Nigeria (beyond toll-free)
+
+**Scope note:** I cross-checked the existing E4E research first (session `3b8ddd08` from earlier today already did deep work on the zero-balance problem, AT callback capability, toll-free economics, and scrappy workarounds; session `efd7d7d2` covered missed-call/flash, Viamo 3-2-1, engageSPARK, and an explicit "reverse billing/collect call" search). Then I ran fresh web research to nail the specific items that weren't covered: **MTN Sponsored Call**, **reverse-billed data (biNu)**, **Kirusa's productized missed-call**, **Safaricom's modern reverse-call**, and **reverse-billed SMS pricing**. Everything below is organized by your 8 mechanisms, with the bottom-line verdict at the end.
+
+---
+
+## 1. Voice reverse-billing (callee/content-provider pays for a normal inbound voice call)
+
+**Does NOT exist as a normal-number product in Nigeria.** On every mechanism researched, billing for a standard inbound voice call falls on the caller; the only way to flip it to the callee is to use a special toll-free number range.
+
+- **Africa's Talking (the provider you already use):** Confirmed structurally — *"For inbound calls, both the caller AND the callee are charged."* There is no reverse-charge/toll-free product on AT for Nigeria; AT's Nigeria voice offering is **Regular + SIP virtual numbers only** (form `+23417006XXX`). So a normal AT inbound number can never make the call free to the child — the child still pays their own airtime. (Sources: [AT voice billing](https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work); AT Nigeria voice pricing #6054867.)
+- **The ONLY callee-pays voice in Nigeria is the 0800 toll-free range** (and the related 0700 "premium"/caller-pays inverse). 0800 = "subscriber [the org] bears the cost so callers don't pay." There is **no non-0800 normal number that reverse-bills voice.** Nigerian aggregators (InfoTek PS, Yana, Vezeti, Alpha Technologies, MTN Smart Number) all confirm this binary: 0800 = org pays, everything else = caller pays. (Sources: [InfoTek](http://infotekps.com/tollfreeshortcode.html), [Yana](https://yana.ng/), [Vezeti](https://vezeti.net/), [Global Call Forwarding Nigeria guide](https://www.globalcallforwarding.com/blog/nigeria-phone-number-guide/).)
+- **Premium / short-code VOICE with reverse billing:** Premium-rate **voice** short codes in Nigeria are the *opposite* of what you want — they bill the **caller** a premium (the model used for voting/competitions/Voice OTP). There is **no evidence of a reverse-billed premium *voice* short code** (callee pays) outside the 0800 mechanism. Reverse billing in the Nigerian short-code world is an **SMS/USSD** concept (see #6), not a voice one. (Source: [Affiliate Dragons — Nigeria VAS market](https://affdragons.com/overview-of-nigerias-value-added-services-vas-market/).)
+
+**Verdict: No. The only callee-pays voice in Nigeria is 0800 toll-free.** This is the wall your question is trying to get around, and it confirms the wall is real.
+
+---
+
+## 2. "Sponsored Call" products (zero-rated short code, sponsor pays, user listens to an ad + reward)
+
+**CONFIRMED — this exists and is offered by MTN in Nigeria.** This is the closest thing to a true "third party pays for the voice, caller pays ₦0" product on the market, and it's the most novel finding.
+
+**MTN Sponsored Call** (part of MTN Business "Mobile Engagement Suite", mtn.ng):
+- **How it works:** the end user **dials a zero-rated short code and listens to an ad without being billed**, and **receives data or airtime rewards** at the end of listening.
+- **Who pays:** the **sponsor/advertiser** pays the call cost. The **caller pays ₦0** — the short code is zero-rated.
+- **Reward:** the user is *paid* (data or airtime) for listening — so it's better than ₦0 for the user.
+- **Target:** brands running "targeted ads, brand exposure, promos… to grow sales on a particular product line," and it can be **bundled with targeted SMS** to push users in specific states/locations to dial in.
+- (Sources: [MTN Business Mobile Engagement Suite](https://www.mtn.ng/business/small-business/mobile-engagement-suite/) [the page refused my fetcher but is the canonical product page]; corroborated across two independent web searches describing the MTN Sponsored Call mechanism.)
+
+**African precedent / related operator products:**
+- **MTN Ghana "Free After 1"/zero-rated short-code call packages** exist (the search surfaced MTN Ghana T&Cs) — confirming MTN runs zero-rated/sponsored-call mechanics across markets.
+- **Safaricom (Kenya)** and others run analogous "listen-and-earn"/sponsored-content programs.
+
+**Feasibility for a small org / for Sabi:**
+- **The mechanism is exactly right** (sponsor pays, caller ₦0, user even gets a reward), BUT it's productized as an **advertising channel**, not an open IVR. Two real frictions: (a) it's sold as a **brand-advertising buy** — you'd need MTN Business to let an *education* "ad" run, and the content is framed as a short ad message, not an open-ended interactive tutoring session; (b) **no public per-unit price** — it's an enterprise quote-on-application product. For a tiny pre-pilot org this is a **B2B sales/relationship lift**, not a self-serve API.
+- **Creative angle worth flagging to Naomi:** if MTN treated Sabi's lessons as the "sponsored content," this could in principle become a *zero-rated, user-rewarded* education line where MTN (CSR) or a grant sponsor foots the bill — i.e., it's a real pitch vehicle, not just an ad gimmick. But it requires a sponsor and an MTN deal, so it's a Phase-2 lever, not a pilot mechanism.
+
+**Verdict: Genuinely exists in Nigeria (MTN), genuinely caller-₦0, but it's an enterprise ad product requiring a sponsor + MTN relationship — not self-serve at pilot stage.**
+
+---
+
+## 3. Collect-call / reverse-charge voice (operator-assisted, "bill-to-third-party")
+
+**Does NOT exist as a consumer product on any Nigerian network today.** No traditional "collect call" on MTN/Airtel/Glo/9mobile in current sources. The functional equivalent in Nigeria is again only **0800 toll-free** (callee-pays).
+
+**How modern equivalents work internationally (for completeness):**
+- **Traditional collect call:** operator calls the recipient, names the caller, recipient presses to accept the charge; fee lands on the recipient's bill. Now **largely obsolete** on mobile — carriers have "deprecated or disabled direct collect-call functionality," steering users to prepaid/callback/reverse-SMS instead. Survives mainly on **landlines, prisons, and specialty third-party apps**. (Source: [Collect call — Wikipedia](https://en.wikipedia.org/wiki/Collect_call); [Quora](https://www.quora.com/Does-calling-collect-or-making-a-collect-call-still-exist).)
+- **The one live African mobile example — Safaricom Reverse Call (Kenya), the most direct modern collect-call analog:**
+  - Introduced **2019**; **>130 million** requests processed; **>2 million** users.
+  - Caller with insufficient airtime dials a **prefix (`#` before the number)**; the **recipient presses `1` to accept the charge** (so the **recipient/callee pays** — true reverse-charge).
+  - **On-net only** (Safaricom-to-Safaricom); not for roaming/international; **cannot be used for flash calls.**
+  - **As of Aug 2024 it's no longer fully free:** **first 2 requests/day free, then KES 0.5 per reverse-call request.**
+  - (Sources: [Techweez — Safaricom reverse call charges](https://techweez.com/2024/08/20/safaricom-reverse-call-charges/); the existing E4E missed-call file flagged this same Techweez source.)
+
+**Feasibility for Sabi:** **None directly** — Safaricom Reverse Call is Kenya-only and on-net, and **no Nigerian network offers an equivalent**. It's useful only as a *pitch precedent* ("operators in the region DO build reverse-charge voice for low-airtime users"), not a usable channel.
+
+**Verdict: No usable collect-call mechanism in Nigeria. The Kenyan Safaricom product proves the concept regionally but isn't available to you.**
+
+---
+
+## 4. USSD-triggered callback (is dialing USSD free on a ₦0 line; can it trigger a server callback?)
+
+**Risky and probably NOT free for a ₦0 user under the post-2025 rules — do not rely on it.**
+
+- **USSD session cost: ₦6.98 per session** (up to 120 seconds). (Sources: [NCC](https://ncc.gov.ng/frequently-asked-questions/end-user-billing-eub-policy-ussd-banking-transactions-nigeria); [ITEdgeNews](https://www.itedgenews.africa/).)
+- **End-User-Billing (EUB), effective June 18 2025:** the **₦6.98 is deducted from the user's AIRTIME** (the policy shifted USSD banking charges off bank accounts onto airtime). A consent prompt appears; **if the line has no airtime, a billable USSD session cannot complete** ("your bank balance no longer guarantees USSD success"). (Sources: [TheCable](https://www.thecable.ng/); [Leadership](https://leadership.ng/n250bn-debt-dispute-ncc-shifts-ussd-billing-to-customers-airtime/).)
+- **Scope nuance:** the EUB text is explicitly about **USSD *banking* transactions**. **MNO-native self-service codes** (balance check, the "Call Me Back" codes, `*303#` borrow) are operated by the carrier itself and advertised as **free even at ₦0**. BUT a **third-party/aggregator USSD shortcode** (which is what "dial `*XYZ#` to reach Sabi" would be) should be treated as **potentially billable at ₦6.98/session** — i.e., **not safe for a ₦0 user**.
+- **Can a free USSD code trigger a server callback?** Technically a USSD gateway can hit your webhook, but (a) the session is likely billable for a third-party code, and (b) it doesn't get you anything the cheaper missed-call/flash already gives you. **Africa's Talking USSD is inbound-to-your-leased-code only** — it can't receive another network's "Please Call Me."
+
+**Verdict: USSD is NOT a reliable free entry point for a ₦0 child under post-June-2025 EUB. Only MNO-native free codes are safe, and those don't route to your server.**
+
+---
+
+## 5. Missed-call / "flash" + callback as the de-facto reverse-charge
+
+**CONFIRMED — this is the real-world African substitute for collect calls, and it IS productized.** This is the single most viable caller-₦0 mechanism for you besides toll-free.
+
+**The mechanism & its prevalence:**
+- A "beep"/flash costs the caller **₦0** because the call never connects (no billable airtime). **20–30%+ of all calls in sub-Saharan Africa are intentional flashes** — it's an established communication norm. (Source: [Missed call — Wikipedia](https://en.wikipedia.org/wiki/Missed_call); [Wharton on India missed-call marketing](https://knowledge.wharton.upenn.edu/article/missed-call-marketing-taken-hold-india/).)
+- **Zero-balance reach is confirmed on Nigerian networks** (from the existing E4E research): **MTN Beep** and **Glo Beep** let a ₦0 line leave a missed call and **work off-net** (to a number on any network); **Airtel `*140*<num>#`** and **9mobile `*266*1*<num>#`** "Call Me Back" are free but **on-net only**. **Receiving** the callback is **free to the child on all networks regardless of balance** — the caller (you) pays. (Sources: [MTN Beep](https://www.code.ng/2021/12/mtn-beep-make-call-with-zero-balance.html); [Glo Beep](https://www.gloworld.com/ng/beep-call-service); [Legit.ng Call-Me-Back guide](https://www.legit.ng/ask-legit/guides/1649285-how-send-call-mtn-airtel-glo-9mobile-a-comprehensive-guide/).)
+- **Africa's Talking can power it:** the **inbound webhook delivers the child's `callerNumber` on the first POST BEFORE you answer**; you return `<Reject/>` (never answer → child charged ₦0), then place the outbound callback via `POST https://voice.africastalking.com/call`. Callback leg costs **₦15/min on a regular number or ₦3/min over SIP**. *Caveat:* the "reject = ₦0 to caller" behavior is strongly implied but should be **validated live on a real Nigerian SIM** (AT has no working voice sandbox).
+
+**Productized "missed-call-as-a-service" platforms (you asked specifically):**
+- **ZipDial (India)** — the original. Brands gave out a number; users **flashed it** to opt-in/vote/enter contests; ZipDial logged the missed call and engaged back via voice/SMS/app. **Acquired by Twitter (not Twilio) for ~$34–35M, Jan 2015.** Pitched as "Google Analytics for the offline world" (700M mobile users vs 40M internet users in India). (Source: [TechCrunch](https://techcrunch.com/2015/01/19/twitter-confirms-acquistion-of-indias-missed-call-marketing-platform-zipdial/).)
+- **Kirusa Konnect "Snap Call" — available in NIGERIA today.** Enterprise buys a long or short number; a customer **flashes it to express interest**; the enterprise **calls back** and/or fires an automated acknowledgment SMS. Kirusa explicitly markets this for NGOs/charities and notes flash-calling is popular in Nigeria "because talk-time rates are still unaffordable and leaving missed calls is a recognized mode of communication." (Sources: [Kirusa Konnect missed-call guide](https://konnect.kirusa.com/blog/missed-call-marketing-the-ultimate-guide/); [Kirusa for NGOs](https://konnect.kirusa.com/blog/missed-call-marketing-for-ngos-and-charities/); [Kirusa Nigeria expansion](https://www.thisdaylive.com/index.php/2019/10/10/kirusa-expands-business-communication-solutions-in-nigeria-ghana/).)
+- **engageSPARK** also supports "a missed call to initiate the call themselves or receive a callback" via a voice virtual number, plus instant callback on dropped calls. (Source: [engageSPARK voice/IVR pricing](https://www.engagespark.com/support/voice-ivr-and-sms-text-pricing/).)
+
+**Verdict: YES — flash/missed-call + callback is the de-facto reverse-charge for African voice, it's the cheapest caller-₦0 path, it's productized (Kirusa Snap Call in Nigeria; engageSPARK; the ZipDial pattern), and AT can implement it directly. This plus toll-free are your two real options.** (Note the asymmetry: off-net flash works great on MTN/Glo; Airtel/9mobile ₦0 users can only flash on-net, so multi-SIM provisioning or a single-network pilot matters — covered in the existing `3b8ddd08` research.)
+
+---
+
+## 6. Reverse-billed SMS / USSD content (the org pays for the user's message) — as a trigger channel
+
+**CONFIRMED to exist in Nigeria for SMS** (and is relevant only as a *trigger*, not for voice delivery).
+
+**Reverse-billed / "toll-free" / "zero-billing-to-senders" SMS short codes (InfoTek PS, Nigeria):**
+- **How it works:** the **general public is NOT billed** for SMS sent to the short code; the **service provider's prepaid escrow account** is debited instead. Built precisely because *"90% of Nigerian mobile users are pre-paid… 80% have less than ₦150 balance,"* which kills paid-SMS engagement.
+- **Coverage:** MTN, Airtel, Glo, 9mobile (all networks).
+- **Pricing (full figures):** Setup **₦450,000 + 5% VAT** (16-week provisioning); monthly maintenance **₦65,000 + 5% VAT** (or ₦195,000/quarter); minimum escrow **1,000,000 units @ ₦1.20 each + 5% VAT**. Per-SMS debit from escrow: **MTN 5 credits, Airtel 7.5, Glo 5, 9mobile 7.** (Source: [InfoTek toll-free short code](http://infotekps.com/tollfreeshortcode.html).)
+- **It's SMS-only.** USSD and standalone reverse-billed *voice* are **not** offered here. ("Reverse SMS billing" / MT-billing is the technical term — [Wikipedia](https://en.wikipedia.org/wiki/Reverse_SMS_billing).)
+
+**Feasibility as a trigger for Sabi:** A reverse-billed SMS shortcode would let a ₦0 child **text Sabi for free** to request a callback — but the **setup + monthly + escrow overhead (~₦450k + ₦65k/mo + ₦1.2M float)** is **far more expensive than just capturing a free flash/missed call**, which costs nothing on the inbound side. So it's a worse trigger than #5 for a small pilot. Worth knowing it exists; not worth buying.
+
+**Verdict: Exists for SMS, org-pays confirmed, but overkill/overpriced as a trigger vs. a free missed call.**
+
+---
+
+## 7. Direct carrier billing / airtime billing (billing the SERVICE to the user's airtime — the opposite of what you want)
+
+**Exists everywhere in Nigeria — and it's the wrong direction, noted for completeness.** Premium SMS short codes (₦30/₦50/₦100 per message), Voice OTP, and the whole VAS catalogue bill the **user's airtime** for the service. (Source: [Affiliate Dragons — Nigeria VAS](https://affdragons.com/overview-of-nigerias-value-added-services-vas-market/).) This is **DCB (direct carrier billing)** and it makes the child *pay*, so it's irrelevant except as the conceptual mirror of reverse billing.
+
+**The genuinely useful inverse of DCB for you = airtime top-up / stipend** (org *gives* the child airtime so they can dial in):
+- **engageSPARK** can push **airtime top-up incentives** to a contact after/within an IVR call (you set a max amount; cost is deducted from your account). (Sources: [engageSPARK automated airtime top-up](https://www.engagespark.com/support/automated-airtime-top-up-mobile-credit/); [airtime top-ups](https://www.engagespark.com/airtime-top-ups/).)
+- **But the existing E4E analysis concluded** per-child airtime stipends usually cost *more* than just calling the child outbound yourself, so **scheduled outbound beats airtime grants** on cost.
+
+**Verdict: DCB bills the user (wrong way). Airtime-stipend (the inverse) is feasible but costlier than just calling the child.**
+
+---
+
+## 8. Other creative reverse-charge mechanisms
+
+- **Reverse-billed DATA (biNu / MTN Sponsored Data) — the strongest "org pays, user ₦0" mechanism that's live in Nigeria, but it's DATA, not voice.**
+  - **MTN Sponsored Data (Reverse Billing):** the **enterprise pays all data charges monthly**; **end users access the app at ZERO data cost.** Explicitly covers **"educational apps"** and lists **"Educational institutions"** as an eligible sponsor category. (Ghana pricing for reference: <1TB = GHC 5,600/mo; 1–10TB = GHC 0.0051/MB.) (Source: [MTN Ghana Sponsored Data](https://mtn.com.gh/businesssolutions/sponsored-data-reverse-billing/).)
+  - **biNu #datafree + MTN, confirmed ACTIVE IN NIGERIA** (and South Africa): content owners "foot the bill" so subscribers use whitelisted sites/apps without spending data; explicitly used by **NGOs, universities, banks**. (Source: [ITWeb — biNu/MTN reverse billing](https://itweb.africa/content/VgZeyvJobZO7djX9).)
+  - **Relevance to Sabi:** if Sabi ever has a **data/app or WebRTC** path (not pure feature-phone voice), reverse-billed data could make it **₦0 to the user** for those on smartphones — a real option for the app channel, useless for the feature-phone voice channel.
+- **WebRTC / data callback & "call me" web button:** **click-to-call is free to both site owner and visitor** over WebRTC, and **callback widgets** (user leaves number → system calls them) are standard. (Sources: [AudioCodes WebRTC widget](https://www.audiocodes.com/media/14873/webrtc-click-to-call-widget-installation-and-configuration-guide.pdf); [Zadarma click-to-call/callback](https://zadarma.com/en/services/click-to-call/).) **For Sabi this only helps the smartphone/data user** — it requires data/a browser, so it's irrelevant to the ₦0 feature-phone child (who has no data either). A "call me" web button that triggers a **PSTN callback** is just the outbound-callback model (#5) with a web trigger instead of a flash.
+- **Sponsored-airtime / "beep-to-callback bot":** these collapse into mechanisms already covered — sponsored airtime = #7 stipend; beep-to-callback bot = #5 (Kirusa Snap Call / AT webhook + reject + call back).
+- **Scheduled OUTBOUND (we call the child) — not "reverse-charge" but the cleanest ₦0-to-child path of all.** Receiving a call is free to the recipient on every Nigerian network regardless of balance. RCT-validated (J-PAL/IPA ConnectEd phone tutoring). Cost ≈ **$1.2–$3.6/child** for a short pilot via AT. The existing `3b8ddd08` research recommends this as the **primary** pilot mechanism precisely because it sidesteps the whole "can a ₦0 kid reach us" problem.
+
+---
+
+## Bottom line — is anything beyond (a) toll-free and (b) flash/callback able to give caller-₦0 for voice in Nigeria?
+
+**Realistically, for an interactive VOICE tutor a child dials, no — there are only two true caller-₦0 voice channels, plus one strong adjacent option:**
+
+1. **Toll-free 0800** (org pays ~retail rate; the only normal-number callee-pays voice; ~₦15–25/min benchmark, no public rate, deposit-based).
+2. **Flash/missed-call + callback** (caller ₦0 via the African "beep" norm; org pays the outbound leg; productized as Kirusa **Snap Call** in Nigeria & engageSPARK; implementable directly on Africa's Talking via webhook → `<Reject/>` → outbound call). **This is the de-facto reverse-charge for voice in Africa.**
+
+**Two more that are real but conditional:**
+- **MTN "Sponsored Call"** is a *genuine* caller-₦0, sponsor-pays, user-rewarded VOICE mechanism that **exists in Nigeria** — but it's an **enterprise advertising buy** (needs an MTN deal + a sponsor; framed as an ad, not an open IVR), so it's a Phase-2 pitch lever, not a self-serve pilot tool.
+- **Scheduled OUTBOUND calling** (we call the child) makes it **₦0 to the child on every network** and is the cheapest, RCT-backed pilot approach — it just isn't "the child dials in."
+
+**Ruled out for ₦0 voice:** normal-number voice reverse-billing (doesn't exist), Nigerian collect-call (doesn't exist — only Kenya's Safaricom has one, on-net, now KES 0.5 after 2 free/day), third-party USSD (likely billable to airtime post-June-2025, unsafe at ₦0), reverse-billed SMS (exists but SMS-only and overpriced vs. a free flash), DCB (bills the user — wrong way), and WebRTC/reverse-billed data (real and live in Nigeria via biNu/MTN Sponsored Data, even covers "educational apps" — but **data-channel only**, useless for the feature-phone voice child).
+
+**Net recommendation (matches the existing `3b8ddd08` conclusion):** run the pilot on **scheduled outbound + flash-callback** (caller ₦0, ~$1–3.6/child, no telco deal needed); hold **toll-free** and **MTN Sponsored Call / zero-rating** as Phase-2 levers to unlock *after* pilot impact data, via a sponsor/MNO relationship.
+
+**Key data gaps flagged:** (1) MTN Sponsored Call and Sponsored Data have **no public Nigeria per-unit pricing** — both are quote-on-application enterprise products; (2) the AT "reject = ₦0 to the caller" behavior should be **validated live on a real MTN/Airtel/Glo/9mobile SIM** (no working voice sandbox); (3) the `mtn.ng/business/.../mobile-engagement-suite/` page refused my fetcher (ECONNREFUSED) — the Sponsored Call details above come from two corroborating web searches, worth confirming directly in a browser.
+
+The most relevant existing files if you want the raw depth: `/Users/naomiivie/Education for Equality/research-agents/3b8ddd08-9e2_07_Research_zero-balance_access_problem.txt`, `…_10_Research_AT_API_callback_capability.txt`, `…_11_Research_scrappy_startups__0_workarounds.txt`, and `…_06_Research_toll-free_economics__EdTech_precedents.txt`.
+agentId: ab384663c532941f9 (use SendMessage with to: 'ab384663c532941f9' to continue this agent)
+<usage>subagent_tokens: 130853
+tool_uses: 33
+duration_ms: 433430</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: continuous sign language recognition accuracy state of art 2025 transformer mode
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:54 UTC
+========================================================================
+
+Search query: continuous sign language recognition accuracy state of art 2025 transformer model benchmark
+
+----------------------------------------
+
+Web search results for query: "continuous sign language recognition accuracy state of art 2025 transformer model benchmark"
+
+Links: [{"title":"A novel deep transformer based CvT model for sign language recognition in visual communication | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-31558-1"},{"title":"Recognizing American Sign Language gestures efficiently and accurately using a hybrid transformer model | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-06344-8"},{"title":"SignEdgeLVM transformer model for enhanced sign language translation on edge devices | Discover Computing","url":"https://link.springer.com/article/10.1007/s10791-025-09509-1"},{"title":"[2402.14720] A Transformer Model for Boundary Detection in Continuous Sign Language","url":"https://arxiv.org/abs/2402.14720"},{"title":"Interpreting Sign Language Recognition using Transformers and MediaPipe Landmarks | Proceedings of the 25th International Conference on Multimodal Interaction","url":"https://dl.acm.org/doi/10.1145/3577190.3614143"},{"title":"Continuous Saudi Sign Language Recognition: A Vision Transformer Approach","url":"https://arxiv.org/html/2509.03467v1"},{"title":"Adaptive Transformer-Based Deep Learning Framework for Continuous Sign Language Recognition and Translation","url":"https://www.mdpi.com/2227-7390/13/6/909"},{"title":"A hybrid CNN-transformer framework optimized by Grey Wolf Algorithm for accurate sign language recognition | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-27390-2"},{"title":"Ensemble transformer-based word-level sign language recognition with multi-modal input fusion - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2307187725000951"},{"title":"Sign language recognition in the deep learning era","url":"https://journalijsra.com/sites/default/files/fulltext_pdf/IJSRA-2025-1699.pdf"}]
+
+Based on the web search results, here are the key findings on continuous sign language recognition accuracy and state-of-the-art transformer models in 2025:
+
+## State-of-the-Art Accuracy Results
+
+The Spatial-Temporal Transformer Network (STTN) for continuous SLR outperforms at 95.2% accuracy on CSL and PHOENIX-2014 datasets.
+
+A transformer-based model leveraging a pretrained ResNet-18 for spatial feature extraction and a Transformer Encoder with Bidirectional LSTM achieved 99.02% accuracy in signer dependent mode and 77.71% in signer independent mode on the KAU-CSSL dataset.
+
+A hybrid CNN-transformer framework achieved 99.40% accuracy, F1-score of 99.31%, and AUC of 0.992.
+
+## Advanced Transformer Architectures
+
+Vision transformers (ViTs) have emerged as a breakthrough technology, offering superior feature extraction through self-attention mechanisms.
+
+The Adaptive Transformer (ADTR) framework achieved a BLEU4 score of 22.73 on gloss-free sign language translation, significantly outperforming existing models like GASLT (15.74), STMC-T (15.74), and SimulSLT (14.10).
+
+Despite reaching 99.97% accuracy on the ASL Alphabet dataset, a hybrid CNN-Transformer model maintains real-time inference speeds and optimized computational complexity.
+
+## Key Benchmark Datasets
+
+Common benchmarks include PHOENIX-2014, CSL, WLASL, MSASL, and ASL Alphabet datasets, with the ensemble transformer model achieving state-of-the-art top-1 accuracy of 93.51%, 92.56%, and 86.53% on WLASL, MSASL, and ASL Citizen datasets respectively.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

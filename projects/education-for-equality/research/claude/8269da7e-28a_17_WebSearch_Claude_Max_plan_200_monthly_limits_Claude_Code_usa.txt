@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Max plan $200 monthly limits Claude Code usage
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 20:04:54 UTC
+========================================================================
+
+Search query: Claude Max plan $200 monthly limits Claude Code usage
+
+----------------------------------------
+
+Web search results for query: "Claude Max plan $200 monthly limits Claude Code usage"
+
+Links: [{"title":"What is the Max plan? | Claude Help Center","url":"https://support.claude.com/en/articles/11049741-what-is-the-max-plan"},{"title":"Max plan | Claude by Anthropic","url":"https://claude.com/pricing/max"},{"title":"Using Claude Code with your Pro or Max plan | Claude Help Center","url":"https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan"},{"title":"Claude Max Plan Explained: Pricing, Limits & Features | IntuitionLabs","url":"https://intuitionlabs.ai/articles/claude-max-plan-pricing-usage-limits"},{"title":"Claude Code Pricing 2026: Free Credits, API Costs & Max Plan Explained | NxCode","url":"https://www.nxcode.io/resources/news/claude-code-pricing-2026-free-api-costs-max-plan"},{"title":"Claude Code Limit Hit on Max Plan?! What to do next: | by Sevak Avakians | Medium","url":"https://medium.com/@sevakavakians/claude-code-limit-hit-on-max-plan-what-to-do-next-60389024e0af"},{"title":"Manage extra usage for paid Claude plans | Claude Help Center","url":"https://support.claude.com/en/articles/12429409-manage-extra-usage-for-paid-claude-plans"},{"title":"Claude Code Limits: Quotas & Rate Limits Guide","url":"https://www.truefoundry.com/blog/claude-code-limits-explained"},{"title":"Claude Code Limits: 4 Fixes to Cut Your Bill (Without Changing Your Workflow)","url":"https://www.productcompass.pm/p/stop-hitting-claude-code-limits"},{"title":"How do usage and length limits work? | Claude Help Center","url":"https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"}]
+
+Based on the search results, here's information about the Claude Max plan at $200/month and its usage limits for Claude Code:
+
+## Pricing and Overview
+
+The Max plan costs $200 per person billed monthly. The Max plan combines Claude desktop and mobile apps and Claude Code in one subscription, with up to 20x more usage per session than Pro.
+
+## Claude Code Integration
+
+Claude Code is included with access for terminal-based coding workflows with one unified subscription. Both Pro and Max plans offer usage limits that are shared across Claude and Claude Code, meaning all activity in both tools counts against the same usage limits.
+
+## Usage Limits
+
+The Max plan is available in two tiers: Max 5x provides 5 times more usage per session than the Pro plan, while Max 20x provides 20 times more usage per session than the Pro plan. The $200/month plan is the Max 20x tier.
+
+Max plans have two weekly usage limits: one that applies across all models and another for Sonnet models only. However, to manage capacity and ensure fair access to all users, usage may be limited in other ways, such as weekly and monthly caps or model and feature usage.
+
+## Extra Usage Option
+
+If you exceed your included limits, extra usage allows individuals subscribed to paid Claude plans to continue using Claude after reaching their included usage limits by switching to consumption-based pricing at standard API rates.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

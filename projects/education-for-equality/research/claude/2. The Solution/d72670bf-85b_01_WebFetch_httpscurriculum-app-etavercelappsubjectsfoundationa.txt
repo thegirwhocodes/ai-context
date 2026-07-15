@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://curriculum-app-eta.vercel.app/subjects/foundational-literacy
+Session: d72670bf-85b5-4729-87b1-b37da6093927
+Time: 2026-03-05 04:07:14 UTC
+========================================================================
+
+URL: https://curriculum-app-eta.vercel.app/subjects/foundational-literacy
+Extraction prompt: Describe everything on this page - what courses/units/lessons are listed, how they're structured, what the learning path looks like, any descriptions or metadata shown.
+
+----------------------------------------
+
+# Foundational Literacy Course Overview
+
+## Course Structure
+This is a comprehensive reading program for ages 8-14, consisting of **8 units with 86 total lessons** and approximately **938 minutes of content**. The curriculum builds systematically from foundational skills to independent reading comprehension.
+
+## Unit Breakdown
+
+**Unit 1: Sound Awareness** (12 lessons, 10-12 min each)
+Introduces phonological awareness through listening exercises, identifying beginning/ending sounds, rhyming activities, syllable manipulation, and sound pattern recognition.
+
+**Unit 2: Vocabulary Building** (12 lessons)
+Teaches contextual English vocabulary covering "body parts, family members, household items, market transactions, transportation, classroom objects, animals, plants, weather, and descriptive words."
+
+**Unit 3: Listening Comprehension** (10 lessons, 12 min each)
+Uses Nigerian-themed stories to develop comprehension skills including sequencing, inferencing, cause-and-effect understanding, and main idea identification.
+
+**Unit 4: Oral English & Grammar** (10 lessons)
+Covers sentence construction, subject-verb identification, verb tenses (past/present/future), question formation, adjectives, and comparative structures.
+
+**Unit 5: Advanced Sounds** (10 lessons)
+Focuses on phoneme segmentation, sound manipulation, alphabet knowledge, and letter-sound correspondences as preparation for phonics.
+
+**Unit 6: Phonics** (12 lessons, 12 min each)
+Uses Jolly Phonics ordering to teach letter sounds systematically, progressing from initial consonants and vowels through blending into words and tricky sight words.
+
+**Unit 7: Blending & Decoding** (10 lessons)
+Develops reading fluency using CVC words, consonant blends, digraphs (sh, ch, th), and increasingly complex sentence structures.
+
+**Unit 8: Reading Comprehension** (10 lessons, 12 min each)
+Applies all previous skills to independent reading with activities covering main ideas, detailed questioning, character analysis, sequencing, and summarization.
+
+## Learning Progression
+The curriculum follows a logical scope and sequence from auditory discrimination through decoding to fluent, comprehensible reading.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+AGENT RESEARCH: Update memory: Bethel
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:26:56 UTC
+========================================================================
+
+You are updating the memory system for the Bethel project at /Users/naomiivie/bethel.
+
+TASK: Read ALL session transcripts, then update/create memory files to be comprehensive.
+
+STEPS:
+1. Read every .txt file in /Users/naomiivie/bethel/.claude-sessions/ completely.
+2. Read all existing memory files at ~/.claude/projects/-Users-naomiivie-bethel/memory/ (MEMORY.md and all referenced files).
+3. Read all agent research files at ~/.claude/projects/-Users-naomiivie-bethel/agent-research/INDEX.txt and the most important ones.
+4. UPDATE existing memory files to fill in any gaps. ADD session IDs (sessions: [id1, id2]) to frontmatter of every memory file that doesn't have them.
+5. CREATE new memory files for any important topics not yet covered. Every memory file MUST have:
+   - Proper frontmatter (name, description, type, sessions)
+   - The sessions field must list which session IDs the information came from
+6. UPDATE MEMORY.md index to reference all memory files.
+
+Memory types: user (about Naomi), feedback (her corrections/preferences), project (decisions, architecture, vision), reference (external resources/links).
+
+Be thorough. Cover: architecture decisions, tech stack choices, design system, theological philosophy, features planned vs built, user preferences, feedback given, external references, current project status, and what's next.
+
+Write the files using the Write tool. Do NOT skip anything.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a09985f0eff52df70 (internal ID - do not mention to user. Use SendMessage with to: 'a09985f0eff52df70' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-bethel/e59a15e2-07e1-441a-b5e1-74b37c995b59/tasks/a09985f0eff52df70.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

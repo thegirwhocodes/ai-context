@@ -1,0 +1,37 @@
+========================================================================
+AGENT RESEARCH: Read all sabi-server Python code
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 02:15:22 UTC
+========================================================================
+
+Read EVERY file listed below FULLY and provide a complete technical summary of each file's purpose, key functions, endpoints, and architecture decisions.
+
+1. /Users/naomiivie/Education for Equality/sabi-server/main.py
+2. /Users/naomiivie/Education for Equality/sabi-server/voice.py
+3. /Users/naomiivie/Education for Equality/sabi-server/voice_twilio.py
+4. /Users/naomiivie/Education for Equality/sabi-server/voice_asterisk.py
+5. /Users/naomiivie/Education for Equality/sabi-server/llm.py
+6. /Users/naomiivie/Education for Equality/sabi-server/memory.py
+7. /Users/naomiivie/Education for Equality/sabi-server/stt.py
+8. /Users/naomiivie/Education for Equality/sabi-server/tts.py
+9. /Users/naomiivie/Education for Equality/sabi-server/answer_matcher.py
+10. /Users/naomiivie/Education for Equality/sabi-server/secret_loader.py
+11. /Users/naomiivie/Education for Equality/sabi-server/chatterbox-tts/server.py
+12. /Users/naomiivie/Education for Equality/sabi-server/docker-compose.yml
+13. /Users/naomiivie/Education for Equality/sabi-server/requirements.txt
+14. /Users/naomiivie/Education for Equality/sabi-server/nginx.conf
+15. /Users/naomiivie/Education for Equality/sabi-server/asterisk/extensions.conf
+16. /Users/naomiivie/Education for Equality/sabi-server/asterisk/pjsip.conf
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: aa70adffeb3bc6a63 (internal ID - do not mention to user. Use SendMessage with to: 'aa70adffeb3bc6a63' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tasks/aa70adffeb3bc6a63.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

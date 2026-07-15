@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: PaLM 2 speech-to-text capabilities audio input
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:30:50 UTC
+========================================================================
+
+Search query: PaLM 2 speech-to-text capabilities audio input
+
+----------------------------------------
+
+Web search results for query: "PaLM 2 speech-to-text capabilities audio input"
+
+Links: [{"title":"AudioPaLM","url":"https://google-research.github.io/seanet/audiopalm/examples/"},{"title":"[2306.12925] AudioPaLM: A Large Language Model That Can Speak and Listen","url":"https://arxiv.org/abs/2306.12925"},{"title":"PaLM 2: Google's Revolutionary Large Language Model","url":"https://lablab.ai/tech/google/palm"},{"title":"Google's Speech AI AudioPaLM Performs Translation with Voice Transfer - InfoQ","url":"https://www.infoq.com/news/2023/07/google-audiopalm/"},{"title":"Paper page - AudioPaLM: A Large Language Model That Can Speak and Listen","url":"https://huggingface.co/papers/2306.12925"},{"title":"[2306.12925] AudioPaLM: A Large Language Model That Can Speak and Listen","url":"https://ar5iv.labs.arxiv.org/html/2306.12925"},{"title":"Google Discovers Novel Method to Improve Speech Processing","url":"https://aibusiness.com/nlp/google-combines-palm-language-model-with-audio-generation-for-translation-tasks"},{"title":"AudioPaLM: Unified Text & Speech Model","url":"https://www.emergentmind.com/topics/audiopalm"},{"title":"AudioPaLM: Google's Multimodal Model for Voice Translation","url":"https://neurohive.io/en/state-of-the-art/audiopalm-google-s-multimodal-model-for-voice-translation/"}]
+
+Based on the search results, here's what I found about PaLM 2's speech-to-text capabilities and audio input:
+
+## PaLM 2 and Audio Input
+
+PaLM 2 itself is a text-only language model and doesn't directly handle audio input. However, AudioPaLM fuses text-based and speech-based language models, PaLM-2 and AudioLM, into a unified multimodal architecture that can process and generate text and speech with applications including speech recognition and speech-to-speech translation.
+
+## AudioPaLM's Speech-to-Text Capabilities
+
+AudioPaLM performs text-to-speech (TTS), automated speech recognition (ASR), and speech-to-speech translation (S2ST) with voice transfer. More specifically, AudioPaLM is a unified LLM integrating text-based and speech-based capabilities to perform a wide range of speech understanding and generation tasks, including automatic speech recognition (ASR), automatic speech-to-text translation (AST), text-to-speech (TTS), and direct speech-to-speech translation (S2ST).
+
+## Audio Input Processing
+
+AudioPaLM is a decoder-only Transformer-based model that combines text and audio input into a single embedding representation. The model exhibits zero-shot capabilities, performing AST with speech input/target language combinations that were not seen in training.
+
+The key advancement is that AudioPaLM is based on the PaLM-2 LLM and outperforms OpenAI's Whisper on translation benchmarks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

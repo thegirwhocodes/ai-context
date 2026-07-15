@@ -1,0 +1,59 @@
+========================================================================
+AGENT RESEARCH: Test memory: cortex folder
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 02:32:13 UTC
+========================================================================
+
+Task given to agent: You are simulating a BRAND NEW Claude session in /Users/naomiivie/cortex. You have never seen this project before. You know nothing.
+
+Follow these steps exactly:
+1. Read /Users/naomiivie/cortex/CLAUDE.md
+2. Follow its instructions — read .claude-sessions/INDEX.txt, then read the most recent transcript (first 200 lines)
+3. Check if memory files exist at ~/.claude/projects/-Users-naomiivie-cortex/memory/MEMORY.md
+
+After doing all of that, answer: "What is this project and what are we working on?"
+
+
+----------------------------------------
+
+Here is what I found:
+
+---
+
+**What is this project and what are we working on?**
+
+**Cortex** is a personal AI agent being built by Naomi Ivie. It ingests all of a user's digital data (email, calendar, messages, notes), builds a deep understanding of who they are, and acts on their behalf -- "your second brain."
+
+The tech stack is Next.js 15 + TypeScript + Tailwind v4, Clerk auth, Supabase (PostgreSQL + pgvector), Claude API, and Vercel hosting. The actual web app lives at `/Users/naomiivie/cortex-web/`, while the planning docs and session logs live at `/Users/naomiivie/cortex/`.
+
+**Current status (as of 2026-03-18):** The app is substantially built. What's done includes:
+- Full Next.js app with 37+ routes, Clerk auth, Supabase with 12 tables and RLS
+- Gmail OAuth connected and syncing (1000+ email chunks ingested)
+- Streaming chat with Claude Haiku + RAG + markdown rendering
+- All dashboard pages (home, chat, email agent, spheres, integrations, memory, profile, settings, onboarding)
+- Core AI systems: query engine, profile builder (Sonnet), memory extractor, sphere generator, email drafter, briefing generator
+- A LoRA fine-tuning pipeline (data formatter, RunPod training client, LoRAX inference, query router) -- this is a key architectural decision Naomi pushed for: per-user LoRA models, not just RAG
+- Google Calendar adapter (built but not yet connected in UI)
+
+**What's pending:**
+- Email agent feedback (Naomi has specific UI/behavior feedback to address in a dedicated session)
+- Multi-account Gmail support
+- Onboarding redirect for new users
+- Google Calendar UI connection
+- LoRA training trigger (needs RunPod account)
+- Vercel deployment
+- Stripe billing
+
+The most recent session (from March 16-18) was a deep research session where Claude read the Spheres Mac app codebase (a SwiftUI GTD task manager that organizes life into "spheres"), read Naomi's raw voice transcription of her full vision, and synthesized all of it into Cortex's architecture. The vision is a 3-layer system: bottom layer ingests all personal data, middle layer is the user interface where an LLM creates "spheres" automatically and answers questions about your day, top layer is where the agent acts on your behalf (reply emails, buy groceries, etc.).
+
+**Key working preferences:** Always research and update the plan before coding new features. Don't touch the email agent until Naomi shares her specific feedback. Naomi wants million-dollar quality, not shortcuts.
+
+PASS
+agentId: ae8ef63cd46b45176 (use SendMessage with to: 'ae8ef63cd46b45176' to continue this agent)
+<usage>total_tokens: 18330
+tool_uses: 8
+duration_ms: 40203</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

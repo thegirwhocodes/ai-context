@@ -1,0 +1,29 @@
+# Recovery index
+
+Generated: 2026-07-15T19:08:35+00:00
+
+GitHub is the source of truth. Pull this repository before recovery.
+Read the relevant project index and curated memory first; open full session files only when needed.
+
+## Projects
+
+- [bethel](projects/bethel/INDEX.md) — 5 records
+- [bethel-email-agent](projects/bethel-email-agent/INDEX.md) — 1 records
+- [class-on-time](projects/class-on-time/INDEX.md) — 2 records
+- [cortex](projects/cortex/INDEX.md) — 79 records
+- [cortex-web](projects/cortex-web/INDEX.md) — 13 records
+- [desktop](projects/desktop/INDEX.md) — 1 records
+- [documents](projects/documents/INDEX.md) — 4 records
+- [downloads](projects/downloads/INDEX.md) — 1 records
+- [downloads-app-rings-version-2-1-multi-device-jan-2025](projects/downloads-app-rings-version-2-1-multi-device-jan-2025/INDEX.md) — 3 records
+- [downloads-app-sleep](projects/downloads-app-sleep/INDEX.md) — 3 records
+- [downloads-app-social-media](projects/downloads-app-social-media/INDEX.md) — 3 records
+- [education-for-equality](projects/education-for-equality/INDEX.md) — 160 records
+- [home](projects/home/INDEX.md) — 6 records
+- [kai](projects/kai/INDEX.md) — 5 records
+- [library](projects/library/INDEX.md) — 4 records
+- [library-cloudstorage-onedrive-wesleyan-edu-classes](projects/library-cloudstorage-onedrive-wesleyan-edu-classes/INDEX.md) — 12 records
+- [library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation](projects/library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation/INDEX.md) — 1 records
+- [sage](projects/sage/INDEX.md) — 54 records
+- [social-media](projects/social-media/INDEX.md) — 4 records
+- [social-media-ed-it](projects/social-media-ed-it/INDEX.md) — 8 records

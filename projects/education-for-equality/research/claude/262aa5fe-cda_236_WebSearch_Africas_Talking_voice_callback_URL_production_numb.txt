@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking voice "callback URL" production number setup dashboard configur
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:32:45 UTC
+========================================================================
+
+Search query: Africa's Talking voice "callback URL" production number setup dashboard configure
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking voice "callback URL" production number setup dashboard configure"
+
+Links: [{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/voice/overview"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"How do I configure my callback URL? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callback-url"},{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"How do I get started on the Africa's Talking Sandbox? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-africa-s-talking-sandbox"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"Implementing an Interactive Voice Response (IVR) System | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2900701-implementing-an-interactive-voice-response-ivr-system"},{"title":"GitHub - AfricasTalkingLtd/africastalking-php: Official PHP SDK","url":"https://github.com/AfricasTalkingLtd/africastalking-php"},{"title":"Africa's Talking Detailed Documentation - WorkDo.io","url":"https://workdo.io/documents/africas-talking-detailed-documentation/"},{"title":"Callback URLS | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150832-callback-urls"}]
+
+I've completed the web search for your query. Here's a summary of the key information found about Africa's Talking voice callback URL and production number setup:
+
+## Key Findings:
+
+**Callback URL Setup:**
+To use Africa's Talking voice service, you need to register a callback URL, ensuring that this URL is valid and accessible so the service can send requests to it.
+
+**Production Environment Requirements:**
+Since most developers work locally, the application must be publicly exposed to the internet via a public IP/URL to be accessible to external hosts like Africa's Talking servers. You can use ngrok to tunnel your localhost to the internet or set up a Vagrant instance for a publicly available URL.
+
+**Dashboard Configuration:**
+To request a production number, you go to your app dashboard and under Voice > Request pick regular number. In the Dashboard, look for the API Key section in the sidebar, generate a new API key if needed, and copy both your username and API key.
+
+**API Configuration:**
+The package needs to be configured with your Africa's Talking username and API key, which you can get from the dashboard.
+
+**Production vs Sandbox:**
+Create separate API keys for development, staging, and production environments.
+
+The official documentation is available at https://developers.africastalking.com/ and the help center at https://help.africastalking.com/.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.cooleygo.com/documents/form-consulting-agreement/
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 19:04:13 UTC
+========================================================================
+
+URL: https://www.cooleygo.com/documents/form-consulting-agreement/
+Extraction prompt: Extract the full structure and formatting of this Consulting Agreement template exactly as it appears. I need: (1) the title; (2) the opening preamble/intro sentence wording ("This Consulting Agreement is made...by and between..."); (3) the exact list and order of numbered section headings (e.g. 1. Services, 2. Compensation, etc.) and whether headings are run-in (on the same line as the text) or on their own line; (4) how defined terms are written; (5) how the signature block is laid out. Quote the actual text where possible.
+
+----------------------------------------
+
+The server returned HTTP 403 Forbidden.
+
+The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provided fetch tool) instead of WebFetch.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

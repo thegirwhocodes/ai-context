@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: voice MCP server Claude Code speech-to-text conversation
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:25 UTC
+========================================================================
+
+Search query: voice MCP server Claude Code speech-to-text conversation
+
+----------------------------------------
+
+Web search results for query: "voice MCP server Claude Code speech-to-text conversation"
+
+Links: [{"title":"VoiceMode MCP - Voice Mode for Claude Code","url":"https://getvoicemode.com/"},{"title":"GitHub - johnmatthewtennant/mcp-voice-hooks: MCP server plugin for voice input and output in Claude Code · GitHub","url":"https://github.com/johnmatthewtennant/mcp-voice-hooks"},{"title":"Voice Mode for Claude Code - Install MCP Server","url":"https://lobehub.com/mcp/mbailey-voice-mcp"},{"title":"Speech to Text for Claude: Free MCP Voice Input | Spokenly","url":"https://spokenly.app/speech-to-text-claude"},{"title":"GitHub - mbailey/voicemode: Natural (2-way) voice conversations with Claude Code · GitHub","url":"https://github.com/mbailey/voicemode"},{"title":"Voice Hooks MCP Server by johnmatthewtennant | PulseMCP","url":"https://www.pulsemcp.com/servers/voice-hooks"},{"title":"Using voice mode | Claude Help Center","url":"https://support.claude.com/en/articles/11101966-using-voice-mode"},{"title":"How I Added Voice Mode to Claude Code — Hands-Free Coding in 5 Minutes | by kumaran srinivasan | Medium","url":"https://medium.com/@kumaran.isk/how-i-added-voice-mode-to-claude-code-hands-free-coding-in-5-minutes-101a5086968f"},{"title":"Speech-to-Text Linux: Voice Input for Claude Code AI ...","url":"https://mcpmarket.com/server/speech-to-text-linux"},{"title":"GitHub - jochiang/voice-mcp: Voice MCP server for Claude Code using local Whisper and Supertonic","url":"https://github.com/jochiang/voice-mcp"}]
+
+I found several voice MCP servers for Claude Code that enable speech-to-text conversation capabilities. Here's what's available:
+
+## Main Voice MCP Servers
+
+**VoiceMode** - VoiceMode enables natural voice conversations with Claude Code. It uses OpenAI Whisper for speech-to-text and OpenAI TTS for speech output. Installation can be done via plugin marketplace or manually.
+
+**Voice Hooks** - Voice Mode for Claude Code allows you to have a continuous two-way conversation with Claude Code, hands-free, using the new Claude Code hooks to deliver voice input to Claude while it works. Voice recognition and text-to-speech are handled by the browser, so there is nothing to download, and no API keys are needed.
+
+**Voice MCP** - A Model Context Protocol server that enables voice interactions with Claude and other LLMs, requiring only an OpenAI API key and microphone/speakers. It supports voice conversations with Claude, multiple transports (local microphone or LiveKit room-based communication), and OpenAI-compatible speech processing services.
+
+**Spokenly** - It offers state-of-the-art local models, voice dictation in claude.ai, plus MCP integration for Claude Code. Spokenly runs a local MCP server that exposes voice dictation, allowing Claude Code to call this server when it needs your input instead of pausing for typed text.
+
+**Local Voice MCP** - A local MCP server that provides voice tools for Claude Code - speech-to-text using Whisper and text-to-speech using Supertonic.
+
+Each offers different features, with some focusing on local processing for privacy and others supporting cloud services.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

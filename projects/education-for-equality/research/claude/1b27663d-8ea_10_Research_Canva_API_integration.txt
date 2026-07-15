@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research Canva API integration
+Session: 1b27663d-8ea5-4b35-8186-373ddb166724
+Time: 2026-04-15 22:20:37 UTC
+========================================================================
+
+Research how to connect Canva's API to Claude Code / Claude Desktop as an MCP server or direct API tool. I need to know:
+
+1. Does Canva have a public API that allows creating and editing presentations programmatically?
+2. What's the API called and where are the docs?
+3. Is there an existing MCP server for Canva (check GitHub for "canva mcp server" or "canva-mcp")?
+4. What authentication is needed (API key, OAuth, etc.)?
+5. Can you create slides, add text, add images, change colors/fonts through the API?
+6. Are there any Claude Code / Cursor / VS Code extensions that connect to Canva?
+7. What are the rate limits and pricing?
+
+Search the web thoroughly. Check GitHub, npm, the Canva developer portal, and any MCP server registries. Return ALL findings — every URL, every detail, every limitation. Do NOT summarize.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: aac22d66d4a91550c (internal ID - do not mention to user. Use SendMessage with to: 'aac22d66d4a91550c' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/1b27663d-8ea5-4b35-8186-373ddb166724/tasks/aac22d66d4a91550c.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

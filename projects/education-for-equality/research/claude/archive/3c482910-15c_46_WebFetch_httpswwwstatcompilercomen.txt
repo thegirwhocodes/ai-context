@@ -1,0 +1,25 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.statcompiler.com/en/
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-26 19:27:29 UTC
+========================================================================
+
+URL: https://www.statcompiler.com/en/
+Extraction prompt: Look for any data about Nigeria mobile phone ownership, household assets, or ICT indicators. Find exact percentages for mobile phone ownership by urban/rural and by state.
+
+----------------------------------------
+
+I cannot find the specific data you're looking for in the provided web page content.
+
+The page appears to be the STATcompiler application interface from the DHS (Demographic and Health Surveys) Program, showing navigation elements, customization options for charts and maps, and download features. However, **no actual Nigeria mobile phone ownership data, household assets statistics, or ICT indicators are visible** in this content.
+
+To locate the data you need, you would need to:
+- Access the actual STATcompiler data dashboard through the DHS website
+- Search for Nigeria-specific surveys
+- Filter by the relevant indicators (mobile phone ownership, ICT access, etc.)
+
+The page itself is just the application framework, not the data results.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

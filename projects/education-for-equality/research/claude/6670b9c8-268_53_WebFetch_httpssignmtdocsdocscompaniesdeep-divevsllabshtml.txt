@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://sign.mt/docs/docs/companies/deep-dive/vsllabs.html
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:25:35 UTC
+========================================================================
+
+URL: https://sign.mt/docs/docs/companies/deep-dive/vsllabs.html
+Extraction prompt: Extract ALL technical details about VSL Labs: full pipeline architecture, models used, how translation works step by step, avatar rendering approach, supported sign languages, accuracy metrics, API details. Everything available.
+
+----------------------------------------
+
+# VSL Labs Technical Architecture
+
+## Pipeline Overview
+
+VSL's translation system operates in three sequential stages:
+
+**Stage 1: Natural Language Processing**
+The system "translate[s] written or spoken text into structured sign language" through glossing, which converts text into sign language grammar format. The approach handles "ambiguities and slang" to differentiate meanings (e.g., "rock" as music versus stone).
+
+**Stage 2: Pose Estimation & Computer Vision**
+VSL employs "pose estimation models, such as MediaPipe" to track body movement and generate gestures. The company builds proprietary datasets incorporating "facial expressions and hand positioning" essential for accurate sign conveyance.
+
+**Stage 3: 3D Avatar Rendering**
+The final output uses "Unity, a game engine, to create real-time animated avatars" delivering "hyfelike" movements mimicking human body language rather than robotic motion.
+
+## Supported Languages
+
+Currently focused on American Sign Language (ASL), with planned expansion to British Sign Language (BSL), German Sign Language, and Brazilian Sign Language.
+
+## Notable Gaps
+
+The documentation provides **no technical specifications** on:
+- Accuracy metrics or performance benchmarks
+- API endpoints or integration details
+- Model architectures beyond named tools
+- Latency specifications
+- Dataset sizes or composition
+
+The page emphasizes commercial applications (airlines, healthcare, government) rather than technical implementation details.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

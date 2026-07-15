@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/dining/importantdates.html
+Session: d7dcd518-afbb-4e56-aad6-89cc39370cbb
+Time: 2026-05-12 05:25:45 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/dining/importantdates.html
+Extraction prompt: What are the exact dates for: (1) when spring semester points/meal swipes end in 2026, (2) any gap period between spring and summer dining, (3) when summer dining starts, and (4) summer dining hours/locations. Be specific.
+
+----------------------------------------
+
+# Spring/Summer Dining Dates at Wesleyan
+
+Based on the provided content, here's what I can definitively state:
+
+**Spring Semester End:** "The last day to use all meals and points is 5/16/26 for the academic year."
+
+**Gap Period & Summer Dining:** The webpage does not specify dates for any gap between spring and summer dining, nor does it provide summer dining start dates, hours, or locations.
+
+The page includes a link to "[Summer Dining](Summer Dining.html)" in the navigation menu, but the actual summer dining details are not contained in this document. You would need to visit that separate page for information about summer meal service specifics.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,481 @@
+========================================================================
+AGENT RESEARCH: Research rugged military computer UI aesthetics
+Session: 0e17b9dd-fd49-407b-a86a-9cd1fff442b8
+Time: 2026-04-26 04:30:41 UTC
+========================================================================
+
+Deep research on what the actual user interfaces on rugged military computers look like — the screens soldiers, pilots, and operators stare at on hardware that's supposed to take a brick (and has). Not pop-culture sci-fi. Real systems, real photos, real UI conventions.
+
+Hit these systems and report on each: typography, colors, layout grammar, status indicators, monospace conventions, decorative chrome, what feels distinctly "military computer" vs "consumer SaaS."
+
+A) Mounted/handheld military computers (the hardware that informs the aesthetic):
+- Panasonic Toughbook / Toughpad (FZ-G2, FZ-55, CF-33) — the laptops everyone in fatigues holds
+- Getac (B360, X600, ZX10) — the orange-bumper ruggedized tablets
+- DRS RVS-700 / GVA / GVA II (Generic Vehicle Architecture screens in MRAPs and JLTVs)
+- Leonardo DRS Mounted Family of Computer Systems (MFoCS)
+- General Dynamics GD300 / GD2000 series
+
+B) Software running on them:
+- ATAK / TAK / WinTAK (Tactical Assault Kit — the mapping app)
+- Nett Warrior (smartphone-based situational awareness)
+- Blue Force Tracker / FBCB2 / JBC-P (Joint Battle Command-Platform)
+- Link 16 displays
+- AN/PSQ-20 / ENVG / IVAS HUD
+- Project Convergence / CPCE (Command Post Computing Environment)
+- IVAS (Microsoft HoloLens military variant) UI
+- Anduril Lattice — the actual cockpit-style interface on screens
+- Palantir Gotham / Foundry MIL screenshots
+
+C) Adjacent aesthetic references (real, not invented):
+- Fighter HUD glass — F-35, F-22, A-10, F/A-18 cockpit displays
+- Aegis combat system displays
+- AWACS / E-3 console
+- Submarine BSY-1 / BSY-2 sonar displays
+- NORAD operations floor screens
+- Nuclear launch panel UIs (B-52 / Minuteman) — historical
+- Apollo guidance computer DSKY (the keypad with VERB/NOUN)
+
+D) Color and font conventions:
+- Why is so much of it green-on-black? (NVG-friendly, dark-adapted vision preservation)
+- Where is amber used? Where red? Where blue?
+- "Tactical mode" / "night mode" / "blackout mode" conventions in mission software
+- Why are CRT scanlines / phosphor-glow effects culturally tied to military?
+- What typefaces actually appear on real DoD displays (DIN? OCR-A? OCR-B? Eurostile? Bank Gothic? Helvetica Bold Condensed?)
+
+E) Specific UI conventions:
+- 24-hour timestamps in monospace, always
+- DTG (date-time group) format `261430ZAPR26`
+- Lat/lon coordinates / MGRS grid squares displayed prominently
+- Callsigns in fixed-width boxes
+- Crosshairs and reticles as ambient chrome
+- Stencil typography on hardware (FED-STD-595 colors, MIL-SPEC-DTL-15024 marking)
+- Panel labels in ALL CAPS
+- "Classified" header/footer banners (UNCLASSIFIED // FOUO, etc.)
+- Operator console layouts: status bar top, map center, panels left/right
+- "Snap to grid" / "fix to bezel" feel of hardware-anchored UI
+- Slow scan-line refresh / phosphor decay aesthetic
+- Coordinate readouts in corner regions
+- Always-on system telemetry (battery, temperature, GPS lock, comms link strength)
+
+Return at least 2500 words with actual concrete details I can implement in CSS. For each system or pattern, give:
+- Hex color values where you can find them
+- Typeface names (real or close substitutes)
+- Specific layout grammars (header rules, sidebar widths, monospace usage)
+- Which conventions are universal vs system-specific
+- Which feel earned-rugged vs LARP-rugged
+
+Focus on what makes it feel like a tool that has been THROUGH SOMETHING — paint scuffs, sun damage, scratched glass, dimmed-for-night-ops, knocked into a HMMWV door. The aesthetic of "this has been bricked once and it still works."
+
+The output is feeding a redesign of a marketing landing page for an offline military AI. We want the page to feel like it could BE one of these screens — not a SaaS marketing site dressed up in green.
+
+----------------------------------------
+
+I have enough material now to assemble the deliverable. The user wants 2500+ words of concrete CSS-implementable detail across all the systems they listed. Let me write the full response.
+
+---
+
+# Military Rugged-Computer UI — Deep Aesthetic Reference for Adjutant
+
+A read across the actual hardware screens, software, and aviation/ops-floor displays — what's universal, what's earned, what reads as LARP. Hex codes, typeface picks, layout grammars, and the "this has been bricked once" texture cues are all here, written for direct CSS use.
+
+---
+
+## Part 1 — The hardware that informs the aesthetic
+
+### Panasonic Toughbook (FZ-G2 / FZ-55 / CF-33)
+
+The screens themselves don't carry a Toughbook visual identity — they run Windows 10/11 Pro, sometimes a thin Panasonic launcher utility on top. The aesthetic comes from the **physical chassis** (magnesium alloy, charcoal-gray with a textured matte finish, raised port covers, rubberized corner bumpers in a slightly warmer gray). The display itself is the FZ-G2's signature: **direct-bonded, anti-reflective, glove-capable capacitive touch, sunlight-readable** at typically 1000–1200 nits. That sunlight-readable spec means the UI running on it has to assume **hostile glare** — high contrast, no thin strokes, no light-gray-on-white "premium SaaS" muted typography. (sources: Panasonic Connect FZ-G2 product spec; Tough Outlet review.)
+
+What this means for the page aesthetic: **no body text under #4A4A46 on cream, no body text above #9CA3AF on near-black**. Light-gray-on-white reads as "designer who never used the device outdoors."
+
+### Getac (B360 / X600 / ZX10) — the orange bumper
+
+Getac is the brand that owns the **black-with-yellow-orange-accent** palette in rugged hardware. The bumpers on the F110, ZX10, and B360 are typically **safety yellow** (close to FED-STD-595 33538 / Pantone 116 / `#F0B400`–`#F4C430`) or **safety orange** (closer to Pantone 165 / `#FF6F00`), specifically because (a) MIL-STD-810H drop testing benefits from impact-energy-absorbing TPE corners, and (b) high-vis safety colors mean the device gets found when a soldier sets it down in tall grass or mud.
+
+For Adjutant, this is the **single most distinctive accent license** the rugged-hardware world gives you: a saturated industrial yellow-orange used **only at corners, only as a 4–8px hairline border on cards, never as fill**. Hex picks: `#F4C430` (warning-grade safety yellow) or `#E0852D` (worn industrial orange — looks slightly faded, more "earned"). One color, one stroke, never a wash.
+
+### DRS GVA / GVA II (Generic Vehicle Architecture screens in MRAPs/JLTVs) and Leonardo DRS MFoCS
+
+These are the screens **bolted into the dashboard of an MRAP**. The MFoCS-II pad is a 12.1" rugged-display computer running Windows running tactical software (Blue Force Tracker, JBC-P, JCR). Visual signature: **monochrome bezels in matte black or dark gray-green** (FED-STD-595 34087 OD green, hex ~`#4D5345`), **physical hardware buttons** flanking the screen for fix-it-with-a-glove operation, and the screen content itself is whatever the host software paints — usually JBC-P's **dark blue-gray map base with NTDS friend/foe symbols**.
+
+For CSS: this gives you permission to use **chunky physical-button-feeling controls** with heavy borders (1.5px to 2px), zero border-radius or 2px max, generous touch targets (48×48px minimum, 56×56px for primary). Don't ship pill buttons. Ship **rectangles with hard corners** that a gloved hand can hit.
+
+### General Dynamics GD300 / GD3015 and Nett Warrior EUDs
+
+**Nett Warrior is a Samsung Galaxy Note II (and successors) running a custom Android build** chest-mounted on the soldier's plate carrier. The crucial design lesson cited in the Army's own writeup: *"developers originally released an interface with a military design, but soldiers wanted designs similar to those they had on their personal devices so they could use them intuitively."* (US Army article 107811.) That's the universal-vs-LARP fault line. **The actual end-user interface looks more like Google Maps than Aegis CIC.** Real-world military software, when it works, looks like consumer software with extra status chrome — not like a *Battlestar Galactica* prop.
+
+For the page: this is your warrant to **not bury the interface in scanlines and fake CRT effects**. The tools that have been through something look like working software. The chrome is the giveaway, not the body.
+
+---
+
+## Part 2 — The software running on it
+
+### ATAK / WinTAK / iTAK
+
+ATAK ships with **four operational themes**: **Dark Ops**, **Light Ops**, **strict monochrome Night Red**, and **strict monochrome Night Green**. The Night modes are the rugged-credential cue — they exist because the device has to be readable inside an NVG-equipped helmet without dumping white light into the optic train.
+
+- **Night Green** is roughly `#00FF66` to `#39FF14` foreground on `#000000` background. No mid-grays. Pure binary.
+- **Night Red** is roughly `#FF1A1A` foreground on `#000000`. Used because deep red preserves rod-cell adaptation longer than green.
+- **Dark Ops** is closer to `#0E1015` background with `#D0D5DC` foreground — the "default tactical" look, not the night-vision-strict mode.
+
+Map base in dark mode is typically a desaturated topo (contour lines in `#3A4A3F` over a `#0F1411` base). Friendly tracks are **cyan** (`#00BFFF`), hostile **red** (`#D62828`), neutral **green** (`#3FA34D`), unknown **yellow** (`#F4C430`). These are the **NTDS / MIL-STD-2525 affiliation colors** and they are the closest thing to a universal palette in the field — see Part 3.
+
+UI grammar in ATAK: **status bar pinned top** (battery, GPS lock, comms link strength, callsign), **map full-bleed center**, **collapsible tool drawer left**, **detail panel right**, **timestamp + DTG always visible** in a top-right monospace readout. The corners *always* show coordinates.
+
+### Nett Warrior
+
+Map-centric like ATAK but lighter chrome. Real imagery basemap (not graphic representations), blue-force tracks as cyan dots with callsign labels, "chem light" digital markers. The Galaxy form factor means the chest-mounted device is mostly a **map app with a comms drawer**.
+
+### Blue Force Tracker / FBCB2 / JBC-P (Joint Battle Command-Platform)
+
+Blue-on-tan basemap (the legacy FBCB2 look) or **dark-blue-gray on near-black** (JBC-P modern). Friendly forces are blue circles (the literal origin of the phrase "blue force"), hostile are red diamonds, unknown yellow squares — straight MIL-STD-2525B/C/D symbology. Heavy use of **mono-spaced grid coordinates** in the lower-left, callsign in the upper-left, DTG in the upper-right. The whole UI grammar is **corners carry telemetry, center carries the map**.
+
+### Link 16 displays and NTDS
+
+Per MIL-STD-6016 and the Naval Tactical Data System symbol set: shape codes affiliation (**friend = circle, hostile = diamond, unknown = square, neutral = rectangle**), orientation codes environment (**up = air, down = subsurface, full = surface**). Color in modern displays reinforces affiliation but the shape carries the meaning so the system still works on monochrome legacy CRTs. This is the deep root of why military UI uses **shape + color together** instead of color alone — accessibility-by-doctrine, decades before WCAG.
+
+### IVAS / HoloLens military variant
+
+The IVAS HUD is **green/cyan ghost graphics floating on a transparent visor**. The aesthetic is **minimum chrome possible** — the soldier's actual visual field is the canvas, the UI is reticles, range readouts, compass band across the top, and squad icons. The relevant cue for a marketing page: **transparent layered chrome over photography**, with hairline strokes (1px), no fills, no borders.
+
+### Anduril Lattice
+
+Lattice's "Live COP" (Common Operational Picture) is the cleanest cockpit-style interface in current defense software. From the public Lattice screenshots and the Lauren Park / Anduril design portfolio: **near-black base** (close to `#0A0E13`), **single accent in cyan-to-amber range** for selected entities, **multi-selection panels** that slide from the right, **map full-bleed**, and **object cards** that look like Linear issue cards but with mil-symbology. Type is Helvetica Now Display per the Anduril.com website spec, which strongly suggests Lattice itself uses the same family for consistency.
+
+The Anduril move you can steal: **object cards as the proof device** — small dark cards with a thin top-edge accent (1px in the affiliation color), monospace ID in the corner, plain-language label below. That single card pattern carries the entire "this is military software" register without a single scanline or REDACTED bar.
+
+### Palantir Gotham
+
+Palantir's design language (per the Fictive Kin case study referenced in earlier defense-design research, and the Adam Storr Dribbble case study): **"transparent system using quadrants of the screen for navigation rather than a typical nav bar... inspired by imaginative interfaces found in intelligence and military technologies."** The UI uses **dark navy-to-charcoal base** with **single-accent highlights**, dense data tables in mono, and the famous "graph + table + map" three-pane layout.
+
+### Command Post Computing Environment (CPCE)
+
+CPCE runs on Windows, hosts SharePoint and SQL underneath, and presents a **map-centric COP** with overlays for fires/logistics/intel/airspace/maneuver. Visually the closest civilian analog is ESRI ArcGIS Pro in a dark theme — heavy use of **floating panels with chrome borders**, **monospace coordinates always visible**, and **MIL-STD-2525 symbology painted on the basemap**. Not beautiful, not premium — but **functional and earned-rugged**. This is the look of "shipped and used" rather than "designed for a press release."
+
+---
+
+## Part 3 — Aviation and ops-floor displays
+
+### F-35 / F-22 / A-10 / F/A-18 cockpit MFDs
+
+F-35 panoramic cockpit display: **8" × 20"**, segmentable into up to twelve sub-windows. Color discipline per Lockheed's published material:
+
+- **Black absolute background** — text and symbology have to contrast "clearly and sharply with the absolute black."
+- **Green** = good/safe (friendly forces, OK status)
+- **Yellow** = caution / requires attention
+- **Red** = critical / immediate action required
+- **Cyan** = informational / navigation
+- **Symbol shape encodes affiliation**: red diamond = foe, green circle = friend, yellow square = suspect — the same NTDS lineage as Aegis and Link 16
+
+These are the values you can lift directly:
+- Critical/alert: `#D24545` to `#FF3030`
+- Caution/warn: `#E0B341` to `#F4C430` (signal amber)
+- OK/operational: `#3FA34D` to `#5FBE7D`
+- Info/nav: `#5FB8D6` to `#88CFEA`
+- Background: `#000000` absolute (cockpit) or `#0B0D10` (ground software, less harsh)
+
+A-10 and F/A-18 legacy MFDs are even more reduced — **green on black phosphor** or **green-on-amber-on-black**, mono symbology only. The F-22 introduced the LCD color hierarchy that F-35 now codifies.
+
+### Aegis Combat System / CIC consoles
+
+The Aegis Display System (per the JHU APL Tech Digest write-up) uses **color-coded engagement tracks by Cooperative Unit (CU)** with colored-dot history trails behind each track. The CIC is a **dark room with multiple large-screen displays** — combat information centers are kept dark to preserve dark-adapted vision and to make the screens the dominant light source. The console color discipline is the same NTDS lineage. The aesthetic cue: **multiple synchronized panels with consistent typography and color**, none of which compete for attention. Quiet, dense, monochrome-dominant with surgical color accents.
+
+### NORAD / AWACS / E-3 consoles
+
+NORAD's Cheyenne Mountain ops floor and AWACS E-3 console aesthetics are **the platonic form of "military computer screens"** for the public — large dark displays, green track plots, amber callouts on threats, callsigns in white mono next to each track, and DTG burned into a corner. The pre-1990s versions were literally green phosphor; the modern versions use color LCD but **kept the green-amber-red discipline because the operator population was trained on it**. This is institutional muscle memory, not technical necessity. Use it on the page exactly the same way: **green/amber/red as the only color signals**, white/cream as default ink, accent color only on active state.
+
+### Apollo guidance computer DSKY
+
+The DSKY is the deep-cultural-memory reference. Specifications per the Smithsonian and Wikipedia:
+
+- **Green electroluminescent seven-segment display, 530nm wavelength** — that's roughly `#39FF14` in the brightest emitting state, decaying to `#1F8E0A` as the segments cool
+- **VERB / NOUN keypad** — two-digit codes drive the entire interface, an extreme constraint that produced an iconic design
+- **All-caps mono** typography, electromechanical seven-segment limitations forcing extreme economy
+- **Status indicator lamps** (UPLINK ACTY, NO ATT, STBY, KEY REL, OPR ERR, TEMP, GIMBAL LOCK, PROG, RESTART, TRACKER, ALT, VEL, COMP ACTY) in a 7×3 grid above the numeric display
+
+The DSKY influence on modern military aesthetic: **fixed-grid status lamps**, **extreme economy of display**, **green-on-black phosphor as the deep ancestor of all "operations" UI**. If Adjutant wants a single deep-history visual quote, it's a row of small status lamps across the top of the page (KEY REL / OPR / RDY / NET / GPS / OFFLINE) in mono uppercase with a colored dot next to each.
+
+### Submarine sonar (BSY-1 / BSY-2) and historical launch panels
+
+BSY-1/2 sonar displays are **waterfall plots** — vertical scrolling spectrograms in a green-on-black or amber-on-black palette, with tracks as bright vertical lines on a noisy background. Launch panels (Minuteman, B-52) are **physical instrument panels** with stenciled labels (`ARM`, `LAUNCH`, `INHIBIT`, `COMMIT`) in white-on-OD-green or white-on-charcoal, every label all-caps stencil sans-serif. This is the source of the **stencil typography on physical panels** convention that bleeds into modern military hardware bezel labeling.
+
+---
+
+## Part 4 — Why the colors are what they are
+
+### Green-on-black: rod-cell physiology + cheap-to-build phosphor
+
+Green phosphor became the standard for military and computer terminals in the 70s/80s for **three converging reasons**: (1) green phosphor was the cheapest and longest-persistence option (P31 phosphor was the workhorse), reducing visible flicker at 30–40Hz refresh rates; (2) human rod cells (responsible for low-light vision) peak in sensitivity around **507nm** (green-cyan), so green phosphor stays readable longer when the operator's eyes have dark-adapted; (3) the eye distinguishes more shades of green than any other color, maximizing perceptible detail in a monochrome image.
+
+In practice on a marketing page: **don't use green as a body-text color** — that's larp. Use it as a **status-light color** (`#3FA34D` for "OPERATIONAL"), an **active-state accent** (`#5FBE7D` on a focused control), or a **single mono-line readout** (a 12px JetBrains Mono line in `#39FF14` that says `STATUS: OPERATIONAL · OFFLINE · 24h:42m UPTIME`).
+
+### Amber: the "caution" universal
+
+Amber/yellow at roughly `#E0B341` to `#F4C430` is the single most universal "this is a tactical readout" color across military software, because it's the standard caution color in MIL-STD-1472 and the F-35/F-22/F-18 cockpit color hierarchy. It's also more pleasant on a dark background than pure white, and the eye's photopic luminosity peak is at ~555nm (yellow-green), so amber on black has the highest perceived brightness per emitted photon. **This is the single best primary accent color for an offline-military-AI page** because it reads correctly to military judges as "I know what tactical readouts look like."
+
+### Red: reserved for alerts and night-vision
+
+Pure red (`#D62828` to `#FF1A1A`) appears in two roles: (1) **critical alert** in cockpit color hierarchy (and only critical — overuse destroys the signal); (2) **night-mode foreground** in ATAK Night Red mode and on submarine bridge instruments because deep red preserves rod-cell adaptation for prolonged dark-room work. **Never use red as a brand color.** It's the single most powerful semantic color in this aesthetic and burning it on logos or buttons-that-aren't-alerts will read as design tourism.
+
+### Blue / cyan: friendly, navigational
+
+Cyan (`#5FB8D6` / `#00BFFF`) is the universal **friendly forces** color (literally "blue force tracker"). Use it for friendly state, navigation indicators, links — anything where the meaning is "this is ours, this is good." Avoid using saturated `#0000FF` blues — those don't appear on real military displays and read as 1990s desktop UI.
+
+### "Tactical mode / night mode / blackout mode"
+
+The three-tier convention across mission software (ATAK, JBC-P, CPCE):
+
+1. **Day mode** — light background, dark text, max contrast for sunlight readability
+2. **Night mode** — deep dark background (`#0B0D10` or `#0A0E13`), dimmed foreground, single subtle accent
+3. **Blackout / NVG mode** — strict monochrome (green or red), no decorative chrome, intensities reduced to bare minimum for NVG compatibility
+
+For the marketing page: shipping a **night-mode-by-default** with an explicit toggle to a "blackout / monochrome green" mode would be the single most operator-credible move you could make. It's a real convention from real software, not a gimmick.
+
+---
+
+## Part 5 — Typefaces that actually appear on real DoD displays
+
+What real military software uses (verified):
+
+- **Arial / Helvetica** — MIL-STD-1472 specifies sans-serif at minimum stroke width for readability; most current Windows-based mission software defaults to Segoe UI or Arial because of the underlying OS
+- **DIN 1451** — German road-sign typeface, originally specced by the Reichsbahn in 1931, has a long military-engineering heritage, used on European NATO equipment markings
+- **Eurostile / Microgramma** (Aldo Novarese, 1962) — square-shouldered geometric sans, used on hardware labels and historically on cockpit displays; **the typeface of "2001: A Space Odyssey"** and the deep-cultural source of "this looks like a spaceship" typography
+- **Bank Gothic** (Morris Fuller Benton, 1930) — rectilinear all-caps sans, "popular from the late twentieth century to suggest a science-fiction, military, corporate, or sports aesthetic" (Wikipedia). **Almost always wrong** — it reads as LARP-rugged, not earned-rugged. The "Modern Warfare" video game logo school of typography. Avoid.
+- **OCR-A / OCR-B** — designed for machine readability, appears on classification banners and document IDs
+- **MIL-STD stencil** typefaces — for physical equipment markings (crates, vehicles), per MIL-STD-130 spec ("ALL CAPS in a sans-serif font, all numerals in standard Arabic font, avoiding stylized or script-like designs")
+
+What to actually ship on the page:
+
+- **Inter Display** for headlines (or **Helvetica Now Display** if budget allows — that's Anduril's choice and it reads as "defense-establishment with money")
+- **Inter** for body
+- **JetBrains Mono** or **IBM Plex Mono** for **all status readouts, callsigns, coordinates, DTGs, and version strings** — the mono is the texture, not Bank Gothic
+- **One** display-tier accent in **uppercase mono** for section labels (`002 // OFFLINE PIPELINE`) — this is the Saronic move, deeply earned-rugged
+
+What NOT to ship:
+
+- Bank Gothic anywhere — instant LARP
+- Eurostile Bold Extended for headlines — sci-fi prop, not military software
+- Stencil fonts in body or UI chrome — stencils are for physical crates, never on screens
+- Free "Army" / "Military" Dafont fonts — every one of them reads as costume
+
+---
+
+## Part 6 — Universal UI conventions to lift
+
+These are the conventions that appear across **every** system in Parts 1–3 and will read as authentic to anyone who has worked with the actual software:
+
+### Always-visible telemetry in the corners
+
+Every operator console (ATAK, JBC-P, CPCE, F-35 MFD, Aegis CIC) puts critical telemetry in fixed corner regions. The convention:
+
+- **Top-left**: callsign / unit / classification banner
+- **Top-right**: DTG (`261430ZAPR26`) in monospace, plus battery, GPS lock, comms link strength as small icons
+- **Bottom-left**: current coordinates (MGRS or lat/lon) in monospace
+- **Bottom-right**: version string, build number, classification footer
+
+For the landing page: **a thin status strip pinned to the top of the viewport** with `[CALLSIGN: ADJUTANT] [DTG: <live>] [GPS: LOCK] [COMMS: OFFLINE] [BATT: 84%]` in 11–12px JetBrains Mono uppercase, tracked +0.05em, at 60% opacity. It is **the single highest-leverage piece of chrome you could ship** because it instantly signals operator-fluency without saying a word about it.
+
+### DTG (Date-Time Group) format
+
+`DDHHMMZ MMM YY` — `261430ZAPR26` = April 26, 2026, 14:30 Zulu (UTC). All numeric fields zero-padded, alphabetic strictly uppercase, fixed 12 characters when unspaced. **Always monospace, always uppercase, always Zulu.** Showing a DTG live-clock in the page header is the move. CSS:
+
+```css
+.dtg {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+}
+```
+
+### MGRS / lat-lon coordinate display
+
+Always monospace, always tabular-nums, always corner-anchored. MGRS is a 1-meter precision grid square reference (e.g., `4QFJ 12345 67890` for a point in Hawaii). For Adjutant, since Fort Bragg is the persona's location, you can hard-code `17S NA 96321 79124` (Fort Bragg main post area, MGRS) as a quiet decorative readout in the bottom-left and it will read as deeply correct to anyone who knows.
+
+### Callsigns in fixed-width boxes
+
+Callsigns are always 4–8 character monospace alphanumeric strings, often in a **bordered box** (1px hairline) with the callsign in the foreground accent and the unit/role in the secondary ink below. For Adjutant: `ADJUTANT-01 // SCSP // CHARLIE MIKE` in a thin-ruled box pinned to the page corner.
+
+### ALL CAPS panel labels
+
+Every UI label on real military software is **ALL CAPS sans-serif**, tracked +0.05em to +0.08em, at 11–13px. Sentence-case labels read as "consumer SaaS." For the page: **section eyebrows in 12px mono uppercase tracked +0.08em**, and **panel labels in 13px sans uppercase tracked +0.05em**. Body remains sentence case.
+
+### Classification banners (UNCLASSIFIED / CUI)
+
+DoD's current convention: **green banner top and bottom** for UNCLASSIFIED (RGB 0, 122, 51 / `#007A33`), **red banner top and bottom** for SECRET (`#C8102E`). Banners are full-width, ~24–32px tall, white text centered, sans-serif uppercase. FOUO is obsolete and replaced by CUI.
+
+For Adjutant: a thin **`UNCLASSIFIED`** banner pinned to the top of the viewport in `#007A33` with white 12px uppercase text would be the most operator-credible single piece of chrome on the page. It's a real convention, applied correctly (Adjutant *is* unclassified — declaring it correctly is honest, not larp). You can also do a clever variant: `UNCLASSIFIED // OPEN SOURCE // BUILT FOR THE RANK-AND-FILE` in the same banner format.
+
+### 24-hour timestamps in monospace
+
+Always. Never 12-hour with AM/PM on a tactical readout. `14:30:42` not `2:30:42 PM`. Tabular nums.
+
+### Crosshairs and reticles as ambient chrome
+
+Used **sparingly** in real software — usually only on map-overlay tools (range cards, fire-control overlays). Heavily used in fictional military UI which is why it reads as LARP unless tied to actual functionality. **Don't paint crosshairs decoratively on the page.** A small reticle is acceptable as a cursor or as a "selected entity" marker on the proof-loop visual.
+
+---
+
+## Part 7 — The "this has been bricked once and still works" texture
+
+This is the hardest aesthetic to pull off and the easiest to faceplant on. The cues that read as **earned-rugged**:
+
+### Subtle imperfection, never decorative imperfection
+
+- **A thin 1px noise overlay at 3–6% opacity** across the page — adds texture without screaming "I'm distressed." CSS: a tiled SVG noise filter at `opacity: 0.04`.
+- **Slightly irregular type baselines** — don't go full hand-drawn, but `font-feature-settings: "ss01", "ss02"` if your typeface supports stylistic alternates; or accept the irregularity Inter naturally has at small sizes.
+- **One off-white that's not white** — `#F4F1EA` warm cream or `#ECEEF0` cool ink. Pure `#FFFFFF` reads as "untouched, brand-new, never deployed."
+- **One off-black that's not black** — `#0B0D10` (slight blue cast, "operations center") or `#0E0F0D` (warm off-black). Pure `#000000` only inside cockpit-style panels where it's correct.
+
+### Hardware-anchored UI feel
+
+- **Hard-corner panels** — `border-radius: 0` or `2px max`. Pill shapes are SaaS. Hard corners are equipment.
+- **Visible bezels** — wrap product mockups in a 12–16px-thick dark gray "bezel" with rounded outer corners and hard inner corners. The bezel grounds the screen content as belonging to a device.
+- **Thin hairlines (1px) at warm-gray** — `#1E2228` on dark, `#D9D5C8` on cream. Hairlines feel like panel seams, not card shadows.
+- **No drop shadows on cards.** Use a 1px border instead. Drop shadows are SaaS.
+
+### "Knocked into a HMMWV door" — small physical-damage cues, used ONCE
+
+- **A single thin scuff** (a narrow gradient streak at `mix-blend-mode: overlay`) across one corner of one hero image. Not on every panel.
+- **A single sun-faded patch** — one section's accent color at slightly desaturated value vs the others, like the page has been left in the dash for a year.
+- **Tape labels** — a small `[FIELD-TESTED · APR 2026]` tag in mono uppercase with a 1px hard border, looking like a piece of MIL-SPEC label tape applied over a panel. Use **once, in the footer**.
+
+### What NOT to do
+
+- **No CRT scanlines.** Scanlines are the deep LARP signal. Every gaming-laptop marketing page in 2026 has them. They will instantly drop you out of "this software ships to soldiers" into "this is a video game ad."
+- **No phosphor-bloom glow on text.** Same problem. The actual modern operator software runs on LCD; phosphor bloom is a 1990s CRT artifact. Adding it is costume.
+- **No "REDACTED" black bars.** Implies you handle classified data when you don't. Will read as costume to anyone who actually does, and as alarming to anyone who doesn't.
+- **No fake "ACCESS GRANTED / ACCESS DENIED" sequences.** Hollywood, not Pentagon.
+- **No giant rotating hexagonal "AI core" graphics.** Defense-tech shorthand for "we don't have a product."
+- **No grid-of-camo-pattern backgrounds.** Worst LARP signal of all.
+
+---
+
+## Part 8 — What to actually ship for Adjutant
+
+A tight palette and grammar synthesizing everything above:
+
+### Palette (Operations Center, military-credible)
+
+```css
+--bg-base       : #0B0D10;  /* near-black, slight cool cast */
+--bg-elevated   : #15181C;  /* card surface */
+--bg-panel      : #1A1E23;  /* nested panel */
+--ink-primary   : #ECEEF0;  /* not pure white */
+--ink-secondary : #9CA3AF;  /* body */
+--ink-mute      : #5C6470;  /* captions, mono telemetry */
+--rule          : #1E2228;  /* hairline borders */
+
+--signal-amber  : #E0B341;  /* primary accent — caution color universal */
+--signal-ok     : #5FBE7D;  /* OK / OPERATIONAL */
+--signal-warn   : #E98146;  /* warning */
+--signal-alert  : #D24545;  /* critical / RESERVED */
+--signal-info   : #5FB8D6;  /* friendly / navigational */
+
+--banner-uncls  : #007A33;  /* DoD UNCLASSIFIED green */
+```
+
+### Type stack
+
+```css
+--font-display  : "Inter Display", -apple-system, system-ui, sans-serif;
+--font-body     : "Inter", -apple-system, system-ui, sans-serif;
+--font-mono     : "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+```
+
+### Universal chrome (corner telemetry strip)
+
+A thin status strip pinned to the top edge of the viewport at all times:
+
+```
+[UNCLASSIFIED] [CALLSIGN: ADJUTANT-01]  [261430ZAPR26]  [GPS: LOCK · OFFLINE · BATT: 84%]
+```
+
+11px JetBrains Mono uppercase, tracked +0.05em, in `--ink-mute`, with the green UNCLASSIFIED tag at left in `--banner-uncls` reverse-out.
+
+### Hero composition
+
+- **Eyebrow**: `001 // SCSP HACKATHON · APRIL 2026 · BOSTON` — 12px mono uppercase, `--ink-mute`, tracked +0.08em
+- **Headline**: three to five words, sentence case, Inter Display 72–96px, tracked -0.035em, `--ink-primary`. Try: *"Paperwork. Done by voice. Offline."*
+- **Subhead**: one sentence, 18–20px Inter, `--ink-secondary`, max width ~52ch
+- **CTA**: hard-cornered button, Inter Display 14px uppercase tracked +0.05em, `--signal-amber` border 1.5px, transparent fill, amber text. Hover: amber fill, dark text.
+- **Right pane**: persistent waveform + DA-31 form-fill loop in a bezeled panel (12px dark-gray bezel, hard inner corners, thin 1px `--rule` border on the screen content)
+
+### Section grammar
+
+- 8px base grid, 12-col, 1280px max content width
+- Section vertical rhythm: `padding-block: clamp(80px, 10vw, 160px)` with the top 25% larger than the bottom (creates "new chapter" beat)
+- Section eyebrows: `002 // OFFLINE PIPELINE` in mono uppercase
+- Numbered capability list (Saronic move): `001 LISTEN / 002 CITE / 003 DRAFT / 004 SIGN`
+
+### One unmistakable signature
+
+**Pick exactly one** of the following and let it carry the brand:
+
+1. **The persistent right-pane: live waveform + DA-31 form-fill animation that synchronizes with the scroll-driven copy on the left.** This is the single highest-leverage move because it tells the entire product story without a feature bullet.
+2. **The numbered form-list `001 DA-31 / 002 DD-1351-2 / 003 DA-4856` as a vertical sticky sidebar** on the proof section, each item highlighting as the user scrolls into the matching block.
+3. **The corner-anchored telemetry strip** running the full height of the page (top status, bottom MGRS coordinate readout, with the DTG live-updating in monospace).
+
+Don't do all three. Pick one.
+
+### The single most distinguishing move
+
+If you ship one accent color, make it **`#E0B341` signal amber** — not green. Every defense-tech marketing site in 2026 uses either Defence Dun cream or `#39FF14` green. Amber reads correctly to military judges (it's the universal caution/readout color in their actual cockpits and ops centers) and reads distinctively to design-savvy civilians (because nobody else is using it). It's the rarest correct move.
+
+### Final rule
+
+**Don't ship every cue.** The aesthetic of "this has been through something" is built on **restraint**: one accent, one mono telemetry strip, one bezeled product visual, one numbered list, one classification banner. Every cue you add past those is a step back toward LARP. The Adjutant page should feel like you opened the actual software — quiet, dense, monochrome-dominant, accent on operational status only. The proof that it's military isn't the chrome; it's the discipline.
+
+---
+
+**Key file paths referenced:**
+- `/Users/naomiivie/Education for Equality/.claude-sessions/db11b54e-89b2-473e-b485-24b7a9698b7e.txt` (Adjutant build session)
+- `/Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_02_Research_premium_AIdefense-tech_site_patterns.txt` (companion design spec — read alongside this; that one covers Anduril/Linear/Vercel premium-marketing register, this one covers the rugged-hardware-software register)
+- `/Users/naomiivie/adjutant/web/styles.css` (where these tokens land)
+
+Sources:
+- [ATAK Wikipedia](https://en.wikipedia.org/wiki/Android_Team_Awareness_Kit)
+- [TAK.gov ATAK products](https://tak.gov/products)
+- [ATAK Design System Figma community](https://www.figma.com/community/file/1571370238280853168/atak-design-system-tactical-assault-kit-team-awareness-kit)
+- [Anduril Lattice product page](https://www.anduril.com/lattice/lattice-sdk)
+- [Anduril Command & Control](https://www.anduril.com/command-and-control/)
+- [Lauren Park Anduril design portfolio](https://www.laurenjpark.com/work/anduril)
+- [Panasonic Toughbook FZ-G2 spec](https://eu.connect.panasonic.com/gb/en/toughbook/toughbook-g2-series/toughbook-g2-mk3-standard)
+- [Atomic Defense — Green Phosphor NVGs](https://www.atomicdefense.com/collections/green-phosphor-nvgs)
+- [Crate Club — Why NVGs are green](https://crateclub.com/blogs/loadout/why-are-night-vision-goggles-green)
+- [US Army — Nett Warrior gets new EUD](https://www.army.mil/article/107811/nett_warrior_gets_new_end_user_device)
+- [Nett Warrior Wikipedia](https://en.wikipedia.org/wiki/Nett_Warrior)
+- [Military Aerospace — F-35 panoramic display](https://www.militaryaerospace.com/sensors/article/14276510/panoramic-display-f-35-cockpit-avionics)
+- [Code One Magazine — F-35 Front Office](https://www.codeonemagazine.com/c130_article.html?item_id=35)
+- [SLDInfo — F-35 cockpit overview](https://sldinfo.com/whitepapers/an-overview-of-the-f-35-cockpit-what-5th-generation-aircraft-are-all-about/)
+- [DTG format Wikipedia](https://en.wikipedia.org/wiki/Date-time_group)
+- [kvurd — Date-Time Groups](https://kvurd.com/blog/date-time-groups/)
+- [MIL-STD-1472G EverySpec](https://everyspec.com/MIL-STD/MIL-STD-1400-1499/MIL-STD-1472G_39997/)
+- [North Atlantic Industries MIL-STD-1472 guide](https://docs.naii.com/guides/ms1472.html)
+- [Bank Gothic Wikipedia](https://en.wikipedia.org/wiki/Bank_Gothic)
+- [Typeset In The Future — Eurostile](https://typesetinthefuture.com/2014/11/29/fontspots-eurostile/)
+- [Palantir Gotham product page](https://www.palantir.com/platforms/gotham/)
+- [Apollo DSKY — Smithsonian](https://airandspace.si.edu/collection-objects/keyboard-display-dsky-apollo-guidance-computer/nasm_A19760744000)
+- [Apollo Guidance Computer Wikipedia](https://en.wikipedia.org/wiki/Apollo_Guidance_Computer)
+- [Aegis Combat System Wikipedia](https://en.wikipedia.org/wiki/Aegis_Combat_System)
+- [JHU APL Tech Digest — Aegis Display System](https://secwww.jhuapl.edu/techdigest/content/techdigest/pdf/V22-N04/22-04-Sunday.pdf)
+- [DOD CUI Marking Handbook](https://www.dcsa.mil/Portals/91/Documents/CTP/CUI/DOD-CUI_Marking_Handbook-DOD_(2020).pdf)
+- [Classification Banner GitHub project](https://github.com/fcaviggia/classification-banner)
+- [Federal Standard 595 Wikipedia](https://en.wikipedia.org/wiki/Federal_Standard_595)
+- [Getac Rugged Tablets](https://www.getac.com/us/products/tablets/)
+- [MIL-STD-130 labels guide (MPC)](https://mpofcinci.com/blog/guide-to-mil-std-130-identification-labels/)
+- [MIL-STD-2525 Common Warfighting Symbology](https://nps.edu/documents/104517539/109705106/MIL-STD-2525.PDF/87529131-72ce-44a7-91fb-b6c05381f7a4)
+- [DTIC — Common Navy Warfighting Display Symbology](https://apps.dtic.mil/sti/tr/pdf/ADA484484.pdf)
+- [MGRS Wikipedia](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
+- [PEO C3T — CPCE](https://peoc3t.army.mil/mc/cpce.php)
+- [Link 16 Wikipedia](https://en.wikipedia.org/wiki/Link_16)
+agentId: afabbab34147bf06a (use SendMessage with to: 'afabbab34147bf06a' to continue this agent)
+<usage>total_tokens: 112450
+tool_uses: 32
+duration_ms: 27604697</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,45 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iPhone terminal SSH into Mac run Claude Code remotely
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 21:04:36 UTC
+========================================================================
+
+Search query: iPhone terminal SSH into Mac run Claude Code remotely
+
+----------------------------------------
+
+Web search results for query: "iPhone terminal SSH into Mac run Claude Code remotely"
+
+Links: [{"title":"Remote Claude Code: programing like it was the early 2000s | Harper Reed's Blog","url":"https://harper.blog/2026/01/05/claude-code-is-better-on-your-phone/"},{"title":"Running Claude Code from iPhone via SSH + tmux - DEV Community","url":"https://dev.to/shimo4228/running-claude-code-from-iphone-via-ssh-tmux-4c10"},{"title":"Using Claude-Code on the go","url":"https://blog.esc.sh/using-claude-code-on-the-go/"},{"title":"Claude Code Mobile: iPhone, Android & SSH (2026) | Sealos Blog","url":"https://sealos.io/blog/claude-code-on-phone/"},{"title":"Seamless Claude Code Handoff: SSH From Your Phone With tmux - Elliot Bonneville","url":"https://elliotbonneville.com/phone-to-mac-persistent-terminal/"},{"title":"Run Claude Code from Your Phone Securely | Twingate","url":"https://www.twingate.com/blog/claude-code-termius-tmux"},{"title":"Control Claude Code from iPhone with SSH + Zellij (Free)","url":"https://tonydehnke.com/blog/claude-code-iphone-ssh-zellij/"},{"title":"iPhone Claude full stack dev - no VPN, no remote desktop","url":"https://blog.rchase.com/iphone-claude-full-stack-dev-no-vpn-no-remote-desktop/"},{"title":"Moshi — SSH & MOSH Terminal for Claude Code & AI Agents","url":"https://getmoshi.app/"},{"title":"How to Use Claude Code from an iPhone: Termius + Tailscale + tmux Setup Guide","url":"https://zenn.dev/shimo4228/articles/termius-iphone-claude-code?locale=en"}]
+
+Based on the web search results, here's what I found about running Claude Code remotely on a Mac via SSH from an iPhone:
+
+## Overview
+
+There are guides for using Claude Code remotely from your phone by SSH-ing into your workstation, using terminal clients and tools like TMUX and mosh to code with AI assistance from anywhere.
+
+## Key Components
+
+**Terminal Clients for iPhone:**
+Termius is an iOS SSH client that connects the iPhone to the Mac's terminal. Other options like Blink Shell are also available.
+
+**Session Persistence:**
+tmux is a terminal box that keeps running on the Mac, and as a session persistence tool, even if the connection drops, processes on the Mac keep running, and reconnecting restores the screen exactly where you left off.
+
+**Networking:**
+Tailscale is used for networking, and it creates a private mesh network between your devices using WireGuard.
+
+## Mac Setup
+
+Macs are a bit harder to set up—you need to enable SSH, and then for extra credit you need to enable screen sharing. In MacOS, you can enable SSH by going to settings -> General -> Sharing -> Remote Login.
+
+## Important Considerations
+
+The Claude iOS app can't access your filesystem, your Git repos, your test runners, or your local toolchain, as it's a chat interface, not a development environment. If you want to run Claude Code for real work from your phone, you need to SSH into the machine where your code lives.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

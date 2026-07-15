@@ -1,0 +1,265 @@
+========================================================================
+AGENT RESEARCH: Find Nigeria OOSC data sources
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-05 22:01:45 UTC
+========================================================================
+
+I'm helping a Wesleyan economics student write an empirical paper on the economic cost of out-of-school children (OOSC) in Nigeria. The World Bank's SE.PRM.UNER.ZS indicator only has 10 data points for Nigeria (1999, 2000, 2004-2010, and 2023) with a massive 12-year gap from 2011-2022. We need to find alternative data sources with better coverage.
+
+Please search the web thoroughly for OOSC data on Nigeria from these specific sources:
+
+1. **UNESCO Institute for Statistics (UIS)** — http://uis.unesco.org/ — their out-of-school rate data, including:
+   - Out-of-school rate, primary
+   - Out-of-school rate, lower secondary
+   - Number of out-of-school children of primary age
+   - Adjusted net attendance/enrollment rate
+   - What years are available for Nigeria?
+
+2. **UNICEF Data** — https://data.unicef.org/ — their out-of-school children dashboard
+   - What time series do they have for Nigeria?
+   - Do they have annual data or just specific survey years?
+
+3. **Nigeria-specific surveys** that the Milan & Burnett (2014) and Eregha et al. (2018) papers may have used:
+   - **Demographic and Health Survey (DHS) Nigeria** — usually conducted every 5 years, has school attendance data
+   - **Multiple Indicator Cluster Survey (MICS) Nigeria** — UNICEF-supported survey
+   - **Nigeria Living Standards Survey (NLSS)**
+   - **National Personnel Audit** by UBEC
+
+4. **Nigeria's Universal Basic Education Commission (UBEC)** — they publish:
+   - National Personnel Audit
+   - National Assessment data
+   - Out-of-school children reports
+
+5. **Federal Ministry of Education Nigeria** — annual digest of education statistics
+
+6. **EPDC (Education Policy and Data Center)** — has Nigeria education profiles
+
+7. **World Inequality Database on Education (WIDE)** — UNESCO
+
+For each source, tell me:
+- The URL where the data is hosted
+- What years are available for Nigeria specifically
+- What the variable measures (out-of-school rate vs number, primary vs secondary, etc.)
+- Whether the data is downloadable as CSV/Excel
+- Whether it's continuous annual data or scattered survey years
+
+The goal: find at least 2-3 sources that together give the student more continuous data on Nigerian OOSC than the World Bank's 10 scattered points. If we can stitch together data from UIS + DHS + MICS, that might give us 20+ observations across 1990-2023.
+
+----------------------------------------
+
+I have enough information to deliver a thorough answer. Here is my consolidated research findings.
+
+---
+
+# OOSC Data Sources for Nigeria: Compiled Research
+
+## Bottom line up front
+
+The **most efficient path** is to combine: (1) **UIS/GEM Report VIEW modeled estimates** (annual 2000-2023, downloadable CSV) as the primary continuous series, then triangulate with (2) **DHS Nigeria** (1990, 1999, 2003, 2008, 2013, 2018, 2023-24 = 7 survey points) and (3) **MICS Nigeria** (1995, 1999, 2007, 2011, 2016-17, 2021 = 6 survey points). Together these give ~24 annual modeled points + 13 directly-measured survey points spanning 1990-2024 - far more than the World Bank's 10 administrative observations.
+
+---
+
+## 1. UNESCO Institute for Statistics (UIS)
+
+**URL:** https://databrowser.uis.unesco.org/ (replaced the old http://data.uis.unesco.org/)
+**Bulk download:** https://databrowser.uis.unesco.org/resources
+
+**Key details:**
+- The UIS is the **original source** for the World Bank's `SE.PRM.UNER.ZS` indicator - so direct UIS download will have the same gap problem for the raw administrative series. However, UIS publishes more granular indicators than the World Bank surfaces.
+- Available indicators include: **Out-of-school rate (1 year before primary, primary, lower secondary, upper secondary)**, **Number of out-of-school children of primary age**, **Adjusted net enrollment rate (ANER)**, gross/net enrollment rates.
+- **Three downloadable CSV datasets** (updated Feb 2026):
+  1. SDG 4 Education - Global and Thematic Indicators
+  2. Background Information on Education Statistics
+  3. Other Policy Relevant Indicators (OPRI, formerly NATMON)
+- **Caveat:** UIS warns Excel may struggle with the full bulk file - use Python/R/CSV reader.
+
+---
+
+## 2. UNESCO GEM Report VIEW (out-of-school estimates) - **HIGHEST VALUE FOR YOUR PAPER**
+
+**URL:** https://www.unesco.org/en/education/view/outofschool/estimates (formerly https://education-estimates.org/out-of-school/)
+
+**Why this is the key source:** UIS + GEM Report built a **statistical model in 2022** that fills gaps by combining administrative data, DHS, MICS, and other household surveys into a **complete annual time series from 2000 onwards** - with 90% uncertainty intervals around the median estimate. This raised data coverage from 62% to 98% of countries.
+
+**Variables for Nigeria:**
+- Out-of-school rate, primary
+- Out-of-school rate, lower secondary
+- Out-of-school rate, upper secondary
+- Disaggregated by sex
+- Annual coverage 2000-2023 (~24 observations, no gaps)
+
+**Downloadable:** Yes - the data explorer lets users "view and download model estimates directly."
+
+**Verified Nigeria values from this source:**
+- 2000: 33% OOSC rate primary | 6.4 million children
+- 2010: 7.5 million children
+- 2012: 27% OOSC rate
+- 2020: 9.6 million children
+- 2024 estimate: 10.2 million primary-age, 18.3 million total including secondary
+
+---
+
+## 3. DHS (Demographic and Health Survey) Nigeria
+
+**URL:** https://dhsprogram.com/ (look up "Nigeria: Standard DHS")
+**Microdata catalog:** https://microdata.worldbank.org/ (catalog ID 8029 for 2024)
+
+**Years available:** 1990, 1999, 2003, 2008, 2013, 2018, 2023-24 (**7 survey waves**)
+
+**Variables:** Net Attendance Ratio (NAR) and Gross Attendance Ratio (GAR) for primary and secondary, by sex, region, wealth quintile. School attendance is collected for all household members.
+
+**Format:** Microdata (Stata, SPSS, SAS) requiring registration; PDF reports tabulate the headline NAR/GAR. NAR provides a survey-based proxy for school attendance from which OOSC rate ≈ 100% - NAR.
+
+**Bonus:** Nigeria also has two **NEDS (Nigeria Education Data Survey)** - 2004 and 2010 - which are DHS-EdData supplements that drill specifically into education for ages 4-16. A third NEDS-like survey was conducted in 2015. URL: https://catalog.ihsn.org/index.php/catalog/3344
+
+---
+
+## 4. MICS (Multiple Indicator Cluster Survey) Nigeria
+
+**URL:** https://mics.unicef.org/country-profiles/nigeria/4131 (country profile)
+**Surveys list:** https://mics.unicef.org/surveys
+
+**Years available:** 1995 (MICS1), 1999 (MICS2), 2007 (MICS3), 2011 (MICS4), 2016-17 (MICS5), 2021 (MICS6) - **6 waves**. Plus MICS Plus 2023-24 (three waves Feb 2023 - Jan 2025).
+
+**Variables:** Education attendance module - same NAR/GAR primary and secondary, by sex/wealth/location. MICS6 (2021) explicitly tracks SDG4 indicators including learning outcomes, ECCDE attendance, parental involvement.
+
+**Format:** Microdata (SPSS) downloadable after registration; published reports include tabulated attendance rates.
+
+---
+
+## 5. UNICEF Data Warehouse
+
+**URL:** https://data.unicef.org/topic/education/
+
+**For Nigeria specifically:**
+- Adjusted Net Attendance Rate (ANAR) primary: dataset on HDX https://data.humdata.org/dataset/unicef-ed-anar-l1
+- These are derived from the underlying DHS/MICS waves above (so it's not new data, but a clean pre-processed time series)
+- **Not annual** - it inherits the survey-year structure (so ~6-7 points for Nigeria).
+- Format: CSV via HDX
+
+---
+
+## 6. Nigeria Living Standards Survey (NLSS)
+
+**URL:** https://microdata.nigerianstat.gov.ng/
+
+**Years available:** 2003-04, 2009-10 (HNLSS, harmonized version), 2018-19, 2023 (**4 waves**)
+
+**Variables:** Education module collects school attendance for household members. Use as additional triangulation, especially for wealth/expenditure interactions with OOSC.
+
+**Format:** Microdata downloadable after registration on Nigeria NBS or World Bank LSMS catalog.
+
+---
+
+## 7. UBEC (Universal Basic Education Commission) Personnel Audit / Digest of Statistics
+
+**URL:** https://ubec.gov.ng/digest-of-statistics/
+
+**Years available:**
+- 2019 & 2020 Digest of Statistics (Volumes I, II, III) - PDF
+- 2022 Digest (Public, Private, and Combined) - PDF
+- Earlier National Personnel Audits referenced for 2010 (~10.5M OOSC) and 2018-19 (10,193,918 OOSC)
+
+**Variables:** Total OOSC count by state and gender (ages 6-11), classroom counts, teacher counts. State-level disaggregation is the unique value-add here.
+
+**Format:** PDF only - **not** machine-readable CSV. Caveat: UBEC itself has stated that getting accurate OOSC figures is impossible without an updated census, since population denominators are outdated.
+
+---
+
+## 8. Federal Ministry of Education - Nigeria Digest of Education Statistics
+
+**URL:** https://education.gov.ng/nigeria-digest-of-education-statistics/
+
+**Years available:** 2011-2016 covered, with detailed 2013/14 - 2015/16 breakdowns; 2019 Digest also published (https://education.gov.ng/wp-content/uploads/2021/09/2019-Nigeria-Digest-of-Education-Statistics.pdf); 2017 Digest at https://nemis.education.gov.ng/2017-Nigeria%20Digest%20of%20Education%20Statistics%202017.pdf
+
+**Variables:** Includes specifically "Out-of-School Children (age 6-11 years) by State and Gender, 2015-2016" plus enrollment by class/gender/public-private/state.
+
+**Format:** PDF only.
+
+---
+
+## 9. EPDC (Education Policy and Data Center)
+
+**URL:** https://www.epdc.org/country/nigeria
+**Nigeria National Education Profile (2018):** https://www.epdc.org/sites/default/files/documents/EPDC_NEP_2018_Nigeria.pdf
+**Nigeria OOSC Profile:** https://www.epdc.org/sites/default/files/documents/Nigeria_OOSC_Profile.pdf
+
+**Variables:** Attendance at primary/lower secondary/upper secondary, primary completion, literacy. Pulls from DHS/MICS/UIS.
+
+**Format:** Mostly PDF profiles - aggregator rather than primary source. Useful as cross-reference, not for new time-series.
+
+---
+
+## 10. WIDE - World Inequality Database on Education
+
+**URL:** https://www.education-inequalities.org/countries/nigeria
+
+**Variables:** OOSC rate, completion rates, attendance - all disaggregated by **wealth quintile, gender, urban/rural, region, ethnicity, language**. Built on DHS/MICS/national household survey microdata.
+
+**Years available for Nigeria:** Tied to the underlying DHS/MICS waves (so 1999, 2003, 2008, 2011, 2013, 2016-17, 2018, 2021 windows).
+
+**Format:** Online interactive viewer; can export filtered tables. Best use: equity dimension for the term paper.
+
+---
+
+# Recommended stitching strategy for Naomi's empirical paper
+
+**Primary continuous series (for regression Y-variable):**
+- **GEM Report VIEW modeled annual estimates 2000-2023** (CSV download) - this is the only source giving you ~24 continuous annual points without survey gaps. Methodology is documented and peer-reviewed.
+
+**Validation / robustness checks:**
+- Overlay DHS NAR (7 points: 1990, 1999, 2003, 2008, 2013, 2018, 2023-24)
+- Overlay MICS NAR (6 points: 1995, 1999, 2007, 2011, 2016-17, 2021)
+- Cross-check with UBEC National Personnel Audit numbers for 2010, 2018-19, 2022 (administrative)
+
+**For Milan & Burnett (2014) replication / Eregha et al. (2018) comparison:** Those papers most likely combined UIS administrative data + DHS/MICS survey points - the same triangulation strategy. Cite the specific waves they used and whether they used OOSC rate or absolute count as the dependent variable.
+
+**Caveat for the methods section:** The administrative UIS series and the survey-based DHS/MICS series will not match exactly because they measure different things (administrative enrollment / population vs. household-reported attendance). The GEM Report VIEW model reconciles these into one estimate with uncertainty bands - which is why it's the cleanest choice for a regression.
+
+Sources:
+- [UIS Data Browser](https://databrowser.uis.unesco.org/)
+- [UIS Bulk Data Download Documentation](https://databrowser.uis.unesco.org/documentation/bulk)
+- [GEM Report VIEW Out-of-School](https://www.unesco.org/en/education/view/outofschool/estimates)
+- [GEM Report VIEW (legacy)](https://education-estimates.org/out-of-school/)
+- [UIS Out-of-school rate glossary](https://uis.unesco.org/en/glossary-term/out-school-rate-1-year-primary-primary-education-lower-secondary-education-upper)
+- [DHS Program - Nigeria 2024](https://dhsprogram.com/what-we-do/survey/survey-display-609.cfm)
+- [Nigeria DHS 2013 report](https://dhsprogram.com/pubs/pdf/fr293/fr293.pdf)
+- [Nigeria DHS 2023-24 Key Indicators](https://www.dhsprogram.com/pubs/pdf/PR157/PR157.pdf)
+- [Nigeria DHS 1990 microdata](https://microdata.worldbank.org/index.php/catalog/1456)
+- [Nigeria DHS 2024 microdata](https://microdata.worldbank.org/index.php/catalog/8029)
+- [DHS EdData Survey 2010 (NEDS)](https://catalog.ihsn.org/index.php/catalog/3344)
+- [Nigeria 2015 NEDS report](https://www.nigerianstat.gov.ng/pdfuploads/National%20Education%20Survey%202015%20complete_.pdf)
+- [UNICEF MICS surveys](https://mics.unicef.org/surveys)
+- [UNICEF MICS Nigeria country profile](https://mics.unicef.org/country-profiles/nigeria/4131)
+- [Nigeria MICS 2021 microdata](https://microdata.worldbank.org/index.php/catalog/5959)
+- [Nigeria MICS 2016-2017 microdata](https://microdata.worldbank.org/index.php/catalog/3002)
+- [Nigeria MICS 2011](https://catalog.ihsn.org/index.php/catalog/3346)
+- [Nigeria MICS Plus](https://www.unicef.org/nigeria/reports/nigeria-mics-plus)
+- [UNICEF Data - Primary education](https://data.unicef.org/resources/dataset/primary-education-data/)
+- [HDX UNICEF Adjusted Net Attendance Rate primary](https://data.humdata.org/dataset/unicef-ed-anar-l1)
+- [UNICEF Nigeria OOSC Cheat Sheet 2022](https://www.unicef.org/nigeria/media/7746/file/UNICEF%20Nigeria%20Cheat%20Sheet:%20Out-of-school%20Children.pdf)
+- [Nigeria Education Fact Sheets 2023](https://www.unicef.org/nigeria/media/9211/file/Nigeria%20Education%20Fact%20Sheets.pdf)
+- [Nigeria Living Standards Survey 2018-19](https://microdata.worldbank.org/index.php/catalog/3827)
+- [Nigeria Living Standards Survey 2023](https://microdata.nigerianstat.gov.ng/index.php/catalog/168)
+- [Harmonized NLSS 2009](https://catalog.ihsn.org/index.php/catalog/5865)
+- [UBEC Digest of Statistics](https://ubec.gov.ng/digest-of-statistics/)
+- [UBEC 2019-2020 Digest Vol I](https://ubec.gov.ng/wp-content/uploads/2024/04/2019-AND-2020-Digest-of-Statistics-Volume-I.pdf)
+- [Federal Ministry of Education Nigeria Digest](https://education.gov.ng/nigeria-digest-of-education-statistics/)
+- [Nigeria Digest of Education Statistics 2019](https://education.gov.ng/wp-content/uploads/2021/09/2019-Nigeria-Digest-of-Education-Statistics.pdf)
+- [Nigeria Digest of Education Statistics 2017](https://nemis.education.gov.ng/2017-Nigeria%20Digest%20of%20Education%20Statistics%202017.pdf)
+- [EPDC Nigeria country page](https://www.epdc.org/country/nigeria)
+- [EPDC Nigeria National Education Profile 2018](https://www.epdc.org/sites/default/files/documents/EPDC_NEP_2018_Nigeria.pdf)
+- [WIDE Nigeria](https://www.education-inequalities.org/countries/nigeria)
+- [Nigeria OOSC Country Study UIS 2012](https://uis.unesco.org/sites/default/files/documents/out-of-school-children-nigeria-country-study-education-2012-en.pdf)
+- [Out-of-school numbers growing in sub-Saharan Africa - GEM Report](https://www.unesco.org/gem-report/en/publication/out-school-numbers-are-growing-sub-saharan-africa)
+- [Assessing OOSC in Nigeria - Nwoke 2024](https://bera-journals.onlinelibrary.wiley.com/doi/full/10.1002/rev3.70011)
+- [HDX Nigeria Education Indicators](https://data.humdata.org/dataset/world-bank-education-indicators-for-nigeria)
+- [World Bank SE.PRM.UNER.ZS Nigeria](https://data.worldbank.org/indicator/SE.PRM.UNER.ZS?locations=NG)
+agentId: a44b024b452b97284 (use SendMessage with to: 'a44b024b452b97284' to continue this agent)
+<usage>total_tokens: 67878
+tool_uses: 40
+duration_ms: 573171</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

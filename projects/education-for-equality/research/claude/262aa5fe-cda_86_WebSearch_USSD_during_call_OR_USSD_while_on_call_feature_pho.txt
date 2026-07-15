@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "USSD during call" OR "USSD while on call" feature phone GSM simultaneous voice 
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:24:27 UTC
+========================================================================
+
+Search query: "USSD during call" OR "USSD while on call" feature phone GSM simultaneous voice signaling channel
+
+----------------------------------------
+
+Web search results for query: ""USSD during call" OR "USSD while on call" feature phone GSM simultaneous voice signaling channel"
+
+Links: [{"title":"USSD: A Communication Technology to Potentially Ouster SMS Dependency","url":"https://www.linkedin.com/pulse/ussd-communication-technology-potentially-ouster-sms-k-k-upadhayay"},{"title":"Unstructured Supplementary Service Data - Wikipedia","url":"https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data"},{"title":"USSD Tutorial | Rauf's Knowledge Portal - WordPress.com","url":"https://raufakram.wordpress.com/2013/12/05/ussd-tutorial/"},{"title":"USSD Gateway - Wikipedia","url":"https://en.wikipedia.org/wiki/USSD_Gateway"},{"title":"What is USSD (Unstructured Supplementary Service Data)? | Definition from TechTarget","url":"https://www.techtarget.com/searchnetworking/definition/USSD"},{"title":"What is USSD - MMI Code - CsPsProtocol - Simplified Tutorials","url":"https://www.cspsprotocol.com/ussd/"},{"title":"Is USSD Hungry For SS7? (The Answer is No) - SIM BOX SMS - All about","url":"https://sim-box-sms.com/is-ussd-hungry-for-ss7-the-answer-is-no/"},{"title":"What Is USSD? A Guide to USSD in IoT | Pelion","url":"https://pelion.com/knowledge-base/ussd"},{"title":"RuimTools: What is USSD","url":"http://ruimtools.com/doc.php?doc=ussd"},{"title":"IT 13 083 Examensarbete 30 hp November 2013 GSM HLR Unstructured Supplementary","url":"https://uu.diva-portal.org/smash/get/diva2:681072/FULLTEXT02.pdf"}]
+
+Based on the search results, here's what I found about USSD during calls:
+
+## USSD During Calls - Key Findings
+
+USSD messages can be initiated during calls, allowing simultaneous voice and data communication. This is a distinctive feature of USSD technology on GSM networks.
+
+### Technical Details
+
+USSD is a messaging service used in Global System for Mobile Communications (GSM) networks similar to SMS, where it sends data utilizing the signaling channel. This is what enables the simultaneous operation with voice calls.
+
+Both USSD Phase 1 and 2 services can happen simultaneously with a phone call (Call Related USSD Services) or without voice connection (Call Independent USSD Services).
+
+### How It Works
+
+The USSD gateway has an interface with the Mobile Switching Center (MSC) over the Signaling System #7 (SS7). A real-time session is initiated between the mobile user and the USSD application platform when the service is invoked, allowing data to be sent back and forth.
+
+### Device Support
+
+USSD works on almost all GSM mobile phones (from old handsets to new smartphones), making it particularly useful for feature phones and basic mobile devices that may not support other data services.
+
+This capability makes USSD especially valuable for applications like balance checking, prepaid recharges, and mobile banking that users may need to access while already on a call.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

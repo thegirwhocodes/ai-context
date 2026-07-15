@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: network-initiated USSD push during voice call GSM implementation server-side tri
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:26:00 UTC
+========================================================================
+
+Search query: network-initiated USSD push during voice call GSM implementation server-side trigger Nigeria MNO
+
+----------------------------------------
+
+Web search results for query: "network-initiated USSD push during voice call GSM implementation server-side trigger Nigeria MNO"
+
+Links: [{"title":"Unstructured Supplementary Service Data - Wikipedia","url":"https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data"},{"title":"USSD Interworking Guidelines Version 1.0 10 July 2013","url":"https://www.gsma.com/newsroom/wp-content/uploads/IR.45-v1.0.pdf"},{"title":"NI USSD (USSD Push) API V1.6 www.alwaysactivemobile.co.za care@aat.co.za","url":"https://www.alwaysactivemobile.co.za/wp-content/uploads/2019/06/Always-Active-Mobile-NI-USSD-API.pdf"},{"title":"USSD: What It Is and How It Works in Nigeria — Monierate","url":"https://monierate.com/blog/ussd-what-it-is-and-how-it-works-in-nigeria"},{"title":"Mobuis USSD Gateway Introduction","url":"https://www.mobius-software.com/documentation/Mobius+USSD+Gateway/Mobius+USSD+Gateway+Intro"},{"title":"GSM GSM 03.90 TECHNICAL December 1996 SPECIFICATION Version 5.0.0","url":"https://www.etsi.org/deliver/etsi_gts/03/0390/05.00.00_60/gsmts_0390v050000p.pdf"},{"title":"What is USSD - MMI Code - CsPsProtocol - Simplified Tutorials","url":"https://www.cspsprotocol.com/ussd/"},{"title":"IT 13 083 Examensarbete 30 hp November 2013 GSM HLR Unstructured Supplementary","url":"https://uu.diva-portal.org/smash/get/diva2:681072/FULLTEXT02.pdf"},{"title":"USSD: A Communication Technology to Potentially Ouster SMS Dependency","url":"https://www.linkedin.com/pulse/ussd-communication-technology-potentially-ouster-sms-k-k-upadhayay"},{"title":"RuimTools: What is USSD","url":"http://ruimtools.com/doc.php?doc=ussd"}]
+
+I've completed the web search for your query on network-initiated USSD push during voice call GSM implementation server-side trigger Nigeria MNO. Here are the key findings:
+
+## Key Findings:
+
+**Network-Initiated USSD Push Overview:**
+The push call is instated by the network application, referred to as "Network-initiated", contrasting with mobile-initiated operations. A USSD Push service occurs when a network operator initiates the process.
+
+**Voice Call Integration:**
+Messages can be initiated during calls, allowing simultaneous voice and data communication. This is important for scenarios where USSD push needs to occur while a user is on an active voice call.
+
+**Server-Side Implementation:**
+A network-initiated session starts when a mobile operator or a gateway wants to display a menu to the mobile user. USSDGW can send the menu directly to the roaming MSC/VLR or via HLR. On the push call the Mobius USSD Gateway requests the HLR if the user mobile device is connected to the mobile network and, if yes, what MSC it uses right now.
+
+**GSM/Protocol Standards:**
+USSD Phase 2.0 is specified in the GSM 03.90 and supports both mobile-initiated as well as network-initiated operations. The USSD gateway has an interface with the Mobile Switching Center (MSC) over the Signaling System #7 (SS7).
+
+**Nigeria Context:**
+The search results reference global USSD implementations and standards but don't contain specific information about Nigerian MNO implementations. The principles described, however, apply to GSM networks universally, including Nigerian carriers.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

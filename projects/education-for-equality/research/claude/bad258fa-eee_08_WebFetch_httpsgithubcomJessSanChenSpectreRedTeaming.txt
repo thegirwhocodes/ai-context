@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/JessSanChen/SpectreRedTeaming
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:11:37 UTC
+========================================================================
+
+URL: https://github.com/JessSanChen/SpectreRedTeaming
+Extraction prompt: Extract everything about this project: what they built, technical stack, architecture, the team, the demo, how it won. What did they jailbreak? What was their approach to red-teaming an LLM? What was novel about their solution? Include the full README content and any other details.
+
+----------------------------------------
+
+# Spectre Red Teaming Project Analysis
+
+## Project Overview
+Based on the GitHub repository, here's what's available about this project:
+
+**What They Built:**
+The creators developed an "agentic AI approach to jailbreaking LLM models." The project demonstrates a proof-of-concept using the Air Force's NIPRGPT system.
+
+**Team:**
+- Jessica Chen
+- Jeremy Zhang
+
+**Achievement:**
+"Grand Prize Winner of the SCSP x AGI House Hackathon in Alexandria, VA ($25,000 cash prize)"
+
+## Technical Stack
+- **Backend:** Python (58.7% of codebase)
+- **Frontend:** JavaScript (23.2%), HTML (8.4%), CSS (9.7%)
+- **Architecture:** Modular structure with separate backend and frontend directories
+
+## Key Details
+
+**What was targeted:**
+The project used the Air Force's NIPRGPT (a supposedly secure LLM) as their test subject for demonstrating jailbreak vulnerabilities.
+
+**Approach:**
+The repository description indicates an "agentic" methodology—utilizing agent-based techniques to systematically bypass LLM safety guardrails, though specific technical details about the jailbreaking mechanism aren't provided in this GitHub summary.
+
+## Limitations of Available Information
+The actual README content and technical implementation details are not fully displayed in the provided web content. The project contains 9 commits but specific architectural diagrams, methodology papers, or detailed attack descriptions aren't shown in this excerpt.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

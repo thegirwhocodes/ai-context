@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: MediaPipe model_complexity 0 vs 1 speed difference hand tracking performance
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 11:19:12 UTC
+========================================================================
+
+Search query: MediaPipe model_complexity 0 vs 1 speed difference hand tracking performance
+
+----------------------------------------
+
+Web search results for query: "MediaPipe model_complexity 0 vs 1 speed difference hand tracking performance"
+
+Links: [{"title":"layout: forward target: https://developers.google.com/mediapipe/solutions/vision/hand_landmarker title: Hands parent: MediaPipe Legacy Solutions nav_order: 4 — MediaPipe v0.7.5 documentation","url":"https://mediapipe.readthedocs.io/en/latest/solutions/hands.html"},{"title":"Hand Tracking with MediaPipe | collidingScopes/threejs-handtracking-101 | DeepWiki","url":"https://deepwiki.com/collidingScopes/threejs-handtracking-101/5.3-hand-tracking-with-mediapipe"},{"title":"mediapipe/mediapipe/python/solutions/hands.py at master · google-ai-edge/mediapipe","url":"https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/python/solutions/hands.py"},{"title":"Real-Time Body Tracking in Your Browser: What MediaPipe Actually Does (And How to Use It) | by Kristopher Dunham | Medium","url":"https://medium.com/@creativeaininja/real-time-body-tracking-in-your-browser-what-mediapipe-actually-does-and-how-to-use-it-b31aa96a5071"},{"title":"Hand tracking for clinical applications: Validation of the Google MediaPipe Hand (GMH) and the depth-enhanced GMH-D frameworks - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S1746809424005664"},{"title":"MediaPipe Holistic — Simultaneous Face, Hand and Pose Prediction, on Device","url":"https://research.google/blog/mediapipe-holistic-simultaneous-face-hand-and-pose-prediction-on-device/"},{"title":"Face and Hand Landmarks Detection using Python - Mediapipe, OpenCV - GeeksforGeeks","url":"https://www.geeksforgeeks.org/machine-learning/face-and-hand-landmarks-detection-using-python-mediapipe-opencv/"},{"title":"mediapipe/docs/solutions/hands.md at master · google-ai-edge/mediapipe","url":"https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md"},{"title":"HAND LANDMARK DETECTION AND TRACKING WITH MEDIAPIPE | by TENOCLOGY | Medium","url":"https://medium.com/@TENOCLOGY/hand-landmark-detection-and-tracking-with-mediapipe-e5268cd1c897"},{"title":"[2006.10214] MediaPipe Hands: On-device Real-time Hand Tracking","url":"https://ar5iv.labs.arxiv.org/html/2006.10214"}]
+
+Based on the search results, here's what I found about MediaPipe's `model_complexity` 0 vs 1 for hand tracking performance:
+
+## Key Differences
+
+**Model Complexity Trade-off:**
+Landmark accuracy as well as inference latency generally go up with the model complexity.
+
+**Specific Performance Characteristics:**
+
+- **Model Complexity 0 (Lite):** Uses a reduced-depth neural network and is extremely fast, good for older hardware or when tracking multiple people simultaneously, though it has higher jitter and lower accuracy in occluded scenarios. 15ms on CPU, 5ms on GPU.
+
+- **Model Complexity 1 (Full):** The balanced default provides 30ms on CPU, 8ms on GPU, and is recommended unless you have a specific reason not to use it.
+
+**Practical Guidance:**
+The modelComplexity: 1 setting (full model) provides higher accuracy with better landmark precision and hand detection, but has higher computational cost that may reduce frame rate on low-end devices, while modelComplexity: 0 (lite model) offers faster processing at reduced accuracy.
+
+In summary, complexity 0 is roughly 2x faster but with reduced accuracy, while complexity 1 is the balanced default providing better accuracy with acceptable latency. Choose complexity 0 for resource-constrained devices or when speed is critical, and complexity 1 for better accuracy when computational resources are available.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

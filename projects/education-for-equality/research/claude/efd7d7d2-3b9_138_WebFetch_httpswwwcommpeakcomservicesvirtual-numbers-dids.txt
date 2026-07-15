@@ -1,0 +1,22 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.commpeak.com/services/virtual-numbers-dids
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:20:40 UTC
+========================================================================
+
+URL: https://www.commpeak.com/services/virtual-numbers-dids
+Extraction prompt: Find details about inbound calls, DID numbers, receiving calls, inbound SIP trunking - can customers receive incoming calls through CommPeak?
+
+----------------------------------------
+
+# CommPeak DID Numbers: Inbound Call Support
+
+Yes, customers can receive incoming calls through CommPeak's DID numbers. The service explicitly supports "incoming and outgoing calls" across their DID number offerings.
+
+CommPeak's DID numbers are designed to enable businesses to "reach customers locally and globally" and work as a "PSTN replacement," which inherently includes the ability to receive inbound calls on the numbers. The platform provides "geographic DID numbers (local DID)" that are "tied to specific cities, supporting voice calling," allowing businesses to establish a functional local presence for both making and receiving calls.
+
+The service includes features like call handling and analytics through their dashboard, which tracks "monthly costs, and other metrics to track your DID number performance and usage"—capabilities that apply to inbound call activity as well.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

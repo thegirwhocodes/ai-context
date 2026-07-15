@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://scsp222.substack.com/p/scsps-year-in-review-a-winter-must
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:12:00 UTC
+========================================================================
+
+URL: https://scsp222.substack.com/p/scsps-year-in-review-a-winter-must
+Extraction prompt: Extract any information about past SCSP hackathons including winners, projects, prizes, themes, and winning approaches. List specific named projects, teams, and what they built.
+
+----------------------------------------
+
+# SCSP Hackathon Information
+
+Based on the provided content, here's what was disclosed about the SCSP hackathon:
+
+**Event:** AGI House x SCSP Hackathon (held in November)
+
+**Participants & Scope:**
+- Nearly 100 attendees
+- Over 80 hackers organized into 20+ teams
+- Experts from DOE, CIA, NSC, DIU, and CISA participated
+- Location: Crystal City office
+
+**Focus Area:**
+"cutting-edge AI and national security challenges"
+
+**Prizes & Outcomes:**
+- George Mason University provided $50,000 in prize funding
+- Three winning teams were recognized
+- The event emphasized "incredible innovation and collaboration"
+
+**Notable Limitation:**
+The article does not identify specific project names, individual team identities, or detailed descriptions of winning approaches. No particular solutions or technical implementations are named in the coverage provided.
+
+The organization shared event coverage on Instagram rather than publishing detailed project summaries in this year-in-review piece.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

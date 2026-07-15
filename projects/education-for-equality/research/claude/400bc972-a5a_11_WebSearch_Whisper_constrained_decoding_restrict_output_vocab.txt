@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Whisper constrained decoding restrict output vocabulary grammar biasing known an
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:13:09 UTC
+========================================================================
+
+Search query: Whisper constrained decoding restrict output vocabulary grammar biasing known answer set ASR
+
+----------------------------------------
+
+Web search results for query: "Whisper constrained decoding restrict output vocabulary grammar biasing known answer set ASR"
+
+Links: [{"title":"Whisper ASR System: Architecture & Adaptation","url":"https://www.emergentmind.com/topics/whisper-asr-system"},{"title":"[Literature Review] Contextual Biasing to Improve Domain-specific Custom Vocabulary Audio Transcription without Explicit Fine-Tuning of Whisper Model","url":"https://www.themoonlight.io/en/review/contextual-biasing-to-improve-domain-specific-custom-vocabulary-audio-transcription-without-explicit-fine-tuning-of-whisper-model"},{"title":"Contextual Biasing to Improve Domain-specific Custom Vocabulary Audio Transcription without Explicit Fine-Tuning of Whisper Model","url":"https://arxiv.org/pdf/2410.18363"},{"title":"Contextual Biasing to Improve Domain-specific Custom Vocabulary Audio Transcription without Explicit Fine-Tuning of Whisper Model","url":"https://arxiv.org/html/2410.18363v1"},{"title":"Final Project Report Whisper: Courtside Edition","url":"https://arxiv.org/html/2602.18966v1"},{"title":"(PDF) Contextual Biasing to Improve Domain-specific Custom Vocabulary Audio Transcription without Explicit Fine-Tuning of Whisper Model","url":"https://www.researchgate.net/publication/385215717_Contextual_Biasing_to_Improve_Domain-specific_Custom_Vocabulary_Audio_Transcription_without_Explicit_Fine-Tuning_of_Whisper_Model"},{"title":"Whisper: Courtside Edition Enhancing ASR Performance Through LLM-Driven Context Generation","url":"https://arxiv.org/pdf/2602.18966"},{"title":"GitHub - BriansIDP/WhisperBiasing · GitHub","url":"https://github.com/BriansIDP/WhisperBiasing"},{"title":"A Multitask Training Approach to Enhance Whisper with Contextual Biasing   and Open-Vocabulary Keyword Spotting","url":"https://arxiv.org/pdf/2309.09552"}]
+
+Based on the search results, here's what I found about Whisper constrained decoding and related techniques for restricting output vocabulary, grammar biasing, and known answer sets:
+
+## Contextual Biasing Approaches
+
+Contextual biasing in speech recognition incorporates external information or cues relevant to the specific speech being transcribed, aiding the model in more accurately predicting contextually appropriate words and phrases.
+
+### Tree-Constrained Pointer Generator (TCPGen)
+
+TCPGen is a neural network component integrated with the pre-trained Whisper model, using a Graph Convolutional Neural Network (GCN). It combines a symbolic prefix-tree search with a neural pointer generator, where the prefix tree is built from a predefined biasing list. TCPGen integrates a neural network with the prefix tree that generates outputs based on probabilities derived from both the Whisper decoder's output and the biasing list, fine-tuning the model's output token probabilities towards the specified vocabulary without altering the model's foundational parameters.
+
+### Prompt-Based Biasing
+
+Whisper supports an initial_prompt parameter that allows contextual text to be prepended to the decoder's input sequence at inference time, which can bias transcription toward "preferred vocabulary, spellings, or styles" by providing relevant text before decoding begins. However, only the last 224 tokens of the prompt are consumed, which means later tokens exert greater influence than earlier ones. In practice, effective prompts must therefore be compact, prioritize rare or domain-specific words, and place the highest-value tokens near the end.
+
+### Performance Results
+
+Studies propose integrating an adapted tree-constrained pointer generator (TCPGen) component for Whisper and a dedicated training scheme to dynamically adjust the final output without modifying any Whisper model parameters, with experiments across three datasets showing considerable reduction in errors on biasing words with a biasing list of 1000 words.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

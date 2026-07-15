@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.nexford.edu/insights/highest-paying-ngo-jobs-in-nigeria
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 01:44:22 UTC
+========================================================================
+
+URL: https://www.nexford.edu/insights/highest-paying-ngo-jobs-in-nigeria
+Extraction prompt: What are typical salaries for NGO jobs in Nigeria? List program coordinators, field officers, project officers specifically with monthly salary ranges in Naira.
+
+----------------------------------------
+
+# NGO Salaries in Nigeria
+
+Based on the provided content, I can only share information about **senior-level positions**, as the article does not contain salary data for program coordinators, field officers, or project officers.
+
+## Available Senior Position Salaries (Annual):
+
+- **Chief Executive Officer**: ₦20,000,000
+- **Country Director**: ₦16,000,000
+- **Finance Director**: ₦12,000,000
+- **Technical Advisor**: ₦7,200,000
+- **Head of Supply Chain**: ₦7,104,000
+- **Regional Director**: ₦8,040,000
+- **Head of Fundraising**: ₦6,263,400
+
+## Important Note
+
+The article focuses exclusively on "top 10 highest paying NGO jobs" and does not address entry-level or mid-level positions like those you requested. To find monthly salary ranges for program coordinators, field officers, and project officers in Nigeria's NGO sector, you would need to consult additional resources or job boards mentioned in the article, such as MyJobMag or Jobs In Nigeria.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

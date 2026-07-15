@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: macOS distraction blocker screen lock full screen window NSWindow level screensa
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:37 UTC
+========================================================================
+
+Search query: macOS distraction blocker screen lock full screen window NSWindow level screensaver AppKit tamper resistant
+
+----------------------------------------
+
+Web search results for query: "macOS distraction blocker screen lock full screen window NSWindow level screensaver AppKit tamper resistant"
+
+Links: [{"title":"Apple Developer Documentation","url":"https://developer.apple.com/documentation/appkit/nswindow/level/1419693-screensaver"},{"title":"screenSaver - NSWindow.Level | Apple Developer Documentation","url":"https://developer.apple.com/documentation/appkit/nswindow/level/1419693-screensaver?changes=lates_5"},{"title":"screenSaver | Apple Developer Documentation","url":"https://developer.apple.com/documentation/appkit/nswindow/level-swift.struct/screensaver"},{"title":"level | Apple Developer Documentation","url":"https://developer.apple.com/documentation/appkit/nswindow/1419511-level"},{"title":"6 Mac Apps to Reduce Distractions and Help You Focus","url":"https://www.makeuseof.com/tag/mac-apps-reduce-distractions/"},{"title":"Building a macOS screen saver in Kotlin - zsmb.co","url":"https://zsmb.co/building-a-macos-screen-saver-in-kotlin/"},{"title":"The 9 Best Distraction Blockers for Mac in 2026","url":"https://timingapp.com/blog/best-distraction-blocker-mac/"},{"title":"screen-lock · GitHub Topics · GitHub","url":"https://github.com/topics/screen-lock?l=swift&o=asc&s=forks"},{"title":"The Best Distraction-Blocking Apps for Mac - MacTools","url":"https://www.mactools.pro/blog/the-best-distraction-blocking-apps-for-mac"},{"title":"Temporarily Prevent a Mac from Sleeping - OS X Daily","url":"https://osxdaily.com/2011/03/21/temporarily-prevent-a-mac-from-sleeping/"}]
+
+I've performed a web search for your query about macOS distraction blocker screen lock technology. Here are the relevant results:
+
+**Technical Documentation:**
+NSWindow.Level provides a `screenSaver` level in the AppKit framework, available since macOS 10.0+. This is relevant for building full-screen focus applications at the system level.
+
+**Distraction Blocker Applications:**
+The search returned information about various macOS distraction blockers with different enforcement approaches:
+
+- Some blockers are "genuinely impossible to disable once started — even by restarting your Mac", which relates to the tamper-resistant aspect of your query
+- Freedom allows you to block websites, apps, or even the entire internet, with a "Locked Mode" that prevents you from ending a session early
+- Cold Turkey Blocker lets you block apps, websites, or your entire computer for a set time, and once started, you can't disable it until the timer runs out
+
+**Screen Lock Implementations:**
+There are lightweight macOS menu bar apps that keep important apps in focus with auto-foreground on unlock and smart lock detection.
+
+The search results show a mix of API documentation for window-level control and practical implementations of distraction blockers with varying degrees of enforcement strength.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

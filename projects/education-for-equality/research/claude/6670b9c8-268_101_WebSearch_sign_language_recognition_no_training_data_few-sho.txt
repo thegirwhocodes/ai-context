@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: sign language recognition no training data few-shot zero-shot small vocabulary r
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:25:54 UTC
+========================================================================
+
+Search query: sign language recognition no training data few-shot zero-shot small vocabulary real-time 2025
+
+----------------------------------------
+
+Web search results for query: "sign language recognition no training data few-shot zero-shot small vocabulary real-time 2025"
+
+Links: [{"title":"Data-Efficient American Sign Language Recognition via Few-Shot Prototypical Networks","url":"https://arxiv.org/html/2512.10562"},{"title":"SignVLM: a pre-trained large video model for sign language recognition - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12453763/"},{"title":"Recognizing American Sign Language gestures efficiently and accurately using a hybrid transformer model | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-06344-8"},{"title":"Few-shot Learning for Sign Language Recognition with Embedding Propagation - R Discovery","url":"https://discovery.researcher.life/article/few-shot-learning-for-sign-language-recognition-with-embedding-propagation/8c9d3bb2ed9a33128e07164dde41cb27"},{"title":"Geometry-Aware Metric Learning for Cross-Lingual Few-Shot Sign Language Recognition on Static Hand Keypoints","url":"https://arxiv.org/html/2603.09213"},{"title":"Cross-lingual few-shot sign language recognition - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0031320324001250"},{"title":"Towards Zero-shot Sign Language Recognition","url":"https://scispace.com/pdf/towards-zero-shot-sign-language-recognition-1lak7rqa.pdf"},{"title":"PeerJ SignVLM: a pre-trained large video model for sign language recognition","url":"https://peerj.com/articles/cs-3112/"},{"title":"A comprehensive review on zero-shot-learning techniques - Konstantinos Lazaros, Dimitris E. Koumadorakis, Aristidis G. Vrahatis, Sotiris Kotsiantis, 2024","url":"https://journals.sagepub.com/doi/abs/10.3233/IDT-240297"},{"title":"Real-time sign language detection: Empowering the disabled community - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11378923/"}]
+
+I've performed the web search and found several recent research papers and articles related to sign language recognition with focus on few-shot, zero-shot, and data-efficient approaches. Here are the key findings:
+
+## Recent Advances in Sign Language Recognition (2025)
+
+**Few-Shot Learning Approaches:**
+Recent research explores a Few-Shot Learning (FSL) paradigm, specifically utilizing Prototypical Networks, where instead of training a classifier to memorize specific class boundaries, the model is trained "episodically" to learn a generalizable metric space, and an embedding of a query video is classified by finding the nearest "prototype".
+
+Experimental results on the WLASL dataset demonstrate that this metric learning paradigm achieves 43.75% Top-1 and 77.10% Top-5 accuracy on the test set, outperforming a standard classification baseline by over 13%.
+
+**Zero-Shot and Data-Efficient Methods:**
+SignVLM is a framework that integrates a frozen CLIP visual encoder with a Transformer-based temporal decoder, emphasizing data efficiency which enables effective learning under zero-shot and few-shot conditions.
+
+The model achieved state-of-the-art performance on KArSL and LSA64, outperformed RGB-based approaches on WLASL-100, and remained competitive on AUTSL despite using a single RGB modality and a lightweight architecture, demonstrating that CLIP's spatial embeddings can generalize effectively without requiring extensive dataset-specific tuning.
+
+**Cross-Lingual Few-Shot Learning:**
+Cross-lingual few-shot transfer—pretraining on a data-rich source language and adapting with only a handful of target-language examples—offers a scalable alternative, though conventional coordinate-based keypoint representations are susceptible to domain shift that is particularly detrimental in the few-shot regime.
+
+**Real-Time Systems:**
+Transfer learning using pre-trained VGG16 models can recognize hand poses while utilizing low computational resources, with real-time testing confirming practical useability for those with speaking and hearing disabilities.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

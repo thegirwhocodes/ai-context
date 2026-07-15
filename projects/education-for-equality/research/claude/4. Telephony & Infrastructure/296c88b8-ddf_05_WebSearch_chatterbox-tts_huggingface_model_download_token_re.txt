@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: chatterbox-tts huggingface model download token required gated 2026
+Session: 296c88b8-ddfe-4a6e-9eca-0eaa089bcb55
+Time: 2026-03-13 05:09:54 UTC
+========================================================================
+
+Search query: chatterbox-tts huggingface model download token required gated 2026
+
+----------------------------------------
+
+Web search results for query: "chatterbox-tts huggingface model download token required gated 2026"
+
+Links: [{"title":"Chatterbox Turbo - Beginners - Hugging Face Forums","url":"https://discuss.huggingface.co/t/chatterbox-turbo/171768"},{"title":"Chatterbox TTS - a Hugging Face Space by ResembleAI","url":"https://huggingface.co/spaces/ResembleAI/Chatterbox"},{"title":"ResembleAI/chatterbox · Hugging Face","url":"https://huggingface.co/ResembleAI/chatterbox"},{"title":"ResembleAI/chatterbox-turbo · Hugging Face","url":"https://huggingface.co/ResembleAI/chatterbox-turbo"},{"title":"GitHub - Vishnumundlapudii/TTS_Chatterbox_Turbo_Implementation: About the implementation of the ResembleAI_Chatterbox_turbo mdoel · GitHub","url":"https://github.com/Vishnumundlapudii/TTS_Chatterbox_Turbo_Implementation"},{"title":"GitHub - devnen/Chatterbox-TTS-Server: Self-host the powerful Chatterbox TTS model. This server offers a user-friendly Web UI, flexible API endpoints (incl. OpenAI compatible), predefined voices, voice cloning, and large audiobook-scale text processing. Runs accelerated on NVIDIA (CUDA), AMD (ROCm), and CPU. · GitHub","url":"https://github.com/devnen/Chatterbox-TTS-Server"},{"title":"Chatterbox-Multilingual-TTS - a Hugging Face Space by ResembleAI","url":"https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS"},{"title":"ResembleAI/chatterbox-turbo-ONNX · Hugging Face","url":"https://huggingface.co/ResembleAI/chatterbox-turbo-ONNX"},{"title":"SebastianBodza/Kartoffelbox-v0.1 · usage help","url":"https://huggingface.co/SebastianBodza/Kartoffelbox-v0.1/discussions/2"},{"title":"ModelsLab/chatterbox · Hugging Face","url":"https://huggingface.co/ModelsLab/chatterbox"}]
+
+Based on the search results, I found relevant information about token requirements for the Chatterbox TTS models on Hugging Face.
+
+## Token Requirements for Chatterbox-TTS
+
+A token is required to download the model, and you need to provide a token or be logged in to Hugging Face with `hf auth login` or `huggingface_hub.login`.
+
+## Related Information
+
+Chatterbox and Chatterbox Multilingual are Resemble AI's production-grade open source TTS models licensed under MIT. The models are available on Hugging Face in repositories like ResembleAI/chatterbox and ResembleAI/chatterbox-turbo.
+
+There is also evidence in the search results that some Chatterbox-related repositories on Hugging Face are gated and require a Hugging Face token for access.
+
+For setup, you should install the Hugging Face CLI with `pip install --upgrade huggingface_hub` and then login to Hugging Face, which requires a token.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

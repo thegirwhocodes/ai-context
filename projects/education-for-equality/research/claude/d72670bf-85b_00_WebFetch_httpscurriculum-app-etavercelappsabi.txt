@@ -1,0 +1,65 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://curriculum-app-eta.vercel.app/sabi
+Session: d72670bf-85b5-4729-87b1-b37da6093927
+Time: 2026-03-05 04:05:06 UTC
+========================================================================
+
+URL: https://curriculum-app-eta.vercel.app/sabi
+Extraction prompt: Describe everything on this page - the layout, text content, features described, how Sabi works, what the user experience looks like, any stats or research mentioned, call-to-action buttons, and overall messaging.
+
+----------------------------------------
+
+# Education for Equality - Sabi Page Overview
+
+## Layout & Design
+The page uses a modern, gradient-based design with a dark teal color scheme. It features a hero section with navigation, followed by multiple content sections scrolling vertically, and concludes with a comprehensive footer.
+
+## Key Sections
+
+**Hero Section**
+Introduces "Sabi" (meaning "to know" in Nigerian Pidgin) as "An AI tutor any child can reach by calling a phone number. No smartphone. No internet. No cost." Two primary CTAs: "Try the Demo" and "Learn More."
+
+**The Learning Crisis**
+Highlights the educational gap with statistics:
+- "98M" children out of school in Sub-Saharan Africa (UNESCO 2024)
+- "7 in 10" Nigerian 10-year-olds cannot read a single sentence (World Bank 2022)
+- Only "16%" of planned learning actually occurs in schools
+
+**Infrastructure Opportunity**
+Notes that while "600 million people in Africa have no internet," approximately "70% have a mobile phone," with 99% 2G coverage in Lagos.
+
+**How Sabi Works**
+Five-step process illustrated with numbered steps:
+1. Child calls a toll-free number
+2. System greets them by name (remembers returning users)
+3. Lesson begins at their level using relatable scenarios
+4. Sessions last 5-7 minutes, focusing on one concept
+5. System remembers progress for next call
+
+**Sample Conversation**
+Demonstrates a realistic interaction between Sabi and a child named Chidi, grounding math education in market transactions (selling groundnuts, making change).
+
+**Science Behind Sabi**
+Research-backed claims:
+- "9x" more problem-solving success with market-framed math versus abstract (Nature 2025)
+- "1.5-2 years" of learning gains in just 6 weeks (World Bank RCT)
+- "7% → 45%" reading improvement in Tanzania without teachers
+- Cost: "$0.50-5" per student annually
+
+**Built for the Last Mile**
+Three key features highlighted:
+- Works on "$5 feature phones"
+- Persistent memory of student progress
+- Completely free, sponsored by the nonprofit
+
+**Call-to-Action Section**
+"Try Sabi Right Now" with emphasis on accessibility: "We're not building another education app that sits in an app store."
+
+Notes Lagos pilot planned for Q4 2026 with 100-500 students.
+
+## Footer
+Contains links to curriculum app, website, donation page, and social media; lists subject areas and contact information.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

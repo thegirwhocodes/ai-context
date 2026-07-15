@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" SSRN OR repec Nigeria economic shock empirical
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:12:30 UTC
+========================================================================
+
+Search query: "synthetic control" SSRN OR repec Nigeria economic shock empirical
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" SSRN OR repec Nigeria economic shock empirical"
+
+Links: [{"title":"Synthetic Control Estimator: A Tool for Comparative Case Studies in Economic History by David Gilchrist, Thomas Emery, Nuno Garoupa, Rok Spruk :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560757"},{"title":"Using Synthetic Control Method to Explore Long-Run Effects of Institutional Change: An Application to the Impact of Iranian Revolution on Economic Growth by Nuno Garoupa, Rok Spruk :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4038181"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects","url":"https://ideas.repec.org/a/aea/jeclit/v59y2021i2p391-425.html?trk=public_post_comment-text"},{"title":"Shock and Volatility Transmissions Across Global Commodity and Stock Markets Spillovers: Empirical Evidence from Africa","url":"https://ideas.repec.org/a/gam/jjrfmx/v18y2025i6p332-d1681378.html"},{"title":"A Guide to Using the Synthetic Control Method to Quantify the Effects of Shocks, Policies, and Shocking Policies","url":"https://ideas.repec.org/a/sae/amerec/v67y2022i1p46-63.html"},{"title":"Munich Personal RePEc Archive Sources of Economic Policy Uncertainty","url":"https://mpra.ub.uni-muenchen.de/112075/1/MPRA_paper_112075.pdf"},{"title":"Assessing Economic Liberalization Episodes: A Synthetic Control Approach","url":"https://ideas.repec.org/a/tpr/restat/v95y2013i3p983-1001.html"},{"title":"Synthetic Control Method: A tool for comparative case studies in economic history","url":"https://ideas.repec.org/a/bla/jecsur/v37y2023i2p409-445.html"},{"title":"External Economic Shocks and Monetary Policy Tools in Nigeria","url":"https://ideas.repec.org/a/bcp/journl/v6y2022i7p110-119.html"},{"title":"Exchange Rate Shock and Financial Stability In Nigeria","url":"https://ijhssm.org/issue_dcp/Exchange%20Rate%20Shock%20and%20Financial%20Stability%20In%20Nigeria%20An%20Empirical%20Analysis.pdf"}]
+
+I've performed the web search for your query. Here are the results:
+
+The search returned several relevant academic papers and research materials on synthetic control methods and their applications to economic shocks, particularly with references to Nigeria:
+
+**Key Findings:**
+
+1. **Synthetic Control Method Overview**: The Synthetic Control Method has become a widely used tool in estimating the causal impact of policies, shocks and interventions of interest on economic and social outcomes. The SCM is a data-driven design that provides a systematic way of constructing a comparison group that looks very similar to the group implementing the policy, allowing researchers to estimate policy impacts by comparing post-policy outcomes between policy and comparison groups.
+
+2. **SSRN Papers Found**:
+   - "Synthetic Control Estimator: A Tool for Comparative Case Studies in Economic History" by Gilchrist, Emery, Garoupa, and Spruk (April 2020)
+   - "Using Synthetic Control Method to Explore Long-Run Effects of Institutional Change: An Application to the Impact of Iranian Revolution on Economic Growth" by Garoupa and Spruk (February 2022)
+
+3. **Nigeria-Specific Research**: The search found several papers addressing economic shocks in Nigeria, including research on external economic shocks having significant effects on monetary policy variables and policy uncertainty shocks on import dependent countries such as Nigeria, which has a high degree of openness to trade and financial flows with economic instability resulting from external oil price shocks.
+
+The search results include both SSRN and RePEc repositories with papers combining these methodological and geographic focuses.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

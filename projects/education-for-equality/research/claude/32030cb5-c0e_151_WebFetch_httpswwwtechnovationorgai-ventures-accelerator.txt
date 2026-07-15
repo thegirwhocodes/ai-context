@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.technovation.org/ai-ventures-accelerator/
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-20 18:34:54 UTC
+========================================================================
+
+URL: https://www.technovation.org/ai-ventures-accelerator/
+Extraction prompt: What is the AI Ventures Accelerator specifically? What's the official description, who is it for, what does it provide, and what's Technovation's specific pitch about this program?
+
+----------------------------------------
+
+# AI Ventures Accelerator Overview
+
+## Official Description
+The AI Ventures Accelerator is described as "a free accelerator from Technovation and Generation Unlimited that fast-tracks teams of young women from idea to investor-ready AI venture" with potential access to seed funding.
+
+## Target Audience
+The program targets young women aged 19-24 who are interested in technology and entrepreneurship. Applicants should have a problem they want to solve and be willing to commit 10-15 hours weekly. Prior AI or coding experience is not required.
+
+## What It Provides
+Over 12 weeks, participants receive:
+- Training in foundational AI, entrepreneurship, and human-centered design
+- Mentorship from experienced tech entrepreneurs and AI professionals
+- Curriculum and tools at no cost
+- Opportunity to compete for $10,000 in equity-free seed funding (top 10 teams)
+- Connection to a global network of 1,000+ young women entrepreneurs
+
+## Technovation's Pitch
+Technovation frames this initiative as addressing critical gaps: "women hold only 22% of AI roles, leading to biased systems that fail entire populations." The organization positions the accelerator as providing "world-class AI skills and entrepreneurial training" to develop diverse leaders who will build a more inclusive tech industry.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

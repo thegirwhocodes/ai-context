@@ -1,0 +1,252 @@
+========================================================================
+AGENT RESEARCH: Explore current sabi pages + site structure
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 06:21:21 UTC
+========================================================================
+
+Explore the curriculum-app directory structure and give me a complete picture of:
+
+1. All pages under app/sabi/ - their full file paths and what each one does
+2. The Navbar component - what links it has
+3. The middleware.ts - what routes it handles for the sabi subdomain
+4. The globals.css - full CSS variables and any custom styles
+5. Any existing components in components/ directory
+6. The app/layout.tsx structure
+7. Any images/assets in public/ directory related to sabi
+
+Be thorough - I need to understand the entire current site architecture before redesigning it.
+
+Working directory: /Users/naomiivie/Education for Equality/curriculum-app
+
+----------------------------------------
+
+Perfect! Now I have all the information I need. Let me provide you with a comprehensive summary of the current site architecture.
+
+---
+
+## Complete Curriculum-App Architecture Overview
+
+### 1. SABI PAGES UNDER `/app/sabi/` 
+
+**Full directory structure:**
+- **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi/page.tsx**
+  - **Purpose:** Main Sabi landing page for the general public
+  - **Content:** Hero section introducing Sabi as a voice AI tutor (no smartphone/internet needed), sections on the learning crisis, how Sabi works with step-by-step flow, research backing, key features (any phone, persistent memory, free), and CTAs to demo/chat
+  - **CTAs:** "Talk to Sabi" (→ /demo), "Chat with Sabi" (→ /chat)
+
+- **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi/demo/page.tsx**
+  - **Purpose:** Chat demo page (gated behind SABI_DEMO_KEY)
+  - **Content:** Interactive chat interface with Sabi
+  - **Access:** Requires valid demo key via query param (?key=SECRET) or cookie
+
+- **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi/pricing/page.tsx**
+  - **Purpose:** Comprehensive pricing page for both developers and organizations
+  - **Content:** 
+    - **For Developers:** API pricing tiers (Starter $0.04/min, Pro $0.07/min, Enterprise custom), capabilities grid (10x cheaper, 20+ accents, <500ms latency, 100% self-hostable), code snippet
+    - **For Organizations:** Managed delivery tiers (Pilot 100-500 students $10-15/student, Scale 1K-50K $5-8/student, National 100K+ $2-5/student), how-it-works strip
+    - **Branding:** Dark modern design with floating orbs, sound wave animation, gradient text
+  - **File:** /Users/naomiivie/Education for Equality/curriculum-app/app/sabi/pricing/layout.tsx (simple metadata wrapper)
+
+**Other Sabi routes (redirects in middleware):**
+- **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi-voice/page.tsx** - Voice demo (mobile-optimized dark UI with call state management)
+- **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi-demo/page.tsx** - Chat demo (gated, text-based interface)
+
+---
+
+### 2. NAVBAR COMPONENT
+
+**File:** `/Users/naomiivie/Education for Equality/curriculum-app/components/Navbar.tsx`
+
+**Structure:**
+- **Logo:** Tree icon + "Education for Equality" text (links to `/` normally, but to external `https://eduforequality.org` when on sabi.* subdomain)
+- **Desktop Navigation Links:**
+  - `/curriculum` - Curriculum
+  - `/subjects` - Subjects
+  - `/dashboard` - My Progress (only shows if signed in)
+  - `/about` - About
+  - `https://sabi.eduforequality.org` - Sabi (bold, external link)
+- **Auth Buttons:**
+  - If signed out: "Log In" link + "Sign Up Free" button
+  - If signed in: Clerk UserButton avatar
+- **Mobile Menu:** Hamburger toggle with same navigation items in dropdown
+- **Styling:** White background, gray text, primary-dark hover colors
+
+---
+
+### 3. MIDDLEWARE.TS - ROUTE HANDLING
+
+**File:** `/Users/naomiivie/Education for Equality/curriculum-app/middleware.ts`
+
+**Key Route Handlers:**
+
+| Route Type | Paths | Behavior |
+|-----------|-------|----------|
+| **Protected Routes** | `/dashboard(.*)` | Require Clerk authentication |
+| **Demo Routes (Gated)** | `/sabi/demo`, `/sabi-voice`, `/demo` | Require SABI_DEMO_KEY in query (?key=SECRET) or cookie |
+| **Protected APIs** | `/api/sabi/stt`, `/api/sabi/tts`, `/api/sabi/voice-chat`, `/api/sabi/session`, `/api/sabi/student` | Require valid API key header (x-api-key) OR demo cookie |
+| **Webhook APIs** | `/api/sabi/at/*`, `/api/sabi/voice/*`, `/api/sabi/sms/*` | Open (AT/telephony services call directly) |
+| **Subdomain Rewrites** | `sabi.eduforequality.org` | `/` → `/sabi`, `/demo` → `/sabi-voice`, `/chat` → `/sabi-demo`, `/pricing` → `/sabi/pricing` |
+| **Sabi Subdomain Catch-All** | Any non-API/sign path on sabi.* | Redirects to `/demo` |
+
+**Environment Variables Used:**
+- `SABI_DEMO_KEY` - Secret key for gating demo pages
+- `SABI_API_KEY` - API key for protecting Sabi APIs
+
+---
+
+### 4. GLOBALS.CSS - DESIGN SYSTEM
+
+**File:** `/Users/naomiivie/Education for Equality/curriculum-app/app/globals.css`
+
+**CSS Variables (in :root):**
+```
+--background: #F8FDFB (light mint)
+--foreground: #1a1a1a (dark gray)
+--primary: #16FDDB (bright cyan)
+--primary-dark: #0FA992 (teal)
+--primary-darker: #075449 (dark teal)
+--secondary: #DDFBEE (light mint)
+--accent: #B1FEF3 (light cyan)
+--footer-bg: #2C3230 (dark gray)
+--text-muted: #5A6462 (gray)
+```
+
+**Custom CSS Classes:**
+- `.btn-primary` - Teal button with hover to darker teal
+- `.btn-secondary` - Transparent border button that inverts on hover
+- `.progress-bar` / `.progress-bar-fill` - Progress indicator styling
+- `.subject-card` - Card with shadow, border, hover lift effect
+- `.lesson-item` - Flex item with hover background, strikethrough when completed
+
+**Framework Integration:**
+- Uses Tailwind CSS via @import
+- Uses Geist Sans/Mono fonts (defined in layout.tsx)
+
+---
+
+### 5. COMPONENTS DIRECTORY
+
+**File:** `/Users/naomiivie/Education for Equality/curriculum-app/components/`
+
+| Component | File | Purpose |
+|-----------|------|---------|
+| **Navbar** | `Navbar.tsx` | Top navigation with auth, links to curriculum/subjects/about/sabi |
+| **Footer** | `Footer.tsx` | Footer with brand, social links, subject links, contact info |
+| **ReadingQuiz** | `ReadingQuiz.tsx` | Reusable reading assessment component with passage, MCQ questions, scoring |
+
+**Footer Details:**
+- Brand section with LinkedIn/Instagram/YouTube links
+- Learn section (links to all subjects)
+- Contact section (email, phone, donate link)
+- Copyright footer
+
+**ReadingQuiz Details:**
+- Props: `passage`, `passageTitle`, `questions[]` (with correctIndex + explanation), `standard`
+- Features: Color-coded feedback (blue=selected, green=correct, red=wrong), score display, reset button
+
+---
+
+### 6. APP/LAYOUT.TSX STRUCTURE
+
+**File:** `/Users/naomiivie/Education for Equality/curriculum-app/app/layout.tsx`
+
+**Root Layout Structure:**
+```
+RootLayout
+├─ ClerkProvider (auth)
+├─ html
+│  └─ body (antialiased, min-h-screen flex flex-col)
+│     ├─ Navbar
+│     ├─ main (flex-grow)
+│     │  └─ {children}
+│     └─ Footer
+```
+
+**Global Metadata:**
+- Title: "Education for Equality - Free Online Learning"
+- Description: Free education for underprivileged children in Nigeria (Math, English, Science, Social Studies)
+- Icon: `/icon.svg`
+
+**Fonts:** Geist Sans (primary) + Geist Mono (fallback)
+
+---
+
+### 7. PUBLIC ASSETS RELATED TO SABI
+
+**File locations:** `/Users/naomiivie/Education for Equality/curriculum-app/public/`
+
+| Asset | Type | Use |
+|-------|------|-----|
+| `tree-icon.png` | PNG (1.8KB) | Navbar logo |
+| `icon.svg` | SVG (2.7KB) | Site favicon |
+| `logo.png` | PNG (19KB) | Brand logo |
+| `hero-children.jpg` | JPG (67KB) | Landing page imagery |
+| `partner-child.jpg` | JPG (176KB) | Partnership/testimonial imagery |
+| `founder-naomi.png` | PNG (796KB) | Founder photo |
+| `globe.svg` | SVG (1KB) | Icon asset |
+| `file.svg` | SVG (391B) | Icon asset |
+| `window.svg` | SVG (1.8KB) | Icon asset |
+| `next.svg`, `vercel.svg` | SVG | Default Next.js assets |
+| `robots.txt` | TXT | SEO crawling rules |
+
+**Note:** Sabi pages use inline SVG icons (phone, brain, heart, microphone, speaker, etc.) rather than importing from public/
+
+---
+
+### 8. COMPLETE PAGE INVENTORY
+
+**Main App Pages:**
+- `app/page.tsx` - Home page
+- `app/about/page.tsx` - About Us
+- `app/reading/page.tsx` - Reading lessons
+- `app/curriculum/page.tsx` - Curriculum overview
+- `app/curriculum/[grade]/page.tsx` - Grade-specific curriculum
+- `app/subjects/page.tsx` - All subjects list
+- `app/subjects/[subject]/page.tsx` - Subject detail
+- `app/subjects/[subject]/[lesson]/page.tsx` - Lesson content
+- `app/dashboard/page.tsx` - User progress dashboard (protected)
+
+**Sabi Pages:**
+- `app/sabi/page.tsx` - Landing page (public)
+- `app/sabi/demo/page.tsx` - Chat demo (gated)
+- `app/sabi/pricing/page.tsx` - Pricing page (public)
+- `app/sabi/pricing/layout.tsx` - Pricing metadata wrapper
+- `app/sabi-demo/page.tsx` - Alternative chat demo path (gated)
+- `app/sabi-voice/page.tsx` - Voice demo page (mobile UX, live)
+
+**Auth Pages:**
+- `app/sign-in/[[...sign-in]]/page.tsx` - Clerk login
+- `app/sign-up/[[...sign-up]]/page.tsx` - Clerk signup
+
+---
+
+### 9. API STRUCTURE (FOR REFERENCE)
+
+**Note:** Full API details not requested, but the middleware shows these protected endpoints:
+- `/api/sabi` - Main Sabi endpoint
+- `/api/sabi/stt` - Speech-to-text
+- `/api/sabi/tts` - Text-to-speech
+- `/api/sabi/student` - Student management
+- `/api/sabi/session` - Session tracking
+- `/api/sabi/voice-chat` - Voice chat backend
+- `/api/sabi/at/*` - Affinity Telecom webhooks (open)
+- `/api/sabi/voice/*` - Voice webhooks (open)
+- `/api/sabi/sms/incoming` - SMS webhooks (open)
+
+---
+
+### KEY ARCHITECTURE INSIGHTS FOR REDESIGN
+
+1. **Subdomain Strategy:** sabi.eduforequality.org is a separate subdomain that maps to /sabi pages internally via middleware rewrite
+2. **Dark vs Light:** Main site is light/teal-themed; Sabi pricing/demo pages are dark-themed (can coexist via inline styles + CSS hiding)
+3. **Gating Mechanism:** Demo pages behind SABI_DEMO_KEY environment variable for pre-release access
+4. **Component Reuse:** Navbar + Footer used on all main pages; Sabi pages often hide navbar/footer via CSS (!important)
+5. **Authentication:** Uses Clerk for main site auth; Sabi APIs use separate API key + demo cookie model
+6. **Mobile-First Voice:** sabi-voice/page.tsx is heavily optimized for mobile call interface (minimal nav)
+7. **Lazy Loading:** Uses useEffect for scroll-reveal animations and intersection observers on pricing page
+
+This completes the full architecture overview. You now have complete visibility into all pages, components, routing, styling, assets, and middleware logic.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

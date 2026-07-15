@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.technovationchallenge.org/wp-content/uploads/2016/12/BusinessPlanChe
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-23 01:41:01 UTC
+========================================================================
+
+URL: https://www.technovationchallenge.org/wp-content/uploads/2016/12/BusinessPlanChecklist.pdf
+Extraction prompt: List every section of the Technovation business plan checklist: required headings, what each section asks, length expectations.
+
+----------------------------------------
+
+I appreciate your request, but I'm unable to complete this task. The content provided appears to be a PDF file in binary/encoded format rather than readable text. The data shown contains PDF structure markers (like `%PDF-1.5`, stream objects, and encoded content) rather than the actual Technovation business plan checklist content.
+
+To help you effectively, I would need:
+
+1. **A readable text version** of the Technovation business plan checklist document
+2. **A properly extracted or converted PDF** with visible section headings and requirements
+3. **A direct link or clearer source** for this specific checklist
+
+If you can provide the document in a text-readable format, I'd be happy to identify and summarize each section heading along with its requirements and expected length following your specified guidelines.
+
+[Binary content (application/pdf, 184.7KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/c7a75f72-c3a3-4686-8699-4a0a2b6bad0f/tool-results/webfetch-1782178861895-tw7os3.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

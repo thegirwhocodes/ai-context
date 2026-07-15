@@ -1,0 +1,31 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://static1.squarespace.com/static/59edc421bff200ece07aaea0/t/60dad8440bfa8e
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:55:00 UTC
+========================================================================
+
+URL: https://static1.squarespace.com/static/59edc421bff200ece07aaea0/t/60dad8440bfa8e5dd66dbdec/1624954952253/English+Curriculum+Framework+0058.pdf
+Extraction prompt: Extract ALL Stage 4 learning objectives for Cambridge Primary English. List every objective code and description for Reading, Writing, Speaking and Listening strands.
+
+----------------------------------------
+
+I appreciate your request, but I'm unable to extract the Stage 4 learning objectives from the provided content. The document appears to be a PDF file that has been converted to raw binary/encoded format, making it unreadable as structured text.
+
+To help you effectively, I would need:
+
+1. **A readable text version** of the Cambridge Primary English curriculum document, or
+2. **A properly formatted PDF** that can be parsed for structured content, or
+3. **Direct access** to Cambridge's official curriculum materials in a text-accessible format
+
+**What I can see:** The content provided is primarily JPEG image data and PDF encoding streams rather than extractable curriculum text.
+
+**Recommendation:** I suggest:
+- Consulting the official Cambridge Assessment International Education (CAIE) website directly
+- Accessing the curriculum framework document through Cambridge's learning platform
+- Requesting the document in a text-compatible format (CSV, DOCX, or plain text)
+
+If you can provide the content in a readable format, I'll be happy to extract all Stage 4 objectives across Reading, Writing, Speaking, and Listening strands with proper citation and adherence to your character limits.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

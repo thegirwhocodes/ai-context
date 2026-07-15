@@ -1,0 +1,55 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voi
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:32 UTC
+========================================================================
+
+URL: https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8
+Extraction prompt: Show me the COMPLETE working code samples in this article. Specifically focus on: (1) Any example that responds to a Record callback by returning XML that continues the same call (e.g., plays another audio, asks another question, records again). (2) Any pattern that shows back-and-forth interactive voice without DTMF (just spoken responses). (3) Code that demonstrates Record → server processes audio → server responds in-call. Quote exact XML.
+
+----------------------------------------
+
+# Analysis of Voice API Code Samples
+
+After reviewing the article, I must be direct: **the article does not contain the specific code patterns you're requesting.**
+
+## What the Article Actually Shows
+
+The article provides:
+
+1. **Basic call initiation** with webhook callback setup:
+```php
+$results = $voice->call([
+    'from' => $from,
+    'to'   => $to,
+    'callStartUrl' => 'https://yourdomain.com/ivr/welcome'
+]);
+```
+
+2. **One webhook handler example** that demonstrates initial response logic:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say>Welcome to our service. Press 1 for support, 
+  press 2 for billing.</Say>
+  <GetDigits timeout="10" finishOnKey="#" 
+  callbackUrl="...">
+  <Say>Enter your choice followed by the hash key.</Say>
+  </GetDigits>
+</Response>
+```
+
+## Critical Gap
+
+The article **does not demonstrate**:
+- Recording functionality or Record XML elements
+- Server-side audio processing callbacks
+- Continuation logic after recorded audio
+- Spoken response handling (voice recognition)
+- Call flow resumption patterns
+
+The webhook handler shown only covers DTMF (button press) scenarios, not the interactive voice patterns or recording-to-response flows you're seeking. The article is introductory-level and lacks advanced call control examples.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

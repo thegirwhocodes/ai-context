@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Antigravity VS Code extension document viewer
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 05:46:28 UTC
+========================================================================
+
+Search query: Antigravity VS Code extension document viewer
+
+----------------------------------------
+
+Web search results for query: "Antigravity VS Code extension document viewer"
+
+Links: [{"title":"Getting Started with Google Antigravity | Google Codelabs","url":"https://codelabs.developers.google.com/getting-started-google-antigravity"},{"title":"GitHub - jlcodes99/vscode-antigravity-cockpit: VS Code extension for monitoring Google Antigravity AI quotas. Features Webview dashboard, QuickPick mode, and quota grouping.","url":"https://github.com/jlcodes99/vscode-antigravity-cockpit"},{"title":"Setting up Google Antigravity (Coming from VSCode) (Blog Post) | AppSoftware","url":"https://www.appsoftware.com/blog/setting-up-google-antigravity-coming-from-vscode"},{"title":"Turning Antigravity Into a VS Code-Style AI IDE | Jimmy Song","url":"https://jimmysong.io/blog/antigravity-vscode-style-ide/"},{"title":"Deepnote extension for VS Code, Cursor, Windsurf, and Antigravity - Deepnote docs","url":"https://deepnote.com/docs/vscode-extension"},{"title":"Marketplace for VS code to be used in Antigravity · GitHub","url":"https://gist.github.com/tejainece/85408c51ff5e3555ebc4b5b4417a9b6b"},{"title":"I ditched VS Code and Cursor for Google’s Antigravity, and I am not going back","url":"https://www.xda-developers.com/ditched-vs-code-cursor-google-antigravity-not-going-back/"},{"title":"How to Install VS Code Marketplace Extensions in Google’s Antigravity IDE (Example: DeepBlue Theme) | by Anil Gurindapalli | Medium","url":"https://medium.com/@agurindapalli/how-to-install-vs-code-marketplace-extensions-in-googles-antigravity-ide-example-deepblue-theme-689cdcd735eb"},{"title":"Antigravity Storage Manager - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=Unchase.antigravity-storage-manager"},{"title":"Google's Antigravity beats VS Code at its own game","url":"https://www.xda-developers.com/googles-antigravity-beats-vs-code/"}]
+
+Based on the search results, here's what I found about Antigravity and VS Code extensions:
+
+## Antigravity Overview
+
+Antigravity forks the open-source Visual Studio Code (VS Code) foundation but radically alters the user experience to prioritize agent management over text editing. Google describes it as "an agentic development platform, evolving the IDE into the agent-first era".
+
+## Document Viewer / Extension Support
+
+While the search results don't specifically mention an "Antigravity document viewer" extension, they do cover how Antigravity handles extensions and document/artifact display:
+
+**Artifact Display**: Antigravity creates Artifacts as it plans and gets its work done as a way to communicate its work and get feedback from the human user. These are rich markdown files, architecture diagrams, images, browser recordings, code diffs, and so on.
+
+**Extension Installation**: Antigravity defaults to Open VSX instead of Microsoft's official registry. Most common extensions install without trouble, but the Microsoft-only ones refuse to load.
+
+**VS Code Compatibility**: Most widely used VS Code extensions install and function normally, including formatters, linters, Git tooling, container support, and testing frameworks.
+
+If you're looking for a specific document viewer extension for Antigravity, I'd recommend checking the Open VSX registry or searching the Antigravity extension marketplace directly, as general VS Code extensions should work with Antigravity's compatible ecosystem.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

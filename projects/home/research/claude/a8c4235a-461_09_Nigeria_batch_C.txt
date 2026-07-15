@@ -1,0 +1,34 @@
+========================================================================
+AGENT RESEARCH: Nigeria batch C
+Session: a8c4235a-461a-43aa-9300-1ddf4fc01847
+Time: 2026-05-04 19:21:26 UTC
+========================================================================
+
+Extract country-risk events for **Nigeria** from this CSV: `/Users/naomiivie/OneDrive - wesleyan.edu/Classes/Qac 386 - Text Mining/Project/cache/nigeria/extractions/batch_c.csv` (28 rows: article_id, quarter, tier, title, text, domain).
+
+For each row produce one JSON object:
+```json
+{"article_id":"<>","quarter":"<>","article_relevance":"High|Medium|Low|Not relevant","events":[{"risk_factor":"<one of 8>","direction_for_country_risk":"Positive|Negative|Mixed|Neutral","severity":"Low|Medium|High","evidence":"<≤25 words>"}]}
+```
+
+**Eight risk factors (use EXACTLY):** Government Stability · Internal Conflict · Corruption · Law & Order · Inflation · GDP Growth · Exchange Rate Stability · External Debt / Current Account
+
+Direction: "Positive for country risk" = REDUCES risk; "Negative" = INCREASES risk. If no Nigeria-relevant event → `events: []`.
+
+Write JSONL (one JSON per line, no array wrapper) to:
+`/Users/naomiivie/OneDrive - wesleyan.edu/Classes/Qac 386 - Text Mining/Project/cache/nigeria/extractions/extractions_c.jsonl`
+
+Process all 28 rows. Verify with `wc -l`. Return one line: "Wrote N lines, M with events, top factors: [...]". No full output paste.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a83b351b491d2b55e (internal ID - do not mention to user. Use SendMessage with to: 'a83b351b491d2b55e' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/a8c4235a-461a-43aa-9300-1ddf4fc01847/tasks/a83b351b491d2b55e.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

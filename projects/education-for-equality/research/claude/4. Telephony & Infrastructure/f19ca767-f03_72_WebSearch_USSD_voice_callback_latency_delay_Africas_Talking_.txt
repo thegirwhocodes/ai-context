@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: USSD voice callback latency delay Africa's Talking Nigeria call setup time
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:24:06 UTC
+========================================================================
+
+Search query: USSD voice callback latency delay Africa's Talking Nigeria call setup time
+
+----------------------------------------
+
+Web search results for query: "USSD voice callback latency delay Africa's Talking Nigeria call setup time"
+
+Links: [{"title":"USSD | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150775-ussd"},{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talking API Wrapper for C#","url":"https://github.com/AfricasTalkingLtd/africastalking.Net"},{"title":"How long is the duration of a USSD session for Nigerian Telcos ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2298298-how-long-is-the-duration-of-a-ussd-session-for-nigerian-telcos"},{"title":"Serverless USSD with Africa’s Talking — Part 2 - BFA Global","url":"https://bfaglobal.com/insights/serverless-ussd-with-africas-talking-part-2/"},{"title":"How do I get started on the Africa's Talking Sandbox? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-africa-s-talking-sandbox"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking · GitHub","url":"https://github.com/AfricasTalkingLtd"},{"title":"How do I get a USSD code in Nigeria? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2298228-how-do-i-get-a-ussd-code-in-nigeria"},{"title":"Serverless USSD with Africa’s Talking","url":"https://medium.com/f4life/serverless-ussd-with-africas-talking-62c97ef91fdd"},{"title":"Serverless USSD with Africa’s Talking — Part 1 - BFA Global","url":"https://bfaglobal.com/insights/serverless-ussd-with-africas-talking-part-1/"}]
+
+Based on the search results, I found some relevant information about Africa's Talking USSD services in Nigeria, though the results don't contain specific technical specifications about voice callback latency or call setup times.
+
+Here's what I found:
+
+**USSD Session Duration in Nigeria:**
+The duration of a USSD session in Nigeria is 120 seconds, and the idle time (how long we wait for a user to respond before terminating) is 30 seconds.
+
+**USSD Code Setup:**
+It will take one working day to get USSD codes set up in Nigeria.
+
+**Character Limits:**
+There is a character limit for the USSD menus, which is 160 characters before truncation.
+
+However, the search results do not contain specific information about voice callback latency delays or voice call setup times for Africa's Talking in Nigeria. The results primarily focus on USSD menu configuration, session management, and pricing rather than performance metrics like latency. You may want to consult Africa's Talking's official documentation or support team directly for specific latency and call setup time specifications.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

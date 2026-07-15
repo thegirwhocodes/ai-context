@@ -1,0 +1,238 @@
+========================================================================
+AGENT RESEARCH: Research fastest tunneling options
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 07:48:24 UTC
+========================================================================
+
+I need to expose a local Flask app (running on localhost:5001) to the internet with the FASTEST possible latency. The app streams MJPEG video feeds (2 camera streams, ~3-6MB/s total) and uses WebSocket (Socket.IO) for real-time events.
+
+Current setup: Cloudflare quick tunnel (free) — it's very slow for video streaming.
+
+Research ALL of these options and compare them specifically for low-latency video streaming:
+
+1. **ngrok** — free tier vs paid, latency benchmarks, MJPEG support
+2. **Tailscale Funnel** — peer-to-peer, does it support exposing to public internet?
+3. **Cloudflare Tunnel** with a paid account — faster than quick tunnels?
+4. **bore** (Rust-based tunnel) — how fast is it?
+5. **localtunnel** — npm-based
+6. **Serveo** — SSH-based
+7. **Pinggy** — claims low latency
+8. **localhost.run** — SSH-based
+9. **zrok** — open source, self-hostable
+
+Also research:
+- Can we reduce MJPEG bandwidth without losing quality? (adaptive quality, resolution reduction, frame skipping)
+- Would switching from MJPEG to WebRTC eliminate the tunnel latency problem entirely? (peer-to-peer, no server relay for video)
+- Are there any Flask/Python libraries that make WebRTC easy?
+
+For each tunnel option, report: free tier limits, measured latency (if benchmarks exist), bandwidth limits, WebSocket support, and ease of setup.
+
+Give me a clear ranking of what to use.
+
+----------------------------------------
+
+Now I have comprehensive data. Let me compile the full analysis.
+
+---
+
+Here is the complete research and ranking for your use case (MJPEG video streaming at 3-6 MB/s + WebSocket/Socket.IO).
+
+---
+
+## Your Core Problem
+
+At 3-6 MB/s, you will transfer **10-22 GB per hour**. This immediately eliminates most free-tier tunnels and makes bandwidth caps the primary constraint, not just latency.
+
+---
+
+## Tunnel-by-Tunnel Analysis
+
+### 1. ngrok
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | 1 GB/month bandwidth, 1 endpoint. Exhausted in ~3-5 minutes of your streaming. |
+| **Paid** | Personal $8/mo (5 GB), Pro $20/mo (15 GB). Overage: $0.10/GB. At 15 GB/hr, that is $1.50/hr in overages. |
+| **Measured throughput** | 8.81 Mbps (~1.1 MB/s) in benchmarks. **Too slow for your 3-6 MB/s streams.** |
+| **Latency** | 50-150ms added |
+| **WebSocket** | Full support |
+| **Verdict** | **Eliminated.** Throughput is below your minimum requirement, and costs spiral fast. |
+
+### 2. Tailscale Funnel
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Free for personal use, no explicit bandwidth cap |
+| **Latency** | 10-80ms added (depends on relay vs direct path) |
+| **Throughput** | 100 Mbps - 1 Gbps depending on relay usage |
+| **WebSocket** | Yes (HTTPS-based) |
+| **Public internet** | Yes, gives you a public HTTPS URL at `https://[machine].[tailnet].ts.net` |
+| **Setup** | Install Tailscale, `tailscale funnel 5001` |
+| **Caveat** | Traffic routes through Tailscale's relay servers (DERP), not true P2P for public visitors. HTTPS only (port 443), so your MJPEG must be served over HTTPS. |
+| **Verdict** | **Strong option.** No bandwidth caps, decent throughput, simple setup. |
+
+### 3. Cloudflare Tunnel (paid account)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | No bandwidth cap on HTTP/HTTPS. Quick tunnels get random URLs. |
+| **Paid** | Named tunnels free with any Cloudflare plan. Enterprise gets priority routing. |
+| **Latency** | 50-260ms added (documented user reports). Your current quick tunnel slowness is typical. |
+| **Throughput** | 46.3 Mbps (~5.8 MB/s) in benchmarks — just barely enough for your upper bound |
+| **WebSocket** | Yes |
+| **CRITICAL: TOS 2.8** | **Cloudflare explicitly prohibits serving video through free/Pro/Business plans.** Section 2.8 bans "serving video or a disproportionate percentage of non-HTML content." They actively enforce this with 302 redirects. MJPEG streaming will likely trigger a violation. |
+| **Verdict** | **Eliminated for video.** TOS 2.8 makes this a ticking time bomb. A paid tunnel won't fix the TOS issue unless you use Cloudflare Stream ($5/mo + $1/1000 min). |
+
+### 4. bore (Rust, self-hosted)
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Fully free + open source. Public relay at `bore.pub`. |
+| **Self-hosted** | Run `bore server` on any VPS for a dedicated relay |
+| **Latency** | <5% overhead claimed. With self-hosted relay, latency = your RTT to the VPS. |
+| **Throughput** | Bottleneck is your upload speed, not bore itself (it is a thin TCP proxy) |
+| **WebSocket** | TCP-level tunnel, so yes (anything over TCP works) |
+| **Setup** | `cargo install bore-cli` or download binary. `bore local 5001 --to bore.pub` |
+| **Caveat** | No TLS built-in (need reverse proxy for HTTPS). TCP only, no UDP. Public `bore.pub` relay has no SLA. |
+| **Verdict** | **Excellent for raw speed.** Self-hosted on a nearby VPS, this is the fastest tunnel option. The public relay is fine for testing. |
+
+### 5. localtunnel
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Free, no bandwidth cap in theory |
+| **Latency** | High and variable |
+| **Throughput** | Not benchmarked, but consistently reported as slow |
+| **WebSocket** | Yes |
+| **Reliability** | Frequent multi-day outages (documented Nov 2025). Effectively unmaintained. |
+| **Verdict** | **Eliminated.** Unreliable and slow. |
+
+### 6. Serveo
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Free, SSH-based (`ssh -R 80:localhost:5001 serveo.net`) |
+| **Latency** | SSH TCP-over-TCP problem adds variable latency |
+| **Throughput** | Limited by SSH overhead and shared server |
+| **WebSocket** | HTTP-level only |
+| **Reliability** | Multi-day outages reported (Nov 2025). Recently added WireGuard mode. |
+| **Verdict** | **Weak option.** SSH overhead hurts high-bandwidth streaming. Unreliable. |
+
+### 7. Pinggy
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Free SSH tunnel, 60-min sessions. Paid from $2.50/mo for persistent URLs. |
+| **Latency** | SSH-based, same TCP-over-TCP problem |
+| **Throughput** | 6.69 Mbps (0.84 MB/s) in benchmarks. **Far too slow for your 3-6 MB/s.** |
+| **WebSocket** | Yes |
+| **UDP** | Supported (unique among SSH tunnels) |
+| **Verdict** | **Eliminated.** Measured throughput cannot handle your bandwidth. |
+
+### 8. localhost.run
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Free SSH tunnel (`ssh -R 80:localhost:5001 nokey@localhost.run`) |
+| **Latency** | SSH overhead, same issues as Serveo/Pinggy |
+| **Throughput** | No published benchmarks, but SSH-based tunnels consistently underperform |
+| **WebSocket** | Yes |
+| **Verdict** | **Weak option.** Same class as Serveo — SSH overhead kills high-bandwidth streaming. |
+
+### 9. zrok
+
+| Attribute | Detail |
+|-----------|--------|
+| **Free tier** | Hosted version at zrok.io is free |
+| **Self-hosted** | Requires deploying OpenZiti infrastructure (complex) |
+| **Latency** | Variable, depends on deployment |
+| **Throughput** | UDP-based transport (less overhead than TCP tunnels) |
+| **WebSocket** | Yes |
+| **Setup** | Steep learning curve. Most complex option by far. |
+| **Verdict** | **Overkill.** The OpenZiti backend is enterprise infrastructure. Not worth the setup time for your use case. |
+
+---
+
+## MJPEG Bandwidth Reduction Techniques
+
+You can cut bandwidth significantly without switching protocols:
+
+1. **JPEG quality reduction**: Drop `cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 50])` from default 95 to 40-60. This alone can cut bandwidth 50-70% with acceptable visual quality for monitoring.
+
+2. **Resolution reduction**: `cv2.resize(frame, (640, 480))` before encoding. Going from 1080p to 480p cuts pixel count by 75%.
+
+3. **Frame rate reduction**: Skip frames — serve every 3rd or 5th frame. At 30fps input, serving 10fps cuts bandwidth by 66% and is still smooth for surveillance.
+
+4. **Adaptive quality**: Monitor send buffer backlog; when it grows, automatically drop quality/resolution/framerate. Pseudocode:
+   ```python
+   if send_queue_size > threshold:
+       jpeg_quality = max(30, jpeg_quality - 10)
+       skip_frames += 1
+   ```
+
+5. **Combined effect**: 720p + quality 50 + 10fps can reduce a 5 MB/s stream to under 500 KB/s.
+
+---
+
+## The WebRTC Alternative (Best Long-Term Answer)
+
+**WebRTC would fundamentally solve your problem** because:
+
+- **Peer-to-peer**: Video goes directly from your machine to the viewer's browser. No tunnel relay in the middle at all for the video data.
+- **H.264/VP8 compression**: 10-50x more efficient than MJPEG. A 720p stream at 30fps uses ~1-2 Mbps instead of 30-50 Mbps.
+- **Sub-200ms latency**: Typically 50-250ms end-to-end on the public internet.
+- **The tunnel only carries signaling**: The initial WebRTC handshake (a few KB) goes through the tunnel, then video flows P2P. Your tunnel bandwidth problem disappears.
+
+**Python libraries that make this easy:**
+
+- **`aiortc`** — Pure Python WebRTC implementation on asyncio. The most mature option. `pip install aiortc`.
+- **`LiveStream-WebRTC-Flask-OpenCV`** — Complete working example: Flask signaling server + aiortc + OpenCV camera capture. Available at [github.com/supersjgk/LiveStream-WebRTC-Flask-OpenCV](https://github.com/supersjgk/LiveStream-WebRTC-Flask-OpenCV).
+
+**What you still need a tunnel for with WebRTC:**
+- The Flask signaling server (tiny bandwidth — just SDP offer/answer exchange)
+- A STUN server for NAT traversal (Google provides free ones: `stun:stun.l.google.com:19302`)
+- A TURN server as fallback if P2P fails (~10-20% of connections). Free options exist or you can self-host `coturn`.
+
+**Caveat:** WebRTC requires rewriting your frontend from `<img src="/mjpeg_feed">` to JavaScript WebRTC API calls. It is a bigger change but eliminates the root cause.
+
+---
+
+## Final Ranking
+
+For your specific use case (2 MJPEG cameras at 3-6 MB/s total + Socket.IO):
+
+| Rank | Option | Why |
+|------|--------|-----|
+| **1** | **WebRTC via aiortc** | Eliminates the tunnel bottleneck entirely. Video goes P2P. Tunnel only carries signaling (~KB/s). Sub-200ms latency. Requires frontend rewrite. |
+| **2** | **bore (self-hosted on a VPS)** | If you have a VPS, bore adds <5% overhead. Your bottleneck becomes your home upload speed, not the tunnel. Free, fast, simple. |
+| **3** | **Tailscale Funnel** | No bandwidth caps, no TOS issues, 10-80ms added latency, simple setup (`tailscale funnel 5001`). Best "just works" option. |
+| **4** | **bore (public relay)** | `bore local 5001 --to bore.pub` — free, fast, zero config. No SLA on the public relay though. |
+| **5** | **MJPEG + aggressive quality reduction** | Not a tunnel, but dropping to 480p/quality-40/10fps can reduce your bandwidth to <500 KB/s, making ANY tunnel viable. Combine with option 3 or 4. |
+| **6** | **Cloudflare Tunnel** | Decent throughput but **TOS 2.8 prohibits video streaming**. Risk of account action. |
+| **7-9** | ngrok / Pinggy / localtunnel | Too slow, too expensive, or too unreliable for your bandwidth needs. |
+
+**My recommendation:** Start with **Tailscale Funnel** today (5-minute setup, no code changes) combined with **MJPEG quality reduction** (drop to 480p, quality 50, 10fps). That gets you working immediately. Then migrate to **WebRTC via aiortc** when you have time for the frontend rewrite — that is the real long-term solution that makes the tunnel question irrelevant.
+
+Sources:
+- [LocalCan Speed Test: Ngrok vs Cloudflare vs Pinggy 2025](https://www.localcan.com/blog/ngrok-vs-cloudflare-tunnel-vs-localcan-speed-test-2025)
+- [ngrok Pricing](https://ngrok.com/pricing)
+- [Tailscale Funnel Docs](https://tailscale.com/kb/1223/funnel)
+- [Tailscale Funnel vs Cloudflare vs Nginx 2025](https://onidel.com/blog/tailscale-cloudflare-nginx-vps-2025)
+- [Cloudflare TOS 2.8 Video Restrictions](https://community.cloudflare.com/t/cloudflare-tunnels-and-video-based-traffic-bandwidth-restrictions/722185)
+- [Cloudflare Video Delivery Policy](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/delivering-videos-with-cloudflare/)
+- [bore GitHub (ekzhang/bore)](https://github.com/ekzhang/bore)
+- [Pinggy ngrok Alternatives 2026](https://pinggy.io/blog/best_ngrok_alternatives/)
+- [aiortc GitHub](https://github.com/aiortc/aiortc)
+- [LiveStream-WebRTC-Flask-OpenCV](https://github.com/supersjgk/LiveStream-WebRTC-Flask-OpenCV)
+- [Serveo.net](https://serveo.net/)
+- [WebRTC Latency Comparison 2026](https://www.nanocosmos.net/blog/webrtc-latency/)
+- [Flask Video Streaming Revisited (Miguel Grinberg)](https://blog.miguelgrinberg.com/post/flask-video-streaming-revisited)
+- [Tunneling Benchmarks 2026 (InstaTunnel)](https://instatunnel.substack.com/p/tunneling-at-the-edge-2026-performance)
+agentId: a13366dab0aa1b11d (use SendMessage with to: 'a13366dab0aa1b11d' to continue this agent)
+<usage>total_tokens: 34791
+tool_uses: 20
+duration_ms: 371169</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic difference-in-differences" application country economics Arkhangelsky
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:12:13 UTC
+========================================================================
+
+Search query: "synthetic difference-in-differences" application country economics Arkhangelsky
+
+----------------------------------------
+
+Web search results for query: ""synthetic difference-in-differences" application country economics Arkhangelsky"
+
+Links: [{"title":"NBER WORKING PAPER SERIES SYNTHETIC DIFFERENCE IN DIFFERENCES","url":"https://www.nber.org/system/files/working_papers/w25532/w25532.pdf"},{"title":"Synthetic Difference-in-Differences - American Economic Association","url":"https://www.aeaweb.org/articles?id=10.1257%2Faer.20190159"},{"title":"The American Economic Review, December 2021, Volume ...","url":"https://file-lianxh.oss-cn-shenzhen.aliyuncs.com/Refs/Paper2022/Arkhangelsky-2021-Synthetic-Difference-In-Differences.pdf"},{"title":"Synthetic Difference-in-Differences Estimation","url":"https://docs.iza.org/dp15907.pdf"},{"title":"Synthetic Difference In Differences | NBER","url":"https://www.nber.org/papers/w25532"},{"title":"Synthetic Difference-in-Differences","url":"https://ideas.repec.org/a/aea/aecrev/v111y2021i12p4088-4118.html"},{"title":"(PDF) Synthetic Difference in Differences","url":"https://www.researchgate.net/publication/329945694_Synthetic_Difference_in_Differences"},{"title":"Synthetic Difference In Differences Estimation","url":"https://ideas.repec.org/p/arx/papers/2301.11859.html"},{"title":"Full article: On the use of synthetic difference-in-differences approach with (-out) covariates: The case study of Brexit referendum","url":"https://www.tandfonline.com/doi/full/10.1080/07474938.2025.2530649?af=R"},{"title":"Synthetic Control Methods | GOLTC","url":"https://goltc.org/publications/synthetic-control-methods/"}]
+
+Based on the search results, I've found comprehensive information about synthetic difference-in-differences and its applications:
+
+## Overview of Synthetic Difference-in-Differences
+
+Synthetic difference-in-differences is a new estimator for causal effects with panel data that builds on insights behind the widely used difference-in-differences and synthetic control methods, with desirable robustness properties and strong performance in settings where conventional estimators are commonly used.
+
+## Key Contributors
+
+The method was developed by Arkhangelsky, Dmitry, Susan Athey, David A. Hirshberg, Guido W. Imbens, and Stefan Wager, with their work published in 2021 in the American Economic Review.
+
+## Methodology and Properties
+
+The synthetic difference-in-differences method combines attractive features of both difference-in-differences and synthetic control approaches—like synthetic control, it reweights and matches pre-exposure trends to weaken reliance on parallel trend assumptions, and like difference-in-differences, it is invariant to additive unit-level shifts and allows for valid large-panel inference.
+
+The SDID estimator has doubly robust properties: it is consistent under a wide variety of weighting schemes given a well-specified fixed effects model, and consistent with appropriately penalized synthetic control weights when the basic fixed effects model is misspecified.
+
+## Application Example with Countries
+
+In a country-level economic application, the dataset contains observations on annual real GDP for 111 countries for 48 consecutive years, starting from 1959.
+
+The methodology has been applied across various fields including policy evaluation, and continues to be used in empirical economic research.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,166 @@
+========================================================================
+AGENT RESEARCH: Research scheduled-call no-show handling
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-18 20:03:24 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed). Context: "Sabi" is a voice-AI tutor planning SCHEDULED outbound calls to children (we call them at set times). Concern: scheduled calls seem fragile — what if the child is late, doesn't pick up, or the phone is off? Research how the RCT-backed phone-tutoring programs actually handled this operationally, and best practices.
+
+Cover thoroughly:
+1. **J-PAL / IPA "ConnectEd" phone tutoring (the 0.33 SD program across 6 countries: Botswana, India, Kenya, Nepal, Philippines, Uganda) and Youth Impact (Botswana, the originator):** How were calls scheduled? Who scheduled them (parent/caregiver)? What was the call cadence and length? How did they handle no-answer / late / phone-off — retry attempts, rescheduling, reminder SMS, call windows? What CONNECTION/ANSWER RATE and completion rate did they actually achieve? Attrition/dropout figures.
+2. **Other phone-tutoring RCTs and programs:** NGO-led COVID-era phone tutoring (Pratham, Rocket Learning India, TaRL phone adaptations, Kenya/Sierra Leone/Ghana programs), Rori/Rising (WhatsApp), Lynx/Imagine Worldwide. How did they manage scheduling vs on-demand and no-shows? Any null results (e.g. Sierra Leone) and WHY.
+3. **Scheduled vs on-demand vs hybrid:** evidence on which works better; whether letting the child ALSO call/flash in (hybrid) improves engagement; the role of a parent/caregiver appointment; SMS reminders before calls.
+4. **Operational best practices for reaching kids by phone in low-income settings:** best time-of-day windows, number of retry attempts, callback-on-missed, dealing with shared phones (multiple kids one phone), phone-off/no-network, identifying the right child on a shared line.
+5. **Connection-rate / engagement benchmarks:** realistic % of scheduled calls that actually connect, typical session-completion rates, how programs kept retention up over weeks/months.
+
+Conclude: is scheduled-outbound actually fragile, or did the evidence base solve it — and what's the recommended robust design (scheduling + retries + reminders + optional child-initiated flash-in)? Return AT LEAST 90% of substance with real figures, program names, and source URLs. Organize by the 5 points. Completeness over brevity.
+
+----------------------------------------
+
+I now have complete, evidence-grounded coverage of all five points. Here is the synthesis.
+
+---
+
+# Is scheduled-outbound calling fragile? What the RCT-backed phone-tutoring evidence actually shows
+
+**Bottom line up front:** Scheduled outbound calling is the *exact* model behind the strongest evidence in this field — the 0.30–0.35 SD ConnectEd result across six countries. It is **not** inherently fragile. The programs that worked solved the late/no-answer/phone-off problem operationally, not by switching to on-demand. The single prominent null result (Sierra Leone) failed for reasons **unrelated** to scheduling mechanics. The robust design is: **caregiver-mediated appointment + the tutor (not the family) owns all scheduling/retry/follow-up work + flexible per-household call windows + checkpoint-based continuity.** Adding optional child-initiated flash-in is supported as a complement, not a replacement.
+
+A crucial reframing for Sabi: in every successful program the call is **to the caregiver's phone, with the child brought to the call by the caregiver** — it is a parent appointment, not a child appointment. That single design choice is what makes "scheduled outbound" robust.
+
+---
+
+## 1. ConnectEd / Youth Impact (Botswana originator) and the 6-country J-PAL/IPA replication
+
+**The model (identical across all sites):** Weekly one-way SMS with "problems of the week" + a weekly **15–20 minute live phone call** to the **caregiver's** phone. On the call the facilitator "asked the parent to find the student and put the call on speaker" so parent and child engage together. Grades 3–5, foundational numeracy (TaRL "teach at the right level" by phone). Each call ends with a **"checkpoint question"** that re-assesses the child's level so next week's call is targeted — this is the continuity mechanism, not a calendar.
+
+**Who schedules — the key finding.** The household does **not** self-schedule and is **not** expected to be punctual to a fixed clock-time. The 5-country paper states the design explicitly: *"Households receive calls from a tutor who solicits their interest in participating, then initiates the tutoring calls and schedules according to a given household's availability, imposing minimal coordination costs on participating households… since the tutor calls the household, there is minimal to no cost to the household to participate."* Phone calls were deliberately chosen **over** radio/TV precisely because they "provide more flexible scheduling options, increasing take-up" — you don't have to be ready at 4:00pm sharp the way you do for a broadcast.
+
+**Cadence/length:** 1 call/week, 15–20 min, over the program duration (Botswana ran ~4 weeks in the proof-of-concept; multi-country trials ran longer, up to ~8–12+ weeks, with up to 2 years of school closure as backdrop). Just ~3 hours of total instruction produced the effect.
+
+**Operational staffing (Botswana, the real mechanics):**
+- **64 facilitators**, each **case-managing ~24 households**.
+- Each facilitator **called ~6 hours/day** to reach all their households every week.
+- Facilitators **"periodically requested ideal scheduling times to call to maximize the probability parents would engage."**
+- **Over 50% of total calling time was spent following up or on household logistics** (e.g., parent and child finding a joint space). This is the single most important operational number: the program *budgeted for* the fact that reaching people takes many touches. No-answer/late wasn't an edge case — it was the bulk of the work, and it was staffed for.
+
+**Connection / answer / completion rates (Botswana, hard numbers):**
+- Of **7,550** numbers collected → **6,375 reached** (others invalid/unreachable/child moved) → **4,550 (71%)** consented and enrolled.
+- Among enrolled phone-arm households, **active weekly participation by parents averaged 79–86%**.
+- On a given call: **~45% connected with parent AND child simultaneously** (range 33–58% across waves); **~37% reached the caregiver only** (still used productively to coach the parent); **18% "failure"** — broken down as **15% respondent unavailable, 2% logistical barrier, 1% opted out.** So even counting "caregiver-only" as partial, the **effective contact rate per attempt was ~82%, and full parent+child contact ~45%.**
+- **84% of children attempted the SMS problems** overall; the phone arm pushed engagement **+10 pts** above SMS-only.
+- **Take-up of the combined service:** 70% engaged in the phone+SMS arm vs 18% in SMS-only — i.e., **the live call roughly quadrupled engagement** over texts alone.
+
+**6-country replication (Angrist, Bergman et al.; trials 2020–2022; India, Kenya, Nepal, Philippines, Uganda + Botswana origin):**
+- Average effect **0.30–0.35 SD** (precisely 0.327 SD pooled for phone+SMS; 0.083 SD for SMS-only). This is **~3× the median education intervention** (0.10 SD; Evans & Yuan 2022).
+- **Engagement consistently reached 70–80%+** — explicitly contrasted against government radio/TV during COVID which had **engagement below 30%.**
+- Per-country phone effects reported include Philippines **0.45 SD** and Uganda **0.89 SD**.
+- **Government teachers worked as well as NGO tutors** (0.314 SD government vs 0.263 SD NGO in Nepal/Philippines; "at most 3 percentage points" difference) — meaning the model survives being run by non-specialist staff.
+- Caregiver profile: some nominated caregivers were grandparents; **only 24% had completed primary education** — yet it still worked, because the tutor drives the call.
+
+**Cost:** ~**$12/child** for the program (Botswana marginal cost **$14/child reached** for phone+SMS, **$2.13** for SMS-only). Yields **3.4 learning-adjusted years of schooling per $100** — top-percentile cost-effectiveness. ($48/SD for phone+SMS; effectively $50 → ~1 SD.)
+
+**Attrition (research, not program):** Botswana endline follow-up reached 49–52% of treatment students at week 4 (survey response, not call failure); control was 7–9 pts lower (response bias — control parents less likely to pick up), corrected to 64% with an intensive week-5 follow-up. No significant differential attrition across treatment arms.
+
+---
+
+## 2. Other phone-tutoring programs and RCTs
+
+**Sierra Leone — the null result, and WHY (this is the most instructive case for you).** NGO/government live tutoring calls during COVID, ~22-min calls. **No learning effect** (CIs ruled out anything above 0.08 SD math / 0.05 SD language). The authors' four explanations — **none of which is "scheduled calling is fragile":**
+1. **It was a scripted radio-recap, not personalized tutoring** — calls recapped a radio program rather than diagnosing and teaching at the child's level (no checkpoint/level-targeting loop).
+2. **Delivered by regular primary-school teachers**, vs. the more highly-skilled NGO staff/university students in the programs that worked.
+3. **Universal/assigned coverage, no opt-in** — the successful programs used **opt-in samples of motivated families** (selection matters).
+4. **No time substitution** — kids didn't shift study time toward the calls; in Botswana they did.
+
+And tellingly, the **call-placement rate itself was low**: private-school teachers placed only **10 of 16 math calls (62.5%)** and **9 of 16 language (56%)**; government teachers **7 of 16 (44%)** and **6 of 16 (38%)**. The failure here was teachers not making the calls and content being weak — a **management/content** problem, not a "child didn't pick up" problem. Cost was higher too (~$40/participant). **Lesson for Sabi: the fragility risk is on the *delivery/quality/accountability* side, and Sabi — an AI that always shows up, never skips a call, and always teaches at level — structurally fixes exactly the three things Sierra Leone got wrong.**
+
+**Pratham (India, COVID) — the hybrid template.** Pratham ran outbound WhatsApp/SMS daily activities ("Karona: Thodi Masti, Thoda Padhai") + **weekly outbound follow-up phone calls** by local staff, **AND** a Delhi-government **IVR missed-call/callback** service: *the student or parent gives a missed call (a "flash") to a number and receives a callback with a lesson.* This is the canonical **hybrid**: scheduled outbound for the backbone + child/parent-initiated flash-in for flexibility and to recover missed sessions, at zero cost to the family.
+
+**Rocket Learning (India, WhatsApp, on-demand/asynchronous).** ~**40% monthly active** parents; a third-party RCT found **0.2 SD** gains in developmental milestones (ages 3–5). A 154,000-parent RCT showed **peer-comparison/self-comparison nudges raised engaged users by 8–13.5%** — relevant if you add reminder/nudge messaging. On-demand reach (~40% MAU) is notably *lower* than scheduled outbound's 70–86%, illustrating the engagement cost of leaving initiation to the family.
+
+**Rori / Rising Academies (Ghana, AI math tutor on WhatsApp).** **0.36 SD** (≈ an extra year; +11 pts vs control). Crucially, usage was **scheduled and supervised**: **two 30-min sessions/week during a school study-hall period, with teachers present.** Attrition (160 of 637) was from **inconsistent school attendance**, not session no-shows — i.e., when sessions are institutionally anchored, the "did the child show up" problem largely disappears. Their own discussion notes Rori "could also be used by children at home," flagging the unsupervised-home case as the open dosage question.
+
+**Imagine Worldwide / Lynx (Malawi, tablet, child-initiated/self-paced).** 13-month RCT: **+4.2 months literacy, +3.6 months math**; 50% more children advanced on national literacy benchmarks; girls benefited at least as much. Fully **child-driven adaptive software** — proves self-initiated learning works, but requires hardware (solar tablets) you don't have. Relevant as evidence that on-device child agency is engaging when access is solved.
+
+---
+
+## 3. Scheduled vs on-demand vs hybrid — what the evidence favors
+
+- **Scheduled outbound, caregiver-mediated, tutor-driven** has the **strongest and most replicated** evidence (0.30–0.35 SD across 6 countries) **and the highest engagement (70–86%)**. The reason it isn't fragile: the burden of coordination is moved **off** the family and **onto** the tutor, and the "appointment" is flexible to household availability rather than a hard clock-time.
+- **Pure on-demand** (Rocket Learning ~40% MAU) reaches fewer families because initiation friction falls on the parent — though it's cheaper and fully scalable.
+- **Hybrid (scheduled backbone + child/parent flash-in)** is explicitly used by Pratham and is the best-of-both: the outbound call guarantees a baseline of contact and accountability; the missed-call/callback path lets a family **recover a missed session at no cost** and adds child agency. There's no head-to-head RCT of hybrid-vs-scheduled, but every mechanism points to hybrid dominating on engagement without sacrificing the scheduled backbone.
+- **Parent/caregiver as appointment-keeper is load-bearing.** "When parents led the second half of sessions, learning gains tripled." The caregiver is what makes a scheduled call to a child's home actually connect — they answer the phone, find the child, and put it on speaker. Skipping the caregiver is how you get the Sierra Leone problem.
+- **SMS reminders before calls — supported by adjacent evidence.** Healthcare RCT meta-analysis: SMS reminders raise appointment attendance **RR ≈ 1.48** (improvements 5–44% across settings); SMS ≈ phone-call reminders in effectiveness but far cheaper. Nudge messaging (Rocket Learning) lifted engagement 8–13.5%. A pre-call "we'll call you around [window] today" SMS is cheap insurance.
+
+---
+
+## 4. Operational best practices for reaching kids by phone in low-income settings
+
+Drawn directly from what the successful programs did:
+
+- **Call the caregiver's phone, not "the child."** Solicit interest first, get consent, then the tutor schedules to **household availability** and the caregiver brings the child to the phone (speaker). This also handles **shared phones** (the caregiver owns/holds it) and provides **child protection** (a guardian is present).
+- **Identify the right child on a shared line via the caregiver.** The phone number = the caregiver/household (in Botswana, ~80% one child, ~20% multiple). The caregiver routes the call to the correct child. For Sabi, the caregiver confirming "this is [child]" at handoff is the natural identification step; for multi-child households, the caregiver picks which child this slot is for.
+- **Budget heavily for follow-up.** >50% of calling time in Botswana was logistics/follow-up. Build retries and rescheduling in as the *expected* path, not the exception.
+- **Flexible per-household windows beat fixed clock-times.** "Periodically request ideal scheduling times." Ask each family for a preferred time-of-day window and call within it; this is why phone beat broadcast.
+- **Treat "caregiver-only" contact as a success, not a miss.** 37% of Botswana calls reached only the adult and were used to coach the parent. A "child not here" call is still valuable.
+- **Retries / callback-on-missed:** the human programs simply tried again across the ~6-hour daily window over the week; an automated system should retry within the window (e.g., 2–3 attempts spaced out), then offer reschedule, then let the family flash-in.
+- **Phone-off / no-network:** expect ~15% "unavailable" on any given attempt even in a well-run program; the answer is retry + a flash-in fallback + SMS, never assuming first-ring connection.
+- **Continuity without a calendar:** the **checkpoint question** re-levels the child each session, so a missed week doesn't break the pedagogy — the next call simply picks up at the child's current level.
+
+---
+
+## 5. Connection-rate / engagement benchmarks (what "good" looks like)
+
+| Metric | Benchmark (well-run scheduled program) | Source |
+|---|---|---|
+| Consent/enrollment of reached numbers | ~71% | Botswana |
+| **Active weekly participation (engagement)** | **79–86%** (Botswana); **70–80%+** (6-country) | Botswana / replication |
+| Full parent+child connection per call | ~45% (33–58%) | Botswana |
+| Any productive contact per call (incl. caregiver-only) | ~82% | Botswana |
+| Hard failure per attempt (unavailable/logistics/opt-out) | ~18% (15% unavailable) | Botswana |
+| Child attempted the work | 84% | Botswana |
+| On-demand engagement (for contrast) | ~40% MAU | Rocket Learning |
+| Govt radio/TV engagement (for contrast) | <30% | 6-country |
+| Effect size | 0.29 SD (Botswana phone+SMS); 0.30–0.35 SD (6-country) | both |
+| Cost | ~$12–14/child; 3.4 LAYS per $100 | both |
+
+**Retention over weeks/months** was held up by: weekly cadence + the caregiver relationship + the motivation/accountability of a live human checking in + heavy follow-up staffing. The programs ran weeks to months at these rates.
+
+---
+
+## Recommended robust design for Sabi (synthesizing the evidence)
+
+1. **Frame the call as a flexible caregiver appointment**, not a child clock-time. At onboarding, get the caregiver's consent and a **preferred time-of-day window**; Sabi calls the caregiver's phone within that window and the caregiver hands the child the phone (speaker). This single choice is what makes scheduled outbound robust and gives you child-identification + safeguarding for free.
+2. **Send a same-day SMS reminder** before the call ("Sabi will call around [window] today") — RR≈1.48 on attendance, cheap.
+3. **Retry + reschedule as the default path, not an error.** On no-answer: 2–3 spaced retries inside the window → if still no answer, an SMS offering a same-day/next-day reschedule. Expect ~15% unavailable per attempt and plan for it (the human programs spent >50% of time here; for Sabi that cost is near-zero, which is a structural advantage).
+4. **Add a child/parent flash-in (hybrid).** Let the family give a missed call / flash to trigger a callback (Pratham model) — recovers missed sessions at zero cost to them and adds agency. Keep scheduled outbound as the backbone.
+5. **Keep a checkpoint-question continuity loop** so a missed week never breaks the curriculum — Sabi just re-levels and resumes.
+6. **Lean into Sabi's structural fix for the Sierra Leone failure modes:** an AI never skips a scheduled call (fixing the 38–62% call-placement gap), always teaches at the child's level (fixing the scripted-recap weakness), and is consistent in quality (fixing the variable-teacher problem). The evidence says the fragility lives in *delivery reliability and content quality* — precisely where an AI tutor is strongest.
+
+**Verdict: Scheduled-outbound is the proven, highest-engagement model — it is robust when (a) calls go to the caregiver, (b) timing is a flexible household window with reminders, (c) retries/reschedule are designed-in, and (d) an optional flash-in recovers misses. The evidence base solved the fragility; Sabi can do it more reliably than the human programs did.**
+
+---
+
+### Key sources (URLs)
+- J-PAL, "20 for 20: The tutor is calling" — https://www.povertyactionlab.org/blog/5-8-23/20-20-tutor-calling-targeted-instruction-phone-boosts-learning-across-six-countries
+- Angrist, Bergman, Brewster, Matsheng, Botswana working paper (full operational detail) — https://www.povertyactionlab.org/sites/default/files/research-paper/working-paper_8778_Stemming-Learning-Loss-Pandemic_Botswana_Aug2020.pdf
+- Nature Human Behaviour version (Botswana) — https://www.nature.com/articles/s41562-022-01381-z
+- "Building Resilient Education Systems" 5-country replication PDF — https://www.wwhge.org/wp-content/uploads/2026/02/Building-Resilient-Education-Systems.pdf ; IPA page — https://poverty-action.org/building-resilient-education-systems-cost-effective-mobile-tutoring-philippines-and-beyond
+- Sierra Leone null result (live tutoring calls) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10198741/
+- CRPE family phone tutoring writeup — https://crpe.org/international-familyphonetutoring/
+- Youth Impact (Botswana / ConnectEd) — https://www.youth-impact.org/botswana
+- Pratham COVID response (IVR missed-call/callback + follow-up calls) — https://pratham.org/2020/05/26/connecting-the-disconnected/ and https://www.pratham.org/covid-19-response/digital-resources-enabling-learning-for-all/
+- Rocket Learning (on-demand WhatsApp; nudge RCT) — https://www.mulagofoundation.org/portfolio/rocket-learning ; https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4918175
+- Rori AI tutor RCT, Ghana (arXiv 2402.09809) — https://arxiv.org/abs/2402.09809
+- Imagine Worldwide / Lynx Malawi RCT — https://www.imagineworldwide.org/resource/tablet-based-learning-for-foundational-literacy-and-math-an-8-month-rct-in-malawi/
+- SMS reminder meta-analysis (RR≈1.48) — https://jhmhp.amegroups.org/article/view/10215/html
+- IADB phone tutoring overview — https://www.iadb.org/en/blog/education/learning-crisis-phone-tutoring
+
+*Note: I extracted the Botswana, Rori, and 5-country papers from their PDFs directly (saved under this session's `tool-results/` as `botswana.txt`, `rori.txt`, `fivecountry.txt`) since the live PDFs are binary-encoded. The existing `research-agents/` files on ConnectEd covered cost/effect-size only and lacked all the scheduling/answer-rate operational detail above — these are new findings worth saving to project memory.**
+agentId: a420f287b67d2dd0f (use SendMessage with to: 'a420f287b67d2dd0f' to continue this agent)
+<usage>subagent_tokens: 93556
+tool_uses: 34
+duration_ms: 1022305</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

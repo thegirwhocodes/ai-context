@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" "Universal Primary Education" Uganda OR Kenya OR Tanzania gr
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:30:41 UTC
+========================================================================
+
+Search query: "synthetic control" "Universal Primary Education" Uganda OR Kenya OR Tanzania growth GDP
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" "Universal Primary Education" Uganda OR Kenya OR Tanzania growth GDP"
+
+Links: [{"title":"Policies on free primary and secondary education in East Africa","url":"http://www.create-rpc.org/pdf_documents/PTA10.pdf"},{"title":"(PDF) A Comparative Analysis of Universal Primary Education Policy in Ghana, Kenya, Malawi, and Uganda","url":"https://www.researchgate.net/publication/266446962_A_Comparative_Analysis_of_Universal_Primary_Education_Policy_in_Ghana_Kenya_Malawi_and_Uganda"},{"title":"The effect of the Universal Primary Education program on consumption and on the employment sector: Evidence from Tanzania - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0305750X20304721"},{"title":"Evaluating universal primary education in Uganda: School fee abolition and educational outcomes - Kan - 2021 - Review of Development Economics - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/10.1111/rode.12725"},{"title":"Data for Kenya, Tanzania, Uganda | Data","url":"https://data.worldbank.org/?locations=KE-TZ-UG"},{"title":"Uganda GDP | 2025 & 2026 Estimates","url":"https://www.worldeconomics.com/GDP/Uganda.aspx"},{"title":"EPDC Spotlight on Uganda | Education Policy Data Center","url":"https://www.epdc.org/node/5916.html"},{"title":"Full article: Global Education Policies versus local realities. Insights from Uganda and Mexico","url":"https://www.tandfonline.com/doi/full/10.1080/03057925.2019.1616163"},{"title":"Uganda Economy: GDP, Inflation, CPI & Interest Rates - FocusEconomics","url":"https://www.focus-economics.com/countries/uganda/"},{"title":"East Africa Living Encyclopedia","url":"https://www.africa.upenn.edu/NEH/ueconomy.htm"}]
+
+I've performed the web search for your query on "synthetic control," "Universal Primary Education," and GDP growth in Uganda, Kenya, and Tanzania. 
+
+The search results provide information about Universal Primary Education policies and their implementation in these East African countries, though most results focus on enrollment impacts rather than specifically using synthetic control methodology to evaluate GDP effects.
+
+Key findings from the results:
+
+**UPE Policy Implementation:**
+- After the abolishment of school fees in Uganda in 1997, the enrollment rate more than doubled
+- In Kenya, enrollment increased by 18 percent from 5.9 million children in 2002 to 7.2 million in 2004 following the implementation of FPE in 2003
+- A paper uses the Tanzanian Universal Primary Education program implemented between 1974 and 1978 to study the effect of education on household consumption and labor market participation, adopting a difference-in-difference approach
+
+**Economic Context:**
+- Uganda's education expenditure as a percentage of GDP was relatively low, starting at 2.9% in 1995–1996 and increasing to 4.7% in 1998–1999
+
+The search results don't specifically identify studies using synthetic control methodology to evaluate the impact of UPE policies on GDP growth. If you're looking for that particular methodological approach, you may need to search for more specialized econometric or policy evaluation literature.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

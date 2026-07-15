@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs expressive mode Flash v2.5 conversational AI enable settings
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:23:27 UTC
+========================================================================
+
+Search query: ElevenLabs expressive mode Flash v2.5 conversational AI enable settings
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs expressive mode Flash v2.5 conversational AI enable settings"
+
+Links: [{"title":"ElevenLabs — Meet Flash","url":"https://elevenlabs.io/blog/meet-flash"},{"title":"Models | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/models"},{"title":"Gemini 2.5 Flash comes to ElevenLabs Conversational AI","url":"https://elevenlabs.io/blog/gemini-25-flash"},{"title":"Introducing ElevenLabs Flash V2.5 on WaveSpeedAI | WaveSpeedAI Blog","url":"https://wavespeed.ai/blog/posts/introducing-elevenlabs-flash-v2-5-on-wavespeedai/"},{"title":"ElevenLabs Flash V2.5 Text To Speech Model | $0.1/1K Chars | WaveSpeedAI","url":"https://wavespeed.ai/models/elevenlabs/flash-v2.5"},{"title":"Models - Elevenlabs8 API","url":"https://elevenlabs8.mintlify.app/models"},{"title":"Eleven v3: Most Expressive AI TTS Model Launched","url":"https://elevenlabs.io/blog/eleven-v3"},{"title":"Introducing Expressive Mode for ElevenAgents","url":"https://elevenlabs.io/blog/introducing-expressive-mode"},{"title":"Do you offer an AI model for conversational purposes or for chatbots? – ElevenLabs","url":"https://help.elevenlabs.io/hc/en-us/articles/19954594946705-Do-you-offer-an-AI-model-for-conversational-purposes-or-for-chatbots"},{"title":"Text to Speech | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/capabilities/text-to-speech"}]
+
+Based on the search results, here's information about ElevenLabs Flash v2.5 and expressive mode for conversational AI:
+
+## ElevenLabs Flash v2.5
+
+Eleven Flash v2.5 is the fastest speech synthesis model, designed for real-time applications and Agents Platform, delivering high-quality speech with ultra-low latency (~75ms) across 32 languages. Flash v2.5 can be used via the API using model id "eleven_flash_v2_5".
+
+## Expressive Mode for Conversational AI
+
+Expressive Mode for ElevenAgents provides voice agents that are expressive and gives teams unprecedented control over tone - so agents can de-escalate, reassure, and guide conversations to a clear resolution, even under pressure. 
+
+This uses Eleven v3 Conversational - the most emotionally intelligent, context-aware Text to Speech model, built on Eleven v3 and optimized for real-time dialogue.
+
+## Key Features
+
+A new turn-taking system provides better-timed responses with fewer interruptions, using real-time signals from Scribe v2 Realtime to infer emotion and better determine when an agent should speak, pause, or wait. Expressive Mode scales emotional nuance across 70+ languages, improving delivery in languages like Hindi.
+
+For configuration, when creating a new agent or modifying an existing one, select the preferred language model from the Language Model dropdown in the settings and configure any other desired settings.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

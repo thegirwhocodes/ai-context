@@ -1,0 +1,234 @@
+========================================================================
+AGENT RESEARCH: Solve AT webhook security
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:38 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi" (Next.js on Vercel). Repo: /Users/naomiivie/Education for Equality/curriculum-app.
+
+PROBLEM: The routes /api/sabi/at/incoming, /api/sabi/at/recording, /api/sabi/at/events, /api/sabi/sms/incoming, and the other /api/sabi/* routes are fully PUBLIC (middleware.ts comment: "Demo and Sabi API routes are open — no firewall"). No verification that requests actually come from Africa's Talking. At pilot scale someone could hit these to burn Anthropic/ElevenLabs/Groq credits.
+
+YOUR TASK:
+1. Determine how Africa's Talking authenticates/verifies its webhooks (does AT sign requests like Twilio? Does it use a fixed set of source IPs? A shared secret? Check AT official docs at developers.africastalking.com and help.africastalking.com). Be authoritative with sources — AT does NOT use HMAC signatures like Twilio, so find what it actually offers (likely IP allowlist).
+2. Read curriculum-app/middleware.ts and the /api/sabi/at/* route files.
+3. Design a pragmatic protection that will NOT block legitimate AT calls during a live pilot (this is critical — do not propose anything that risks rejecting real AT traffic). Options to weigh: AT source-IP allowlist, a secret query-param/path token on the callback URL configured in the AT dashboard, lightweight rate limiting, and/or a per-call sanity check. Recommend the SAFEST high-value option.
+
+OUTPUT (do NOT edit files, do NOT deploy): the AT verification facts (with sources), a recommended approach, exact `old_string`→`new_string` edits (or new helper file content) to implement it, and an explicit risk rating for false-rejections of real calls. Prefer a solution that is fail-open (logs/flags rather than blocks) for the pilot.
+
+----------------------------------------
+
+No existing rate-limit infra. I have everything I need. Let me write up the complete findings and the recommended implementation.
+
+Note one important code detail: in `incoming/route.ts` line 77, the route does a server-to-server `fetch()` to its own `/api/sabi/at/recording` endpoint. That internal call must still be allowed — so any token gate must let it through (the forwarded URL would need the token too, or the check must allow internal calls). I'll account for that.
+
+## Findings
+
+### 1. How Africa's Talking authenticates its webhooks — authoritative facts
+
+AT's behavior is fundamentally different from Twilio. Per AT's own help center:
+
+- **No HMAC request signing.** AT does **not** sign outbound webhook/callback POSTs. Their official guidance ("How can I ensure the POST request to my callback URL is coming from Africa's Talking?") says only: *"We only allow access to a POST request with the correct username and API key combination"* — i.e. that refers to **your** requests **to AT**, not AT's requests to you. There is **no signature header to verify** on inbound callbacks. (The `X-AT-Signature` / HMAC-SHA256 story that surfaces in web-search summaries is a hallucination — it is generic webhook-security boilerplate pulled from unrelated vendors' docs, not from any AT page. The actual AT article explicitly does not mention signatures or secret tokens.)
+  - Source: https://help.africastalking.com/en/articles/5947646-how-can-ensure-that-the-post-request-to-my-callback-url-is-coming-from-africa-s-talking-and-not-some-other-place
+
+- **No published webhook source-IP allowlist.** AT does not publish a stable, documented set of egress IPs for its HTTP callback servers. The only IP-whitelisting AT documents is for **SIP trunks**, and there it is **your PBX's IP** that you give to AT — not AT's IP given to you. So an IP allowlist for the HTTP webhook is not officially supported and would be guesswork that risks blocking real traffic.
+  - Sources: https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection (SIP trunk: "You share your trunk's (PBX) IP address for whitelisting"); https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callback-url (callback config — no IP/token/security details at all).
+
+- **The callback URL itself is effectively the only shared secret AT gives you.** You set the voice callback URL in the AT dashboard (Voice → Phone Numbers → Actions → Callback URL). AT does not require any fixed URL shape, so you can put an unguessable token in it.
+
+**Conclusion:** The only verification mechanism that is (a) under your control, (b) documented-compatible, and (c) zero risk of false-rejecting real AT calls is a **secret token baked into the callback URL** you register in the AT dashboard. An IP allowlist is unsafe (AT publishes no list). Signature verification is impossible (AT doesn't sign).
+
+### 2. Code reality check
+
+- `middleware.ts` — Sabi/API routes are explicitly open (lines 14-15).
+- The four entry webhooks: `at/incoming`, `at/recording`, `at/events`, `sms/incoming`. The expensive ones (Anthropic + ElevenLabs/YarnGPT TTS + Groq STT) are `at/incoming` and `at/recording`. `at/events` calls Claude Haiku. `sms/incoming` sends SMS (costs money) + writes Supabase.
+- Important wrinkle: `at/incoming` (line 72-81) does an internal server-to-server `fetch()` to its own `/api/sabi/at/recording`. Any gate must let that internal hop through. The clean way: the token gate reads from the query string, and the internal forward must carry the same token.
+
+### 3. Recommended approach — fail-open secret-token gate (SAFEST high-value option)
+
+A shared secret token in the callback URL, checked in middleware, **fail-open (log/flag, do not block) for the pilot**. This is the only option with effectively zero false-rejection risk, because the token is something *you* put in the AT dashboard URL — every real AT call will carry it by construction, and you control it.
+
+- Store `AT_WEBHOOK_TOKEN` (a long random string) in env.
+- Register callback URLs in the AT dashboard with `?at_token=<token>` appended (and the in-code `NEXT_PUBLIC_APP_URL`-derived `callbackUrl`s also get it).
+- Middleware checks for the token on `/api/sabi/at/*` and `/api/sabi/sms/incoming`. **During the pilot it only logs a warning + Sentry flag on mismatch — it does NOT reject.** Flip a single env flag (`AT_WEBHOOK_ENFORCE=1`) to switch to hard 403 once you've confirmed from logs that 100% of real traffic carries the token.
+
+**Risk rating for false-rejection of real AT calls: essentially zero while fail-open (it never rejects); LOW even after enforcement is enabled** — the only way a real call gets rejected is if you forget to add the token to a dashboard callback URL, which the fail-open logging phase is designed to catch first.
+
+This deliberately avoids: IP allowlists (HIGH false-reject risk — no published list), and aggressive rate limiting as the primary gate (MEDIUM risk — a classroom with shared phones could legitimately burst).
+
+### Exact edits
+
+**New helper file** — `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/at-auth.ts`:
+
+```ts
+import * as Sentry from "@sentry/nextjs";
+import type { NextRequest } from "next/server";
+
+/**
+ * Africa's Talking does NOT sign its webhook POSTs (no HMAC / no signature
+ * header) and does NOT publish a stable set of source IPs for HTTP callbacks.
+ * Their own guidance is that the callback URL is effectively the shared secret.
+ * So we gate on a secret token carried in the callback URL query string
+ * (?at_token=...), which we register in the AT dashboard.
+ *
+ * Pilot posture: FAIL-OPEN. We log + flag mismatches but do not block, so a
+ * misconfigured dashboard URL can never reject a real child's call. Set
+ * AT_WEBHOOK_ENFORCE=1 to switch to hard rejection once logs confirm every
+ * real call carries the token.
+ */
+export function verifyATWebhook(req: NextRequest): {
+  ok: boolean;
+  enforce: boolean;
+} {
+  const expected = process.env.AT_WEBHOOK_TOKEN;
+  const enforce = process.env.AT_WEBHOOK_ENFORCE === "1";
+
+  // No token configured → nothing to check (don't break existing setups).
+  if (!expected) return { ok: true, enforce: false };
+
+  const provided =
+    req.nextUrl.searchParams.get("at_token") ||
+    req.headers.get("x-at-token") ||
+    "";
+
+  const ok = provided.length > 0 && timingSafeEqual(provided, expected);
+
+  if (!ok) {
+    console.warn(
+      `[AT auth] webhook token ${provided ? "mismatch" : "missing"} on ${req.nextUrl.pathname} (enforce=${enforce})`
+    );
+    Sentry.captureMessage("AT webhook token failure", {
+      level: enforce ? "error" : "warning",
+      tags: {
+        "at.auth": provided ? "mismatch" : "missing",
+        "at.path": req.nextUrl.pathname,
+        "at.enforce": String(enforce),
+      },
+    });
+  }
+
+  return { ok, enforce };
+}
+
+// Constant-time string compare (avoids importing node:crypto into edge mw).
+function timingSafeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let mismatch = 0;
+  for (let i = 0; i < a.length; i++) {
+    mismatch |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return mismatch === 0;
+}
+```
+
+**Edit `middleware.ts`** — add the import and the gate. Two edits:
+
+`old_string`:
+```ts
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+import { NextResponse } from 'next/server';
+```
+`new_string`:
+```ts
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+import { NextResponse } from 'next/server';
+import { verifyATWebhook } from '@/lib/voice/at-auth';
+```
+
+`old_string`:
+```ts
+  // Demo and Sabi API routes are open — no firewall.
+  // (Rate limiting on the Hetzner server + upstream API quotas bound credit exposure.)
+```
+`new_string`:
+```ts
+  // Sabi AT/SMS webhooks: verify the secret token AT carries in the callback URL.
+  // AT does not sign webhooks or publish source IPs, so an unguessable token in
+  // the registered callback URL is the only reliable signal. FAIL-OPEN during the
+  // pilot (log/flag only) so a misconfigured URL never rejects a real call; set
+  // AT_WEBHOOK_ENFORCE=1 to hard-block once logs confirm real traffic carries it.
+  if (
+    path.startsWith('/api/sabi/at/') ||
+    path === '/api/sabi/sms/incoming'
+  ) {
+    const { ok, enforce } = verifyATWebhook(req);
+    if (!ok && enforce) {
+      return new NextResponse('Forbidden', { status: 403 });
+    }
+  }
+```
+
+**Edit `app/api/sabi/at/incoming/route.ts`** — the internal forward to `/at/recording` must carry the token so it isn't flagged. (The in-code `callbackUrl` for the *next* AT hop must also carry it; see below.)
+
+`old_string`:
+```ts
+      const recordingForwardUrl = new URL(
+        `/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(studentId)}`,
+        req.url
+      ).toString();
+```
+`new_string`:
+```ts
+      const atToken = [REDACTED:attoken]
+        ? `&at_token=[REDACTED:at-token]`
+        : "";
+      const recordingForwardUrl = new URL(
+        `/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(studentId)}${atToken}`,
+        req.url
+      ).toString();
+```
+
+And the AT-facing `callbackUrl` built for `<Record>` (line 124) — AT will POST to this when the child finishes, so it must carry the token:
+
+`old_string`:
+```ts
+    const callbackUrl = `${baseUrl}/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(student.id)}&module=${student.isNew ? 0 : "current"}`;
+```
+`new_string`:
+```ts
+    const atToken = [REDACTED:attoken]
+      ? `&at_token=[REDACTED:at-token]`
+      : "";
+    const callbackUrl = `${baseUrl}/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(student.id)}&module=${student.isNew ? 0 : "current"}${atToken}`;
+```
+
+(Note: there are now two `atToken` consts in this file at different scopes — the recording-forward block and the greeting block are in separate branches, so both declarations are fine. If they ever share scope, rename one.)
+
+**Edit `app/api/sabi/at/recording/route.ts`** — its own `<Record>` loop callback (line 64) also needs the token, since AT POSTs back to it each turn:
+
+`old_string`:
+```ts
+    const callbackUrl = `${baseUrl}/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(studentId)}`;
+```
+`new_string`:
+```ts
+    const atToken = [REDACTED:attoken]
+      ? `&at_token=[REDACTED:at-token]`
+      : "";
+    const callbackUrl = `${baseUrl}/api/sabi/at/recording?session=${encodeURIComponent(sessionId)}&student=${encodeURIComponent(studentId)}${atToken}`;
+```
+
+### Deployment steps (for when you choose to ship — not done here)
+
+1. `AT_WEBHOOK_TOKEN` = a long random string (e.g. `openssl rand -hex 24`), added to Vercel env (all environments) and `.env.local` / `.env.local.example`.
+2. In the AT dashboard, set the voice callback URL and the SMS callback URL to include `?at_token=<token>`.
+3. Deploy with `AT_WEBHOOK_ENFORCE` **unset** (fail-open). Watch Sentry/logs for "AT webhook token missing/mismatch" — there should be none from real calls.
+4. Once clean for a day or two of real pilot traffic, set `AT_WEBHOOK_ENFORCE=1` to start returning 403 to forgeries.
+
+### Optional defense-in-depth (lower priority, not required)
+
+- Add lightweight per-IP/per-caller rate limiting (e.g. Upstash Ratelimit) on `at/incoming` only, with generous limits (e.g. 30 calls/min/IP) — purely as a backstop. Not added here because it carries a small false-reject risk and the token gate already removes the blanket-public exposure. The memory note about "rate limiting on the Hetzner server" refers to the TTS box, not these Vercel routes, so it does not cover this exposure.
+
+No files were edited and nothing was deployed, per your instructions.
+
+Sources:
+- https://help.africastalking.com/en/articles/5947646-how-can-ensure-that-the-post-request-to-my-callback-url-is-coming-from-africa-s-talking-and-not-some-other-place
+- https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callback-url
+- https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection
+agentId: a49a4c8ed8f0c5bf8 (use SendMessage with to: 'a49a4c8ed8f0c5bf8' to continue this agent)
+<usage>subagent_tokens: 60715
+tool_uses: 19
+duration_ms: 151234</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

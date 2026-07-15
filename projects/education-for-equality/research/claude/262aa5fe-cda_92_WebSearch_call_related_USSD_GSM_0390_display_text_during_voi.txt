@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "call related USSD" GSM 03.90 display text during voice call specification how i
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:26:33 UTC
+========================================================================
+
+Search query: "call related USSD" GSM 03.90 display text during voice call specification how it works
+
+----------------------------------------
+
+Web search results for query: ""call related USSD" GSM 03.90 display text during voice call specification how it works"
+
+Links: [{"title":"Unstructured Supplementary Service Data - Wikipedia","url":"https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data"},{"title":"GSM GSM 03.90 TECHNICAL December 1996 SPECIFICATION Version 5.0.0","url":"https://www.etsi.org/deliver/etsi_gts/03/0390/05.00.00_60/gsmts_0390v050000p.pdf"},{"title":"GSM GSM 02.90 TECHNICAL March 1997 SPECIFICATION Version 5.1.0","url":"https://www.etsi.org/deliver/etsi_gts/02/0290/05.01.00_60/gsmts_0290v050100p.pdf"},{"title":"What is USSD - MMI Code - CsPsProtocol - Simplified Tutorials","url":"https://www.cspsprotocol.com/ussd/"},{"title":"What does dialing *#21# do to your Android phone? - Quora","url":"https://www.quora.com/What-does-dialing-21-do-to-your-Android-phone-1"},{"title":"List of USSD Codes & GSM Codes","url":"https://esimradar.com/blog/ussd-gsm-codes"},{"title":"Diverting Voice Calls by Using USSD Codes | PDF | Consumer Electronics | Service Industries","url":"https://www.scribd.com/document/710434040/Diverting-Voice-Calls-by-using-USSD-Codes"},{"title":"12 Hidden Features In Your Mobile Phone Using USSD Codes","url":"https://www.download3k.com/articles/12-Hidden-Features-In-Your-Mobile-Phone-Using-USSD-Codes-01977"},{"title":"USSD: A Communication Technology to Potentially Ouster SMS Dependency","url":"https://www.linkedin.com/pulse/ussd-communication-technology-potentially-ouster-sms-k-k-upadhayay"},{"title":"GSM Codes | PDF | Subscriber Identity Module | Telecommunications","url":"https://www.scribd.com/document/366825235/GSM-CODES"}]
+
+Based on the search results, here's what I found about call-related USSD in GSM 03.90 and how text display during voice calls works:
+
+## USSD Phase 2 Specification (GSM 03.90)
+
+USSD Phase 2 is specified in GSM 03.90, and it supports both mobile-initiated as well as network-initiated operations.
+
+## Display Text During Voice Call
+
+According to the GSM 03.90 specification, when the Mobile Station is in a state where it can handle the operation, for a USSD request, the MS shall display the text provided and await user input. If the user enters a response, the MS shall return the response to the MSC, maintaining the transaction.
+
+## Call-Related USSD Operations
+
+An important capability of USSD is that the MS may initiate a USSD Operation either during a call or out of call. This means with USSD, messages can even be initiated during calls, allowing simultaneous voice and data communication.
+
+## How It Works
+
+The mechanism allows the Mobile Station user and a PLMN operator defined application to communicate in a way which is transparent to the MS and to intermediate network entities. When a USSD message is received, text is displayed to the user, who can respond, and the session is maintained throughout the exchange.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

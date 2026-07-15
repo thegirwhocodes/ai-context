@@ -1,0 +1,43 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Code CLI export chat history download conversations location 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 05:31:03 UTC
+========================================================================
+
+Search query: Claude Code CLI export chat history download conversations location 2026
+
+----------------------------------------
+
+Web search results for query: "Claude Code CLI export chat history download conversations location 2026"
+
+Links: [{"title":"GitHub - ZeroSumQuant/claude-conversation-extractor: Extract clean conversation logs from Claude Code's internal storage","url":"https://github.com/ZeroSumQuant/claude-conversation-extractor"},{"title":"How can I export my Claude data? | Claude Help Center","url":"https://support.claude.com/en/articles/9450526-how-can-i-export-my-claude-data"},{"title":"How to Download a Claude Chat Session","url":"https://blog.promptlayer.com/how-to-download-a-claude-chat-session/"},{"title":"claude-conversation-extractor · PyPI","url":"https://pypi.org/project/claude-conversation-extractor/"},{"title":"Claude Code's hidden conversation history (and how to actually use it) | @kentgigger","url":"https://kentgigger.com/posts/claude-code-conversation-history"},{"title":"Claude Code and Codex Assist - Chat History, Code Diffs & Usage - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=agsoft.claude-history-viewer"},{"title":"GitHub - jhlee0409/claude-code-history-viewer: desktop app to browse and analyze your Claude Code conversation history","url":"https://github.com/jhlee0409/claude-code-history-viewer"},{"title":"Claude Code and Codex Assist - Chat History, Code Diffs ...","url":"https://open-vsx.org/extension/agsoft/claude-history-viewer"},{"title":"GitHub - robbie-wasabi/claude-utils: Extract clean conversation logs from Claude Code's internal storage","url":"https://github.com/robbie-wasabi/claude-utils"},{"title":"Claude Code Exporter | MCP Servers","url":"https://lobehub.com/mcp/developerisnow-claude-code-exporter"}]
+
+Based on the search results, here's what I found about Claude Code CLI chat history and conversation management:
+
+## Storage Location
+
+Claude Code saves all chats in ~/.claude/projects/ as JSONL files. Additionally, ~/.claude/history.jsonl is the index, but full conversations live in ~/.claude/projects/ organized by your project paths.
+
+## Export Options
+
+There's no built-in export feature in Claude Code itself, but there are several third-party solutions available:
+
+**Command-Line Tools:**
+- The claude-conversation-extractor tool finds Claude Code logs automatically in ~/.claude/projects and extracts Claude conversations to clean Markdown files
+
+- The claude-code-exporter can be installed globally with npm and supports multiple export modes for prompts, outputs, or full conversations in Markdown or JSON format
+
+**VS Code Extension:**
+- The Claude Code Assist extension (agsoft.claude-history-viewer) can be installed from the VS Code marketplace and provides a sidebar that shows all conversations with diffs, search, and one-click resumption
+
+**Built-in CLI Commands:**
+Within Claude Code sessions, you can use the /history command to see recent conversation history with dates, projects, topics, and session IDs
+
+For the official Claude web app (not Claude Code), users can export user information and chat history from Settings > Privacy on the web app or Claude Desktop
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

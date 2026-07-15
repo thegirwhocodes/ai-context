@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: http://wesleyanargus.com/2021/03/18/espwesso-reopens-after-year-long-hiatus/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 03:53:18 UTC
+========================================================================
+
+URL: http://wesleyanargus.com/2021/03/18/espwesso-reopens-after-year-long-hiatus/
+Extraction prompt: Extract details on Espwesso's operational structure: how do students get hired, how are they paid, is it run as a club or a business entity, does it have a health permit, who oversees it, what the chain of accountability is. Also any history of how it was founded. Quote directly.
+
+----------------------------------------
+
+# Espwesso Operational Structure
+
+Based on the article provided, the following details about Espwesso's operations are available:
+
+**Leadership & Management:**
+The cafe is managed by students, including a General Manager (Tamar Cahana '21) and Financial Manager (Shanna Henry Phillips '22). The article describes these as student-run positions.
+
+**Staffing:**
+The article does not specify hiring procedures or compensation details for staff members.
+
+**Oversight & Accountability:**
+The article references "Connecticut's Public Health Code," indicating regulatory oversight, though specific details about health permits or internal accountability chains are not provided.
+
+**Operational Challenges:**
+According to Cahana, the transition faced difficulties: "Last semester, it was just really not feasible…it just was too big of a project." The managers also noted that "our usual methods of passing down information and passing the job to the next person wasn't the smoothest transition."
+
+**Business Model:**
+The article characterizes it as "the University's student-run cafe" but does not clarify whether it operates as a club, business entity, or other structure.
+
+**Founding History:**
+No information about Espwesso's founding or historical origins is included in this article.
+
+The article lacks substantive details about hiring procedures, compensation structures, formal organizational status, and accountability chains.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

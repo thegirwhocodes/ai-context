@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://education-estimates.org/out-of-school/methods/
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:03:41 UTC
+========================================================================
+
+URL: https://education-estimates.org/out-of-school/methods/
+Extraction prompt: Extract the full Bayesian hierarchical model methodology for out-of-school estimates. What's the model specification? How is smoothing done over time? How are admin and survey discrepancies handled? How are uncertainty intervals computed? What's the imputation approach? Cite any technical papers referenced.
+
+----------------------------------------
+
+REDIRECT DETECTED: The URL redirects to a different host.
+
+Original URL: https://education-estimates.org/out-of-school/methods/
+Redirect URL: https://www.unesco.org/en/education/view/outofschool
+Status: 301 Moved Permanently
+
+To complete your request, I need to fetch content from the redirected URL. Please use WebFetch again with these parameters:
+- url: "https://www.unesco.org/en/education/view/outofschool"
+- prompt: "Extract the full Bayesian hierarchical model methodology for out-of-school estimates. What's the model specification? How is smoothing done over time? How are admin and survey discrepancies handled? How are uncertainty intervals computed? What's the imputation approach? Cite any technical papers referenced."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

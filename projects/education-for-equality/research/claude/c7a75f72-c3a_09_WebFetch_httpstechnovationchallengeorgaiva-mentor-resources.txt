@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://technovationchallenge.org/aiva-mentor-resources/
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-23 01:41:00 UTC
+========================================================================
+
+URL: https://technovationchallenge.org/aiva-mentor-resources/
+Extraction prompt: What are the specific final submission deliverables for AIVA participants at the end of the 12-week program? What does a team submit to be considered for Top 10? List every component required: pitch deck slides, demo video length, prototype/MVP, business plan format, deadline. Also describe the judging rubric.
+
+----------------------------------------
+
+# AIVA Final Submission Deliverables
+
+Based on the provided content, AIVA participants must submit three concrete deliverables by the program's end (June 14, 2026):
+
+1. **Pitch Deck**: A presentation containing "detailed notes on the business aspects of their venture, explaining how it works and why it matters."
+
+2. **Demo Video**: A "short demo video of their product or service in action, even if it is not a fully finalized version."
+
+3. **Published Platform Link**: A "link to their published app or platform, where the product or service is accessible online."
+
+## Important Limitations
+
+The webpage does not specify:
+- Exact pitch deck slide counts
+- Demo video length requirements
+- Prototype/MVP specifications
+- Formal business plan format requirements
+- Submission deadline details
+- Judging rubric criteria
+
+The page references a "Judging Rubric" document available to view, but the actual rubric content is not included in the provided text. To access detailed judging criteria and submission specifications, mentors and participants would need to consult the linked rubric document and the exclusive curriculum materials.
+
+The program emphasizes that these deliverables demonstrate "the viability of their venture and their ability to communicate it effectively."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

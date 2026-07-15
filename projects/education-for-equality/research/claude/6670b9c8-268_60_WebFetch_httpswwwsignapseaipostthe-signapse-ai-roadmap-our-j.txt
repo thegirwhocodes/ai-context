@@ -1,0 +1,56 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signapse.ai/post/the-signapse-ai-roadmap-our-journey-to-human-level-
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:06 UTC
+========================================================================
+
+URL: https://www.signapse.ai/post/the-signapse-ai-roadmap-our-journey-to-human-level-sign-language-translation
+Extraction prompt: Extract ALL details about Signapse's roadmap and journey: their progression through different technical approaches, what worked and what didn't, accuracy improvements over time, current capabilities vs targets, future plans, technical milestones. Full details.
+
+----------------------------------------
+
+# Signapse's AI Sign Language Translation Roadmap
+
+## Current Position: Tier 2
+
+Signapse has developed a **Sign Language Production Framework (SLPF)** to measure their AI signer Rae's proficiency across seven tiers. They're currently at Tier 2: "Beginning to Make Sense."
+
+**Current capabilities:**
+- Photo-realistic appearance with fluid movement
+- Some facial expressions and mouthings
+- Short phrase signing with emerging grammar application
+- Heavy reliance on English word order (Sign Supported English)
+- "100% understandability" achieved through mandatory human review by Deaf translators
+
+## Key Challenges Being Addressed
+
+The framework identifies three priority obstacles:
+1. BSL grammar structures like "topic-comment" and "role shifts"
+2. Consistent spatial positioning and directional signing
+3. Reducing dependency on manual quality checks
+
+## Roadmap Timeline
+
+**Stage 1 (Foundational) - Near-term:**
+- Grammar improvements: expected within 6 months
+- Space and direction handling: within 1-2 months
+
+**Stage 2 (Tier 3/4) - Transitional:**
+- Target: 80% understandability
+- Goal: "Full use of BSL/ASL grammar structures" independent of English
+
+**Stage 3 (Tier 5/6) - Advanced:**
+- Target: 95% understandability with instant processing
+- Goal: Near-human fluency with minimal manual intervention
+
+## Existing Success
+
+Signapse has already achieved **Tier 6 in transport**, using their digital signer Marcel for train messaging with accurate, expressive output.
+
+## Expansion Plans
+
+Following BSL mastery, they're developing American Sign Language (ASL) capabilities using the same technology framework, with plans to expand further.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

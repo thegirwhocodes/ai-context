@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: autonomous AI email agent 2026 Inbox Zero Cora Fyxer Shortwave how it works arch
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:04:43 UTC
+========================================================================
+
+Search query: autonomous AI email agent 2026 Inbox Zero Cora Fyxer Shortwave how it works architecture
+
+----------------------------------------
+
+Web search results for query: "autonomous AI email agent 2026 Inbox Zero Cora Fyxer Shortwave how it works architecture"
+
+Links: [{"title":"The Best AI Email Assistants in 2026","url":"https://www.getinboxzero.com/blog/post/best-ai-email-assistants"},{"title":"7 best email assistants in 2026 for your inbox","url":"https://www.fyxer.com/blog/best-ai-email-assistant"},{"title":"The 8 best AI email assistants in 2026: from inbox helpers to autonomous agents · Missive Blog","url":"https://missiveapp.com/blog/ai-email-assistant"},{"title":"8 Best Inbox Zero Alternatives in 2026: AI Email Tools","url":"https://www.usecarly.com/blog/inbox-zero-alternatives/"},{"title":"10 Best AI Email Automation Software Compared [Updated for 2026] | Automation | Gmelius","url":"https://gmelius.com/blog/best-ai-email-automation-software"},{"title":"7 Best Fyxer AI Alternatives in 2026 (Cheaper, Smarter Options) - Unboxd","url":"https://unboxd.ai/blog/best-fyxer-alternatives.html"},{"title":"Best AI Email Management Tools in 2026: Complete Guide - Unboxd","url":"https://unboxd.ai/blog/best-ai-email-tools.html"},{"title":"GitHub - elie222/inbox-zero: The world's best AI personal assistant for email. Open source app to help you reach inbox zero fast. · GitHub","url":"https://github.com/elie222/inbox-zero"},{"title":"7 Best AI Email Assistants in 2026 (Tested: Which Ones Actually Automate) | alfred_","url":"https://get-alfred.ai/blog/best-ai-email-assistants"},{"title":"Best Alternatives to Superhuman in 2026: Cheaper and Smarter Options - MailOver","url":"https://mailover.ai/blog/best-superhuman-alternatives.html"}]
+
+Based on the search results, here's what I found about autonomous AI email agents in 2026, including the tools you mentioned:
+
+## Overview of AI Email Agents in 2026
+
+The big shift in 2026 is from passive assistants to active agents. In 2026, an AI email assistant usually means something closer to a colleague: a system that reads incoming mail, classifies it, drafts replies grounded in your actual context, and stages everything for human review before send.
+
+## Key Tools
+
+**Shortwave**: Shortwave was created by ex-Googlers, bringing deep search and productivity expertise to email. It's a standalone inbox triage tool that's Gmail-only, offering powerful features for users who want to lean heavily on AI to send, organize, and prioritize emails. Shortwave's "Ghostwriter" AI analyzes your sent folder to learn your unique voice. When it drafts a reply, it actually sounds like you, rather than a generic robot.
+
+**Fyxer**: Fyxer starts at $18/month, and it's the only tool on this list that covers both email AI and meeting notes in a single subscription. Instead of living in your inbox all day, it screens incoming mail, drafts responses in your voice, and sends you a brief of everything else twice a day, turning email into more of a digest than a constant feed.
+
+**Cora**: It screens incoming mail, drafts responses in your voice, and sends you a brief of everything else twice a day, turning email into more of a digest than a constant feed. It's worth a look if the inbox itself is the thing you want to step away from.
+
+**Inbox Zero**: Inbox Zero is the open source option here. You can read exactly how your email is processed and self-host it, which none of the others on this list offer.
+
+## Architecture Approaches
+
+Some tools (Superhuman, Shortwave, Missive) build AI into a native email client, with full access to your inbox context, threads, contacts, and integrations. Some (Fyxer, MailMaestro) overlay on top of Gmail or Outlook through a browser extension. Some (SaneBox) sit between your inbox and your client, filtering before mail arrives.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

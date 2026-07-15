@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Twilio Nigeria toll-free number available 0800 inbound
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:16:20 UTC
+========================================================================
+
+Search query: Twilio Nigeria toll-free number available 0800 inbound
+
+----------------------------------------
+
+Web search results for query: "Twilio Nigeria toll-free number available 0800 inbound"
+
+Links: [{"title":"Toll-free Phone Number Restrictions and Limitations – Twilio Support","url":"https://support.twilio.com/hc/en-us/articles/115007579027-Toll-free-Phone-Number-Restrictions-and-Limitations"},{"title":"Toll-free & 800 numbers | Twilio","url":"https://www.twilio.com/en-us/phone-numbers/toll-free"},{"title":"Toll-free Phone Number Restrictions and Limitations","url":"https://help.twilio.com/articles/115007579027-Toll-free-phone-number-restrictions-and-limitations"},{"title":"Nigeria: SMS Guidelines | Twilio","url":"https://www.twilio.com/en-us/guidelines/ng/sms"},{"title":"Phone Numbers | Twilio","url":"https://www.twilio.com/docs/phone-numbers"},{"title":"Twilio Help Center","url":"https://help.twilio.com/articles/223179948-Does-Twilio-Support-Dialing-International-Phone-Numbers-"},{"title":"Buying a toll free number with Twilio - Twilio Help Center","url":"https://help.twilio.com/articles/223183168-Buying-a-toll-free-number-with-Twilio"},{"title":"AvailablePhoneNumber TollFree resource | Twilio","url":"https://www.twilio.com/docs/phone-numbers/api/availablephonenumber-tollfree-resource"},{"title":"Looking for a US phone number that supports both calls and sms - Questions - n8n Community","url":"https://community.n8n.io/t/looking-for-a-us-phone-number-that-supports-both-calls-and-sms/190126"},{"title":"New Phone Numbers Available in 12 Countries | Twilio","url":"https://www.twilio.com/en-us/blog/new-phone-numbers-available-in-12-countries-html"}]
+
+Based on the search results, here's what I found regarding Twilio Nigeria toll-free numbers:
+
+The search results indicate that Twilio offers local voice numbers in Nigeria, but I did not find specific information about 0800 toll-free inbound numbers being currently available through Twilio for Nigeria.
+
+The search results show that Twilio launched toll-free phone numbers in 10 new countries including Brazil, France, Germany, India, Ireland, Italy, Mexico, New Zealand, Spain, and Switzerland, but Nigeria was not mentioned in that list of countries with toll-free number support.
+
+For general context, toll-free numbers are designed to be used for domestic inbound voice calls, but availability varies by country based on local regulations.
+
+To get the most current information about whether Twilio supports 0800 toll-free numbers in Nigeria, I'd recommend:
+- Checking the Twilio Console directly or contacting Twilio support
+- Reviewing Twilio's country-specific guidelines for Nigeria
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

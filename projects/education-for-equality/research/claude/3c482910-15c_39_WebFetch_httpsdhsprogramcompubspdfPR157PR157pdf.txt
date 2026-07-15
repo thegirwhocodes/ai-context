@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dhsprogram.com/pubs/pdf/PR157/PR157.pdf
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-25 23:03:27 UTC
+========================================================================
+
+URL: https://dhsprogram.com/pubs/pdf/PR157/PR157.pdf
+Extraction prompt: Find the percentage of households owning a mobile phone in Nigeria, broken down by urban/rural and by state if available. Also look for Lagos-specific data. Report exact percentages and the table/figure numbers where they appear.
+
+----------------------------------------
+
+I apologize, but I cannot extract the specific data you're requesting from the provided content. The material appears to be a PDF file encoded in binary/compressed format, making it impossible to read the actual text content about mobile phone ownership statistics in Nigeria.
+
+To find this information, I'd recommend:
+
+1. **Accessing the original PDF directly** - Open the document in a PDF reader to view tables and figures
+2. **Checking Nigerian statistical sources** such as:
+   - National Bureau of Statistics (NBS)
+   - Nigerian Communications Commission (NCC) reports
+   - World Bank or World Health Organization datasets on Nigeria
+
+3. **Looking for specific survey reports** that may contain urban/rural breakdowns and state-level mobile phone ownership data
+
+If you can provide the extracted text content from this PDF rather than the raw file encoding, I'd be happy to locate the specific percentages and table references you need.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

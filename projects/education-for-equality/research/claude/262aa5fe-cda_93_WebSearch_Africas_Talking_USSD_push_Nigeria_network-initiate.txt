@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking USSD push Nigeria network-initiated MT-USSD server-initiated se
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:29:33 UTC
+========================================================================
+
+Search query: Africa's Talking USSD push Nigeria network-initiated MT-USSD server-initiated session
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking USSD push Nigeria network-initiated MT-USSD server-initiated session"
+
+Links: [{"title":"How do I get a USSD code in Nigeria? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2298228-how-do-i-get-a-ussd-code-in-nigeria"},{"title":"USSD API - Mobile Apps Accessible Everywhere","url":"https://africastalking.com/ussd"},{"title":"Countries supported by Africa's Talking USSD API and Pricing","url":"https://helloduty.com/blogs/countries-supported-by-africas-talking-ussd-api"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Serverless USSD with Africa’s Talking — Part 1 - BFA Global","url":"https://bfaglobal.com/insights/serverless-ussd-with-africas-talking-part-1/"},{"title":"How a 20-year old mobile technology protocol is revolutionizing Africa&#xa0;","url":"https://qz.com/africa/1296120/how-a-20-year-old-mobile-technology-protocol-is-revolutionizing-africa"},{"title":"Serverless USSD with Africa's Talking — Part 1","url":"https://medium.com/f4life/serverless-ussd-with-africas-talking-62c97ef91fdd"},{"title":"Africa’s Talking – Pricing","url":"https://africastalking.com/pricing"},{"title":"USSD API – Build mobile apps accessible everywhere | Africa’s Talking","url":"https://africastalking.com/ussd-api"},{"title":"NI USSD - Cellfind","url":"https://www.cellfind.net.za/cfp/niussd/"}]
+
+Based on the web search results, I found relevant information about Africa's Talking and USSD services in Nigeria:
+
+## Africa's Talking USSD Services in Nigeria
+
+In Nigeria, Africa's Talking offers dedicated codes and channels on their shared USSD code, which is currently connected on MTN, Airtel, Glo and 9mobile.
+
+### USSD Session Types
+
+The search results reveal information about different USSD session types:
+
+Network Initiated Unstructured Supplementary Service Data (NI USSD) is an instant message sent from a network to a mobile device, also known as MT USSD or Push USSD.
+
+NI USSD allows a company to initiate the session and send the first message to which the user can respond. This is distinct from traditional user-initiated USSD where the customer dials a code.
+
+### General USSD Platform Information
+
+Africa's Talking's USSD gateway is built to handle thousands of concurrent API requests at any one time, and they have made it easy for developers to build and deploy a USSD application within minutes.
+
+For more detailed technical documentation about network-initiated MT-USSD server-initiated sessions, I'd recommend checking Africa's Talking's official API documentation or contacting their support team directly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

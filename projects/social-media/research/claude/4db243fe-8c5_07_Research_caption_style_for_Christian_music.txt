@@ -1,0 +1,177 @@
+========================================================================
+AGENT RESEARCH: Research caption style for Christian music
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-17 21:42:29 UTC
+========================================================================
+
+Research the best caption/subtitle style for Christian worship/guitar music videos on social media (Instagram Reels, YouTube Shorts, TikTok).
+
+Web search for:
+- "best caption style for worship music videos"
+- "christian music video captions instagram"
+- "subtle captions for music videos"
+- "lyrics caption style acoustic guitar"
+- "worship song lyric video style social media"
+
+I need to understand:
+1. What caption styles work best for emotional/spiritual music content where you DON'T want captions to overpower the music
+2. What fonts, colors, and positioning are most popular for this genre
+3. How lyrics are typically displayed (word-by-word vs line-by-line vs phrase-by-phrase)
+4. Opacity, size, and animation preferences for music-first content
+5. Examples of successful Christian music creators and their caption approaches
+6. The difference between "viral attention-grabbing" captions vs "lyric video" style captions and which is better for worship/acoustic content
+
+Return specific technical recommendations: font names, hex colors, opacity percentages, positioning, animation timing, etc.
+
+----------------------------------------
+
+Here is a comprehensive research report with specific technical recommendations:
+
+---
+
+## Caption/Subtitle Style for Christian Worship & Guitar Music Videos on Social Media
+
+### 1. Caption Style Philosophy: Music-First vs. Attention-Grabbing
+
+There are two distinct approaches, and for worship/acoustic content, the research strongly favors the **aesthetic lyric video style** over the "viral attention-grabbing" caption style:
+
+| Approach | Best For | Characteristics |
+|---|---|---|
+| **Viral/Attention-Grabbing** (Hormozi-style) | Talking head, educational, high-energy content | Bold, large, colored, word-by-word pop with zoom effects, high contrast backgrounds |
+| **Aesthetic Lyric Video** (recommended for worship) | Emotional, spiritual, music-first content | Soft fade-ins, muted tones, clean fonts, line-by-line reveals, lower opacity |
+
+Lyric videos drive **emotional connection and shareability** -- viewers save and share them because they relate personally to the words. Meanwhile, 85% of social media videos are watched on mute, making some form of on-screen lyrics essential even for music content.
+
+### 2. Font Recommendations (Specific Names)
+
+**Top tier for worship/acoustic content:**
+- **CMG Sans** -- purpose-built for worship lyrics, free to download from Church Motion Graphics, works across all applications
+- **Open Sans** -- highly readable, clean, works on any background
+- **Montserrat** -- the most-used font in lyric/caption videos (used in ~60% of the 2 million videos analyzed by Submagic)
+
+**Secondary options depending on mood:**
+- **Lora** or **Playfair Display** -- serif fonts that add tradition/warmth for hymns or reflective worship
+- A clean **handwritten font** (e.g., Sacramento, Dancing Script) -- for intimate acoustic/unplugged feel, use sparingly
+- **Bebas Neue** -- tall, narrow, modern look for more contemporary worship
+- **Raleway** -- elegant sans-serif, good for a refined aesthetic
+
+**Avoid:** Impact, Gotham Bold, overly decorative/script fonts that sacrifice readability. Overly thin fonts also cause readability issues on small mobile screens.
+
+### 3. Colors and Contrast (Hex Values)
+
+**Primary text color:**
+- **White `#FFFFFF`** -- the universal standard for lyrics over video. Works on virtually any background.
+
+**Text shadow/outline for readability:**
+- **Black drop shadow at 40-60% opacity** (`#000000` at 0.4-0.6 alpha) -- softens the shadow so it doesn't look harsh but ensures readability against bright backgrounds
+- Alternatively, a **soft dark text glow/outline** of 1-2px
+
+**Accent color options for worship genre (use sparingly, e.g., for highlighted words):**
+- Warm gold: `#D4A853` or `#C9A96E`
+- Soft cream/warm white: `#F5F0E8`
+- Muted dusty rose: `#C4A4A0` (for intimate/reflective mood)
+- Soft sky blue: `#A8C4D4` (for praise/hope themes)
+
+**Background overlay (if used behind text):**
+- Semi-transparent black bar: `#000000` at **20-30% opacity** (much lower than the 70-80% used for talking-head content -- you want the visual/performance to show through)
+
+### 4. Lyrics Display Method
+
+**For worship/acoustic content: Line-by-line or phrase-by-phrase is recommended over word-by-word.**
+
+- **Line-by-line fade-in**: Entire lines appear and disappear smoothly. This is the gentler approach, perfect for ballads and slower worship songs. It feels contemplative rather than frenetic.
+- **Phrase-by-phrase**: 3-6 words at a time, synced to natural vocal phrasing. A good middle ground.
+- **Word-by-word highlight**: Better for upbeat praise songs where you want dynamic energy. Each word appears or highlights timed to vocals.
+
+**Key stat**: Precisely synced lyrics show up to a **60% jump in fan engagement** versus unsynchronized or absent lyrics.
+
+**Recommendation for acoustic worship**: Use **phrase-by-phrase** (matching natural vocal breath groups), with a **soft fade-in** transition. Limit to **1-2 lines on screen** at any time to avoid clutter.
+
+### 5. Opacity, Size, and Positioning
+
+**Opacity:**
+- Text opacity: **85-95%** (slightly less than full white to feel softer/more integrated with the visual)
+- If using a text background bar: **15-25% opacity** black
+- Drop shadow: **40-60% opacity**
+
+**Font size (relative to 1080x1920 vertical frame):**
+- Primary lyrics: **42-56px** (large enough to read on mobile but not overpowering)
+- Secondary text (song title/artist credit): **24-32px**
+- Never go below 36px for lyrics on mobile -- readability drops significantly
+
+**Positioning:**
+- **Lower third** (bottom 33% of screen) -- the standard for worship lyric projection and music content. Places the text below the visual action (your hands on guitar, your face).
+- **Center-bottom** is the sweet spot -- vertically about 70-80% down the frame
+- Keep text horizontally centered with comfortable margins (at least 10% padding from screen edges)
+- Limit to **2 lines maximum** to avoid clutter
+
+### 6. Animation and Timing
+
+**Recommended transitions for worship content:**
+- **Fade in / Fade out (soft dissolve)**: 300-500ms fade duration. This is the most appropriate for contemplative/spiritual content.
+- Avoid: pop-in, bounce, zoom, shake, or any "punchy" animation -- these feel jarring against acoustic/worship music
+- A gentle **slide-up** (moving 10-20px upward while fading in over 400ms) adds subtle motion without distraction
+
+**Timing specifics:**
+- Lyrics should appear **0.1-0.2 seconds before** the vocal begins (gives the viewer time to start reading)
+- Lyrics should linger **0.3-0.5 seconds after** the vocal phrase ends before fading out
+- Between phrases, allow a brief **0.5-1.0 second gap** with no text on screen -- this breathing room is important for worship content, letting the music sit
+- Transition duration: **~500ms** (half a second) -- fast enough not to feel sluggish but slow enough to feel smooth and intentional
+
+### 7. Successful Creator Approaches
+
+Successful Christian worship/music creators on social media tend to:
+- Show the **performance first** (guitar playing, singing) with lyrics as a supporting overlay, not the focus
+- Use **clean, minimal aesthetic** -- the video itself (warm tones, natural lighting) does the emotional heavy lifting
+- Post lyrics in the **description/caption** as well, expanding on the meaning to encourage community discussion
+- Post **4-7 Reels per week** for algorithmic reach
+- Pair lyric captions with a question or reflection prompt in the post caption (e.g., "This line changed everything for me -- has a song ever spoken to you like that?")
+
+### 8. Summary: Technical Spec Sheet
+
+| Parameter | Recommendation |
+|---|---|
+| **Font** | CMG Sans, Open Sans, or Montserrat |
+| **Font weight** | Regular or Medium (not Bold, not Light) |
+| **Font size** | 42-56px on 1080x1920 canvas |
+| **Text color** | White `#FFFFFF` at 90% opacity |
+| **Drop shadow** | Black `#000000`, 40-50% opacity, 2-4px offset, 4-6px blur |
+| **Text background** | Optional, black at 20% opacity with rounded corners |
+| **Position** | Center-bottom, ~75% down the frame |
+| **Max lines** | 2 |
+| **Display mode** | Phrase-by-phrase (3-6 words per unit) |
+| **Fade in** | 400ms soft dissolve |
+| **Fade out** | 400ms soft dissolve |
+| **Pre-roll** | Lyrics appear 150ms before vocal |
+| **Post-hold** | Lyrics linger 400ms after vocal ends |
+| **Gap between phrases** | 500-800ms empty screen |
+| **Accent highlight** | Warm gold `#D4A853` on key emotional words (optional) |
+
+---
+
+Sources:
+- [OpusClip - Video Caption Design & Placement Best Practices](https://www.opus.pro/blog/video-caption-design-placement)
+- [CMG - Lower Thirds for Worship](https://www.churchmotiongraphics.com/blog/a-guide-to-lower-thirds-enhancing-the-worship-experience-with-seamless-on-screen-text/)
+- [CMG Sans - Free Worship Lyric Font](https://www.churchmotiongraphics.com/cmg-sans/)
+- [CMG - 7 Popular Typefaces for Worship Lyric Projection](https://www.churchmotiongraphics.com/blog/7-popular-typefaces-for-worship-lyric-projection/)
+- [The Creative Pastor - Six Great Fonts for Worship Lyrics](https://www.thecreativepastor.com/six-surprisingly-great-fonts-to-use-for-worship-lyrics/)
+- [Submagic - 15 Best Fonts for Subtitles & Captions](https://www.submagic.co/blog/best-font-for-subtitle)
+- [Async - Best Font for Captions: 7 Trending Fonts](https://async.com/blog/the-best-font-for-captions/)
+- [Wondershare Virbo - Best Fonts for Lyric Video](https://virbo.wondershare.com/ai-subtitle-generator/fonts-for-lyric-video.html)
+- [Filmora - Best Fonts for Music Videos and Lyric Edits](https://filmora.wondershare.com/customize-video/font-for-music-video.html)
+- [3Play Media - Closed Caption Styling Best Practices](https://www.3playmedia.com/blog/closed-caption-styling-formatting-best-practices-you-need-to-know/)
+- [Kapwing - Social Media Caption Styles Guide](https://www.kapwing.com/resources/social-media-captions-styles-a-complete-guide/)
+- [iMusician - Viral Reels for Musicians 2026](https://imusician.pro/en/resources/blog/viral-reels-for-musicians)
+- [Churchfluence - 12 Church Instagram Reels Ideas](https://www.churchfluence.com/learn/12churchreelideas)
+- [MediaShout - 9 Easy to Read Fonts for Worship](https://mediashout.com/9-easy-to-read-fonts-for-worship-presentation-software/)
+- [MyKaraoke - How to Create Engaging Music Video Lyrics](https://www.mykaraoke.video/blog/music-video-lyrics)
+- [CapCut - How to Make Lyrical Reels on Instagram](https://www.capcut.com/resource/how-to-make-lyrical-reels-on-instagram)
+- [Best Font for Worship Music Videos Guide](https://texttofont.com/blogs/the-best-font-for-worship-music-video-a-complete-guide)
+agentId: a3e36770cbee8691b (use SendMessage with to: 'a3e36770cbee8691b' to continue this agent)
+<usage>total_tokens: 21780
+tool_uses: 12
+duration_ms: 145997</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

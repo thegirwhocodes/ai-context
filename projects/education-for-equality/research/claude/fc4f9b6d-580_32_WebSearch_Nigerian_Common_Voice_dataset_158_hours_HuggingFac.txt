@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigerian Common Voice dataset 158 hours HuggingFace benjaminogbonna download TTS
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 09:22:43 UTC
+========================================================================
+
+Search query: Nigerian Common Voice dataset 158 hours HuggingFace benjaminogbonna download TTS
+
+----------------------------------------
+
+Web search results for query: "Nigerian Common Voice dataset 158 hours HuggingFace benjaminogbonna download TTS"
+
+Links: [{"title":"benjaminogbonna/nigerian_common_voice_dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset"},{"title":"benjaminogbonna/nigerian_accented_english_dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/benjaminogbonna/nigerian_accented_english_dataset"},{"title":"benjaminogbonna/tts_demo_models · Hugging Face","url":"https://huggingface.co/benjaminogbonna/tts_demo_models"},{"title":"Mozilla Common Voice dataset","url":"https://commonvoice.mozilla.org/en/datasets"},{"title":"Nigerian Common Voice Dataset: A Multilingual Speech ...","url":"https://www.linkedin.com/posts/benjamin-ogbonna_building-on-the-previous-work-im-excited-activity-7310697687375343618-k7UD"},{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"benjaminogbonna/whisper-tiny-for-nigerian-common-languages · Hugging Face","url":"https://huggingface.co/benjaminogbonna/whisper-tiny-for-nigerian-common-languages"},{"title":"mozilla-foundation/common_voice_13_0 · Datasets at Hugging Face","url":"https://huggingface.co/datasets/mozilla-foundation/common_voice_13_0"},{"title":"mozilla-foundation/common_voice_9_0 · Datasets at Hugging Face","url":"https://huggingface.co/datasets/mozilla-foundation/common_voice_9_0"},{"title":"legacy-datasets/common_voice · Datasets at Hugging Face","url":"https://huggingface.co/datasets/legacy-datasets/common_voice"}]
+
+Based on the search results, here's what I found about the Nigerian Common Voice dataset:
+
+## Dataset Overview
+
+The dataset currently consists of 158 hours of audio recordings in 4 languages. This dataset is specifically curated to address the gap in speech and language datasets for African accents, making it a valuable resource for researchers and developers working on Automatic Speech Recognition (ASR), Speech-to-text (STT), Text-to-Speech (TTS), Accent recognition, and Natural language processing (NLP) systems.
+
+## How to Download
+
+The dataset can be downloaded and prepared in one call to your local drive by using the load_dataset function. To download the Igbo config, simply specify the corresponding language config name (i.e., "igbo" for Igbo): from datasets import load_dataset dataset = load_dataset("benjaminogbonna/nigerian_common_voice_dataset", "igbo", split="train")
+
+## Background
+
+The creators were working on a speech to speech (stt & tts) conversational model for Nigeria languages, but along the way they had a bottleneck: The few data (audio) available were scattered and from different sources (Kaggle, Hugging Face, and many other websites). They gathered them into one repository, structured them, cleaned them (remove/edit wrong transcriptions), and trimmed most of them to 30 seconds chunks.
+
+The dataset is hosted on Hugging Face at: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

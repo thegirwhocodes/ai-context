@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Calendly complaints pain points why people switch alternatives
+Session: 53755257-7d3a-471d-9294-085caf5ec916
+Time: 2026-03-29 20:40:20 UTC
+========================================================================
+
+Search query: Calendly complaints pain points why people switch alternatives
+
+----------------------------------------
+
+Web search results for query: "Calendly complaints pain points why people switch alternatives"
+
+Links: [{"title":"10 Best Calendly Alternatives I tested in Jan 2026","url":"https://lunacal.ai/compare/calendly-alternative"},{"title":"Calendly Pros And Cons Explained: A Thorough Review - Zeeg","url":"https://zeeg.me/en/blog/post/calendly-pros-and-cons-review"},{"title":"Calendly Alternatives: The Complete Guide For 2024 | Cal.com - Open Scheduling Infrastructure","url":"https://cal.com/blog/calendly-alternatives-the-complete-guide-for-2024"},{"title":"15 Best Calendly Alternatives in 2025 (Free & Paid Tools)","url":"https://sumoscheduler.com/blog/best-calendly-alternatives/"},{"title":"11 Best Calendly Alternatives: Your Go-To List for 2026","url":"https://youcanbook.me/compare/calendly-alternatives"},{"title":"The Complete Calendly Alternatives List | Free plans, Pricing, Features, Find what fits you","url":"https://www.spectroomz.com/calendly-alternatives"},{"title":"10 Best Calendly Alternatives in 2026 Compared | Cal.com - Scheduling Software for Online Bookings","url":"https://cal.com/blog/best-calendly-alternatives"},{"title":"8 Powerful Calendly Alternatives to Improve Time Management","url":"https://www.emailtooltester.com/en/blog/calendly-alternatives/"},{"title":"Top Calendly Competitors & Alternatives 2026 | Gartner Peer Insights","url":"https://www.gartner.com/reviews/market/scheduling-automation-software/vendor/calendly/product/calendly/alternatives"},{"title":"Compare Calendly to the competition & evaluate alternatives | Calendly","url":"https://calendly.com/compare"}]
+
+Based on the search results, here are the main complaints and pain points driving people to switch away from Calendly:
+
+## Pricing & Scalability Issues
+
+Users cite Calendly's per-seat pricing model as the primary factor driving their switch, becoming expensive quickly as teams grow. Calendly's cost can quickly add up, especially when you have a large team and need to pay a separate fee for every user.
+
+## Limited Customization
+
+While Calendly covers the basics well, teams that need custom flows, advanced routing, conditional logic, or tailored booking rules often hit a ceiling quickly. Users needing more granular control over their scheduling workflows may find Calendly's customization options lacking, with branding capabilities like custom CSS, branded booking pages, or white-label solutions either limited or unavailable unless opting for the most expensive plans.
+
+## Missing Business Features
+
+Payment integration is a main reason people pick alternatives like Acuity over Calendly in practice. Teams move beyond Calendly because it lacks built-in meeting features, note taking, summaries, CRM workflows, complex routing, and real-time AI appointment scheduling.
+
+## Apple Calendar Integration Removal
+
+Calendly no longer supports iCloud Calendar integration for new users, which is problematic for people deeply invested in Apple who manage their schedule mainly through Apple Calendar.
+
+## Customer Support Issues
+
+Support concerns drive users to explore alternatives, as Calendly's growing user base has led some customers to report slow response times, generic troubleshooting, or difficulty resolving billing and technical issues, particularly for those on lower-tier plans. People report long waits, unhelpful replies, and billing headaches like unexpected charges or blocked refunds.
+
+## Data Ownership Concerns
+
+As a closed-source platform, you're entirely dependent on Calendly's infrastructure, and some brands prefer self-hosted solutions as they let them control their data entirely.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

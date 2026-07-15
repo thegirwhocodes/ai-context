@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.eventbrite.com/e/mit-sloan-africa-innovate-conference-2026-tickets-1
+Session: 089265f6-4bf8-426a-96dc-cfa234d1df07
+Time: 2026-02-26 19:06:07 UTC
+========================================================================
+
+URL: https://www.eventbrite.com/e/mit-sloan-africa-innovate-conference-2026-tickets-1972616594335
+Extraction prompt: Extract hackathon details: exact schedule, registration deadline, team size, what needs to be demoed, submission format, mentors, and any other participation requirements.
+
+----------------------------------------
+
+# MIT Sloan Africa Innovate Conference 2026 - Hackathon Details
+
+Based on the webpage content provided, here's what is specified about the hackathon:
+
+## Available Information
+
+**Duration:** "a 24-hour hackathon focused on solving real African challenges" is mentioned as part of the conference programming.
+
+**Event Context:** The hackathon occurs within a broader 48-hour conference space running Saturday, February 28, 2026, from 8 AM to 6 PM at MIT Wong Auditorium in Cambridge, MA.
+
+## Missing Details
+
+The webpage does not provide specific information about:
+- Exact hackathon schedule/start and end times
+- Registration deadline
+- Team size requirements or limits
+- Specific deliverables or demo requirements
+- Submission format specifications
+- Mentor assignments or availability
+- Other participation requirements (eligibility, experience level, etc.)
+
+## Recommendation
+
+To obtain complete hackathon details, you would need to contact the MIT Sloan Student Life Office directly or visit any supplementary event pages or registration materials associated with the conference.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

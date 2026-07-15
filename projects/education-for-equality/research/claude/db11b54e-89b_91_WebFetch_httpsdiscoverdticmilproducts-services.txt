@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://discover.dtic.mil/products-services/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:49 UTC
+========================================================================
+
+URL: https://discover.dtic.mil/products-services/
+Extraction prompt: List all the DTIC products and services available to the public. Specifically find: any APIs or programmatic access methods, the structure of accession numbers, how full-text PDFs can be retrieved, and what subject categories are available for Army/personnel/admin/regulation topics.
+
+----------------------------------------
+
+# DTIC Public Products and Services
+
+Based on the provided webpage content, here's what's available to the public:
+
+## Publicly Available Collections
+
+1. **DoW S&T Reports** – Search completed science and technology reports
+2. **DTIC Public Access Search** – Peer-reviewed scholarly publications from DoD and ODNI/IARPA-funded research
+3. **DoW Grant Awards** – Descriptive abstracts of public, unclassified grant awards
+4. **DoW Information Analysis Centers** – Technical data and analysis resources
+5. **Defense Innovation Marketplace** – Industry-DoD research connections
+6. **Corporate Source Authority System** – Directory of contributing organizations
+7. **NDIA Conference Proceedings** – Defense conference materials
+8. **DTIC Thesaurus** – "Multi-disciplinary subject terms organized and linked to broader terms"
+9. **Section 809 Panel Reports**
+
+## Information Not Provided
+
+The webpage content does **not specify**:
+- APIs or programmatic access methods
+- Accession number structure
+- PDF retrieval procedures
+- Specific subject categories for Army/personnel/admin/regulation topics
+
+The document notes that accessing full technical details requires either the public search tools listed or signing in with appropriate credentials (CAC, PIV card, or ECA) for controlled collections.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

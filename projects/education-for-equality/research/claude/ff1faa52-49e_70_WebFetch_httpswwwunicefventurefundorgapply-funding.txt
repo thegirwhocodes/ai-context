@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.unicefventurefund.org/apply-funding
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 00:48:15 UTC
+========================================================================
+
+URL: https://www.unicefventurefund.org/apply-funding
+Extraction prompt: What are all the current open calls for funding? Is there an AI or education-specific call? What are the eligibility criteria? What countries are eligible? List all open opportunities.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

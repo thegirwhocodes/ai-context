@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/handle_calls
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 20:58:50 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/handle_calls
+Extraction prompt: I need the EXACT specification for the <Record> XML element in Africa's Talking Voice API, [REDACTED:sensitive-label] the PARTIAL recording (the one with finishOnKey that records a snippet and continues the call, used for conversational IVR). Answer precisely: (1) Does the partial <Record> element take a callbackUrl attribute? What is the EXACT casing/spelling (callbackUrl vs callBackUrl)? (2) After the partial recording finishes, where does AT POST the recordingUrl — to the callbackUrl on the Record element, or back to the main voice callback URL configured on the phone number? (3) Must the prompt (Play or Say) be placed INSIDE the <Record> element as a child, or can it be a separate <Play> element BEFORE a self-closing <Record/>? Show the exact example XML from the docs for partial recording. (4) What field name does AT use to send the recording URL in the POST body? Quote the docs verbatim where possible.
+
+----------------------------------------
+
+I appreciate your detailed question, but I must be transparent: **the web page content provided contains only the title "Documentation | Africa's Talking" with no actual specification details**.
+
+To answer your precise technical questions about:
+1. The `callbackUrl` attribute casing and existence
+2. Where recording URLs are POSTed for partial recordings
+3. XML structure requirements (nested vs. separate elements)
+4. The exact field name for recording URLs in POST bodies
+
+**I would need access to the actual Africa's Talking Voice API documentation**, not just the page title.
+
+I cannot generate or guess technical specifications, as providing inaccurate API documentation could lead to failed implementations. I recommend:
+
+- Visiting the full Africa's Talking Voice API documentation directly
+- Checking their GitHub repository for example code
+- Contacting their support team for clarification on partial recording specifications
+
+I apologize I cannot fulfill this request with the content available to me.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

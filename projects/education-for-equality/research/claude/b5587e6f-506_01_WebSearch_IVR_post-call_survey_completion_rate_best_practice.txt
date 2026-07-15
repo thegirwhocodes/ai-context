@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: IVR post-call survey completion rate best practices when to ask feedback in-call
+Session: b5587e6f-5062-42da-aa0f-3cbcf946cb06
+Time: 2026-07-07 19:57:38 UTC
+========================================================================
+
+Search query: IVR post-call survey completion rate best practices when to ask feedback in-call vs end of call
+
+----------------------------------------
+
+Web search results for query: "IVR post-call survey completion rate best practices when to ask feedback in-call vs end of call"
+
+Links: [{"title":"IVR Surveys Best Practices: How to Automate Customer Feedback IVR","url":"https://synthflow.ai/blog/ivr-surveys"},{"title":"Top 10 Best Practices for Optimising Post-Call Interaction Surveys Using IVR | Verint","url":"https://www.verint.com/blog/top-10-best-practices-for-optimising-post-call-interaction-surveys-using-ivr/"},{"title":"How to Take Charge of your IVR Surveys","url":"https://www.callcentrehelper.com/how-to-take-charge-of-your-ivr-surveys-42072.htm"},{"title":"IVR Survey Success: Best Practices for Actionable Insights | Vonage","url":"https://www.vonage.com/resources/articles/ivr-survey/"},{"title":"Top 10 Best Practices for Optimizing Post-Call Interaction Surveys Using IVR","url":"https://www.verint.com/blog/top-10-best-practices-for-optimizing-post-call-interaction-surveys-using-ivr/"},{"title":"11 best practices for creating effective call center IVR surveys","url":"https://www.talkdesk.com/blog/12-best-practices-for-creating-effective-call-center-ivr-surveys/"},{"title":"The Pros and Cons of Post Call IVR Surveys - Genroe B2B CX and NPS","url":"https://www.genroe.com/blog/post-call-ivr-surveys-popular-but-not-that-useful/8447"},{"title":"The Pros and Cons of Post Call IVR Surveys","url":"https://www.genroe.com/blog/post-call-ivr-surveys-popular-but-not-that-useful"},{"title":"IVR Survey Best Practices: Expert Tips to Boost Response Rates","url":"https://sigmavoice.com/ivr-survey-best-practices"}]
+
+Based on the search results, here are the key findings on IVR post-call survey completion rates and best practices for timing:
+
+## Completion Rates
+
+Post-call voice surveys can get up to 35% response rate, which is 3 times higher than online surveys sent via email. Some organizations report even higher results: clients normally achieve around a 92% survey completion rate and a 20-25% survey acceptance rate.
+
+However, it's important to note that the completion rate being high is often the completion rate for people who agree to be surveyed, so overall response rates may be lower.
+
+## When to Ask: In-Call vs. End of Call
+
+Two recommended approaches are: asking customers if they'd like to leave feedback at the end of the call and directing them to the IVR survey if they agree, or providing a recorded message at the beginning of the call letting customers know they'll have an opportunity to leave feedback after the call ends.
+
+## Key Best Practices
+
+- **Timing of questions:** Completion rates drop dramatically after the two-minute mark, so start with your most important questions as many respondents abandon surveys partway through.
+
+- **Survey length:** It's recommended to limit IVR surveys to 3–5 questions and keep the total duration under 2–3 minutes.
+
+- **Fresh context:** The key benefit to post-call IVR surveys is timing, as the interaction with the agent is still fresh in the customer's mind.
+
+- **Question types:** Ask more than just quantitative questions, as while numerical ratings are important, it's difficult to understand why a customer gave a low rating if you don't allow them to explain in their own words.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

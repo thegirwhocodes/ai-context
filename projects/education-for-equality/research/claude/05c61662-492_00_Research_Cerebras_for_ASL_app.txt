@@ -1,0 +1,117 @@
+========================================================================
+AGENT RESEARCH: Research Cerebras for ASL app
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 03:39:39 UTC
+========================================================================
+
+Research Cerebras (the AI chip/inference company) and whether it could help reduce latency in a real-time ASL translation app. The app currently uses:
+- MediaPipe Holistic for keypoint extraction (~5ms)
+- Angle-based DTW for sign matching
+- TGCN model (300 signs) for recognition
+- Claude Haiku API for assembling ASL gloss into English sentences (~200-500ms, biggest bottleneck)
+- Whisper (tiny, CPU) for speech-to-text
+- Edge TTS for text-to-speech
+
+The app runs locally on an M1 MacBook. The user wants to know:
+1. What is Cerebras and what do they offer (inference API, hardware, etc.)?
+2. Could Cerebras reduce latency for any of these components?
+3. How does Cerebras inference compare to Claude Haiku for the sentence assembly task?
+4. Are there other ways to reduce latency in this pipeline?
+5. Is Cerebras free/cheap enough for a hackathon project?
+
+Give a thorough but concise answer. Include pricing if available. Be honest about what would actually help vs what's hype.
+
+----------------------------------------
+
+## Summary: Cerebras for ASL Translation Latency Reduction
+
+Based on my research, here's a thorough analysis of whether Cerebras could help your ASL translation app:
+
+### 1. What is Cerebras?
+
+Cerebras is a hardware/inference company that built the Wafer-Scale Engine (WSE), a massive single-chip processor optimized for AI inference. They operate a cloud inference service offering OpenAI-compatible API access to models like Llama, Mistral, Qwen, and others. Key claim: **up to 75x faster inference than GPU-based hyperscaler clouds**.
+
+### 2. Could Cerebras Reduce Latency in Your Pipeline?
+
+**Short answer: Not for most of your components, but potentially for the sentence assembly bottleneck.**
+
+Here's the breakdown:
+
+- **MediaPipe Holistic (5ms)** - Already local and optimal. No benefit.
+- **Angle-based DTW/TGCN (300 signs)** - Local on M1, already optimized. No benefit.
+- **Whisper tiny (CPU)** - Local inference, already as fast as it gets. No benefit.
+- **Claude Haiku for sentence assembly (200-500ms)** - This is your bottleneck. **Potential improvement here.**
+- **Edge TTS** - Local and fast. No benefit.
+
+### 3. Cerebras vs Claude Haiku for Sentence Assembly
+
+This is where it gets interesting:
+
+**Latency comparison:**
+- Claude 3/3.5 Haiku: ~500-550ms time-to-first-token
+- Llama 3.1 8B on Cerebras: ~240-280ms time-to-first-token (nearly 2x faster)
+- Throughput: Llama 3.1 8B via Cerebras: ~2,600 tokens/sec vs Claude Haiku: ~133 tokens/sec
+
+**The reality:** For your specific task (gloss→English sentence assembly, which is probably <100 tokens), Cerebras-hosted Llama 3.1 8B could reduce this bottleneck from 200-500ms to ~280-400ms, shaving ~100-200ms off. That's meaningful but not transformative.
+
+**Key caveat:** You'd need to test whether Llama 3.1 8B performs as well as Claude Haiku at the specific task of converting ASL gloss notation to fluent English. Claude Haiku is specifically trained to be concise and accurate; Llama may need prompt engineering.
+
+### 4. Other Ways to Reduce Latency (More Impactful)
+
+The research suggests better alternatives:
+
+**Pipeline parallelization** (biggest win):
+- Currently: sequentially pipe MediaPipe → DTW → TGCN → Claude → TTS
+- Better: Stream results as they arrive. Start TTS preparation while Claude is still thinking.
+- Research shows this can reduce end-to-end latency from 4s to under 800ms.
+
+**Model optimization:**
+- Quantize your TGCN model (FP32 → INT8) for ~2x speedup with <1% accuracy loss
+- Consider a smaller language model fine-tuned on ASL→English (e.g., Mistral 7B instead of Claude Haiku)
+
+**Groq vs Cerebras for real-time:**
+- **Groq** is actually better for your use case: designed specifically for low latency (<100ms TTFT) with smaller models
+- **Cerebras** optimizes for throughput on large models (not your bottleneck)
+- Groq's deterministic execution is more predictable for real-time apps
+
+**Local-first approach (not mentioned in your stack):**
+- Try a smaller local model like Mistral 7B quantized on the M1 (likely <200ms)
+- This eliminates network latency entirely and costs nothing
+
+### 5. Pricing & Hackathon Viability
+
+**Cerebras is cheap but not ideal for hackathons:**
+- Free tier: **1M tokens/day, 30 requests/min** - fine for initial prototyping
+- Paid: $0.10/million tokens for Llama 3.1 8B (very cheap)
+- For continuous testing during a hackathon, the free tier might be tight
+
+**Better for hackathons:**
+- Groq free tier is more generous for latency-sensitive testing
+- Or use a quantized local model on M1 (zero cost, zero network latency)
+
+### The Honest Take
+
+**What would actually help:**
+1. **Pipeline parallelization** (run TTS setup while Claude is thinking) = likely 100-300ms savings
+2. **Local language model** (Mistral 7B or similar, quantized) = eliminate API latency entirely, ~300-400ms vs current 200-500ms
+3. **Model optimization** (INT8 quantization on TGCN) = small but free win
+
+**What's hype:**
+- Cerebras is genuinely fast, but it optimizes for throughput, not latency-sensitive real-time applications
+- For sentence assembly (probably 50-100 tokens), the speed advantage matters less than time-to-first-token, and you still pay network roundtrip
+
+**Recommendation:** Skip Cerebras for now. Try Groq's free tier or a local quantized Mistral 7B for your sentence assembly task. The pipeline parallelization opportunity is your biggest lever.
+
+Sources:
+- [Cerebras Pricing](https://www.cerebras.ai/pricing)
+- [Cerebras Inference Review 2026](https://theplanettools.ai/tools/cerebras-inference)
+- [Cerebras Free Tier](https://pricepertoken.com/endpoints/cerebras/free)
+- [Cerebras vs Groq Comparison](https://www.cerebras.ai/blog/cerebras-cs-3-vs-groq-lpu)
+- [Cerebras Performance Records](https://www.cerebras.ai/press-release/cerebras-launches-the-worlds-fastest-ai-inference)
+- [Claude Haiku vs Llama Comparison](https://www.vellum.ai/comparison/claude-3-haiku-vs-llama-3-1-8b)
+- [Real-Time ASL Translation Research](https://www.mdpi.com/1424-8220/25/7/2138)
+- [Groq vs Cerebras for Real-Time Applications](https://dev.to/mayu2008/best-llm-inference-providers-groq-vs-cerebras-which-is-the-fastest-ai-inference-provider-lap)
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

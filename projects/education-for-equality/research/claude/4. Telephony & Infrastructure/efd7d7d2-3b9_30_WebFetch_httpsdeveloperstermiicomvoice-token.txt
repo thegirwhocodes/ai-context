@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.termii.com/voice-token
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:55:46 UTC
+========================================================================
+
+URL: https://developers.termii.com/voice-token
+Extraction prompt: Extract all details about the voice token API - endpoints, parameters, capabilities, and how it differs from the voice call API.
+
+----------------------------------------
+
+I appreciate your request, but I need to be transparent: the webpage content provided appears to be primarily CSS styling, normalize.css, and Tailwind utility classes. It contains no actual documentation about a "voice token API" or "voice call API."
+
+The content is essentially the compiled stylesheet and layout framework for what appears to be a Termii developer documentation site, but the substantive API documentation content itself is not included in what was provided.
+
+**To properly extract voice API details, I would need:**
+- Actual endpoint documentation (route paths, HTTP methods)
+- Parameter specifications and request/response schemas
+- Authentication requirements
+- Usage examples or code samples
+- Comparative information between different API types
+
+**My recommendation:** Please provide the actual API documentation page content rather than the CSS/styling layer, and I'll be happy to extract and summarize the voice token API specifications according to your guidelines.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

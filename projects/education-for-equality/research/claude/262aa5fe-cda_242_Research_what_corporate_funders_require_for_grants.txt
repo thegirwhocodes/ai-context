@@ -1,0 +1,76 @@
+========================================================================
+AGENT RESEARCH: Research what corporate funders require for grants
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-06 17:32:40 UTC
+========================================================================
+
+I'm helping Naomi Ivie, founder of Education for Equality (501c3 nonprofit in the US, incorporated in Connecticut, EIN obtained, 501c3 Form 1023-EZ NOT yet filed, Nigerian CAC registration pending). She wants to be ready to receive grants from big corporate/foundation funders. Nigerian incorporation is delayed — she's focusing on US-side legal/IP first.
+
+Do deep research on what the major child-education-focused funders actually require for due diligence. Return AT LEAST 90% of the substantive content. Do NOT summarize. Return exact required documents, application thresholds, policy requirements, and specific URLs.
+
+Cover each of these funders in depth:
+
+1. **Mastercard Foundation** — specifically the Mastercard/CcHUB EdTech Fellowship ($100K Nigeria) AND the broader Mastercard Foundation Scholars/Young Africa Works programs. What's the required documentation for application? Do they accept early-stage organizations without 501c3 determination letter (just incorporation + EIN)? Or do they require IRS determination? Do they accept fiscal sponsors? What policies must the org have in place (child safeguarding, conflict of interest, etc.)?
+
+2. **Bill & Melinda Gates Foundation** — what's their grant application process? Do they accept LOIs from organizations without 501c3 determination? What's the standard list of required documents? What policies?
+
+3. **UNICEF Venture Fund** — they reportedly fund pre-revenue ventures with $100K in crypto. What's the required org structure? Do they accept early-stage orgs without 501c3? They take equity-free positions?
+
+4. **CcHUB Mastercard EdTech Fellowship 2026** — Nigerian-specific. Requirements: legally incorporated, majority Nigerian-owned, working solution, feasible pilot plan. What's the actual application form? What documents do they ask for? Is "majority Nigerian-owned" an absolute blocker for a Connecticut-incorporated nonprofit, or is there a workaround (e.g., Nigerian co-founder, Nigerian subsidiary, etc.)?
+
+5. **Generic US corporate giving requirements** — what's the standard checklist that Visa Foundation, Google.org, Salesforce.org, etc. require for grant applications? Specifically:
+   - IRS Determination Letter (501c3)?
+   - GuideStar / Candid Seal of Transparency?
+   - W-9
+   - Audited financials (or financial statements)
+   - Bylaws
+   - Conflict of Interest Policy
+   - Whistleblower Policy
+   - Document Retention Policy
+   - Child Safeguarding Policy (specifically for child-serving orgs)
+   - Data Privacy Policy
+   - DEI Policy
+   - DUNS/UEI number (SAM.gov registration)
+   - Charity Navigator rating
+   - 990 form filing history
+   - Board roster + bios
+   - Strategic plan
+   - Theory of change
+   - Logic model
+   - Annual report
+
+6. **What can a US nonprofit do BEFORE getting IRS determination letter?**
+   - Fiscal sponsorship — what are the top fiscal sponsors for international children's education? Players Philanthropy Fund (6% fee), NEO Philanthropy, Community Partners, 501 Commons, ImpactAssets, Borealis Philanthropy, Tides Foundation, Trickle Up — which is best for an org like E4E?
+   - Sponsored project under another existing 501c3?
+   - Can foundations grant to fiscal sponsors and then sponsor passes through to project?
+
+7. **For UK / European funders** — Comic Relief, UK FCDO, Wellcome Trust, ELMA Foundation, Children's Investment Fund Foundation (CIFF) — what's their typical requirement? Do they require 501c3 or are charitable equivalent letters acceptable?
+
+8. **Required policies for child-serving organizations specifically** — Sabi works with children ages 8-14 in Nigeria. What policies are REQUIRED by funders for any org working with minors? Child safeguarding policy, code of conduct, background check policy, data protection for minors, COPPA equivalent in Nigeria (NDPR), photo/recording consent, etc. Templates / model policies?
+
+9. **GuideStar / Candid registration** — what's the process? What information do you need to provide? What are the different transparency seals (Bronze, Silver, Gold, Platinum)? Most foundations check this — is it required?
+
+10. **Charity Navigator** — how does an org get listed? What's the minimum 990 history required? What does the rating actually measure?
+
+11. **SAM.gov DUNS/UEI registration** — required for federal grants (USAID, State Dept). What's the process? Timeline?
+
+12. **State-level charitable solicitation registration** — Connecticut and beyond. What's required to fundraise nationally? Multi-State Cooperative? Charitable Solicitation registration?
+
+This is for the founder to write a 4-week sprint to get fundable by Q3 2026. Be concrete, name actual policies, link to templates, name specific contact people where possible.
+
+----------------------------------------
+
+<persisted-output>
+Output too large (54.2KB). Full output saved to: /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/toolu_01EJF8bvEm1quNwBX3ZqL8qt.json
+
+Preview (first 2KB):
+[
+  {
+    "type": "text",
+    "text": "I have enough material now to write a comprehensive answer. Let me synthesize everything into the final deliverable.\n\n---\n\n# Funder Due Diligence Requirements — Deep Research for E4E's Q3 2026 Sprint\n\nThis report covers everything Naomi needs to know to be ready to receive grants from major child-education funders. It is organized by funder and by document/policy requirement, with exact URLs, fees, timelines, and templates. Where existing E4E research already covered something well, I cross-reference it instead of duplicating.\n\nExisting research already on file (read these in tandem):\n- `/Users/naomiivie/Education for Equality/7. Legal & IP/LEGAL_ROADMAP.md` — Phase 1 US incorporation steps, costs, compliance calendar\n- `/Users/naomiivie/Education for Equality/6. Pitch & Applications/GRANT_FUNDING_RESEARCH.md` — funder universe sizing, March 2026 priority list\n- `/Users/naomiivie/Education for Equality/6. Pitch & Applications/Writing Grant Applications.md` — craft guide\n- `/Users/naomiivie/Education for Equality/6. Pitch & Applications/UNICEF_VENTURE_FUND_APPLICATION.md` — actual submitted UNICEF app\n\n---\n\n## 1. MASTERCARD FOUNDATION (Toronto) — Direct Grantmaking + Young Africa Works\n\n### Application process — what actually happens\nMastercard Foundation does NOT run an open grant application portal for general programs. Their process is:\n1. **EOI (Expression of Interest)** — Foundation team invites a prospective partner to submit a Concept Note. Two EOI types:\n   - **Single-source EOI** — for partners already known to the Foundation\n   - **Closed EOI** — for a small, known market of prospective partners\n2. If the concept clears, a full proposal is co-developed with Foundation staff.\n\nYou cannot cold-apply for direct Mastercard Foundation funding. Entry routes are:\n- (a) **Get into their partner pipeline** — meet program officers at convenings (Africa CEO Forum, Skoll World Forum, World Economic Forum 
+...
+</persisted-output>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

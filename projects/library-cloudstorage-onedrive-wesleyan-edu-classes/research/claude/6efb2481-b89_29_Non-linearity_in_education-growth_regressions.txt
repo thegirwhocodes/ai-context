@@ -1,0 +1,38 @@
+========================================================================
+AGENT RESEARCH: Non-linearity in education-growth regressions
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-13 21:53:09 UTC
+========================================================================
+
+I'm writing an undergraduate econometrics term paper on the GDP cost of out-of-school children in Nigeria. My main regression is a cross-country panel of 47 Sub-Saharan African countries over 2000-2024 (5-year averages, N=181), with two-way fixed effects (country + period), cluster-robust SE on country. The Mankiw-Romer-Weil (1992) augmented Solow model controls — investment share and population growth.
+
+My current setup is fully linear: I regress GDP per capita growth on the combined primary + lower-secondary out-of-school rate (constructed as 100 - GER averaged across primary and secondary). My headline Nigeria-specific coefficient (via a Nigeria × OOSC interaction term) is β = -0.125 (p = 0.003).
+
+A reasonable critique of the linear spec is that returns to schooling probably diminish at low OOSC levels — the last few percent of out-of-school children are likely the hardest-to-reach (rural, disabled, conflict-displaced), so the marginal growth payoff probably flattens as you approach universal enrollment.
+
+I want to know how the cross-country growth literature handles this non-linearity. Specifically:
+
+1. **What functional forms are standard?** Quadratic (oosc + oosc²), log-transformation (ln(oosc)), tercile/quartile dummies, splines, threshold models?
+
+2. **Which papers do this well for the education-growth nexus?** I know Mankiw-Romer-Weil (1992), Hanushek-Woessmann (2012, 2015), Barro (1991), Sala-i-Martin-Doppelhofer-Miller (2004), Pritchett (2001) "Where Has All the Education Gone?", Krueger-Lindahl (2001), Lutz et al. (2008). Have any of them used non-linear OOSC or enrollment specifications? What functional forms did they pick?
+
+3. **Is there a precedent specifically for diminishing returns to enrollment/OOSC?** Like, has anyone found and reported the curvature?
+
+4. **How do they handle the cost-calculation when the effect is non-linear?** A linear β times current OOSC × GDP is straightforward; once you add curvature, do they integrate, report marginal effects at multiple OOSC levels, or something else?
+
+5. **Practical advice on identification with limited data**: I have 47 countries × 5 periods = 235 max obs, N=181 after missingness. Nigeria's OOSC only varies from ~23-31% within the 25-year sample. Is quadratic identification credible with this sample size, or should I prefer log/quartiles?
+
+Report concisely (under 700 words). Cite 6-10 specific papers with year and journal, with a sentence each on what functional form they used and what they found. I need this for a Section 5.3 robustness paragraph in a paper due in 24 hours, so be punchy and practical, not encyclopedic. Tell me which approach is most defensible for the term paper.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a6b80a89ece1566eb (internal ID - do not mention to user. Use SendMessage with to: 'a6b80a89ece1566eb' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/91e12c77-89b6-4b15-88f2-bc4fbadd518b/tasks/a6b80a89ece1566eb.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.cellfind.net.za/cfp/niussd/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:29:54 UTC
+========================================================================
+
+URL: https://www.cellfind.net.za/cfp/niussd/
+Extraction prompt: Extract ALL details about Network-Initiated USSD (NI-USSD). How does it work? What API is used? Can it be sent during active voice calls? What MNOs support it? Technical specifications, parameters, limitations.
+
+----------------------------------------
+
+# NI USSD Technical Details
+
+Based on the Cellfind webpage content provided, here's what's available about Network-Initiated USSD:
+
+## Definition & Core Function
+NI USSD (Network Initiated Unstructured Supplementary Service Data) is described as "an instant message sent from a network to a mobile device." It enables companies to initiate communication sessions where recipients can respond without incurring charges.
+
+## Key Characteristics
+- **Network-initiated**: The company/network sends the first message, unlike traditional USSD
+- **Device compatibility**: Works on "all standard phones" and "all South African networks and handsets"
+- **No internet required**: Functions without recipient internet connectivity
+- **Cost model**: Recipients are not charged for the session
+
+## Use Cases
+Real-world applications mentioned include:
+- One-time passwords (OTP) for banking authentication
+- Website login verification
+- Internet banking security
+- Call centre authentication
+- Credit/debit card protection
+- Customer surveys and polls
+- Balance enquiries
+
+## Limitations of Available Information
+**The webpage does not provide:**
+- Specific API documentation or technical integration details
+- Whether NI USSD can be sent during active voice calls
+- Detailed MNO (Mobile Network Operator) specifications beyond "South African networks"
+- Exact technical parameters or message length limits
+- Protocol specifications or underlying standards
+
+**Note:** For comprehensive technical specifications, the Cellfind Developer Zone (docs.cellfind.net.za) would likely contain detailed API documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

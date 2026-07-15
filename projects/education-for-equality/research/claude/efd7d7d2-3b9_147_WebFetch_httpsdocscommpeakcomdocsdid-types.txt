@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/docs/did-types
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:27:55 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/docs/did-types
+Extraction prompt: What DID types does CommPeak offer? Is toll-free listed? What countries have toll-free? Is Nigeria listed?
+
+----------------------------------------
+
+# CommPeak DID Types
+
+Based on the documentation provided, CommPeak offers these DID number varieties:
+
+1. **Geographic DID** - "used to establish a recognizable local presence in specific cities or countries"
+2. **Mobile DID** - "enable two-way communication (calls and texts)"
+3. **Toll-free DID** - "allow your customers to contact your business free of charge"
+4. **National numbers** - "not tied to a specific location within a country"
+5. **Premium numbers** - "custom numbers designed for easy recall"
+
+## Regarding Geographic Coverage
+
+Yes, toll-free options are listed among CommPeak's offerings. However, the provided content does **not specify** which countries support toll-free numbers, nor does it mention Nigeria specifically. To determine toll-free availability in Nigeria or other specific nations, you would need to consult CommPeak's ordering page or contact their sales team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

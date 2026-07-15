@@ -1,0 +1,85 @@
+RESEARCH INDEX
+Generated: 2026-06-30 02:57:31
+Files: 80
+========================================================================
+
+206a510c-15a_00_Deep-read_efd7d7d2_build_session.txt  [16KB]  AGENT RESEARCH: Deep-read efd7d7d2 build session
+206a510c-15a_01_Deep-read_fc4f9b6d__1b27663d_sessions.txt  [8KB]  AGENT RESEARCH: Deep-read fc4f9b6d + 1b27663d sessions
+206a510c-15a_02_Deep-read_recent_June_sessions.txt  [12KB]  AGENT RESEARCH: Deep-read recent June sessions
+50605635-b54_00_Research_Sage_SaaS_pricing_model.txt  [5KB]  AGENT RESEARCH: Research Sage SaaS pricing model
+50605635-b54_01_WebSearch_Superhuman_email_app_pricing_per_month_2026_plans_.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Superhuman email app pricing per month 2026 plans Starter Business
+50605635-b54_02_WebSearch_Anthropic_Claude_API_pricing_per_million_tokens_Op.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Anthropic Claude API pricing per million tokens Opus Sonnet Haiku 2026
+50605635-b54_03_WebSearch_Shortwave_AI_email_assistant_pricing_plans_per_mon.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Shortwave AI email assistant pricing plans per month 2026
+50605635-b54_04_WebSearch_Fyxer_AI_email_assistant_pricing_per_month_2026.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Fyxer AI email assistant pricing per month 2026
+50605635-b54_05_WebSearch_virtual_executive_assistant_cost_per_month_United_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: virtual executive assistant cost per month United States 2026 average price
+50605635-b54_06_WebSearch_how_many_hours_per_week_professionals_spend_on_ema.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: how many hours per week professionals spend on email 2026 statistic average
+50605635-b54_07_WebSearch_Google_OAuth_restricted_scope_CASA_Tier_2_security.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Google OAuth restricted scope CASA Tier 2 security assessment cost gmail API ver
+50605635-b54_08_WebSearch_Superhuman_email_paying_subscribers_user_count_rev.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Superhuman email paying subscribers user count revenue 2026 valuation
+50605635-b54_09_WebSearch_number_of_knowledge_workers_worldwide_2026_global_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: number of knowledge workers worldwide 2026 global workforce email users statisti
+50605635-b54_10_WebSearch_number_of_small_business_owners_founders_executive.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: number of small business owners founders executives United States 2026 millions
+50605635-b54_11_WebSearch_AI_email_assistant_market_size_2026_forecast_billi.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: AI email assistant market size 2026 forecast billion CAGR growth
+50605635-b54_12_WebSearch_freemium_prosumer_SaaS_free_to_paid_conversion_rat.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: freemium prosumer SaaS free to paid conversion rate benchmark 2026
+50605635-b54_13_WebSearch_number_of_US_households_earning_over_200000_high_i.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: number of US households earning over $200000 high income professionals 2026 stat
+50605635-b54_14_WebSearch_Claude_Pro_free_tier_message_limits_2026_5x_more_u.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Claude Pro free tier message limits 2026 5x more usage Pro plan
+53755257-7d3_00_WebSearch_Calcom_SavvyCal_TidyCal_customer_acquisition_strat.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Cal.com SavvyCal TidyCal customer acquisition strategy growth
+53755257-7d3_01_WebSearch_Calendly_alternatives_individual_users_pricing_fre.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: Calendly alternatives individual users pricing free tier 2025 2026
+53755257-7d3_02_WebSearch_Calendly_complaints_pain_points_why_people_switch_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Calendly complaints pain points why people switch alternatives
+53755257-7d3_03_WebSearch_Calendly_main_competitors_2025_2026_scheduling_too.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Calendly main competitors 2025 2026 scheduling tools comparison
+53755257-7d3_04_WebFetch_httpszeegmeenblogpostcalendly-pros-and-cons-review.txt  [3KB]  WEBFETCH RESEARCH: WebFetch: https://zeeg.me/en/blog/post/calendly-pros-and-cons-review
+53755257-7d3_05_WebSearch_TidyCal_AppSumo_lifetime_deal_customer_acquisition.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: TidyCal AppSumo lifetime deal customer acquisition growth strategy 2025
+53755257-7d3_06_WebFetch_httpslunacalaicomparecalendly-alternative.txt  [3KB]  WEBFETCH RESEARCH: WebFetch: https://lunacal.ai/compare/calendly-alternative
+53755257-7d3_07_WebSearch_Calcom_open_source_scheduling_growth_strategy_Prod.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Cal.com open source scheduling growth strategy Product Hunt community 2025 2026
+53755257-7d3_08_WebSearch_Acuity_Scheduling_Squarespace_individual_customer_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Acuity Scheduling Squarespace individual customer acquisition marketing strategy
+53755257-7d3_09_WebSearch_SavvyCal_Derrick_Reimer_indie_growth_strategy_mark.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: SavvyCal Derrick Reimer indie growth strategy marketing bootstrapped TinySeed
+53755257-7d3_10_WebSearch_Doodle_scheduling_growth_strategy_freemium_individ.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Doodle scheduling growth strategy freemium individual users marketing 2025
+53755257-7d3_11_WebSearch_Chili_Piper_Lemcal_Zeeg_scheduling_tools_individua.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Chili Piper Lemcal Zeeg scheduling tools individual customer acquisition strateg
+53755257-7d3_12_WebSearch_Reclaimai_scheduling_growth_strategy_AI_marketing_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Reclaim.ai scheduling growth strategy AI marketing individual users
+53755257-7d3_13_WebFetch_httpscanvasbusinessmodelcomblogsgrowth-strategyrecl.txt  [2KB]  WEBFETCH RESEARCH: WebFetch: https://canvasbusinessmodel.com/blogs/growth-strategy/reclaim-ai-growth-strategy
+53755257-7d3_14_WebSearch_scheduling_app_SEO_content_marketing_strategy_Cale.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: scheduling app SEO content marketing strategy "Calendly alternative" blog compar
+78e41aad-996_00_Research_41_acquisition_framework.txt  [6KB]  AGENT RESEARCH: Research 4+1 acquisition framework
+78e41aad-996_01_Research_Parsec_Financial.txt  [6KB]  AGENT RESEARCH: Research Parsec Financial
+78e41aad-996_02_Research_Chequers_Financial_Mgmt.txt  [7KB]  AGENT RESEARCH: Research Chequers Financial Mgmt
+ae7bcad0-675_00_Search_for_context_window_check.txt  [3KB]  AGENT RESEARCH: Search for context window check
+e59a15e2-07e_00_Read_Bethel_research_files.txt  [10KB]  AGENT RESEARCH: Read Bethel research files
+e59a15e2-07e_01_Read_Bethel_conversation_log_1.txt  [8KB]  AGENT RESEARCH: Read Bethel conversation log 1
+e59a15e2-07e_02_Read_Bethel_conversation_log_2.txt  [8KB]  AGENT RESEARCH: Read Bethel conversation log 2
+e59a15e2-07e_03_Research_best_native_app_architecture.txt  [4KB]  AGENT RESEARCH: Research best native app architecture
+e59a15e2-07e_04_Check_Claude_Code_hook_env_vars.txt  [4KB]  AGENT RESEARCH: Check Claude Code hook env vars
+e59a15e2-07e_05_Test_memory_Classes_folder.txt  [3KB]  AGENT RESEARCH: Test memory: Classes folder
+e59a15e2-07e_06_Test_memory_cortex_folder.txt  [4KB]  AGENT RESEARCH: Test memory: cortex folder
+e59a15e2-07e_07_Test_memory_Spheres_Mac_folder.txt  [4KB]  AGENT RESEARCH: Test memory: Spheres Mac folder
+e59a15e2-07e_08_Test_memory_E4E_folder.txt  [4KB]  AGENT RESEARCH: Test memory: E4E folder
+e59a15e2-07e_09_Test_memory_bethel_folder.txt  [5KB]  AGENT RESEARCH: Test memory: bethel folder
+e59a15e2-07e_10_Deep_test_Spheres_all_sessions.txt  [11KB]  AGENT RESEARCH: Deep test: Spheres all sessions
+e59a15e2-07e_11_Deep_test_E4E_all_21_sessions.txt  [14KB]  AGENT RESEARCH: Deep test: E4E all 21 sessions
+e59a15e2-07e_12_Deep_test_Classes_all_40_sessions.txt  [12KB]  AGENT RESEARCH: Deep test: Classes all 40 sessions
+e59a15e2-07e_13_Update_memory_Bethel.txt  [3KB]  AGENT RESEARCH: Update memory: Bethel
+e59a15e2-07e_14_Update_memory_E4E.txt  [3KB]  AGENT RESEARCH: Update memory: E4E
+e59a15e2-07e_15_Update_memory_Cortex.txt  [2KB]  AGENT RESEARCH: Update memory: Cortex
+e59a15e2-07e_16_Update_memory_Classes.txt  [2KB]  AGENT RESEARCH: Update memory: Classes
+e59a15e2-07e_17_Update_memory_Spheres_Mac.txt  [2KB]  AGENT RESEARCH: Update memory: Spheres Mac
+e59a15e2-07e_18_Update_memory_Social_Media.txt  [2KB]  AGENT RESEARCH: Update memory: Social Media
+e59a15e2-07e_19_Update_memory_Cortex_retry.txt  [2KB]  AGENT RESEARCH: Update memory: Cortex retry
+e59a15e2-07e_20_Build_memory_E4E_project.txt  [5KB]  AGENT RESEARCH: Build memory: E4E project
+e59a15e2-07e_21_Build_memory_Classes.txt  [4KB]  AGENT RESEARCH: Build memory: Classes
+e59a15e2-07e_22_Build_memory_Social_Media.txt  [3KB]  AGENT RESEARCH: Build memory: Social Media
+e59a15e2-07e_23_Build_memory_Cortex.txt  [3KB]  AGENT RESEARCH: Build memory: Cortex
+e59a15e2-07e_24_Build_memory_Spheres_Mac.txt  [3KB]  AGENT RESEARCH: Build memory: Spheres Mac
+e59a15e2-07e_25_Update_Bethel_memory_from_new_txts.txt  [4KB]  AGENT RESEARCH: Update Bethel memory from new txts
+e59a15e2-07e_26_Stress_test_fresh_E4E_Claude.txt  [5KB]  AGENT RESEARCH: Stress test: fresh E4E Claude
+e59a15e2-07e_27_Stress_test_Sabi_research_recovery.txt  [9KB]  AGENT RESEARCH: Stress test: Sabi research recovery
+e59a15e2-07e_28_Check_compaction_hooks_and_events.txt  [6KB]  AGENT RESEARCH: Check compaction hooks and events
+e59a15e2-07e_29_Verify_PostCompact_hook_exists.txt  [4KB]  AGENT RESEARCH: Verify PostCompact hook exists
+e59a15e2-07e_Check_Claude_Code_hook_env_vars.txt  [4KB]  AGENT RESEARCH: Check Claude Code hook env vars
+e59a15e2-07e_Deep_test_Classes_all_40_sessions.txt  [12KB]  AGENT RESEARCH: Deep test: Classes all 40 sessions
+e59a15e2-07e_Deep_test_E4E_all_21_sessions.txt  [13KB]  AGENT RESEARCH: Deep test: E4E all 21 sessions
+e59a15e2-07e_Deep_test_Spheres_all_sessions.txt  [11KB]  AGENT RESEARCH: Deep test: Spheres all sessions
+e59a15e2-07e_Read_Bethel_conversation_log_1.txt  [8KB]  AGENT RESEARCH: Read Bethel conversation log 1
+e59a15e2-07e_Read_Bethel_conversation_log_2.txt  [7KB]  AGENT RESEARCH: Read Bethel conversation log 2
+e59a15e2-07e_Read_Bethel_research_files.txt  [10KB]  AGENT RESEARCH: Read Bethel research files
+e59a15e2-07e_Research_best_native_app_architecture.txt  [3KB]  AGENT RESEARCH: Research best native app architecture
+e59a15e2-07e_Test_memory_Classes_folder.txt  [3KB]  AGENT RESEARCH: Test memory: Classes folder
+e59a15e2-07e_Test_memory_E4E_folder.txt  [4KB]  AGENT RESEARCH: Test memory: E4E folder
+e59a15e2-07e_Test_memory_Spheres_Mac_folder.txt  [3KB]  AGENT RESEARCH: Test memory: Spheres Mac folder
+e59a15e2-07e_Test_memory_bethel_folder.txt  [5KB]  AGENT RESEARCH: Test memory: bethel folder
+e59a15e2-07e_Test_memory_cortex_folder.txt  [4KB]  AGENT RESEARCH: Test memory: cortex folder

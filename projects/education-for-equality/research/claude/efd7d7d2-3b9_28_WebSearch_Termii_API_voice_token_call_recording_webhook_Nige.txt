@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii API voice token call recording webhook Nigeria developer
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:55:24 UTC
+========================================================================
+
+Search query: Termii API voice token call recording webhook Nigeria developer
+
+----------------------------------------
+
+Web search results for query: "Termii API voice token call recording webhook Nigeria developer"
+
+Links: [{"title":"Termii | Developers","url":"https://developers.termii.com/messaging-api"},{"title":"Full API Documentation - Termii","url":"https://leads.termii.com/index.php/developers"},{"title":"Voice Token - Termii | Developers","url":"https://developers.termii.com/voice-token"},{"title":"Voice Call","url":"https://developers.termii.com/voice-call"},{"title":"The Termii Blog | Customer engagement (2)","url":"https://blog.termii.com/tag/customer-engagement/page/2"},{"title":"Termii | Developers","url":"https://developer.termii.com/"},{"title":"Voice API - Programmable Voice for Developers | Telnyx","url":"https://telnyx.com/products/voice-api"},{"title":"The Termii Blog (5)","url":"https://blog.termii.com/page/5?hsLang=en"},{"title":"The Termii Blog | API","url":"https://blog.termii.com/tag/api"},{"title":"Termii Status API and Search API — Know the difference | by Termii Inc. | Medium","url":"https://termii.medium.com/termii-status-api-and-search-api-know-the-difference-416373beaa7a"}]
+
+Based on the search results, here's what I found about Termii's API capabilities for voice, tokens, and webhooks:
+
+## Voice Token API
+
+Termii offers a Voice Token API endpoint at `https://BASE_URL/api/sms/otp/send/voice` that accepts parameters including `api_key`, `phone_number`, `pin_attempts`, `pin_time_to_live`, and `pin_length`.
+
+## Voice Call API
+
+The voice call API enables you to send messages through the voice channel to a phone number, with only one-time-passwords (OTPs) currently allowed, and these OTPs cannot be verified using the Verify Token API.
+
+## Webhook Support
+
+Termii announced the release of a Webhook Dashboard, now available on the customer dashboard at accounts.termii.com. Additionally, the Inbox API allows businesses to receive inbound messages (WhatsApp & SMS) directly in applications through their set webhook URL.
+
+## Token API Features
+
+Termii's Token Service, in addition to SMS, Voice and WhatsApp, now supports integrating Email Token for businesses to send and verify one-time passwords (soft tokens) directly.
+
+## For Developers in Nigeria
+
+The documentation provides API Reference guidance on how to seamlessly integrate Termii's messaging channels and verification functionalities, with the API organized around HTTP verbs and REST, accepting and returning JSON formatted payloads.
+
+However, the search results do not specifically mention call recording capabilities for the Termii API.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

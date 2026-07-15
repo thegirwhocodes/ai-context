@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii voice API IVR capabilities custom audio Nigeria developer documentation
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:35:22 UTC
+========================================================================
+
+Search query: Termii voice API IVR capabilities custom audio Nigeria developer documentation
+
+----------------------------------------
+
+Web search results for query: "Termii voice API IVR capabilities custom audio Nigeria developer documentation"
+
+Links: [{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Termii is making global communications easy for businesses by modernizing how businesses and customers engage each other in emerging markets. We serve 26,000 businesses that send over 1.9 billion messages and calls to end customers globally. Our omni-channel platform, equipped with API capabilities, supports messaging across SMS, voice, email, and USSD channels. Additionally, our eSIM API platform enables seamless voice calls and global data connectivity in over 180 countries. | YASR","url":"https://www.yasr.org/2025/termii-group"},{"title":"Voice API - Programmable Voice for Developers | Telnyx","url":"https://telnyx.com/products/voice-api"},{"title":"About Termii (communications API) — History & Brand Facts - Verito Digital","url":"https://veritodigital.com/termii-communications-api-2/"},{"title":"Voice API | Twilio","url":"https://www.twilio.com/en-us/voice"},{"title":"AI-Powered Messaging & Customer Engagement Platform - Termii","url":"https://termii.com/"},{"title":"Voice API: IVR, Inbound DID, Voice Broadcast | HollaTags","url":"https://hollatags.com/voice/"},{"title":"Programmable Voice API | Vonage","url":"https://www.vonage.com/communications-apis/voice/"},{"title":"Termii | Developers","url":"https://developers.termii.com/voice-call"},{"title":"Voice API: Crystal clear and Reliable Voice Calls | EnableX","url":"https://www.enablex.io/cpaas/voice-api"}]
+
+Based on the search results, here's what I found about Termii's Voice API capabilities:
+
+## Termii Voice API Overview
+
+Termii's Voice API enables businesses to make and receive calls through their platform, allowing them to provide personalized customer support, conduct surveys, or verify customer identities.
+
+## IVR and Audio Capabilities
+
+The platform supports features such as call recording, call routing, and interactive voice response (IVR) systems. This allows businesses to create sophisticated voice communication workflows that enhance the customer experience and streamline operations.
+
+## Current Functionality
+
+According to the official Termii developer documentation, the voice call API enables you to send messages from your application through the voice channel to a phone number. Only one-time-passwords (OTPs) are allowed for now and these OTPs can not be verified using the Verify Token API.
+
+## Context
+
+Termii's omni-channel platform, equipped with API capabilities, supports messaging across SMS, voice, email, and USSD channels. Termii is a Nigerian-founded communication platform as a service (CPaaS) company founded in 2017 by Gbolade Emmanuel and Ayomide Awe.
+
+For detailed information about custom audio capabilities and advanced IVR features, I recommend visiting the official [Termii developer documentation](https://developers.termii.com/voice-call) directly, as the current search results show that Termii's voice API documentation focuses primarily on OTP voice delivery functionality.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

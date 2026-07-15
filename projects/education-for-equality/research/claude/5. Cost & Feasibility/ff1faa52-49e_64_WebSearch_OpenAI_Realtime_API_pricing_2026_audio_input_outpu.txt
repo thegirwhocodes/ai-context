@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenAI Realtime API pricing 2026 audio input output per token
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 11:39:46 UTC
+========================================================================
+
+Search query: OpenAI Realtime API pricing 2026 audio input output per token
+
+----------------------------------------
+
+Web search results for query: "OpenAI Realtime API pricing 2026 audio input output per token"
+
+Links: [{"title":"Realtime API pricing questions: text input and audio tokens - API - OpenAI Developer Community","url":"https://community.openai.com/t/realtime-api-pricing-questions-text-input-and-audio-tokens/1367089"},{"title":"Pricing | OpenAI","url":"https://openai.com/api/pricing/"},{"title":"OpenAI Realtime API Pricing 2025: Cost Calculator - Skywork ai","url":"https://skywork.ai/blog/agent/openai-realtime-api-pricing-2025-cost-calculator/"},{"title":"Introducing gpt-realtime and Realtime API updates for production voice agents | OpenAI","url":"https://openai.com/index/introducing-gpt-realtime/"},{"title":"I don't understand the pricing for the realtime API - API - OpenAI Developer Community","url":"https://community.openai.com/t/i-dont-understand-the-pricing-for-the-realtime-api/963837"},{"title":"Introducing the Realtime API | OpenAI","url":"https://openai.com/index/introducing-the-realtime-api/"},{"title":"Realtime API cost anomaly: disproportionate charges on audio input - API - OpenAI Developer Community","url":"https://community.openai.com/t/realtime-api-cost-anomaly-disproportionate-charges-on-audio-input/1285295"},{"title":"Pricing | OpenAI API","url":"https://developers.openai.com/api/docs/pricing/"},{"title":"Managing costs | OpenAI API","url":"https://platform.openai.com/docs/guides/realtime-costs"},{"title":"Confusion Between Per-Minute Audio Pricing vs. Token-Based Audio Pricing - API - OpenAI Developer Community","url":"https://community.openai.com/t/confusion-between-per-minute-audio-pricing-vs-token-based-audio-pricing/1073222"}]
+
+Based on the search results, here is the current OpenAI Realtime API pricing for audio input and output:
+
+## Current Pricing (2026)
+
+For the gpt-realtime model, audio input is priced at $32 per 1M tokens ($0.40 for cached input tokens) and audio output is priced at $64 per 1M tokens.
+
+## Text Token Pricing
+
+Text input tokens are priced at $5 per 1M and $20 per 1M output tokens.
+
+## Approximate Per-Minute Rates
+
+This equates to approximately $0.06 per minute of audio input and $0.24 per minute of audio output.
+
+## Additional Notes
+
+The gpt-realtime model represents a 20% price reduction compared to gpt-4o-realtime-preview, and OpenAI has added fine-grained control for conversation context to reduce costs for long sessions.
+
+The pricing is based on both token volume and actual audio duration, giving developers flexibility in how they structure their applications to optimize costs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

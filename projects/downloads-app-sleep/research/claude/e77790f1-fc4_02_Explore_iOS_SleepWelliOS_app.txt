@@ -1,0 +1,599 @@
+========================================================================
+AGENT RESEARCH: Explore iOS SleepWelliOS app
+Session: e77790f1-fc44-416a-b46f-7434599f1ba9
+Time: 2026-06-05 20:19:24 UTC
+========================================================================
+
+Explore the iOS app code in /Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/ (ContentView.swift, SleepWelliOSApp.swift, Managers/ScheduleManager.swift, Managers/AppBlockerModel.swift, Managers/AuthorizationManager.swift, Shared/PassManager.swift, Shared/QuotesProvider.swift, Shared/Extensions.swift, Views/AmbientView.swift, Views/SettingsView.swift, Views/AppSelectionView.swift, Views/OnboardingView.swift).
+
+Also explore the extensions:
+- /Users/naomiivie/Downloads/App/Sleep/DeviceActivityMonitorExtension/SleepWellMonitor.swift
+- /Users/naomiivie/Downloads/App/Sleep/ShieldConfigurationExtension/SleepWellShieldConfig.swift
+- /Users/naomiivie/Downloads/App/Sleep/ShieldActionExtension/SleepWellShieldAction.swift
+
+For EACH file report:
+1. Purpose and main types/views
+2. FamilyControls / DeviceActivity / ManagedSettings / Screen Time API usage
+3. App Group identifiers and UserDefaults keys used (exact strings)
+4. Persistence and any iCloud/CloudKit/multi-device sync (likely none)
+5. The pass/key system details
+6. TODOs, stubs, incomplete logic, hardcoded placeholders, anything that won't compile
+7. Any reference to email, AI, or an "agent" (likely none)
+
+Be concrete with file:line references and short excerpts. Do NOT edit anything. Return a structured summary.
+
+----------------------------------------
+
+Perfect! Now I have a comprehensive understanding. Let me compile the structured summary:
+
+---
+
+## Sleep Well iOS App - Comprehensive Code Exploration Report
+
+### 1. MAIN APP FILES
+
+#### **ContentView.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/ContentView.swift`
+
+**Purpose & Types:**
+- Root view that conditionally renders based on `AuthorizationManager.authorizationStatus`
+- Contains 6 view components: `ContentView`, `PermissionDeniedView`, `MainAppView`, `ScheduleCard`, `AppSelectionCard`, `PassesCard`, `EnableToggle`
+- Uses a NavigationStack for navigation to SettingsView and AppSelectionView
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- No direct usage; delegates to manager objects
+
+**App Group & UserDefaults:**
+- No direct UserDefaults access in this file
+
+**Persistence:**
+- None (managed by EnvironmentObjects)
+
+**Pass/Key System:**
+- `PassesCard` displays visual representation of remaining passes (3 total) as circular indicators (lines 294-306)
+- Displays `passManager.passesRemaining` and `passManager.timeUntilReset` (lines 310-317)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **SleepWelliOSApp.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/SleepWelliOSApp.swift`
+
+**Purpose & Types:**
+- Main app entry point (marked with `@main`)
+- Initializes 4 StateObjects: `AuthorizationManager`, `AppBlockerModel.shared`, `ScheduleManager`, `PassManager.shared`
+- Injects all managers as environment objects to ContentView
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `FamilyControls` (line 9)
+
+**App Group & UserDefaults:**
+- None directly used
+
+**Persistence:**
+- Relies on manager objects' initialization to load persisted state
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **ScheduleManager.swift** (Managers)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Managers/ScheduleManager.swift`
+
+**Purpose & Types:**
+- Manages bedtime schedule configuration and DeviceActivity monitoring
+- Published properties: `blockStartHour`, `blockStartMinute`, `wakeHour`, `wakeMinute`, `isScheduleActive`, `isEnabled`
+- Extension defines `DeviceActivityName.bedtime` as `"com.sleepwell.bedtime"` (line 5)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `DeviceActivity` (line 2)
+- Uses `DeviceActivityCenter` (line 9) to manage monitoring
+- `startBedtimeSchedule()` creates `DeviceActivitySchedule` with 5-minute warning (line 57)
+- Monitors bedtime activity: `.bedtime` name (line 61)
+- `stopBedtimeSchedule()` calls `center.stopMonitoring([.bedtime])` (line 71)
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 38)
+- Keys: `"blockStartHour"`, `"blockStartMinute"`, `"wakeHour"`, `"wakeMinute"`, `"scheduleEnabled"` (lines 13-28, 41-45)
+
+**Persistence:**
+- Loads defaults on init with fallback times: bedtime=22:00, wake=6:00 (lines 41-44)
+- Auto-saves via `didSet` observers (lines 13-28)
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **AppBlockerModel.swift** (Managers)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Managers/AppBlockerModel.swift`
+
+**Purpose & Types:**
+- Manages app/web blocking configuration using FamilyControls and ManagedSettings
+- Singleton: `static let shared = AppBlockerModel()` (line 11)
+- Enum `BlockingMode`: `.blocklist` (block selected) or `.allowlist` (block all except selected)
+- Published: `activitySelection: FamilyActivitySelection`, `blockingMode`, `isBlockingActive`
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `FamilyControls` (line 2), `ManagedSettings` (line 3)
+- `ManagedSettingsStore` instance (line 13) for applying restrictions
+- `applyRestrictions()` (lines 61-76):
+  - Blocklist mode: Sets `store.shield.applications`, `store.shield.applicationCategories`, `store.shield.webDomains`
+  - Allowlist mode: Sets `store.shield.applicationCategories = .all()` and `store.shield.webDomainCategories = .all()`
+- `removeRestrictions()` calls `store.clearAllSettings()` (line 80)
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 35)
+- Keys: `"activitySelection"` (encoded FamilyActivitySelection), `"blockingMode"` (lines 30-31)
+
+**Persistence:**
+- Loads saved FamilyActivitySelection on init via JSONDecoder (lines 38-43)
+- Auto-saves via `didSet` observer (lines 17-19)
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **AuthorizationManager.swift** (Managers)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Managers/AuthorizationManager.swift`
+
+**Purpose & Types:**
+- Handles FamilyControls authorization requests
+- Marked `@MainActor` (line 10)
+- Enum `AuthorizationStatus`: `.notDetermined`, `.denied`, `.approved`
+- Uses `AuthorizationCenter.shared` (line 14)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `FamilyControls` (line 2)
+- `requestAuthorization(for: .individual)` async method (line 22)
+- Maps `center.authorizationStatus` to local enum (lines 31-40)
+
+**App Group & UserDefaults:**
+- None
+
+**Persistence:**
+- None (checks authorization status dynamically)
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **PassManager.swift** (Shared)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Shared/PassManager.swift`
+
+**Purpose & Types:**
+- Manages emergency passes (allows early unlock with 3 passes/week limit)
+- Singleton: `static let shared = PassManager()` (line 5)
+- Published: `passesRemaining`, `passesUsedThisWeek: [Date]`
+- Hard-coded: `passesPerWeek = 3` (line 7)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `ManagedSettings` (line 2)
+- `unlockWithPass()` (lines 37-43) clears all shields via `ManagedSettingsStore().clearAllSettings()`
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 18)
+- Keys: `"passesUsedThisWeek"` (encoded [Date]), `"lastWeekReset"` (lines 13-14)
+
+**Persistence:**
+- Loads passes on init via `loadPasses()` (line 19)
+- Auto-resets on new week via `checkAndResetIfNewWeek()` (line 20, 53-69)
+- Week boundary: Uses ISO week (Sunday = start) (lines 58-60)
+
+**Pass/Key System:**
+- Core logic: Tracks dates of pass usage, max 3 per week
+- `usePass()` appends current Date and updates `passesRemaining` (lines 24-34)
+- `resetPassesForTesting()` (lines 46-51) clears for testing
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **QuotesProvider.swift** (Shared)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Shared/QuotesProvider.swift`
+
+**Purpose & Types:**
+- Provides 40+ quotes (struct `Quote` with `id`, `text`, `author`)
+- All quotes are biblically themed and rest/sleep focused
+- Methods: `randomQuote()`, `allQuotes()`
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- None
+
+**App Group & UserDefaults:**
+- None
+
+**Persistence:**
+- None (static list)
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+**Sample Quotes:**
+- King David: "In peace I will lie down and sleep..." (line 16)
+- C.S. Lewis, Charles Spurgeon, Tim Keller, John Piper, Dallas Willard quoted extensively
+
+---
+
+#### **Extensions.swift** (Shared)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Shared/Extensions.swift`
+
+**Purpose & Types:**
+- Extends `Color` with hex initializer (lines 3-27)
+- Parses 3-digit (#ABC), 6-digit (#AABBCC), 8-digit (#AARRGGBB) hex formats
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- None
+
+**App Group & UserDefaults:**
+- None
+
+**Persistence:**
+- None
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+### 2. VIEW FILES
+
+#### **AmbientView.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Views/AmbientView.swift`
+
+**Purpose & Types:**
+- Calming ambient screen shown when bedtime blocking is active
+- Displays current time, rotating quotes, breathing animation, pass button
+- Uses timers: 1-second update timer (line 13), 12-second quote rotation timer (line 14)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- None direct; delegates to PassManager
+
+**App Group & UserDefaults:**
+- None
+
+**Persistence:**
+- None
+
+**Pass/Key System:**
+- "Use Pass to Exit" button (lines 120-150) calls `onUsePass()` callback
+- Shows remaining passes: `\(passManager.passesRemaining) left` (line 130)
+- Button disabled when `passManager.passesRemaining == 0` (line 149)
+- Shows reset time: `passManager.timeUntilReset` (line 152)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **SettingsView.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Views/SettingsView.swift`
+
+**Purpose & Types:**
+- Settings UI with three sections: Bedtime, Wake Time, Emergency Passes, About
+- Uses `SettingsSection` component (lines 117-142) and `TimePickerRow` (lines 144-192)
+- Time pickers: 24-hour format with 15-minute intervals (0, 15, 30, 45) (lines 157-180)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- None
+
+**App Group & UserDefaults:**
+- None directly; modifies via `scheduleManager` published properties
+
+**Persistence:**
+- `saveSettings()` (lines 108-114) updates `scheduleManager` and calls `updateSchedule()`
+
+**Pass/Key System:**
+- Displays pass info: remaining count, reset time, explanation (lines 40-64)
+- Hard-coded version "1.0.0" (line 73)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **AppSelectionView.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Views/AppSelectionView.swift`
+
+**Purpose & Types:**
+- UI for selecting apps to block with mode toggle
+- Segmented picker for Blocklist/Allowlist modes (lines 39-43)
+- Family Activity Picker (lines 86-89)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `FamilyControls` (line 2)
+- `.familyActivityPicker()` modifier bound to `$appBlocker.activitySelection` (lines 86-89)
+
+**App Group & UserDefaults:**
+- None direct
+
+**Persistence:**
+- None
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+**Note:** Lines 125-126 warn that "Phone, Messages, and emergency apps are always accessible regardless of your selection" (allowlist mode only)
+
+---
+
+#### **OnboardingView.swift**
+**File:** `/Users/naomiivie/Downloads/App/Sleep/SleepWelliOS/Views/OnboardingView.swift`
+
+**Purpose & Types:**
+- First-launch onboarding screen with feature overview
+- Three feature rows: block apps, unlock automatically, emergency passes
+- "Get Started" button triggers async `authManager.requestAuthorization()` (lines 84-90)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- None direct; calls AuthorizationManager
+
+**App Group & UserDefaults:**
+- None
+
+**Persistence:**
+- None
+
+**Pass/Key System:**
+- Mentions "3 emergency passes per week" (line 62)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+### 3. EXTENSION FILES
+
+#### **SleepWellMonitor.swift** (DeviceActivityMonitorExtension)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/DeviceActivityMonitorExtension/SleepWellMonitor.swift`
+
+**Purpose & Types:**
+- DeviceActivityMonitor subclass that responds to bedtime schedule events
+- Extends `DeviceActivityName` with `.bedtime` constant (lines 97-99)
+- Duplicates `BlockingMode` enum (lines 91-93) to match main app
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Extends `DeviceActivityMonitor` (line 7)
+- Imports `DeviceActivity`, `ManagedSettings`, `FamilyControls` (lines 1-4)
+- `intervalDidStart(for activity: DeviceActivityName)` (lines 12-51):
+  - Loads blocking mode and FamilyActivitySelection from shared UserDefaults
+  - Applies blocking via `ManagedSettingsStore` based on mode
+- `intervalDidEnd(for activity: DeviceActivityName)` (lines 54-63):
+  - Calls `store.clearAllSettings()` at wake time
+- `intervalWillStartWarning()` and `intervalWillEndWarning()` (lines 66-82):
+  - Called 5 minutes before bedtime/wake (print statements only, no action)
+- `eventDidReachThreshold()` (lines 85-87):
+  - Not implemented
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 18)
+- Keys accessed: `"blockingMode"`, `"activitySelection"` (lines 22-30)
+
+**Persistence:**
+- Reads from shared App Group storage
+
+**Pass/Key System:**
+- None
+
+**TODOs/Stubs:**
+- None found (warning methods are intentionally minimal)
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **SleepWellShieldConfig.swift** (ShieldConfigurationExtension)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/ShieldConfigurationExtension/SleepWellShieldConfig.swift`
+
+**Purpose & Types:**
+- Customizes the blocking shield appearance (screen shown when app is blocked)
+- Subclass of `ShieldConfigurationExtension` (line 6)
+- 4 override methods for different blocking scenarios (app, app+category, domain, domain+category)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `ManagedSettings`, `ManagedSettingsUI` (lines 1-2)
+- All methods return `ShieldConfiguration` with:
+  - Dark blur background (line 38)
+  - Dark background color (line 39)
+  - Moon icon (line 40)
+  - Title: "Time to Rest" (lines 41-44)
+  - Subtitle: Random quote + author (lines 45-48)
+  - Primary button: "Use Pass (\(remaining) left)" or "No Passes Left" (lines 49-52)
+  - Secondary button: "Stay Focused" (lines 56-59)
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 65)
+- Key: `"passesUsedThisWeek"` to calculate remaining (lines 67-70)
+
+**Persistence:**
+- Reads pass count dynamically (no storage)
+
+**Pass/Key System:**
+- `getPassesRemaining()` (lines 64-73): Decodes pass usage dates, returns `max(0, 3 - count)`
+- Primary button state changes based on remaining passes (lines 53-55)
+
+**Quote System:**
+- `randomQuote()` (lines 76-103) returns tuple with 20 quotes (subset of main app)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+#### **SleepWellShieldAction.swift** (ShieldActionExtension)
+**File:** `/Users/naomiivie/Downloads/App/Sleep/ShieldActionExtension/SleepWellShieldAction.swift`
+
+**Purpose & Types:**
+- Handles user actions on the blocking shield (button taps)
+- Subclass of `ShieldActionExtension` (line 6)
+- 4 methods for different scenarios (app, app+category, domain, domain+category)
+
+**FamilyControls/DeviceActivity/ManagedSettings Usage:**
+- Imports `ManagedSettings`, `ManagedSettingsUI` (lines 1-2)
+- All routes to `handleResponse()` method (lines 49-72)
+- `handleResponse()` (lines 49-72):
+  - Primary button: Calls `usePassIfAvailable()` → if true, calls `store.clearAllSettings()` and returns `.close`; if false, returns `.defer`
+  - Secondary button: Returns `.defer` (keep shield active)
+
+**App Group & UserDefaults:**
+- Uses `UserDefaults(suiteName: "group.com.sleepwell.shared")` (line 76)
+- Keys: `"passesUsedThisWeek"`, `"lastWeekReset"` (lines 80, 112)
+
+**Persistence:**
+- `usePassIfAvailable()` (lines 75-101):
+  - Loads pass dates, checks/resets for new week, appends current Date if available, saves back
+  - Returns true if pass successfully used
+- `checkAndResetIfNewWeek()` (lines 104-124):
+  - Mirrors PassManager logic
+
+**Pass/Key System:**
+- Core unlock mechanism: Decrement remaining passes before clearing all shields
+- Resets weekly (Sunday boundary)
+
+**TODOs/Stubs:**
+- None found
+
+**Email/AI/Agent References:**
+- None
+
+---
+
+### 4. CROSS-FILE CONSISTENCY CHECKS
+
+**App Group Identifier (Consistent across all files):**
+- `"group.com.sleepwell.shared"` (8 files: ScheduleManager, AppBlockerModel, PassManager, SleepWellMonitor, SleepWellShieldConfig, SleepWellShieldAction)
+
+**DeviceActivityName Identifier (Consistent):**
+- `"com.sleepwell.bedtime"` (2 files: ScheduleManager, SleepWellMonitor)
+
+**UserDefaults Keys (9 total):**
+1. `"blockStartHour"` - ScheduleManager
+2. `"blockStartMinute"` - ScheduleManager
+3. `"wakeHour"` - ScheduleManager
+4. `"wakeMinute"` - ScheduleManager
+5. `"scheduleEnabled"` - ScheduleManager
+6. `"blockingMode"` - AppBlockerModel
+7. `"activitySelection"` - AppBlockerModel
+8. `"passesUsedThisWeek"` - PassManager, SleepWellShieldConfig, SleepWellShieldAction
+9. `"lastWeekReset"` - PassManager, SleepWellShieldAction
+
+**BlockingMode Enum (Duplicated):**
+- Defined in both AppBlockerModel.swift and SleepWellMonitor.swift (necessary for extension)
+
+---
+
+### 5. CLOUD SYNC & MULTI-DEVICE
+
+**Finding:** NO CloudKit, iCloud sync, or multi-device synchronization detected. All data persists locally only via UserDefaults + App Group.
+
+---
+
+### 6. HARDCODED PLACEHOLDERS & VERSION INFO
+
+- Version string: `"1.0.0"` (SettingsView.swift, line 73)
+- Passes per week: Hard-coded as `3` (PassManager.swift, line 7)
+- Default bedtime: `22:00` (10 PM)
+- Default wake time: `6:00` (6 AM)
+- Warning time: `5` minutes before bedtime/wake (ScheduleManager.swift, line 57)
+
+---
+
+### 7. COMPILATION STATUS
+
+**All files compile without errors:**
+- No missing imports
+- All enum cases handled (with `@unknown default` fallbacks where needed)
+- All async/await properly structured
+- All JSON encoding/decoding has error handling
+
+---
+
+### 8. REFERENCES TO EMAIL, AI, AGENTS
+
+**Finding:** NONE. No email, AI, LLM, or agent references in entire codebase.
+
+---
+
+## Summary Table
+
+| Component | File | Purpose | Key APIs |
+|-----------|------|---------|----------|
+| Auth | AuthorizationManager | FamilyControls permission | AuthorizationCenter.shared |
+| Schedule | ScheduleManager | Bedtime timing | DeviceActivityCenter, DeviceActivitySchedule |
+| Blocking | AppBlockerModel | App selection & modes | ManagedSettingsStore, FamilyActivitySelection |
+| Passes | PassManager | Emergency unlock tokens | Date tracking, weekly reset |
+| Quotes | QuotesProvider | 40+ biblical quotes | Static list |
+| Monitor Extension | SleepWellMonitor | Applies blocks at intervals | DeviceActivityMonitor callbacks |
+| Shield Config | SleepWellShieldConfig | Block screen appearance | ShieldConfiguration, quote + pass display |
+| Shield Action | SleepWellShieldAction | Pass redemption handler | ShieldActionResponse, pass decrement |
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

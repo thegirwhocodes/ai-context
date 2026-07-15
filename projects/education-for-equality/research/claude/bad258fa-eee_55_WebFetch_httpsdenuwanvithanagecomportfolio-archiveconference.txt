@@ -1,0 +1,51 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://denuwanvithanage.com/portfolio-archive/conferences/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:54:51 UTC
+========================================================================
+
+URL: https://denuwanvithanage.com/portfolio-archive/conferences/
+Extraction prompt: List all conferences Denuwan Vithanage has presented at, the topics, the dates, and any abstracts or descriptions of his research presentations.
+
+----------------------------------------
+
+# Denuwan Vithanage's Conference Presentations
+
+## Presented Research
+
+**DAMOP 2025** (June 16-20, 2025, Portland, Oregon)
+- Topic: "A Comprehensive Approach to Determining Molecular Inelastic Rate Constants"
+- Format: Poster presentation
+- Co-author: Brian Stewart
+
+**DAMOP 2024** (June 3-7, 2024, Fort Worth, Texas)
+- Topic: "Detailed Balance as an Internal Consistency Check for Molecular Collision Studies"
+- Format: Poster presentation
+- Co-authors: Jimmy Clifford, Othmane El Houssi, Brian Stewart
+
+**DAMOP 2020** (June 1-5, 2020, Portland, Oregon)
+- Topic: Fast quantum control of trapped rubidium Bose-Einstein condensates
+- Format: Poster presentation
+- Co-authors: Skyler Wright, E. Carlo Samson
+
+**SQuInt 2020** (February 8-10, 2020, Eugene, Oregon)
+- Topic: "Fast Quantum Control of Trapped 87Rb Bose-Einstein Condensates"
+- Description: "Numerical simulations on manipulating Bose-Einstein condensates at a fast rate while maintaining coherence properties"
+- Format: Poster presentation
+
+**MCAW 2019** (November 2, 2019, Northwestern University, Evanston, Illinois)
+- Topic: Fast quantum control research using numerical simulations
+
+**Graduate Research Forum** (November 1, 2019, Miami University, Oxford, Ohio)
+- Topic: Fast quantum control of trapped rubidium Bose-Einstein condensates
+
+**OSAPS Fall 2019** (October 11-12, 2019, Kettering University, Flint, Michigan)
+- Topic: Fast quantum control research
+
+**IBDW 2019** (June 5-7, 2019, Prince Waikīkī, Oʻahu, Hawaii)
+- Topic: Breast density on mammography as cancer predictor
+- Co-authors: Multiple contributors from medical research
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

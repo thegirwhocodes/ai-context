@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Northeastern University 2026 survey deaf community sign language technology skep
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:28:12 UTC
+========================================================================
+
+Search query: Northeastern University 2026 survey deaf community sign language technology skepticism Saki Imai Malihe Alikhani findings
+
+----------------------------------------
+
+Web search results for query: "Northeastern University 2026 survey deaf community sign language technology skepticism Saki Imai Malihe Alikhani findings"
+
+Links: [{"title":"Survey finds skepticism of sign language tech among Deaf community.","url":"https://news.northeastern.edu/2026/03/19/sign-language-technology-skepticism/"},{"title":"Survey finds skepticism of sign language tech among deaf community","url":"https://medicalxpress.com/news/2026-03-survey-skepticism-language-tech-deaf.html"},{"title":"Saki Imai","url":"https://saki-imai.com/"},{"title":"Malihe Alikhani - Khoury College of Computer Sciences","url":"https://www.khoury.northeastern.edu/people/malihe-alikhani/"},{"title":"Malihe Alikhani","url":"https://scholar.google.com/citations?user=w24_ETkAAAAJ&hl=en"},{"title":"MALIHE ALIKHANI - Khoury College of Computer Sciences","url":"https://discover-research.northeastern.edu/scholar/374297/MALIHE-ALIKHANI"},{"title":"Malihe ALIKHANI | PhD Computational Linguistics | Rutgers, The State University of New Jersey, New Brunswick | Rutgers | Department of Computer Science | Research profile","url":"https://www.researchgate.net/profile/Malihe-Alikhani"},{"title":"Deaf Studies (DEAF) < Northeastern University Academic Catalog","url":"https://catalog.northeastern.edu/course-descriptions/deaf/"},{"title":"People - American Sign Language & Interpreting Education","url":"https://cssh.northeastern.edu/asl/people/"},{"title":"Malihe Alikhani | EAI","url":"https://ai.northeastern.edu/our-people/malihe-alikhani"}]
+
+Based on the search results, here are the key findings from the Northeastern University 2026 survey on sign language technology and the Deaf community:
+
+## Overview
+
+Many members of the Deaf and Hard-of-Hearing (DHH) community are skeptical of sign language technology, according to a new survey from Northeastern University that polled respondents from around the world.
+
+## The Researchers
+
+Saki Imai, a Ph.D. student at Northeastern who led the research, noted that "historically, developers and researchers have been building technology, such as sign language recognition, translation and generation tools, without any collaboration or getting insights from the deaf community." Imai worked on sign language processing under professor Malihe Alikhani.
+
+## Key Findings
+
+**Community Concerns:**
+The standardization of signs used by the software led to international concerns that signs reflecting local nuance and cultures might be ignored and thereby erased. There are more than 100 registered sign languages throughout the world, and much like English or any other spoken language, there are also dialects and variants and the language evolves.
+
+**Mixed Perspectives:**
+Respondents with limited access to translation services were more optimistic about the technology, noting that "they provide independence, autonomy, and critical support in situations where human interpreters are not available."
+
+## Recommendations
+
+The survey demonstrates the need for early and continuous collaboration among the DHH community and the hearing community – in research, testing, and all other stages of the product development process.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

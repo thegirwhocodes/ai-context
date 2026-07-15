@@ -1,0 +1,53 @@
+========================================================================
+AGENT RESEARCH: Live Wesleyan Econ prizes scrape
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 19:20:01 UTC
+========================================================================
+
+**You have web access this time** — use WebFetch and WebSearch aggressively.
+
+Pull live information about **Wesleyan University Economics Department prizes and the senior thesis program**.
+
+Pages to fetch:
+1. `https://www.wesleyan.edu/econ/` — main department page, look for awards/prizes/honors links
+2. `https://www.wesleyan.edu/econ/thesis.html` or similar — thesis program details
+3. `https://www.wesleyan.edu/econ/awards.html` or `prizes.html` if it exists
+4. Search for: `"Wesleyan" "Lebergott-Lovell Prize" economics` — confirm the prize description and recent winners
+5. Search for: `"Wesleyan" "Plukas Prize" economics`
+6. Search for: `"Wesleyan" "Hallowell Prize"`
+7. Search for: `"Wesleyan" "Wilde Prize" economics`
+8. Search for: `"Wesleyan" "Horace White Fellowship"`
+
+For each prize, capture:
+- Exact name and current description
+- Eligibility (year, GPA, course requirements)
+- Selection process (faculty nominated? application?)
+- Recent winners (last 2-3 years if any are listed)
+- Prize amount (if listed)
+- Any application or nomination deadlines
+
+For the thesis program:
+- Eligibility requirements (current GPA cutoffs)
+- Two-semester (ECON 409+410) vs. one-semester (ECON 410) pathways
+- Evaluation process — number of readers, anonymity
+- Honors levels and thresholds
+- When students declare and enroll
+
+Update the file at `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/06_wesleyan_econ_prizes.md` with your **live verified** findings. Preserve the existing structure but replace cached claims with current verified facts. Mark any claims that you couldn't verify with [unverified - check].
+
+Context: the student (junior, Econ major) is writing an econometric paper on Nigerian out-of-school children for Prof. Kuenzel (Econ 349). She's targeting the Lebergott-Lovell Prize and considering a thesis. Confirm the term-paper-→-thesis pathway is real.
+
+Report a 250-word summary of what's actually on the live pages.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a3b8b88e69982856d (internal ID - do not mention to user. Use SendMessage with to: 'a3b8b88e69982856d' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a3b8b88e69982856d.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

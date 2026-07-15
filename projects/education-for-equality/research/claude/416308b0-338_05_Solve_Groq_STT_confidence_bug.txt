@@ -1,0 +1,160 @@
+========================================================================
+AGENT RESEARCH: Solve Groq STT confidence bug
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:22:38 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app.
+
+PROBLEM: The STT confidence value is effectively fixed, so the "low-confidence → ask the child to repeat" retry logic never fires. The recording route (app/api/sabi/at/recording/route.ts) checks `if (!sttResult.text.trim() || sttResult.confidence < 0.3)` then re-prompts. But lib/voice/stt.ts (Groq Whisper) reportedly returns a constant confidence (~0.8) whenever there's any text, so confidence < 0.3 is essentially unreachable.
+
+YOUR TASK: Read lib/voice/stt.ts fully and app/api/sabi/at/recording/route.ts (the confidence check). Determine exactly what Groq's verbose_json returns (segments with avg_logprob? no_speech_prob?) and how to derive a MEANINGFUL confidence: e.g., average segment avg_logprob mapped to [0,1], use no_speech_prob, and treat empty/garbage transcripts as low confidence. The goal: when Whisper mishears garbage or the child said nothing intelligible, the route should re-prompt rather than feed nonsense to the LLM.
+
+OUTPUT (do NOT edit files, do NOT deploy): exact `old_string`→`new_string` edits for stt.ts (and the threshold in recording/route.ts if needed), the reasoning for the confidence formula, and a risk note (don't make it so strict it rejects real Nigerian-accented speech). Reference what Groq's whisper-large-v3 verbose_json actually provides.
+
+----------------------------------------
+
+Confirmed. Groq's whisper-large-v3 verbose_json returns segments with `avg_logprob`, `no_speech_prob`, and `compression_ratio`. Now I have everything I need to diagnose the bugs and write the fix.
+
+Let me analyze why the current code produces a near-constant confidence:
+
+**Why confidence is effectively pinned high.** Whisper's `avg_logprob` for confident transcription typically sits around -0.1 to -0.3 (high quality) and rarely drops below -0.7 even for poor audio, because the decoder always picks the most probable token sequence and reports the log-prob of *that chosen path* — not of the audio actually matching real words. The current mapping `1 + avg_logprob` therefore yields ~0.7–0.9 almost all the time, and only crosses below 0.3 if `avg_logprob < -0.7`, which is rare. Crucially, the current code **ignores `no_speech_prob` and `compression_ratio` entirely** — the two signals that actually detect "child said nothing" and "Whisper hallucinated repetitive garbage." That's the real reason the retry never fires.
+
+## Proposed edits (no files changed)
+
+### Edit 1 — `lib/voice/stt.ts`: rewrite confidence derivation
+
+`old_string`:
+```typescript
+  const result = await response.json();
+
+  // Derive confidence from Whisper's avg_logprob in segments
+  let confidence = 0.0;
+  if (result.text && result.text.trim()) {
+    if (result.segments && result.segments.length > 0) {
+      const avgLogProb =
+        result.segments.reduce(
+          (sum: number, s: { avg_logprob: number }) => sum + s.avg_logprob,
+          0
+        ) / result.segments.length;
+      // Map log prob to 0-1 range: -1.0 → 0.0, 0.0 → 1.0
+      confidence = Math.max(0, Math.min(1, 1 + avgLogProb));
+    } else {
+      confidence = 0.8; // Default when segments aren't returned
+    }
+  }
+
+  return { text: result.text || "", confidence };
+}
+```
+
+`new_string`:
+```typescript
+  const result = await response.json();
+
+  const text = (result.text || "").trim();
+
+  // No text at all → definitely nothing intelligible.
+  if (!text) {
+    return { text: "", confidence: 0 };
+  }
+
+  // Derive a MEANINGFUL confidence from Whisper's per-segment diagnostics.
+  // Groq's whisper-large-v3 verbose_json returns, per segment:
+  //   avg_logprob       — avg log-prob of the chosen tokens (≈ -0.1 good … -1.0+ poor)
+  //   no_speech_prob    — P(segment is non-speech / silence)
+  //   compression_ratio — high (>2.4) signals repetitive hallucinated garbage
+  // We combine all three; avg_logprob alone is nearly constant and never
+  // catches "silence" or "hallucination" cases, which is what we care about.
+  type Segment = {
+    avg_logprob?: number;
+    no_speech_prob?: number;
+    compression_ratio?: number;
+  };
+  const segments: Segment[] = Array.isArray(result.segments)
+    ? result.segments
+    : [];
+
+  if (segments.length === 0) {
+    // No diagnostics available; we have text, so assume usable but not certain.
+    return { text, confidence: 0.6 };
+  }
+
+  const n = segments.length;
+  const avgLogProb =
+    segments.reduce((sum, s) => sum + (s.avg_logprob ?? -0.5), 0) / n;
+  const avgNoSpeech =
+    segments.reduce((sum, s) => sum + (s.no_speech_prob ?? 0), 0) / n;
+  const maxCompression = segments.reduce(
+    (max, s) => Math.max(max, s.compression_ratio ?? 0),
+    0
+  );
+
+  // Map avg_logprob → [0,1]. Whisper's usable range is roughly -1.2 (bad) to
+  // -0.1 (great), so anchor the scale there instead of -1.0→0.0.
+  // -1.2 → 0.0, -0.1 → 1.0
+  const logProbScore = Math.max(0, Math.min(1, (avgLogProb + 1.2) / 1.1));
+
+  let confidence = logProbScore;
+
+  // Penalize segments that are probably silence / breathing / background noise.
+  // no_speech_prob > ~0.6 means Whisper itself thinks there was no speech.
+  if (avgNoSpeech > 0.6) {
+    confidence *= 0.2;
+  } else if (avgNoSpeech > 0.4) {
+    confidence *= 0.6;
+  }
+
+  // Penalize hallucinated repetition (Whisper invents looping text on noise).
+  // compression_ratio > 2.4 is the standard Whisper hallucination threshold.
+  if (maxCompression > 2.4) {
+    confidence *= 0.3;
+  }
+
+  confidence = Math.max(0, Math.min(1, confidence));
+
+  return { text, confidence };
+}
+```
+
+### Edit 2 (optional, recommended) — `app/api/sabi/at/recording/route.ts`: nudge threshold
+
+The current threshold `< 0.3` becomes *meaningful* after Edit 1, because real garbage/silence now actually scores below it (a silent segment → `logProbScore` × 0.2 ≈ 0.1–0.15; a hallucination → × 0.3). I'd raise it slightly to `0.35` to give a small margin, but `0.3` is defensible. If you want to be conservative and avoid rejecting real speech, **leave it at 0.3.** Shown here as the optional bump:
+
+`old_string`:
+```typescript
+    if (!sttResult.text.trim() || sttResult.confidence < 0.3) {
+```
+
+`new_string`:
+```typescript
+    if (!sttResult.text.trim() || sttResult.confidence < 0.35) {
+```
+
+## Reasoning for the formula
+
+- **Three signals, not one.** `avg_logprob` measures how sure the decoder is about the *tokens it chose*, which is high even when those tokens are wrong. `no_speech_prob` is the actual "was there speech?" detector. `compression_ratio` is the actual "did Whisper hallucinate a repeating loop?" detector (the classic Whisper failure on silence/noise). The bug is that the old code used only the one signal that *doesn't* discriminate the cases we care about.
+- **Empty text → 0.** Direct and unambiguous.
+- **Rescaled log-prob anchor.** `-1.2 → 0, -0.1 → 1` matches Whisper's real-world distribution far better than `-1.0 → 0, 0.0 → 1`, so genuinely bad audio lands low instead of clustering at 0.7–0.9.
+- **Multiplicative penalties** so a segment that is *both* low-logprob *and* likely-silence compounds downward into retry territory, while a clean confident segment stays near 1.0.
+
+## Risk note — do NOT over-reject Nigerian-accented speech
+
+This is the real danger. Mitigations baked into the formula:
+
+- **Accent lowers `avg_logprob` modestly, not catastrophically.** Whisper-large-v3 still transcribes Nigerian English/Pidgin with avg_logprob typically in the -0.3 to -0.6 band → `logProbScore` ≈ 0.55–0.82, comfortably above 0.3/0.35. The wide -1.2→-0.1 scale is deliberately forgiving so accent doesn't tip real speech into retry.
+- **The hard penalties key off non-linguistic signals** (`no_speech_prob`, `compression_ratio`), which are accent-*independent* — silence is silence regardless of accent, and hallucinated loops are a decoder artifact, not an accent. This is what makes the gate safe: it punishes "no real speech" rather than "unusual pronunciation."
+- **Tunable thresholds.** `no_speech_prob > 0.6` and `compression_ratio > 2.4` are the conventional Whisper values. If field testing shows real kids getting asked to repeat too often, loosen by raising those (e.g. no_speech to 0.7) or lowering the route threshold back to 0.25 — do NOT tighten the log-prob scale.
+- **Recommendation:** keep the route threshold at **0.3** initially (not 0.35) and watch real call logs before tightening. Log `confidence`, `avgNoSpeech`, and `maxCompression` for a few sessions so you can calibrate against actual Nigerian-accented audio rather than guessing.
+
+One caveat to flag: I could not 100% confirm from Groq's public docs that the **top-level** response always includes a populated `segments` array for `verbose_json` (Groq mirrors OpenAI's schema, which does include it). The code already handles the missing-segments case — Edit 1 keeps a sane fallback (`confidence: 0.6`) so a missing array degrades gracefully instead of falsely triggering retries.
+
+**Files referenced:** `/Users/naomiivie/Education for Equality/curriculum-app/lib/voice/stt.ts` and `/Users/naomiivie/Education for Equality/curriculum-app/app/api/sabi/at/recording/route.ts`. No files were edited and nothing was deployed.
+agentId: a6cec9f42764c0811 (use SendMessage with to: 'a6cec9f42764c0811' to continue this agent)
+<usage>subagent_tokens: 30937
+tool_uses: 5
+duration_ms: 64888</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

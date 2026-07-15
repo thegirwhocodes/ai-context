@@ -1,0 +1,148 @@
+========================================================================
+AGENT RESEARCH: Check compaction hooks and events
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 05:03:03 UTC
+========================================================================
+
+I need to know:
+
+1. Does Claude Code fire any hook event when context compaction happens? Is there a hook type like "ContextCompaction" or similar?
+
+2. What causes the Claude Code VSCode extension text box to change to orange "ask before edits" mode? Is there a specific event, setting change, or permission mode shift that triggers this? Is it related to compaction?
+
+3. Is there ANY way to detect that compaction happened programmatically — via hooks, environment variables, system messages, or any other mechanism?
+
+Search thoroughly through all Claude Code documentation, hook types, and settings.
+
+----------------------------------------
+
+Excellent! Now I have comprehensive information. Let me compile the answers to your three questions based on the official documentation:
+
+## Answers to Your Questions
+
+### 1. Does Claude Code fire any hook event when context compaction happens?
+
+**YES.** Claude Code has two hook events specifically for context compaction:
+
+- **`PreCompact`** - Fires *before* context compaction occurs
+- **`PostCompact`** - Fires *after* context compaction completes
+
+Both hooks support matchers to distinguish between:
+- `manual` - User explicitly ran `/compact`
+- `auto` - Claude Code automatically triggered compaction because the context window filled up
+
+**Example hook configuration:**
+
+```json
+{
+  "hooks": {
+    "PostCompact": [
+      {
+        "matcher": "auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Context was auto-compacted; re-injecting critical context' >&2"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+From the documentation: *"Re-inject context after compaction: When Claude's context window fills up, compaction summarizes the conversation to free space. This can lose important details. Use a `SessionStart` hook with a `compact` matcher to re-inject critical context after every compaction."*
+
+---
+
+### 2. What causes the Claude Code VSCode extension text box to change to orange "ask before edits" mode?
+
+Based on the official documentation, the VS Code extension uses a **color-coded status indicator** on the spark icon:
+
+> "When using tabs, a small colored dot on the spark icon indicates status: **blue means a permission request is pending**, **orange means Claude finished while the tab was hidden**."
+
+**The orange color indicates:** Claude has finished its response while that tab was not in focus/visible. It's a notification that Claude needs your attention.
+
+This is NOT a permission mode change. The actual permission modes are:
+
+- `default` - Prompts for permission on each action (text box is normal)
+- `acceptEdits` - Auto-accepts file edits (text box is normal)  
+- `plan` - Read-only analysis mode (text box is normal)
+
+The permission mode indicator is separate from the completion status indicator. To check/change permission mode in VS Code, click the mode indicator at the bottom of the prompt box.
+
+---
+
+### 3. Is there ANY way to detect that compaction happened programmatically?
+
+**YES. Multiple ways:**
+
+1. **Via hooks** (deterministic):
+   - Use `PreCompact` or `PostCompact` hooks with matchers for `auto` or `manual`
+   - In the hook input JSON, you receive the compaction trigger reason
+   - Your hook can write to stdout/stderr or return JSON decisions
+   - From the code documentation: *"any text your command writes to stdout is added to Claude's context"*
+
+2. **Via SessionStart hook with "compact" matcher** (after the fact):
+   ```json
+   {
+     "hooks": {
+       "SessionStart": [
+         {
+           "matcher": "compact",
+           "hooks": [
+             {
+               "type": "command",
+               "command": "echo 'Context was compacted - reloading context...'"
+             }
+           ]
+         }
+       ]
+     }
+   }
+   ```
+
+3. **Via InstructionsLoaded hook** with `compact` as the load reason:
+   ```json
+   {
+     "hooks": {
+       "InstructionsLoaded": [
+         {
+           "matcher": "compact",
+           "hooks": [...]
+         }
+       ]
+     }
+   }
+   ```
+
+From the documentation: *"The matcher filters by... `InstructionsLoaded` [by] load reason: `session_start`, `nested_traversal`, `path_glob_match`, `include`, `compact`"*
+
+---
+
+## Key Documentation References
+
+1. **Hooks Reference** - https://code.claude.com/docs/en/hooks.md
+   - Complete hook event list including `PreCompact` and `PostCompact`
+   - Matcher patterns for both `auto` and `manual` compaction
+
+2. **Hooks Guide** - https://code.claude.com/docs/en/hooks-guide.md
+   - Example: "Re-inject context after compaction"
+   - SessionStart hook with "compact" matcher pattern
+
+3. **How Claude Code Works** - https://code.claude.com/docs/en/how-claude-code-works.md
+   - Section: "When context fills up"
+   - Explains compaction triggers and available hooks
+
+4. **VS Code Extension** - https://code.claude.com/docs/en/vs-code.md
+   - Status indicator explanation (blue = pending permission, orange = tab hidden while Claude finished)
+
+Your CLAUDE.md already has a `UserPromptSubmit` hook with bash script export. You could enhance it to also track compaction events if needed.
+agentId: a725d39235e15d7ce (use SendMessage with to: 'a725d39235e15d7ce' to continue this agent)
+<usage>total_tokens: 46990
+tool_uses: 7
+duration_ms: 35267</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

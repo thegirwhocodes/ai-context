@@ -1,0 +1,48 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/Khushi-739/SLRNet
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:13:21 UTC
+========================================================================
+
+URL: https://github.com/Khushi-739/SLRNet
+Extraction prompt: Extract ALL details: how to install, how to run, what model is pretrained, what signs/words it recognizes, file structure, dependencies, whether it works on webcam in real-time, accuracy numbers, and most importantly — can I download pretrained weights and run inference immediately without training?
+
+----------------------------------------
+
+# SLRNet Repository Analysis
+
+Based on the GitHub page content provided, I can only extract **very limited information**:
+
+## What's Available:
+- **Project Description**: "Sign Language Recognition (SLR) system using LSTM model for real-time gesture translation without sensors"
+- **Language**: Python (100%)
+- **Repository Stats**: 2 stars, 1 fork, 1 commit
+- **Main Directory**: Contains a `HandSignDetector` folder
+
+## What's NOT Available:
+The page content does **not include**:
+- Installation instructions
+- How to run the code
+- Pretrained model information or download links
+- Which signs/words are recognized
+- Complete file structure details
+- Dependencies list
+- Real-time webcam capability confirmation
+- Accuracy metrics
+- Whether pretrained weights exist for immediate inference
+
+## Critical Gap:
+**The actual README.md and documentation files are not present in the provided content.** The page shows "Uh oh! There was an error while loading" for packages and contributors sections.
+
+## Recommendation:
+To get this information, you would need to:
+1. Visit the actual repository directly at `github.com/Khushi-739/SLRNet`
+2. Check the `HandSignDetector/` folder contents
+3. Look for README.md, requirements.txt, and model files
+4. Review any documentation or notebooks in the repository
+
+**Cannot confirm if pretrained weights are available for download without accessing the actual files.**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

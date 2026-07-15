@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: site:vapi.ai pricing page
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 04:04:02 UTC
+========================================================================
+
+Search query: site:vapi.ai pricing page
+
+----------------------------------------
+
+Web search results for query: "site:vapi.ai pricing page"
+
+Links: [{"title":"Pricing - VAPI","url":"https://vapi.ai/community/m/1407279544854904884"},{"title":"Frequently Asked Questions | Vapi","url":"https://docs.vapi.ai/faq"},{"title":"Pricing questions - VAPI","url":"https://vapi.ai/community/m/1375526156744261642"},{"title":"Pricing details - VAPI","url":"https://vapi.ai/community/m/1376264567730077746"},{"title":"Buenas como puedo saber que precio utilizar al mes. - VAPI","url":"https://vapi.ai/community/m/1374468827857031310"},{"title":"models on vapi have a base price + a price per token based on sys prompt? - VAPI","url":"https://vapi.ai/community/m/1426982494774890547"},{"title":"Cloning voice pricing - VAPI","url":"https://vapi.ai/community/m/1375265611394842675"},{"title":"Request for Clear Pricing Per Minute for Client Estimates - VAPI","url":"https://vapi.ai/community/m/1369551817805008996"},{"title":"Request for Pricing Details – Concurrency Upgrade, Bundled Minutes & Overage Model - VAPI","url":"https://vapi.ai/community/m/1472898897222434856"},{"title":"Chat Api Pricing - VAPI","url":"https://vapi.ai/community/m/1385214994198691860"}]
+
+I found several search results related to Vapi's pricing. Based on the search results, here's what I found:
+
+The Vapi pricing page is located at https://vapi.ai/pricing.
+
+From the community discussions and support responses, here are some key pricing details:
+
+**Pricing Structure:**
+- The total cost per minute includes a Vapi platform fee ($0.05/min) plus provider costs: Transcriber (~$0.01/min), Model (~$0.02-$0.20/min depending on the model), and Voice (~$0.02-$0.07/min depending on provider)
+
+**Available Plans:**
+The search results mention several plan types including "Ad Hoc" and references to "Startup" and "Agency" plans, though some older posts indicated certain plans were "Coming Soon."
+
+**Cost Calculator:**
+Vapi provides a pricing page where you can calculate cost estimates, with an "Estimate your cost" section that helps users project their expenses based on their usage.
+
+For the most current and detailed pricing information, I recommend visiting the actual pricing page at https://vapi.ai/pricing, as pricing may have been updated since these community discussions were posted.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

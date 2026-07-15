@@ -1,0 +1,45 @@
+========================================================================
+AGENT RESEARCH: Search for context window check
+Session: ae7bcad0-675c-4627-8cc6-9e3135af03c3
+Time: 2026-03-19 06:08:59 UTC
+========================================================================
+
+Is there a way for Claude Code to check how much context window has been used, or how much context remains? Is there a slash command, API, or any method to see current token usage or context consumption during a conversation?
+
+----------------------------------------
+
+Based on my review of the Claude Code and Claude API documentation, **there is no built-in slash command or direct API method in Claude Code to check real-time context window usage during a conversation.** Here's what I found:
+
+## Current State
+
+The Claude Code documentation mentions context window management in the "how-claude-code-works" section, but the focus is on *managing* context (compaction, skills, subagents) rather than *monitoring* it in real-time.
+
+## What's Available
+
+1. **Session transcripts** - You can review what happened in past sessions, but not live usage
+2. **Context management strategies** - Claude Code provides tools to *reduce* context consumption:
+   - Use subagents for investigation
+   - Use skills to offload processing
+   - Compact sessions when context fills
+3. **The `/cost` command** - Tracks token costs after the fact, but this shows overall consumption, not granular context window breakdown
+
+## Why This Gap Exists
+
+Context window monitoring during a live session would require the Claude API to return detailed token accounting data in each response, which currently isn't exposed to the CLI in a queryable way. The `/cost` command gives aggregate usage metrics for tracking expenses, but not real-time "context remaining" visibility.
+
+## Recommendation
+
+If you need to track context consumption actively, I'd suggest:
+- Configure a **statusline** to display context metrics (see: https://code.claude.com/docs/en/statusline.md)
+- Use hooks to log token usage at key points
+- Check the `/cost` command after sessions to understand your patterns
+
+Would you like help setting up a statusline that tracks context, or is there a specific use case driving this question?
+agentId: a1e2b603e08f42118 (use SendMessage with to: 'a1e2b603e08f42118' to continue this agent)
+<usage>total_tokens: 20868
+tool_uses: 2
+duration_ms: 14986</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

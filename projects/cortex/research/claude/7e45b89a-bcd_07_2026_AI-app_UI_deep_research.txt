@@ -1,0 +1,254 @@
+========================================================================
+AGENT RESEARCH: 2026 AI-app UI deep research
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-09 03:07:10 UTC
+========================================================================
+
+Deep research for Naomi who is building Cortex / voice-email — a voice-driven AI email assistant. She needs the UI to feel "EXTREMELY smart, human-like, startup-quality." Currently it's minimal jet-black with a single pulsing orb in the center, Inter typography, an ElevenLabs voice talking back. She thinks it's not good enough.
+
+Her established preferences (from memory):
+- Jet black (#000000), minimal, non-anxiety-inducing
+- Inter font
+- One thing at a time
+- Calm, not overwhelming
+
+Research the 2026 standard for:
+
+1. **AI-native voice/chat app UIs** that feel premium and intelligent. Concrete examples to research deeply: Granola (meeting notes), Sublime (writing), Linear AI features, Phia (price comparison), Friend (always-listening pendant), Limitless (always-listening), Cap (coding agent), Superhuman (email), Hey (email), Spike (email), Notion AI inline, ChatGPT desktop app, Claude desktop app. For each: what specifically makes it feel premium vs generic? Cite specific UI patterns.
+
+2. **Typography systems used by top startups in 2026.** Inter is fine but not distinctive. What are people actually using — Inter Display variant, Söhne, ABC Diatype, Geist (Vercel's), Inter Tight, custom variable fonts. What pairings? What scale system?
+
+3. **Motion design language.** What's the cadence of motion at premium AI apps in 2026? Spring physics vs cubic-bezier? What easing functions feel "human"? Where do micro-animations earn their keep vs feel gimmicky? Specific reference: Linear's view transitions, Stripe's checkout, Vercel dashboard, Apple's iOS spring animations.
+
+4. **Voice/audio app UI patterns specifically.** When the app is talking and listening: what visualizations work? Pulsing orb is a cliché — what else? Real waveforms, particle systems, ambient gradients, iOS Siri shimmer, breathing dots, concentric rings? What does Granola/Limitless/ChatGPT-voice actually do?
+
+5. **"AI personality" in UI copy.** How do best-in-class AI products write microcopy that feels like a person, not a chatbot? Hey.com is famously opinionated. Linear copy is dry-witty. Superhuman is action-oriented. What patterns translate to a calm voice email assistant?
+
+6. **Empty states, done states, loading states.** These are where startups separate from indie hacks. Specific patterns at top apps?
+
+7. **Color discipline.** Pure black + one accent vs warmer neutrals (#0A0A0A, #111) + multiple accents. What works for "calm but confident AI" — Anthropic's site uses cream-on-warm-dark, OpenAI uses gray, Linear uses cool-blue accents. What color story serves the "extremely smart, calm, human-like" brief?
+
+8. **Specific "wow" details** worth stealing. Things like Linear's command palette, Granola's transcript-as-typography, Vercel dashboard's micro-charts, Apple Intelligence's color shimmer, Phia's price-comparison animation.
+
+Output should be CONCRETE and ACTIONABLE — under 1500 words, lots of specific patterns I can implement, not abstract design theory. Cite real products and what they do well. Output goes back to me to combine with a UI audit and turn into a redesign plan for Naomi to approve.
+
+----------------------------------------
+
+I have rich material. Synthesizing now into the concrete, actionable brief.
+
+---
+
+# 2026 Premium AI Voice App UI — Research Brief for voice-email Redesign
+
+## 1. What makes premium AI apps actually feel premium (concrete patterns)
+
+**Granola** — the "premium" feel comes from one specific move: visual separation of human vs AI thought. User-typed notes render in **black**, AI-generated content in **gray**, both in the same document. No chrome, no chat bubbles — it's a single typographic surface where the AI is a different *weight of voice*, not a different speaker. Hierarchy via H1/H2/lists, no card boundaries. Transcription is hidden behind a pull-out drawer; you never see the raw stream unless you ask. Critique to avoid: reviewers call the gray-on-gray "bland and dated" — so do this with real contrast, not muddy mid-grays.
+
+**ChatGPT Voice (separate mode)** — full-screen single object, no chat history visible, no buttons except mute/end. State is encoded in the orb itself (idle/listening/thinking/speaking each have distinct rotation speed, intensity, color shimmer). The "premium" trick: state transitions are **smoothed** so you never see a hard mode switch — color and motion crossfade.
+
+**Apple Intelligence / iOS 18 Siri** — the rainbow edge-shimmer that traces the screen border when Siri is invoked. Built with SwiftUI mesh gradients + animating paths + custom shaders. The radical move: Siri *isn't* a thing on screen anymore, it's an *atmospheric property* of the whole interface. The screen breathes color at the edges.
+
+**Linear** — premium-ness is the **absence of nonsense**. Pure functional surface, command palette (Cmd-K) is the API, every action has a keyboard shortcut shown next to its menu entry. View transitions between states (Triage → Backlog → In Progress) are instantaneous with view-transition crossfade — no spinners.
+
+**Limitless / Friend** — both lean into the "the device is listening, the *app* is just memory." The mobile app is a **timeline of moments**, not a chat. No orb at all in Limitless's main view — just typography of past conversations, with a tiny LED-style status pill at the top.
+
+**Superhuman AI** — the premium signal is "AI matches *your* voice" — the UI never breaks frame to say "AI suggests." Drafts simply appear in your own draft area, ready to edit. No "AI generated" badge.
+
+**Common premium pattern across all of them**: hide the AI's mechanism, surface only the result. Don't show "thinking..." — show the thought.
+
+---
+
+## 2. Typography — the 2026 stack
+
+**The honest take**: Inter is the new Helvetica — invisible because it's everywhere. It signals "default template." Specific 2026 alternatives ranked by fit for a calm, intelligent voice app:
+
+| Font | Vibe | Fit |
+|---|---|---|
+| **Geist Sans** (Vercel, free, OFL) | Swiss-modern, tighter than Inter, slightly more character at small sizes | Best fit. Free. Already paired w/ Geist Mono for any code/timestamps |
+| **Söhne** (Klim, paid ~$600) | Aspirational. What Stripe, OpenAI, Loom use. Akzidenz-Grotesk lineage | Premium but expensive |
+| **ABC Diatype** (Dinamo, paid) | Editorial, slightly humanist | Used by Anthropic-adjacent brands |
+| **Inter Tight** | Inter but tighter tracking | Lazy upgrade — still reads as Inter |
+| **Tiempos** or **Editorial New** | Serif | For a serif accent (see Anthropic strategy below) |
+
+**Recommended pairing for voice-email**: **Geist Sans** for UI + a serif accent (**Tiempos Headline** or system `ui-serif`) for the AI's spoken/transcribed messages. This creates the same Granola-style "two voices on one page" — but typographically rather than chromatically. The AI's words feel literary; the UI feels engineered.
+
+**Scale system** — use a modular scale, not arbitrary px. Reference Vercel Geist: 12, 14, 16, 18, 24, 32, 48, 64. Line-height 1.5 for body, 1.1 for display. Tracking `-0.01em` to `-0.02em` on display sizes. **One** display size on a screen, not two.
+
+---
+
+## 3. Motion language — what feels human in 2026
+
+**The hard rule from 2025/26 sources**: linear easing reads as robotic. Built-in `ease-in/ease-out/ease` reads as default. **Custom cubic-beziers and spring physics read as intentional.**
+
+**Specific easings to put in your tokens** (Stripe's actual production curves are good reference):
+- **Decelerate** (most things entering): `cubic-bezier(0.2, 0.8, 0.2, 1)` — Stripe uses `cubic-bezier(.2, 1, .2, 1)`
+- **Accelerate** (things exiting): `cubic-bezier(0.4, 0, 1, 1)`
+- **Standard** (state changes): `cubic-bezier(0.4, 0, 0.2, 1)` (Material's "standard")
+- **Spring overshoot** (delight, sparingly): `cubic-bezier(0.34, 1.56, 0.64, 1)` (easeOutBack)
+- For real spring physics, use Motion (Framer Motion) `transition={{ type: "spring", stiffness: 300, damping: 30 }}` or the new CSS `linear()` function with sampled spring data
+
+**Durations**: 150ms (micro: button hover), 250ms (UI state change), 400ms (page-level transition), 800ms+ only for ambient/atmospheric motion (e.g., breathing orb).
+
+**Where motion earns its keep**:
+- View transitions (use the View Transitions API — it's what makes Linear's navigation feel native)
+- State morphs (Dynamic Island pattern — one element changes shape, never disappears + reappears)
+- Ambient/idle state (slow breathing on a focal element signals "alive but calm")
+
+**Where motion is gimmicky**: bounce on every button click, rotate on hover, parallax scroll, anything that draws attention to itself rather than communicating state.
+
+---
+
+## 4. Voice/audio visualizations — beyond the pulsing orb
+
+**The orb is a cliché when it's a single colored sphere that pulses to amplitude.** It's not a cliché when it's used as a *canvas* for state. Concrete alternatives, ranked:
+
+1. **Mesh gradient that breathes** (Apple Intelligence / iOS 18 model). A 4×4 SwiftUI mesh gradient, or on web a WebGL fragment shader (or animated SVG `feTurbulence` / CSS `conic-gradient` + `@keyframes`), with internal vertices oscillating on sine waves. Edges fixed, interior moves. Color shifts subtly with state. **This is the single biggest "wow" upgrade available** and Naomi's "calm, non-anxiety" brief is exactly what mesh gradients deliver.
+2. **Edge-of-screen glow** (Siri pattern). The voice indicator is a soft inset shadow around the entire viewport that brightens when listening, shifts hue when thinking, settles when speaking. The app *itself* becomes the indicator. Removes the orb entirely.
+3. **Concentric rings** — three to five faint rings at different opacities, each with slightly offset rotation, intensity tied to amplitude. Reads as more "intentional" than a single sphere.
+4. **Breathing dot** — single tiny dot, just opacity + scale on a 4-second sine. The most restrained option. Used by Limitless's status pill.
+5. **Real waveform** — only good for *playback* of past voice messages, never for live state (too jittery, anxiety-inducing).
+6. **Particle field** — slow drifting dots, density tied to state. Too busy for "calm" brief, skip.
+
+**State encoding** (the four states every voice app needs):
+- **Idle**: very slow breath, low intensity, neutral color
+- **Listening**: subtle responsiveness to mic amplitude, cool color (white/blue tint), no jitter
+- **Thinking**: stop responding to amplitude, switch to internal motion (rotation, mesh oscillation), warmer color, **never show a spinner**
+- **Speaking**: amplitude responds to TTS output (drive it from the audio buffer, not just on/off), warm color
+
+**Sources confirm**: silence > 3 seconds reads as broken. Always have *some* motion during thinking.
+
+---
+
+## 5. AI personality in microcopy — the calm-confident pattern
+
+**The four reference voices**:
+- **Hey** — opinionated, branded, renames features ("Imbox," "Bubble Up"). Polarizing. Don't copy.
+- **Linear** — dry, terse, technical. "Triage." "Move to backlog." Action verbs, no apology.
+- **Superhuman** — imperative, second-person. "Reply with summary." "Send when ready." Never "Would you like to...?"
+- **Anthropic/Claude** — warm, slightly literary, comfortable with uncertainty. Serif font reinforces this.
+
+**Patterns that translate to a calm voice email assistant**:
+- **No "I"** in routine confirmations. "Sent." not "I've sent it." Reserve "I" for moments of genuine reasoning ("I'm not sure who you mean — the Sarah from Tuesday or Sarah Chen?").
+- **No exclamation marks. Ever.**
+- **No "please" or "sorry"** in normal flow. They infantilize. Save apology for actual failures.
+- **Specific over generic**. Not "Done!" — "Sent to Sarah." Not "Got it" — "Replying to the Stripe thread."
+- **Comfortable with uncertainty**: "Three threads might match — the Stripe one, the design review, or your mom's. Which?" beats "I couldn't determine which thread."
+- **No "as an AI"** or any meta-reference. Ever.
+- **Past tense for completed actions, present for current** ("Drafted." vs "Drafting." vs "Sent.")
+- **Length discipline**: 1–3 sentences, max. Already in Naomi's memory — Kokoro hangs on long output. This is also just better voice copy.
+
+**Specific replacements for common chatbot language**:
+- "How can I help you today?" → silence (just listen)
+- "I'm sorry, I didn't understand" → "Say that again?"
+- "Is there anything else?" → silence
+- "Processing your request..." → no copy, just motion
+- "Here is the email:" → just show the email
+
+---
+
+## 6. Empty / done / loading states
+
+**The startup-vs-indie-hack tell** is what happens in these three moments. Patterns from top apps:
+
+**Empty state** (no emails, fresh inbox):
+- **Don't** say "No messages." (negative, dead)
+- **Do** make it the *default ambient view*: the breathing visualizer + a single line of literary copy ("Quiet morning." / "Caught up."). Anthropic-style serif works here. Linear puts a single illustration + an action.
+
+**Done state** (just sent, just archived):
+- **Apple/Stripe pattern**: brief checkmark morph (the action button morphs into a check, holds 800ms, morphs back). Never a toast.
+- Confirmation in the visualizer itself: a single soft pulse, color flash, return to idle.
+- Optional: one-line haiku-style summary appears, fades. "Sent to Sarah. Two more in the queue."
+
+**Loading state** (AI thinking, draft generating):
+- **Never a spinner.** Spinners read as 2014.
+- Skeleton for known-shape content (email list).
+- For unknown-shape AI output (a draft being written): **streaming text with a blinking cursor**. ChatGPT/Claude pattern. Reads as "alive."
+- For voice processing: the visualizer's thinking state. No copy.
+
+**Reference**: Linear uses no spinners anywhere. Vercel dashboard skeletons load in <100ms perceived.
+
+---
+
+## 7. Color discipline — the "calm but confident AI" palette
+
+**Pure #000 vs #0A0A0A debate**: the consensus from design system sources is #000 looks dramatic on OLED but causes eye strain over long sessions, and pure black removes the ability to layer surfaces (you can't go *darker* than the background, which kills depth). **Recommendation: #0A0A0A as base, with #000 reserved for one or two depth layers (modal scrims, deepest insets).**
+
+**Three reference color stories for AI apps**:
+| Brand | Story | Files |
+|---|---|---|
+| **Anthropic / Claude** | Warm cream `#F4F1EA` on warm dark, terracotta `#C15F3C` accent, serif body | "Thoughtful, literary" |
+| **OpenAI / ChatGPT** | Pure neutral grays, no warm/cool tint, near-monochrome | "Clinical, capable" |
+| **Linear / Vercel** | Cool gray ramp, electric accent (`#0070F3` Vercel blue, `#5E6AD2` Linear purple) | "Engineered, fast" |
+
+**For voice-email's "extremely smart, calm, human-like" brief**, the Anthropic approach maps best — but inverted (warm cream accent on warm dark, instead of warm dark on cream). Concrete palette:
+
+- **Background**: `#0A0908` (warm-tinted near-black, not cool-black)
+- **Surface**: `#141210` (one notch up for cards/dividers)
+- **Surface raised**: `#1C1A18`
+- **Text primary**: `#F4F1EA` (warm off-white, NOT pure white — pure white on dark is harsh)
+- **Text secondary**: `#A8A29A` (warm mid-gray)
+- **Text tertiary**: `#6B6760`
+- **Accent (single)**: `#D97757` (Anthropic-style terracotta) OR `#E8B948` (warm amber, "lamplight") — pick ONE
+- **Success / sent**: a slight green-shift on the accent, not a separate color
+- **Error / failure**: a slight red-shift, not pure red
+
+**The discipline**: one accent. Used only for active state, the focal voice indicator color, and confirmations. Everything else is the warm-neutral ramp.
+
+This stays inside Naomi's "jet black, minimal, calm" rule but adds the warmth that separates "premium calm" from "cold/clinical calm."
+
+---
+
+## 8. Specific "wow" details worth stealing
+
+Ranked by implementation cost vs impact:
+
+1. **Mesh gradient that breathes** as the central focal element instead of a sphere orb. (Web: WebGL shader or layered animated `radial-gradient`s. iOS: SwiftUI `MeshGradient` from iOS 18+.) Highest impact.
+2. **Edge-of-viewport glow** for global voice state — soft inset box-shadow on the body, color/intensity shifts with state. Apple Intelligence pattern. Removes the need for a discrete orb.
+3. **View Transitions API** for navigation between inbox / draft / sent views. Native browser support, ~10 lines of CSS. Makes the app feel iOS-native on web.
+4. **Streaming serif text** for the AI's transcribed responses — letters appear with a 30–50ms stagger, in serif. Reads like the AI is "writing" not "outputting."
+5. **Cmd-K command palette** with everything reachable. Linear's killer feature. Even if Naomi's primary input is voice, power users will love this and reviewers will notice it.
+6. **Dynamic-island-style morph** for the voice control: when idle it's a small pill at the bottom; tap to talk and it expands fluidly into the central visualizer; releases back to a pill when done. Single element morphing, never appearing/disappearing.
+7. **"Two voices, one surface"** (Granola pattern): Naomi's spoken words render in one weight/color, AI's words render in another (e.g., serif italic) on the same scrolling surface. No chat bubbles. No "You:" / "AI:" labels.
+8. **Audio-driven visualization for TTS playback** — drive the visualizer's amplitude from the actual TTS audio buffer (Web Audio API `AnalyserNode`), so the orb is genuinely lip-syncing to the voice. ChatGPT does this; ElevenLabs' own UI components do this. It's the difference between "alive" and "fake alive."
+9. **Single-line haiku confirmations** — after every action, one literary line in the visualizer area. "Sent to Sarah." / "Three left in the queue." / "Quiet now." Disappears after 2s. Costs nothing, feels handcrafted.
+10. **Custom selection color** in the warm accent — tiny detail, but selection highlight color is one of those things that immediately reads "designed."
+
+---
+
+## TL;DR for the redesign plan
+
+The single biggest move: **replace the pulsing blue orb with an Apple-Intelligence-style mesh gradient** (warm-cream-on-warm-dark palette) that occupies the same focal space, breathing slowly when idle, responding to mic amplitude when listening, doing internal mesh oscillation when thinking, and lip-syncing to the TTS buffer when speaking. **Switch typography to Geist Sans + a serif accent** for AI utterances (the Granola "two voices" pattern). **Tighten copy** to Linear/Superhuman terseness — no "I", no "please", no exclamation marks, 1–3 sentences, specific over generic. **Add one accent color** (warm terracotta or amber lamplight), used only for active state and confirmations. **Custom cubic-bezier motion tokens** instead of default easings. **No spinners anywhere** — skeletons or streaming text. **Cmd-K palette** for power users.
+
+Sources:
+- [Granola review (BlueDot)](https://www.bluedothq.com/blog/granola-review)
+- [Granola design review (Medium)](https://medium.com/design-bootcamp/how-granola-ai-helped-me-stop-taking-notes-and-start-listening-during-meetings-and-interviews-ff72215b6553)
+- [ChatGPT Voice Mode guide](https://justainews.com/companies/openai/chatgpt-voice-mode-explained/)
+- [ElevenLabs UI Orb component](https://ui.elevenlabs.io/docs/components/orb)
+- [Building a Voice Reactive Orb (Medium)](https://medium.com/@therealmilesjackson/building-a-voice-reactive-orb-in-react-audio-visualization-for-voice-assistants-2bee12797b93)
+- [iOS 18 Siri animation in SwiftUI](https://x.com/metasidd/status/1801332173947158799)
+- [SwiftUI Mesh Gradients animated](https://nilcoalescing.com/blog/MeshGradientsInSwiftUI/)
+- [Geist font (Vercel)](https://vercel.com/font)
+- [Geist Design System / Colors](https://vercel.com/geist/colors)
+- [Vercel Design System Breakdown (SeedFlip)](https://seedflip.co/blog/vercel-design-system)
+- [Inter alternatives 2026 (Made Good)](https://madegooddesigns.com/popular-fonts/)
+- [Spring physics in JS animation (Josh Comeau)](https://www.joshwcomeau.com/animation/a-friendly-introduction-to-spring-physics/)
+- [CSS linear() spring easing (Josh Comeau)](https://www.joshwcomeau.com/animation/linear-timing-function/)
+- [Stripe Connect front-end / cubic-bezier](https://stripe.com/blog/connect-front-end-experience)
+- [Linear's delightful design patterns (Gunpowder Labs)](https://gunpowderlabs.com/2024/12/22/linear-delightful-patterns)
+- [Anthropic Claude brand palette (Mobbin)](https://mobbin.com/colors/brand/claude)
+- [Dark mode design systems (Muz.li)](https://muz.li/blog/dark-mode-design-systems-a-complete-guide-to-patterns-tokens-and-hierarchy/)
+- [Voice UI Design Guide 2026 (Fuselab)](https://fuselabcreative.com/voice-user-interface-design-guide-2026/)
+- [Brand Voice for AI Products 2026 (Mavik Labs)](https://www.maviklabs.com/blog/brand-voice-ai-products-2026/)
+- [Skeleton screens 101 (NN/g)](https://www.nngroup.com/articles/skeleton-screens/)
+- [Dynamic Island morph pattern (SmoothUI)](https://smoothui.dev/docs/components/dynamic-island)
+- [Limitless pendant review](https://winstonfrancois.com/blog/limitless-ai-pendant-plaud-ai-notetakers/)
+- [Superhuman AI write feature](https://help.superhuman.com/hc/en-us/articles/38456855116307-Write-with-AI)
+- [UX/UI 2026 trends — calm interfaces (Envato)](https://elements.envato.com/learn/ux-ui-design-trends)
+agentId: a197373de57ae50b7 (use SendMessage with to: 'a197373de57ae50b7' to continue this agent)
+<usage>total_tokens: 60074
+tool_uses: 25
+duration_ms: 192428</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs conversational AI agent Twilio setup guide step by step 2025 2026
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:35:10 UTC
+========================================================================
+
+Search query: ElevenLabs conversational AI agent Twilio setup guide step by step 2025 2026
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs conversational AI agent Twilio setup guide step by step 2025 2026"
+
+Links: [{"title":"Connect Twilio to ElevenLabs Conversational AI Voice Agents","url":"https://elevenlabs.io/agents/integrations/twilio"},{"title":"Build a Twilio Voice + ElevenLabs Agents Integration | Twilio","url":"https://www.twilio.com/en-us/blog/developers/tutorials/integrations/build-twilio-voice-elevenlabs-agents-integration"},{"title":"Integrate ElevenLabs Voices with Twilio's ConversationRelay | Twilio","url":"https://www.twilio.com/en-us/blog/integrate-elevenlabs-voices-with-twilios-conversationrelay"},{"title":"Twilio native integration | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/agents-platform/phone-numbers/twilio-integration/native-integration"},{"title":"ElevenAgents | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/eleven-agents/overview"},{"title":"GitHub - nibodev/elevenlabs-twilio-i-o: A JavaScript repository for integrating ElevenLabs Conversational AI agents with Twilio to handle both inbound and outbound calls. This integration supports sending custom parameters for personalised conversations.","url":"https://github.com/nibodev/elevenlabs-twilio-i-o"},{"title":"GitHub - louisjoecodes/elevenlabs-twilio-i-o: A JavaScript repository for integrating ElevenLabs Conversational AI agents with Twilio to handle both inbound and outbound calls. This integration supports sending custom parameters for personalised conversations.","url":"https://github.com/louisjoecodes/elevenlabs-twilio-i-o"},{"title":"Sending generated audio through Twilio | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/cookbooks/text-to-speech/twilio"},{"title":"How to Build a Smart Call Agent Using Twilio + ElevenLabs + n8n - DEV Community","url":"https://dev.to/ciphernutz/how-to-build-a-smart-call-agent-using-twilio-elevenlabs-n8n-296a"},{"title":"Building AI-Powered Phone Calls with Twilio and ElevenLabs in Go | by Kuba | Medium","url":"https://medium.com/@kczpl/building-ai-powered-phone-calls-with-twilio-and-elevenlabs-in-go-f18c169ce699"}]
+
+I found comprehensive information about setting up ElevenLabs Conversational AI agents with Twilio. Here's a summary of the key setup steps:
+
+## Basic Setup Steps
+
+To get started, navigate to Phone Numbers in the ElevenLabs dashboard and add your Twilio phone number using your Account SID and Auth Token. ElevenLabs will automatically configure voice webhooks for your Twilio number.
+
+First, fetch your Twilio credentials by going to your Twilio Console and scrolling down to the Account Info section to locate your Account SID and phone number.
+
+Then navigate to the Telephony > Phone Numbers section in ElevenLabs, click the Import number button, select "From Twilio," and enter your Twilio Phone number, Account SID, and Auth Token in the sidebar modal. Give it a Label and click Import.
+
+Once your phone number is added, select which AI agent handles calls by clicking on the "No agent" dropdown and selecting your agent from the list.
+
+## Key Features
+
+The integration provides AI-powered conversations on every call, real-time voice processing with sub-second response times, global scale with enterprise-grade reliability, and seamless integration with your existing Twilio setup.
+
+This integration handles both inbound and outbound calls.
+
+## Troubleshooting
+
+If you encounter issues, verify your Account SID/Auth Token in the ElevenLabs dashboard, check Twilio Console phone number settings, and verify the audio format is correctly configured as μ-law 8kHz.
+
+The search results include recent resources from October 2025 and the official ElevenLabs documentation, ensuring the information is current for 2025-2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

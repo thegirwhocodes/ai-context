@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research competitor sleep/blocking apps
+Session: 4b7a31d6-b579-4a4a-a44c-63b602b3158c
+Time: 2026-06-18 18:46:05 UTC
+========================================================================
+
+I'm doing an architecture review of a personal iOS+macOS "digital bedtime / screen-time discipline" app called "Sleep Well". Its differentiating feature: at a scheduled bedtime it blocks distracting apps (iOS Screen Time / Family Controls ManagedSettings shields) and locks the Mac, and the ONLY way to unlock early is to plead your case to an AI agent ("Sage") that reads your Gmail to verify whether your stated reason is genuine/urgent, granting at most ~3 reprieves per week.
+
+Research the competitive landscape and best practices. I need a cited, concrete report covering:
+
+1. Direct competitors and what they do well / badly. Cover at least: Opal, one sec, Brick (the physical NFC tile + app), Jomo, ScreenZen, Cold Turkey Blocker, Freedom, Forest, Roots, Clearspace, Unpluq, Bearable. For each: core mechanism, what makes blocking "stick" (friction model), pricing, and platform coverage.
+2. The "commitment device" / friction research: what actually stops people bypassing self-control apps? (e.g. random delays, NFC tile requirement, accountability partners, money on the line à la Beeminder/StickK). What mechanisms are proven most effective?
+3. iOS technical best practices & known limitations for apps like this: Family Controls / DeviceActivity / ManagedSettings / Shield extensions, the FamilyActivityPicker, the 20-monitored-activities limit, why iCloud KVS changes don't wake an app, and whether APNs background push or other mechanisms are the right way to do near-instant remote unlocks. Any recent (2024-2026) iOS API changes (e.g. iOS 17/18/26) relevant here.
+4. The AI-gatekeeper angle specifically: is anyone else doing "argue with an AI to unlock"? Any apps that gate unlocks on a conversational AI? What are the UX pitfalls?
+5. Concrete feature ideas this app should steal from the best-in-class, ranked by impact.
+
+Use web search and fetch real sources. Be skeptical and verify claims. Return a structured report with inline source URLs. Aim for depth over breadth on items 2 and 3.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a389a5c5c5b66bb48 (internal ID - do not mention to user. Use SendMessage with to: 'a389a5c5c5b66bb48' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Downloads-App-Sleep/4b7a31d6-b579-4a4a-a44c-63b602b3158c/tasks/a389a5c5c5b66bb48.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

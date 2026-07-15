@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: synthetic control "donor pool" selection criteria "similar" GDP population econo
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:11:04 UTC
+========================================================================
+
+Search query: synthetic control "donor pool" selection criteria "similar" GDP population economy Abadie
+
+----------------------------------------
+
+Web search results for query: "synthetic control "donor pool" selection criteria "similar" GDP population economy Abadie"
+
+Links: [{"title":"Using Synthetic Controls: Feasibility, Data Requirements, and ...","url":"https://conference.nber.org/confer/2021/SI2021/Abadie_2021.pdf"},{"title":"AN UPDATE ON THE SYNTHETIC CONTROL METHOD AS A TOOL TO UNDERSTAND STATE","url":"https://www.urban.org/sites/default/files/2022-05/An%20Update%20on%20the%20Synthetic%20Control%20Method%20as%20a%20Tool%20to%20Understand%20State%20Policy.pdf"},{"title":"The Synthetic Control Method as a Tool to Understand ...","url":"https://www.urban.org/sites/default/files/publication/89246/the_synthetic_control_method_as_a_tool_0.pdf"},{"title":"The inclusive Synthetic Control Method*","url":"https://arxiv.org/pdf/2403.17624"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, ...","url":"https://www.aeaweb.org/content/file?id=12409"},{"title":"A Note on the Synthetic Control Method and Its Application","url":"https://www.eustudies.org/eusa-forum/eusa-interest-section-essays/7/download"},{"title":"Comparative Politics and the Synthetic Control Method Alberto Abadie","url":"https://economics.mit.edu/sites/default/files/publications/Comparative%20Politics%20and%20the%20Synthetic%20Control.pdf"},{"title":"Synthetic Control Method: Opportunity for policy evaluation","url":"https://www.ideasforindia.in/topics/miscellany/synthetic-control-method-opportunity-for-policy-evaluation.html"},{"title":"Synthetic Controls in Action Alberto Abadie Jaume Vives-i-Bastida MIT MIT","url":"https://economics.mit.edu/sites/default/files/publications/ESWC_Paper-1.pdf"},{"title":"Synthetic Control Methods | GOLTC","url":"https://goltc.org/publications/synthetic-control-methods/"}]
+
+Based on the search results, here are the key findings about synthetic control donor pool selection criteria related to similarity in GDP, population, and economic characteristics according to Abadie and colleagues:
+
+## Donor Pool Selection Criteria
+
+It has been advised by Abadie, Diamond, and Hainmueller to restrict the donor pool to those units whose predictors are similar to those of the treated unit.
+
+The predictors must have values for the donor pool regions that are similar to those of the affected region, as this reduces the potential for interpolation bias, which can arise if donor units are chosen with outcomes far from the treated unit.
+
+## Practical Implementation
+
+Actively trimming the donor pool to units with values of the predictors that are close to the values of the predictors for the treated unit can substantially improve the performance of synthetic control estimators.
+
+Non-treated countries are chosen to match as closely as possible the pre-treatment characteristics of the treated country.
+
+## Example Application
+
+In the classic German reunification study, the donor pool consists of a set of industrialized countries, with comparisons made to the nearest neighbor of West Germany in terms of predictors values. The predictors used included GDP per capita, inflation rate, trade openness, industry share, schooling, and investment rate.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.tcu.edu/news/2026/serving-all-corners-of-the-world-students-claim-gl
+Session: 089265f6-4bf8-426a-96dc-cfa234d1df07
+Time: 2026-02-26 19:04:14 UTC
+========================================================================
+
+URL: https://www.tcu.edu/news/2026/serving-all-corners-of-the-world-students-claim-global-prize-for-ai-innovation.php
+Extraction prompt: Extract all details about Bakame AI: founders, how it works technically, what curriculum it supports, how to integrate or partner with it, pricing model, API, phone numbers, languages supported, and any contact information.
+
+----------------------------------------
+
+# Bakame AI: Key Information
+
+## Founders
+**Happy Niyorurema** (Sophomore, Economics & Finance) and **Diarra Niang** (Junior, Economics & Business Information Systems) — both international students at TCU, from Rwanda and Senegal respectively.
+
+## How It Works Technically
+Bakame AI operates through basic telephone networks rather than requiring internet connectivity. Users "call a phone number and directly interact with an AI-powered learning assistant" that delivers lessons, teaches concepts, and tracks progress across sessions.
+
+## Curriculum & Use Cases
+- **Primary focus:** English language learning with spaced repetition
+- **Broader applications:** Information delivery on health, sanitation, disease prevention, and public services access
+
+## Technical Integration & Partnership Details
+**Not specified in the article.** No API documentation, integration guidelines, or partnership procedures are mentioned.
+
+## Pricing Model
+**Not disclosed** in the available content.
+
+## Phone Numbers & Contact Information
+No specific phone numbers or contact details are provided.
+
+## Languages Supported
+Only English language learning is explicitly mentioned. The article notes the platform aims to "truly speak the user's language" through ongoing refinement.
+
+## Funding & Recognition
+- Received $8,000 initial funding through TCU's CREATE program
+- Won the Global Best M-Gov Award in Dubai (2026)
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

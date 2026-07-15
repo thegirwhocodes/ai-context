@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.diu.mil/latest/diu-at-the-2025-scsp-ai-expo
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:19:20 UTC
+========================================================================
+
+URL: https://www.diu.mil/latest/diu-at-the-2025-scsp-ai-expo
+Extraction prompt: What was Defense Innovation Unit's involvement at the 2025 SCSP AI+ Expo? What did they showcase, who from DIU spoke, what partnerships did they announce, what hackathon connections did they have? What does this tell us about how DoD acquisition contacts at the Expo can lead to follow-on opportunities for hackathon winners?
+
+----------------------------------------
+
+# DIU's 2025 SCSP AI+ Expo Involvement
+
+**Booth and Presence:**
+DIU maintained exhibit booth #522 alongside partner organizations (Army, AFWERX, ONR, CyberWorx) from June 2-4, positioning themselves to "energize your work with the DoD."
+
+**Speaking Engagements:**
+DIU representatives led multiple panels:
+- Doug Beck (Director) discussed "Building Bridges to Operationalize Commercial Tech for National Security" with Google leadership
+- Alex Campbell (Maritime Portfolio Lead) addressed Navy AI acceleration
+- Liz McNally (Commercial Operations Director) participated in aerospace discussions
+- Sarah Pearson (Deputy Director) moderated the final panel on operational AI integration
+
+**Key Message:**
+The content emphasizes DIU's role coordinating the "Defense Innovation Community of Entities" across 30 DoD participants to "accelerate the development, procurement, and fielding" of capabilities.
+
+**Hackathon Connections:**
+The provided content contains **no information about hackathons, hackathon winners, or follow-on opportunities** from competition participation. The page focuses exclusively on the expo's panel discussions and booth activities.
+
+**Implication for Acquisition:**
+While the expo showcased pathways for commercial companies to engage DoD, specific mechanisms linking hackathon success to procurement opportunities are not detailed in this material.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

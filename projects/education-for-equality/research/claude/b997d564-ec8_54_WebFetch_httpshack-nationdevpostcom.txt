@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://hack-nation.devpost.com/
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 07:19:15 UTC
+========================================================================
+
+URL: https://hack-nation.devpost.com/
+Extraction prompt: What are the rules for submissions? Can participants submit existing projects, or must the project be built entirely during the hackathon? What is the eligibility and judging criteria? Include any text about pre-existing code or IP.
+
+----------------------------------------
+
+# HackNation Hackathon: Rules, Eligibility & Judging
+
+## Eligibility Requirements
+
+Participants must be "above legal age of majority in country of residence" and can come from "all countries/territories, excluding standard exceptions."
+
+## Submission Rules & Judging
+
+The webpage content provided does not include detailed submission rules regarding whether pre-existing projects are permitted or if work must be created during the event. The page references a full rules document ("View full rules"), but that detailed content isn't included in the provided material.
+
+The only judging criterion visible is "Energy," though this appears incomplete.
+
+## Recommendation
+
+To obtain comprehensive information about:
+- Pre-existing code or intellectual property policies
+- Complete judging criteria
+- Specific submission requirements
+
+**You should review the complete rules at** `https://hack-nation.devpost.com/rules` or contact the hackathon managers at `build.noclue@gmail.com`.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

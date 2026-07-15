@@ -1,0 +1,183 @@
+========================================================================
+AGENT RESEARCH: Research getting a number from MTN/Airtel
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 18:18:20 UTC
+========================================================================
+
+Do deep web research (use WebSearch and WebFetch extensively — load them via ToolSearch with query "select:WebSearch,WebFetch" if needed) on exactly what it takes for a small organization to get a phone NUMBER directly from the major Nigerian mobile network operators — Airtel Nigeria and MTN Nigeria — and to get it zero-rated/toll-free.
+
+Context: "Sabi" is a US-founded edtech nonprofit (Education for Equality) running a Nigerian voice-AI tutor for out-of-school children. We want a number children can dial for free. We need the real process, eligibility, cost, timeline, and contacts.
+
+Research concretely:
+1. **Toll-free 0800 numbers in Nigeria** — the process to obtain one: directly from MTN/Airtel enterprise/business divisions vs. through an NCC-licensed VAS aggregator. What's required (CAC registration? NCC license?), setup cost, monthly cost, per-minute reverse-charge rate, activation timeline. Name the actual toll-free providers/aggregators (e.g. Alpha Technologies, InfoTek, Yana/Interra, Vezeti, VAS2Nets, Upperlink) with any 2024–2026 pricing.
+2. **NCC Value Added Service (VAS) licensing** — does a service like Sabi need an NCC VAS/SNS license to operate a number or shortcode? Current application cost and the full license fee, validity, and whether you must go through a VAS aggregator + MNO. The NCC framework (aggregator → MNO chain).
+3. **Corporate/enterprise numbers & shortcodes** — MTN EnterpriseBusiness and Airtel Business: getting a dedicated number or short code, requirements and cost.
+4. **Zero-rating directly** — what it actually takes to get MTN or Airtel to zero-rate a number for a social/education cause: which division (commercial vs CSR/Foundation), the process, and precedents. Find current 2024–2026 MTN Nigeria Foundation and Airtel Nigeria / Airtel Africa Foundation education-CSR programs, named executives/contacts, and any UNICEF/education zero-rating or "connecting schools" partnerships they've done.
+5. **Eligibility nuance** — does the org need a Nigerian-registered entity (CAC) to hold a number/contract, or can a foreign nonprofit? 
+
+Prioritize CURRENT (2024–2026) Nigeria-specific facts: processes, costs in ₦ and $, timelines, named contacts/programs, and source URLs. Return AT LEAST 90% of the substance — every requirement, fee, timeline, name, and source. Do NOT give a thin summary. Organize under clear headings. Completeness over brevity.
+
+----------------------------------------
+
+I have comprehensive, current data across all five research areas. Here is the full report.
+
+---
+
+# Getting a Phone Number from MTN/Airtel Nigeria and Zero-Rating It — Full Research Report (2024–2026)
+
+## TL;DR for Sabi's situation
+
+The most important structural fact: **under Nigerian law, MTN and Airtel cannot legally host or operate your service directly.** The NCC's VAS framework forces a fixed chain: **Mobile Network Operator → Aggregator → Content/Application Provider → Developer.** Operators are *prohibited* from hosting VAS and from connecting content providers physically; everything must route through an NCC-licensed **VAS Aggregator**. So practically, Sabi will not "get a number from MTN" — Sabi will get a number/short code **through a licensed aggregator** that has the connections to MTN and Airtel. The realistic fast path is to buy a toll-free 0800 line from a Nigerian aggregator (₦50k–₦350k setup, ~₦18/min reverse-charge); the prestige/free path is to get MTN Foundation or Airtel Africa Foundation to zero-rate it as an education-CSR cause, riding on the precedent that **both have already zero-rated 30–64 education platforms** and Airtel runs a **$57M UNICEF digital-learning partnership.**
+
+---
+
+## 1. Toll-free 0800 numbers in Nigeria
+
+### What an 0800 number is
+An 0800 number is a cross-network, internationally recognized toll-free number that works across **all operators (MTN, Airtel, Glo, 9mobile)**. It's a **reverse-charge** service: the *organization* (Sabi) pays for all incoming calls so the *caller* (the child) pays nothing. This is exactly the model Sabi wants. The 11-digit toll-free line covers all networks; account holders get a monthly Call Detail Record (CDR) emailed.
+
+### Two routes to obtain one
+- **Directly from MTN EnterpriseBusiness / Airtel Business** — possible in principle, but in practice they push you to authorized VAS providers, and the law (below) bars them from hosting your service anyway.
+- **Through an NCC-licensed VAS aggregator/provider** — this is the standard and faster route. You pick a provider, choose/customize a number, sign a Service Level Agreement, complete KYC, fund a deposit, and the number is assigned to your line.
+
+### Concrete provider pricing (2024–2025/26) — named aggregators
+
+| Provider | Setup | Monthly | Per-minute (reverse charge) | Notes / source |
+|---|---|---|---|---|
+| **Smartedge Business Solutions** | ₦350,000 one-time | ₦20,000/mo rental | **₦18/min (₦0.30/sec)** | Min deposit ₦100,000 (prepaid airtime). **Activation within 5 hours** after KYC + payment. Requires CAC cert, proof of address, valid ID of signatory. Contact: +234 818 022 8292, sales@smartedgebusiness.com |
+| **Alpha Technologies (ALPHA SMAT Number)** | ₦50,000/yr single line; +₦40,000/yr per extra line | (annual model) | Not published | Min deposit tiered: ₦100k (1–2 lines) → ₦500k (11+ lines). Requires a signed SLA before activation. |
+| **InfoTek Perspective Services** | Toll-free **shortcode** setup ₦450,000 + 5% VAT (one source says ₦550,000) | ₦65,000/mo (or ₦195,000/quarter) + VAT; another listing ₦160,000 maintenance | Reverse-billed SMS: MTN 5 credits, Airtel 7.5, Glo 5, Etisalat 7 (escrow @ ₦1.20/unit + VAT, min 1M units) | **Setup up to 16 weeks.** SMPP/HTTP API. Covers MTN, Glo, Etisalat/9mobile, Airtel. |
+| **Vezeti** | (virtual toll-free) | from **₦2,500/mo** | — | Lightweight virtual-number option. |
+| **Omni Channel / Outsource Nigeria** | $0 setup once NCC paperwork approved | from ~$12/mo + per-minute | per-minute varies | Offers 3/4-digit toll-free across MTN/Airtel/Glo/9mobile; annual renewal option. |
+| **GuageConcepts (Smartnumber)** | — | — | — | VAS provider partnered with MTN, Airtel, 9mobile, Glo for special SIM/numbers. |
+| **Upperlink Telecoms** | — | — | — | NCC-licensed VAS provider using short codes; confirmed licensed but 0800 pricing not public. |
+| **VAS2Nets** | — | — | — | Established AISP/VAS aggregator in Nigeria. |
+
+**Regulatory KYC for any number:** NCC requires Nigerian business registration (**CAC**) for companies, or proof of identity + Nigerian address for individuals. Typical activation 2–5 business days (Smartedge claims 5 hours; toll-free shortcodes can take up to 16 weeks).
+
+**Bottom line on cost:** a working 0800 reverse-charge voice line is achievable for **₦50,000–₦350,000 setup + ~₦20,000/mo + ~₦18/min** of inbound call time, via a Nigerian aggregator. Per-minute is the real cost driver for a high-volume children's tutoring line.
+
+---
+
+## 2. NCC Value Added Service (VAS) licensing — the framework and the chain
+
+### Official NCC license fees (5-year Individual Licences) — from ncc.gov.ng/licence-fees-pricing
+| License type | Fee (₦) | Validity |
+|---|---|---|
+| **Special Numbering Services (SNS)** | **3,000,000** | 5 years |
+| **Content Services using Short Code** | **500,000** | 5 years |
+| **VAS Aggregator** | **10,000,000** | 5 years |
+| Call Centre Services | 500,000 | 5 years |
+| Call Directory Services | 500,000 | 5 years |
+| Prepaid Calling Card | 1,000,000 | 5 years |
+
+**Application mechanics (per NCC + Adeola Oyinlade legal guide):** Apply on **eservices.ncc.gov.ng** (Licensing Application Management System). Pay a **₦1,000 form fee** + a **non-refundable 5% administrative charge** of the license fee on submission (e.g. ₦500,000 for the Aggregator license, since 5% of ₦10M = ₦500k), then the **remaining 95% on approval.** Documents required: Certificate of Incorporation, Tax Clearance Certificate, certified Memorandum & Articles of Association, feasibility report, passport photos of directors/representative, technical staff certificates, Form CO7 (directors list), registered address + utility bill, project funding evidence, and budget/deployment cost estimates.
+
+**Critical for a short-code service:** A **Content Service (Short Code) license requires** you to present either (a) an **Agreement/MOU with a licensed VAS Aggregator**, or (b) a CBN Mobile Money license or National Lottery license. You cannot get a short code without an aggregator relationship.
+
+### The mandatory MNO → Aggregator → Content Provider → Developer chain
+From the full **NCC VAS Aggregator Framework** (the governing document):
+
+- **Network operators (MTN/Airtel)** provide only the final link to the subscriber. They are **explicitly NOT allowed to host or distribute VAS directly**, and are **not entitled to common short-code assignment.** They provide termination to aggregators and may optionally provide billing/revenue-collection on behalf of content providers.
+- **Aggregators** are the *only* players allowed a **direct physical connection** to operator networks. They multiplex signals from many content providers to all operators. They may **not host content** or inspect data beyond routing. Aggregators must connect to operators via **at least two independent links.** **Operators and content providers are barred from owning aggregators.**
+- **Content & Application Service Providers** (the current "VAS licensee" tier — what Sabi's service most resembles) host applications/content and have *logical* links to operators **but must physically connect through aggregators (at least two aggregators each).** They handle billing, user authentication, QoS, complaints.
+- **Developers** are unlicensed creators — they only need "simple registration," not an NCC license.
+
+**Revenue/billing rules that matter for "free to the child":**
+- "**Transport cost**" (the airtime/data of carrying the call) belongs entirely to the operator and must normally be paid by the subscriber — **UNLESS** there is prior mutual agreement: *"The content and application provider can offer a VAS free of transport cost if there is a prior mutual agreement between it and the network operator,"* and *"The operator can also offer free SMS or data service to a subscriber for the purpose of accessing any VAS product."* **This clause is the legal basis for zero-rating** — it requires an explicit agreement with MTN/Airtel.
+- Operators must keep separate prepaid accounts (Voice/SMS vs Data/VAS).
+- Records of every VAS transaction kept ≥3 months; QoS requires content providers to offer a **24-hour toll-free customer helpline.**
+
+**Useful escape hatch (Annex 2b):** *"Large VAS providers… that generate a preset level of traffic may be granted content service license that will enable them to connect directly to network service providers for the transfer of their own in-house traffic alone."* If Sabi scales, it could potentially connect directly rather than perpetually through an aggregator.
+
+### Does Sabi *need* a VAS license?
+- To merely **rent a toll-free 0800 line through an aggregator** (Section 1 route): **No own license needed** — you ride on the aggregator's/provider's license. This is the practical near-term path.
+- To **own a dedicated short code or special number** and operate at scale as the named licensee: you'd need a **Content Services (Short Code) license (₦500k)** *plus* an aggregator MOU, or a **Special Numbering Service license (₦3M)**. The **₦10M Aggregator license is not what Sabi wants** — MNOs and content/short-code licensees are *ineligible* to hold it anyway.
+
+---
+
+## 3. Corporate/enterprise numbers & short codes
+
+### Short-code pricing (2024–2025 market, via providers)
+- **Dedicated short code:** ~**₦250,000–₦400,000**; one provider quotes ₦250,000 (~$220) for 6 months, another ₦400,000; setup **2–4 months.** You own the number, unlimited keywords, can sublease.
+- **Shared/common short code:** from **₦20,000 for 3 months** (no monthly), or ₦81,000 (~$80) for 6 months.
+- **Toll-free short code (reverse-billed):** one-off setup **₦550,000**, maintenance **₦160,000**; up to **16 weeks** to activate.
+- NCC's **"New Pricing Regime for National Numbering & Short Codes"** (effective Jan 1, 2021, eliminated the yearly "gliding path") governs the underlying NCC fees; the **Guidelines on Short Code Operations in Nigeria (2023)** is the current rulebook (ncc.gov.ng).
+
+### MTN EnterpriseBusiness / Airtel Business
+Both run enterprise arms (MTN Business at mtn.ng/business with "Business Call Assist"; Airtel Business toll-free at airtel.com.ng/business/toll-free) but **neither publishes self-serve toll-free pricing** — they route enterprise toll-free/short-code requests through their VAS/aggregator partners and account managers. Expect to engage an account manager and sign a corporate SLA; the actual provisioning still happens via the aggregator layer.
+
+---
+
+## 4. Zero-rating directly — the CSR/Foundation path (precedents + named contacts)
+
+There is **strong, current precedent** for exactly what Sabi wants. Both operators have zero-rated education content, and the legal basis exists in the VAS framework (the "prior mutual agreement" clause, §2.5b/c above).
+
+### Airtel — the strongest precedent (Airtel Africa Foundation + UNICEF)
+- **Airtel Africa Foundation** established **June/July 2024** as the philanthropic arm of Airtel Africa plc; mission "FEED" = **F**inancial inclusion, **E**ducation, **E**nvironment, **D**igital inclusion across 14 markets. Official unveiling **September 2025**. Targets **10 million lives by 2030**; committed **$6.2M** to education/digital/financial inclusion.
+- **Airtel Africa–UNICEF partnership:** a **5-year, $57 million** landmark partnership (began **2022**) to accelerate digital learning across Africa; from **2025/26** the Foundation oversees delivery.
+- **Zero-rating precedent (this is the key one):** Airtel **zero-rated 30 government-approved learning platforms** (free to users) and, more broadly, **64 zero-rated digital platforms enabling 11M+ learners** to access free educational content. In Nigeria specifically, the **Nigeria Learning Passport (NLP)** — 15,000+ curriculum-aligned resources — is part of this; reached 1M subscribers by 2024, targeting 12M learners. Connected **1,028 schools** (3,296 total across 13 countries) to the internet via the UNICEF partnership.
+- **Named contacts:**
+  - **Sunil Taldar** — CEO, Airtel Africa (since 1 July 2024). Personally attended a **February 2025** Lagos education field trip.
+  - **Olusegun (Segun) Ogunsanya** — **Chair of Airtel Africa Foundation** (former Airtel Africa CEO until June 2024).
+  - **Celine Lafoucriere** — Chief of UNICEF's **Lagos field office** (joined the Feb 2025 field trip). UNICEF Lagos is a natural intermediary for Sabi to reach Airtel's education team.
+  - Governance/contact: airtelafricafoundation.org/the-foundation/governance.
+
+### MTN — also a strong CSR/education footprint
+- **MTN Foundation** runs: **Digital Skills Academy** (2025, 23+ career paths from secondary school up); a **free Digital Skills Platform** (DevOps, UI/UX, data, cloud); **Back2School** (learning materials to public secondary schools); and a teacher program with **SAIL Teachers Fellowship** empowering 400+ teachers (inquiry-based + digital learning).
+- **Zero-rating precedent:** during the pandemic MTN **zero-rated 1,500+ educational websites** across markets, partnering with governments and institutions.
+- **3MTT:** MTN Nigeria committed **₦3 billion** to the Federal Government's 3 Million Technical Talent program (digital transformation).
+- **FG + MTN + Airtel teacher program (Oct 2025):** Federal Government partnered with MTN, Airtel and others to give **8,000 teachers free internet and mobile devices** — a live, current CSR vehicle Sabi could try to plug into.
+- **Named contact:** **Dr. Karl Toriola** — CEO/MD MTN Nigeria (since 2021; also MTN Group VP Francophone Africa from Aug 2025). MTN Foundation is governed under MTN Nigeria; approach via mtn.ng/foundation.
+
+### How to actually get zero-rating
+Approach the **CSR/Foundation arm, not the commercial sales desk.** The pattern in every precedent: the platform is "**government-approved**" or **UNICEF-partnered**, then the operator zero-rates it. So Sabi's strongest play is to (a) get Nigerian government/ministry or UNICEF endorsement of the curriculum, then (b) pitch the Foundation to add Sabi's number to its zero-rated education list — invoking the §2.5(b/c) "free of transport cost by mutual agreement" clause. Going through **UNICEF Lagos (Celine Lafoucriere)** or the **FG teacher-connectivity program** is a credible side door.
+
+---
+
+## 5. Eligibility — does Sabi need a Nigerian (CAC) entity?
+
+- **For renting a number through an aggregator:** every Nigerian provider's KYC requires a **CAC Certificate** (plus proof of address and signatory ID). A US nonprofit alone won't clear KYC — you'll need a Nigerian-registered entity, or to have the aggregator/local partner hold the line.
+- **For an NCC VAS/short-code/SNS license:** requires **Certificate of Incorporation, Nigerian Tax Clearance, MemArt, registered Nigerian address + utility bill** — i.e. a Nigerian-registered company. The legal guide notes both foreign and local companies "can apply" but doesn't exempt foreigners from the Nigerian-incorporation documents; in practice you register locally.
+- **NGO route:** A US nonprofit can register a Nigerian arm as **Incorporated Trustees under Part F of CAMA 2020** via CAC — minimum **2 trustees** (18+, sound mind), a detailed constitution, governance structure. **Foreign nationals can be trustees** but must show valid ID (passport) and evidence of Nigerian residency status. CAC is the regulator (cac.gov.ng); 2025/2026 guides confirm the process is open to foreign-founded NGOs.
+
+**Net:** Sabi will need either a **Nigerian-registered entity (company or Incorporated Trustees)** to hold the number/contract, or it can operate **under the aggregator's license** in the very near term while the local entity is set up. For the Foundation zero-rating path, having a Nigerian CAC entity (and ideally government/UNICEF endorsement) materially strengthens the case.
+
+---
+
+## Recommended sequencing for Sabi
+1. **Near term (weeks):** rent a toll-free 0800 voice line through a Nigerian aggregator (Smartedge quotes ₦350k setup + ₦20k/mo + ₦18/min, 5-hour activation; Alpha is cheaper at ₦50k/yr). Requires a CAC entity for KYC.
+2. **Register a Nigerian entity** — Incorporated Trustees (NGO) or a company — to hold contracts and qualify for licenses/CSR.
+3. **Mid term:** if scaling to a dedicated short code, get the **Content Services (Short Code) license (₦500k)** + an aggregator MOU.
+4. **Parallel CSR track (highest-value):** pursue **Airtel Africa Foundation** (via UNICEF Lagos / Segun Ogunsanya) and **MTN Foundation** to zero-rate Sabi's number on the education-CSR precedent. Aim for government/UNICEF endorsement first.
+
+## Sources
+- NCC license fees: https://www.ncc.gov.ng/licence-fees-pricing
+- NCC VAS Aggregator Framework (PDF): https://www.ncc.gov.ng/sites/default/files/2024-11/Documents/Licensing-Framework_For_VAS_Aggregator.pdf
+- NCC VAS Aggregator notice: https://ncc.gov.ng/media-center/public-notices/value-added-service-aggregator-license
+- NCC short-code/numbering pricing regime: https://ncc.gov.ng/media-center/public-notices/new-pricing-regime-national-numbering-short-codes
+- NCC Guidelines on Short Code Operations 2023: https://ncc.gov.ng/sites/default/files/2024-10/Guidelines%20on%20Short%20Code%20Operations%20in%20Nigeria%202023.pdf
+- VAS license process (legal guide): https://www.adeolaoyinlade.com/en/telecommunications-guide-on-how-to-obtain-value-added-services-license-in-nigeria/
+- Smartedge toll-free pricing: https://www.smartedgebusiness.com/toll-free-numbers-nigeria/
+- Alpha Technologies 0800: https://alphatechnologieslimited.com/services-old/alpha-smat-number/0800-toll-free-phone-number-in-nigeria/
+- InfoTek toll-free shortcode: http://infotekps.com/tollfreeshortcode.html
+- Vezeti: https://vezeti.net/
+- Omni Channel 0800: https://outsourcenigeria.com/omni-channel-0800-toll-free-phone-numbers/
+- Upperlink Telecoms: https://upperlink.ng/telecoms/
+- Airtel Business toll-free: https://www.airtel.com.ng/business/toll-free
+- MTN Business: https://www.mtn.ng/business/ ; MTN Foundation: https://www.mtn.ng/foundation/
+- Airtel–UNICEF $57M partnership: https://www.unicef.org/press-releases/airtel-africa-and-unicef-announce-multi-million-dollar-partnership-scale-digital
+- Airtel Africa Foundation governance: https://www.airtelafricafoundation.org/the-foundation/governance
+- Airtel Africa Foundation $6.2M / 10M lives: https://msmeafricaonline.com/airtel-africa-foundation-commits-6-2m-to-education-digital-and-financial-inclusion-across-africa/
+- FG + MTN/Airtel 8,000 teachers: https://technext24.com/2025/10/25/fg-mtn-airtel-8000-teachers-internet/
+- MTN ₦3bn 3MTT: https://fmcide.gov.ng/mtn-nigeria-commits-3bn-to-nigerias-digital-transformation/
+- Karl Toriola (MTN Nigeria CEO): https://www.mtn.ng/executivecommittee/karl-toriola/
+- NGO/CAC foreign trustee registration (2025/2026 guides): https://grantsdatabase.org/2025/07/24/registering-your-ngo-in-nigeria-the-complete-2025-cac-guide/ ; https://cacbusinessregistration.ng/requirements-for-cac-registration-in-nigeria/
+agentId: aed4910a9b4ca0984 (use SendMessage with to: 'aed4910a9b4ca0984' to continue this agent)
+<usage>subagent_tokens: 89160
+tool_uses: 23
+duration_ms: 368018</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

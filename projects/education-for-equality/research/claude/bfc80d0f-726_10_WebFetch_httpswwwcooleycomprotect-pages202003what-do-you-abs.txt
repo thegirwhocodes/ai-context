@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.cooley.com/protect-pages/2020/03/what-do-you-absolutely-need-in-your
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 19:04:41 UTC
+========================================================================
+
+URL: https://www.cooley.com/protect-pages/2020/03/what-do-you-absolutely-need-in-your-contractor-agreements
+Extraction prompt: List exactly what Cooley says a contractor/consulting agreement must contain, and any guidance on how the agreement is structured or formatted (sections, defined terms, IP assignment language, confidentiality, independent contractor status). Quote the key provisions.
+
+----------------------------------------
+
+# Essential Contractor Agreement Elements According to Cooley
+
+Based on the content, Cooley identifies three "must have" terms for contractor agreements:
+
+## 1. Nondisclosure Obligations
+Cooley advises that agreements should include "confidentiality obligations in your contractor agreements to prevent contractors from using or disclosing your company's confidential information."
+
+## 2. Assignment of Intellectual Property Ownership
+The firm emphasizes that "Your company will not own the intellectual property rights in work product created by contractors unless they have signed a contractor agreement that includes a present assignment of IP."
+
+## 3. Independent Contractor Status Protections
+To minimize reclassification risk, the agreement should demonstrate "the contractor has the right to control the way in which the work is performed," including:
+- Right to set working hours
+- Control over work location
+- Authority over work manner
+- Payment structured by milestone, commission, or job (rather than hourly/weekly)
+
+## Additional Notes
+
+Cooley offers template documents through Cooley GO Docs for US companies (Form of Consulting Agreement) and UK companies (Form of Consultancy Agreement), but the article does not specify particular structural requirements, defined terms, or exact IP assignment language beyond these three core protective elements.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 04:23:03 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-africa-s-talking-sandbox
+Extraction prompt: Does the sandbox include voice testing? How do you test voice calls in the sandbox? Is voice available in the sandbox simulator?
+
+----------------------------------------
+
+# Voice Testing in Africa's Talking Sandbox
+
+Yes, voice testing is included in the sandbox. According to the documentation, you can "create a free 2-way SMS short codes, USSD channels, Payments channels, **Virtual Voice numbers**, Airtime Distribution resources."
+
+## How to Test Voice Calls
+
+To set up voice testing:
+
+1. **Create a virtual voice number** using the [designated creation link](https://account.africastalking.com/apps/sandbox/voice/phones/create)
+2. **Configure the webhook/callback** at the [callback configuration page](https://account.africastalking.com/apps/sandbox/voice/phones)
+3. **Use the simulator** at https://simulator.africastalking.com:1517/ for all testing—not an actual handset
+
+The resource emphasizes that "interactions with these resources occur in the **SIMULATOR** and **NOT the HANDSET** for all development and tests on the sandbox."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

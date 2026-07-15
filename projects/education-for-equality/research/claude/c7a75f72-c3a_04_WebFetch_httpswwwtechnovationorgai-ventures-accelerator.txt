@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.technovation.org/ai-ventures-accelerator/
+Session: c7a75f72-c3a3-4686-8699-4a0a2b6bad0f
+Time: 2026-06-23 01:39:56 UTC
+========================================================================
+
+URL: https://www.technovation.org/ai-ventures-accelerator/
+Extraction prompt: List the exact requirements, deliverables, submission components, judging criteria, rubric, deadlines for the Top 10 selection, and what teams need to submit at the end of the 12-week program (March-June 2026). What does the final submission consist of?
+
+----------------------------------------
+
+# AI Ventures Accelerator: Requirements and Submission Details
+
+Based on the provided webpage content, **specific details about final submission components, judging criteria, and detailed rubrics are not included**.
+
+## What IS Specified:
+
+**Eligibility Requirements:**
+- "Teams of young women aged 19-24 (teams of 2-4 preferred, solo founders also welcome)"
+- Reside in UNICEF Program Countries or the US
+- Commit "10-15 hours per week for 12 weeks"
+
+**Program Timeline:**
+- Applications due: March 4, 2026
+- Program runs: March-June 2026
+- Top 10 selection: August 2026
+- Demo Day: October 2026
+
+**What Winners Receive:**
+The top ten finalists will "pitch their ideas live at the inaugural Demo Day event" and receive "$10,000 in seed funding" (equity-free). The top 25 teams get "full incubation support necessary to launch their businesses."
+
+## Notable Gap:
+
+The webpage does not detail:
+- Specific deliverables required at week 12
+- Judging criteria or scoring rubrics
+- What constitutes the final submission (pitch deck format, business plan requirements, prototype specifications, etc.)
+- Evaluation methodology for selecting the Top 10
+
+**Recommendation:** Contact the program at the provided email for granular submission and evaluation specifications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

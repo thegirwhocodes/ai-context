@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.hampshire.edu/sites/default/files/businessoffice/files/consultingagr
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 19:04:53 UTC
+========================================================================
+
+URL: https://www.hampshire.edu/sites/default/files/businessoffice/files/consultingagreement62012.doc
+Extraction prompt: Reproduce this consulting agreement's structure verbatim as much as possible: the title, the opening preamble sentence ("This Agreement is made..."), the exact numbered section headings in order and whether each heading is run-in (inline with the text) or on its own line, how defined terms are introduced, the closing "IN WITNESS WHEREOF" sentence if present, and the signature block layout.
+
+----------------------------------------
+
+# Contract Structure Analysis
+
+**Title:** AGREEMENT FOR CONSULTING SERVICES
+
+**Opening Preamble:** "This Agreement is made between the Trustees of [Name of] College (College) and ___________________ a corporation..."
+
+**Section Headings (Run-in Style):**
+1. **1.0 Scope of Services** (run-in)
+2. **2.0 Fees and Expenses** (run-in)
+3. **3.0 Term** (run-in)
+4. **4.0 Contractor's Capacity and Responsibilities** (run-in)
+5. **5.0 Confidentiality of Information** (run-in)
+6. **6.0 Property Rights and Reports** (run-in)
+7. **7.0 Suspension or Termination of Contract** (run-in)
+8. **8.0 Insurance** (run-in)
+9. **9.0 Indemnification and Hold Harmless** (run-in)
+10. **10.0 Notice** (run-in)
+11. **11.0 Entire Agreement; Modification** (run-in)
+12. **12.0 Mediation / Choice of Laws / Jurisdiction** (run-in)
+13. **13.0 Severability** (run-in)
+14. **14.0 Governing Law** (run-in)
+15. **15.0 Assignment** (run-in)
+16. **16.0 Representations and Warranties** (run-in)
+17. **17.0 Compliance with Rules, Regulations, and Instructions** (run-in)
+
+**Closing Signature Block:**
+"IN WITNESS WHEREOF, the authorized representatives of the parties have executed this Agreement:" followed by two-column signature format for College and Consultant with lines for signature, title, and date.
+
+[Binary content (application/msword, 42.5KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/bfc80d0f-7260-4a6e-b5ff-d74de7f9c234/tool-results/webfetch-1780772694121-v1c5lw.doc]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: MediaPipe holistic keypoint sequence ASL recognition transformer simple pretrain
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:12:05 UTC
+========================================================================
+
+Search query: MediaPipe holistic keypoint sequence ASL recognition transformer simple pretrained model github 2024 2025
+
+----------------------------------------
+
+Web search results for query: "MediaPipe holistic keypoint sequence ASL recognition transformer simple pretrained model github 2024 2025"
+
+Links: [{"title":"mediapipe-holistic · GitHub Topics · GitHub","url":"https://github.com/topics/mediapipe-holistic"},{"title":"GitHub - SomyanshAvasthi/Sign-Language-Detection-using-MediaPipe: This repository implements a sign language detection system using MediaPipe from totally scratch. Manually collected and annotated data. Leveraging MediaPipe's hand landmark detection, the system processes video frames to classify and translate sign language gestures in real-time. · GitHub","url":"https://github.com/SomyanshAvasthi/Sign-Language-Detection-using-MediaPipe"},{"title":"GitHub - aqua1907/Gesture-Recognition: ASL language recognition using pre-trained MediaPipe models","url":"https://github.com/aqua1907/Gesture-Recognition"},{"title":"GitHub - gabguerin/Sign-Language-Recognition--MediaPipe-DTW · GitHub","url":"https://github.com/gabguerin/Sign-Language-Recognition--MediaPipe-DTW"},{"title":"GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML solutions for live and streaming media. · GitHub","url":"https://github.com/google-ai-edge/mediapipe"},{"title":"arXiv:2506.11154v1 [cs.CV] 11 Jun 2025","url":"https://arxiv.org/pdf/2506.11154"},{"title":"mediapipe/docs/solutions/holistic.md at master · google-ai-edge/mediapipe","url":"https://github.com/google/mediapipe/blob/master/docs/solutions/holistic.md"},{"title":"Automatic sign language to text translation using MediaPipe and transformer architectures - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0925231225010938"},{"title":"ASL Recognition Using PointNet and MediaPipe | by Edward Roe | Medium","url":"https://medium.com/@er_95882/asl-recognition-using-pointnet-and-mediapipe-f2efda78d089"},{"title":"Human Action Recognition Using Mediapipe Holistic Keypoints: A Deep Learning Approach | SpringerLink","url":"https://link.springer.com/chapter/10.1007/978-3-031-83796-8_5"}]
+
+Based on the search results, here's what I found regarding MediaPipe holistic keypoint sequence ASL recognition with transformer and pretrained models:
+
+## Key Findings:
+
+**Transformer-based Approaches:**
+Research has combined Transformer-based architecture with MediaPipe for keypoint extraction to achieve competitive performance metrics in sign language translation. These models leverage innovative techniques in keypoint embedding processing and data augmentation.
+
+**LSTM-based Systems (Alternative Approach):**
+While transformer models are being explored, MediaPipe Holistic combined with LSTM-based sequence modeling is used to recognize dynamic gestures from standard video streams. The combination of MediaPipe for feature extraction and LSTM for temporal modeling achieves 92.40% and 86.8% accuracy on standard benchmark datasets.
+
+**ASL Recognition Implementation:**
+ASL datasets are preprocessed into sequences of 543-dimensional landmark vectors extracted using MediaPipe Holistic, which extracts 543 3D landmarks for face, hands, and body.
+
+**GitHub Resources:**
+Multiple GitHub repositories exist for sign language recognition using MediaPipe, though the search results show mostly LSTM-based implementations rather than transformer-specific pretrained models. Projects based on Google's MediaPipe Hands use pre-trained MediaPipe models.
+
+The research indicates active development in 2024-2025 combining MediaPipe holistic keypoints with both LSTM and Transformer architectures for ASL recognition, though specific simple pretrained transformer models on GitHub appear less common than LSTM-based approaches.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

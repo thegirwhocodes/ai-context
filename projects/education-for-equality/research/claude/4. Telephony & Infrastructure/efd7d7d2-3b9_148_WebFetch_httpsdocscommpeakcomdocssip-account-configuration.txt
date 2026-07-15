@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/docs/sip-account-configuration
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:28:09 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/docs/sip-account-configuration
+Extraction prompt: How do you configure a SIP account in CommPeak? What server addresses, ports, codecs are used? How to connect to Asterisk or external PBX?
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

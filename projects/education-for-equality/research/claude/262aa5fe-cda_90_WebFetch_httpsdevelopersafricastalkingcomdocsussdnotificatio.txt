@@ -1,0 +1,25 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/ussd/notifications
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:26:19 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/ussd/notifications
+Extraction prompt: Extract ALL documentation about USSD push notifications. Can Africa's Talking send a network-initiated USSD to a phone? Can it be sent during an active voice call? What API endpoint is used? What parameters? Is this available in Nigeria?
+
+----------------------------------------
+
+I cannot extract the requested documentation about USSD push notifications from the provided content.
+
+The web page content shows only an error message stating: "We're sorry but Documentation | Africa's Talking doesn't work properly without JavaScript enabled."
+
+This is a JavaScript-dependent webpage that hasn't loaded, so no actual documentation about USSD capabilities, API endpoints, parameters, or regional availability (including Nigeria) is visible in the material provided.
+
+To obtain this information, you would need to:
+- Enable JavaScript and visit the Africa's Talking documentation site directly
+- Access their API documentation through a properly rendered version of their website
+- Contact their support team for specific details about USSD push notification capabilities
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

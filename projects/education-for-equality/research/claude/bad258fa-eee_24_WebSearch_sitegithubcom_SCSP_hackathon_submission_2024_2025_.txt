@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: site:github.com SCSP hackathon submission 2024 2025 defense agentic
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:13:04 UTC
+========================================================================
+
+Search query: site:github.com SCSP hackathon submission 2024 2025 defense agentic
+
+----------------------------------------
+
+Web search results for query: "site:github.com SCSP hackathon submission 2024 2025 defense agentic"
+
+Links: [{"title":"GitHub - yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025: This is the Port Sentinel team's submission to the SCSP and AGI House Hackathon (Mar. 2025)!","url":"https://github.com/yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025"},{"title":"GitHub - JessSanChen/SpectreRedTeaming: The Air Force's LLM is supposedly very secure... and we got it to make a few bombs. Agentic LLM jailbreaker. SCSP x AGI House Hackathon Grand Prize Winner. · GitHub","url":"https://github.com/JessSanChen/SpectreRedTeaming"},{"title":"GitHub - global-agent-hackathon/global-agent-hackathon-may-2025: A month-long, open-source AI Agent Hackathon — open to all builders and dreamers working on agents, RAG, tool use, and multi-agent systems.","url":"https://github.com/global-agent-hackathon/global-agent-hackathon-may-2025"},{"title":"GitHub - yli12313/AI-Expo-Hackathon-2025: This is the Project Perception team's submission to the SCSP and AGI House AI Expo Hackathon - Washington D.C. (Jun. 2025)!","url":"https://github.com/yli12313/AI-Expo-Hackathon-2025"},{"title":"Discounted and free plans are available for educational use","url":"https://education.github.com/events"},{"title":"Special Competitive Studies Project (SCSP)","url":"https://github.com/scspai"},{"title":"GitHub - amahjoor/Hackathons: compiled list of recurring hackathons. · GitHub","url":"https://github.com/amahjoor/Hackathons"},{"title":"GitHub - lorenzopalaia/HackTrack-EU: An up-to-date platform listing all the hackathons happening across Europe · GitHub","url":"https://github.com/lorenzopalaia/Euro-Hackathons"},{"title":"national-cybershield-hackathon-2025 · GitHub Topics · GitHub","url":"https://github.com/topics/national-cybershield-hackathon-2025"},{"title":"HackSC · GitHub","url":"https://github.com/HackSC"}]
+
+I found several relevant results for SCSP hackathon submissions on GitHub. Here are the key findings:
+
+## Notable SCSP Hackathon Submissions
+
+**Grand Prize Winner:**
+SpectreRedTeaming won the Grand Prize of the SCSP x AGI House Hackathon in Alexandria, VA with a $25,000 cash prize. The project features an agentic AI approach to jailbreaking LLM models by Jessica Chen and Jeremy Zhang, using the Air Force's NIPRGPT as a proof of concept.
+
+**Other Notable Submissions:**
+
+1. **Port Sentinel (March 2025)**: The Port Sentinel team submitted to the SCSP and AGI House Hackathon in March 2025. The team combined port city vulnerability scanning with maritime port digital twin visualization, including a Port City Vulnerability Scanner for identifying vulnerable Industrial Control Systems and SCADA devices, and a Maritime Port Digital Twin Dashboard with vulnerability assessment and attack vector analysis.
+
+2. **Project Perception (June 2025)**: The Project Perception team submitted to the SCSP and AGI House AI Expo Hackathon in Washington D.C. in June 2025.
+
+The results show active participation in SCSP hackathons with defense and agentic AI themes throughout 2024-2025.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

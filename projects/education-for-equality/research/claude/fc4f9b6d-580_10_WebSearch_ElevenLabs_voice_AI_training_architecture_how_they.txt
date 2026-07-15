@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs voice AI training architecture how they built their TTS model 2025 20
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:13:19 UTC
+========================================================================
+
+Search query: ElevenLabs voice AI training architecture how they built their TTS model 2025 2026
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs voice AI training architecture how they built their TTS model 2025 2026"
+
+Links: [{"title":"Models | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/models"},{"title":"Eleven v3: Most Expressive AI TTS Model Launched","url":"https://elevenlabs.io/blog/eleven-v3"},{"title":"Text to Speech | ElevenLabs Documentation","url":"https://elevenlabs.io/docs/overview/capabilities/text-to-speech"},{"title":"Free AI Voice Generator & Voice Agents Platform | ElevenLabs","url":"https://elevenlabs.io/"},{"title":"Open-source tools for integrating tts in conversational AI","url":"https://elevenlabs.io/blog/exploring-open-source-tools-for-integrating-text-to-speech-in-conversational-ai"},{"title":"ElevenLabs Launches Eleven v3 (Alpha): Game-Changing ...","url":"https://www.puppetry.com/blog/elevenlabs-launches-eleven-v3-alpha-game-changing-tts-model"},{"title":"ElevenLabs Cheat Sheet: Complete Guide to TTS, Voice Cloning & Audio Generation (2025)","url":"https://www.webfuse.com/elevenlabs-cheat-sheet"},{"title":"Aimuse","url":"https://aimuse.blog/article/2025/06/06/elevating-voices-a-deep-dive-into-elevenlags-v3-text-to-speach"},{"title":"Revolutionizing Voices: The Latest TTS Breakthroughs from ElevenLabs and Beyond in 2025 - Automated Blog","url":"https://vestig.oragenai.com/topics/tts-news/post_20251130_040146.html"},{"title":"TTS Benchmark 2025: Smallest.ai vs ElevenLabs Report - Smallest.ai","url":"https://smallest.ai/blog/tts-benchmark-2025-smallestai-vs-elevenlabs-report"}]
+
+Based on the search results, here's what I found about ElevenLabs' voice AI training architecture and TTS model development:
+
+## Model Architecture
+
+While ElevenLabs hasn't open-sourced the full architecture, public benchmarks suggest v3 uses a larger multilingual acoustic model paired with a higher-fidelity vocoder, with the training dataset reportedly surpassing one million hours, enabling nuanced inflections and cleaner silences.
+
+## Eleven v3 Model (2025)
+
+Eleven v3 was built from the ground up to deliver voices that sigh, whisper, laugh, and react — producing speech that feels genuinely responsive and alive. It combines emotional realism, multilingual fluency, and voice cloning precision.
+
+The new Eleven v3 release introduces a powerful multilingual AI voice model that empowers creators to produce fluent, lifelike speech in over 70 languages.
+
+## Key Capabilities
+
+Eleven v3 supports a wide variety of audio tags and are somewhat voice and context dependent, with audio tags living inline with your script and formatted with lowercase square brackets.
+
+The November 2025 update introduces advanced expression controls and support for unlimited speakers in a single generation, allowing for dynamic pacing, tonal shifts, and even multi-voice conversations that sound seamless.
+
+## Company Development
+
+ElevenLabs builds its own foundational models, beginning with the first human-like voice model and now extending far beyond voice.
+
+The search results indicate that while ElevenLabs hasn't publicly released detailed technical papers on their training architecture, the company has been focusing on emotional expressiveness, multilingual support, and voice cloning capabilities as core areas of development for their 2025-2026 models.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

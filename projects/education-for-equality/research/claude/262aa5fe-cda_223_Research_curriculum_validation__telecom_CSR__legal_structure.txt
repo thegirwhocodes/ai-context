@@ -1,0 +1,606 @@
+========================================================================
+AGENT RESEARCH: Research curriculum validation + telecom CSR + legal structure
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-18 21:18:13 UTC
+========================================================================
+
+I'm helping a solo founder of Sabi / Education for Equality — a voice AI tutor for Nigerian children ages 8-14 teaching literacy and numeracy via phone calls. She's planning the next 6 months and needs deep research on three topics. Return AT LEAST 90% of the substantive content you find. Do NOT summarize — return the actual data, names, processes, dates, costs.
+
+**A. External curriculum validation in Nigeria**
+- UBEC (Universal Basic Education Commission) — process to get a non-government curriculum validated/endorsed, timeline, fees, contacts
+- NERDC (Nigerian Educational Research and Development Council) — curriculum review process
+- WAEC (West African Examinations Council) — relevance, alignment standards
+- FME (Federal Ministry of Education) approval pathway
+- LASUBEB (Lagos State Universal Basic Education Board) — state-level endorsement for Lagos pilot
+- Academic validators: J-PAL Africa, RISE Programme (Oxford), Center for Global Development — process to get them to review your curriculum or do an evaluation
+- Cambridge International / Pearson / Oxford curriculum alignment — how to demonstrate alignment
+- Concrete steps + costs + typical timeline for an external body to endorse an edtech curriculum
+
+**B. Telecom CSR partnerships in Nigeria (MTN, Airtel, Glo, 9mobile)**
+- MTN Foundation — application process, focus areas, contact people, typical grant sizes, education-specific programs (MTN Skills Academy, etc.)
+- Airtel Africa Foundation — same details
+- Globacom Glo CSR — same details
+- 9mobile CSR — same details
+- Zero-rating for educational services — has any Nigerian telco done this? Any case studies (e.g., Khan Academy partnerships, Wikipedia Zero, Eneza Education Kenya)?
+- Africa's Talking partnerships team — who handles education
+- "Partner with" pathway — typical timeline from cold outreach → MOU → live partnership
+- Real examples: Nigerian edtech that secured telco partnerships, how they did it, who they talked to
+
+**C. Legal structure decisions for US-Nigerian nonprofit**
+- 501(c)(3) application timeline (Form 1023 standard vs 1023-EZ, typical wait times in 2026, expedited handling)
+- Nigerian NGO/CAC registration — Trustees registration process, timeline, fees
+- SCUML registration (required for NGOs in Nigeria)
+- Sabi-as-product-under-E4E vs Sabi-as-its-own-org: real examples (Khan Academy is the org; Rising Academies has Rori as a product; Bakame AI is product = org name; M-Shule is product = org). Frameworks for deciding when to brand the product separately
+- Trademark process in Nigeria for "Sabi" — current status, IPO Nigeria process
+- Connecticut LLC vs CT nonprofit corporation — current status assumed: incorporated in CT, EIN obtained
+- Fiscal sponsorship as a bridge while 501(c)(3) pending (Players Philanthropy Fund, etc.)
+
+Return everything substantively — quotes from sites, named contacts, timelines, fees, processes. The founder will use this directly to plan moves and write to advisors.
+
+----------------------------------------
+
+I have comprehensive information now. Let me compile the final report.
+
+---
+
+# RESEARCH REPORT: External Curriculum Validation, Telecom CSR, and Legal Structure for Sabi / Education for Equality
+
+**Existing E4E research used:** `research-agents/7. Legal & IP/` (Khan Academy 501c3, CZI dual structure, Bridge International, Bakame AI registration), `research-agents/8. Partnerships & Outreach/` (MTN Foundation, Airtel Africa Foundation, zero-rating, Eneza Education partnership pattern). Significant gaps existed for UBEC/NERDC processes, SCUML, Nigerian trademark, fiscal sponsorship, and Glo/9mobile — those were filled with fresh research below.
+
+---
+
+## A. EXTERNAL CURRICULUM VALIDATION IN NIGERIA
+
+### A.1 UBEC — Universal Basic Education Commission
+
+**Leadership (current 2026):**
+- **Executive Secretary: Hajiya Aisha Garba** (Dr. Aisha Mahmood Garba) — appointed by President Tinubu. Background: Senior Education Specialist at World Bank with 24+ years driving impactful programmes in education.
+- HQ: Universal Basic Education Commission, Abuja.
+
+**Statutory mandate (relevant to validation):**
+- Formulates policy guidelines for the UBE programme
+- Prescribes and monitors minimum standards for basic education nationwide
+- Ensures the implementation of approved curricula, syllabi, and instructional materials
+- Note: UBEC ratifies/recommends — NERDC is the actual curriculum developer.
+
+**EdTech-relevant pathway:**
+1. **Public-Private Engagement and Partnerships (PPEP) Framework** — UBEC is currently (as of late Nov 2025, in Lagos, with UNICEF) overhauling this framework. The new PPEP framework will provide "clear, actionable guidelines for engaging relevant government agencies and a diverse range of stakeholders, including corporate organizations, development partners, civil society groups, and philanthropic foundations." For Sabi, this is the formal track for partnership; the framework is still being drafted as of May 2026, which is an opportunity to be early.
+2. **UBEC EdTech Festival** — UBEC has been running EdTech Festivals at the UBEC Digital Resource Centre, Abuja (in collaboration with CcHUB). This is where EdTech vendors get visibility with UBEC leadership.
+3. **NITDA partnership** — Aisha Garba and NITDA DG Kashifu Inuwa announced (Dec 2025/Jan 2026) a roadmap "to embed digital skills into the core of the basic education system" — entry point for AI/voice tech.
+
+**Process for a non-government curriculum to get UBEC endorsement:**
+- There is **no published fee schedule** for curriculum endorsement (unlike NERDC textbook certification). The pathway is relational/political: it goes through partnership MOU rather than a vendor application form.
+- Typical pattern: NGO/edtech vendor secures pilot with a State SUBEB (Lagos LASUBEB is the most receptive), generates learning outcome data, then UBEC recommends nationally.
+- Contact: through MTN Plaza area or UBEC HQ Abuja; no public partnerships email — recommend writing to Executive Secretary's office directly with a proposal deck.
+
+### A.2 NERDC — Nigerian Educational Research and Development Council
+
+**Authority:** Operates under the Education (National Minimum Standards and Establishment of Institutions) Act. All schools in Nigeria (public and private) must implement the NERDC curriculum as the minimum standard. Schools can supplement with additional curricula but cannot replace NERDC requirements.
+
+**Contact details (verified):**
+- HQ: **Km 135 Lokoja-Kaduna Road, Sheda FCT-Abuja**
+- Liaison Office: **8 Orlu Street, Area 3 Garki Abuja**
+- Phone: **+2347081361390** / **+2348034889740** / **+2348036656492**
+- Email: **info@nerdc.gov.ng**
+- South West zonal office (Lagos): **3 Jibowu Street, Yaba** — email: **swz.office@nerdc.gov.ng**
+- Other zonal emails: nwz.office@nerdc.gov.ng (Kano), ncz.office@nerdc.gov.ng (Niger), nez.office@nerdc.gov.ng (Yobe), sez.office@nerdc.gov.ng (Ebonyi), ssz.office@nerdc.gov.ng (Cross River)
+
+**Six NERDC centres:** Book Development, Curriculum Development, Educational Research, Language Development, Library and Informatics, Special Programme. (For Sabi, **Curriculum Development Centre** and **Book Development Centre** are the relevant ones.)
+
+**Textbook/curriculum certification process (concrete fees and steps):**
+- **Cost: ₦300 per page** for each textbook brought for certification
+- **Plus ₦60,000 flat fee** for the certification exercise
+- **Required submission: Four (4) copies** of the textbook in ready-to-print format
+- **Timeline: "months or years"** — NERDC waits until they have enough materials to convene a panel of experts. Honest assessment from journalism investigations: opaque, slow.
+- After NERDC certification, the textbook is then taken to UBEC, which then recommends it for use in Federal Government-owned schools.
+
+**NEW 2026 development — National Textbook Ranking System:**
+- Implementation begins **September 2026 academic session**
+- "Textbook approval will go beyond basic certification, as approved materials will now be subjected to a structured national ranking process"
+- Unranked books will be **banned** from schools
+- For Sabi: if you produce printed worker/parent guides or workbooks alongside the voice service, plan for this. Voice-only content doesn't fit cleanly into the textbook ranking system — strategic opening to negotiate a new "approved digital learning service" category.
+
+**Curriculum Reform — "Lighter Load, Sharper Skills" (kicks off 2025/26 academic year):**
+- NERDC under FMOE made **Digital Technologies compulsory** for all Nigerian secondary school students in 2026
+- Curriculum reform was developed in collaboration with NERDC, UBEC, NSSEC (National Senior Secondary Education Commission), NBTE (National Board for Technical Education)
+- Implementation begins with Basic 1 and JSS 1 classes
+- Critical: WAEC controversy in Dec 2025 — Senate summoned the Minister; rollout is contested ("retraining, resource provision, and monitoring frameworks are already being developed in partnership with states and development agencies")
+- This is a window: states need partners to actually deliver the new curriculum.
+
+### A.3 WAEC — West African Examinations Council
+
+**Relevance:** WAEC sets the exit exam for senior secondary (WASSCE). For Sabi (ages 8-14, foundational literacy/numeracy), WAEC is **not the immediate validator** — that's UBEC/NERDC for basic education. WAEC becomes relevant only if Sabi scales to JSS3/SS levels where WASSCE prep matters.
+
+**Current state (2026):**
+- WAEC implementing the new curriculum's subject restructure: 8-9 subjects instead of 15-20 previously
+- Highly controversial in Dec 2025 — Head of National Office claimed reforms were "stakeholder-approved" but principals/teachers/state education boards say they were not consulted
+- Senate has summoned the Minister to clarify
+
+**Alignment pathway for edtech:** No formal "WAEC alignment certification" exists. EdTech companies like **EDVES Nigeria** position themselves as "aligned with NERDC and national exams" by mapping their content to WAEC syllabus (which is publicly available at waecsyllabus.com). This is **self-attestation, not WAEC endorsement.**
+
+### A.4 LASUBEB — Lagos State Universal Basic Education Board
+
+**Most actionable path for Sabi's Lagos pilot.**
+
+- LASUBEB runs **EKOEXCEL** (Excellence in Child Education and Learning) — launched 2019 by Gov. Babajide Sanwo-Olu under the THEMES Agenda
+- Technical partner: **NewGlobe** (the parent company of Bridge International Academies)
+- Scale: Over 13,000 teachers transitioned to digital teaching; ~1 million children across **1,013 public primary schools** in Lagos
+- Outcomes: In 7 weeks, EKOEXCEL students advanced in numeracy 2x and literacy 3x faster than peers. Nobel laureate Michael Kremer study found ~1 additional year of learning in 2 years.
+- LASUBEB website: lasubeb.lg.gov.ng
+
+**Process to partner:** LASUBEB engages in "partnership with communities and relevant stakeholders" but does not publish an edtech vendor application process. The realistic pathway:
+1. Engage through **Lagos State Public Procurement Agency (LSPPA)** (lagosppa.gov.ng / admin.biddingo.com/lsppa) — for formal procurement RFPs
+2. Direct outreach to LASUBEB Chairperson / Sole Administrator
+3. Use the EKOEXCEL/NewGlobe model as competitive reference (Sabi as cheaper, voice-native alternative for the ~20M out-of-school kids EKOEXCEL doesn't reach)
+
+### A.5 Federal Ministry of Education (FME) approval pathway
+
+- Minister of Education (Tahir Mamman / successor) sits above UBEC, NERDC, NSSEC, NBTE
+- "Stakeholder-driven" curriculum reform process completed after "two years of sector-wide review" → published as the new "Lighter Load, Sharper Skills" curriculum
+- FME publishes the **National EdTech Strategy** — aligning to it is the soft form of FME endorsement
+- For direct FME engagement, you go through partnership with one of the agencies it oversees (UBEC/NERDC). Direct ministerial endorsement is rare and political.
+
+### A.6 Academic validators
+
+**J-PAL Africa (Abdul Latif Jameel Poverty Action Lab):**
+- Based at MIT; 1,000+ researchers at universities globally; 1,100+ randomized evaluations in 90+ countries
+- **Nigeria precedent:** J-PAL evaluated Bridge International Academies in Nigeria for "interleaved problem sets / rapid performance feedback on student learning outcomes" — directly relevant precedent for Sabi.
+- J-PAL Africa runs **Evaluating Social Programs Course** — held in Abuja 2022. This is the entry point.
+- **How to get J-PAL to evaluate Sabi:** J-PAL doesn't accept inbound "evaluate my product" requests. Instead, J-PAL's affiliated professors "set their own research agendas and raise funds to support their evaluations." Path: find a J-PAL affiliate at a Nigerian/African university (African School of Economics in Benin, CSEA Nigeria) interested in voice-based foundational learning, get them excited, they raise funds (typically $200k-$2M+ for a proper RCT), they pitch you as the intervention.
+- Contact: J-PAL Africa via povertyactionlab.org
+
+**RISE Programme (Research on Improving Systems of Education, Oxford):**
+- Partnership between **Oxford Policy Management** and **Blavatnik School of Government, Oxford**
+- Funding: £36.8M from UK FCDO, $9.85M from Australia DFAT, $1.7M from Gates Foundation
+- **Nigeria Country Research Team:** Principal institution is the **African School of Economics in Benin**; affiliated institution is **Centre for the Study of the Economies of Africa (CSEA)** in Nigeria
+- Research focus in Nigeria: how parental investment + community engagement drives systemic change
+- Contact: info@rise.ox.ac.uk / +44 (0)1865 616695 — Oxford Policy Management, Radcliffe Observatory Quarter, Oxford OX2 6GG
+- **Note:** RISE was a fixed-term programme — original program was 2015-2023, but research output continues. Check current status. Cite their findings rather than expect new evaluations.
+
+**Center for Global Development (CGD):**
+- Published "What Works in Edtech?" summarizing 67 experimental/quasi-experimental studies in developing countries
+- Identified **"self-led learning software" as one of the most promising areas** (consistent medium-to-large effects on learning) — direct support for Sabi's positioning
+- Nigeria specifically: 13 education studies documented 2014-2020; **e-readers in Nigeria were found among the more effective edtech interventions**
+- CGD is a think tank, not an evaluator — they cite existing research and publish blog posts/working papers. Engagement pattern: pitch them a guest blog post; they don't independently certify products.
+
+**EdTech Hub (often more relevant than CGD for Africa):**
+- Non-profit research partnership; sponsors: UK FCDO, Bill & Melinda Gates Foundation, UNICEF, World Bank
+- Runs **Help Desk** supporting FCDO/World Bank/UNICEF education staff in 70+ countries
+- Published **"EdTech in Nigeria: A Rapid Scan"** focusing on Jigawa, Kaduna, Kano (northern Nigeria) — commissioned by FCDO-funded **PLANE project (Partnership for Learning for All in Nigeria)**
+- Key finding: "limited government funding for EdTech; nearly all EdTech initiatives are led by NGOs, startups and international organisations"
+- Engagement: Get the EdTech Hub Help Desk to feature Sabi in a Nigeria scan. Email through edtechhub.org.
+
+### A.7 Cambridge International / Pearson / Oxford curriculum alignment
+
+**Cambridge International Education (CAIE):**
+- Part of Cambridge University Press & Assessment
+- Schools can "adapt Cambridge's curriculum, teaching and learning resources, and flexible assessment to their local context"
+- **No formal "alignment certification" for third-party edtech** — schools either are Cambridge-accredited or not
+- Digital exams: migratory exams scheduled for **June 2026**; transformational digital exams later
+- For Sabi: align content to Cambridge Primary Stage syllabus (Maths, English, Science) and call it "Cambridge-aligned" — this is what existing edtech does. Cambridge will not formally endorse the alignment.
+
+**Pearson licensing:**
+- Pearson accepts applications for "permissions, research licenses, standardization data licenses, and commercial licenses"
+- Pearson Connexus courses "aligned to state standards for rigor, depth, and breadth"
+- Process: contact Pearson Assessments via pearsonassessments.com/footer/permissions---licensing.html
+- Cost: license fees vary widely; expect 5-figure annual licensing for substantive content
+
+**Oxford University Press:**
+- Offers "flexible licensing options for digital products that quickly enable adaptation of their gold-standard content into learning solutions"
+- Contact: academic.oup.com/advertising-and-corporate-services
+- Pattern: edtech licenses OUP content rather than getting OUP endorsement
+
+**Practical recommendation:** For Sabi, alignment-as-marketing claim (matching scope-and-sequence) is cheap. Actual licensing only worth it once you have paying customers / institutional buyers who require a recognized brand on the curriculum.
+
+### A.8 Concrete steps + costs + timeline for external endorsement (synthesis)
+
+| Path | Concrete steps | Cost | Timeline |
+|---|---|---|---|
+| **NERDC textbook certification** (if printing companion materials) | Submit 4 copies ready-to-print, pay fees, wait for expert panel | ~₦60,000 + ₦300/page (₦60k-200k per workbook) | Months to years (opaque) |
+| **UBEC PPEP partnership** | Write to Aisha Garba's office; propose pilot tied to PPEP framework | Free, plus deck/proposal effort | 6-12 months to MOU |
+| **LASUBEB pilot** | Direct outreach + LSPPA procurement track | Free to apply; vendor capability statement needed | 3-9 months to pilot |
+| **J-PAL evaluation** | Court J-PAL affiliate professor at African School of Economics / CSEA | Free to court; RCT costs $200k-$2M (researcher raises) | 2-4 years for RCT results |
+| **EdTech Hub feature** | Submit to Help Desk; pitch blog/case study | Free | 3-6 months |
+| **Cambridge "alignment" claim** | Self-map your scope-and-sequence to Cambridge Primary syllabus | Free (or ~$5k-15k for an external consultant to write the alignment doc) | 1-3 months |
+
+---
+
+## B. TELECOM CSR PARTNERSHIPS IN NIGERIA
+
+### B.1 MTN Foundation (Nigeria)
+
+**Established:** 2004 to manage CSR for MTN Nigeria Communications PLC
+
+**Leadership:**
+- **Executive Director: Odunayo Sanya** (formerly Executive Secretary; now Executive Director), based Lagos
+- Personal email reportedly: odunayosanya@gmail.com (per RocketReach/ZoomInfo)
+- LinkedIn: ng.linkedin.com/in/odunayosanya
+
+**Contact:**
+- **Email: mtn.foundation@mtn.com** (general partnerships)
+- Phone: 300 (on MTN network) or main MTN line
+- **Address: MTN Plaza, No 1, Awolowo Road, Falomo, Ikoyi, Lagos** (2nd Floor — MTN Nigeria Foundation Limited by Guarantee)
+
+**Focus areas (2026, post-streamlining):**
+Two portfolios:
+1. **National Priority** — community infrastructure development, health (women & children)
+2. **Youth Development** — skills, tools, access, knowledge for youth
+
+Within these, current programs include: MTN Scholarships (₦300,000/yr), MTN-MUSON Scholar Program, MTN Science and Technology Laboratory Project, ICT and Business Skills Training, Y'ellopreneur (entrepreneurship), Y'ello Doctor Initiative, Back to School Initiative, Youth Entrepreneurship Development Program (YEDP), Digital Skills for Digital Jobs (DSDJ).
+
+**Investment scale (since inception):**
+- ₦32.2 billion invested across 36 states + FCT
+- 1,087 project sites; 3,531 communities reached; 32 million people benefited
+- 110 science laboratories renovated in past decade
+
+**Recent partnerships:**
+- **MTN + SAIL Teachers Fellowship** — teacher training transitioning to inquiry-based/digital learning
+- **MTN + 3MTT (3 Million Technical Talent) Programme** — **₦3 billion commitment** alongside Pan-African United Foundation (PAUF) and Lagos Business School
+- **MTN + Bank of Industry** — Y'ellopreneur Phase 3.0 MOU for female entrepreneurs
+
+**Application path for Sabi:**
+- No published "grant application" form for general CSR — but partnership MOUs are pursued via direct outreach to the Foundation
+- Recommend: email mtn.foundation@mtn.com with a one-page brief; copy odunayosanya@mtn.com if you can find her work email; angle = "voice AI tutor for the 20M out-of-school children, leveraging MTN's network reach"
+- Sabi sits cleanly under "Youth Development" portfolio
+
+### B.2 Airtel Africa Foundation
+
+**Established:** **June 2024** as philanthropic arm of Airtel Africa plc (operates in 14 sub-Saharan markets)
+
+**Mission framework: FEED** = Financial Inclusion, Education, Environmental protection, Digital inclusion
+
+**Leadership:**
+- **Chair: Olusegun Ogunsanya** (former CEO of Airtel Africa plc)
+- **CEO Airtel Nigeria: Dinesh Balsingh**
+- **VP Corporate Communications & CSR (Airtel Africa): Emeka Oparah**
+- **Director Corporate Communications & CSR (Airtel Nigeria): Femi Adeniran** — most relevant Nigeria-level contact
+
+**Website:** airtelafricafoundation.org (contact form at /get-involved/contact-us — no published direct emails)
+
+**2026 Nigeria targets (FY26):**
+- Train **26,000 youth**
+- Connect **300 schools** to internet
+- Award **100 undergraduate scholarships** (₦500,000 stipend + new laptop + mentorship over 4-5 years)
+- Establish **a Tech Hub in Nigeria**
+
+**Existing partnerships (precedent):**
+- **Airtel + UNICEF (multi-million dollar):** Connected 1,200-1,500 schools across Africa, trained 17,000 teachers, reached 1M+ students with digital resources. In Nigeria specifically: connecting 300,000+ students to digital learning
+- **Airtel x 3MTT NextGen Fellowship 2026** (Nigeria-only) — track under federal 3MTT programme
+- **Airtel + UNICEF Links2Work** — youth employment programme
+- **Tech For Her** (Aug 2025) — women in tech upskilling
+
+**Path for Sabi:** Aligns directly with FEED's Education + Digital Inclusion pillars. UNICEF Nigeria connection is the trojan horse — they're already in the network. Recommend approaching via Femi Adeniran (Director CC & CSR Airtel Nigeria) with UNICEF Nigeria as warm intro if possible.
+
+### B.3 Globacom (Glo) CSR
+
+**Owner:** Mike Adenuga Jr. (founder, billionaire)
+
+**Foundation:** **Mike Adenuga Foundation** (handles formal philanthropy)
+
+**Key Glo CSR program:**
+- **Glo Adopt-A-School:** Adopts and renovates public schools, provides computers, internet, books, furniture
+- **Glo Smart Learning Suite** (LMS — customizable for institutions)
+- Recently (2026): **₦1 billion donation to Lagos Security Fund** (Feb 2026) — shows pattern of large state-level gifts
+
+**Contacts:**
+- HQ: **1 Mike Adenuga Close, Off Adeola Odeku Street, Victoria Island, Lagos**
+- Helpline: **300** or **+2348050020121**
+- General customer email: **customercare@gloworld.com**
+- Corporate: **corporatecare@gloworld.com**
+- Mike Adenuga (reported): **mike.adenuga@gloworld.com**
+
+**Honest read:** Glo's CSR is less visible/structured than MTN or Airtel. Highly Adenuga-driven, decisions made internally. Cold outreach less likely to work; need a warm intro to someone at Adeola Odeku HQ. Best entry: through Glo's existing **Smart Learning Suite** team — propose Sabi as a complementary voice channel.
+
+### B.4 9mobile CSR
+
+**Strategy:** Three platforms — **Education, Health, Environment**
+
+**Education programs (active):**
+- **Scholarship Scheme** (since 2009) — 1,200+ undergraduates in electrical/electronics engineering, computer science, business management
+- **9TEPP (Telecommunications Engineering Postgraduate Program)** — first taught master's in West Africa; partnership with **Plymouth University UK + Ahmadu Bello University Zaria**
+- **British Council partnership** (since 2011) — English language teacher training
+- **9mobile + Bayero University Kano** — NCC Centre of Excellence in Telecoms R&D
+- **Career counselling** — Junior Secondary Students in Government Secondary Schools (Bichi Emirate, Kano)
+- **Adopt-a-School Initiative**
+- **Ahmadu Bello University strategic partnership** (decade-long, rekindled)
+
+**Path:** 9mobile CSR site is **9mobile.com.ng/crs** and **9mobile.com.ng/corporate-social-responsibility/**. No published partnership email — go through main corporate channels. 9mobile has been financially distressed in recent years — CSR budget likely smaller than MTN/Airtel.
+
+### B.5 Zero-rating for educational services in Nigeria — case studies
+
+**Direct precedent in Africa:**
+- **MTN South Africa "Project Zero"** — zero-rated access to Wikipedia, Facebook, Google Search, YouTube, **and Khan Academy** in multiple markets including Cameroon, Ghana, **Nigeria**, and South Africa
+- **Wikipedia Zero** — global program 2012-2018, partnered with MTN, Airtel, others. **Killed end of 2018** due to "decline in user adoption and interest from mobile operators." Lesson: zero-rating partnerships are NOT a long-term moat.
+- **Vodacom & MTN South Africa** — zero-rated multiple learning sites during COVID lockdown 2020
+- **STADIO Connect (South Africa)** — higher ed provider launched MVNO on MTN network; students get free SIM/eSIM with non-expiry data, airtime, SMSes — this is a more durable model than zero-rating
+
+**For Nigeria specifically:** MTN Nigeria has done zero-rating, but no high-profile, sustained zero-rated edtech partnership beyond the Khan Academy MTN Africa-wide arrangement. No confirmed Nigerian edtech (uLesson, Edukoya, AltSchool, ScholarX) has secured zero-rating from MTN Nigeria as a flagship deal.
+
+**Why this matters for Sabi:** Voice (not data) — different regulatory category. The equivalent "zero-rating" for Sabi is **toll-free numbers** (0800 prefix). NCC regulates termination rates for 0800 numbers. The partnership ask to MTN/Airtel/Glo/9mobile is: **"sponsor the per-minute termination cost for inbound 0800 calls to Sabi from your network as CSR contribution."** This is a cleaner, more durable ask than data zero-rating.
+
+### B.6 Eneza Education — the canonical "edtech secured telco partnership" case study
+
+- **Kenya — Safaricom partnership since 2013.** Safaricom: markets product, collects payment, provides engineering tools, data analytics
+- **Ghana — MTN partnership launched April 2017**
+- **Côte d'Ivoire — MTN partnership** (GSMA-evaluated)
+- During COVID: **partnered with Safaricom to make content FREE** to support students
+- Safaricom uses Eneza's **Shupavu 291** SMS short code (40291)
+- Strategy: "Partner with mobile operators having combined market share of at least 70%"
+- **Process: Proof of Concept first** — "with each mobile operator, they usually start with a Proof of Concept to demonstrate the value they bring to the operator"
+- Critical insight from Eneza: **"Hire a local team. Always hire local content developers and country managers."** Local cultural fit + local staff are the bridge to operator partnerships. **Direct relevance for Sabi: needs a Nigerian country lead before MTN/Airtel will take meetings seriously.**
+
+### B.7 Africa's Talking partnerships team
+
+- Founded 2010 by Eston Kimani and Samuel Gikandi (MIT graduates)
+- Mobile solutions firm — SMS, voice, USSD across mobile providers in Africa
+- **3 published partners** (1 technology, 2 channel — Freshdesk is largest)
+- **No publicly listed "education partnerships" lead** — but Africa's Talking has been active in IVR education projects
+- Default deposit: $100 for infrastructure/session costs; no nonprofit-specific pricing published
+- **How to engage:** Direct contact via africastalking.com — propose education-track partnership; reference existing IVR education customers (Viamo, Mteja). Naomi's pre-existing relationship with Africa's Talking team would be the leverage point.
+
+### B.8 "Partner with" pathway — typical timeline (Eneza-pattern)
+
+```
+Cold outreach (LinkedIn / warm intro)        →  Week 0
+Initial intro call                            →  Week 2-4
+Preliminary deck + business case              →  Week 4-8
+Internal champion identified at telco         →  Week 8-12  (CRITICAL — without this, dies)
+Proof of Concept (POC) scoped                 →  Month 3-4
+POC executed (small pilot, 1-3 LGAs)          →  Month 4-9
+Results review + business case for MOU        →  Month 9-12
+MOU drafted + signed                          →  Month 12-18
+Live commercial partnership                   →  Month 18-24
+```
+
+**Realistic expectation: 12-24 months from cold outreach to live partnership.** Foundation/CSR partnerships are faster (~6-12 months) but smaller.
+
+### B.9 Real examples of Nigerian edtech with telco partnerships
+
+- **uLesson** (Sim Shagaya): K-12 content, Nigeria-focused. Has worked with telcos for distribution but no flagship zero-rated deal.
+- **EDVES Nigeria:** School management + LMS. Sells to schools directly.
+- **AltSchool Africa, Edukoya, ScholarX/LearnAM:** All operate without major telco partnerships — distribute via direct-to-consumer mobile apps
+- **No Nigerian edtech has matched Eneza's depth of Safaricom partnership.** This is a gap Sabi could fill — voice channel especially differentiates from app-based competitors.
+
+---
+
+## C. LEGAL STRUCTURE DECISIONS FOR US-NIGERIAN NONPROFIT
+
+### C.1 501(c)(3) application timeline (2026 realities)
+
+**Form 1023 (Standard / Long Form):**
+- IRS issues 80% of determinations **within 191 days** (~6.5 months)
+- Realistic range: **6-9 months**, sometimes 3-12 months depending on backlog/complexity
+- Filing fee: **$600** (Form 1023)
+- Length: ~28 pages plus schedules
+
+**Form 1023-EZ (Streamlined):**
+- IRS issues 80% of determinations **within 22 days** (~3 weeks)
+- Typical approval: **2-4 months**
+- Filing fee: **$275**
+- **CRITICAL eligibility:**
+  - Annual gross receipts **cannot exceed $50,000** in past 3 years AND projected next 3 years
+  - Total assets **cannot exceed $250,000**
+  - Must be a nonprofit corporation incorporated in a US state (unincorporated associations cannot use it)
+  - Tax-exempt status not previously revoked
+  - **Excluded:** hospitals, schools (literal schools), churches, housing providers, foundations
+- **Current backlog (May 2026):** IRS currently reviewing 1023-EZ applications submitted before **February 24, 2026** — backlog of ~3 months for the "streamlined" form
+
+**Expedited Processing:**
+- **Form 1023-EZ CANNOT be expedited.**
+- Form 1023 (long form) can be expedited only with compelling reason (e.g., disaster relief, specific grant deadlines that require 501(c)(3) status). Naomi would need to document a specific grant or pledge contingent on 501(c)(3) determination.
+
+**For Sabi/E4E:**
+- If Naomi expects E4E to stay under $50k gross receipts for the next 3 years (probable if mostly grant-funded with grants <$50k), **Form 1023-EZ is the right path** — 2-4 month approval, $275 fee.
+- If she expects a major grant ($100k+) that would push her over $50k in a year, file Form 1023 (long form).
+- Connecticut-incorporated nonprofit corporation requirement: **must have at least 3 directors** (CT requires it; IRS requires it for 501c3).
+- **CT note:** Connecticut's standard Certificate of Incorporation template does NOT meet IRS requirements for 501(c)(3) status — needs custom language (purpose clause + dissolution clause).
+
+### C.2 Nigerian NGO / CAC Registration — Incorporated Trustees
+
+**Authority:** Corporate Affairs Commission (CAC), Nigeria. NGOs register as "Incorporated Trustees" (the equivalent of a 501(c)(3) public charity).
+
+**Fees (official CAC):**
+- Name reservation: **₦500-5,000** (60-day reservation)
+- Incorporation of trustees: **₦30,000**
+- Filing notice of change of name: ₦10,000
+- Filing notice of change in trustees: ₦10,000
+- Filing notice of amendment of constitution: ₦6,000
+- Annual return filing: ₦5,000
+- **Total DIY: ~₦30,000-110,000** (~$20-75 USD at current rates)
+- **With accredited agent: ₦30,000-65,000 in professional fees** (~$20-45)
+- **With law firm: ₦80,000-220,000** (~$55-150)
+
+**Requirements:**
+- Unique proposed name
+- **Minimum 2 trustees** (at least 18, of sound mind)
+- Clearly defined objectives
+- Registered physical address in Nigeria
+- Valid IDs for trustees
+- Detailed constitution
+- **Public notice: trustee names published in at least 2 national newspapers** (60-day objection period)
+
+**Timeline:** **25-45 working days** after submission
+
+**Strategic note:** Sabi/E4E needs Nigerian Incorporated Trustees registration to:
+1. Open Nigerian bank accounts
+2. Receive grants/payments in NGN
+3. Be eligible for Nigerian government partnerships (UBEC, LASUBEB) and Nigerian foundation grants
+4. Hire Nigerian staff legally
+5. Sign MOUs with Nigerian telcos
+**This is a near-term must, not optional.**
+
+### C.3 SCUML Registration (mandatory follow-on)
+
+**Authority:** Special Control Unit against Money Laundering — part of Nigeria's AML/CFT regime. **All NGOs are classified as Designated Non-Financial Institutions (DNFIs)** and must register.
+
+**Required documents:**
+- CAC Certificate of Incorporation (so SCUML follows CAC registration)
+- Constitution / MoA
+- Detailed profile of NGO activities
+- Tax Identification Number (TIN) from FIRS
+- Valid IDs for all trustees/directors
+
+**Process:** Online via SCUML portal (scuml.org)
+
+**Fees:**
+- **Official registration: FREE**
+- Professional fees (if using agent): ₦90,000-150,000
+
+**Timeline:** **15-21 working days** after submission
+
+**Mandatory deadline:** Within **3 months of commencing operations**.
+
+**Order of operations: CAC → TIN (from FIRS) → SCUML** — all needed before opening NGO bank account.
+
+### C.4 Trademark process in Nigeria for "Sabi"
+
+**Authority:** **Nigerian Industrial Property Office (NIPO)** — formerly FIPO. Website: nipo.gov.ng
+
+**Process:**
+1. **Trademark search** — knockout search against NIPO's database (1-3 days). Only accredited agents have digital access; manual search at Trademarks Registry, Abuja
+2. **File application** under correct Nice Classification class. **Class 41** = educational services, training, online learning — primary class for Sabi. Consider also Class 38 (telecommunications) and Class 9 (downloadable software/apps).
+3. **Examination** — 3-6 months
+4. **Publication in Trademarks Journal** — 1-2 months
+5. **Opposition period** — 2 months (anyone can challenge)
+6. **Certificate issuance** — 1-2 months
+
+**Fees per class:**
+- Filing: ₦10,000 + ₦500 search fee
+- Publication: ₦2,000
+- Certificate: ₦2,000 + ₦1,000
+- **Total DIY: ~₦15,500+ per class** (~$10 USD)
+- With agent: ₦65,500-165,500 per class (~$45-110)
+- With law firm: ₦210,000-450,000 per class (~$140-300)
+
+**Total timeline (if no opposition): 6-12 months**
+
+**Validity:** 7 years initial + renewable every 14 years indefinitely
+
+**CRITICAL DUE DILIGENCE FOR "SABI":**
+- "Sabi" is a **common Nigerian Pidgin word** meaning "know / to know." Naomi must check:
+  - Existing "Sabi" trademarks in Class 41 (education) — there is **SabiTeach** (sabiteach.com), a Nigerian edtech tutoring platform already operating. Risk of objection.
+  - Other "Sabi" brands: Sabi (B2B commerce platform, Nigeria — sabi.am — significant; would be in different class but trademark examiners may flag confusion)
+- **Recommend: hire a NIPO-accredited agent for the search** before filing. ₦5,000-15,000 well spent. EBC Consults (ebconsults.ng), Hectagon Solicitors, Pocket IP are options.
+- **Also file US trademark in parallel** (USPTO Class 41) — same name; $250-350 filing fee per class; ~8-12 months
+- Consider **WIPO Madrid Protocol** international trademark for multi-country protection (Nigeria is a member; one application covers multiple countries) — only worth it if scaling beyond Nigeria.
+
+### C.5 Sabi-as-product-under-E4E vs Sabi-as-its-own-org — frameworks
+
+**Real-world examples (synthesized from research):**
+
+| Model | Org | Product(s) | Why this structure |
+|---|---|---|---|
+| **Org = product** | Khan Academy | Khan Academy | Founded as 501(c)(3) in 2008; product so dominant they ARE the brand. Sal Khan's nonprofit got $2M from Google + $1.5M from Gates Foundation in 2010 to build out |
+| **Product under org** | Rising Academies → Rori | Rori AI tutor (WhatsApp/SMS, math) | Rising Academies is the B-Corp (300k students, 700+ schools, Sierra Leone/Liberia/Ghana/Rwanda); **Rori is a product**. First B-Corp in Liberia/Sierra Leone (2019). Diverse products under one umbrella |
+| **Product = org** | Bakame AI | Bakame AI (voice tutor, Rwanda) | Two TCU students founded with the product name as the org name. Received $8k from TCU CREATE accelerator. Recognition: Global Best M-Gov Award Dubai. (No formal LLC/incorporation publicly confirmed — operating as student venture per research session efd7d7d2.) |
+| **Product = org** | M-Shule | M-Shule SMS learning | Kenyan SMS-based learning platform. Operates as M-Shule the company. Single product focus |
+| **Dual structure (LLC + Foundation)** | Chan Zuckerberg Initiative | Multiple programs across health/education | **CZI LLC** (taxable; invests in for-profits + supports nonprofits) + **CZI Foundation** (501(c)(3) private foundation) + **CZI Advocacy** (501(c)(4)) + **CZI DAF at Silicon Valley Community Foundation**. Max flexibility but max complexity. Profit from venture investments goes back to philanthropy |
+| **For-profit social enterprise** | Bridge International Academies | Bridge schools | For-profit "social enterprise" — Kenya, Nigeria, Uganda, India. World's largest for-profit primary chain. $5-6/month tuition for $2/day families. Now operates as NewGlobe (which runs Lagos EKOEXCEL with LASUBEB) |
+
+**Framework for deciding (specific to Sabi/E4E):**
+
+**Pick "Sabi-as-product-under-E4E" if:**
+- E4E will likely build a portfolio (Sabi voice channel + curriculum app + future products)
+- You want one fundraising umbrella with one 501(c)(3) status — simpler grant story
+- Sabi might evolve into something else, and you want the brand swappable
+- You expect to sunset/rebrand Sabi within 3-5 years
+- **Khan Academy pattern but with E4E as the parent** — but only if E4E will have other initiatives. If Sabi IS the work, this adds bureaucracy.
+
+**Pick "Sabi-as-its-own-org" if:**
+- Sabi will be the dominant/only product for the foreseeable 5+ years
+- You want Sabi to be sellable / spinoff-able / licensable independently
+- You want maximum brand clarity for partnership/grant pitches (Bakame AI, M-Shule pattern)
+- Telcos and government partners will prefer talking to "Sabi" not "Education for Equality, which makes Sabi"
+
+**Pick dual structure (E4E 501c3 + Sabi LLC) if:**
+- You expect commercial revenue (telcos paying for white-labeled Sabi, B2B school licensing) that would jeopardize 501c3 status
+- You want venture capital to fund Sabi's growth while grants/donations fund E4E's nonprofit programs
+- CZI pattern — but requires sophisticated legal/accounting infrastructure ($10k+/yr) and clean separation of activities. Probably premature for Sabi at current stage.
+
+**My read for Sabi (May 2026):** Naomi's current setup (E4E in Connecticut, Sabi as the flagship initiative) is the right structure for the next 12-24 months. The Khan Academy precedent is the best fit: one 501(c)(3) that becomes synonymous with its flagship product over time. The dual structure becomes worth considering only if/when commercial revenue exceeds ~$200k/yr or VC interest emerges.
+
+### C.6 Connecticut LLC vs CT nonprofit corporation (current status review)
+
+**If currently incorporated as CT LLC:** Most states don't allow direct conversion of LLC → nonprofit corporation. Two paths:
+
+**Path A: Articles of Conversion (if CT allows)**
+- File Articles of Conversion with CT Secretary of State
+- Assets transfer automatically to the new nonprofit
+- Must change tax status from "partnership" to "corporation" (file IRS Form 8832)
+- Apply for new EIN
+- Then file Form 1023/1023-EZ for 501(c)(3) recognition
+
+**Path B: Dissolve LLC + form new CT nonprofit corporation**
+- Dissolve the LLC properly (settle debts, distribute remaining assets)
+- File new Certificate of Incorporation as **nonstock corporation** with CT Secretary of State
+- Adopt nonprofit bylaws (3+ directors required)
+- Get new EIN
+- File Form 1023 / 1023-EZ
+- This is cleaner from a 501(c)(3) review standpoint
+
+**CT-specific requirements:**
+- **3+ directors required** for nonprofit corporation
+- CT Secretary of State Certificate of Incorporation **standard template does NOT meet IRS 501(c)(3) requirements** — Naomi needs to add custom purpose/dissolution clauses (Foundation Group, Harbor Compliance, Northwest Registered Agent all sell templates ~$50-200)
+- CT charitable solicitation registration required separately if soliciting donations in CT
+
+**Recommendation:** If E4E is currently a CT LLC and Naomi wants 501(c)(3) status, **Path B (dissolve + reform as nonstock corporation) is cleaner** unless there are significant assets/contracts in the LLC that would be costly to transfer. Talk to a CT nonprofit attorney — flat-fee setup typically $1,500-3,500.
+
+### C.7 Fiscal Sponsorship as a Bridge — Players Philanthropy Fund (PPF) detailed
+
+**What PPF offers:**
+- PPF is a **501(c)(3) public charity providing back-office administration through fiscal sponsorship**
+- **600+ charitable projects fiscally sponsored** worldwide (all 50 states, 35 countries)
+- **Instant access to 501(c)(3) benefits — bypasses the typical six-month wait for IRS approval**
+- Operates under PPF's established tax-exempt status
+- Manages: fund management, IRS compliance, tax filings, audits, charitable registrations, required legal documentation
+
+**Cost:**
+- **6% administrative fee** of revenue (vs. typical 20-30% nonprofit overhead)
+
+**Why this matters for Sabi:**
+- If E4E doesn't yet have 501(c)(3) status and Naomi has a donor/grant ready who needs to write a tax-deductible check NOW, PPF lets her receive it immediately
+- Useful for CcHUB Fellowship deadline March/April 2026 (if you need fiscal sponsor for grant management)
+- Useful while CT-LLC-to-501(c)(3) conversion processes
+
+**Alternatives to PPF:**
+- **NEO Philanthropy** (NYC) — neophilanthropy.org — popular for social justice/policy work
+- **Community Partners** (LA) — communitypartners.org — large catalog of sponsored projects
+- **501 Commons** (Seattle area) — 501commons.org — Pacific NW focus
+
+**Important nuance:** Fiscal sponsorship Model A (the sponsor IS the legal entity; project is a program of the sponsor) vs. Model C (sponsor regrants to a separate entity). PPF mostly does Model A. **Model A means E4E becomes a project of PPF — not its own entity.** This is fine while bridging, but you'll want to convert to your own 501(c)(3) once volume warrants.
+
+---
+
+## SUMMARY OF KEY ACTIONABLE CONTACTS FOR NAOMI
+
+**Curriculum validation:**
+- UBEC Executive Secretary: **Aisha Garba** — write to UBEC HQ Abuja
+- NERDC: **info@nerdc.gov.ng** / +2347081361390 / South West office: swz.office@nerdc.gov.ng (Lagos: 3 Jibowu Street, Yaba)
+- LASUBEB: lasubeb.lg.gov.ng; LSPPA for procurement
+- J-PAL Africa: via povertyactionlab.org — court an affiliate at African School of Economics (Benin) or CSEA (Nigeria)
+- EdTech Hub: edtechhub.org Help Desk
+
+**Telco CSR:**
+- **MTN Foundation: mtn.foundation@mtn.com** — Odunayo Sanya, Executive Director, MTN Plaza Falomo Lagos
+- **Airtel Africa Foundation:** Femi Adeniran (Director CC & CSR Airtel Nigeria); Emeka Oparah (VP CC & CSR Airtel Africa); contact via airtelafricafoundation.org/get-involved/contact-us
+- **Glo: corporatecare@gloworld.com** — 1 Mike Adenuga Close, Victoria Island
+- **9mobile:** via 9mobile.com.ng/corporate-social-responsibility/
+- **Africa's Talking:** africastalking.com partnerships
+
+**Legal structure (in order):**
+1. **File Form 1023-EZ** for E4E ($275, 2-4 months) — assuming Naomi stays under $50k gross receipts. Or Form 1023 if expecting larger grants.
+2. Bridge with **PPF fiscal sponsorship** (6% fee) if grant timing requires immediate 501(c)(3) status.
+3. **Register E4E Nigeria** as Incorporated Trustees with CAC (~₦30k-110k, 25-45 working days). Critical for telco MOUs, UBEC/LASUBEB partnerships, NGN bank accounts.
+4. **SCUML registration** (free; 15-21 days) — mandatory within 3 months of starting Nigeria operations.
+5. **Trademark "Sabi"** in Nigeria (Class 41 + Class 9 + Class 38) via NIPO-accredited agent — ~₦200k-500k for 3 classes through agent, 6-12 months. **Do NIPO search FIRST** to clear conflict with SabiTeach (existing edtech in same class).
+6. **Trademark "Sabi" in USA** (USPTO Class 41) — $250-350, 8-12 months.
+
+**Critical Eneza-pattern lesson for telcos:** Hire a Nigerian country lead before MTN/Airtel meetings — local staff is the bridge. Plan for 12-24 months cold-outreach-to-MOU; 6-12 months for foundation grants. Lead with proof-of-concept proposal, not direct partnership ask.
+agentId: a0686a9c0d2b2b45e (use SendMessage with to: 'a0686a9c0d2b2b45e' to continue this agent)
+<usage>total_tokens: 137026
+tool_uses: 64
+duration_ms: 371758</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

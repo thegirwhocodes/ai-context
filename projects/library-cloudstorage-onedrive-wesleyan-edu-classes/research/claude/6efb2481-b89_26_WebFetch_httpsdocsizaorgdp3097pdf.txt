@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.iza.org/dp3097.pdf
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-09 01:16:03 UTC
+========================================================================
+
+URL: https://docs.iza.org/dp3097.pdf
+Extraction prompt: Extract Aromolaran's findings on wage returns to education in Nigeria. What were the specific Mincerian estimates? What were the standard errors and t-statistics? What does he find for primary, secondary, and tertiary returns? Is he critical of higher Psacharopoulos-Patrinos estimates?
+
+----------------------------------------
+
+I cannot extract Aromolaran's findings on wage returns to education in Nigeria from the provided content. The text appears to be a PDF document's raw code and metadata rather than readable article text. The content is heavily compressed and encoded, making it impossible to identify specific passages about Mincerian estimates, standard errors, t-statistics, or educational returns by level (primary, secondary, tertiary).
+
+To answer your question accurately, I would need access to the document in a readable format or a direct citation to the relevant section.
+
+[Binary content (application/pdf, 322.2KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/6efb2481-b890-4754-95b7-49de6ac05f9b/tool-results/webfetch-1778289367542-rt4tvs.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

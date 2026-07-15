@@ -1,0 +1,43 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs custom LLM endpoint OpenAI compatible chat completions format streami
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:48:07 UTC
+========================================================================
+
+Search query: ElevenLabs custom LLM endpoint OpenAI compatible chat completions format streaming site:github.com elevenlabs-docs
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs custom LLM endpoint OpenAI compatible chat completions format streaming site:github.com elevenlabs-docs"
+
+Links: [{"title":"elevenlabs-docs/fern/conversational-ai/pages/customization/custom-llm/overview.mdx at main · elevenlabs/elevenlabs-docs","url":"https://github.com/elevenlabs/elevenlabs-docs/blob/main/fern/conversational-ai/pages/customization/custom-llm/overview.mdx?plain=1"},{"title":"elevenlabs-docs/fern/conversational-ai/pages/customization/custom-llm/together-ai.mdx at main · elevenlabs/elevenlabs-docs","url":"https://github.com/elevenlabs/elevenlabs-docs/blob/main/fern/conversational-ai/pages/customization/custom-llm/together-ai.mdx?plain=1"},{"title":"Issue: Help to make a callback for Elevenlabs API streaming endpoint · Issue #9822 · langchain-ai/langchain","url":"https://github.com/langchain-ai/langchain/issues/9822"},{"title":"elevenlabs · GitHub Topics · GitHub","url":"https://github.com/topics/elevenlabs"},{"title":"GitHub - inxm-ai/fork-llm: A powerful Rust library and CLI tool to unify and orchestrate multiple LLM, Agent and voice backends (OpenAI, Claude, Gemini, Ollama, ElevenLabs...) with a single, extensible API. Build, chain, evaluate, and serve complex multi-step AI workflows — including speech-to-text, text-to-speech, completions, vision, and reasoning.","url":"https://github.com/inxm-ai/fork-llm"},{"title":"GitHub - Purple-Horizons/openclaw-voice: 🦞 Open-source browser-based voice chat for AI assistants. Self-hosted, private, free. Whisper STT + ElevenLabs TTS. Works with OpenAI, Claude, or custom agents.","url":"https://github.com/Purple-Horizons/openclaw-voice"},{"title":"GitHub - graniet/llm: A powerful Rust library and CLI tool to unify and orchestrate multiple LLM, Agent and voice backends (OpenAI, Claude, Gemini, Ollama, ElevenLabs...) with a single, extensible API. Build, chain, evaluate, and serve complex multi-step AI workflows — including speech-to-text, text-to-speech, completions, vision, and reasoning.","url":"https://github.com/graniet/llm"},{"title":"GitHub - oceanbuilders/ChatGPT-stream-for-Godot-4: Simple Godot 4 AI chat system using ChatGPT API, streaming replies for reducing lag, and using several systems for Text-to-Speech.","url":"https://github.com/oceanbuilders/ChatGPT-stream-for-Godot-4"},{"title":"GitHub - makefinks/speak-to-llm: A basic terminal application to have voice conversations with models served by ollama. Uses Whisper and OpenAI TTS for accurate and low latency results.","url":"https://github.com/makefinks/speak-to-llm"},{"title":"agents/create endpoint not setting requested LLM correctly · Issue #597 · elevenlabs/elevenlabs-python","url":"https://github.com/elevenlabs/elevenlabs-python/issues/597"}]
+
+Based on the search results, here's what I found about ElevenLabs custom LLM endpoints and OpenAI-compatible chat completions:
+
+## Key Information
+
+To use a custom LLM server with ElevenLabs, it must align with the OpenAI create chat completion request/response structure.
+
+To bring a custom LLM server, set up a compatible server endpoint using OpenAI's style, specifically targeting create_chat_completion.
+
+## Streaming Support
+
+The documentation indicates that if your custom LLM has slow processing times, you can improve the conversational flow by implementing buffer words in your streaming responses.
+
+## Setup Configuration
+
+When setting up your custom LLM endpoint with ElevenLabs, you'll need to configure:
+- The server URL pointing to your OpenAI-compatible endpoint
+- The model ID for your LLM
+- API credentials (if required)
+
+Tools are automatically included in the `tools` parameter of your chat completion requests when configured in your agent.
+
+The first search result from the ElevenLabs documentation repository contains the most comprehensive information about custom LLM setup, including details on streaming responses and buffer word implementation for maintaining natural conversation flow.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

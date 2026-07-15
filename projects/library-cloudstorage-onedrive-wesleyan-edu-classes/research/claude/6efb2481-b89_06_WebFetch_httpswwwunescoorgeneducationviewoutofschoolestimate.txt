@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.unesco.org/en/education/view/outofschool/estimates
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:03:16 UTC
+========================================================================
+
+URL: https://www.unesco.org/en/education/view/outofschool/estimates
+Extraction prompt: Extract the methodology for how UNESCO/GEM Report VIEW estimates out-of-school children rates. Specifically: (1) what statistical model is used, (2) what data inputs (administrative + household surveys), (3) imputation approach for missing years, (4) how uncertainty intervals are computed, (5) any links to a technical methodology paper, and (6) how the model handles administrative vs survey discrepancies.
+
+----------------------------------------
+
+# UNESCO VIEW Out-of-School Estimates Methodology
+
+Based on the provided webpage, the following information is available:
+
+## What the Page Reveals
+
+The page acknowledges that detailed methodology exists but provides **limited specifics** on the technical approach:
+
+1. **Statistical Model**: Not explicitly described on this page. The site mentions "indicator modelling" enables comparisons but doesn't specify the model type.
+
+2. **Data Inputs**: The page references "UIS and GEM Report data" and mentions both "enrollment and population data" are sourced separately, but doesn't detail household survey specifications.
+
+3. **Imputation for Missing Years**: Not addressed in the provided content.
+
+4. **Uncertainty Intervals**: Described as "90% uncertainty interval is represented by the shaded grey area" accompanying median estimates, but the computational method is not explained.
+
+5. **Technical Documentation**: A link to background material is provided:
+   - **"Technical background paper"** available at the UNESCO GEM Report site
+
+6. **Administrative vs. Survey Discrepancies**: The page acknowledges this issue directly:
+   > "Due to the separate sourcing of enrollment and population data, occasionally, reported enrollment exceeds population estimates resulting in negative out-of-school rate observations. Our method is designed to acknowledge such observations and produce estimates constrained to the 0-100% interval."
+
+## Recommendation
+
+For comprehensive methodology details, consult the linked technical background paper on the UNESCO GEM Report website.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

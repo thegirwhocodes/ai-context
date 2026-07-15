@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: public dataset CSV sleep hours academic performance students GPA download direct
+Session: eb50331f-9214-40a8-a4d4-8fc277231856
+Time: 2026-05-31 18:41:32 UTC
+========================================================================
+
+Search query: public dataset CSV sleep hours academic performance students GPA download direct link
+
+----------------------------------------
+
+Web search results for query: "public dataset CSV sleep hours academic performance students GPA download direct link"
+
+Links: [{"title":"Nightly sleep time and GPA in first-years – CMU S&DS Data Repository","url":"https://cmustatistics.github.io/data-repository/psychology/cmu-sleep.html"},{"title":"Exploring Sleep Patterns and Academic Performance","url":"https://www.stat.cmu.edu/capstoneresearch/315files_s24/team15.html"},{"title":"Public Datasets - Sleep Research Society","url":"https://sleepresearchsociety.org/career-advancement/public-datasets/"},{"title":"Sleep Is Significant - Statistics & Data Science","url":"https://stat.cmu.edu/capstoneresearch/fall2023/315files_f23/team9.html"},{"title":"Sleep Study","url":"https://www.kaggle.com/datasets/mlomuscio/sleepstudypilot"},{"title":"Final Draft Sleep and GPA Report","url":"https://www.statcrunch.com/reports/view?reportid=31860&tab=preview"},{"title":"📚 Students Performance Dataset 📚 | Kaggle","url":"https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset"},{"title":"Mission Sleep: An Exploratory Data Analysis on Sleep and Student GPAs | by Shannon Kunz | Medium","url":"https://medium.com/@shannon.kunz1/mission-sleep-an-exploratory-data-analysis-on-sleep-and-student-gpas-e9599b39457b"},{"title":"Student Sleep Patterns Dataset","url":"https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns"},{"title":"Demographic data, grades, sleep times, and study times | Download Table","url":"https://www.researchgate.net/figure/Demographic-data-grades-sleep-times-and-study-times_tbl1_26671781"}]
+
+Based on the search results, I found several relevant public datasets on sleep hours and academic performance:
+
+## Primary Dataset: CMU Sleep & GPA Study
+
+The most prominent dataset available is from CMU, which examines whether nightly sleep duration predicts changes in end-of-semester GPA, using first-year college students from three independent universities who provided sleep actigraphy for a month early in their spring academic term across five studies.
+
+The dataset titled "Nightly sleep time and GPA in first-years" from the CMU S&DS Data Repository includes 634 participants tracked using Fitbit devices to monitor their sleep over a month during their spring term, with detailed sleep episodes, demographic information, and GPA records from university registrars.
+
+**Access Location:** The dataset is available at the CMU Statistics & Data Science Data Repository at: https://cmustatistics.github.io/data-repository/psychology/cmu-sleep.html
+
+Variables analyzed include bedtime variability, total sleep time, and GPA to explore relationships between sleep habits and academic success.
+
+## Additional Datasets
+
+Other publicly available datasets on this topic include:
+- **Kaggle**: Student Sleep Patterns Dataset (available at https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns)
+- **Kaggle**: Students Performance Dataset (https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset)
+- **Sleep Research Society**: Maintains a list of public sleep datasets at https://sleepresearchsociety.org/career-advancement/public-datasets/
+
+The CMU dataset appears to be the most directly relevant for your query, as it specifically combines sleep hours tracking with student academic performance (GPA) data.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

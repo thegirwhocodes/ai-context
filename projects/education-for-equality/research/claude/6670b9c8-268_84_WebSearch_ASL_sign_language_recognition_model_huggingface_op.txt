@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ASL sign language recognition model huggingface open source pretrained weights 2
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 19:19:09 UTC
+========================================================================
+
+Search query: ASL sign language recognition model huggingface open source pretrained weights 2025
+
+----------------------------------------
+
+Web search results for query: "ASL sign language recognition model huggingface open source pretrained weights 2025"
+
+Links: [{"title":"Niharmahesh/Sign_language_recognition_v1 · Hugging Face","url":"https://huggingface.co/Niharmahesh/Sign_language_recognition_v1"},{"title":"Voxel51/WLASL · Datasets at Hugging Face","url":"https://huggingface.co/datasets/Voxel51/WLASL"},{"title":"SignVLM: a pre-trained large video model for sign language recognition - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12453763/"},{"title":"GitHub - aqua1907/Gesture-Recognition: ASL language recognition using pre-trained MediaPipe models","url":"https://github.com/aqua1907/Gesture-Recognition"},{"title":"RavenOnur/Sign-Language · Hugging Face","url":"https://huggingface.co/RavenOnur/Sign-Language"},{"title":"Voxel51/American-Sign-Language-MNIST · Datasets at Hugging Face","url":"https://huggingface.co/datasets/Voxel51/American-Sign-Language-MNIST"},{"title":"Francesco/sign-language-sokdr · Datasets at Hugging Face","url":"https://huggingface.co/datasets/Francesco/sign-language-sokdr"},{"title":"Hemgg/sign-language-classification · Hugging Face","url":"https://huggingface.co/Hemgg/sign-language-classification"},{"title":"ncslgr/ncslgr · Datasets at Hugging Face","url":"https://huggingface.co/datasets/ncslgr/ncslgr"},{"title":"atalaydenknalbant/asl-yolo-models · Hugging Face","url":"https://huggingface.co/atalaydenknalbant/asl-yolo-models"}]
+
+Based on the web search results, here are the open-source ASL sign language recognition models and resources available on Hugging Face:
+
+## Available Models and Datasets
+
+**Pretrained Models:**
+
+1. Niharmahesh/Sign_language_recognition_v1 - A model that leverages machine learning and computer vision to recognize ASL hand signs from images using MediaPipe for hand landmark detection.
+
+2. atalaydenknalbant/asl-yolo-models - ASL Object Detection YOLO Models trained on 3 different datasets to detect letters A to Y.
+
+**Datasets:**
+
+1. WLASL - The largest video dataset for Word-Level American Sign Language (ASL) recognition, featuring 2,000 common different words in ASL.
+
+2. American-Sign-Language-MNIST - A dataset containing 34,627 samples designed to provide an easily accessible, well-structured version of the ASL alphabet dataset for computer vision research and education.
+
+3. ncslgr - A small corpus of American Sign Language (ASL) video data from native signers, annotated with non-manual features.
+
+**Recent Research:**
+
+SignVLM is a pretrained large vision model for ASL sign language recognition, with research published in 2025 addressing challenges like the lack of annotated datasets.
+
+These resources provide a range of options for ASL recognition, from alphabet-level detection to word-level recognition with varying levels of complexity and dataset size.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

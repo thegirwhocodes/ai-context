@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTIC distribution statement A B C D E F definitions public access military
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:34:16 UTC
+========================================================================
+
+Search query: DTIC distribution statement A B C D E F definitions public access military
+
+----------------------------------------
+
+Web search results for query: "DTIC distribution statement A B C D E F definitions public access military"
+
+Links: [{"title":"Ft. Belvoir, VA 22060 Distribution Statements and Their Corresp","url":"https://discover.dtic.mil/wp-content/uploads/2018/09/distribution_statements_and_reasonsSept2018.pdf"},{"title":"dodinstruction 5230.24 dodi5230.24distribution statements on ...","url":"https://discover.dtic.mil/wp-content/uploads/2023/02/GuideToMarkingDocuments_2023.pdf"},{"title":"DOD INSTRUCTION 5230.24 DISTRIBUTION STATEMENTS ON DOD TECHNICAL INFORMATION","url":"https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodi/523024p.pdf"},{"title":"Distribution Statements on Technical Documents - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA582777.pdf"},{"title":"Department of Defense INSTRUCTION NUMBER 5230.24 August 23, 2012 USD(AT&L)","url":"https://apps.dtic.mil/sti/pdfs/ADA582777.pdf"},{"title":"Department of Defense DIRECTIVE NUMBER 5230.24 March 18, 1987 USD(A)","url":"https://assist.dla.mil/Online/help/DoDD_523024.pdf"},{"title":"AR 70-11 Dissemination of Scientific and Technical Information","url":"https://irp.fas.org/doddir/army/ar70-11.htm"},{"title":"MANAGEMENT OF SCIENTIFIC AND TECHNICAL INFORMATION (STINFO) COMDTINST M5260.6A","url":"https://media.defense.gov/2017/Mar/16/2001717672/-1/-1/0/CIM_5260_6A.PDF"},{"title":"DAF STINFO Training Scientific and Technical Information (STI, STIP, STINFO)","url":"https://www.dau.edu/sites/default/files/2025-01/AFMC%20IP%20STINFO%20Present%20Jan%202025%20Distro%20A.pdf"},{"title":"R&E Gateway Search","url":"https://www.dtic.mil/dtic/pdf/distribution_statements_and_reasons.pdf"}]
+
+Based on the search results, here are the DTIC Distribution Statement definitions:
+
+## DTIC Distribution Statements (A-F)
+
+**Distribution Statement A: Approved for public release: distribution is unlimited.** This statement may be used only on unclassified technical documents that have been cleared for public release by competent authority.
+
+**Distribution Statement B: Distribution authorized to U.S. Government agencies [category] [date of determination].** Other requests for this document must be referred to [controlling DoD office].
+
+**Distribution Statement C: Distribution authorized to U.S. Government agencies and their contractors [category] [date of determination].**
+
+**Distribution Statement D: Distribution authorized to Department of Defense and U.S. DoD contractors only [category] [date of determination].**
+
+**Distribution Statement E: Distribution authorized to DoD Components only [category] [date of determination].**
+
+**Distribution Statement F:** Distribution statement F is normally used only on classified technical documents, but may be used on unclassified technical documents when specific authority exists. Distribution statement F is also used when the DoD originator determines that information is subject to special dissemination limitation.
+
+All distribution statements other than "A" must contain a reason for the limited distribution.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

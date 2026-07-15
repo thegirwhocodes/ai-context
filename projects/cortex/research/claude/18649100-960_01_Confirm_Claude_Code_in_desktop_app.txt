@@ -1,0 +1,98 @@
+========================================================================
+AGENT RESEARCH: Confirm Claude Code in desktop app
+Session: 18649100-9609-4375-9e02-7fdef3944167
+Time: 2026-06-27 20:43:12 UTC
+========================================================================
+
+The user currently runs Claude Code via the VS Code extension, which is heavy on RAM. They want to instead drive Claude Code from the lighter-weight Claude desktop app, while still building/running a LOCAL Next.js project on their Mac (folder: /Users/naomiivie/cortex) and viewing the running apps in their browser (localhost / vercel URLs).
+
+Please give me an authoritative, current answer to:
+
+1. Can you run Claude Code from inside the Claude DESKTOP app (Mac), pointed at a LOCAL directory on the user's machine, so it edits/builds local files and runs local dev servers? If yes, what are the exact steps to open/connect a local project folder in the desktop app?
+
+2. How does that differ from "Claude Code on the web" (claude.ai/code) and cloud/remote agents — specifically, does the web/cloud version run in a remote sandbox (NOT touching local files), while the desktop app runs locally? Clarify which one works on local files.
+
+3. Is the Claude desktop app meaningfully lighter on RAM than the VS Code extension for running Claude Code?
+
+4. When the user switches from a VS Code Claude Code session to a desktop-app Claude Code session, is that a brand-new session/conversation (new context window), or can it resume the existing conversation?
+
+Be precise and current. If a capability doesn't exist or has caveats, say so plainly. Keep it concise — I just need the factual answers to relay to the user.
+
+----------------------------------------
+
+Now I have all the authoritative information I need. Let me provide you with precise, current answers:
+
+---
+
+## Authoritative Answers
+
+**1. Can you run Claude Code from the Claude DESKTOP app pointed at a LOCAL directory?**
+
+**Yes.** The Desktop app has a **Local** execution environment option. Here are the exact steps:
+
+1. Download and install the Claude Desktop app from https://claude.ai/api/desktop/darwin/universal/dmg/latest/redirect (macOS)
+2. Launch Claude and sign in
+3. Click the **Code** tab at the top
+4. Select **Local** from the environment selector
+5. Click **Select folder** and choose `/Users/naomiivie/cortex`
+6. Choose a model from the dropdown
+7. Type your task and send
+
+The Desktop app edits local files directly, runs local dev servers via the integrated terminal, and you view output in your browser (localhost or Vercel URLs).
+
+**Requirements:** Pro/Max/Team/Enterprise Claude subscription. On Windows, Git must be installed; most Macs include it by default.
+
+---
+
+**2. How does the Desktop app (local) differ from claude.ai/code (web)?**
+
+| Aspect | Desktop (Local) | Web (claude.ai/code) |
+|---|---|---|
+| **Code runs on** | Your Mac | Anthropic cloud VM |
+| **Edits local files** | Yes, directly | No — clones repo to cloud VM only |
+| **Needs GitHub** | No | Yes (or bundle local repo via CLI) |
+| **Uses your local config** | Yes (CLAUDE.md, MCP, hooks, etc.) | No (repo only) |
+| **Network access** | Your machine's network | Configurable per environment |
+| **Permission modes** | All (Ask, Auto-accept, Plan, Auto) | Accept edits, Plan, Auto only |
+| **When to use** | Default for local work; full IDE-like control | For parallel tasks, repos you don't have locally, or async work |
+
+**Key distinction:** Desktop Local = your files stay on your Mac. Web = everything runs in a remote sandbox; you review the PR diff afterward. The web version is better for "fire and forget" tasks; Desktop Local is better when you're steering in real time.
+
+---
+
+**3. Is the Desktop app lighter on RAM than the VS Code extension?**
+
+**The documentation does not specify RAM usage comparisons.** However, the Desktop app is a standalone native application (separate from VS Code), so it should use less RAM than running VS Code + the extension together. The Desktop app shares the same Claude Code engine as all other interfaces, but it doesn't require VS Code to be running.
+
+For your use case (switching from VS Code extension to Desktop), you'd close VS Code entirely and just run the Desktop app—so RAM usage should drop significantly.
+
+---
+
+**4. When switching from VS Code to Desktop, is it a new session or can it resume?**
+
+**Each is a separate session.** VS Code sessions and Desktop sessions are independent; you cannot resume a VS Code conversation in the Desktop app.
+
+However:
+- **Session files are shared locally.** Both VS Code and Desktop read/write to `~/.claude/projects/` where all your sessions are stored.
+- **You can view and resume old sessions.** In the Desktop app, click the session picker (sidebar) to browse and resume any previous session—including ones started in VS Code or the CLI.
+- **CLAUDE.md and memory persist.** Any `CLAUDE.md` file or auto memory you built in VS Code carries over to Desktop sessions in the same project, so Claude starts with the same context and instructions.
+
+So while you can't *continue* a live conversation thread across surfaces, all learned context, instructions, and session history are available to new sessions in the Desktop app.
+
+---
+
+**Bottom line for the user:** Install the Claude Desktop app, select **Local** mode, pick the `/cortex` folder, and start working. RAM should drop compared to VS Code. You lose the ability to continue a live conversation thread, but all project memory and instructions carry forward to Desktop automatically.
+
+Sources:
+- [Desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart.md)
+- [Web quickstart](https://code.claude.com/docs/en/web-quickstart.md)
+- [How Claude Code works — environments](https://code.claude.com/docs/en/how-claude-code-works.md#environments-and-interfaces)
+- [Overview — use Claude Code everywhere](https://code.claude.com/docs/en/overview.md#use-claude-code-everywhere)
+agentId: a8029489b938cd90e (use SendMessage with to: 'a8029489b938cd90e', summary: '<5-10 word recap>' to continue this agent)
+<usage>subagent_tokens: 40643
+tool_uses: 7
+duration_ms: 35654</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

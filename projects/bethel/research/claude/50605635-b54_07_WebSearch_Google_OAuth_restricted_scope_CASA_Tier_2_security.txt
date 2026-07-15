@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google OAuth restricted scope CASA Tier 2 security assessment cost gmail API ver
+Session: 50605635-b544-4e75-9092-60153c86773c
+Time: 2026-06-22 18:23:25 UTC
+========================================================================
+
+Search query: Google OAuth restricted scope CASA Tier 2 security assessment cost gmail API verification 2026
+
+----------------------------------------
+
+Web search results for query: "Google OAuth restricted scope CASA Tier 2 security assessment cost gmail API verification 2026"
+
+Links: [{"title":"Restricted scope verification | App verification to use Google Authorization APIs | Google for Developers","url":"https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification"},{"title":"Google CASA – Cloud Application Security Assessment","url":"https://deepstrike.io/blog/google-casa-security-assessment-2025"},{"title":"Casa verification","url":"https://groups.google.com/g/google-apps-script-community/c/XgsHT2Fr7u8"},{"title":"How We Passed Google CASA Tier 2 in a Weekend (With Claude as Our Security Engineer) | Orbis Blog","url":"https://meetorbis.com/blog/how-we-passed-google-casa-tier-2-with-claude"},{"title":"Frequently Asked Questions - Google Cloud Platform Console Help","url":"https://support.google.com/cloud/answer/13463817?hl=en"},{"title":"Our Google OAuth app is live and CASA Tier 2 certified | Truto Blog","url":"https://truto.one/blog/our-google-oauth-app-is-live-and-casa-tier-2-certified/"},{"title":"Security Assessment - Google Cloud Platform Console Help","url":"https://support.google.com/cloud/answer/13465431?hl=en"},{"title":"Google verification and security assessment guide | Docs","url":"https://developer.nylas.com/docs/provider-guides/google/google-verification-security-assessment-guide/"}]
+
+Based on the search results, here's comprehensive information about Google OAuth restricted scope CASA Tier 2 security assessments and Gmail API verification:
+
+## CASA Framework & Google's Security Assessment
+
+Google uses the App Defense Alliance and the cloud application security assessment framework (CASA) to standardize security assessments. CASA is Google's official cloud app security audit for restricted scope APIs.
+
+## Tier 2 Assessment Requirements
+
+You only hit Tier 2 when you request sensitive or restricted scopes - when your app wants to read a user's calendar, access their contacts, or sync their email. For Tier 2, Google assigns you an approved security assessor who runs a DAST (Dynamic Application Security Testing) scan against your production app, generates a findings report, and gives you a Self-Assessment Questionnaire to complete.
+
+## Assessment Costs
+
+Typical assessment costs range from a few hundred to a few thousand dollars per year depending on tier. More specifically, a small design decision can be the difference between a $540 DAST scan and a $5,000+ penetration test. The cost for such a service is agreed on between the developer and the assessor without any involvement from Google.
+
+## Annual Revalidation
+
+To keep access to any verified restricted scopes, apps must be reverified for compliance and complete a security assessment at least every 12 months after your assessor's Letter of Assessment (LOA) approval date.
+
+## 2026 Updates
+
+The search results include documentation updated in June 2026, confirming these requirements remain current for developers requesting access to Gmail and other restricted Google APIs in 2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

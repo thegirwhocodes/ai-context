@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.raspberrypi.com/news/sign-language-translation-glasses/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:27:22 UTC
+========================================================================
+
+URL: https://www.raspberrypi.com/news/sign-language-translation-glasses/
+Extraction prompt: Extract ALL technical details about this Raspberry Pi sign language translation glasses project: hardware used, software stack, ML model, accuracy, limitations, cost, build instructions, open source links. Full details.
+
+----------------------------------------
+
+# Sign Language Translation Glasses: Technical Details
+
+## Hardware Components
+- **Main Processor:** Raspberry Pi Zero 2 W ($15)
+- **Camera:** Raspberry Pi Camera Module 2
+- **Audio:** USB sound card, PAM8403 Amplifier Module, 3W speaker
+- **Enclosure:** 3D printed frames (designed in Fusion 360)
+
+## Software & ML Stack
+- **Framework:** VIAM's open-source software
+- **Processing:** "The camera module captures the movements of the signer's hands, while the Raspberry Pi processes the data using machine learning"
+- **Cloud Dependency:** According to comments, heavy ML lifting occurs on cloud services requiring internet connection
+
+## Project Availability
+- **GitHub Repository:** All code shared by creator Nekhil
+- **Build Guide:** Hosted on Hackster.io
+- **Demo:** YouTube demonstration available
+
+## Known Limitations & Issues
+1. **Language Support:** Unclear which sign language variant supported; multiple sign languages exist
+2. **Feature Gaps:** Cannot adequately interpret complex elements like hand orientation or movement parameters
+3. **Security:** API keys reportedly exposed in source code on GitHub
+4. **Usability Concerns:** Requires hands visible to camera; no visual feedback for translation accuracy; lacks two-way communication design
+5. **Hardware Tradeoff:** Creator opted for Zero 2 W over Pi 5 for wearability despite reduced processing power
+
+## Cost
+Build appears budget-friendly, with processor at $15 and 3D-printable housing reducing expenses.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

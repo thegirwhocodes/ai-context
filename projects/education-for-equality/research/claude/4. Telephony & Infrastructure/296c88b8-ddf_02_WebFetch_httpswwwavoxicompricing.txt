@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.avoxi.com/pricing/
+Session: 296c88b8-ddfe-4a6e-9eca-0eaa089bcb55
+Time: 2026-03-11 06:11:44 UTC
+========================================================================
+
+URL: https://www.avoxi.com/pricing/
+Extraction prompt: What are the exact prices shown? Especially for toll-free numbers, Nigeria numbers, per-minute rates, and monthly fees. Report all dollar amounts.
+
+----------------------------------------
+
+# AVOXI Pricing Information
+
+Based on the web page content provided, here are the specific prices shown:
+
+## Virtual Number Pricing
+- **Starting price:** "$6.49/mo" for number packages
+- **Note:** "Additional fees, including regulatory and taxes may apply"
+
+## Software Tier Pricing (Platform Fees)
+
+The page shows three tiers with the following costs:
+
+**Standard:** "3% of spend" with "$14.99/mo minimum"
+
+**Premium:** "5% of spend" with "$99.99/mo minimum"
+
+**Premium AI:** "10% of spend" with "$199.99/mo minimum"
+
+## Limitations
+The document does not contain specific dollar amounts for:
+- Toll-free numbers (specific rates not listed)
+- Nigeria-specific numbers (not mentioned)
+- Per-minute rates (not provided)
+- Country-specific monthly fees beyond the base $6.49/mo starting price
+
+The page indicates that actual pricing varies based on selected phone number type, required minutes per month, and country/city location, but specific rates for these variables are not detailed in the content provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

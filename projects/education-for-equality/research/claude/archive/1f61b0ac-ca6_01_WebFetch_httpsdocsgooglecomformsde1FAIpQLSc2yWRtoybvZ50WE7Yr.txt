@@ -1,0 +1,62 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.google.com/forms/d/e/1FAIpQLSc2yWRtoybvZ50WE7Yr1_UND9jHjAKjq9TbkJVP
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:52:25 UTC
+========================================================================
+
+URL: https://docs.google.com/forms/d/e/1FAIpQLSc2yWRtoybvZ50WE7Yr1_UND9jHjAKjq9TbkJVPS2oE6Wmj6A/viewanalytics
+Extraction prompt: Extract all the content from this Google Form analytics page - questions, responses, data, charts, everything available.
+
+----------------------------------------
+
+# MIT Africa Business Challenge Application Form - Content Summary
+
+## Form Overview
+This Google Form serves as the primary application portal for the MIT Africa Business Challenge, a hackathon addressing three critical African development areas: Education, Agricultural Logistics, and Finance.
+
+## Key Application Details
+
+**Event Details:**
+- "in-person hackathon and award ceremony at the 2026 MIT Africa Innovate Conference on February 27th and 28th 2026"
+- Application deadline: February 20th, 2026
+- Prize pool: $5,000 (first), $3,000 (second), $1,000 (third)
+
+**Resources Provided:**
+The organizers offer "AI Jetpacks - proprietary MIT AI tools for entrepreneurs," exclusive access to MIT Orbit, no-code AI workshops, mentorship, and networking opportunities.
+
+## Form Sections
+
+**Participant Application Track:**
+- Name, email, phone number
+- Educational status (undergraduate, graduate, faculty, etc.)
+- School/university selection (18 New England institutions listed)
+- Problem theme selection (Agricultural Logistics, Education, Finance)
+- Essay questions on background, problem-solving approach, and team formation
+- Attendance confirmation required
+
+**Sponsor & Mentor Interest Forms:**
+- Separate tracks for corporate sponsors and mentors
+- Theme preference selection
+- Experience verification
+- Contact information
+
+## Response Data Summary
+
+The form shows **59 total responses** with rich qualitative data in open-ended questions. Notable response themes include:
+
+**Participant Backgrounds:**
+Respondents describe experience in fintech solutions, educational access platforms, agricultural supply chain optimization, and healthcare innovation. Many emphasize diaspora perspectives and firsthand experience with African development challenges.
+
+**Team Formation:**
+23 responses documented partner information, with team sizes ranging from 2-6 members. Response patterns show organized collaboration among MIT and regional university students.
+
+**Mentor Experience:**
+5 affirmative responses to prior hackathon mentoring experience.
+
+## Form Status
+
+The form is actively collecting responses but displays the message: "This form is approaching the response limit" (noting the 50,000-response threshold for Google Forms). Historical response data remains downloadable as CSV.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

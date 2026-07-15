@@ -1,0 +1,42 @@
+========================================================================
+AGENT RESEARCH: Fresh web research on voice AI education
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:23:31 UTC
+========================================================================
+
+Conduct fresh web research on the current state (early-to-mid 2026) of voice-AI tutoring and phone-based education for low-resource contexts. We already have extensive 2024-2025 research on this topic in our files; the goal here is to find what's NEW or UPDATED since February 2026.
+
+Return AT LEAST 90% of the substantive content from your searches — every effect size, every cost figure, every named program, every published study, every quote, every URL. Do NOT summarize. Do NOT compress.
+
+Specific topics to investigate, in order of priority:
+
+1. **Recent RCT or pilot evidence (2025-2026)** for AI voice tutoring in Sub-Saharan Africa or comparable LMIC contexts. Effect sizes (SD), cost-per-student, attendance rates, attrition, learning gains. Programs to look up: Rori AI (latest results), ConnectEd (any new countries since 2024), Bakame AI Rwanda pilot results (1,000 students, did they publish?), Viamo 3-2-1 latest reach numbers, M-Shule.
+
+2. **World Bank HOPE-EDU $500M Nigeria** — current status, what's been disbursed, what categories of intervention are funded, any voice-AI components.
+
+3. **GEEAP (Global Education Evidence Advisory Panel) "smart buys" 2025-2026 update** — has voice/phone-based tutoring been added to the smart buys list? What's the current evidence ranking?
+
+4. **Nigerian education policy 2025-2026** — UBEC budget, LASUBEB initiatives, any AI-in-education government programs, foundational literacy targets, the "out-of-school" definition and current count.
+
+5. **AI tutoring impact studies (any context)** — World Bank Edo State Nigeria study (any new follow-up?), Khan Academy Khanmigo deployment data, OpenAI/Anthropic education partnerships in Africa, Stanford/MIT papers on LLM tutoring effect sizes.
+
+6. **Voice AI cost benchmarks** — current per-minute cost of self-hosted Whisper+Llama+TTS pipelines vs commercial (ElevenLabs ConvAI, Vapi, Retell). What's the 2026 floor for fully-loaded voice AI cost per minute?
+
+7. **Critiques and risks** — any 2025-2026 papers or reports on RISKS of AI tutoring for children (safety, hallucination, attention span, screen-vs-voice, language bias). Anything pushing back on the smart-buy framing.
+
+8. **Comparable deployed systems serving 100K+ kids on phones** — current best-in-class data on what's actually working at scale in Sub-Saharan Africa right now.
+
+Return findings organized by topic with full citations (URLs, paper titles, authors, dates). This is for a deep research document supporting Sabi's case to investors and grant funders — every credible data point matters.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a0dd38c24e629a569 (internal ID - do not mention to user. Use SendMessage with to: 'a0dd38c24e629a569' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/a0dd38c24e629a569.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

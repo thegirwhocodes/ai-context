@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Awarri LangEasy Nigerian voice data crowdsourcing N-ATLaS how collected labeled 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:05 UTC
+========================================================================
+
+Search query: Awarri LangEasy Nigerian voice data crowdsourcing N-ATLaS how collected labeled speech
+
+----------------------------------------
+
+Web search results for query: "Awarri LangEasy Nigerian voice data crowdsourcing N-ATLaS how collected labeled speech"
+
+Links: [{"title":"Meet The Small Startup Behind Nigeria's Multilingual AI Model","url":"https://peopleofcolorintech.com/articles/meet-the-small-startup-behind-nigerias-multilingual-ai-model/"},{"title":"Awarri | Africa's AI and Robotics Enabler","url":"https://www.awarri.com/"},{"title":"What can you do with the Nigerian government's new AI model?","url":"https://techcabal.com/2025/09/25/nigerian-government-awarri-launch-n-atlas/"},{"title":"NCAIR1/N-ATLaS · Hugging Face","url":"https://huggingface.co/NCAIR1/N-ATLaS"},{"title":"Awarri | Frontier AI Models and Data Platforms in Africa","url":"https://www.awarri.com/ai-product"},{"title":"N-ATLAS v1: A Milestone for AI in Nigeria andthe Future of Artificial Intelligence in Africa | by DSN - Data Science Nigeria | Medium","url":"https://datasciencenigeria.medium.com/n-atlas-v1-a-milestone-for-ai-in-nigeria-andthe-future-of-artificial-intelligence-in-africa-42159589bb70"},{"title":"Awarri | Contribute to LangEasy","url":"https://www.awarri.com/langeasy"},{"title":"NCAIR1/Yoruba-ASR · Hugging Face","url":"https://huggingface.co/NCAIR1/Yoruba-ASR"},{"title":"NCAIR1/NigerianAccentedEnglish · Hugging Face","url":"https://huggingface.co/NCAIR1/NigerianAccentedEnglish"},{"title":"GitHub - aicollectiveng/Nigeria-AI-Repository: A catalogue of the full spectrum of AI advancement in the country — from documented innovation use cases and data collection initiatives to emerging tools and technologies supporting AI implementation. It also features notable events, news, and key milestones that highlight Nigeria's growing footprint in the global AI ecosystem.","url":"https://github.com/aicollectiveng/Nigeria-AI-Repository"}]
+
+Based on the search results, here's what I found about Awarri, LangEasy, Nigerian voice data crowdsourcing, and N-ATLaS:
+
+## LangEasy Data Collection
+
+LangEasy is an app launched by Awarri to crowdsource voice and text data from users across Nigeria. The platform allows users to record audio samples by translating English sentences into Nigerian languages such as Yoruba, Hausa, Igbo, Pidgin, and Ibibio, with voice recordings being created by reading the sentences aloud in their chosen language.
+
+This approach aims to gather extensive data to train their LLM, with initial targets of 24,000 hours of audio and long-term goals reaching up to 500,000 hours. Awarri built LangEasy.ai to collect thousands of voice samples from fellows in the government's 3 Million Technical Talent (3MTT) programme.
+
+## N-ATLaS Integration
+
+N-ATLaS (Nigeria – Automatic Transcription and Language Systems) consists of four Automatic Speech Recognition (ASR) models and one Text Large Language Model (LLM) for Nigerian languages (Yoruba, Hausa, Igbo, and Nigerian-accented English). The project was powered by Awarri Technologies in partnership with the National Centre for Artificial Intelligence and Robotics (NCAIR) and the National Information Technology Development Agency (NITDA), under the Ministry of Communications, Innovation and Digital Economy.
+
+The voice data collected through LangEasy serves as the foundation for training these speech recognition models within the N-ATLaS framework.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

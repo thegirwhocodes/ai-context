@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://alphatechnologieslimited.com
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:31:53 UTC
+========================================================================
+
+URL: https://alphatechnologieslimited.com
+Extraction prompt: Extract ALL details about Alpha Technologies services. Do they offer USSD services? USSD push / network-initiated? Do they have MNO gateway access? What telecom services beyond 0800 toll-free? Any mention of NI-USSD, USSD during voice calls?
+
+----------------------------------------
+
+# Alpha Technologies Services Analysis
+
+Based on the webpage content provided, here's what Alpha Technologies offers:
+
+## Core Services Identified:
+1. **SMAT Numbers** - "memorable branded Toll Free (0800) or Non-Toll Free (0700)" numbers
+2. **Interactive Voice Response (IVR)** - "Professionally guide callers using Interactive Voice Responses"
+3. **Integrated Voice Message (IVM)** - "Share every message with IVM"
+4. **Alpha Caller App** - VoIP application for calls "As low as N14/minute"
+5. **Outbound Services** (mentioned but not detailed)
+
+## USSD Services:
+**No mention found** of USSD services, USSD push, network-initiated USSD, or NI-USSD capabilities anywhere on this page.
+
+## MNO Gateway Access:
+**Not explicitly stated.** The site describes itself as "Cross-network telecoms service provider in Nigeria" but provides no technical details about gateway infrastructure or direct MNO connectivity.
+
+## Beyond Toll-Free Numbers:
+The company emphasizes call routing, management, and voice messaging features rather than expanding into other telecom service categories. The focus is on memorable numbering and call handling solutions.
+
+**Conclusion:** Alpha Technologies primarily operates as a **specialized numbering and voice management service provider**, not a comprehensive telecom infrastructure company. USSD and gateway access are absent from their advertised service portfolio.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/1163043-how-do-i-set-up-my-sip-phone
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:44 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/1163043-how-do-i-set-up-my-sip-phone
+Extraction prompt: What is a SIP Phone on Africa's Talking? How is it set up? What is the difference vs a SIP Trunk? Pricing, use cases, technical requirements.
+
+----------------------------------------
+
+# SIP Phone Setup on Africa's Talking
+
+Based on the provided content, here's what I can tell you:
+
+## What is a SIP Phone?
+
+The article doesn't define what a SIP phone is, but it references configuring "a soft phone e.g Zoiper" - indicating SIP phones are software-based calling applications.
+
+## How to Set It Up
+
+The setup process involves three steps:
+
+1. **Map your SIP number** to your Africa's Talking account
+2. **Register credentials** on a softphone application like "Zoiper, X-Lite e.t.c"
+3. **Adjust settings** (For Zoiper specifically, "you also have to change a few settings")
+
+## Limitations of This Content
+
+The provided article does **not** address:
+- Definition or explanation of what a SIP phone is
+- Difference between SIP phones and SIP trunks
+- Pricing information
+- Specific use cases
+- Technical requirements
+- Detailed configuration steps
+
+For comprehensive information on these topics, you would need to consult additional Africa's Talking documentation or contact their support team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

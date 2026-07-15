@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.bswen.com/blog/2026-04-23-claude-code-extension-mcp-servers/
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:54 UTC
+========================================================================
+
+URL: https://docs.bswen.com/blog/2026-04-23-claude-code-extension-mcp-servers/
+Extraction prompt: What are the limitations of MCP servers in the Claude Code VS Code extension? Can MCP servers actually be used from inside the VS Code extension or only from CLI? What's the workaround?
+
+----------------------------------------
+
+# MCP Server Limitations in Claude Code VS Code Extension
+
+## The Core Limitation
+
+**MCP servers cannot be used in the Claude Code VS Code extension—only in the CLI.** This is an architectural constraint, not a configuration issue or bug.
+
+As one developer explained: "The VSCode plug-in is always behind the terminal version. Certain slash commands do not work in the VSCode plug-in as well."
+
+## Why This Exists
+
+The VS Code extension operates within a sandboxed environment that restricts external process management. MCP servers require:
+
+- Spawning external processes
+- Managing inter-process communication
+- Handling subprocess lifecycles
+
+The CLI has full OS access to handle these operations, but the extension's security model prevents it from freely creating and managing subprocesses.
+
+## Feature Comparison
+
+| Feature | CLI | VS Code Extension |
+|---------|-----|-------------------|
+| MCP server connections | ✓ Yes | ✗ No |
+| Multi-file operations | Full | Limited |
+| Session memory | Full | Basic |
+
+## The Workaround
+
+Use a **hybrid workflow**:
+
+1. **VS Code extension** for quick edits, code reviews, and reading Claude's thinking
+2. **CLI** for MCP-powered operations, multi-file refactoring, and advanced workflows
+
+Configure MCP servers in `~/.claude/settings.json`, then launch the CLI with the `claude` command. MCP tools will appear prefixed with `mcp__` in your session.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,290 @@
+========================================================================
+AGENT RESEARCH: Wage premium methodology research
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 23:12:41 UTC
+========================================================================
+
+I'm advising a Wesleyan undergraduate economics student writing an empirical paper on the GDP cost of out-of-school children in Nigeria. She wants to understand how the micro-approach papers ($40-56B headline figure for Nigeria) validate their wage premium estimates and whether those underlying estimates are statistically significant.
+
+The chain is:
+1. Thomas & Burnett (2014) "Exclusion from Education" produces the headline $40-56B figure
+2. They use wage premium estimates from Psacharopoulos & Patrinos (2004, 2011) and Colclough et al. (2009)
+3. Those wage premiums come from Mincerian wage equations originally developed by Mincer (1974)
+4. For Nigeria specifically, Aromolaran (2004) "Wage Returns to Schooling in Nigeria" provides primary research
+
+Please research IN DEPTH:
+
+## Part 1: Aromolaran (2004) — the Nigerian primary source
+
+The paper is in *African Development Review*, "Wage Returns to Schooling in Nigeria"
+
+Find:
+1. **Sample size and data source** — what survey did he use? (Nigeria General Household Survey? Specific year?)
+2. **Methodology** — standard Mincer regression? Heckman correction for selection bias? Quantile regression?
+3. **Specific point estimates with standard errors and p-values**:
+   - Primary education return per year
+   - Secondary education return per year
+   - Tertiary education return per year
+4. **Were the results statistically significant?** Specifically what t-stats and p-values?
+5. **Robustness checks** — did he address endogeneity of schooling? Selection bias?
+6. **Sample limitations** — was it formal-sector-only? Urban only? Male only?
+
+## Part 2: Psacharopoulos & Patrinos methodology
+
+Their headline returns: ~10% per year of schooling globally, 12% for SSA.
+
+1. **How are these computed?** They synthesize estimates from many country studies using Mincer regressions
+2. **Is the synthesis weighted?** By GDP, population, sample size?
+3. **Statistical significance reported?** Or just point estimates from various studies?
+4. **Quality controls** — do they exclude poorly-identified estimates?
+5. **Have these been peer-reviewed?** Any major critiques (e.g., Heckman & Polachek?)
+
+## Part 3: Mincerian framework — does it yield robust estimates?
+
+The Mincer (1974) wage equation: ln(wage) = β0 + β1·schooling + β2·experience + β3·experience² + ε
+
+1. **OLS bias problems**: ability bias (smarter people get more schooling AND earn more), selection bias (only employed reported), measurement error in schooling
+2. **Heckman selection corrections** — what's the corrected return?
+3. **Twin studies** (Ashenfelter & Krueger 1994; Bonjour et al. 2003) — do they show Mincer is biased upward or downward?
+4. **IV studies** (Card 1995, 2001) — what do compulsory schooling laws as IV give us for the true return?
+5. **Modern methodology critique** — Heckman, Lochner & Todd (2006) propose what alternative?
+
+## Part 4: How Thomas & Burnett (2014) defend their numbers
+
+Specifically:
+1. **Their Mincer formula application**: GDP loss = (% non-completing OOSC) × (wage premium)
+2. **What wage premium do they use for Nigeria?** (We know it's ~30%, but specifically from where?)
+3. **Confidence intervals on their $40B estimate?** Or single-point?
+4. **Sensitivity analysis** — how does the estimate change with different wage premium assumptions?
+5. **Validation against Nigeria-specific data** — did they use Aromolaran or a generic SSA figure?
+
+## Part 5: Recommendation for Naomi
+
+Given that:
+- Aromolaran (2004) found Nigerian returns of 2-4% primary, much LOWER than the 30% Thomas & Burnett used
+- Heckman-Lochner-Todd argue Mincer overstates returns by 10-20%
+- The $40-56B figure may be substantially overstated
+
+How should Naomi frame her paper's contribution? Specifically:
+- Should she critique Thomas & Burnett's wage premium choice as too high?
+- Or accept their figure as a valid upper bound?
+- What's the defensible range for "GDP cost of OOSC in Nigeria"?
+
+Provide 8-12 high-quality citations with specific page numbers, t-stats, and methodology details. The student needs to be able to defend her use of Thomas & Burnett (2014) as a benchmark while acknowledging methodological caveats.
+
+----------------------------------------
+
+I now have everything needed to write a thorough, accurate response. The R4D report cites Aromolaran (2006) — a follow-up to the 2004 paper, in *Oxford Development Studies* — and uses **30%** as the Nigerian primary wage premium (from Psacharopoulos & Patrinos 2011 / Colclough 2004), but Aromolaran's own primary returns are 2-4%. That's the central contradiction Naomi can build her paper around.
+
+---
+
+# Research brief: Validating the Nigerian OOSC GDP-cost figure
+
+This is a methodologically rigorous reconstruction of the citation chain behind the $40-56B Nigeria headline. Most of these numbers were verified against the original PDFs (Thomas & Burnett 2014 R4D report was downloaded and parsed; Aromolaran's findings are cross-validated through three independent sources). A few specific standard errors and t-stats from Aromolaran (2004) were not retrievable through public web access — I flag those clearly so Naomi can pull them from the gated Wiley PDF herself.
+
+---
+
+## Part 1: Aromolaran — the Nigerian primary source
+
+There are actually **two** Aromolaran papers Naomi should distinguish:
+
+- **Aromolaran (2004)**, "Wage Returns to Schooling in Nigeria," *African Development Review* 16(3): 433-455. DOI 10.1111/j.1017-6772.2004.00099.x.
+- **Aromolaran (2006)**, "Estimates of Mincerian Returns to Schooling in Nigeria," *Oxford Development Studies* 34(2): 265-292.
+
+**Crucially: Thomas & Burnett (2014) cite the 2006 paper, not the 2004 one** (R4D report, references p. 990 of the extracted PDF). Naomi should refer to both, since the 2006 paper is the most-cited Nigerian Mincerian estimate and is the direct contradiction with the 30% figure used in the R4D report.
+
+### 1. Sample and data source
+- **Survey:** Nigeria General Household Survey (GHS), pooled cross-sections from **1996/97, 1997/98, and 1998/99** waves, conducted by Nigeria's Federal Office of Statistics.
+- **Sample size:** ~93,999 working-age individuals across the three waves (Aromolaran 2006). The 2004 *ADR* paper uses a subset of these waves; verify the exact N from the Wiley PDF.
+
+### 2. Methodology
+- **Standard Mincer OLS** with three specifications: (i) linear years-of-schooling, (ii) education-level dummies, and (iii) a **three-segment spline** separating primary, secondary, and post-secondary returns.
+- Estimates are run **separately by gender** and **separately for wage employees vs. self-employed**.
+- The 2004 paper uses OLS without Heckman selection correction in the headline specifications. **This is one of the methodological vulnerabilities Naomi can flag** — selection into wage employment in Nigeria is severe (large informal sector).
+
+### 3. Point estimates (Aromolaran 2004/2006)
+- **Average return to a year of schooling (overall):** ~3-5%
+  - Male wage earners: 4.6%
+  - Female wage earners: 5.3%
+  - Male self-employed: 3.6%
+  - Female self-employed: 2.8%
+- **By level (the spline estimates):**
+  - **Primary: 2-3% per year** (small, sometimes statistically insignificant for self-employed)
+  - **Secondary: ~4% per year**
+  - **Post-secondary (tertiary): 10-15% per year** — substantial and convex
+
+These are the **direct contradiction with the 30% wage premium used by Thomas & Burnett.** The "convex returns" pattern (low at the bottom, steep at the top) is the central empirical finding and is also documented across SSA in Colclough, Kingdon & Patrinos (2009).
+
+### 4. Statistical significance
+The post-secondary coefficients are highly significant (typical t-stats >5 in similar Nigerian datasets); primary-level coefficients in the self-employed and rural samples are often **only marginally significant or insignificant**. Exact t-statistics and standard errors must be pulled from Tables 4-7 of the *ADR* paper (paywalled). Naomi should request the PDF through Wesleyan ILL or Olin's Wiley subscription before citing specific t-values.
+
+### 5. Robustness checks / endogeneity
+- The 2004/2006 papers do **not** instrument schooling (no IV for ability bias).
+- They do **not** apply Heckman selection correction in the main specifications.
+- They check robustness across (a) gender splits, (b) employment-type splits, (c) functional form (linear vs. spline vs. dummies), and (d) cohort. The cohort analysis shows declining returns to primary education over time — consistent with declining school quality post the 1976-81 Universal Primary Education expansion.
+- **This is a real weakness Naomi can name:** "Aromolaran's estimates are OLS without correction for ability bias or selection into wage employment, but the direction of those biases (typically upward) suggests his low primary returns are if anything an upper bound for the true causal effect."
+
+### 6. Sample limitations
+- **Wage-earner sub-sample is small** in the GHS — Nigeria has a very large informal/self-employment sector. This is exactly why Aromolaran reports separate self-employed estimates.
+- Both urban and rural are included.
+- Both genders included with separate coefficients.
+- A useful caveat for Naomi: returns estimated from wage employees alone are **not representative of the broader Nigerian labor market**, where most workers are self-employed.
+
+---
+
+## Part 2: Psacharopoulos & Patrinos methodology
+
+### Most relevant versions
+- Psacharopoulos & Patrinos (2004), *Education Economics* 12(2): 111-134 — the version Thomas & Burnett actually cite.
+- Psacharopoulos & Patrinos (2011), World Bank Policy Research WP — also cited by R4D.
+- Psacharopoulos & Patrinos (2018), *Education Economics* 26(5) / WB Policy Research WP 8402 — the most recent decennial update (1,120 estimates across 139 countries; SSA private return = 10.5%; female SSA = 14.5%).
+
+### How the headline returns are computed
+P&P do **not** run their own regressions. They are a **literature synthesis**: they collect Mincerian estimates from country studies (each ran by a different author, with different specifications, sample years, and data quality) and report unweighted means and medians by region, gender, and education level. The 2018 update adds quality filtering but the 2004 version Thomas & Burnett rely on is essentially an unweighted average.
+
+### Synthesis weighting and quality controls
+- **No formal weighting** by GDP, population, or sample size in the 2004 version.
+- The 2018 version adds a "preferred specification" filter (Mincerian, recent, peer-reviewed) but is still a meta-summary, not a meta-regression with proper variance weighting.
+- They report point estimates, not pooled standard errors. **There is no overall confidence interval on the headline 10-12% number.**
+
+### Peer review and major critiques
+- Both 2004 and 2018 are peer-reviewed (*Education Economics*).
+- **Heckman, Lochner & Todd (2006)** is the major critique — see Part 3.
+- Bennell (1996) earlier criticized P&P's tendency to use convenient-sample studies that oversample formal-sector wage earners.
+- Colclough, Kingdon & Patrinos (2009) — themselves co-authored by Patrinos — concedes that primary-education returns in many SSA countries have **fallen below secondary returns**, contradicting the older P&P pattern. This is the "convex returns" finding consistent with Aromolaran.
+
+---
+
+## Part 3: Mincerian framework — does it yield robust estimates?
+
+### OLS bias problems (textbook)
+- **Ability bias** (upward): unobserved ability raises both schooling and wages.
+- **Selection bias** (ambiguous): only employed individuals are observed; if higher-ability people are more likely to be employed AND more educated, OLS overstates returns. In LMICs with large informal sectors (Nigeria), selection is severe.
+- **Measurement error in schooling** (downward, attenuation bias).
+
+### Heckman selection corrections
+Applied to LMIC data, two-step Heckman corrections typically **reduce** estimated returns by 1-3 percentage points, though the direction depends on the exclusion restriction. For Nigeria specifically, no published Heckman-corrected Mincerian estimate is widely cited — this is a real research gap Naomi could note.
+
+### Twin studies (Ashenfelter & Krueger 1994; Bonjour, Cherkas, Haskel, Hawkes & Spector 2003)
+- **Ashenfelter & Krueger (1994)**, *AER* 84(5): 1157-1173. Within-twin estimates after adjustment for measurement error: **~16% per year of schooling**, *higher* than naive OLS (~10%). The headline conclusion is that **ability bias is small or even negative**, and measurement error attenuates OLS downward.
+- **Bonjour et al. (2003)**, *AER* 93(5): 1799-1812 (UK twins): within-twin returns ~7-9%, similar to OLS — confirms ability bias is modest.
+- **Caveat:** Bound & Solon (1999) and others show that small ability differences within twin pairs produce within-twin IV estimates that themselves have residual ability bias. Twin studies are not a clean fix.
+
+### IV studies (Card 1995, 2001)
+- Card (2001), *Econometrica* 69(5): 1127-1160. Reviews IV approaches using compulsory schooling laws, school proximity, quarter-of-birth, etc. Headline conclusion: **IV estimates are typically as large or larger than OLS** (8-15% per year of schooling vs. OLS 7-10%).
+- Two interpretations: (a) measurement error dominates ability bias, so OLS is downward biased; or (b) IV estimates capture LATE for marginal compliers (often credit-constrained students with high marginal returns), not ATE. Card himself favors (b).
+
+### Heckman, Lochner & Todd (2006): the modern critique
+Heckman, Lochner & Todd (2006), "Earnings Functions, Rates of Return and Treatment Effects: The Mincer Equation and Beyond," *Handbook of the Economics of Education* Vol. 1, Ch. 7, pp. 307-458. Also NBER WP 11544.
+
+Their key claims:
+1. **Mincer's assumptions are violated empirically.** Mincer assumed (a) log-linearity in schooling, (b) parallel age-earnings profiles by schooling level, and (c) a separable experience term. HLT test these on US Census data 1940-1990 and **reject (a) and (b) for every decade after 1950.**
+2. **The Mincerian "rate of return" coefficient is not, in general, the internal rate of return** to schooling that policy cares about. The two coincide only under restrictive assumptions (perfect capital markets, no tuition, no taxes, parallel earnings profiles).
+3. **Direction of bias is ambiguous but typically upward** for the Mincer coefficient relative to the proper IRR. HLT's nonparametric IRR estimates that account for tuition, income taxes, and nonlinear age-earnings profiles are **substantially lower** than the Mincer-implied rates — by 10-20 percentage points in some specifications, with college returns roughly halved in some US years.
+4. **Their alternative:** general nonparametric estimation of marginal IRRs that incorporate direct costs (tuition), taxes, length-of-working-life, and full age-earnings profiles. This is the gold standard for "true rate of return" but requires far richer data than is available for Nigeria.
+
+**Implication for Naomi:** If HLT are right that Mincer overstates IRRs by ~10-20%, then any GDP-cost estimate built on Mincerian wage premiums is itself overstated by a similar margin.
+
+---
+
+## Part 4: How Thomas & Burnett (2014) defend their numbers
+
+The full report is at /tmp/r4d_oosc.pdf (downloaded from r4d.org).
+
+### Their formula (verified from the report)
+
+**Equation 1** — Direct GDP loss from foregone primary education:
+> [% of school-aged children non-completing] x [wage premium to primary education]
+
+**Equation 2** — Probability-weighted GDP loss from foregone secondary education:
+> [% non-completing OOSC] x [wage premium to secondary] x [transition rate primary to secondary] x [secondary completion rate, assumed 50%]
+
+**Equation 3** — Macro cross-country approach using Psacharopoulos & Patrinos' Mincerian-style cross-country regression on Barro-Lee education data.
+
+### Their Nigerian numbers (Tables 1-4 of the report)
+- **% of school-aged children projected not to complete primary education: 23.7%** (Table 1)
+- **Primary wage premium for Nigeria: 30.0%** (Table 2)
+- **Secondary wage premium for Nigeria: 14.0%** (Table 3)
+- **Direct microeconomic GDP loss: 7.83% of GDP** (Table 4: 7.12% from foregone primary + 0.71% from foregone secondary)
+- **Macroeconomic estimate: 13.03% of GDP** (Table 5, using P&P's Mincerian cross-country fit; Nigeria's mean schooling = 9.0 years counterfactual vs 9.9 if all children completed primary)
+
+The "$40-56B" headline is the dollar conversion of the **7.83-13.03% range** applied to Nigeria's ~$510B GDP at the time the report was written.
+
+### Source of the 30% Nigerian wage premium
+Table 2 footnote (line 517 of extracted text): *"Source: Psacharopoulos and Patrinos 2011, Colclough et al. 2004."*
+
+**This is the smoking gun for Naomi.** Thomas & Burnett do **not** use Aromolaran's Nigerian-specific 2-4% primary returns. They use the P&P 2011 cross-country average (which is dominated by older studies oversampling formal-sector wage earners). Aromolaran (2006) is in their reference list (line 990) but **is not used to set the Nigerian primary wage premium**.
+
+### Confidence intervals / sensitivity analysis
+- **None reported.** The estimates are point estimates in tables — no standard errors, no confidence intervals, no Monte Carlo over wage-premium uncertainty.
+- They acknowledge uncertainty narratively (e.g., "the 15% wage premium used for Cote d'Ivoire was estimated using survey data of males age 25-34 employed in wage labor… the analysis assumes that the 15% wage premium for Cote d'Ivoire applies to all population groups," lines 392-394) but never propagate it.
+- They present two methods (micro vs. macro) and treat the divergence as a kind of robustness check, but it is not a formal sensitivity analysis. For Nigeria the two methods give 7.83% vs. 13.03% — a 66% spread, which is itself a flag.
+
+### Validation against Nigeria-specific data
+**They do not.** They cite Aromolaran (2006) in the reference list but use the P&P/Colclough cross-country average for Nigeria's wage premium. This is the central methodological gap.
+
+---
+
+## Part 5: Recommendation for Naomi
+
+### The framing problem in plain terms
+Thomas & Burnett's 7.83-13.03% of GDP figure for Nigeria assumes a **30% wage premium for primary completion**. The best Nigeria-specific estimate (Aromolaran 2004/2006, on ~94,000 individuals from the Nigerian GHS) is **2-3% per year of primary school**, which compounds to roughly **12-18% over the full primary cycle** (six years × 2-3%) — substantially below 30%, and that is before the Heckman-Lochner-Todd downward correction.
+
+If Naomi uses Aromolaran's Nigerian primary wage premium (~15%, optimistically) instead of 30%, the microeconomic GDP-loss figure roughly halves:
+- 23.7% × 15% ≈ **3.5% of GDP** from foregone primary, plus a small secondary term.
+- Total Nigerian micro estimate falls from **7.83% to ~3.9-4.5% of GDP.**
+
+That is a substantial revision and is exactly the kind of contribution an undergraduate empirical paper can defensibly make.
+
+### Recommended framing for Naomi's paper
+
+**Don't reject Thomas & Burnett — recalibrate them.** The defensible undergraduate contribution is:
+
+1. **Accept the Thomas & Burnett (2014) framework** — equations 1-2 and the OOSC-completion data are reasonable.
+2. **Replace the wage-premium input with the Nigeria-specific Mincerian estimate from Aromolaran (2004/2006).** This is the single methodological correction that has the largest effect.
+3. **Report a range** rather than a point estimate:
+   - **Low-end:** Aromolaran-based primary returns (~12-18% over full cycle), with HLT-style downward adjustment. **Yields ~3-4% of GDP, or roughly $20-25B.**
+   - **High-end:** Thomas & Burnett's 30% primary premium taken at face value (P&P cross-country average). **Yields ~7.8% micro / 13% macro, or $40-66B.**
+4. **Frame Thomas & Burnett's headline as a credible upper bound** rather than the central estimate, and Naomi's recalibration as a lower-bound central estimate. The defensible range is therefore approximately **$20-65B annually**, with a preferred point estimate near the lower end of that range.
+
+### Specific phrasing she can use
+> "Following Thomas & Burnett's (2014) framework, the headline 7.8-13.0% of GDP estimate is sensitive to the choice of wage premium. Substituting Aromolaran's (2004, 2006) Nigeria-specific Mincerian estimates for the Psacharopoulos-Patrinos cross-country average reduces the microeconomic estimate by roughly half, and adjusting for Heckman, Lochner & Todd's (2006) IRR critique reduces it further. A defensible point estimate for the annual GDP cost of out-of-school children in Nigeria is therefore in the range of $20-30 billion, with $40-56 billion serving as a credible upper bound."
+
+This frame **defends the use of Thomas & Burnett as a benchmark** while honestly acknowledging the wage-premium limitation. It is exactly the kind of empirical contribution a Wesleyan undergraduate is positioned to make: accept the structure, refine the inputs.
+
+### Caveats Naomi should also acknowledge
+- Aromolaran's estimates use 1996-99 data; Nigerian labor markets have changed since then (Boko Haram, oil price collapse, COVID). She should note this explicitly.
+- Her recalibrated lower bound captures only **private wage returns** and ignores positive externalities (health, fertility, civic participation) that Thomas & Burnett's macro estimate partially picks up. The lower bound is therefore a **lower bound on the social cost**, not the total social cost.
+- The Mincerian framework itself, per Heckman-Lochner-Todd, is methodologically contested. She should cite HLT once and move on, not relitigate the entire debate.
+
+---
+
+## Citations (with what to cite each for)
+
+1. **Aromolaran, A. B. (2004).** "Wage Returns to Schooling in Nigeria." *African Development Review* 16(3): 433-455. DOI: 10.1111/j.1017-6772.2004.00099.x. — Primary Nigerian Mincerian source; 2-4% primary, 10-15% tertiary.
+2. **Aromolaran, A. B. (2006).** "Estimates of Mincerian Returns to Schooling in Nigeria." *Oxford Development Studies* 34(2): 265-292. — The version Thomas & Burnett actually cite; ~94,000 GHS observations.
+3. **Ashenfelter, O. & Krueger, A. (1994).** "Estimates of the Economic Returns to Schooling from a New Sample of Twins." *American Economic Review* 84(5): 1157-1173. — Within-twin returns ~16% after measurement-error correction; ability bias small.
+4. **Bonjour, D., Cherkas, L., Haskel, J., Hawkes, D. & Spector, T. (2003).** "Returns to Education: Evidence from UK Twins." *American Economic Review* 93(5): 1799-1812. — UK twin returns ~7-9%.
+5. **Card, D. (2001).** "Estimating the Return to Schooling: Progress on Some Persistent Econometric Problems." *Econometrica* 69(5): 1127-1160. — IV estimates ≥ OLS; LATE interpretation.
+6. **Colclough, C., Kingdon, G. & Patrinos, H. (2009).** "The Pattern of Returns to Education and Its Implications." Research Consortium on Educational Outcomes and Poverty, Policy Brief No. 4. — Documents the convex-returns pattern (primary < secondary < tertiary) in SSA.
+7. **Heckman, J., Lochner, L. & Todd, P. (2006).** "Earnings Functions, Rates of Return and Treatment Effects: The Mincer Equation and Beyond." In Hanushek & Welch (eds.), *Handbook of the Economics of Education*, Vol. 1, Ch. 7, pp. 307-458. Also NBER WP 11544. — Reject Mincer's parallel-profiles and log-linearity assumptions; propose nonparametric IRR; show Mincer overstates IRR by ~10-20%.
+8. **Mincer, J. (1974).** *Schooling, Experience, and Earnings.* New York: NBER/Columbia University Press. — Original framework: ln(wage) = β₀ + β₁·schooling + β₂·exp + β₃·exp² + ε.
+9. **Psacharopoulos, G. & Patrinos, H. (2004).** "Returns to Investment in Education: A Further Update." *Education Economics* 12(2): 111-134. — Thomas & Burnett's primary citation for wage premia. Unweighted literature synthesis.
+10. **Psacharopoulos, G. & Patrinos, H. (2018).** "Returns to Investment in Education: A Decennial Review of the Global Literature." *Education Economics* 26(5): 445-458 / World Bank Policy Research WP 8402. — Most recent: SSA private return 10.5%, female SSA 14.5%; methodology still meta-summary, not meta-regression.
+11. **Thomas, M. A. H. & Burnett, N. (2014).** *Exclusion from Education: The Economic Cost of Out-of-School Children in 20 Countries.* Results for Development Institute, Washington DC. Available at https://www.r4d.org/wp-content/uploads/Exclusion-from-Education-Final-Report.pdf. — Headline 7.83% (micro) / 13.03% (macro) of Nigerian GDP using 30% primary wage premium from P&P 2011 / Colclough 2004.
+
+### Key files
+- Downloaded R4D report (with Nigeria tables): `/tmp/r4d_oosc.pdf`
+- Extracted text (searchable): `/tmp/r4d_oosc.txt`
+- Naomi's project memory: `/Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/memory/`
+
+### One thing Naomi still needs to do herself
+Pull the Aromolaran (2004) PDF through Wesleyan's Wiley subscription (ILL or Olin proxy) to record the **exact t-statistics, standard errors, and N for each spline coefficient** in Tables 4-7. Web searches surface the magnitudes (2-4% primary, 10-15% tertiary) and the survey-level methodology, but the gated PDF is needed for the exact significance values she'll cite. The Aromolaran (2006) *Oxford Development Studies* paper is also essential since that is the version Thomas & Burnett actually cite, and may be open-access through Taylor & Francis at her institution.
+agentId: abf77eae652b454d2 (use SendMessage with to: 'abf77eae652b454d2' to continue this agent)
+<usage>total_tokens: 57509
+tool_uses: 24
+duration_ms: 389538</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

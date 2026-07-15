@@ -1,0 +1,54 @@
+========================================================================
+AGENT RESEARCH: Expand fresh web research
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:24:50 UTC
+========================================================================
+
+You are a follow-up agent. The user (Naomi, founder of Sabi — AI voice tutor for Nigerian out-of-school children) has explicitly asked that I "expand the amount of info" returned from web research.
+
+Run a much deeper sweep than a typical research session. Return AT LEAST 95% of the substantive content from each source you find — every effect size, every cost figure, every named program, every published study, every author, every date, every URL, every direct quote of consequence. Do NOT summarize. Do NOT compress.
+
+Length budget: aim for 10,000-15,000 words of returned content. The user wants this comprehensive.
+
+Topics to investigate IN DEPTH (do at least 3-4 web searches per topic, follow up with WebFetch on the most relevant URLs):
+
+1. **Voice-AI tutoring for low-resource contexts (2025-2026 evidence)** — Rori AI most recent published results and cost figures, ConnectEd 6-country RCT follow-ups, Bakame AI published outcomes if any, Viamo 3-2-1 reach by country and content category, M-Shule (Kenya) latest, Eneza Education status, Allô Alphabet (Côte d'Ivoire), Ubongo (Tanzania) any voice work, Funda Wande (South Africa). Include effect sizes (SD), sample sizes, durations, costs.
+
+2. **GEEAP smart buys & Education Endowment Foundation evidence** — current categorization of phone/voice-based tutoring, what's "great buy / good buy / bad buy", what evidence threshold is required, what new evidence has been added 2025-2026.
+
+3. **World Bank Edo State AI tutoring RCT (the famous one)** — find the actual paper, get exact effect sizes (1.5-2 years in 6 weeks framing), the cost figure ($48/student), the method (GPT-4 Copilot, text-based, supervised, 15-17yos), and any 2025-2026 follow-up studies or extensions.
+
+4. **World Bank HOPE-EDU $500M Nigeria foundational learning program** — full project description, components, disbursement timeline, implementing agencies, eligibility criteria for partners/grantees, any voice/AI provisions.
+
+5. **Nigerian education policy and budget 2025-2026** — UBEC 2025 budget allocation, NPower / N-Power Edu, LASUBEB initiatives, current OOSC count (UBEC vs UNICEF vs World Bank figures and the methodological differences), Ministry of Education AI strategy if any.
+
+6. **Khan Academy Khanmigo deployments** — recent published results, cost per student, accuracy/safety reports, whether it's been deployed in any African school system.
+
+7. **Major AI tutoring deployments globally 2025-2026** — every program reaching 100K+ children with measured outcomes. Include China (Squirrel AI), India (Sarvam/Bhashini education applications), Brazil (Letrus), USA (Carnegie Learning, MATHia), and any African system.
+
+8. **Cost benchmarks for self-hosted vs commercial voice AI in 2026** — Whisper large-v3 cost per minute on consumer GPU, Llama 3.1/4 inference cost per minute for conversational, Chatterbox/Coqui/YarnGPT cost, ElevenLabs ConvAI 2026 pricing, Vapi/Retell/Bland.ai 2026 pricing, Cartesia, Deepgram. Per-minute floor for fully loaded multi-turn voice AI.
+
+9. **Risks, critiques, safety research on AI tutoring for children** — recent papers on hallucination rates, age-appropriate content, parental consent frameworks, language model bias against African accents/dialects, attention/engagement studies for voice-only interaction with 8-14yos, screen vs voice cognitive load research.
+
+10. **Phone-only education infrastructure** — IVR adoption rates, SMS-based learning effectiveness, missed-call/flash-call as access mechanism, telco-sponsored education (Vodafone Foundation, MTN Foundation, Airtel Africa Foundation initiatives 2025-2026).
+
+11. **Comparable success stories in voice AI commerce (non-education)** — to inform Sabi's stack choices: Aydi Technologies (farmers, Egypt — they're at $7.5M raised, 80K users), Khaby Health, Ada Health voice deployments in Africa, banking voice agents (FairMoney, etc.).
+
+12. **Linguistic AI for Nigerian English/Pidgin/Yoruba/Hausa/Igbo** — Intron Health Sahara latest accuracy benchmarks, AfriSpeech-200, NaijaVoices dataset, Awarri's LLM (1T model rumored), Spitch AI status, Lelapa AI's Inkuba LLM, Lesan AI, Masakhane NLP recent releases.
+
+For each source: give the URL, title, author/org, date, and the substantive content. For the most important sources, include direct quotes verbatim.
+
+Organize the return into clearly labeled sections with full source citations. The goal is a deep research document that can be cited in grant applications, investor decks, and academic discussions — every credible data point matters and the reader will use this directly.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a4f1c7f3df5d46ed7 (internal ID - do not mention to user. Use SendMessage with to: 'a4f1c7f3df5d46ed7' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/a4f1c7f3df5d46ed7.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

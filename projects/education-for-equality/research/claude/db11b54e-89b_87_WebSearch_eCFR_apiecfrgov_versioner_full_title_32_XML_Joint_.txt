@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: eCFR api.ecfr.gov versioner full title 32 XML Joint Travel Regulations bulk down
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:26 UTC
+========================================================================
+
+Search query: eCFR api.ecfr.gov versioner full title 32 XML Joint Travel Regulations bulk download
+
+----------------------------------------
+
+Web search results for query: "eCFR api.ecfr.gov versioner full title 32 XML Joint Travel Regulations bulk download"
+
+Links: [{"title":"eCFR :: Reader Aids :: Developer Resources","url":"https://www.ecfr.gov/reader-aids/ecfr-developer-resources"},{"title":"bulk-data/ECFR-XML-User-Guide.md at main · usgpo/bulk-data","url":"https://github.com/usgpo/bulk-data/blob/main/ECFR-XML-User-Guide.md"},{"title":"eCFR :: Reader Aids","url":"https://www.ecfr.gov/reader-aids"},{"title":"REST API & Interactive Documentation - Reader Aids","url":"https://www.ecfr.gov/reader-aids/ecfr-developer-resources/rest-api-interactive-documentation"},{"title":"XML now available for ecfr.gov","url":"https://www.federalregister.gov/reader-aids/office-of-the-federal-register-announcements/2015/08/xml-now-available-for-ecfr-gov"},{"title":"eCFR :: API Documentation","url":"https://www.ecfr.gov/developers/documentation/api/v1"},{"title":"National Archives and Records Administration - Code of Federal Regulations in XML","url":"https://catalog.data.gov/dataset/code-of-federal-regulations-in-xml"},{"title":"GitHub - sam-berry/ecfr-analyzer","url":"https://github.com/sam-berry/ecfr-analyzer"},{"title":"Ecfr","url":"https://www.ecfr.gov/api/versioner/v1/full/2022-03-10/title-32.xml?part=117"},{"title":"GPO announces availability of CFR for bulk download in XML - Free Government Information (FGI)","url":"https://freegovinfo.info/node/10240/"}]
+
+Based on the search results, here's what I found about accessing eCFR data via the API and bulk downloads:
+
+## eCFR API and XML Access
+
+eCFR data originates with files used to produce print and PDF editions, and during publication these are transformed into bulk XML files made available by the Government Publishing Office (GPO), which are then processed into smaller units tracked over time to create the point-in-time features of the eCFR.
+
+## API Versioner Endpoint
+
+One of the search results shows an example of the API versioner endpoint structure: `https://www.ecfr.gov/api/versioner/v1/full/[date]/title-[number].xml`. This endpoint format allows you to request specific titles at particular dates in XML format.
+
+## Bulk XML Download
+
+The XML data can be downloaded daily at http://www.gpo.gov/fdsys/bulkdata/ECFR. Bulk data downloads of Code of Federal Regulations files in XML format are available from 1996 to the present, by year, title, and volume.
+
+## Important Notes
+
+The XML-structured files offered for bulk download are not part of the official on-line format of the CFR or the Federal Register.
+
+For more details on API endpoints and specific parameters, you can visit the official eCFR Interactive Documentation, detailing the different endpoints and possible parameters at https://www.ecfr.gov/readers-aids/ecfr-developer-resources.
+
+Regarding Title 32 (Department of Defense) and Joint Travel Regulations specifically, you would use the same API and bulk download mechanisms with the title-32 identifier.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

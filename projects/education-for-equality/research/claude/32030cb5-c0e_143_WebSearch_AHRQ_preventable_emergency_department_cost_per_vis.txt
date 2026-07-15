@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: AHRQ preventable emergency department cost per visit 2023 2024 average
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 07:40:03 UTC
+========================================================================
+
+Search query: AHRQ preventable emergency department cost per visit 2023 2024 average
+
+----------------------------------------
+
+Web search results for query: "AHRQ preventable emergency department cost per visit 2023 2024 average"
+
+Links: [{"title":"Trends in treatment costs of U.S. emergency department visits - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0735675722003448"},{"title":"Preventable Emergency Department Visits | Agency for Healthcare Research and Quality","url":"https://www.ahrq.gov/research/findings/nhqrdr/chartbooks/carecoordination/measure2.html"},{"title":"Costs of Emergency Department Visits in the United States, 2017 #268","url":"https://hcup-us.ahrq.gov/reports/statbriefs/sb268-ED-Costs-2017.jsp"},{"title":"Emergency Department | Agency for Healthcare Research and Quality","url":"https://www.ahrq.gov/topics/emergency-department.html"},{"title":"Emergency Department Utilization (EDU) - NCQA","url":"https://www.ncqa.org/report-cards/health-plans/state-of-health-care-quality-report/emergency-department-utilization-edu/"},{"title":"Costs of Treat-and-Release Emergency Department Visits in ...","url":"https://hcup-us.ahrq.gov/reports/statbriefs/sb311-ED-visit-costs-2021.pdf"},{"title":"Costs of Emergency Department Visits By Age | Agency for Healthcare Research and Quality","url":"https://www.ahrq.gov/data/infographics/costs-ed-visits.html"},{"title":"Reducing Avoidable Emergency Department Utilization in Value-Based Care - Illustra Health","url":"https://illustra.health/blog/reducing-avoidable-emergency-department-utilization-in-value-based-care/"},{"title":"Development and Validation of the Agency for Healthcare Research and Quality Measures of Potentially Preventable Emergency Department (ED) Visits: The ED Prevention Quality Indicators for General Health Conditions - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC5583364/"},{"title":"Costs of Emergency Department Visits in the United States, 2017 - Healthcare Cost and Utilization Project (HCUP) Statistical Briefs - NCBI Bookshelf","url":"https://www.ncbi.nlm.nih.gov/books/NBK566654/"}]
+
+Based on the search results, I found some relevant information about preventable emergency department visits and costs, though the most recent comprehensive data is from 2017-2019:
+
+An estimated 13% to 27% of ED visits in the United States could be managed in physician offices, clinics, and urgent care centers, saving $4.4 billion annually, according to AHRQ research.
+
+Regarding specific cost per visit data, in 2019, the average cost of low-acuity ED care was $1,716 per visit, nearly 10 times higher than the average cost of an urgent care visit at $178. Additionally, a 2020 study found aggregate costs for nationwide ED visits of $76.3 billion.
+
+The search results contain AHRQ data and references to their HCUP (Healthcare Cost and Utilization Project) databases, which track ED costs, though the most recent detailed cost data available appears to be from 2017-2019. The search results do not contain specific AHRQ data for the average cost per preventable ED visit specifically for 2023-2024. For the most current 2023-2024 data, you may want to check the AHRQ HCUP website directly at hcup-us.ahrq.gov, as they regularly update their statistical briefs on ED costs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

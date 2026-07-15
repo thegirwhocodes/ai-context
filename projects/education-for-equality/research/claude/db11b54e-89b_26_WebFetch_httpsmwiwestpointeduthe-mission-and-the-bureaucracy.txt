@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mwi.westpoint.edu/the-mission-and-the-bureaucracy-how-administrative-req
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:27:17 UTC
+========================================================================
+
+URL: https://mwi.westpoint.edu/the-mission-and-the-bureaucracy-how-administrative-requirements-hinder-warfighting/
+Extraction prompt: Summarize the specific administrative burdens described. Quote: how many reports per month do companies submit? How much time is lost? What are the named systems (DTS, eMILPO, IPPS-A, etc.)? What forms cause the most pain? What does the author propose? Include verbatim quotes where possible.
+
+----------------------------------------
+
+# Administrative Burdens on Army Companies
+
+## Monthly Reporting Load
+Companies submit "anywhere from three dozen to four dozen monthly reports," with the completion process consuming approximately one week monthly for command teams.
+
+## Time Impact
+The article states that "Key leaders at the company level are stuck behind computers for most of their workdays and on many of their off days just trying to keep up."
+
+## Named Systems
+The author identifies several systems pulling administrative resources:
+- Digital Training Management System
+- Defense Travel System
+- Global Combat Support System–Army
+- Army Records Information Management System
+- MEDPROS (Medical Protection System)
+
+## Problematic Reports
+Specific examples include troops-to-task reports, which the author notes "rarely feed actual decisions, processes, or systems, but instead pull platoon sergeants and operations sergeants away from warfighting operations."
+
+## Proposed Solutions
+The author argues that meaningful change "can only occur from the top down," emphasizing that "senior leaders recognized the breadth of company functions and scope of required tasks" must "decided when, where, and how to reduce them." He advocates for "meaningfully cutting back on current administrative priorities from all Army entities."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

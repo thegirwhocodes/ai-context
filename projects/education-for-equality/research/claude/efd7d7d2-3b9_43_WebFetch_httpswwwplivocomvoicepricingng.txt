@@ -1,0 +1,25 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.plivo.com/voice/pricing/ng/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:06:09 UTC
+========================================================================
+
+URL: https://www.plivo.com/voice/pricing/ng/
+Extraction prompt: What are the exact per-minute voice call rates for Nigeria? Both inbound and outbound. Include all pricing details.
+
+----------------------------------------
+
+I cannot find specific voice call pricing information for Nigeria in the provided web page content.
+
+The page displays pricing for selected countries including the United States, Canada, India, and others, but Nigeria is not listed in the available pricing tables or country dropdown options shown in this documentation.
+
+To obtain Nigeria's exact per-minute rates for inbound and outbound voice calls, you would need to either:
+- Contact Plivo's sales team directly via their contact form
+- Check if Nigeria appears in their full pricing database when accessing the live website
+- Use their API pricing endpoint if available
+
+The page indicates that "Competitive pay-as-you-go voice pricing" exists with volume discounts available, but specific Nigerian rates are not displayed in this captured content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

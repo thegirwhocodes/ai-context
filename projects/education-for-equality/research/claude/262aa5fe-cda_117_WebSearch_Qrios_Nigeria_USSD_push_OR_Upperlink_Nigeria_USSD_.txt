@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qrios Nigeria USSD push OR Upperlink Nigeria "USSD push" OR "network initiated U
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-04-06 21:55:17 UTC
+========================================================================
+
+Search query: Qrios Nigeria USSD push OR Upperlink Nigeria "USSD push" OR "network initiated USSD" 2025
+
+----------------------------------------
+
+Web search results for query: "Qrios Nigeria USSD push OR Upperlink Nigeria "USSD push" OR "network initiated USSD" 2025"
+
+Links: [{"title":"IT 12 063 Examensarbete 30 hp November 2012 GSM MSC/VLR Unstructured","url":"https://uu.diva-portal.org/smash/get/diva2:587744/FULLTEXT01.pdf"}]
+
+The search returned a technical thesis on USSD implementation from 2012, which discusses general USSD concepts but does not contain information specific to Qrios Nigeria, Upperlink Nigeria, or recent 2025 developments.
+
+Let me try a more specific search focused on these companies:
+
+Links: [{"title":"QRIOS NETWORKS LIMITED Company Profile | Lagos, Lagos | Competitors, Financials & Contacts - Dun & Bradstreet","url":"https://www.dnb.com/business-directory/company-profiles.qrios_networks_limited.bd30ae4fc71b26cf8bcdf236c99f0108.html"},{"title":"ISVWorld Vendor Profile - Qrios Networks | ISVWorld","url":"https://www.isvworld.com/search/company/116523"},{"title":"Qrios Networks Limited","url":"https://www.manpower.com.ng/company/260709/qrios-networks-limited"},{"title":"Qrios Inc | LinkedIn","url":"https://www.linkedin.com/company/qriosinc"},{"title":"QRIOS NETWORKS LIMITED Nigeria company profile","url":"https://ng-check.com/qrios-networks-limited/1541593.html"},{"title":"Working at Qrios (Nigeria) | Glassdoor","url":"https://www.glassdoor.com/Overview/Working-at-Qrios-Nigeria-EI_IE9790345.11,24.htm"},{"title":"QRIOS NETWORKS LIMITED - Company, directors and contact details | Nigeria24","url":"https://nigeria24.me/qrios-networks-limited"},{"title":"Qrios - Overview, News & Similar companies | ZoomInfo.com","url":"https://www.zoominfo.com/c/qrios-networks/348614007"},{"title":"QRIOS NETWORKS LIMITED - RC-912213 - Nigeria","url":"https://b2bhint.com/en/company/ng/qrios-networks-limited--RC-912213"},{"title":"Qrios Networks: Contact Details and Business Profile","url":"https://rocketreach.co/qrios-networks-profile_b5cd6ce0f42e0b11"}]
+
+Links: [{"title":"Telecom - Upperlink Limited","url":"https://upperlink.ng/telecoms/"},{"title":"Upperlink - Payments Gateway Provider and Domain Names Registrar","url":"https://upperlink.ng/"},{"title":"How do I get a USSD code in Nigeria? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2298228-how-do-i-get-a-ussd-code-in-nigeria"},{"title":"Upperlink.ng Review 2025. upperlink.ng host Nigeria?","url":"https://www.whtop.com/review/upperlink.ng"},{"title":"Jobs at Upperlink Limited | Jobs in Nigeria","url":"https://www.myjobmag.com/jobs-at/upperlink-limited"},{"title":"USSD and 2-Way SMS coverage in Nigeria - Infobip","url":"https://www.infobip.com/news/ussd-and-2-way-sms-coverage-in-nigeria"},{"title":"Upperlink Limited | LinkedIn","url":"https://ng.linkedin.com/company/upperlink-limited"},{"title":"Nigeria USSD & Bank Codes 2025 - Apps on Google Play","url":"https://play.google.com/store/apps/details?id=com.eladeforwa.forwa.a9jabankcodes&hl=en_US"},{"title":"Upperlink Nigeria - Instagram photos and videos","url":"https://www.instagram.com/upperlink_ng/?hl=en"},{"title":"Which companies provide USSD gateway services in Nigeria? - Quora","url":"https://www.quora.com/Which-companies-provide-USSD-gateway-services-in-Nigeria"}]
+
+Based on the search results, I have found information about both companies and USSD services in Nigeria. Here's what I found:
+
+## Qrios Nigeria
+
+Qrios evolved from enterprise communications to dominating in offline banking payments aggregation. Qrios Networks Limited is located at 27b Adewale Kolawole Crescent Lekki Lagos and is a registered company in Nigeria.
+
+## Upperlink Nigeria
+
+Upperlink Telecoms is licensed by Nigeria Communications Commission (NCC) to provide value added services (VAS) using shortcode to consumers and business, providing access to FinTech and VAS Applications from Telcos via sms, voice, USSD, web/internet bearers in Nigeria and other countries. 
+
+Upperlink is licensed by the Central Bank of Nigeria (CBN) as a Payment Solution Service Provider (PSSP) and also licensed by the Nigerian Communications Commission (NCC) to provide value-added services (VAS) to both consumers and businesses.
+
+## USSD in Nigeria
+
+While the search results show that both companies operate in Nigeria's fintech and VAS space, I did not find specific information about USSD push or network-initiated USSD implementations by either Qrios or Upperlink in 2025. The search results provide general information about USSD services in Nigeria but no recent 2025 announcements or technical specifications regarding USSD push technology from these specific companies.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

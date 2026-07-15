@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://static1.squarespace.com/static/59edc421bff200ece07aaea0/t/60dad862f37caa
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:54:58 UTC
+========================================================================
+
+URL: https://static1.squarespace.com/static/59edc421bff200ece07aaea0/t/60dad862f37caa053cab5d23/1624954979966/Cambridge+Primary+Mathematics+Curriculum+Framework+0096_tcm142-592530.pdf
+Extraction prompt: Extract ALL Stage 4 learning objectives. List every objective code and description for Number, Geometry and Measure, and Statistics and Probability strands.
+
+----------------------------------------
+
+I apologize, but I'm unable to extract the Stage 4 learning objectives from the provided content. The web page you've shared appears to be a corrupted or improperly formatted PDF file, containing primarily binary encoded data and formatting instructions rather than readable text.
+
+To successfully extract learning objectives for:
+- Number strand
+- Geometry and Measure strand
+- Statistics and Probability strand
+
+I would need access to a properly formatted document or a clear text version of the curriculum content.
+
+**Recommendation:** Please provide either:
+1. A readable PDF or document file
+2. A direct link to the curriculum resource
+3. Plain text content of the Stage 4 objectives
+
+Once you share a properly formatted source, I'll be happy to compile all objective codes and descriptions according to your specifications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

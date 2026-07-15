@@ -1,0 +1,97 @@
+========================================================================
+AGENT RESEARCH: Research Parsec Financial
+Session: 78e41aad-996d-4a9e-b91c-9381e28d050a
+Time: 2026-03-29 19:31:22 UTC
+========================================================================
+
+Research Parsec Financial (RIA / Registered Investment Advisor). Find: 
+- Location, AUM (assets under management), founding year
+- Number of advisors/employees
+- Client focus / niche
+- Any recent news about growth, awards, or leadership
+- Fee structure (fee-only, fee-based?)
+- What makes them attractive as an acquisition target
+
+Return a concise summary of findings. This is research only, no code.
+
+----------------------------------------
+
+I now have comprehensive information. Here is the summary.
+
+---
+
+## Parsec Financial Management -- Research Summary
+
+**Note:** Parsec Financial was acquired by Modera Wealth Management on April 25, 2023. The information below reflects the firm's standalone profile at the time of acquisition, plus post-acquisition context.
+
+### Basic Profile
+
+| Detail | Value |
+|---|---|
+| **Full Name** | Parsec Financial Management, Inc. |
+| **SEC CRD#** | 104919 |
+| **Headquarters** | 6 Wall Street, Asheville, North Carolina |
+| **Additional Offices** | Charlotte (1999), Southern Pines (2014), Tryon (2016), Winston-Salem (2017) |
+| **Founded** | 1980 by Bart Boyer |
+| **AUM (pre-acquisition)** | ~$4.2 billion (6,171 accounts) |
+| **Employees** | ~75 |
+| **Fee Structure** | **Fee-only** (fiduciary). Asset-based fees typically 0.50%--2.00% of AUM, charged quarterly. Also offers hourly/fixed-fee arrangements. No minimum account size. |
+
+### Leadership (at time of sale)
+
+- **Rick Manske** -- CEO (became Modera's Chief Growth Officer + board member)
+- **Bill Hansen** -- CIO (became Modera's co-CIO)
+- **Harli Palme** -- COO (retained role, joined Modera board)
+- **Bart Boyer** -- Founder. Retired as CEO in 2012, board chair in 2020. Started the firm from the lower level of his Asheville home on Sunset Mountain.
+
+### Client Focus / Niche
+
+- Serves families, high-net-worth individuals, pension/profit-sharing plans, charitable organizations, and small businesses
+- ~1,890 families and businesses served across 6 NC offices
+- 874 high-net-worth individual accounts; largest segment by count is retail investors
+- Services: investment management, financial planning, tax planning, trust services, business retirement planning
+
+### Awards, Recognition, and Community Impact
+
+- One of the first fee-only fiduciary advisory firms in the United States (est. 1980)
+- Created the **Parsec Financial CFP Certification Diversity Scholarship** with CFP Board -- awards up to $5,000 (certificate) or $10,000 (baccalaureate) annually to underrepresented candidates in the Southeast pursuing CFP certification
+- Post-acquisition, Modera (including Parsec) made the **Barron's Top 100 RIA Firms** list for 2023 and 2025
+
+### The Acquisition
+
+- **Acquirer:** Modera Wealth Management, LLC (Westwood, NJ)
+- **Date:** April 25, 2023
+- **Combined entity:** $10.5B AUM, 180+ employees, 14 offices (MA to FL), 61 employee-owners
+- All 75 Parsec employees joined Modera; 24 became Modera owners
+- Parsec continues to operate under its brand name for existing clients
+
+### What Made Parsec Attractive as an Acquisition Target
+
+1. **Scale and geography** -- $4.2B AUM with deep roots across North Carolina, giving geographic expansion into the Southeast for a Northeast-based acquirer
+2. **Fee-only purity** -- One of the original fee-only firms in the US (since 1980), strong fiduciary brand with no commission conflicts
+3. **Cultural and philosophical alignment** -- Both firms were founded in the 1980s with identical fiduciary, fee-only philosophies, making integration smoother
+4. **Strong leadership bench** -- Experienced C-suite (Manske, Hansen, Palme) willing to stay on in senior roles, reducing key-person risk
+5. **Employee ownership culture** -- 24 employees became owners in the combined entity, ensuring retention and alignment
+6. **Diversified revenue** -- Services beyond basic portfolio management (tax planning, trust services, pension consulting, estate planning) create stickier client relationships
+7. **Community/brand equity** -- 43-year track record in Asheville, the CFP diversity scholarship, and deep local relationships make the client base loyal and hard to replicate
+8. **Multi-generational stability** -- Founder had already retired, succession was clean, and the next generation of leaders was already running the firm
+
+---
+
+Sources:
+- [Modera Wealth Management Acquires Parsec Financial](https://moderawealth.com/parsec-financial/)
+- [Modera Acquires $3.8B North Carolina RIA Parsec Financial - WealthManagement.com](https://www.wealthmanagement.com/ria-news/modera-acquires-3-8b-north-carolina-ria-parsec-financial)
+- [PARSEC FINANCIAL - SEC Investment Adviser Firm (CRD# 104919)](https://adviserinfo.sec.gov/firm/summary/104919)
+- [Parsec Financial - Charlotte, NC Firm Profile](https://www.financestrategists.com/retirement-planning/charlotte-nc/parsec-financial-charlotte-104919/)
+- [Asheville's Parsec Financial sells to New Jersey wealth manager - Business North Carolina](https://businessnc.com/ashevilles-parsec-financial-sells-to-new-jersey-wealth-manager/)
+- [CFP Board and Parsec Financial Launch Diversity-Focused Scholarship](https://www.cfp.net/news/2021/09/cfp-board-center-for-financial-planning-and-parsec-financial)
+- [Modera Wealth Management Acquires Parsec Financial - PR Newswire](https://www.prnewswire.com/news-releases/modera-wealth-management-acquires-parsec-financial-301811570.html)
+- [Modera Barron's Top 100 RIA for 2025](https://moderawealth.com/modera-wealth-management-is-a-barrons-top-100-ria-firm-for-2025/)
+agentId: a89534ff6041a3ac0 (use SendMessage with to: 'a89534ff6041a3ac0' to continue this agent)
+<usage>total_tokens: 26236
+tool_uses: 15
+duration_ms: 96036</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

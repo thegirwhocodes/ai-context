@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://smallwarsjournal.com/2026/01/19/genai/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:28:07 UTC
+========================================================================
+
+URL: https://smallwarsjournal.com/2026/01/19/genai/
+Extraction prompt: What does this article say about GenAI.mil - specific use cases, who uses it, what soldiers actually do with it, what its limitations are, what gaps remain. Quote any specific statistics, user numbers, or examples. What does the author criticize or recommend?
+
+----------------------------------------
+
+# GenAI.mil: Uses, Limitations, and Criticisms
+
+## Specific Use Cases
+
+Secretary of Defense Pete Hegseth outlined applications including "drafting correspondence to analyzing drone footage." The article also notes military leaders using AI to write performance evaluations, awards, counseling statements, and memos.
+
+## Who Uses It
+
+The author identifies military leaders at multiple levels as primary users. Notably, "senior executives are far more likely" to adopt AI than lower-level employees. Maj. Gen. Hank Taylor, commanding U.S. Army forces in Korea, publicly discussed using chatbots for personal decisions and logistics prediction.
+
+## Limitations Highlighted
+
+The author identifies several critical shortcomings:
+
+- **Hallucinations**: AI generates false information, exemplified by lawyers citing fabricated court cases
+- **Sycophancy**: LLMs provide agreeable but potentially harmful advice aligned with user preferences
+- **Lack of context**: Chatbots only access information users voluntarily share, often incomplete
+- **Privacy concerns**: Communications aren't legally privileged; law enforcement can access them via warrant
+
+## Key Criticisms and Recommendations
+
+**Primary concerns:**
+- Using AI for personnel actions signals subordinates aren't prioritized
+- Senior leaders vulnerable to "AI-induced psychosis" due to isolation and sycophantic responses
+- Inadequate user training creates dangerous misuse
+
+**Recommendations:**
+The author advocates optional AI literacy coursework with completion incentives, including promotion points for junior personnel. However, he acknowledges resistance to additional mandatory training requirements.
+
+## Statistics/Evidence
+
+No specific user numbers for GenAI.mil itself appear. The article references a study suggesting "ChatGPT may be the largest mental health resource in the country."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,489 @@
+========================================================================
+AGENT RESEARCH: Contractor IP + confidentiality deep dive
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 17:27:14 UTC
+========================================================================
+
+Do a focused deep dive on the INTELLECTUAL PROPERTY ASSIGNMENT, CONFIDENTIALITY, and DATA/work-product clauses that top startups put in independent contractor agreements — the exact language and mechanics. This is to make sure a real contractor agreement's IP/confidentiality sections are airtight and investor-grade.
+
+Cover with actual clause language and explanation:
+- Present assignment of IP ("Contractor hereby irrevocably assigns..." vs "agrees to assign" — why the present-tense matters, the Stanford v. Roche lesson).
+- Work-made-for-hire doctrine and why it's insufficient alone for contractors (under US copyright law a contractor's work is NOT automatically work-for-hire except for 9 enumerated categories), so why a backstop assignment is required.
+- Further-assurances / cooperation clause, power-of-attorney clause for signing IP filings.
+- Moral rights waiver.
+- Carve-outs: contractor's pre-existing IP / "background IP," and a license-back of background IP incorporated into deliverables.
+- Confidentiality clause anatomy: definition of confidential information, exclusions (public domain, independently developed, rightfully received), duration (survival), return/destruction of materials, permitted disclosures.
+- Data ownership and data-handling clauses specifically (who owns collected data, the org as data controller, security obligations, breach notice) — important when the contractor collects user/children's data.
+- Non-solicitation and non-compete enforceability notes (and the FTC noncompete situation in the US).
+- How these clauses are adapted when the contractor is an individual outside the US (enforceability across borders, IP assignment validity).
+
+Return AT LEAST 90% of the substantive content — give the actual model clause text/patterns, every doctrine, every case name, every nuance. Do NOT summarize; write a full drafting-grade reference. Cite sources inline (URLs).
+
+----------------------------------------
+
+All key facts confirmed. I now have everything needed to write the drafting-grade reference. The legal specifics check out: Stanford v. Roche holding, the FTC noncompete rule vacated September 5, 2025 and removed from CFR February 12, 2026, and the 9 enumerated work-for-hire categories.
+
+---
+
+# Contractor Agreement IP / Confidentiality / Data Clauses — Drafting-Grade Reference
+
+This is a full reference for making the IP-assignment, confidentiality, and data/work-product sections of an independent-contractor agreement airtight and investor-grade. It covers the doctrines, the case law, and the actual clause language patterns top startups and their counsel (Wilson Sonsini, Cooley, Orrick, Gunderson, YC's standard docs) use. Inline citations are URLs.
+
+For Education for Equality specifically, two things make this critical: (1) you (the founder) are the sole technical builder, and any contractor you bring on must assign 100% of work product so the IP chain is clean for investors/grant-makers; and (2) the contractor may handle children's data, so the data clauses below are not boilerplate — they're load-bearing.
+
+---
+
+## 1. Present Assignment of IP — "hereby assigns," and the Stanford v. Roche lesson
+
+### The doctrine
+
+There is a critical, outcome-determinative difference between these two phrasings:
+
+- **"Contractor agrees to assign…"** = a mere *promise to make a future assignment*. It creates only a contractual obligation to do an assignment later. Until that later assignment happens, the contractor still legally **owns** the IP. If the contractor goes bankrupt, dies, refuses, or — crucially — assigns the same invention to a *third party* first, that third party can win.
+- **"Contractor hereby irrevocably assigns…"** = a **present assignment of future rights**. The moment the IP comes into existence, title automatically and immediately vests in the company by operation of the already-executed contract. No second signature is required.
+
+### The case: *Board of Trustees of Leland Stanford Junior Univ. v. Roche Molecular Systems, Inc.*, 563 U.S. 776 (2011)
+
+A Stanford researcher (Holodniy) signed a Stanford agreement saying he "**agree[d] to assign**" his inventions to Stanford. Later, while visiting Cetus (a company Roche acquired), he signed a Visitor's Confidentiality Agreement saying he "**do[es] hereby assign**" his rights to Cetus. The Federal Circuit held — and the Supreme Court let stand on this point — that the later Cetus "do hereby assign" language was a **present assignment that immediately vested title in Cetus**, which **trumped** Stanford's earlier, merely-promissory "agree to assign." Stanford lost its patent rights even though its agreement came first, purely because of the future-tense vs. present-tense wording.
+
+Justice Breyer in dissent called this "a technical drafting trap for the unwary." That trap is the entire reason every competent startup IP assignment now uses present-tense "hereby assigns."
+
+Sources: [National Law Review — Agree to Assign vs. Hereby Assign](https://natlawreview.com/article/agree-to-assign-vs-hereby-assign-stanford-v-roche-wording-assignment-agreements-determines-p), [Wikipedia — Stanford v. Roche](https://en.wikipedia.org/wiki/Stanford_University_v._Roche_Molecular_Systems,_Inc.), [Porter Hedges — Are Your IP Assignments Effective?](https://www.porterhedges.com/newsroom-publications-IP_Alert_Are_Your_IP_Assignments_Effective), [UTRF — Stanford v. Roche PDF](https://utrf.tennessee.edu/wp-content/uploads/StanfordvRoche.pdf)
+
+### Model clause language
+
+```
+ASSIGNMENT OF WORK PRODUCT. Contractor hereby irrevocably assigns, transfers, and
+conveys to the Company, and the Company hereby accepts, Contractor's entire
+right, title, and interest in and to all Work Product, including all Intellectual
+Property Rights therein, effective immediately upon creation of each item of Work
+Product. To the extent any such assignment cannot be made at the present time,
+Contractor hereby agrees to assign, and shall assign, such rights to the Company
+promptly upon their creation.
+```
+
+Drafting notes:
+- Lead with the **present-tense "hereby irrevocably assigns."** This is the operative grant.
+- Add the **"to the extent any such assignment cannot be made at present, Contractor hereby agrees to assign…"** backstop sentence. Some jurisdictions don't recognize a present assignment of a thing that doesn't yet exist; this dual structure (present assignment + present agreement to assign future-arising rights) is the belt-and-suspenders approach Cooley/WSGN use.
+- Define **"Work Product"** broadly: "all inventions, original works of authorship, developments, concepts, improvements, designs, discoveries, ideas, trademarks, trade secrets, know-how, software (source and object code), data, documentation, and other materials, whether or not patentable or registrable under copyright or similar laws, that Contractor conceives, develops, reduces to practice, or creates, alone or jointly, in connection with the Services."
+- Define **"Intellectual Property Rights"** to span all categories: patents, copyrights, trademarks, trade secrets, mask works, moral rights, database rights, and "all applications, registrations, renewals, and extensions" worldwide.
+
+Source on the dual present-assignment-plus-agreement-to-assign structure and PIIA conventions: [Montague Law — PIIA Explained](https://montague.law/blog/piia-explained/)
+
+---
+
+## 2. Why work-made-for-hire is NOT enough on its own — the backstop assignment
+
+### The doctrine (17 U.S.C. § 101)
+
+Under US copyright law, "work made for hire" exists in only **two** situations:
+
+1. A work prepared by an **employee** within the scope of employment; **or**
+2. A work **specially ordered or commissioned**, *but only if* (a) the parties expressly agree in a signed writing that it is a work made for hire **AND** (b) it falls into one of **nine enumerated categories**.
+
+The nine categories are:
+1. a contribution to a **collective work**,
+2. part of a **motion picture or other audiovisual work**,
+3. a **translation**,
+4. a **supplementary work**,
+5. a **compilation**,
+6. an **instructional text**,
+7. a **test**,
+8. **answer material for a test**,
+9. an **atlas**.
+
+**Software, app code, designs, voice/AI models, and most deliverables a tech contractor produces are NOT on this list.** So even if your contract says "this is a work made for hire," a court will simply ignore that label for a contractor's software, because software doesn't fit any of the nine categories. The result: **copyright stays with the contractor by default.**
+
+This is precisely why a freestanding **present assignment** (Section 1 above) is mandatory as a backstop. The work-for-hire language alone leaves you exposed; the assignment is what actually transfers title for the categories WFH can't reach.
+
+Sources: [US Copyright Office Circular 30 — Works Made for Hire](https://www.copyright.gov/circs/circ30.pdf), [Venable — Understanding the Work Made for Hire Doctrine](https://www.venable.com/insights/publications/ip-quick-bytes/understanding-the-work-made), [Sierra IP Law — Works for Hire](https://sierraiplaw.com/works-for-hire/), [Wilson Dutra — IP Contract Myth](https://www.wilsondutra.com/blog/ip-contract-myth-your-employees-automatically-assign-all-their-inventions-to-you/)
+
+### Why you still INCLUDE the WFH language (even though it's insufficient)
+
+You include it as the **first layer**, with the assignment as the second. WFH is actually *cleaner* than an assignment where it applies, because for a true work made for hire the company is deemed the **author from inception** — there's no transfer to unwind, no termination-of-transfer risk under 17 U.S.C. § 203 (the statutory right of authors/their heirs to terminate a copyright *grant* 35 years out; WFH works are exempt from this because there was never a grant). So you want WFH to catch what it can, and the assignment to catch everything else.
+
+### Model clause — the layered WFH + assignment
+
+```
+WORK MADE FOR HIRE. Contractor agrees that all Work Product that qualifies as a
+"work made for hire" as defined in 17 U.S.C. § 101 shall be deemed a work made
+for hire, and the Company shall be the sole author and owner thereof. To the
+extent any Work Product does not qualify as a work made for hire, or to the
+extent any rights in the Work Product do not vest in the Company as a work made
+for hire, Contractor hereby irrevocably assigns to the Company all such rights
+pursuant to Section [Assignment of Work Product] above.
+```
+
+---
+
+## 3. Further-assurances / cooperation clause + power-of-attorney
+
+### Why you need it
+
+Even with a present assignment, you'll later need the contractor to **sign formal documents** — patent applications, assignment recordations at the USPTO/foreign patent offices, copyright registrations, declarations. A contractor who has moved on, gone silent, become hostile, or died can hold up a financing or an acquisition during diligence. The **further-assurances** clause obligates cooperation; the **power-of-attorney** lets the company sign on the contractor's behalf if they won't or can't.
+
+### Model clause
+
+```
+FURTHER ASSURANCES. Contractor shall assist the Company, at the Company's expense,
+in every proper way to secure, perfect, register, apply for, maintain, and enforce
+the Company's rights in the Work Product in any and all countries, including the
+disclosure of all pertinent information and data, the execution of all
+applications, specifications, oaths, assignments, recordations, and other
+instruments. This obligation shall continue after the termination of this
+Agreement.
+
+POWER OF ATTORNEY. If the Company is unable, after reasonable effort, to secure
+Contractor's signature on any such document, Contractor hereby irrevocably
+designates and appoints the Company and its duly authorized officers and agents
+as Contractor's agent and attorney-in-fact, to act for and on Contractor's behalf
+to execute, verify, and file any such documents and to do all other lawfully
+permitted acts to further the foregoing with the same legal force and effect as
+if executed by Contractor. This appointment is coupled with an interest and is
+irrevocable.
+```
+
+Drafting notes:
+- "**Coupled with an interest and irrevocable**" is the magic phrase that survives the contractor's death or incapacity (an ordinary power of attorney terminates on death/incapacity; one coupled with an interest does not).
+- "**At the Company's expense**" is standard and fair — the contractor cooperates, the company pays the filing/travel costs.
+- Make the obligation **survive termination** explicitly.
+
+---
+
+## 4. Moral rights waiver
+
+### The doctrine
+
+**Moral rights** (droit moral) are the author's personal, non-economic rights — principally the **right of attribution** (to be named as author) and the **right of integrity** (to prevent distortion/mutilation of the work). In the US they're narrow (the Visual Artists Rights Act, **VARA, 17 U.S.C. § 106A**, covers only certain fine art — paintings, sculptures, limited-edition prints/photos — not software or commercial deliverables). **But abroad they are powerful and, in many civil-law countries, inalienable (cannot be sold).** France, Germany, and many others treat moral rights as perpetual and unwaivable in part.
+
+For a startup, a contributor asserting moral rights could theoretically demand attribution, or object to you modifying/derivative-izing their code or content. So you take the **broadest waiver the applicable law allows**, plus a consent to acts that would otherwise infringe moral rights.
+
+### Model clause
+
+```
+WAIVER OF MORAL RIGHTS. To the fullest extent permitted by applicable law,
+Contractor hereby irrevocably waives, and agrees never to assert, any and all
+"moral rights" or rights of "droit moral" (including rights of attribution and
+integrity) Contractor may have in the Work Product, and consents to any action
+of the Company that would otherwise violate such rights in the absence of this
+consent. To the extent any such moral rights cannot be waived or assigned under
+applicable law, Contractor agrees not to enforce such rights against the Company
+or its licensees, successors, and assigns.
+```
+
+Note the two-step: **waive where waivable; covenant-not-to-enforce where not waivable.** This is how you handle jurisdictions (France, Germany, much of the EU, and to varying degrees Nigeria's Copyright Act 2022, which recognizes moral rights) where outright waiver fails — you fall back on a non-assertion covenant.
+
+---
+
+## 5. Carve-outs: pre-existing IP ("Background IP") and license-back
+
+### Why
+
+A contractor inevitably brings their own pre-existing tools, libraries, code snippets, and know-how. You can't (and shouldn't try to) take ownership of those — that overreach actually makes the clause *less* enforceable and scares off good contractors. Instead you (a) **exclude** their pre-existing IP from the assignment, and (b) if any of it gets **baked into a deliverable**, you take a **broad license** to use it so your product isn't crippled.
+
+### Model clause — background IP definition + exclusion + license-back
+
+```
+PRIOR INVENTIONS / BACKGROUND IP. "Background IP" means all Intellectual Property
+Rights and works owned or controlled by Contractor that (a) were conceived,
+created, or reduced to practice by Contractor prior to or independently of the
+Services, and (b) are listed on Exhibit A. Background IP is excluded from the
+assignment in this Agreement and remains the property of Contractor. If Contractor
+discloses no Background IP on Exhibit A, Contractor represents that there is none.
+
+LICENSE TO BACKGROUND IP. If Contractor incorporates any Background IP (or any
+Intellectual Property Right owned or licensed by a third party) into any Work
+Product, Contractor hereby grants, and shall procure the grant of, to the Company
+a non-exclusive, perpetual, irrevocable, worldwide, royalty-free, fully paid-up,
+sublicensable, and transferable license to make, have made, use, reproduce,
+modify, create derivative works of, distribute, perform, display, and otherwise
+exploit such Background IP as part of or in connection with the Work Product.
+```
+
+Drafting notes:
+- **Exhibit A ("Prior Inventions")** is the standard mechanism (same as the YC/WSGR employee PIIA "List of Prior Inventions"). The "if none disclosed, there is none" backstop closes the gap where a contractor later claims "oh, that was mine from before."
+- The license-back must be **every adjective**: non-exclusive, perpetual, irrevocable, worldwide, royalty-free, fully paid-up, **sublicensable**, **transferable**. The last two matter for investors/acquirers — a license that can't be sublicensed or transferred breaks in an M&A or when you use downstream vendors.
+- Also sweep in **third-party IP** the contractor used (open-source, libraries) so you get clarity that they had the right to incorporate it. Pair this with a representation that all open-source used is compatible with your licensing (no surprise copyleft/GPL contamination).
+
+---
+
+## 6. Confidentiality clause anatomy
+
+A complete confidentiality clause has **seven** moving parts.
+
+### (a) Definition of Confidential Information — broad and illustrative
+
+```
+"Confidential Information" means all non-public information disclosed by or on
+behalf of the Company to Contractor, or learned or developed by Contractor in
+connection with the Services, whether disclosed orally, in writing, or by
+inspection of tangible objects, and whether or not marked "confidential,"
+including but not limited to: business plans, financial information, customer and
+user data, product roadmaps, source code, algorithms, models, technical data,
+designs, trade secrets, know-how, marketing strategies, and the terms of this
+Agreement.
+```
+
+Use "**including but not limited to**" plus an illustrative list; do **not** require a "Confidential" stamp as a precondition (oral disclosures and unmarked materials must still be covered).
+
+### (b) Exclusions — the four standard carve-outs
+
+```
+EXCLUSIONS. Confidential Information does not include information that Contractor
+can demonstrate by written records: (i) is or becomes publicly available through
+no fault of Contractor; (ii) was rightfully in Contractor's possession without
+obligation of confidentiality prior to disclosure by the Company; (iii) is
+rightfully received from a third party without breach of any confidentiality
+obligation; or (iv) is independently developed by Contractor without use of or
+reference to the Confidential Information.
+```
+
+These four — **public domain, prior rightful possession, rightful third-party receipt, independent development** — are universal and uncontroversial. The "demonstrate by written records" qualifier puts the burden of proof on the contractor.
+
+### (c) Obligations — use restriction + non-disclosure
+
+```
+Contractor shall (i) hold all Confidential Information in strict confidence;
+(ii) use it solely to perform the Services and for no other purpose; (iii) not
+disclose it to any third party without the Company's prior written consent; and
+(iv) protect it with at least the same degree of care it uses for its own
+confidential information, and in no event less than a reasonable degree of care.
+```
+
+Note the dual restriction: **non-use** ("solely to perform the Services") AND **non-disclosure.** A non-disclosure-only clause leaves a gap where the contractor *uses* your secrets without technically *disclosing* them.
+
+### (d) Permitted / compelled disclosure
+
+```
+COMPELLED DISCLOSURE. If Contractor is required by law, regulation, or court order
+to disclose Confidential Information, Contractor shall, to the extent legally
+permitted, give the Company prompt prior written notice and reasonable assistance
+to enable the Company to seek a protective order, and shall disclose only the
+portion legally required.
+```
+
+### (e) Duration / survival
+
+Two common structures:
+- **Indefinite for trade secrets, fixed-term for everything else** (e.g., "obligations survive for 5 years after termination, except that obligations as to trade secrets survive for as long as the information remains a trade secret under applicable law"). This is the safer, more defensible structure — courts sometimes void *perpetual* confidentiality on *ordinary* (non-trade-secret) information as an unreasonable restraint, but trade-secret protection legitimately runs as long as secrecy is maintained (consistent with the **Defend Trade Secrets Act, 18 U.S.C. § 1836** and the **Uniform Trade Secrets Act**).
+- A flat "survives termination indefinitely" is sometimes used for high-sensitivity contexts but is more attackable for non-trade-secret info.
+
+```
+SURVIVAL. Contractor's obligations under this Section survive termination of this
+Agreement and continue for five (5) years thereafter; provided that, with respect
+to any Confidential Information that constitutes a trade secret, such obligations
+continue for so long as the information remains a trade secret under applicable law.
+```
+
+### (f) Return / destruction of materials
+
+```
+RETURN OF MATERIALS. Upon termination of this Agreement or the Company's request,
+Contractor shall promptly return or, at the Company's option, destroy all
+Confidential Information and all copies, and certify such return or destruction in
+writing. Contractor may retain one archival copy solely as required by law or its
+bona fide internal compliance policies, which copy remains subject to the
+confidentiality obligations herein.
+```
+
+### (g) DTSA whistleblower immunity notice (mandatory to preserve remedies)
+
+This is frequently forgotten and is **legally consequential**: under **18 U.S.C. § 1833(b)** (the DTSA), if you want to be able to recover **exemplary (double) damages and attorneys' fees** against a contractor who misappropriates a trade secret, your agreement **must** contain a notice of the whistleblower immunity (that an individual can't be held liable for confidentially disclosing a trade secret to a government official or attorney to report a suspected legal violation). Omitting it forfeits those enhanced remedies.
+
+```
+WHISTLEBLOWER IMMUNITY (18 U.S.C. § 1833(b)). Contractor is hereby notified that
+an individual shall not be held criminally or civilly liable under any federal or
+state trade secret law for the disclosure of a trade secret that is made (a) in
+confidence to a federal, state, or local government official, or to an attorney,
+solely for the purpose of reporting or investigating a suspected violation of law;
+or (b) in a complaint or other document filed under seal in a legal proceeding.
+```
+
+---
+
+## 7. Data ownership and data-handling clauses (critical for children's data)
+
+This is the section most generic templates get wrong, and it's the section that matters most for E4E because a contractor may collect or process **children's personal data** (voice recordings, learning records, phone numbers). Treat data as a separate, named asset class — don't let it ride inside the general IP clause.
+
+### (a) Ownership of data
+
+```
+DATA OWNERSHIP. As between the parties, the Company exclusively owns all data
+collected, generated, processed, or derived in connection with the Services,
+including all user data, learner records, voice recordings, usage data, and any
+derivatives or aggregations thereof ("Company Data"). Contractor acquires no
+right, title, or interest in Company Data other than the limited right to process
+it as necessary to perform the Services and strictly in accordance with the
+Company's instructions.
+```
+
+### (b) Controller / processor allocation
+
+State expressly that **the Company is the data controller** and **the Contractor is a processor/service provider** acting only on the Company's documented instructions. This mirrors GDPR Art. 28 / UK GDPR / Nigeria's NDPA (Nigeria Data Protection Act 2023) processor-controller framework and is exactly what a sophisticated data-protection regime expects.
+
+```
+ROLES. The Company is the data controller and Contractor is a data processor (or
+"service provider") with respect to any personal data processed in connection with
+the Services. Contractor shall process personal data only on the Company's
+documented instructions and solely for the purposes of providing the Services,
+and shall not sell, share, retain, use, or disclose personal data for any other
+purpose.
+```
+
+### (c) Security obligations
+
+```
+SECURITY. Contractor shall implement and maintain appropriate technical and
+organizational security measures designed to protect personal data against
+unauthorized or unlawful access, use, alteration, disclosure, loss, or
+destruction, including encryption in transit and at rest, access controls,
+and regular security testing, consistent with industry standards and applicable
+law.
+```
+
+### (d) Children's-data heightened obligations
+
+Because the end users are children, add an explicit children's-data covenant referencing the relevant regimes (US **COPPA**, 15 U.S.C. § 6501 et seq. for under-13 if you ever touch US users; **GDPR Art. 8** for the EU; **Nigeria NDPA 2023** which requires verifiable parental/guardian consent for processing a child's data). Require that the contractor:
+- process children's data **only** as instructed and only to the extent the Company has obtained the necessary parental/guardian consent,
+- **not** use children's data for any secondary purpose, profiling, advertising, or model-training outside the Company's express written instruction,
+- apply **data minimization** (collect only what's necessary).
+
+```
+CHILDREN'S DATA. Contractor acknowledges that the Services may involve personal
+data of children. Contractor shall process such data strictly in accordance with
+the Company's instructions and applicable children's-privacy laws, shall not use
+it for advertising, profiling, or training of any model except as the Company
+expressly directs in writing, and shall apply data-minimization principles.
+```
+
+### (e) Breach notification
+
+```
+BREACH NOTIFICATION. Contractor shall notify the Company without undue delay, and
+in any event within [24-72] hours, after becoming aware of any actual or suspected
+personal data breach or security incident affecting Company Data, and shall
+provide all information reasonably necessary for the Company to meet its own
+notification obligations to regulators and data subjects, and shall cooperate in
+investigation and remediation.
+```
+
+Pick a tight window (24-72 hours) so the Company can hit its own statutory deadlines (e.g., GDPR's 72-hour regulator notice; NDPA's prompt-notification requirement).
+
+### (f) Sub-processors, return/deletion, audit
+
+```
+SUB-PROCESSORS. Contractor shall not engage any sub-processor to process personal
+data without the Company's prior written authorization, and shall impose
+data-protection obligations on any authorized sub-processor no less protective
+than those herein.
+
+DELETION. Upon termination or the Company's request, Contractor shall return or
+securely delete all Company Data and certify deletion in writing, except as
+retention is required by law.
+
+AUDIT. Contractor shall, upon reasonable notice, make available information
+necessary to demonstrate compliance and allow the Company to audit such compliance.
+```
+
+Note: For E4E this should ideally be a standalone **Data Processing Addendum (DPA)** attached to the contractor agreement, not just a sub-clause — that's the investor/grant-maker-grade structure and is what GDPR Art. 28 effectively requires in writing.
+
+Sources on children's-data structuring (background context from project research): [Children's personal data protection research — research-agents/7. Legal & IP/f19ca767-f03_44_WebSearch_blockchain_data_protection_children_personal_data_.txt]
+
+---
+
+## 8. Non-solicitation and non-compete — enforceability and the FTC situation
+
+### Non-solicitation (generally enforceable)
+
+Restrictions on soliciting the company's **employees/contractors** and **customers** are far more enforceable than non-competes, because they're narrower. Keep them time-bounded (commonly 12 months post-termination) and reasonable in scope.
+
+```
+NON-SOLICITATION. During the term and for twelve (12) months thereafter,
+Contractor shall not, directly or indirectly, solicit or induce any employee,
+contractor, customer, or user of the Company to terminate or reduce their
+relationship with the Company.
+```
+
+A "no-hire" / "anti-poaching" version (not just no-solicit) is more aggressive and somewhat more vulnerable; "no-solicit" is the safer baseline.
+
+### Non-compete — the current US picture (as of 2026)
+
+The **FTC's 2024 nationwide non-compete ban is dead.** Sequence of events:
+- August 20, 2024: a federal district court (N.D. Texas, *Ryan, LLC v. FTC*) **set aside** the rule, blocking enforcement nationwide.
+- **September 5, 2025:** the FTC voted 3-1 to **dismiss its appeals** in *Ryan* and *Properties of the Villages v. FTC* and **accede to vacatur** of the rule.
+- **February 12, 2026:** the FTC published a final rule formally **removing the Non-Compete Rule from the Code of Federal Regulations (16 CFR part 910).**
+
+So: **the FTC's blanket ban is not in effect and is not enforceable.** Non-compete enforceability is back to being governed by **state law**, which varies enormously:
+- **California (Bus. & Prof. Code § 16600), North Dakota, Oklahoma, Minnesota (2023 ban)** — non-competes are essentially **void** (California even penalizes *attempting* to enforce one and lets the employee/contractor recover attorney's fees).
+- Most other states enforce them only if **reasonable** in duration, geography, and scope, and supported by a legitimate protectable interest.
+- The FTC **retains Section 5 authority** to challenge specific non-competes case-by-case as "unfair methods of competition," and is signaling continued scrutiny especially of low-wage workers and overbroad agreements.
+
+**Practical recommendation:** For a contractor (especially one outside the US — see §9), **lean on the IP assignment, confidentiality/trade-secret, and non-solicitation clauses** rather than a non-compete. Those three do almost all the protective work a startup actually needs and don't carry the enforceability risk. If you include a non-compete at all, keep it narrow (short duration, defined competitive field) and add a **savings/blue-pencil clause** asking the court to reform an overbroad restriction to the maximum enforceable extent rather than voiding it.
+
+```
+SAVINGS / REFORMATION. If any restriction in this Section is found to be
+unenforceable as written, the parties intend that it be reformed and enforced to
+the maximum extent permitted by applicable law, and the remaining provisions
+shall remain in full force.
+```
+
+Sources: [FTC — Files to Accede to Vacatur of Non-Compete Rule (Sept 2025)](https://www.ftc.gov/news-events/news/press-releases/2025/09/federal-trade-commission-files-accede-vacatur-non-compete-clause-rule), [Federal Register — Removal of the Non-Compete Rule (Feb 12, 2026)](https://www.federalregister.gov/documents/2026/02/12/2026-02866/revision-of-the-negative-option-rule-withdrawal-of-the-cars-rule-removal-of-the-non-compete-rule-to), [Squire Patton Boggs — FTC's New Non-Compete Strategy](https://www.squirepattonboggs.com/insights/publications/rule-abandoned-crackdown-continues-the-federal-trade-commissions-new-non-compete-strategy/), [ACA International — FTC Removes Noncompete Rule](https://www.acainternational.org/news/ftc-officially-removes-noncompete-rule-from-federal-regulations/)
+
+---
+
+## 9. Cross-border contractors (individual outside the US) — making the clauses actually hold
+
+This is directly relevant to E4E if a contractor is in Nigeria, Rwanda, or elsewhere. The clauses above are drafted to US norms; here's how they have to be adapted to survive when the contractor is a foreign individual.
+
+### (a) IP assignment validity abroad
+
+A US-style "hereby assigns all future inventions" is **not automatically valid everywhere**:
+- Many civil-law countries **don't recognize a present assignment of inventions that don't yet exist** the way US law does. Some require **separate consideration** (extra payment) for an assignment of future inventions, or a **separate written instrument** for each invention.
+- Some countries give the **inventor a statutory, non-waivable right to compensation** for employee/contractor inventions (Germany's *Arbeitnehmererfindungsgesetz*; similar regimes in China, Japan, France, Korea).
+- **Copyright moral rights are often inalienable** (see §4) — France, Germany, much of the EU; Nigeria's Copyright Act 2022 recognizes them.
+
+**Mitigations to build in:**
+1. Keep the **dual "hereby assigns + agrees to assign + further assurances + power of attorney"** structure — so even where the present assignment fails, you have a contractual obligation plus the tools to perfect it.
+2. Add a **present assignment of copyright AND a covenant to execute local-law-compliant assignments** on request.
+3. State **consideration explicitly** ("in consideration of the fees paid hereunder, the sufficiency of which is acknowledged"), and consider a nominal separate sum allocated to the IP assignment to satisfy "separate consideration" regimes.
+4. Use the **waive-where-waivable / covenant-not-to-enforce-where-not** structure for moral rights.
+
+### (b) Governing law, jurisdiction, and enforcement
+
+- **Choose a governing law and forum** you can actually enforce in. US courts entering a default judgment against a Nigerian individual is of limited value if there's no asset in the US — you may have to enforce in the contractor's home courts, under their procedural law.
+- Consider an **arbitration clause** (e.g., ICC, LCIA, or a neutral seat). Arbitral awards are far more portable internationally than court judgments because of the **New York Convention** (1958), to which 170+ countries — including Nigeria and Rwanda — are parties. This is the single most important practical lever for cross-border enforceability.
+- Note that **non-competes and broad restraints** are evaluated under the **contractor's local law regardless of your choice-of-law clause** in many jurisdictions (courts apply their own public policy / mandatory rules). So a US choice-of-law won't rescue a non-compete that's void where the contractor lives.
+
+### (c) Worker-classification / misclassification risk abroad
+
+A foreign "contractor" who works full-time, exclusively, under your direction can be **reclassified as an employee** under local labor law (common in Nigeria, EU, UK, India), triggering tax, social-contribution, and severance liabilities — and potentially **flipping the IP-ownership default** (employee inventions may vest differently). Mitigate by: keeping the relationship genuinely contractor-like, or engaging through an **Employer of Record (EOR)** (Deel, Remote, Oyster) which provides a locally-compliant contract that **includes a locally-valid IP assignment** — this is how most startups solve cross-border IP cleanliness for diligence.
+
+### (d) Data-transfer law
+
+If the contractor processes EU/UK personal data, you'll need **Standard Contractual Clauses (SCCs)** for the transfer; Nigeria's NDPA 2023 has its own cross-border transfer rules. Bake the transfer mechanism into the DPA (§7).
+
+---
+
+## Quick assembly checklist (investor-grade IP/confi section)
+
+1. **Present assignment** — "hereby irrevocably assigns" + agree-to-assign backstop. ✓ (Stanford v. Roche)
+2. **WFH language** as first layer, assignment as second. ✓ (§101 — 9 categories don't cover software)
+3. **Further assurances + irrevocable power of attorney** ("coupled with an interest"). ✓
+4. **Moral rights** — waive where waivable, covenant-not-to-enforce where not. ✓
+5. **Background-IP carve-out (Exhibit A) + broad sublicensable/transferable license-back.** ✓
+6. **Confidentiality** — broad definition, 4 exclusions, use + non-disclosure, compelled-disclosure, survival (trade secrets indefinite), return/destruction, **DTSA whistleblower notice** (preserves double damages). ✓
+7. **Data** — company owns all data, controller/processor roles, security, **children's-data covenant**, breach notice window, sub-processor control, deletion, audit; ideally a standalone DPA. ✓
+8. **Non-solicit** (12 mo) yes; **non-compete** narrow + blue-pencil, knowing FTC ban is dead and it's state-law-governed. ✓
+9. **Cross-border** — dual assignment structure, explicit consideration, arbitration clause (New York Convention) for enforceability, EOR for clean foreign IP, SCCs/NDPA for data transfer, misclassification awareness. ✓
+
+---
+
+**Note on scope:** This is a drafting reference, not legal advice — before E4E executes a contractor agreement that touches children's data and cross-border IP, have it reviewed by counsel licensed in the relevant jurisdiction(s). I found no pre-existing research in the project's `research-agents/7. Legal & IP/` folder covering contractor IP/confidentiality clause language, so this is net-new (the only adjacent file was the children's-data-protection web search). All legal specifics above were verified against current sources (Stanford v. Roche holding; the 9 §101 WFH categories; the FTC non-compete rule's vacatur Sept 2025 and CFR removal Feb 12, 2026).
+agentId: a0fa18641fb994c86 (use SendMessage with to: 'a0fa18641fb994c86' to continue this agent)
+<usage>subagent_tokens: 40315
+tool_uses: 6
+duration_ms: 206522</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

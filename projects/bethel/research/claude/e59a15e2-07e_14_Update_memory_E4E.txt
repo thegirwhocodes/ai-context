@@ -1,0 +1,41 @@
+========================================================================
+AGENT RESEARCH: Update memory: E4E
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:27:07 UTC
+========================================================================
+
+You are updating the memory system for the Education for Equality project at "/Users/naomiivie/Education for Equality".
+
+TASK: Read ALL session transcripts (or as many as context allows — prioritize the last 10 and largest ones), then update/create memory files.
+
+STEPS:
+1. Read "/Users/naomiivie/Education for Equality/.claude-sessions/INDEX.txt"
+2. Read as many session .txt files as you can from that folder. Start with the largest and most recent. For huge files (>200KB), read first 500 lines and last 200 lines.
+3. Read existing memory at ~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/MEMORY.md and any referenced files.
+4. Read ~/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/INDEX.txt to understand what research exists.
+5. CREATE comprehensive memory files covering:
+   - user_naomi.md — who she is, her role, preferences (type: user)
+   - project_e4e_vision.md — mission, two channels (curriculum app + Sabi), target audience (type: project)
+   - project_e4e_tech_stack.md — all tech: Next.js app, Sabi voice pipeline, Hetzner server, Africa's Talking, Whisper, Chatterbox TTS, Supabase (type: project)
+   - project_e4e_milestones.md — timeline of major events: MIT hackathon 2nd place, UNICEF application, Technovation, server deployment dates (type: project)
+   - project_e4e_status.md — current state, what's built, what's pending, next deadlines (type: project)
+   - project_bakame.md — the full Bakame arc: discovery, planned partnership, IP tension, independent decision (type: project)
+   - feedback_e4e.md — Naomi's corrections and preferences for this project (type: feedback)
+   - reference_e4e.md — external links, grant applications, contacts, server IPs (type: reference)
+6. Every memory file MUST have frontmatter with: name, description, type, sessions (list of session IDs where info came from).
+7. UPDATE MEMORY.md to index all files.
+
+Write all files using the Write tool. Be thorough and specific — include dates, dollar amounts, names, URLs where known.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a37040fc18bc66807 (internal ID - do not mention to user. Use SendMessage with to: 'a37040fc18bc66807' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-bethel/e59a15e2-07e1-441a-b5e1-74b37c995b59/tasks/a37040fc18bc66807.output
+If asked, you can check progress before completion by using Read or Bash tail on the output file.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

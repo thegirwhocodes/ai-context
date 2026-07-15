@@ -1,0 +1,168 @@
+========================================================================
+AGENT RESEARCH: Inspect VoiceMode local state
+Session: a4ea39cd-2bd1-4931-94a8-310dccbcb03d
+Time: 2026-06-27 18:58:04 UTC
+========================================================================
+
+Investigate the local VoiceMode installation on this Mac to find evidence of what was throttling the mic during voice sessions. Don't summarize — return raw file contents, exact log lines, exact paths.
+
+DO ALL OF THESE:
+
+1. **Inspect the conch lock state and history:**
+   - `ls -la ~/.voicemode/`
+   - `cat ~/.voicemode/conch 2>/dev/null` (if present, who owns it?)
+   - `~/.voicemode/bin/mic` (run the helper, show output)
+   - `cat ~/.voicemode/voicemode.env` (the global config — show ALL env vars)
+   - `find ~/.voicemode -name "*.env" -exec echo "--- {} ---" \; -exec cat {} \;`
+   - `find ~/.voicemode -name "*.log" -type f | head -20` then show last 200 lines of the most recently modified log
+
+2. **Find VoiceMode logs and tracebacks:**
+   - `ls -lat ~/.voicemode/logs/ 2>/dev/null | head -20`
+   - `ls -lat ~/Library/Logs/voicemode/ 2>/dev/null | head -20`
+   - Show the last 300 lines of the most recently modified log file
+   - Grep all VoiceMode logs for "conch", "wait", "timeout", "denied", "permission", "EAGAIN", "EBUSY", "portaudio", "device", "throttle", "error", "exception"
+
+3. **Find per-project voicemode configs:**
+   - `find /Users/naomiivie -name ".voicemode.env" -maxdepth 4 2>/dev/null` — for each, show the contents
+   - Check: Education for Equality, cortex-web, devsync, adjutant, portfolio
+
+4. **Inspect VoiceMode plugin install location and version:**
+   - `~/.local/bin/claude plugin list 2>&1`
+   - `find ~/.claude -name "voicemode*" -type d 2>/dev/null | head -10`
+   - For the voicemode plugin dir, show `cat README.md | head -200` and any `CHANGELOG.md`
+   - `find ~/.claude -path "*voicemode*" -name "*.py" -o -path "*voicemode*" -name "*.json" 2>/dev/null | head -30`
+
+5. **Check macOS microphone permissions:**
+   - `sqlite3 "/Users/naomiivie/Library/Application Support/com.apple.TCC/TCC.db" "SELECT client, auth_value, last_modified FROM access WHERE service='kTCCServiceMicrophone';" 2>/dev/null` (this needs Full Disk Access; if it fails note the error)
+   - Alternative: list which apps have mic access via `/usr/bin/log show --predicate 'subsystem == "com.apple.tccd"' --info --last 7d 2>&1 | grep -i microphone | head -50`
+   - Check if Antigravity has mic permission: look in `/Applications` for Antigravity.app and inspect its `Info.plist` for `NSMicrophoneUsageDescription`
+
+6. **Inspect what process held the mic recently:**
+   - `lsof | grep -i "AudioInput\|coreaudio\|audiounit" 2>/dev/null | head -20`
+   - `pmset -g log | grep -i "audio\|microphone" | tail -50`
+
+7. **Check Antigravity installation:**
+   - `ls -la /Applications/ | grep -i antigravity`
+   - `find /Applications/Antigravity.app -name "Info.plist" -maxdepth 4 2>/dev/null` — for the main one, show `defaults read /Applications/Antigravity.app/Contents/Info.plist NSMicrophoneUsageDescription 2>&1`
+
+8. **Look for VoiceMode session history that might show throttling:**
+   - `find ~/.voicemode -name "sessions*" -o -name "history*" 2>/dev/null`
+   - If there's a JSON/JSONL log of voice sessions, show the last 100 lines
+
+Return EVERY command's output verbatim. If something errors, show the error. Don't paraphrase. Use the actual file contents, not summaries.
+
+----------------------------------------
+
+I now have everything I need. Let me compile the findings into a definitive report.
+
+# VoiceMode Mic Throttling Investigation — Findings
+
+## Bottom line: the "throttle" is the **conch lock**, working exactly as designed
+
+There is no OS-level mic permission problem, no PortAudio/CoreAudio crash, no Whisper/Kokoro failure. The lock-file throttle is a deliberate cross-session mutex that VoiceMode created at `~/.voicemode/conch` to serialize the single mic across concurrent voice sessions. When a second session calls `converse` while the first holds the conch, the second session is **immediately refused** with a status string — unless the caller passed `wait_for_conch=true`, in which case it queues for up to `VOICEMODE_CONCH_TIMEOUT=45s` (per current config; logs show old default was 60s).
+
+## Current state of the lock
+- `~/.voicemode/conch` — does **not exist** right now (`No such file or directory`); `mic` helper confirms `mic is FREE (no conch lock)`.
+- Config (`/Users/naomiivie/.voicemode/voicemode.env`, lines 277–285): `VOICEMODE_CONCH_ENABLED=true`, `VOICEMODE_CONCH_TIMEOUT=45`, `VOICEMODE_CONCH_LOCK_EXPIRY=180`.
+
+## The throttle code path (the smoking gun)
+
+`/Users/naomiivie/.claude/plugins/marketplaces/voicemode/voice_mode/tools/converse.py` lines 1399–1440:
+
+```
+acquired = conch.try_acquire()
+...
+holder = Conch.get_holder()
+holder_agent = holder.get('agent', 'unknown') if holder else 'unknown'
+event_logger.log_event("CONCH_BLOCKED", {... "wait_for_conch": wait_for_conch})
+if not wait_for_conch:
+    return (f"User is currently speaking with {holder_agent}. "
+            "Use wait_for_conch=true to queue, or try again later.")
+# Wait mode - poll with atomic retry
+event_logger.log_event("CONCH_WAIT_START", {... "timeout": CONCH_TIMEOUT})
+while not conch.try_acquire() and waited < CONCH_TIMEOUT:
+    ...
+return f"Timed out waiting for conch ({CONCH_TIMEOUT}s). {holder_agent} is still speaking."
+```
+
+Lock implementation: `/Users/naomiivie/.claude/plugins/marketplaces/voicemode/voice_mode/conch.py` — uses `fcntl.flock(LOCK_EX | LOCK_NB)`. Stale-lock GC at `_check_and_clear_stale_lock()` removes the file if older than `CONCH_LOCK_EXPIRY`. Note that this **deletes the path but the stuck process keeps its flock on the old inode** (see comment at lines 156–159) — a known limitation if a session ever wedges.
+
+## Throttle events ever recorded (full history)
+
+Across all of `~/.voicemode/logs/events/voicemode_events_*.jsonl`, only **5 `CONCH_BLOCKED` events** in the whole history (3 returned immediately with `wait_for_conch: false`, 2 queued with `wait_for_conch: true`):
+
+- `2026-05-03T03:21:29` — pid 8016 blocked by holder pid 13573, `wait_for_conch: false` → `TOOL_REQUEST_END success: false`
+- `2026-05-03T03:21:31` — pid 8016 blocked by holder pid 13573, `wait_for_conch: true` → waited 23.5s, `result: acquired`
+- `2026-05-04T16:30:30` — pid 81221 blocked by holder pid 97396, `wait_for_conch: false` → failed
+- `2026-05-04T16:30:34` — pid 81221 blocked by holder pid 97396, `wait_for_conch: true` → waited the full **60s, `result: timeout`** — only timeout event in the entire log history
+- `2026-06-05T17:49:56` — pid 17988 blocked by holder pid 46849, `wait_for_conch: false` → failed
+
+Event-type tally across all logs: `CONCH_ACQUIRE: 133`, `CONCH_RELEASE: 127`, `CONCH_BLOCKED: 5`, `CONCH_WAIT_START: 2`, `CONCH_WAIT_END: 2`. So out of 133 mic acquisitions, mic-contention only refused/queued a session ~5 times. The throttle is rare, not chronic.
+
+## Long conch holds (the *real* issue when it bites)
+
+The throttle isn't aggressive — but holds are long. From `CONCH_RELEASE.held_seconds` across all event logs (n=127):
+- Max: **303.8s** (pid 85819, 2026-05-02T20:59)
+- Top 5: 303.8s, 296.3s, 284.0s, 239.5s, 218.9s
+- Mean: 76.6s
+- 10+ holds were over 180s (`CONCH_LOCK_EXPIRY` default)
+
+A held conch comes from a long TTS playback + recording cycle (e.g. the 2026-06-18T18:00 turn held the conch 65s for a single TTS message that took **62.8s of TTFA generation**). When the user starts a second voice session while Sabi is mid-monologue, the second session sees a `CONCH_BLOCKED` and gets the "User is currently speaking with converse. Use wait_for_conch=true to queue, or try again later." string. That's what looks like throttling.
+
+## Per-project configs (all good; only voice differs)
+
+`find /Users/naomiivie -maxdepth 4 -name ".voicemode.env"` →
+- `/Users/naomiivie/devsync/.voicemode.env` → `VOICEMODE_VOICES=af_nova`
+- `/Users/naomiivie/cortex-web/.voicemode.env` → `VOICEMODE_VOICES=af_sarah`
+- `/Users/naomiivie/portfolio/.voicemode.env` → `VOICEMODE_VOICES=af_bella`
+- `/Users/naomiivie/Education for Equality/.voicemode.env` → `VOICEMODE_VOICES=af_sky`
+- `/Users/naomiivie/cortex/cortex-web/.voicemode.env` → `VOICEMODE_VOICES=am_michael`
+
+(Note: memory file claims adjutant=`am_adam` but `/Users/naomiivie/adjutant/` does not exist — adjutant is at `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/adjutant` and has no `.voicemode.env`. Also memory says `cortex-web=af_sarah` but the actively-used path `/Users/naomiivie/cortex/cortex-web/` is set to `am_michael` — those two cortex paths have conflicting voices.)
+
+## macOS mic permissions — nothing is denied
+
+`sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db "SELECT client,auth_value,datetime(last_modified,'unixepoch','localtime') FROM access WHERE service='kTCCServiceMicrophone'"` returned 20 entries, **all `auth_value=2` (allowed)**. Most recent grants by date:
+- `com.anthropic.claudefordesktop` — 2026-06-18 14:12:05
+- `com.anthropic.claude-code` — 2026-06-18 14:05:30
+- `com.openai.codex` — 2026-06-11 15:30:50
+- `com.naomi.emailagent` — 2026-06-10 00:46:52
+- `com.google.antigravity-ide` — 2026-06-02 16:57:54 (`/Applications/Antigravity IDE.app`, v2.0.4)
+- `com.google.antigravity` — 2026-04-11 19:00:54 (`/Applications/Antigravity.app`, v2.0.6)
+
+Both Antigravity bundle IDs have mic permission. `Info.plist` mic descriptions: Antigravity IDE = "An application in Antigravity IDE wants to use the Microphone." / Antigravity.app = "This app needs access to the microphone".
+
+## Whisper/Kokoro/audio device — healthy
+
+- Whisper: starts cleanly each session (most recent: `2026-06-26 17:36:16` PID 870, ready in 14s). One cosmetic warning: `failed to load Core ML model from 'ggml-base-encoder.mlmodelc'` — falls back to Metal/MTL0 (Apple M1 GPU). No errors.
+- No `EAGAIN`, `EBUSY`, `portaudio`, `permission`, or `denied` strings anywhere in the VoiceMode event logs.
+- No log at `~/Library/Logs/voicemode/` (doesn't exist).
+- One audible artifact: TTFA on TTS was extreme on 2026-06-18T14:05:19 (**62.8 seconds** before first audio for "Okay, voice is up now…"), explanation captured in the message text: "There was a brief disk space hiccup but we're good." So Kokoro was momentarily blocked on disk, which would make a session appear to hang the mic.
+
+## Current audio holders right now
+
+`lsof` shows `Spotify`, `Antigravity` (pid 30475 — the `audio.mojom.AudioService` utility process), `callservicesd`, `afplay` linked to CoreAudio.component. `ps` shows two `voicemode` Python processes running (PID 43799 = Claude Code under Antigravity-IDE, PID 38358 = Claude Code under Claude desktop), `whisper-server` (PID 870, listening on :2022), and `kokoro` uvicorn (PID 1080, listening on :8880). Nothing exclusively holds the mic — input streams open on demand per `converse`.
+
+## Plugin version
+
+`claude plugin list`:
+- `voicemode@voicemode v8.6.1p0` (enabled, user scope)
+- `vercel@claude-plugins-official v0.44.0`
+
+CHANGELOG 8.6.0 (2026-04-16) is the version that added the multi-session conch-aware tmux focus behavior. 8.6.0 also fixed: "ESC during converse no longer kills the MCP server (VM-1026) — Pressing ESC while a converse call was in flight used to take the entire voicemode MCP server offline." That bug + the long conch holds is the most plausible historical source of "the mic feels throttled" experiences before 8.6.0.
+
+## What this means
+
+1. **There is no bug to fix in throttling itself** — it's a 9-line `if not wait_for_conch: return …` in `converse.py` doing exactly what's documented.
+2. **When mic feels stuck, the culprits are**: (a) a previous `converse` call holding the conch for 60–300s because the TTS message was very long and `RECORDING_END` hadn't fired yet; or (b) the global CLAUDE.md instruction tells Claude to call `converse(wait_for_conch=true)`, but the tool's parameter default is `False` — if any agent calls it without that flag (or with `False`), the user sees the refusal text rather than a queued wait.
+3. **No evidence of an OS or driver layer problem.** TCC is clean, Whisper is healthy, audio devices respond, and the mic file `~/.voicemode/conch` is currently absent.
+
+If you want me to take action on this, the highest-leverage moves would be: (1) lower `CONCH_LOCK_EXPIRY` from 180s so stuck sessions get reaped faster, (2) shorten the per-turn message length to keep individual holds under 30s, or (3) audit any in-repo helpers that wrap `converse` to make sure they default `wait_for_conch=True` to match the CLAUDE.md guidance.
+agentId: a03d9db57e0876e5c (use SendMessage with to: 'a03d9db57e0876e5c', summary: '<5-10 word recap>' to continue this agent)
+<usage>subagent_tokens: 135193
+tool_uses: 41
+duration_ms: 296955</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

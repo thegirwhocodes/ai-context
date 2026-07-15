@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research Tauri wrapper architecture
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:46:17 UTC
+========================================================================
+
+Research the BEST-PRACTICE ARCHITECTURE for a Tauri 2 desktop app that (a) wraps an existing HOSTED Next.js 16 web app (cortex-web, with Clerk auth + server routes + server components) and (b) adds a NATIVE always-on wake-word daemon ("Hey Cortex" via Picovoice Porcupine), as a macOS menu-bar app — kept as ONE codebase with the web app. Use WebSearch + WebFetch on primary sources (Tauri v2 docs at v2.tauri.app, Picovoice Porcupine Rust/native docs, Apple developer docs for mic/TCC, relevant GitHub). Every claim followed by a source URL. Include real config/code where possible.
+
+Cover, concretely and cited:
+1. Pointing a Tauri window at a REMOTE hosted URL (the deployed cortex-web) vs bundling a static export — how to do remote URL in tauri.conf.json, tradeoffs, and whether Clerk/OAuth + server routes work inside the WKWebView. Note WKWebView/Safari-engine implications.
+2. macOS MENU-BAR / tray app pattern in Tauri 2 (system tray, hidden main window, show on click), and LAUNCH-AT-LOGIN (autostart plugin).
+3. Running an always-on wake-word listener NATIVELY: is there a Porcupine RUST SDK? If not, how to run Porcupine via a sidecar binary or native plugin in Tauri, listening to the mic continuously in the Rust layer (NOT the webview). macOS microphone permission / TCC / Info.plist (NSMicrophoneUsageDescription) requirements.
+4. IPC between the Rust wake-word layer and the webview UI (Tauri events/commands) — e.g., on "Hey Cortex" detected, emit an event the web UI listens for to open the assistant.
+5. Tauri efficiency vs Electron (bundle size, memory) — cited numbers. And the ONE-CODEBASE discipline: how teams share a single web app between browser + Tauri without forking.
+6. Gotchas: code signing/notarization for macOS distribution, auto-update, and any Tauri 2 mobile (iOS/Android) maturity notes vs React Native/Expo.
+
+Return a dense, structured, cited bullet list + any key config snippets (tauri.conf.json for remote URL + tray + autostart; mic permission plist). Mark weak-sourced claims "unverified." Be concrete and honest about what works today in Tauri 2.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ae3c6e4a0b0ea73aa (internal ID - do not mention to user. Use SendMessage with to: 'ae3c6e4a0b0ea73aa', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/ae3c6e4a0b0ea73aa.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

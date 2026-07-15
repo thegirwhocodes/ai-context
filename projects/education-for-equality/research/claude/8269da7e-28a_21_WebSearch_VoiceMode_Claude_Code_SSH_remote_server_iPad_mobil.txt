@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: VoiceMode Claude Code SSH remote server iPad mobile workflow
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 21:04:37 UTC
+========================================================================
+
+Search query: VoiceMode Claude Code SSH remote server iPad mobile workflow
+
+----------------------------------------
+
+Web search results for query: "VoiceMode Claude Code SSH remote server iPad mobile workflow"
+
+Links: [{"title":"Continue local sessions from any device with Remote Control - Claude Code Docs","url":"https://code.claude.com/docs/en/remote-control"},{"title":"Claude Code Mac Desktop + Remote Control: A CLI User's Guide","url":"https://blakecrosley.com/blog/claude-code-desktop-remote-control-guide"},{"title":"Claude Code VPS Setup: Deploy and Run on Remote Servers","url":"https://claudefa.st/blog/guide/development/infraops-vps-guide"},{"title":"Claude Code Mobile: iPhone, Android & SSH (2026) | Sealos Blog","url":"https://sealos.io/blog/claude-code-on-phone/"},{"title":"Remote Claude Code: programing like it was the early 2000s | Harper Reed's Blog","url":"https://harper.blog/2026/01/05/claude-code-is-better-on-your-phone/"},{"title":"3 Easiest Ways to Use Claude Code on Your Mobile Phone","url":"https://zilliz.com/blog/3-easiest-ways-to-use-claude-code-on-your-mobile-phone"},{"title":"Claude Code Remote Control: Run Your Terminal from Your Phone (2026 Guide) | NxCode","url":"https://www.nxcode.io/resources/news/claude-code-remote-control-mobile-terminal-handoff-guide-2026"},{"title":"Claude's Dispatch feature turned my phone into a remote control for my entire workflow","url":"https://www.xda-developers.com/claudes-dispatch-feature-turned-my-phone-into-a-remote-control-for-my-entire-workflow/"},{"title":"How I Use Claude Code SSH to Connect to Any Remote Server Like a Pro | by Joe Njenga | Medium","url":"https://medium.com/@joe.njenga/how-i-use-claude-code-ssh-to-connect-to-any-remote-server-like-a-pro-f08ed35e5569"},{"title":"Claude Code Remote Control: Code From Your Phone | by Rick Hightower | Feb, 2026 | Spillwave Solutions","url":"https://medium.com/@richardhightower/claude-code-remote-control-code-from-your-phone-3c7059c3b5de"}]
+
+I've completed the web search for "VoiceMode Claude Code SSH remote server iPad mobile workflow". Here's a summary of the findings:
+
+## Key Results
+
+The search returned comprehensive information about using Claude Code on mobile devices with remote access capabilities. Here are the main topics covered:
+
+### Remote Control Feature
+Remote Control connects claude.ai/code or the Claude app for iOS and Android to a Claude Code session running on your machine. You can start a task at your desk, then pick it up from your phone on the couch or a browser on another computer.
+
+### Mobile Features
+Voice input allows you to speak your prompt instead of tapping it out on a phone keyboard, which is significantly faster for longer instructions. Push notifications alert you when Claude needs approval, code is ready for review, or something breaks without needing to keep the app open.
+
+### SSH Remote Server Access
+Claude Code SSH lets you point Claude Code directly at any remote server and have it work with the actual environment where your code is located. You can use Remote Control to connect to a running interactive session from your phone or another device, which is useful for monitoring long-running agent tasks.
+
+### iPad/Mobile Workflow
+Pair VPS-hosted Claude Code with Remote Control to manage sessions from your phone. The Dispatch feature lets you dispatch a task to Claude from your phone, and the tool begins working on it on your desktop, working as one continuous conversation that syncs across your phone and desktop.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

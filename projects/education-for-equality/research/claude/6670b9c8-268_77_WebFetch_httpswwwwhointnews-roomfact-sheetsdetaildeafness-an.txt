@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 18:48:53 UTC
+========================================================================
+
+URL: https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+Extraction prompt: Extract ALL statistics, data points, and facts from this WHO fact sheet on deafness and hearing loss. Include: prevalence numbers, geographic distribution, causes, impact on children, economic costs, WHO recommendations, projected future numbers. Every data point.
+
+----------------------------------------
+
+# WHO Deafness and Hearing Loss: Key Statistics and Data
+
+## Current Prevalence
+- 430 million people globally require rehabilitation for disabling hearing loss
+- 34 million of these are children
+- 95.1 million children aged 5-19 years live with hearing loss worldwide
+- Over 5% of the world's population affected
+
+## Geographic Distribution
+- Nearly 80% of people with disabling hearing loss live in low- and middle-income countries
+- Over 25% of those older than 60 years have disabling hearing loss
+
+## Future Projections (by 2050)
+- "Nearly 2.5 billion people are projected to have some degree of hearing loss"
+- Over 700 million will require hearing rehabilitation
+- This represents 1 in every 10 people
+
+## Economic Impact
+- "Unaddressed hearing loss poses an annual global cost of almost US$ 1 trillion"
+- Investment needed: less than US$1.40 per person annually to scale services globally
+- Return on investment: nearly US$16 for every US$1 invested over 10 years
+
+## Risk Factors
+- Over 1 billion young adults at risk from unsafe listening practices
+- Nearly 60% of childhood hearing loss is avoidable
+
+## Disabling Hearing Loss Definition
+- Hearing loss greater than 35 decibels in the better hearing ear
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

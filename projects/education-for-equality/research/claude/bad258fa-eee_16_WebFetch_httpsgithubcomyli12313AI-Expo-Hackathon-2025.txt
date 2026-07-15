@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/yli12313/AI-Expo-Hackathon-2025
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:12:19 UTC
+========================================================================
+
+URL: https://github.com/yli12313/AI-Expo-Hackathon-2025
+Extraction prompt: What did the Project Perception team build for the SCSP AI+ Expo Hackathon June 2025? What place did they win? Tech stack, problem, demo details, team members. What were the tracks? What other teams competed and what won?
+
+----------------------------------------
+
+# Project Perception - AI Expo Hackathon 2025
+
+## What They Built
+
+Project Perception is "a video analysis platform designed for interrogation and surveillance scenarios" that uses computer vision and AI to detect emotions, blinks, and objects in video footage, plus includes a chatbot assistant for querying results.
+
+## Team Members
+
+The team consisted of Joshua John, Yue (Michelle) Lei, and Yingquan Li.
+
+## Tech Stack
+
+The project uses Python 3.12, Flask, OpenCV, DeepFace, YOLOv8, PyTorch, and the OpenAI API for the backend, with HTML5, CSS3, and vanilla JavaScript for the frontend.
+
+## Key Features
+
+- Real-time emotion detection via webcam
+- Video upload and analysis capabilities
+- YOLOv8-based object recognition
+- Playback and history review
+- Chatbot assistant for result queries
+
+## Important Limitation
+
+**The provided content does not specify:** their placement/ranking, which tracks existed, which other teams competed, or which teams won awards. The page only confirms this was their submission to "the SCSP and AGI House AI Expo Hackathon - Washington D.C. (Jun. 2025)."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

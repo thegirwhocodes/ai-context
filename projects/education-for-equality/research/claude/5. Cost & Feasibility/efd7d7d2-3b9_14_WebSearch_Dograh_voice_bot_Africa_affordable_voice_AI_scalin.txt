@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Dograh voice bot Africa affordable voice AI scaling Nigerian languages 2026
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-09 09:39:02 UTC
+========================================================================
+
+Search query: Dograh voice bot Africa affordable voice AI scaling Nigerian languages 2026
+
+----------------------------------------
+
+Web search results for query: "Dograh voice bot Africa affordable voice AI scaling Nigerian languages 2026"
+
+Links: [{"title":"Building Voice Bot for Africa: Scaling Affordable Voice AI without Breaking","url":"https://blog.dograh.com/building-voice-bot-for-africa-scaling-affordable-voice-ai-without-breaking/"},{"title":"Dograh · GitHub","url":"https://github.com/dograh-hq"},{"title":"Dograh | The Open Source Vapi Alternative - Build AI Voice Agents","url":"https://www.dograh.com/"},{"title":"GitHub - dograh-hq/dograh: Open Source Voice Agent Platform · GitHub","url":"https://github.com/dograh-hq/dograh"},{"title":"AI Voice Connect - Cloudonix","url":"https://cloudonix.com/dograh/"},{"title":"Dograh AI - Open Source Voice AI Platform- Low Code Workflow Builder for voice Agents","url":"https://blog.dograh.com/dograh-ai-open-source-voice-ai-platform-low-code-workflow-builder-for-voice-agents/"},{"title":"Voice ai for customer support: Proven Guide [Use Cases + Tools 2026]","url":"https://blog.dograh.com/voice-ai-for-customer-support-proven-guide-use-cases-tools-2026/"},{"title":"AI Open Source - Dograh AI","url":"https://blog.dograh.com/tag/ai-open-source/"},{"title":"Free AI Nigerian Voice Cloning In 30 Seconds! No Sign-up Required. | Speechify","url":"https://speechify.com/voice-cloning/nigerian/"},{"title":"Nigerian Accent Text-to-Speech | AI Voice Generator Online | Easy-Peasy.AI","url":"https://easy-peasy.ai/text-to-speech/nigerian"}]
+
+Based on the search results, here's what I found about Dograh and voice AI in Africa:
+
+## Dograh Voice AI Platform
+
+Dograh is the open-source alternative to Vapi - helping you build voice AI agents with an easy drag-and-drop workflow builder. It's the fastest way to build voice AI agents - from zero to working bot in under 2 minutes.
+
+## Building Voice AI for African Markets in 2026
+
+Voice AI is booming, but building for Africa, especially Nigeria, requires handling diverse accents, languages, and real-world conditions. In this webinar, Muyiwa Ogundiya shares practical lessons on scaling affordable, high-quality voice agents that work in African markets.
+
+### Key Challenges for Nigerian Languages
+
+Building voice bots for places like Nigeria is very different - accents vary, languages are mixed, network quality is uneven, and user behavior is unpredictable. Specific challenges include:
+
+- English blended with local languages, slang, Pidgin, and mixed cadence
+- Popular models frequently falter on names like Ikeja, Surulere, or even Muyiwa, which harms credibility
+- Many ASR systems struggle with Nigerian locations, terms, and the way we naturally blend words
+
+### Cost Optimization Strategies
+
+Open-source voice platforms help reduce total cost, especially engineering time and vendor lock-in. My take: open source makes the build cheaper and more controllable, but execution still decides outcomes.
+
+## Multilingual Support
+
+Dograh ships with multilingual support (30+ languages by default), supports language switching mid-call, and can be configured to support more languages by swapping STT providers.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

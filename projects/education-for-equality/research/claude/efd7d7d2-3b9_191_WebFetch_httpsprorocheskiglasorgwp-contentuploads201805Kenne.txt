@@ -1,0 +1,23 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://prorocheskiglas.org/wp-content/uploads/2018/05/Kenneth-E.-Hagin-I-Believ
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-16 23:53:41 UTC
+========================================================================
+
+URL: https://prorocheskiglas.org/wp-content/uploads/2018/05/Kenneth-E.-Hagin-I-Believe-in-Visions-1.pdf
+Extraction prompt: Extract the FULL content of this book. I need:
+1. Complete table of contents / chapter list
+2. Every story about a vision or dream Kenneth Hagin had
+3. All descriptions of how Jesus appeared to him
+4. His teachings about how visions work
+5. Any practical instructions for believers about dreams and visions
+6. Direct quotes about the supernatural, faith, and hearing God
+Extract as much text as possible.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

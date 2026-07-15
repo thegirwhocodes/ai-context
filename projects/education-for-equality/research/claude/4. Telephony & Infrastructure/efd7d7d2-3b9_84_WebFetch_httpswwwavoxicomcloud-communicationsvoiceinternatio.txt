@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.avoxi.com/cloud-communications/voice/international-toll-free-numbers
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:59:30 UTC
+========================================================================
+
+URL: https://www.avoxi.com/cloud-communications/voice/international-toll-free-numbers/
+Extraction prompt: Does AVOXI offer API access, webhooks, programmable voice, IVR API, or developer tools? Or is it just call forwarding? Is there any mention of APIs, SDKs, developer documentation, webhooks, or programmable call control?
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

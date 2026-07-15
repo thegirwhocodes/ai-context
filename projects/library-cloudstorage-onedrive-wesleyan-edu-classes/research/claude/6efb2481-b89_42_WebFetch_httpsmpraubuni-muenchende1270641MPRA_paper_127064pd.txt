@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mpra.ub.uni-muenchen.de/127064/1/MPRA_paper_127064.pdf
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:40:42 UTC
+========================================================================
+
+URL: https://mpra.ub.uni-muenchen.de/127064/1/MPRA_paper_127064.pdf
+Extraction prompt: This is the MPRA working-paper version of Akalbeo (2025) on Ghana's oil discovery using synthetic control. Extract: (1) donor pool — which SSA countries are in it, total number; (2) treatment year and pre-treatment window; (3) outcome variables (just GDP, or also unemployment, sectoral output?); (4) predictor variables for matching; (5) was raw SCM used or Augmented SCM; (6) what were the pre-treatment RMSPE and post-treatment effect sizes; (7) which country had the largest donor weight in the synthetic Ghana; (8) what placebo and robustness tests were used. I need methodological detail because I'm replicating this for Nigeria.
+
+----------------------------------------
+
+# Methodological Details from Akalbeo (2025) — Ghana Oil Discovery SCM Study
+
+I apologize, but the document provided appears to be a PDF file rendered as binary/compressed data rather than readable text. The content shown contains embedded font data and stream encoding that prevents extraction of the specific methodological details you requested.
+
+**To properly answer your questions about:**
+- Donor pool composition and country count
+- Treatment year and pre-treatment window
+- Outcome variables (GDP, unemployment, sectoral measures)
+- Predictor variables for matching
+- SCM vs. Augmented SCM approach
+- Pre/post-treatment RMSPE and effect sizes
+- Largest donor weight contributor
+- Placebo and robustness tests
+
+**I would need:**
+1. A text-based version of the paper (PDF with selectable text layer), or
+2. The paper's abstract and methodology section in readable format
+
+If you have access to the paper through your institution, you could export it as text or provide the methodology section directly. Alternatively, if this is available on MPRA's website, I could guide you toward extracting the methodology systematically for your Nigeria replication work.
+
+Would you be able to share a readable version of the relevant sections?
+
+[Binary content (application/pdf, 1.2MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/6efb2481-b890-4754-95b7-49de6ac05f9b/tool-results/webfetch-1778737267915-nskxh9.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

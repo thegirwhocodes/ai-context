@@ -1,0 +1,29 @@
+========================================================================
+AGENT RESEARCH: Research lean code/data architecture
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:45:56 UTC
+========================================================================
+
+Research how the most CAPITAL-EFFICIENT, fast-moving tech companies structured their CODE and DATA so a small team could move fast — for a solo-founder building a Next.js 16 + Supabase/Postgres personal-AI product (Cortex). Use WebSearch + WebFetch on authoritative/primary sources (engineering blogs from Shopify, Stripe, Instagram, GitHub, Linear, Supabase; reputable talks/posts). Every claim followed by a source URL.
+
+Cover, concretely and cited:
+1. Modular monolith vs microservices for small teams — why the fast small winners stayed monolith (Shopify "majestic monolith", Instagram Django monolith, Stripe Ruby monolith, GitHub Rails monolith). When (scale/team size) they actually split, and the cost of splitting too early.
+2. Database discipline — "Postgres for everything" as long as possible; when teams added Redis/Kafka/search/other stores and the pain that justified it. pgvector for RAG + relational in one Postgres. Schema/data-model as the expensive-to-change core.
+3. Type-safety end-to-end as a small-team QA multiplier (TypeScript strict, generated DB types). Evidence/arguments from Linear/others.
+4. Code organization that keeps velocity high solo/small: clear module boundaries, conventions over config, monorepo vs polyrepo for a small team, where tests pay off (money paths) vs coverage theater.
+5. Anything specific about structuring a codebase so AI coding agents (Claude Code/Copilot) can navigate it effectively — naming, colocation, docs, module boundaries.
+
+Return a dense, structured, cited bullet list of PRINCIPLES + the evidence, each with a source URL. Mark weak-sourced claims "unverified." Focus on what's directly actionable for a Next.js/Supabase modular monolith run by ~1 person + AI. No fluff.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a2ebf69038bc01d2a (internal ID - do not mention to user. Use SendMessage with to: 'a2ebf69038bc01d2a', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/a2ebf69038bc01d2a.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

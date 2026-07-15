@@ -1,0 +1,33 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: voice AI speech recognition Nigerian accent children accuracy Whisper ASR low-re
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:09:24 UTC
+========================================================================
+
+Search query: voice AI speech recognition Nigerian accent children accuracy Whisper ASR low-resource languages
+
+----------------------------------------
+
+Web search results for query: "voice AI speech recognition Nigerian accent children accuracy Whisper ASR low-resource languages"
+
+Links: [{"title":"Can AI Speech Recognition Understand Accents & Dialects?","url":"https://www.captioningstar.com/blog/ai-speech-recognition-accents-dialects/"},{"title":"Paza: Introducing automatic speech recognition benchmarks and models for low resource languages - Microsoft Research","url":"https://www.microsoft.com/en-us/research/blog/paza-introducing-automatic-speech-recognition-benchmarks-and-models-for-low-resource-languages/"},{"title":"Introducing Whisper | OpenAI","url":"https://openai.com/index/whisper/"},{"title":"openai/whisper-large-v3 · Hugging Face","url":"https://huggingface.co/openai/whisper-large-v3"},{"title":"GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak Supervision · GitHub","url":"https://github.com/openai/whisper"},{"title":"(PDF) Automatic Speech Recognition for Nigerian-Accented English","url":"https://www.researchgate.net/publication/374662184_Automatic_Speech_Recognition_for_Nigerian-Accented_English"},{"title":"openai/whisper-small · Hugging Face","url":"https://huggingface.co/openai/whisper-small"},{"title":"Advancing Multilingual Speech Recognition: Fine-Tuning Whisper for Enhanced Low-Resource Performance | by Christopher Ibe | Medium","url":"https://medium.com/@ccibeekeoc42/advancing-multilingual-speech-recognition-fine-tuning-whisper-for-enhanced-low-resource-34529b525f90"},{"title":"Automatic Speech Recognition (ASR) for African Low-Resource Languages: A Systematic Literature Review","url":"https://arxiv.org/html/2510.01145v1"},{"title":"Whisper, A Breakthrough in Speech-Recognition AI","url":"https://enerzai.com/resources/blog/whisper-a-breakthrough-in-speech-recognition-ai"}]
+
+I've completed the web search for your query on voice AI speech recognition, Nigerian accents, children's speech, Whisper ASR accuracy, and low-resource languages. Here are the key findings:
+
+## Key Results
+
+**Nigerian Accent ASR:**
+English speech recognition algorithms failed to correctly transcribe the pronunciations of educators with Nigerian accents during remote learning in 2020. A study fine-tuned NeMo's QuartzNet15x5 English model on accented educational data and achieved a word error rate (WER) of 27%. Additionally, some applications allow users to select "Nigerian English" to adjust transcription accuracy.
+
+**Whisper ASR Performance:**
+Whisper is trained on 680,000 hours of multilingual and multitask supervised data, showing improved robustness to accents, background noise and technical language. However, Whisper models perform unevenly across languages, with lower accuracy on low-resource and/or low-discoverability languages or languages where there is less training data.
+
+**Low-Resource Languages:**
+While Whisper was trained on approximately 117,000 hours covering 96 languages including Yoruba and Hausa, Yoruba and Hausa collectively contribute less than 600 hours, and Igbo is not represented. Whisper has emerged as the most robust solution for accented and multilingual African speech, though many models show biases when applied to African languages, especially in handling accents, dialects and noisy speech.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

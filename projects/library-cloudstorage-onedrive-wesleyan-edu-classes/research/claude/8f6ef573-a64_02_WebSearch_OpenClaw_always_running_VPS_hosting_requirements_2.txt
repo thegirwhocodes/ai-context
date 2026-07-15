@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw always running VPS hosting requirements 2026
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:10:16 UTC
+========================================================================
+
+Search query: OpenClaw always running VPS hosting requirements 2026
+
+----------------------------------------
+
+Web search results for query: "OpenClaw always running VPS hosting requirements 2026"
+
+Links: [{"title":"OpenClaw VPS Hosting | One-Click AI Assistant Setup","url":"https://www.hostinger.com/vps/docker/openclaw"},{"title":"How to set up OpenClaw","url":"https://www.hostinger.com/tutorials/how-to-set-up-openclaw"},{"title":"VPS Hosting - OpenClaw","url":"https://docs.openclaw.ai/vps"},{"title":"OpenClaw Hardware Requirements: Minimum vs Recommended","url":"https://boostedhost.com/blog/en/openclaw-hardware-requirements/"},{"title":"How to Run OpenClaw with DigitalOcean | DigitalOcean","url":"https://www.digitalocean.com/community/tutorials/how-to-run-openclaw"},{"title":"Self-Host OpenClaw on a Free VPS — Complete 2026 Setup Guide | Cognio Labs","url":"https://cognio.so/clawdbot/self-hosting"},{"title":"VPS Hosting for OpenClaw: Performance, Security & Scaling Guide | Purvaco","url":"https://purvaco.com/blog/vps-hosting/vps-hosting-for-openclaw-performance-security-scaling-guide/"},{"title":"Top 5 Best OpenClaw Hosting Providers in 2026","url":"https://boostedhost.com/blog/en/top-5-best-openclaw-hosting-vps-providers/"},{"title":"VPS hosting – OpenClaw - 开源个人 AI 助手","url":"https://openclawcn.com/en/docs/vps/"},{"title":"Top 11 OpenClaw VPS Hosting Providers for 2026 Compared","url":"https://seahawkmedia.com/hosting/top-openclaw-vps-hosting/"}]
+
+Based on the search results, here's what you need to know about OpenClaw always-running VPS hosting requirements for 2026:
+
+## Minimum Requirements
+
+To prepare a private server for OpenClaw, you need a Linux VPS with full administrative access, which is the foundation of your project because an always-on server ensures your bot never sleeps.
+
+**Hardware Specifications:**
+- Linux operating system (Ubuntu 22.04 or 24.04 works great)
+- At least 2GB RAM (4GB recommended for better performance)
+- 10GB+ disk space for Docker images, application data, and logs
+- Administrative access (root or sudo privileges) and Docker and Docker Compose
+
+## Why RAM is Critical
+
+CPU matters less than memory. Disk matters less than memory. Swap helps, but swap does not save you. RAM is king. If RAM is tight, OpenClaw doesn't degrade gracefully. It falls over.
+
+## Deployment Options
+
+Supported platforms include Railway, Northflank, Oracle Cloud (Always Free), Fly.io, Hetzner, GCP, AWS (EC2/Lightsail/free tier), and others. Notably, you can run OpenClaw + Ollama for $0/month on Oracle Cloud's Always Free tier with 4 ARM CPUs, 24 GB RAM, Docker, Nginx reverse proxy, free SSL, and local AI models.
+
+## Why VPS is Necessary
+
+A dedicated VPS gives OpenClaw the environment it needs to maintain long-running processes, handle WebSocket connections reliably, and operate securely with your LLM of choice.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

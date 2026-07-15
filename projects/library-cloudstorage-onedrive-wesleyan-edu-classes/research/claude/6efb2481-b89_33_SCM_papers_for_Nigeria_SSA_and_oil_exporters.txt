@@ -1,0 +1,72 @@
+========================================================================
+AGENT RESEARCH: SCM papers for Nigeria, SSA, and oil exporters
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:24:57 UTC
+========================================================================
+
+I need a thorough literature search for published applications of the Synthetic Control Method (SCM) — and its modern extensions (Augmented SCM, Synthetic DID, Generalized SCM, Penalized SCM) — to three specific contexts. The goal is to find an actual published methodological template that can be replicated for a Nigerian senior thesis on out-of-school children and GDP growth. A previous search told me "no Nigeria-focused SCM growth paper exists," but I find that hard to believe given how prominent SCM has become. Please search more aggressively, including working papers, NBER, IZA, AfDB, AERC, RePEc/IDEAS, SSRN, and Google Scholar.
+
+**Specifically find papers in these three buckets:**
+
+## Bucket 1: SCM applied to Nigeria (any outcome)
+Look hard for these. Suggested search terms: "synthetic control Nigeria", "synthetic counterfactual Nigeria", "Abadie Nigeria", "Boko Haram synthetic control", "Nigerian oil shock synthetic control", "Nigeria education synthetic". Examples I expect to find:
+- Anything on Boko Haram's growth/education impact using SCM
+- Anything on Nigeria's oil booms/busts (1973, 1981–86, 2014) using SCM
+- Anything on Nigerian state-level SCM (within-country donor pool)
+- Anything on Naira devaluation, structural adjustment, or Buhari/Tinubu administrations
+
+For each paper found, report: full citation, treatment date, donor pool, outcome variable, headline result, and key methodological choices (raw SCM vs Augmented SCM, donor pool definition, predictor matching variables).
+
+## Bucket 2: SCM applied to Sub-Saharan African countries (broader)
+Suggested search terms: "synthetic control sub-saharan Africa", "synthetic control developing country", "synthetic control African education", "SCM East Africa Universal Primary Education", "Uganda 1997 UPE synthetic control", "Kenya 2003 free primary synthetic", "Tanzania 2002 free primary synthetic", "Rwanda genocide synthetic control", "Ethiopia synthetic control", "Ghana Cocoa synthetic control".
+
+Focus on papers using SCM for:
+- Education policies (UPE programs, free primary education programs)
+- Civil conflicts (Rwanda 1994, DRC, Sierra Leone)
+- Structural reforms / IMF programs / SAP packages
+- Natural-resource shocks
+
+Even partial matches are useful — any methodological precedent that handles "high-volatility African economy + clear treatment date" is informative.
+
+## Bucket 3: SCM applied to oil-exporting countries (Gulf, Russia, Venezuela, etc.)
+Suggested search terms: "synthetic control oil exporter", "synthetic control resource curse", "synthetic control OPEC", "synthetic control oil shock", "Saudi Arabia synthetic control", "UAE Dubai synthetic control", "Venezuela synthetic control oil", "Russia oil price synthetic", "Norway oil fund synthetic control", "Iran sanctions synthetic control", "Mexico Pemex synthetic control".
+
+Why this bucket matters: Nigeria's "structural uniqueness" (oil + huge population) makes the convex hull problem severe. Other oil exporters face the same issue and the literature may have solved it. Specifically interested in:
+- How they define the donor pool (other oil exporters? non-oil with similar income?)
+- Whether they use Augmented SCM, raw SCM, or some variant
+- How they handle the resource-curse heterogeneity
+- Sample size and pre-treatment fit (RMSPE)
+
+## Additional methodological resources
+Find any **REVIEW or textbook chapter** that compiles SCM applications across developing countries. Examples:
+- Abadie (2021, JEL) review article — what applications does it list?
+- Athey & Imbens (2017, JEP) "The State of Applied Econometrics: Causality and Policy Evaluation" — does it discuss SCM in developing contexts?
+- World Bank or IMF working-paper series on causal inference in development
+
+## Format of report
+
+For each paper you find, provide:
+1. Full citation (authors, year, journal/working paper, page numbers if available)
+2. Treatment unit, treatment date, donor pool, outcome
+3. SCM variant used (raw SCM, Augmented SCM, Penalized SCM, Synthetic DID, etc.)
+4. Pre-treatment RMSPE (if reported) and post-treatment effect magnitude
+5. ONE sentence on why it's a useful template for the Nigerian thesis
+
+Be thorough. Aim for 12–20 papers total across the three buckets, ranked by relevance to a Nigerian-OOSC-growth design. If a bucket genuinely has nothing, say so explicitly with the search terms you tried — don't fabricate.
+
+End with: (a) the THREE most relevant papers as exact templates to adapt, and (b) a one-paragraph methodological design recommendation for a Nigerian thesis SCM that builds on what's already in the literature.
+
+Report can be up to 1500 words. Use proper bibliographic citations. Web search heavily — this is a literature review task.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a52165e32a547034b (internal ID - do not mention to user. Use SendMessage with to: 'a52165e32a547034b' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/91e12c77-89b6-4b15-88f2-bc4fbadd518b/tasks/a52165e32a547034b.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

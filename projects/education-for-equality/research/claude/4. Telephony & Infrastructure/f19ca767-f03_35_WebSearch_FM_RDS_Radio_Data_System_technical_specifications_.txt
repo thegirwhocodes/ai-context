@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: FM RDS Radio Data System technical specifications data capacity text transmissio
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 04:19:30 UTC
+========================================================================
+
+Search query: FM RDS Radio Data System technical specifications data capacity text transmission
+
+----------------------------------------
+
+Web search results for query: "FM RDS Radio Data System technical specifications data capacity text transmission"
+
+Links: [{"title":"Radio Data System - Wikipedia","url":"https://en.wikipedia.org/wiki/Radio_Data_System"},{"title":"Your Guide to FM RDS: What Is It, and How Does It Work? - Media Realm","url":"https://www.mediarealm.com.au/articles/fm-rds-radio-data-system-guide/"},{"title":"Data Transmission Capabilities for FM Radio","url":"http://www.nab.org/xert/scitech/pdfs/rd022309.pdf"},{"title":"Radio Data System (RDS) - Signal Identification Wiki","url":"https://www.sigidwiki.com/wiki/Radio_Data_System_(RDS)"},{"title":"RDS: The Radio Data System","url":"https://www.iz3mez.it/wp-content/library/ebook/RDS%20-%20The%20Radio%20Data%20System.pdf"},{"title":"2wcom RDS Basics 1 RDS Basics","url":"https://www.2wcom.com/fileadmin/redaktion/dokumente/Company/RDS_Basics.pdf"},{"title":"Radio Data System, RDS Tutorial » Electronics Notes","url":"https://www.electronics-notes.com/articles/audio-video/broadcast-audio/rds-radio-data-system-basics-tutorial.php"},{"title":"What is RDS Radio/What Does RDS Mean on a Radio?","url":"https://www.radio4all.org/what-is-rds-radio/"},{"title":"What Is FM Radio Data System (RDS)? - ITU Online IT Training","url":"https://www.ituonline.com/tech-definitions/what-is-fm-radio-data-system-rds/"},{"title":"RDS - Radio Data System - RDBS - Radio Broadcast Data System - Telecom ABC","url":"https://en.telecomabc.nl/r/rds.html"}]
+
+Based on the web search results, here's a comprehensive overview of FM RDS technical specifications, data capacity, and text transmission:
+
+## Technical Specifications
+
+RDS is a communications protocol standard for embedding small amounts of digital information in conventional FM radio broadcasts. The standard began as a project of the European Broadcasting Union (EBU), but has since become an international standard of the International Electrotechnical Commission (IEC).
+
+### Subcarrier and Data Rate
+
+Both versions carry data at 1,187.5 bits per second (about 1.2 kbit/s) on a 57 kHz subcarrier, so there are exactly 48 cycles of subcarrier during every data bit. The RDS system is Dual Side Band modulated onto the 57 kHz subcarrier of a commercial FM transmitter. The RDS mode transmitted is actually one PSK signal identically duplicated and mirrored across the 57 kHz carrier for robustness and redundancy. This individual PSK signal is about 2.2 kHz wide, and the combined DSB modulation of RDS is about 4 kHz.
+
+## Text Transmission Capacity
+
+RadioText allows text transmissions of up to 64 characters per message. RDS can carry 1187.5 bits/s. An error correction code is used in the transmission of the data. This brings the netto data rate down to 730 bit/s, allowing for approximately 100 characters per second of usable data.
+
+## RDS2 Enhancement
+
+The update uses three additional subcarriers, to allow for a higher bitrate (maximum 4750 bits per second), and thus transmission of additional data such as images.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

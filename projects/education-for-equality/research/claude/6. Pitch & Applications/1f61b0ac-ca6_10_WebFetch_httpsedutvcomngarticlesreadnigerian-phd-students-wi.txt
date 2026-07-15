@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://edutv.com.ng/articles/read/nigerian-phd-students-win-5-000-at-mit-africa
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:56:42 UTC
+========================================================================
+
+URL: https://edutv.com.ng/articles/read/nigerian-phd-students-win-5-000-at-mit-africa-hackathon_99.html
+Extraction prompt: Extract all details about what made the winning teams stand out, judging criteria, quotes from organizers or judges, and details about all placing teams.
+
+----------------------------------------
+
+# MIT Africa Business Challenge 2025 - Winner Details
+
+## Winning Team: AgriQ-Connect
+
+**Team Members:**
+- Mariam Hamzat (Marine and Environmental Sciences, PhD student - Year 1)
+- Qudus Rafiu (Chemical Engineering, PhD student)
+- Toheeb Obidara (Chemical Engineering, PhD student)
+- Azeez Akinyemi (Chemical Engineering, PhD student)
+
+**Prize:** $5,000 + Audience Choice Award
+
+**Solution:** An agritech platform designed to reduce post-harvest losses and address food security challenges across Africa.
+
+## Event Details
+
+**Event:** MIT Africa Business Challenge 2025 (inaugural edition)
+**Date:** February 28 - March 1, 2025
+**Location:** Martin Trust Center for Entrepreneurship, MIT
+
+**Conference:** 14th MIT Africa Innovate Conference
+**Theme:** "By Africa, For Africa: Path to Economic Sovereignty"
+**Organizer:** MIT Sloan School of Management Africa Business Club
+**Presentation Venue:** MIT Innovation HQ
+
+## Participation Statistics
+
+- **Total Applicants:** 1,000+
+- **Participating Teams:** 13 from 14 institutions
+- **Represented Universities:** Harvard, Dartmouth, MIT, Wageningen University, Yale University, HULT International Business School
+
+**Note:** The article does not provide details about other placing teams, judging criteria, or quotes from judges.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

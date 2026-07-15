@@ -1,0 +1,37 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq iOS Shortcuts integration Siri API upload
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:30:34 UTC
+========================================================================
+
+Search query: Tactiq iOS Shortcuts integration Siri API upload
+
+----------------------------------------
+
+Web search results for query: "Tactiq iOS Shortcuts integration Siri API upload"
+
+Links: [{"title":"Use Siri & URL Scheme with TickTick","url":"https://help.ticktick.com/articles/7055781515422072832"},{"title":"How to integrate Siri Shortcuts with your app | ArcTouch","url":"https://arctouch.com/blog/how-to-integrate-siri-shortcuts"},{"title":"Tactiq API - Docs, SDKs & Integration","url":"https://apitracker.io/a/tactiq-io"},{"title":"Tactiq Integration for Workable | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/10436797-tactiq-integration-for-workable"},{"title":"Tactiq Integrations","url":"https://tactiq.io/integrations"},{"title":"Request your first API in Shortcuts on iPhone or iPad - Apple Support","url":"https://support.apple.com/guide/shortcuts/request-your-first-api-apd58d46713f/ios"},{"title":"Tactiq.io | AI Workflow Integrations","url":"https://tactiq.io/ai-workflow/ai-workflow-integrations"},{"title":"Adding User Interactivity with Siri Shortcuts and the Shortcuts App | Apple Developer Documentation","url":"https://developer.apple.com/documentation/sirikit/adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app"},{"title":"Best Translation Apps for Travelers and Business Use","url":"https://tactiq.io/learn/best-translation-apps"},{"title":"How to Choose the Best App for Meeting Notes","url":"https://tactiq.io/learn/app-for-meeting-notes"}]
+
+Based on the search results, I found some information about Tactiq and iOS/Siri integration, but the results don't contain specific details about Tactiq iOS Shortcuts integration with Siri API for upload functionality.
+
+Here's what I found:
+
+**About Tactiq:**
+Tactiq is a browser extension that automatically transcribes Zoom and Google Meet meetings to your Google Drive, Quip, Notion or other platforms. Meeting notes can be sent to Slack, Quip, Dropbox, or Confluence.
+
+**Regarding iOS/Siri capabilities:**
+You can upload video or audio files to Tactiq if you need to generate or review past meeting notes—it'll transcribe the content and summarize it just like a live session.
+
+However, the search results don't contain specific information about:
+- Native iOS Shortcuts app integration with Tactiq
+- Siri API access for Tactiq
+- Automated upload workflows via iOS Shortcuts
+
+If you're looking for specific documentation on this feature, I'd recommend checking Tactiq's official help center or contacting their support directly, as this level of technical integration detail may not be publicly available in the search results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

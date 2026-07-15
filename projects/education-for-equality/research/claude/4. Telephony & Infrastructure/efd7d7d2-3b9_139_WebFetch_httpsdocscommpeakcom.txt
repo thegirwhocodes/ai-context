@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:24:53 UTC
+========================================================================
+
+URL: https://docs.commpeak.com
+Extraction prompt: What sections/pages are available in CommPeak's documentation? List all navigation links and topics covered.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

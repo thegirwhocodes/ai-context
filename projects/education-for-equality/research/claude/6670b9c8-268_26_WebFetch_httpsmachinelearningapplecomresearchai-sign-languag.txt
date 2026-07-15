@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://machinelearning.apple.com/research/ai-sign-language-generation
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:27:20 UTC
+========================================================================
+
+URL: https://machinelearning.apple.com/research/ai-sign-language-generation
+Extraction prompt: Extract ALL technical details from this Apple research on AI-driven sign language generation with non-manual markers. Include: approach, model architecture, how non-manual markers are handled, accuracy, datasets used, findings, limitations, future work. Be exhaustive.
+
+----------------------------------------
+
+# Apple AI-Driven Sign Language Generation Research: Technical Summary
+
+Based on the webpage content provided, I can only extract limited technical details, as the page serves as a landing page rather than a full research paper.
+
+## Available Information
+
+**Research Focus:**
+The work addresses sign language generation by translating English into American Sign Language (ASL) videos featuring AI signers.
+
+**Core Challenge Addressed:**
+"Current systems often fail to meet user needs due to poor translation of grammatical structures, the absence of facial cues and body language, and insufficient visual and motion fidelity."
+
+**Technical Approach:**
+- Builds upon advances in large language models and video generation technologies
+- Two-component model: text processing and video synthesis
+- Separates manual (hand movements) and non-manual (facial expressions, body language) ASL components
+
+**Non-Manual Markers Handling:**
+The text component extracts information for both manual and non-manual elements, which are then used to synthesize skeletal pose sequences and corresponding video frames.
+
+**Evaluation:**
+- User study with 30 Deaf and Hard-of-Hearing participants
+- Technical evaluations conducted
+
+**Limitations & Future Work:**
+Not specified in the available content.
+
+## Note
+The webpage excerpt lacks the full research paper's technical depth. The arxiv link (2502.05661) would contain complete architectural details, datasets, metrics, and findings.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,174 @@
+========================================================================
+AGENT RESEARCH: Anthropic-native agent patterns
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-08 21:52:20 UTC
+========================================================================
+
+I'm doing deep research for Naomi, who's building Cortex — an AI personal agent app. Stack: Next.js 16, `@anthropic-ai/sdk@^0.79`, Claude Haiku 4.5 (`claude-haiku-4-5-20251001`) and Claude Sonnet 4.5 (`claude-sonnet-4-5-20250514`), Supabase, Gmail/Calendar OAuth, `cortex_actions` table with approval flow. She just built a small voice-email agent (summarize→intent→draft→send) and wants to scale agent depth across Cortex.
+
+She asked for **deep research on how to build an agent in 2026** — the Anthropic-native, framework-free path. Research only, no code.
+
+Specifically cover:
+
+1. **Anthropic's current agent recipe.** What is Anthropic itself recommending in late 2025 / early 2026? Read their docs — the "Building effective agents" article (anthropic.com/research/building-effective-agents), Claude Code architecture writeups, MCP, computer use, the agent SDK if one exists by now. Quote their guidance directly. What patterns (workflows vs agents) do they distinguish?
+
+2. **Claude tool-use loop in raw SDK form.** The minimum viable agent loop using `@anthropic-ai/sdk` — `messages.create` with `tools`, the `tool_use` content block, `tool_result` user-turn block, until `stop_reason !== 'tool_use'`. Show the exact shape. Cover prompt caching for long-running loops, parallel tool calls, fine-grained tool streaming, and what the SDK gives you for free in 2026.
+
+3. **Memory for agents.** Anthropic's Memory tool / context-editing / managed-memory feature if it exists. How do you keep an agent's working memory across turns and sessions cheaply? When does prompt caching cover it vs. when do you need a vector store / scratchpad in Supabase?
+
+4. **Subagents and orchestration.** How do you spawn child Claudes for delegated work? Anthropic's "agents calling agents" guidance. Where does Sonnet-orchestrating-Haiku save money?
+
+5. **Computer use / browser-use agents.** State of `claude-computer-use` in 2026. Where it's worth it (filling forms, scraping a site without an API) vs where it's overkill (Naomi already has Gmail API).
+
+6. **Evaluation.** How do you tell an agent is actually working? What does Anthropic recommend for agent evals — golden datasets, LLM-as-judge, end-to-end tests?
+
+Be specific. Quote the docs. Include URLs. Under 1500 words. The output gets synthesized into a plan Naomi will review.
+
+----------------------------------------
+
+I have enough. I'll write up the synthesis now — Naomi wants under 1500 words with direct quotes and URLs.
+
+---
+
+# Deep research: Building an agent in 2026 — the Anthropic-native path
+
+## 1. Anthropic's current agent recipe
+
+Anthropic's canonical doctrine is still **["Building effective agents"](https://www.anthropic.com/research/building-effective-agents)**. The single most-quoted line:
+
+> **Workflows** are "systems where LLMs and tools are orchestrated through predefined code paths." **Agents** are "systems where LLMs dynamically direct their own processes and tool usage, maintaining control over how they accomplish tasks."
+
+Use a workflow when "task can be easily and cleanly decomposed into fixed subtasks." Use an agent for "open-ended problems where it's difficult or impossible to predict the required number of steps." The five named workflow patterns: **prompt chaining, routing, parallelization (sectioning + voting), orchestrator-workers, evaluator-optimizer**. Agents are the sixth pattern — autonomous loop with environmental feedback.
+
+Three principles cut across everything: **simplicity** ("not about building the most sophisticated system… [it's] the right system for your needs"), **transparency** ("explicitly showing the agent's planning steps"), and **ACI investment** ("plan to invest just as much effort in creating good agent-computer interfaces (ACI)" as you would in HCI). Anthropic notes "we actually spent more time optimizing our tools than the overall prompt." Tools should be "poka-yoked," use formats "close to what the model has seen naturally occurring in text," and include "example usage, edge cases, input format requirements, and clear boundaries."
+
+In Sept 2025 Anthropic shipped the **[Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview)** (renamed from Claude Code SDK): "the same tools, agent loop, and context management that power Claude Code, programmable in Python and TypeScript." This is now their officially-recommended path for most agents. The SDK's own docs frame the choice plainly:
+
+> "**Client SDK**: You implement the tool loop. **Agent SDK**: Claude handles tools autonomously."
+
+Cortex's voice-email agent is small enough that the raw `@anthropic-ai/sdk` is correct. As depth grows (multi-step Calendar+Gmail+Drive flows, durable sessions, file-based memory), the Agent SDK earns its weight: built-in tools (Read/Write/Edit/Bash/Glob/Grep/WebSearch/WebFetch/Monitor/AskUserQuestion), `PreToolUse`/`PostToolUse`/`Stop`/`SessionStart`/`UserPromptSubmit` hooks, native subagents via the `Agent` tool, MCP server config, fine-grained permissions, and JSONL-backed sessions with `resume`. It runs in your process — Naomi keeps her Supabase + Clerk + `cortex_actions` approval flow.
+
+## 2. Claude tool-use loop in raw SDK form
+
+From [docs/agents-and-tools/tool-use/overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview):
+
+> "**Client tools** … run in your application: Claude responds with `stop_reason: "tool_use"` and one or more `tool_use` blocks, your code executes the operation, and you send back a `tool_result`."
+
+The minimum-viable loop:
+
+```ts
+let response = await client.messages.create({ model, tools, messages, max_tokens });
+while (response.stop_reason === "tool_use") {
+  const toolUses = response.content.filter(b => b.type === "tool_use");
+  const toolResults = await Promise.all(toolUses.map(async tu => ({
+    type: "tool_result",
+    tool_use_id: tu.id,
+    content: await runTool(tu.name, tu.input),
+    // is_error: true on failure
+  })));
+  messages.push({ role: "assistant", content: response.content });
+  messages.push({ role: "user", content: toolResults });
+  response = await client.messages.create({ model, tools, messages, max_tokens });
+}
+```
+
+Block shapes (verbatim from docs):
+
+```json
+{ "type": "tool_use", "id": "toolu_01A09q90qw90lq917835lq9",
+  "name": "get_weather", "input": { "location": "New York, NY" } }
+```
+```json
+{ "type": "tool_result", "tool_use_id": "toolu_01A09q...", "content": "...", "is_error": false }
+```
+
+**What the 2026 SDK gives free:** parallel tool calls (Claude emits multiple `tool_use` blocks per turn — execute with `Promise.all`); `strict: true` on tool definitions to "guarantee schema conformance" with the JSON schema; fine-grained tool streaming; server-side tools (`web_search_20260209`, `code_execution`, `web_fetch`, `tool_search`) that Anthropic executes — Cortex pays per-search but skips its own infra; the **`memory_20250818`** tool; and the new `computer_20251124` for Opus 4.7/4.6 / Sonnet 4.6 / Opus 4.5.
+
+**Prompt caching for the loop** ([docs](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)): cache hierarchy is `tools → system → messages`. Writes cost 1.25× base (5-min TTL) or 2× (1h); reads cost 0.1× base. Place `cache_control: { type: "ephemeral" }` on the **last block that stays identical across requests** — typically the last system block and the tool list. For agent loops, this means the multi-turn tool conversation is mostly cache-read after turn 1. Min tokens: Haiku 4.5 = 4096, Sonnet 4.5 = 1024, Opus 4.5+ = 4096. Cortex's tool list + system already exceeds these.
+
+## 3. Memory for agents
+
+Anthropic shipped two paired primitives in late 2025 (now public beta on Sonnet 4.5+):
+
+**The [memory tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool)** (`memory_20250818`) is client-side and file-based. Claude issues `view`/`create`/`str_replace`/`insert`/`delete`/`rename` commands against a `/memories` directory; **Cortex implements the backend** (filesystem, S3, encrypted blob, or a Supabase table — Naomi's choice). The injected system prompt is verbatim:
+
+> "IMPORTANT: ALWAYS VIEW YOUR MEMORY DIRECTORY BEFORE DOING ANYTHING ELSE … ASSUME INTERRUPTION: Your context window might be reset at any moment, so you risk losing any progress that is not recorded in your memory directory."
+
+Mandatory: **path-traversal protection** ("Validate that all paths start with `/memories`," reject `../` and `%2e%2e%2f`).
+
+**[Context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing)** auto-clears stale tool results and thinking blocks. Anthropic's published numbers ([context-management announcement](https://claude.com/blog/context-management)): "combining the memory tool with context editing improved performance by 39% over baseline" on agentic search; "in a 100-turn web search evaluation, context editing alone reduced token consumption by 84%."
+
+**When to use what for Cortex:**
+- **Prompt caching** — single conversation, static system + tools. Free on the read side.
+- **Memory tool** — cross-session facts ("user prefers concise replies"; "approved templates"; "ongoing project state"). Anthropic's [effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) post calls this "just-in-time retrieval … maintain lightweight references … dynamically pull information during execution."
+- **Server-side compaction** — the recommended default for long conversations; clears via summarization.
+- **Supabase vector store** — only when Cortex needs *semantic* search across thousands of past emails/threads. Memory tool is great for tens of curated files, not retrieval over a corpus.
+
+The "[multi-session software development pattern](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool)" maps cleanly to Cortex's `cortex_actions` flow: an initializer session lays down a progress log + feature checklist; subsequent sessions read those files first. Naomi's approval-gated actions are exactly the artifacts that should land in memory between sessions.
+
+## 4. Subagents and orchestration
+
+From [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system):
+
+> "We use an **orchestrator-worker pattern, where a lead agent coordinates the process while delegating to specialized subagents that operate in parallel**."
+
+Sonnet-as-lead spawning Haiku/Sonnet workers "cut research time by up to 90% for complex queries" on tasks involving "heavy parallelization, information that exceeds single context windows, and interfacing with numerous complex tools." The cost: "agents typically consume about 15× more tokens than standard chat interactions" — only worth it when parallelism or context-isolation is the actual bottleneck.
+
+In the Agent SDK, you declare subagents inline:
+
+```ts
+options: {
+  allowedTools: ["Read", "Glob", "Grep", "Agent"], // include "Agent" tool
+  agents: {
+    "code-reviewer": {
+      description: "Expert code reviewer for quality and security reviews.",
+      prompt: "Analyze code quality and suggest improvements.",
+      tools: ["Read", "Glob", "Grep"]
+    }
+  }
+}
+```
+
+Each subagent gets **its own context window**; messages within it carry `parent_tool_use_id`. **Where Sonnet-orchestrating-Haiku saves money for Cortex:** triage ("which of these 47 unread emails need a draft?") → Haiku labels each in parallel; Sonnet only drafts the survivors. Same pattern for calendar-conflict scanning, attachment summarization, and any "fan-out / synthesize" workflow. Don't multi-agent a linear pipeline — that's just a workflow with extra cost.
+
+## 5. Computer use / browser-use
+
+`computer_20251124` is now stable-beta on Opus 4.7/4.6/Sonnet 4.6/Opus 4.5; older `computer_20250124` covers Sonnet/Haiku 4.5. Per [Anthropic's docs](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool):
+
+> "Latency: the current computer use latency for human-AI interactions may be too slow … Focus on use cases where speed isn't critical (for example, background information gathering, automated software testing) **in trusted environments**."
+
+For Cortex's roadmap, computer use is **overkill** anywhere Naomi already has an API: Gmail, Calendar, Drive, Notion. The realistic wins are: (a) sites without APIs (booking flows, niche dashboards), (b) sandboxed software testing of Cortex itself, (c) PDF/desktop-only workflows. It's also expensive — `735` tokens per tool definition plus `466–499` system overhead plus per-screenshot vision tokens. For browser-only tasks, the **Playwright MCP server** wired into the Agent SDK (shown in the SDK overview) is dramatically cheaper than full computer use — DOM access, no screenshot toll. Reach for `computer_20251124` only when DOM access fails (Canvas apps, native dialogs).
+
+## 6. Evaluation
+
+Anthropic's [success-criteria + evals doc](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) is blunt:
+
+> "Prioritize volume over quality: More questions with slightly lower signal automated grading is better than fewer questions with high-quality human hand-graded evals."
+
+The grading stack, in Anthropic's preferred order:
+1. **Code-based** — exact match, string match, JSON-schema check. Use for deterministic outputs (intent classification, structured drafts).
+2. **LLM-as-judge** — for tone, helpfulness, citation accuracy. Their tips: "have detailed, clear rubrics," "instruct the LLM to output only 'correct' or 'incorrect', or to judge from a scale of 1-5," "ask the LLM to think first … then discard the reasoning," and "use a different model to evaluate than the model used to generate." This is the actual rubric they used in the multi-agent research system: "factual accuracy, citation accuracy, completeness, source quality, and tool efficiency."
+3. **Human grading** — only where it's the difference between shipping and not.
+
+For long-running agents specifically, [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) names the failure mode: "Claude's tendency to mark a feature as complete without proper testing." Their fix is **end-to-end browser verification at the start of every session**, not just after build, plus a JSON feature list with pass/fail status that the agent isn't allowed to delete.
+
+For Cortex: golden dataset of ~50–100 (email, expected-intent, expected-draft) tuples → exact-match on intent, LLM-judge on draft fidelity using a separate model (Sonnet judges Haiku-generated drafts, or Opus judges Sonnet). Run on every prompt change. The `cortex_actions` approval table is already a free human-feedback signal — log approve/reject/edit and treat reject+edit as your highest-signal regression dataset.
+
+---
+
+**Sources:**
+- [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [Building agents with the Claude Agent SDK](https://claude.com/blog/building-agents-with-the-claude-agent-sdk) · [@anthropic-ai/claude-agent-sdk on npm](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk)
+- [Tool use overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) · [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
+- [Memory tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool) · [Context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing) · [Context-management announcement](https://claude.com/blog/context-management)
+- [Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) · [Multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system) · [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- [Computer use tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool)
+- [Define success criteria and evals](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
+agentId: a3ba2045a567dd0df (use SendMessage with to: 'a3ba2045a567dd0df' to continue this agent)
+<usage>total_tokens: 88869
+tool_uses: 27
+duration_ms: 207652</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

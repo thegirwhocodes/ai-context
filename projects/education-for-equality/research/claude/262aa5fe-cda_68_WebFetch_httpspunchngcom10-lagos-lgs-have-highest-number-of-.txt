@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://punchng.com/10-lagos-lgs-have-highest-number-of-out-of-school-children-l
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 08:45:38 UTC
+========================================================================
+
+URL: https://punchng.com/10-lagos-lgs-have-highest-number-of-out-of-school-children-lasubeb/
+Extraction prompt: Extract the names of all 10 Lagos Local Government Areas with the highest number of out-of-school children. Also extract any specific numbers, quotes from LASUBEB officials, and details about Project Zero.
+
+----------------------------------------
+
+# Lagos Out-of-School Children Report
+
+I've reviewed the provided web page content, but unfortunately **the actual article text with the specific information is not included** in the HTML you provided. The content shows primarily the page structure, CSS styling, and metadata (JSON schema, scripts, advertisements) rather than the main article body.
+
+To extract:
+- The names of the 10 Lagos Local Government Areas
+- Specific numbers of out-of-school children
+- Quotes from LASUBEB officials
+- Details about Project Zero
+
+I would need the actual article content between the article tags, which is not visible in this HTML dump.
+
+**What I can confirm from the metadata:**
+- Article headline: "10 Lagos LGs have highest number of out-of-school children – LASUBEB"
+- Source: Punch Newspapers
+- Author: Grace Edema
+- Published: September 24, 2021
+- Category: Education
+
+**Recommendation:** Please share the extracted text content of the article itself, and I'll provide the specific information you're looking for with proper attribution and character limits on quotes.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

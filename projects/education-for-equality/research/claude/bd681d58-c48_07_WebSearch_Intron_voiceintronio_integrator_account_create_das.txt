@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Intron voice.intron.io "integrator" account create dashboard API 403
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:47:12 UTC
+========================================================================
+
+Search query: Intron voice.intron.io "integrator" account create dashboard API 403
+
+----------------------------------------
+
+Web search results for query: "Intron voice.intron.io "integrator" account create dashboard API 403"
+
+Links: [{"title":"Introduction - Intron Voice API Documentation","url":"https://docs.voice.intron.io/"},{"title":"Intron","url":"https://voice.intron.io/admin/dashboard"},{"title":"Voice AI » Intron Voice AI","url":"https://www.intron.io/"},{"title":"GitHub - celigo/integrator-extension · GitHub","url":"https://github.com/celigo/integrator-extension"},{"title":"Intron - Docs","url":"https://voice.intron.io/docs/?section=transcribe-with-api-file-upload"},{"title":"Intron Voice AI (@IntronHealth) / X","url":"https://x.com/intronhealth?lang=en"},{"title":"API/Voicebot/Call","url":"https://voice.intron.io/docs/?section=voice-bots-call"},{"title":"Available integrator.io APIs – Celigo Help Center","url":"https://docs.celigo.com/hc/en-us/articles/8260227938971-Available-integrator-io-APIs"},{"title":"Health » Intron Voice AI","url":"https://www.intron.io/health/"},{"title":"Speech » Intron Voice AI","url":"https://www.intron.io/speech/"}]
+
+Based on the search results, I found information about both Intron Voice API and integrator.io, though the results don't directly address a 403 error specific to creating an "integrator" account on Intron's voice.intron.io dashboard.
+
+Here's what I found:
+
+**Intron Voice API:**
+You can navigate to voice.intron.io and sign in to your account, then go to your developers tab to find your API credentials. If you have questions or need assistance, the support team is available at voice@intron.io.
+
+**Regarding 403 Errors:**
+The search results include information about 403 errors in the context of integrator.io (a different service by Celigo). In that context, 403 means the connection went offline. However, this may not directly apply to your Intron Voice API situation.
+
+**For Your Specific Issue:**
+The search results don't contain specific troubleshooting information for a 403 error when trying to create an integrator account or access the Intron dashboard API. I'd recommend:
+
+1. Contacting Intron's support team at voice@intron.io
+2. Checking your account permissions and authentication credentials
+3. Verifying that your account has the necessary access level to create integrator accounts
+
+Would you like me to search for more specific information about Intron API error codes or account setup?
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

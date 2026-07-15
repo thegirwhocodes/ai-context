@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SignAll sign language translation technology 2025 2026
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:17:20 UTC
+========================================================================
+
+Search query: SignAll sign language translation technology 2025 2026
+
+----------------------------------------
+
+Web search results for query: "SignAll sign language translation technology 2025 2026"
+
+Links: [{"title":"Gallaudet partners with SignAll to develop automatic sign language translation software | Interpretation and Translation | Gallaudet University","url":"https://gallaudet.edu/interpretation-and-translation/gallaudet-partners-with-signall-to-develop-automatic-sign-language-translation-software/"},{"title":"SignAll - 2025 Company Profile, Team, Funding & Competitors - Tracxn","url":"https://tracxn.com/d/companies/signall/__FW-FKBtUf9uwc-NTC7IiXH0JciEvP-E3PSNanuZXA1E"},{"title":"SignAll Technologies","url":"https://www.accessibility.com/org-spotlight/business/signall-technologies"},{"title":"Everything You Need to Know About Machine Translation for Sign Language","url":"https://www.rws.com/blog/everything-you-need-to-know-about-machine-translation-for-sign-language/"},{"title":"SignAll is slowly but surely building a sign language translation platform | TechCrunch","url":"https://techcrunch.com/2018/02/14/signall-is-slowly-but-surely-building-a-sign-language-translation-platform/"},{"title":"AI Sign Language Translation: Ready for Education? - Artificial intelligence","url":"https://nationalcentreforai.jiscinvolve.org/wp/2025/09/16/ai-sign-language-translation-ready-for-education/"},{"title":"Best practices for sign language technology research | Universal Access in the Information Society | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s10209-023-01039-1"},{"title":"A Survey of Advancements in Real-Time Sign Language Translators: Integration with IoT Technology","url":"https://www.mdpi.com/2227-7080/11/4/83"},{"title":"Advancements in Sign Language Recognition: A Comprehensive Review and Future Prospects | IEEE Journals & Magazine | IEEE Xplore","url":"https://ieeexplore.ieee.org/document/10670380/"},{"title":"New Language Technologies for American Sign Language - USC Viterbi | School of Engineering","url":"https://viterbischool.usc.edu/news/2025/09/new-language-technologies-for-american-sign-language/"}]
+
+Based on the search results, here's what I found about SignAll sign language translation technology in 2025-2026:
+
+## Overview of SignAll
+
+SignAll is a developer of AI-based sign language translation solution for deaf and hard of hearing communities. SignAll is a seed company based in Budapest (Hungary), founded in 2016 by Zsolt Robotka and Janos Rovnyai.
+
+## Technology and Products
+
+The technology is built using AI and computer vision to recognize and translate sign language. It utilizes three webcams, a depth sensor, and a PC. The PC syncs up and processes the images in real-time, which are then transformed into grammatically correct, fully formed sentences by a natural language processing module.
+
+SignAll 1.0 is the first product in the world to allow for real-time communication between deaf signers and hearing speakers through automated American Sign Language (ASL) translation technology.
+
+## Recent Development Status (2025)
+
+As of June 2025 they rate their current system at tier 2, which they describe as foundational but they have plans to reach tier 5 (advanced) in December.
+
+## Products and Applications
+
+SignAll Learn Lab is an interactive, AI-powered workstation to learn and practice American Sign Language. The SignAll system can be used in business and education settings. The technology increases accessibility for deaf employees in workplaces and allows companies to offer better customer service for deaf customers.
+
+## Funding
+
+SignAll has raised a total funding of $3.63M over 2 rounds from 5 investors.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

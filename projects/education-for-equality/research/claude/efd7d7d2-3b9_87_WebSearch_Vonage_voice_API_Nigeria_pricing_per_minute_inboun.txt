@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vonage voice API Nigeria pricing per minute inbound outbound toll-free number
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:59:47 UTC
+========================================================================
+
+Search query: Vonage voice API Nigeria pricing per minute inbound outbound toll-free number
+
+----------------------------------------
+
+Web search results for query: "Vonage voice API Nigeria pricing per minute inbound outbound toll-free number"
+
+Links: [{"title":"How does voice pricing work for inbound and outbound calls? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204015203-How-does-voice-pricing-work-for-inbound-and-outbound-calls"},{"title":"Voice API Pricing | Vonage","url":"https://www.vonage.com/communications-apis/voice/pricing/"},{"title":"API Pricing: Understanding Vonage Communications API Prices | Vonage","url":"https://www.vonage.com/communications-apis/pricing/"},{"title":"Communications APIs | Vonage","url":"https://www.vonage.com/communications-apis/phone-numbers/pricing/"},{"title":"Toll-Free Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011767768-Toll-Free-Numbers-Features-Overview"},{"title":"International Calling for Business: Plans & Pricing | Vonage","url":"https://www.vonage.com/unified-communications/global/global-calling-plans/"},{"title":"Voice Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011761808-Voice-Numbers-Features-Overview"},{"title":"Vonage Pricing 2026: Plans, Hidden Costs & Real Expenses - Vonage | CheckThat.ai","url":"https://checkthat.ai/brands/vonage/pricing"},{"title":"Plans and Pricing | Vonage","url":"https://www.vonage.com/pricing/"},{"title":"What does it cost to receive an SMS? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115005898267-What-does-it-cost-to-receive-an-SMS"}]
+
+Based on the search results, I found general information about Vonage Voice API pricing, but the results don't contain specific Nigeria-only pricing details. Here's what I found:
+
+## General Voice API Pricing Information
+
+Voice pricing is quoted per minute, although charges apply per second for all countries. With the Voice API, you pay per minute for calls made and received via the API.
+
+## Inbound vs. Outbound Calls
+
+If you purchase a voice-enabled virtual number, the price of an inbound leg of a call is also billed per second, at the rate specified on the pricing page. The billing structure varies based on your setup—if forwarding to SIP, you only pay for the inbound leg from the caller to Vonage, but if forwarding to phone, you pay for both the inbound and outbound legs.
+
+## Toll-Free Numbers
+
+Toll-free numbers are inbound-only, unless stated otherwise. For toll-free and other non-fixed/mobile networks, the default price of €0.414 is charged (€0.01314 in the US).
+
+**For Nigeria-specific pricing:** The search results reference a global pricing sheet, but specific Nigeria rates are not displayed in these results. Vonage recommends checking their complete global pricing sheet (.xls) or contacting their sales team directly for current Nigeria-specific per-minute rates for inbound, outbound, and toll-free services.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

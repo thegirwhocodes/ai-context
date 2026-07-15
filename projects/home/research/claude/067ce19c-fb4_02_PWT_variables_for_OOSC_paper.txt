@@ -1,0 +1,40 @@
+========================================================================
+AGENT RESEARCH: PWT variables for OOSC paper
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 16:50:20 UTC
+========================================================================
+
+You are a research agent helping a Wesleyan Econ 349 student build an empirical paper on "The Economic Cost of Out-of-School Children in Nigeria."
+
+Catalog the most useful **Penn World Table 11.0** variables for this paper. PWT is the macro backbone — used for GDP, capital, labor, productivity. The student also needs to combine PWT with World Bank WDI for the OOSC variable (which PWT doesn't have).
+
+For each variable include:
+- Variable code (e.g., `rgdpna`, `hc`, `csh_i`)
+- Definition
+- Units
+- Why it matters for an OOSC-and-growth paper
+- Whether to use it as DV, key X, or control
+- For the human capital variable `hc` specifically — explain the construction (Barro-Lee average years of schooling × Mincerian return formula `hc = exp(φ(s))`), and why it captures STOCK not FLOW (which is the gap an OOSC paper fills)
+
+Then list the WDI indicators needed to complement PWT — at minimum:
+- `SE.PRM.UNER.ZS` (out-of-school primary)
+- Indicators for oil rents, investment share, trade openness, inflation, life expectancy, population growth, rule of law
+
+For each WDI indicator: code, full name, unit, source, expected coverage for Nigeria 1990-2023.
+
+Save your output to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/02_pwt_wdi_variables.md`.
+
+Use the official PWT page (rug.nl/ggdc/productivity/pwt/) and the World Bank WDI databank if you need to verify variable codes or coverage. Report back with a 200-word summary and confirm the file is saved.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a9019b71ede3e19eb (internal ID - do not mention to user. Use SendMessage with to: 'a9019b71ede3e19eb' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a9019b71ede3e19eb.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,134 @@
+========================================================================
+AGENT RESEARCH: Solve env + AT SMS key
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:23:02 UTC
+========================================================================
+
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app (Vercel project: naomi-ivies-projects/education-for-equality).
+
+PROBLEM: Two telephony env gaps:
+1. `AT_PHONE_NUMBER` (= "+2342017001459") is in local .env.local but NOT in Vercel env. It's used by app/api/sabi/at/events/route.ts to tell the child via post-call SMS which number to call back. Without it, the SMS says "the same number".
+2. The production Africa's Talking API key was never generated (AT_USERNAME is still "sandbox" locally; the production app is "EduForEquality"). The production key + username are needed ONLY for OUTBOUND SMS (session summary + practice question) and flash-callback — inbound calls work without them. AT's key generation was blocked earlier by a verification-email step.
+
+YOUR TASK: Read app/api/sabi/at/events/route.ts and lib/voice/sms.ts to confirm exactly where AT_PHONE_NUMBER, AT_USERNAME, AT_API_KEY are consumed and what breaks without them. Then produce:
+- The exact `vercel env add` CLI commands (and dashboard alternative) to add AT_PHONE_NUMBER=+2342017001459 to production, preview, development.
+- A precise, current step-by-step for generating the production AT API key in the Africa's Talking dashboard for app "Sabi" / team "EduForEquality" (use AT help docs — the generate-key flow involves a verification step; find the exact path and the email/verification gotcha). 
+- What env values to set in Vercel + .env.local once the key exists (AT_USERNAME=EduForEquality, AT_API_KEY=...).
+- Clear statement of what works WITHOUT the key (inbound calls) vs WITH it (outbound SMS), so priorities are clear for a pilot.
+
+OUTPUT (do NOT edit files, do NOT deploy, do NOT run vercel commands): the commands, the AT dashboard steps (with source URLs), and the env checklist. Do not invent the key value.
+
+----------------------------------------
+
+I have everything needed. The key finding: the dashboard URL pattern `account.africastalking.com/apps/<username>/settings/key` reveals the live username in the path (the sandbox version is `apps/sandbox/settings/key`). Here is the complete report.
+
+---
+
+## Confirmed code consumption of the three env vars
+
+**`AT_PHONE_NUMBER`** — consumed only in `app/api/sabi/at/events/route.ts` (lines 205-208):
+```ts
+const callbackNumber =
+  process.env.AT_PHONE_NUMBER ||
+  process.env.TWILIO_PHONE_NUMBER ||
+  "the same number";
+```
+It is passed to `sendSessionSummary(...)` and lands verbatim in the post-call SMS body (`lib/voice/sms.ts` line 104): `Call ${callbackNumber} tomorrow for your next lesson!`. Without it in Vercel (and with no `TWILIO_PHONE_NUMBER`), the SMS literally reads "Call the same number tomorrow…". Pure cosmetic/UX — nothing crashes. It does NOT affect inbound calls at all.
+
+**`AT_USERNAME` + `AT_API_KEY`** — consumed in `lib/voice/sms.ts`:
+- `getSMSProvider()` (lines 22-25): returns `"at"` **only if BOTH `AT_API_KEY` and `AT_USERNAME` are set**; otherwise falls back to `"twilio"`.
+- `sendATSMS()` (lines 30-50): sends `AT_API_KEY` as the `apiKey` header and `AT_USERNAME` in the form body to `https://api.africastalking.com/version1/messaging`. Also reads `AT_SENDER_ID` (optional `from`).
+
+So with `AT_USERNAME=sandbox` + a sandbox key in production, the provider check passes (both are set) and the code will POST to AT's **live** endpoint with sandbox credentials → AT rejects it (the `response.ok` check throws `AT SMS failed: ...`). But note: `sendSMS` wraps everything in try/catch (lines 60-85) and only `console.error`s — so a failed SMS never breaks the webhook or the call. The session is still saved to Supabase; only the outbound SMS silently fails.
+
+**Bottom line on what breaks:** Inbound voice calls (the actual tutoring) use none of these three. They only govern the two post-call SMS messages (session summary + practice question) and the callback-number string inside them.
+
+---
+
+## 1. Add `AT_PHONE_NUMBER` to Vercel
+
+CLI (run from `curriculum-app/`, one per environment — value is the same each time):
+```bash
+vercel env add AT_PHONE_NUMBER production
+vercel env add AT_PHONE_NUMBER preview
+vercel env add AT_PHONE_NUMBER development
+```
+Each prompts for the value — paste: `+2342017001459`
+
+Non-interactive alternative (pipe the value in):
+```bash
+printf '+2342017001459' | vercel env add AT_PHONE_NUMBER production
+printf '+2342017001459' | vercel env add AT_PHONE_NUMBER preview
+printf '+2342017001459' | vercel env add AT_PHONE_NUMBER development
+```
+If the project isn't linked in that shell, prefix with `vercel link` or add `--scope naomi-ivies-projects`. After adding, redeploy production for it to take effect (env changes don't apply to existing deployments).
+
+Dashboard alternative: Vercel → project `education-for-equality` → Settings → Environment Variables → Add New → Key `AT_PHONE_NUMBER`, Value `+2342017001459`, check Production + Preview + Development → Save.
+
+---
+
+## 2. Generating the production AT API key
+
+Per AT's official help article (steps are for an account already in a **live/production** app dashboard, not sandbox):
+
+1. Log into `account.africastalking.com`. You're in **Sandbox** by default. To leave sandbox, select your **live app** — on the dashboard there's an app switcher; pick the production app (the one tied to team/app "EduForEquality") instead of "Go To Sandbox App." (Sandbox lives at `account.africastalking.com/apps/sandbox/...`; the live app sits at `account.africastalking.com/apps/<your-username>/...`.)
+2. In the live app: **Settings** (left-hand menu).
+3. Click **API Key**.
+4. **Enter your account password** and click **Generate**. ← this is the gatekeeping step.
+5. **Copy the key immediately** and store it somewhere safe — *"you will not see it from the dashboard on subsequent visits"* (it's shown exactly once; regenerating invalidates the old one).
+6. **Wait ~3 minutes before testing** the new key — AT documents a short propagation delay.
+
+The verification/email gotcha that blocked this earlier: AT requires the **account to be fully verified** (email confirmation, and for live SMS in Nigeria, completion of their KYC / sender-ID + app activation) before the live API Key / Generate flow is usable. If "Generate" is greyed out or the live app isn't selectable, the account verification email hasn't been actioned — find AT's confirmation email (check spam) and complete verification, or contact `info@africastalking.com` / your AT account rep, before retrying step 4. There is no separate "email-verify the key" click; the verification is at the account/app level and unblocks the password-and-Generate button.
+
+Username gotcha (important): the production `AT_USERNAME` is the **account username you chose when creating the application — NOT the app name**. AT's docs are explicit: *"This is not to be confused with the APP name."* So `EduForEquality` may be the app *name* while the actual auth username is something different. Read it off the dashboard: it's the path segment in the live app URL `account.africastalking.com/apps/<username>/settings/key`, and shown on the dashboard next to the app. Confirm that the username segment really is `EduForEquality` before committing it; if the URL shows a different slug, use that as `AT_USERNAME`.
+
+Sources:
+- [How do I generate an API Key? — AT Help](https://help.africastalking.com/en/articles/1361037-how-do-i-generate-an-api-key)
+- [What is my Username and API Key? — AT Help](https://help.africastalking.com/en/articles/2249244-what-is-my-username-and-api-key)
+- [AT Authentication docs](https://developers.africastalking.com/docs/authentication)
+
+---
+
+## 3. Env values to set once the key exists
+
+Set in **both** Vercel (production at minimum; preview/dev if you want SMS there) and `.env.local`:
+
+| Key | Value | Notes |
+|---|---|---|
+| `AT_USERNAME` | `EduForEquality` (verify against dashboard URL slug first) | currently `sandbox` locally — must change |
+| `AT_API_KEY` | *(the live key from step 4 — do not invent)* | currently a sandbox key locally — must replace |
+| `AT_SENDER_ID` | keep existing if it's an approved live sender ID; else leave blank | optional `from`; AT may require an approved sender ID for live Nigerian SMS |
+| `AT_PHONE_NUMBER` | `+2342017001459` | already local; add to Vercel per section 1 |
+
+CLI for the two new live values (production shown; repeat for preview/development as desired):
+```bash
+vercel env rm AT_USERNAME production   # remove old "sandbox" value first if present
+vercel env add AT_USERNAME production   # enter: EduForEquality
+vercel env add AT_API_KEY production    # paste the live key
+```
+Locally, edit `.env.local` lines 2 and 4 (`AT_API_KEY`, `AT_USERNAME`) to the live values. Redeploy production afterward.
+
+---
+
+## 4. Works WITHOUT the key vs WITH it — pilot priority
+
+**Works WITHOUT any production AT key (inbound is fully functional):**
+- A child dialing the AT number and doing the entire voice tutoring lesson (inbound call handling, the Sabi conversation, Supabase logging of the session, Claude analysis, student-stats/module-advancement updates). None of this touches `AT_USERNAME`/`AT_API_KEY`/`AT_PHONE_NUMBER`.
+
+**Requires the production key (outbound only):**
+- Post-call **session-summary SMS** ("Great job today…")
+- **Practice-question SMS** + the SMS-reply answer-checking loop
+- Any flash/callback and reminder SMS
+- The summary SMS's callback-number string — and note `AT_PHONE_NUMBER` (section 1) is needed for that string to read correctly even before the key exists, but the SMS won't actually send until the live key is in place.
+
+**Priority for the pilot:** The core learning experience (inbound calls) needs nothing here — it can run today. `AT_PHONE_NUMBER` is a 2-minute, free, safe add (do it now). The production key is the gate for the SMS reinforcement layer (summaries + practice). It's valuable but secondary, and it's currently blocked on AT account/email verification — so treat it as a fast-follow: complete AT verification → generate key → set the four env values → redeploy. Until then SMS fails silently without affecting calls.
+
+One caveat worth flagging: with `AT_USERNAME=sandbox` + a sandbox key currently in **local** env, `getSMSProvider()` returns `"at"` and tries the live AT endpoint with sandbox creds (silently failing). If you ever run the events route locally and want SMS to fall back to Twilio instead, you'd need to unset one of the two AT vars — but for production the right fix is just installing the real live credentials.
+agentId: a8a0ed809f20d1252 (use SendMessage with to: 'a8a0ed809f20d1252' to continue this agent)
+<usage>subagent_tokens: 37234
+tool_uses: 10
+duration_ms: 97278</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: African health agriculture IVR hotline spoken number input keypad DTMF accuracy 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:53 UTC
+========================================================================
+
+Search query: African health agriculture IVR hotline spoken number input keypad DTMF accuracy low literacy design
+
+----------------------------------------
+
+Web search results for query: "African health agriculture IVR hotline spoken number input keypad DTMF accuracy low literacy design"
+
+Links: [{"title":"(PDF) Designing interactive voice response (IVR) interfaces: Localisation for low literacy users","url":"https://www.researchgate.net/publication/40904086_Designing_interactive_voice_response_IVR_interfaces_Localisation_for_low_literacy_users"},{"title":"A novel automated participant-recorded dietary data collection method using low-cost mobile phones and Interactive Voice Response (IVR) with low-literacy women: a validation study in rural Uganda","url":"https://www.medrxiv.org/content/10.1101/2025.08.19.25333742.full.pdf"},{"title":"Full article: Evaluating a phone-based Interactive Voice Response system for reducing misinformation and improving malaria literacy","url":"https://www.tandfonline.com/doi/full/10.1080/02681102.2024.2414193"},{"title":"Digital Extension Interactive Voice Response (IVR) mLearning: Lessons Learnt From Uganda Pig Value Chain - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8273433/"},{"title":"Frontiers | Digital Extension Interactive Voice Response (IVR) mLearning: Lessons Learnt From Uganda Pig Value Chain","url":"https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.611263/full"},{"title":"Voice Surveys: When to Use IVR Feedback Collection","url":"https://arkesel.com/voice-surveys-ivr-feedback-collection/"},{"title":"What is DTMF? Dual-Tone Multi-Frequency Explained","url":"https://twixor.ai/blog/what-is-dtmf/"},{"title":"What is IVR Voice Technology? A Step-By-Step Explanation - Voice.ai","url":"https://voice.ai/hub/ai-voice-agents/ivr-voice/"}]
+
+I found relevant research on IVR systems for African health and agriculture. Here are the key findings:
+
+## IVR Applications in Africa
+
+The 3-2-1 Service is an IVR system that allows users to interact with a company's host system using a telephone keypad and a toll-free number, offering automated mobile hotline services providing information in six languages on development topics including health and agriculture.
+
+IVR is a telephony system that interacts with callers, records information, and directs calls to an appropriate database of prerecorded information in voice form, and can accept telephone input through touch-tone keypad selection.
+
+## DTMF Accuracy and Design Challenges
+
+Telephone-based information services commonly rely on push-button (DTMF) input, primarily because high accuracy automatic speech recognition (ASR), essential for end-to-end spoken interaction, is not available for several languages in developing regions. High accuracy ASR alone is not sufficient for effective, inclusive speech interfaces, with existing services showing low task success rates despite using very high accuracy ASR.
+
+## Low Literacy Design
+
+In one Northern Uganda study, 74% of low-literacy rural women completed a long IVR survey. Participants preferred local language and voice interfaces, highlighting the potential of local language IVR to effectively boost health literacy in underserved areas.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

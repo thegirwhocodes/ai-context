@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs website product structure "for developers" "for enterprises" voices a
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:33:19 UTC
+========================================================================
+
+Search query: ElevenLabs website product structure "for developers" "for enterprises" voices agents how organized 2026
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs website product structure "for developers" "for enterprises" voices agents how organized 2026"
+
+Links: [{"title":"Free AI Voice Generator & Voice Agents Platform | ElevenLabs","url":"https://elevenlabs.io/"},{"title":"ElevenLabs - Wikipedia","url":"https://en.wikipedia.org/wiki/ElevenLabs"},{"title":"ElevenLabs Reviews 2026: Details, Pricing, & Features | G2","url":"https://www.g2.com/products/elevenlabsio/reviews"},{"title":"ElevenLabs in 2026: The Complete Guide to v3, Agents, Music and Scribe | The AI Entrepreneurs","url":"https://medium.com/the-ai-entrepreneurs/elevenlabs-in-2026-the-complete-guide-to-v3-agents-music-and-scribe-7f3c3bdfd201"},{"title":"ElevenLabs AI Voice Guide 2026: v3, Agents, Music and Scribe - STANDOUT DIGITAL","url":"https://standout.digital/post/elevenlabs-in-2026-the-complete-guide-to-v3-agents-music-and-scribe/"},{"title":"Enterprise AI Finds its Voice: ElevenLabs and IBM Bring Premium Voice Capabilities to Agentic AI","url":"https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai"},{"title":"Voice agents and Conversational AI: 2026 developer trends","url":"https://elevenlabs.io/blog/voice-agents-and-conversational-ai-new-developer-trends-2025"},{"title":"AI Agent Builder - Voice-First Platform for Developers","url":"https://elevenlabs.io/agents/ai-agent-builder"},{"title":"AI research and products that reimagine human-technology interaction","url":"https://elevenlabs.io/about"},{"title":"Build Conversational AI in minutes | Voice & Chat platform","url":"https://elevenlabs.io/conversational-ai"}]
+
+Based on the search results, here's how ElevenLabs organizes its website and product structure as of 2026:
+
+## Core Product Organization
+
+ElevenLabs is organized into three core pillars:
+
+1. **ElevenAgents** - A complete platform for deploying emotionally intelligent, conversational AI that can "see," "hear," and perform real-world tasks. It allows developers and enterprises to deploy voice-native AI agents that can reason, converse, and complete tasks.
+
+2. **ElevenCreative** - An end-to-end studio for AI-generated media, including ultra-realistic speech, studio-grade music, and sound effects. It includes Voice v3, Scribe v2 for speech-to-text, Voice Design and Voice Cloning, Voice Isolator and Voice Changer, plus AI Sound Effects, AI Music, and Image and Video generation, with production tools like Studio, Dubbing, Voice Library, and Productions.
+
+3. **ElevenAPI** - A high-performance developer layer providing the infrastructure for real-time transcription (Scribe v2), low-latency synthesis, and multimodal workflows. It wraps all of this in production-grade infrastructure, with Python and TypeScript SDKs, streaming endpoints, and support for SOC 2, HIPAA, GDPR, and EU data residency / zero-retention modes.
+
+## Voice Library Structure
+
+Voices are organized with curated collections including purpose-built groups such as Announcers, Radio Hosts, and Support, making it easier for creators to select appropriate voices for different use cases.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

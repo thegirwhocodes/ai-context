@@ -1,0 +1,50 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude API Anthropic pricing per token 2026 Haiku Sonnet cost per call education
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 03:21:50 UTC
+========================================================================
+
+Search query: Claude API Anthropic pricing per token 2026 Haiku Sonnet cost per call education
+
+----------------------------------------
+
+Web search results for query: "Claude API Anthropic pricing per token 2026 Haiku Sonnet cost per call education"
+
+Links: [{"title":"Pricing - Claude API Docs","url":"https://platform.claude.com/docs/en/about-claude/pricing"},{"title":"Claude API Pricing 2026: Full Anthropic Cost Breakdown","url":"https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration"},{"title":"Anthropic Claude API Pricing 2026 - Silicon Data — GPU Performance Data for Companies","url":"https://www.silicondata.com/use-cases/anthropic-claude-api-pricing-2026/"},{"title":"Claude Pricing Explained: Subscription Plans & API Costs | IntuitionLabs","url":"https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"},{"title":"Claude API Pricing Guide 2026: Complete Cost Breakdown Per Million Tokens | AI Free API","url":"https://www.aifreeapi.com/en/posts/claude-api-pricing-per-million-tokens"},{"title":"Claude Pricing in 2026 for Individuals, Organizations, and Developers","url":"https://www.finout.io/blog/claude-pricing-in-2026-for-individuals-organizations-and-developers"},{"title":"Claude API Pricing Calculator & Cost Guide (Mar 2026)","url":"https://costgoat.com/pricing/claude-api"},{"title":"Anthropic Claude Pricing: Every Plan and API Cost Explained (2026) - PanelsAI","url":"https://panelsai.com/anthropic-claude-pricing/"},{"title":"Anthropic makes a pricing change that matters for Claude's longest prompts - The New Stack","url":"https://thenewstack.io/claude-million-token-pricing/"},{"title":"Claude AI Pricing 2026: The Ultimate Guide to Plans, API Costs, and Limits","url":"https://www.glbgpt.com/hub/claude-ai-pricing-2026-the-ultimate-guide-to-plans-api-costs-and-limits/"}]
+
+Based on the search results, here's a comprehensive overview of Claude API pricing for 2026:
+
+## Current Claude API Per-Token Pricing (2026)
+
+Anthropic offers three recommended tiers in 2026: Haiku 4.5 ($1/$5), Sonnet 4.6 ($3/$15), and Opus 4.6 ($5/$25) per million input/output tokens.
+
+### Detailed Model Pricing:
+
+- **Claude Haiku 4.5**: $1 input / $5 output per million tokens
+- **Claude Sonnet 4.6**: $3 per million input tokens and $15 per million output tokens
+- **Claude Opus 4.6**: $5 per million input tokens and $25 per million output tokens
+
+## Key Pricing Features
+
+**Context Window Pricing**: Both 4.6 models include 1M context at standard pricing.
+
+**Cost Optimization Options**:
+- The Batch API allows asynchronous processing of large volumes of requests with a 50% discount on both input and output tokens.
+- A cache hit costs 10% of the standard input price, which means caching pays off after just one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write).
+
+## Education Pricing
+
+Anthropic also provides an Education plan with institution-wide licensing and research tools.
+
+## Legacy Models
+
+Legacy models range from Haiku 3 ($0.25/$1.25) to Opus 4.1 ($15/$75).
+
+For the most current and detailed pricing information, please visit claude.com/pricing.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.kaggle.com/datasets/aiolapo/africannigerian-accent-speech-data-aasd
+Session: 3754718b-4c14-45a6-a55b-f8ad00fbff62
+Time: 2026-07-14 23:42:36 UTC
+========================================================================
+
+URL: https://www.kaggle.com/datasets/aiolapo/africannigerian-accent-speech-data-aasd
+Extraction prompt: What is this dataset? How many hours of audio? How many speakers? How many samples/utterances? What is the sample rate? Is it phone/telephony audio or studio? Adult or children? Nigerian languages included (Yoruba/Igbo/Hausa/Pidgin/English)? What is the license? How is it structured (WAV+transcripts, TSV manifest)? File size total?
+
+----------------------------------------
+
+I can only see the title "African(Nigerian) Accent Speech Data AASD | Kaggle" from the content provided. This isn't sufficient to answer your detailed questions about:
+
+- Dataset description and purpose
+- Audio duration
+- Number of speakers and utterances
+- Technical specifications (sample rate, audio quality)
+- Demographic details (age groups)
+- Languages included
+- Licensing information
+- File structure and total size
+
+To get accurate information about this dataset, you would need to visit the actual Kaggle dataset page, where these details are typically documented in the dataset description, metadata section, and any accompanying README files.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

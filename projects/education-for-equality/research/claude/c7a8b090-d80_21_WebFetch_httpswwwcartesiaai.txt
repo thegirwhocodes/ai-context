@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.cartesia.ai
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:24:16 UTC
+========================================================================
+
+URL: https://www.cartesia.ai
+Extraction prompt: Describe the visual design in extreme detail: exact colors/hex codes visible, layout structure, typography (font sizes, weights, families), animations/transitions/moving parts, gradients, glows, particle effects, scroll animations, hover states, card designs, spacing patterns, how sections transition into each other, any floating elements, any noise/grain textures, any glassmorphism, any gradient text, button styles, what makes it feel premium and high-quality. Focus especially on any animated or moving elements.
+
+----------------------------------------
+
+# Cartesia Sonic-3 Visual Design Analysis
+
+Based on the provided web content, I can identify the following design elements:
+
+## Typography & Layout
+The page uses a hierarchical structure with prominent headline text ("Voice AI like you've never heard before") paired with supporting descriptive copy. Navigation appears clean and minimal at the top.
+
+## Color & Styling
+While specific hex codes aren't visible in the text content provided, the design emphasizes:
+- High contrast between text and backgrounds for readability
+- Strategic use of white space for premium feel
+- Numbered callouts (1-5, [01]) that suggest visual emphasis and hierarchy
+
+## Interactive Elements
+The page features repeated call-to-action buttons ("Try for free," "Contact Sales," "Build with Sonic-3") positioned throughout, suggesting strategic placement for conversion optimization.
+
+## Content Sections
+Design likely uses card-based layouts for:
+- Customer testimonials (repeated in carousel format)
+- Industry use cases (Healthcare, Concierge, Customer Support, etc.)
+- Language support (organized by geographic region)
+- Developer tools (API, SDK, Playground)
+
+## Premium Indicators
+Enterprise badges prominently display "SOC 2 Type II," "HIPAA," and "PCI Level 1" certifications, suggesting trust-focused design with emphasis on security credentials.
+
+The structure prioritizes demonstrating product capability through audio examples and customer validation rather than elaborate visual effects.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

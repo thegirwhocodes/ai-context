@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigeria USSD gateway provider OTP push bank authentication MTN Airtel Glo aggreg
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:37:54 UTC
+========================================================================
+
+Search query: Nigeria USSD gateway provider OTP push bank authentication MTN Airtel Glo aggregator API 2024 2025
+
+----------------------------------------
+
+Web search results for query: "Nigeria USSD gateway provider OTP push bank authentication MTN Airtel Glo aggregator API 2024 2025"
+
+Links: [{"title":"USSD API - Mobile Apps Accessible Everywhere","url":"https://africastalking.com/ussd"},{"title":"VTU API for Airtime, Data, Cable TV Subscription, Electricity Bills Payment, Bet Accounts Funding & Recharge Cards Printing in Nigeria (MTN, Glo, Airtel, T2mobile, PHED, DStv, GOtv, Startimes, & 1xBet, etc) - VTU.ng","url":"https://vtu.ng/api/"},{"title":"Securing User Authentication: A Practical Guide to SMS OTP - DEV Community","url":"https://dev.to/charlesmudy/securing-user-authentication-a-practical-guide-to-sms-otp-4p31"},{"title":"Bulk SMS Nigeria | Best SMS Gateway & API Provider","url":"https://www.esmsafrica.io/"},{"title":"GitHub - cowriesys/airtime: High performance airtime/data topup API for Nigerian networks Airtel, Glo, 9Mobile and MTN","url":"https://github.com/cowriesys/airtime"},{"title":"MTN Developer Portal","url":"https://developers.mtn.com/"},{"title":"Leading SMS Gateway Provider in Nigeria | Bulk SMS API – EasySendSMS","url":"https://www.easysendsms.com/gateway/Nigeria"},{"title":"Full List of Glo USSD Code for Transfer, Airtime, OTP & More","url":"https://logicsecurity.ng/full-list-of-glo-ussd-code-for-transfer-airtime-otp-more/"},{"title":"MTN USSD interface","url":"https://developers.mtn.com/products/ussd"},{"title":"Which companies provide USSD gateway services in Nigeria? - Quora","url":"https://www.quora.com/Which-companies-provide-USSD-gateway-services-in-Nigeria"}]
+
+Based on the search results, here's information about Nigeria's USSD gateway providers, OTP authentication, and API aggregators for 2024-2025:
+
+## USSD Gateway Providers
+
+All Nigerian telcos—MTN, Glo, Airtel, and Etisalat—provide USSD gateways, though getting a USSD short code service from telcos is complex; most businesses work with VAS service providers instead.
+
+The MTN Developer Platform is a single point of access to MTN services for partners, startups, and enterprises.
+
+## OTP and Authentication Services
+
+SMS gateway providers like Yournotify, Africa's Talking, and Infobip are relevant in Nigeria for sending OTP via SMS. eSMS Africa provides direct operator bulk SMS, secure OTP authentication, SMPP connectivity, and SMS APIs across Nigeria with a 99.9% delivery rate.
+
+EasySendSMS provides direct access to Nigeria's top mobile networks including MTN Nigeria, Glo Mobile, Airtel Nigeria, and 9mobile.
+
+## API Aggregators and VTU Services
+
+VTU.ng triggers USSD commands and dispatches SMS, linking straight to telecom APIs without middlemen, with cable TV and electricity services connecting directly to provider systems and leveraging bank APIs.
+
+Cowrie Integrated Systems Limited is an NCC licensed Value Added Service provider offering a REST API that enables developers to dispense airtime, data plans, and logical PINs for Nigerian networks (Airtel, Glo, 9Mobile, and MTN).
+
+## USSD Code Standardization (2025)
+
+As of 2025, Glo, MTN, Airtel, and 9mobile all use the same standardized USSD codes following a framework introduced by the Nigerian Communications Commission (NCC).
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

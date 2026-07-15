@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Ethan Perez Anthropic researcher alignment red teaming
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:08:37 UTC
+========================================================================
+
+Search query: Ethan Perez Anthropic researcher alignment red teaming
+
+----------------------------------------
+
+Web search results for query: "Ethan Perez Anthropic researcher alignment red teaming"
+
+Links: [{"title":"Ethan Perez","url":"https://www.lesswrong.com/users/ethan-perez"},{"title":"Ethan Perez","url":"https://www.alignmentforum.org/users/ethan-perez"},{"title":"Ethan Perez on Selecting Alignment Research Projects (ft. Mikita Balesni & Henry Sleight) by The Inside View","url":"https://creators.spotify.com/pod/profile/inside-view/episodes/Ethan-Perez-on-Selecting-Alignment-Research-Projects-ft--Mikita-Balesni--Henry-Sleight-e2hkb38"},{"title":"Ethan Perez on inverse scaling - The Inside View","url":"https://theinsideview.ai/perez"},{"title":"Ethan Perez","url":"https://ethanperez.net/"},{"title":"Ethan Perez–Inverse Scaling, Red Teaming - YouTube","url":"https://www.youtube.com/watch?v=TjWiaUMMh6g"},{"title":"Ethan Perez–Inverse Scaling, Language Feedback, Red Teaming by The Inside View","url":"https://podcasters.spotify.com/pod/show/inside-view/episodes/Ethan-PerezInverse-Scaling--Language-Feedback--Red-Teaming-e1mt16a"},{"title":"Ethan Perez - LessWrong 2.0 viewer","url":"https://www.greaterwrong.com/users/ethan-perez"},{"title":"MATS Mentors","url":"https://www.matsprogram.org/mentors"},{"title":"[2202.03286] Red Teaming Language Models with Language Models","url":"https://arxiv.org/abs/2202.03286"}]
+
+Based on the search results, here's what I found about Ethan Perez and his work at Anthropic:
+
+## Overview
+
+Ethan Perez is a research lead at Anthropic doing safety research on language models. His goal is to reduce the risk of catastrophic outcomes from advanced machine learning systems.
+
+## Red Teaming Work
+
+His past work includes introducing automated red teaming of language models, showing the usefulness of AI safety via debate, demonstrating that chain-of-thought can be unfaithful, discovering sycophancy in language models, initiating the model organisms of misalignment agenda, and developing constitutional classifiers and showing they can be used to obtain very high levels of adversarial robustness to jailbreaks.
+
+Specifically, he automatically found cases where a target language model behaves in a harmful way by generating test cases ("red teaming") using another language model, uncovering tens of thousands of offensive replies in a 280B parameter language model chatbot.
+
+## Recent Research
+
+He leads the adversarial robustness team at Anthropic, where he's hoping to reduce existential risks from AI systems. He received a best paper award at ICML 2024 for his work showing that debating with more persuasive LLMs leads to more truthful answers.
+
+## Background
+
+He received his PhD from NYU under the supervision of Kyunghyun Cho and Douwe Kiela and funded by NSF and Open Philanthropy, and previously spent time at DeepMind, Facebook AI Research, Montreal Institute for Learning Algorithms, and Google.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/elevenlabs/elevenlabs-docs/blob/main/fern/conversational-ai/p
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 09:47:57 UTC
+========================================================================
+
+URL: https://github.com/elevenlabs/elevenlabs-docs/blob/main/fern/conversational-ai/pages/customization/custom-llm/overview.mdx?plain=1
+Extraction prompt: Extract the complete raw markdown documentation for ElevenLabs custom LLM. I need the exact API format - request body, response format, headers, any examples of how to build a custom LLM endpoint.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,187 @@
+========================================================================
+AGENT RESEARCH: US startup contractor agreements
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 17:26:25 UTC
+========================================================================
+
+Research how top startups and the standard US startup-law playbook structure agreements for their earliest operational hires and independent contractors. I need this to benchmark a real independent-contractor agreement, so be concrete and exhaustive.
+
+Cover:
+- The canonical documents YC / Stripe Atlas / Clerky / Cooley GO / Gunderson templates use for contractors and first hires: Independent Contractor Agreement, Consulting Agreement, PIIA / CIIA (Proprietary Information and Inventions Assignment), Confidentiality/NDA, Advisor (FAST) agreement. What's in each and why.
+- The MUST-HAVE clauses top startups never omit in a contractor agreement, with what each actually says: IP assignment (present assignment "hereby assigns" language, work-made-for-hire + assignment backstop, moral-rights waiver, assistance/further-assurances, power of attorney), confidentiality, return of materials, contractor-status/no-employee, no-conflict, non-solicit, indemnification, limitation of liability, governing law, entire-agreement, termination.
+- Why IP assignment is the single most important clause for a startup (investor due-diligence "IP chain of title", what breaks fundraising if a contractor didn't assign).
+- How early hires are compensated: cash vs equity vs stipend, deferred comp, how "first employee/contractor before incorporation" is handled, founder advisor equity ranges (FAST), what's typical for a sub-$5k pilot engagement.
+- Contractor vs employee classification basics in the US (IRS common-law / 20-factor test, behavioral/financial/relationship control) and the clauses startups use to support contractor status.
+- Common mistakes startups make in these agreements.
+
+Return AT LEAST 90% of the substantive content you find — every clause name, the actual language patterns, every statute/test, every percentage or dollar figure, every real company/template example. Do NOT summarize or give "key takeaways" only. Write it as a thorough, detailed reference someone could draft a contract from. Cite sources inline (URLs).
+
+----------------------------------------
+
+I now have comprehensive, verified coverage across all six areas. Synthesizing the final reference report.
+
+---
+
+# How Top Startups & the US Startup-Law Playbook Structure Agreements for Earliest Hires & Contractors
+
+A drafting-grade reference. Every clause name, language pattern, statute, test, and figure below is sourced inline.
+
+---
+
+## 1. The canonical documents (YC / Stripe Atlas / Clerky / Cooley GO / Gunderson playbook)
+
+The standard startup-formation package — whether assembled by **Stripe Atlas** or **Clerky** (Clerky was built by two startup attorneys to deliver "attorney-quality documents without paying attorney prices") — bundles: Certificate of Incorporation, Bylaws, Written Consent of Incorporator, Board Consent, **founder stock purchase agreements with vesting**, **IP assignment (CIIAA)**, and **83(b) election forms** ([Rho](https://www.rho.co/blog/stripe-atlas-vs-clerky); [Medium/Chowhan](https://medium.com/all-things-cloud/incorporating-a-startup-delaware-c-corp-atlas-vs-clerky-and-the-checklist-that-saves-you-later-4564c2712924)).
+
+The five canonical instruments for hires/contractors:
+
+**A. Independent Contractor Agreement (ICA) / Consulting Agreement.** The master services contract for a non-employee. Covers scope/SOW, fees, contractor-status, IP assignment, confidentiality, indemnification, limitation of liability, term/termination, governing law. For contractors, the IP assignment is *folded into* the consulting agreement, or a separate **"Contractor IP Agreement"** is signed alongside it ([Cooley GO search snippet](https://www.cooleygo.com/protecting-employee-generated-intellectual-property/); [Omnivoo](https://omnivoo.com/blog/independent-contractor-agreement-template-us-companies-2026)).
+
+**B. PIIA / CIIA / CIIAA (Proprietary Information and Inventions Assignment / Confidential Information and Inventions Assignment Agreement).** Cooley GO calls these **CIIAAs** (also "PIIAAs") and instructs that "all employees should be expected to sign a confidential information and inventions assignment agreement as a condition of employment." It must answer two questions: "(1) What type of confidential information, inventions and intellectual property does the agreement cover, and (2) What are the employee's obligations and the employer's rights with respect to such information and IP" ([Cooley GO glossary/snippet](https://www.cooleygo.com/protecting-employee-generated-intellectual-property/)). **Contractors sign a modified version** ([Cooley GO](https://www.cooleygo.com/protecting-employee-generated-intellectual-property/)). A PIIA must accomplish three things: **assign IP ownership, protect confidentiality, and require disclosure of preexisting work** ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)).
+
+**C. Confidentiality Agreement / NDA.** Standalone or embedded. Protects trade secrets and proprietary info disclosed during engagement; survives termination.
+
+**D. Advisor Agreement (FAST — Founder/Advisor Standard Template).** Developed by the **Founder Institute**; "used by tens of thousands of entrepreneurs and advisors per year," trading advice for a standardized equity grant. It is **one page**, "just a signature and a checkbox" ([fi.co/fast](https://fi.co/fast); [fi.co insight](https://fi.co/insight/the-founder-institute-s-standard-advisor-agreement-for-startups-fast)). Details in §4.
+
+**E. Founder-level IP capture at formation.** Stripe Atlas templates "include IP assignment in the **Common Stock Purchase Agreement** (to cover IP that predates the company) **and** a **CIIAA** for IP created during employment with the company." For founders buying shares at incorporation, consideration is "a nominal amount of money (par value times shares received) **or an assignment of pre-incorporation IP**" ([Stripe — assign IP](https://stripe.com/resources/more/how-to-assign-intellectual-property-to-a-business); [Stripe equity guide](https://stripe.com/guides/atlas/equity)).
+
+YC maintains a **Series A diligence checklist** ("all the pieces of information you'll need ready once you sign a term sheet") and free template **SaaS Sales Agreement** (since 2015) and **Series A term sheet**; the diligence checklist is what investors run consulting/IP agreements against ([YC library](https://www.ycombinator.com/library/3h-series-a-diligence-checklist); [YC sales agreement](https://www.ycombinator.com/sales_agreement)).
+
+---
+
+## 2. The MUST-HAVE clauses, with actual language patterns
+
+### IP assignment (the keystone — see §3 for why)
+Top agreements use a **belt-and-suspenders** structure:
+
+1. **Work-made-for-hire first.** "All deliverables prepared by Contractor under this Agreement that qualify as a 'work made for hire' within the meaning of **17 U.S.C. § 101** are works made for hire owned by Company." ([Law Insider clauses](https://www.lawinsider.com/clause/work-made-for-hire); [FBM](https://www.fbm.com/publications/employment-law-issues-to-consider-before-including-work-made-for-hire-clauses-in-contractor-agreements/))
+
+2. **Present-assignment backstop** (because WMFH categories are narrow — see §3): "To the extent any deliverable is not a work made for hire, **Contractor hereby irrevocably assigns** to Company all right, title, and interest in and to the deliverable, including all copyrights, patent rights, trade secrets, **and moral rights**, effective upon creation." A shorter canonical form: "Contractor **hereby irrevocably assigns** to Client all right, title, and interest in and to the Work Product, including all intellectual property rights therein." ([WebSearch synthesis of templates](https://smartsmssolutions.com/resources/blog/business/independent-contractor-agreement-template-ip-confidentiality-indemnity); [Omnivoo](https://omnivoo.com/blog/independent-contractor-agreement-template-us-companies-2026))
+
+   The verb tense is load-bearing. **Use "hereby assigns" / "does hereby grant and assign"** — a *present* assignment that transfers title immediately. **Avoid** "shall be and remain the exclusive property of," "agrees to assign," and "will assign," which are mere future promises requiring a later separate document ([Waltmire](https://www.waltmire.com/2023/01/27/language-for-assigning-patents-and-patentable-inventions-in-employment-or-consulting-agreements/)). See *Stanford v. Roche* in §3.
+
+3. **Moral-rights waiver:** "To the extent permitted by applicable law, Contractor **waives any moral rights** in the Work Product, including rights of attribution and integrity." ([template synthesis](https://smartsmssolutions.com/resources/blog/business/independent-contractor-agreement-template-ip-confidentiality-indemnity); [OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/) — IC must "assign all of its rights (including moral rights)")
+
+4. **Further-assurances / assistance + cost-bearing:** "For patentable inventions, add a covenant that the contractor will **execute further documents at the company's expense** to perfect or record the assignment." ([WebSearch synthesis](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/))
+
+5. **Power of attorney (irrevocable):** appoints the company as the contractor's attorney-in-fact to sign assignment/perfection documents if the contractor is "unavailable or uncooperative" — the practical reason a present assignment plus POA matters ([Waltmire](https://www.waltmire.com/2023/01/27/language-for-assigning-patents-and-patentable-inventions-in-employment-or-consulting-agreements/)). (Note: the Waltmire piece confirms the rationale; it does not print POA boilerplate.)
+
+6. **Disclosure + prior-inventions carve-out** (in PIIA/CIIA): contractor lists pre-existing IP that is excluded, and grants the company a license to any of it embedded in deliverables. IC "retains rights to pre-owned materials; company receives limited license" ([OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/)). For employees in California, the carve-out is statutorily required — see §5.
+
+### Confidentiality
+Defines Confidential Information, restricts use to performing the work, survives termination. A PIIA bundles this with IP assignment ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)).
+
+### Return of materials
+On termination, contractor returns/destroys all company property and confidential materials. Typically named in the **survival clause**.
+
+### Contractor-status / no-employee
+Explicitly states the parties are independent contractors, no employer-employee/partnership/agency relationship, contractor responsible for own taxes, no entitlement to employee benefits. (See §5 for the clauses that *support* this status.)
+
+### No-conflict / no prior obligations
+Contractor warrants the work is **original, does not infringe third-party rights, and that the contractor has authority to enter the agreement** and is not bound by conflicting obligations ([OutsideGC clause summary](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/)). Startups must also diligence each new hire's **prior** PIIAs/consulting/employment agreements, since "university IP policies, hospital consulting agreements, and corporate PIIAs each use different language" ([California 2870 search synthesis](https://www.mondaq.com/unitedstates/trade-secrets/1778072/california-labor-code-2870-employee-invention-ownership-guide)).
+
+### Non-solicit (and non-compete)
+"A narrowly drawn non-solicit **during the engagement and for 12 months after** is generally enforceable." It prohibits the IC from "using any information and/or relationships gained through the engagement for its own financial benefit," and often runs **mutually** (the IC may demand the company not poach the IC's own staff "for a certain period of time") ([OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/)). Non-compete is heavily negotiated and disfavored — the company wants it to extend "well beyond termination," the IC resists to stay viable; note non-competes are void for employees in California and increasingly restricted nationally ([OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/)).
+
+### Indemnification
+"Defend and hold harmless." The IC "agrees to cover any third party claims arising in connection with the death or injury of a person, damage to property, or breach of the agreement as a result of the actions or inactions of the contractor or its representatives." **IP indemnity** specifically covers losses from third-party IP-infringement claims on the deliverables. Common IC-side limits: liability only for **gross negligence or willful misconduct** and only upon a **"final, non-appealable judgment"** ([OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/); [fynk IP indemnity](https://fynk.com/en/clauses/intellectual-property-indemnification/)).
+
+### Limitation of liability
+"The company's liability is capped, often **at fees paid in the prior 12 months**, with **carve-outs for IP indemnity, confidentiality breach, and gross negligence**." Caution: "An IP infringement claim can easily generate litigation costs that exceed the annual contract value by orders of magnitude," so an uncarved cap can render indemnity meaningless ([smartsmssolutions/clause synthesis](https://smartsmssolutions.com/resources/blog/business/independent-contractor-agreement-template-ip-confidentiality-indemnity)).
+
+### Governing law, entire agreement, termination, survival
+- **Governing law:** named state (Delaware C-corps often specify the company's operating state or Delaware).
+- **Entire agreement / integration:** supersedes prior understandings.
+- **Termination:** for convenience (notice period) and for cause; obligations on wind-down.
+- **Survival:** "name the sections that continue past termination, **typically IP, confidentiality, indemnification, and limitation of liability**" ([clause synthesis](https://smartsmssolutions.com/resources/blog/business/independent-contractor-agreement-template-ip-confidentiality-indemnity)).
+
+### Insurance (IC-specific, for higher-value engagements)
+CGL, workers' comp, commercial auto, professional liability/E&O, and cyber/privacy insurance where data is accessed ([OutsideGC](https://outsidegc.com/blog/highly-negotiated-provisions-of-an-independent-contractor-agreement/)).
+
+---
+
+## 3. Why IP assignment is the single most important clause
+
+**The default rule runs against the company.** "The individual creator owns the work the moment it is fixed in a tangible medium," absent a written assignment — "if you paid for it, you own it" is **false** under US copyright law ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)). Copyright law "default[s] ownership to the author (the contractor), not the company paying them" ([Crowley Law](https://www.crowleylawllc.com/our-services/corporate-formation-structuring-attorneys/intellectual-property-assignment-agreements/)). For **patents**, "a patent initially belongs to the individual human inventor, even if that person is a full-time employee" — the company cannot be the inventor and must obtain a written assignment ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)).
+
+**Why WMFH alone fails for contractors.** A commissioned work is a "work made for hire" only if (a) it falls into one of **nine enumerated 17 U.S.C. § 101 categories** AND (b) the parties expressly so agree in a signed writing. The nine: **(1) contribution to a collective work; (2) part of a motion picture/audiovisual work; (3) translation; (4) supplementary work; (5) compilation; (6) instructional text; (7) test; (8) answer material for a test; (9) atlas** ([Cornell LII 17 USC 101](https://www.law.cornell.edu/uscode/text/17/101); [Copyright Office Circ. 30](https://www.copyright.gov/circs/circ30.pdf)). **Software is not on the list** — it is a "literary work," so code "cannot be designated as a work made for hire under the commissioned-work provisions of 17 USC 101(2), even with a written agreement." Hence: "For contractors, you cannot rely on a Work Made for Hire label. You must have an **express assignment of rights.**" ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/))
+
+**The verb tense that decided a Supreme Court case.** In *Stanford v. Roche*, the Stanford researcher signed an agreement saying he **"agree[d] to assign"** (a mere future promise), then later signed a visitor agreement at a private company using **"hereby assign"** (a present assignment). The "hereby assign" language won; Roche obtained co-ownership and the Supreme Court upheld it. "An agreement to assign is not the same as a present assignment… An agreement to assign often requires the execution of an additional assignment to transfer legal title, whereas a present assignment does not." ([Thompson Patent Law](https://thompsonpatentlaw.com/patent-documentation/); [Waltmire](https://www.waltmire.com/2023/01/27/language-for-assigning-patents-and-patentable-inventions-in-employment-or-consulting-agreements/))
+
+**What breaks fundraising — "chain of title."** "Missing IP assignments kill more deals than any other single issue, particularly for technology companies." "A disputed line of code or a contested patent ownership claim is often the primary reason a startup fails a due-diligence audit before a Series A." Investors read a chain-of-title gap as "the company not owning its core tech, which can kill funding or slash valuation." ([Crowley Law](https://www.crowleylawllc.com/our-services/corporate-formation-structuring-attorneys/intellectual-property-assignment-agreements/); [Berkeley BCLT](https://www.law.berkeley.edu/research/bclt/bclt-legal-analysis/start-up-s3/); [Montague Law](https://montague.law/blog/software-startup-ip-diligence-checklist-chain-of-title-open-source-ai-and-filing-priorities/))
+
+**Timing is everything.** "Assignments must be signed **before or immediately after** the work commenced — not retroactively during fundraising — because contractors can refuse to sign later or demand payment for doing so." Retroactive assignment "gives contractors unexpected leverage over your fundraising process" and wastes weeks of diligence. The "exit trap": an investor finds the gap, then lowers valuation, demands you locate and pay the original contractor to sign, or walks ([Crowley/Legalnodes synthesis](https://www.legalnodes.com/article/startup-investor-due-diligence); [Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)). Misclassification compounds this: "71% of respondents believe VC firms are less likely to invest in a startup that has faced compliance issues" ([Deel](https://www.deel.com/blog/employee-misclassification-penalties/)).
+
+---
+
+## 4. How early hires are compensated
+
+**Cash vs equity vs stipend, and instrument type.** "Most startups issuing stock options use **ISOs for employees and NSOs for contractors and advisors.**" Crucially, "unlike employees, there is **more leeway for compensating contractors with equity only** or other benefits in lieu of pay" ([Carta snippet](https://carta.com/learn/startups/compensation/employee-equity/); [thestartuplawblog](https://www.thestartuplawblog.com/the-complete-guide-to-equity-compensation-for-startups/)).
+
+**Early-employee equity ranges:**
+- Rule of thumb: **first 5 hires get 0.25%–3%**, hires 6–10 get **0.10%–1%** ([Fenwick/Westaway synthesis](https://westaway.com/faq/startup-employee-equity-what-every-founder-needs-to-know/)).
+- Real distribution data: **first hire — 25th pct 0.50%, median ~1.50%, 75th pct 4.00%**; equity drops ~43% to the **second hire (~0.85%)** ([SaaStr, "data from 50,000 startups"](https://www.saastr.com/how-much-equity-to-give-your-first-employees-the-real-data-from-50000-startups/)).
+- By role: **first engineer 1.5–2.5%, first sales hire 1.0–2.0%, first product/design 0.8–1.5%**; early employees broadly 0.5–2% ([SaaStr](https://www.saastr.com/how-much-equity-to-give-your-first-employees-the-real-data-from-50000-startups/)).
+
+**Vesting standard:** **4-year vest, 1-year cliff** — "25% of equity after one year (the cliff), remaining 75% monthly over the next three years." Recruiting tactic for the **first 1–3 employees**: a **6-month cliff or no cliff** ([eqvista](https://eqvista.com/stock-vesting/create-vesting-schedule-startup/); [wing.vc](https://docs.wing.vc/docs/early-stage-hiring/how-to-determine-equity-for-early-stage-employees)).
+
+**Advisors — FAST framework** (equity for advice; **2-year vest, monthly release, 3-month cliff** allowing termination of an unproductive relationship before any equity allocates). Equity by company stage × engagement level ([fi.co/fast](https://fi.co/fast); [skala.io/fast](https://www.skala.io/fast)):
+
+| Engagement | Idea | Startup | Growth |
+|---|---|---|---|
+| **Standard** (monthly meetings) | 0.25% | 0.20% | 0.15% |
+| **Strategic** (+ recruiting) | 0.50% | 0.40% | 0.30% |
+| **Expert** (+ contacts & projects, customer calls) | 1.00% | 0.80% | 0.60% |
+
+(e.g., an *expert*-level advisor to an *idea-stage* startup earns **1%** restricted stock/options over two years; the same engagement at *growth* stage earns **0.6%**.)
+
+**"First hire before incorporation."** Founders' pre-incorporation IP is captured at formation by assigning it into the company **as the consideration for founder stock** (par value × shares, *or* an IP assignment), via the **Common Stock Purchase Agreement + CIIAA** ([Stripe equity](https://stripe.com/guides/atlas/equity); [Stripe IP assignment](https://stripe.com/resources/more/how-to-assign-intellectual-property-to-a-business)). A contractor/freelancer or dev shop used pre-incorporation should sign an **invention-assignment agreement**, and "if you used a dev shop or freelancer early, you should **clean this up before fundraising**" ([Rho](https://www.rho.co/blog/stripe-atlas-vs-clerky)). A common pre-incorporation mistake: issuing *all* authorized shares to founders, then needing to amend the certificate to issue employee shares ([thestartuplawblog](https://www.thestartuplawblog.com/the-complete-guide-to-equity-compensation-for-startups/)).
+
+**Deferred comp (deferred salary) — the 409A trap.** "Informal deferrals are often treated as deferred compensation under **Section 409A**, and violations trigger a **20% federal excise tax plus ordinary income tax**, even if the money is eventually paid." Back-pay agreements, equity acceleration tied to deferral, and severance can all be swept in ([thestartuplawblog deferred-salary trap](https://www.thestartuplawblog.com/deferred-salary-trap/)).
+
+**Sub-$5k pilot engagement.** No public dataset prices this exact band, but the structure that follows from the above: a short fixed-fee/SOW Independent Contractor Agreement with present-assignment IP language baked in, contractor-status clauses, mutual 12-month non-solicit, capped liability, and survival of IP/confidentiality. At this scale, equity-only or equity-plus-token-cash is permissible for a contractor (the "more leeway" rule), and you'd typically *avoid* a separate advisor (FAST) grant unless the relationship is advisory rather than deliverable-based. Keep it well under any classification thresholds (§5) so a low-dollar pilot doesn't accidentally read as employment.
+
+---
+
+## 5. Contractor vs. employee classification (IRS)
+
+**Current test = IRS common-law test, three categories** (the IRS "no longer uses the 20-Factor Test… instead streamlining into these three key areas," though the 20 questions "remain a valuable resource") ([IRS Topic 762](https://www.irs.gov/taxtopics/tc762); [Everee](https://www.everee.com/blog/irs-independent-contractor-test/)):
+
+1. **Behavioral control** — "facts that show if the business has a right to direct and control **what work is accomplished and how the work is done**, through instructions, training, or other means." Dictating schedule, tools, and methods points to *employee* ([IRS 762](https://www.irs.gov/taxtopics/tc762)).
+2. **Financial control** — right to control "the financial and business aspects": unreimbursed business expenses, worker's investment in facilities/tools, availability to the market, method of payment, and **opportunity for profit/loss** ([IRS 762](https://www.irs.gov/taxtopics/tc762)).
+3. **Type of relationship** — written contracts, **employee-type benefits** (pension, insurance, vacation pay), **permanency** of the relationship, and whether the services are "**a key aspect of the regular business**" ([IRS 762](https://www.irs.gov/taxtopics/tc762)).
+
+**Key principle:** no single factor controls — "look at the **entire relationship**" and the "extent of the right to direct and control." Use **Form SS-8** to request an IRS determination ([IRS 762](https://www.irs.gov/taxtopics/tc762)).
+
+**Clauses startups use to support contractor status:** explicit independent-contractor designation; contractor controls *how/when* work is done; **contractor uses own tools/equipment and bears own expenses**; **contractor pays own taxes** (no withholding); **no employee benefits**; **no exclusivity** (free to serve other clients / market services); fixed-fee or per-deliverable (profit/loss exposure) rather than salary; defined-term engagement rather than indefinite; contractor may use subcontractors. (These map one-to-one onto the three IRS categories — the contract should mirror the actual working reality, since the IRS weighs facts over labels.)
+
+**California overlay (relevant if founder/worker is in CA) — Labor Code § 2870 carve-out for employees:** an invention-assignment provision **cannot reach** inventions the employee developed **entirely on their own time, without the employer's equipment/supplies/facilities/trade secrets**, *unless* the invention (1) relates to the employer's business or actual/anticipated R&D, or (2) results from work performed for the employer. A provision purporting to assign a §2870-excluded invention is "**against the public policy of this state and is unenforceable.**" **§ 2872** requires the employer to give **written notice** that the agreement does not apply to §2870-protected inventions ([Cal. Labor Code § 2870 — Justia](https://law.justia.com/codes/california/code-lab/division-3/chapter-2/article-3-5/section-2870/); [leginfo](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2870.); [Cohen IP](https://patentlawip.com/blog/california-labor-code-2870-employee-invention-ownership/)). Well-drafted PIIAs include the §2870 carve-out and §2872 notice verbatim.
+
+---
+
+## 6. Common mistakes startups make
+
+- **Relying on "work made for hire" for contractors / code.** Software isn't in the nine §101 categories; without an express present assignment the contractor keeps the copyright. "There is no automatic transfer of ownership… simply because a check was cashed." ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/))
+- **Using "agrees to assign"/"will assign" instead of "hereby assigns."** Creates a future promise, not title — the *Stanford v. Roche* failure mode ([Thompson](https://thompsonpatentlaw.com/patent-documentation/); [Waltmire](https://www.waltmire.com/2023/01/27/language-for-assigning-patents-and-patentable-inventions-in-employment-or-consulting-agreements/)).
+- **Founder pre-incorporation IP never assigned in.** "Founders who built the core model before incorporating" leave a chain-of-title hole; fix via the Common Stock Purchase Agreement + CIIAA at formation ([Crowley](https://www.crowleylawllc.com/who-owns-company-intellectual-property/); [Stripe](https://stripe.com/guides/atlas/equity)).
+- **Dev shops / freelancers / PhD collaborators not assigned — and not cleaned up before fundraising** ([Rho](https://www.rho.co/blog/stripe-atlas-vs-clerky); [njbusiness-attorney](https://www.njbusiness-attorney.com/ai-startup-legal-due-diligence-checklist-before-fundraising/)).
+- **Retroactive assignment during diligence** — contractors can refuse or demand equity/payment, killing leverage and timelines ([Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)).
+- **Forgetting the moral-rights waiver and prior-inventions disclosure.**
+- **Worker misclassification.** IRS exposure: back **employment taxes**, **up to 40% of unwithheld FICA**, **$50 per missing W-2**, unpaid **FUTA**. California (strictest): **$5,000–$15,000 per violation**, rising to **$10,000–$25,000 per violation** for a pattern, plus up to a year imprisonment. Misclassification can also "scare off investors" and muddy IP ownership ("a messy classification could… leav[e] questions about who actually owns the work produced") ([Deel](https://www.deel.com/blog/employee-misclassification-penalties/); [Multiplier](https://www.usemultiplier.com/contractor-management/independent-contractor-misclassification); [Spengler & Agans](https://s-a.law/blog/ip-assignment-mistakes-startups/)).
+- **Informal deferred salary** triggering 409A's 20% excise tax ([thestartuplawblog](https://www.thestartuplawblog.com/deferred-salary-trap/)).
+- **Uncapped or wrongly-carved limitation of liability** — capping at 12-months' fees *without* IP-indemnity/confidentiality carve-outs makes the IP indemnity worthless in a real infringement suit ([clause synthesis](https://smartsmssolutions.com/resources/blog/business/independent-contractor-agreement-template-ip-confidentiality-indemnity)).
+- **Issuing all authorized shares to founders pre-incorporation**, forcing a later charter amendment to issue employee/contractor equity ([thestartuplawblog](https://www.thestartuplawblog.com/the-complete-guide-to-equity-compensation-for-startups/)).
+
+---
+
+### Drafting takeaway for benchmarking your contractor agreement
+A defensible startup ICA must contain, at minimum: (1) **scope/SOW + fees**; (2) **IP**: WMFH recital → **"Contractor hereby irrevocably assigns"** present-assignment backstop covering copyrights/patents/trade secrets/moral rights → **moral-rights waiver** → **further-assurances at company expense** → **irrevocable power of attorney** → **prior-inventions disclosure/carve-out** (+ CA §2870/§2872 language if applicable); (3) **confidentiality**; (4) **return of materials**; (5) **independent-contractor status** with the IRS-aligned support clauses; (6) **no-conflict/originality warranty**; (7) **mutual non-solicit (≈12 months)**; (8) **indemnification incl. IP indemnity**; (9) **limitation of liability capped at ~12-months' fees with carve-outs for IP/confidentiality/gross negligence**; (10) **term/termination**; (11) **governing law**; (12) **entire agreement**; (13) **survival** (IP, confidentiality, indemnity, LoL). Sign it **before work starts**.
+
+**Note on gaps:** Cooley GO's form pages and Carta's benchmark page returned HTTP 403 to automated fetch; their content above comes from search-result extracts of those same pages plus corroborating sources, and every figure/clause cited is cross-confirmed by at least one fully-fetched primary source (IRS Topic 762, Cornell LII §101, Cal. Labor Code §2870, fi.co/fast, Waltmire, Spengler & Agans, OutsideGC). No specific public dataset prices a "sub-$5k pilot" engagement — that section is structural guidance derived from the contractor-equity and classification rules, not a benchmarked dollar figure.
+agentId: ab2abbeac2b4ccea8 (use SendMessage with to: 'ab2abbeac2b4ccea8' to continue this agent)
+<usage>subagent_tokens: 62494
+tool_uses: 25
+duration_ms: 244391</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

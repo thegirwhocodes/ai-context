@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: WLASL benchmark accuracy results 2024 2025 all models comparison top-1 leaderboa
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:36:53 UTC
+========================================================================
+
+Search query: WLASL benchmark accuracy results 2024 2025 all models comparison top-1 leaderboard
+
+----------------------------------------
+
+Web search results for query: "WLASL benchmark accuracy results 2024 2025 all models comparison top-1 leaderboard"
+
+Links: [{"title":"LLM Leaderboard 2025 - Vellum AI","url":"https://www.vellum.ai/llm-leaderboard"},{"title":"Best LLM Leaderboards: A Comprehensive List","url":"https://www.nebuly.com/blog/llm-leaderboards"},{"title":"AI Leaderboard 2026 - Compare Top AI Models & Rankings","url":"https://llm-stats.com"},{"title":"LLM Performance Benchmarks – September 2024 Update","url":"https://www.timetoact-group.at/en/insights/llm-benchmarks/llm-benchmarks-september-2024"},{"title":"LLM Benchmarks 2026 - Compare AI Benchmarks and Tests","url":"https://llm-stats.com/benchmarks"},{"title":"The Ultimate LLM Benchmark Comparison Guide (2025 Edition) | Inference.net","url":"https://inference.net/content/llm-benchmark-comparison/"},{"title":"SWE-bench","url":"https://www.vals.ai/benchmarks/swebench"},{"title":"Vals AI","url":"https://www.vals.ai/updates"},{"title":"Top 50 AI Model Benchmarks & Evaluation Metrics (2025 Guide) | Articles | o-mega","url":"https://o-mega.ai/articles/top-50-ai-model-evals-full-list-of-benchmarks-october-2025"},{"title":"Large Language Model Evaluation in '26: 10+ Metrics & Methods","url":"https://research.aimultiple.com/large-language-model-evaluation/"}]
+
+I notice the search results returned information about general LLM benchmarks and leaderboards, but not specific information about WLASL. Let me search more specifically for WLASL benchmark results.
+
+Links: [{"title":"WLASL (World Level American Sign Language) Video","url":"https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed"},{"title":"WLASL: Word-Level ASL Video Dataset","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl-video-dataset"},{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"Enhancing Word-Level Translation of American Sign Language Using Modified","url":"https://cs231n.stanford.edu/2024/papers/enhancing-word-level-translation-of-american-sign-language-using.pdf"},{"title":"arXiv:2506.21592v1 [cs.CL] 18 Jun 2025","url":"https://arxiv.org/pdf/2506.21592"},{"title":"Ensemble transformer-based word-level sign language recognition with multi-modal input fusion - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2307187725000951"},{"title":"Word-level Deep Sign Language Recognition from Video:","url":"https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Word-level_Deep_Sign_Language_Recognition_from_Video_A_New_Large-scale_WACV_2020_paper.pdf"},{"title":"Word-Level American Sign Language (WLASL)","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl"},{"title":"GitHub - alanjeremiah/WLASL-Recognition-and-Translation: World Level American Sign Language Recognition and Translation to Spoken Language","url":"https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"},{"title":"SignGen: End-to-End Sign Language Video Generation with Latent Diffusion | Springer Nature Link","url":"https://link.springer.com/chapter/10.1007/978-3-031-73668-1_15"}]
+
+Based on the web search results, I found relevant information about WLASL benchmark accuracy results. Here's a summary of the findings:
+
+## WLASL Benchmark Overview
+
+WLASL provides standard nested evaluation splits: WLASL100 (100 glosses), WLASL300, WLASL1000, and WLASL2000 (full set), each stratified to maintain class representation across train/validation/test partitions, enabling benchmarking at increasing levels of vocabulary size and recognition difficulty.
+
+## Top Models and Top-1 Accuracy Results
+
+### 2024-2025 Performance:
+
+A recent ensemble model employing a Swin-Transformer backbone achieved state-of-the-art top-1 accuracy of 93.51% on WLASL.
+
+VideoMAE achieves a Top-1 recognition accuracy of 75.58% on WLASL100, outperforming the best classical I3D+CNN baseline of 65.89%.
+
+Baseline models on WLASL include Inflated 3D ConvNets (I3D), with top-1 accuracy on WLASL100 ranging from 65.89% (I3D) to 80.72% (Full Transformer using RGB inputs), while Multi-Stream Neural Networks (MSNN) achieve up to 81.38% top-1 on WLASL100 and 47.26% on WLASL2000.
+
+The search results indicate that state-of-the-art methods have shown significant improvements, with transformer-based approaches substantially outperforming earlier CNN-based baselines on the WLASL benchmark dataset.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: HRSA Health Professional Shortage Area Kansas counties 2026 primary care
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 07:39:38 UTC
+========================================================================
+
+Search query: HRSA Health Professional Shortage Area Kansas counties 2026 primary care
+
+----------------------------------------
+
+Web search results for query: "HRSA Health Professional Shortage Area Kansas counties 2026 primary care"
+
+Links: [{"title":"Health Professional Shortage Areas","url":"https://www.kha-net.org/DataProductsandServices/STAT/Workforce/HealthProfessionalShortageAreas/"},{"title":"Map of Health Professional Shortage Areas: Primary Care, Geographic, by County, January 2026 - Rural Health Information Hub","url":"https://www.ruralhealthinfo.org/charts/5"},{"title":"Health Workforce Shortage Areas","url":"https://data.hrsa.gov/topics/health-workforce/shortage-areas/dashboard"},{"title":"Designated Health Professional Shortage Areas Statistics","url":"https://data.hrsa.gov/default/generatehpsaquarterlyreport"},{"title":"Find Shortage Areas","url":"https://data.hrsa.gov/tools/shortage-area"},{"title":"Shortage / Underserved Areas Designations | KDHE, KS","url":"https://www.kdhe.ks.gov/343/Shortage-Underserved-Areas-Designations"},{"title":"HPSA Find","url":"https://data.hrsa.gov/tools/shortage-area/hpsa-find"},{"title":"Primary Care Health Professional Shortage Areas (HPSAs) | KFF State Health Facts","url":"https://www.kff.org/other-health/state-indicator/primary-care-health-professional-shortage-areas-hpsas/"},{"title":"Map Gallery - Health Professional Shortage Areas","url":"https://data.hrsa.gov/topics/health-workforce/shortage-areas/map-gallery-hpsa"},{"title":"Federal Register :: Lists of Designated Primary Medical Care, Mental Health, and Dental Health Professional Shortage Areas","url":"https://www.federalregister.gov/documents/2024/07/01/2024-14477/lists-of-designated-primary-medical-care-mental-health-and-dental-health-professional-shortage-areas"}]
+
+Based on the search results, here's what I found about HRSA Health Professional Shortage Areas (HPSAs) related to Kansas primary care:
+
+## General Information
+
+Health Professional Shortage Areas are designated by the U.S. Department of Health and Human Services Health Resources and Services Administration as having shortages of primary medical care, dental or mental health providers and may be geographic (a county or service area), demographic (low income population) or institutional (comprehensive health center, federally qualified health center or other public facility).
+
+## Accessing Kansas-Specific Data
+
+For specific information about which Kansas counties are designated as primary care HPSAs in 2026, the search results point to several resources:
+
+1. To search detailed HPSA information in your community, go to the Interactive Kansas HPSA Map.
+
+2. Find areas designated areas by HRSA as having shortages of primary care, dental care, or mental health providers through the HRSA HPSA Find tool at data.hrsa.gov.
+
+3. Map showing county-level data on geographic Primary Care Health Professional Shortage Areas (HPSAs), indicating counties that are entirely in a HPSA, partially in a HPSA, or not in a HPSA is available through the Rural Health Information Hub.
+
+The most current data referenced in the search results is from April 7, 2026, so these interactive tools should have the most up-to-date information about specific Kansas counties with primary care HPSAs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

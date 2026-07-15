@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Nigeria oil "GDP per capita" or "growth" study working paper
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:24:32 UTC
+========================================================================
+
+Search query: "synthetic control" Nigeria oil "GDP per capita" or "growth" study working paper
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Nigeria oil "GDP per capita" or "growth" study working paper"
+
+Links: [{"title":"Nigeria GDP Growth Oil Sector","url":"https://tradingeconomics.com/nigeria/gdp-growth-oil-sector"},{"title":"Home | National Bureau of Statistics","url":"https://www.nigerianstat.gov.ng/"},{"title":"Nigerianstat","url":"https://www.nigerianstat.gov.ng/download/1241460"},{"title":"The Effect of Oil Revenue on Economic Growth in Nigeria: Evidence from Quantile Regression Method by Isiaka Akande Raifu :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4337854"},{"title":"Nigeria: contribution oil and gas to GDP 2023 | Statista","url":"https://www.statista.com/statistics/1165865/contribution-of-oil-sector-to-gdp-in-nigeria/"},{"title":"Nigeria GDP Annual Growth Rate","url":"https://tradingeconomics.com/nigeria/gdp-growth-annual"},{"title":"Nigeria’s Economy Rebounds Strongly, As GDP, Per Capita Income Post Strongest Growth In Over A Decade - My Engineers","url":"https://www.myengineers.com.ng/2026/05/04/nigerias-economy-rebounds-strongly-as-gdp-per-capita-income-post-strongest-growth-in-over-a-decade/"},{"title":"Nigeria Economic Outlook","url":"https://www.afdb.org/en/countries-west-africa-nigeria/nigeria-economic-outlook"},{"title":"Economy of Nigeria - Wikipedia","url":"https://en.wikipedia.org/wiki/Economy_of_Nigeria"},{"title":"Nigeria | Economic Indicators, Historic Data & Forecasts | CEIC","url":"https://www.ceicdata.com/en/country/nigeria"}]
+
+The search results returned information about Nigeria's oil sector and GDP, but did not return any academic working papers specifically using the synthetic control method to study Nigeria's oil sector impact on GDP per capita or growth. Let me search more specifically for synthetic control methodology papers:
+
+Links: [{"title":"(PDF) NEURAL NEWORK CONTROLLER FOR A CRUDE OIL DISTILLATION COLUMN","url":"https://www.academia.edu/17237707/NEURAL_NEWORK_CONTROLLER_FOR_A_CRUDE_OIL_DISTILLATION_COLUMN"},{"title":"Synthetic Control Method: A tool for comparative case studies in economic history - Gilchrist - 2023 - Journal of Economic Surveys - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12493"},{"title":"Nigerian Oil and Gas Industry Laws: Policies, and Institutions on JSTOR","url":"https://www.jstor.org/stable/j.ctvgc60hz"},{"title":"(PDF) Oil and Gas Revenue, Control of Corruption and Economic Performance in Nigeria","url":"https://www.researchgate.net/publication/363730701_Oil_and_Gas_Revenue_Control_of_Corruption_and_Economic_Performance_in_Nigeria"},{"title":"Classical and machine learning modeling of crude oil production in Nigeria: Identification of an eminent model for application - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2352484721003620"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects - American Economic Association","url":"https://www.aeaweb.org/articles?id=10.1257/jel.20191450"},{"title":"Synthetic Control Method - Kosuke Imai","url":"https://imai.fas.harvard.edu/teaching/files/synthetic_control.pdf"},{"title":"Designing Experiments with Synthetic Controls Nick Doudchenko David Gilinson","url":"https://mackinstitute.wharton.upenn.edu/wp-content/uploads/2020/03/Wernerfelt-Nils-Doudchenko-Nick-Gilinson-David-and-Taylor-Sean_Designing-Experiments-with-Synthetic-Controls.pdf"},{"title":"Nigeria National Petroleum Policy","url":"https://faolex.fao.org/docs/pdf/nig229288.pdf"},{"title":"Oil Discovery and Economic Transformation in Guyana: A Synthetic Control Analysis by Yihe Chang :: SSRN","url":"https://papers.ssrn.com/sol3/Delivery.cfm/5246699.pdf?abstractid=5246699&mirid=1"}]
+
+I found a related paper on Guyana's oil discovery using synthetic control methods, but not specifically for Nigeria. Let me search more directly for Nigerian oil synthetic control papers:
+
+Links: [{"title":"The effect of oil discovery in Brazil: A synthetic control approach","url":"https://ideas.repec.org/a/eee/jrpoli/v92y2024ics0301420724004008.html"},{"title":"(PDF) From Oil Wells to Economic Swells: Examining the Economic Impact of Ghana's 2007 Oil Discovery","url":"https://www.researchgate.net/publication/395538862_From_Oil_Wells_to_Economic_Swells_Examining_the_Economic_Impact_of_Ghana's_2007_Oil_Discovery"},{"title":"The effect of oil discovery in Brazil: A synthetic control approach - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0301420724004008"},{"title":"Oil Discovery and Economic Transformation in Guyana: A Synthetic Control Analysis by Yihe Chang :: SSRN","url":"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5246699"},{"title":"A tale of oil production collapse - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S0301420724004112"}]
+
+Based on my web search results, I was unable to find a specific working paper that uses the synthetic control method to study Nigeria's oil sector impact on GDP per capita or economic growth. 
+
+However, my search did reveal several related findings:
+
+1. Studies on Nigeria's economy have indicated no significant correlation between oil production and economic growth, leading researchers to conclude that the Nigerian economy exhibits symptoms of the Dutch disease or resource curse.
+
+2. Regarding other African oil discoveries, one study used the synthetic control method with data from sub-Saharan African countries from 1992 to 2021 and found that Ghana's annual real GDP per capita was $394.69 higher from 2008 to 2021 than it would have been without the discovery of oil in 2007, representing a growth of 31.78% in Ghana's annual real GDP per capita.
+
+3. Another synthetic control analysis examined Guyana's 2015 offshore oil discovery and found that by 2023, Guyana's GDP per capita (PPP) was roughly three times its counterfactual level, with the oil sector rapidly coming to dominate the economy.
+
+The search results show that while synthetic control methods have been applied to study oil discoveries' economic impacts in other countries (Brazil, Guyana, Ghana), I could not locate a specific working paper using this methodology for Nigeria.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

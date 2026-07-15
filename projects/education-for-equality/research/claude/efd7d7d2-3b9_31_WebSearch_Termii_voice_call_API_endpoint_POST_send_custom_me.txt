@@ -1,0 +1,47 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii voice call API endpoint POST send custom message phone_number pin_code ex
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:56:35 UTC
+========================================================================
+
+Search query: Termii voice call API endpoint POST send custom message phone_number pin_code example JSON
+
+----------------------------------------
+
+Web search results for query: "Termii voice call API endpoint POST send custom message phone_number pin_code example JSON"
+
+Links: [{"title":"Voice Token - Termii | Developers","url":"https://developers.termii.com/voice-token"},{"title":"Voice Call","url":"https://developers.termii.com/voice-call"},{"title":"Termii | Developers","url":"https://developers.termii.com/messaging-api"},{"title":"Number API - Termii | Developers","url":"https://developers.termii.com/number"},{"title":"Termii | Developers","url":"https://developer.termii.com/send-token"},{"title":"GitHub - prmpsmart/termii_sdk: The `termii_sdk` is a Python package that facilitates seamless integration with the Termii API, empowering developers to send SMS, voice, and email messages within their applications.","url":"https://github.com/prmpsmart/termii_sdk"},{"title":"GitHub - abduljeleelng/termii-nodejs-sdk: Node js SDK for the Termii messages(SMS) and one time password (OTP) services. User verification through the mobile number, In App Authentication, Voice Token, Call token, and Authentication services","url":"https://github.com/abduljeleelng/termii-nodejs-sdk"},{"title":"Full API Documentation - Termii","url":"https://leads.termii.com/index.php/developers"},{"title":"Send a campaign - Termii | Developers","url":"https://developers.termii.com/campaign"},{"title":"Make outbound phone calls | Twilio","url":"https://www.twilio.com/docs/voice/make-calls"}]
+
+Based on the search results, here's the information about Termii's voice call API endpoint:
+
+## Voice Call API Endpoint
+
+The endpoint is `https://BASE_URL/api/sms/otp/call` with POST as the request type.
+
+## Request Body Example
+
+The JSON payload should include the following fields:
+
+```json
+{
+  "api_key": "Your API key",
+  "phone_number": "2349800000000",
+  "code": 55675
+}
+```
+
+## Important Note
+
+The voice call API enables you to send messages through the voice channel to a phone number. Only one-time-passwords (OTP) are allowed for now and these OTPs cannot be verified using the Verify Token API.
+
+The required parameters are:
+- **api_key**: Your Termii API key
+- **phone_number**: The recipient's phone number
+- **code**: The OTP code to be delivered via voice call
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,281 @@
+========================================================================
+AGENT RESEARCH: Research Purdue OWL writing tips
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-03-31 19:32:24 UTC
+========================================================================
+
+Search the web for writing best practices from Purdue OWL (Online Writing Lab) specifically. I need:
+
+1. Purdue OWL's advice on clear, concise writing
+2. Purdue OWL's guidance on paragraph structure and topic sentences
+3. Purdue OWL's tips on eliminating wordiness and unnecessary words
+4. Purdue OWL's advice on active voice vs passive voice
+5. Purdue OWL's guidance on essay structure and flow/transitions
+6. Any Purdue OWL resources on persuasive writing or argumentative essays
+7. Also search for general "rules of good writing" from sources like Strunk & White's Elements of Style, George Orwell's "Politics and the English Language" rules, and any other widely-cited writing style guides
+
+Focus on practical, actionable rules — not theory. Things like "use active voice", "cut unnecessary adverbs", "one idea per paragraph", etc.
+
+Return a concise, organized summary of the key rules and principles.
+
+----------------------------------------
+
+I now have comprehensive information from all sources. Here is the organized summary:
+
+---
+
+## Writing Best Practices: A Practical Rules Reference
+
+### PART 1: PURDUE OWL GUIDANCE
+
+---
+
+#### A. Clear, Concise Writing
+
+**Core principle:** Concise writing does not always have the fewest words, but it always uses the strongest ones.
+
+1. **Use specific, powerful words.** Several vague words can usually be replaced by one precise word.
+2. **Check every word.** If a word adds nothing important or unique to a sentence, delete it or replace it.
+3. **Use active voice by default.** Active sentences are shorter and clearer.
+4. **Eliminate redundancy.** Cut words or phrases that seem to modify meaning but actually add nothing.
+5. **Combine sentences.** If information does not require its own full sentence, fold it into an adjacent sentence.
+6. **Front-load the important information.** Highlight the most important points early and succinctly.
+
+#### B. Paragraph Structure and Topic Sentences
+
+**Basic rule:** One idea per paragraph. When you transition to a new idea, start a new paragraph.
+
+Every paragraph needs four elements:
+
+1. **Unity** -- Begin and end on the same main point. Do not wander.
+2. **Coherence** -- Use logical bridges (carrying one idea across sentences, parallel structure) and verbal bridges (repeating key words, synonyms, pronouns, transitions).
+3. **A topic sentence** -- A general statement of the paragraph's main idea, usually placed first (or second, after a transition). Refine these during revision, not just during drafting.
+4. **Adequate development** -- Go beyond 2-3 sentences. Use examples, data, quotations, anecdotes, definitions, comparisons, cause/effect, or description.
+
+**The TTEB method for body paragraphs:**
+- **T**ransition -- Smooth link from the previous paragraph
+- **T**opic sentence -- States what this paragraph will discuss
+- **E**vidence and analysis -- Specific support with deeper detail
+- **B**rief wrap-up -- Tells the reader how/why this supports the thesis
+
+**When to start a new paragraph:**
+- Beginning a new idea or point
+- Contrasting information
+- When the reader needs a pause (long or complex material)
+- Ending an introduction or starting a conclusion
+
+#### C. Eliminating Wordiness
+
+**Technique 1: Remove obvious or excessive detail.** Cut anything the reader already understands or can infer.
+
+**Technique 2: Eliminate unnecessary determiners and modifiers.** Cut filler words:
+- kind of, sort of, type of, really, basically, definitely, actually, generally, particular, individual, "for all intents and purposes"
+
+**Technique 3: Cut repetitive wording.** If you have said the same thing twice in different words, keep the better version.
+
+**Technique 4: Cut redundant pairs.** One word implies the other:
+- "completely finish" --> "finish"
+- "past memories" --> "memories"
+- "unexpected surprise" --> "surprise"
+- "basic fundamentals" --> "fundamentals"
+- "very unique" --> "unique" (unique cannot be modified by degree)
+
+**Technique 5: Cut redundant categories.** The specific word already implies the category:
+- "large in size" --> "large"
+- "pink in color" --> "pink"
+- "period in time" --> "period"
+- "economics field" --> "economics"
+
+**Technique 6: Convert phrases to single words.**
+- "the employee with ambition" --> "the ambitious employee"
+- "the report, which was released recently" --> "the recently released report"
+- "all applicants who are interested in the job" --> "all job applicants"
+
+**Technique 7: Fix common pitfalls:**
+- Kill expletive constructions: "It is the governor who signs bills" --> "The governor signs bills"
+- Kill nominalizations: "The function of this department is the collection of accounts" --> "This department collects accounts"
+- Kill unnecessary infinitive phrases: "The duty of a clerk is to check all incoming mail" --> "A clerk checks all incoming mail"
+- Kill circumlocutions: "It is possible that nothing will come of these preparations" --> "Nothing may come of these preparations"
+
+**The Paramedic Method** (Richard Lanham, via Purdue OWL) -- a 7-step revision process:
+1. Circle the prepositions (of, in, about, for, onto, into)
+2. Box the "is" verb forms
+3. Ask "Where is the action?"
+4. Convert the action into a simple verb
+5. Move the doer into the subject position
+6. Eliminate slow wind-ups (unnecessary introductory phrases)
+7. Remove redundancies
+
+Example: "In this paragraph is a demonstration of the use of good style in the writing of a report" (19 words) --> "This paragraph demonstrates good style in reports" (7 words)
+
+#### D. Active Voice vs. Passive Voice
+
+**Default rule: Use active voice.** The subject performs the action.
+- Active: "Mrs. Simms opened an account" (5 words)
+- Passive: "An account was opened by Mrs. Simms" (7 words)
+
+**When passive voice is appropriate:**
+- The agent is obvious, unimportant, or unknown
+- You want to emphasize the action or the thing acted upon, not who did it
+- Scientific writing (to create objective, fact-based tone)
+
+#### E. Essay Structure, Flow, and Transitions
+
+**Structure:**
+- First paragraph: set context, explain why the topic matters, present a clear thesis statement
+- Body paragraphs: each must logically connect to the thesis
+- Conclusion: synthesize (do not merely repeat)
+
+**Transitions:**
+- Good transitions wrap up the idea from the previous section AND introduce the idea that follows
+- Write transitions that could only connect *these specific* paragraphs -- not generic connectors that could link anything to anything
+- Pick up key phrases from the previous paragraph to create continuity
+
+**Flow (sentence-level, paragraph-level, text-level):**
+- Move from old (known) information to new information
+- Use transitional words to signal relationships (however, therefore, in addition, moreover, but, also)
+- Place extra phrases/clauses at the beginning or end of sentences, not between subject and verb
+- Use parallel constructions for series of related items
+- Avoid noun strings
+- Eliminate multiple negatives -- use affirmative constructions
+- Choose action verbs over forms of "to be"
+- Clarify every pronoun reference -- make sure "this," "that," "it," and "they" clearly point to something
+
+#### F. Persuasive and Argumentative Writing
+
+**Essay structure:**
+- Para 1: set context, explain importance, state thesis
+- Body: each paragraph directly supports thesis with evidence; explain *how and why* the evidence supports your claim
+- Counterargument: dedicate 1-2 paragraphs to opposing views and explain why your position is stronger
+- Conclusion: synthesize
+
+**Three rhetorical appeals (use all three):**
+
+1. **Logos (logic):** Use inductive reasoning (specific evidence --> generalization) and deductive reasoning (generalization --> specific application). Avoid fallacies: slippery slope, hasty generalization, false cause, circular argument, either/or, ad hominem, red herring.
+
+2. **Ethos (credibility):** Use credible sources and cite them properly. Represent opposing views accurately. Establish shared values with your audience. Disclose personal interests. Organize logically. Proofread.
+
+3. **Pathos (emotion):** Use individual stories and interviews to "give a human face to the numbers." Emotional appeals must genuinely support your claims, not distract from substance or misrepresent the topic.
+
+---
+
+### PART 2: CLASSIC STYLE GUIDES
+
+---
+
+#### G. George Orwell's Six Rules ("Politics and the English Language," 1946)
+
+1. **Never use a metaphor, simile, or figure of speech you are used to seeing in print.** (Avoid cliches.)
+2. **Never use a long word where a short one will do.**
+3. **If it is possible to cut a word out, always cut it out.**
+4. **Never use the passive where you can use the active.**
+5. **Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.**
+6. **Break any of these rules sooner than say anything outright barbarous.** (Rules serve clarity; if following a rule makes the sentence worse, break it.)
+
+Additional Orwell principle: "Let the meaning choose the word, and not the other way about." Think clearly first using mental images, then select language -- do not let prefabricated phrases dictate your meaning.
+
+#### H. Strunk & White's *Elements of Style* -- 11 Principles of Composition
+
+1. **Choose a suitable design and hold to it.** Plan your structure before writing.
+2. **Make the paragraph the unit of composition.** Build around well-structured paragraphs.
+3. **Use the active voice.**
+4. **Put statements in positive form.** Say what something *is*, not what it *is not*. ("He usually came late" not "He was not very often on time.")
+5. **Use definite, specific, concrete language.** Avoid vague abstractions.
+6. **Omit needless words.** "Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."
+7. **Avoid a succession of loose sentences.** Vary sentence structure.
+8. **Express coordinate ideas in similar form.** (Parallel structure.)
+9. **Keep related words together.**
+10. **In summaries, keep to one tense.**
+11. **Place the emphatic words of a sentence at the end.** The end of a sentence carries the most weight.
+
+#### I. Strunk & White -- 21 Style Reminders
+
+1. Place yourself in the background
+2. Write in a way that comes naturally
+3. Work from a suitable design
+4. **Write with nouns and verbs** (not adjectives and adverbs)
+5. **Revise and rewrite**
+6. **Do not overwrite**
+7. **Do not overstate**
+8. **Avoid the use of qualifiers** (rather, very, little, pretty -- "these are the leeches that infest the pond of prose")
+9. Do not affect a breezy manner
+10. Use orthodox spelling
+11. **Do not explain too much** -- trust the reader
+12. Do not construct awkward adverbs
+13. Make sure the reader knows who is speaking
+14. **Avoid fancy words** -- prefer the plain word
+15. Do not use dialect unless your ear is good
+16. **Be clear** -- clarity is the priority
+17. Do not inject opinion (in expository writing)
+18. Use figures of speech sparingly
+19. Do not take shortcuts at the cost of clarity
+20. Avoid foreign languages
+21. Prefer the standard to the offbeat
+
+#### J. William Zinsser's *On Writing Well* -- Four Commandments
+
+1. **Clarity** -- Guide the reader through your thought process logically.
+2. **Simplicity** -- Strip every sentence to its cleanest components. Remove words with no function. Replace long words with shorter ones. Remove adverbs whose meaning is already in the verb.
+3. **Brevity** -- Say it once, say it well, move on.
+4. **Humanity** -- Be yourself. "There is no style store; style is organic to the person doing the writing."
+
+Additional Zinsser principles:
+- "Clear thinking becomes clear writing; one can't exist without the other."
+- Rewriting is the key to good writing. No sentence is both concise and complete without being rewritten.
+- Unity of tense, mood, pronoun, and tone throughout a piece.
+
+---
+
+### QUICK-REFERENCE CHECKLIST (all sources combined)
+
+- [ ] Active voice by default
+- [ ] One idea per paragraph
+- [ ] Topic sentence first (or second after a transition)
+- [ ] Every word earns its place -- cut the rest
+- [ ] Short words over long words
+- [ ] Specific and concrete over vague and abstract
+- [ ] Positive form ("he was late") not negative ("he was not on time")
+- [ ] No redundant pairs (past history, unexpected surprise)
+- [ ] No filler words (really, basically, actually, very, kind of)
+- [ ] No expletive constructions (it is, there are) unless necessary
+- [ ] No nominalizations -- use verbs, not noun forms of verbs
+- [ ] Parallel structure for parallel ideas
+- [ ] Related words kept together
+- [ ] Emphatic word at end of sentence
+- [ ] Transitions specific to the paragraphs they connect
+- [ ] Evidence explained -- say *how* and *why* it supports the claim
+- [ ] Counterarguments addressed directly
+- [ ] Logos + ethos + pathos working together
+- [ ] Revise, rewrite, then revise again
+
+---
+
+Sources:
+- [Purdue OWL: Concision](https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html)
+- [Purdue OWL: Eliminating Words](https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/eliminating_words.html)
+- [Purdue OWL: Avoid Common Pitfalls](https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/avoid_common_pitfalls.html)
+- [Purdue OWL: Changing Phrases](https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/changing_phrases.html)
+- [Purdue OWL: Paramedic Method](https://owl.purdue.edu/owl/general_writing/academic_writing/paramedic_method.html)
+- [Purdue OWL: On Paragraphs](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html)
+- [Purdue OWL: Paragraph Organization & Flow](https://owl.purdue.edu/owl/graduate_writing/thesis_and_dissertation/paragraph_organization_flow.html)
+- [Purdue OWL: Body Paragraphs (Argument Papers)](https://owl.purdue.edu/owl/general_writing/common_writing_assignments/argument_papers/body_paragraphs.html)
+- [Purdue OWL: Active and Passive Voice](https://owl.purdue.edu/owl/general_writing/academic_writing/active_and_passive_voice/index.html)
+- [Purdue OWL: Active Versus Passive Voice](https://owl.purdue.edu/owl/general_writing/academic_writing/active_and_passive_voice/active_versus_passive_voice.html)
+- [Purdue OWL: Choosing Passive Voice](https://owl.purdue.edu/owl/general_writing/academic_writing/active_and_passive_voice/choosing_passive_voice.html)
+- [Purdue OWL: Writing Transitions](https://owl.purdue.edu/owl/general_writing/mechanics/transitions_and_transitional_devices/index.html)
+- [Purdue OWL: Improving Sentence Clarity](https://owl.purdue.edu/owl/general_writing/mechanics/sentence_clarity.html)
+- [Purdue OWL: Argumentative Essays](https://owl.purdue.edu/owl/general_writing/academic_writing/essay_writing/argumentative_essays.html)
+- [Purdue OWL: Rhetorical Strategies for Persuasion](https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html)
+- [Purdue OWL: Organizing Your Argument](https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/organizing_your_argument.html)
+- [Orwell's "Politics and the English Language" (The Orwell Foundation)](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/)
+- [Strunk & White Summary (Bruce Welton)](https://www.brucewelton.com/2014/06/11/summary-the-elements-of-style-by-strunk-and-white/)
+- [The Elements of Style - Wikipedia](https://en.wikipedia.org/wiki/The_Elements_of_Style)
+- [Zinsser's On Writing Well - Key Takeaways](https://www.steve-anderson.co/notes/on-writing-well)
+agentId: a598c0c57c77dac3a (use SendMessage with to: 'a598c0c57c77dac3a' to continue this agent)
+<usage>total_tokens: 33895
+tool_uses: 22
+duration_ms: 153099</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

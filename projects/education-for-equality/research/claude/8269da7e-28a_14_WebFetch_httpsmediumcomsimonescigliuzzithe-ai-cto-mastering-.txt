@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://medium.com/@simonescigliuzzi/the-ai-cto-mastering-voice-activated-develo
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:37:07 UTC
+========================================================================
+
+URL: https://medium.com/@simonescigliuzzi/the-ai-cto-mastering-voice-activated-development-with-google-antigravity-84237c88433e
+Extraction prompt: How do you actually do voice conversations with Antigravity? Does the IDE have a built-in microphone button? Does Antigravity talk back with audio? What's the recommended setup? Does it support voice MCPs from Claude Code? Any specific instructions for macOS?
+
+----------------------------------------
+
+# Voice Conversations with Antigravity: What the Article Actually Says
+
+Based on the Medium article, here's the honest answer:
+
+**Antigravity doesn't natively support voice.** The author explicitly states: "Antigravity doesn't yet have a native 'Intercom Mode' (bidirectional voice chat inside the IDE)."
+
+## The Workaround Offered
+
+The article proposes two methods that *bypass* the IDE's limitations:
+
+1. **Method A (Recommended):** Use Gemini Live on your phone/tablet for voice planning, then copy-paste the resulting prompt into Antigravity's text interface on desktop.
+
+2. **Method B:** Stay in the IDE but use third-party dictation tools (Superwhisper, MacWhisper, Whisper Typing) to *input* voice commands as text, then rely on text responses from agents.
+
+## What's Missing
+
+- No built-in microphone button in Antigravity
+- No audio responses from the agents
+- No native voice MCPs mentioned
+- No specific macOS voice integration beyond standard OS dictation
+
+**Bottom line:** You're working around limitations with separate tools, not using integrated voice features. The article positions this as temporary until "Google integrates Gemini 3 Multimodal capabilities natively into the IDE."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

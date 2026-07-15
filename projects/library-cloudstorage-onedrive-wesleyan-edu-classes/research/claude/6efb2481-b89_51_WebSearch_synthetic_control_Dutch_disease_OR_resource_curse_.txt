@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" "Dutch disease" OR "resource curse" methodology application 
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:11:57 UTC
+========================================================================
+
+Search query: "synthetic control" "Dutch disease" OR "resource curse" methodology application Angola Mexico
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" "Dutch disease" OR "resource curse" methodology application Angola Mexico"
+
+Links: [{"title":"MPRA Munich Personal RePEc Archive Dutch Disease and Structural","url":"https://mpra.ub.uni-muenchen.de/127064/1/MPRA_paper_127064.pdf"},{"title":"Resource curse - Wikipedia","url":"https://en.wikipedia.org/wiki/Resource_curse"},{"title":"Resource Curse - Explanation and Examples - Economics Help","url":"https://www.economicshelp.org/blog/glossary/resource-curse/"},{"title":"Dutch Disease & the Resource Curse | Origin & Examples | Britannica Money","url":"https://www.britannica.com/money/Dutch-disease"},{"title":"The Resource Curse","url":"https://resourcegovernance.org/sites/default/files/nrgi_Resource-Curse.pdf"},{"title":"Dutch disease - Wikipedia","url":"https://en.wikipedia.org/wiki/Dutch_disease"},{"title":"The Dutch Disease in Angola: An Empirical Analysis","url":"https://www.mdpi.com/2673-4591/39/1/40"},{"title":"(PDF) The Resource Curse and Oil Revenues in Angola and Venezuela","url":"https://www.researchgate.net/publication/261945989_The_Resource_Curse_and_Oil_Revenues_in_Angola_and_Venezuela"},{"title":"Poor little rich countries: another look at the 'resource curse'","url":"https://www.tandfonline.com/doi/abs/10.1080/09644016.2011.608530"},{"title":"‘The Dutch disease' : Angola, DRC & Equatorial Guinea - Grey Dynamics","url":"https://greydynamics.com/the-dutch-disease-angola-drc-equatorial-guinea/"}]
+
+Based on the search results, I found relevant information about synthetic control methods being applied to study Dutch disease and resource curse issues. Here's what I found:
+
+## Synthetic Control Methodology Applied to Resource Curse Studies
+
+Researchers have used synthetic control methods (SCM) to estimate the structural impacts of resource discoveries in major African resource economies, demonstrating how synthetic controls can be leveraged to evaluate national policy-relevant events in developing economies.
+
+### Ghana Case Study
+
+A notable application involves Ghana's oil discovery. By constructing a "Synthetic Ghana" from a donor pool of non-oil-producing sub-Saharan African countries, researchers estimated what Ghana's economic trajectory would have been without oil development. The sectoral analysis provided strong evidence of Dutch Disease, with findings suggesting that the oil boom induced a "Resource Movement Effect," crowding out non-resource tradable sectors and potentially increasing the economy's long-term vulnerability to commodity price shocks.
+
+### Angola Context
+
+Studies examining Angola have used statistical techniques to identify the presence of Dutch disease, including nonlinear autoregressive distributed lag (NARDL) models to identify cointegrated relationships between international oil prices and the real effective exchange rate. Despite being the second largest oil exporter in Africa, Angola continues to lag behind in most macroeconomic indicators, at least partially as a consequence of Dutch disease, which establishes a link between high resource endowments and lack of economic diversity through loss of competitiveness in non-resource sectors.
+
+### Mexico and Mexico's Experience
+
+During the mini-oil boom of 1979-81, countries like Mexico, Venezuela and Nigeria saw rapid appreciation in the exchange rate due to oil discovery, resulting in virtually no other industries remaining internationally competitive.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

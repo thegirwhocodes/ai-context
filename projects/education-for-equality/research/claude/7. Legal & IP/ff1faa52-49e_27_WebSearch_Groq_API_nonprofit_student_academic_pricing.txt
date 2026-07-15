@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Groq API nonprofit student academic pricing
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:26:45 UTC
+========================================================================
+
+Search query: Groq API nonprofit student academic pricing
+
+----------------------------------------
+
+Web search results for query: "Groq API nonprofit student academic pricing"
+
+Links: [{"title":"Groq is fast, low cost inference.","url":"https://groq.com/"},{"title":"Groq On-Demand Pricing for Tokens-as-a-Service | Groq is fast, low cost inference.","url":"https://groq.com/pricing"},{"title":"Is there a free tier and what are its limits? - FAQs - Groq Community","url":"https://community.groq.com/t/is-there-a-free-tier-and-what-are-its-limits/790"},{"title":"Groq llama3-8b-8192 Pricing Calculator | API Cost Estimation","url":"https://www.helicone.ai/llm-cost/provider/groq/model/llama3-8b-8192"},{"title":"How does Groq's pricing work? - FAQs - Groq Community","url":"https://community.groq.com/t/how-does-groqs-pricing-work/58"},{"title":"GroqCloud - Build Fast","url":"https://console.groq.com/settings/billing/plans"},{"title":"A complete guide to Groq pricing in 2025","url":"https://www.eesel.ai/blog/groq-pricing"},{"title":"Do I get charged for anything on the Groq Free Plan? - FAQs - Groq Community","url":"https://community.groq.com/t/do-i-get-charged-for-anything-on-the-groq-free-plan/832"},{"title":"GroqCloud Developer Tier: Fast, Affordable API Access for Devs | Groq is fast, low cost inference.","url":"https://groq.com/blog/developer-tier-now-available-on-groqcloud"},{"title":"Groq Cloud API | Get Started","url":"https://www.postman.com/postman-student-programs/groq-cloud-api/collection/7c0wue2/groq-cloud-api"}]
+
+Based on the search results, here's what I found about Groq API pricing:
+
+## General Pricing Structure
+
+Groq has three different billing tiers available to all users: Free, Developer, and Enterprise. Groq uses a pay-as-you-go model charging per token consumed.
+
+## Free Tier
+
+When you sign up at console.groq.com, you get access to a Free tier with no credit card required, though your usage is capped by rate limits.
+
+## Developer Tier
+
+The GroqCloud Developer Tier offers easy self-serve signup, up to 10x rate limits, and 25% cost discounts.
+
+## Cost Optimization Options
+
+The Batch API lets you send thousands of requests at once and get a 50% discount off real-time rates. Additionally, prompt caching provides a 50% discount for input tokens when the same input is sent frequently.
+
+## Nonprofit and Student Pricing
+
+The search results don't contain specific information about dedicated nonprofit or student academic pricing programs. The mention of keeping "premium plan at a reasonable price for students of all backgrounds" suggests student-friendly pricing exists, but specific details aren't provided in these results. You may want to check Groq's official pricing page or contact their sales team for specific nonprofit and academic discount information.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

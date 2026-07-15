@@ -1,0 +1,100 @@
+========================================================================
+DEEP RESEARCH: International bodies that can accredit/endorse a curriculum
+Session: 5335de07-9464-40e1-812e-565cd4926043
+Date: 2026-06-05
+Method: deep-research workflow — 106 agents, 5 search angles, 24 sources fetched,
+        107 claims extracted, 25 adversarially verified (23 confirmed, 2 killed)
+Question: Which international body can give E4E/Sabi a recognized "stamp" — like
+        "Cambridge accredited curriculum" — for a SELF-AUTHORED curriculum?
+========================================================================
+
+## BOTTOM LINE
+No international body will badge a self-authored curriculum "Cambridge-accredited
+curriculum" or equivalent. The May 2026 finding HOLDS in 2026. Prestige names
+accredit WHOLE SCHOOLS/INSTITUTIONS, not standalone third-party curricula.
+
+## WHY THE BIG NAMES DON'T WORK (verified, high confidence)
+- CAMBRIDGE INTERNATIONAL — registers SCHOOLS (4-phase, ~12 wks). Only third-party
+  route "Endorsed resources" is for RECOGNISED PUBLISHERS producing textbooks that
+  teach Cambridge's OWN syllabus; explicitly refuses independent/proprietary
+  curricula. Endorsement "does not mean it is an official resource." → Only honest
+  claim for a self-authored curriculum = "ALIGNED TO CAMBRIDGE STANDARDS", never
+  "accredited". Cambridge uses "registration/approval" not "accreditation".
+  Sources: cambridgeinternational.org /programmes-and-qualifications/, /join-cambridge/,
+  /endorsed-resources/
+- COGNIA (ex-AdvancED/SACS) — policy: "Cognia does not accredit providers of
+  curriculum only or homeschools." Seal reserved for institutions/systems.
+  Third-party vendors must state their accreditation does NOT extend to curriculum.
+- CIS (Council of International Schools) — "accreditation is not offered to a part
+  of a school"; requires CIS membership + 2 full academic years operating.
+- ASIC — DOES issue a displayable "Badge of Accreditation" to whole institutions
+  incl. online/distance providers, holistic (not per-programme). BUT documented
+  diploma-mill criticism; NOT CHEA / US-DoE recognised. Using it could HARM
+  credibility with serious funders (Gates/Mastercard/UNICEF). Avoid.
+- IB / WASC / COBIS / Oxford AQA / Ofqual / EdReports — no verified self-authored-
+  curriculum pathway surfaced (school-scoped, qualification-scoped, or US-K12-only).
+
+## WHAT E4E CAN LEGITIMATELY DISPLAY (the real options)
+1) EDUEVIDENCE / ICEIE (eduevidence.org) — BEST NEAR-TERM FIT.
+   - Certifies evidence-of-IMPACT of the tech PRODUCT (Sabi voice tutor OR the web
+     app), not curriculum content, not the school. 5Es framework (efficacy modeled
+     on ESSA evidence tiers). Bronze/Silver/Gold. "Badge is for product, not provider."
+   - Free database registration + ~$250 fee + 5-7 business days + valid 24 months.
+   - 1,500+ products from 70+ countries; awardees incl. Kahoot!, Age of Learning,
+     GraphoGame. Current via BETT 2025 + ISTE+ASCD EdTech Index 2025.
+   - Claim: "EduEvidence-certified EdTech."
+   - Caveat: fees-2 URL intermittently 404s; "$250 + free registration" live-confirmed,
+     "5-7 days" partly from cached snapshot. ICEIE acronym rendered inconsistently.
+2) NCFE (UK Ofqual-recognised awarding body, 175+ yrs) — genuine awarding-body
+   recognition of SELF-AUTHORED content via (a) Customised Qualifications (unregulated
+   quals written by the org, then accredited by the awarding body) or (b) Endorsed
+   Programmes (in-house informal learning endorsed, no learning outcomes/assessment).
+   Fees/timeline/Nigeria-eligibility NOT in verified set. Real but more effort.
+3) ASSURED BY PEARSON (rebranded from "Pearson Assured", Dec 18 2024) — quality-
+   assures the ORG'S OWN training programmes (no Pearson curriculum needed). Yields
+   logo + Credly learner badges. BUT assures QUALITY PROCESSES not content/standard/
+   rigour; requires >=18 MONTHS PRIOR DELIVERY (blocks E4E until after the pilot);
+   CONTRACTUALLY BANS the words "accredited/certified/qualified/official" and any
+   level, and "cannot reference any national or international standards." Post-2027 option.
+
+## MARKETING-CLAIM MATRIX (verified)
+NONE permit a generic "X-accredited curriculum" for self-authored content.
+- Cambridge → "aligned to Cambridge standards" (only)
+- EduEvidence → "EduEvidence/ICEIE-certified [product]" (product efficacy)
+- Pearson → "Assured by Pearson [programme]" + Credly badges (org QA process)
+- NCFE → "NCFE-accredited customised qualification" / "NCFE-endorsed programme"
+- ASIC/CIS/Cognia → institution seal ONLY if the org is accredited as an institution
+
+## RECOMMENDATION
+1. NOW: EduEvidence-certify Sabi (~$250, days). Display "EduEvidence-certified EdTech."
+2. Keep "Cambridge-aligned" for Grade 4 curriculum; never upgrade to "accredited".
+3. Real credibility lever = pilot data (0.30 SD TaRL) + named expert/UBEC sign-off,
+   NOT a purchasable badge. Ties to the external-validator step in the 6-month plan.
+4. Post-pilot (2027+, after 18 mo delivery): Assured by Pearson for a brand-name QA seal.
+
+## OPEN GAPS (no verified claims yet — absence of evidence, not evidence of absence)
+IB, WASC, COBIS, Oxford AQA International, ISO 21001, EdReports, Ofqual/RQF awarding-
+org routes, UNESCO/UNICEF recognition, African Union/ADEA. Follow-up research warranted.
+
+## FOLLOW-UP SWEEP (2026-06-05, 107 agents — closing the gaps above)
+- ISO 21001:2018 = the ONE genuinely org-agnostic option. Scope expressly covers "any
+  organization that uses a curriculum to support the development of competence through
+  teaching, learning or research, regardless of type, size or method of delivery." So a
+  non-school voice/web tutor IS eligible in principle. Excludes pure content/product
+  vendors. Cheapest near-term LEGIT path among verified options. (Concrete cost/timeline
+  for a tiny org NOT nailed down — needs a quote from an accredited cert body.)
+- UNESCO prizes are CASH AWARDS, NOT seals, and all require third-party NOMINATION +
+  ~1yr track record E4E lacks now:
+  • King Hamad Bin Isa Al-Khalifa Prize for ICT in Education — 2 winners/yr, US$25k each,
+    medal+diploma. Self-nomination BARRED; must be nominated by a National Commission for
+    UNESCO or an NGO in official partnership; project implemented >=1 year. Non-school type
+    is NOT a disqualifier. Win → "laureate of the UNESCO King Hamad ... Prize."
+  • International Literacy Prizes (King Sejong + Confucius) — US$30k each, medal+diploma;
+    NGOs in literacy promotion eligible in principle; same nomination gate.
+- UNICEF Innovation/Venture Fund = equity-free investment up to $100k, restricted to
+  FOR-PROFIT open-source tech startups registered in a programme country. Explicitly NOT
+  nonprofits → E4E INELIGIBLE as structured. It's funding, not a recognition mark.
+- Net: no cheap self-earnable international seal in 6-12 mo. ISO 21001 is the only
+  eligible-in-principle near-term path; UNESCO prizes are aspirational post-pilot (need a
+  nominator + track record); UNICEF fund needs a for-profit entity.
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "voice assistant" Army OR military regulations RAG offline 2025 2026 startup
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:06:47 UTC
+========================================================================
+
+Search query: "voice assistant" Army OR military regulations RAG offline 2025 2026 startup
+
+----------------------------------------
+
+Web search results for query: ""voice assistant" Army OR military regulations RAG offline 2025 2026 startup"
+
+Links: [{"title":"Military Technology 2025 AI Hypersonic | RAGE X Intelligence","url":"https://ragex.co/defense/military-technology/"},{"title":"Military and government applications of human-machine ...","url":"https://www.pnas.org/doi/pdf/10.1073/pnas.92.22.10011"},{"title":"43rd Chief of Signal and US Army Signal School","url":"https://api.army.mil/e2/c/downloads/2025/11/14/0f2e5781/army-communicator-summer-2025.pdf"},{"title":"AI Assistants Shaping the Future in 2026","url":"https://acadcalendar.com/ai-assistants-shaping-the-future/"},{"title":"AI/ML-Enabled Voice-Commanded Autonomous Maneuver for Ground Combat Vehicles – Army SBIR|STTR Program","url":"https://armysbir.army.mil/topics/aiml-enabled-voice-commanded-autonomous-maneuver-ground-combat-vehicles/"},{"title":"How to Build a Voice Agent with RAG and Safety Guardrails | NVIDIA Technical Blog","url":"https://developer.nvidia.com/blog/how-to-build-a-voice-agent-with-rag-and-safety-guardrails/"},{"title":"LOUD AND CLEAR - USAASC","url":"https://asc.army.mil/web/news-loud-and-clear/"},{"title":"The US Army is preparing to train its first AI specialists • The Register","url":"https://www.theregister.com/2025/12/31/us_army_seeking_officers_willing/"},{"title":"Voice-controlled drones a military game-changer, Primordial Labs says","url":"https://www.defensenews.com/industry/techwatch/2025/03/04/voice-controlled-drones-a-military-game-changer-primordial-labs-says/"},{"title":"Military and Government Applications of Human-Machine Communication by Voice | Voice Communication Between Humans and Machines | The National Academies Press","url":"https://nap.nationalacademies.org/read/2308/chapter/26"}]
+
+Based on the search results, here's what I found regarding voice assistants, Army/military regulations, RAG (Retrieval-Augmented Generation), and offline capabilities in 2025-2026:
+
+## Military Voice Assistant Applications
+
+The US Army is seeking innovative solutions that will enable autonomous maneuvers in response to crew commands issued with natural language. Additionally, in 2025, Primordial Labs is providing the Army's "transformation in contact" brigades and divisions a minimum of 8,000 Anura licenses to support human-machine integrated formations experimentation.
+
+## RAG Technology Adoption
+
+Retrieval-Augmented Generation (RAG) is a technique in which the model queries an external knowledge base at inference time rather than relying solely on training data, and reduces hallucination rates while enabling assistants to work with proprietary or real-time data. Adoption of RAG in enterprise AI deployments increased by 67% between Q1 2025 and Q1 2026.
+
+## Voice Agents with RAG and Safety Features
+
+A tutorial teaches how to build a voice-powered RAG agent with guardrails using the latest NVIDIA Nemotron models released at CES 2026 for speech, RAG, safety, and reasoning.
+
+## AI Officer Training
+
+The new AI/ML officer area of concentration will begin accepting candidates from the Army's existing officer corps in January through the Volunteer Transfer Incentive Program, with plans to have all candidates formally reclassified by the end of the 2026 fiscal year.
+
+The search results don't contain specific information about Army/military regulations specifically governing voice assistants or dedicated offline startup requirements for 2025-2026.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

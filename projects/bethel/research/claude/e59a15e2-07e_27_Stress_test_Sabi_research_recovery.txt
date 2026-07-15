@@ -1,0 +1,116 @@
+========================================================================
+AGENT RESEARCH: Stress test: Sabi research recovery
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 04:36:50 UTC
+========================================================================
+
+You are a BRAND NEW Claude. You know NOTHING about Sabi or any project.
+
+Your task: Using ONLY the foundational research index and the research .txt files it points to, answer these questions about Sabi:
+
+1. Read `/Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/memory/FOUNDATIONAL_RESEARCH_INDEX.md` first
+2. Find ALL build sessions related to "E4E / Sabi" in that index
+3. For each Sabi build session, list the session ID, date, and number of research files
+4. Pick the 3 most important-looking research .txt files from the EARLIEST Sabi build session (the foundational curriculum research) and read them. Tell me what they contain.
+5. Pick the 3 most important-looking research .txt files from the HACKATHON session (Feb 27-28, session 7464be26) and read them. Tell me what they contain.
+6. Pick 3 research .txt files from the mega session `efd7d7d2` that are about Kathryn Kuhlman, Kenneth Hagin, or dream interpretation. Read them and tell me what they contain.
+
+After reading all 9 files, give me a summary: What foundational research was done for Sabi, and how would this research help spot problems with the product?
+
+End with: PASS or FAIL — did the index lead you to the right files?
+
+----------------------------------------
+
+Now I have all 9 files read. Here is the full analysis:
+
+---
+
+## All E4E / Sabi Build Sessions in the Index
+
+| # | Session ID | Date Started | Research Files |
+|---|-----------|-------------|----------------|
+| 1 | `3c482910` | 2026-02-04 | 48 |
+| 2 | `1f61b0ac` | 2026-02-18 | 44 |
+| 3 | `089265f6` | 2026-02-25 | 41 |
+| 4 | `f19ca767` | 2026-02-27 | 136 |
+| 5 | `7464be26` | 2026-02-27 (hackathon, Feb 27-28) | 74 |
+| 6 | `ff1faa52` | 2026-03-07 | 79 |
+| 7 | `bb7be0f1` | 2026-03-08 | 4 |
+| 8 | `efd7d7d2` | 2026-03-09 (mega session) | 260 |
+| 9 | `df072af5` | 2026-03-09 | 69 |
+| 10 | `296c88b8` | 2026-03-11 | 115 |
+| 11 | `d72670bf` | 2026-03-05 | 106 |
+| 12 | `86c89090` | 2026-03-16 | 3 |
+
+---
+
+## What the 9 Files Contain
+
+### EARLIEST SESSION (`3c482910`) -- Foundational Curriculum Research
+
+**File 1: Free OER curriculum search** (`3c482910-15c_00_WebSearch_free_open_educational_resources_curriculum_OER_acc.txt`)
+Surveys free, open educational resources for K-12: OER Commons (50,000+ materials), CK-12 Foundation, Khan Academy, Illustrative Mathematics, Open Up Resources, UnboundEd/EngageNY. Identifies standards-aligned curricula that could be adapted for Sabi's content layer.
+
+**File 2: Lagos out-of-school children** (`3c482910-15c_29_WebSearch_Lagos_state_out-of-school_children_number_2024_202.txt`)
+UNICEF data showing 18.3 million Nigerian children out of school (10 million primary, 8 million secondary). Only 63% of primary-age children attend regularly. Lagos state specifically brought 30,000 children back to school 2021-2024. This quantifies the target market.
+
+**File 3: GSMA Nigeria usage/coverage gap** (`3c482910-15c_37_WebSearch_GSMA_Nigeria_usage_gap_coverage_gap_feature_phone_.txt`)
+120 million Nigerians lack mobile internet access. Of those connected, nearly two-thirds in Sub-Saharan Africa use 3G smartphones or feature phones. Over half of non-users cite literacy/digital skills barriers. Rural-urban divide: rural adults 28% less likely to use mobile internet. Critical infrastructure constraint data for delivery channel decisions.
+
+### HACKATHON SESSION (`7464be26`) -- Feb 27-28
+
+**File 4: Mother tongue vs English instruction** (`7464be26-f82_03_WebSearch_mother_tongue_instruction_vs_English_Nigeria_learn.txt`)
+Research evidence is mixed: mother tongue instruction improves comprehension and motivation (0.159 SD improvement in math), but a 2024 study found English-taught students outperformed. Implementation challenges include lack of trained teachers and textbooks in indigenous languages. In urban Lagos, children's mother tongues often differ from community languages.
+
+**File 5: ElevenLabs pricing** (`7464be26-f82_16_WebSearch_ElevenLabs_pricing_plans_2026.txt`)
+Pricing tiers from Free (20 min/month) through Business. Conversational AI at 10 cents/minute on Creator/Pro, 8 cents/minute on annual Business. This is the voice synthesis cost data for the voice tutoring product.
+
+**File 6: Nigerian Pidgin in education** (`7464be26-f82_01_WebSearch_Nigerian_Pidgin_English_education_instruction_effe.txt`)
+Nigerian Pidgin creates challenges for English language teaching. Urban-rural disparities in language policy implementation are significant. A 2025 British Council project adapted Shakespeare into Pidgin. Teacher preparedness for multilingual pedagogy is low, especially in rural areas.
+
+### MEGA SESSION (`efd7d7d2`) -- Bethel/Spiritual Research
+
+**File 7: Kathryn Kuhlman "I Believe in Miracles"** (`efd7d7d2-3b9_187_WebSearch_Kathryn_Kuhlman_I_Believe_in_Miracles_PDF_full_tex.txt`)
+Search for full text PDF of Kuhlman's 1962 book. Found on Internet Archive (206 pages), Scribd (256 pages), and several PDF hosting sites. This is sourcing primary theological content for Bethel's faith teaching AI layer.
+
+**File 8: Kenneth Hagin "I Believe in Visions"** (`efd7d7d2-3b9_190_WebSearch_Kenneth_E_Hagin_I_Believe_in_Visions_PDF_full_text.txt`)
+Locates PDF sources for Hagin's personal account of visions of Jesus. Found direct PDF links, Internet Archive, and the official RHEMA store. Training data for Bethel's Spirit-led teaching framework.
+
+**File 9: John Paul Jackson dream interpretation framework** (`efd7d7d2-3b9_201_WebSearch_John_Paul_Jackson_dream_interpretation_framework_c.txt`)
+Jackson's 30+ year framework: 20 categories of dreams, universal symbols, parabolic principles, colors in dreams, spectrums of light. He interpreted 50,000+ dreams. His curriculum covers basic types/symbols through advanced interpretation. This provides the structured taxonomy for Bethel's dream interpretation feature.
+
+---
+
+## Summary: What Foundational Research Was Done for Sabi
+
+The research falls into three layers:
+
+1. **Market sizing and infrastructure constraints** (session `3c482910`): UNICEF data on 18.3 million out-of-school children, GSMA data on 120 million Nigerians without mobile internet, feature phone dominance in Sub-Saharan Africa, literacy as the primary barrier to mobile internet adoption, and the rural-urban digital divide.
+
+2. **Curriculum and pedagogy** (sessions `3c482910` and `7464be26`): Surveyed every major free OER platform (Khan Academy, CK-12, Cambridge Primary, Illustrative Mathematics), researched mother tongue vs. English instruction effectiveness (conflicting evidence), Nigerian Pidgin's role in education, and phonics/literacy pedagogy for non-readers.
+
+3. **Technology and cost modeling** (session `7464be26` and others): ElevenLabs voice synthesis pricing, Twilio/Africa's Talking voice API costs for Nigeria, Nigerian Pidgin speech recognition capabilities, and feature phone delivery constraints.
+
+The mega session `efd7d7d2` bridges into **Bethel** territory -- Kathryn Kuhlman, Kenneth Hagin, and dream interpretation frameworks -- representing the theological/spiritual content research for the companion app. This session also contains massive telephony infrastructure research (toll-free numbers, SIP trunking in Nigeria, Asterisk PBX) showing the team was simultaneously solving the "how do we deliver voice AI tutoring to feature phones in Lagos" problem.
+
+## How This Research Would Help Spot Product Problems
+
+This research would surface several critical risks:
+
+- **Delivery channel mismatch**: If building a smartphone app when two-thirds of the target audience uses feature phones or 3G devices, the product misses its market. The GSMA data forces the question: voice calls and USSD, not apps.
+- **Language of instruction trap**: The conflicting evidence on mother tongue vs. English means picking the wrong language could hurt learning outcomes. Pidgin complicates things further -- it is the lingua franca but has no standardized educational materials.
+- **Cost viability**: At 8-10 cents/minute for ElevenLabs voice synthesis, a product serving millions of children faces unsustainable unit economics unless costs are driven down (hence the later research into YarnGPT, Chatterbox, and self-hosted TTS).
+- **Literacy bootstrapping paradox**: If 50%+ of non-internet users cite literacy as the barrier, the product must teach literacy without assuming literacy -- pure voice/audio-first design is non-negotiable.
+- **Infrastructure reality**: 120 million people offline means the product cannot assume internet connectivity. The toll-free/SIP trunk research in `efd7d7d2` shows the team recognized this and was exploring phone-call-based delivery.
+
+---
+
+**PASS** -- The index led directly to the correct files across three different project directories (`-Users-naomiivie-Education-for-Equality/agent-research/` for Sabi sessions, and the Bethel project's `agent-research/` for the meta session). Session IDs, dates, file counts, and filenames all matched precisely. The index correctly identified 12 E4E/Sabi build sessions and the research files mapped to the right content areas.
+agentId: a0619a3336e437cab (use SendMessage with to: 'a0619a3336e437cab' to continue this agent)
+<usage>total_tokens: 68091
+tool_uses: 24
+duration_ms: 188539</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

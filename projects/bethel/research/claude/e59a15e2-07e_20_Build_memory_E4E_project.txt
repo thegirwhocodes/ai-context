@@ -1,0 +1,69 @@
+========================================================================
+AGENT RESEARCH: Build memory: E4E project
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:31:19 UTC
+========================================================================
+
+You are building the memory system for Education for Equality.
+
+Read these files in order:
+1. ~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/MEMORY.md
+2. All memory files it references
+3. "/Users/naomiivie/Education for Equality/.claude-sessions/INDEX.txt"
+4. The last 5 session transcripts listed there (read first 500 lines and last 200 lines of each)
+5. ~/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/INDEX.txt
+
+Then CREATE these memory files at ~/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/:
+
+- user_naomi.md (type: user) — who she is, role, preferences, work style
+- project_e4e_vision.md (type: project) — mission, two channels (curriculum app + Sabi voice AI), target audience, core insight
+- project_e4e_tech.md (type: project) — all tech: Next.js, Sabi voice pipeline, Hetzner, Africa's Talking, Whisper, Chatterbox TTS, Supabase
+- project_e4e_milestones.md (type: project) — timeline: MIT hackathon 2nd place $3K, UNICEF app, Technovation, server deployment, Chatterbox deploy
+- project_e4e_status.md (type: project) — what's built, what's pending, next deadlines
+- project_bakame.md (type: project) — Bakame discovery, planned partnership, IP tension, independent decision
+- feedback_e4e.md (type: feedback) — her corrections and work preferences
+- reference_e4e.md (type: reference) — server IPs, grant links, contact names, URLs
+
+Every file MUST have frontmatter:
+---
+name: ...
+description: ...
+type: ...
+sessions: [list of session IDs where this info came from]
+---
+
+Finally, UPDATE MEMORY.md to index all files.
+
+Be thorough and specific — include dates, dollar amounts, names, URLs where known. Use the Write tool for every file.
+
+----------------------------------------
+
+All 9 files created successfully. Here is a summary of what was built:
+
+**Memory system created at** `/Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/` with 9 files:
+
+1. **MEMORY.md** -- Updated index linking all 8 memory files organized by type (user, project, feedback, reference)
+
+2. **user_naomi.md** (type: user) -- Naomi's identity (Wesleyan, nivie@wesleyan.edu), work style (fast-paced, voice-dictated, expects thoroughness), decision-making approach (bold, cost-conscious), communication preferences (tables, short answers, "bro" register)
+
+3. **project_e4e_vision.md** (type: project) -- Mission (20M+ out-of-school Nigerian children), two-channel architecture (Sabi voice primary, Curriculum App secondary), pedagogical philosophy (TaRL, "naira-first", adaptive scaffolding), evidence base with specific studies and effect sizes
+
+4. **project_e4e_tech.md** (type: project) -- Full stack: Next.js 16 curriculum app, Sabi voice pipeline (Whisper + Claude Haiku + Chatterbox Turbo TTS with Naomi's cloned voice), Hetzner GEX44 GPU server (136.243.8.51, RTX 4000 Ada, 20GB VRAM), Supabase schema, Africa's Talking telephony, cost models ($0.28/child PoC to $2-4K/mo at 1M children), SSH/restart commands, and the "no Rasa" decision
+
+5. **project_e4e_milestones.md** (type: project) -- 8 phases from Jan 2026 inception through present: foundation, deep research, MIT hackathon (2nd place, $3K), post-hackathon IP/legal, lesson script marathon (240+ lessons), self-hosted infrastructure (Mar 10-13), copyright/legal, and ongoing work
+
+6. **project_e4e_status.md** (type: project) -- What's live (curriculum app, GPU server, web demo, 9 lesson modules), what's pending (remaining scripts, script engine, toll-free solution, AfriSpeech fine-tuning, legal registrations), deadlines (CcHub Mar 30), awaiting results (UNICEF, Technovation, Harvard)
+
+7. **project_bakame.md** (type: project) -- Full Bakame timeline: discovery (Feb 25-26), MIT hackathon build, IP tension (Mar 3-4), legal analysis (no NDA, ideas not copyrightable, different markets), independence decision, current fully-independent status
+
+8. **feedback_e4e.md** (type: feedback) -- Critical corrections ("Sabi is the delivery channel" not the product, Bakame is not a partner, EKOEXCEL attribution), work preferences (thoroughness, build quality, document style for PDF export, IP protection in external docs, cost consciousness, don't over-research)
+
+9. **reference_e4e.md** (type: reference) -- Server IP, SSH commands, URLs, GitHub repos, all team/advisory contacts with roles, funding table (MIT $3K won, Wesleyan $1.2K received, UNICEF/Technovation/CcHub pending with amounts and dates), key file paths, legal structure plan with costs
+agentId: a320dfd966752cc3d (use SendMessage with to: 'a320dfd966752cc3d' to continue this agent)
+<usage>total_tokens: 116834
+tool_uses: 33
+duration_ms: 381415</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

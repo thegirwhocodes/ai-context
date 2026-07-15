@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "DTIC" "ADB" prefix limited distribution declassified public release
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:34:17 UTC
+========================================================================
+
+Search query: "DTIC" "ADB" prefix limited distribution declassified public release
+
+----------------------------------------
+
+Web search results for query: ""DTIC" "ADB" prefix limited distribution declassified public release"
+
+Links: [{"title":"DOD INSTRUCTION 5230.24 DISTRIBUTION STATEMENTS ON DOD TECHNICAL INFORMATION","url":"https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf"},{"title":"Ft. Belvoir, VA 22060 Distribution Statements and Their Corresp","url":"https://discover.dtic.mil/wp-content/uploads/2018/09/distribution_statements_and_reasonsSept2018.pdf"},{"title":"Marking Documents – Defense Technical Information Center","url":"https://discover.dtic.mil/marking-documents/"},{"title":"Technical Reports – Defense Technical Information Center","url":"https://discover.dtic.mil/technical-reports/"},{"title":"UNCLASSIFIED AD NUMBER LIMITATION CHANGES TO: FROM: AUTHORITY","url":"https://apps.dtic.mil/sti/pdfs/AD0429018.pdf"},{"title":"Products-DSB – Science, Technology and Innovation Board","url":"https://stib.cto.mil/products-dsb/"},{"title":"Declassified AD Document Index","url":"https://apps.dtic.mil/sti/citations/ADA016500"},{"title":"DoD Records - Executive Services Directorate","url":"https://www.esd.whs.mil/FOID/DoD-Records/"},{"title":"Dtic","url":"https://apps.dtic.mil/sti/pdfs/ADB002159.pdf"},{"title":"Strike Operations - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADB159193.pdf"}]
+
+Based on the search results, I can provide you with information about the DTIC ADB prefix and its relationship to declassified and limited distribution documents:
+
+AD numbers in DTIC begin with prefixes such as AD0, ADA, ADB, ADP, or ADC, followed by digits. The ADB prefix is one of several ways DTIC identifies documents in its collection.
+
+Regarding declassification and distribution limitations:
+
+A consolidated index lists over 46,000 technical reports originally accessioned as classified, but later declassified by automatic time-phased regrading action or by specific reclassification review.
+
+For documents with limited distribution status, those classified as Limited Distribution (FOUO, CUI, Distribution B, C, or D) can be accessed by government-issued CAC card holders only. In contrast, technical reports found on DTIC's public website will only include reports designated as unclassified and unlimited information.
+
+The search results indicate that documents in DTIC's system are marked with distribution statements to indicate their access restrictions, and declassified documents may retain limited distribution markings depending on their content and sensitivity.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

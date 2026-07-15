@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://dxli94.github.io/WLASL/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:37:22 UTC
+========================================================================
+
+URL: https://dxli94.github.io/WLASL/
+Extraction prompt: Extract ALL benchmark results and accuracy numbers. Find any leaderboard or results table showing model performance on WLASL100, WLASL300, WLASL1000, WLASL2000. Include top-1, top-5, top-10 for every model listed. Every number.
+
+----------------------------------------
+
+I cannot provide the benchmark results and accuracy numbers you requested, as they are **not present in the webpage content** provided.
+
+The page contains:
+- General information about WLASL (the dataset description)
+- Download and licensing information
+- Citation details for related papers
+- Contact information
+
+However, it does **not include** any leaderboard, results table, or performance metrics for models tested on WLASL100, WLASL300, WLASL1000, or WLASL2000 subsets. The actual benchmark results would likely be found in the linked research papers themselves (available via arXiv or the conference proceedings) rather than on this homepage.
+
+To find these benchmark numbers, you would need to access the full research papers cited, particularly the WACV 2020 paper or the CVPR 2020 paper referenced on this page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

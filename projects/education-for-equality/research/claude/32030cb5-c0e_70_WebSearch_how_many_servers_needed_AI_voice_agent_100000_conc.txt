@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: how many servers needed AI voice agent 100000 concurrent users infrastructure sc
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 06:56:23 UTC
+========================================================================
+
+Search query: how many servers needed AI voice agent 100000 concurrent users infrastructure scaling
+
+----------------------------------------
+
+Web search results for query: "how many servers needed AI voice agent 100000 concurrent users infrastructure scaling"
+
+Links: [{"title":"What Infrastructure Do Conversational AI Voice Agents Require for Scale? - Tabbly","url":"https://www.tabbly.io/blogs/what-infrastructure-do-conversational-ai-voice-agents-require-for-scale"},{"title":"Top 10 AI Agent Platforms for High-Volume Support","url":"https://getzowie.com/blog/top-10-best-scalable-ai-customer-service-solutions"},{"title":"The 7 best AI voice agents in 2026: I tested the top platforms","url":"https://www.ringly.io/blog/ai-voice-agent"},{"title":"GitHub - livekit/agents: A framework for building realtime voice AI agents 🤖🎙️📹","url":"https://github.com/livekit/agents"},{"title":"Best 10 AI voice agents for contact centers and enterprises in 2025 (tested and reviewed)","url":"https://synthflow.ai/blog/best-10-ai-voice-agents-for-contact-centers-and-enterprises-tested-and-reviewed"},{"title":"Voice AI Agent Architecture Patterns: How to Design Agents That Scale - Bluejay","url":"https://getbluejay.ai/resources/voice-ai-agent-architecture"},{"title":"10 Lessons Learned Building Voice AI Agents","url":"https://www.agora.io/en/blog/lessons-learned-building-voice-ai-agents/"},{"title":"Top 10 AI Voice Agent Platforms Guide (2026) - Vellum AI","url":"https://www.vellum.ai/blog/ai-voice-agent-platforms-guide"},{"title":"Top Voice AI Companies Transforming Business","url":"https://www.goodcall.com/voice-ai/top-voice-ai-companies"},{"title":"Voice AI Agents with Carrier-Grade Voice Quality","url":"https://telnyx.com/resources/top-voice-ai-providers"}]
+
+Based on the search results, here's what you need to know about infrastructure scaling for AI voice agents handling 100,000 concurrent users:
+
+## Hardware Requirements
+
+At minimum, you need GPU-accelerated servers (NVIDIA T4 or better) for model inference, 16-32 core CPUs for audio processing, 64GB+ RAM per node, high-bandwidth network connectivity (100+ Mbps per 100 concurrent calls), and storage systems. Memory allocation of 64-128GB RAM per server to handle multiple concurrent sessions and auto-scaling capabilities to dynamically adjust resources based on call volume are essential.
+
+## Handling Per-Server Concurrency
+
+A critical real-world finding: a single server instance could only handle three or four concurrent users when the agent was actively engaged in conversation. Unlike a traditional LLM that processes a request and moves on, these agents had to maintain persistent connections. This means for 100,000 concurrent users, you'd need substantial horizontal scaling with thousands of server instances.
+
+## Database Scaling Challenges
+
+At 10,000 concurrent calls, each call might write to the database 5–20 times (session updates, transcripts, tool results, call summaries), that's 50,000–200,000 writes per second. Most traditional databases can't handle that. Solutions include Redis for session state: Sub-millisecond reads/writes. Message queues (RabbitMQ, Kafka) for decoupled processing. Time-series databases (ClickHouse, TimescaleDB) for analytics and call metadata.
+
+## Managed Platforms vs. Self-Hosting
+
+For such a large scale, many organizations use managed platforms. Some platforms support up to 1 million concurrent calls, eliminating the need to build custom infrastructure from scratch.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

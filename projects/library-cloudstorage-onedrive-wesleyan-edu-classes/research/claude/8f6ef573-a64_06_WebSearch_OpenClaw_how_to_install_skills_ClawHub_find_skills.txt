@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw how to install skills ClawHub find skills automatic
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:31:20 UTC
+========================================================================
+
+Search query: OpenClaw how to install skills ClawHub find skills automatic
+
+----------------------------------------
+
+Web search results for query: "OpenClaw how to install skills ClawHub find skills automatic"
+
+Links: [{"title":"Skills - OpenClaw","url":"https://docs.openclaw.ai/tools/skills"},{"title":"GitHub - openclaw/clawhub: Skill Directory for OpenClaw","url":"https://github.com/openclaw/clawhub"},{"title":"GitHub - VoltAgent/awesome-openclaw-skills: The awesome collection of OpenClaw Skills. Formerly known as Moltbot, originally Clawdbot.","url":"https://github.com/VoltAgent/awesome-openclaw-skills"},{"title":"clawhub by openclaw/openclaw - Skills.sh","url":"https://skills.sh/openclaw/openclaw/clawhub"},{"title":"OpenClaw — Personal AI Assistant","url":"https://openclaw.ai/"},{"title":"OpenClaw Tutorial: Installation to First Chat Setup | Codecademy","url":"https://www.codecademy.com/article/open-claw-tutorial-installation-to-first-chat-setup"},{"title":"How to Run OpenClaw with DigitalOcean | DigitalOcean","url":"https://www.digitalocean.com/community/tutorials/how-to-run-openclaw"},{"title":"Setting Up Skills In Openclaw. I continued my tets/usage of Openclaw… | by Nwosu Rosemary | Feb, 2026 | Medium","url":"https://nwosunneoma.medium.com/setting-up-skills-in-openclaw-d043b76303be"},{"title":"OpenClaw Full Tutorial for Beginners","url":"https://www.freecodecamp.org/news/openclaw-full-tutorial-for-beginners/"},{"title":"ClawHub","url":"https://clawhub.ai/"}]
+
+Based on the search results, here's information about how to install skills in OpenClaw using ClawHub:
+
+## Automatic Skill Installation
+
+The basic command to automatically find and install skills is `clawhub sync --all`. By default, clawhub installs into ./skills under your current working directory (or falls back to the configured OpenClaw workspace). OpenClaw picks that up as <workspace>/skills on the next session.
+
+## ClawHub Overview
+
+ClawHub is the public skills registry for OpenClaw, which you can browse at https://clawhub.com and use to discover, install, update, and back up skills.
+
+## GUI Installation Method
+
+You can install skills in the GUI by navigating to the Skills section in the browser dashboard. For example, to integrate with Google Calendar, search for calendar, and click on Install.
+
+## Available Skills
+
+OpenClaw's public registry (ClawHub) hosts 5,705 community-built skills as of February 7, 2026.
+
+## Security Considerations
+
+It's recommended to treat third-party skills as untrusted code and read them before enabling. Additionally, OpenClaw has a VirusTotal partnership that provides security scanning for skills. Before installing a skill, visit its page on ClawHub and check the VirusTotal report to see if it's flagged as risky.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

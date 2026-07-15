@@ -1,0 +1,102 @@
+========================================================================
+AGENT RESEARCH: Research Chequers Financial Mgmt
+Session: 78e41aad-996d-4a9e-b91c-9381e28d050a
+Time: 2026-03-29 19:31:24 UTC
+========================================================================
+
+Research Chequers Financial Management (RIA / Registered Investment Advisor). Find:
+- Location, AUM (assets under management), founding year
+- Number of advisors/employees
+- Client focus / niche
+- Any recent news about growth, awards, or leadership
+- Fee structure (fee-only, fee-based?)
+- What makes them attractive as an acquisition target
+
+Return a concise summary of findings. This is research only, no code.
+
+----------------------------------------
+
+I now have a comprehensive picture. Here is the summary.
+
+---
+
+## Chequers Financial Management -- Research Summary
+
+### Basics
+- **Location:** 434 Jackson Street, Suite A, San Francisco, CA 94111 (HQ); second office in Meridian, ID
+- **Founded:** ~2015-2016 (Megan Gorman started building the firm in 2015; SEC registration was 2016)
+- **AUM:** Approximately **$1.0-1.1 billion** in regulatory assets under management (per most recent Form ADV)
+- **CRD Number:** 175209
+- **Registered with:** SEC
+- **Custodian:** Charles Schwab & Co.
+
+### Leadership & Team
+- **Megan Gorman** -- Founder & Managing Partner. Attorney (J.D., Rutgers Law; former Goldman Sachs Ayco). Senior contributor at Forbes. Author of *All the Presidents' Money* (Simon & Schuster / Wall Street Journal feature). Board trustee at NEFE (National Endowment for Financial Education).
+- **Nicole Tanenbaum** -- Partner & Chief Investment Officer/Strategist. Background at Robertson Stephens, ICONIQ Capital, Watershed Asset Management.
+- **~12-14 total employees**, of which **5 are licensed advisors**
+- Advisor-to-client ratio: approximately 1:49
+
+### Client Focus / Niche
+- **High-net-worth and ultra-high-net-worth families** -- entrepreneurs, corporate executives, inherited wealth
+- Multi-generational wealth management (some relationships spanning 20+ years)
+- Services extend to trusts, estates, charitable foundations, and business entities
+- Serves clients in **6 states**: CA, FL, NJ, NY, TX, WA
+- ~215-246 clients with an **average client balance of ~$4.3-4.7 million**
+- Positioning: "Personal CFO" -- integrated tax, estate, liquidity, and investment planning
+
+### Fee Structure
+- **Fee-only** (no commissions)
+- Three fee types: **percentage of AUM** (typical range 0.50%-2.00%), **hourly charges** ($100-$300/hr), and **fixed fees** for specific engagements
+- This is a clean fee-only model, which is attractive from a fiduciary/compliance standpoint
+
+### Investment Approach
+- Portfolios primarily composed of **passively managed index funds and ETFs** (equity and fixed income)
+- Also invests in alternative and private securities
+- Strategic and tactical asset allocation models
+
+### Awards & Recognition
+- Named one of the **Top 50 Fastest Growing RIAs** in the U.S. by FA Magazine (prior year; did not appear on the 2025 list)
+- Named one of the **Best Financial Advisory Firms of 2024** by USA Today
+- **Women-owned firm** -- highlighted in FINTRX's spotlight on women-owned RIAs with $400M+ AUM
+- Megan Gorman featured in Barron's, Citywire RIA, and Authority Magazine profiles
+- Media presence: WSJ, Washington Post, CNN Money, CNBC, Forbes (Gorman is a senior contributor)
+
+### Recent News
+- No evidence of any acquisition, merger, or outside investment as of the search date
+- Gorman's book *All the Presidents' Money* has been a visibility driver
+- The firm is actively hiring ("growing and searching for the most qualified professionals")
+- Clean regulatory record -- zero disciplinary alerts; one conflict-of-interest flag related to soft-dollar arrangements (common and minor)
+
+### What Makes Them Attractive as an Acquisition Target
+
+1. **Billion-dollar AUM milestone** crossed, which is a key threshold acquirers look for -- it signals operational maturity and institutional-level infrastructure.
+2. **Fee-only, clean compliance profile** -- no commission-based conflicts, zero disciplinary history. This simplifies due diligence.
+3. **UHNW niche with sticky clients** -- average balances of $4.3-4.7M with multi-generational relationships mean low attrition risk and high lifetime value per client.
+4. **Small team, high revenue per advisor** -- 5 advisors managing $1B+ means each advisor manages ~$200M, well above industry median. Lean operations = attractive margins.
+5. **Strong founder brand but potential key-person risk** -- Gorman's media presence (Forbes, Barron's, WSJ) is a growth engine but also a concentration risk, which an acquirer could mitigate by deepening the bench. Tanenbaum as CIO provides some leadership depth.
+6. **Women-owned differentiation** -- in an industry focused on diversity, this is a genuine differentiator for acquirers building a diverse portfolio of firms.
+7. **Tax-planning DNA** -- the firm's integration of tax and financial planning (driven by Gorman's legal background) is a high-value capability that's difficult to replicate and commands premium fees.
+8. **Geographic expansion potential** -- currently licensed in only 6 states with a small Idaho office. An acquirer could scale the model nationally.
+9. **Passive/index investment approach** -- low-cost, scalable portfolios mean the investment management side doesn't require expensive active management infrastructure.
+
+---
+
+Sources:
+- [Chequers Financial Management -- Homepage](https://www.chequersfinancial.com/)
+- [SEC IAPD -- Chequers Financial Management LLC (CRD 175209)](https://adviserinfo.sec.gov/firm/summary/175209)
+- [AdvisorSearch.org -- Chequers Financial Management Review](https://advisorsearch.org/rias/chequers-financial-management-175209)
+- [FINTRX -- Women-Owned Firms with 400M+ AUM](https://www.fintrx.com/blog/ria-industry-spotlight-3-women-owned-firms-with-400m-in-aum)
+- [SmartAdvisorMatch -- Chequers Financial Management](https://smartadvisormatch.com/advisor-firm-network/california/chequers-financial-management-llc-175209)
+- [Steve Sanduski / Barron's -- Megan Gorman Interview](https://stevesanduski.com/barrons-megan-gorman/)
+- [Citywire RIA -- Megan Gorman Profile](https://citywire.com/ria/news/loud-and-proud-chequers-financial-management-s-megan-gorman/a1272969)
+- [NEFE -- Megan Gorman Board Bio](https://www.nefe.org/about/our-team/board/gorman-megan.aspx)
+- [Authority Magazine -- Women Leading Finance: Megan Gorman](https://medium.com/authority-magazine/women-leading-the-finance-industry-megan-gorman-of-chequers-financial-management-on-the-5-things-793b5f6160d6)
+- [Indyfin -- Chequers Financial Management](https://indyfin.com/financial-advisor-firm/california/san-francisco/chequers-financial-175209/)
+agentId: a6ca90fff19c92a08 (use SendMessage with to: 'a6ca90fff19c92a08' to continue this agent)
+<usage>total_tokens: 28421
+tool_uses: 18
+duration_ms: 121204</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

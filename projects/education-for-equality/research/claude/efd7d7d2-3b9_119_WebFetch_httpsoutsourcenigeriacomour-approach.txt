@@ -1,0 +1,61 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://outsourcenigeria.com/our-approach/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 08:36:33 UTC
+========================================================================
+
+URL: https://outsourcenigeria.com/our-approach/
+Extraction prompt: Extract and explain everything on this page in simple, plain English. What services do they offer? How does their approach work? What do all the business jargon terms actually mean?
+
+----------------------------------------
+
+# Outsourcing Nigeria - Service Overview
+
+## What They Do
+
+Outsourcing Nigeria (also called Omni Channel) is a company based in Lagos that helps businesses with outsourced work. They're located at "35A Bode Thomas Street, Surulere, Lagos" and you can reach them at **08066938330** or **07001111444**.
+
+## Main Services Offered
+
+**Customer Support & Call Centers:**
+- Customer service representatives
+- Call center solutions
+- Business phone systems (0700 and 0800 toll-free numbers)
+- WhatsApp customer support solutions
+
+**Sales & Recruitment:**
+- Sales development representatives (inbound and outbound)
+- Recruitment process outsourcing
+- Sales training and recruiting/placement services
+- Marketing support
+
+**Business Operations:**
+- Business Process Outsourcing (BPO) - handling routine business tasks
+- Virtual assistants
+- Co-working spaces and office support
+- CRM software and ticketing systems
+
+**Industry-Specific Staffing:**
+They supply workers for agriculture, aviation, construction, food manufacturing, telecommunications, hospitality, logistics, manufacturing, retail, renewable energy, oil & gas, and waste management.
+
+## How Their Process Works
+
+They follow a five-step approach:
+
+1. **Initial Contact** - Their sales team discusses your project needs and budget
+2. **Analysis** - Experts propose a solution with scope and timeline
+3. **Team Selection** - Best-fit workers or teams are chosen
+4. **Contract Setup** - Agreement finalized with sprint planning
+5. **Deployment** - Workers integrate with your team; they handle reviews and administration
+
+## Pricing Models Explained
+
+**Fixed Price:** You pay one set amount. Best when project details are clear and documented.
+
+**Retainer:** Monthly or bi-weekly payments. Best when project scope is unclear or evolving.
+
+**Hourly:** Pay for time spent. Best for rough ideas still being defined.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

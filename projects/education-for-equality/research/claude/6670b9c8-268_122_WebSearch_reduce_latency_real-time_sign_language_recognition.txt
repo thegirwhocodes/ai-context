@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: reduce latency real-time sign language recognition MediaPipe optimization 2025
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 11:18:18 UTC
+========================================================================
+
+Search query: reduce latency real-time sign language recognition MediaPipe optimization 2025
+
+----------------------------------------
+
+Web search results for query: "reduce latency real-time sign language recognition MediaPipe optimization 2025"
+
+Links: [{"title":"Full article: MP-GestLSTM: real time gesture detection using MediaPipe and LSTM","url":"https://www.tandfonline.com/doi/full/10.1080/21642583.2025.2587853"},{"title":"An integrated mediapipe-optimized GRU model for Indian sign language recognition | Scientific Reports","url":"https://www.nature.com/articles/s41598-022-15998-7"},{"title":"Real-Time Sign Language Recognition and Translation Using MediaPipe and LSTM-Based Deep Learning","url":"https://www.researchgate.net/publication/394250427_Real-Time_Sign_Language_Recognition_and_Translation_Using_MediaPipe_and_LSTM-Based_Deep_Learning"},{"title":"Enhancing Sign Language Detection through Mediapipe and Convolutional Neural Networks (CNN)","url":"https://arxiv.org/html/2406.03729v1"},{"title":"MediaPipe‐LSTM‐Enhanced Framework for Real‐Time Dynamic Sign Language Recognition in Inclusive Communication Systems - Anithadevi - 2025 - Engineering Reports - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/full/10.1002/eng2.70142"},{"title":"SLRNet: A Real-Time LSTM-Based Sign Language Recognition System","url":"https://arxiv.org/html/2506.11154v1"},{"title":"Comparative Evaluation of LSTM and 3D CNN Models in a Hybrid System for IoT-Enabled Sign-to-Text Translation in Deaf Communities","url":"https://www.mdpi.com/2227-9709/13/2/27"},{"title":"(PDF) Exploring MediaPipe optimization strategies for real-time sign language recognition: Strategies for Real-Time Sign Language Recognition","url":"https://www.researchgate.net/publication/375092588_Exploring_MediaPipe_optimization_strategies_for_real-time_sign_language_recognition_Strategies_for_Real-Time_Sign_Language_Recognition"},{"title":"GitHub - arpita739/Real-time-Vernacular-Sign-Language-Recognition-using-MediaPipe-and-Machine-Learning: The deaf-mute community have undeniable communication problems in their daily life. Recent developments in artificial intelligence tear down this communication barrier. The main purpose of this paper is to demonstrate a methodology that simplified Sign Language Recognition using MediaPipe’s open-source framework and machine learning algorithm. The predictive model is lightweight and adaptable to smart d","url":"https://github.com/arpita739/Real-time-Vernacular-Sign-Language-Recognition-using-MediaPipe-and-Machine-Learning"},{"title":"(PDF) MediaPipe‐LSTM‐Enhanced Framework for Real‐Time Dynamic Sign Language Recognition in Inclusive Communication Systems","url":"https://www.researchgate.net/publication/393918618_MediaPipe-LSTM-Enhanced_Framework_for_Real-Time_Dynamic_Sign_Language_Recognition_in_Inclusive_Communication_Systems"}]
+
+Based on the web search results, here's what I found about reducing latency in real-time sign language recognition using MediaPipe optimization in 2025:
+
+## Key Optimization Strategies
+
+Model optimization techniques include quantization and pruning for faster inference, which are critical for reducing latency. Additionally, a sliding window mechanism updates predictions frame-by-frame to reduce jitter, enabling smoother real-time performance.
+
+## Architecture Approaches
+
+Recent 2025 research focuses on hybrid approaches combining multiple techniques:
+
+- Enhanced stacked LSTM networks integrated with the MediaPipe holistic framework improve categorization performance and enable models to collect fine-grained motion data required for sign language recognition.
+
+- MediaPipe-BiLSTM architectures on mobile devices achieved high accuracy with low latency.
+
+- Hybrid deep learning systems combining LSTM networks for static gesture recognition and 3D CNN for dynamic gesture recognition run on Raspberry Pi platforms using MediaPipe for landmark extraction, allowing on-device inference without relying on cloud processing.
+
+## Performance Results
+
+Systems demonstrate high classification accuracy, low latency, and effective performance in webcam-based environments, supporting seamless communication for the hearing-impaired community.
+
+Multi-modal methodologies amalgamating four distinct LSTM models processing skeletal coordinates from MediaPipe significantly elevate SLR model accuracy while preserving real-time capabilities.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

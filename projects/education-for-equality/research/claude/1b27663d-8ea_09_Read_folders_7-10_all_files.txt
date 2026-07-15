@@ -1,0 +1,32 @@
+========================================================================
+AGENT RESEARCH: Read folders 7-10 all files
+Session: 1b27663d-8ea5-4b35-8186-373ddb166724
+Time: 2026-04-15 21:36:25 UTC
+========================================================================
+
+Read EVERY .md file in these four folders completely. Return AT LEAST 90% of the substantive content — every stat, every name, every cost figure, every decision, every date, every table. Do NOT summarize.
+
+Folders:
+1. /Users/naomiivie/Education for Equality/7. Legal & IP/ — read ALL .md files
+2. /Users/naomiivie/Education for Equality/8. Partnerships & Outreach/ — read ALL .md files
+3. /Users/naomiivie/Education for Equality/9. On the Ground/ — read ALL .md and .pdf files (use Read with pages parameter for PDFs)
+4. /Users/naomiivie/Education for Equality/10. Bakame/ — read ALL .md files
+
+Also read these root-level files:
+- /Users/naomiivie/Education for Equality/SABI_PATH_TO_SCALE.md
+- /Users/naomiivie/Education for Equality/GOVERNMENT_EDTECH_PRICING_RESEARCH.md
+
+List the files using Glob first, then read each one fully.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a56f44ab49d3805c1 (internal ID - do not mention to user. Use SendMessage with to: 'a56f44ab49d3805c1' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/1b27663d-8ea5-4b35-8186-373ddb166724/tasks/a56f44ab49d3805c1.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

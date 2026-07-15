@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq Zapier trigger upload file automation webhook
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:33:35 UTC
+========================================================================
+
+Search query: Tactiq Zapier trigger upload file automation webhook
+
+----------------------------------------
+
+Web search results for query: "Tactiq Zapier trigger upload file automation webhook"
+
+Links: [{"title":"Tactiq Webhooks by Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/webhook"},{"title":"Tactiq Integrations | Connect Your Apps with Zapier","url":"https://zapier.com/apps/tactiq/integrations"},{"title":"5 ways to automate Tactiq with Zapier | Zapier","url":"https://zapier.com/blog/automate-tactiq/"},{"title":"Tactiq Files By Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/files-by-zapier"},{"title":"Tactiq integration for Zapier | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/10575233-tactiq-integration-for-zapier"},{"title":"Send webhooks in Zaps – Zapier","url":"https://help.zapier.com/hc/en-us/articles/8496326446989-Send-webhooks-in-Zaps"},{"title":"Tactiq Email by Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/email"},{"title":"Tactiq ChatGPT (OpenAI) Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/tactiq/integrations/chatgpt"},{"title":"Uploadcare Webhooks by Zapier Integration - Quick Connect - Zapier","url":"https://zapier.com/apps/uploadcare/integrations/webhook"},{"title":"Tactiq MCP Server - MCP AI | Zapier","url":"https://zapier.com/mcp/tactiq"}]
+
+I've completed the web search for your query. Here are the key findings about Tactiq Zapier trigger upload file automation webhook:
+
+## Integration Overview
+
+Tactiq integrates with Zapier, allowing you to automate workflows and connect Tactiq with other applications, such as Notion, Google Docs, Slack, and more.
+
+## Trigger Functionality
+
+The primary trigger in this integration is "when a meeting transcript is ready." When Tactiq generates a meeting transcript, Zapier sends the transcript data to a designated webhook.
+
+## File Upload Automation
+
+With an automated workflow, you can automatically add records to your tool of choice each time Tactiq generates a new transcript. For example, you can automatically upload transcripts to Google Drive or Dropbox, creating either a text file or an organized document from the meeting notes.
+
+## Webhook Integration
+
+Webhooks simply POST data (or JSON) to a specific URL every time we see something new. Webhooks by Zapier offers GET, POST, PUT methods, which include automatic data parsing.
+
+## Setup Instructions
+
+To set up the integration, go to the Tactiq Dashboard, navigate to Account & Settings, and then go to Integrations. Under Automation, select Zapier to be redirected to the Tactiq integration for Zapier page.
+
+This integration enables you to automatically route meeting transcripts to various storage and productivity tools through automated webhooks and file upload actions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,30 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT voices list all available Nigerian TTS voices 2026
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 06:02:30 UTC
+========================================================================
+
+Search query: YarnGPT voices list all available Nigerian TTS voices 2026
+
+----------------------------------------
+
+Web search results for query: "YarnGPT voices list all available Nigerian TTS voices 2026"
+
+Links: [{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"Home","url":"https://www.ttsyoruba.com/"},{"title":"Nigerian Accent Text to Speech Voices Online","url":"https://easy-peasy.ai/text-to-speech/nigerian"},{"title":"Text to speech Nigerian accent","url":"https://www.narakeet.com/languages/nigerian-accent-text-to-speech/"},{"title":"Top Nigerian English text to speech voices in 2026","url":"https://www.getlisten2it.com/text-to-speech-voices/nigerian-english"},{"title":"How this UNILAG student built an AI model with local accent","url":"https://techpoint.africa/insight/how-unilag-student-created-yarngpt-ai/"},{"title":"Azeez Saheed unveils YarnGPT: A Nigerian-accented text-to-speech AI | Techpression","url":"https://techpression.com/azeez-saheed-unveils-yarngpt"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"Nigerian Text to Speech - Create AI Voice Content","url":"https://async.com/ai-voices/nigerian-text-to-speech"}]
+
+Based on the search results, here's what I found about YarnGPT's available Nigerian TTS voices:
+
+YarnGPT supports about 11 voices by default (6 males and 5 females). The specific voice names mentioned include Idera, Chinenye, and Osagie.
+
+The model can read Nigerian languages—Hausa, Igbo, and Yoruba, in addition to pronouncing English in a Nigerian accent.
+
+The search results show that YarnGPT was unveiled by Azeez Saheed, a University of Lagos undergraduate, on January 23, 2025, making it a very recent project.
+
+However, the search results don't provide a complete and detailed list of all 11 voices by name. For the most comprehensive and up-to-date list of all available voices, you may want to visit the official YarnGPT website or their Hugging Face repository where the model documentation is maintained.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

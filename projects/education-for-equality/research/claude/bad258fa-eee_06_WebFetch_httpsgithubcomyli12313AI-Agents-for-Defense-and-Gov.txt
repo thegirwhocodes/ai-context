@@ -1,0 +1,42 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:11:14 UTC
+========================================================================
+
+URL: https://github.com/yli12313/AI-Agents-for-Defense-and-Gov-Hackathon-2025
+Extraction prompt: What did the Port Sentinel team build for the SCSP hackathon? What place did they win? What was the technical stack, the problem they solved, and any details about the demo or the team. Extract everything substantive about the project, including any judges' comments, prize amounts, and what other teams were competing.
+
+----------------------------------------
+
+# Port Sentinel Hackathon Project Summary
+
+## Placement
+The team "did not win the hackathon, but put in a winning effort," according to their GitHub README.
+
+## Project Description
+Port Sentinel built a comprehensive platform combining two key components:
+
+1. **Port City Vulnerability Scanner** - identifies potentially vulnerable Industrial Control Systems (ICS) and SCADA devices in port cities using Shodan data
+2. **Maritime Port Digital Twin Dashboard** - visualizes port IoT devices with vulnerability assessment and attack vector analysis
+
+## Technical Stack
+- Python 3.8+
+- Streamlit (web interface)
+- Pandas (data processing)
+- Folium (interactive maps)
+- OpenAI API (optional AI-enhanced analysis)
+- Shodan API (for real-world device discovery)
+
+## Problem Solved
+The platform addresses port infrastructure security by combining geographic vulnerability scanning with digital twin visualization to "provide security insights for port infrastructure."
+
+## Team
+Kshitij Kumar Parashar, Thomas Ewing, Sara Hekmaty, and Yingquan Li
+
+## Additional Information
+The submission was for the SCSP and AGI House Hackathon 2.0 in Arlington, VA (March 2025). No judges' comments, prize amounts, or competing team information appears in the provided content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

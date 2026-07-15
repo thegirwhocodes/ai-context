@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://hackprinceton-fall-2025.devpost.com/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-08 22:49:16 UTC
+========================================================================
+
+URL: https://hackprinceton-fall-2025.devpost.com/
+Extraction prompt: List all prize categories and their amounts/values. What is the grand prize? First place? What are the track prizes? List everything with dollar amounts.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

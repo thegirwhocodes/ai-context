@@ -1,0 +1,57 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/studentinvolvement/eventplanningresources/Events%20with
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:53:16 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/studentinvolvement/eventplanningresources/Events%20with%20Food,%20Food%20Sales%20and%20Prep.html
+Extraction prompt: What does Wesleyan say about student food sales, food preparation, food events? Capture every detail:
+
+1. Rules for students preparing and selling food on campus
+2. Required approvals (WesNest, Director of Usdan, Middletown Health Inspector, Bon Appetit)
+3. Timeline (how many days in advance to request)
+4. Restrictions on what kinds of food (home-cooked, pre-packaged, etc.)
+5. Where food prep can happen
+6. Whether students can use Usdan or other commercial kitchens
+7. Any liability requirements, insurance, food handler certifications
+8. Specific rules for selling vs giving away food
+9. Limits on how much can be sold or how often
+10. Anything about student-run food businesses
+
+Quote the actual text where possible.
+
+----------------------------------------
+
+# Wesleyan University Food Sales & Preparation Guidelines
+
+## Required Approvals & Timeline
+All fundraisers and events selling or giving away food must be registered through WesNest with space/table reservations. "Requests must be made at least five business days prior to the planned event." The Director of Usdan University Center consults with Bon Appétit and Middletown Health Inspector to determine if activities may proceed. "Events may not proceed until all permissions are received."
+
+## Required Documentation
+Groups must provide:
+- Complete ingredient lists
+- Storage locations (before and after preparation)
+- Transportation methods
+- Sales/serving procedures
+- Cost and revenue projections
+- "Signed waiver indicating the Bon Appétit management company is not responsible for any portion of the food preparation or distribution"
+
+## Prohibited Items
+- Coffee or direct competition with campus dining
+- Items containing alcohol
+- "Events where food preparation would occur within the Usdan University Center"
+- Potentially hazardous foods not meeting health guidelines
+- Items already available through Campus Dining
+
+## Where Food Can Be Prepared
+Food preparation cannot occur inside Usdan. However, groups may coordinate co-sponsored activities with Bon Appétit where the food service provider handles preparation.
+
+## Pre-Packaged vs. Homemade
+"Pre-packaged items and bake sale items do not typically present a problem but will still be run through the same screening." Refrigerated or temperature-controlled items face stricter scrutiny and possible denial.
+
+## No Liability/Insurance/Certifications Mentioned
+The document contains no requirements for food handler certifications, liability insurance, or commercial kitchen access.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

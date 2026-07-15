@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://elevenlabs.io/docs/eleven-agents/customization/personalization/twilio-pe
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 10:22:55 UTC
+========================================================================
+
+URL: https://elevenlabs.io/docs/eleven-agents/customization/personalization/twilio-personalization
+Extraction prompt: How do I access the caller's phone number in a Custom LLM integration? What system variables are available? How does system__caller_id work? What's the exact format of how caller info gets passed to the Custom LLM? Show all examples and code.
+
+----------------------------------------
+
+# Caller Information in Custom LLM Integration
+
+Based on the provided documentation, I cannot find specific information about accessing caller phone numbers in a **Custom LLM integration** or details about `system__caller_id` as a system variable.
+
+## What the Documentation Covers
+
+The content describes Twilio personalization via webhooks, which receives caller data as POST parameters:
+
+> "The webhook will receive a POST request with the following parameters: `caller_id`, `agent_id`, `called_number`, `call_sid`"
+
+However, this applies to webhook-based personalization, not Custom LLM integrations specifically.
+
+## Key Limitation
+
+The documentation does not address:
+- System variables available in Custom LLM contexts
+- How `system__caller_id` or similar variables function
+- The exact format for passing caller info to Custom LLM endpoints
+- Code examples for Custom LLM implementations
+
+## Recommendation
+
+For Custom LLM integration details, you would need to consult additional documentation sections covering Custom LLM configuration, as this page focuses exclusively on Twilio webhook personalization for conversation initiation data.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

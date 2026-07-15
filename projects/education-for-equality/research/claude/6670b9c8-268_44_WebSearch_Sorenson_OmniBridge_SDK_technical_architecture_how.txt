@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Sorenson OmniBridge SDK technical architecture how it works ASL recognition bidi
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:24:50 UTC
+========================================================================
+
+Search query: Sorenson OmniBridge SDK technical architecture how it works ASL recognition bidirectional
+
+----------------------------------------
+
+Web search results for query: "Sorenson OmniBridge SDK technical architecture how it works ASL recognition bidirectional"
+
+Links: [{"title":"Sorenson Acquires OmniBridge and Hand Talk to Develop Automated Sign Language Translation Capabilities | Sorenson Communications","url":"https://sorenson.com/newsroom/enterprise/sorenson-acquires-omnibridge-and-hand-talk-to-develop-automated-sign-language-translation-capabilities/"},{"title":"Sorenson OmniBridge | OmniBridge","url":"https://omnibridge.ai/"},{"title":"Sorenson Acquires OmniBridge and Hand Talk to Develop Automated Sign Language Translation Capabilities","url":"https://www.prnewswire.com/news-releases/sorenson-acquires-omnibridge-and-hand-talk-to-develop-automated-sign-language-translation-capabilities-302361413.html"},{"title":"Sorenson Communications Acquires Two AI Sign Language Interpreting Tech Startups - Slator","url":"https://slator.com/sorenson-communications-acquires-two-ai-sign-language-interpreting-tech-startups/"},{"title":"Sorenson Makes New Acquisitions to Advance AI-Based Sign Language Translation | The Hearing Review","url":"https://hearingreview.com/inside-hearing/organizations/sorenson-makes-new-acquisitions-to-advance-ai-based-sign-language-translation"},{"title":"Sorenson acquires two companies on AI-driven automated sign language translation — The Daily Moth","url":"https://www.dailymoth.com/blog/sorenson-acquires-two-companies-on-ai-driven-automated-sign-language-translation"},{"title":"Sorenson Acquires OmniBridge and Hand Talk to Develop Automated Sign Language Translation Capabilities – Digital Producer Magazine","url":"https://digitalproducer.com/sorenson-acquires-omnibridge-and-hand-talk-to-develop-automated-sign-language-translation-capabilities/"},{"title":"Transforming Communication: Sorenson's Latest Acquisitions - Investors Hangout","url":"https://investorshangout.com/transforming-communication-sorensons-latest-acquisitions-196482-/"},{"title":"Sorenson Acquires OmniBridge and Hand Talk to Develop Automated Sign Language Translation Capabilities","url":"https://finance.yahoo.com/news/sorenson-acquires-omnibridge-hand-talk-110500979.html"},{"title":"OmniBridge acquired by Sorenson: My journey and vision","url":"https://www.linkedin.com/posts/munder_accessibility-inclusion-deaftech-activity-7338360259423457282-hrIs"}]
+
+Based on the search results, here's what I found about the Sorenson OmniBridge SDK:
+
+## Overview
+
+Sorenson OmniBridge is the first scalable sign language translation Software Development Kit (SDK) that enables fast, real-time communication between Deaf and hearing people directly within your own application.
+
+## Technical Architecture and How It Works
+
+With Sorenson OmniBridge on an AI PC, you can embed instant two-way conversations between American Sign Language (ASL) and English into your software.
+
+The bidirectional workflow operates as follows:
+
+- **ASL to English**: The Deaf person signs into a camera, and OmniBridge uses its database of ASL signs to understand the statement, then translates the ASL to English for the hearing person to read.
+
+- **English to ASL**: The hearing person speaks into a mic, and OmniBridge captions their speech for the Deaf person to read.
+
+## Key Technical Features
+
+Sorenson OmniBridge runs on an AI PC — a computer designed for AI workloads — without an internet connection, so no need to worry about lag or connectivity, and maintains control and preserves privacy with no data transfer.
+
+OmniBridge uses computer vision to capture and translate sign language into text or speech, making it suitable for real-time interactive applications.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

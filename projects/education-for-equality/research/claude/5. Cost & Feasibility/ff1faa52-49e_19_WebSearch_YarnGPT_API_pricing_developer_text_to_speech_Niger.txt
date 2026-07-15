@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT API pricing developer text to speech Nigerian
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:00:40 UTC
+========================================================================
+
+Search query: YarnGPT API pricing developer text to speech Nigerian
+
+----------------------------------------
+
+Web search results for query: "YarnGPT API pricing developer text to speech Nigerian"
+
+Links: [{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"API Documentation - YarnGPT","url":"https://yarngpt.ai/api-docs"},{"title":"Pricing - YarnGPT","url":"https://yarngpt.ai/pricing"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Inside YarnGPT: The text-to-speech model built for Nigerian languages","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"Review pricing for Text-to-Speech | Google Cloud","url":"https://cloud.google.com/text-to-speech/pricing"},{"title":"YarnGPT","url":"https://www.promptlayer.com/models/yarngpt"},{"title":"Deepgram Pricing | Scalable Speech-to-Text, Text-to-Speech & Voice Agent APIs","url":"https://deepgram.com/pricing"},{"title":"yarnGPT is AI text-to-speech generation model - Buymeacoffee","url":"https://buymeacoffee.com/yarngpt"}]
+
+Based on the search results, here's what I found about YarnGPT API pricing and developer information:
+
+## Pricing
+
+YarnGPT has no subscriptions, no hidden fees, and you only pay for what you use. YarnGPT is free for now.
+
+## Text-to-Speech & API
+
+The YarnGPT API allows you to integrate authentic Nigerian text-to-speech into your apps and supports Yoruba, Igbo, Hausa, and English. YarnGPT is an innovative text-to-speech model specifically designed to synthesize Nigerian-accented English speech.
+
+## Developer Resources
+
+The API documentation shows developers can make requests to `https://yarngpt.ai/api/v1/tts` with bearer token authentication.
+
+The search results indicate that YarnGPT is currently free to use, though specific API pricing tiers and detailed developer rates for commercial use don't appear to be clearly outlined in the publicly available information. For more detailed pricing information for developers, you may want to check the full pricing page at yarngpt.ai/pricing or contact their support team.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

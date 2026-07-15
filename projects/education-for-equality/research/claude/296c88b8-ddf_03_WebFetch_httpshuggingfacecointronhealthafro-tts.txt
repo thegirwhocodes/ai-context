@@ -1,0 +1,54 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/intronhealth/afro-tts
+Session: 296c88b8-ddfe-4a6e-9eca-0eaa089bcb55
+Time: 2026-03-12 20:48:42 UTC
+========================================================================
+
+URL: https://huggingface.co/intronhealth/afro-tts
+Extraction prompt: What voices/speakers does this model support? What audio files are included? What accents are available? List all files in the repository and any documentation about available voices or speakers.
+
+----------------------------------------
+
+# Afro-TTS Model Details
+
+## Voices and Speakers
+
+The model supports **1000 personas** representing diverse African accents, enabling:
+- **Voice cloning** from a 6-second audio clip
+- **Emotion and style transfer** through cloning
+- Generation in **86 unique African accents**
+
+The model doesn't have a fixed set of predefined voices—instead, it uses speaker reference audio to synthesize speech in the desired accent.
+
+## Accents Supported
+
+- **86 African accents** across the continent
+- **English language only** (currently)
+- The paper mentions "1000 African Voices" representing phonological diversity across Africa
+
+## Audio Files and Repository Contents
+
+The web page doesn't provide a detailed file listing, but indicates:
+- Model files are stored at `intronhealth/afro-tts/` on Hugging Face
+- Configuration file: `intronhealth/afro-tts/config.json`
+- Checkpoint directory: `intronhealth/afro-tts/`
+
+## Usage Example
+
+To use a specific accent, provide a reference audio file:
+
+```python
+outputs = model.synthesize(
+    "Abraham said today is a good day to sound like an African.",
+    config,
+    speaker_wav="audios/reference_accent.wav",  # Your reference audio
+    gpt_cond_len=3,
+    language="en",
+)
+```
+
+**Note:** For a complete list of available files and documentation on specific accents, you would need to visit the [model's repository page](https://huggingface.co/intronhealth/afro-tts/tree/main) or consult the [research paper](https://arxiv.org/abs/2406.11727).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SignVLM ASL fine-tune custom data WLASL 2026 github
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 06:31:07 UTC
+========================================================================
+
+Search query: SignVLM ASL fine-tune custom data WLASL 2026 github
+
+----------------------------------------
+
+Web search results for query: "SignVLM ASL fine-tune custom data WLASL 2026 github"
+
+Links: [{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"GitHub - sumedhsp/Sign-Language-Recognition: Sign Language Recognition (I3D + Transformers) on WLASL Dataset - Computer Vision Final Project (CS-GY 6643)","url":"https://github.com/sumedhsp/Sign-Language-Recognition"},{"title":"GitHub - simonefinelli/ASL-Real-time-Recognition: Recognize the American Sign Language in a video stream and translate it to American word by word.","url":"https://github.com/simonefinelli/ASL-Real-time-Recognition"},{"title":"GitHub - alanjeremiah/WLASL-Recognition-and-Translation: World Level American Sign Language Recognition and Translation to Spoken Language","url":"https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"},{"title":"GitHub - oussamaouardini/WLASL-CLASSIFICATION: Word level american sign language video cllassification using ConvLSTM, LRCN, CNN","url":"https://github.com/oussamaouardini/WLASL-CLASSIFICATION"},{"title":"GitHub - Hamzah-Luqman/signVLM · GitHub","url":"https://github.com/Hamzah-Luqman/signVLM"},{"title":"GitHub - sidharth3/sign-language-recognition","url":"https://github.com/sidharth3/sign-language-recognition"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"},{"title":"GitHub - Vancelot11/WLASL: Dataset proposed in WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\"","url":"https://github.com/Vancelot11/WLASL"},{"title":"PeerJ SignVLM: a pre-trained large video model for sign language recognition","url":"https://peerj.com/articles/cs-3112/"}]
+
+Based on the search results, I found relevant information about SignVLM and its application to ASL recognition with the WLASL dataset:
+
+## SignVLM Overview
+
+SignVLM is the official implementation of the paper "SignVLM: A Pre-trained Large Vision Model for Sign Language Recognition." The architecture includes a trainable Transformer decoder, trainable local temporal modules, pre-trained models, and a fixed image backbone using CLIP.
+
+## Fine-tuning with Custom Data
+
+SignVLM is a pretrained large vision model for sign language recognition that explores the capability of the contrastive language-image pre-training (CLIP) model for SLR. The model extracts spatial features from sign video frames while a Transformer decoder is used for temporal learning.
+
+Different evaluation settings have been followed including zero-shot and few-shot learning, with the model's performance demonstrated across different numbers of training samples starting with zero-shot until fine-tuning on the whole training data.
+
+## WLASL Dataset Integration
+
+SignVLM has been evaluated on the WLASL dataset using the split provided with the dataset, and it has been tested on four different sign languages including WLASL.
+
+## GitHub Repository
+
+The code expects training and validation data in a specific format with command line arguments for training list paths and validation list paths, where paths point to video files with integer labels, and --num_classes must be specified.
+
+The official SignVLM GitHub repository is available at: https://github.com/Hamzah-Luqman/signVLM
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

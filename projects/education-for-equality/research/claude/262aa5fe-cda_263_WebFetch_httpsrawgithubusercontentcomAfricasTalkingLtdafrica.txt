@@ -1,0 +1,29 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/RE
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:10:58 UTC
+========================================================================
+
+URL: https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/README.md
+Extraction prompt: Show every voice call example from the README. Especially anything that demonstrates: receiving a callback after a Record action and responding with new XML that continues the call. Or any code that shows back-and-forth interactive voice.
+
+----------------------------------------
+
+# Voice Call Examples in the README
+
+The provided documentation does **not contain any voice call examples** demonstrating interactive back-and-forth interactions or callback handling.
+
+The README includes a **MessageBuilder section** that describes available voice actions, with this syntax illustration:
+
+> "Build voice xml when callback URL receives a POST from the voice API. Actions can be chained to create an XML string."
+
+However, no actual code examples showing:
+- Receiving callbacks after a Record action
+- Responding with XML to continue a call
+- Interactive voice workflows
+
+The documentation only documents the available methods (like `record()`, `getDigits()`, `dial()`) but provides no implementation examples. The README directs readers to the `example/` folder for usage examples, but that folder's contents aren't included in the provided content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

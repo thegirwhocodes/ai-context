@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SignGlass UIST 2025 jitter-aware spatio-temporal attention dual camera facial mo
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:23 UTC
+========================================================================
+
+Search query: SignGlass UIST 2025 jitter-aware spatio-temporal attention dual camera facial module architecture details WER BLEU
+
+----------------------------------------
+
+Web search results for query: "SignGlass UIST 2025 jitter-aware spatio-temporal attention dual camera facial module architecture details WER BLEU"
+
+Links: [{"title":"UIST 2025 - Program","url":"https://uist.acm.org/2025/papers/"},{"title":"Fusion of Multimodal Spatio-Temporal Features and 3D Deformable Convolution Based on Sign Language Recognition in Sensor Networks - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12298227/"},{"title":"DAT-STAN: Dual-Module Adaptive Transformer and Spatio-Temporal Attention Network for Large-Scale Traffic Flow Prediction","url":"https://www.sciopen.com/article/10.26599/TST.2025.9010062"},{"title":"Prosodic Spatio-Temporal Feature Fusion with Attention Mechanisms for Speech Emotion Recognition","url":"https://www.mdpi.com/2073-431X/14/9/361"},{"title":"IEEE ICIP 2025 || Anchorage, Alaska, USA || 14-18 September 2025","url":"https://cmsworkshops.com/ICIP2025/papers/accepted_papers.php"},{"title":"Multi modal spatio temporal co-trained CNNs with single modal testing on RGB–D based sign language gesture recognition - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S1045926X18301927"},{"title":"Spiking Transformer with Spatial-Temporal Attention","url":"https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_Spiking_Transformer_with_Spatial-Temporal_Attention_CVPR_2025_paper.pdf"},{"title":"Long-term spatio-temporal graph attention network for traffic forecasting - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S0957417425018639"},{"title":"Skeleton action recognition via graph convolutional network with self-attention module","url":"https://aimspress.com/article/doi/10.3934/era.2024129?viewType=HTML"},{"title":"ICCV 2025 Papers","url":"https://iccv.thecvf.com/virtual/2025/papers.html"}]
+
+I found a reference to SignGlass in the UIST 2025 program. Let me search for more specific technical details about the paper including the architecture and metrics.
+
+Links: [{"title":"SignGlass: First-Person View Comprehensive and Generalizable ASL Translation Using Wearable Glass | Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology","url":"https://dl.acm.org/doi/10.1145/3746059.3747782"},{"title":"SignGlasses","url":"https://www.facebook.com/signglasses/posts/a-versatile-and-accessible-portal-for-any-space-from-classrooms-to-workplaces-vi/1178242814284371/"},{"title":"Foundations of NLP Explained — Bleu Score and WER Metrics | by Ketan Doshi | TDS Archive | Medium","url":"https://medium.com/data-science/foundations-of-nlp-explained-bleu-score-and-wer-metrics-1a5ba06d812b"},{"title":"Foundations of NLP Explained - Bleu Score and WER Metrics | Towards Data Science","url":"https://towardsdatascience.com/foundations-of-nlp-explained-bleu-score-and-wer-metrics-1a5ba06d812b/"},{"title":"All-in-one smarter communication — SignGlasses","url":"https://www.signglasses.com/"},{"title":"Architecture of the facial recognition module. | Download Scientific Diagram","url":"https://www.researchgate.net/figure/Architecture-of-the-facial-recognition-module_fig3_378723525"},{"title":"Image Metrics’ Faceware 3.0 Facial Animation Software Now Available | Computer Graphics World","url":"https://www.cgw.com/Press-Center/GDC/2011/Image-Metrics-Faceware-3-0-Facial-Animation-Soft.aspx"},{"title":"Deep architecture of facial expression recognition module. | Download Scientific Diagram","url":"https://www.researchgate.net/figure/Deep-architecture-of-facial-expression-recognition-module_fig3_324592962"},{"title":"(PDF) Visual Alignment Constraint for Continuous Sign Language Recognition","url":"https://www.researchgate.net/publication/355843906_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition"},{"title":"Masked Facial Expression Recognition with Attention Mechanism based on Mini_Xception Network | Proceedings of the 2024 International Conference on Image Processing, Multimedia Technology and Maching Learning","url":"https://dl.acm.org/doi/10.1145/3722405.3722428"}]
+
+Based on my web search results, I found detailed information about SignGlass from UIST 2025:
+
+## SignGlass: UIST 2025 Paper Overview
+
+SignGlass is titled "First-Person View Comprehensive and Generalizable ASL Translation Using Wearable Glass" and is authored by Yongxiang Cai (Binghamton University), Taiting Lu (The Pennsylvania State University), Zhenghao Li (Pennsylvania State University), Hao Zhou (The Pennsylvania State University), Kenneth DeHaan (Gallaudet University), Xuhai "Orson" Xu (Columbia University), Mahanth Gowda (Pennsylvania State University), and Yincheng Jin (Binghamton University).
+
+### Architecture Details
+
+SignGlass integrates a jitter-aware spatio-temporal attention mechanism for robust recognition of hand movement patterns. Complementing this, a dual-camera, temporally-aware facial module captures the subtle facial expressions essential for ASL comprehension.
+
+The system uses three wearable cameras. The other two cameras are positioned on the sides of the glasses' legs to focus on non-manual markers, such as facial expressions.
+
+### Processing Pipeline
+
+The processing mechanism of SignGlass consists of the ASL-to-Gloss recognition module and the Gloss-to-English translation module. A cascaded data augmentation strategy is used to improve model generalization.
+
+### Performance Metrics
+
+The system achieved a WER of 16.98% and a BLEU-1 score of 83% in leave-one-user-out testing, showing strong generalizability.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

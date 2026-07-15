@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Antigravity IDE voice input speech text microphone
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:36:49 UTC
+========================================================================
+
+Search query: Antigravity IDE voice input speech text microphone
+
+----------------------------------------
+
+Web search results for query: "Antigravity IDE voice input speech text microphone"
+
+Links: [{"title":"The AI CTO: Mastering Voice-Activated Development with Google Antigravity | by Simone Scigliuzzi | Medium","url":"https://medium.com/@simonescigliuzzi/the-ai-cto-mastering-voice-activated-development-with-google-antigravity-84237c88433e"},{"title":"[Bug] Speech-to-Text feature fails to discover system microphone on Windows (Antigravity IDE) · Issue #5518 · Kilo-Org/kilocode","url":"https://github.com/Kilo-Org/kilocode/issues/5518"},{"title":"🎉 antigravity-link-extension - Seamlessly Connect Mobile and VS Code | flyamjad","url":"https://flyamjad.github.io/"},{"title":"Codex CLI on macOS: speech‑to‑text (Chinese + English+German) input not inserted into chat until pressing Enter (Cursor & Antigravity terminals) · Issue #7215 · openai/codex","url":"https://github.com/openai/codex/issues/7215"},{"title":"My experience with the new Antigravity IDE from Google | by Ihor Sasovets | Medium","url":"https://medium.com/@ihor.sasovets/my-experience-with-the-new-antigravity-ide-from-google-a1d9bbd2a301"},{"title":"GitHub - cafeTechne/antigravity-link-extension: Mobile companion for Google's Antigravity IDE. Mirror AI sessions on your phone, send messages, stop generation, automate via 9 MCP tools or OpenAPI. · GitHub","url":"https://github.com/cafeTechne/antigravity-link-extension"},{"title":"GitHub - fsystemweb/browser-voice-control: Browser voice control skill for Claude, Gemini, Cursor & Antigravity. Hands-free DOM control via Web Speech API. · GitHub","url":"https://github.com/fsystemweb/browser-voice-control"},{"title":"Gravity Voice Recognition Sensor: Offline Control Made Simple","url":"https://www.electromaker.io/blog/article/gravity-voice-recognition-sensor-offline-control-made-simple"},{"title":"Google Antigravity: The Agentic Development Platform Transforming Coding","url":"https://deepfa.ir/en/blog/google-antigravity-agentic-ide-development-platform"},{"title":"Add a distinct sound notification whenever user input/authorization is required - Google Antigravity - Google AI Developers Forum","url":"https://discuss.ai.google.dev/t/add-a-distinct-sound-notification-whenever-user-input-authorization-is-required/135813"}]
+
+Based on the search results, here's what I found about Antigravity IDE's voice input and speech-to-text capabilities:
+
+## Voice Input Features
+
+While Antigravity doesn't yet have a native "Intercom Mode" (bidirectional voice chat inside the editor), you can achieve this workflow by combining High-Fidelity Dictation, Gemini Live, and Strict Prompt Engineering.
+
+### Current Voice Capabilities
+
+You can click on the microphone icon to start dictating, and the text will appear in the editor for you to review and edit. Additionally, voice-to-text input from mobile is available (HTTPS required for mic permissions).
+
+### Microphone Access
+
+Upon downloading and installing the application, users get a request for microphone permissions. However, the speech-to-text feature should detect and list available system microphones, allowing users to select and use them for voice input, though the microphone discovery process has been reported to fail on some systems.
+
+### Technical Tools for Voice Input
+
+For high-accuracy voice input, standard OS dictation often fails with technical jargon, so tools powered by OpenAI's Whisper or similar models are recommended, with Mac users able to use Superwhisper or MacWhisper for dictating complex technical instructions directly into the Antigravity chat box with high accuracy.
+
+### Future Plans
+
+Expected future features include the ability to control Agents by voice, such as "Hey Antigravity, fix all the bugs in the authentication module."
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

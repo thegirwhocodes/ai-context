@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.iza.org/dp3097.pdf
+Session: 675a2f57-c611-486d-ae31-1a9991409764
+Time: 2026-05-03 20:21:53 UTC
+========================================================================
+
+URL: https://docs.iza.org/dp3097.pdf
+Extraction prompt: Return ALL substantive content from this IZA paper on Africa's Education Enigma - The Nigerian Story. Include all tables of returns to education, all regression results, methodology, findings about wage premiums at each education level, discussion of why returns in Nigeria are low, all data. Do not summarize.
+
+----------------------------------------
+
+I appreciate your request, but I'm unable to fulfill it as requested. The content you've provided appears to be a raw PDF file with extensive compression and encoding that renders the actual text inaccessible to me. The material consists primarily of:
+
+- PDF structural metadata and object references
+- Compressed stream data (indicated by "/FlateDecode" filters)
+- Font definitions and formatting instructions
+- Cross-reference tables
+
+**What I cannot do:**
+I cannot decompress or decode the flattened content streams to extract the substantive research data, tables, regression results, and findings you're asking for.
+
+**What would help:**
+- A plaintext or properly formatted version of the paper
+- An HTML export of the document
+- The actual research paper uploaded as a readable document
+
+**Regarding your constraints:**
+I acknowledge your requirements about quote length (125 characters), attribution, and not providing legal commentary. These are reasonable research standards I can follow once I have access to readable source material.
+
+If you have access to the paper in another format, I'd be happy to extract and organize all the substantive content about Nigeria's education returns, wage premiums by education level, methodology, and findings you've requested.
+
+[Binary content (application/pdf, 322.2KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/675a2f57-c611-486d-ae31-1a9991409764/tool-results/webfetch-1777839715786-440dvh.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

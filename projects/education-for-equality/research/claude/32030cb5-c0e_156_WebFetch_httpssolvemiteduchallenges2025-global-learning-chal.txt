@@ -1,0 +1,58 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://solve.mit.edu/challenges/2025-global-learning-challenge
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-22 10:08:12 UTC
+========================================================================
+
+URL: https://solve.mit.edu/challenges/2025-global-learning-challenge
+Extraction prompt: What is the 2025 Global Learning Challenge at MIT Solve? What does it fund, what are the prize amounts, what are the application dates, what are the dimensions/criteria, and who is eligible to apply? Give me all specifics.
+
+----------------------------------------
+
+# 2025 Global Learning Challenge at MIT Solve
+
+## Overview
+The challenge addresses gaps in global learning accessibility and outcomes, asking: "How can we make quality learning opportunities more accessible, while improving outcomes for all learners?"
+
+## Key Focus Areas
+MIT Solve prioritizes solutions that:
+- Expand access to quality learning in emergency/conflict zones and low-internet areas
+- Improve engagement for learners with disabilities and learning differences
+- Build essential skills (problem-solving, AI literacy) with educator support
+
+## Application Timeline
+- **Opens:** February 3, 2025, 9:00 AM EST
+- **Closes:** April 17, 2025, 12:00 PM EDT
+- **Semifinalist Announcement:** June 27, 2025
+- **Finalist Announcement:** July 30, 2025
+- **Challenge Finals:** September 22, 2025
+
+## Funding & Prizes
+Selected teams average $40,000 each, plus access to $1M+ in prize pools:
+- Seeding the Future Prize: up to $150,000
+- E Ink Innovation Prize: up to $100,000
+- AI for Humanity Prize: up to $150,000
+- GM Prize: up to $150,000
+- Citizens Workforce Innovation Prize: up to $100,000
+- Crescent Enterprises AI Prize: up to $100,000
+
+## Solution Stage Requirements
+Acceptable development stages include prototype, pilot, growth, and scale. Concept-stage ideas only qualify for the Indigenous Communities Fellowship.
+
+## Judging Criteria
+Evaluators assess:
+- Alignment with challenge goals
+- Impact potential
+- Implementation feasibility
+- Innovation level
+- Human-centered design approach
+- Scalability and financial viability
+- Partnership potential
+- Technical feasibility (for novel technologies)
+
+## Eligibility
+Applications welcome from diverse backgrounds. MIT Solve maintains nondiscrimination policies across race, gender, age, disability, sexual orientation, and other protected characteristics.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

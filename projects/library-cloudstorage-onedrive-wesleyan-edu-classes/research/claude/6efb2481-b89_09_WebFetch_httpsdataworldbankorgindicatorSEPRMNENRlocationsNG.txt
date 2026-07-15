@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://data.worldbank.org/indicator/SE.PRM.NENR?locations=NG
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:03:43 UTC
+========================================================================
+
+URL: https://data.worldbank.org/indicator/SE.PRM.NENR?locations=NG
+Extraction prompt: Get Nigeria's net enrollment rate, primary (SE.PRM.NENR) for all available years. List the year and value for each available data point. What years have missing data?
+
+----------------------------------------
+
+# Nigeria Primary School Net Enrollment Rate Data
+
+Based on the webpage content provided, the page displays "School enrollment, primary (% net) - Nigeria" from the World Bank's data portal. However, **the actual data values and specific years are not visible in the provided HTML content**.
+
+The page indicates that data spans from "1999 - 2010" with a timeline showing years from 2010 back to 1999, but the specific enrollment percentages for each year are not included in the text extracted from the webpage.
+
+To access the actual data points, you would need to:
+- View the interactive chart on the live website
+- Download the data in CSV, XML, or Excel format using the download links provided
+- Access the DataBank tool linked on the page
+
+**I cannot identify which specific years have missing data without seeing the actual values displayed on the page.**
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+AGENT RESEARCH: Education-at-scale operators for Sabi
+Session: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+Time: 2026-07-15 18:46:06 UTC
+========================================================================
+
+You are researching REAL, NAMED people who could take an African edtech nonprofit to the next level as OPERATORS — the "Head of Operations / Chief Program Officer" archetype who has personally run large-scale education delivery in Nigeria/Africa, plus potential senior advisors.
+
+CONTEXT — the company: "Sabi" by Education for Equality. A voice-AI literacy & numeracy tutor delivered over ordinary PHONE CALLS to Nigerian children (Africa's Talking telephony, works on feature phones). Pre-pilot. Plan: 200,000-child RCT with Lagos State (LASUBEB/UBEC) → prove gains → scale to millions. Founder is a solo technical builder; she is the "Builder." The single most important hire to make it TAKE OFF is the OPERATOR/DISTRIBUTION person who can onboard and manage hundreds of thousands of kids on the ground in Lagos.
+
+YOUR TASK: Produce a detailed shortlist of 10–15 REAL, NAMED individuals who have run education delivery AT SCALE in Nigeria/Africa and could be a Head of Ops, Chief Program Officer, or heavyweight advisor. Focus on people from / connected to:
+- EKOEXCEL / NewGlobe / Bridge International Academies (Nigeria & Kenya leadership, ops directors, program leads)
+- uLesson, Rori (Rising Academies), Chatterbox, Kidato, Foondamate, M-Shule, Eneza, Ubongo (Tanzania), Injini (Cape Town edtech incubator)
+- Teach for Nigeria / Teach for All leadership
+- The Education Partnership Centre (TEP) Nigeria leaders
+- Large NGO education program directors in Nigeria (Save the Children, UNICEF Nigeria education, Sesame/USAID education programs)
+
+For EACH person return, in full (do NOT summarize):
+1. Full name + current exact title & organization + past scale-education role.
+2. The scale they've operated at (how many kids/schools/states) and why that maps to Sabi's 200k→millions ops need.
+3. Whether they fit as a hire vs. advisor vs. board member.
+4. How to reach them / warm-path hints (LinkedIn/Twitter, orgs, events).
+5. Fit/risk notes.
+
+Use WebSearch/WebFetch extensively. Prioritize people ACTIVE 2025–2026. Real names only, with source URLs; flag anything unverified. End with a "Sources" list.
+
+----------------------------------------
+
+Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)
+agentId: ae545919185c83e12 (internal ID - do not mention to user. Use SendMessage with to: 'ae545919185c83e12', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/c46a7821-57d5-46ff-9dac-304ed0ef2cbc/tasks/ae545919185c83e12.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

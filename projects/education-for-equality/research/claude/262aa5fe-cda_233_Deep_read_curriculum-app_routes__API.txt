@@ -1,0 +1,83 @@
+========================================================================
+AGENT RESEARCH: Deep read curriculum-app routes + API
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 19:04:53 UTC
+========================================================================
+
+I'm a fresh Claude doing a deep dive on the Next.js curriculum-app at `/Users/naomiivie/Education for Equality/curriculum-app/`. This is Naomi Ivie's Education for Equality web platform — Next.js 16 + Tailwind + Clerk auth + Supabase + Vercel deploy. It hosts both the public-facing curriculum app AND the Sabi voice AI demos.
+
+Read these files in full and return AT LEAST 90% of the substantive content. Do NOT summarize. Return actual code structure, every route, every API handler, every form, every page hero/CTA copy, all Sabi-specific integration. The user explicitly does NOT want summaries — they want the actual content as if I read it myself.
+
+**Files to read:**
+
+Root-level:
+- `middleware.ts`
+- `next.config.ts`
+- `package.json` (every dep + script)
+- `tsconfig.json`
+- The 5 supabase-*.sql files (every table definition, every RLS policy, every function)
+
+Pages (app/):
+- `app/layout.tsx`, `app/page.tsx` (the home page)
+- `app/about/page.tsx`
+- `app/dashboard/page.tsx` (if exists)
+- `app/sabi/page.tsx`, `app/sabi/demo/page.tsx`, `app/sabi/pricing/page.tsx`
+- `app/sabi-voice/page.tsx` (the voice demo)
+- `app/sabi-demo/page.tsx` (the chat demo)
+- `app/curriculum/page.tsx`, `app/curriculum/[grade]/page.tsx`
+- `app/subjects/[subject]/page.tsx`, `app/subjects/[subject]/[lesson]/page.tsx`
+- `app/reading/page.tsx`
+- `app/sign-in/[[...sign-in]]/page.tsx`, `app/sign-up/[[...sign-up]]/page.tsx`
+
+API routes (app/api/) — read EVERY route.ts file:
+- `app/api/progress/route.ts`
+- `app/api/rag/route.ts`, `app/api/rag/embed/route.ts`
+- `app/api/sabi/voice-chat/route.ts`
+- `app/api/sabi/voice/route.ts`
+- `app/api/sabi/tts/route.ts`
+- `app/api/sabi/stt/route.ts`
+- `app/api/sabi/student/route.ts`
+- `app/api/sabi/sms/route.ts`
+- `app/api/sabi/at/route.ts` (Africa's Talking webhook)
+
+For EACH page return:
+- Route path and what it does
+- Full hero copy / main CTAs / key prose
+- All state/hooks used
+- All components imported
+- All API calls made (endpoint, method, payload, response handling)
+- Server vs. client component
+- Any auth gates (Clerk's auth.protect or similar)
+
+For EACH API route return:
+- HTTP method(s) supported
+- Auth model (Clerk session, API key header, public)
+- Full request body schema
+- Full response schema
+- Every external service called (Anthropic, ElevenLabs, OpenAI/Groq, Africa's Talking, Twilio, Supabase) and the exact endpoints/SDK calls
+- All env vars referenced
+- All error paths
+- Any rate limiting or caching
+
+For the SQL files: every table, column, type, constraint, RLS policy, function, trigger, index — quoted.
+
+For package.json: every dependency with version, every script, the build setup.
+
+This is for the founder doing a fresh-eyes audit before the pre-pilot launches.
+
+----------------------------------------
+
+<persisted-output>
+Output too large (51.4KB). Full output saved to: /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/toolu_01XWihqawMsytnJyiuac4CHU.json
+
+Preview (first 2KB):
+[
+  {
+    "type": "text",
+    "text": "I have read enough to produce a comprehensive audit report. Let me compile it.\n\n---\n\n# CURRICULUM-APP DEEP DIVE — COMPLETE AUDIT\n\n## ROOT CONFIG\n\n### `package.json`\n- Name: `curriculum-app`, version `0.1.0`, private\n- **Scripts:** `dev` (`next dev`), `build` (`next build`), `start` (`next start`), `lint` (`eslint`), `seed` (`tsx --env-file=.env.local scripts/seed-grade4.ts`)\n- **Dependencies:**\n  - `@anthropic-ai/sdk` ^0.78.0\n  - `@clerk/nextjs` ^6.36.8\n  - `@supabase/supabase-js` ^2.90.1\n  - `@xenova/transformers` ^2.17.2 (for in-process embeddings — `all-MiniLM-L6-v2` model)\n  - `next` 16.1.3, `react`/`react-dom` 19.2.3\n  - `twilio` ^5.12.2\n- **Dev deps:** `@tailwindcss/postcss` ^4, `@types/node` ^20, `@types/react` ^19, `eslint` ^9, `eslint-config-next` 16.1.3, `tailwindcss` ^4, `tsx` ^4.21.0, `typescript` ^5, `vercel` ^50.4.9\n\n### `tsconfig.json`\n- ES2017 target, ES module bundler resolution, strict mode, jsx `react-jsx`, path alias `@/* → ./*`, includes `next-env.d.ts`, `**/*.ts`, `**/*.tsx`, `.next/types/**/*.ts`, `.next/dev/types/**/*.ts`, `**/*.mts`. Excludes `node_modules`. `noEmit` true (Next handles builds), `incremental` true.\n\n### `next.config.ts`\n- Rewrite: `source: \"/\"` with host `sabi.eduforequality.org` → `/sabi`\n- Headers: `/sabi/demo/:path*`, `/sabi-voice/:path*`, `/sabi-demo/:path*` all set `X-Robots-Tag: noindex, nofollow`\n\n### `middleware.ts`\n- Uses `clerkMiddleware` from `@clerk/nextjs/server`\n- Protected routes matcher: `['/dashboard(.*)']`\n- **Subdomain logic** — if `host` starts with `sabi.`:\n  - `/` → rewrite to `/sabi`\n  - `/demo` → rewrite to `/sabi-voice`\n  - `/chat` → rewrite to `/sabi-demo`\n  - `/pricing` → rewrite to `/sabi/pricing`\n  - Any other non-api/non-_next/non-sign path → redirect to `/demo`\n- Protected routes call `auth.protect()`\n- Comment: \"Demo and Sabi API routes are open — no firewall. (Rate limiting on the Hetzner server + upstream API quota
+...
+</persisted-output>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

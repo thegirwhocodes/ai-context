@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii vs Africa's Talking voice API comparison Nigeria IVR webhook callback rec
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:35:40 UTC
+========================================================================
+
+Search query: Termii vs Africa's Talking voice API comparison Nigeria IVR webhook callback recording
+
+----------------------------------------
+
+Web search results for query: "Termii vs Africa's Talking voice API comparison Nigeria IVR webhook callback recording"
+
+Links: [{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Termii Alternative | The alternative to Termii API - Sendchamp","url":"https://sendchamp.com/best-termii-alternative"},{"title":"From Code to Conversation: Mastering Africa's Talking Voice API - DEV Community","url":"https://dev.to/arseytech/from-code-to-conversation-mastering-africas-talking-voice-api-4aa8"},{"title":"Voice API – Build smart voice-based solutions easily | Africa’s Talking","url":"https://africastalking.com/voice-api"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/"},{"title":"Best Alternative to Africa's Talking SMS Voice & Whatsapp - Sendchamp","url":"https://sendchamp.com/best-africastalking-alternative"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"About Termii (communications API) — History & Brand Facts - Verito Digital","url":"https://veritodigital.com/termii-communications-api-2/"},{"title":"Voice API - Programmable Voice for Developers | Telnyx","url":"https://telnyx.com/products/voice-api"},{"title":"Africa's Talking Voice Software Pricing, Alternatives & More 2026 | Capterra","url":"https://www.capterra.com/p/10002327/Africas-Talking-Voice/"}]
+
+Based on the search results, I can provide you with information about these voice API platforms for Nigeria:
+
+## Termii Voice API
+
+Termii's Voice API enables businesses to make and receive calls through their platform, supporting features such as call recording, call routing, and interactive voice response (IVR) systems. Termii is a Nigerian-founded communication platform as a service (CPaaS) company.
+
+## Africa's Talking Voice API
+
+Africa's Talking allows you to integrate and build everything from call centers, IVR systems, call campaigns and two-factor authentication affordably. The platform includes dynamic queuing, call recording and routing capabilities. Their API supports webhook callbacks through the 'callNotificationUrl' parameter for voice status notifications.
+
+## Key Features Comparison
+
+Both platforms support:
+- **IVR (Interactive Voice Response)**: Africa's Talking offers IVR functionality for caller prompts with recording actions to store responses onto a database.
+- **Call Recording**: Both platforms support call recording capabilities
+- **Webhook Callbacks**: Africa's Talking requires setting up webhook endpoints for call notifications.
+
+The search results provide good foundational information about both platforms' capabilities, though a direct detailed comparison of pricing, specific webhook implementations, and callback recording features would require accessing their developer documentation directly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

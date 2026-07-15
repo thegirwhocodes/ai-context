@@ -1,0 +1,57 @@
+========================================================================
+AGENT RESEARCH: Industry research on key features
+Session: a8c172f1-a7d4-4624-8ac2-b31c78a6f870
+Time: 2026-05-11 01:54:12 UTC
+========================================================================
+
+Naomi (a Wesleyan student building a commitment-device app called Class on Time) wants deep research on how mature products solve three specific problems we're hitting in her app. Concrete companies, concrete techniques, concrete code patterns where relevant. No surveys.
+
+**Problem 1: Auto-debit / penalty payments**
+
+When the user is late to class, the app needs to charge them $100 automatically. Surveys typical of credit-card or ACH auto-debit. We're using Stripe Financial Connections for ACH + Apple Pay; specifically interested in:
+- How does Beeminder / StickK / Forfeit actually take your money when you fail? Stripe? ACH? Card? Friendly reminder before charging?
+- What "anti-dispute" patterns prevent users from chargeback-ing the penalty (since the user is essentially charging themselves)? Examples: pre-authorization holds, escrow accounts, signed terms-of-service capture.
+- How does Apple Pay merchant ID + Financial Connections combine in practice for a single account that holds both? What's the right Stripe product (Customer + PaymentMethod, SetupIntent, off_session=true)?
+- "Failure modes": insufficient funds, card declined, user removed payment method after committing. How do production apps handle these?
+
+**Problem 2: Forming a map / location from a calendar event title alone**
+
+Google Calendar events often have no structured location field — the location is hidden in the title ("Econ 333 (Olin Date)") or the description. We currently use Claude to extract a location string + Mapbox to geocode. Interested in:
+- How does Apple's Calendar app surface a map for "Lunch at Coffee Shop with Sarah"? It clearly does some parsing.
+- How does Granola / Cal.com / Fellow.app figure out where a meeting is from natural language?
+- What about meetings *without* explicit location — does any app *infer* from context ("gym" → user's regular gym)?
+- For university-specific places (Olin Library, Usdan Center), how do apps tied to a campus normally handle building lookup? Is there a Wesleyan API? Most universities have campus map APIs — does Wesleyan?
+- Patterns for "venue resolution": dictionary lookup → geocoder → POI search → user confirmation. Which apps do which.
+
+**Problem 3: One-click Google Calendar integration (like claude.ai)**
+
+Naomi noticed Claude.ai connects to Google Calendar with effectively one click — no traditional OAuth consent screen each time, no client ID/secret setup for the user. She wants the same UX for Class on Time. Specifically:
+- How does claude.ai's "Connect Google Calendar" actually work? Is it OAuth under the hood with verified app + pre-approved scopes? MCP server-based? A managed integration via a third-party (Composio, Pipedream, Nango)?
+- Reading the [Claude MCP docs](https://docs.claude.com/en/api/agent-sdk/mcp) and Google Workspace connection patterns: is the magic that they pre-verified a single OAuth app with Google, and users just authorize a *trust* link rather than a full consent flow? Or is the consent screen still shown, just polished?
+- What would Class on Time need to do to match this UX?
+  - Get Google's "Verified app" / brand verification badge so consent screen is minimal?
+  - Use a managed integration platform (Nango, Pipedream Connect, Composio, Paragon, Pylon Integrations) that handles OAuth for us?
+  - List specific platforms with pricing if public.
+- Concrete: if Naomi wanted to remove the Google "this app isn't verified" warning new users see, what's the path? Steps + timeline.
+
+**Output requirements:**
+- ≤ 900 words total.
+- For each of the 3 problems: 200-300 words.
+- Concrete company/product names. Pricing where public. Specific Stripe API calls / OAuth flow steps where relevant.
+- No bullet-point soup. Use prose with the occasional list.
+- End with a "If you only do one thing" recommendation per problem.
+
+If you can't fetch live URLs (WebSearch/WebFetch denied), be explicit at the top — answer from training-data knowledge but flag what should be verified.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a91b2f0eb7cbdb3ae (internal ID - do not mention to user. Use SendMessage with to: 'a91b2f0eb7cbdb3ae' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Class-on-Time/9a4ad3d3-5a05-48fc-9151-13ae8b0b40fb/tasks/a91b2f0eb7cbdb3ae.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

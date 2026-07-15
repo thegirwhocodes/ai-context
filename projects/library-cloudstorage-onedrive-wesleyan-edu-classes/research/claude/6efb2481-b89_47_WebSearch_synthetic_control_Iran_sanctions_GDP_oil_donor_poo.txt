@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Iran sanctions GDP oil donor pool
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:10:53 UTC
+========================================================================
+
+Search query: "synthetic control" Iran sanctions GDP oil donor pool
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Iran sanctions GDP oil donor pool"
+
+Links: [{"title":"An estimation of the economic cost of recent sanctions on Iran using the synthetic control method - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0165176517302331"},{"title":"\"Synthetic Control and Dynamic Panel Estimation: A Case Study of Iran\" by Orkideh Gharehgozli","url":"https://academicworks.cuny.edu/gc_etds/2804/"},{"title":"The effect of international sanctions on the size of the middle class in Iran - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S0176268025001090"},{"title":"An estimation of the economic cost of recent sanctions on Iran using the synthetic control method","url":"https://ideas.repec.org/a/eee/ecolet/v157y2017icp141-144.html"},{"title":"Sanctions without shock? United Nations snapback and Iran's oil exports | Clingendael","url":"https://www.clingendael.org/publication/sanctions-without-shock-united-nations-snapback-and-irans-oil-exports"},{"title":"International sanctions against Iran - Wikipedia","url":"https://en.wikipedia.org/wiki/International_sanctions_against_Iran"},{"title":"International Sanctions on Iran | Council on Foreign Relations","url":"https://www.cfr.org/backgrounders/international-sanctions-iran"},{"title":"Identifying the effects of sanctions on the Iranian economy using newspaper coverage - Laudati - 2023 - Journal of Applied Econometrics - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/full/10.1002/jae.2947"},{"title":"Understanding Economic Sanctions on Iran: A Survey","url":"https://www.degruyterbrill.com/document/doi/10.1515/ev-2023-0014/html?lang=en"},{"title":"Iran Sanctions | Office of Foreign Assets Control","url":"https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"}]
+
+Based on the search results, here's what I found about synthetic control studies of Iran sanctions, GDP, and oil with donor pools:
+
+## Key Research Findings
+
+Using the synthetic control method, research estimates that sanctions during the 2011-2014 period reduced Iran's real GDP by more than 17% with the largest drop occurring in 2012. Studies use a data-driven synthetic control unit constructed as a weighted average of the donor countries to estimate the negative effects of sanctions.
+
+## Donor Pool Composition
+
+The composition of donor pools varies across studies. One study's final donor pool consists of 18 countries, excluding those with missing observations or affected by major events such as war or sanctions, focusing on the MENA region, OPEC, and the OIC, comprising Algeria, Azerbaijan, Bahrain, Congo, Egypt, Indonesia, Israel, Jordan, Kuwait, Lebanon, Malaysia, Malta, Morocco, Oman, Qatar, Saudi Arabia, Tunisia, and the United Arab Emirates.
+
+In another analysis, the counterfactual Iran is generated from five countries: Tunisia (41.2%), Qatar (21.7%), Malaysia (17.8%), Azerbaijan (12.4%), and Indonesia (6.9%).
+
+## Oil Sector Focus
+
+International sanctions imposed on Iran, targeting primarily Iran's key energy sector and its ability to access the international financial system, have harmed Iran's economic growth, specifically since 2011 through 2014.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

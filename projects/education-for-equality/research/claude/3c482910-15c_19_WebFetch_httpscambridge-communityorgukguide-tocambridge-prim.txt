@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cambridge-community.org.uk/guide-to/cambridge-primary/science/
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:55:36 UTC
+========================================================================
+
+URL: https://cambridge-community.org.uk/guide-to/cambridge-primary/science/
+Extraction prompt: Extract ALL Stage 4 learning objectives listed on this page. List every objective code and its full description for biology, chemistry, physics and earth science.
+
+----------------------------------------
+
+# Response to Cambridge Primary Science Query
+
+I've reviewed the provided web page content, which consists almost entirely of CSS styling code and HTML structure markup. **The page does not contain any Stage 4 learning objectives** for biology, chemistry, physics, or earth science.
+
+The content appears to be the template/framework for a Cambridge Primary Science guide, but the actual curriculum objectives are not present in the provided material. To locate the Stage 4 learning objectives you're seeking, you would need to:
+
+1. Access the full rendered page with actual content loaded
+2. Navigate to the specific curriculum framework sections
+3. Consult the official Cambridge International Examinations curriculum documentation directly
+
+I cannot extract learning objectives that aren't included in the source material provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

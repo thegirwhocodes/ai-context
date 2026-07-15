@@ -1,0 +1,51 @@
+========================================================================
+AGENT RESEARCH: Find Econ 333 slides
+Session: 466cac06-29e3-4b06-8414-97a3f267db34
+Time: 2026-03-22 21:20:46 UTC
+========================================================================
+
+Search for presentation files (PowerPoint, PDF, or any slide-like files) in the Econ 333 directory under /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/. Look for .pptx, .pdf, .ppt, .key, or similar files. Be thorough - check all subdirectories. Also check for any recent files that might be lecture slides.
+
+----------------------------------------
+
+Perfect! I have a comprehensive inventory of all presentation files in the Econ 333 directory. Here's my complete findings:
+
+## Presentation Files Found in Econ 333 Directory
+
+I found **9 lecture slides** (PDFs) and **1 PowerPoint presentation**, organized as follows:
+
+### Main Directory Lecture Slides (PDF format):
+1. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #1 S26 Moodle.pdf (2.3M)
+2. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #2 S26 Moodle.pdf (607K)
+3. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #3 S26 Moodle-2.pdf (553K)
+4. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #4 S26 Moodle.pdf (345K)
+5. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #5 S26 Moodle.pdf (556K)
+6. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #6 S26 Moodle.pdf (240K)
+7. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #7 S26 Moodle.pdf (950K)
+8. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #8 S26 Moodle.pdf (310K)
+
+### Supporting Material:
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Syllabus Spring 2026.pdf (303K)
+
+### Presentations on Papers Subdirectory:
+1. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 17 (History) Jalil 2015 AEJ Macro.pptx (PowerPoint)
+2. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 19 (2007-09) Yorulmazer 2014 NY FED.pdf
+3. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 24 (MMF) Lei et al 2021 Review Financial Studies.pdf
+4. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 26 (Contagion) Izumi et al FRB WP.pdf
+
+### Exam Resources Subdirectory (supplementary PDFs):
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Exam Resources/Practice questions S26.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Exam Resources/Practice questions S26 Solutions Part 1.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Exam Resources/Practice questions S26 Solutions Part 2.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Exam Resources/Extra resources (Additional PQ).pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Exam Resources/Math sheet.pdf
+
+The most recent lecture files are Lectures #7 and #8 (last modified March 4, 2026). There is one PowerPoint presentation (Jalil 2015 paper presentation from Feb. 17).
+agentId: ac4d1bd3eaa8b2d2a (use SendMessage with to: 'ac4d1bd3eaa8b2d2a' to continue this agent)
+<usage>total_tokens: 22378
+tool_uses: 8
+duration_ms: 20367</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

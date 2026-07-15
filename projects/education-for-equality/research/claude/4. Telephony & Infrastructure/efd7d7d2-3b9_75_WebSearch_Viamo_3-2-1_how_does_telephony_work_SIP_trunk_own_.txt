@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Viamo 3-2-1 how does telephony work SIP trunk own number NCC license infrastruct
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 05:40:52 UTC
+========================================================================
+
+Search query: Viamo 3-2-1 how does telephony work SIP trunk own number NCC license infrastructure
+
+----------------------------------------
+
+Web search results for query: "Viamo 3-2-1 how does telephony work SIP trunk own number NCC license infrastructure"
+
+Links: [{"title":"Cloud SIP Trunking FAQ | SIP.US","url":"https://www.sip.us/faq/"},{"title":"Solved: CME CUBE license for connection to SIP provider - Cisco Community","url":"https://community.cisco.com/t5/ip-telephony-and-phones/cme-cube-license-for-connection-to-sip-provider/td-p/1954936"},{"title":"Viking VoIP SIP System Compatibility List","url":"https://vikingelectronics.com/wp-content/uploads/documents/application_note/VoIP-Compatibility944.pdf"},{"title":"SIP Trunk Provider: Connect Your PBX to the Cloud - Nextiva","url":"https://www.nextiva.com/products/pbx-sip-trunking"},{"title":"Supported SIP Trunk Requirements | Get listed to the 3CX!","url":"https://www.3cx.com/docs/supported-sip-trunk-requirements/"},{"title":"SIP Trunk Provider That Allows Customer Caller ID - vicidial.org","url":"https://www.vicidial.org/VICIDIALforum/viewtopic.php?t=41959"},{"title":"SIP Trunking Explained | Move from PSTN to IP Telephony","url":"https://www.3cx.com/pbx/sip-trunking/"},{"title":"SIP Trunking Basics | SIPTRUNK","url":"https://www.siptrunk.com/sip-trunking-basics-content/"},{"title":"Configuration Guide for US SIP Trunk SIP.US","url":"https://www.3cx.com/docs/sip-trunk/sipus-usa/"},{"title":"VoIP Phone Systems Buyer's Guide - IP Phone Warehouse","url":"https://www.ipphone-warehouse.com/guides/voip-phone-systems-buyers-guide/"}]
+
+The search results returned general information about SIP trunking and VoIP systems, but didn't include specific information about "Viamo 3-2-1" service. Let me search more specifically for Viamo:
+
+Links: [{"title":"3-2-1 Service: case study by UNESCO-Pearson Initiative for Literacy","url":"https://unesdoc.unesco.org/ark:/48223/pf0000260595"},{"title":"The Viamo Platform | Reach Millions with Your Message","url":"https://viamo.io/services/viamo-platform/"},{"title":"3‑2‑1 Service - Viamo","url":"https://viamo.io/services/3-2-1/"},{"title":"Digital X Solution: Viamo 3-2-1 Platform","url":"https://digitalx.undp.org/viamo-3-2-1-platform_1.html"},{"title":"#Viamo - Digital Made Easy","url":"https://viamo.io/"},{"title":"Calling for Change: The 3-2-1 Service in Bangladesh","url":"https://solve.mit.edu/challenges/tiger-challenge-international/solutions/14947"},{"title":"Tech team delivers vital information to people in developing countries, remote areas through cellphone games | CBC News","url":"https://www.cbc.ca/news/canada/saskatoon/viamo-3-2-1-service-1.5454944"},{"title":"Number of call back respondents that use the Viamo 321 service from... | Download Scientific Diagram","url":"https://www.researchgate.net/figure/Number-of-call-back-respondents-that-use-the-Viamo-321-service-from-selected-districts_tbl1_348565727"},{"title":"Service 3-2-1 - Odess","url":"https://www.odess.io/en/initiative/service-3-2-1/"},{"title":"Africa: Viamo Mobile's IVR Services Offer a Two-Way Communications Channel Across Africa At Scale - Mobile Operator Partnerships Key - allAfrica.com","url":"https://allafrica.com/stories/201711200371.html"}]
+
+Now let me search for information about the technical infrastructure, SIP trunks, NCC license, and own numbers for Viamo:
+
+Links: [{"title":"Understanding PRI and SIP: The Backbone of Modern Telecommunications","url":"https://nobelbiz.com/blog/pri-vs-sip/"},{"title":"Session Initiation Protocol - Wikipedia","url":"https://en.wikipedia.org/wiki/Session_Initiation_Protocol"},{"title":"Viamo | Devex","url":"https://www.devex.com/organizations/viamo-120482"},{"title":"Engineering & Tech - Viamo","url":"https://viamo.io/engineering-technology/"},{"title":"What Is Session Initiation Protocol (SIP) & How Does It Work?","url":"https://www.tailwindvoiceanddata.com/blog/what-is-sip"},{"title":"What is SIP? A Guide to Session Initiation Protocol for VoIP","url":"https://network-telecom.com/what-is-session-initiation-protocol-sip/"},{"title":"SIP Technology in Telecom: The Basics - SIP.US","url":"https://www.sip.us/blog/latest-news/sip-technology-in-telecom-the-basics/"},{"title":"What Is Session Initiation Protocol (SIP) & How It Works?","url":"https://www.nextiva.com/blog/sip-protocol.html"},{"title":"Session Initiation Protocol (SIP) — ExtraHop","url":"https://www.extrahop.com/resources/protocols/sip"},{"title":"How to Configure SIP PRI Gateway: Complete Guide","url":"https://www.akom.in/blog/how-to-configure-sip-pri-gateway"}]
+
+Based on my search results, I found information about Viamo's 3-2-1 service and how it works. Here's what I discovered:
+
+## Viamo 3-2-1 Service Overview
+
+The Viamo Platform was formerly known as the 3-2-1 Service. Callers can dial into a toll-free number 321 (or the country-specific short code, for example, 667) 24 hours a day.
+
+### How Telephony Works
+
+Subscribers can access information by dialing a toll-free short-code (e.g. 321) and then easily navigating a menu of topic options (for health press 1, for agriculture press 2, etc.) The platform operates through an IVR system. By responding to a series of 'listen, then choose' steps, callers can use their telephone keypad to select from among hundreds of pre-recorded voice messages based on their specific needs.
+
+### Technical Infrastructure
+
+Viamo has developed an IVR platform. It has technical integrations (E1 or SIP) with mobile network operators in 20 countries in Africa and Asia. This indicates that Viamo uses both E1 and SIP connectivity to integrate with telecom operators' networks.
+
+### Content Channels
+
+Unstructured supplementary service data (USSD) is similar to SMS, but used to send text between the 3-2-1 platform and the user's phone through a menu-driven interface.
+
+The search results don't contain specific information about NCC (National Communications Commission) licensing or details about owning dedicated phone numbers for the service, as these would be country-specific regulatory requirements that vary by jurisdiction.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

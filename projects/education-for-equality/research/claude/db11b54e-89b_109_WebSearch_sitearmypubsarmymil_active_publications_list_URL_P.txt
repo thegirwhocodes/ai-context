@@ -1,0 +1,26 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: site:armypubs.army.mil active publications list URL ProductMaps PubForm
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:47:00 UTC
+========================================================================
+
+Search query: site:armypubs.army.mil active publications list URL ProductMaps PubForm
+
+----------------------------------------
+
+Web search results for query: "site:armypubs.army.mil active publications list URL ProductMaps PubForm"
+
+Links: [{"title":"Army Publishing Directorate – Army Publishing Index","url":"https://armypubs.army.mil/ProductMaps/PubForm/ActiveInactiveRescSearch.aspx"},{"title":"Army Publishing Directorate – Army General Orders (Active)","url":"https://armypubs.army.mil/ProductMaps/PubForm/AGO.aspx"},{"title":"Army Publishing Directorate – Army Doctrine Publications","url":"https://armypubs.army.mil/ProductMaps/PubForm/ADP.aspx"},{"title":"Army Publishing Directorate – Soldier Training Publications","url":"https://armypubs.army.mil/ProductMaps/PubForm/STP.aspx"},{"title":"Army Publishing Directorate – Army Technical Publications","url":"https://armypubs.army.mil/ProductMaps/PubForm/ATP.aspx"},{"title":"*This pamphlet supersedes DA Pam 25–40, dated 14 June 2021.","url":"https://armypubs.army.mil/Search/CRRDPub.aspx?pnum=PAM+25-40"},{"title":"Army Publishing Directorate – Publications/Forms Content Search","url":"https://armypubs.army.mil/ProductMaps/PubForm/ContentSearch.aspx?q=ATP+3-21.8&em=False&ptype=0&prop=0&ff=0"},{"title":"alaract 023/2023 - Army Publishing Directorate","url":"https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1026798"},{"title":"Army Publishing Directorate – Army Doctrine Reference Publications","url":"https://armypubs.army.mil/ProductMaps/PubForm/ADRP.aspx"},{"title":"Army Publishing Directorate – New Publication Releases","url":"https://armypubs.army.mil/News/NewReleases.aspx"}]
+
+Based on the search results, I found the URL you're looking for:
+
+The Army Publishing Directorate's active publications search page is located at: **https://armypubs.army.mil/ProductMaps/PubForm/ActiveInactiveRescSearch.aspx**
+
+This search form offers multiple fields to search Army publications and forms, with the ability to filter by active or inactive status and other parameters.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,21 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://discover.dtic.mil/?q=&dtic_post_type=tr
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:30:40 UTC
+========================================================================
+
+URL: https://discover.dtic.mil/?q=&dtic_post_type=tr
+Extraction prompt: What's the total document count? Are there any year-related filters, decade buckets, or facets shown? List any visible counts.
+
+----------------------------------------
+
+# Document Count and Filters
+
+Based on the webpage content provided, the total document count mentioned is **approximately 1 million records**. The site states: "DTIC is piloting two innovative search tools designed to provide you more robust search results for the close to 1 million records available on our public site."
+
+**Year-Related Filters or Decade Buckets:**
+No year-related filters, decade buckets, or other specific facets are visible in the content provided. The page focuses on introducing search tools (Minsky and Dimensions) and general DTIC services, but does not display any temporal filtering options or document count breakdowns by time period.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

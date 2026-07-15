@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw game Oracle Cloud setup access
+Session: db6691e8-0928-49ea-9591-957cce0a5a02
+Time: 2026-02-12 19:35:14 UTC
+========================================================================
+
+Search query: OpenClaw game Oracle Cloud setup access
+
+----------------------------------------
+
+Web search results for query: "OpenClaw game Oracle Cloud setup access"
+
+Links: [{"title":"Oracle Cloud - OpenClaw","url":"https://docs.openclaw.ai/platforms/oracle"},{"title":"Self-Host OpenClaw on a Free VPS — Complete 2026 Setup Guide | Cognio Labs","url":"https://cognio.so/clawdbot/self-hosting"},{"title":"OpenClaw Deploy Cost Guide: Build Your Personal AI Assistant for $0-8/month | WenHao Yu","url":"https://yu-wenhao.com/en/blog/2026-02-01-openclaw-deploy-cost-guide/"},{"title":"How to Host OpenClaw 24/7 for Free on Oracle Cloud | Agenteer | AI Agents That Work","url":"https://agenteer.com/learn/tutorials/openclaw-oracle-cloud/"},{"title":"Openclaw on Oracle's Free Tier: Always-On AI for $0/month | Ryan Shook","url":"https://ryanshook.org/blog/posts/openclaw-on-oracle-free-tier-always-on-ai-for-free/"},{"title":"Every Way to Deploy OpenClaw: Architecture Setups Compared (With Diagrams) | FlowZap","url":"https://flowzap.xyz/blog/every-way-to-deploy-openclaw"},{"title":"How to Run OpenClaw with DigitalOcean | DigitalOcean","url":"https://www.digitalocean.com/community/tutorials/how-to-run-openclaw"},{"title":"GitHub - rohitg00/awesome-openclaw","url":"https://github.com/rohitg00/awesome-openclaw"},{"title":"VPS Deployment | openclaw/openclaw | DeepWiki","url":"https://deepwiki.com/openclaw/openclaw/13.2-vps-deployment"},{"title":"OpenClaw on AMD Cloud: Run AI Agents Free With 192GB GPUs","url":"https://www.adwaitx.com/openclaw-vllm-amd-developer-cloud-free/"}]
+
+Based on the web search results, here's what I found about setting up OpenClaw on Oracle Cloud:
+
+## Overview
+
+OpenClaw can run as a persistent Gateway on Oracle Cloud's Always Free ARM tier. Oracle Cloud's Always Free tier provides 4 ARM CPU cores, 24GB of RAM, 200GB storage, with no expiration.
+
+## Getting Started with Oracle Cloud
+
+To start, head to oracle.com/cloud/free and click "Start for free." Fill in your details, verify your email, and set a password. Oracle will ask for a credit card for identity verification only. During signup, you'll pick a home region, which is permanent — you cannot change it later.
+
+## Instance Setup
+
+The VCN Wizard creates a public subnet, an internet gateway, proper routing, and security rules that allow SSH. After selecting the aarch64 image, Oracle may automatically switch your shape to VM.Standard.A1.Flex — that's what you want.
+
+## Initial Configuration
+
+To connect, use SSH to your public IP address and update system packages with `sudo apt update && sudo apt upgrade -y`. You should set hostname, set a password for the ubuntu user, and enable lingering to keep user services running after logout.
+
+## Gateway Access
+
+You can verify Tailscale Serve is running and check that the gateway is listening on port 18789 with `curl http://localhost:18789`.
+
+The setup typically takes several hours to complete, and you can self-host OpenClaw with Ollama for $0/month using Oracle Cloud's Always Free tier.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

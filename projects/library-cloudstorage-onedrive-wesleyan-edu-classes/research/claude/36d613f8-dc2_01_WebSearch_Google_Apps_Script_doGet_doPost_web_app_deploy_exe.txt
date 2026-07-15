@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Apps Script doGet doPost web app deploy "execute as me" anonymous access
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 04:47:51 UTC
+========================================================================
+
+Search query: Google Apps Script doGet doPost web app deploy "execute as me" anonymous access
+
+----------------------------------------
+
+Web search results for query: "Google Apps Script doGet doPost web app deploy "execute as me" anonymous access"
+
+Links: [{"title":"Web Apps | Apps Script | Google for Developers","url":"https://developers.google.com/apps-script/guides/web"},{"title":"taking-advantage-of-Web-Apps-with-google-apps-script/README.md at master · tanaikech/taking-advantage-of-Web-Apps-with-google-apps-script","url":"https://github.com/tanaikech/taking-advantage-of-Web-Apps-with-google-apps-script/blob/master/README.md"},{"title":"Executing Google Apps Script with Service Account · GitHub","url":"https://gist.github.com/tanaikech/304fea821ca36b8e9ccebe9814eaed82"},{"title":"Google Apps Script doGet and doPost Tutorial + 6 Web App Examples • Trevor Fox","url":"https://trevorfox.com/2017/01/google-apps-script-doget-and-dopost-tutorial-6-web-app-examples/"},{"title":"No 'Anyone, even anonymous' option on APP Script deployment","url":"https://groups.google.com/g/google-apps-script-community/c/owFeX5fTcyo"},{"title":"Executing Google Apps Script with Service Account | by Kanshi Tanaike | Google Cloud - Community | Medium","url":"https://medium.com/google-cloud/executing-google-apps-script-with-service-account-3752f4e3df8c"},{"title":"Webapp execute as user BUT save data to spreadsheet","url":"https://groups.google.com/g/google-apps-script-community/c/efqxNo44ZTc"},{"title":"GitHub - tanaikech/taking-advantage-of-Web-Apps-with-google-apps-script: This is a report to take advantage of Web Apps with Google Apps Script (GAS). · GitHub","url":"https://github.com/tanaikech/taking-advantage-of-Web-Apps-with-google-apps-script"},{"title":"Web Apps deployed as \"Me\" / \"Anyone, even anonymous ...","url":"https://issuetracker.google.com/issues/160622846"},{"title":"Logs in Web Apps for Google Apps Script · GitHub","url":"https://gist.github.com/tanaikech/3ccb4dd8ce43de21fdb764a68c14a4d7"}]
+
+I've retrieved search results about Google Apps Script web app deployment with doGet/doPost functions, "execute as me" settings, and anonymous access configurations. Here's what the search results show:
+
+## Web App Deployment Configuration
+
+You can deploy a script as a web app through the "Deploy" menu in the script project, configuring deployment settings and sharing the resulting URL. A script can be published as a web app if it meets these requirements: It contains a doGet or doPost function.
+
+## Execute As and Access Settings
+
+Web apps can be configured to execute as the script owner or the user accessing the web app, which affects permissions. For anonymous access scenarios, if you want to allow other services to interact with your web app (as an API or proxy), the app should be accessible to Execute the App As: Me (myemail@gmail.com) and allow Anyone, even anonymous.
+
+## Deployment Steps
+
+To deploy a script as a web app, follow these steps: At the top right of the script project, click Deploy > New deployment. Next to "Select type," click Enable deployment types settings > Web app. Enter the information about your web app in the fields under "Deployment configuration." Click Deploy.
+
+## Request Handling
+
+When a user visits an app or a program sends the app an HTTP GET request, Google Apps Script runs the function doGet. When a program sends the app an HTTP POST request, Apps Script runs doPost instead. Request parameters are passed to the doGet(e) or doPost(e) function via the e event parameter, containing information about the query string and parameters.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

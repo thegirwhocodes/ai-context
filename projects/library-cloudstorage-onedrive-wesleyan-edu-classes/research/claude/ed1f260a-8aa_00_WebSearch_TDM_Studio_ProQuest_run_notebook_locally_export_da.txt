@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: TDM Studio ProQuest run notebook locally export data restrictions 2026
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:13:35 UTC
+========================================================================
+
+Search query: TDM Studio ProQuest run notebook locally export data restrictions 2026
+
+----------------------------------------
+
+Web search results for query: "TDM Studio ProQuest run notebook locally export data restrictions 2026"
+
+Links: [{"title":"Home - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio"},{"title":"Home - ProQuest TDM Studio - Research Guides at Syracuse University Libraries","url":"https://researchguides.library.syr.edu/pqtdm"},{"title":"ProQuest TDM Studio - Text Analysis - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/penntdm/tdm-studio"},{"title":"GitHub - Brown-University-Library/socsci_tdm_studio: Notebooks and resources for utilizing ProQuest TDM Studio + other text and data mining resources · GitHub","url":"https://github.com/Brown-University-Library/socsci_tdm_studio"},{"title":"Creating your dataset - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio/dataset"},{"title":"Frequently asked questions - ProQuest TDM Studio Quick-Start - Guides at Stanford University","url":"https://guides.library.stanford.edu/c.php?g=1126780&p=8358446"},{"title":"Export Data - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio/exportdata"},{"title":"Home - ProQuest TDM Studio - Research Guides at New York University","url":"https://guides.nyu.edu/TDMStudio"},{"title":"Supplemental Terms of Use – TDM Studio","url":"https://about.proquest.com/en/about/supplemental-terms-of-use-tdm-studio/"},{"title":"ProQuest TDM Studio ~ Home","url":"https://tdmstudio.proquest.com/"}]
+
+I found relevant information about TDM Studio from ProQuest regarding running notebooks locally and export data restrictions. Here are the key findings:
+
+## Running Notebooks Locally
+
+When ready to use a dataset, you can turn on the Jupyter Notebook environment, which can take up to 10 minutes to complete. You can upload your own scripts to the Jupyter notebook environment for data processing and analysis.
+
+## Export Data Restrictions
+
+There are significant restrictions on what can be exported from TDM Studio:
+
+1. **Export Limits**: The current export limit is 15 MB per week, and the export limit is shared by all users affiliated with the workbench.
+
+2. **Copyright Restrictions**: Due to copyright restrictions, you cannot export full text or any consumptive information that could be used to reconstruct the full text. Export of full text is prohibited.
+
+3. **What Can Be Exported**: You can export any derived data, as well as scripts, tables and visualizations. Datasets cannot be exported, only programs and resulting secondary analysis.
+
+4. **Derived Data Requirements**: Derived data may include summaries of, and factual extracts from, the editorial content and metadata provided that the derived data cannot reasonably be considered a substitute for reading the full-text story.
+
+These restrictions ensure compliance with copyright and licensing agreements while still allowing researchers to conduct analysis and share results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

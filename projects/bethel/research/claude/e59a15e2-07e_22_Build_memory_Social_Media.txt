@@ -1,0 +1,44 @@
+========================================================================
+AGENT RESEARCH: Build memory: Social Media
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-19 03:38:08 UTC
+========================================================================
+
+Build memory for the Social Media project.
+
+1. Read ~/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/memory/MEMORY.md
+2. Read "/Users/naomiivie/Downloads/App/Social Media/.claude-sessions/INDEX.txt"
+3. Read ALL session .txt files (for files over 100KB, read first 300 lines and last 100 lines)
+
+Then CREATE memory files at ~/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/memory/:
+- project_social_media_vision.md (type: project) — what this project is about, Naomi's content creation goals
+- project_social_media_tech.md (type: project) — tools, DaVinci Resolve, automation scripts
+- project_social_media_status.md (type: project) — what was built, current state
+- feedback_social_media.md (type: feedback) — design preferences, branding decisions
+
+Every file needs frontmatter: name, description, type, sessions: [list of session IDs].
+UPDATE MEMORY.md index. Write files with Write tool.
+
+----------------------------------------
+
+Done. Here is what was created:
+
+**Memory files at** `~/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/memory/`:
+
+1. **`project_social_media_vision.md`** -- Naomi's content creation goals: 3 content modes (talking head, worship, lifestyle), brand palette (Warm Cream, Honey Gold, Terracotta, Espresso, Sage), Instagram strategy, song details ("King of All My Life"), and content mix (40/30/20/10). Sessions: both.
+
+2. **`project_social_media_tech.md`** -- Full tech stack: recording gear final decision (Scarlett Solo + AT2020 + Q2U + Sony MDR-7506 + Pocket 3 + Resolve Studio = ~$1,125-1,240), DaVinci Resolve MCP server setup, AI video pipeline (WhisperX, Gemini 2.5 Flash, CrisperWhisper), color grading presets, caption templates, and known issues (Fusion crash with complex comps, subtitle API limitations, SRT frame offset bug). Session: 4db243fe.
+
+3. **`project_social_media_status.md`** -- Current state: MCP connected and working, brand identity defined, first worship video edited with 55 Submagic-styled captions (Gemini-verified match), word-by-word yellow highlight animation in progress (pivoting to Python-rendered transparent overlay to avoid crashes), ~45GB storage freed in session 2. Lists all created files. Sessions: both.
+
+4. **`feedback_social_media.md`** -- Naomi's preferences: Submagic style is the exact target, "viral Christian" content, be thorough and research deeply, do it yourself (don't give manual instructions), create documentation files for future Claudes, iterate until Gemini confirms visual match. Key corrections: AT2020 for music, song has only one lyric line, Pocket 3 is the camera, red grade was wrong. Sessions: both.
+
+5. **`MEMORY.md`** -- Updated index pointing to all four new files with descriptions.
+agentId: a0e56ab5a55099988 (use SendMessage with to: 'a0e56ab5a55099988' to continue this agent)
+<usage>total_tokens: 98533
+tool_uses: 18
+duration_ms: 211244</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

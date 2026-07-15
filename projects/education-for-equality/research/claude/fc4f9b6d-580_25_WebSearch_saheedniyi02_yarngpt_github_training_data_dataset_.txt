@@ -1,0 +1,26 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: saheedniyi02 yarngpt github training data dataset release open source
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:51:26 UTC
+========================================================================
+
+Search query: saheedniyi02 yarngpt github training data dataset release open source
+
+----------------------------------------
+
+Web search results for query: "saheedniyi02 yarngpt github training data dataset release open source"
+
+Links: [{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Releases · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/releases"},{"title":"Activity · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/activity"},{"title":"yarngpt/__init__.py at main · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/blob/main/__init__.py"},{"title":"GitHub - Trainingdata-datamarket/TrainingData_All_datasets: TrainingData provides high-quality data annotation tailored to your needs","url":"https://github.com/Trainingdata-datamarket/TrainingData_All_datasets"},{"title":"training-dataset · GitHub Topics · GitHub","url":"https://github.com/topics/training-dataset"},{"title":"training-data · GitHub Topics · GitHub","url":"https://github.com/topics/training-data"},{"title":"Extracting Training Data from ChatGPT","url":"https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html"},{"title":"machine-learning-dataset · GitHub Topics · GitHub","url":"https://github.com/topics/machine-learning-dataset"},{"title":"dataset · GitHub Topics · GitHub","url":"https://github.com/topics/dataset"}]
+
+Based on the search results, I found information about the YarnGPT project by saheedniyi02:
+
+YarnGPT is a Nigerian-Accented English Text-to-Speech Model created by Saheed Azeez, published in 2025 on Hugging Face. The training data includes auto-generated content and is released under the MIT license.
+
+The GitHub repository is located at https://github.com/saheedniyi02/yarngpt and is an open-source project. However, the search results don't provide specific details about where the training dataset can be downloaded or accessed separately from the main repository. You can visit the GitHub repository directly or check the associated Hugging Face page for more detailed information about accessing the training data and model weights.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

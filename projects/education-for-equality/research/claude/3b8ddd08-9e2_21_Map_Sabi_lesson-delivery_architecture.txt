@@ -1,0 +1,238 @@
+========================================================================
+AGENT RESEARCH: Map Sabi lesson-delivery architecture
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-26 19:39:56 UTC
+========================================================================
+
+You are mapping the Sabi voice-tutor codebase to understand how a phone lesson is currently delivered and whether literacy vs numeracy is handled distinctly. Context: Sabi is a voice AI tutor — a Nigerian child flashes/calls a phone number, Sabi calls back and delivers a short voice lesson (speech-to-text → LLM + guardrails → text-to-speech). The goal is to understand the CURRENT mechanics so a PM can decide how to split/route literacy vs numeracy lessons.
+
+Read these areas under /Users/naomiivie/Education for Equality/:
+- curriculum-app/lib/voice/ (especially sabi-shared.ts — read it fully)
+- curriculum-app/lib/rag/ (retrieval / curriculum context)
+- the inbound call / webhook / lesson entry handlers — search curriculum-app/app/ and any api routes for: twilio, africastalking, africas-talking, inbound, voice, call, webhook, prepilot, sabi
+- the Supabase schemas: curriculum-app/supabase-sabi-*.sql (read each)
+- sabi-server/ (the python voice server, if it has lesson logic)
+
+Report CONCRETELY — return at LEAST 90% of the substance, NOT a summary. Every relevant function name, file path (with line numbers), schema table + column, and verbatim snippet that matters. Specifically answer:
+
+1. THE CALL→LESSON FLOW: What handles an inbound flash/call? What initiates the callback and the lesson? What is the entry route/function? Trace it end to end.
+
+2. SUBJECT HANDLING: Is there ANY notion of subject (literacy vs numeracy) today? Grep the whole curriculum-app + sabi-server for: "literacy", "numeracy", "numeral", "subject", "lesson", "topic", "module", "reading", "maths", "math". Quote every meaningful match with file:line. Does the system currently deliver both, one, or undifferentiated content?
+
+3. STUDENT STATE MODEL: Read every supabase-sabi-*.sql schema and any TS that reads/writes student state. What is tracked per student? List the tables and key columns VERBATIM (progress, level, last_lesson, subject, daily completion, streak, phone identity, lesson history, etc.). This is critical — the PM needs to know what state exists to route on.
+
+4. CURRICULUM STRUCTURE: How is lesson content organized and where does it come from (RAG-retrieved modules from a vector store? hardcoded module text in sabi-shared.ts? lesson scripts as files?)? Is literacy vs numeracy content separated anywhere? Show how a lesson's content is assembled at call time.
+
+5. EXISTING ROUTING/SEQUENCING: Is there ANY logic that decides which lesson/subject a given call receives? If a child calls twice in a day, does anything differ? Quote it or state clearly that none exists.
+
+Return file:line references and verbatim code snippets throughout. Be exhaustive and concrete — the PM will make an architecture decision based on your report, so do not omit details or summarize away specifics.
+
+----------------------------------------
+
+I now have the complete end-to-end trace for both the production Python server and the Next.js app. I have everything needed for a concrete, exhaustive report.
+
+---
+
+# Sabi Voice-Tutor: Call→Lesson Flow & Subject Handling
+
+## TL;DR for the PM
+
+There are **two parallel implementations** and they differ critically on subject support:
+
+| | Next.js app (`curriculum-app/`) | Python server (`sabi-server/`) — **production** |
+|---|---|---|
+| Subject support | **Numeracy ONLY.** Literacy exists in the RAG/curriculum-content layer but is never routed to in a call. | **Literacy AND numeracy**, with per-student `course` routing and automatic literacy/numeracy alternation. |
+| Routing key | Hardcoded `subject: 'numeracy'` everywhere | `learning_state.course ∈ {"numeracy","literacy"}` read live each turn |
+| Sequencing | Flat module 0–7, advanced by post-call LLM analysis | Fixed module→week→lesson sequence (96 numeracy lessons, 80 literacy lessons), advance-only-after-mastery |
+
+The memory notes (Sabi pipeline = Whisper + Haiku + Chatterbox on Hetzner GPU, Asterisk flash-callback) point at the **Python server** as the real phone pipeline. **That server already has the literacy/numeracy split fully built.** The Next.js routes are the older/serverless telephony path and are numeracy-only.
+
+---
+
+## 1. THE CALL→LESSON FLOW (end to end)
+
+### A. Python production server (`sabi-server/`) — the flash-callback pipeline
+
+Entry is `main.py` (`uvicorn main:app`). On startup (`lifespan`, `main.py:106+`) it loads `SpeechToText`, `TextToSpeech`, `SabiLLM`, `StudentMemory`, and starts **two** telephony servers:
+- `start_agi_server` → `voice_asterisk.py` (Asterisk **FastAGI**, SIP flash-callback)
+- `start_audiosocket_server` → `voice_realtime.py` (Asterisk **AudioSocket** realtime streaming)
+(`main.py:48-52` imports; both started in lifespan.)
+
+The per-turn lesson loop is identical in shape in both. Using `voice_asterisk.py` as the canonical trace:
+
+1. **Identify student** by caller phone → `memory` student row.
+2. **Load lesson state**: `effective_state = await memory.get_effective_learning_state(student)` (`voice_asterisk.py:365`, `voice_realtime.py:885`). This returns the saved `learning_state` JSON or infers it from the last 20 sessions (`memory.py:634-651`). `module = int(effective_state.get("current_module") ...)` (`:368`).
+3. **Opening turn** is deterministic (returning callers are not re-asked their name): `build_opening_turn(student, state)` (`diagnostic_flow.py:373`) — and **it branches on course at line 389-390**: `if course == "literacy": return _build_literacy_opening_turn(...)`.
+4. **Each child turn**: STT → update state via `analyze_session(...)` (`voice_asterisk.py:457-461`) which re-reads `current_module`/course → then:
+   ```python
+   response = await llm.generate(
+       messages=llm_messages, student_id=..., current_module=module,
+       memory=memory,
+       course=str(effective_state.get("course") or "numeracy"),   # voice_asterisk.py:487, :514
+       learning_state=effective_state, ...)
+   ```
+   `voice_realtime.py:1155` and `:1183` do the same. **This `course=` argument is the live literacy-vs-numeracy switch.**
+5. **Prompt assembly** in `llm.py` `_build_system_prompt` (`llm.py:166-201`):
+   - `SABI_CORE_PROMPT + SABI_SAFETY_PREAMBLE`
+   - `_get_course_context(current_module, course)` → **`if course=="literacy": _get_literacy_context()` else `_get_rag_context(module)`** (`llm.py:374-377`)
+   - `build_curriculum_path_prompt(learning_state, current_module, course)` (`llm.py:186`) — pins the exact lesson; **literacy-branched** (`curriculum_path.py:402`)
+   - `build_instructional_route_prompt(messages, current_module, course)` (`llm.py:198`) — **literacy-branched** (`diagnostic_flow.py:460`)
+6. **TTS** (Chatterbox `naomi` voice) → stream audio back; loop.
+7. **Post-call** (`memory.py` analyze/persist): `advance_learning_state_after_mastery` (`memory.py:199`), then `route_next_course_after_session` (`memory.py:221`) decides the **next call's** course.
+
+### B. Next.js app (`curriculum-app/`) — serverless telephony
+
+Two webhook families, both numeracy-only:
+
+**Africa's Talking:** `app/api/sabi/at/incoming/route.ts`
+- `POST` → `findOrCreateStudentByPhone(callerNumber)` (`:110`) → `createCallState` (`:113`) → greeting via `callSabiVoiceFast([], student.id)` (`:116`) → returns AT XML `<Play greeting><Record callback=/at/recording>`. Recording callbacks loop back; call-end events go to `app/api/sabi/at/events/route.ts`, which runs STT→`callSabi`→Claude-Haiku post-call analysis (`at/events/route.ts:159-213`) and updates module/skills.
+
+**Twilio:** `app/api/sabi/voice/incoming/route.ts` → greeting → `<Gather>` action = `app/api/sabi/voice/respond/route.ts`, which per turn calls `callSabiVoiceFast(messages, state.studentId)` (`respond/route.ts:101/103`) and ends on `WRAP_UP_PATTERNS` or 12 turns (`:18-29, :85-86`).
+
+**ElevenLabs custom-LLM:** `app/api/sabi/voice/llm/route.ts` — OpenAI-compatible endpoint; builds prompt `SABI_SYSTEM_PROMPT + VOICE_SYSTEM_ADDENDUM + memoryContext` (`:88`). No subject/course concept at all.
+
+All three feed through `lib/voice/sabi-shared.ts` (`callSabi` / `callSabiVoiceFast`), which is **numeracy-only** (see §4).
+
+---
+
+## 2. SUBJECT HANDLING — is there a literacy/numeracy notion today?
+
+**Yes in the Python server; effectively no in the Next.js app.**
+
+### Next.js app = numeracy only
+- The RAG layer *can* express subject — `searchCurriculum(query, {subject})` and the `RetrievedChunk.subject` field accept `'literacy'` (`lib/rag/retrieval.ts:56`, `lib/rag/chunk.ts:13`). The chunker even produces literacy chunks: `if (subjectId === 'foundational-literacy') return 'literacy'` (`chunk.ts:79`), `literacy-${unitOrder}` (`chunk.ts:69`).
+- **But the only consumer at call time hardcodes numeracy.** `getSabiCurriculumContext()` always queries `subject: 'numeracy'` (`retrieval.ts:126` and `:131`), maps modules to `sabi-counting/addition/.../word-problems` only (`retrieval.ts:105-113`), and `generateSabiModuleChunks()` tags every module `subject: 'numeracy'` (`chunk.ts:251`).
+- The seeded learning-state is `course: "numeracy"` in three places: `lib/voice/sabi-shared.ts:548`, `app/api/sabi/student/route.ts:142`, and SQL `supabase-sabi-learning-state.sql:72`. Nothing in `curriculum-app/lib` or `app` ever sets course to literacy.
+- Literacy content/standards DO exist as static assets but are **web-curriculum only**, not wired to voice: `lib/foundational-literacy.ts` (`Subject id:'foundational-literacy'`), `lib/standards/foundational-literacy-crosswalk.ts`, `lib/standards/assessment-blueprints.ts:180` (`literacyDiagnosticBlueprint`), and `app/subjects/[subject]` pages.
+
+### Python server = both subjects, fully routed
+The pivot variable is **`course`** (values `"numeracy"` | `"literacy"`, default `"numeracy"`). It is threaded through every layer:
+- `llm.py:172,258,348` — `course` param; `:375 if course=="literacy"` → literacy RAG context; `:532 "## CURRENT COURSE: FOUNDATIONAL LITERACY"`.
+- `curriculum_path.py:402 if course=="literacy"` → literacy curriculum-path prompt; `:530 "course":"literacy"`; `:541` literacy advance.
+- `diagnostic_flow.py:381,389,458,460` — literacy opening turn + literacy diagnostic route.
+- `learning_state.py:289 "course":"numeracy"` default; `:354,359,381` course-rotation select; `:531,642` literacy session analysis dispatch.
+- `voice_realtime.py:277 state.get("course")=="literacy"`, `:1155,:1183`; `voice_asterisk.py:487,:514`; `memory.py:200,215,226,547`; `call_admin.py:493`; `curriculum_review.py:29,74`; `admin_review.py:807` (`current.course || "numeracy"` UI pill).
+
+Notably the **STT layer is subject-aware too**: `stt.py` has a `literacy` mode with a dedicated Intron Sahara ASR provider (`SABI_LITERACY_STT_PROVIDER`, `stt.py:110,173-174`), a `LITERACY_ENGLISH_PROMPT` (`stt.py:42`), longer silence padding (`stt.py:300-301`), and a `local_literacy_salvage` path for short single-word answers (`stt.py:261-266`). `voice_realtime.py` picks STT mode via `_is_literacy_state(state)` (`:263-287`) and relaxes the confidence gate for literacy answers (`:1037-1089`).
+
+**Verdict:** Today, a live phone call routed through the Python server delivers **both** numeracy and literacy depending on `learning_state.course`; the Next.js webhooks deliver **numeracy only**.
+
+---
+
+## 3. STUDENT STATE MODEL (what is tracked, to route on)
+
+### `sabi_students` (the per-learner row) — columns, verbatim
+From `supabase-sabi-schema.sql`, `-v2.sql`, `-telephony.sql`, `-learning-state.sql`, `-shared-phone-identity.sql`:
+
+Identity:
+- `id UUID PK`
+- `browser_id TEXT` (NOT NULL relaxed to nullable for phone-only inserts — `telephony.sql:20`)
+- `phone_number TEXT`
+- `phone_number_normalized TEXT` (E.164, e.g. `+234…`)
+- `phone_household_key TEXT` (= normalized phone; siblings share)
+- `child_name_normalized TEXT`
+- `learner_key TEXT` — `phone_number_normalized || '::' || child_name_normalized`, **UNIQUE** (`learning-state.sql:52`, `shared-phone-identity.sql:61`). This is what lets multiple children share one phone, each with their own path.
+- `name TEXT`
+
+Progress / placement:
+- `current_level TEXT DEFAULT 'beginner'`
+- `total_sessions INTEGER`, `total_correct INTEGER`, `total_wrong INTEGER`
+- `last_session_summary TEXT`
+- `current_module INTEGER DEFAULT 0` (0=diagnostic … 6=word problems, 7=completed — `-v2.sql:15-23`)
+- `current_topic TEXT DEFAULT 'diagnostic'`
+- `skills JSONB DEFAULT '{}'` (per-skill 0.0–1.0)
+- `current_week INTEGER DEFAULT 1`
+- `current_lesson INTEGER DEFAULT 1`
+- `tarl_level INTEGER DEFAULT 0`
+- `baseline_status TEXT DEFAULT 'not_started'` CHECK in (`not_started, in_progress, done, blocked`)
+- `diagnostic_results JSONB DEFAULT '{}'`
+- **`learning_state JSONB DEFAULT '{}'`** ← the single most important field for routing.
+
+The `learning_state` JSON shape (`learning_state.py:287-319` `default_learning_state`, mirrored in SQL seed `learning-state.sql:70-90`):
+```
+course: "numeracy"            # ← LITERACY-vs-NUMERACY ROUTING KEY
+phase: "onboarding"           # onboarding|diagnostic|teaching|recall
+onboarding_status: "needs_name"
+diagnostic_status: "not_started"  # not_started|in_progress|done
+current_module, current_week, current_lesson, tarl_level, active_skill
+correct_streak, wrong_streak, scaffold_depth
+last_expected_answer, last_child_numbers, last_turn_correct, repair_skill, scaffold_ladder
+next_step: "Run a warm diagnostic disguised as a game..."
+literacy: {                   # ← PARALLEL LITERACY SUB-STATE (nested)
+    phase, diagnostic_status,
+    current_phase: 1, current_module: 1, current_week: 1, current_lesson: 1,
+    tarl_reading_level: 0,
+    active_skill: "phonemic_awareness_beginning",
+    next_step: "Run a warm sound-and-story diagnostic..."
+}
+course_rotation: { last_completed_course, next_course, updated_at }  # added after a session
+```
+**Key structural point for the PM:** numeracy progress lives at the **top level** (`current_module` 0–7 flat); literacy progress lives in the **nested `literacy` sub-dict** (phase/module/week/lesson). They never collide — `advance_learning_state_after_mastery` advances only the active course (`curriculum_path.py:538-543`).
+
+### `sabi_sessions` (per-call log)
+`id, student_id, messages JSONB, summary, correct_count, wrong_count, duration_seconds, created_at` (`schema.sql`), plus `topics_covered TEXT[]`, `recommended_module INTEGER` (`-v2.sql`), and `phone_number, call_sid, channel DEFAULT 'web', reviewed_at` (`-telephony.sql`, `-prepilot.sql`). `topics_covered` is how subject shows up in history — literacy sessions write `topics_covered=[f"literacy:{skill}"]` (`learning_state.py:780,839`).
+
+### Other Sabi tables
+- `sabi_active_calls` (`call_sid PK, student_id, phone_number, messages JSONB, started_at, updated_at`) — live per-call transcript (`-telephony.sql:27`).
+- `sabi_sms_log` — outbound/inbound SMS + practice-answer grading.
+- `curriculum_embeddings` (`lesson_id, chunk_text, chunk_type, module, subject, embedding vector(384), metadata`) + `search_curriculum(query_embedding, match_count, filter_module, filter_subject)` RPC (`supabase-rag-schema.sql`). **The `subject` column and `filter_subject` arg already support `'literacy'`** — the schema is subject-ready; only the Next.js caller hardcodes numeracy.
+- `sabi_prepilot_*` (cohorts/participants/call_reviews/events) — ops tables; `participants.language_profile`, consent/assent, no subject field.
+- `sabi_call_feedback` — QA notes.
+
+---
+
+## 4. CURRICULUM STRUCTURE — where lesson content comes from
+
+Content is assembled **at call time into the system prompt** (RAG-with-fallback), not read from per-lesson files during the call. There are three content sources:
+
+**(a) Next.js `lib/voice/sabi-shared.ts` — hardcoded numeracy modules (the fallback, and what actually runs).**
+- `MODULE_CURRICULUM: Record<number,string>` (`sabi-shared.ts:210-284`) — full teaching text for modules 0–6, **all numeracy** (DIAGNOSTIC, COUNTING, ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION, WORD PROBLEMS). No literacy module exists here.
+- Assembly in `callSabi`/`callSabiVoiceFast`: tries `getSabiCurriculumContext(currentModule)` (RAG, numeracy-filtered); on any failure or empty → `getModuleCurriculum(currentModule)` (the hardcoded text). Final prompt = `SABI_CORE_PROMPT + SABI_SAFETY_PREAMBLE + curriculumContext + VOICE_SYSTEM_ADDENDUM + memoryContext + numericGradingHint` (`sabi-shared.ts:636-642, 703-709`).
+- `SABI_SYSTEM_PROMPT` (used by the ElevenLabs route) concatenates **all numeracy modules** (`sabi-shared.ts:296-300`).
+
+**(b) Python server — deterministic lesson catalogs in `curriculum_path.py` (this is where literacy/numeracy are genuinely separated).**
+- Numeracy: `MODULE_NAMES` (0–7), `MODULE_SKILLS`, `MODULE_START` (module→start week/global/week-count), `LESSON_TITLES` (**96 numbered lessons**, `curriculum_path.py:43-140`), `MODULE_PRINCIPLES`, `FALLBACK_MODULE_PROMPTS`.
+- Literacy: `LITERACY_MODULE_NAMES` (1–6: Phonemic Awareness, Oral Vocabulary, Listening Comprehension, Oral English/Grammar, Advanced Phonemic Awareness, Print Bridge — `:169`), `LITERACY_MODULE_START` (with `phase` + `suffix`), `LITERACY_MODULE_SKILLS`, `LITERACY_LESSON_TITLES` (**~80 lessons across modules 1–5, by phase**, `:195-286`), `LITERACY_MODULE_PRINCIPLES`.
+- At call time, `build_curriculum_path_prompt(state, module, course)` (`:395`) resolves the **exact** lesson: `resolve_numeracy_lesson` (`:297`) or `resolve_literacy_lesson` (`:347`), computing the concrete week/lesson/global-or-script-lesson and emitting a "CURRENT NUMERACY/LITERACY CURRICULUM PATH — HACKATHON LESSON DISCIPLINE" block (`:406-456`) that pins Sabi to one lesson for the whole call.
+- RAG context: `llm.py` `_get_rag_context(module)` (numeracy, pgvector) vs `_get_literacy_context()` (`llm.py:529` — a static literacy guidance block, not a vector store yet).
+
+**(c) Next.js static curriculum (web app only, not in the voice loop):** `lib/foundational-numeracy.ts` (216KB), `lib/foundational-literacy.ts` (204KB), `lib/cambridge-grade4-curriculum.ts`. These are the source the RAG chunker (`lib/rag/chunk.ts`) embeds, and they include literacy — but again, only numeracy is ever retrieved at call time.
+
+So at call time a lesson's content = **core personality prompt + (RAG-retrieved or hardcoded) module text + deterministic "current lesson" pin + student memory**. Literacy vs numeracy content is separated **only in `sabi-server/curriculum_path.py`** (and the static `lib/*.ts` source); the live Next.js voice path assembles numeracy only.
+
+---
+
+## 5. EXISTING ROUTING / SEQUENCING — does anything decide which subject/lesson a call gets?
+
+### Within-subject sequencing — YES, in both, but differently
+- **Next.js:** module advance is decided **after** the call by an LLM analysis pass. `at/events/route.ts:159-213` asks Claude-Haiku for `should_advance`/`recommended_module`, then `nextModule = should_advance ? min(current+1,7) : recommended_module` (`:247-249`) and writes it back. There is no week/lesson concept and no subject choice — it's a flat 0→7 numeracy ladder.
+- **Python:** strict module→week→lesson sequence, **advance-only-after-mastery**: `advance_numeracy_state_after_mastery` / `advance_literacy_state_after_mastery` (`curriculum_path.py:459, 497`) step to the next lesson record; in-call routing never jumps modules (`build_curriculum_path_prompt` rule: "Do not jump to the next module during the call").
+
+### Subject (literacy↔numeracy) routing — YES, but ONLY in the Python server
+`route_next_course_after_session(state, user_turns, has_learning_evidence)` (`learning_state.py:336-402`), called post-call from `memory.py:221`:
+- If current course is `numeracy` and the numeracy diagnostic is done (`current_module>0`) → **switch next call to `literacy`** (`:359-379`): sets `course:"literacy"`, seeds the literacy diagnostic if not done, writes `course_rotation.next_course="literacy"`.
+- If current course is `literacy` and literacy diagnostic done → **switch back to `numeracy`** (`:381-399`).
+- Guarded: only switches after the child actually spoke (`user_turns>0 and has_learning_evidence`), and **never mid-call** (the comment at `:343-345`: "Pilot docs call for alternating literacy/numeracy… never switches the active lesson mid-call").
+
+### "If a child calls twice in a day, does anything differ?"
+- **Python server:** Yes. Call 1 finishes → `route_next_course_after_session` may flip `course` and `advance_*_after_mastery` bumps the lesson pointer; the saved `learning_state` is reloaded at the top of call 2 (`get_effective_learning_state`), so call 2 starts at the next lesson and possibly the alternate subject. The deterministic opening turn even greets with a recall warm-up for that subject (`diagnostic_flow.py:406-416` numeracy, `:445-455` literacy).
+- **Next.js webhooks:** Differs only in numeracy module/skills (post-call analysis advanced the module); **subject never changes** (always numeracy). Within a single call, auto-wrap triggers at 12 user turns or on `WRAP_UP_PATTERNS` (`respond/route.ts:85-86, 18-29`).
+
+---
+
+## Key file:line index for the PM
+
+Routing pivot (`course`): `sabi-server/learning_state.py:336` (`route_next_course_after_session`), `:289` default; `sabi-server/llm.py:374-377` (`_get_course_context`), `:186,198`; `sabi-server/curriculum_path.py:395-456` (`build_curriculum_path_prompt`), `:459-543` (advance); `sabi-server/diagnostic_flow.py:373-552` (openings + diagnostic routes); call sites `sabi-server/voice_asterisk.py:482-518`, `sabi-server/voice_realtime.py:1150-1187`.
+Numeracy-only Next.js: `curriculum-app/lib/voice/sabi-shared.ts:210-300, 600-752`; `curriculum-app/lib/rag/retrieval.ts:101-153` (hardcodes `subject:'numeracy'`).
+State: `curriculum-app/supabase-sabi-learning-state.sql` + `sabi-server/learning_state.py:287-319`.
+Literacy catalog: `sabi-server/curriculum_path.py:169-294`.
+
+**Bottom line for the architecture decision:** the literacy/numeracy split the PM wants is **already implemented and wired into the production Python server** (`course` field + nested `literacy` state + alternation). The work to "split/route" is mostly (a) deciding the routing policy (alternate vs. let-child-choose vs. dedicated phone numbers), and (b) bringing the **Next.js webhook path** to parity if it's still in use — it currently ignores `course` and serves numeracy only.
+agentId: ae78c989948fb71b7 (use SendMessage with to: 'ae78c989948fb71b7' to continue this agent)
+<usage>subagent_tokens: 174330
+tool_uses: 43
+duration_ms: 2019699</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

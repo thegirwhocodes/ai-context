@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: real-time sign language detection latency pipeline optimization frame skipping b
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-12 11:18:20 UTC
+========================================================================
+
+Search query: real-time sign language detection latency pipeline optimization frame skipping batching 2025
+
+----------------------------------------
+
+Web search results for query: "real-time sign language detection latency pipeline optimization frame skipping batching 2025"
+
+Links: [{"title":"From pixels to letters: A high-accuracy CPU-real-time American Sign Language detection pipeline - ScienceDirect","url":"https://www.sciencedirect.com/science/article/pii/S2666827025000337"},{"title":"Human-Centered Editable Speech-to-Sign-Language ...","url":"https://arxiv.org/pdf/2506.14677"},{"title":"Real-Time American Sign Language Interpretation Using Deep Learning and Keypoint Tracking - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11991612/"},{"title":"Real-Time Sign Language Gestures to Speech Transcription using Deep Learning","url":"https://arxiv.org/html/2508.12713v1"},{"title":"Real-Time American Sign Language Interpretation Using Deep Learning and Keypoint Tracking","url":"https://www.mdpi.com/1424-8220/25/7/2138"},{"title":"Hand Speak: An AI-Powered Real-Time System for Sign ...","url":"https://www.atlantis-press.com/article/126017288.pdf"},{"title":"Sign language recognition using modified deep learning network and hybrid optimization: a hybrid optimizer (HO) based optimized CNNSa-LSTM approach | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-76174-7"},{"title":"Real-Time Sign Language Recognition and Translation Using MediaPipe and LSTM-Based Deep Learning","url":"https://www.researchgate.net/publication/394250427_Real-Time_Sign_Language_Recognition_and_Translation_Using_MediaPipe_and_LSTM-Based_Deep_Learning"},{"title":"SIGN LANGUAGE RECOGNITION USING MACHINE LEARNING Abstract","url":"https://ymerdigital.com/uploads/YMER240566.pdf"},{"title":"Real-Time Sign Language Recognition and Translation ...","url":"https://www.ijcaonline.org/archives/volume187/number25/ravikiran-2025-ijca-925415.pdf"}]
+
+Based on the search results, I found recent research on real-time sign language detection with various optimization techniques. Here are the key findings from 2025:
+
+## Recent Sign Language Detection Systems (2025)
+
+**High-Accuracy Real-Time Pipelines**
+
+A CPU-real-time American Sign Language recognition system includes preprocessing, hand detection, and classification using a MobileNetV3 convolutional neural network backbone. This approach achieves 99.95% accuracy in ASL gesture detection in real time without GPU acceleration.
+
+**Latency Optimization Approaches**
+
+Recent systems use several strategies to minimize latency:
+
+- MediaPipe is used to extract 21 hand keypoints from frames, which are passed to YOLOv11 for gesture classification, enabling real-time processing under various lighting and background conditions
+
+- When deployed on a Raspberry Pi platform, systems achieve real-time performance with a frame rate of 12–15 FPS and an average inference latency of approximately 65 ms per frame
+
+- A resampling hook locally regenerates edited segments in 75 ms on average without disturbing surrounding motion for editable sign-animation pipelines
+
+**Challenges with Frame Processing**
+
+The program exhibited noticeable latency due to the hand detection frequency in MediaPipe, which could be optimized. This suggests that hand detection frequency optimization remains an area for improvement in real-time pipelines.
+
+The research indicates that achieving low latency is critical for real-time applications, with systems increasingly incorporating techniques like efficient feature extraction and optimized network architectures to maintain real-time performance.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

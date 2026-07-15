@@ -1,0 +1,23 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mit-africa.com/hackathon/
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 00:04:39 UTC
+========================================================================
+
+URL: https://mit-africa.com/hackathon/
+Extraction prompt: What is the hackathon theme, judging criteria, format, and any requirements for the pitch/presentation? Get all details about what teams are expected to present.
+
+----------------------------------------
+
+I cannot provide the requested information about the hackathon theme, judging criteria, format, and presentation requirements based on the content supplied.
+
+The webpage content provided consists primarily of CSS styling code, schema markup, and technical configuration data for the MIT Sloan Africa Business Club website. While the page URL indicates a competition/hackathon section ("https://mit-africa.com/hackathon/"), the actual substantive content describing the hackathon details is not included in the text excerpt provided.
+
+To obtain this information, you would need to:
+- Visit the full webpage directly
+- Contact the MIT Sloan Africa Business Club
+- Check their social media channels (Twitter, LinkedIn, Instagram as referenced in the schema data)
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

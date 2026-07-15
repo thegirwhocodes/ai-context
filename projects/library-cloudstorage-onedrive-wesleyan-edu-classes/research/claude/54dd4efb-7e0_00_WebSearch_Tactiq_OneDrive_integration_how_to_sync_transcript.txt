@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Tactiq OneDrive integration how to sync transcripts 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 01:56:41 UTC
+========================================================================
+
+Search query: Tactiq OneDrive integration how to sync transcripts 2026
+
+----------------------------------------
+
+Web search results for query: "Tactiq OneDrive integration how to sync transcripts 2026"
+
+Links: [{"title":"Tactiq Integrations | Tactiq Help Center","url":"https://help.tactiq.io/en/collections/3091175-tactiq-integrations"},{"title":"Tactiq.io - AI Meeting Transcripts for Google Meet, Zoom & Teams","url":"https://tactiq.io/"},{"title":"My Honest Tactiq AI Review & 5 Better Alternatives (2026) - tl;dv","url":"https://tldv.io/blog/tactiq-alternatives/"},{"title":"OneDrive Version History: What it is & How to Use it","url":"https://tactiq.io/learn/onedrive-version-history-what-it-is-how-to-use-it"},{"title":"How to share a transcript | Tactiq Help Center","url":"https://help.tactiq.io/en/articles/9188113-how-to-share-a-transcript"},{"title":"iCloud vs. Google Drive vs. OneDrive (Comparison Guide)","url":"https://tactiq.io/learn/icloud-vs-google-drive-vs-onedrive"},{"title":"Tactiq Blog | Insights, tips and tutorials for meetings that matter.","url":"https://tactiq.io/learn"},{"title":"Tactiq Pricing: Start with 10 Free Monthly Transcripts","url":"https://tactiq.io/buy"},{"title":"Tactiq Pricing Review 2026: Plans, Limits, and The Best Alternative","url":"https://meetgeek.ai/blog/tactiq-pricing"},{"title":"Tactiq HubSpot Integration | Connect Them Today","url":"https://ecosystem.hubspot.com/marketplace/apps/tactiq-518620"}]
+
+Based on the search results, here's information about Tactiq OneDrive integration and how to sync transcripts:
+
+## How to Connect Tactiq with OneDrive
+
+After signing up and installing the Tactiq Chrome Extension, go to your Tactiq dashboard, open Account & Settings, select Integrations, scroll to Storage, and click Connect next to OneDrive. Sign in with your Microsoft account and review permissions and select Accept.
+
+## Automatic Transcript Syncing
+
+After connecting OneDrive, you can control how transcripts are saved by opening the OneDrive settings under Integration and turning on Automatically save after meeting. This option works when OneDrive sync is enabled on your device.
+
+## How Transcripts Are Saved
+
+Tactiq saves meeting transcripts directly to OneDrive as Word files, and OneDrive handles version tracking as notes are updated, summaries are added, or follow-ups are written. Tactiq captures meeting conversations from Microsoft Teams, Zoom, and Google Meet and saves transcripts directly to OneDrive as editable files.
+
+## Additional Integration Support
+
+Tactiq offers help on connecting your OneDrive account so Tactiq can save your transcripts and AI outputs directly to your storage, and how to automatically send transcripts and AI outputs from your workflows to OneDrive.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

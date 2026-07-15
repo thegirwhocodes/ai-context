@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.commpeak.com/docs/did-numbers
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:27:36 UTC
+========================================================================
+
+URL: https://docs.commpeak.com/docs/did-numbers
+Extraction prompt: What DID number types are available? Does CommPeak offer Nigerian numbers? Toll-free? List all details.
+
+----------------------------------------
+
+# CommPeak DID Number Types
+
+Based on the documentation provided, CommPeak offers "DID numbers from over 75 countries." However, the page content doesn't specify detailed information about:
+
+- **Nigerian numbers specifically** - not mentioned in the available excerpt
+- **Toll-free options** - not detailed in this section
+- **Complete list of DID types** - the documentation references a "[DID Types](/docs/did-types)" page, but its contents aren't included in the provided material
+
+## What's Available
+
+The documentation indicates CommPeak provides virtual phone numbers allowing you to "control your local presence anywhere in the world and send calls and texts without requiring regional offices."
+
+## Next Steps
+
+To find specific details about Nigerian numbers, toll-free DIDs, and complete type offerings, you'll need to:
+
+1. Visit the **DID Types** documentation page (linked in the sidebar)
+2. Check the **Getting Started with DID Numbers** section
+3. Contact CommPeak support directly for country-specific availability
+
+The main page focuses on configuration and management rather than a complete product catalog.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

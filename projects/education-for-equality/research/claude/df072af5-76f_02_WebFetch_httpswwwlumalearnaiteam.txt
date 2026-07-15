@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.lumalearn.ai/team
+Session: df072af5-76fc-44e6-b1bf-5d7598aaf5ba
+Time: 2026-03-10 21:58:37 UTC
+========================================================================
+
+URL: https://www.lumalearn.ai/team
+Extraction prompt: Get details about the Luma Learn team, especially Chris Folayan - his background, role, and any other team members
+
+----------------------------------------
+
+# Luma Learn Team Overview
+
+## Chris Folayan
+**Role:** Co-Founder & Executive Officer
+
+Chris brings extensive entrepreneurial experience to the organization. According to the website, he is described as "A global award-winning serial entrepreneur with 25+ years building and scaling companies worldwide."
+
+## Other Key Team Members
+
+**James Barnard** - Founder & CEO
+An entrepreneur with a business degree from Northwest University who is driven by passion for education and global impact.
+
+**Matt Cornelius** - Co-Founder & Chief Product Officer
+An industrial engineering graduate from the University of Pretoria who believes in Africa's untapped potential.
+
+## Organization Mission
+The team is collectively focused on transforming education across Africa through accessible, affordable learning solutions via WhatsApp, serving learners, teachers, and parents in South Africa.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,571 @@
+========================================================================
+AGENT RESEARCH: Explore full codebase structure
+Session: 3f401eb3-9024-443e-8522-8bcf23466a9a
+Time: 2026-04-04 19:45:33 UTC
+========================================================================
+
+Please do a thorough exploration of the codebase at /Users/naomiivie/Downloads/App/Rings Version 2.1- Multi device Jan 2025. I need a complete picture of:
+
+1. All Swift source files and their contents (every file in Shared/, iOS/, Rings Version 2.1/, etc.)
+2. The data models (Friend.swift, CycleMetadata.swift, etc.)
+3. The ViewModels and business logic
+4. All Services (Supabase, Auth, LocalPersistence, Notifications)
+5. All Views (ContentView, iOS ContentView, SignInView, etc.)
+6. Constants and configuration
+7. App entry points
+8. Any test files
+
+For each file, read its contents and summarize:
+- The file path
+- Key types/classes/structs defined
+- Key methods and their purpose
+- Dependencies on other files/modules
+- Any important logic (the cycle algorithm, sync logic, etc.)
+
+Be very thorough — I need enough detail to build a comprehensive architecture diagram.
+
+----------------------------------------
+
+Perfect! Now I have a complete overview. Let me create a comprehensive architecture document:
+
+## Complete Rings Version 2.1 Codebase Architecture
+
+Based on my thorough exploration, here is a comprehensive breakdown of the entire codebase:
+
+### **DIRECTORY STRUCTURE**
+```
+Rings Version 2.1- Multi device Jan 2025/
+├── Shared/                          (Cross-platform code)
+│   ├── Models/
+│   ├── ViewModels/
+│   ├── Views/
+│   ├── Services/
+│   └── Constants/
+├── iOS/                             (iOS-specific views)
+├── Rings Version 2.1/               (macOS app)
+├── Rings Version 2.1Tests/
+└── Rings Version 2.1UITests/
+```
+
+---
+
+## **1. DATA MODELS**
+
+### `/Shared/Models/Friend.swift`
+**Key Types:**
+- `Friend` (struct): Main model for a contact
+  - Properties: `id: UUID`, `name: String`, `circle: String`, `lastContact: Date`, `isContacted: Bool`, `modifiedAt: Date`
+  - Codable & Hashable (enables serialization and SwiftUI use)
+  - Methods: `recordID` (CloudKit), `init(from record: CKRecord)`, `toRecord()` (CloudKit conversion)
+- `FriendTouchpointState` (struct): Manages visible/remaining touchpoint options for each friend
+- `DayPreview` (struct): Represents a day with scheduled friends
+
+**Dependencies:** CloudKit, Foundation
+
+---
+
+### `/Shared/Models/CycleMetadata.swift`
+**Key Types:**
+- `CycleMetadata` (struct): Sync-able cycle state
+  - Properties: `anchorDate: Date` (day 1 reference), `lastDayNumber: Int`, `rolloverQueue: [UUID]` (unfinished from yesterday), `lastPresented: [UUID]` (shown today), `modifiedAt: Date`
+  - CloudKit record conversion methods
+  
+**Purpose:** Tracks the cycle state across devices during sync
+
+**Dependencies:** CloudKit, Foundation
+
+---
+
+## **2. CONSTANTS**
+
+### `/Shared/Constants/CircleConstants.swift`
+**Content:**
+- `cadenceDays: [String: Int]` - Reach-out frequency for each circle (3→3 days, 12→3 days, 30→7 days, 50→14 days, etc.)
+- `orderedCircles: [String]` - Ordered list of 7 circles + Business Connections
+- `circleCapacity: [String: Int]` - Max members per circle
+- `touchpointOptions: [String: [String]]` - Context-specific actions (e.g., "Update", "Check-in", "Coffee", "Newsletter")
+
+---
+
+## **3. SERVICES**
+
+### **Authentication & Security**
+
+#### `/Shared/Services/AuthenticationService.swift`
+**Class:** `AuthenticationService: NSObject, ObservableObject`
+- **Published Properties:** `isAuthenticated`, `user: User?`, `authError`, `isLoading`
+- **Methods:**
+  - `checkSession()` - Checks for existing Supabase session
+  - `signInWithApple()` - Apple Sign In flow (not fully implemented)
+  - `signInWithEmail()`, `signUpWithEmail()` - Email auth with Supabase
+  - `signOut()` - Sign out, optionally clearing saved credentials
+  - `userId`, `userEmail` properties
+- **Dependencies:** Supabase SDK, AuthenticationServices
+- **Error Handling:** Custom `AuthError` enum
+
+---
+
+#### `/Shared/Services/BiometricAuthService.swift`
+**Class:** `BiometricAuthService` (Singleton)
+- **Types:** `BiometricType` enum (none, touchID, faceID, opticID)
+- **Methods:**
+  - `biometricType()` - Detect device biometric capability
+  - `biometricName()` - Human-readable name
+  - `isBiometricAvailable()` - Boolean check
+  - `authenticate()` - Trigger biometric prompt
+- **Error Handling:** `BiometricError` enum
+- **Dependencies:** LocalAuthentication framework
+
+---
+
+#### `/Shared/Services/KeychainService.swift`
+**Class:** `KeychainService` (Singleton)
+- **Methods:**
+  - `saveCredentials()`, `loadCredentials()`, `deleteCredentials()`, `hasStoredCredentials()`
+- **Purpose:** Secure credential storage using Keychain
+- **Details:** Service ID is `com.naomi.rings`, stores email and password separately
+- **Dependencies:** Security framework
+
+---
+
+### **Synchronization & Persistence**
+
+#### `/Shared/Services/SupabaseConfig.swift`
+**Content:**
+- Static configuration: `url` (Supabase project URL), `anonKey` (JWT token)
+- `isEnabled: Bool` flag - Toggles between sync and local-only mode
+- Currently configured with live Supabase project
+
+---
+
+#### `/Shared/Services/SupabaseSyncService.swift`
+**Class:** `SupabaseSyncService: ObservableObject`
+- **Published Properties:** `isSyncing`, `lastSyncDate`, `syncError`, `isAvailable`
+- **Key Methods:**
+  - `performFullSync()` - Main sync method with conflict resolution (last-write-wins)
+  - `saveFriend()`, `saveFriends()`, `deleteFriend()` - CRUD operations
+  - `fetchFriends()`, `uploadFriends()` - Friends management
+  - `startRealtimeSubscription()` - Fast polling (2-second intervals) for near real-time updates
+  - `stopRealtimeSubscription()` - Stop polling
+- **Data Protection:** Protects against empty remote overwrites
+  - If local has >0 friends and remote is empty → keep all local
+  - If local has >5× remote → prioritize local with merge
+- **Merge Logic:**
+  - Last-write-wins based on `modifiedAt` timestamp
+  - Special `mergeFriendsPrioritizingLocal()` for data safety
+- **DTO Classes:** `FriendDTO`, `CycleMetadataDTO` (for Supabase JSON serialization)
+- **Error Handling:** `SupabaseError` enum
+- **Dependencies:** Supabase SDK, Combine
+
+---
+
+#### `/Shared/Services/CloudKitSyncService.swift`
+**Class:** `CloudKitSyncService: ObservableObject`
+- **Status:** Currently disabled (cloudKitEnabled = false)
+- **Published Properties:** `isSyncing`, `lastSyncDate`, `syncError`, `isCloudAvailable`
+- **Methods:**
+  - `setupZone()` - Create CloudKit private zone
+  - `fetchAllFriends()`, `saveFriend()`, `saveFriends()`, `deleteFriend()` - Friends sync
+  - `fetchCycleMetadata()`, `saveCycleMetadata()` - Metadata sync
+  - `performFullSync()` - Full sync with merge
+  - `checkAccountStatus()` - Verify iCloud sign-in
+- **Merge Logic:** Last-write-wins
+- **Note:** Requires paid Apple Developer account ($99/year). Free/personal teams cannot use CloudKit
+- **Dependencies:** CloudKit, Combine
+
+---
+
+#### `/Shared/Services/CloudKitConfig.swift`
+**Content:**
+- Container ID: `iCloud.com.naomi.ivie.Rings-Version-2-1`
+- Zone name: `RingsZone`
+- Provides safe initialization with error handling
+- `CloudKitError` enum with detailed messages
+
+---
+
+#### `/Shared/Services/LocalPersistenceService.swift`
+**Class:** `LocalPersistenceService`
+- **Methods:**
+  - `loadFriends()` - Load from JSON file
+  - `saveFriends()` - Save with atomic write (temp file + move)
+  - `migrateFromOldLocation()` - Migrate from old Documents directory to App Group
+- **Purpose:** Fallback local storage when sync unavailable
+- **App Group ID:** `group.com.naomi.ivie.Rings` (for cross-device document sharing)
+- **File:** `friends.json` stored in App Group container
+- **Dependencies:** Foundation (FileManager)
+
+---
+
+### **Notifications**
+
+#### `/Shared/Services/NotificationManager.swift`
+**Class:** `NotificationManager` (Singleton)
+- **Methods:**
+  - `requestAuthorization()` - Request notification permissions
+  - `scheduleNotification()` - One-time reminder
+  - `scheduleDailyNotification()` - Repeating daily at specified time
+  - `cancelAllNotifications()` - Clear all pending notifications
+- **Scheduled Reminders:** Morning (9 AM) and evening (8 PM) by default
+- **Dependencies:** UserNotifications framework
+
+---
+
+## **4. VIEW MODELS**
+
+### `/Shared/ViewModels/FriendViewModel.swift`
+**Class:** `FriendViewModel: ObservableObject` (MainActor)
+
+**Published Properties:**
+- `friends: [Friend]` - All friends
+- `todayDue: [Friend]` - Friends to contact today
+- `showCapacityError: Bool`
+- `isSyncing: Bool`, `syncError: String?`
+- `touchpointStates: [UUID: FriendTouchpointState]`
+
+**Core Algorithm (The "Cycle Algorithm"):**
+
+1. **Anchor Date & Day Calculation:**
+   - `anchorDate()` - First day of the app (stored in UserDefaults)
+   - `dayNumberSinceAnchor()` - Current absolute day (1-based)
+   - `dayInCycle50()` - Position in 50-day super-cycle
+
+2. **Scheduling Logic:**
+   - For each circle, friends are assigned to days based on:
+     - Cadence: How often to reach out (3, 7, 14, 30, 50 days)
+     - Stable order: Sorted by circle priority, then alphabetically by name
+     - Formula: `dayInCycle = ((dayNumber - 1) % cadence) + 1`
+   - Friend scheduled if their position mod cadence matches today
+
+3. **Rollover Management:**
+   - Unfinished contacts from yesterday are re-added to today's queue
+   - Tracked in `rolloverQueue: [UUID]`
+   - Cleared when marked contacted
+
+4. **State Tracking:**
+   - `lastDayNumber` - Last day processed
+   - `lastPresented` - Friends shown today
+   - Applied daily via `applyRolloverIfDayChanged()`
+
+**Key Methods:**
+
+- **Sync Operations:**
+  - `performSync()` - Full sync with Supabase
+  - `startRealtimeSync()`, `stopRealtimeSync()` - Real-time polling
+  
+- **Data Management:**
+  - `loadLocalData()`, `saveLocalData()` - Persistence
+  - `buildLocalMetadata()`, `applyMetadata()` - Metadata handling
+  
+- **Scheduling:**
+  - `refreshToday()` - Recalculate today's due list
+  - `scheduledIDsForDay()` - Get friends for a specific day
+  - `generateUpcomingDays()` - Preview next 7 days
+  - `stableOrder()` - Deterministic friend sorting
+  
+- **Public Mutations:**
+  - `addFriend()` - Add with auto-numbering
+  - `deleteFriend()`, `clearAllFriends()`
+  - `updateFriend()` - Edit name/circle
+  - `markContacted()` - Mark as reached out today
+  - `renumberFriendsInCircles()` - Reorder numbering
+  - `resetCycles()` - Reset to Day 1
+  
+- **Touchpoints:**
+  - `getVisibleOptions()` - 3 visible touchpoint options per friend
+  - `handleTap()` - Rotate options
+  - `resetOptions()` - Reset to initial 3
+
+**Dependencies:** SwiftUI, UserNotifications, Combine, Services (LocalPersistence, SupabaseSync, Auth)
+
+---
+
+## **5. SHARED VIEWS**
+
+### `/Shared/Views/HomeView.swift`
+**Structures:**
+1. **`HomeView`** - Navigation container
+   - Manages landing page vs. contacts view state
+   - Handles authentication changes
+   - Shows sign-in sheet
+
+2. **`LandingPageView`** - Welcome/launch screen
+   - App logo display
+   - "Enter Rings" button (unsigned in)
+   - "View Your Contacts" button (signed in)
+   - Sign in button (when Supabase enabled)
+   - Success message after sign-in
+
+3. **`ContactsView`** - Main contacts management
+   - Today's due list (numbered)
+   - "You're all caught up!" message when empty
+   - Sync status indicator
+   - Account icon button (top right)
+   - FriendRow components with touchpoint buttons
+   - Action buttons: All Friends, Upcoming (7 days), Reset
+   - Add friend form (name + circle picker)
+   - Delete on swipe
+
+4. **`AccountMenu`** - Menu-style account access (macOS)
+   - Shows email when signed in
+   - Sign out options
+   - Authenticated indicator
+
+5. **`AccountIconButton`** - Top-right icon
+   - Shows green dot when authenticated
+   - Shows person icon when not
+   - Derives initials from email
+
+6. **`AccountSheet`** - Full account management modal
+   - Profile avatar with initials
+   - Email + sync status
+   - Manual sync button
+   - Sign out options
+   - Clear password option
+
+---
+
+### `/Shared/Views/SignInView.swift`
+**Structures:**
+1. **`SignInView`** - Authentication UI
+   - Toggle between sign-in and sign-up modes
+   - Email and password fields
+   - Biometric auth button (if available)
+   - "Remember me" toggle
+   - Error/success messages
+   - Save password option (with Keychain)
+   - Native password picker integration
+   - Links to toggle modes
+
+2. **`NativeAuthHandler`** - ASAuthorizationController delegate
+   - Handles native password picker results
+   - Passes credentials back to form
+
+**Dependencies:** SwiftUI, AuthenticationServices, Keychain, BiometricAuth
+
+---
+
+### `/Shared/Views/WelcomeView.swift`
+**Structure:**
+- Animated welcome screen with logo
+- Staggered animation entrance
+- "View Your Contacts" button
+- Clean white background with custom button style
+
+---
+
+## **6. PLATFORM-SPECIFIC VIEWS**
+
+### macOS: `/Rings Version 2.1/ContentView.swift`
+**Additional Structures:**
+1. **`ContentView`** - Entry point with welcome state
+2. **`MainFriendsView`** - Main list with native macOS styling
+3. **`AccountSheetMac`** - macOS-specific account sheet
+4. **`UpcomingDaysView`** - 7-day preview with color-coded circles
+5. **`AllFriendsView`** - Browse all friends by circle
+6. **`EditFriendView`** - Edit form
+7. **`FriendRow`** - List item with touchpoint buttons
+8. **`DynamicCalendarIcon`** - Calendar widget (current date)
+9. **`AccountView`** - Account details display
+
+---
+
+### iOS: `/iOS/ContentView_iOS.swift`
+**Additional Structures:**
+1. **`ContentView_iOS`** - Entry point with welcome state
+2. **`MainFriendsView_iOS`** - List with iOS toolbars and menus
+3. **`FriendRow_iOS`** - Expandable row with swipe actions (Done/Edit/Delete)
+4. **`AddFriendSheet`** - Form for adding friends
+5. **`AllFriendsView_iOS`** - Browse all friends
+6. **`UpcomingDaysView_iOS`** - 7-day preview
+7. **`EditFriendView_iOS`** - Edit form with numbering
+8. **`DynamicCalendarIcon_iOS`** - Calendar widget (current date)
+9. **`AccountSheet_iOS`** - Account management (iOS style)
+10. **`WelcomeView_iOS`** - Animated welcome screen
+
+**iOS-Specific Interactions:**
+- Swipe actions: Left (Done), Right (Delete/Edit)
+- Pull-to-refresh for manual sync
+- Expandable rows showing touchpoint buttons
+- Form-based modals instead of sheets
+
+---
+
+### `/iOS/RingsIOSApp.swift`
+**Entry Point:**
+- `RingsIOSApp` - Main app struct
+- Creates `ContentView_iOS()` in WindowGroup
+- Tint color: pink
+
+---
+
+### `/Rings Version 2.1/Rings_Version_2_1App.swift`
+**Entry Point:**
+- `Rings_Version_2_1App` - macOS app
+- Creates `ContentView()` in WindowGroup
+- Window resizability: content size
+- Tint color: pink
+
+---
+
+## **7. TEST FILES**
+
+### `/Rings Version 2.1Tests/Rings_Version_2_1Tests.swift`
+- Empty placeholder test file using Swift Testing framework
+- Ready for unit tests
+
+### `/Rings Version 2.1UITests/Rings_Version_2_1UITests.swift`
+- XCUITest setup with launch tests
+- Boilerplate for UI testing
+
+---
+
+## **8. ARCHITECTURE OVERVIEW**
+
+### **Data Flow Diagram**
+```
+┌─────────────────────────────────────────────┐
+│         Views (macOS/iOS)                   │
+├─────────────────────────────────────────────┤
+│  HomeView / ContentView / FriendRow, etc.   │
+└────────────────┬────────────────────────────┘
+                 │ Observes
+                 ↓
+┌─────────────────────────────────────────────┐
+│      FriendViewModel (@MainActor)           │
+├─────────────────────────────────────────────┤
+│  • Cycle algorithm (scheduling)             │
+│  • Friend CRUD operations                   │
+│  • State management (todayDue, etc.)        │
+└────────┬──────────────────┬──────────┬──────┘
+         │ Uses             │          │
+    ┌────↓───┐      ┌──────↓──┐  ┌───↓──────┐
+    │LocalPer│      │Supabase │  │BiometricAuth
+    │sistence│      │SyncServ │  │KeychainSvc
+    │Service │      │(Polling)│  │CloudKitSync
+    └────┬───┘      └──────┬──┘  └───┬───────┘
+         │ JSON File       │          │
+    ┌────↓──────┐  ┌──────↓──┐  ┌───↓────────┐
+    │friends.json│ │Supabase │  │iCloud/     │
+    │            │ │DB       │  │Keychain    │
+    └────────────┘ └─────────┘  └────────────┘
+```
+
+### **Sync Strategy**
+- **Primary:** Supabase with fast polling (2-second interval)
+- **Fallback:** CloudKit (disabled, requires paid dev account)
+- **Local:** UserDefaults + JSON file
+- **Conflict Resolution:** Last-write-wins (modifiedAt timestamp)
+- **Data Protection:** Never overwrites local data with empty remote
+
+### **Authentication Flow**
+```
+User Input (Email/Password)
+    ↓
+SignInView
+    ↓
+AuthenticationService
+    ├─→ Supabase Auth (email/password/Apple)
+    └─→ Optional: Save credentials in Keychain
+    ↓
+BiometricAuthService (for future logins)
+    ├─→ Touch ID / Face ID / Optic ID
+    └─→ Auto-fill from Keychain
+```
+
+### **The Cycle Algorithm**
+```
+For each contact:
+1. Determine stable order (circle priority, name alphabetically)
+2. Assign to days based on cadence: day_in_cycle = (position - 1) % cadence + 1
+3. Schedule when: dayInCycle == (absoluteDay - 1) % cadence + 1
+4. Roll unfinished contacts forward to next day
+5. Display in "Today" list
+
+Example: Contact at position 3 in "Circle of 3" (cadence 3)
+- Day 1: shown, marked contacted → complete
+- Day 2: not shown
+- Day 3: not shown
+- Day 4: shown again
+```
+
+---
+
+## **9. KEY DEPENDENCIES**
+
+**External Libraries:**
+- `Supabase` - Backend sync and authentication
+- `AuthenticationServices` - Apple Sign In
+- `LocalAuthentication` - Biometric auth
+- `Security` - Keychain
+- `UserNotifications` - Reminders
+- `CloudKit` - Disabled backup sync
+- `SwiftUI` - UI framework
+- `Combine` - Reactive programming
+
+**Build Requirements:**
+- iOS 15+ (iPhone/iPad)
+- macOS 12+
+- Xcode 15+
+- Swift 5.9+
+
+---
+
+## **10. DATA MODEL RELATIONSHIPS**
+
+```
+Friend
+├── id: UUID (unique identifier)
+├── name: String ("1. Name" with numbering)
+├── circle: String (one of 7 circles or Business Connections)
+├── lastContact: Date (last reached out)
+├── isContacted: Bool (marked today)
+├── modifiedAt: Date (for sync conflict resolution)
+└── Converts to/from:
+    ├── CKRecord (CloudKit)
+    ├── FriendDTO (Supabase)
+    └── JSON (LocalPersistence)
+
+CycleMetadata
+├── anchorDate: Date (Day 1)
+├── lastDayNumber: Int (last processed)
+├── rolloverQueue: [UUID] (unfinished from yesterday)
+├── lastPresented: [UUID] (shown today)
+└── modifiedAt: Date (for sync)
+```
+
+---
+
+## **11. CRITICAL LOGIC FLOWS**
+
+**App Launch:**
+1. Create FriendViewModel
+2. Load local friends from JSON
+3. Ensure anchor date exists (create if first launch)
+4. Check for saved credentials (Keychain)
+5. Check authentication status (Supabase)
+6. Refresh today's due list
+7. Start real-time sync if authenticated
+
+**Daily Refresh:**
+1. Calculate current absolute day
+2. Check if day changed (rollover logic)
+3. Move unfinished contacts to rollover queue
+4. Reset `isContacted` flag for all
+5. Recalculate today's schedule
+6. Update UI with new due list
+
+**Marking Contacted:**
+1. Set `isContacted = true`, update `modifiedAt`
+2. Remove from rollover queue
+3. Save to local JSON
+4. Upload to Supabase async
+5. Refresh UI
+
+---
+
+This architecture provides a complete, production-ready contact management system with robust sync, authentication, and scheduling logic.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

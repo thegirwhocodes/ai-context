@@ -1,0 +1,55 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/mbailey/voicemode
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:42 UTC
+========================================================================
+
+URL: https://github.com/mbailey/voicemode
+Extraction prompt: How does VoiceMode work? What are the install steps for Claude Code on macOS? What API keys/services does it need? Does it support local Whisper or cloud? Costs?
+
+----------------------------------------
+
+# VoiceMode: How It Works & Setup Guide
+
+## How VoiceMode Works
+
+VoiceMode enables "natural voice conversations with Claude Code" by integrating speech-to-text and text-to-speech capabilities. It detects when you stop speaking and responds with audio, creating a conversational flow without requiring typing.
+
+## macOS Installation (Claude Code)
+
+The quickest approach uses the Claude Code plugin system:
+
+```bash
+claude plugin marketplace add mbailey/voicemode
+claude plugin install voicemode@voicemode
+/voicemode:install
+/voicemode:converse
+```
+
+Alternatively, install via Python:
+```bash
+brew install ffmpeg node portaudio
+uvx voice-mode-install
+claude mcp add --scope user voicemode -- uvx --refresh voice-mode
+```
+
+## API Keys & Services
+
+- **Optional OpenAI API key**: Set via `export OPENAI_API_KEY="[REDACTED:openai-api-key]"` for cloud-based speech services
+- Works without it using local alternatives
+- No API key required for local-only setup
+
+## Local vs. Cloud Support
+
+VoiceMode supports both:
+- **Local**: "Whisper.cpp" for speech-to-text and "Kokoro" for text-to-speech
+- **Cloud**: OpenAI services as fallback
+- Seamlessly switches between them
+
+## Costs
+
+The documentation doesn't specify pricing. Cloud services would depend on OpenAI's API rates; local services are free but require system resources.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

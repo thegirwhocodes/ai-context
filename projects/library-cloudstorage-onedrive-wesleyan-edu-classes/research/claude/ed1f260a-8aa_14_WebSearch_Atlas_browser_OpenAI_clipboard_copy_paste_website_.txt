@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Atlas browser OpenAI clipboard copy paste website permission
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:29:16 UTC
+========================================================================
+
+Search query: Atlas browser OpenAI clipboard copy paste website permission
+
+----------------------------------------
+
+Web search results for query: "Atlas browser OpenAI clipboard copy paste website permission"
+
+Links: [{"title":"What is ChatGPT Atlas and why is it on my website?","url":"https://www.humansecurity.com/ai-agent/chatgpt-atlas/"},{"title":"ChatGPT Atlas: Your Guide to the AI Browser That Changes How You Work","url":"https://techtiff.substack.com/p/chatgpt-atlas"},{"title":"ChatGPT Atlas - Release Notes | OpenAI Help Center","url":"https://help.openai.com/en/articles/12591856-chatgpt-atlas-release-notes"},{"title":"Setting up the Atlas browser | OpenAI Help Center","url":"https://help.openai.com/en/articles/12628461-setting-up-the-atlas-browser"},{"title":"How to Use OpenAI Atlas: Beginner’s Guide to the ChatGPT Browser","url":"https://skywork.ai/blog/ai-agent/openai-atlas-beginners-guide-chatgpt-browser/"},{"title":"OpenAI Atlas Browser: Features, Pros/Cons, Security & Privacy","url":"https://seraphicsecurity.com/learn/ai-browser/openai-atlas-browser-features-pros-cons-security-and-privacy/"},{"title":"OpenAI's Atlas browser has a security flaw that could expose your private info","url":"https://www.androidauthority.com/openai-atlas-clipboard-injection-vulnerability-3609982/"},{"title":"ChatGPT Atlas: Security Warnings & Your Protection Guide","url":"https://www.giaspace.com/why-security-experts-are-warning-against-chatgpt-atlas/"},{"title":"Introducing ChatGPT Atlas | OpenAI","url":"https://openai.com/index/introducing-chatgpt-atlas/"},{"title":"Getting Started with Atlas | OpenAI Help Center","url":"https://help.openai.com/en/articles/12628555-getting-started-with-atlas"}]
+
+I've found comprehensive information about Atlas browser, OpenAI's clipboard and copy-paste functionality, and website permissions. Here are the key findings:
+
+## Atlas Browser Overview
+
+ChatGPT Atlas is a Chromium-based web browser developed by OpenAI that embeds the ChatGPT assistant directly into the browsing experience. Users can open a side panel in any tab and ask questions about the page, summarize content, or compare information across sites.
+
+## Clipboard & Copy-Paste Functionality
+
+An important security development: Agent tasks now use an isolated clipboard separate from your clipboard. This is a significant privacy and security feature.
+
+However, researchers have identified vulnerabilities. A "Copy link" button actually places a malformed URL plus a hidden prompt into the clipboard. When the user pastes it into the Atlas omnibox, URL parsing fails and Atlas falls back to treating it as a prompt.
+
+## Website Permissions
+
+Permission dialogs now clearly state which site is requesting access. Atlas asks before any site can use sensitive features like the camera, microphone, or location. Permissions are set per site, so you stay in control.
+
+## Additional Security Considerations
+
+Users should limit tool permissions and audit which GPTs can access clipboard, files, or publishing actions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

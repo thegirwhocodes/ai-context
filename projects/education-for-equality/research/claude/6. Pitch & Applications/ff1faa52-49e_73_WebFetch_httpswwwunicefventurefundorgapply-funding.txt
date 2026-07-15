@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.unicefventurefund.org/apply-funding
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 02:10:50 UTC
+========================================================================
+
+URL: https://www.unicefventurefund.org/apply-funding
+Extraction prompt: What are the exact eligibility requirements? Specifically: what year must the company be founded? What stage requirements are there? Any requirements about how long the company must have been operating? What are all the eligibility criteria listed?
+
+----------------------------------------
+
+# UNICEF Venture Fund Eligibility Requirements
+
+Based on the application page, here are the mandatory criteria:
+
+## Core Requirements
+
+1. **Legal Status**: "Be registered as a private for-profit company"
+
+2. **Geographic Location**: Registration must be in a UNICEF programme country
+
+3. **Technology Stage**: Must have "an existing prototype of the Open Source solution with promising results from initial pilots"
+
+4. **Impact Potential**: "Have the potential to positively impact the lives of the most vulnerable children"
+
+5. **Data Generation**: "Generate publicly exposed real-time data that is measurable"
+
+6. **Technology Type**: "Be working on a Open Source frontier technology solution"
+
+## Important Notes
+
+**No specific founding year or minimum operating duration** is mentioned in the eligibility criteria. The Fund focuses on companies with working prototypes rather than age or tenure requirements.
+
+The page clarifies that "an active prototype" means one "that works and has generated some initial data to confirm this," indicating the emphasis is on demonstrated progress rather than how long the company has existed.
+
+Companies not yet fully open source can still apply if they indicate willingness to adopt an open source license, with implementation required by month six of the investment period.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

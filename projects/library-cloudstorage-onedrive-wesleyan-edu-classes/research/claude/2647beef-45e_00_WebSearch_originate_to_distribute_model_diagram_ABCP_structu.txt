@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: originate to distribute model diagram ABCP structured investment vehicle commerc
+Session: 2647beef-45ea-4577-992c-5fbd449f92e1
+Time: 2026-02-19 04:57:00 UTC
+========================================================================
+
+Search query: originate to distribute model diagram ABCP structured investment vehicle commercial paper flow chart
+
+----------------------------------------
+
+Web search results for query: "originate to distribute model diagram ABCP structured investment vehicle commercial paper flow chart"
+
+Links: [{"title":"Asset-Backed Commercial Paper (ABCP) - Overview, Structure, Benefits","url":"https://corporatefinanceinstitute.com/resources/fixed-income/asset-backed-commercial-paper-abcp/"},{"title":"Asset-backed commercial paper - Wikipedia","url":"https://en.wikipedia.org/wiki/Asset-backed_commercial_paper"},{"title":"Asset-Backed Commercial Paper (ABCP) | Finance Strategists","url":"https://www.financestrategists.com/wealth-management/investments/asset-backed-commercial-paper-abcp/"},{"title":"STRUCTURED FINANCE Special Report","url":"https://pages.stern.nyu.edu/~igiddy/ABS/moodysabcp.pdf"},{"title":"Demystifying Asset-Backed Commercial Paper - Capital Advisors Group, Inc. | Insight. Independence. Focus.","url":"https://www.capitaladvisors.com/research/demystifying-asset-backed-commercial-paper-3/"},{"title":"Understanding asset-backed commercial paper (ABCP)","url":"https://www.invesco.com/us/en/insights/abcp.html"},{"title":"Asset-Backed Commercial Paper | Brief Overview - fintelligents","url":"https://fintelligents.com/asset-backed-commercial-paper/"},{"title":"Using Commercial Paper in Investment Portfolios","url":"https://www.gfoa.org/materials/using-commercial-paper-in-investment-portfolios"},{"title":"Asset-Backed Commercial Paper (ABCP) - Overview, Structure, Benefits | Wall Street Oasis","url":"https://www.wallstreetoasis.com/resources/skills/credit/asset-backed-commercial-paper-abcp"},{"title":"The Fundamentals of Asset-Backed Commercial Paper","url":"https://www.imf.org/external/np/seminars/eng/2010/mcm/pdf/rutan1.pdf"}]
+
+Based on the web search results, I found comprehensive information about Asset-Backed Commercial Paper (ABCP) and structured investment vehicles. Here's what the search revealed:
+
+## ABCP Structure and Flow
+
+An Asset-Backed Commercial Paper program typically involves a sponsoring financial institution setting up a special purpose vehicle or conduit. The SPV purchases assets from the sponsor or other sellers and finances these purchases by issuing ABCP to investors.
+
+## The Originate-to-Distribute Flow
+
+The process follows these key steps:
+
+1. **Asset Origination**: In a traditional setup, a bank sponsors an SPV that issues commercial paper to investors. The proceeds are used to purchase receivables or other assets from corporate clients.
+
+2. **Distribution through SPV**: An ABCP is typically issued by a non-bank financial institutition, such as a conduit or special purpose vehicle (SPV). A conduit or SPV is set up by a financial institution to own the collateral assets from asset sellers.
+
+3. **Investor Repayment**: Investors pay for their ABCP purchases to the conduit, and the conduit repays the investors through the placement agents. The repayments to the ABCP investors are collected from the principals or interests from the underlying receivables.
+
+## Support Mechanisms
+
+Credit enhancement is usually implemented in a multi-seller program. A sponsor or third-party bank can be a credit enhancement provider by providing cash reserves or guarantees. A liquidity provider may also be involved in the issuance by providing the funds to meet the ABCP payments under certain circumstances.
+
+The search results provide detailed information about ABCP structure and flow, though they don't contain a specific diagram visualization.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

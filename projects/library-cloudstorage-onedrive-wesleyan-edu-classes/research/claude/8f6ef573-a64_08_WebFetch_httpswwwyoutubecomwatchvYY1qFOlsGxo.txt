@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.youtube.com/watch?v=YY1qFOlsGxo
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:43:03 UTC
+========================================================================
+
+URL: https://www.youtube.com/watch?v=YY1qFOlsGxo
+Extraction prompt: What is this video about? What model is being discussed? Summarize the key points about the AI model mentioned.
+
+----------------------------------------
+
+Claude Code is unable to fetch from www.youtube.com
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

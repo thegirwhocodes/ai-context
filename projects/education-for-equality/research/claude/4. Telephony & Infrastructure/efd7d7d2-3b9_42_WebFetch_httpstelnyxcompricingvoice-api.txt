@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://telnyx.com/pricing/voice-api
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:06:11 UTC
+========================================================================
+
+URL: https://telnyx.com/pricing/voice-api
+Extraction prompt: What are the per-minute voice call rates for Nigeria? Include all pricing details for programmable voice.
+
+----------------------------------------
+
+I appreciate your question, but I need to be transparent: the content provided is a Tailwind CSS stylesheet containing only styling code and design tokens. It includes no information about voice call rates, Nigeria pricing, or programmable voice services.
+
+To answer your question about per-minute voice call rates for Nigeria and programmable voice pricing details, I would need access to actual pricing documentation or a pricing page from a telecommunications or communication platform provider.
+
+If you have a different document with pricing information you'd like me to review, please share that instead.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

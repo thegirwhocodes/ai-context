@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" Algeria OR Iraq OR Libya OR Indonesia oil GDP application do
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:13:11 UTC
+========================================================================
+
+Search query: "synthetic control" Algeria OR Iraq OR Libya OR Indonesia oil GDP application donor pool
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" Algeria OR Iraq OR Libya OR Indonesia oil GDP application donor pool"
+
+Links: [{"title":"Breaking Out of Fragility A Country Economic Memorandum for","url":"https://documents1.worldbank.org/curated/en/573051601533287890/pdf/Breaking-Out-of-Fragility-A-Country-Economic-Memorandum-for-Diversification-and-Growth-in-Iraq.pdf"},{"title":"GLomiM Country Profiles: 1992 Algeria Colombia Ecuador Estonia Indonesia Iran","url":"https://ngds.egi.utah.edu/files/GL01474/GL01474.pdf"},{"title":"Oil Reserves by Country - Worldometer","url":"https://www.worldometers.info/oil/oil-reserves-by-country/"},{"title":"All of the World's Oil Reserves by Country, in One Visualization","url":"https://www.visualcapitalist.com/all-of-the-worlds-oil-reserves-by-country-in-one-visualization/"},{"title":"2025 OPEC Annual Statistical Bulletin","url":"https://www.opec.org/assets/assetdb/asb-2025.pdf"},{"title":"Search or Print: Giuliano Garavini collection: NYU Special Collections Finding Aids","url":"https://findingaids.library.nyu.edu/nyuad/ad_mc_038/all/"},{"title":"39407 Public Disclosure Authorized Public Disclosure Authorized","url":"https://documents1.worldbank.org/curated/en/867951468052730552/pdf/394070ENGLISH01ummary1200601PUBLIC1.pdf"},{"title":"Energy Resource Guide - Algeria - Oil and Gas","url":"https://www.trade.gov/energy-resource-guide-algeria-oil-and-gas"},{"title":"Oil and the Gulf War - MERIP","url":"https://www.merip.org/1991/07/oil-and-the-gulf-war/"},{"title":"The Rentier Divergence: Trajectory of a Post-Oil Arab World - ORF Middle East","url":"https://orfme.org/expert-speak/the-rentier-divergence-trajectory-of-a-post-oil-arab-world/"}]
+
+I found one directly relevant result for your search. The most significant finding is from a World Bank document about Iraq:
+
+Iraq's nonoil GDP is estimated to be about 33 percent lower in 2018 than it would have been without the conflict, based on World Bank staff estimates using the synthetic control method.
+
+This is a clear application of synthetic control methodology to analyze the impact of conflict on Iraq's non-oil GDP growth by comparing actual outcomes to a synthetic counterfactual constructed from a donor pool of comparison countries.
+
+The search results also provide context on oil and GDP relationships in these countries, including information about their roles as oil producers and economic structures, but this Iraq example is the specific application of synthetic control methodology that matches your query parameters.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

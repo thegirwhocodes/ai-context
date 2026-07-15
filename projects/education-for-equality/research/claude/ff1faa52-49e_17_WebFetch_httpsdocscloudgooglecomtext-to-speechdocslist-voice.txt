@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:00:19 UTC
+========================================================================
+
+URL: https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types
+Extraction prompt: Does Google Cloud TTS have Nigerian English (en-NG) voices? List any African English voices available. Look for en-NG, en-GH, en-ZA, en-KE or similar.
+
+----------------------------------------
+
+# Google Cloud TTS African English Voices
+
+Based on the documentation provided, **Google Cloud TTS does not offer Nigerian English (en-NG) voices** or other West African English variants like en-GH or en-KE.
+
+## Available African English Voices
+
+The only African English variant listed in the supported voices table is:
+
+**English (South Africa) - en-ZA**
+
+This locale includes multiple voice options across different voice types (Standard, Premium/Neural2, and WaveNet variants), such as en-ZA-Standard-A and various premium options.
+
+The documentation shows extensive language support globally, but African English coverage is limited to South Africa only. Nigerian, Ghanaian, and Kenyan English variants are not currently supported by Google Cloud Text-to-Speech.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

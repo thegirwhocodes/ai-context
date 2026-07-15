@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Jascha Sohl-Dickstein Anthropic researcher diffusion models
+Session: b997d564-ec8f-4c14-b674-542be74b8003
+Time: 2026-04-18 05:02:49 UTC
+========================================================================
+
+Search query: Jascha Sohl-Dickstein Anthropic researcher diffusion models
+
+----------------------------------------
+
+Web search results for query: "Jascha Sohl-Dickstein Anthropic researcher diffusion models"
+
+Links: [{"title":"Jascha Sohl-Dickstein","url":"http://sohldickstein.com/"},{"title":"Jascha Sohl-Dickstein","url":"https://scholar.google.com/citations?user=-3zYIjQAAAAJ&hl=en"},{"title":"Jascha Sohl-Dickstein (@jaschasd) / Posts ...","url":"https://x.com/jaschasd?lang=en"},{"title":"Jascha Sohl-Dickstein (@jascha.sohldickstein.com)","url":"https://bsky.app/profile/jascha.sohldickstein.com"},{"title":"Jascha Sohl-Dickstein - Anthropic | LinkedIn","url":"https://www.linkedin.com/in/jascha-sohl-dickstein-47188521/"},{"title":"Slater Stich's Post - Jascha Sohl-Dickstein","url":"https://www.linkedin.com/posts/slater-stich-4658a849_history-of-diffusion-jascha-sohl-dickstein-activity-7294784718007414786-ZOG1"},{"title":"Jascha Sohl-Dickstein - The Network","url":"https://www.thenetwork.com/p/45ace653-7f61-4742-adfc-b441b1e363fb"},{"title":"GitHub - Sohl-Dickstein/Diffusion-Probabilistic-Models: Reference implementation for Deep Unsupervised Learning using Nonequilibrium Thermodynamics · GitHub","url":"https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models"},{"title":"[1503.03585] Deep Unsupervised Learning using Nonequilibrium Thermodynamics","url":"https://arxiv.org/abs/1503.03585"},{"title":"ICLR Social Jascha Sohl-Dickstein","url":"https://iclr.cc/virtual/2023/social/14864"}]
+
+Based on the search results, here's what I found:
+
+Jascha Sohl-Dickstein is most famous for inventing diffusion models. He recently joined Anthropic as a member of the technical staff.
+
+His recent work has focused on theory of overparameterized neural networks, meta-training of learned optimizers, and understanding the capabilities of large language models. He has previously worked as a principal scientist in Google Brain and Google DeepMind, as a visiting scholar in Surya Ganguli's lab at Stanford University, and as an academic resident at the Khan Academy education nonprofit.
+
+Regarding his foundational work on diffusion models, his seminal paper "Deep Unsupervised Learning using Nonequilibrium Thermodynamics" developed an approach inspired by non-equilibrium statistical physics to systematically destroy structure in a data distribution through an iterative forward diffusion process, and then learn a reverse diffusion process that restores structure in data, yielding a highly flexible and tractable generative model.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

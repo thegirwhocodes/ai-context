@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Termii voice call API Nigeria pricing
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:34:45 UTC
+========================================================================
+
+Search query: Termii voice call API Nigeria pricing
+
+----------------------------------------
+
+Web search results for query: "Termii voice call API Nigeria pricing"
+
+Links: [{"title":"Termii | Pricing","url":"https://termii.com/pricing"},{"title":"AI-Powered Messaging & Customer Engagement Platform - Termii","url":"https://termii.com/"},{"title":"Flexible Pricing","url":"https://www.sandbox.termii.com/pricing"},{"title":"Termii | Developers","url":"https://developers.termii.com/messaging-api"},{"title":"Termii | For Business","url":"https://termii.com/for-businesses/"},{"title":"Voice Call","url":"https://developers.termii.com/voice-call"},{"title":"The Ultimate Guide to SMS Marketing Providers: Pricing, Features & Best Picks - Yournotify","url":"https://yournotify.com/blog/sms-marketing-providers-pricing-nigeria/"},{"title":"Programmable Voice Pricing in Nigeria | Twilio","url":"https://www.twilio.com/en-us/voice/pricing/ng"},{"title":"Termii: Termii is helps businesses communicate with customers globally. | Y Combinator","url":"https://www.ycombinator.com/companies/termii"},{"title":"Termii Alternative | The alternative to Termii API - Sendchamp","url":"https://sendchamp.com/best-termii-alternative"}]
+
+Based on the search results, I found information about Termii's voice call API capabilities, but specific pricing details for the voice call API were not clearly displayed in the search results. Here's what I found:
+
+## Termii Voice Call API Overview
+
+The voice call API enables you to send messages from your application through the voice channel to a phone number, though currently only one-time-passwords (OTPs) are allowed for this service.
+
+## Pricing Information
+
+All messages are billed on a per-unit basis for all users, and users are allowed to purchase messaging units into their wallet using their credit cards. However, the search results did not provide specific pricing rates for voice calls.
+
+The search returned Termii's general pricing page, but the detailed pricing breakdown for voice calls was not included in the accessible content. To find the exact voice call API pricing for Nigeria, I recommend:
+
+1. Visiting Termii's pricing page directly at https://termii.com/pricing
+2. Contacting their support team at the contact information provided (1-669-241-1742 or +2348137751523)
+3. Checking the Termii developers documentation for any published rate cards
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

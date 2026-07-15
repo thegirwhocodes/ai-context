@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: calendarmcp.googleapis.com remote MCP server documentation Cursor
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 05:18:29 UTC
+========================================================================
+
+Search query: calendarmcp.googleapis.com remote MCP server documentation Cursor
+
+----------------------------------------
+
+Web search results for query: "calendarmcp.googleapis.com remote MCP server documentation Cursor"
+
+Links: [{"title":"Configure the Calendar MCP server | Google Calendar | Google for Developers","url":"https://developers.google.com/workspace/calendar/api/guides/configure-mcp-server"},{"title":"MCP Reference: calendarmcp.googleapis.com | Google Calendar | Google for Developers","url":"https://developers.google.com/workspace/calendar/api/v3/reference/mcp"},{"title":"Configure the Google Workspace MCP servers | Google for Developers","url":"https://developers.google.com/workspace/guides/configure-mcp-servers"},{"title":"GitHub - nspady/google-calendar-mcp: MCP integration for Google Calendar to manage events. · GitHub","url":"https://github.com/nspady/google-calendar-mcp"},{"title":"Calendar MCP API documentation? - Documentation - Google AI Developers Forum","url":"https://discuss.ai.google.dev/t/calendar-mcp-api-documentation/141503"},{"title":"A Deep Dive into the Google Calendar MCP Server: The Definitive Guide for AI Engineers","url":"https://skywork.ai/skypage/en/A-Deep-Dive-into-the-Google-Calendar-MCP-Server-The-Definitive-Guide-for-AI-Engineers/1971039029311172608"},{"title":"Google Calendar MCP Server — Features, Install & Alternatives | FastMCP","url":"https://fastmcp.me/mcp/details/686/google-calendar"},{"title":"Google Calendar MCP server for AI agents - Playbooks","url":"https://playbooks.com/mcp/caue397-google-calendar"},{"title":"How to connect Google calendar to MCP: enterprise guide | MintMCP Blog","url":"https://www.mintmcp.com/blog/connect-google-calendar-with-mcp"},{"title":"Get started with Google Workspace MCP and Gemini CLI | Google Codelabs","url":"https://codelabs.developers.google.com/google-workspace-mcp-gemini-cli"}]
+
+Based on the search results, here's what I found about the calendarmcp.googleapis.com remote MCP server documentation for Cursor:
+
+## Overview
+
+Google Calendar offers a remote Model Context Protocol (MCP) server that allows AI agents to securely interact with Google Calendar data. By configuring the Google Calendar MCP server, you enable AI applications like Gemini CLI, Claude, or IDEs to perform actions in Google Calendar.
+
+## Remote MCP Server URL
+
+The remote MCP server URL is https://calendarmcp.googleapis.com/mcp/v1
+
+## Configuration for Cursor
+
+There are two ways to add an MCP server to Cursor. The most common way is to add the server globally in the ~/.cursor/mcp.json file so that it is available in all of your projects.
+
+When you add a global MCP server, the ~/.cursor/mcp.json file will be opened and you can add your server configuration.
+
+## Capabilities
+
+The Google Calendar MCP server provides a standardized way for AI agents to read data like list calendars, retrieve events, and check availability, and take action such as create, update, and delete events.
+
+## Authentication
+
+The Google Calendar remote MCP server uses OAuth 2.0. In Advanced settings, you need to enter your OAuth client ID and OAuth client secret.
+
+For more detailed documentation and setup instructions, you can refer to the official Google Calendar MCP documentation at the Google Developers site.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

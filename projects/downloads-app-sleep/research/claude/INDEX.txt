@@ -1,0 +1,30 @@
+RESEARCH INDEX
+Generated: 2026-07-15 14:58:02
+Files: 25
+========================================================================
+
+450f2351-92b_00_WebSearch_Cold_Turkey_Frozen_Turkey_bypass_how_does_it_preve.txt  [2KB]  WEBSEARCH RESEARCH: WebSearch: "Cold Turkey" "Frozen Turkey" bypass how does it prevent uninstall admin passwor
+450f2351-92b_01_WebSearch_Cold_Turkey_Blocker_how_it_works_architecture_tech.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Cold Turkey Blocker how it works architecture technical implementation frozen mo
+450f2351-92b_02_WebSearch_best_website_blocker_apps_2026_comparison_Cold_Tur.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: best website blocker apps 2026 comparison Cold Turkey Freedom Focus SelfControl
+450f2351-92b_03_WebSearch_SelfControl_app_Mac_how_it_works_technical_PF_fire.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: SelfControl app Mac how it works technical PF firewall pfctl kernel blocklist
+450f2351-92b_04_WebSearch_Freedom_app_blocker_how_it_works_technical_VPN_pro.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Freedom app blocker how it works technical VPN proxy DNS system extension archit
+450f2351-92b_05_WebSearch_macOS_distraction_blocker_screen_lock_full_screen_.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: macOS distraction blocker screen lock full screen window NSWindow level screensa
+450f2351-92b_06_WebSearch_FocusMe_LeechBlock_RescueTime_Focus_app_blocker_Ma.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: FocusMe LeechBlock RescueTime Focus app blocker Mac technical architecture how b
+450f2351-92b_07_WebSearch_Cold_Turkey_macOS_Windows_registry_service_kernel_.txt  [2KB]  WEBSEARCH RESEARCH: WebSearch: Cold Turkey macOS Windows registry service kernel driver launchd how prevent pro
+450f2351-92b_08_WebSearch_iOS_Screen_Time_API_Family_Controls_Device_Activit.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: iOS Screen Time API Family Controls Device Activity ManagedSettingsStore how app
+450f2351-92b_09_WebSearch_Endpoint_Security_API_macOS_ES_EVENT_TYPE_AUTH_EXE.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: "Endpoint Security" API macOS ES_EVENT_TYPE_AUTH_EXEC block application launch d
+450f2351-92b_10_WebSearch_SelfControl_macOS_privileged_helper_launchd_daemon.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: SelfControl macOS "privileged helper" launchd daemon SMJobBless authorization ro
+450f2351-92b_11_WebSearch_SelfControl_source_code_helper_tool_orgeyebeam_pfc.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: SelfControl source code helper tool org.eyebeam pfctl anchor firewall rules bloc
+450f2351-92b_12_WebSearch_physical_key_hardware_key_USB_dongle_unlock_bedtim.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: "physical key" "hardware key" USB dongle unlock bedtime distraction blocker fric
+450f2351-92b_13_WebSearch_Cold_Turkey_Windows_service_uninstall_protection_r.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Cold Turkey Windows service uninstall protection registry lock filter driver WFP
+450f2351-92b_14_WebSearch_Opal_One_Sec_Jomo_iOS_Screen_Time_app_blocker_tamp.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: Opal One Sec Jomo iOS Screen Time app blocker tamper resistance bypass friction
+450f2351-92b_15_WebSearch_SelfControl_survives_reboot_launchd_job_daemon_per.txt  [2KB]  WEBSEARCH RESEARCH: WebSearch: SelfControl survives reboot launchd job daemon persists timer removed by hand te
+450f2351-92b_16_WebSearch_bedtime_app_blocker_enforce_sleep_schedule_macOS_p.txt  [3KB]  WEBSEARCH RESEARCH: WebSearch: bedtime app blocker enforce sleep schedule macOS phone lock wake time cannot byp
+450f2351-92b_17_WebSearch_iOS_Screen_Time_API_passcode_Family_Controls_guard.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: iOS Screen Time API passcode Family Controls guardian require pin bypass user di
+450f2351-92b_18_WebSearch_macOS_Screen_Time_API_app_blocker_Sequoia_FamilyCo.txt  [4KB]  WEBSEARCH RESEARCH: WebSearch: macOS Screen Time API app blocker Sequoia FamilyControls DeviceActivity Sonoma a
+4b7a31d6-b57_00_Research_competitor_sleepblocking_apps.txt  [3KB]  AGENT RESEARCH: Research competitor sleep/blocking apps
+4b7a31d6-b57_01_Audit_Sleep_Well_Swift_codebase.txt  [3KB]  AGENT RESEARCH: Audit Sleep Well Swift codebase
+e77790f1-fc4_00_Explore_macOS_ShutdownApp.txt  [17KB]  AGENT RESEARCH: Explore macOS ShutdownApp
+e77790f1-fc4_01_Explore_Xcode_project_config.txt  [7KB]  AGENT RESEARCH: Explore Xcode project config
+e77790f1-fc4_02_Explore_iOS_SleepWelliOS_app.txt  [20KB]  AGENT RESEARCH: Explore iOS SleepWelliOS app
+e77790f1-fc4_03_Study_bethel_email-agent.txt  [23KB]  AGENT RESEARCH: Study bethel email-agent

@@ -1,0 +1,22 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.yhack.org/
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-08 22:48:53 UTC
+========================================================================
+
+URL: https://www.yhack.org/
+Extraction prompt: What are the specific prize amounts? What is the top prize? Grand prize? List all prize categories and dollar amounts.
+
+----------------------------------------
+
+# YHack Prize Information
+
+Based on the webpage content provided, specific prize amounts and categories are not detailed. The site only mentions:
+
+"100kin prizes" — indicating a total prize pool of $100,000, but no breakdown of individual prize categories, grand prize amounts, or specific track-based rewards is disclosed on this page.
+
+For detailed prize information, you would need to contact the organizers at yhack@yhack.org or visit the application portal at apply.yhack.org.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw automated job application bot resume LinkedIn Indeed
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:31:21 UTC
+========================================================================
+
+Search query: OpenClaw automated job application bot resume LinkedIn Indeed
+
+----------------------------------------
+
+Web search results for query: "OpenClaw automated job application bot resume LinkedIn Indeed"
+
+Links: [{"title":"GitHub - GodsScion/Auto_job_applier_linkedIn: Make your job hunt easy by automating your application process with this Auto Applier","url":"https://github.com/GodsScion/Auto_job_applier_linkedIn"},{"title":"Linkedin Auto Apply Bot | Loopcv","url":"https://blog.loopcv.pro/linkedin-auto-apply-bot/"},{"title":"GitHub - nicolomantini/LinkedIn-Easy-Apply-Bot: Automate the application process on LinkedIn","url":"https://github.com/nicolomantini/LinkedIn-Easy-Apply-Bot"},{"title":"GitHub - Lovelace98/LinkedIn_Job_Application_Automation_Bot: This bot applies job automatically on linkedin","url":"https://github.com/Lovelace98/LinkedIn_Job_Application_Automation_Bot"},{"title":"GitHub - wodsuz/EasyApplyJobsBot: A python bot to automatically apply all Linkedin,Glassdoor, etc Easy Apply jobs based on your preferences. Auto login, auto fill additional questions, apply automatically!","url":"https://github.com/wodsuz/EasyApplyJobsBot"},{"title":"bot to apply for jobs - LazyApply","url":"https://lazyapply.com/job-application-automation/bot-to-apply-for-jobs"},{"title":"Easy Apply Bots - Chrome Web Store","url":"https://chromewebstore.google.com/detail/easy-apply-bots/ooinebijdjljcgdkjpamogohcjpneodk"},{"title":"Indeed Auto Apply bot by LazyApply | Indeed bot | Indeed apply bot","url":"https://lazyapply.com/indeed-auto-apply-bot"},{"title":"GitHub - NathanDuma/LinkedIn-Easy-Apply-Bot: Automate LinkedIn Easy Apply job applications and answer application-specific questions.","url":"https://github.com/NathanDuma/LinkedIn-Easy-Apply-Bot"},{"title":"Automated job applications & status tracking with LinkedIn, Indeed & Google Sheets | n8n workflow template","url":"https://n8n.io/workflows/5906-automated-job-applications-and-status-tracking-with-linkedin-indeed-and-google-sheets/"}]
+
+Based on the search results, I found information about automated job application bots for LinkedIn and Indeed, though no specific tool called "OpenClaw" appeared in the results. Here's what I found:
+
+## Automated Job Application Bots for LinkedIn & Indeed
+
+There are several popular automated job application bots available:
+
+**GitHub-based Solutions:**
+- A web scraping bot that automates the job application process on LinkedIn by searching for relevant jobs, answering application form questions, customizing resumes based on job information, and applying to jobs.
+
+**Commercial Solutions:**
+- LazyApply offers a job application bot for several job boards like LinkedIn, Indeed, and Ziprecruiter all under one single dashboard.
+
+- Easy Apply Bots fills out entire applications by remembering your details and seamlessly completing applications on LinkedIn and Indeed.
+
+**Key Features:**
+These bots typically offer:
+- Cross-platform compatibility with popular job boards and professional networking sites including LinkedIn, Indeed, Glassdoor, Monster, Meta, and ZipRecruiter
+- Resume customization based on collected job information, such as skills required, description, and company details
+- The ability to apply to 100+ jobs in less than 1 hour
+
+The search results did not return specific information about a tool named "OpenClaw." If you're looking for a specific bot with that name, you may need to search for it more directly or check if it operates under a different name.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

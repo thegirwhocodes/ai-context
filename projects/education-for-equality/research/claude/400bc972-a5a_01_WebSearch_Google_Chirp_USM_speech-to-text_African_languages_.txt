@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Chirp USM speech-to-text African languages Cloud Speech-to-Text
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:30:49 UTC
+========================================================================
+
+Search query: Google Chirp USM speech-to-text African languages Cloud Speech-to-Text
+
+----------------------------------------
+
+Web search results for query: "Google Chirp USM speech-to-text African languages Cloud Speech-to-Text"
+
+Links: [{"title":"Chirp 3 Transcription: Enhanced multilingual accuracy | Cloud Speech-to-Text | Google Cloud Documentation","url":"https://cloud.google.com/speech-to-text/v2/docs/chirp-model"},{"title":"Chirp 2: Enhanced multilingual accuracy | Cloud Speech-to-Text | Google Cloud Documentation","url":"https://docs.cloud.google.com/speech-to-text/docs/models/chirp-2"},{"title":"Getting started with Chirp, the Google’s Universal Speech Model (USM) on Vertex AI | by Ivan Nardini | Google Cloud - Community | Medium","url":"https://medium.com/google-cloud/getting-started-with-chirp-the-googles-universal-speech-model-usm-on-vertex-ai-f54edaf4da93"},{"title":"Cloud Speech-to-Text V2 supported languages | Google Cloud Documentation","url":"https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages"},{"title":"Speech-to-Text: AI voice typing & transcription | Google Cloud","url":"https://cloud.google.com/speech-to-text"},{"title":"Google Cloud Speech-to-Text V2 API | Google Cloud Blog","url":"https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-speech-to-text-v2-api"},{"title":"Speech-to-Text release notes | Google Cloud Documentation","url":"https://docs.cloud.google.com/speech-to-text/docs/release-notes"},{"title":"Getting Started With GCP’s Chirp / Universal Speech Model (USM) Multilingual Speech Transcription: Transcribing A 2.5 Hour Russian Broadcast In 4 Minutes – The GDELT Project","url":"https://blog.gdeltproject.org/getting-started-with-gcps-chirp-universal-speech-model-usm-multilingual-speech-transcription-transcribing-a-2-5-hour-russian-broadcast-in-4-minutes/"},{"title":"Supported voices and languages | Cloud Text-to-Speech | Google Cloud Documentation","url":"https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types"},{"title":"Universal Speech Model (USM): State-of-the-art speech AI for 100+ languages","url":"https://research.google/blog/universal-speech-model-usm-state-of-the-art-speech-ai-for-100-languages/"}]
+
+I've completed the web search for your query about Google Chirp, USM, speech-to-text, African languages, and Cloud Speech-to-Text. Here's what I found:
+
+## Key Information About Google Chirp and USM
+
+**Overview of Chirp and USM:**
+Google's Universal Speech Model (USM) is a family of state-of-the-art speech models with 2B parameters and support for transcriptions of 300+ languages. Chirp is the latest version of the USM family, fine-tuned for Cloud-specific use-cases and announced in May 2023 at Google I/O.
+
+**Multilingual Capabilities:**
+Chirp 3: Transcription was built using self-supervised training on millions of hours of audio and 28 billion sentences of text spanning 100+ languages. It can accurately convert voice to text in over 85+ languages and variants.
+
+**African Language Support:**
+USM can perform automatic speech recognition on widely-spoken languages like English and Mandarin, but also on under-resourced languages like Amharic, Cebuano, Assamese, and Azerbaijani.
+
+**Latest Generation - Chirp 3:**
+Chirp 3: Transcription is the latest generation of Google's multilingual Automatic Speech Recognition model, delivering state-of-the-art ASR accuracy and multilingual capabilities, available exclusively in the Speech-to-Text API V2.
+
+**Advanced Features:**
+Chirp 3 includes powerful new capabilities, including speaker diarization to identify different speakers and automatic language detection for multilingual audio.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

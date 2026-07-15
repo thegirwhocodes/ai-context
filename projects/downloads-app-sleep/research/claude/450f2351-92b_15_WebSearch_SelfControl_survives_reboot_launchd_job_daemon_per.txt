@@ -1,0 +1,30 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SelfControl survives reboot launchd job daemon persists timer removed by hand te
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:30 UTC
+========================================================================
+
+Search query: SelfControl survives reboot launchd job daemon persists timer removed by hand terminal
+
+----------------------------------------
+
+Web search results for query: "SelfControl survives reboot launchd job daemon persists timer removed by hand terminal"
+
+Links: [{"title":"selfcontrol/LaunchctlHelper.h at master · SelfControlApp/selfcontrol","url":"https://github.com/SelfControlApp/selfcontrol/blob/master/LaunchctlHelper.h"},{"title":"How to remove Self Control - Ashley Connor’s Blog","url":"https://www.ashleyconnor.co.uk/til/2022-11-26-how-to-remove-self-control"},{"title":"Sites still blocked (app deleted, timer run out, blacklist cleared, SelfControl Killer run) · Issue #173 · SelfControlApp/selfcontrol","url":"https://github.com/SelfControlApp/selfcontrol/issues/173"},{"title":"A launchd Tutorial","url":"https://www.launchd.info/"}]
+
+Based on the search results, here's what I found related to SelfControl, reboot, launchd job daemon, and timer:
+
+SelfControl cannot be undone by the app or by a restart – you must wait for the timer to run out. This indicates that SelfControl uses a persistent mechanism that survives system reboots.
+
+SelfControl includes a utility class to deal with launchd jobs by calling the launchctl command-line tool, with each method corresponding to a launchctl subcommand.
+
+If you need to remove the SelfControl daemon that persists across reboots, you can stop SelfControl from automatically restarting with the command: launchctl unload -w /Library/LaunchDaemons/org.eyebeam.selfcontrold.plist. Additionally, you can remove the timer lock file with: sudo rm /etc/SelfControl.lock.
+
+The search results show that SelfControl deliberately uses launchd to create a daemon that persists even after reboot, making it difficult to bypass once a blocking session has started.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

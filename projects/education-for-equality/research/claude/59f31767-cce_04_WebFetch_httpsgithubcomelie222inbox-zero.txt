@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/elie222/inbox-zero
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-02 21:05:02 UTC
+========================================================================
+
+URL: https://github.com/elie222/inbox-zero
+Extraction prompt: Describe the technical architecture in detail: what LLM/model it uses, how the AI assistant/agent loop works, how it processes incoming email, what "rules" or automation it uses, the tech stack (framework, DB, queue), how it connects to Gmail, and any safety/approval mechanisms before it sends or takes action. Report specifics, names, and any code structure mentioned.
+
+----------------------------------------
+
+# Inbox Zero Technical Architecture
+
+Based on the GitHub repository documentation, here's what can be determined about the system:
+
+## Tech Stack
+The project uses **TypeScript (98.6% of codebase)** with these core technologies:
+- **Framework**: "Next.js"
+- **Database**: "Prisma" with PostgreSQL
+- **UI**: Tailwind CSS and shadcn/ui
+- **Job Queue**: "Upstash"
+- **Monorepo**: "Turborepo"
+
+## AI/LLM Details
+The documentation does not specify which LLM provider powers the assistant. References mention OpenAI and Loops integrations in the topic tags, but no explicit model details appear in the provided content.
+
+## Core Features & Processing
+The system handles:
+- Email analysis and "pre-draft replies in your tone and style"
+- "AI Rules for email" described "in plain English"
+- Automated unsubscription, archiving, and cold email blocking
+- "Meeting Briefs" pulling context from email and calendar
+
+## Email Integration
+- Connects to Gmail (with local Google emulator support in development)
+- Microsoft integration available (with local emulator)
+- OAuth setup required for production
+
+## Safety Mechanisms
+The documentation mentions "Reply Zero" for tracking emails awaiting responses, but no explicit approval workflows or safety gates before sending actions are detailed in the provided content.
+
+## Agent Loop Structure
+Specific agent loop implementation details are not disclosed in this README.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

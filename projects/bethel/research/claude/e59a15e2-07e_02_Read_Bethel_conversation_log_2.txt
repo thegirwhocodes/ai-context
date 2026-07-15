@@ -1,0 +1,103 @@
+========================================================================
+AGENT RESEARCH: Read Bethel conversation log 2
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-18 04:02:58 UTC
+========================================================================
+
+Read the conversation log file at /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/0d91dd3c-6d8d-4983-b72b-a1df57377021.jsonl
+
+This is the "cortex session" where Bethel was originally named and structured. Read through it thoroughly to understand:
+1. How Bethel was named and why
+2. The original structure/architecture
+3. Key decisions and vision
+4. Any technical specifications
+
+Read the file in chunks using offset and limit parameters. Start with the first 2000 lines, then continue.
+
+IMPORTANT: Do NOT write any code or make any changes. Just research and report back a comprehensive summary.
+
+----------------------------------------
+
+I now have a thorough understanding of the full conversation. Here is my comprehensive summary.
+
+---
+
+## Comprehensive Summary of the Cortex Session (0d91dd3c)
+
+### 1. How Bethel Was Named and Why
+
+The naming happened in the original E4E session (`efd7d7d2`), which the cortex session references. Claude suggested a list of biblical names for the Bible + Dreams + Notes app: Selah, Manna, Rhema, Dayspring, Shekinah, Wellspring, Bethel, and Peniel. Claude specifically recommended **Bethel** because:
+
+- **Bethel means "House of God"** in Hebrew (Genesis 28)
+- It is literally where God gave Jacob a dream, and Jacob set up a memorial stone there
+- The name maps directly to what the app does: **record dreams from God and build a memorial of what He has said**
+
+The user accepted "Bethel" for the Bible/Dreams/Notes app. Separately, "Cortex" won for the personal AI agent ("your second brain"), scoring highest on the psychology breakdown for recall, rhythm (trochee pattern COR-tex), B2B scalability, and verb potential.
+
+### 2. The Original Structure/Architecture
+
+**Bethel** is an Expo (React Native) app at `~/bethel/` with **4 tabs**:
+
+1. **Bible** -- NKJV in chronological order (PDF parsed, embedded into pgvector)
+2. **Notes** -- Personal study notes linked to verses
+3. **Dreams** -- Journal with AI-powered interpretation and smart resurfacing
+4. **Ask Bethel** -- RAG chat interface (pgvector + all-MiniLM-L6-v2 embeddings + Claude Haiku)
+
+**The 4-Layer AI Architecture** (defined in `/Users/naomiivie/bethel/research/BETHEL_LORA_ARCHITECTURE.md`):
+
+- **Layer 1: Personal Context (RAG)** -- User's dream journal, past interpretations, personal symbolism dictionary, prayer journal. Updated instantly.
+- **Layer 2: Bethel LoRA** -- A fine-tuned theological adapter (~16-20MB) on a 3-4B parameter base model (Phi-3.5 Mini recommended). Trained on Bible + Kenneth Hagin + Kathryn Kuhlman + John Paul Jackson + Mark Virkler + Stephanie Ike Okafor + others. The Bible (NKJV) serves as **ground truth validator** for all training data. Updated monthly (~$0.22-$1.44 per fine-tune, or ~$0.02 on-device with Apple MLX).
+- **Layer 3: Biblical Knowledge Base (RAG)** -- Full NKJV (31,102 verses), 52+ biblical dreams/visions, cross-references, dream symbol-to-scripture mappings.
+- **Layer 4: Cloud Model (Claude Haiku)** -- Fallback for complex reasoning, nuanced theological questions, multi-symbol dream analysis. Receives LoRA output + RAG context.
+
+**Tech Stack**: Expo (React Native) + TypeScript + Supabase (pgvector) + Claude API (Haiku) + Clerk for auth.
+
+### 3. Key Decisions and Vision
+
+**The user pushed hard for real AI, not algorithms.** Three critical design mandates:
+
+1. **"DON'T JUST WRITE AN ALGORITHM AROUND THIS!!!"** -- The LLM must truly decide everything: how many related dreams to surface, when to resurface them, the depth of interpretation. No hardcoded rules, intervals, or category systems. RAG narrows to top 20-30 similar dreams, then Claude reasons freely.
+
+2. **Per-user LoRA training is non-negotiable.** The user pushed back three times in the original session against Claude's attempts to default to RAG-only. The cortex session validated this: per-user fine-tuning costs $0.22-$1.44 per fine-tune (cloud), LoRA adapter is only ~16-20MB, and a fine-tuned 3B model outperforms a prompted 70B model on 85% of domain-specific tasks.
+
+3. **Dreams are not journal entries -- they are words from God that need stewarding.** The resurfacing system is not about productivity; it is about spiritual stewardship. The AI resurfaces past dreams contextually (when you read a passage that relates, when a new dream connects to an old one), not on a schedule.
+
+**Additional design decisions:**
+- UI must be **jet black, sleek, modern** -- modeled after ChatGPT/Linear/Arc, not "churchy" apps
+- No Catholic app references (Hallow explicitly excluded); Protestant/non-denominational Spirit-filled theology only
+- The Bible is the supreme authority: all training data is cross-referenced against scripture with an alignment scoring system (Aligned / Extrapolated / Contradicts / Testimony). Contradicting content is excluded entirely.
+- Dream titles are LLM-generated descriptive titles ("The Locked Door"), not category tags
+- Future: OCR to scan handwritten dream journals via camera
+
+### 4. Technical Specifications
+
+**Base model recommendation:** Phi-3.5 Mini (3.8B parameters) -- runs on iPhone 12+, any M1+ Mac, MIT licensed, ~4GB VRAM quantized.
+
+**Training data sources (all validated against Bible):**
+- Bible (NKJV) -- ground truth, 31,102 verses, 52+ dreams/visions database
+- Kenneth E. Hagin -- Spirit-led guidance hierarchy (strongly aligned)
+- Kathryn Kuhlman -- Holy Spirit theology (strongly aligned)
+- John Paul Jackson -- Dream interpretation framework, 20 categories (mixed: useful framework but taxonomy is extrapolated)
+- Mark Virkler & Charity Kayembe -- 4 Keys to Hearing God (aligned)
+- Stephanie Ike Okafor -- The Power of Your Dreams (aligned)
+- Additional: Adrian Beale, Troy Brewer, Spurgeon, C.S. Lewis, Smith Wigglesworth, James Goll, Ira Milligan, Joe Ibojie, Herman Riffel, Barbie Breathitt
+
+**Training data validation pipeline:** Each source claim is scored as Aligned (direct scriptural support), Extrapolated (reasonable inference), Contradicts (excluded entirely), or Testimony (labeled as personal experience, not doctrine).
+
+**Relationship to Cortex:** Bethel was conceived as "Cortex for your spiritual life" -- the same hybrid architecture (initial deep training + RAG for new data + optional LoRA) applied to a spiritual domain. Cortex is the broader personal AI startup (email agent, calendar, all personal data); Bethel is the vertical for Bible study, dream journaling, and spiritual growth. They share the same tech stack (Supabase, Claude API, pgvector) but are separate projects.
+
+**Infrastructure plan:** Supabase (free tier) for database + pgvector, Claude API for the cloud model layer, Vercel or Expo for deployment. No GPU server needed initially -- cloud GPU for fine-tuning ($0.22-$1.44/run), or on-device with Apple MLX.
+
+**The user's plan file** (`/Users/naomiivie/bethel/Bethel naomi plan.md`) outlines the core approach:
+- A core LLM trained on the Bible and curated spiritual research
+- An agentic layer where the LLM creates its own agentic tasks
+- Build dependencies for the agentic layer
+- Long-term: train Bethel on the Book of Daniel to spot cross-book patterns in symbols
+agentId: a7fa03ab0077f74c0 (use SendMessage with to: 'a7fa03ab0077f74c0' to continue this agent)
+<usage>total_tokens: 70452
+tool_uses: 25
+duration_ms: 676055</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

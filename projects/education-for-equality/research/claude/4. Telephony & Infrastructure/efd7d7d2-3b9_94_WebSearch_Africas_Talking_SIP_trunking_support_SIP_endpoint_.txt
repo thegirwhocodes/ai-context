@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking SIP trunking support SIP endpoint connect
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:05:26 UTC
+========================================================================
+
+Search query: Africa's Talking SIP trunking support SIP endpoint connect
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking SIP trunking support SIP endpoint connect"
+
+Links: [{"title":"What do I need to set up a SIP trunk connection? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/voice/SIP"},{"title":"How do I set up my SIP phone? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1163043-how-do-i-set-up-my-sip-phone"},{"title":"SIP Provider In South Africa: Get DID SA Numbers For Your Business","url":"https://didlogic.com/international/south-africa/"},{"title":"South Africa's Top SIP Trunk Provider | #1 VoIP SIP Services in South Africa","url":"https://www.avoxi.com/south-africa-sip-trunking/"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Yeastar Certified SIP Trunk Providers - South Africa | Yeastar","url":"https://www.yeastar.com/itsp-partners/south-africa/"},{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"South Africa SIP Trunking | Global Call Forwarding","url":"https://www.globalcallforwarding.com/sip-trunking/south-africa-sip-trunking/"},{"title":"3CX SIP Trunk Providers - South Africa","url":"https://www.3cx.com/partners/sip-trunks/south-africa/"}]
+
+I found information about Africa's Talking's SIP trunking support. Here are the key findings:
+
+## Africa's Talking SIP Trunking Support
+
+Africa's Talking can connect to your Private Branch System (PBX) through SIP trunks to allow you to make and receive voice calls.
+
+### SIP Endpoint Connection
+
+You can use Africa's Talking's SIP endpoints to make and receive calls on your browser, which lowers infrastructure costs significantly.
+
+### Setting Up a SIP Trunk Connection
+
+To set up a SIP trunk connection with Africa's Talking, you need:
+- A PBX server (on cloud or on premise)
+- To apply for a voice phone number
+- To share your trunk's (PBX) IP address for whitelisting, and then configure your number's callback URL from your dashboard using the format: trunk:trunk_ip_address (e.g., trunk:127.0.0.1)
+
+The search results show that Africa's Talking offers comprehensive voice services with SIP trunking capabilities for their users across Africa.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

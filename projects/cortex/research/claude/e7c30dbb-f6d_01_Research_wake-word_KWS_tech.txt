@@ -1,0 +1,30 @@
+========================================================================
+AGENT RESEARCH: Research wake-word KWS tech
+Session: e7c30dbb-f6d3-4ebc-abda-711a816710f2
+Time: 2026-06-30 07:03:46 UTC
+========================================================================
+
+Research the technology of WAKE-WORD / KEYWORD SPOTTING (KWS) detection, for an engineering report. Use WebSearch + WebFetch on authoritative sources (Amazon Science papers/blog, academic KWS papers like Google's "small-footprint keyword spotting", Picovoice/openWakeWord technical docs, reputable writeups). Every claim must be followed by a source URL.
+
+Cover specifically:
+1. How a wake word like "Alexa" is spotted in real time on-device: the always-on low-power detector, the small neural net (DNN/CNN/RNN/depthwise-separable CNN) that runs continuously.
+2. Acoustic feature extraction used: MFCC vs log-mel filterbank energies, framing/windowing, sample rates.
+3. The false-accept rate (FAR) vs false-reject rate (FRR) tradeoff and how it's tuned; typical metrics (false accepts per hour, ROC).
+4. Model footprint: parameter counts / memory / compute typical of small-footprint KWS models.
+5. How Amazon (and the field generally) trains and improves wake-word models — data, multi-stage/two-pass detection (cheap on-device first pass, more expensive cloud/second-pass verification).
+6. How custom wake words are created (e.g., Porcupine's training, openWakeWord training from synthetic TTS data).
+
+Return a dense, structured bullet list of verified, cited facts (URL after each). Mark weak-sourced claims "unverified." No fluff.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a4ef366f7afced349 (internal ID - do not mention to user. Use SendMessage with to: 'a4ef366f7afced349', summary: '<5-10 word recap>' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-cortex/e7c30dbb-f6d3-4ebc-abda-711a816710f2/tasks/a4ef366f7afced349.output
+Do NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

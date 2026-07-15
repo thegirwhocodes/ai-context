@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.commpeak.com/services/sip-trunking
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 09:14:52 UTC
+========================================================================
+
+URL: https://www.commpeak.com/services/sip-trunking
+Extraction prompt: Extract ALL details: SIP trunk pricing, features, codecs, how to connect, concurrent channels, Nigeria rates, setup process
+
+----------------------------------------
+
+# CommPeak SIP Trunking Details
+
+## Pricing
+CommPeak does not charge a base fee. According to their FAQs: "We do not! CommPeak charges you based on your use and nothing more." Billing operates on a pay-as-you-use model with "30-second rounded-down increments." Users receive free trial credit to test the service before paying.
+
+## Features
+- Access to 150+ countries with direct, in-country routes
+- 10 regional switches positioned globally
+- Tier 1 network connectivity
+- DID Numbers available in 75+ countries for local presence
+- No geographic restrictions on calling
+- Detailed spending reports and dashboard tracking
+- Integration with compatible SIP tools
+
+## How to Connect
+The setup process involves four steps:
+1. **Register** – Sign up with MyCommPeak account
+2. **Configure** – Enter SIP credentials into your dashboard
+3. **Choose** – Select calling destinations and preferred providers
+4. **Call** – Use free trial credit to start making calls
+
+## Codecs & Technical Specs
+The content provided does not include information about supported codecs or concurrent channel specifications.
+
+## Nigeria Rates
+Specific Nigeria pricing is not detailed in the provided content. Users can view all route pricing by signing up and navigating to the Billing/Voice Rates section.
+
+## Concurrent Channels
+No concurrent channel limits are specified in the available documentation.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.technovation.org/
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-20 18:34:45 UTC
+========================================================================
+
+URL: https://www.technovation.org/
+Extraction prompt: What is Technovation's mission and pitch? What do they do? Who do they serve? Give me the exact language from their homepage about their mission, impact, and who they empower.
+
+----------------------------------------
+
+# Technovation: Mission, Impact, and Reach
+
+## Mission
+Technovation's core mission is to build "a better world for all by nurturing problem solvers and innovators." They accomplish this by helping learners develop critical thinking, collaboration, and resilience through solving real-world problems using AI and technology.
+
+## What They Do
+Technovation runs project-based programs where students identify community problems and build technical solutions. Their key initiatives include:
+- **Technovation Girls**: A flagship program where teams of young women develop tech products addressing real issues
+- **AI Ventures Accelerator**: A 12-week program offering up to $10,000 in seed funding
+- **AI in Action Curriculum**: Guides students in developing AI-based apps for real-world challenges
+
+## Who They Serve
+Technovation reaches "400,000 participants in 160+ countries since 2006," with a particular focus on girls and young women pursuing STEM education and careers.
+
+## Key Impact Metrics
+The organization reports impressive outcomes:
+- "75% of students report increased confidence in programming"
+- "81% of Technovation Girls Alumnae report that Technovation had an impact on their career choices"
+- "76% of Technovation Girls Alumnae go on to pursue a STEM degree"
+
+Their approach emphasizes that learners develop practical skills while addressing problems they genuinely care about within their own communities.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

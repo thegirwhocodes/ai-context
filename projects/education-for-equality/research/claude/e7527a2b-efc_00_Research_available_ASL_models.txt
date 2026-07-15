@@ -1,0 +1,190 @@
+========================================================================
+AGENT RESEARCH: Research available ASL models
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 01:21:47 UTC
+========================================================================
+
+I need to find the most practical pretrained sign language recognition model to integrate into a Python/Flask app running on macOS (CPU only, no CUDA GPU). The model needs to:
+
+1. Accept MediaPipe keypoint sequences (or raw video frames) as input
+2. Output sign predictions with confidence scores
+3. Be downloadable and runnable NOW (pretrained weights available)
+4. Work on CPU (no CUDA required)
+5. Recognize at least 100 ASL signs
+
+Search GitHub and HuggingFace for these specific models and check their actual status:
+- CorrNet+ (github.com/hulianyuyy/CorrNet)
+- SignVLM (github.com/Hamzah-Luqman/signVLM)
+- sharonn18/tgcn-wlasl on HuggingFace
+- Any WLASL-trained models on HuggingFace with pretrained weights
+
+For each, report:
+1. Are pretrained weights actually downloadable?
+2. What input format does it expect?
+3. What dependencies does it need (PyTorch version, CUDA requirement)?
+4. Can it run on CPU?
+5. How many signs does it recognize?
+6. Estimated setup time
+
+Also search for "WLASL pretrained model github" and "sign language recognition pretrained weights" to find any I'm missing. Be very specific about what's ACTUALLY available vs what's just a paper with no released weights.
+
+----------------------------------------
+
+I now have comprehensive data on all the candidates. Here is the full report:
+
+---
+
+## Sign Language Recognition Model Assessment
+
+### 1. CorrNet+ (github.com/hulianyuyy/CorrNet) -- NOT SUITABLE
+
+- **Pretrained weights downloadable?** YES -- Google Drive and Baidu links for PHOENIX2014, PHOENIX2014-T, and CSL-Daily datasets. Links are live.
+- **Input format:** Raw video frames (RGB image sequences, 256x256 pixels). NOT keypoints.
+- **Dependencies:** PyTorch >= 1.13, ctcdecode (Linux-only C++ library), decord, OpenCV. The macOS adaptation guide explicitly states multiple incompatibilities: MPS doesn't support 3D pooling, ctcdecode won't compile on macOS (needs pyctcdecode workaround).
+- **Can it run on CPU?** Technically yes with modifications, but it's heavy. The macOS guide documents running on Apple Silicon with MPS fallback to CPU.
+- **How many signs?** This is a **continuous** sign language recognition model (sentences, not individual words). It recognizes German Sign Language (PHOENIX) and Chinese Sign Language (CSL-Daily) glosses -- NOT ASL at all.
+- **Verdict: DISQUALIFIED.** Wrong task (continuous SLR, not isolated word recognition), wrong language (German/Chinese, not ASL), and requires video frames not keypoints.
+
+---
+
+### 2. SignVLM (github.com/Hamzah-Luqman/signVLM) -- NOT SUITABLE
+
+- **Pretrained weights downloadable?** NO. The repo contains only code and training scripts. The `CLIP_weights/` directory just has a ViT-L subfolder. No WLASL-trained checkpoints are provided anywhere in the repo.
+- **Input format:** Raw video files with labels.
+- **Dependencies:** PyTorch 1.9.0 with CUDA 11.1 and cuDNN 8.0.5 -- explicitly requires NVIDIA GPU. The conda environment command is `pytorch=1.9.0=py3.9_cuda11.1_cudnn8.0.5_0`.
+- **Can it run on CPU?** Not designed for it. CLIP ViT-L backbone + Transformer decoder is very heavy.
+- **How many signs?** Tested on WLASL (up to 2000), KArSL, LSA64, AUTSL -- but no pretrained weights released.
+- **Verdict: DISQUALIFIED.** No pretrained weights available. Training-only code. CUDA required.
+
+---
+
+### 3. sharonn18/tgcn-wlasl on HuggingFace -- BEST OPTION
+
+- **Pretrained weights downloadable?** YES. Four variants with actual `pytorch_model.bin` files confirmed present:
+  - `asl100`: 3.4 MB (100 classes, hidden_size=64, 20 GCN stages)
+  - `asl300`: 3.5 MB (300 classes, hidden_size=256, 24 GCN stages)
+  - `asl1000`: 24.3 MB (1000 classes, hidden_size=256, 24 GCN stages)
+  - `asl2000`: 25.3 MB (2000 classes, hidden_size=256, 24 GCN stages)
+- **Input format:** MediaPipe-compatible 55 body keypoints. Shape: `(batch_size, 55, num_samples * 2)` where `num_samples=50` (frames), so input is `(batch, 55, 100)`. Each keypoint has x,y coordinates across 50 temporal frames. NOTE: The README claims "MediaPipe pose format" but the original WLASL TGCN used OpenPose (25 body - 12 excluded + 21 left hand + 21 right hand = 55). You will need to map MediaPipe keypoints to this 55-point format.
+- **Dependencies:** `torch`, `numpy`, `huggingface_hub`. That's it. No CUDA required. No heavy video processing.
+- **Can it run on CPU?** YES, trivially. The model is a Graph Convolutional Network -- extremely lightweight. The asl100 model is 3.4 MB. The asl2000 is only 25 MB. Pure matrix multiplications, no CNN/video processing.
+- **How many signs?** 100, 300, 1000, or 2000 ASL signs depending on variant.
+- **Claimed accuracy:** ">85% top-1" per the model card (though this may be optimistic -- the original WLASL TGCN paper reported ~46% on WLASL-100 top-1 for the GCN approach).
+- **Estimated setup time:** 15-30 minutes. Download model, copy the `tgcn_model.py` and `configs.py` from HuggingFace, write a MediaPipe-to-55-keypoint mapping, and you're running inference.
+- **Integration code available:** The repo includes `tgcn_model.py` (full model class) and `configs.py`. Complete inference example in README.
+
+**Key integration code:**
+```python
+model = GCN_muti_att(input_feature=100, hidden_feature=256, num_class=2000, p_dropout=0.3, num_stage=24)
+checkpoint = torch.load("pytorch_model.bin", map_location='cpu')
+model.load_state_dict(checkpoint.get('state_dict', checkpoint), strict=False)
+model.eval()
+x = torch.randn(1, 55, 100)  # (batch, 55 keypoints, 50 frames * 2 coords)
+output = model(x)
+predictions = torch.softmax(output, dim=1)
+```
+
+---
+
+### 4. Shawon16/VideoMAE WLASL Models -- FUNCTIONAL BUT HEAVY
+
+- **Pretrained weights downloadable?** YES. Multiple variants on HuggingFace with `model.safetensors`:
+  - `videoMAE_base_wlasl_100_40ep_coR_p10`: 100 classes, 329 MB, 46.5% accuracy
+  - `VideoMAE_WLASL_250_epochs`: 2000 classes, ~335 MB, 16.2% top-1 accuracy
+  - `videomae_base_wlasl_2000_20ep_coR`: 2000 classes, 335 MB, 0.5% accuracy (essentially broken)
+  - `ViViT_wlasl_2000_20ep_coR`: 2000 classes, 34.4% accuracy
+- **Input format:** Raw video frames -- 16 frames at 224x224 pixels. Standard HuggingFace `VideoMAEForVideoClassification` pipeline. Does NOT accept keypoints.
+- **Dependencies:** `transformers`, `torch`, `torchvision`, `decord` or `av` for video loading. ~330 MB model download.
+- **Can it run on CPU?** Yes, via HuggingFace Transformers (supports CPU inference). BUT inference will be slow -- VideoMAE processes 16 frames of 224x224 video through a Vision Transformer. Expect 2-5 seconds per prediction on CPU.
+- **How many signs?** 100 or 2000 depending on variant.
+- **Accuracy concerns:** The 100-class model achieves only 46.5% accuracy. The 2000-class models are essentially non-functional (0.5% to 16.2%). Only the 100-class model is usable.
+- **Estimated setup time:** 30-60 minutes. Standard HuggingFace pipeline, but needs video frame extraction and preprocessing.
+
+---
+
+### 5. Kaggle 1st Place ASL Signs (sign/kaggle-asl-signs-1st-place) -- STRONG OPTION
+
+- **Pretrained weights downloadable?** YES. TFLite model (10.7 MB) and sign vocabulary map (250 signs) on HuggingFace.
+- **Input format:** MediaPipe Holistic landmarks. The Google ISLR competition used MediaPipe to extract 543 landmarks (468 face + 33 pose + 21 left hand + 21 right hand) with x,y,z coordinates. Input shape is roughly `(num_frames, 543, 3)`.
+- **Dependencies:** `tensorflow` or `tflite-runtime` (CPU-only version available), `mediapipe`.
+- **Can it run on CPU?** YES. TFLite is specifically designed for CPU/mobile inference. Very fast.
+- **How many signs?** 250 ASL signs. Vocabulary includes practical words: TV, after, airplane, all, apple, arm, aunt, bad, bed, bird, black, blue, book, boy, etc.
+- **Accuracy:** Won 1st place in the Kaggle competition. Very high accuracy on the competition test set.
+- **Estimated setup time:** 30-60 minutes. Need to install `tflite-runtime` (or `tensorflow`), figure out the exact input tensor format from the competition's inference notebook (hoyso48's code on Kaggle), and write the MediaPipe landmark extraction pipeline.
+- **Caveat:** The model is TFLite format, not PyTorch. If your Flask app is PyTorch-based, this adds a different dependency (tensorflow-lite). However, `tflite-runtime` is a tiny package (~5 MB) that runs purely on CPU.
+
+---
+
+### 6. TheoViel 6th Place Kaggle ISLR -- SIMILAR TO #5
+
+- **Pretrained weights downloadable?** YES, but only as a TFLite ensemble (35.2 MB) in the GitHub repo. No PyTorch weights.
+- **Input format:** Same MediaPipe landmarks as Kaggle 1st place, but preprocessed differently (stride subsampling, normalization).
+- **How many signs?** 250 ASL signs (same competition).
+- **No PyTorch training weights provided** -- only the final TFLite export.
+
+---
+
+### 7. Original WLASL TGCN (dxli94/WLASL) -- VIABLE BUT OLDER
+
+- **Pretrained weights downloadable?** YES. Google Drive link is live. Provides pretrained models for asl100, asl300, asl1000, asl2000.
+- **Input format:** OpenPose keypoints -- 55 body points (13 body + 21 left hand + 21 right hand) with x,y coordinates. Same architecture as sharonn18's HuggingFace version.
+- **Dependencies:** PyTorch, NumPy. Test script has `.cuda()` hardcoded but trivially changed to CPU.
+- **Can it run on CPU?** Yes, with minor code edits (remove `.cuda()` calls).
+- **How many signs?** Up to 2000 ASL signs.
+- **Estimated setup time:** 30-45 minutes. Google Drive download, code adaptation for CPU.
+- **Note:** The sharonn18 HuggingFace model is essentially a repackaging of this -- same architecture, same 55 keypoints, but more convenient to download.
+
+---
+
+### 8. SPOTER (maty-bohacek/spoter) -- NO PRETRAINED WEIGHTS
+
+- **Pretrained weights downloadable?** NO. The releases only contain pre-extracted skeletal data CSVs (WLASL100 and LSA64), not trained model checkpoints.
+- **Input format:** Skeletal keypoints (MediaPipe/OpenPose compatible).
+- **How many signs?** Tested on WLASL100 (100 signs) and LSA64 (64 signs).
+- **Verdict:** Training-only. You'd need to train from scratch using their provided skeletal data. Lightweight Transformer model (hidden_dim=55), but no pretrained weights.
+
+---
+
+### 9. codewithdark/UnifiedCVHRM-WLASL-cls-1000-v -- BROKEN
+
+- **Pretrained weights downloadable?** Yes, many epoch checkpoints (~21 MB each).
+- **Accuracy:** 0.25% validation accuracy after 33 epochs. Completely non-functional.
+- **Custom architecture** with no documentation, no inference code, and only 2 labels in the config despite claiming 1000 classes.
+- **Verdict: DISQUALIFIED.** Broken model.
+
+---
+
+## RECOMMENDATION: Ranked by Practicality
+
+**Tier 1 -- Integrate NOW (same day):**
+
+1. **sharonn18/tgcn-wlasl** -- The clear winner for your use case.
+   - Accepts keypoint sequences (55 body points with x,y coordinates)
+   - Tiny models (3.4 MB to 25 MB)
+   - Pure PyTorch, CPU-friendly, runs instantly
+   - 100 to 2000 ASL sign variants
+   - Only dependency: `torch` and `numpy`
+   - Model code is self-contained (two files: `tgcn_model.py` and `configs.py`)
+   - **Main work:** Writing the MediaPipe-to-55-keypoint mapping. MediaPipe Holistic gives you 33 pose + 21 left hand + 21 right hand. The TGCN expects 55 points from OpenPose format. You need to map the 13 relevant pose keypoints + 21 left hand + 21 right hand from MediaPipe to match the expected order.
+   - Recommendation: Start with `asl300` (300 signs, still only 3.5 MB) for good vocabulary coverage with the small model size.
+
+**Tier 2 -- Good alternative (half day):**
+
+2. **Kaggle 1st Place TFLite** (`sign/kaggle-asl-signs-1st-place`) -- If you want the highest accuracy model.
+   - 250 practical ASL signs, competition-winning accuracy
+   - Takes MediaPipe landmarks directly (no mapping needed)
+   - TFLite format, not PyTorch -- adds `tflite-runtime` dependency
+   - 10.7 MB model, very fast on CPU
+   - Main work: Installing tflite-runtime on macOS and writing the inference wrapper
+
+**Tier 3 -- Functional but heavy:**
+
+3. **Shawon16 VideoMAE 100-class** -- Only if you need HuggingFace Transformers integration and accept video frame input (not keypoints). 329 MB, 46.5% accuracy on 100 classes, slow on CPU.
+agentId: a7f85a10973ca822b (use SendMessage with to: 'a7f85a10973ca822b' to continue this agent)
+<usage>total_tokens: 73651
+tool_uses: 90
+duration_ms: 1492756</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

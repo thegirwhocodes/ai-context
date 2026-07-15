@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: eCFR API versioner full title XML endpoint example developer guide github
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:51:41 UTC
+========================================================================
+
+Search query: eCFR API versioner full title XML endpoint example developer guide github
+
+----------------------------------------
+
+Web search results for query: "eCFR API versioner full title XML endpoint example developer guide github"
+
+Links: [{"title":"eCFR :: API Documentation","url":"https://www.ecfr.gov/developers/documentation/api/v1"},{"title":"eCFR :: Reader Aids :: Developer Resources","url":"https://www.ecfr.gov/reader-aids/ecfr-developer-resources"},{"title":"GitHub - sam-berry/ecfr-analyzer","url":"https://github.com/sam-berry/ecfr-analyzer"},{"title":"bulk-data/ECFR-XML-User-Guide.md at main · usgpo/bulk-data","url":"https://github.com/usgpo/bulk-data/blob/main/ECFR-XML-User-Guide.md"},{"title":"eCFR (Independent Publisher) - Connectors | Microsoft Learn","url":"https://learn.microsoft.com/en-us/connectors/ecfr/"},{"title":"GitHub - AlextheYounga/ecfr: The entire Electronic Code of Federal Regulations, and its history going back to 2002, on Github · GitHub","url":"https://github.com/AlextheYounga/ecfr"},{"title":"eCFR :: Reader Aids","url":"https://www.ecfr.gov/reader-aids"},{"title":"GitHub - niemasd/eCFR-Analyzer-Case-Study: Backup of GitHub repo: https://github.com/CLSweet/eCFR-Analyzer-Case-Study","url":"https://github.com/niemasd/eCFR-Analyzer-Case-Study"},{"title":"ECFR-XML-User-Guide.md/README.md at main · moranj/ECFR-XML-User-Guide.md","url":"https://github.com/moranj/ECFR-XML-User-Guide.md/blob/main/README.md"},{"title":"eCFR :: 45 CFR 170.404 -- Application programming interfaces.","url":"https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-D/section-170.404"}]
+
+Based on the search results, I found relevant information about the eCFR API versioner endpoints and XML full title endpoint example:
+
+## eCFR API Versioner Full Title XML Endpoint
+
+The eCFR API includes the following key endpoints:
+- `https://www.ecfr.gov/api/versioner/v1/titles.json` - Retrieves title metadata
+- `https://www.ecfr.gov/api/versioner/v1/full/{date}/title-{title_number}.xml` - Retrieves full XML content for a title
+
+## Developer Resources
+
+The base URL for all API endpoints is https://www.ecfr.gov, and a request to the eCFR titles endpoint returns three date fields per title—latest_amended_on, latest_issue_date, and up_to_date_as_of—as well as additional fields.
+
+## GitHub Resources
+
+Several GitHub repositories contain examples and tools for working with the eCFR API:
+- The niemasd/eCFR-Analyzer-Case-Study repository demonstrates eCFR API integration and uses these endpoints for retrieving agency data, title metadata, and full XML content
+- The Electronic CFR Bulk Data Repository resources are found at http://www.gpo.gov/fdsys/bulkdata/ECFR/resources
+
+For the official eCFR API documentation, you can visit the eCFR API documentation page at https://www.ecfr.gov/developers/documentation/api/v1.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

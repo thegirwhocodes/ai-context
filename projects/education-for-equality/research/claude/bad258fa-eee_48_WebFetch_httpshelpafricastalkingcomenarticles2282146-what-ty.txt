@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-nu
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:39 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available
+Extraction prompt: Extract the FULL detailed description of every voice phone number category Africa's Talking offers: Regular Business Number, TollFree, Premium Rated, SIP Phone, SIP Trunk, and Test Number. For each: who pays, what it's used for, what the technical setup is, any limitations (like outgoing calls), and how billing works. Include verbatim quotes if possible.
+
+----------------------------------------
+
+# Voice Phone Number Categories - Africa's Talking
+
+Based on the available documentation, here are the voice phone number types offered:
+
+**Toll Free**
+- Who pays: Client/business bears the cost
+- Quote: "numbers where the user is not dialed but you as a client gets billed for incoming calls"
+- Limitation: Cannot make outgoing calls independently
+- Billing: Client account charged for incoming calls
+
+**Premium**
+- Who pays: End user at elevated rates; client also billed
+- Quote: "numbers where the client is billed above normal rates and Client's account billed for incoming calls"
+- Limitation: Cannot make outgoing calls independently
+- Billing: Dual billing model
+
+**Regular**
+- Who pays: Both parties share costs
+- Quote: "The user is billed normal call rates and the Client's account billed for incoming and outgoing calls"
+- Capability: Supports both incoming and outgoing calls
+- Billing: Standard rates for all call directions
+
+**SIP**
+- Technical basis: Internet-based
+- Quote: "Uses the internet Client's account is billed for incoming and outgoing calls"
+- Billing: Client account covers all directions
+
+**Virtualized Physical Lines**
+- Who pays: Client handles all charges
+- Quote: "Billed normal call rates Client's account billed for incoming and outgoing calls"
+- Limitation: Cannot independently make outgoing calls
+- Billing: Standard call rates
+
+**Note:** The documentation does not contain information on "Regular Business Number," "SIP Trunk," or "Test Number" categories.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

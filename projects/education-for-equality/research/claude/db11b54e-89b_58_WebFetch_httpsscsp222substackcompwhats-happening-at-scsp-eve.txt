@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://scsp222.substack.com/p/whats-happening-at-scsp-events-podcasts
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:29 UTC
+========================================================================
+
+URL: https://scsp222.substack.com/p/whats-happening-at-scsp-events-podcasts
+Extraction prompt: Quote anything about hackathon winners, projects, prizes, or specific teams. Include all hackathon recaps mentioned.
+
+----------------------------------------
+
+# Hackathon Information
+
+The webpage mentions an upcoming hackathon but does not include any information about past winners, completed projects, or team recaps.
+
+**Upcoming Event Details:**
+
+The announcement states: "Mark your calendar for **March 29th**! SCSP is partnering with **AGI House** again for an exciting hackathon."
+
+**Prize Structure:**
+
+The page specifies the monetary awards: "_**1st Place: $25,000**_", "_**2nd Place: $15,000**_", and "_**3rd Place: $10,000**_" with funds provided by George Mason University.
+
+**Challenge Focus:**
+
+According to the content, participants will "tackle critical challenges with agentic AI" and "deliver novel solutions for government applications."
+
+Since this is a future event (scheduled for March 29th from the March 21st publication date), no winner or recap information is available in this document.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

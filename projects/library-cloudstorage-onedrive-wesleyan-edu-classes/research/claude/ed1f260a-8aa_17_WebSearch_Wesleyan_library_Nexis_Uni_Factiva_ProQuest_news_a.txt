@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Wesleyan library Nexis Uni Factiva ProQuest news article download text mining ac
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:30:24 UTC
+========================================================================
+
+Search query: Wesleyan library Nexis Uni Factiva ProQuest news article download text mining academic
+
+----------------------------------------
+
+Web search results for query: "Wesleyan library Nexis Uni Factiva ProQuest news article download text mining academic"
+
+Links: [{"title":"Overview - Basic Search Commands for Full-text News Databases: Factiva, Nexis Uni, Newsbank - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/newscommands"},{"title":"Factiva","url":"https://about.proquest.com/en/products-services/factiva/"},{"title":"Text data mining on current newspaper articles from the United States with ProQuest TDM Studio | Publizistik | Springer Nature Link","url":"https://link.springer.com/article/10.1007/s11616-023-00805-8"},{"title":"Sources - Text Mining Resources - Research Guides at Princeton University","url":"https://libguides.princeton.edu/textmining/sources"},{"title":"LexisNexis - Text Analysis - Guides at Penn Libraries","url":"https://guides.library.upenn.edu/penntdm/lexisnexis"},{"title":"Download Data for Analysis - Guide to Nexis Uni - Research Guides at University of Maryland Libraries","url":"https://lib.guides.umd.edu/nexisuni/data"},{"title":"Nexis Uni - Searching For News Articles - Introduction to Graduate Study in Communication - Research Guides at University of Maryland Libraries","url":"https://lib.guides.umd.edu/c.php?g=876580&p=6294412"},{"title":"Evaluation of six news aggregator databases: a comparison for researchers and librarians: Journal of Electronic Resources Librarianship: Vol 36, No 1","url":"https://www.tandfonline.com/doi/abs/10.1080/1941126X.2024.2306045"},{"title":"U.S. News Sources - International Studies - Subject Guides at American University","url":"https://subjectguides.library.american.edu/c.php?g=175045&p=1154245"},{"title":"Getting started: TDM Platforms & APIs - Text Mining and AI Research Resources - Library Guides at UC Berkeley","url":"https://guides.lib.berkeley.edu/text-mining/platforms"}]
+
+I've completed the web search on news article databases and text mining resources. Here are the key findings:
+
+## Major News Aggregator Databases
+
+Nexis Uni is the academic market version of LexisNexis and the best place to search the fulltext New York Times. Dow Jones FACTIVA is the home of the fulltext Wall Street Journal. Dow Jones Factiva combines more than 30,000 sources to give students, researchers, professors, and librarians access to premium content from 200 countries in 32 languages.
+
+## Download Limitations and Text Mining
+
+For Nexis Uni specifically, individual Nexis Uni users can manually download up to 100 full-text documents at a time, and up to 2,500 total documents per day. However, the license prohibits "accessing or using the online services via mechanical, programmatic, robotic, scripted or any other automated means" (e.g., APIs, etc.), and neither the online services nor the materials may be collected via automated or robotic methods, or used in conjunction with a generative artificial intelligence (AI) solution.
+
+## Text Data Mining Tools
+
+ProQuest TDM Studio and similar services provide researchers with access to data and resources that were previously unavailable for TDM to this extent. ProQuest TDM (Text and Data Mining) Studio allows you to create and analyze datasets from ProQuest content.
+
+The LexisNexis Web Services API (WSAPI) enables researchers to download and build text corpuses from Nexis Uni (including many major world news sources) for further analysis.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

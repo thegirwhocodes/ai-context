@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: TGCN WLASL accuracy top-1 top-5 benchmark results asl100 asl300 asl1000 asl2000
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:36:53 UTC
+========================================================================
+
+Search query: TGCN WLASL accuracy top-1 top-5 benchmark results asl100 asl300 asl1000 asl2000
+
+----------------------------------------
+
+Web search results for query: "TGCN WLASL accuracy top-1 top-5 benchmark results asl100 asl300 asl1000 asl2000"
+
+Links: [{"title":"sharonn18/tgcn-wlasl · Hugging Face","url":"https://huggingface.co/sharonn18/tgcn-wlasl"},{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"Word-level Sign Language Recognition with Multi-stream Neural Networks Focusing on Local Regions and Skeletal Information","url":"https://arxiv.org/html/2106.15989v2"},{"title":"Word-level Deep Sign Language Recognition from Video:","url":"https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Word-level_Deep_Sign_Language_Recognition_from_Video_A_New_Large-scale_WACV_2020_paper.pdf"},{"title":"[PDF] Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison | Semantic Scholar","url":"https://www.semanticscholar.org/paper/Word-level-Deep-Sign-Language-Recognition-from-A-Li-Rodriguez-Opazo/874063b6c71aef8382eb66a66d8a1c1188e78a9a"},{"title":"WLASL: Word-Level ASL Video Dataset","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl-video-dataset"},{"title":"Word-Level American Sign Language (WLASL)","url":"https://www.emergentmind.com/topics/word-level-american-sign-language-wlasl"},{"title":"Enhancing Word-Level Translation of American Sign Language Using Modified","url":"https://cs231n.stanford.edu/2024/papers/enhancing-word-level-translation-of-american-sign-language-using.pdf"},{"title":"GitHub - sidharth3/sign-language-recognition","url":"https://github.com/sidharth3/sign-language-recognition"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"}]
+
+Based on the search results, here's what I found regarding TGCN WLASL benchmark results:
+
+## General TGCN Performance on WLASL
+
+The TGCN model achieves high accuracy on the WLASL test set with Top-1 Accuracy greater than 85% (varies by model size), Top-3 Accuracy greater than 90%, and Top-5 Accuracy greater than 92%.
+
+## Specific Results by Dataset Size
+
+The search results reference a multi-stream neural network study that reported specific results across the WLASL subsets. The proposed multi-stream models achieved 81.38%, 73.43%, 63.61%, and 47.26% in Top-1 accuracy on the WLASL100, WLASL300, WLASL1000, and WLASL2000 datasets, respectively.
+
+Additionally, Pose-TGCN attained approximately 55.43% top-1 accuracy on WLASL100.
+
+## Available Model Variants
+
+There are pre-trained checkpoints available for TGCN models trained on asl100, asl300, asl1000, and asl2000 subsets of the WLASL dataset.
+
+Note that the exact metrics can vary depending on the specific model variant, training configuration, and test split used.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

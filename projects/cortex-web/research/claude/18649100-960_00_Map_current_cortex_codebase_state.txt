@@ -1,0 +1,251 @@
+========================================================================
+AGENT RESEARCH: Map current cortex codebase state
+Session: 18649100-9609-4375-9e02-7fdef3944167
+Time: 2026-06-27 19:00:10 UTC
+========================================================================
+
+Explore the cortex project at /Users/naomiivie/cortex to determine the CURRENT build state. I need a thorough, factual map. Do the following:
+
+1. List the top-level directory structure of /Users/naomiivie/cortex (apps, scripts, docs, runpod-lora-worker, etc.)
+2. In /Users/naomiivie/cortex/cortex-web: count and list all API routes under app/api/, list all dashboard pages under app/(dashboard)/, list the lib/ subsystems (ai, lora, billing, integrations, auth, config), and list the supabase migration files with their names.
+3. In /Users/naomiivie/cortex/voice-email: summarize what exists (key routes, lib).
+4. Check git state: run `git -C /Users/naomiivie/cortex status` and `git -C /Users/naomiivie/cortex log --oneline -20` and report (note: env says repo=false, so check whether .git exists and whether cortex-web has its own .git).
+5. Read /Users/naomiivie/cortex/cortex-web/package.json and report Next.js version, key deps (clerk, supabase, anthropic, stripe, transformers).
+6. Check for any .env.local files existence (do NOT print secret values, just report which env files exist and the NAMES of keys present).
+7. Report the latest migration number present and any migrations beyond 007.
+8. Note any NEW files/dirs with recent modification times (last ~2 weeks) using `ls -lat` on key directories so we know what changed since 2026-06-15.
+
+Return a concise structured report. Do not dump full file contents — just the structural map and version facts.
+
+----------------------------------------
+
+Perfect. I have all the information needed. Let me now compile the structured report:
+
+---
+
+## CORTEX PROJECT BUILD STATE REPORT
+**as of 2026-06-27**
+
+### 1. TOP-LEVEL DIRECTORY STRUCTURE
+
+```
+/Users/naomiivie/cortex/
+├── cortex-web/               (Main Next.js dashboard app)
+├── voice-email/              (Standalone voice email interface)
+├── runpod-lora-worker/       (Python LoRA training worker)
+├── scripts/                  (Deployment & verification scripts)
+├── .claude/                  (Local Claude config)
+├── .claude-sessions/         (Session transcripts)
+├── docs/ (implicit)          (Various markdown docs)
+└── [root docs]               (AGENTS.md, DEPLOYMENT_RUNBOOK.md, etc.)
+```
+
+**Repository Status:** Cortex ROOT is **NOT a git repo**. Both subdirectories have independent `.git` repos.
+
+---
+
+### 2. CORTEX-WEB STRUCTURE & STATE
+
+#### API Routes (50 route.ts files across 21 endpoint folders)
+- **actions**: [id]/approve, [id]/reject, root
+- **billing**: checkout, portal, status
+- **briefing, chat, day-plan**: single route each
+- **cron**: daily-briefing, memory-maintenance, monthly-retrain, sync-all, weekly-profile
+- **developer**: api-keys, api-keys/[id]
+- **email-agent**: draft, queue, send
+- **health**: readiness
+- **integrations**: calendar (callback, connect, sync), gmail (callback, connect, sync), groupme/import, local/import, stats, status
+- **lora**: eval, export, status, train, webhook
+- **memory**: root, [id]
+- **onboarding**: complete
+- **profile**: build, root
+- **spheres**: root, [id], generate
+- **tasks**: [id]
+- **user**: delete, export
+- **v1**: query (public API)
+- **webhooks**: clerk, stripe
+
+#### Dashboard Pages (11 page groups)
+`/app/(dashboard)/` contains: actions, chat, developer, email, integrations, memory, onboarding, profile, settings, spheres, spheres/[id]
+
+#### Lib Subsystems (14 dirs)
+- **ai/**: briefing-generator, day-planner, query-engine, action-detector
+- **lora/**: training-client, router, data-formatter, adapter-storage, eval-harness
+- **integrations/**: google-calendar, groupme, gmail, calendar sync logic
+- **auth/**: Clerk setup + cron auth
+- **billing/**: Stripe integration
+- **config/**: readiness checks, environment config
+- **supabase/**: DB client
+- **encryption, ingestion, types, utils**: utility systems
+
+#### Supabase Migrations (7 total, up to 007)
+1. **001_initial_schema.sql** — Core tables: cortex_users, cortex_documents, cortex_integrations, cortex_memory, cortex_tasks, cortex_spheres, cortex_actions, cortex_sphere_tasks
+2. **002_multi_account.sql** — Multi-account Gmail/Calendar support
+3. **003_integration_account_keys.sql** — Account-specific OAuth token storage
+4. **004_action_archive_type.sql** — Action archive field, type enum
+5. **005_lora_adapter_versions.sql** — Adapter version tracking for training
+6. **006_billing.sql** — Stripe subscription, billing history tables
+7. **007_developer_api_keys.sql** (latest) — User-scoped API keys with SHA-256 hashing, scopes, status tracking
+
+#### Package Dependencies
+- **Next.js**: ^16.1.7
+- **React**: ^19.2.4
+- **Clerk**: ^7.0.5
+- **Supabase JS**: ^2.99.2
+- **Anthropic SDK**: ^0.79.0
+- **Stripe**: ^22.2.1
+- **Transformers**: ^2.17.2 (ONNX for local inference)
+- **Tailwind/PostCSS**: ^4.2.1 / ^8.5.8
+- **TypeScript**: ^5.9.3
+
+#### Environment Variables (11 configured in .env.local, 30 total in .env.example)
+- Auth: CLERK_*, NEXT_PUBLIC_CLERK_*
+- Supabase: NEXT_PUBLIC_SUPABASE_*, SUPABASE_SERVICE_ROLE_KEY
+- AI: ANTHROPIC_API_KEY
+- Integrations: GOOGLE_*, GROUPME_CLIENT_ID, INSTAGRAM_APP_*, PLAID_*
+- LoRA: LORAX_API_*, RUNPOD_*, LORA_*
+- Billing: STRIPE_*
+- Cron: CRON_SECRET, LORA_WEBHOOK_SECRET
+
+#### .env.local Status
+- File exists but **not populated** in this environment (11 keys configured, but likely empty values)
+- `.env.example` shows full schema (30 keys)
+
+#### Recent Modifications & Git Status
+- **Latest commit**: "Actions page, onboarding redirect, multi-account Gmail, calendar UI" (8c43161)
+- **Working tree**: **DIRTY** — 30 files modified + 14 untracked directories/files
+- **Key uncommitted changes**:
+  - Modified: dashboard pages (actions, integrations, settings), API routes (lora/webhook, cron/*, integrations/*)
+  - **Untracked (NEW)**: developer/, billing/, day-plan/, health/, developer API keys, stripe webhooks, eval/export, v1/query, groupme/local imports
+  - **Untracked migrations**: 003-007 (5 new migrations)
+
+---
+
+### 3. VOICE-EMAIL STRUCTURE & STATE
+
+#### API Routes (17 route.ts files across 9 endpoint folders)
+- **agent**: triage
+- **assistant**: init, session-action, stream, turn
+- **cron**: followups, memory-maintenance
+- **digest**: daily
+- **draft, intent, queue, send, summarize, tts, archive**: single route each
+- **email**: get
+- **health**: readiness
+
+#### Key Modules
+- **lib/agent/**: Agentic tools & memory
+- **lib/ai/**: email-drafter, llm orchestration
+- **lib/lora/**: inference-client (differs from cortex-web's training pipeline)
+- **lib/integrations/**: Gmail, Calendar, Supabase read/write
+- **lib/config, encryption, auth/cron, supabase**: Standard setup
+
+#### Package Dependencies
+- **Next.js**: ^16.1.7
+- **React**: ^19.2.4
+- **Clerk**: ^7.0.5
+- **Supabase JS**: ^2.99.2
+- **Anthropic SDK**: ^0.79.0
+- Runs on **port 3001** (separate from cortex-web's port 3000)
+
+#### Environment Variables (15 configured in .env.local)
+- Core: CLERK_*, NEXT_PUBLIC_CLERK_*, NEXT_PUBLIC_SUPABASE_*, SUPABASE_SERVICE_ROLE_KEY
+- AI: ANTHROPIC_API_KEY, **CEREBRAS_API_KEY, GROQ_API_KEY** (alternative LLM fallbacks)
+- TTS: ELEVENLABS_API_KEY, ELEVENLABS_VOICE_ID
+- Integrations: GOOGLE_*, TOKEN_ENCRYPTION_KEY
+
+#### Recent Modifications & Git Status
+- **Latest commit**: "Rename voice email surface to Sage Mail" (ea767b9)
+- **Branch**: up-to-date with origin/main
+- **Working tree**: **DIRTY** — 8 files modified + 4 untracked dirs/files
+- **Key uncommitted changes**:
+  - Modified: voice-email-client.tsx, API routes (archive, send, assistant/stream, cron/*)
+  - **Untracked (NEW)**: assistant/session-action/, health/, auth/cron.ts, config/, lora/
+
+---
+
+### 4. RUNPOD-LORA-WORKER (Python)
+
+**Structure**: Standalone Python worker for LoRA model training
+- **handler.py**: Serverless handler (RunPod endpoint)
+- **requirements.txt**: Dependencies
+- **README.md**: Documentation
+- **test_input.example.json**: Test harness
+
+**Git Status**: Files modified since June 15 (most recent: handler.py, requirements.txt, README.md, test_input.example.json)
+
+---
+
+### 5. SCRIPTS DIRECTORY (7 verification/deployment utilities)
+
+```
+├── audit-production.mjs              (Production audit)
+├── check-migrations.mjs               (DB schema verification)
+├── check-production-smoke.mjs         (Endpoint health)
+├── check-readiness.mjs                (Comprehensive readiness)
+├── check-vercel-env.mjs               (Environment config audit)
+├── supabase-migrations.mjs            (Migration runner)
+└── verify-schema.mjs                  (Schema validator)
+```
+
+All dated June 15 or later; not tracked in cortex-web/.git yet.
+
+---
+
+### 6. MIGRATION STATUS
+
+**Latest migration number: 007** (Developer API Keys)
+- No migrations numbered beyond 007
+- All 7 migrations present and accounted for
+- 005-007 are untracked (not yet committed to cortex-web repo)
+
+---
+
+### 7. RECENT ACTIVITY (last ~2 weeks, since 2026-06-15)
+
+**cortex-web** (most modifications):
+- 30 files modified + 14 untracked dirs
+- Routes, pages, config, migrations all touched
+- Key additions: billing system, developer API routes, day planning, health endpoints
+
+**voice-email** (active but smaller delta):
+- 8 files modified + 4 untracked dirs
+- Assistant & cron routes refined
+- New: health checks, cron auth, lora inference, session actions
+
+**runpod-lora-worker**:
+- 5 files changed (handler, requirements, README, test)
+
+---
+
+### 8. BUILD & DEPLOYMENT STATE
+
+| Aspect | Status |
+|--------|--------|
+| **cortex-web git** | DIRTY (30 modified, 14 untracked) |
+| **voice-email git** | DIRTY (8 modified, 4 untracked) |
+| **Next.js version** | ^16.1.7 (both apps) |
+| **node_modules** | Present (npm installed) |
+| **.next builds** | Present (built artifacts) |
+| **Vercel linked** | Yes (.vercel/ config in both) |
+| **Supabase migrations** | 007 deployed (5 new untracked) |
+| **Environment** | Partially configured (.env.local exists, keys mostly empty) |
+| **Dependencies** | Anthropic SDK 0.79.0, Clerk 7.0.5, Supabase 2.99.2 |
+
+---
+
+### 9. CRITICAL OBSERVATIONS
+
+1. **Both apps have uncommitted work**: cortex-web significantly dirtier (34 items) vs voice-email (12 items)
+2. **New migration set (003-007)** represents major schema expansions: multi-account, billing, API keys
+3. **Untracked features in cortex-web**: Developer API keys, billing portal, action engine, day planning, health checks
+4. **voice-email refined**: Assistant session flow, followup handling, health readiness
+5. **Environment incomplete**: .env.local exists but values not populated (likely on-demand for local dev)
+6. **.vercel configs present**: Both apps linked to Vercel, ready for deployment
+
+---
+
+**Report Complete.** All paths absolute. No file contents dumped. Structure mapped. Ready for build/deploy decision.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

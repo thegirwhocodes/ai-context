@@ -1,0 +1,74 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://arxiv.org/html/2512.10562
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:26:12 UTC
+========================================================================
+
+URL: https://arxiv.org/html/2512.10562
+Extraction prompt: Extract ALL technical details from this paper on few-shot prototypical networks for ASL recognition: architecture, how prototypical networks work for sign language, accuracy numbers on WLASL, training requirements, number of examples needed per sign, inference speed, comparison to other methods. Everything.
+
+----------------------------------------
+
+# Technical Details: Few-Shot Prototypical Networks for ASL Recognition
+
+## Architecture Overview
+
+The system combines three main components:
+
+**Backbone Encoder**: A Spatiotemporal Graph Convolutional Network (ST-GCN) processes skeletal keypoints partitioned into body (core joints), hands (21 per hand), and face regions. The network produces frame-level embeddings of dimension D=768.
+
+**Multi-Scale Temporal Aggregation (MSTA)**: "Parallel 1D Convolutional branches with varying kernel sizes (k∈{3,5,7})" capture movements at different speeds. An attention pooling mechanism compresses variable-length sequences into fixed-size video representations using weighted temporal aggregation.
+
+**Prototypical Classification**: Rather than fixed classifiers, the system computes class prototypes as mean embeddings from support examples, then classifies queries by Euclidean distance to these prototypes.
+
+## Prototypical Networks for Sign Language
+
+The approach leverages the principle that signs exhibit "standard" canonical motions. Each class prototype represents the averaged motion pattern: "the prototype 𝐩c is the mean vector of the embedded support samples." Classification uses softmax over negative distances to nearby prototypes.
+
+The system trains episodically with N-way and K-shot configurations, where each episode contains N sign classes with K support examples each.
+
+## Performance on WLASL
+
+**Main Results**:
+- 43.75% Top-1 accuracy (test set)
+- 77.10% Top-5 accuracy
+- 84.50% Top-10 accuracy
+
+This represents "over 13%" improvement versus a standard classification baseline achieving 30.37% Top-1.
+
+**N-Way Impact**: Testing showed consistent gains with episode difficulty:
+- 50-Way: 40.62% Top-1
+- 100-Way: 43.43% Top-1
+- 200-Way: 43.75% Top-1
+
+## Training Requirements
+
+**Data**: The framework uses K=3 shots per class and Q=2 query samples per episode, trained for 50,000 episodes total with the Adam optimizer.
+
+**Examples Needed**: The approach targets scenarios where "the vast majority of signs contain fewer than 13 instances," making it suitable for long-tail vocabulary distributions where most signs have 5+ examples available.
+
+**Optimization**: Automatic Mixed Precision (AMP) and custom episodic batch sampling enable scaling to higher N-way configurations.
+
+## Cross-Dataset Generalization
+
+Zero-shot evaluation on SignASL (19,000 videos, different signers and conditions):
+- Prototypical model: 29.87% Top-1, 44.00% Top-5
+- Baseline classifier: 24.12% Top-1
+
+The 5% improvement demonstrates metric space robustness versus fixed classifiers.
+
+## Comparison to Other Methods
+
+The paper compares against "a standard classification baseline sharing the identical ST-GCN + MSTA backbone." The baseline uses 50 training epochs with a fully connected linear classifier, achieving substantially lower accuracy across all metrics.
+
+The authors note their approach avoids dependence on external pre-training, unlike methods like Uni-Sign that "rely heavily on the availability of large-scale pre-training data."
+
+## Inference Speed & Other Details
+
+The document does not specify inference latency, throughput, or computational requirements for deployment.
+
+**Notable Finding**: Error analysis revealed that "a significant majority" of top confusions involved linguistic synonyms (jail/prison, phone/telephone) rather than true recognition failures, suggesting the model successfully captures semantic structure.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

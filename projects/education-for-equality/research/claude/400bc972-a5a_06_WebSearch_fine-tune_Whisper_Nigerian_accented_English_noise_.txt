@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: fine-tune Whisper Nigerian accented English noise augmentation telephony NaijaVo
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:59:41 UTC
+========================================================================
+
+Search query: fine-tune Whisper Nigerian accented English noise augmentation telephony NaijaVoices WER improvement 2026
+
+----------------------------------------
+
+Web search results for query: "fine-tune Whisper Nigerian accented English noise augmentation telephony NaijaVoices WER improvement 2026"
+
+Links: [{"title":"How Accurate Is Whisper in 2026? (WER Data by Language) | VexaScribe","url":"https://novascribe.ai/how-accurate-is-whisper"},{"title":"The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages","url":"https://arxiv.org/html/2505.20564"},{"title":"NCAIR1/NigerianAccentedEnglish · Hugging Face","url":"https://huggingface.co/NCAIR1/NigerianAccentedEnglish"},{"title":"Fine-tuning Whisper · openai/whisper · Discussion #759","url":"https://github.com/openai/whisper/discussions/759"},{"title":"Advancing Multilingual Speech Recognition: Fine-Tuning Whisper for Enhanced Low-Resource Performance | by Christopher Ibe | Medium","url":"https://medium.com/@ccibeekeoc42/advancing-multilingual-speech-recognition-fine-tuning-whisper-for-enhanced-low-resource-34529b525f90"},{"title":"Fine-tuning Whisper for Pashto ASR: strategies and scale","url":"https://arxiv.org/pdf/2604.06507"},{"title":"Nollywood: Let's Go to the Movies!","url":"https://arxiv.org/pdf/2407.02631"},{"title":"Zero Shot Text to Speech Augmentation for Automatic Speech Recognition   on Low-Resource Accented Speech Corpora","url":"https://arxiv.org/pdf/2409.11107"},{"title":"Top 8 open source STT options for voice applications in 2026","url":"https://www.assemblyai.com/blog/top-open-source-stt-options-for-voice-applications"}]
+
+Based on the search results, here's what I found regarding fine-tuning Whisper for Nigerian accented English with noise augmentation:
+
+## NaijaVoices Dataset Results
+
+The NaijaVoices dataset demonstrated significant improvements through finetuning experiments on automatic speech recognition, averagely achieving 75.86% (Whisper), 52.06% (MMS), and 42.33% (XLSR) WER improvements. Finetuning with NaijaVoices significantly improved performance, with multilingual finetuning benefiting Yoruba and Hausa, while monolingual finetuning was more effective for Igbo.
+
+## Nigerian Accented English Model
+
+A breakthrough automatic speech recognition (ASR) model specifically designed for Nigerian Accented English, fine-tuned on Whisper Small architecture, is powered by Awarri Technologies and an initiative of the Federal Ministry of Communications, Innovation and Digital Economy to bridge the accent gap in speech recognition technology and promote digital inclusion for Nigerian English speakers.
+
+## Noise Augmentation Techniques
+
+Research on augmentation strategies shows promising results. Online augmentation provides a 7.25 pp WER benefit on CV24 (27.13% vs 34.38%), with the benefit holding for CER as well (8.79% vs 11.43%, a 2.64 pp gap). Speed perturbation and noise injection reduce overfitting to a limited speaker distribution even when the training corpus is already 866 speakers and 113 hours.
+
+## General Whisper Performance Degradation
+
+Whisper accuracy degrades with: noisy audio (+5–15% WER), strong accents (+5–10%), phone audio vs studio (+5–10%), multiple overlapping speakers (+5–10%), technical/domain vocabulary (no custom vocab support), and long silences.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

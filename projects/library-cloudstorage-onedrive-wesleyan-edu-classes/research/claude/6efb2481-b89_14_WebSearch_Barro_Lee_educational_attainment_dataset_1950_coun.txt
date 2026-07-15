@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Barro Lee educational attainment dataset 1950 country years schooling primary en
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:36:17 UTC
+========================================================================
+
+Search query: Barro Lee educational attainment dataset 1950 country years schooling primary enrollment
+
+----------------------------------------
+
+Web search results for query: "Barro Lee educational attainment dataset 1950 country years schooling primary enrollment"
+
+Links: [{"title":"Barro-Lee Educational Attainment Dataset","url":"http://barrolee.com/"},{"title":"A New Data Set of Educational Attainment in the World, 1950-2010 | NBER","url":"https://www.nber.org/papers/w15902"},{"title":"Barro-Lee Educational Attainment Data | Splash-DB","url":"https://splash-db.eu/dataresource/barro-lee-educational-attainment-data/"},{"title":"Barro-Lee Educational Attainment Dataset | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/"},{"title":"2021 September Update: The new update of the Barro-Lee data set is now available. | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/BLv3.html"},{"title":"A new data set of educational attainment in the world, 1950 ...","url":"https://www.sciencedirect.com/science/article/abs/pii/S0304387812000855"},{"title":"Long-term Data | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/LongTermData.html"},{"title":"Data source: Barro and Lee","url":"https://datafinder.qog.gu.se/datasource/bl"},{"title":"Educational Attainment Dataset, Barro-Lee - Pardee Wiki","url":"https://pardeewiki.du.edu/index.php?title=Educational_Attainment_Dataset,_Barro-Lee"},{"title":"Data | BarroLeeDataSet","url":"https://barrolee.github.io/BarroLeeDataSet/Data.html"}]
+
+Based on the search results, here's what I found about the Barro-Lee Educational Attainment Dataset:
+
+## Overview
+The Barro-Lee panel dataset on educational attainment has been updated for 146 countries from 1950 to 2010. The data are disaggregated by sex and by 5-year age intervals.
+
+## Data Coverage and Variables
+The dataset provides information about the distribution of educational attainment of the adult population over age 15 and over age 25 by sex at seven levels of schooling and average years of schooling at all levels. The seven levels of schooling include: no formal education, incomplete primary, complete primary, lower secondary, upper secondary, incomplete tertiary, and complete tertiary.
+
+## Methodology
+The accuracy of estimation was improved by using information from consistent census data, disaggregated by age group, along with new estimates of mortality rates and completion rates by age and education level. Flow estimates were created using information on school-enrollment ratios and population structure over time.
+
+## Additional Resources
+There is also a related long-term dataset with estimated school enrollment ratios from 1820 to 2010 and estimated educational attainment for the total, female and male populations from 1870 to 2010, available in five-year intervals for 111 countries.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

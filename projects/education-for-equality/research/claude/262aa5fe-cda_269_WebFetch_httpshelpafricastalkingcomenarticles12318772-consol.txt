@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/12318772-consolidated-voice-pricing
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:17:46 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/12318772-consolidated-voice-pricing
+Extraction prompt: VERBATIM: every Nigeria voice pricing line. Inbound, outbound, SIP, virtual number monthly fee, production number purchase fee. Include NGN and USD figures.
+
+----------------------------------------
+
+I appreciate your request, but I cannot provide the specific Nigeria voice pricing details you've asked for. While the web page references a "Voice Pricing Document (1).pdf" attachment, the actual pricing data (inbound, outbound, SIP, virtual number fees, production number purchase fees in NGN and USD) is contained within that PDF file, which is not included in the web page content provided to me.
+
+To access the verbatim pricing information you need, you would need to download and review the attached PDF document directly from the Africa's Talking Help Center page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,50 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Deepgram Nova-3 vs Nova-2 latest model release 2025 flagship
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:34:38 UTC
+========================================================================
+
+Search query: Deepgram Nova-3 vs Nova-2 latest model release 2025 flagship
+
+----------------------------------------
+
+Web search results for query: "Deepgram Nova-3 vs Nova-2 latest model release 2025 flagship"
+
+Links: [{"title":"Model Comparison: When to Use Nova‑2 vs Nova‑3 (for Devs)","url":"https://deepgram.com/learn/model-comparison-when-to-use-nova-2-vs-nova-3-for-devs"},{"title":"Deepgram Nova-3 vs Nova-2: STT Evolved - Vapi AI Blog","url":"https://vapi.ai/blog/deepgram-nova-3-vs-nova-2"},{"title":"Deepgram Nova-3 Explained: Speed, Price, Accuracy | ConvertAudioToText","url":"https://convertaudiototext.com/blog/deepgram-nova-3-explained"},{"title":"Deepgram Nova 2/3 for Voice AI: The Developer's Guide to Production-Grade STT","url":"https://burki.dev/blog/37-deepgram-nova-voice"},{"title":"Introducing Nova-3: Setting a New Standard for AI-Driven Speech-to-Text","url":"https://deepgram.com/learn/introducing-nova-3-speech-to-text-api"},{"title":"Model Options | Deepgram's Docs","url":"https://developers.deepgram.com/docs/model"},{"title":"Deepgram Expands Nova-3 with 11 New Languages Across Europe and Asia","url":"https://deepgram.com/learn/deepgram-expands-nova-3-with-11-new-languages-across-europe-and-asia"},{"title":"Models & Languages Overview | Deepgram's Docs","url":"https://developers.deepgram.com/docs/models-languages-overview"},{"title":"Deepgram Expands Nova-3 with Italian, Turkish, Norwegian, and Indonesian Support","url":"https://deepgram.com/learn/deepgram-expands-nova-3-with-italian-turkish-norwegian-and-indonesian-support"},{"title":"Deepgram’s Nova-3 Expands Speech-to-Text Support Across Asia-Pacific","url":"https://deepgram.com/learn/deepgram-nova-3-expands-speech-to-text-support-across-asia-pacific"}]
+
+Based on the latest search results, here's a comprehensive comparison of Deepgram Nova-3 vs Nova-2:
+
+## Release Timeline
+
+Deepgram released Nova-3 in January 2025 as the replacement for Nova-2, its previous flagship speech recognition model. Nova-3 achieved General Availability (GA) in February 2025, with multilingual GA in April 2025.
+
+## Accuracy Performance
+
+Streaming word error rates dropped from 8.4% to 6.84%, with a 54.3% reduction in streaming errors. More specifically, Nova-3 boasts a median WER of 6.84% on real-time audio streams, marking a 54.2% improvement over the next-best competitor at 14.92%.
+
+## Key Differentiators
+
+**Multilingual Capabilities:**
+While Nova-2 transcribes different languages well, Nova-3 can seamlessly follow conversations that jump between languages mid-sentence. Nova-3 can transcribe audio that switches between languages mid-sentence across 10 languages (English, Spanish, French, German, Hindi, Russian, Portuguese, Japanese, Italian, and Dutch).
+
+**Language Coverage:**
+Nova-3 launched with 36 supported languages and Deepgram expanded it through 2025 to 50-plus languages.
+
+**Advanced Features:**
+Keyterm Prompting allows developers to inject up to 100 domain terms, providing up to 6× lift on domain vocabulary without retraining. Nova-3 performs PII redaction on up to 50 entities in real time—critical for finance and healthcare compliance.
+
+**Latency:**
+Nova-3 maintains parity latency with Nova-2 (< 300 ms).
+
+## Pricing
+
+Nova-3 streaming starts at $0.0077/min (batch tier $0.0066/min).
+
+Nova-3 is Deepgram's current flagship model, representing a significant advancement over Nova-2 with substantially improved accuracy, multilingual capabilities, and enterprise features.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

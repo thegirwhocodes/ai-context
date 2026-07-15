@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: 8GB M1 MacBook Air heavy swap usage memory pressure normal Apple Silicon unified
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-03 18:09:19 UTC
+========================================================================
+
+Search query: 8GB M1 MacBook Air heavy swap usage memory pressure normal Apple Silicon unified memory video editing
+
+----------------------------------------
+
+Web search results for query: "8GB M1 MacBook Air heavy swap usage memory pressure normal Apple Silicon unified memory video editing"
+
+Links: [{"title":"Is the 8 GB M1 Air even useable at this t… - Apple Community","url":"https://discussions.apple.com/thread/252201055"},{"title":"Mac M1 Swap Memory is too high? - Apple Community","url":"https://discussions.apple.com/thread/253898636"},{"title":"M1 Mac \"Swap Memory\" FIXED by Apple? YES! - TidBITS Talk - TidBITS Talk","url":"https://talk.tidbits.com/t/m1-mac-swap-memory-fixed-by-apple-yes/15813"},{"title":"M1 Air - Is my swap usage normal? | MacRumors Forums","url":"https://forums.macrumors.com/threads/m1-air-is-my-swap-usage-normal.2368808/"}]
+
+Based on the search results, here's what I found about 8GB M1 MacBook Air memory usage during intensive tasks like video editing:
+
+## Swap Usage and Memory Pressure
+
+Swap memory usage itself is nothing to worry about, but the pattern differs between systems. The reason for excessive VM disk swapping is due to the way the new "unified memory" CPU/RAM/drive operates.
+
+## Video Editing Performance
+
+Users have successfully performed demanding video editing on 8GB M1 MacBook Air machines. One user reported doing 4K video editing with 10-bit 400Mbps clips with titles, effects and color grading all from an 8GB MacBook Air. However, watching activity monitor will show "yellow" memory pressure when really pushing the system beyond what most customers will use.
+
+## General Assessment
+
+As long as your memory pressure is in the green range, you have nothing to worry about. That said, for the M1 series, 8GB is no longer considered "enough" due to excessive VM disk swapping because of the unified memory architecture. If the machine is fast enough for your needs, you wouldn't worry too much about it, though some feel the machine may be underspecified for heavier usage.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

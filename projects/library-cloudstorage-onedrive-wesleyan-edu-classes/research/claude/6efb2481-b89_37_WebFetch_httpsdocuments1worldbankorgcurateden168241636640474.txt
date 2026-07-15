@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://documents1.worldbank.org/curated/en/168241636640474130/pdf/Technical-Pap
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-14 05:29:43 UTC
+========================================================================
+
+URL: https://documents1.worldbank.org/curated/en/168241636640474130/pdf/Technical-Paper-3-Estimating-the-Spillover-Economic-Effects-of-Foreign-Conflict-Evidence-from-Boko-Haram.pdf
+Extraction prompt: Extract: full authors and citation, year, methodology used (Augmented SCM, raw SCM, Synthetic DID?), donor pool definition, treatment date, outcome variable, pre-treatment RMSPE if reported, and headline result. This is for a literature review on synthetic control applications to Nigeria/Boko Haram.
+
+----------------------------------------
+
+I've reviewed the PDF content provided, but this appears to be a PDF file structure (with binary/encoded font and stream data) rather than readable article text. The document shows internal PDF objects for fonts, metadata, and formatting rather than the actual article content.
+
+To extract the information you need for your literature review on synthetic control applications to Nigeria/Boko Haram, I would need:
+
+1. **The actual text content** of the research article (not the PDF encoding)
+2. Alternatively, the article title and authors so I can reference the correct publication
+
+Could you please provide either:
+- A text version of the article, or
+- The article's title, authors, and publication year so I can identify what you're referencing?
+
+Once I have readable content, I'll extract:
+- Full citation and authors
+- Year
+- Methodology (Augmented SCM, raw SCM, Synthetic DID, etc.)
+- Donor pool definition
+- Treatment date
+- Outcome variable(s)
+- Pre-treatment RMSPE (if reported)
+- Key findings
+
+**Note:** The content you've shared appears to be PDF object code rather than article text, which is why I cannot extract the substantive information you're requesting.
+
+[Binary content (application/pdf;charset=utf-8, 1.3MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/6efb2481-b890-4754-95b7-49de6ac05f9b/tool-results/webfetch-1778736593190-qel289.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

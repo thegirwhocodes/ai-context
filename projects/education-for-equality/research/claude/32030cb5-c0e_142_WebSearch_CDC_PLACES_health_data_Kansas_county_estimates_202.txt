@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: CDC PLACES health data Kansas county estimates 2024 data download csv
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 07:40:01 UTC
+========================================================================
+
+Search query: CDC PLACES health data Kansas county estimates 2024 data download csv
+
+----------------------------------------
+
+Web search results for query: "CDC PLACES health data Kansas county estimates 2024 data download csv"
+
+Links: [{"title":"PLACES Data Portal | PLACES | CDC","url":"https://www.cdc.gov/places/tools/data-portal.html"},{"title":"PLACES: Local Data for Better Health | PLACES | CDC","url":"https://www.cdc.gov/places/index.html"},{"title":"Data and Resources | County Health Rankings & Roadmaps","url":"https://www.countyhealthrankings.org/health-data/kansas/data-and-resources"},{"title":"PLACES: Local Data for Better Health, County Data, 2025 release | Data | Centers for Disease Control and Prevention","url":"https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb"},{"title":"CDC PLACES: Local Data for Better Health, County Data and Census Tract Data 2024 release","url":"https://zenodo.org/records/14774046"},{"title":"U.S. Department of Health & Human Services - PLACES: Local Data for Better Health, County Data 2024 release","url":"https://catalog.data.gov/dataset/places-local-data-for-better-health-county-data-2020-release-94305"},{"title":"About PLACES: Local Data for Better Health | PLACES | CDC","url":"https://www.cdc.gov/places/about/index.html"},{"title":"How To Use the PLACES Data Portal | PLACES | CDC","url":"https://www.cdc.gov/places/tools/explore-places-data-portal.html"},{"title":"Restored CDC | How To Use the PLACES Data Portal | PLACES | CDC","url":"https://restoredcdc.org/www.cdc.gov/places/tools/explore-places-data-portal.html"},{"title":"PLACES: Local Data for Better Health, Census Tract Data, 2025 release | Data | Centers for Disease Control and Prevention","url":"https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-Census-Tract-D/cwsq-ngmh"}]
+
+Based on the search results, here's what I found about CDC PLACES health data for Kansas counties in 2024:
+
+## Overview
+The PLACES Data Portal is an online data repository designed for individuals to access and download PLACES datasets. Each PLACES data release includes 8 datasets on 4 geographic levels (county, place, census tract, and ZIP Code tabulation area) and in 2 formats (opendata and GIS friendly).
+
+## 2024 Data Availability
+The dataset contains model-based county estimates and covers the entire United States at county, place, census tract, and ZIP Code levels. The dataset includes estimates for 40 measures: 12 for health outcomes, 7 for preventive services use, 4 for chronic disease-related health risk behaviors, 7 for disabilities, 3 for health status, and 7 for health-related social needs.
+
+## How to Download as CSV
+You can click the export button to export the entire dataset in your format of choice, such as JSON, GeoJSON, and CSV.
+
+## Where to Access
+The data is available through the CDC PLACES Data Portal at www.cdc.gov/places/tools/data-portal.html and through data.cdc.gov. You can select the county geographic level and choose your preferred data format (CSV, GIS-friendly, or open data format) to download Kansas county health estimates.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

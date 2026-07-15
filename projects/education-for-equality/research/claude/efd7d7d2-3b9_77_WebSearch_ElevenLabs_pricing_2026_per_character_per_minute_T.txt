@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ElevenLabs pricing 2026 per character per minute TTS API plans
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 06:16:20 UTC
+========================================================================
+
+Search query: ElevenLabs pricing 2026 per character per minute TTS API plans
+
+----------------------------------------
+
+Web search results for query: "ElevenLabs pricing 2026 per character per minute TTS API plans"
+
+Links: [{"title":"ElevenLabs API Pricing — Build AI Audio Into Your Product","url":"https://elevenlabs.io/pricing/api"},{"title":"ElevenLabs Pricing for Creators & Businesses of All Sizes","url":"https://elevenlabs.io/pricing"},{"title":"The Complete Guide to ElevenLabs Plans Overages and Usage Based Pricing in 2026 | Flexprice","url":"https://flexprice.io/blog/elevenlabs-pricing-breakdown"},{"title":"Eleven Labs Software Pricing 2026","url":"https://www.g2.com/products/elevenlabsio/pricing"},{"title":"ElevenLabs pricing: A complete breakdown for 2025","url":"https://www.eesel.ai/blog/elevenlabs-pricing"},{"title":"Complete Elevenlabs Pricing Guide With Features and Best Use Cases - Voice.ai","url":"https://voice.ai/hub/tts/elevenlabs-pricing/"},{"title":"ElevenLabs vs OpenAI TTS: Which One''s Right for You? - Vapi AI Blog","url":"https://vapi.ai/blog/elevenlabs-vs-openai"},{"title":"ElevenLabs pricing: Plans, features, and costs - Orb","url":"https://www.withorb.com/blog/eleven-labs-pricing"},{"title":"ElevenLabs Pricing 2026: Full Guide & Best Plans for Teams","url":"https://www.photonpay.com/hk/blog/article/elevenlabs-pricing?lang=en"},{"title":"ElevenLabs Pricing (March 2026): Compare Plans & Find the Best One | SaaSworthy","url":"https://www.saasworthy.com/product/elevenlabs-io/pricing"}]
+
+Based on the search results, here's what I found about ElevenLabs pricing in 2026:
+
+## Credit and Per-Character Pricing
+
+For V1 English, V1 Multilingual, and V2 Multilingual models, 1 text character equals 1 credit. For V2 Flash/Turbo English and V2.5 Flash/Turbo Multilingual models, discounted pricing applies, costing between 0.5 and 1 credit per character.
+
+## API Plans and Character Allowances
+
+For 2026, ElevenLabs offers six primary plans, with a tier for everyone from testing the waters to running a global production house. Here's a breakdown:
+
+- **Free Plan**: 10,000 characters per month
+- **Starter Plan ($5/mo)**: 30,000 characters
+- **Creator Plan ($22/mo)**: 100,000 characters
+- **Pro Plan ($99/mo)**: 500,000 characters
+- **Scale Plan ($330/mo)**: 2 million characters
+
+## Overage Pricing
+
+If you're on the Creator plan, you get 100,000 characters of TTS output using the Multilingual model with anything beyond that billed at $0.30 per 1,000 characters, dropping to $0.24 per 1,000 on the Pro plan, $0.18 on Scale, and $0.12 per 1,000 characters on Business.
+
+## Per-Minute Conversion
+
+Credits represent the processing capacity, with 1,000 credits equivalent to about one minute of TTS output.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cold Turkey Blocker how it works architecture technical implementation frozen mo
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:48:23 UTC
+========================================================================
+
+Search query: Cold Turkey Blocker how it works architecture technical implementation frozen mode Windows Mac
+
+----------------------------------------
+
+Web search results for query: "Cold Turkey Blocker how it works architecture technical implementation frozen mode Windows Mac"
+
+Links: [{"title":"How to Configure Cold Turkey for Better Blocking and Bypass Prevention | Tech Lockdown","url":"https://www.techlockdown.com/articles/cold-turkey-blocker"},{"title":"Cold Turkey Blocker","url":"https://getcoldturkey.com/features/"},{"title":"ColdTurkey Review 2026: Pricing, Features & Pros | ManyTools","url":"https://manytools.com/review/coldturkey/"},{"title":"Cold Turkey Blocker Review (2026) - MakerStack","url":"https://makerstack.co/reviews/cold-turkey-blocker-review/"},{"title":"Cold Turkey Blocker Review 2026: Is the Nuclear Option Still Worth It?","url":"https://sipandscroll.app/blog/cold-turkey-blocker-review.html"},{"title":"🕓 Taking Control of Your Time w/ Cold Turkey App & Website Blocker | by Gatlen Culp | Medium","url":"https://gatlenculp.medium.com/breaking-free-from-digital-binges-a-practical-guide-to-cold-turkey-blocker-288b775d2c1d"},{"title":"Cold Turkey Review 2026: Pricing & Features","url":"https://productivitystack.io/tools/cold-turkey/"},{"title":"Cold Turkey - The Toughest Website & App Blocker on the Internet","url":"https://getcoldturkey.com/"}]
+
+Based on the search results, here's what I found about Cold Turkey Blocker's architecture and technical implementation:
+
+## How Cold Turkey Blocker Works
+
+Cold Turkey Blocker is a desktop-only distraction blocker for Windows and macOS that operates at the OS level—not just inside your browser. It can block websites, desktop applications, and in its most extreme mode, your entire computer.
+
+When you activate a block, it enforces at the operating system level: blocked websites show a Cold Turkey page in any browser, and blocked applications get force-closed the instant you try to open them.
+
+## Architecture & Technical Design
+
+It operates at the OS level, requiring deep system integration that Apple's mobile operating system explicitly prohibits for third-party apps. This OS-level approach is what distinguishes it from browser-based blockers—it has network-level blocking capabilities that can work alongside DNS filtering services.
+
+## Frozen Mode & Locking
+
+The tool locks the entire computer for a chosen duration, optionally logging you off or shutting down for forced breaks. Optional locks prevent you from disabling, uninstalling, or editing blocks until the timer runs out.
+
+## Platform Support
+
+It is available for Windows and macOS. All of your settings and statistics are stored locally on your computer, and anything you block is kept private as Cold Turkey does not collect your data.
+
+The search results focus mainly on features and functionality rather than deep technical architecture details, so specific implementation details about its blocking mechanisms at the kernel level were not available in these sources.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://mit-africa.com/hackathon/
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-19 03:54:47 UTC
+========================================================================
+
+URL: https://mit-africa.com/hackathon/
+Extraction prompt: Extract ALL details about the MIT Africa Business Challenge hackathon - judging criteria, rules, format, timeline, themes, prizes, what they're looking for in winners, any mentor/sponsor info, eligibility requirements. Everything.
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

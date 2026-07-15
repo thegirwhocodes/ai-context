@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Deepgram Nigerian English en-NG accent supported language model
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 19:34:38 UTC
+========================================================================
+
+Search query: Deepgram Nigerian English en-NG accent supported language model
+
+----------------------------------------
+
+Web search results for query: "Deepgram Nigerian English en-NG accent supported language model"
+
+Links: [{"title":"Languages Support | Deepgram's Docs","url":"https://developers.deepgram.com/docs/language"},{"title":"Models & Languages Overview | Deepgram's Docs","url":"https://developers.deepgram.com/docs/models-languages-overview"},{"title":"Deepgram Expands Nova-3 with Italian, Turkish, Norwegian, and Indonesian Support","url":"https://deepgram.com/learn/deepgram-expands-nova-3-with-italian-turkish-norwegian-and-indonesian-support"},{"title":"Voices and Languages | Deepgram's Docs","url":"https://developers.deepgram.com/docs/tts-models"},{"title":"Deepgram Now Offers More than 20 Language and Dialect Speech Models - Deepgram Blog ⚡️","url":"https://deepgram.com/learn/deepgram-language-speech-models"},{"title":"Nigerian Accent Generator — Voice & TTS Online | SpeechGen","url":"https://speechgen.io/en/tts-english-nigeria/"},{"title":"Language Detection | Deepgram's Docs","url":"https://developers.deepgram.com/docs/language-detection"},{"title":"Deepgram Expands Nova-3 with 11 New Languages Across Europe and Asia","url":"https://deepgram.com/learn/deepgram-expands-nova-3-with-11-new-languages-across-europe-and-asia"},{"title":"Deepgram Expands Nova-3 with 10 New Languages and Multilingual Keyterm Prompting","url":"https://deepgram.com/learn/deepgram-expands-nova-3-with-10-new-languages-and-multilingual-keyterm-prompting"},{"title":"Trained on 100,000+ Voices: Deepgram Unveils Next-Gen Speaker Diarization and Language Detection Models - Deepgram Blog ⚡️","url":"https://deepgram.com/learn/nextgen-speaker-diarization-and-language-detection-models"}]
+
+Based on the search results, I found information about Deepgram's language support, but the results do not specifically mention Nigerian English (en-NG) as a supported language in Deepgram's speech-to-text models.
+
+What I found is that Deepgram's English models are designed to handle global English audio, with strong performance across dialects and accents from across the world. However, the search results show that Deepgram's Nova-3 model has been expanding with support for various languages and dialects, but Nigerian English specifically is not mentioned in the available documentation.
+
+The search results reference Deepgram's support for over 35 languages and multiple regional variants (like Swiss German, Flemish, and Korean with regional codes), but Nigerian English (en-NG) does not appear in the documented language lists from the official Deepgram developer documentation.
+
+If you need the most current information about whether Deepgram has added Nigerian English support, I'd recommend checking their official developer documentation or contacting Deepgram support directly.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

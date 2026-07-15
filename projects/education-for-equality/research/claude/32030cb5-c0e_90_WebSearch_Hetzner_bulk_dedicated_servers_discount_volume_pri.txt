@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Hetzner bulk dedicated servers discount volume pricing 50+ servers 2026
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 10:02:01 UTC
+========================================================================
+
+Search query: Hetzner bulk dedicated servers discount volume pricing 50+ servers 2026
+
+----------------------------------------
+
+Web search results for query: "Hetzner bulk dedicated servers discount volume pricing 50+ servers 2026"
+
+Links: [{"title":"Hetzner Price Adjustment - Hetzner Docs","url":"https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/"},{"title":"Price Dedicated Server Addons - Hetzner Docs","url":"https://docs.hetzner.com/robot/dedicated-server/dedicated-server-hardware/price-server-addons/"},{"title":"Hetzner Cloud VPS Pricing Calculator (Apr 2026)","url":"https://costgoat.com/pricing/hetzner"},{"title":"Günstige Dedicated Server, Cloud & Hosting aus Deutschland","url":"https://www.hetzner.com/"},{"title":"Server Radar – Find Best Deals on Hetzner Dedicated Servers","url":"https://radar.iodev.org/"},{"title":"Find cheap dedicated servers with AMD & Intel CPUs","url":"https://www.hetzner.com/dedicated-rootserver"},{"title":"Cheap cloud-hosting – low vps prices for developers","url":"https://www.hetzner.com/cloud/cost-optimized"},{"title":"Hetzner pricing - Hetzner Docs","url":"https://docs.hetzner.com/robot/general/pricing/hetzner-pricing/"},{"title":"High-performance dedicated cloud server for business","url":"https://www.hetzner.com/cloud/general-purpose"},{"title":"Hetzner Dedicated Server Pricing vs Fluence Pay-As-You-Go Compute: A Pragmatic Comparison - Fluence","url":"https://www.fluence.network/blog/hetzner-dedicated-server-pricing-vs-fluence-virtual-servers/"}]
+
+Based on the search results, I found information about Hetzner's dedicated server pricing structure. Here's what I discovered:
+
+## Hetzner Dedicated Server Pricing & Discounts
+
+Hetzner states that clients ask about discounts on setup fees, but they explain that reducing setup fees would require them to increase the base monthly/hourly prices, as they need to avoid losing money on discounted servers.
+
+This means **Hetzner does not appear to offer volume-based discounts or bulk pricing for 50+ servers** in the traditional sense. Instead, they maintain a price structure as close to their internal costs as possible.
+
+For bulk server inquiries, Hetzner recommends sending an email to custom@hetzner.com or creating a support ticket for custom solutions. This suggests that while standard volume discounts aren't published, organizations needing 50+ servers should contact their enterprise team directly to discuss potential customized pricing arrangements.
+
+The search results didn't reveal specific bulk discount rates or tiered pricing structures for large orders in 2026. For the most current information on volume pricing, it would be best to reach out directly to Hetzner's enterprise sales team at the contact information provided.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

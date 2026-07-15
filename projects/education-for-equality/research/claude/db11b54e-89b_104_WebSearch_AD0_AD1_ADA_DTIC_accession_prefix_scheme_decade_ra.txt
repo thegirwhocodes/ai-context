@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "AD0" "AD1" "ADA" DTIC accession prefix scheme decade range
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 01:31:12 UTC
+========================================================================
+
+Search query: "AD0" "AD1" "ADA" DTIC accession prefix scheme decade range
+
+----------------------------------------
+
+Web search results for query: ""AD0" "AD1" "ADA" DTIC accession prefix scheme decade range"
+
+Links: [{"title":"Technical Reports – Defense Technical Information Center","url":"https://discover.dtic.mil/technical-reports/"},{"title":"Full text of \"DTIC ADA346513: How to Get It: A Guide to Defense - Related Information Resources (Librarians' Edition, July 1998)\"","url":"https://archive.org/stream/DTIC_ADA346513/DTIC_ADA346513_djvu.txt"},{"title":"DTIC ADA001721: Naming and Protection in Extendible Operating Systems : Defense Technical Information Center : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/DTIC_ADA001721"},{"title":"AD0 05 0 LEL DNA 5058F COMPRESSION AND SHEAR WAVE","url":"https://apps.dtic.mil/sti/pdfs/ADA090570.pdf"},{"title":"The Database Management Module of the Splice System. - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA132795.pdf"},{"title":"Ada Compiler Validation Summary Report. Certificate Number","url":"https://apps.dtic.mil/sti/tr/pdf/ADA210114.pdf"},{"title":"How to Find any US Military Standard Document – Global Dynamic Systems (GDS) Engineering R&D","url":"https://www.globaldynamicsystems.com/posts/how-to-find-any-us-military-standard-document/"},{"title":"Ada (Trade Name) Foundation Technology. Volume 3 ... - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA178434.pdf"},{"title":"Certificate Number: 910130W1.11115 Encore Computer ... - DTIC","url":"https://apps.dtic.mil/sti/tr/pdf/ADA242276.pdf"},{"title":"Defense Technical Information Center","url":"https://discover.dtic.mil/"}]
+
+Based on the search results, I found information about the DTIC accession number prefix scheme:
+
+DTIC AD numbers begin with: AD0, ADA, ADB, ADP or ADC, followed by digits.
+
+However, the search results don't contain specific details about what decade range each prefix corresponds to. The results show examples of various DTIC accession numbers (like ADA346513, ADA001721, ADA090570, ADA132795, ADA210114, ADA178434, ADA242276) but don't explicitly explain the decade-based prefix scheme.
+
+To get more detailed information about the specific decade ranges for each prefix (AD0, AD1, ADA, ADB, ADP, ADC), you may want to check DTIC's official documentation or contact them directly, as this technical specification doesn't appear to be detailed in publicly available sources indexed by the search.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

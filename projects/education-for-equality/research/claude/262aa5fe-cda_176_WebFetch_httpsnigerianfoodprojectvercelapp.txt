@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://nigerianfoodproject.vercel.app
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:50:50 UTC
+========================================================================
+
+URL: https://nigerianfoodproject.vercel.app
+Extraction prompt: What is this site? Describe its purpose, who built it, what features it has, what's the navigation structure, and what content is on the page. Capture everything visible.
+
+----------------------------------------
+
+# Campus Food Preorder Form Analysis
+
+## Purpose
+This is a preorder platform for Nigerian food delivery to campus students. It facilitates ordering authentic, made-to-order meals with weekly delivery options.
+
+## Builder
+The site appears to be operated by someone using the CashApp handle "$naomiivie1" and Zelle account ending in 1327, suggesting an individual or small student-run enterprise.
+
+## Key Features
+- **Menu Selection**: Seven Nigerian dishes ranging from $12-$17, including rice dishes, pounded yam, and Jollof rice with optional plantain sides
+- **Flexible Delivery**: $3 flat delivery fee per location, regardless of order quantity
+- **Pickup Option**: Exley Basement location (330 High Street)
+- **Payment Methods**: Zelle and CashApp only
+- **Contact System**: Phone number (860-436-7048) for location inquiries
+
+## Navigation Structure
+The form follows a linear flow: contact information → menu selection → pickup/delivery details → payment → confirmation. Navigation includes "Back" and "Next" buttons plus keyboard shortcuts (arrow keys, Home, End, Page Up/Down).
+
+## Content Highlights
+The page emphasizes "authentic, made-to-order meals prepared fresh for busy students." It includes dish descriptions highlighting traditional preparation methods. Notable: "Your delivery fee only applies once per location. Multiple items to the same location = $3 total."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

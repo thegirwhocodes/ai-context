@@ -1,0 +1,4388 @@
+# Foundational Research Index
+Generated: 2026-07-14 21:37:45
+Scanned: 2244 files, 193 sessions, 59 major builds
+
+## E4E / Sabi `3c482910` | 2026-02-04 | 48 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `16:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_00_WebSearch_free_open_educational_resources_curriculum_OER_acc.txt
+- `16:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_01_WebSearch_OpenStax_MIT_OpenCourseWare_free_curriculum_conten.txt
+- `16:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_02_WebSearch_EdReports_curriculum_review_process_criteria_requi.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_05_WebSearch_Khan_Academy_Grade_4_math_curriculum_complete_list.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_03_WebSearch_CK-12_Grade_4_science_flexbook_free_curriculum_top.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_04_WebSearch_Cambridge_Primary_Stage_4_Mathematics_learning_obj.txt
+- `21:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_06_WebFetch_httpswwwkhanacademyorgmathcc-fourth-grade-math.txt
+- `21:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_07_WebSearch_Open_Up_Resources_Grade_4_ELA_English_curriculum_u.txt
+- `21:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_09_WebSearch_iCivics_Grade_4_social_studies_curriculum_free_les.txt
+- `21:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_08_WebSearch_Open_Up_Resources_Grade_4_ELA_English_curriculum_u.txt
+- `21:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_10_WebFetch_httpscurriculumeleducationorgcurriculumelagrade-4.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_11_WebFetch_httpsstatic1squarespacecomstatic59edc421bff200ece07.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_12_WebFetch_httpsstatic1squarespacecomstatic59edc421bff200ece07.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_13_WebSearch_Cambridge_Primary_Science_Stage_4_learning_objecti.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_14_WebSearch_4Nn_4Np_4Nf_Cambridge_Primary_Mathematics_Stage_4_.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_15_WebSearch_Cambridge_Primary_Science_Stage_4_biology_physics_.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_16_WebSearch_Cambridge_Primary_Stage_4_English_reading_writing_.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_17_WebFetch_httpscambridge-communityorgukguide-tocambridge-prim.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_18_WebFetch_httpscambridge-communityorgukguide-tocambridge-prim.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_19_WebFetch_httpscambridge-communityorgukguide-tocambridge-prim.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_20_WebFetch_httpswwwslidesharenetslideshow0096-primary-maths-st.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_21_WebSearch_Cambridge_Primary_Mathematics_Stage_4_4Np01_4Np02_.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_22_WebSearch_Cambridge_Primary_English_Stage_4_4Rv01_4Rv02_4Wv0.txt
+- `21:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_23_WebFetch_httpsissuucomcupeducationdocs9781108745291_maths4_l.txt
+- `21:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_24_WebFetch_httpsissuucomcupeducationdocs9781108742931_sci4_lb_.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_26_WebSearch_GSMA_mobile_penetration_Nigeria_Lagos_2024_2025_sm.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_25_WebSearch_NCC_Nigeria_mobile_network_coverage_2G_3G_4G_Lagos.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_28_WebSearch_Nigeria_Lagos_internet_users_percentage_daily_acti.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_27_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_data_plan_1GB_price.txt
+- `19:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_30_WebSearch_Lagos_state_household_income_median_monthly_NGN_20.txt
+- `19:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_29_WebSearch_Lagos_state_out-of-school_children_number_2024_202.txt
+- `19:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_31_WebSearch_Nigeria_Lagos_smartphone_ownership_percentage_hous.txt
+- `19:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_32_WebSearch_Lagos_state_population_2024_2025_children_school_a.txt
+- `19:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_33_WebSearch_DataReportal_Nigeria_2025_mobile_phone_ownership_i.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_34_WebSearch_Lagos_state_out_of_school_children_number_estimate.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_35_WebSearch_Nigeria_minimum_wage_2025_Lagos_average_household_.txt
+- `22:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_36_WebSearch_Lagos_Nigeria_feature_phone_percentage_share_2024_.txt
+- `22:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_37_WebSearch_GSMA_Nigeria_usage_gap_coverage_gap_feature_phone_.txt
+- `23:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_38_WebSearch_Nigeria_household_mobile_phone_ownership_percentag.txt
+- `23:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_39_WebFetch_httpsdhsprogramcompubspdfPR157PR157pdf.txt
+- `23:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_40_WebSearch_Nigeria_DHS_2024_mobile_phone_ownership_percentage.txt
+- `23:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_41_WebFetch_httpsbusinessdayngtechnologyarticlenigeria-sa-top-a.txt
+- `23:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_42_WebSearch_Afrobarometer_Nigeria_2024_mobile_phone_own_percen.txt
+- `19:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_43_WebFetch_httpspremisecomwp-contentuploadsSmartphone-penetrat.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_44_WebSearch_Nigeria_2024_DHS_summary_report_mobile_telephone_h.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_45_WebFetch_httpsdhsprogramcompublicationspublication-FR395-DHS.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_46_WebFetch_httpswwwstatcompilercomen.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_47_WebSearch_sitestatcompilercom_OR_sitedhsprogramcom_Nigeria_m.txt
+
+## E4E / Sabi `1f61b0ac` | 2026-02-18 | 44 files
+Folders: -Users-naomiivie-Downloads-Classes, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
+- `01:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
+- `02:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
+- `02:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
+- `02:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
+- `02:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
+- `03:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
+- `03:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
+- `03:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
+- `05:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_20_WebSearch_Antigravity_VS_Code_extension_document_viewer.txt
+- `05:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_21_WebSearch_VS_Code_voice_recording_extension_microphone_audio.txt
+- `05:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_22_WebSearch_VS_Code_audio_player_extension_listen_mp3_m4a_play.txt
+- `17:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_00_WebFetch_httpsinnovationlabsharvardedueventsventuring-harvar.txt
+- `03:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_01_WebFetch_httpsdocsgooglecomformsde1FAIpQLSc2yWRtoybvZ50WE7Yr.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_02_WebFetch_httpsdocsgooglecomformsde1FAIpQLSc2yWRtoybvZ50WE7Yr.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_03_WebSearch_MIT_Africa_Business_Challenge_hackathon_winners_20.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_04_WebSearch_MIT_Africa_Innovate_Conference_2026_hackathon_educ.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_05_WebFetch_httpsmit-africacomhackathon.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_06_WebFetch_httpswwwpositivenaijacomagriq-connect-wins-2025-mit.txt
+- `03:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_07_WebFetch_httpsmit-africacomhackathon.txt
+- `03:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_08_WebFetch_httpswwwpositivenaijacomagriq-connect-wins-2025-mit.txt
+- `03:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_09_WebFetch_httpsthemitafricachallengecom.txt
+- `03:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_10_WebFetch_httpsedutvcomngarticlesreadnigerian-phd-students-wi.txt
+- `03:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_11_WebFetch_httpsdocsgooglecomformsde1FAIpQLSc2yWRtoybvZ50WE7Yr.txt
+- `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_12_WebSearch_MIT_Africa_Business_Challenge_2026_hackathon_housi.txt
+- `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_13_WebFetch_httpsmit-africacomhackathon.txt
+- `17:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1f61b0ac-ca6_14_WebFetch_httpscalendarmitedueventmit-africa-business-challen.txt
+
+## E4E / Sabi `089265f6` | 2026-02-25 | 41 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_00_WebSearch_Wesleyan_University_spring_break_2026_dates.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_03_WebSearch_cheapest_spring_break_Florida_budget_2026_students.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_02_WebSearch_cheapest_Airbnb_Florida_spring_break_2026_under_50.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_01_WebSearch_cheapest_flights_Connecticut_to_Florida_March_2026.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_05_WebSearch_Megabus_Greyhound_bus_Connecticut_to_Florida_cheap.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_04_WebFetch_httpswwwwesleyaneduregistrarcalendarsAcademic20Cale.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_06_WebSearch_hostel_Florida_spring_break_cheapest_20_night_2026.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_26_WebSearch_GSMA_mobile_penetration_Nigeria_Lagos_2024_2025_sm.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_25_WebSearch_NCC_Nigeria_mobile_network_coverage_2G_3G_4G_Lagos.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_28_WebSearch_Nigeria_Lagos_internet_users_percentage_daily_acti.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_27_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_data_plan_1GB_price.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_30_WebSearch_Lagos_state_household_income_median_monthly_NGN_20.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_29_WebSearch_Lagos_state_out-of-school_children_number_2024_202.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_31_WebSearch_Nigeria_Lagos_smartphone_ownership_percentage_hous.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_32_WebSearch_Lagos_state_population_2024_2025_children_school_a.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_33_WebSearch_DataReportal_Nigeria_2025_mobile_phone_ownership_i.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_34_WebSearch_Lagos_state_out_of_school_children_number_estimate.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_35_WebSearch_Nigeria_minimum_wage_2025_Lagos_average_household_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_36_WebSearch_Lagos_Nigeria_feature_phone_percentage_share_2024_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_37_WebSearch_GSMA_Nigeria_usage_gap_coverage_gap_feature_phone_.txt
+- `23:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_38_WebSearch_Nigeria_household_mobile_phone_ownership_percentag.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_39_WebFetch_httpsdhsprogramcompubspdfPR157PR157pdf.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_40_WebSearch_Nigeria_DHS_2024_mobile_phone_ownership_percentage.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_41_WebFetch_httpsbusinessdayngtechnologyarticlenigeria-sa-top-a.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_42_WebSearch_Afrobarometer_Nigeria_2024_mobile_phone_own_percen.txt
+- `19:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_00_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_02_WebSearch_bakameonline_voice_education_platform_Nigeria.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_01_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_03_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_04_WebFetch_httpstcu360com20251006bakame-ai-tcu-entrepreneurial.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_06_WebSearch_Bakame_AI_toll-free_phone_education_curriculum_how.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_05_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_partnershi.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_07_WebFetch_httpsbakameorg.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_08_WebFetch_httpstcu360shorthandstoriescombakame-aiindexhtml.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_09_WebFetch_httpswwwafricanewscom20260205african-students-win-g.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_10_WebSearch_Happy_Niyorurema_Bakame_AI_LinkedIn_contact_email_.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_11_WebSearch_Bakame_AI_Rwanda_pilot_curriculum_content_partners.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_12_WebFetch_httpsmit-africacomhackathon.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_13_WebSearch_MIT_Sloan_Africa_Business_Club_hackathon_2026_comp.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_15_WebSearch_MIT_Africa_hackathon_education_track_2026_February.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_14_WebFetch_httpswwweventbritecomemit-sloan-africa-innovate-con.txt
+
+## E4E / Sabi `f19ca767` | 2026-02-27 | 136 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_26_WebSearch_GSMA_mobile_penetration_Nigeria_Lagos_2024_2025_sm.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_25_WebSearch_NCC_Nigeria_mobile_network_coverage_2G_3G_4G_Lagos.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_28_WebSearch_Nigeria_Lagos_internet_users_percentage_daily_acti.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_27_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_data_plan_1GB_price.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_30_WebSearch_Lagos_state_household_income_median_monthly_NGN_20.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_29_WebSearch_Lagos_state_out-of-school_children_number_2024_202.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_31_WebSearch_Nigeria_Lagos_smartphone_ownership_percentage_hous.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_32_WebSearch_Lagos_state_population_2024_2025_children_school_a.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_33_WebSearch_DataReportal_Nigeria_2025_mobile_phone_ownership_i.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_34_WebSearch_Lagos_state_out_of_school_children_number_estimate.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_35_WebSearch_Nigeria_minimum_wage_2025_Lagos_average_household_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_36_WebSearch_Lagos_Nigeria_feature_phone_percentage_share_2024_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_37_WebSearch_GSMA_Nigeria_usage_gap_coverage_gap_feature_phone_.txt
+- `23:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_38_WebSearch_Nigeria_household_mobile_phone_ownership_percentag.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_39_WebFetch_httpsdhsprogramcompubspdfPR157PR157pdf.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_40_WebSearch_Nigeria_DHS_2024_mobile_phone_ownership_percentage.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_41_WebFetch_httpsbusinessdayngtechnologyarticlenigeria-sa-top-a.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_42_WebSearch_Afrobarometer_Nigeria_2024_mobile_phone_own_percen.txt
+- `19:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_00_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_02_WebSearch_bakameonline_voice_education_platform_Nigeria.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_01_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_03_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_04_WebFetch_httpstcu360com20251006bakame-ai-tcu-entrepreneurial.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_06_WebSearch_Bakame_AI_toll-free_phone_education_curriculum_how.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_05_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_partnershi.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_07_WebFetch_httpsbakameorg.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_08_WebFetch_httpstcu360shorthandstoriescombakame-aiindexhtml.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_09_WebFetch_httpswwwafricanewscom20260205african-students-win-g.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_10_WebSearch_Happy_Niyorurema_Bakame_AI_LinkedIn_contact_email_.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_11_WebSearch_Bakame_AI_Rwanda_pilot_curriculum_content_partners.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_12_WebFetch_httpsmit-africacomhackathon.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_13_WebSearch_MIT_Sloan_Africa_Business_Club_hackathon_2026_comp.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_15_WebSearch_MIT_Africa_hackathon_education_track_2026_February.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_14_WebFetch_httpswwweventbritecomemit-sloan-africa-innovate-con.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_43_WebFetch_httpspremisecomwp-contentuploadsSmartphone-penetrat.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_44_WebSearch_Nigeria_2024_DHS_summary_report_mobile_telephone_h.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_45_WebFetch_httpsdhsprogramcompublicationspublication-FR395-DHS.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_46_WebFetch_httpswwwstatcompilercomen.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_47_WebSearch_sitestatcompilercom_OR_sitedhsprogramcom_Nigeria_m.txt
+- `04:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_00_WebSearch_World_Bank_economic_impact_foundational_literacy_n.txt
+- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_01_WebSearch_UNESCO_learning_poverty_cost_GDP_per_capita_litera.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_02_WebSearch_Nigeria_mobile_phone_penetration_rate_2025_2026.txt
+- `19:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_03_WebSearch_MIT_Africa_Business_Challenge_2026_attendees_parti.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_04_WebSearch_best_LinkedIn_post_format_2025_2026_tips_engagemen.txt
+- `19:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_05_WebSearch_Azeez_Akinyemi_AgrIQ_Connect_Nigeria.txt
+- `20:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_06_WebSearch_Luma_Learn_Chris_Folayan_AI_tutor_countries.txt
+- `20:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_08_WebSearch_MIT_Africa_Business_Challenge_2026_organizing_team.txt
+- `20:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_09_WebSearch_Map_the_System_Oxford_competition_2025_2026.txt
+- `20:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_07_WebSearch_Nigeria_20_million_out_of_school_children_UNICEF_2.txt
+- `20:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_10_WebSearch_Nigeria_70_children_public_schools_cannot_read_wri.txt
+- `20:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_11_WebSearch_Nigeria_mobile_penetration_87_2025.txt
+- `20:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_12_WebSearch_educationforequalityorg_domain_available.txt
+- `20:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_13_WebFetch_httpseducationforequalityorg.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_14_WebSearch_Nigeria_adult_population_2025_mobile_money_users_e.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_15_WebSearch_Nigeria_working_age_adults_employed_2025_how_many_.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_17_WebSearch_social_enterprise_vs_nonprofit_vs_B-corp_edtech_Af.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_16_WebSearch_Google_early_days_corporate_structure_before_IPO_i.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_18_WebSearch_Khan_Academy_nonprofit_structure_early_days_how_Sa.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_19_WebSearch_dual_structure_nonprofit_and_for-profit_social_ent.txt
+- `21:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_20_WebSearch_Nigeria_education_budget_spending_2025_UBEC_federa.txt
+- `21:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_21_WebSearch_Nigeria_GDP_2025_naira_trillion_USD_World_Bank.txt
+- `21:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_22_WebSearch_SBM_Intelligence_Nigeria_40_billion_education_prod.txt
+- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_23_WebSearch_Africas_Talking_API_pricing_free_tier_voice_calls_.txt
+- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_24_WebSearch_Africas_Talking_free_sandbox_voice_call_cost_per_m.txt
+- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_25_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `02:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_26_WebSearch_USSD_education_learning_Africa_examples_AI_quiz_mo.txt
+- `02:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_27_WebSearch_Bakameonline_Sabi_AI_voice_tutoring_Africa.txt
+- `02:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_28_WebSearch_Bakame_AI_Sabi_voice_tutor_toll-free_Rwanda_educat.txt
+- `02:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_29_WebSearch_deliver_images_pictures_to_basic_phones_without_in.txt
+- `02:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_30_WebSearch_MMS_multimedia_message_basic_feature_phone_no_inte.txt
+- `03:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_31_WebFetch_httpscurriculum-app-etavercelappsabi-demo.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_32_WebSearch_cost_to_manufacture_smart_pen_with_chip_embedded_2.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_33_WebSearch_NFC_chip_pen_manufacturing_cost_per_unit_bulk_whol.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_34_WebSearch_low_power_FM_community_radio_transmitter_cost_Nige.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_35_WebSearch_FM_RDS_Radio_Data_System_technical_specifications_.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_36_WebSearch_FM_radio_receiver_with_RDS_screen_cheap_wholesale_.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_37_WebSearch_RDA5807M_FM_receiver_module_wholesale_bulk_price_A.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_38_WebSearch_Interactive_Radio_Instruction_IRI_Africa_literacy_.txt
+- `04:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_39_WebSearch_RDS2_FM_radio_images_data_transmission_enhanced_ca.txt
+- `04:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_40_WebSearch_USSD_session_cost_Nigeria_Africas_Talking_per_sess.txt
+- `04:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_41_WebSearch_USSD_literacy_education_Africa_delivery_mobile_fea.txt
+- `04:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_42_WebSearch_USB_phone_charger_with_speaker_manufacturer_cost_w.txt
+- `04:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_43_WebSearch_SIM_toolkit_STK_app_education_Africa_push_content_.txt
+- `04:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_44_WebSearch_blockchain_data_protection_children_personal_data_.txt
+- `04:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_45_WebSearch_blockchain_vs_traditional_encryption_data_protecti.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_47_WebSearch_foundational_literacy_pedagogy_phonics_instruction.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_46_WebSearch_Jolly_Phonics_Nigeria_letter_order_teaching_sequen.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_49_WebSearch_teaching_reading_to_non-readers_audio_voice_instru.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_48_WebSearch_TaRL_teaching_at_the_right_level_literacy_methodol.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_52_WebSearch_science_of_reading_five_pillars_phonemic_awareness.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_51_WebSearch_synthetic_phonics_lesson_structure_steps_explicit_.txt
+- `04:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_50_WebSearch_Rising_on_Air_radio_literacy_lesson_script_structu.txt
+- `04:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_53_WebSearch_Jolly_Phonics_7_groups_letter_order_s_a_t_i_p_n_wh.txt
+- `04:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_54_WebSearch_phonemic_awareness_activities_oral_only_no_print_p.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_55_WebSearch_tactile_kinesthetic_letter_learning_writing_tracin.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_57_WebSearch_multisensory_phonics_instruction_touch_trace_sand_.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_56_WebSearch_can_children_learn_to_read_without_writing_handwri.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_58_WebSearch_Nigerian_children_English_language_proficiency_rur.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_59_WebSearch_voice_AI_speech_recognition_Nigerian_accent_childr.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_60_WebSearch_literacy_instruction_children_who_dont_speak_Engli.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_61_WebSearch_Bakame_AI_voice_tutor_language_Kinyarwanda_local_l.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_63_WebSearch_Lagos_Nigeria_children_English_language_proficienc.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_62_WebSearch_Lagos_state_language_spoken_children_schools_Engli.txt
+- `05:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_65_WebSearch_EKOEXCEL_Lagos_language_instruction_Yoruba_English.txt
+- `05:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_64_WebSearch_Lagos_out-of-school_children_language_demographics.txt
+- `05:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_67_WebSearch_SMS_voice_callback_literacy_education_system_devel.txt
+- `05:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_66_WebSearch_SMS_text_message_literacy_instruction_reading_deve.txt
+- `05:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_69_WebSearch_IVR_interactive_voice_response_education_literacy_.txt
+- `05:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_68_WebSearch_voice_call_AND_SMS_combined_education_literacy_chi.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_70_WebSearch_Allo_Alphabet_Cte_dIvoire_IVR_SMS_literacy_phonics.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_71_WebSearch_Eneza_Education_M-Shule_SMS_learning_results_liter.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_73_WebSearch_SMS_delivery_failure_rate_Nigeria_feature_phone_me.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_72_WebSearch_USSD_voice_callback_latency_delay_Africas_Talking_.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_75_WebSearch_children_sharing_parent_phone_learning_access_barr.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_74_WebSearch_SMS_inbox_storage_limit_feature_phone_Nokia_maximu.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_76_WebSearch_child_attention_span_phone_call_audio_learning_8_y.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_77_WebSearch_airtime_cost_barrier_Nigeria_poor_families_childre.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_78_WebSearch_dual_coding_theory_audio_text_simultaneous_NOT_sim.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_82_WebSearch_Nigerian_text_to_speech_TTS_startup_local_language.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_81_WebSearch_Nigerian_speech_to_text_STT_startup_Yoruba_Hausa_I.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_79_WebSearch_YarnGPT_Nigerian_TTS_text_to_speech_pricing_API_co.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_80_WebFetch_httpsyarngptaiapi-docs.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_83_WebFetch_httpsyarngptaipricing.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_85_WebSearch_Intron_Health_Nigerian_speech_AI_TTS_STT_pricing_A.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_84_WebSearch_African_speech_recognition_STT_most_accurate_Niger.txt
+- `05:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_86_WebSearch_Intron_Health_outperforms_accuracy_Nigerian_speech.txt
+- `19:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_88_WebSearch_Bakame_AI_startup_registration_Rwanda_voice_educat.txt
+- `19:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_87_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_company_in.txt
+- `19:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_89_WebSearch_Bakame_AI_registered_company_LLC_corporation_trade.txt
+- `19:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_90_WebSearch_Bakame_AI_50000_prize_award_2026.txt
+- `19:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_92_WebSearch_Bakame_AI_World_Government_Summit_Dubai_M-Gov_awar.txt
+- `19:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_91_WebFetch_httpstmsearchusptogovsearchsearch-resultsquerybakam.txt
+- `19:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_93_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_94_WebFetch_httpsdallasinnovatescomeight-tcu-student-ventures-s.txt
+- `19:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_95_WebSearch_World_Government_Summit_M-Gov_award_2026_prize_mon.txt
+- `03:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_96_WebSearch_EKOEXCEL_Lagos_Nigeria_education_program.txt
+
+## E4E / Sabi `7464be26` | 2026-02-27 | 74 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_26_WebSearch_GSMA_mobile_penetration_Nigeria_Lagos_2024_2025_sm.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_25_WebSearch_NCC_Nigeria_mobile_network_coverage_2G_3G_4G_Lagos.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_28_WebSearch_Nigeria_Lagos_internet_users_percentage_daily_acti.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_27_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_data_plan_1GB_price.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_30_WebSearch_Lagos_state_household_income_median_monthly_NGN_20.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_29_WebSearch_Lagos_state_out-of-school_children_number_2024_202.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_31_WebSearch_Nigeria_Lagos_smartphone_ownership_percentage_hous.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_32_WebSearch_Lagos_state_population_2024_2025_children_school_a.txt
+- `19:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_33_WebSearch_DataReportal_Nigeria_2025_mobile_phone_ownership_i.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_34_WebSearch_Lagos_state_out_of_school_children_number_estimate.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_35_WebSearch_Nigeria_minimum_wage_2025_Lagos_average_household_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_36_WebSearch_Lagos_Nigeria_feature_phone_percentage_share_2024_.txt
+- `22:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_37_WebSearch_GSMA_Nigeria_usage_gap_coverage_gap_feature_phone_.txt
+- `23:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_38_WebSearch_Nigeria_household_mobile_phone_ownership_percentag.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_39_WebFetch_httpsdhsprogramcompubspdfPR157PR157pdf.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_40_WebSearch_Nigeria_DHS_2024_mobile_phone_ownership_percentage.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_41_WebFetch_httpsbusinessdayngtechnologyarticlenigeria-sa-top-a.txt
+- `23:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_42_WebSearch_Afrobarometer_Nigeria_2024_mobile_phone_own_percen.txt
+- `19:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_00_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_02_WebSearch_bakameonline_voice_education_platform_Nigeria.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_01_WebSearch_Bakame_online_education_Africa_voice_AI_offline_le.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_03_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_04_WebFetch_httpstcu360com20251006bakame-ai-tcu-entrepreneurial.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_06_WebSearch_Bakame_AI_toll-free_phone_education_curriculum_how.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_05_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_partnershi.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_07_WebFetch_httpsbakameorg.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_08_WebFetch_httpstcu360shorthandstoriescombakame-aiindexhtml.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_09_WebFetch_httpswwwafricanewscom20260205african-students-win-g.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_10_WebSearch_Happy_Niyorurema_Bakame_AI_LinkedIn_contact_email_.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_11_WebSearch_Bakame_AI_Rwanda_pilot_curriculum_content_partners.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_12_WebFetch_httpsmit-africacomhackathon.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_13_WebSearch_MIT_Sloan_Africa_Business_Club_hackathon_2026_comp.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_15_WebSearch_MIT_Africa_hackathon_education_track_2026_February.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/089265f6-4bf_14_WebFetch_httpswwweventbritecomemit-sloan-africa-innovate-con.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_43_WebFetch_httpspremisecomwp-contentuploadsSmartphone-penetrat.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_44_WebSearch_Nigeria_2024_DHS_summary_report_mobile_telephone_h.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_45_WebFetch_httpsdhsprogramcompublicationspublication-FR395-DHS.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_46_WebFetch_httpswwwstatcompilercomen.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3c482910-15c_47_WebSearch_sitestatcompilercom_OR_sitedhsprogramcom_Nigeria_m.txt
+- `00:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_00_WebFetch_httpsmit-africacomhackathon.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_01_WebSearch_Nigerian_Pidgin_English_education_instruction_effe.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_02_WebSearch_Twilio_Africas_Talking_Nigeria_voice_API_SMS_durin.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_03_WebSearch_mother_tongue_instruction_vs_English_Nigeria_learn.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_04_WebSearch_Nigerian_Pidgin_comprehension_children_education_l.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_05_WebSearch_ElevenLabs_API_Nigerian_accent_voice_text-to-speec.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_06_WebSearch_Twilio_voice_API_Nextjs_webhook_TwiML_gather_speec.txt
+- `07:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_08_WebSearch_SMS_text_during_phone_call_feature_phone_USSD_call.txt
+- `07:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_07_WebSearch_Nigerian_Pidgin_children_comprehension_better_than.txt
+- `07:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_09_WebFetch_httpsacademicjournalsorgjournalIJELarticle-full-tex.txt
+- `07:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_10_WebSearch_Africas_Talking_Nigeria_pricing_voice_calls_per_mi.txt
+- `07:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_11_WebSearch_Twilio_voice_call_Nigeria_pricing_per_minute_inbou.txt
+- `07:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_12_WebFetch_httpswwwtwiliocomen-usvoicepricingng.txt
+- `07:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_13_WebFetch_httpshellodutycomcountrynigeria.txt
+- `07:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_14_WebSearch_Twilio_Gather_speech_recognition_TwiML_implementat.txt
+- `07:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_15_WebFetch_httpswwwtwiliocomdocsvoicetwimlgather.txt
+- `09:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_16_WebSearch_ElevenLabs_pricing_plans_2026.txt
+- `09:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_17_WebSearch_ElevenLabs_Conversational_AI_Twilio_integration_pr.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_18_WebFetch_httpselevenlabsiodocseleven-agentsoverview.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_19_WebFetch_httpswwwtwiliocomen-usblogdeveloperstutorialsintegr.txt
+- `09:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_20_WebFetch_httpselevenlabsiodocsconversational-aicustomization.txt
+- `09:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_21_WebSearch_ElevenLabs_conversational_AI_agent_Twilio_setup_gu.txt
+- `09:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_22_WebFetch_httpselevenlabsioagentsintegrationstwilio.txt
+- `09:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_23_WebFetch_httpsgithubcomlouisjoecodeselevenlabs-twilio-i-o.txt
+- `09:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_24_WebSearch_ElevenLabs_conversational_AI_custom_LLM_endpoint_A.txt
+- `09:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_25_WebFetch_httpsgithubcomelevenlabselevenlabs-docsblobmainfern.txt
+- `09:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_26_WebSearch_ElevenLabs_custom_LLM_endpoint_OpenAI_compatible_c.txt
+- `10:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_27_WebSearch_ElevenLabs_expressive_mode_conversational_AI_beta_.txt
+- `10:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_28_WebFetch_httpselevenlabsiodocseleven-agentscustomizationvoic.txt
+- `10:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_29_WebSearch_ElevenLabs_conversational_AI_custom_LLM_Twilio_pho.txt
+- `10:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_30_WebFetch_httpselevenlabsiodocseleven-agentscustomizationpers.txt
+- `10:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_31_WebSearch_ElevenLabs_conversational_AI_system__caller_id_cus.txt
+- `10:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_32_WebSearch_ElevenLabs_expressive_mode_Flash_v25_conversationa.txt
+- `10:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_33_WebFetch_httpselevenlabsiodocseleven-agentscustomizationvoic.txt
+- `21:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_34_WebSearch_Luma_Learn_education_company_registration_entity_t.txt
+
+## E4E / Sabi `d72670bf` | 2026-03-05 | 106 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_02_WebSearch_Nigeria_mobile_phone_penetration_rate_2025_2026.txt
+- `19:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_03_WebSearch_MIT_Africa_Business_Challenge_2026_attendees_parti.txt
+- `19:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_04_WebSearch_best_LinkedIn_post_format_2025_2026_tips_engagemen.txt
+- `19:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_05_WebSearch_Azeez_Akinyemi_AgrIQ_Connect_Nigeria.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_06_WebSearch_Luma_Learn_Chris_Folayan_AI_tutor_countries.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_08_WebSearch_MIT_Africa_Business_Challenge_2026_organizing_team.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_09_WebSearch_Map_the_System_Oxford_competition_2025_2026.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_07_WebSearch_Nigeria_20_million_out_of_school_children_UNICEF_2.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_10_WebSearch_Nigeria_70_children_public_schools_cannot_read_wri.txt
+- `20:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_11_WebSearch_Nigeria_mobile_penetration_87_2025.txt
+- `20:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_12_WebSearch_educationforequalityorg_domain_available.txt
+- `20:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_13_WebFetch_httpseducationforequalityorg.txt
+- `21:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_14_WebSearch_Nigeria_adult_population_2025_mobile_money_users_e.txt
+- `21:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_15_WebSearch_Nigeria_working_age_adults_employed_2025_how_many_.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_17_WebSearch_social_enterprise_vs_nonprofit_vs_B-corp_edtech_Af.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_16_WebSearch_Google_early_days_corporate_structure_before_IPO_i.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_18_WebSearch_Khan_Academy_nonprofit_structure_early_days_how_Sa.txt
+- `21:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_19_WebSearch_dual_structure_nonprofit_and_for-profit_social_ent.txt
+- `21:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_20_WebSearch_Nigeria_education_budget_spending_2025_UBEC_federa.txt
+- `21:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_21_WebSearch_Nigeria_GDP_2025_naira_trillion_USD_World_Bank.txt
+- `21:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_22_WebSearch_SBM_Intelligence_Nigeria_40_billion_education_prod.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_23_WebSearch_Africas_Talking_API_pricing_free_tier_voice_calls_.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_24_WebSearch_Africas_Talking_free_sandbox_voice_call_cost_per_m.txt
+- `22:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_25_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `02:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_26_WebSearch_USSD_education_learning_Africa_examples_AI_quiz_mo.txt
+- `02:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_27_WebSearch_Bakameonline_Sabi_AI_voice_tutoring_Africa.txt
+- `02:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_28_WebSearch_Bakame_AI_Sabi_voice_tutor_toll-free_Rwanda_educat.txt
+- `02:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_29_WebSearch_deliver_images_pictures_to_basic_phones_without_in.txt
+- `02:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_30_WebSearch_MMS_multimedia_message_basic_feature_phone_no_inte.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_31_WebFetch_httpscurriculum-app-etavercelappsabi-demo.txt
+- `03:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6c9f77c4-2f9_00_WebSearch_cost_to_produce_smart_pen_with_chip_2025_2026_manu.txt
+- `03:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6c9f77c4-2f9_01_WebSearch_digital_pen_with_embedded_chip_production_cost_BOM.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_32_WebSearch_cost_to_manufacture_smart_pen_with_chip_embedded_2.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_33_WebSearch_NFC_chip_pen_manufacturing_cost_per_unit_bulk_whol.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_34_WebSearch_low_power_FM_community_radio_transmitter_cost_Nige.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_35_WebSearch_FM_RDS_Radio_Data_System_technical_specifications_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_36_WebSearch_FM_radio_receiver_with_RDS_screen_cheap_wholesale_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_37_WebSearch_RDA5807M_FM_receiver_module_wholesale_bulk_price_A.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_38_WebSearch_Interactive_Radio_Instruction_IRI_Africa_literacy_.txt
+- `04:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_39_WebSearch_RDS2_FM_radio_images_data_transmission_enhanced_ca.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_40_WebSearch_USSD_session_cost_Nigeria_Africas_Talking_per_sess.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_41_WebSearch_USSD_literacy_education_Africa_delivery_mobile_fea.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_42_WebSearch_USB_phone_charger_with_speaker_manufacturer_cost_w.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_43_WebSearch_SIM_toolkit_STK_app_education_Africa_push_content_.txt
+- `04:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_44_WebSearch_blockchain_data_protection_children_personal_data_.txt
+- `04:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_45_WebSearch_blockchain_vs_traditional_encryption_data_protecti.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_47_WebSearch_foundational_literacy_pedagogy_phonics_instruction.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_46_WebSearch_Jolly_Phonics_Nigeria_letter_order_teaching_sequen.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_49_WebSearch_teaching_reading_to_non-readers_audio_voice_instru.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_48_WebSearch_TaRL_teaching_at_the_right_level_literacy_methodol.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_52_WebSearch_science_of_reading_five_pillars_phonemic_awareness.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_51_WebSearch_synthetic_phonics_lesson_structure_steps_explicit_.txt
+- `04:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_50_WebSearch_Rising_on_Air_radio_literacy_lesson_script_structu.txt
+- `04:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_53_WebSearch_Jolly_Phonics_7_groups_letter_order_s_a_t_i_p_n_wh.txt
+- `04:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_54_WebSearch_phonemic_awareness_activities_oral_only_no_print_p.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_55_WebSearch_tactile_kinesthetic_letter_learning_writing_tracin.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_57_WebSearch_multisensory_phonics_instruction_touch_trace_sand_.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_56_WebSearch_can_children_learn_to_read_without_writing_handwri.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_58_WebSearch_Nigerian_children_English_language_proficiency_rur.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_59_WebSearch_voice_AI_speech_recognition_Nigerian_accent_childr.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_60_WebSearch_literacy_instruction_children_who_dont_speak_Engli.txt
+- `05:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_61_WebSearch_Bakame_AI_voice_tutor_language_Kinyarwanda_local_l.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_63_WebSearch_Lagos_Nigeria_children_English_language_proficienc.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_62_WebSearch_Lagos_state_language_spoken_children_schools_Engli.txt
+- `05:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_65_WebSearch_EKOEXCEL_Lagos_language_instruction_Yoruba_English.txt
+- `05:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_64_WebSearch_Lagos_out-of-school_children_language_demographics.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_67_WebSearch_SMS_voice_callback_literacy_education_system_devel.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_66_WebSearch_SMS_text_message_literacy_instruction_reading_deve.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_69_WebSearch_IVR_interactive_voice_response_education_literacy_.txt
+- `05:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_68_WebSearch_voice_call_AND_SMS_combined_education_literacy_chi.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_70_WebSearch_Allo_Alphabet_Cte_dIvoire_IVR_SMS_literacy_phonics.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_71_WebSearch_Eneza_Education_M-Shule_SMS_learning_results_liter.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_73_WebSearch_SMS_delivery_failure_rate_Nigeria_feature_phone_me.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_72_WebSearch_USSD_voice_callback_latency_delay_Africas_Talking_.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_75_WebSearch_children_sharing_parent_phone_learning_access_barr.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_74_WebSearch_SMS_inbox_storage_limit_feature_phone_Nokia_maximu.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_76_WebSearch_child_attention_span_phone_call_audio_learning_8_y.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_77_WebSearch_airtime_cost_barrier_Nigeria_poor_families_childre.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_78_WebSearch_dual_coding_theory_audio_text_simultaneous_NOT_sim.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_82_WebSearch_Nigerian_text_to_speech_TTS_startup_local_language.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_81_WebSearch_Nigerian_speech_to_text_STT_startup_Yoruba_Hausa_I.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_79_WebSearch_YarnGPT_Nigerian_TTS_text_to_speech_pricing_API_co.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_80_WebFetch_httpsyarngptaiapi-docs.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_83_WebFetch_httpsyarngptaipricing.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_85_WebSearch_Intron_Health_Nigerian_speech_AI_TTS_STT_pricing_A.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_84_WebSearch_African_speech_recognition_STT_most_accurate_Niger.txt
+- `05:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_86_WebSearch_Intron_Health_outperforms_accuracy_Nigerian_speech.txt
+- `19:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_88_WebSearch_Bakame_AI_startup_registration_Rwanda_voice_educat.txt
+- `19:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_87_WebSearch_Bakame_AI_Happy_Niyorurema_Diarra_Niang_company_in.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_89_WebSearch_Bakame_AI_registered_company_LLC_corporation_trade.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_90_WebSearch_Bakame_AI_50000_prize_award_2026.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_92_WebSearch_Bakame_AI_World_Government_Summit_Dubai_M-Gov_awar.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_91_WebFetch_httpstmsearchusptogovsearchsearch-resultsquerybakam.txt
+- `19:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_93_WebFetch_httpswwwtcuedunews2026serving-all-corners-of-the-wo.txt
+- `19:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_94_WebFetch_httpsdallasinnovatescomeight-tcu-student-ventures-s.txt
+- `19:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_95_WebSearch_World_Government_Summit_M-Gov_award_2026_prize_mon.txt
+- `03:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f19ca767-f03_96_WebSearch_EKOEXCEL_Lagos_Nigeria_education_program.txt
+- `04:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_00_WebFetch_httpscurriculum-app-etavercelappsabi.txt
+- `04:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_02_WebFetch_httpscurriculum-app-etavercelappsubjectsfoundationa.txt
+- `04:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_01_WebFetch_httpscurriculum-app-etavercelappsubjectsfoundationa.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_03_WebSearch_MTN_Nigeria_Foundation_education_CSR_director_2025.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_04_WebSearch_Airtel_Nigeria_CSR_education_partnership_contact_2.txt
+- `22:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_05_WebSearch_Odunayo_Sanya_MTN_Foundation_Executive_Director_em.txt
+- `22:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_06_WebSearch_Airtel_Africa_Foundation_Nigeria_director_leadersh.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_08_WebSearch_free_curriculum_review_organizations_foundational_.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_07_WebSearch_Teaching_at_the_Right_Level_TaRL_curriculum_review.txt
+
+## E4E / Sabi `ff1faa52` | 2026-03-07 | 79 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `22:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_00_WebSearch_Hetzner_GEX44_GPU_dedicated_server_price_2026.txt
+- `22:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_01_WebSearch_UNICEF_innovation_fund_equity-free_funding_blockch.txt
+- `22:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_02_WebFetch_httpsopportunitydeskorg20260304unicef-venture-fund-.txt
+- `22:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_04_WebSearch_PrincetonHack_2026_hackathon_cash_prize.txt
+- `22:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_03_WebSearch_YHacks_2026_Yale_hackathon_cash_prize.txt
+- `22:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_05_WebSearch_best_college_hackathons_2026_cash_prizes_edtech_so.txt
+- `22:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_06_WebFetch_httpswwwyhackorg.txt
+- `22:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_07_WebFetch_httpswwwhackprincetoncom.txt
+- `22:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_08_WebSearch_YHack_2024_2025_grand_prize_amount_first_place_win.txt
+- `22:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_09_WebSearch_HackPrinceton_2025_grand_prize_first_place_cash_am.txt
+- `22:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_10_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_11_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_12_WebSearch_Hult_Prize_2026_application_deadline_social_enterp.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_13_WebSearch_MIT_Solve_2026_application_deadline_global_challen.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_14_WebSearch_best_cash_prize_competitions_social_impact_edtech_.txt
+- `01:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_16_WebSearch_Nigerian_AI_TTS_text_to_speech_company_startup_Afr.txt
+- `01:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_15_WebSearch_Google_Cloud_TTS_Nigerian_English_voice_African_ac.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_18_WebFetch_httpswwwyarngptco.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_17_WebFetch_httpsdocscloudgooglecomtext-to-speechdocslist-voice.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_19_WebSearch_YarnGPT_API_pricing_developer_text_to_speech_Niger.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_20_WebFetch_httpsyarngptaipricing.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_21_WebFetch_httpsyarngptaiapi-docs.txt
+- `02:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_23_WebSearch_YarnGPT_review_quality_reliability_text_to_speech_.txt
+- `02:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_22_WebSearch_YarnGPT_github_saheedniyi02_issues_stars_model_siz.txt
+- `02:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_24_WebFetch_httpsgithubcomsaheedniyi02yarngpt.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_26_WebSearch_ElevenLabs_nonprofit_NGO_credits_program_2025_2026.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_25_WebSearch_Africas_Talking_nonprofit_education_pricing_discou.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_27_WebSearch_Groq_API_nonprofit_student_academic_pricing.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_28_WebSearch_Anthropic_Claude_API_nonprofit_education_credits_p.txt
+- `02:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_29_WebSearch_Vercel_nonprofit_education_discount_open_source_sp.txt
+- `02:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_30_WebSearch_cheapest_dedicated_GPU_server_hosting_2026_Hetzner.txt
+- `02:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_31_WebSearch_cheapest_GPU_server_under_100month_AI_inference_ho.txt
+- `02:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_32_WebSearch_Hetzner_cheapest_GPU_server_GEX34_pricing_2026.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_33_WebSearch_Hetzner_dedicated_server_billing_cycle_when_first_.txt
+- `04:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_34_WebSearch_Africas_Talking_sandbox_voice_testing_simulator_20.txt
+- `04:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_35_WebFetch_httpshelpafricastalkingcomenarticles1170660-how-do-.txt
+- `04:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_36_WebFetch_httpsdevelopersafricastalkingcomsimulator.txt
+- `04:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_37_WebSearch_Africas_Talking_sandbox_voice_simulator_how_to_tes.txt
+- `04:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_38_WebFetch_httpshelpafricastalkingcomenarticles11532610-voice-.txt
+- `04:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_39_WebSearch_Africas_Talking_voice_API_Nigeria_coverage_reliabi.txt
+- `04:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_40_WebSearch_Africas_Talking_Nigeria_voice_number_types_toll-fr.txt
+- `04:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_41_WebFetch_httpshelpafricastalkingcomenarticles2282146-what-ty.txt
+- `04:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_42_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `04:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_43_WebSearch_Africas_Talking_voice_number_request_how_long_appr.txt
+- `04:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_44_WebSearch_test_voice_webhook_API_without_real_phone_number_A.txt
+- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_45_WebSearch_Anthropic_Claude_nonprofit_program_free_API_access.txt
+- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_46_WebFetch_httpswwwanthropiccomnewsclaude-for-nonprofits.txt
+- `05:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_47_WebSearch_Anthropic_Claude_API_student_program_free_credits_.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_48_WebSearch_how_many_hours_to_learn_basic_literacy_children_ad.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_49_WebSearch_hours_of_instruction_adult_literacy_basic_reading_.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_51_WebSearch_Africas_Talking_voice_AI_tutor_phone-based_learnin.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_50_WebSearch_Africas_Talking_voice_API_education_tutoring_IVR_l.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_52_WebSearch_Africas_Talking_voice_IVR_education_literacy_healt.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_53_WebSearch_IVR_phone-based_education_literacy_Africa_voice_ca.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_55_WebSearch_Mteja_IVR_education_Africa_distance_learning_voice.txt
+- `06:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_54_WebSearch_RTI_IVR_Malawi_education_learning_phone_calls_resu.txt
+- `08:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_56_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `08:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_57_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_58_WebFetch_httpscartesiaaivselevenlabs-vs-google-tts.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_59_WebFetch_httpscartesiaaipricing.txt
+- `08:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_60_WebSearch_Cartesia_AI_TTS_quality_review_latency_voice_cloni.txt
+- `08:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_61_WebSearch_YarnGPT_TTS_pricing_API_2026.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_62_WebSearch_Groq_API_pricing_2026_student_academic_free_tier_l.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_63_WebFetch_httpsgroqcompricing.txt
+- `11:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_64_WebSearch_OpenAI_Realtime_API_pricing_2026_audio_input_outpu.txt
+- `11:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_65_WebFetch_httpsyarngptaiapi-docs.txt
+- `20:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_66_WebFetch_httpsyarngptaiapi-docs.txt
+- `00:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_67_WebSearch_UNICEF_innovation_equity-free_funding_blockchain_s.txt
+- `00:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_68_WebFetch_httpsopportunitiesforyouthorg20260303equity-free-fu.txt
+- `00:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_69_WebSearch_UNICEF_Venture_Fund_2026_non-blockchain_AI_educati.txt
+- `00:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_70_WebFetch_httpswwwunicefventurefundorgapply-funding.txt
+- `00:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_71_WebSearch_UNICEF_Venture_Fund_blockchain_2026_application_fo.txt
+- `01:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_72_WebSearch_UNICEF_Venture_Fund_non-profit_NGO_eligible_OR_not.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_73_WebFetch_httpswwwunicefventurefundorgapply-funding.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_74_WebSearch_UNICEF_Venture_Fund_blockchain_2026_area_1_area_2_.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_75_WebFetch_httpswwwexcelsiorscholarshipscomunicef-equity-free-.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_76_WebFetch_httpsyarngptai.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_77_WebSearch_YarnGPT_voices_list_all_available_Nigerian_TTS_voi.txt
+- `06:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_78_WebFetch_httpshuggingfacecosaheedniyiYarnGPT.txt
+
+## E4E / Sabi `bb7be0f1` | 2026-03-08 | 4 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `21:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_34_WebSearch_Luma_Learn_education_company_registration_entity_t.txt
+- `22:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_00_WebSearch_Hetzner_GEX44_GPU_dedicated_server_price_2026.txt
+- `22:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_01_WebSearch_UNICEF_innovation_fund_equity-free_funding_blockch.txt
+- `22:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_02_WebFetch_httpsopportunitydeskorg20260304unicef-venture-fund-.txt
+
+## E4E / Sabi `efd7d7d2` | 2026-03-09 | 260 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `21:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_34_WebSearch_Luma_Learn_education_company_registration_entity_t.txt
+- `22:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_00_WebSearch_Hetzner_GEX44_GPU_dedicated_server_price_2026.txt
+- `22:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_01_WebSearch_UNICEF_innovation_fund_equity-free_funding_blockch.txt
+- `22:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_02_WebFetch_httpsopportunitydeskorg20260304unicef-venture-fund-.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_03_WebSearch_MTN_Nigeria_Foundation_education_CSR_director_2025.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_04_WebSearch_Airtel_Nigeria_CSR_education_partnership_contact_2.txt
+- `22:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_05_WebSearch_Odunayo_Sanya_MTN_Foundation_Executive_Director_em.txt
+- `22:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_06_WebSearch_Airtel_Africa_Foundation_Nigeria_director_leadersh.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_04_WebSearch_PrincetonHack_2026_hackathon_cash_prize.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_03_WebSearch_YHacks_2026_Yale_hackathon_cash_prize.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_05_WebSearch_best_college_hackathons_2026_cash_prizes_edtech_so.txt
+- `22:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_06_WebFetch_httpswwwyhackorg.txt
+- `22:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_07_WebFetch_httpswwwhackprincetoncom.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_08_WebSearch_YHack_2024_2025_grand_prize_amount_first_place_win.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_09_WebSearch_HackPrinceton_2025_grand_prize_first_place_cash_am.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_10_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_11_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_12_WebSearch_Hult_Prize_2026_application_deadline_social_enterp.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_13_WebSearch_MIT_Solve_2026_application_deadline_global_challen.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_14_WebSearch_best_cash_prize_competitions_social_impact_edtech_.txt
+- `01:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_16_WebSearch_Nigerian_AI_TTS_text_to_speech_company_startup_Afr.txt
+- `01:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_15_WebSearch_Google_Cloud_TTS_Nigerian_English_voice_African_ac.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_18_WebFetch_httpswwwyarngptco.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_17_WebFetch_httpsdocscloudgooglecomtext-to-speechdocslist-voice.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_19_WebSearch_YarnGPT_API_pricing_developer_text_to_speech_Niger.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_20_WebFetch_httpsyarngptaipricing.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_21_WebFetch_httpsyarngptaiapi-docs.txt
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_23_WebSearch_YarnGPT_review_quality_reliability_text_to_speech_.txt
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_22_WebSearch_YarnGPT_github_saheedniyi02_issues_stars_model_siz.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_24_WebFetch_httpsgithubcomsaheedniyi02yarngpt.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_26_WebSearch_ElevenLabs_nonprofit_NGO_credits_program_2025_2026.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_25_WebSearch_Africas_Talking_nonprofit_education_pricing_discou.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_27_WebSearch_Groq_API_nonprofit_student_academic_pricing.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_28_WebSearch_Anthropic_Claude_API_nonprofit_education_credits_p.txt
+- `02:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_29_WebSearch_Vercel_nonprofit_education_discount_open_source_sp.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_00_WebSearch_voice_AI_education_developing_countries_telephony_.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_01_WebSearch_IVR_education_Africa_toll-free_voice_tutoring_feat.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_02_WebSearch_Rori_AI_voice_tutoring_phone_cost_model_Africa_202.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_04_WebSearch_Viamo_3-2-1_service_IVR_education_cost_model_toll-.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_03_WebSearch_voice_AI_education_bypass_telco_costs_SIP_trunk_ca.txt
+- `09:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_05_WebSearch_ConnectEd_phone_tutoring_education_developing_coun.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_08_WebSearch_missed_call_flash_call_callback_model_education_Af.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_06_WebSearch_Tabiri_Labs_Eneza_M-Shule_voice_AI_tutor_Africa_ph.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_07_WebSearch_WebRTC_voice_AI_education_low_bandwidth_developing.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_10_WebSearch_Google_Project_Relate_voice_AI_Africa_2026_Project.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_09_WebSearch_telco_sponsored_education_MNO_partnership_zero-rat.txt
+- `09:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_11_WebSearch_Bakame_AI_voice_education_Africa_toll-free_Rwanda_.txt
+- `09:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_12_WebSearch_reverse_billing_collect_call_education_model_Afric.txt
+- `09:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_13_WebSearch_engageSPARK_IVR_education_Philippines_flash_call_c.txt
+- `09:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_14_WebSearch_Dograh_voice_bot_Africa_affordable_voice_AI_scalin.txt
+- `09:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_15_WebSearch_India_sovereign_voice_LLM_Bhashini_120_billion_edu.txt
+- `00:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_16_WebSearch_Vermii_voice_call_API_Africa_integration_education.txt
+- `00:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_17_WebSearch_Vermii_platform_voice_API_Nigeria.txt
+- `00:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_18_WebSearch_Vermii_voice_call_startup.txt
+- `00:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_19_WebSearch_Vermiicom_voice.txt
+- `00:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_20_WebSearch_Vapi_voice_AI_agent_platform_pricing_Africa_develo.txt
+- `00:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_21_WebSearch_Termii_voice_call_API_Nigeria_pricing.txt
+- `00:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_22_WebFetch_httpstermiicompricing.txt
+- `00:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_23_WebFetch_httpsdeveloperstermiicomvoice-call.txt
+- `00:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_25_WebSearch_Termii_voice_API_IVR_capabilities_custom_audio_Nig.txt
+- `00:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_24_WebSearch_Termii_voice_call_per_minute_cost_Nigeria_naira_SM.txt
+- `00:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_26_WebSearch_Termii_vs_Africas_Talking_voice_API_comparison_Nig.txt
+- `00:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_27_WebSearch_Termii_voice_API_IVR_interactive_call_Nigeria_beyo.txt
+- `00:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_28_WebSearch_Termii_API_voice_token_call_recording_webhook_Nige.txt
+- `00:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_29_WebFetch_httpsdeveloperstermiicomvoice-call.txt
+- `00:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_30_WebFetch_httpsdeveloperstermiicomvoice-token.txt
+- `00:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_31_WebSearch_Termii_voice_call_API_endpoint_POST_send_custom_me.txt
+- `02:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_32_WebFetch_httpswwwdograhcom.txt
+- `02:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_33_WebFetch_httpsblogdograhcombuilding-voice-bot-for-africa-sca.txt
+- `02:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_34_WebFetch_httpsgithubcomdograh-hqdograh.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_35_WebSearch_Africas_Talking_alternatives_voice_IVR_Nigeria_tel.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_36_WebSearch_Nigeria_voice_API_programmable_voice_calls_SIP_tru.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_37_WebSearch_Twilio_alternatives_Africa_Nigeria_voice_calls_che.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_38_WebSearch_Plivo_Nigeria_voice_calls_pricing_per_minute_Afric.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_40_WebSearch_Sendchamp_Nigeria_voice_API_IVR_pricing_programmab.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_39_WebSearch_Telnyx_Nigeria_voice_API_pricing_per_minute_progra.txt
+- `03:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_41_WebSearch_engageSPARK_voice_IVR_Africa_Nigeria_pricing_callb.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_43_WebFetch_httpswwwplivocomvoicepricingng.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_44_WebFetch_httpssendchampcomvoice.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_42_WebFetch_httpstelnyxcompricingvoice-api.txt
+- `03:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_45_WebSearch_Vonage_Nigeria_voice_API_pricing_per_minute_IVR_pr.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_48_WebSearch_Infobip_Nigeria_voice_API_pricing_IVR_programmable.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_47_WebSearch_Cloudonix_Nigeria_voice_API_SIP_trunk_pricing_self.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_46_WebSearch_Vobiz_Nigeria_voice_API_telephony_pricing.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_49_WebSearch_voice_API_Nigeria_toll-free_number_IVR_education_N.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_50_WebFetch_httpswwwtwiliocomen-usvoicepricingng.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_51_WebFetch_httpshollatagscomvoice.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_52_WebFetch_httpsvobizai.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_53_WebSearch_HollaTags_Nigeria_voice_API_IVR_pricing_developer_.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_55_WebSearch_Viamo_3-2-1_service_Nigeria_free_voice_education_I.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_54_WebSearch_Nigeria_SIP_trunk_provider_cheapest_outbound_calls.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_56_WebFetch_httpsdocshollatagscom.txt
+- `03:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_58_WebFetch_httpswwwengagesparkcompricing.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_57_WebFetch_httpswwwtwiliocomen-ussip-trunkingpricingng.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_59_WebSearch_ConnectSIP_Nigeria_SIP_trunk_pricing_per_minute_ou.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_60_WebSearch_Multipair_Telecom_Nigeria_SIP_trunk_pricing_per_mi.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_61_WebSearch_AVOXI_Nigeria_toll-free_number_IVR_pricing_virtual.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_62_WebSearch_MTN_Nigeria_SIP_trunking_pricing_22k_per_second_ta.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_63_WebSearch_Asterisk_PBX_Nigeria_Audiocodes_SIP_trunk_self-hos.txt
+- `03:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_64_WebSearch_AVOXI_toll-free_number_concurrent_calls_capacity_m.txt
+- `05:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_65_WebSearch_AVOXI_scalability_million_calls_enterprise_capacit.txt
+- `05:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_66_WebSearch_MTN_Nigeria_SIP_trunking_toll-free_number_0800_bus.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_67_WebSearch_MTN_Nigeria_0800_toll-free_number_pricing_how_to_g.txt
+- `05:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_69_WebFetch_httpswwwmtnngbusinesssip-trunking.txt
+- `05:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_68_WebSearch_MTN_Nigeria_0800_toll-free_inbound_call_rate_per_m.txt
+- `05:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_70_WebSearch_how_to_buy_MTN_Nigeria_0800_toll-free_number_appli.txt
+- `05:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_71_WebSearch_MTN_Nigeria_smart_number_0800_how_to_get_register_.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_73_WebSearch_NCC_Nigeria_0800_toll-free_number_license_applicat.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_72_WebFetch_httpswwwmtnngbusinessbusinesssolutionsmtn-business-.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_75_WebSearch_Viamo_3-2-1_how_does_telephony_work_SIP_trunk_own_.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_74_WebSearch_Nigeria_VAS_Aggregator_what_is_it_how_does_it_work.txt
+- `06:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_76_WebSearch_Twilio_Nigeria_toll-free_number_available_0800_inb.txt
+- `06:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_77_WebSearch_ElevenLabs_pricing_2026_per_character_per_minute_T.txt
+- `06:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_78_WebFetch_httpssendchampreadmeioreferenceintroduction.txt
+- `06:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_79_WebFetch_httpsdocshollatagscomapi-endpoint.txt
+- `06:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_80_WebFetch_httpsdocshollatagscomsmssend.txt
+- `06:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_81_WebFetch_httpswwwplivocompricing.txt
+- `06:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_82_WebFetch_httpswwwplivocomvoicepricingng.txt
+- `06:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_83_WebSearch_Africas_Talking_voice_API_forward_calls_from_exter.txt
+- `06:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_84_WebFetch_httpswwwavoxicomcloud-communicationsvoiceinternatio.txt
+- `06:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_85_WebSearch_AVOXI_API_developer_documentation_webhooks_program.txt
+- `06:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_87_WebSearch_Vonage_voice_API_Nigeria_pricing_per_minute_inboun.txt
+- `06:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_86_WebSearch_AVOXI_API_developer_documentation_webhooks_program.txt
+- `07:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_88_WebFetch_httpswwwavoxicomsolutionsprogrammable-voice-api.txt
+- `07:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_89_WebFetch_httpswwwavoxicomapi-docs.txt
+- `07:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_90_WebFetch_httpsdevelopervonagecomenhome.txt
+- `07:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_91_WebSearch_Vonage_voice_API_Nigeria_phone_number_available_bu.txt
+- `07:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_92_WebSearch_Vonage_NCCO_webhook_call_control_play_record_gathe.txt
+- `07:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_93_WebSearch_Vonage_numbers_available_Nigeria_Africa_countries_.txt
+- `07:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_94_WebSearch_Africas_Talking_SIP_trunking_support_SIP_endpoint_.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_95_WebFetch_httpsconnectsipcom.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_96_WebSearch_ConnectSIP_Nigeria_pricing_SIP_trunk_toll-free_080.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_98_WebSearch_ConnectSIP_Nigeria_call_rates_outbound_inbound_102.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_97_WebFetch_httpsconnectsipcomservicessip-trunking-virtual-numb.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_99_WebFetch_httpsconnectsipcomsupportcall-rates.txt
+- `07:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_100_WebFetch_httpsconnectsipcomservicessip-trunking-virtual-numb.txt
+- `07:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_101_WebFetch_httpsconnectsipcomsupport.txt
+- `07:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_102_WebFetch_httpsconnectsipcomcontact.txt
+- `07:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_103_WebFetch_httpsmyconnectsipcom.txt
+- `07:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_104_WebFetch_httpsconnectsipcomapi.txt
+- `07:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_105_WebFetch_httpsconnectsipcomdocs.txt
+- `07:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_107_WebFetch_httpsconnectsipcomsupportfaqs.txt
+- `07:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_106_WebFetch_httpsconnectsipcomservices.txt
+- `07:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_108_WebSearch_ConnectSIP_review_Nigeria_SIP_trunking_experience.txt
+- `07:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_109_WebSearch_connectsipcom_review_OR_testimonial_OR_experience.txt
+- `07:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_110_WebFetch_httpssourceforgenetsoftwareproductConnectSIP.txt
+- `07:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_111_WebFetch_httpsconnectsipcomabout.txt
+- `07:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_112_WebSearch_ConnectSIP_Nigeria_Trustpilot_G2_Capterra_review.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_113_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_115_WebFetch_httpsoutsourcenigeriacomabout.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_114_WebFetch_httpsoutsourcenigeriacomcontact.txt
+- `08:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_116_WebSearch_outsource_nigeria_omni_channel_0800_toll-free_revi.txt
+- `08:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_117_WebFetch_httpsoutsourcenigeriacom.txt
+- `08:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_118_WebFetch_httpswwwflynumbercomproductsvirtual-phone-numbernig.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_119_WebFetch_httpsoutsourcenigeriacomour-approach.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_121_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_120_WebFetch_httpsoutsourcenigeriacomwhatsapp-customer-support-s.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_122_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_123_WebFetch_httpsoutsourcenigeriacomcall-center-solutions.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_124_WebFetch_httpsoutsourcenigeriacomsitemapxml.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_125_WebFetch_httpsoutsourcenigeriacompage-sitemapxml.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_126_WebFetch_httpsoutsourcenigeriacomenterprise-business-smart-n.txt
+- `08:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_127_WebFetch_httpsnetcatsolutionsngsip-trunk-service.txt
+- `08:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_128_WebFetch_httpsnetcatsolutionsngsip-trunk-service.txt
+- `08:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_129_WebFetch_httpsnetcatsolutionsngblog.txt
+- `08:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_130_WebFetch_httpsnetcatsolutionsng.txt
+- `08:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_131_WebSearch_netcatsolutionsng_SIP_trunk_setup_guide_Asterisk_c.txt
+- `09:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_132_WebFetch_httpswwwcommpeakcomservicesvirtual-numbers-didsnige.txt
+- `09:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_133_WebFetch_httpsdocscommpeakcom.txt
+- `09:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_134_WebFetch_httpsdocscommpeakcompageapi-reference.txt
+- `09:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_135_WebFetch_httpswwwcommpeakcomservicessip-trunking.txt
+- `09:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_136_WebFetch_httpswwwtermiicom.txt
+- `09:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_137_WebSearch_Termii_Nigeria_voice_calls_SIP_trunking_inbound_IV.txt
+- `10:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_138_WebFetch_httpswwwcommpeakcomservicesvirtual-numbers-dids.txt
+- `10:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_139_WebFetch_httpsdocscommpeakcom.txt
+- `10:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_140_WebFetch_httpswwwcommpeakcomsip-trunking.txt
+- `10:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_142_WebFetch_httpswwwcommpeakcomsip-trunking.txt
+- `10:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_141_WebFetch_httpsdocscommpeakcom.txt
+- `10:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_144_WebFetch_httpsdocscommpeakcomdocsdid-numbers.txt
+- `10:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_143_WebFetch_httpsdocscommpeakcomdocsportal.txt
+- `10:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_145_WebFetch_httpsdocscommpeakcomdocsdid-numbers.txt
+- `10:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_146_WebFetch_httpsdocscommpeakcomdocsdid-types.txt
+- `10:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_147_WebFetch_httpsdocscommpeakcomdocsdid-types.txt
+- `10:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_148_WebFetch_httpsdocscommpeakcomdocssip-account-configuration.txt
+- `22:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_149_WebFetch_httpsgithubcomhkjarralAsterisk-AI-Voice-Agent.txt
+- `22:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_150_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceoverview.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_152_WebSearch_Africas_Talking_SIP_trunk_setup_Asterisk_PBX_confi.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_151_WebSearch_Africas_Talking_voice_API_make_outbound_call_Pytho.txt
+- `22:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_153_WebFetch_httpshelpafricastalkingcomenarticles6049012-what-do.txt
+- `22:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_154_WebFetch_httpsdevtoarseytechfrom-code-to-conversation-master.txt
+- `01:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_155_WebSearch_best_app_name_psychology_memorable_brandable_short.txt
+- `01:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_156_WebSearch_psychology_behind_brand_names_that_sound_powerful_.txt
+- `04:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_157_WebSearch_Asterisk_PBX_uptime_reliability_production_downtim.txt
+- `08:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_158_WebSearch_Winifred_Abina_Africas_Talking_toll-free_Nigeria.txt
+- `08:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_159_WebSearch_Winifred_Abina_telecom_Nigeria.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_161_WebSearch_Nigeria_0800_toll-free_number_provider_licensed_NC.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_160_WebSearch_Africas_Talking_toll-free_number_Nigeria_partner_p.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_162_WebSearch_Africas_Talking_Nigeria_toll-free_third_party_prov.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_163_WebSearch_Yana_Interra_Networks_Africas_Talking_partner_Nige.txt
+- `08:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_164_WebSearch_Infotek_Nigeria_0800_toll-free_Africas_Talking.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_165_WebSearch_Yana_Nigeria_0800_toll-free_number_pricing_rates_p.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_167_WebSearch_Nigeria_0800_toll-free_number_cost_per_minute_inbo.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_166_WebSearch_Infotek_Nigeria_0800_toll-free_number_pricing_cost.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_168_WebFetch_httpsyanang.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_169_WebFetch_httpswwwinfotekpscomvanitynumbershtml.txt
+- `08:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_170_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_171_WebSearch_Nigeria_0800_toll-free_number_provider_NCC_license.txt
+- `08:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_172_WebSearch_Nigeria_toll-free_0800_service_provider_company_SI.txt
+- `08:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_173_WebSearch_NCC_Nigeria_special_numbering_services_license_hol.txt
+- `08:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_174_WebFetch_httpswwwnccgovngsitesdefaultfiles2024-10Legal-Deter.txt
+- `08:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_177_WebFetch_httpsvezetinet.txt
+- `08:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_176_WebSearch_Nigeria_0800_toll-free_termination_rate_NCC_naira_.txt
+- `08:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_175_WebSearch_Vezeti_Nigeria_0800_toll-free_pricing_rates.txt
+- `08:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_179_WebSearch_Alpha_Technologies_Nigeria_0800_SMAT_number_toll-f.txt
+- `08:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_178_WebSearch_Cedarview_Communications_Nigeria_0800_toll-free_pr.txt
+- `08:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_181_WebSearch_NCC_Nigeria_0800_termination_rate_15_naira_OR_15_p.txt
+- `08:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_180_WebSearch_Cedarview_Communications_Nigeria_0800_toll-free.txt
+- `02:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_183_WebSearch_how_long_to_edit_worship_video_youtube_recording_e.txt
+- `02:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_182_WebSearch_how_long_does_it_take_to_edit_short_form_Christian.txt
+- `02:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_184_WebSearch_beginner_music_production_recording_one_song_how_l.txt
+- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_185_WebSearch_AI_video_editing_platform_short_form_content_auto_.txt
+- `04:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_186_WebSearch_Spheres_relationship_management_app_iOS_2026.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_189_WebSearch_Kathryn_Kuhlman_The_Greatest_Power_in_the_World_PD.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_187_WebSearch_Kathryn_Kuhlman_I_Believe_in_Miracles_PDF_full_tex.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_188_WebSearch_Kenneth_E_Hagin_How_You_Can_Be_Led_by_the_Spirit_o.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_190_WebSearch_Kenneth_E_Hagin_I_Believe_in_Visions_PDF_full_text.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_191_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_193_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `23:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_192_WebFetch_httpswwwacademiaedu35891660The_Greatest_Power_in_th.txt
+- `23:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_194_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_197_WebSearch_YouVersion_Bible_app_features_2025_2026_chronologi.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_195_WebSearch_Bible_Project_Read_Scripture_app_chronological_Bib.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_198_WebSearch_Christian_dream_interpretation_app_prophetic_dream.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_196_WebSearch_AI_Bible_study_app_2025_2026_best_Bible_chatbot_ar.txt
+- `01:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_200_WebFetch_httpsfaithtoolsartificial-intelligence-ai.txt
+- `01:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_199_WebFetch_httpswwwdreamnlcom.txt
+- `02:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_201_WebSearch_John_Paul_Jackson_dream_interpretation_framework_c.txt
+- `02:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_202_WebSearch_Mark_Virkler_4_keys_to_hearing_Gods_voice_Charity_.txt
+- `02:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_203_WebSearch_Smith_Wigglesworth_visions_supernatural_experience.txt
+- `02:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_204_WebSearch_Charles_Spurgeon_dreams_visions_hearing_God_supern.txt
+- `02:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_206_WebSearch_CS_Lewis_dreams_supernatural_spiritual_experiences.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_205_WebSearch_John_Paul_Jackson_20_categories_of_dreams_dream_ty.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_207_WebSearch_prophetic_dream_journal_best_practices_how_to_reco.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_208_WebSearch_biblical_dream_symbols_water_fire_house_door_mount.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_209_WebFetch_httpswwwdestinyimagecomblogadrian-beale-prophetic-d.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_210_WebFetch_httpspropheticbibleschoolcomthe-gift-of-prophetic-d.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_211_WebFetch_httpsmycharismacomspiritled-livingsupernaturaldream.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_212_WebFetch_httpswwwdestinyimagecomblogadrian-beale-prophetic-d.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_213_WebFetch_httpspropheticbibleschoolcomthe-gift-of-prophetic-d.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_215_WebSearch_dream_interpretation_symbols_list_Bible_water_fire.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_214_WebSearch_Stephanie_Ike_Okafor_Power_of_Our_Dreams_book_teac.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_217_WebFetch_httpswaterbrookmultnomahcomwp-contentuploadspdfTHEP.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_216_WebFetch_httpsdavewilliamscomwp-contentuploads201809Helpful-.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_218_WebFetch_httpswwwdestinyimagecomblogtroy-brewer-prophetic-dr.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_220_WebFetch_httpswwwgoodreadscomenbookshow191746481-the-power-o.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_219_WebFetch_httpsstephanieikeokaforcombooks.txt
+- `03:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Find_Bethel_design_research_files.txt
+- `03:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_221_Find_Bethel_design_research_files.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Search_for_Bethel_conversation_logs.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_222_Search_for_Bethel_conversation_logs.txt
+
+## E4E / Sabi `df072af5` | 2026-03-09 | 69 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `21:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/7464be26-f82_34_WebSearch_Luma_Learn_education_company_registration_entity_t.txt
+- `22:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_00_WebSearch_Hetzner_GEX44_GPU_dedicated_server_price_2026.txt
+- `22:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_01_WebSearch_UNICEF_innovation_fund_equity-free_funding_blockch.txt
+- `22:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_02_WebFetch_httpsopportunitydeskorg20260304unicef-venture-fund-.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_03_WebSearch_MTN_Nigeria_Foundation_education_CSR_director_2025.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_04_WebSearch_Airtel_Nigeria_CSR_education_partnership_contact_2.txt
+- `22:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_05_WebSearch_Odunayo_Sanya_MTN_Foundation_Executive_Director_em.txt
+- `22:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_06_WebSearch_Airtel_Africa_Foundation_Nigeria_director_leadersh.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_04_WebSearch_PrincetonHack_2026_hackathon_cash_prize.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_03_WebSearch_YHacks_2026_Yale_hackathon_cash_prize.txt
+- `22:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_05_WebSearch_best_college_hackathons_2026_cash_prizes_edtech_so.txt
+- `22:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_06_WebFetch_httpswwwyhackorg.txt
+- `22:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_07_WebFetch_httpswwwhackprincetoncom.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_08_WebSearch_YHack_2024_2025_grand_prize_amount_first_place_win.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_09_WebSearch_HackPrinceton_2025_grand_prize_first_place_cash_am.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_10_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_11_WebFetch_httpshackprinceton-fall-2025devpostcom.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_12_WebSearch_Hult_Prize_2026_application_deadline_social_enterp.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_13_WebSearch_MIT_Solve_2026_application_deadline_global_challen.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_14_WebSearch_best_cash_prize_competitions_social_impact_edtech_.txt
+- `01:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_16_WebSearch_Nigerian_AI_TTS_text_to_speech_company_startup_Afr.txt
+- `01:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_15_WebSearch_Google_Cloud_TTS_Nigerian_English_voice_African_ac.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_18_WebFetch_httpswwwyarngptco.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_17_WebFetch_httpsdocscloudgooglecomtext-to-speechdocslist-voice.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_19_WebSearch_YarnGPT_API_pricing_developer_text_to_speech_Niger.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_20_WebFetch_httpsyarngptaipricing.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_21_WebFetch_httpsyarngptaiapi-docs.txt
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_23_WebSearch_YarnGPT_review_quality_reliability_text_to_speech_.txt
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_22_WebSearch_YarnGPT_github_saheedniyi02_issues_stars_model_siz.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_24_WebFetch_httpsgithubcomsaheedniyi02yarngpt.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_26_WebSearch_ElevenLabs_nonprofit_NGO_credits_program_2025_2026.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_25_WebSearch_Africas_Talking_nonprofit_education_pricing_discou.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_27_WebSearch_Groq_API_nonprofit_student_academic_pricing.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_28_WebSearch_Anthropic_Claude_API_nonprofit_education_credits_p.txt
+- `02:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_29_WebSearch_Vercel_nonprofit_education_discount_open_source_sp.txt
+- `02:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_30_WebSearch_cheapest_dedicated_GPU_server_hosting_2026_Hetzner.txt
+- `02:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_31_WebSearch_cheapest_GPU_server_under_100month_AI_inference_ho.txt
+- `02:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_32_WebSearch_Hetzner_cheapest_GPU_server_GEX34_pricing_2026.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_33_WebSearch_Hetzner_dedicated_server_billing_cycle_when_first_.txt
+- `04:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_34_WebSearch_Africas_Talking_sandbox_voice_testing_simulator_20.txt
+- `04:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_35_WebFetch_httpshelpafricastalkingcomenarticles1170660-how-do-.txt
+- `04:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_36_WebFetch_httpsdevelopersafricastalkingcomsimulator.txt
+- `04:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_37_WebSearch_Africas_Talking_sandbox_voice_simulator_how_to_tes.txt
+- `04:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_38_WebFetch_httpshelpafricastalkingcomenarticles11532610-voice-.txt
+- `04:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_39_WebSearch_Africas_Talking_voice_API_Nigeria_coverage_reliabi.txt
+- `04:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_40_WebSearch_Africas_Talking_Nigeria_voice_number_types_toll-fr.txt
+- `04:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_41_WebFetch_httpshelpafricastalkingcomenarticles2282146-what-ty.txt
+- `04:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_42_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `04:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_43_WebSearch_Africas_Talking_voice_number_request_how_long_appr.txt
+- `04:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_44_WebSearch_test_voice_webhook_API_without_real_phone_number_A.txt
+- `05:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_45_WebSearch_Anthropic_Claude_nonprofit_program_free_API_access.txt
+- `05:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_46_WebFetch_httpswwwanthropiccomnewsclaude-for-nonprofits.txt
+- `05:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_47_WebSearch_Anthropic_Claude_API_student_program_free_credits_.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_48_WebSearch_how_many_hours_to_learn_basic_literacy_children_ad.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_49_WebSearch_hours_of_instruction_adult_literacy_basic_reading_.txt
+- `21:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_01_WebSearch_Luma_Learn_Chris_Folayon_edtech.txt
+- `21:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_00_WebSearch_Luma_Learn_education_platform.txt
+- `21:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_03_WebFetch_httpswwwlumalearnaiabout.txt
+- `21:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_02_WebFetch_httpswwwlumalearnaiteam.txt
+- `06:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_07_WebSearch_Samson_Q2U_USB_microphone_buy.txt
+- `06:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_04_WebSearch_Focusrite_Scarlett_Solo_4th_Gen_buy_2026.txt
+- `06:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_06_WebSearch_Audio-Technica_AT2020_XLR_microphone_buy.txt
+- `06:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_05_WebSearch_Sony_MDR-7506_headphones_buy.txt
+- `06:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_08_WebSearch_XLR_cable_pop_filter_mic_stand_bundle_Amazon.txt
+- `06:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_09_WebSearch_AT2020_XLR_cable_pop_filter_boom_arm_stand_bundle_.txt
+- `06:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_10_WebSearch_Samson_Q2U_boom_arm_pop_filter_bundle_Amazon.txt
+- `07:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_11_WebSearch_Hollyland_Lark_M1_wireless_lavalier_microphone_buy.txt
+- `07:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_12_WebSearch_wireless_lavalier_microphone_for_phone_under_70_Am.txt
+- `07:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_13_WebSearch_Hollyland_Lark_M1_vs_Lark_M1_Solo_differences_comp.txt
+
+## E4E / Sabi `296c88b8` | 2026-03-11 | 116 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_48_WebSearch_how_many_hours_to_learn_basic_literacy_children_ad.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_49_WebSearch_hours_of_instruction_adult_literacy_basic_reading_.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_51_WebSearch_Africas_Talking_voice_AI_tutor_phone-based_learnin.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_50_WebSearch_Africas_Talking_voice_API_education_tutoring_IVR_l.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_52_WebSearch_Africas_Talking_voice_IVR_education_literacy_healt.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_53_WebSearch_IVR_phone-based_education_literacy_Africa_voice_ca.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_55_WebSearch_Mteja_IVR_education_Africa_distance_learning_voice.txt
+- `06:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_54_WebSearch_RTI_IVR_Malawi_education_learning_phone_calls_resu.txt
+- `08:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_56_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `08:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_57_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_58_WebFetch_httpscartesiaaivselevenlabs-vs-google-tts.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_59_WebFetch_httpscartesiaaipricing.txt
+- `08:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_60_WebSearch_Cartesia_AI_TTS_quality_review_latency_voice_cloni.txt
+- `08:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_61_WebSearch_YarnGPT_TTS_pricing_API_2026.txt
+- `09:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_62_WebSearch_Groq_API_pricing_2026_student_academic_free_tier_l.txt
+- `09:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_63_WebFetch_httpsgroqcompricing.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_00_WebSearch_voice_AI_education_developing_countries_telephony_.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_01_WebSearch_IVR_education_Africa_toll-free_voice_tutoring_feat.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_02_WebSearch_Rori_AI_voice_tutoring_phone_cost_model_Africa_202.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_04_WebSearch_Viamo_3-2-1_service_IVR_education_cost_model_toll-.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_03_WebSearch_voice_AI_education_bypass_telco_costs_SIP_trunk_ca.txt
+- `09:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_05_WebSearch_ConnectEd_phone_tutoring_education_developing_coun.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_08_WebSearch_missed_call_flash_call_callback_model_education_Af.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_06_WebSearch_Tabiri_Labs_Eneza_M-Shule_voice_AI_tutor_Africa_ph.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_07_WebSearch_WebRTC_voice_AI_education_low_bandwidth_developing.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_10_WebSearch_Google_Project_Relate_voice_AI_Africa_2026_Project.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_09_WebSearch_telco_sponsored_education_MNO_partnership_zero-rat.txt
+- `09:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_11_WebSearch_Bakame_AI_voice_education_Africa_toll-free_Rwanda_.txt
+- `09:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_12_WebSearch_reverse_billing_collect_call_education_model_Afric.txt
+- `09:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_13_WebSearch_engageSPARK_IVR_education_Philippines_flash_call_c.txt
+- `09:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_14_WebSearch_Dograh_voice_bot_Africa_affordable_voice_AI_scalin.txt
+- `09:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_15_WebSearch_India_sovereign_voice_LLM_Bhashini_120_billion_edu.txt
+- `11:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_64_WebSearch_OpenAI_Realtime_API_pricing_2026_audio_input_outpu.txt
+- `11:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_65_WebFetch_httpsyarngptaiapi-docs.txt
+- `20:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_66_WebFetch_httpsyarngptaiapi-docs.txt
+- `21:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_01_WebSearch_Luma_Learn_Chris_Folayon_edtech.txt
+- `21:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_00_WebSearch_Luma_Learn_education_platform.txt
+- `21:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_03_WebFetch_httpswwwlumalearnaiabout.txt
+- `21:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/df072af5-76f_02_WebFetch_httpswwwlumalearnaiteam.txt
+- `00:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_16_WebSearch_Vermii_voice_call_API_Africa_integration_education.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_17_WebSearch_Vermii_platform_voice_API_Nigeria.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_18_WebSearch_Vermii_voice_call_startup.txt
+- `00:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_19_WebSearch_Vermiicom_voice.txt
+- `00:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_20_WebSearch_Vapi_voice_AI_agent_platform_pricing_Africa_develo.txt
+- `00:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_21_WebSearch_Termii_voice_call_API_Nigeria_pricing.txt
+- `00:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_22_WebFetch_httpstermiicompricing.txt
+- `00:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_23_WebFetch_httpsdeveloperstermiicomvoice-call.txt
+- `00:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_25_WebSearch_Termii_voice_API_IVR_capabilities_custom_audio_Nig.txt
+- `00:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_24_WebSearch_Termii_voice_call_per_minute_cost_Nigeria_naira_SM.txt
+- `00:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_26_WebSearch_Termii_vs_Africas_Talking_voice_API_comparison_Nig.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_67_WebSearch_UNICEF_innovation_equity-free_funding_blockchain_s.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_68_WebFetch_httpsopportunitiesforyouthorg20260303equity-free-fu.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_69_WebSearch_UNICEF_Venture_Fund_2026_non-blockchain_AI_educati.txt
+- `00:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_70_WebFetch_httpswwwunicefventurefundorgapply-funding.txt
+- `00:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_71_WebSearch_UNICEF_Venture_Fund_blockchain_2026_application_fo.txt
+- `00:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_27_WebSearch_Termii_voice_API_IVR_interactive_call_Nigeria_beyo.txt
+- `00:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_28_WebSearch_Termii_API_voice_token_call_recording_webhook_Nige.txt
+- `00:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_29_WebFetch_httpsdeveloperstermiicomvoice-call.txt
+- `00:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_30_WebFetch_httpsdeveloperstermiicomvoice-token.txt
+- `00:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_31_WebSearch_Termii_voice_call_API_endpoint_POST_send_custom_me.txt
+- `01:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_72_WebSearch_UNICEF_Venture_Fund_non-profit_NGO_eligible_OR_not.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_73_WebFetch_httpswwwunicefventurefundorgapply-funding.txt
+- `02:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_32_WebFetch_httpswwwdograhcom.txt
+- `02:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_33_WebFetch_httpsblogdograhcombuilding-voice-bot-for-africa-sca.txt
+- `02:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_34_WebFetch_httpsgithubcomdograh-hqdograh.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_35_WebSearch_Africas_Talking_alternatives_voice_IVR_Nigeria_tel.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_36_WebSearch_Nigeria_voice_API_programmable_voice_calls_SIP_tru.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_37_WebSearch_Twilio_alternatives_Africa_Nigeria_voice_calls_che.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_38_WebSearch_Plivo_Nigeria_voice_calls_pricing_per_minute_Afric.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_40_WebSearch_Sendchamp_Nigeria_voice_API_IVR_pricing_programmab.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_39_WebSearch_Telnyx_Nigeria_voice_API_pricing_per_minute_progra.txt
+- `03:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_41_WebSearch_engageSPARK_voice_IVR_Africa_Nigeria_pricing_callb.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_43_WebFetch_httpswwwplivocomvoicepricingng.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_74_WebSearch_UNICEF_Venture_Fund_blockchain_2026_area_1_area_2_.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_44_WebFetch_httpssendchampcomvoice.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_42_WebFetch_httpstelnyxcompricingvoice-api.txt
+- `03:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_45_WebSearch_Vonage_Nigeria_voice_API_pricing_per_minute_IVR_pr.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_48_WebSearch_Infobip_Nigeria_voice_API_pricing_IVR_programmable.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_47_WebSearch_Cloudonix_Nigeria_voice_API_SIP_trunk_pricing_self.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_46_WebSearch_Vobiz_Nigeria_voice_API_telephony_pricing.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_49_WebSearch_voice_API_Nigeria_toll-free_number_IVR_education_N.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_75_WebFetch_httpswwwexcelsiorscholarshipscomunicef-equity-free-.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_50_WebFetch_httpswwwtwiliocomen-usvoicepricingng.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_51_WebFetch_httpshollatagscomvoice.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_52_WebFetch_httpsvobizai.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_53_WebSearch_HollaTags_Nigeria_voice_API_IVR_pricing_developer_.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_55_WebSearch_Viamo_3-2-1_service_Nigeria_free_voice_education_I.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_54_WebSearch_Nigeria_SIP_trunk_provider_cheapest_outbound_calls.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_56_WebFetch_httpsdocshollatagscom.txt
+- `03:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_58_WebFetch_httpswwwengagesparkcompricing.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_57_WebFetch_httpswwwtwiliocomen-ussip-trunkingpricingng.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_59_WebSearch_ConnectSIP_Nigeria_SIP_trunk_pricing_per_minute_ou.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_60_WebSearch_Multipair_Telecom_Nigeria_SIP_trunk_pricing_per_mi.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_61_WebSearch_AVOXI_Nigeria_toll-free_number_IVR_pricing_virtual.txt
+- `03:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_62_WebSearch_MTN_Nigeria_SIP_trunking_pricing_22k_per_second_ta.txt
+- `03:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_63_WebSearch_Asterisk_PBX_Nigeria_Audiocodes_SIP_trunk_self-hos.txt
+- `03:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_64_WebSearch_AVOXI_toll-free_number_concurrent_calls_capacity_m.txt
+- `05:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_65_WebSearch_AVOXI_scalability_million_calls_enterprise_capacit.txt
+- `05:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_66_WebSearch_MTN_Nigeria_SIP_trunking_toll-free_number_0800_bus.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_67_WebSearch_MTN_Nigeria_0800_toll-free_number_pricing_how_to_g.txt
+- `05:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_69_WebFetch_httpswwwmtnngbusinesssip-trunking.txt
+- `05:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_68_WebSearch_MTN_Nigeria_0800_toll-free_inbound_call_rate_per_m.txt
+- `05:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_70_WebSearch_how_to_buy_MTN_Nigeria_0800_toll-free_number_appli.txt
+- `05:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_71_WebSearch_MTN_Nigeria_smart_number_0800_how_to_get_register_.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_73_WebSearch_NCC_Nigeria_0800_toll-free_number_license_applicat.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_72_WebFetch_httpswwwmtnngbusinessbusinesssolutionsmtn-business-.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_75_WebSearch_Viamo_3-2-1_how_does_telephony_work_SIP_trunk_own_.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_74_WebSearch_Nigeria_VAS_Aggregator_what_is_it_how_does_it_work.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_00_WebFetch_httpswwwavoxicomnigeria-virtual-phone-numbers.txt
+- `06:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_01_WebFetch_httpswwwavoxicomnigeria-virtual-phone-numbers.txt
+- `06:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_02_WebFetch_httpswwwavoxicompricing.txt
+- `20:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_03_WebFetch_httpshuggingfacecointronhealthafro-tts.txt
+- `04:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_04_WebFetch_httpshuggingfacecoResembleAIchatterbox-turbo.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_05_WebSearch_chatterbox-tts_huggingface_model_download_token_re.txt
+- `17:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_06_WebSearch_Google_WAXAL_TTS_text-to-speech_African_languages_.txt
+- `20:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_07_Search_sessions_for_sabi_subdomain_discussion.txt
+
+## Social Media `4db243fe` | 2026-03-13 | 149 files
+Folders: -Users-naomiivie-Downloads-App-Social-Media, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Social-Media
+
+- `05:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_65_WebSearch_AVOXI_scalability_million_calls_enterprise_capacit.txt
+- `05:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_66_WebSearch_MTN_Nigeria_SIP_trunking_toll-free_number_0800_bus.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_67_WebSearch_MTN_Nigeria_0800_toll-free_number_pricing_how_to_g.txt
+- `05:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_69_WebFetch_httpswwwmtnngbusinesssip-trunking.txt
+- `05:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_68_WebSearch_MTN_Nigeria_0800_toll-free_inbound_call_rate_per_m.txt
+- `05:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_70_WebSearch_how_to_buy_MTN_Nigeria_0800_toll-free_number_appli.txt
+- `05:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_71_WebSearch_MTN_Nigeria_smart_number_0800_how_to_get_register_.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_73_WebSearch_NCC_Nigeria_0800_toll-free_number_license_applicat.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_72_WebFetch_httpswwwmtnngbusinessbusinesssolutionsmtn-business-.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_75_WebSearch_Viamo_3-2-1_how_does_telephony_work_SIP_trunk_own_.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_74_WebSearch_Nigeria_VAS_Aggregator_what_is_it_how_does_it_work.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_76_WebFetch_httpsyarngptai.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_77_WebSearch_YarnGPT_voices_list_all_available_Nigerian_TTS_voi.txt
+- `06:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_00_WebFetch_httpswwwavoxicomnigeria-virtual-phone-numbers.txt
+- `06:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/ff1faa52-49e_78_WebFetch_httpshuggingfacecosaheedniyiYarnGPT.txt
+- `06:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_01_WebFetch_httpswwwavoxicomnigeria-virtual-phone-numbers.txt
+- `06:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_02_WebFetch_httpswwwavoxicompricing.txt
+- `06:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_76_WebSearch_Twilio_Nigeria_toll-free_number_available_0800_inb.txt
+- `06:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_77_WebSearch_ElevenLabs_pricing_2026_per_character_per_minute_T.txt
+- `06:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_78_WebFetch_httpssendchampreadmeioreferenceintroduction.txt
+- `06:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_79_WebFetch_httpsdocshollatagscomapi-endpoint.txt
+- `06:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_80_WebFetch_httpsdocshollatagscomsmssend.txt
+- `06:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_81_WebFetch_httpswwwplivocompricing.txt
+- `06:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_82_WebFetch_httpswwwplivocomvoicepricingng.txt
+- `06:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_83_WebSearch_Africas_Talking_voice_API_forward_calls_from_exter.txt
+- `06:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_84_WebFetch_httpswwwavoxicomcloud-communicationsvoiceinternatio.txt
+- `06:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_85_WebSearch_AVOXI_API_developer_documentation_webhooks_program.txt
+- `06:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_87_WebSearch_Vonage_voice_API_Nigeria_pricing_per_minute_inboun.txt
+- `06:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_86_WebSearch_AVOXI_API_developer_documentation_webhooks_program.txt
+- `07:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_88_WebFetch_httpswwwavoxicomsolutionsprogrammable-voice-api.txt
+- `07:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_89_WebFetch_httpswwwavoxicomapi-docs.txt
+- `07:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_90_WebFetch_httpsdevelopervonagecomenhome.txt
+- `07:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_91_WebSearch_Vonage_voice_API_Nigeria_phone_number_available_bu.txt
+- `07:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_92_WebSearch_Vonage_NCCO_webhook_call_control_play_record_gathe.txt
+- `07:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_93_WebSearch_Vonage_numbers_available_Nigeria_Africa_countries_.txt
+- `07:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_94_WebSearch_Africas_Talking_SIP_trunking_support_SIP_endpoint_.txt
+- `07:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_95_WebFetch_httpsconnectsipcom.txt
+- `07:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_96_WebSearch_ConnectSIP_Nigeria_pricing_SIP_trunk_toll-free_080.txt
+- `07:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_98_WebSearch_ConnectSIP_Nigeria_call_rates_outbound_inbound_102.txt
+- `07:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_97_WebFetch_httpsconnectsipcomservicessip-trunking-virtual-numb.txt
+- `07:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_99_WebFetch_httpsconnectsipcomsupportcall-rates.txt
+- `07:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_100_WebFetch_httpsconnectsipcomservicessip-trunking-virtual-numb.txt
+- `07:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_101_WebFetch_httpsconnectsipcomsupport.txt
+- `07:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_102_WebFetch_httpsconnectsipcomcontact.txt
+- `07:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_103_WebFetch_httpsmyconnectsipcom.txt
+- `07:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_104_WebFetch_httpsconnectsipcomapi.txt
+- `07:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_105_WebFetch_httpsconnectsipcomdocs.txt
+- `07:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_107_WebFetch_httpsconnectsipcomsupportfaqs.txt
+- `07:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_106_WebFetch_httpsconnectsipcomservices.txt
+- `07:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_108_WebSearch_ConnectSIP_review_Nigeria_SIP_trunking_experience.txt
+- `07:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_109_WebSearch_connectsipcom_review_OR_testimonial_OR_experience.txt
+- `07:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_110_WebFetch_httpssourceforgenetsoftwareproductConnectSIP.txt
+- `07:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_111_WebFetch_httpsconnectsipcomabout.txt
+- `07:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_112_WebSearch_ConnectSIP_Nigeria_Trustpilot_G2_Capterra_review.txt
+- `08:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_113_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_115_WebFetch_httpsoutsourcenigeriacomabout.txt
+- `08:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_114_WebFetch_httpsoutsourcenigeriacomcontact.txt
+- `08:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_116_WebSearch_outsource_nigeria_omni_channel_0800_toll-free_revi.txt
+- `08:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_117_WebFetch_httpsoutsourcenigeriacom.txt
+- `08:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_118_WebFetch_httpswwwflynumbercomproductsvirtual-phone-numbernig.txt
+- `08:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_119_WebFetch_httpsoutsourcenigeriacomour-approach.txt
+- `08:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_121_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_120_WebFetch_httpsoutsourcenigeriacomwhatsapp-customer-support-s.txt
+- `08:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_122_WebFetch_httpsoutsourcenigeriacomomni-channel-0800-toll-free.txt
+- `08:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_123_WebFetch_httpsoutsourcenigeriacomcall-center-solutions.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_124_WebFetch_httpsoutsourcenigeriacomsitemapxml.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_125_WebFetch_httpsoutsourcenigeriacompage-sitemapxml.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_126_WebFetch_httpsoutsourcenigeriacomenterprise-business-smart-n.txt
+- `08:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_127_WebFetch_httpsnetcatsolutionsngsip-trunk-service.txt
+- `08:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_128_WebFetch_httpsnetcatsolutionsngsip-trunk-service.txt
+- `08:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_129_WebFetch_httpsnetcatsolutionsngblog.txt
+- `08:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_130_WebFetch_httpsnetcatsolutionsng.txt
+- `08:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_131_WebSearch_netcatsolutionsng_SIP_trunk_setup_guide_Asterisk_c.txt
+- `09:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_132_WebFetch_httpswwwcommpeakcomservicesvirtual-numbers-didsnige.txt
+- `09:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_133_WebFetch_httpsdocscommpeakcom.txt
+- `09:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_134_WebFetch_httpsdocscommpeakcompageapi-reference.txt
+- `09:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_135_WebFetch_httpswwwcommpeakcomservicessip-trunking.txt
+- `09:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_136_WebFetch_httpswwwtermiicom.txt
+- `09:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_137_WebSearch_Termii_Nigeria_voice_calls_SIP_trunking_inbound_IV.txt
+- `10:20` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_138_WebFetch_httpswwwcommpeakcomservicesvirtual-numbers-dids.txt
+- `10:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_139_WebFetch_httpsdocscommpeakcom.txt
+- `10:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_140_WebFetch_httpswwwcommpeakcomsip-trunking.txt
+- `10:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_142_WebFetch_httpswwwcommpeakcomsip-trunking.txt
+- `10:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_141_WebFetch_httpsdocscommpeakcom.txt
+- `10:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_144_WebFetch_httpsdocscommpeakcomdocsdid-numbers.txt
+- `10:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_143_WebFetch_httpsdocscommpeakcomdocsportal.txt
+- `10:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_145_WebFetch_httpsdocscommpeakcomdocsdid-numbers.txt
+- `10:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_146_WebFetch_httpsdocscommpeakcomdocsdid-types.txt
+- `10:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_147_WebFetch_httpsdocscommpeakcomdocsdid-types.txt
+- `10:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_148_WebFetch_httpsdocscommpeakcomdocssip-account-configuration.txt
+- `22:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_149_WebFetch_httpsgithubcomhkjarralAsterisk-AI-Voice-Agent.txt
+- `22:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_150_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceoverview.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_152_WebSearch_Africas_Talking_SIP_trunk_setup_Asterisk_PBX_confi.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_151_WebSearch_Africas_Talking_voice_API_make_outbound_call_Pytho.txt
+- `22:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_153_WebFetch_httpshelpafricastalkingcomenarticles6049012-what-do.txt
+- `22:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_154_WebFetch_httpsdevtoarseytechfrom-code-to-conversation-master.txt
+- `20:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_03_WebFetch_httpshuggingfacecointronhealthafro-tts.txt
+- `01:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_155_WebSearch_best_app_name_psychology_memorable_brandable_short.txt
+- `01:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_156_WebSearch_psychology_behind_brand_names_that_sound_powerful_.txt
+- `04:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_00_WebSearch_DJI_Osmo_Pocket_3_magnetic_wall_mount_stick_to_wal.txt
+- `04:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_00_WebSearch_DJI_Osmo_Pocket_3_magnetic_wall_mount_stick_to_wal.txt
+- `04:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_01_WebSearch_DJI_Osmo_Action_5_Pro_vs_DJI_Osmo_Pocket_3_compari.txt
+- `04:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_01_WebSearch_DJI_Osmo_Action_5_Pro_vs_DJI_Osmo_Pocket_3_compari.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_03_WebSearch_DaVinci_Resolve_Studio_student_discount_free_licen.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_03_WebSearch_DaVinci_Resolve_Studio_student_discount_free_licen.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_02_WebSearch_Blackmagic_Design_DaVinci_Resolve_Studio_free_with.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_02_WebSearch_Blackmagic_Design_DaVinci_Resolve_Studio_free_with.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_04_WebSearch_get_DaVinci_Resolve_Studio_free_Blackmagic_hardwar.txt
+- `01:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_04_WebSearch_get_DaVinci_Resolve_Studio_free_Blackmagic_hardwar.txt
+- `01:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_05_WebSearch_Blackmagic_DaVinci_Resolve_Speed_Editor_with_Studi.txt
+- `01:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_05_WebSearch_Blackmagic_DaVinci_Resolve_Speed_Editor_with_Studi.txt
+- `01:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_06_WebSearch_DaVinci_Resolve_Studio_free_university_Wesleyan_ed.txt
+- `01:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_06_WebSearch_DaVinci_Resolve_Studio_free_university_Wesleyan_ed.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `02:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_13_Research_Resolve_caption_implementation.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_caption_implementation.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_13_Research_Resolve_caption_implementation.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_caption_implementation.txt
+- `05:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_14_Research_AI_video_analysis_tools.txt
+- `05:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_AI_video_analysis_tools.txt
+- `05:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_14_Research_AI_video_analysis_tools.txt
+- `05:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_AI_video_analysis_tools.txt
+
+## E4E / Sabi `86c89090` | 2026-03-16 | 3 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_00_WebSearch_Technovation_AI_Ventures_2026_accelerator_team_req.txt
+- `19:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_01_WebFetch_httpswwwtechnovationorgai-ventures-accelerator.txt
+- `19:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_02_WebSearch_Technovation_AI_Ventures_accelerator_2026_deadline.txt
+
+## Cortex `0d91dd3c` | 2026-03-16 | 11 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-cortex, -Users-naomiivie-cortex-web
+
+- `02:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_183_WebSearch_how_long_to_edit_worship_video_youtube_recording_e.txt
+- `02:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_182_WebSearch_how_long_does_it_take_to_edit_short_form_Christian.txt
+- `02:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_184_WebSearch_beginner_music_production_recording_one_song_how_l.txt
+- `02:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_185_WebSearch_AI_video_editing_platform_short_form_content_auto_.txt
+- `04:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_186_WebSearch_Spheres_relationship_management_app_iOS_2026.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_08_WebSearch_free_curriculum_review_organizations_foundational_.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_07_WebSearch_Teaching_at_the_Right_Level_TaRL_curriculum_review.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/0d91dd3c-6d8_Research_email_prioritization.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/0d91dd3c-6d8_00_Research_email_prioritization.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/0d91dd3c-6d8_Research_email_prioritization.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/0d91dd3c-6d8_00_Research_email_prioritization.txt
+
+## Bethel `e59a15e2` | 2026-03-18 | 128 files
+Folders: -Users-naomiivie-Downloads-App-Social-Media, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Social-Media, -Users-naomiivie-bethel
+
+- `04:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_186_WebSearch_Spheres_relationship_management_app_iOS_2026.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_08_WebSearch_free_curriculum_review_organizations_foundational_.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d72670bf-85b_07_WebSearch_Teaching_at_the_Right_Level_TaRL_curriculum_review.txt
+- `19:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_00_WebSearch_Technovation_AI_Ventures_2026_accelerator_team_req.txt
+- `19:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_01_WebFetch_httpswwwtechnovationorgai-ventures-accelerator.txt
+- `19:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/86c89090-9d0_02_WebSearch_Technovation_AI_Ventures_accelerator_2026_deadline.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_189_WebSearch_Kathryn_Kuhlman_The_Greatest_Power_in_the_World_PD.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_187_WebSearch_Kathryn_Kuhlman_I_Believe_in_Miracles_PDF_full_tex.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_188_WebSearch_Kenneth_E_Hagin_How_You_Can_Be_Led_by_the_Spirit_o.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_190_WebSearch_Kenneth_E_Hagin_I_Believe_in_Visions_PDF_full_text.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_191_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_193_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `23:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_192_WebFetch_httpswwwacademiaedu35891660The_Greatest_Power_in_th.txt
+- `23:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_194_WebFetch_httpsprorocheskiglasorgwp-contentuploads201805Kenne.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_197_WebSearch_YouVersion_Bible_app_features_2025_2026_chronologi.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_195_WebSearch_Bible_Project_Read_Scripture_app_chronological_Bib.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_198_WebSearch_Christian_dream_interpretation_app_prophetic_dream.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_196_WebSearch_AI_Bible_study_app_2025_2026_best_Bible_chatbot_ar.txt
+- `01:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_200_WebFetch_httpsfaithtoolsartificial-intelligence-ai.txt
+- `01:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_199_WebFetch_httpswwwdreamnlcom.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_03_WebSearch_DaVinci_Resolve_Studio_student_discount_free_licen.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_03_WebSearch_DaVinci_Resolve_Studio_student_discount_free_licen.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_02_WebSearch_Blackmagic_Design_DaVinci_Resolve_Studio_free_with.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_02_WebSearch_Blackmagic_Design_DaVinci_Resolve_Studio_free_with.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_04_WebSearch_get_DaVinci_Resolve_Studio_free_Blackmagic_hardwar.txt
+- `01:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_04_WebSearch_get_DaVinci_Resolve_Studio_free_Blackmagic_hardwar.txt
+- `01:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_05_WebSearch_Blackmagic_DaVinci_Resolve_Speed_Editor_with_Studi.txt
+- `01:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_05_WebSearch_Blackmagic_DaVinci_Resolve_Speed_Editor_with_Studi.txt
+- `01:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_06_WebSearch_DaVinci_Resolve_Studio_free_university_Wesleyan_ed.txt
+- `01:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_06_WebSearch_DaVinci_Resolve_Studio_free_university_Wesleyan_ed.txt
+- `02:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_201_WebSearch_John_Paul_Jackson_dream_interpretation_framework_c.txt
+- `02:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_202_WebSearch_Mark_Virkler_4_keys_to_hearing_Gods_voice_Charity_.txt
+- `02:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_203_WebSearch_Smith_Wigglesworth_visions_supernatural_experience.txt
+- `02:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_204_WebSearch_Charles_Spurgeon_dreams_visions_hearing_God_supern.txt
+- `02:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_206_WebSearch_CS_Lewis_dreams_supernatural_spiritual_experiences.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_205_WebSearch_John_Paul_Jackson_20_categories_of_dreams_dream_ty.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_207_WebSearch_prophetic_dream_journal_best_practices_how_to_reco.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_208_WebSearch_biblical_dream_symbols_water_fire_house_door_mount.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_209_WebFetch_httpswwwdestinyimagecomblogadrian-beale-prophetic-d.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_210_WebFetch_httpspropheticbibleschoolcomthe-gift-of-prophetic-d.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_211_WebFetch_httpsmycharismacomspiritled-livingsupernaturaldream.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_212_WebFetch_httpswwwdestinyimagecomblogadrian-beale-prophetic-d.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_213_WebFetch_httpspropheticbibleschoolcomthe-gift-of-prophetic-d.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_215_WebSearch_dream_interpretation_symbols_list_Bible_water_fire.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_214_WebSearch_Stephanie_Ike_Okafor_Power_of_Our_Dreams_book_teac.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_217_WebFetch_httpswaterbrookmultnomahcomwp-contentuploadspdfTHEP.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_216_WebFetch_httpsdavewilliamscomwp-contentuploads201809Helpful-.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_218_WebFetch_httpswwwdestinyimagecomblogtroy-brewer-prophetic-dr.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_220_WebFetch_httpswwwgoodreadscomenbookshow191746481-the-power-o.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_219_WebFetch_httpsstephanieikeokaforcombooks.txt
+- `17:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/296c88b8-ddf_06_WebSearch_Google_WAXAL_TTS_text-to-speech_African_languages_.txt
+- `20:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/c8aa3c78-c5c_00_WebSearch_macOS_system_data_110GB_too_large_how_to_fix_2025_.txt
+- `20:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/c8aa3c78-c5c_00_WebSearch_macOS_system_data_110GB_too_large_how_to_fix_2025_.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Find_Bethel_design_research_files.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_221_Find_Bethel_design_research_files.txt
+- `03:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Search_for_Bethel_conversation_logs.txt
+- `03:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_222_Search_for_Bethel_conversation_logs.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `04:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_conversation_log_1.txt
+- `04:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_01_Read_Bethel_conversation_log_1.txt
+- `04:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_conversation_log_2.txt
+- `04:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_02_Read_Bethel_conversation_log_2.txt
+- `04:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_research_files.txt
+- `04:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_00_Read_Bethel_research_files.txt
+- `05:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_03_Research_best_native_app_architecture.txt
+- `05:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Research_best_native_app_architecture.txt
+- `01:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Check_Claude_Code_hook_env_vars.txt
+- `01:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_04_Check_Claude_Code_hook_env_vars.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_bethel_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_09_Test_memory_bethel_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_08_Test_memory_E4E_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_E4E_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_06_Test_memory_cortex_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_cortex_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_05_Test_memory_Classes_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_Classes_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_Spheres_Mac_folder.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_07_Test_memory_Spheres_Mac_folder.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_11_Deep_test_E4E_all_21_sessions.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_E4E_all_21_sessions.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_12_Deep_test_Classes_all_40_sessions.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_Classes_all_40_sessions.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_Spheres_all_sessions.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_10_Deep_test_Spheres_all_sessions.txt
+- `03:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_13_Update_memory_Bethel.txt
+- `03:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_14_Update_memory_E4E.txt
+- `03:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_15_Update_memory_Cortex.txt
+- `03:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_16_Update_memory_Classes.txt
+- `03:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_17_Update_memory_Spheres_Mac.txt
+- `03:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_18_Update_memory_Social_Media.txt
+- `03:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_19_Update_memory_Cortex_retry.txt
+- `03:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_20_Build_memory_E4E_project.txt
+- `03:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_23_Build_memory_Cortex.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_21_Build_memory_Classes.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_24_Build_memory_Spheres_Mac.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_22_Build_memory_Social_Media.txt
+- `04:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_25_Update_Bethel_memory_from_new_txts.txt
+- `04:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_26_Stress_test_fresh_E4E_Claude.txt
+- `04:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_27_Stress_test_Sabi_research_recovery.txt
+- `05:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_28_Check_compaction_hooks_and_events.txt
+- `05:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_29_Verify_PostCompact_hook_exists.txt
+
+## E4E / Sabi `262aa5fe` | 2026-03-19 | 361 files
+Folders: -Users-naomiivie-Downloads-App-Social-Media, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Social-Media, -Users-naomiivie-bethel, -Users-naomiivie-cortex, -Users-naomiivie-cortex-web
+
+- `20:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/c8aa3c78-c5c_00_WebSearch_macOS_system_data_110GB_too_large_how_to_fix_2025_.txt
+- `20:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/c8aa3c78-c5c_00_WebSearch_macOS_system_data_110GB_too_large_how_to_fix_2025_.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_08_Research_Submagic_editing_style.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_07_Research_caption_style_for_Christian_music.txt
+- `21:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_caption_style_for_Christian_music.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_09_Search_all_conversation_history.txt
+- `02:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Search_all_conversation_history.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_color_theory_branding.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_branding_strategy.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_10_Research_viral_Christian_branding.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_viral_Christian_branding.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_subtitle_API_workaround.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_11_Research_Resolve_subtitle_API_workaround.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Find_Bethel_design_research_files.txt
+- `03:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_221_Find_Bethel_design_research_files.txt
+- `03:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_Search_for_Bethel_conversation_logs.txt
+- `03:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/efd7d7d2-3b9_222_Search_for_Bethel_conversation_logs.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_12_Research_DaVinci_color_grading_API.txt
+- `03:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_DaVinci_color_grading_API.txt
+- `04:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_conversation_log_1.txt
+- `04:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_01_Read_Bethel_conversation_log_1.txt
+- `04:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_conversation_log_2.txt
+- `04:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_02_Read_Bethel_conversation_log_2.txt
+- `04:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Read_Bethel_research_files.txt
+- `04:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_00_Read_Bethel_research_files.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_13_Research_Resolve_caption_implementation.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_caption_implementation.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_13_Research_Resolve_caption_implementation.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_Resolve_caption_implementation.txt
+- `05:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_14_Research_AI_video_analysis_tools.txt
+- `05:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/4db243fe-8c5_Research_AI_video_analysis_tools.txt
+- `05:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_14_Research_AI_video_analysis_tools.txt
+- `05:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/4db243fe-8c5_Research_AI_video_analysis_tools.txt
+- `05:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_03_Research_best_native_app_architecture.txt
+- `05:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Research_best_native_app_architecture.txt
+- `08:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/0d91dd3c-6d8_Research_email_prioritization.txt
+- `08:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/0d91dd3c-6d8_00_Research_email_prioritization.txt
+- `08:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/0d91dd3c-6d8_Research_email_prioritization.txt
+- `08:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/0d91dd3c-6d8_00_Research_email_prioritization.txt
+- `01:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Check_Claude_Code_hook_env_vars.txt
+- `01:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_04_Check_Claude_Code_hook_env_vars.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_bethel_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_09_Test_memory_bethel_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_08_Test_memory_E4E_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_E4E_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_06_Test_memory_cortex_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_cortex_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_05_Test_memory_Classes_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_Classes_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Test_memory_Spheres_Mac_folder.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_07_Test_memory_Spheres_Mac_folder.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_11_Deep_test_E4E_all_21_sessions.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_E4E_all_21_sessions.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_12_Deep_test_Classes_all_40_sessions.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_Classes_all_40_sessions.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_Deep_test_Spheres_all_sessions.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_10_Deep_test_Spheres_all_sessions.txt
+- `03:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_13_Update_memory_Bethel.txt
+- `03:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_14_Update_memory_E4E.txt
+- `03:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_15_Update_memory_Cortex.txt
+- `03:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_16_Update_memory_Classes.txt
+- `03:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_17_Update_memory_Spheres_Mac.txt
+- `03:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_18_Update_memory_Social_Media.txt
+- `03:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_19_Update_memory_Cortex_retry.txt
+- `03:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_20_Build_memory_E4E_project.txt
+- `03:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_23_Build_memory_Cortex.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_21_Build_memory_Classes.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_24_Build_memory_Spheres_Mac.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_22_Build_memory_Social_Media.txt
+- `04:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_25_Update_Bethel_memory_from_new_txts.txt
+- `04:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_26_Stress_test_fresh_E4E_Claude.txt
+- `04:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_27_Stress_test_Sabi_research_recovery.txt
+- `05:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_28_Check_compaction_hooks_and_events.txt
+- `05:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/e59a15e2-07e_29_Verify_PostCompact_hook_exists.txt
+- `06:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/ae7bcad0-675_00_Search_for_context_window_check.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_00_Read_089265f6__1f61b0ac_research.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_01_Read_3c482910_curriculum_research.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_02_Read_7464be26__6c9f77c4_research.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_03_Read_efd7d7d2_research_part_1.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_04_Read_efd7d7d2_research_part_2.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_05_Read_f19ca767_research_files.txt
+- `19:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_06_Read_ff1faa52296c88b8df072af586c89090d72670bf_research.txt
+- `19:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_07_Re-read_efd7d7d2_research_00-99.txt
+- `23:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_08_Read_296c88b8_session_transcript.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_09_Read_ff1faa52_session_fully.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_10_Read_efd7d7d2_session_fully.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_11_Read_f19ca767_session_fully.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_12_Read_7464be26_session_fully.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_13_Read_d72670bfbb7be0f1smaller_sessions.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_14_Read_ff1faa52_raw_transcript_chunks_1-6.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_15_Read_all_numbered_folder_MD_files.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_16_Read_all_Solution__Pitch_MD_files.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_17_Read_all_telephony__infrastructure_research.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_18_Read_all_sabi-server_Python_code.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_19_Read_all_curriculum-app_code.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_20_Read_remaining_session_transcripts.txt
+- `03:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_21_WebSearch_SBM_Intelligence_Nigeria_40_billion_education_prod.txt
+- `03:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_22_WebSearch_Nigeria_40_cannot_afford_internet_access_mobile_da.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_23_WebSearch_SBM_Intelligence_Nigeria_education_40_billion_prod.txt
+- `04:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_24_WebSearch_sitesbmintelcom_education_40_billion_Nigeria.txt
+- `04:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_25_WebSearch_sitesbmintelcom_education_Nigeria.txt
+- `04:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_26_WebSearch_Associates_for_Change_Nigeria_education_40_billion.txt
+- `04:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_27_WebSearch_World_Bank_Human_Capital_Index_Plus_HCI_2026_Niger.txt
+- `04:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_28_WebSearch_World_Bank_HCI_2026_Nigeria_press_release_111_defi.txt
+- `04:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_29_WebSearch_World_Bank_20_labor_earnings_education_Nigeria_HCI.txt
+- `04:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_30_WebSearch_World_Bank_21_trillion_learning_crisis_lifetime_ea.txt
+- `04:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_31_WebSearch_World_Bank_Nigeria_education_cost_out-of-school_ch.txt
+- `04:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_32_WebSearch_Nigeria_GDP_2025_2026_current_USD_billions_World_B.txt
+- `04:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_34_WebSearch_Nigeria_education_crisis_economic_cost_GDP_billion.txt
+- `04:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_35_WebSearch_cost_of_learning_poverty_Nigeria_GDP_productivity_.txt
+- `04:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_33_WebSearch_Nigeria_out-of-school_children_economic_cost_lifet.txt
+- `04:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_36_WebSearch_World_Bank_HCI_2026_Nigeria_education_pillar_score.txt
+- `04:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_37_WebSearch_World_Bank_HCI_Plus_methodology_education_pillar_v.txt
+- `04:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_38_WebSearch_sitehumancapitalworldbankorg_Nigeria_economy_NGA_p.txt
+- `04:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_39_WebSearch_Mirage_News_Nigeria_skills_nutrition_deficits_slas.txt
+- `04:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_40_WebFetch_httpshumancapitalworldbankorgcontentdamsitesdatahum.txt
+- `04:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_41_WebFetch_httpshumancapitalworldbankorgeneconomyNGA.txt
+- `04:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_42_WebFetch_httpswwwmiragenewscomnigeria-skills-nutrition-defic.txt
+- `04:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_43_WebFetch_httpshumancapitalworldbankorghciplusmethodology.txt
+- `04:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_44_WebFetch_httpsopenknowledgeworldbankorgentitiespublication8c.txt
+- `04:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_45_WebSearch_World_Bank_HCI_additive_pillars_decomposition_educ.txt
+- `04:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_46_WebFetch_httpsopenknowledgeworldbankorgserverapicorebitstrea.txt
+- `05:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_47_WebFetch_httpshumancapitalworldbankorghciplusinsightsindicat.txt
+- `05:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_48_WebSearch_World_Bank_Nigeria_learning_poverty_726_2024_sourc.txt
+- `05:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_49_WebFetch_httpshumancapitalworldbankorgenindicatorWB_HCP_SE_L.txt
+- `05:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_50_WebSearch_DataReportal_Digital_2025_Nigeria_internet_users_1.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_51_WebFetch_httpswwwassociatesforchangeorgnew-reports-2022Econo.txt
+- `05:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_52_WebFetch_httpswwwassociatesforchangeorg.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_53_WebSearch_Milan_Burnett_2014_Exclusion_from_Education_Econom.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_54_WebSearch_Nigeria_MICS_2013_out-of-school_children_105_milli.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_55_WebSearch_Aromolaran_2004_wage_returns_to_schooling_in_Niger.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_56_WebSearch_Milan_Burnett_2014_Exclusion_from_Education_econom.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_57_WebSearch_Psacharopoulos_Patrinos_2004_returns_to_education_.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_58_WebSearch_Barro_Lee_2010_new_data_set_educational_attainment.txt
+- `05:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_59_WebFetch_httpswwweducationaboveallorgsitesdefaultfilesresear.txt
+- `05:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_60_WebFetch_httpswwwacademiaedu11627189Wage_Returns_to_Schoolin.txt
+- `05:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_61_WebSearch_Nigeria_primary_to_secondary_school_transition_rat.txt
+- `05:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_62_WebSearch_Milan_Burnett_2014_methodology_wage_premium_primar.txt
+- `05:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_63_WebFetch_httpsdocsedtechhuborglibXJX65WUX.txt
+- `06:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_64_WebSearch_Richard_Ivie_Corruption_Observatory_Nigeria_anti-c.txt
+- `06:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_65_WebSearch_Sonia_Ivie_EKOEXCEL_NewGlobe_Lagos_education_Niger.txt
+- `08:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_66_WebSearch_optimal_duration_usability_testing_educational_tec.txt
+- `08:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_67_WebSearch_Lagos_LASUBEB_high_burden_LGA_out_of_school_childr.txt
+- `08:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_68_WebFetch_httpspunchngcom10-lagos-lgs-have-highest-number-of-.txt
+- `08:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_69_WebSearch_Lagos_local_government_out_of_school_children_Ajer.txt
+- `08:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_70_WebFetch_httpswwwdataphytecomlatest-reportseducation-develop.txt
+- `08:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_71_WebSearch_ConnectEd_phone_tutoring_pilot_duration_weeks_chil.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_74_WebSearch_Global_Learning_XPRIZE_Tanzania_daily_schedule_str.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_73_WebSearch_interleaved_vs_blocked_practice_literacy_numeracy_.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_72_WebSearch_Pratham_TaRL_daily_schedule_literacy_numeracy_alte.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_76_WebSearch_onebillion_onecourse_Tanzania_daily_usage_hours_li.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_75_WebFetch_httpskitkitschoolcomdocImpact-Brief-Update-XPRIZE-3.txt
+- `22:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_77_WebSearch_Hetzner_dedicated_GPU_server_RTX_4090_RTX_6000_Ada.txt
+- `22:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_78_WebFetch_httpswwwhetznercomdedicated-rootservermatrix-gpu.txt
+- `22:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_79_WebSearch_Cerebras_inference_API_pricing_per_token_2026_Llam.txt
+- `00:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_80_WebSearch_economic_returns_literacy_vs_numeracy_separately_w.txt
+- `00:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_81_WebFetch_httpswolizaorgarticleswhat-is-economic-value-of-lit.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_82_WebSearch_Nigeria_public_school_infrastructure_crisis_classr.txt
+- `01:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_83_WebSearch_Nigeria_primary_school_physical_conditions_UBEC_in.txt
+- `02:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_85_WebSearch_can_feature_phone_display_USSD_during_voice_call_s.txt
+- `02:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_84_WebSearch_USSD_during_active_call_feature_phone_Africa_Niger.txt
+- `02:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_86_WebSearch_USSD_during_call_OR_USSD_while_on_call_feature_pho.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_89_WebSearch_Africas_Talking_USSD_push_notification_network-ini.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_87_WebSearch_network-initiated_USSD_push_during_voice_call_GSM_.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_88_WebSearch_USSD_push_API_send_text_to_phone_during_active_cal.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_90_WebFetch_httpsdevelopersafricastalkingcomdocsussdnotificatio.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_91_WebFetch_httpswwwalwaysactivemobilecozawp-contentuploads2019.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_92_WebSearch_call_related_USSD_GSM_0390_display_text_during_voi.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_93_WebSearch_Africas_Talking_USSD_push_Nigeria_network-initiate.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_94_WebSearch_Alpha_Technologies_Nigeria_USSD_push_network-initi.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_95_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_USSD_push_network-i.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_96_WebFetch_httpshelpafricastalkingcomenarticles2298228-how-do-.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_97_WebFetch_httpswwwcellfindnetzacfpniussd.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_98_WebFetch_httpsvas2netscom.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_99_WebFetch_httpsupperlinkngtelecoms.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_100_WebFetch_httpswwwintervascomussd.txt
+- `02:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_101_WebFetch_httpsalphatechnologieslimitedcom.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_102_WebSearch_Nigeria_USSD_push_network-initiated_provider_OTP_b.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_103_WebSearch_Nigeria_VAS_aggregator_NI-USSD_network_initiated_U.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_105_WebFetch_httpsinfotekpscomussdhtml.txt
+- `02:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_104_WebFetch_httpswwwshortcodenigeriacom.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_106_WebSearch_USSD_push_OR_NI-USSD_OR_network_initiated_USSD_pro.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_108_WebSearch_Nigeria_USSD_gateway_provider_OTP_push_bank_authen.txt
+- `02:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_107_WebSearch_Creditswitch_Upperlink_xplora_technologies_USSD_pu.txt
+- `21:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_109_WebFetch_httpsdevelopersmtncomproductsussd.txt
+- `21:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_110_WebSearch_Creditswitch_Nigeria_USSD_push_mobile_terminated_N.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_111_WebFetch_httpsdeveloperscreditswitchcom.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_112_WebFetch_httpswwwcreditswitchcom.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_113_WebSearch_Nigeria_USSD_push_provider_network_initiated_OR_mo.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_115_WebFetch_httpsguidesclickatellcomchat-commerce-platformplatf.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_114_WebFetch_httpswwwinfobipcomnewsussd-and-2-way-sms-coverage-i.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_116_WebFetch_httpswwwtelerivetcomproductussd.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_117_WebSearch_Qrios_Nigeria_USSD_push_OR_Upperlink_Nigeria_USSD_.txt
+- `21:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_118_WebSearch_Infobip_Nigeria_USSD_push_network_initiated_OR_MT-.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_119_WebSearch_Ibrahim_Hassan_Hadejia_Deputy_Chief_of_Staff_Niger.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_121_WebSearch_Kola_Aina_Ventures_Platform_Fund_Nigeria_edtech_in.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_120_WebSearch_Bunmi_Akinyemiju_Venture_Garden_Group_Nigeria_tech.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_122_WebSearch_Jeffrey_Sachs_Africa_education_sustainable_develop.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_124_WebSearch_Mohamed_El-Kalla_CIRA_Education_Egypt_Africa_edtec.txt
+- `11:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_123_WebSearch_Javier_Lozano_Clinicas_del_Azucar_Mexico_base_of_p.txt
+- `11:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_125_WebSearch_Daron_Acemoglu_Nobel_Prize_2024_institutions_devel.txt
+- `11:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_126_WebSearch_Sandeep_Farias_Elevar_Equity_impact_investing_educ.txt
+- `15:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_129_WebSearch_Abdulakhad_Kuchkarov_IT_Park_Uzbekistan_advisor_te.txt
+- `15:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_127_WebSearch_Kgothatso_Meka_Tiego_Capital_MIT_Foundry_Fellow_So.txt
+- `15:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_128_WebSearch_Dr_Abeer_Al-Humaimeedy_Associate_Professor_Softwar.txt
+- `15:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_131_WebSearch_Theodora_Skeadas_Humane_Intelligence_AI_Red_Teamin.txt
+- `15:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_130_WebSearch_Hassan_Fayed_Aydi_Technologies_CEO_Egypt_founder.txt
+- `16:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_132_WebSearch_what_Africa_early_stage_VC_looking_for_pre-seed_ed.txt
+- `16:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_133_WebSearch_should_nonprofit_social_enterprise_take_VC_money_d.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_134_WebSearch_Engagefully_networking_app_conference_attendee_mes.txt
+- `16:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_136_WebSearch_Bunmi_Akinyemiju_GreenHouse_Capital_portfolio_inve.txt
+- `16:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_135_WebSearch_Bunmi_Akinyemiju_education_interview_talent_pipeli.txt
+- `16:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_137_WebSearch_Chinelo_Anohu_Mutandis_Africa_Group_founder_CEO_ba.txt
+- `16:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_138_WebSearch_Chinelo_Anohu_Africa_Investment_Forum_AfDB_capital.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_139_WebSearch_Amr_El_Abd_Endeavor_MENA_CEO_Egypt_entrepreneurshi.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_141_WebSearch_Heather_Henyon_Mindshift_Capital_portfolio_women_f.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_140_WebSearch_Jason_Jay_MIT_Sloan_Sustainability_Initiative_rese.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_142_WebSearch_Kola_Aina_interview_thesis_AI_founders_Nigerian_St.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_143_WebSearch_Sandeep_Farias_Elevar_Equity_education_investments.txt
+- `17:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_144_WebSearch_Bunmi_Akinyemiju_Vibranium_Valley_interview_Flutte.txt
+- `18:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_145_WebSearch_MIT_Kuo_Sharper_Center_2026_conference_The_New_Cal.txt
+- `18:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_146_WebSearch_Kuo_Sharper_Center_MIT_conference_2026_panel_agend.txt
+- `01:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_147_WebSearch_sabiai_company_website_voice_AI_tutor.txt
+- `01:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_148_WebSearch_sabi_Bakame_Africa_voice_AI_education_startup_comp.txt
+- `01:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_149_WebSearch_sabi_Nigeria_startup_company_trademark_e-commerce_.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_150_WebSearch_trusted_by_logo_section_website_UX_best_practices_.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_151_WebSearch_trusted_by_logo_bar_nonprofit_website_grayscale_co.txt
+- `02:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_152_WebSearch_naming_former_employer_advisor_bio_startup_mislead.txt
+- `02:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_153_WebSearch_advisors_include_former_from_startup_website_credi.txt
+- `02:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_154_WebSearch_bakameai_website_partners_supported_by_funded_by_l.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_155_WebSearch_Education_for_Equality_Sabi_Nigeria_AI_voice_tutor.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_156_WebSearch_sabieduforequalityorg_OR_eduforequalityorg.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_157_WebSearch_Naomi_Ivie_Wesleyan_MIT_Africa_Business_Challenge_.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_159_WebFetch_httpswwwwesleyaneduaboutnews202604patricelli-center.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_158_WebSearch_Sabi_Nigeria_literacy_phone_call_AI_tutor_MorganHa.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_160_WebFetch_httpswwwinstagramcom_educationforequality.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_162_WebSearch_Naomi_Ivie_Sabi_LinkedIn_Twitter_Education_for_Equ.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_161_WebSearch_Sabi_Wesleyan_Patricelli_Center_Naomi_Ivie_press_c.txt
+- `02:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_163_WebSearch_Lagos_Nigeria_average_salary_monthly_2026_NGN_mini.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_164_WebSearch_program_coordinator_Lagos_NGO_salary_2026_monthly_.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_165_WebSearch_field_officer_OR_field_coordinator_Lagos_Nigeria_N.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_166_WebSearch_Lagos_Nigeria_field_officer_Mushin_community_educa.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_167_WebFetch_httpswwwpayscalecomresearchNGJobProgram_Coordinator.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_169_WebSearch_Lagos_community_health_worker_education_field_work.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_168_WebFetch_httpswwwnexfordeduinsightshighest-paying-ngo-jobs-i.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_170_WebSearch_Jobberman_Lagos_field_coordinator_NGO_salary_entry.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_171_WebFetch_httpswwwjobbermancomjobsngo-npo-charitylagos.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_173_WebSearch_NewGlobe_OR_EKOEXCEL_Lagos_salary_teacher_coordina.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_172_WebSearch_Lagos_NGO_project_officer_field_officer_salary_202.txt
+- `02:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_174_WebSearch_Lagos_cost_of_living_2026_family_rent_transport_fo.txt
+- `02:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_175_WebSearch_Wesleyan_University_student_forum_05_credit_course.txt
+- `02:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_176_WebFetch_httpsnigerianfoodprojectvercelapp.txt
+- `02:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_177_WebFetch_httpswwwwesleyaneduregistrarcourse_informationStude.txt
+- `02:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_178_WebFetch_httpsnigerianfoodprojectvercelapp.txt
+- `02:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_180_WebFetch_httpswwwwesleyaneduregistrarcourse_informationstude.txt
+- `02:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_179_WebSearch_Wesleyan_University_Bayit_kitchen_Long_Lane_Farm_U.txt
+- `02:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_181_WebSearch_Wesleyan_University_student_forum_syllabus_example.txt
+- `02:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_182_WebSearch_Connecticut_cottage_food_law_2026_residential_kitc.txt
+- `02:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_184_WebFetch_httpsforragercomlawconnecticut.txt
+- `02:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_183_WebSearch_Wesleyan_student-run_business_club_Patricelli_Cent.txt
+- `02:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_186_WebSearch_Wesleyan_University_commercial_kitchen_rental_food.txt
+- `02:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_185_WebSearch_Wesleyan_student_forum_cooking_class_culinary_kitc.txt
+- `02:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_187_WebFetch_httpswwwwesleyanedustudentinvolvementeventplanningr.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_189_WebSearch_Middletown_Connecticut_commercial_kitchen_rent_sha.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_188_WebSearch_Wesleyan_course_assistant_student_leader_stipend_p.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_191_WebSearch_Wesleyan_Espwesso_student_cafe_coffee_shop_run_by_.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_190_WebSearch_Wesleyan_cultural_houses_La_Casa_Malcolm_X_Womanis.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_192_WebSearch_Wesleyan_University_WSA_student_government_free_fo.txt
+- `03:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_193_WebSearch_Wesleyan_University_bake_sale_student_club_fundrai.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_194_WebSearch_Wesleyan_University_Malcolm_X_House_food_dinner_ev.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_197_WebSearch_Wesleyan_University_Foodstock_event_farm_food_sust.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_195_WebSearch_Wesleyan_University_Bayit_kosher_kitchen_Shabbat_d.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_196_WebSearch_Wesleyan_University_Long_Lane_Farm_cooking_communi.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_200_WebSearch_Wesleyan_University_Student_of_Color_Barbecue_SOC_.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_198_WebSearch_Wesleyan_University_Espwesso_student-run_cafe_Allb.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_201_WebSearch_Wesleyan_University_La_Casa_Latinx_Ubuntu_cultural.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_199_WebSearch_Wesleyan_University_WesNest_student_food_fundraise.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_203_WebSearch_Wesleyan_University_La_Casa_Albizu_Campos_Latinx_f.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_202_WebSearch_Wesleyan_University_WestCo_Eclectic_dining_program.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_204_WebSearch_Wesleyan_University_AAA_House_Asian_American_ident.txt
+- `03:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_205_WebSearch_Wesleyan_University_free_food_faculty_department_d.txt
+- `03:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_209_WebFetch_httpsnewsletterblogswesleyanedu20150302espwesso.txt
+- `03:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_206_WebSearch_Espwesso_Wesleyan_founding_history_student_leaders.txt
+- `03:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_208_WebSearch_Wesleyan_University_Star_and_Crescent_dining_progr.txt
+- `03:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_207_WebSearch_Wesleyan_SOC_BBQ_Malcolm_X_House_catered_Bon_Appet.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_212_WebFetch_httpwesleyanarguscom20100216allbritton-92-offers-to.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_210_WebFetch_httpwesleyanarguscom20210318espwesso-reopens-after-.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_213_WebFetch_httpswesleyanarguscom20200211good-food-is-part-of-o.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_211_WebSearch_Wesleyan_University_Argus_bake_sale_club_fundraise.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_217_WebSearch_Wesleyan_Espwesso_student_employees_hired_paid_wag.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_215_WebSearch_Wesleyan_Bayit_weekly_Shabbat_dinner_cooking_volun.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_214_WebSearch_Wesleyan_Open_House_Buddhist_House_Womanist_Outhou.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_216_WebSearch_Wesleyan_WesWings_Summerfields_Pi_cafe_student_wor.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_219_WebSearch_Wesleyan_University_Local_Food_Co-op_weekly_orders.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_220_WebFetch_httpswwwwesleyanedustudentinvolvementeventplanningr.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_218_WebSearch_Wesleyan_student_forum_419_420_cooking_food_exampl.txt
+- `21:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_221_Read_folder_context_for_Sabi_plan.txt
+- `21:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_222_Research_board_mgmt__cofounder_finding.txt
+- `21:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_223_Research_curriculum_validation__telecom_CSR__legal_structure.txt
+- `19:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_224_WebSearch_MIT_Solve_2026_Global_Challenges_application_deadl.txt
+- `19:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_225_WebSearch_global_social_impact_grants_2026_nonprofit_educati.txt
+- `19:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_226_WebSearch_Echoing_Green_Fellowship_2026_application_deadline.txt
+- `19:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_227_WebSearch_MIT_Solve_winner_selection_criteria_what_judges_lo.txt
+- `19:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_228_WebSearch_MIT_Solve_2025_2024_education_winners_Solver_teams.txt
+- `19:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_229_WebFetch_httpssolvemiteduinnovatorsbecome-a-solver.txt
+- `18:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_230_Deep_read_sabi-server_Python_codebase.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_233_Deep_read_curriculum-app_routes__API.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_231_Deep_read_curriculum-app_lib__components.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_232_Deep_read_content_scripts_docs.txt
+- `21:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_234_WebSearch_Africas_Talking_dashboard_generate_api_key_verific.txt
+- `21:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_235_WebFetch_httpshelpafricastalkingcomenarticles1361037-how-do-.txt
+- `21:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_236_WebSearch_Africas_Talking_voice_callback_URL_production_numb.txt
+- `21:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_237_WebFetch_httpshelpafricastalkingcomenarticles2206161-how-do-.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_238_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceoverview.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_239_WebSearch_africastalking_Voice_Phone_Numbers_production_Requ.txt
+- `21:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_240_WebFetch_httpshelpafricastalkingcomenarticles2282146-what-ty.txt
+- `21:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_241_WebFetch_httpshelpafricastalkingcomenarticles11532610-voice-.txt
+- `17:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_242_Research_what_corporate_funders_require_for_grants.txt
+- `19:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_243_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceoverview.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_244_WebSearch_cheapest_way_call_Nigeria_from_USA_free_app_2026_i.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_245_WebSearch_PopTox_free_call_Nigeria_works_browser_instant_no_.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_246_WebFetch_httpswwwpoptoxcomNigeria.txt
+- `19:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_247_WebSearch_Skype_shut_down_May_2025_Microsoft_Teams_replaceme.txt
+- `20:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_248_WebSearch_Africas_Talking_voice_XML_Record_element_callback_.txt
+- `20:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_249_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceactionsrec.txt
+- `20:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_250_WebSearch_africastalking_voice_Record_xml_example_finishOnKe.txt
+- `20:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_251_WebFetch_httpsgithubcomAfricasTalkingLtdafricastalking-phpbl.txt
+- `20:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_252_WebSearch_africastalking_Record_XML_recordingUrl_callback_PO.txt
+- `20:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_253_WebFetch_httpsgithubcomjumamillerAT.txt
+- `20:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_254_WebFetch_httpsgithubcomgetsentrysentry-for-aiblobmainskillss.txt
+- `20:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_255_WebFetch_httpsrawgithubusercontentcomgetsentrysentry-for-aim.txt
+- `16:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_256_WebSearch_Africas_Talking_voice_API_REST_fetch_call_recordin.txt
+- `16:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_257_WebFetch_httpshelpafricastalkingcomenarticles2232953-what-ar.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_258_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceactionsrec.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_259_WebSearch_africastalking_record_callbackUrl_webhook_timing_d.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_260_WebFetch_httpshelpafricastalkingcomenarticles2900701-impleme.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_261_WebFetch_httpsdevtoarseytechfrom-code-to-conversation-master.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_262_WebFetch_httpsdevelopersafricastalkingcomdocsvoicehandle_cal.txt
+- `17:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_263_WebFetch_httpsrawgithubusercontentcomAfricasTalkingLtdafrica.txt
+- `17:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_264_WebSearch_africastalking_Record_callback_returns_new_XML_con.txt
+- `17:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_265_WebFetch_httpsafricastalkingltdgitbooksiomobile-communicatio.txt
+- `17:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_266_WebFetch_httpsdevelopersafricastalkingcomdocsvoiceSIP.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_267_WebSearch_africastalking_SIP_trunk_pricing_per_minute_Nigeri.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_268_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_269_WebFetch_httpshelpafricastalkingcomenarticles12318772-consol.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_270_WebFetch_httpshelpafricastalkingcomenarticles2278695-how-do-.txt
+
+## E4E / Sabi `fc4f9b6d` | 2026-03-25 | 42 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-cortex, -Users-naomiivie-cortex-web
+
+- `19:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/b54cf4f5-616_00_Research_social_media_data_access_without_APIs.txt
+- `19:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/b54cf4f5-616_00_Research_social_media_data_access_without_APIs.txt
+- `23:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_08_Read_296c88b8_session_transcript.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_09_Read_ff1faa52_session_fully.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_10_Read_efd7d7d2_session_fully.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_11_Read_f19ca767_session_fully.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_12_Read_7464be26_session_fully.txt
+- `02:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_00_Read_ff1faa52_session_fully.txt
+- `02:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_01_Read_efd7d7d2_session_fully.txt
+- `02:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_02_Read_f19ca767_session_fully.txt
+- `02:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_03_Read_7464be26_session_fully.txt
+- `04:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_04_WebSearch_ChatGPT_voice_mode_URL_structure_SaaS_product_demo.txt
+- `04:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_05_WebSearch_AI_voice_chat_demo_page_URL_naming_convention_best.txt
+- `04:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_06_WebSearch_best_URL_paths_for_AI_product_demo_voice_chat_talk.txt
+- `06:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_08_WebSearch_Qwen3-TTS_install_setup_pip_Docker_GPU_self-hosted.txt
+- `06:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_07_WebSearch_Qwen3-TTS_06B_huggingface_model_natural_language_p.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_09_WebSearch_Qwen3-TTS_pip_install_package_name_pip_install_qwe.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_10_WebSearch_ElevenLabs_voice_AI_training_architecture_how_they.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_12_WebSearch_Qwen3-TTS_custom_voice_instruct_prompt_engineering.txt
+- `08:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_11_WebSearch_how_to_train_natural_sounding_TTS_model_like_Eleve.txt
+- `08:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_13_WebSearch_ElevenLabs_training_data_million_hours_speech_how_.txt
+- `08:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_14_WebSearch_train_custom_TTS_Nigerian_English_accent_fine-tune.txt
+- `08:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_15_WebSearch_1000_African_Voices_TTS_paper_Nigerian_accent_trai.txt
+- `08:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_16_WebSearch_Qwen3-TTS_fine-tune_custom_accent_voice_training_h.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_18_WebSearch_YarnGPT_Nigerian_TTS_how_built_architecture_traini.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_17_WebSearch_YarnGPT_TTS_GitHub_model_architecture_how_trained_.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_19_WebSearch_YarnGPT_open_source_model_training_approach_Nigeri.txt
+- `08:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_20_WebSearch_YarnGPT_SmolLM2_WavTokenizer_training_recipe_Niger.txt
+- `08:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_22_WebSearch_YarnGPT_training_data_size_hours_Nigerian_movies_p.txt
+- `08:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_21_WebSearch_YarnGPT_saheedniyi_Hugging_Face_dataset_size_train.txt
+- `08:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_23_WebSearch_YarnGPT_hours_OR_minutes_OR_dataset_size_OR_2_mill.txt
+- `08:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_24_WebSearch_YarnGPT_training_dataset_publicly_available_downlo.txt
+- `08:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_25_WebSearch_saheedniyi02_yarngpt_github_training_data_dataset_.txt
+- `09:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_26_WebSearch_YarnGPT_sold_acquired_2026_Azeez_Saheed_acquisitio.txt
+- `09:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_27_WebSearch_YarnGPT_sold_company_sale_2026_Nigeria_TTS_startup.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_31_WebSearch_how_to_build_TTS_training_dataset_from_YouTube_mov.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_28_WebSearch_Nollywood_movies_YouTube_free_full_movies_with_sub.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_30_WebSearch_Nigerian_podcast_dataset_audio_transcription_pairs.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_29_WebSearch_YarnGPT_training_data_collection_pipeline_Nigerian.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_32_WebSearch_Nigerian_Common_Voice_dataset_158_hours_HuggingFac.txt
+- `09:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_33_WebSearch_KATube_youtube_TTS_dataset_generator_how_to_use_pl.txt
+- `09:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/fc4f9b6d-580_34_WebSearch_Azeez_Saheed_YarnGPT_email_contact_saheedniyi_Link.txt
+
+## E4E / Sabi `c7a3a199` | 2026-03-30 | 44 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes, -Users-naomiivie-bethel
+
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_01_Research_Parsec_Financial.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_02_Research_Chequers_Financial_Mgmt.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_00_Research_41_acquisition_framework.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_01_WebSearch_Calendly_alternatives_individual_users_pricing_fre.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_03_WebSearch_Calendly_main_competitors_2025_2026_scheduling_too.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_02_WebSearch_Calendly_complaints_pain_points_why_people_switch_.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_00_WebSearch_Calcom_SavvyCal_TidyCal_customer_acquisition_strat.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_06_WebFetch_httpslunacalaicomparecalendly-alternative.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_05_WebSearch_TidyCal_AppSumo_lifetime_deal_customer_acquisition.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_04_WebFetch_httpszeegmeenblogpostcalendly-pros-and-cons-review.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_08_WebSearch_Acuity_Scheduling_Squarespace_individual_customer_.txt
+- `20:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_07_WebSearch_Calcom_open_source_scheduling_growth_strategy_Prod.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_09_WebSearch_SavvyCal_Derrick_Reimer_indie_growth_strategy_mark.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_10_WebSearch_Doodle_scheduling_growth_strategy_freemium_individ.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_12_WebSearch_Reclaimai_scheduling_growth_strategy_AI_marketing_.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_11_WebSearch_Chili_Piper_Lemcal_Zeeg_scheduling_tools_individua.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_13_WebFetch_httpscanvasbusinessmodelcomblogsgrowth-strategyrecl.txt
+- `20:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_14_WebSearch_scheduling_app_SEO_content_marketing_strategy_Cale.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/95664b74-484_01_Find_all_problem_sets.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/95664b74-484_00_Find_all_lecture_slides.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_02_Extract_Lecture_3_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_01_Extract_Lecture_2_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_00_Extract_Lecture_1_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_03_Extract_Lecture_4_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_04_Extract_Lecture_5_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_05_Extract_Lecture_6_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_06_Extract_Lecture_7_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_07_Extract_Lecture_8_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_08_Extract_Lecture_9_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_09_Extract_Lecture_10_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_10_Extract_Lecture_11_handout.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_74_WebSearch_Global_Learning_XPRIZE_Tanzania_daily_schedule_str.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_73_WebSearch_interleaved_vs_blocked_practice_literacy_numeracy_.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_72_WebSearch_Pratham_TaRL_daily_schedule_literacy_numeracy_alte.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_76_WebSearch_onebillion_onecourse_Tanzania_daily_usage_hours_li.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_75_WebFetch_httpskitkitschoolcomdocImpact-Brief-Update-XPRIZE-3.txt
+- `16:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_00_Research_board_members_experience.txt
+- `16:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_01_Research_Folashade_Adefisayo.txt
+- `19:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_02_Research_grant_writing_best_practices.txt
+- `19:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_03_Research_Purdue_OWL_writing_tips.txt
+- `23:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_04_Research_embedded_marketing_models.txt
+- `01:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_05_Research_audio_ad_CPM_rates_Africa.txt
+- `01:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_06_Research_industry_standard_embedded_marketing_pricing.txt
+- `07:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_07_Research_govt_edtech_contract_pricing.txt
+
+## E4E / Sabi `c7a8b090` | 2026-03-31 | 84 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/95664b74-484_01_Find_all_problem_sets.txt
+- `00:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/95664b74-484_00_Find_all_lecture_slides.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_02_Extract_Lecture_3_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_01_Extract_Lecture_2_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_00_Extract_Lecture_1_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_03_Extract_Lecture_4_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_04_Extract_Lecture_5_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_05_Extract_Lecture_6_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_06_Extract_Lecture_7_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_07_Extract_Lecture_8_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_08_Extract_Lecture_9_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_09_Extract_Lecture_10_handout.txt
+- `01:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_10_Extract_Lecture_11_handout.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_74_WebSearch_Global_Learning_XPRIZE_Tanzania_daily_schedule_str.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_73_WebSearch_interleaved_vs_blocked_practice_literacy_numeracy_.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_72_WebSearch_Pratham_TaRL_daily_schedule_literacy_numeracy_alte.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_76_WebSearch_onebillion_onecourse_Tanzania_daily_usage_hours_li.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_75_WebFetch_httpskitkitschoolcomdocImpact-Brief-Update-XPRIZE-3.txt
+- `22:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_77_WebSearch_Hetzner_dedicated_GPU_server_RTX_4090_RTX_6000_Ada.txt
+- `22:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_78_WebFetch_httpswwwhetznercomdedicated-rootservermatrix-gpu.txt
+- `22:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_79_WebSearch_Cerebras_inference_API_pricing_per_token_2026_Llam.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_80_WebSearch_economic_returns_literacy_vs_numeracy_separately_w.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_81_WebFetch_httpswolizaorgarticleswhat-is-economic-value-of-lit.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_82_WebSearch_Nigeria_public_school_infrastructure_crisis_classr.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_83_WebSearch_Nigeria_primary_school_physical_conditions_UBEC_in.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_85_WebSearch_can_feature_phone_display_USSD_during_voice_call_s.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_84_WebSearch_USSD_during_active_call_feature_phone_Africa_Niger.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_86_WebSearch_USSD_during_call_OR_USSD_while_on_call_feature_pho.txt
+- `02:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_89_WebSearch_Africas_Talking_USSD_push_notification_network-ini.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_87_WebSearch_network-initiated_USSD_push_during_voice_call_GSM_.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_88_WebSearch_USSD_push_API_send_text_to_phone_during_active_cal.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_90_WebFetch_httpsdevelopersafricastalkingcomdocsussdnotificatio.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_91_WebFetch_httpswwwalwaysactivemobilecozawp-contentuploads2019.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_92_WebSearch_call_related_USSD_GSM_0390_display_text_during_voi.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_93_WebSearch_Africas_Talking_USSD_push_Nigeria_network-initiate.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_94_WebSearch_Alpha_Technologies_Nigeria_USSD_push_network-initi.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_95_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_USSD_push_network-i.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_96_WebFetch_httpshelpafricastalkingcomenarticles2298228-how-do-.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_97_WebFetch_httpswwwcellfindnetzacfpniussd.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_98_WebFetch_httpsvas2netscom.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_99_WebFetch_httpsupperlinkngtelecoms.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_100_WebFetch_httpswwwintervascomussd.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_101_WebFetch_httpsalphatechnologieslimitedcom.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_102_WebSearch_Nigeria_USSD_push_network-initiated_provider_OTP_b.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_103_WebSearch_Nigeria_VAS_aggregator_NI-USSD_network_initiated_U.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_105_WebFetch_httpsinfotekpscomussdhtml.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_104_WebFetch_httpswwwshortcodenigeriacom.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_106_WebSearch_USSD_push_OR_NI-USSD_OR_network_initiated_USSD_pro.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_108_WebSearch_Nigeria_USSD_gateway_provider_OTP_push_bank_authen.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_107_WebSearch_Creditswitch_Upperlink_xplora_technologies_USSD_pu.txt
+- `16:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_00_Research_board_members_experience.txt
+- `16:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_01_Research_Folashade_Adefisayo.txt
+- `19:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_02_Research_grant_writing_best_practices.txt
+- `19:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_03_Research_Purdue_OWL_writing_tips.txt
+- `23:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_04_Research_embedded_marketing_models.txt
+- `23:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_00_WebSearch_median_household_income_Lagos_slums_informal_settl.txt
+- `23:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_01_WebSearch_Lagos_slum_household_income_monthly_earnings_pover.txt
+- `23:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_02_WebSearch_23_of_household_income_Lagos_school_fees_slums_Oxf.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_03_WebSearch_voice_AI_API_pricing_per_minute_2025_2026_Vapi_Ret.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_04_WebSearch_voice_AI_API_Africa_pricing_Dograh_enterprise_voic.txt
+- `03:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_07_WebSearch_Bakame_AI_pricing_business_model_Rwanda_voice_educ.txt
+- `03:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_05_WebSearch_Rori_AI_pricing_business_model_how_much_charge_per.txt
+- `03:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_06_WebSearch_Viamo_3-2-1_service_business_model_pricing_how_muc.txt
+- `03:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_10_WebSearch_voice_AI_platform_Africa_enterprise_buyers_who_buy.txt
+- `03:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_08_WebSearch_ConnectEd_phone_tutoring_business_model_pricing_pe.txt
+- `03:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_09_WebSearch_Claude_API_Anthropic_pricing_per_token_2026_Haiku_.txt
+- `03:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_12_WebSearch_engageSPARK_IVR_education_pricing_per_call_develop.txt
+- `03:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_11_WebSearch_education_technology_voice_AI_Africa_market_size_b.txt
+- `03:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_13_WebSearch_dark_theme_startup_landing_page_examples_2026_API_.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_15_WebSearch_siteblandai_pricing_enterprise_dark_theme.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_16_WebSearch_sitexai_grok_API_pricing_page_design.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_14_WebSearch_sitevapiai_pricing_page.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_17_WebFetch_httpsvapiaipricing.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_18_WebFetch_httpswwwblandai.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_20_WebFetch_httpswwwretellaicom.txt
+- `04:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_19_WebFetch_httpselevenlabsioenterprise.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_21_WebFetch_httpswwwcartesiaai.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_22_WebFetch_httpsvapiai.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_23_WebFetch_httpswwwretellaicom.txt
+- `05:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_24_WebFetch_httpselevenlabsio.txt
+- `05:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_25_WebSearch_ElevenLabs_website_product_structure_for_developer.txt
+- `05:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_26_WebFetch_httpswwwcartesiaai.txt
+- `06:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_27_Explore_current_sabi_pages__site_structure.txt
+- `06:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_28_Research_Cartesia_site_structure.txt
+
+## E4E / Sabi `af4caeab` | 2026-04-01 | 66 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_74_WebSearch_Global_Learning_XPRIZE_Tanzania_daily_schedule_str.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_73_WebSearch_interleaved_vs_blocked_practice_literacy_numeracy_.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_72_WebSearch_Pratham_TaRL_daily_schedule_literacy_numeracy_alte.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_76_WebSearch_onebillion_onecourse_Tanzania_daily_usage_hours_li.txt
+- `22:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_75_WebFetch_httpskitkitschoolcomdocImpact-Brief-Update-XPRIZE-3.txt
+- `22:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_77_WebSearch_Hetzner_dedicated_GPU_server_RTX_4090_RTX_6000_Ada.txt
+- `22:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_78_WebFetch_httpswwwhetznercomdedicated-rootservermatrix-gpu.txt
+- `22:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_79_WebSearch_Cerebras_inference_API_pricing_per_token_2026_Llam.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_80_WebSearch_economic_returns_literacy_vs_numeracy_separately_w.txt
+- `00:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_81_WebFetch_httpswolizaorgarticleswhat-is-economic-value-of-lit.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_82_WebSearch_Nigeria_public_school_infrastructure_crisis_classr.txt
+- `01:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_83_WebSearch_Nigeria_primary_school_physical_conditions_UBEC_in.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_85_WebSearch_can_feature_phone_display_USSD_during_voice_call_s.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_84_WebSearch_USSD_during_active_call_feature_phone_Africa_Niger.txt
+- `02:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_86_WebSearch_USSD_during_call_OR_USSD_while_on_call_feature_pho.txt
+- `02:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_89_WebSearch_Africas_Talking_USSD_push_notification_network-ini.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_87_WebSearch_network-initiated_USSD_push_during_voice_call_GSM_.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_88_WebSearch_USSD_push_API_send_text_to_phone_during_active_cal.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_90_WebFetch_httpsdevelopersafricastalkingcomdocsussdnotificatio.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_91_WebFetch_httpswwwalwaysactivemobilecozawp-contentuploads2019.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_92_WebSearch_call_related_USSD_GSM_0390_display_text_during_voi.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_93_WebSearch_Africas_Talking_USSD_push_Nigeria_network-initiate.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_94_WebSearch_Alpha_Technologies_Nigeria_USSD_push_network-initi.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_95_WebSearch_MTN_Nigeria_Airtel_Glo_9mobile_USSD_push_network-i.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_96_WebFetch_httpshelpafricastalkingcomenarticles2298228-how-do-.txt
+- `02:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_97_WebFetch_httpswwwcellfindnetzacfpniussd.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_98_WebFetch_httpsvas2netscom.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_99_WebFetch_httpsupperlinkngtelecoms.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_100_WebFetch_httpswwwintervascomussd.txt
+- `02:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_101_WebFetch_httpsalphatechnologieslimitedcom.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_102_WebSearch_Nigeria_USSD_push_network-initiated_provider_OTP_b.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_103_WebSearch_Nigeria_VAS_aggregator_NI-USSD_network_initiated_U.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_105_WebFetch_httpsinfotekpscomussdhtml.txt
+- `02:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_104_WebFetch_httpswwwshortcodenigeriacom.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_106_WebSearch_USSD_push_OR_NI-USSD_OR_network_initiated_USSD_pro.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_108_WebSearch_Nigeria_USSD_gateway_provider_OTP_push_bank_authen.txt
+- `02:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_107_WebSearch_Creditswitch_Upperlink_xplora_technologies_USSD_pu.txt
+- `16:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_00_Research_board_members_experience.txt
+- `16:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_01_Research_Folashade_Adefisayo.txt
+- `19:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_02_Research_grant_writing_best_practices.txt
+- `19:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_03_Research_Purdue_OWL_writing_tips.txt
+- `23:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_04_Research_embedded_marketing_models.txt
+- `23:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_00_WebSearch_median_household_income_Lagos_slums_informal_settl.txt
+- `23:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_01_WebSearch_Lagos_slum_household_income_monthly_earnings_pover.txt
+- `23:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_02_WebSearch_23_of_household_income_Lagos_school_fees_slums_Oxf.txt
+- `01:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_05_Research_audio_ad_CPM_rates_Africa.txt
+- `01:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a3a199-b19_06_Research_industry_standard_embedded_marketing_pricing.txt
+- `03:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_03_WebSearch_voice_AI_API_pricing_per_minute_2025_2026_Vapi_Ret.txt
+- `03:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_04_WebSearch_voice_AI_API_Africa_pricing_Dograh_enterprise_voic.txt
+- `03:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_07_WebSearch_Bakame_AI_pricing_business_model_Rwanda_voice_educ.txt
+- `03:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_05_WebSearch_Rori_AI_pricing_business_model_how_much_charge_per.txt
+- `03:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_06_WebSearch_Viamo_3-2-1_service_business_model_pricing_how_muc.txt
+- `03:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_10_WebSearch_voice_AI_platform_Africa_enterprise_buyers_who_buy.txt
+- `03:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_08_WebSearch_ConnectEd_phone_tutoring_business_model_pricing_pe.txt
+- `03:21` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_09_WebSearch_Claude_API_Anthropic_pricing_per_token_2026_Haiku_.txt
+- `03:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_12_WebSearch_engageSPARK_IVR_education_pricing_per_call_develop.txt
+- `03:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a8b090-d80_11_WebSearch_education_technology_voice_AI_Africa_market_size_b.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_01_WebSearch_Morgan_Hack_hackathon_2026_date_university.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_00_WebSearch_Yale_hackathon_2026_date_YHack.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_03_WebSearch_MIT_Africa_Business_Challenge_2027_hackathon_date.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_02_WebSearch_HackPrinceton_2026_date_April.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_04_WebSearch_Columbia_Business_School_Africa_Conference_2026_da.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_05_WebSearch_MorganHacks_2026_Morgan_State_University_April_pri.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_07_WebSearch_USAII_AI_NextGen_Challenge_2026_date_deadline_appl.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_08_WebSearch_MIT_Solve_2026_Global_Learning_Challenge_deadline_.txt
+- `19:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/af4caeab-036_06_WebSearch_Hult_Prize_2026_2027_registration_deadline_campus_.txt
+
+## E4E / Sabi `afee7e62` | 2026-04-04 | 3 files
+Folders: -Users-naomiivie-Downloads-App-Rings-Version-2-1--Multi-device-Jan-2025, -Users-naomiivie-Education-for-Equality
+
+- `19:45` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Rings-Version-2-1--Multi-device-Jan-2025/agent-research/3f401eb3-902_00_Explore_full_codebase_structure.txt
+- `20:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afee7e62-c54_00_Search_upcoming_hackathons_2026.txt
+- `20:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afee7e62-c54_01_Search_Morgan_Hacks_2026_date.txt
+
+## E4E / Sabi `1b27663d` | 2026-04-14 | 48 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_118_WebSearch_play_audio_from_Mac_computer_to_Echo_Dot_bluetooth.txt
+- `02:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_119_WebSearch_Echo_Dot_as_bluetooth_speaker_for_Mac_how_to_conne.txt
+- `03:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_00_Research_Cerebras_for_ASL_app.txt
+- `04:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_120_WebSearch_WLASL_dataset_sample_videos_download_direct_link_m.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_01_WebSearch_Cerebras_AI_inference_API_2026_pricing_free_tier_d.txt
+- `04:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_02_WebSearch_Cerebras_inference_API_Python_SDK_integration_exam.txt
+- `06:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_03_WebSearch_SignVLM_ASL_fine-tune_custom_data_WLASL_2026_githu.txt
+- `06:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_04_WebSearch_CorrNet_sign_language_recognition_fine-tune_custom.txt
+- `07:48` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_02_Research_fastest_tunneling_options.txt
+- `07:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_03_Explore_current_app_architecture.txt
+- `07:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_04_Research_aiortc_WebRTC_Flask.txt
+- `07:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_05_Design_WebRTC_migration_plan.txt
+- `10:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_121_WebSearch_expose_localhost_to_internet_without_tailscale_fre.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_123_WebSearch_LSTM_inference_optimization_real-time_gesture_reco.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_122_WebSearch_reduce_latency_real-time_sign_language_recognition.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_126_WebSearch_MediaPipe_Holistic_performance_optimization_reduce.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_124_WebSearch_real-time_sign_language_detection_latency_pipeline.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_125_WebSearch_ONNX_Runtime_LSTM_inference_speed_Python_faster_th.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_127_WebSearch_TTS_text_to_speech_lowest_latency_real-time_under_.txt
+- `11:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_06_Research_ASL_detection_latency.txt
+- `11:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_128_WebSearch_pre-cache_TTS_audio_files_sign_language_common_wor.txt
+- `11:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_129_WebSearch_MediaPipe_model_complexity_0_vs_1_speed_difference.txt
+- `11:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_07_Research_tools_for_sharing_Flask_app.txt
+- `11:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_08_WebSearch_best_ASL_sign_language_recognition_API_SDK_integra.txt
+- `11:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_08_Research_optimization_tools_for_ASL_pipeline.txt
+- `11:49` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_10_WebSearch_Sign-Speak_ASL_recognition_architecture_how_real-t.txt
+- `11:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_11_WebSearch_real-time_sign_language_recognition_low_latency_ar.txt
+- `11:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_13_WebSearch_how_does_real-time_sign_language_translation_work_.txt
+- `17:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_15_WebSearch_impact_of_ASL_sign_language_translation_technology.txt
+- `17:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_14_WebSearch_economic_impact_solving_deaf_communication_barrier.txt
+- `17:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_16_WebSearch_deaf_people_access_technology_communication_barrie.txt
+- `17:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_17_WebSearch_WHO_cost_unaddressed_hearing_loss_980_billion_retu.txt
+- `17:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_18_WebSearch_deaf_students_literacy_4th_grade_reading_level_edu.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_00_Read_262aa5fe_lines_1000-4000.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_02_Read_262aa5fe_lines_4000-7000.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_03_Read_262aa5fe_lines_7000-10000.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_04_Read_262aa5fe_lines_10000-12000.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_05_Read_fc4f9b6d_full_session.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_01_Read_c7a3a199_lines_1400-2618.txt
+- `21:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_06_Read_Cost__Evidence_files.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_07_Read_folders_1-3_all_files.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_08_Read_folders_4-6_all_files.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_09_Read_folders_7-10_all_files.txt
+- `22:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_10_Research_Canva_API_integration.txt
+- `22:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_12_WebSearch_Canva_MCP_server_Claude_2026.txt
+- `22:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_13_WebSearch_Canva_Connect_API_create_presentation_slides_progr.txt
+- `22:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_11_WebSearch_canva-mcp-server_github.txt
+- `22:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_14_WebFetch_httpspypiorgprojectcanva-mcp.txt
+
+## E4E / Sabi `32030cb5` | 2026-04-15 | 164 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `02:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_00_Read_262aa5fe_lines_1000-4000.txt
+- `02:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_02_Read_262aa5fe_lines_4000-7000.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_03_Read_262aa5fe_lines_7000-10000.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_04_Read_262aa5fe_lines_10000-12000.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_05_Read_fc4f9b6d_full_session.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/1b27663d-8ea_01_Read_c7a3a199_lines_1400-2618.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ef730e8c-70e_00_Find_deposit_insurance_slides.txt
+- `21:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_01_Read_session_262aa5fe_part_1.txt
+- `21:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_02_Read_session_262aa5fe_part_2.txt
+- `21:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_03_Read_session_262aa5fe_part_3.txt
+- `21:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_04_Read_session_262aa5fe_part_4.txt
+- `21:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_05_Read_session_262aa5fe_part_5.txt
+- `21:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_00_Read_session_262aa5fe_part_6.txt
+- `00:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_06_WebSearch_Lagos_Nigeria_field_coordinator_education_NGO_sala.txt
+- `00:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_07_WebSearch_Nigeria_education_program_coordinator_salary_range.txt
+- `00:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_08_WebSearch_NGO_project_coordinator_Lagos_salary_naira_monthly.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_09_WebSearch_IRS_Form_1023-EZ_filing_fee_2026_501c3.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_12_WebSearch_USPTO_trademark_filing_fee_2026_TEAS_Plus_TEAS_Sta.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_13_WebSearch_Nigeria_trademark_registration_cost_CAC_2025_2026_.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_11_WebSearch_Connecticut_nonprofit_incorporation_filing_fee_202.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_10_WebSearch_Nigeria_CAC_incorporated_trustee_registration_cost.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_15_WebSearch_Nigeria_NIPO_trademark_registration_official_fees_.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_14_WebSearch_Hetzner_GEX44_price_2026_monthly_dedicated_GPU_ser.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_16_WebSearch_Hetzner_GEX44_setup_fee_one-time_cost_2026.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_18_WebSearch_college_student_nonprofit_founder_reasonable_compe.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_17_WebSearch_nonprofit_founder_salary_student_startup_fair_comp.txt
+- `00:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_19_WebSearch_part-time_nonprofit_executive_director_salary_smal.txt
+- `00:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_20_WebSearch_student_founder_stipend_nonprofit_grant_budget_PCE.txt
+- `00:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_21_WebSearch_nonprofit_administrative_costs_small_organization_.txt
+- `00:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_22_WebSearch_small_nonprofit_startup_overhead_costs_bookkeeping.txt
+- `00:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_23_WebSearch_flight_cost_Connecticut_New_York_to_Lagos_Nigeria_.txt
+- `00:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_25_WebSearch_Lagos_Nigeria_daily_transportation_cost_bus_BRT_da.txt
+- `00:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_24_WebSearch_Lagos_intra-city_transport_cost_Mushin_Ajeromi-Ife.txt
+- `00:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_28_WebSearch_NewGlobe_EKOEXCEL_school_support_officers_Lagos_tr.txt
+- `00:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_26_WebSearch_EKOEXCEL_field_officers_transportation_Lagos_schoo.txt
+- `00:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_27_WebSearch_Nigeria_NGO_field_worker_education_program_daily_t.txt
+- `00:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_30_WebSearch_transport_allowance_field_officer_Lagos_naira_per_.txt
+- `00:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_29_WebSearch_EKOEXCEL_NewGlobe_school_support_officer_OR_field_.txt
+- `01:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_31_WebSearch_Lagos_Nigeria_monthly_transportation_cost_2026_dan.txt
+- `01:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_32_WebSearch_Maryland_Lagos_to_Mushin_transport_cost_danfo_BRT_.txt
+- `01:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_33_WebSearch_Maryland_estate_Lagos_to_Ajeromi-Ifelodun_transpor.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_34_WebSearch_Uber_Bolt_ride_cost_Maryland_Lagos_to_Mushin_2025_.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_36_WebSearch_Bolt_Uber_average_ride_cost_Lagos_2026_per_km_nair.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_35_WebSearch_Bolt_Uber_ride_estimate_Lagos_Maryland_to_Ajeromi_.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_37_WebSearch_sitesimpliridecom_OR_sitetaxifarefindercom_Lagos_U.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_38_WebSearch_Uber_Lagos_Nigeria_fare_per_km_rate_base_fare_2025.txt
+- `01:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_39_WebSearch_cheapest_new_car_Nigeria_2026_price_naira.txt
+- `01:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_41_WebSearch_Toyota_used_car_price_Lagos_Nigeria_2025_2026_Coro.txt
+- `01:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_40_WebSearch_cheapest_reliable_car_buy_Nigeria_2026_Suzuki_Kia_.txt
+- `01:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_43_WebSearch_Glo_Nigeria_airtime_call_rates_2026_per_minute_nai.txt
+- `01:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_42_WebSearch_Glo_Nigeria_data_plan_prices_2026_monthly_bundle_n.txt
+- `01:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_45_WebSearch_budget_camera_for_documentary_content_creation_202.txt
+- `01:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_44_WebSearch_best_camera_for_nonprofit_content_creation_social_.txt
+- `01:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_46_WebSearch_Glo_Nigeria_data_plan_10000_how_many_GB_2026.txt
+- `01:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_47_WebSearch_Glo_Nigeria_call_rate_per_minute_2026_local_calls_.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_50_WebSearch_small_nonprofit_annual_administrative_expenses_bre.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_48_WebSearch_nonprofit_startup_administrative_costs_first_year_.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_49_WebSearch_nonprofit_operating_costs_beyond_program_expenses_.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_51_WebSearch_Connecticut_nonprofit_annual_compliance_requiremen.txt
+- `02:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_53_WebSearch_nonprofit_education_program_community_outreach_cos.txt
+- `02:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_54_WebSearch_WhatsApp_business_marketing_Nigeria_cost_flyer_pri.txt
+- `02:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_52_WebSearch_community_radio_advertising_cost_Lagos_Nigeria_per.txt
+- `02:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_55_WebSearch_cost_banner_printing_Lagos_Nigeria_2025_naira_per_.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_56_WebSearch_Alpha_Technologies_Nigeria_USSD_services_2025_2026.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_57_WebSearch_Alpha_Technologies_Lagos_Nigeria_website_services_.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_58_WebSearch_Alpha_Technologies_Nigeria_services_toll-free_USSD.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_60_WebSearch_Africas_Talking_SMS_cost_Nigeria_per_SMS_outbound_.txt
+- `02:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_59_WebSearch_Africas_Talking_Nigeria_SMS_pricing_per_message_20.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_62_WebSearch_hiring_costs_Nigeria_recruiting_field_coordinator_.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_61_WebSearch_Sony_ZV-E10_used_price_2026_secondhand_camera.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_63_WebSearch_Canon_EOS_R50_used_price_2026_secondhand_content_c.txt
+- `02:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_64_WebSearch_best_used_camera_buy_once_documentary_content_crea.txt
+- `04:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_65_WebSearch_Teaching_at_the_Right_Level_TaRL_Madagascar_RCT_re.txt
+- `04:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_66_WebSearch_PMAQ_TaRL_Madagascar_sample_size_how_many_children.txt
+- `06:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_67_WebSearch_Cerebras_inference_API_pricing_Llama_31_8B_per_tok.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_70_WebSearch_how_many_servers_needed_AI_voice_agent_100000_conc.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_69_WebSearch_Vapi_Retell_AI_voice_agent_infrastructure_servers_.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_68_WebSearch_WhatsApp_AI_chatbot_infrastructure_servers_million.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_71_WebSearch_GPU_servers_needed_speech-to-text_text-to-speech_c.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_72_WebSearch_Viamo_3-2-1_service_infrastructure_how_many_server.txt
+- `06:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_73_WebSearch_Whisper_speech-to-text_how_many_concurrent_streams.txt
+- `07:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_74_WebSearch_Hetzner_dedicated_GPU_server_largest_VRAM_2026_GEX.txt
+- `07:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_75_WebSearch_dedicated_GPU_server_80GB_96GB_VRAM_monthly_rental.txt
+- `07:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_77_WebSearch_Hetzner_largest_GPU_server_2026_all_models_availab.txt
+- `07:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_76_WebSearch_dedicated_GPU_server_largest_VRAM_available_rent_m.txt
+- `08:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_78_WebSearch_Joshua_Ivie_Bluechip_Technologies_Head_of_Innovati.txt
+- `09:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_79_WebSearch_Gates_Foundation_education_grant_size_typical_amou.txt
+- `09:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_80_WebSearch_Tony_Elumelu_Foundation_grant_2026_amount_how_much.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_83_WebSearch_UNICEF_Venture_Fund_2026_application_deadline_next.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_82_WebSearch_MIT_Solve_2026_application_deadline_prize_amount_g.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_81_WebSearch_Echoing_Green_Fellowship_2026_2027_application_dea.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_85_WebSearch_DRK_Foundation_2026_application_how_to_apply_grant.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_86_WebSearch_Mastercard_Foundation_edtech_grant_2026_2027_appli.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_84_WebSearch_Gates_Foundation_EdTech_Fund_2026_how_to_apply_uns.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_88_WebSearch_Lagos_LEAF_education_access_fund_2026_how_to_apply.txt
+- `09:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_87_WebSearch_LEGO_Foundation_grant_2026_application_open_small_.txt
+- `09:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_89_WebSearch_Echoing_Green_Fellowship_eligibility_requirements_.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_91_WebSearch_GPU_cloud_provider_scale_million_users_dedicated_i.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_92_WebSearch_CoreWeave_Lambda_Labs_GPU_cloud_enterprise_pricing.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_90_WebSearch_Hetzner_bulk_dedicated_servers_discount_volume_pri.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_94_WebSearch_edtech_startup_percent_of_addressable_market_reach.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_93_WebSearch_Eneza_Education_Rori_AI_EKOEXCEL_students_reached_.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_95_WebSearch_SOM_penetration_rate_startup_year_3_what_percentag.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_97_WebSearch_fastest_scaling_education_startups_Africa_how_many.txt
+- `10:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_96_WebSearch_Duolingo_Khan_Academy_user_growth_first_3_years_to.txt
+- `10:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_99_WebSearch_Eneza_Education_timeline_founded_2011_how_many_use.txt
+- `10:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_98_WebSearch_M-Shule_uLesson_FoondaMate_year_by_year_user_growt.txt
+- `16:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_101_WebSearch_Africa_edtech_direct_payment_vs_carrier_billing_mo.txt
+- `16:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_100_WebSearch_can_you_charge_users_directly_without_carrier_bill.txt
+- `16:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_102_WebSearch_Nigeria_mobile_money_Opay_PalmPay_penetration_2026.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_103_WebSearch_Nigeria_adult_literacy_rate_2025_2026_how_many_ill.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_104_WebSearch_Nigeria_adults_who_want_to_learn_skills_vocational.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_105_WebSearch_Nigeria_adult_education_market_size_vocational_tra.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_106_WebSearch_Nigeria_WAEC_NECO_adult_candidates_private_candida.txt
+- `12:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_107_WebSearch_Lagos_slum_parents_spend_23_income_school_fees_pri.txt
+- `12:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_108_WebSearch_Lagos_low-income_household_education_spending_priv.txt
+- `12:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_109_WebSearch_Nigeria_private_school_average_class_size_enrollme.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_112_WebSearch_Syed_Ali_Trinity_Church_NYC_philanthropies_educati.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_113_WebSearch_Deepak_Ramola_Project_FUEL_founder_education_what_.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_111_WebSearch_Kristin_Magendantz_Wesleyan_University_corporate_f.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_110_WebSearch_Simran_Nath_LLC_founder_consulting_what_does_she_d.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_114_WebSearch_Shiv_Soin_TREEage_PCE_Wesleyan_entrepreneur_reside.txt
+- `21:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_116_WebSearch_Archie_Wilson_Gunderson_Dettmer_startup_VC_lawyer_.txt
+- `21:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_115_WebSearch_Hira_Jafri_Yale_MacMillan_Center_global_programs.txt
+- `23:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_117_WebSearch_DataFest_Wesleyan_University_competition_2026_how_.txt
+- `23:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_118_WebSearch_ASA_DataFest_Wesleyan_judging_criteria_past_winner.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_120_WebSearch_healthcare_disparities_rural_Kansas_Midwest_access.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_119_WebSearch_social_determinants_of_health_SDOH_research_priori.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_122_WebSearch_biggest_healthcare_policy_issues_2026_United_State.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_121_WebSearch_mental_health_crisis_primary_care_integration_2026.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_123_WebSearch_emergency_department_overuse_low-income_patients_p.txt
+- `00:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_124_WebSearch_patient_engagement_patient_portal_MyChart_digital_.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_126_WebSearch_Wesleyan_University_DataFest_2025_winners_projects.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_128_WebSearch_how_to_win_ASA_DataFest_48_hour_competition_strate.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_127_WebSearch_ASA_DataFest_judging_criteria_rubric_award_categor.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_125_WebSearch_Wesleyan_DataFest_2024_winning_team_best_data_stor.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_129_WebSearch_Manoliss_Mavericks_OR_Desirable_Goats_Wesleyan_Dat.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_130_WebSearch_mediumcom_DataFest_winning_project_healthcare_soci.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_132_WebSearch_Rikesh_Patel_UCLA_DataFest_how_to_win_10_steps_str.txt
+- `03:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_131_WebSearch_Chelsea_Lee_DataFest_succeed_win_tips_strategy_med.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_135_WebSearch_Kansas_county_broadband_access_percentage_2024_rur.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_134_WebSearch_Kansas_Rural_Health_Transformation_Program_target_.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_133_WebSearch_Stormont_Vail_Health_Topeka_Kansas_service_area_co.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_136_WebSearch_Kansas_Medicaid_expansion_status_2026_uninsured_ra.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_138_WebSearch_Kansas_uninsured_rate_by_county_2024_County_Health.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_137_WebSearch_Kansas_county_FIPS_codes_Cloud_Morris_Osage_Wabaun.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_139_WebSearch_HRSA_Health_Professional_Shortage_Area_Kansas_coun.txt
+- `07:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_140_WebSearch_preventable_ED_visit_cost_Kansas_hospital_average_.txt
+- `07:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_142_WebSearch_CDC_PLACES_health_data_Kansas_county_estimates_202.txt
+- `07:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_141_WebSearch_FIPS_20029_OR_FIPS_20059_OR_FIPS_20139_Kansas_coun.txt
+- `07:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_144_WebSearch_Kansas_maternity_care_deserts_counties_hospital_ob.txt
+- `07:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_143_WebSearch_AHRQ_preventable_emergency_department_cost_per_vis.txt
+- `07:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_145_WebSearch_Kansas_counties_geojson_github_raw_download_census.txt
+- `15:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_146_WebSearch_Kansas_Health_Institute_county_broadband_gap_perce.txt
+- `15:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_147_WebFetch_httpswwwkhiorgarticlesvariations-in-internet-access.txt
+- `15:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_148_WebFetch_httpswwwyahoocomnewskansas-broadband-internet-dispa.txt
+- `17:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_149_WebSearch_AIVA_AI_Ventures_Accelerator_UNICEF_Technovation_h.txt
+- `18:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_150_WebFetch_httpswwwtechnovationorg.txt
+- `18:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_151_WebFetch_httpswwwtechnovationorgai-ventures-accelerator.txt
+- `23:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_152_WebSearch_Technovation_Girls_2026_submission_deadline_season.txt
+- `23:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_153_WebFetch_httpswwwpatricellicenterstoriesnva2026.txt
+- `23:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_154_WebSearch_Rydar_Nigeria_informal_transit_app_Ugochukwu_Osond.txt
+- `03:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_155_WebSearch_MIT_Solve_2026_global_challenges_apply_education_f.txt
+- `10:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_156_WebFetch_httpssolvemiteduchallenges2025-global-learning-chal.txt
+
+## E4E / Sabi `b997d564` | 2026-04-18 | 123 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `04:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_66_WebSearch_PMAQ_TaRL_Madagascar_sample_size_how_many_children.txt
+- `06:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_67_WebSearch_Cerebras_inference_API_pricing_Llama_31_8B_per_tok.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_70_WebSearch_how_many_servers_needed_AI_voice_agent_100000_conc.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_69_WebSearch_Vapi_Retell_AI_voice_agent_infrastructure_servers_.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_68_WebSearch_WhatsApp_AI_chatbot_infrastructure_servers_million.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_71_WebSearch_GPU_servers_needed_speech-to-text_text-to-speech_c.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_72_WebSearch_Viamo_3-2-1_service_infrastructure_how_many_server.txt
+- `06:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_73_WebSearch_Whisper_speech-to-text_how_many_concurrent_streams.txt
+- `07:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_74_WebSearch_Hetzner_dedicated_GPU_server_largest_VRAM_2026_GEX.txt
+- `07:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_75_WebSearch_dedicated_GPU_server_80GB_96GB_VRAM_monthly_rental.txt
+- `07:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_77_WebSearch_Hetzner_largest_GPU_server_2026_all_models_availab.txt
+- `07:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_76_WebSearch_dedicated_GPU_server_largest_VRAM_available_rent_m.txt
+- `08:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_78_WebSearch_Joshua_Ivie_Bluechip_Technologies_Head_of_Innovati.txt
+- `09:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_79_WebSearch_Gates_Foundation_education_grant_size_typical_amou.txt
+- `09:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_80_WebSearch_Tony_Elumelu_Foundation_grant_2026_amount_how_much.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_83_WebSearch_UNICEF_Venture_Fund_2026_application_deadline_next.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_82_WebSearch_MIT_Solve_2026_application_deadline_prize_amount_g.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_81_WebSearch_Echoing_Green_Fellowship_2026_2027_application_dea.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_85_WebSearch_DRK_Foundation_2026_application_how_to_apply_grant.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_86_WebSearch_Mastercard_Foundation_edtech_grant_2026_2027_appli.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_84_WebSearch_Gates_Foundation_EdTech_Fund_2026_how_to_apply_uns.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_88_WebSearch_Lagos_LEAF_education_access_fund_2026_how_to_apply.txt
+- `09:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_87_WebSearch_LEGO_Foundation_grant_2026_application_open_small_.txt
+- `09:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_89_WebSearch_Echoing_Green_Fellowship_eligibility_requirements_.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_91_WebSearch_GPU_cloud_provider_scale_million_users_dedicated_i.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_92_WebSearch_CoreWeave_Lambda_Labs_GPU_cloud_enterprise_pricing.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_90_WebSearch_Hetzner_bulk_dedicated_servers_discount_volume_pri.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_94_WebSearch_edtech_startup_percent_of_addressable_market_reach.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_93_WebSearch_Eneza_Education_Rori_AI_EKOEXCEL_students_reached_.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_95_WebSearch_SOM_penetration_rate_startup_year_3_what_percentag.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_97_WebSearch_fastest_scaling_education_startups_Africa_how_many.txt
+- `10:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_96_WebSearch_Duolingo_Khan_Academy_user_growth_first_3_years_to.txt
+- `10:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_99_WebSearch_Eneza_Education_timeline_founded_2011_how_many_use.txt
+- `10:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_98_WebSearch_M-Shule_uLesson_FoondaMate_year_by_year_user_growt.txt
+- `16:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_101_WebSearch_Africa_edtech_direct_payment_vs_carrier_billing_mo.txt
+- `16:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_100_WebSearch_can_you_charge_users_directly_without_carrier_bill.txt
+- `16:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_102_WebSearch_Nigeria_mobile_money_Opay_PalmPay_penetration_2026.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_103_WebSearch_Nigeria_adult_literacy_rate_2025_2026_how_many_ill.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_104_WebSearch_Nigeria_adults_who_want_to_learn_skills_vocational.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_105_WebSearch_Nigeria_adult_education_market_size_vocational_tra.txt
+- `19:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_106_WebSearch_Nigeria_WAEC_NECO_adult_candidates_private_candida.txt
+- `12:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_107_WebSearch_Lagos_slum_parents_spend_23_income_school_fees_pri.txt
+- `12:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_108_WebSearch_Lagos_low-income_household_education_spending_priv.txt
+- `12:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_109_WebSearch_Nigeria_private_school_average_class_size_enrollme.txt
+- `21:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_112_WebSearch_Syed_Ali_Trinity_Church_NYC_philanthropies_educati.txt
+- `21:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_113_WebSearch_Deepak_Ramola_Project_FUEL_founder_education_what_.txt
+- `21:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_111_WebSearch_Kristin_Magendantz_Wesleyan_University_corporate_f.txt
+- `21:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_110_WebSearch_Simran_Nath_LLC_founder_consulting_what_does_she_d.txt
+- `21:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_114_WebSearch_Shiv_Soin_TREEage_PCE_Wesleyan_entrepreneur_reside.txt
+- `21:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_116_WebSearch_Archie_Wilson_Gunderson_Dettmer_startup_VC_lawyer_.txt
+- `21:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_115_WebSearch_Hira_Jafri_Yale_MacMillan_Center_global_programs.txt
+- `23:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_117_WebSearch_DataFest_Wesleyan_University_competition_2026_how_.txt
+- `23:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_118_WebSearch_ASA_DataFest_Wesleyan_judging_criteria_past_winner.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_120_WebSearch_healthcare_disparities_rural_Kansas_Midwest_access.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_119_WebSearch_social_determinants_of_health_SDOH_research_priori.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_122_WebSearch_biggest_healthcare_policy_issues_2026_United_State.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_121_WebSearch_mental_health_crisis_primary_care_integration_2026.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_123_WebSearch_emergency_department_overuse_low-income_patients_p.txt
+- `00:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_124_WebSearch_patient_engagement_patient_portal_MyChart_digital_.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_126_WebSearch_Wesleyan_University_DataFest_2025_winners_projects.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_128_WebSearch_how_to_win_ASA_DataFest_48_hour_competition_strate.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_127_WebSearch_ASA_DataFest_judging_criteria_rubric_award_categor.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_125_WebSearch_Wesleyan_DataFest_2024_winning_team_best_data_stor.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_129_WebSearch_Manoliss_Mavericks_OR_Desirable_Goats_Wesleyan_Dat.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_130_WebSearch_mediumcom_DataFest_winning_project_healthcare_soci.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_132_WebSearch_Rikesh_Patel_UCLA_DataFest_how_to_win_10_steps_str.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_131_WebSearch_Chelsea_Lee_DataFest_succeed_win_tips_strategy_med.txt
+- `04:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_01_WebSearch_university_ITS_help_desk_assistant_student_worker_.txt
+- `04:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_00_WebSearch_Wesleyan_ITS_help_desk_assistant_job_description_d.txt
+- `04:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_02_WebSearch_Wesleyan_University_total_number_of_faculty_and_st.txt
+- `04:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_03_WebSearch_Wesleyan_University_at_a_glance_faculty_staff_head.txt
+- `04:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_04_WebFetch_httpswwwwesleyaneduaboutglanceatweshtml.txt
+- `04:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_05_WebFetch_httpsdatausaioprofileuniversitywesleyan-university.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_06_WebSearch_Anthropic_Fellows_Program_mentors_research_areas_a.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_11_WebSearch_Sara_Price_Anthropic_researcher_AI_safety.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_07_WebSearch_Sam_Bowman_Anthropic_researcher_AI_safety_research.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_09_WebSearch_Nina_Panickssery_Anthropic_researcher_interpretabi.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_08_WebSearch_Alex_Tamkin_Anthropic_researcher_societal_impacts.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_10_WebSearch_Jascha_Sohl-Dickstein_Anthropic_researcher_diffusi.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_12_WebSearch_Logan_Graham_Anthropic_researcher_AI_safety.txt
+- `05:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_13_WebSearch_Trenton_Bricken_Anthropic_researcher_mechanistic_i.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_14_WebSearch_Joe_Benton_Anthropic_researcher_alignment.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_15_WebSearch_Collin_Burns_Anthropic_researcher_superalignment.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_17_WebSearch_Samuel_Marks_Anthropic_researcher_sparse_autoencod.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_16_WebSearch_Fabien_Roger_Anthropic_researcher_AI_control_align.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_18_WebSearch_Ethan_Perez_Anthropic_researcher_alignment_red_tea.txt
+- `05:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_19_WebSearch_Kyle_Fish_Anthropic_researcher_model_welfare.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_26_WebSearch_J-PAL_education_RCT_evaluation_fellowship.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_21_WebSearch_EdTech_Hub_Nigeria_research_grant_apply.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_22_WebSearch_Innovations_for_Poverty_Action_IPA_education_evalu.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_20_WebSearch_USAID_Development_Innovation_Ventures_DIV_grant_ap.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_24_WebSearch_Mulago_Foundation_Rainer_Arnhold_Fellows_apply_soc.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_27_WebSearch_AI_Safety_Fundamentals_course_BlueDot_Impact.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_23_WebSearch_MATS_Machine_Learning_Alignment_Theory_Scholars_pr.txt
+- `05:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_25_WebSearch_ARENA_Alignment_Research_Engineer_Accelerator_Lond.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_32_WebSearch_summer_2026_startup_internships_still_open_April_r.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_28_WebSearch_AI_startup_summer_2026_intern_Business_Operations_.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_29_WebSearch_Y_Combinator_startup_summer_intern_2026_apply.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_30_WebSearch_edtech_startup_summer_2026_internship_applications.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_31_WebSearch_On_Deck_late-stage_summer_2026_internship_startup_.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_33_WebSearch_founders_office_chief_of_staff_intern_summer_2026_.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_35_WebSearch_venture_capital_VC_intern_summer_2026_rising_junio.txt
+- `05:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_34_WebSearch_Africa-focused_startup_summer_intern_2026_Flutterw.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_38_WebSearch_summer_2026_intern_GTM_strategy_AI_startup_apply_d.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_36_WebSearch_YC_workatastartupcom_summer_2026_intern_GTM_sales_.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_37_WebSearch_last_minute_summer_2026_internship_still_open_Apri.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_39_WebSearch_summer_2026_internship_posted_this_week_April_2026.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_41_WebSearch_posted_today_OR_posted_2_days_ago_summer_2026_inte.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_40_WebSearch_LinkedIn_summer_2026_intern_posted_this_week_busin.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_42_WebFetch_httpsgithubcomSimplifyJobsSummer2026-Internships.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_43_WebFetch_httpswwwycombinatorcominternships.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_44_WebFetch_httpswwwswelistcomsortdate.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_45_WebSearch_startupjobs_internships_business_operations_GTM_pr.txt
+- `06:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_48_WebSearch_April_2026_hackathon_college_students_MLH_register.txt
+- `06:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_46_WebSearch_hackathon_April_18_19_20_2026_northeast_AI_student.txt
+- `06:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_47_WebSearch_hackathon_this_weekend_April_19_2026_NYC_Boston_vi.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_49_WebSearch_Claude_Anthropic_AI_hackathon_April_2026_prize_bui.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_50_WebSearch_devpost_hackathon_April_18_19_20_2026_AI_online_en.txt
+- `07:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_53_WebSearch_April_25_OR_April_26_2026_hackathon_college_studen.txt
+- `07:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_51_WebSearch_hackathon_April_25_26_27_2026_AI_online_devpost_re.txt
+- `07:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_52_WebSearch_MLH_hackathon_April_26_2026_student_weekend.txt
+- `07:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_54_WebFetch_httpshack-nationdevpostcom.txt
+- `07:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_55_WebFetch_httpshack-nationdevpostcomrules.txt
+
+## Social Media `3ca6f6d6` | 2026-04-20 | 90 files
+Folders: -Users-naomiivie-Downloads-App-Social-Media, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Social-Media
+
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_126_WebSearch_Wesleyan_University_DataFest_2025_winners_projects.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_128_WebSearch_how_to_win_ASA_DataFest_48_hour_competition_strate.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_127_WebSearch_ASA_DataFest_judging_criteria_rubric_award_categor.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_125_WebSearch_Wesleyan_DataFest_2024_winning_team_best_data_stor.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_129_WebSearch_Manoliss_Mavericks_OR_Desirable_Goats_Wesleyan_Dat.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_130_WebSearch_mediumcom_DataFest_winning_project_healthcare_soci.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_132_WebSearch_Rikesh_Patel_UCLA_DataFest_how_to_win_10_steps_str.txt
+- `03:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_131_WebSearch_Chelsea_Lee_DataFest_succeed_win_tips_strategy_med.txt
+- `04:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_01_WebSearch_university_ITS_help_desk_assistant_student_worker_.txt
+- `04:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_00_WebSearch_Wesleyan_ITS_help_desk_assistant_job_description_d.txt
+- `04:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_02_WebSearch_Wesleyan_University_total_number_of_faculty_and_st.txt
+- `04:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_03_WebSearch_Wesleyan_University_at_a_glance_faculty_staff_head.txt
+- `04:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_04_WebFetch_httpswwwwesleyaneduaboutglanceatweshtml.txt
+- `04:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_05_WebFetch_httpsdatausaioprofileuniversitywesleyan-university.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_06_WebSearch_Anthropic_Fellows_Program_mentors_research_areas_a.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_11_WebSearch_Sara_Price_Anthropic_researcher_AI_safety.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_07_WebSearch_Sam_Bowman_Anthropic_researcher_AI_safety_research.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_09_WebSearch_Nina_Panickssery_Anthropic_researcher_interpretabi.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_08_WebSearch_Alex_Tamkin_Anthropic_researcher_societal_impacts.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_10_WebSearch_Jascha_Sohl-Dickstein_Anthropic_researcher_diffusi.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_12_WebSearch_Logan_Graham_Anthropic_researcher_AI_safety.txt
+- `05:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_13_WebSearch_Trenton_Bricken_Anthropic_researcher_mechanistic_i.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_14_WebSearch_Joe_Benton_Anthropic_researcher_alignment.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_15_WebSearch_Collin_Burns_Anthropic_researcher_superalignment.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_17_WebSearch_Samuel_Marks_Anthropic_researcher_sparse_autoencod.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_16_WebSearch_Fabien_Roger_Anthropic_researcher_AI_control_align.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_18_WebSearch_Ethan_Perez_Anthropic_researcher_alignment_red_tea.txt
+- `05:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_19_WebSearch_Kyle_Fish_Anthropic_researcher_model_welfare.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_26_WebSearch_J-PAL_education_RCT_evaluation_fellowship.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_21_WebSearch_EdTech_Hub_Nigeria_research_grant_apply.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_22_WebSearch_Innovations_for_Poverty_Action_IPA_education_evalu.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_20_WebSearch_USAID_Development_Innovation_Ventures_DIV_grant_ap.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_24_WebSearch_Mulago_Foundation_Rainer_Arnhold_Fellows_apply_soc.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_27_WebSearch_AI_Safety_Fundamentals_course_BlueDot_Impact.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_23_WebSearch_MATS_Machine_Learning_Alignment_Theory_Scholars_pr.txt
+- `05:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_25_WebSearch_ARENA_Alignment_Research_Engineer_Accelerator_Lond.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_32_WebSearch_summer_2026_startup_internships_still_open_April_r.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_28_WebSearch_AI_startup_summer_2026_intern_Business_Operations_.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_29_WebSearch_Y_Combinator_startup_summer_intern_2026_apply.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_30_WebSearch_edtech_startup_summer_2026_internship_applications.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_31_WebSearch_On_Deck_late-stage_summer_2026_internship_startup_.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_33_WebSearch_founders_office_chief_of_staff_intern_summer_2026_.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_35_WebSearch_venture_capital_VC_intern_summer_2026_rising_junio.txt
+- `05:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_34_WebSearch_Africa-focused_startup_summer_intern_2026_Flutterw.txt
+- `05:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_38_WebSearch_summer_2026_intern_GTM_strategy_AI_startup_apply_d.txt
+- `05:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_36_WebSearch_YC_workatastartupcom_summer_2026_intern_GTM_sales_.txt
+- `05:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_37_WebSearch_last_minute_summer_2026_internship_still_open_Apri.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_39_WebSearch_summer_2026_internship_posted_this_week_April_2026.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_41_WebSearch_posted_today_OR_posted_2_days_ago_summer_2026_inte.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_40_WebSearch_LinkedIn_summer_2026_intern_posted_this_week_busin.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_42_WebFetch_httpsgithubcomSimplifyJobsSummer2026-Internships.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_43_WebFetch_httpswwwycombinatorcominternships.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_44_WebFetch_httpswwwswelistcomsortdate.txt
+- `06:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_45_WebSearch_startupjobs_internships_business_operations_GTM_pr.txt
+- `06:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_48_WebSearch_April_2026_hackathon_college_students_MLH_register.txt
+- `06:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_46_WebSearch_hackathon_April_18_19_20_2026_northeast_AI_student.txt
+- `06:58` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_47_WebSearch_hackathon_this_weekend_April_19_2026_NYC_Boston_vi.txt
+- `07:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_49_WebSearch_Claude_Anthropic_AI_hackathon_April_2026_prize_bui.txt
+- `07:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_50_WebSearch_devpost_hackathon_April_18_19_20_2026_AI_online_en.txt
+- `07:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_53_WebSearch_April_25_OR_April_26_2026_hackathon_college_studen.txt
+- `07:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_51_WebSearch_hackathon_April_25_26_27_2026_AI_online_devpost_re.txt
+- `07:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_52_WebSearch_MLH_hackathon_April_26_2026_student_weekend.txt
+- `07:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_54_WebFetch_httpshack-nationdevpostcom.txt
+- `07:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b997d564-ec8_55_WebFetch_httpshack-nationdevpostcomrules.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_135_WebSearch_Kansas_county_broadband_access_percentage_2024_rur.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_134_WebSearch_Kansas_Rural_Health_Transformation_Program_target_.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_133_WebSearch_Stormont_Vail_Health_Topeka_Kansas_service_area_co.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_136_WebSearch_Kansas_Medicaid_expansion_status_2026_uninsured_ra.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_138_WebSearch_Kansas_uninsured_rate_by_county_2024_County_Health.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_137_WebSearch_Kansas_county_FIPS_codes_Cloud_Morris_Osage_Wabaun.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_139_WebSearch_HRSA_Health_Professional_Shortage_Area_Kansas_coun.txt
+- `07:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_140_WebSearch_preventable_ED_visit_cost_Kansas_hospital_average_.txt
+- `07:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_142_WebSearch_CDC_PLACES_health_data_Kansas_county_estimates_202.txt
+- `07:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_141_WebSearch_FIPS_20029_OR_FIPS_20059_OR_FIPS_20139_Kansas_coun.txt
+- `07:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_144_WebSearch_Kansas_maternity_care_deserts_counties_hospital_ob.txt
+- `07:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_143_WebSearch_AHRQ_preventable_emergency_department_cost_per_vis.txt
+- `07:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_145_WebSearch_Kansas_counties_geojson_github_raw_download_census.txt
+- `15:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_146_WebSearch_Kansas_Health_Institute_county_broadband_gap_perce.txt
+- `15:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_147_WebFetch_httpswwwkhiorgarticlesvariations-in-internet-access.txt
+- `15:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/32030cb5-c0e_148_WebFetch_httpswwwyahoocomnewskansas-broadband-internet-dispa.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/3ca6f6d6-cc8_00_Research_agent_frameworks_2026.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/3ca6f6d6-cc8_00_Research_agent_frameworks_2026.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/3ca6f6d6-cc8_02_Research_Sana_AI_intelligent_feel.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/3ca6f6d6-cc8_02_Research_Sana_AI_intelligent_feel.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/3ca6f6d6-cc8_03_Research_video_agent__Instagram_access.txt
+- `01:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/3ca6f6d6-cc8_03_Research_video_agent__Instagram_access.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/3ca6f6d6-cc8_01_Research_agent_memory_systems.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/3ca6f6d6-cc8_01_Research_agent_memory_systems.txt
+- `01:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/3ca6f6d6-cc8_04_Deep_research_how_to_build_AI_agents.txt
+- `01:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/3ca6f6d6-cc8_04_Deep_research_how_to_build_AI_agents.txt
+
+## E4E / Sabi `db11b54e` | 2026-04-25 | 110 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_00_Sabi_internal_research_synthesis.txt
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_02_Sabi_problem_and_use_case_research.txt
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_01_Fresh_web_research_on_voice_AI_education.txt
+- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_03_Expand_internal_research_dossier.txt
+- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_05_Expand_problem_and_ground_research.txt
+- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_04_Expand_fresh_web_research.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_06_WebSearch_AI_assistant_Army_regulations_RAG_chatbot_form_fil.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_08_WebSearch_GenAImil_applications_portfolio_Department_of_Defe.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_07_WebSearch_DA_Form_auto-fill_AI_natural_language_military_pap.txt
+- `19:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_09_WebSearch_CamoGPT_Army_Ask_Sage_NIPRGPT_AI_assistant_militar.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_10_WebSearch_SergeantAI_Army_regulations_chatbot_voice_DA_Form_.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_11_WebSearch_voice_AI_assistant_soldiers_offline_field_manual_R.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_12_WebSearch_Joint_Travel_Regulations_AI_per_diem_TDY_planner_c.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_13_WebSearch_Ask_Sage_Army_Enterprise_LLM_Workspace_what_it_doe.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_14_WebFetch_httpswwwwwtcomblogcan-a-chatbot-help-you-stay-withi.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_15_WebFetch_httpswwwmilnervacom.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_16_WebSearch_Army_publishing_directorate_AI_chatbot_search_fiel.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_17_WebSearch_military_bureaucracy_admin_paperwork_AI_startup_ve.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_19_WebSearch_AI_form_filler_OR_natural_language_form_DoD_milita.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_21_WebSearch_Edgerunner_AI_offline_LLM_military_soldiers_field_.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_20_WebSearch_voice_assistant_Army_OR_military_regulations_RAG_o.txt
+- `19:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_18_WebFetch_httpswritemyncoercom.txt
+- `19:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_25_WebSearch_Defense_Travel_System_DTS_soldier_complaints_probl.txt
+- `19:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_24_WebSearch_Army_S1_personnel_paperwork_bottleneck_how_leave_r.txt
+- `19:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_22_WebSearch_NCOER_OR_OER_writing_time_consuming_Army_evaluatio.txt
+- `19:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_23_WebSearch_military_administrative_burden_study_hours_per_wee.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_26_WebFetch_httpsmwiwestpointeduthe-mission-and-the-bureaucracy.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_27_WebFetch_httpstaskandpurposecomnewsdefense-travel-system-rep.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_29_WebSearch_IPPS-A_Army_personnel_system_problems_complaints_u.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_28_WebSearch_Army_most_painful_forms_paperwork_sergeant_captain.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_30_WebFetch_httpstaskandpurposecomculturearmy-officer-reddit-ra.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_32_WebSearch_GenAImil_use_cases_what_soldiers_actually_use_it_f.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_31_WebSearch_Army_eMILPO_HR_Command_paperwork_backlog_leave_pro.txt
+- `19:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_33_WebSearch_Army_company_command_paperwork_CCIR_SHARP_EO_drug_.txt
+- `19:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_34_WebFetch_httpssmallwarsjournalcom20260119genai.txt
+- `19:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_36_WebSearch_Army_Talent_Alignment_Process_OR_ATAP_Army_assignm.txt
+- `19:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_35_WebSearch_soldier_complaints_reddit_barracks_chow_paperwork_.txt
+- `19:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_37_WebSearch_Army_G-1_admin_processes_inefficiency_paperwork_mo.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_38_WebSearch_Sanjeev_Mohindra_MIT_Lincoln_Lab_AI_defense_bio_re.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_40_WebSearch_Army_company_commander_60_hours_admin_burden_LPD_r.txt
+- `19:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_39_WebSearch_Stuart_Wagner_Air_Force_Chief_Digital_Transformati.txt
+- `20:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_41_WebSearch_DA_Form_4856_fillable_PDF_download_2024_2025_sitea.txt
+- `22:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_42_WebSearch_DA_Form_31_fillable_AcroForm_PDF_download_link_202.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_45_WebFetch_httpsexposcspaihackathon.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_43_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_46_WebSearch_AI_Expo_hackathon_2024_winners_track_prize_project.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_44_WebSearch_aiexpo_OR_ai_plus_expo_SCSP_June_2025_hackathon_wi.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_48_WebSearch_AGI_House_SCSP_hackathon_June_2025_winners_track_A.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_50_WebSearch_AIExpo_hackathon_prize_winning_project_agentic_202.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_47_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_49_WebSearch_githubcom_SCSP_AI_Expo_hackathon_submission_winner.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_51_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_52_WebFetch_httpswwwyoutubecomwatchvYV2FJeDJP_k.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_53_WebSearch_SCSP_hackathon_June_2025_first_place_defense_AI.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_54_WebSearch_Project_Perception_AI_expo_SCSP_defense_June_2025_.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_55_WebFetch_httpsgithubcomscspai.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_56_WebSearch_SCSP_AGI_House_aiexpo_hackathon_results_announceme.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_57_WebSearch_SCSP_hackathon_2nd_place_OR_3rd_place_agentic_AI_w.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_58_WebFetch_httpsscsp222substackcompwhats-happening-at-scsp-eve.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_60_WebSearch_SentinelPilot_SCSP_hackathon_fault_detection_criti.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_61_WebSearch_EarthKit_Agent_geopolitical_warning_investigation_.txt
+- `23:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_59_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_62_WebSearch_AR_27-10_military_justice_fillable_PDF_download_ar.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_65_WebSearch_AR_623-3_evaluation_reporting_system_PDF_download_.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_63_WebSearch_AR_670-1_wear_appearance_Army_uniforms_PDF_downloa.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_64_WebSearch_AR_735-5_property_accountability_PDF_download_army.txt
+- `00:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_68_WebSearch_AR_670-1_wear_appearance_army_uniforms_2021_PDF_si.txt
+- `00:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_66_WebSearch_AR_600-8-22_military_awards_2024_2025_PDF_official.txt
+- `00:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_67_WebSearch_AR_600-8-101_personnel_processing_in_transit_trans.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_69_WebSearch_AR_600-9_army_body_composition_program_PDF_2024_20.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_72_WebSearch_FM_6-22_Leader_Development_Field_Manual_PDF_2022_2.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_70_WebSearch_AR_600-85_Army_Substance_Abuse_Program_PDF_2020_20.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_71_WebSearch_DA_Pam_600-25_US_Army_Noncommissioned_Officer_Prof.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_73_WebSearch_AR_350-1_Army_training_education_PDF_download_2024.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_78_WebSearch_AR_15-6_procedures_investigations_boards_officers_.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_76_WebSearch_AR_380-5_information_security_PDF_army_download_20.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_77_WebSearch_AR_40-501_standards_medical_fitness_PDF_download_2.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_75_WebSearch_JP_1-0_joint_personnel_support_PDF_download_jcsmil.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_74_WebSearch_Manual_for_Courts-Martial_2024_PDF_download_offici.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_79_WebSearch_FM_7-22_Holistic_Health_Fitness_PDF_download_army.txt
+- `00:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_80_WebSearch_ADP_6-22_Army_leadership_PDF_download_2019_2022_of.txt
+- `00:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_82_WebSearch_optimal_RAG_corpus_size_FAISS_demo_retrieval_quali.txt
+- `00:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_81_WebSearch_sentence-transformers_MiniLM-L6-v2_retrieval_quali.txt
+- `00:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_83_WebSearch_RAG_chunk_count_retrieval_precision_recall_tradeof.txt
+- `00:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_84_WebSearch_FAISS_IndexFlatIP_scaling_500K_vectors_performance.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_85_WebSearch_DTIC_discoverdticmil_API_endpoint_documentation_pu.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_86_WebSearch_DTIC_STINET_search_API_parameters_accession_number.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_87_WebSearch_eCFR_apiecfrgov_versioner_full_title_32_XML_Joint_.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_89_WebSearch_cross_encoder_reranker_FAISS_MiniLM_precision_reco.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_88_WebSearch_DTIC_most_cited_unclassified_Army_personnel_doctri.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_90_WebFetch_httpswwwecfrgovdevelopersdocumentationapiv1.txt
+- `00:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_91_WebFetch_httpsdiscoverdticmilproducts-services.txt
+- `00:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_92_WebFetch_httpswwwecfrgovreader-aidsecfr-developer-resourcesr.txt
+- `00:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_93_WebFetch_httpsdiscoverdticmiltechnical-reports.txt
+- `00:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_94_WebSearch_appsdticmilsticitations_pdf_full_text_URL_pattern_.txt
+- `00:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_95_WebSearch_eCFR_API_versioner_full_title_XML_endpoint_example.txt
+- `01:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_98_WebSearch_offline_RAG_sync_corpus_delta_updates_air-gapped_e.txt
+- `01:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_97_WebSearch_edgerunner_ai_offline_LLM_corpus_update_synchroniz.txt
+- `01:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_96_WebSearch_store-and-forward_RAG_corpus_update_SIPR_NIPR_oppo.txt
+- `01:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_99_WebSearch_DDIL_denied_degraded_intermittent_limited_environm.txt
+- `01:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_100_WebSearch_DTIC_public_technical_reports_total_count_by_decad.txt
+- `01:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_101_WebFetch_httpsdiscoverdticmilqdtic_post_typetr.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_102_WebFetch_httpsenwikipediaorgwikiDefense_Technical_Informatio.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_103_WebSearch_appsdticmil_AD1_accession_number_range_latest_2025.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_105_WebSearch_DTIC_accession_number_ADA_prefix_range_years_1974_.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_104_WebSearch_AD0_AD1_ADA_DTIC_accession_prefix_scheme_decade_ra.txt
+- `01:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_106_WebSearch_DTIC_distribution_statement_A_B_C_D_E_F_definition.txt
+- `01:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_108_WebSearch_DTIC_ADB_prefix_limited_distribution_declassified_.txt
+- `01:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_107_WebSearch_ADP_prefix_DTIC_proceedings_symposium_conference_u.txt
+- `01:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_109_WebSearch_sitearmypubsarmymil_active_publications_list_URL_P.txt
+
+## E4E / Sabi `bad258fa` | 2026-04-25 | 90 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_00_Sabi_internal_research_synthesis.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_02_Sabi_problem_and_use_case_research.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_01_Fresh_web_research_on_voice_AI_education.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_03_Expand_internal_research_dossier.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_05_Expand_problem_and_ground_research.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_04_Expand_fresh_web_research.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_06_WebSearch_AI_assistant_Army_regulations_RAG_chatbot_form_fil.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_08_WebSearch_GenAImil_applications_portfolio_Department_of_Defe.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_07_WebSearch_DA_Form_auto-fill_AI_natural_language_military_pap.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_09_WebSearch_CamoGPT_Army_Ask_Sage_NIPRGPT_AI_assistant_militar.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_10_WebSearch_SergeantAI_Army_regulations_chatbot_voice_DA_Form_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_11_WebSearch_voice_AI_assistant_soldiers_offline_field_manual_R.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_12_WebSearch_Joint_Travel_Regulations_AI_per_diem_TDY_planner_c.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_13_WebSearch_Ask_Sage_Army_Enterprise_LLM_Workspace_what_it_doe.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_14_WebFetch_httpswwwwwtcomblogcan-a-chatbot-help-you-stay-withi.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_15_WebFetch_httpswwwmilnervacom.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_16_WebSearch_Army_publishing_directorate_AI_chatbot_search_fiel.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_17_WebSearch_military_bureaucracy_admin_paperwork_AI_startup_ve.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_19_WebSearch_AI_form_filler_OR_natural_language_form_DoD_milita.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_21_WebSearch_Edgerunner_AI_offline_LLM_military_soldiers_field_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_20_WebSearch_voice_assistant_Army_OR_military_regulations_RAG_o.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_18_WebFetch_httpswritemyncoercom.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_25_WebSearch_Defense_Travel_System_DTS_soldier_complaints_probl.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_24_WebSearch_Army_S1_personnel_paperwork_bottleneck_how_leave_r.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_22_WebSearch_NCOER_OR_OER_writing_time_consuming_Army_evaluatio.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_23_WebSearch_military_administrative_burden_study_hours_per_wee.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_26_WebFetch_httpsmwiwestpointeduthe-mission-and-the-bureaucracy.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_27_WebFetch_httpstaskandpurposecomnewsdefense-travel-system-rep.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_29_WebSearch_IPPS-A_Army_personnel_system_problems_complaints_u.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_28_WebSearch_Army_most_painful_forms_paperwork_sergeant_captain.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_30_WebFetch_httpstaskandpurposecomculturearmy-officer-reddit-ra.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_32_WebSearch_GenAImil_use_cases_what_soldiers_actually_use_it_f.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_31_WebSearch_Army_eMILPO_HR_Command_paperwork_backlog_leave_pro.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_33_WebSearch_Army_company_command_paperwork_CCIR_SHARP_EO_drug_.txt
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_01_WebSearch_SCSP_hackathon_winners_projects_AI_Expo.txt
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_00_WebSearch_SCSP_hackathon_2025_winners_Special_Competitive_St.txt
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_03_WebSearch_scspai_hackathon_winners_track_GenAImil_wargaming.txt
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_02_WebSearch_SCSP_hackathon_2024_2025_winning_projects_defense_.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_06_WebFetch_httpsgithubcomyli12313AI-Agents-for-Defense-and-Gov.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_04_WebFetch_httpsappagihouseorgeventsscsp-agi-hackathon-2024111.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_07_WebSearch_BRAVO_hackathon_winners_Stuart_Wagner_Air_Force_de.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_05_WebSearch_AGI_House_SCSP_hackathon_winners_Port_Sentinel_OR_.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_08_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_09_WebFetch_httpsappagihouseorgeventsagent-for-defense-and-gov-.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_11_WebSearch_SCSP_hackathon_winner_first_place_2025_AI_agents_d.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_10_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_12_WebFetch_httpswwwscspaihackathon.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_13_WebFetch_httpsscsp222substackcompscsps-year-in-review-a-wint.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_14_WebSearch_SCSP_hackathon_25000_OR_10000_winning_project_agen.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_15_WebSearch_AI_Expo_hackathon_2025_winner_project_demo_defense.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_16_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_17_WebFetch_httpsexposcspaihackathon.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_19_WebSearch_SCSP_AGI_House_hackathon_Crystal_City_winners_2024.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_18_WebSearch_SCSP_hackathon_Spectre_OR_agentic_jailbreak_winner.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_20_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_21_WebSearch_AGI_House_SCSP_hackathon_second_place_OR_third_pla.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_23_WebSearch_SCSP_hackathon_Crystal_City_November_2024_winners_.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_22_WebSearch_SCSP_AIExpo_June_2025_hackathon_winners_DefenseSco.txt
+- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_24_WebSearch_sitegithubcom_SCSP_hackathon_submission_2024_2025_.txt
+- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_26_WebSearch_Jessica_Chen_Jeremy_Zhang_Spectre_red_teaming_SCSP.txt
+- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_25_WebSearch_SCSP_hackathon_won_OR_winning_project_case_study_D.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_27_WebFetch_httpsrawgithubusercontentcomJessSanChenSpectreRedTe.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_28_WebSearch_SCSP_hackathon_Boston_SF_DC_track_winner_June_2025.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_30_WebSearch_AI_Expo_2025_hackathon_Anthropic_OpenAI_Meta_track.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_29_WebSearch_AGI_House_hackathon_SCSP_November_2024_second_plac.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_32_WebFetch_httpswwwaiexpertmagazinecomai-expo-hackathon-2026-e.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_31_WebFetch_httpsgithubcomscspai.txt
+- `22:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_33_WebSearch_GitHub_hackathon_SCSP_defense_gov_submission_winne.txt
+- `22:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_34_WebFetch_httpsexposcspai.txt
+- `22:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_36_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_35_WebFetch_httpsexposcspaiprogramming.txt
+- `22:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_37_WebSearch_AI_Expo_2025_attendance_recap_speakers_Schmidt_CDA.txt
+- `22:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_39_WebFetch_httpsfortunecom20250604eric-schmidt-ai-expo-washing.txt
+- `22:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_38_WebFetch_httpsscsp222substackcomprecapping-the-ai-expo-for-n.txt
+- `22:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_40_WebFetch_httpssharongoldmansubstackcompi-went-to-dc-for-eric.txt
+- `22:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_41_WebFetch_httpswwwdiumillatestdiu-at-the-2025-scsp-ai-expo.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_45_WebSearch_Africas_Talking_phone_number_categories_Regular_Bu.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_43_WebSearch_Africas_Talking_Nigeria_voice_number_types_pricing.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_44_WebSearch_africastalking_voice_phone_number_category_test_nu.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_42_WebSearch_africastalkingcom_Nigeria_voice_pricing_toll-free_.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_48_WebFetch_httpshelpafricastalkingcomenarticles2282146-what-ty.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_46_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_47_WebFetch_httpshelpafricastalkingcomenarticles6049012-what-do.txt
+- `02:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_49_WebFetch_httpshelpafricastalkingcomenarticles1163043-how-do-.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_51_WebSearch_Denuwan_Vithanage_Wesleyan_University_physics_opti.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_50_WebSearch_Wesleyan_Optical_Society_Optica_student_chapter_me.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_52_WebSearch_Denuwan_Vithanage_Wesleyan_Optical_Society_Optica_.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_53_WebFetch_httpswwwwesleyaneduacademicsgraddvithanageprofileht.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_54_WebFetch_httpsdenuwanvithanagecom.txt
+- `02:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_55_WebFetch_httpsdenuwanvithanagecomportfolio-archiveconference.txt
+
+## E4E / Sabi `3f0fd587` | 2026-04-26 | 120 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_00_Sabi_internal_research_synthesis.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_02_Sabi_problem_and_use_case_research.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_01_Fresh_web_research_on_voice_AI_education.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_03_Expand_internal_research_dossier.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_05_Expand_problem_and_ground_research.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_04_Expand_fresh_web_research.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_06_WebSearch_AI_assistant_Army_regulations_RAG_chatbot_form_fil.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_08_WebSearch_GenAImil_applications_portfolio_Department_of_Defe.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_07_WebSearch_DA_Form_auto-fill_AI_natural_language_military_pap.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_09_WebSearch_CamoGPT_Army_Ask_Sage_NIPRGPT_AI_assistant_militar.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_10_WebSearch_SergeantAI_Army_regulations_chatbot_voice_DA_Form_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_11_WebSearch_voice_AI_assistant_soldiers_offline_field_manual_R.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_12_WebSearch_Joint_Travel_Regulations_AI_per_diem_TDY_planner_c.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_13_WebSearch_Ask_Sage_Army_Enterprise_LLM_Workspace_what_it_doe.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_14_WebFetch_httpswwwwwtcomblogcan-a-chatbot-help-you-stay-withi.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_15_WebFetch_httpswwwmilnervacom.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_16_WebSearch_Army_publishing_directorate_AI_chatbot_search_fiel.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_17_WebSearch_military_bureaucracy_admin_paperwork_AI_startup_ve.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_19_WebSearch_AI_form_filler_OR_natural_language_form_DoD_milita.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_21_WebSearch_Edgerunner_AI_offline_LLM_military_soldiers_field_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_20_WebSearch_voice_assistant_Army_OR_military_regulations_RAG_o.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_18_WebFetch_httpswritemyncoercom.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_25_WebSearch_Defense_Travel_System_DTS_soldier_complaints_probl.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_24_WebSearch_Army_S1_personnel_paperwork_bottleneck_how_leave_r.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_22_WebSearch_NCOER_OR_OER_writing_time_consuming_Army_evaluatio.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_23_WebSearch_military_administrative_burden_study_hours_per_wee.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_26_WebFetch_httpsmwiwestpointeduthe-mission-and-the-bureaucracy.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_27_WebFetch_httpstaskandpurposecomnewsdefense-travel-system-rep.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_29_WebSearch_IPPS-A_Army_personnel_system_problems_complaints_u.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_28_WebSearch_Army_most_painful_forms_paperwork_sergeant_captain.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_30_WebFetch_httpstaskandpurposecomculturearmy-officer-reddit-ra.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_32_WebSearch_GenAImil_use_cases_what_soldiers_actually_use_it_f.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_31_WebSearch_Army_eMILPO_HR_Command_paperwork_backlog_leave_pro.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_33_WebSearch_Army_company_command_paperwork_CCIR_SHARP_EO_drug_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_34_WebFetch_httpssmallwarsjournalcom20260119genai.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_36_WebSearch_Army_Talent_Alignment_Process_OR_ATAP_Army_assignm.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_35_WebSearch_soldier_complaints_reddit_barracks_chow_paperwork_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_37_WebSearch_Army_G-1_admin_processes_inefficiency_paperwork_mo.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_38_WebSearch_Sanjeev_Mohindra_MIT_Lincoln_Lab_AI_defense_bio_re.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_40_WebSearch_Army_company_commander_60_hours_admin_burden_LPD_r.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_39_WebSearch_Stuart_Wagner_Air_Force_Chief_Digital_Transformati.txt
+- `20:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_41_WebSearch_DA_Form_4856_fillable_PDF_download_2024_2025_sitea.txt
+- `22:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_42_WebSearch_DA_Form_31_fillable_AcroForm_PDF_download_link_202.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_01_WebSearch_SCSP_hackathon_winners_projects_AI_Expo.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_00_WebSearch_SCSP_hackathon_2025_winners_Special_Competitive_St.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_03_WebSearch_scspai_hackathon_winners_track_GenAImil_wargaming.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_02_WebSearch_SCSP_hackathon_2024_2025_winning_projects_defense_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_06_WebFetch_httpsgithubcomyli12313AI-Agents-for-Defense-and-Gov.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_04_WebFetch_httpsappagihouseorgeventsscsp-agi-hackathon-2024111.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_07_WebSearch_BRAVO_hackathon_winners_Stuart_Wagner_Air_Force_de.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_05_WebSearch_AGI_House_SCSP_hackathon_winners_Port_Sentinel_OR_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_08_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_09_WebFetch_httpsappagihouseorgeventsagent-for-defense-and-gov-.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_11_WebSearch_SCSP_hackathon_winner_first_place_2025_AI_agents_d.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_10_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_12_WebFetch_httpswwwscspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_13_WebFetch_httpsscsp222substackcompscsps-year-in-review-a-wint.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_14_WebSearch_SCSP_hackathon_25000_OR_10000_winning_project_agen.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_15_WebSearch_AI_Expo_hackathon_2025_winner_project_demo_defense.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_16_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_17_WebFetch_httpsexposcspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_19_WebSearch_SCSP_AGI_House_hackathon_Crystal_City_winners_2024.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_18_WebSearch_SCSP_hackathon_Spectre_OR_agentic_jailbreak_winner.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_20_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_21_WebSearch_AGI_House_SCSP_hackathon_second_place_OR_third_pla.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_23_WebSearch_SCSP_hackathon_Crystal_City_November_2024_winners_.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_22_WebSearch_SCSP_AIExpo_June_2025_hackathon_winners_DefenseSco.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_24_WebSearch_sitegithubcom_SCSP_hackathon_submission_2024_2025_.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_26_WebSearch_Jessica_Chen_Jeremy_Zhang_Spectre_red_teaming_SCSP.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_25_WebSearch_SCSP_hackathon_won_OR_winning_project_case_study_D.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_27_WebFetch_httpsrawgithubusercontentcomJessSanChenSpectreRedTe.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_28_WebSearch_SCSP_hackathon_Boston_SF_DC_track_winner_June_2025.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_30_WebSearch_AI_Expo_2025_hackathon_Anthropic_OpenAI_Meta_track.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_29_WebSearch_AGI_House_hackathon_SCSP_November_2024_second_plac.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_32_WebFetch_httpswwwaiexpertmagazinecomai-expo-hackathon-2026-e.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_31_WebFetch_httpsgithubcomscspai.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_33_WebSearch_GitHub_hackathon_SCSP_defense_gov_submission_winne.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_34_WebFetch_httpsexposcspai.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_36_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_35_WebFetch_httpsexposcspaiprogramming.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_37_WebSearch_AI_Expo_2025_attendance_recap_speakers_Schmidt_CDA.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_39_WebFetch_httpsfortunecom20250604eric-schmidt-ai-expo-washing.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_38_WebFetch_httpsscsp222substackcomprecapping-the-ai-expo-for-n.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_40_WebFetch_httpssharongoldmansubstackcompi-went-to-dc-for-eric.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_41_WebFetch_httpswwwdiumillatestdiu-at-the-2025-scsp-ai-expo.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_45_WebFetch_httpsexposcspaihackathon.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_43_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_46_WebSearch_AI_Expo_hackathon_2024_winners_track_prize_project.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_44_WebSearch_aiexpo_OR_ai_plus_expo_SCSP_June_2025_hackathon_wi.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_48_WebSearch_AGI_House_SCSP_hackathon_June_2025_winners_track_A.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_50_WebSearch_AIExpo_hackathon_prize_winning_project_agentic_202.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_47_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_49_WebSearch_githubcom_SCSP_AI_Expo_hackathon_submission_winner.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_51_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_52_WebFetch_httpswwwyoutubecomwatchvYV2FJeDJP_k.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_53_WebSearch_SCSP_hackathon_June_2025_first_place_defense_AI.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_54_WebSearch_Project_Perception_AI_expo_SCSP_defense_June_2025_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_55_WebFetch_httpsgithubcomscspai.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_56_WebSearch_SCSP_AGI_House_aiexpo_hackathon_results_announceme.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_57_WebSearch_SCSP_hackathon_2nd_place_OR_3rd_place_agentic_AI_w.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_58_WebFetch_httpsscsp222substackcompwhats-happening-at-scsp-eve.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_60_WebSearch_SentinelPilot_SCSP_hackathon_fault_detection_criti.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_61_WebSearch_EarthKit_Agent_geopolitical_warning_investigation_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_59_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_62_WebSearch_AR_27-10_military_justice_fillable_PDF_download_ar.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_65_WebSearch_AR_623-3_evaluation_reporting_system_PDF_download_.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_63_WebSearch_AR_670-1_wear_appearance_Army_uniforms_PDF_downloa.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_64_WebSearch_AR_735-5_property_accountability_PDF_download_army.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_68_WebSearch_AR_670-1_wear_appearance_army_uniforms_2021_PDF_si.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_66_WebSearch_AR_600-8-22_military_awards_2024_2025_PDF_official.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_67_WebSearch_AR_600-8-101_personnel_processing_in_transit_trans.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_69_WebSearch_AR_600-9_army_body_composition_program_PDF_2024_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_72_WebSearch_FM_6-22_Leader_Development_Field_Manual_PDF_2022_2.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_70_WebSearch_AR_600-85_Army_Substance_Abuse_Program_PDF_2020_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_71_WebSearch_DA_Pam_600-25_US_Army_Noncommissioned_Officer_Prof.txt
+- `00:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_00_Research_seamless_STS_pipelines.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_01_Research_ChatGPTElevenLabs_voice_UX_latency_tricks.txt
+- `12:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_02_Research_server-side_AdobeXFA_form-fill.txt
+- `13:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_03_Production_fill-stack_lore.txt
+- `13:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_04_Why_XFA_still_exists.txt
+
+## E4E / Sabi `0e17b9dd` | 2026-04-26 | 149 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_00_Sabi_internal_research_synthesis.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_02_Sabi_problem_and_use_case_research.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_01_Fresh_web_research_on_voice_AI_education.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_03_Expand_internal_research_dossier.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_05_Expand_problem_and_ground_research.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_04_Expand_fresh_web_research.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_06_WebSearch_AI_assistant_Army_regulations_RAG_chatbot_form_fil.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_08_WebSearch_GenAImil_applications_portfolio_Department_of_Defe.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_07_WebSearch_DA_Form_auto-fill_AI_natural_language_military_pap.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_09_WebSearch_CamoGPT_Army_Ask_Sage_NIPRGPT_AI_assistant_militar.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_10_WebSearch_SergeantAI_Army_regulations_chatbot_voice_DA_Form_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_11_WebSearch_voice_AI_assistant_soldiers_offline_field_manual_R.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_12_WebSearch_Joint_Travel_Regulations_AI_per_diem_TDY_planner_c.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_13_WebSearch_Ask_Sage_Army_Enterprise_LLM_Workspace_what_it_doe.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_14_WebFetch_httpswwwwwtcomblogcan-a-chatbot-help-you-stay-withi.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_15_WebFetch_httpswwwmilnervacom.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_16_WebSearch_Army_publishing_directorate_AI_chatbot_search_fiel.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_17_WebSearch_military_bureaucracy_admin_paperwork_AI_startup_ve.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_19_WebSearch_AI_form_filler_OR_natural_language_form_DoD_milita.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_21_WebSearch_Edgerunner_AI_offline_LLM_military_soldiers_field_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_20_WebSearch_voice_assistant_Army_OR_military_regulations_RAG_o.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_18_WebFetch_httpswritemyncoercom.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_25_WebSearch_Defense_Travel_System_DTS_soldier_complaints_probl.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_24_WebSearch_Army_S1_personnel_paperwork_bottleneck_how_leave_r.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_22_WebSearch_NCOER_OR_OER_writing_time_consuming_Army_evaluatio.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_23_WebSearch_military_administrative_burden_study_hours_per_wee.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_26_WebFetch_httpsmwiwestpointeduthe-mission-and-the-bureaucracy.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_27_WebFetch_httpstaskandpurposecomnewsdefense-travel-system-rep.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_29_WebSearch_IPPS-A_Army_personnel_system_problems_complaints_u.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_28_WebSearch_Army_most_painful_forms_paperwork_sergeant_captain.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_30_WebFetch_httpstaskandpurposecomculturearmy-officer-reddit-ra.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_32_WebSearch_GenAImil_use_cases_what_soldiers_actually_use_it_f.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_31_WebSearch_Army_eMILPO_HR_Command_paperwork_backlog_leave_pro.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_33_WebSearch_Army_company_command_paperwork_CCIR_SHARP_EO_drug_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_34_WebFetch_httpssmallwarsjournalcom20260119genai.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_36_WebSearch_Army_Talent_Alignment_Process_OR_ATAP_Army_assignm.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_35_WebSearch_soldier_complaints_reddit_barracks_chow_paperwork_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_37_WebSearch_Army_G-1_admin_processes_inefficiency_paperwork_mo.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_38_WebSearch_Sanjeev_Mohindra_MIT_Lincoln_Lab_AI_defense_bio_re.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_40_WebSearch_Army_company_commander_60_hours_admin_burden_LPD_r.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_39_WebSearch_Stuart_Wagner_Air_Force_Chief_Digital_Transformati.txt
+- `20:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_41_WebSearch_DA_Form_4856_fillable_PDF_download_2024_2025_sitea.txt
+- `22:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_42_WebSearch_DA_Form_31_fillable_AcroForm_PDF_download_link_202.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_01_WebSearch_SCSP_hackathon_winners_projects_AI_Expo.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_00_WebSearch_SCSP_hackathon_2025_winners_Special_Competitive_St.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_03_WebSearch_scspai_hackathon_winners_track_GenAImil_wargaming.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_02_WebSearch_SCSP_hackathon_2024_2025_winning_projects_defense_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_06_WebFetch_httpsgithubcomyli12313AI-Agents-for-Defense-and-Gov.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_04_WebFetch_httpsappagihouseorgeventsscsp-agi-hackathon-2024111.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_07_WebSearch_BRAVO_hackathon_winners_Stuart_Wagner_Air_Force_de.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_05_WebSearch_AGI_House_SCSP_hackathon_winners_Port_Sentinel_OR_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_08_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_09_WebFetch_httpsappagihouseorgeventsagent-for-defense-and-gov-.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_11_WebSearch_SCSP_hackathon_winner_first_place_2025_AI_agents_d.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_10_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_12_WebFetch_httpswwwscspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_13_WebFetch_httpsscsp222substackcompscsps-year-in-review-a-wint.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_14_WebSearch_SCSP_hackathon_25000_OR_10000_winning_project_agen.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_15_WebSearch_AI_Expo_hackathon_2025_winner_project_demo_defense.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_16_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_17_WebFetch_httpsexposcspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_19_WebSearch_SCSP_AGI_House_hackathon_Crystal_City_winners_2024.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_18_WebSearch_SCSP_hackathon_Spectre_OR_agentic_jailbreak_winner.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_20_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_21_WebSearch_AGI_House_SCSP_hackathon_second_place_OR_third_pla.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_23_WebSearch_SCSP_hackathon_Crystal_City_November_2024_winners_.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_22_WebSearch_SCSP_AIExpo_June_2025_hackathon_winners_DefenseSco.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_24_WebSearch_sitegithubcom_SCSP_hackathon_submission_2024_2025_.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_26_WebSearch_Jessica_Chen_Jeremy_Zhang_Spectre_red_teaming_SCSP.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_25_WebSearch_SCSP_hackathon_won_OR_winning_project_case_study_D.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_27_WebFetch_httpsrawgithubusercontentcomJessSanChenSpectreRedTe.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_28_WebSearch_SCSP_hackathon_Boston_SF_DC_track_winner_June_2025.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_30_WebSearch_AI_Expo_2025_hackathon_Anthropic_OpenAI_Meta_track.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_29_WebSearch_AGI_House_hackathon_SCSP_November_2024_second_plac.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_32_WebFetch_httpswwwaiexpertmagazinecomai-expo-hackathon-2026-e.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_31_WebFetch_httpsgithubcomscspai.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_33_WebSearch_GitHub_hackathon_SCSP_defense_gov_submission_winne.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_34_WebFetch_httpsexposcspai.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_36_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_35_WebFetch_httpsexposcspaiprogramming.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_37_WebSearch_AI_Expo_2025_attendance_recap_speakers_Schmidt_CDA.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_39_WebFetch_httpsfortunecom20250604eric-schmidt-ai-expo-washing.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_38_WebFetch_httpsscsp222substackcomprecapping-the-ai-expo-for-n.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_40_WebFetch_httpssharongoldmansubstackcompi-went-to-dc-for-eric.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_41_WebFetch_httpswwwdiumillatestdiu-at-the-2025-scsp-ai-expo.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_45_WebFetch_httpsexposcspaihackathon.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_43_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_46_WebSearch_AI_Expo_hackathon_2024_winners_track_prize_project.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_44_WebSearch_aiexpo_OR_ai_plus_expo_SCSP_June_2025_hackathon_wi.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_48_WebSearch_AGI_House_SCSP_hackathon_June_2025_winners_track_A.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_50_WebSearch_AIExpo_hackathon_prize_winning_project_agentic_202.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_47_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_49_WebSearch_githubcom_SCSP_AI_Expo_hackathon_submission_winner.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_51_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_52_WebFetch_httpswwwyoutubecomwatchvYV2FJeDJP_k.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_53_WebSearch_SCSP_hackathon_June_2025_first_place_defense_AI.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_54_WebSearch_Project_Perception_AI_expo_SCSP_defense_June_2025_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_55_WebFetch_httpsgithubcomscspai.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_56_WebSearch_SCSP_AGI_House_aiexpo_hackathon_results_announceme.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_57_WebSearch_SCSP_hackathon_2nd_place_OR_3rd_place_agentic_AI_w.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_58_WebFetch_httpsscsp222substackcompwhats-happening-at-scsp-eve.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_60_WebSearch_SentinelPilot_SCSP_hackathon_fault_detection_criti.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_61_WebSearch_EarthKit_Agent_geopolitical_warning_investigation_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_59_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_62_WebSearch_AR_27-10_military_justice_fillable_PDF_download_ar.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_65_WebSearch_AR_623-3_evaluation_reporting_system_PDF_download_.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_63_WebSearch_AR_670-1_wear_appearance_Army_uniforms_PDF_downloa.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_64_WebSearch_AR_735-5_property_accountability_PDF_download_army.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_68_WebSearch_AR_670-1_wear_appearance_army_uniforms_2021_PDF_si.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_66_WebSearch_AR_600-8-22_military_awards_2024_2025_PDF_official.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_67_WebSearch_AR_600-8-101_personnel_processing_in_transit_trans.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_69_WebSearch_AR_600-9_army_body_composition_program_PDF_2024_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_72_WebSearch_FM_6-22_Leader_Development_Field_Manual_PDF_2022_2.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_70_WebSearch_AR_600-85_Army_Substance_Abuse_Program_PDF_2020_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_71_WebSearch_DA_Pam_600-25_US_Army_Noncommissioned_Officer_Prof.txt
+- `00:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_00_Research_seamless_STS_pipelines.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_73_WebSearch_AR_350-1_Army_training_education_PDF_download_2024.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_78_WebSearch_AR_15-6_procedures_investigations_boards_officers_.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_76_WebSearch_AR_380-5_information_security_PDF_army_download_20.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_77_WebSearch_AR_40-501_standards_medical_fitness_PDF_download_2.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_75_WebSearch_JP_1-0_joint_personnel_support_PDF_download_jcsmil.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_74_WebSearch_Manual_for_Courts-Martial_2024_PDF_download_offici.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_79_WebSearch_FM_7-22_Holistic_Health_Fitness_PDF_download_army.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_80_WebSearch_ADP_6-22_Army_leadership_PDF_download_2019_2022_of.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_82_WebSearch_optimal_RAG_corpus_size_FAISS_demo_retrieval_quali.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_81_WebSearch_sentence-transformers_MiniLM-L6-v2_retrieval_quali.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_83_WebSearch_RAG_chunk_count_retrieval_precision_recall_tradeof.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_84_WebSearch_FAISS_IndexFlatIP_scaling_500K_vectors_performance.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_85_WebSearch_DTIC_discoverdticmil_API_endpoint_documentation_pu.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_86_WebSearch_DTIC_STINET_search_API_parameters_accession_number.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_87_WebSearch_eCFR_apiecfrgov_versioner_full_title_32_XML_Joint_.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_89_WebSearch_cross_encoder_reranker_FAISS_MiniLM_precision_reco.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_88_WebSearch_DTIC_most_cited_unclassified_Army_personnel_doctri.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_90_WebFetch_httpswwwecfrgovdevelopersdocumentationapiv1.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_91_WebFetch_httpsdiscoverdticmilproducts-services.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_92_WebFetch_httpswwwecfrgovreader-aidsecfr-developer-resourcesr.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_93_WebFetch_httpsdiscoverdticmiltechnical-reports.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_94_WebSearch_appsdticmilsticitations_pdf_full_text_URL_pattern_.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_95_WebSearch_eCFR_API_versioner_full_title_XML_endpoint_example.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_98_WebSearch_offline_RAG_sync_corpus_delta_updates_air-gapped_e.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_97_WebSearch_edgerunner_ai_offline_LLM_corpus_update_synchroniz.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_96_WebSearch_store-and-forward_RAG_corpus_update_SIPR_NIPR_oppo.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_99_WebSearch_DDIL_denied_degraded_intermittent_limited_environm.txt
+- `01:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_00_WebFetch_httpssanaai.txt
+- `01:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_02_Research_premium_AIdefense-tech_site_patterns.txt
+- `01:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_01_Simulate_Chrome_view_of_Adjutant_landing_page.txt
+- `04:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_03_Research_rugged_military_computer_UI_aesthetics.txt
+- `17:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_04_Research_ChatGPT_Voice__AVM_UIUX.txt
+- `20:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_05_Research_soldier-profile_data_sources.txt
+
+## E4E / Sabi `2d0557db` | 2026-04-26 | 163 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_00_Sabi_internal_research_synthesis.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_02_Sabi_problem_and_use_case_research.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_01_Fresh_web_research_on_voice_AI_education.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_03_Expand_internal_research_dossier.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_05_Expand_problem_and_ground_research.txt
+- `18:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_04_Expand_fresh_web_research.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_06_WebSearch_AI_assistant_Army_regulations_RAG_chatbot_form_fil.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_08_WebSearch_GenAImil_applications_portfolio_Department_of_Defe.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_07_WebSearch_DA_Form_auto-fill_AI_natural_language_military_pap.txt
+- `19:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_09_WebSearch_CamoGPT_Army_Ask_Sage_NIPRGPT_AI_assistant_militar.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_10_WebSearch_SergeantAI_Army_regulations_chatbot_voice_DA_Form_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_11_WebSearch_voice_AI_assistant_soldiers_offline_field_manual_R.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_12_WebSearch_Joint_Travel_Regulations_AI_per_diem_TDY_planner_c.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_13_WebSearch_Ask_Sage_Army_Enterprise_LLM_Workspace_what_it_doe.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_14_WebFetch_httpswwwwwtcomblogcan-a-chatbot-help-you-stay-withi.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_15_WebFetch_httpswwwmilnervacom.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_16_WebSearch_Army_publishing_directorate_AI_chatbot_search_fiel.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_17_WebSearch_military_bureaucracy_admin_paperwork_AI_startup_ve.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_19_WebSearch_AI_form_filler_OR_natural_language_form_DoD_milita.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_21_WebSearch_Edgerunner_AI_offline_LLM_military_soldiers_field_.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_20_WebSearch_voice_assistant_Army_OR_military_regulations_RAG_o.txt
+- `19:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_18_WebFetch_httpswritemyncoercom.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_25_WebSearch_Defense_Travel_System_DTS_soldier_complaints_probl.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_24_WebSearch_Army_S1_personnel_paperwork_bottleneck_how_leave_r.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_22_WebSearch_NCOER_OR_OER_writing_time_consuming_Army_evaluatio.txt
+- `19:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_23_WebSearch_military_administrative_burden_study_hours_per_wee.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_26_WebFetch_httpsmwiwestpointeduthe-mission-and-the-bureaucracy.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_27_WebFetch_httpstaskandpurposecomnewsdefense-travel-system-rep.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_29_WebSearch_IPPS-A_Army_personnel_system_problems_complaints_u.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_28_WebSearch_Army_most_painful_forms_paperwork_sergeant_captain.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_30_WebFetch_httpstaskandpurposecomculturearmy-officer-reddit-ra.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_32_WebSearch_GenAImil_use_cases_what_soldiers_actually_use_it_f.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_31_WebSearch_Army_eMILPO_HR_Command_paperwork_backlog_leave_pro.txt
+- `19:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_33_WebSearch_Army_company_command_paperwork_CCIR_SHARP_EO_drug_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_34_WebFetch_httpssmallwarsjournalcom20260119genai.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_36_WebSearch_Army_Talent_Alignment_Process_OR_ATAP_Army_assignm.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_35_WebSearch_soldier_complaints_reddit_barracks_chow_paperwork_.txt
+- `19:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_37_WebSearch_Army_G-1_admin_processes_inefficiency_paperwork_mo.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_38_WebSearch_Sanjeev_Mohindra_MIT_Lincoln_Lab_AI_defense_bio_re.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_40_WebSearch_Army_company_commander_60_hours_admin_burden_LPD_r.txt
+- `19:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_39_WebSearch_Stuart_Wagner_Air_Force_Chief_Digital_Transformati.txt
+- `20:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_41_WebSearch_DA_Form_4856_fillable_PDF_download_2024_2025_sitea.txt
+- `22:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_42_WebSearch_DA_Form_31_fillable_AcroForm_PDF_download_link_202.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_01_WebSearch_SCSP_hackathon_winners_projects_AI_Expo.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_00_WebSearch_SCSP_hackathon_2025_winners_Special_Competitive_St.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_03_WebSearch_scspai_hackathon_winners_track_GenAImil_wargaming.txt
+- `22:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_02_WebSearch_SCSP_hackathon_2024_2025_winning_projects_defense_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_06_WebFetch_httpsgithubcomyli12313AI-Agents-for-Defense-and-Gov.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_04_WebFetch_httpsappagihouseorgeventsscsp-agi-hackathon-2024111.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_07_WebSearch_BRAVO_hackathon_winners_Stuart_Wagner_Air_Force_de.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_05_WebSearch_AGI_House_SCSP_hackathon_winners_Port_Sentinel_OR_.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_08_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_09_WebFetch_httpsappagihouseorgeventsagent-for-defense-and-gov-.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_11_WebSearch_SCSP_hackathon_winner_first_place_2025_AI_agents_d.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_10_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_12_WebFetch_httpswwwscspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_13_WebFetch_httpsscsp222substackcompscsps-year-in-review-a-wint.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_14_WebSearch_SCSP_hackathon_25000_OR_10000_winning_project_agen.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_15_WebSearch_AI_Expo_hackathon_2025_winner_project_demo_defense.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_16_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_17_WebFetch_httpsexposcspaihackathon.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_19_WebSearch_SCSP_AGI_House_hackathon_Crystal_City_winners_2024.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_18_WebSearch_SCSP_hackathon_Spectre_OR_agentic_jailbreak_winner.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_20_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_21_WebSearch_AGI_House_SCSP_hackathon_second_place_OR_third_pla.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_23_WebSearch_SCSP_hackathon_Crystal_City_November_2024_winners_.txt
+- `22:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_22_WebSearch_SCSP_AIExpo_June_2025_hackathon_winners_DefenseSco.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_24_WebSearch_sitegithubcom_SCSP_hackathon_submission_2024_2025_.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_26_WebSearch_Jessica_Chen_Jeremy_Zhang_Spectre_red_teaming_SCSP.txt
+- `22:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_25_WebSearch_SCSP_hackathon_won_OR_winning_project_case_study_D.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_27_WebFetch_httpsrawgithubusercontentcomJessSanChenSpectreRedTe.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_28_WebSearch_SCSP_hackathon_Boston_SF_DC_track_winner_June_2025.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_30_WebSearch_AI_Expo_2025_hackathon_Anthropic_OpenAI_Meta_track.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_29_WebSearch_AGI_House_hackathon_SCSP_November_2024_second_plac.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_32_WebFetch_httpswwwaiexpertmagazinecomai-expo-hackathon-2026-e.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_31_WebFetch_httpsgithubcomscspai.txt
+- `22:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_33_WebSearch_GitHub_hackathon_SCSP_defense_gov_submission_winne.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_34_WebFetch_httpsexposcspai.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_36_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_35_WebFetch_httpsexposcspaiprogramming.txt
+- `22:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_37_WebSearch_AI_Expo_2025_attendance_recap_speakers_Schmidt_CDA.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_39_WebFetch_httpsfortunecom20250604eric-schmidt-ai-expo-washing.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_38_WebFetch_httpsscsp222substackcomprecapping-the-ai-expo-for-n.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_40_WebFetch_httpssharongoldmansubstackcompi-went-to-dc-for-eric.txt
+- `22:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_41_WebFetch_httpswwwdiumillatestdiu-at-the-2025-scsp-ai-expo.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_45_WebFetch_httpsexposcspaihackathon.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_43_WebFetch_httpsexposcspaiabout2024-recap.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_46_WebSearch_AI_Expo_hackathon_2024_winners_track_prize_project.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_44_WebSearch_aiexpo_OR_ai_plus_expo_SCSP_June_2025_hackathon_wi.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_48_WebSearch_AGI_House_SCSP_hackathon_June_2025_winners_track_A.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_50_WebSearch_AIExpo_hackathon_prize_winning_project_agentic_202.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_47_WebFetch_httpsappagihouseorgeventsai-expo-for-defense-and-go.txt
+- `22:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_49_WebSearch_githubcom_SCSP_AI_Expo_hackathon_submission_winner.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_51_WebFetch_httpsgithubcomyli12313AI-Expo-Hackathon-2025.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_52_WebFetch_httpswwwyoutubecomwatchvYV2FJeDJP_k.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_53_WebSearch_SCSP_hackathon_June_2025_first_place_defense_AI.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_54_WebSearch_Project_Perception_AI_expo_SCSP_defense_June_2025_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_55_WebFetch_httpsgithubcomscspai.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_56_WebSearch_SCSP_AGI_House_aiexpo_hackathon_results_announceme.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_57_WebSearch_SCSP_hackathon_2nd_place_OR_3rd_place_agentic_AI_w.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_58_WebFetch_httpsscsp222substackcompwhats-happening-at-scsp-eve.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_60_WebSearch_SentinelPilot_SCSP_hackathon_fault_detection_criti.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_61_WebSearch_EarthKit_Agent_geopolitical_warning_investigation_.txt
+- `23:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_59_WebFetch_httpsgithubcomJessSanChenSpectreRedTeaming.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_62_WebSearch_AR_27-10_military_justice_fillable_PDF_download_ar.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_65_WebSearch_AR_623-3_evaluation_reporting_system_PDF_download_.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_63_WebSearch_AR_670-1_wear_appearance_Army_uniforms_PDF_downloa.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_64_WebSearch_AR_735-5_property_accountability_PDF_download_army.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_68_WebSearch_AR_670-1_wear_appearance_army_uniforms_2021_PDF_si.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_66_WebSearch_AR_600-8-22_military_awards_2024_2025_PDF_official.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_67_WebSearch_AR_600-8-101_personnel_processing_in_transit_trans.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_69_WebSearch_AR_600-9_army_body_composition_program_PDF_2024_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_72_WebSearch_FM_6-22_Leader_Development_Field_Manual_PDF_2022_2.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_70_WebSearch_AR_600-85_Army_Substance_Abuse_Program_PDF_2020_20.txt
+- `00:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_71_WebSearch_DA_Pam_600-25_US_Army_Noncommissioned_Officer_Prof.txt
+- `00:28` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_00_Research_seamless_STS_pipelines.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_73_WebSearch_AR_350-1_Army_training_education_PDF_download_2024.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_78_WebSearch_AR_15-6_procedures_investigations_boards_officers_.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_76_WebSearch_AR_380-5_information_security_PDF_army_download_20.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_77_WebSearch_AR_40-501_standards_medical_fitness_PDF_download_2.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_75_WebSearch_JP_1-0_joint_personnel_support_PDF_download_jcsmil.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_74_WebSearch_Manual_for_Courts-Martial_2024_PDF_download_offici.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_79_WebSearch_FM_7-22_Holistic_Health_Fitness_PDF_download_army.txt
+- `00:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_80_WebSearch_ADP_6-22_Army_leadership_PDF_download_2019_2022_of.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_82_WebSearch_optimal_RAG_corpus_size_FAISS_demo_retrieval_quali.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_81_WebSearch_sentence-transformers_MiniLM-L6-v2_retrieval_quali.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_83_WebSearch_RAG_chunk_count_retrieval_precision_recall_tradeof.txt
+- `00:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_84_WebSearch_FAISS_IndexFlatIP_scaling_500K_vectors_performance.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_85_WebSearch_DTIC_discoverdticmil_API_endpoint_documentation_pu.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_86_WebSearch_DTIC_STINET_search_API_parameters_accession_number.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_87_WebSearch_eCFR_apiecfrgov_versioner_full_title_32_XML_Joint_.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_89_WebSearch_cross_encoder_reranker_FAISS_MiniLM_precision_reco.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_88_WebSearch_DTIC_most_cited_unclassified_Army_personnel_doctri.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_90_WebFetch_httpswwwecfrgovdevelopersdocumentationapiv1.txt
+- `00:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_91_WebFetch_httpsdiscoverdticmilproducts-services.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_92_WebFetch_httpswwwecfrgovreader-aidsecfr-developer-resourcesr.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_93_WebFetch_httpsdiscoverdticmiltechnical-reports.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_94_WebSearch_appsdticmilsticitations_pdf_full_text_URL_pattern_.txt
+- `00:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_95_WebSearch_eCFR_API_versioner_full_title_XML_endpoint_example.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_98_WebSearch_offline_RAG_sync_corpus_delta_updates_air-gapped_e.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_97_WebSearch_edgerunner_ai_offline_LLM_corpus_update_synchroniz.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_96_WebSearch_store-and-forward_RAG_corpus_update_SIPR_NIPR_oppo.txt
+- `01:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_99_WebSearch_DDIL_denied_degraded_intermittent_limited_environm.txt
+- `01:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_100_WebSearch_DTIC_public_technical_reports_total_count_by_decad.txt
+- `01:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_101_WebFetch_httpsdiscoverdticmilqdtic_post_typetr.txt
+- `01:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_00_WebFetch_httpssanaai.txt
+- `01:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_102_WebFetch_httpsenwikipediaorgwikiDefense_Technical_Informatio.txt
+- `01:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_103_WebSearch_appsdticmil_AD1_accession_number_range_latest_2025.txt
+- `01:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_105_WebSearch_DTIC_accession_number_ADA_prefix_range_years_1974_.txt
+- `01:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_104_WebSearch_AD0_AD1_ADA_DTIC_accession_prefix_scheme_decade_ra.txt
+- `01:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_106_WebSearch_DTIC_distribution_statement_A_B_C_D_E_F_definition.txt
+- `01:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_108_WebSearch_DTIC_ADB_prefix_limited_distribution_declassified_.txt
+- `01:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_107_WebSearch_ADP_prefix_DTIC_proceedings_symposium_conference_u.txt
+- `01:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/db11b54e-89b_109_WebSearch_sitearmypubsarmymil_active_publications_list_URL_P.txt
+- `01:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_02_Research_premium_AIdefense-tech_site_patterns.txt
+- `01:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_01_Simulate_Chrome_view_of_Adjutant_landing_page.txt
+- `02:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_01_Research_ChatGPTElevenLabs_voice_UX_latency_tricks.txt
+- `04:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_03_Research_rugged_military_computer_UI_aesthetics.txt
+- `12:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_02_Research_server-side_AdobeXFA_form-fill.txt
+- `13:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_03_Production_fill-stack_lore.txt
+- `13:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_04_Why_XFA_still_exists.txt
+- `17:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_04_Research_ChatGPT_Voice__AVM_UIUX.txt
+- `20:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_05_Research_soldier-profile_data_sources.txt
+
+## E4E / Sabi `c106a9b2` | 2026-04-28 | 32 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `04:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_03_Research_rugged_military_computer_UI_aesthetics.txt
+- `12:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_02_Research_server-side_AdobeXFA_form-fill.txt
+- `13:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_03_Production_fill-stack_lore.txt
+- `13:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3f0fd587-a8a_04_Why_XFA_still_exists.txt
+- `17:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_04_Research_ChatGPT_Voice__AVM_UIUX.txt
+- `20:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/0e17b9dd-fd4_05_Research_soldier-profile_data_sources.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_02_WebSearch_Wesleyan_Writers_Room_Writing_Workshop_peer_tutor_.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_01_WebSearch_Wesleyan_University_Ford_Fellowship_writing_semina.txt
+- `06:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_00_WebSearch_Lauren_Silber_Wesleyan_Assistant_Director_Academic.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_04_WebFetch_httpswesleyanarguscom20250923office-hours-lauren-si.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_03_WebFetch_httpswwwwesleyaneduwritingwho-we-arehtml.txt
+- `06:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_05_WebFetch_httpswwwwesleyaneduwritingCurrent20resources20for20.txt
+- `07:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_09_WebSearch_SIP_call_transfer_mid-call_Nigerian_PSTN_feature_p.txt
+- `07:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_06_WebSearch_two-leg_call_hangup_callback_latency_seconds_Afric.txt
+- `07:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_07_WebSearch_Asterisk_drop_and_callback_different_carrier_cost_.txt
+- `07:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_08_WebSearch_Viamo_3-2-1_IVR_callback_model_toll-free_Africa_us.txt
+- `16:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_11_WebSearch_post_dial_delay_Nigeria_mobile_network_call_setup_.txt
+- `16:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_13_WebSearch_flash_callback_missed_call_callback_model_Africa_e.txt
+- `16:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_12_WebSearch_feature_phone_auto-answer_Nokia_Itel_Tecno_basic_p.txt
+- `16:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_10_WebFetch_httpsdocsdailycoguidesproductsdial-in-dial-outtrans.txt
+- `17:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_15_WebSearch_Nigeria_phone_scam_fear_unknown_caller_do_not_pick.txt
+- `17:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_14_WebSearch_Nigeria_call_answer_rate_unknown_number_pickup_per.txt
+- `17:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_16_WebSearch_Nigeria_phone_sharing_children_household_low-incom.txt
+- `17:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_18_WebSearch_truecaller_Nigeria_spam_call_statistics_percentage.txt
+- `17:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_17_WebSearch_Nigerian_children_phone_use_8-14_picking_up_calls_.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_21_WebSearch_Nigeria_419_scam_phone_fraud_kidnap_call_wangiri_a.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_20_WebSearch_Eneza_OR_Viamo_OR_Rori_AI_Africa_edtech_IVR_call_p.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_19_WebSearch_Nigeria_mobile_phone_ownership_children_rural_Lago.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_22_WebFetch_httpsnairametricscom20240312nigerias-scam-epidemic-.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_23_WebFetch_httpspmcncbinlmnihgovarticlesPMC5856935.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_25_WebSearch_call_answer_rate_OR_pickup_rate_Africa_Sub-Saharan.txt
+- `17:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c106a9b2-5cc_24_WebSearch_Nigeria_caller_ID_stranger_danger_child_safety_tea.txt
+
+## E4E / Sabi `7fb8b03f` | 2026-05-01 | 6 files
+Folders: -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `04:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_00_WebSearch_Google_Apps_Script_web_app_add_guest_to_calendar_e.txt
+- `04:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_01_WebSearch_Google_Apps_Script_doGet_doPost_web_app_deploy_exe.txt
+- `05:00` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_02_WebFetch_httpsgithubcomnspadygoogle-calendar-mcp.txt
+- `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
+- `05:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
+- `05:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
+
+## E4E / Sabi `afba417e` | 2026-05-02 | 52 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `01:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_147_WebSearch_sabiai_company_website_voice_AI_tutor.txt
+- `01:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_148_WebSearch_sabi_Bakame_Africa_voice_AI_education_startup_comp.txt
+- `01:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_149_WebSearch_sabi_Nigeria_startup_company_trademark_e-commerce_.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_150_WebSearch_trusted_by_logo_section_website_UX_best_practices_.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_151_WebSearch_trusted_by_logo_bar_nonprofit_website_grayscale_co.txt
+- `02:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_152_WebSearch_naming_former_employer_advisor_bio_startup_mislead.txt
+- `02:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_153_WebSearch_advisors_include_former_from_startup_website_credi.txt
+- `02:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_154_WebSearch_bakameai_website_partners_supported_by_funded_by_l.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_01_WebSearch_ProQuest_TDM_Studio_API_programmatic_access_Jupyte.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_02_WebSearch_TDM_Studio_workbench_Jupyter_remote_access_SSH_com.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_00_WebSearch_TDM_Studio_ProQuest_run_notebook_locally_export_da.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_03_WebSearch_TDM_Studio_Wesleyan_WSJ_Wall_Street_Journal_datase.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_04_WebFetch_httpsproquestlibguidescomtdmstudioexportdata.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_06_WebSearch_ProQuest_TDM_Studio_supplemental_terms_allowed_ext.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_05_WebSearch_TDM_Studio_download_notebook_ipynb_file_local_mach.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_08_WebSearch_TDM_Studio_paste_not_working_clipboard_Mac_browser.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_09_WebSearch_Apache_Guacamole_AWS_WorkSpaces_clipboard_paste_Ma.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_07_WebSearch_ProQuest_TDM_Studio_cannot_paste_clipboard_Safari_.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_11_WebSearch_TDM_Studio_copy_paste_workbench_keyboard_shortcut_.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_10_WebSearch_Safari_clipboard_permission_site_denied_paste_Mac_.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_12_WebSearch_TDM_Studio_copy_text_out_clipboard_local_download_.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_13_WebSearch_copy_from_JupyterLab_cell_to_local_clipboard_not_w.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_14_WebSearch_Atlas_browser_OpenAI_clipboard_copy_paste_website_.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_15_WebSearch_GDELT_Nigeria_news_events_API_tutorial_Python_2026.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_16_WebSearch_free_news_API_article_archive_academic_research_Ni.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_17_WebSearch_Wesleyan_library_Nexis_Uni_Factiva_ProQuest_news_a.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_18_WebSearch_PRS_Group_ICRG_composite_risk_score_2024_Nigeria_S.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_19_WebSearch_Hassan_2023_country_risk_FDI_Nigeria_South_Africa_.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_20_WebSearch_student_data_science_presentation_structure_storyt.txt
+- `07:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_21_WebSearch_Gemini_API_JSON_mode_python_2026_simple_structured.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_01_WebSearch_voice_MCP_server_Claude_Code_speech-to-text_conver.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_00_WebSearch_Claude_Code_voice_mode_MCP_server_VS_Code_extensio.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_02_WebFetch_httpsgetvoicemodecom.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_03_WebFetch_httpsgithubcomjohnmatthewtennantmcp-voice-hooks.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_04_WebFetch_httpsgithubcommbaileyvoicemode.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_05_WebFetch_httpsgithubcomjochiangvoice-mcp.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_06_WebFetch_httpsmarketplacevisualstudiocomitemsitemNameFultonm.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_07_WebFetch_httpsdocsbswencomblog2026-04-23-claude-code-extensi.txt
+- `19:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_08_WebSearch_Google_Antigravity_IDE_agentic_coding_download_mac.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_10_WebSearch_Google_Antigravity_MCP_server_support_model_contex.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_11_WebSearch_Google_Antigravity_IDE_VS_Code_fork_extensions_com.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_12_WebSearch_Antigravity_IDE_voice_input_speech_text_microphone.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_09_WebSearch_Antigravity_IDE_install_MCP_server_configuration_s.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_14_WebFetch_httpsmediumcomsimonescigliuzzithe-ai-cto-mastering-.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_15_WebFetch_httpsantigravitygoogledocsmcp.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_13_WebFetch_httpsgithubcomfsystemwebbrowser-voice-control.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_17_WebSearch_Claude_Max_plan_200_monthly_limits_Claude_Code_usa.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_16_WebSearch_Claude_subscription_pricing_2026_Pro_Max_20_200_fe.txt
+- `20:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_00_Explore_E4E_codebase_structure.txt
+- `20:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_01_Research_ChatGPT_1800_service.txt
+- `21:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_02_Research_Cerebras_nonprofit__Ollama_latency_optimization.txt
+- `02:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_03_Research_Cerebras_nonprofit__self-hosted_LLM_latency.txt
+
+## E4E / Sabi `a9135c06` | 2026-05-03 | 55 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_150_WebSearch_trusted_by_logo_section_website_UX_best_practices_.txt
+- `02:01` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_151_WebSearch_trusted_by_logo_bar_nonprofit_website_grayscale_co.txt
+- `02:07` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_152_WebSearch_naming_former_employer_advisor_bio_startup_mislead.txt
+- `02:08` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_153_WebSearch_advisors_include_former_from_startup_website_credi.txt
+- `02:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_154_WebSearch_bakameai_website_partners_supported_by_funded_by_l.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_01_WebSearch_ProQuest_TDM_Studio_API_programmatic_access_Jupyte.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_02_WebSearch_TDM_Studio_workbench_Jupyter_remote_access_SSH_com.txt
+- `03:13` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_00_WebSearch_TDM_Studio_ProQuest_run_notebook_locally_export_da.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_03_WebSearch_TDM_Studio_Wesleyan_WSJ_Wall_Street_Journal_datase.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_04_WebFetch_httpsproquestlibguidescomtdmstudioexportdata.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_06_WebSearch_ProQuest_TDM_Studio_supplemental_terms_allowed_ext.txt
+- `03:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_05_WebSearch_TDM_Studio_download_notebook_ipynb_file_local_mach.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_08_WebSearch_TDM_Studio_paste_not_working_clipboard_Mac_browser.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_09_WebSearch_Apache_Guacamole_AWS_WorkSpaces_clipboard_paste_Ma.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_07_WebSearch_ProQuest_TDM_Studio_cannot_paste_clipboard_Safari_.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_11_WebSearch_TDM_Studio_copy_paste_workbench_keyboard_shortcut_.txt
+- `03:16` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_10_WebSearch_Safari_clipboard_permission_site_denied_paste_Mac_.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_12_WebSearch_TDM_Studio_copy_text_out_clipboard_local_download_.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_13_WebSearch_copy_from_JupyterLab_cell_to_local_clipboard_not_w.txt
+- `03:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_14_WebSearch_Atlas_browser_OpenAI_clipboard_copy_paste_website_.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_15_WebSearch_GDELT_Nigeria_news_events_API_tutorial_Python_2026.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_16_WebSearch_free_news_API_article_archive_academic_research_Ni.txt
+- `03:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_17_WebSearch_Wesleyan_library_Nexis_Uni_Factiva_ProQuest_news_a.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_18_WebSearch_PRS_Group_ICRG_composite_risk_score_2024_Nigeria_S.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_19_WebSearch_Hassan_2023_country_risk_FDI_Nigeria_South_Africa_.txt
+- `06:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_20_WebSearch_student_data_science_presentation_structure_storyt.txt
+- `07:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_21_WebSearch_Gemini_API_JSON_mode_python_2026_simple_structured.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_01_WebSearch_voice_MCP_server_Claude_Code_speech-to-text_conver.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_00_WebSearch_Claude_Code_voice_mode_MCP_server_VS_Code_extensio.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_02_WebFetch_httpsgetvoicemodecom.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_03_WebFetch_httpsgithubcomjohnmatthewtennantmcp-voice-hooks.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_04_WebFetch_httpsgithubcommbaileyvoicemode.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_05_WebFetch_httpsgithubcomjochiangvoice-mcp.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_06_WebFetch_httpsmarketplacevisualstudiocomitemsitemNameFultonm.txt
+- `19:31` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_07_WebFetch_httpsdocsbswencomblog2026-04-23-claude-code-extensi.txt
+- `19:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_08_WebSearch_Google_Antigravity_IDE_agentic_coding_download_mac.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_10_WebSearch_Google_Antigravity_MCP_server_support_model_contex.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_11_WebSearch_Google_Antigravity_IDE_VS_Code_fork_extensions_com.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_12_WebSearch_Antigravity_IDE_voice_input_speech_text_microphone.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_09_WebSearch_Antigravity_IDE_install_MCP_server_configuration_s.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_14_WebFetch_httpsmediumcomsimonescigliuzzithe-ai-cto-mastering-.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_15_WebFetch_httpsantigravitygoogledocsmcp.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_13_WebFetch_httpsgithubcomfsystemwebbrowser-voice-control.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_17_WebSearch_Claude_Max_plan_200_monthly_limits_Claude_Code_usa.txt
+- `20:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_16_WebSearch_Claude_subscription_pricing_2026_Pro_Max_20_200_fe.txt
+- `20:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_00_Explore_E4E_codebase_structure.txt
+- `20:12` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_01_Research_ChatGPT_1800_service.txt
+- `21:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/afba417e-adb_02_Research_Cerebras_nonprofit__Ollama_latency_optimization.txt
+- `21:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_18_WebSearch_iPad_terminal_app_run_Claude_Code_CLI_2026.txt
+- `21:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_20_WebSearch_iPhone_terminal_SSH_into_Mac_run_Claude_Code_remot.txt
+- `21:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_19_WebSearch_Claude_Code_remote_SSH_iPad_iPhone_terminal_a-shel.txt
+- `21:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_21_WebSearch_VoiceMode_Claude_Code_SSH_remote_server_iPad_mobil.txt
+- `21:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_22_WebFetch_httpscodeclaudecomdocsenremote-control.txt
+- `21:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_23_WebFetch_httpsdevtojagafarmthe-300-gram-ai-coding-rig-ipad-m.txt
+- `21:05` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_24_WebFetch_httpspetesenamediumcomhow-to-run-claude-code-from-y.txt
+
+## Cortex `7e45b89a` | 2026-05-08 | 30 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-cortex, -Users-naomiivie-cortex-web
+
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_45_WebSearch_Africas_Talking_phone_number_categories_Regular_Bu.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_43_WebSearch_Africas_Talking_Nigeria_voice_number_types_pricing.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_44_WebSearch_africastalking_voice_phone_number_category_test_nu.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_42_WebSearch_africastalkingcom_Nigeria_voice_pricing_toll-free_.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_48_WebFetch_httpshelpafricastalkingcomenarticles2282146-what-ty.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_46_WebFetch_httpshelpafricastalkingcomenarticles6054867-voice-p.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_47_WebFetch_httpshelpafricastalkingcomenarticles6049012-what-do.txt
+- `02:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_49_WebFetch_httpshelpafricastalkingcomenarticles1163043-how-do-.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_51_WebSearch_Denuwan_Vithanage_Wesleyan_University_physics_opti.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_50_WebSearch_Wesleyan_Optical_Society_Optica_student_chapter_me.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_52_WebSearch_Denuwan_Vithanage_Wesleyan_Optical_Society_Optica_.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_53_WebFetch_httpswwwwesleyaneduacademicsgraddvithanageprofileht.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_54_WebFetch_httpsdenuwanvithanagecom.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bad258fa-eee_55_WebFetch_httpsdenuwanvithanagecomportfolio-archiveconference.txt
+- `16:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_00_Research_voice-driven_email_UX_patterns.txt
+- `16:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_00_Research_voice-driven_email_UX_patterns.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_01_Agent_frameworks__AI_SDK_research.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_01_Agent_frameworks__AI_SDK_research.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_03_Anthropic-native_agent_patterns.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_03_Anthropic-native_agent_patterns.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_02_Agent_theory_and_Cortex_applicability.txt
+- `21:52` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_02_Agent_theory_and_Cortex_applicability.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_04_Map_Sabi_trainingRAG_architecture.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_04_Map_Sabi_trainingRAG_architecture.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_05_Find_LoRA_Bethel-vs-Cortex_discussion.txt
+- `02:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_05_Find_LoRA_Bethel-vs-Cortex_discussion.txt
+- `03:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_07_2026_AI-app_UI_deep_research.txt
+- `03:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_07_2026_AI-app_UI_deep_research.txt
+- `03:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e45b89a-bcd_06_Audit_voice-email_UI.txt
+- `03:07` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e45b89a-bcd_06_Audit_voice-email_UI.txt
+
+## E4E / Sabi `d7dcd518` | 2026-05-12 | 80 files
+Folders: -Users-naomiivie-Class-on-Time, -Users-naomiivie-Education-for-Equality
+
+- `01:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_01_Cute_commitment_app_UI_research.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_164_WebSearch_program_coordinator_Lagos_NGO_salary_2026_monthly_.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_165_WebSearch_field_officer_OR_field_coordinator_Lagos_Nigeria_N.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_166_WebSearch_Lagos_Nigeria_field_officer_Mushin_community_educa.txt
+- `01:43` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_167_WebFetch_httpswwwpayscalecomresearchNGJobProgram_Coordinator.txt
+- `01:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_169_WebSearch_Lagos_community_health_worker_education_field_work.txt
+- `01:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_168_WebFetch_httpswwwnexfordeduinsightshighest-paying-ngo-jobs-i.txt
+- `01:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_170_WebSearch_Jobberman_Lagos_field_coordinator_NGO_salary_entry.txt
+- `01:44` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_171_WebFetch_httpswwwjobbermancomjobsngo-npo-charitylagos.txt
+- `01:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_02_Industry_research_on_key_features.txt
+- `02:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_173_WebSearch_NewGlobe_OR_EKOEXCEL_Lagos_salary_teacher_coordina.txt
+- `02:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_172_WebSearch_Lagos_NGO_project_officer_field_officer_salary_202.txt
+- `02:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_174_WebSearch_Lagos_cost_of_living_2026_family_rent_transport_fo.txt
+- `02:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_175_WebSearch_Wesleyan_University_student_forum_05_credit_course.txt
+- `02:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_176_WebFetch_httpsnigerianfoodprojectvercelapp.txt
+- `02:50` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_177_WebFetch_httpswwwwesleyaneduregistrarcourse_informationStude.txt
+- `02:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_178_WebFetch_httpsnigerianfoodprojectvercelapp.txt
+- `02:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_180_WebFetch_httpswwwwesleyaneduregistrarcourse_informationstude.txt
+- `02:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_179_WebSearch_Wesleyan_University_Bayit_kitchen_Long_Lane_Farm_U.txt
+- `02:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_181_WebSearch_Wesleyan_University_student_forum_syllabus_example.txt
+- `02:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_182_WebSearch_Connecticut_cottage_food_law_2026_residential_kitc.txt
+- `02:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_184_WebFetch_httpsforragercomlawconnecticut.txt
+- `02:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_183_WebSearch_Wesleyan_student-run_business_club_Patricelli_Cent.txt
+- `02:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_186_WebSearch_Wesleyan_University_commercial_kitchen_rental_food.txt
+- `02:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_185_WebSearch_Wesleyan_student_forum_cooking_class_culinary_kitc.txt
+- `02:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_187_WebFetch_httpswwwwesleyanedustudentinvolvementeventplanningr.txt
+- `02:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_04_WebFetch_httpsvercelcomdocsmonorepos.txt
+- `02:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_03_WebFetch_httpsvercelcomdocscron-jobsusage-and-pricing.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_189_WebSearch_Middletown_Connecticut_commercial_kitchen_rent_sha.txt
+- `02:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_188_WebSearch_Wesleyan_course_assistant_student_leader_stipend_p.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_05_WebFetch_httpsvercelcomdocsdeployment-protection.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_06_WebFetch_httpsvercelcomdocsprojectsenvironment-variables.txt
+- `02:55` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_07_WebFetch_httpsdocsgithubcomenactionswriting-workflowschoosin.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_191_WebSearch_Wesleyan_Espwesso_student_cafe_coffee_shop_run_by_.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_190_WebSearch_Wesleyan_cultural_houses_La_Casa_Malcolm_X_Womanis.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_192_WebSearch_Wesleyan_University_WSA_student_government_free_fo.txt
+- `03:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_193_WebSearch_Wesleyan_University_bake_sale_student_club_fundrai.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_194_WebSearch_Wesleyan_University_Malcolm_X_House_food_dinner_ev.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_197_WebSearch_Wesleyan_University_Foodstock_event_farm_food_sust.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_195_WebSearch_Wesleyan_University_Bayit_kosher_kitchen_Shabbat_d.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_196_WebSearch_Wesleyan_University_Long_Lane_Farm_cooking_communi.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_200_WebSearch_Wesleyan_University_Student_of_Color_Barbecue_SOC_.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_198_WebSearch_Wesleyan_University_Espwesso_student-run_cafe_Allb.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_201_WebSearch_Wesleyan_University_La_Casa_Latinx_Ubuntu_cultural.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_199_WebSearch_Wesleyan_University_WesNest_student_food_fundraise.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_203_WebSearch_Wesleyan_University_La_Casa_Albizu_Campos_Latinx_f.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_202_WebSearch_Wesleyan_University_WestCo_Eclectic_dining_program.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_204_WebSearch_Wesleyan_University_AAA_House_Asian_American_ident.txt
+- `03:38` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_205_WebSearch_Wesleyan_University_free_food_faculty_department_d.txt
+- `03:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_209_WebFetch_httpsnewsletterblogswesleyanedu20150302espwesso.txt
+- `03:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_206_WebSearch_Espwesso_Wesleyan_founding_history_student_leaders.txt
+- `03:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_208_WebSearch_Wesleyan_University_Star_and_Crescent_dining_progr.txt
+- `03:52` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_207_WebSearch_Wesleyan_SOC_BBQ_Malcolm_X_House_catered_Bon_Appet.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_212_WebFetch_httpwesleyanarguscom20100216allbritton-92-offers-to.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_210_WebFetch_httpwesleyanarguscom20210318espwesso-reopens-after-.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_213_WebFetch_httpswesleyanarguscom20200211good-food-is-part-of-o.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_211_WebSearch_Wesleyan_University_Argus_bake_sale_club_fundraise.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_217_WebSearch_Wesleyan_Espwesso_student_employees_hired_paid_wag.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_215_WebSearch_Wesleyan_Bayit_weekly_Shabbat_dinner_cooking_volun.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_214_WebSearch_Wesleyan_Open_House_Buddhist_House_Womanist_Outhou.txt
+- `03:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_216_WebSearch_Wesleyan_WesWings_Summerfields_Pi_cafe_student_wor.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_219_WebSearch_Wesleyan_University_Local_Food_Co-op_weekly_orders.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_220_WebFetch_httpswwwwesleyanedustudentinvolvementeventplanningr.txt
+- `03:54` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_218_WebSearch_Wesleyan_student_forum_419_420_cooking_food_exampl.txt
+- `04:06` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_08_Deep_research_Go_landing_page.txt
+- `05:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_00_WebSearch_Barneys_Butter_Bare_Smooth_peanut_butter_shelf_lif.txt
+- `05:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_01_WebSearch_KIND_bars_shelf_life_expiration_date_how_long_fres.txt
+- `05:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_02_WebSearch_Raos_Boves_pasta_sauce_jar_marinara_shelf_life_uno.txt
+- `05:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_03_WebSearch_Oatly_shelf-stable_oat_milk_unopened_expiration_on.txt
+- `05:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_04_WebSearch_Wesleyan_University_dining_services_2026_spring_se.txt
+- `05:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_05_WebFetch_httpswwwwesleyanedudiningimportantdateshtml.txt
+- `05:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_06_WebFetch_httpswwwwesleyanedudiningSummer20Dininghtml.txt
+- `05:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_07_WebSearch_natural_deodorant_unopened_shelf_life_expiration_S.txt
+- `05:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_08_WebSearch_how_long_does_uncooked_white_rice_jasmine_basmati_.txt
+- `05:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_09_WebSearch_body_lotion_unopened_shelf_life_how_long_does_it_l.txt
+- `05:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_10_WebSearch_college_girl_summer_essentials_shopping_list_2026_.txt
+- `05:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_11_WebSearch_summer_college_girl_spending_categories_sunscreen_.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_12_WebSearch_best_mineral_sunscreen_no_white_cast_Black_skin_wo.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_13_WebSearch_Thinkbaby_Clear_Zinc_Babo_Botanicals_Sun_Bum_revie.txt
+- `05:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/d7dcd518-afb_14_WebSearch_easy_college_student_summer_cooking_meals_dorm_sta.txt
+
+## E4E / Sabi `199966ea` | 2026-05-14 | 25 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes
+
+- `21:53` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_29_Non-linearity_in_education-growth_regressions.txt
+- `00:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_30_MRW_paper_style_and_structure.txt
+- `00:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_31_Stylized_facts_conventions_in_econ_papers.txt
+- `05:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_32_Deep_research_on_synthetic_control_method.txt
+- `05:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_33_SCM_papers_for_Nigeria_SSA_and_oil_exporters.txt
+- `05:25` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_34_WebSearch_synthetic_control_method_Nigeria_Boko_Haram_OR_oil.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_35_WebSearch_synthetic_control_Nigeria_economic_sitenberorg_OR_.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_36_WebSearch_synthetic_control_Boko_Haram_Nigeria_conflict_econ.txt
+- `05:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_37_WebFetch_httpsdocuments1worldbankorgcurateden168241636640474.txt
+- `05:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_38_WebSearch_spillover_economic_effects_Boko_Haram_synthetic_co.txt
+- `05:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_39_WebSearch_synthetic_control_Universal_Primary_Education_Ugan.txt
+- `05:39` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_40_WebSearch_synthetic_control_method_Africa_GDP_oil_exporter_O.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_41_WebSearch_Does_the_resource_curse_exist_Ghana_synthetic_cont.txt
+- `05:40` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_42_WebFetch_httpsmpraubuni-muenchende1270641MPRA_paper_127064pd.txt
+- `05:42` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_43_WebSearch_synthetic_control_Nigeria_education_OR_enrollment_.txt
+- `05:46` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_44_WebSearch_synthetic_control_Nigeria_GDP_economic_growth_work.txt
+- `05:47` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_45_WebSearch_synthetic_control_oil_curse_OR_oil_discovery_GDP_p.txt
+- `21:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_03_Visual_analysis_of_top_personal_sites.txt
+- `21:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_00_Information_architecture__content_patterns.txt
+- `21:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_02_Founder_copy_voice__positioning_research.txt
+- `21:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_01_Technical_patterns_for_personal_sites.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_04_Fresh_AI-native_internship_sweep.txt
+- `22:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_05_Deep_research_GitHub-for-startup-hiring.txt
+- `23:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_06_Deep_research_on_founder_website_extras.txt
+- `19:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_07_Research_real_WaaS_looking_for_language.txt
+
+## E4E / Sabi `59f31767` | 2026-06-02 | 19 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_02_WebSearch_autonomous_AI_email_agent_2026_Inbox_Zero_Cora_Fyx.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_00_WebSearch_building_LLM_agent_loop_email_assistant_Claude_Age.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_03_WebSearch_prompt_injection_email_AI_agent_security_guardrail.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_01_WebSearch_Gmail_API_OAuth_scopes_full_mailbox_access_send_re.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_04_WebFetch_httpsgithubcomelie222inbox-zero.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_05_WebSearch_CaMeL_dual_LLM_pattern_privileged_quarantined_plan.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_06_WebSearch_human-in-the-loop_approval_gate_AI_agent_send_emai.txt
+- `17:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_07_WebSearch_proactive_voice_AI_agent_desktop_app_that_talks_to.txt
+- `17:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_08_WebSearch_always-on_AI_agent_that_speaks_proactively_desktop.txt
+- `18:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_09_WebSearch_8GB_M1_MacBook_Air_heavy_swap_usage_memory_pressur.txt
+- `18:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_10_WebSearch_Mac_mini_M4_price_2026_16GB_base_model_Apple_educa.txt
+- `18:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_11_WebSearch_Mac_mini_M2_16GB_refurbished_price_2026_cheapest.txt
+- `18:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_12_WebSearch_used_refurbished_Mac_mini_M1_16GB_price_2026_Back_.txt
+- `18:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_13_WebFetch_httpswwwbackmarketcomen-uslmac-mini-m116b5fd45-0d78.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_14_WebSearch_Apple_Mac_Mini_M1_2020_16GB_256GB_Renewed_Amazon_p.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_16_WebSearch_Claude_computer_use_browser_automation_2026_capabi.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_18_WebSearch_browser-use_Playwright_LLM_agent_framework_2026_be.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_15_WebSearch_build_always-on_voice_assistant_LLM_Alexa-like_wak.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_17_WebSearch_Claude_Agent_SDK_capabilities_tools_MCP_computer_u.txt
+
+## E4E / Sabi `3d2ba6a5` | 2026-06-05 | 10 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_09_WebSearch_8GB_M1_MacBook_Air_heavy_swap_usage_memory_pressur.txt
+- `18:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_10_WebSearch_Mac_mini_M4_price_2026_16GB_base_model_Apple_educa.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_11_WebSearch_Mac_mini_M2_16GB_refurbished_price_2026_cheapest.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_12_WebSearch_used_refurbished_Mac_mini_M1_16GB_price_2026_Back_.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_13_WebFetch_httpswwwbackmarketcomen-uslmac-mini-m116b5fd45-0d78.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_14_WebSearch_Apple_Mac_Mini_M1_2020_16GB_256GB_Renewed_Amazon_p.txt
+- `17:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3d2ba6a5-2eb_00_WebFetch_httpsunsplashcomsphotosdreamy-clouds-sunset.txt
+- `17:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3d2ba6a5-2eb_01_WebFetch_httpsunsplashcomsphotospastel-sky.txt
+- `17:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3d2ba6a5-2eb_02_WebFetch_httpsunsplashcomsphotoscherry-blossom-sky.txt
+- `17:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3d2ba6a5-2eb_03_WebFetch_httpsunsplashcomsphotosdreamy-mountains-fog.txt
+
+## E4E / Sabi `416308b0` | 2026-06-05 | 20 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `18:09` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_09_WebSearch_8GB_M1_MacBook_Air_heavy_swap_usage_memory_pressur.txt
+- `18:11` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_10_WebSearch_Mac_mini_M4_price_2026_16GB_base_model_Apple_educa.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_11_WebSearch_Mac_mini_M2_16GB_refurbished_price_2026_cheapest.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_12_WebSearch_used_refurbished_Mac_mini_M1_16GB_price_2026_Back_.txt
+- `18:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_13_WebFetch_httpswwwbackmarketcomen-uslmac-mini-m116b5fd45-0d78.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_14_WebSearch_Apple_Mac_Mini_M1_2020_16GB_256GB_Renewed_Amazon_p.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_00_WebSearch_Visible_international_calling_included_countries_l.txt
+- `20:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_01_WebFetch_httpsdevelopersafricastalkingcomdocsvoicehandle_cal.txt
+- `20:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_02_WebSearch_africastalking_voice_Record_element_callbackUrl_ma.txt
+- `21:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_03_WebFetch_httpsrawgithubusercontentcomAfricasTalkingLtdafrica.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_11_Solve_AT_webhook_security.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_09_Solve_numeral_mishear_matching.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_05_Solve_Groq_STT_confidence_bug.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_04_Solve_AT_turn_latency.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_13_Solve_Record_silencebeep_UX.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_08_Solve_Supabase_free-tier_pause.txt
+- `21:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_07_Write_Supabase_schema_migration.txt
+- `21:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_10_Solve_env__AT_SMS_key.txt
+- `21:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_06_Solve_TTS_voice_consistency.txt
+- `21:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_12_Verify_Sentry__graceful_degradation.txt
+
+## E4E / Sabi `bfc80d0f` | 2026-06-06 | 24 files
+Folders: -Users-naomiivie-Downloads-App-Sleep, -Users-naomiivie-Education-for-Equality
+
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_16_WebSearch_Claude_computer_use_browser_automation_2026_capabi.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_18_WebSearch_browser-use_Playwright_LLM_agent_framework_2026_be.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_15_WebSearch_build_always-on_voice_assistant_LLM_Alexa-like_wak.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_17_WebSearch_Claude_Agent_SDK_capabilities_tools_MCP_computer_u.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_00_WebSearch_Visible_international_calling_included_countries_l.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_01_WebSearch_macOS_System_Data_storage_large_what_is_normal_202.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_00_WebSearch_comapplemediaanalysisd_Caches_large_storage_safe_t.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_00_Explore_macOS_ShutdownApp.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_02_Explore_iOS_SleepWelliOS_app.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_01_Explore_Xcode_project_config.txt
+- `20:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_03_Study_bethel_email-agent.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_00_US_startup_contractor_agreements.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_02_Nigeria_contractor_law__tax__NDPA.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_03_Edtech_field_staff__safeguarding.txt
+- `17:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_04_Nonprofit_related-party_hire_governance.txt
+- `17:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_01_Contractor_IP__confidentiality_deep_dive.txt
+- `19:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_06_WebSearch_Cooley_GO_consulting_agreement_template_independen.txt
+- `19:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_05_WebSearch_YC_startup_standard_independent_contractor_agreeme.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_07_WebFetch_httpswwwcooleygocomdocumentsform-consulting-agreeme.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_08_WebFetch_httpswwwstudocucomen-audocumentuniversity-of-techno.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_09_WebSearch_consulting_agreement_this_agreement_is_made_Consul.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_10_WebFetch_httpswwwcooleycomprotect-pages202003what-do-you-abs.txt
+- `19:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_11_WebFetch_httpswwwhampshireedusitesdefaultfilesbusinessoffice.txt
+- `19:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_12_WebSearch_USD_to_NGN_exchange_rate_today_June_2026_naira_dol.txt
+
+## E4E / Sabi `fadbcb81` | 2026-06-06 | 17 files
+Folders: -Users-naomiivie-Downloads-App-Sleep, -Users-naomiivie-Education-for-Equality
+
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_16_WebSearch_Claude_computer_use_browser_automation_2026_capabi.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_18_WebSearch_browser-use_Playwright_LLM_agent_framework_2026_be.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_15_WebSearch_build_always-on_voice_assistant_LLM_Alexa-like_wak.txt
+- `18:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/59f31767-cce_17_WebSearch_Claude_Agent_SDK_capabilities_tools_MCP_computer_u.txt
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_00_WebSearch_Visible_international_calling_included_countries_l.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_01_WebSearch_macOS_System_Data_storage_large_what_is_normal_202.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_00_WebSearch_comapplemediaanalysisd_Caches_large_storage_safe_t.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_00_Explore_macOS_ShutdownApp.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_02_Explore_iOS_SleepWelliOS_app.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_01_Explore_Xcode_project_config.txt
+- `20:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_03_Study_bethel_email-agent.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_00_US_startup_contractor_agreements.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_02_Nigeria_contractor_law__tax__NDPA.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_03_Edtech_field_staff__safeguarding.txt
+- `17:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_04_Nonprofit_related-party_hire_governance.txt
+- `17:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_01_Contractor_IP__confidentiality_deep_dive.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_242_Research_what_corporate_funders_require_for_grants.txt
+
+## Bethel `206a510c` | 2026-06-07 | 27 files
+Folders: -Users-naomiivie-Downloads-App-Sleep, -Users-naomiivie-Education-for-Equality, -Users-naomiivie-bethel
+
+- `19:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/416308b0-338_00_WebSearch_Visible_international_calling_included_countries_l.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_01_WebSearch_macOS_System_Data_storage_large_what_is_normal_202.txt
+- `20:14` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/527a4a9f-1c4_00_WebSearch_comapplemediaanalysisd_Caches_large_storage_safe_t.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_00_Explore_macOS_ShutdownApp.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_02_Explore_iOS_SleepWelliOS_app.txt
+- `20:19` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_01_Explore_Xcode_project_config.txt
+- `20:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_03_Study_bethel_email-agent.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_00_US_startup_contractor_agreements.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_02_Nigeria_contractor_law__tax__NDPA.txt
+- `17:26` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_03_Edtech_field_staff__safeguarding.txt
+- `17:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_04_Nonprofit_related-party_hire_governance.txt
+- `17:27` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_01_Contractor_IP__confidentiality_deep_dive.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/262aa5fe-cda_242_Research_what_corporate_funders_require_for_grants.txt
+- `19:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_06_WebSearch_Cooley_GO_consulting_agreement_template_independen.txt
+- `19:03` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_05_WebSearch_YC_startup_standard_independent_contractor_agreeme.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_07_WebFetch_httpswwwcooleygocomdocumentsform-consulting-agreeme.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_08_WebFetch_httpswwwstudocucomen-audocumentuniversity-of-techno.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_09_WebSearch_consulting_agreement_this_agreement_is_made_Consul.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_10_WebFetch_httpswwwcooleycomprotect-pages202003what-do-you-abs.txt
+- `19:04` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_11_WebFetch_httpswwwhampshireedusitesdefaultfilesbusinessoffice.txt
+- `19:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bfc80d0f-726_12_WebSearch_USD_to_NGN_exchange_rate_today_June_2026_naira_dol.txt
+- `22:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_05_Deep_research_GitHub-for-startup-hiring.txt
+- `23:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_06_Deep_research_on_founder_website_extras.txt
+- `19:15` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/199966ea-820_07_Research_real_WaaS_looking_for_language.txt
+- `19:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/206a510c-15a_00_Deep-read_efd7d7d2_build_session.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/206a510c-15a_01_Deep-read_fc4f9b6d__1b27663d_sessions.txt
+- `19:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/206a510c-15a_02_Deep-read_recent_June_sessions.txt
+
+## E4E / Sabi `3b8ddd08` | 2026-06-18 | 24 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_04_Deep-read_megasession_262aa5fe.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_03_Deep-read_originTTS_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_01_Deep-read_strategyall-docs_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_05_Deep-read_research-brief_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_02_Deep-read_scaleapplications_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_00_Deep-read_context-recovery_syntheses.txt
+- `18:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_09_Research_airtime-access_mechanics.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_07_Research_zero-balance_access_problem.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_08_Research_getting_a_number_from_MTNAirtel.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_06_Research_toll-free_economics__EdTech_precedents.txt
+- `19:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_10_Research_AT_API_callback_capability.txt
+- `19:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_11_Research_scrappy_startups__0_workarounds.txt
+- `20:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_12_Research_reverse-charge_voice_analogs.txt
+- `20:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_14_Research_GSM_gateway_legality__cost.txt
+- `20:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_13_Research_single-network__free-SIM__embedded_mktg.txt
+- `20:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_15_Research_scheduled-call_no-show_handling.txt
+- `17:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_16_Research_how_labs_build_LLM_guardrails.txt
+- `17:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_17_Research_child-AI-tutor_safety_guardrails.txt
+- `19:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_19_Research_big-tech_AI_red-teaming.txt
+- `19:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_18_Research_Nigerian_threat_landscape_vs_voice_AI.txt
+- `19:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_20_Research_LLM_red-team_frameworks__tooling.txt
+- `19:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_21_Map_Sabi_lesson-delivery_architecture.txt
+- `20:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_22_Read_existing_ViamoIVR_research.txt
+- `20:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_23_Web_research_Viamo_identity_handling.txt
+
+## E4E / Sabi `871c4cab` | 2026-06-18 | 23 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_04_Deep-read_megasession_262aa5fe.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_03_Deep-read_originTTS_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_01_Deep-read_strategyall-docs_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_05_Deep-read_research-brief_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_02_Deep-read_scaleapplications_sessions.txt
+- `17:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_00_Deep-read_context-recovery_syntheses.txt
+- `18:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_09_Research_airtime-access_mechanics.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_07_Research_zero-balance_access_problem.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_08_Research_getting_a_number_from_MTNAirtel.txt
+- `18:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_06_Research_toll-free_economics__EdTech_precedents.txt
+- `19:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_10_Research_AT_API_callback_capability.txt
+- `19:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_11_Research_scrappy_startups__0_workarounds.txt
+- `20:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_12_Research_reverse-charge_voice_analogs.txt
+- `20:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_14_Research_GSM_gateway_legality__cost.txt
+- `20:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_13_Research_single-network__free-SIM__embedded_mktg.txt
+- `20:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_15_Research_scheduled-call_no-show_handling.txt
+- `17:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_16_Research_how_labs_build_LLM_guardrails.txt
+- `17:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_17_Research_child-AI-tutor_safety_guardrails.txt
+- `19:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_19_Research_big-tech_AI_red-teaming.txt
+- `19:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_18_Research_Nigerian_threat_landscape_vs_voice_AI.txt
+- `19:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_20_Research_LLM_red-team_frameworks__tooling.txt
+- `19:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_21_Map_Sabi_lesson-delivery_architecture.txt
+- `19:51` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_22_Research_subject-split_in_RCT_ed_programs.txt
+
+## Bethel `50605635` | 2026-06-22 | 15 files
+Folders: -Users-naomiivie-bethel
+
+- `18:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_00_Research_Sage_SaaS_pricing_model.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_01_WebSearch_Superhuman_email_app_pricing_per_month_2026_plans_.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_04_WebSearch_Fyxer_AI_email_assistant_pricing_per_month_2026.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_05_WebSearch_virtual_executive_assistant_cost_per_month_United_.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_03_WebSearch_Shortwave_AI_email_assistant_pricing_plans_per_mon.txt
+- `18:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_02_WebSearch_Anthropic_Claude_API_pricing_per_million_tokens_Op.txt
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_07_WebSearch_Google_OAuth_restricted_scope_CASA_Tier_2_security.txt
+- `18:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_06_WebSearch_how_many_hours_per_week_professionals_spend_on_ema.txt
+- `18:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_09_WebSearch_number_of_knowledge_workers_worldwide_2026_global_.txt
+- `18:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_08_WebSearch_Superhuman_email_paying_subscribers_user_count_rev.txt
+- `18:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_11_WebSearch_AI_email_assistant_market_size_2026_forecast_billi.txt
+- `18:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_10_WebSearch_number_of_small_business_owners_founders_executive.txt
+- `18:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_12_WebSearch_freemium_prosumer_SaaS_free_to_paid_conversion_rat.txt
+- `18:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_13_WebSearch_number_of_US_households_earning_over_200000_high_i.txt
+- `18:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_14_WebSearch_Claude_Pro_free_tier_message_limits_2026_5x_more_u.txt
+
+## E4E / Sabi `c7a75f72` | 2026-06-23 | 36 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-bethel
+
+- `18:10` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_00_Research_Sage_SaaS_pricing_model.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_01_WebSearch_Superhuman_email_app_pricing_per_month_2026_plans_.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_04_WebSearch_Fyxer_AI_email_assistant_pricing_per_month_2026.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_05_WebSearch_virtual_executive_assistant_cost_per_month_United_.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_03_WebSearch_Shortwave_AI_email_assistant_pricing_plans_per_mon.txt
+- `18:22` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_02_WebSearch_Anthropic_Claude_API_pricing_per_million_tokens_Op.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_07_WebSearch_Google_OAuth_restricted_scope_CASA_Tier_2_security.txt
+- `18:23` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_06_WebSearch_how_many_hours_per_week_professionals_spend_on_ema.txt
+- `18:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_09_WebSearch_number_of_knowledge_workers_worldwide_2026_global_.txt
+- `18:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_08_WebSearch_Superhuman_email_paying_subscribers_user_count_rev.txt
+- `18:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_11_WebSearch_AI_email_assistant_market_size_2026_forecast_billi.txt
+- `18:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_10_WebSearch_number_of_small_business_owners_founders_executive.txt
+- `18:29` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_12_WebSearch_freemium_prosumer_SaaS_free_to_paid_conversion_rat.txt
+- `18:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_13_WebSearch_number_of_US_households_earning_over_200000_high_i.txt
+- `18:36` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/50605635-b54_14_WebSearch_Claude_Pro_free_tier_message_limits_2026_5x_more_u.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_00_WebSearch_Technovation_AI_Ventures_Accelerator_2026_deadline.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_01_WebSearch_AIVA_Technovation_AI_Ventures_Accelerator_demo_day.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_03_WebSearch_Technovation_AIVA_top_10_selection_criteria_pitch_.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_02_WebSearch_Technovation_AI_Ventures_Accelerator_final_submiss.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_04_WebFetch_httpswwwtechnovationorgai-ventures-accelerator.txt
+- `01:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_05_WebFetch_httpsiridescentsupportzendeskcomhcen-usarticles4885.txt
+- `01:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_06_WebSearch_AI_Ventures_Accelerator_Technovation_submission_vi.txt
+- `01:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_08_WebSearch_Technovation_AIVA_week_12_graduation_top_10_applic.txt
+- `01:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_07_WebFetch_httpsvc4acomtechnovationai-ventures-accelerator-202.txt
+- `01:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_09_WebFetch_httpstechnovationchallengeorgaiva-mentor-resources.txt
+- `01:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_10_WebFetch_httpswwwtechnovationchallengeorgwp-contentuploads20.txt
+- `19:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_11_WebSearch_Sabi_trademark_USPTO_education_AI_voice_tutor.txt
+- `19:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_12_WebSearch_Sabi_brand_Nigeria_fintech_B2B_trademark_registere.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_14_WebSearch_Nigerian_Pidgin_English_dictionary_common_verbs_to.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_13_WebSearch_Nigerian_Pidgin_slang_short_words_two_syllables_wa.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_15_WebSearch_Pidgin_English_Nigerian_word_list_storytelling_wis.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_16_WebSearch_Nigerian_Pidgin_tori_yarn_gist_meaning_storytellin.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_17_WebSearch_Tori_Nigeria_brand_company_trademark_edtech.txt
+- `04:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_18_WebSearch_Nigerian_Pidgin_words_list_soso_abi_biko_kele_wo_n.txt
+- `04:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_20_WebFetch_httpsenwiktionaryorgwikiCategoryNigerian_Pidgin_ver.txt
+- `04:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/c7a75f72-c3a_19_WebSearch_Nigerian_Pidgin_owambe_shakara_soft_fine_joor_biko.txt
+
+## E4E / Sabi `618ebca0` | 2026-06-29 | 21 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_00_WebSearch_Lagos_State_Commissioner_of_Education_2026_Tolani_.txt
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_02_WebSearch_Africa_Ministry_of_Education_AI_tutoring_procureme.txt
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_01_WebSearch_World_Bank_HOPE-EDU_Nigeria_implementation_2026_st.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_04_WebSearch_vLLM_concurrent_users_Llama_31_8B_H100_throughput_.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_05_WebSearch_Whisper_large-v3_GPU_concurrent_streams_capacity_R.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_03_WebSearch_Hetzner_RTX_4090_dedicated_GPU_server_pricing_2026.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_06_WebSearch_RunPod_Lambda_Labs_H100_A100_monthly_pricing_2026_.txt
+- `19:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_22_Research_subject-split_in_RCT_ed_programs.txt
+- `20:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_22_Read_existing_ViamoIVR_research.txt
+- `20:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_23_Web_research_Viamo_identity_handling.txt
+- `23:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_00_WebSearch_Clerk_production_instance_vercelapp_domain_DNS_cus.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_01_WebSearch_Cortex_trademark_USPTO_registered_owner_software_a.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_02_WebSearch_trademarkia_Cortex_trademark_registrations_list_ow.txt
+- `00:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_03_WebSearch_Cortex_AI_product_launched_2024_2025_Snowflake_Cor.txt
+- `00:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_04_WebFetch_httpsusptoreportTM88979203.txt
+- `00:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_05_WebSearch_Snowflake_Cortex_trademark_registration_USPTO_seri.txt
+- `06:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_06_WebSearch_unified_OAuth_integration_platform_AI_agents_2026_.txt
+- `06:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_07_WebSearch_Google_OAuth_verification_2026_restricted_scopes_g.txt
+- `06:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_08_WebSearch_Composio_vs_Nango_managed_authentication_Gmail_Sla.txt
+- `06:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_09_WebSearch_Composio_TypeScript_SDK_2026_composiocore_quicksta.txt
+- `06:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_10_WebFetch_httpsdocscomposiodevdocsquickstart.txt
+
+## Cortex `e7c30dbb` | 2026-06-30 | 30 files
+Folders: -Users-naomiivie-Education-for-Equality, -Users-naomiivie-cortex, -Users-naomiivie-cortex-web
+
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_00_WebSearch_Lagos_State_Commissioner_of_Education_2026_Tolani_.txt
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_02_WebSearch_Africa_Ministry_of_Education_AI_tutoring_procureme.txt
+- `15:56` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_01_WebSearch_World_Bank_HOPE-EDU_Nigeria_implementation_2026_st.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_04_WebSearch_vLLM_concurrent_users_Llama_31_8B_H100_throughput_.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_05_WebSearch_Whisper_large-v3_GPU_concurrent_streams_capacity_R.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_03_WebSearch_Hetzner_RTX_4090_dedicated_GPU_server_pricing_2026.txt
+- `16:41` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_06_WebSearch_RunPod_Lambda_Labs_H100_A100_monthly_pricing_2026_.txt
+- `19:51` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/871c4cab-479_22_Research_subject-split_in_RCT_ed_programs.txt
+- `20:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_22_Read_existing_ViamoIVR_research.txt
+- `20:35` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3b8ddd08-9e2_23_Web_research_Viamo_identity_handling.txt
+- `23:37` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_00_WebSearch_Clerk_production_instance_vercelapp_domain_DNS_cus.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_01_WebSearch_Cortex_trademark_USPTO_registered_owner_software_a.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_02_WebSearch_trademarkia_Cortex_trademark_registrations_list_ow.txt
+- `00:17` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_03_WebSearch_Cortex_AI_product_launched_2024_2025_Snowflake_Cor.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_04_WebFetch_httpsusptoreportTM88979203.txt
+- `00:18` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/618ebca0-607_05_WebSearch_Snowflake_Cortex_trademark_registration_USPTO_seri.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_00_Research_Alexa_architecture.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_00_Research_Alexa_architecture.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_01_Research_wake-word_KWS_tech.txt
+- `07:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_01_Research_wake-word_KWS_tech.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_02_Research_buildable_wake-word_options.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_02_Research_buildable_wake-word_options.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_03_Research_browser_constraints_and_tradeoffs.txt
+- `07:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_03_Research_browser_constraints_and_tradeoffs.txt
+- `07:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_04_Research_lean_codedata_architecture.txt
+- `07:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_04_Research_lean_codedata_architecture.txt
+- `07:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_05_Research_personal-AI_moat_and_distribution.txt
+- `07:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_05_Research_personal-AI_moat_and_distribution.txt
+- `07:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/e7c30dbb-f6d_06_Research_Tauri_wrapper_architecture.txt
+- `07:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/e7c30dbb-f6d_06_Research_Tauri_wrapper_architecture.txt
+
+## E4E / Sabi `595110e2` | 2026-07-03 | 18 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_00_WebSearch_MTN_Ads_Nigeria_advertiser_pricing_CPM_rate_card_2.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_01_WebSearch_Nigeria_digital_advertising_CPM_rates_2026_benchma.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_02_WebSearch_Nigeria_top_advertisers_ad_spend_2025_MTN_Airtel_D.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_05_WebSearch_Spotify_Boomplay_Audiomack_Nigeria_audio_ads_CPM_a.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_04_WebSearch_MTN_Nigeria_advertising_marketing_spend_2025_annua.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_03_WebSearch_Nigeria_radio_program_sponsorship_rates_2026_naira.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_06_WebSearch_Indomie_Dufil_Milo_Nestle_Peak_Milk_Nigeria_childr.txt
+- `16:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_07_WebSearch_Please_Call_Me_advertising_rates_OR_robocall_OR_ri.txt
+- `17:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_08_WebSearch_Twilio_early_growth_strategy_developer_evangelism_.txt
+- `17:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_11_WebSearch_Stripe_history_how_it_grew_developer_experience_re.txt
+- `17:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_10_WebSearch_Plaid_API_business_model_how_it_won_fintech_develo.txt
+- `17:32` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_09_WebSearch_best_API-first_companies_playbook_Stripe_Twilio_Pl.txt
+- `17:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_12_WebSearch_Twilio_stock_decline_gross_margin_problem_A2P_fees.txt
+- `17:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_13_WebSearch_AWS_how_Amazon_Web_Services_became_dominant_primit.txt
+- `17:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_15_WebSearch_how_AI_API_companies_grew_OpenAI_ElevenLabs_Deepgr.txt
+- `17:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_14_WebSearch_API_company_failures_why_API_startups_die_commodit.txt
+- `17:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_16_WebSearch_young_millionaire_founders_daily_systems_delegatio.txt
+- `17:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_17_WebSearch_how_young_self-made_founders_run_their_companies_o.txt
+
+## E4E / Sabi `bd681d58` | 2026-07-04 | 27 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_00_WebSearch_MTN_Ads_Nigeria_advertiser_pricing_CPM_rate_card_2.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_01_WebSearch_Nigeria_digital_advertising_CPM_rates_2026_benchma.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_02_WebSearch_Nigeria_top_advertisers_ad_spend_2025_MTN_Airtel_D.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_05_WebSearch_Spotify_Boomplay_Audiomack_Nigeria_audio_ads_CPM_a.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_04_WebSearch_MTN_Nigeria_advertising_marketing_spend_2025_annua.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_03_WebSearch_Nigeria_radio_program_sponsorship_rates_2026_naira.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_06_WebSearch_Indomie_Dufil_Milo_Nestle_Peak_Milk_Nigeria_childr.txt
+- `16:02` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_07_WebSearch_Please_Call_Me_advertising_rates_OR_robocall_OR_ri.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_08_WebSearch_Twilio_early_growth_strategy_developer_evangelism_.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_11_WebSearch_Stripe_history_how_it_grew_developer_experience_re.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_10_WebSearch_Plaid_API_business_model_how_it_won_fintech_develo.txt
+- `17:32` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_09_WebSearch_best_API-first_companies_playbook_Stripe_Twilio_Pl.txt
+- `17:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_12_WebSearch_Twilio_stock_decline_gross_margin_problem_A2P_fees.txt
+- `17:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_13_WebSearch_AWS_how_Amazon_Web_Services_became_dominant_primit.txt
+- `17:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_15_WebSearch_how_AI_API_companies_grew_OpenAI_ElevenLabs_Deepgr.txt
+- `17:33` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/595110e2-994_14_WebSearch_API_company_failures_why_API_startups_die_commodit.txt
+- `17:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_01_WebSearch_Intron_Voice_API_integrator_account_access_key_Sah.txt
+- `17:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_00_WebFetch_httpsdocsvoiceintroniodocsindexintroduction.txt
+- `18:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_02_WebFetch_httpsdocsvoiceintroniodocsindexintroduction.txt
+- `18:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_03_WebFetch_httpsdocsvoiceintroniodocsspeech-to-text-file-uploa.txt
+- `18:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_04_WebFetch_httpsdocsvoiceintroniodocssttupload-file-sync.txt
+- `18:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_05_WebFetch_httpsdocsvoiceintroniodocssttfile-upload.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_07_WebSearch_Intron_voiceintronio_integrator_account_create_das.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_06_WebSearch_intron_API_permission_denied_integrator_account_tr.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_08_WebFetch_httpsvoiceintroniodocssectiontranscribe-with-api-fi.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_10_WebSearch_voiceintronio_docs_create_integrator_OR_integrator.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/bd681d58-c48_09_WebFetch_httpsvoiceintroniodocs.txt
+
+## E4E / Sabi `400bc972` | 2026-07-07 | 32 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_00_WebSearch_WAXAL_Google_dataset_African_languages_ASR_TTS_spe.txt
+- `19:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_01_WebSearch_Google_Chirp_USM_speech-to-text_African_languages_.txt
+- `19:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_02_WebSearch_PaLM_2_speech-to-text_capabilities_audio_input.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_03_WebSearch_Deepgram_Nigerian_English_en-NG_accent_supported_l.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_05_WebSearch_Deepgram_Nova-3_vs_Nova-2_latest_model_release_202.txt
+- `19:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_04_WebSearch_Deepgram_Nova_telephony_8khz_phone_call_noise_robu.txt
+- `19:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_07_WebSearch_WAXAL_dataset_ASR_data_languages_Hausa_Yoruba_Igbo.txt
+- `19:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_06_WebSearch_fine-tune_Whisper_Nigerian_accented_English_noise_.txt
+- `20:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_08_WebFetch_httpshuggingfacecoNCAIR1NigerianAccentedEnglish.txt
+- `20:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_09_WebSearch_Awarri_Nigerian_accented_English_speech_recognitio.txt
+- `02:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_11_WebSearch_Whisper_constrained_decoding_restrict_output_vocab.txt
+- `02:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_10_WebSearch_Whisper_initial_prompt_suppress_tokens_logit_bias_.txt
+- `02:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_12_WebSearch_spoken_digit_number_recognition_IVR_noisy_accented.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_13_WebSearch_Intron_Health_Nigerian_speech_recognition_how_buil.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_14_WebSearch_Awarri_LangEasy_Nigerian_voice_data_crowdsourcing_.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_15_WebSearch_Spitch_AI_Nigeria_speech-to-text_Yoruba_Igbo_Hausa.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_17_WebSearch_Viamo_3-2-1_service_Africa_voice_IVR_input_DTMF_ke.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_18_WebSearch_EqualyzAI_VoiceBridge_feature_phone_IVR_Nigerian_v.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_16_WebSearch_Nigerian_fintech_bank_voice_assistant_AI_customer_.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_19_WebSearch_Ask_Viamo_Anything_Zambia_GenAI_voice-first_pilot_.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_20_WebSearch_Rori_math_tutor_Rising_Academies_WhatsApp_AI_tutor.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_24_WebSearch_NaijaVoices_dataset_methodology_how_recorded_authe.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_22_WebSearch_Nigeria_USSD_vs_voice_banking_why_USSD_dominant_fi.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_21_WebSearch_African_health_agriculture_IVR_hotline_spoken_numb.txt
+- `02:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_23_WebSearch_confirmation_loop_error_handling_ASR_voice_bot_des.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_26_WebSearch_Twilio_Gather_speech_recognition_hints_numeric_DTM.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_25_WebSearch_uLesson_Nigeria_edtech_voice_interaction_children_.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_28_WebSearch_Intron_Sahara_Spitch_fine-tune_Whisper_conformer_a.txt
+- `02:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_27_WebSearch_spoken_number_digit_recognition_specialized_model_.txt
+- `02:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_29_WebSearch_MTN_Airtel_Nigeria_AI_voicebot_call_center_custome.txt
+- `02:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_31_WebSearch_Lelapa_AI_InkubaLM_African_languages_speech_Vulavu.txt
+- `02:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_30_WebSearch_Google_Nigeria_voice_typing_Gboard_Chirp_Nigerian_.txt
+
+## E4E / Sabi `f8d1fd1f` | 2026-07-08 | 24 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `19:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_00_WebSearch_WAXAL_Google_dataset_African_languages_ASR_TTS_spe.txt
+- `19:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_01_WebSearch_Google_Chirp_USM_speech-to-text_African_languages_.txt
+- `19:30` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_02_WebSearch_PaLM_2_speech-to-text_capabilities_audio_input.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_03_WebSearch_Deepgram_Nigerian_English_en-NG_accent_supported_l.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_05_WebSearch_Deepgram_Nova-3_vs_Nova-2_latest_model_release_202.txt
+- `19:34` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_04_WebSearch_Deepgram_Nova_telephony_8khz_phone_call_noise_robu.txt
+- `19:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_01_WebSearch_IVR_post-call_survey_completion_rate_best_practice.txt
+- `19:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_00_WebSearch_voice_survey_abandonment_callers_hang_up_before_su.txt
+- `19:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_02_WebSearch_post-call_survey_design_ask_upfront_commitment_tec.txt
+- `19:57` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_03_WebFetch_httpswwwverintcomblogtop-10-best-practices-for-opti.txt
+- `19:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_07_WebSearch_WAXAL_dataset_ASR_data_languages_Hausa_Yoruba_Igbo.txt
+- `19:59` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_06_WebSearch_fine-tune_Whisper_Nigerian_accented_English_noise_.txt
+- `20:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_08_WebFetch_httpshuggingfacecoNCAIR1NigerianAccentedEnglish.txt
+- `20:24` [pre] /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/400bc972-a5a_09_WebSearch_Awarri_Nigerian_accented_English_speech_recognitio.txt
+- `01:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_02_WebSearch_how_EdTech_company_gets_approved_partnership_Lagos.txt
+- `01:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_03_WebSearch_Lagos_State_Ministry_of_Education_approval_private.txt
+- `01:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_01_WebSearch_Nigeria_Data_Protection_Act_2023_children_data_con.txt
+- `01:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_00_WebSearch_advertising_to_children_Nigeria_ARCON_regulations_.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_05_WebSearch_EKOEXCEL_NewGlobe_how_Lagos_State_partnership_star.txt
+- `01:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_04_WebSearch_Lagos_State_public_private_partnership_unsolicited.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_08_WebSearch_top_short-form_content_creator_workflow_2025_hook_.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_07_WebSearch_Instagram_content_strategy_2025_posting_schedule_s.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_09_WebSearch_best_short_form_video_editing_techniques_CapCut_b-.txt
+- `01:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/f8d1fd1f-a78_06_WebSearch_music_production_process_end_to_end_beginner_DAW_r.txt
+
+## E4E / Sabi `3754718b` | 2026-07-13 | 6 files
+Folders: -Users-naomiivie-Education-for-Equality
+
+- `23:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_00_WebFetch_httpswwwkagglecomdatasetsaiolapoafricannigerian-acc.txt
+- `23:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_01_WebFetch_httpshuggingfacecodatasetsbenjaminogbonnanigerian_a.txt
+- `23:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_02_WebFetch_httpsarxivorghtml250520564.txt
+- `23:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_03_WebFetch_httpscdnopenaicompaperswhisperpdf.txt
+- `23:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_04_WebSearch_huggingface_whisper_fine-tuned_Nigerian_English_Af.txt
+- `23:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/3754718b-4c1_05_WebSearch_Anthropic_Claude_API_audio_input_transcription_bas.txt
+
+## Standalone Research (no matched build)
+
+### Classes `8f6ef573-a64` | 2026-02-09 | 19 files
+
+- `02:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_00_WebSearch_OpenClaw_install_guide_2026.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_01_WebSearch_OpenClaw_API_costs_pricing_how_much_does_it_cost_t.txt
+- `03:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_02_WebSearch_OpenClaw_always_running_VPS_hosting_requirements_2.txt
+- `03:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_03_WebSearch_OpenClaw_change_AI_model_switch_between_Claude_GPT.txt
+- `03:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_04_WebSearch_OpenClaw_Clawdbot_amazing_automations_what_can_it_.txt
+- `03:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_05_WebSearch_OpenClaw_Clawdbot_most_impressive_creative_use_cas.txt
+- `03:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_06_WebSearch_OpenClaw_how_to_install_skills_ClawHub_find_skills.txt
+- `03:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_07_WebSearch_OpenClaw_automated_job_application_bot_resume_Link.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_09_WebSearch_Kimi_K2_model_vs_Claude_comparison_OpenClaw_2026.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_08_WebFetch_httpswwwyoutubecomwatchvYY1qFOlsGxo.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_11_WebSearch_Kimi_K2_vs_Claude_Sonnet_Opus_coding_agent_compari.txt
+- `03:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_10_WebSearch_Kimi_K25_AI_model_Moonshot_review_benchmark_2026.txt
+- `03:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_13_WebSearch_OpenClaw_free_VPS_Oracle_Cloud_setup_tutorial_2026.txt
+- `03:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_12_WebSearch_OpenClaw_Kimi_K25_setup_local_Mac_free_no_hosting_.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_15_WebSearch_AI_API_student_discount_free_tier_OpenAI_Anthropic.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_14_WebSearch_Kimi_Moonshot_API_free_tier_student_pricing_2026.txt
+- `04:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_16_WebSearch_Claude_Code_pricing_200_month_Max_plan_API_credits.txt
+- `05:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_17_WebSearch_Claude_Code_CLI_export_chat_history_download_conve.txt
+- `05:45` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8f6ef573-a64_18_WebSearch_OpenClaw_connect_WhatsApp_setup_tutorial_2026.txt
+
+### Classes `ed610d67-7aa` | 2026-02-10 | 6 files
+
+- `20:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_00_WebSearch_where_to_buy_Nigerian_yam_grocery_store_USA.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_01_WebSearch_African_yam_vs_American_yam_difference_sweet_potat.txt
+- `20:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_02_WebSearch_African_yam_price_per_pound_cheapest_online_2026.txt
+- `20:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_03_WebSearch_African_yam_OR_Nigerian_yam_price_siteamazoncom_OR.txt
+- `21:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_05_WebSearch_buy_fresh_African_yam_online_USA_delivery_2026.txt
+- `21:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed610d67-7aa_04_WebSearch_African_grocery_store_yam_delivery_in_stock_ship.txt
+
+### Classes `05c326c6-274` | 2026-02-12 | 20 files
+
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_00_WebSearch_Chad_Jones_2016_The_Facts_of_Economic_Growth_PDF_N.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_01_WebSearch_Jones_Klenow_2016_Beyond_GDP_Welfare_across_Countr.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_02_WebSearch_Solow_1956_Contribution_to_the_Theory_of_Economic_.txt
+- `00:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_03_WebSearch_Mankiw_Romer_Weil_1992_Contribution_to_the_Empiric.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_04_WebSearch_Kremer_Willis_You_2022_Converging_to_Convergence_P.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_05_WebSearch_Bloom_Jones_Van_Reenen_Webb_2020_Are_Ideas_Getting.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_07_WebSearch_Romer_1990_Endogenous_Technological_Change_PDF_NBE.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_06_WebSearch_Acemoglu_Johnson_Robinson_2001_Colonial_Origins_of.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_09_WebSearch_Feyrer_2019_Trade_and_Income_Exploiting_Time_Serie.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_11_WebSearch_Frankel_Romer_1999_Does_Trade_Cause_Growth_PDF_NBE.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_08_WebSearch_Hall_Jones_1999_Why_Do_Some_Countries_Produce_So_M.txt
+- `00:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_10_WebSearch_Acemoglu_2019_Democracy_Does_Cause_Growth_PDF.txt
+- `00:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_13_WebSearch_Romer_1994_Origins_of_Endogenous_Growth_PDF_Journa.txt
+- `00:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_12_WebSearch_Rodrik_Subramanian_2003_Primacy_of_Institutions_PD.txt
+- `00:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_15_WebSearch_Durlauf_Johnson_Temple_2005_Growth_Econometrics_PD.txt
+- `00:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_14_WebSearch_Funke_2023_Populist_Leaders_and_the_Economy_PDF.txt
+- `00:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_16_WebSearch_Easterly_Levine_2003_Tropics_Germs_and_Crops_PDF.txt
+- `01:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_17_WebSearch_Comin_Easterly_Gong_2010_Wealth_of_Nations_Determi.txt
+- `01:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_18_WebSearch_Spolaore_Wacziarg_2013_Deep_Roots_of_Economic_Deve.txt
+- `01:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/05c326c6-274_19_WebSearch_Michalopoulos_Papaioannou_2013_Pre-Colonial_Ethnic.txt
+
+### Classes `9769868f-55d` | 2026-02-18 | 6 files
+
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_00_WebSearch_Tactiq_API_transcript_export_integration_2026.txt
+- `01:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_01_WebFetch_httpsapptactiqio.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+- `01:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-Classes/agent-research/9769868f-55d_02_WebSearch_Tactiq_OneDrive_integration_setup_export_transcrip.txt
+
+### Classes `54dd4efb-7e0` | 2026-02-18 | 23 files
+
+- `01:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_00_WebSearch_Tactiq_OneDrive_integration_how_to_sync_transcript.txt
+- `01:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_01_WebSearch_Tactiq_export_existing_transcripts_to_OneDrive_bul.txt
+- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_02_WebSearch_Tactiq_upload_audio_video_API_automation_Zapier_iP.txt
+- `02:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_03_WebSearch_iOS_Shortcuts_automatic_audio_transcription_Whispe.txt
+- `02:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_04_WebSearch_Tactiq_iOS_Shortcuts_integration_Siri_API_upload.txt
+- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_05_WebSearch_Tactiq_Zapier_trigger_upload_file_automation_webho.txt
+- `02:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_06_WebSearch_Tactiq_upload_automatically_audio_video_file_mobil.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_07_WebFetch_httpstactiqioaudio-to-textvoice-to-text-iphone.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_08_WebSearch_Tactiq_mobile_app_iOS_Android_2026.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_09_WebSearch_Tactiq_upload_from_OneDrive_Google_Drive_cloud_sto.txt
+- `02:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_10_WebFetch_httpshelptactiqioenarticles9546387-how-to-upload-vi.txt
+- `02:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_11_WebSearch_Playwright_Puppeteer_automate_file_upload_web_app_.txt
+- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_12_WebSearch_iPhone_Photos_app_sort_videos_by_size_largest_file.txt
+- `02:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_13_WebSearch_iOS_18_19_Photos_app_Videos_album_sort_by_duration.txt
+- `03:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_14_WebSearch_iOS_Shortcuts_Voice_Memos_automation_save_to_OneDr.txt
+- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_15_WebSearch_iOS_18_Voice_Memos_transcription_auto_save_cloud_a.txt
+- `03:44` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_16_WebSearch_iOS_18_Notes_app_audio_recording_transcription_sav.txt
+- `03:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_17_WebSearch_iOS_Shortcuts_Notes_app_audio_recording_export_sav.txt
+- `03:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_18_WebSearch_iOS_Shortcut_save_Voice_Memos_Notes_recording_to_O.txt
+- `03:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_19_WebSearch_iOS_18_Notes_app_record_audio_automatic_transcript.txt
+- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_20_WebSearch_Antigravity_VS_Code_extension_document_viewer.txt
+- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_21_WebSearch_VS_Code_voice_recording_extension_microphone_audio.txt
+- `05:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/54dd4efb-7e0_22_WebSearch_VS_Code_audio_player_extension_listen_mp3_m4a_play.txt
+
+### Classes `2eb61026-a83` | 2026-02-20 | 3 files
+
+- `16:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_00_WebSearch_Lila_Sayre_Wesleyan_Hasbro_LinkedIn.txt
+- `16:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_01_WebSearch_Lila_Sayre_Hasbro.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/2eb61026-a83_02_WebSearch_Lila_Sayre_LinkedIn_finance.txt
+
+### Classes `19b3e1b6-0b2` | 2026-02-20 | 6 files
+
+- `18:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_00_WebSearch_Happy_Herman_Niyorurema_TCU_email.txt
+- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_01_WebSearch_cheapest_second_hand_office_chair_near_me_Facebook.txt
+- `22:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_02_WebSearch_best_cheap_hands-free_social_media_recording_camer.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_03_WebSearch_Facebook_Marketplace_office_chair_Connecticut_Midd.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_04_WebSearch_eBay_Insta360_GO_2_used_cheap_buy_now.txt
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/19b3e1b6-0b2_05_WebSearch_eBay_GoPro_Hero_9_used_cheap_under_100.txt
+
+### Classes `8ed50497-de4` | 2026-02-24 | 7 files
+
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_00_WebSearch_Wesleyan_University_spring_break_2026_dates.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_03_WebSearch_cheapest_spring_break_Florida_budget_2026_students.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_02_WebSearch_cheapest_Airbnb_Florida_spring_break_2026_under_50.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_01_WebSearch_cheapest_flights_Connecticut_to_Florida_March_2026.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_05_WebSearch_Megabus_Greyhound_bus_Connecticut_to_Florida_cheap.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_04_WebFetch_httpswwwwesleyaneduregistrarcalendarsAcademic20Cale.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8ed50497-de4_06_WebSearch_hostel_Florida_spring_break_cheapest_20_night_2026.txt
+
+### Classes `8fe75070-b36` | 2026-03-02 | 10 files
+
+- `05:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_01_WebSearch_cheapest_comfortable_second_hand_ergonomic_desk_ch.txt
+- `05:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_00_WebSearch_used_ergonomic_office_chair_headrest_neck_support_.txt
+- `05:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_02_WebSearch_sitefacebookcommarketplace_OR_siteofferupcom_OR_si.txt
+- `05:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_03_WebSearch_refurbished_Herman_Miller_Aeron_Steelcase_Leap_use.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_04_WebSearch_used_office_chair_headrest_neck_support_under_50_c.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_05_WebSearch_cheapest_ergonomic_office_chair_headrest_under_100.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_06_WebSearch_Smugdesk_ergonomic_office_chair_headrest_price_Ama.txt
+- `05:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_07_WebSearch_ergonomic_office_chair_headrest_under_75_Amazon_Wa.txt
+- `05:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_09_WebSearch_best_cheap_under_desk_elliptical_treadmill_for_stu.txt
+- `05:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/8fe75070-b36_08_WebSearch_under_desk_elliptical_vs_under_desk_treadmill_comp.txt
+
+### Bethel `78e41aad-996` | 2026-03-29 | 3 files
+
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_01_Research_Parsec_Financial.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_02_Research_Chequers_Financial_Mgmt.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/78e41aad-996_00_Research_41_acquisition_framework.txt
+
+### Bethel `53755257-7d3` | 2026-03-29 | 15 files
+
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_01_WebSearch_Calendly_alternatives_individual_users_pricing_fre.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_03_WebSearch_Calendly_main_competitors_2025_2026_scheduling_too.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_02_WebSearch_Calendly_complaints_pain_points_why_people_switch_.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_00_WebSearch_Calcom_SavvyCal_TidyCal_customer_acquisition_strat.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_06_WebFetch_httpslunacalaicomparecalendly-alternative.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_05_WebSearch_TidyCal_AppSumo_lifetime_deal_customer_acquisition.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_04_WebFetch_httpszeegmeenblogpostcalendly-pros-and-cons-review.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_08_WebSearch_Acuity_Scheduling_Squarespace_individual_customer_.txt
+- `20:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_07_WebSearch_Calcom_open_source_scheduling_growth_strategy_Prod.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_09_WebSearch_SavvyCal_Derrick_Reimer_indie_growth_strategy_mark.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_10_WebSearch_Doodle_scheduling_growth_strategy_freemium_individ.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_12_WebSearch_Reclaimai_scheduling_growth_strategy_AI_marketing_.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_11_WebSearch_Chili_Piper_Lemcal_Zeeg_scheduling_tools_individua.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_13_WebFetch_httpscanvasbusinessmodelcomblogsgrowth-strategyrecl.txt
+- `20:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-bethel/agent-research/53755257-7d3_14_WebSearch_scheduling_app_SEO_content_marketing_strategy_Cale.txt
+
+### Classes `89c7a628-6da` | 2026-03-30 | 11 files
+
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_02_Extract_Lecture_3_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_01_Extract_Lecture_2_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_00_Extract_Lecture_1_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_03_Extract_Lecture_4_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_04_Extract_Lecture_5_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_05_Extract_Lecture_6_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_06_Extract_Lecture_7_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_07_Extract_Lecture_8_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_08_Extract_Lecture_9_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_09_Extract_Lecture_10_handout.txt
+- `01:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/89c7a628-6da_10_Extract_Lecture_11_handout.txt
+
+### E4E / Sabi `6670b9c8-268` | 2026-04-11 | 126 files
+
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_00_ASL_glasses_current_products.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_02_ASL_glasses_academic_research.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_03_ASL_glasses_competition_landscape.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_04_Deaf_community_perspective_on_ASL_glasses.txt
+- `16:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_01_ASL_glasses_technical_feasibility.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_05_WebSearch_ASL_sign_language_translation_glasses_real-time_20.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_07_WebSearch_SignAll_sign_language_translation_technology_2025_.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_09_WebSearch_sign_language_smart_glasses_AR_translation_deaf_te.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_08_WebSearch_XRAI_Glass_sign_language_deaf_accessibility_featur.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_06_WebSearch_sign_language_recognition_computer_vision_wearable.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_10_WebSearch_Deaf_community_opinion_sign_language_translation_g.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_11_WebSearch_SignGlass_ACM_UIST_2025_first_person_ASL_translati.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_13_WebSearch_sign_language_translation_bidirectional_English_to.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_15_WebSearch_CES_2026_AI_AR_translation_glasses_sign_language_d.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_16_WebSearch_sign_language_gloves_criticism_fail_why_Deaf_commu.txt
+- `16:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_14_WebSearch_sign_language_translation_market_size_deaf_technol.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_17_WebFetch_httpswwwsignglassescom.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_18_WebFetch_httpsnewsnortheasternedu20260319sign-language-techn.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_19_WebFetch_httpsawsamazoncomblogsmachine-learninggenasl-genera.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_20_WebFetch_httpsxraiglassblogxrai-partners-with-vsl-labs.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_23_WebFetch_httpswwwsignapseai.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_22_WebSearch_Raspberry_Pi_sign_language_translation_glasses_pro.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_21_WebFetch_httpswwwsignavatarorg.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_25_WebSearch_continuous_sign_language_recognition_accuracy_stat.txt
+- `16:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_24_WebSearch_sign_language_non-manual_markers_facial_expression.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_26_WebFetch_httpsmachinelearningapplecomresearchai-sign-languag.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_27_WebFetch_httpswwwraspberrypicomnewssign-language-translation.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_28_WebFetch_httpswwwtomorrowsworldtodaycomtechnologyces-2026-wo.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_29_WebSearch_Hearview_AI_caption_glasses_deaf_hard_hearing_2025.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_31_WebSearch_TranscribeGlass_sign_language_deaf_accessibility_s.txt
+- `16:27` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_30_WebSearch_edge_computing_sign_language_recognition_on-device.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_32_WebSearch_VSL_Labs_sign_language_avatar_AI_generative_real-t.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_33_WebSearch_bidirectional_ASL_English_translation_product_devi.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_34_WebFetch_httpswwwhearviewaiblogsnewswhich-smart-glasses-are-.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_35_WebSearch_Northeastern_University_2026_survey_deaf_community.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_36_WebFetch_httpsarxivorghtml250205661v1.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_37_WebSearch_Sorenson_OmniBridge_acquisition_bidirectional_ASL_.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_38_WebSearch_Sign-Speak_ASL_translation_photorealistic_signer_a.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_39_WebFetch_httpswwwvsllabscomtechnology.txt
+- `16:28` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_40_WebFetch_httpsmedicalxpresscomnews2026-03-survey-skepticism-.txt
+- `16:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_41_WebFetch_httpsomnibridgeai.txt
+- `16:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_43_WebSearch_ASL_sign_language_translation_glasses_accuracy_rea.txt
+- `16:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_42_WebFetch_httpssorensoncomnewsroomenterprisesorenson-acquires.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_46_WebSearch_SignGlass_Penn_State_three_camera_ASL_recognition_.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_44_WebSearch_Sorenson_OmniBridge_SDK_technical_architecture_how.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_47_WebSearch_Sign-Speak_ASL_translation_technical_approach_how_.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_48_WebSearch_Signapse_AI_sign_language_translation_generative_A.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_49_WebSearch_VSL_Labs_technical_architecture_sign_language_avat.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_50_WebFetch_httpswwwsignapseaipostsignapses-sign-language-trans.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_52_WebFetch_httpswwwsignapseaiposthow-does-our-ai-technology-wo.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_51_WebFetch_httpswwwzenmliollmops-databaseautomated-sign-langua.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_55_WebFetch_httpstaiting-website-medias3us-east-2amazonawscompa.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_53_WebFetch_httpssignmtdocsdocscompaniesdeep-divevsllabshtml.txt
+- `17:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_54_WebFetch_httpsslatorcomsorenson-communications-acquires-two-.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_56_WebSearch_Hand_Talk_AI_avatar_sign_language_how_it_works_tec.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_57_WebSearch_best_approach_sign_language_recognition_2025_visio.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_58_WebSearch_sign_language_generation_English_to_ASL_best_appro.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_60_WebFetch_httpswwwsignapseaipostthe-signapse-ai-roadmap-our-j.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_59_WebFetch_httpswwwsignapseaipostbreaking-barriers-in-ai-sign-.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_61_WebSearch_SignGlass_UIST_2025_jitter-aware_spatio-temporal_a.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_62_WebSearch_sign_language_recognition_edge_device_on-device_mo.txt
+- `17:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_63_WebFetch_httpssuperintelligencenewscomcompaniesgooglegoogle-.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_65_WebSearch_deaf_population_statistics_worldwide_2025_2026_WHO.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_68_WebSearch_deaf_people_daily_challenges_barriers_communicatio.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_66_WebSearch_deaf_unemployment_rate_income_gap_hearing_loss_eco.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_69_WebSearch_deaf_children_education_outcomes_literacy_rates_ac.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_70_WebSearch_deaf_healthcare_barriers_medical_misdiagnosis_inte.txt
+- `18:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_67_WebSearch_sign_language_interpreter_shortage_crisis_United_S.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_71_WebSearch_deaf_mental_health_depression_anxiety_isolation_st.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_72_WebSearch_deaf_people_technology_access_digital_divide_smart.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_73_WebSearch_deaf_discrimination_ADA_violations_lawsuits_access.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_74_WebSearch_deaf_developing_countries_low_income_nations_heari.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_75_WebSearch_deaf_language_deprivation_syndrome_children_critic.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_76_WebSearch_cost_of_hearing_loss_economic_burden_GDP_productiv.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_78_WebSearch_deaf_social_isolation_loneliness_family_dinner_tab.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_80_WebSearch_deaf_people_emergency_911_access_barriers_police_e.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_77_WebFetch_httpswwwwhointnews-roomfact-sheetsdetaildeafness-an.txt
+- `18:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_79_WebFetch_httpspmcncbinlmnihgovarticlesPMC5469702.txt
+- `18:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_82_WebSearch_deaf_representation_media_entertainment_lack_of_in.txt
+- `18:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_81_WebSearch_deaf_people_public_services_government_inaccessibl.txt
+- `19:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_85_WebSearch_pretrained_sign_language_recognition_models_downlo.txt
+- `19:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_84_WebSearch_ASL_sign_language_recognition_model_huggingface_op.txt
+- `19:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_86_WebSearch_SignVLM_pretrained_large_video_model_sign_language.txt
+- `19:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_87_WebSearch_sign_language_translation_pretrained_model_continu.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_88_WebSearch_SignVLM_github_installation_requirements_WLASL_pre.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_89_WebSearch_CorrNet_github_installation_demo_continuous_sign_l.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_90_WebSearch_WLASL_dataset_download_pretrained_model_simple_ASL.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_93_WebFetch_httpsgithubcomhulianyuyyCorrNet.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_91_WebFetch_httpsgithubcomHamzah-LuqmansignVLM.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_92_WebSearch_MediaPipe_holistic_keypoint_sequence_ASL_recogniti.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_94_WebFetch_httpsgithubcomgabguerinSign-Language-Recognition--M.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_95_WebSearch_MediaPipe_hand_landmarks_LSTM_ASL_sign_recognition.txt
+- `21:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_96_WebFetch_httpsgithubcomKhushi-739SLRNet.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_99_WebSearch_DTW_alternatives_sign_language_recognition_better_.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_98_WebSearch_MediaPipe_keypoints_sign_language_recognition_best.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_101_WebSearch_sign_language_recognition_no_training_data_few-sho.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_97_WebSearch_DTW_vs_LSTM_vs_transformer_sign_language_recogniti.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_102_WebSearch_one-shot_few-shot_sign_language_recognition_protot.txt
+- `21:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_100_WebSearch_fast_DTW_soft_DTW_differentiable_DTW_sign_language.txt
+- `21:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_105_WebFetch_httpsarxivorghtml251210562.txt
+- `21:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_103_WebSearch_prototypical_network_sign_language_recognition_imp.txt
+- `21:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_104_WebSearch_angle_based_sign_language_recognition_MediaPipe_in.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_107_WebSearch_prototypical_network_sign_language_implementation_.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_106_WebSearch_few-shot_prototypical_network_gesture_recognition_.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_110_WebSearch_ST-GCN_sign_language_pretrained_weights_github_rea.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_109_WebSearch_few-shot_learning_sign_language_recognition_quick_.txt
+- `21:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_108_WebSearch_prototypical_network_WLASL_pretrained_weights_down.txt
+- `21:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_111_WebFetch_httpsdata-aitheodocomentechnical-blogyour-few-shot-.txt
+- `21:34` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_112_WebFetch_httpshuggingfacecosharonn18tgcn-wlasl.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_114_WebSearch_WLASL_benchmark_accuracy_results_2024_2025_all_mod.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_113_WebSearch_TGCN_WLASL_accuracy_top-1_top-5_benchmark_results_.txt
+- `21:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_115_WebFetch_httpsgithubcomdxli94WLASL.txt
+- `21:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_116_WebFetch_httpsdxli94githubioWLASL.txt
+- `21:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_117_WebSearch_Pose-TGCN_WLASL100_WLASL2000_accuracy_top-1_specif.txt
+- `02:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_118_WebSearch_play_audio_from_Mac_computer_to_Echo_Dot_bluetooth.txt
+- `02:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_119_WebSearch_Echo_Dot_as_bluetooth_speaker_for_Mac_how_to_conne.txt
+- `04:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_120_WebSearch_WLASL_dataset_sample_videos_download_direct_link_m.txt
+- `10:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_121_WebSearch_expose_localhost_to_internet_without_tailscale_fre.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_123_WebSearch_LSTM_inference_optimization_real-time_gesture_reco.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_122_WebSearch_reduce_latency_real-time_sign_language_recognition.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_126_WebSearch_MediaPipe_Holistic_performance_optimization_reduce.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_124_WebSearch_real-time_sign_language_detection_latency_pipeline.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_125_WebSearch_ONNX_Runtime_LSTM_inference_speed_Python_faster_th.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_127_WebSearch_TTS_text_to_speech_lowest_latency_real-time_under_.txt
+- `11:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_128_WebSearch_pre-cache_TTS_audio_files_sign_language_common_wor.txt
+- `11:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/6670b9c8-268_129_WebSearch_MediaPipe_model_complexity_0_vs_1_speed_difference.txt
+
+### E4E / Sabi `e7527a2b-efc` | 2026-04-12 | 9 files
+
+- `01:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_00_Research_available_ASL_models.txt
+- `01:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_01_Fetch_WLASL_300_labels.txt
+- `07:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_02_Research_fastest_tunneling_options.txt
+- `07:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_03_Explore_current_app_architecture.txt
+- `07:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_04_Research_aiortc_WebRTC_Flask.txt
+- `07:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_05_Design_WebRTC_migration_plan.txt
+- `11:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_06_Research_ASL_detection_latency.txt
+- `11:38` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_07_Research_tools_for_sharing_Flask_app.txt
+- `11:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/e7527a2b-efc_08_Research_optimization_tools_for_ASL_pipeline.txt
+
+### E4E / Sabi `05c61662-492` | 2026-04-12 | 14 files
+
+- `03:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_00_Research_Cerebras_for_ASL_app.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_01_WebSearch_Cerebras_AI_inference_API_2026_pricing_free_tier_d.txt
+- `04:09` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_02_WebSearch_Cerebras_inference_API_Python_SDK_integration_exam.txt
+- `06:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_03_WebSearch_SignVLM_ASL_fine-tune_custom_data_WLASL_2026_githu.txt
+- `06:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_04_WebSearch_CorrNet_sign_language_recognition_fine-tune_custom.txt
+- `11:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_08_WebSearch_best_ASL_sign_language_recognition_API_SDK_integra.txt
+- `11:49` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_10_WebSearch_Sign-Speak_ASL_recognition_architecture_how_real-t.txt
+- `11:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_11_WebSearch_real-time_sign_language_recognition_low_latency_ar.txt
+- `11:50` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_13_WebSearch_how_does_real-time_sign_language_translation_work_.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_15_WebSearch_impact_of_ASL_sign_language_translation_technology.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_14_WebSearch_economic_impact_solving_deaf_communication_barrier.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_16_WebSearch_deaf_people_access_technology_communication_barrie.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_17_WebSearch_WHO_cost_unaddressed_hearing_loss_980_billion_retu.txt
+- `17:17` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/05c61662-492_18_WebSearch_deaf_students_literacy_4th_grade_reading_level_edu.txt
+
+### Social Media `6abf9016-437` | 2026-04-20 | 10 files
+
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_00_Agent_loop_architectures.txt
+- `02:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_00_Agent_loop_architectures.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_02_Tool_design_and_MCP_deep-dive.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_02_Tool_design_and_MCP_deep-dive.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_03_Multi-agent_orchestration_patterns.txt
+- `02:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_03_Multi-agent_orchestration_patterns.txt
+- `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_04_Agent_evaluation_and_reliability.txt
+- `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_04_Agent_evaluation_and_reliability.txt
+- `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media/agent-research/6abf9016-437_01_Production_engineering_patterns.txt
+- `02:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Social-Media/agent-research/6abf9016-437_01_Production_engineering_patterns.txt
+
+### Classes `869a6900-9c7` | 2026-04-28 | 27 files
+
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_01_WebSearch_diabolic_loop_bank_sovereign_nexus_Brunnermeier_ES.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_00_WebSearch_cross-border_deposit_insurance_international_fundi.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_02_WebSearch_European_deposit_insurance_scheme_EDIS_funding_mec.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_03_WebSearch_Diamond_Dybvig_deposit_insurance_funding_governmen.txt
+- `18:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_04_WebFetch_httpspersonallseacukreisrpapers16-DLESBiespdf.txt
+- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_06_WebSearch_foreign_holdings_US_Treasury_debt_deposit_insuranc.txt
+- `18:02` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_05_WebSearch_FDIC_orderly_liquidation_Treasury_repayment_uninsu.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_09_WebSearch_lender_of_last_resort_repayment_Bagehot_collateral.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_08_WebSearch_Diamond_Dybvig_model_international_investors_forei.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_07_WebSearch_FDIC_reinsurance_private_deposit_insurance_proposa.txt
+- `18:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_10_WebSearch_IMF_SDR_new_arrangements_to_borrow_financial_safet.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_12_WebSearch_GENIUS_Act_stablecoin_yield_prohibition_interest_h.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_11_WebSearch_stablecoin_emerging_markets_dollar_demand_Argentin.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_14_WebSearch_stablecoin_deposit_insurance_FDIC_pass-through_pro.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_13_WebSearch_dollar_safe_asset_demand_emerging_market_retail_Ca.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_16_WebSearch_stablecoin_USDC_USDT_depeg_SVB_March_2023_Circle_r.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_17_WebSearch_remittance_fees_emerging_market_dollar_stablecoin_.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_15_WebSearch_Argentina_blue_dollar_rate_cepo_capital_controls_r.txt
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_18_WebSearch_stablecoin_yield_emerging_market_user_reward_excha.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_22_WebSearch_stablecoin_demand_US_Treasury_yields_impact_lower_.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_19_WebSearch_dollar_smile_empirical_safe_haven_flight_to_qualit.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_20_WebSearch_stablecoin_emerging_market_deposit_drain_banking_s.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_21_WebSearch_stablecoin_Treasury_demand_Bessent_yield_curve_imp.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_24_WebSearch_retail_dollarization_deposit_outflow_Latin_America.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_23_WebSearch_USDC_USDT_March_2023_redemption_USDT_inflow_USDC_o.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_25_WebSearch_FDIC_moral_hazard_deposit_insurance_bank_risk_taki.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/869a6900-9c7_26_WebSearch_retail_T-bill_access_foreign_nationals_TreasuryDir.txt
+
+### Classes `36d613f8-dc2` | 2026-04-30 | 6 files
+
+- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_00_WebSearch_Google_Apps_Script_web_app_add_guest_to_calendar_e.txt
+- `04:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_01_WebSearch_Google_Apps_Script_doGet_doPost_web_app_deploy_exe.txt
+- `05:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_02_WebFetch_httpsgithubcomnspadygoogle-calendar-mcp.txt
+- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_04_WebSearch_Calendar_MCP_API_Google_Cloud_Marketplace_remote_M.txt
+- `05:18` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_03_WebSearch_calendarmcpgoogleapiscom_remote_MCP_server_documen.txt
+- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/36d613f8-dc2_05_WebFetch_httpsdevelopersgooglecomworkspacecalendarapiguidesc.txt
+
+### Classes `ed1f260a-8aa` | 2026-05-01 | 22 files
+
+- `03:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_01_WebSearch_ProQuest_TDM_Studio_API_programmatic_access_Jupyte.txt
+- `03:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_02_WebSearch_TDM_Studio_workbench_Jupyter_remote_access_SSH_com.txt
+- `03:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_00_WebSearch_TDM_Studio_ProQuest_run_notebook_locally_export_da.txt
+- `03:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_03_WebSearch_TDM_Studio_Wesleyan_WSJ_Wall_Street_Journal_datase.txt
+- `03:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_04_WebFetch_httpsproquestlibguidescomtdmstudioexportdata.txt
+- `03:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_06_WebSearch_ProQuest_TDM_Studio_supplemental_terms_allowed_ext.txt
+- `03:14` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_05_WebSearch_TDM_Studio_download_notebook_ipynb_file_local_mach.txt
+- `03:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_08_WebSearch_TDM_Studio_paste_not_working_clipboard_Mac_browser.txt
+- `03:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_09_WebSearch_Apache_Guacamole_AWS_WorkSpaces_clipboard_paste_Ma.txt
+- `03:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_07_WebSearch_ProQuest_TDM_Studio_cannot_paste_clipboard_Safari_.txt
+- `03:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_11_WebSearch_TDM_Studio_copy_paste_workbench_keyboard_shortcut_.txt
+- `03:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_10_WebSearch_Safari_clipboard_permission_site_denied_paste_Mac_.txt
+- `03:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_12_WebSearch_TDM_Studio_copy_text_out_clipboard_local_download_.txt
+- `03:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_13_WebSearch_copy_from_JupyterLab_cell_to_local_clipboard_not_w.txt
+- `03:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_14_WebSearch_Atlas_browser_OpenAI_clipboard_copy_paste_website_.txt
+- `03:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_15_WebSearch_GDELT_Nigeria_news_events_API_tutorial_Python_2026.txt
+- `03:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_16_WebSearch_free_news_API_article_archive_academic_research_Ni.txt
+- `03:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_17_WebSearch_Wesleyan_library_Nexis_Uni_Factiva_ProQuest_news_a.txt
+- `06:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_18_WebSearch_PRS_Group_ICRG_composite_risk_score_2024_Nigeria_S.txt
+- `06:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_19_WebSearch_Hassan_2023_country_risk_FDI_Nigeria_South_Africa_.txt
+- `06:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_20_WebSearch_student_data_science_presentation_structure_storyt.txt
+- `07:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/ed1f260a-8aa_21_WebSearch_Gemini_API_JSON_mode_python_2026_simple_structured.txt
+
+### E4E / Sabi `8269da7e-28a` | 2026-05-02 | 25 files
+
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_01_WebSearch_voice_MCP_server_Claude_Code_speech-to-text_conver.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_00_WebSearch_Claude_Code_voice_mode_MCP_server_VS_Code_extensio.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_02_WebFetch_httpsgetvoicemodecom.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_03_WebFetch_httpsgithubcomjohnmatthewtennantmcp-voice-hooks.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_04_WebFetch_httpsgithubcommbaileyvoicemode.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_05_WebFetch_httpsgithubcomjochiangvoice-mcp.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_06_WebFetch_httpsmarketplacevisualstudiocomitemsitemNameFultonm.txt
+- `19:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_07_WebFetch_httpsdocsbswencomblog2026-04-23-claude-code-extensi.txt
+- `19:33` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_08_WebSearch_Google_Antigravity_IDE_agentic_coding_download_mac.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_10_WebSearch_Google_Antigravity_MCP_server_support_model_contex.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_11_WebSearch_Google_Antigravity_IDE_VS_Code_fork_extensions_com.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_12_WebSearch_Antigravity_IDE_voice_input_speech_text_microphone.txt
+- `19:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_09_WebSearch_Antigravity_IDE_install_MCP_server_configuration_s.txt
+- `19:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_14_WebFetch_httpsmediumcomsimonescigliuzzithe-ai-cto-mastering-.txt
+- `19:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_15_WebFetch_httpsantigravitygoogledocsmcp.txt
+- `19:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_13_WebFetch_httpsgithubcomfsystemwebbrowser-voice-control.txt
+- `20:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_17_WebSearch_Claude_Max_plan_200_monthly_limits_Claude_Code_usa.txt
+- `20:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_16_WebSearch_Claude_subscription_pricing_2026_Pro_Max_20_200_fe.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_18_WebSearch_iPad_terminal_app_run_Claude_Code_CLI_2026.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_20_WebSearch_iPhone_terminal_SSH_into_Mac_run_Claude_Code_remot.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_19_WebSearch_Claude_Code_remote_SSH_iPad_iPhone_terminal_a-shel.txt
+- `21:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_21_WebSearch_VoiceMode_Claude_Code_SSH_remote_server_iPad_mobil.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_22_WebFetch_httpscodeclaudecomdocsenremote-control.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_23_WebFetch_httpsdevtojagafarmthe-300-gram-ai-coding-rig-ipad-m.txt
+- `21:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/8269da7e-28a_24_WebFetch_httpspetesenamediumcomhow-to-run-claude-code-from-y.txt
+
+### E4E / Sabi `675a2f57-c61` | 2026-05-03 | 7 files
+
+- `20:20` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_00_WebFetch_httpswwwassociatesforchangeorgnew-reports-2022Econo.txt
+- `20:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_02_WebSearch_Nigeria_Living_Standards_Survey_NLSS_2018_2019_ret.txt
+- `20:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_01_WebSearch_Aromolaran_2004_wage_returns_to_schooling_in_Niger.txt
+- `20:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_03_WebSearch_returns_to_education_Nigeria_2018_2019_2020_2021_M.txt
+- `20:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_04_WebFetch_httpsdocsizaorgdp3097pdf.txt
+- `20:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_06_WebFetch_httpswwwacademiaedu11627192Estimates_of_Mincerian_r.txt
+- `20:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/675a2f57-c61_05_WebSearch_Psacharopoulos_Patrinos_2004_2011_returns_to_inves.txt
+
+### Classes `6efb2481-b89` | 2026-05-05 | 65 files
+
+- `22:01` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_00_Find_Nigeria_OOSC_data_sources.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_01_Find_Eregha_paper_data_sources.txt
+- `01:05` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_02_Research_Nigeria_oil-cycle_confounding.txt
+- `01:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_03_Research_ARDL_LR_sign_flip_causes.txt
+- `16:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_04_State-level_Nigeria_OOSC__GDP_data_search.txt
+- `21:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_05_UNESCO_OOSC_methodology_research.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_06_WebFetch_httpswwwunescoorgeneducationviewoutofschoolestimate.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_07_WebSearch_UNESCO_GEM_Report_VIEW_out-of-school_children_meth.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_08_WebFetch_httpseducation-estimatesorgout-of-schoolmethods.txt
+- `22:03` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_09_WebFetch_httpsdataworldbankorgindicatorSEPRMNENRlocationsNG.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_11_WebSearch_out-of-school_rate_Bayesian_hierarchical_model_GEM.txt
+- `22:04` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_10_WebFetch_httpswwwunescoorgeneducationviewoutofschool.txt
+- `22:08` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_12_WebFetch_httpswwwunescoorggem-reportsitesdefaultfilesmediasf.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_13_WebSearch_historical_out-of-school_children_data_1960_UNESCO.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_14_WebSearch_Barro_Lee_educational_attainment_dataset_1950_coun.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_15_WebFetch_httpsbarroleegithubioBarroLeeDataSetLongTermDatahtm.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_16_WebFetch_httpsourworldindataorgdata-insightsa-century-of-pro.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_18_WebSearch_Lee_Lee_2016_long-run_educational_attainment_1820_.txt
+- `22:36` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_17_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
+- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_19_WebFetch_httpsourworldindataorggrapherprimary-enrollment-sel.txt
+- `22:37` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_20_WebFetch_httpsbarroleegithubioBarroLeeDataSetDataLeeLeehtml.txt
+- `23:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_21_Wage_premium_methodology_research.txt
+- `23:23` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_22_WebSearch_56_billion_Nigeria_out-of-school_children_GDP_cost.txt
+- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_24_WebFetch_httpswwwassociatesforchangeorgnew-reports-2022Econo.txt
+- `23:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_23_WebSearch_CSEA_Economic_and_Social_Costs_out-of-school_Niger.txt
+- `01:15` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_25_WebSearch_Thomas_Burnett_2014_wage_premium_30_Psacharopoulos.txt
+- `01:16` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_26_WebFetch_httpsdocsizaorgdp3097pdf.txt
+- `01:35` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_27_Synthetic_control_research_for_Nigeria_OOSC_paper.txt
+- `02:48` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_28_Why_1970_panel_flips_Nigeria_positive.txt
+- `21:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_29_Non-linearity_in_education-growth_regressions.txt
+- `00:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_30_MRW_paper_style_and_structure.txt
+- `00:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_31_Stylized_facts_conventions_in_econ_papers.txt
+- `05:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_32_Deep_research_on_synthetic_control_method.txt
+- `05:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_33_SCM_papers_for_Nigeria_SSA_and_oil_exporters.txt
+- `05:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_34_WebSearch_synthetic_control_method_Nigeria_Boko_Haram_OR_oil.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_35_WebSearch_synthetic_control_Nigeria_economic_sitenberorg_OR_.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_36_WebSearch_synthetic_control_Boko_Haram_Nigeria_conflict_econ.txt
+- `05:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_37_WebFetch_httpsdocuments1worldbankorgcurateden168241636640474.txt
+- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_38_WebSearch_spillover_economic_effects_Boko_Haram_synthetic_co.txt
+- `05:30` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_39_WebSearch_synthetic_control_Universal_Primary_Education_Ugan.txt
+- `05:39` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_40_WebSearch_synthetic_control_method_Africa_GDP_oil_exporter_O.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_41_WebSearch_Does_the_resource_curse_exist_Ghana_synthetic_cont.txt
+- `05:40` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_42_WebFetch_httpsmpraubuni-muenchende1270641MPRA_paper_127064pd.txt
+- `05:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_43_WebSearch_synthetic_control_Nigeria_education_OR_enrollment_.txt
+- `05:46` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_44_WebSearch_synthetic_control_Nigeria_GDP_economic_growth_work.txt
+- `05:47` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_45_WebSearch_synthetic_control_oil_curse_OR_oil_discovery_GDP_p.txt
+- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_46_Deep_SCM_literature_for_hard_cases.txt
+- `21:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_47_WebSearch_synthetic_control_Iran_sanctions_GDP_oil_donor_poo.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_48_WebSearch_synthetic_control_Norway_oil_Mideksa_natural_resou.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_49_WebSearch_augmented_synthetic_control_empirical_application_.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_50_WebSearch_synthetic_control_Venezuela_OR_Saudi_Arabia_oil_ec.txt
+- `21:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_51_WebSearch_synthetic_control_Dutch_disease_OR_resource_curse_.txt
+- `21:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_52_WebSearch_synthetic_difference-in-differences_application_co.txt
+- `21:21` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_53_WebSearch_synthetic_control_Brazil_oil_discovery_GDP_2024_me.txt
+- `21:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_54_WebSearch_synthetic_control_Nigeria_oil_GDP_per_capita_or_gr.txt
+- `21:59` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_55_WebSearch_synthetic_control_Nigeria_Boko_Haram_OR_oil_OR_Nai.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_56_WebSearch_synthetic_control_donor_pool_selection_criteria_si.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_57_WebFetch_httpsconferencenberorgconfer2021SI2021Abadie_2021pd.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_58_WebSearch_Abadie_2021_JEL_donor_pool_interpolation_bias_simi.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_59_WebSearch_synthetic_control_Africa_OR_developing_country_don.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_60_WebSearch_synthetic_control_Nigeria_currency_devaluation_OR_.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_61_WebSearch_synthetic_control_SSRN_OR_repec_Nigeria_economic_s.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_62_WebSearch_synthetic_control_sub-Saharan_Africa_population-si.txt
+- `22:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_63_WebSearch_synthetic_control_Nigeria_treated_unit_case_study_.txt
+- `22:13` /Users/naomiivie/.claude/projects/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/agent-research/6efb2481-b89_64_WebSearch_synthetic_control_Algeria_OR_Iraq_OR_Libya_OR_Indo.txt
+
+### Class on Time `a8c172f1-a7d` | 2026-05-10 | 9 files
+
+- `00:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_00_Hunt_for_reusable_credentials.txt
+- `01:42` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_01_Cute_commitment_app_UI_research.txt
+- `01:54` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_02_Industry_research_on_key_features.txt
+- `02:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_04_WebFetch_httpsvercelcomdocsmonorepos.txt
+- `02:53` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_03_WebFetch_httpsvercelcomdocscron-jobsusage-and-pricing.txt
+- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_05_WebFetch_httpsvercelcomdocsdeployment-protection.txt
+- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_06_WebFetch_httpsvercelcomdocsprojectsenvironment-variables.txt
+- `02:55` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_07_WebFetch_httpsdocsgithubcomenactionswriting-workflowschoosin.txt
+- `04:06` /Users/naomiivie/.claude/projects/-Users-naomiivie-Class-on-Time/agent-research/a8c172f1-a7d_08_Deep_research_Go_landing_page.txt
+
+### Downloads App Sleep `e77790f1-fc4` | 2026-06-05 | 4 files
+
+- `20:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_00_Explore_macOS_ShutdownApp.txt
+- `20:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_02_Explore_iOS_SleepWelliOS_app.txt
+- `20:19` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_01_Explore_Xcode_project_config.txt
+- `20:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Downloads-App-Sleep/agent-research/e77790f1-fc4_03_Study_bethel_email-agent.txt
+
+### kai `34417be3-713` | 2026-06-18 | 3 files
+
+- `18:31` /Users/naomiivie/.claude/projects/-Users-naomiivie-kai/agent-research/34417be3-713_00_Map_Kais_current_architecture.txt
+- `15:29` /Users/naomiivie/.claude/projects/-Users-naomiivie-kai/agent-research/34417be3-713_01_WebSearch_Christian_lofi_instrumental_Spotify_playlist_opens.txt
+- `17:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-kai/agent-research/34417be3-713_02_Recover_all_Kai_requirements__Sabi_pipeline.txt
+
+### Social Media `e2345bc4-61a` | 2026-06-18 | 4 files
+
+- `19:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media-Ed-it/agent-research/e2345bc4-61a_01_Mine_June_Edit_build_session.txt
+- `19:22` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media-Ed-it/agent-research/e2345bc4-61a_00_Mine_March_DaVinci__research_sessions.txt
+- `19:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media-Ed-it/agent-research/e2345bc4-61a_03_Research_AI_video-editing_agent_landscape_2026.txt
+- `19:24` /Users/naomiivie/.claude/projects/-Users-naomiivie-Social-Media-Ed-it/agent-research/e2345bc4-61a_02_Research_composable_video-agent_building_blocks.txt
+
+### E4E / Sabi `a4ea39cd-2bd` | 2026-06-27 | 4 files
+
+- `18:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/a4ea39cd-2bd_01_Research_VoiceMode_mic_throttling.txt
+- `18:58` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/a4ea39cd-2bd_00_Inspect_VoiceMode_local_state.txt
+- `19:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/a4ea39cd-2bd_03_Research_Antigravity_combobulating_slowness.txt
+- `19:12` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/a4ea39cd-2bd_02_Inspect_Antigravity_local_logs_and_state.txt
+
+### Cortex `18649100-960` | 2026-06-27 | 4 files
+
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/18649100-960_00_Map_current_cortex_codebase_state.txt
+- `19:00` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/18649100-960_00_Map_current_cortex_codebase_state.txt
+- `20:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/18649100-960_01_Confirm_Claude_Code_in_desktop_app.txt
+- `20:43` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/18649100-960_01_Confirm_Claude_Code_in_desktop_app.txt
+
+### E4E / Sabi `960e5418-9a1` | 2026-06-29 | 7 files
+
+- `15:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_00_WebSearch_Lagos_State_Commissioner_of_Education_2026_Tolani_.txt
+- `15:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_02_WebSearch_Africa_Ministry_of_Education_AI_tutoring_procureme.txt
+- `15:56` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_01_WebSearch_World_Bank_HOPE-EDU_Nigeria_implementation_2026_st.txt
+- `16:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_04_WebSearch_vLLM_concurrent_users_Llama_31_8B_H100_throughput_.txt
+- `16:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_05_WebSearch_Whisper_large-v3_GPU_concurrent_streams_capacity_R.txt
+- `16:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_03_WebSearch_Hetzner_RTX_4090_dedicated_GPU_server_pricing_2026.txt
+- `16:41` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/960e5418-9a1_06_WebSearch_RunPod_Lambda_Labs_H100_A100_monthly_pricing_2026_.txt
+
+### E4E / Sabi `b5587e6f-506` | 2026-07-07 | 4 files
+
+- `19:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_01_WebSearch_IVR_post-call_survey_completion_rate_best_practice.txt
+- `19:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_00_WebSearch_voice_survey_abandonment_callers_hang_up_before_su.txt
+- `19:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_02_WebSearch_post-call_survey_design_ask_upfront_commitment_tec.txt
+- `19:57` /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/agent-research/b5587e6f-506_03_WebFetch_httpswwwverintcomblogtop-10-best-practices-for-opti.txt
+
+### Cortex `61a29b5c-91b` | 2026-07-14 | 6 files
+
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/61a29b5c-91b_00_Map_messaging_feature_contracts.txt
+- `22:10` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/61a29b5c-91b_00_Map_messaging_feature_contracts.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/61a29b5c-91b_01_Map_calendaractionsalways-on_contracts.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/61a29b5c-91b_01_Map_calendaractionsalways-on_contracts.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/61a29b5c-91b_02_Map_relationshipsattentionmemory_contracts.txt
+- `22:11` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/61a29b5c-91b_02_Map_relationshipsattentionmemory_contracts.txt
+
+### Cortex `7e7962d0-dfa` | 2026-07-14 | 8 files
+
+- `22:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e7962d0-dfa_01_WebSearch_premium_onboarding_UX_best_practices_AI_assistant_.txt
+- `22:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e7962d0-dfa_01_WebSearch_premium_onboarding_UX_best_practices_AI_assistant_.txt
+- `22:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e7962d0-dfa_00_WebSearch_SaaS_onboarding_OAuth_connect_account_drop-off_red.txt
+- `22:25` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e7962d0-dfa_00_WebSearch_SaaS_onboarding_OAuth_connect_account_drop-off_red.txt
+- `22:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e7962d0-dfa_03_WebFetch_httpsproductledcomblogai-onboarding.txt
+- `22:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e7962d0-dfa_03_WebFetch_httpsproductledcomblogai-onboarding.txt
+- `22:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex/agent-research/7e7962d0-dfa_02_WebSearch_AI_personal_assistant_onboarding_learns_you_showin.txt
+- `22:26` /Users/naomiivie/.claude/projects/-Users-naomiivie-cortex-web/agent-research/7e7962d0-dfa_02_WebSearch_AI_personal_assistant_onboarding_learns_you_showin.txt

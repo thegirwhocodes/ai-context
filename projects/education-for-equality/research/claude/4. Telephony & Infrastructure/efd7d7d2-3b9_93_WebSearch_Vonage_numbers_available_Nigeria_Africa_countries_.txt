@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vonage numbers available Nigeria Africa countries list site:api.support.vonage.c
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:01:07 UTC
+========================================================================
+
+Search query: Vonage numbers available Nigeria Africa countries list site:api.support.vonage.com OR site:developer.vonage.com
+
+----------------------------------------
+
+Web search results for query: "Vonage numbers available Nigeria Africa countries list site:api.support.vonage.com OR site:developer.vonage.com"
+
+Links: [{"title":"Which countries does Vonage have numbers in? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204015043-Which-countries-does-Vonage-have-numbers-in"},{"title":"Nigeria SMS Features and Restrictions – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204017133-Nigeria-SMS-Features-and-Restrictions"},{"title":"Voice Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011761808-Voice-Numbers-Features-Overview"},{"title":"SMS + Voice Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011612267-SMS-Voice-Numbers-Features-Overview"},{"title":"Africa – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/sections/9182398102044-Africa"},{"title":"SMS Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011451687-SMS-Numbers-Features-Overview"},{"title":"How can I receive inbound SMS in countries where Vonage virtual numbers are not available? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/205441588-How-can-I-receive-inbound-SMS-in-countries-where-Vonage-virtual-numbers-are-not-available"},{"title":"Country-Specific Features and Restrictions – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/sections/200622473-Country-Specific-Features-and-Restrictions"},{"title":"Toll-Free Numbers Features Overview – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/115011767768-Toll-Free-Numbers-Features-Overview"},{"title":"How many countries and networks can I reach with Vonage Outbound SMS? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204014533-How-many-countries-and-networks-can-I-reach-with-Vonage-Outbound-SMS"}]
+
+Based on the web search results from Vonage's official API support documentation, here's what I found:
+
+**Nigeria Availability:**
+Vonage has SMS features available for Nigeria (country code 234), located in the Africa region.
+
+**General Number Availability:**
+Vonage provides SMS and voice numbers in multiple countries, and the search results indicate they have comprehensive documentation for different number types:
+
+- SMS and Voice combined numbers are available by country
+- Voice numbers features are listed by country
+- SMS numbers features are listed by country
+
+**Africa Coverage:**
+Vonage has documentation for multiple African countries including Central African Republic, Chad, Comoros, Democratic Republic of Congo, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, and Gambia, among others.
+
+**For Countries Without Direct Numbers:**
+If you need to receive SMS in a country that isn't listed, you can use numbers from countries that have international reach, with Sweden recommended for maximum international inbound reach.
+
+For the complete and detailed list of all African countries where Vonage has numbers available, you would need to visit the specific feature overview pages on their API support site, as the search results reference tables that aren't fully displayed here.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

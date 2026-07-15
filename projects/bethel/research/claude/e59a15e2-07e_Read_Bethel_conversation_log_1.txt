@@ -1,0 +1,149 @@
+========================================================================
+AGENT RESEARCH: Read Bethel conversation log 1
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-18 04:02:56 UTC
+========================================================================
+
+Task given to agent: Read the conversation log file at /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/efd7d7d2-3b94-4e82-bb2d-7a045a3e9736.jsonl
+
+This is a 17MB file so it will be very long. Read as much as you can, focusing on understanding:
+1. What is Bethel? What is its purpose and vision?
+2. What architecture/tech stack was decided on?
+3. What features and functionality were planned?
+4. Any key decisions made about the project
+
+Read the file in chunks - start from the beginning and wor
+
+----------------------------------------
+
+I now have a comprehensive picture. Here is the full summary:
+
+---
+
+## Comprehensive Summary: Bethel
+
+### 1. What is Bethel? Purpose and Vision
+
+**Bethel** is a mobile app that combines Bible reading, dream journaling, and AI-powered interpretation into one connected spiritual journey. The name comes from Genesis 28 -- "House of God" -- where Jacob had his dream from God and set up a memorial stone. The app does exactly what that story represents: record dreams from God and build a memorial of what He has said.
+
+**Core tagline/positioning**: "The first app that treats your dreams and Bible reading as one connected spiritual journey."
+
+**Design ethos**: "Opening a premium leather journal by candlelight in a quiet room." It should feel like a luxury tech product for the spiritually curious -- NOT a church app. Zero religious iconography (no crosses, doves, praying hands).
+
+**Origin**: The name "Bethel" was suggested during a brainstorming session on March 12, 2026 in the Education for Equality conversation log (line 2206 of the 17MB file). It was one of several options (Selah, Manna, Rhema, Dayspring, Shekinah, Wellspring, Peniel) but was chosen because it perfectly matches the product's purpose.
+
+**Founder**: Naomi Ivie (Wesleyan University student, also founder of Education for Equality/Sabi).
+
+---
+
+### 2. Architecture/Tech Stack
+
+**4-Layer AI Architecture:**
+1. **Personal Context (RAG)** -- user's dream journal, past interpretations, personal symbol dictionary
+2. **Bethel LoRA** -- fine-tuned adapter (~16-20MB) on Phi-3.5 Mini (3.8B params), trained on Bible + Hagin + Kuhlman + Jackson + Virkler + dream frameworks
+3. **Biblical Knowledge Base (RAG)** -- full NKJV (31,102 verses) in Supabase pgvector with 384-dim embeddings (all-MiniLM-L6-v2), dream symbol dictionary, cross-references
+4. **Cloud Model Fallback** -- Claude Haiku API (~$0.0045/call) for complex reasoning
+
+**App Platform**: React Native / Expo (the existing project uses Expo)
+
+**Backend/Database**: Supabase with pgvector. Tables for `bible_verses`, `dream_symbols`, `user_dreams`, `user_notes`, all with vector embeddings.
+
+**Serving**: LoRAX on Hetzner RTX 4000 SFF Ada (20GB VRAM), sharing with existing Sabi infrastructure. Additional cost for Bethel: ~$25/month.
+
+**Future on-device inference**: CoreML/MLX on iOS (iPhone 15 Pro+), llama.cpp on Android. Phi-3.5 Mini INT4 (~2GB) + 16MB LoRA adapter.
+
+**Training data validation pipeline**: Every theological claim scored as Aligned, Extrapolated, Testimony, or Contradicts against NKJV scripture. Contradicting items excluded entirely. Testimonies labeled as such (not doctrinal claims).
+
+---
+
+### 3. Features and Functionality
+
+**Bible Reader:**
+- Full chronological Bible reading (actual text reordered, not just a reading plan)
+- Premium e-reader quality (Kindle/Apple Books comparable)
+- Auto-hiding chrome, swipe chapter navigation
+- Three reading themes: Midnight, Warm Night, OLED
+- Highlights in 4 colors, notes, cross-references in bottom sheets
+- Font: Literata at 18px default, adjustable 14-28px, line-height 1.75
+
+**Dream Journal:**
+- Text entry with title, body, tags, mood picker (abstract colored circles, not emoji), clarity rating, Bible verse linking
+- Auto-save, moon phase display
+- AI-powered interpretation grounded in scripture via RAG
+- Dream pattern matching across user's history
+- Dream-to-scripture connection (e.g., dreaming of a ladder surfaces Genesis 28)
+- LLM-driven dream resurfacing
+- Jackson's 20 dream categories applied as classification
+
+**AI Chat ("Ask Bethel"):**
+- Chat interface with scripture citation blocks
+- Suggested prompts
+- Avatar: small abstract stone/pillar or star icon in gold (not a face, robot, or cross)
+- "Thinking" state: gentle lavender pulsing glow, "Bethel is reflecting..."
+- Every response includes at least one scripture reference
+
+**Home Screen:**
+- Personalized greeting with date and moon phase
+- Today's Word (daily scripture)
+- Quick actions: Continue Reading, Record a Dream, Ask Bethel, Today's Devotional
+- Recent dream entries and reading streak
+
+**Daily Devotional:**
+- Kenneth Hagin's 3-part structure: Scripture > Teaching > Confession
+- Faith confessions (spoken declarations)
+
+**Navigation**: 5 tabs -- Home, Bible, Journal, Bethel AI, Profile
+
+---
+
+### 4. Key Decisions
+
+**Theological Design Philosophy:**
+- "Grounded like Hagin" -- always points to Scripture, systematic, teaches principles
+- "Warm like Kuhlman" -- humble, reverent toward the Holy Spirit, never clinical
+- Never preachy -- practical, not performative
+- Inward witness positioned as primary guidance; dreams are valid but secondary
+- Bible (NKJV) is ground truth that validates all other sources
+- Denominational neutrality (Pentecostal, Reformed, Anglican, independent)
+- Testimony labeled as testimony, not doctrine
+- Dream interpretations must always cite scripture and acknowledge subjectivity
+
+**Design System:**
+- Warm gold + deep blue-black palette: `#D4A853` gold on `#0C0C14` base
+- Lavender (`#A78BFA`) for dream features, teal (`#5EEAD4`) for success states
+- Never pure black/white -- warm off-white (`#E8E4DE`) on warm near-black
+- Glassmorphism for floating elements
+- No social media pressure, no aggressive CTAs, free (no subscriptions, no ads)
+
+**Bethel vs. Cortex decision**: Bethel was originally considered as either a separate project or a "vertical within Cortex" (the personal AI agent project). In the early discussions, Claude recommended building Cortex first as the bigger startup play. However, by March 18, 2026, Naomi decided to focus on Bethel as its own standalone project, instructing Claude to "delete [the existing codebase] and start building bethel proper this time."
+
+**Research completed**: 7 comprehensive research documents totaling ~200KB:
+- Biblical research (52+ dreams/visions cataloged from Genesis to Revelation)
+- Kenneth Hagin research (hierarchy of divine guidance, Faith Food devotional structure)
+- Kathryn Kuhlman research (Holy Spirit theology, surrender/yielding)
+- Dream management research (12 parts covering Jackson, Virkler, Kayembe, Ike Okafor, Beale, Brewer, Spurgeon, C.S. Lewis, Wigglesworth)
+- Competitive analysis (YouVersion, Glorify, Logos, Bible Project, Dreamnl, etc.)
+- UI/UX research (full dark-mode design system, wireframes, animations)
+- LoRA architecture (4-layer AI spec, training pipeline, serving infrastructure, cost analysis)
+
+**6-phase implementation plan:**
+- Phase 1 (Weeks 1-2): Parse NKJV, process research files, generate ~8,500 training examples
+- Phase 2 (Week 3): Fine-tune Phi-3.5 Mini with QLoRA
+- Phase 3 (Weeks 3-4): Build RAG pipeline with pgvector Bible embeddings
+- Phase 4 (Week 4): Deploy LoRAX on Hetzner GPU server
+- Phase 5 (Weeks 5-6): Build Expo app with chat, journal, and Bible reader
+- Phase 6 (Ongoing): Monthly retraining loop
+
+**Naomi's own plan notes** (from `/Users/naomiivie/bethel/Bethel naomi plan.md`):
+- Core LLM trained on the Bible and Christian dream interpretation experts
+- Agentic layer where the LLM creates tasks itself
+- Build dependencies for said agentic layer
+- Long-term: train LoRA on the Bible for source accuracy validation; train on the Book of Daniel for cross-book pattern recognition (symbols, etc.)
+agentId: a56de1fbac65274f2 (use SendMessage with to: 'a56de1fbac65274f2' to continue this agent)
+<usage>total_tokens: 102927
+tool_uses: 17
+duration_ms: 466324</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Twilio Africa's Talking Nigeria voice API SMS during call feature phone USSD int
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:03:39 UTC
+========================================================================
+
+Search query: Twilio Africa's Talking Nigeria voice API SMS during call feature phone USSD integration
+
+----------------------------------------
+
+Web search results for query: "Twilio Africa's Talking Nigeria voice API SMS during call feature phone USSD integration"
+
+Links: [{"title":"Two-way Communication for Humanitarian Operations with USSD in Twilio Flex | Twilio","url":"https://www.twilio.com/en-us/blog/communication-humanitarian-operations-ussd-flex"},{"title":"Africa's Talking vs Twilio: SMS Provider Comparison [2026]","url":"https://www.courier.com/integrations/compare/africas-talking-vs-twilio"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking · GitHub","url":"https://github.com/AfricasTalkingLtd"},{"title":"Nigeria: SMS Guidelines | Twilio","url":"https://www.twilio.com/en-us/guidelines/ng/sms"},{"title":"Countries supported by Africa's Talking USSD API and Pricing","url":"https://helloduty.com/blogs/countries-supported-by-africas-talking-ussd-api"},{"title":"8 Best Twilio Alternatives & Competitors (Feb 2026)","url":"https://www.courier.com/integrations/alternatives/twilio"},{"title":"What are the Africa's Talking API endpoints ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2232953-what-are-the-africa-s-talking-api-endpoints"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/sms/overview"},{"title":"USSD API – Build mobile apps accessible everywhere | Africa’s Talking","url":"https://africastalking.com/ussd-api"}]
+
+Based on the search results, here's what I found regarding Twilio, Africa's Talking, Nigeria voice API, SMS, and USSD integration:
+
+## Africa's Talking's API Capabilities
+
+Africa's Talking provides SMS, USSD, Voice, Airtime and Mobile Data APIs that developers can use to build scalable businesses. Through their platform, companies can integrate SMS, USSD, voice, and airtime and data into their applications, streamlining customer engagement and transaction processes.
+
+## USSD and SMS Integration
+
+USSD is a communication protocol that connects mobile devices directly and in real-time to network operators and service providers like Africa's Talking. USSD is extensively used in Nigeria for services like free callback services (dial *121* number #).
+
+The two technologies complement each other well: USSD is similar to SMS in that it can send messages, but unlike SMS, USSD creates a real-time connection and enables two-way communication with immediate questions and answers.
+
+## API Access and Endpoints
+
+Africa's Talking provides API endpoints for SMS, USSD, Payments, Airtime and Voice for both Sandbox and Live environments.
+
+## Twilio's USSD Support
+
+Twilio also supports USSD through its Programmable Messaging API, which connects mobile devices to service providers like Africa's Talking.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

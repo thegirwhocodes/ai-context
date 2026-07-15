@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: ProQuest TDM Studio cannot paste clipboard Safari Chrome remote desktop fix
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:16:14 UTC
+========================================================================
+
+Search query: ProQuest TDM Studio cannot paste clipboard Safari Chrome remote desktop fix
+
+----------------------------------------
+
+Web search results for query: "ProQuest TDM Studio cannot paste clipboard Safari Chrome remote desktop fix"
+
+Links: [{"title":"Clipboard sync for Chrome remote desktop not working · Issue #948 · p0deje/Maccy","url":"https://github.com/p0deje/Maccy/issues/948"},{"title":"How to Enable the Chrome Remote Desktop Copy Paste Function?","url":"https://www.airdroid.com/remote-support/chrome-remote-desktop-copy-paste/"},{"title":"Can't copy and paste with Chrome Remote Desktop web app version. - Google Chrome Community","url":"https://support.google.com/chrome/thread/7931978/can-t-copy-and-paste-with-chrome-remote-desktop-web-app-version?hl=en"},{"title":"New Chrome remote desktop web app problem with cut/paste sync with clipboard - Google Chrome Community","url":"https://support.google.com/chrome/thread/10414375/new-chrome-remote-desktop-web-app-problem-with-cut-paste-sync-with-clipboard?hl=en"},{"title":"Home - TDM Studio - LibGuides at ProQuest","url":"https://proquest.libguides.com/tdmstudio"},{"title":"Easy Tutorial: Use Chrome Remote Desktop to Copy and Paste","url":"https://www.anyviewer.com/how-to/chrome-remote-desktop-copy-paste-2578.html"},{"title":"Why is copy-paste not working from a local to a remote desktop? - Quora","url":"https://www.quora.com/Why-is-copy-paste-not-working-from-a-local-to-a-remote-desktop"},{"title":"Help & Support Using TDM Studio - ProQuest TDM Studio Guide - Library Guides at University of Washington Libraries","url":"https://guides.lib.uw.edu/tdmstudio/help"},{"title":"ProQuest TDM Studio ~ Home","url":"https://tdmstudio.proquest.com/"},{"title":"Create a TDM Studio Account - ProQuest TDM Studio Guide - Library Guides at University of Washington Libraries","url":"https://guides.lib.uw.edu/tdmstudio/register"}]
+
+I found results about clipboard/paste issues with Chrome Remote Desktop and ProQuest TDM Studio, but the search results don't contain specific information about a ProQuest TDM Studio clipboard paste issue in Safari or Chrome when using remote desktop connections.
+
+The results do show general Chrome Remote Desktop copy/paste troubleshooting steps, such as finding the "Enable clipboard synchronization" option and clicking "Allow" to grant Chrome Remote Desktop access to the clipboard. Additionally, within site settings, you should ensure that both "Clipboard" and "Insecure content" options are set to "Allow".
+
+For specific help with ProQuest TDM Studio technical issues, you can email tdmstudio@clarivate.com and usually receive a response to technical questions within 24 hours.
+
+However, the search results don't contain specific documentation about this particular ProQuest TDM Studio issue with clipboard paste in Safari or Chrome via remote desktop. You may want to contact ProQuest support directly for a more targeted solution.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

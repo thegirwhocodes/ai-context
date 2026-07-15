@@ -1,0 +1,31 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa's Talking free sandbox voice call cost per minute Nigeria naira
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-03 22:08:37 UTC
+========================================================================
+
+Search query: Africa's Talking free sandbox voice call cost per minute Nigeria naira
+
+----------------------------------------
+
+Web search results for query: "Africa's Talking free sandbox voice call cost per minute Nigeria naira"
+
+Links: [{"title":"Africa’s Talking – Pricing","url":"https://africastalking.com/pricing"},{"title":"Voice pricing | Nigeria | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6054867-voice-pricing-nigeria"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africa's Talking Voice Software Pricing, Alternatives & More 2026 | Capterra","url":"https://www.capterra.com/p/10002327/Africas-Talking-Voice/"},{"title":"Africa's Talking Voice Software Reviews, Demo & Pricing - 2025","url":"https://www.softwareadvice.com/voip/africas-talking-voice-profile/"},{"title":"Africa's Talking vs Twilio: SMS Provider Comparison [2026]","url":"https://www.courier.com/integrations/compare/africas-talking-vs-twilio"},{"title":"Call conferencing - Add people to a call efficiently | Africa’s Talking","url":"https://africastalking.com/voice/conference"},{"title":"Premium Voice Revenue Share | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/3058116-premium-voice-revenue-share"},{"title":"How do I get started on the Africa's Talking Sandbox? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1170660-how-do-i-get-started-on-the-africa-s-talking-sandbox"}]
+
+Based on the search results, I found information about Africa's Talking's sandbox environment, but the specific cost per minute for voice calls in Nigeria (in naira) is not detailed in these results. 
+
+The sandbox allows you to create free 2-way SMS short codes, USSD channels, Payments channels, Virtual Voice numbers, and Airtime Distribution resources that you can use to develop and test your mobile communication application on their simulator. This suggests that sandbox voice numbers themselves are free to create.
+
+However, the search results don't provide the specific pricing information for voice calls per minute in Nigeria in naira. For detailed pricing information, I recommend:
+
+1. Visiting Africa's Talking's official pricing page directly at africastalking.com/pricing
+2. Checking their Nigeria-specific voice pricing help article at help.africastalking.com/en/articles/6054867-voice-pricing-nigeria
+
+These sources should contain the current per-minute rates for voice calls in Nigeria.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

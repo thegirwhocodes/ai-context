@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/sr
+Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
+Time: 2026-06-08 21:00:08 UTC
+========================================================================
+
+URL: https://raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/src/Voice.php
+Extraction prompt: Show me the EXACT code that builds the <Record> XML element (both the partial/non-terminal Record with finishOnKey/maxLength, and the terminal Record). I need: (1) the EXACT attribute name and casing for the recording callback URL (is it "callbackUrl", "callBackUrl", or something else?); (2) whether the Say/Play prompt is nested INSIDE the <Record> element or placed separately; (3) the exact attribute names for finishOnKey, maxLength, trimSilence, playBeep. Quote the relevant PHP code verbatim, including the string templates that generate the XML tags.
+
+----------------------------------------
+
+# Record XML Element Analysis
+
+## Terminal Record
+```php
+return '<Record />';
+```
+
+## Partial Record - Attribute Names
+
+The exact attribute names used in the code are:
+
+- `finishOnKey` - `' finishOnKey="'. $finishOnKey .'"'`
+- `maxLength` - `' maxLength="'. $maxLength .'"'`
+- `timeout` - `' timeout="'. $timeout .'"'`
+- `trimSilence` - `' trimSilence="'. $trimSilence .'"'`
+- `playBeep` - `' playBeep="'. $playBeep .'"'`
+- `callBackUrl` - `' callBackUrl="'. $callBackUrl .'"'`
+
+## Critical Bug Found
+
+There is a **typo in the callback URL line**:
+```php
+if (!empty($callBackUrl)) {
+    $getDigitsString .= ' callBackUrl="'. $callBackUrl .'"';
+}
+```
+
+The code uses `$getDigitsString` instead of `$recordString`, meaning the callback URL attribute **never gets added** to the Record element.
+
+## Say/Play Nesting
+
+The code **does not nest** Say or Play elements inside `<Record>`. The buildRecord() method builds only the Record tag itself with attributes. There is no mechanism to include nested prompts.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

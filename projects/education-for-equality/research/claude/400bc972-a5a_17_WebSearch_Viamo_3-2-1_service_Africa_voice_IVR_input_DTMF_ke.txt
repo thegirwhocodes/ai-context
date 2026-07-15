@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Viamo 3-2-1 service Africa voice IVR input DTMF keypad vs speech recognition how
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:06 UTC
+========================================================================
+
+Search query: Viamo 3-2-1 service Africa voice IVR input DTMF keypad vs speech recognition how works
+
+----------------------------------------
+
+Web search results for query: "Viamo 3-2-1 service Africa voice IVR input DTMF keypad vs speech recognition how works"
+
+Links: [{"title":"Viamo 3-2-1 Platform - Digital X Solution","url":"https://digitalx.undp.org/viamo-3-2-1-platform_1.html"},{"title":"Viamo Voice Companion | WFP Innovation","url":"https://innovation.wfp.org/project/viamo-voice-companion"},{"title":"Voice-First Generative AI for Impact: Insights from Viamo’s Ask Viamo Anything pilot in Zambia | Mobile for Development","url":"https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma_resources/voice-first-generative-ai-for-impact-insights-from-viamos-ask-viamo-anything-pilot-in-zambia/"},{"title":"INTERACTIVE VOICE RESPONSE (IVR) HOTLINE","url":"https://fistulacare.org/wp-content/uploads/2021/07/ViamoFC_IVRToolkit_3.21_FINAL.pdf"},{"title":"#Viamo - Digital Made Easy","url":"https://viamo.io/"},{"title":"Ask Viamo Anything - Viamo","url":"https://viamo.io/ask-viamo-anything-ai/"},{"title":"How to build and Interactive Voice Response service. | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6049011-how-to-build-and-interactive-voice-response-service"},{"title":"DTMF and IVR Navigation for Outbound Voice Agents | SIMBA Voice Agents","url":"https://simbavoice.ai/resources/dtmf-and-ivr-navigation-for-outbound-voice-agents"},{"title":"Interactive Voice Response (IVR) | Infobip Docs","url":"https://www.infobip.com/docs/voice-and-video/interactive-voice-response-ivr"},{"title":"How to build a personalized IVR with DTMF and Speech","url":"https://www.enablex.io/insights/how-to-build-a-personalized-ivr-with-dtmf-and-speech/"}]
+
+Based on the web search results, here's information about Viamo 3-2-1 service and how voice IVR input methods work:
+
+## Viamo 3-2-1 Platform Overview
+
+Viamo excels at providing solutions in areas where tech infrastructure is poor, populations are divided by language, and where literacy levels are low. The Viamo 3-2-1 platform is accessible to anyone who has access to a mobile device and leverages SMS and voice technologies to create impact.
+
+Key messages are accessed through a series of listen-and-choose steps, where the user navigates through Interactive Voice Response (IVR) decision trees. Callers navigate menus, play games, take quizzes, schedule call-backs, provide feedback, receive airtime payment, etc.
+
+## DTMF Keypad Input in IVR Systems
+
+IVR systems use dual-tone multi-frequency (DTMF) signals as a line of communication between a phone and a computer, with the computer using a telephony board or card to understand DTMF signals.
+
+DTMF is a way to send digits over a voice channel using two separate tones. The DTMF tones are converted into the corresponding digit using a DTMF decoder, the digits are interpreted, and the appropriate action is taken, such as routing the user to a specific department or providing them with information.
+
+## Speech Recognition Input
+
+Speech recognition is the process of converting spoken words into text using a speech recognition engine. The text is then interpreted, and the action to be taken is determined based on the received input, with the appropriate action taken such as routing the user to a specific department or providing them with information.
+
+## Combining Both Methods
+
+IVR systems might play a menu prompt for DTMF input that lists available options or actions, while for speech recognition input, the system might summarize the user's request. Combining DTMF and speech recognition allows users to choose the interaction method that they prefer, with some users preferring to use DTMF, while others may prefer to speak their commands.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

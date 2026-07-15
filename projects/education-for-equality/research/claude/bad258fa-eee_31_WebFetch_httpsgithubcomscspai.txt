@@ -1,0 +1,28 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/scspai
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:14:30 UTC
+========================================================================
+
+URL: https://github.com/scspai
+Extraction prompt: What repos does SCSP publicly maintain? Are there past hackathon winner submissions hosted there? Any project showcase or recap repos?
+
+----------------------------------------
+
+# SCSP's Public Repositories
+
+Based on the GitHub page, SCSP publicly maintains **2 repositories**:
+
+1. **.github** — The organization's profile repository (1 star, updated Feb 4, 2025)
+
+2. **aiexpo_hack** — Described as the "Official repo for the SCSP x AGI House Hackathon 2025, focused on building AI-driven solutions for national competitiveness" (Python, updated May 5, 2025)
+
+## Regarding Past Hackathon Submissions and Showcases
+
+The page does not indicate that past hackathon winner submissions or project recap repositories are currently hosted in this GitHub organization. The only hackathon-related repository visible is for the 2025 event. There is no mention of archived competitions or showcase repos for previous events.
+
+For additional SCSP projects and resources beyond GitHub, the organization directs visitors to their main website and newsletter on Substack.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

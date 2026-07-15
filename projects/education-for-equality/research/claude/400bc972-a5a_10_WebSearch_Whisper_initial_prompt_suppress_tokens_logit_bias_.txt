@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Whisper initial_prompt suppress_tokens logit bias hotwords number recognition ef
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:13:10 UTC
+========================================================================
+
+Search query: Whisper initial_prompt suppress_tokens logit bias hotwords number recognition effectiveness
+
+----------------------------------------
+
+Web search results for query: "Whisper initial_prompt suppress_tokens logit bias hotwords number recognition effectiveness"
+
+Links: [{"title":"Whisper · Hugging Face","url":"https://huggingface.co/docs/transformers/model_doc/whisper"},{"title":"Whisper: Courtside Edition Enhancing ASR Performance Through LLM-Driven Context Generation","url":"https://arxiv.org/pdf/2602.18966"},{"title":"Whisper — CTranslate2 4.8.1 documentation","url":"https://opennmt.net/CTranslate2/python/ctranslate2.models.Whisper.html"},{"title":"Contextual Biasing to Improve Domain-specific Custom Vocabulary Audio Transcription without Explicit Fine-Tuning of Whisper Model","url":"https://arxiv.org/pdf/2410.18363"},{"title":"Zero-shot Context Biasing with Trie-based Decoding using Synthetic Multi-Pronunciation","url":"https://arxiv.org/pdf/2508.17796"},{"title":"Massive Open-Vocabulary Keyword Spotting","url":"https://arxiv.org/pdf/2606.11279"},{"title":"Prompt Engineering in Whisper. Whisper, an AI model for speech… | by David Cochard | ailia Tech BLOG (EN) | Medium","url":"https://medium.com/axinc-ai/prompt-engineering-in-whisper-6bb18003562d"},{"title":"openai/whisper · Distinguishing between speech and non speech","url":"https://huggingface.co/spaces/openai/whisper/discussions/74"},{"title":"DiCoW: Diarization-Conditioned Whisper for Target Speaker Automatic   Speech Recognition","url":"https://arxiv.org/pdf/2501.00114"},{"title":"MOPSA: Mixture of Prompt-Experts Based Speaker Adaptation for Elderly Speech Recognition","url":"https://arxiv.org/pdf/2505.24224"}]
+
+Based on the search results, here's what I found about Whisper's features related to your query:
+
+## Initial Prompt
+
+Whisper supports an initial_prompt parameter that allows contextual text to be prepended to the decoder's input sequence at inference time. This feature can bias transcription toward "preferred vocabulary, spellings, or styles" by providing relevant text before decoding begins. However, only the last < 224 tokens of the prompt are consumed, which means later tokens exert greater influence than earlier ones.
+
+## Suppress Tokens
+
+suppress_tokens is a list of non-speech tokens that will be used by the logit processor in the generate function. The SupressTokens logit processor will set their log probs to -inf so that they are not sampled.
+
+## Hotwords and Number Recognition
+
+Research on Whisper's ability to recognize rare words shows that a prefix-trie hotword implementation provides substantial improvements in hotword recognition, with significant B-WER reductions observed (19% for test-clean and 22% for test-other). Additionally, contextual biasing replaces history tokens with a custom prompt containing hotwords detected by custom mechanisms.
+
+These mechanisms allow Whisper to be guided toward better recognition of domain-specific vocabulary and rare words through prompting and token suppression techniques.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

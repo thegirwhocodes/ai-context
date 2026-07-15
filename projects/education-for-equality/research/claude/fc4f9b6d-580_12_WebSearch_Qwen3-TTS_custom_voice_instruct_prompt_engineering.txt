@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qwen3-TTS custom voice instruct prompt engineering best results natural accent 2
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:13:20 UTC
+========================================================================
+
+Search query: Qwen3-TTS custom voice instruct prompt engineering best results natural accent 2026
+
+----------------------------------------
+
+Web search results for query: "Qwen3-TTS custom voice instruct prompt engineering best results natural accent 2026"
+
+Links: [{"title":"GitHub - flybirdxx/ComfyUI-Qwen-TTS: A Simple Implementation of Qwen3-TTS's ComfyUI · GitHub","url":"https://github.com/flybirdxx/ComfyUI-Qwen-TTS"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation | by cheng zhang | Jan, 2026 | Medium","url":"https://medium.com/@zh.milo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1a2efca05cd6"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation - DEV Community","url":"https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6"},{"title":"GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. · GitHub","url":"https://github.com/QwenLM/Qwen3-TTS"},{"title":"Qwen voice design API reference - Alibaba Cloud Model Studio - Alibaba Cloud Documentation Center","url":"https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-design"},{"title":"GitHub - DarioFT/ComfyUI-Qwen3-TTS: A ComfyUI custom node suite for Qwen3-TTS, supporting 1.7B and 0.6B models, Custom Voice, Voice Design, Voice Cloning and Fine-Tuning. · GitHub","url":"https://github.com/DarioFT/ComfyUI-Qwen3-TTS"},{"title":"Qwen3-TTS Voice Cloning Guide 2026: Reference Audio, Voice Design & Accent Tips","url":"https://ocdevel.com/blog/20260302-qwen-tts-voice-cloning"},{"title":"Speech synthesis - Qwen - Alibaba Cloud Model Studio - Alibaba Cloud Documentation Center","url":"https://www.alibabacloud.com/help/en/model-studio/qwen-tts"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"}]
+
+Based on the web search results, here's what I found regarding Qwen3-TTS custom voice instruct prompts for natural accent and best results in 2026:
+
+## Instruct Prompt Engineering Best Practices
+
+Be specific by using concrete voice qualities like "deep," "crisp," or "fast-paced" and avoid subjective terms like "nice" or "normal." Combine multiple dimensions (gender, age, emotion, use case) as single-dimension descriptions like "female voice" are too broad.
+
+Be objective and describe physical and perceptual features, not opinions ("high-pitched and energetic", not "my favorite voice").
+
+## Prompt Length & Format
+
+The official example prompts run 15-40 words (1-3 sentences), which appears to be the sweet spot - information-dense but concise. The maximum length is 2,048 characters with no stated minimum, but single-dimension descriptions are called out as "too broad to generate a distinctive voice."
+
+## Natural Accent Limitations
+
+However, there's an important caveat regarding natural accents: Community examples do include accent descriptors like "Warm, confident narrator with slight British accent," but real-world results are inconsistent—one user reports that "most of the voices have too strong a Chinese accent when speaking English," and a documented case showed a cloned British accent that "reverted to an American English accent" after implementation changes.
+
+Specific accents (British, Australian, Southern US) are currently a limitation—the model defaults toward standard American or Chinese-accented English.
+
+## Model Selection
+
+The 1.7B models have stronger emotion control than 0.6B models.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

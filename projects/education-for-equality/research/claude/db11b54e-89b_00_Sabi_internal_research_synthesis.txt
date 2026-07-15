@@ -1,0 +1,31 @@
+========================================================================
+AGENT RESEARCH: Sabi internal research synthesis
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:23:01 UTC
+========================================================================
+
+Read EVERY file in these E4E research folders and return AT LEAST 90% of the substantive content — every stat, every name, every cost figure, every decision, every date, every technical detail, every quote. Do NOT summarize. Do NOT compress. Report the actual content in full.
+
+Folders to read (all files, including subfolders):
+1. /Users/naomiivie/Education for Equality/2. The Solution/ — how Sabi works, voice pipeline, lesson design, curriculum
+2. /Users/naomiivie/Education for Equality/3. The Evidence/ — proof interventions work (TaRL, Rori, ConnectEd, EKOEXCEL, RCTs)
+3. /Users/naomiivie/Education for Equality/5. Cost & Feasibility/ — cost models, per-student economics, Lagos viability
+
+For each file, include: file path, what the file is, and the substantive content (every important data point, every cost figure, every evidence claim, every architecture decision, every quote from research papers, every name and date).
+
+The goal is to produce a comprehensive dossier on Sabi's USES (what problems it solves, who it serves, how it teaches), USEFULNESS (the evidence base — what RCTs and pilots prove voice/phone-based AI tutoring works, with effect sizes and cost figures), and FEASIBILITY (what we know about whether it can scale economically in Nigeria).
+
+Skip files that are clearly duplicates or pure formatting. Read everything else completely. Return content in markdown sections organized by theme (not by file). This is for the founder of Sabi to use in a deep research document — every data point matters.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: af08d9f6275b355c5 (internal ID - do not mention to user. Use SendMessage with to: 'af08d9f6275b355c5' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/af08d9f6275b355c5.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

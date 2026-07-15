@@ -1,0 +1,29 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-nu
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:34:07 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available
+Extraction prompt: Quote the exact information about: (1) what types of voice phone numbers Africa's Talking offers in Nigeria, (2) the 2-week test period for live numbers and what happens after, (3) how to set up callback URLs on a phone number, (4) whether the dashboard has separate "voice callback URL" and "event callback URL" fields per number, (5) where in the dashboard the phone number management page is. Verbatim quotes please.
+
+----------------------------------------
+
+Based on the provided web page content, I can only address item (1):
+
+**Types of voice phone numbers offered:**
+The page lists these exact categories: "Toll Free," "Premium," "Regular," "SIP," and "Virtualized Physical Lines."
+
+More specifically: "Toll Free: These are numbers where the user is not dialed but you as a client gets billed for incoming calls."
+
+**Regarding items (2-5):** The provided content does not contain any information about:
+- A 2-week test period for live numbers
+- How to set up callback URLs
+- Dashboard fields for voice callback URLs and event callback URLs
+- The location of phone number management pages in the dashboard
+
+These topics are simply not addressed in the help article excerpt supplied.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.twilio.com/en-us/voice/pricing/ng
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:13:47 UTC
+========================================================================
+
+URL: https://www.twilio.com/en-us/voice/pricing/ng
+Extraction prompt: What are the exact per-minute prices for voice calls in Nigeria? Inbound, outbound, local numbers, toll-free, etc.
+
+----------------------------------------
+
+# Twilio Voice Pricing for Nigeria
+
+Based on the pricing page, here are the per-minute rates for Nigeria:
+
+**Outbound Calls:**
+- Local calls: "$0.1768 / min"
+- Mobile calls: "$0.1654 / min"
+- Browser/App calling: "$0.0040 / min"
+- SIP Interface: "$0.0040 / min"
+
+**Inbound Calls:**
+- Browser/App calling: "$0.0040 / min"
+- SIP Interface: "$0.0040 / min"
+
+**Phone Numbers:**
+The page notes that Twilio does not currently offer voice-enabled phone numbers in Nigeria itself. However, customers can use international phone numbers from "over 90 other locales to make and receive calls," with international numbers starting at "$1.15 / month."
+
+Note: The pricing structure shows no specific inbound rates for local or mobile calls—these appear available only for outbound use.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

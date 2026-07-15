@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS Shortcuts automatic audio transcription Whisper API OneDrive 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 02:17:24 UTC
+========================================================================
+
+Search query: iOS Shortcuts automatic audio transcription Whisper API OneDrive 2026
+
+----------------------------------------
+
+Web search results for query: "iOS Shortcuts automatic audio transcription Whisper API OneDrive 2026"
+
+Links: [{"title":"RoutineHub • Voice to text transcribe using Whisper","url":"https://routinehub.co/shortcut/18593/"},{"title":"Instantly transcribe voice messages to text on your iPhone - Giacomo Melzi","url":"https://giacomomelzi.com/transcribe-audio-messages-iphone-ai/"},{"title":"Whisper iOS transcription app · openai/whisper · Discussion #443","url":"https://github.com/openai/whisper/discussions/443"},{"title":"iOS Shortcut for local OpenAI Whisper Translation/Transcription","url":"https://blog.petergilani.com/ios-shortcut-openai-whisper/"},{"title":"Transcribe audio on iOS & macOS: Whisperkit | Transloadit","url":"https://transloadit.com/devtips/transcribe-audio-on-ios-macos-whisperkit/"},{"title":"RoutineHub • Transcribe With Whisper AI","url":"https://routinehub.co/shortcut/14413/"},{"title":"Whisper Notes - Offline Whisper Transcription App | $4.99 for iOS & Mac","url":"https://whispernotes.app/"},{"title":"A Siri Shortcut to Summarize audio to text using ChatGPT - Shortcuts - Agenda Community","url":"https://agenda.community/t/a-siri-shortcut-to-summarize-audio-to-text-using-chatgpt/110445"},{"title":"Aiko — Sindre Sorhus","url":"https://sindresorhus.com/aiko"},{"title":"Apple's New AI-Powered Transcription Outperforms OpenAI's Whisper - BGR","url":"https://www.bgr.com/tech/apples-new-ai-powered-transcription-outperforms-openais-whisper/"}]
+
+Based on the web search results, here's what I found about iOS Shortcuts with automatic audio transcription using Whisper API and OneDrive:
+
+## iOS Shortcuts for Whisper Transcription
+
+iOS Shortcuts can trigger the transcription process using OpenAI's Whisper API, and there are several approaches available:
+
+**Cloud-Based Solutions:**
+Users can tap the screen to stop recording, which triggers transcription using OpenAI's Whisper API. To use this approach, you need to create an OpenAI API key and replace a placeholder in the Shortcut with your key.
+
+**On-Device Options:**
+Alternatively, WhisperKit is an Apple-optimized implementation of OpenAI's Whisper speech recognition model, designed specifically for iOS and macOS applications, providing efficient, on-device speech transcription capabilities with impressive accuracy.
+
+**2026 Updates:**
+Apple has several AI improvements in the works for iOS 26 and macOS Tahoe, including a speech API that outpaces OpenAI's Whisper.
+
+## Regarding OneDrive Integration
+
+The search results don't contain specific information about integrating OneDrive with iOS Shortcuts for automatic audio transcription workflows in 2026. You may need to explore custom Shortcuts that combine the Whisper API with OneDrive's file management capabilities through the Files app or OneDrive's APIs.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

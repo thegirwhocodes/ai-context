@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/jochiang/voice-mcp
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:31:43 UTC
+========================================================================
+
+URL: https://github.com/jochiang/voice-mcp
+Extraction prompt: How does this voice MCP work? Local Whisper and Supertonic - is everything fully local with no API keys? Installation steps for macOS? Hardware requirements?
+
+----------------------------------------
+
+# Voice MCP Overview
+
+## Local Processing
+
+Yes, this project runs entirely locally without API keys. It uses:
+- **Whisper** for speech-to-text via "faster-whisper (no API calls)"
+- **Supertonic** for text-to-speech via "local synthesis using Supertonic (no API calls)"
+
+## Core Features
+
+The system provides voice tools including:
+- "listen_and_confirm" - Record speech, transcribe with Whisper, return transcript
+- "speak" - Synthesize and play audio through speakers
+- Combined tools like "speak_and_listen" to reduce latency
+
+## macOS Installation
+
+The same steps apply across platforms:
+1. Clone the repository
+2. Install dependencies via `uv sync`
+3. Configure in your Claude Code MCP settings file
+4. Restart Claude Code
+
+The project notes it was "Developed on Windows, should work on macOS/Linux."
+
+## Hardware Requirements
+
+Essential components:
+- Python 3.10+
+- A microphone for voice input
+- Speakers/headphones for audio output
+- Approximately 720MB storage (Whisper ~460MB, Supertonic ~260MB download on first use)
+
+The system includes "automatic silence detection to stop recording" and supports adjustable silence parameters for different use cases.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

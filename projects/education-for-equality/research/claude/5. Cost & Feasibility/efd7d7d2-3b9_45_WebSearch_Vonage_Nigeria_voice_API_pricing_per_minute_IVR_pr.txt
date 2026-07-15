@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Vonage Nigeria voice API pricing per minute IVR programmable
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:06:12 UTC
+========================================================================
+
+Search query: Vonage Nigeria voice API pricing per minute IVR programmable
+
+----------------------------------------
+
+Web search results for query: "Vonage Nigeria voice API pricing per minute IVR programmable"
+
+Links: [{"title":"Voice API Pricing | Vonage","url":"https://www.vonage.com/communications-apis/voice/pricing/"},{"title":"API Pricing: Understanding Vonage Communications API Prices | Vonage","url":"https://www.vonage.com/communications-apis/pricing/"},{"title":"Vonage Pricing Plans (+ Fees, & Add-ons) - Quo (formerly OpenPhone)","url":"https://www.quo.com/blog/vonage-pricing/"},{"title":"How does voice pricing work for inbound and outbound calls? – Vonage API Support","url":"https://api.support.vonage.com/hc/en-us/articles/204015203-How-does-voice-pricing-work-for-inbound-and-outbound-calls"},{"title":"Programmable Voice API | Vonage","url":"https://www.vonage.com/communications-apis/voice/"},{"title":"Vonage Pricing: What You Need To Know?","url":"https://emitrr.com/blog/vonage-pricing/"},{"title":"Communications APIs | Vonage","url":"https://www.vonage.com/communications-apis/phone-numbers/pricing/"},{"title":"Plans and Pricing | Vonage","url":"https://www.vonage.com/pricing/"},{"title":"Messages API Pricing | Vonage","url":"https://www.vonage.com/communications-apis/messages/pricing/"},{"title":"International Calling for Business: Plans & Pricing | Vonage","url":"https://www.vonage.com/unified-communications/global/global-calling-plans/"}]
+
+Based on the search results, here's what I found regarding Vonage voice API pricing:
+
+## Voice API Pricing for IVR and Programmable Features
+
+Voice API pricing for developer voice features like IVR and real-time speech-to-text transcription starts at $0.014 per minute.
+
+For the Voice API, you pay per minute for the calls made and received via the API. Additionally, voice pricing is quoted per minute, although charges apply per second for all countries.
+
+## Regarding Nigeria-Specific Pricing
+
+The search results did not contain specific pricing information for Nigeria. The general per-minute rates mentioned above appear to be global rates, but to get Nigeria-specific pricing for the Voice API, you would likely need to check Vonage's official pricing page directly or contact their sales team, as pricing can vary by country and region.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

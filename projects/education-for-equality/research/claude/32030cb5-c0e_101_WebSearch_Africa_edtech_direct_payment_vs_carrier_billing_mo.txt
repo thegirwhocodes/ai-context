@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Africa edtech direct payment vs carrier billing mobile money Flutterwave Paystac
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-16 16:58:33 UTC
+========================================================================
+
+Search query: Africa edtech direct payment vs carrier billing mobile money Flutterwave Paystack bypass telco revenue share
+
+----------------------------------------
+
+Web search results for query: "Africa edtech direct payment vs carrier billing mobile money Flutterwave Paystack bypass telco revenue share"
+
+Links: [{"title":"A guide to payment APIs in Africa: How developers are turning money into code - Finance in Africa","url":"https://financeinafrica.com/insights/apis-africas-developers-money-code/"},{"title":"Report: Flutterwave Business Breakdown & Founding Story | Contrary Research","url":"https://research.contrary.com/company/flutterwave"},{"title":"Paystack vs Flutterwave Review in Africa: Which is Better? - AllenVest","url":"https://allenvest.com/paystack-vs-flutterwave-africa/"},{"title":"2022 in African fintech: Exploring the biggest African fintech stories that shaped the year - The Paystack Blog","url":"https://paystack.com/blog/operations/african-fintech-review-2022"},{"title":"Case Study: How Flutterwave Uses Data-Driven Insights to Scale Digital Payments Across Africa – Marketing Analytics Africa","url":"https://marketinganalytics.africa/case-study-how-flutterwave-uses-data-driven-insights-to-scale-digital-payments-across-africa/"},{"title":"Top Flutterwave Alternatives in Africa: Best Payment Gateways for Scaling Businesses","url":"https://www.dusupay.com/post/top-flutterwave-alternatives-in-africa-best-payment-gateways-for-scaling-businesses"},{"title":"Paystack, Flutterwave? How we make the best payment platforms work for your African business.","url":"https://www.terminal.africa/blog/paystack-flutterwave-how-we-make-the-best-payment-platforms-work-for-your-african-business"},{"title":"Payment channels | Flutterwave Help Center","url":"https://flutterwave.com/gb/support/payment-methods/payment-channels"},{"title":"African payments company Flutterwave raises $170M, now valued at over $1B | TechCrunch","url":"https://techcrunch.com/2021/03/09/african-payments-company-flutterwave-raises-170m-now-valued-at-over-1b/"},{"title":"A decade on, Flutterwave, Paystack and Moniepoint compete for Africa’s financial plumbing - Businessday NG","url":"https://businessday.ng/technology/article/a-decade-on-flutterwave-paystack-and-moniepoint-compete-for-africas-financial-plumbing/"}]
+
+Based on the search results, I found information about Africa's edtech payment landscape and the role of Flutterwave and Paystack, though the search didn't specifically address carrier billing vs. direct payment dynamics or telco revenue share bypass strategies. Here's what the results show:
+
+## Payment Infrastructure in African EdTech
+
+EdTech platforms can automate school fee collection and offer payment plans based on attendance or performance using payment APIs. Paystack, Flutterwave, and Chipper Cash realized that the real opportunity was not just to access existing rails but to simplify them, offering a single API layer that handled the complexity behind the scenes instead of forcing businesses to integrate with multiple banks, switches, and telcos.
+
+## Flutterwave and Paystack's Market Position
+
+Paystack supports a wide range of payment methods, including cards, bank transfers, and mobile money, which is essential in a diverse market like Africa. DusuPay is built with the assumption that Africa is not card-first—customers pay with mobile money and in local currencies, suggesting mobile money remains a critical payment channel for African businesses.
+
+However, the search results do not contain specific information about:
+- Direct payment vs. carrier billing comparisons for edtech
+- Strategies to bypass telco revenue sharing
+- Revenue share dynamics between payment processors and telecommunications companies
+- How Flutterwave and Paystack navigate carrier billing arrangements
+
+Would you like me to search more specifically for information about carrier billing strategies or telco partnerships in African payments?
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

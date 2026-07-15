@@ -1,0 +1,20 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callba
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:32:57 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/2206161-how-do-i-configure-my-callback-url
+Extraction prompt: Quote the exact step-by-step instructions for configuring a voice callback URL on a phone number on Africa's Talking. Where in the dashboard do you click? What fields are there? What URL formats are accepted? Are there separate "voice callback" and "event callback" fields? Do you also configure a status/event URL? Quote everything verbatim.
+
+----------------------------------------
+
+Based on the provided content, I cannot supply the specific step-by-step instructions you're requesting. The article does not detail dashboard navigation, field names, URL format specifications, or clarify whether separate "voice callback" and "event callback" fields exist.
+
+The help page only states: "This depends on the programming language you are using" and directs users to external documentation at developers.africastalking.com for product-specific configuration details.
+
+To obtain the detailed configuration instructions you need, you would need to consult the full developer documentation linked in the article.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

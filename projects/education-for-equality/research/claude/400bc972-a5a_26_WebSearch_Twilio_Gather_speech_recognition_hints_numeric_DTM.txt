@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Twilio Gather speech recognition hints numeric DTMF expected number answer voice
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:15:37 UTC
+========================================================================
+
+Search query: Twilio Gather speech recognition hints numeric DTMF expected number answer voice agent best practice constrained
+
+----------------------------------------
+
+Web search results for query: "Twilio Gather speech recognition hints numeric DTMF expected number answer voice agent best practice constrained"
+
+Links: [{"title":"Eleven Best Practices, Tips, and Tricks for using Speech Recognition and Virtual Agent Bots with Voice Calling on the Twilio CPaaS Platform | Twilio","url":"https://www.twilio.com/en-us/blog/tips-speech-recognition-virtual-agent-voice-calling"},{"title":"TwiML™ Voice: <Gather> | Twilio","url":"https://www.twilio.com/docs/voice/twiml/gather"},{"title":"Troubleshooting issues with <Gather> – Twilio Support","url":"https://support.twilio.com/hc/en-us/articles/223180068-Troubleshooting-issues-with-Gather"},{"title":"Gather Input On Call widget | Twilio","url":"https://www.twilio.com/docs/studio/widget-library/gather-input-call"},{"title":"Troubleshooting issues with <Gather> - Twilio Help Center","url":"https://help.twilio.com/articles/223180068"},{"title":"Gather User Input with Keypad | Twilio","url":"https://www.twilio.com/docs/voice/tutorials/how-to-gather-user-input-via-keypad"},{"title":"How to Use Twilio Speech Recognition | Twilio","url":"https://www.twilio.com/en-us/blog/how-to-use-twilio-speech-recognition-html"},{"title":"Speech Recognition is Now Generally Available | Twilio","url":"https://www.twilio.com/en-us/blog/speech-recognition-generally-available-html"}]
+
+Based on the web search results, here's comprehensive information about Twilio Gather speech recognition with hints, numeric input, DTMF, and best practices for voice agents:
+
+## Speech Recognition and Hints
+
+Hints provide a comma-separated set of words that instruct the speech recognition engine about what input is expected, which improves accuracy. You can provide hints up to 500 words to boost accuracy, and providing good hints makes matching very accurate.
+
+## Input Methods: Speech vs. DTMF
+
+The input attribute allows you to specify which inputs Twilio should accept—dtmf, speech, or dtmf speech. If you set dtmf speech for input, the first detected input will take precedence, and if speech is detected first, finishOnKey will be ignored.
+
+## Handling Expected Numbers
+
+You can set the number of digits you expect from your caller by including numDigits in <Gather>. For numeric inputs specifically, if you're expecting a "short utterance" as input, you should use speechTimeout with value auto—examples include collecting numbers, addresses or short commands.
+
+## Best Practices for Voice Agents
+
+Provide DTMF as an alternative input method when speech recognition fails, allowing users to input responses using the keypad if needed. Additionally, to minimize outside noise interference, use the phone's handset mode rather than speakerphone, and noise-canceling microphones and acoustic echo cancellation can significantly enhance recognition accuracy.
+
+## Speech Recognition Parameters
+
+When using speech as input, Twilio includes a Confidence parameter value along with the recognized speech result—Confidence contains a confidence score between 0.0 and 1.0.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

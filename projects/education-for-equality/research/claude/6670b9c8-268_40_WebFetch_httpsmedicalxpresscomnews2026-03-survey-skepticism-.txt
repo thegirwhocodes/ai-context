@@ -1,0 +1,59 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://medicalxpress.com/news/2026-03-survey-skepticism-language-tech-deaf.html
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:28:49 UTC
+========================================================================
+
+URL: https://medicalxpress.com/news/2026-03-survey-skepticism-language-tech-deaf.html
+Extraction prompt: Extract the FULL article content about the Northeastern University survey on Deaf community skepticism of sign language technology. Include: sample size, methodology, specific statistics, concerns raised, quotes, recommendations. Every detail.
+
+----------------------------------------
+
+# Northeastern University Survey on Sign Language Technology Skepticism
+
+## Overview
+Researchers at Northeastern University surveyed the Deaf and Hard-of-Hearing (DHH) community globally regarding artificial intelligence-based sign language technologies. The study, led by Ph.D. student Saki Imai and Assistant Professor Malihe Alikhani, examined community perspectives on AI tools designed to translate content into sign language.
+
+## Key Findings
+
+**Community Skepticism**
+Survey respondents expressed significant reservations about sign language technology. One participant noted: "Access to these 'technologies'—which are generally not useful and created as vanity projects by hearing dilettantes with no understanding of the deaf community" would reduce accommodation efforts.
+
+**Methodology Concerns**
+The researchers identified a critical problem: "Historically, developers and researchers have been building technology, such as sign language recognition, translation and generation tools, without any collaboration or getting insights from the deaf community," Imai explained.
+
+**Linguistic Complexity Issues**
+The study revealed that sign language standardization by software threatens cultural preservation. Over 100 registered sign languages exist globally, with dialects and variants evolving continuously. Black American Sign Language, for instance, uses facial expressions to modify meaning—a facial expression while signing "lawyer" transforms the meaning to "crazy."
+
+## Survey Concerns
+
+**Primary Worries:**
+- Technology replacing human interpreters as cost-saving measures
+- Loss of linguistic nuance and local cultural variants
+- Privacy concerns (particularly from U.S. respondents)
+- Inadequate accuracy for critical settings (medical, legal contexts)
+- Development without DHH community input
+
+**Contrasting Perspective**
+Respondents with limited interpreter access showed greater optimism, noting that technology "provide[s] independence, autonomy, and critical support in situations where human interpreters are not available."
+
+## Expert Perspectives
+
+**Rachel Berman-Kobylarz** (ASL Principal Lecturer, Northeastern) stated she was "cautiously optimistic" about sign-language technology if produced by or with Deaf people, emphasizing technology should serve as a tool, not replace human interpreters in important contexts.
+
+**Lori Whynot** (ASL Program Director) reinforced skepticism: "the people that would most benefit from these technologies aren't the ones asking the questions from the very start…They're always the end user."
+
+## Recommendations
+
+Researchers advocate for:
+- Early and continuous DHH community collaboration throughout development
+- Deaf-led company involvement and centering Deaf experiences
+- Abandoning the assumption that AI solves everything
+- Recognizing technology's supplementary, not replacement, role
+- Building trust within the tight-knit DHH community before implementation
+
+Whynot summarized the requirement: "If deaf people are defining the problem and are being part of the solution, then I think it's beneficial."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

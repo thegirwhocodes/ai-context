@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nollywood movies YouTube free full movies with subtitles scrape audio dataset
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 09:22:22 UTC
+========================================================================
+
+Search query: Nollywood movies YouTube free full movies with subtitles scrape audio dataset
+
+----------------------------------------
+
+Web search results for query: "Nollywood movies YouTube free full movies with subtitles scrape audio dataset"
+
+Links: [{"title":"English Subtitle Archives - Nollywood / Nigerian Movies Online Free","url":"https://nollywoodfilmsonline.com/categories/english-subtitle/"},{"title":"UNIVERSITY GIRLS - 2017 Latest Nigerian Movies African Nollywood Full Movies : NOLLYSTAR - latest movies : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/youtube-_4C7UWRAgkQ"},{"title":"THE ROYAL KINGDOM (Full HD Movies) latest nigerian movies - Nollywood Movies | Full African Movies : NOLLYSTAR - latest movies : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/youtube-QV07vu7Pmxg"},{"title":"Latest & Old Nollywood Movies Download and Entertainment - v9ja.net","url":"https://v9ja.net/"},{"title":"Best Websites to Download the Latest Nollywood Movies ...","url":"https://www.dvdfab.cn/downloader/nollywood-movies-download-site.htm"},{"title":"BACK TO SCHOOL - 2017 Latest Nigerian Movies African Nollywood Full Movies : NOLLYSTAR - latest movies : Free Download, Borrow, and Streaming : Internet Archive","url":"https://archive.org/details/youtube--f6ADpiLjZI"},{"title":"Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine","url":"https://archive.org/details/nollywood_movies"},{"title":"Where can I get a large collection of movie subtitles? - Quora","url":"https://www.quora.com/Where-can-I-get-a-large-collection-of-movie-subtitles"},{"title":"Free Nigerian Nollywood Movies 2026, 2025, 2024","url":"https://www.naijapals.com/videos"},{"title":"The 10 Best Nollywood Movies to Watch on YouTube (March 2025)","url":"https://www.zikoko.com/pop/best-nollywood-movies-to-watch-on-youtube-march-2025/"}]
+
+Based on the search results, here's what I found regarding Nollywood movies available on YouTube with subtitles and related resources:
+
+## Free Nollywood Movies on YouTube
+
+There has been a rise in Nollywood filmmakers choosing YouTube for big-budget projects, with stars like Timini Egbuson, Chioma Akpotha and Uzor Arukwe featured in direct-to-YouTube movies. YouTube contains a collection of hottest Nigerian films available to stream, with guides available highlighting the best films you can stream on the platform.
+
+## Platforms and Resources
+
+Several websites provide access to Nollywood content:
+
+- v9ja.net offers latest & old Nollywood movies download for free, including Netflix movies, IrokoTV, and IbakaTV films.
+- NaijaAls provides a collection of free Nigerian Nollywood movies from 2026, 2025, 2024 with trending content.
+- NollywoodFilmsOnline.com provides categories of movies with English subtitles.
+
+## Subtitle and Audio Data Resources
+
+For scraping subtitle data for datasets, the OpenSubtitles corpora (aligned subtitle datasets available for download) or mirrored subtitle datasets on Kaggle/GitHub can be used, along with APIs and automated tools like Subliminal for batch-downloading and pre-filtering files by language, year, or release group.
+
+Note: When downloading or scraping content, ensure you comply with the platform's terms of service and applicable copyright laws.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

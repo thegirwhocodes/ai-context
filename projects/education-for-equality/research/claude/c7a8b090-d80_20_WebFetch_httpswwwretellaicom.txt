@@ -1,0 +1,84 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.retellai.com
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 04:04:40 UTC
+========================================================================
+
+URL: https://www.retellai.com
+Extraction prompt: Describe the visual design in detail: layout, colors, background color, dark/light theme, typography, card design, gradients, glows, neon effects, how features and pricing are presented, what makes it look premium and startup-like
+
+----------------------------------------
+
+# Retell AI Visual Design Analysis
+
+## Overall Aesthetic
+Retell AI employs a **modern, premium startup design** combining minimalist sophistication with dynamic visual elements. The site balances professional enterprise appeal with cutting-edge technology presentation.
+
+## Color Palette
+- **Primary**: Dark navy/black (`#00122e`) for headers and buttons
+- **Accent colors**: Apricot/warm orange, electric blue, sophisticated grays
+- **Neutral**: Clean whites and light grays for breathing room
+- **Theme**: Light mode dominant with dark accents creating high contrast
+
+## Typography & Hierarchy
+- Custom font stack includes Vollkorn (serif), Ubuntu, Open Sans, and Material Icons
+- Responsive sizing using CSS clamp functions for fluid scaling
+- Large, bold display text for main headers ("AI Voice Agent Platform")
+- Clean, readable body copy with generous line spacing
+
+## Layout & Structure
+- **Grid-based composition** with asymmetrical balance
+- Sections organized with clear visual separation
+- Featured case study cards with video thumbnails create visual interest
+- Interactive demo section uses two-column layout (select/form + video preview)
+
+## Card & Component Design
+- Minimalist cards with subtle shadows and rounded corners (6-9px radius)
+- Testimonial cards rotate through background colors: dark navy, apricot, electric blue, gray
+- Staggered vertical offset effect on desktop (20px increments) creates depth
+- "Stack list" items have layered appearance without heavy decoration
+
+## Premium Visual Effects
+- **Smooth animations**: Cubic-bezier easing for button hovers and transitions
+- **Blur effects**: Text blur animations on button interactions
+- **Glassmorphism elements**: Transparency combined with backdrop filters
+- **Noise overlays**: Subtle texture overlays in section backgrounds
+- **Scrolling parallax**: Content visibility tied to scroll position with fade effects
+
+## Gradient & Glow Elements
+- No aggressive neon—design favors sophistication
+- Smooth color transitions between sections
+- Hero section uses background video with "clip-path" animations
+- Modal overlays use opacity transitions (0-1) for polish
+
+## Feature Presentation
+- Comparison table format (3 columns) contrasts legacy IVR/IVA with "3rd Gen Voice AI"
+- Feature highlights in prose format with bullet points
+- Integration logos displayed in auto-scrolling marquee (left direction, 100s duration)
+- Compliance badges presented as slider carousel
+
+## Pricing & CTA Strategy
+- Multiple conversion points: "Try For Free," "Contact Sales," "See Pricing" buttons
+- Buttons use dark navy background with white text for maximum contrast
+- Forms require name, phone, email—minimal friction design
+- Live demo prominently featured (radio selection → form fill flow)
+
+## Startup-Like Elements
+- Y Combinator and Product Hunt badges signal credibility
+- 4.8/5 aggregate rating (929 reviews) displayed via structured data
+- Customer testimonials with video thumbnails and executive headshots
+- Changelog and status page links indicate transparency
+- "Built to scale, human by design" positioning balances automation with humanity
+
+## Premium Indicators
+- Enterprise compliance badges (HIPAA, SOC2, GDPR)
+- Professional photography and videography throughout
+- "Professional FDE-led implementation" mentioned for enterprise tier
+- Vanta Trust Center integration
+- Certified partner program visibility
+
+This design successfully positions Retell as a technically sophisticated yet accessible platform—avoiding over-engineered visual noise while maintaining visual interest through thoughtful animation and strategic color deployment.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

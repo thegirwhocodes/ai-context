@@ -1,0 +1,137 @@
+========================================================================
+AGENT RESEARCH: Research Resolve caption implementation
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-18 04:09:38 UTC
+========================================================================
+
+Do thorough web research on how to implement ALL of the following in DaVinci Resolve (both manually and via the Python scripting API). I need EXACT steps, parameter values, and code examples.
+
+## 1. CAPTION STYLES IN DAVINCI RESOLVE
+
+### Worship Style (gentle fade captions)
+- Cormorant Garamond Light font, 45px, warm cream color (#FFF5E6), 85% opacity
+- Gentle fade in/out animation (not word-by-word pop)
+- Position: lower 20% of frame
+- How to achieve this with Text+ in Fusion
+- How to animate opacity for fade in/fade out on Text+ (keyframes)
+- Exact Fusion node setup and parameters
+
+### Talking Head / Viral Style (Submagic-style word-by-word pop)
+- Poppins Bold font, 65px, white with colored keyword highlight
+- Word-by-word pop animation where each word appears as spoken
+- Highlight word changes color (gold #D4A06A or terracotta #C17852)
+- Scale pop animation (1.0 to 1.15x on highlight word)
+- 3px outline/stroke on text
+- How to achieve this in Fusion with Text+ and keyframes
+- How to do word-by-word reveal animation in Fusion
+- Exact keyframe setup for the pop/scale effect
+
+### Karaoke-style sweep for worship lyrics
+- Words light up as spoken (color sweep across text)
+- How to achieve this in Fusion using Text+ character-level styling
+- Any Fusion macros or templates that do this
+
+## 2. TEXT+ COMPLETE PARAMETER REFERENCE
+- ALL input names for Text+ in Fusion (the exact string to use with SetInput)
+- How to set: font, size, color (fill), outline/border, shadow, opacity, position
+- How to set character-level styling (different colors per word)
+- How to keyframe Text+ properties via the Python API
+- How to animate Text+ (fade, scale, position) via API
+- StyledText vs plain text - how to use rich text markup in Text+
+
+## 3. FUSION COMPOSITION FOR CAPTIONS
+- How to create a transparent Text+ overlay (no background)
+- How to composite Text+ over video (Merge node setup)
+- How to add text outline/stroke in Fusion Text+
+- How to add drop shadow to Text+ in Fusion
+- How to add background pill/bar behind text
+- Correct render order for text compositing
+
+## 4. COLOR GRADING VIA API
+- Complete CDL parameter reference with correct string format
+- How to apply .cube LUTs via SetLUT (why it might fail, common fixes)
+- How to use PowerGrades and DRX files via API
+- How to save and apply grades programmatically
+- Film grain, soft glow, vignette - best Fusion settings for each
+
+## 5. VIDEO EDITING VIA API
+- How to add transitions (cross dissolve, fade) between clips via API
+- How to do jump cuts programmatically
+- How to add zoom punch effects (1.2x scale on keyframes)
+- How to trim/split clips via API
+- How to set clip transform properties (zoom, pan, rotation)
+
+## 6. EXPORT/RENDER VIA API
+- How to set up render jobs for different platforms (Instagram Reels 9:16, YouTube 16:9, TikTok)
+- Correct render settings for each platform
+- How to batch export for multiple platforms
+- How to set custom resolution, frame rate, codec
+
+## 7. AUTOMATION WORKFLOWS
+- How to automate the full caption workflow: SRT -> Text+ clips on timeline
+- How OpenCaptions and similar tools work internally
+- How to create reusable Text+ templates in the media pool
+- How to batch apply grades to multiple clips
+
+Search Blackmagic forums, GitHub repos, YouTube tutorials, and documentation. Return SPECIFIC parameter names, code examples, and step-by-step instructions. Not generic advice.
+
+----------------------------------------
+
+I have created a comprehensive reference document at `/Users/naomiivie/Downloads/App/Social Media/davinci-resolve-complete-reference.md`. Here is a summary of what was researched and documented:
+
+## What's Covered
+
+**1. Caption Styles** — Three complete styles with exact node graphs, parameter values, and Python code:
+- **Worship Style:** Cormorant Garamond Light, warm cream (#FFF5E6), fade via Merge Blend keyframes, three animation methods (Merge Blend, BrightnessContrast, Dissolve)
+- **Viral/Submagic Style:** Word-by-word pop using either the Follower modifier (set dropdown to "Word") or separate Text+ nodes per word. Scale pop keyframes (1.0 → 1.15 → 1.0 over 8 frames), outline via Shading Element 2
+- **Karaoke Sweep:** Dual-layer technique with Write On slider animated per word timestamp
+
+**2. Text+ Parameter Reference** — Complete table of all known input names: `StyledText`, `Font`, `Style`, `Size`, `Red1`-`Alpha1` through `Red8`-`Alpha8`, `Enabled{N}`, `ElementShape{N}`, `Thickness{N}`, `OffsetX{N}`, `OffsetY{N}`, layout/transform inputs, and the `GetInputList()` method to discover all inputs programmatically
+
+**3. Fusion Composition** — Node graphs for transparent overlays, outline/stroke (Shading Element 2, Text Outline), drop shadow (Element 3 with offset), background pill (Element 4, Border Fill, Level=Line, Round=0.5), and expression-linked auto-sizing rectangles
+
+**4. Color Grading API** — `SetCDL()` with exact string format (`"Slope": "1.1 0.9 0.85"`), `SetLUT()` with common failure reasons, `ApplyGradeFromDRX()` with grade modes, `CopyGrades()`, and specific ResolveFX parameter values for film grain (35mm 200T, Strength 0.2-0.4), soft glow (Threshold 0.7-0.85, Blend 0.3-0.5), vignette, and halation
+
+**5. Video Editing API** — All `SetProperty` keys with ranges (Pan, Tilt, ZoomX/Y 0-100, RotationAngle, Opacity, Scaling modes, etc.). Transitions are NOT supported via API (workaround: FCPXML import). Jump cuts via sub-clip AppendToTimeline. Zoom punch via Fusion Transform node with BezierSpline keyframes
+
+**6. Export/Render API** — Complete `SetRenderSettings` key table, platform-specific configs (Instagram Reels 1080x1920/30fps, YouTube 3840x2160/24fps, TikTok), batch export function, codec naming ("H264" not "H.264"), and render queue management
+
+**7. Automation Workflows** — Full SRT-to-Text+ pipeline code (two-phase approach), how OpenCaptions works internally (template duplication + SetInput StyledText), reusable templates via Media Pool/Power Bins, batch grade application (4 methods), and environment setup for macOS
+
+## Key Limitations Discovered
+- The Python API cannot add transitions between clips (use FCPXML workaround)
+- `SetProperty` on TimelineItem sets static values only -- keyframed animation requires Fusion compositions
+- No API to export DRX/PowerGrades programmatically (must use Gallery UI)
+- OpenCaptions relies on an undocumented API behavior for reading subtitle text
+- Text+ has no single "opacity" input -- use Merge Blend or BrightnessContrast Gain
+
+Sources:
+- [Unofficial DaVinci Resolve API Docs](https://deric.github.io/DaVinciResolve-API-Docs/)
+- [ResolveDevDoc](https://resolvedevdoc.readthedocs.io/en/latest/readme_resolveapi.html)
+- [DaVinci Resolve Scripting API v20.3](https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8)
+- [Text+ Node Reference - JayAreTV](https://jayaretv.com/fusion/text-node/)
+- [Soft Glow Node - JayAreTV](https://jayaretv.com/fusion/soft-glow-node/)
+- [Glow Node - JayAreTV](https://jayaretv.com/fusion/glow-node/)
+- [srt_to_textplus - atmosfar](https://github.com/atmosfar/srt_to_textplus)
+- [Resolve-OpenCaptions](https://github.com/david-ca6/Resolve-OpenCaptions)
+- [DaVinci-Resolve-Subtitle-to-TextPlus](https://github.com/Rraz0rR/DaVinci-Resolve-Subtitle-to-TextPlus)
+- [DaVinci Resolve Python Automation](https://github.com/aman7mishra/DaVinci-Resolve-Python-Automation)
+- [DaVinci Resolve Automation - nobphotographr](https://github.com/nobphotographr/davinci-resolve-automation)
+- [Automatic Captions in DaVinci Resolve - Den Delimarsky](https://den.dev/blog/davinci-resolve-automatic-captions-free/)
+- [Karaoke Text in DaVinci Resolve](https://filmmakingelements.com/davinci-resolve-karaoke-text/)
+- [Text Boxes in Fusion - VFXstudy](https://vfxstudy.com/tutorials/text-boxes/)
+- [Animate Opacity in Fusion - Noah Haehnel](https://noahhaehnel.com/blog/how-to-animate-opacity/)
+- [Film Grain in Resolve - Envato Tuts+](https://photography.tutsplus.com/tutorials/how-to-add-finishing-effects-and-film-grain-in-resolve--cms-106829)
+- [Halation Effect in DaVinci Resolve](https://easyedit.pro/blog/halation-effect-in-da-vinci-resolve-18-free-and-studio-version-tips)
+- [Render Example Script](https://github.com/deric/DaVinciResolve-API-Docs/blob/main/examples/python/3_grade_and_render_all_timelines.py)
+- [Blackmagic Forum - Word by Word Animation](https://forum.blackmagicdesign.com/viewtopic.php?f=33&t=165521)
+- [Blackmagic Forum - Transitions API](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=189135)
+- [X-Raym Scripting Doc](https://extremraym.com/cloud/resolve-scripting-doc/)
+agentId: af1c21d9ad5ef2e40 (use SendMessage with to: 'af1c21d9ad5ef2e40' to continue this agent)
+<usage>total_tokens: 65583
+tool_uses: 48
+duration_ms: 1207848</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

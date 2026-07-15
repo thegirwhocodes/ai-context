@@ -1,0 +1,396 @@
+========================================================================
+AGENT RESEARCH: Research ASL detection latency
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 11:18:23 UTC
+========================================================================
+
+I need deep research into reducing the latency of a real-time ASL sign language detection system. Here's our current pipeline and where the bottlenecks are:
+
+**Current pipeline (runs every frame at ~30fps on macOS M1, CPU only):**
+1. OpenCV camera read (~1ms)
+2. MediaPipe Holistic processing — extracts 543 keypoints (hands + face + body) — **THIS IS THE HEAVIEST STEP, ~30-50ms per frame**
+3. Feature extraction — compute 64 angle-based features from keypoints (~1ms)
+4. Sign buffer — waits for signing to stop (0.6s pause threshold), then emits the buffered sequence
+5. TGCN model inference — Graph Convolutional Network, 300 ASL signs, ~5-10ms on CPU
+6. LSTM model inference — 11 signs, ~2ms
+7. DTW matching — against recorded references, ~10-20ms depending on vocabulary size
+8. Claude/Groq LLM call for sentence assembly — ~100-500ms (network)
+9. Edge TTS for speech output — ~500-1000ms (network + audio generation)
+
+**Total latency from sign completion to spoken output: ~1-2 seconds**
+
+Research ALL of these optimization strategies thoroughly:
+
+**A. MediaPipe optimization:**
+- MediaPipe Holistic vs MediaPipe Hands-only — how much faster is hands-only?
+- MediaPipe model_complexity=0 vs 1 — speed difference?
+- Can we run MediaPipe on Apple M1 GPU/Neural Engine? How?
+- MediaPipe Tasks API vs legacy Solutions API — any speed difference?
+- Frame skipping — process every 2nd or 3rd frame instead of every frame
+- Resolution reduction before MediaPipe — does 320x240 vs 640x480 matter?
+
+**B. Model inference optimization:**
+- ONNX Runtime — can we convert TGCN PyTorch model to ONNX for faster CPU inference?
+- TensorFlow Lite — convert to TFLite for mobile-optimized inference?
+- CoreML — convert to CoreML for Apple Neural Engine acceleration?
+- Model quantization — INT8 quantization of TGCN, how much speedup?
+- Batch inference — process multiple sign candidates at once?
+
+**C. Pipeline architecture optimization:**
+- Sliding window detection instead of pause-based segmentation — detect signs mid-stream
+- Overlap detection and recognition — start recognizing while still signing
+- Predictive buffering — start processing before the sign is complete
+- Reduce the pause threshold from 0.6s — what's the minimum reliable threshold?
+
+**D. LLM/TTS latency:**
+- Groq vs Claude Haiku vs local LLM (Ollama) for sentence assembly — latency comparison
+- Pre-cached TTS audio for common words — skip generation entirely
+- Streaming TTS — start playing audio before full generation completes
+- Can we skip the LLM entirely for single-word signs?
+
+**E. System-level optimization:**
+- Python GIL — are we bottlenecked by GIL? Would multiprocessing help?
+- NumPy/OpenCV compiled with Apple Accelerate framework?
+- Process priority / thread affinity on macOS
+
+**F. Alternative approaches that are fundamentally faster:**
+- Google SignGemma — claims <200ms, how?
+- Edge AI approaches — what do production sign language systems use?
+- Skeleton-based vs video-based — which is inherently faster?
+
+For each optimization, report:
+1. Expected latency reduction (in ms)
+2. Implementation difficulty (easy/medium/hard)
+3. Any accuracy tradeoffs
+4. Whether it works on macOS M1 CPU
+
+Give me a prioritized list of what to implement first for maximum latency reduction with minimum effort.
+
+----------------------------------------
+
+Now I have comprehensive research across all areas. Let me compile the full analysis.
+
+---
+
+# Deep Research: Reducing Latency in Real-Time ASL Sign Language Detection
+
+## Current Pipeline Latency Budget
+
+| Stage | Current Latency | % of Total |
+|-------|----------------|------------|
+| OpenCV camera read | ~1ms | negligible |
+| MediaPipe Holistic | 30-50ms | **dominant per-frame cost** |
+| Feature extraction (64 angles) | ~1ms | negligible |
+| Sign buffer (pause threshold) | 600ms | **largest single delay** |
+| TGCN inference (300 signs) | 5-10ms | small |
+| LSTM inference (11 signs) | ~2ms | negligible |
+| DTW matching | 10-20ms | moderate |
+| LLM sentence assembly | 100-500ms | **major bottleneck** |
+| Edge TTS | 500-1000ms | **major bottleneck** |
+| **Total sign-completion to spoken output** | **~1-2 seconds** | |
+
+---
+
+## A. MediaPipe Optimization
+
+### A1. MediaPipe Holistic vs Hands-Only
+
+- **Holistic**: 543 keypoints (468 face + 33 pose + 21+21 hands), runs pose detection first then crops for face/hands. ~30-50ms on CPU.
+- **Hands-only**: 42 keypoints (21 per hand), skips pose and face entirely. ~15ms on CPU (Lite) or ~30ms (Full).
+- **Expected savings**: 15-25ms per frame if you switch to Hands-only with Lite complexity.
+- **Accuracy tradeoff**: You lose facial expressions (important for ASL grammar -- non-manual markers like raised eyebrows carry grammatical meaning) and body pose (shoulder shifts, body leans). For isolated sign recognition of 300 vocabulary words, hands-only may be sufficient for most signs, but you will lose accuracy on signs that require facial/body context.
+- **Implementation difficulty**: Easy. Change `mp.solutions.holistic` to `mp.solutions.hands`, update keypoint indices.
+- **Recommendation**: If your TGCN model uses the 55-keypoint format (13 body + 21 left + 21 right), you cannot simply drop to hands-only without retraining. However, if your angle-based 64 features are computed purely from hand landmarks, this is a clean win.
+
+### A2. model_complexity=0 vs 1
+
+- **complexity=0 (Lite)**: ~15ms CPU, ~5ms GPU. Reduced depth neural network, higher jitter, lower accuracy on occluded joints.
+- **complexity=1 (Full/default)**: ~30ms CPU, ~8ms GPU. Balanced.
+- **complexity=2 (Heavy)**: ~80ms+ CPU, ~15-20ms GPU. Highest accuracy.
+- **Expected savings**: Switching from 1 to 0 saves ~15ms per frame (from ~30ms to ~15ms).
+- **Accuracy tradeoff**: Higher jitter in landmarks, especially when hands are partially occluded. For sign language where hand shape is critical, this could reduce recognition accuracy by 2-5%.
+- **Implementation difficulty**: Trivial -- single parameter change.
+- **Works on M1**: Yes.
+
+### A3. MediaPipe on Apple M1 GPU/Neural Engine
+
+- **Current state**: MediaPipe Python on macOS runs on CPU only. The Metal GPU backend for MediaPipe has had longstanding compilation issues on macOS (GitHub issue #5656). MediaPipe was primarily designed for mobile GPU (OpenGL ES/Vulkan on Android, Metal on iOS).
+- **Workaround via CoreML**: You could theoretically extract MediaPipe's TFLite models, convert them to CoreML, and run them on the Neural Engine. The M1 Neural Engine is ~3.5x faster than M1 GPU and ~5.5x faster than M1 CPU for supported models. But this requires significant engineering to replicate MediaPipe's full pipeline (palm detection -> hand tracking -> landmark extraction).
+- **Implementation difficulty**: Hard. Essentially rebuilding MediaPipe's pipeline with CoreML.
+- **Expected savings if achieved**: Could bring per-frame processing down to ~5-8ms.
+- **Recommendation**: Not worth it unless you're building a production product. The engineering effort is weeks of work.
+
+### A4. MediaPipe Tasks API vs Legacy Solutions API
+
+- **Tasks API**: Newer, unified API with "end-to-end optimized pipeline performance." Better optimized graph scheduling.
+- **Legacy Solutions API**: What most tutorials use (`mp.solutions.holistic`).
+- **Expected savings**: Modest, likely 2-5ms due to better graph optimization. No hard benchmarks comparing the two directly.
+- **Implementation difficulty**: Medium. Requires rewriting MediaPipe integration code to use the new API.
+- **Works on M1**: Yes.
+
+### A5. Frame Skipping
+
+- **Process every 2nd frame**: Effectively doubles your available time per frame. Instead of needing to finish in 33ms (30fps), you have 66ms.
+- **Process every 3rd frame**: 100ms per frame budget, very comfortable.
+- **Accuracy tradeoff**: For sign language, temporal resolution matters. Most signs take 0.5-2 seconds. At 30fps, a 1-second sign = 30 frames. At 15fps (every 2nd), you get 15 frames -- still adequate for most recognition models (TGCN was trained on 50-frame sequences). At 10fps (every 3rd), you get 10 frames -- this starts to lose fast transitions.
+- **Expected savings**: Does not reduce per-frame latency, but reduces CPU load, preventing thermal throttling and leaving CPU headroom for other pipeline stages.
+- **Implementation difficulty**: Trivial.
+- **Recommendation**: Process every 2nd frame. Use the "skipped" frames to interpolate keypoints linearly for smoother input to the recognition model.
+
+### A6. Resolution Reduction
+
+- **Key insight**: MediaPipe internally resizes input to 128x128 (detection) and 256x256 (tracking). Feeding it 640x480 vs 320x240 mainly affects the resize operation and any pre-processing you do.
+- **Expected savings**: Minimal for MediaPipe itself (2-5ms savings from smaller resize). Bigger savings in OpenCV capture and any pre-processing.
+- **Accuracy tradeoff**: Minimal -- MediaPipe handles internal resizing well. At very low resolutions (below 240p), hand detection may fail more often.
+- **Implementation difficulty**: Trivial. `cv2.resize(frame, (320, 240))` before passing to MediaPipe.
+- **Recommendation**: Use 320x240 or even 256x256. The savings are small but free.
+
+---
+
+## B. Model Inference Optimization
+
+### B1. ONNX Runtime for TGCN
+
+- **Benchmark data**: ONNX Runtime provides ~20% speedup over PyTorch for CPU inference (some benchmarks show up to 2.97x with the x86 quantization backend). For your tiny TGCN model (3.5MB), the absolute savings are small.
+- **Expected savings**: From 5-10ms down to 3-7ms. Saves ~3-5ms.
+- **For GCN specifically**: INT8 quantized GCN on ONNX can achieve 1.3-4.3x speedup depending on graph topology.
+- **Implementation difficulty**: Easy-Medium. `torch.onnx.export(model, ...)` then `ort.InferenceSession("model.onnx")`.
+- **Works on M1**: Yes, ONNX Runtime supports macOS ARM64.
+
+### B2. TensorFlow Lite
+
+- **Your Kaggle 1st-place option**: The `sign/kaggle-asl-signs-1st-place` model is already TFLite format (10.7MB, 250 signs), taking MediaPipe landmarks directly.
+- **Expected savings**: TFLite is highly optimized for CPU inference. Could replace your TGCN + DTW pipeline entirely if the 250-sign vocabulary is sufficient.
+- **Implementation difficulty**: Medium. Install `tflite-runtime` (~5MB), write inference wrapper, adapt input format.
+- **Works on M1**: Yes. `tflite-runtime` runs on macOS ARM64.
+
+### B3. CoreML Conversion
+
+- **The Nuclear Option for M1**: Convert your TGCN to CoreML format and run on the Neural Engine.
+- **Benchmarks**: M1 Neural Engine is ~3.5x faster than M1 GPU for supported operations. MobileNetV2: 15s on Neural Engine vs 82s on CPU (5.5x).
+- **Expected savings for TGCN**: From 5-10ms down to 1-2ms. The model is so small that the overhead of CoreML loading might negate the benefit.
+- **Implementation difficulty**: Medium. `import coremltools; coreml_model = ct.convert(traced_model)`. But GCN layers may not be fully supported -- you may need custom layer implementations.
+- **Recommendation**: Not worth it for your tiny TGCN. The absolute savings (3-8ms) do not justify the effort. CoreML is better suited for larger models.
+
+### B4. INT8 Quantization of TGCN
+
+- **Benchmark data**: PyTorch x86 INT8 quantization achieves 2.97x geomean speedup on CPU. For GCN layers specifically, speedups of 1.3-4.3x depending on topology.
+- **Expected savings**: From 5-10ms down to 2-4ms. Saves ~5ms.
+- **Accuracy tradeoff**: Typically <1% accuracy loss with post-training quantization. For GCN, the DEGREE-QUANT paper shows quantization-aware training can maintain accuracy.
+- **Implementation difficulty**: Easy-Medium. PyTorch dynamic quantization: `torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)`.
+- **Works on M1**: Partially. The x86 quantization backend is Intel-optimized. On ARM64/M1, quantization still works but the speedup may be less dramatic (~1.5-2x instead of 3x).
+
+### B5. Batch Inference
+
+- **Concept**: If you have multiple sign candidates, run them through the model in a single batch.
+- **Expected savings**: Minimal for your use case. You typically have one sign candidate at a time. Batch inference helps when you have parallel work, which your sequential pipeline does not produce.
+- **Recommendation**: Skip unless you implement a multi-hypothesis approach.
+
+---
+
+## C. Pipeline Architecture Optimization
+
+### C1. Sliding Window Detection (Instead of Pause-Based)
+
+- **Current approach**: Wait for 0.6s pause, then process the entire buffered sequence.
+- **Sliding window approach**: Run recognition on a rolling window of the last N frames continuously. Use CTC (Connectionist Temporal Classification) loss for continuous recognition without explicit segmentation.
+- **Expected savings**: Eliminates the 600ms pause threshold entirely. Recognition happens in real-time as frames arrive. This is potentially your single biggest win -- saving 600ms.
+- **Accuracy tradeoff**: More false positives, requires careful thresholding. CTC-based models handle this well but require retraining.
+- **Implementation difficulty**: Hard. Requires either retraining with CTC loss or implementing a sliding window with confidence thresholding on your existing models.
+- **Intermediate approach**: Reduce the overlap -- start running recognition on partial sequences while still accumulating frames. If confidence exceeds a threshold, emit early.
+- **Works on M1**: Yes.
+
+### C2. Overlap Detection and Recognition
+
+- **Concept**: Start running your TGCN/LSTM/DTW models on the partial sign sequence while the person is still signing. Update the prediction as more frames arrive.
+- **Expected savings**: 100-300ms. Instead of waiting for the full sequence, you can have a "draft" prediction ready by the time the person stops signing.
+- **Implementation difficulty**: Medium. Run inference every N frames on the current buffer. Keep a running "best guess."
+- **Accuracy tradeoff**: Early predictions may flip. Use a stability check -- only emit when the top prediction has been stable for 3+ inference cycles.
+
+### C3. Predictive Buffering / Pipeline Parallelism
+
+- **Concept**: While waiting for sign completion, pre-warm the LLM connection, pre-load TTS, start generating the LLM prompt. As soon as the sign is recognized, fire the LLM call instantly.
+- **Expected savings**: 50-100ms from connection pre-warming, potentially more from overlapping stages.
+- **Implementation difficulty**: Easy-Medium. Use asyncio or threading to prepare downstream stages while upstream is still processing.
+
+### C4. Reduce Pause Threshold from 0.6s
+
+- **Current**: 0.6s pause threshold.
+- **Research**: In natural ASL conversation, pauses between signs average 0.1-0.3s, with phrase boundaries at 0.5-1.0s. A 0.6s threshold catches phrase boundaries but misses individual sign boundaries.
+- **Safe minimum**: 0.3-0.4s for individual sign detection. Below 0.3s, you risk splitting multi-part signs.
+- **Expected savings**: 200-300ms by reducing from 0.6s to 0.3s.
+- **Accuracy tradeoff**: May split compound signs or classifiers that have brief internal pauses.
+- **Implementation difficulty**: Trivial. Change one number.
+- **Recommendation**: Reduce to 0.35s and test. Combine with a "motion energy" threshold -- only trigger sign completion when hand velocity drops below a threshold AND the pause exceeds 0.3s.
+
+---
+
+## D. LLM/TTS Latency
+
+### D1. Groq vs Claude Haiku vs Local LLM (Ollama)
+
+| Provider | TTFT | Tokens/sec | Network Latency | Cost |
+|----------|------|------------|----------------|------|
+| Groq (Llama 3.1 8B) | ~100-200ms | 300+ t/s | 50-100ms roundtrip | Free tier: 30 req/min |
+| Claude Haiku | ~500ms | ~133 t/s | 50-100ms roundtrip | $0.25/$1.25 per M tokens |
+| Ollama Llama 3.1 8B Q4 on M1 | ~300-500ms TTFT | 15-28 t/s | 0ms (local) | Free |
+| Ollama + MLX backend on M1 | ~200-400ms TTFT | 30-50 t/s | 0ms (local) | Free |
+
+- **For your task** (converting recognized signs to a sentence, <50 tokens output): Groq is the clear winner. ~100-200ms TTFT, and the full response arrives in <300ms total.
+- **Expected savings vs Claude Haiku**: 200-400ms.
+- **Local Ollama**: Eliminates network latency but TTFT is higher on M1. For very short outputs (<20 tokens), local might be competitive with Groq because you avoid network roundtrip.
+- **Implementation difficulty**: Easy. Groq uses OpenAI-compatible API.
+
+### D2. Skip LLM for Single Signs
+
+- **Huge win**: If only one sign is recognized, skip the LLM entirely. Map the sign label directly to its English word. No sentence assembly needed.
+- **Expected savings**: 100-500ms (entire LLM call eliminated).
+- **Implementation difficulty**: Trivial. `if len(recognized_signs) == 1: output = sign_to_word[sign]; else: call_llm()`.
+- **Recommendation**: Implement immediately. Most real-time interactions involve single signs or short phrases.
+
+### D3. Pre-Cached TTS Audio
+
+- **Concept**: Pre-generate audio files for your entire 300-sign vocabulary. When a single word is recognized, play the cached audio instantly.
+- **Expected savings**: 500-1000ms (entire TTS call eliminated for cached words).
+- **Implementation difficulty**: Easy. Generate 300 audio files offline, store in a dictionary. `pygame.mixer.Sound(cache[word]).play()`.
+- **For multi-word phrases**: Cache common 2-3 word phrases. For novel sentences, fall back to real-time TTS.
+- **Recommendation**: This is one of your highest-impact, lowest-effort optimizations.
+
+### D4. Streaming TTS
+
+- **Concept**: Start playing audio as soon as the first chunk is generated, before the full sentence is synthesized.
+- **Expected savings**: 200-500ms. Instead of waiting for full synthesis (~500-1000ms), start playback at ~100-200ms.
+- **Edge TTS supports streaming**: `edge_tts.Communicate()` supports async streaming out of the box.
+- **Implementation difficulty**: Medium. Need to set up streaming audio playback pipeline.
+- **CosyVoice2**: Achieves 150ms latency in streaming mode with 0.5B parameters, runs locally.
+
+---
+
+## E. System-Level Optimization
+
+### E1. Python GIL
+
+- **Key insight**: OpenCV releases the GIL during C/C++ operations (image processing, camera capture). NumPy also releases the GIL during array operations. MediaPipe's underlying C++ code also runs outside the GIL.
+- **You ARE GIL-bottlenecked if**: Your Python glue code (feature extraction, data copying, model input preparation) takes significant time between native calls.
+- **Threading approach**: Use a separate thread for camera capture (I/O-bound, GIL-released). This overlaps capture with processing.
+- **Multiprocessing approach**: Run MediaPipe in a separate process, pass keypoints via shared memory or a queue. Eliminates GIL contention entirely but adds IPC overhead (~1-2ms per frame).
+- **Expected savings**: 5-15ms from threaded camera capture. More from multiprocessing if your Python glue code is heavy.
+- **Implementation difficulty**: Easy for threading, Medium for multiprocessing.
+- **Recommendation**: Thread the camera capture immediately. Consider multiprocessing only if profiling shows Python code is a bottleneck.
+
+### E2. NumPy with Apple Accelerate
+
+- **Current state**: Default pip NumPy uses OpenBLAS. You can build NumPy with Apple's Accelerate/vecLib for optimized BLAS/LAPACK on M1.
+- **How**: `conda install -c conda-forge numpy "libblas=*=*accelerate"` or build from source with `NPY_LAPACK_ORDER=accelerate`.
+- **Expected savings**: Minimal for your workload. Accelerate shines on large matrix operations. Your 64-feature extraction and small model inference won't benefit much. Maybe 1-2ms across the pipeline.
+- **Implementation difficulty**: Easy (conda) to Medium (source build).
+- **Recommendation**: Low priority. Only worth it if you're already using conda.
+
+### E3. Process Priority
+
+- **macOS allows setting process priority**: `os.nice(-10)` or `renice` from terminal.
+- **Expected savings**: Minimal on a modern M1 unless other processes are competing. Maybe 1-5ms reduction in worst-case latency spikes.
+- **Implementation difficulty**: Trivial.
+
+---
+
+## F. Alternative Approaches
+
+### F1. Google SignGemma
+
+- **Architecture**: Vision transformer for hand shapes/facial expressions + compact language model (based on Gemini Nano/MatFormer architecture). Per-Layer Embeddings (PLE) for efficiency.
+- **Claimed latency**: <200ms end-to-end on some devices. This includes recognition AND translation.
+- **How they achieve it**: Fully on-device, no network calls, vision transformer optimized for edge, no separate MediaPipe + recognition + LLM pipeline -- it's a single end-to-end model.
+- **Availability**: Limited preview as of mid-2025, broader release expected Q4 2025. May or may not be publicly available now (April 2026).
+- **Trained on**: 10,000+ hours of annotated ASL video.
+- **Recommendation**: Check if the preview is accessible. If available, it could replace your entire pipeline. But it may be locked to Google's ecosystem (Android/Pixel devices).
+
+### F2. Skeleton-Based vs Video-Based
+
+- **Skeleton-based** (your approach): MediaPipe extracts keypoints first, then a lightweight model (TGCN, LSTM, DTW) processes keypoints. Pros: Fast inference (2-20ms), small models (3-25MB), robust to background. Cons: Depends on MediaPipe accuracy, loses texture/appearance cues.
+- **Video-based**: Feed raw frames to a large model (VideoMAE, I3D, SlowFast). Pros: Can capture subtle hand shapes and textures. Cons: Much slower (2-5 seconds per inference on CPU), huge models (300MB+).
+- **Speed winner**: Skeleton-based is dramatically faster. DSLNet (skeleton-based) achieves 17.98ms inference vs VideoMAE at 2-5 seconds on CPU.
+- **Accuracy comparison on WLASL-100**: DSLNet skeleton-based achieves 93.70%, VideoMAE video-based achieves 46.5%.
+- **Your approach is correct**: Skeleton-based is the right choice for real-time applications.
+
+### F3. Production System Architectures
+
+Real production systems (SignAll, Sign-Speak) use:
+- Multiple cameras (front + side views for depth)
+- Skeleton-based pipelines for speed
+- Hybrid cloud/edge: simple signs on-device, complex sentences to cloud
+- Pre-cached common phrases
+- Streaming results (show partial translation, refine as more signs come in)
+
+---
+
+## PRIORITIZED IMPLEMENTATION LIST
+
+Ranked by **latency savings / implementation effort**:
+
+### Tier 1: Do Today (combined savings: ~1200-1800ms)
+
+| Priority | Optimization | Savings | Effort | Risk |
+|----------|-------------|---------|--------|------|
+| **1** | Pre-cache TTS for all 300 signs | 500-1000ms | Easy (2-3 hrs) | None |
+| **2** | Skip LLM for single-word signs | 100-500ms | Trivial (30 min) | None |
+| **3** | Reduce pause threshold to 0.35s | 200-300ms | Trivial (5 min) | Low -- test with compound signs |
+| **4** | Switch to Groq for multi-word LLM | 200-400ms | Easy (1 hr) | Low -- test quality |
+| **5** | MediaPipe model_complexity=0 | 15ms/frame | Trivial (5 min) | Low -- slightly more jitter |
+
+### Tier 2: Do This Week (combined savings: ~300-600ms additional)
+
+| Priority | Optimization | Savings | Effort | Risk |
+|----------|-------------|---------|--------|------|
+| **6** | Threaded camera capture | 5-15ms/frame | Easy (1 hr) | None |
+| **7** | Frame skipping (every 2nd frame) | CPU headroom | Trivial (15 min) | Low -- interpolate |
+| **8** | Overlap recognition (run inference on partial buffer) | 100-300ms | Medium (4-6 hrs) | Medium -- may get early wrong predictions |
+| **9** | Streaming TTS for multi-word phrases | 200-500ms | Medium (3-4 hrs) | Low |
+| **10** | Resolution reduction to 320x240 | 2-5ms/frame | Trivial (5 min) | Minimal |
+
+### Tier 3: Do Next Sprint (additional savings: ~50-200ms)
+
+| Priority | Optimization | Savings | Effort | Risk |
+|----------|-------------|---------|--------|------|
+| **11** | ONNX Runtime for TGCN | 3-5ms | Easy-Medium (2 hrs) | None |
+| **12** | INT8 quantization of TGCN | 3-5ms | Medium (3 hrs) | <1% accuracy loss |
+| **13** | MediaPipe Tasks API migration | 2-5ms/frame | Medium (half day) | None |
+| **14** | Pipeline pre-warming (pre-open LLM connection) | 50-100ms | Easy (1 hr) | None |
+
+### Tier 4: Major Rearchitecture (if needed)
+
+| Priority | Optimization | Savings | Effort | Risk |
+|----------|-------------|---------|--------|------|
+| **15** | Sliding window CTC recognition (eliminate pause) | Eliminate 350ms+ pause | Hard (1-2 weeks) | Requires retraining |
+| **16** | MediaPipe Hands-only (if model allows) | 15-25ms/frame | Medium (retrain needed) | Lose facial/body info |
+| **17** | CoreML pipeline for MediaPipe replacement | 20-40ms/frame | Hard (weeks) | Significant engineering |
+| **18** | Integrate SignGemma (if available) | Replace entire pipeline | Hard (unknown) | Availability uncertain |
+
+---
+
+## Expected Results After Tier 1 + Tier 2
+
+**Single-word sign (most common case):**
+- MediaPipe: ~15ms (complexity=0)
+- Feature extraction: ~1ms
+- Buffer pause: ~350ms (reduced from 600ms)
+- TGCN: ~5-10ms
+- LLM: SKIPPED
+- TTS: INSTANT (pre-cached)
+- **Total: ~370ms** (down from ~1.2-1.7s)
+
+**Multi-word phrase:**
+- Same detection pipeline: ~370ms per sign
+- Groq LLM: ~200-300ms
+- Streaming TTS: ~200ms to first audio
+- **Total: ~770ms** (down from ~1.5-2s)
+
+This gets you under 400ms for single signs and under 800ms for phrases -- approaching conversational real-time.
+agentId: a3ca3a7e35a26bd78 (use SendMessage with to: 'a3ca3a7e35a26bd78' to continue this agent)
+<usage>total_tokens: 61433
+tool_uses: 35
+duration_ms: 574767</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

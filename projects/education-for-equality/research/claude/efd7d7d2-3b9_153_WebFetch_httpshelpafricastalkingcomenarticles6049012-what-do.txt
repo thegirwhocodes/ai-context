@@ -1,0 +1,44 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-s
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 22:51:02 UTC
+========================================================================
+
+URL: https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection
+Extraction prompt: List ALL details about setting up a SIP trunk with Africa's Talking. What IP addresses, ports, protocols, credentials are needed? How does call routing work? Step by step setup process. Any Asterisk specific info.
+
+----------------------------------------
+
+# SIP Trunk Setup with Africa's Talking
+
+Based on the help article, here's what's provided:
+
+## Requirements
+"A PBX server(on cloud or on premise)" is the only technical prerequisite listed.
+
+## Setup Process
+
+The documentation outlines these steps:
+
+1. **Apply for a voice phone number**
+2. **Complete KYC verification** - "We share a KYC document with you that you sign"
+3. **Pay for the phone number** (pricing available at africastalking.com/pricing)
+4. **IP Whitelisting** - "You share your trunk's(PBX) IP address for whitelisting"
+5. **Configure callback URL** - Once IP is whitelisted, update the callback URL via dashboard (Voice → Phone Numbers → Actions → Callback URL)
+6. **URL Format**: "trunk:trunk_ip_address eg: trunk:127.0.0.1"
+7. **Test** - "You can now set up your PBX and test"
+
+## Important Limitation
+
+The article provides **no details** on:
+- Specific ports or protocols
+- SIP credentials or authentication
+- Call routing mechanics
+- Asterisk-specific configuration
+- Network/firewall requirements
+
+**Recommendation**: Contact Africa's Talking support directly for technical specifications needed for your PBX system, as this introductory guide only covers the business process, not implementation details.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

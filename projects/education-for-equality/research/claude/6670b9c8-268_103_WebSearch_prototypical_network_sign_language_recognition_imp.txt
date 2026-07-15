@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: prototypical network sign language recognition implementation github code pretra
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:26:13 UTC
+========================================================================
+
+Search query: prototypical network sign language recognition implementation github code pretrained 2024 2025
+
+----------------------------------------
+
+Web search results for query: "prototypical network sign language recognition implementation github code pretrained 2024 2025"
+
+Links: [{"title":"GitHub - kaistmm/SlowFastSign: [ICASSP 2024] Official code for Slowfast Network for Continuous Sign Language Recognition","url":"https://github.com/kaistmm/SlowFastSign"},{"title":"GitHub - FrederikSchorr/sign-language: Sign Language Recognition for Deaf People","url":"https://github.com/FrederikSchorr/sign-language"},{"title":"GitHub - hulianyuyy/CorrNet: Continuous Sign Language Recognition with Correlation Network (CVPR 2023) · GitHub","url":"https://github.com/hulianyuyy/CorrNet"},{"title":"sign-language-recognition-system · GitHub Topics GitHub","url":"https://github.com/topics/sign-language-recognition-system"},{"title":"GitHub - ZechengLi19/Awesome-Sign-Language: Paper list of sign language, including sign language recognition(SLR), sign language translation(SLT) and other work. Quick start your awesome work with us!! 🤟🤟🤟","url":"https://github.com/ZechengLi19/Awesome-Sign-Language"},{"title":"sign-language · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language"},{"title":"sign-language-recognition · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language-recognition"},{"title":"GitHub - sumedhsp/Sign-Language-Recognition: Sign Language Recognition (I3D + Transformers) on WLASL Dataset - Computer Vision Final Project (CS-GY 6643)","url":"https://github.com/sumedhsp/Sign-Language-Recognition"},{"title":"sign-language-recognition-system · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language-recognition-system?l=python&o=desc&s=updated"},{"title":"GitHub - AvishakeAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model: Realtime Sign Language Detection: Deep learning model for accurate, real-time recognition of sign language gestures using Python and TensorFlow.","url":"https://github.com/AvishakeAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model"}]
+
+Based on the web search results, here are the key findings related to sign language recognition implementations:
+
+## Recent Sign Language Recognition Projects (2024-2025)
+
+**SlowFastSign (ICASSP 2024)**
+SlowFastSign is an official implementation for Continuous Sign Language Recognition with pretrained weights available, published at ICASSP 2024. The repository is available on GitHub at `kaistmm/SlowFastSign`.
+
+**CorrNet (CVPR 2023, Updated 2025)**
+CorrNet released an enhanced version called CorrNet+ in April 2024, and in January 2025 released a demo for continuous sign language recognition supporting multi-image and video inputs. The project is implemented in PyTorch (version ≥1.13 recommended).
+
+**Other Notable Implementations**
+One project uses a pretrained I3D model for extracting spatiotemporal features from video sequences, with 3D convolutions to model motion patterns in signing gestures. Various other projects exist using CNN+LSTM, 3D CNN, GCN, and Encoder-Decoder architectures.
+
+**Comprehensive Resource**
+Several recent papers on sign language recognition were published in 2024-2025, including works on continuous sign language recognition and translation, as well as lightweight models based on MediaPipe and knowledge distillation techniques.
+
+The search results show active development in sign language recognition with multiple pretrained models and implementations available on GitHub, though no specific prototypical network implementations were found in these results.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

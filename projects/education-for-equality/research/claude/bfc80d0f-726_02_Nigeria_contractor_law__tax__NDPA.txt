@@ -1,0 +1,233 @@
+========================================================================
+AGENT RESEARCH: Nigeria contractor law + tax + NDPA
+Session: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234
+Time: 2026-06-06 17:26:43 UTC
+========================================================================
+
+Research the legal requirements for a compliant INDEPENDENT CONTRACTOR agreement in Nigeria, where the contractor is a Lagos-based individual doing field work for a (currently unincorporated, US-founded) education organization. Be concrete and exhaustive — this is to benchmark and harden a real contract.
+
+Cover:
+- Nigerian law distinction between an employee and an independent contractor: the tests Nigerian courts/use (control test, integration/organization test, multiple/economic-reality test), and what determines classification. Consequences of misclassification under the Labour Act and case law.
+- What the Nigerian Labour Act does and does NOT require for independent contractors (vs employees who get the statutory protections, notice, redundancy, etc.).
+- Taxation of an independent contractor in Nigeria: personal income tax / direct assessment vs PAYE; Withholding Tax on contract/consultancy payments (the applicable WHT rates — e.g. 5% / 10% — and who remits it); whether the engager must deduct WHT when paying an individual contractor; VAT considerations; the new tax reform acts effective 2025/2026 if relevant. Pension Reform Act — is a contractor covered (employer pension contribution) or exempt?
+- Nigeria Data Protection Act (NDPA) 2023 — obligations when a worker handles personal data of children: lawful basis, consent (parental consent for minors), data-controller vs data-processor, security, the role of the Nigeria Data Protection Commission (NDPC), data-protection clauses a contract should contain. Also any child-rights law: Child Rights Act 2003 / Lagos State Child Rights Law obligations relevant to someone working directly with children.
+- Standard provisions a Nigerian independent-contractor/consultancy agreement should contain (governing law clause — Lagos State / FRN, dispute resolution / arbitration norms in Nigeria, stamp duty on agreements, payment in Naira).
+- Anything specific about engaging a Nigerian contractor for/by a foreign (US) entity that isn't yet locally registered (CAC) — is that allowed, FX/payment, permanent-establishment risk.
+
+Return AT LEAST 90% of the substantive content — every statute name and section, every tax rate/percentage, every test, every requirement. Do NOT summarize to bullet headlines; write the full detail with explanation. Cite sources inline (URLs).
+
+----------------------------------------
+
+I have verified the personal income tax bands and resolved the VAT threshold (there is genuine conflicting reporting — Section 53(3) sets it; the official/most-cited figure under the NTA 2025 is ₦25M, with some commentators citing ₦100M for the broader small-company exemption from CIT/VAT). I'll flag this conflict in the report. I now have exhaustive, cited coverage. Here is the synthesized research report.
+
+---
+
+# Compliant Independent-Contractor Agreement in Nigeria — Legal Research Report
+
+**Scenario:** A Lagos-based individual performing field work (working directly with children) for a currently-unincorporated, US-founded education organization. Everything below is benchmarked to that fact pattern. Where the law genuinely conflicts across sources, I flag it.
+
+---
+
+## 1. Employee vs. Independent Contractor: the classification tests and misclassification consequences
+
+### The core legal distinction
+Nigerian law distinguishes a **"contract OF service"** (an employee) from a **"contract FOR service"** (an independent contractor / consultant). Employees get the Labour Act's statutory protections; independent contractors do not — they "work under agreed-upon terms until the service is completed" and "are not entitled to the same benefits as employees." (https://workforceafrica.com/nigeria/employees-independent-contractors/, https://iclg.com/practice-areas/employment-and-labour-laws-and-regulations/nigeria)
+
+### The tests Nigerian courts apply
+
+**(a) The Control Test.** Examines the degree of control the engaging party has over *how* the work is performed — supervision, work methods, hours, exclusivity. This is the historic primary test. The leading Supreme Court authority is **Shena Security Co. Ltd v. Afropak (Nig.) Ltd & Ors (2008)** (decided 9 May 2008, (2008) JELR 49444 (SC)). (https://www.lawglobalhub.com/shena-security-co-ltd-vs-afropak-nig-ltd-ors-2008-lljr-sc/, https://legalpediaonline.com/shena-security-co-ltd-v-afropak-nig-ltd/)
+
+**(b) The Integration / Organization Test.** Asks how integral the worker is to the business — is the person part of the organization, or merely providing a service to it.
+
+**(c) The Multiple / Economic-Reality / Mixed Test.** The modern, dominant approach: courts weigh a *basket* of factors rather than any single one. In **Shena Security v. Afropak**, the Supreme Court laid down the guiding factors (https://legalpediaonline.com/shena-security-co-ltd-v-afropak-nig-ltd/, https://legalguru.com.ng/contract-of-service-contract-for-service-factors-to-consider/):
+
+- **Method of payment** — payment by "wages" or "salaries" points to a contract OF service (employee); payment by "fees" points to a contract FOR service (independent contractor).
+- **Tools and capital equipment** — if the engager supplies the tools/capital equipment, that strongly indicates employment; if the worker invests and provides their own capital/tools, that indicates an independent contractor.
+- **Office accommodation** — if the engager provides office accommodation and a secretary, it points to employment.
+- Other recognised factors: degree of control, integration into the business, ability to hire substitutes/delegate, exclusivity, and who bears financial risk.
+
+**(d) Substance over form.** Nigerian courts and tax authorities look **beyond the label** in the contract to the actual practice. A document headed "independent contractor" will still be treated as employment if the real relationship shows employer control, fixed hours, integration, and economic dependence. (https://smartsmssolutions.com/resources/blog/ng/remote-contractor-vs-employee-nigeria, https://www.rivermate.com/guides/nigeria/freelancing). The Court of Appeal in **Iyere v. Bendel Feed and Flour Mill Ltd** confirmed employment rights do not extend to contractors "unless the nature of the relationship amounts to employment in substance." (https://www.usemultiplier.com/nigeria/hiring-contractors)
+
+### Consequences of misclassification
+If a purported contractor is reclassified as an employee, the engager faces **retroactive liability** for:
+- Employee benefits (e.g., the 13th-month salary where applicable), **pension contributions**, leave, redundancy pay;
+- **Back-taxes and penalties from FIRS / the relevant State Internal Revenue Service** (PAYE that should have been deducted);
+- Reclassification by regulators who "prioritize the actual nature of the work over the written contract." (https://www.usemultiplier.com/nigeria/hiring-contractors, https://hrbsglobal.com/resources/blogs/hire-contractors-in-nigeria/)
+
+Disputes are heard by the **National Industrial Court of Nigeria (NICN)**, which has **original exclusive jurisdiction over all labour and employment matters** (s.254C, 1999 Constitution as amended). (https://iclg.com/practice-areas/employment-and-labour-laws-and-regulations/nigeria)
+
+**Drafting implication:** to hold the "contractor" label, the contract and the lived relationship should (i) pay **fees** (e.g., per-day, per-deliverable, monthly retainer described as fees) not a "salary"; (ii) have the contractor use **their own equipment**; (iii) avoid fixed office hours/exclusivity; (iv) allow the contractor to control *how* the field work is done; (v) permit (limited) delegation; and (vi) state the contractor bears their own tax/pension obligations.
+
+---
+
+## 2. What the Labour Act does and does NOT require
+
+**Statute:** Labour Act, **Cap L1, Laws of the Federation of Nigeria (LFN) 2004** (https://lawsofnigeria.placng.org/laws/L1.pdf; ILO NATLEX record https://webapps.ilo.org/dyn/natlex/natlex4.detail?p_isn=42156).
+
+**Who it protects.** The Act applies only to a **"worker"** — defined as a person performing **manual labour or clerical work**. It **excludes** persons in **administrative, executive, technical or professional** functions ("non-workers"), and it does **not** apply to independent contractors at all. (https://iclg.com/practice-areas/employment-and-labour-laws-and-regulations/nigeria, https://mjgadzama.com/2021/06/23/a-general-overview-of-labour-and-employment-laws-in-nigeria-the-statutory-narrative-on-employment/)
+
+**What employees ("workers") get that contractors do NOT:**
+- **Written statement of terms within 3 months** — **Section 7**, Labour Act.
+- **Statutory minimum notice of termination — Section 11**: one day if service ≤3 months; one week if ≤2 years; two weeks if ≤5 years; one month if 5 years or more (or payment in lieu). (https://iclg.com/practice-areas/employment-and-labour-laws-and-regulations/nigeria)
+- **Redundancy** — defined in **Section 20(3)** as "an involuntary and permanent loss of employment caused by an excess of manpower," carrying consultation and "last-in-first-out" / redundancy-pay norms. (https://nelex.gov.ng/documents/LABOUR_ACT.pdf)
+- **Maternity leave** (Section 54 — applies more broadly than just "workers"), annual leave, sick leave, regulated hours, minimum wage.
+
+**For an independent contractor, NONE of the above is statutorily required.** The relationship is governed **entirely by the contract** — no statutory notice, no redundancy pay, no leave, no minimum-wage floor, no written-statement obligation. This is precisely why genuine independent-contractor status is attractive, and why misclassification is the central risk (Section 1 above).
+
+---
+
+## 3. Taxation of the contractor
+
+### (a) Personal income tax — Direct Assessment, not PAYE
+A self-employed individual (professional, contractor, trader) is taxed by **Direct Assessment**, *not* PAYE. PAYE applies to **employees' emoluments**; the employer deducts and remits by the **10th day** of the following month. **Direct Assessment** is the system for "self-employed persons such as professionals, contractors, traders and landlords": the contractor **files their own annual return and pays estimated tax**, with the return due **on or before 31 March** each year (Lagos LIRS extended the 2026 filing deadline to **14 April 2026**). (https://lirs.gov.ng/tax-information/tax-types, https://www.fscprofessionals.com/2026/03/09/personal-income-tax-returns-in-lagos-even-if-your-employer-deducts-paye/)
+
+The contractor's PIT is administered by the **Lagos State Internal Revenue Service (LIRS)** because tax follows the individual's state of residence.
+
+**PIT rate bands (new graduated table — 4th Schedule, Nigeria Tax Act 2025, effective 1 Jan 2026)** (https://taxsummaries.pwc.com/nigeria/individual/taxes-on-personal-income):
+- First **₦800,000** — **0%**
+- Next ₦2,200,000 — **15%**
+- Next ₦9,000,000 — **18%**
+- Next ₦13,000,000 — **21%**
+- Next ₦25,000,000 — **23%**
+- Above ₦50,000,000 — **25%**
+
+The old "1% minimum tax" is effectively replaced by the expanded 0% band; individuals earning ≤ the national minimum wage (cited as ₦70,000/month) are no longer liable to PAYE. (same source)
+
+**The engager does not run PAYE for a genuine contractor** — but it generally must deduct WHT (below).
+
+### (b) Withholding Tax (WHT) on consultancy/contract payments — who deducts and at what rate
+WHT is **deducted at source by the payer (the engager/"withholder")** and remitted to the relevant authority; it is **an advance/credit against the contractor's final PIT**, not an extra tax. (https://firs.gov.ng/withholding-tax-wht/, https://taxsummaries.pwc.com/nigeria/corporate/withholding-taxes)
+
+**Rates (per PwC Nigeria WHT summary):**
+- **Professional / management / technical / consultancy fees:** **5%** for resident recipients (corporate or individual); **10%** for non-resident recipients.
+- **Supply of goods/materials (non-manufacturer):** **2%** (residents).
+- **Construction:** general 2–5% (residents).
+
+For a **resident Lagos individual** providing field/consultancy services, the engager should withhold **5%** and remit it.
+
+**Remittance & compliance details:**
+- Remit by the **21st day of the month following payment** (PwC; FIRS/SIRS administer; some commentary cites "within 30 days of month-end"). (https://taxsummaries.pwc.com/nigeria/corporate/withholding-taxes)
+- **No valid TIN → WHT rate is doubled, capped at 20%.** So the contract should require the contractor's **TIN**.
+- The withholder must **issue a WHT credit note/receipt**, which entitles the contractor to claim the credit — and under the 2025 reforms this entitlement now arises **even if the engager has not yet remitted**. (https://www.aelex.com/nigerias-withholding-tax-reforms/, https://www.reanda-international.com/news/nigeria-nigerias-withholding-tax-reforms-key-changes-and-sectoral-impacts)
+- **Penalties:** non-deduction = 40% of the amount that should have been withheld; non-remittance = 10% plus interest at the CBN Monetary Policy Rate. (https://taxsummaries.pwc.com/nigeria/corporate/withholding-taxes)
+- **Small-company / de-minimis relief:** WHT need not be deducted where the transaction value is **below ₦2,000,000** and the vendor has a valid TIN. (same source)
+- **2025 reform on consultancy WHT:** rate for resident companies providing professional/management/technical/consultancy services was **reduced from 10% to 5%**; non-residents remain at **10%**. (https://www.bakertilly.ng/insights/nigerias-2025-tax-reform-acts-explained)
+
+**Important practical wrinkle for an unincorporated foreign engager:** WHT deduction-and-remittance is a duty placed on a Nigerian taxpayer/withholder. A US org with no Nigerian tax registration has no FIRS/LIRS account to remit through. In practice this means either (i) the **contractor self-accounts** for the full tax under Direct Assessment (no WHT deducted because the foreign payer is outside the Nigerian WHT net), or (ii) if the engager later registers/uses an agent, it withholds 5%. The cleanest contractual position: state that **the contractor is responsible for all of their own Nigerian taxes**, and that **if the engager becomes obliged under Nigerian law to withhold, it may do so** (a gross-up/withholding clause).
+
+### (c) VAT
+Standard **VAT rate is 7.5%** (unchanged by the NTA 2025). (https://www.simplvest.com/understanding-vat-under-the-new-tax-act-2025/)
+
+A consultant who is **VAT-registered** must charge 7.5% on their fees and remit it. **VAT registration threshold:** under **Section 53(3), Nigeria Tax Act 2025**, mandatory VAT registration applies where annual turnover **exceeds ₦25 million** — small businesses below that are exempt from charging VAT. (https://www.simplvest.com/understanding-vat-under-the-new-tax-act-2025/)
+
+⚠️ **Source conflict to verify with a Nigerian tax adviser:** some commentary cites a **₦50 million** VAT-registration threshold and a **₦100 million** "small company" turnover line (the small-company exemption from CIT/CGT/VAT). The ₦100M figure is the **company income-tax "small company"** definition (turnover ≤₦100M *and* fixed assets ≤₦250M → 0% CIT), which several sources conflate with the VAT threshold. (https://www.bakertilly.ng/insights/nigerias-2025-tax-reform-acts-explained, https://keepam.ng/vat-guide-nigeria) For an **individual field contractor**, turnover will almost certainly be **below any of these thresholds**, so the contractor will typically **not need to register for or charge VAT** — but the contract should still address VAT (state whether fees are VAT-inclusive/exclusive).
+
+### (d) Pension Reform Act 2014 — is a contractor covered?
+**Statute:** Pension Reform Act 2014 (Act No. 4 of 2014) (https://www.pencom.gov.ng/wp-content/uploads/2018/01/PRA_2014.pdf).
+
+- The mandatory **Contributory Pension Scheme (CPS)** applies to **employees** of organizations with **15 or more employees** (and was extended toward smaller employers). It is **employer–employee**: contribution **18% of monthly emoluments** under **Section 4(1)** — **10% employer + 8% employee**. (https://ao2law.com/a-decade-post-the-pension-reform-act-2014-any-need-for-change/, https://smartsmssolutions.com/resources/blog/ng/statutory-deductions-payroll-pension-nhf-emtl-nigeria)
+- **An independent contractor is NOT an "employee," so there is no mandatory employer pension contribution.** Self-employed persons (and those in organizations with fewer than 3 employees) may **voluntarily** participate via the **Micro Pension Plan (MPP)** administered by PenCom. (https://www.pencom.gov.ng/micro-pension/)
+
+**Bottom line:** the engager owes **no pension contribution** for a genuine contractor. (Misclassification would, however, expose it to back-pension at 10% employer share — see Section 1.)
+
+---
+
+## 4. Data protection (NDPA 2023) + child-rights law — critical because this worker handles children's personal data
+
+### Nigeria Data Protection Act (NDPA) 2023
+**Statute:** Nigeria Data Protection Act, 2023 (official text: https://cert.gov.ng/ngcert/resources/Nigeria_Data_Protection_Act_2023.pdf). Regulator: **Nigeria Data Protection Commission (NDPC)**. Detailed section references below are from the G. Elias and Future of Privacy Forum reviews (https://fpf.org/blog/nigerias-new-data-protection-act-explained/, https://www.gelias.com/images/Newsletter/The_Nigerian_Data_Protection_Act_2023_-_A_Review.pdf).
+
+**Controller vs. processor (definitions):**
+- **Data controller** — the person/entity that **determines the purposes and means** of processing.
+- **Data processor** — the person/entity that **processes personal data on behalf of, or at the direction of**, a controller.
+- In this scenario the **organization is the data controller** (it decides why/how children's data is collected); the **field worker is acting on its behalf**. If the worker is a genuinely independent service provider determining their own means, they could be a **separate processor** (or even a joint controller). Either way, **a written agreement is required** between them (see Section 29 below).
+
+**Six lawful bases of processing — Section 25:** (1) **consent** for a specific purpose; (2) performance of a **contract** to which the data subject is party; (3) compliance with a **legal obligation**; (4) protection of **vital interests**; (5) **public interest / official authority**; (6) **legitimate interests** (not available where it conflicts with another lawful basis or overrides the subject's rights).
+
+**Children's data — Section 31 (the key provision here):**
+- A **"child" = under 18 years** (aligned with the Child Rights Act).
+- **Parental/guardian consent must be obtained explicitly** before processing a child's personal data.
+- Controllers must apply **appropriate age- and consent-verification mechanisms** "taking into consideration available technology"; **a government-approved ID** is sufficient verification.
+- **Narrow exceptions** (process without parental consent): to protect the **vital interests** of the child; for **education, medical, or social care** by/under a professional owing a duty of confidentiality; or for **court proceedings** relating to the child.
+
+**Sensitive personal data — Section 30:** processing generally prohibited unless a condition (e.g., explicit consent, substantial public interest) is met.
+
+**Duty of care / accountability — Section 24.**
+
+**Security — Section 39:** controllers/processors must implement appropriate technical and organizational security (e.g., **pseudonymization, encryption, periodic risk assessments**), calibrated to the volume/sensitivity of data and cost of technology.
+
+**Written data-processing agreement — Section 29:** when a controller engages a processor (or a processor a sub-processor), there must be a **written agreement** binding the engaged party to: implement appropriate security measures; assist the controller in meeting data-subject rights; provide information to demonstrate compliance; and notify before engaging a new sub-processor.
+
+**Data Protection Impact Assessment (DPIA) — Section 28:** required **before** processing likely to result in **high risk** to data subjects' rights — and **processing children's data at scale is a classic high-risk trigger**, so a DPIA should be done.
+
+**Data Protection Officer — Section 32:** mandatory only for **"data controllers/processors of major importance."**
+
+**Data controllers/processors of major importance — Section 44:** entities domiciled/resident/operating in Nigeria processing personal data of a large number of subjects, or data of particular value/significance to Nigeria's economy/society/security; must **register with NDPC within 6 months** of commencement / of meeting the criteria.
+
+**Breach notification — Section 40:** processor → controller "as soon as" aware; controller → **NDPC within 72 hours**; controller → affected data subjects "without undue delay" where high risk.
+
+**Data subject rights — Section 31 et seq.:** access/information, rectification, erasure, restriction, objection (incl. to direct marketing), data portability, withdrawal of consent, and protection against solely-automated decisions.
+
+**NDPC enforcement — Section 5 (functions) & enforcement powers:** issues regulations/guidance, licenses Data Protection Compliance Organizations (DPCOs), investigates complaints, conducts audits, and issues **compliance/enforcement orders** (remedy, compensation, account for profits, penalties).
+
+**Penalties — Section 56:**
+- **Controller/processor of major importance:** the **higher of ₦10,000,000 or 2% of annual gross revenue** of the preceding year.
+- **Other controllers/processors:** the **higher of ₦2,000,000 or 2% of annual gross revenue**.
+
+**DPCO audit threshold:** an annual data-protection audit (via a licensed DPCO) is expected where processing exceeds ~**2,000 data subjects in 12 months**.
+
+### Child-rights law (working directly with children)
+- **Child Rights Act 2003** (Act No. 26 of 2003) (https://features.hrw.org/features/african-union/files/Nigeria%20-%20Child%20Rights%20Act%20No.%2026%20of%202003.pdf). **Child = under 18.** Built around protection from discrimination, neglect and exploitation, prevention of harm, and provision for basic needs. **Part III** prohibits harmful practices, exploitative child labour, sexual violence/abuse, and child marriage, with penalties.
+- **Lagos State Child's Rights Law 2007** — Lagos adopted the federal Act in 2007 (the CRA is federal but must be domesticated state-by-state; **Lagos has done so**). It is the operative child-protection statute in Lagos. (https://en.wikipedia.org/wiki/Child_Rights_Act_in_Nigeria, https://www.chamanlawfirm.com/overview-of-the-child-right-act-2003/)
+
+**Contract implications:** because the worker is in direct contact with children, the agreement should impose **safeguarding obligations** beyond data protection — e.g., a warranty of **no record/conviction for offences against children**, mandatory adherence to a **child-safeguarding / code-of-conduct policy**, prohibition on any exploitation or harm, and a **reporting duty** for safeguarding concerns. A **background check / character clearance** is a reasonable pre-engagement condition.
+
+---
+
+## 5. Standard provisions a Nigerian independent-contractor / consultancy agreement should contain
+
+- **Parties & status clause** — expressly an **independent contractor / contract FOR service**, no employment relationship, no entitlement to employee benefits; contractor controls the manner of work (reinforces Section 1 classification).
+- **Scope of work / deliverables / fees** — paid as **fees** (not salary), in **Naira (NGN)** to satisfy local FX practice (foreign currency may be referenced but settlement in NGN is the norm — see Section 6); include the **exchange-rate mechanism** if any FX element.
+- **Tax clause** — contractor responsible for own PIT (Direct Assessment) and any VAT; provides **TIN**; engager may **withhold 5% WHT** and issue a credit note if/when obliged.
+- **No-pension/no-employee-benefits clause** — confirms no employer pension (PRA 2014) or statutory entitlements.
+- **Confidentiality + data-protection clause** — NDPA-compliant DPA terms (Section 29 obligations: security, assist with data-subject rights, 72-hour breach notice to controller, no sub-processing without consent), parental-consent handling, and **child-safeguarding** undertakings.
+- **IP assignment** — work product/IP vests in the organization (don't rely on employee-IP defaults; for a contractor IP must be **expressly assigned**).
+- **Indemnity & liability**, **insurance** (consider), **termination** (notice/cure — contractual, since no statutory notice applies), **non-solicitation**.
+- **Governing law clause** — **Laws of the Federal Republic of Nigeria** and, for state-administered matters, **Lagos State**. (Federal statutes — Labour Act, NDPA, NTA — apply nationally; PIT administration and the Child's Rights Law are Lagos-State-level.)
+- **Dispute resolution / arbitration** — Nigeria's framework is the federal **Arbitration and Mediation Act 2023** and, for a Lagos seat, the **Lagos State Arbitration Law 2009 (LSAL)** (which applies unless parties opt out; both reflect the 2006 UNCITRAL Model Law amendments). The arbitration clause should specify **seat (Lagos), number of arbitrators, appointing authority, and language**; common appointing authorities are the **Lagos Court of Arbitration (LCA)** or the **Chartered Institute of Arbitrators (UK), Nigeria Branch**. The AMA 2023 First Schedule contains a model clause. (https://globalarbitrationreview.com/insight/know-how/commercial-arbitration/report/nigeria, https://iclg.com/practice-areas/international-arbitration-laws-and-regulations/nigeria, https://delosdr.org/wp-content/uploads/2018/06/Delos-GAP-2nd-edn-Nigeria.pdf)
+- **Stamp duty** — under the **Nigeria Tax Act 2025**, a general agreement/contract not otherwise specified attracts a **fixed duty of ₦1,000** regardless of value (Ninth Schedule). The instrument must be **stamped within 30 days of execution** (**Section 26 NTA**, reduced from 40 days). **The person who benefits pays** (Section 126(2) / Ninth Schedule). An **unstamped instrument is generally inadmissible in evidence** in civil proceedings (**Section 127 NTA**) — so stamp it. (https://ng.andersen.com/signed-sealed-and-taxed-stamp-duty-compliance-under-the-nigeria-tax-act-2025/, https://ica.ng/stamp-duty-costs-categories-and-application-process-in-nigeria-2025/)
+- **Currency: payment in Naira** (see above and Section 6).
+
+---
+
+## 6. Engaging a Nigerian contractor for a foreign (US) entity not yet CAC-registered
+
+**Is it allowed?** Yes — **a foreign company can engage an independent contractor in Nigeria without registering a local entity.** The CAC-registration requirement is for a foreign company that wants to **"carry on business" / operate** in Nigeria itself (which requires incorporating a separate Nigerian company, **minimum authorised share capital ₦100,000,000** for foreign-participation companies). Simply paying an arm's-length Nigerian contractor for services is not, by itself, "carrying on business" requiring CAC registration. (https://hrbsglobal.com/resources/blogs/hire-contractors-in-nigeria/, https://corporatezaddy.ng/cac-registration-for-foreign-companies/)
+
+**The two real risks:**
+
+1. **Misclassification → de-facto operation/employment.** If the "contractor" is actually controlled like an employee, regulators reclassify (Section 1), which both creates employment/tax liabilities and undercuts the "we don't operate in Nigeria" position. Keep the relationship genuinely independent.
+
+2. **Permanent Establishment (PE) risk.** A foreign entity that **regularly does business or concludes contracts in Nigeria through a person there** can trigger **PE status**, exposing it to **Nigerian companies income tax (~30%)** on attributable profits, monitored by **FIRS**. The **Nigeria Tax Act 2025 broadens the PE definition** to include **service-based presence through employees or agents** and project/construction activities. A single individual doing field delivery, who does **not** habitually conclude contracts binding the foreign org, is **lower-risk** — but a worker who **signs up users, concludes agreements, or acts as the org's agent in Nigeria** raises **dependent-agent PE** concerns. **Drafting safeguard:** deny the contractor authority to bind, negotiate, or conclude contracts on the org's behalf. (https://hrbsglobal.com/resources/blogs/hire-contractors-in-nigeria/, https://www.ey.com/en_gl/technical/tax-alerts/nigeria-tax-act-2025-has-been-signed-highlights, https://www.mondaq.com/nigeria/transfer-pricing/1707698/)
+
+**FX / payment mechanics.** Contracts may quote USD, but **payment is commonly settled in Naira** to comply with Nigeria's **CBN foreign-exchange rules**; if paying in foreign currency, **spell out the exchange-rate mechanism** to avoid shortfalls. Practical rails: bank/SWIFT wire, **Wise, Payoneer, Flutterwave, Paystack** (note **PayPal in Nigeria can send but not receive** international funds). (https://www.rippling.com/blog/how-to-pay-contractors-in-nigeria, https://hrbsglobal.com/resources/blogs/hire-contractors-in-nigeria/)
+
+**Contractor's own obligations (and engager's diligence).** The contractor should hold a **TIN**, **invoice** the org, **file annual Direct-Assessment returns**, and handle their own PIT/VAT. Verifying the contractor's TIN (and, if they operate as a registered business, CAC registration) both supports genuine-independence/PE defenses and avoids the doubled-WHT penalty. (https://www.rippling.com/blog/how-to-pay-contractors-in-nigeria, https://hrbsglobal.com/resources/blogs/hire-contractors-in-nigeria/)
+
+---
+
+## Key open items to confirm with a Nigerian counsel before signing
+1. **VAT threshold figure** — sources split between **₦25M (s.53(3) NTA, VAT registration)** and **₦50M/₦100M (small-company exemptions)**. For an individual field contractor it's academic (below all thresholds), but confirm the exact NTA 2025 number if the contractor's turnover could be material.
+2. **WHT remittance route** for an unincorporated foreign payer — confirm whether the cleaner path is **no withholding + contractor self-assessment**, or appointing a local agent to withhold.
+3. **PE exposure** — have counsel assess the specific field-work duties against the broadened NTA 2025 PE definition, especially any authority to bind the org.
+4. **NDPC registration / DPIA** — confirm whether the org's volume of children's data crosses the "major importance" / 2,000-subject audit thresholds, which would trigger DPO appointment, NDPC registration, and DPCO audit.
+
+All statute names, sections, rates, tests, and case authority above are sourced inline. Primary anchors: Labour Act Cap L1 LFN 2004 (ss.7, 11, 20(3)); NDPA 2023 (ss.5, 24, 25, 28, 29, 30, 31, 32, 39, 40, 44, 56); Nigeria Tax Act 2025 (PIT 4th Schedule; WHT; VAT s.53(3); stamp duty ss.26, 126(2), 127); Pension Reform Act 2014 (s.4(1)); Child Rights Act 2003 / Lagos Child's Rights Law 2007; Arbitration and Mediation Act 2023 / Lagos State Arbitration Law 2009; **Shena Security Co. Ltd v. Afropak (Nig.) Ltd (2008) SC** and **Iyere v. Bendel Feed & Flour Mill Ltd**.
+agentId: a600522c06f6386b5 (use SendMessage with to: 'a600522c06f6386b5' to continue this agent)
+<usage>subagent_tokens: 65883
+tool_uses: 26
+duration_ms: 282951</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.commpeak.com/sip-trunking
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:26:18 UTC
+========================================================================
+
+URL: https://www.commpeak.com/sip-trunking
+Extraction prompt: What are CommPeak's SIP trunking details? How do you connect? What codecs are supported? What are the rates for Nigeria? Any setup guides?
+
+----------------------------------------
+
+# CommPeak SIP Trunking Overview
+
+Based on the provided content, here's what I found:
+
+## Connection & Setup
+CommPeak outlines a straightforward 4-step process: "Create your CommPeak account and get instant access to your dashboard," then configure SIP trunks with credentials, add account credits, and begin making calls through their VoIP dashboard.
+
+## Key Features
+The platform emphasizes several capabilities:
+- "Integrate seamlessly with your existing IP-PBX or contact center solutions"
+- Global termination to "over 190 calling destinations"
+- Virtual numbers in "55+ countries"
+- "10 global regional switches" for quality and reliability
+- End-to-end encryption and enterprise security
+
+## What's Not Covered
+The webpage does not provide:
+- **Specific codec support details** (no technical specifications listed)
+- **Nigeria-specific rates** (pricing information is not included)
+- **Technical setup guides** (only general onboarding steps are mentioned)
+
+## Recommended Next Steps
+To get detailed technical information about codecs, Nigeria rates, and setup guides, you would need to contact their sales team directly via the form on their landing page or reach out to sales@commpeak.com.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

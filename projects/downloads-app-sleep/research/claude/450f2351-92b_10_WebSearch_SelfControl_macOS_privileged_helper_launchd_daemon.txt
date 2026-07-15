@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SelfControl macOS "privileged helper" launchd daemon SMJobBless authorization ro
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:49:55 UTC
+========================================================================
+
+Search query: SelfControl macOS "privileged helper" launchd daemon SMJobBless authorization root install
+
+----------------------------------------
+
+Web search results for query: "SelfControl macOS "privileged helper" launchd daemon SMJobBless authorization root install"
+
+Links: [{"title":"GitHub - OCForks/SMJobBless: SMJobBless demonstrates how to securely install a helper tool that performs a privileged operation and how to associate the tool with an application that invokes it. · GitHub","url":"https://github.com/OCForks/SMJobBless"},{"title":"GitHub - trilemma-dev/SwiftAuthorizationSample: Swift sample app for running privileged operations on macOS using a helper tool","url":"https://github.com/trilemma-dev/SwiftAuthorizationSample"},{"title":"ControlPlane Local Privilege Escalation Vulnerability on macOS - Quarkslab's blog","url":"https://blog.quarkslab.com/controlplane_lpe_macos.html"},{"title":"Privileged helper can't access dow… | Apple Developer Forums","url":"https://developer.apple.com/forums/thread/131568"},{"title":"The Story Behind CVE-2019-13013","url":"https://obdev.at/blog/what-we-have-learned-from-a-vulnerability/"},{"title":"GitHub - aronskaya/smjobbless: A showcase for launching Privileged Helper via SMJobBless() and communicating with it using XPC. · GitHub","url":"https://github.com/aronskaya/smjobbless"},{"title":"Tweaking4All.com - MacOS - SMJobBless: Elevated Privileges in Lazarus Pascal","url":"https://www.tweaking4all.com/software-development/lazarus-development/macos-smjobbless-elevated-privileges-lazarus-pascal/"}]
+
+Based on the search results, here's comprehensive information about SMJobBless and privileged helper installation on macOS:
+
+## Overview
+
+SMJobBless demonstrates how to embed a privileged helper tool in an application, how to securely install that tool, and how to associate the tool with the application that invokes it. SMJobBless uses the Service Management framework that was introduced in Mac OS X 10.6 Snow Leopard, and as of 10.6 this is the preferred method for managing privilege escalation on OS X.
+
+## Installation Process
+
+launchd runs the helper tool as a daemon with root privileges. The helper tool is copied from the Contents/Library/LaunchServices directory inside your app bundle to /Library/PrivilegedHelperTools/, and once installed, it is managed by launchd.
+
+Installation of the Helper Tool is done with SMJobBless, which in turn requires authentication by the end user with AuthorizationCreate, and SMJobBless will ask launchd to "install" your Helper tool in /Library/PrivilegedHelperTools/. After installation, the end-user will not need to give permission again to start the Helper Tool.
+
+## Requirements
+
+Your app must be signed, the helper tool must be signed, the helper tool must be located in the Contents/Library/LaunchServices directory inside the app's bundle, and the helper tool must be an executable, not an app bundle.
+
+The application's Info.plist has an additional key, SMPrivilegedExecutables, whose value is a dictionary where each key in this dictionary is the name of a privileged helper tool contained in the application, and each key maps to a code signing identity, specified as a set of code signing requirements.
+
+## Security & Authorization
+
+The Service Management framework uses code signatures to ensure that the helper tool is the one expected to be run by the main application. Communication must go through the designated client application that is explicitly authorized in the Privileged Helper Tool's Info.plist under SMAuthorizedClients.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

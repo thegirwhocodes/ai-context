@@ -1,0 +1,50 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signapse.ai/post/how-does-our-ai-technology-work
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:25:27 UTC
+========================================================================
+
+URL: https://www.signapse.ai/post/how-does-our-ai-technology-work
+Extraction prompt: Extract ALL technical details about how Signapse's AI technology works: the full pipeline from text input to video output, NLP processing, gloss translation, video generation, non-manual features, directional verbs, quality metrics. Every detail.
+
+----------------------------------------
+
+# Signapse AI Technology Pipeline: Complete Technical Overview
+
+## Two-Stage Translation Architecture
+
+Signapse implements a dual-step process converting English to British Sign Language video:
+
+**Stage 1: Text to Gloss**
+- Converts written English to "Gloss," a written representation of BSL grammar and syntax
+- Example: "What is your name?" becomes "NAME YOU WHAT"
+- Uses Large Language Models (LLMs) trained on thousands of BSL gloss sentences
+- The system learns "complex BSL structure and grammar" from training data
+
+**Stage 2: Gloss to Video**
+- Converts gloss sequences into photorealistic video using computer vision technology
+- Blends between approximately 12,000 recorded glosses from Deaf native signers
+- Creates seamless transitions between signs
+
+## BSL-Specific Linguistic Elements
+
+**Sign Variants**: The AI selects contextually appropriate signs (e.g., "MATCH" differs for sports vs. lottery contexts)
+
+**Directional Verbs & Placement**: The system "places concepts in space and amends verb directions to show which concept performs the action and who receives it." Example: "HELP" moves from helper to recipient.
+
+**Non-Manual Features (NMFs)**: Incorporates facial expressions, head movements, and mouth patterns that modify meaning, indicate questions, or express emotion. Raised eyebrows signal yes/no questions; furrowed brows indicate "wh" questions.
+
+## Video Generation Technology
+
+- Uses "~30 cameras" in capture studio for high-quality recordings
+- Records "~40 versions of each directional verb"
+- Generates "photo-realistic" digital signer appearances
+- Produces "seamless and realistic videos, converting diverse recordings into a consistent high-quality appearance"
+
+## Quality Assurance
+
+All external translations reviewed by BSL Data Collection team at gloss stage before video generation, with multiple manual QC checks and Deaf native BSL user verification before release.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

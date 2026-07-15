@@ -1,0 +1,55 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.dreamnl.com/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-17 01:13:26 UTC
+========================================================================
+
+URL: https://www.dreamnl.com/
+Extraction prompt: Extract all features, pricing, screenshots descriptions, and UI details from this Christian dream journal app. I need to understand what features exist and what's missing.
+
+----------------------------------------
+
+# Dreamnl: Feature Analysis
+
+## **Core Features**
+
+1. **Dream Journaling**
+   - "Journal each dream with ease"
+   - Voice recording option: "Type or speak your entry using the voice recorder"
+
+2. **AI-Powered Reflection**
+   - Personalized summaries: "Receive a personalised overview that highlights key moments and themes"
+   - Guided questions: "Reflect with AI generated questions that encourage deeper spiritual insight"
+   - Prayer generation: "Pray through your dream with a unique prayer based on what you experienced"
+
+3. **Dream Element Analysis**
+   - Actions tracking
+   - Emotion logging
+   - Life context documentation
+   - Symbol capture without generic interpretations
+
+4. **Personal Symbol Dictionary**
+   - Build custom symbol meanings over time
+   - Pattern recognition across multiple dreams
+   - No pre-written interpretations provided
+
+## **Platform Availability**
+- iOS (App Store)
+- Android (Play Store)
+
+## **Notable Omissions**
+- No pricing information disclosed
+- No subscription tiers mentioned
+- No offline functionality details
+- No data privacy/storage specifics
+- No community or sharing features
+- No dream analytics or trending patterns
+- No integration with calendar or life events
+- No export/backup capabilities listed
+
+## **Key Philosophy**
+The app emphasizes spiritual reflection over interpretation, positioning dreams as prompts for prayer and personal growth rather than as codes requiring decoding.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,128 @@
+========================================================================
+AGENT RESEARCH: Deep-read origin/TTS sessions
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-18 17:55:12 UTC
+========================================================================
+
+Read these TWO session transcripts IN FULL (each is large — use multiple Read calls with offset/limit until END OF SESSION for each):
+
+1. /Users/naomiivie/Education for Equality/.claude-sessions/efd7d7d2-3b94-4e82-bb2d-7a045a3e9736.txt  (~738KB, 2026-03-18)
+2. /Users/naomiivie/Education for Equality/.claude-sessions/296c88b8-ddfe-4a6e-9eca-0eaa089bcb55.txt  (~393KB, 2026-03-24)
+
+These are early "Education for Equality / Sabi" build sessions covering origins, the MIT hackathon, the voice pipeline, TTS (ElevenLabs → Chatterbox, Naomi's voice clone), LoRA training, and server deployment.
+
+Return AT LEAST 90% of the SUBSTANTIVE content — do NOT summarize or give "key takeaways." Report the actual content: every technical decision and why, the full TTS/STT/LLM pipeline evolution, the Chatterbox voice-clone and LoRA work (feasibility, GPU, costs), server/Hetzner deployment details, every config value (IPs, URLs, model names, API/agent IDs, env vars), every cost/price figure, every person/org/contact name, every date/deadline, every funding/hackathon result and prize amount, every curriculum decision, every research finding, and every explicit instruction or preference Naomi stated.
+
+Ignore pure tool-call noise but capture WHAT changed and WHY. Organize under clear headings and keep exact identifiers verbatim. Treat this as: produce an extraction faithful enough that I never need to open these files. Completeness over brevity.
+
+----------------------------------------
+
+I have now read both session transcripts in full. I have a complete picture. Here is the comprehensive extraction.
+
+---
+
+# EXTRACTION: Sessions efd7d7d2 (Mar 9–18) & 296c88b8 (Mar 11–25), 2026
+
+Both files are heavily padded with auto-generated compaction summaries (which I cross-read against the live turns). Below is the faithful substance, organized by topic.
+
+## PROJECT IDENTITY & ARCHITECTURE (corrected by Naomi)
+- **Education for Equality** = the organization. Two delivery channels: (1) **Curriculum App** (Next.js web, Cambridge-aligned, Grade 4 complete, live on Vercel, for smartphone/internet users); (2) **Sabi** = the **voice delivery channel** (AI tutor over phone calls, no internet/smartphone needed). Naomi explicitly corrected: **"Sabi is the delivery channel"** — not a separate product, not Bakame.
+- Pipeline: Sabi teaches foundational literacy/numeracy → child graduates to Curriculum App. Longer-term vision (Naomi emphasized): deliver **full curricula** through the voice AI tutor via creative learning delivery over time. Same per-call cost regardless of subject.
+- Target: out-of-school children ages 8–14, mostly Lagos + rural Nigeria, families earning under ₦30,000/mo (~$19), feature phones, shared phones, scarce airtime. **The child must never pay (₦0).**
+- "Sabi" = "to know" in local language. Pronunciation Naomi specified: **"SAH-bee"** — "AH" as in Apple, "bee" quicker/higher like Nigerian "busybody" (low-high tone). NOT "sarbiy."
+
+## KEY STATS (assembled for pitches)
+98M children out of school in Sub-Saharan Africa; 60% of African kids out of school; 20M out-of-school children in Nigeria; 70% of Nigerian 10-year-olds can't read a simple sentence; internet access 45% Africa; mobile penetration 65–70%; 625M+ unconnected; return per year of school in Nigeria 2–4% (vs 10% global); lifetime earnings: no school NGN 20K/mo → can't read NGN 22.5K → can read NGN 31.7K.
+
+## FUNDING / HACKATHON RESULTS
+- **MIT Africa Business Challenge: 2nd place, $3,000 won.**
+- Applications: Technovation AI Ventures 2026, Harvard Innovation Labs Leadership Experience, UNICEF Venture Fund (demo video), **CcHub/Mastercard EdTech Fellowship — deadline March 30, 2026, $100K equity-free.**
+- Team: Naomi (Founder), Grace (7 yrs telecom), Nali (Textiles Advancing Impact); Dr. Sonia Ivie (on-the-ground research — NALABE assessments, EKOEXCEL data, Lagos special schools).
+
+## SERVER / INFRASTRUCTURE (verbatim identifiers)
+- **Hetzner GEX44, RTX 4000 SFF Ada, 20GB VRAM, 64GB RAM, ~1.5TB free disk, 8GB swap (32GB more added on NVMe via `/swapfile2`, NOT in fstab).** Python 3.10, venv/tmux/screen available.
+- **IP: `136.243.8.51`**. SSH `root@136.243.8.51` (later created dedicated `sabi` user, uid 998, Docker group).
+- **Server cost: EUR 184/month (~$203).**
+- Docker containers: `sabi` (FastAPI :8000, FastAGI :4573), `ollama` (Llama 3.1 8B fallback LLM, :11434), `chatterbox-tts`/formerly `afro-tts` (:8001), `asterisk` (PBX). Nginx host-level + certbot SSL.
+- Repos: `sabi-server` (private, GitHub `thegirwhocodes`) + `curriculum-app` (Vercel auto-deploy, project `education-for-equality`). Server deploys often done via `scp` (no GitHub SSH key on server).
+- **Domains (set up in this session):** `sabi.eduforequality.org` → **Vercel frontend** (voice demo); `api.eduforequality.org` → **Hetzner backend** (A record 136.243.8.51, DNS-only/grey cloud; SSL cert expires June 17). TTS accessed via nginx `/afro-tts/` → port 8001. Cloudflare DNS changes done by Naomi (added `api` A record, changed `sabi` to CNAME → `cname.vercel-dns.com`). NCC license `.edu` discussed and rejected (requires accreditation; `.org` is what they have).
+
+## VOICE PIPELINE EVOLUTION (the core of session 296c88b8)
+
+### TTS journey: ElevenLabs → Afro-TTS/XTTS fine-tune → Chatterbox Turbo
+1. **ElevenLabs** "Bukola" voice — original. ~$5–22/mo. Cost for 150 kids w/ Twilio = ~$6,500–7,600/mo (~30x current stack). Used to generate 20 synthetic Sabi-script MP3s ("bukola-training-audio/", ~100min, `bukola_0000.mp3`–`bukola_0019.mp3`).
+2. **Afro-TTS** = `intronhealth/afro-tts` (XTTS v2 fine-tuned on 86 African accents). Initially zero-shot cloning from 6-second `bukola_reference.wav`. Naomi: sounded Hausa/Fulani because the bundled `reference_accent.wav` fallback is Hausa-accented.
+3. **Full XTTS fine-tuning** of Bukola (Naomi: "do full training - not zero shot"). Built `prepare_data.py` (MP3→WAV 22050Hz + Whisper large-v3 segmentation into 717 clips, 645 train/72 eval, LJSpeech format), `train.py` (GPTTrainer; `XttsAudioConfig` from `TTS.tts.models.xtts`; batch 2, grad_accum 126, lr 5e-6), `export_model.py` (strips optimizer state 5.6GB→2.1GB, copies vocab/dvae/mel_stats). Dependency hell: coqpit→coqpit-config, trainer→coqui-tts-trainer, numpy<2, tensorboard, JSON-over-SSH escaping.
+   - **v1**: 15 epochs, lr 5e-6, loss 3.17→2.63, ~22min.
+   - **v2**: 50 epochs, lr 5e-6, loss 2.97→2.49, ~40min.
+   - **v3**: 50 epochs, **lr 2e-5** (Naomi: "try a higher lr"), train mel_ce 1.59, eval 2.84 (overfit). Naomi: "much much much better" but still inferior to ElevenLabs (volume, "Sabi" pronunciation wrong, flat intonation, no emotion). Root limitation: training on **synthetic ElevenLabs audio = "copy of a copy"** ceiling.
+4. **Switched to CHATTERBOX TURBO** (Resemble AI, 350M params, **MIT license**, ~4.5GB VRAM, zero-shot clone from 5–10s, **claimed 63.75% preferred over ElevenLabs in blind tests**, paralinguistic tags `[laugh]/[chuckle]/[sigh]`, **exaggeration parameter 0.25–2.0**). Chosen over Fish Speech V1.5 (CC-BY-NC non-commercial = dealbreaker; 4–12GB risky; being sunset). Other candidates noted: Qwen3-TTS 0.6B, IndexTTS2 (8-float emotion vector), CosyVoice2.
+   - Created `chatterbox-tts/server.py` (FastAPI, replaces afro-tts; PRONUNCIATION_MAP `Sabi→Sahbee`, `₦→naira`; volume normalize to −1dB peak; exaggeration param), `Dockerfile` (nvidia/cuda 12.1, Python 3.11; **had to `pip uninstall torchvision`** — torch 2.6.0 conflict; HF token workaround: `snapshot_download("ResembleAI/chatterbox-turbo", token=False)` then `os.environ["HF_TOKEN"]="local"` since model is public but library defaults token=True), `requirements.txt`.
+   - Model `ResembleAI/chatterbox-turbo`. Endpoint :8001 `/tts`, `/tts/upload`, `/health`, `/voices`. ~1.3–2.3s/request after warmup; **VRAM 8.4GB/20GB** (Chatterbox ~4.5 + Whisper ~4). Naomi: "so freaking good quality."
+
+### Emotion pipeline (live)
+- `llm.py` SABI_CORE_PROMPT got a **VOICE EXPRESSION** section: `[laugh]` celebrating correct answers, `[chuckle]` warm moments, `[sigh]` empathy.
+- `detect_exaggeration()` (in main.py and tts-client.ts): `[laugh]`/praise → **0.75**; `[sigh]`/correction → **0.35**; `[chuckle]`/"Oya"/"ready" → **0.6**; default **0.5**.
+- All 11 lesson scripts got emotion tags via `add_emotion_tags.py`: **1,078 tags across 3,624 AI dialogue lines (30%)**, ~58% [laugh]/33% [chuckle]/9% [sigh]. Per-file coverage: PHONEMIC_AWARENESS 52%, ORAL_ENGLISH_GRAMMAR 48%, DIAGNOSTIC_LITERACY 38%, ORAL_VOCABULARY 35%, LISTENING_COMP 34%, NUMBER_SENSE 30%, ADVANCED_PHONEMIC 24%, ADDITION/SUBTRACTION 23%, MULTIPLICATION 21%, DIAGNOSTIC_NUMERACY 11%. (Lesson scripts NOT in git — reverted via tag-strip, not git.)
+
+### Voice references / Naomi's voice clone
+- Tested speakers loaded in Chatterbox: **bukola** (ElevenLabs synthetic — ElevenLabs ToS concern), **naomi** (Naomi's own 29s recording `Wesleyan University 56.m4a` → naomi.wav, **zero ToS issue, became default for a while**), **wura** (YarnGPT-generated — YarnGPT ToS concern; original mp3 only 3.88s, too short — Chatterbox needs ≥5s; regenerated 7.86s via YarnGPT), **lagos295** (OpenSLR 70 speaker 00295, recorded in Lagos, **CC BY-SA 4.0 = legally clean**). OpenSLR 70 = 759MB Nigerian English female set, 2,045 clips, 19 speakers. Naomi initially "love the naomi now," then "I feel the Lord is saying to use wura's voice." Wura via Chatterbox sounded unnatural (3.9s ref too short) → **switched TTS priority to YarnGPT-first** (native Wura), Chatterbox fallback, ElevenLabs last. Note: by final context-recovery, default speaker was back to **naomi via Chatterbox** at `/sabi-voice`.
+- **Training on Naomi's own voice for ultra-high quality**: 15–30min = decent; 1–2hr = good; **5–10+ hours = ultra high quality** (XTTS). Chatterbox needs no training (zero-shot).
+- TTS final fallback chain (curriculum-app `tts-client.ts`): **YarnGPT (Wura) → Chatterbox Turbo → ElevenLabs (Bukola)**. `sabi-server/tts.py` default voice changed `chinenye → wura` (required Docker rebuild — code baked in, no volume mount).
+
+### STT (Whisper) work
+- Current: Whisper large-v3 self-hosted (~73% accuracy / 27% WER on Nigerian English). Groq Whisper also used (web demo `/api/sabi/voice-chat`).
+- Added **Nigerian English prompt bias** to `stt.py` (`NIGERIAN_ENGLISH_PROMPT`: naira, kobo, groundnuts, pure water, garri, suya, oya, wahala, sharp sharp, danfo, keke, okada, number/math vocab) via `initial_prompt`. Quick win, no training.
+- **AfriSpeech-200 fine-tuning attempt (2-day OOM saga, NEVER COMPLETED):** Intron Health dataset, 200hr Pan-African accented English, CC BY-NC-SA 4.0, tar.gz audio + CSV transcripts, 123 accent groups. Filtered to `country=="NG"` = **82 accents, ~45,717 samples (38,483 train/1,284 dev/4,691 test)**. Naomi: "DO NOT CUT ANY CORNERS - I WANT HIGHEST QUALITY," "DO NOT DOWNGRADE ANYTHING."
+  - Bugs solved: datasets v4.7.0 dropped loading scripts (manual `hf_hub_download` + **hash-based wav matching** since CSV paths `/AfriSpeech-100/...` ≠ extract path `data/data/intron/...`); torchcodec needs FFmpeg 5+ (bypassed with soundfile); soundfile not fork-safe (`num_proc` removed, `dataloader_num_workers=0`).
+  - **Unresolved OOM**: every run OOM-killed at **~61–64GB RSS / ~118GB virtual** even with LoRA (PEFT r=32, alpha=64, targeting q/v/k/out_proj+fc1/fc2, 57.7M trainable) + gradient checkpointing + 8-bit AdamW + manual loop. Diagnostics proved: model+LoRA+grad-checkpoint+forward/backward with **dummy audio works (1.5GB RSS, 3.8GB VRAM)** but **real AfriSpeech audio explodes to 64GB with VRAM flat at 3.32GB (computing on CPU)** — killed during `processor.feature_extractor()`. Inline `python3 -c` worked; script files OOM'd. Naomi: "find the problem faster bro - been stuck on this for 2 days." **Training was abandoned/parked; the prompt-bias quick win stands.** Intron Health Sahara ASR noted as commercial gold standard (92% Nigerian English). CLEAR-Global Hausa whisper (2.23% WER) and Yoruba w2v-bert (28.69% WER, 500h NaijaVoices) noted as pre-trained alternatives. NaijaVoices = 1,800hr (600h each Hausa/Yoruba/Igbo).
+- **Google WAXAL**: confirmed it's a **dataset, not a TTS/STT service** (565hr / 21 African langs, ~20hr TTS-specific; Nigerian-language samples small ~1,500 each). NOT useful now (Sabi teaches Nigerian English, not vernacular). Relevant only if Sabi expands to Yoruba/Hausa/Igbo. (Earlier "11,000+ hours" headline was inaccurate for Nigerian langs.)
+
+## TELEPHONY (the dominant topic of session efd7d7d2)
+- **Core problem: Africa's Talking (AT) does NOT offer toll-free numbers in Nigeria** (confirmed Mar 10) → child pays ₦3/min, unacceptable. Naomi's repeated concern: never put cost on the child.
+- **AT Nigeria pricing (verbatim):** Number ₦5,000 + 7.5% VAT/mo (= ₦5,375). Regular Incoming ₦3/min; **Regular Outgoing ₦15/min; SIP Incoming ₦3/min; SIP Outgoing ₦3/min; SIP Trunk ₦3/min**; Call Conference ₦1. CPS pricing: 5 CPS = ₦25,000+VAT/mo, 10 CPS = ₦50,000+VAT. Google TTS Standard $0.000008/char, Wavenet $0.000032, Chirp 3 $0.00006. Recordings stored 48hr only (irrelevant — Sabi processes in real-time).
+- **WINNING SOLUTION: Flash callback over AT SIP trunk.** Child calls AT number → Asterisk hangs up instantly (₦0 to child, no Answer) → Asterisk calls back outbound via **AT SIP at ₦3/min (we pay)**. Cost for 150 kids × 15 calls × 6min = 13,500 min/mo ≈ **$29/mo (~$0.19/child/mo)** — cheapest of ALL providers. (Children pay ₦0 to receive a call.)
+- **Asterisk flash callback BUILT & DEPLOYED** on Hetzner: `asterisk/` dir (Dockerfile **Ubuntu 22.04** after Debian failed — package names; pjsip.conf with AT trunk IP-auth + test softphone `testuser`/`testpass123`; extensions.conf `[from-at]` hangup+curl `/asterisk/flash`, `[sabi-callback]` Answer→AGI(agi://sabi:4573); manager.conf AMI; modules.conf; rtp.conf 10000–10100). `voice_asterisk.py` = FastAGI handler (record→STT→LLM→TTS→play; MAX_TURNS=12, RECORD_MAX_MS=15000, RECORD_SILENCE_S=3, CONFIDENCE_THRESHOLD=0.5; mp3→8kHz mono WAV via ffmpeg). `main.py` added `/asterisk/flash` endpoint + AMI `ami_originate()` + FastAGI server in lifespan. Firewall opened: 5060/udp+tcp, 10000:10100/udp. Tested with Linphone/Zoiper softphone dialing ext 100. **Pending: AT must whitelist 136.243.8.51 + provide SIP server IP** (callback URL → `trunk:136.243.8.51`). Email sent to voice@africastalking.com.
+- **Providers researched & ruled out** (all 10–20x AT or no Nigeria inbound): Twilio (no NG numbers, $0.165/min outbound), Plivo (not available in NG), Vonage (NG €28.10/mo + €0.0207/min, no toll-free), Sendchamp (₦60/min outbound only, no inbound), HollaTags (SMS-only API), Termii (OTP-only voice), DIDWW ($0.01/min, no toll-free), FlyNumber ($19.95/mo unlimited inbound, no toll-free), Telnyx ($1/mo NG DID, no toll-free, instant signup), ConnectSIP (Lagos/Spokane WA; **₦10.2/min flat to all NG; broken signup portal; no API — fine, SIP needs none**; clients Jiji/Allianz), Netcat Solutions (Lagos, Asterisk-tested, in-country SIP, toll-free), Outsource Nigeria (BPO, 0800 all-networks), CommPeak (NG toll-free + API + SIP + free trial + $0 base; Python 3.11), Infobip, Multipair, AVOXI (NG 0800 toll-free $6.49–21.49/mo, **no programmable API — number provisioning only**, ~5 business-day lead time).
+- **0800 toll-free direct providers** (emailed: info@yana.ng, info@infotekps.com, info@outsourcenigeria.com, info@vezeti.net): Yana/Interra (Abuja, biggest 0800 operator), Infotek/ShortCode Nigeria, Outsource Nigeria, Vezeti, Alpha Technologies, Cedarview. NCC termination rate for 0800 = ₦15/min wholesale floor.
+- **NCC VAS-SNS license**: ₦10,000 application + **₦10,000,000 (~$6,250) actual license fee** (corrected from earlier ₦10K-only error); ₦10.75/min toll-free tariff; requires CAC registration + MOU with VAS Aggregator (VAS2Nets, IntarvAS, ICN, Alpha). Chain: NCC → VAS Aggregator → MNO → user.
+- **Viamo 3-2-1**: direct E1/SIP MNO integrations in 25 countries, 1M calls/day, Airtel Nigeria zero-rated, has AVA GenAI voice (Whisper+LLM+TTS), Gates/UNICEF backed. Considered as platform partner but Naomi pushed back ("selling out") — chose independence. Zero-rating pitch playbook: pitch all 4 MNOs CSR.
+- **MTN SIP/0800 "Smart Numbers"**: ₦0.22/sec (₦13.2/min), ₦450K setup + ₦37,625/mo, enterprise sales (weeks). MTN business: letstalk.ng@mtn.com.
+- **Outbound scheduled-call model** validated as best pilot approach (Sabi calls child at scheduled time, ₦0, no toll-free needed, Asterisk + Python cron + IVR "press 1" + retry logic). Also discussed "Call Me" web button. DIDWW $0.01/min + airtime top-ups (Reloadly/Flutterwave ₦200–250/wk) modeled at ~$115/mo but airtime leakage ~20%.
+- Other innovations researched (saved to `VOICE_AI_TELCO_INNOVATIONS_RESEARCH.md`): flash/beep callback (20–30% of African calls are intentional missed calls), MNO zero-rating, airtime incentives (engageSPARK), ConnectEd/J-PAL ($12/student, 0.33 SD), India VoicERA/Bhashini (gov-as-infrastructure, 22 langs, Sarvam 120B), Dograh (open-source Vapi alt for Africa, no AT support), Rori AI ($5/student/yr WhatsApp text). STADIO MVNO model.
+
+## SECURITY (10 measures, SABI_SECURITY.md at `7. Legal & IP/`)
+Implemented: (1) SSH key-only + fail2ban (70+ brute-force blocked); (2) firewall only 22/80/443, Docker services localhost-bound; (3) HTTPS/TLS auto-renewing; (4) API-key auth (`X-API-Key`) on all AI endpoints; (5) Docker secrets (`/run/secrets/sabi_api_key`); (6) **rate limiting** `rate_limiter.py` 30/60/120 req/min tiers; (7) **AT webhook verification** `at_verify.py` (AT IP ranges); (8) health monitoring cron every 5min (`/opt/sabi/health-check.sh`); (9) daily backups 3AM keep 7 days; (10) dedicated `sabi` user (uid 998). **Removed plaintext API key from SABI_SECURITY.md** (was `sabi_GXU6ZIn3...`). Remaining gap: `/sabi-voice` page has no auth gate — anyone can burn Claude/Groq credits (Chatterbox is free/self-hosted). Demo key `2026` / `SABI_DEMO_KEY` env discussed, gate added then removed then re-debated.
+
+## CURRICULUM / PEDAGOGY
+- 11 lesson scripts (`lesson-scripts/`, ~19,200 lines, 843KB): 5 literacy phase1 (Phonemic Awareness, Oral Vocab, Listening Comp, Oral English Grammar, Advanced Phonemic), 4 numeracy (Number Sense/Counting, Addition, Subtraction, Multiplication), 2 diagnostics (literacy, numeracy). Format `> **AI:** text`, `[Child responds]`, `[If correct/incorrect:]`, `{Name}`. TaRL pedagogy, "Naira-first, abstract-second."
+- SABI_COPYRIGHT_BRIEF.md trimmed for **Nigerian Copyright Commission** registration — removed implementation details (RAG, branching rules, methodology names) to protect IP. 240 lessons cited as scope.
+- Considered but REJECTED Rasa (Classic dying / Pro $35K+/yr) — lesson scripts already ARE dialog management; build lightweight script engine instead (answer_matcher.py built, lesson_parser deprioritized).
+
+## OFF-SCOPE (built/discussed, not Sabi) — created in `/Users/naomiivie/cortex/` and `/Users/naomiivie/bethel/`
+- **Cortex** (personal AI agent startup): RAG over personal data (email/calendar/notes) + deep User Profile onboarding + memory layer + optional LoRA per-user (premium, 16–20MB adapters, $0.22–1.44/fine-tune, LoRAX serving). Files: CORTEX_FULL_PLAN.md, CLAUDE.md, RAW_TRANSCRIPTION_NOTES.md. Naomi: "this is NOT a personal project — I want to build a startup."
+- **Bethel** (Chronological Bible + Dreams journal + Notes, Expo/React Native app): names considered Selah/Bethel/Cortex/Orb/Nexus; built with Expo, debugged blank-screen (missing metro.config.js, react/react-dom 19.2.4 mismatch). BETHEL_LORA_ARCHITECTURE.md written (Bible as ground-truth validator).
+- Christian content weekly plan (50 short-form pieces, worship videos, songs); editing/AI-editing time research (CapCut, Captions.ai, OpusClip, Submagic). Treasury of Scripture Knowledge (572K cross-refs, public domain).
+
+## NAOMI'S EXPLICIT PREFERENCES/INSTRUCTIONS
+- "Sabi is the delivery channel." Be her technical co-founder, understand everything deeply. The child must never pay. Don't "sell out" to Viamo — keep independence. Stop defaulting to AT (not viable w/o toll-free). DO NOT CUT ANY CORNERS / DO NOT DOWNGRADE ANYTHING / HIGHEST QUALITY ("I WILL KNOW"). Find problems faster. Read full session transcripts at session start (called out the Mar 25 session for skipping context recovery). Prefers raw/authentic voice over polished. Voice-driven, faith-driven ("everything is from the Holy Spirit").
+
+## KEY FILES (absolute paths)
+- `/Users/naomiivie/Education for Equality/sabi-server/` — main.py, voice.py, voice_asterisk.py, voice_twilio.py, stt.py, llm.py, tts.py, memory.py, secret_loader.py, answer_matcher.py, docker-compose.yml, Dockerfile, rate_limiter.py, at_verify.py
+- `.../sabi-server/chatterbox-tts/` — server.py, Dockerfile, requirements.txt, reference_audio/{bukola,naomi,wura,lagos295}.wav
+- `.../sabi-server/afro-tts/` (deprecated), `.../whisper-finetune/` (finetune_whisper.py, run_training.sh, requirements.txt — WIP/parked)
+- `.../sabi-server/asterisk/` — Dockerfile, pjsip.conf, extensions.conf, manager.conf, modules.conf, rtp.conf
+- `.../lesson-scripts/` (11 files, emotion-tagged), `.../bukola-training-audio/`, `.../voice-tests/`, `.../voice-auditions/chatterbox/`
+- Research docs: `VOICE_AI_TELCO_INNOVATIONS_RESEARCH.md`, `AT_ALTERNATIVES_RESEARCH.md`, `TELEPHONY_FULL_RESEARCH.md`, `SABI_INFRASTRUCTURE_RESEARCH.md`, `7. Legal & IP/SABI_SECURITY.md`, `7. Legal & IP/SABI_COPYRIGHT_BRIEF.md`
+- Plan files in `/Users/naomiivie/.claude/plans/`: `hidden-splashing-reddy.md` (main impl), `unified-munching-zebra.md` (long-term/telephony), `starry-wobbling-gem.md` (XTTS fine-tune), `pre-gpu-cloud-stack.md`, `delightful-cooking-hanrahan.md` (Twilio original)
+- Memory: `/Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/memory/MEMORY.md` (updated with Chatterbox deploy Mar 13, long-term STT plan, milestones)
+
+**Net Sabi state at session end (Mar 25):** Chatterbox Turbo live (Naomi voice default, emotion-aware) at `api.eduforequality.org/afro-tts`; voice demo frontend at `sabi.eduforequality.org/sabi-voice` (Vercel); Whisper has NG prompt bias (full fine-tune abandoned on OOM); lesson scripts emotion-tagged; Asterisk flash-callback code deployed but **blocked on AT SIP whitelisting**; 10 security measures live; both repos pushed.
+agentId: a5a74af4c64a75ccb (use SendMessage with to: 'a5a74af4c64a75ccb' to continue this agent)
+<usage>subagent_tokens: 529972
+tool_uses: 25
+duration_ms: 344763</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

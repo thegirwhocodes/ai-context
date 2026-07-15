@@ -1,0 +1,29 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://barrolee.github.io/BarroLeeDataSet/DataLeeLee.html
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:37:03 UTC
+========================================================================
+
+URL: https://barrolee.github.io/BarroLeeDataSet/DataLeeLee.html
+Extraction prompt: Find the direct download URL for the Lee Lee 2016 long-run educational dataset. Specifically: primary school enrollment ratios going back to 1820 for 111 countries. Is Nigeria included? What are the file formats (CSV, Stata, Excel)?
+
+----------------------------------------
+
+Based on the webpage content provided, I can answer your questions:
+
+**Direct Download URL:**
+The complete dataset is available at: `/BarroLeeDataSet/LeeLee/LeeLee_v1.dta`
+
+For enrollment ratios specifically, the total population file is at: `/BarroLeeDataSet/LeeLee/LeeLee_enroll_MF.xls`
+
+**File Formats:**
+The page lists three formats: "Stata" format (.dta file), and "Excel" (.xls) files for various demographic breakdowns.
+
+**Nigeria and Country Coverage:**
+The webpage does not specify which countries are included in the dataset, nor does it mention Nigeria explicitly. The page does not state that the dataset covers 111 countries—you'll need to consult the actual dataset documentation or GitHub repository to confirm country coverage.
+
+**Note:** The webpage only shows relative paths; you would need to prepend the full domain (likely `https://barrolee.github.io/BarroLeeDataSet/`) to create complete URLs. The GitHub link provided suggests additional documentation may be available there.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

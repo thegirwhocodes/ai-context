@@ -1,0 +1,26 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://humancapital.worldbank.org/content/dam/sites/data/humancapital/pdf/count
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 04:31:28 UTC
+========================================================================
+
+URL: https://humancapital.worldbank.org/content/dam/sites/data/humancapital/pdf/country-briefs-2024/Nigeria.pdf
+Extraction prompt: Extract ALL pillar scores for Nigeria - the education pillar score, health pillar score, and employment/on-the-job learning pillar score. Also extract any breakdown of what percentage each pillar contributes to the total HCI+ score or to the 111% earnings deficit. Extract any specific education-related numbers: learning-adjusted years of schooling, test scores, tertiary completion rate.
+
+----------------------------------------
+
+I apologize, but I cannot extract the requested information from the provided content. The text appears to be a compressed/encoded PDF file containing binary data and stream information rather than readable human-language content about Nigeria's pillar scores, HCI+ metrics, or education statistics.
+
+To obtain Nigeria's specific education, health, and employment pillar scores along with learning-adjusted years of schooling and other HCI+ indicators, you would need to:
+
+1. Provide the actual readable PDF or document content
+2. Access the Human Capital Index report directly from the World Bank's official sources
+3. Visit the World Bank's Human Capital Project website where these metrics are published
+
+If you have access to the actual document, please share the readable text content and I'll be happy to extract the specific pillar scores and education metrics you're seeking.
+
+[Binary content (application/pdf, 1.1MB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/webfetch-1774413188405-qvv8u8.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

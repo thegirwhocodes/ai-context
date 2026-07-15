@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: DTW alternatives sign language recognition better accuracy 2024 2025 temporal ma
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:25:52 UTC
+========================================================================
+
+Search query: DTW alternatives sign language recognition better accuracy 2024 2025 temporal matching
+
+----------------------------------------
+
+Web search results for query: "DTW alternatives sign language recognition better accuracy 2024 2025 temporal matching"
+
+Links: [{"title":"Sign language recognition using dynamic time warping and hand shape distance based on histogram of oriented gradient features | Proceedings of the 7th International Conference on PErvasive Technologies Related to Assistive Environments","url":"https://dl.acm.org/doi/10.1145/2674396.2674421"},{"title":"(PDF) Sign Language Recognition by Combining Statistical DTW and Independent Classification","url":"https://www.researchgate.net/publication/23252307_Sign_Language_Recognition_by_Combining_Statistical_DTW_and_Independent_Classification"},{"title":"Sign Language Recognition by Combining Statistical DTW and Independent Classification | IEEE Transactions on Pattern Analysis and Machine Intelligence","url":"https://dl.acm.org/doi/10.1109/TPAMI.2008.123"},{"title":"Angle Based DTW for Large Vocabulary Sign Retrieval | Springer Nature Link","url":"https://link.springer.com/chapter/10.1007/978-3-032-14495-9_30"},{"title":"Sign Language Recognition by Combining Statistical DTW and Independent Classification | IEEE Journals & Magazine | IEEE Xplore","url":"https://ieeexplore.ieee.org/document/4527247/"},{"title":"Sign language recognition by combining statistical DTW and independent classification - PubMed","url":"https://pubmed.ncbi.nlm.nih.gov/18787250/"},{"title":"A novel deep transformer based CvT model for sign language recognition in visual communication | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-31558-1"},{"title":"Continuous sign language recognition algorithm based on object detection and variable-length coding sequence | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-78319-0"},{"title":"A DTW and Fourier Descriptor based approach for Indian Sign Language recognition","url":"https://scite.ai/reports/a-dtw-and-fourier-descriptor-vvzYMV"},{"title":"Sign language recognition using modified deep learning network and hybrid optimization: a hybrid optimizer (HO) based optimized CNNSa-LSTM approach | Scientific Reports","url":"https://www.nature.com/articles/s41598-024-76174-7"}]
+
+Based on the search results, here are the key findings on DTW alternatives and improvements for sign language recognition in 2024-2025:
+
+## Deep Learning Alternatives to DTW
+
+Transformers have drawn widespread attention for their better capacity to capture spatial and temporal dependencies for gesture-based recognition tasks compared to CNN and Transformer based encoder-decoders, and have been applied in sign language recognition. Vision transformers (ViTs) have emerged as a breakthrough technology, offering superior feature extraction through self-attention mechanisms.
+
+## Recent Improvements and Hybrid Approaches
+
+A recent approach combines Bi-directional Long Short-Term Memory (BiLSTM) with jointly weighted Fast Dynamic Time Warping (FastDTW) to extract hand coding similarity and features while reducing parameters, showing that DTW variants like FastDTW are still being used in hybrid models with modern deep learning.
+
+Statistical DTW (SDTW) has been proposed for time warping alone, while classifying warped features with discriminative feature detectors (CDFD) and quadratic classification on Fisher mapping (Q-DFFM), which outperform HMM and SDTW.
+
+## Recent Transformer-Based Approaches
+
+Vision transformer-based models have been shown to match or beat traditional deep learning in terms of performance. Recent systems use MediaPipe to extract hand and upper body pose landmarks, compute temporal sequences of inter-segment angles, and measure similarity with Dynamic Time Warping, achieving 66% accuracy in top-5 results and 75% in top-10 on a 1,113 sign lexicon.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

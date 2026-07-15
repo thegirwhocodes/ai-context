@@ -1,0 +1,78 @@
+========================================================================
+AGENT RESEARCH: Search sessions for sabi subdomain discussion
+Session: 296c88b8-ddfe-4a6e-9eca-0eaa089bcb55
+Time: 2026-03-19 20:54:11 UTC
+========================================================================
+
+Search through the claude session files in /Users/naomiivie/Education for Equality/.claude-sessions/ for any discussion about sabi.eduforequality.org as a frontend, serving the voice demo at a subdomain, or separating the sabi voice demo from the curriculum app. Check these files:
+- 262aa5fe*.txt 
+- 296c88b8*.txt
+- 089265f6*.txt
+
+Search for keywords like "sabi.eduforequality", "subdomain", "separate deploy", "standalone", "sabi site", "own domain", "own site". Report back everything you find about plans or decisions around hosting sabi at its own domain/subdomain.
+
+----------------------------------------
+
+Perfect! I have gathered comprehensive information. Let me compile the findings:
+
+## Summary: sabi.eduforequality.org Frontend & Subdomain Architecture Discussions
+
+Based on my search through the session files, here's everything I found about plans and decisions around hosting Sabi at its own domain/subdomain:
+
+### **Key Discussion Timeline**
+
+#### **Session ff1faa52 (March 11, 2026)** — Lines 23595-23646, 25035-25070
+This is where the major architecture discussion happened:
+
+**Problem Identified:**
+- `sabi.eduforequality.org` was pointing to Hetzner GPU server (136.243.8.51) at the DNS level
+- This made sense for backend needs (SSL cert, Africa's Talking webhooks, audio URLs)
+- But it meant visitors trying to access the website saw only "Unauthorized" (the raw FastAPI backend with no frontend)
+- The curriculum app had a Sabi demo page at `/sabi-voice` (on Vercel) but it wasn't accessible at `sabi.eduforequality.org`
+
+**Two Options Proposed:**
+1. Add `/` to the whitelist on the backend API and serve a landing page there
+2. **Restructure the DNS** — point `sabi.eduforequality.org` to Vercel for the frontend, create `api.eduforequality.org` for the Hetzner backend
+
+**Decision Made:**
+- **User chose Option 2** (the cleaner long-term approach)
+- **`sabi.eduforequality.org` → Vercel** (landing page + demo) — public-facing, pretty URL
+- **`api.eduforequality.org` → Hetzner** (GPU backend) — hidden from users
+- User said "yes - arrr takes so much time - add to cuts.md action items" (line 25058)
+- Claude added this to Cuts.md as a ~30 min action item
+
+#### **Session 296c88b8 (March 19, 2026)** — Lines 8318-8360
+**Follow-up discussion about implementation:**
+- User asked about making `sabi.eduforequality.org` serve the voice demo directly
+- Claude confirmed the current state:
+  - `sabi.eduforequality.org` points to Hetzner and serves TTS backend at `/afro-tts`
+  - Voice demo frontend is at `eduforequality.org/sabi-voice` on Vercel
+- Claude presented two clean options to implement the change:
+  1. **Move the backend to a different subdomain** (`api.eduforequality.org` → Hetzner) and give `sabi.eduforequality.org` to Vercel for the voice demo
+  2. **Use nginx on Hetzner** to reverse-proxy — serve Vercel voice demo at `/` and keep `/afro-tts` routing to local TTS
+
+**Session end:** Discussion was open-ended — user didn't confirm which approach to take at that point.
+
+### **Current Status**
+
+- **Plan exists in Cuts.md** — DNS restructuring task documented
+- **Not yet implemented** as of March 19, 2026
+- **Architecture understood** by both Claude and user
+- **Four key steps identified:**
+  1. Cloudflare DNS: Add `api` A record (136.243.8.51), change `sabi` to CNAME (Vercel)
+  2. Vercel: Add `sabi.eduforequality.org` as custom domain
+  3. Hetzner: Update SSL cert + nginx config for `api.eduforequality.org`
+  4. Code: Update env vars and all references from `sabi.eduforequality.org` → `api.eduforequality.org`
+
+### **Files to Refer To**
+- `/Users/naomiivie/Education for Equality/.claude-sessions/ff1faa52-49e4-4b0c-aee7-20c52835b500.txt` (lines 23595-23646, 25035-25070)
+- `/Users/naomiivie/Education for Equality/.claude-sessions/296c88b8-ddfe-4a6e-9eca-0eaa089bcb55.txt` (lines 8318-8360)
+- `/Users/naomiivie/Education for Equality/Cuts.md` (should contain the action item added by Claude on March 11)
+agentId: a3537cce0973c3613 (use SendMessage with to: 'a3537cce0973c3613' to continue this agent)
+<usage>total_tokens: 39167
+tool_uses: 17
+duration_ms: 40778</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

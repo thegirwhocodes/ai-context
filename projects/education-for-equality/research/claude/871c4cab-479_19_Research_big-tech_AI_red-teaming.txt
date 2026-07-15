@@ -1,0 +1,337 @@
+========================================================================
+AGENT RESEARCH: Research big-tech AI red-teaming
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-19 19:46:48 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed) on how the major AI/software companies red-team their AI systems. I'm writing a comprehensive red-team plan for "Sabi," a child-facing voice AI tutor (Nigeria, 8–14, on Claude with Cerebras/Groq/Ollama fallbacks). Return concrete, implementable methodology — not marketing fluff.
+
+Cover each company's actual red-team program and techniques:
+1. **Anthropic** — frontier red-teaming, the Constitutional Classifiers bug bounty ($15k, 3000+ hrs), Policy Vulnerability Testing (PVTs) with external domain experts, Responsible Scaling Policy red-line testing, automated red-teaming, how they test child-safety / CSAM, system cards.
+2. **OpenAI** — the Red Teaming Network, external red-teamers, the Preparedness Framework, automated red-teaming (their "diverse and effective red-teaming" paper), GPT system cards, how they structure expert vs automated.
+3. **Google / DeepMind** — the AI Red Team, Secure AI Framework (SAIF), automated/agentic red-teaming, Gemini safety evals, the "red-teaming language models with language models" approach.
+4. **Microsoft** — the AI Red Team (AIRT), **PyRIT** (open-source tool — capabilities, how it works), their "lessons from red-teaming 100+ generative AI products" guidance, the Tay failure lessons.
+5. **Meta** — Llama red-teaming, **Purple Llama / CyberSecEval**, Llama Guard / Prompt Guard as red-team artifacts.
+6. **Cross-cutting methodology** — manual expert red-teaming vs automated (LLM-attacks-LLM); single-turn vs multi-turn (crescendo); bug-bounty models; staged/tiered testing; how they scope, recruit red-teamers, score severity, and feed findings back into training/guardrails; benchmarks they publish.
+
+Return AT LEAST 90% of substance: program structures, specific technique names, tool names, paper titles, severity/scoring schemes, and source URLs. Organize by company + the cross-cutting section. Completeness over brevity — I will build a plan directly from this.
+
+----------------------------------------
+
+I now have comprehensive, source-grounded material across all five companies and the cross-cutting methodology. Let me compile the final report.
+
+---
+
+# How the Major AI Labs Red-Team Their Systems — Research Findings for Sabi's Red-Team Plan
+
+Everything below is drawn from primary sources (company papers, system cards, official blogs, GitHub) with URLs. I've organized it by company, then a cross-cutting methodology section you can build the plan's framework from. Where directly useful for a child-facing voice tutor, I flag it as **→ Sabi**.
+
+---
+
+## 1. ANTHROPIC
+
+Anthropic frames red-teaming as a **portfolio of complementary methods**, explicitly arguing no single method is sufficient and that the field needs standardization. Their public taxonomy (from "Challenges in Red Teaming AI Systems") lists these methods:
+
+### 1a. Domain-specific expert red teaming + Policy Vulnerability Testing (PVT)
+- **PVT** = "in-depth, qualitative testing in collaboration with external subject matter experts" on topics under the Usage Policy.
+- It is built on a **sustained relationship with a domain expert** who can (a) recognize a failure when they see one and (b) construct probes that policy-writers actually care about — not a one-off contract.
+- **Named external partners** (memorize these — they're the template for who you'd recruit for Sabi):
+  - **Thorn** — child safety / CSAM-CSEM
+  - **Institute for Strategic Dialogue (ISD)** — election integrity
+  - **Global Project Against Hate and Extremism (GPAHE)** — radicalization
+- **Multilingual/multicultural PVT:** partnered with **Singapore's IMDA + AI Verify Foundation** to red-team across **four languages (English, Tamil, Mandarin, Malay)** with locally-relevant topics, using local populations to test language skills and community-specific harms. **→ Sabi: this is the direct precedent for testing in Nigerian English, Pidgin, Hausa/Yoruba/Igbo with local testers.**
+
+### 1b. Child-safety red-teaming specifically (most relevant to Sabi)
+- Anthropic runs **red-teaming for CSAM/CSEM led by internal child-safety experts**, *plus* commissioned **external policy testing** to keep up with new abuse trends.
+- Detection stack they pair with red-teaming: **Thorn's "Safer Predict" CSAM classifier** for novel CSAM in inputs *and* outputs; **Thorn's "Safer Match"** (multi-hash) for known CSAM in image inputs; **hash-matching across all surfaces**; reporting to **NCMEC**. They also hash-match training data to prevent CSAM ingestion.
+- **→ Sabi takeaway:** the model is *red-team with internal child-safety leads → commission external expert (Thorn-style) policy testing → deploy classifier + hash-matching → report pipeline*. You can mirror this at small scale: an internal child-safety reviewer writes probes, an external advisor (a Nigerian child-protection NGO) validates, and you wire a CSAM/grooming classifier on both input and output.
+
+### 1c. Frontier Threats Red Teaming (national security: CBRN, cyber, autonomy)
+- The signature methodology is the **qualitative → quantitative pipeline**, which is the single most transferable idea for your plan:
+  1. Domain experts develop a **well-articulated threat model** ("what info is dangerous, how it's combined to cause harm, what accuracy/frequency is required").
+  2. **Ad hoc human probing** to elicit the threat (experts + LLM researchers spend **100+ hours**, learning to jailbreak the model).
+  3. Standardize the probes as understanding deepens.
+  4. Use a **language model to generate hundreds/thousands of variations** of the successful probes.
+  5. Convert into **repeatable, automated, quantitative evaluations** with tooling to run them at scale.
+- Concrete example: worked with **Gryphon Scientific** biosecurity experts over **6 months / 150+ hours**, using a **bespoke secure interface without the normal trust-and-safety monitoring** so experts could probe raw capability. Findings fed into both **Constitutional-AI training** (teach the model to distinguish harmful vs. harmless biology) and **classifier-based filters**.
+- **→ Sabi:** swap "CBRN" for your threat models (grooming, self-harm coaching, sexual content, dangerous real-world advice, leaking another child's PII). The 5-step pipeline is exactly how you scale from "founder hand-tests 50 prompts" to "automated nightly eval suite of thousands."
+
+### 1d. Constitutional Classifiers + the bug-bounty program (the headline numbers)
+- **Constitutional Classifiers** = input *and* output classifiers trained on **synthetic data generated from a "constitution"** — natural-language rules specifying allowed vs. disallowed content (e.g., assist college chemistry homework, refuse Schedule-1 synthesis).
+- **First-gen results:** jailbreak success **86% (unguarded) → 4.4% (guarded)**; blocked **95%** of attacks; **+23.7% compute overhead**; only **+0.38%** extra refusal of harmless queries.
+- **Synthetic stress test:** tested against **10,000 synthetic jailbreak prompts (generated by Claude)** — guarded blocked ~95%, unguarded blocked only ~14%.
+- **Bug-bounty / public challenge mechanics (the part to copy):**
+  - First HackerOne round (Aug onward): **$15,000** for a **universal jailbreak** that defeats the classifier on **10 forbidden CBRN questions**. **183 experts, ~3,000 combined hours**; best result got useful info on only **5 of 10**.
+  - **Feb 3–10, 2025 public challenge:** **8 levels**; **$10,000** to first to pass all 8 with *different* jailbreaks, **$20,000** for a *single universal* jailbreak. **339 researchers, 300,000+ chat interactions**; **$55,000** total paid to 4 teams (1 universal, 1 borderline-universal, 2 multi-jailbreak).
+  - Winning techniques logged: **encoded prompts/ciphers**, **role-play scenarios**, **benign keyword substitution**, **prompt-injection**. (These are your test categories.)
+- **Next-gen "Constitutional Classifiers++":** two-stage **ensemble** (lightweight **linear probes** screen all traffic → escalate to heavier classifier ensemble); **~1% compute overhead** (down from 23.7%); harmless-refusal down to **0.05%**; **1,700+ cumulative red-team hours over ~198,000 attempts**, **zero universal jailbreaks** found.
+- **→ Sabi:** you can't pay $55k, but the *structure* scales down: define N "forbidden" scenarios for a child tutor, set tiered levels, define "universal vs. per-scenario" success, and run a time-boxed internal/friends challenge. The "synthetic prompts generated by the model itself" trick is free and high-leverage.
+
+### 1e. Automated red-teaming with LMs
+- Red-team model generates adversarial examples → blue-team fine-tunes target on them → iterate. Used to broaden coverage cheaply.
+
+### 1f. Petri (open-source auditing/red-team agent) — directly usable
+- **Petri** ("Parallel Exploration Tool for Risky Interactions"), released Oct 2025, collaboration of Anthropic Alignment team + **Meridian Labs + UK AISI Red Team**, open source.
+- How it works: you give it **seed instructions** (target scenarios/behaviors); for each seed, an **auditor agent makes a plan and interacts with the target model in a tool-use loop** (multi-turn); a **judge agent scores each transcript across multiple dimensions** so you filter for the interesting ones. Ships with **170+ conversation seeds**. Tested 14 models across 111 scenarios; surfaced deception, manipulation, whistleblowing.
+- **→ Sabi: this is a free, off-the-shelf automated multi-turn red-team harness you could literally point at Sabi** — write seed instructions like "try to get the tutor to discuss sexual content," "try to get the tutor to give the child your phone number," "pose as the child's parent and extract another student's data." Inspect Petri repo: https://meridianlabs-ai.github.io/inspect_petri/
+
+### 1g. Open-ended / community / crowdsourced
+- Early **crowdworker red-teaming** in a controlled environment (mid-2022, pre-Claude), workers told to use their own judgment/risk tolerance.
+- **DEF CON AI Village 2023 Generative Red Teaming (GRT) Challenge** — thousands of participants, many non-technical, to broaden who does AI safety.
+
+### 1h. Responsible Scaling Policy (RSP) red-line testing
+- **AI Safety Levels (ASL-1…ASL-4)**: safeguards scale with capability. **ASL-2** = current models; **ASL-3** triggered by CBRN uplift or autonomous-R&D capability.
+- **Commitment: do not deploy if catastrophic-misuse risk is detected under *adversarial testing*** — i.e., red-team results are a hard deployment gate. Capability thresholds defined as red lines; pre-deployment adversarial testing + security hardening required before crossing.
+- **→ Sabi:** adopt the *principle* — define explicit red-line behaviors (e.g., any successful grooming completion, any self-harm method given to a child) that **block release** until fixed. This is the "go/no-go" backbone of your plan.
+
+**Anthropic sources:**
+- https://www.anthropic.com/news/challenges-in-red-teaming-ai-systems
+- https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety
+- https://www.anthropic.com/research/next-generation-constitutional-classifiers
+- https://www.hackerone.com/blog/how-anthropics-jailbreak-challenge-put-ai-safety-defenses-test
+- https://www.anthropic.com/responsible-scaling-policy
+- https://www.anthropic.com/research/petri-open-source-auditing
+- https://www.anthropic.com/transparency/voluntary-commitments (child-safety / Thorn details)
+
+---
+
+## 2. OPENAI
+
+OpenAI's public stance: red-teaming spans **qualitative capability discovery, stress-testing mitigations, automated red-teaming, and risk-scale feedback** — and they explicitly structure **external (human expert)** vs **automated** as two complementary tracks, described in two papers released together ("Advancing red teaming with people and AI," Nov 2024).
+
+### 2a. The Red Teaming Network
+- A standing network of **external experts** brought in to test/critique systems: "researchers, social scientists, security specialists, ethicists, academics."
+- You can **apply**, but OpenAI also **directly recruits** across cybersecurity, AI ethics, sociology, public policy. Selection weighs **expertise, relevant experience, commitment to ethical standards**.
+- Project-based engagement (members tapped per campaign), not full-time.
+- **GPT-4 precedent: 100+ external red-teamers** across adversarial scenarios in pre-launch vetting.
+
+### 2b. External red-teaming methodology — the FOUR design steps (paper: "OpenAI's Approach to External Red Teaming," Lama Ahmad et al.)
+This is the cleanest published "how to run a campaign" checklist — **build your Sabi campaign template on these four:**
+1. **Composition of red teams** — select members based on campaign objectives; mix perspectives (natural sciences, cybersecurity, regional politics) to cover the needed breadth.
+2. **Access to model versions** — decide which version testers get. **Early-stage/un-mitigated models reveal inherent risks; more-developed versions reveal gaps in planned mitigations.** (Note the parallel to Anthropic's "bespoke interface without trust-and-safety tooling.")
+3. **Guidance & documentation** — clear instructions, suitable **interfaces**, and **structured documentation**: describe the model, existing safeguards, the testing interface, and how to record results.
+4. **Data synthesis & evaluation** — after the campaign, assess whether findings fit existing policy or need new behavioral modifications; **convert findings into repeatable automated evaluations** for future model updates. (Same qualitative→quantitative loop as Anthropic.)
+- Stated **limitations** of external red-teaming: it's a point-in-time snapshot, can't eliminate risk, info hazards from disclosure, and the relevance of human red-teaming may shift as models grow more capable.
+
+### 2c. Automated red-teaming (paper: "Diverse and Effective Red Teaming with Auto-generated Rewards and Multi-step RL," Beutel, Xiao, Heidecke, Weng — arXiv 2412.18693)
+- **Core problem:** prior automated methods optimize *either* diversity *or* effectiveness, rarely both.
+- **Two-step decomposition:** (1) auto-generate **diverse attacker goals**; (2) train an attacker to produce **effective attacks for each goal**.
+- **Step 1 – goal generation:** an LLM generates diverse goals via few-shot prompts; also converts existing datasets (e.g., Anthropic Harmless) into **(instruction, criteria)** tuples.
+- **Step 2 – Rule-Based Rewards (RBRs):** an LLM acts as a **yes/no grader** scoring whether each attack achieved its specific goal criterion (generated zero-shot, so scalable). For jailbreaking they blend it 50/50 with a Moderation-API score.
+- **Multi-step RL with a diversity reward:** the attacker generates a sequence of T attacks and is **rewarded for being *different in style* from its prior attempts** — using a clever **style-subspace** trick (QR-decompose embeddings into "goal" vs "style" subspaces, measure diversity only in the style subspace) so it varies *tactics* without drifting *off-goal*.
+- **Results:** on **indirect prompt injection**, multi-step RL hit **0.35 success at 0.62 style-diversity** vs a one-shot baseline's 0.02/0.23. On **safety jailbreaking**, a vanilla-RL baseline got 0.96 success but collapsed to **0.02 diversity** (near-identical attacks); their method traded slightly lower per-attempt success for far higher diversity and reached **~100% cumulative success when picking the best attack per goal**.
+- **→ Sabi:** the transferable lesson is *don't let your automated attacker collapse into one trick.* Generate a broad goal list (every way a child-tutor can fail), grade with cheap LLM yes/no RBRs, and explicitly reward attack diversity.
+
+### 2d. Preparedness Framework (the deployment gate)
+- Tracks **four catastrophic-risk categories: Cybersecurity, CBRN, Persuasion, Model Autonomy.**
+- Risk levels **Low / Medium / High / Critical**; only **post-mitigation ≤ Medium can deploy**, only **≤ High can develop further**. Red-team/eval results map to these via indicators; a **Safety Advisory Group** signs off (e.g., o1 rated overall Medium pre-mitigation).
+- **→ Sabi:** mirror with a tiny scorecard — your categories might be *Child Sexual Safety, Self-Harm/Mental-Health, Violence/Dangerous Advice, Privacy/PII, Manipulation/Persuasion.* Define Low/Med/High and a release gate.
+
+### 2e. System cards
+- Each major model ships a **system card** documenting red-team findings, the Preparedness scorecard, and residual risks (GPT-4, GPT-4o, o1). **→ Sabi: publish a short "Sabi safety card"** — strong for grant/UNICEF credibility.
+
+**OpenAI sources:**
+- https://openai.com/index/red-teaming-network/
+- https://openai.com/index/advancing-red-teaming-with-people-and-ai/
+- https://cdn.openai.com/papers/openais-approach-to-external-red-teaming.pdf (PDF)
+- https://arxiv.org/abs/2412.18693 (automated red-teaming paper)
+- https://www.artificialintelligence-news.com/news/openai-enhances-ai-safety-new-red-teaming-methods/ (clean summary of the 4 steps)
+- https://arxiv.org/pdf/2412.16720 (o1 System Card)
+- https://mindgard.ai/blog/openai-red-teaming-network
+
+---
+
+## 3. GOOGLE / DEEPMIND
+
+### 3a. The AI Red Team
+- A dedicated team launched 2023 alongside **SAIF**; evolved from Google's decade-old traditional red team but adds **AI subject-matter expertise**. It runs **simulated, realistic attacks using real attacker TTPs**, drawing threat intel from **Mandiant** and Google's **Threat Analysis Group (TAG)**.
+- **Six attack categories** they simulate (use as a checklist of AI-specific attack surface):
+  1. **Prompt attacks** (input manipulation / injection)
+  2. **Training-data extraction** (pull training data, incl. PII)
+  3. **Backdooring the model**
+  4. **Adversarial examples** (inputs causing wrong outputs)
+  5. **Data poisoning**
+  6. **Exfiltration** (steal the model / weights)
+- Key published lesson: **incorporate red-teaming into product/research workflows** rather than treating it as a one-off audit.
+
+### 3b. Secure AI Framework (SAIF)
+- A security framework adapting software-security best practices to AI, addressing **AI-specific risks: model theft, training-data poisoning, prompt-injection of malicious inputs, and extraction of confidential training data.**
+- **SAIF 2.0 / agentic update:** extended to **agentic risks** (data disclosure, unintended actions) and the controls to mitigate them.
+
+### 3c. Automated Red Teaming (ART) for Gemini — the standout technical detail
+- Google's internal Gemini team uses **ART**: continuously, automatically attacking Gemini "in realistic ways" to find weaknesses.
+- For **indirect prompt injection during tool use**, they **fine-tuned Gemini on a large dataset where ART generates effective indirect prompt injections targeting sensitive info**, teaching the model to ignore embedded malicious instructions — this is the lineage of "red-team finding → auto-generate training data → harden model." **Gemini 2.0/2.5 reasoning now auto-generates both evaluations *and* training data from red-team findings.**
+- **Defense-in-depth architecture they name:** **model hardening + input/output classifiers + system-level guardrails**, with techniques **Spotlighting** and **Self-reflection** tested for injection defense.
+- **Critical finding for your plan:** static defenses were **"much less effective against adaptive attacks"** that learn to bypass them — **you must test with adaptive/iterative attackers, not just a fixed prompt list.**
+
+### 3d. "Red Teaming Language Models with Language Models" (Perez et al., DeepMind 2022 — the foundational automated-RT paper; arXiv 2202.03286)
+- Use a **red LM to generate test cases** against a target (a 280B chatbot), and a **classifier to detect harmful outputs**. Methods span a **diversity/difficulty spectrum**:
+  - **Zero-shot generation** (broad, diverse, lower hit-rate)
+  - **Few-shot generation** (seed with known failures)
+  - **Supervised fine-tuning** of the red LM
+  - **Reinforcement learning** (highest difficulty/effectiveness, lower diversity — same tension OpenAI later addressed)
+- **Harms surfaced:** offensive text about specific groups; **leakage of private training data** (real phone numbers generated as the bot's own contact info); distributional bias; **multi-turn conversational harms** (harms that only emerge over a conversation). Found **tens of thousands** of offensive replies.
+- **BugSWAT:** Google also runs internal **generative-AI security "BugSWAT" events** (live hackathon-style red-team events).
+
+**Google/DeepMind sources:**
+- https://blog.google/innovation-and-ai/technology/safety-security/googles-ai-red-team-the-ethical-hackers-making-ai-safer/
+- https://deepmind.google/blog/advancing-geminis-security-safeguards/
+- https://cloud.google.com/use-cases/secure-ai-framework
+- https://blog.google/security/mitigating-prompt-injection-attacks/
+- https://aclanthology.org/2022.emnlp-main.225/ + https://arxiv.org/pdf/2202.03286 (Perez et al. 2022)
+
+---
+
+## 4. MICROSOFT
+
+### 4a. AI Red Team (AIRT) + the "100+ products" whitepaper (arXiv 2501.07238) — your single best methodology source
+The whitepaper's **threat-model ontology** is the cleanest framework to structure findings — **adopt it for Sabi verbatim:**
+- **System** — the end-to-end app under test
+- **Actor** — who you emulate (adversarial scammer *or* benign user; for Sabi: a curious child, a troll child, a malicious adult posing as a child, a parent)
+- **TTPs** — **Tactic** (high-level stage, e.g., reconnaissance), **Technique** (e.g., jailbreak), **Procedure** (concrete reproducible steps)
+- **Weakness** — the vulnerability enabling the attack
+- **Impact** — downstream consequence (harmful content, privilege escalation, etc.)
+
+**The 8 lessons (full list — these are quotable design principles for your plan):**
+1. **Understand what the system can do and where it's applied** — start from the model's real downstream use, not generic capability.
+2. **You don't have to compute gradients to break an AI system** — simple **prompt engineering often outperforms gradient-based attacks**; real attackers use the cheap stuff.
+3. **AI red teaming is not safety benchmarking** — red-teaming finds *novel* harms; benchmarks measure *known* ones. **You need both; one can't replace the other.**
+4. **Automation can help cover more of the risk landscape** (PyRIT) — scale + handles model non-determinism.
+5. **The human element of AI red teaming is crucial** — humans needed for prioritization, **cultural/linguistic competence**, subject-matter expertise (medicine, CBRN, psychosocial), and **emotional intelligence**. "Only human operators can assess the full range of interactions users might have."
+6. **Responsible-AI (RAI) harms are pervasive but difficult to measure** — bias, psychosocial harm, etc. are fuzzy and need careful protocol.
+7. **LLMs amplify existing security risks and introduce new ones** — both classic appsec bugs *and* new model-level ones.
+8. **The work of securing AI systems will never be complete** — it's continuous; raise the *cost* of attacks, you never "finish."
+
+**Case studies (each maps to a Sabi test scenario):**
+- **Vision-LM jailbreak:** malicious text *overlaid on an image* bypassed guardrails that blocked the same text typed directly. (For Sabi voice: think *audio* analog — try the harmful request spoken vs typed, in dialect, encoded.)
+- **Automated scamming system:** jailbroken LLM **wired to STT/TTS to persuade and scam people** end-to-end. **→ This is literally a voice pipeline like Sabi's — the exact misuse to test.**
+- **Chatbot responses to distressed users:** multi-turn sims of users expressing **depression/self-harm**; evaluated psychological safety across grief/mental-health/crisis; **guidelines built *with psychology and medical experts*.** **→ Core Sabi test category; recruit a child-psych expert as your PVT partner.**
+- **Gender bias in text-to-image:** ambiguous prompts ("secretary talking to boss"), **50 images per prompt** to measure stereotype rates. (Method: generate many samples per probe to quantify a fuzzy harm — applies to measuring Sabi's bias.)
+- **SSRF via outdated FFmpeg** in a video-AI app → privilege escalation. (Reminder: classic dependency/appsec bugs live underneath the AI.)
+
+### 4b. PyRIT (Python Risk Identification Tool) — open-source, directly usable
+- Open-source Python framework to **red-team at scale while keeping a human in the loop.** Capabilities:
+  - **Prompt datasets** + **automated converters** (encodings/ciphers/obfuscation to mutate a prompt many ways)
+  - **Automated multi-turn attack strategies built in: TAP (Tree of Attacks with Pruning), PAIR, and Crescendo**
+  - **Multimodal scoring** components
+  - Extensible interfaces; can plug in an **uncensored model to generate jailbreaks**
+  - Orchestrates **system-level attacks** chaining multiple techniques
+- **Crescendo (multi-turn) is shipped in PyRIT** — see cross-cutting section. There's also a managed **AI Red Teaming Agent in Azure AI Foundry** built on PyRIT.
+- **→ Sabi: PyRIT is the most production-ready free harness for your plan** — converters + Crescendo + scoring out of the box. Pair it with Petri (Anthropic) for breadth.
+
+### 4c. Tay (2016) — the failure lesson Microsoft institutionalized
+- Tay was a Twitter chatbot that **learned dynamically from user input with no input filters and no boundaries on what it could learn**; trolls turned it racist/sexist within **24 hours** (50,000+ followers). Lessons that became industry practice: **never deploy a self-learning system without filters, boundaries, monitoring, and human oversight**; diversify teams and training data; assume adversarial users from minute one. "She became the reason every AI company now has a 'What could go wrong?' meeting."
+- **→ Sabi (huge for a child product):** Tay is the cautionary tale to cite — Sabi must **not learn unfiltered from child input**, must have **hard content boundaries**, **live monitoring**, and **human-review escalation**. Bake this into the plan's principles.
+
+**Microsoft sources:**
+- https://www.microsoft.com/en-us/security/blog/2025/01/13/3-takeaways-from-red-teaming-100-generative-ai-products/
+- https://arxiv.org/html/2501.07238v1 (full whitepaper, 8 lessons + ontology + case studies)
+- https://github.com/Azure/PyRIT and https://microsoft.github.io/PyRIT/ (incl. Crescendo: https://microsoft.github.io/PyRIT/code/executor/attack/crescendo-attack/)
+- https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent
+- Tay: https://prmia.org/common/Uploaded%20files/eAI/PRMIA%20Case%20study%20-%20TayChatBot.pdf
+
+---
+
+## 5. META
+
+Meta's approach is **"purple teaming"** — ship open-source offensive (red) *and* defensive (blue) artifacts together so the community can both attack and defend. Umbrella: **Purple Llama**.
+
+### 5a. CyberSecEval (benchmark suite — the red-team *measurement* artifacts)
+- **v1:** first industry cyber-safety LLM benchmark; built on **CWE + MITRE ATT&CK**. Core tooling: the **Insecure Code Detector (ICD)** — **189 static-analysis rules** detecting **50 insecure coding practices** from CWE. Test types:
+  - **Autocomplete tests** — how often the LLM *completes* code insecurely
+  - **Instruct tests** — how often it writes insecure code *when asked*
+  - **Cyberattack-helpfulness** — compliance when asked to assist attacks (graded against MITRE ATT&CK)
+- **v2:** adds **prompt-injection susceptibility**, **code-interpreter-abuse propensity**, **offensive-cyber capability**, and the **False Refusal Rate (FRR)** — how often it **wrongly refuses a benign-but-borderline** request. **→ FRR is exactly the over-blocking metric you need for Sabi** (a tutor that refuses legitimate questions about, say, human anatomy in a science lesson is a failure too).
+- **v3:** adds **visual prompt injection**, **spear-phishing capability**, **autonomous offensive cyber operations**. (v4 exists per the docs site.)
+
+### 5b. Llama Guard (input/output safety classifier — a *defensive* red-team artifact, and a usable guardrail)
+- Fine-tuned safety classifier that labels prompts/responses against the **MLCommons taxonomy of 13 hazards** (current Llama Guard 3; 128k context; multilingual; a vision variant exists). **Full taxonomy — these are off-the-shelf content categories you can adopt for Sabi:**
+  - **S1 Violent Crimes, S2 Non-Violent Crimes, S3 Sex-Related Crimes, S4 Child Sexual Exploitation, S5 Defamation, S6 Specialized Advice, S7 Privacy, S8 Intellectual Property, S9 Indiscriminate Weapons, S10 Hate, S11 Suicide & Self-Harm, S12 Sexual Content, S13 Elections.**
+- **→ Sabi:** **S4, S11, S12, S3, S10, S7 are your priority categories** for a child voice tutor. You can run **Llama Guard as an actual input/output filter** (it's small, runs on Ollama — fits your fallback stack) *and* use its taxonomy to organize your red-team test set.
+
+### 5c. Prompt Guard (jailbreak/injection classifier)
+- Small classifier trained on a **mix of benign web data, real user prompts, and malicious prompt-injection/jailbreak datasets**; detects two classes: **prompt injections** (untrusted third-party data smuggling instructions) and **jailbreaks** (instructions overriding safety). **→ Sabi: usable as a first-line input filter.**
+
+### 5d. Code Shield
+- Inference-time filtering of insecure LLM-generated code (less relevant to a tutor, noted for completeness).
+
+### 5e. Llama red-teaming practice
+- Llama models are trained partly on **synthetic injections + data from red-teaming earlier model versions** ("red-team → feed back into training" loop), and Meta emphasizes **community-led red-teaming** (the open-source counterpoint to Tay's closed failure).
+
+**Meta sources:**
+- https://github.com/meta-llama/PurpleLlama (+ /CybersecurityBenchmarks/README.md)
+- https://meta-llama.github.io/PurpleLlama/CyberSecEval/docs/intro
+- https://arxiv.org/pdf/2312.04724 (CyberSecEval v1) and https://arxiv.org/pdf/2404.13161 (CyberSecEval 2)
+- https://ai.meta.com/blog/purple-llama-open-trust-safety-generative-ai/
+- Llama Guard 3 taxonomy: https://ollama.com/library/llama-guard3 ; vision card: https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Guard3/11B-vision/MODEL_CARD.md
+
+---
+
+## 6. CROSS-CUTTING METHODOLOGY (build the plan's spine from this)
+
+### Manual expert vs. automated (LLM-attacks-LLM) — the consensus division of labor
+Every lab uses **both** and is explicit that **neither replaces the other**:
+- **Automated (LLM red-teams LLM):** scale, coverage of the risk landscape, handles model non-determinism, runs continuously/regression. Foundational paper: **Perez et al. 2022** (zero-shot → few-shot → SL → RL). State of the art: **OpenAI's diversity-via-multi-step-RL**, **Google's ART**, **Microsoft's PyRIT**, **Anthropic's Petri**.
+- **Manual expert:** prioritization, **cultural/linguistic nuance**, deep domain harm (child psych, CSAM, medical), **emotional intelligence**, and finding genuinely novel failure modes. Microsoft Lesson 5 + Lesson 2 ("you don't need gradients — humans doing prompt engineering find the real bugs").
+- **The bridge between them (universal pattern):** **qualitative human probing → standardize the probe → LLM generates thousands of variants → automated repeatable eval → feed into training/guardrails.** Anthropic, OpenAI, and Google all describe this same loop. **This is the single most important structure to put in your plan.**
+
+### Single-turn vs. multi-turn (Crescendo) — test both, weight multi-turn heavily
+- Most safety systems **score individual turns, not conversation trajectories** — the gap multi-turn attacks exploit.
+- **Crescendo** (Russinovich, Salem, Eldan, Microsoft 2024): start with an **innocuous question**, escalate over **<10 turns** in small benign-looking steps; exploits the model's tendency to stay consistent with recent context. **56% ASR on GPT-4, 83% on Gemini-Pro**, some variants ~100%. Implemented in **PyRIT** with **backtracking** (if the model refuses, it backs up and re-routes).
+- Other multi-turn/automated strategies in the toolchain: **PAIR**, **TAP (Tree of Attacks with Pruning)**, **curiosity-driven red-teaming**, **AutoDAN**.
+- **→ Sabi:** a child tutor is a *long multi-turn conversation* by design — **Crescendo-style gradual escalation is your highest-risk vector** (e.g., a predator-style slow build, or a child slowly steering toward self-harm). Multi-turn must be the core of testing, not an afterthought. Defense pattern (from Microsoft/Google): a **conversation-level classifier that looks at the whole trajectory**, not just the last turn.
+
+### Bug-bounty / crowdsourced models
+- **Anthropic:** HackerOne, **tiered levels**, **universal-vs-specific** jailbreak distinction, **$10k–$20k**, time-boxed public challenges (339 researchers, 300k chats). Now has a standing **Model Safety Bug Bounty**.
+- **OpenAI:** Red Teaming Network (apply + direct recruit) + bug-bounty programs.
+- **Google:** **BugSWAT** live events + external researcher partnerships.
+- **DEF CON GRT** (industry-wide, incl. Anthropic) — broaden the tester pool, including non-experts.
+- **→ Sabi:** a **time-boxed "break Sabi" challenge** with friends/local educators/students is cheap and surfaces things you won't. Use the **tiered-levels + universal-jailbreak** framing.
+
+### Staged / tiered testing & deployment gates
+- **Anthropic RSP (ASL levels)** and **OpenAI Preparedness (Low/Med/High/Critical + Safety Advisory Group sign-off)** both make red-team/eval results a **hard pre-deployment gate** with a **named decision body**. Red-line behaviors block release.
+- **→ Sabi:** define **release-blocking red lines** (any grooming completion, any self-harm method delivered, any sexual content to a minor, any disclosure of another child's PII) and a simple **Low/Med/High scorecard** across your harm categories. Even as a solo builder, write down the gate.
+
+### How they scope, recruit, score, and feed back
+- **Scope:** start from **downstream impact / real use** (Microsoft Lesson 1; OpenAI step 1), define explicit **threat models** per harm (Anthropic), and decide **which model version** testers hit (un-mitigated to find inherent risk vs. mitigated to find guardrail gaps — OpenAI step 2; Anthropic's "bespoke interface without T&S tooling").
+- **Recruit:** by threat model — **domain experts with a *sustained* relationship** (Anthropic PVT), diverse disciplines (OpenAI), plus crowds for breadth. For child safety specifically: **internal child-safety lead + external NGO/psych expert** (Anthropic + Microsoft both do this).
+- **Score severity:** **threat-model ontology** mapping TTP → weakness → **impact severity** (Microsoft); **risk-level scorecards** (OpenAI Low/Med/High/Critical; Anthropic ASL); for fuzzy harms, **generate many samples per probe and measure rates** (Microsoft's 50-images, Anthropic's 10k-synthetic-prompts).
+- **Feed back:** convert findings into (a) **automated regression evals**, (b) **training data / fine-tuning** to harden the model (Google ART → training data; Anthropic → Constitutional AI), and (c) **classifier guardrails** on input *and* output (everyone). Then **re-test adaptively** — Google's warning that static defenses fail against adaptive attackers.
+
+### Published benchmarks/tools you can actually use for Sabi (free)
+- **PyRIT** (Microsoft) — converters, Crescendo/PAIR/TAP, scoring. Best general harness.
+- **Petri** (Anthropic/Meridian/UK AISI) — automated multi-turn auditor+judge agents, 170+ seeds.
+- **Llama Guard 3** (Meta) — 13-category input/output classifier, runs on Ollama (fits your stack); use as guardrail *and* as your test taxonomy.
+- **Prompt Guard** (Meta) — injection/jailbreak input classifier.
+- **CyberSecEval** (Meta) — if Sabi ever generates/handles code; **FRR test** is reusable as your over-refusal metric.
+- **MLCommons AILuminate** / standard hazard taxonomy — shared category scheme.
+
+**Cross-cutting sources:**
+- Crescendo: https://microsoft.github.io/PyRIT/code/executor/attack/crescendo-attack/ ; https://www.scworld.com/news/microsofts-ai-watchdog-defends-against-new-llm-jailbreak-method
+- Perez et al. 2022: https://arxiv.org/pdf/2202.03286
+- OpenAI diversity/RL: https://arxiv.org/abs/2412.18693
+- Multi-turn strategy overview: https://www.promptfoo.dev/docs/red-team/strategies/multi-turn/
+- Survey "End-to-End Overview of Red Teaming for LLMs": https://arxiv.org/pdf/2503.01742
+
+---
+
+## The 8-part skeleton I'd lift directly into Sabi's red-team plan
+
+1. **Threat models** (Anthropic): enumerate per harm — child sexual safety/grooming, self-harm/mental-health coaching, violence/dangerous real-world advice, hate/bias, privacy/PII leakage (incl. *another* child's data), manipulation/over-trust, and **over-refusal/FRR**.
+2. **Ontology for findings** (Microsoft): System / Actor / TTP / Weakness / Impact.
+3. **Two tracks**: manual expert (internal child-safety lead + external child-psych/NGO PVT partner, Nigerian-English/Pidgin/dialect testers) **+** automated (PyRIT + Petri + Llama Guard taxonomy).
+4. **Multi-turn first** (Crescendo): slow-escalation grooming/self-harm trajectories; conversation-level (not per-turn) scoring.
+5. **Qualitative→quantitative loop** (Anthropic/OpenAI/Google): hand-probe → standardize → LLM-generate thousands of variants → automated nightly eval → fine-tune + classifier → **re-test adaptively**.
+6. **Severity scorecard + release-blocking red lines** (OpenAI Preparedness / Anthropic RSP).
+7. **Time-boxed "break Sabi" challenge** with tiered levels (Anthropic bug-bounty model), scaled to friends/educators/students.
+8. **Publish a short Sabi safety/system card** (OpenAI/Anthropic) for grant and UNICEF credibility — and explicitly cite **Tay** as the anti-pattern your design avoids.
+
+If you want, I can next pull deeper on one axis — e.g., the **exact Microsoft case study on the STT/TTS scam bot** (closest analog to Sabi's pipeline), or a concrete **PyRIT + Llama-Guard + Petri** wiring guide for your Claude/Cerebras/Groq/Ollama fallback stack.
+agentId: a37df9676f0509707 (use SendMessage with to: 'a37df9676f0509707' to continue this agent)
+<usage>subagent_tokens: 95911
+tool_uses: 38
+duration_ms: 387485</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

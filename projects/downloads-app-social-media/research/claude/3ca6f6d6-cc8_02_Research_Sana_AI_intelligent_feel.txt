@@ -1,0 +1,58 @@
+========================================================================
+AGENT RESEARCH: Research Sana AI intelligent feel
+Session: 3ca6f6d6-cc8f-48a7-ae98-043f8bea4484
+Time: 2026-04-20 01:44:31 UTC
+========================================================================
+
+Deep research task — I'm building a consumer AI video editing agent and want it to feel "super intelligent" like Sana AI. Research what actually makes AI products feel alive, collaborative, and smart (not just tools). Return dense, practical findings.
+
+Specifically investigate:
+
+1. **Sana AI** (sana.ai) — what exactly does their product do? What's their UX? How does it feel different from ChatGPT? What makes users say "it feels alive"? Key features: memory, integrations, proactive behavior, context awareness. How does it onboard? How does it learn the user's style?
+
+2. **Other "agentic" products that feel intelligent** — research what makes these products feel alive vs transactional:
+   - Granola (AI meeting notes)
+   - Rewind AI / Rewind.ai (memory layer)
+   - Perplexity Comet / Arc Browser AI
+   - Cursor / Claude Code (agent coding)
+   - Lindy / Gumloop (personal agents)
+   - Pi (Inflection's personal AI) — RIP but what made it feel warm?
+   - Replika (relationship angle, not trying to copy but learn from it)
+
+3. **Proactive behavior patterns** — how do intelligent-feeling products notice things without being asked? Research:
+   - File watching (watchdog in Python, fs.watch in Node, macOS FSEvents, Windows ReadDirectoryChangesW)
+   - Desktop daemon patterns for agents
+   - Context inference (time of day, calendar, recent activity)
+   - Soft suggestions vs interruptions — how to suggest without being annoying
+
+4. **Personalization / "knowing the user"** — how do apps build a model of the user that feels genuine?
+   - Long-term memory architectures (vector + symbolic hybrid)
+   - Explicit memory (what the user tells them) vs implicit (what they infer)
+   - Memory writes: when, what, how much
+   - How Claude's project memory, ChatGPT memory, and Sana handle this
+   - Style learning — how do you learn "Naomi prefers warm cinematic edits with bold captions" over time?
+
+5. **Greetings and conversational warmth** — what makes a chat UI feel like a friend vs a tool?
+   - Opening message patterns (time-of-day awareness, recent context)
+   - Tone: when to be playful, when to be direct
+   - Randomization without being random
+   - Research Anthropic's tone guidelines for Claude if public
+
+6. **The "multi-version + taste" pattern** — for creative products (Midjourney's 4 variations, Suno's multiple tracks, Runway's generations), how does offering multiple options change the UX? Why does it feel smarter? How is "best" selected?
+
+Context: the user is building "Lumina" — a desktop AI video editor for creators. Wants it to greet "Good afternoon, Naomi," notice new clips in their folders, suggest edits, remember their style, generate 3 variations and let them pick, have a chat interface. Think Claude.ai meets CapCut meets a trusted friend.
+
+For each area, give me CONCRETE patterns and implementation ideas I can use. No generic advice. Return ~1000-1500 words.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a660dc3576486c7be (internal ID - do not mention to user. Use SendMessage with to: 'a660dc3576486c7be' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Social-Media/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484/tasks/a660dc3576486c7be.output
+Do NOT Read or Bash tail this file — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

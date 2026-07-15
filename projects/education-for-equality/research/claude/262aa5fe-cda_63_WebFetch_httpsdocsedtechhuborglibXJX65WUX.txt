@@ -1,0 +1,35 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.edtechhub.org/lib/XJX65WUX
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-25 05:52:43 UTC
+========================================================================
+
+URL: https://docs.edtechhub.org/lib/XJX65WUX
+Extraction prompt: Find the full text or methodology details of Milan & Burnett 2014 "Exclusion from Education." Extract any wage premium percentages, formulas, country-specific returns to education data, or tables showing how economic cost was calculated per country.
+
+----------------------------------------
+
+# Analysis of the Document
+
+I cannot provide the specific economic data, wage premium percentages, formulas, or country-specific returns to education calculations you've requested. 
+
+The webpage content provided is primarily **HTML/JavaScript markup** from the EdTech Hub Evidence Library interface, not the actual document text. It shows metadata indicating the document exists:
+
+- **Title:** "Exclusion from education: The Economic Cost of Out of School Children in 20 Countries"
+- **Authors:** Milan Thomas & Nicholas Burnett
+- **Publication Date:** 2013
+- **Publisher:** Educate a Child; Results for Development
+- **URL:** Available as a PDF at educateachild.org
+
+## To Access the Content You Need:
+
+You would need to:
+1. Download the PDF directly from the link provided
+2. Review the full document's methodology section and data tables
+3. Extract the country-specific returns to education figures and calculations
+
+The page structure shows the document is cataloged in the library, but the actual analytical content—including any wage premium data, formulas, or per-country cost calculations—is not included in the HTML/interface code provided here.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

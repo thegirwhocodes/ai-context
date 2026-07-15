@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Telnyx Nigeria voice API pricing per minute programmable voice
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:05:55 UTC
+========================================================================
+
+Search query: Telnyx Nigeria voice API pricing per minute programmable voice
+
+----------------------------------------
+
+Web search results for query: "Telnyx Nigeria voice API pricing per minute programmable voice"
+
+Links: [{"title":"Voice API Pricing - Flexible pricing","url":"https://telnyx.com/pricing/voice-api"},{"title":"Voice API - Programmable Voice for Developers | Telnyx","url":"https://telnyx.com/products/voice-api"},{"title":"All Telnyx Products, APIs And Phone Numbers","url":"https://telnyx.com/pricing"},{"title":"Conversational AI Pricing | Build Voice AI Agents with Telnyx","url":"https://telnyx.com/pricing/conversational-ai"},{"title":"Telnyx Price Calculator","url":"https://www.famulor.io/telnyx-calculator"},{"title":"Programmable Mobile Voice on eSIM | VoLTE on eSIM","url":"https://telnyx.com/products/mobile-voice"},{"title":"Voice AI Agents with Carrier-Grade Voice Quality","url":"https://telnyx.com/resources/comparing-telnyx-twilio"},{"title":"Voice AI Agents with Global Carrier-Grade Infrastructure","url":"https://telnyx.com/pricing/numbers"},{"title":"Text to speech (TTS) Pricing | Telnyx","url":"https://telnyx.com/pricing/text-to-speech"},{"title":"Telnyx vs Sierra: pricing, quality, coverage, APIs, support","url":"https://telnyx.com/resources/wireless-comparison-telnyx-sierra"}]
+
+Based on the search results, I found information about Telnyx's Voice API pricing structure, though specific pricing details for Nigeria were not detailed in the results.
+
+## Telnyx Voice API Pricing Overview
+
+Telnyx Voice API uses a pay-per-minute pricing model where you're only charged for what you use. The cost varies depending on the direction of the call, the number used, and the destination of the call.
+
+For context on general pricing structure: Telnyx offers transparent per-minute rates starting as low as $0.08/min for US outbound calls, though rates vary by destination country.
+
+Telnyx offers discounts in exchange for monthly commitments as you scale, with discounted rates based on how much you spend instead of pay-as-you-go rates.
+
+## Nigeria-Specific Pricing
+
+Unfortunately, the search results did not contain specific pricing information for Nigeria calls. For accurate Nigeria-specific rates, you would need to:
+
+1. Visit Telnyx's official pricing page directly
+2. Use their pricing calculator tool if Nigeria is listed among available countries
+3. Contact Telnyx's sales team for current Nigeria pricing
+
+The pricing varies significantly by country and destination, so I recommend checking their official pricing page or contacting them directly for the most current Nigeria-specific per-minute rates.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: VS Code voice recording extension microphone audio
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 05:47:37 UTC
+========================================================================
+
+Search query: VS Code voice recording extension microphone audio
+
+----------------------------------------
+
+Web search results for query: "VS Code voice recording extension microphone audio"
+
+Links: [{"title":"VS Code Speech - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech"},{"title":"Voice support","url":"https://code.visualstudio.com/docs/configure/accessibility/voice"},{"title":"VS Code Speech","url":"https://github.com/microsoft/vscode/wiki/VS-Code-Speech"},{"title":"Scribe Audio Recorder - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=bridgeconn.scribe-audio"},{"title":"Audiocode - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=GregoryGlasby.audiocode"},{"title":"Simple Voice Recognition in VSCode – while ( !0 ) {","url":"https://whilenotzero.wordpress.com/2018/11/13/simple-voice-recognition-in-vscode/"},{"title":"Voice Comments Extension for Visual Studio 2022 - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=d7chelovechek.vcext2022"},{"title":"Claude Code Voice - Visual Studio Marketplace","url":"https://marketplace.visualstudio.com/items?itemName=Fultonmarketaistudio.claude-code-voice"},{"title":"GitHub - kamranayub/vs-code-presenter: Record audio and UI for your VS Code session and share it easily with others for playback","url":"https://github.com/kamranayub/vs-code-presenter"},{"title":"GitHub - b4rtaz/voice-assistant: Voice assistant for Visual Studio Code.","url":"https://github.com/b4rtaz/voice-assistant"}]
+
+Based on the search results, here are several VS Code extensions for voice recording and microphone audio:
+
+**Official Options:**
+
+1. VS Code Speech - A VS Code extension to bring speech-to-text and other voice capabilities to VS Code. To get started with voice support in VS Code, install the VS Code Speech extension from the marketplace. Recordings are never sent to any online service but computed local on your machine.
+
+**Third-Party Alternatives:**
+
+2. Scribe Audio Extension - Provides audio recording features in Visual Studio Code and allows users to record audio straight from the editor for translation purposes.
+
+3. Audiocode - Turn voice into precise code.
+
+4. Claude Code Voice - Voice-enabled Claude Code Chat Interface for VS Code with native mic recording and TTS.
+
+5. VS Code Presenter - Record audio and UI for your VS Code session and share it easily with others for playback.
+
+The **VS Code Speech** extension appears to be the official and recommended option, as it's maintained by Microsoft and processes recordings locally on your machine for privacy.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

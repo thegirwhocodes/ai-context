@@ -1,0 +1,52 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Claude Agent SDK capabilities tools MCP computer use what can Claude do 2026
+Session: 59f31767-cced-4a64-b634-035568bd5da7
+Time: 2026-06-05 18:03:22 UTC
+========================================================================
+
+Search query: Claude Agent SDK capabilities tools MCP computer use what can Claude do 2026
+
+----------------------------------------
+
+Web search results for query: "Claude Agent SDK capabilities tools MCP computer use what can Claude do 2026"
+
+Links: [{"title":"Agent SDK overview - Claude Code Docs","url":"https://code.claude.com/docs/en/agent-sdk/overview"},{"title":"GitHub - anthropics/claude-agent-sdk-python · GitHub","url":"https://github.com/anthropics/claude-agent-sdk-python"},{"title":"Claude Agent SDK in 2026: What It Is, When To Use It, and How To Ship It With Totalum - Totalum Blog","url":"https://www.totalum.app/blog/claude-agent-sdk-totalum-2026"},{"title":"Connect to external tools with MCP - Claude API Docs","url":"https://platform.claude.com/docs/en/agent-sdk/mcp"},{"title":"Claude Computer Use: What $20/Mo Actually Gets You [2026]","url":"https://tech-insider.org/anthropic-claude-computer-use-agent-2026/"},{"title":"Claude Agent SDK: Capabilities, Comparison, and Ecosystem Guide | AI Agents Hub Blog | AI Agents Hub","url":"https://www.aiagentshub.net/blog/claude-agent-sdk-guide"},{"title":"AI Agent Frameworks in 2026: 8 SDKs, ACP, and the Trade-offs Nobody Talks About","url":"https://www.morphllm.com/ai-agent-framework"},{"title":"Claude Agent SDK: Complete Production Patterns Guide 2026","url":"https://www.digitalapplied.com/blog/claude-agent-sdk-production-patterns-guide"},{"title":"Claude Agent SDK | Promptfoo","url":"https://www.promptfoo.dev/docs/providers/claude-agent-sdk/"},{"title":"Claude Managed Agents overview - Claude API Docs","url":"https://platform.claude.com/docs/en/managed-agents/overview"}]
+
+Based on the web search results, here's a comprehensive overview of Claude Agent SDK capabilities, tools, and what Claude can do in 2026:
+
+## Core Capabilities
+
+The Agent SDK enables AI agents that autonomously read files, run commands, search the web, edit code, and more. It's Anthropic's official library for building autonomous AI agents that can read files, run shell commands, search the web, edit code, and call MCP servers.
+
+The Agent SDK gives you the same tools, agent loop, and context management that power Claude Code, programmable in Python and TypeScript.
+
+## Built-in Tools
+
+Out of the box you get: file editing tools, bash execution, web search, web fetch, a tool-use loop with optional human-in-the-loop checkpoints, subagents (delegated child agents with their own context), persistent sessions, and first-class Model Context Protocol (MCP) client support.
+
+## Model Context Protocol (MCP) Integration
+
+The Model Context Protocol (MCP) is an open standard for connecting AI agents to external tools and data sources. With MCP, your agent can query databases, integrate with APIs like Slack and GitHub, and connect to other services without writing custom tool implementations. Claude Agent SDK has the deepest integration of MCP among competing frameworks.
+
+## Computer Use Capabilities
+
+Claude launched its Claude Computer Use Agent in research preview, giving Claude the ability to see, navigate, and control a user's desktop – clicking buttons, opening applications, filling spreadsheets, and completing multi-step workflows without human intervention. Available to Pro and Max subscribers through Claude Code, this feature transforms Claude from a conversational AI into an autonomous digital worker.
+
+## Advanced Features
+
+Claude Agent SDK centers on hooks and subagents. Hooks intercept agent behavior at lifecycle points (before tool calls, after responses, on errors). Subagents handle task delegation through child agents, each with their own context window and tool set.
+
+## Supported Models (as of 2026)
+
+As of May 2026 that includes Sonnet 4.6, Opus 4.7, and the freshly-released Opus 4.8.
+
+## Pricing & Usage
+
+Starting June 15, 2026, Agent SDK and claude -p usage on subscription plans will draw from a new monthly Agent SDK credit, separate from your interactive usage limits.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

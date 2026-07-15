@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: cross encoder reranker FAISS MiniLM precision recovery 500K chunks ms-marco
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:50:27 UTC
+========================================================================
+
+Search query: cross encoder reranker FAISS MiniLM precision recovery 500K chunks ms-marco
+
+----------------------------------------
+
+Web search results for query: "cross encoder reranker FAISS MiniLM precision recovery 500K chunks ms-marco"
+
+Links: [{"title":"cross-encoder/ms-marco-MiniLM-L6-v2 · Hugging Face","url":"https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2"},{"title":"Advanced RAG Retrieval: Cross-Encoders & Reranking | Towards Data Science","url":"https://towardsdatascience.com/advanced-rag-retrieval-cross-encoders-reranking/"},{"title":"The Critical Role of Rerankers in RAG — BM25, Cross Encoder Reranker, FlashRank, RankLLM | by akanshak | Medium","url":"https://medium.com/@akanshak/the-critical-role-of-rerankers-in-rag-98309f52abe5"},{"title":"MS MARCO Cross-Encoders — Sentence Transformers documentation","url":"https://www.sbert.net/docs/pretrained-models/ce-msmarco.html"},{"title":"Reranking using Cross Encoder — Boost Your RAG Pipeline Accuracy | by Aishikbhattacharjee | Medium","url":"https://medium.com/@aishikbhattacharjee98/reranking-using-cross-encoder-boost-your-rag-pipeline-accuracy-d2da22006dad"},{"title":"Pretrained Models — Sentence Transformers documentation","url":"https://sbert.net/docs/cross_encoder/pretrained_models.html"},{"title":"cross-encoder/ms-marco-MiniLM-L12-v2 · Hugging Face","url":"https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2"},{"title":"Cross encoder reranker: Hugging Face re-ranking model into Elastic - Elasticsearch Labs","url":"https://www.elastic.co/search-labs/blog/elasticsearch-cross-encoder-reranker-huggingface"},{"title":"Reranking with cross-encoders | Metarank Docs","url":"https://docs.metarank.ai/guides/index/cross-encoders"},{"title":"Request new reranker model cross-encoder/ms-marco-MiniLM-L-6-v2. · Issue #26 · PrithivirajDamodaran/FlashRank","url":"https://github.com/PrithivirajDamodaran/FlashRank/issues/26"}]
+
+The search results provide comprehensive information about cross-encoder rerankers, FAISS, MiniLM models, and the MS MARCO dataset. Here's what I found:
+
+## Key Components:
+
+**MS MARCO Dataset & Training Data:**
+The training data consists of over 500k examples, while the complete corpus consists of over 8.8 million passages.
+
+**Cross-Encoder Models (MiniLM variants):**
+The most popular and widely used reranker today is the cross-encoder, particularly models like cross-encoder/ms-marco-MiniLM-L-6-v2. MiniLM-L6-v2 offers the best balance of speed and quality — recommended as the default for most reranking tasks.
+
+**Integration with FAISS:**
+A bi-encoder encodes all your documents once at index time with O(n) complexity. At query time, you just encode the query and conduct an approximate nearest-neighbor lookup with FAISS or any ANN index, which is effectively O(1).
+
+**Performance Characteristics:**
+For the ce-msmarco-MiniLM-L6-v2 model, benchmark results show approximately 12.3 ms/op for 1 batch, 58.7 ms/op for 10 batches, and 740.4 ms/op for 100 batches.
+
+**Precision Benefits:**
+Cross-encoders are favored because of their high accuracy and deep semantic understanding. They can make far more precise judgments about relevance, which is essential in reranking tasks.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

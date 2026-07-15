@@ -1,0 +1,32 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://calendar.mit.edu/event/mit-africa-business-challenge
+Session: 1f61b0ac-ca68-4295-81f4-66cf9ab9d4e5
+Time: 2026-02-20 17:40:33 UTC
+========================================================================
+
+URL: https://calendar.mit.edu/event/mit-africa-business-challenge
+Extraction prompt: Look for any mention of housing, accommodation, lodging, travel support, or logistics for participants. Also get any contact info for organizers.
+
+----------------------------------------
+
+# MIT Africa Business Challenge - Participant Support Information
+
+## Housing & Accommodation
+No information about housing, accommodation, or lodging is mentioned in the event page.
+
+## Travel Support
+No travel support or logistics assistance is detailed in the provided content.
+
+## Contact Information
+The page does not list organizer contact details. However, general calendar support is available:
+
+**Events Calendar Team:** calendar@mit.edu
+
+## Application Details
+Interested participants should "Apply here by December 31st, 2024" via the Google Form linked on the event page. The form URL is provided in the event description but no direct organizer contact for the challenge itself is specified.
+
+**Recommendation:** Applicants seeking information about housing, travel, or logistics should submit their inquiries through the application form or contact the Events Calendar Team for referral to the appropriate challenge organizers.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

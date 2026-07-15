@@ -1,0 +1,24 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 06:02:23 UTC
+========================================================================
+
+URL: https://yarngpt.ai
+Extraction prompt: List all available voices with their descriptions, characteristics, or demos. I need to know which voices sound young, colloquial, natural, or Nigerian. List every voice name available.
+
+----------------------------------------
+
+# Available Voices on YarnGPT
+
+Based on the provided web page content, only **one voice is explicitly named and described**:
+
+- **Idera** - This is the only voice mentioned with a description or identifier in the available material.
+
+Unfortunately, the webpage content does not include a comprehensive list of all available voices, their characteristics, age ranges (young/mature), speaking styles (colloquial/formal), or whether they sound authentically Nigerian. The page shows "Selected Voice" with an avatar but doesn't detail other voice options or their specific qualities.
+
+To discover the full voice catalog with descriptions about naturalness, colloquiality, and regional authenticity, you would need to access the actual voice selection interface on the YarnGPT platform or consult additional documentation not included in this web page excerpt.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

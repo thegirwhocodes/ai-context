@@ -1,0 +1,83 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://productled.com/blog/ai-onboarding
+Session: 7e7962d0-dfa1-47dc-b516-20e5861045ea
+Time: 2026-07-14 22:26:10 UTC
+========================================================================
+
+URL: https://productled.com/blog/ai-onboarding
+Extraction prompt: Extract concrete, actionable onboarding UX patterns and tactics for AI products: how to reach first value in under 60 seconds, sequencing of steps, the "aha moment", personalization/segmentation questions, handling data-connection steps, and any specific examples. List specifics, not generalities.
+
+----------------------------------------
+
+# AI Onboarding UX Patterns for <60 Second First Value
+
+## Core Framework: 4 Maturity Levels
+
+The article identifies progression from **Inform → Guide → Execute → Orchestrate**, noting "Most products stop at level 2. The real leverage is 3 and 4."
+
+## 7 Concrete Patterns
+
+### 1. **AI-Driven Personalization (Context Before Content)**
+- Collect signals: user role, company size, tech stack, referral source, pre-signup page visits, chatbot interactions
+- **Relay.app example**: Ingests LinkedIn profile to surface relevant templates from 1000+ options rather than showing identical UI tour to all users
+- **Outcome**: Beginner flows differ entirely from expert paths; adapts in real-time based on usage patterns
+
+### 2. **Conversational AI as Primary Interface**
+- Replace tutorials with chat as first screen
+- **Notion pattern**: Single onboarding question ("how will you use Notion?") then AI chatbot sidebar guides next steps
+- **Miro pattern**: Entire first workspace experience is conversational, with clickable prompts updated based on profiling data
+- Eliminates "click tax"—actions that educate about UI but don't advance user goals
+
+### 3. **AI Task Completion (Execution, Not Guidance)**
+- Auto-generate first artifact immediately
+- **Gamma example**: "Within seconds, Gamma gives me a 10-card presentation" after onboarding questions; Agent feature allows continuous refinement
+- Eliminates blank-state paralysis by delivering value before tool mastery
+
+### 4. **Behavior-Adaptive Nudges (Just-in-Time Education)**
+- Monitor: repeated actions, rage clicks, long pauses
+- **Figma pattern**: Detects canvas struggles, suggests "Make" feature for AI iterations
+- Surface contextual tips based on actual user actions, not predetermined flows
+
+### 5. **Multi-User Account Activation**
+- Detect account-level vs. individual user maturity
+- **Vidmob example** (via Foldspace.ai): AI agent tailors recommendations by role; performs role-specific actions automatically
+- Prevents single "champion user" syndrome in B2B products
+
+### 6. **Feedback Loops During Onboarding**
+- AI nudges conversations toward high-activation paths
+- Route recurring confusion patterns to product team for UX improvements
+- Turns onboarding into continuous learning system
+
+### 7. **Churn Prevention Layer**
+- Predict drop-off risk during initial sessions
+- Feed churn-detection signals (via platforms like customerscore.io) to onboarding AI agent
+- Trigger intervention flows automatically before disengagement
+
+## Sequencing for <60 Second Value
+
+**Current best practice flow**:
+1. Minimal personalization questions (1-2, max)
+2. Immediate conversational interface
+3. Auto-generate or recommend first output within seconds
+4. Surface relevant examples/templates personalized to user context
+5. Enable one-click action to move forward
+
+## "Aha Moment" Design
+
+Per the article, **"shareworthy experience"** is the metric—onboarding so compelling users recommend it. This requires:
+- Low input (minimal effort), strong output (usable, relevant result)
+- First strike so polished users want to share it
+- Value delivery *before* feature education
+
+## What's Missing/Fantasy
+
+- Orchestration across channels (in-app, email, Slack, human touchpoints)—blocked by data quality and system integration gaps
+- Fully AI-generated just-in-time microlearning—conceptually sound but no live examples cited
+
+---
+
+**Key insight**: Shift from "educating users about your UI" to "educating AI about user desired outcomes." This eliminates navigational friction entirely.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

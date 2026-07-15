@@ -1,0 +1,8 @@
+# library context
+
+| Date | Source | Session |
+|---|---|---|
+| 2026-05-12T05:45:10 | codex | [019e1ab7-c215-70b2-857f-af2715ba7934](sessions/codex/019e1ab7-c215-70b2-857f-af2715ba7934.md) |
+| 2026-05-09T02:00:48 | codex | [019e0a77-43cd-7c73-b22e-072df4bb0867](sessions/codex/019e0a77-43cd-7c73-b22e-072df4bb0867.md) |
+| 2026-05-02T21:24:26 | codex | [019dea94-13fb-7140-8a8e-a71fa629e5b1](sessions/codex/019dea94-13fb-7140-8a8e-a71fa629e5b1.md) |
+| 2026-04-23T23:44:31 | codex | [019dbcbb-17fb-72f3-a444-f2d3ddc105cd](sessions/codex/019dbcbb-17fb-72f3-a444-f2d3ddc105cd.md) |

@@ -1,0 +1,477 @@
+========================================================================
+AGENT RESEARCH: Research industry standard embedded marketing pricing
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-04-01 01:37:06 UTC
+========================================================================
+
+Search the web extensively for industry standard pricing for embedded marketing / product placement / branded content integration. I need actual numbers and rate cards:
+
+1. **Industry standard product placement pricing** — What do brands pay to have their products embedded in content? TV shows, podcasts, YouTube, mobile apps, games, educational content. What are the standard rate structures? Per-impression, flat fee, revenue share?
+
+2. **Branded content pricing models** — How do content creators charge brands for integration? CPM? Flat sponsorship fees? Revenue share? Performance-based?
+
+3. **In-app advertising / branded integration pricing** — What do mobile apps charge brands for native product placement (not banner ads, but actual integration into the content/experience)?
+
+4. **Audio-specific embedded marketing** — What do podcast hosts, radio shows, and audio platforms charge for host-read ads vs. pre-recorded spots? What's the premium for "native" integration (where the product is woven into the content) vs. standard ad spots?
+
+5. **Education-specific branded content** — Any published rates for brands paying to be integrated into educational content? Textbooks, e-learning platforms, educational apps, edutainment shows?
+
+6. **Influencer/creator branded content rates** — What are standard rates for creators to integrate a brand into their content (not a separate ad, but woven into the content itself)?
+
+7. **The premium for unskippable/captive audiences** — How much more do advertisers pay when the audience cannot skip the ad? Cinema pre-roll, in-game ads, captive screen ads (gas stations, elevators), etc.
+
+I need NUMBERS — dollar amounts, CPM rates, percentage splits, flat fees. Search thoroughly across multiple sources. Include the source for every number.
+
+Return ALL findings in full detail.
+
+----------------------------------------
+
+Now I have comprehensive data across all seven categories. Let me compile the full report.
+
+---
+
+# Industry Standard Pricing for Embedded Marketing, Product Placement & Branded Content Integration
+
+## 1. PRODUCT PLACEMENT PRICING (TV, Film, Streaming, Music)
+
+### TV — Network Broadcast
+- **Background/visual-only placement**: $5,000-$50,000 per episode for national broadcast
+- **Integrated placement** (character uses product): $50,000-$250,000+ per episode
+- **Top-10 broadcast drama, meaningful integration**: $100,000-$400,000 per episode
+- **Full network deal**: Requires a $500K-$1M+ ad buy as table stakes, with placement costs adding low-six to seven figures on top
+- **Reality TV**: Starting at ~$50,000, scaling to mid-six to low-seven figures for primetime; $250K-$500K for robust programs on secondary platforms
+
+Sources: [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost), [LinkedIn - Stacy Jones](https://www.linkedin.com/pulse/from-tv-film-how-much-does-product-placement-really-cost-stacy-jones)
+
+### TV — Cable/Premium (HBO, Showtime, Starz)
+- **Range**: Mid-five figures to mid-six figures
+- **Note**: HBO accepts NO cash fees — trade/product supply only
+
+Source: [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost)
+
+### Streaming (Netflix, Hulu, Amazon Prime)
+- **Per episode**: $25,000-$500,000+, depending on show popularity and integration depth
+- **House of Cards** attracted top-dollar deals (Dunkin' Donuts, etc.)
+- **Mid-tier streaming series**: $50K-$200K for a single-episode integrated placement
+
+Sources: [CNBC](https://www.cnbc.com/2017/07/27/bill-gates-ben-does-product-placement-in-netflix-and-amazon-shows.html), [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost)
+
+### Feature Films — Tiered Pricing
+| Tier | Visual Only | Brand Mention | Actor Uses Product | Deep Integration |
+|------|------------|---------------|-------------------|-----------------|
+| **Disney (published rates)** | $20,000 | $40,000 | $60,000 | negotiable |
+| **Independent/low-budget** | $5,000-$50,000 | — | — | barter common |
+| **Mid-budget studio** | $50,000-$500,000 | — | — | — |
+| **Major tentpole/blockbuster** | — | — | — | $500,000-$5M+ |
+| **Franchise exclusive** | — | — | — | $2M-$20M+ |
+
+Source: [The Hustle](https://thehustle.co/the-economics-of-movie-product-placements), [Popoptiq](https://www.popoptiq.com/how-much-do-companies-pay-for-product-placement-in-movies/)
+
+### Landmark Film Deals (Named Examples)
+| Brand | Film | Amount | Details |
+|-------|------|--------|---------|
+| Heineken | James Bond: Skyfall | **$45 million** | 7 seconds of screen time |
+| BMW | Three Bond films (1995-2002) | **~$110 million** | Multi-film deal |
+| Aston Martin | Die Another Day | **~$140 million** | Franchise association |
+| Man of Steel (100+ brands) | Superman reboot | **$160 million combined** | Gillette, Nokia, Carl's Jr, etc. |
+| Harley-Davidson | Avengers: Age of Ultron | **$10 million** | Electric motorcycle feature |
+| Dell | Bad Boys for Life | **~$8.5 million** ad value | 5 minutes screen time |
+
+Source: [The Hustle](https://thehustle.co/the-economics-of-movie-product-placements)
+
+### Music Videos
+- **Emerging artists**: Starting at $15,000
+- **Established artists sweet spot**: ~$50,000
+- **Major artist integration**: Up to $250,000
+- **Standard brief mention**: Averages $22,000 per placement
+
+Source: [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost)
+
+### Virtual Product Placement (Post-Production Digital Insertion)
+- **Influencer content**: As low as $750 per placement
+- **Catalog/older show insertion**: ~$5,000 per placement
+- **Amazon Prime Video VPP**: $25-$75 CPM
+- **Peacock "In-Scene" ads**: $15-$35 CPM
+
+Sources: [The Drum](https://www.thedrum.com/insight/2022/10/07/how-much-does-it-cost-do-virtual-product-placement-providers-share-prices-and), [Strategus](https://www.strategus.com/blog/how-much-does-it-cost-to-advertise-on-streaming-services)
+
+### Agency Retainer Fees
+- **Annual brand representation**: $40,000-$300,000+
+- **Campaign-specific services**: $60,000-$250,000+
+
+Source: [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost)
+
+### Deal Structure Types
+- **Cash fee**: Brand pays flat fee for screen time and placement position (most common for large deals)
+- **Product supply/trade**: Brand provides products free in exchange for exposure (most common arrangement overall — majority of placements involve NO cash)
+- **Co-marketing**: Brand funds placement + commits to promotional spend (preferred by studios; co-promo deals valued at $5M+ are favored over direct payment)
+- **Revenue share/royalty**: Rare; used only when product becomes central to IP
+
+Source: [Wikipedia - Product Placement](https://en.wikipedia.org/wiki/Product_placement), [Hollywood Branded](https://blog.hollywoodbranded.com/how-much-does-product-placement-cost)
+
+### Market Size
+- Global product placement spend: **~$33 billion in 2024**
+- TV platforms: ~$20.6 billion (2023)
+- Film: ~$3.5 billion (2023)
+
+Source: [Statista](https://www.statista.com/statistics/915189/product-placement-revenue-share-medium/)
+
+---
+
+## 2. BRANDED CONTENT PRICING MODELS (How Creators Charge Brands)
+
+### CPM (Cost Per Thousand Impressions)
+| Platform | CPM Range |
+|----------|-----------|
+| Instagram Reels | $5-$15 |
+| TikTok | $2-$8 |
+| YouTube | $10-$50 (varies by niche) |
+| YouTube Finance niche | $20-$50 |
+| YouTube Gaming | $5-$15 |
+
+Source: [InfluenceFlow](https://influenceflow.io/resources/how-to-calculate-creator-rates-and-pricing-a-2025-complete-guide/)
+
+### Flat Fee Models
+- Established creators charge $5,000-$50,000+ for dedicated sponsored videos
+- YouTube creators: $100-$500 per 1,000 subscribers as a baseline
+- YouTube dedicated video: Charge 150% of base rate (full video about product)
+
+Source: [InfluenceFlow](https://influenceflow.io/resources/content-creator-pricing-models-complete-guide-for-2026/)
+
+### Revenue Share Models
+- Typical splits: 80/20 (creator 80%), 70/30, or 60/40
+- Increasingly popular as brands demand performance accountability
+- Hybrid model gaining traction in 2025-2026: guaranteed base rate + performance bonus (commission, CPA, or revenue share)
+
+Source: [InfluenceFlow](https://influenceflow.io/resources/pricing-models-for-influencers-a-comprehensive-guide-for-2025/)
+
+### Cost-Per-Engagement (CPE)
+- $0.10-$2.00 per engagement (comment, like, share)
+- Varies by niche and creator tier
+
+Source: [InfluenceFlow](https://influenceflow.io/resources/how-to-calculate-creator-rates-and-pricing-a-2025-complete-guide/)
+
+### Native Advertising CPM Premium
+- Native ads command **30-40% higher CPM** than standard display ads
+- Native display: $5-$15 CPM vs. Google Display Network: ~$3 CPM
+- Native ads show **50-60% higher engagement** than traditional display
+
+Sources: [Marketing LTB](https://marketingltb.com/blog/statistics/native-advertising-statistics/), [AI Digital](https://www.aidigital.com/blog/native-vs-display-ads)
+
+---
+
+## 3. IN-APP ADVERTISING / BRANDED INTEGRATION PRICING
+
+### Mobile App Ad Rates by Format (2025 eCPM)
+| Ad Format | Global Average | US/Tier 1 iOS | US/Tier 1 Android |
+|-----------|---------------|---------------|-------------------|
+| **Banner ads** | $0.20-$0.80 | $0.45-$1.50 | $0.50-$1.50 |
+| **Interstitial ads** | $2.50-$5.00 | $15-$20 | $5-$8 |
+| **Native ads** | $3.00-$3.30 | ~20% above banners | ~20% above banners |
+| **Rewarded video** | $8-$18 | $19.63 (iOS) | $16.49 (Android) |
+
+Sources: [Business of Apps](https://www.businessofapps.com/ads/research/mobile-app-advertising-cpm-rates/), [Maf.ad](https://maf.ad/en/blog/mobile-ads-ecpm/)
+
+### In-App Advertising Cost Range
+- Overall: $2-$15 CPM, $0.10-$2.00 CPC, $1-$10+ CPA
+- In-app ads deliver **150% higher conversion rates** than mobile web ads
+- Global in-app ad spending projected: **$390 billion by 2025**
+
+Source: [Netmarvel](https://www.netmarvel.com/en/blogs/1347.html), [Publift](https://www.publift.com/blog/in-app-advertising-statistics)
+
+### In-Game Advertising (Mobile Games)
+| Ad Format | CPM Range | Notes |
+|-----------|-----------|-------|
+| Banner ads | $0.10-$1.50 | Lowest performer |
+| Interstitial | $1.50-$10 | Casual/midcore: $3-$7 typical |
+| Rewarded video | $10-$50 | **2-3x higher than standard video**; 95%+ completion rates |
+| In-game display | $10-$20 | Average across formats |
+| In-game video | $15-$30 | Premium inventory |
+
+Source: [PubScale](https://pubscale.com/blog/in-game-advertising-guide), [App Samurai](https://appsamurai.com/blog/how-much-money-do-mobile-games-make-per-ad/)
+
+### Game Genre Impact on CPM
+| Genre | Average CPM |
+|-------|-------------|
+| Strategy | $21.58 |
+| Simulation | $19.22 |
+| Puzzle | $18.47 |
+| Board | $7.70 |
+
+Source: [App Samurai](https://appsamurai.com/blog/how-much-money-do-mobile-games-make-per-ad/)
+
+### Branded Experiences in Games (Roblox, Fortnite)
+- **Full branded Roblox campaign**: $400,000-$1,000,000+
+- **Cost per play session**: Ranges from fractions of a cent to ~$1
+- **Fortnite creator revenue from branded item sales**: 100% of revenue after platform fees through end of 2026, dropping to 50% from 2027
+- **Gaming integrations grew 93% in 2024**, outpacing brand-owned experiences 4x
+- In 2025: 335 brand integrations vs. 252 brand-owned worlds across platforms
+
+Sources: [GamesBeat](https://gamesbeat.com/brand-integrations-have-surpassed-owned-worlds-on-roblox-and-fortnite-exclusive/), [Digiday](https://digiday.com/media/amid-competition-with-roblox-fortnites-in-game-item-strategy-appeals-to-both-creators-and-brands/)
+
+---
+
+## 4. AUDIO-SPECIFIC EMBEDDED MARKETING
+
+### Podcast Advertising CPM Rates (2025-2026)
+| Placement | Standard CPM | Host-Read Premium CPM | Baked-In Host-Read |
+|-----------|-------------|----------------------|-------------------|
+| **Pre-roll** (15-30 sec) | $15-$30 | $25-$40 | $35-$55 |
+| **Mid-roll** (60 sec) | $25-$35 | $25-$40 | $35-$55 |
+| **Post-roll** | $1-$5 | $10-$20 | — |
+| **Programmatic** | $5-$15 | n/a | n/a |
+
+Sources: [Ad Results Media](https://www.adresultsmedia.com/news-insights/how-much-do-podcast-ads-cost/), [Wyatt Matters Show](https://www.wyattmattersshow.com/podcast-advertising-rates/), [Dollar Pocket](https://www.dollarpocket.com/podcast-advertising-roi-report/)
+
+### Podcast Rate by Show Size
+| Audience (downloads/episode) | Approximate Cost per Mid-Roll Ad |
+|------------------------------|----------------------------------|
+| 5,000-10,000 | $125-$350 |
+| 20,000 | $500-$700 |
+| 50,000 | $1,250-$1,750 |
+| 100,000 | ~$2,500 |
+| 500,000+ (premium/mega) | $5,000-$50,000+ |
+
+- Full range across all shows: **$5 CPM** (emerging) to **$100+ CPM** (premium mega-shows)
+- Host-read ads outperform producer-read by **31% in purchase rate** (Podscribe Q2 2025)
+
+Sources: [Podscan](https://podscan.fm/blog/podcast-advertising-rates-cpm-benchmarks-2025), [Awisee](https://awisee.com/blog/podcast-advertising-rates/)
+
+### Audio Streaming Platforms
+**Spotify:**
+- CPM range: $5-$30
+- Minimum campaign spend: $250 (self-serve) to $25,000 (managed)
+
+**Pandora:**
+- Audio ads: $8-$12 CPM
+- Visual ads: $5-$7 CPM
+- Video ads: $15-$25 CPM
+- Minimum: ~$1,500/month
+- Pandora ads are **non-skippable** (users cannot skip or fast-forward)
+
+Sources: [Expatriate Consultancy](https://expatriateconsultancy.com/pandora-advertising-cost/), [AdShark](https://adshark.com/spotify-pandora-ads/)
+
+### Traditional Radio
+- **30-second spot**: $3-$525 (based on CPP); $100-$5,000+ in practice depending on market
+- **60-second spot**: $5-$750 (based on CPP)
+- **30-second = ~60-70%** of the cost of a 60-second ad
+- **Host endorsement premium**: **2-3x the cost of a standard ad**
+- Example: Host endorsement across 118 stations: $400/spot; top-10 market talk station with 1.5M+ weekly listeners: $3,500/week
+
+Sources: [Ad Results Media](https://www.adresultsmedia.com/news-insights/how-much-do-radio-ads-cost/), [Voice123](https://voice123.com/blog/marketing-trends-tactics/radio-advertising/)
+
+---
+
+## 5. EDUCATION-SPECIFIC BRANDED CONTENT
+
+### EdTech Advertising Revenue (Duolingo Case Study)
+- Duolingo total revenue: **$531 million** (2023)
+- Duolingo **advertising revenue**: $49.86 million (2023), up from $44.73M (2022) and $38.5M (2021)
+- Revenue model: Ads shown to free-tier users; premium subscribers see no ads
+- Increased ad revenue **70%** through AdMob platform optimization
+
+Sources: [FourWeekMBA](https://fourweekmba.com/duolingo-advertising-revenue/), [Google AdMob](https://admob.google.com/home/resources/duolingo-partners-with-admob-to-optimize-mediation-strategy-and-increase-ads-revenue-by-seventy-percent/)
+
+### Higher Education Marketing Spend
+- Postsecondary institutions spend **$429-$623 per enrolled student per year** on marketing
+- Collective spend: **$2.2 billion** (2019)
+
+Source: [MarCom Society](https://blog.marcomsociety.org/ads-in-education/)
+
+### COPPA Impact on Children's Educational Content
+- COPPA opt-in requirement could reduce ad revenue by **40-60%** for children's content
+- Contextual advertising (non-targeted) remains compliant without parental consent
+- Schools cannot authorize data use beyond educational purposes
+
+Source: [AdMonsters](https://www.admonsters.com/ftcs-coppa-rule-update-what-publishers-need-to-know/)
+
+### Educational Content Sponsorship Models
+- **PBS/Sesame Street model**: Corporate sponsors fund content production in exchange for "brought to you by" credits (rates not publicly disclosed; contact partnerships@sesame.org)
+- Historical sponsors include Chrysler, PNC, McDonald's — these are multi-year, multi-million-dollar commitments
+- **Khan Academy model**: Non-profit, donor-funded (no advertising)
+- **Content licensing**: EdTech platforms license branded educational content for enterprise/school use; scalable from per-student licenses to white-labeled solutions
+
+Source: [Sesame Workshop](https://sesameworkshop.org/support-us/become-a-proud-sponsor-of-sesame-street/), [FourWeekMBA](https://fourweekmba.com/how-does-duolingo-make-money/)
+
+### Children's Digital Content Market
+- Global children's apps market projected: **$1.65 billion by 2031** (CAGR 26.71%)
+- Content-licensing partnerships (e.g., Fingerprint with 300+ brands including Lionsgate, Mattel, Sesame Street, DreamWorks)
+
+Source: [AlistDaily](https://www.alistdaily.com/digital/fingerprint-kids-parents-discover-educational-entertainment-apps/)
+
+---
+
+## 6. INFLUENCER/CREATOR BRANDED CONTENT RATES (2026)
+
+### Instagram Rates by Tier
+| Tier | Followers | Rate Per Post |
+|------|-----------|--------------|
+| Nano | 1K-10K | $25-$150 |
+| Micro | 10K-100K | $250-$5,000 |
+| Mid-tier | 100K-500K | $1,600-$10,000 |
+| Macro | 500K-1M | $5,000-$25,000 |
+| Mega | 1M+ | $10,000-$50,000+ |
+
+### TikTok Rates by Tier
+| Tier | Followers | Rate Per Post |
+|------|-----------|--------------|
+| Nano | 1K-10K | $5-$200 |
+| Micro | 10K-100K | $200-$1,200 |
+| Mid-tier | 100K-500K | $1,200-$5,000 |
+| Macro | 500K-1M | $5,000-$15,000 |
+| Mega | 1M+ | $7,000-$20,000+ |
+
+### YouTube Rates by Tier
+| Tier | Subscribers | Rate Per Video |
+|------|-------------|---------------|
+| Nano | 1K-10K | $200-$1,000 |
+| Micro | 10K-100K | $1,000-$10,000 |
+| Mid-tier | 100K-500K | $9,000-$25,000 |
+| Macro | 500K-1M | $10,000-$50,000 |
+| Mega | 1M+ | $20,000-$50,000+ |
+
+Source: [Shopify](https://www.shopify.com/blog/influencer-pricing)
+
+### Key Modifiers
+- **Video content (Reels) costs 32% more** than static posts
+- **Instagram commands ~30% higher rates** than TikTok for equivalent follower counts
+- **US/Western European audiences**: Creators charge **20-40% more** than those with emerging-market audiences
+- **Tier 1 audience (80%+ US/UK/CA/AU)**: Can charge **2-3x** international audience rate
+- **Engagement rate** is the #1 factor in 2026 pricing (over follower count)
+- Average across all: **$215 per sponsored post** (industry average)
+- Global influencer marketing spend: **$32.55 billion in 2025**
+
+Sources: [Shopify](https://www.shopify.com/blog/influencer-pricing), [Afluencer](https://afluencer.com/influencer-rates/), [ESPN 690](https://www.espn690.com/news/2025-influencer-marketing-costs-youtube-instagram-tiktok/4JLUBE46ORPODMQEYG2CAT7W5Y/)
+
+### Payment Structure Preferences
+- 4 out of 5 creators prefer a combination of flat fee + performance-based compensation
+- Flat fees dominated 2023-2024; 2025-2026 shifting toward hybrid models (guaranteed base + commission/CPA/revenue share)
+
+Source: [InfluenceFlow](https://influenceflow.io/resources/pricing-models-for-influencers-a-comprehensive-guide-for-2025/)
+
+---
+
+## 7. THE PREMIUM FOR UNSKIPPABLE / CAPTIVE AUDIENCES
+
+### YouTube: Non-Skippable vs. Skippable
+| Format | Pricing Model | Cost |
+|--------|--------------|------|
+| **Non-skippable in-stream** | CPM | $6-$20+ CPM |
+| **Skippable in-stream** | CPV (pay per view) | $0.10-$0.30 per view |
+| **Bumper ads** (6 sec) | CPM | Premium pricing tier |
+| **YouTube Shorts** | CPM | 20-40% below traditional in-stream |
+
+- **76% of viewers skip** at the first opportunity on skippable ads
+- Non-skippable ads guarantee 100% completion = premium CPM
+
+Sources: [Hot Fuego](https://www.hotfuego.com/blog/youtube-ads-skippable-vs-non-skippable), [Mega Digital](https://megadigital.ai/en/blog/non-skippable-ads-on-youtube/)
+
+### Connected TV (CTV) — Functionally Unskippable
+| Platform | CPM Range |
+|----------|-----------|
+| Netflix | $20-$65 |
+| Hulu | $10-$30 |
+| Amazon Prime Video | $25-$60 |
+| General CTV | $20-$65 |
+| CTV industry average | **$35** |
+| Mobile video comparison | $20 |
+
+- CTV ads achieve **90-97% video completion rates** (because most are non-skippable)
+- CTV is the **fastest-growing captive-audience channel**
+- Self-serve campaigns available from **$500-$1,000/month**
+
+Sources: [AdWave](https://adwave.com/resources/average-ctv-cpm), [Paramount](https://adsmanager.paramount.com/insights/ctv-advertising-cost)
+
+### Cinema Pre-Show Advertising
+- **National preshow CPM**: $20-$50; premium marquee: $50-$70
+- **Screenvision average CPM**: $30-$40
+- **National 30-sec campaign (4-week flight)**: $100,000-$250,000+
+- **Local single-theater campaign (4 weeks)**: $1,000-$5,000
+- **95% of cinema-goers watch the ads** before trailers
+- Compare to digital pre-roll video: $15-$35 CPM (cinema = significant premium)
+
+Sources: [DASH TWO](https://dashtwo.com/outdoor-advertising/cinema-advertising/), [Digiday](https://digiday.com/media-buying/media-buying-briefing-cinema-advertising-makes-a-play-for-more-video-ad-dollars-but-will-buyers-pay-up/), [AdQuick](https://www.adquick.com/movie-theater-cinema-advertising)
+
+### Gas Station TV (GSTV)
+- **Attention-adjusted CPM (aCPM)**: $1.95 per 1,000 attentive seconds
+- **Digital forecourt video**: $15-$40 CPM programmatic
+- **Static pump toppers**: $150-$600 per display/4-week cycle ($3-$8 CPM)
+- **EV charging screens**: $20-$50 CPM
+- Average dwell time: **4-4.5 minutes** (captive while fueling)
+
+Sources: [AdMonsters](https://www.admonsters.com/new-study-reveals-gstv-dominates-ad-attention/), [AdQuick](https://www.adquick.com/gas-station-advertising)
+
+### Elevator / Office Lobby Screens (Captivate Network)
+- Captivate operates **24,000 screens** in 1,600 Class A office towers + 8,300 multifamily buildings
+- Attention Unit (AU) score: **56** (surpasses many traditional and digital channels)
+- Rates not publicly disclosed; positioned as "cost-effective" but custom-quoted
+
+Source: [Captivate](https://www.captivate.com/advertisers/elevator-advertising/)
+
+### Waiting Room / Healthcare DOOH
+- **Medical office DOOH networks**: $15-$25 CPM
+- **Comparable digital video targeting same demo**: $30-$50 CPM
+- This represents ~**50% cost savings** vs. traditional digital for same audience
+
+Source: [Aragil](https://www.aragil.com/blog/the-ad-you-can-t-skip-a-new-gold-rush)
+
+### Airport Advertising
+- **Average CPM**: $46.69
+- **Average impressions**: 116,000 per placement
+- Among the highest CPMs in DOOH due to affluent, captive audience
+
+Source: [Place Based Media](https://placebased.media/blog/digital-out-of-home-dooh)
+
+### Taxi Back Screens
+- **Average CPM**: $1.07 — one of the most cost-effective DOOH formats
+
+Source: [Place Based Media](https://placebased.media/blog/digital-out-of-home-dooh)
+
+### General DOOH (Digital Out-of-Home)
+- **Programmatic DOOH**: $2-$20 CPM
+- **Indoor displays (malls, airports, transit)**: $500-$5,000/month per screen
+
+Source: [StackAdapt](https://www.stackadapt.com/resources/blog/digital-out-of-home-advertising-costs)
+
+### Rewarded Video Ads (Mobile — User-Initiated but Non-Skippable)
+- **CPM**: $10-$50 (US iOS peak: $19.63)
+- **Completion rates**: 95%+
+- Command **2-3x higher CPM** than standard video ads
+- Non-skippable by design (user opts in, then must watch full ad)
+
+Source: [Yango Ads](https://yango-ads.com/blog/rewarded-video-ads-for-mobile-apps), [Business of Apps](https://www.businessofapps.com/ads/rewarded-video/)
+
+### Captive Audience Performance Comparison
+| Channel | CPM | Completion Rate | Skip Rate |
+|---------|-----|-----------------|-----------|
+| Standard digital video | $5-$15 | 30-40% | 76% skip |
+| CTV (non-skippable) | $20-$65 | 90-97% | 0% |
+| Cinema pre-show | $20-$70 | ~95% | 0% |
+| Rewarded video (mobile) | $10-$50 | 95%+ | 0% (opt-in) |
+| In-flight screens | — | 80%+ | 0% |
+| Podcast mid-roll (baked-in) | $35-$55 | ~100% | 0% |
+| Pandora audio | $8-$12 | ~100% | 0% (unskippable) |
+
+Sources: [Aragil](https://www.aragil.com/blog/the-ad-you-can-t-skip-a-new-gold-rush), [AdWave](https://adwave.com/resources/average-ctv-cpm)
+
+---
+
+## KEY TAKEAWAYS FOR PRICING STRATEGY
+
+1. **The unskippable premium is real and substantial.** Non-skippable formats command 2-3x higher CPMs than skippable equivalents. CTV ($35 avg CPM) vs mobile video ($20); rewarded video ($10-50) vs standard video ($5-15); cinema ($30-70) vs digital pre-roll ($15-35).
+
+2. **Host-read/native integration commands the highest audio premiums.** Baked-in host-read podcast ads ($35-55 CPM) earn 2-3x more than programmatic spots ($5-15 CPM). Radio host endorsements cost 2-3x a standard spot.
+
+3. **Product placement pricing is driven by integration depth**, not just screen time. A visual-only placement is $20K (Disney scale); an actor using the product is $60K; a storyline integration can reach millions.
+
+4. **Education-specific advertising is constrained but valuable.** COPPA compliance reduces targeting capability (40-60% revenue impact), but contextual advertising in educational content reaches a captive, engaged audience. Duolingo monetizes ~$50M/year from ads to its free-tier users.
+
+5. **Captive audio audiences (podcasts, Pandora, radio) deliver near-100% completion rates** at CPMs ranging from $8-55 depending on format and integration depth — making them among the most efficient channels per completed impression.
+agentId: ab7f0f4e83f1164e0 (use SendMessage with to: 'ab7f0f4e83f1164e0' to continue this agent)
+<usage>total_tokens: 57964
+tool_uses: 41
+duration_ms: 7714495</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

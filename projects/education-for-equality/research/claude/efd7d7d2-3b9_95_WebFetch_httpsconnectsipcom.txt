@@ -1,0 +1,45 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:26:06 UTC
+========================================================================
+
+URL: https://connectsip.com
+Extraction prompt: What services does ConnectSIP offer? SIP trunking, toll-free numbers, IVR, virtual numbers? What is their pricing? Do they offer Nigerian local and toll-free (0800) numbers? What are their per-minute rates? Do they support inbound AND outbound? What features do they have — call recording, webhooks, API, PBX integration? List everything.
+
+----------------------------------------
+
+# ConnectSIP Services Overview
+
+## Services Offered
+
+ConnectSIP provides:
+
+- **SIP Trunking & Virtual Numbers**: "Get numbers for your business without extra infrastructure. Expand your reach, build trust, and cut telecom costs."
+- **Cloud Hosted PBX**: Features include call routing, IVR, and call recording
+- **Enterprise Contact Centre**: Scalable, cloud-based contact center solutions
+- **3CX Integration**: Platinum-level 3CX partner offering licenses, support, hosting, and hardware consultation
+
+## Pricing & Rate Information
+
+**Not specified on the homepage.** The page directs users to call rates at their support section but doesn't display specific pricing or per-minute rates on the main page.
+
+## Number Types
+
+The site mentions offering **virtual numbers** and **toll-free numbers** for Nigerian businesses, but doesn't specify local number availability or detailed rate structures.
+
+## Capabilities
+
+**Confirmed features:**
+- Call routing
+- IVR (Interactive Voice Response)
+- Call recording
+- 99.99% uptime guarantee
+
+**Not detailed:** API availability, webhook support, or specific inbound/outbound specifications aren't explicitly described on this homepage.
+
+**For complete pricing and technical specifications**, users must visit their support section or contact them directly via email or phone (+1-505-053-6871).
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

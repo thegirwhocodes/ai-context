@@ -1,0 +1,148 @@
+========================================================================
+AGENT RESEARCH: Find Bethel design research files
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-18 03:40:21 UTC
+========================================================================
+
+Search thoroughly in /Users/naomiivie/bethel/ for any design research, UI/UX research, design system documentation, or planning files. Look for markdown files, text files, or any documents that contain UI/UX research, competitor analysis, design decisions, feature specifications, or design guidelines. Check the root directory and any subdirectories. Also check for any files with names like "research", "design", "ux", "ui", "plan", "spec", "features", "wireframe" etc. Return the full paths and a summary of what each file contains.
+
+----------------------------------------
+
+Based on my thorough search of `/Users/naomiivie/bethel/`, here are all the design research, UI/UX research, and planning documents:
+
+## Design Research & UI/UX Documentation
+
+### 1. **BETHEL_UI_RESEARCH.md** (307 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_UI_RESEARCH.md`
+
+Comprehensive dark-mode design system for the Bethel app. Contains:
+- **Color system** — Primary background `#0C0C14` (deep blue-black), 4-level surface layers, warm gold accent `#D4A853`, lavender secondary accent, complete text color palette
+- **Typography** — Font stack (Satoshi for headlines, Inter for UI, Literata for Bible reading), full type scale (Display through Overline)
+- **Tab bar design** — 5-tab floating design (Home, Bible, Journal, Bethel AI, Profile) with glassmorphic effect
+- **Bible reader screen** — Premium e-reader design philosophy, full-screen with auto-hiding chrome, 3 reading themes (Midnight, Warm Night, OLED)
+- **Dream journal entry design** — Card layout specs, mood picker, entry editor
+- **AI chat design ("Ask Bethel")** — Message bubble styles, Bethel avatar design, scripture citation blocks
+- **Home screen layout** — Greeting + Today's Word, quick action cards, recent activity
+- **Animations** — Page transitions, pull-to-refresh, highlight glow, tab switch, dream save, chat messages
+- **Design don'ts** — No religious iconography, no social features, no clip art, no pure black/white contrast
+- **Design references** — Glorify, Bear Notes, Arc Browser, Apple Books, Claude App, Day One
+- **Color tokens quick reference** — Complete CSS custom property mapping
+
+### 2. **BETHEL_COMPETITIVE_ANALYSIS.md** (153 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_COMPETITIVE_ANALYSIS.md`
+
+Market analysis and competitive positioning:
+- **Bible apps** — YouVersion (500M+ users), Glorify (premium), Logos, Bible Project
+- **AI Bible apps** — Bible Chat, FaithGuide, Bible.ai, CrossTalk, Illuminate Bible
+- **Dream journal apps** — Dreamnl (most complete Christian dream journal), Dream Keys App, Biblical Dreams App, general secular apps
+- **Competitive gap analysis** — 7 unique features Bethel offers that no competitor does
+- **Common user complaints** — From both Bible app and dream app users
+- **Bethel's UVP** — "The first app that treats your dreams and Bible reading as one connected spiritual journey"
+- **Technical moat** — RAG pipeline with pgvector embeddings, Claude Haiku, Kenneth Hagin theological framework
+
+### 3. **Bethel naomi plan.md** (15 lines)
+**Location**: `/Users/naomiivie/bethel/Bethel naomi plan.md`
+
+High-level product/architecture planning:
+- Core LLM trained on the Bible and user research on dream handling from spiritual experts
+- Agentic layer planning — training the LLM to create agentic tasks
+- Long-term plans — train Bethel on Bible for accuracy validation, train on Book of Daniel to spot symbol patterns across biblical books
+
+### 4. **BETHEL_LORA_ARCHITECTURE.md** (716 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_LORA_ARCHITECTURE.md`
+
+Detailed technical architecture for the AI backend:
+- **4-layer architecture** — Personal context RAG, Bethel LoRA (fine-tuned theological), Biblical knowledge base RAG, cloud model fallback
+- **Bible as ground truth validation** — Process for validating all training data against NKJV scripture
+- **Training data sources** — Bible (NKJV), Kenneth Hagin, Kathryn Kuhlman, John Paul Jackson (20 dream categories), Mark Virkler, Stephanie Ike Okafor, +7 more dream teachers
+- **Base model selection** — Phi-3.5 Mini (3.8B parameters) recommended
+- **LoRA training spec** — Rank 16, ~16-20MB adapter, ~8,500 training examples
+- **RAG pipeline** — pgvector embeddings, dream symbol dictionary, user dream journal
+- **LoRAX deployment** — Multi-LoRA inference server architecture on Hetzner GPU
+- **On-device inference** — iOS CoreML / Android MLC-LLM plans
+- **Training data preparation** — Step-by-step pipeline for Bible processing and research file validation
+- **Inference pipeline** — End-to-end request flow (personal RAG → biblical RAG → LoRA → cloud validation)
+- **Cost summary** — Per-user and infrastructure costs at scale (10K users = ~$0.07/user/mo)
+- **Implementation phases** — 6 phases from training data prep through monthly retraining loop
+
+### 5. **BETHEL_HAGIN_RESEARCH.md** (273 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_HAGIN_RESEARCH.md`
+
+Kenneth E. Hagin theological framework (foundational to Bethel AI personality):
+- **Biography** — Life events from deathbed healing to founding Rhema Bible Training College
+- **Dreams & visions** — 8 major visions of Jesus, principles on dreams (visions are God's prerogative, valid but secondary to inward witness, always check against Scripture)
+- **Hierarchy of divine guidance** — PRIMARY: Inward witness; #2: Inward voice; #3: Voice of Holy Spirit; #4 (LEAST common): Prophecy, visions, dreams
+- **Spirit-soul-body distinction** — Three voices framework and 4 steps to train the human spirit (meditate, practice, prioritize Word, obey spirit's voice)
+- **Faith & the Word** — Mark 11:23-24 foundation, logos/rhema distinction (KEY FOR BETHEL)
+- **Role of tongues** — 7 reasons believers should speak in tongues
+- **Faith Food Devotions structure** — 3-part format: Scripture → Teaching → Confession (used for Bethel's devotional feature)
+- **Complete bibliography** — 139 titles, categorized by topic
+- **Rhema Bible Training College** — 25,000+ alumni, curriculum overview
+- **Application to Bethel** — 7 theological principles the AI should embody, system prompt elements, PDF source locations
+
+### 6. **BETHEL_KUHLMAN_RESEARCH.md** (262 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_KUHLMAN_RESEARCH.md`
+
+Kathryn Kuhlman theological framework (provides "heart" to balance Hagin's "framework"):
+- **Life & ministry** — Key dates from 1907 birth to 1976 death, "The Dead-End Street" turning point (1946)
+- **On the Holy Spirit** — Holy Spirit as "Senior Partner," Person not influence, Parakletos (summoned, comforter, helper)
+- **Yielding/surrender** — Central theme of her theology ("When I yielded... I knew what real power meant")
+- **Dreams, visions, hearing God** — Dream of three men interpretation, how she heard from God, greatest fear (grieving the Holy Spirit)
+- **Healing services** — Atmosphere creation, how healings occurred (no prayer cards, via Word of Knowledge), slain in the Spirit, documented miracles
+- **Key quotes** — 20+ quotes on faith, surrender, healing, character, ministry
+- **Theological positions** — Healing in atonement, against blame-the-sick theology, God's sovereignty in healing
+- **Key scriptures** — Zechariah 4:6 as signature verse
+- **Books** — 14 major works listed
+- **TV show** — "I Believe in Miracles" (1965-1976), longest-running religious program in CBS history
+- **How Kuhlman complements Hagin** — WORD + SPIRIT synthesis table showing how she provides warmth/heart to his framework
+
+### 7. **BETHEL_BIBLICAL_RESEARCH.md** (read limited due to size)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_BIBLICAL_RESEARCH.md` (105KB, 1,354 lines)
+
+Comprehensive biblical dreams database — 52+ dreams/visions from scripture with:
+- Full NKJV text for each dream/vision
+- 22 key scriptures on dreams
+- Joseph & Daniel interpretation frameworks
+- Hebrew/Greek terminology (חֲלוֹם/ḥălôm, ὅραμα/horama, ἐνύπνιον/enypnion)
+- Chronological ordering
+- 12-category classification system
+- Master reference tables
+
+### 8. **BETHEL_DREAM_MANAGEMENT_RESEARCH.md** (628 lines)
+**Location**: `/Users/naomiivie/bethel/research/BETHEL_DREAM_MANAGEMENT_RESEARCH.md`
+
+Comprehensive dream management training data compilation:
+- **Part 1: John Paul Jackson** — 20 Categories of Dreams (6 for destiny, 3 to change path, 3 for healing, 3 from enemy, 1 soul dreams, 2 training, 2 from physical), dream interpretation curriculum, key principles
+- **Part 2: Mark Virkler & Charity Kayembe** — 4 Keys to Hearing God's Voice (spontaneous thoughts, stillness, vision/seeing, two-way journaling), dream methodology
+- **Part 3: Stephanie Ike Okafor** — "The Power of Your Dreams" framework, 4 kinds of hearers (Feelers, Knowers, Hearers, Seers)
+- **Part 4: Adrian Beale** — 8 Steps to Hear God in Sleep (metaphorical recognition through emotional context)
+- **Part 5: Troy Brewer** — Prophetic dream symbol guide with 200+ symbols organized by category (animals, body parts, buildings, clothing, colors, directions, food, nature/weather, numbers, miscellaneous)
+- **Part 6: Charles Spurgeon** — Dream position (valid but cautious, trusted Word over dramatic experiences)
+- **Part 7: C.S. Lewis** — Dreams in "The Great Divorce," literary/theological dream devices
+- **Part 8: Smith Wigglesworth** — Visions and dreams, "The Wigglesworth Prophecy" (Word + Spirit combined)
+- **Part 9: Prophetic dream journal best practices** — Recording methods, organization, interpretation process, signs of God-given vs non-God dreams
+- **Part 10: Gift cultivation** — Signs you may have the gift, cultivation practices, stewarding the gift
+- **Part 11: Additional teachers** — James Goll, Ira Milligan, Dr. Joe Ibojie, Herman Riffel, Adam Thompson, Adrian Beale, Barbie Breathitt
+- **Part 12: Key scriptures** — Joel 2:28-29, Acts 2:17-18, Numbers 12:6, Job 33:14-18, etc. (10 core dream scriptures)
+- **Appendix: All sources cited** — 23 books, 11+ websites
+
+## Summary
+
+The `/Users/naomiivie/bethel/research/` directory contains 8 comprehensive research files totaling ~1,600 lines of design, UI/UX, competitive analysis, and theological framework documentation. These materials provide:
+
+1. **Visual & interaction design** (BETHEL_UI_RESEARCH.md) — Complete dark-mode design system with color tokens, typography, component specs, and animation guidelines
+2. **Market positioning** (BETHEL_COMPETITIVE_ANALYSIS.md) — Competitive landscape, user pain points, Bethel's unique value proposition
+3. **AI architecture** (BETHEL_LORA_ARCHITECTURE.md) — Technical blueprint for the Bethel AI backend, training pipeline, cost model
+4. **Theological frameworks** (BETHEL_HAGIN_RESEARCH.md, BETHEL_KUHLMAN_RESEARCH.md, BETHEL_DREAM_MANAGEMENT_RESEARCH.md) — Foundation for the AI's personality and responses, training data sources
+5. **Biblical research** (BETHEL_BIBLICAL_RESEARCH.md) — Master database of dreams/visions used for RAG and training validation
+6. **Product planning** (Bethel naomi plan.md) — High-level direction for core LLM, agentic layer, long-term vision
+
+All files are located in `/Users/naomiivie/bethel/research/` except the planning file which is at `/Users/naomiivie/bethel/Bethel naomi plan.md`.
+agentId: a70373c86950ae28b (use SendMessage with to: 'a70373c86950ae28b' to continue this agent)
+<usage>total_tokens: 78981
+tool_uses: 19
+duration_ms: 52465</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

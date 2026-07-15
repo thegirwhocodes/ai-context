@@ -1,0 +1,422 @@
+========================================================================
+AGENT RESEARCH: Research optimization tools for ASL pipeline
+Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
+Time: 2026-04-12 11:47:29 UTC
+========================================================================
+
+I have a real-time ASL sign language detection app running on macOS M1 (CPU only). I need to find specific software, libraries, and tools that can optimize each part of the pipeline WITHOUT rewriting the core logic — just swapping in faster versions of the same operations.
+
+Current pipeline and bottlenecks:
+1. OpenCV camera capture (~1ms)
+2. MediaPipe Holistic — 543 keypoints extraction (~30-50ms per frame, BIGGEST per-frame cost)
+3. Feature computation — numpy angle calculations (~1ms)
+4. PyTorch TGCN model — 300 ASL signs, 3.5MB GCN (~5-10ms)
+5. PyTorch LSTM model — 11 signs (~2ms)
+6. DTW matching — dtw-python library (~10-20ms)
+7. Groq LLM API — sentence assembly (~70-100ms, already optimized)
+8. Edge TTS — speech synthesis (~500-1000ms, BIGGEST overall cost)
+
+Research these SPECIFIC optimization tools for each bottleneck:
+
+**A. Faster MediaPipe alternatives:**
+- MediaPipe GPU on macOS M1 — is it possible now in 2026? Any workarounds?
+- MediaPipe Tasks API vs legacy Solutions — actual benchmarks on M1
+- ONNX versions of hand/pose/face models that could run on CoreML/ANE
+- YOLOv8-Pose or other ultralytics models for hand keypoint extraction — speed vs MediaPipe?
+- Google's hand_landmarker model via MediaPipe Tasks — faster than Holistic?
+- MMPose — alternative pose estimation, speed on CPU?
+- Are there any M1-native hand tracking libraries? Apple Vision framework?
+
+**B. Faster PyTorch inference:**
+- ONNX Runtime on M1 — actual benchmarks vs PyTorch for small GCN models
+- CoreML conversion via coremltools — does it work for GCN/attention layers?
+- TorchScript JIT compilation — how much speedup for tiny models?
+- torch.compile() with inductor backend — M1 support?
+- OpenVINO on macOS — does it work on M1?
+- TensorRT — macOS support?
+- Apple MLX framework — can it run PyTorch models faster on M1?
+
+**C. Faster DTW:**
+- dtw-python vs tslearn.metrics.dtw vs fastdtw — speed comparison
+- C-compiled DTW libraries
+- CUDA DTW (not applicable but note it)
+- Can we replace DTW with a learned metric (cosine similarity on embeddings)?
+
+**D. Faster TTS (the 500-1000ms bottleneck):**
+- Piper TTS — local, offline, how fast on M1?
+- Coqui TTS — local, speed?
+- macOS built-in `say` command — how fast? Quality?
+- Bark — speed?
+- MARS5 — speed?
+- XTTS — speed?
+- Kokoro — speed?
+- Pre-generating and caching all 300 signs as audio files — tools to batch generate?
+- Streaming TTS — which engines support streaming on M1?
+
+**E. System profiling tools:**
+- py-spy — profile Python without modifying code
+- cProfile
+- line_profiler
+- Instruments (macOS)
+- How to identify the actual bottleneck empirically?
+
+**F. Python performance tools:**
+- Cython — can specific functions be compiled?
+- Numba JIT — numpy operations, M1 support?
+- PyPy — compatible with MediaPipe/PyTorch?
+- multiprocessing vs threading for this pipeline
+
+For each tool: 
+1. Does it work on macOS M1?
+2. Expected speedup (with numbers if available)
+3. Is it a drop-in replacement or requires code changes?
+4. Install command
+5. Any gotchas?
+
+Prioritize by impact — what gives the biggest speedup with least effort.
+
+----------------------------------------
+
+Now I have comprehensive research on all areas. Let me compile the full report.
+
+---
+
+Here is the complete optimization research for your ASL detection pipeline, organized by bottleneck and prioritized by impact.
+
+---
+
+# A. Faster MediaPipe Alternatives (your biggest per-frame cost: 30-50ms)
+
+## MediaPipe GPU on macOS M1 — NOT possible in 2026
+
+MediaPipe supports Metal GPU on iOS but **not** on macOS desktop. There is no Metal GPU acceleration for MediaPipe on macOS, period. The [GPU support issue #5656](https://github.com/google-ai-edge/mediapipe/issues/5656) remains open. MediaPipe runs CPU-only on Mac via the `mediapipe-silicon` wheel.
+
+- M1 support: CPU only
+- No workaround exists for GPU acceleration on macOS
+
+## MediaPipe Tasks API (Holistic Landmarker) vs Legacy Solutions
+
+The legacy `mp.solutions.holistic` is deprecated (end of support March 2023). The replacement is the **Tasks API Holistic Landmarker**, which coordinates up to 8 models per frame (1 pose detector, 1 pose landmark, 3 re-crop models, 3 keypoint models). The cascading approach is faster than running 3 separate detectors because it uses pose landmarks to define ROIs for hand/face.
+
+- M1 support: Yes (CPU)
+- Expected speedup over legacy: Marginal on CPU — the architecture is similar, but pre/post processing is cleaner
+- Code changes: Moderate — different API surface, but same keypoint output
+- Install: `pip install mediapipe>=0.10.20`
+- Gotcha: Requires numpy<2. Does NOT support Python 3.13.
+
+## Using ONLY Hand Landmarker (if you don't need all 543 points)
+
+The standalone [Hand Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker) detects 21 joints per hand. Benchmarks: **Lite model: ~15ms/frame, Full model: ~17ms/frame, Heavy model: ~80ms/frame** on CPU. This is significantly faster than Holistic's 30-50ms because you skip pose (33 points) and face (468 points) entirely.
+
+- M1 support: Yes
+- Expected speedup: **~2x** (17ms vs 30-50ms) if you only need hand landmarks
+- Code changes: Moderate — swap Holistic for HandLandmarker, adjust feature extraction
+- Install: Same mediapipe package
+- Gotcha: You lose body pose and face landmarks. If your TGCN model needs all 543 keypoints, this won't work without retraining.
+
+**VERDICT: If your GCN model can work with hand-only keypoints (42 points for 2 hands), switching to Hand Landmarker alone is the single biggest easy win — ~15-17ms vs 30-50ms.**
+
+## YOLOv8-Pose vs MediaPipe
+
+[Research shows](https://link.springer.com/chapter/10.1007/978-3-032-00232-7_13) MediaPipe's lite configuration consistently delivers higher FPS and lower latency than YOLOv8 on CPU. MediaPipe achieves 96.52% accuracy vs YOLOv8's 82% for pose landmarks. YOLOv8 only wins in crowded multi-person scenes.
+
+- Not recommended for your use case (single person, CPU only)
+
+## Apple Vision Framework
+
+Apple's Vision framework offers [hand pose detection with 21 joints](https://developer.apple.com/videos/play/wwdc2020/10653/) with "improved accuracy, less memory usage, and less latency." However, it requires **Swift** — no Python bindings. You would need a Swift subprocess or bridge (PyObjC), adding complexity.
+
+- M1 support: Yes, native with ANE acceleration
+- Expected speedup: Potentially significant (hardware-accelerated on Neural Engine)
+- Code changes: **Major** — requires Swift bridge
+- Gotcha: No direct Python API. Would need a Swift helper process communicating via IPC.
+
+## MMPose
+
+CPU-based alternative pose estimation. Generally **slower** than MediaPipe on CPU for single-person scenarios. Not recommended.
+
+---
+
+# B. Faster PyTorch Inference (currently 5-10ms TGCN, 2ms LSTM)
+
+## ONNX Runtime on M1
+
+ONNX Runtime now has native ARM64 macOS support with CoreML Execution Provider. [Benchmarks show ~20.5% speedup](https://medium.com/@deeplch/the-beginners-guide-cpu-inference-optimization-with-onnx-99-8-tf-20-5-pytorch-speedup-83fd5cd38615) over PyTorch on CPU. For batch-size-1: ONNX averages 24.17ms vs PyTorch 30.39ms. For your tiny models (3.5MB), the absolute savings would be small (maybe 5-10ms to 4-8ms).
+
+- M1 support: Yes, native ARM64 + CoreML EP
+- Expected speedup: **~20% on CPU** (~1-2ms saved)
+- Drop-in: Near drop-in — export with `torch.onnx.export()`, run with `onnxruntime.InferenceSession()`
+- Install: `pip install onnxruntime` (native ARM64 wheels now included)
+- Gotcha: CoreML EP may silently convert to FP16. Graph ops (scatter/gather in GCN) may fall back to CPU EP.
+
+## CoreML via coremltools
+
+[CoreML supports](https://apple.github.io/coremltools/docs-guides/source/convert-to-neural-network.html) converting PyTorch models via the unified conversion API. It can target the Neural Engine (ANE) for significant acceleration. However, **GCN layers with dynamic graph structures and scatter/gather operations are problematic** — many graph neural network ops are not in CoreML's supported op set and will fall back to CPU.
+
+- M1 support: Yes
+- Expected speedup: Potentially large IF all ops are supported (ANE is very fast); likely minimal if GCN ops fall back
+- Code changes: Moderate — `coremltools.convert()` then `CoreMLModel.predict()`
+- Install: `pip install coremltools`
+- Gotcha: GCN/attention layers may not convert cleanly. Test before committing.
+
+## TorchScript JIT
+
+[Graph-mode execution is faster](https://residentmario.github.io/pytorch-training-performance-guide/jit.html) than eager mode because the graph is built once and the compiler can apply optimizations (operation fusion). For small models, expect **5-15% speedup**.
+
+- M1 support: Yes
+- Expected speedup: ~5-15% (~0.5-1ms saved)
+- Near drop-in: `model = torch.jit.script(model)` or `torch.jit.trace(model, example_input)`
+- Install: Built into PyTorch
+- Gotcha: Dynamic control flow in GCN may require `torch.jit.script` instead of `trace`
+
+## torch.compile() with Inductor
+
+[Known issues on macOS](https://github.com/pytorch/pytorch/issues/124497) — execution hangs reported on Apple Silicon. The recommendation from the PyTorch community is to "use torch.compile sparingly on Mac."
+
+- M1 support: **Unreliable**
+- **Not recommended** for production use on macOS
+
+## OpenVINO on macOS M1
+
+[OpenVINO supports macOS ARM64](https://docs.openvino.ai/2025/get-started/install-openvino/install-openvino-macos.html) since version 2024.1 via the ARM plugin. However, early benchmarks showed "only FP32 supported and performance is not as good as on Intel machines."
+
+- M1 support: Yes (since 2024.1)
+- Expected speedup: Minimal on ARM — OpenVINO is optimized for Intel
+- Install: `pip install openvino`
+- Gotcha: Not worth the migration effort for ARM
+
+## TensorRT
+
+**Does NOT work on macOS.** NVIDIA GPUs only. Not applicable.
+
+## Apple MLX
+
+[MLX achieves up to 30% better performance](https://arxiv.org/html/2510.18921v1) over PyTorch for some workloads on Apple Silicon. It's designed for the unified memory architecture. However, MLX is primarily designed for **transformer/LLM** workloads. GCN model support would require manual porting.
+
+- M1 support: Yes, native
+- Expected speedup: Up to 30% for supported ops
+- Code changes: **Major** — requires rewriting model in MLX API
+- Install: `pip install mlx`
+- Gotcha: No PyTorch compatibility layer for GCN. Not worth it for 5-10ms models.
+
+**VERDICT for PyTorch: ONNX Runtime is the best option — near drop-in, ~20% speedup. TorchScript JIT is trivial to add for another 5-15%. Combined savings: ~2-3ms. Your models are already fast, so this is low priority.**
+
+---
+
+# C. Faster DTW (currently 10-20ms)
+
+## dtw-python (your current library)
+
+Accurate but not the fastest. Pure Python with some optimizations.
+
+## fastdtw — DO NOT USE
+
+[Research proves](https://arxiv.org/pdf/2003.11246) FastDTW is "approximate and generally SLOWER than the algorithm it approximates." Every paper using FastDTW would have gotten faster results with standard DTW.
+
+## dtaidistance — BEST OPTION
+
+[C-compiled DTW](https://github.com/wannesm/dtaidistance) with OpenMP parallelization. The fast C version is **30-300x faster** than pure Python DTW. Supports multidimensional time series.
+
+- M1 support: Yes (compiles C extensions natively)
+- Expected speedup: **10-50x** (10-20ms down to **0.5-2ms**)
+- Near drop-in: Similar API — `dtaidistance.dtw.distance()` and `dtaidistance.dtw.distance_fast()`
+- Install: `pip install dtaidistance` (ensure C extensions compile: check with `dtaidistance.dtw.try_import_c()`)
+- Gotcha: Must have C compiler installed (Xcode command line tools). If C extension fails to build, falls back to slow Python.
+
+## tslearn
+
+Decent speed, but dtaidistance's C backend is faster. Less flexible API.
+
+## Replacing DTW with Learned Embeddings
+
+[Recent research](https://arxiv.org/html/2603.09213) shows encoding hand keypoints into 128-dimensional embeddings, then using cosine similarity with Prototypical Networks. This replaces DTW entirely with a single vector dot product (~0.01ms).
+
+- Expected speedup: **1000x** (DTW eliminated entirely)
+- Code changes: **Major** — requires training an embedding model and revalidating accuracy
+- This is the nuclear option — highest payoff but highest effort
+
+**VERDICT: Switch from dtw-python to dtaidistance. Install, change 2-3 lines, get 10-50x speedup. This is your highest-ROI swap.**
+
+---
+
+# D. Faster TTS (your biggest overall cost: 500-1000ms)
+
+## Pre-generating and Caching All 300 Signs as Audio — THE WINNER
+
+For 300 ASL signs, pre-generate WAV files for each sign word/phrase. At runtime, concatenate cached audio files. Synthesis time drops to **<1ms** (just file read + concatenation).
+
+- Tools: Use Kokoro or Piper to batch-generate 300 WAV files offline
+- [TTS-Generator](https://github.com/JolonB/TTS-Generator) can batch from a word list
+- Store as WAV (not MP3) to avoid decode overhead
+- Runtime: `pygame.mixer` or `sounddevice` for playback
+- Expected speedup: **500-1000x** (500-1000ms down to **<1ms** for cached words)
+- Code changes: Moderate — build cache script, replace TTS call with cache lookup
+- Gotcha: Only works for individual sign words. For assembled sentences, you still need TTS or audio concatenation with crossfading.
+
+## Kokoro-82M (for non-cached sentences)
+
+[Fastest quality TTS](https://huggingface.co/hexgrad/Kokoro-82M): processes short texts in **under 300ms** on GPU. On CPU: RTF of ~1.88x (meaning 1 second of audio takes ~530ms to generate). The ONNX version (`kokoro-onnx`) with a persistent server brings latency from ~9s cold start to **~300ms warm**.
+
+- M1 support: Yes — `pip install kokoro>=0.9.4 soundfile torch` or `pip install kokoro-onnx`
+- MLX-optimized version exists: `pip install kokoro-mlx`
+- Expected latency: **~300-500ms** for short sentences (warm, CPU)
+- Quality: Near-commercial, ELO 1059 on Artificial Analysis, 82M parameters
+- Install: `pip install kokoro-onnx` (recommended for speed)
+- Gotcha: Cold start is ~6-9s. Must keep model loaded in memory.
+
+## Piper TTS
+
+[Fastest CPU TTS engine](https://github.com/rhasspy/piper). RTF of **0.192** (float16) — meaning 1 second of audio generates in ~192ms. Uses ONNX/VITS models. Massive voice ecosystem.
+
+- M1 support: Yes — `pip install piper-tts`
+- Expected latency: **~50-200ms** for short sentences
+- Quality: Good but robotic compared to Kokoro
+- File size: 38MB (float16) to 75MB (float32)
+- Gotcha: Quality is noticeably lower than Kokoro/Edge TTS
+
+## macOS `say` Command / NSSpeechSynthesizer
+
+Built-in, zero setup. Can be called via `subprocess.run(["say", text])` or via `pyttsx3` which wraps NSSpeechSynthesizer.
+
+- M1 support: Yes, native
+- Expected latency: **~50-100ms** for short phrases (no network, no model loading)
+- Quality: Mechanical/robotic
+- Install: Nothing — built into macOS
+- Gotcha: Very robotic quality. Good only as a fallback.
+
+## Bark, MARS5, XTTS
+
+All significantly **slower** than Kokoro/Piper on CPU. Bark is especially slow (multiple seconds). XTTS-v2 is good quality but heavier. Not recommended for real-time on M1 CPU.
+
+## Streaming TTS
+
+Kokoro-FastAPI and RealtimeTTS (`pip install realtimetts`) support streaming — they start playing audio before full generation completes, reducing perceived latency.
+
+**VERDICT: Pre-cache all 300 sign words as WAV files (eliminating TTS entirely for single words). For assembled sentences, use Kokoro-ONNX (~300ms) or Piper (~100-200ms) as a local replacement for Edge TTS. Combined: 500-1000ms drops to <1ms for cached words, ~200-300ms for sentences.**
+
+---
+
+# E. System Profiling Tools
+
+| Tool | What it does | Overhead | Install |
+|------|-------------|----------|---------|
+| **py-spy** | Sampling profiler, attaches to running process, no code changes | <2% | `pip install py-spy` then `py-spy top --pid PID` |
+| **cProfile** | Built-in deterministic profiler, function-level | 3-5% | Built into Python: `python -m cProfile -s cumtime your_app.py` |
+| **line_profiler** | Line-by-line timing for decorated functions | 10-100x | `pip install line_profiler`, decorate with `@profile` |
+| **Instruments** (macOS) | Xcode's Time Profiler — system-wide, sees C extensions | Minimal | Free with Xcode. Use "Time Profiler" template. |
+
+**Recommended approach:**
+
+1. Start with `py-spy top --pid $(pgrep -f your_app.py)` to see live CPU breakdown without touching code
+2. Use `py-spy record --pid PID -o profile.svg` to generate a flamegraph
+3. Drill into hot functions with `line_profiler`
+4. For C-level bottlenecks (MediaPipe internals), use Instruments Time Profiler
+
+All work on M1 macOS.
+
+---
+
+# F. Python Performance Tools
+
+## Numba JIT
+
+[Fully supports macOS ARM64](https://numba.readthedocs.io/en/stable/release/0.63.0-notes.html) as of version 0.63 (Dec 2025). Intel Mac support is being deprecated in favor of ARM. Excellent for accelerating numpy angle calculations.
+
+- M1 support: Yes, tier-1 platform
+- Expected speedup: **10-100x** for numpy loop operations
+- Near drop-in: Add `@numba.njit` decorator to pure-numpy functions
+- Install: `pip install numba`
+- Gotcha: First call has JIT compilation overhead (~1-2s). Use `@numba.njit(cache=True)` to cache compiled code.
+
+For your ~1ms angle calculations, Numba could reduce to ~0.01-0.1ms. Small absolute gain but essentially free to add.
+
+## Cython
+
+[Can deliver 47-1250x speedups](https://towardsdatascience.com/run-your-python-code-up-to-80x-faster-using-the-cython-library/) for array operations. Requires creating `.pyx` files with type annotations and a build step.
+
+- M1 support: Yes
+- Expected speedup: 10-80x for typed array operations
+- Code changes: Moderate — needs `.pyx` files and `setup.py`
+- Not worth it for your pipeline since Numba is easier and your numpy ops are already fast
+
+## PyPy
+
+**NOT compatible** with PyTorch, MediaPipe, or Numba. Do not use.
+
+## Multiprocessing vs Threading
+
+For your pipeline, the key insight is that MediaPipe releases the GIL during C++ inference, and PyTorch releases the GIL during tensor operations. So **threading works** for overlapping these operations. Use a **pipeline architecture**:
+
+- Thread 1: Camera capture + MediaPipe (runs in C++, releases GIL)
+- Thread 2: Feature computation + model inference (runs in C++/CUDA, releases GIL)
+- Thread 3: TTS playback
+
+Use `threading.Thread` with `queue.Queue` between stages. Expected speedup: **~30-50%** by overlapping capture with inference.
+
+For `multiprocessing`: higher overhead due to IPC serialization. Only worth it if you need true CPU parallelism for Python-heavy code. Threading is better for your I/O + C-extension pipeline.
+
+---
+
+# Priority-Ranked Action Plan
+
+| Priority | Change | Effort | Time Saved | From → To |
+|----------|--------|--------|------------|-----------|
+| **1** | Pre-cache 300 sign audio files | 2-3 hours | **500-1000ms** | 500-1000ms → <1ms |
+| **2** | Switch DTW to `dtaidistance` | 15 minutes | **8-19ms** | 10-20ms → 0.5-2ms |
+| **3** | Replace Edge TTS with Kokoro-ONNX for sentences | 1-2 hours | **200-700ms** | 500-1000ms → 300ms |
+| **4** | Pipeline threading (overlap capture/inference) | 2-3 hours | **15-25ms latency** | Sequential → overlapped |
+| **5** | MediaPipe Hand Landmarker only (if feasible) | 3-5 hours | **15-30ms** | 30-50ms → 15-17ms |
+| **6** | ONNX Runtime for PyTorch models | 1-2 hours | **1-2ms** | 5-10ms → 4-8ms |
+| **7** | TorchScript JIT | 10 minutes | **0.5-1ms** | 5-10ms → 4.5-9ms |
+| **8** | Numba for angle calculations | 15 minutes | **~0.9ms** | 1ms → 0.1ms |
+| **9** | Profile with py-spy first | 30 minutes | Identifies actual bottleneck | — |
+
+**Total potential savings: ~750-1800ms per pipeline cycle** — the vast majority from TTS caching and DTW replacement.
+
+**My strong recommendation: Do item 9 first (profile with py-spy) to validate your timing assumptions, then items 1-3 for the biggest wins with least effort.**
+
+---
+
+Sources:
+- [MediaPipe GPU macOS Issue #5656](https://github.com/google-ai-edge/mediapipe/issues/5656)
+- [MediaPipe Hand Landmarker Guide](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker)
+- [MediaPipe Holistic Landmarker Task Guide](https://ai.google.dev/edge/mediapipe/solutions/vision/holistic_landmarker)
+- [mediapipe-silicon on PyPI](https://pypi.org/project/mediapipe-silicon/)
+- [YOLOv8 vs MediaPipe Comparative Evaluation](https://link.springer.com/chapter/10.1007/978-3-032-00232-7_13)
+- [Apple Vision Hand Pose Detection (WWDC20)](https://developer.apple.com/videos/play/wwdc2020/10653/)
+- [ONNX Runtime CoreML Execution Provider](https://onnxruntime.ai/docs/execution-providers/CoreML-ExecutionProvider.html)
+- [ONNX vs PyTorch Speed Comparison](https://dev-kit.io/blog/machine-learning/onnx-vs-pytorch-speed-comparison)
+- [coremltools GitHub](https://github.com/apple/coremltools)
+- [torch.compile macOS Issue #124497](https://github.com/pytorch/pytorch/issues/124497)
+- [OpenVINO macOS Install](https://docs.openvino.ai/2025/get-started/install-openvino/install-openvino-macos.html)
+- [MLX Benchmarks Paper](https://arxiv.org/html/2510.18921v1)
+- [MLX GitHub](https://github.com/ml-explore/mlx)
+- [FastDTW is Slow (Paper)](https://arxiv.org/pdf/2003.11246)
+- [dtaidistance GitHub (C-compiled DTW)](https://github.com/wannesm/dtaidistance)
+- [DTW Libraries Comparison](https://forecastegy.com/posts/dynamic-time-warping-dtw-libraries-python-examples/)
+- [Learned Hand Pose Embeddings](https://arxiv.org/html/2603.09213)
+- [Kokoro-82M on HuggingFace](https://huggingface.co/hexgrad/Kokoro-82M)
+- [kokoro-onnx GitHub](https://github.com/thewh1teagle/kokoro-onnx)
+- [Kokoro v1 Benchmark (PyTorch/ONNX)](https://gist.github.com/efemaer/23d9a3b949b751dde315192b4dcf0653)
+- [KittenTTS vs Piper vs Kokoro CPU Speed](https://github.com/KittenML/KittenTTS/issues/40)
+- [Piper TTS GitHub](https://github.com/rhasspy/piper)
+- [Piper TTS on macOS](https://www.thoughtasylum.com/2025/08/25/text-to-speech-on-macos-with-piper/)
+- [12 Best TTS Models Compared (2025)](https://www.inferless.com/learn/comparing-different-text-to-speech---tts--models-part-2)
+- [Kokoro Local CPU Guide](https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro)
+- [TTS-Generator (Batch)](https://github.com/JolonB/TTS-Generator)
+- [py-spy GitHub](https://github.com/benfred/py-spy)
+- [Python Profiling Guide (Real Python)](https://realpython.com/python-profiling/)
+- [Profiling with cProfile and py-spy](https://oneuptime.com/blog/post/2025-01-06-profile-python-cprofile-pyspy/view)
+- [Numba 0.63 Release Notes](https://numba.readthedocs.io/en/stable/release/0.63.0-notes.html)
+- [Cython NumPy Speedups](https://towardsdatascience.com/run-your-python-code-up-to-80x-faster-using-the-cython-library/)
+- [Threading vs Multiprocessing for ML](https://medium.com/@vamsikd219/threading-vs-multiprocessing-in-python-a-machine-learning-production-guide-683c5888ed29)
+- [PyTorch Apple Silicon Support](https://docs.pytorch.org/serve/hardware_support/apple_silicon_support.html)
+- [TorchScript Performance Guide](https://residentmario.github.io/pytorch-training-performance-guide/jit.html)
+agentId: a0feb69552471a9a3 (use SendMessage with to: 'a0feb69552471a9a3' to continue this agent)
+<usage>total_tokens: 55185
+tool_uses: 38
+duration_ms: 1258220</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

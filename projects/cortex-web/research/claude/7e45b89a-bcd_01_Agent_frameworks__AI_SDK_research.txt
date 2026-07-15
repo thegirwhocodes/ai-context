@@ -1,0 +1,123 @@
+========================================================================
+AGENT RESEARCH: Agent frameworks + AI SDK research
+Session: 7e45b89a-bcd4-4187-bdc7-954593f71707
+Time: 2026-05-08 21:52:06 UTC
+========================================================================
+
+I'm doing deep research for Naomi, who's building Cortex — an AI personal agent app. Already has: Next.js 16, Anthropic SDK (Claude Haiku 4.5 + Sonnet 4.5), Supabase, Clerk, Gmail/Calendar OAuth integrations, an `cortex_actions` table with pending/approved/executing/executed states, and a "voice email" sub-app that's a small agent loop today (summarize → intent classify → draft → send via Gmail). She wants to *deepen* the agentic capabilities — Cortex's vision is "Layer 3: the LLM itself goes and does things for you" — schedule meetings, reply DMs, buy groceries with Apple Pay confirmation. Every action requires user approval before execution.
+
+She's asked for **deep research** on **how to build an agent in 2026.** Research only, no code.
+
+Specifically cover:
+
+1. **Framework decision matrix.** Vercel AI SDK agents vs Mastra vs LangGraph vs CrewAI vs Anthropic-native (just the SDK + tool use loop) vs Vercel Workflow Devkit. Pros/cons for *her* stack (Next.js on Vercel, Anthropic models, Supabase as durable state). Be opinionated about which one she should pick for production. The Anthropic-native path interests me because she already has the SDK — what does that loop look like in 2026 with the latest tool-use features?
+
+2. **Agentic patterns.** ReAct, Plan-and-Execute, Reflexion, OODA loops, function-calling agents, MCP-based agents — when each is the right call. Map them onto Cortex's actual jobs (replying email, scheduling a meeting, drafting an Instagram DM, paying for groceries).
+
+3. **Durable execution.** Long-running agents need to survive a Vercel Function timeout. How do Vercel Workflow DevKit, Mastra workflows, or Inngest fit? What's the right pattern for "agent kicks off a 30-min job" without holding an HTTP connection open?
+
+4. **MCP servers as agent tools.** Naomi already has MCP servers connected (Gmail, Calendar, Notion, Drive, Vercel). How do agents use MCP? Should Cortex *expose* its own MCP server so other agents can act on her behalf?
+
+5. **Human-in-the-loop / approval gates.** Best patterns for the "draft → approve → execute" flow. She has cortex_actions today as a manual approve queue. What does the modern pattern look like?
+
+6. **Observability.** Vercel AI Observability, Vercel Agent, Langfuse, Traceloop. What does she actually need vs nice-to-have for a one-person build?
+
+Be specific — names of libraries, version numbers if relevant, links to official docs. Under 1500 words. The output goes back to me to synthesize into a plan she'll review.
+
+----------------------------------------
+
+# Deep Research: Building an AI Agent in 2026 for Cortex
+
+## 1. Framework Decision Matrix
+
+For Naomi's stack (Next.js 16 on Vercel + Anthropic + Supabase), the realistic contenders are:
+
+**Vercel AI SDK v6 (`ai` package, `ToolLoopAgent` class)** — First-class Vercel integration, native streaming via `useChat`, type-safe tool definitions with Zod, `InferAgentUIMessage` gives end-to-end type safety from agent definition to React component. Anthropic provider via `@ai-sdk/anthropic`. Best for: chat-style agents under 60s. Weakness: not durable on its own — if a Function dies mid-loop, the run is lost.
+
+**Anthropic-native loop (just `@anthropic-ai/sdk`)** — The 2026 Claude tool-use loop is genuinely lean: send messages with `tools` array, model returns `tool_use` blocks with `stop_reason: "tool_use"`, you execute tools, append `tool_result` blocks, repeat until `stop_reason: "end_turn"`. Claude 4.5+ supports **interleaved thinking** between tool calls (`extended-thinking-2025-05-14` beta), **prompt caching** on system prompts and tool definitions (5-min default TTL, 1-hour available), **fine-grained tool streaming** for streaming tool inputs, and **token-efficient tool use** which the SDK handles automatically. Pros: zero abstraction tax, Naomi already understands it, full control over the action approval loop. Cons: she rebuilds tracing, retries, durability herself.
+
+**Mastra** — TypeScript agent framework, built-in workflows with `.step()` chains, has its own memory primitive. Adds another framework to learn and another deploy target alongside Vercel. Skip.
+
+**LangGraph** — Powerful graph-based orchestration, but Python-first and the JS port lags. Adds Python infra Naomi doesn't have. Skip.
+
+**CrewAI** — Multi-agent role-play framework. Python. Wrong fit. Skip.
+
+**Vercel Workflow DevKit (`workflow` package)** — Durable execution layer. Not a competitor to AI SDK — it *wraps* it. `DurableAgent` class wraps `ToolLoopAgent` with crash-safe step execution, automatic retries, and pause/resume via Suspense. This is the durability story.
+
+**Recommendation:** Hybrid. Use **AI SDK v6 `ToolLoopAgent` for the chat-driven agents** (voice email's draft loop, the conversational Cortex layer) because of type safety + `useChat` streaming. Wrap long-running or multi-tool-call autonomous flows in **Workflow DevKit `DurableAgent`** so they survive Function timeouts. For Naomi specifically, **start with Anthropic-native + AI SDK adapters** — she already has the Anthropic SDK working, she gets prompt caching control, and AI SDK's `@ai-sdk/anthropic` provider is a thin wrapper she can lean on for streaming UI without abandoning the raw loop she's already comfortable with. Reach for `DurableAgent` only when she hits real durability needs (the grocery-purchase flow, multi-day research tasks).
+
+Docs: `https://sdk.vercel.ai`, `https://docs.anthropic.com/en/docs/build-with-claude/tool-use`, `https://vercel.com/docs/workflow`.
+
+## 2. Agentic Patterns Mapped to Cortex Jobs
+
+**Function-calling / tool-use loop (ReAct's modern descendant)** — Default for everything Cortex does. Model thinks (now natively via extended thinking), calls a tool, observes result, decides next step. Use for: replying email, scheduling meetings, drafting DMs. This is the AI SDK `ToolLoopAgent` pattern.
+
+**Plan-and-Execute** — Model produces an explicit plan as a structured object first (`generateText` with `Output.object()` and a Zod plan schema), then executes each step. Use for: the grocery flow specifically. The plan object becomes the `cortex_actions` row(s) the user approves before execution begins. This separates "what will I do" from "do it" — ideal for high-stakes actions.
+
+**Reflexion** — Agent reviews its own output, critiques, retries. Add a verification step after the draft. Use for: outbound communication where tone matters (Instagram DMs, important email replies). Implement as a second `generateText` call with the draft as input asking "would Naomi send this?"
+
+**OODA** — Observe-Orient-Decide-Act loops are conceptually what every tool-use loop already is. Don't formalize this separately.
+
+**MCP-based agents** — When tools live in external MCP servers (Gmail, Calendar, Notion already do), the agent connects via `experimental_createMCPClient` from the AI SDK, lists tools dynamically, and treats them like local tools. Use for: every external integration Cortex already has — don't redefine those tools in code, consume them via MCP.
+
+**Mapping:**
+- *Reply email* → tool-use loop, single agent, ~3-5 steps. AI SDK `ToolLoopAgent` with `gmail.draft` + `gmail.send` tools, approval gate between draft and send.
+- *Schedule meeting* → tool-use loop, ~5-8 steps. Tools: `calendar.list_events`, `calendar.suggest_time`, `gmail.send` for invite confirmation. Approval before send.
+- *Draft Instagram DM* → tool-use loop + Reflexion step. Cortex doesn't have Instagram MCP yet — this needs a custom tool wrapping the Instagram Graph API or a browser-automation fallback.
+- *Buy groceries with Apple Pay* → Plan-and-Execute mandatory. Plan generated → user reviews entire plan in `cortex_actions` UI → on approval, durable agent executes via Workflow DevKit, with a final Apple Pay confirmation step that suspends until the iOS app confirms.
+
+## 3. Durable Execution
+
+Vercel Functions cap at 800s on Pro Fluid. A 30-minute agent will die. Options:
+
+**Vercel Workflow DevKit** — Best fit. `DurableAgent` from the `workflow` package, deployed as a Function with `maxDuration: 800` for the orchestrator (steps run as separate sub-invocations, so total runtime is unbounded). State persists in Vercel's managed durable storage. Pause/resume via Suspense for human-in-the-loop. Native AI SDK integration. Naomi gets to stay on Vercel, no extra infra. Docs: `https://vercel.com/docs/workflow`.
+
+**Inngest** — Mature, TypeScript-first, works well with Next.js, separate dashboard. Solid alternative if Workflow DevKit feels too new (it's still maturing in early 2026). `inngest` SDK + `serve` route handler. Generous free tier. The "step.ai.infer" primitive wraps LLM calls with automatic retry and observability.
+
+**Trigger.dev v3** — Background jobs platform with similar shape. Heavier than needed.
+
+**Pattern:** API route receives request → enqueues workflow run → returns `runId` immediately → client polls `/api/workflow/[runId]/status` or subscribes via SSE/realtime. For Cortex specifically, write the `runId` onto the `cortex_actions` row so the approval queue UI can show live status.
+
+**Recommendation:** Workflow DevKit for new work. Naomi's already on Vercel, the integration with AI SDK is native, and there's no second vendor.
+
+## 4. MCP Servers
+
+**Consuming MCP from agents:** Use `experimental_createMCPClient` from `ai` package with `StreamableHTTPClientTransport` from `@modelcontextprotocol/sdk`. Call `client.tools()` to get a tool object you spread into the agent's `tools`. Tools become first-class — typed, tracked, streamed. Naomi's existing Gmail/Calendar/Notion/Drive MCP connections become agent tools with zero glue code.
+
+**Should Cortex expose its own MCP server?** Yes, eventually. The MCP spec now supports HTTP transport with OAuth, so Cortex could expose endpoints like `cortex.actions.create`, `cortex.context.search` (RAG over her email/calendar history), `cortex.lora.query` (the per-user fine-tune). Then *other* agents — Claude Desktop, ChatGPT (which now supports MCP), Cursor, future agents — can act through Cortex on Naomi's behalf with her approval gates intact. This is the unlock for Layer 3. Use `@modelcontextprotocol/sdk/server` to host it as a Vercel Function. Defer until the core agent loop is solid — but design tool names with this in mind so they translate cleanly to MCP later.
+
+Spec: `https://modelcontextprotocol.io/specification/2025-06-18`.
+
+## 5. Human-in-the-Loop / Approval Gates
+
+Naomi's `cortex_actions` table is already the right primitive. The 2026 pattern that matches it:
+
+**Suspendable workflows.** When an agent reaches an action that needs approval, it writes the proposed action to `cortex_actions` with state `pending`, then *suspends* the workflow (Workflow DevKit: `await suspend()`, returns a token; Inngest: `step.waitForEvent`). The orchestrator persists. The user approves in the Cortex UI → API route resumes the workflow with the approval payload → agent calls the actual mutating tool. On rejection, workflow receives the rejection and either revises (loop back to draft step) or aborts.
+
+**Implementation specifics:**
+- Tool definitions split into "read" (auto-approved, runs immediately) vs "write" (always gated). Annotate via a `requiresApproval: true` field in the tool's metadata that your loop wrapper inspects.
+- For voice email specifically: the *draft* step is auto, the *send* step is gated. Draft writes to `cortex_actions` as `pending`, suspends. Approval triggers send.
+- Use Supabase Realtime to push pending actions to the iOS app for one-tap approval.
+- For Apple Pay: the approval *is* the Apple Pay sheet on iOS. Workflow suspends, iOS app shows native Apple Pay UI, payment confirmation event resumes the workflow.
+
+This is the "agent inbox" pattern LangChain has been pushing — Cortex is already there architecturally.
+
+## 6. Observability
+
+For a one-person build, ruthlessly prioritize:
+
+**Must-have:** **Vercel AI Observability** (built into the dashboard, zero config when using AI Gateway or `ai` package — automatic token tracking, latency, errors per model). **Vercel Agent** for incident investigation on production deploys. Both are native, both are free or included.
+
+**Strongly recommended:** **Langfuse** (self-hostable or cloud, generous free tier, OpenTelemetry-based, has native AI SDK and Anthropic SDK integrations). It gives full trace trees with tool calls, prompt versioning, and eval datasets — invaluable for debugging "why did the agent do that?" Set it up with the OpenTelemetry exporter in `instrumentation.ts`, ~30 minutes of work. Docs: `https://langfuse.com/docs/integrations/vercel-ai-sdk`.
+
+**Skip for now:** Traceloop (overlaps with Langfuse), Helicone (proxy-based, less rich), LangSmith (LangChain-coupled, she's not on LangChain), Arize/Phoenix (enterprise-scale, overkill).
+
+**Bottom line:** Vercel native + Langfuse. Two tools. Both free at her scale. That's the whole observability stack.
+agentId: a836ad013e92dc88e (use SendMessage with to: 'a836ad013e92dc88e' to continue this agent)
+<usage>total_tokens: 33293
+tool_uses: 0
+duration_ms: 66117</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

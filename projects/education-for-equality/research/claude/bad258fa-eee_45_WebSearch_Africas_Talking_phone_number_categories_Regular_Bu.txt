@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "Africa's Talking" phone number categories "Regular Business" "TollFree" "Premiu
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-05-08 02:10:18 UTC
+========================================================================
+
+Search query: "Africa's Talking" phone number categories "Regular Business" "TollFree" "Premium Rated" "SIP Phone" "SIP Trunk" differences
+
+----------------------------------------
+
+Web search results for query: ""Africa's Talking" phone number categories "Regular Business" "TollFree" "Premium Rated" "SIP Phone" "SIP Trunk" differences"
+
+Links: [{"title":"What types of voice phone numbers are available ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Africas talking - Email Address & Phone Number - Lusha","url":"https://www.lusha.com/business/515803a43178f6db/"},{"title":"Africa's Talking Voice Software Pricing, Alternatives & More 2026 | Capterra","url":"https://www.capterra.com/p/10002327/Africas-Talking-Voice/"},{"title":"Africa's Talking - Crunchbase Company Profile & Funding","url":"https://www.crunchbase.com/organization/africas-talking"},{"title":"How to Call Africa | Cheap or Free | To Mobile and Landline | 2026","url":"https://yollacalls.com/blog/how-to-call-africa/"},{"title":"Which countries are Africa's Talking products in? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2727792-which-countries-are-africa-s-talking-products-in"},{"title":"Africa Country Codes – International Dialing Codes & Time Zones | CountryCode.online","url":"https://countrycode.online/regions/africa/"},{"title":"Africas Talking account - Africa's Talking","url":"https://account.africastalking.com/"},{"title":"Africa's Talking vs Twilio: SMS Provider Comparison [2026]","url":"https://www.courier.com/integrations/compare/africas-talking-vs-twilio"}]
+
+Let me search for more specific information about the phone number categories you mentioned.
+
+Links: [{"title":"What types of voice phone numbers are available ? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/2282146-what-types-of-voice-phone-numbers-are-available"},{"title":"Africa Virtual Phone Numbers - United World Telecom","url":"https://www.unitedworldtelecom.com/services/virtual-phone-numbers/africa-virtual-phone-numbers/"},{"title":"Virtual phone number in South Africa","url":"https://sonetel.com/en/help/help-topics/telephony/countries-supported/virtual-phone-number-in-south-africa/"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"},{"title":"Zendesk <> Africa's Talking Voice connector","url":"https://africastalking.com/marketplace/listings/zendesk"},{"title":"African Virtual Phone Numbers | Africa Toll Free Numbers & Local DID","url":"https://www.avoxi.com/africa-virtual-phone-numbers/"},{"title":"Virtual Phone Number South Africa - Buy from $6","url":"https://www.cloudtalk.io/virtual-number-south-africa/"},{"title":"Africa's Talking Voice Software Pricing, Alternatives & More 2026 | Capterra","url":"https://www.capterra.com/p/10002327/Africas-Talking-Voice/"},{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"How does voice billing work? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work"}]
+
+Let me search for more specific information about SIP phones and SIP trunks on Africa's Talking.
+
+Links: [{"title":"What do I need to set up a SIP trunk connection? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/6049012-what-do-i-need-to-set-up-a-sip-trunk-connection"},{"title":"Documentation | Africa's Talking","url":"https://developers.africastalking.com/docs/voice/SIP"},{"title":"Voice | Africa's Talking Help Center","url":"https://help.africastalking.com/en/collections/150771-voice"},{"title":"How do I set up my SIP phone? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/1163043-how-do-i-set-up-my-sip-phone"},{"title":"Voice API - Empower Your Applications with Seamless Voice Communication","url":"https://africastalking.com/voice"},{"title":"South Africa - Supported SIP Trunk Providers","url":"https://www.3cx.com/partners/sip-trunks/south-africa/"},{"title":"SIP trunk provider in South Africa","url":"https://didlogic.com/international/south-africa/"},{"title":"How can ensure that the POST request to my callback URL is coming from Africa’s Talking and not some other place? | Africa's Talking Help Center","url":"https://help.africastalking.com/en/articles/5947646-how-can-ensure-that-the-post-request-to-my-callback-url-is-coming-from-africa-s-talking-and-not-some-other-place"},{"title":"SIP Trunking Services in South Africa | DIDWW","url":"https://www.didww.com/voice/global-sip-trunking/South_Africa"},{"title":"Africa’s Talking – Communication APIs for Africa","url":"https://africastalking.com/"}]
+
+Based on my web search results, I found some information about Africa's Talking phone number categories. Here's what the documentation shows:
+
+## Phone Number Categories
+
+Toll-Free (0800), Premium Numbers (0900) and virtualized numbers do not make outgoing calls but the regular numbers attached to them (also known as hunting numbers) can make the outgoing calls.
+
+## SIP Services
+
+Africa's Talking offers two distinct SIP-related services:
+
+**SIP Trunk:** Using SIP trunks, we can connect to your Private Branch System (PBX) and allow you to make and receive voice calls. To set up a trunk, you need a PBX server (on cloud or on premise). You apply for a voice phone number, sign a KYC document, pay for the phone number, and share your trunk's (PBX) IP address for whitelisting.
+
+**SIP Phone:** You can use SIP endpoints to make and receive calls on your browser, which lowers infrastructure costs significantly.
+
+## Billing
+
+SIP calls are 1/- per minute for SIP to SIP calls, while calls to regular numbers and virtual numbers are still charged 5/- per minute.
+
+Unfortunately, my search results did not contain detailed specifications comparing all the categories you mentioned (Regular Business, TollFree, Premium Rated, SIP Phone, and SIP Trunk) with their specific differences. For comprehensive documentation on all phone number types and their specific use cases, I'd recommend contacting Africa's Talking directly at voice@africastalking.com or consulting their official developer documentation.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

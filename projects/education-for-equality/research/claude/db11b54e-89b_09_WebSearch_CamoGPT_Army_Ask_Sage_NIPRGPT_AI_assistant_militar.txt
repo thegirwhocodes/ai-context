@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: CamoGPT Army Ask Sage NIPRGPT AI assistant military 2025 2026
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:05:52 UTC
+========================================================================
+
+Search query: CamoGPT Army Ask Sage NIPRGPT AI assistant military 2025 2026
+
+----------------------------------------
+
+Web search results for query: "CamoGPT Army Ask Sage NIPRGPT AI assistant military 2025 2026"
+
+Links: [{"title":"Army’s CamoGPT won’t be phased out as Pentagon embraces more commercial genAI products | DefenseScoop","url":"https://defensescoop.com/2026/01/27/army-camogpt-dod-genai-mil/"},{"title":"Enhancing Military Operational Effectiveness through the Integration of CAMO and NIPR GPT | Article | The United States Army","url":"https://www.army.mil/article/283601/enhancing_military_operational_effectiveness_through_the_integration_of_camo_and_nipr_gpt"},{"title":"ARMY INTELLIGENCE | Article | The United States Army","url":"https://www.army.mil/article/287605/army_intelligence"},{"title":"Civilian Agencies - Ask Sage - Generative AI Platform","url":"https://www.asksage.ai/who-we-serve/civilian-agencies/"},{"title":"Center for Army Lessons Learned","url":"https://api.army.mil/e2/c/downloads/2025/03/07/840ed7cf/25-958-enhancing-military-operational-effectiveness-through-the-integration-of-camo-and-nipr-gpt.pdf"},{"title":"CamoGPT: Army's AI Tool Targeting Diversity and Inclusion - TechDrops.news","url":"https://www.techdrops.net/post/camo-gpt-armys-ai-tool-targeting-diversity-and-inclusion"},{"title":"Using CamoGPT AI to Build Scenario-Driven Change: The Example of Guam as a Hybrid Attack Target","url":"https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/July-August-2025/CamoGPT-AI/"},{"title":"Army Blocks Air Force's AI Program Over Data Security Concerns | Air & Space Forces Magazine","url":"https://www.airandspaceforces.com/fearing-data-leaks-army-blocks-air-force-ai-program-from-its-networks/"},{"title":"Army CIO reining in AI use cases to prevent excess costs | DefenseScoop","url":"https://defensescoop.com/2025/08/12/army-artificial-intelligence-camogpt-use-cases-cio-leonel-garciga/"},{"title":"ARMY INTELLIGENCE - USAASC","url":"https://asc.army.mil/web/army-intelligence/"}]
+
+Based on the search results, here's what I found about these military AI assistants:
+
+## CamoGPT
+
+CamoGPT started development in the fall of 2023 and was first deployed in the spring of 2024, and currently boasts 75,000 users. CamoGPT is a machine learning platform that optimizes equipment maintenance, logistics, and supply chain management using data analytics and algorithms.
+
+The Army has no plans to deactivate CamoGPT or cut off personnel's access to other preexisting, purpose-built frontier AI models, despite the Pentagon's broader GenAI rollout. CamoGPT's team is working to transition it into a program of record and develop an Army-specific LLM that would perform better at recognizing Army acronyms and providing recommendations founded in Army doctrine.
+
+## NIPRGPT
+
+NIPRGPT is an AI platform created by Collen Roller, a senior computer scientist at the Air Force Research Laboratory. NIPRGPT is a natural language processing tool that analyzes and generates text to support planning and operations using a GPT model.
+
+However, the Air Force announced plans to phase out NIPRGPT. The Army blocked NIPRGPT from its networks, citing cybersecurity and data governance concerns, with the block occurring on April 17.
+
+## Ask Sage
+
+After the NIPRGPT block, the Army deployed its Army Enterprise LLM Workspace, a platform powered by Ask Sage, which bills itself as a secure and extensible Generative AI platform. The Army Enterprise LLM Workspace is used for tasks ranging from drafting press releases to reclassifying personnel descriptions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

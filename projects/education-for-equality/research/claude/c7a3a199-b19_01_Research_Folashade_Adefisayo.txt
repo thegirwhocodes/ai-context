@@ -1,0 +1,73 @@
+========================================================================
+AGENT RESEARCH: Research Folashade Adefisayo
+Session: c7a3a199-b19f-4ca7-b21b-7fc85897b008
+Time: 2026-03-31 16:44:18 UTC
+========================================================================
+
+Search the web for Folashade Adefisayo, former Commissioner of Education for Lagos State, Nigeria. I need:
+
+1. Her full title (Honorable? Mrs? Dr.?)
+2. Exact years she served as Commissioner of Education for Lagos
+3. Her broader career — how many total years of experience in education, governance, or related fields
+4. Any other notable roles or achievements
+5. Any connection to EKOEXCEL, NewGlobe, LASUBEB, or similar education programs in Lagos
+
+Return a concise summary with the key facts.
+
+----------------------------------------
+
+Here is a concise summary of the key facts:
+
+---
+
+## Folashade (Folasade) Adefisayo
+
+**Full title:** Hon. Mrs. Folasade Adefisayo (referred to as "Honourable" and "Mrs." across official sources)
+
+**Commissioner of Education, Lagos State:** August 2019 -- May 2023 (approximately 4 years, serving Governor Babajide Sanwo-Olu's first term)
+
+**Total career experience:** Over 40 years spanning banking operations, organizational restructuring, human resource management, international trade, and education.
+
+**Education:**
+- B.Sc. Zoology, University of Ibadan (University Scholar)
+- MBA, Lagos State University
+- iPGCE and MA Education, University of Nottingham (Distinctions in both)
+
+**Key career roles:**
+- Executive Director and CEO, Corona Schools' Trust Council (8 years), then Director of Corona Secondary School, Agbara -- retired 2014 after 12 years total at Corona
+- Principal Consultant/CEO, Leading Learning Limited (educational consultancy, founded 2014) -- still active post-commissioner role
+- Board member, African Leadership Academy
+- Board member, Teach For Nigeria
+- Board of Trustees member, Kizazi
+- Editorial Board member, EduTimes Africa
+- Merit Award winner, Federal Republic of Nigeria
+- Nonresident Fellow, Brookings Institution (Center for Universal Education)
+
+**EKOEXCEL connection -- direct and central:**
+- As Commissioner, she oversaw the launch and expansion of EKOEXCEL (Excellence in Child Education and Learning), Governor Sanwo-Olu's flagship public primary school reform program launched in 2019
+- EKOEXCEL is implemented through LASUBEB (Lagos State Universal Basic Education Board) with technical support from NewGlobe
+- She inaugurated the EKOEXCEL "Situation Room" -- a real-time data monitoring center tracking pupil attendance, learning outcomes, and teacher delivery across Lagos public primary schools
+- She showcased EKOEXCEL at international forums including the British Council and Brookings Institution
+- Under her tenure, Lagos WAEC pass rate surged from 39% to 80%, and EKOEXCEL schools showed 3x faster literacy gains and 2x faster numeracy gains compared to non-program schools
+
+---
+
+Sources:
+- [Wikipedia - Folashade Adefisayo](https://en.wikipedia.org/wiki/Folashade_Adefisayo)
+- [African Leadership Academy Board](https://www.africanleadershipacademy.org/ala_board/folasade-adefisayo/)
+- [Kizazi Board of Trustees](https://www.kizazi.org/mrs-folasade-adefisayo/)
+- [EduTimes Africa Interview (immediate past Commissioner)](https://edutimesafrica.com/interview-with-hon-mrs-folasade-adefisayo-the-immediate-past-commissioner-of-education-lagos-state/)
+- [TEP Centre / NEDIS profile](https://tepcentre.com/nedis/folasade-adefisayo-former-honourable-commissioner-for-education-lagos-state-nigeria/)
+- [Brookings Institution profile](https://www.brookings.edu/people/folasade-adefisayo/)
+- [APCI Fellow profile](https://africatopschools.com/apci-fellows/APCI-2022-0202--hon-mrs-folashade-adefisayo)
+- [NewGlobe - EKOEXCEL Situation Room](https://newglobe.education/ekoexcel-situation-room/)
+- [NewGlobe - Lagos Governor on EKOEXCEL](https://newglobe.education/lagos-state-governor-ekoexcel-a-game-changer/)
+- [Vanguard - Collaboration key to transforming education](https://www.vanguardngr.com/2021/08/collaboration-key-to-transforming-education-sector-folashade-adefisayo/)
+agentId: aa1422dd00b056d7f (use SendMessage with to: 'aa1422dd00b056d7f' to continue this agent)
+<usage>total_tokens: 18202
+tool_uses: 8
+duration_ms: 64473</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

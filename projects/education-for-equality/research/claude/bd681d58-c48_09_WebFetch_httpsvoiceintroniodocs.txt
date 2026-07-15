@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://voice.intron.io/docs/
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:47:45 UTC
+========================================================================
+
+URL: https://voice.intron.io/docs/
+Extraction prompt: Report the full substance of this page, especially: any mention of "integrator", creating an integrator, access keys, how to get API credentials, prerequisites before calling the transcription API, and all section names in the navigation. Return actual content in detail.
+
+----------------------------------------
+
+The server returned HTTP 404 Not Found.
+
+The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provided fetch tool) instead of WebFetch.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

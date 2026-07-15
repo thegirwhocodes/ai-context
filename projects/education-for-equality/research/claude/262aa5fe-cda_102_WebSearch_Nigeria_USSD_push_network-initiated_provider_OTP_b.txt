@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigeria USSD push network-initiated provider OTP banks "USSD push" API gateway L
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:32:10 UTC
+========================================================================
+
+Search query: Nigeria USSD push network-initiated provider OTP banks "USSD push" API gateway Lagos
+
+----------------------------------------
+
+Web search results for query: "Nigeria USSD push network-initiated provider OTP banks "USSD push" API gateway Lagos"
+
+Links: [{"title":"Dedicated and Shared USSD Solutions in Nigeria","url":"https://infotekps.com/ussd.html"},{"title":"Which companies provide USSD gateway services in Nigeria? - Quora","url":"https://www.quora.com/Which-companies-provide-USSD-gateway-services-in-Nigeria"},{"title":"NI USSD - Cellfind","url":"https://www.cellfind.net.za/cfp/niussd/"},{"title":"Shortcode Nigeria - Innovative Technology of the Future","url":"https://www.shortcodenigeria.com/"},{"title":"Regional USSD | Chat Commerce Platform Guide","url":"https://guides.clickatell.com/chat-commerce-platform/platform-capabilities/messaging-channels/regional-ussd"},{"title":"Nigeria Bulk SMS | Best Bulk SMS & SMS API Provider in Nigeria","url":"https://nigeriabulksms.com/"},{"title":"Africa SMS Coverage | #1 Bulk SMS, OTP, SMPP & SMS Gateway in 30+ African Countries – eSMS Africa","url":"https://www.esmsafrica.io/"},{"title":"USSD | EBANX Developers Academy","url":"https://docs.ebanx.com/docs/payments/guides/accept-payments/api/nigeria/ussd/"},{"title":"How to Integrate USSD With Your App: Developer Guide","url":"https://arkesel.com/how-to-integrating-ussd-with-your-applications/"},{"title":"USSD API - Mobile Apps Accessible Everywhere","url":"https://africastalking.com/ussd"}]
+
+Based on the search results, here's what I found about Nigeria USSD push, network-initiated systems, OTP providers, and API gateways:
+
+## USSD Push (Network-Initiated) Overview
+
+The initiation of the communication can either be USSD-PUSH (Mobile Terminated & Provider Originated) or a USSD-PULL (Mobile Originated & Provider Terminated). Network-initiated (NI), also known as USSD Push or Mobile Terminating USSD, is when the application starts the USSD session on the handset.
+
+NI USSD messages are notifications sent from a network to a mobile device, with an OTP from banking apps being an example of this.
+
+## API Gateway Infrastructure
+
+USSD works using a connection oriented HTTP API between the USSD gateway and the application. Clickatell's USSD gateway offers a reliable and secure channel for enterprises to engage with users in Nigeria, and as an aggregator, Clickatell provides API access to its managed USSD gateway, enabling enterprises to offer USSD-based services while managing connections to the mobile network operators.
+
+## Banks and OTP Services in Nigeria
+
+All Telcos - MTN, Glo, Airtel & Etisalat provide USSD gateways. Additionally, providers offer advanced SMS, USSD, and SIM hosting services for organizations and businesses across Nigeria.
+
+The search results indicate that various VAS (Value-Added Service) providers in Nigeria offer USSD push and OTP services to banks and financial institutions, though the results don't provide specific Lagos-based provider details.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

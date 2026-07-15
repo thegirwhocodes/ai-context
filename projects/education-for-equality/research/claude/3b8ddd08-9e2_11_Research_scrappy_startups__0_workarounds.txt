@@ -1,0 +1,183 @@
+========================================================================
+AGENT RESEARCH: Research scrappy startups + ₦0 workarounds
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 19:20:38 UTC
+========================================================================
+
+Two-part deep research. Use WebSearch and WebFetch extensively (load via ToolSearch query "select:WebSearch,WebFetch" if needed). Context: "Sabi" is a Nigerian voice-AI tutor for out-of-school kids; we're starting a small pilot (10–300 children) and must make calls free to a child even with ₦0 airtime, on ALL networks including Airtel and 9mobile, while keeping cost roughly $0.5–$5/child (more is OK for a pre-pilot if it genuinely simplifies things).
+
+PART A — Scrappy early-stage bootstrapping & telco deals:
+- The "do things that don't scale" playbook (Paul Graham essay) and how GrubHub, DoorDash (the "Palo Alto Delivery" manual MVP), UberEats, Airbnb, early Uber manually operated/faked the backend and onboarded partners one-by-one before they had scale. Extract concrete tactics.
+- The real question: can a tiny, pre-impact org realistically get a Nigerian MNO (MTN/Airtel) to ZERO-RATE a number at PILOT stage (few hundred users)? Be honest. How did small African edtech/health orgs land their FIRST telco/zero-rating or free-airtime deal — Viamo/VOTO early days, Eneza, M-Shule, Bakame, Ubongo, and mHealth like MomConnect (South Africa) / Praekelt.org? At what stage, through what door (CSR/Foundation, government/ministry, UNICEF, accelerator, GSMA Mobile for Development grants, a personal intro)? Does "just ask now" ever work, or is endorsement/scale always required first?
+
+PART B — Creative low-cost ways to make the call FREE to a ₦0 child on ANY network (esp. Airtel/9mobile), for a small pilot:
+1. **Scheduled outbound (we call the child):** Confirm from sources that RECEIVING an incoming call is FREE to the recipient on all Nigerian networks regardless of airtime balance (caller pays). This sidesteps "can a ₦0 kid dial in." Note the precedent: J-PAL/IPA ConnectEd phone tutoring had tutors CALL families (0.33 SD). Our cost = outbound minutes only.
+2. **Multi-SIM GSM gateway / GoIP / Android automation:** Using one real SIM per network (MTN/Airtel/Glo/9mobile) so each network's free zero-balance trigger lands on-net — MTN/Glo "Beep" missed-call, Airtel *140* and 9mobile *266* "Call Me Back" — captured by our gateway, which then triggers the callback. Is this technically feasible? What hardware (GoIP GSM gateways, USB GSM modems like Huawei, an Android phone + Tasker/ADB/SMS-forwarding), and rough cost (USD/₦)?
+3. **Legality in Nigeria:** Is using SIMs for LEGITIMATE callback/IVR different from illegal "SIM boxing" / interconnect-bypass / call-termination fraud under NCC rules? What is allowed vs prohibited (the distinction is about bypassing international interconnect, not about calling your own users — verify).
+4. Any other convoluted-but-cheap tricks: toll-free only for Airtel/9mobile while MTN/Glo use beep; "please call me" SMS triggers; sponsored/reverse-billed callback; using a single network for the whole pilot to exploit on-net free triggers.
+
+Return AT LEAST 90% of the substance with concrete tactics, hardware/costs, legal rules, named precedents with stage/funding, and source URLs. Organize under PART A and PART B with sub-headings. Completeness over brevity.
+
+----------------------------------------
+
+I have sufficient, well-corroborated material to deliver the complete report. Compiling now.
+
+---
+
+# Two-Part Research: Bootstrapping Sabi's Free Pilot Calls
+
+A note on completeness: I cross-checked the existing E4E research in `research-agents/4. Telephony & Infrastructure/`, `5. Cost & Feasibility/`, and `8. Partnerships & Outreach/` first. The existing files are deep on provider/per-minute pricing but thin on the specific questions here (do-things-that-don't-scale tactics, telco zero-rating at pilot stage, GSM-gateway feasibility, NCC legality), so most of what follows is new research. Where existing files were useful, I note it.
+
+---
+
+## PART A — Scrappy early-stage bootstrapping & telco deals
+
+### A1. The "Do Things That Don't Scale" playbook — concrete tactics
+
+From Paul Graham's 2013 essay (paulgraham.com/ds.html), fetched directly. The core thesis: early-stage startups should focus on **learning and validating**, not growth, and the most common unscalable thing founders must do is **recruit users manually, one at a time**. "In their current state they have nothing to lose" by over-serving users; the labor-intensive engagement that seems unscalable becomes part of the company's DNA permanently. Concrete named tactics:
+
+- **Airbnb** — Brian Chesky and Joe Gebbia went **door to door in New York**, personally recruiting new hosts and helping existing ones improve their listings (including shooting professional photos of the apartments). They "traveled constantly," showing up to meetings with rolly bags.
+- **Stripe — the "Collison installation":** when a prospect agreed to try Stripe, the founders wouldn't email a signup link — they'd say *"Right then, give me your laptop"* and set it up on the spot. Behind the scenes, they delivered "instant" merchant accounts by **manually signing users up for traditional merchant accounts** — a faked/manual backend the user never saw.
+- **Wufoo** sent every new user a **hand-written thank-you note.** Graham's framing: "Your first users should feel that signing up with you was one of the best choices they ever made."
+- **Viaweb** — rather than chasing partnerships, founders **used the software themselves on the merchant's behalf.** When a merchant declined, they'd just **build the store for them manually** and treat it as free research into what merchants needed.
+- **Facebook** launched at Harvard only, hand-building course lists per school so the site felt like students' "natural home" before expanding.
+- **Pinterest** — founder noticed early users skewed toward design, so he physically **went to a design-bloggers' conference to recruit** them.
+- **Pebble** — founders **assembled the first several hundred watches by hand.**
+
+**The food-delivery / on-demand canon (your specific examples):**
+
+- **DoorDash — "Palo Alto Delivery" (Jan 2013):** Stanford students Tony Xu, Stanley Tang, Andy Fang, and Evan Moore put up `PaloAltoDelivery.com` — just a basic page with **PDF menus** scraped from local restaurants and **one founder's personal mobile number** as the "order line." No booking system, no dispatch, no backend. They took orders during class, **ran the deliveries themselves**, wrote the first order (a Thai restaurant) in a **notebook**, and charged customers with **Square** on delivery. This is the textbook **Concierge MVP**: validate demand before building tech. (Sources: precoil.com, builtbyorchid.com.)
+- **GrubHub:** founder Mike Evans built the first version on **$140**; the early product was essentially a **searchable database of restaurant menus** (many restaurants didn't even know they were listed), with orders relayed manually before any real dispatch existed. (Sources: gizmodo.com, thoughteconomics.com.)
+- **Seamless (Grubhub's later merger partner):** in 1999 they pitched office buildings; **office managers collected orders and faxed them to the founders**, who phoned the restaurants, picked the food up, and delivered it. Pure manual concierge.
+- **UberEats** started as **UberFRESH (2014)** in Santa Monica only — a tiny **curated lunch menu** from a handful of restaurants, riding on Uber's existing driver network rather than purpose-built infrastructure.
+- **Early Uber:** ran on **SMS dispatch**, not an app at first. When NYC supply was thin, they **broke the city into micro-zones (Wall St, SoHo) and manually texted drivers** to high-demand spots. Travis Kalanick **manually typed in surge fares** before any pricing algorithm existed. The famous **"city playbook" was a Google Doc** they iterated city by city (manager structure, recruiting drivers off Yelp and airport waiting lots). (Sources: shortform.com, Wikipedia.)
+
+**The transferable tactics for Sabi's pilot:**
+1. **Be the backend.** A human (Naomi / the Lagos coordinator) literally schedules and triggers each child's call from a spreadsheet — no automated scheduler needed for 10–300 kids.
+2. **Recruit families one at a time**, in person or by phone, via the coordinator — don't wait for a self-serve funnel.
+3. **Fake/manual the "free call" mechanism** rather than waiting for a telco deal (this is the whole point of Part B).
+4. **One neighborhood / one network first** (Facebook-at-Harvard, UberFRESH-in-Santa-Monica) — concentrate the pilot to exploit on-net free triggers and simplify logistics.
+5. **Over-serve:** hand-hold every family, collect qualitative feedback obsessively. With ≤300 kids this is feasible and generates the pilot data that unlocks the *real* telco deal later.
+
+### A2. The honest answer: can a tiny, pre-impact org get a Nigerian MNO to zero-rate at pilot stage?
+
+**Bluntly: almost certainly not by "just asking" now, and you should not block the pilot on it.** Every precedent points the same way — **zero-rating/free-airtime deals follow demonstrated scale, an institutional sponsor, or a government/UN endorsement; they do not precede it.** The pattern across orgs:
+
+- **Viamo (formerly VOTO Mobile):** Started 2012 by Ghanaian + Canadian engineers at KNUST, Kumasi. Began with **SMS**, found it didn't engage rural users, added **IVR (voice)**. Their telco model is explicitly *"Telecom partners make this information available for free (worth millions of dollars of airtime) **in exchange for a subscriber base**."* The telco zero-rates because Viamo brings **users/engagement the operator wants** — i.e., the value exchange requires scale. Their **first** telco integration was **Airtel Ghana**, which became the first of **20+ operator partnerships**. The door was *traction + a clear subscriber-acquisition value prop to the telco*, not charity. (Source: viamo.io.)
+- **MomConnect / Praekelt (South Africa):** This is the clearest "endorsement-required" case. The free service was reverse-billed by **all four MNOs (MTN, Vodacom, Cell C, Telkom Mobile)** — but **only because it was a flagship programme of the South African National Department of Health.** Even *with* government backing, the operators gave only **"substantial discounts… after extensive negotiations,"** and MomConnect still paid **~US$60,000/month** in mobile inventory (≈75% of total running cost), topped up by **Johnson & Johnson**. Lesson: even a government-endorsed national program had to negotiate hard and still pay most of the bill. A pre-pilot startup has near-zero leverage here. (Sources: PMC/NCBI, Praekelt blog, Wikipedia.)
+- **Eneza Education (Kenya, Shupavu291, `*291#`):** Did **not** get free access by asking cold. **Safaricom was an early *investor*** in Eneza — the relationship came through **capital and equity**, which then yielded **discounted SMS rates** (users still paid ~KES 3/day ≈ US$0.03). Full free access only happened **temporarily during COVID** (Apr–Sep 2020, with Safaricom's help) and **zero-rated Airtel access only arrived Oct 2023**, across 8 countries — i.e., *years* into the company's life, after it was an established, multi-country player. (Sources: GSMA Mobile for Development, Disrupt Africa, Pioneers Post.)
+- **Ubongo (Tanzania):** Reached free voice via **Viamo's 3-2-1 service on Vodacom** (riding an existing aggregator's telco deal) and a **Tigo + EduMe** SMS subscription. They did **not** strike their own MNO zero-rating from scratch — they **piggybacked on a platform that already had the telco relationship** (Viamo) and reached 32M+ families via TV/radio/SMS multi-platform distribution. (Sources: ubongo.org, divportfolio.org.)
+- **Bakame AI (Rwanda — your direct comparator):** Founded by TCU students Happy Niyorurema (Rwanda) and Diarra Niang (Senegal). Funding so far: **$10,000 from TCU's CREATE program**, plus a pitch for up to **$50,000** (April 2025). Pilot: **5 schools / 1,000 students "this summer,"** scaling to 10–20 schools by Dec 2025. They advertise a **toll-free dial-in ("no internet, no cost")** — but **multiple sources (incl. the official TCU Shorthand profile) give zero detail on *which* telco enables it or how the call cost is subsidized.** This strongly implies they are either (a) **eating toll-free costs** at small scale on their grant money, (b) riding a **Ministry of Education / MTN Rwanda** umbrella relationship (MINEDUC has active MTN Rwanda and ALX/Anthropic partnerships, but none is confirmed to cover Bakame specifically), or (c) using a low-cost telephony provider and absorbing the bill. **Takeaway: even the most direct peer is, at pilot stage, most plausibly just paying for the calls — not living off a zero-rating deal.** (Sources: tcu360 Shorthand, tcu.edu, mineduc.gov.rw.)
+
+**Where the doors actually are (in realistic order for E4E *now*):**
+1. **Pay for it yourself at pilot scale** (Part B shows this is cheap — single-digit dollars/child). This is what the do-things-that-don't-scale playbook *and* Bakame both effectively do. Do this first.
+2. **Ride an existing aggregator's telco relationship** (the Ubongo move). **Viamo's 3-2-1** already has Nigerian-operator integrations and an education vertical — partnering/embedding content there inherits their zero-rated/free-to-user channel without you negotiating with MTN at all. This is the single most realistic "free to user" path that doesn't require your own scale. (E4E already has Viamo 3-2-1 research in `5. Cost & Feasibility/efd7d7d2-3b9_04…` and `8. Partnerships/efd7d7d2-3b9_55…`, `_75…`.)
+3. **Get an institutional sponsor's name on it before approaching the MNO** — UNICEF, a state Ministry of Education (e.g., Lagos SUBEB, which ties to the EKOEXCEL relationship), or a foundation. MTN Foundation's stated model is **partnership-driven CSR in education**, and its **"What Can We Do Together"** program lets community projects be nominated — but these are *programs you apply into with a credible backer*, not cold zero-rating grants. (Source: mtn.ng/foundation.)
+4. **GSMA Mobile for Development Innovation Fund** — equity-free grants (£100k–£200k in recent rounds) **plus explicit "partnership facilitation with mobile network operators."** This is the cleanest formal door to a telco intro — but eligibility is stacked against you right now: it favors **for-profit enterprises with commercial revenue or a credible revenue path, demonstrated traction, scalability, and measurable impact.** It explicitly states **"idea-stage, untested, or lacking scalability [projects] are unlikely to be competitive."** So: GSMA is a **post-pilot** lever, not a pre-pilot one — run the pilot, get the impact data, *then* apply and use them to broker MTN/Airtel. (Sources: gsma.com Innovation Fund, ictworks.org.)
+
+**Does "just ask now" ever work?** Essentially no for zero-rating. The realistic near-term wins from a cold ask are smaller: **discounted bulk minutes/SMS**, **free SIMs + small airtime grants**, or a **CSR pilot sponsorship** — and even those usually want a recognizable partner or a pilot already showing results. **Endorsement or scale is effectively always required first.** The strategic sequence is: **pay-for-it pilot → impact data → institutional backer (UNICEF/Ministry) → GSMA/foundation → MNO zero-rating at scale.** This matches the project's own "Path to Scale" memory (kids first → pilot data → funded scale).
+
+---
+
+## PART B — Creative low-cost ways to make the call FREE to a ₦0 child on ANY network
+
+### B1. Scheduled outbound ("we call the child") — the unblocker. CONFIRMED.
+
+**Receiving an incoming call is free to the recipient on all Nigerian networks, regardless of the recipient's airtime balance — the caller (you) pays.** Confirmed by multiple sources: *"In Nigeria, incoming calls are typically free for recipients, allowing users to stay connected even without airtime… the recipient does not pay for receiving calls — the caller bears the cost."* This is exactly why the "Call Me Back / Please Call Me" services exist (a ₦0 user signals; someone with airtime calls them back). (Sources: legit.ng, 3ptechies.com, dataplanbundle.com.)
+
+**This completely sidesteps the "can a ₦0 kid dial in?" problem.** If *Sabi calls the child* on a schedule, the child needs **zero airtime**. Your only cost is **outbound minutes.**
+
+**Precedent — J-PAL/IPA ConnectEd:** the proven, RCT-backed model is exactly this — **tutors CALL families.** ConnectEd (first run by Youth Impact in Botswana during 2020 closures, then replicated in 5+ more countries across Africa/Asia): tutor phones the parent/caregiver, runs a diagnostic, **texts 2 problems/week**, then makes a **pre-scheduled ~20-minute call** with child + parent. It improved basic numeracy substantially and is extraordinarily cheap: **"up to 4 years of quality education per $100."** The whole point is that **low-tech phone tutoring slashes cost and access barriers vs. in-person.** (Note: the precise "0.33 SD" figure didn't surface verbatim in this pass, but the multi-country RCT result and the "$100 = 4 years" cost-effectiveness figure are well-documented. One caveat for honesty: a **Sierra Leone** live-tutoring-call trial during COVID **did not** improve learning — so results are context-dependent, not universal.) (Sources: povertyactionlab.org, crpe.org, iadb.org, PMC.)
+
+**Cost of the outbound-only model (the numbers):**
+- Nigerian **regulated voice tariff ≈ ₦15.40/min** (post-Jan 2025 NCC increase); **Glo Super Talk ≈ 15.5 kobo/sec ≈ ₦9.3/min** + ₦15 daily access fee — i.e., **roughly ₦9–₦16/min retail.** (Sources: techeconomy.ng, techcabal.com.)
+- Via a programmable provider (**Africa's Talking**, which E4E already uses), outbound mobile-terminated voice is billed **only to your account** — the recipient pays nothing — at a per-minute platform rate. (Exact current Nigeria figure wasn't retrievable — the pricing page returned 403/404 to the fetcher — but it's in the same ₦-per-minute ballpark; E4E's existing files `efd7d7d2-3b9_10` / `7464be26-f82_10` hold the captured Africa's Talking Nigeria voice rate.)
+- **Worked example:** 2 calls/week × 20 min = **40 min/week ≈ 160 min/month.** At ~₦12/min that's **~₦1,920/child/month ≈ $1.2/child/month** (at ~₦1,600/$). Over a short 1–3 month pilot, **~$1.2–$3.6/child** — **squarely inside your $0.5–$5 target**, even before any telco discount, and with no zero-rating deal required. This is the recommended primary mechanism.
+
+### B2. Multi-SIM GSM gateway / GoIP / Android automation — feasibility & cost
+
+**Concept:** keep **one real SIM per network** (MTN, Airtel, Glo, 9mobile) in a gateway. A ₦0 child triggers their network's **free zero-balance signal** to the matching on-net SIM; the gateway detects it and **calls the child back** (caller pays — free to child per B1). This makes even the *inbound trigger* free on every network.
+
+**The free zero-balance triggers, by network (2025, confirmed):**
+- **MTN:** `*133*2*<number>#` — free "call-back request." (Some sources also cite MTN "Call Me Back"/beep.)
+- **Airtel:** `*140*<number>#` — "Call Me Back" with zero airtime.
+- **Glo:** **Beep Call Service** — just dial the number with no airtime; call auto-terminates leaving a **missed call** (a "beep").
+- **9mobile:** `*266*1*<number>#` (Please Call Me – Thank You), `*266*2*…`, `*266*3*…`.
+These messages typically **expire after 24h.** (Sources: legit.ng, dataplanbundle.com, kingsvtu.ng.) Note: USSD "Call Me Back" texts (MTN/Airtel/9mobile) arrive as **SMS/USSD-push to the target SIM**, whereas **Glo's "beep" is an actual missed call** — so your gateway logic differs per network (parse incoming SMS for the requester's number on MTN/Airtel/9mobile; capture missed-call CLI on Glo).
+
+**Is it technically feasible? Yes.** Two hardware paths:
+
+1. **GoIP / GSM-VoIP gateway (the clean option).** A multi-port GoIP holds several SIMs and **bridges GSM ↔ VoIP/SIP bidirectionally**, **passing Caller ID**, and supports SMS receipt and IVR. Your server (Asterisk/FreeSWITCH + the Sabi pipeline) connects over SIP; the gateway places the actual mobile call out the right network's SIM so it lands **on-net** and the child receives it free. Pricing (confirmed from vendor pages):
+ - **GoIP-1 (1 SIM):** ~**$30–$60**
+ - **GoIP-4 (4 SIMs — one per network):** ~**$100–$150** (model now largely discontinued/superseded but still sold by resellers)
+ - **GoIP-8:** **$405**
+ - **GoIP-16:** **$725**
+ - 32-port / 256-eSIM cloud-SIM monsters exist (Ejoin/YX) but are overkill and are the SIM-box archetype — **avoid.**
+ A **single GoIP-4 (~$100–$150) + 4 SIMs** is all a 300-child pilot needs. (Sources: goantifraud.com, yxinternet.com, ejointech, voip-info.org.)
+
+2. **Android phone(s) + automation (the scrappiest option).** One cheap Android per network (or one with quad-SIM) running **Tasker** (+ AutoNotification / a ContentObserver app like HippoSMSTrigger, + optionally ADB). Tasker can **trigger on an incoming missed call or on the "Call Me Back" SMS**, parse the requester's number, and **fire an automated callback** (or hit your server's webhook to launch the Sabi call). People run exactly these missed-call/SMS-trigger automations today. Cost: **a used Android (~$40–$80) per network** + free/cheap apps. Less reliable and lower-throughput than a GoIP, but near-zero capex and fine for 10–50 kids. (Sources: XDA/Tasker forums, medium.com Tasker+OpenAI.)
+
+**Honest reliability caveats:** consumer SIMs on **unlimited/bonus bundles** sometimes carry **FUP throttling or off-net surcharges**; "Call Me Back" quotas may be **capped per day per SIM**; and you must **register every SIM** under a real identity (NIN-linked) — see B3. For a pilot, the GoIP-4 + 4 properly-registered SIMs is robust enough.
+
+### B3. Legality in Nigeria — the critical distinction
+
+**The thing the NCC prohibits is interconnect bypass / call masking / SIM-boxing of *international* traffic — NOT calling your own users domestically.** Verified from NCC's own communications and Nigerian telecom-law sources:
+
+- **What "SIM boxing" actually is:** *"SIM boxes… terminate calls at local interconnect rates"* and *"call masking… an international call is masked to appear as a local call."* The fraud is routing **inbound international calls** through banks of local SIMs so they land as cheap "local" calls, and **the fraudster profits from the gap between the international termination rate and the near-zero local SIM cost**, robbing operators and government of interconnect revenue (estimated **$3B** industry-wide). NCC stresses these SIM boxes are **never type-approved**, which is itself the marker of illegal use. (Sources: ncc.gov.ng SIM-boxing/call-masking press release, theinterview.ng, vanguardngr.com, grokipedia.)
+- **The distinction is squarely about international interconnect bypass, not domestic calls to your own opted-in users.** Sanctioned conduct in NCC's enforcement was specifically: letting expired-licence operators *transit calls*, failing due diligence on *interconnect partners*, ignoring *masking* of **international** calls as local. None of that describes "an edtech places domestic outbound calls to enrolled children." There is **no rule against receiving a missed call or placing a domestic call to a user who asked you to.**
+- **What you must still comply with (do these, and you're clean):**
+ 1. **Register every SIM** under a real, NIN-linked identity at an authorized centre — mandatory; unregistered/improperly-registered SIMs are themselves a violation. (Source: ncc.gov.ng SIM-registration notices.)
+ 2. **Use type-approved equipment.** Don't deploy a 32-port cloud-SIM SIM-box; a small registered GoIP used to call your own enrolled users for a stated educational purpose is a categorically different fact pattern from international call termination, but keep the deployment small, documented, and non-anonymous.
+ 3. **Consent + anti-spam.** Get explicit **parental consent** to call the child (you have a relationship, so this isn't cold telemarketing). Respect the **Do-Not-Disturb regime** (`STOP` to `2442`); unsolicited bulk calling/SMS carries **₦5m + ₦500k/day** fines for *operators* and the NCC has moved against unauthorized telemarketing/harvested-data use. Consent-based, scheduled tutoring calls to enrolled families are not telemarketing.
+ 4. **Note the cross-border comparator:** South Africa's ICASA explicitly bans using *mobile* number ranges for *fixed* call-centre operations (penalties up to R3m). Nigeria's framing is narrower (interconnect-bypass-focused), but the lesson is the same: **don't masquerade or run at industrial scale on consumer SIMs.** If E4E ever scales the gateway approach beyond a pilot, get a **Value-Added Service (VAS) licence** — Nigeria's VAS licence covers riding existing networks for non-core services and, for short-code content, requires an MoU with the MNO. (Sources: ICASA via cbn.co.za; NCC VAS/licensing FAQ, DLA Piper Africa Nigeria.)
+
+**Verdict:** Using a few **registered, type-approved SIMs to place domestic callbacks to your own consenting, enrolled users is legitimate and legally distinct from SIM-boxing.** The pilot-scale gateway approach is defensible. Keep it small, registered, consented, documented — and licence it (VAS) if it grows.
+
+### B4. Other convoluted-but-cheap tricks
+
+- **Single-network pilot (strongest "free trigger" hack).** Run the *entire* pilot on **one network** and exploit that network's free on-net signaling. Best fit: **Glo**, because its **Beep Call Service is a real free missed call** any zero-balance Glo user can send — your gateway just captures the CLI and calls back. Or **MTN** for coverage breadth using `*133*2*#`. Concentrating on one network (Facebook-at-Harvard logic) removes multi-SIM complexity entirely and is the simplest path to "child triggers for ₦0, we call back free." Hand out **free SIMs of that one network** to pilot families to guarantee on-net.
+- **Hybrid toll-free + beep.** Toll-free dial-in numbers (0800) in Nigeria let the **org pay for inbound** so the caller is free — but historically **0800 coverage/billing has been uneven across mobile networks** and not all networks reliably route free to 0800 (E4E's existing toll-free research: `5. Cost & Feasibility/efd7d7d2-3b9_165–_175`, AVOXI files). Pragmatic combo: **buy toll-free only where it's reliable (often easier on some networks) and use the free "beep/Call-Me-Back" trigger + callback on the others** (esp. Airtel/9mobile). But honestly, **B1 scheduled-outbound makes most of this moot** — if *you* always initiate the call, you never need toll-free or beep at all.
+- **"Please Call Me" SMS as the free inbound signal** (covered in B2) — zero-cost way for a child to say "call me now" outside the schedule.
+- **Sponsored / reverse-billed callback** — the MomConnect mechanism (operator reverse-bills the org). Realistic only *with* a telco discount/sponsor, so it's a Phase-2 lever, not a pilot one.
+- **Airtime top-up grants instead of zero-rating** (the engageSPARK model E4E already researched) — give each child a tiny monthly airtime stipend so they can dial in. Simple, but per-child airtime cost is usually *higher* than just calling them outbound yourself, so B1 wins.
+
+---
+
+## Bottom line / recommendation
+
+**For the 10–300-child pilot, do NOT chase an MNO zero-rating deal — you almost certainly can't land one pre-traction, and you don't need it.** The honest, evidence-backed, cheapest path:
+
+1. **Primary mechanism: scheduled OUTBOUND calls (you call the child).** Free to the child on every network regardless of balance, RCT-validated (ConnectEd), and **~$1.2–$3.6/child** for a short pilot via a programmable provider like Africa's Talking — inside your budget with no telco deal. This is the "be the backend, do it manually" move.
+2. **Free inbound trigger when needed:** let a ₦0 child fire their network's free signal — **Glo beep**, **Airtel `*140*#`**, **9mobile `*266*1*#`**, **MTN `*133*2*#`** — captured by a small **GoIP-4 gateway (~$100–$150 + 4 registered SIMs)** or a couple of **Android+Tasker phones (~$40–$80 each)**, which then calls back. Consider **running the whole pilot on one network (Glo)** to make this trivial.
+3. **Legality:** domestic callbacks to consenting, enrolled users on **registered, type-approved SIMs** are **legitimate and legally distinct from SIM-boxing** (which is about international interconnect bypass/call-masking). Keep it small, registered (NIN), consented (parental), documented; get a **VAS licence** only if it scales.
+4. **Telco zero-rating is a Phase-2 lever** — unlock it *after* pilot impact data, via the realistic doors: **ride Viamo 3-2-1's existing Nigerian telco channel**, get a **UNICEF / Lagos Ministry of Education** endorsement on the program, then apply to the **GSMA Mobile for Development Innovation Fund** (which explicitly brokers MNO partnerships) — mirroring how Viamo, Eneza, MomConnect, and Ubongo all got there *after* scale/sponsorship, never by cold-asking first.
+
+### Sources
+- [Paul Graham — Do Things That Don't Scale](https://paulgraham.com/ds.html)
+- [How DoorDash experimented to find PMF — Precoil](https://www.precoil.com/articles/how-door-dash-experimented-to-find-product-market-fit) · [DoorDash Concierge MVP — Orchid](https://builtbyorchid.com/doordash-concierge-mvp/)
+- [GrubHub origins — Gizmodo](https://gizmodo.com/pizza-databases-and-an-armpit-the-founder-of-grubhub-1849683669) · [Mike Evans on building GrubHub — Thought Economics](https://thoughteconomics.com/mike-evans/)
+- [History of Uber — Shortform](https://www.shortform.com/blog/history-of-uber/)
+- [Viamo at 10 / VOTO Mobile inception](https://viamo.io/viamo-platform/viamo-at-10/) · [Viamo inception](https://viamo.io/cool_timeline/2012-inception/)
+- [MomConnect history, successes, challenges — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5922496/) · [MomConnect — Wikipedia](https://en.wikipedia.org/wiki/MomConnect) · [Praekelt blog](https://blog.praekeltfoundation.org/post/95353223077/praekelt-mobile-technology-powers-groundbreaking)
+- [Eneza Education + mobile operators — GSMA M4D](https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/blog/eneza-education-making-education-reality-working-hand-hand-mobile-operators/) · [Eneza + Safaricom — Disrupt Africa](https://disruptafrica.com/2016/03/21/kenyas-eneza-education-rolls-out-e-learning-product-with-safaricom/) · [Text-message classroom — Pioneers Post](https://www.pioneerspost.com/news-views/20210104/the-largest-classroom-africa-how-text-messages-mean-millions-of-children-can)
+- [Ubongo on Viamo 3-2-1 feature phones](https://www.ubongo.org/learning-through-feature-phones-ubongo-educational-content-on-viamos-3-2-1/) · [Ubongo — divportfolio](https://divportfolio.org/innovation/ubongo)
+- [Bakame AI — TCU Shorthand profile](https://tcu360.shorthandstories.com/bakame-ai/index.html) · [TCU news — AI innovation prize](https://www.tcu.edu/news/2026/serving-all-corners-of-the-world-students-claim-global-prize-for-ai-innovation.php)
+- [GSMA Innovation Fund — Mobile for Development](https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/) · [£200k digital inclusion — ICTworks](https://www.ictworks.org/apply-now-200000-for-your-digital-inclusion-solutions/)
+- [MTN Nigeria Foundation](https://www.mtn.ng/foundation/who-we-are/)
+- [ConnectEd phone tutoring across 6 countries — J-PAL](https://www.povertyactionlab.org/blog/5-8-23/20-20-tutor-calling-targeted-instruction-phone-boosts-learning-across-six-countries) · [Family phone tutoring — CRPE](https://crpe.org/international-familyphonetutoring/) · [Phone tutoring & learning crisis — IADB](https://blogs.iadb.org/educacion/en/learning-crisis-phone-tutoring/) · [Sierra Leone null result — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10198741/)
+- [Incoming calls free for recipients + Call-Me-Back — Legit.ng](https://www.legit.ng/ask-legit/guides/1649285-how-send-call-mtn-airtel-glo-9mobile-a-comprehensive-guide/) · [Call-Me-Back codes — DataPlanBundle](https://dataplanbundle.com/how-to-use-glo-mtn-airtel-and-9mobile-call-me-back-code/)
+- [GoIP gateways & pricing — GoAntiFraud](https://goantifraud.com/en/goip-equipment/4-goip4) · [GoIP overview — VoIP-Info](https://www.voip-info.org/goip/) · [YX 8-SIM GoIP](https://yxinternet.com/products/4g-lte-8-ports-gsm-sip-gateway-voip-voice-sim-gateway-8-sim-goip-for-call-and-sms)
+- [Tasker automation — XDA](https://xdaforums.com/t/tasker-automate-your-phone.1565486/)
+- [NCC on SIM-boxing & call-masking](https://www.ncc.gov.ng/media-centre/press-releases/ncc-discusses-call-maskingrefiling-and-sim-boxing-tcp-lagos-declares) · [How NCC stopped SIM-boxing — TheInterview](https://theinterview.ng/2020/04/28/how-ncc-stopped-sim-boxing-and-call-masking-fraud-sanctioned-operators/) · [Interconnect bypass — abhandshake](https://abhandshake.com/community/regional-fraud-interconnect-bypass/)
+- [NCC VAS / licensing FAQ](https://ncc.gov.ng/licensing-regulation/licensing/licensing-faq) · [NCC SIM registration mandatory](https://www.ncc.gov.ng/media-centre/press-releases/ncc-insists-sim-card-registration-mandatory-holds-sensitization) · [SA ICASA SIM/call-centre rule — Cape Business News](https://cbn.co.za/industry-news/security-surveillance-access-control-news/the-connection-deception/)
+- [Nigeria 2025 voice tariffs — TechEconomy](https://techeconomy.ng/how-africas-top-10-economies-compare-on-data-voice-sms-tariffs/) · [Best Nigeria call rates Jul 2025 — TechCabal](https://techcabal.com/2025/07/25/mobile-network-with-best-call-rates-in-nigeria/) · [Africa's Talking voice billing](https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work)
+
+One data gap to flag: Africa's Talking's *exact current Nigeria outbound voice rate* couldn't be re-fetched (pricing page returned 403/Forbidden to the fetcher). The captured figure already lives in E4E's research at `/Users/naomiivie/Education for Equality/research-agents/5. Cost & Feasibility/efd7d7d2-3b9_10_WebSearch_Africas_Talking_Nigeria_pricing_voice_calls_per_mi.txt` and `.../7464be26-f82_10_…` — worth pulling for the precise per-minute number to firm up the per-child cost.
+agentId: a47a8eae5b5885db0 (use SendMessage with to: 'a47a8eae5b5885db0' to continue this agent)
+<usage>subagent_tokens: 110733
+tool_uses: 34
+duration_ms: 415522</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://africastalkingltd.gitbooks.io/mobile-communication-apis/content/node_js/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:11:20 UTC
+========================================================================
+
+URL: https://africastalkingltd.gitbooks.io/mobile-communication-apis/content/node_js/programmer_level.html
+Extraction prompt: Quote VERBATIM any code example showing a multi-turn conversation pattern with Record. Specifically: server receives a recording callback, processes it, returns NEW XML to continue the call (e.g., with another Play + Record). Show every example.
+
+----------------------------------------
+
+I've reviewed the provided documentation for the Africa's Talking Mobile Communication APIs (Node.js section).
+
+**Finding:** There are no code examples in this documentation showing a multi-turn conversation pattern with Record functionality. 
+
+The documentation covers:
+- SMS sending
+- Airtime delivery
+- Voice calls (basic call initiation and handling)
+- USSD interactions
+
+While the voice section mentions that "voice works with commands that you send by returning an XML string as a response" and references "a list of valid commands and validations exist <here>," the actual Record + callback + new XML response pattern is not demonstrated with code examples in this page.
+
+The USSD section does show a multi-turn pattern where the server receives parameters and returns sequential responses, but this uses text-based CON/END responses rather than XML Record commands.
+
+**Conclusion:** I cannot provide the requested verbatim code example because it does not appear in the source material supplied.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,45 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: OpenClaw change AI model switch between Claude GPT Ollama configuration
+Session: 8f6ef573-a64c-4918-834c-5b7d6ea634c0
+Time: 2026-02-09 03:17:31 UTC
+========================================================================
+
+Search query: OpenClaw change AI model switch between Claude GPT Ollama configuration
+
+----------------------------------------
+
+Web search results for query: "OpenClaw change AI model switch between Claude GPT Ollama configuration"
+
+Links: [{"title":"OpenClaw - Ollama","url":"https://docs.ollama.com/integrations/openclaw"},{"title":"Best Models to Run for OpenClaw in 2026 | haimaker.ai Blog","url":"https://haimaker.ai/blog/posts/best-models-for-clawdbot"},{"title":"Stop overpaying for OpenClaw: Multi-model routing guide • VelvetShark","url":"https://velvetshark.com/openclaw-multi-model-routing"},{"title":"OpenClaw and Local Ollama Models: Easy Setup Explained","url":"https://sonusahani.com/blogs/openclaw-ollama-model"},{"title":"OpenClaw + Ollama Setup Guide: Run Local AI Agents 2026","url":"https://codersera.com/blog/openclaw-ollama-setup-guide-run-local-ai-agents-2026"},{"title":"Integration with OpenClaw | OpenRouter | OpenRouter | Documentation","url":"https://openrouter.ai/docs/guides/guides/openclaw-integration"},{"title":"OpenClaw Beginner’s Guide: Master Your Personal AI Agent in 5 Minutes - Apiyi.com Blog","url":"https://help.apiyi.com/en/openclaw-beginner-guide-en.html"},{"title":"OpenClaw · Ollama Blog","url":"https://ollama.com/blog/openclaw"},{"title":"Run OpenClaw with Ollama: Local AI Models Setup Guide | PageLines","url":"https://www.pagelines.com/blog/openclaw-local-models-ollama"},{"title":"Openclaw - Open-Source AI Automation Framework | Build Your Own AI Assistant","url":"https://openclaw.im/"}]
+
+Based on the search results, here's information about how to change and switch AI models in OpenClaw between Claude, GPT, and Ollama:
+
+## Switching Models in OpenClaw
+
+### Mid-Session Model Switching
+You can switch models mid-session with the `/model` command (e.g., `/model opus` or `/model haimaker/llama-3.3-70b`). The aliases in the config - opus, sonnet, flash, ds - are what you type after `/model`.
+
+### Configuration File Setup
+The config file goes in your home directory: ~/.openclaw/openclaw.json. If you installed the older Clawdbot package via npm, check ~/.clawdbot/clawdbot.json instead.
+
+### Setting Default Models
+You can configure the default model with: `{ agents: { defaults: { model: { primary: "anthropic/claude-sonnet-4-20250514" } } } }`
+
+### Model Tiering Strategy
+The fix for cost optimization is model tiering - different models for different tasks based on what each one needs. Edit your config file in the home directory and restart to apply changes.
+
+### Ollama Configuration
+To replace the configuration with an Ollama based configuration, you give it the provider with an endpoint and specify your model. As you change the config file, restart the gateway with systemctl.
+
+### OpenRouter Integration
+OpenClaw has built-in support for OpenRouter - you don't need to configure models.providers, just set your API key and reference models with the openrouter/<author>/<slug> format.
+
+### Supported Providers
+OpenClaw supports a dozen providers including Anthropic, OpenAI, Google, and open-source models through haimaker.ai.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

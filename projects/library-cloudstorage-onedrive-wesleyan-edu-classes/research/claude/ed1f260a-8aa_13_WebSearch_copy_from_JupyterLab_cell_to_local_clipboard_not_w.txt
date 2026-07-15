@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: copy from JupyterLab cell to local clipboard not working browser
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:29:15 UTC
+========================================================================
+
+Search query: copy from JupyterLab cell to local clipboard not working browser
+
+----------------------------------------
+
+Web search results for query: "copy from JupyterLab cell to local clipboard not working browser"
+
+Links: [{"title":"Cell Output, a way to copy · Issue #2155 · jupyterlab/jupyterlab","url":"https://github.com/jupyterlab/jupyterlab/issues/2155"},{"title":"Copy / paste in jupyterlab terminal - JupyterLab - Jupyter Community Forum","url":"https://discourse.jupyter.org/t/copy-paste-in-jupyterlab-terminal/2711"},{"title":"Copy cell output to clipboard by cameron-toy · Pull Request #10282 · jupyterlab/jupyterlab","url":"https://github.com/jupyterlab/jupyterlab/pull/10282"},{"title":"Cannot copy and paste portions of text in a cell · Issue #12315 · jupyterlab/jupyterlab","url":"https://github.com/jupyterlab/jupyterlab/issues/12315"},{"title":"Accessing Local Clipboard in Remote JupyterHub Instance - JupyterHub - Jupyter Community Forum","url":"https://discourse.jupyter.org/t/accessing-local-clipboard-in-remote-jupyterhub-instance/20735"},{"title":"Log Console \"Copy Output to Clipboard\" does not work as expected · Issue #17411 · jupyterlab/jupyterlab","url":"https://github.com/jupyterlab/jupyterlab/issues/17411"},{"title":"Copying matplotlib plots from JupyterLab not working properly - JupyterLab - Jupyter Community Forum","url":"https://discourse.jupyter.org/t/copying-matplotlib-plots-from-jupyterlab-not-working-properly/25710"},{"title":"Copy paste of cells, even with <ctrl> c and <ctrl> v isn't working in chromium on linux. · Issue #2855 · jupyter/notebook","url":"https://github.com/jupyter/notebook/issues/2855"},{"title":"Jupyter Notebook's Functionality for Copying Text to Clipboard - Javascript","url":"https://copyprogramming.com/howto/copy-to-clipboard-in-jupyter-notebook"},{"title":"can't copy figures to clipboard from jupyter notebook · Issue #129880 · microsoft/vscode","url":"https://github.com/microsoft/vscode/issues/129880"}]
+
+Based on the search results, here are the key findings about copy-to-clipboard issues in JupyterLab:
+
+## Common Issues and Workarounds
+
+It seems to be impossible or extremely erratic to copy and paste only pieces of text from a cell in JupyterLab. There are several documented problems:
+
+1. **Text Selection Issues**: Neither the selected text nor the text of the whole cell gets into the clipboard when some text is selected.
+
+2. **Browser Context Menu Workaround**: You can copy portions of text by using SHIFT+RIGHT_CLICK to open the browser's contextual menu rather than the notebook's menu.
+
+3. **Copy Output to Clipboard Command**: JupyterLab has a "Copy Output to Clipboard" feature that can be accessed by right-clicking on cell output. However, this command does not consistently copy the output, and should copy the cell output content just like in the notebook, even if the active cell does not have any output.
+
+4. **Copy Cell Output Method**: You can select cell output from beginning to end by dragging the mouse pointer past the bottom border to cause scrolling, then release the mouse button at the end and use the browser's Ctrl-C to copy the selected text.
+
+5. **Images/Plots**: When using the "Copy Output to Clipboard" command on matplotlib plots, the clipboard may be grayed out as an image source in PowerPoint.
+
+These appear to be longstanding issues in JupyterLab related to browser clipboard API limitations and how the interface handles cell content selection.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

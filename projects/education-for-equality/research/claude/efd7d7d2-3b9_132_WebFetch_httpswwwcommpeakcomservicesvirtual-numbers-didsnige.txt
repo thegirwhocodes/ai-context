@@ -1,0 +1,55 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.commpeak.com/services/virtual-numbers-dids/nigeria
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 09:09:36 UTC
+========================================================================
+
+URL: https://www.commpeak.com/services/virtual-numbers-dids/nigeria
+Extraction prompt: Extract ALL details about Nigerian numbers: types available (local, toll-free, mobile), pricing, setup process, SIP integration, features
+
+----------------------------------------
+
+# Nigerian Virtual Numbers from CommPeak
+
+## Available Number Types
+
+CommPeak offers five types of Nigerian virtual numbers:
+
+1. **Local Numbers** - "Create a local presence without physical offices"
+2. **Mobile Numbers** - For voice and SMS communication
+3. **Toll-Free Numbers** - "Improve accessibility; ideal for support lines"
+4. **Non-Geographic Numbers** - Establish national presence without location ties
+5. **Vanity Numbers** - Customizable for brand reinforcement
+
+## Setup Process
+
+Activation timelines vary based on regulation requirements:
+- Some numbers assigned instantly
+- Others require "additional verification or documentation"
+- Basic online numbers typically set up faster
+- SMS implementation requires identity verification and testing with free account credit
+
+## Key Features
+
+- **Call Routing**: Forward to multiple devices (mobile, softphones, desktop)
+- **Intelligent Routing**: Rules based on business hours, agent shifts, or call origin
+- **Caller ID Control**: Smart management capabilities
+- **Browser-Based Calling**: No special equipment needed
+- **IVR Options**: Advanced call handling
+- **Two-Way SMS**: Send and receive text messages
+
+## Pricing Information
+
+**Not disclosed in the provided content.** The page references a pricing link but actual rates aren't specified.
+
+## SIP Integration
+
+**Not mentioned** in the available documentation.
+
+## Additional Benefits
+
+"Lower operational costs" and compliance with Nigerian registration requirements are emphasized for business communications.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

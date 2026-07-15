@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Asterisk PBX Nigeria Audiocodes SIP trunk self-hosted voice AI integration
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:10:16 UTC
+========================================================================
+
+Search query: Asterisk PBX Nigeria Audiocodes SIP trunk self-hosted voice AI integration
+
+----------------------------------------
+
+Web search results for query: "Asterisk PBX Nigeria Audiocodes SIP trunk self-hosted voice AI integration"
+
+Links: [{"title":"GitHub - hkjarral/AVA-AI-Voice-Agent-for-Asterisk: An open-source AI Voice Agent that integrates with Asterisk/FreePBX using Audiosocket/RTP ...","url":"https://github.com/hkjarral/Asterisk-AI-Voice-Agent"},{"title":"Real-Time AI Voice Agents with Asterisk AudioSocket: Build Conversational Telephony Systems in Python | by Shubhanshu Tiwari | Medium","url":"https://medium.com/@shubhanshutiwari74156/real-time-ai-voice-agents-with-asterisk-audiosocket-build-conversational-telephony-systems-in-4768a7a80a76"},{"title":"AI Voice Boot agent - Integration - FreePBX Community Forums","url":"https://community.freepbx.org/t/ai-voice-boot-agent/97318"},{"title":"AI Voice Agent Highly Cutomizable - Integration - FreePBX Community Forums","url":"https://community.freepbx.org/t/ai-voice-agent-highly-cutomizable/107809"},{"title":"From Zero to Hero: Building a Production-Ready SIP Gateway for Azure Voice Live | Microsoft Community Hub","url":"https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/from-zero-to-hero-building-a-production-ready-sip-gateway-for-azure-voice-live/4473405"},{"title":"PBX Integration Guide for Voice AI | SIP Trunk Setup | VoiceInfra Blog","url":"https://voiceinfra.ai/blog/pbx-integration-guide-voice-ai-sip-trunk-setup"},{"title":"Introducing VEXYL - AI Voice Gateway for FreePBX/Asterisk Systems - Integration - FreePBX Community Forums","url":"https://community.freepbx.org/t/introducing-vexyl-ai-voice-gateway-for-freepbx-asterisk-systems/108761"},{"title":"How to Add AI to PBX in 60 Minutes - No Replacement | VoiceInfra Blog","url":"https://voiceinfra.ai/blog/how-to-add-ai-to-pbx-60-minutes"},{"title":"ltrt-82405-sip-configuration-guide-for-using-asterisk-home- ...","url":"https://www.audiocodes.com/media/9170/ltrt-82405-sip-configuration-guide-for-using-asterisk-home-with-mediant-1000-mediant-2000-and-mp-11x.pdf"},{"title":"Hosted Business Voice Solutions | AudioCodes","url":"https://www.audiocodes.com/solutions-products/solutions/business-voice"}]
+
+Based on the search results, here's what I found regarding Asterisk PBX, Audiocodes SIP trunk, and self-hosted voice AI integration:
+
+## Key Integration Components
+
+An open-source AI Voice Agent can integrate with Asterisk/FreePBX using Audiosocket/RTP technology.
+
+## Technical Architecture
+
+Requirements include a running Asterisk server version 18 or newer with the app_audiosocket module enabled, Python 3.7+ environment for the AudioSocket server implementation, configured SIP trunk (Twilio, Telnyx, or local provider), basic Asterisk dialplan knowledge, and network connectivity between the Asterisk server and Python application.
+
+Real-time audio transcoding with <5ms overhead is achievable with robust SIP stack using industry-standard pjproject and asynchronous architecture for high concurrency potential, with enterprise deployment using Audiocodes SBC + Asterisk PBX.
+
+## Self-Hosted Solutions
+
+VEXYL is a self-hosted middleware that sits between your Asterisk/FreePBX system and AI providers, connecting via AudioSocket protocol and handling the entire voice AI pipeline - speech recognition, LLM processing, and text-to-speech.
+
+A Docker-based AI Voice Agent allows easy deployment of a two-way, conversational AI on any Asterisk system, enabling mixing and matching of STT, LLM, and TTS providers like OpenAI, Deepgram, or local models through a simple YAML config file.
+
+## Audiocodes and Asterisk Configuration
+
+AudioCodes' SIP trunking solutions enable customers to continue using their existing PBX and IP-PBX systems while migrating to SIP trunking services.
+
+The search results don't contain specific information about Nigeria-based implementations, but the architecture applies universally to any region using standard SIP protocols.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

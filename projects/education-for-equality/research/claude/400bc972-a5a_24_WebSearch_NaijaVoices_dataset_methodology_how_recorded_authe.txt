@@ -1,0 +1,46 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: NaijaVoices dataset methodology how recorded authentic Nigerian Yoruba Igbo Haus
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:52 UTC
+========================================================================
+
+Search query: NaijaVoices dataset methodology how recorded authentic Nigerian Yoruba Igbo Hausa speech collection
+
+----------------------------------------
+
+Web search results for query: "NaijaVoices dataset methodology how recorded authentic Nigerian Yoruba Igbo Hausa speech collection"
+
+Links: [{"title":"The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages","url":"https://arxiv.org/html/2505.20564"},{"title":"Language - Lacuna Fund","url":"https://lacunafund.org/datasets/language/"},{"title":"[Literature Review] The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages","url":"https://www.themoonlight.io/en/review/the-naijavoices-dataset-cultivating-large-scale-high-quality-culturally-rich-speech-data-for-african-languages"},{"title":"NaijaVoices Dataset (10.57967/hf/3257)","url":"https://naijavoices.com/dataset"},{"title":"Call for Proposals: The NaijaVoices Language Heritage Micro-Grants - Lanfrica Blog","url":"https://lanfrica.com/blog/call-for-proposals-the-naijavoices-language-heritage-micro-grants/"},{"title":"(PDF) The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages","url":"https://www.researchgate.net/publication/392132063_The_NaijaVoices_Dataset_Cultivating_Large-Scale_High-Quality_Culturally-Rich_Speech_Data_for_African_Languages"},{"title":"NaijaVoices","url":"https://dev.naijavoices.com/"},{"title":"\"The machine now speaks our language\": How Nigerian AI Developers are building a more inclusive future - Technext","url":"https://technext24.com/2025/07/29/the-language-of-ai/"}]
+
+Based on the search results, here's detailed information about the NaijaVoices dataset methodology and how authentic Nigerian speech was recorded:
+
+## Dataset Overview
+
+The NaijaVoices dataset is a 1,800-hour speech-text dataset with 5,000+ speakers, covering Igbo, Hausa, and Yoruba languages. The dataset consists of circa 1,917,686 instances – each instance is made up of audio, a transcript, the language of the transcript, the speaker ID, gender, and age bracket.
+
+## Methodology: Two-Phase Approach
+
+The NaijaVoices dataset creation followed a distinctive two-phase methodology:
+
+### Phase 1: Sentence Generation
+
+Culturally-rich and authentic sentences were manually composed from scratch by 144 language users and experts ("Sentence Generators"), with 48 generators per language. These generators were guided by 100 diverse themes and prompts. Each batch of generated sentences underwent a double review system, with errors corrected and challenging linguistic issues resolved collaboratively with language supervisors.
+
+### Phase 2: Speech Recording
+
+The recording process involved two sub-stages:
+
+- **Phase 1 Recording**: Each voice donor was required to record 240 sentences under the guidance of the Facilitator, obtaining a total of 1,269.21 hours recorded from approximately 5,220 voice donors.
+
+- **Phase 2 Recording**: This phase focused on capturing longer audio recordings per speaker to support applications like text-to-speech, requiring each voice donor to record no fewer than 6,000 sentences, obtaining a total of 598.31 hours recorded from approximately 105 voice donors.
+
+## Authentic and Culturally Rich Content
+
+The NaijaVoices dataset captures the essence of Nigerian culture through authentic, expert-generated, and culturally rich sentences, featuring a wide range of speech patterns influenced by age, education levels, accents, and speaking styles – from broken to formal speech, ethnic and dialectal influences. Additionally, the NaijaVoices method intentionally incorporated discourse about marginalized populations, such as women, children, and people living with disabilities, as well as underrepresented topic areas, such as traditional counting systems and agriculture.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

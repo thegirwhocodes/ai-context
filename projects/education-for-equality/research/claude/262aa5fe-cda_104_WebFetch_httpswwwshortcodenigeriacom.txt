@@ -1,0 +1,50 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.shortcodenigeria.com/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-31 02:32:35 UTC
+========================================================================
+
+URL: https://www.shortcodenigeria.com/
+Extraction prompt: Extract ALL details about Shortcode Nigeria's services. Do they offer USSD push / network-initiated USSD? What services do they provide? Direct MNO gateway? NI-USSD? Any technical details about their USSD infrastructure?
+
+----------------------------------------
+
+# Shortcode Nigeria Services Summary
+
+## Services Offered
+
+Based on the webpage, Shortcode Nigeria provides:
+
+1. **2-Way Toll Free SMS** - "shared and dedicated SIM card hosting that enables businesses to send and receive text messages reliably"
+
+2. **USSD Voting** - "Enable voting competitions with unique USSD codes for participants"
+
+3. **Toll Free USSD** - "menu-driven zero-billing shared USSD service that powers applications"
+
+4. **USSD Payment Reception** - "universal USSD code to receive payments seamlessly"
+
+5. **SIM Card Hosting** - "Host your SIM card in our server to receive SMS, with real-time dashboard display and forwarding API"
+
+6. **Short Code IVR** - "host your NCC short code for your call center"
+
+## Technical Infrastructure Details
+
+The page provides **limited technical specifics**. Key mentions include:
+- Real-time dashboard display for SIM hosting
+- Forwarding API integration capability
+- Network connectivity across all carriers
+- Cloud-based hosting
+
+## What's NOT Mentioned
+
+The content does **not explicitly address**:
+- USSD push/network-initiated USSD capabilities
+- Direct MNO (Mobile Network Operator) gateway access
+- NI-USSD (Network-Initiated USSD) support
+- Detailed technical architecture
+
+The company positions itself as a "Channel VAS Provider" reselling services rather than necessarily operating direct carrier infrastructure.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

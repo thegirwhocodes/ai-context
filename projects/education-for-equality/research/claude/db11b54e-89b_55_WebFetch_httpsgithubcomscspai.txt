@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://github.com/scspai
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 23:26:26 UTC
+========================================================================
+
+URL: https://github.com/scspai
+Extraction prompt: List every repository on this org. For each repo, summarize what it is and whether it's tagged as a hackathon winner or showcase.
+
+----------------------------------------
+
+# SCSP GitHub Organization Repositories
+
+Based on the webpage, the Special Competitive Studies Project organization has **2 repositories**:
+
+## 1. aiexpo_hack
+**Description:** "Official repo for the SCSP x AGI House Hackathon 2025, focused on building AI-driven solutions for national competitiveness."
+
+**Language:** Python
+
+**Hackathon Status:** This is explicitly a hackathon project repository (SCSP x AGI House Hackathon 2025), though it is not labeled as a winner or showcase.
+
+## 2. .github
+**Description:** Organization configuration repository (standard GitHub repository for org-level settings)
+
+**Status:** No specific description or hackathon association mentioned.
+
+---
+
+**Note:** Neither repository displays a specific "hackathon winner" or "showcase" designation on the organization page. The aiexpo_hack repository is clearly hackathon-related but carries no award or featured status indicator based on the available content.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

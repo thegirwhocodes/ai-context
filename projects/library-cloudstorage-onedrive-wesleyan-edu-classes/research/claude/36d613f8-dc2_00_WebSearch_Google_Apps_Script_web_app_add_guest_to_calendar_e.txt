@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Google Apps Script web app add guest to calendar event public URL 2026
+Session: 36d613f8-dc25-4a59-af12-80a7a5523c3d
+Time: 2026-04-30 04:47:50 UTC
+========================================================================
+
+Search query: Google Apps Script web app add guest to calendar event public URL 2026
+
+----------------------------------------
+
+Web search results for query: "Google Apps Script web app add guest to calendar event public URL 2026"
+
+Links: [{"title":"Class CalendarEvent | Apps Script | Google for Developers","url":"https://developers.google.com/apps-script/reference/calendar/calendar-event"},{"title":"Calendar Service | Apps Script | Google for Developers","url":"https://developers.google.com/apps-script/reference/calendar/"},{"title":"Class EventGuest | Apps Script | Google for Developers","url":"https://developers.google.com/apps-script/reference/calendar/event-guest"},{"title":"GitHub - sahaib/Google-Calendar-Add-Guest: The Google-Calendar-Add-Guest project is a Google Apps Script that automates the process of adding guests to Google Calendar events. By leveraging a service account with OAuth2 authentication, it enables admins to efficiently manage event attendees across multiple user calendars within a Google Workspace environment.","url":"https://github.com/sahaib/Google-Calendar-Add-Guest"},{"title":"Google sheet to calendar sync to send email invites to attendees","url":"https://groups.google.com/g/google-apps-script-community/c/Y7aDLZRsUa8"},{"title":"Share events from your Google Calendar - Computer - Google Calendar Help","url":"https://support.google.com/calendar/answer/13839531?hl=en-GB&co=GENIE.Platform%3DDesktop&p=link_sharing_web"},{"title":"Add Multiple Guest to Calendar Event from AppScript","url":"https://groups.google.com/g/google-apps-script-community/c/ayjEituP-Iw"},{"title":"Collection of Google Calendar related utility functions for Google Apps Script. · GitHub","url":"https://gist.github.com/mogsdad/5548177"},{"title":"Running Google Apps Script by Event Notification from Google Calendar · GitHub","url":"https://gist.github.com/tanaikech/fbbfaa8f2a8a770424974aa16b9b6f3b"},{"title":"Class CalendarEventSeries | Apps Script | Google for Developers","url":"https://developers.google.com/apps-script/reference/calendar/calendar-event-series"}]
+
+I've completed the web search for your query. Here are the results:
+
+## Key Findings
+
+**Google Apps Script Calendar Guest Management:**
+The CalendarEvent class in Google Apps Script is used to manage properties, guests, and reminders of a single calendar event, with key functionalities including managing guests by adding, removing, and getting lists.
+
+**Adding Guests to Events:**
+You can add guests to an event using their email addresses with the addGuest() method, for example: event.addGuest('alex@example.com')
+
+**Public Web App URLs:**
+When deploying a Google Apps Script as a web app, you can copy the URL which follows a format like https://script.google.com/macros/s/###/exec
+
+**Guest Self-Signup via Shared Links:**
+People can open event details and add themselves or others as guests through a shared link, and even when the 'Guests can invite others' permission is off, people can still add themselves and others as guests through the shared link.
+
+The search results show that Google Apps Script provides methods for programmatically managing calendar event guests, and Google Calendar supports sharing events via public links where guests can self-register. If you need more specific information about implementing a particular use case, feel free to ask!
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

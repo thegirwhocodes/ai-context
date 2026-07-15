@@ -1,0 +1,48 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT SmolLM2 WavTokenizer training recipe Nigerian movies audio data subtitle
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:30:20 UTC
+========================================================================
+
+Search query: YarnGPT SmolLM2 WavTokenizer training recipe Nigerian movies audio data subtitle pairs how to replicate
+
+----------------------------------------
+
+Web search results for query: "YarnGPT SmolLM2 WavTokenizer training recipe Nigerian movies audio data subtitle pairs how to replicate"
+
+Links: [{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"Saheed Azeez Releases YarnGPT, a Text-To-Speech Model for Nigerians — BlackGeeks Nigeria","url":"https://blackgeeks.com.ng/saheed-azeez-releases-yarngpt-a-text-to-speech-model-for-nigerians/"},{"title":"NAIJAFEED: After creating 2 million GPT tokens, this UNILAG student has built an AI text-to-speech model with Nigerian accent","url":"http://www.naijafeed.com/2025/02/after-creating-2-million-gpt-tokens.html"},{"title":"How Azeez, Unilag’s student built a Nigerian accent AI text-to-speech model - Businessday NG","url":"https://businessday.ng/bd-weekender/article/how-azeez-unilags-student-built-a-nigerian-accent-ai-text-to-speech-model/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/how-to/"},{"title":"How this UNILAG student built an AI model with local accent","url":"https://techpoint.africa/2025/02/04/how-unilag-student-created-yarngpt-ai/"},{"title":"HuggingFaceTB/SmolLM2-1.7B-Instruct · Hugging Face","url":"https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct"},{"title":"The $100 YarnGPT model that’s teaching AU to speak in Nigerian English","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"Fine-tune a SmolLM on domain-specific synthetic data from a LLM","url":"https://nbsanity.com/static/07f17bf65c5073b2e1d2ad90bcf3a07f/fine-tune-smollm2-on-synthetic-data.html"}]
+
+Based on the search results, I found comprehensive information about YarnGPT, the training approach, and how it was replicated. Here's what the search revealed:
+
+## YarnGPT Overview
+
+YarnGPT is a text-to-speech (TTS) model designed to synthesize Nigerian-accented English leveraging pure language modelling without external adapters or complex architectures.
+
+## Training Recipe
+
+The model uses HuggingFaceTB/SmolLM2-360M as its base, trained for 5 epochs on an A100 GPU, using data from Nigerian movies, podcasts, and open-source audio with a pure language modeling approach.
+
+## Data Source and Processing
+
+The model was trained on a dataset of publicly available Nigerian movies, podcasts (using the subtitle-audio pairs) and open source Nigerian-related audio data on Huggingface, with audio files preprocessed and resampled to 24Khz and tokenized using WavTokenizer.
+
+More specifically, the creator extracted audio and subtitles from movies available online.
+
+## How to Replicate
+
+He took the language model SmolLM2-360M from Hugging Face and added speech functionality to it, a process that involved major algorithmic changes. 
+
+After adding speech functionality, training the model cost $50 and took three days.
+
+## WavTokenizer Role
+
+Audio tokens can be used to train the AI, and the model can reassemble them to generate speech that sounds natural—this entire process was made possible by a wave tokenizer.
+
+The GitHub repository (https://github.com/saheedniyi02/yarngpt) contains the implementation code and additional details for replication.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

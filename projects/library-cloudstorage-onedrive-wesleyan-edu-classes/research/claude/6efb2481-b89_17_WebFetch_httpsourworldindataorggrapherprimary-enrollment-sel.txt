@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://ourworldindata.org/grapher/primary-enrollment-selected-countries
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:36:46 UTC
+========================================================================
+
+URL: https://ourworldindata.org/grapher/primary-enrollment-selected-countries
+Extraction prompt: What are the data sources behind this chart on primary school enrollment for selected countries? Does it include Nigeria? What years are covered? Is the underlying data downloadable as CSV?
+
+----------------------------------------
+
+# Primary School Enrollment Chart - Data Overview
+
+**Data Sources:**
+The chart uses data from two main sources: the "UNESCO Institute for Statistics (UIS) - Education" database and historical estimates from "Human Capital in the Long Run" by Lee and Lee (2016).
+
+**Time Coverage:**
+The dataset spans from 1820 to 2024, with historical data through 1985 sourced from Lee and Lee, combined with recent World Bank estimates.
+
+**Nigeria Inclusion:**
+The page content does not specify whether Nigeria is included in the selected countries shown in this particular chart.
+
+**CSV Download:**
+Yes, the underlying data is downloadable. The page offers two download options: one containing all entities and time points, and another with only currently visible chart data. Both are available as ZIP files with CSV format included.
+
+You can access the full dataset via the API at: `https://ourworldindata.org/grapher/primary-enrollment-selected-countries.csv`
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

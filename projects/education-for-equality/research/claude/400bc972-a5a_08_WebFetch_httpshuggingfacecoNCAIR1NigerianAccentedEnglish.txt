@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/NCAIR1/NigerianAccentedEnglish
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-07 20:24:05 UTC
+========================================================================
+
+URL: https://huggingface.co/NCAIR1/NigerianAccentedEnglish
+Extraction prompt: What is the base model (Whisper size)? What framework/format is it (transformers PyTorch, CTranslate2, etc.)? How do you load and run inference — give the exact model id and code snippet. What is the license? Is it fine-tuned Whisper for Nigerian-accented English ASR?
+
+----------------------------------------
+
+# NigerianAccentedEnglish Model Overview
+
+**Base Model & Size:**
+The model is built on "Whisper Small (244M parameters)" and represents a fine-tuned version specifically optimized for Nigerian English speech patterns.
+
+**Framework & Format:**
+It uses the Transformers library with PyTorch. The implementation relies on `WhisperProcessor` and `WhisperForConditionalGeneration` classes for inference.
+
+**Loading & Inference Code:**
+```python
+from transformers import pipeline
+asr = pipeline("automatic-speech-recognition", 
+               model="NCAIR1/NigerianAccentedEnglish")
+result = asr(audio)
+print(result["text"])
+```
+
+**License:**
+The model operates under a custom "Open-Source Research and Innovation License" with restrictions, including a "1000 active end-user cap" per organization. Commercial use requires a separate licensing agreement with Awarri Technologies.
+
+**Fine-tuning Details:**
+Yes, this is specifically "fine-tuned on Whisper Small architecture" using 120 hours of training data collected from speakers across Nigeria's six geopolitical zones via the Langeasy platform, making it accent-inclusive for Nigerian English variations.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

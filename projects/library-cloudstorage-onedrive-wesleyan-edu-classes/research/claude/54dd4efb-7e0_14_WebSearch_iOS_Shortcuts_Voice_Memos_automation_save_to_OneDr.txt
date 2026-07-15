@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iOS Shortcuts Voice Memos automation save to OneDrive actions 2026
+Session: 54dd4efb-7e00-469d-9b2d-02e160e3af35
+Time: 2026-02-18 03:42:51 UTC
+========================================================================
+
+Search query: iOS Shortcuts Voice Memos automation save to OneDrive actions 2026
+
+----------------------------------------
+
+Web search results for query: "iOS Shortcuts Voice Memos automation save to OneDrive actions 2026"
+
+Links: [{"title":"Shortcut \"Record Audio\", how to save local - Apple Community","url":"https://discussions.apple.com/thread/252149524"},{"title":"Voice memo File Transfer - Apple Community","url":"https://discussions.apple.com/thread/255563047"},{"title":"How to download files directly to OneDrive on iPad and iPhone","url":"https://www.jemjem.com/blogs/apple-products-how-to/how-to-download-files-directly-to-onedrive-on-ipad-and-iphone"},{"title":"Saving a Voice Memo as a file via Shortcuts not possible? - Shortcuts - Automators Talk","url":"https://talk.automators.fm/t/saving-a-voice-memo-as-a-file-via-shortcuts-not-possible/17025"},{"title":"12 Best Apps to Record iOS Voice Memos into Dropbox (Cloud Drives) - MashTips","url":"https://mashtips.com/ios-apps-record-voice-memos-to-cloud/"},{"title":"Voice Memos shortcuts","url":"https://matthewcassinelli.com/shortcuts/folders/apple-apps/voice-memos/"},{"title":"How to transfer Voice Memos file to other… - Apple Community","url":"https://discussions.apple.com/thread/6671749"},{"title":"shortcuts save file to cloud (onedrive) - Apple Community","url":"https://discussions.apple.com/thread/251864093"},{"title":"Voice Memo shortcut—how to force a… | Apple Developer Forums","url":"https://developer.apple.com/forums/thread/692183"},{"title":"Does the shortcut app for voice memo work… - Apple Community","url":"https://discussions.apple.com/thread/8561601"}]
+
+Based on the search results, here's what I found about iOS Shortcuts, Voice Memos automation, and saving to OneDrive:
+
+## Manual Voice Memos to OneDrive Transfer
+
+You can manually transfer Voice Memos to OneDrive by opening the Voice Memos app, navigating to a recording, selecting "Save to Files," choosing OneDrive from the Files app, and selecting a destination folder. You can upload multiple Voice Memos at once by selecting them in the Voice Memos app before tapping "Share."
+
+## Shortcuts and Voice Memos Limitations
+
+There are some important limitations with automating Voice Memos through Shortcuts. While Shortcuts can interact with Voice Memos to jump into recordings or make new ones, there's limited access to retrieve Voice Memos with Shortcuts or via iCloud Drive. Saving a Voice Memo directly via Shortcuts doesn't appear to be possible - you can do it manually, but cannot complete the save steps as part of a bigger automation.
+
+## OneDrive and Shortcuts Integration
+
+Interestingly, when creating a shortcut that saves a file to the cloud, "service" options appear for iCloud and Dropbox, but there may not be a dedicated service option for OneDrive. However, you can see your OneDrive files and folders inside the iOS Files app, which is important for working with Shortcuts.
+
+The most practical current approach would be to manually share Voice Memos to OneDrive using the Files app integration, rather than trying to fully automate the process through Shortcuts.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

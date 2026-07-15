@@ -1,0 +1,44 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Lelapa AI InkubaLM African languages speech Vulavula Nigerian transcription API 
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:16:53 UTC
+========================================================================
+
+Search query: Lelapa AI InkubaLM African languages speech Vulavula Nigerian transcription API how works
+
+----------------------------------------
+
+Web search results for query: "Lelapa AI InkubaLM African languages speech Vulavula Nigerian transcription API how works"
+
+Links: [{"title":"Lelapa AI | Resource-Efficient Language AI Built to Scale Globally","url":"https://lelapa.ai/"},{"title":"Lelapa AI launches Africa’s first AI large language model | Africa World Initiative","url":"https://africaworld.princeton.edu/news/2024/lelapa-ai-launches-africa%E2%80%99s-first-ai-large-language-model"},{"title":"Vulavula | Lelapa","url":"https://lelapa.ai/products/vulavula/"},{"title":"This company is building AI for African languages | MIT Technology Review","url":"https://www.technologyreview.com/2023/11/17/1083637/lelapa-ai-african-languages-vulavula/"},{"title":"23 African startups building AI infrastructure","url":"https://techcabal.com/2025/12/06/ai-startups-building-for-africa/"},{"title":"23 startups laying the groundwork for Africa’s AI growth | MEXC News","url":"https://www.mexc.com/news/234622"},{"title":"Local AI model is melting pot for African languages | ITWeb","url":"https://www.itweb.co.za/article/local-ai-model-is-melting-pot-for-african-languages/j5alr7QABQo7pYQk"},{"title":"InkubaLM: A small language model for low-resource African languages | Lelapa","url":"https://lelapa.ai/inkubalm-a-small-language-model-for-low-resource-african-languages/"},{"title":"From Biomedical Engineering to AI Pioneer: How Pelonomi Moiloa Built Lelapa AI for African Languages - iAfrica.com","url":"https://iafrica.com/from-biomedical-engineering-to-ai-pioneer-how-pelonomi-moiloa-built-lelapa-ai-for-african-languages/"},{"title":"Lelapa AI · GitHub","url":"https://github.com/Lelapa-AI"}]
+
+Based on the search results, here's comprehensive information about Lelapa AI, InkubaLM, African languages support, Vulavula, Nigerian transcription, and how the API works:
+
+## Overview of Lelapa AI
+
+Lelapa AI has introduced InkubaLM, Africa's first multilingual AI large language model, aimed at supporting and enhancing low-resource African languages.
+
+## InkubaLM Language Model
+
+The model is starting with Swahili, Yoruba, IsiXhosa, Hausa, and isiZulu. This model is named after the dung beetle for its efficient design and seeks to address the digital underrepresentation of these languages by providing tools for translation, transcription, and various natural language processing tasks.
+
+InkubaLM-0.4B has been trained from scratch using 1.9 billion tokens of data for the five African languages, along with English and French data, totalling 2.4 billion tokens of data.
+
+## Vulavula API - How It Works
+
+Vulavula converts multilingual call centre conversations into structured text, ready for your analytics, QA, and compliance systems. Lelapa turns its models into usable infrastructure through Vulavula, a multilingual API that offers speech recognition, translation, sentiment analysis and intent detection for African languages and code-switching.
+
+The Vulavula API allows seamless integration into your businesses applications. Connect straight to our API, connect through a cloud marketplace or deploy our models on your private on prem.
+
+Lelapa works with expert human linguists, so the language models are able to capture local lingo, local names, accents, and can even handle code switching (when speakers switch between different languages in a conversation).
+
+## Regarding Nigerian Languages
+
+Note that the search results focus on South African languages (isiZulu, Sesotho, Afrikaans) and other African languages like Yoruba and Hausa, but don't specifically highlight Nigerian-exclusive transcription features. Yoruba and Hausa are spoken in Nigeria, and these are supported through Vulavula and InkubaLM.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

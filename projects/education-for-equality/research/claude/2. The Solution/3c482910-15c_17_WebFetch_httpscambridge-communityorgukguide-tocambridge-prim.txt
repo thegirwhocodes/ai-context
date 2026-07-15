@@ -1,0 +1,25 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://cambridge-community.org.uk/guide-to/cambridge-primary/mathematics/
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:55:35 UTC
+========================================================================
+
+URL: https://cambridge-community.org.uk/guide-to/cambridge-primary/mathematics/
+Extraction prompt: Extract ALL Stage 4 learning objectives listed on this page. List every objective code (like 4Np.01, 4Nf.01, 4Gg.01, etc.) and its full description.
+
+----------------------------------------
+
+I've reviewed the provided web page content, which contains extensive CSS styling and technical markup for a Cambridge Primary Mathematics guide. However, **the actual Stage 4 learning objectives are not included in the text provided**.
+
+The page appears to be a navigation/header structure with sections labeled "Introduction," "Curriculum Framework," "Pedagogy," and "Assessment," but the detailed content containing specific objective codes (like 4Np.01, 4Nf.01, 4Gg.01, etc.) and their descriptions is not present in the extracted text.
+
+To obtain the Stage 4 learning objectives you're seeking, you would need to:
+- Access the full page content beyond what was captured
+- Navigate to the specific curriculum framework sections on the Cambridge Primary website
+- Consult the official Cambridge Primary Mathematics curriculum documentation directly
+
+I cannot extract or list objectives that are not present in the provided source material.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

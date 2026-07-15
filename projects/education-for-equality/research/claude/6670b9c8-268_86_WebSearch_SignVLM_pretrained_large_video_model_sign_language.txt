@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SignVLM pretrained large video model sign language recognition 2025 download wei
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 19:19:27 UTC
+========================================================================
+
+Search query: SignVLM pretrained large video model sign language recognition 2025 download weights
+
+----------------------------------------
+
+Web search results for query: "SignVLM pretrained large video model sign language recognition 2025 download weights"
+
+Links: [{"title":"SignVLM: a pre-trained large video model for sign language recognition - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12453763/"},{"title":"PeerJ SignVLM: a pre-trained large video model for sign language recognition","url":"https://peerj.com/articles/cs-3112/"},{"title":"SignVLM: a pre-trained large video model for sign language recognition - PubMed","url":"https://pubmed.ncbi.nlm.nih.gov/40989416/"},{"title":"SignBERT+: Hand-Model-Aware Self-Supervised Pre-Training for Sign Language Understanding | Request PDF","url":"https://www.researchgate.net/publication/370299522_SignBERT_Hand-model-aware_Self-supervised_Pre-training_for_Sign_Language_Understanding"},{"title":"Formal classification of Sign Language. | Download Scientific Diagram","url":"https://www.researchgate.net/figure/Formal-classification-of-Sign-Language_fig1_366978150"},{"title":"a pre-trained large video model for sign language recognition","url":"https://www.researchgate.net/publication/395490802_SignVLM_a_pre-trained_large_video_model_for_sign_language_recognition"},{"title":"SignLLM: Sign Language Production Large Language Models","url":"https://openaccess.thecvf.com/content/ICCV2025W/CV4A11y/papers/Fang_SignLLM_Sign_Language_Production_Large_Language_Models_ICCVW_2025_paper.pdf"},{"title":"a pre-trained large video model for sign language recognition","url":"https://peerj.com/articles/cs-3112.pdf"},{"title":"Large Sign Language Models: Toward 3D American Sign Language Translation","url":"https://arxiv.org/html/2511.08535v1"},{"title":"Breaking the Barriers: Video Vision Transformers for Word-Level Sign Language Recognition","url":"https://arxiv.org/html/2504.07792v1"}]
+
+Based on the search results, I found information about SignVLM, a pre-trained large video model for sign language recognition from 2025:
+
+## Overview
+
+SignVLM is a pretrained large vision model for sign language recognition (SLR). The model explores the capability of the contrastive language-image pre-training (CLIP) model for SLR, using it to extract spatial features from sign video frames while a Transformer decoder is used for temporal learning.
+
+## Model Performance
+
+The proposed model has been evaluated on four different sign languages using the KArSL, WLASL, LSA64, and AUSTL datasets with different evaluation settings including zero-shot and few-shot learning, and outperformed other models on the KArSL, WLASL, and LSA64 datasets.
+
+## Code and Weights Availability
+
+The code and data are available at https://github.com/Hamzah-Luqman/signVLM. This GitHub repository is where you can find the pretrained model weights and implementation code for SignVLM.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

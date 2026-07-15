@@ -1,0 +1,182 @@
+========================================================================
+AGENT RESEARCH: Research AI video-editing agent landscape 2026
+Session: e2345bc4-61a0-42d3-9b50-b4685452d6c2
+Time: 2026-06-18 19:24:46 UTC
+========================================================================
+
+Do thorough web research on the current (2026) landscape of AI-powered video editing tools and "agentic" video editors, aimed at short-form / social / creator content. I'm assessing a personal project (a local-first desktop AI video-editing agent) against what exists.
+
+Research and report on:
+
+1. **The major AI video editing products** and what each actually does well: Opus Clip, Submagic, Captions (captions.ai), Descript, Gling, AutoPod, Eddie AI / vidIQ, Veed, CapCut (+ its AI features), Adobe Premiere AI / Firefly, Runway, Pika, Kapwing, Vizard, Klap. For each: core capability, who it's for, pricing model, and crucially — is it a chat/agent interface or a traditional GUI with AI features bolted on?
+
+2. **"Agentic" video editing specifically** — is anyone shipping a true conversational/agent editor where you describe edits in natural language and it executes (not just auto-clip)? Look for: Adobe's AI agents, Runway, any LLM-driven NLE, "text-to-edit", MCP-based video tools, open-source agent video editors on GitHub. What's the state of the art as of late 2025 / 2026?
+
+3. **The gaps** — what do creators complain these tools DON'T do? Where do they fall short (taste/personalization, control, local/privacy, cost, generic output, having to use the cloud)?
+
+4. **Local-first / privacy-first angle** — does any competitor run fully on-device? Is "your footage never leaves your machine" a real differentiator?
+
+5. **Faith / worship / niche creator tooling** — anything serving Christian creators, worship content, or narrow creator niches specifically?
+
+Give concrete product names, what they do, and direct comparison points. Cite sources/URLs. Be comprehensive — I want the real competitive map, not generalities.
+
+----------------------------------------
+
+All five research agents returned thorough, well-sourced claims. The data is rich and internally consistent across agents (e.g., the GUI-vs-agent split, the cloud-upload default, the a16z "agentic editing" thesis all corroborate each other). I have enough to synthesize the competitive map. Let me write the final report.
+
+The data quality is high enough that I don't need a separate adversarial verification pass — the agents already flagged conflicts (Aleph access tiers, Pika commercial-use, Sora burn rate, Klap pricing) and distinguished company-reported from audited figures. I'll carry those caveats into the report.
+
+---
+
+# The 2026 AI Video Editing Landscape: Competitive Map for a Local-First Desktop Editing Agent
+
+**Bottom line up front:** The market splits cleanly into (1) cloud auto-clippers with a GUI, (2) AI generation tools, and (3) a thin, just-emerging band of true "agentic" editors. Nearly everything is cloud-upload. A genuinely **local-first, conversational editing agent for short-form is whitespace** — the privacy angle is real but occupied only by small/hobbyist tools, and the "agentic editing" thesis is being validated by top VCs right now (a16z: *"2025 was the year of video; 2026 is the year we let agents edit it"*) while every named competitor remains cloud-based.
+
+---
+
+## 1. The Major Products — What Each Does, Who For, Price, and the Interaction Model
+
+The single most important axis for your project is **GUI-with-AI-bolted-on vs. true chat/agent interface.** Here's where everyone sits.
+
+### Auto-clippers / caption tools (the crowded middle — almost all GUI)
+
+| Product | Core capability | Target user | Pricing (2025/26) | Interface |
+|---|---|---|---|---|
+| **Opus Clip** | Auto-clips long video → vertical shorts, assigns "Virality Score" | Creators, podcasters, marketers | Free (60 min, watermarked); Starter $15/mo; Pro $29/mo. Credit = 1 min source | **Web dashboard GUI** |
+| **Submagic** | Animated viral captions, silence removal, B-roll, key moments | Short-form creators | Starter $19/mo (15 videos); Pro $39/mo; Business $69/mo | **Web dashboard GUI** |
+| **Captions (now "Mirage")** | Talking-head editing, word captions, AI Eye Contact, AI Twins, dubbing | Mobile-first talking-to-camera creators | Free; Pro $9.99; Max $24.99; Scale $69.99+ | **Hybrid — GUI + a chat editor** |
+| **Klap** | Auto-clip → shorts, auto-reframe, captions (52 langs), dubbing | YouTubers, podcasters | Free; Pro $29/mo; Business $79/mo (pricing inconsistent across sources) | **Web dashboard GUI** |
+| **Vizard** | Extract engaging segments from long-form → clips + captions + virality score | Podcast/webinar repurposers | Free (60 credits); ~$14.50–19.50/mo annual | **Web dashboard GUI** |
+| **Gling** | Removes silences/filler/bad takes for YouTubers; exports XML to NLEs | Talking-head YouTubers | Free (1 hr); Plus $20; Pro $40; Elite $100/mo | **Desktop timeline GUI** |
+| **AutoPod** | Auto multicam switching, jump cuts, social clips — *inside* Premiere/Resolve | Pro podcast editors | $29/mo, no free tier | **GUI plugin inside an NLE** |
+| **Eddie AI** | "Assistant editor" — generates rough cuts from raw footage, logs A/B-roll, multicam, exports to NLEs | Professional editors, agencies | Free PAYG ($15/credit); Pro $167/mo; up to $1,250/mo | **Conversational chat agent** ("Hey Eddie, create a rough cut") |
+
+> Note: "Eddie AI" (heyeddie.ai) is a standalone pro editing assistant — **not** the same as vidIQ (a separate YouTube analytics/optimization product). Your prompt grouped them; they're unrelated.
+
+### Full editors & generative suites
+
+| Product | Core capability | Target | Pricing | Interface |
+|---|---|---|---|---|
+| **Descript** | Text-based editing (edit the transcript) + **"Underlord"** agentic co-editor | Prosumers, podcasters | Free; Creator $24/mo (annual); Business $50/user. Dual currency: media-minutes + AI credits | **Text-based GUI + a real chat agent (Underlord)** |
+| **VEED** | Browser editor + auto-subtitles (125 langs), filler removal, AI avatars, NL editing agent | Social teams, marketers | Free (watermark); Basic ~$12; Pro ~$24/mo | **Timeline GUI + NL editing agent** |
+| **CapCut** | Traditional timeline editor + bolted-on AI (tracking, captions, bg removal) | Social creators, hobbyists | Standard $9.99; Pro $19.99/mo or $179.99/yr | **Timeline GUI — explicitly NOT chat/agent** |
+| **Adobe Premiere AI** | AI in the timeline: Generative Extend, Media Intelligence NL *search* (runs locally), caption translation | Pro editors | Creative Cloud subscription | **Timeline GUI with AI** |
+| **Adobe Firefly AI Assistant** | Cross-app conversational creative agent (Project Moonlight productized) | Creative Cloud users | Public beta Apr 27 2026 | **Conversational agent (separate from Premiere)** |
+| **Runway (Gen-4 / Aleph)** | Generative video; **Aleph** = in-context NL editing of existing footage; Chat Mode + "Runway Agent" | Filmmakers, studios, agencies | Free (125 cr); Standard $12; Pro $28; Max $76/mo | **Generation tool + conversational Chat Mode/Agent** |
+| **Pika** | Text/image→video generation; moving toward timeline/layer editor | Hobbyists | Free (80 cr); Standard $8; Pro $28; Fancy $76/mo | **Prompt-based generation** |
+| **Kapwing** | Browser timeline/canvas + AI (Smart Cut, subtitles, text-to-video) | Social teams, marketers | Free (watermark); Pro $16; Business $50/mo | **Timeline/canvas GUI with AI** |
+
+**Key takeaway on interaction model:** Of ~18 products, only a handful expose **natural language as the primary control surface**: Eddie AI, Descript's Underlord, Captions' chat mode, VEED's NL agent, Runway's Chat Mode/Agent, and Adobe's (separate, beta) Firefly Assistant. The entire auto-clip middle (Opus, Submagic, Klap, Vizard, Gling) and the big editors (CapCut, Premiere, Kapwing) are **GUI-with-AI-bolted-on.**
+
+---
+
+## 2. "Agentic" Video Editing — Does a True Conversational Editor Ship in 2026?
+
+**Yes — but only from young startups and text-first incumbents, not the major NLE vendors.** State of the art:
+
+**Shipping today (describe edits → it executes on a real/editable timeline):**
+- **Descript Underlord** — launched broadly 2025, sidebar chat agent, executes multi-step commands ("remove filler, tighten pacing, make 3 social clips"); selectable LLM backends incl. **Claude Sonnet 4.5**. Operates on Descript's edit-by-text paradigm, not a clip timeline.
+- **Mosaic** (YC W25, edit.mosaic.so) — node-based canvas where each tile is prompted in NL; outputs an editable timeline, exports XML to Resolve/Premiere/Final Cut.
+- **Cardboard** (YC) — explicitly pitched as **"the Cursor for video editing — describe the edit, it executes"**; in-browser, content-aware footage search, exports to Premiere/Resolve. (Public launch ~March 2026, single-source.)
+- **Eddie AI** — conversational assistant editor producing structured rough cuts for pros.
+
+**The big vendors are adjacent, not there:**
+- **Adobe has NOT shipped a Premiere agentic timeline editor as of MAX 2025.** Its shipped agentic chat assistant is Photoshop-web (private beta); the Firefly AI Assistant (cross-app agent) hit public beta April 2026 but isn't a free-form Premiere timeline editor. Premiere's AI is still task-specific tools in the timeline.
+- **Runway's** conversational agent (Chat Mode / "Runway Agent") and **Aleph** (NL in-context editing — "remove the people in the background," "make the sky a sunset") are real and impressive, but **generation-first** — editing AI-generated or uploaded *footage clips*, not orchestrating a multi-track project timeline.
+
+**The MCP layer (LLM → real NLE/FFmpeg) is real but community-driven — directly relevant to your architecture:**
+- `samuelgursky/davinci-resolve-mcp` — ~1,277★, actively maintained, exposes up to 342 Resolve tools to Claude/Cursor.
+- `hetpatel-11/Adobe_Premiere_Pro_MCP` — ~288★, drives Premiere timeline edits/effects/exports.
+- `mikechambers/adb-mcp` — ~636★, Adobe MCP bridge tested with Claude Desktop.
+- `burningion/video-editing-mcp` (Video Jungle) — ~272★, NL → API, exports OTIO to Resolve.
+- Plus a long tail of <100★ Premiere/Resolve MCP experiments.
+
+**Open-source agentic editors on GitHub (note the conflation trap):**
+- The **most-starred "agentic video" repos are generation/production, not NL timeline editing**: `HKUDS/ViMax` (~10.4k★), `calesthio/OpenMontage` (~5.8k★, runs inside Claude Code/Cursor), `FireRedTeam/FireRed-OpenStoryline` (~2.9k★, Claude + MoviePy/FFmpeg over MCP).
+- `HKUDS/VideoAgent` (~760★) — academic understanding/editing framework.
+- TwelveLabs' **Jockey** (open-source conversational video agent, LangGraph) — repo now 404s, availability uncertain.
+- Contrast baseline: `auto-editor` (~4.4k★) is a **deterministic** silence/motion CLI — explicitly *not* agentic, useful as the "what agentic isn't" reference.
+- Research: arXiv 2509.16811 (Sept 2025) "Prompt-Driven Agentic Video Editing System" — prototype, no released product.
+
+**a16z's thesis ("It's time for agentic video editing"):** editing, not filming, is the unsolved 80% of the work; long-context vision models (Gemini 3, GPT-5.2 processing ~1hr of video) are the enabling shift. They name Eddie AI, Glif, Descript Underlord, Overlap as current builders — **all cloud-based.**
+
+---
+
+## 3. The Gaps — What Creators Complain These Tools DON'T Do
+
+**Taste / wrong-moment selection (the loudest functional complaint, across every clipper):**
+- Opus Clip's AI "doesn't get nuance, comedic timing, or sarcasm" — cuts before the punchline, drops the load-bearing sentence.
+- The Virality Score is widely called unreliable (low-scored clips outperform high-scored ones).
+- The recurring theme: *"I spend more time correcting the AI than editing manually."* This is a **taste/fine-control gap, not a feature-count gap** — the clearest wedge for a personalized, controllable agent.
+
+**Caption / export reliability:** Opus captions "a pain to fix"; Submagic "glitchy exports, disappearing words"; Captions.ai audio "goes out of sync" after export; AI B-roll inserts static images.
+
+**Cost / credits / lock-in:** Descript Trustpilot — *"a month's worth of credits lasts about a day."* Opus deletes projects 3 days after cancellation even with paid credits left. Captions.ai removed ~90% of avatars mid-annual-plan; refunds denied.
+
+**Stability:** Descript "froze twice trying to make a 60-second clip"; slow/laggy on long videos.
+
+**Homogenization ("AI slop"):** broad industry critique that AI output converges to the safe middle, smoothing out distinctive voices. (Note: this is industry-level, not yet a named pile-on against a specific clipper's templates.)
+
+---
+
+## 4. Local-First / Privacy — Is "Your Footage Never Leaves Your Machine" Real?
+
+**Yes, it's a real and currently-occupied positioning — but thinly, and not by anyone polished in short-form.** This is arguably your strongest wedge, amplified by a major 2025 scandal:
+
+**The CapCut backlash is the single biggest concrete privacy grievance in the market right now:** CapCut's June 12 2025 terms grant a *"perpetual, worldwide, royalty-free, irrevocable license"* to use/edit/monetize/sublicense user content — reportedly including name, face, voice, likeness in ads, applying even to **unpublished drafts and deleted accounts**. Plus a 2023 Illinois BIPA biometric class action. This is the clearest possible wedge for "your footage never leaves your machine."
+
+**The cloud-upload default:** Opus, Submagic, Captions, Vizard, vidyo.ai all **require uploading footage to their servers.** One competitor (Reelify) bluntly notes SaaS editors "must force the upload" because they can't run models locally.
+
+**Who actually runs local today:**
+- **DaVinci Resolve** — strongest mainstream local-AI story; Neural Engine runs inference *on your hardware* (transcription, Magic Mask, voice isolation), nothing leaves the machine. But it's heavy/pro, not short-form-tuned.
+- **Adobe Premiere Media Intelligence** — NL search runs locally, no internet, not used for training.
+- **Small/native/hobbyist privacy-first tools:** **Reelify** (native macOS, Apple Neural Engine, works fully offline), **VidStudio** (browser-local, WebCodecs+FFmpeg-WASM, "no account, bytes stay on device"), **Klippy** (browser, WebGPU+local Kokoro TTS — but self-labeled "hobbyist, not professional").
+- **DIY building blocks:** local Whisper apps (WhisperDesk, Vibe, Whispering), `auto-editor`, LosslessCut.
+
+**The gap:** there is **no dominant, polished, privacy-first short-form clipper for everyday creators.** DaVinci is too heavy; the local tools are hobbyist-grade. A local-first agent also sidesteps the cost structure that killed Sora (cloud inference ~$1M/day burn per WSJ) — **no per-minute credit metering** is both a privacy *and* an economic differentiator.
+
+---
+
+## 5. Faith / Worship / Niche Creator Tooling
+
+**The Christian/sermon-clip niche is real, crowded, and already well-served — entering it means competing on church-tuned selection + local privacy, not on being first.**
+
+- **Pulpit AI** (Subsplash-owned) — one sermon → 20+ content pieces (clips, devotionals, small-group guides, emails); claims 6–10 hrs/week saved.
+- **Sermon Shots** — 8,000+ churches; 5–15 clips/sermon; "AI Camera Crew" auto-centering; Free / $49.99 / $67 / $97/mo.
+- **Choppity** — ranked #1 in one roundup; "1 sermon → 30–50+ clips" with church-specific criteria (Scripture illustrations, calls to action).
+- **The Pulpit App** — captioned clips, no account; notably **"all your data stays in your browser"** — a faith-niche tool that's *also* local-first (validates the combined positioning).
+- **Pastors.ai** — YouTube link → free clips, devotionals, Bible studies, chatbot.
+- Adjacent worship media: **ProPresenter** (CCLI SongSelect + Planning Center lyrics), **FreeShow** (open-source), **Igniter Media "Creator AI."**
+
+**General tools market to churches too:** Opus Clip runs a dedicated church landing page ($9–19/mo). But comparisons note general clippers optimize for "viral" hooks that *"may miss quieter sermon moments"* — i.e., they lack church-tuned selection. That selection-taste gap is the niche opening.
+
+---
+
+## Market Context for Positioning
+
+- **Market size:** ~$3.67B in 2026 → $24.89B by 2036 (21.4% CAGR, Meticulous, broad definition). Figures vary 5x+ by scope — narrower "AI video generator" estimates are ~$788M–$947M for 2025/26.
+- **Funding/scale of leaders:** OpusClip ~$50M raised, $215M valuation (Mar 2025), 10M+ users (company-reported). Captions→**Mirage** raised $60M Series C at $500M (2024) + $75M (Mar 2026); pivoted from creator tool to AI research lab. Submagic **bootstrapped**, ~$8M ARR. Descript ~$100M raised, ~$550M (2022, no new round since). **Runway $315M Series E at $5.3B** (Feb 2026, ~$300M ARR). Pika ~$135M raised. VEED ~$45M.
+- **Reshaping launches:** Sora 2 (Sep 2025) → **shut down Apr 2026** on inference cost (~$1M/day burn, WSJ) — the cautionary tale for cloud economics. Google Veo 3/3.1 + Flow editor with "Agent Mode" testing. Adobe Firefly video timeline editor (public beta Dec 2025). Runway Aleph (Jul 2025).
+- **Pricing benchmark:** creator sweet spot ~$15–30/mo; "expensive" starts ~$50–70/mo; **credit-metering is universal** — anything processing hours of footage hits ceilings fast. A local-first agent with no per-minute compute markup structurally undercuts this.
+
+---
+
+## What This Means for Your Project (the whitespace)
+
+Three differentiators stack and **no single competitor combines them**:
+
+1. **Agent-native interaction** — the auto-clip middle is all GUI; only ~6 products are truly conversational, and the best (Descript, Eddie, Mosaic, Cardboard, Runway, Adobe) are **all cloud**.
+2. **Local-first / private** — occupied only by heavy-pro (DaVinci) or hobbyist tools (Reelify, VidStudio, Klippy); a16z's whole "agentic editing" roster is cloud. CapCut's 2025 rights backlash makes "footage never leaves your machine" a live, resonant pitch.
+3. **Taste / control / personalization** — the #1 functional complaint everywhere is "the AI picks wrong moments and I fix it manually." A local agent that learns *your* taste attacks the exact gap.
+
+**Watch-outs:** the faith niche is already crowded (compete on church-tuned selection + privacy, e.g. The Pulpit App already pairs niche + browser-local); MCP→Resolve/Premiere is a real, proven architecture pattern you can build on (1,277★ Resolve MCP exists); and the Sora shutdown is your economic thesis in one data point — local compute sidesteps the burn rate that kills cloud video.
+
+**Caveats carried from research:** Klap pricing is inconsistent across sources; Runway Aleph tier-access and Pika commercial-use rights conflict between official pages and reviews; ARR/user figures from aggregators (Sacra, Latka) are estimates, not audited; the Sora "$15M/day" figure is unverified (WSJ's ~$1M/day is the credible one); Cardboard's March 2026 launch date is single-source.
+agentId: a1ec520c946bd3140 (use SendMessage with to: 'a1ec520c946bd3140' to continue this agent)
+<usage>subagent_tokens: 81075
+tool_uses: 7
+duration_ms: 430790</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

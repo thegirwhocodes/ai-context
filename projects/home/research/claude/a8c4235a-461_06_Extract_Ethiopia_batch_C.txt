@@ -1,0 +1,61 @@
+========================================================================
+AGENT RESEARCH: Extract Ethiopia batch C
+Session: a8c4235a-461a-43aa-9300-1ddf4fc01847
+Time: 2026-05-04 18:27:37 UTC
+========================================================================
+
+You are extracting structured country-risk events from news articles for a Wesleyan QAC 386 text-mining project on **Ethiopia**.
+
+**Read this CSV:** `/Users/naomiivie/OneDrive - wesleyan.edu/Classes/Qac 386 - Text Mining/Project/cache/ethiopia/extractions/batch_c.csv`
+
+It has 17 rows with columns: `article_id`, `quarter`, `tier`, `title`, `text`, `domain`.
+
+**For each row,** produce one JSON object using ICRG-Lite framework:
+
+```json
+{
+  "article_id": "<from CSV>",
+  "quarter": "<from CSV>",
+  "article_relevance": "High|Medium|Low|Not relevant",
+  "events": [
+    {"risk_factor": "<one of the eight below>",
+     "direction_for_country_risk": "Positive|Negative|Mixed|Neutral",
+     "severity": "Low|Medium|High",
+     "evidence": "<short quote, ≤25 words>"}
+  ]
+}
+```
+
+**Eight allowed risk factors (use EXACTLY these names):**
+1. Government Stability — cabinet/leadership, election outcomes, succession (Abiy Ahmed, Prosperity Party transitions)
+2. Internal Conflict — Tigray war, Oromia/Amhara fighting, ethnic clashes, terrorism
+3. Corruption — procurement scandals, indictments
+4. Law & Order — judicial independence, police reform
+5. Inflation — CPI, food prices, fuel inflation
+6. GDP Growth — recession, expansion, agricultural output
+7. Exchange Rate Stability — birr vs USD, FX reserves, NBE rate decisions
+8. External Debt / Current Account — Eurobonds, IMF/World Bank, sovereign rating
+
+Direction: "Positive for country risk" = REDUCES risk. "Negative" = INCREASES risk.
+
+If no Ethiopia-relevant event → `events: []`. Multiple events per article OK.
+
+**Write JSONL** (one JSON per line, no commas, no array wrapper) to:
+`/Users/naomiivie/OneDrive - wesleyan.edu/Classes/Qac 386 - Text Mining/Project/cache/ethiopia/extractions/extractions_c.jsonl`
+
+Process ALL 17 rows. Use Write tool. After writing, run `wc -l` to verify.
+
+Return one-line confirmation only: "Wrote N lines, M articles had events, top factors: [...]". Don't paste full output.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a877427d26934ff50 (internal ID - do not mention to user. Use SendMessage with to: 'a877427d26934ff50' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/a8c4235a-461a-43aa-9300-1ddf4fc01847/tasks/a877427d26934ff50.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,362 @@
+========================================================================
+AGENT RESEARCH: Launch tech-stack research
+Session: d3d14989-ffdd-451d-897e-b8a571513b90
+Time: 2026-06-18 18:26:36 UTC
+========================================================================
+
+You are researching the LAUNCH ARCHITECTURE to turn a single-tenant personal app into a real multi-tenant SaaS that can sign up real paying users TODAY, on Next.js 16 (App Router) + React 19, deployed on Vercel.
+
+CURRENT STATE (important): The app "Kai Focus" currently has NO auth, NO database, NO billing. Every integration (Google Calendar, Gmail, Spotify) authenticates using the FOUNDER's OWN refresh tokens stored in Vercel env vars (GOOGLE_CALENDAR_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN, etc.). State is held in Zustand on the client. So it's effectively the founder's personal Kai deployed publicly. There is no concept of a "user."
+
+CONSTRAINT: The founder wants to launch with email-based accounts NOW (email/password or magic-link + email verification) because per-user Google OAuth requires Google's app verification which takes time. Per-user Google Calendar/Gmail OAuth and Spotify OAuth will be added later. So the v1 multi-tenant app must work WITHOUT those integrations being per-user yet — users get the focus room, timer, tasks, adaptive timing, and AI planning based on data THEY enter, with integrations gated behind "coming soon / connect later."
+
+GOAL: Produce a thorough, source-cited architecture report (aim 350–550 lines markdown) recommending the concrete stack and migration path. Verify current capabilities/pricing against official docs (use web search + fetch). Cover:
+
+1. AUTH: Compare Clerk vs Supabase Auth vs Auth.js (NextAuth v5) vs Better Auth for Next.js 16 App Router + email verification + future OAuth providers. Recommend ONE with reasoning. Note Vercel Marketplace native option (Clerk). Include free-tier limits and how email verification works in each. VERIFY on official docs.
+2. DATABASE: Recommend a Vercel-Marketplace-friendly Postgres (Neon vs Supabase Postgres) for storing: users, focus_blocks, tasks, sessions, ratings, per-user integration tokens (encrypted), subscriptions. Note Vercel Postgres/KV are deprecated — confirm and route to Marketplace. Give a concrete initial schema (tables + key columns) for Kai's data model: users, focus_blocks (start, end, planned/actual duration, status, task, focus_rating, interruptions, music_item, source), tasks, daily_rollups, integration_tokens, subscriptions.
+3. PER-USER INTEGRATION TOKENS: how to store Google/Spotify refresh tokens per user securely (encryption at rest, where keys live), and how to migrate from the single-env-var model to per-user without breaking the founder's current setup. The architecture should let integrations be OPTIONAL and per-user.
+4. BILLING: Stripe setup for SaaS subscriptions on Next.js/Vercel — Checkout vs Billing, customer portal, webhooks, free trial, the free/Plus/Founding tiers. Verify Stripe's current recommended integration. Note Vercel + Stripe patterns.
+5. EMAIL: transactional email for verification + weekly reports (Resend recommended on Vercel — verify), DNS/domain needs.
+6. MIGRATION PLAN: a concrete, ordered, do-it-today sequence to go from current single-tenant app to a minimum lovable multi-tenant launch: (1) add DB, (2) add auth + email verification, (3) gate the app behind login, (4) persist focus blocks per user, (5) add Stripe, (6) keep founder's env-var integrations working as a personal/demo fallback, (7) add per-user OAuth later. Identify what's truly required to charge the first dollar vs. what can wait.
+7. RISKS & GOTCHAS specific to Next.js 16 / React 19 / Vercel (server components, server actions, middleware auth patterns, env handling).
+
+End with a clear "RECOMMENDED STACK" summary box and a SOURCES section with URLs. Return the full markdown report as your final message.
+
+----------------------------------------
+
+Here is the full architecture report.
+
+---
+
+# Kai Focus — Launch Architecture: Single-Tenant → Multi-Tenant SaaS
+
+**Date:** 2026-06-18
+**Target stack:** Next.js 16.2.7 (App Router) + React 19.2 + Vercel
+**Current state:** No auth, no DB, no billing. All integrations (Google Calendar, Gmail, Spotify) use the founder's own refresh tokens in Vercel env vars. State lives in Zustand (`src/lib/store.ts`, `persist` to localStorage). It is effectively the founder's personal Kai deployed publicly.
+**Goal:** Sign up real, paying, email-verified users *today*, with Google/Spotify OAuth gated behind "connect later."
+
+---
+
+## 0. Grounding in the current codebase
+
+What already exists and shapes the migration (verified by reading the repo):
+
+- **Domain model is already well-typed** in `src/lib/types.ts`: `Block` (kind, plannedSec, elapsedSec, status, taskId, startedAt, endedAt, `focusRating` 1–5, `interruptions`), `Session` (blocks[], currentBlockIndex), `Task` (title, estimateBlocks, spentBlocks, done, priority, source, dueAt, sphere, notes, reason), `AgentSettings`, `KaiRecommendation`. **This is the schema blueprint** — the Postgres tables should mirror these almost field-for-field.
+- **State is client-only** — `src/lib/store.ts` is a Zustand store with `persist` middleware (localStorage). Nothing is server-persisted today. This is the single biggest gap: a multi-tenant app cannot keep focus history in localStorage.
+- **Integrations are single-env-var** — `src/lib/google/calendar.ts` reads `GOOGLE_CALENDAR_REFRESH_TOKEN` directly from `process.env`; `calendarConfigured()` returns a boolean. Gmail (`src/lib/google/gmail.ts`) and Spotify (`src/lib/spotify/spotify.ts`) follow the same pattern. This is the "founder's tokens" coupling to break.
+- **API routes already exist** under `src/app/api/` (agent, calendar, spotify, email, recommendation, web-search, tts, transcribe, commands, alexa) — all currently unauthenticated and all implicitly operating as the founder.
+- **A pricing page already exists** (`src/app/pricing/page.tsx`, 106 lines) and a `docs/BUSINESS_PLAN.md` — so tiers are already conceived; this report wires them to Stripe.
+
+**Implication:** the cleanest migration keeps the typed domain model, swaps the *persistence layer* from localStorage to a server DB keyed by `user_id`, and wraps everything in auth. The integration libs change from "read env" to "read this user's token, fall back to env for the founder."
+
+---
+
+## 1. AUTH
+
+### Requirements
+Email/password or magic-link **with email verification today**; OAuth providers (Google, Spotify) **added later** without re-platforming; must work cleanly with Next.js 16 App Router (Server Components, Server Actions, middleware/proxy) and the Edge/Node split.
+
+### The four candidates
+
+| | Clerk | Supabase Auth | Auth.js (NextAuth v5) | Better Auth |
+|---|---|---|---|---|
+| **Model** | Hosted SaaS, drop-in UI | Hosted (bundled w/ Supabase Postgres) | Library, self-hosted | Library, self-hosted, owns your DB tables |
+| **Free tier** | **50,000 MAU** (raised from 10k in 2026) | **50,000 MAU** | Free (you host) | Free (you host) |
+| **Email verification** | Built-in, hosted UI, no email infra needed | Built-in; **free tier = 2 verification emails/hour** on Supabase's shared SMTP unless you wire your own SMTP | You implement the verification token + email send yourself | `requireEmailVerification: true` + `sendVerificationEmail` callback you wire to your email provider |
+| **Future Google/Spotify OAuth** | First-class social connections, config in dashboard | First-class providers in dashboard | Providers config; mature | Social plugins; you control token storage |
+| **Next.js 16 fit** | `clerkMiddleware()`, `<ClerkProvider>`, `auth()` helper in RSC/Server Actions | `@supabase/ssr` cookie helpers; works but more wiring | v5 redesigned for App Router; DB sessions can't run on edge | Native server actions + cookies; ships its own middleware |
+| **Vercel Marketplace** | ✅ **Native integration** (Authentication category, July 2025) — one-click, auto-syncs env vars via `vercel env pull`, unified billing | Via Supabase Marketplace integration | n/a (it's a library) | n/a (it's a library) |
+| **Token storage for your own integrations** | Lives in Clerk | Lives in Supabase `auth` schema | In your DB | **In your DB, you own it** |
+
+### Recommendation: **Clerk** (via the Vercel Marketplace native integration)
+
+**Why, for *this* launch, today:**
+
+1. **Email verification is solved with zero email infrastructure.** Clerk hosts the sign-up, the verification email, and the verification page. You do **not** need Resend wired before you can verify a user — that removes an entire dependency from the critical path to first-dollar. (Supabase's free SMTP is capped at ~2 emails/hour and will throttle a real launch; Better Auth/Auth.js require you to build verification + send the email yourself before *anyone* can sign up.)
+2. **50,000 free MAU** is far beyond what's needed to validate the business — you will not pay for auth until well after product-market signal. Pro is $25/mo + $0.02/MAU only past 50k.
+3. **Native Vercel Marketplace integration** matches Naomi's standing preference (provision via Marketplace, unified billing, auto-synced env vars). One-click install creates the Clerk account and `vercel env pull` syncs `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` / `CLERK_SECRET_KEY` locally.
+4. **Future Google/Spotify OAuth slots in via dashboard config**, and `auth()` works inside Server Components and Server Actions on Next.js 16 — minimal middleware code (`clerkMiddleware()` in `proxy.ts`/`middleware.ts`).
+5. **Fastest path.** The whole point is "launch today"; Clerk is the only option where auth + verified email is a config step, not a build step.
+
+**Honest trade-off / when to revisit:** Clerk is a vendor and a recurring cost past 50k MAU, and it owns the identity record (you key your DB by Clerk's `user_id`). If Kai later needs to *store and refresh Google/Spotify tokens itself* (it does — see §3), those tokens live in **your** Postgres regardless of auth choice, so Clerk doesn't lock you in on the integration side. **Better Auth is the strong "own everything" alternative** and the one to migrate to if/when you want auth in your own DB with no per-MAU pricing — but it costs you the build-and-test of verification email flows now. For a launch-today posture, that cost isn't worth paying. **Pick Clerk now; Better Auth is the documented escape hatch.**
+
+> Note: Auth.js v5's own maintainers now point new projects toward Better Auth. Don't start a greenfield app on NextAuth in 2026 unless migrating an existing NextAuth codebase — which Kai is not.
+
+---
+
+## 2. DATABASE
+
+### Vercel Postgres is gone — route through the Marketplace
+**Confirmed:** Vercel transitioned all Vercel Postgres stores to Neon's native integration between Q4 2024 and Q1 2025; Vercel Postgres is no longer offered and the `@vercel/postgres` driver is no longer maintained. For new projects, install a Postgres integration from the **Vercel Marketplace**. (Vercel KV / Edge Config remain but are not your relational store.)
+
+### Neon vs Supabase Postgres
+
+| | **Neon** (recommend) | Supabase Postgres |
+|---|---|---|
+| Vercel Marketplace | ✅ Native, auto-provisions `DATABASE_URL`/`POSTGRES_URL` | ✅ via integration |
+| Serverless / autoscale-to-zero | ✅ (great for a pre-revenue app) | Always-on compute |
+| Driver | `@neondatabase/serverless` (HTTP for single queries, WS for txns), node-postgres compatible | `postgres`/`pg`, or Supabase client |
+| Branching | ✅ DB branch per preview deploy | Limited |
+| If you picked Supabase **Auth** | n/a | One vendor for auth+db |
+
+**Recommendation: Neon**, installed from the Vercel Marketplace. It auto-provisions the connection string into the project's env, autoscales to zero (you pay ~nothing pre-revenue), and supports per-preview branches. Since auth is **Clerk** (not Supabase Auth), there's no pull toward Supabase Postgres, so the better serverless Postgres wins. Use **Drizzle ORM** (lightweight, TypeScript-first, edge-friendly, matches the existing typed model) or Prisma if preferred.
+
+### Initial schema (mirrors `src/lib/types.ts`)
+
+All user-scoped tables carry `user_id` (Clerk user id, `text`) and have an index on it. Use `uuid` PKs except where Clerk supplies the id.
+
+```sql
+-- Identity mirror. Clerk is the source of truth for auth;
+-- this row is the local profile + the join target for all user data.
+create table users (
+  id              text primary key,            -- Clerk user id
+  email           text not null unique,
+  display_name    text,
+  plan            text not null default 'free', -- free | plus | founding
+  trial_ends_at   timestamptz,
+  created_at      timestamptz not null default now(),
+  settings        jsonb not null default '{}'   -- AgentSettings blob
+);
+
+-- One focus or break interval = one Block in the app.
+create table focus_blocks (
+  id               uuid primary key default gen_random_uuid(),
+  user_id          text not null references users(id) on delete cascade,
+  kind             text not null,               -- focus | short_break | long_break
+  status           text not null,               -- pending|running|paused|completed|abandoned
+  planned_sec      integer not null,            -- AdaptiveDecision.plannedSec
+  actual_sec       integer,                     -- Block.elapsedSec
+  started_at       timestamptz,
+  ended_at         timestamptz,
+  task_id          uuid references tasks(id) on delete set null,
+  focus_rating     smallint,                    -- 1..5, drives adaptive engine
+  interruptions    integer not null default 0,
+  music_item       jsonb,                       -- {mode, playlistId, trackUri} - null until Spotify connected
+  source           text not null default 'app', -- app | alexa | voice | autopilot
+  created_at       timestamptz not null default now()
+);
+create index on focus_blocks (user_id, started_at desc);
+
+create table tasks (
+  id               uuid primary key default gen_random_uuid(),
+  user_id          text not null references users(id) on delete cascade,
+  title            text not null,
+  estimate_blocks  integer,
+  spent_blocks     integer not null default 0,
+  done             boolean not null default false,
+  priority         text,                        -- low|medium|high|urgent
+  source           text not null default 'manual', -- manual|kai|calendar|email|alexa
+  sphere           text,                        -- Sabi | school | family | faith ...
+  due_at           timestamptz,
+  reason           text,
+  notes            text,
+  created_at       timestamptz not null default now()
+);
+create index on tasks (user_id, done, due_at);
+
+-- Pre-aggregated per-day stats for the dashboard + weekly email.
+-- Cheap to recompute; avoids scanning focus_blocks for charts.
+create table daily_rollups (
+  user_id              text not null references users(id) on delete cascade,
+  day                  date not null,
+  focus_minutes        integer not null default 0,
+  blocks_completed     integer not null default 0,
+  blocks_abandoned     integer not null default 0,
+  avg_focus_rating     numeric(3,2),
+  total_interruptions  integer not null default 0,
+  primary key (user_id, day)
+);
+
+-- Per-user OAuth tokens, ENCRYPTED. See §3.
+create table integration_tokens (
+  id                    uuid primary key default gen_random_uuid(),
+  user_id               text not null references users(id) on delete cascade,
+  provider              text not null,           -- google_calendar | gmail | spotify
+  encrypted_refresh     bytea not null,          -- AES-256-GCM ciphertext
+  enc_iv                bytea not null,          -- per-row nonce
+  enc_tag               bytea not null,          -- GCM auth tag
+  scopes                text[],
+  account_email         text,                    -- which Google/Spotify account
+  connected_at          timestamptz not null default now(),
+  unique (user_id, provider)
+);
+
+-- Stripe mirror. Webhook-driven; never trust the client.
+create table subscriptions (
+  user_id                text primary key references users(id) on delete cascade,
+  stripe_customer_id     text not null unique,
+  stripe_subscription_id text unique,
+  status                 text not null,          -- trialing|active|past_due|canceled|incomplete
+  price_id               text,                   -- which tier
+  current_period_end     timestamptz,
+  cancel_at_period_end   boolean not null default false,
+  trial_end              timestamptz,
+  updated_at             timestamptz not null default now()
+);
+```
+
+`AgentSettings` (currently `DEFAULT_SETTINGS` in code) is stored as `users.settings` JSONB rather than columns — it's a settings blob, evolves often, and is read whole. `Session` (the per-day grouping) is **not** a table; it's reconstructed by querying `focus_blocks where user_id = ? and started_at::date = today` — simpler and avoids a session-lifecycle bug surface.
+
+---
+
+## 3. PER-USER INTEGRATION TOKENS (Google / Spotify)
+
+### Storage: encrypted at rest, app-layer encryption
+Store each provider's **refresh token** in `integration_tokens`, encrypted with **AES-256-GCM** at the application layer before it ever touches the DB. Do **not** store plaintext and rely solely on Neon's at-rest disk encryption — app-layer encryption means a leaked DB dump is useless without the key.
+
+- **Key location:** a single 32-byte master key in `KAI_TOKEN_ENC_KEY` (Vercel env var, base64). Generate with `crypto.randomBytes(32)`. Optionally version it (`enc_key_version` column) so you can rotate later.
+- **Encrypt/decrypt** with Node `crypto` (`createCipheriv('aes-256-gcm', key, iv)`), storing ciphertext + per-row `iv` + GCM `auth tag`. Run this only in Node-runtime route handlers / Server Actions (Web Crypto is fine too, but Node `crypto` is simplest here). Never expose decrypted tokens to the client.
+- **Access tokens are never stored** — they're short-lived; mint them on demand from the refresh token, exactly as `accessToken()` in `src/lib/google/calendar.ts` already does, just sourced per-user.
+
+### Make integrations OPTIONAL and per-user
+Refactor each integration lib to accept a **token resolver** instead of reading `process.env` directly:
+
+```ts
+// pseudo: src/lib/integrations/resolveToken.ts
+async function getRefreshToken(userId: string, provider: Provider): Promise<string | null> {
+  // 1. per-user token from DB (decrypted)
+  const row = await db.query.integration_tokens...;
+  if (row) return decrypt(row);
+  // 2. FOUNDER FALLBACK: only for the founder's own user id
+  if (userId === FOUNDER_USER_ID && provider === 'google_calendar')
+    return process.env.GOOGLE_CALENDAR_REFRESH_TOKEN ?? null;
+  return null; // not connected -> feature shows "Connect later"
+}
+```
+
+`calendarConfigured()` becomes `await calendarConnected(userId)` returning `false` for everyone except the founder until they connect. The UI then renders the **"Coming soon / Connect later"** state for Calendar/Gmail/Spotify panels (`MusicPanel`, calendar UI), and the AI planner (`src/lib/life/recommend.ts`, `src/lib/agent/*`) plans purely from **user-entered tasks + the timer/adaptive history** when no integration is present.
+
+### Migration without breaking the founder
+This is the key insight: **the founder's env-var tokens become a per-user fallback, not a global default.** Map them to the founder's Clerk `user_id` via `FOUNDER_USER_ID`. The founder keeps full Calendar/Gmail/Spotify the moment auth ships; every other user gets the OAuth-gated experience. When per-user OAuth lands later, the founder can optionally move their own tokens into `integration_tokens` and the env vars retire — no flag day, no downtime.
+
+---
+
+## 4. BILLING (Stripe)
+
+### Checkout vs Billing — use both (they're not alternatives)
+Per Stripe's current docs, the recommended SaaS subscription path is **Stripe Billing + Stripe Checkout**: Billing models the subscription/prices/trials; **Checkout** is the hosted, PCI-handled payment page you redirect to. You do **not** build a custom card form. This is Stripe's own recommended integration and the least code.
+
+**Flow:**
+1. On sign-up (or upgrade), create a Stripe **Customer** keyed to the user; store `stripe_customer_id` in `subscriptions`.
+2. Create a **Checkout Session** (`mode: 'subscription'`) server-side in a Route Handler / Server Action, pass the `price_id` for the chosen tier, redirect the user.
+3. **Customer Portal** (hosted by Stripe) for upgrades/downgrades/cancel/update-card — link out to it; do not build billing management UI. (Portal can only modify/cancel existing subscriptions, not create new ones — creation goes through Checkout.)
+4. **Webhooks are the source of truth.** A `/api/stripe/webhook` Route Handler (Node runtime, raw body, signature-verified) listens for `checkout.session.completed`, `customer.subscription.created|updated|deleted`, `invoice.payment_failed`, and `customer.subscription.trial_will_end`, and writes status into the `subscriptions` table. **Never** grant access based on a client redirect — only on webhook state.
+
+### Free trial
+Configure the trial on the subscription (`trial_period_days`, e.g. 7 or 14). Status starts `trialing`, auto-converts to `active` when the trial ends and Stripe charges the saved card. `trial_will_end` fires 3 days prior — use it to send a "trial ending" email. A trial *with* a card collected at Checkout is the cleanest conversion path; a no-card trial is possible but requires gating logic.
+
+### Tiers (mirror the existing pricing page)
+- **Free** — focus room, timer, tasks, adaptive timing, manual planning. No card. (This is also the entire pre-OAuth product, so Free is genuinely usable.)
+- **Plus** — full AI planning, weekly email reports, integrations when they ship, history/analytics. Trial → paid monthly/annual.
+- **Founding** — early-supporter price locked in; a single higher Price with a launch-only flavor.
+
+Create three **Prices** in Stripe (test mode first), store the `price_id`s in env/config. The `users.plan` column is a denormalized convenience; `subscriptions.status` + `price_id` is authoritative.
+
+### Vercel + Stripe pattern
+Standard Vercel pattern: Checkout/portal/webhook all as Next.js **Route Handlers** with `runtime = 'nodejs'` (Stripe SDK + raw-body signature verification need Node, not Edge). Keep `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` in Vercel env. Register the webhook endpoint URL in the Stripe dashboard after the first production deploy.
+
+---
+
+## 5. EMAIL (transactional)
+
+### Recommendation: **Resend**
+For verification (if you ever move off Clerk's hosted emails) and especially for **weekly focus reports** and **trial-ending** notices, use **Resend** — the Vercel-ecosystem default, simple API, React Email templates.
+
+**Verified free tier:** 3,000 emails/month **but capped at 100/day**. That daily cap is the real constraint — a launch spike of sign-ups + password resets + weekly reports can blow 100/day. Plan to move to Pro ($20–35/mo, no daily cap) before any real volume. One verified custom domain on free; 30-day log retention; basic webhooks.
+
+**Critical sequencing point:** because **Clerk hosts verification email**, Resend is **not on the critical path to launch**. Wire Resend for the *weekly report / lifecycle* emails, which can ship a few days after first-dollar. This keeps launch-day scope minimal.
+
+### DNS / domain
+Resend requires verifying a sending domain (e.g. `mail.heykai.app` or the apex) via **SPF + DKIM** DNS records, plus ideally **DMARC**. Use a subdomain for transactional mail so reputation is isolated. If the domain is on Vercel DNS, add the records there. Allow propagation time — do this early even though sends come later.
+
+---
+
+## 6. MIGRATION PLAN — do-it-today, ordered
+
+The bar for **"charge the first dollar"** is: a user can **sign up, verify email, log in, use the focus room, and pay**. Everything else (per-user OAuth, weekly emails, Alexa) is post-first-dollar.
+
+**Required for first dollar (do today, in this order):**
+
+1. **Add the database.** Install **Neon** from the Vercel Marketplace → `DATABASE_URL` auto-provisioned. Add Drizzle, write the schema from §2, run the first migration. *(Founder's integration env vars stay untouched.)*
+2. **Add auth + email verification.** Install **Clerk** via the Vercel Marketplace native integration (auto-synced keys). Add `clerkMiddleware()`, `<ClerkProvider>`, sign-in/sign-up routes. Turn on **email verification** in the Clerk dashboard. On first login, **upsert a `users` row** (id = Clerk user id) — wire via Clerk webhook or a lazy upsert in a Server Action.
+3. **Gate the app behind login.** Protect `/app` and all `/api/*` route handlers — read `auth()` server-side, 401 if no session. The marketing pages (`/`, `/pricing`, `/privacy`, `/terms`) stay public. Set `FOUNDER_USER_ID` to the founder's Clerk id.
+4. **Persist focus blocks + tasks per user.** Replace the localStorage-only Zustand persistence with server reads/writes keyed by `user_id`: on block complete/rate, `INSERT` into `focus_blocks`; tasks `INSERT/UPDATE` into `tasks`; `AgentSettings` → `users.settings`. Keep Zustand as the live in-session client cache, but make the **server the source of truth** so a user's history follows them across devices. The adaptive engine (`src/lib/adaptive.ts`) is unchanged — it just reads blocks from the DB instead of memory.
+5. **Add Stripe.** Create Customer on sign-up, Checkout Session route, Customer Portal link, and the signature-verified webhook → `subscriptions` table. Three Prices (Free/Plus/Founding) with a trial on the paid tiers. Gate Plus features on `subscriptions.status in ('trialing','active')`. **This is the line where you can charge.**
+
+**Keep working through the cutover (no extra effort, just don't break it):**
+
+6. **Founder env-var integrations as personal/demo fallback.** Refactor `calendar.ts` / `gmail.ts` / `spotify.ts` to the per-user **token resolver** (§3) with the founder fallback. Every non-founder sees Calendar/Gmail/Spotify panels in **"Connect later"** state; the planner falls back to tasks-only. Founder keeps full integrations immediately.
+
+**Post-first-dollar (this week, not today):**
+
+7. **Per-user Google/Spotify OAuth.** Once Google app verification clears, add OAuth connect flows that write **encrypted** refresh tokens into `integration_tokens`. Flip the panels from "Connect later" to live per user. Founder's env vars can then retire.
+8. **Resend lifecycle emails** — weekly rollup report (from `daily_rollups`) + `trial_will_end` notice. Verify sending domain DNS.
+
+**Truly required vs. can wait:** Required = DB + Clerk + verification + login gate + per-user persistence + Stripe (steps 1–5). Can wait = per-user OAuth, transactional email beyond Clerk's, Alexa multi-tenancy, analytics dashboards.
+
+---
+
+## 7. RISKS & GOTCHAS — Next.js 16 / React 19 / Vercel
+
+- **This is not the Next.js in training data (per AGENTS.md).** Before writing auth middleware or route handlers, read the relevant guide in `node_modules/next/dist/docs/`. Middleware may be `proxy.ts` conventions; heed deprecation notices.
+- **Edge vs Node runtime for secrets & Stripe.** Stripe webhook signature verification needs the **raw request body** and the Node runtime — set `export const runtime = 'nodejs'`. Token encryption/decryption (Node `crypto`) and DB writes also belong in Node-runtime handlers, never Edge middleware. Clerk's `clerkMiddleware()` runs on Edge fine; keep heavy logic out of it.
+- **Don't trust the client for entitlement.** With Server Actions and RSC it's tempting to gate UI client-side. Always re-check `auth()` and `subscriptions.status` **server-side** in every Route Handler and Server Action. The Zustand store is a cache, not a security boundary.
+- **`persist` localStorage will silently fork state per device** until step 4 lands — a user on phone + laptop sees diverging history. Make the DB authoritative and hydrate the store from it on load.
+- **Server Actions + Clerk cookies:** Better Auth and Clerk both require cookies to be passed back correctly in Server Actions (Next.js server-action cookie handling). Follow the provider's Next.js integration doc exactly.
+- **Env var sprawl across environments.** Marketplace integrations (Neon, Clerk) auto-inject env vars per environment; Stripe/Resend you add manually. Keep **test** Stripe keys in Preview, **live** keys in Production only. Use `vercel env pull` to sync locally; never commit `.env.local`.
+- **`@vercel/postgres` is dead** — do not let any scaffolding pull it in; use `@neondatabase/serverless` or `pg` via Drizzle.
+- **Founder fallback is a security-sensitive branch.** The `if (userId === FOUNDER_USER_ID)` path hands out the founder's real Google/Spotify access. Guard it tightly, server-side only, and remove it once per-user OAuth ships.
+- **Webhook idempotency & race with sign-up.** Stripe and Clerk webhooks can arrive before/after the user row exists. Make handlers idempotent and upsert defensively (`on conflict do update`).
+
+---
+
+## RECOMMENDED STACK
+
+| Layer | Choice | Why |
+|---|---|---|
+| **Auth + email verification** | **Clerk** (Vercel Marketplace native) | 50k free MAU; hosted verification = zero email infra on critical path; one-click Marketplace, auto-synced env; social OAuth ready for later |
+| **Database** | **Neon Postgres** (Vercel Marketplace) | Vercel Postgres is deprecated → Neon; serverless autoscale-to-zero; preview branching; `@neondatabase/serverless` |
+| **ORM** | **Drizzle** | TS-first, lightweight, matches existing typed model |
+| **Per-user integration tokens** | **AES-256-GCM app-layer encryption** in `integration_tokens`, key in `KAI_TOKEN_ENC_KEY` | DB dump is useless without the key; founder env vars become a per-user fallback |
+| **Billing** | **Stripe Billing + Checkout + Customer Portal**, webhook-driven `subscriptions` table | Stripe's recommended SaaS path; hosted payment page; trial via `trial_period_days` |
+| **Transactional email** | **Resend** (Pro before volume; 100/day free cap) | Vercel default; off the launch-day critical path thanks to Clerk-hosted verification |
+| **Hosting/runtime** | Vercel; Node runtime for Stripe/crypto/DB handlers, Edge for Clerk middleware | Raw-body + Node `crypto` need Node |
+
+**First-dollar critical path:** Neon → Clerk (verification on) → login gate → per-user persistence → Stripe. Everything else ships after.
+
+---
+
+## SOURCES
+
+- [Clerk Pricing Update — 50k Free MAU](https://saasprices.net/blog/clerk-free-plan-changes)
+- [Clerk Pricing: The Complete Guide (SuperTokens)](https://supertokens.com/blog/clerk-pricing-the-complete-guide)
+- [Integrate Clerk through the Vercel Marketplace (Clerk Docs)](https://clerk.com/docs/guides/development/integrations/platforms/vercel-marketplace)
+- [Clerk for Vercel (Vercel Marketplace)](https://vercel.com/marketplace/clerk)
+- [Clerk is now available on the Vercel Marketplace (changelog)](https://clerk.com/changelog/2025-07-14-vercel-marketplace-integration)
+- [Better Auth vs Clerk vs NextAuth vs Supabase Auth (Makerkit)](https://makerkit.dev/blog/tutorials/better-auth-vs-clerk)
+- [I tested every major auth library for Next.js in 2026 (LogRocket)](https://blog.logrocket.com/best-auth-library-nextjs-2026/)
+- [Better Auth — Email & Password Authentication (docs)](https://www.better-auth.com/docs/authentication/email-password)
+- [Supabase Free Tier Limits 2026](https://www.iloveblogs.blog/post/supabase-free-tier-limits-2026)
+- [Supabase Auth Rate Limits (docs)](https://supabase.com/docs/guides/auth/rate-limits)
+- [Vercel Postgres Transition Guide (Neon Docs)](https://neon.com/docs/guides/vercel-postgres-transition-guide)
+- [Connecting with the Vercel-Managed Integration (Neon Docs)](https://neon.com/docs/guides/vercel-managed-integration)
+- [Neon for Vercel (Vercel Marketplace)](https://vercel.com/marketplace/neon)
+- [Postgres on Vercel (docs)](https://vercel.com/docs/postgres)
+- [Build a subscriptions integration with Checkout (Stripe Docs)](https://docs.stripe.com/payments/checkout/build-subscriptions)
+- [Using webhooks with subscriptions (Stripe Docs)](https://docs.stripe.com/billing/subscriptions/webhooks)
+- [Provide a customer portal (Stripe Docs)](https://docs.stripe.com/customer-management)
+- [Configure trial offers on subscriptions (Stripe Docs)](https://docs.stripe.com/billing/subscriptions/trials)
+- [Resend Pricing](https://resend.com/pricing)
+- [Resend account quotas and limits (docs)](https://resend.com/docs/knowledge-base/account-quotas-and-limits)
+
+---
+
+**Key codebase files referenced:** `/Users/naomiivie/kai/src/lib/types.ts` (the schema blueprint), `/Users/naomiivie/kai/src/lib/store.ts` (localStorage → server persistence target), `/Users/naomiivie/kai/src/lib/google/calendar.ts` (`calendarConfigured()` / `accessToken()` — the env→per-user refactor point), `/Users/naomiivie/kai/src/lib/google/gmail.ts`, `/Users/naomiivie/kai/src/lib/spotify/spotify.ts`, `/Users/naomiivie/kai/src/app/api/*` (routes to put behind auth), `/Users/naomiivie/kai/src/app/pricing/page.tsx` and `/Users/naomiivie/kai/docs/BUSINESS_PLAN.md` (existing tier definitions to wire to Stripe).
+agentId: a87b9e71726968768 (use SendMessage with to: 'a87b9e71726968768' to continue this agent)
+<usage>subagent_tokens: 66815
+tool_uses: 12
+duration_ms: 212678</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://newsletter.blogs.wesleyan.edu/2015/03/02/espwesso/
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 03:52:55 UTC
+========================================================================
+
+URL: https://newsletter.blogs.wesleyan.edu/2015/03/02/espwesso/
+Extraction prompt: Extract the full story of how Espwesso was founded: who started it, what year, what permissions they needed, who they worked with at the administration, how they got the space in Allbritton, how it operates as a business (LLC? club? co-op?), how they handle health inspection and food permits, how they pay students, and any other operational details. Quote directly.
+
+----------------------------------------
+
+# Espwesso Founding Story: Limited Information Available
+
+The provided article does not contain a comprehensive founding story for Espwesso. Here's what can be extracted:
+
+**Origins and Leadership:**
+The article mentions that "The movement to expand hours began last year and was spearheaded by former manager Jacob Eichengreen '13 and Wesleyan Student Assembly Vice President Andrew Trexler '14." However, this refers to the 2015 expansion, not the original founding.
+
+**Operational Details:**
+The article identifies Espwesso as a "student-run café" managed by Jasmine Masand '15, with rising manager Emily Pfoutz '16. Staff members like Rick Manayan '17 operate the espresso machines.
+
+**Sourcing:**
+Coffee comes from "New Harvest Coffee Roasters in Pawtucket, R.I." and dairy from "Wildowsky's Dairy in Lisbon, Conn."
+
+**Sustainability Practices:**
+The café offers "free drip coffee to customers who bring their own mugs" and staff use "rags instead of disposable towels or napkins."
+
+**Missing Information:**
+The article does not address founding details, administrative permissions, business structure (LLC, club, co-op), health inspections, food permits, student compensation, or how the Allbritton Center space was obtained.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

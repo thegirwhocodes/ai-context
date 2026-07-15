@@ -1,0 +1,63 @@
+========================================================================
+AGENT RESEARCH: Find all lecture slides
+Session: 95664b74-4847-42e3-b756-037e6276e5eb
+Time: 2026-03-30 00:47:26 UTC
+========================================================================
+
+Find all lecture slide files (PDF, PPTX, slides, lecture) in /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/. Search recursively. List every match with its full path. Be very thorough - check all subdirectories and naming conventions.
+
+----------------------------------------
+
+Perfect! I've found all the lecture slide files. Let me compile the complete list organized by file type.
+
+## Complete List of Lecture Slide Files
+
+### PDF Files (Lecture/Slide related):
+
+**Econ 333 - Financial Intermediation (Lecture PDFs):**
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #1 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #2 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #3 S26 Moodle-2.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #4 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #5 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #6 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #7 S26 Moodle.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Econ 333 Lecture #8 S26 Moodle.pdf
+
+**Econ 349 - Economic Growth (Lecture Handouts):**
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 1_handout - updated.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 2 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 3 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 4 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 5 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 6 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 7 handout.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 8 handout-2.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 9 handout-3.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 10 handout-3.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 11 handout-3.pdf
+
+**Econ 333 - Presentation Papers (PDFs):**
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 17 (History) Jalil 2015 AEJ Macro.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 19 (2007-09) Yorulmazer 2014 NY FED.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 24 (MMF) Lei et al 2021 Review Financial Studies.pdf
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 26 (Contagion) Izumi et al FRB WP.pdf
+
+### PowerPoint Files:
+
+- /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Presentations on Papers/Feb. 17 (History) Jalil 2015 AEJ Macro.pptx
+
+## Summary:
+
+**Total lecture slide files found: 24**
+- 23 PDF files (21 lecture PDFs, 2 presentation PDFs, with 1 duplicate)
+- 1 PPTX file
+
+The lecture files are distributed across three courses:
+- Econ 333 - Financial Intermediation: 8 numbered lecture PDFs
+- Econ 349 - Economic Growth: 11 lecture handout PDFs
+- Presentations on Papers: 4 presentation-related files (1 PPTX, 3 PDFs)
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://sharongoldman.substack.com/p/i-went-to-dc-for-eric-schmidts-ai
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:19:17 UTC
+========================================================================
+
+URL: https://sharongoldman.substack.com/p/i-went-to-dc-for-eric-schmidts-ai
+Extraction prompt: A journalist's first-person account of the AI+ Expo 2025. Extract atmosphere, vibe, what they saw, key quotes, hackathon coverage if any, winning projects, exhibitor highlights, defense industry presence, the demo experience for hackathon teams.
+
+----------------------------------------
+
+# AI Expo 2025: Sharon Goldman's On-the-Ground Report
+
+## Atmosphere & Vibe
+
+The Walter E. Washington Convention Center buzzed with an intense focus on national security. Goldman describes a "crowded" scene where "drones buzz overhead" among thousands of government, academic, and private sector professionals. The dominant mood: urgency around U.S.-China technological competition.
+
+## Key Observations
+
+**Defense Integration**: The expo normalized Big Tech's embrace of military contracts. Commerce Secretary Howard Lutnick stressed the stakes: "We must win the AI race, the quantum race" and emphasized building additional power infrastructure for AI data centers.
+
+**Military Focus**: Discussions centered on AI's battlefield applications—particularly Ukrainian drone attacks on Russian bases—rather than productivity gains or job displacement concerns.
+
+## Notable Exhibitor Highlights
+
+- **OpenAI**: Showcased its o3 reasoning model deployed on a secure Los Alamos National Laboratory supercomputer
+- **Meta**: Partnered with defense contractor Anduril on EagleEye, a military augmented reality headset
+- **Scale AI**: Expanding government and DoD contracts for data labeling services
+
+## Gala Event
+
+The Washington AI Network gala featured sponsorships from OpenAI, Meta, Microsoft, and Amazon, with IBM as a table sponsor.
+
+## Hackathon Coverage
+
+The article contains no hackathon information or winning project details.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,53 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.signapse.ai/post/breaking-barriers-in-ai-sign-language-translation-s
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:07 UTC
+========================================================================
+
+URL: https://www.signapse.ai/post/breaking-barriers-in-ai-sign-language-translation-signapses-journey-from-concept-to-reality
+Extraction prompt: Extract ALL details: Signapse's founding story, technical evolution, key breakthroughs, how they achieved photo-realism, accuracy journey, Deaf community involvement, challenges overcome, current capabilities. Full details.
+
+----------------------------------------
+
+# Signapse: AI Sign Language Translation Journey
+
+## Founding Story
+
+Signapse emerged from the convergence of personal experience, academic expertise, and technical innovation:
+
+- **Sally Chalk (CEO)**: Former founder of Clarion Interpreting Limited (UK's largest BSL interpreting business), trained in social work and linguistics
+- **Ben Saunders (CTO)**: Exposed to sign language through his mother; studied AI at University of Surrey
+- **Richard Bowden (Chief Scientist)**: Developed finger-spelling recognition systems during PhD research
+
+The company was "born during lockdown and officially launched in spring 2022" with a mission to revolutionize accessibility.
+
+## Technical Evolution & Key Breakthroughs
+
+**Core Innovation**: The team transitioned from academic research to commercial product by developing photorealistic digital signers rather than graphical avatars. They created "AI-driven video generation techniques" producing signers "indistinguishable from a human signer."
+
+**Major Achievement**: Achieved unconstrained translation for British Sign Language (BSL), expanding beyond initial limitations.
+
+**Academic Partnership**: Close collaboration with University of Surrey's Centre for Vision, Speech, and Signal Processing (CVSSP) drove research advancements.
+
+## Photo-Realism Achievement
+
+Signapse prioritizes "authenticity and inclusivity" by rejecting avatars in favor of lifelike representations that "preserve the nuances and cultural richness of the Deaf community."
+
+## Challenges Overcome
+
+- **Sally**: Navigated startup dynamics after leaving established SME; relearned fundamentals in team-building and fundraising
+- **Ben**: Scaled AI-driven technologies from research into viable products; managed engineering optimization hurdles
+- **Richard**: Bridged perception gaps between hearing and Deaf communities; educated both on technology-human interpreter symbiosis
+
+## Current Capabilities
+
+- Real-time BSL/ASL for broadcast and digital platforms
+- SignStream API for integration
+- SignStudio platform for content creation
+- Transport solutions
+
+Their vision extends toward expanding into "the global video translation market" while enhancing Deaf accessibility worldwide.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

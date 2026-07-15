@@ -1,0 +1,40 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT training data size hours Nigerian movies podcasts how much audio data Az
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:48:54 UTC
+========================================================================
+
+Search query: YarnGPT training data size hours Nigerian movies podcasts how much audio data Azeez Saheed
+
+----------------------------------------
+
+Web search results for query: "YarnGPT training data size hours Nigerian movies podcasts how much audio data Azeez Saheed"
+
+Links: [{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"How this UNILAG student built an AI model with local accent","url":"https://techpoint.africa/2025/02/04/how-unilag-student-created-yarngpt-ai/"},{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/how-to/"},{"title":"How Azeez, Unilag’s student built a Nigerian accent AI text-to-speech model - Businessday NG","url":"https://businessday.ng/bd-weekender/article/how-azeez-unilags-student-built-a-nigerian-accent-ai-text-to-speech-model/"},{"title":"Saheed Azeez Releases YarnGPT, a Text-To-Speech Model for Nigerians — BlackGeeks Nigeria","url":"https://blackgeeks.com.ng/saheed-azeez-releases-yarngpt-a-text-to-speech-model-for-nigerians/"},{"title":"Free AI Nigerian Voice Cloning In 30 Seconds! No Sign-up Required. | Speechify","url":"https://speechify.com/voice-cloning/nigerian/"},{"title":"Effective TTS Training: Required Hours and Samples","url":"https://www.futurebeeai.com/knowledge-hub/effective-tts-training-hours-samples"},{"title":"PodGPT: an audio-augmented large language model for research and education | npj Biomedical Innovations","url":"https://www.nature.com/articles/s44385-025-00022-0"}]
+
+Based on the search results, here's what I found about YarnGPT's training data:
+
+## Training Data Sources
+
+YarnGPT's training data includes Nigerian movies, podcasts, and open-source audio. More specifically, the developer gathered a diverse Nigerian audio dataset, including dialogues from Nigerian movies, conversations and other local content.
+
+## Data Collection Challenges
+
+Interestingly, while Nollywood produces over 2,500 movies a year, and with many filmmakers uploading their work to YouTube, it seemed like there was plenty of data to work with, the audio wasn't up to the standard needed, and their subtitles were inaccurate.
+
+## Solution
+
+The developer combined the audio from Nigerian movies with high-quality datasets from Hugging Face to train the model.
+
+## Training Duration
+
+After about two months of constant training on Google Colab, YarnGPT had learned Nigerian accents, intonations, and pronunciation nuances.
+
+**Note:** The search results do not provide specific information about the exact total number of hours of audio data used to train YarnGPT. The sources focus more on the sources of data (movies, podcasts) and the challenges faced in data collection rather than quantifying the exact volume of audio hours used.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

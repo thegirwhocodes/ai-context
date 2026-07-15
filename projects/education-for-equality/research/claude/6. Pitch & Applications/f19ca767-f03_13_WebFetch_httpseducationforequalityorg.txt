@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://educationforequality.org
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-03 20:09:18 UTC
+========================================================================
+
+URL: https://educationforequality.org
+Extraction prompt: What is this website? Who runs it? What does it look like?
+
+----------------------------------------
+
+# Based on the Provided Content
+
+Based solely on the code snippet shown, I can only determine the following:
+
+**What it does:** This is a redirect script. When the page loads, it automatically sends visitors to a "/lander" path.
+
+**What we don't know:** The snippet provides no information about the website's identity, ownership, purpose, or visual appearance. The code is just a simple JavaScript redirect—it tells us nothing about:
+- The organization running it
+- The site's branding or design
+- Its actual function or content
+
+To answer your questions comprehensively, I would need additional content from the actual webpage, such as visible text, images, metadata, or HTML structure.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

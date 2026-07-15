@@ -1,0 +1,312 @@
+========================================================================
+AGENT RESEARCH: Research Submagic editing style
+Session: 4db243fe-8c53-4a06-b646-3267aa36c54d
+Time: 2026-03-17 21:42:23 UTC
+========================================================================
+
+Research the viral editing style of Submagic (the AI caption/video editing tool). I need to understand:
+
+1. Search for Submagic on GitHub - any open source repos, clones, or similar tools
+2. What makes Submagic's caption style "viral" - the specific visual techniques:
+   - Font styles, sizes, colors
+   - Word-by-word highlight animation
+   - Text effects (bounce, scale, glow, shadow)
+   - Positioning and timing
+   - Emoji integration
+   - Color schemes
+3. Search for any open-source alternatives or tools that replicate the Submagic style (e.g., auto-subtitle generators, caption animators)
+4. Look for any Python libraries or DaVinci Resolve scripts that create similar animated captions
+
+Search GitHub for: "submagic", "viral captions", "animated subtitles davinci resolve", "word by word captions", "tiktok captions python"
+
+Also web search for: "submagic caption style breakdown", "how to recreate submagic captions", "viral caption editing technique"
+
+Give me ALL technical details - fonts used, animation keyframes, timing intervals, color hex codes, everything needed to recreate it programmatically.
+
+----------------------------------------
+
+Now I have comprehensive information. Let me compile the full research report.
+
+---
+
+# Submagic Viral Caption Style: Complete Technical Research
+
+## 1. SUBMAGIC ON GITHUB
+
+Direct GitHub search for "submagic" found **no official open-source repos**. The results are either unrelated projects or placeholder/clone repos:
+
+- `danilojm/auto-sub-generator` - Labeled "SubMagic" but minimal implementation
+- `hmsq7518/submagic` - Marketing description repo, not actual code
+- `waleeddotdev/HinglishMagic` - Hindi/Urdu to Hinglish text converter for Submagic captions
+
+Submagic itself (`submagic.co`) is a **closed-source SaaS product** with no public API or SDK.
+
+---
+
+## 2. WHAT MAKES SUBMAGIC'S CAPTION STYLE "VIRAL" -- FULL TECHNICAL BREAKDOWN
+
+### 2.1 Font Styles & Sizes
+
+Submagic offers multiple creator-specific templates. The most popular fonts in the viral caption ecosystem:
+
+| Font | Usage | Weight | Case |
+|------|-------|--------|------|
+| **Anton** (Google Font) | Hormozi "new style" | 400 (only weight) | UPPERCASE |
+| **TheBoldFont** (free) | Hormozi "classic style" | Bold | UPPERCASE |
+| **Komika** | MrBeast "Beast" template | Bold | UPPERCASE |
+| **Montserrat** | Iman Gadzhi style | Light + Bold (200-700) | lowercase |
+| **Bebas Neue** | Fitness/motivation | 400 | UPPERCASE |
+| **Poppins** | Lifestyle content | 600+ | Mixed |
+
+**Size specifications:**
+- Optimal: **12-20% of screen height** (for 1080x1920 vertical video, that is roughly **230-384px**)
+- Font size in MoviePy/programmatic terms: **fontsize=90** for basic, up to **150+** for emphasized keywords
+- MrBeast style uses only **2 words per subtitle line** (very large text)
+- General best practice: **4-6 words per two-line segment**
+
+### 2.2 Word-by-Word Highlight Animation
+
+This is the core "viral" mechanic. How it works:
+
+- **Base state**: All words displayed in primary color (usually white `#FFFFFF`)
+- **Active/narrated word**: Highlighted in accent color as it is spoken
+- **Highlight colors available in Submagic**: Orange (`#FF5100` is Submagic's brand orange), white, black, plus custom hex
+- **Popular highlight colors in the ecosystem**:
+  - Yellow: `#F7C204` or `#FFC107` (warm yellow, most common)
+  - Green: `#4ADE80` (MrBeast's keyword color)
+  - Blue: `#60A5FA`
+  - Red/Orange for urgency
+
+The karaoke-style word highlight is achieved through **word-level timestamps from Whisper transcription** -- each word gets a precise `start` and `end` time, and the highlight color/effect is applied only during that word's time window.
+
+### 2.3 Text Effects
+
+**Shadow Settings (industry standard):**
+- Opacity: 100%
+- Blur: 70%
+- Distance: 14%
+- Angle: 10 degrees
+- Multi-layer CSS approach: `text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 3px rgba(0,0,0,0.7)`
+
+**Stroke/Outline:**
+- Width: **5-8px** black stroke for maximum contrast
+- Hormozi new style: Yellow stroke specifically
+- MrBeast: Black stroke, high weight
+
+**Animation Effects:**
+- **Pop-in / Scale**: Word scales from 0.7 to 1.0 over 0.3 seconds (with optional overshoot to ~1.05)
+- **Bounce**: Spring-like easing with overshoot, word drops in from above or pops up from below
+- **Slide-in**: Word slides from bottom to top (Hormozi style)
+- **Fade**: Opacity 0 to 1 transition
+- **Glow**: Outer glow effect using layered text-shadow with the highlight color, sizes S/M/L (MrBeast "Beast" template)
+- **Light-to-Bold transition**: Text weight animates from light (200) to bold (700) as word is spoken (Iman Gadzhi style)
+
+### 2.4 Positioning and Timing
+
+**Position:**
+- Vertical center or **lower-third** of the frame (most common for short-form)
+- Horizontally centered
+- For 1080x1920: text centered at approximately y=960 (middle) or y=1300-1400 (lower third)
+
+**Timing:**
+- Captions appear **0.1-0.3 seconds before** the corresponding audio (read-ahead)
+- Word-by-word highlight duration: determined by Whisper word-level timestamps (typically 100-500ms per word)
+- Animation duration per word: **0.2-0.3 seconds** for pop/scale effects
+- Max **32-42 characters per line** (5-7 words)
+
+### 2.5 Emoji Integration
+
+Submagic auto-inserts contextual emojis alongside captions. Technical approach:
+- Emojis placed adjacent to keywords (before or after the word)
+- Animated in sync with the word they accompany
+- AI selects emojis based on semantic content (e.g., money-related words get a money emoji)
+- Density: roughly 1 emoji per 5-10 words (varies by style)
+
+### 2.6 Color Schemes
+
+**Standard viral palette:**
+- Primary text: `#FFFFFF` (white)
+- Stroke/outline: `#000000` (black)
+- Keyword highlight: `#F7C204` (yellow) or `#FF5100` (orange)
+- Background box (if used): `#000000` at 50-80% opacity
+
+**MrBeast palette:** White + Black text, Green (`#4ADE80`) highlights, colored shadows
+**Hormozi palette:** White text, yellow stroke, no background box
+**Gadzhi palette:** White only, no highlights, minimalist
+
+---
+
+## 3. OPEN-SOURCE ALTERNATIVES AND TOOLS
+
+### Tier 1: Direct Submagic-style Replication
+
+**pycaps** (Python, MIT License)
+- GitHub: `github.com/francozanardi/pycaps`
+- **Best open-source match for Submagic-style captions**
+- CSS-based styling with `.word-being-narrated` class for karaoke effect
+- Built-in animations: fades, pops, slides, typewriting
+- AI-powered semantic word tagging (highlight ingredients, actions, etc.)
+- Whisper transcription for word-level timestamps
+- Template system for reusable styles
+- Install: `pip install "git+https://github.com/francozanardi/pycaps.git#egg=pycaps[all]"`
+- Status: Alpha, MIT license
+
+**auto-subs** (DaVinci Resolve plugin)
+- GitHub: `github.com/tmoroney/auto-subs` (2.9k stars, 800k+ downloads)
+- Integrates directly into DaVinci Resolve via Workspace > Scripts
+- Speaker diarization with automatic colors
+- Fill, outline, border customization
+- Built on Tauri (TypeScript + Rust + Lua)
+- Does NOT work with Mac App Store version of Resolve
+
+### Tier 2: Word-by-Word Caption Generators (Python)
+
+**Basic MoviePy + Whisper approach** (from angel1254.com tutorial):
+```python
+from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
+import whisper_timestamped as whisper
+
+# Transcribe with word-level timestamps
+audio = whisper.load_audio("video.mp4")
+model = whisper.load_model("small", device="cpu")
+results = whisper.transcribe(model, audio, language="en")
+
+# Generate word-by-word text clips
+for segment in results["segments"]:
+    for word in segment["words"]:
+        clip = TextClip(
+            word["text"],
+            fontsize=90,
+            font="Arial-Bold",
+            color="white",
+            stroke_width=5,
+            stroke_color="white",
+            method='caption'
+        ).set_start(word["start"]).set_end(word["end"]).set_position("center")
+```
+
+Key libraries: `moviepy`, `whisper-timestamped`, `Pillow`
+
+**Other notable repos:**
+- `m1guelpf/auto-subtitle` - Auto-generate and overlay subtitles (popular, actively maintained)
+- `Huanshere/VideoLingo` - Netflix-level subtitle cutting/translation/alignment (most popular open-source Submagic alternative per AlternativeTo)
+- `RedWilly/YT-Automation` - Word-by-word captions with AssemblyAI + FFmpeg
+- `Aavtic/thamburaan` - Word-by-word captioning on green-screen video
+- `LikithMeruvu/AI-Clipping-Software` - AI clip selection + face tracking + word-by-word captions
+
+### Tier 3: DaVinci Resolve Specific
+
+**srt_to_textplus** (`github.com/atmosfar/srt_to_textplus`)
+- Python 2.7 script that generates TextPlus nodes in Fusion compositions
+- Animates based on SRT timecodes
+
+**DaVinci Resolve 20 Built-in:**
+- Effects > Titles > Subtitles > Animated > **Word Highlight** effect
+- Five built-in animation types: Lollipop, Rotate, Slide In, Statement, Word Highlight
+- Drag animation onto caption track header to apply to all captions
+- Customizable: font, size, color, highlight color, outline, background
+
+**MagicSubtitles PRO** (`mralextech.com/magicsubtitlespro`) - Paid Resolve plugin
+**SnapCaptions** (`orsonlord.com/snapcaptions2`) - Paid captioning plugin for Resolve
+
+---
+
+## 4. PYTHON LIBRARIES AND TOOLS FOR PROGRAMMATIC RECREATION
+
+### Core Stack
+
+| Library | Purpose | Install |
+|---------|---------|---------|
+| `whisper-timestamped` | Word-level transcription | `pip install whisper-timestamped` |
+| `moviepy` | Video composition & text overlay | `pip install moviepy` |
+| `Pillow` (PIL) | Text rendering with custom fonts | `pip install Pillow` |
+| `pycaps` | Full CSS-styled animated subtitles | Install from GitHub |
+| `ffmpeg` | Media encoding | System install |
+
+### Animation Keyframe Specifications (for programmatic recreation)
+
+**Pop/Scale animation:**
+```
+t=0.00s: scale=0.7, opacity=0.0
+t=0.10s: scale=1.05, opacity=1.0  (overshoot)
+t=0.20s: scale=0.98              (settle back)
+t=0.30s: scale=1.0               (rest)
+```
+
+**Bounce animation:**
+```
+t=0.00s: translateY=+30px, opacity=0.0
+t=0.12s: translateY=-5px, opacity=1.0
+t=0.20s: translateY=+2px
+t=0.30s: translateY=0px            (rest)
+```
+
+**Fade-in:**
+```
+t=0.00s: opacity=0.0
+t=0.15s: opacity=1.0
+```
+
+**CSS for pycaps karaoke highlight:**
+```css
+.word {
+  font-family: 'Anton', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000,
+               1px -1px 0 #000, -1px 1px 0 #000,
+               2px 2px 3px rgba(0,0,0,0.7);
+  padding: 2px 3px;
+}
+
+.word-being-narrated {
+  color: #FFC107;
+  transform: scale(1.1);
+  transition: all 0.15s ease-out;
+}
+```
+
+### Timing Intervals
+
+- Whisper "small" model: Best balance of speed/accuracy for word-level timestamps
+- Word gap threshold: If gap between words > 500ms, start a new caption segment
+- Segment character limits: `min_limit=10, max_limit=15` characters per segment (pycaps default)
+- Caption pre-roll: 100-300ms before audio onset
+
+---
+
+## Summary of Recommended Approach
+
+For **Python-based recreation**: Use `pycaps` (most feature-complete, CSS-based styling, templates, semantic tagging) or the `moviepy` + `whisper-timestamped` stack for maximum control.
+
+For **DaVinci Resolve**: Use the built-in Word Highlight animated subtitle effect in Resolve 20+, or `auto-subs` plugin for AI-powered transcription directly in the Resolve workflow.
+
+The key to the "viral" look is: **bold sans-serif font (Anton/TheBoldFont) in uppercase, white text with heavy black stroke (5-8px), word-by-word yellow highlight synced to speech via Whisper timestamps, and a pop/scale animation (0.3s, starting at 70% scale) on each highlighted word.**
+
+Sources:
+- [Submagic - Hormozi Caption Style](https://www.submagic.co/blog/how-to-make-alex-hormozi-captions)
+- [Submagic - MrBeast Caption Style](https://www.submagic.co/blog/how-to-make-captions-like-mrbeast)
+- [Submagic - Iman Gadzhi Caption Style](https://www.submagic.co/blog/how-to-make-captions-like-iman-gadzhi)
+- [Submagic - Word Highlighting](https://care.submagic.co/en/article/how-to-apply-highlighting-colors-to-your-words-16ttppq/)
+- [Submagic - Emphasis Captions](https://care.submagic.co/en/article/how-to-do-emphasis-captions-1p5w99b/)
+- [pycaps - Python CSS Animated Subtitles](https://github.com/francozanardi/pycaps)
+- [pycaps - Content-Aware Animated Subtitles Tutorial](https://dev.to/francozanardi/how-to-create-content-aware-animated-subtitles-with-python-24dn)
+- [Word-by-Word Captions with Python (AngelFolio)](https://www.angel1254.com/blog/posts/word-by-word-captions)
+- [TikTok Caption Fonts Technical Specs (Blitzcut)](https://blitzcutai.com/blog/best-caption-fonts-tiktok)
+- [auto-subs for DaVinci Resolve](https://github.com/tmoroney/auto-subs)
+- [srt_to_textplus for DaVinci Resolve Fusion](https://github.com/atmosfar/srt_to_textplus)
+- [DaVinci Resolve Animated Subtitles Guide](https://larryjordan.com/articles/animate-subtitles-in-davinci-resolve-20/)
+- [Caption Styling Best Practices (SendShort)](https://sendshort.ai/guides/style-captions/)
+- [Caption Design Best Practices (OpusClip)](https://www.opus.pro/blog/video-caption-design-placement)
+- [VideoLingo on GitHub](https://github.com/Huanshere/VideoLingo)
+- [Submagic Alternatives (AlternativeTo)](https://alternativeto.net/software/submagic--ai-captions/)
+agentId: a21b80f70936b6e13 (use SendMessage with to: 'a21b80f70936b6e13' to continue this agent)
+<usage>total_tokens: 33998
+tool_uses: 34
+duration_ms: 282557</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

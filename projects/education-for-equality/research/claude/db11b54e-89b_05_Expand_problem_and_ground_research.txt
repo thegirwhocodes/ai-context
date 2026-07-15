@@ -1,0 +1,51 @@
+========================================================================
+AGENT RESEARCH: Expand problem and ground research
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:24:17 UTC
+========================================================================
+
+You are a follow-up agent. The user (Naomi, founder of Sabi) has explicitly asked that I "expand the amount of info" returned. Return at least 95% of the substance, ideally near-verbatim for the most important sections.
+
+Read EVERY file in:
+- /Users/naomiivie/Education for Equality/1. The Problem/
+- /Users/naomiivie/Education for Equality/9. On the Ground/
+- /Users/naomiivie/Education for Equality/10. Bakame/
+- /Users/naomiivie/Education for Equality/8. Partnerships & Outreach/
+
+Plus read these synthesized research-agent files (skip ANY file whose name starts with "WebSearch_" or "WebFetch_"):
+- /Users/naomiivie/Education for Equality/research-agents/1. The Problem/ — read every non-WebSearch/WebFetch file
+- /Users/naomiivie/Education for Equality/research-agents/2. The Solution/ — read every non-WebSearch/WebFetch file
+- /Users/naomiivie/Education for Equality/research-agents/3. The Evidence/ — read every non-WebSearch/WebFetch file
+- /Users/naomiivie/Education for Equality/research-agents/9. On the Ground/ — read every file (this folder is small and field-specific)
+
+Format requirements:
+- For each file, give: file path, file purpose in 1 line, then ALL substantive content
+- For demographic data: include EVERY stat, every state/LGA breakdown, every age cohort, every gender breakdown, every income decile, every mobile/2G/feature-phone penetration figure, every out-of-school count by region
+- For NALABE/EKOEXCEL/Dr. Sonia field reports: include exact assessment scores (pre/post, control/treatment), school counts, pupil counts, methodology, and any direct quotes
+- For Bakame comparison: include their full lesson design, their full tech stack, the exact differences from Sabi, the IP/originality analysis points
+- For Partnerships folder: include the full text of MNO outreach emails, AT partnership letter, Chris Folayan call notes, Luma Learn details, every contact name with title and organization
+
+Length budget: aim for 8,000-12,000 words of returned content. Do not compress for brevity.
+
+Return content organized by theme — not by file:
+1. The Crisis (national/Lagos/state-level out-of-school + literacy data)
+2. The Target Users (specific personas with grounded data: never-readers, struggling enrolled, adult women, market traders)
+3. Phone & Infrastructure Reality (mobile penetration, 2G coverage, feature phone share, data costs)
+4. Field Evidence (NALABE, EKOEXCEL, Dr. Sonia's research — what's actually been measured in Lagos schools)
+5. Bakame Comparison (their model vs Sabi's, IP analysis)
+6. Partnership Pipeline (MNOs, government, foundations, advisors — names + status)
+
+Cite the source file for every claim.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ad60d6aba8229c025 (internal ID - do not mention to user. Use SendMessage with to: 'ad60d6aba8229c025' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/ad60d6aba8229c025.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

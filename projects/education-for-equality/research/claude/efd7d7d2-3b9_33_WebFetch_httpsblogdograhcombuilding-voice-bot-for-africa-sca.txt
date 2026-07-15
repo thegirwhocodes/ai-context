@@ -1,0 +1,89 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://blog.dograh.com/building-voice-bot-for-africa-scaling-affordable-voice-a
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 02:40:01 UTC
+========================================================================
+
+URL: https://blog.dograh.com/building-voice-bot-for-africa-scaling-affordable-voice-ai-without-breaking/
+Extraction prompt: Extract ALL details about how Dograh approaches voice AI for Africa. Cost optimization strategies, Nigerian accent handling, telephony integration, architecture, latency, scaling, pricing comparison with Vapi, and any specific details about how they handle calls in Nigeria.
+
+----------------------------------------
+
+# Dograh's Voice AI Approach for Africa
+
+## Core Architecture
+
+Dograh employs an **STT > LLM > TTS pipeline** where each component can be independently optimized. This modular design allows swapping components based on regional needs rather than using monolithic speech-to-speech models.
+
+## Nigerian Market Challenges & Solutions
+
+**Accent & Language Handling:**
+Dograh acknowledges that "English blended with local languages, slang, Pidgin, and mixed cadence" create recognition difficulties. They've identified that ASR systems frequently fail on "Nigerian locations, terms, and the way we naturally blend words," requiring custom training.
+
+**Name Pronunciation:**
+The founder emphasizes that mispronouncing local names like "Muyiwa" represents "a credibility problem," not minor defects. They prioritize TTS voice accuracy for Nigerian nomenclature as essential to trust-building.
+
+**Noise & Network Resilience:**
+Their systems are engineered for "patchy networks and noisy environments," handling background market/road noise common in African deployment contexts.
+
+## Cost Optimization Strategies
+
+**TTS Cost Reduction:**
+Dograh identifies TTS as "often the most expensive component" and recommends:
+- Self-hosting TTS when volumes justify GPU infrastructure
+- Vendor mixing (combining affordable providers for specific functions)
+- Startup credits exploitation
+- Call duration minimization (targeting 2-3 minute conversations)
+
+**Model Selections Explored:**
+They've evaluated Kokoro (open-source), Qwen, ElevenLabs, InWorld TTS, and regional providers like Sarvam AI for cost-performance balance.
+
+## Technical Implementation Details
+
+**Latency Management:**
+Dograh designs around API latency between "user speaking, system processing (STT + LLM + integrations), and agent speaking back," recognizing that users notice even small delays in real-time voice.
+
+**DID (Direct Inward Dialing) Strategy:**
+They use single numbers supporting both inbound/outbound, but handle flow differences: outbound lets users speak first; inbound requires agent greeting. Personalization context differs between directions.
+
+**Data Capture Challenges:**
+They acknowledge that "LLMs can be unreliable with exact strings" (phone numbers, emails), designing around this by preferring "implicit identifiers" and confirmation-only approaches.
+
+## Conversation Design
+
+**Call Duration:**
+Maximum 2-3 minutes to prevent user impatience and reduce AI detection likelihood.
+
+**Pacing Pattern:**
+Greeting + identity check → permission request → message delivery in chunks → confirmation of next action → branching logic.
+
+**Empathy Handling:**
+Systems must acknowledge sensitive moments (illness, loss) with brief empathetic responses before offering graceful exits.
+
+## Production Scaling Issues
+
+**Prompt Versioning:**
+Treating "prompts like code" with staging tests prevents unexpected system breakdowns from minor wording changes.
+
+**Outbound Scaling:**
+Implementing retry workflows for missed pickups, varying call timing, and monitoring spam-labeling risks.
+
+**Inbound vs Outbound Context:**
+Merging context appropriately prevents awkward flows when users return missed calls expecting continuity.
+
+## Real-World Use Cases Deployed
+
+- **Event invitations** (Detty December campaigns): Contact upload → call → RSVP capture → SMS delivery with permission
+- **FMCG feedback**: School principal surveys for product feedback at scale
+- **Post-transaction calls**: Fintech payment feedback triggered within minutes
+
+## Open-Source Positioning
+
+Dograh maintains an open-source platform as "alternative to Vapi," emphasizing that open-source reduces "engineering time and vendor lock-in" while enabling "customization for local market needs."
+
+**Key Philosophy:**
+"If you cannot handle accents, names, noise, and retries, you should not launch a voice bot in Nigeria."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

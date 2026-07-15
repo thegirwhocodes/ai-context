@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: voice AI assistant soldiers offline field manual RAG hackathon SCSP
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:06:11 UTC
+========================================================================
+
+Search query: voice AI assistant soldiers offline field manual RAG hackathon SCSP
+
+----------------------------------------
+
+Web search results for query: "voice AI assistant soldiers offline field manual RAG hackathon SCSP"
+
+Links: [{"title":"GitHub - Adii2202/RAG-AI-Voice-assistant-: Performing a RAG (Retrieval Augmented Generation) assessment using voice-to-voice query resolution. Provide the file containing the queries, ask the questions, and receive the results via voice. · GitHub","url":"https://github.com/Adii2202/RAG-AI-Voice-assistant-"},{"title":"Hackathon - SCSP","url":"https://www.scsp.ai/hackathon/"},{"title":"Military AI Voices | ElevenLabs Voice Library","url":"https://elevenlabs.io/voice-library/military"},{"title":"Voice & Video AI Agents Hackathon: Multi-agent systems that use creative gen ai applications for voice and video - Devpost","url":"https://voice-video-ai-agents.devpost.com/"},{"title":"Your Voice Assistant Doesn't Need the Cloud — Here's How I Built 5 Offline NLP Tools - DEV Community","url":"https://dev.to/kennedyraju55/your-voice-assistant-doesnt-need-the-cloud-heres-how-i-built-5-offline-nlp-tools-4n44"},{"title":"Soldier AI Voices | ElevenLabs Voice Library","url":"https://elevenlabs.io/voice-library/soldier"},{"title":"NeuroPocket AI — Offline AI in Your Pocket","url":"https://neuropocketai.in/"},{"title":"GitHub - livekit-examples/voice-agent-hackathon: Welcome to the Voice Agent hackathon! Use this template repository to start your own project.","url":"https://github.com/livekit-examples/voice-agent-hackathon"},{"title":"Voice AI Assistant - Elevenlabs Challenge","url":"https://bolt-hackathon-voice-ai.netlify.app/"},{"title":"Designing a Real-Time AI Voice Agent With RAG, SIP Integration, and Compliance Guardrails | HackerNoon","url":"https://hackernoon.com/designing-a-real-time-ai-voice-agent-with-rag-sip-integration-and-compliance-guardrails"}]
+
+I found search results related to your query about voice AI assistants and related technologies. Here's what I found:
+
+**Key Results:**
+
+1. **SCSP Hackathon**: SCSP brings together tech talent with U.S. Government representatives to tackle critical challenges with agentic AI, with teams competing for cash prizes and delivering solutions for government applications.
+
+2. **Voice AI with RAG**: Several projects combine voice assistants with Retrieval-Augmented Generation (RAG):
+   - A RAG assessment using voice-to-voice query resolution allows users to provide query files, ask questions, and receive results via voice.
+   - RAG systems with voice can use ChromaDB to give AI access to personal documents during calls.
+
+3. **Offline AI Solutions**: Some platforms offer 100% private offline AI with Chat, Vision, Voice, and Documents - supporting RAG with both keyword and vector search.
+
+4. **Hackathon Resources**: Voice Agent Hackathon templates use LiveKit Agents for building ready-to-use voice agents.
+
+5. **Production Voice Agents**: Real-time AI voice agents can be designed with SIP integration, real-time speech processing, and RAG.
+
+The search results show active development in voice AI assistants with offline capabilities and RAG integration, though specific results about a soldiers/field manual project or the exact combination you mentioned weren't prominently featured.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,39 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai/pricing
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:18 UTC
+========================================================================
+
+URL: https://yarngpt.ai/pricing
+Extraction prompt: Extract ALL pricing information: cost per character, cost per request, credit packages, free tier details, and any other pricing details. List everything you can find.
+
+----------------------------------------
+
+# YarnGPT Pricing Information
+
+Based on the webpage content, here's all available pricing details:
+
+## Pricing Structure
+The service uses a **pay-as-you-go model** with "No subscriptions. No hidden fees. Only pay for what you use."
+
+## Service Costs
+- **Audio Generation**: ₦0 / yarn (text-to-speech & conversations)
+- **Content Processing**: ₦0 / source (URL extraction, file uploads)
+- **AI Video Translation**: ₦0 / minute (transcription, dubbing, video delivery)
+
+## Usage Limitations
+The configuration data reveals rate limits:
+- Text-to-speech API: 80/day
+- Media processing: 8/day
+- URL extraction: 100/day
+- Chunked audio: 120/day
+- Maximum file size: 100 MB
+- Maximum audio duration: 10 minutes
+- Maximum TTS characters per request: 2,000
+
+## Account Requirement
+Users must "Add funds to your account and start creating instantly," though specific credit package pricing is not detailed on this page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,76 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.twilio.com/docs/voice/twiml/gather
+Session: 7464be26-f829-4778-b764-1c605d25b070
+Time: 2026-02-28 07:15:35 UTC
+========================================================================
+
+URL: https://www.twilio.com/docs/voice/twiml/gather
+Extraction prompt: Extract the key attributes and parameters of the Gather verb. How does speech input work? What is the action URL pattern? How do you loop for conversational back-and-forth? What are the speechModel options? Show examples of speech-based gather with action URLs.
+
+----------------------------------------
+
+# TwiML `<Gather>` Verb: Key Attributes and Speech Input
+
+## Core Attributes
+
+The `<Gather>` verb collects caller input (digits, speech, or both) during voice calls. Key attributes include:
+
+- **action**: URL receiving POST/GET request when gathering completes
+- **input**: `dtmf`, `speech`, or `dtmf speech` (default: `dtmf`)
+- **timeout**: Seconds to wait for input (default: 5)
+- **numDigits**: Maximum digits to collect
+- **finishOnKey**: Digit ending input (default: `#`)
+- **speechTimeout**: Pause duration before ending speech capture
+- **speechModel**: STT provider and model selection
+- **language**: Speech recognition language
+
+## Speech Input Mechanism
+
+When speech input is enabled, Twilio captures audio and transcribes it using the specified STT provider. The response includes:
+
+- **SpeechResult**: Transcribed text from caller's speech
+- **Confidence**: Score between 0.0-1.0 indicating transcription accuracy
+
+## Action URL Pattern
+
+Upon completion, Twilio sends an HTTP request to the `action` URL containing:
+- Standard call parameters
+- `Digits` parameter (if DTMF was captured)
+- `SpeechResult` and `Confidence` (if speech was captured)
+
+The TwiML returned from the action URL continues the call flow.
+
+## Conversational Loop Implementation
+
+To create back-and-forth conversation:
+
+1. Return new `<Gather>` from action URL with updated prompts
+2. Use `<Say>` or `<Play>` verbs nested in `<Gather>` for prompts
+3. Set `action` to your callback endpoint
+4. Process received input and generate appropriate response
+
+## Speech Model Options
+
+**Generic models** (provider-agnostic):
+- `default`, `numbers_and_commands`, `phone_call`, `experimental_conversations`, `experimental_utterances`
+
+**Google STT V2** (specified as `googlev2_*`):
+- `googlev2_long`, `googlev2_short`, `googlev2_telephony`, `googlev2_telephony_short`
+
+**Deepgram**: Custom models available
+
+## Speech-Based Example
+
+```xml
+<Gather input="speech" speechModel="default" 
+        language="en-US" action="https://example.com/process-speech" 
+        method="POST">
+  <Say>Please tell us your account number</Say>
+</Gather>
+```
+
+The action URL receives `SpeechResult` containing the transcribed response, enabling natural language interaction patterns.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

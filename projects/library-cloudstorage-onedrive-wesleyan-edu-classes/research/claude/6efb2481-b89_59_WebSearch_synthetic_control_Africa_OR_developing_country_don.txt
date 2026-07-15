@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "synthetic control" "Africa" OR "developing country" donor pool "population" sim
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 22:12:02 UTC
+========================================================================
+
+Search query: "synthetic control" "Africa" OR "developing country" donor pool "population" similar income
+
+----------------------------------------
+
+Web search results for query: ""synthetic control" "Africa" OR "developing country" donor pool "population" similar income"
+
+Links: [{"title":"Estimating the impact of donor programs on child mortality in low- and middle-income countries: a synthetic control analysis of child health programs funded by the United States Agency for International Development | Population Health Metrics | Full Text","url":"https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00278-9"},{"title":"Synthetic Control Methods | GOLTC","url":"https://goltc.org/publications/synthetic-control-methods/"},{"title":"Synthetic Control Methods for the Evaluation of Single-Unit Interventions in Epidemiology: A Tutorial - PMC","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8634614/"},{"title":"How Africa's social economy is shaping its development | World Economic Forum","url":"https://www.weforum.org/stories/2025/07/africa-social-economy-development/"},{"title":"Using Synthetic Controls: Feasibility, Data Requirements, ...","url":"https://www.aeaweb.org/content/file?id=12409"},{"title":"Africa Overview: Development news, research, data","url":"https://www.worldbank.org/en/region/afr/overview"},{"title":"Mobilizing Africa’s resources for development | Brookings","url":"https://www.brookings.edu/articles/mobilizing-africas-resources-for-development/"},{"title":"Africa’s slow development: it’s demographics, not poor governance - ISS African Futures","url":"https://futures.issafrica.org/blog/2025/Africas-slow-development-its-demographics-not-poor-governance"},{"title":"Population Policy Adoption in Sub-Saharan Africa","url":"https://www.ageing.ox.ac.uk/download/306"},{"title":"10 Synthetic Control – <span style='font-weight: 700'>Causal Inference</span><br/> <i style='color: #00b7ff'>The Mixtape</i>","url":"https://mixtape.scunning.com/10-synthetic_control"}]
+
+Based on the search results, I found relevant information about synthetic control methods applied to developing countries and donor pools. Here are the key findings:
+
+## Synthetic Control Methods and Donor Pools
+
+Synthetic Control Methods are a quasi-experimental method that compares the outcomes of a unit exposed to an intervention with those of a group of units not affected by it, known as the donor pool. Rather than selecting just one comparison unit, synthetic control methods create a weighted combination of units from the donor pool that forms a "synthetic" version of the treated unit that closely matches its pre-intervention characteristics and trends.
+
+## Application to Developing Countries
+
+One study used the synthetic control analysis method to estimate the impact of United States Agency for International Development (USAID) funding on under-five mortality across several low- and middle-income countries that received above average levels of USAID funding for maternal and child health programs between 2000 and 2016.
+
+## Considerations for Donor Pool Selection
+
+To account for potential differences between the donor pool and the treatment group of countries, development assistance from donors, political stability, and other factors were controlled for in analysis, and population size was also accounted for in the calculation of the outcome measure.
+
+SCM requires a set of unexposed units to make up a suitable "donor pool" of potential controls. Control units in the donor pool are described as potential controls because being included in the donor pool does not mean that the algorithm will include them in the synthetic control unit. Although there must be more than one potential control unit to construct a weighted average, there are no other fixed specifications for the number of potential control units needed in the donor pool.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://yarngpt.ai/api-docs
+Session: f19ca767-f03e-4b36-99b4-47e3bde9c6f7
+Time: 2026-03-04 05:32:06 UTC
+========================================================================
+
+URL: https://yarngpt.ai/api-docs
+Extraction prompt: Extract ALL information about: pricing, cost per request, supported languages, supported voices, API endpoints, rate limits, audio quality, and any other technical details. List everything.
+
+----------------------------------------
+
+# YarnGPT API Documentation Summary
+
+## Pricing & Costs
+The documentation does not specify per-request pricing. Instead, it mentions "pricing": {"yarn": 0, "doc": 0, "url": 0, "video": 0, "audio": 0}, indicating these services may be complimentary. A minimum funding amount of ₦500 (Nigerian Naira) is required to add funds to an account.
+
+## API Endpoints
+**Text-to-Speech:** "POST https://yarngpt.ai/api/v1/tts"
+
+## Supported Voices
+16 voices are available, including Idera, Emma, Zainab, Osagie, Wura, Jude, Chinenye, Tayo, Regina, Femi, Adaora, Umar, Mary, Nonso, Remi, and Adam. Each has distinct characteristics like "Melodic, gentle" or "Upbeat, energetic."
+
+## Audio Format Support
+Four formats are supported: MP3 (default), WAV, Opus, and FLAC.
+
+## Rate Limits & Quotas
+The system enforces "80/day" for TTS API usage and "120/day" for chunked audio processing, among other limits for different features.
+
+## Technical Constraints
+- Maximum input: "2000 characters"
+- Maximum file size: 100 MB
+- Maximum audio duration: 10 minutes
+- Authentication uses Bearer tokens via the Authorization header
+
+## Supported Languages
+The documentation does not explicitly list supported languages, though a Python example demonstrates Yoruba text processing.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,43 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://zeeg.me/en/blog/post/calendly-pros-and-cons-review
+Session: 53755257-7d3a-471d-9294-085caf5ec916
+Time: 2026-03-29 20:40:38 UTC
+========================================================================
+
+URL: https://zeeg.me/en/blog/post/calendly-pros-and-cons-review
+Extraction prompt: Extract all the specific complaints, pain points, and cons of Calendly that drive users to switch to alternatives. Include pricing details and specific feature limitations.
+
+----------------------------------------
+
+# Calendly Cons and User Complaints
+
+## Major Pain Points Driving Users Away
+
+**1. Restrictive Free Plan**
+The free tier limits users to one event type, one calendar connection, no reminders, no branding customization, and displays Calendly's logo on all pages. Users report frustration: "we eventually moved to Google Calendar as it offered similar functionality with the added benefit of being integrated into our existing workflow."
+
+**2. Apple Calendar Integration Discontinued**
+New users cannot integrate with iCloud Calendar, forcing Apple ecosystem users to switch to Google Calendar or Microsoft Outlook as intermediaries or risk scheduling conflicts.
+
+**3. No Native CRM Capabilities**
+Calendly offers only basic contact viewing with notes. It cannot group contacts by company, track interaction dates, or support custom tracking fields—critical gaps for businesses managing complex relationship data.
+
+**4. Lack of Phone Call Booking**
+The platform has no solution for inbound phone calls or proactive calling. Businesses must manually create bookings from phone conversations, requiring separate phone systems and call handlers.
+
+**5. Limited Customization**
+Users can only add logos and choose colors; cannot add videos, custom widgets, or significantly alter page layout. Lower-tier plans offer even fewer options, creating brand inconsistency.
+
+**6. GDPR Complexity**
+US-based servers require additional contractual arrangements and special data handling for European compliance, rather than offering native GDPR compliance.
+
+**7. Variable Support Quality**
+Free users receive email-only support with inconsistent response times. Phone support is exclusive to Enterprise customers.
+
+## Pricing Concerns
+
+Entry-level pricing starts at $10/user/month for reminders and paid appointments; $16/user/month for lead routing. Users note: "Too expensive. No customization. I feel as if they stationed in the industry for granted and did not indulge in and attempting to satisfy customers."
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

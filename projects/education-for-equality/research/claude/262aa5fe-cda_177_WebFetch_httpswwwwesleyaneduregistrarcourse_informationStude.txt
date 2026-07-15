@@ -1,0 +1,40 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.wesleyan.edu/registrar/course_information/Student_Forums/StudentForu
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-11 02:50:51 UTC
+========================================================================
+
+URL: https://www.wesleyan.edu/registrar/course_information/Student_Forums/StudentForumProposalGuidelines.pdf
+Extraction prompt: What are the complete requirements for a Wesleyan Student Forum proposal? Include: number of credits available, faculty sponsor requirements, syllabus requirements, deadlines, who can lead, eligibility, grading, room/space, any compensation/stipends mentioned, what subjects are eligible, application timeline, any restrictions on cooking or food-related content.
+
+----------------------------------------
+
+# Wesleyan Student Forum Proposal Requirements
+
+I apologize, but the provided content appears to be a corrupted or improperly formatted PDF file. The text consists primarily of PDF encoding data, stream objects, and compressed content that cannot be reliably parsed to extract the specific requirements you're asking about.
+
+To properly answer your questions regarding:
+- Credit availability
+- Faculty sponsor specifications
+- Syllabus requirements
+- Application deadlines
+- Leadership eligibility
+- Grading policies
+- Space allocation
+- Financial support
+- Subject restrictions
+- Food/cooking limitations
+
+I would need a readable document. I recommend:
+
+1. **Accessing the original document directly** from Wesleyan's website or registrar
+2. **Requesting a clean PDF copy** from the Student Forum office
+3. **Contacting Wesleyan administration** directly for current proposal guidelines
+
+This ensures you receive accurate, current information rather than my attempting to extract requirements from corrupted data.
+
+[Binary content (application/pdf, 199.7KB) also saved to /Users/naomiivie/.claude/projects/-Users-naomiivie-Education-for-Equality/262aa5fe-cda2-4ed7-a392-fae7f4a7f583/tool-results/webfetch-1778467853350-56k9hr.pdf]
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: pretrained sign language recognition models download open source ASL 2025 2026 h
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 19:19:07 UTC
+========================================================================
+
+Search query: pretrained sign language recognition models download open source ASL 2025 2026 huggingface github
+
+----------------------------------------
+
+Web search results for query: "pretrained sign language recognition models download open source ASL 2025 2026 huggingface github"
+
+Links: [{"title":"sign-language-recognition-system · GitHub Topics GitHub","url":"https://github.com/topics/sign-language-recognition-system"},{"title":"american-sign-language-recognition · GitHub Topics · GitHub","url":"https://github.com/topics/american-sign-language-recognition"},{"title":"GitHub - sumedhsp/Sign-Language-Recognition: Sign Language Recognition (I3D + Transformers) on WLASL Dataset - Computer Vision Final Project (CS-GY 6643)","url":"https://github.com/sumedhsp/Sign-Language-Recognition"},{"title":"sign-language-recognition · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language-recognition"},{"title":"GitHub - JaspreetSingh-exe/Sign-Language-Recognition-System: Sign Language Recognition System is an AI-powered application that enables real-time sign language recognition using MediaPipe and an MLP model. It captures hand gestures, extracts landmark features, and predicts sign language letters dynamically. The project also explores MobileNetV2 and aims to expand into Text-to-Sign Language generation.","url":"https://github.com/JaspreetSingh-exe/Sign-Language-Recognition-System"},{"title":"sign-language-recognizer · GitHub Topics · GitHub","url":"https://github.com/topics/sign-language-recognizer"},{"title":"Niharmahesh/Sign_language_recognition_v1 · Hugging Face","url":"https://huggingface.co/Niharmahesh/Sign_language_recognition_v1"},{"title":"GitHub - aqua1907/Gesture-Recognition: ASL language recognition using pre-trained MediaPipe models","url":"https://github.com/aqua1907/Gesture-Recognition"},{"title":"GitHub - VedantMistry13/American-Sign-Language-Recognition-using-Deep-Neural-Network: Application that recognizes American Sign Language (ASL) alphabets using a deep neural network that was trained using Transfer Learning approach.","url":"https://github.com/VedantMistry13/American-Sign-Language-Recognition-using-Deep-Neural-Network"},{"title":"GitHub - gurkirat20/Sign_Language_Detection: This is a Sign language detection model that can accurately recognize and interpret the gestures and movements of hands used in American Sign Language (ASL).","url":"https://github.com/gurkirat20/Sign_Language_Detection"}]
+
+Based on the search results, here are the main resources for pretrained sign language recognition models:
+
+## Hugging Face Models
+
+There is an open-source American Sign Language (ASL) Recognition Model available on Hugging Face (Niharmahesh/Sign_language_recognition_v1). The model processes images and provides top 5 predictions along with visualizations of detected hand landmarks.
+
+## GitHub Projects
+
+Several GitHub repositories offer open-source sign language recognition implementations:
+
+- ASL language recognition using pre-trained MediaPipe models (aqua1907/Gesture-Recognition)
+- A Sign Language Recognition System using MediaPipe and an MLP model that captures hand gestures, extracts landmark features, and predicts sign language letters dynamically
+- An application that uses a deep learning model trained on the ASL Dataset to predict signs from input images or video frames
+- Projects using pretrained I3D models that extract spatiotemporal features from video sequences
+
+## Key Technologies
+
+MediaPipe is an open-source framework developed by Google that provides pre-built, customizable building blocks, and many projects use the pre-built hand-tracking model of MediaPipe. Additionally, common approaches use pretrained models with TensorFlow, MobileNet, and other frameworks.
+
+The search results show active development in this area, though I didn't find specific models dated 2025-2026. Most available resources are on GitHub and Hugging Face and are downloadable as open-source projects.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

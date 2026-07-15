@@ -1,0 +1,16 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://www.commpeak.com/sip-trunking
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 10:24:56 UTC
+========================================================================
+
+URL: https://www.commpeak.com/sip-trunking
+Extraction prompt: What are CommPeak's SIP trunking details? How do you connect? What codecs are supported? What are the rates for Nigeria (234)? Any setup guides for Asterisk?
+
+----------------------------------------
+
+<tool_use_error>Sibling tool call errored</tool_use_error>
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

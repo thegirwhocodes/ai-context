@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/overview
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-05-22 21:33:38 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/overview
+Extraction prompt: Quote everything about configuring callback URLs for a voice phone number — where in the dashboard, what fields, what events are sent. Also explain Africa's Talking voice number lifecycle: how is a production number provisioned? What is the difference between Phone Number callback URL vs Event callback URL? What POST body fields are sent on each? Quote verbatim from the docs.
+
+----------------------------------------
+
+I appreciate your detailed request, but I need to be honest: the content provided only shows a page title ("Documentation | Africa's Talking") with no actual documentation body text.
+
+To properly answer your questions about:
+- Configuring callback URLs for voice phone numbers
+- Dashboard location and fields
+- Events sent in callbacks
+- Voice number lifecycle and production provisioning
+- Differences between Phone Number and Event callback URLs
+- POST body fields for each callback type
+
+I would need access to the actual documentation content, not just the page header.
+
+**Could you please provide the full documentation text?** Once you share the actual content, I'll be happy to:
+1. Quote verbatim passages (staying within the 125-character limit per quote)
+2. Explain the configuration process
+3. Clarify the callback URL distinctions
+4. Detail the number provisioning lifecycle
+
+This ensures I give you accurate, properly-sourced information rather than attempting to reconstruct details from incomplete source material.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

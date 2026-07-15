@@ -1,0 +1,42 @@
+========================================================================
+AGENT RESEARCH: Expand internal research dossier
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 18:24:02 UTC
+========================================================================
+
+You are a follow-up agent. The user (Naomi, founder of Sabi at Education for Equality) has explicitly asked that I "expand the amount of info" returned. Your job is to read the SAME folders the prior agent read, but return MORE content — at least 95% of the substance, ideally near-verbatim for the most important sections.
+
+Read EVERY file in:
+- /Users/naomiivie/Education for Equality/2. The Solution/
+- /Users/naomiivie/Education for Equality/3. The Evidence/
+- /Users/naomiivie/Education for Equality/5. Cost & Feasibility/
+
+Plus, expand into these additional folders that the prior agent did not cover:
+- /Users/naomiivie/Education for Equality/4. Telephony & Infrastructure/ — every cost figure, every provider, every NCC rule, every SIP/AT/Twilio rate, every flash callback detail, every Asterisk config decision
+- /Users/naomiivie/Education for Equality/6. Pitch & Applications/ — pitch language, hard questions Q&A, slide deck content, grant narratives (these contain the most polished framing of Sabi's value prop)
+- /Users/naomiivie/Education for Equality/7. Legal & IP/ — copyright brief, legal roadmap, security model
+
+Format requirements:
+- For each file, give: file path, file purpose in 1 line, then ALL substantive content
+- For research files (RCTs, evidence): include full effect sizes, sample sizes, study designs, populations, locations, dates, authors, exact quotes, methodology notes, and limitations the file mentions
+- For cost files: include EVERY line of every cost table, every assumption, every formula, every per-student/per-call/per-month figure across all scale tiers
+- For lesson design files: include lesson openers, scaffolding patterns, exact dialogue examples, module sequences, time allocations
+- For SABI_HARD_QUESTIONS.md specifically: return all 25 questions with their full answers verbatim
+- For SABI_INFRASTRUCTURE_RESEARCH.md: return every section, every URL, every architecture decision
+
+Length budget: aim for 8,000-12,000 words of returned content. Do not compress for brevity. Naomi wants the deep version.
+
+Return content organized by theme (use cases, voice pipeline architecture, evidence base, cost model, telephony economics, legal IP, pitch framing) — not by file. But cite the source file for every block.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ae7e2106337452b04 (internal ID - do not mention to user. Use SendMessage with to: 'ae7e2106337452b04' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Education-for-Equality/db11b54e-89b2-473e-b485-24b7a9698b7e/tasks/ae7e2106337452b04.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

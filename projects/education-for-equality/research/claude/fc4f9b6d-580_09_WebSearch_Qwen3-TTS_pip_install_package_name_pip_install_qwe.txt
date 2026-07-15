@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qwen3-TTS pip install package name "pip install" qwen-tts 2026
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 07:04:34 UTC
+========================================================================
+
+Search query: Qwen3-TTS pip install package name "pip install" qwen-tts 2026
+
+----------------------------------------
+
+Web search results for query: "Qwen3-TTS pip install package name "pip install" qwen-tts 2026"
+
+Links: [{"title":"qwen-tts · PyPI","url":"https://pypi.org/project/qwen-tts/"},{"title":"Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI Speech Generation - DEV Community","url":"https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-Base · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base"},{"title":"GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. · GitHub","url":"https://github.com/QwenLM/Qwen3-TTS"},{"title":"Qwen3 TTS – install and test in ComfyUI","url":"https://jurn.link/dazposer/index.php/2026/01/24/qwen3-tts-install-and-test-in-comfyui/"},{"title":"Qwen/Qwen3-TTS-12Hz-0.6B-Base · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base"},{"title":"qwen-tts-cli - PyPI Package Security Analysis - Socket","url":"https://socket.dev/pypi/package/qwen-tts-cli/overview/0.5.0"},{"title":"Speech synthesis - Qwen - Alibaba Cloud Model Studio - Alibaba Cloud Documentation Center","url":"https://www.alibabacloud.com/help/en/model-studio/qwen-tts"},{"title":"QwenLM | Qwen3-TTS","url":"https://www.kaggle.com/models/qwen-lm/qwen3-tts"},{"title":"piwheels - qwen-tts","url":"https://www.piwheels.org/project/qwen-tts/"}]
+
+Based on the search results, I found the information you're looking for:
+
+The pip install package name for Qwen3-TTS is `qwen-tts`, installed with the command: `pip install -U qwen-tts`
+
+Qwen3-TTS was released on January 22, 2026, with support for voice cloning, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control.
+
+Additionally, there's also a CLI wrapper available: You can install `qwen-tts-cli` for Apple Silicon with `pip install "qwen-tts-cli[mlx]"` or for CUDA/CPU with `pip install "qwen-tts-cli[transformers]"`.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

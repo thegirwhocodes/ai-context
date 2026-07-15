@@ -1,0 +1,49 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://issuu.com/cupeducation/docs/9781108742931_sci4_lb__issuu
+Session: 3c482910-15ca-419a-a1e5-a74e7080d40c
+Time: 2026-02-05 21:56:06 UTC
+========================================================================
+
+URL: https://issuu.com/cupeducation/docs/9781108742931_sci4_lb__issuu
+Extraction prompt: Extract all learning objective codes (like 4Bs.01, 4Ps.01, 4Cs.01, 4ESs.01, 4TW.01) mentioned in this document with their descriptions. List them organized by strand (Biology, Chemistry, Physics, Earth Science).
+
+----------------------------------------
+
+# Learning Objectives from Primary Science Learner's Book 4
+
+Based on my review of the provided content, I cannot locate explicit learning objective codes (such as 4Bs.01, 4Ps.01, 4Cs.01, 4ESs.01, or 4TW.01) listed in this document sample.
+
+## What Is Present
+
+The document does reference **science strands** organized by topic area:
+
+**Biology:**
+- "Structure and function"
+- "Life processes"
+- "Ecosystems"
+
+**Chemistry:**
+- "Materials and their structure"
+- "Properties of materials"
+- "Changes to materials"
+
+**Physics:**
+- "Forces and energy"
+- "Light and sound"
+- "Electricity and magnetism"
+
+**Earth and Space:**
+- "Planet Earth"
+- "Earth in space"
+
+**Thinking and Working Scientifically Strand:**
+- Models and representations
+- Scientific enquiry (purpose, planning, carrying out, analysis, evaluation)
+
+## Limitation
+
+The provided sample excerpt does not include a complete learning objectives reference guide with formal code designations. To obtain the specific objective codes you're seeking, you would need access to the full Cambridge Primary Science curriculum framework documentation or the complete teacher's resource materials.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

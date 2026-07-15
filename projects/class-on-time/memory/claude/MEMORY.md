@@ -1,0 +1,9 @@
+- [User profile](user_profile.md) — Naomi, Wesleyan student building "Class on Time" for herself; prefers playful/childlike UI, voice-driven planning.
+- [Class on Time project](project_class_on_time.md) — commitment-device app; calendar → 30-min-early alerts → $100 Stripe charge on late arrival; anti-escape lockup is core, not optional.
+- [Reusable credentials live in cortex-web](reference_credentials.md) — audit `/Users/naomiivie/cortex/cortex-web/.env.local` first before asking her to make new accounts; she explicitly prefers reusing.
+- [Visual aesthetic for Class on Time](feedback_visual_aesthetic.md) — Mapbox Standard 3D with dusk lighting + cartoon trees; do NOT ship a flat/Apple-Maps look.
+- [Set up git + Vercel proactively](feedback_proactive_infra.md) — when building any new project, init git, create GitHub repo, link Vercel without being asked.
+- [Auto-commit and push at every checkpoint](feedback_auto_commit_push.md) — push to origin at every meaningful checkpoint without being asked; Vercel auto-deploys on push.
+- [Class on Time Vercel deployment quirks](project_vercel_hobby_crons.md) — Hobby plan blocks sub-daily crons (moved to GitHub Actions); Root Directory must be `apps/server`.
+- [Read docs/API specs upfront](feedback_read_docs_first.md) — 5 min of reading beats 20 min of trial-and-error iteration; invoke matching skills at task start.
+- [Vercel project bootstrap lessons](project_vercel_bootstrap_lessons.md) — checklist of monorepo + Hobby + protection + workflow scope gotchas; apply in order on future Vercel projects.

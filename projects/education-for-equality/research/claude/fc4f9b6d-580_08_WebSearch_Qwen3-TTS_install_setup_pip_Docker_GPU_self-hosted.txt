@@ -1,0 +1,47 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Qwen3-TTS install setup pip Docker GPU self-hosted 2026
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 06:47:50 UTC
+========================================================================
+
+Search query: Qwen3-TTS install setup pip Docker GPU self-hosted 2026
+
+----------------------------------------
+
+Web search results for query: "Qwen3-TTS install setup pip Docker GPU self-hosted 2026"
+
+Links: [{"title":"GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. · GitHub","url":"https://github.com/QwenLM/Qwen3-TTS"},{"title":"GitHub - barnettlabs/qwen3-tts-docker: Docker setup for Qwen3-TTS · GitHub","url":"https://github.com/barnettlabs/qwen3-tts-docker"},{"title":"GitHub - ValyrianTech/Qwen3-TTS_server: API server for Qwen3-TTS · GitHub","url":"https://github.com/ValyrianTech/Qwen3-TTS_server"},{"title":"Qwen/Qwen3-TTS-12Hz-1.7B-Base · Hugging Face","url":"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base"},{"title":"Qwen 3 TTS CustomVoice Guide: How to Run and Deploy","url":"https://www.hyperstack.cloud/technical-resources/tutorials/qwen-3-tts-customvoice-guide-how-to-run-and-deploy"},{"title":"Setting Up Qwen3-TTS with GPU Acceleration on Ubuntu Server","url":"https://www.archy.net/setting-up-qwen3-tts-with-gpu-acceleration-on-ubuntu-server/"},{"title":"GitHub - adriabama06/Qwen3-TTS-Docker: Docker with CUDA for https://github.com/QwenLM/Qwen3-TTS.git · GitHub","url":"https://github.com/adriabama06/Qwen3-TTS-Docker"},{"title":"shinejh0528/qwen3-tts - Docker Image","url":"https://hub.docker.com/r/shinejh0528/qwen3-tts"},{"title":"Qwen3-TTS Open Source: Voice Cloning & Design in 10 Languages, 97ms Latency • StableLearn | Make AI Your Superpower","url":"https://stable-learn.com/en/qwen3-tts-0115-opensource/"},{"title":"GitHub - bc-dunia/qwen3-TTS-studio: A professional-grade interface for Qwen3-TTS, designed to unlock the model's full potential with fine-grained control and intuitive workflows. · GitHub","url":"https://github.com/bc-dunia/qwen3-TTS-studio"}]
+
+Based on the search results, here's comprehensive information about Qwen3-TTS installation, setup, pip, Docker, GPU, and self-hosted options:
+
+## Overview
+Qwen3-TTS series (0.6B/1.7B) was released on 2026.1.22, representing completely open-source technology supporting on-premises deployment and customization.
+
+## Installation Methods
+
+### Pip Installation
+Create a Python 3.12 environment with conda, then install the qwen-tts package via pip. For optimal GPU performance, it is highly recommended to install Flash Attention via pip install -U flash-attn --no-build-isolation.
+
+### Model Download Options
+Users can download models through ModelScope (recommended for Mainland China) or Hugging Face using pip install -U modelscope/huggingface_hub commands.
+
+## Docker Setup
+
+Docker setups are available for running Qwen3-TTS locally on multi-GPU rigs. Several pre-built Docker repositories exist:
+
+- Community Docker implementations include docker compose up -d to build and launch containers, with first builds taking 15-30 minutes due to FlashAttention compilation
+- Docker containers are accessible at http://localhost:8000
+
+## GPU Requirements
+
+A CUDA-compatible GPU with 8GB+ VRAM is recommended. 8GB GPUs like the 3060Ti may require using 0.6B models instead of 1.7B to avoid VRAM issues.
+
+## Setup Requirements
+Docker images use CUDA 12.4, and your host driver needs to be recent enough (535+). GPU-accelerated setups require PyTorch with CUDA support installed via pip install torch --index-url https://download.pytorch.org/whl/cu121.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

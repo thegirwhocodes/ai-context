@@ -1,0 +1,42 @@
+========================================================================
+AGENT RESEARCH: Find all problem sets
+Session: 95664b74-4847-42e3-b756-037e6276e5eb
+Time: 2026-03-30 00:47:24 UTC
+========================================================================
+
+Find all problem set files (PS, HW, homework, problem set, pset) in /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/. Search recursively. List every match with its full path. Be very thorough - check all subdirectories and naming conventions.
+
+----------------------------------------
+
+Perfect! I've found all the problem set files. Here's the complete list organized by course:
+
+## All Problem Set Files Found
+
+### Econ 333 - Financial Intermediation:
+1. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Problem Set 5-2.pdf
+2. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Problem set #1 Spring 2026.pdf
+3. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Problem set #2 Spring 2026.pdf
+4. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/Problem set #3 Spring 2026.pdf
+5. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 333 - Financial Intermediation/PS3_Solutions.md
+
+### Econ 349 - Economic Growth:
+6. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Problem Set 1-2.pdf
+7. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Problem Set 2.pdf
+8. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Problem Set 2 Solutions.md
+9. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/PS2 Answers.md
+10. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/PS2 Answers.pdf
+
+### Econ 241 - Money, Banking:
+11. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 241 - Money, Banking/Problem Set 2.pdf
+12. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 241 - Money, Banking/Problem Set 3.pdf
+13. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 241 - Money, Banking/Problem Set 4-2.pdf
+14. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 241 - Money, Banking/PS4 Solution Key.pdf
+
+### Qac 386 - Text Mining:
+15. /Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Qac 386 - Text Mining/qac386_s26_hw1.ipynb
+
+**Total: 15 problem set files found across 4 courses**
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

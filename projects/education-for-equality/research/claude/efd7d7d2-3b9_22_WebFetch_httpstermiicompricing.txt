@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://termii.com/pricing
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 00:35:04 UTC
+========================================================================
+
+URL: https://termii.com/pricing
+Extraction prompt: Extract all pricing information, especially for voice calls, SMS, and any voice API pricing in Nigeria. Include all tiers, per-unit costs, and any special rates.
+
+----------------------------------------
+
+# Termii Pricing Information
+
+Based on the provided web page content, I cannot extract specific pricing details for voice calls, SMS, or voice API services in Nigeria.
+
+## What's Available
+
+The page indicates that Termii offers:
+- **Products**: Ayla, Switch, Engage, and Assist messaging platforms
+- **A pricing page exists** at `/pricing`
+- **Currency selection** functionality (with USD option shown)
+- **Message about flexibility**: "Flexible Pricing for Every Business - Whether you're a startup or an enterprise, Termii makes it simple to connect with customers across channels without hidden fees"
+
+## Why Pricing Details Are Missing
+
+The HTML content provided appears to be primarily **CSS styling and structural markup** rather than the actual pricing table data. The actual pricing information (rates per SMS, voice call costs, tiered structures) is likely loaded dynamically via JavaScript or rendered in a component that isn't visible in the provided source.
+
+## Recommendation
+
+To obtain actual Termii pricing for Nigeria, you would need to:
+1. Visit https://termii.com/pricing directly
+2. Contact their sales team
+3. Review their API documentation at https://developer.termii.com/
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: iPad terminal app run Claude Code CLI 2026
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 21:04:35 UTC
+========================================================================
+
+Search query: iPad terminal app run Claude Code CLI 2026
+
+----------------------------------------
+
+Web search results for query: "iPad terminal app run Claude Code CLI 2026"
+
+Links: [{"title":"Claude Code overview - Claude Code Docs","url":"https://code.claude.com/docs/en/overview"},{"title":"Claude Code Mac Desktop + Remote Control: A CLI User's Guide","url":"https://blakecrosley.com/blog/claude-code-desktop-remote-control-guide"},{"title":"GitHub - keskinonur/claude-code-ios-dev-guide: A comprehensive guide for setting up Claude Code CLI with PRD-driven workflows, extended thinking (ultrathink), and planning modes optimized for Swift/SwiftUI iOS development. · GitHub","url":"https://github.com/keskinonur/claude-code-ios-dev-guide"},{"title":"The 300-gram AI coding rig: iPad mini + Claude Code anywhere - DEV Community","url":"https://dev.to/jagafarm/the-300-gram-ai-coding-rig-ipad-mini-claude-code-anywhere-e1o"},{"title":"Download iOS App & Mac Server | Claude Remote","url":"https://www.clauderc.com/download/"},{"title":"Claude Code by Anthropic | AI Coding Agent, Terminal, IDE","url":"https://claude.com/product/claude-code"},{"title":"Happy: Codex & Claude Code App - App Store - Apple","url":"https://apps.apple.com/us/app/happy-codex-claude-code-app/id6748571505"},{"title":"AI Coding on iPad - Transform Your iPad into a Dev Workstation | Termly","url":"https://termly.dev/use-cases/coding-on-ipad"},{"title":"Run Claude Code From Your iPhone With Tailscale, Termius, and tmux | Medium","url":"https://petesena.medium.com/how-to-run-claude-code-from-your-iphone-using-tailscale-termius-and-tmux-2e16d0e5f68b"},{"title":"Claude Code CLI Guide: Install, Configure, and Use in 2026 - Petronella Cybersecurity News","url":"https://petronellatech.com/blog/claude-code-cli-guide/"}]
+
+Based on the search results, here's what I found about running Claude Code CLI on iPad in 2026:
+
+## Running Claude Code CLI on iPad
+
+There are several approaches to use Claude Code on iPad:
+
+### 1. **Termly - Direct iPad Integration**
+Install the Termly CLI on your Mac or PC, run `termly start --ai claude-code` in your project folder, then open the Termly app on your iPad and scan the QR code. Your entire Claude Code session — prompts, responses, file edits, terminal output — streams live to your iPad with zero latency. Send prompts, review AI-generated code changes, approve or reject edits — all from your iPad screen.
+
+### 2. **SSH + Terminal App + Tailscale**
+Any terminal that can hold an SSH connection will get you started. Tailscale gives you private access to your Mac from anywhere. It feels like a personal VPN, without the router drama. tmux keeps terminal sessions alive across disconnects. You can detach, disconnect, come back later, and everything is still running.
+
+### 3. **Mobile Companion Apps**
+Monitor Claude Code from your iPhone or iPad. View terminal output, browse files, and approve prompts on the go. There are also third-party apps like Happy Coder that provide secure mobile access to Claude Code sessions.
+
+### Key Considerations
+Any iPad terminal experience without a real Ctrl key is going to make you miserable — every shell command needs Ctrl-C, Ctrl-D, Ctrl-R, and the soft keyboard's modifier handling is nowhere near good enough. A physical keyboard with proper modifier keys is strongly recommended.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

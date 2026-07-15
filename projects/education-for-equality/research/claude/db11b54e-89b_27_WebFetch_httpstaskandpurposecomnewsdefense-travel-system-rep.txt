@@ -1,0 +1,33 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://taskandpurpose.com/news/defense-travel-system-replacement/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-25 19:27:19 UTC
+========================================================================
+
+URL: https://taskandpurpose.com/news/defense-travel-system-replacement/
+Extraction prompt: What are the specific complaints about DTS? What does MyTravel replace? Quote soldiers verbatim. Include what's broken about the user experience, error rates, voucher rejection rates, time-to-process figures.
+
+----------------------------------------
+
+# Specific Complaints About DTS
+
+**User Experience Issues:**
+- Former Army Col. Arnold Strong called it the "Don't Travel Service," noting it's "challenging for soldiers, leaders, NCOs, officers" to navigate
+- Tickets not paid for (Chamberlin's case), leaving travelers stranded at airports
+- System set payout dates incorrectly, leaving Monahan without per diem for 10 months
+- Produces "chaotic" routing with "long layovers" and "poor connections" because it "find[s] the cheapest source available"
+
+**Financial/Credit Damage:**
+- Travel card declines after extended delays
+- Soldiers forced to use personal funds or unit funds as workarounds
+- Monahan paid "a couple thousand dollars out of pocket"
+- Young soldiers' personal credit scores damaged by late government card payments, making them vulnerable to predatory lending
+
+**Process Bottlenecks:**
+Van Saun described approval delays: units with "only one, two, or three people" authorized to approve vouchers creates "a huge bottleneck, a huge delay"
+
+**Note:** The article doesn't specify what replaces DTS—only that the Pentagon is pursuing "Defense Travel Modernization" with Concur Technologies, featuring AWS hosting and mobile capabilities. No error rates or rejection statistics are provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

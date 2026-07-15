@@ -1,0 +1,38 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://discover.dtic.mil/technical-reports/
+Session: db11b54e-89b2-473e-b485-24b7a9698b7e
+Time: 2026-04-26 00:51:33 UTC
+========================================================================
+
+URL: https://discover.dtic.mil/technical-reports/
+Extraction prompt: Document the URL patterns for DTIC technical reports. Specifically: what does the accession number look like (AD prefix?), how do you go from accession number to PDF, are there bulk download tools, what subject category browsing is available.
+
+----------------------------------------
+
+# DTIC Technical Reports URL Patterns
+
+Based on the provided content, here's what can be documented:
+
+## Accession Number Format
+
+The document specifies that accession numbers "begins with: AD0, ADA, ADB, ADP or ADC, followed by digits."
+
+## PDF Access Method
+
+The content does not describe how to convert an accession number into a direct PDF URL. It only mentions that "Full Text Link" appears in citation records.
+
+## Bulk Download Tools
+
+No bulk download tools are mentioned. However, the page directs users to point crawlers to the sitemap at `https://apps.dtic.mil/sitemap.xml` for indexing unclassified and unlimited reports.
+
+## Subject Category Browsing
+
+The webpage does not describe subject category browsing functionality. It only mentions using "the search box at the top of every page" as the primary discovery method.
+
+## Related Access
+
+The document references the "R&E Gateway" at `https://www.dtic.mil/` for accessing research documents and access-controlled materials, suggesting additional functionality exists there beyond what's documented on this public-facing page.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

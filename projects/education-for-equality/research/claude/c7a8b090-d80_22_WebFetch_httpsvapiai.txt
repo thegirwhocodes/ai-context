@@ -1,0 +1,47 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vapi.ai
+Session: c7a8b090-d806-4a9e-9526-d149fd18f32a
+Time: 2026-04-01 05:24:18 UTC
+========================================================================
+
+URL: https://vapi.ai
+Extraction prompt: Describe the visual design in extreme detail: animations, moving parts, transitions, scroll effects, hover states, glows, gradients, particle effects, floating elements, what makes it feel polished and not template-like. Focus on the LANDING PAGE not the pricing page.
+
+----------------------------------------
+
+# Vapi Landing Page Visual Design Analysis
+
+## Animations & Moving Elements
+
+The landing page features **sound wave animations** in the hero section, with a configurable `soundWaveSpeed` property (set to 2.2), creating rhythmic visual movement that reinforces the voice AI theme. The design incorporates **marquee animations** (referenced as `MarqueeAnimation` component), suggesting horizontally-scrolling integration logos that loop continuously.
+
+## Grid & Layout Effects
+
+The page uses a **dotted grid background pattern** defined through CSS (`repeating-linear-gradient` with 16px spacing), creating a technical aesthetic. Diagonal crosshatch SVG patterns overlay sections, constructed from subtle stroke elements, giving depth without overwhelming the interface.
+
+## Scroll & Transition Behaviors
+
+The architecture includes multiple **`ViewportBoundary` and `OutletBoundary` components**, indicating viewport-triggered rendering and lazy-loading for performance. Content sections appear to use **Suspense boundaries**, suggesting staggered animations as users scroll through hero, about, stats, features, and enterprise sections.
+
+## Visual Polish Elements
+
+- **Glassmorphism-style cards** with `border-base-800` styling and calculated opacity
+- **Glowing accent colors**: brand blue, brand purple, and brand primary with strategic contrast against dark backgrounds
+- **Gradient text effects** implied through className structure (`text-balance` for optimal line breaking)
+- **Floating stat numbers** with compact notation formatting (300M+ calls displayed as "300M+")
+
+## Interactive States
+
+Hover states exist on buttons and links, with color transitions between inactive states and brand colors. SVG interactive diagrams in the use-case section respond to tab selection, swapping between inbound/outbound call flows with smooth transitions.
+
+## Polish Details
+
+The design avoids template appearance through:
+- Custom SVG diagram flows rather than stock illustrations
+- Testimonial integration with actual company logos and personal headshots
+- Code example tabs with language-specific syntax highlighting and differing accent colors per language
+- Accordion FAQ sections with expand/collapse animations
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

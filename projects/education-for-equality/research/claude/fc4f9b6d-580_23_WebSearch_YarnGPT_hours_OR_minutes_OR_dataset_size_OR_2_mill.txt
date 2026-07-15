@@ -1,0 +1,61 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "YarnGPT" "hours" OR "minutes" OR "dataset size" OR "2 million" training data am
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 08:49:58 UTC
+========================================================================
+
+Search query: "YarnGPT" "hours" OR "minutes" OR "dataset size" OR "2 million" training data amount
+
+----------------------------------------
+
+Web search results for query: ""YarnGPT" "hours" OR "minutes" OR "dataset size" OR "2 million" training data amount"
+
+Links: [{"title":"How Much Training Data is Required for Machine Learning? - MachineLearningMastery.com","url":"https://machinelearningmastery.com/much-training-data-required-machine-learning/"},{"title":"How Do You Know You Have Enough Training Data? | Towards Data Science","url":"https://towardsdatascience.com/how-do-you-know-you-have-enough-training-data-ad9b1fd679ee/"},{"title":"How Much Data Do You Need for Machine Learning","url":"https://graphite-note.com/how-much-data-is-needed-for-machine-learning/"},{"title":"Mosaic LLMs (Part 1): Billion-Parameter GPT Training Made Easy | Databricks Blog","url":"https://www.databricks.com/blog/billion-parameter-gpt-training-made-easy"},{"title":"Train your own language model with nanoGPT | by Sophia Yang, Ph.D. | Medium","url":"https://sophiamyang.medium.com/train-your-own-language-model-with-nanogpt-83d86f26705e"},{"title":"Dataset list - A list of the biggest machine learning datasets","url":"https://www.datasetlist.com"},{"title":"Open-Sourced Training Datasets for Large Language Models (LLMs)","url":"https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models"},{"title":"Will we run out of data? Limits of LLM scaling based on human-generated data","url":"https://arxiv.org/pdf/2211.04325"},{"title":"GitHub - karpathy/nanoGPT: The simplest, fastest repository for training/finetuning medium-sized GPTs. · GitHub","url":"https://github.com/karpathy/nanoGPT"},{"title":"How do machine learning professionals estimate how long training a model would take depending on data set size/shape? - Quora","url":"https://www.quora.com/How-do-machine-learning-professionals-estimate-how-long-training-a-model-would-take-depending-on-data-set-size-shape"}]
+
+The search results don't contain any information about "YarnGPT" specifically. The results returned general information about machine learning training data requirements and various GPT models, but nothing about a project or model called YarnGPT with details about its training time (hours/minutes), dataset size, or "2 million" training data.
+
+Let me try a more specific search for YarnGPT:
+
+Links: [{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"YarnGPT | PromptLayer Models","url":"https://www.promptlayer.com/models/yarngpt/"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"saheedniyi/YarnGPT-local · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT-local"},{"title":"saheedniyi/YarnGPT2b · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT2b"},{"title":"YarnGPT is a text-to-speech model for Nigerian languages ...","url":"https://www.facebook.com/MalamIromba1/posts/yarngpt-is-a-text-to-speech-model-for-nigerian-languages-and-accents-developed-b/10224997616424838/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"yarnGPT - Apps on Google Play","url":"https://play.google.com/store/apps/details?id=com.yarngpt.yarngpt"},{"title":"Yarn GPT (@yarngpt) / X","url":"https://x.com/yarngpt"}]
+
+Great! I found information about YarnGPT. I can see from the search results that the training was conducted on an A100 GPU over 5 epochs with a batch size of 4. However, the search results don't explicitly mention hours, minutes, dataset size, or "2 million" as training data amounts. Let me search for more specific technical details about YarnGPT's training data:
+
+Links: [{"title":"Datasets – Hugging Face","url":"https://huggingface.co/datasets"},{"title":"How long does it take to train an AI model? - UMU","url":"https://www.umu.com/ask/q11122301573854270145"},{"title":"How long does it take to train the solution to generate high-quality synthetic data? - BlueGen AI","url":"https://bluegen.ai/how-long-does-it-take-to-train-the-solution-to-generate-high-quality-synthetic-data/"},{"title":"YarnGPT | PromptLayer Models","url":"https://www.promptlayer.com/models/yarngpt/"},{"title":"How much time does it take to train a ChatGPT model? - Quora","url":"https://www.quora.com/How-much-time-does-it-take-to-train-a-ChatGPT-model"},{"title":"How long does it take to train data? - Quora","url":"https://www.quora.com/How-long-does-it-take-to-train-data"},{"title":"How long does it typically take to train a dataset for a single PDF when fine-tuning a model with Azure AI? - Microsoft Q&A","url":"https://learn.microsoft.com/en-us/answers/questions/1528058/how-long-does-it-typically-take-to-train-a-dataset"},{"title":"Behind the Millions: Estimating the Scale of Large Language Models | Towards Data Science","url":"https://towardsdatascience.com/behind-the-millions-estimating-the-scale-of-large-language-models-97bd7287fb6b/"},{"title":"How do machine learning professionals estimate how long training a model would take depending on data set size/shape? - Quora","url":"https://www.quora.com/How-do-machine-learning-professionals-estimate-how-long-training-a-model-would-take-depending-on-data-set-size-shape"},{"title":"How Much Data is Needed to Train a (Good) Model? | DataRobot Blog","url":"https://www.datarobot.com/blog/how-much-data-is-needed-to-train-a-good-model/"}]
+
+Based on my search results, I found information about YarnGPT, but the search results don't contain specific details about training hours, minutes, exact dataset size, or "2 million" as a training data amount. Let me search more specifically for YarnGPT technical documentation:
+
+Links: [{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Saheed Azeez Releases YarnGPT, a Text-To-Speech Model for Nigerians — BlackGeeks Nigeria","url":"https://blackgeeks.com.ng/saheed-azeez-releases-yarngpt-a-text-to-speech-model-for-nigerians/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://yarngpt.ai/"},{"title":"Saheed Azeez Created 2 Million GPT Tokens, Built An AI, YarnGPT - Programming - Nigeria","url":"https://www.nairaland.com/8334383/saheed-azeez-created-2-million"},{"title":"Pricing - YarnGPT","url":"https://yarngpt.ai/pricing"}]
+
+Excellent! I found the information. The search results mention that YarnGPT was trained for approximately two months and involved 2 million GPT tokens. Let me search for more specific details about the training timeline:
+
+Links: [{"title":"Saheed Azeez Releases YarnGPT, a Text-To-Speech Model for Nigerians — BlackGeeks Nigeria","url":"https://blackgeeks.com.ng/saheed-azeez-releases-yarngpt-a-text-to-speech-model-for-nigerians/"}]
+
+Perfect! I now have enough information to provide a comprehensive answer about YarnGPT's training details.
+
+## Summary of Web Search Results for YarnGPT
+
+Based on my web search, here's what I found regarding YarnGPT's training data and timeline:
+
+**Training Duration:**
+YarnGPT was trained for about two months of constant training on Google Colab.
+
+**Training Data Amount:**
+Saheed Azeez created 2 million GPT tokens for the YarnGPT model.
+
+**Training Infrastructure:**
+The training was conducted on an A100 GPU over 5 epochs with a batch size of 4.
+
+**Data Sources:**
+The model was trained on Nigerian movies, podcasts, and open-source Nigerian audio data.
+
+**Model Architecture:**
+YarnGPT is based on HuggingFaceTB/SmolLM2-360M and uses a pure language modeling approach.
+
+YarnGPT is a text-to-speech model specifically designed for Nigerian-accented English that supports multiple voices and languages including Yoruba, Igbo, and Hausa.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

@@ -1,0 +1,56 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://huggingface.co/saheedniyi/YarnGPT
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-11 06:04:32 UTC
+========================================================================
+
+URL: https://huggingface.co/saheedniyi/YarnGPT
+Extraction prompt: List ALL available voice names/speakers with any descriptions about their characteristics (age, gender, tone, accent, style). I need the complete list of voice options.
+
+----------------------------------------
+
+# YarnGPT Available Voices
+
+Based on the model card, here are all **11 available voices/speakers**:
+
+1. **idera** (default and best voice)
+2. **emma**
+3. **jude**
+4. **osagie**
+5. **tayo**
+6. **zainab**
+7. **joke**
+8. **regina**
+9. **remi**
+10. **umar**
+11. **chinenye**
+
+## Voice Breakdown
+- **6 Male voices:** jude, osagie, tayo, umar, emma, and one other
+- **5 Female voices:** zainab, joke, regina, remi, chinenye
+
+## Important Note
+According to the documentation:
+> "the names do not correlate to any tribe or accent"
+
+## Voice Characteristics
+Unfortunately, the model card **does not provide detailed descriptions** about individual voice characteristics such as:
+- Age range
+- Tone/emotion
+- Specific accent variations
+- Speaking style
+
+The only guidance provided is that **"idera" is the default and best voice** for quality results.
+
+## Usage Example
+```python
+# Create a prompt with a specific speaker
+prompt = audio_tokenizer.create_prompt(text, "idera")
+
+# If no speaker is selected, one is chosen at random
+prompt = audio_tokenizer.create_prompt(text)
+```
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

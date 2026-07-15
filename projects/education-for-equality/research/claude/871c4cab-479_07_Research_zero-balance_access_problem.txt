@@ -1,0 +1,132 @@
+========================================================================
+AGENT RESEARCH: Research zero-balance access problem
+Session: 871c4cab-479f-4ab1-9381-028da84aa1b7
+Time: 2026-06-18 18:18:06 UTC
+========================================================================
+
+Do deep web research (use WebSearch and WebFetch extensively — load them via ToolSearch with query "select:WebSearch,WebFetch" if needed) on a specific, critical question for a Nigerian voice service: CAN a mobile line with ZERO airtime balance reach a phone service at all, and what FREE mechanisms exist for a broke user to initiate contact?
+
+Context: "Sabi" is a voice-AI tutor children dial on a feature phone; the org wants children with no airtime/credit to reach the tutor at ₦0. A "flash callback" plan (child rings once and hangs up, server calls back) assumed the child can place a missed call for free — but that may fail if zero-balance lines are barred from dialing.
+
+Research and answer concretely for the four Nigerian networks (MTN, Airtel, Glo, 9mobile):
+1. **Outbound call barring on zero balance** — can a line with ₦0 even place/attempt a call (enough to trigger a ring for a flash/missed call), or is outbound dialing blocked when balance is zero? What about calling a toll-free 0800 number with ₦0 — is that allowed and truly free to the caller regardless of balance?
+2. **Free "Call Me Back" / "Please Call Me" services** — exact codes/mechanisms and daily limits for MTN ("Call Me Back"), Airtel ("Call Me Back"/Me2U), Glo, 9mobile. These let a zero-balance user send a free callback request — directly relevant.
+3. **Airtime borrowing / advance** — MTN XtraByte/XtraTime, Airtel "Borrow Me Credit", Glo Borrow Me Credit, 9mobile — codes, eligibility, fees, limits.
+4. **USSD session cost** — is dialing USSD (e.g. *123#) free on a zero-balance line in Nigeria? Who pays for USSD sessions (the new NCC USSD pricing/end-user billing rules 2024–2026)?
+5. **Reverse-charge / collect calls** — do Nigerian networks support any caller-free / callee-pays voice mechanism a service could use?
+
+Prioritize CURRENT (2024–2026) Nigeria-specific facts with codes, fees, limits, and sources. Conclude with the implication for flash-callback vs toll-free vs zero-rating. Return AT LEAST 90% of the substance — every code, fee, limit, rule, and source URL. Do NOT give a thin summary. Organize under clear headings. Completeness over brevity.
+
+----------------------------------------
+
+I now have comprehensive, current, Nigeria-specific data on all five questions. The research is complete. Here is the full report.
+
+---
+
+# Can a ₦0 Nigerian mobile line reach a phone service? — Research findings (2024–2026)
+
+## Bottom-line answer
+**Yes — a zero-balance line is NOT fully barred from initiating contact.** Two independent free mechanisms confirm this on every network: (1) the **"Beep" / flash-call services** (MTN Beep, Glo Beep, Airtel/9mobile equivalents) explicitly let a ₦0 line *place a call attempt* that leaves a missed call/flash on the recipient — proving the network passes the call-setup signaling even at ₦0; and (2) **0800 toll-free calls connect free regardless of airtime balance.** Your flash-callback assumption is therefore broadly valid, BUT with critical caveats per network (see Section 6).
+
+---
+
+## 1. Outbound call barring on zero balance
+
+- **Standard paid call with ₦0:** Blocked at *charging*, not at *dialing*. When a zero/insufficient-balance line dials, the call attempt **does reach the network**; the user hears an announcement ("this call cannot be completed due to insufficient balance" / "you have been profiled"). The line is not prevented from attempting the call — it is prevented from *completing a billable conversation*. (Quora; MTN search results)
+- **This is the key fact for flash-callback:** Because the dialing attempt reaches the network before the rejection announcement, the networks are able to convert that attempt into a free missed-call/flash on the recipient. This is exactly what the "Beep" services do (Section 6). So a ₦0 line **can** trigger a ring/flash — confirmed by the operators' own product pages.
+- **0800 toll-free with ₦0:** **Allowed and truly free to the caller regardless of balance.** "A call to a toll-free number is free to all telecoms subscribers in Nigeria… not billed for mobile users… regardless of whether they have airtime or credit balance." The business owning the number pays. (connect-ez; multiple sources). Toll-free numbers are 0800 + 8 digits, **domestic dialing only**, route to call centers.
+- **Emergency calls (112):** Connect with zero airtime / even without a registered SIM on the network — standard GSM behavior. (Not directly usable by you, but confirms the network's willingness to set up calls at ₦0.)
+
+---
+
+## 2. Free "Call Me Back" / "Please Call Me" services (exact codes + limits)
+
+These send a free callback *request* from a zero-balance line. **All are on-net only (same network) unless noted**, and **all are free**.
+
+| Network | Code | Daily limit | Notes |
+|---|---|---|---|
+| **MTN** | `*133*2*<number>#` (also reported `*133*1*<number>#`) | Not officially stated for NG (MTN SA = 5/day) | Free for sender & recipient. Designed for out-of-airtime users. |
+| **Airtel** | `*140*<number>#` | **5 callback requests/day** | Airtel-to-Airtel only ("can't send to other network users"). |
+| **Glo** | `*125*<number>#` | **5/day** | Free; on-net. |
+| **9mobile** | `*266*1*<number>#` ("Please call me, thank you"), `*266*2*…#` ("I landed safely"), `*266*3*…#` ("I need your assistance") | Not clearly stated | Free; on-net. |
+
+Messages typically expire after 24 hours. (Sources: Legit.ng comprehensive guide; naijaknowhow; NetworkPalava; SubBase; dataplanbundle)
+
+> Note: MTN previously branded this "Call Me Back" / "Zero Credit Call Service" — the dedicated mtn.ng/mtn-zero-credit-call-service page now 404s, suggesting it's been folded into MTN Beep (Section 6).
+
+---
+
+## 3. Airtime borrowing / advance (codes, fees, eligibility) — and a MAJOR 2026 disruption
+
+**⚠️ CRITICAL CURRENT-EVENT (April 2026):** Airtime lending was **suspended in mid-April 2026** after the **FCCPC reclassified airtime lending as a formal financial loan**. It was **restored by two court rulings**: Lagos Federal High Court (Justice Lewis-Allagoa, **April 15, 2026**) blocked FCCPC enforcement, and Abuja Federal High Court (**April 24, 2026**) ruled the suspension was "unlawful interference" with the operators' NCC licenses. **As of June 2026 the services are restored**, but this shows borrowing is legally contested and could be disrupted again — do **not** build a core access path on it. (Pulse Nigeria)
+
+**Universal code:** In **March 2024 the NCC harmonised USSD codes** — all four networks now use **`*303#`** to borrow airtime/data (replacing the old per-network codes). Some sources still cite legacy codes; both may work transitionally.
+
+| Network | Current code | Legacy code | Service fee | Eligibility | Limits |
+|---|---|---|---|---|---|
+| **MTN** (XtraTime airtime / XtraByte data) | `*303#` (also `*312#`, `*606#` cited) | — | **15% incl. VAT** (borrow ₦100 → repay ₦115) | Prepaid; >30 days on network; spent ≥₦200/mo for 3 consecutive months; main balance ≤₦75 | ₦25–₦10,000 by history |
+| **Airtel** ("Borrow Me Credit" / Extra Credit) | `*303#` | `*500#` (being phased out; one 2026 source still cites `*500#`) | **~15%** (borrow ₦500 → get ₦425) | Active prepaid ≥3 months; ≥₦200/mo recharge; clear prior loans | By history |
+| **Glo** ("Borrow Me Credit") | `*303#` | `*321#` | **15%** (borrow ₦100 → get ₦85; one source says ₦75) | SIM active ≥90 days (one source ≥4 months); ≥₦200/mo; no outstanding debt; **NIN-registered** | ₦25–₦1,000; first-timers ₦25–₦200; **3–5 loans/month** |
+| **9mobile** ("More Credit") | `*303#` | `*665#` | **15%** (borrow ₦500 → get ₦425) | Active ≥3 months; ≥₦200/mo recharge | By history |
+
+Repayment auto-deducted on next recharge. **Note the eligibility gates make borrowing useless for your target users** — out-of-school children on shared/new SIMs with no recharge history will not qualify (need 30–90+ days tenure and ₦200/mo recharge history). (Sources: vibena, payora, Cardtonic, gloworld, MTN.ng)
+
+---
+
+## 4. USSD session cost — who pays (new NCC 2024–2026 rules)
+
+- **USSD rate: ₦6.98 per session**, session lasts **up to 120 seconds**. (NCC; ITEdgeNews; TheCable)
+- **End User Billing (EUB) model — applies to USSD *banking* transactions:** Per the **₦250bn telco–bank debt dispute**, the CBN+NCC (directive Dec 2024) shifted USSD banking charges **off bank accounts and onto the user's airtime**, effective **June 18, 2025**. The **MNO** deducts ₦6.98 from airtime; **banks must NOT also charge**. A consent prompt appears at session start; airtime is only deducted on confirmation and balance availability. (NCC EUB FAQ; TheCable; Leadership; Technology Times)
+- **Implication for a zero-balance line:** Under EUB, **a USSD session that incurs the ₦6.98 charge cannot complete without airtime** — "your bank balance no longer guarantees USSD success" (Businessday headline). So **USSD is NOT a reliable free entry point for a ₦0 user** if the session is billable.
+- **Scope caveat (important + somewhat unresolved):** The NCC EUB policy text is explicitly about **"USSD banking transactions."** Many network self-service USSD actions (balance check, the `*133#`/`*140#`/`*125#`/`*266#` call-me-back codes, `*303#` borrow) are operated by the MNO itself and are advertised as **free** even at ₦0. The NCC documents do **not** spell out a blanket free/paid status for *all* non-banking USSD — treat any *third-party/aggregator* USSD shortcode (which is what a "dial *XYZ# to reach Sabi" service would be) as **potentially billable at ₦6.98/session**, hence not safe for ₦0 users.
+
+---
+
+## 5. Reverse-charge / collect calls
+
+- **No evidence of a traditional consumer "collect call" / reverse-charge voice product** on MTN, Airtel, Glo, or 9mobile in current sources.
+- **The functional equivalent that exists** is **0700/0800 toll-free (reverse-billed) numbers**: the **callee (the service) pays**, the caller pays ₦0. This is the only caller-free / callee-pays voice mechanism a service can actually use. Cost to the service owner: historically **~₦15 per incoming call** termination/interconnect on the 0800 range (the figure cited in NCC special-numbering context; an Oct 2024 NCC "Determination of Mobile Voice Termination Rate for Special Numbering Services" sets the official rate but the PDF didn't parse — flag for direct follow-up). For your model, this is effectively a "the org pays per inbound minute/call" arrangement.
+
+---
+
+## 6. The decisive mechanism for flash-callback: the "Beep" services
+
+Every major network runs an **automatic flash/beep service for zero-balance lines** — this is the cleanest validation of your flash-callback design, and it's better than you assumed because **no code is required**:
+
+- **MTN Beep:** Dial the recipient **normally** with zero/low balance, **ignore the "insufficient balance" announcement**, then hang up. Recipient gets a **missed call (flash)**; MTN sends you a timestamped "successfully flashed" confirmation. **No opt-in code.** Free to sender; **recipient pays only if they call back.** **Works on-net AND off-net** (MTN→MTN and MTN→other networks). (code.ng; telgui; MTN Nigeria Support @MTN180 tweet)
+- **Glo Beep Call Service:** Same mechanism — call with zero balance, network leaves a missed call. **Works on-net AND off-net** (Glo→Glo and Glo→other networks). Free. **Critical limitation: "This service won't work if you have airtime" — it only works on an empty balance.** (gloworld.com; ogbongetech; entclassblog)
+- **Airtel / 9mobile:** Their zero-balance reach is primarily the **"Call Me Back" USSD** (`*140*…#`, `*266*…#`) rather than an auto-beep — and those are **on-net only**.
+
+**What this means for Sabi (the implication):**
+
+1. **Flash-callback is viable ONLY if Sabi's inbound number is on a network whose beep service reaches it.** MTN Beep and Glo Beep explicitly support **off-net** flashing, so a child on MTN or Glo with ₦0 *can* leave a missed call on a number on *any* network — the server can see the missed call and call back. This is the strongest free path.
+2. **BUT the beep delivers only a missed call (caller ID + timestamp), not a USSD payload or menu selection.** The server gets "this MSISDN flashed at this time" and must call back blind. That's fine for a single-service tutor.
+3. **Glo's "only works at ₦0" rule is a real edge case:** a child with even ₦1 of airtime on Glo would place a *real* (billable) call instead of a beep — and could get cut off. Beep is strictly a zero-balance feature on Glo.
+4. **Airtel/9mobile children at ₦0 cannot off-net flash** — they'd need the on-net Call-Me-Back codes (which only reach Airtel/9mobile numbers, max ~5/day). So if you rely on flash-callback, **provisioning numbers on multiple networks (esp. MTN + Glo) matters**, or you accept that Airtel/9mobile zero-balance users are better served by toll-free.
+
+**Flash-callback vs toll-free vs zero-rating — recommendation:**
+
+- **Toll-free 0800 is the most universal, deterministic ₦0 path:** every network's ₦0 subscriber can dial it free, it connects a real two-way voice session (no callback latency, no "missed call only" limitation), and it carries DTMF for menu navigation. **Cost shifts to the org** (~₦15/call-era termination, now governed by the 2024 NCC special-numbering determination — verify current rate). This is the cleanest fit for an interactive voice tutor.
+- **Flash-callback is a strong free fallback** but is **network-dependent** (great on MTN/Glo off-net; weak on Airtel/9mobile at ₦0), gives the server only a missed-call signal, and adds callback latency/cost on the org's side (the org pays for the outbound leg anyway — same as toll-free economically, minus the cleaner UX).
+- **Borrowing/advance is not a foundation** — eligibility gates exclude new/low-recharge SIMs, it carries 15% fees, and it was legally suspended for ~10 days in April 2026.
+- **USSD as an entry channel is risky for ₦0 users** under the post-June-2025 EUB regime if the session is billable (₦6.98/session from airtime); only MNO-native free codes are safe.
+
+**Net:** Toll-free 0800 (org-pays, works for every ₦0 caller, real interactive session) is the primary recommendation; MTN/Glo Beep flash-callback is a viable free secondary for those networks. Confirm the **current 2024 NCC special-numbering termination rate** (the Oct-2024 PDF at ncc.gov.ng/sites/default/files/2024-10/Legal-Determination_Mobile_Voice_Termination_Rate_for_Special_Numbering_Services.pdf — saved locally but unparseable via WebFetch; worth opening directly) to price the toll-free option accurately.
+
+---
+
+### Key sources
+- MTN Beep: https://www.code.ng/2021/12/mtn-beep-make-call-with-zero-balance.html | https://telgui.com/mtn-beep/ | https://x.com/MTN180/status/1338881046935441420
+- Glo Beep: https://www.gloworld.com/ng/beep-call-service | https://www.entclassblog.com/2021/05/glo-beep-call-service.html | https://ogbongetech.com/2021/04/glo-beep-call-service-here-is-everything-you-need-to-know/amp/
+- Call Me Back codes: https://www.legit.ng/ask-legit/guides/1649285-how-send-call-mtn-airtel-glo-9mobile-a-comprehensive-guide/ | https://naijaknowhow.net/how-to-send-call-me-back-on-airtel/
+- Borrowing + April 2026 suspension/restoration: https://www.pulse.ng/story/mtn-airtel-borrow-me-airtime-back-court-order-2026042815484887129 | https://cardtonic.com/read/borrow-airtime-glo-airtel-mtn-9mobile | https://www.mtn.ng/helppersonal/xtrabyte/ | https://www.gloworld.com/ng/borrow-me-credit
+- USSD ₦6.98 / EUB: https://ncc.gov.ng/frequently-asked-questions/end-user-billing-eub-policy-ussd-banking-transactions-nigeria | https://www.itedgenews.africa/ussd-billing-change-begins-today-nigerians-to-pay-%E2%82%A66-98-per-session-via-airtime-under-new-model/ | https://leadership.ng/n250bn-debt-dispute-ncc-shifts-ussd-billing-to-customers-airtime/
+- Toll-free: https://www.connect-ez.com/2023/07/30/toll-free-numbers-in-nigeria/ | NCC special-numbering termination determination (Oct 2024): https://www.ncc.gov.ng/sites/default/files/2024-10/Legal-Determination_Mobile_Voice_Termination_Rate_for_Special_Numbering_Services.pdf
+agentId: aac89b194f14bb53a (use SendMessage with to: 'aac89b194f14bb53a' to continue this agent)
+<usage>subagent_tokens: 73204
+tool_uses: 27
+duration_ms: 303349</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

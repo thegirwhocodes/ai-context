@@ -1,0 +1,35 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "out-of-school rate" Bayesian hierarchical model "GEM Report" technical paper Fr
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:04:08 UTC
+========================================================================
+
+Search query: "out-of-school rate" Bayesian hierarchical model "GEM Report" technical paper Friedman Wakefield
+
+----------------------------------------
+
+Web search results for query: ""out-of-school rate" Bayesian hierarchical model "GEM Report" technical paper Friedman Wakefield"
+
+Links: [{"title":"Research Report A Bayesian Hierarchical Model for Large-Scale","url":"https://files.eric.ed.gov/fulltext/EJ1110975.pdf"},{"title":"Chapter 10 Bayesian Hierarchical Modeling | Probability and Bayesian Modeling","url":"https://bayesball.github.io/BOOK/bayesian-hierarchical-modeling.html"},{"title":"Bayesian Hierarchical Modelling of Student Academic Performance: The Impact of Mathematics Competency, Institutional Context, and Temporal Variability","url":"https://www.mdpi.com/2227-7102/15/2/177"},{"title":"Chapter 6 Hierarchical models | Bayesian Inference 2019","url":"https://vioshyvo.github.io/Bayesian_inference/hierarchical-models.html"},{"title":"Frontiers | An application of Bayesian inference to examine student retention and attrition in the STEM classroom","url":"https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.1073829/full"},{"title":"Bayesian hierarchical modeling - Wikipedia","url":"https://en.wikipedia.org/wiki/Bayesian_hierarchical_modeling"},{"title":"Hierarchical Bayes Approach to Estimate the Treatment Effect ...","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC7565114/"},{"title":"Chapter 15 Hierarchical Models are Exciting | Bayes Rules! An Introduction to Applied Bayesian Modeling","url":"https://www.bayesrulesbook.com/chapter-15"},{"title":"Bayesian Sample Size Determination for Planning ...","url":"https://arxiv.org/pdf/1802.09388"},{"title":"A Bayesian workflow for the analysis and reporting of international large-scale assessments: a case study using the OECD teaching and learning international survey | Large-scale Assessments in Education | Springer Nature Link","url":"https://link.springer.com/article/10.1186/s40536-023-00189-1"}]
+
+Based on the web search results, I found some relevant material, but the results don't specifically contain a technical paper about "out-of-school rate" using a Bayesian hierarchical model in the GEM Report by Friedman and Wakefield. 
+
+The search results do show:
+
+1. Ross & Wakefield (2015) published work on "Bayesian hierarchical models for smoothing in two-phase studies, with application to small area estimation", which suggests Wakefield has expertise in Bayesian hierarchical methods.
+
+2. Several papers discuss Bayesian hierarchical models applied to educational contexts and large-scale assessments, though none of the results specifically mention a GEM Report paper on out-of-school rates by Friedman and Wakefield.
+
+The search did not return the specific technical paper you're looking for. If you'd like me to search for more information, I could try:
+- A search focusing specifically on the "GEM Report" and UNESCO
+- A search for "out-of-school rate" methodology papers
+- A more specific search combining the authors' names with education statistics
+
+Would any of these alternative searches be helpful?
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

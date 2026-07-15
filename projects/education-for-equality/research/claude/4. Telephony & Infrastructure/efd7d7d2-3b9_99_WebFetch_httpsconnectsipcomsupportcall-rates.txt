@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://connectsip.com/support/call-rates/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 07:26:38 UTC
+========================================================================
+
+URL: https://connectsip.com/support/call-rates/
+Extraction prompt: What are ALL the call rates listed? Especially for Nigeria — inbound, outbound, local, mobile, toll-free. List every rate shown on this page. Include all countries and rates if visible.
+
+----------------------------------------
+
+# ConnectSIP Call Rates Summary
+
+## Nigeria Rates
+The page displays these Nigeria-specific rates (all in Naira per minute):
+
+- **ConnectSIP**: FREE
+- **Local**: 10.2
+- **National**: 10.2
+- **Starcomms**: 10.2
+- **Mobile Airtel**: 10.2
+- **Mobile Etisalat**: 10.2
+- **Mobile Glo**: 10.2
+- **Mobile MTN**: 10.2
+- **Mobile Nitel**: 10.2
+- **Mobile Other**: 10.2
+- **Mobile Visafone**: 10.2
+
+## Additional Note
+The page contains an extensive international rate table covering 200+ countries and territories. Rates vary significantly by destination—from 5.5 Naira (many developed nations) to over 2,000 Naira for satellite services like Thuraya.
+
+For a complete international rate listing, the full table would need to be reviewed, as it contains hundreds of individual entries across multiple regions and call types.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

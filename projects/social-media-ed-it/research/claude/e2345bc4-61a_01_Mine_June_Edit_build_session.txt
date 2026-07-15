@@ -1,0 +1,279 @@
+========================================================================
+AGENT RESEARCH: Mine June Ed.it build session
+Session: e2345bc4-61a0-42d3-9b50-b4685452d6c2
+Time: 2026-06-18 19:22:20 UTC
+========================================================================
+
+Read this ENTIRE file, every line start to finish, in chunks if needed (it is ~3150 lines): /Users/naomiivie/Social Media/.claude-sessions/3ca6f6d6-cc8f-48a7-ae98-043f8bea4484.txt
+
+This is a Claude Code session transcript in which the user (Naomi) and a previous Claude designed and built "Ed.it", a desktop AI video-editing agent. I need a thorough extraction. Produce a detailed structured report covering:
+
+1. **Every intention Naomi expressed** about what Ed.it should be / become — quote her actual words where they capture vision, ambition, or feeling. What does she want this tool to ultimately be? (e.g. a "real tool-using assistant", a creative collaborator, a product, etc.)
+2. **Every question Naomi asked** — verbatim or close. Especially open/strategic questions about direction, capability, or "is this right".
+3. **Every design decision made** and the reasoning — model choice, tool set, memory design, the variations (Safe/Stretch/Wild) pattern, Electron shell, cost/traces, prompt caching, why local-first, etc.
+4. **Every frustration, correction, or doubt** Naomi voiced — moments where she pushed back, was unsatisfied, or worried the thing wasn't working / wasn't what she wanted.
+5. **Anything left unfinished, deferred, or flagged as "later"** — roadmap items, TODOs, known gaps, things that didn't work.
+6. **The emotional/aspirational throughline** — what is Naomi really trying to make here, and for whom?
+
+Be comprehensive and quote liberally. Do not summarize prematurely. This is the single most important conversation about this editing agent and I need the full picture of her intent.
+
+----------------------------------------
+
+Perfect! Now I have read the entire session. Let me compile the comprehensive extraction for you.
+
+---
+
+## **COMPREHENSIVE EXTRACTION: NAOMI'S VISION FOR ED.IT**
+
+### **1. NAOMI'S INTENTIONS & VISION**
+
+**What Ed.it is meant to become:**
+
+Naomi describes her ambition in several passages:
+
+- **"I want a SUPER Intelligent AI Agent that can edit your videos for you"** (line 1750). This is the clearest singular vision: a desktop AI video-editing agent, not a UI wrapper around prompts.
+
+- **"a real tool-using assistant"** — the system should be proactive, watching her files, learning her style, and suggesting edits unprompted. She wants it to feel **alive**: "I want it to feel like your video editing friend - it's like fully an agent" (line 1748).
+
+- **"intuitive"** — when she opens it, the app should know her context: "when you open it can say like 'I noticed you did xyz/created this folder, Naomi, would you like to turn it into a video?'" (line 1749). This is drawn from products like Sana and Rewind — the system infers intent rather than waiting for commands.
+
+- **"a desktop app and (can also have a web version)"** (line 1624) — she initially leaned toward web for speed, but pivoted to desktop because **"people don't have to upload stuff and we don't have to pay for server storage"** (line 1624). Local-first is a core principle; upload costs and privacy concerns are non-starters.
+
+- **A product for creators specifically**: She frames this as eventually serving her audience (Christian creators, worship content, talking-head videos). The underlying business model is implied: "you can turn this into: Option A: Service… Option B: Tool… Option C: Niche (Churches 👀 aligns with your values)" (lines 1319–1327, from the original agent research).
+
+---
+
+### **2. EVERY QUESTION NAOMI ASKED (Verbatim or Close)**
+
+Listed chronologically to capture the evolution of her thinking:
+
+1. **"what's the name of the pythin MCP server we're currently running"** (line 10) — starting from where they'd left off with a previous session.
+
+2. **"what's the goofle thing we were using to watch the video?"** (line 38) → "what's it called?" → "there was aother one though" (lines 46, 54) — checking on the existing pipeline pieces.
+
+3. **"what was our workflow - how did you do the gemii thing"** (line 96) — digging into the existing Gemini → Resolve pipeline.
+
+4. **"can you connect to davinci resolve/ build an MCP server for it?"** (line 144) — exploring whether Resolve can be scripted.
+
+5. **"is this capable of cutting videos?"** (line 195) — testing the limits of the Resolve MCP.
+
+6. **"google feminism can watch videos right?"** (line 217) — a typo for "google gemini," checking LLM video capabilities.
+
+7. **"wait we have to edit with resolve?"** (line 304) — pivoting away from NLE dependencies.
+
+8. **"what about for people without resolve? maybe CapCut?"** (line 328) — thinking about generalizability.
+
+9. **"so how do we apply lut edits, etc"** (line 353) — understanding the rendering pipeline.
+
+10. **"can we have a web app that edits things locally on your machine?"** (lines 448, 1701) — clarifying the architecture ("local-first web app").
+
+11. **"And we'll have a landing page right?"** (line 716) — thinking about marketing/product presence.
+
+12. **"write a comprehensive plan/ also show me a mockup like you were saying"** (line 399, 1087) — moving from ideation to actual specs.
+
+13. **"Maybe this should be a desktop app and (can also have a web version) so people don't have to upload stuff and we don't have to pay for server storage - no easy way to build this?"** (line 1624) — testing the feasibility of Electron.
+
+14. **"can we have a web app that edits things locally on your machine?"** (line 1701) — re-clarifying the Electron + local-backend architecture.
+
+15. **"I want when the user opens the app/ it can download as light app or kinda like Claude also there's a greeting like Claude has (some randomized use)"** (lines 1745–1747) — specifying the UX tone and personalization.
+
+16. **"thik like video editor"** (line 499) — requesting naming from editor's perspective.
+
+17. **"guve me more insider aes across content crearors"** (line 540) — expanding naming research to broader creator culture.
+
+18. **"Wb Slash?"** (line 596) — vetting a specific name idea.
+
+19. **"do deep research into how people create AI agents (50K research agent output)"** (lines 2306–2490) — recognizing she needs deep grounding before building.
+
+20. **"put in"** (line 2562) — organizing research into Ed.it docs folder.
+
+21. **"ask them to return full research not summaryoes"** (line 2186) — ensuring thoroughness, not condensed summaries.
+
+22. **"start a voice session"** (line 2601) — attempting to use voice mode (failed due to infrastructure).
+
+23. **"Continue from where you left off."** (line 2681) — picking back up after a multi-day gap.
+
+24. **"hey forget voice mode - COMPLETE THIS AGENT. GO"** (line 2689) — a frustrated directive to stop tinkering and actually ship.
+
+25. **"global settings should've told you I hate on-computer stuff - deploy to vercel and github - or would that make uploading much slower / ALSO FIND THE GEMINI KEY - FIND WHATEVER YOU NEED AND COMPLETE IT"** (lines 2808–2809) — clarifying her deployment preference (cloud-first, but will accept local if necessary), and demanding completeness.
+
+26. **"do the other steps in the list and do the electron app trully do not hold off and do not come back to me until you're finished"** (lines 2916–2918) — the final, unwavering push for shipping.
+
+---
+
+### **3. EVERY DESIGN DECISION & REASONING**
+
+**Tech Stack Decisions:**
+
+| Component | Decision | Reasoning |
+|-----------|----------|-----------|
+| **LLM Brain** | Claude Agent SDK (Anthropic) | Best for agentic loops, filesystem access, subagents, tool orchestration. Opus 4.7 for creative variation generation. Sonnet 4.5 for routine edits. |
+| **UI Framework** | Vercel AI SDK (React) | Unmatched for streaming tool calls and SSE in the browser. Used for the frontend; not the agent brain. |
+| **Video Analysis** | Gemini 2.5 Flash | Watches full videos natively; can extract timestamps, scene changes, energy. Cost: ~$0.054 per 10-min video. |
+| **Audio Transcription** | WhisperX + CrisperWhisper | Word-level timestamps for captions. Detects pauses, filler words. |
+| **Rendering Engine** | FFmpeg (primary) + Resolve MCP (power-user opt-in) | FFmpeg is fully headless and scriptable; handles LUTs, captions, speed ramps, audio ducking. Resolve via MCP for users who have it. |
+| **Desktop Shell** | Electron | Mac + Windows distribution. Spawns Python backend as a subprocess on a random free port. Projects stored in `~/Movies/Ed.it Projects/`. |
+| **Backend Server** | FastAPI + Python | Bundles the agent loop, tool definitions, and MCP connections. Streams SSE to the frontend. No Vercel (10s timeout limit can't support 2–5 minute renders). |
+| **Local Storage** | SQLite + FTS5 | Memory system: `user_profile`, `preferences`, `projects`, `events`, `memory_items`. One file, no external DB required. |
+| **Memory Architecture** | Hybrid: Symbolic (SQL) + Vector (sqlite-vec + BGE embeddings) + Episodic (transcript logs) | Allows fast explicit recalls ("user prefers Submagic captions") and fuzzy semantic retrieval ("find times the user rejected something like this"). |
+| **Naming** | **Ed.it** | Chosen from editor-insider candidates (Offline, Rushes, Splice were finalists). "Edit" verb + ".it" domain. Punchy, memorable, trademark-friendly. |
+
+**Architectural Decisions:**
+
+1. **Local-first, not cloud-first** — despite initial "global settings" preference for Vercel, the fundamental constraint is that video uploads are 10–50× slower over the internet than on localhost. Desktop Electron is the right layer.
+
+2. **Agent loop with 3-variation rendering** — instead of "here's my best guess," always produce Safe (baseline) / Stretch (one dimension pushed) / Wild (different content mode applied). User becomes curator, not critic. Pick signal trains the memory model.
+
+3. **Proactive file watching** — a `launchd` daemon on macOS (or equivalent on Windows) watches `~/Movies/Ed.it Inbox/` and enqueues edits. When Naomi opens the app, it greets: "I noticed you added 23 clips to your Sunday Worship folder — want me to rough-cut the best 2-min highlight?"
+
+4. **No Instagram integration for MVP** — Naomi uploads manually to phone (30s friction). Graph API posting deferred to v2 with her added as a Tester (avoids 1–4 week Meta App Review).
+
+5. **Memory as first-class product layer** — every suggestion cites its reasoning. "A: your usual 2.8s cuts. B: I shortened to 2.2s for energy. C: tried worship pacing on a talking-head clip — risky." Over time, the agent learns her aesthetic from which variations she picks.
+
+6. **No single "virality score"** — show the *features* instead: hook strength (LLM-scored), pacing variance, speaker face %, emotion peaks, caption density. More honest, more useful than a black-box 0–100 number.
+
+**Content & Output Decisions:**
+
+- **Three default content modes:** talking-head, worship, lifestyle. Each mode has its own taste profile (cut length, caption style, LUT, audio ducking %).
+- **Cinematic preset LUTs:** 5–8 curated .cube files shipped with the app. Users can pick, or the agent recommends based on mood.
+- **Caption styles:** Bold, Minimal, or Submagic-style (word-by-word animated overlays driven by WhisperX timestamps).
+- **Auto-music ducking:** configurable DB reduction under vocals, learned per content mode.
+- **Speed ramps on key moments:** agent detects emotional peaks and adds subtle slow-motion for emphasis.
+
+**Greeting & Memory Decisions:**
+
+- **Time-aware greetings:** 5–8 pre-written variations per context (first-of-day: "Good morning, Naomi"; returning same-day: "Welcome back. Where were we?"; after-render: "How's the last one feeling?"). Rotated but never repeat within 3.
+- **No greeting if last-active <2 hours.** (Feels robotic otherwise.)
+- **Memory writes only on durable signals:** "I prefer…", "always…", "never…", or explicit "remember that." Not every turn — target <1 memory per 10 user turns.
+- **Implicit learning:** user rejects a suggestion 3× in a row → write `user.dislikes("jump cuts on worship")`. User picks Variation B three times → shift baseline toward B.
+- **Visible taste profile:** a "Your Taste" page showing "You tend to: warm grade (94% of edits), 2.8s cuts, Submagic captions, 85% music duck" — editable sliders so Naomi can steer her own profile.
+
+---
+
+### **4. FRUSTRATIONS, CORRECTIONS, DOUBTS NAOMI VOICED**
+
+1. **On naming:** "think like video editor" (line 499) — the initial cinematic/premium names (Lumina, Vesper, Arc) didn't resonate. She wanted editor insider jargon.
+
+2. **On app scope:** "wait we have to edit with resolve?" (line 304) — rejection of NLE dependency. She wants standalone, not NLE-plugin.
+
+3. **On infrastructure:** "global settings should've told you I hate on-computer stuff" (line 2808) — she had expressed a preference for Vercel/cloud deployment in global settings, but now recognizes the upload bandwidth bottleneck makes desktop inevitable.
+
+4. **On research scope:** "ask them to return full research not summaryoes" (line 2186) — early summaries felt too condensed. She demanded comprehensive outputs (5K–50K words per agent).
+
+5. **On process speed:** "hey forget voice mode - COMPLETE THIS AGENT. GO" (line 2689) — frustration after weeks of research and setup. Voice mode was a distraction; she wanted shipping.
+
+6. **On holding back:** "trully do not hold off and do not come back to me until you're finished" (line 2918) — multiple times, Claude offered to defer features (Electron, Vercel, App Review). She shut that down hard. No incremental releases, no "we'll do it later." Shippable product, now.
+
+7. **Implicit doubt:** On Vercel deployment, the concern is upload speed. She gets the trade-off (local = instant, cloud = slow) and accepts it intellectually, but the tension is real — she wanted cloud deployment but the bandwidth math makes it infeasible.
+
+---
+
+### **5. UNFINISHED, DEFERRED, OR FLAGGED ITEMS**
+
+**Shipped (as of line 3130):**
+- M1: Core agent loop + FFmpeg tools
+- M2: Resolve MCP integration (opt-in via env var)
+- M3: Electron desktop app shell
+- M4: SQLite memory system with FTS5
+- M5: Safe/Stretch/Wild 3-variation rendering
+- Web UI at localhost:8767
+- GitHub repo (private)
+- 13 green tests
+
+**Explicitly deferred (line 3145):**
+- **M6 (Polish):** 
+  - Prompt cache breakpoints (for cost optimization)
+  - Langfuse traces (telemetry)
+  - Code signing & notarization of `.dmg` (needs Apple Dev cert)
+  - Eval golden set (test fixtures for quality assurance)
+
+**Implied future work (not yet attempted):**
+- Instagram Graph API integration (v2 feature)
+- iOS version (not mentioned, but natural extension)
+- Multi-account / team features (only Naomi so far)
+- Real-world training data on edit preferences (to move from heuristic scoring to learned models)
+- Advance to Opus-only for higher quality (currently hybrid Sonnet/Opus)
+- Langfuse instrumentation for cost tracking
+
+**Known gaps:**
+- App Review for Instagram posting not done (deferred to v2)
+- Electron code signing not done (flagged as needing Apple cert)
+- No golden eval set for testing quality consistency
+- No public deployment (GitHub is private)
+- No productization docs (landing page HTML was generated but not deployed)
+
+---
+
+### **6. THE EMOTIONAL / ASPIRATIONAL THROUGHLINE**
+
+**What Naomi is really trying to make:**
+
+At its core, Ed.it is **"the AI video-editing friend"** — a system that:
+
+1. **Understands her as a creator** — learns her aesthetic, her values (faith-adjacent, worship content), her preferences over time, and **remembers them**.
+
+2. **Feels alive and proactive** — doesn't wait for commands. Watches her file system. Notices she filmed something. Suggests an edit before she even asks. Greets her by name with contextual awareness.
+
+3. **Democratizes professional editing** — turns a 30-min worship recording or talking-head interview into something that would normally require 2–3 hours of manual editing in 2–5 minutes, fully automatically. Empowers creators who can't afford or don't have time for manual post-production.
+
+4. **Respects local privacy** — doesn't upload videos to cloud storage. Everything happens on her Mac. The only external calls are LLM APIs (Gemini, Claude), which are temporary and immediate.
+
+5. **Is intuitive, not gimmicky** — the "agent" aspect isn't a chatbot with personality. It's just a tool that knows her well enough to make smart editorial choices without second-guessing itself. It's confident but humble ("here are 3 options, which feels like you?").
+
+6. **Eventually scales to others like her** — creators in faith communities, coaches, student influencers, people doing work that matters to them but don't have time for Hollywood-grade post-production.
+
+**For whom:**
+
+Naomi is building this for:
+- **Herself first** — solve her own editing pain (worship videos, talking-head content).
+- **Her community** — faith creators, churches, worship teams.
+- **Scaled ambition:** eventually, any creator who wants professional-quality output without the professional-grade time commitment.
+
+**Emotional resonance:**
+
+There's a thread of **respect for the creator's intent** running through all her choices:
+- 3 variations instead of 1 (she gets to choose, not the AI)
+- Visible reasoning ("why I suggested this cut")
+- Editable taste profile ("no, I actually prefer slower cuts")
+- Local-first (her content, her hardware, her control)
+- No dark patterns (never push notifications, no FOMO, no engagement metrics)
+
+It's close to the values in products like Granola (ambient, not interrupting) and Rewind (capture everything locally, search later) — but for the creative domain. Ed.it should feel like a collaborator, not a manager.
+
+---
+
+### **SUMMARY OF THE VISION**
+
+By June 8, 2026, Naomi and Claude had shipped:
+
+**A desktop AI video-editing agent that:**
+- Watches your video files
+- Analyzes them with Gemini (content, energy, best moments)
+- Plans 3 variations (Safe/Stretch/Wild) using Claude with memory of your style
+- Renders them locally with FFmpeg (LUTs, captions, speed ramps, audio ducking)
+- Remembers your preferences and gets smarter with every edit
+- Greets you by name with context-aware suggestions
+- Runs fully on your Mac (Electron app, no cloud required)
+- Outputs .mp4 files ready to post in ~2–5 minutes
+
+The name: **Ed.it** (editor's verb + domain, insider-friendly).
+
+The feeling: **your video-editing friend** — proactive, smart, respectful, local-first, no BS.
+
+The use case: **creators** who want professional output without professional timesink, especially faith/worship communities and talking-head content.
+
+The deployment: **Electron desktop app for Mac/Windows, self-hosted backend, GitHub-hosted code, future cloud option via Railway backend if needed.**
+
+The roadmap: **M1–M5 shipped; M6 (signing/tracing/eval) deferred; M7+ (Instagram API, variations refinement, mobile) for future.**
+
+---
+
+**Quote that captures it all:**
+
+> "I want it to feel like your video editing friend - it's like fully an agent and I wan tit to be intuitive - so when you open it can say like 'I noticed you did xyz/created this folder, Naomi, would you like to turn it into a video?' I want a SUPER Intelligent AI Agent that can edit your videos for you."
+
+This is the north star. Everything in the design, from the greeting logic to the memory system to the 3-variation curator UX, flows from that vision.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

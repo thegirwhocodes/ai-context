@@ -1,0 +1,62 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cerebras inference API Python SDK integration example 2026
+Session: 05c61662-492a-4126-85d8-d870fdfc2fa4
+Time: 2026-04-12 04:09:11 UTC
+========================================================================
+
+Search query: Cerebras inference API Python SDK integration example 2026
+
+----------------------------------------
+
+Web search results for query: "Cerebras inference API Python SDK integration example 2026"
+
+Links: [{"title":"Quickstart - Cerebras Inference","url":"https://inference-docs.cerebras.ai/quickstart"},{"title":"GitHub - Cerebras/cerebras-cloud-sdk-python · GitHub","url":"https://github.com/Cerebras/cerebras-cloud-sdk-python"},{"title":"Cerebras Free API (2026) | Models & Guide - Free-LLM","url":"https://free-llm.com/provider/cerebras"},{"title":"GitHub - Cerebras/inference-examples: Inference examples · GitHub","url":"https://github.com/Cerebras/inference-examples"},{"title":"Cerebras Inference Review 2026: Features &... | ThePlanetTools.ai","url":"https://theplanettools.ai/tools/cerebras-inference"},{"title":"inference-examples/getting-started/README.md at main · Cerebras/inference-examples","url":"https://github.com/Cerebras/inference-examples/blob/main/getting-started/README.md"},{"title":"cerebras-api | Skills Marketplace · LobeHub","url":"https://lobehub.com/skills/neversight-skills_feed-cerebras-api"}]
+
+Based on the search results, here's what I found about Cerebras Inference API Python SDK integration:
+
+## Installation and Basic Setup
+
+The Cerebras Inference library is available for download and installation through the Python Package Index (PyPI), and you can install it via pip.
+
+## Basic Integration Example
+
+To use the SDK, you import from `cerebras.cloud.sdk import Cerebras`, create a client with your API key from the environment, and then call `client.chat.completions.create()` with your messages and model. Here's a simple example:
+
+```python
+import os
+from cerebras.cloud.sdk import Cerebras
+
+client = Cerebras(
+    api_key=[REDACTED:sensitive-label]("CEREBRAS_API_KEY"),
+)
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": "Why is fast inference important?",
+        }
+    ],
+    model="llama3.1-8b",
+)
+print(chat_completion)
+```
+
+## Advanced Features
+
+The SDK also supports completions with prompts and max_tokens parameters, and async operations using AsyncCerebras with streaming responses.
+
+## OpenAI Compatibility
+
+If your application uses the OpenAI Python SDK, you can switch to Cerebras by changing the base URL and API key with no other code changes required.
+
+## Available Resources
+
+The Cerebras repository contains multiple example projects demonstrating different capabilities, with each project in its own folder containing a detailed README.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

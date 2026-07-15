@@ -1,0 +1,39 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: SignVLM github installation requirements WLASL pretrained weights how to run inf
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 21:11:32 UTC
+========================================================================
+
+Search query: SignVLM github installation requirements WLASL pretrained weights how to run inference
+
+----------------------------------------
+
+Web search results for query: "SignVLM github installation requirements WLASL pretrained weights how to run inference"
+
+Links: [{"title":"GitHub - Hamzah-Luqman/signVLM · GitHub","url":"https://github.com/Hamzah-Luqman/signVLM"},{"title":"GitHub - dxli94/WLASL: WACV 2020 \"Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison\" · GitHub","url":"https://github.com/dxli94/WLASL"},{"title":"PeerJ SignVLM: a pre-trained large video model for sign language recognition","url":"https://peerj.com/articles/cs-3112/"},{"title":"GitHub - ahmad-sardar/wlasl-baseline-model · GitHub","url":"https://github.com/ahmad-sardar/wlasl-baseline-model"},{"title":"GitHub - sumedhsp/Sign-Language-Recognition: Sign Language Recognition (I3D + Transformers) on WLASL Dataset - Computer Vision Final Project (CS-GY 6643)","url":"https://github.com/sumedhsp/Sign-Language-Recognition"},{"title":"GitHub - hulianyuyy/DSTA-SLR: Dynamic Spatial-Temporal Aggregation for Skeleton-Aware Sign Language Recognition (COLING2024)","url":"https://github.com/hulianyuyy/DSTA-SLR"},{"title":"Welcome to WLASL Homepage - Dongxu Li","url":"https://dxli94.github.io/WLASL/"},{"title":"GitHub - alanjeremiah/WLASL-Recognition-and-Translation: World Level American Sign Language Recognition and Translation to Spoken Language","url":"https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"},{"title":"GitHub - sidharth3/sign-language-recognition","url":"https://github.com/sidharth3/sign-language-recognition"},{"title":"GSOC2021_SignLanguageReport.md · GitHub","url":"https://gist.github.com/rongtuech/e23d9293186f6f0563ccba77d559d899"}]
+
+Based on the search results, here's what I found about SignVLM GitHub installation requirements, WLASL pretrained weights, and running inference:
+
+## Installation Requirements
+
+SignVLM was tested with a conda environment including PyTorch 1.9.0 with CUDA 11.1, cudatoolkit, torchvision, and av. The specific installation command mentioned is:
+```
+conda create -n pt1.9.0cu11.1_official -c pytorch -c conda-forge pytorch=1.9.0=py3.9_cuda11.1_cudnn8.0.5_0 cudatoolkit torchvision av
+```
+
+## Model Architecture
+
+The SignVLM architecture includes a trainable Transformer decoder, trainable local temporal modules and pre-trained models, with a fixed image backbone using CLIP. The model explores the capability of the contrastive language-image pre-training (CLIP) model for sign language recognition, using CLIP to extract spatial features from sign video frames while a Transformer decoder is used for temporal learning.
+
+## Datasets and Evaluation
+
+The proposed model has been evaluated on four different sign languages using the KArSL, WLASL, LSA64, and AUSTL datasets.
+
+For more specific details about pretrained weights download locations and inference procedures, I recommend checking the official GitHub repository at https://github.com/Hamzah-Luqman/signVLM directly, as the search results reference the repository but don't provide complete step-by-step inference instructions.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

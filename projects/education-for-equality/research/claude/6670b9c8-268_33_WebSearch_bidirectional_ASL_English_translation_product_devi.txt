@@ -1,0 +1,38 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "bidirectional" ASL English translation product device both directions deaf hear
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:28:06 UTC
+========================================================================
+
+Search query: "bidirectional" ASL English translation product device both directions deaf hearing 2025
+
+----------------------------------------
+
+Web search results for query: ""bidirectional" ASL English translation product device both directions deaf hearing 2025"
+
+Links: [{"title":"Bidirectional Translation of ASL and English Using Machine Vision and CNN and Transformer Networks | MDPI","url":"https://www.mdpi.com/2073-431X/15/1/20"},{"title":"Sorenson Acquires OmniBridge and Hand Talk to Develop Automated Sign Language Translation Capabilities | Sorenson Communications","url":"https://sorenson.com/newsroom/enterprise/sorenson-acquires-omnibridge-and-hand-talk-to-develop-automated-sign-language-translation-capabilities/"},{"title":"Bidirectional Translation of ASL and English Using Machine Vision and CNN and Transformer Networks[v1] | Preprints.org","url":"https://www.preprints.org/manuscript/202512.0685"},{"title":"ISSN (O) 2321-2004, ISSN (P) 2321-5526 IJIREEICE","url":"https://ijireeice.com/wp-content/uploads/2025/03/IJIREEICE.2025.13355.pdf"},{"title":"Wearable-tech glove translates sign language into speech in real time | UCLA","url":"https://newsroom.ucla.edu/releases/glove-translates-sign-language-to-speech"},{"title":"Real-Time Bidirectional Sign Language Translator Through Machine Learning – IJERT","url":"https://www.ijert.org/real-time-bidirectional-sign-language-translator-through-machine-learning"},{"title":"Sign Language Translation Using Machine Learning","url":"https://developer.arm.com/community/arm-community-blogs/b/ai-blog/posts/sign-language-translation-using-machine-learning"},{"title":"TWO WAY SIGN LANGUAGE TRANSLATOR","url":"https://ijrti.org/papers/IJRTI2404100.pdf"},{"title":"Bi-Directional American Sign Language and English Translator Using Machine Learning","url":"https://www.ijraset.com/research-paper/bi-directional-american-sign-language-and-english-translator-using-machine-learning"},{"title":"AI Sign Language Translation: Ready for Education? - Artificial intelligence","url":"https://nationalcentreforai.jiscinvolve.org/wp/2025/09/16/ai-sign-language-translation-ready-for-education/"}]
+
+Based on the search results, I found several recent developments in bidirectional ASL-English translation products and devices as of 2025:
+
+## Commercial Products and Acquisitions
+
+Sorenson announced in January 2025 the acquisition of OmniBridge and Hand Talk to develop AI-driven automated sign language translation capabilities. OmniBridge is an AI-driven sign language translation technology that enables bi-directional, real-time conversations between people who use American Sign Language (ASL) and those who speak English, while Hand Talk is a pioneer in using AI and ML to generate automated sign language translations through digital avatars.
+
+## Research-Based Systems
+
+A real-time, bidirectional system for translating American Sign Language (ASL) to and from English has been developed using computer vision and transformer-based models to enhance accessibility for deaf and hard of hearing users. The system features an easy-to-use web interface to translate from ASL to English and vice versa, allowing translation from an English sentence to sequences of ASL signs, unlike previous ASL translation models which prioritized translation from ASL to English.
+
+## Recent AI Developments
+
+Sign-Speak's service can readily translate between sign, text and audio, offering an automated interpreting service that can interpret live conversations using a generated photorealistic signer, which can be added to virtual meetings or used on a device via a QR code for in-person meetings.
+
+Google plans to release SignGemma, which translates signed ASL into English text.
+
+These developments represent significant progress in creating accessible bidirectional communication tools for both deaf and hearing users.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

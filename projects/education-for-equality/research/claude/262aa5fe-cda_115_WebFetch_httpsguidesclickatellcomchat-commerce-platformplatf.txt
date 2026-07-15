@@ -1,0 +1,34 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://guides.clickatell.com/chat-commerce-platform/platform-capabilities/messa
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-04-06 21:54:58 UTC
+========================================================================
+
+URL: https://guides.clickatell.com/chat-commerce-platform/platform-capabilities/messaging-channels/regional-ussd
+Extraction prompt: Does Clickatell offer network-initiated USSD push (MT-USSD) in Nigeria? Can they push a USSD message to a phone during an active voice call? What are the API endpoints, pricing, and technical details for Nigeria USSD? Which Nigerian MNOs (MTN, Airtel, Glo, 9mobile) are supported?
+
+----------------------------------------
+
+# USSD Service in Nigeria - Limited Information Available
+
+Based on the provided content, here's what can be confirmed:
+
+**Network-Initiated USSD Available:**
+Yes, Clickatell offers "Network-initiated (NI)" services, described as "USSD Push or Mobile Terminating USSD" that "the application starts the USSD session on the handset." However, the documentation notes this is "Available in selected territories and networks," without specifically confirming Nigeria's inclusion.
+
+**Regarding Voice Call Delivery:**
+The document provides no information about whether messages can be pushed during active calls.
+
+**Missing Technical Details:**
+The webpage does not include:
+- Specific API endpoints
+- Pricing information
+- Details on which Nigerian operators (MTN, Airtel, Glo, 9mobile) are supported
+- Granular technical specifications
+
+**Recommendation:**
+The content explicitly states this service is "Not available for self-serve clients" and directs inquiries to the "Sales Team." You would need to contact Clickatell directly to obtain Nigeria-specific details, pricing, operator support, and technical specifications for your use case.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,201 @@
+========================================================================
+AGENT RESEARCH: Research GSM gateway legality + cost
+Session: 3b8ddd08-9e23-4598-83dd-60902b9107f3
+Time: 2026-06-18 20:02:56 UTC
+========================================================================
+
+Deep web research (use WebSearch + WebFetch; load via ToolSearch "select:WebSearch,WebFetch" if needed). Context: "Sabi" (Nigerian voice-AI tutor) may use a GSM gateway / GoIP with real SIMs to (a) receive free zero-balance triggers (MTN/Glo Beep missed-calls, Airtel *140* / 9mobile *266* Call-Me-Back) on-net and (b) place callbacks to enrolled children. Answer two things thoroughly:
+
+PART 1 — LEGALITY in Nigeria (be precise and authoritative):
+- What exactly does the NCC prohibit re: SIM boxes / GSM gateways / "SIM boxing" / call masking / interconnect bypass? Quote the rules. The key fraud is terminating INTERNATIONAL calls as local to steal interconnect revenue — confirm.
+- Is using a small, type-approved GSM gateway with NIN-registered SIMs to place DOMESTIC callbacks to your own consenting, enrolled users legally distinct from illegal SIM-boxing? What conditions keep it legal (type approval, SIM registration, no international termination, consent, scale)?
+- Is there any rule against an organization owning multiple SIMs and auto-dialing its own users? Do-Not-Disturb (2442) / anti-spam rules, telemarketing rules, VAS licensing threshold.
+- At what point would this need a license (VAS, etc.)? Penalties for getting it wrong.
+
+PART 2 — COST (concrete, current 2024–2026):
+- GoIP / GSM-VoIP gateway hardware prices by port count (1, 4, 8, 16, 32 SIM) — name vendors and USD/₦ prices.
+- USB GSM modems (Huawei etc.) + an Asterisk/FreeSWITCH server alternative — cost.
+- Android phone + Tasker/ADB automation alternative — cost and limits.
+- Running costs: SIM acquisition, NIN registration, per-minute on-net call costs / bundles on MTN/Glo/Airtel/9mobile (cheapest call bundles 2025–2026), FUP/throttling risks, maintenance/reliability.
+- Realistic all-in cost to run a 10–300-child pilot via a GSM gateway, vs. just paying AT SIP outbound at ₦3/min.
+- Any African orgs/IVR services known to use GSM gateways legitimately.
+
+Return AT LEAST 90% of substance with exact prices, NCC rule citations, vendor names, and source URLs. Organize under PART 1 and PART 2. Completeness over brevity.
+
+----------------------------------------
+
+I now have everything needed for a thorough, authoritative answer. Key confirmations:
+- The fraud is defined by international call termination misrepresented as local to exploit the rate gap (₦3.90 vs ₦24.40/min) — NOT the technology itself. Legitimate GSM gateway uses (LCR, backup, call centers) are acknowledged.
+- AT outbound is ~₦3/min ("1/- per minute" = 1 unit; in Nigeria ~₦3).
+- Glo Super Talk 15.5 k/s = ₦9.30/min is cheapest; the daily access fees and FUP/velocity detection are the real practical risks.
+- 32-port GSM gateway = ₹80,000 (~$960); India is a major source. Note the IMEI-change/SIM-rotation features on these devices are exactly the fraud markers.
+
+I have ample primary-source citations. Let me compile the final report.
+
+---
+
+# SABI GSM-GATEWAY RESEARCH — Legality & Cost in Nigeria
+
+This builds on substantial prior E4E research (sessions `3b8ddd08-9e2`, `efd7d7d2-3b9`, `c106a9b2-5cc`) already in `research-agents/`, which established the zero-balance trigger mechanics (MTN Beep / Glo Beep work off-net at ₦0; Airtel `*140*` and 9mobile `*266*` Call-Me-Back are on-net only, ~5/day, free) and AT/SIP outbound economics. The NEW work below is the SIM-box **legality** analysis and GSM-gateway **hardware/running costs**, which had not been researched before.
+
+---
+
+## PART 1 — LEGALITY IN NIGERIA
+
+### 1.1 What the NCC actually prohibits — exact definitions
+
+The NCC's own press release ("NCC Discusses Call Masking/Refiling and SIM Boxing at TCP, Lagos") gives the authoritative definitions:
+
+- **Call Masking:** *"a phenomenon whereby an international call is masked to appear as a local call on any GSM network in Nigeria."*
+- **SIM Boxing:** *"electronic boxes or devices with multiple SIMs that have the capacity to terminate calls at local interconnect rates."*
+- **Interconnect Bypass Fraud (IBF):** *"one of the most prevalent frauds in the telecom industry today."*
+
+**The fraud mechanism — CONFIRMED.** The crime is exploiting the rate differential by **terminating international calls at the local rate**. The NCC's own figures: a masked international call is terminated at the **local rate of ₦3.90/min** instead of the lawful **international termination rate of ₦24.40/min**, and the fraudster pockets the difference. This is theft of interconnect/settlement revenue from operators and government. **The illegality is defined by the international-to-local misrepresentation, not by the device itself.** The interconnect-bypass industry source (abhandshake.com) confirms: the fraud is *"reroute international calls… making them appear as local calls"* — *"the fraud is the rate evasion strategy, not the technology alone."* That same source explicitly acknowledges **legitimate** GSM-gateway uses: network-failover/backup, testing, and analytics.
+
+NCC estimates industry losses to call masking + SIM boxing at **~$3 billion**.
+
+### 1.2 The legal test that matters most: TYPE APPROVAL
+
+This is the single most important legal fact for Sabi, and it cuts against a GSM gateway:
+
+> **"These SIM boxes are never type-approved by the Commission, a clear indication that they are being used illegally in the country."** — NCC
+
+Under Nigerian law, **all** telecom terminal equipment imported, sold, or deployed must be **NCC type-approved** (Type Approval is mandatory for "any and all telecommunication based devices"). A multi-SIM GSM/VoIP gateway (GoIP, Ejoin, etc.) is, as a class, **not type-approved** — and the NCC treats non-type-approval as prima facie evidence of illegal use. So even a *domestically-only* gateway sits in a category the NCC has publicly branded illegal. The hardware itself is the legal exposure, independent of whether you ever route an international call.
+
+Aggravating factor: the cheap gateways openly advertise **"IMEI Change" / IMEI-switching and SIM-rotation** features (seen on the DBL G1 and SysMaster/VMGate product pages). Those features exist specifically to defeat fraud detection and are hallmarks of SIM-boxing — possessing a device marketed on IMEI-spoofing is bad optics and bad law.
+
+### 1.3 Is a small, type-approved gateway with NIN-SIMs placing DOMESTIC callbacks to consenting enrolled users legally distinct from illegal SIM-boxing?
+
+**Conceptually yes — the activity is distinct** (no international traffic = no interconnect-bypass fraud, the thing the law actually targets). **But in Nigerian practice the distinction is fragile**, for three reasons:
+
+1. **The device class isn't type-approved.** There is no "small type-approved GSM gateway" category you can buy off the shelf and point to. The NCC's stance ("never type-approved → illegal") means the burden is on you to prove legitimacy after the fact, not on them to prove fraud.
+2. **The NCC and operators detect by *pattern*, not by intent.** Fraud-detection systems flag: high call volume from a single SIM, many SIMs in one location, short call durations, and velocity anomalies (per Subex/Infosys/Vonage detection literature). A bank of SIMs in one building auto-dialing hundreds of children **looks exactly like a SIM box** to an automated fraud-management system — and the operator will block the SIMs first and ask questions never. Modern detection explicitly targets operations that "use genuine local SIM cards and mirror legitimate traffic patterns."
+3. **Enforcement is aggressive and uses blunt instruments.** In Feb 2018 the NCC **barred ~750,000–1,000,000 numbers** suspected of masking and **suspended six interconnect-exchange licensees** (citing **Section 45(1) and (3) of the Nigerian Communications Act 2003**). They suspended Medallion Communications' Interconnect Clearinghouse Licence for 90 days and disconnected ICSL and Solid Interconnectivity from all networks.
+
+**Conditions that keep a domestic auto-dialer on the right side of the *fraud* line** (necessary but, given type-approval, not fully sufficient):
+- **Zero international traffic** — every call leg domestic, terminating on-net to enrolled Nigerian numbers. This is the bright line for the IBF offence.
+- **NIN-registered SIMs in the org's name** (mandatory anyway under the Registration of Communications Subscribers Regulations 2022 — unregistered/pre-registered SIM use is itself an offence under **Section 65 NCA 2003**, carrying the small SIM-offence penalties: 2 months/₦15,000 or 6 months/₦20,000 in reported convictions).
+- **No IMEI spoofing / SIM-rotation-to-evade** — use real, stable IMEIs.
+- **Documented user consent** (enrolment records) — relevant to the separate anti-spam/DND regime (§1.4) and to rebutting a fraud allegation.
+- **Modest scale** — a handful of SIMs, human-plausible call patterns. The more SIMs and the higher the velocity, the more it reads as a SIM box regardless of purpose.
+
+### 1.4 Rules against an org owning multiple SIMs and auto-dialing its own users (DND / anti-spam / telemarketing)
+
+- **No prohibition on an organization owning multiple SIMs per se.** The constraint is registration (NIN, in the registered entity's name) and the SIM-box/type-approval issue above.
+- **Do-Not-Disturb (DND) / 2442:** The NCC's `2442` DND short code lets subscribers send **STOP to 2442** for full DND. **Critical for Sabi: the NCC's 2442 directive covers *text messages*, NOT voice calls** — *"the directive… only covers text messages, and not telemarketing calls. There is no time restriction… so messages and calls can be made anytime of the day."* So an outbound *voice* callback is not blocked by DND today.
+- **Anti-spam / telemarketing enforcement** is grounded in data-protection, not call-blocking: the NCC has vowed to *"arrest and prosecute"* telemarketers who **harvest subscriber numbers through dishonest means** (legal basis: Section 35(1) Consumer Code of Practice Regulations 2007; Section 9(1) Registration of Communications Subscribers Regulations 2022; Section 4.2 Internet Code of Practice; plus NDPA 2023 data-protection law). **The protection is against unlawfully *obtaining* the numbers** — calling children **whose guardians enrolled them and consented** does not run afoul of this. Consent + enrolment records are your shield here.
+
+### 1.5 At what point does this need a license? Penalties.
+
+**VAS license threshold.** Running a value-added voice service (IVR, call-centre, content services) for the public is a **Value Added Services (VAS)** activity. The line: a pilot calling your own enrolled, consenting users from your own SIMs is arguably internal/non-commercial; the moment it becomes a **public-facing service** (especially with a short code, premium/reverse-billing, or aggregator integration) it needs a **VAS licence**. Costs (NCC, 2024–25):
+- Application form **₦1,000** + **₦500,000** non-refundable admin charge (5% of the ₦10,000,000 licence fee).
+- **Annual operating levy = 1% of gross revenue** for non-network operators.
+- A short-code/content service additionally requires an **MOU with a licensed VAS Aggregator** (and Sabi's prior research priced the aggregator path: AT shared USSD ₦53,750/mo; dedicated USSD ₦200k integration + ₦70k/mo + MNO connection fees up to ₦500k–₦770k).
+
+**Penalties for getting it wrong:**
+- **Operating a communications service without a licence:** offence under **Section 31 NCA 2003**.
+- **Selling/deploying equipment without approval:** **Section 133 NCA 2003**; **interfering with a network:** **Section 131**.
+- **Type-approval / general contravention (Enforcement Regulations 2019):** NCC can **seal premises, seize transmitters/equipment, and fine ₦5,000,000 per contravention + ₦500,000 per day** of continuing contravention.
+- **SIM-registration offences (§65 NCA):** the small fines/imprisonment noted above.
+- **Cybercrimes Act 2015** (for IMEI-counterfeiting / fraud-tool devices): up to **7 years imprisonment and/or ₦5,000,000 fine**.
+- **Interconnect/masking:** licence suspension/withdrawal under **§45 NCA**; mass number-barring (the 750k–1M precedent). Note also the recent climate of aggressive NCC fining (₦12.4bn across operators in Jan 2026; MTN's historic ₦275bn SIM fine) — the regulator is not shy.
+
+**Net legal read for Sabi:** A **domestic-only, NIN-SIM, consenting-user, small-scale callback rig** does **not** commit the interconnect-bypass *fraud* the NCC is hunting. **But** (a) the gateway hardware class is not type-approved and is publicly branded "illegal" by the NCC, (b) the call pattern is indistinguishable from a SIM box to automated fraud detection and will likely get the SIMs blocked, and (c) scaling to a public service triggers VAS licensing. The legally clean paths Sabi's earlier research already identified — **0800 toll-free (callee-pays, works at ₦0, type-approved, fully licit)** and **AT/SIP outbound callbacks (~₦3/min, licensed carrier)** — avoid all of this. A GSM gateway should be treated as **high regulatory risk**, suitable at most for a tiny throwaway technical experiment, never as production infrastructure.
+
+---
+
+## PART 2 — COST (2024–2026)
+
+### 2.1 GoIP / GSM-VoIP gateway hardware by port count
+
+| Ports / SIMs | Example product & vendor | Price (USD) | Notes |
+|---|---|---|---|
+| **1 channel** | DBL G1 (AliExpress) | **~$143** (was $205) | Single SIM; advertises "IMEI Change," SIP & H.323 |
+| **1 channel** | Generic GoIP-1 (Walmart/Orange Hardwares/AliExpress) | **~$40–$90** | Entry hobbyist unit |
+| **4 channel / 4 SIM** | GoIP-4 (Orange Hardwares) | **~$207** (was $258) | 4 GSM channels, 4 SIP lines, web UI; Asterisk/3CX-compatible |
+| **8 channel** | GOIP-8 (Globalsources / Ejoin) | **~$265–$312** | Some 8-port models hold up to 32 SIMs (SIM rotation) |
+| **16 channel** | 16-port (Globalsources) | **~$1,125–$1,729/unit**; 128-SIM variant **~$1,450** | Carton/wholesale pricing |
+| **32 channel** | 32-port GSM gateway (IndiaMART, Ghaziabad) | **₹80,000 ≈ $960** | India is a major low-cost source |
+
+Vendors: **Ejoin / Shenzhen Ejoin Technology** (ejointech.shop), **GoIP / DBL** (via AliExpress, Walmart, Orange Hardwares, chinaskyline.net, globalsources.com), **SysMaster / VMGate / Startel** (carrier-grade, explicitly SIM-boxing-oriented), and **IndiaMART** sellers. All are **SIP/H.323**, work with **Asterisk, FreePBX/trixbox, 3CX**. Many headline features are **IMEI change, SIM rotation, SIM-balance recharge** — again, the fraud-evasion feature set.
+
+For a 10–300-child pilot you'd realistically buy a **4-port (~$207)** or **8-port (~$300)** unit.
+
+### 2.2 USB GSM modem + Asterisk/FreeSWITCH alternative
+
+- **Huawei USB dongles** (E155X, E173, E169, K3520, K3765, etc.) compatible with **`chan_dongle`** for Asterisk: **~$10 each + shipping**. Each dongle = 1 voice channel + SMS + USSD.
+- **Host:** a **Raspberry Pi (~$35–75)** or any cheap Linux box running Asterisk/RaspBX/MikoPBX. Needs a **≥1.2A power supply** per modem (under-powering causes "dongle disconnected" call failures).
+- **Caveats:** not all Huawei modems do voice out-of-the-box — some need a firmware flash / voice-enable; reliability per dongle is mediocre; a powered USB hub is needed for several modems.
+- **All-in for ~4 channels:** ~4×$10 dongles + $60 Pi + hub/PSU ≈ **$120–$150** — the cheapest DIY path, but the most fiddly and least reliable.
+
+### 2.3 Android phone + Tasker/ADB alternative
+
+- **Hardware:** any cheap Android phone (**$30–$60** used; could reuse an existing handset).
+- **Software:** **Tasker** (~$3 one-time) with **AutoInput**; auto-dial works via Tasker's Call action (Auto Dial), can be granted **ADB permissions** to bypass some limits; Kolmisoft markets an "Android-powered VoIP termination — no SIM boxes" approach for exactly this.
+- **Limits (significant):** call automation often only fires when **Tasker is in the foreground**; some actions need **root**; **one call at a time per phone** (no concurrency); DTMF/IVR navigation is brittle; Android battery/OS call-management interferes. Fine for a **proof-of-concept dialing a handful of kids sequentially**, useless at pilot scale.
+
+### 2.4 Running costs
+
+- **SIM acquisition:** SIM packs are effectively free/near-zero (₦100–₦500); **NIN registration** is free but mandatory and now biometric — each SIM must be tied to a registered NIN in the org's name. Acquiring *many* SIMs to one entity itself draws scrutiny.
+- **Per-minute on-net call costs (cheapest plans, July 2025 — from techcabal):**
+  - **Glo Super Talk: 15.5 kobo/sec = ₦9.30/min** (cheapest) **+ ₦15/day** first-call access fee. (Glo Talk On: 22 k/s = ₦13.2/min, no daily fee.)
+  - **9mobile MoreLife Complete: 16.38 k/s = ₦9.83/min + ₦7.68/day.**
+  - **MTN Pulse: 23 k/s = ₦13.8/min.** (BetaGist/XtraValue 30 k/s = ₦18/min.)
+  - **Airtel SmartTalk: 25 k/s = ₦15/min.** (SmartGist 33.33 k/s = ₦20/min.)
+  - Daily-access-fee plans aren't true bundles; bonus-airtime plans (Airtel OverJara, 9Konfam) bill bonus minutes at penalty rates (₦50/min, 83 k/s) — avoid for automation.
+- **FUP / throttling / blocking risk (the real cost):** there is no published "FUP" for voice, but **fraud-management systems will throttle or block SIMs** showing SIM-box-like patterns — high volume from one SIM, short durations, single-location velocity. **Expect SIMs to be barred**, forcing constant re-acquisition and re-registration. This is the hidden, recurring, and potentially fatal operating cost.
+- **Maintenance/reliability:** GSM modules overheat and drop; SIMs get blocked; firmware quirks; power sensitivity; one site = single point of failure. Carrier-grade reliability it is not.
+
+### 2.5 Realistic all-in: GSM gateway vs AT SIP outbound (~₦3/min)
+
+**Assume a pilot lesson = ~10 min/child, ~3 sessions/week.**
+
+- **300 children × 10 min × 3/wk × 4 wks = 36,000 min/month.**
+
+**Option A — GSM gateway (Glo Super Talk @ ₦9.30/min):**
+- Airtime: 36,000 × ₦9.30 = **₦334,800/mo**, **plus** ₦15/day × (SIMs) access fees, **plus** ~$300 one-time hardware, **plus** SIM-replacement churn from blocks, **plus** an on-the-ground operator to babysit it.
+- **Effective ≈ ₦335k+/mo and legally exposed.** Cheaper per-minute than you'd think, but the daily fees, blocking churn, and illegality swamp the saving.
+
+**Option B — Africa's Talking SIP/outbound (~₦3/min):**
+- AT outbound is billed at **~1 unit/min ≈ ₦3/min** (AT help center: outbound dialing charged "1/- per minute" from your stash; Nigeria unit ≈ ₦3). 36,000 × ₦3 = **₦108,000/mo**, **no hardware, no SIMs, no NIN registration, fully licensed, no blocking risk.**
+- **AT is both cheaper (₦108k vs ₦335k) AND legal.** The GSM gateway's supposed cost advantage **evaporates** — local airtime (₦9.30/min on Glo) is *more* expensive per minute than AT's ₦3/min SIP rate, before you even count hardware, labour, and legal risk.
+
+**For a tiny 10-child test:** GSM gateway ≈ free-ish minutes but ~$200 hardware + setup time; AT ≈ 10×10×3×4×₦3 = **₦3,600/mo (~$2.30)** with zero capex. AT wins at every scale.
+
+> **Important correction to the premise:** the assumption that a GSM gateway is cheaper "vs paying AT ₦3/min" is **backwards**. Nigerian retail on-net airtime is **₦9–15/min**; AT's wholesale SIP outbound is **~₦3/min**. The gateway only beats SIP if you're terminating *international* traffic (the illegal case). For *domestic* callbacks, **SIP is cheaper and legal.**
+
+### 2.6 African orgs using GSM gateways legitimately
+
+- **Generic legitimate GSM-gateway use is well-documented** (call-centre least-cost routing cutting telephony bills "up to 60%," network failover/backup) — voip-info.org, Hypermedia, abhandshake.com. "Call Africa" (Rwanda, callafrica.co.rw) markets GSM-gateway services.
+- **BUT no reputable African IVR/edtech org is documented running its service on a SIM-bank GSM gateway.** The leaders Sabi already researched all use **licensed/legal rails:** **Viamo 3-2-1** (operator-zero-rated shortcode over SIP/E1, MNO donates airtime), **Eneza/Shupavu291** (Safaricom billing integration), **GeoPoll/Arifu** (zero-rated reverse-billed shortcodes). The GSM-gateway/"GSM termination" ecosystem in Africa (goantifraud.com's "make money on GSM termination in Africa," SysMaster, VMGate) is overwhelmingly the **grey/illegal international-termination market**, not legitimate service delivery. **Adopting that toolkit would associate Sabi with exactly the fraud the NCC is prosecuting.**
+
+---
+
+## BOTTOM LINE
+
+- **Legality:** The NCC's prohibited act is **terminating international calls as local** to steal the interconnect margin (₦3.90 vs ₦24.40/min) — confirmed. A purely **domestic** callback rig to **consenting, NIN-registered enrolled users** does **not** commit that fraud and is **not** blocked by DND (which is SMS-only) or by any rule against owning multiple SIMs. **However**, the gateway hardware class is **not NCC type-approved** and is publicly branded "illegal"; the call pattern is **indistinguishable from a SIM box** and will likely get SIMs **blocked**; IMEI-change features common on these devices invite Cybercrimes-Act exposure (7 yrs / ₦5M); and a public service needs a **VAS licence** (₦500k + 1% gross revenue). Enforcement is harsh (₦5M/contravention + ₦500k/day; mass number-barring; licence suspension under §45 NCA).
+- **Cost:** Hardware is cheap (4-port GoIP ~$207; 8-port ~$300; DIY Huawei-dongle+Pi ~$120–150; Android+Tasker ~$30–60 but unreliable/sequential-only). **But the economics don't favour it:** cheapest Nigerian on-net airtime is **₦9.30/min (Glo) + daily fees**, *more expensive* than **AT SIP outbound at ~₦3/min**. For a 300-child pilot, AT ≈ **₦108k/mo, legal, zero capex** vs a gateway ≈ **₦335k/mo + hardware + SIM-block churn + legal risk.**
+- **Recommendation:** **Do not build the GSM gateway for production.** It is more expensive per minute than AT for domestic calls, legally precarious, and reputationally toxic (it's the fraudsters' toolkit). Stay on the rails Sabi's prior research already validated: **0800 toll-free for ₦0 inbound + AT/SIP for outbound callbacks**, and pursue the **NCC March-2026 educational zero-rating list**. A GSM gateway is justified only as a one-off, single-SIM, throwaway lab experiment — never as the channel children actually depend on.
+
+### Key sources
+- NCC SIM-box/call-masking press release (definitions, ₦3.90 vs ₦24.40, "never type-approved," §45 NCA, 750k numbers barred): https://www.ncc.gov.ng/media-centre/press-releases/ncc-discusses-call-maskingrefiling-and-sim-boxing-tcp-lagos-declares
+- NCC $3bn loss / enforcement: https://www.majorwavesenergyreport.com/ncc-puts-losses-to-call-masking-sim-boxing-3bn/ | https://thenationonlineng.net/call-masking-sim-boxing-blues/
+- NCA 2003 (full text): https://ppp.worldbank.org/sites/default/files/2021-09/Nigerian%20Communination%20Act%202003,%20ACT%20No.%2019.pdf ; Enforcement Regs 2004: https://kwaracails.edu.ng/library/law/nigerian_laws/ENFORCEMENT_REGULATIONS_2004.pdf
+- Type approval (mandatory; penalties — ₦5M + ₦500k/day, seizure, sealing): https://ncc.gov.ng/industry/numbering-type-approval/type-approval | https://www.eleoscompliance.com/en/article/nigeria-deep-dive-into-nigeria-ncc-type-approval-requirements
+- Cybercrimes Act 2015 (IMEI/fraud tools, 7 yrs/₦5M): https://www.nfiu.gov.ng/images/Downloads/downloads/cybercrime.pdf
+- DND/2442 (SMS-only, not calls): https://www.ncc.gov.ng/media-center/public-notices/unauthorised-use-telecom-subscribers-phone-numbers-and-other-personal | https://techpoint.africa/general/do-not-disturb-code-nigeria/
+- VAS licence (₦500k + 1% gross): https://www.618bees.com/article/643-how-to-obtain-a-value-added-service-vas-license-from-the-ncc | https://www.ncc.gov.ng/licence-fees-pricing
+- Interconnect-bypass = international fraud, legitimate uses acknowledged: https://abhandshake.com/community/regional-fraud-interconnect-bypass/ ; detection patterns: https://www.subex.com/blog/simbox-fraud-challenges-and-ai-powered-solutions-for-telecom-operators/ | https://www.infosysbpm.com/blogs/bpm-analytics/what-is-sim-box-fraud.html
+- GSM gateway hardware prices: https://www.orangehardwares.com/products/goip-4-voip-gsm-gateway-for-4-sim-cards-and-4-gsm-channels-and-4-sip-lines-ip-pbx | https://www.globalsources.com/manufacturers/goip-gsm-gateway.html | https://www.indiamart.com/proddetail/32-port-gsm-gateway-16368726573.html | https://ejointech.shop/collections/voip-gsm-gateway
+- USB-dongle/Asterisk path (~$10 dongles, chan_dongle): http://www.raspbx.org/documentation/gsm-voip-gateway-with-chan_dongle/ | https://docs.mikopbx.com/mikopbx/english/faq/voip-gateways/calls-through-huawei-e173 | https://blog.kolmisoft.com/android-powered-voip-termination-no-sim-boxes-no-headaches/
+- Nigerian call rates July 2025 (Glo 15.5 k/s, MTN 23 k/s, Airtel 25 k/s, 9mobile 16.38 k/s): https://techcabal.com/2025/07/25/mobile-network-with-best-call-rates-in-nigeria/
+- AT outbound billing (~1 unit/min): https://help.africastalking.com/en/articles/1152209-how-does-voice-billing-work | https://africastalking.com/pricing
+- Legitimate GSM-gateway/LCR uses + African grey-market termination: https://www.voip-info.org/voip-gsm-gateways/ | https://goantifraud.com/en/blog/1148-gsm-termination-market-in-nigeria-2019-review.html | https://www.callafrica.co.rw/gms.html
+agentId: a4792c45945eeb2d3 (use SendMessage with to: 'a4792c45945eeb2d3' to continue this agent)
+<usage>subagent_tokens: 110613
+tool_uses: 32
+duration_ms: 496101</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

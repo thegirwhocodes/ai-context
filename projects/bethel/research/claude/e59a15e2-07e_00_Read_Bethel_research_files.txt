@@ -1,0 +1,157 @@
+========================================================================
+AGENT RESEARCH: Read Bethel research files
+Session: e59a15e2-07e1-441a-b5e1-74b37c995b59
+Time: 2026-03-18 04:03:01 UTC
+========================================================================
+
+Find and read ALL research files in /Users/naomiivie/bethel/research/ directory. Also check for any planning documents like "Bethel naomi plan.md" in the root of /Users/naomiivie/bethel/.
+
+Read every file thoroughly and provide a comprehensive summary of:
+1. What research has been done
+2. What plans exist
+3. Any architectural decisions or technical specs
+4. Feature requirements
+5. Design philosophy
+
+IMPORTANT: Do NOT write any code or make any changes. Just research and report back.
+
+----------------------------------------
+
+I have now read every file thoroughly. Here is the comprehensive summary.
+
+---
+
+## Comprehensive Research Summary for Bethel App
+
+### 1. What Research Has Been Done
+
+Seven research files (plus one planning document) totaling approximately 200KB of content have been produced. They cover:
+
+- **Biblical research** (`/Users/naomiivie/bethel/research/BETHEL_BIBLICAL_RESEARCH.md`, ~1,355 lines): A cataloging of all 52+ dreams and visions in the Bible, organized chronologically from Genesis to Revelation, with full NKJV text, interpretations, fulfillment records, and categorization. Also includes 22 key theological scriptures about dreams, a complete interpretation framework derived from Joseph and Daniel, Hebrew/Greek terminology tables, and extensive analysis of every mention of "Bethel" in scripture.
+
+- **Kenneth Hagin research** (`/Users/naomiivie/bethel/research/BETHEL_HAGIN_RESEARCH.md`): Full biography, his hierarchy of divine guidance (inward witness > inward voice > voice of the Spirit > visions/dreams), the spirit-soul-body distinction, logos vs. rhema framework, four steps to train the human spirit, Faith Food devotional structure (Scripture > Teaching > Confession), and a bibliography of 139 titles.
+
+- **Kathryn Kuhlman research** (`/Users/naomiivie/bethel/research/BETHEL_KUHLMAN_RESEARCH.md`): Biography, theology of the Holy Spirit as a Person, surrender/yielding theology, her dream about three men and Jesus, approach to hearing God, healing ministry documentation, key quotes, all 14+ books, and a synthesis table showing how Kuhlman complements Hagin (Word + Spirit).
+
+- **Dream management research** (`/Users/naomiivie/bethel/research/BETHEL_DREAM_MANAGEMENT_RESEARCH.md`): 12 parts covering John Paul Jackson's 20 dream categories, Mark Virkler's 4 Keys to Hearing God's Voice, Charity Kayembe's methodology, Stephanie Ike Okafor's framework, Adrian Beale's 8 steps, Troy Brewer's 200+ dream symbols with biblical references, Spurgeon on dreams, C.S. Lewis on the supernatural, Smith Wigglesworth on visions, best practices for prophetic dream journaling, and 10+ key scriptures for LoRA training data.
+
+- **Competitive analysis** (`/Users/naomiivie/bethel/research/BETHEL_COMPETITIVE_ANALYSIS.md`): Analysis of YouVersion, Glorify, Logos, Bible Project, Bible Chat, FaithGuide, Bible.ai, CrossTalk, Illuminate Bible, Dreamnl, Dream Keys, Biblical Dreams App, and general dream journal apps.
+
+- **UI/UX research** (`/Users/naomiivie/bethel/research/BETHEL_UI_RESEARCH.md`): Complete dark-mode design system with color tokens, typography, screen-by-screen wireframes, animation specifications, and design references.
+
+- **LoRA architecture** (`/Users/naomiivie/bethel/research/BETHEL_LORA_ARCHITECTURE.md`): Complete 4-layer AI architecture specification, training pipeline, serving infrastructure, cost analysis, and implementation phases.
+
+---
+
+### 2. What Plans Exist
+
+From `/Users/naomiivie/bethel/Bethel naomi plan.md`:
+- Build a core LLM trained on the Bible and Christian dream interpretation experts
+- Add an agentic layer where the LLM can create tasks itself
+- Build dependencies for that agentic layer
+- Long-term: train a LoRA on the Bible to validate source accuracy, train on the Book of Daniel for cross-book pattern recognition
+
+From the LoRA architecture document, a 6-phase implementation plan:
+- **Phase 1 (Weeks 1-2)**: Parse NKJV, process research files through validation pipeline, generate ~8,500 training examples
+- **Phase 2 (Week 3)**: Fine-tune Phi-3.5 Mini with QLoRA
+- **Phase 3 (Weeks 3-4)**: Build RAG pipeline with pgvector Bible embeddings
+- **Phase 4 (Week 4)**: Deploy LoRAX on existing Hetzner GPU server
+- **Phase 5 (Weeks 5-6)**: Build Expo app with chat, journal, and Bible reader
+- **Phase 6 (Ongoing)**: Monthly retraining loop
+
+---
+
+### 3. Architectural Decisions and Technical Specs
+
+**4-Layer AI Architecture:**
+1. **Personal Context (RAG)** -- user's dream journal, past interpretations, personal symbol dictionary, instantly updated
+2. **Bethel LoRA** -- fine-tuned adapter (~16-20MB) on Phi-3.5 Mini (3.8B params), trained on Bible + Hagin + Kuhlman + Jackson + Virkler + dream frameworks, monthly retrain
+3. **Biblical Knowledge Base (RAG)** -- full NKJV (31,102 verses) in Supabase pgvector with 384-dim embeddings (all-MiniLM-L6-v2), dream symbol dictionary, cross-references
+4. **Cloud Model Fallback** -- Claude Haiku API (~$0.0045/call) for complex reasoning
+
+**Serving**: LoRAX on Hetzner RTX 4000 SFF Ada (20GB VRAM), sharing with existing Sabi infrastructure (Whisper + Chatterbox). Total additional cost for Bethel: ~$25/month. At 10K users: ~$0.07/user/month.
+
+**On-device inference** (future): CoreML/MLX on iOS (iPhone 15 Pro+), llama.cpp on Android. Phi-3.5 Mini INT4 (~2GB) + 16MB LoRA adapter. 15-30 tokens/sec on A17 Pro.
+
+**Training data validation pipeline**: Every theological claim scored as Aligned, Extrapolated, Testimony, or Contradicts against NKJV scripture. Contradicting items excluded entirely. Testimonies labeled as such (not doctrinal claims).
+
+**Database schema**: Supabase with tables for `bible_verses`, `dream_symbols`, `user_dreams`, and `user_notes`, all with pgvector embeddings.
+
+**App platform**: React Native / Expo (evidenced by the existing project structure).
+
+---
+
+### 4. Feature Requirements
+
+**Bible Reader:**
+- Full chronological Bible reading (not just a plan -- the actual text reordered)
+- Premium e-reader quality (Kindle/Apple Books comparable)
+- Auto-hiding chrome, swipe chapter navigation
+- Three reading themes: Midnight, Warm Night, OLED
+- Highlights in 4 colors, notes, cross-references in bottom sheets
+- Font: Literata at 18px default, adjustable 14-28px, line-height 1.75
+
+**Dream Journal:**
+- Text entry with title, body, tags, mood picker (abstract colored circles, not emoji), clarity rating, Bible verse linking
+- Auto-save, moon phase display
+- AI-powered interpretation grounded in scripture via RAG
+- Dream pattern matching across the user's history
+- Dream-to-scripture connection (e.g., dreaming of a ladder surfaces Genesis 28)
+- LLM-driven dream resurfacing (AI decides which past dreams to surface)
+- Jackson's 20 dream categories applied as classification
+
+**AI Chat ("Ask Bethel"):**
+- Chat interface with scripture citation blocks
+- Suggested prompts
+- Bethel avatar: small abstract stone/pillar or star icon in gold (not a face, robot, or cross)
+- "Thinking" state: gentle lavender pulsing glow, "Bethel is reflecting..."
+- Every response includes at least one scripture reference
+
+**Home Screen:**
+- Personalized greeting with date and moon phase
+- Today's Word (daily scripture)
+- Quick actions: Continue Reading, Record a Dream, Ask Bethel, Today's Devotional
+- Recent dream entries and reading streak
+
+**Daily Devotional:**
+- Hagin's 3-part structure: Scripture > Teaching > Confession
+- Faith confessions (spoken declarations)
+
+**5 Tab Navigation:** Home, Bible, Journal, Bethel AI, Profile
+
+---
+
+### 5. Design Philosophy
+
+**Core Design Ethos:** "Opening a premium leather journal by candlelight in a quiet room." The app should feel like a luxury tech product for the spiritually curious -- NOT a church app.
+
+Key principles:
+- **Zero religious iconography** -- no crosses, doves, praying hands, stained glass
+- **Warm gold + deep blue-black palette** -- `#D4A853` gold on `#0C0C14` base, with lavender (`#A78BFA`) for dream features and teal (`#5EEAD4`) for success states
+- **Never pure black/white** -- warm off-white (`#E8E4DE`) on warm near-black to prevent "halation"
+- **Generous whitespace**, no cramped layouts
+- **No social media pressure** -- no feeds, likes, sharing pressure
+- **No aggressive CTAs or upselling** -- free, no subscriptions, no ads
+- **Glassmorphism** for floating elements (tab bar, suggested prompts)
+
+**Design references:** Glorify (luxury Bible app), Bear Notes (dark writing), Arc Browser (warm dark UI), Apple Books (reading comfort), Claude App (warm AI chat), Day One (journal structure).
+
+**Theological Design Philosophy:**
+- **Grounded like Hagin** -- always points to Scripture, systematic, teaches principles
+- **Warm like Kuhlman** -- humble, reverent toward the Holy Spirit, never clinical or academic
+- **Never preachy** -- practical, not performative
+- The inward witness is positioned as primary guidance; dreams are valid but secondary
+- The Bible (NKJV) is the ground truth that validates all other sources
+- Denominational neutrality -- spans Pentecostal, Reformed, Anglican, and independent traditions
+- Testimony is labeled as testimony, not doctrine
+- Dream interpretations must always cite scripture and acknowledge subjectivity
+
+**Competitive Positioning:** "The first app that treats your dreams and Bible reading as one connected spiritual journey." No existing app combines chronological Bible reading + dream journal + AI interpretation + personal notes. The closest competitors (YouVersion, Glorify, Dreamnl) each cover only one piece.
+agentId: a4fb789ffabfe080c (use SendMessage with to: 'a4fb789ffabfe080c' to continue this agent)
+<usage>total_tokens: 90493
+tool_uses: 13
+duration_ms: 89875</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

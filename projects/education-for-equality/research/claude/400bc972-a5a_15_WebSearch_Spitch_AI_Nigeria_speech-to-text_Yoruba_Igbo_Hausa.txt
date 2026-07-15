@@ -1,0 +1,42 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Spitch AI Nigeria speech-to-text Yoruba Igbo Hausa Pidgin how it works API deplo
+Session: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e
+Time: 2026-07-08 02:14:05 UTC
+========================================================================
+
+Search query: Spitch AI Nigeria speech-to-text Yoruba Igbo Hausa Pidgin how it works API deployment
+
+----------------------------------------
+
+Web search results for query: "Spitch AI Nigeria speech-to-text Yoruba Igbo Hausa Pidgin how it works API deployment"
+
+Links: [{"title":"INTERVIEW: We can keep Nigeria's endangered languages alive through AI, says Temi Babalola | TheCable","url":"https://www.thecable.ng/interview-we-can-keep-nigerias-endangered-languages-alive-through-ai-says-temi-babalola/"},{"title":"How to Build an AI-Powered Learning Platform in Local Languages Using SPITCH | by Ibrahim Ogunbiyi | Medium","url":"https://medium.com/@ibrahimogunbiyi/how-to-build-an-ai-powered-learning-platform-in-local-languages-using-spitch-3dcc01f5be3a"},{"title":"AI is learning to speak African languages, thanks to these startups | TechCabal","url":"https://techcabal.com/2025/07/17/african-ai-startups/"},{"title":"Workshop on AI for Business in Africa 1:1–5, 2025 1","url":"https://openreview.net/pdf?id=d7fqVuZenl"},{"title":"Voice AI to reach more people | Spitch","url":"https://spitch.app/"},{"title":"Turn Text Into Real Nigerian Voices | Yoruba, Igbo & Hausa AI Voice Generator (100% Free) - YouTube","url":"https://www.youtube.com/watch?v=Ay_U_MJvgBc"},{"title":"YarnGPT - Nigerian Text-to-Speech AI","url":"https://www.yarngpt.co/"},{"title":"Towards Inclusive Financial Guidance: A Multilingual","url":"https://openreview.net/attachment?id=d7fqVuZenl&name=poster"},{"title":"Inside YarnGPT: The text-to-speech model built for Nigerian languages","url":"https://thecondia.com/yarn-gpt-nigerian-text-to-speech/"},{"title":"Spitch (@spitch_app) / Posts / X","url":"https://x.com/spitch_app?lang=en"}]
+
+Based on the search results, here's comprehensive information about Spitch AI's speech-to-text and language capabilities for Nigerian languages:
+
+## Overview
+
+Spitch AI has a mission to make AI speak African languages in both directions: speech-to-text and text-to-speech. Rather than building end-user apps, the Lagos startup offers simple APIs and SDKs that let any team plug local-language voice capabilities into call centres, media tools, or learning platforms, without the need for Machine Learning expertise.
+
+## Supported Languages
+
+Spitch currently provides support for Yoruba, Igbo, Hausa and Nigerian-accented English, with Pidgin English coming in a few months. Starting with Yoruba, the team has since added Hausa, Igbo, Nigerian-accented English and, after demand from East Africa, Amharic.
+
+## How It Works
+
+Spitch offers various solutions across speech generation in Nigeria's top languages, including Yoruba, Igbo, and Hausa, in different voices. It provides transcription of audios into Nigerian local languages, diacritics, and translation to local languages.
+
+## API & Deployment
+
+Spitch offers a Python SDK (pip install spitch) and improved documentation at docs.spi-tch.com. Localized text-to-speech functionality via Spitch TTS enables auditory feedback in native Nigerian accents.
+
+## Key Challenges Addressed
+
+The biggest challenges include data problems and computing problems. Languages are low-resource, meaning there is not a lot of representation of these languages on the internet, which makes getting data difficult. SpitchAI has stitched together an internal data-collection and labelling pipeline and leans on partners for proprietary corpora.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

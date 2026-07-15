@@ -1,0 +1,27 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://expo.scsp.ai/about/2024-recap/
+Session: bad258fa-eee1-445d-8edd-6cc575bc8e30
+Time: 2026-04-25 22:12:43 UTC
+========================================================================
+
+URL: https://expo.scsp.ai/about/2024-recap/
+Extraction prompt: List all hackathon winners from the 2024 AI+ Expo, their projects, tracks, prize amounts, and what they built. What companies sponsored, who judged, and what made winning projects stand out?
+
+----------------------------------------
+
+# 2024 AI+ Expo Hackathon Information
+
+I cannot provide the specific details you requested based on the webpage content provided. 
+
+The page mentions that a 2025 hackathon occurred where "SCSP and AGI House are co-hosting a hackathon for 300+ hackers on the sidelines of the AI+ Expo," but it does not contain information about 2024 hackathon winners, their projects, prize amounts, sponsoring companies, judges, or what distinguished winning entries.
+
+To find this information, you would need to:
+- Visit the dedicated 2024 hackathon recap page (if one exists)
+- Contact the organizers at **events@scsp.ai**
+- Check SCSP's social media channels or archived announcements
+
+The webpage primarily serves as a recap directory for both 2024 and 2025 events, rather than a detailed results database.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

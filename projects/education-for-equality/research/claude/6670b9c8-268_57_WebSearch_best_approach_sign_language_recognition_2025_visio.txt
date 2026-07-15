@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: best approach sign language recognition 2025 vision transformer vs MediaPipe vs 
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 17:26:02 UTC
+========================================================================
+
+Search query: best approach sign language recognition 2025 vision transformer vs MediaPipe vs CNN comparison accuracy
+
+----------------------------------------
+
+Web search results for query: "best approach sign language recognition 2025 vision transformer vs MediaPipe vs CNN comparison accuracy"
+
+Links: [{"title":"Interpreting Sign Language Recognition using Transformers and MediaPipe Landmarks | Proceedings of the 25th International Conference on Multimodal Interaction","url":"https://dl.acm.org/doi/10.1145/3577190.3614143"},{"title":"A novel deep transformer based CvT model for sign language recognition in visual communication | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-31558-1"},{"title":"Continuous Sign Language Recognition Through Transformers and MediaPipe Landmarks","url":"https://www.researchgate.net/publication/394777969_Continuous_Sign_Language_Recognition_Through_Transformers_and_MediaPipe_Landmarks"},{"title":"Vision transformer-powered conversational agent for real-time Indian Sign Language e-governance accessibility | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-12667-3"},{"title":"Sign language recognition based on dual-channel star-attention convolutional neural network | Scientific Reports","url":"https://www.nature.com/articles/s41598-025-13625-9"},{"title":"Automatic sign language to text translation using MediaPipe and transformer architectures - ScienceDirect","url":"https://www.sciencedirect.com/science/article/abs/pii/S0925231225010938"},{"title":"Enhancing Sign Language Detection through Mediapipe and Convolutional Neural Networks (CNN)","url":"https://arxiv.org/html/2406.03729v1"},{"title":"INDIAN SIGN LANGUAGE RECOGNITION USING MEDIAPIPE HOLISTIC Kaushal Goyal","url":"https://arxiv.org/pdf/2304.10256"},{"title":"Integrated Mediapipe with a CNN Model for Arabic Sign Language Recognition - Moustafa - 2023 - Journal of Electrical and Computer Engineering - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/10.1155/2023/8870750"},{"title":"MediaPipe‐LSTM‐Enhanced Framework for Real‐Time Dynamic Sign Language Recognition in Inclusive Communication Systems - Anithadevi - 2025 - Engineering Reports - Wiley Online Library","url":"https://onlinelibrary.wiley.com/doi/full/10.1002/eng2.70142"}]
+
+Based on the search results, here's a comprehensive overview of the best approaches for sign language recognition in 2025, comparing Vision Transformers, MediaPipe, and CNNs:
+
+## Key Approaches and Accuracy Comparison
+
+**Vision Transformers (ViTs):**
+Vision transformers (ViTs) have emerged as a breakthrough technology, offering superior feature extraction through self-attention mechanisms. Hybrid models that combine CNNs and vision transformers have been used for Korean SLR. The hybrid architecture, combining convolutional neural networks with vision transformer models, effectively handles ISL's spatial–temporal complexities, maintaining reliability even with complex queries.
+
+**MediaPipe-Based Approaches:**
+Pose-based approaches for sign language recognition provide light-weight and fast models that can be adopted in real-time applications. A proposed model using transformers and MediaPipe landmarks achieved an average accuracy of 99%. Research leveraging MediaPipe Holistic landmarks with LSTM achieved 88.23% accuracy.
+
+**CNN-Based Approaches:**
+Deep learning-based methods, particularly Convolutional Neural Networks (CNNs), have improved recognition capabilities, but they often fail to capture intricate spatial and temporal dependencies that are essential for accurate classification. The integration of CNN with the MediaPipe results in higher efficiency in using the model of real-time processing, with accuracy achieved by the model on ASL datasets of 99.12%. A MediaPipe-CNN model for Arabic Sign Language achieved an accuracy of 97.1%.
+
+## Computational Considerations
+
+Although CNN-LSTM and vision transformer (ViT) models capture spatiotemporal and long-range relationships, their computational complexity inhibits real-time use. MediaPipe offers efficiency advantages, though MediaPipe's tracking efficiency is hampered by its inability to interpret semantics, which calls for the need for extra modules for sign-to-text conversion.
+
+## Recommended Approach
+
+For 2025, hybrid approaches combining multiple techniques appear optimal: combining MediaPipe for efficient real-time keypoint extraction with transformers for temporal modeling, or CNN-transformer hybrids for comprehensive spatial-temporal feature capture.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

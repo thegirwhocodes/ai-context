@@ -1,0 +1,23 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.africastalking.com/docs/voice/SIP
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-06-09 17:13:03 UTC
+========================================================================
+
+URL: https://developers.africastalking.com/docs/voice/SIP
+Extraction prompt: VERBATIM: What is AT's SIP product? Is SIP a separate paid product from the regular Voice API webhook? What does SIP enable that the regular HTTP webhook doesn't? Quote pricing details and setup requirements.
+
+----------------------------------------
+
+I appreciate your request, but I'm unable to provide the information you're looking for. The content provided consists only of a page title ("Documentation | Africa's Talking") with no actual documentation text, pricing details, product descriptions, or setup requirements.
+
+To answer your questions about AT's SIP product, whether it's a separate paid offering, its distinctions from the regular Voice API webhook, pricing, and setup requirements, I would need access to the actual documentation content—which isn't included in what was shared.
+
+I'd recommend:
+- Visiting Africa's Talking's full documentation pages directly
+- Checking their pricing page for SIP-specific costs
+- Reviewing their API documentation for technical capabilities comparison
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

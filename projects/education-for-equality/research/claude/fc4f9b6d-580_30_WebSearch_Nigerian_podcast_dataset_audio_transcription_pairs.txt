@@ -1,0 +1,34 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Nigerian podcast dataset audio transcription pairs TTS training compile
+Session: fc4f9b6d-5801-4740-8186-288b41505f1e
+Time: 2026-03-25 09:22:23 UTC
+========================================================================
+
+Search query: Nigerian podcast dataset audio transcription pairs TTS training compile
+
+----------------------------------------
+
+Web search results for query: "Nigerian podcast dataset audio transcription pairs TTS training compile"
+
+Links: [{"title":"GitHub - Yuan-ManX/ai-audio-datasets: AI Audio Datasets (AI-ADS) 🎵, including Speech, Music, and Sound Effects, which can provide training data for Generative AI, AIGC, AI model training, intelligent audio tool development, and audio applications.","url":"https://github.com/Yuan-ManX/ai-audio-datasets"},{"title":"benjaminogbonna/nigerian_common_voice_dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset"},{"title":"benjaminogbonna/nigerian_accented_english_dataset · Datasets at Hugging Face","url":"https://huggingface.co/datasets/benjaminogbonna/nigerian_accented_english_dataset"},{"title":"Text-to-speech datasets · Hugging Face","url":"https://huggingface.co/learn/audio-course/en/chapter6/tts_datasets"},{"title":"GitHub - jim-schwoebel/voice_datasets: 🔊 A comprehensive list of open-source datasets for voice and sound computing (95+ datasets).","url":"https://github.com/jim-schwoebel/voice_datasets"},{"title":"Multilingual Audio Datasets for TTS & AI Voice Models - Macgence","url":"https://macgence.com/blog/multilingual-audio-datasets-for-tts-and-ai-voice-models/"},{"title":"Crowdsourced high-quality Nigerian English speech data set.","url":"https://openslr.org/70/"},{"title":"Formatting Your Dataset - TTS 0.22.0 documentation","url":"https://docs.coqui.ai/en/latest/formatting_your_dataset.html"},{"title":"Muyan-TTS: A Trainable Text-to-Speech Model Optimized for Podcast Scenarios with a $50K Budget","url":"https://arxiv.org/html/2504.19146v1"},{"title":"Speech & Audio Datasets | Voice Datasets for Machine Learning","url":"https://www.shaip.com/offerings/speech-data-catalog/"}]
+
+Based on the web search results, here are the key findings related to Nigerian podcast dataset audio transcription pairs for TTS training:
+
+## Nigerian Datasets for TTS Training
+
+The Nigerian Common Voice Dataset is a comprehensive dataset consisting of 158 hours of audio recordings and corresponding transcription, specifically curated to address the gap in speech and language datasets for African accents, making it a valuable resource for researchers and developers working on Text-to-Speech (TTS), Speech-to-text (STT), and other speech systems. The dataset currently consists of 158 hours of audio recordings in 4 languages, but more voices and languages are always added.
+
+Additionally, there is a crowdsourced high-quality Nigerian English speech dataset containing transcribed audio of Nigerian English sentences recorded by volunteers, with audio files paired with transcriptions in a TSV file.
+
+The Nigerian Accent Speech Data is a comprehensive dataset of about 8 hours of audio recordings featuring speakers from various regions of Nigeria, capturing the rich diversity of Nigerian accents, and is curated for researchers and developers working on Text-to-Speech (TTS) and other speech systems.
+
+## TTS Dataset Compilation Best Practices
+
+For training a TTS model, you need a dataset with speech recordings and transcriptions, where the speech must be divided into audio clips and each clip needs transcription. It is important to use a lossless audio file format to prevent compression artifacts, with WAV file format being recommended.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

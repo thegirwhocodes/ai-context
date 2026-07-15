@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: YarnGPT github saheedniyi02 issues stars model size
+Session: ff1faa52-49e4-4b0c-aee7-20c52835b500
+Time: 2026-03-09 02:23:19 UTC
+========================================================================
+
+Search query: YarnGPT github saheedniyi02 issues stars model size
+
+----------------------------------------
+
+Web search results for query: "YarnGPT github saheedniyi02 issues stars model size"
+
+Links: [{"title":"GitHub - saheedniyi02/yarngpt · GitHub","url":"https://github.com/saheedniyi02/yarngpt"},{"title":"Releases · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/releases"},{"title":"Activity · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/activity"},{"title":"yarngpt/__init__.py at main · saheedniyi02/yarngpt","url":"https://github.com/saheedniyi02/yarngpt/blob/main/__init__.py"},{"title":"saheedniyi/YarnGPT · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT"},{"title":"saheedniyi/YarnGPT-local · Hugging Face","url":"https://huggingface.co/saheedniyi/YarnGPT-local"},{"title":"YarnGPT","url":"https://www.promptlayer.com/models/yarngpt"},{"title":"yarngpt - PyPI Package Security Analysis - Socket","url":"https://socket.dev/pypi/package/yarngpt"},{"title":"Saheedniyi (@saheedniyi_02) / X","url":"https://x.com/saheedniyi_02?lang=en"},{"title":"Azeez Saheed unveils YarnGPT: A Nigerian-accented text-to-speech AI | Techpression","url":"https://techpression.com/azeez-saheed-unveils-yarngpt"}]
+
+Based on the search results, here's what I found about YarnGPT from the saheedniyi02 GitHub repository:
+
+**Stars and Repository Stats:**
+The repository has 295 stars and 101 forks (based on the activity page).
+
+**Model Size:**
+YarnGPT is built on HuggingFaceTB/SmolLM2-360M architecture, featuring 11 distinct voices. This indicates the underlying model is the SmolLM2 with 360 million parameters.
+
+**Overview:**
+YarnGPT is built on pure language modeling without external adapters. It generates Nigerian-accented English speech for experimental purposes.
+
+**Training Details:**
+The model was trained on a dataset of publicly available Nigerian movies, podcasts (using subtitle-audio pairs) and open source Nigerian-related audio data on Huggingface, with audio files preprocessed and resampled to 24Khz and tokenized using wavtokenizer.
+
+The search results didn't display specific GitHub issues information in the returned snippets, but the repository is actively maintained and available at https://github.com/saheedniyi02/yarngpt.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

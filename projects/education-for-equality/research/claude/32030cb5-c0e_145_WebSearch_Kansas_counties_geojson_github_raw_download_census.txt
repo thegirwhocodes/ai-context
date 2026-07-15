@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Kansas counties geojson github raw download census TIGER low resolution
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 07:54:05 UTC
+========================================================================
+
+Search query: Kansas counties geojson github raw download census TIGER low resolution
+
+----------------------------------------
+
+Web search results for query: "Kansas counties geojson github raw download census TIGER low resolution"
+
+Links: [{"title":"GitHub - fitnr/get-tiger: Make workflow for downloading Census geodata and joining it to survey data","url":"https://github.com/fitnr/get-tiger"},{"title":"Documentation | CitySDK","url":"https://uscensusbureau.github.io/citysdk/docs/"},{"title":"GitHub - zeke/us-counties: 📍A GeoJSON object containing geometries of every county in the US","url":"https://github.com/zeke/us-counties"},{"title":"US Counties data in geojson · GitHub","url":"https://gist.github.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a"},{"title":"GeoJSON and KML data for the United States","url":"https://eric.clst.org/tech/usgeojson/"},{"title":"script to build various Census / ACS files (shape, geojson & csv) · GitHub","url":"https://gist.github.com/bradoyler/84f46b24e9d96284718365a6e1252812"},{"title":"TIGER/Line Shapefiles","url":"https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"},{"title":"GitHub - evz/census2geojson: Convert TIGER/Line Shapefiles from the U.S. Census Bureau into GeoJSON","url":"https://github.com/evz/census2geojson"},{"title":"GitHub - topojson/us-atlas: Pre-built TopoJSON from the U.S. Census Bureau. · GitHub","url":"https://github.com/topojson/us-atlas"},{"title":"GitHub - generalpiston/geojson-us-city-boundaries: US Census tiger data set places transformed to GeoJSON. · GitHub","url":"https://github.com/generalpiston/geojson-us-city-boundaries"}]
+
+Here are the search results for Kansas counties geojson, census TIGER data, and low-resolution geographic files:
+
+## Key Resources Found:
+
+1. **get-tiger** - A workflow tool that uses make to quickly download Census geodata and prepare Shapefiles or GeoJSON for use in GIS. The Census publishes two sets of map data: Cartographic Boundary files and TIGER/Line.
+
+2. **us-counties (GitHub)** - A GeoJSON object containing geometries of every county in the US, with data sourced from Census shapefiles.
+
+3. **US Geojson Data (eric.clst.org)** - Provides different resolution options. The 500k files are the most detailed, the 20m files are the smallest with dramatic simplification, and the 5m files fall between them.
+
+4. **us-atlas (TopJSON)** - A TopoJSON file containing geometry for counties, states, and nation that is quantized and simplified, derived from the Census Bureau's cartographic county boundaries.
+
+5. **census2geojson** - A tool to convert TIGER/Line Shapefiles from the U.S. Census Bureau into GeoJSON.
+
+For low-resolution Kansas county data, the 20m or 5m resolution files would be appropriate, with sources available through the Census Bureau's cartographic boundary files or pre-built repositories on GitHub.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

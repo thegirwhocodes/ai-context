@@ -1,0 +1,41 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://news.northeastern.edu/2026/03/19/sign-language-technology-skepticism/
+Session: 6670b9c8-268f-4d5d-9a78-fc867a7b761c
+Time: 2026-04-11 16:26:28 UTC
+========================================================================
+
+URL: https://news.northeastern.edu/2026/03/19/sign-language-technology-skepticism/
+Extraction prompt: Extract the full article content: what the survey found, sample size, key statistics, specific concerns from Deaf community members, who conducted the research, methodology, and all quoted opinions. Be thorough.
+
+----------------------------------------
+
+# Sign Language Technology Survey Findings
+
+## Overview
+Northeastern University researchers conducted a global survey revealing skepticism among deaf and hard-of-hearing individuals regarding sign language technology.
+
+## Research Team
+- **Lead Researcher:** Saki Imai, postdoctoral computer science student
+- **Faculty Advisor:** Professor Malihe Alikhani
+- **Institution:** Northeastern University
+
+## Key Findings
+
+The survey indicates significant doubt within the Deaf community about emerging sign language technologies. However, the webpage content provided does not include the specific survey size, detailed statistics, methodology explanation, or direct quotes from community members expressing their concerns.
+
+## What's Missing from Source
+
+The article stub visible in the page content mentions:
+- A "global survey" was conducted
+- Results show "skepticism of sign language tech among Deaf community"
+- The research was published March 19, 2026
+
+However, the actual article body containing sample sizes, percentages, specific concerns raised by participants, and detailed methodology information is not included in the provided HTML source. The page contains primarily navigation elements, styling code, and metadata rather than the full article text.
+
+## Recommendation
+
+To extract complete survey details—including participant numbers, statistical findings, and direct community concerns—you would need access to the full article text at news.northeastern.edu rather than just the page structure provided.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

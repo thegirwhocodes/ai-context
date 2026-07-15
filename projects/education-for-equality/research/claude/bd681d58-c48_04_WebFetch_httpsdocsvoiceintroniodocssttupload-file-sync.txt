@@ -1,0 +1,37 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://docs.voice.intron.io/docs/stt/upload-file-sync
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:44:14 UTC
+========================================================================
+
+URL: https://docs.voice.intron.io/docs/stt/upload-file-sync
+Extraction prompt: Report the full substance: exact endpoint URL, HTTP method, auth header format, all request parameters (file field name, audio_file_name, use_diarization, use_language_asr_input, use_category), response shape and fields, error codes and meanings (especially 403 / permission / integrator account), file size/duration limits, and account requirements. Return actual content in detail, not a summary.
+
+----------------------------------------
+
+# Analysis of Provided Content
+
+The webpage content you've shared is a **404 error page** from the Intron Voice API Documentation site. It contains no technical specifications, endpoint details, authentication formats, request parameters, response structures, error codes, file limits, or account requirements.
+
+## What's Available
+
+The page only displays:
+- Navigation menu items linking to documentation sections (STT API, TTS API, Voice Bots API, Widget Integration)
+- A logo and search functionality
+- The message: "404 Page Not Found - We couldn't find the page"
+
+## What's Missing
+
+To provide the detailed technical information you've requested, I would need actual documentation pages such as:
+- API endpoint specifications
+- Authentication header formats
+- Request/response schemas
+- Parameter definitions (file field names, audio settings, etc.)
+- Error code documentation
+- Service limits and requirements
+
+**Recommendation:** Navigate to the documentation homepage or specific API reference pages (like `/docs/stt/file-upload` or `/docs/tts/tts-generate`) to access the technical specifications you're seeking.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

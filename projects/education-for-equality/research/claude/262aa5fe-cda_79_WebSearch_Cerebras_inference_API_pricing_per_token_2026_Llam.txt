@@ -1,0 +1,41 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cerebras inference API pricing per token 2026 Llama model
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-03-30 22:54:05 UTC
+========================================================================
+
+Search query: Cerebras inference API pricing per token 2026 Llama model
+
+----------------------------------------
+
+Web search results for query: "Cerebras inference API pricing per token 2026 Llama model"
+
+Links: [{"title":"Cerebras","url":"https://www.cerebras.ai/pricing"},{"title":"Llama 3.1 405B now runs at 969 tokens/s on Cerebras Inference - Cerebras","url":"https://www.cerebras.ai/blog/llama-405b-inference"},{"title":"Cerebras Launches the World’s Fastest AI Inference - Cerebras","url":"https://www.cerebras.ai/press-release/cerebras-launches-the-worlds-fastest-ai-inference"},{"title":"The Token Arbitrage: Groq vs. DeepInfra vs. Cerebras vs Fireworks vs Hyperbolic (2025 Benchmark) | by Aparna Pradhan | GoPenAI","url":"https://blog.gopenai.com/the-token-arbitrage-groq-vs-deepinfra-vs-cerebras-vs-fireworks-vs-hyperbolic-2025-benchmark-ccd3c2720cc8?gi=7903ab792e99"},{"title":"Cheapest Hugging Face Inference for Llama 3.1 405B (2026) - AI Pricing Master","url":"https://www.aipricingmaster.com/blog/Cheapest-Hugging-Face-Inference"},{"title":"Cerebras - Intelligence, Performance & Price Analysis | Artificial Analysis","url":"https://artificialanalysis.ai/providers/cerebras"},{"title":"Introducing Cerebras Inference: AI at Instant Speed - Cerebras","url":"https://www.cerebras.ai/blog/introducing-cerebras-inference-ai-at-instant-speed"},{"title":"Cerebras Inference: Now Available via Pay Per Token","url":"https://www.cerebras.ai/blog/cerebras-inference-now-available-via-pay-per-token"},{"title":"Cerebras Free Tier 2026 — Free Models, Credits & Limits | Price Per Token","url":"https://pricepertoken.com/endpoints/cerebras/free"},{"title":"Cerebras Introduces Inference Service, Touting Speed and Cost Benefits - BigDATAwire","url":"https://www.hpcwire.com/bigdatawire/this-just-in/cerebras-introduces-inference-service-touting-speed-and-cost-benefits/"}]
+
+Based on the search results, here's the current Cerebras inference API pricing for Llama models in 2026:
+
+## Llama Model Pricing on Cerebras
+
+**Llama 3.1 Small Models (Developer Tier):**
+Llama 3.1 8B and 70B models are priced at 10 cents and 60 cents per million tokens, respectively.
+
+**Llama 3.1 405B (Frontier Model):**
+Pricing is $6 per million input tokens and $12 per million output tokens.
+
+## Pricing Structure
+
+Cerebras offers multiple tiers:
+- The Free Tier offers free API access and generous usage limits
+- The Developer Tier provides users with an API endpoint at a fraction of the cost of alternatives in the market
+- The Enterprise Tier offers fine-tuned models, custom service level agreements, and dedicated support, with pricing available upon request
+
+## Performance Context
+
+It's worth noting that Llama 3.1 405B on Cerebras is by far the fastest frontier model in the world – 12x faster than GPT-4o and 18x faster than Claude 3.5 Sonnet.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

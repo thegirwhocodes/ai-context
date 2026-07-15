@@ -1,0 +1,18 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://antigravity.google/docs/mcp
+Session: 8269da7e-28a5-4dc1-bc81-d44417564072
+Time: 2026-05-02 19:37:09 UTC
+========================================================================
+
+URL: https://antigravity.google/docs/mcp
+Extraction prompt: What MCP server types does Antigravity support? stdio? HTTP? Local processes? Are there limitations on what kind of MCPs work? Can MCPs spawn audio/microphone subprocesses?
+
+----------------------------------------
+
+I cannot provide a substantive answer based on the content provided. The webpage only contains a title "Google Antigravity" with no actual documentation or details about MCP server types, supported protocols, limitations, or audio/microphone capabilities.
+
+To answer your questions about Antigravity's MCP support, you would need to consult the actual product documentation or technical specifications beyond what was shared here.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

@@ -1,0 +1,32 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Kansas county FIPS codes Cloud Morris Osage Wabaunsee rural urban classification
+Session: 32030cb5-c0ef-4006-a1f9-d25bc9ad27b0
+Time: 2026-04-18 07:39:37 UTC
+========================================================================
+
+Search query: Kansas county FIPS codes Cloud Morris Osage Wabaunsee rural urban classification
+
+----------------------------------------
+
+Web search results for query: "Kansas county FIPS codes Cloud Morris Osage Wabaunsee rural urban classification"
+
+Links: [{"title":"State of Kansas County FIPS Codes - CCCarto","url":"https://www.cccarto.com/fipscodes/kansas/"},{"title":"County Codes KCASUG 7/94 - Larry Hoyle","url":"https://ksdata.ku.edu/ksdata/sashttp/bg/ctylst.htm"},{"title":"fips-codes/county_fips_master.csv at master · kjhealy/fips-codes","url":"https://github.com/kjhealy/fips-codes/blob/master/county_fips_master.csv"},{"title":"Federal Information Processing System (FIPS) Codes for States and Counties","url":"https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"},{"title":"IPUMS USA | ICPSR County Codes","url":"https://usa.ipums.org/usa/volii/ICPSR.shtml"},{"title":"cd108err.txt - Census.gov","url":"https://www2.census.gov/geo/tiger/tgrcd108/cd108err.txt"},{"title":"County FIPS Codes County Name 2010 Population County FIPS","url":"http://kansas.responders.us/files/documents/identity_code/County_FIPS_Codes_Sept2011.pdf"},{"title":"Kansas (KS) Counties","url":"https://unicede.air-worldwide.com/unicede/unicede_kansas_fips.html"},{"title":"County FIPS | Kansas United States ZIP Code 5 Plus 4 ✉️","url":"https://ks.postcodebase.com/state_county"},{"title":"County seats and FIPS code map of Kansas","url":"https://your-vector-maps.com/downloads/kansas-state-county-fips-codes/"}]
+
+Based on the search results, here are the FIPS codes for the Kansas counties you requested:
+
+Cloud County, KS has FIPS code 20029
+
+Morris County has FIPS code 20127
+
+Osage County, KS has FIPS code 20139
+
+Wabaunsee County, KS has FIPS code 20197
+
+Regarding the rural/urban classification, the search results do not contain specific rural/urban classification data for these counties. If you need that information, I would need to perform an additional search focusing on the rural-urban classification system for these Kansas counties.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

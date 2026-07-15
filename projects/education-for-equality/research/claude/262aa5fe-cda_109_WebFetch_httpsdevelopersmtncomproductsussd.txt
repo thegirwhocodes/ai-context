@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://developers.mtn.com/products/ussd
+Session: 262aa5fe-cda2-4ed7-a392-fae7f4a7f583
+Time: 2026-04-06 21:53:43 UTC
+========================================================================
+
+URL: https://developers.mtn.com/products/ussd
+Extraction prompt: Does MTN Nigeria offer USSD-PUSH (network-initiated / mobile-terminated USSD) via their developer portal? What APIs do they offer for USSD? Can a server push a USSD message to a phone during an active voice call?
+
+----------------------------------------
+
+# MTN USSD API Capabilities
+
+Based on the provided content, I cannot determine whether MTN Nigeria specifically offers USSD-PUSH (network-initiated USSD) functionality.
+
+## What the Content Shows
+
+The page describes "MTN USSD interface" as available in Nigeria and other countries, and mentions the product falls under the "Messaging" category with the ability to "Send messages in a variety of formats - SMS, USSD, and more to come."
+
+However, the content does not specify:
+- Whether USSD-PUSH/mobile-terminated USSD is supported
+- Detailed API capabilities beyond the general messaging category
+- Technical specifications about pushing USSD during active calls
+
+## To Get Answers
+
+The page recommends developers:
+- Create an app with the product to explore functionality
+- Download the Swagger specification for endpoint details
+- Contact MTN support directly for technical clarification
+
+The available documentation excerpt does not contain the technical depth needed to answer your specific questions about USSD-PUSH capabilities.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

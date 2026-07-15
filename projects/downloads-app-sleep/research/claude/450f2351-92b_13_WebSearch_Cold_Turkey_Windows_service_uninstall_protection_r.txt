@@ -1,0 +1,36 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: Cold Turkey Windows service uninstall protection registry lock filter driver WFP
+Session: 450f2351-92bc-452a-b03a-8a99fdff7f14
+Time: 2026-07-15 18:50:12 UTC
+========================================================================
+
+Search query: Cold Turkey Windows service uninstall protection registry lock filter driver WFP
+
+----------------------------------------
+
+Web search results for query: "Cold Turkey Windows service uninstall protection registry lock filter driver WFP"
+
+Links: [{"title":"Breaking through Defender's Gates - Disabling Tamper Protection and other Defender components","url":"https://www.alteredsecurity.com/post/disabling-tamper-protection-and-other-defender-mde-components"},{"title":"Deactivate the kernel mode filter driver - Windows Server | Microsoft Learn","url":"https://learn.microsoft.com/en-us/previous-versions/troubleshoot/windows-server/deactivate-kernel-mode-filter-driver"},{"title":"WFP: Uninstalling a system-start WFP callout driver - NTDEV - OSR Developer Community","url":"https://community.osr.com/t/wfp-uninstalling-a-system-start-wfp-callout-driver/46916"},{"title":"WFP Logging Disable - Microsoft Q&A","url":"https://learn.microsoft.com/en-us/answers/questions/de220c04-06d0-4d8a-8c20-c1b7008a5130/wfp-logging-disable?forum=windows-windows_7-winapps"},{"title":"How do I completely disable WFP so that I can modify system files? Solved - Windows 10 Forums","url":"https://www.tenforums.com/general-support/186641-how-do-i-completely-disable-wfp-so-i-can-modify-system-files.html"},{"title":"Uninstalling Wfp Tool Does Not Return System to the State Prior to Installation of Wfp Tool · Issue #3 · henrypp/simplewall","url":"https://github.com/henrypp/simplewall/issues/3"},{"title":"Silencing the EDR Silencers. Originally posted: Silencing the EDR… | by Jonathan Johnson | Medium","url":"https://jonny-johnson.medium.com/silencing-the-edr-silencers-b703d7089821"}]
+
+Based on the search results, here's what I found related to your query about Cold Turkey, Windows services, uninstall protection, registry locks, filter drivers, and WFP:
+
+## Filter Driver Protection Mechanisms
+
+Windows Defender has a kernel-mode driver (WdFilter.sys) that registers a Registry callback filter which protects Defender's registry keys. If it is possible to unload, crash or stop the WdFilter kernel minidriver from running, the Defender service can be stopped from using the WdFilter kernel minidriver from processing events and protecting Tamper Protection and other Defender's Registry Keys.
+
+## Windows File Protection (WFP) and Filters
+
+Interacting with the WFP is easier because there are direct APIs available. For creating a WFP filter, the desired API is FwpmFilterAdd0, which is leveraged to create a WFP filter for both IPv4 and IPv6 addresses. Firewall rules and WFP filters are both eventually set in the registry, making it possible to monitor the registry to pick up on this activity.
+
+## Registry and Uninstall Protection
+
+Even if you disable a software component, the filter driver is still loaded when you restart the computer. To disable filter drivers, set the Start registry key of the corresponding filter drivers to 0x4, which will disable the filter driver.
+
+The search results don't specifically mention "Cold Turkey" in relation to these protection mechanisms. If you're looking for specific information about how Cold Turkey implements these protections, you may want to search more specifically for that application.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

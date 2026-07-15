@@ -1,0 +1,153 @@
+========================================================================
+AGENT RESEARCH: Research composable video-agent building blocks
+Session: e2345bc4-61a0-42d3-9b50-b4685452d6c2
+Time: 2026-06-18 19:24:59 UTC
+========================================================================
+
+Do thorough technical web research on the open-source / composable building blocks for assembling an LLM-driven ("agentic") video editing pipeline in 2026. The goal: a desktop agent that takes a natural-language brief + a video clip and produces finished social/vertical edits, by orchestrating existing best-in-class parts rather than reinventing them.
+
+Research and report concretely (with library names, GitHub repos, capabilities, and URLs):
+
+1. **Rendering / editing engines** an agent can drive headlessly: FFmpeg (and Python wrappers — ffmpeg-python, MoviePy), Remotion (React-based programmatic video), Revideo, Editly, auto-editor, Shotstack API. Tradeoffs of each for programmatic/agent-driven rendering of captions, color, transitions, b-roll.
+
+2. **Transcription + word-level timestamps**: WhisperX, faster-whisper, CrisperWhisper, Deepgram, AssemblyAI, WhisperKit (on-device Apple Silicon). Which give reliable word-level timing for animated captions.
+
+3. **Video understanding / scene + highlight detection**: Gemini 2.x video, PySceneDetect, TransNetV2, audio-energy/silence detection, face/emotion detection, "which moment is the hook" approaches. What's used to find the best clips automatically.
+
+4. **Animated caption rendering** (Submagic / Hormozi style word-by-word): how is this actually done open-source? (e.g. ASS/SSA subtitle styling, Remotion caption templates, libass, captacity-style projects, Revideo). Point to real repos.
+
+5. **Agent ↔ tools wiring**: any MCP servers for video/FFmpeg, "FFmpeg agent" projects, LangGraph/Claude-Agent-SDK video examples, text-to-edit research. How do people connect an LLM to a deterministic render pipeline reliably?
+
+6. **The "bring the separate parts together" thesis** — given all these exist as separate pieces, what is genuinely hard about integrating them into one coherent agent (the part you can't just download)? Where is the real engineering value: taste/style encoding, orchestration, quality verification loop, personalization/memory?
+
+Cite repos and URLs. Be concrete and technical — I want an integration map of the actual parts and which to pick.
+
+----------------------------------------
+
+All key load-bearing claims verified: CrisperWhisper is CC-BY-NC (commercial blocker confirmed), mcp-video has 119 tools with preflight validation, ELLMPEG is a real MMSys 2026 / ACM-published paper (DOI 10.1145/3793853.3795760, arXiv 2602.00028). The findings are solid. Let me write up the synthesis.
+
+The research is complete. Here is the integration map.
+
+---
+
+# Agentic Video Editing in 2026: An Integration Map of the Composable Parts
+
+The thesis up front: **every individual capability you need is downloadable. The product is the seams.** A base LLM hits ~65% accuracy emitting FFmpeg and hallucinates non-existent codecs; the same model wrapped in retrieval + bounded self-critique + validation hits 88% ([ELLMPEG, MMSys 2026](https://arxiv.org/abs/2602.00028)). The LLM is the cheap part. The scaffolding is the moat.
+
+---
+
+## 1. Rendering / editing engines (the deterministic executor)
+
+| Engine | Repo | License | Best at | Agent fit |
+|---|---|---|---|---|
+| **FFmpeg** | [ffmpeg.org](https://ffmpeg.org/ffmpeg-filters.html) | LGPL → **GPL if libx264** | LUTs (`lut3d`), transitions (`xfade`, 40+), PiP (`overlay`), caption burn (`subtitles`/`ass`) | The substrate under everything below |
+| **ffmpeg-python** | [kkroening/ffmpeg-python](https://github.com/kkroening/ffmpeg-python) | Apache-2.0 | Filtergraph-as-DAG in Python | **Stalled** — last release 0.2.0 (2019), [open CVE in bundled `future`](https://github.com/kkroening/ffmpeg-python/issues/877). Avoid for new work |
+| **MoviePy** | [Zulko/moviepy](https://github.com/Zulko/moviepy) | MIT | Python compositing, `TextClip`, `CompositeVideoClip` | Healthy (v2.2.1, 2025) but **v2 is a breaking rewrite** (`.with_*`, effects-as-classes). Slower than raw FFmpeg (NumPy frame round-trips) |
+| **Remotion** | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | **Source-available, paid 4+ people** | True Submagic-grade motion graphics (React/CSS/WebGL) | Best caption fidelity; renders on Lambda. License gate below |
+| **Revideo** | [redotvideo/revideo](https://github.com/redotvideo/revideo) | Open source | Canvas/TS animation, **API-first headless render** | Genuinely OSS alternative to Remotion, but team [pivoted to Midrender](https://re.video/blog/fork) — OSS repo diverging |
+| **Editly** | [mifi/editly](https://github.com/mifi/editly) (not h2non) | MIT | **Declarative JSON** clips/layers/transitions ([gl-transitions](https://gl-transitions.com)) | Most "LLM-emittable" of the FFmpeg tools. Light maintenance (v0.15.0-rc.1, Jan 2025) |
+| **auto-editor** | [WyattBlue/auto-editor](https://github.com/WyattBlue/auto-editor) | **Unlicense** | Silence/motion cutting → EDL export (Premiere/Resolve/FCP) | The dead-air-trim stage. Deterministic, zero license friction, v31 (June 2026) |
+| **Shotstack** | [shotstack.io](https://shotstack.io/pricing/) | SaaS, ~$0.20–0.30/min | Cloud JSON render, no infra | Easiest agent target (POST JSON) but per-minute cost + you don't control determinism |
+
+**Two structural FFmpeg facts that propagate everywhere:**
+- **Non-determinism:** output is *not* bit-reproducible across threads/architectures unless you force `-bitexact`. Matters if you hash/cache renders.
+- **The libx264 GPL trap:** building `--enable-gpl` (standard H.264) makes the whole binary GPL — can't embed in a closed-source app without source disclosure. For a commercial desktop app, build LGPL + dynamic-link, or accept GPL.
+
+**Remotion license (verified):** Free for ≤3 people. **4+ people must pay.** [Creators $25/mo/seat; Automators $0.01/render, $100/mo min (incl. 10k renders); Enterprise from $500/mo.](https://www.remotion.pro/license) For an automated pipeline the Automators tier ($0.01/render) is the relevant one — devs don't need seats.
+
+**Pick:** Editly or a custom **JSON-spec → FFmpeg/libass** executor for the deterministic baseline; **Remotion** (Automators tier) when you need true motion-graphic captions and can absorb the license + Chromium render farm.
+
+---
+
+## 2. Transcription + word-level timestamps
+
+**The core problem:** vanilla OpenAI Whisper was *not trained for word timestamps* — it bolts them on via [DTW over decoder cross-attention](https://github.com/openai/whisper/discussions/2341), which drifts 100–400ms and varies by model size. Karaoke captions visibly break on that. Two real fixes: **forced alignment** (WhisperX) or a **retrained model** (CrisperWhisper).
+
+| Tool | Repo | Word-timing method | Verdict |
+|---|---|---|---|
+| **WhisperX** | [m-bain/whisperX](https://github.com/m-bain/whisperX) | wav2vec2 **forced alignment** (separate model) | **Best permissive (BSD) open option.** ~sub-100ms. Caveat: numbers/symbols (`£13.60`) can get *no* timestamp; degrades in noise |
+| **CrisperWhisper** | [nyrahealth/CrisperWhisper](https://github.com/nyrahealth/CrisperWhisper) | Retrained tokenizer + AttentionLoss | **Best raw accuracy** (timestamp F1 **0.79 vs 0.66**, IOU 0.67, AMI WER 8.72 vs 16.01) and best around pauses/disfluencies. **BUT CC-BY-NC — commercial blocker** (verified) |
+| **faster-whisper** | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | DTW (same heuristic), 4× faster | The fast **transcription backend** WhisperX wraps. MIT |
+| **WhisperKit** | [argmaxinc](https://github.com/argmaxinc/WhisperKit) | DTW, CoreML on-device | The pick if it **must run on Apple Silicon** (privacy, $0/min). MIT. Timing < WhisperX |
+| **Deepgram Nova-3** | [deepgram.com](https://deepgram.com/pricing) | Native (non-DTW) | Fastest cloud, ~$0.0043/min batch, word timing + diarization included |
+| **AssemblyAI** | [assemblyai.com](https://www.assemblyai.com/pricing) | Native | Cheapest batch (~$0.15/hr); word timing included. Note 10% in-region price rise July 2026 |
+
+**Pick for word-by-word captions:** **faster-whisper → WhisperX forced alignment** for an all-OSS, commercially-licensable stack. Swap CrisperWhisper *only* if you clear the non-commercial license. Deepgram/AssemblyAI if you'd rather not run GPUs.
+
+---
+
+## 3. Video understanding / scene + highlight detection (clip selection)
+
+The open-source consensus converges on: **scene cuts + transcript + LLM scoring with an explicit rubric → 0–100 scores + reasons.**
+
+- **Scene cuts:** [PySceneDetect](https://github.com/Breakthrough/PySceneDetect) (`AdaptiveDetector`, CPU, free) for hard cuts; **[TransNetV2](https://github.com/soCzech/TransNetV2)** (MIT, GPU) when you have dissolves — it's ~+20pp accuracy (BBC 0.967 vs 0.889; ClipShots **0.726 vs 0.477**).
+- **The LLM "find the hook" engine:** **Gemini 2.5 Flash native video** is cheap enough to be the *primary* clip-finder — it consumes [~300 tokens/sec of video](https://ai.google.dev/gemini-api/docs/video-understanding) (1 fps default), reasons in MM:SS timestamps, takes YouTube URLs directly, and at [$0.30/1M input tokens](https://ai.google.dev/gemini-api/docs/pricing) costs **~$0.32 to watch and rank a full hour** — and it sees audio+visual, not just transcript.
+- **The rubric (what commercial tools encode):** [Opus Clip's virality score (0–99)](https://help.opus.pro/docs/article/virality-score) decomposes to **Hook / Flow / Value / Trend**. The cleanest OSS reference architecture is [SamurAIGPT/AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator): yt-dlp → faster-whisper → LLM (pluggable, incl. `gemini-2.5-flash`) scoring clips 0–100 on hook/emotion/conflict/quotable/value, with 20-min overlapping chunks for long podcasts. See also [modelscope/FunClip](https://github.com/modelscope/FunClip) and [HKUDS/VideoAgent](https://github.com/HKUDS/VideoAgent).
+- **Cheap priors before spending tokens:** audio-energy peaks ([librosa RMS](https://librosa.org/doc/main/generated/librosa.feature.rms.html), auto-editor) for laughter/emphasis; [MediaPipe Face Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker) 52 blendshapes as an expressiveness signal.
+- **Auto-reframe to vertical — important gotcha:** MediaPipe **AutoFlip is deprecated** (Google ended support [March 2023](https://mediapipe.readthedocs.io/en/latest/solutions/autoflip.html)). Don't depend on it. The 2026 DIY recipe is **face detection (S3FD/BlazeFace) + active-speaker detection (TalkNet) → Gaussian-smoothed crop path → FFmpeg crop to 9:16** (see [auto-vertical-reframe](https://github.com/KazKozDev/auto-vertical-reframe)). The off-the-shelf models are easy; the *value is the velocity-bounded path optimizer + speaker-turn → layout state machine*.
+
+---
+
+## 4. Animated captions (Submagic / Hormozi word-by-word)
+
+Two substrates split cleanly:
+
+**Route A — ASS/libass + FFmpeg (fast, deterministic, scriptable):** The ASS format does per-word karaoke via `\k`/`\kf` tags; per-word scale/move/color via `\t()` transforms. Pipeline: Whisper word timestamps → compute `\k` centisecond durations → `ffmpeg -vf "ass=karaoke.ass"`. One deterministic call, sub-real-time. Limited to what override tags allow (good fill, basic pop — no springs). Repos: [danielrosehill/Karaoke-Music-Vid-Generator](https://github.com/danielrosehill/Karaoke-Music-Vid-Generator) (uses `\kf` + WhisperX), [Youka/NyuFX](https://github.com/Youka/NyuFX).
+
+**Route B — canvas/React (full motion-graphics, heavier):** [`@remotion/captions`](https://www.remotion.dev/docs/captions/create-tiktok-style-captions) → `createTikTokStyleCaptions({ combineTokensWithinMilliseconds })` — low value = word-by-word TikTok animation. Official starter [remotion-dev/template-tiktok](https://github.com/remotion-dev/template-tiktok) (Whisper.cpp). Arbitrary fidelity, but Node/Chromium farm, minutes per render. [Revideo](https://github.com/redotvideo/revideo) is the OSS-licensed equivalent.
+
+**In between — [captacity](https://github.com/unconv/captacity):** the most-cited "Hormozi caption" repo, but it's **MoviePy + PIL raster compositing**, *not* ASS (verified) — more styling freedom than ASS, but slow and not true animation. Forks of [m1guelpf/auto-subtitle](https://github.com/m1guelpf/auto-subtitle) add word-level highlighting.
+
+**Pick:** ASS/libass for speed and determinism at scale; Remotion when the look has to match Submagic exactly.
+
+---
+
+## 5. Agent ↔ tools wiring (LLM → deterministic render)
+
+**The clear lesson: do not let the LLM emit free-form FFmpeg.** Three converging strands:
+
+- **Structured typed tools + preflight validation:** [KyaniteLabs/mcp-video](https://github.com/KyaniteLabs/mcp-video) — **119 MCP tools** (verified) with preflight guardrails (filter bounds, audio-mix, **animated-text timing/overflow**, split-screen mismatch) explicitly to "prevent silent bad media output." A crowded field of FFmpeg MCP servers exists ([misbahsy/video-audio-mcp](https://github.com/misbahsy/video-audio-mcp), [AmolDerickSoans/ffmpeg-mcp](https://github.com/AmolDerickSoans/ffmpeg-mcp), and ~8 others).
+- **Function-calling against a fixed action set with ID-referenced media:** [LAVE](https://arxiv.org/abs/2402.10294) (IUI '24) — plan-and-execute agent calling predefined editing functions; each clip gets a numeric ID so the LLM passes it as a structured argument. Makes video LLM-addressable via per-frame captioning → embeddings.
+- **JSON edit-spec validated against ffprobe, then deterministic render:** [digitalsamba/claude-code-video-toolkit](https://github.com/digitalsamba/claude-code-video-toolkit) — Claude Agent SDK skills built around `manifest.json` (validated via ffprobe before transcode).
+
+**The reliability evidence ([ELLMPEG, MMSys 2026](https://dl.acm.org/doi/10.1145/3793853.3795760), verified):** base models invent codecs (`libvvc`, `vvenc`). The full stack (RAG over tool docs + self-critique + iterative refinement) takes Qwen2.5 from ~65% → 88% on FFmpeg. **But self-critique back-fires past ~3 iterations** (over-corrects valid output) — bound the loop.
+
+**Defensible architecture:** LLM emits a **validated structured edit spec (timeline/EDL JSON)** → deterministic executor maps it to FFmpeg/libass or Remotion → preflight/ffprobe validation gates execution → free-form FFmpeg only behind a bounded self-critique loop, if at all. This is the [video-use](https://openflows.org/currency/currents/video-use/) pattern: Transcribe → Pack → LLM reasons → EDL → Render → Self-eval, with caching so iterations don't re-transcribe.
+
+---
+
+## 6. The integration thesis — where the real value is
+
+The commodity parts (Whisper, FFmpeg, S3FD+TalkNet, loudnorm, an LLM) are all downloadable. The non-downloadable value lives in **five seams**:
+
+1. **A determinism layer.** Across 4,700+ agentic runs, [determinism and accuracy don't correlate even at temperature 0](https://arxiv.org/pdf/2601.15322). The fix ([Compiled AI](https://arxiv.org/pdf/2604.05150)): treat the LLM as a *one-time spec generator*, compile its output into a fixed replayable command, then every render runs identical args. You can't debug or cache what you can't reproduce.
+
+2. **Bounded orchestration with caching + partial re-render.** Even SOTA research ([arXiv 2509.16811](https://arxiv.org/html/2509.16811v1)) admits orchestration is "still largely scripted," lacks intermediate previews, and "lacked mechanisms to control a single part... without re-running the entire pipeline." Retry budgets (max ~3), cut-boundary artifact detection, caching expensive steps (transcription) — all integration concerns you build, not download.
+
+3. **A quality-verification loop with hard gates.** Programmatic checks: **caption sync + reading-speed + overflow** ([Opus Clip's own QA list](https://www.opus.pro/blog/best-subtitle-qa-verification-tools)); **loudness to −14 LUFS** (EBU R128, what YouTube/Spotify normalize to) via [two-pass FFmpeg `loudnorm`](https://github.com/slhck/ffmpeg-normalize) — the easy deterministic gate there's no excuse to miss; and **VLM frame QA** ([compare rendered frames against intent](https://sonyinteractive.com/en/innovation/research-academia/research/vision-language-models-for-quality-assurance/) — no overflow, right aspect, subject in frame).
+
+4. **Taste / style encoding — the residual gap.** Currently encoded as **brand kits + presets** ([Opus Clip](https://www.opus.pro/brand-templates), Clipchamp), with AI auto-*selecting* the right one. The deeper moat is the **feedback corpus** — Opus Clip's ClipAnything is [fine-tuned on 6M users' exports + social performance](https://www.opus.pro/blog/opusclip-celebrates-30m-in-funding-and-the-launch-of-clipanything). You can download a captioner; you cannot download "which of 50 candidate clips real users exported and which went viral." The best academic agentic editor still scores only **2.75/5 on editing professionalism vs 4.38 for humans** — taste is the unsolved part.
+
+5. **Cross-session memory.** Three-tier ([procedural/episodic/semantic](https://mem0.ai/blog/long-term-memory-ai-agents)): style rules / past sessions / brand facts. Active research ([PAHF](https://arxiv.org/pdf/2602.16173) — personalized agents from human feedback) for learning an editor's taste online.
+
+---
+
+## Recommended stack (the picks)
+
+- **Understand:** PySceneDetect (or TransNetV2 for dissolves) + **Gemini 2.5 Flash native video** for clip scoring (~$0.32/hr, sees audio+visual).
+- **Transcribe:** faster-whisper → **WhisperX** forced alignment (BSD, commercial-safe). Shared dependency feeding both captions and trim decisions.
+- **Select & trim:** LLM rubric (hook/emotion/conflict/quotable) → 0–100 + reasons; **auto-editor** for dead air.
+- **Reframe:** face-detect + TalkNet active-speaker → smoothed FFmpeg crop (build it; AutoFlip is dead).
+- **Caption:** **ASS/libass** at scale; **Remotion** (Automators license) for premium look.
+- **Render:** deterministic JSON-spec executor → FFmpeg (mind libx264/GPL + `-bitexact`).
+- **Wire:** LLM → validated EDL/timeline JSON → executor, MCP-style typed tools with preflight validation, bounded ≤3-iteration self-critique.
+- **Verify:** caption-sync + overflow checks, −14 LUFS two-pass `loudnorm`, VLM frame QA.
+- **Remember:** three-tier memory + feedback loop — this plus taste encoding is where your defensible engineering goes.
+agentId: af40a17c43cc9429d (use SendMessage with to: 'af40a17c43cc9429d' to continue this agent)
+<usage>subagent_tokens: 88843
+tool_uses: 13
+duration_ms: 397811</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

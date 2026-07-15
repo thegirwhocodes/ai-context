@@ -1,0 +1,36 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://barrolee.github.io/BarroLeeDataSet/LongTermData.html
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-08 22:36:31 UTC
+========================================================================
+
+URL: https://barrolee.github.io/BarroLeeDataSet/LongTermData.html
+Extraction prompt: Extract details about Barro-Lee long-term educational attainment data going back to 1820 or 1870. What's the country coverage? What variables (enrollment rate, attainment, years of schooling)? Is there primary school enrollment data going back to 1960 or earlier? Where to download? Format (CSV, Stata)?
+
+----------------------------------------
+
+# Barro-Lee Long-Term Educational Data Summary
+
+**Time Coverage & Countries:**
+The primary Lee and Lee (2016) dataset covers "estimated school enrollment ratios from 1820 to 2010 and estimated educational attainment...from 1870 to 2010" across 111 nations. An earlier version (Barro & Lee, 2015) provides attainment data from 1870-2010 for 89 countries, with projections extending to 2040 for 146 countries.
+
+**Variables Available:**
+- School enrollment ratios (from 1820)
+- Educational attainment by gender (total, female, male populations)
+- Years of schooling
+- Two human capital stock measures based on different labor substitution assumptions
+
+**Primary School Enrollment:**
+The webpage confirms enrollment data begins in 1820, though it doesn't specify if primary-level disaggregation exists for pre-1960 periods.
+
+**Download Location:**
+Access materials through the project's GitHub repository and associated HTML pages for "full data sets," variable lists, country rosters, and data sources.
+
+**Format:**
+The page does not explicitly specify file formats (CSV, Stata, Excel, etc.), only mentioning downloadable datasets and figures without technical specifications.
+
+**Recommendation:** Consult the actual dataset files or repository README for precise format details and variable-level granularity.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

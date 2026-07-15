@@ -1,0 +1,30 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: "TDM Studio" Wesleyan WSJ Wall Street Journal dataset Jupyter
+Session: ed1f260a-8aa3-446e-b16b-bc77f605156a
+Time: 2026-05-01 03:14:13 UTC
+========================================================================
+
+Search query: "TDM Studio" Wesleyan WSJ Wall Street Journal dataset Jupyter
+
+----------------------------------------
+
+Web search results for query: ""TDM Studio" Wesleyan WSJ Wall Street Journal dataset Jupyter"
+
+Links: [{"title":"CSR-I (WSJ0) Complete - Linguistic Data Consortium","url":"https://catalog.ldc.upenn.edu/LDC93S6A"},{"title":"WSJ Headline Classification","url":"https://www.kaggle.com/datasets/amogh7joshi/wsj-headline-classification"},{"title":"GitHub - fgnt/sms_wsj: SMS-WSJ: Spatialized Multi-Speaker Wall Street Journal database for multi-channel source separation and recognition · GitHub","url":"https://github.com/fgnt/sms_wsj"},{"title":"TDM Studio - Knowledge Base - GSB Research Help","url":"https://gsb-research-help.stanford.edu/library/faq/338678"},{"title":"ProQuest TDM Studio for Text & Data Mining – The Claremont Colleges Library","url":"https://library.claremont.edu/news/tdm-studio/"},{"title":"Financial Sentiment Analysis Overview Dataset Format ...","url":"https://www.cs.toronto.edu/~kenshi/csc401/assignments/A1/CSC401_A1.pdf"},{"title":"GitHub - dyunis/wsj_asr: CTC-based ASR on the Wall Street Journal dataset","url":"https://github.com/dyunis/wsj_asr"},{"title":"Research Data Sets - Business - Library Guides at University of Washington Libraries","url":"https://guides.lib.uw.edu/research/business/datasets"},{"title":"The Design for the Wall Street Journal-based CSR Corpus* Douglas B. Paul","url":"https://aclanthology.org/H92-1073.pdf"},{"title":"Datasets and tasks — asteroid 0.7.1dev documentation","url":"https://asteroid-team.github.io/asteroid/supported_datasets.html"}]
+
+Based on the search results, I found relevant information about TDM Studio and its capabilities with Wall Street Journal data:
+
+TDM Studio is a new research tool offered by the Library that provides a virtual environment in which you can run text mining analyses such as topic modeling and sentiment analysis on large datasets from ProQuest. If you are interested in working with news sources such as the New York Times, the Wall Street Journal, and a variety of other prominent sources, ProQuest's TDM Studio may help you address this challenge.
+
+Regarding access to the platform, researchers may access the platform through an introductory-level visualization platform (no coding required!) or a full-featured hosted Jupyter Notebooks workbench environment supporting Python and R scripting.
+
+Additionally, TDM Studio provides access to content in the databases we subscribe to from ProQuest, with notable content including current and historical national newspapers like WSJ and NYT.
+
+So TDM Studio is a platform that allows researchers to perform text and data mining on Wall Street Journal datasets through either a no-code visualization interface or a Jupyter Notebooks environment for more advanced analysis.
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

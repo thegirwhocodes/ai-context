@@ -1,0 +1,28 @@
+========================================================================
+WEBSEARCH RESEARCH: WebSearch: voice.intron.io docs "create integrator" OR "integrators" tab access key
+Session: bd681d58-c486-471d-b677-b478eda45117
+Time: 2026-07-04 18:47:45 UTC
+========================================================================
+
+Search query: voice.intron.io docs "create integrator" OR "integrators" tab access key
+
+----------------------------------------
+
+Web search results for query: "voice.intron.io docs "create integrator" OR "integrators" tab access key"
+
+Links: [{"title":"Introduction - Intron Voice API Documentation","url":"https://docs.voice.intron.io/"},{"title":"Voice AI » Intron Voice AI","url":"https://www.intron.io/"},{"title":"Create custom settings & access them in integrator.io forms – Celigo Help Center","url":"https://docs.celigo.com/hc/en-us/articles/360045461272-Create-custom-settings-access-them-in-integrator-io-forms"},{"title":"Intron - Docs","url":"https://voice.intron.io/docs/?section=transcribe-with-api-tts-queue"},{"title":"GitHub - celigo/integrator-api-docs: integrator.io API Docs · GitHub","url":"https://github.com/celigo/integrator-api-docs"},{"title":"Celigo integrator.io: Integration Platform-as-a-Service (iPaaS)","url":"https://integrator.io/signin"},{"title":"How to Use UC Integrator","url":"https://voipdocs.io/uc-integrator/how-to-use-uc-integrator"},{"title":"Health » Intron Voice AI","url":"https://www.intron.io/health/"},{"title":"Speech » Intron Voice AI","url":"https://www.intron.io/speech/"},{"title":"Data » Intron Voice AI","url":"https://www.intron.io/data/"}]
+
+Based on the search results, I found information about the Intron Voice API documentation. To access your Intron Voice API credentials, you need to navigate to voice.intron.io and sign in to your account, then go to your developers tab to find your API credentials.
+
+However, the search results don't contain specific information about a "create integrator" feature, an "integrators" tab, or access key procedures in the voice.intron.io documentation. The results show general API documentation and TTS/speech API examples, but don't cover the specific integrator creation workflow you're asking about.
+
+For more detailed information about creating integrators or accessing the integrators tab with access keys, you may want to:
+- Check the complete documentation at https://docs.voice.intron.io/
+- Contact the Intron support team at voice@intron.io for assistance with these specific features
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+
+========================================================================
+END OF WEBSEARCH RESEARCH
+========================================================================

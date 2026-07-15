@@ -1,0 +1,414 @@
+========================================================================
+AGENT RESEARCH: Research Cerebras nonprofit + self-hosted LLM latency
+Session: afba417e-adbd-4615-9dc9-c5c22f89d7b8
+Time: 2026-05-03 02:05:19 UTC
+========================================================================
+
+Do deep research on two topics and return AT LEAST 90% of the substantive content you find — every number, every option, every pricing tier, every benchmark. Do NOT summarize. Return actual data.
+
+**Topic 1: Cerebras nonprofit/education partnerships**
+Search for "Cerebras nonprofit", "Cerebras education discount", "Cerebras academic research program", "Cerebras for Good", site:cerebras.ai. 
+- Does Cerebras offer free or discounted API access for nonprofits, NGOs, education projects?
+- What are their pricing tiers at cloud.cerebras.ai?
+- Any known nonprofit grantees or academic partnerships?
+- How to apply/qualify?
+
+**Topic 2: Self-hosted Llama inference speed — matching Cerebras 2100 tok/s**
+Context: We self-host on Hetzner GEX44 server. Check what GPU that has (search "Hetzner GEX44 specs GPU"). We currently run Ollama with llama3.1:8b-instruct-q4_K_M.
+
+Research:
+- What GPU does Hetzner GEX44 have and what is its VRAM?
+- Actual benchmarked tokens/second for Llama 3.1 8B on that GPU using: Ollama, vLLM, llama.cpp, ExLlamaV2, TensorRT-LLM
+- Can any self-hosted stack reach 1000-2000+ tokens/second for Llama 8B on consumer/prosumer GPUs?
+- What about Llama 3.2 1B or 3B — tokens/second on same hardware?
+- Does vLLM help single-request latency (not just throughput)?
+- Is speculative decoding useful for short 200-token outputs?
+- What hardware would actually hit 2000 tok/s self-hosted? (H100 NVL, H200, etc.)
+
+----------------------------------------
+
+Now I have enough data for a thorough response. Let me compile everything.
+
+---
+
+# Topic 1: Cerebras Nonprofit / Education Partnerships
+
+## Does Cerebras Have a Nonprofit / NGO Program?
+
+There is **no "Cerebras for Good" program** and **no dedicated nonprofit discount program** that appears anywhere in public documentation or search results as of May 2026. No grantees from a nonprofit-specific program have been identified. There is no application page for NGOs specifically.
+
+However, there are three relevant pathways:
+
+---
+
+## Pathway A: Free Tier (Available to Anyone — No Application)
+
+As of June 2025, Cerebras opened their inference API with **no waitlist, no credit card, no application**. Fully self-serve.
+
+**What you get for free:**
+- **1,000,000 tokens per day** (resets daily, no rollover)
+- No credit card required
+- No trial expiration
+- Instant API key via cloud.cerebras.ai — sign up with email, verify, go to API Keys tab
+
+**Free tier rate limits:**
+- 30 requests/minute
+- 60,000–100,000 tokens/minute
+- **8,192 token context cap** across all free-tier models (this is the major constraint — it's temporary but has been in place for a while)
+
+**Free tier models available (2026):** Llama 3.1 8B, Llama 3.1 70B, Llama 3.3 70B, Llama 4 Scout — all available at free tier with the token/day cap.
+
+**Observed speed on free tier:** Real-world benchmarks show 2,100–2,600 tokens/second on Llama 4 Scout; Llama 3.1 8B runs at roughly 2,100 tokens/second on Cerebras' Wafer Scale Engine cluster.
+
+**Verdict for E4E:** 1M tokens/day free is substantial. At ~200 tokens per Sabi response, that is 5,000 calls/day free. The 8,192 context cap is fine for voice interactions. This is a legitimate free tier, not a trial.
+
+---
+
+## Pathway B: Cerebras Inference Research Grant (Closed — But May Reopen)
+
+**What it offered:**
+- Up to **$50,000 USD of inference credits**
+- Hands-on tutorials and sessions with Cerebras engineers and researchers
+- A sponsored research agreement required
+
+**Eligibility (when open):**
+- Must be **current full-time faculty at an accredited academic institution that awards PhD research degrees**
+- Must be the Principal Investigator on the grant
+- Government officials (except public university faculty) not eligible
+- No applicants from OFAC-sanctioned countries
+
+**Status:** The inaugural grant round **closed January 31, 2025** (submissions ended 11:59pm PT). Cerebras stopped taking applications February 17, 2025. No announced second round found as of May 2026.
+
+**Bottom line:** E4E (Naomi, undergraduate, not a PI) does not qualify for this program even if it reopens.
+
+---
+
+## Pathway C: Cerebras Startup Deal
+
+**Program:** Up to **$22,500 in inference credits** for qualifying startups.
+
+**Application page:** cerebras.ai/startup-deal
+
+**Full requirements not publicly disclosed** — standard YC-style accelerator/startup deal. Typically requires: early-stage company (not just a solo student project), sometimes requires investor backing or accelerator affiliation.
+
+**Verdict for E4E:** Worth applying to once E4E is incorporated as an entity. The $22,500 would cover enormous compute. Not clear if a nonprofit/NGO qualifies — this program is oriented toward for-profit startups.
+
+---
+
+## Pathway D: Cerebras Fellows Program
+
+**Page:** cerebras.ai/fellows
+
+**Details not fully public in search results** — appears to be a research fellowship, likely for PhD students or postdocs. No pricing/credits explicitly listed.
+
+---
+
+## Cerebras Pricing Tiers — Full Detail
+
+**Free Tier:**
+| Feature | Value |
+|---|---|
+| Daily tokens | 1,000,000 |
+| Cost | $0 |
+| Credit card required | No |
+| Context cap | 8,192 tokens |
+| Rate limit | 30 req/min, 60K–100K tok/min |
+| Rollover | None |
+
+**Developer Tier (Pay-Per-Token):**
+| Model | Price (input) | Price (output) |
+|---|---|---|
+| Llama 3.1 8B | $0.10/M tokens | $0.10/M tokens |
+| Llama 3.1 70B | $0.60/M tokens | $0.60/M tokens |
+| Llama 3.3 70B | $0.60/M tokens | ~$0.60/M tokens |
+| Llama 3.1 405B | $6.00/M input | $12.00/M output |
+| Range | $0.10–$6.00/M input | $0.10–$12.00/M output |
+
+Developer tier has **10x+ higher rate limits than the free tier** and removes the context cap. Minimum top-up: $10.
+
+**Enterprise Tier:**
+- Fine-tuned models available
+- Custom SLAs
+- Dedicated support
+- Cerebras-managed private cloud OR on-premise deployment
+- Pricing: contact sales
+
+**AWS Marketplace:** Cerebras also sells through AWS Marketplace for enterprise AWS-native billing.
+
+---
+
+## Known Academic/Research Partnerships (public)
+
+- **Guyana government** — national AI partnership (sovereign AI deal)
+- Various unnamed university research groups that received the 2024–2025 research grants
+- Cerebras has collaborated with Stanford, CMU researchers (not as formal grant holders but as beta users)
+
+No public list of nonprofit grantees found.
+
+---
+
+## How to Approach Cerebras for E4E
+
+1. **Right now:** Use the free tier (1M tokens/day) — no application needed
+2. **Once incorporated:** Apply for the Startup Deal (up to $22,500) via cerebras.ai/startup-deal
+3. **Watch for new research grant rounds:** Subscribe to cerebras.ai/blog — the first grant was announced mid-2024, closed Jan 2025
+4. **Contact sales directly:** Email/contact for nonprofit pricing — nothing prevents asking. The enterprise page has a "Contact Sales" form; framing as "education nonprofit in Nigeria serving out-of-school children" is a compelling pitch
+5. **Cerebras Fellows Program:** cerebras.ai/fellows — investigate whether undergraduate founders qualify
+
+---
+
+# Topic 2: Self-Hosted Llama Inference Speed — Matching Cerebras 2,100 tok/s
+
+## Hetzner GEX44 GPU Specifications
+
+**GPU:** NVIDIA RTX 4000 SFF Ada Generation (Ada Lovelace architecture)
+
+| Spec | Value |
+|---|---|
+| VRAM | 20 GB GDDR6 ECC |
+| Memory bandwidth | **280 GB/s** |
+| Architecture | Ada Lovelace |
+| Form factor | SFF (Small Form Factor) |
+| CUDA cores | 6,144 |
+| TDP | 70W |
+
+**Full server specs:**
+- CPU: Intel Core i5-13500 (6P+8E cores, 14 total threads)
+- RAM: 64 GB
+- Storage: 2x 1.92 TB NVMe Gen3 Datacenter Edition SSDs
+- Price: €184/month + €79 one-time setup fee
+
+**Key constraint:** 280 GB/s memory bandwidth. Compare to:
+- RTX 3090: 936 GB/s
+- RTX 4090: 1,008 GB/s
+- H100 SXM5: 3,350 GB/s
+- H200: 4,800 GB/s
+
+The RTX 4000 Ada SFF has **significantly less memory bandwidth than consumer gaming GPUs** despite having 20 GB VRAM. This is the primary bottleneck for LLM token generation speed.
+
+---
+
+## Actual Benchmarked Tokens/Second — Llama 3.1 8B on RTX 4000 Ada SFF
+
+From localscore.ai (which uses llama.cpp under the hood), the most direct benchmark for the exact GEX44 hardware:
+
+**Llama 3.1 8B Instruct Q4_K_M on RTX 4000 SFF Ada:**
+
+| Metric | Value |
+|---|---|
+| Generation speed (tok/s) | **44.4 tok/s** |
+| Prompt processing (tok/s) | 2,004 tok/s |
+| Time to first token (TTFT) | 690 ms |
+
+A slightly different configuration (possibly Q4_K rather than Q4_K_M, or different batch):
+
+| Metric | Value |
+|---|---|
+| Generation speed (tok/s) | **53.5 tok/s** |
+| Prompt processing (tok/s) | 2,608 tok/s |
+| TTFT | 520 ms |
+
+**4x RTX 4000 Ada 20GB (multi-GPU openllmbenchmarks.com data):**
+- Llama 3 8B: **56.14 tok/s generation** at Q4KM
+- Llama 3 8B: 20.58 tok/s at F16 (full precision)
+- Llama 3 70B: 20.85 tok/s at Q4KM
+
+**Important note on prompt processing vs generation:**
+- Prompt processing (2,000–2,600 tok/s) looks fast, but this is **not the same as generation speed**. Prompt processing is highly parallelizable (like a matrix multiply). Generation is sequential and bottlenecked by memory bandwidth.
+- For a 200-token voice response: you care about **generation speed**, which is 44–54 tok/s on this GPU.
+
+---
+
+## Benchmark by Inference Engine on This GPU
+
+No ExLlamaV2-specific benchmarks for RTX 4000 Ada SFF were found in any source. Here's what is known from across GPU types:
+
+**Ollama (llama.cpp backend):**
+- RTX 4000 Ada SFF: ~44 tok/s (this IS the localscore benchmark — localscore uses llama.cpp)
+- Ollama adds 3–10% overhead vs raw llama.cpp due to Go server layer
+- Effective with Ollama: ~40–43 tok/s
+
+**llama.cpp (raw):**
+- RTX 4000 Ada SFF: ~44–54 tok/s
+- RTX 4090: ~150 tok/s (for reference: 4090 has 3.6x the memory bandwidth)
+- RTX 3090: similar to 4090 in practice (~936 GB/s bandwidth, so ~100–150 tok/s range)
+
+**vLLM:**
+- vLLM is designed for **high-throughput multi-request serving**, NOT single-request latency
+- For single concurrent request: vLLM has overhead from PagedAttention + CUDA graph warmup; may actually be slower than llama.cpp for single-stream
+- For concurrent users (e.g., 16+ simultaneous): vLLM wins significantly
+- On H100 with vLLM: 2,300–2,500 tok/s for Llama 8B (this is aggregate throughput across many concurrent requests, not per-request generation speed)
+- vLLM does NOT help single-request latency for token generation on a consumer/prosumer GPU — it may slightly hurt it
+
+**ExLlamaV2:**
+- No RTX 4000 Ada SFF specific data found
+- On RTX 3090 (936 GB/s bandwidth): ExLlamaV2 with EXL2 4-bit quant typically achieves 130–160 tok/s
+- The bandwidth ratio suggests RTX 4000 Ada SFF with ExLlamaV2 EXL2 4-bit would get ~40–55 tok/s (proportional to 280/936 bandwidth ratio × 3090 speed)
+- ExLlamaV2 is generally the fastest for generation on NVIDIA for single-user scenarios, but not dramatically faster than llama.cpp with good quants on this GPU
+
+**TensorRT-LLM:**
+- TensorRT-LLM outperforms llama.cpp by ~62.57% in benchmarks (from jan.ai testing)
+- If llama.cpp gives 44 tok/s on this GPU, TensorRT-LLM might give ~70–72 tok/s
+- Setup complexity is very high; requires building NVIDIA-specific engine files
+- Best for production where you won't change models often
+
+**Summary table for Llama 3.1 8B Q4_K_M on RTX 4000 Ada SFF (280 GB/s bandwidth):**
+
+| Engine | Estimated tok/s (generation) | Notes |
+|---|---|---|
+| Ollama | ~40–43 | llama.cpp backend + Go overhead |
+| llama.cpp | ~44–54 | Baseline from localscore |
+| vLLM | ~40–50 single req | Worse for single-user; better for concurrent |
+| ExLlamaV2 | ~45–60 (estimated) | No exact benchmark found for this GPU |
+| TensorRT-LLM | ~65–75 (estimated) | ~62% faster than llama.cpp; high setup cost |
+
+**Bottom line: You cannot get anywhere close to 2,100 tok/s on the GEX44 for 8B model generation.**
+
+---
+
+## Llama 3.2 1B and 3B — Speed on RTX 4000 Ada SFF
+
+**Llama 3.2 1B Instruct Q4_K_M on RTX 4000 Ada SFF (localscore.ai data):**
+- **Generation: 189–210 tok/s**
+- Prompt processing: 10,448 tok/s
+- This is a 4–5x speedup vs 8B on the same hardware
+
+**Llama 3.2 3B Instruct Q4_K_M on RTX 4000 Ada SFF:**
+- No direct benchmark found for this exact GPU
+- Estimated ~80–120 tok/s generation based on model size scaling vs 1B/8B data
+- The 3B model is roughly 3x the parameter count of 1B and ~0.375x of 8B, so interpolating: likely 80–100 tok/s
+
+**Llama 3.2 1B is the sweet spot for speed on GEX44** — at ~200 tok/s generation, it approaches something useful for real-time voice. However, quality is significantly lower than 8B.
+
+---
+
+## Does vLLM Help Single-Request Latency?
+
+**No, not for generation speed on a single request.**
+
+vLLM's advantages:
+- PagedAttention: eliminates KV cache memory fragmentation → allows larger batch sizes and longer contexts
+- Continuous batching: serves many concurrent users efficiently
+- At 16+ concurrent requests: vLLM wins vs llama.cpp significantly
+
+vLLM's disadvantages for single-request:
+- Overhead from CUDA graph capture on startup (30–60 second warm-up)
+- PagedAttention has per-token overhead vs contiguous KV cache
+- Single-request throughput is comparable to or slightly below llama.cpp
+
+**For Sabi** (one voice call at a time, sequential 200-token outputs): **vLLM is not the right choice**. Stick with llama.cpp/Ollama or ExLlamaV2 for single-stream low-latency scenarios.
+
+---
+
+## Is Speculative Decoding Useful for 200-Token Outputs?
+
+**For n-gram speculative decoding (no extra model required):**
+
+Results are **mixed and context-dependent**:
+
+- Reported speedup with 60% acceptance rate: ~2x (from 90–100 tok/s baseline to 182 tok/s baseline in one test — note this was on different hardware, not RTX 4000 Ada)
+- N-gram decoding works by scanning the recent context for repeated patterns; for short outputs (200 tokens) with diverse content, the pattern cache has limited history to draw from — acceptance rates will be lower
+- For scripted/repetitive content (like a fixed curriculum script), n-gram acceptance rates could be higher
+
+**For EAGLE-3 / Medusa draft-model speculative decoding:**
+- Requires loading a small draft model alongside the main model
+- On a 20 GB VRAM GPU running 8B (which uses ~4–5 GB at Q4), there is headroom for a small 1B draft model
+- EAGLE-3 in vLLM achieves **1.8x latency reduction** on Llama 3.1 8B on A100 (reported by Red Hat/vLLM blog)
+- This would push ~44 tok/s to potentially ~79 tok/s on the GEX44 — not verified for this specific GPU
+- Setup complexity is high
+
+**Verdict for 200-token voice outputs:**
+- N-gram speculative decoding: try it, costs nothing, llama.cpp `--spec-type ngram-simple` flag — may give 10–50% speedup on repetitive content, minimal benefit on diverse content
+- EAGLE draft model: possibly worth exploring, but setup is complex and vRAM overhead is a concern
+- **Neither gets you to 2,100 tok/s**
+
+---
+
+## What Hardware Would Actually Hit 2,000 tok/s Self-Hosted?
+
+**Understanding the math:** 2,000 tok/s for Llama 8B generation requires approximately:
+
+The model weights at Q4 are ~4.5 GB, but each token generation must load all those weights from VRAM through the compute units. At Q4_K_M, generation speed scales roughly linearly with memory bandwidth.
+
+- RTX 4000 Ada SFF: 280 GB/s → ~44 tok/s
+- To get 2,000 tok/s: need ~16x more bandwidth → **~4,480 GB/s**
+
+That's above even the H100 SXM5 (3,350 GB/s). You'd need multiple H100s in tensor-parallel mode, OR the Cerebras Wafer Scale Engine (which is what Cerebras uses — WSE-3 has 21 PB/s internal bandwidth, an entirely different architecture class).
+
+**Realistic hardware benchmarks for Llama 8B generation tok/s:**
+
+| Hardware | Bandwidth | Est. Llama 8B gen tok/s | Notes |
+|---|---|---|---|
+| RTX 4000 Ada SFF (GEX44) | 280 GB/s | 44–54 | Current server |
+| RTX 3090 | 936 GB/s | ~120–160 | 3.3x faster |
+| RTX 4090 | 1,008 GB/s | ~128–165 | Similar to 3090 |
+| RTX 5090 | ~1,800 GB/s | ~200–215 | Consumer flagship 2025 |
+| A100 80GB | 2,000 GB/s | ~250 tok/s | Enterprise class |
+| H100 SXM5 (single) | 3,350 GB/s | ~400–500 tok/s single req | Enterprise |
+| H100 SXM5 x4 (tensor parallel) | 13,400 GB/s eff. | ~1,000–1,500 tok/s | 4-GPU NVLink |
+| H200 SXM (single) | 4,800 GB/s | ~600–700 tok/s | Latest enterprise |
+| H200 x4 tensor parallel | ~19,200 GB/s eff. | ~1,500–2,000 tok/s | High-end cluster |
+| Cerebras WSE-3 | 21 PB/s (internal) | 2,100+ tok/s | Fundamentally different arch |
+
+**The vLLM aggregate throughput of 2,300–2,500 tok/s on H100 is AGGREGATE across many concurrent users, not per-request generation speed.** A single user on H100 with vLLM still gets ~400–500 tok/s generation.
+
+**To truly match 2,100 tok/s for a SINGLE REQUEST** on self-hosted hardware, you would need:
+- 4x H200 NVL in tensor parallel configuration (~$300K+ hardware), OR
+- Cerebras WSE hardware (leased via enterprise agreement, not self-hostable at consumer scale)
+
+**Practical self-hosted upgrades for E4E on a budget:**
+
+| Option | Generation tok/s | Monthly cost | Notes |
+|---|---|---|---|
+| GEX44 (current) | 44–54 tok/s | €184/mo | Hetzner, what you have |
+| Hetzner GEX130 (if exists) or similar RTX 3090 server | ~120–150 tok/s | ~€250–350/mo | 3x faster |
+| RunPod/Vast.ai RTX 4090 spot | ~150 tok/s | ~$0.70–1.20/hr | Serverless, good for bursts |
+| Hetzner cloud GPU A100 | ~250 tok/s | ~€500–800/mo | HPC tier |
+
+**Conclusion:** Matching Cerebras' 2,100 tok/s is not achievable on consumer or prosumer self-hosted hardware at any reasonable price point. Cerebras' free tier (1M tokens/day) IS the practical answer for matching that speed — use Cerebras API for inference, use your GEX44 for other services (audio processing, session management, Chatterbox TTS, etc.).
+
+---
+
+## Summary Table: Can the GEX44 Match Cerebras Speed?
+
+| Question | Answer |
+|---|---|
+| GEX44 GPU | NVIDIA RTX 4000 SFF Ada, 20GB GDDR6 ECC, 280 GB/s bandwidth |
+| Llama 3.1 8B Q4_K_M generation speed (Ollama/llama.cpp) | 40–54 tok/s |
+| Llama 3.2 1B generation speed | ~189–210 tok/s |
+| Llama 3.2 3B generation speed (estimated) | ~80–110 tok/s |
+| Can vLLM improve single-request latency? | No — neutral to slightly slower vs llama.cpp for single user |
+| Does speculative decoding help 200-token outputs? | Possibly 10–50% with n-gram (free to try); up to 1.8x with EAGLE draft model |
+| Can any self-hosted setup hit 2,100 tok/s for 8B? | No — requires 4x H100/H200 NVLink minimum |
+| Practical path to near-Cerebras speed? | Use Cerebras free API (1M tok/day free); GEX44 for everything else |
+
+Sources:
+- [Cerebras Pricing](https://www.cerebras.ai/pricing)
+- [Cerebras Free Tier 1M Tokens/Day Guide (2026)](https://aicreditmart.com/ai-credits-providers/cerebras-free-tier-1-million-tokens-day-guide-2026/)
+- [Cerebras Free Tier 2026 — Models, Credits & Limits](https://pricepertoken.com/endpoints/cerebras/free)
+- [Announcing Cerebras Inference Research Grant](https://www.cerebras.ai/blog/grantfrp)
+- [Inference Research Grant | Cerebras](https://cerebras.ai/inference-research-grant)
+- [Cerebras Startup Deal](https://www.cerebras.ai/startup-deal)
+- [Cerebras Fellows Program](https://www.cerebras.ai/fellows)
+- [Cerebras API Key: Access, Pricing, Speed Tests 2026](https://tokenmix.ai/blog/cerebras-api-key-access-speed-tests-2026)
+- [Cerebras Inference Pay Per Token](https://www.cerebras.ai/blog/cerebras-inference-now-available-via-pay-per-token)
+- [Hetzner GEX44 Specs](https://www.hetzner.com/dedicated-rootserver/gex44/)
+- [NVIDIA RTX 4000 SFF Ada Generation Results — LocalScore](https://www.localscore.ai/accelerator/157)
+- [Meta Llama 3.1 8B Instruct Q4_K Results — LocalScore](https://www.localscore.ai/model/1)
+- [Llama 3.2 1B Instruct Q4_K Results — LocalScore](https://www.localscore.ai/model/3)
+- [Llama 3.1 8B GPU Benchmark — Salad](https://blog.salad.com/llama-3-1-8b/)
+- [vLLM Llama 3.1 8B Performance Across GPUs — Microsoft](https://techcommunity.microsoft.com/blog/azurehighperformancecomputingblog/inference-performance-of-llama-3-1-8b-using-vllm-across-various-gpus-and-cpus/4448420)
+- [Benchmarking Llama 3.1 8B on H100 with vLLM — Ori](https://www.ori.co/blog/benchmarking-llama-3.1-8b-instruct-on-nvidia-h100-and-a100-chips-with-the-vllm-inferencing-engine)
+- [Speculative Decoding in vLLM](https://jarvislabs.ai/blog/speculative-decoding-vllm-faster-llm-inference)
+- [vLLM Spec Decode Blog](https://blog.vllm.ai/2024/10/17/spec-decode.html)
+- [llama.cpp Speculative Decoding Docs](https://github.com/ggml-org/llama.cpp/blob/master/docs/speculative.md)
+- [NVIDIA RTX 4000 Ada AI Benchmarks — GigaChadLLC](https://gigachadllc.com/nvidia-rtx-4000-ada-generation-ai-benchmarks-breakdown/)
+- [Llama3 8B vs 70B on RTX 4000 Ada 20GB x4](https://openllmbenchmarks.com/llama3-8b-vs-llama3-70b-on-nvidia-rtx-4000-ada-20gb-x4-local-llm-token-speed-generation-benchmark.html)
+agentId: a35ce35ad5076a35b (use SendMessage with to: 'a35ce35ad5076a35b' to continue this agent)
+<usage>total_tokens: 41414
+tool_uses: 22
+duration_ms: 2870740</usage>
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

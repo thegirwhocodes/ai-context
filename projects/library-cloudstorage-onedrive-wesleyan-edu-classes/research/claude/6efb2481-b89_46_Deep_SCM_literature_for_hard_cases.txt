@@ -1,0 +1,73 @@
+========================================================================
+AGENT RESEARCH: Deep SCM literature for hard cases
+Session: 6efb2481-b890-4754-95b7-49de6ac05f9b
+Time: 2026-05-15 21:10:12 UTC
+========================================================================
+
+I'm running a synthetic control method (SCM) analysis for Nigeria's GDP per capita to identify the effect of education policies / Boko Haram / oil shocks on growth, as a senior-thesis extension to my term paper on out-of-school children and growth. My SCM keeps hitting the convex-hull problem: Nigeria's GDP per capita is structurally higher than non-oil Sub-Saharan African donors throughout the sample (pre-treatment fit RMSPE = 0.10 log units even after using Maddison data and a 27-country donor pool). The synthetic Nigeria built from Ghana, Lesotho, Tanzania, Botswana, Mauritius, Zambia sits below actual Nigeria pre-treatment by ~5%, and the gap explodes post-treatment to +49.7% because Nigeria's oil boom isn't replicable from non-oil donors.
+
+I need a focused literature search to identify SCM applications that have ACTUALLY WORKED for structurally extreme units. Specifically:
+
+1. **Oil exporters as the TREATED unit.** Papers like Yahaya (2025) and Akalbeo (2025) on Ghana oil discovery work because Ghana was non-oil pre-2007 (the treatment), so the donor pool of non-oil SSA had a convex hull that contained pre-treatment Ghana. For Nigeria, pre-1999 Nigeria was ALREADY oil-dependent, so any non-oil donor pool sits below Nigeria. Which papers have solved this — by using oil exporters as donors, by using growth rates instead of levels, by using Augmented SCM, or by some other trick? Search:
+   - "synthetic control" oil curse Saudi Arabia OR UAE OR Iran OR Russia OR Venezuela OR Norway
+   - "synthetic control" "oil exporter" donor pool
+   - Mideghdadda et al. on Algeria
+   - Gulf states resource curse SCM
+   - Pemex Mexico SCM
+   - Iran sanctions SCM (Esfahani-Pesaran, Gharehgozli, etc.)
+   - any oil-economy SCM where the treated unit was already oil-dependent in pre-period
+
+2. **Large-country / population-extreme treated units.** Brazil, India, Indonesia, China, Mexico — countries that are structurally much bigger than potential donors. Which SCM papers handle this? Search:
+   - "synthetic control" Brazil OR China OR India OR Indonesia growth GDP
+   - "synthetic control" "outlier" OR "extrapolation" treated unit
+   - Cavallo et al. on natural disasters with large treated units
+
+3. **Augmented SCM (ASCM) applications** — Ben-Michael, Feller & Rothstein (2021) developed Augmented SCM specifically to handle convex hull violations via ridge regression. Which applied papers have actually USED ASCM? Search:
+   - "augmented synthetic control" application
+   - "augsynth" empirical paper
+   - "convex hull" SCM violation bias correction
+
+4. **Growth rates vs levels as the outcome.** Most SCM applications use levels (GDP per capita in dollars or logs). Some use growth rates. When does growth-rate SCM work? Search:
+   - "synthetic control" growth rate outcome
+   - growth-rate SCM versus log GDP per capita SCM
+   - panel-data synthetic control with annual growth
+
+5. **Synthetic difference-in-differences (SDID)** — Arkhangelsky, Athey, Hirshberg, Imbens & Wager (2021). When does SDID outperform SCM for extreme treated units? Any SDID applications to oil economies or large countries? Search:
+   - "synthetic difference-in-differences" oil OR resource
+   - SDID Arkhangelsky application paper
+
+6. **Donor pool curation papers.** What's the actual rule for what to include? Search:
+   - Abadie (2021, JEL) Donor pool selection rules
+   - Ferman & Pinto SCM donor pool
+   - synthetic control specification curse Doudchenko Imbens
+
+For each paper you find, report:
+- Full citation
+- Treated unit, treatment date, donor pool composition and SIZE
+- Outcome variable (GDP per capita levels? logs? growth rates? other?)
+- SCM variant (raw, Augmented, Penalized, SDID)
+- Pre-treatment RMSPE achieved
+- How they handled extreme/outlier treated units if applicable
+- Key methodological "trick" that made it work
+
+End with a clear PRACTICAL recommendation: given that Nigeria is structurally higher GDP than non-oil SSA, and including oil exporters violates SUTVA for oil-related treatment events, what's the right SCM design? Specifically:
+- Should we use growth rates as outcome?
+- Should we include oil exporters and switch treatment to something other than oil events?
+- Should we use Augmented SCM (R augsynth)?
+- Should we use a global donor pool (lower-middle-income countries worldwide, not just SSA)?
+- Some combination?
+
+Be specific. I have today and tomorrow to finish this. Cite 15-25 papers from real sources. Use WebSearch heavily. Don't fabricate.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: ac44151a43f1cf2d3 (internal ID - do not mention to user. Use SendMessage with to: 'ac44151a43f1cf2d3' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie-Library-CloudStorage-OneDrive-wesleyan-edu-Classes/91e12c77-89b6-4b15-88f2-bc4fbadd518b/tasks/ac44151a43f1cf2d3.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================

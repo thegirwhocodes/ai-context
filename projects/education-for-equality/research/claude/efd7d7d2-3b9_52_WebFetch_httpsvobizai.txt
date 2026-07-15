@@ -1,0 +1,30 @@
+========================================================================
+WEBFETCH RESEARCH: WebFetch: https://vobiz.ai/
+Session: efd7d7d2-3b94-4e82-bb2d-7a045a3e9736
+Time: 2026-03-11 03:08:25 UTC
+========================================================================
+
+URL: https://vobiz.ai/
+Extraction prompt: What services does Vobiz offer? Voice API, SIP trunking, pricing, Nigeria support? What are the per-minute rates? Do they support IVR, custom audio playback, recording, webhooks?
+
+----------------------------------------
+
+Based on the provided page content, I can only confirm limited information:
+
+**Services Offered:**
+Vobiz provides "SIP trunk, voice API, and programmable telephony for voice API" along with "Instant DIDs, WebRTC, SIP trunking, and voice agents."
+
+**What's Not Available:**
+The webpage snippet doesn't contain details about:
+- Pricing or per-minute rates
+- Nigeria-specific support
+- IVR capabilities
+- Custom audio playback features
+- Recording functionality
+- Webhook support
+
+The content shown is primarily metadata and configuration code. To answer your questions about pricing, regional support, and specific technical features, you would need to visit the full Vobiz website or contact their support team directly.
+
+========================================================================
+END OF WEBFETCH RESEARCH
+========================================================================

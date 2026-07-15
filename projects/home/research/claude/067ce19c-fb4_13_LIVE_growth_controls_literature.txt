@@ -1,0 +1,51 @@
+========================================================================
+AGENT RESEARCH: LIVE growth controls literature
+Session: 067ce19c-fb4a-4bc9-928d-e8fb8609d7e8
+Time: 2026-05-04 19:22:17 UTC
+========================================================================
+
+**You have full WebSearch and WebFetch access. Pull live citations.**
+
+Build a definitive catalog of **control variables for a cross-country (or Nigeria-time-series) growth regression** for Sub-Saharan Africa, with Nigeria as the focus.
+
+DV: GDP per capita growth. Key X: education (PWT `hc` index, with OOSC/enrollment as robustness).
+
+For each control variable:
+1. Variable name + WDI/source code
+2. Foundational citation (with URL — verify it's still up)
+3. Expected sign on coefficient
+4. Coverage for Nigeria 1990-2023
+5. Whether to include in baseline or robustness only
+
+**Categories:**
+- Solow basics (investment, pop growth, initial GDP)
+- Resource curse (oil rents — search for current papers on Nigeria)
+- Institutions (Rule of Law, expropriation risk, polity)
+- Trade openness (Frankel-Romer 1999 + recent updates)
+- Macro stability (inflation, govt consumption)
+- Health (life expectancy, HIV — Bloom et al. 2004 + post-2020 work)
+- Conflict (Boko Haram — search for recent ACLED-based growth papers)
+- Aid dependence
+- Financial development (King-Levine 1993 + recent)
+
+**Anchor on Sala-i-Martin, Doppelhofer & Miller (2004) "BACE"** — fetch the published paper and report which variables had the highest posterior inclusion probability in their analysis, especially for SSA. Also fetch any updates: search for "Bayesian averaging growth regressions 2020 OR 2021 OR 2022 OR 2023".
+
+Search for:
+- "growth regressions Sub-Saharan Africa controls 2022..2026"
+- "Nigeria growth determinants empirical 2020..2026"
+- "ARDL bounds test growth Africa 2020..2026"
+
+Save to `/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/replay/research/05_growth_controls.md` (overwrite). Report 200-word summary + URLs verified.
+
+----------------------------------------
+
+Async agent launched successfully.
+agentId: a26480924c8477953 (internal ID - do not mention to user. Use SendMessage with to: 'a26480924c8477953' to continue this agent.)
+The agent is working in the background. You will be notified automatically when it completes.
+Do not duplicate this agent's work — avoid working with the same files or topics it is using. Work on non-overlapping tasks, or briefly tell the user what you launched and end your response.
+output_file: /private/tmp/claude-501/-Users-naomiivie/067ce19c-fb4a-4bc9-928d-e8fb8609d7e8/tasks/a26480924c8477953.output
+Do NOT Read or tail this file via the shell tool — it is the full sub-agent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.
+
+========================================================================
+END OF AGENT RESEARCH
+========================================================================
