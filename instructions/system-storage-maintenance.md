@@ -63,7 +63,7 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 
 ## Read-only audit on 2026-07-16 — `/Library/Developer`
 
-- Audit ran from 15:44 to 15:49 EDT. APFS physical free space measured 68.7 GB at the start and 67.9 GB at the end; the change occurred without file mutations and is attributable to normal background/VM activity. The machine remained above the 50 GB reserve and about 12.1 GB below the 80 GB target.
+- Audit ran from 15:44 to 15:51 EDT. APFS physical free space measured 68.7 GB at the start and 66.8 GB at the final check; the change occurred without mutations to `/Library/Developer` and is attributable to normal background/VM activity. The machine remained above the 50 GB reserve and about 13.2 GB below the 80 GB target.
 - No files were deleted, moved, or otherwise changed. Persistent savings: 0. Refillable-cache savings: 0.
 - The current same-filesystem allocated scan was 2,095,172 KiB (about 2.00 GiB), not the cleaner's earlier 5.93 GB figure. The folder's logical file-byte sum was about 4.81 GiB. The earlier reading likely predates removal of the iOS 18.6 simulator runtime or came from a stale/different accounting view.
 - Allocated breakdown: `CommandLineTools` 1,912,596 KiB; `DeveloperDiskImages` 74,064 KiB; `CoreDevice` 72,888 KiB; `PrivateFrameworks` 25,232 KiB; `DeviceKit` 5,304 KiB; and `CoreSimulator` 5,088 KiB.
@@ -75,7 +75,7 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 
 ## Current state and pending work from the 2026-07-16 audit
 
-Latest completed whole-volume measurement during the audit: approximately **67.9 GB APFS physical free** at 15:49 EDT, leaving about **12.1 GB** to reach the 80 GB floor. Re-measure before relying on this number.
+Latest completed whole-volume measurement during the audit: approximately **66.8 GB APFS physical free** at 15:51 EDT, leaving about **13.2 GB** to reach the 80 GB floor. Re-measure before relying on this number.
 
 Known pending items:
 
