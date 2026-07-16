@@ -4,7 +4,7 @@ Session: e7527a2b-efc5-4a68-ac70-b4f3a07c1d1b
 Time: 2026-04-12 01:50:39 UTC
 ========================================================================
 
-I need the WLASL class label list — the mapping from index 0-299 to ASL sign gloss names for the WLASL-300 subset. 
+I need the WLASL class label list — the mapping from index 0-299 to ASL sign gloss names for the WLASL-300 subset.
 
 Search for this on GitHub (dxli94/WLASL repo), or find it in the WLASL_v0.3.json file from the WLASL dataset. The list should have 2000 entries (the top 300 are the asl300 subset).
 

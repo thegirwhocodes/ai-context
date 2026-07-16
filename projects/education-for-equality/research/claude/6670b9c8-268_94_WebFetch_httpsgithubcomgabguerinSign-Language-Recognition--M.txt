@@ -27,7 +27,7 @@ DTW is described as "widely used for computing time series similarity." It align
 
 ## Reference Sign Recording
 
-**Process**: 
+**Process**:
 - Videos organized hierarchically: `data/videos/[SignName]/[video_files].mp4`
 - System extracts HandModel features (joint angles) from each frame
 - Stores temporal sequences of feature vectors for both hands

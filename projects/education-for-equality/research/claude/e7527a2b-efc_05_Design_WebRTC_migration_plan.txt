@@ -145,7 +145,7 @@ class SigningVideoTrack(MediaStreamTrack):
         # Read from existing buffer (thread-safe via lock)
         with _signing_lock:
             frame = latest_annotated_frame if latest_annotated_frame is not None else latest_raw_frame
-        
+
         if frame is None:
             # Black frame fallback
             frame = np.zeros((480, 640, 3), dtype=np.uint8)
@@ -172,32 +172,32 @@ def handle_offer(data):
     """Client sends SDP offer, server creates answer with video tracks."""
     feed = data.get('feed')  # 'signing' or 'speaking'
     sdp = data['sdp']
-    
+
     async def _create_answer():
         pc = RTCPeerConnection()
         _peer_connections.add(pc)
-        
+
         @pc.on("connectionstatechange")
         async def on_state():
             if pc.connectionState in ("failed", "closed"):
                 _peer_connections.discard(pc)
-        
+
         # Add the appropriate video track
         if feed == 'signing':
             pc.addTrack(SigningVideoTrack())
         else:
             pc.addTrack(SpeakingVideoTrack())
-        
+
         offer = RTCSessionDescription(sdp=sdp['sdp'], type=sdp['type'])
         await pc.setRemoteDescription(offer)
         answer = await pc.createAnswer()
         await pc.setLocalDescription(answer)
-        
+
         return {
             'sdp': pc.localDescription.sdp,
             'type': pc.localDescription.type,
         }
-    
+
     future = asyncio.run_coroutine_threadsafe(_create_answer(), _rtc_loop)
     answer = future.result(timeout=10)  # Block Flask thread until done
     emit('webrtc_answer', {'feed': feed, 'sdp': answer})
@@ -363,7 +363,7 @@ After the `socket.on('connect')` handler, add:
 socket.on('connect', () => {
     document.getElementById('status-pill').classList.add('live');
     document.getElementById('status-text').textContent = 'Connected';
-    
+
     // Connect WebRTC feeds
     connectWebRTC('signing', 'video-signing-demo');
     connectWebRTC('speaking', 'video-speaking-demo');
@@ -384,14 +384,14 @@ WebRTC connections can drop. Add reconnection logic:
 ```javascript
 function connectWebRTC(feed, videoElementId) {
     // ... existing code ...
-    
+
     pc.onconnectionstatechange = () => {
         if (pc.connectionState === 'failed' || pc.connectionState === 'disconnected') {
             pc.close();
             setTimeout(() => connectWebRTC(feed, videoElementId), 2000);
         }
     };
-    
+
     return pc;
 }
 ```

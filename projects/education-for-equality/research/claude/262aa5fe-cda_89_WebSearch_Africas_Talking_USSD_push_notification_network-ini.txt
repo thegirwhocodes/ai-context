@@ -18,7 +18,7 @@ Links: [{"title":"GitHub - AfricasTalkingLtd/africastalking.Net: Africa's Talkin
 
 Based on my web search results, I found information about Africa's Talking APIs and USSD services. The search results show that Africa's Talking provides USSD, Voice, SMS, and other communication APIs, with documentation available at their developers portal.
 
-However, the specific documentation page you're looking for regarding "USSD push notification network-initiated during active voice call API" doesn't appear in the search results I retrieved. 
+However, the specific documentation page you're looking for regarding "USSD push notification network-initiated during active voice call API" doesn't appear in the search results I retrieved.
 
 The search results indicate:
 

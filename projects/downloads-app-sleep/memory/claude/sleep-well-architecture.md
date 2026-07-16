@@ -1,7 +1,7 @@
 ---
 name: sleep-well-architecture
 description: "How the Sleep Well app is wired (targets, sync, Sage, key files, ceilings)"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 4b7a31d6-b579-4a4a-a44c-63b602b3158c

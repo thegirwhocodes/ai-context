@@ -4,7 +4,7 @@ Session: 1b27663d-8ea5-4b35-8186-373ddb166724
 Time: 2026-04-14 02:09:56 UTC
 ========================================================================
 
-Read the file /Users/naomiivie/Education for Equality/.claude-sessions/262aa5fe-cda2-4ed7-a392-fae7f4a7f583.txt from line 1000 to line 4000. 
+Read the file /Users/naomiivie/Education for Equality/.claude-sessions/262aa5fe-cda2-4ed7-a392-fae7f4a7f583.txt from line 1000 to line 4000.
 
 CRITICAL INSTRUCTION: Return AT LEAST 90% of the substantive content — every stat, every name, every cost figure, every decision, every date, every technical detail, every user message, every key Claude response. Do NOT summarize. Report the actual content in full. If Naomi said something, quote it or paraphrase closely. If a decision was made, state what it was and why. If numbers were discussed, give the numbers. I need the FULL picture, not a summary.
 

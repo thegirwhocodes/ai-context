@@ -1,7 +1,7 @@
 ---
 name: project-curriculum-accreditation
 description: "What international seal/accreditation E4E can legitimately put on its curriculum (and why \"Cambridge-accredited\" is impossible)"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 5335de07-9464-40e1-812e-565cd4926043

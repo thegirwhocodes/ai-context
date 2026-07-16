@@ -7,7 +7,7 @@ Time: 2026-05-03 02:05:19 UTC
 Do deep research on two topics and return AT LEAST 90% of the substantive content you find — every number, every option, every pricing tier, every benchmark. Do NOT summarize. Return actual data.
 
 **Topic 1: Cerebras nonprofit/education partnerships**
-Search for "Cerebras nonprofit", "Cerebras education discount", "Cerebras academic research program", "Cerebras for Good", site:cerebras.ai. 
+Search for "Cerebras nonprofit", "Cerebras education discount", "Cerebras academic research program", "Cerebras for Good", site:cerebras.ai.
 - Does Cerebras offer free or discounted API access for nonprofits, NGOs, education projects?
 - What are their pricing tiers at cloud.cerebras.ai?
 - Any known nonprofit grantees or academic partnerships?

@@ -19,7 +19,7 @@ Based on the web search results, here is the current Shortwave AI email assistan
 Shortwave offers three main paid plans billed per user per month:
 
 - **Business** — $24/month: 150–300 daily AI requests, 3 AI filters
-- **Premier** — $36/month: ~600 daily requests, 10 AI filters  
+- **Premier** — $36/month: ~600 daily requests, 10 AI filters
 - **Max** — $100/month: ~900 daily requests, 50 AI filters
 
 Additionally, Shortwave Business costs $9/user/month for full AI email features, team inboxes, and Google Workspace support (this appears to be an older team pricing structure).

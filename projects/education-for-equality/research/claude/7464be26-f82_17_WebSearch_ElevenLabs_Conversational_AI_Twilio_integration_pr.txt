@@ -16,7 +16,7 @@ Based on the search results, here's what I found about ElevenLabs Conversational
 
 ## Pricing
 
-ElevenLabs recently cut their pricing for Conversational AI, with calls now starting at 10 cents per minute — an ~50% discount across Starter, Creator and Pro plans. Calls are 8 cents per minute on an annual business plan and can go lower on Enterprise plans. 
+ElevenLabs recently cut their pricing for Conversational AI, with calls now starting at 10 cents per minute — an ~50% discount across Starter, Creator and Pro plans. Calls are 8 cents per minute on an annual business plan and can go lower on Enterprise plans.
 
 Important note: The above prices do not include LLM costs. ElevenLabs is currently absorbing those fees though will eventually pass those costs on.
 

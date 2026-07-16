@@ -35,8 +35,8 @@ The API key is configured via environment variables (`.env`), not passed directl
 import { Composio } from "@composio/core";
 import { ClaudeAgentSDKProvider } from "@composio/claude-agent-sdk";
 
-const composio = new Composio({ 
-  provider: new ClaudeAgentSDKProvider() 
+const composio = new Composio({
+  provider: new ClaudeAgentSDKProvider()
 });
 const session = await composio.create(userId);
 const tools = await session.tools();

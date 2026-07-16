@@ -1,7 +1,7 @@
 ---
 name: reference-antigravity-setup
 description: "Naomi's actual Antigravity setup — she runs Claude Code as a VS Code extension INSIDE Antigravity IDE, not Antigravity's native chat. Key paths, version state, and known performance traps."
-metadata: 
+metadata:
   node_type: memory
   type: reference
   originSessionId: a4ea39cd-2bd1-4931-94a8-310dccbcb03d

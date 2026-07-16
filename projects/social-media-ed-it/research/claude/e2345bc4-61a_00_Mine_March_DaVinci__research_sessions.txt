@@ -34,9 +34,9 @@ Naomi is a **worship songwriter and Christian content creator** in her 20s, a st
 The March 2026 session began with Naomi asking Claude to help her set up a home recording studio for **high-quality music recording (guitar + vocals)**, then pivoted to wanting **Claude itself to connect directly to DaVinci Resolve** to edit videos. Her stated goal was crystal clear:
 
 > "hey - is there any way to connect you directly with davinci resolve?"
-> 
+>
 > "I want to use you to create captions for my instagram videos"
-> 
+>
 > "not only captions if you can edit in general would be wonderful - if we can build a workflow around that"
 
 **The Emotional/Creative Core:**
@@ -63,7 +63,7 @@ She rejected the "you do the hard part" approach — she wanted Claude to OWN th
 **Pattern 2: Make It Match Exactly (Brand Consistency)**
 She asked me to research and create **branded presets** for different content types:
 > "can you sav them as presets please" (the color grade LUTs)
-> 
+>
 > "alr so can you give me branding set up from your files? like a specific one for instagram my videos, etc."
 
 The output: **3 content modes** (Talking Head / Worship / Lifestyle) each with exact font, size, color, opacity, animation, editing rhythm — all under one warm brand umbrella.
@@ -204,7 +204,7 @@ The research compiled a **10-item day-1 shipping checklist**:
 In the March session, when asking for gear and research, Naomi's framing shifted from **"help me set up"** to **"build me a system."** She went from asking about microphones to asking:
 
 > "can you be my content strategist"
-> 
+>
 > "do thorough research on how to achieve this on resolve — compile in a file for future claudes"
 
 **The implicit ask:** A **personal tool that scales**. Not just edit one worship video, but build a **repeatable system** for all her content.

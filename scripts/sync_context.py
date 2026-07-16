@@ -51,6 +51,9 @@ def main() -> int:
         if not args.no_export:
             run([sys.executable, str(REPO / "scripts" / "export_context.py"), "--all"])
         run([sys.executable, str(REPO / "scripts" / "verify_archive.py")])
+        scanner = shutil.which("gitleaks")
+        if scanner:
+            run([scanner, "dir", ".", "--no-banner", "--redact"])
         run(["git", "add", "-A"])
         staged = run(["git", "diff", "--cached", "--quiet"], check=False)
         if staged.returncode:

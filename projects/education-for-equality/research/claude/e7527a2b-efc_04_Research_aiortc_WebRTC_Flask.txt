@@ -57,7 +57,7 @@ class CameraVideoTrack(VideoStreamTrack):
     def __init__(self, camera_index=0):
         super().__init__()
         self.cap = cv2.VideoCapture(camera_index)
-        
+
     async def recv(self):
         ret, frame = self.cap.read()
         if not ret:
@@ -80,12 +80,12 @@ class VideoTransformTrack(MediaStreamTrack):
         super().__init__()
         self.track = track
         self.kind = "video"
-        
+
     async def recv(self):
         frame = await self.track.recv()
         # Convert to OpenCV format
         img = frame.to_ndarray(format="bgr24")
-        
+
         # Process with OpenCV (e.g., edge detection)
         edges = cv2.Canny(img, 100, 200)
         # Convert back to BGR and create VideoFrame
@@ -139,17 +139,17 @@ pcs = {}  # Track active peer connections
 def on_offer(data):
     """Browser sends WebRTC offer"""
     offer_sdp = data['sdp']
-    
+
     pc = RTCPeerConnection()
     pcs[request.sid] = pc
-    
+
     # Set remote offer
     await pc.setRemoteDescription(RTCSessionDescription(sdp=offer_sdp, type="offer"))
-    
+
     # Create answer
     answer = await pc.createAnswer()
     await pc.setLocalDescription(answer)
-    
+
     # Send answer back
     emit('answer', {
         'sdp': pc.localDescription.sdp,
@@ -214,7 +214,7 @@ pc.addEventListener('connectionstatechange', () => {
 async function startConnection() {
     const offer = await pc.createOffer();
     await pc.setLocalDescription(offer);
-    
+
     socket.emit('offer', {
         sdp: pc.localDescription.sdp,
         type: 'offer'

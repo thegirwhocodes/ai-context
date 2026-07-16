@@ -1,10 +1,10 @@
 ---
 name: e4e-reference-ips-urls-contacts-grants
 description: "Quick-reference for server IPs, grant links, contact names, key URLs, and file paths"
-metadata: 
+metadata:
   node_type: memory
   type: reference
-  sessions: 
+  sessions:
     - ff1faa52
     - f19ca767
     - efd7d7d2

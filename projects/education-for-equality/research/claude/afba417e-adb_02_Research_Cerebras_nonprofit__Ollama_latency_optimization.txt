@@ -8,7 +8,7 @@ Do deep research on two things:
 
 1. **Cerebras nonprofit/education partnerships**: Does Cerebras offer free or discounted API access for nonprofits, NGOs, academic institutions, or education projects? Search for "Cerebras nonprofit", "Cerebras education discount", "Cerebras academic program", "Cerebras for Good", "Cerebras AI Research program". Look at cerebras.ai and any announcements. Return every detail you find — pricing tiers, eligibility, how to apply, any known grantees.
 
-2. **Making self-hosted Ollama/Llama match Cerebras latency**: Our context is: we self-host on Hetzner GPU server (currently Hetzner GEX44, likely RTX 3090 or A4000). We use Ollama running Llama 3.1 8B in 4-bit quantization. Cerebras runs at 2100+ tokens/second for 70B models. 
+2. **Making self-hosted Ollama/Llama match Cerebras latency**: Our context is: we self-host on Hetzner GPU server (currently Hetzner GEX44, likely RTX 3090 or A4000). We use Ollama running Llama 3.1 8B in 4-bit quantization. Cerebras runs at 2100+ tokens/second for 70B models.
 
 Research:
 - What is the actual tokens/second speed of Llama 3.1 8B on RTX 3090 with Ollama vs vLLM vs llama.cpp?

@@ -16,7 +16,7 @@ Based on the search results, here's information about Africa's Talking Voice Rec
 
 ## PHP Implementation
 
-Actions can be chained to create an XML string using the voice->messageBuilder() method, with record() being one available action. 
+Actions can be chained to create an XML string using the voice->messageBuilder() method, with record() being one available action.
 
 The Record action in PHP supports the `finishOnKey`, `maxLength`, and `timeout` parameters which are built into the XML output string.
 

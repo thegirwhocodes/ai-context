@@ -253,7 +253,7 @@ These bypass the "expose the app" problem entirely — you just show your screen
 - **Free**: 25 videos, 5 min each on free. Paid for unlimited.
 - **Best for**: Asynchronous demos, sending a video to someone who can't attend live.
 
-### Can these show localhost? 
+### Can these show localhost?
 **Yes, all of them.** You're sharing your screen/window, so whatever you see on `localhost:5001`, they see. The remote viewer never accesses the URL directly — they see your screen pixels.
 
 ---

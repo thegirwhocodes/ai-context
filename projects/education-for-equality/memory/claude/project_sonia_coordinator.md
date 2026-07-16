@@ -1,7 +1,7 @@
 ---
 name: project_sonia_coordinator
 description: Dr. Sonia Ivie is being onboarded as paid Lagos Regional Coordinator (contractor) and has left EKOEXCEL
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: bfc80d0f-7260-4a6e-b5ff-d74de7f9c234

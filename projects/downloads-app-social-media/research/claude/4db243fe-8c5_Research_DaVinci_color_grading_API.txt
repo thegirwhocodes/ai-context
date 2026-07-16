@@ -10,7 +10,7 @@ Task given to agent: Search the web for the correct way to apply a warm golden c
 
 2. How to properly use SetCDL in DaVinci Resolve Python API — what are the exact parameter ranges and what does each one do (Slope, Offset, Power, Saturation)?
 
-3. Are there 
+3. Are there
 
 ----------------------------------------
 

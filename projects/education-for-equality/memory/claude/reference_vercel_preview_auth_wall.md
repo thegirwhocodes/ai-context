@@ -1,7 +1,7 @@
 ---
 name: reference-vercel-preview-auth-wall
 description: "E4E Vercel project gates PREVIEW deploys behind Vercel Authentication — can't verify preview UI without SSO; verify on prod"
-metadata: 
+metadata:
   node_type: memory
   type: reference
   originSessionId: 3656ec2d-babd-4f3e-9b97-a7cb9f9d17be

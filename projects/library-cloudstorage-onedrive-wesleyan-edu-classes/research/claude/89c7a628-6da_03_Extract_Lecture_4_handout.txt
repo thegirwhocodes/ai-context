@@ -4,7 +4,7 @@ Session: 89c7a628-6da6-42a4-bbcc-4e964791cc33
 Time: 2026-03-30 01:33:04 UTC
 ========================================================================
 
-Read the entire PDF at "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 4 handout.pdf" and extract EVERY piece of information word for word. The PDF has 32 pages, so read pages 1-20 first, then pages 21-32. 
+Read the entire PDF at "/Users/naomiivie/Library/CloudStorage/OneDrive-wesleyan.edu/Classes/Econ 349 - Economic Growth/Lecture 4 handout.pdf" and extract EVERY piece of information word for word. The PDF has 32 pages, so read pages 1-20 first, then pages 21-32.
 
 Return ALL text content, equations, bullet points, graphs descriptions, tables, and any other information exactly as it appears. Do not summarize - extract everything verbatim. Format the output clearly with headers for each slide/section.
 

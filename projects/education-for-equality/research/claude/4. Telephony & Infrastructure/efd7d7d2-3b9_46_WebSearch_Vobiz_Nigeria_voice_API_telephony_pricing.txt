@@ -16,7 +16,7 @@ Based on the search results, I found information about Vobiz's voice API and tel
 
 Vobiz offers SIP trunk, voice API, and programmable telephony for voice AI. The service includes instant DIDs, WebRTC, and voice agents, and you can start free.
 
-However, the search results do not contain specific pricing details for Vobiz Nigeria's voice API telephony services. The documentation and main website pages that appeared in the results focus on features and integration capabilities rather than displaying detailed pricing information. 
+However, the search results do not contain specific pricing details for Vobiz Nigeria's voice API telephony services. The documentation and main website pages that appeared in the results focus on features and integration capabilities rather than displaying detailed pricing information.
 
 To find current pricing, you would likely need to:
 - Visit the Vobiz website directly at https://vobiz.ai/

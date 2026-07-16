@@ -1,6 +1,6 @@
 ---
 name: ""
-metadata: 
+metadata:
   node_type: memory
   originSessionId: 3656ec2d-babd-4f3e-9b97-a7cb9f9d17be
 ---

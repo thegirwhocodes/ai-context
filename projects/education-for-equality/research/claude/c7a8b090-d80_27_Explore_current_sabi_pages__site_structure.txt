@@ -26,7 +26,7 @@ Perfect! Now I have all the information I need. Let me provide you with a compre
 
 ## Complete Curriculum-App Architecture Overview
 
-### 1. SABI PAGES UNDER `/app/sabi/` 
+### 1. SABI PAGES UNDER `/app/sabi/`
 
 **Full directory structure:**
 - **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi/page.tsx**
@@ -41,7 +41,7 @@ Perfect! Now I have all the information I need. Let me provide you with a compre
 
 - **/Users/naomiivie/Education for Equality/curriculum-app/app/sabi/pricing/page.tsx**
   - **Purpose:** Comprehensive pricing page for both developers and organizations
-  - **Content:** 
+  - **Content:**
     - **For Developers:** API pricing tiers (Starter $0.04/min, Pro $0.07/min, Enterprise custom), capabilities grid (10x cheaper, 20+ accents, <500ms latency, 100% self-hostable), code snippet
     - **For Organizations:** Managed delivery tiers (Pilot 100-500 students $10-15/student, Scale 1K-50K $5-8/student, National 100K+ $2-5/student), how-it-works strip
     - **Branding:** Dark modern design with floating orbs, sound wave animation, gradient text

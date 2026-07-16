@@ -62,8 +62,8 @@ To create back-and-forth conversation:
 ## Speech-Based Example
 
 ```xml
-<Gather input="speech" speechModel="default" 
-        language="en-US" action="https://example.com/process-speech" 
+<Gather input="speech" speechModel="default"
+        language="en-US" action="https://example.com/process-speech"
         method="POST">
   <Say>Please tell us your account number</Say>
 </Gather>

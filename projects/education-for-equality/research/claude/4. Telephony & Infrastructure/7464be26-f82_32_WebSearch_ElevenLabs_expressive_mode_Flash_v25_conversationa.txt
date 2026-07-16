@@ -20,7 +20,7 @@ Eleven Flash v2.5 is the fastest speech synthesis model, designed for real-time 
 
 ## Expressive Mode for Conversational AI
 
-Expressive Mode for ElevenAgents provides voice agents that are expressive and gives teams unprecedented control over tone - so agents can de-escalate, reassure, and guide conversations to a clear resolution, even under pressure. 
+Expressive Mode for ElevenAgents provides voice agents that are expressive and gives teams unprecedented control over tone - so agents can de-escalate, reassure, and guide conversations to a clear resolution, even under pressure.
 
 This uses Eleven v3 Conversational - the most emotionally intelligent, context-aware Text to Speech model, built on Eleven v3 and optimized for real-time dialogue.
 

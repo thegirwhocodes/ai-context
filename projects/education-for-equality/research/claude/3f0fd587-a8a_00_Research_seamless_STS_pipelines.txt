@@ -30,7 +30,7 @@ CRITICAL: You MUST return AT LEAST 90% of the substantive content you find. Do N
 - **Moshi** (Kyutai) — full duplex audio LM, what it can do, model size, latency, quantization for Mac M2
 - **Mini-Omni / Mini-Omni 2** (Tsinghua) — speech-to-speech, params, license, Mac viability
 - **GLM-4-Voice** — what it is, latency, deployment
-- **Step-Audio / Step-Audio 2** 
+- **Step-Audio / Step-Audio 2**
 - **Llama-Omni** (CAS) — speech-to-speech architecture, sizes
 - **NVIDIA Maxine / Riva** — even though probably not Mac-friendly
 - **Pipecat** (Daily) — the orchestration framework for cascaded pipelines, what they support, their VAD + turn-taking abstractions

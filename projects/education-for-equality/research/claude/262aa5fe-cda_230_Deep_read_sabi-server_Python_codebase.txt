@@ -10,7 +10,7 @@ Read these files in full and return AT LEAST 90% of the substantive content. Do 
 
 **Files to read:**
 - `main.py` — FastAPI app entry
-- `voice.py` — Africa's Talking voice handler  
+- `voice.py` — Africa's Talking voice handler
 - `voice_twilio.py` — Twilio voice handler
 - `voice_asterisk.py` — Asterisk SIP handler
 - `llm.py` — Claude/Ollama LLM wrapper

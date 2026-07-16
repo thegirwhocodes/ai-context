@@ -1,7 +1,7 @@
 ---
 name: extreme-excellence-on-everything-standing-standard-for-all-claudes
 description: "Naomi's standing standard — EVERYTHING she asks for must be extremely excellent, detailed, and thorough no matter how long it takes, unless told otherwise; she knows everything and will catch anything less"
-metadata: 
+metadata:
   node_type: memory
   type: standard
   originSessionId: 18649100-9609-4375-9e02-7fdef3944167

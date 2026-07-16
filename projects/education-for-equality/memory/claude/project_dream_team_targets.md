@@ -1,7 +1,7 @@
 ---
 name: project-dream-team-targets
 description: "A-player business people who could take Sabi to the next level — deep research + Naomi's LinkedIn network cross-referenced (warm vs cold). Full doc in repo."
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: c46a7821-57d5-46ff-9dac-304ed0ef2cbc

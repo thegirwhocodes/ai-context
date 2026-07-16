@@ -86,7 +86,7 @@ The critical piece: OpenAI's Realtime API natively supports **SIP (Session Initi
 8. Audio streams bidirectionally: phone audio in → Realtime API → AI response audio out → back through the SIP trunk → back to the caller's phone.
 9. When the call ends (15-minute limit hit, or user hangs up), a `POST .../hangup` call tears down the SIP leg.
 
-**SIP endpoint format:** `sip:[PROJECT_ID]@sip.api.openai.com;transport=tls`  
+**SIP endpoint format:** `sip:[PROJECT_ID]@sip.api.openai.com;transport=tls`
 **OpenAI's allowlisted SIP IP ranges (GeoIP routed to closest region):**
 - `13.79.45.80/28` (northeurope)
 - `23.98.140.64/28` (southcentralus)

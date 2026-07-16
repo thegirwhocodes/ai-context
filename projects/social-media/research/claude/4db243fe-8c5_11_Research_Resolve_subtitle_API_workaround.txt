@@ -12,7 +12,7 @@ Search the web for workarounds to programmatically style subtitles in DaVinci Re
 4. `CreateSubtitlesFromAudio()` creates subtitles but with wrong transcription and we can't edit them
 
 Search for:
-- "DaVinci Resolve scripting API subtitle style" 
+- "DaVinci Resolve scripting API subtitle style"
 - "DaVinci Resolve Python API edit subtitle text"
 - "DaVinci Resolve MCP subtitle styling"
 - "DaVinci Resolve API subtitle SetProperty"

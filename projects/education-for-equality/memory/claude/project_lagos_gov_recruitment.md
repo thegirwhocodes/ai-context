@@ -1,7 +1,7 @@
 ---
 name: project_lagos_gov_recruitment
 description: "How Sabi gets recruited by Lagos State + the regulatory gates (PPP, OEQA, ARCON, NDPA) that our internal goal docs under-flagged"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: f8d1fd1f-a78c-4453-809b-3a6076a54c0d

@@ -66,7 +66,7 @@ Based on the official documentation, the VS Code extension uses a **color-coded 
 This is NOT a permission mode change. The actual permission modes are:
 
 - `default` - Prompts for permission on each action (text box is normal)
-- `acceptEdits` - Auto-accepts file edits (text box is normal)  
+- `acceptEdits` - Auto-accepts file edits (text box is normal)
 - `plan` - Read-only analysis mode (text box is normal)
 
 The permission mode indicator is separate from the completion status indicator. To check/change permission mode in VS Code, click the mode indicator at the bottom of the prompt box.

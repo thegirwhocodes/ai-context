@@ -1,7 +1,7 @@
 ---
 name: project-stt-noise-accent-research
 description: "Deep research on best STT for noisy + thick-Nigerian-accent + telephony (Sabi's real conditions) — WER numbers, denoiser/VAD stack, recommended architecture"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e

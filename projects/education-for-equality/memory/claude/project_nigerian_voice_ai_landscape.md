@@ -1,7 +1,7 @@
 ---
 name: project-nigerian-voice-ai-landscape
 description: How Nigerian/African voice-AI operators actually make in-the-wild Nigerian voice machine-readable — and the strategic implication for Sabi (route around the hardest case)
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e

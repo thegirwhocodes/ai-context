@@ -9,7 +9,7 @@ Extraction prompt: Find Nigeria's learning poverty percentage. What is the most 
 
 ----------------------------------------
 
-I cannot find Nigeria's learning poverty percentage in the provided web page content. 
+I cannot find Nigeria's learning poverty percentage in the provided web page content.
 
 The page is from the World Bank's Human Capital Data Portal and contains mostly JavaScript code, navigation elements, and component configurations. While it references indicators related to health, education, labor, jobs, skills, gender, and nutrition, no specific data about Nigeria's learning poverty rate or the year of that data is displayed in this content.
 

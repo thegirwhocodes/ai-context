@@ -1,10 +1,10 @@
 ---
 name: cortex-build-status
 description: "Current state of the Cortex web app build — what's done, what's next, key decisions made"
-metadata: 
+metadata:
   node_type: memory
   type: project
-  sessions: 
+  sessions:
     - 0d91dd3c-6d8d-4983-b72b-a1df57377021
   originSessionId: 584a7893-8002-4ea1-90e7-29f2a520b075
 ---

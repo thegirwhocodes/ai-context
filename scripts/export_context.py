@@ -109,7 +109,10 @@ class Redactor:
             self.counts[f"assignment:{label}"] += 1
             return f"{match.group(1)}{match.group(2)}[REDACTED:{label}]"
 
-        return self.assignment.sub(replace_assignment, text)
+        text = self.assignment.sub(replace_assignment, text)
+        # Generated Markdown must remain verifier-clean even when a transcript
+        # contains spaces or tabs at the ends of user-authored lines.
+        return re.sub(r"[ \t]+$", "", text, flags=re.M)
 
 
 REDACTOR = Redactor()

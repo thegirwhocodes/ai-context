@@ -30,9 +30,9 @@ $results = $voice->call([
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Say>Welcome to our service. Press 1 for support, 
+  <Say>Welcome to our service. Press 1 for support,
   press 2 for billing.</Say>
-  <GetDigits timeout="10" finishOnKey="#" 
+  <GetDigits timeout="10" finishOnKey="#"
   callbackUrl="...">
   <Say>Enter your choice followed by the hash key.</Say>
   </GetDigits>

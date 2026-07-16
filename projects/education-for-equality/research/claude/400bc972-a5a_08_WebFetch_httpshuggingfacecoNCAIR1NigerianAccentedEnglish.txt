@@ -20,7 +20,7 @@ It uses the Transformers library with PyTorch. The implementation relies on `Whi
 **Loading & Inference Code:**
 ```python
 from transformers import pipeline
-asr = pipeline("automatic-speech-recognition", 
+asr = pipeline("automatic-speech-recognition",
                model="NCAIR1/NigerianAccentedEnglish")
 result = asr(audio)
 print(result["text"])

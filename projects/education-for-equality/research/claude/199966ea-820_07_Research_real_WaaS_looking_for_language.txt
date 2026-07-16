@@ -10,7 +10,7 @@ Context: I'm helping a 21-year-old founder/builder fill in this field. She's a W
 
 Her current draft:
 > "What I want: an AI-native team that ships, real users on the other end, founder-direct access to product and ops decisions, and a stack that includes voice, agentic AI, or anything I can build with Claude Code. I'm at my best when I'm in the room where the bet gets made and then writing the code that proves it.
-> 
+>
 > What I'd avoid: leetcode gauntlets, AI-theater (chatbots bolted onto CRMs), layered approval chains, and any role where the founder isn't reading my PRs by week two."
 
 Her concern (her exact words): *"I think this sounds a little overconfident — like I don't want to sound underconfident or water down what I've done by no means or present myself as less than - I just think someone who would say that has maybe achieved something much bigger."*
@@ -25,7 +25,7 @@ She's right to flag it. The line "any role where the founder isn't reading my PR
    - "Looking for work" tweets from successful startup employees (e.g., when they announce they're between jobs)
    - LinkedIn "open to" framings from founders/builders
    - Read.cv profiles from technical founders/builders
-   
+
    For each, report verbatim what they wrote. Categorize: junior-coded, mid-level-coded, senior-coded, founder-coded.
 
 2. **The HIGHEST-status framings.** What do people who've already exited or done something measurable say? Look for examples from:
@@ -33,7 +33,7 @@ She's right to flag it. The line "any role where the founder isn't reading my PR
    - First-employees-at-X who are between roles
    - Stripe/Vercel/Linear early employees in transition
    - "Now hiring me" public posts from credentialed builders
-   
+
    What's the exact register? How much do they DEMAND vs how much do they DESCRIBE?
 
 3. **The asymmetry question — does claiming what you want to AVOID help or hurt?**
@@ -73,14 +73,14 @@ She's right to flag it. The line "any role where the founder isn't reading my PR
    - Calibration C: descriptive (what kind of role I fit, not what I demand)
    - Calibration D: maximally restrained (let the resume do the work)
    - Calibration E: any other tonal frame you find evidence for
-   
+
    For each calibration, predict what % of founders would respond positively, and explain why.
 
 9. **Specifically address the "founder reading PRs by week 2" line.** Is this defensible? What's the exact way to express "I want to work directly with the founder" without it reading as entitled? Find examples of how high-status builders say this exact thing.
 
 10. **Profile-length norms.** Should this section be 100 words? 200? 50?
 
-**Search heavily** — workatastartup.com profiles aren't all public but many are. Use WebSearch with specific queries: 
+**Search heavily** — workatastartup.com profiles aren't all public but many are. Use WebSearch with specific queries:
 - "workatastartup.com profile" examples
 - "what I'm looking for" YC profile
 - "founder hire me" tweet

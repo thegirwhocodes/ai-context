@@ -19,7 +19,7 @@ The page mentions: **"For as low as ₦2,500/month"** for their HomeAdvantage Te
 ## Business Plus Plan
 The content includes references to a Business Plus plan with pricing calculations based on three billing cycles:
 - Monthly option
-- 6-month option  
+- 6-month option
 - Annual option
 
 However, **specific per-minute rates, setup costs, and detailed 0800 toll-free pricing are not clearly displayed** in the extracted content. The page appears to use a dynamic pricing calculator (referenced in the JavaScript code) that generates costs based on selected options like:

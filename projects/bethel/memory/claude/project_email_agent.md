@@ -1,7 +1,7 @@
 ---
 name: email-agent-project
 description: "Naomi's personal AI email agent Sage (standalone project under ~/sage) — status & architecture"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: a63e3b98-52ea-48e0-89eb-2340b73532b6

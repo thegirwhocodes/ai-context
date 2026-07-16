@@ -40,7 +40,7 @@ Please report on the following in depth:
    - `pysyncon` and `SyntheticControlMethods` Python packages
    - Augmented SCM via `augsynth` R package (no Stata equivalent)
 
-8. **For the Nigerian thesis extension**: 
+8. **For the Nigerian thesis extension**:
    - What would a credible SCM design look like? (Treatment date = 2009 Boko Haram intensification? 2014 oil collapse? 1976 UPE?)
    - Donor pool: SSA non-oil exporters? Lower-middle-income economies? ECOWAS?
    - Outcome: log GDP per capita or growth rate?

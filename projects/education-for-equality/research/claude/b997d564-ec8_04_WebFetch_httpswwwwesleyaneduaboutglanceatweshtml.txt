@@ -11,7 +11,7 @@ Extraction prompt: How many faculty and how many staff does Wesleyan University 
 
 # Faculty and Staff Numbers at Wesleyan University
 
-Based on the provided webpage content, Wesleyan University has **450+ full-time faculty members**. 
+Based on the provided webpage content, Wesleyan University has **450+ full-time faculty members**.
 
 However, the document does not contain information about the total number of staff members employed by the university.
 

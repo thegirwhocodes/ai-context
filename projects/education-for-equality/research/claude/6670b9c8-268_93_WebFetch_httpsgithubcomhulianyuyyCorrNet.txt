@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 **Supported Systems:**
 - Linux
-- Windows  
+- Windows
 - macOS (Apple Silicon/Intel) - recent updates added macOS support via `macOS_cn.md` and `macOS_en.md`
 
 **Platform-Specific Notes:**

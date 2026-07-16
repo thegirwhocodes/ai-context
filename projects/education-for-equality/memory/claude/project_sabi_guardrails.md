@@ -1,7 +1,7 @@
 ---
 name: project-sabi-guardrails
 description: "Sabi child-safety guardrail layer — module location, design rules, stress test, and what's still pending"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 3b8ddd08-9e23-4598-83dd-60902b9107f3

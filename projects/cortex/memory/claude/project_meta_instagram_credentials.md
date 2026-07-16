@@ -1,7 +1,7 @@
 ---
 name: project-meta-instagram-credentials
 description: "Meta/Instagram OAuth status — working as of 2026-07-13 using single \"Cortex\" app 782931888175092, invalid secondary app removed"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 14c38de3-5375-4634-b108-3d8bfb785aca

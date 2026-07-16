@@ -16,7 +16,7 @@ Based on the web search results, I found relevant information about the syntheti
 
 ## Synthetic Control Method in Sub-Saharan Africa
 
-The synthetic control method (SCM) is being used to estimate the counterfactual GDP per capita that countries would have experienced had they established a stock market during specific periods. 
+The synthetic control method (SCM) is being used to estimate the counterfactual GDP per capita that countries would have experienced had they established a stock market during specific periods.
 
 A recent study examined nine sub-Saharan African countries and found that the absence of stock markets resulted in substantial losses for most countries, including Burundi, the Democratic Republic of Congo, Comoros, Guinea, Gambia, Liberia, Madagascar, and Mauritania. However, the lack of a stock market had no significant effect on Ethiopia.
 

@@ -1,7 +1,7 @@
 ---
 name: project-advisor-board-notion
 description: "/advisor-board Notion integration — Codex-built org OS in Notion, wired into curriculum-app as 5-tab dashboard (Tasks/Docs/Team/Advisors/Pre-pilot)"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 71aa2a37-5145-44bd-be9f-09de500267a0

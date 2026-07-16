@@ -1,7 +1,7 @@
 ---
 name: feedback-no-universe-language
 description: "Never use \"the universe\" framing or secular-spiritual language with Naomi — she is Christian"
-metadata: 
+metadata:
   node_type: memory
   type: feedback
   originSessionId: 618ebca0-6074-45c8-9893-1bd5ec214293

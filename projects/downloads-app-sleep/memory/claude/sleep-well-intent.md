@@ -1,7 +1,7 @@
 ---
 name: sleep-well-intent
 description: "Founding spec/intent for the \"Sleep Well\" (ShutdownApp) digital-bedtime app"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 4b7a31d6-b579-4a4a-a44c-63b602b3158c

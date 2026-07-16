@@ -1,7 +1,7 @@
 ---
 name: project-meta-provider-readiness
 description: Meta (WhatsApp Cloud API + Instagram) provider-readiness lane — deliverables and the tenant-isolation routing risk
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 02d60305-9513-4d94-857b-0af9ae81a089

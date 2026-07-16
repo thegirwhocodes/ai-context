@@ -5,7 +5,7 @@ Time: 2026-03-19 20:54:11 UTC
 ========================================================================
 
 Search through the claude session files in /Users/naomiivie/Education for Equality/.claude-sessions/ for any discussion about sabi.eduforequality.org as a frontend, serving the voice demo at a subdomain, or separating the sabi voice demo from the curriculum app. Check these files:
-- 262aa5fe*.txt 
+- 262aa5fe*.txt
 - 296c88b8*.txt
 - 089265f6*.txt
 

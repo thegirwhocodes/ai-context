@@ -11,7 +11,7 @@ Extraction prompt: Quote VERBATIM any code example showing a multi-turn conversa
 
 I've reviewed the provided documentation for the Africa's Talking Mobile Communication APIs (Node.js section).
 
-**Finding:** There are no code examples in this documentation showing a multi-turn conversation pattern with Record functionality. 
+**Finding:** There are no code examples in this documentation showing a multi-turn conversation pattern with Record functionality.
 
 The documentation covers:
 - SMS sending

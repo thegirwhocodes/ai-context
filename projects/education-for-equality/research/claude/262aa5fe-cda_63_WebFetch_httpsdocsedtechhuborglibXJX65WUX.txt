@@ -11,7 +11,7 @@ Extraction prompt: Find the full text or methodology details of Milan & Burnett 
 
 # Analysis of the Document
 
-I cannot provide the specific economic data, wage premium percentages, formulas, or country-specific returns to education calculations you've requested. 
+I cannot provide the specific economic data, wage premium percentages, formulas, or country-specific returns to education calculations you've requested.
 
 The webpage content provided is primarily **HTML/JavaScript markup** from the EdTech Hub Evidence Library interface, not the actual document text. It shows metadata indicating the document exists:
 

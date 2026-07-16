@@ -418,7 +418,7 @@ Given your `<canvas id="voice-orb" width="320" height="320">`, your existing Web
 
 ### Numbers to use
 - **Canvas:** 320×320 (your current size is right for an operator panel; or scale to 480×480 if you have room)
-- **DPR cap:** `Math.min(devicePixelRatio, 2)` 
+- **DPR cap:** `Math.min(devicePixelRatio, 2)`
 - **Geometry:** 3 spheres at radii `1.00 / 0.85 / 0.70`, each `SphereGeometry(r, 80, 80)`
 - **Camera:** PerspectiveCamera 75°, `z=5`
 - **AnalyserNode (mic + bot output, separate):** `fftSize: 512, smoothingTimeConstant: 0.3` — *upgrade from your current 256/0.85*
@@ -442,7 +442,7 @@ Your existing `cbtn cbtn--primary` and `cbtn cbtn--ghost` classes should work �
 
 ### Status text
 Pin **24px below the orb**. 14px mono (matches your `mono telemetry chrome`). Strings:
-- `idle` → `STANDBY` 
+- `idle` → `STANDBY`
 - `listening` → `LISTENING`
 - `thinking` → `PROCESSING…`
 - `speaking` → `RESPONDING`

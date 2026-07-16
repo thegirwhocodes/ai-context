@@ -20,7 +20,7 @@ Custom LLM allows you to connect your conversations to your own LLM via an exter
 
 ## API Format and Request/Response
 
-Your custom LLM will receive requests that include tools in the standard OpenAI format, meaning ElevenLabs expects endpoints that are compatible with OpenAI's API structure. 
+Your custom LLM will receive requests that include tools in the standard OpenAI format, meaning ElevenLabs expects endpoints that are compatible with OpenAI's API structure.
 
 For example, when integrating providers like Together AI or Groq, the Server URL should specify the OpenAI-compatible API endpoint (e.g., https://api.together.xyz/v1).
 

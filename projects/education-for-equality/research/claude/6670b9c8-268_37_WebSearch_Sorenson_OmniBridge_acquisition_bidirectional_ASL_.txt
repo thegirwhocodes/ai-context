@@ -20,7 +20,7 @@ On January 28, 2025, Sorenson announced the acquisition of OmniBridge, an Intel 
 
 ## OmniBridge Technology
 
-OmniBridge is an AI-driven sign language translation technology that enables bi-directional, real-time conversations between people who use American Sign Language (ASL) and those who speak English. 
+OmniBridge is an AI-driven sign language translation technology that enables bi-directional, real-time conversations between people who use American Sign Language (ASL) and those who speak English.
 
 The Deaf person signs into a camera, and OmniBridge uses its database of ASL signs to understand the statement. OmniBridge translates the ASL to English for the hearing person to read. The hearing person speaks into a mic, and OmniBridge captions their speech for the Deaf person to read.
 

@@ -21,7 +21,7 @@ This comprehensive guide provides a structured approach to implementing Sentry e
 
 **Phase 3: Guidance** offers two implementation paths: an interactive wizard or manual configuration. The manual approach requires creating four configuration files:
 - `instrumentation-client.ts` for browser runtime
-- `sentry.server.config.ts` for Node.js runtime  
+- `sentry.server.config.ts` for Node.js runtime
 - `sentry.edge.config.ts` for edge runtime
 - `instrumentation.ts` as the server-side registration hook
 

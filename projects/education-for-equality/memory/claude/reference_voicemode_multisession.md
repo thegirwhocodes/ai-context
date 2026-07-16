@@ -1,7 +1,7 @@
 ---
 name: reference-voicemode-multisession
 description: How multiple concurrent VoiceMode voice sessions are set up to share one mic via turn-taking
-metadata: 
+metadata:
   node_type: memory
   type: reference
   originSessionId: 31093a5b-56b7-45cc-8b84-61853918b374

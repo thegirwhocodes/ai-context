@@ -28,7 +28,7 @@ The mcp_config.json file is located at:
 
 ## Configuration Settings
 
-Modify the mcp_config.json with your custom MCP server configuration. 
+Modify the mcp_config.json with your custom MCP server configuration.
 
 For HTTP-based servers, Antigravity requires serverUrl for HTTP-based MCP servers (rather than "url" used in other tools).
 

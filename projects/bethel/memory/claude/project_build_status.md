@@ -1,10 +1,10 @@
 ---
 name: current-build-status
 description: "What has been built, what is in progress, and what is next for Bethel"
-metadata: 
+metadata:
   node_type: memory
   type: project
-  sessions: 
+  sessions:
     - e59a15e2-07e1-441a-b5e1-74b37c995b59
     - b964802c-7753-4500-8b6e-fea84b85ad09
     - efd7d7d2-3b94-4e82-bb2d-7a045a3e9736

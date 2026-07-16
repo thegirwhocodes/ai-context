@@ -1,7 +1,7 @@
 ---
 name: e4e-live-status-june-2026-supabase-down
 description: Critical June 5 2026 findings — Sabi phone pipeline broken because Supabase project is gone; full live health snapshot
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 416308b0-338c-4556-b2b7-dd7cd5d226b2

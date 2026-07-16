@@ -30,7 +30,7 @@ More specifically, the creator extracted audio and subtitles from movies availab
 
 ## How to Replicate
 
-He took the language model SmolLM2-360M from Hugging Face and added speech functionality to it, a process that involved major algorithmic changes. 
+He took the language model SmolLM2-360M from Hugging Face and added speech functionality to it, a process that involved major algorithmic changes.
 
 After adding speech functionality, training the model cost $50 and took three days.
 

@@ -181,7 +181,7 @@ Listed chronologically to capture the evolution of her thinking:
 - 13 green tests
 
 **Explicitly deferred (line 3145):**
-- **M6 (Polish):** 
+- **M6 (Polish):**
   - Prompt cache breakpoints (for cost optimization)
   - Langfuse traces (telemetry)
   - Code signing & notarization of `.dmg` (needs Apple Dev cert)

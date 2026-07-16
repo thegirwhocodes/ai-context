@@ -11,7 +11,7 @@ Extraction prompt: Report the full substance: exact endpoint URL, HTTP method, a
 
 # Response
 
-Based on the provided content, I cannot fulfill your request. The web page shows a **404 error** indicating that the requested documentation page does not exist. 
+Based on the provided content, I cannot fulfill your request. The web page shows a **404 error** indicating that the requested documentation page does not exist.
 
 The page displays:
 - A navigation menu with links to various API sections (STT API, TTS API, Voice Bots API)

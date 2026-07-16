@@ -1,7 +1,7 @@
 ---
 name: project-e4e-google-oauth
 description: E4E curriculum-app Google sign-in runs through Supabase Auth (not Clerk); OAuth client + callback config
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: 3656ec2d-babd-4f3e-9b97-a7cb9f9d17be

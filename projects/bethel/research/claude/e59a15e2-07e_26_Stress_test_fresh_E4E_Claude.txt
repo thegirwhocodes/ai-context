@@ -10,7 +10,7 @@ Follow the CLAUDE.md instructions exactly. Read it first, then do whatever it te
 
 After you've completed context recovery, tell the user:
 1. What this project is
-2. The most important things that have happened  
+2. The most important things that have happened
 3. Current status and what's next
 
 Then end with: how many tool calls did context recovery take, and did the CLAUDE.md instructions work clearly? PASS or FAIL.

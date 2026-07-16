@@ -16,7 +16,7 @@ To answer your questions about:
 - Whether callbacks occur after each Record or GetDigits action
 - Whether servers can return new XML to continue sessions
 
-...I would need access to the actual documentation content describing Africa's Talking's call flow architecture. 
+...I would need access to the actual documentation content describing Africa's Talking's call flow architecture.
 
 **Recommendation:** Visit Africa's Talking's official documentation directly at their website to locate sections covering:
 1. Call flow and callback mechanisms

@@ -10,7 +10,7 @@ Research and assess each, with how it works, whether it exists in Nigeria, cost,
 1. **Voice reverse-billing** — does any Nigerian carrier or VAS aggregator let the *content provider/callee* be billed for a normal inbound voice call (not an 0800 number)? Premium/short-code voice with reverse billing?
 2. **"Sponsored Call" products** — e.g. MTN "Sponsored Call" (user dials a zero-rated short code, listens to an ad, sponsor pays, user may be rewarded). Confirm details, who pays, eligibility, any African precedent. Similar operator "zero-rated call" or "free call to short code" products.
 3. **Collect-call / reverse-charge voice** — does it exist on any Nigerian network today? Internationally, how do modern equivalents work (operator-assisted collect, 0800, "bill-to-third-party")?
-4. **USSD-triggered callback** — is dialing a USSD code free on a ₦0 line in Nigeria (post-2025 NCC end-user-billing rules)? Could a free USSD code trigger a server callback (reverse-charge-like)? 
+4. **USSD-triggered callback** — is dialing a USSD code free on a ₦0 line in Nigeria (post-2025 NCC end-user-billing rules)? Could a free USSD code trigger a server callback (reverse-charge-like)?
 5. **Missed-call / "flash" + callback as the de-facto reverse-charge** — confirm this is the real-world African substitute for collect calls (caller pays ₦0, org pays the callback). Any "missed-call-as-a-service" platforms (e.g. ZipDial, India) that productized this.
 6. **Reverse-billed SMS/USSD content** (the org pays for the user's message) — relevant only as a trigger channel.
 7. **Direct carrier billing / airtime billing** — billing the SERVICE to the user's airtime (the opposite of what we want, but note it).

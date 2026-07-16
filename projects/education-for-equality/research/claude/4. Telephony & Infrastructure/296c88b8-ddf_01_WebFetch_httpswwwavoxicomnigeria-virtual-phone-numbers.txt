@@ -13,7 +13,7 @@ Extraction prompt: What is the pricing for Nigeria toll-free numbers? Look for a
 
 Based on the webpage content provided, **no specific pricing information is displayed** for Nigeria toll-free numbers or any other Nigeria virtual phone number products.
 
-The page includes calls-to-action directing users to "CHOOSE YOUR NUMBER" and links to an ordering system at `orders.avoxi.com`, but the actual pricing details are not included in the HTML content provided. 
+The page includes calls-to-action directing users to "CHOOSE YOUR NUMBER" and links to an ordering system at `orders.avoxi.com`, but the actual pricing details are not included in the HTML content provided.
 
 To find pricing information, you would need to:
 - Visit the pricing page at https://www.avoxi.com/pricing/

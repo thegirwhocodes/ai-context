@@ -4,7 +4,7 @@ Session: 416308b0-338c-4556-b2b7-dd7cd5d226b2
 Time: 2026-06-08 21:22:44 UTC
 ========================================================================
 
-ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app (Next.js on Vercel). 
+ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education for Equality/curriculum-app (Next.js on Vercel).
 
 PROBLEM: The Supabase project is on the FREE tier, which auto-PAUSES after ~7 days of inactivity. It already paused once and took the entire phone product down (DNS NXDOMAIN, every call failed) until manually resumed. During a live pilot this is unacceptable.
 

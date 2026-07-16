@@ -9,7 +9,7 @@ Extraction prompt: Give me ALL pricing details. What are the tiers? How much per
 
 ----------------------------------------
 
-I cannot provide the pricing details you've requested. The web page content provided consists almost entirely of CSS styling code, font definitions, and HTML structure markup. 
+I cannot provide the pricing details you've requested. The web page content provided consists almost entirely of CSS styling code, font definitions, and HTML structure markup.
 
 The actual pricing information—such as tier names, per-character or per-second costs, concurrent stream limits, free tier availability, or nonprofit discounts—is not present in this document excerpt. To access Cartesia's pricing details, you would need to visit their pricing page directly or contact their sales team.
 

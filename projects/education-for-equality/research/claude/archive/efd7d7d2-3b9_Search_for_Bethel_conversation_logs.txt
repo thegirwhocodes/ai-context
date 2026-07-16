@@ -11,7 +11,7 @@ Task given to agent: Search VERY thoroughly for conversation logs that discuss B
 3. /Users/naomiivie/.claude/ - any conversation logs or session files
 4. Look for files named things like: conversation, chat, log, session, history, extract
 
-For each file found 
+For each file found
 
 ----------------------------------------
 

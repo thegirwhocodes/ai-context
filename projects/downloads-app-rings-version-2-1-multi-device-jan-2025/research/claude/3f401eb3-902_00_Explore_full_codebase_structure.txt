@@ -69,7 +69,7 @@ Rings Version 2.1- Multi device Jan 2025/
 - `CycleMetadata` (struct): Sync-able cycle state
   - Properties: `anchorDate: Date` (day 1 reference), `lastDayNumber: Int`, `rolloverQueue: [UUID]` (unfinished from yesterday), `lastPresented: [UUID]` (shown today), `modifiedAt: Date`
   - CloudKit record conversion methods
-  
+
 **Purpose:** Tracks the cycle state across devices during sync
 
 **Dependencies:** CloudKit, Foundation
@@ -252,17 +252,17 @@ Rings Version 2.1- Multi device Jan 2025/
 - **Sync Operations:**
   - `performSync()` - Full sync with Supabase
   - `startRealtimeSync()`, `stopRealtimeSync()` - Real-time polling
-  
+
 - **Data Management:**
   - `loadLocalData()`, `saveLocalData()` - Persistence
   - `buildLocalMetadata()`, `applyMetadata()` - Metadata handling
-  
+
 - **Scheduling:**
   - `refreshToday()` - Recalculate today's due list
   - `scheduledIDsForDay()` - Get friends for a specific day
   - `generateUpcomingDays()` - Preview next 7 days
   - `stableOrder()` - Deterministic friend sorting
-  
+
 - **Public Mutations:**
   - `addFriend()` - Add with auto-numbering
   - `deleteFriend()`, `clearAllFriends()`
@@ -270,7 +270,7 @@ Rings Version 2.1- Multi device Jan 2025/
   - `markContacted()` - Mark as reached out today
   - `renumberFriendsInCircles()` - Reorder numbering
   - `resetCycles()` - Reset to Day 1
-  
+
 - **Touchpoints:**
   - `getVisibleOptions()` - 3 visible touchpoint options per friend
   - `handleTap()` - Rotate options

@@ -190,14 +190,14 @@ Naomi didn't explicitly state this, but it's in the research framework she commi
 
 1. **Decision:** Should the voice-email app start with RAG only (MVP) or LoRA from day one?
    - **Naomi's likely answer:** RAG MVP (cheaper, faster to market), LoRA as paid tier
-   
+
 2. **Data pipeline:** How to convert voice email replies into training pairs?
    - User speaks email → transcribed → formatted as (user_context, draft_response) pairs
    - Monthly LoRA training on accumulated pairs
-   
+
 3. **Base model selection:** Qwen3-4B (best tunability) vs Llama 3.2 3B (wider support)?
    - **From research:** Qwen3-4B matches 120B+ teacher on 7/8 benchmarks
-   
+
 4. **On-device vs cloud:** Train LoRA on user's Mac (via MLX) or on Hetzner GPU?
    - **Privacy:** On-device is cleaner (data never leaves user's machine)
    - **Scale:** Hetzner if managing 100+ user adapters

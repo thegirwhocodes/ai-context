@@ -1,7 +1,7 @@
 ---
 name: project_cortex_design_system
 description: "cortex-web UI design system — \"Quiet Intelligence\" — tokens, fonts, ambient signature, conventions"
-metadata: 
+metadata:
   node_type: memory
   type: project
   originSessionId: e7c30dbb-f6d3-4ebc-abda-711a816710f2

@@ -11,7 +11,7 @@ Follow these steps exactly:
 2. Follow its instructions — read .claude-sessions/INDEX.txt, then read the most recent transcript
 3. Also check if memory files exist at ~/.claude/projects/-Users-naomiivie-bethel/memory/MEMORY.md and read them
 
-After doing all of that, answer: "What is this project and what are we working on?" 
+After doing all of that, answer: "What is this project and what are we working on?"
 
 Be specific — names, architecture decisions, tech stack, what was last discussed. If you can't answer confidently, say so.
 

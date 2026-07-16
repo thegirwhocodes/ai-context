@@ -22,7 +22,7 @@ The results do contain several relevant empirical papers on Nigeria's education 
 
 - Empirical evidence suggesting a long-run link in Nigeria between labor force, physical capital investment, human capital creation (proxied by enrollment in educational institutions), and economic growth
 
-However, **none of these papers explicitly mention using synthetic control methodology**, which is a specific quasi-experimental technique used to estimate causal effects by creating a weighted combination of control units. 
+However, **none of these papers explicitly mention using synthetic control methodology**, which is a specific quasi-experimental technique used to estimate causal effects by creating a weighted combination of control units.
 
 If you're specifically looking for papers that use synthetic control methods to study education policy changes in Nigeria, you may need to search more specialized databases (like NBER, RePEc, or Google Scholar) or refine your search to look for papers on specific Nigerian education policies and their synthetic control-based evaluations.
 

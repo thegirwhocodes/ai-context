@@ -20,7 +20,7 @@ The Diamond–Dybvig model views bank runs as a type of self-fulfilling prophecy
 
 ## International and Open Economy Extensions
 
-The search results indicate that researchers have extended the Diamond-Dybvig framework to international settings. A model was developed in which financial crises in emerging markets may occur when domestic banks are internationally illiquid, with runs on domestic deposits that may interact with foreign creditor panics, depending on the maturity of the foreign debt and the possibility of international default. 
+The search results indicate that researchers have extended the Diamond-Dybvig framework to international settings. A model was developed in which financial crises in emerging markets may occur when domestic banks are internationally illiquid, with runs on domestic deposits that may interact with foreign creditor panics, depending on the maturity of the foreign debt and the possibility of international default.
 
 Financial liberalization and increased inflows of foreign capital, especially if short term, can aggravate the illiquidity of banks and increase their vulnerability.
 

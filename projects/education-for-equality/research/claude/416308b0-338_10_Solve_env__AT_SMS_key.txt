@@ -12,7 +12,7 @@ PROBLEM: Two telephony env gaps:
 
 YOUR TASK: Read app/api/sabi/at/events/route.ts and lib/voice/sms.ts to confirm exactly where AT_PHONE_NUMBER, AT_USERNAME, AT_API_KEY are consumed and what breaks without them. Then produce:
 - The exact `vercel env add` CLI commands (and dashboard alternative) to add AT_PHONE_NUMBER=+2342017001459 to production, preview, development.
-- A precise, current step-by-step for generating the production AT API key in the Africa's Talking dashboard for app "Sabi" / team "EduForEquality" (use AT help docs — the generate-key flow involves a verification step; find the exact path and the email/verification gotcha). 
+- A precise, current step-by-step for generating the production AT API key in the Africa's Talking dashboard for app "Sabi" / team "EduForEquality" (use AT help docs — the generate-key flow involves a verification step; find the exact path and the email/verification gotcha).
 - What env values to set in Vercel + .env.local once the key exists (AT_USERNAME=EduForEquality, AT_API_KEY=...).
 - Clear statement of what works WITHOUT the key (inbound calls) vs WITH it (outbound SMS), so priorities are clear for a pilot.
 

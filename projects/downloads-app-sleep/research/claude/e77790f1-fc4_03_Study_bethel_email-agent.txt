@@ -527,14 +527,14 @@ async def verify_unlock(request: UnlockVerificationRequest):
     """
     PASS A: Quarantine the unlock reason, summarize it
     PASS B: Using company policy + recent user activity, decide grant/deny
-    
+
     Input: {
       userId: string,
       reason: string (untrusted),
       deviceId?: string,
       timestamp: ISO8601
     }
-    
+
     Process:
       1. SUMMARIZE (Haiku, no tools):
          - Quarantine the reason text
@@ -544,14 +544,14 @@ async def verify_unlock(request: UnlockVerificationRequest):
          - Fetch user's recent email/activity → did they just get email about needing unlock?
          - Check: is reason consistent with activity?
          - Decide: GRANT / DENY / ESCALATE
-      
+
     Output: {
       decision: "grant" | "deny" | "escalate",
       reason: string,
       durationHours?: number,
       auditLog: string  # immutable record of decision
     }
-    
+
     Guardrail: grant checks
       - User must have been registered for X days
       - Reason must match policy

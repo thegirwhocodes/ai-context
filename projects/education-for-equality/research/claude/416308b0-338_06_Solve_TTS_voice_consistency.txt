@@ -8,7 +8,7 @@ ONE problem in "Education for Equality / Sabi". Repo: /Users/naomiivie/Education
 
 PROBLEM: There's voice/TTS drift on the AT phone path. The "Bukola" ElevenLabs voice (voice id oC2pCZZWEDRe6lmZpaaw, model eleven_flash_v2_5) is the intended polished demo voice, but the AT incoming/recording routes call `synthesizeSpeech(...)` from lib/voice/tts-client.ts and a route comment says "YarnGPT TTS (ElevenLabs fallback)" — implying the order might be wrong or inconsistent. Also normalize-money-for-speech (so "₦150" is spoken as "150 naira") may not be applied on every TTS path.
 
-YOUR TASK: Read lib/voice/tts-client.ts FULLY (synthesizeSpeech — provider order, voice id, model, voice_settings, and whether normalizeMoneyForSpeech is applied), and the AT routes (incoming/recording) to see how synthesizeSpeech is called. Determine the ACTUAL provider order and whether Bukola/ElevenLabs is primary. Confirm whether money normalization is applied before TTS on the AT path. 
+YOUR TASK: Read lib/voice/tts-client.ts FULLY (synthesizeSpeech — provider order, voice id, model, voice_settings, and whether normalizeMoneyForSpeech is applied), and the AT routes (incoming/recording) to see how synthesizeSpeech is called. Determine the ACTUAL provider order and whether Bukola/ElevenLabs is primary. Confirm whether money normalization is applied before TTS on the AT path.
 
 Then design: ensure the AT path uses ElevenLabs Bukola as PRIMARY (with Chatterbox/YarnGPT fallback) for voice quality during the pilot, and that normalizeMoneyForSpeech is applied before every synth. If it's already correct, say so explicitly with evidence (don't invent a problem).
 

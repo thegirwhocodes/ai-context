@@ -1,7 +1,7 @@
 ---
 name: feedback-deep-research-self
 description: Do work yourself with direct tools; only spawn agents / Workflow if Naomi explicitly asks (or ask her first if fan-out would be materially more efficient)
-metadata: 
+metadata:
   node_type: memory
   type: feedback
   originSessionId: 400bc972-a5a2-4e9d-a2f5-f3697bf0e69e

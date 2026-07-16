@@ -10,7 +10,7 @@ PROBLEM: After Sabi's greeting plays, the child sits in silence. The AT `<Record
 `<Record finishOnKey="#" maxLength="10" trimSilence="true" callBackUrl="..." playBeep="false"/>`
 With finishOnKey="#" and no silence-based auto-stop and playBeep="false", a child who speaks for 2s then stops must wait the full 10s (maxLength) or press #, with no audio cue telling them to talk. This feels broken to a kid.
 
-YOUR TASK: 
+YOUR TASK:
 1. Determine, from Africa's Talking's OFFICIAL Voice <Record> documentation, the EXACT supported attributes and their semantics — especially whether there's a silence/`timeout` attribute that ends the recording automatically a few seconds after the caller stops speaking, valid ranges for maxLength, and what playBeep does. Use web search/fetch against developers.africastalking.com and the official AT PHP SDK on GitHub (raw.githubusercontent.com/AfricasTalkingLtd/africastalking-php/master/src/Voice.php) to be authoritative — quote the exact attribute names/casing.
 2. Read lib/voice/at-xml.ts (createPlayAndRecordResponse + createSayAndRecordResponse).
 3. Design the BEST <Record> config for a young child: auto-end shortly after they stop speaking, a beep so they know when to talk, sensible maxLength. Keep callBackUrl (capital B,U) — that was just fixed and MUST stay.

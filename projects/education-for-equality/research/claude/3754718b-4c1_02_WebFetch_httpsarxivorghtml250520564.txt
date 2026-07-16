@@ -34,7 +34,7 @@ Extraction prompt: Extract key stats about the NaijaVoices dataset: total hours 
 
 **Average Improvements Across Models:**
 - Whisper: "75.86% WER improvements"
-- MMS: "52.06% WER improvements"  
+- MMS: "52.06% WER improvements"
 - XLSR: "42.33% WER improvements"
 
 These metrics demonstrate substantial gains from fine-tuning relatively smaller models on the NaijaVoices dataset compared to their unfinetuned baselines.
