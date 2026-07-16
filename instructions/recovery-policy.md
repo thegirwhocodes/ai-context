@@ -17,8 +17,9 @@ Recover the exact current task by its hook-provided `session_id`. Never choose a
 
 - Export human-readable user/assistant conversation and curated memory/research only.
 - Never commit raw `.jsonl`, SQLite/databases, logs, tool arguments or output, thinking traces, attachments, credentials, auth/config files, or secrets.
-- Before raw local history is removed, require a successful archive verification, secret scan, GitHub push, and clean-clone restore verification.
-- Raw transcripts, downloaded runtimes, and caches are disposable after those checks. Secrets remain local and encrypted through the separate secrets-backup workflow.
+- Codex and Claude use their raw local session files for native sidebar history and resume behavior. Do not delete those files merely because the readable archive is verified.
+- If Codex session files are accidentally lost, run `python3 scripts/restore_codex_sessions.py --apply` to recreate compact sidebar-compatible sessions from the redacted archive. Existing sessions are never overwritten.
+- Downloaded runtimes, logs, and caches are disposable after confirming they do not contain the only copy of user-visible history. Secrets remain local and encrypted through the separate secrets-backup workflow.
 
 ## Durable decisions
 
