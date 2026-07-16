@@ -71,6 +71,40 @@ def parse_messages(text: str) -> list[dict[str, str]]:
     return messages
 
 
+def parse_user_worker_messages(
+    text: str,
+    meta: dict[str, str],
+    title: str,
+) -> list[dict[str, str]]:
+    """Turn a user-owned worker's saved report into a transparent compact task."""
+    match = FRONTMATTER_RE.match(text)
+    body = text[match.end():] if match else text
+    report = body.strip()
+    if not report:
+        return []
+    session_id = meta["session_id"]
+    started = parse_timestamp("", session_id)
+    started_iso = started.astimezone(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+    return [
+        {
+            "role": "user",
+            "timestamp": started_iso,
+            "phase": "",
+            "text": (
+                f"[Recovered worker task] {title}\n\n"
+                "This compact task was rebuilt from the redacted GitHub recovery archive. "
+                "Its original delegation prompt remains summarized in the parent lead task."
+            ),
+        },
+        {
+            "role": "assistant",
+            "timestamp": meta.get("ended", "") or started_iso,
+            "phase": "final_answer",
+            "text": report,
+        },
+    ]
+
+
 def parse_timestamp(value: str, session_id: str) -> datetime:
     try:
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -207,24 +241,65 @@ def render_jsonl(meta: dict[str, str], messages: list[dict[str, str]]) -> str:
     return "".join(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n" for record in records)
 
 
+def load_archive(
+    archive: Path,
+    titles: dict[str, str],
+) -> tuple[dict[str, str], list[dict[str, str]]] | None:
+    text = archive.read_text(encoding="utf-8", errors="replace")
+    meta = parse_frontmatter(text)
+    session_id = meta.get("session_id", "").lower()
+    if not SESSION_ID_RE.fullmatch(session_id):
+        return None
+    meta["session_id"] = session_id
+
+    if meta.get("source") != "codex-subagent":
+        return meta, parse_messages(text)
+
+    # Internal collaboration subagents were never standalone sidebar tasks.
+    # A blank parent_session_id plus a session-index title identifies the
+    # user-owned worker tasks created through the Codex app.
+    title = titles.get(session_id)
+    if meta.get("parent_session_id") or not title:
+        return None
+    project = meta.get("project", "")
+    project_dir = HOME / project if project else HOME
+    meta["cwd"] = str(project_dir if project_dir.is_dir() else HOME)
+    meta["thread_source"] = "user"
+    return meta, parse_user_worker_messages(text, meta, title)
+
+
+def restorable_archives(archive_root: Path) -> list[Path]:
+    return sorted(
+        list(archive_root.glob("*/sessions/codex/*.md"))
+        + list(archive_root.glob("*/research/codex-subagents/*.md"))
+    )
+
+
 def restore(args: argparse.Namespace) -> dict[str, int]:
     codex_home = args.codex_home.expanduser().resolve()
     archive_root = args.archive_root.expanduser().resolve()
     state_db = args.state_db.expanduser().resolve()
     rollout_paths = load_rollout_paths(state_db)
     existing = existing_session_ids(codex_home)
-    counts = {"archives": 0, "created": 0, "existing": 0, "invalid": 0}
+    titles = latest_session_titles(codex_home / "session_index.jsonl")
+    selected = {value.lower() for value in args.session_id}
+    counts = {"archives": 0, "created": 0, "existing": 0, "invalid": 0, "skipped": 0}
 
-    paths = sorted(archive_root.glob("*/sessions/codex/*.md"))
+    paths = restorable_archives(archive_root)
     if args.limit:
         paths = paths[: args.limit]
     for archive in paths:
+        loaded = load_archive(archive, titles)
+        if loaded is None:
+            counts["skipped"] += 1
+            continue
+        meta, messages = loaded
+        session_id = meta["session_id"]
+        if selected and session_id not in selected:
+            counts["skipped"] += 1
+            continue
         counts["archives"] += 1
-        text = archive.read_text(encoding="utf-8", errors="replace")
-        meta = parse_frontmatter(text)
-        session_id = meta.get("session_id", "").lower()
-        messages = parse_messages(text)
-        if not SESSION_ID_RE.fullmatch(session_id) or not messages:
+        if not messages:
             counts["invalid"] += 1
             continue
         if session_id in existing:
@@ -266,13 +341,17 @@ def repair_restored_state(args: argparse.Namespace) -> int:
     state_db = args.state_db.expanduser().resolve()
     existing = existing_session_paths(codex_home)
     titles = latest_session_titles(codex_home / "session_index.jsonl")
+    selected = {value.lower() for value in args.session_id}
     repairs: list[tuple[str, int, str | None]] = []
 
-    for archive in sorted(args.archive_root.expanduser().resolve().glob("*/sessions/codex/*.md")):
-        text = archive.read_text(encoding="utf-8", errors="replace")
-        meta = parse_frontmatter(text)
-        session_id = meta.get("session_id", "").lower()
-        messages = parse_messages(text)
+    for archive in restorable_archives(args.archive_root.expanduser().resolve()):
+        loaded = load_archive(archive, titles)
+        if loaded is None:
+            continue
+        meta, messages = loaded
+        session_id = meta["session_id"]
+        if selected and session_id not in selected:
+            continue
         path = existing.get(session_id)
         if not path or not messages or path.read_text(encoding="utf-8", errors="replace") != render_jsonl(meta, messages):
             continue
@@ -311,6 +390,12 @@ def main() -> int:
     parser.add_argument("--archive-root", type=Path, default=REPO / "projects")
     parser.add_argument("--state-db", type=Path, default=DEFAULT_CODEX_HOME / "state_5.sqlite")
     parser.add_argument("--limit", type=int, default=0, help="limit archives for isolated testing")
+    parser.add_argument(
+        "--session-id",
+        action="append",
+        default=[],
+        help="restore only this session ID; may be supplied more than once",
+    )
     parser.add_argument("--repair-state", action="store_true", help="repair dates/titles for reconstructed sessions")
     args = parser.parse_args()
     counts = restore(args)
