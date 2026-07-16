@@ -77,6 +77,47 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 
 Latest completed whole-volume measurement during the audit: approximately **66.8 GB APFS physical free** at 15:51 EDT, leaving about **13.2 GB** to reach the 80 GB floor. Re-measure before relying on this number.
 
+## Watchdog completion on 2026-07-16 — weekly audit completion check
+
+- The Wednesday weekly audit was not complete enough for watchdog success because it lacked the required 7-day repository hygiene table. This watchdog run completed that missing verification and re-measured whole-volume APFS physical free space.
+- Start measurement at 17:01 EDT: `diskutil apfs list` reported **62.7 GB APFS physical free** and `df -h /System/Volumes/Data` reported **58 GiB available**.
+- Final measurement at 17:12 EDT: `diskutil apfs list` reported **62.1 GB APFS physical free** and `df -h /System/Volumes/Data` reported **58 GiB available**.
+- Reserve/target status at the final measurement: the Mac remained **12.1 GB above** the 50 GB standing reserve and **17.9 GB below** the 80 GB maintenance target.
+- Files changed during this watchdog run: this ledger only. No storage cleanup mutations were made elsewhere.
+- Persistent savings: **0 GB**. Refillable-cache savings: **0 GB**. The 0.6 GB free-space drift across the run was background APFS/VM activity, not claimed recovery.
+- Disposable build-artifact review: `cortex/cortex-web` still holds about 1.12 GiB of `node_modules` and about 0.64 GiB of Rust `target`, but that repository currently has unpushed local source edits and was preserved. Other touched repositories exposed only negligible disposable artifacts during this watchdog pass.
+
+### Coding-task hygiene for repositories touched in the last 7 days
+
+| Result | Repository | Remote / upstream | Notes |
+| --- | --- | --- | --- |
+| ACTIVE/KEPT | `/Users/naomiivie/.nvm` | `https://github.com/nvm-sh/nvm.git`; no branch upstream | Tool-managed dependency checkout; left untouched. |
+| PASS | `/Users/naomiivie/Class on Time` | `origin/main`; `https://github.com/thegirwhocodes/Go.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Dactyl-Final` | `origin/main`; `https://github.com/thegirwhocodes/Dactyl-Final.git` | Clean working tree; not ahead of origin. |
+| ACTIVE/KEPT | `/Users/naomiivie/Desktop/Dactyl-Final` | no usable git remote/upstream | Duplicate desktop copy with incomplete `.git` metadata; preserved and not cleaned. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/Documents/git-test` | `origin/editreadme-NI`; `https://github.com/thegirwhocodes/git-test.git` | Untracked `.DS_Store`; no cleanup performed. |
+| PASS | `/Users/naomiivie/Education for Equality/curriculum-app` | `origin/feature/advisor-board-notion`; `https://github.com/thegirwhocodes/Education-for-Equality.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Education for Equality/sabi-server` | `origin/main`; `https://github.com/thegirwhocodes/sabi-server.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Rings` | `origin/main`; `https://github.com/thegirwhocodes/Rings.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Social Media/Ed.it` | `origin/main`; `https://github.com/thegirwhocodes/edit.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Social Media/Resolve-OpenCaptions` | `origin/main`; `https://github.com/david-ca6/Resolve-OpenCaptions.git` | Clean working tree; local branch is behind upstream by 5 commits; no unique local work. |
+| PASS | `/Users/naomiivie/Social Media/davinci-resolve-mcp` | `origin/main`; `https://github.com/samuelgursky/davinci-resolve-mcp.git` | Clean working tree; local branch is behind upstream by 199 commits; no unique local work. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/ai-context` | `origin/main`; `https://github.com/thegirwhocodes/ai-context.git` | Local automation/session record updates plus this ledger change; commit and push required before cleanup. |
+| PASS | `/Users/naomiivie/bethel` | `origin/backend-foundation`; `https://github.com/thegirwhocodes/bethel.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/bin/downloads-cleaner` | `origin/main`; `https://github.com/thegirwhocodes/downloads-cleaner.git` | Clean working tree; not ahead of origin. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/cortex/cortex-web` | `origin/main`; `https://github.com/thegirwhocodes/cortex-web.git` | Modified `app/onboarding/page.tsx`; large disposable build outputs preserved because source work is still local. |
+| PASS | `/Users/naomiivie/cortex/runpod-lora-worker` | `origin/main`; `https://github.com/thegirwhocodes/cortex-runpod-lora-worker.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/cortex/voice-email` | `origin/main`; `https://github.com/thegirwhocodes/email.git` | Clean working tree; not ahead of origin. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/davinci-resolve-mcp` | `origin/main`; `https://github.com/samuelgursky/davinci-resolve-mcp.git` | Untracked `SLASH-COMMANDS-CHEATSHEET.md`; branch also trails upstream by 4 commits. |
+| PASS | `/Users/naomiivie/devsync` | `origin/main`; `https://github.com/thegirwhocodes/devsync.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/e4e-knowledge` | `origin/main`; `https://github.com/thegirwhocodes/e4e-knowledge.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/kai` | `origin/main`; `https://github.com/thegirwhocodes/kai.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/naomi-home` | `origin/main`; `https://github.com/thegirwhocodes/naomi-home.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/portfolio` | `origin/main`; `https://github.com/thegirwhocodes/portfolio.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/sage` | `origin/main`; `https://github.com/thegirwhocodes/sage.git` | Clean working tree; not ahead of origin. |
+
+- Weekly audit watchdog status: **completed successfully on Thursday, 2026-07-16**, because the required final APFS physical measurement and per-repository hygiene results are now recorded.
+
 Known pending items:
 
 - OneDrive worship video, about 2.41 GB: upload verified, local copy still downloaded, not pinned. Finder's **Free Up Space** action is ready but requires action-time confirmation before clicking. Verify dataless state afterward.
