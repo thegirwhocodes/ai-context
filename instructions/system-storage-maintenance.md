@@ -6,7 +6,8 @@ This file is the canonical handoff for any Codex or Claude session that audits o
 
 ## Standing objective
 
-- Keep at least **80 GB physically free** on the internal APFS container.
+- Keep at least **50 GB physically free at all times** as the operating reserve for apps, macOS, and swap.
+- Use **80 GB physically free** as the immediate cleanup and weekly headroom target, so normal work does not immediately fall through the 50 GB floor.
 - Measure real APFS physical availability, not Finder's optimistic/purgeable number and not logical file sizes.
 - Do not claim ordinary caches as durable savings when they will predictably refill. Caches may still be cleaned when useful, but report them separately from persistent savings.
 - Audit folder by folder. Classify each meaningful item as: protected/keep, active app data, disposable dependency/build, cloud-evictable, archive-to-cloud, abandoned-app leftover, or uninstall candidate.
@@ -102,3 +103,8 @@ Every storage task should leave an update in this file or a dated ledger linked 
 - items awaiting Naomi's confirmation;
 - the next scheduled audit and whether its watchdog completed.
 
+## End-of-coding storage hygiene
+
+Every Codex or Claude coding task must finish by proving intended source changes are committed and pushed to the correct GitHub remote. It must then inspect the artifacts it created. Once the source is recoverable and the task no longer needs them, remove disposable `node_modules`, `.venv`/`venv`, `.next`, `dist`, `build`, `coverage`, `DerivedData`, and Rust `target` outputs that are filling the Mac. Never delete unique untracked/ignored work or secrets. If work is incomplete or not safely pushed, report that explicitly and preserve it.
+
+The weekly storage automation must audit repositories touched during the previous seven days and record a per-repository result: `PASS`, `NEEDS PUSH`, `UNIQUE LOCAL WORK`, `ACTIVE/KEPT`, or `CLEANED`. Its watchdog treats the run as incomplete if this check or the final APFS measurement is missing.
