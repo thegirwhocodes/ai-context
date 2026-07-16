@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-07-16T18:04:00+00:00
+Generated: 2026-07-16T18:49:19+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -21,7 +21,7 @@ Read the relevant project index and curated memory first; open full session file
 - [education-for-equality](projects/education-for-equality/INDEX.md) — 163 records
 - [home](projects/home/INDEX.md) — 6 records
 - [kai](projects/kai/INDEX.md) — 5 records
-- [library](projects/library/INDEX.md) — 4 records
+- [library](projects/library/INDEX.md) — 5 records
 - [library-cloudstorage-onedrive-wesleyan-edu-classes](projects/library-cloudstorage-onedrive-wesleyan-edu-classes/INDEX.md) — 12 records
 - [library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation](projects/library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation/INDEX.md) — 1 records
 - [sage](projects/sage/INDEX.md) — 56 records
