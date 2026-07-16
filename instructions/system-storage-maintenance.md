@@ -1,0 +1,104 @@
+# Mac storage maintenance policy and cleanup ledger
+
+Last updated: 2026-07-16
+
+This file is the canonical handoff for any Codex or Claude session that audits or changes storage on Naomi's Mac. Read it before deleting, offloading, uninstalling, or moving anything for a storage task.
+
+## Standing objective
+
+- Keep at least **80 GB physically free** on the internal APFS container.
+- Measure real APFS physical availability, not Finder's optimistic/purgeable number and not logical file sizes.
+- Do not claim ordinary caches as durable savings when they will predictably refill. Caches may still be cleaned when useful, but report them separately from persistent savings.
+- Audit folder by folder. Classify each meaningful item as: protected/keep, active app data, disposable dependency/build, cloud-evictable, archive-to-cloud, abandoned-app leftover, or uninstall candidate.
+
+## Measurement rules
+
+1. Record APFS physical free space before and after each meaningful batch with `diskutil apfs list` and corroborate with `df -h /System/Volumes/Data`.
+2. Use allocated, same-filesystem scans such as `du -skx`; do not sum logical file sizes.
+3. Exclude mounted simulator/runtime images and other child mounts or they can be double-counted.
+4. Treat `dataless` cloud placeholders as zero local bytes even if their logical size is large.
+5. Re-measure after background APFS cleanup settles. Report both the measured free space and the exact measurement time.
+
+## Non-negotiable safeguards
+
+- Never directly delete or move `/System`, `/System/Volumes/Preboot`, `/System/Volumes/Recovery`, live `/private/var/db`, live swap/VM files, or macOS boot/security assets.
+- `/System/Volumes/Preboot` was measured around 17.3 GB on 2026-07-16. It contains active boot, security, and update assets. It is not a duplicate of `/Library` and must not be moved to OneDrive or deleted manually.
+- `/Library` and `~/Library` are different by design: the first is shared machine-level support; the second is Naomi's per-user app data. Similar folder names are not duplicates.
+- Do not delete native history under `~/.codex/sessions`, `~/.codex/archived_sessions`, or `~/.claude/projects` merely because readable context is GitHub-backed. Follow `instructions/recovery-policy.md`.
+- Never upload `.env*`, tokens, credential files, SSH/GPG material, `~/.secrets`, or unreviewed archives that may contain secrets to OneDrive/iCloud/GitHub.
+- Before deleting a project or clone, verify the GitHub remote, clean/pushed status, remote commit, and ignored/untracked contents. Preserve secrets. `node_modules`, `.venv`, `.next`, `dist`, `build`, and Rust `target` are disposable only after the source is proved recoverable.
+- Do not remove active application databases or sync indexes as if they were caches. Examples: Spark's mail database, OneDrive/File Provider indexes, Notes, Messages `chat.db`, and Photos library databases.
+
+## Cloud-offload protocol
+
+For user documents or abandoned-app projects that should persist:
+
+1. Identify the actual user documents separately from cache/database state.
+2. Copy or export them into a clearly named OneDrive archive folder. Do not include secrets.
+3. Produce a manifest with file count, byte count, and hashes for irreplaceable files or archives.
+4. Wait until the File Provider reports upload complete (`isUploaded=1`, `isUploading=0`) and the item is not pinned (`isKeepDownloaded=0`).
+5. Verify the cloud copy independently when practical.
+6. Only then remove the original local source.
+7. Use OneDrive **Free Up Space** to make the archive cloud-only, then verify `isDownloaded=0`/`dataless` and zero allocated blocks.
+8. Leave a recovery note next to the archive explaining what it contains and how to restore it.
+
+Deleting an app is not the same as deleting its cloud data. For OneNote, uninstall the app only after every notebook is confirmed fully synced to OneDrive/SharePoint and visible from OneNote on the web. Never delete OneNote's container first; it may contain unsynced changes.
+
+Voice Memos is a special case: iCloud sync keeps recordings consistent across devices but macOS does not provide a supported per-recording cloud-only mode. To reclaim its local space durably, export recordings to a verified OneDrive archive, make that archive cloud-only, and only then delete the recordings from Voice Memos. Deleting in Voice Memos also deletes the iCloud-synced originals, so obtain explicit confirmation at that final content-deletion step.
+
+## Cleanup completed on 2026-07-16
+
+- Removed VN Video Editor and its verified orphan data.
+- Cleared Safari cache only; browsing history/cookies were not treated as disposable.
+- Verified Goodnotes recovery archive, ZIP integrity, SHA-256, and iCloud upload; made it dataless/cloud-only; then removed the local Goodnotes container. Recovery note and archive live in iCloud Drive under `Goodnotes Backup - Recovery`.
+- Cleared Apple Mail local data after confirming Naomi uses Spark and Mail sync was disabled for known accounts. Spark's active database was preserved.
+- Cleared Messages preview cache without touching attachments, `chat.db`, or iCloud message history. The preview cache fell from about 785 MB to essentially empty; it may regenerate and is not durable strategy.
+- Removed unused Slack application leftovers after confirming Slack was not installed/used.
+- Removed Cold Turkey leftovers after confirming the app was absent.
+- Used supported Xcode tooling to remove the unused iOS 18.6 simulator runtime and unavailable devices. Apparent `du` savings were much larger than physical savings because mounted images had been double-counted; never repeat that reporting error.
+- Removed downloaded Command Line Tools update packages and safe shared logs/caches. Kept current Command Line Tools, Python/R frameworks, audio content, system extensions, and active drivers.
+- Goodnotes, OneDrive Classes, and other cloud placeholders were evaluated by allocated bytes, not logical size.
+- Weekly audit automation moved to Wednesday at 2:00 PM local. A watchdog checks/retries Wednesday and Thursday at 3:00 PM and 5:00 PM because local scheduled work requires the Mac and Codex app to be running.
+
+## Current state and pending work from the 2026-07-16 audit
+
+Latest completed whole-volume measurement during the audit: approximately **53.7 GB APFS physical free**, leaving about **26.3 GB** to reach the 80 GB floor. Re-measure before relying on this number.
+
+Known pending items:
+
+- OneDrive worship video, about 2.41 GB: upload verified, local copy still downloaded, not pinned. Finder's **Free Up Space** action is ready but requires action-time confirmation before clicking. Verify dataless state afterward.
+- Voice Memos, about 4.87 GB: iCloud sync is on, but recordings remain local. Do not delete; use the archive/export protocol above if Naomi approves removing the iCloud originals.
+- Downloads, about 5.5 GB: mostly class recordings, PDFs, photos, media, and app/project folders. Archive important material to OneDrive, verify, evict, then remove local originals. Exclude secrets and source that is not otherwise recoverable.
+- Pictures, about 5.14 GB: Photos Library about 3.72 GB and Photo Booth Library about 1.41 GB. Treat Photos as an active database; use Photos' supported iCloud optimization, not manual package deletion. Photo Booth media can be archived after verification.
+- Music, about 4.77 GB: GarageBand projects about 3.15 GB, Music library about 1.31 GB, plus local recordings. These are user creations, not cache. Archive projects/media before any deletion.
+- Movies/CapCut, about 1.68 GB: user video projects/exports. Archive completed projects and exports before removing local copies. Do not assume CapCut data is disposable.
+- User-installed Docker app, about 2.23 GB, plus any Docker data: uninstall only if Naomi confirms it is unused and there are no unique containers/volumes.
+- OneNote app, about 1.37 GB: candidate for uninstall only after the notebook sync gate above passes. Notes must persist.
+- Developer dependencies/build outputs: at least several GB across Cortex worktrees, E4E, Downloads app projects, `.next`, `node_modules`, Rust `target`, and standalone Python environments. They are regenerable and safe after Git/GitHub verification, but do not count them as guaranteed persistent free space if active work will immediately recreate them.
+- Homebrew occupies about 6.1 GB; its normal cleanup dry run found only about 125 MB. Do not remove required formulae solely for size. Audit unused top-level formulae before uninstalling them.
+- `/private/var` is mostly system state, diagnostics, caches, and temporary data. It is not a durable 26 GB solution. Never remove live database or swap contents manually.
+
+## App-leftover decision rule
+
+An app folder is removable only when all are true:
+
+1. The app is uninstalled or Naomi confirms it is no longer used.
+2. The folder is not shared with another app and is not a macOS component.
+3. Real user documents have been exported/archived and verified, or the folder is demonstrably disposable state.
+4. Sync has completed and no upload/conflict is pending.
+5. A before/after allocated-size measurement is recorded.
+
+When uncertain, report the folder, dependency, failure mode, and supported cleanup route rather than deleting it.
+
+## Handoff format for future audits
+
+Every storage task should leave an update in this file or a dated ledger linked from it containing:
+
+- starting and ending APFS physical free space;
+- persistent savings versus refillable-cache savings;
+- every path changed and why it was safe;
+- cloud verification evidence and recovery location;
+- protected/declined items and what would break;
+- items awaiting Naomi's confirmation;
+- the next scheduled audit and whether its watchdog completed.
+
