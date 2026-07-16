@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3163,
-  "generated_at": "2026-07-16T20:56:37+00:00",
+  "generated_at": "2026-07-16T21:47:02+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -100,9 +100,9 @@
       }
     },
     "library": {
-      "records": 6,
+      "records": 7,
       "sources": {
-        "codex": 6
+        "codex": 7
       }
     },
     "library-cloudstorage-onedrive-wesleyan-edu-classes": {
@@ -137,7 +137,7 @@
       }
     }
   },
-  "record_count": 395,
+  "record_count": 396,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
