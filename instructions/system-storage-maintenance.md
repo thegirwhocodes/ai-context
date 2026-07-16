@@ -61,9 +61,21 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 - Goodnotes, OneDrive Classes, and other cloud placeholders were evaluated by allocated bytes, not logical size.
 - Weekly audit automation moved to Wednesday at 2:00 PM local. A watchdog checks/retries Wednesday and Thursday at 3:00 PM and 5:00 PM because local scheduled work requires the Mac and Codex app to be running.
 
+## Read-only audit on 2026-07-16 — `/Library/Developer`
+
+- Audit ran from 15:44 to 15:49 EDT. APFS physical free space measured 68.7 GB at the start and 67.9 GB at the end; the change occurred without file mutations and is attributable to normal background/VM activity. The machine remained above the 50 GB reserve and about 12.1 GB below the 80 GB target.
+- No files were deleted, moved, or otherwise changed. Persistent savings: 0. Refillable-cache savings: 0.
+- The current same-filesystem allocated scan was 2,095,172 KiB (about 2.00 GiB), not the cleaner's earlier 5.93 GB figure. The folder's logical file-byte sum was about 4.81 GiB. The earlier reading likely predates removal of the iOS 18.6 simulator runtime or came from a stale/different accounting view.
+- Allocated breakdown: `CommandLineTools` 1,912,596 KiB; `DeveloperDiskImages` 74,064 KiB; `CoreDevice` 72,888 KiB; `PrivateFrameworks` 25,232 KiB; `DeviceKit` 5,304 KiB; and `CoreSimulator` 5,088 KiB.
+- Xcode 26.2 is installed and selected at `/Applications/Xcode.app/Contents/Developer`. Package receipts identify `CommandLineTools` as Apple's CLT 26.2 package and most shared device/simulator files as Xcode 26.2 system resources. There were no installed simulator runtimes or devices. Simulator/CoreSimulator processes were actively loading the shared frameworks during the audit.
+- Classification: the Xcode device, simulator, framework, and disk-image folders are protected/keep active app data. The separate CLT installation is an active developer dependency/keep while Homebrew is in use; Apple says full Xcode includes command-line tools, but current Homebrew Tier-1 support expects a current standalone CLT and some bottles/source builds can require it.
+- Do not move any part of this root-owned, package-managed tree to OneDrive. Fixed paths, permissions, code signing, and immediate local availability are required. Do not delete the whole folder manually; doing so can break Simulator, device debugging/support, Xcode first-launch resources, Homebrew builds, and command-line compilation.
+- Supported cleanup route: manage optional runtimes/platforms in Xcode > Settings > Components. None are currently installed here to remove. If Naomi explicitly accepts the Homebrew/tooling tradeoff later, only the 1.82 GiB standalone `CommandLineTools` subtree is a candidate via Apple's documented uninstall procedure, followed by verification that Xcode remains selected and builds/Homebrew still work.
+- The Wednesday 2:00 PM weekly audit and Wednesday/Thursday watchdog schedule remain unchanged.
+
 ## Current state and pending work from the 2026-07-16 audit
 
-Latest completed whole-volume measurement during the audit: approximately **53.7 GB APFS physical free**, leaving about **26.3 GB** to reach the 80 GB floor. Re-measure before relying on this number.
+Latest completed whole-volume measurement during the audit: approximately **67.9 GB APFS physical free** at 15:49 EDT, leaving about **12.1 GB** to reach the 80 GB floor. Re-measure before relying on this number.
 
 Known pending items:
 
