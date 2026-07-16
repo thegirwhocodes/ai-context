@@ -45,7 +45,7 @@ For user documents or abandoned-app projects that should persist:
 
 Deleting an app is not the same as deleting its cloud data. For OneNote, uninstall the app only after every notebook is confirmed fully synced to OneDrive/SharePoint and visible from OneNote on the web. Never delete OneNote's container first; it may contain unsynced changes.
 
-Voice Memos is a special case: iCloud sync keeps recordings consistent across devices but macOS does not provide a supported per-recording cloud-only mode. To reclaim its local space durably, export recordings to a verified OneDrive archive, make that archive cloud-only, and only then delete the recordings from Voice Memos. Deleting in Voice Memos also deletes the iCloud-synced originals, so obtain explicit confirmation at that final content-deletion step.
+Voice Memos is a protected special case. Naomi explicitly decided on 2026-07-16 that every recording must remain playable inside the Voice Memos app. Keep the working library at `~/Library/Group Containers/group.com.apple.VoiceMemos.shared/Recordings`; do not delete, move, evict, or count its roughly 4.87 GB as cleanup capacity. The verified iCloud Drive export at `Storage Archives/Voice Memos Export - 2026-07-16` is backup-only. Its *downloaded backup copy* may be evicted after upload verification and action-time confirmation, but this must never be confused with deleting the working library. Deleting recordings in Voice Memos also deletes the iCloud-synced originals.
 
 ## Cleanup completed on 2026-07-16
 
@@ -60,6 +60,15 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 - Removed downloaded Command Line Tools update packages and safe shared logs/caches. Kept current Command Line Tools, Python/R frameworks, audio content, system extensions, and active drivers.
 - Goodnotes, OneDrive Classes, and other cloud placeholders were evaluated by allocated bytes, not logical size.
 - Weekly audit automation moved to Wednesday at 2:00 PM local. A watchdog checks/retries Wednesday and Thursday at 3:00 PM and 5:00 PM because local scheduled work requires the Mac and Codex app to be running.
+- Removed abandoned Chrome, OpenAI Atlas, Granola, qBittorrent, old Antigravity, BlockerX, Microsoft Office, Capital One Shopping/Wikibuy, Aiko, VN, Slack, Goodnotes-local, and related verified orphan state. Current Antigravity IDE, OneDrive integration, and iCloud Goodnotes data were preserved.
+- Created and verified uploaded iCloud archives for Aiko recordings, Chrome bookmarks, removed-app data, BlockerX settings, Microsoft Office recovery data, and generated E4E fake-child-harness outputs. Exact archive hashes and recovery notes are stored beside the archives.
+- Compacted `~/.codex/logs_2.sqlite` from about 392 MB to about 64 MB with SQLite integrity check `ok`; no native sessions or log records were intentionally deleted.
+- Removed generated E4E document-render temp files and the generated 878-item fake-child harness only after verified archive upload; final source and legal deliverables were preserved.
+- Removed a healthy-but-redundant 202 MB Cursor state-database backup after the live database passed `quick_check`; preserved the live Cursor database.
+- Removed about 192 MB of inactive Codex marketplace staging, a 64 MB orphaned `nano-pdf` environment, a 67 MB Xcode DerivedData index, and a 26 MB NVM installer cache. Active Codex/Claude history, current developer runtimes, and live NVM Node remained protected.
+- Removed 23 clean Cortex Git worktrees only after fetching GitHub, proving each exact commit existed on a remote branch, proving a clean worktree, and confirming no process used the paths. Preserved main plus four worktrees with local-only or uncommitted state.
+- Secured nine credential-named files that were in OneDrive Downloads/Desktop into `~/.secrets/imported-2026-07-16/` with mode `0600`, stopping eight active unencrypted OneDrive uploads. A tenth OAuth credential remains a cloud-only OneDrive placeholder inside `Classes/Qac 386 - Text Mining/Project Pdfs`; do not delete it without first obtaining a verified protected copy. The existing encrypted-backup script exited 2 and does not include these JSON/TXT files, so encrypted backup remains pending and must not be falsely claimed complete.
+- Deleted the redundant OneDrive Chrome-bookmarks upload only after proving both files were byte-identical to fully uploaded iCloud copies. The iCloud archive remains.
 
 ## Read-only audit on 2026-07-16 — `/Library/Developer`
 
@@ -75,7 +84,7 @@ Voice Memos is a special case: iCloud sync keeps recordings consistent across de
 
 ## Current state and pending work from the 2026-07-16 audit
 
-Latest completed whole-volume measurement during the audit: approximately **66.8 GB APFS physical free** at 15:51 EDT, leaving about **13.2 GB** to reach the 80 GB floor. Re-measure before relying on this number.
+Latest completed whole-volume measurement during this continuation: `df` reported **60,751,500 KiB (about 62.2 GB decimal) physically available** at 17:13 EDT, leaving about **17.8 GB** to reach the 80 GB target. This number temporarily fell during verified iCloud/OneDrive upload and accidental Finder preview-download activity. Re-measure after providers become idle; do not claim background drift or cache purge as persistent savings.
 
 ## Watchdog completion on 2026-07-16 — weekly audit completion check
 
@@ -121,16 +130,22 @@ Latest completed whole-volume measurement during the audit: approximately **66.8
 Known pending items:
 
 - OneDrive worship video, about 2.41 GB: upload verified, local copy still downloaded, not pinned. Finder's **Free Up Space** action is ready but requires action-time confirmation before clicking. Verify dataless state afterward.
-- Voice Memos, about 4.87 GB: iCloud sync is on, but recordings remain local. Do not delete; use the archive/export protocol above if Naomi approves removing the iCloud originals.
-- Downloads, about 5.5 GB: mostly class recordings, PDFs, photos, media, and app/project folders. Archive important material to OneDrive, verify, evict, then remove local originals. Exclude secrets and source that is not otherwise recoverable.
-- Pictures, about 5.14 GB: Photos Library about 3.72 GB and Photo Booth Library about 1.41 GB. Treat Photos as an active database; use Photos' supported iCloud optimization, not manual package deletion. Photo Booth media can be archived after verification.
+- OneDrive `Classes`: visible folder is cloud-only in Finder, but OneDrive's hidden File Provider reconciliation backing still allocates about 2.42 GB. Never delete the `.noindex` backing manually. Use Finder **Free Up Space** after action-time confirmation, then wait for provider reconciliation and verify physical recovery.
+- Voice Memos, about 4.87 GB: protected/keep by explicit decision. The working library stays local and playable. The uploaded backup export may be made cloud-only, but that is not permission to delete working recordings.
+- iCloud Drive archive ZIPs and the downloaded Voice Memos *backup export*: uploads were verified, but Finder preview windows re-downloaded about 840 MB of backup content and grew the CloudKit cache. Close preview windows; after action-time confirmation, use **Remove Download** on backup/archive copies only.
+- OneDrive is processing a large queue and the battery remained at 7% despite AC power. Photos reports `Syncing Paused for 326 Items` due low battery. Do not start Photo Booth/CapCut uploads or delete Messages attachments until power is stable and both providers prove sync complete.
+- OneDrive credential hygiene: retry materializing the 414-byte `Classes/.../client_secret_8165....json` only after OneDrive is healthy, then move it into `~/.secrets`; improve the encrypted backup to include protected JSON/TXT files and complete it with Naomi's local passphrase interaction. Never print credential contents.
+- Messages attachments, about 1.27 GB: 415 unique media items were imported into the Photos album `Messages Attachments Archive — 2026-07-16`, but Photos still has 326 items pending. Do not delete the attachment originals until Photos/iCloud sync is complete, then obtain fresh confirmation because deletion also removes them from Messages/iCloud conversation history.
+- Pictures, about 6.84 GB: active optimized Photos Library about 5.27 GB and Photo Booth Library about 1.41 GB. Photo Booth has 57 media files and none matched current Photos originals by exact hash. Import via Photos, verify iCloud completion, then ask before removing the Photo Booth library.
 - Music, about 4.77 GB: GarageBand projects about 3.15 GB, Music library about 1.31 GB, plus local recordings. These are user creations, not cache. Archive projects/media before any deletion.
-- Movies/CapCut, about 1.68 GB: user video projects/exports. Archive completed projects and exports before removing local copies. Do not assume CapCut data is disposable.
-- User-installed Docker app, about 2.23 GB, plus any Docker data: uninstall only if Naomi confirms it is unused and there are no unique containers/volumes.
-- OneNote app, about 1.37 GB: candidate for uninstall only after the notebook sync gate above passes. Notes must persist.
+- Movies/CapCut, about 1.42 GB: active user projects plus roughly 1.06 GB of completed exports. No export matched a current Photos original. Import/archive and verify before removal; do not assume project data is disposable.
+- Docker and OneNote applications are absent. OneNote notebooks remain OneDrive/SharePoint cloud data; do not delete notebook cloud folders. OneDrive support/index data is active, not the OneNote app.
 - Developer dependencies/build outputs: at least several GB across Cortex worktrees, E4E, Downloads app projects, `.next`, `node_modules`, Rust `target`, and standalone Python environments. They are regenerable and safe after Git/GitHub verification, but do not count them as guaranteed persistent free space if active work will immediately recreate them.
-- Homebrew occupies about 6.1 GB; its normal cleanup dry run found only about 125 MB. Do not remove required formulae solely for size. Audit unused top-level formulae before uninstalling them.
-- `/private/var` is mostly system state, diagnostics, caches, and temporary data. It is not a durable 26 GB solution. Never remove live database or swap contents manually.
+- `cortex/cortex-web` still has an uncommitted `app/onboarding/page.tsx` edit, about 1.18 GB `node_modules`, and about 673 MB Rust `target`. Preserve them until the coding task is finished and pushed, then remove only the disposable dependency/build outputs.
+- Homebrew occupies about 6 GB. `openai-whisper` is a leaf; its private transcription dependency stack is roughly 2.5–2.8 GB. Removing it would disable local Whisper CLI transcription until reinstall but does not affect Voice Memos playback. Await Naomi's choice. `gemini-cli` is another roughly 442 MB leaf candidate; do not infer removal without confirmation.
+- Safari WebKit website data is about 1.33 GB. TikTok IndexedDB alone contains a 388,743,731-byte exact SHA-256 match of a preserved CapCut export. Removing TikTok site data can log Safari out of TikTok and discard browser-local drafts, so await explicit/action-time confirmation; the CapCut original stays.
+- `/private/var/db/diagnostics` plus `uuidtext` hold about 2.55 GB of accumulated system diagnostics. Use only the supported admin command `sudo log erase --all` with Naomi present; never delete database files manually. `/private/var/vm/sleepimage` is expected and must remain.
+- Claude has about 759 MB of legitimate staged update data under its ShipIt temp directory. Let Claude finish the update by supported quit/reopen, or delete only if Naomi accepts redownload/update tradeoffs. Do not confuse this with macOS Preboot data.
 
 ## App-leftover decision rule
 
