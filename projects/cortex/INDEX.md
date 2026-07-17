@@ -2,6 +2,18 @@
 
 | Date | Source | Session |
 |---|---|---|
+| 2026-07-17T00:29:52 | codex-subagent | [019f6d70-c5c8-7152-af7e-69d3e51851ac](research/codex-subagents/019f6d70-c5c8-7152-af7e-69d3e51851ac.md) |
+| 2026-07-17T00:29:52 | codex-subagent | [019f6d7a-31dd-7253-b86f-337dbcc908ea](research/codex-subagents/019f6d7a-31dd-7253-b86f-337dbcc908ea.md) |
+| 2026-07-17T00:29:48 | codex-subagent | [019f6d7a-3145-7f61-9704-295e8f8292ab](research/codex-subagents/019f6d7a-3145-7f61-9704-295e8f8292ab.md) |
+| 2026-07-17T00:29:43 | codex-subagent | [019f6d66-258e-76b0-a545-2f47093d1ccf](research/codex-subagents/019f6d66-258e-76b0-a545-2f47093d1ccf.md) |
+| 2026-07-17T00:23:40 | codex-subagent | [019f6d65-4908-71f1-81d4-90b39cff21a3](research/codex-subagents/019f6d65-4908-71f1-81d4-90b39cff21a3.md) |
+| 2026-07-17T00:23:24 | codex-subagent | [019f6d64-d113-7032-ae5e-fab0766f4efb](research/codex-subagents/019f6d64-d113-7032-ae5e-fab0766f4efb.md) |
+| 2026-07-17T00:21:09 | codex-subagent | [019f6d65-4992-7d22-90b2-34bafc8bf7df](research/codex-subagents/019f6d65-4992-7d22-90b2-34bafc8bf7df.md) |
+| 2026-07-17T00:18:40 | codex-subagent | [019f6d5e-4fbe-7ce1-b0d5-de6ce86dca2c](research/codex-subagents/019f6d5e-4fbe-7ce1-b0d5-de6ce86dca2c.md) |
+| 2026-07-17T00:06:43 | codex-subagent | [019f6d5e-4f10-7663-9217-9fac00268f0a](research/codex-subagents/019f6d5e-4f10-7663-9217-9fac00268f0a.md) |
+| 2026-07-17T00:05:28 | codex-subagent | [019f6d5e-4eb6-7de0-9daf-381c6676cb06](research/codex-subagents/019f6d5e-4eb6-7de0-9daf-381c6676cb06.md) |
+| 2026-07-17T00:05:20 | codex-subagent | [019f6d5e-4f66-7973-9244-5be0ee152609](research/codex-subagents/019f6d5e-4f66-7973-9244-5be0ee152609.md) |
+| 2026-07-17T00:05:11 | codex-subagent | [019f6d5e-4e2c-7713-b929-478f5713a2d8](research/codex-subagents/019f6d5e-4e2c-7713-b929-478f5713a2d8.md) |
 | 2026-07-16T20:53:18 | codex-subagent | [019f6c9d-26c7-7ab2-bd29-e4103236aebf](research/codex-subagents/019f6c9d-26c7-7ab2-bd29-e4103236aebf.md) |
 | 2026-07-16T20:25:51 | codex-subagent | [019f6c94-14fe-7862-b2e2-f93ce230cd9c](research/codex-subagents/019f6c94-14fe-7862-b2e2-f93ce230cd9c.md) |
 | 2026-07-16T20:24:53 | codex-subagent | [019f6c94-1594-7ad2-a163-f212f9d565c5](research/codex-subagents/019f6c94-1594-7ad2-a163-f212f9d565c5.md) |
