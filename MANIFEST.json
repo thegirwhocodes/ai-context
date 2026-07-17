@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3163,
-  "generated_at": "2026-07-17T20:53:04+00:00",
+  "generated_at": "2026-07-17T21:11:44+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -23,11 +23,11 @@
       }
     },
     "cortex": {
-      "records": 119,
+      "records": 123,
       "sources": {
         "claude": 13,
         "codex": 30,
-        "codex-subagent": 76
+        "codex-subagent": 80
       }
     },
     "cortex-web": {
@@ -137,7 +137,7 @@
       }
     }
   },
-  "record_count": 422,
+  "record_count": 426,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
@@ -175,7 +175,7 @@
     "runpod-key": 2,
     "s3-access-key": 8,
     "sabi-sms-webhook-secret": 1,
-    "sensitive-label": 34,
+    "sensitive-label": 35,
     "sentry-auth-token": 4,
     "sentry-user-token": 3,
     "stripe-secret": 3,
