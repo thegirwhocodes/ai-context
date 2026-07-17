@@ -36,7 +36,7 @@
     "runpod-key": 2,
     "s3-access-key": 8,
     "sabi-sms-webhook-secret": 1,
-    "sensitive-label": 33,
+    "sensitive-label": 34,
     "sentry-auth-token": 4,
     "sentry-user-token": 3,
     "stripe-secret": 3,
@@ -44,5 +44,5 @@
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-07-17T18:40:38+00:00"
+  "generated_at": "2026-07-17T19:23:02+00:00"
 }
