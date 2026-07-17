@@ -84,7 +84,7 @@ Voice Memos is a protected special case. Naomi explicitly decided on 2026-07-16 
 
 ## Current state and pending work from the 2026-07-16 audit
 
-Latest completed whole-volume measurement during this continuation: `df` reported **57,294,248 KiB (about 58.7 GB decimal) physically available** at 17:56 EDT, leaving about **21.3 GB** to reach the 80 GB target. The Mac remains above the 50 GB reserve, but by only about 8.7 GB. Free space is fluctuating while iCloud/OneDrive and Photos are active; `~/Library/Caches/CloudKit` alone reached 11,049,288 KiB. Re-measure after providers become idle; do not claim background drift or cache purge as persistent savings.
+Latest completed whole-volume measurement during this continuation: `df` reported **52,191,380 KiB (about 53.4 GB decimal) physically available** at 20:02 EDT, leaving about **26.6 GB** to reach the 80 GB target. Naomi ended the manual cleanup at that point. The Mac remained above the 50 GB reserve, but by only about 3.4 GB. Free space had fluctuated downward while iCloud/OneDrive, Photos, swap, and other background services were active; `~/Library/Caches/CloudKit` alone had exceeded 11 GB. Do not claim that background drift or cache purge as persistent cleanup savings.
 
 ### Continuation cleanup and verification at 17:56 EDT
 
@@ -96,6 +96,10 @@ Latest completed whole-volume measurement during this continuation: `df` reporte
 - Rotated the OpenClaw local gateway token after it was exposed during a diagnostic. The launch plist and all current OpenClaw config/backup copies match the new token; never reproduce either token in a report or command output.
 - Photos still reports `Syncing Paused for 325 Items — Low Battery`. Pressing Photos' supported `Sync Now` control immediately returned to the low-battery pause. The Mac is at 7% and the attached adapter supplies only 15 W; connect a proper higher-wattage USB-C charger before Messages or Photo Booth cleanup.
 - The weekly audit remains Wednesday at 2:00 PM. The completion watchdog remains active Wednesday and Thursday at 3:00 PM and 5:00 PM.
+- Removed three clean, upstream-recoverable third-party Social Media clones after fetching their remotes, proving clean working trees, proving each HEAD existed remotely, checking ignored files, excluding secrets, and confirming no process used them: `CrisperWhisper` (9,096 KiB), `Resolve-OpenCaptions` (852 KiB), and the duplicate `davinci-resolve-mcp` clone (about 32,240 KiB). The separate root `~/davinci-resolve-mcp` clone with unique local context was preserved.
+- Removed a 5,548 KiB `.next` build from clean/pushed `~/naomi-home`, an empty 16 KiB Desktop `Dactyl-Final` shell containing only `.DS_Store`/empty directories, and about 7,368 KiB of June NGL logs/markers after proving the app, processes, and launch items were absent.
+- A local-only SHA-256 duplicate audit skipped dataless cloud placeholders and found about 757,428,994 logical duplicate bytes. Most are identical WAV files embedded separately in four GarageBand project bundles; they were preserved because deleting project-internal media could break self-contained projects. A duplicate `Adonai Pt1.m4a` also remains pending user choice. No personal media was deleted.
+- User ended the manual cleanup after these checks. Voice Memos remained protected and playable, and no pending cloud-only eviction, Messages/Photos deletion, Homebrew Whisper removal, Safari site-data removal, app uninstall, or admin log erasure was performed without confirmation.
 
 ## Watchdog completion on 2026-07-16 — weekly audit completion check
 
