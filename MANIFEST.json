@@ -1,13 +1,13 @@
 {
   "curated_files_copied": 3163,
-  "generated_at": "2026-07-18T02:17:36+00:00",
+  "generated_at": "2026-07-18T02:48:11+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
-      "records": 5,
+      "records": 6,
       "sources": {
         "claude": 3,
-        "codex": 2
+        "codex": 3
       }
     },
     "bethel-email-agent": {
@@ -137,7 +137,7 @@
       }
     }
   },
-  "record_count": 426,
+  "record_count": 427,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
