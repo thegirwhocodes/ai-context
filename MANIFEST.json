@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3163,
-  "generated_at": "2026-07-20T23:09:42+00:00",
+  "generated_at": "2026-07-20T23:32:49+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -125,10 +125,10 @@
       }
     },
     "social-media": {
-      "records": 4,
+      "records": 5,
       "sources": {
         "claude": 3,
-        "codex": 1
+        "codex": 2
       }
     },
     "social-media-ed-it": {
@@ -138,7 +138,7 @@
       }
     }
   },
-  "record_count": 463,
+  "record_count": 464,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
