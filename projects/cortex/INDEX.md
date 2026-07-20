@@ -2,6 +2,27 @@
 
 | Date | Source | Session |
 |---|---|---|
+| 2026-07-20T20:26:39 | codex-subagent | [019f812f-f578-7091-93cc-6cd7132e9af1](research/codex-subagents/019f812f-f578-7091-93cc-6cd7132e9af1.md) |
+| 2026-07-20T20:26:34 | codex-subagent | [019f8123-a938-7481-b3da-619c64e1aa68](research/codex-subagents/019f8123-a938-7481-b3da-619c64e1aa68.md) |
+| 2026-07-20T20:25:52 | codex-subagent | [019f8130-2664-7750-b8dd-f61ec9d2c7e1](research/codex-subagents/019f8130-2664-7750-b8dd-f61ec9d2c7e1.md) |
+| 2026-07-20T20:25:52 | codex-subagent | [019f812e-1b98-7cb0-afe0-a61dbb34eb6d](research/codex-subagents/019f812e-1b98-7cb0-afe0-a61dbb34eb6d.md) |
+| 2026-07-20T20:25:49 | codex-subagent | [019f8130-0766-7720-8041-5dd09f4a2b98](research/codex-subagents/019f8130-0766-7720-8041-5dd09f4a2b98.md) |
+| 2026-07-20T20:25:45 | codex-subagent | [019f812e-04de-7900-b2fd-cf8d9350a301](research/codex-subagents/019f812e-04de-7900-b2fd-cf8d9350a301.md) |
+| 2026-07-20T20:25:43 | codex-subagent | [019f812e-108d-7540-b52b-56e64df4ed06](research/codex-subagents/019f812e-108d-7540-b52b-56e64df4ed06.md) |
+| 2026-07-20T20:25:19 | codex-subagent | [019f811f-3f6a-7650-8aa8-78a0e2d6fbb9](research/codex-subagents/019f811f-3f6a-7650-8aa8-78a0e2d6fbb9.md) |
+| 2026-07-20T20:24:31 | codex-subagent | [019f8130-9b87-7322-935b-3168e7bebd18](research/codex-subagents/019f8130-9b87-7322-935b-3168e7bebd18.md) |
+| 2026-07-20T20:23:10 | codex-subagent | [019f812b-425d-79d0-8677-6bc2928e9d66](research/codex-subagents/019f812b-425d-79d0-8677-6bc2928e9d66.md) |
+| 2026-07-20T20:20:48 | codex-subagent | [019f812b-2dd9-7ce3-b5c5-b3aa0e165dab](research/codex-subagents/019f812b-2dd9-7ce3-b5c5-b3aa0e165dab.md) |
+| 2026-07-20T20:18:59 | codex | [019f812e-8c60-7ad2-8396-d242e4ca5a60](sessions/codex/019f812e-8c60-7ad2-8396-d242e4ca5a60.md) |
+| 2026-07-20T20:15:28 | codex | [019f812b-557f-7493-8908-766ad681ebe6](sessions/codex/019f812b-557f-7493-8908-766ad681ebe6.md) |
+| 2026-07-20T20:15:12 | codex-subagent | [019f812b-14cf-7ff3-bc2d-a1033ca84da0](research/codex-subagents/019f812b-14cf-7ff3-bc2d-a1033ca84da0.md) |
+| 2026-07-20T20:13:51 | codex | [019f8129-d82c-7fd1-9bbb-55a3602e1cfe](sessions/codex/019f8129-d82c-7fd1-9bbb-55a3602e1cfe.md) |
+| 2026-07-20T20:13:00 | codex-subagent | [019f811f-3cc3-7490-9a59-79a9e2923efe](research/codex-subagents/019f811f-3cc3-7490-9a59-79a9e2923efe.md) |
+| 2026-07-20T20:04:35 | codex-subagent | [019f811f-43c1-7433-bebb-77e484a79b34](research/codex-subagents/019f811f-43c1-7433-bebb-77e484a79b34.md) |
+| 2026-07-20T19:59:53 | codex-subagent | [019f811b-68e5-7930-9e33-50079ea6bafc](research/codex-subagents/019f811b-68e5-7930-9e33-50079ea6bafc.md) |
+| 2026-07-20T19:59:25 | codex-subagent | [019f811b-6851-7741-a027-64c7cb36ef73](research/codex-subagents/019f811b-6851-7741-a027-64c7cb36ef73.md) |
+| 2026-07-20T19:59:15 | codex-subagent | [019f811b-6930-71a1-8648-402aeb03baa7](research/codex-subagents/019f811b-6930-71a1-8648-402aeb03baa7.md) |
+| 2026-07-20T19:45:01 | codex | [019f810f-7501-74d1-b808-1a918ed3c318](sessions/codex/019f810f-7501-74d1-b808-1a918ed3c318.md) |
 | 2026-07-17T21:01:50 | codex-subagent | [019f71d7-3233-7ca3-b303-97b62a6a628a](research/codex-subagents/019f71d7-3233-7ca3-b303-97b62a6a628a.md) |
 | 2026-07-17T20:59:56 | codex-subagent | [019f71d7-3129-7f43-84ed-38f164ea6f6a](research/codex-subagents/019f71d7-3129-7f43-84ed-38f164ea6f6a.md) |
 | 2026-07-17T20:54:57 | codex-subagent | [019f71d7-30ae-7fd1-a287-fb8476665453](research/codex-subagents/019f71d7-30ae-7fd1-a287-fb8476665453.md) |
