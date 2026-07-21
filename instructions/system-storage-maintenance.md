@@ -227,3 +227,9 @@ The weekly storage automation must audit repositories touched during the previou
 - Removed only the task-created disposable `node_modules` symlink in that worktree after remote recoverability proof. It pointed to the active final-integration worktree dependency tree and owned no dependency copy; the target and all source were preserved. No source, secrets, sessions, provider state, database state, auth state, or user data were removed.
 - APFS physical free space was 41,125,732,352 bytes at 18:58:44 EDT before unlinking and 41,129,795,584 bytes at 18:58:54 EDT afterward. `df -k /System/Volumes/Data` increased from 40,161,820 KiB to 40,165,808 KiB available. The roughly 4 MB drift is background/APFS activity and is not claimed as recovery; persistent savings and refillable-cache savings are both 0.
 - Naomi's explicit **30 GB release-task floor** remains satisfied by about 11.1 GB. The canonical 50 GB standing reserve and 80 GB maintenance target remain unmet. No unrelated cleanup, cloud offload, Vercel/Clerk/Supabase mutation, live acceptance, merge, alias, migration, provider action, or deployment occurred.
+
+## Read-only measurement on 2026-07-20 — Cortex sealed-harness handoff
+
+- At 20:56 EDT, `diskutil apfs list` reported **31,739,092,992 bytes (31.7 GB) APFS physical free**; `df -h /System/Volumes/Data` corroborated **30 GiB available**.
+- Naomi's explicit **30 GB Cortex release-task floor** remains satisfied by about 1.7 GB, with limited headroom. The canonical 50 GB standing reserve and 80 GB maintenance target remain unmet.
+- This was a read-only measurement used to keep the Cortex localhost release board truthful. No files, caches, dependencies, cloud data, secrets, sessions, provider state, database state, device settings, aliases, merge state, or deployment state were removed or mutated for storage.
