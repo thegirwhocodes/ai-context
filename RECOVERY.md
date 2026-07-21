@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-07-20T23:45:11+00:00
+Generated: 2026-07-21T00:11:07+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -14,7 +14,7 @@ Read the relevant project index and curated memory first; open full session file
 - [cortex-web](projects/cortex-web/INDEX.md) — 13 records
 - [desktop](projects/desktop/INDEX.md) — 1 records
 - [developer](projects/developer/INDEX.md) — 1 records
-- [documents](projects/documents/INDEX.md) — 4 records
+- [documents](projects/documents/INDEX.md) — 5 records
 - [downloads](projects/downloads/INDEX.md) — 1 records
 - [downloads-app-rings-version-2-1-multi-device-jan-2025](projects/downloads-app-rings-version-2-1-multi-device-jan-2025/INDEX.md) — 3 records
 - [downloads-app-sleep](projects/downloads-app-sleep/INDEX.md) — 3 records
