@@ -233,3 +233,9 @@ The weekly storage automation must audit repositories touched during the previou
 - At 20:56 EDT, `diskutil apfs list` reported **31,739,092,992 bytes (31.7 GB) APFS physical free**; `df -h /System/Volumes/Data` corroborated **30 GiB available**.
 - Naomi's explicit **30 GB Cortex release-task floor** remains satisfied by about 1.7 GB, with limited headroom. The canonical 50 GB standing reserve and 80 GB maintenance target remain unmet.
 - This was a read-only measurement used to keep the Cortex localhost release board truthful. No files, caches, dependencies, cloud data, secrets, sessions, provider state, database state, device settings, aliases, merge state, or deployment state were removed or mutated for storage.
+
+## Read-only measurement on 2026-07-21 — Cortex STAGE-OPS-1 handoff
+
+- At 10:07 EDT, `diskutil apfs list` reported **30,244,962,304 bytes (30.2 GB) APFS physical free**; `df -h /System/Volumes/Data` corroborated **28 GiB available**.
+- Naomi's explicit **30 GB Cortex release-task floor** remains satisfied by only about 0.2 GB. The canonical 50 GB standing reserve and 80 GB maintenance target remain unmet. Do not begin a large dependency/browser install or disposable build until more headroom exists.
+- This was a read-only measurement used to keep the Cortex localhost release board truthful. No files, caches, dependencies, cloud data, secrets, sessions, provider state, database state, device settings, aliases, merge state, or deployment state were removed or mutated for storage.
