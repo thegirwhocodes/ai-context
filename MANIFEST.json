@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3165,
-  "generated_at": "2026-07-23T22:21:05+00:00",
+  "generated_at": "2026-07-23T22:25:55+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -176,7 +176,7 @@
     "runpod-key": 2,
     "s3-access-key": 8,
     "sabi-sms-webhook-secret": 1,
-    "sensitive-label": 38,
+    "sensitive-label": 39,
     "sentry-auth-token": 4,
     "sentry-user-token": 4,
     "stripe-secret": 3,
