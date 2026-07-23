@@ -19,6 +19,7 @@
     "elevenlabs-api-key": 10,
     "expo-apple-app-specific-password": 3,
     "external-google-secret": 1,
+    "github-token": 3,
     "gpt-api-key": 2,
     "groq-api-key": 7,
     "groq-key": 1,
@@ -44,5 +45,5 @@
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-07-23T23:22:03+00:00"
+  "generated_at": "2026-07-23T23:22:38+00:00"
 }
