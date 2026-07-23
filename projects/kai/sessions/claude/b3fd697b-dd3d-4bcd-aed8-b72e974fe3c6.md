@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T22:27:36.950Z"
+ended: "2026-07-23T23:24:20.749Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -1350,3 +1350,58 @@ Both reports are in — thorough and well-sourced. Writing the synthesis into th
 ## Claude · 2026-07-23T22:27:36.950Z
 
 [Tool: Write]
+
+## Naomi · 2026-07-23T22:47:14.244Z
+
+Continue from where you left off.
+
+## Claude · 2026-07-23T22:47:14.248Z
+
+No response requested.
+
+## Naomi · 2026-07-23T23:22:26.233Z
+
+keep going
+
+## Claude · 2026-07-23T23:22:32.711Z
+
+The doc write hit a hook timeout and didn't execute. Retrying:
+
+## Claude · 2026-07-23T23:23:47.953Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T23:23:56.575Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T23:24:03.954Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T23:24:20.749Z
+
+Research done and committed → [docs/PRE_RELEASE_TESTING_RESEARCH.md](docs/PRE_RELEASE_TESTING_RESEARCH.md). Two researchers hit ~40 primary sources (Fowler, Google's SWE book, Kent C. Dodds, NN/g, YC, First Round, Lenny, Sequoia, Google's own OAuth docs).
+
+## The core finding
+
+Pre-release testing is **two separate funnels**, and most people only run one:
+
+- **"Is it correct?"** — static checks → unit → integration → E2E → preview smoke → canary rollout → observability.
+- **"Does anyone want it?"** — interviews → landing/fake-door demand test → concierge/Wizard-of-Oz → usability test → closed beta → PMF measurement → staged launch.
+
+Ship only the first and you get a bug-free product nobody wants. That's the failure mode Kai is closest to, because the build is the fun part.
+
+## The three things that actually matter for Kai
+
+**1. Google OAuth verification is your launch blocker — start it now.** This is the one item with a weeks-to-months external dependency you cannot compress. Until verified, Kai is **hard-capped at ~100 users** and shows a scary *"Google hasn't verified this app"* screen on the consent flow. Worse: if you request **full Gmail content** scopes, you also need an **annual paid third-party security audit (CASA)**. Minimizing scopes now (calendar.events, Gmail metadata/send instead of full read) could avoid that audit entirely. A Product Hunt launch before this clears would burn your one first impression on a scary warning screen.
+
+**2. Validate the risky part by hand before building more of it.** The highest-leverage move isn't code — it's a **Wizard-of-Oz test**: for 5–10 students, *you* look at their calendar each morning and message them a hand-made pomodoro plan. If they follow it and ask again tomorrow, the AI planner is validated at zero build cost. Kai's unproven assumption isn't the timer — it's *"will students hand over their Google data and follow AI-made focus plans daily?"*
+
+**3. A growing waitlist is a vanity metric.** Real PMF = a **retention curve that flattens** (not decaying to zero) plus **≥40% of users saying they'd be "very disappointed"** without Kai. Superhuman went 22%→58% on that metric in three quarters using a 50/50 roadmap. You currently can't measure either — there's no analytics.
+
+## Honest scorecard on Kai's engineering side
+
+You're better than most solo projects (typecheck, lint, build, 22 tests, auto-deploys), with three real gaps: **no Sentry** (a production crash is invisible right now — your own global config asks for this), **no branch protection** on `main`, and **no smoke/E2E tests**. Those three are a few hours total.
+
+Want me to knock out the cheap engineering wins — Sentry + branch protection + a handful of Playwright smoke tests — or would you rather I help you set up the OAuth verification submission first, since that's the one with a clock on it?
