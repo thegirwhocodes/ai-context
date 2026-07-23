@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T21:41:27.369Z"
+ended: "2026-07-23T22:20:47.094Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -745,3 +745,39 @@ I actually ran this against Kai, didn't just describe it.
 3. **Beta testers** — your `docs/testers` scaffold exists; real users surface things tests never will.
 
 Want me to knock out #1 (wire Sentry) and #2 (run a real browser walkthrough with screenshots) next?
+
+## Naomi · 2026-07-23T22:19:21.100Z
+
+do deep research into what software coders/ entreprenerus do to test a product nefore releasing fully
+
+## Claude · 2026-07-23T22:19:42.366Z
+
+Good call — this should be grounded in current practice, not memory. Let me first check what research already exists in the repo, then go deep on the web.
+
+## Claude · 2026-07-23T22:19:43.945Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T22:20:02.442Z
+
+The repo's testing doc is all beta-recruitment and ads — nothing on the engineering QA + product-validation playbook you're asking about. I'll research that properly. Spinning up parallel researchers across the two halves (how *coders* test, how *founders* validate) plus tooling specifics:
+
+## Claude · 2026-07-23T22:20:15.132Z
+
+[Tool: Agent]
+
+## Claude · 2026-07-23T22:20:28.893Z
+
+[Tool: Agent]
+
+## Claude · 2026-07-23T22:20:36.037Z
+
+Two researchers are running in the background (engineering QA + founder validation). I'll synthesize their findings into a repo doc when they finish. Give it a few minutes — I'll be notified automatically.
+
+## Claude · 2026-07-23T22:20:40.552Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T22:20:47.094Z
+
+Both research agents are underway. I'll pull their findings together into a `docs/PRE_RELEASE_TESTING_RESEARCH.md` — a full pre-release testing playbook (engineering QA + founder validation) mapped to Kai's actual state — as soon as they report back.
