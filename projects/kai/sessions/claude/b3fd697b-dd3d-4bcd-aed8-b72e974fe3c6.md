@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T20:20:54.869Z"
+ended: "2026-07-23T21:32:08.537Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -544,3 +544,28 @@ Done — built, verified, shipped to production.
 **4. Flocus-style length pickers** in Settings — clickable focus/break chips + custom, instead of buried number fields.
 
 Live at **https://heykai.vercel.app/app** (pushed to `main`, deployed to production). One thing worth a look in the browser when you can: the idle screen now leads with the lock-in card, with "Quick focus" / "Take a break" demoted to secondary — tell me if you want lock-in to take over the whole hero instead.
+
+## Naomi · 2026-07-23T21:30:29.205Z
+
+no undo - I meant like a settings section
+
+## Claude · 2026-07-23T21:30:52.367Z
+
+Nothing undone — everything I built stays. And yes, the length picker *is* a settings section already:
+
+- **Settings → Timing** now has clickable Flocus-style chips for **Focus** (15/25/30/45/50/60/90), **Short break** (3/5/10/15), and **Long break** (10/15/20/30), each with a "custom" option. That's the "place in settings where users click and choose length of focus and break" you described.
+- The **lock-in budget** is the separate headline feature on the idle screen.
+
+Both live, both shipped. No changes needed unless you want me to tweak the presets or move something.
+
+## Naomi · 2026-07-23T21:31:57.167Z
+
+where do I find settings
+
+## Claude · 2026-07-23T21:32:02.546Z
+
+[Tool: Read]
+
+## Claude · 2026-07-23T21:32:08.537Z
+
+In the app at **https://heykai.vercel.app/app**, look at the **bottom-right corner** — there's a row of small round buttons (the dock). The settings one is the **✦ ("Customize")** button, the last icon before the fullscreen ⛶ button. Click it and the panel opens at the bottom-left with the **Timing** section (the focus/break length chips) and the adaptive toggle.
