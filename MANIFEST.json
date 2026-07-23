@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3165,
-  "generated_at": "2026-07-23T22:04:10+00:00",
+  "generated_at": "2026-07-23T22:15:00+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -178,7 +178,7 @@
     "sabi-sms-webhook-secret": 1,
     "sensitive-label": 38,
     "sentry-auth-token": 4,
-    "sentry-user-token": 3,
+    "sentry-user-token": 4,
     "stripe-secret": 3,
     "twilio-auth-token": 3,
     "vercel-token": 1,
