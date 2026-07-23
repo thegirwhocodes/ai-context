@@ -6,6 +6,7 @@
 ## Project
 - [E4E Vision & Architecture](project_e4e_vision.md) — Mission, two channels (Sabi voice AI + Curriculum App), target audience, core insight, pedagogical philosophy, evidence base
 - [E4E Tech Stack](project_e4e_tech.md) — Next.js, Sabi voice pipeline (Whisper + Claude Haiku + Chatterbox TTS), Hetzner GPU server, Supabase, Africa's Talking, cost models
+- [Sabi Monitoring — never miss a user error](project_sabi_monitoring.md) — Phase 1 LIVE: user-facing error capture (Sentry) + daily plain-English WhatsApp/email health digest (verified delivered+read Jul 23). Plan: `curriculum-app/docs/SABI_NEVER_MISS_AN_ERROR_PLAN.md`; Sentry org `sabi-43`; Twilio WhatsApp sandbox. Pending: real-time alerts, robot-user, dead-man's switch, reply-OK-to-approve
 - [E4E Milestones](project_e4e_milestones.md) — Full timeline: MIT hackathon 2nd place $3K, lesson scripts, server deployment, Chatterbox deploy, UNICEF app, Technovation
 - [E4E Current Status](project_e4e_status.md) — What's built, what's pending, next deadlines (CcHub Mar 30), known issues
 - [E4E Live Status Jun 2026 — Supabase DOWN](project_e4e_status_jun2026.md) — ⚠️ Sabi phone pipeline broken: Supabase project gone (NXDOMAIN); full Jun 5 health snapshot + AT number blockers
