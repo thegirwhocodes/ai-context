@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T22:24:36.341Z"
+ended: "2026-07-23T22:27:36.950Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -1049,3 +1049,304 @@ Engineering QA research is in and it's thorough. The founder-validation research
 ## Claude · 2026-07-23T22:24:36.341Z
 
 The engineering-side research came back rich (testing pyramid, CI gates, progressive delivery, observability, security, all mapped to Kai as a solo Vercel app). Waiting on the founder-validation half now, then I'll write it all into the repo doc.
+
+## Naomi · 2026-07-23T22:25:42.012Z
+
+<task-notification>
+<task-id>a5ac96c86b3977e0a</task-id>
+<tool-use-id>toolu_01Dp1uafTuKLewcFz4dp4HRg</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-naomiivie-kai/b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6/tasks/a5ac96c86b3977e0a.output</output-file>
+<status>completed</status>
+<summary>Agent "Research startup product validation" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>I have enough well-sourced material across all 12 topics. Here is the deliverable.
+
+---
+
+# How Founders Validate &amp; Test a Product Before Public Launch
+### A field guide for a solo founder shipping Kai (AI pomodoro/focus app: Google Calendar + Gmail + Spotify; students + productivity users)
+
+Research window: 2024–2026, weighted to primary/authoritative sources. Every section gives **what it is → why it matters → how to do it**, then a **Kai priority flag**. A solo-founder priority stack sits at the very end.
+
+---
+
+## 0. The mental model: validate demand and value *before* you validate the build
+
+Two frameworks anchor everything below.
+
+**Marty Cagan / SVPG — The Four Big Risks.** Before you commit to building, you must retire four risks: **Value** (will they use/buy it?), **Usability** (can they figure it out?), **Feasibility** (can you build it?), **Business Viability** (does it work for legal/finance/brand?). "Discovery exists to kill all four before delivery starts," and most shipped-product failures trace to a risk the team skipped or deferred. Value is the risk founders most often skip.
+- https://www.svpg.com/four-big-risks/
+- https://www.svpg.com/product-risk-taxonomy/
+
+**Eric Ries — Lean Startup / Build-Measure-Learn.** Form a hypothesis → build the *smallest* test of it → measure real behavior → learn (persevere, pivot, or kill). The unit of progress is **validated learning** — evidence of what the market values enough to pay for — not lines of code. A **pivot** is a structured change in strategy while keeping the vision. Note the deliberate ordering: you *think* Build→Measure→Learn, but you *plan backwards* — decide what you need to Learn, then what to Measure, then the minimum to Build.
+- https://theleanstartup.com/principles
+- https://www.strategyzer.com/library/dont-build-when-you-build-measure-learn
+
+**Kai flag:** Kai's Value + Viability risks are the dangerous ones. The build is largely feasible (calendar/Gmail/Spotify APIs + an LLM), and Flocus proves the usability pattern. What's unproven: *will students pay for an AI that plans their pomodoros from real calendar/email signals, versus using a free timer + Spotify?* Spend validation effort there, not on the timer UI.
+
+---
+
+## 1. Lean Startup: MVP, Build-Measure-Learn, validated learning, pivots
+
+**What it is.** The MVP is the *smallest* version that lets you start the learning loop — "the version that allows a team to collect the maximum amount of validated learning with the least effort." It is a test of a hypothesis, not a small version of the finished product. Common MVP forms: landing page, concierge, Wizard-of-Oz, single-feature build.
+
+**Why it matters.** It caps the cost of being wrong and forces you to define, in advance, the metric that would confirm or kill the hypothesis. Without a pre-committed metric, you'll rationalize any result (confirmation bias).
+
+**How to do it.**
+1. Write the riskiest assumption as a falsifiable hypothesis ("Students will connect their Google Calendar to get AI-planned focus blocks").
+2. Pick the leap-of-faith metric and threshold *before* building.
+3. Build the cheapest artifact that produces that metric.
+4. Decide the pivot/persevere rule in advance.
+
+- https://theleanstartup.com/principles
+- https://userpilot.com/blog/build-measure-learn/
+
+**Kai flag:** Your MVP is *not* "the whole app polished." It's the thinnest slice that proves someone will hand Kai their calendar and let it plan their day. Everything else (Spotify modes, Alexa, wake word) is downstream of that.
+
+---
+
+## 2. Problem/solution validation BEFORE building
+
+### 2a. Customer interviews — The Mom Test (Rob Fitzpatrick)
+**What.** A method for extracting *truth* from conversations. Three rules: (1) talk about *their life*, not your idea; (2) ask about *specifics in the past*, not hypotheticals about the future; (3) talk less, listen more. Ignore the three kinds of "bad data": compliments, hypotheticals/fluff, and wishlist statements.
+**Why.** People lie to be nice ("even your mom will lie to you"). Interviews *designed to get validation* produce false positives that lead you to build the wrong thing.
+**How.** Ask: "Walk me through the last time you tried to focus/study and it fell apart." "What do you use today?" "What did you do last time — what did it cost you (time/money/emotion)?" Good signals are *past behaviors and prior spending*, not "I would totally use that." Aim for ~15–30 conversations before building.
+- https://www.momtestbook.com/
+- https://www.looppanel.com/blog/customer-interviews
+
+### 2b. Landing-page / waitlist / smoke tests
+**What.** A page describing the finished product with a single CTA (email signup, waitlist, or fake "Start free"). Conversion = your demand signal.
+**Why.** Fast, cheap, *quantitative* proof a market exists before you write product code.
+**How &amp; benchmarks.** Drive ~100 minimum (ideally 300+) targeted visitors for statistical relevance. Rough reads: cold-traffic landing pages convert ~2–5%; well-targeted waitlists 15–40%; a "smoke test" that mimics *purchase intent* (fake checkout) converts far lower but the signal is ~10–15× stronger. On a genuine purchase-intent CTA, ~10–15% is strong demand, under 5% means refine or pivot.
+- https://dowhatmatter.com/guides/smoke-test-startup
+- https://craftuplearn.com/blog/waitlist-landing-page-anatomy-incentives-benchmarks
+- https://www.userintuition.ai/reference-guides/landing-page-tests-measuring-demand-before-building/
+
+### 2c. Fake-door test
+**What.** A real-looking entry point (button/menu/ad) for a feature that doesn't exist yet; clickers hit a "coming soon" + email capture. Measures demand per feature.
+**Why.** AI features are expensive to build well, so float a fake "Ask AI"/"Plan my day" door and measure click-through before investing.
+**How.** Instrument the click, show an honest "we're building this — want early access?" capture, compare CTR across placements.
+- https://mvpdevelopment.company/blog/fake-door-mvp
+- https://learningloop.io/plays/concierge
+
+### 2d. Concierge &amp; Wizard-of-Oz MVPs
+**What.** **Concierge** = deliver the outcome *manually and openly* to a few users (behind the desk, in plain view). **Wizard-of-Oz** = users think it's automated software, but a human does the work behind the curtain. Concierge tests *what customers need*; Wizard-of-Oz tests *whether the automated solution is valued*.
+**Why.** You learn the real workflow and value before building automation. Airbnb, Food on the Table, and dozens of YC companies de-risked their core hypothesis this way with zero production code. The natural pairing: fake door proves they want the AI outcome → Wizard-of-Oz delivers it by hand → then you automate.
+**How for Kai.** Recruit 5–10 students. Each morning, *you* look at their (shared) calendar + task list and message them a hand-crafted pomodoro plan + a Spotify playlist link. If they follow it and ask for it again tomorrow, that's validated demand for the AI planner — before you build the planner.
+- https://www.mindtheproduct.com/wizard-of-oz-vs-concierge-testing-behind-the-curtain-or-behind-the-desk/
+- https://www.exponentially.com/wizard-of-oz-mvp
+
+**Kai flag — HIGHEST-LEVERAGE PRE-BUILD STEP.** The concierge/Wizard-of-Oz plan above is the single best use of your next two weeks. It validates the exact thing that's risky (AI-planned focus from real signals) at near-zero build cost, and it doubles as your first design partners and testimonials.
+
+---
+
+## 3. Usability testing
+
+**What.** Watching real users attempt real tasks to find where the interface fails them. **Moderated** = live facilitator, real-time, can probe "why" with follow-ups (best for early/complex flows). **Unmoderated** = participant completes pre-written tasks alone on a platform that records screen/clicks/time-on-task (cheaper, faster, scales). The **think-aloud protocol** = participant narrates their thoughts while working, revealing *why*, not just *what*.
+
+**Why.** Retires Cagan's Usability risk. Catches confusion an analytics funnel can only *count*, not *explain*.
+
+**How many — Nielsen's "5 users."** Jakob Nielsen (NN/g): 5 users in *qualitative/formative* testing surface ~85% of usability problems; the marginal user after ~5 mostly repeats findings. Better to run *more small tests across iterations* than one big test. Caveats: the rule holds only for a *homogeneous* user group and *qualitative* testing — distinct user segments need ~5 each, and *quantitative* benchmarking needs ~40 users.
+- https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+- https://www.nngroup.com/articles/how-many-test-users/
+
+**Tools.** Maze (unmoderated only, fast, prototype testing), UserTesting (both moderated + unmoderated, webcam + verbal think-aloud + sentiment), Hotjar/session-replay for passive observation.
+- https://maze.co/guides/usability-testing/moderated-vs-unmoderated/
+
+**Kai flag:** Run 5 moderated, think-aloud sessions on the *first-run flow* specifically: landing → "Hey Kai" prompt → Google OAuth consent → first suggested pomodoro. The OAuth consent screen (scary Google permission warnings for Calendar/Gmail) is a known drop-off; watch faces there. This is cheap and high-yield; do it before any paid launch.
+
+---
+
+## 4. Alpha vs. beta testing
+
+**What.**
+- **Alpha** = internal, in a lab/staging environment, to remove obvious defects before external exposure.
+- **Closed/private beta** = invite-only, small, curated real users; qualitative, high-touch feedback; good for sensitive/unfinished features.
+- **Open beta** = public; scale, stress-test infrastructure, broad bug discovery, gauge market appeal.
+- **Beta cohorts** = overlapping waves gated by feature flags with kill switches (the modern continuous-rollout model that has largely replaced the rigid alpha→beta→GA line).
+
+**Why.** Lets real usage answer questions your dev environment can't, while limiting blast radius.
+
+**What to instrument** (the pattern across all stages: *limit the audience, instrument everything*): activation/first-value completion, funnel drop-off, retention cohorts, error/crash rates, API failure rates (critical for you — Google/Spotify token expiry &amp; rate limits), latency, and a lightweight in-app feedback channel. Add feature flags so you can dark-launch and roll back per cohort.
+- https://www.startups.com/lexicon/beta-testing
+- https://launchdarkly.com/blog/beta-testing-programs/
+
+**Kai flag:** Go **closed beta first** (20–50 students, invite via the waitlist). You need qualitative depth and — importantly — you'll be under Google's OAuth *unverified-app* 100-user cap anyway (see §11). Don't do a big open beta until OAuth verification clears and retention looks healthy.
+
+---
+
+## 5. Dogfooding (founder uses own product daily)
+
+**What.** "Eating your own dog food" — using your product yourself, every day. (Term traces to a 1976 Alpo ad; popularized by Microsoft's 1988 "eating our own dogfood" memo.)
+**Why.** Closes the empathy gap, surfaces bugs/UX friction before users hit them, produces fast feedback, and makes you a credible, confident spokesperson.
+**How.** Commit to running your *own* real workday through Kai — plan your build sessions with it, connect *your* Google Calendar and Gmail, use its Spotify focus modes while coding. Log friction daily.
+- https://en.wikipedia.org/wiki/Eating_your_own_dog_food
+- https://maddevs.io/blog/dogfooding/
+
+**Kai flag — DO THIS STARTING NOW, it's free.** You are the target user (a productivity-obsessed builder). Kai should be the tool you use to build Kai. If you won't use it daily, that's your first, cheapest validation failure — and your global CLAUDE.md "GitHub-first, ship-as-you-build" workflow is itself a dogfooding-friendly cadence.
+
+---
+
+## 6. Product-Market-Fit measurement
+
+### 6a. Sean Ellis test — the 40% rule
+**What.** Survey engaged users: *"How would you feel if you could no longer use [product]?"* → Very disappointed / Somewhat / Not disappointed. **≥40% "very disappointed" ⇒ product-market fit.** 25–40% = close, build toward the "very disappointed" segment. &lt;25% = keep iterating or rethink the market.
+**How.** Survey ~40–50 users who hit core value in the last ~2 weeks. Follow-ups: main benefit, who benefits most, how to improve, acquisition channel.
+- https://learningloop.io/glossary/sean-ellis-score
+- https://formbricks.com/blog/product-market-fit-survey-questions
+
+### 6b. Superhuman's PMF Engine (Rahul Vohra, First Round) — the operational version
+Turns the 40% metric into a growth *engine*. Superhuman went **22% → 58% "very disappointed" in three quarters.** Four steps:
+1. **Segment.** Filter to "very disappointed" users, cluster personas, and define your **High-Expectation Customer (HXC)** in their own words. *Segmentation alone took the score 22% → 33%.*
+2. **Analyze.** "Politely disregard" the not-disappointed (lost cause). Study what the *very*-disappointed love, and what blocks the *somewhat*-disappointed **where your core benefit already resonates**.
+3. **Roadmap 50/50.** Half the roadmap doubles down on what fans love; half removes the top blockers for fence-sitters. (Only doubling down → score stalls; only fixing blockers → competitors pass you.) Prioritize by cost×impact matrix, low-cost/high-impact first.
+4. **Repeat.** Survey new users on a rolling basis; make "very disappointed %" the primary OKR.
+- https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/
+
+### 6c. Retention cohorts — the behavioral truth (Lenny Rachitsky, Andrew Chen, Sequoia)
+**What.** The strongest PMF signal is a **retention curve that flattens** (reaches a stable asymptote) rather than decaying to zero — the shape, not any single number, tells you if it's sticky. D1/D7/D30 are the leading indicators; **D7 is the earliest *reliable* one** (D1 is easily gamed with onboarding friction/push).
+**Benchmarks.** Lenny: strong **D30 ≥ ~25% consumer, ~35%+ B2B**. Daily-use consumer apps: **D1/D7/D30 around 60/30/15** indicates true daily frequency; D7≈2×D30 is typical. Great retention is *the* best indicator of PMF and the base of LTV and every good acquisition loop.
+- https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29
+- https://articles.sequoiacap.com/retention
+- https://prooflytics.io/blog/d7-d30-retention-benchmarks-by-app-category
+
+### 6d. Activation rate, leading indicators, NPS
+- **Activation** = % of new users reaching first value; fix new-user retention/activation *first* — that's where the most users leak (Lenny). https://www.linkedin.com/posts/lennyrachitsky_what-is-a-good-activation-rate-activity-6990690292412665856-S_du
+- **NPS** ("how likely to recommend, 0–10") is a *relationship/sentiment* metric, useful as a trend and diagnostic, but it is **not** a substitute for the Sean Ellis test or retention for PMF. Use it secondarily.
+
+**Kai flag:** Your PMF dashboard = **(1) Sean Ellis 40% survey** run continuously (Superhuman-style), **(2) weekly cohort retention** watching for a flattening curve, **(3) activation = % who complete a first full pomodoro *with a Kai-suggested plan*.** For a daily focus tool, aim to watch D1/D7 closely — a focus app should be a *daily habit* or it isn't working. Do **not** invent "energy dips" (per your AGENTS.md); only claim patterns your retention/session data actually show.
+
+---
+
+## 7. Analytics &amp; instrumentation for launch
+
+**What.** Event tracking → funnels → activation → retention, plus session replay to *see* the confusion. Core tools: **PostHog** (all-in-one: analytics + session replay + feature flags + experiments + surveys, generous free tier, ~$50k startup credit), **Amplitude** (deep behavioral analytics, Compass finds retention predictors), **Mixpanel** (fast funnel/retention query builder, now with native session replay; 1-yr free startup program). Note: Amplitude/Mixpanel historically needed a separate replay tool (Hotjar/FullStory/LogRocket); PostHog and now Mixpanel bundle it.
+
+**Why.** You cannot improve activation/retention you don't measure. Replay tells you *why* a funnel step drops.
+
+**How.** Instrument a small, deliberate event taxonomy from day one: `signup`, `google_oauth_started/completed/failed`, `spotify_connected`, `first_plan_generated`, `pomodoro_started/completed`, `voice_wake_triggered`. Build funnels for signup→activation and define the single activation event. Watch cohort retention weekly.
+- https://posthog.com/blog/posthog-vs-mixpanel
+- https://productgrowth.in/insights/ai-ml/mixpanel-vs-amplitude-vs-posthog/
+
+**Kai flag — pick PostHog.** For a solo founder it collapses analytics + funnels + session replay + feature flags + A/B + surveys into one free tool, so you can run the Sean Ellis survey, cohort retention, onboarding replay, and beta feature flags without stitching four vendors. Instrument OAuth-step drop-off explicitly.
+
+---
+
+## 8. A/B testing &amp; experimentation (onboarding &amp; pricing)
+
+**What.** Randomized comparison of two variants against one metric. Apply to onboarding checklists, default settings, upgrade prompts, and price points.
+**Why.** Removes opinion from onboarding/pricing decisions that heavily move activation and revenue.
+**How &amp; the solo-founder caveat.** Standard threshold is **95% confidence.** But **early-stage traffic is usually too thin for trustworthy A/B tests** — effect size matters more than raw sample size, and pricing tests specifically need roughly **250–500 visitors per variant and 30–60 days** to reach significance. Below that, prefer *sequential* qualitative iteration (ship, watch replays, interview) over underpowered A/Bs. Reserve true A/B tests for your highest-traffic surfaces (landing page, pricing page) once volume allows.
+- https://www.statsig.com/blog/you-dont-need-large-sample-sizes-ab-tests
+- https://www.getmonetizely.com/articles/pricing-experimentation-tools-a-guide-to-ab-testing-prices-with-software
+
+**Kai flag:** Don't A/B test yet — you won't have the traffic for significance. Optimize onboarding via 5-user usability tests + session replay now; save A/B testing for the pricing page and landing page after launch traffic builds.
+
+---
+
+## 9. Staged/soft launch vs. big-bang; launch checklists; GTM for a beta
+
+**What.** **Soft/staged launch** = release quietly to a small audience, learn, iterate, widen — vs. **big-bang** = one large coordinated splash. YC's stance: **launch early, even if mediocre**, because until you launch you're designing for *hypothetical* users; after, real reactions teach you what to build. Then **do things that don't scale** (hand-hold early users).
+**Why.** A big-bang on an unvalidated product wastes your one first impression and buries you in undiagnosable feedback. Staged launches compound learning.
+**How — beta GTM &amp; Product Hunt.**
+- Build a waitlist *before* launch; document the build publicly (X/LinkedIn/Indie Hackers) to accrue supporters who later upvote.
+- **Product Hunt checklist:** study past launches; prep professional assets (gallery, tagline, demo GIF); launch 12:01am PT; post a maker comment + pinned FAQ; tell your real audience but **never ask for upvotes** (PH rules); reply to *every* comment fast; days 1–2 track traffic sources, days 3–7 follow up with warm leads and reviewers.
+- Note (2025 data): niche communities like Indie Hackers/Reddit can convert 3–8× better than Product Hunt for the *right* audience — for students, that may mean student subreddits, Discords, and campus channels over PH.
+- https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice
+- https://www.indiehackers.com/post/the-product-hunt-launch-guide-dc4fed11ae
+- https://awesome-directories.com/blog/indie-hackers-launch-strategy-guide-2025/
+
+**Kai flag:** **Staged, not big-bang.** Sequence: waitlist (done) → concierge/WoZ (§2d) → closed beta 20–50 (§4) → OAuth verification (§11) → wider beta → Product Hunt + student-community launch once retention curve flattens. A Product Hunt splash *before* OAuth verification is actively risky — new users would hit the "Google hasn't verified this app" scary screen.
+
+---
+
+## 10. Pricing &amp; willingness-to-pay validation
+
+**What.** **Van Westendorp Price Sensitivity Meter (PSM)** — 4 questions per respondent: at what price is it *too cheap* (doubt quality), *cheap* (bargain), *expensive*, *too expensive* (won't buy)? Plotting the curves yields an acceptable price *corridor* and an optimal point. Complement with **fake pricing pages** (a real pricing page with plans; clicking "Subscribe" leads to "coming soon"/waitlist to measure *behavioral* intent).
+**Why.** Customer-informed pricing correlates with materially higher growth than cost-plus or competitor-copy pricing. Van Westendorp elicits WTP with predictive quality comparable to incentive-aligned methods — *but* it's hypothetical and biased toward minimizing resistance, so triangulate with the fake pricing page (real clicks).
+**How.** Run PSM on 40+ target users to set a starting corridor; publish 2–3 fake pricing tiers and measure plan-selection clicks; validate with actual paid conversions in beta.
+- https://conjointly.com/products/van-westendorp/
+- https://www.getmonetizely.com/articles/how-to-implement-van-westendorp-price-sensitivity-meter-for-saas-research
+
+**Kai flag:** Students are price-sensitive — WTP validation is *not* optional. Use Van Westendorp in your beta survey to find the corridor, then a fake pricing page to test real click-intent, then test an actual paywall/trial in the closed beta. Expect student pricing to sit well below prosumer; consider a free tier + cheap student plan. (Per your global config: do not commit to paid infra/domains without confirmation.)
+
+---
+
+## 11. Legal / trust readiness before public launch — *the gating item for Kai*
+
+**What.** Baseline: a **Privacy Policy**, **Terms of Service**, and (if GDPR/CCPA users) **DPAs with sub-processors**, a lawful basis for processing, consent capture, and a 72-hour breach-response plan.
+**Why — and the Kai-specific blocker:** Kai requests **Google restricted/sensitive OAuth scopes** (Gmail, Calendar). Google's rules:
+- **Sensitive scopes** (e.g., Calendar, Gmail *metadata*) → require **OAuth app verification** (brand review, verified domain, homepage, privacy policy, demo video).
+- **Restricted scopes** (full Gmail read/content) → require verification **plus an annual independent security assessment (CASA)** by a Google-empanelled assessor if you store/transmit that data on your servers.
+- **Until verified, an app is capped at ~100 users** and shows an **"unverified app" warning screen** on the consent flow — a major trust/conversion killer at public launch.
+- Timelines: verification/CASA can take **weeks to months** and CASA has real cost; **start early.**
+- https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification
+- https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification
+- https://sprinto.com/blog/gdpr-for-saas/
+
+**How for Kai.**
+1. **Minimize scopes** — request the *narrowest* scope that works (e.g., `calendar.events` not full Gmail; use Gmail *metadata*/send scopes rather than full-content read if the feature allows). This can drop you from *restricted+CASA* to *sensitive-only*, avoiding the annual security audit.
+2. Publish a Privacy Policy + ToS **before** the OAuth submission (Google requires them and checks that the policy discloses the Google data use).
+3. Stand up verified domain, homepage, and a demo video of the OAuth flow.
+4. Submit verification during closed beta (you're under 100 users then anyway).
+5. Be explicit in-product about what data you touch and why (your AGENTS.md "trust" ethos + Google's "limited use" requirements align here).
+
+**Kai flag — START OAUTH VERIFICATION NOW; it's the long pole.** This is the one item with a multi-week external dependency you can't compress. Everything else can move fast; Google's review can't. Minimize scopes to avoid CASA if at all possible. Do **not** schedule a public/Product Hunt launch date until verification is confirmed.
+
+---
+
+## 12. Common founder mistakes to avoid
+
+- **Not talking to users / "validating while building."** Writing code and interviewing simultaneously breeds confirmation bias — you hear what you want because you're already committed. Interview *before* you build (§2). Only ~18% of first-time founders succeed; building something nobody wants is the top killer. https://tafhub.medium.com/why-most-founders-validate-their-startup-idea-wrong-and-what-actually-works-b332e719471e
+- **Vanity metrics.** Signups, installs, page views, social followers *look* like traction but hide weak retention/economics. One cited case: traffic tripled while revenue *fell*. Track *actionable* metrics — activation, retention, revenue, "very disappointed %." https://www.epirus.vc/blog/vanity-metrics-vs-actionable-metrics-how-startup-founders-can-focus-on-what-actually-drives-growth
+- **Launching too late (perfectionism).** Until you launch you're building for hypothetical users; late testers feel judged, early testers feel heard (YC). https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice
+- **Launching too early on the wrong thing / big-bang before validation** — wastes the one first impression.
+- **Skipping the Value &amp; Viability risks** while over-investing in polish (Cagan): the two risks founders most often defer are the two that kill products.
+
+**Kai flag:** Your two realistic traps are (a) **polishing the Flocus-grade UI before proving anyone will connect calendar+Gmail and follow AI plans**, and (b) **celebrating waitlist signups as validation** — those are the definitional vanity metric until they convert to activated, retained, paying users.
+
+---
+
+## Solo-founder priority stack for Kai (do in this order)
+
+| # | Action | Cost | Why first |
+|---|--------|------|-----------|
+| 1 | **Start Google OAuth verification; minimize scopes to dodge CASA** (§11) | Low effort, long wall-clock | Only item with a weeks-long external dependency; gates public launch |
+| 2 | **Dogfood Kai daily** — use it to build Kai (§5) | Free | You're the target user; instant friction feedback |
+| 3 | **Concierge / Wizard-of-Oz** hand-planned pomodoros for 5–10 students (§2d) | Low | Validates the *risky* core (AI planning from real signals) before building it |
+| 4 | **10–20 Mom Test interviews** + fake pricing page + Van Westendorp (§2a, §10) | Low | Truth on demand + WTP for price-sensitive students |
+| 5 | **Instrument with PostHog**; define the single activation event (§7) | Low | Nothing below is measurable without this |
+| 6 | **5-user moderated usability tests on the OAuth-consent onboarding** (§3) | Low | Retire the biggest drop-off; cheap, high-yield |
+| 7 | **Closed beta, 20–50 students, feature-flagged** (§4) | Med | Qualitative depth; stays under the 100-user unverified cap |
+| 8 | **Run Sean Ellis 40% survey + weekly cohort retention continuously** (§6) | Low | Your real go/no-go for widening |
+| 9 | **Staged public launch** (student communities + Product Hunt) *only after* verification clears and retention flattens (§9) | Med | Don't spend your one splash on an unverified, unretained product |
+| 10 | **A/B test** landing + pricing pages *after* traffic supports significance (§8) | Med | Underpowered tests earlier mislead |
+
+**The one-line version:** Prove — with hand-run concierge plans and real interviews — that students will connect their Google data and *follow Kai's AI focus plans* daily, get OAuth verification moving in parallel because it's the long pole, and don't confuse a growing waitlist with product-market fit. PMF is the retention curve flattening and ≥40% saying they'd be "very disappointed" without Kai — not signups.
+
+---
+
+### Full source list
+**Lean Startup / discovery:** https://theleanstartup.com/principles · https://www.strategyzer.com/library/dont-build-when-you-build-measure-learn · https://www.svpg.com/four-big-risks/ · https://www.svpg.com/product-risk-taxonomy/
+**Interviews / pre-build validation:** https://www.momtestbook.com/ · https://www.looppanel.com/blog/customer-interviews · https://dowhatmatter.com/guides/smoke-test-startup · https://craftuplearn.com/blog/waitlist-landing-page-anatomy-incentives-benchmarks · https://www.userintuition.ai/reference-guides/landing-page-tests-measuring-demand-before-building/ · https://mvpdevelopment.company/blog/fake-door-mvp · https://learningloop.io/plays/concierge · https://www.mindtheproduct.com/wizard-of-oz-vs-concierge-testing-behind-the-curtain-or-behind-the-desk/ · https://www.exponentially.com/wizard-of-oz-mvp
+**Usability:** https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/ · https://www.nngroup.com/articles/how-many-test-users/ · https://maze.co/guides/usability-testing/moderated-vs-unmoderated/
+**Alpha/beta:** https://www.startups.com/lexicon/beta-testing · https://launchdarkly.com/blog/beta-testing-programs/
+**Dogfooding:** https://en.wikipedia.org/wiki/Eating_your_own_dog_food · https://maddevs.io/blog/dogfooding/
+**PMF:** https://learningloop.io/glossary/sean-ellis-score · https://formbricks.com/blog/product-market-fit-survey-questions · https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/ · https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29 · https://articles.sequoiacap.com/retention · https://prooflytics.io/blog/d7-d30-retention-benchmarks-by-app-category
+**Analytics:** https://posthog.com/blog/posthog-vs-mixpanel · https://productgrowth.in/insights/ai-ml/mixpanel-vs-amplitude-vs-posthog/
+**A/B &amp; pricing:** https://www.statsig.com/blog/you-dont-need-large-sample-sizes-ab-tests · https://www.getmonetizely.com/articles/how-to-implement-van-westendorp-price-sensitivity-meter-for-saas-research · https://conjointly.com/products/van-westendorp/
+**Launch:** https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice · https://www.indiehackers.com/post/the-product-hunt-launch-guide-dc4fed11ae · https://awesome-directories.com/blog/indie-hackers-launch-strategy-guide-2025/
+**Legal/OAuth:** https://developers.google.com/identity/protocols/oauth2/production-readiness/sensitive-scope-verification · https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification · https://sprinto.com/blog/gdpr-for-saas/
+**Mistakes:** https://www.epirus.vc/blog/vanity-metrics-vs-actionable-metrics-how-startup-founders-can-focus-on-what-actually-drives-growth · https://tafhub.medium.com/why-most-founders-validate-their-startup-idea-wrong-and-what-actually-works-b332e719471e
+
+*Note: I did not write this to a file (per instructions not to create report/summary .md files). If you want it saved into `docs/` in the Kai repo — it fits naturally alongside `BUSINESS_PLAN.md` — say the word and I'll add it as a proper doc and commit it.*</result>
+<usage><subagent_tokens>55008</subagent_tokens><tool_uses>23</tool_uses><duration_ms>310327</duration_ms></usage>
+</task-notification>
+
+## Claude · 2026-07-23T22:26:05.237Z
+
+Both reports are in — thorough and well-sourced. Writing the synthesis into the repo now:
+
+## Claude · 2026-07-23T22:27:36.950Z
+
+[Tool: Write]
