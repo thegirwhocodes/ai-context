@@ -239,3 +239,57 @@ The weekly storage automation must audit repositories touched during the previou
 - At 10:07 EDT, `diskutil apfs list` reported **30,244,962,304 bytes (30.2 GB) APFS physical free**; `df -h /System/Volumes/Data` corroborated **28 GiB available**.
 - Naomi's explicit **30 GB Cortex release-task floor** remains satisfied by only about 0.2 GB. The canonical 50 GB standing reserve and 80 GB maintenance target remain unmet. Do not begin a large dependency/browser install or disposable build until more headroom exists.
 - This was a read-only measurement used to keep the Cortex localhost release board truthful. No files, caches, dependencies, cloud data, secrets, sessions, provider state, database state, device settings, aliases, merge state, or deployment state were removed or mutated for storage.
+
+## Weekly audit watchdog on 2026-07-23 — current-week completion recovery
+
+- No successful `weekly-mac-storage-audit` run for the current calendar week (Monday, July 20, 2026 through Thursday, July 23, 2026) was present in this ledger before this watchdog pass. The last fully compliant weekly watchdog success recorded here was Thursday, July 16, 2026, which is outside the current week. This run closes the gap.
+- Start measurement at 12:20:48 EDT: `diskutil apfs list` reported **24,390,959,104 bytes (24.4 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **23,819,892 KiB available**. Mounted simulator/runtime images on separate APFS containers were observed but excluded from claimed recovery per policy.
+- Final measurement at 12:21:46 EDT after cleanup and a short APFS settle: `diskutil apfs list` reported **27,674,263,552 bytes (27.7 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **27,025,840 KiB available**.
+- Reserve/target status at the final measurement: the Mac remained **22.3 GB below** the 50 GB standing reserve and **52.3 GB below** the 80 GB maintenance target. This watchdog improved headroom but did not restore the reserve.
+- Persistent savings: **0 GB**. Refillable/disposable dependency savings: the removed directories allocated **4,328,392 KiB** before deletion, while whole-volume APFS physical free space improved by about **3.28 GB** during the measured window. Treat the recovery as disposable dependency/build relief, not durable capacity.
+- Files changed during this watchdog run:
+  - Removed `/Users/naomiivie/cortex/.worktrees/cortex-final-integration-db2-fix/node_modules` after proving a clean worktree, `origin/agent/final-integration-acceptance-active-fixtures` containment of exact head `f5203c71f691e7b1c7b0454d2dcae3d5cd9cbe92`, and no open files in the directory.
+  - Removed `/Users/naomiivie/cortex/.worktrees/cortex-final-union-proof/node_modules` after proving a clean worktree, `origin/agent/final-candidate-union-v1` containment of exact head `279b414649a8dcfd35e81bf5a1dde550f8310849`, and no open files in the directory.
+  - Removed `/Users/naomiivie/cortex/.worktrees/cortex-acceptance-e09-audit/node_modules` after proving a clean worktree, `origin/agent/adm-zip-security-fix` containment of exact head `b546a91bfdb622826cf5a21b24d15375074da38c`, and no open files in the directory.
+  - Removed `/Users/naomiivie/.codex/visualizations/2026/07/20/019f812b-557f-7493-8908-766ad681ebe6/cortex-release-progress/node_modules` after proving a clean worktree, `origin/main` containment of exact head `03250fa5b753cef10254437ad029a0cc9009c016`, and no open files in the directory.
+  - Updated this maintenance ledger only; no personal documents, provider data, native AI sessions, app databases, secrets, or unique local repository state were deleted.
+- Declined/preserved items:
+  - Preserved `/Users/naomiivie/cortex/cortex-web/node_modules` because the repository still has a local modification in `app/onboarding/page.tsx`.
+  - Preserved `/Users/naomiivie/bethel` because the repository contains multiple untracked and modified local work items, including `bethel-web/` and research/training assets.
+  - Preserved `/Users/naomiivie/davinci-resolve-mcp` because it still has untracked local work (`SLASH-COMMANDS-CHEATSHEET.md`) and trails upstream.
+  - Preserved `/Users/naomiivie/Documents/git-test` because the working directory still contains local-only `.DS_Store` state and did not require cleanup.
+  - Preserved `/Users/naomiivie/.openclaw/workspace` because it is an active local workspace with no usable Git remote/upstream and many untracked files.
+  - No cloud-offload actions, app uninstalls, simulator removals, cache purges outside the proved dependency trees, or user-data deletions were performed during this watchdog pass.
+
+### Coding-task hygiene for repositories touched in the last 7 days
+
+| Result | Repository | Remote / upstream | Notes |
+| --- | --- | --- | --- |
+| ACTIVE/KEPT | `/Users/naomiivie/.nvm` | `https://github.com/nvm-sh/nvm.git`; no branch upstream | Tool-managed dependency checkout; preserved. |
+| ACTIVE/KEPT | `/Users/naomiivie/.openclaw/workspace` | no usable git remote/upstream | Active local workspace with untracked files and no safe recoverability proof; preserved. |
+| PASS | `/Users/naomiivie/.codex/visualizations/2026/07/20/019f812b-557f-7493-8908-766ad681ebe6/cortex-release-progress` | `origin/main`; `https://github.com/thegirwhocodes/cortex-release-progress.git` | Clean worktree; not ahead of origin; disposable `node_modules` removed after remote containment proof. |
+| PASS | `/Users/naomiivie/Class on Time` | `origin/main`; `https://github.com/thegirwhocodes/Go.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Dactyl-Final` | `origin/main`; `https://github.com/thegirwhocodes/Dactyl-Final.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Education for Equality/curriculum-app` | `origin/feature/advisor-board-notion`; `https://github.com/thegirwhocodes/Education-for-Equality.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Education for Equality/sabi-server` | `origin/main`; `https://github.com/thegirwhocodes/sabi-server.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Index` | `origin/main`; `https://github.com/thegirwhocodes/Index.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Rings` | `origin/main`; `https://github.com/thegirwhocodes/Rings.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/Social Media/Ed.it` | `origin/main`; `https://github.com/thegirwhocodes/edit.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/ai-context` | `origin/main`; `https://github.com/thegirwhocodes/ai-context.git` | This watchdog updates the ledger and will commit/push the result to `origin/main`. |
+| PASS | `/Users/naomiivie/bin/downloads-cleaner` | `origin/main`; `https://github.com/thegirwhocodes/downloads-cleaner.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/cortex/runpod-lora-worker` | `origin/main`; `https://github.com/thegirwhocodes/cortex-runpod-lora-worker.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/cortex/voice-email` | `origin/main`; `https://github.com/thegirwhocodes/email.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/devsync` | `origin/main`; `https://github.com/thegirwhocodes/devsync.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/e4e-knowledge` | `origin/main`; `https://github.com/thegirwhocodes/e4e-knowledge.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/kai` | `origin/main`; `https://github.com/thegirwhocodes/kai.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/naomi-home` | `origin/main`; `https://github.com/thegirwhocodes/naomi-home.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/portfolio` | `origin/main`; `https://github.com/thegirwhocodes/portfolio.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/sage` | `origin/main`; `https://github.com/thegirwhocodes/sage.git` | Clean working tree; not ahead of origin. |
+| PASS | `/Users/naomiivie/thegirwhocodes` | `origin/main`; `https://github.com/thegirwhocodes/thegirwhocodes.git` | Clean working tree; not ahead of origin. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/Documents/git-test` | remote/upstream inspection previously showed `origin/editreadme-NI`; current working directory still contains local-only `.DS_Store` state | Preserved; no cleanup performed. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/bethel` | `origin/backend-foundation`; `https://github.com/thegirwhocodes/bethel.git` | Modified `.gitignore` plus multiple untracked work items; preserved. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/cortex/cortex-web` | `origin/main`; `https://github.com/thegirwhocodes/cortex-web.git` | Modified `app/onboarding/page.tsx`; large local `node_modules` preserved until the coding task is finished and pushed. |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/davinci-resolve-mcp` | `origin/main`; `https://github.com/samuelgursky/davinci-resolve-mcp.git` | Untracked `SLASH-COMMANDS-CHEATSHEET.md`; branch also trails upstream by 4 commits; preserved. |
+
+- Repositories marked `NEEDS PUSH`: **none** during this watchdog pass.
+- Weekly audit watchdog status: **completed successfully on Thursday, July 23, 2026**, because this run now records the current-week APFS start/end measurements, before/after cleanup report, durable-versus-refillable distinction, reserve/target status, and the required 7-day repository hygiene table.
