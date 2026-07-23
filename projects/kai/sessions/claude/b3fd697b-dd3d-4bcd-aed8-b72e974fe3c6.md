@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T20:17:56.332Z"
+ended: "2026-07-23T20:20:54.869Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -461,3 +461,86 @@ Lint clean. Now build:
 ## Claude · 2026-07-23T20:17:56.332Z
 
 [Tool: Bash]
+
+## Claude · 2026-07-23T20:18:10.064Z
+
+Build is green. Let me quickly sanity-check the plan generator with the real defaults before shipping:
+
+## Claude · 2026-07-23T20:18:19.589Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:18:29.668Z
+
+Planner is exact and always ends focused. Marking the agent work done and shipping:
+
+## Claude · 2026-07-23T20:18:33.703Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T20:18:36.529Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:18:41.127Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:18:44.347Z
+
+Legitimate lockfile sync (name + resolutions). Committing and pushing:
+
+## Claude · 2026-07-23T20:18:50.324Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:18:54.565Z
+
+Pushed. Now deploy to Vercel production (this is a user-facing feature you asked me to build):
+
+## Claude · 2026-07-23T20:18:55.283Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:20:09.356Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:20:16.106Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T20:20:23.521Z
+
+Shipped and live (200 on https://heykai.vercel.app/app). Let me record the product decision so future sessions don't undo it:
+
+## Claude · 2026-07-23T20:20:32.982Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T20:20:37.243Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T20:20:40.771Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T20:20:54.869Z
+
+Done — built, verified, shipped to production.
+
+## What changed
+
+**1. Fixed the "always 15-minute break" bug (root cause found).** The agent's state snapshot sent focus lengths but *never break lengths*, so Haiku fell back to textbook Pomodoro's famous 15. Now the snapshot carries every block length, the long-break cadence, the mode, and lock-in progress — and the prompt forbids stating any duration it can't see. Kai will now say your actual 5.
+
+**2. Lock-in budget — the headline feature.** On the idle screen there's now **"How long are we locking in?"** with 25m / 50m / 90m / 2h chips + custom. You commit to a total, and Kai lays out the whole Pomodoro plan across it (focus + breaks, **always ending focused**, budget honored exactly), runs it hands-free, and shows a live progress bar (`40 / 120 min · block 2 of 4`). By voice: *"lock in for two hours"* → Kai builds and starts the plan. Verified the planner hits the exact budget every time:
+- `50min → 25 · 5 · 20`
+- `120min → 25·5·25·5·25·5·30`
+- `180min → …·long 15·…` (long break lands on the 4th block)
+
+**3. Classic Pomodoro is now the default, adaptive is opt-in.** Block lengths use *your* exact settings — predictable, controllable — instead of the adaptive math that produced the "predeterministic" feel. Adaptive ("let Kai tune it") is a toggle in Settings.
+
+**4. Flocus-style length pickers** in Settings — clickable focus/break chips + custom, instead of buried number fields.
+
+Live at **https://heykai.vercel.app/app** (pushed to `main`, deployed to production). One thing worth a look in the browser when you can: the idle screen now leads with the lock-in card, with "Quick focus" / "Take a break" demoted to secondary — tell me if you want lock-in to take over the whole hero instead.
