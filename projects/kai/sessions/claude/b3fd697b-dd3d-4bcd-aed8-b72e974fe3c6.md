@@ -3,7 +3,7 @@ session_id: "b3fd697b-dd3d-4bcd-aed8-b72e974fe3c6"
 source: "claude"
 project: "kai"
 started: "2026-07-23T17:04:09.330Z"
-ended: "2026-07-23T21:32:08.537Z"
+ended: "2026-07-23T21:41:27.369Z"
 cwd: "-Users-naomiivie-kai"
 thread_source: "user"
 ---
@@ -569,3 +569,179 @@ where do I find settings
 ## Claude · 2026-07-23T21:32:08.537Z
 
 In the app at **https://heykai.vercel.app/app**, look at the **bottom-right corner** — there's a row of small round buttons (the dock). The settings one is the **✦ ("Customize")** button, the last icon before the fullscreen ⛶ button. Click it and the panel opens at the bottom-left with the **Timing** section (the focus/break length chips) and the adaptive toggle.
+
+## Naomi · 2026-07-23T21:34:09.628Z
+
+is the random chooser proken? it qalways so "lets' do 20miutes, a touch shorter to stay fresh"
+actually you tell me veryhting people do before shipping a prodcut - do deep research - and test kai on that - run a bynch of tests
+
+## Claude · 2026-07-23T21:34:31.751Z
+
+Good catch — that's not randomness, it's a real bug. Let me confirm the root cause and check the test setup.
+
+## Claude · 2026-07-23T21:34:32.173Z
+
+[Tool: Read]
+
+## Claude · 2026-07-23T21:35:11.198Z
+
+Confirmed on both counts. Here's the real bug:
+
+That "let's do 20 minutes, a touch shorter to stay fresh" is the **adaptive engine's** line. When I switched the default to classic, it only affected *new* users — your browser's saved settings still have `adaptive: true` (the old default), and zustand's merge keeps your saved value. Since the adaptive toggle never existed in the old UI, **nobody** turned it on deliberately, so it's safe to migrate everyone off. And there are **zero automated tests** in this repo. Let me fix both, properly.
+
+## Claude · 2026-07-23T21:35:15.235Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T21:35:18.302Z
+
+[Tool: Read]
+
+## Claude · 2026-07-23T21:35:21.870Z
+
+[Tool: Read]
+
+## Claude · 2026-07-23T21:35:30.275Z
+
+[Tool: Edit]
+
+## Claude · 2026-07-23T21:35:37.948Z
+
+[Tool: Edit]
+
+## Claude · 2026-07-23T21:35:40.875Z
+
+Now warm up the classic focus rationale:
+
+## Claude · 2026-07-23T21:35:43.870Z
+
+[Tool: Edit]
+
+## Claude · 2026-07-23T21:35:50.153Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T21:35:52.422Z
+
+Now set up a real test suite. Installing vitest:
+
+## Claude · 2026-07-23T21:35:53.026Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:36:05.891Z
+
+[Tool: Edit]
+
+## Claude · 2026-07-23T21:36:19.260Z
+
+Now the test suite — covering the timing engine, the lock-in planner, and the migration:
+
+## Claude · 2026-07-23T21:36:36.479Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T21:36:53.440Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T21:37:01.239Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T21:37:04.625Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:37:10.995Z
+
+Need to teach vitest the `@/` path alias. Adding a config:
+
+## Claude · 2026-07-23T21:37:12.262Z
+
+[Tool: Write]
+
+## Claude · 2026-07-23T21:37:16.140Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:37:30.327Z
+
+All 22 tests pass. Now lint + build to confirm nothing regressed:
+
+## Claude · 2026-07-23T21:37:31.380Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:37:59.776Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:38:31.530Z
+
+Type mismatch — the migrate return needs the persisted shape. Cast it (merge fills defaults at runtime):
+
+## Claude · 2026-07-23T21:38:34.011Z
+
+[Tool: Edit]
+
+## Claude · 2026-07-23T21:38:40.209Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:39:21.875Z
+
+Build green. Re-running the full suite to be sure the type-fix didn't disturb anything:
+
+## Claude · 2026-07-23T21:39:22.501Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:39:33.513Z
+
+Now committing, pushing, and deploying the fixes:
+
+## Claude · 2026-07-23T21:39:38.850Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:39:44.526Z
+
+[Tool: Bash]
+
+## Claude · 2026-07-23T21:41:06.677Z
+
+[Tool: TodoWrite]
+
+## Claude · 2026-07-23T21:41:27.369Z
+
+Fixed and shipped. First, the direct answer:
+
+**The "always 20 min, a touch shorter" was a real bug, not randomness.** Your browser had `adaptive: true` saved from the old default, and my classic-default switch only hit *new* users — the saved value stuck. There was never an adaptive toggle in the old UI, so nobody chose it on purpose. A one-time migration now flips it off. **Hard-refresh https://heykai.vercel.app/app** (Cmd-Shift-R) and you'll get clean "Let's do a 25 minute focus block" with your exact settings. It's live now.
+
+---
+
+## What people do before shipping — and where Kai stands
+
+I actually ran this against Kai, didn't just describe it.
+
+| Pre-ship discipline | What it means | Kai status |
+|---|---|---|
+| **Automated unit tests** | Lock the core logic so bugs can't silently return | ✅ **Added — 22 tests, all passing.** Covers the lock-in planner + the exact bugs you hit |
+| **Regression tests** | A test that fails if a fixed bug comes back | ✅ One test asserts a short break is *exactly your 5 min, never "15"* |
+| **Typecheck + lint** | Catch broken code before users do | ✅ `npm run build` + `eslint` both clean |
+| **Data migrations** | Existing users' saved state upgrades safely | ✅ Added + tested (this was your bug) |
+| **Manual smoke test** | A human clicks the real flows | ⚠️ Partial — logic verified, but I haven't driven the live UI in a browser |
+| **Cross-browser / device** | Chrome, Safari, mobile | ❌ Not done — voice/"Hey Kai" is especially browser-dependent |
+| **End-to-end tests** | Simulate a full user journey (Playwright) | ❌ None yet |
+| **Error monitoring** | Sentry catches crashes in production | ❌ Not wired (your global config wants this) |
+| **Analytics** | See what users actually do | ❌ Not wired |
+
+**What the 22 tests actually prove:** every lock-in budget (5 min → 4 hrs) fills exactly, always ends on a focus block, never stacks two breaks, and drops a long break only on the right cadence — plus classic vs. adaptive block decisions stay in bounds and snap to whole minutes (no rogue 24-min blocks). Run them yourself anytime with `npm test`.
+
+**The honest gaps, ranked by what I'd do next:**
+1. **Sentry** — your own rules call for it; right now a production crash is invisible.
+2. **A browser smoke/E2E pass** — I can drive the real app (start a lock-in, run a block, open settings, talk to Kai) and screenshot each step. I have a tool for exactly this.
+3. **Beta testers** — your `docs/testers` scaffold exists; real users surface things tests never will.
+
+Want me to knock out #1 (wire Sentry) and #2 (run a real browser walkthrough with screenshots) next?
