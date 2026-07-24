@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 818cc1ed-6045-471b-857a-9578e15ba868
+  modified: 2026-07-24T00:29:53.907Z
 ---
 
 # Sabi Monitoring — "no user error ever slips" (session 818cc1ed, Jul 23 2026)
@@ -41,7 +42,42 @@ deleted so Naomi re-signs up clean. Real-user signup→confirm→login was verif
 - The pre-existing `SENTRY_AUTH_TOKEN` on Vercel is **source-maps-only** (401 on issues) — that's why
   we added the separate personal token.
 
-## Pending (Phase 2/3)
+## Phase 2 — LIVE (cloud monitor + robot user)
+- `.github/workflows/monitor.yml` + `.github/monitor/monitor.mjs`: **GitHub Actions, every 5 min**,
+  runs **independent of Vercel** (so it catches the app/site being down). Checks uptime, new
+  user-facing Sentry issues (`age:-10m`), and the robot user. Alerts **only on NEW problems**
+  (transitions) — state in `state.json` cached between runs via `actions/cache` → no alert spam.
+- `app/api/monitoring/robot`: the **robot user** — real signup→confirm→login→cleanup against prod
+  Supabase each run. Verified `{ok:true,"step":"complete"}`. Service-role key stays on Vercel; the
+  monitor just calls the endpoint with CRON_SECRET.
+- 11 GitHub Actions secrets set via `gh secret set` (Sentry token/org, Twilio, Resend, alert email,
+  CRON_SECRET, ROBOT_URL, SENTRY_CHECKIN_URL).
+
+## Phase 3 — LIVE (dead-man's switch: the monitor is monitored)
+- Sentry **cron monitor `sabi-cloud-monitor`** (org sabi-43, project javascript-nextjs, schedule
+  `*/5`, margin 15). monitor.mjs checks in every run (`ok`, or `error` on crash). If GitHub Actions
+  ever stops, Sentry sees missed check-ins and raises the alarm. **Verified: check-ins recorded,
+  status ok.**
+- The Vercel **daily digest independently verifies** the cloud monitor is still checking in and leads
+  with "The safety monitor STOPPED — I am flying blind" if not. Two independent watchers (GitHub +
+  Vercel) ⇒ silence never means "all fine".
+
+## ⚠️ Gotchas learned (don't re-discover these)
+- **Sentry cron check-ins MUST use the DSN ingest URL** `https://o<orgid>.ingest.us.sentry.io/api/
+  <projid>/cron/<slug>/<key>/?status=ok`. The web API `/monitors/<slug>/checkins/` returns **405** on
+  POST. (Check-in helper must verify the response — the first version logged success silently.)
+- **`vercel env pull` returns EMPTY values for sensitive vars** (anything added via `vercel env add`).
+  They're set and work at runtime, just unreadable. ⚠️ This means the earlier conclusion that
+  `EMERGENCY_ALERT_PHONE` was empty was probably WRONG — it's just unreadable. Re-verify differently.
+- **Repo/branch trap:** work was being committed to local branch `feature/advisor-board-notion` while
+  `git push origin main` pushed stale local main → **nothing reached GitHub for most of the session**
+  (Vercel deploys still worked because `vercel --prod` uploads the working tree, not git).
+  Fixed by `git push origin feature/advisor-board-notion:main` (clean fast-forward) + `git checkout
+  main`. **Always confirm `git branch --show-current` before trusting a push.**
+- Vercel project is on the **Hobby** plan → its cron runs **once/day max**; that's why frequent checks
+  live in GitHub Actions.
+
+## Pending (next)
 - Wire sign-up + sign-off + dashboard error paths to `reportUserFacingError`.
 - **Real-time** alerting (Hobby cron is daily-only): Sentry alert rule/webhook → `/api/monitoring/…`
   → `sendAlert`, OR a scheduled cloud agent polling every ~30min. Token can create alert rules.
