@@ -304,7 +304,7 @@ The weekly storage automation must audit repositories touched during the previou
 
 ## Weekly audit watchdog on 2026-07-27 — current-week completion recovery
 
-- No successful `weekly-mac-storage-audit` run for the current calendar week (**Monday, July 27, 2026 through Sunday, August 2, 2026**) was present in this ledger before this watchdog pass. The most recent compliant weekly entry here was Wednesday, July 23, 2026, which is outside the current week. This run closes the gap.
+- No successful `weekly-mac-storage-audit` run for the current calendar week (**Monday, July 27, 2026 through Sunday, August 2, 2026**) was present in this ledger before this watchdog pass. The most recent compliant weekly entry here was Thursday, July 23, 2026, which is outside the current week. This run closes the gap.
 - Exact measured cleanup batch:
   - Start measurement at **17:02:53 EDT**: `diskutil apfs list` reported **47,663,378,432 bytes (47.7 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **46,545,300 KiB available**.
   - Final measurement at **17:03:28 EDT** after cleanup and a short APFS settle: `diskutil apfs list` reported **52,090,494,976 bytes (52.1 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **50,869,624 KiB available**.
@@ -342,7 +342,7 @@ The weekly storage automation must audit repositories touched during the previou
 | PASS | `/Users/naomiivie/Index` | `origin/main`; `https://github.com/thegirwhocodes/Index.git` | Clean worktree; not ahead of origin. |
 | PASS | `/Users/naomiivie/Rings` | `origin/main`; `https://github.com/thegirwhocodes/Rings.git` | Clean worktree; not ahead of origin. |
 | PASS | `/Users/naomiivie/Social Media/Ed.it` | `origin/main`; `https://github.com/thegirwhocodes/edit.git` | Clean worktree; not ahead of origin. |
-| PASS | `/Users/naomiivie/ai-context` | `origin/main`; `https://github.com/thegirwhocodes/ai-context.git` | This watchdog updates the ledger and will commit/push the result to `origin/main`. |
+| PASS | `/Users/naomiivie/ai-context` | `origin/main`; `https://github.com/thegirwhocodes/ai-context.git` | This watchdog updates the ledger; the same pass commits and pushes the result to `origin/main`. |
 | PASS | `/Users/naomiivie/bin/downloads-cleaner` | `origin/main`; `https://github.com/thegirwhocodes/downloads-cleaner.git` | Clean worktree; not ahead of origin. |
 | PASS | `/Users/naomiivie/cortex/runpod-lora-worker` | `origin/main`; `https://github.com/thegirwhocodes/cortex-runpod-lora-worker.git` | Clean worktree; not ahead of origin. |
 | PASS | `/Users/naomiivie/cortex/voice-email` | `origin/main`; `https://github.com/thegirwhocodes/email.git` | Clean worktree; not ahead of origin. |
