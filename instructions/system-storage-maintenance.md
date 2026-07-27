@@ -361,6 +361,15 @@ The weekly storage automation must audit repositories touched during the previou
 - Repositories marked `NEEDS PUSH`: **none** during this watchdog pass.
 - Weekly audit watchdog status: **completed successfully on Monday, July 27, 2026**, because this run now records the current-week APFS start/end measurements, a before/after cleanup report, the durable-versus-refillable distinction, explicit reserve/target status, and the required 7-day repository hygiene table.
 
+## Coding-task cleanup on 2026-07-27 — Cortex end-to-end quality and polish
+
+- Repository result: **PASS** for `/Users/naomiivie/cortex/.worktrees/hour-quality`. Exact head `27ea2e278ba8d329d143bb8b2e529289ed767277` is present on `origin/agent/hour-quality` and draft PR #47. The worktree was clean and matched its upstream before and after cleanup.
+- No duplicate dependency install was created. Validation reused `/Users/naomiivie/cortex/cortex-web/node_modules` through a task-created symlink. After exact remote recoverability proof, removed only that zero-allocation symlink and the task-created `.next` output, which allocated **80 KiB**. No source, secrets, auth state, native AI sessions, provider/database state, personal data, or shared dependencies were removed.
+- Start measurement at **19:04:50 EDT**: `diskutil apfs list` reported **36,410,318,848 bytes (36.4 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **35,557,988 KiB available**.
+- Final measurement at **19:05:41 EDT**: `diskutil apfs list` reported **36,408,844,288 bytes (36.4 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **35,555,680 KiB available**. The small downward drift is background APFS/VM activity and is not attributed to the 80 KiB artifact cleanup.
+- Persistent savings: **0 GB**. Refillable/disposable relief: **80 KiB allocated build output plus a zero-allocation dependency symlink**. The canonical 50 GB reserve remains unmet by about **13.6 GB**, the 80 GB target remains unmet by about **43.6 GB**, and the temporary 30 GB Cortex floor remains satisfied by about **6.4 GB**.
+- Preserved the shared checkout dependency tree because `/Users/naomiivie/cortex/cortex-web` still contains unique local work (`shot.mjs`) and other active Cortex agents reuse those dependencies. No unrelated cleanup, cache purge, cloud offload, provider mutation, merge, or deployment occurred.
+
 ## Coding-task cleanup on 2026-07-27 — Cortex onboarding and activation
 
 - Repository result: **PASS** for `/Users/naomiivie/cortex/.worktrees/hour-onboarding`. Exact head `9cc84271c2f313483c2063b41910f761d8e62b77` is present on `origin/agent/hour-onboarding` and draft PR #46. The worktree is clean and matches its upstream. Validation passed 3 focused test files / 16 tests, TypeScript no-emit, focused ESLint, and `git diff --check`; no dependency install or full duplicate build was run.
