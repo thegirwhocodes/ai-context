@@ -411,3 +411,53 @@ The weekly storage automation must audit repositories touched during the previou
 - Preserved `/Users/naomiivie/cortex/cortex-web/node_modules` (**1,178,664 KiB allocated**) because Cortex work remains active and the checkout contains Naomi-owned untracked `shot.mjs`. The unrelated file was never staged, modified, deleted, or included in either PR. Also preserved the small shared `/Users/naomiivie/.npm/_npx` cache (**11,772 KiB**) because it is not meaningful reserve recovery and may be reused.
 - Cleanup-phase start measurement at approximately **21:35 EDT**: `diskutil info /System/Volumes/Data` reported **39,491,866,624 bytes (39.5 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **38,566,272 KiB available**. Final measurement at **21:36:12 EDT** reported **39,501,967,360 bytes (39.5 GB) APFS physical free** and **38,576,140 KiB available**. No cleanup savings are claimed; the roughly 10 MB increase is background APFS/VM drift.
 - Persistent savings: **0 GB**. Refillable/disposable savings: **0 GB**. The canonical 50 GB reserve remains unmet by about **10.5 GB**, the 80 GB target remains unmet by about **40.5 GB**, and the temporary 30 GB Cortex floor remains satisfied by about **9.5 GB**. No source, secrets, personal data, native AI sessions, cloud placeholders, provider credentials, database state, Vercel production deployment, or user-owned artifacts were removed or mutated during storage hygiene.
+
+## Weekly audit on 2026-07-29 — urgent reserve shortfall
+
+- Start measurement at **14:00:19 EDT**: `diskutil apfs list` reported **33,662,812,160 bytes (33.7 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **32,873,856 KiB available**. This is **urgent** because the Mac was about **16.3 GB below** the 50 GB standing reserve and about **46.3 GB below** the 80 GB maintenance target.
+- Final measurement at **14:04:32 EDT** after a short APFS settle: `diskutil apfs list` reported **37,427,675,136 bytes (37.4 GB) APFS physical free** and `df -k /System/Volumes/Data` reported **36,550,464 KiB available**. Whole-volume physical free space improved by **3,764,862,976 bytes (about 3.76 GB)** during the measured window. Mounted simulator/runtime APFS containers on `disk5` and `disk7` were observed and explicitly excluded from claimed recovery.
+- Removed only verified disposable/regenerable data. Pre-cleanup allocated scan total: **3,938,492 KiB**. Treat the split as:
+  - Durable/persistent relief unlikely to refill immediately: **1,865,504 KiB** from completed staged updater payloads and disposable staging/build leftovers.
+  - Refillable/disposable cache relief: **2,072,988 KiB** from developer/runtime/app caches that may repopulate with use.
+- Exact paths changed in this run:
+  - Removed `/Users/naomiivie/Library/Caches/com.readdle.SparkDesktop/org.sparkle-project.Sparkle` (**1,012,688 KiB**) after confirming Spark Desktop was not running and `lsof +D` showed no open files.
+  - Removed `/Users/naomiivie/Library/Caches/com.anthropic.claudefordesktop.ShipIt/update.WcOHJz8` (**772,100 KiB**) after confirming no open files under the staged Claude updater payload.
+  - Removed `/Users/naomiivie/.cache/codex-runtimes` (**1,583,072 KiB**) as disposable Codex runtime cache.
+  - Removed `/Users/naomiivie/.codex/.tmp/plugins` (**78,940 KiB**) as disposable Codex plugin staging.
+  - Removed `/Users/naomiivie/.codex/visualizations/2026/07/20/019f812b-557f-7493-8908-766ad681ebe6/cortex-release-progress/dist` (**1,776 KiB**) after proving the repo was clean and remotely recoverable.
+  - Removed `/Users/naomiivie/Library/Caches/node-gyp` (**129,112 KiB**) and `/Users/naomiivie/Library/Caches/Homebrew` (**99,804 KiB**) as regenerable developer caches.
+  - Removed `/Users/naomiivie/Library/Caches/Spark Desktop` (**213,644 KiB**) and `/Users/naomiivie/Library/Caches/com.readdle.SparkDesktop.helper` (**47,356 KiB**) after confirming Spark Desktop was not running and no files were open there.
+- Cloud verification evidence: **none required in this run**. No user documents were moved, archived, evicted, or deleted. OneDrive/iCloud providers, manifests, and recovery notes were unchanged.
+- Protected/skipped items and why they were preserved:
+  - Preserved `/Users/naomiivie/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle` (**about 1.93 GiB**) because ChatGPT/Codex and its Sparkle updater were actively running, including an open `Updater.app` process under that cache root.
+  - Preserved `/Users/naomiivie/Library/Caches/Codex` (**about 129 MiB**) because active Codex processes had open files inside it.
+  - Preserved `/Users/naomiivie/Library/Caches/com.spotify.client` (**about 655 MiB**) because Spotify was actively running with open files in the cache root.
+  - Preserved `/Users/naomiivie/Movies/CapCut/User Data/Cache` (**about 2.11 GiB**) because CapCut was actively running with open files in the cache root.
+  - Preserved `/Library/Developer/CoreSimulator/Caches` (**about 3.70 GiB**) because CoreSimulator services and the installed iOS 18.6 runtime were active; no unavailable devices or runtimes were present to remove via supported tooling.
+  - Preserved `/Users/naomiivie/cortex/cortex-web/node_modules` (**1,178,664 KiB**) because `/Users/naomiivie/cortex/cortex-web` still has Naomi-owned untracked `shot.mjs`, so the repo remains `UNIQUE LOCAL WORK`.
+  - Preserved `/Users/naomiivie/.nvm` and its Node installations as active tool-managed developer dependencies.
+- Repository hygiene for repositories touched in the last 7 days (excluding `~/Library` and cloud-provider internals):
+
+| Result | Repository | Remote / branch / upstream | Ahead / behind | HEAD on remote | Unique local work / secrets | Bytes reclaimed |
+| --- | --- | --- | --- | --- | --- | --- |
+| CLEANED | `/Users/naomiivie/.codex/.tmp/plugins` | no usable remote; `main`; no upstream | n/a | no | Disposable plugin staging repo with no untracked work or secrets | **80,834,560 B** |
+| CLEANED | `/Users/naomiivie/.codex/visualizations/2026/07/20/019f812b-557f-7493-8908-766ad681ebe6/cortex-release-progress` | `https://github.com/thegirwhocodes/cortex-release-progress.git`; `main`; `origin/main` | 0 / 0 | yes | No local work; removed only ignored `dist` | **1,818,624 B** |
+| ACTIVE/KEPT | `/Users/naomiivie/.nvm` | `https://github.com/nvm-sh/nvm.git`; detached HEAD; no upstream | n/a | no | Tool-managed dependency checkout; ignored `versions/` preserved | **0 B** |
+| PASS | `/Users/naomiivie/Education for Equality/curriculum-app` | `https://github.com/thegirwhocodes/Education-for-Equality.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; ignored secrets include `.env.local`, `.env.production.local`, `.env.sentry-build-plugin`, `.env.supabase-management.local`, `.env.vercel` | **0 B** |
+| PASS | `/Users/naomiivie/Education for Equality/sabi-server` | `https://github.com/thegirwhocodes/sabi-server.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; ignored secrets include `.env` and `secrets/` | **0 B** |
+| PASS | `/Users/naomiivie/ai-context` | `https://github.com/thegirwhocodes/ai-context.git`; `main`; `origin/main` | 0 / 0 before this ledger update | yes | Clean worktree before this update; this run commits and pushes the new ledger | **0 B** |
+| UNIQUE LOCAL WORK | `/Users/naomiivie/cortex/cortex-web` | `https://github.com/thegirwhocodes/cortex-web.git`; `agent/chat-provider-resilience`; `origin/agent/chat-provider-resilience` | 0 / 0 | yes | Untracked `shot.mjs`; ignored secrets include `.env.local`, `.env.vercel.secrets`, `.voicemode.env` | **0 B** |
+| PASS | `/Users/naomiivie/design-portfolio` | `https://github.com/thegirwhocodes/design-portfolio.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; ignored secret `.env.local` preserved | **0 B** |
+| PASS | `/Users/naomiivie/e4e-knowledge` | `https://github.com/thegirwhocodes/e4e-knowledge.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; no local-only source changes | **0 B** |
+| PASS | `/Users/naomiivie/kai` | `https://github.com/thegirwhocodes/kai.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; ignored secret `.env.local` preserved | **0 B** |
+| PASS | `/Users/naomiivie/sage` | `https://github.com/thegirwhocodes/sage.git`; `main`; `origin/main` | 0 / 0 | yes | Clean worktree; ignored OAuth/account secret files preserved under `oauth/` and `desktop/backend/.env` | **0 B** |
+
+- Repositories marked `NEEDS PUSH`: **none** in this run.
+- Failures / blockers:
+  - The Mac remains below reserve after all high-confidence automated cleanup in this pass.
+  - The largest remaining local candidates are blocked by active processes (`ChatGPT/Codex`, `Spotify`, `CapCut`, `CoreSimulator`) or by unique local repository state (`cortex/cortex-web`).
+- Smallest next actions to move toward **80 GB** safely:
+  - Quit or finish the active ChatGPT/Codex update, then re-audit `/Users/naomiivie/Library/Caches/com.openai.codex/org.sparkle-project.Sparkle` (**about 1.93 GiB**) once no updater process or open files remain.
+  - Resolve or preserve `/Users/naomiivie/cortex/cortex-web/shot.mjs`, commit/push the intended repo state if appropriate, then remove the preserved **1,178,664 KiB** `node_modules` tree if the task is complete and no other active local worktree depends on it.
+  - Revisit Spotify and CapCut only after those apps are fully quit; they currently protect about **655 MiB** and **2.11 GiB** of active cache state respectively.
+  - Revisit `/Library/Developer/CoreSimulator/Caches` and the installed iOS 18.6 runtime only through supported simulator/Xcode tooling when CoreSimulator is idle; no unavailable runtime/device cleanup was available during this run.
