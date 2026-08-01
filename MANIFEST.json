@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3166,
-  "generated_at": "2026-08-01T17:49:44+00:00",
+  "generated_at": "2026-08-01T18:17:58+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -119,9 +119,9 @@
       }
     },
     "sage": {
-      "records": 80,
+      "records": 82,
       "sources": {
-        "codex": 80
+        "codex": 82
       }
     },
     "social-media": {
@@ -138,7 +138,7 @@
       }
     }
   },
-  "record_count": 526,
+  "record_count": 528,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
