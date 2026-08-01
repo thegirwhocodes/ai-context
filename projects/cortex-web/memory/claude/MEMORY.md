@@ -17,5 +17,9 @@
 - [MUST re-read after compaction](feedback_compaction_reread.md) -- Re-read ENTIRE session .txt after compaction, no exceptions
 - [feedback_cortex.md](feedback_cortex.md) — Naomi's corrections and preferences: no dismissing LoRA, no algorithms instead of LLMs, research before coding
 - [feedback_plan_first.md](feedback_plan_first.md) — Always research + update plan + get approval before coding new features
+- [Ask first — no autonomous decisions](feedback_ask_first.md) — Do not decide anything without Naomi; ask before every choice, plan, or side effect
+- [Terminal open — auto-trust folder](feedback_terminal_open_trust.md) — Answer the claude CLI "trust this folder?" prompt automatically when opening terminals
+- [Terminal open — bypass permissions default](feedback_terminal_open_bypass.md) — Always launch claude with --dangerously-skip-permissions when opening terminals
+- [Terminal open — take through full loop](feedback_terminal_open_full_loop.md) — Every opened terminal must arrive ready for first message (right dir, past trust prompt, bypass mode)
 - [feedback_email_agent.md](feedback_email_agent.md) — Naomi has pending feedback on the email agent to address in a later session
 - [EXTREME EXCELLENCE ON EVERYTHING](feedback_thorough.md) — Standing standard, all Claudes: ALL work (code, research, answers, anything) must be extremely excellent + thorough, no matter how long, unless told otherwise; the user knows everything and will catch anything less

@@ -1,6 +1,6 @@
 {
-  "curated_files_copied": 3166,
-  "generated_at": "2026-08-01T22:36:22+00:00",
+  "curated_files_copied": 3174,
+  "generated_at": "2026-08-01T23:16:30+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -24,17 +24,17 @@
       }
     },
     "cortex": {
-      "records": 165,
+      "records": 167,
       "sources": {
-        "claude": 15,
+        "claude": 17,
         "codex": 35,
         "codex-subagent": 115
       }
     },
     "cortex-web": {
-      "records": 14,
+      "records": 17,
       "sources": {
-        "claude": 14
+        "claude": 17
       }
     },
     "desktop": {
@@ -138,7 +138,7 @@
       }
     }
   },
-  "record_count": 536,
+  "record_count": 541,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
