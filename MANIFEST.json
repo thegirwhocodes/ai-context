@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3166,
-  "generated_at": "2026-08-01T18:44:15+00:00",
+  "generated_at": "2026-08-01T18:49:36+00:00",
   "project_count": 21,
   "projects": {
     "bethel": {
@@ -80,10 +80,10 @@
       }
     },
     "education-for-equality": {
-      "records": 190,
+      "records": 191,
       "sources": {
         "claude": 117,
-        "codex": 54,
+        "codex": 55,
         "codex-subagent": 19
       }
     },
@@ -138,7 +138,7 @@
       }
     }
   },
-  "record_count": 530,
+  "record_count": 531,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
