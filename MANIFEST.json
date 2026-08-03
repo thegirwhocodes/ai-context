@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3174,
-  "generated_at": "2026-08-03T19:14:24+00:00",
+  "generated_at": "2026-08-03T19:15:37+00:00",
   "project_count": 22,
   "projects": {
     "bethel": {
@@ -24,9 +24,9 @@
       }
     },
     "cortex": {
-      "records": 176,
+      "records": 177,
       "sources": {
-        "claude": 21,
+        "claude": 22,
         "codex": 35,
         "codex-subagent": 120
       }
@@ -144,7 +144,7 @@
       }
     }
   },
-  "record_count": 559,
+  "record_count": 560,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
