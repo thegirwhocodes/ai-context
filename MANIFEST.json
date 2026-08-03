@@ -1,7 +1,7 @@
 {
   "curated_files_copied": 3174,
-  "generated_at": "2026-08-03T18:51:44+00:00",
-  "project_count": 21,
+  "generated_at": "2026-08-03T19:12:13+00:00",
+  "project_count": 22,
   "projects": {
     "bethel": {
       "records": 9,
@@ -32,9 +32,9 @@
       }
     },
     "cortex-web": {
-      "records": 18,
+      "records": 20,
       "sources": {
-        "claude": 18
+        "claude": 20
       }
     },
     "desktop": {
@@ -118,6 +118,12 @@
         "claude": 1
       }
     },
+    "library-cloudstorage-onedrive-wesleyan-edu-downloads-app-sleep": {
+      "records": 1,
+      "sources": {
+        "claude": 1
+      }
+    },
     "sage": {
       "records": 87,
       "sources": {
@@ -138,7 +144,7 @@
       }
     }
   },
-  "record_count": 555,
+  "record_count": 558,
   "redactions": {
     "access-token": 4,
     "ami-secret": 2,
