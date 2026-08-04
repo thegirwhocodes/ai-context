@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-08-04T21:01:58+00:00
+Generated: 2026-08-04T22:05:41+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -9,9 +9,10 @@ Read the relevant project index and curated memory first; open full session file
 
 - [bethel](projects/bethel/INDEX.md) — 9 records
 - [bethel-email-agent](projects/bethel-email-agent/INDEX.md) — 1 records
+- [businesses](projects/businesses/INDEX.md) — 1 records
 - [class-on-time](projects/class-on-time/INDEX.md) — 2 records
 - [cortex](projects/cortex/INDEX.md) — 180 records
-- [cortex-web](projects/cortex-web/INDEX.md) — 23 records
+- [cortex-web](projects/cortex-web/INDEX.md) — 24 records
 - [desktop](projects/desktop/INDEX.md) — 1 records
 - [developer](projects/developer/INDEX.md) — 1 records
 - [documents](projects/documents/INDEX.md) — 5 records
