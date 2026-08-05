@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-08-05T16:25:11+00:00
+Generated: 2026-08-05T16:28:25+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -12,7 +12,7 @@ Read the relevant project index and curated memory first; open full session file
 - [businesses](projects/businesses/INDEX.md) — 1 records
 - [class-on-time](projects/class-on-time/INDEX.md) — 2 records
 - [cortex](projects/cortex/INDEX.md) — 182 records
-- [cortex-web](projects/cortex-web/INDEX.md) — 25 records
+- [cortex-web](projects/cortex-web/INDEX.md) — 26 records
 - [desktop](projects/desktop/INDEX.md) — 1 records
 - [developer](projects/developer/INDEX.md) — 1 records
 - [documents](projects/documents/INDEX.md) — 5 records
