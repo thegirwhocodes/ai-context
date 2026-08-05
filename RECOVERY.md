@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-08-05T17:00:44+00:00
+Generated: 2026-08-05T17:01:26+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -20,7 +20,7 @@ Read the relevant project index and curated memory first; open full session file
 - [downloads-app-rings-version-2-1-multi-device-jan-2025](projects/downloads-app-rings-version-2-1-multi-device-jan-2025/INDEX.md) — 3 records
 - [downloads-app-sleep](projects/downloads-app-sleep/INDEX.md) — 3 records
 - [downloads-app-social-media](projects/downloads-app-social-media/INDEX.md) — 3 records
-- [education-for-equality](projects/education-for-equality/INDEX.md) — 194 records
+- [education-for-equality](projects/education-for-equality/INDEX.md) — 195 records
 - [home](projects/home/INDEX.md) — 6 records
 - [kai](projects/kai/INDEX.md) — 6 records
 - [library](projects/library/INDEX.md) — 14 records
