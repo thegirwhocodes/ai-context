@@ -1,0 +1,1 @@
+- [Businesses project overview](project-overview.md) — Naomi's personal accelerator: research + 24-month curriculum + Holdco Command tool, both deployed on Vercel
