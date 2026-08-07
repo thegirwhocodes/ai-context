@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-08-07T12:34:43+00:00
+Generated: 2026-08-07T16:17:28+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -27,6 +27,6 @@ Read the relevant project index and curated memory first; open full session file
 - [library-cloudstorage-onedrive-wesleyan-edu-classes](projects/library-cloudstorage-onedrive-wesleyan-edu-classes/INDEX.md) — 12 records
 - [library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation](projects/library-cloudstorage-onedrive-wesleyan-edu-classes-econ-333-financial-intermediation/INDEX.md) — 1 records
 - [library-cloudstorage-onedrive-wesleyan-edu-downloads-app-sleep](projects/library-cloudstorage-onedrive-wesleyan-edu-downloads-app-sleep/INDEX.md) — 1 records
-- [sage](projects/sage/INDEX.md) — 95 records
+- [sage](projects/sage/INDEX.md) — 97 records
 - [social-media](projects/social-media/INDEX.md) — 5 records
 - [social-media-ed-it](projects/social-media-ed-it/INDEX.md) — 8 records
