@@ -17,6 +17,7 @@
     "client-secret": 2,
     "clientsecret": 1,
     "elevenlabs-api-key": 10,
+    "email-token": 4,
     "expo-apple-app-specific-password": 3,
     "external-google-secret": 1,
     "github-token": 3,
@@ -45,5 +46,5 @@
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-08-08T20:54:56+00:00"
+  "generated_at": "2026-08-08T21:26:55+00:00"
 }
