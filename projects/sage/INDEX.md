@@ -2,6 +2,8 @@
 
 | Date | Source | Session |
 |---|---|---|
+| 2026-08-08T14:01:57 | codex | [019fe1ae-31d5-7bc1-9cf9-bb4eb4859ef8](sessions/codex/019fe1ae-31d5-7bc1-9cf9-bb4eb4859ef8.md) |
+| 2026-08-08T12:47:40 | codex | [019fe16a-2f48-7080-b75a-5f05cd9d2195](sessions/codex/019fe16a-2f48-7080-b75a-5f05cd9d2195.md) |
 | 2026-08-07T15:05:58 | codex | [019fdcc2-713f-7921-aced-63e442ed9f52](sessions/codex/019fdcc2-713f-7921-aced-63e442ed9f52.md) |
 | 2026-08-07T14:03:30 | codex | [019fdc89-408e-73d3-911a-8b640c587476](sessions/codex/019fdc89-408e-73d3-911a-8b640c587476.md) |
 | 2026-08-07T12:31:38 | codex | [019fdc35-25ed-77c0-a660-2792d13cbebd](sessions/codex/019fdc35-25ed-77c0-a660-2792d13cbebd.md) |
