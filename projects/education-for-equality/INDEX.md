@@ -2,6 +2,8 @@
 
 | Date | Source | Session |
 |---|---|---|
+| 2026-08-07T23:51:41 | codex-subagent | [019fde9f-f539-77b0-aa29-5dfbb9332e60](research/codex-subagents/019fde9f-f539-77b0-aa29-5dfbb9332e60.md) |
+| 2026-08-07T23:50:09 | codex-subagent | [019fde9f-e510-7fb1-83b2-cbd21f4add9d](research/codex-subagents/019fde9f-e510-7fb1-83b2-cbd21f4add9d.md) |
 | 2026-08-07T22:31:47 | codex-subagent | [019fde27-d6c8-7e30-9523-7b20480e20f8](research/codex-subagents/019fde27-d6c8-7e30-9523-7b20480e20f8.md) |
 | 2026-08-07T17:31:20 | codex | [019fdd47-89de-76e0-9a52-082938b6a8bd](sessions/codex/019fdd47-89de-76e0-9a52-082938b6a8bd.md) |
 | 2026-08-07T17:22:39 | claude | [46b60178-27ca-4a43-95b6-beb48af3a893](sessions/claude/46b60178-27ca-4a43-95b6-beb48af3a893.md) |
