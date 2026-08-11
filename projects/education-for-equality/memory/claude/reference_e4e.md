@@ -16,6 +16,7 @@ metadata:
     - 1b27663d
     - 262aa5fe
   originSessionId: c46a7821-57d5-46ff-9dac-304ed0ef2cbc
+  modified: 2026-08-11T01:10:10.895Z
 ---
 
 # E4E Quick Reference
@@ -28,7 +29,7 @@ metadata:
 - **Domain registrar**: Cloudflare DNS, $7.50/year
 
 ## ElevenLabs Conversational AI (phone / ConvAI dashboard)
-- **Agent id**: `agent_5701kp7djbvreqk9cb3mf4g55n09` (dashboard name: Education for Equality) — 1b27663d
+- **Agent id (CORRECTED Aug 7 2026)**: the real February-hackathon agent is `agent_7001kjhsraavfz28xcy7t7mb7ey6` ("Education for Equality"), in the ElevenLabs account whose `E4e test` API key (ending `19d3`) was created **Feb 28 2026** — that key is the one Sabi's `.env` actually uses. `agent_5701kp7djbvreqk9cb3mf4g55n09` lives in her **second** ElevenLabs account, was **created Apr 14 2026**, and is a later recreation carrying the hackathon design — it was mislabelled "canonical" in earlier notes. Keys in that second account (`Indomitable Caracal` …4f14, `Hackathon` …0ae0) were both created Apr 12. — 1b27663d, corrected by codex 019fdd47
 - **Twilio native integration — voice URL** (what Twilio “A call comes in” shows when routed through ElevenLabs US ingress): `https://api.us.elevenlabs.io/twilio/inbound_call` — 262aa5fe
 - **Custom LLM** (when not using EL built-in model): `https://eduforequality.org/api/sabi/voice/llm` (OpenAI-compatible; see `curriculum-app/app/api/sabi/voice/llm/route.ts`)
 - **Agent prompt + ops table**: `curriculum-app/docs/elevenlabs-agent-prompt.md`

@@ -1,8 +1,18 @@
 ---
-name: Education for Equality — Technical Stack
-description: All technology across Sabi voice pipeline, curriculum app, server infrastructure, and database
-type: project
-sessions: [ff1faa52, efd7d7d2, 296c88b8, d72670bf, 1b27663d, 262aa5fe]
+name: education-for-equality-technical-stack
+description: "All technology across Sabi voice pipeline, curriculum app, server infrastructure, and database"
+metadata:
+  node_type: memory
+  type: project
+  sessions:
+    - ff1faa52
+    - efd7d7d2
+    - 296c88b8
+    - d72670bf
+    - 1b27663d
+    - 262aa5fe
+  originSessionId: 1f5e4922-dac1-47db-927f-e6ffa3f36d07
+  modified: 2026-08-11T01:10:16.200Z
 ---
 
 # Education for Equality — Technical Stack
@@ -20,7 +30,7 @@ sessions: [ff1faa52, efd7d7d2, 296c88b8, d72670bf, 1b27663d, 262aa5fe]
 - Jul 7 2026 auth UX: `eduforequality.org/sign-in` and `/sign-up` now show email/password as the primary auth path, with magic link as a backup button and Google button present in the UI. Supabase read-back: `external_email_enabled=true`, `disable_signup=false`, `external_google_enabled=false`, no Google client id/secret configured. The local file `~/.config/google-calendar-mcp/gcp-oauth.keys.json` is an `installed` OAuth client for desktop/calendar tooling, not a Google web OAuth client for Supabase; do not use it for site login. To make Google sign-in actually work, create/configure a Google OAuth **Web application** client and set it in Supabase Auth Providers > Google, then enable the provider. - codex-20260707-password-google-auth
 
 ## Sabi Voice Pipeline
-- **ElevenLabs ConvAI (MIT-era / optional phone path)** — Agent `agent_5701kp7djbvreqk9cb3mf4g55n09` (“Education for Equality”). Twilio native EL ingress URL: `https://api.us.elevenlabs.io/twilio/inbound_call` (agent binding is in EL Phone settings, not in URL). Ref: `curriculum-app/docs/elevenlabs-agent-prompt.md` — 1b27663d, 262aa5fe
+- **ElevenLabs ConvAI (MIT-era / optional phone path)** — Agent `agent_7001kjhsraavfz28xcy7t7mb7ey6` (“Education for Equality”), in the original Feb-2026 hackathon account (`E4e test` key ending `19d3`, created Feb 28) — this is the account Sabi's `.env` uses. ⚠️ Earlier notes called `agent_5701kp7djbvreqk9cb3mf4g55n09` canonical; that record is in her **second** ElevenLabs account and was created **Apr 14 2026** (a recreation carrying the hackathon design), so it is NOT the February original. Twilio native EL ingress URL: `https://api.us.elevenlabs.io/twilio/inbound_call` (agent binding is in EL Phone settings, not in URL). Ref: `curriculum-app/docs/elevenlabs-agent-prompt.md` — 1b27663d, 262aa5fe, corrected codex 019fdd47
 - **Telephony**: Africa's Talking (NGN 3/min = $0.00188/min incoming, confirmed Mar 2026) + number NGN 5,375/mo
 - **STT**: Whisper large-v3 on GPU (self-hosted, Nigerian English prompt bias) — also Groq Whisper (free tier) for web demo
 - **LLM**: Claude Haiku API (primary, $0.0045/call) + Ollama Llama 3.1 8B (fallback, self-hosted)
