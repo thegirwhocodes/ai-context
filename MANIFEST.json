@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3176,
-  "generated_at": "2026-08-11T01:25:52+00:00",
+  "generated_at": "2026-08-11T01:27:44+00:00",
   "project_count": 24,
   "projects": {
     "bethel": {
@@ -158,16 +158,16 @@
   },
   "record_count": 606,
   "redactions": {
-    "access-token": 4,
+    "access-token": 5,
     "ami-secret": 2,
     "anthropic-api-key": 11,
     "anthropic-key": 1,
     "at-api-key": 6,
     "at-token": 3,
     "attoken": 3,
-    "auth-token": 8,
-    "authorization-token": 14,
-    "authtoken": 5,
+    "auth-token": 10,
+    "authorization-token": 18,
+    "authtoken": 6,
     "bearer-token": 5,
     "canva-client-secret": 2,
     "cerebras-api-key": 2,
@@ -191,7 +191,7 @@
     "notion-token": 6,
     "openai-api-key": 2,
     "postgres-password": 1,
-    "refresh-token": 5,
+    "refresh-token": 6,
     "runpod-api-key": 3,
     "runpod-key": 2,
     "s3-access-key": 8,
