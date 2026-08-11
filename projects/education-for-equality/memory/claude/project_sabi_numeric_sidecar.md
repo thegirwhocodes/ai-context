@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 1f5e4922-dac1-47db-927f-e6ffa3f36d07
-  modified: 2026-08-11T01:22:13.951Z
+  modified: 2026-08-11T21:14:32.698Z
 ---
 
 # Numeric STT sidecar — Phase 1 live (10 Aug 2026)
@@ -18,6 +18,17 @@ On every finished **numeric** turn of a Gemini Live call, Groq `whisper-large-v3
 
 **Reading results:** records land at `/shared/audio/numeric_sidecar/<call_uuid>.jsonl` on the Hetzner box (136.243.8.51). Run `docker exec sabi-server python scripts/numeric_sidecar_report.py` (add `--turns` for per-turn rows). It reports agreement rate, would-have-graded precision, "sidecar rescues" (Gemini's transcript missed the number, the two engines agreed on it), latency percentiles and any WRONG agreements.
 
-**Measured blocker for Phase 3:** local Whisper runs on **CPU** in the current compose (Groq ≈0.31 s, local ≈11–14 s on real archived clips). Nothing can pass a 1.5 s live decision deadline until local STT gets GPU or a smaller/faster model, so live consensus grading is blocked on infrastructure as well as on the labelled Nigerian PSTN bake-off (≥98% precision on accepted values).
+**Second vote is Azure Speech as of 11 Aug 2026** (commit `d26a60f`). Gold-clip bake-off on the 7 labelled Nigerian phone clips in `output/sabi-unheard-clips-july-2026/`:
+
+| engine | hits | median latency |
+|---|---|---|
+| Groq `whisper-large-v3` | 0/7 | 0.25 s |
+| local faster-whisper + number hotwords | 2/7 | 11 s |
+| Gemini Live (raw + contextual) | 2/7 | — |
+| **Azure Speech** | **4/7** | **0.71 s** |
+
+Azure cracked `thirty-turn-05` — the clip every Whisper renders "Tati" — and is the only engine ever to recover a child's name ("Her name is Gideon"). Two honest caveats worth repeating in any pitch: **`en-NG` and `en-US` returned byte-identical output on all 7 clips**, so the win is Azure's model, NOT the Nigerian locale; and Azure's confidence is useless as a gate (correct "30" scored 0.07, wrong "Woodward" 0.048) — it's recorded but never used to accept an answer. Azure resource: `sabi-speech-test`, RG `sabi-stt`, **East US**, Free F0, on her **Azure for Students** subscription (⚠️ Wesleyan tenant — same migration trap as the Google billing account; move to a company subscription before production). Key/region live at `secrets/AZURE_SPEECH_KEY` + `AZURE_SPEECH_REGION`; `SABI_NUMERIC_SIDECAR_SECOND_ENGINE=auto|azure|local_whisper`.
+
+**Latency is no longer the Phase 3 blocker** (Groq 0.31 s + Azure 0.71 s both clear 1.5 s). Local Whisper stays available as the offline fallback but is CPU-bound at 11–14 s. What remains before consensus can grade: the labelled Nigerian PSTN bake-off and its ≥98% accepted-value precision gate — which real calls now build automatically, since each record pairs the engines' transcripts with the item's known expected answer.
 
 Design + status table: `sabi-server/docs/PARALLEL_STT_FOR_GEMINI_LIVE_RESEARCH_2026-08-07.md`. Related: [[project-sabi-gemini-live]], [[project-stt-noise-accent-research]]
