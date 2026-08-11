@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-08-11T00:31:26+00:00
+Generated: 2026-08-11T00:34:59+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
