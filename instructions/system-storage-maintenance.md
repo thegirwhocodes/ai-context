@@ -478,3 +478,114 @@ The weekly storage automation must audit repositories touched during the previou
   - Native Codex/Claude sessions, archived sessions, plugins, application state, Keychain secrets, and the new Vercel acceptance configuration were preserved.
   - Active CapCut cache (about **2,393,984 KiB**), active Spotify cache (about **662,456 KiB**), CoreSimulator runtime/cache state, CloudKit/OneDrive indexes, Spark's active mail database, Messages, Photos, personal media, and all cloud placeholders were left untouched.
   - The final **24.2 GB** physical-free measurement remains about **25.8 GB below** the 50 GB standing reserve, **55.8 GB below** the 80 GB target, and **5.8 GB below** the temporary 30 GB Cortex floor. Further recovery requires a separate supported/user-controlled decision such as fully quitting active CapCut/Spotify before re-auditing their caches or reviewing the installed simulator runtime through Xcode.
+
+## Cleanup on 2026-08-15 — Xcode simulator runtimes (Sleep Well iOS device build)
+
+Context: a Sleep Well iPhone device build. `xcodebuild -downloadPlatform iOS` was run to install
+the iOS device platform; it **also** pulled the iOS 26.3.1 **Simulator** runtime (7.8 GB) as a side
+effect that the device build did not need. That download drove the volume down to about 14 GB free
+with swap effectively exhausted (11.8 GB of 12 GB used, ~455 MB free, 907k pageouts). At that point
+trivial operations degraded badly — a plain `ls` on the project directory took over 45 minutes, and
+one `grep` returned `Operation timed out`. The machine was rebooted between 18:30 and 11:45, after
+which swap reset to 3 GB total.
+
+Removed both simulator runtimes with Apple's supported tooling:
+
+- iOS 26.3.1 (23D8133), UUID `D264A75D-5614-4F05-A202-AE551F9A695F`, 7.8 GB — the side-effect download
+- iOS 18.6 (22G86), UUID `F57AF99A-1067-4B79-93A3-703F6E185C24`, 8.2 GB — pre-existing, unused
+
+Measured whole-volume APFS physical free space: **20.5 GB at 12:20:27 EDT → 36.5 GB at 12:20:53 EDT**,
+a **+16.0 GB** change matching the two reported image sizes. `xcrun simctl list runtimes` afterwards
+reports no iOS runtimes. The iOS **device** platform was deliberately retained — it is what makes the
+iPhone resolve as a build destination.
+
+Classification: disposable developer dependency. These are re-downloadable but do not silently refill
+the way caches do, so this is closer to durable than the cache clears recorded on 2026-07-16. It is
+still not permanent: a future `-downloadPlatform` run will re-add a simulator runtime unless a device
+destination is specified.
+
+### Operational gotcha worth keeping
+
+`xcrun simctl runtime delete` matches on the **UUID**, not the runtime identifier. Three earlier
+attempts using `com.apple.CoreSimulator.SimRuntime.iOS-26-3` and the bare version string `26.3.1` all
+returned "No runtime disk images or bundles found matching …", which reads like the runtime is
+undeletable when it is not. Get UUIDs from `xcrun simctl runtime list -v`, which also prints
+`Deletable: YES/NO` and the real image size. `xcodebuild -deleteComponent` does not accept any
+simulator-runtime component name and is a dead end here.
+
+### Also removed earlier the same day
+
+- `~/cortex/cortex-web/node_modules` (1.16 GB) — recoverability proved first: clean working tree,
+  HEAD `7e99f25` present on `origin/agent/golden-hour-redesign`. Regenerates with `npm install`.
+  This supersedes the 2026-07-16 note that cortex-web held unpushed edits; it was clean on re-check.
+- `web/node_modules` in the Sleep Well repo (353 MB) — gitignored, regenerates with `npm install`.
+  Note this was deleted while a concurrent Codex/Claude session was mid-build in that directory.
+- `~/Library/Developer/Xcode/DerivedData/*` (15 MB).
+
+Refillable-dependency savings: about 1.5 GB. Reported separately from the 16.0 GB above.
+
+### Status against the standing targets
+
+36.5 GB free is **13.5 GB below the 50 GB reserve** and **43.5 GB below the 80 GB target**. An Xcode
+update to 26.5 is pending (needed because the iPhone runs iOS 26.5 and Xcode 26.2 has no matching
+developer disk image); that will consume a large part of the reclaimed space. Re-measure after it
+completes.
+
+### Correction to the 2026-08-15 entry — simulator runtimes are NOT freely deletable
+
+The entry above is wrong in one important way and this supersedes it. Deleting the simulator
+runtime whose version **matches a physical device you build to** breaks device builds.
+
+After `xcodebuild -downloadPlatform iOS` installed the iOS 26.5 platform, the iPhone (iOS 26.5)
+became an eligible destination. Deleting the iOS 26.5 *Simulator* runtime immediately made it
+ineligible again with `iOS 26.5 is not installed. Please download and install the platform from
+Xcode > Settings > Components`. The device platform and its matching simulator runtime are coupled;
+removing the runtime marks the whole platform incomplete. Recovering it cost a second ~16 GB
+download.
+
+Correct rule: a simulator runtime is disposable **only** if no attached device runs that iOS
+version. Here iOS 18.6 (8.2 GB) was genuinely disposable and was removed. iOS 26.5 (7.9 GB) must
+stay for as long as device builds to Naomi's iPhone are wanted.
+
+Also note `-downloadPlatform iOS` pulls the simulator runtime alongside device support with no flag
+to skip it, so budget the full ~16 GB rather than the device platform alone.
+
+### Root cause of the day's disk spiral — repeated scans of a dehydrated OneDrive folder
+
+Most of the drain was self-inflicted and future sessions should avoid repeating it. The old project
+checkout at `~/Library/CloudStorage/OneDrive-wesleyan.edu/Downloads/App/Sleep` is dehydrated —
+`project.pbxproj` reported `size=61229 blocks=0`. Running `find`, `du`, and `grep` across that tree
+forces OneDrive to **materialise every file touched**, so each diagnostic pass pulled gigabytes down
+onto an already-full volume. Free space fell to 7.6 GB while the cause was being hunted; killing the
+scans recovered to ~20 GB within minutes as OneDrive re-evicted.
+
+Symptoms of reading that path: a plain `ls` taking 45+ minutes, `grep` returning `Operation timed
+out`, `git` failing with `fatal: mmap failed: Operation timed out`, and `xcodebuild` reporting
+`project.pbxproj` missing when the file is present. None of these indicate corruption.
+
+`UBF8T346G9.OneDriveStandaloneSuite` holds ~38 GB. It was **not** touched — the standing policy
+protects OneDrive/File Provider state from being treated as a cache. It remains the single largest
+reclaimable target if space is needed, via OneDrive's own Free Up Space, not manual deletion.
+
+Note `~/Downloads` is a **symlink** into the OneDrive folder, so anything downloaded lands in cloud
+sync. An App Store Connect `.p8` private key was downloaded there on 2026-08-15 and should be moved
+to `~/.secrets/`, consistent with the 2026-07-16 credential sweep.
+
+## Urgent cleanup on 2026-08-27 — critical near-zero free space
+
+- Triggered by a "clean up my Mac's space" request. Start measurement at **17:48:55 EDT**: `diskutil info /System/Volumes/Data` reported **2.0 GB (1,998,426,112 bytes) APFS physical free**. This was about **48 GB below** the 50 GB standing reserve and worsening in real time (was 2.4 GB minutes earlier). Treated as urgent; Naomi approved doing the cleanup directly via CLI with the standing "delete nothing important, ask if unsure" instruction.
+- Final measurement at **17:57:59 EDT**: **19.4 GB (19,371,806,720 bytes) APFS physical free**; `df -k /System/Volumes/Data` reported **18,917,796 KiB available**. Net gain of about **17.4 GB**. Still about **30.6 GB below** the 50 GB standing reserve and **60.6 GB below** the 80 GB target.
+- Persistent durable savings: **0 GB** (all reclaimed capacity is refillable cache or regenerable dependency/build output). No user documents, media, secrets, native AI sessions, or app databases were touched.
+- Exact paths removed, each only after confirming no running process/open file handle (`ps`/`lsof`) and, for repo dependency/build output, a clean `git status` with the branch matching its remote-tracking ref (or exact SHA confirmed via `git ls-remote`/`ls-remote origin` for a detached-HEAD worktree):
+  - Idle app/dev caches: `~/Library/Caches/com.anthropic.claudefordesktop.ShipIt` (820 MB, staged updater payload, Claude Desktop not running), `~/Library/Caches/org.swift.swiftpm` (668 MB), `~/Library/Caches/Homebrew` (107 MB), `~/Library/Caches/pip` (88 MB), `~/Library/Caches/node-gyp` (65 MB), `~/.npm/_cacache` (2.3 GB npm registry cache — left `~/.npm/_npx` alone because active MCP tool processes, e.g. `mcp-remote`/`chrome-devtools-mcp`, were running executables out of it), `~/.cache/codex-runtimes` (2.38 GB, Codex was running but had no open files under this specific path).
+  - Xcode `DerivedData`: both `Aloud-*` build folders (~3.4 GB combined), `MotivationAlarm-*` (99 MB), `ModuleCache.noindex` (975 MB), `SDKStatCaches.noindex` (5.8 MB) — Xcode was not running; all disposable/regenerable on next build.
+  - Unavailable Xcode Simulator devices removed via supported `xcrun simctl delete unavailable` (~200 MB) — orphaned device records pointing at a missing runtime profile; no available/usable device or the iOS 26.5 runtime tied to Naomi's paired iPhone 15 was touched.
+  - Disposable dependency/build output in verified clean + remotely-recoverable repos: `~/kai/node_modules`, `~/portfolio/node_modules` + `.next`, `~/cortex/cortex-web/.next` (its `node_modules` was already absent from a prior session), `~/motivation-alarm/build`, and in the `sleep-well` repo's git worktrees under `~/dev/` — `sw-doc/web/node_modules` + `.next`, `sw-ios/web/node_modules` + `.next`, `sw-web/web/node_modules` + `.next` (untracked `.vercel/` only, not real source work), and the main worktree's `sleep-well/web/node_modules` + `.next`. Combined disposable relief across these was roughly **3.7 GB** allocated before deletion.
+- Declined/preserved — flagged for Naomi rather than deleted, because the call required her judgment or the item was clearly not disposable:
+  - `~/businesses` (`apps/hub|advisor|curriculum|holdco` — combined `node_modules`/`.next` ≈ **1.9 GB**) and `~/sage` (`node_modules`, 116 MB): both repos have real uncommitted source changes (`businesses`: modified `apps/hub/package.json`/`package-lock.json`/`src/proxy.ts` plus new untracked auth/webauthn API routes; `sage`: modified `desktop/backend/sweep.py`). The uncommitted work is not inside `node_modules`/`.next` and dependencies would regenerate fine from the on-disk lockfile, but this matches active in-progress development, so it was left for Naomi to clear explicitly rather than assumed safe.
+  - `~/Education for Equality/curriculum-app` (`node_modules` ≈ 1.0 GB, `.next` 68 MB): dirty (modified `auto_deploy.py`, untracked `voice-tests/`) and is the E4E project this session's CLAUDE.md demands extra care for — left untouched.
+  - Two large Xcode Simulator runtimes on this volume, iOS 26.5 (7.9 GB, matches Naomi's paired iPhone 15 — must stay) and iOS 18.6 (8.2 GB): the 2026-08-15 entry above explicitly warns that deleting a runtime tied to a physical device breaks builds and required a ~16 GB re-download to fix, and iOS 18.6 had already been deleted once on 2026-08-15 yet was present again at the start of this run — meaning something reinstalled it since, cause unconfirmed. Given that unexplained reappearance, this was left for Naomi's explicit decision rather than re-deleted on the earlier precedent alone.
+  - 11 available (non-orphaned) Shutdown Simulator devices (iPhone 17/17 Pro/17 Pro Max/17e/Air, various iPads) inside the 4.1 GB `~/Library/Developer/CoreSimulator/Devices/` — none running, but removing them clears their app data/settings, which is a workflow preference call, not a pure disposability call.
+  - `~/Library/Application Support/Spark Desktop` (1.77 GB) — active mail database, protected per this file's existing policy; not evaluated further this run.
+  - Real user content, not cache: `~/Downloads Unsynced` (2.76 GB) and `~/My Videos Unsynced` (9.7 GB) — camera footage, a vlog project, PDFs/documents; names suggest these are local-only originals not yet synced anywhere, i.e. the opposite of disposable. `~/Pictures` (9.16 GB), `~/Movies` (6.5 GB), `~/Music` (6.1 GB) were not re-examined this run (see the 2026-07-16 cloud-offload pending items above, still the largest reclaimable path via OneDrive Free Up Space with confirmation).
+- Next scheduled audit: unchanged, Wednesday weekly automation. This was an out-of-band urgent request, not the weekly watchdog.
