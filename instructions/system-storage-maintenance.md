@@ -610,3 +610,31 @@ to `~/.secrets/`, consistent with the 2026-07-16 credential sweep.
   6. Only then removed the original `~/Downloads Unsynced` and `~/My Videos Unsynced` folders. A recovery note was left at `Mac Storage Archives/RECOVERY NOTE - Downloads and My Videos Unsynced - 2026-08-27.md` explaining what was archived, where, and how it was verified.
 - Measurement: **12.4 GB** APFS physical free immediately before deleting the originals → **25.2 GB** immediately after. The **~12.8 GB** recovered here is genuine durable capacity (the source content now exists only in the verified cloud archive plus this Mac's OneDrive-synced local copy, not as a second unsynced local-only copy) — unlike the rest of this run's savings, this batch is not refillable/disposable.
 - Reserve status after this step: still about **24.8 GB below** the 50 GB standing reserve and **54.8 GB below** the 80 GB target. Remaining candidates are unchanged: Pictures/Movies/Music (real media, not yet surveyed this run), Spark Desktop's active mail database (protected), and the iOS 18.6 Simulator runtime (left in place — Aloud's minimum deployment target is iOS 18.0, so the runtime is useful, not just legacy).
+
+## Coding-task cleanup on 2026-09-11 — Networking Tracker scaffold, ENOSPC unblock
+
+- Coding context: Naomi asked for a new agentic personal CRM ("Networking Tracker"). During `npm install` of runtime deps in `/Users/naomiivie/Netwoking tracker/networking-tracker/` the volume returned `ENOSPC` — even the harness's own tool-output writes to `/private/tmp/claude-501/…` began failing. `df -h /System/Volumes/Data` reported **121 MiB physically available (100 % full)** at first measurement — far below Naomi's 50 GB standing reserve. Storage had to be freed before the coding task could continue.
+- Refillable-cache cleanup performed only from ledger-sanctioned paths, no unique work touched:
+  - Removed the task's own partial `node_modules` from the failed install at `/Users/naomiivie/Netwoking tracker/networking-tracker/node_modules` — **684,976 KiB** allocated; disposable, ours, task did not complete.
+  - Removed `~/.npm/_cacache` — **709,036 KiB** — npm on-disk package cache. Refillable.
+  - Removed `~/.npm/_npx` — **234,432 KiB** — npx staging trees. Refillable.
+  - Removed `~/.cache/codex-runtimes` — **1,733,156 KiB** — same category cleared in the 2026-07-16 continuation. Refillable.
+- Preserved:
+  - `~/.cache/uv` (3,722,840 KiB) — VoiceMode and other `uvx` invocations regenerate this on demand; declined for now because clearing it would slow VoiceMode's next warm-up during other active work. Candidate for a later broader sweep.
+  - `~/.cache/fontconfig` (29,652 KiB) — small, live cache.
+  - Every project `node_modules` outside the failed subtree above — untouched.
+  - Every secret, `.env*`, and unique local work — untouched.
+- No cloud-offload, no `sudo log erase`, no app uninstall, no user data touched. Nothing published or shared.
+- Measurements (`df -h /System/Volumes/Data`):
+  - **Start (ENOSPC):** 121 MiB available (0.9 % free) at ~15:34 local.
+  - **After clearing our node_modules + `~/.npm` caches:** 1.7 GiB available.
+  - **After also clearing `~/.cache/codex-runtimes`:** 3.4 GiB available.
+  - **After the reinstall (npm + `@supabase/*`, `@anthropic-ai/sdk`, `googleapis`, `date-fns`, `zod`) and the Vercel deploy build:** 2.0 GiB available at ~15:31 local; `diskutil apfs list` corroborated **2,126,622,720 B (2.1 GB) APFS physical free** in container disk3.
+- Persistent savings: **0 GB.** Every path removed is a refillable cache or a task-local `node_modules` that will regenerate on the next `npm install`.
+- Reserve status at final measurement: about **47.9 GB below** the 50 GB standing reserve and **77.9 GB below** the 80 GB maintenance target. The Mac is currently sitting right on top of the ENOSPC threshold and any next dependency install of similar size could push it back over.
+- **Pending items that need Naomi:**
+  - A full storage sweep is overdue — start from `/Users/naomiivie/Pictures`, `/Users/naomiivie/Movies`, `/Users/naomiivie/Music` following the cloud-offload protocol; the ledger's 2026-07-16 "known pending items" list is still applicable.
+  - `cortex-web` still has an uncommitted `app/onboarding/page.tsx` edit; its ~1.18 GB `node_modules` and ~673 MB Rust `target` are still preserved (not disposable while source work is local).
+  - The Voice Memos, OneDrive worship video, and CloudKit cache items called out in the 2026-07-16 pending list have not been actioned in this session.
+- Networking Tracker source is committed and pushed to `github.com/thegirwhocodes/networking-tracker` (`main` at `53f54f7` as of this writing), and deployed to Vercel (`prj_DeFcKbk986CtwtqqoMbaURVDnIaL`, production alias `networking-tracker-green.vercel.app`). Its local `node_modules` is preserved because the coding task is still in progress (Naomi needs to complete Supabase schema apply, Vercel Auth disable, and Google OAuth redirect URI add before the app is usable end-to-end).
+- Next scheduled audit remains the standing Wednesday 2:00 PM weekly Mac storage audit with the Wednesday/Thursday watchdog at 3:00 PM and 5:00 PM.
