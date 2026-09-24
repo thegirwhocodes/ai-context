@@ -638,3 +638,34 @@ to `~/.secrets/`, consistent with the 2026-07-16 credential sweep.
   - The Voice Memos, OneDrive worship video, and CloudKit cache items called out in the 2026-07-16 pending list have not been actioned in this session.
 - Networking Tracker source is committed and pushed to `github.com/thegirwhocodes/networking-tracker` (`main` at `53f54f7` as of this writing), and deployed to Vercel (`prj_DeFcKbk986CtwtqqoMbaURVDnIaL`, production alias `networking-tracker-green.vercel.app`). Its local `node_modules` is preserved because the coding task is still in progress (Naomi needs to complete Supabase schema apply, Vercel Auth disable, and Google OAuth redirect URI add before the app is usable end-to-end).
 - Next scheduled audit remains the standing Wednesday 2:00 PM weekly Mac storage audit with the Wednesday/Thursday watchdog at 3:00 PM and 5:00 PM.
+
+## Coding-task cleanup on 2026-09-23 — Calendar Alarm iOS build, second ENOSPC unblock
+
+- Coding context: Naomi asked for a calendar alarm app. A web version shipped to Vercel (`calendar-alarm.vercel.app`) and a native SwiftUI iOS app (`com.naomiivie.calendaralarm`) was built with XcodeGen + `xcodebuild` and installed to her paired iPhone 15 via `devicectl`. On resuming the session two days later, the harness's own tool-output write to `/private/tmp/claude-501/…` failed with `ENOSPC`. This is the **second** ENOSPC event after the 2026-09-11 entry above, which explicitly predicted it ("sitting right on top of the ENOSPC threshold").
+- First reading was **804.6 MB (804,552,704 bytes)** container free via `diskutil info /`. By the time the formal start measurement ran, background APFS reclamation had brought it to 3.0 GB.
+- Measurements (`diskutil info /System/Volumes/Data`, corroborated by `df -k /System/Volumes/Data`):
+  - **Start, 22:28:29 EDT:** **3,030,175,744 bytes (3.0 GB)** APFS physical free; `df -k` reported **2,959,100 KiB available**.
+  - **Final, 22:29:41 EDT** after a short APFS settle: **6,158,143,488 bytes (6.2 GB)** APFS physical free; `df -k` reported **6,013,740 KiB available**.
+  - Whole-volume physical free space improved by **3,127,967,744 bytes (about 3.13 GB)**.
+- Persistent durable savings: **0 GB.** Refillable/disposable relief only: **3,448,512 KiB allocated** across the paths below. APFS accounting explains the small difference from the physical-free delta.
+- Exact paths removed, each only after `lsof +D` returned **zero** open files and no owning process was running:
+  - `~/.cache/codex-runtimes` — **1,638,060 KiB**. Same category cleared on 2026-07-16, 2026-07-29, 2026-07-30, and 2026-09-11. Refillable.
+  - `~/Library/Developer/Xcode/DerivedData` — **792,300 KiB**. Xcode was not running; regenerates on next build.
+  - `~/Library/Caches/org.swift.swiftpm` — **535,264 KiB**. Refillable.
+  - `~/Library/Caches/Homebrew` — **429,308 KiB**. Refillable.
+  - `~/Library/Caches/pip` — **45,544 KiB**. Refillable.
+  - `~/.npm/_cacache` — **8,036 KiB**. Already mostly cleared on 2026-09-11; refillable.
+- Blocked/preserved because `lsof +D` proved live use — these are the two largest remaining easy targets:
+  - `~/.cache/uv` — **4,515,052 KiB (about 4.5 GB)**, the single biggest candidate on the volume. **3 open files**; PIDs 2375 / 1117 / 1920 were active `uv run` processes alongside the VoiceMode Python services (`~/.local/bin/voicemode`, PIDs 1133 / 2377) and the Kokoro TTS `uvicorn` (PID 1921). Consistent with the 2026-09-11 decision to preserve it. **Recoverable in one step: fully quit VoiceMode/Kokoro, re-check `lsof`, then remove for about 4.5 GB.**
+  - `~/.npm/_npx` — **160,360 KiB**. **3 open files**; `mcp-pdf-server` was executing directly out of it (PIDs 2446 / 1236 / 1151). This is the exact trap recorded in the 2026-08-27 entry; do not remove `_npx` while MCP tools are running.
+- Nothing belonging to this coding task needed removal: `/Users/naomiivie/dev/calendar-alarm/ios/build` no longer existed at cleanup time (removed by the ENOSPC event or an earlier sweep), and the whole `ios/` tree allocates only **264 KiB** of source.
+- Repository result: **PASS / REMOTELY RECOVERABLE** for `/Users/naomiivie/dev/calendar-alarm`. Working tree clean; exact local head `a7b9b07960aa0e5d56a2285092a1d369da3a13fc` independently matched `git ls-remote origin main` at `https://github.com/thegirwhocodes/calendar-alarm.git`.
+- Cloud verification evidence: **none required.** No user documents were moved, archived, evicted, or deleted. OneDrive/iCloud providers, manifests, and recovery notes were unchanged.
+- Explicitly not touched, per this file's standing policy: both Xcode Simulator runtimes (**iOS 26.5**, tied to the paired iPhone 15 that this task builds to — the 2026-08-15 correction records that deleting it costs a ~16 GB re-download; and **iOS 18.6**, which Aloud's iOS 18.0 deployment target still needs), Voice Memos, Spark Desktop's mail database, `~/.codex/sessions`, `~/.claude/projects`, every `.env*`/secret, Pictures/Movies/Music, and all OneDrive/File Provider state. **No `find`/`du`/`grep` was run anywhere under `~/Library/CloudStorage/OneDrive-wesleyan.edu` or `~/Downloads`** (a symlink into it), per the 2026-08-15 root-cause note about dehydrated-file materialisation.
+- Reserve status at final measurement: about **43.8 GB below** the 50 GB standing reserve and **73.8 GB below** the 80 GB maintenance target. The immediate ENOSPC hazard is cleared, but the volume is still critically low and a single mid-size dependency install could return it to failure.
+- **Pending items that need Naomi** (all carried forward from 2026-09-11, none actioned this session):
+  - Quit VoiceMode/Kokoro to unlock the **4.5 GB** `~/.cache/uv` reclaim described above — the cheapest remaining win by a wide margin.
+  - A full storage sweep remains overdue — start from `/Users/naomiivie/Pictures`, `/Users/naomiivie/Movies`, `/Users/naomiivie/Music` following the cloud-offload protocol. The 2026-07-16 "known pending items" list still applies.
+  - `UBF8T346G9.OneDriveStandaloneSuite` (~38 GB per the 2026-08-15 note) remains the single largest reclaimable target, via OneDrive's own **Free Up Space**, never manual deletion.
+  - The App Store Connect `.p8` private key downloaded to `~/Downloads` on 2026-08-15 should still be moved into `~/.secrets/`.
+- Next scheduled audit remains the standing Wednesday 2:00 PM weekly Mac storage audit with the Wednesday/Thursday watchdog at 3:00 PM and 5:00 PM.
