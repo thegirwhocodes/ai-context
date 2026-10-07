@@ -9,14 +9,36 @@ ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || { echo "aider-ctx: run in
 grep -qxF "$ROOT" ~/.aider-roots 2>/dev/null || echo "$ROOT" >> ~/.aider-roots
 git -C "$CTX" pull --ff-only -q 2>/dev/null
 SLUG="$(python3 -c "import sys;sys.path.insert(0,'$CTX/scripts');import export_context as e;print(e.aider_slug(sys.argv[1]))" "$ROOT")"
-# Small context brief (keeps Claude input cheap): pointer + this project's 8 most recent Claude/Codex sessions
-# (aider rows excluded so the brief, and Claude's prompt cache, stay stable between aider runs).
+# Small context brief (keeps Claude input cheap and stable): recent commits, recent human sessions
+# (automation and aider runs skipped), and pointers to the full archive.
 BRIEF="${TMPDIR:-/tmp}/aider-ctx-$SLUG.md"
-{ echo "# Prior context ($SLUG)"
-  echo "Full archive: $CTX/RECOVERY.md and $CTX/projects/$SLUG/ (sessions, memory). /read-only a session file if you need it."
-  [ -f "$CTX/projects/$SLUG/INDEX.md" ] && grep -v '| aider |' "$CTX/projects/$SLUG/INDEX.md" | sed -n '3,12p' | sed "s#](#]($CTX/projects/$SLUG/#"
-} > "$BRIEF"
+python3 - "$CTX" "$SLUG" "$ROOT" > "$BRIEF" <<'PY'
+import re, subprocess, sys
+from pathlib import Path
+ctx, slug, root = Path(sys.argv[1]), sys.argv[2], sys.argv[3]
+proj = ctx / "projects" / slug
+print(f"# Prior context: {slug}\n")
+log = subprocess.run(["git", "-C", root, "log", "-15", "--format=%cs %s"], capture_output=True, text=True).stdout.strip()
+if log:
+    print("## Recent commits in this repo\n" + "\n".join(f"- {l}" for l in log.splitlines()) + "\n")
+rows = []
+for f in sorted(proj.glob("sessions/*/*.md"), key=lambda f: f.stat().st_mtime, reverse=True):
+    if "/aider/" in str(f):
+        continue
+    t = f.read_text(errors="replace")
+    m = re.search(r"^## Naomi · (\S+)\n\n(.+)", t, re.M)
+    if not m or m.group(2).startswith(("Automation:", "<")):
+        continue
+    rows.append(f"- {m.group(1)[:10]} — {m.group(2)[:140]} ({f})")
+    if len(rows) == 8:
+        break
+if rows:
+    print("## Recent sessions (first request; /read-only a file for the full conversation)\n" + "\n".join(rows) + "\n")
+docs = sorted(p.name for p in Path(root).glob("*.md") if not p.name.startswith(".aider"))
+print(f"## Elsewhere\n- Repo docs (use /read-only): {', '.join(docs) or 'none'}\n- Archive: {proj}/ and {ctx}/RECOVERY.md")
+PY
 READS=(--read "$BRIEF")
+for doc in AGENTS.md CLAUDE.md README.md; do [ -f "$ROOT/$doc" ] && READS+=(--read "$ROOT/$doc"); done
 aider "${READS[@]}" "$@"
 STATUS=$?
 if [ -f "$ROOT/.aider.chat.history.md" ]; then
