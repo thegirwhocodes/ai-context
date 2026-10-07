@@ -39,6 +39,7 @@
     "postgres-password": 1,
     "refresh-token": 9,
     "refreshtoken": 2,
+    "resend-key": 2,
     "runpod-api-key": 3,
     "runpod-key": 2,
     "s3-access-key": 8,
@@ -47,9 +48,10 @@
     "sentry-auth-token": 4,
     "sentry-user-token": 4,
     "stripe-secret": 4,
+    "supabase-token": 7,
     "twilio-auth-token": 3,
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-10-07T01:30:18+00:00"
+  "generated_at": "2026-10-07T01:32:43+00:00"
 }
