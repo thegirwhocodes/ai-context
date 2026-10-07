@@ -23,6 +23,8 @@ REPO = Path(__file__).resolve().parents[1]
 PROJECTS = REPO / "projects"
 CLAUDE_PROJECTS = HOME / ".claude" / "projects"
 CODEX_STORES = (HOME / ".codex" / "sessions", HOME / ".codex" / "archived_sessions")
+AIDER_ROOTS = HOME / ".aider-roots"  # repo roots where the aider wrapper has run, one per line
+AIDER_HISTORY = ".aider.chat.history.md"
 MAX_CURATED_FILE = 10 * 1024 * 1024
 TEXT_SUFFIXES = {".md", ".txt", ".json", ".yaml", ".yml", ".toml"}
 
@@ -370,6 +372,54 @@ def copy_curated_tree(source: Path, destination: Path) -> int:
     return copied
 
 
+def parse_aider(path: Path) -> list[tuple[list[dict[str, str]], dict[str, Any]]]:
+    """Split an .aider.chat.history.md into one (messages, meta) per aider run."""
+    text = path.read_text(encoding="utf-8", errors="replace")
+    runs = re.split(r"^# aider chat started at (\S+ \S+)\s*$", text, flags=re.M)
+    sessions = []
+    for i in range(1, len(runs), 2):
+        started = runs[i].replace(" ", "T")
+        messages: list[dict[str, str]] = []
+        for line in runs[i + 1].splitlines():
+            if line.startswith("> "):  # aider tool/status output, not conversation
+                continue
+            if line.startswith("#### "):
+                body = line[5:]
+                if messages and messages[-1]["role"] == "user":
+                    messages[-1]["text"] += "\n" + body
+                else:
+                    messages.append({"role": "user", "text": body, "timestamp": started})
+            elif messages and (line.strip() or messages[-1]["role"] == "assistant"):
+                if messages[-1]["role"] == "user":
+                    messages.append({"role": "assistant", "text": "", "timestamp": started})
+                messages[-1]["text"] += ("\n" if messages[-1]["text"] else "") + line
+        messages = [{**m, "text": REDACTOR.redact(m["text"].strip())} for m in messages if m["text"].strip()]
+        if messages:
+            meta = {"session_id": f"aider-{started.replace(':', '').replace('-', '')}", "source": "aider",
+                    "started": started, "ended": started, "thread_source": "user"}
+            sessions.append((messages, meta))
+    return sessions
+
+
+def export_aider_file(path: Path) -> list[dict[str, Any]]:
+    cwd = str(path.parent)
+    slug = project_slug_from_cwd(cwd)
+    records = []
+    for messages, meta in parse_aider(path):
+        meta["cwd"] = cwd
+        out = PROJECTS / slug / "sessions" / "aider" / f"{meta['session_id']}.md"
+        atomic_write(out, render_session(messages, meta, slug))
+        records.append({**meta, "project": slug, "path": str(out.relative_to(REPO)), "title": first_line(messages[0]["text"]), "message_count": len(messages)})
+    return records
+
+
+def aider_history_files() -> list[Path]:
+    if not AIDER_ROOTS.is_file():
+        return []
+    roots = {Path(line.strip()) for line in AIDER_ROOTS.read_text().splitlines() if line.strip()}
+    return sorted(root / AIDER_HISTORY for root in roots if (root / AIDER_HISTORY).is_file())
+
+
 def export_curated() -> int:
     copied = 0
     if CLAUDE_PROJECTS.is_dir():
@@ -526,11 +576,18 @@ def export_all() -> dict[str, Any]:
         record = export_codex_file(path)
         if record:
             records.append(record)
+    for path in aider_history_files():
+        records.extend(export_aider_file(path))
     curated = export_curated()
     return generate_indexes(records, curated)
 
 
 def export_one(path: Path) -> dict[str, Any]:
+    if path.name == AIDER_HISTORY:
+        records = export_aider_file(path)
+        if not records:
+            raise RuntimeError(f"No visible recovery messages in {path}")
+        return generate_indexes(records, 0)
     if ".codex" in path.parts:
         record = export_codex_file(path)
     else:
