@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3205,
-  "generated_at": "2026-10-07T01:22:20+00:00",
+  "generated_at": "2026-10-07T01:22:50+00:00",
   "project_count": 32,
   "projects": {
     "aloud": {
@@ -241,6 +241,7 @@
     "meta-token": 2,
     "notion-token": 11,
     "openai-api-key": 2,
+    "openai-key": 1,
     "postgres-password": 1,
     "refresh-token": 9,
     "refreshtoken": 2,
