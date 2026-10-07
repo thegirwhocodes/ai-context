@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3205,
-  "generated_at": "2026-10-07T00:46:59+00:00",
+  "generated_at": "2026-10-07T01:19:53+00:00",
   "project_count": 32,
   "projects": {
     "aloud": {
@@ -210,7 +210,7 @@
     "accesstoken": 2,
     "ami-secret": 2,
     "anthropic-api-key": 14,
-    "anthropic-key": 1,
+    "anthropic-key": 2,
     "at-api-key": 6,
     "at-token": 3,
     "attoken": 3,

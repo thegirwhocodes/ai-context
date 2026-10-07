@@ -4,7 +4,7 @@
     "accesstoken": 2,
     "ami-secret": 2,
     "anthropic-api-key": 14,
-    "anthropic-key": 1,
+    "anthropic-key": 2,
     "at-api-key": 6,
     "at-token": 3,
     "attoken": 3,
@@ -50,5 +50,5 @@
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-10-07T00:46:59+00:00"
+  "generated_at": "2026-10-07T01:19:53+00:00"
 }
