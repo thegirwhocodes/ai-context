@@ -1,6 +1,6 @@
 # Recovery index
 
-Generated: 2026-10-07T00:38:12+00:00
+Generated: 2026-10-07T00:45:07+00:00
 
 GitHub is the source of truth. Pull this repository before recovery.
 Read the relevant project index and curated memory first; open full session files only when needed.
@@ -24,7 +24,7 @@ Read the relevant project index and curated memory first; open full session file
 - [downloads-app-social-media](projects/downloads-app-social-media/INDEX.md) — 3 records
 - [education-for-equality](projects/education-for-equality/INDEX.md) — 242 records
 - [gemini-antigravity-ide-scratch](projects/gemini-antigravity-ide-scratch/INDEX.md) — 1 records
-- [home](projects/home/INDEX.md) — 10 records
+- [home](projects/home/INDEX.md) — 11 records
 - [kai](projects/kai/INDEX.md) — 6 records
 - [library](projects/library/INDEX.md) — 14 records
 - [library-application-support-claude-scratch-workspaces-46433633-c95e-4ecd-88a4-b8ef3dbf1eed-a20d636b-d32d-4cce-8891-fe92e5c936a2-scratch-2026-09-03-84f434](projects/library-application-support-claude-scratch-workspaces-46433633-c95e-4ecd-88a4-b8ef3dbf1eed-a20d636b-d32d-4cce-8891-fe92e5c936a2-scratch-2026-09-03-84f434/INDEX.md) — 1 records

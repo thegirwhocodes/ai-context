@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3205,
-  "generated_at": "2026-10-07T00:38:13+00:00",
+  "generated_at": "2026-10-07T00:45:08+00:00",
   "project_count": 32,
   "projects": {
     "aloud": {
@@ -112,9 +112,9 @@
       }
     },
     "home": {
-      "records": 10,
+      "records": 11,
       "sources": {
-        "claude": 10
+        "claude": 11
       }
     },
     "kai": {
@@ -204,7 +204,7 @@
       }
     }
   },
-  "record_count": 695,
+  "record_count": 696,
   "redactions": {
     "access-token": 8,
     "accesstoken": 2,
