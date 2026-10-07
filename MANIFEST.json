@@ -1,6 +1,6 @@
 {
   "curated_files_copied": 3205,
-  "generated_at": "2026-10-07T01:34:05+00:00",
+  "generated_at": "2026-10-07T01:35:04+00:00",
   "project_count": 32,
   "projects": {
     "aloud": {
@@ -98,9 +98,8 @@
       }
     },
     "education-for-equality": {
-      "records": 247,
+      "records": 242,
       "sources": {
-        "aider": 5,
         "claude": 154,
         "codex": 62,
         "codex-subagent": 26
@@ -205,7 +204,7 @@
       }
     }
   },
-  "record_count": 701,
+  "record_count": 696,
   "redactions": {
     "access-token": 8,
     "accesstoken": 2,
