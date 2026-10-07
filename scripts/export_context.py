@@ -89,6 +89,8 @@ class Redactor:
             ("header-credential", re.compile(r"(?i)((?:X-API-Key|apiKey|X-Auth-Token)\s*:\s*)[A-Za-z0-9._~+/-]{8,}")),
             ("sensitive-label", re.compile(r"(?i)(\b(?:API|API[ _-]?Key|Auth(?:entication)?[ _-]?Token|Access[ _-]?Token|Secret|Password)\b\s*[:=,]\s*(?:`{1,3}\s*)?)[A-Za-z0-9._~+/-]{12,}")),
             ("meta-token", re.compile(r"\bEA[A-Za-z0-9]{40,}")),
+            ("supabase-token", re.compile(r"\b(?:sbp|sb_secret)_[A-Za-z0-9_-]{30,}")),
+            ("resend-key", re.compile(r"\bre_[A-Za-z0-9]{6,}_[A-Za-z0-9]{12,}")),
         ]
         self.assignment = re.compile(
             r"(?i)\b([A-Z][A-Z0-9_]*(?:API_KEY|ACCESS_KEY|ACCESS_TOKEN|REFRESH_TOKEN|TOKEN|SECRET|PASSWORD|PRIVATE_KEY))"

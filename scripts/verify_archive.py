@@ -23,6 +23,8 @@ SECRET_PATTERNS = {
     "slack-token": re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{10,}"),
     "notion-token": re.compile(r"\b(?:secret|ntn)_[A-Za-z0-9]{20,}"),
     "sentry-user-token": re.compile(r"\bsntryu_[A-Za-z0-9_-]{20,}"),
+    "supabase-token": re.compile(r"\b(?:sbp|sb_secret)_[A-Za-z0-9_-]{30,}"),
+    "resend-key": re.compile(r"\bre_[A-Za-z0-9]{6,}_[A-Za-z0-9]{12,}"),
     "jwt": re.compile(r"\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\b"),
 }
 
