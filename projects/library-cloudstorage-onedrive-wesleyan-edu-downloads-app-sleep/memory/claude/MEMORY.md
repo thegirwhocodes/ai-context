@@ -1,0 +1,4 @@
+- [Sleep Well canonical checkout](sleep-well-canonical-checkout.md) — build from ~/dev/sleep-well; never read the OneDrive copy
+- [iOS bundle ID](sleep-well-ios-bundle-id.md) — ships as com.naomiivie.sleepwell; com.sleepwell.ios is unavailable
+- [Sabi website location](sabi-website-location.md) — it's the curriculum-app repo, serving two hosts with split canonicals
+- [Sabi brand query competition](sabi-brand-query-competition.md) — ranking #1 for bare "Sabi" isn't reachable; target qualified queries

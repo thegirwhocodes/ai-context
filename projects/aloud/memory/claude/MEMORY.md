@@ -1,0 +1,5 @@
+- [MLX/iOS Simulator limitation](mlx_ios_simulator_limitation.md) — MLX can't build/run on Simulator; jetsam needs a bounded MLX cache limit
+- [devicectl wireless testing](devicectl_wireless_testing.md) — how to build/install/launch on Naomi's iPhone and capture console output
+- [Kokoro background playback](kokoro_background_playback.md) — MLX/Metal and CoreML/ANE both dead ends for background Kokoro; iOS 27 closes ANE-in-background too; deep pre-render buffering is the real fix
+- [Businesses portfolio governance](businesses_portfolio_governance.md) — full Owner's Manual/Accountability Chart/Scorecard/Monthly Report system built 2026-08-25 for all 11 businesses at businesses/portfolio/; cross-portfolio pattern is unresolved decisions, not lack of analysis
+- [Claude artifact links don't work](claude_artifact_links_dont_work.md) — always also save a local file copy (e.g. ~/Desktop) and open it, every publish/update, not just first time

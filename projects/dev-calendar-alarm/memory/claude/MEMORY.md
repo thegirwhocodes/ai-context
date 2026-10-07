@@ -1,0 +1,1 @@
+- [Plain short answers](plain-short-answers.md) — no jargon/PR numbers, simplest path, very short

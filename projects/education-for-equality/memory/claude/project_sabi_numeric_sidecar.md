@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 1f5e4922-dac1-47db-927f-e6ffa3f36d07
-  modified: 2026-08-11T21:14:32.698Z
+  modified: 2026-08-12T16:17:05.545Z
 ---
 
 # Numeric STT sidecar — Phase 1 live (10 Aug 2026)
@@ -29,6 +29,10 @@ On every finished **numeric** turn of a Gemini Live call, Groq `whisper-large-v3
 
 Azure cracked `thirty-turn-05` — the clip every Whisper renders "Tati" — and is the only engine ever to recover a child's name ("Her name is Gideon"). Two honest caveats worth repeating in any pitch: **`en-NG` and `en-US` returned byte-identical output on all 7 clips**, so the win is Azure's model, NOT the Nigerian locale; and Azure's confidence is useless as a gate (correct "30" scored 0.07, wrong "Woodward" 0.048) — it's recorded but never used to accept an answer. Azure resource: `sabi-speech-test`, RG `sabi-stt`, **East US**, Free F0, on her **Azure for Students** subscription (⚠️ Wesleyan tenant — same migration trap as the Google billing account; move to a company subscription before production). Key/region live at `secrets/AZURE_SPEECH_KEY` + `AZURE_SPEECH_REGION`; `SABI_NUMERIC_SIDECAR_SECOND_ENGINE=auto|azure|local_whisper`.
 
+**Naomi's call, 12 Aug 2026: drop Intron and ElevenLabs Scribe.** Both were blocked on account permissions when bake-off tested (Intron `403 permission denied, access-key error` — the long-standing non-integrator-tier problem; ElevenLabs `401 ... missing the permission speech_to_text`). She decided not to pursue either, so **the two votes are Groq + Azure, full stop** — do not raise these again unless she does. Existing Intron code in `stt.py` / the Intron test lane stays as-is; it just isn't a sidecar vote.
+
 **Latency is no longer the Phase 3 blocker** (Groq 0.31 s + Azure 0.71 s both clear 1.5 s). Local Whisper stays available as the offline fallback but is CPU-bound at 11–14 s. What remains before consensus can grade: the labelled Nigerian PSTN bake-off and its ≥98% accepted-value precision gate — which real calls now build automatically, since each record pairs the engines' transcripts with the item's known expected answer.
 
 Design + status table: `sabi-server/docs/PARALLEL_STT_FOR_GEMINI_LIVE_RESEARCH_2026-08-07.md`. Related: [[project-sabi-gemini-live]], [[project-stt-noise-accent-research]]
+
+**Still too slow, measured on a live call Aug 20 2026 - e254ca93.** Call `da1bfb97` turn 0: Groq heard `9 ground notes.`, Azure `9 groundnuts.`, consensus `9`, expected `9` — but `status=agreed_late stale=True latency=4.12s`. Both votes agreed with each other and with Gemini, and the result still arrived far past the 1.2–1.5s deadline, so it was recorded and discarded. The sidecar remains shadow-only for this reason; 21 recordings under `/shared/audio/numeric_sidecar`.

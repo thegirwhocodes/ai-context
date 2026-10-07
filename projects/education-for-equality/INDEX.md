@@ -2,6 +2,37 @@
 
 | Date | Source | Session |
 |---|---|---|
+| 2026-10-01T01:30:04 | claude | [a073219d-8209-4aac-b040-c1e57be7b377](sessions/claude/a073219d-8209-4aac-b040-c1e57be7b377.md) |
+| 2026-09-30T19:00:19 | claude | [48dbc9fa-c56e-475f-9073-5b6b746f01db](sessions/claude/48dbc9fa-c56e-475f-9073-5b6b746f01db.md) |
+| 2026-09-09T00:59:13 | claude | [a9cf6ee9-75aa-459b-ad8c-52801eb76810](sessions/claude/a9cf6ee9-75aa-459b-ad8c-52801eb76810.md) |
+| 2026-09-07T20:34:52 | claude | [8b57f8d0-5c22-4ce6-9ca0-fc29eaf15e7d](sessions/claude/8b57f8d0-5c22-4ce6-9ca0-fc29eaf15e7d.md) |
+| 2026-09-06T01:06:29 | claude | [63ec5012-c16c-41a0-b7f0-b88ce58f28a4](sessions/claude/63ec5012-c16c-41a0-b7f0-b88ce58f28a4.md) |
+| 2026-09-05T21:59:04 | codex | [01a07395-127b-7e32-a851-762aebbb5db1](sessions/codex/01a07395-127b-7e32-a851-762aebbb5db1.md) |
+| 2026-09-05T21:15:50 | codex | [01a0736d-7d14-7222-a14a-f21d6cd152e4](sessions/codex/01a0736d-7d14-7222-a14a-f21d6cd152e4.md) |
+| 2026-09-03T18:06:38 | claude | [d09190eb-d7ec-4b5d-b643-52634e8cf01a](sessions/claude/d09190eb-d7ec-4b5d-b643-52634e8cf01a.md) |
+| 2026-09-02T19:11:26 | claude | [f312eb64-42b9-4399-9a64-d4957cd307c9](sessions/claude/f312eb64-42b9-4399-9a64-d4957cd307c9.md) |
+| 2026-09-01T18:58:58 | claude | [12692df8-fc49-4d6b-a1e8-5d2b68526a3e](sessions/claude/12692df8-fc49-4d6b-a1e8-5d2b68526a3e.md) |
+| 2026-09-01T18:56:49 | claude | [59354928-c6af-41a4-8701-9d340dc5f49b](sessions/claude/59354928-c6af-41a4-8701-9d340dc5f49b.md) |
+| 2026-09-01T18:51:59 | claude | [7e2e4332-3aef-4a09-8c4a-3358dbdc2e9c](sessions/claude/7e2e4332-3aef-4a09-8c4a-3358dbdc2e9c.md) |
+| 2026-08-27T22:10:53 | claude | [280be7e1-440f-4c2a-b84e-5a7c22af5d39](sessions/claude/280be7e1-440f-4c2a-b84e-5a7c22af5d39.md) |
+| 2026-08-27T21:44:44 | claude | [70bbeddc-77e9-473d-9cb5-af4c63c002e6](sessions/claude/70bbeddc-77e9-473d-9cb5-af4c63c002e6.md) |
+| 2026-08-27T20:54:16 | claude | [8db06326-4b4d-4049-9b7a-48ebcf0eced6](sessions/claude/8db06326-4b4d-4049-9b7a-48ebcf0eced6.md) |
+| 2026-08-26T15:57:07 | claude | [df74f982-1589-4880-9d80-318db5b91051](sessions/claude/df74f982-1589-4880-9d80-318db5b91051.md) |
+| 2026-08-22T16:44:32 | claude | [1c491213-3a34-48d2-9ca3-a9c8dbf1a47c](sessions/claude/1c491213-3a34-48d2-9ca3-a9c8dbf1a47c.md) |
+| 2026-08-22T14:22:48 | claude | [8ac1472d-7f41-4a8c-bfa2-48f0f01ea9c8](sessions/claude/8ac1472d-7f41-4a8c-bfa2-48f0f01ea9c8.md) |
+| 2026-08-21T19:48:01 | claude | [de04c6a7-5af5-4d5e-baec-605202001c1d](sessions/claude/de04c6a7-5af5-4d5e-baec-605202001c1d.md) |
+| 2026-08-21T19:13:39 | claude | [96bccec6-34cc-468e-add0-1d34c51451f8](sessions/claude/96bccec6-34cc-468e-add0-1d34c51451f8.md) |
+| 2026-08-21T19:12:15 | claude | [b7f016ae-e0c7-415c-8125-39f8d6aeafb5](sessions/claude/b7f016ae-e0c7-415c-8125-39f8d6aeafb5.md) |
+| 2026-08-20T21:46:58 | claude | [1b5d89b4-2e5c-4203-be27-52850ac6872d](sessions/claude/1b5d89b4-2e5c-4203-be27-52850ac6872d.md) |
+| 2026-08-20T19:34:11 | claude | [2f1d5115-e07a-4c23-a102-15cd8cec38ad](sessions/claude/2f1d5115-e07a-4c23-a102-15cd8cec38ad.md) |
+| 2026-08-20T19:30:08 | claude | [93b54636-a777-4cc6-a66f-ef83009768a5](sessions/claude/93b54636-a777-4cc6-a66f-ef83009768a5.md) |
+| 2026-08-20T16:06:42 | claude | [e254ca93-523b-4315-b81f-b5801478e21f](sessions/claude/e254ca93-523b-4315-b81f-b5801478e21f.md) |
+| 2026-08-20T01:12:15 | claude | [7e3c69b7-d1ba-4ba2-b7d1-edb6520a98f1](sessions/claude/7e3c69b7-d1ba-4ba2-b7d1-edb6520a98f1.md) |
+| 2026-08-18T19:50:09 | claude | [2215a2c9-a70b-4576-bd11-dab97a0b15bd](sessions/claude/2215a2c9-a70b-4576-bd11-dab97a0b15bd.md) |
+| 2026-08-18T18:10:48 | claude | [9686b9ea-08c0-4b7f-b1a3-0fb871e10883](sessions/claude/9686b9ea-08c0-4b7f-b1a3-0fb871e10883.md) |
+| 2026-08-18T18:06:19 | claude | [28159390-4447-472e-b74c-1169bf3f1ef3](sessions/claude/28159390-4447-472e-b74c-1169bf3f1ef3.md) |
+| 2026-08-18T16:19:21 | claude | [bcbc0c7e-b2c1-4496-a6e7-0f4fbdde7ea4](sessions/claude/bcbc0c7e-b2c1-4496-a6e7-0f4fbdde7ea4.md) |
+| 2026-08-14T18:38:48 | claude | [5fcb4c4d-fb99-419a-af0e-89e8985afb97](sessions/claude/5fcb4c4d-fb99-419a-af0e-89e8985afb97.md) |
 | 2026-08-11T20:19:43 | claude | [e6b64e4b-3d21-48a6-b9d0-f2c27446d43a](sessions/claude/e6b64e4b-3d21-48a6-b9d0-f2c27446d43a.md) |
 | 2026-08-11T20:18:35 | claude | [bfcc8fd6-7858-418f-9aeb-0bc28332b184](sessions/claude/bfcc8fd6-7858-418f-9aeb-0bc28332b184.md) |
 | 2026-08-11T01:13:30 | claude | [17c90b05-b5ea-4d87-b51a-ad07358bba92](sessions/claude/17c90b05-b5ea-4d87-b51a-ad07358bba92.md) |

@@ -1,12 +1,18 @@
 {
-  "curated_files_copied": 3179,
-  "generated_at": "2026-08-11T21:56:08+00:00",
-  "project_count": 24,
+  "curated_files_copied": 3205,
+  "generated_at": "2026-10-07T00:35:13+00:00",
+  "project_count": 32,
   "projects": {
-    "bethel": {
-      "records": 10,
+    "aloud": {
+      "records": 11,
       "sources": {
-        "claude": 4,
+        "claude": 11
+      }
+    },
+    "bethel": {
+      "records": 11,
+      "sources": {
+        "claude": 5,
         "codex": 3,
         "codex-subagent": 3
       }
@@ -30,23 +36,29 @@
       }
     },
     "cortex": {
-      "records": 182,
+      "records": 184,
       "sources": {
-        "claude": 26,
+        "claude": 28,
         "codex": 36,
         "codex-subagent": 120
       }
     },
     "cortex-web": {
-      "records": 26,
+      "records": 28,
       "sources": {
-        "claude": 26
+        "claude": 28
       }
     },
     "desktop": {
       "records": 1,
       "sources": {
         "claude": 1
+      }
+    },
+    "dev-calendar-alarm": {
+      "records": 4,
+      "sources": {
+        "claude": 4
       }
     },
     "developer": {
@@ -86,17 +98,23 @@
       }
     },
     "education-for-equality": {
-      "records": 211,
+      "records": 242,
       "sources": {
-        "claude": 125,
-        "codex": 60,
+        "claude": 154,
+        "codex": 62,
         "codex-subagent": 26
       }
     },
-    "home": {
-      "records": 6,
+    "gemini-antigravity-ide-scratch": {
+      "records": 1,
       "sources": {
-        "claude": 6
+        "claude": 1
+      }
+    },
+    "home": {
+      "records": 10,
+      "sources": {
+        "claude": 10
       }
     },
     "kai": {
@@ -112,6 +130,24 @@
         "codex": 14
       }
     },
+    "library-application-support-claude-scratch-workspaces-46433633-c95e-4ecd-88a4-b8ef3dbf1eed-a20d636b-d32d-4cce-8891-fe92e5c936a2-scratch-2026-09-03-84f434": {
+      "records": 1,
+      "sources": {
+        "claude": 1
+      }
+    },
+    "library-application-support-claude-scratch-workspaces-46433633-c95e-4ecd-88a4-b8ef3dbf1eed-a20d636b-d32d-4cce-8891-fe92e5c936a2-scratch-2026-09-09-d21b27": {
+      "records": 1,
+      "sources": {
+        "claude": 1
+      }
+    },
+    "library-application-support-claude-scratch-workspaces-46433633-c95e-4ecd-88a4-b8ef3dbf1eed-a20d636b-d32d-4cce-8891-fe92e5c936a2-scratch-2026-09-10-8583b8": {
+      "records": 1,
+      "sources": {
+        "claude": 1
+      }
+    },
     "library-cloudstorage-onedrive-wesleyan-edu-classes": {
       "records": 12,
       "sources": {
@@ -125,6 +161,12 @@
       }
     },
     "library-cloudstorage-onedrive-wesleyan-edu-downloads-app-sleep": {
+      "records": 6,
+      "sources": {
+        "claude": 6
+      }
+    },
+    "netwoking-tracker": {
       "records": 1,
       "sources": {
         "claude": 1
@@ -137,9 +179,9 @@
       }
     },
     "sage": {
-      "records": 107,
+      "records": 123,
       "sources": {
-        "codex": 107
+        "codex": 123
       }
     },
     "social-media": {
@@ -150,30 +192,38 @@
       }
     },
     "social-media-ed-it": {
-      "records": 8,
+      "records": 10,
       "sources": {
-        "claude": 8
+        "claude": 10
+      }
+    },
+    "worship-now": {
+      "records": 1,
+      "sources": {
+        "claude": 1
       }
     }
   },
-  "record_count": 611,
+  "record_count": 695,
   "redactions": {
-    "access-token": 5,
+    "access-token": 8,
+    "accesstoken": 2,
     "ami-secret": 2,
-    "anthropic-api-key": 11,
+    "anthropic-api-key": 13,
     "anthropic-key": 1,
     "at-api-key": 6,
     "at-token": 3,
     "attoken": 3,
-    "auth-token": 10,
-    "authorization-token": 18,
-    "authtoken": 6,
+    "auth-token": 12,
+    "authorization-token": 27,
+    "authorizationtoken": 5,
+    "authtoken": 8,
     "bearer-token": 5,
     "canva-client-secret": 2,
     "cerebras-api-key": 2,
-    "clerk-key": 3,
-    "client-secret": 2,
-    "clientsecret": 1,
+    "clerk-key": 4,
+    "client-secret": 3,
+    "clientsecret": 2,
     "elevenlabs-api-key": 10,
     "email-token": 4,
     "expo-apple-app-specific-password": 3,
@@ -188,18 +238,19 @@
     "lora-webhook-secret": 2,
     "meta-instagram-app-secret": 1,
     "meta-token": 2,
-    "notion-token": 6,
+    "notion-token": 11,
     "openai-api-key": 2,
     "postgres-password": 1,
-    "refresh-token": 6,
+    "refresh-token": 9,
+    "refreshtoken": 2,
     "runpod-api-key": 3,
     "runpod-key": 2,
     "s3-access-key": 8,
     "sabi-sms-webhook-secret": 1,
-    "sensitive-label": 40,
+    "sensitive-label": 47,
     "sentry-auth-token": 4,
     "sentry-user-token": 4,
-    "stripe-secret": 3,
+    "stripe-secret": 4,
     "twilio-auth-token": 3,
     "vercel-token": 1,
     "yarngpt-api-key": 2
