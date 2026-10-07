@@ -403,9 +403,23 @@ def parse_aider(path: Path) -> list[tuple[list[dict[str, str]], dict[str, Any]]]
     return sessions
 
 
+def aider_slug(cwd: str) -> str:
+    """Most specific archive project for a repo (e.g. ~/dev/calendar-alarm -> dev-calendar-alarm)."""
+    path = Path(cwd)
+    try:
+        parts = path.relative_to(HOME).parts
+    except ValueError:
+        return project_slug_from_cwd(cwd)
+    for n in range(len(parts), 0, -1):
+        slug = slugify("-".join(parts[:n]))
+        if (PROJECTS / slug).is_dir():
+            return slug
+    return slugify("-".join(parts)) if len(parts) > 1 else project_slug_from_cwd(cwd)
+
+
 def export_aider_file(path: Path) -> list[dict[str, Any]]:
     cwd = str(path.parent)
-    slug = project_slug_from_cwd(cwd)
+    slug = aider_slug(cwd)
     records = []
     for messages, meta in parse_aider(path):
         meta["cwd"] = cwd

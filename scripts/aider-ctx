@@ -8,7 +8,7 @@ unset ANTHROPIC_BASE_URL ANTHROPIC_AUTH_TOKEN   # ~/.zshrc routes these via Open
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || { echo "aider-ctx: run inside a git repo" >&2; exit 1; }
 grep -qxF "$ROOT" ~/.aider-roots 2>/dev/null || echo "$ROOT" >> ~/.aider-roots
 git -C "$CTX" pull --ff-only -q 2>/dev/null
-SLUG="$(python3 -c "import sys;sys.path.insert(0,'$CTX/scripts');import export_context as e;print(e.project_slug_from_cwd(sys.argv[1]))" "$ROOT")"
+SLUG="$(python3 -c "import sys;sys.path.insert(0,'$CTX/scripts');import export_context as e;print(e.aider_slug(sys.argv[1]))" "$ROOT")"
 # Small context brief (keeps Claude input cheap): pointer + this project's 8 most recent Claude/Codex sessions
 # (aider rows excluded so the brief, and Claude's prompt cache, stay stable between aider runs).
 BRIEF="${TMPDIR:-/tmp}/aider-ctx-$SLUG.md"
