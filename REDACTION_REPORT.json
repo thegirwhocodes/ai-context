@@ -3,7 +3,7 @@
     "access-token": 8,
     "accesstoken": 2,
     "ami-secret": 2,
-    "anthropic-api-key": 13,
+    "anthropic-api-key": 14,
     "anthropic-key": 1,
     "at-api-key": 6,
     "at-token": 3,
@@ -18,6 +18,7 @@
     "clerk-key": 4,
     "client-secret": 3,
     "clientsecret": 2,
+    "deepseek-api-key": 1,
     "elevenlabs-api-key": 10,
     "email-token": 4,
     "expo-apple-app-specific-password": 3,
@@ -49,5 +50,5 @@
     "vercel-token": 1,
     "yarngpt-api-key": 2
   },
-  "generated_at": "2026-10-07T00:35:58+00:00"
+  "generated_at": "2026-10-07T00:38:13+00:00"
 }
