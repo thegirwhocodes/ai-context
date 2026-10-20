@@ -703,3 +703,16 @@ to `~/.secrets/`, consistent with the 2026-07-16 credential sweep.
 - Whole-session outcome: **804.6 MB → 32,871,018,496 bytes (32.9 GB)** APFS container free. Of that, roughly 7.4 GB came from this session's refillable cache clears and about 28.8 GB from Naomi's OneDrive eviction, partly offset by concurrent swap growth.
 - Reserve status: about **17.1 GB below** the 50 GB standing reserve and **47.1 GB below** the 80 GB maintenance target. This is the healthiest the volume has measured since the 2026-07-27 watchdog.
 - **Swap continued to grow throughout and is now the live concern**, not disk: `total = 6144.00M  used = 4954.25M` across **six** swapfiles at 23:27, up from 4096M/2838M across four earlier the same evening. Uptime was 1 day 4:39 — no reboot had occurred. A reboot remains the cheapest way to reset swap and would also clear the two stuck Claude-app `uv run` MCP subprocesses noted above.
+
+## Urgent cleanup on 2026-10-20 — near-zero free space during Sabi server work
+
+- Context: Sabi infrastructure session (6d4de6ca). Installing `rclone` via Homebrew exposed **391.5 MB** container free at 00:11:04 EDT (`diskutil info /System/Volumes/Data`), `df -k` 382,364 KiB available. Swap 3,072M total / 1,892M used. Uptime 6:20.
+- Read-only survey (no `du`/`find` under `~/Library/CloudStorage` or `~/Downloads`): `~/Movies` 26.5 GB (CapCut 6.3 GB + eight 2026-10-09…10-19 screen-recording MP4s ≈ 19.5 GB — real user content), `~/Library/Application Support/Claude/vm_bundles/claudevm.bundle` 11.8 GB, `~/Library/Application Support/Cursor/User/globalStorage/anysphere.cursor-agent-worker/agent-cli/.local/share/cursor-agent/versions` 8.3 GB (17 auto-downloaded versions), Voice Memos 5.2 GB (protected), WhatsApp group container 2.7 GB, Cursor `state.vscdb` 825 MB (live DB, preserved).
+- Removed (all after `lsof +D` returned zero open files):
+  - 15 superseded Cursor agent CLI versions (2026.07.09 … 2026.10.12), **7,064,620 KiB**. Kept the active `2026.10.18-ea085cb` (target of `bin/cursor-agent`) and the previous `2026.10.16-e3cb207`. `cursor-agent --version` verified afterwards. Re-downloadable app payloads; Cursor will keep accumulating them — recheck this path in future audits.
+  - `~/.npm/_cacache` (212,984 KiB) and `~/Library/Caches/Homebrew` (95,372 KiB). Refillable.
+- Measurement: **360.2 MB at 00:16:06 EDT → 6,840,811,520 bytes (6.8 GB) at 00:16:31 EDT**; `df -k` 6,680,480 KiB available. Swap grew to 4,096M total / 2,866M used during the window (the 2026-09-23 swap-absorbs-headroom trap).
+- Persistent savings: the Cursor versions do not refill instantly but will re-accumulate with Cursor auto-updates — treat as disposable app payload. Refillable cache savings: ~0.3 GB.
+- Reserve status: about **43.2 GB below** the 50 GB reserve and **73.2 GB below** the 80 GB target.
+- Awaiting Naomi: (1) archive the ~19.5 GB of Movies screen recordings to her Google Drive (naomi.ivie04, 5 TB) via rclone with verification, then delete local; (2) delete Claude desktop `vm_bundles` (11.8 GB, re-downloads on next use of Claude desktop's VM features); (3) a reboot to reset swap.
+- Also installed this session: Homebrew `rclone` (v1.75.2) for the Sabi recordings pipeline — keep.
